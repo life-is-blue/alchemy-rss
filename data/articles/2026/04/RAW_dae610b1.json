@@ -1,0 +1,63 @@
+{
+  "id": "RAW_dae610b1",
+  "title": "数据库索引如何工作 – 基于 PostgreSQL 实例的实用指南",
+  "url": "https://www.freecodecamp.org/news/how-database-indexes-work-a-practical-guide-with-postgresql-examples/",
+  "date": "2026-04-16 17:27:44",
+  "author": "iyiola",
+  "siteName": "freeCodeCamp.org",
+  "content": null,
+  "aiSummary": "这份全面的指南解释了数据库索引在 PostgreSQL 中如何工作，涵盖了 B 树基础知识、各种索引类型、创建和管理技术、使用 EXPLAIN ANALYZE 进行性能测量、常见陷阱以及有效索引的最佳实践。",
+  "oneSentenceSummary": "这份全面的指南解释了数据库索引在 PostgreSQL 中如何工作，涵盖了 B 树基础知识、各种索引类型、创建和管理技术、使用 EXPLAIN ANALYZE 进行性能测量、常见陷阱以及有效索引的最佳实践。",
+  "summary": "本教程提供了一份使用 PostgreSQL 进行数据库索引的实用、深入的指南。它首先解释了为什么索引对查询性能至关重要，使用了教科书索引的类比。文章深入探讨了 B 树索引（PostgreSQL 的默认类型）的机制，解释了根节点、内部节点和叶节点。通过一个包含 50 万行数据的示例表的实践示例，展示了添加索引带来的显著性能提升，将查询时间从约 91 毫秒减少到约 0.06 毫秒。指南涵盖了如何使用 EXPLAIN ANALYZE 来测量性能，并详细介绍了各种 PostgreSQL 索引类型：B 树、哈希、GIN、GiST 和 BRIN，解释了它们的具体用例。文章进一步探讨了高级索引策略，如复合索引、部分索引、表达式索引和唯一索引，并附有 SQL 示例。文章还讨论了索引管理（列出、调整大小、查找未使用的索引）以及索引的关键权衡，包括写入开销和存储成本。最后，文章列出了导致索引无法使用的常见错误，以及一套用于深思熟虑和有效索引的可操作最佳实践。",
+  "mainPoints": [
+    {
+      "point": "索引是一种数据结构，通过避免全表扫描来实现快速数据检索，类似于书的索引。",
+      "explanation": "如果没有索引，查询必须执行顺序扫描，读取每一行。索引提供了一个从列值到行位置的排序映射，允许数据库直接跳转到目标数据，这对于大型表至关重要。"
+    },
+    {
+      "point": "B 树是 PostgreSQL 默认且最通用的索引类型，由于其排序的层次结构，对于等值查询和范围查询非常高效。",
+      "explanation": "B 树将数据组织成根节点、内部节点和叶节点。搜索涉及树遍历，即使对于数百万行的表，通常也只需要几个步骤，这使得它对于常见的查询模式（如 WHERE、ORDER BY 和范围条件）非常高效。"
+    },
+    {
+      "point": "有效的索引需要根据特定的数据和查询模式，理解并应用不同的索引类型（GIN、GiST、BRIN）和策略（复合、部分、表达式）。",
+      "explanation": "除了简单的 B 树索引，PostgreSQL 还提供了专门的类型：用于 JSON/数组的 GIN、用于地理空间/范围的 GiST，以及用于大型有序数据集的 BRIN。像部分索引（索引子集）和表达式索引（索引函数结果）这样的策略可以解决特定的性能问题。"
+    },
+    {
+      "point": "索引会带来显著的权衡，包括写入开销、存储成本和维护负担，这些必须通过读取性能的提升来证明其合理性。",
+      "explanation": "每次 INSERT、UPDATE 或 DELETE 都必须更新表上的所有索引，这会减慢写入速度。索引还会消耗磁盘和内存。因此，索引应该是经过深思熟虑的，基于测量到的查询模式，并且应该删除未使用的索引。"
+    },
+    {
+      "point": "在添加索引前后使用 EXPLAIN ANALYZE 来测量查询性能至关重要，并且有几个常见错误会完全阻止 PostgreSQL 使用索引。",
+      "explanation": "常见的错误包括：将索引列包装在函数中、隐式类型转换、在不同列上使用 OR 操作符、LIKE 中使用前导通配符，以及对低选择性列建立索引。这些都会迫使查询规划器选择顺序扫描而不是索引扫描。"
+    }
+  ],
+  "keyQuotes": [
+    "索引通过创建一个独立的、排序的数据结构来解决这个问题，该结构将列值映射到其行位置。PostgreSQL 无需扫描 1000 万行，而是可以在索引中查找该值并直接跳转到匹配的行。",
+    "当 PostgreSQL 使用 B 树索引查找一个值时，它从根节点开始，沿着与目标值匹配的路径，穿过内部节点，直到到达正确的叶节点。这条路径称为树遍历，即使对于拥有数百万行的表，通常也只需要 3-4 步。",
+    "复合索引中列的顺序很重要。PostgreSQL 可以使用此索引来查询过滤最左侧列的情况，但对于跳过这些列的查询，它无法高效地使用此索引。",
+    "索引不是免费的。你添加的每个索引都会带来成本：写入开销、存储成本、内存消耗和维护负担。",
+    "要问的问题不是‘我应该添加索引吗？’，而是‘对于这个表的工作负载，读取性能的提升是否足以证明写入性能成本的合理性？’"
+  ],
+  "tags": [
+    "PostgreSQL",
+    "数据库索引",
+    "B 树",
+    "查询性能",
+    "EXPLAIN ANALYZE"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 91,
+  "wordCount": 3570,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776360464000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-16 17:27:44"
+}

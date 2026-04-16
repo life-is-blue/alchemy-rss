@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fdf6e5c8",
+  "title": "工具：datasette.io 新闻预览",
+  "url": "https://simonwillison.net/2026/Apr/16/datasette-io-preview/#atom-everything",
+  "date": "2026-04-16 00:18:03",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label tool\">Tool</span> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/datasette-io-preview\">datasette.io news preview</a></span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>The <a href=\"https://datasette.io/\">datasette.io</a> website has a news section built from this <a href=\"https://github.com/simonw/datasette.io/blob/main/news.yaml\">news.yaml</a> file in the underlying GitHub repository. The YAML format looks like this:</p>\n      <pre><code>- date: 2026-04-15\n  body: |-\n    [Datasette 1.0a27](https://docs.datasette.io/en/latest/changelog.html#a27-2026-04-15) changes how CSRF protection works in a way that simplifies form and API integration, and introduces a new `RenameTableEvent` for when a table is renamed by a SQL query.\n- date: 2026-03-18\n  body: |-\n    ...\n</code></pre>\n      <p>This format is a little hard to edit, so I finally <a href=\"https://claude.ai/share/c96129b9-bcb0-4eba-aee9-4a7ad236dfb7\">had Claude build a custom preview UI</a> to make checking for errors have slightly less friction.</p>\n      <p>I built it using standard <a href=\"https://claude.ai/\">claude.ai</a> and Claude Artifacts, taking advantage of Claude's ability to clone GitHub repos and look at their content as part of a regular chat:</p>\n      <blockquote>\n       <p><code>Clone https://github.com/simonw/datasette.io and look at the news.yaml file and how it is rendered on the homepage. Build an artifact I can paste that YAML into which previews what it will look like, and highlights any markdown errors or YAML errors</code></p>\n      </blockquote>\n      <p><img alt=\"Screenshot showing two side-by-side views of a datasette.io news preview tool. The left panel shows a dark-themed YAML editor with news entries containing date and body fields in Markdown format, with a red validation error at the bottom indicating the date field has an invalid format. The right panel shows the rendered preview output with formatted headings by date (April 2026, 18th March 2026), displaying 115 news entries with linked release names, inline code snippets, and changelog descriptions. A red badge with &quot;1&quot; appears on the left panel header indicating one validation error.\" src=\"https://static.simonwillison.net/static/2026/datasette-io-preview.jpg\"></p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 使用 Claude AI 构建了一个自定义预览工具，用于验证和渲染 datasette.io 网站基于 YAML 的新闻源，从而减少了编辑的阻力。",
+  "oneSentenceSummary": "Simon Willison 使用 Claude AI 构建了一个自定义预览工具，用于验证和渲染 datasette.io 网站基于 YAML 的新闻源，从而减少了编辑的阻力。",
+  "summary": "本文描述了为 datasette.io 网站的新闻版块创建一个自定义预览工具的过程。新闻内容存储在项目 GitHub 仓库的 `news.yaml` 文件中，Simon Willison 发现编辑和验证该文件非常繁琐。为了解决这个问题，他在一个标准的聊天会话中使用了 Claude AI，指示它克隆仓库、分析 YAML 结构及其在主页上的渲染方式，然后构建一个交互式工件。最终的工具提供了一个双窗格界面：一个带有实时验证（高亮显示 Markdown 或 YAML 错误）的 YAML 编辑器，以及一个实时预览窗格，显示新闻条目在网站上的渲染效果。这个工具显著减少了维护项目更新日志和新闻更新的阻力。",
+  "mainPoints": [
+    {
+      "point": "利用 AI 作为开发者工作流自动化的快速原型设计工具。",
+      "explanation": "作者使用了一个标准的 Claude 聊天会话，而非专门的 API，快速生成了一个功能性的基于 Web 的工具，解决了他项目维护工作流中一个特定的、反复出现的痛点。"
+    },
+    {
+      "point": "核心价值在于减少一项平凡但关键的维护任务的阻力。",
+      "explanation": "为网站的新闻源编辑和验证结构化的 YAML 文件容易出错。这个工具提供了即时的视觉反馈和验证，将一项繁琐的任务变成了更顺畅的过程。"
+    },
+    {
+      "point": "该工具展示了 AI、代码和 Web 界面的实际集成。",
+      "explanation": "最终的工件是一个独立的 Web 应用程序，它克隆 GitHub 仓库的上下文，解析 YAML，验证它，并渲染实时的 Markdown 预览——所有这些都源自一个自然语言提示。"
+    }
+  ],
+  "keyQuotes": [
+    "这种格式有点难编辑，所以我最终让 Claude 构建了一个自定义的预览 UI，让检查错误的阻力稍微小一些。",
+    "我使用标准的 claude.ai 和 Claude Artifacts 构建了它，利用了 Claude 能够克隆 GitHub 仓库并将其内容作为常规聊天的一部分进行查看的能力。",
+    "构建一个我可以粘贴该 YAML 的工件，用于预览它的外观，并高亮显示任何 Markdown 错误或 YAML 错误。"
+  ],
+  "tags": [
+    "开发者工具",
+    "Claude AI",
+    "YAML",
+    "GitHub",
+    "工作流自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 168,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776298683000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-16 00:18:03"
+}

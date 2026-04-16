@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-17 04:13:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-17 06:13:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -648,6 +648,14 @@
 
 
 
+### [如何使用-Elasticsearch-优化-Web-应用程序中的搜索功能](https://www.freecodecamp.org/news/streamline-search-functionality-in-web-apps-with-elasticsearch/)
+
+2026-04-16 16:25:38 | 标签: Elasticsearch, 搜索引擎, Node.js, 后端开发, 数据库
+
+> 本文是一份详细的实践教程，介绍如何通过实现 Elasticsearch 来提升 Web 应用程序的搜索能力。文章首先解释了 Elasticsearch 作为搜索引擎的角色及其关键术语。指南的核心部分逐步讲解了如何设置 Node.js 项目、安装 Elasticsearch 客户端以及配置连接。随后深入探讨了实际操作：创建和删除索引、使用分析器定义自定义映射规则以实现自动补全等功能、索引文档（帖子），以及实现带有分页和字段加权功能的搜索功能。本教程围绕一个演示论坛后端构建，为每个步骤提供了完整、可运行的代码片段，对后端开发人员极具可操作性。
+
+
+
 ### [如何构建一个帮助你整理衣橱的时尚应用](https://www.freecodecamp.org/news/how-to-build-a-fashion-app-to-organize-your-wardrobe/)
 
 2026-04-14 16:26:39
@@ -936,13 +944,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1092,13 +1100,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2592,13 +2600,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4302,13 +4310,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

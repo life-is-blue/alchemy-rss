@@ -1,0 +1,54 @@
+{
+  "id": "RAW_10fb5283",
+  "title": "我笔记本上的 Qwen3.6-35B-A3B 画出了比 Claude Opus 4.7 更好的鹈鹕",
+  "url": "https://simonwillison.net/2026/Apr/16/qwen-beats-opus/#atom-everything",
+  "date": "2026-04-16 17:16:52",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div>\n    <p class=\"mobile-date\">16th April 2026</p>\n    <p>For anyone who has been taking my <a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle/\">pelican riding a bicycle benchmark</a> seriously as a robust way to test models, here are pelicans from this morning’s two big model releases—<a href=\"https://qwen.ai/blog?id=qwen3.6-35b-a3b\">Qwen3.6-35B-A3B from Alibaba</a> and <a href=\"https://www.anthropic.com/news/claude-opus-4-7\">Claude Opus 4.7 from Anthropic</a>.</p>\n    <p>Here’s the Qwen 3.6 pelican, generated using <a href=\"https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF/blob/main/Qwen3.6-35B-A3B-UD-Q4_K_S.gguf\">this 20.9GB Qwen3.6-35B-A3B-UD-Q4_K_S.gguf</a> quantized model by Unsloth, running on my MacBook Pro M5 via <a href=\"https://lmstudio.ai/\">LM Studio</a> (and the <a href=\"https://github.com/agustif/llm-lmstudio\">llm-lmstudio</a> plugin)—<a href=\"https://gist.github.com/simonw/4389d355d8e162bc6e4547da214f7dd2\">transcript here</a>:</p>\n    <p><img src=\"https://static.simonwillison.net/static/2026/Qwen3.6-35B-A3B-UD-Q4_K_S-pelican.png\" alt=\"The bicycle frame is the correct shape. There are clouds in the sky. The pelican has a dorky looking pouch. A caption on the ground reads Pelican on a Bicycle!\" style=\"max-width: 100%;\"></p>\n    <p>And here’s one I got from Anthropic’s <a href=\"https://www.anthropic.com/news/claude-opus-4-7\">brand new Claude Opus 4.7</a> (<a href=\"https://gist.github.com/simonw/afcb19addf3f38eb1996e1ebe749c118\">transcript</a>):</p>\n    <p><img src=\"https://static.simonwillison.net/static/2026/opus-4.7-pelican.png\" alt=\"The bicycle frame is entirely the wrong shape. No clouds, a yellow sun. The pelican is looking behind itself, and has a less pronounced pouch than I would like.\" style=\"max-width: 100%;\"></p>\n    <p>I’m giving this one to Qwen 3.6. Opus managed to mess up the bicycle frame!</p>\n    <p>I tried Opus a second time passing <code>thinking_level: max</code>. It didn’t do much better (<a href=\"https://gist.github.com/simonw/7566e04a81accfb9affda83451c0f363\">transcript</a>):</p>\n    <p><img src=\"https://static.simonwillison.net/static/2026/opus-4.7-pelican-max.png\" alt=\"The bicycle frame is entirely the wrong shape but in a different way. Lines are more bold. Pelican looks a bit more like a pelican.\" style=\"max-width: 100%;\"></p>\n    <h4 id=\"i-dont-think-qwen-are-cheating\">I don’t think Qwen are cheating</h4>\n    <p>A lot of people are <a href=\"https://simonwillison.net/2025/Nov/13/training-for-pelicans-riding-bicycles/\">convinced that the labs train for my stupid benchmark</a>. I don’t think they do, but honestly this result did give me a little glint of suspicion. So I’m burning one of my secret backup tests—here’s what I got from Qwen3.6-35B-A3B and Opus 4.7 for “Generate an SVG of a flamingo riding a unicycle”:</p>\n    <div style=\"display: flex; gap: 4px;\">\n     <figure style=\"flex: 1; text-align: center; margin: 0;\">\n      <figcaption style=\"margin-bottom: 1em\">\n       Qwen3.6-35B-A3B\n       <br>\n       (<a href=\"https://gist.github.com/simonw/f1d1ff01c34dda5fdedf684cfc430d92\">transcript</a>)\n      </figcaption>\n      <img src=\"https://static.simonwillison.net/static/2026/qwen-flamingo.png\" alt=\"The unicycle spokes are a too long. The pelican has sunglasses, a bowtie and appears to be smoking a cigarette. It has two heart emoji surrounding the caption Flamingo on a Unicycle. It has a lot of charisma.\" style=\"max-width: 100%; height: auto;\">\n     </figure>\n     <figure style=\"flex: 1; text-align: center; margin: 0;\">\n      <figcaption style=\"margin-bottom: 1em\">\n       Opus 4.7\n       <br>\n       (<a href=\"https://gist.github.com/simonw/35121ad5dcf23bf860397a103ae88d50\">transcript</a>)\n      </figcaption>\n      <img src=\"https://static.simonwillison.net/static/2026/opus-flamingo.png\" alt=\"The unicycle has black wheels. The flamingo is a competent if slightly dull vector illustration of a flamingo. It has no flair.\" style=\"max-width: 100%; height: auto;\">\n     </figure>\n    </div>\n    <p>I’m giving this one to Qwen too, partly for the excellent <code>&lt;!-- Sunglasses on flamingo! --&gt;</code> SVG comment.</p>\n    <h4 id=\"what-can-we-learn-from-this-\">What can we learn from this?</h4>\n    <p>The pelican benchmark has always been meant as a joke—it’s mainly a statement on how obtuse and absurd the task of comparing these models is.</p>\n    <p>The weird thing about that joke is that, for the most part, there has been a direct correlation between the quality of the pelicans produced and the general usefulness of the models. Those <a href=\"https://simonwillison.net/2024/Oct/25/pelicans-on-a-bicycle/\">first pelicans from October 2024</a> were junk. The <a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle/\">more recent entries</a> have generally been much, much better—to the point that Gemini 3.1 Pro produces <a href=\"https://simonwillison.net/2026/Feb/19/gemini-31-pro/\">illustrations you could actually use somewhere</a>, provided you had a pressing need to illustrate a pelican riding a bicycle.</p>\n    <p>Today, even that loose connection to utility has been broken. I have enormous respect for Qwen, but I very much doubt that a 21GB quantized version of their latest model is more powerful or useful than Anthropic’s latest proprietary release.</p>\n    <p>If the thing you need is an SVG illustration of a pelican riding a bicycle though, right now Qwen3.6-35B-A3B running on a laptop is a better bet than Opus 4.7!</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 幽默地使用他的‘骑自行车的鹈鹕’基准测试，比较了新发布的 Qwen3.6-35B-A3B 和 Claude Opus 4.7 模型的 SVG 生成能力，发现在这项特定的创意任务上，更小、本地运行的 Qwen 模型出人意料地胜过了更大的 Opus 模型。",
+  "oneSentenceSummary": "Simon Willison 幽默地使用他的‘骑自行车的鹈鹕’基准测试，比较了新发布的 Qwen3.6-35B-A3B 和 Claude Opus 4.7 模型的 SVG 生成能力，发现在这项特定的创意任务上，更小、本地运行的 Qwen 模型出人意料地胜过了更大的 Opus 模型。",
+  "summary": "在这篇博客文章中，Simon Willison 将他半开玩笑的‘骑自行车的鹈鹕’基准测试应用于两个主要模型发布：阿里巴巴的 Qwen3.6-35B-A3B 和 Anthropic 的 Claude Opus 4.7。他在 MacBook 上本地运行一个量化后的 20.9GB Qwen 模型，发现它生成的所需场景的 SVG 比 Opus 4.7 更准确、更有魅力，而 Opus 4.7 明显未能画出正确的自行车车架。他用‘骑独轮车的火烈鸟’提示词扩展了测试，以排除基准测试特定训练的影响，Qwen 再次产出了更具个性和细节的结果。Willison 反思道，虽然这个基准测试最初是关于模型比较荒谬性的一个玩笑，但它过去一直与模型的通用实用性有松散的相关性——直到现在。他的结论是，对于这项特定的、古怪的 SVG 生成任务，一个本地运行的、更小的模型可以胜过领先的专有巨头，这突显了模型性能的微妙性和任务依赖性。",
+  "mainPoints": [
+    {
+      "point": "在特定的创意任务上，一个更小、本地运行的模型（Qwen3.6-35B）可以胜过更大、专有的模型（Claude Opus 4.7）。",
+      "explanation": "在笔记本电脑上运行的 20.9GB 量化 Qwen 模型，生成了比基于云的 Opus 4.7 更准确、更具美感的 SVG 插图，挑战了‘越大对所有任务越好’的假设。"
+    },
+    {
+      "point": "‘鹈鹕基准测试’揭示了整体模型比较的荒谬性和困难。",
+      "explanation": "虽然本意是个玩笑，但这个特定测试在历史上一直与模型的通用能力有松散的相关性，但这个结果打破了这种模式，强调了模型性能高度依赖于任务。"
+    },
+    {
+      "point": "AI 输出中的创意细节和‘个性’，可以成为超越严格准确性的重要区分因素。",
+      "explanation": "Qwen 的输出包含了迷人的细节，如‘看起来傻乎乎的喉囊’、太阳镜和诙谐的 SVG 注释，这些细节促成了其优于 Opus 更刻板（尽管有时更准确）的插图的主观判断。"
+    }
+  ],
+  "keyQuotes": [
+    "鹈鹕基准测试一直是个玩笑——它主要是为了说明比较这些模型的任务是多么晦涩和荒谬。",
+    "这个玩笑的奇怪之处在于，在大多数情况下，生成的鹈鹕质量与模型的通用实用性之间存在直接关联。",
+    "今天，即使是与实用性的这种松散联系也被打破了。我非常尊重 Qwen，但我非常怀疑他们最新模型的 21GB 量化版本会比 Anthropic 最新的专有版本更强大或更有用。",
+    "但是，如果你需要的是一个骑自行车的鹈鹕的 SVG 插图，那么现在在笔记本电脑上运行的 Qwen3.6-35B-A3B 是比 Opus 4.7 更好的选择！"
+  ],
+  "tags": [
+    "模型基准测试",
+    "SVG 生成",
+    "Qwen",
+    "Claude",
+    "多模态 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 376,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776359812000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-16 17:16:52"
+}

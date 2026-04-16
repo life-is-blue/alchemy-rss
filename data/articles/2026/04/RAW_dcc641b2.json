@@ -1,0 +1,57 @@
+{
+  "id": "RAW_dcc641b2",
+  "title": "谷歌以 Apache 2.0 协议开源 Gemma 4，具备多模态与智能体能力",
+  "url": "https://www.infoq.com/news/2026/04/google-gemm4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-16 17:05:00",
+  "author": "Hien Luu",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has recently <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/\">released</a> <a href=\"https://deepmind.google/models/gemma/gemma-4/\">Gemma 4</a>, a family of open-weight models spanning effective 2B and 4B edge variants, a 26B Mixture-of-Experts model, and a 31B dense model, all distributed under an <a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache 2.0 license</a>. The release introduces native video and image processing across the lineup, audio input on the smaller models, context windows up to 256K tokens, and benchmark results that place the 31B dense variant in a bracket typically occupied by models three to five times its size.</p>\n   <p>The agent-oriented framing is reflected in concrete capabilities. Google reports that the 31B variant scores <a href=\"https://ai.google.dev/gemma/docs/core/model_card_4\">84.3% on GPQA Diamond and 80.0% on LiveCodeBench v6</a>. The GPQA Diamond result nearly doubles <a href=\"https://ai.google.dev/gemma/docs/core/model_card_3#benchmark_results\">the 42.4% achieved by the prior Gemma 3 IT 27B</a>, reflecting substantial gains in science reasoning and code generation. For tool use, the models add native support for <a href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/function-calling\">function-calling</a>, structured JSON output, and native system instructions, a combination intended to let developers build autonomous agents that interact with external tools and APIs and execute multi-step workflows reliably.</p>\n   <p>Architecturally, the lineup spans both dense and sparse designs. The 26B MoE model activates only 3.8 billion parameters during inference to deliver fast tokens-per-second, while the 31B dense variant targets workloads where consistent per-token cost matters more than peak parameter count. The edge models, sized for mobile and IoT devices where memory and power budgets are tight, offer a 128K context window; the larger models extend to 256K tokens, large enough to ingest sizable code repositories or long-form documents in a single prompt. All four variants natively process video and images at variable resolutions, and the E2B and E4B edge models add native audio input for speech recognition and understanding, and the family is trained on more than 140 languages.</p>\n   <p>On benchmarks, Google reports that the 31B dense model achieved an estimated <a href=\"https://arena.ai/leaderboard/text?license=open-source\">LLMArena</a> score (text only) of 1452, reaching a performance bracket usually reserved for significantly larger models with triple to quintuple the parameter count.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/google-gemm4/en/resources/1gemma-4__elo-score__eval__dark_Web-1776305647362.png\" rel=\"share\"></p>\n   <p>Source: <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/\">Google blog</a></p>\n   <p>Reactions in the open-model community have focused less on raw scores and more on usability and new licensing. Sam Witteveen <a href=\"https://www.linkedin.com/posts/samwitteveen_gemma4-opensource-ai-activity-7445512423782068224-WH7R?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAABpJcBWvAKfIas8vYBdUCFJnBNf1rtJIo\">applauded the Apache 2.0 license</a>.</p>\n   <blockquote>\n    <p>This is an actual real Apache 2 license, which means for the first time, you can take Google's best open model, modify it, fine tune it, deploy it commercially, do whatever you want with it. No strings attached</p>\n   </blockquote>\n   <p>Nathan Lambert argues that <a href=\"https://www.interconnects.ai/p/gemma-4-and-what-makes-an-open-model\">Gemma 4’s value lies in its frictionless integration</a>, noting:</p>\n   <blockquote>\n    <p>Gemma 4’s success is going to be entirely determined by ease of use, to a point where a 5-10% swing on benchmarks wouldn’t matter at all. It’s strong enough, small enough, with the right license, and from the U.S., so many companies are going to slot it in.</p>\n   </blockquote>\n   <p>Day-zero distribution is notably broad: weights are available on <a href=\"https://huggingface.co/blog/gemma4\">Hugging Face</a>, <a href=\"https://www.kaggle.com/models/google/gemma-4\">Kaggle</a>, with reference paths through vLLM, <a href=\"https://github.com/ggml-org/llama.cpp/pull/21534\">llama.cpp</a>, <a href=\"https://ollama.com/library/gemma4\">Ollama</a>, <a href=\"https://huggingface.co/collections/mlx-community/gemma-4\">MLX</a>, <a href=\"https://lmstudio.ai/models/gemma-4\">LM Studio</a>, <a href=\"https://unsloth.ai/docs/models/gemma-4\">Unsloth</a>, <a href=\"https://cookbook.sglang.io/autoregressive/Google/Gemma4\">SGLang</a>, and <a href=\"https://build.nvidia.com/google/gemma-4-31b-it\">NVIDIA NIM</a>, plus an <a href=\"https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4\">NVFP4 quantized 31B checkpoint</a> using NVIDIA Model Optimizer. <a href=\"https://www.kaggle.com/\">Kaggle</a> is running <a href=\"https://www.kaggle.com/competitions/gemma-4-good-hackathon\">Gemma 4 Good Challenge</a>, inviting developers to build products that create meaningful positive change using the new models.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Opens Gemma 4 Under Apache 2.0 with Multimodal and Agentic Capabilities\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Hien Luu\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/google-gemm4/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776359100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌在宽松的 Apache 2.0 许可下发布了 Gemma 4 系列开放权重 AI 模型，具备多模态处理、扩展的上下文窗口和增强的智能体能力，其性能可与大得多的模型相媲美。",
+  "oneSentenceSummary": "谷歌在宽松的 Apache 2.0 许可下发布了 Gemma 4 系列开放权重 AI 模型，具备多模态处理、扩展的上下文窗口和增强的智能体能力，其性能可与大得多的模型相媲美。",
+  "summary": "谷歌发布了 Gemma 4，这是一个在 Apache 2.0 许可下分发的新系列开放权重模型。该系列包括适用于边缘设备的高效 2B 和 4B 变体、一个 26B 的专家混合模型以及一个 31B 的稠密模型。关键技术进展包括原生多模态处理（边缘模型支持视频、图像和音频）、高达 256K token 的上下文窗口，以及对函数调用、结构化 JSON 输出和系统指令的内置支持，以促进自主智能体的开发。基准测试结果表明，31B 稠密模型的性能水平通常与比它大三到五倍的模型相关。此次发布伴随着在 Hugging Face、Kaggle、Ollama 和 NVIDIA NIM 等主要平台上的广泛零日分发，社区反应强调了宽松许可和易于集成的重要性。",
+  "mainPoints": [
+    {
+      "point": "Gemma 4 在宽松的 Apache 2.0 许可下发布，允许商业使用和修改。",
+      "explanation": "这一许可举措消除了先前的限制，允许开发者自由微调、商业部署并在谷歌最先进的开放模型基础上进行构建，而无需法律障碍，这对于主要模型发布来说是一个重大转变。"
+    },
+    {
+      "point": "该模型系列在所有变体中引入了原生多模态和智能体能力。",
+      "explanation": "所有模型都能原生处理视频和图像，边缘模型还增加了音频输入。对函数调用和结构化 JSON 输出的内置支持旨在简化与外部工具交互的可靠、多步骤自主智能体的创建。"
+    },
+    {
+      "point": "31B 稠密模型的性能可与显著更大的模型相媲美。",
+      "explanation": "基准测试结果（例如在 GPQA Diamond 上获得 84.3% 的分数）使 31B 变体跻身于通常由参数数量三到五倍的模型占据的性能等级，突显了效率提升。"
+    },
+    {
+      "point": "此次发布旨在从第一天起就实现广泛、无摩擦的采用。",
+      "explanation": "权重和优化检查点立即在众多流行平台（Hugging Face、Ollama、vLLM、NVIDIA NIM 等）上可用，而 Kaggle 上的“Gemma 4 Good Challenge”等举措旨在激发开发者参与和实际应用。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一个真正的 Apache 2 许可证，这意味着你第一次可以获取谷歌最好的开放模型，修改它，微调它，将其商业部署，用它做任何你想做的事。没有任何附加条件。",
+    "Gemma 4 的成功将完全取决于易用性，以至于基准测试上 5-10% 的波动根本无关紧要。它足够强大，足够小巧，拥有合适的许可证，并且来自美国，因此许多公司都会将其纳入使用。",
+    "此次发布引入了全系列的原生视频和图像处理能力，较小模型上的音频输入，高达 256K token 的上下文窗口，以及使 31B 稠密变体跻身于通常由大三到五倍的模型占据的性能等级的基准测试结果。"
+  ],
+  "tags": [
+    "Gemma 4",
+    "开源 AI",
+    "多模态 AI",
+    "Apache 2.0",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 506,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776359100000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-16 17:05:00"
+}

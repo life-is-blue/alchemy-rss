@@ -1,0 +1,59 @@
+{
+  "id": "RAW_7fc51092",
+  "title": "AWS 推出 S3 Files，为 S3 存储桶带来文件系统访问能力",
+  "url": "https://www.infoq.com/news/2026/04/aws-s3-files/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-16 18:08:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-s3-files/\">AWS recently introduced S3 Files</a>, which lets users mount an Amazon S3 bucket and access its data through a standard file system interface. Applications can read and write files using standard file operations, while the system automatically translates them into S3 requests, allowing compute services to work directly with data stored in S3.<img alt=\"Amazon S3 Files\" style=\"width:100%;height:596px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/aws-s3-files/en/resources/1diagram-1024x596-1776284406582.png\" rel=\"share\"></p>\n   <p><em>Source: AWS blog</em></p>\n   <p><a href=\"https://www.linkedin.com/in/sebastienstormacq/\">Sébastien Stormacq</a>, principal developer advocate at AWS, explains <a href=\"https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/\">how the bucket's data is exposed once it has been mounted</a>:</p>\n   <blockquote>\n    <p>As you work with specific files and directories through the file system, associated file metadata and contents are placed onto the file system's high-performance storage. By default, files that benefit from low-latency access are stored and served from the high performance storage. For files not stored on high performance storage such as those needing large sequential reads, S3 Files automatically serves those files directly from Amazon S3 to maximize throughput.</p>\n   </blockquote>\n   <p>Claiming to be the only provider offering fully featured, high-performance file system access to an object store, AWS suggests S3 Files for workloads such as analytics, machine learning, media processing, and other applications that require shared file system access to large datasets. Stormacq adds:</p>\n   <blockquote>\n    <p>Under the hood, S3 Files uses Amazon EFS and delivers ~1ms latencies for active data. The file system supports concurrent access from multiple compute resources with NFS close-to-open consistency, making it ideal for interactive, shared workloads that mutate data, from agentic AI agents collaborating through file-based tools to ML training pipelines processing datasets.</p>\n   </blockquote>\n   <p>S3 Files supports intelligent prefetching to anticipate data access needs. Customers can control what is stored on the file system, including the option to load full file data or only metadata, enabling optimization for specific access patterns. <a href=\"https://www.linkedin.com/in/andywarfield/\">Andrew Warfield</a>, VP and Distinguished Engineer at Amazon, explains the motivation and design choices behind S3 Files and provides some implementation details. Warfield writes:</p>\n   <blockquote>\n    <p>When you create or modify files, changes are aggregated and committed back to S3 roughly every 60 seconds as a single PUT. Sync runs in both directions, so when other applications modify objects in the bucket, S3 Files automatically spots those modifications and reflects them in the filesystem view automatically. If there is ever a conflict where files are modified from both places at the same time, S3 is the source of truth and the filesystem version moves to a lost+found directory with a CloudWatch metric identifying the event. File data that hasn't been accessed in 30 days is evicted from the filesystem view but not deleted from S3, so storage costs stay proportional to your active working set.</p>\n   </blockquote>\n   <p>Some developers reacted humorously to AWS adding a filesystem interface to a service long described as \"not a filesystem.\" At the same time, the <a href=\"https://www.reddit.com/r/aws/comments/1sf6c4x/launching_s3_files_making_s3_buckets_accessible/\">broader community response</a> was mixed, with some appreciating the simpler developer experience and others raising concerns about potential costs.</p>\n   <p>In the \"<a href=\"https://www.lastweekinaws.com/blog/s3-is-not-a-filesystem-but-now-theres-one-in-front-of-it/\">S3 Is Not a Filesystem (But Now There's One In Front of It)</a>\" article, <a href=\"https://www.linkedin.com/in/coquinn/\">Corey Quinn </a>praises the implementation (\"They didn't just bolt a POSIX layer on top of S3 and call it a day\"), highlights the differences with <a href=\"https://www.infoq.com/news/2023/08/mountpoint-amazon-s3-ga/\">Mountpoint for Amazon S3</a>, considers the pricing model reasonable, and analyzes how it compares with EFS pricing.</p>\n   <p><a href=\"https://aws.amazon.com/s3/pricing/\">Charges</a> apply based on the amount of data stored in the S3 file system, for small-file reads and all write operations, and for S3 requests used to synchronize data between the file system and the S3 bucket. On a popular <a href=\"https://news.ycombinator.com/item?id=47680404\">Hacker News thread</a>, user <em>MontyCarloHall</em> comments:</p>\n   <blockquote>\n    <p>This is essentially S3FS using EFS (AWS's managed NFS service) as a cache layer for active data and small random accesses. Unfortunately, this also means that it comes with some of EFS's eye-watering pricing.</p>\n   </blockquote>\n   <p>S3 Files runs on EFS infrastructure with identical pricing by design, but since charges apply only to the small, frequently accessed portion of data that lands on the filesystem, the overall cost might remain lower despite the matched rates.&nbsp;Testing the new option, <a href=\"https://www.linkedin.com/in/juneit/\">Dzhuneyt Ahmed</a>, CTO at Provenant, <a href=\"https://www.linkedin.com/pulse/aws-s3-files-missing-conversation-dzhuneyt-ahmed-8fuef/\">highlights the current limitations</a>: S3 versioning is mandatory, there is no Infrastructure as Code support at launch, and the IAM setup is not obvious, with the trust policy using EFS service principals and S3 Files-specific conditions.</p>\n   <p>With a separate announcement, Amazon S3 introduced a <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/04/s3-default-bucket-security-setting/\">new default security setting </a>that disables server-side encryption with customer-provided keys (SSE-C) for new and existing buckets.</p>\n   <p>S3 Files is generally available in all AWS regions.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces S3 Files, Bringing File System Access to S3 Buckets\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/aws-s3-files/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776362880000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出了 S3 Files 服务，允许用户将 S3 存储桶挂载为文件系统，通过基于 EFS 的缓存层提供低延迟访问，同时自动与 S3 同步更改。",
+  "oneSentenceSummary": "AWS 推出了 S3 Files 服务，允许用户将 S3 存储桶挂载为文件系统，通过基于 EFS 的缓存层提供低延迟访问，同时自动与 S3 同步更改。",
+  "summary": "AWS 推出了 S3 Files，这是一项新服务，支持将 Amazon S3 存储桶作为标准文件系统挂载。这使得应用程序可以使用标准文件操作（读/写），这些操作会自动转换为 S3 请求。该服务构建在 Amazon EFS 基础设施之上，为活跃数据提供约 1 毫秒的延迟，并为并发访问提供 NFS 近打开一致性。它能智能地将频繁访问的文件和元数据缓存在高性能存储上，同时直接从 S3 提供大型顺序读取。更改会在大约每 60 秒聚合一次并同步回 S3，在发生冲突时，S3 作为事实来源。该服务面向需要共享文件系统访问大型数据集的工作负载，如分析、机器学习和媒体处理。定价基于文件系统缓存中存储的数据、小文件读取、写入和同步操作，与 EFS 费率匹配，但仅适用于数据的缓存子集。初始限制包括强制启用 S3 版本控制以及缺乏基础设施即代码支持。",
+  "mainPoints": [
+    {
+      "point": "S3 Files 在 S3 存储桶之上提供了标准的文件系统接口，弥合了对象存储和文件存储之间的差距。",
+      "explanation": "它允许应用程序使用类似 POSIX 的文件操作，这些操作会透明地转换为 S3 API 调用，从而简化了期望文件语义的工作负载的开发。"
+    },
+    {
+      "point": "该服务使用 Amazon EFS 作为高性能缓存层，为活跃数据提供低延迟访问。",
+      "explanation": "频繁访问的文件和元数据被缓存在 EFS 存储上（约 1 毫秒延迟），而大型顺序读取则绕过缓存，直接从 S3 获取以获得最佳吞吐量。"
+    },
+    {
+      "point": "数据同步和冲突解决是自动管理的，S3 作为事实来源。",
+      "explanation": "更改会批量处理并大约每 60 秒提交到 S3。如果同时从文件系统和 S3 直接进行并发修改，则以 S3 版本为准，文件系统版本会被移动到 lost+found 目录。"
+    },
+    {
+      "point": "定价与 EFS 费率挂钩，但仅适用于主动缓存的数据，对于大型、大部分为冷数据的数据集，可能提供成本效益。",
+      "explanation": "虽然每 GB 缓存存储成本较高（EFS 定价），但用户只需为存储在文件系统视图中的小型活跃工作集付费，而不是整个 S3 存储桶。"
+    }
+  ],
+  "keyQuotes": [
+    "当您通过文件系统处理特定文件和目录时，相关的文件元数据和内容会被放置到文件系统的高性能存储上。",
+    "在底层，S3 Files 使用 Amazon EFS，并为活跃数据提供约 1 毫秒的延迟。该文件系统支持来自多个计算资源的并发访问，并具有 NFS 近打开一致性。",
+    "当您创建或修改文件时，更改会在大约每 60 秒聚合一次，作为单个 PUT 操作提交回 S3。",
+    "如果发生冲突，即文件同时在两个地方被修改，S3 是事实来源，文件系统版本会移动到 lost+found 目录。",
+    "这本质上是 S3FS 使用 EFS（AWS 托管的 NFS 服务）作为活跃数据和小型随机访问的缓存层。"
+  ],
+  "tags": [
+    "AWS",
+    "Amazon S3",
+    "云存储",
+    "文件系统",
+    "EFS"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 721,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776362880000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-16 18:08:00"
+}
