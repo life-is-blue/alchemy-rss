@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-17 06:13:34 | [返回首页](/README.md)
+**更新时间**: 2026-04-17 08:18:43 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11332)
+- [AI & 大模型](#ai-llm) (11347)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (783)
 - [DevOps](#devops) (521)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5499)
+- [其他](#other) (5504)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Codex-几乎无所不能](https://openai.com/index/codex-for-almost-everything) - AI 精选
 - [Gemini-3.1-Flash-TTS：下一代富有表现力的-AI-语音](https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/) - AI 精选
 - [Agents-SDK-的下一阶段演进](https://openai.com/index/the-next-evolution-of-the-agents-sdk) - AI 精选
 - [Notion-的-Token-Town：5-次重构，100+-工具，MCP-对比-CLI-与软件工厂的未来-——-Notion-的-Simon-Last-和-Sarah-Sachs](https://www.latent.space/p/notion) - AI 精选
@@ -41,9 +42,8 @@
 - [面向“Token-亿万富翁”的极限-Harness-Engineering：100-万行代码、每天-10-亿-Token、0%-人工代码、0%-人工审查-——-Ryan-Lopopolo，OpenAI-Frontier-&amp;-Symphony](https://www.latent.space/p/harness-eng) - AI 精选
 - [Deep-Agents-v0.5](https://blog.langchain.com/deep-agents-v0-5/) - AI 精选
 - [Agentic-能力从哪里来？拆解基座大模型-GLM-5-/MiniMax-M2/Kimi-K2.5-的训练过程](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247514107&idx=1&sn=fb5014a9de0d35c6ba6ac2297c471af0) - AI 精选
-- [AI-智能体的持续学习](https://blog.langchain.com/continual-learning-for-ai-agents/) - AI 精选
 
-- [查看全部 11332 篇...](/details/tags/ai-llm.md)
+- [查看全部 11347 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5499 篇...](/details/tags/other.md)
+- [查看全部 5504 篇...](/details/tags/other.md)
 
 

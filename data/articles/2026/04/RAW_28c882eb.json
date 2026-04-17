@@ -1,0 +1,55 @@
+{
+  "id": "RAW_28c882eb",
+  "title": "OpenAI Codex 精要 – AI 辅助的智能体开发课程",
+  "url": "https://www.freecodecamp.org/news/openai-codex-essentials-ai-assisted-agentic-development-course/",
+  "date": "2026-04-16 13:25:17",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>OpenAI Codex is a specialized artificial intelligence system designed to translate natural language into code.</p>\n  <p>We just published a course on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that will teach you how to use Codex to accelerate real-world coding workflows and developer productivity. Andrew Brown from ExamPro developed this course.</p>\n  <p>Here are the sections in this course:</p>\n  <ul>\n   <li>\n    <p>Introduction</p>\n   </li>\n   <li>\n    <p>Codex Essentials</p>\n   </li>\n   <li>\n    <p>The AI Certification Roadmap</p>\n   </li>\n   <li>\n    <p>Study Recommendations &amp; Passing Requirements</p>\n   </li>\n   <li>\n    <p>Validity and Re-certification</p>\n   </li>\n   <li>\n    <p>Accessing the Code Repository Codeex Fundamentals</p>\n   </li>\n   <li>\n    <p>What is Codeex? Agentic Coding vs. Coding Harness</p>\n   </li>\n   <li>\n    <p>Common Use Cases and Skills</p>\n   </li>\n   <li>\n    <p>Understanding the Agentic Loop</p>\n   </li>\n   <li>\n    <p>OpenAI GPT Model Families</p>\n   </li>\n   <li>\n    <p>Deep Dive: Model Intelligence vs. Context Windows</p>\n   </li>\n   <li>\n    <p>Installation Requirements (Node.js &amp; WSL 2)</p>\n   </li>\n   <li>\n    <p>Authentication: Subscription vs. API Keys</p>\n   </li>\n   <li>\n    <p>Checking Login Status and Account Info</p>\n   </li>\n   <li>\n    <p>Lab: Installing Codeex and \"Hello World\"</p>\n   </li>\n   <li>\n    <p>Using API Keys for Production and Automation</p>\n   </li>\n   <li>\n    <p>Setting Environment Variables for Keys</p>\n   </li>\n   <li>\n    <p>Subscriptions vs. API Token Billing</p>\n   </li>\n   <li>\n    <p>Managing the Context Window (400k Token Limits)</p>\n   </li>\n   <li>\n    <p>Truncation and Hallucination Issues</p>\n   </li>\n   <li>\n    <p>Commands: /clear and /compact</p>\n   </li>\n   <li>\n    <p>Lab: Managing Context History</p>\n   </li>\n   <li>\n    <p>Codeex Sessions, Threads, and Messages</p>\n   </li>\n   <li>\n    <p>Session Commands: /new, /resume, /fork, and /rename</p>\n   </li>\n   <li>\n    <p>Under the Hood: SQLite and JSONL Session Storage</p>\n   </li>\n   <li>\n    <p>Tracking Usage with Custom Scripts</p>\n   </li>\n   <li>\n    <p>Customizing the Status Line</p>\n   </li>\n   <li>\n    <p>Project Guidance via agents.md</p>\n   </li>\n   <li>\n    <p>Truncation Limits and Tracing</p>\n   </li>\n   <li>\n    <p>Lab: Creating Project Guidelines</p>\n   </li>\n   <li>\n    <p>Deep Dive: Plan Mode and Clarifying Questions</p>\n   </li>\n   <li>\n    <p>Project Lab: Building a Wolfenstein 3D Clone</p>\n   </li>\n   <li>\n    <p>Sandbox Security: Bubble Wrap and Seatbelt</p>\n   </li>\n   <li>\n    <p>Approval Policies (Untrusted, Request, Never)</p>\n   </li>\n   <li>\n    <p>OS-Specific Settings and Network Access</p>\n   </li>\n   <li>\n    <p>Permission Overrides: Auto Mode vs. Full Access</p>\n   </li>\n   <li>\n    <p>Creating and Troubleshooting Rules</p>\n   </li>\n   <li>\n    <p>Global vs. Project Configuration (config.toml) API, SDKs, and Extensions</p>\n   </li>\n   <li>\n    <p>Non-Interactive (Headless) Mode for CI/CD</p>\n   </li>\n   <li>\n    <p>OpenAI Interaction Layers: REST API vs. SDKs</p>\n   </li>\n   <li>\n    <p>Implementing the OpenAI Agents SDK</p>\n   </li>\n   <li>\n    <p>Working with the Codeex SDK</p>\n   </li>\n   <li>\n    <p>Using the Codeex Desktop Application</p>\n   </li>\n   <li>\n    <p>Installing the VS Code Extension</p>\n   </li>\n   <li>\n    <p>The Codeex App Server Protocol</p>\n   </li>\n   <li>\n    <p>Automated Workflows with GitHub Actions</p>\n   </li>\n   <li>\n    <p>Anatomy of Agent Skills</p>\n   </li>\n   <li>\n    <p>Discovery, Activation, and Execution</p>\n   </li>\n   <li>\n    <p>Skill Locations and Marketplace</p>\n   </li>\n   <li>\n    <p>Lab: Image Generation Skills</p>\n   </li>\n   <li>\n    <p>Project Lab: Building a Task Manager Skill</p>\n   </li>\n   <li>\n    <p>Optimizing Cost with Model and Effort Selection</p>\n   </li>\n   <li>\n    <p>Fast Mode for Inference</p>\n   </li>\n   <li>\n    <p>Connecting MCP Tools (Roblox Example)</p>\n   </li>\n   <li>\n    <p>Orchestrating Sub-Agents and Worker Teams</p>\n   </li>\n  </ul>\n  <p>Watch the full course on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel (5-hour watch).</p>\n  <p>/you</p>\n </body>\n</html>",
+  "aiSummary": "本文宣布在 freeCodeCamp YouTube 频道上发布一个全面的 5 小时视频课程，教授开发者如何使用 OpenAI Codex 进行智能体式的 AI 辅助开发，涵盖基础知识、设置、工作流管理和高级集成。",
+  "oneSentenceSummary": "本文宣布在 freeCodeCamp YouTube 频道上发布一个全面的 5 小时视频课程，教授开发者如何使用 OpenAI Codex 进行智能体式的 AI 辅助开发，涵盖基础知识、设置、工作流管理和高级集成。",
+  "summary": "本文介绍了由 ExamPro 的 Andrew Brown 开发，并发布在 freeCodeCamp.org YouTube 频道上的一个全新、内容广泛的视频课程。该课程名为“OpenAI Codex 精要”，是一个 5 小时的教程，旨在教授开发者如何利用 OpenAI Codex，通过“智能体”式的开发方法来增强现实世界的编码工作流和生产力。文章详细介绍了课程的各部分内容，涵盖的主题范围广泛，从 Codex 的基础知识和智能体循环，到实际设置（Node.js、WSL 2、身份验证）、上下文窗口管理、会话处理、项目指导、安全沙箱、API/SDK 使用、VS Code 扩展集成、技能开发以及成本优化。该课程旨在成为一个实践指南，最终以构建《德军总部 3D》克隆版和自定义任务管理器技能等项目实验收尾。",
+  "mainPoints": [
+    {
+      "point": "课程侧重于“智能体”式的 AI 辅助开发，将 Codex 定位为积极的协作者，而非简单的代码生成器。",
+      "explanation": "它教授开发者在规划、澄清和执行的循环结构中使用 Codex，超越基础的代码补全，实现更具指导性、交互性的伙伴关系。"
+    },
+    {
+      "point": "课程深入涵盖了实际设置和配置，包括环境设置、身份验证模型以及关键的上下文窗口管理。",
+      "explanation": "课程提供了安装 Codex、管理 API 密钥以及理解如何处理 40 万 token 的上下文限制以避免截断和幻觉的实践实验。"
+    },
+    {
+      "point": "课程内容超越了核心工具，涵盖了用于生产环境的集成、扩展和高级工作流。",
+      "explanation": "部分章节详细介绍了如何使用 Codex SDK、VS Code 扩展、用于 CI/CD 的非交互模式、连接 MCP 工具以及编排子智能体，使其与实际应用开发相关。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI Codex 是一个专门设计用于将自然语言翻译成代码的人工智能系统。",
+    "本课程将教你如何使用 Codex 来加速现实世界的编码工作流和开发者的生产力。",
+    "理解智能体循环",
+    "深度探讨：模型智能与上下文窗口",
+    "编排子智能体与工作团队"
+  ],
+  "tags": [
+    "OpenAI Codex",
+    "AI 辅助开发",
+    "智能体编码",
+    "开发者课程",
+    "freeCodeCamp"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 352,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776345917000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-16 13:25:17"
+}

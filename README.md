@@ -16,14 +16,14 @@
 
 **订阅地址**: [https://rss.izoa.fun//atom.xml](https://rss.izoa.fun//atom.xml)
 
-**更新时间**: 2026-04-17 06:13:34 | **新增**: +34 篇 | [按标签分类](/TAGS.md)
+**更新时间**: 2026-04-17 08:18:43 | **新增**: +39 篇 | [按标签分类](/TAGS.md)
 
 ---
 
 ## 文章来源
 
 
-- [AI-精选](/details/AI 精选.md)
+- [AI-精选](/details/AI 精选.md) *(已更新)*
 - [编程-精选](/details/编程 精选.md)
 - [商业-精选](/details/商业 精选.md)
 - [产品-精选](/details/产品 精选.md)

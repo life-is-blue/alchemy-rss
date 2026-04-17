@@ -1,0 +1,53 @@
+{
+  "id": "RAW_450942e6",
+  "title": "学习软件系统设计",
+  "url": "https://www.freecodecamp.org/news/learn-software-system-design/",
+  "date": "2026-04-16 13:19:19",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": null,
+  "aiSummary": "本文介绍了一个全面的 2 小时视频课程，内容涵盖软件系统设计，从单服务器设置到扩展、负载均衡、API 设计（RESTful 和 GraphQL）以及安全等高级主题。",
+  "oneSentenceSummary": "本文介绍了一个全面的 2 小时视频课程，内容涵盖软件系统设计，从单服务器设置到扩展、负载均衡、API 设计（RESTful 和 GraphQL）以及安全等高级主题。",
+  "summary": "本文介绍了在 freeCodeCamp.org YouTube 频道上新发布的视频课程，旨在从基础到生产就绪级别教授软件系统设计。该课程由 Hayk Simonyan 创建，结构清晰，逻辑递进。它从基本的单服务器架构和数据库选择（SQL、NoSQL、Graph）开始，然后转向核心的可扩展性概念，如垂直与水平扩展以及带有健康检查的负载均衡。课程还涉及关键的可靠性问题，例如单点故障。课程的重要部分专门讲解 API 设计，涵盖协议、传输层（TCP/UDP）以及 RESTful API 和 GraphQL 的实际实现。最后，课程涵盖了基本的安全主题：身份验证、授权和一般安全实践。该课程被定位为一个实用、结构化的学习资源，面向旨在构建健壮系统的开发者。",
+  "mainPoints": [
+    {
+      "point": "系统设计教育应从基础的单一服务器概念逐步过渡到生产规模的架构。",
+      "explanation": "课程结构从基础设置开始，系统地引入复杂性，反映了工程师在现实世界中的学习和开发路径。"
+    },
+    {
+      "point": "理解扩展策略和可靠性机制对于构建健壮的系统至关重要。",
+      "explanation": "课程涵盖了垂直/水平扩展、负载均衡、健康检查和消除单点故障等关键主题，这些对于处理增长和确保正常运行时间至关重要。"
+    },
+    {
+      "point": "现代 API 设计和安全是完整系统设计技能组合中不可或缺的组成部分。",
+      "explanation": "课程投入了大量内容来讲解 RESTful API 和 GraphQL 的实现，以及身份验证和授权的关键安全实践，这反映了行业需求。"
+    }
+  ],
+  "keyQuotes": [
+    "我们刚刚在 freeCodeCamp.org YouTube 频道上发布了一门课程，该课程从基础概念逐步过渡到生产就绪的系统，涵盖数据库、扩展和负载均衡。",
+    "你将学习构建和保护 API 的实用技术，包括 RESTful 和 GraphQL。",
+    "本课程由 Hayk Simonyan 开发。"
+  ],
+  "tags": [
+    "系统设计",
+    "软件架构",
+    "可扩展性",
+    "API 设计",
+    "负载均衡"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 104,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776345559000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-16 13:19:19"
+}
