@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-17 08:18:43 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-17 11:02:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -500,9 +500,7 @@
 
 ### [使用-PlanetScale-+-Workers-部署-Postgres-和-MySQL-数据库](https://blog.cloudflare.com/deploy-planetscale-postgres-with-workers/)
 
-2026-04-16 13:00:22 | 标签: Cloudflare Workers, PlanetScale, PostgreSQL, MySQL, 数据库
-
-> Cloudflare 正在深化与 PlanetScale 的合作，为 Cloudflare Workers 开发者提供无缝、集成的数据库体验。公告详细说明，用户很快将能够直接从 Cloudflare 控制台和 API 创建 PlanetScale Postgres 或 MySQL 数据库，账单将合并到其 Cloudflare 账户，并可利用初创企业计划等项目的积分。该集成利用了 Cloudflare 的数据库连接服务 Hyperdrive 来管理连接池和缓存，确保来自全球分布式 Workers 的查询快速可靠。文章强调了开发者的获益，包括访问 PlanetScale 的全部功能集（查询洞察、分...
+2026-04-16 13:00:22
 
 
 

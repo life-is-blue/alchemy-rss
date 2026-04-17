@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-17 08:18:43 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-17 11:02:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -650,9 +650,7 @@
 
 ### [如何使用-Elasticsearch-优化-Web-应用程序中的搜索功能](https://www.freecodecamp.org/news/streamline-search-functionality-in-web-apps-with-elasticsearch/)
 
-2026-04-16 16:25:38 | 标签: Elasticsearch, 搜索引擎, Node.js, 后端开发, 数据库
-
-> 本文是一份详细的实践教程，介绍如何通过实现 Elasticsearch 来提升 Web 应用程序的搜索能力。文章首先解释了 Elasticsearch 作为搜索引擎的角色及其关键术语。指南的核心部分逐步讲解了如何设置 Node.js 项目、安装 Elasticsearch 客户端以及配置连接。随后深入探讨了实际操作：创建和删除索引、使用分析器定义自定义映射规则以实现自动补全等功能、索引文档（帖子），以及实现带有分页和字段加权功能的搜索功能。本教程围绕一个演示论坛后端构建，为每个步骤提供了完整、可运行的代码片段，对后端开发人员极具可操作性。
+2026-04-16 16:25:38
 
 
 
