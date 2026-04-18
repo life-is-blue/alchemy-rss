@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-18 06:13:08 | [返回首页](/README.md)
+**更新时间**: 2026-04-18 08:16:44 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11347)
+- [AI & 大模型](#ai-llm) (11368)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (783)
-- [DevOps](#devops) (521)
+- [DevOps](#devops) (522)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5504)
+- [其他](#other) (5514)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [使用合成数据构建快速多语言-OCR-模型](https://huggingface.co/blog/nvidia/nemotron-ocr-v2) - AI 精选
 - [Codex-几乎无所不能](https://openai.com/index/codex-for-almost-everything) - AI 精选
 - [Gemini-3.1-Flash-TTS：下一代富有表现力的-AI-语音](https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/) - AI 精选
 - [Agents-SDK-的下一阶段演进](https://openai.com/index/the-next-evolution-of-the-agents-sdk) - AI 精选
@@ -41,9 +42,8 @@
 - [Anthropic-的-Project-Glasswing——将-Claude-Mythos-限制在安全研究人员范围内——在我看来很有必要](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything) - AI 精选
 - [面向“Token-亿万富翁”的极限-Harness-Engineering：100-万行代码、每天-10-亿-Token、0%-人工代码、0%-人工审查-——-Ryan-Lopopolo，OpenAI-Frontier-&amp;-Symphony](https://www.latent.space/p/harness-eng) - AI 精选
 - [Deep-Agents-v0.5](https://blog.langchain.com/deep-agents-v0-5/) - AI 精选
-- [Agentic-能力从哪里来？拆解基座大模型-GLM-5-/MiniMax-M2/Kimi-K2.5-的训练过程](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247514107&idx=1&sn=fb5014a9de0d35c6ba6ac2297c471af0) - AI 精选
 
-- [查看全部 11347 篇...](/details/tags/ai-llm.md)
+- [查看全部 11368 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -111,6 +111,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [共享字典：跟上智能体网络步伐的压缩技术](https://blog.cloudflare.com/shared-dictionaries/) - 编程 精选
 - [保护非人类身份：自动化吊销、OAuth-与范围化权限](https://blog.cloudflare.com/improved-developer-security/) - 编程 精选
 - [动态-Workers-中的持久对象：为每个-AI-生成的应用提供专属数据库](https://blog.cloudflare.com/durable-object-facets-dynamic-workers/) - 编程 精选
 - [动态、身份感知且安全的沙盒认证](https://blog.cloudflare.com/sandbox-auth/) - 编程 精选
@@ -127,9 +128,8 @@
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
-- [从单体到-LLM：拆解-DevOps-进化的三大范式](https://mp.weixin.qq.com/s?__biz=MjM5MjY3OTgwMA==&mid=2652488593&idx=1&sn=0ec72ae6ede304415c64bcdc720f723e) - 编程 精选
 
-- [查看全部 521 篇...](/details/tags/devops.md)
+- [查看全部 522 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5504 篇...](/details/tags/other.md)
+- [查看全部 5514 篇...](/details/tags/other.md)
 
 

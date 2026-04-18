@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-18 06:13:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-18 08:16:44 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -21,6 +21,14 @@
 ### [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA)
 
 2025-03-10 23:49:55
+
+
+
+### [共享字典：跟上智能体网络步伐的压缩技术](https://blog.cloudflare.com/shared-dictionaries/)
+
+2026-04-17 14:02:01 | 标签: 网络性能, 压缩, CDN, Cloudflare, 增量压缩
+
+> 这篇来自 Cloudflare 博客的文章介绍了该公司即将支持的共享压缩字典，这是一项旨在解决关键性能瓶颈的现代网络标准。核心问题在于，由 AI 辅助开发推动的频繁部署，以及智能体流量（机器人、爬虫）的不断增长，正使得传统缓存机制失效。每一次微小的代码变更都会迫使客户端重新下载整个资源包。共享字典通过启用增量压缩来解决此问题：浏览器告知服务器其已缓存的文件的先前版本，服务器仅发送差异部分。Cloudflare 计划分三个阶段推出，第一阶段将于 2026 年 4 月 30 日启动一个直通测试版，届时他们将转发必要的标头和使用相应的编码。早期的内部测试显示压缩效果显著，例如将一个 92.1KB 的...
 
 
 
@@ -234,13 +242,13 @@
 
 
 
-### [R2-数据目录：托管-Iceberg-表，零出口费用](https://blog.cloudflare.com/r2-data-catalog-public-beta/)
+### [突破地域限制的顺序一致性：D1-如何实现全局读取复制](https://blog.cloudflare.com/d1-read-replication-beta/)
 
 2025-04-10 14:00:00
 
 
 
-### [突破地域限制的顺序一致性：D1-如何实现全局读取复制](https://blog.cloudflare.com/d1-read-replication-beta/)
+### [R2-数据目录：托管-Iceberg-表，零出口费用](https://blog.cloudflare.com/r2-data-catalog-public-beta/)
 
 2025-04-10 14:00:00
 
