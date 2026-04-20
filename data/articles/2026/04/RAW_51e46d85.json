@@ -1,0 +1,58 @@
+{
+  "id": "RAW_51e46d85",
+  "title": "Kimi 新论文：把 KVCache 玩成新商业模式了",
+  "url": "https://www.qbitai.com/2026/04/403528.html",
+  "date": "2026-04-19 10:19:45",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\">衡宇 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>把长上下文做到极致的Kimi又发新成果！</p>\n  <p>这一次瞄准的是大模型推理架构跨机房调度沉疴。</p>\n  <p>他们提出了一套全新范式，<strong>Prefill-as-a-Service</strong>（简称PrFaaS）<strong>，预填充即服务。</strong></p>\n  <p>其核心突破是让KV Cache可以跨数据中心传输，把Prefill和Decode彻底解耦到不同的异构集群。</p>\n  <p>有了PrFaaS，<strong>Prefill和Decode之间可以跨越城市、跨地域调度。</strong></p>\n  <p>而且，面对长文本场景，上下文越长，它的优势越明显。</p>\n  <p>可以说是<strong>长上下文场景天生圣体</strong>（doge）！</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_6f5bc9b19fa16e8ecf4e379a21365382.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>这项工作<strong>由月之暗面和清华大学清华大学郑纬民院士、武永卫教授团队联合推出</strong>。</p>\n  <p>在内部1T参数混合注意力模型的实测验证下，这套PrFaaS-PD架构交出了极具说服力的数据。</p>\n  <p>相比传统同构PD部署，吞吐量提升54%，P90延迟大幅降低64%；即便对比未做智能调度的朴素异构方案，吞吐量依然提升32%。</p>\n  <p>而跨数据中心传输仅占用13Gbps带宽，远低于100Gbps的以太网上限，也就是说<strong>普通商用以太网即可稳定承载</strong>。</p>\n  <p>这背后是怎么做到的？</p>\n  <p>Prefill-Decode分离是大模型推理服务的行业标配。</p>\n  <p>但这让<strong>KV Cache传输高度依赖RDMA网络，牢牢地把Prefill和Decode两个阶段强行绑定在单一集群内</strong>。</p>\n  <p>解绑单飞不了，压根儿解绑单飞不了。</p>\n  <p>于是，如果最适合做Prefill的算力芯片和最适合做Decode的带宽芯片不在一个机房，是异地恋的状态，就根本没办法一起用。</p>\n  <p>但强行把异构硬件塞到一起，必然导致资源配比完全僵死。</p>\n  <p>大家都知道流量是波动的。配比如果定死，很容易出现一边忙到飞起，一边闲成狗的情况出现，算力利用率大打折扣。</p>\n  <p>导致这个情况的“病灶”，就是就是<strong>KV Cache的带宽墙</strong>。</p>\n  <p>研究团队在这项工作中给出了量化数据。</p>\n  <p>以MiniMax-M2.5这款典型的dense GQA架构模型为例——</p>\n  <p>在32K上下文时，单实例产生KV Cache的速率达到60Gbps，而跨数据中心以太网带宽通常只有10-100Gbps，相当于后者试图用家用小水管来扛消防水带的流量，根本带不动。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_7e0f483548933c421aa481df0d86a066.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>因此，为了保证推理不被卡住、不出现等待延迟，Prefill与Decode 之间必须使用高带宽、低时延的RDMA网络进行通信。</p>\n  <p>这就是传统PD分离架构只能被限制在RDMA域内的根本原因。</p>\n  <p>不过，<strong>新一代混合注意力架构带来了转机</strong>。</p>\n  <p>近期，Kimi Linear、Qwen 3.5、MiMo-V2-Flash、Ring-2.5等模型齐刷刷用上 了<strong>线性注意力+全注意力</strong>混合架构。</p>\n  <p>在这种混合架构下，线性层只产出固定大小的循环状态，不随上下文变长而膨胀；只有全注意力层才会生成和长度相关的KV Cache。</p>\n  <p>它带来了喜人的效果。在32K上下文下：</p>\n  <ul>\n   <li>MiMo-V2-Flash的KV吞吐量仅4.66Gbps，比起MiniMax-M2.5来降了13倍；</li>\n   <li>Qwen3.5-397B的8.25Gbps相比同规dense模型的33.35Gbps，降低4倍；</li>\n   <li>Ring-2.5-1T的MLA压缩叠加7:1混合比例，整体KV内存节省约36倍。</li>\n  </ul>\n  <p>“线性注意力+全注意力”混合架构把KV吞吐量从RDMA级别降到了以太网级别。</p>\n  <p><strong>跨数据中心做PD分离，终于从不可能变成了可能。</strong></p>\n  <p>光有模型架构还不够，想真正落地跨数据中心推理，还需要一套能把 “有可能” 变成 “能用” 的系统架构。</p>\n  <p>针对这一点，清华联合月之暗面团队推出了<strong>PrFaas</strong>。</p>\n  <p>PrFaaS即Prefill-as-a-Service，翻译过来叫预填充即服务。</p>\n  <p>它是一种跨数据中心的大模型推理服务架构，核心是将长上下文请求的Prefill计算，选择性卸载到独立的、算力密集型的专用集群完成，再把生成的KV Cache通过普通以太网传输到本地PD集群执行Decode。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_10bded673155c1d783d9f92d60fda689.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>具体来说，<strong>系统会设一个动态长度阈值t。</strong></p>\n  <p>如果是短请求（未缓存长度≤t），就老老实实留在本地PD集群跑完整个流程。</p>\n  <p>只有长请求（未缓存长度 &gt; t）才会被送到专门的PrFaaS集群做Prefill，生成的KV Cache再通过以太网传回本地做 Decode。</p>\n  <p>值得注意的是，阈值t会跟着实时带宽、请求长度分布自动调整。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_5bca1e14dc4abc1a495a4e3ab16f8a6d.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>整套架构由三大子系统紧密配合。</p>\n  <p><strong>第一，计算层。</strong></p>\n  <p>PrFaaS集群上，H200这类高端芯片，只啃长上下文Prefill硬骨头；而本地PD集群去用H20这类带宽优化芯片，专心做Decode、处理短请求。</p>\n  <p>术业有专攻，两类硬件各自独立扩容，不再强行配对。</p>\n  <p><strong>第二，网络层。</strong></p>\n  <p>集群内部用RDMA保证低延迟，跨数据中心就用VPC或专线，走通用以太网传KV Cache，以此大幅降低部署难度和成本。</p>\n  <p>研究人员表示实测环境是100Gbps VPC。这虽然远低于RDMA的800Gbps，但足够用了。</p>\n  <p><strong>第三，存储层</strong>，这也是最有意思的子系统。</p>\n  <p>团队设计了一个混合前缀缓存池，把KV Cache分成两类。</p>\n  <p>一类是prefix-cache块，另一类是transfer-cache块。</p>\n  <p>prefix-cache块在集群内复用，必须块对齐才能命中；transfer-cache块则专门用于跨集群传输，传完即弃，不占用长期存储。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105351_7f29a8924cd6bf4786bdd876d0c63ac8.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>为什么这样设计？</p>\n  <p>因为混合模型的KV Cache是heterogeneous的。</p>\n  <p>线性层的recurrent state是request-level，大小固定，必须完全匹配才能复用；全注意力层的KV Cache是block-level，支持部分前缀匹配。</p>\n  <p>而统一池化管理，既能高效复用本地缓存，又能灵活支持跨集群传输。</p>\n  <p>此外，<strong>为了稳住生产环境，PrFaaS还设计了双时间尺度调度算法</strong>。</p>\n  <p>简单理解一下，就是短期毫秒级做带宽+缓存感知路由，长期分钟级做流量驱动的资源重分配。</p>\n  <p>短期调度监控PrFaaS出口利用率，接近阈值时提高t、减少跨中心流量。</p>\n  <p>对于带前缀缓存的请求，调度器会权衡缓存命中位置和带宽可用性。如果带宽紧张，优先用本地缓存；如果带宽充裕，可以从远程集群拉缓存来减少重复计算。</p>\n  <p>长期调度观察各阶段的队列深度和利用率。</p>\n  <p>当Prefill成为瓶颈时，把PD集群的节点从Decode角色转为Prefill角色；当Decode成为瓶颈时，反向调整。</p>\n  <p><strong>这种动态重分配让系统能适应流量模式的缓慢变化。</strong></p>\n  <p>为了验证跨数据中心 KV Cache传输与PrFaaS架构的真实落地能力，研究团队基于生产级配置开展了严格的对照实验，完整还原了异构硬件、跨域网络与真实长上下文流量的组合场景，让方案从架构设想变为可量化、可复用的工程实践。</p>\n  <p>实验选用团队内部自研的1T参数混合注意力架构模型，整体设计对齐Kimi Linear架构，采用线性注意力层与全注意力层7:1的混合配比。</p>\n  <p>此外，在保持模型能力的同时实现KV Cache的高效压缩，为跨数据中心传输奠定基础。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_8c28ddcbe83c285b16e9240a8c34027f.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p><strong>硬件层面</strong>，团队采用了典型异构组合。</p>\n  <p>专门负责长上下文Prefill的PrFaaS集群配备32张H200，凭借更强算力吞吐处理高负载计算；本地PD集群配备64张H20 GPU，面向Decode阶段优化内存带宽，兼顾短请求Prefill与全流程推理。</p>\n  <p><strong>网络层面</strong>，团队采用跨数据中心通用方案，通过VPC对等连接提供约100Gbps的跨集群带宽，完全贴合主流云厂商与多数据中心部署环境。</p>\n  <p>实验workload采用截断对数正态分布的请求长度，均值约27K tokens，高度贴近线上长上下文服务的真实流量特征。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_26911cee513e9ef353d28760157c5fb9.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>实验结果证明了PrFaaS-PD架构的工程有效性。</p>\n  <p><strong>在核心性能指标上</strong>，相比同等硬件规模的同构PD集群，PrFaaS-PD架构将服务吞吐量提升54%；相比未做智能调度的简单异构部署，吞吐量仍有32%的提升。</p>\n  <p><strong>在端到端延迟上</strong>，PrFaaS-PD架构带来的优化效果更为显著，P90 TTFT（首词时延）降低幅度达64%，长请求不再与短请求争抢本地Prefill资源，排队阻塞与计算拥堵问题大幅缓解。</p>\n  <p>更关键的是工程可行性指标。</p>\n  <p><strong>PrFaaS集群的平均出口带宽仅13Gbps，在100Gbps的跨集群链路中占比仅13%，留有充足的带宽冗余，完全不会出现拥塞与链路抢占。</strong></p>\n  <p>实验结果证实，在混合模型与PrFaaS调度的协同下，KV Cache传输可以不再依赖 RDMA，普通商用以太网即可稳定支撑。</p>\n  <p>这项研究<strong>由月之暗面与清华大学联合完成</strong>。</p>\n  <p>作者包括Ruoyu Qin、Weiran He、Yaoyu Wang、Zheming Li、Xinran Xu、Yongwei Wu、Weimin Zheng、Mingxing Zhang（通讯作者）。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_2615513796acc1679dfd437d4599b541.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>其中，研究团队成员中来自月之暗面的，有Ruoyu Qin、Weiran He、Yaoyu Wang、Zheming Li、Xinran Xu五位。</p>\n  <p>一作<strong>Ruoyu Qin（秦若愚）</strong>，是清华大学计算机科学与技术系MADSys实验室在读博士生，师从本文通讯作者、清华大学计算机系副教授Mingxing Zhang（章明星），后者长期面向KV Cache架构与分布式推理。</p>\n  <p>同时，Qin也在月之暗面工作，还是Mooncake分布式推理系统的一作。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_a536c37438dc096e228a694e7b8ea7d5.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>月之暗面工程副总裁<strong>Xinran Xu（许欣然）</strong>也在作者名单之列。</p>\n  <p>量子位发现，作者名单中月之暗面的五位，同样也是Mooncake架构的核心贡献者。</p>\n  <p>除上述的教授章明星外，研究团队中来自清华大学的作者还有Yongwei Wu和Weimin Zheng。</p>\n  <p><strong>Weimin Zheng（郑纬民）</strong>，中国工程院院士，清华大学计算机系教授，长期从事并行/分布处理、大规模数据存储系统领域的科研与教学工作。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260419105350_559f9520dc312ac8a46adfad2b23da85.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p><strong>Yongwei Wu（武永卫）</strong>是清华大学计算机科学与技术系副主任、教授、博士生导师，此外还担任AI Infra公司趋境科技的首席科学家。</p>\n  <p>此前，月之暗面与清华大学MADSys实验室联合主导研发并开源了Mooncake项目，趋境科技是该项目核心共建单位与深度贡献者。</p>\n  <p>参考链接：\n   <br class=\"sysbr\">\n   [1]\n   <br>\n   https://arxiv.org/abs/2604.15039\n   <br class=\"sysbr\">\n   [2]\n   <br>\n   https://madsys.cs.tsinghua.edu.cn/people/</p>\n </body>\n</html>",
+  "aiSummary": "月之暗面与清华大学联合提出 Prefill-as-a-Service 架构，通过混合注意力模型压缩 KV Cache，使其能通过普通以太网跨数据中心传输，实现 Prefill 与 Decode 的异地异构调度，显著提升长上下文推理性能。",
+  "oneSentenceSummary": "月之暗面与清华大学联合提出 Prefill-as-a-Service 架构，通过混合注意力模型压缩 KV Cache，使其能通过普通以太网跨数据中心传输，实现 Prefill 与 Decode 的异地异构调度，显著提升长上下文推理性能。",
+  "summary": "本文报道了月之暗面与清华大学联合发布的一项新研究 PrFaaS。该研究旨在解决大模型推理中 Prefill 与 Decode 阶段因 KV Cache 传输带宽要求高而被强制绑定在同一 RDMA 集群的问题。核心创新在于结合了新一代混合注意力模型（如 Kimi Linear）和一套新的系统架构。混合模型大幅降低了 KV Cache 的生成速率，使其能够通过普通商用以太网进行跨数据中心传输。PrFaaS 架构则动态地将长上下文的 Prefill 计算卸载到专门的算力密集型集群（如使用 H200），生成的 KV Cache 再通过网络传回本地带宽优化集群（如使用 H20）进行 Decode。实验表明，该架构相比传统同构部署，吞吐量提升 54%，P90 延迟降低 64%，且跨数据中心传输仅需 13Gbps 带宽，极具工程可行性。",
+  "mainPoints": [
+    {
+      "point": "混合注意力模型是跨数据中心调度 KV Cache 的技术前提。",
+      "explanation": "线性注意力与全注意力混合的架构（如 Kimi Linear）能极大压缩 KV Cache 的生成速率，将其从 RDMA 级别（数十 Gbps）降至以太网级别（数 Gbps），为跨域传输创造了可能。"
+    },
+    {
+      "point": "PrFaaS 架构实现了 Prefill 与 Decode 的彻底解耦与异地异构调度。",
+      "explanation": "该架构设立动态长度阈值，将长上下文的 Prefill 计算卸载到远程专用算力集群，生成的 KV Cache 通过以太网传回本地进行 Decode，使得 H200（算力型）和 H20（带宽型）等异构硬件可以独立部署和扩容。"
+    },
+    {
+      "point": "系统通过混合缓存池与双时间尺度调度算法保障生产环境稳定性与效率。",
+      "explanation": "设计 prefix-cache 和 transfer-cache 分离的混合缓存池，兼顾本地复用与跨集群传输。调度算法在毫秒级进行带宽感知路由，在分钟级进行资源重分配，使系统能自适应流量变化。"
+    },
+    {
+      "point": "该方案具有明确的工程可行性与显著的性能收益。",
+      "explanation": "在 1T 参数混合模型上的实验显示，相比同构部署，吞吐量提升 54%，P90 延迟降低 64%，且跨数据中心传输带宽仅需 13Gbps，远低于 100Gbps 的 VPC 上限，证明可用普通商用以太网承载。"
+    }
+  ],
+  "keyQuotes": [
+    "Prefill-as-a-Service 是一种跨数据中心的大模型推理服务架构，核心是将长上下文请求的 Prefill 计算，选择性卸载到独立的、算力密集型的专用集群完成，再把生成的 KV Cache 通过普通以太网传输到本地 PD 集群执行 Decode。",
+    "线性注意力+全注意力混合架构把 KV 吞吐量从 RDMA 级别降到了以太网级别。跨数据中心做 PD 分离，终于从不可能变成了可能。",
+    "相比传统同构 PD 部署，吞吐量提升 54%，P90 延迟大幅降低 64%；即便对比未做智能调度的朴素异构方案，吞吐量依然提升 32%。",
+    "PrFaaS 集群的平均出口带宽仅 13Gbps，在 100Gbps 的跨集群链路中占比仅 13%，留有充足的带宽冗余，完全不会出现拥塞与链路抢占。"
+  ],
+  "tags": [
+    "大模型推理",
+    "KV Cache",
+    "Prefill-as-a-Service",
+    "混合注意力",
+    "分布式系统"
+  ],
+  "topicTag": "other",
+  "readTime": 16,
+  "score": 91,
+  "wordCount": 3812,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1776593985000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-19 10:19:45"
+}
