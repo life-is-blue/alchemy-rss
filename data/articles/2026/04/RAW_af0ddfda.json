@@ -1,0 +1,55 @@
+{
+  "id": "RAW_af0ddfda",
+  "title": "全球最大规模含触觉数据集，凭什么吸引谷歌和众多高校的加入？",
+  "url": "https://www.qbitai.com/2026/04/403701.html",
+  "date": "2026-04-20 07:55:03",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<html>\n <head></head>\n <body>\n  <p>具身数据集的赛道越来越火热，连 Google&nbsp;DeepMind 也入场了？</p>\n  <p>4 月 15 日，<strong>戴盟机器人</strong>联合包括 Google DeepMind、中国移动、新加坡国立大学、香港科技大学、北京大学、清华大学等多家全球顶尖学术机构和知名企业，发布<strong>全球最大规模含触觉全模态物理世界数据集 Daimon Infinity</strong>。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-403705\" src=\"https://i.qbitai.com/wp-content/uploads/2026/04/图片-1大.jpeg\" alt=\"\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6227ae54-4c21-4f5d-241e-4c6a6ab85200/public 1280w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/49354346-98fb-4647-b1e2-ade387e16b00/public 768w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ac21e9e4-35ee-4b12-cdee-48e07b2cb700/public 1200w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>图说：联合数十家机构共建</p>\n  <p>数据规模预计于年内达到数百万小时，覆盖多个真实场景，包含触觉、视觉、动作轨迹、执行动作、语音文本等多个维度信息，可将模型训练效率提升 10 倍。<strong>其中 10000 小时数据直接开源</strong>，目前首批数据已上线阿里魔搭社区，并在社区主页置顶。</p>\n  <p>从国家战略加码，到资本疯狂涌入，数据的重要性已经成为具身行业共识，只有补齐数据缺口，才能突破具身智能当下难以现实落地的困境。这也是全球众多头部机构联手共建数据集的根本动力——<strong>通过构建高质量数据集，加速具身智能迈向通用时代</strong>。</p>\n  <p>通过对 Daimon Infinity 的拆解，我们能窥见其吸引头部机构共建的几个关键原因：物理交互、真实场景，以及源源不断的数据生产能力。</p>\n  <p><strong>【物理交互，已经成为具身智能的必选项】</strong></p>\n  <p>触觉是 Daimon Infinity 的关键词之一。戴盟作为率先提出<strong>VTLA（Vision-Tactile-Language-Action）</strong>架构的创新者，这次将物理交互加入了具身数据的主干。</p>\n  <p>具身智能过去依赖于视觉感知，但其可能因遮挡、光线不足而失灵。与视觉的远距离感知不同，触觉为机器人提供了最直接的物理反馈，有效弥补视觉导致的盲区和错觉。<strong>曾经被视为高端选配的触觉，如今已逐渐成为具身智能的必选项</strong>——只有实现视觉与触觉的深度协同，机器人才能在复杂的物理环境中完成精准、稳定的操作。</p>\n  <p>众多头部机构选择与戴盟联手共建 Daimon-Infinity 数据集，也佐证了<strong>行业对于将触觉加入具身数据主干这一路线的认可</strong>。</p>\n  <p>这一路线的实现，基于戴盟全行业领先的触觉感知技术。Daimon-Infinity 提供了行业最高质量的触觉数据——不仅仅是简单的接触力，<strong>更覆盖了接触形变、滑移趋势、接触状态及物体纹理、软硬、材质等在内的十多种模态</strong>，全面捕捉真实世界物理信息，完整还原物理交互过程。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-403702\" src=\"https://i.qbitai.com/wp-content/uploads/2026/04/图片-2-3.png\" alt=\"\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b4f411dd-741f-454a-fc75-e52ff03f6d00/public 1080w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/28fe3aee-2cb2-4827-9a8a-d4442568a400/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>Daimon-Infinity 能够补齐行业稀缺的触觉数据，根源在于团队的技术基因。戴盟孵化于香港科技大学，由机器人研究院创始院长王煜及其学生段江哗共同创立。团队以视触觉技术为壁垒，这是<strong>最适配具身智能的触觉感知路线</strong>，将复杂的触觉信息转化为图像信息，极大降低了具身模型的学习门槛。</p>\n  <p>触觉的加入带来了有效性的显著提升：经验证，使用 Daimon-Infinity 数据集对具身模型进行预训练时，仅需要约十分之一的数据，就能在精细操作任务中达到更优的效果，<strong>训练效率实现了 10 倍提升</strong>。</p>\n  <p><strong>【真实场景，数据生产能力达数百万小时】</strong></p>\n  <p>Daimon-Infinity的另一个关键词是真实场景，这与其采集模式有关。</p>\n  <p>过去，具身数据采集依赖于封闭的数据采集厂，不仅成本高，而且场景单一、过于标准化，导致数据高度重复，无法支撑具身模型在现实复杂环境中稳定运行的需求。</p>\n  <p>戴盟构建了<strong>全球最大规模的外发式数据采集网络，</strong>通过自研的轻量化、便携式采集设备，让采集工作走出数采厂，进入户外、家庭、工厂等环境复杂、非标准化的场景，采集<strong>真实环境中的真实操作</strong>，将真实的人类经验转化为机器人提升泛化能力的教材。</p>\n  <p>同时，这种模式也打破了产能上限。无数场景、无数任务，将为具身智能带来多样、全面的海量数据，<strong>每年数据采集量可超过数百万小时</strong>。</p>\n  <p>在拥有海量原始数据后，如何将其转化为模型可用的有效数据？<strong>戴盟选择与阿里云强强联手，打造了“顶级数据 × 顶级算力”的全链路数据处理引擎。</strong>强大的数据处理管线，可将操作轨迹精度还原至行业顶尖水平，实现触觉与其他模态（如视觉、动作指令）的精准融合，将真实世界的交互表征嵌入到每一帧数据中。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-403703\" src=\"https://i.qbitai.com/wp-content/uploads/2026/04/图片-3-3.png\" alt=\"\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0c1f12ab-f598-46e3-9dd7-a134e2837a00/public 1080w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bb66f83c-287c-40bf-c5f8-7233eb5cbb00/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>【从开源共建到定义标准】</p>\n  <p>Daimon-Infinity 的发布，并不是一次常规的产品上新。</p>\n  <p>此次数据集由戴盟主导，联合了包括 DeepMind、中国移动、新加坡国立大学、北京大学等数十家海内外顶尖学术机构与知名企业共同参与。<strong>集全球化产研之力，共建具身数据生态。</strong></p>\n  <p>免费开源10000小时数据，更是一次具有行业意义的资源共享。一方面，高质量数据的大规模共享，避免各家企业在数据采集上“重复造轮子”；另一方面，这也是一次行业内对于含触觉数据的规模化探索，推动建立统一的技术标准。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-403704\" src=\"https://i.qbitai.com/wp-content/uploads/2026/04/图片-4.png\" alt=\"\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5636cc59-a8e8-4561-ef7b-1991acd19b00/public 1436w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1e845579-95da-4efe-8408-5786570f3800/public 768w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/35426c3f-8311-4651-8f50-c542a2981000/public 1200w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>Daimon-Infinity 的数据开源，将为具身智能打造从实验室走向产业的高质量数据底座，大幅缩短具身智能实现精细操作、提供泛化能力、走向商业化落地的周期。具身智能在现实落地的那天，可能会更快到来。</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n </body>\n</html>",
+  "aiSummary": "戴盟机器人联合 Google DeepMind 等数十家顶尖机构，发布了全球最大规模含触觉的全模态物理世界数据集 Daimon Infinity，旨在通过开源高质量数据和构建生态，加速具身智能的落地。",
+  "oneSentenceSummary": "戴盟机器人联合 Google DeepMind 等数十家顶尖机构，发布了全球最大规模含触觉的全模态物理世界数据集 Daimon Infinity，旨在通过开源高质量数据和构建生态，加速具身智能的落地。",
+  "summary": "文章报道了由戴盟机器人主导，联合 Google DeepMind、中国移动、新加坡国立大学、北京大学、清华大学等数十家全球顶尖机构共同发布的具身智能数据集 Daimon Infinity。该数据集是全球最大规模的含触觉全模态物理世界数据集，预计年内规模达数百万小时，并已开源首批 10000 小时数据。文章深入分析了该数据集的核心价值：一是将触觉感知（VTLA 架构）纳入数据主干，通过高质量的触觉数据（覆盖形变、滑移、材质等十多种模态）显著提升模型训练效率（据称可达 10 倍）；二是通过外发式采集网络，在真实、复杂的非标准化场景中采集数据，解决了传统数据采集厂场景单一、成本高的问题；三是通过开源共建，旨在推动行业标准建立，避免重复造轮子，为具身智能从实验室走向产业提供高质量数据底座。",
+  "mainPoints": [
+    {
+      "point": "触觉感知正从高端选配变为具身智能的必选项，与视觉协同是突破落地瓶颈的关键。",
+      "explanation": "文章指出，单纯依赖视觉感知在遮挡、光线不足时易失灵。Daimon Infinity 数据集将高质量的触觉数据（涵盖接触形变、滑移趋势、材质等十多种模态）作为主干，能有效弥补视觉盲区，实现物理交互的精准还原，获得众多头部机构认可。"
+    },
+    {
+      "point": "通过外发式真实场景采集，解决了传统数据采集成本高、场景单一、数据重复的痛点。",
+      "explanation": "戴盟构建了全球最大规模的外发式数据采集网络，使用轻量化设备进入户外、家庭、工厂等复杂环境，采集‘真实环境中的真实操作’，年产能可达数百万小时，为模型提供了多样化的泛化能力教材。"
+    },
+    {
+      "point": "大规模开源高质量数据旨在共建生态、定义标准，加速整个具身智能行业的商业化落地进程。",
+      "explanation": "免费开源 10000 小时数据，并联合全球产研力量，不仅是为了避免行业内的重复投入，更是一次对含触觉数据规模化应用的探索，旨在推动建立统一技术标准，缩短具身智能从实验室到产业的周期。"
+    }
+  ],
+  "keyQuotes": [
+    "触觉是 Daimon Infinity 的关键词之一。戴盟作为率先提出 VTLA（Vision-Tactile-Language-Action）架构的创新者，这次将物理交互加入了具身数据的主干。",
+    "曾经被视为高端选配的触觉，如今已逐渐成为具身智能的必选项——只有实现视觉与触觉的深度协同，机器人才能在复杂的物理环境中完成精准、稳定的操作。",
+    "Daimon-Infinity 提供了行业最高质量的触觉数据——不仅仅是简单的接触力，更覆盖了接触形变、滑移趋势、接触状态及物体纹理、软硬、材质等在内的十多种模态。",
+    "戴盟构建了全球最大规模的外发式数据采集网络，通过自研的轻量化、便携式采集设备，让采集工作走出数采厂，进入户外、家庭、工厂等环境复杂、非标准化的场景。",
+    "集全球化产研之力，共建具身数据生态。免费开源 10000 小时数据，更是一次具有行业意义的资源共享。"
+  ],
+  "tags": [
+    "具身智能",
+    "数据集",
+    "触觉感知",
+    "VTLA",
+    "机器人"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 87,
+  "wordCount": 1771,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1776671703000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-20 07:55:03"
+}

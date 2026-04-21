@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-21 06:14:46 | [返回首页](/README.md)
+**更新时间**: 2026-04-21 08:19:13 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11387)
+- [AI & 大模型](#ai-llm) (11403)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (783)
+- [前端与全栈](#frontend-fullstack) (785)
 - [DevOps](#devops) (522)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5518)
+- [其他](#other) (5528)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [如何正确-Vibe-Coding？这是来自-Anthropic-编程智能体负责人的大师课](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b) - AI 精选
 - [大模型架构的下半场](https://www.qbitai.com/2026/04/403515.html) - AI 精选
 - [使用合成数据构建快速多语言-OCR-模型](https://huggingface.co/blog/nvidia/nemotron-ocr-v2) - AI 精选
 - [Codex-几乎无所不能](https://openai.com/index/codex-for-almost-everything) - AI 精选
@@ -41,9 +42,8 @@
 - [扩展托管智能体：将“大脑”与“双手”解耦](https://www.anthropic.com/engineering/managed-agents) - AI 精选
 - [企业-AI-的下一阶段](https://openai.com/index/next-phase-of-enterprise-ai) - AI 精选
 - [Anthropic-的-Project-Glasswing——将-Claude-Mythos-限制在安全研究人员范围内——在我看来很有必要](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything) - AI 精选
-- [面向“Token-亿万富翁”的极限-Harness-Engineering：100-万行代码、每天-10-亿-Token、0%-人工代码、0%-人工审查-——-Ryan-Lopopolo，OpenAI-Frontier-&amp;-Symphony](https://www.latent.space/p/harness-eng) - AI 精选
 
-- [查看全部 11387 篇...](/details/tags/ai-llm.md)
+- [查看全部 11403 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 783 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 785 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5518 篇...](/details/tags/other.md)
+- [查看全部 5528 篇...](/details/tags/other.md)
 
 

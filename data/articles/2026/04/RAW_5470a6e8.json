@@ -1,0 +1,54 @@
+{
+  "id": "RAW_5470a6e8",
+  "title": "🔬 训练 Transformer 解决癌症试验 95% 失败率 — Ron Alfa & Daniel Bear， Noetik",
+  "url": "https://www.latent.space/p/noetik",
+  "date": "2026-04-20 16:17:17",
+  "author": "Brandon Anderson",
+  "siteName": "Latent Space",
+  "content": null,
+  "aiSummary": "本次对 Noetik 创始人的采访探讨了他们如何利用在多模态肿瘤数据上训练的大规模 Transformer 模型来改善癌症治疗匹配和临床试验成功率，并以最近与 GSK 达成的 5000 万美元许可协议为例。",
+  "oneSentenceSummary": "本次对 Noetik 创始人的采访探讨了他们如何利用在多模态肿瘤数据上训练的大规模 Transformer 模型来改善癌症治疗匹配和临床试验成功率，并以最近与 GSK 达成的 5000 万美元许可协议为例。",
+  "summary": "本文基于 Latent Space 播客采访，深入探讨了 Noetik 采用 AI 驱动的方法来应对癌症临床试验 95% 失败率的挑战。其核心论点是，许多治疗失败并非因为无效，而是由于患者-肿瘤-治疗匹配不佳。Noetik 花费数年时间构建了世界上最大的真实人类肿瘤多模态数据集之一，包括空间转录组学、蛋白质组学、H&E 成像和全外显子组测序。他们在此数据上训练自回归 Transformer 模型（如 TARIO-2），以建立对癌症生物学的深刻理解，从而能够预测患者对治疗的反应，并为队列选择识别更好的生物标志物。文章强调了 GSK 与 Noetik 达成的 5000 万美元软件许可协议的重要性，将其视为生物技术领域向 AI 平台而非内部药物发现工具的转变。文章认为，通过更好的数据和 AI 模型来改善从实验室到临床的转化，可以显著提高现有疗法的试验成功率，从而拯救生命并节省数十亿美元的研发成本。",
+  "mainPoints": [
+    {
+      "point": "癌症试验的高失败率很大程度上是患者-肿瘤-治疗匹配问题，而不一定是药物疗效问题。",
+      "explanation": "Noetik 的创始人认为，许多‘失败’的治疗实际上对特定的肿瘤生物学有效。95% 的失败率源于无法识别哪些患者会产生反应，突显了关键的数据和匹配瓶颈。"
+    },
+    {
+      "point": "大规模、多模态的肿瘤数据是构建理解癌症生物学的 AI 模型的基础。",
+      "explanation": "Noetik 花费数年时间收集了数千个真实人类肿瘤样本，涵盖四种模态（空间转录组学、蛋白质组学、H&E、测序）。这个丰富、自监督的数据集对于训练像 TARIO-2 这样的 Transformer 模型以创建对肿瘤的‘虚拟细胞’理解至关重要。"
+    },
+    {
+      "point": "AI 模型可以作为改善临床转化的平台，代表了生物技术 AI 的一种新商业模式。",
+      "explanation": "GSK 为 Noetik 的模型支付 5000 万美元许可费，这标志着制药行业向将 AI 作为许可软件平台的转变，这与导致内部药物开发的 AI 工具不同。这种平台方法旨在改善多个候选药物的队列选择和试验设计。"
+    }
+  ],
+  "keyQuotes": [
+    "TL;DR: 95% 的癌症治疗未能通过临床试验，但这可能是一个匹配问题——如果我们能更好地理解哪些患者、哪些肿瘤会对哪些治疗产生反应，成功率将大幅提高，数百万生命将得以挽救——用我们已有的治疗手段。",
+    "Ron 的核心论点是，许多这些‘失败’的治疗实际上是有效的！但我们没有在正确的患者和正确的肿瘤上进行观察。",
+    "这笔交易之所以突出，是因为它是一笔软件许可交易，代表着对*平台*而非*药物*的承诺。",
+    "Noetik 的模型可以模拟患者对实验性治疗的反应。他们正在与合作伙伴一起测试那些已被证明安全但无效的有前景的药物。"
+  ],
+  "tags": [
+    "生物技术中的 AI",
+    "Transformer 模型",
+    "临床试验",
+    "癌症研究",
+    "空间转录组学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1079,
+  "domain": "latent.space",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_fc479e",
+  "sourceName": "Latent Space",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776701837000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-20 16:17:17"
+}
