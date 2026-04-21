@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-21 08:19:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-21 11:02:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -650,17 +650,13 @@
 
 ### [如何在-Cloudflare-Pages-上使用-Astro-SSR-构建无头-WordPress-前端](https://www.freecodecamp.org/news/how-to-build-a-headless-wordpress-frontend-with-astro-ssr-on-cloudflare-pages/)
 
-2026-04-20 17:07:58 | 标签: 无头 WordPress, Astro, Cloudflare Pages, SSR, REST API
-
-> 这份详细的教程逐步讲解了将 WordPress 与其前端解耦，使其仅作为无头 CMS 使用的过程。作者解释了采用这种架构的理由，特别是当内容团队已经熟悉 WordPress，但需要一个自定义的高性能前端时。指南涵盖了完整的设置过程：将 WordPress 移至 CMS 子域名、配置其 REST API、加固安装安全性，以及构建一个具有服务器端渲染功能的 Astro 前端。它包含了 Astro 配置、API 集成、中间件和页面组件的大量代码示例，重点关注 Cloudflare 上的缓存行为、草稿文章预览和安全最佳实践等实用细节。部署通过连接到 GitHub 的 Cloudflare Pages ...
+2026-04-20 17:07:58
 
 
 
 ### [构建生产就绪的-tRPC-API：Apollo-Federation-的-TypeScript-替代方案](https://www.infoq.com/articles/building-trpc-api-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-20 11:00:00 | 标签: tRPC, GraphQL, TypeScript, API 设计, 微服务
-
-> 作者曾是 GraphQL Federation 的倡导者，他分享了将生产系统从 Apollo Federation 迁移到 tRPC 的全面案例研究。文章基于一个每日处理 240 万请求、横跨 12 个微服务的系统的硬数据。它详细阐述了 GraphQL Federation 的痛点，例如模式同步问题和复杂的 CI/CD 流水线，并将其与 tRPC 无需模式定义即可实现端到端类型安全的承诺进行对比。关键成果包括：API 错误减少 89%，平均响应时间提升 68%（从 38 毫秒降至 12 毫秒），客户端包大小减少 80%，CI/CD 流水线速度提升 40%。文章提供了使用绞杀者模式进行迁移的详细...
+2026-04-20 11:00:00
 
 
 

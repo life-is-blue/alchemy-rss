@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-21 08:19:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-21 11:02:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [如何正确-Vibe-Coding？这是来自-Anthropic-编程智能体负责人的大师课](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b)
 
-2026-04-20 04:06:00 | 标签: Vibe Coding, AI 编程, Claude, Anthropic, 软件工程
-
-> 文章深入探讨了由 Anthropic 研究员 Erik Schluntz 提出的 Vibe Coding 高级实践。它首先澄清了 Vibe Coding 并非简单使用 AI 工具，而是指开发者完全信任 AI 生成代码，自身专注于更高层次的抽象和产品目标。核心挑战在于如何在生产环境中安全地接纳这种指数级增长的能力。文章提出了关键策略：1）寻找可验证的抽象层，将关注点从代码转移到产品功能；2）采用「叶子节点」策略，允许 AI 在低风险、独立的末端模块中积累技术债，同时保护核心架构；3）开发者需扮演 AI 的「全职产品经理」，进行深度引导和规划。文中还分享了 Anthropic 内部成功合并 220...
+2026-04-20 04:06:00
 
 
 
@@ -4660,33 +4658,25 @@
 
 ### [我们内部构建的-AI-工程栈-——-基于我们对外交付的平台](https://blog.cloudflare.com/internal-ai-engineering-stack/)
 
-2026-04-20 14:00:01 | 标签: AI 工程, MCP, AI Gateway, Workers AI, AI 代码审查
-
-> 本文深入剖析了 Cloudflare 历时十一个月构建并部署一套完整内部 AI 工程栈的历程。该系统由 iMARS 攻坚团队开发，将 AI 深度集成到开发工作流中，服务于超过 3600 名内部用户。该架构完全构建在 Cloudflare 自身的平台产品之上：使用 AI Gateway 进行集中化的 LLM 路由和安全控制，使用 Workers AI 进行经济高效的推理，使用定制的 MCP Server Portal 提供工具访问，并使用 Agents SDK 进行编排。关键创新包括：为 AI 智能体提供仓库特定上下文的 AGENTS.md 系统、集成到 CI/CD 中覆盖 100% 合并请求的...
+2026-04-20 14:00:01
 
 
 
 ### [构建智能体云：我们在-2026-年智能体周期间发布的一切](https://blog.cloudflare.com/agents-week-in-review/)
 
-2026-04-20 14:00:01 | 标签: Cloudflare, AI 智能体, 智能体云, 无服务器, 基础设施
-
-> 本文全面回顾了 Cloudflare 的首届‘智能体周’，这是一系列专注于为 AI 智能体时代构建基础设施的公告。公司将挑战定义为创建‘云 2.0’或‘智能体云’，这需要在五个关键领域提供解决方案：计算、安全、智能体工具箱、从原型到生产的路径，以及‘智能体网络’。文章详细介绍了二十多项具体的产品发布和更新，并按这些类别进行了组织。关键公告包括 Artifacts（兼容 Git 的智能体存储）、Sandboxes GA（智能体的持久环境）、Cloudflare Mesh（安全的私有网络）、Project Think（下一代智能体 SDK）、智能体记忆、AI 搜索以及网站的智能体就绪度评分。总体主...
+2026-04-20 14:00:01
 
 
 
 ### [规模化编排-AI-代码审查](https://blog.cloudflare.com/ai-code-review/)
 
-2026-04-20 14:00:01 | 标签: AI 代码审查, LLM 编排, CI/CD, 软件工程, Cloudflare
-
-> 本文深入探讨了 Cloudflare 内部开发的大规模 AI 代码审查系统。面对通用工具和简单 LLM 提示的局限性，团队在开源 OpenCode 智能体的基础上构建了一个复杂的编排层。该系统采用一个协调器智能体来管理多达七个专业子审查者（安全、性能、代码质量等），每个子审查者都有严格限定范围的提示和适当的模型层级。关键的架构决策包括：用于灵活性的可组合插件系统、用于健壮结构化日志记录的 JSONL、用于优化成本的动态风险分层，以及全面的弹性功能，如熔断器和回退链。该系统深度集成到他们的 CI/CD 流水线中，处理数以万计的合并请求，并包括一个通过 Cloudflare Workers 实现的...
+2026-04-20 14:00:01
 
 
 
 ### [从提需求到部署发布，全-AI-全自动化后，研发效能全面跃升](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801307&idx=1&sn=ca2c68447c2abe444b2bdda380b7c849)
 
-2026-04-20 09:37:00 | 标签: AI 全自动化, 研发效能, MCP, AI Agent, LLMOps
-
-> 文章详细介绍了腾讯审核团队在 AI 研发效能领域的深度探索。面对从需求到交付全链路中大量人工环节的瓶颈，团队规划了 L1（纯人工）、L2（人机协同）、L3（全自动）三阶段演进路线。当前处于 L2 向 L3 过渡阶段，核心实践包括：1）通过 PRD-Agent、需求模板与评分规则实现需求标准化；2）利用 MCP 工具链（如 Lego、DDL、无人值守）打通技术方案到测试、部署的自动化链路；3）构建高质量知识库与标准化 Skills（技能）以增强模型决策能力；4）引入 Harness Engineering 理念，建立包含质量门禁与自修复能力的全自动化交付框架。试点数据显示，需求与技术方案评分稳定...
+2026-04-20 09:37:00
 
 
 
@@ -11868,33 +11858,25 @@
 
 ### [🔬-训练-Transformer-解决癌症试验-95%-失败率-—-Ron-Alfa-&amp;-Daniel-Bear，-Noetik](https://www.latent.space/p/noetik)
 
-2026-04-20 16:17:17 | 标签: 生物技术中的 AI, Transformer 模型, 临床试验, 癌症研究, 空间转录组学
-
-> 本文基于 Latent Space 播客采访，深入探讨了 Noetik 采用 AI 驱动的方法来应对癌症临床试验 95% 失败率的挑战。其核心论点是，许多治疗失败并非因为无效，而是由于患者-肿瘤-治疗匹配不佳。Noetik 花费数年时间构建了世界上最大的真实人类肿瘤多模态数据集之一，包括空间转录组学、蛋白质组学、H&E 成像和全外显子组测序。他们在此数据上训练自回归 Transformer 模型（如 TARIO-2），以建立对癌症生物学的深刻理解，从而能够预测患者对治疗的反应，并为队列选择识别更好的生物标志物。文章强调了 GSK 与 Noetik 达成的 5000 万美元软件许可协议的重要性，...
+2026-04-20 16:17:17
 
 
 
 ### [Mythos-架构被-22-岁小伙“逆推”开源了！MoE-和注意力借鉴-DeepSeek](https://www.qbitai.com/2026/04/403708.html)
 
-2026-04-20 07:59:51 | 标签: OpenMythos, 循环Transformer, MoE, 模型架构, 推理效率
-
-> 文章报道了 Swarms 智能体框架创始人、22 岁的 Kye Gomez 开源 OpenMythos 项目的事件。该项目整合了当前对 Claude Mythos 架构的主流推测与多项公开研究，提出了一种循环深度 Transformer 架构。该架构的核心在于让同一组权重在 MoE 路由机制下循环计算最多 16 遍，每次激活不同的专家路径，且推理全程在潜在空间完成，不生成中间 token。文章引用了多篇相关论文，指出这种设计理论上能以更少的参数量（如 770M 参数追平 1.3B 参数模型）实现同等甚至更好的效果，尤其是在系统性泛化和深度外推任务上表现出色。文章认为，如果该方向成立，AI 模型...
+2026-04-20 07:59:51
 
 
 
 ### [Agent-不是关键！人大-AiScientist-实现-23-小时、74-轮长程记忆](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652693613&idx=3&sn=7fa2163604c338406d7beaefd751df54)
 
-2026-04-20 04:02:00 | 标签: AiScientist, AI for Research, 长程记忆, File-as-Bus, 机器学习研究工程
-
-> 本文报道了中国人民大学高瓴人工智能学院团队在 arXiv 上发布的 AiScientist 系统。该系统旨在解决长程机器学习研究工程的持续性难题，其核心创新在于 `thin control over thick state` 的设计理念和 `File-as-Bus` 机制。系统通过将项目状态（如分析、计划、代码、日志）以持久化文件的形式保存在工作区，而非依赖对话上下文，实现了跨阶段、跨轮次的状态连续与决策连贯。在 MLE-Bench Lite 的 Detecting Insults 任务中，AiScientist 在 23 小时内自主完成了 74 轮实验循环，将验证 AUC 从 0.903 提...
+2026-04-20 04:02:00
 
 
 
 ### [Claude-Token-Counter-现已支持模型对比](https://simonwillison.net/2026/Apr/20/claude-token-counts/#atom-everything)
 
-2026-04-20 00:50:45 | 标签: Claude, 分词器, 令牌计数, Anthropic, Opus 4.7
-
-> 作者详细介绍了其开源 Claude Token Counter 工具的更新，该工具现在允许用户对比同一输入在不同 Claude 模型（Opus 4.7、Opus 4.6、Sonnet 4.6、Haiku 4.5）下的令牌计数。文章强调了一个关键发现：Claude Opus 4.7 使用了更新的分词器，导致文本（特别是模型自身的系统提示）的令牌数量相比 Opus 4.6 增加了 1.46 倍。对于一张高分辨率图像，增幅更为显著，达到 3.01 倍。作者指出，尽管每百万令牌的定价保持不变，但这种令牌膨胀实际上使得 Opus 4.7 处理文本的成本大约增加了 40%。该工具也实际演示了更新后的令牌计...
+2026-04-20 00:50:45
 
 
 
@@ -36626,57 +36608,43 @@
 
 ### [GitHub-Copilot-个人版计划变更](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/)
 
-2026-04-20 18:15:31 | 标签: GitHub Copilot, AI 编程, 定价, 使用限制, 智能体工作流
-
-> GitHub 宣布对其 GitHub Copilot 个人版计划（Pro、Pro+、Student）进行重大变更，以应对由智能体工作流兴起带来的不可持续的计算需求。这些变更包括暂停所有新用户注册、收紧基于令牌的使用限制（Pro+ 提供的限制是 Pro 的 5 倍以上），以及从 Pro 层级移除对 Claude Opus 模型的访问权限。该公司指出，长时间运行、并行化的智能体会话现在经常消耗的资源远远超出了原始定价结构的设计范围，威胁到所有用户的服务质量。为了提高透明度，使用限制现在会在 VS Code 和 Copilot CLI 中显示。GitHub 承认此举会带来干扰，并为选择取消服务的受影...
+2026-04-20 18:15:31
 
 
 
 ### [为-AI-智能体设计记忆：探秘-LinkedIn-的认知记忆智能体](https://www.infoq.com/news/2026/04/linkedin-cognitive-memory-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-20 14:59:00 | 标签: AI 智能体, 记忆架构, 有状态 AI, 多智能体系统, LinkedIn
-
-> 本文详细介绍了 LinkedIn 的认知记忆智能体，这是其生成式 AI 技术栈的核心组件，旨在克服基于 LLM 的工作流程无状态的局限性。CMA 充当应用智能体与底层模型之间的共享记忆层，支持跨会话的上下文持久化、检索和更新。其架构具有三种不同的记忆类型：情景式（交互历史）、语义式（结构化知识）和程序式（习得的工作流）。这种设计促进了连续性，减少了冗余推理，并改善了个性化。文章讨论了 CMA 在多智能体协调中的作用、检索和生命周期管理（例如，陈旧性、压缩）的工程挑战，以及整个行业向有状态、记忆驱动的智能体设计的更广泛转变。文章强调，生产级的 AI 系统不仅依赖于模型，还依赖于其周围的记忆和上下...
+2026-04-20 14:59:00
 
 
 
 ### [Gemini-CLI-中的子智能体支持任务委派与并行智能体工作流](https://www.infoq.com/news/2026/04/subagents-gemini-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-20 12:26:00 | 标签: Gemini CLI, AI 智能体, 子智能体, 任务委派, 多智能体系统
-
-> 谷歌为其 Gemini CLI 工具添加了子智能体功能，允许一个主 AI 智能体编排和委派子任务（如代码分析或研究）给专门的、隔离的子智能体。此架构旨在通过卸载详细操作来缓解常见的智能体工作流问题，例如上下文过载、响应速度变慢和成本增加。子智能体可以并行运行以实现更快的执行速度，尽管这可能引入诸如冲突更改等风险。该系统高度可定制，使开发者能够通过 Markdown/YAML 文件定义自己的智能体或使用内置智能体。虽然该功能代表了向可扩展多智能体系统迈出的一步，但早期用户反馈表明，整体稳定性和用户体验需要改进才能获得更广泛的采用。
+2026-04-20 12:26:00
 
 
 
 ### [构建稳定、安全、可扩展的平台：与-Matthew-Liste-的对话](https://www.infoq.com/podcasts/engineering-stable-secure-scalable-platforms/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-20 11:00:00 | 标签: 平台工程, 系统工程, AI 影响, 软件开发学徒制, 风险管理
-
-> 在这期 InfoQ 播客中，Michael Stiefel 采访了 Matthew Liste，一位在美国运通、摩根大通和高盛拥有数十年经验的资深基础设施领导者。讨论围绕平台工程的基础性作用展开，其定义是不可妥协的“三个 S”：稳定性、安全性和可扩展性。Liste 强调，由于不可预见的资源争用，扩展复杂系统尤其困难。他主张使用客户旅程（例如，“我能用我的卡付款吗？”）来衡量可靠性并聚焦工程工作。对话的很大一部分深入探讨了 AI 对软件开发的影响，突出了一个关键的未解问题：如果 AI 自动化了基础的编码任务，初级工程师将如何获得通过学徒制培养起来的基础技能和直觉？对话还涵盖了风险管理、从失败中学...
+2026-04-20 11:00:00
 
 
 
 ### [Google-ADK-for-Java-1.0-引入全新应用与插件架构、外部工具支持等特性](https://www.infoq.com/news/2026/04/google-adk-1-0-new-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-20 10:00:00 | 标签: Google ADK, AI 智能体, Java, 智能体开发, 人在回路
-
-> Google 发布了其 Agent Development Kit for Java 的 1.0 版本，标志着在 Java 生态系统中构建 AI 智能体的重大更新。该版本引入了一个新的架构基础，以 `App` 类作为顶级容器，并以 `Plugins` 基类提供可扩展性，同时提供了用于日志记录、上下文过滤和全局指令的预构建插件。它扩展了工具集成，包括 Google 地图数据访问、网页内容抓取，以及通过 Docker 容器或 Vertex AI 实现的稳健代码执行。关键新特性包括用于管理上下文窗口大小和成本的事件压缩、内置的用于智能体暂停等待批准的人在回路工作流支持，以及用于跨框架协作的 Agen...
+2026-04-20 10:00:00
 
 
 
 ### [Codeindex-·-让大模型更好地理解你的代码](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543241&idx=1&sn=d5c2de59eea1b5e190a394b7913c7577)
 
-2026-04-20 09:13:00 | 标签: Codeindex, 代码索引, RAG, 函数依赖图, 大模型
-
-> 文章详细介绍了 Codeindex 这一专为增强大模型代码理解能力而设计的工具。它针对大型代码仓库索引、多分支管理、复杂依赖分析等痛点，提供了核心能力：1）基于增量索引和语义化检索的代码片段召回；2）利用 AST 解析和 LLM 生成代码片段及文件级别的语义化摘要；3）通过分层架构和图数据库（KuzuDB/Postgres）构建精准的函数上下游依赖关系图。文章阐述了其整体架构（提供 SDK 和 OpenAPI）、关键技术细节（如 codeChunker 与 basicChunker 策略、图数据表设计），并列举了在 CodeWiz（代码检索）、AI CR Agent（智能代码审查）和 Code...
+2026-04-20 09:13:00
 
 
 
 ### [深度解析-Claude-Code-在-Prompt-/-Context-/-Harness-的设计与实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559627&idx=1&sn=7847089f5135e5060953f013fa56fd4f)
 
-2026-04-20 00:32:00 | 标签: Claude Code, AI Agent, 提示词工程, 上下文工程, RAG
-
-> 文章基于对 Claude Code 开源代码的深度分析，系统性地拆解了其作为顶级 AI Coding Agent 的设计哲学与工程实现。作者从 Prompt Engineering、Context Engineering 和 Harness Engineering 三个递进的维度展开：在提示词工程层面，详细阐述了其多层级、动态组装的 System Prompt 机制，包括静态模块（身份、规则、工具指南）与动态模块（会话指导、环境信息）的拼接逻辑与优先级决策；在上下文工程层面，重点分析了 CLAUDE.md 项目说明书文件系统的作用、不同路径的配置策略，以及为应对长上下文挑战而设计的三层渐进式压...
+2026-04-20 00:32:00
 
 
 
