@@ -1,0 +1,55 @@
+{
+  "id": "RAW_33912bfa",
+  "title": "拿着火腿无线电的浣熊在哪里？（ChatGPT Images 2.0）",
+  "url": "https://simonwillison.net/2026/Apr/21/gpt-image-2/#atom-everything",
+  "date": "2026-04-21 20:32:24",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div>\n    <p class=\"mobile-date\">21st April 2026</p>\n    <p>OpenAI <a href=\"https://openai.com/index/introducing-chatgpt-images-2-0/\">released ChatGPT Images 2.0 today</a>, their latest image generation model. On <a href=\"https://www.youtube.com/watch?v=-7JSa_luc6k\">the livestream</a> Sam Altman said that the leap from gpt-image-1 to gpt-image-2 was equivalent to jumping from GPT-3 to GPT-5. Here’s how I put it to the test.</p>\n    <p>My prompt:</p>\n    <blockquote>\n     <p><code>Do a where's Waldo style image but it's where is the raccoon holding a ham radio</code></p>\n    </blockquote>\n    <h4 id=\"gpt-image-1\">gpt-image-1</h4>\n    <p>First as a baseline here’s what I got from the older gpt-image-1 using ChatGPT directly:</p>\n    <p><a href=\"https://static.simonwillison.net/static/2026/chatgpt-image-1-ham-radio.png\"><img src=\"https://static.simonwillison.net/static/2026/image_crop_1402x1122_w1402_q0.3.jpg\" alt=\"There's a lot going on, but I couldn't find a raccoon.\" style=\"max-width: 100%;\"></a></p>\n    <p>I wasn’t able to spot the raccoon—I quickly realized that testing image generation models on Where’s Waldo style images (Where’s Wally in the UK) can be pretty frustrating!</p>\n    <p>I tried <a href=\"https://claude.ai/share/bd6e9b88-29a9-420b-8ac1-3ac5cebac215\">getting Claude Opus 4.7</a> with its new higher resolution inputs to solve it but it was convinced there was a raccoon it couldn’t find thanks to the instruction card at the top left of the image:</p>\n    <blockquote>\n     <p><strong>Yes — there’s at least one raccoon in the picture, but it’s very well hidden</strong>. In my careful sweep through zoomed-in sections, honestly, I couldn’t definitively spot a raccoon holding a ham radio. [...]</p>\n    </blockquote>\n    <h4 id=\"nano-banana-2-and-pro\">Nano Banana 2 and Pro</h4>\n    <p>Next I tried Google’s Nano Banana 2, <a href=\"https://gemini.google.com/share/3775db96c576\">via Gemini</a>:</p>\n    <p><a href=\"https://static.simonwillison.net/static/2026/nano-banana-2-ham-radio.jpg\"><img src=\"https://static.simonwillison.net/static/2026/gemini-ham-radio-small.jpg\" alt=\"Busy Where's Waldo-style illustration of a park festival with crowds of people, tents labeled &quot;FOOD &amp; DRINK&quot;, &quot;CRAFT FAIR&quot;, &quot;BOOK NOOK&quot;, &quot;MUSIC FEST&quot;, and &quot;AMATEUR RADIO CLUB - W6HAM&quot; (featuring a raccoon in a red hat at the radio table), plus a Ferris wheel, carousel, gazebo with band, pond with boats, fountain, food trucks, and striped circus tents\" style=\"max-width: 100%;\"></a></p>\n    <p>That one was pretty obvious, the raccoon is in the “Amateur Radio Club” booth in the center of the image!</p>\n    <p>Claude said:</p>\n    <blockquote>\n     <p>Honestly, this one wasn’t really hiding — he’s the star of the booth. Feels like the illustrator took pity on us after that last impossible scene. The little “W6HAM” callsign pun on the booth sign is a nice touch too.</p>\n    </blockquote>\n    <p>I also tried Nano Banana Pro <a href=\"https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221sGU5A7mrngkfLfSEU84xaV1DhtOTnS--%22%5D,%22action%22:%22open%22,%22userId%22:%22106366615678321494423%22,%22resourceKeys%22:%7B%7D%7D&amp;usp=sharing\">in AI Studio</a> and got this, by far the worst result from any model. Not sure what went wrong here!</p>\n    <p><a href=\"https://static.simonwillison.net/static/2026/nano-banana-pro-ham-radio.jpg\"><img src=\"https://static.simonwillison.net/static/2026/nano-banana-pro-ham-radio-small.jpg\" alt=\"The raccoon is larger than everyone else, right in the middle of the image with an ugly white border around it.\" style=\"max-width: 100%;\"></a></p>\n    <h4 id=\"gpt-image-2\">gpt-image-2</h4>\n    <p>With the baseline established, let’s try out the new model.</p>\n    <p>I used an updated version of my <a href=\"https://github.com/simonw/tools/blob/main/python/openai_image.py\">openai_image.py</a> script, which is a thin wrapper around the <a href=\"https://github.com/openai/openai-python\">OpenAI Python</a> client library. Their client library hasn’t yet been updated to include <code>gpt-image-2</code> but thankfully it doesn’t validate the model ID so you can use it anyway.</p>\n    <p>Here’s how I ran that:</p>\n    <div class=\"highlight highlight-source-shell\">\n     <pre>OPENAI_API_KEY=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span><span class=\"pl-s\"><span class=\"pl-pds\">$(</span>llm keys get openai<span class=\"pl-pds\">)</span></span><span class=\"pl-pds\">\"</span></span> \\\n  uv run https://tools.simonwillison.net/python/openai_image.py \\\n  -m gpt-image-2 \\\n  <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Do a where's Waldo style image but it's where is the raccoon holding a ham radio<span class=\"pl-pds\">\"</span></span></pre>\n    </div>\n    <p>Here’s what I got back. I don’t <em>think</em> there’s a raccoon in there—I couldn’t spot one, and neither could Claude.</p>\n    <p><a href=\"https://static.simonwillison.net/static/2026/gpt-image-2-default.png\"><img src=\"https://static.simonwillison.net/static/2026/gpt-image-2-default.jpg\" alt=\"Lots of stuff, a ham radio booth, many many people, a lake, but maybe no raccoon?\" style=\"max-width: 100%;\"></a></p>\n    <p>The <a href=\"https://github.com/openai/openai-cookbook/blob/main/examples/multimodal/image-gen-models-prompting-guide.ipynb\">OpenAI image generation cookbook</a> has been updated with notes on <code>gpt-image-2</code>, including the <code>outputQuality</code> setting and available sizes.</p>\n    <p>I tried setting <code>outputQuality</code> to <code>high</code> and the dimensions to <code>3840x2160</code>—I believe that’s the maximum—and got this—a 17MB PNG which I converted to a 5MB WEBP:</p>\n    <div class=\"highlight highlight-source-shell\">\n     <pre>OPENAI_API_KEY=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span><span class=\"pl-s\"><span class=\"pl-pds\">$(</span>llm keys get openai<span class=\"pl-pds\">)</span></span><span class=\"pl-pds\">\"</span></span> \\\n  uv run <span class=\"pl-s\"><span class=\"pl-pds\">'</span>https://raw.githubusercontent.com/simonw/tools/refs/heads/main/python/openai_image.py<span class=\"pl-pds\">'</span></span> \\\n  -m gpt-image-2 <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Do a where's Waldo style image but it's where is the raccoon holding a ham radio<span class=\"pl-pds\">\"</span></span> \\\n  --quality high --size 3840x2160</pre>\n    </div>\n    <p><a href=\"https://static.simonwillison.net/static/2026/image-fc93bd-q100.webp\"><img src=\"https://static.simonwillison.net/static/2026/image-fc93bd-q100.webp\" alt=\"Big complex image, lots of detail, good wording, there is indeed a raccoon with a ham radio.\" style=\"max-width: 100%;\"></a></p>\n    <p>That’s pretty great! There’s a raccoon with a ham radio in there (bottom left, quite easy to spot).</p>\n    <p>The image used 13,342 output tokens, which are charged at $30/million so a total cost of around <a href=\"https://www.llm-prices.com/#ot=13342&amp;ic=5&amp;cic=1.25&amp;oc=10&amp;sel=gpt-image-2-image\">40 cents</a>.</p>\n    <h4 id=\"takeaways\">Takeaways</h4>\n    <p>I think this new ChatGPT image generation model takes the crown from Gemini, at least for the moment.</p>\n    <p>Where’s Waldo style images are an infuriating and somewhat foolish way to test these models, but they do help illustrate how good they are getting at complex illustrations combining both text and details.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "作者使用一个复杂的“寻找威利”风格提示词，将 OpenAI 新发布的 ChatGPT Images 2.0 模型与其前代模型以及谷歌的 Nano Banana 模型进行对比测试，发现新模型在生成详细、连贯的场景方面更胜一筹。",
+  "oneSentenceSummary": "作者使用一个复杂的“寻找威利”风格提示词，将 OpenAI 新发布的 ChatGPT Images 2.0 模型与其前代模型以及谷歌的 Nano Banana 模型进行对比测试，发现新模型在生成详细、连贯的场景方面更胜一筹。",
+  "summary": "针对 OpenAI 发布的 ChatGPT Images 2.0，Simon Willison 使用一个具体且具有挑战性的提示词进行了动手对比测试：“制作一张‘寻找威利’风格的图片，但内容是寻找一只拿着火腿无线电的浣熊在哪里。”他首先用旧版 gpt-image-1 建立了基准，该模型未能生成可识别的浣熊。接着他测试了谷歌的 Nano Banana 2（生成了明显的浣熊）和 Nano Banana Pro（表现很差）。最后，他使用自定义的 Python 脚本测试了 gpt-image-2，先是默认设置（没有清晰的浣熊），然后是高质量、4K 分辨率设置。高质量输出成功生成了一个复杂、详细的场景，其中有一只清晰可辨、拿着火腿无线电的浣熊，成本约为 40 美分。文章得出结论，对于此类复杂的详细插图任务，gpt-image-2 目前超越了 Gemini 的产品。",
+  "mainPoints": [
+    {
+      "point": "对于复杂场景生成，ChatGPT Images 2.0 相比其前代和当前竞争对手，展现出了显著的性能飞跃。",
+      "explanation": "高质量的 4K 输出成功渲染了一个详细的“寻找威利”场景，浣熊和火腿无线电的位置正确，而 gpt-image-1 在此任务上失败，竞争对手模型的结果也参差不齐。"
+    },
+    {
+      "point": "像“寻找威利”场景这样复杂、约束重重的提示词，是对现代图像模型的一种揭示性（尽管令人沮丧）的测试。",
+      "explanation": "此类提示词测试了模型处理构图复杂性、遵守多个特定约束（风格、隐藏对象、特定道具）以及集成清晰文本的能力，突显了模型的优缺点。"
+    },
+    {
+      "point": "实际测试和成本分析对于理解模型在现实世界中的性能和价值至关重要。",
+      "explanation": "作者超越了官方公告，提供了可复现的代码，对输出结果进行了视觉对比，并计算了高质量生成的成本（约 40 美分），为开发者提供了实用的见解。"
+    }
+  ],
+  "keyQuotes": [
+    "Sam Altman 表示，从 gpt-image-1 到 gpt-image-2 的飞跃，相当于从 GPT-3 跳到了 GPT-5。",
+    "我很快意识到，用‘寻找威利’风格图片（在英国叫‘寻找沃利’）来测试图像生成模型可能会相当令人沮丧！",
+    "这相当不错！里面有一只拿着火腿无线电的浣熊（左下角，很容易发现）。",
+    "我认为这个新的 ChatGPT 图像生成模型从 Gemini 手中夺得了桂冠，至少目前是这样。",
+    "‘寻找威利’风格的图片是测试这些模型的一种令人恼火且有些愚蠢的方式，但它们确实有助于说明这些模型在结合文本和细节的复杂插图方面变得有多好。"
+  ],
+  "tags": [
+    "ChatGPT Images 2.0",
+    "OpenAI",
+    "图像生成",
+    "多模态 AI",
+    "模型对比"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 553,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776803544000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-21 20:32:24"
+}

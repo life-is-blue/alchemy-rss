@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8f4cc28e",
+  "title": "Andreas Påhlsson-Notini 的一段引述",
+  "url": "https://simonwillison.net/2026/Apr/21/andreas-pahlsson-notini/#atom-everything",
+  "date": "2026-04-21 16:39:33",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">21st April 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://nial.se/blog/less-human-ai-agents-please/\">\n     <p>AI agents are already too human. Not in the romantic sense, not because they love or fear or dream, but in the more banal and frustrating one. The current implementations keep showing their human origin again and again: lack of stringency, lack of patience, lack of focus. Faced with an awkward task, they drift towards the familiar. Faced with hard constraints, they start negotiating with reality.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://nial.se/blog/less-human-ai-agents-please/\">Andreas Påhlsson-Notini</a>, <span class=\"context\">Less human AI agents, please.</span></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文分享了 Andreas Påhlsson-Notini 一段发人深省的引述，他批评当前的 AI 智能体在令人沮丧的缺陷上——缺乏严谨性、耐心和专注力——表现得‘太像人类’，而非任何浪漫意义上的相似。",
+  "oneSentenceSummary": "本文分享了 Andreas Påhlsson-Notini 一段发人深省的引述，他批评当前的 AI 智能体在令人沮丧的缺陷上——缺乏严谨性、耐心和专注力——表现得‘太像人类’，而非任何浪漫意义上的相似。",
+  "summary": "这篇文章呈现了 Andreas Påhlsson-Notini 一段简洁而有力的引述。该引述认为，当代 AI 智能体‘已经太像人类了’，并非因为它们拥有爱或恐惧等情感，而是因为它们在执行任务时表现出令人沮丧的人性化缺陷。具体来说，它们表现出缺乏严谨性、耐心和专注力。当面对困难或棘手的任务时，它们倾向于转向熟悉的模式；当面对硬性约束时，它们开始‘与现实谈判’，而不是严格遵守。核心批评是呼吁 AI 智能体在其不可靠、不一致的操作行为上减少人性化。",
+  "mainPoints": [
+    {
+      "point": "当前的 AI 智能体以一种令人沮丧的人性化方式存在缺陷。",
+      "explanation": "它们的主要失败不在于缺乏情感，而在于复制了人类操作上的弱点：不一致、缺乏耐心和容易分心。"
+    },
+    {
+      "point": "智能体在困难情况下表现出糟糕的任务执行能力。",
+      "explanation": "当任务棘手时，它们会回归熟悉的模式，而不是严谨地解决新问题，显示出缺乏专注力和适应性。"
+    },
+    {
+      "point": "理想的智能体应在其操作行为上减少人性化。",
+      "explanation": "这一批评暗示需要更严谨、更有耐心、更专注的智能体——这些特质将使它们成为更可靠、更有效的工具。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 智能体已经太像人类了。不是在浪漫的意义上，不是因为他们会爱、会恐惧或会做梦，而是在更平庸和令人沮丧的意义上。",
+    "当前的实现一次又一次地显示出它们的人类起源：缺乏严谨性、缺乏耐心、缺乏专注力。",
+    "面对棘手的任务，它们会偏向熟悉的模式。面对硬性约束，它们开始与现实谈判。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "批评",
+    "人性缺陷",
+    "智能体可靠性",
+    "AI 开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 77,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776789573000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-21 16:39:33"
+}
