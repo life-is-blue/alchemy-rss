@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-23 06:15:53 | [返回首页](/README.md)
+**更新时间**: 2026-04-23 08:22:24 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11419)
+- [AI & 大模型](#ai-llm) (11460)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (785)
-- [DevOps](#devops) (522)
+- [前端与全栈](#frontend-fullstack) (788)
+- [DevOps](#devops) (525)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5534)
+- [其他](#other) (5545)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Shopify-的-AI-相变：2026-年使用量激增，无限的-Opus-4.6-Token-预算，Tangle，Tangent，SimGym-——-对话-Shopify-CTO-Mikhail-Parakhin](https://www.latent.space/p/shopify) - AI 精选
+- [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt) - AI 精选
+- [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) - AI 精选
 - [如何正确-Vibe-Coding？这是来自-Anthropic-编程智能体负责人的大师课](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b) - AI 精选
 - [大模型架构的下半场](https://www.qbitai.com/2026/04/403515.html) - AI 精选
 - [使用合成数据构建快速多语言-OCR-模型](https://huggingface.co/blog/nvidia/nemotron-ocr-v2) - AI 精选
@@ -39,11 +42,8 @@
 - [VimRAG：通义实验室开源全模态-RAG-框架，实现图文视频统一检索记忆](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500592&idx=1&sn=c6bf5d5999d9d1ab05f95da436ac7ec3) - AI 精选
 - [MiniMax-发布-MMX-CLI：为-Agent-设计的全模态命令行工具](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488291&idx=1&sn=b92c388430676cf6c50b68d867a56dae) - AI 精选
 - [Meta-的新模型-Muse-Spark-与-meta.ai-聊天中的有趣工具](https://simonwillison.net/2026/Apr/8/muse-spark/#atom-everything) - AI 精选
-- [扩展托管智能体：将“大脑”与“双手”解耦](https://www.anthropic.com/engineering/managed-agents) - AI 精选
-- [企业-AI-的下一阶段](https://openai.com/index/next-phase-of-enterprise-ai) - AI 精选
-- [Anthropic-的-Project-Glasswing——将-Claude-Mythos-限制在安全研究人员范围内——在我看来很有必要](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything) - AI 精选
 
-- [查看全部 11419 篇...](/details/tags/ai-llm.md)
+- [查看全部 11460 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 785 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 788 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 522 篇...](/details/tags/devops.md)
+- [查看全部 525 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5534 篇...](/details/tags/other.md)
+- [查看全部 5545 篇...](/details/tags/other.md)
 
 

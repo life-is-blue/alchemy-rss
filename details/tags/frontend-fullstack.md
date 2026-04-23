@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-23 06:15:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-23 08:22:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -366,7 +366,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -378,7 +378,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -645,6 +645,30 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [如何使用-JavaScript-在浏览器中合并-PDF-文件（分步指南）](https://www.freecodecamp.org/news/merge-pdf-files-using-javascript/)
+
+2026-04-22 16:36:06 | 标签: JavaScript, PDF, 前端开发, Web 开发, 教程
+
+> 本文是一份详细的实践教程，介绍如何完全使用 JavaScript 创建一个基于浏览器的 PDF 合并应用程序，从而无需后端服务器。它解释了客户端处理在速度和隐私方面的优势。该指南贯穿了整个开发过程：使用 pdf-lib 和 pdf.js 库设置项目、创建拖放上传界面、为用户验证渲染 PDF 预览、通过拖放和排序选项实现文件重新排序，最后合并 PDF。它还涵盖了关键的现实世界考量，如高效处理大文件、保持性能、确保隐私以及避免常见陷阱。本教程非常实用，提供了可运行的代码片段，并清晰地展示了最终应用程序工作流程的视觉演示。
+
+
+
+### [如何通过后台作业可靠地处理-Stripe-Webhooks](https://www.freecodecamp.org/news/stripe-webhooks-background-jobs/)
+
+2026-04-22 16:03:27 | 标签: Stripe, Webhooks, 后台作业, 持久执行, 幂等性
+
+> 文章探讨了支付集成中的一个关键生产问题：不可靠的 webhook 处理器可能导致重复邮件、重复数据库记录以及外部服务失败时的状态不一致。它对比了简单、单一的处理程序与一种健壮的模式，在后一种模式中，webhook 端点仅验证事件并将其加入队列。核心解决方案利用 Inngest 等持久执行平台，将支付后逻辑分解为具有独立检查点的步骤（例如，数据库写入、邮件发送、API 调用）。每个步骤在失败时会独立重试，防止已完成的工做被重新执行。该指南包含详细的、可用于生产的 TypeScript 代码示例，用于设置 webhook 端点、构建包含九个步骤的持久购买流程、处理退款、恢复被遗弃的结账以及进行本地...
+
+
+
+### [让-Rust-Workers-变得可靠：wasm-bindgen-中的-panic-和-abort-恢复](https://blog.cloudflare.com/making-rust-workers-reliable/)
+
+2026-04-22 14:00:01 | 标签: Rust, WebAssembly, wasm-bindgen, Cloudflare Workers, 错误处理
+
+> 文章解释了 Cloudflare 工程师如何解决 Rust Workers 中的一个关键可靠性问题，即 WebAssembly 的 panic 或 abort 可能导致运行时处于未定义状态，甚至可能使 Worker 暂时“变砖”。解决方案涉及对核心的 Rust 到 JavaScript 绑定生成器 wasm-bindgen 进行上游贡献。关键进展包括：利用 WebAssembly 异常处理提案实现了 `panic=unwind` 支持，允许在 panic 期间运行析构函数并保留状态；创建了新的 abort 恢复机制，以区分可恢复和不可恢复的错误，从而安全地重新初始化实例。这项工作还扩展到通用的...
 
 
 
@@ -954,13 +978,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1110,13 +1134,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2610,13 +2634,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4320,13 +4344,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
