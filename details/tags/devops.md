@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-23 08:22:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-23 11:02:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -308,9 +308,7 @@
 
 ### [使用-Parakeet-TDT-和-AWS-Batch-实现经济高效的大规模多语言音频转录-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/cost-effective-multilingual-audio-transcription-at-scale-with-parakeet-tdt-and-aws-batch/)
 
-2026-04-22 13:05:01 | 标签: 自动语音识别, AWS Batch, NVIDIA Parakeet-TDT, 成本优化, 可扩展架构
-
-> 本文提供了一份在 AWS 上部署可扩展、事件驱动的音频转录流水线的全面技术指南。它通过将开源、多语言的 NVIDIA Parakeet-TDT-0.6B-v3 模型与 GPU 实例上的 AWS Batch 相结合，解决了托管 ASR 服务的成本与可扩展性挑战。该解决方案架构利用 S3 上传通过 EventBridge 触发 AWS Batch 作业，调配运行预构建 Docker 容器的 GPU 实例（例如配备 L4 GPU 的 G6 实例）。文章重点介绍了关键的优化技术：使用 Amazon EC2 Spot 实例可节省高达 90% 的成本，以及实施缓冲流式推理，以在标准硬件上以恒定的内存使用量...
+2026-04-22 13:05:01
 
 
 
@@ -502,17 +500,13 @@
 
 ### [如何修复失败的-GitHub-PR：逐步调试-CI、Lint-错误和构建错误](https://www.freecodecamp.org/news/how-to-fix-failing-github-pr-ci-lint-build-errors/)
 
-2026-04-22 17:19:57 | 标签: CI/CD, GitHub, 拉取请求, 调试, Linting
-
-> 本文解决了开源贡献者的一个常见痛点：当拉取请求触发多个错误（Lint、构建、部署）时，如何调试复杂的 CI 流水线故障。它超越了基础设置指南，提供了一种系统化的调试方法。作者解释了 CI 流水线如何顺序处理 PR，并强调 CI 验证的是整个提交，而不仅仅是更改的行。文章提出了一个核心的七步工作流：修复身份验证问题、本地运行 Lint 检查、解决常见的 Markdown Lint 错误、修复代码块内的 YAML、在 Lint 通过后解决构建错误、调试级联故障以及处理 Git 冲突。该指南基于一个文档项目的真实经验，但适用于任何使用 CI、Lint 和自动化构建的代码库。
+2026-04-22 17:19:57
 
 
 
 ### [Dropbox-与-GitHub-合作将-Monorepo-从-87GB-缩减至-20GB](https://www.infoq.com/news/2026/04/dropbox-reduces-git-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-22 14:14:00 | 标签: Monorepo, Git 优化, 开发者生产力, CI/CD, 基础设施
-
-> 本文详细介绍了 Dropbox 一个重要的基础设施优化案例。面对一个臃肿的 87GB 后端 monorepo 导致克隆时间长达一小时以及 CI 性能下降的问题，工程师们发现根本原因并非大文件，而是 Git 内部增量压缩在大规模使用时的低效性。次优的包文件生成导致了不成比例的存储增长。通过将 monorepo 视为生产基础设施，团队分析了存储模式，实施了优化的重新打包策略，并调整了 Git 的增量窗口和深度参数。关键的是，他们与 GitHub 合作调整了服务器端的打包参数。最终结果是存储大小减少了 77% 至 20GB，克隆时间缩短到 15 分钟以内，CI 流水线也更快了。核心要点是，将版本控制...
+2026-04-22 14:14:00
 
 
 
