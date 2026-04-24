@@ -1,0 +1,58 @@
+{
+  "id": "RAW_56d66fe8",
+  "title": "我是如何用 Jenkins、Docker Compose 和 Traefik 为基于 Monorepo 的微服务系统构建生产级 CI/CD 管道的",
+  "url": "https://www.freecodecamp.org/news/build-production-ready-ci-cd-pipeline-for-monorepo-based-microservices-system/",
+  "date": "2026-04-23 18:11:20",
+  "author": "Md Tarikul Islam",
+  "siteName": "freeCodeCamp.org",
+  "content": null,
+  "aiSummary": "本文提供了一份全面的实战指南，讲解如何在单台 Linux 服务器上，使用 Jenkins、Docker Compose 和 Traefik 为基于 Monorepo 的微服务系统构建生产级 CI/CD 管道。",
+  "oneSentenceSummary": "本文提供了一份全面的实战指南，讲解如何在单台 Linux 服务器上，使用 Jenkins、Docker Compose 和 Traefik 为基于 Monorepo 的微服务系统构建生产级 CI/CD 管道。",
+  "summary": "本教程提供了一份完整的、手把手的指南，用于为基于 Monorepo 的微服务架构搭建 CI/CD 管道。内容涵盖了从服务器准备、配置 Traefik 作为反向代理并实现 HTTPS 证书自动续签，到在 Docker 中运行 Jenkins 并通过自定义域名暴露服务的全过程。指南的核心是一个 Jenkinsfile，它实现了一种智能部署策略，能够检测每次提交中哪些微服务发生了变更，并仅重新部署这些受影响的服务。文章还包含一个详细的故障排查章节，针对常见的实际问题（如可疑所有权错误、缺少 Docker Compose 插件以及网络超时）进行了深入分析，解释了每个问题的根本原因以及修复背后的原理。最后，文章总结了一个用于理解宿主机与容器上下文的心智模型，并附上了一张日常运维速查表。",
+  "mainPoints": [
+    {
+      "point": "可以使用 Jenkins、Docker Compose 和 Traefik 在单台服务器上构建生产级 CI/CD 管道。",
+      "explanation": "本指南展示了一种适用于中小型项目的实用且经济高效的架构，使用 Traefik 实现反向代理和自动 HTTPS，并使用 Jenkins 进行管道编排。"
+    },
+    {
+      "point": "该管道实现了一种智能部署策略，仅重新部署发生变更的微服务。",
+      "explanation": "通过使用 `git diff` 检测特定服务目录内的文件变更，Jenkinsfile 避免了不必要的全栈重新部署，从而节省了时间和资源。"
+    },
+    {
+      "point": "在容器中运行 Jenkins 需要仔细配置绑定挂载和 Docker 套接字访问权限。",
+      "explanation": "本指南详细介绍了如何将宿主机的 Docker 套接字和项目目录挂载到 Jenkins 容器中，使其能够控制宿主机的 Docker 守护进程并访问代码库以进行部署。"
+    },
+    {
+      "point": "文章提供了一个全面的故障排查章节，对常见问题进行了根因分析。",
+      "explanation": "从可疑所有权错误到缺少插件，每个错误都解释了其原因和修复背后的原理，这比简单的命令列表更有价值。"
+    }
+  ],
+  "keyQuotes": [
+    "你将学习如何在自定义域名上暴露服务并实现 HTTPS 证书自动续签，以及实现一种智能部署策略，该策略能够检测变更并仅重新部署受影响的微服务。",
+    "Traefik 为每个容器分配一个真实的域名和真实的证书，无需逐个服务进行配置——你只需添加几个标签即可。",
+    "如果不这样做，Jenkins 会在 Webhook/链接中生成 http:// 的 URL，从而导致问题。",
+    "本节涵盖了我们在搭建此管道时遇到的实际问题——更重要的是，解释了每个修复方案为何有效。理解其中的'为什么'将帮助你在自己的环境中调试类似问题。"
+  ],
+  "tags": [
+    "CI/CD",
+    "Jenkins",
+    "Docker Compose",
+    "Traefik",
+    "微服务"
+  ],
+  "topicTag": "devops",
+  "readTime": 15,
+  "score": 89,
+  "wordCount": 3535,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776967880000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-23 18:11:20"
+}
