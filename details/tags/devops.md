@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-24 08:21:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-24 11:02:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -500,17 +500,13 @@
 
 ### [我是如何用-Jenkins、Docker-Compose-和-Traefik-为基于-Monorepo-的微服务系统构建生产级-CI/CD-管道的](https://www.freecodecamp.org/news/build-production-ready-ci-cd-pipeline-for-monorepo-based-microservices-system/)
 
-2026-04-23 18:11:20 | 标签: CI/CD, Jenkins, Docker Compose, Traefik, 微服务
-
-> 本教程提供了一份完整的、手把手的指南，用于为基于 Monorepo 的微服务架构搭建 CI/CD 管道。内容涵盖了从服务器准备、配置 Traefik 作为反向代理并实现 HTTPS 证书自动续签，到在 Docker 中运行 Jenkins 并通过自定义域名暴露服务的全过程。指南的核心是一个 Jenkinsfile，它实现了一种智能部署策略，能够检测每次提交中哪些微服务发生了变更，并仅重新部署这些受影响的服务。文章还包含一个详细的故障排查章节，针对常见的实际问题（如可疑所有权错误、缺少 Docker Compose 插件以及网络超时）进行了深入分析，解释了每个问题的根本原因以及修复背后的原理。最...
+2026-04-23 18:11:20
 
 
 
 ### [从指标到意义：PaaS-如何帮助开发者理解生产环境](https://www.freecodecamp.org/news/from-metrics-to-meaning-how-paas-helps-developers-understand-production/)
 
-2026-04-23 17:00:07 | 标签: PaaS, 可观测性, 生产指标, 软件工程, DevOps
-
-> 本文探讨了现代生产系统中的一个常见挑战：指标过多往往导致混乱而非清晰。作者认为，核心问题不在于缺乏可观测性，而在于缺乏解读。开发者被迫去推理并非自己构建的基础设施层，这使得将指标与应用行为联系起来变得困难。文章解释了像 Sevalla、Railway 或 Render 这样的 PaaS 如何通过抽象掉扩展、路由和实例管理等基础设施职责来改变这一局面。随后，文章详细解析了五个关键指标——延迟、错误率、吞吐量、资源利用率和实例健康——并阐述了 PaaS 如何将每个指标从嘈杂的、需要跨层排查的信号，转变为更清晰、更直接的应用性能和正确性指示器。对开发者而言，最终的好处是清晰度：能够在不被运维复杂性淹...
+2026-04-23 17:00:07
 
 
 

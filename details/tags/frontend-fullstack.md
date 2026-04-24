@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-24 08:21:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-24 11:02:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -650,17 +650,13 @@
 
 ### [React-Navigation-8.0-Alpha：原生底部标签、重构的-TypeScript-推断与历史记录](https://www.infoq.com/news/2026/04/react-navigation-8-alpha/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-23 15:36:00 | 标签: React Navigation, React Native, TypeScript, 导航, 移动开发
-
-> React Navigation 8.0 Alpha 于 2025 年 12 月发布，2026 年 3 月发布进度报告，是对 React Native 和 Web 的流行路由库的重大更新。主要变化包括：在 iOS 和 Android 上默认使用原生底部标签，由 react-native-screens 驱动，支持 iOS 26 上的全新液态玻璃效果。TypeScript 推断已重构，`useNavigation` 等 Hook 可根据屏幕名称自动推断类型，参数类型也可从链接配置中的路径模式推断，灵感来自 TanStack Router。3 月更新增加了多项功能：利用 React 19 的 `R...
+2026-04-23 15:36:00
 
 
 
 ### [MDN-新前端的内部机制](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278964&idx=1&sn=2cc25711f66f3c3672c4186db5961a6b)
 
-2026-04-23 01:03:00 | 标签: 前端架构, Web Components, Lit, 性能优化, 重构
-
-> 文章深入剖析了 MDN 前端架构的重大重构。面对旧有 React 应用（yari）因技术债务、CSS 耦合、SPA 模式与静态内容不匹配等问题导致的开发与维护困境，MDN 团队选择了 Lit、Web Components 和自研服务端组件作为新架构的核心。文章通过 Scrimba 交互组件和交互式示例两个具体案例，展示了 Web Components 如何优雅地解决在静态内容中嵌入交互功能的难题。更重要的是，新架构彻底摒弃了 SPA 模式，采用基于组件的静态模板拼接，实现了 CSS 和 JavaScript 的按需加载，并通过声明式 Shadow DOM 和巧妙的渐进增强策略优化了性能与用户体...
+2026-04-23 01:03:00
 
 
 
