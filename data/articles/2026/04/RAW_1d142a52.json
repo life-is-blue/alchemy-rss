@@ -1,0 +1,59 @@
+{
+  "id": "RAW_1d142a52",
+  "title": "Yelp 实现超过 1，000 个 Cassandra 节点的零停机升级",
+  "url": "https://www.infoq.com/news/2026/04/yelp-cassandra-upgrade/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-24 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.yelp.com/\">Yelp</a> has successfully completed a large-scale upgrade of its <a href=\"https://cassandra.apache.org/_/index.html\">Apache Cassandra</a> infrastructure, spanning more than 1,000 nodes, without any service downtime, offering a blueprint for managing stateful systems at scale. The upgrade, <a href=\"https://engineeringblog.yelp.com/amp/2026/04/zero-downtime-upgrade-yelp-cassandra-upgrade-story\">detailed</a> by Yelp’s Database Reliability Engineering team, demonstrates how careful planning, phased execution, and automation can enable seamless modernization of critical data infrastructure.</p>\n   <p dir=\"ltr\">The effort addressed one of the most complex challenges in distributed systems: upgrading a live, highly available database without interrupting production workloads. Cassandra underpins many of Yelp’s core services, making downtime unacceptable. To mitigate risk, the team adopted a rolling upgrade strategy, incrementally upgrading nodes while maintaining cluster availability and data consistency throughout the process. This ensured that applications continued to read and write data uninterrupted as the system evolved.</p>\n   <p dir=\"ltr\">At the heart of the approach was strict adherence to compatibility and incremental change principles. By upgrading nodes in controlled batches and allowing the cluster to rebalance and repair between steps, Yelp minimized the risk of cascading failures. This aligns with broader best practices in Cassandra upgrades, where rolling upgrades maintain backward compatibility and allow the system to remain operational while individual components are replaced.</p>\n   <p dir=\"ltr\">The team also invested heavily in automation and observability, ensuring that each phase of the upgrade could be monitored and validated in real time. Automated orchestration reduced the likelihood of human error, while continuous health checks ensured that any anomalies could be detected and addressed before impacting users.</p>\n   <p dir=\"ltr\">Unlike <a href=\"https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless\">stateless services</a>, distributed databases like Cassandra require careful coordination during upgrades due to data replication, consistency guarantees, and <a href=\"https://dev.to/tushar_pal/understanding-dependencies-in-nodejs-projects-44i3\">node interdependencies</a>. Yelp's success highlights the importance of understanding these dynamics, particularly how data is replicated and how nodes recover and synchronize after changes.</p>\n   <p dir=\"ltr\">Industry-wide, similar zero-downtime migrations often rely on techniques such as <a href=\"https://www.confluent.io/blog/dual-write-problem/\">dual writes</a>, <a href=\"https://en.wikipedia.org/wiki/Replication_(computing)\">replication</a>, or introducing new clusters alongside existing ones before gradually shifting traffic. However, Yelp's approach demonstrates that even in-place upgrades of large clusters can be achieved safely when executed with discipline and robust tooling.</p>\n   <p dir=\"ltr\">Yelp's upgrade reflects a growing trend in cloud-native engineering: eliminating downtime as a constraint. As businesses increasingly depend on always-on systems, traditional maintenance windows are becoming obsolete. Instead, organizations are adopting strategies such as rolling upgrades, blue-green deployments, and live data migration to ensure continuous availability.</p>\n   <p dir=\"ltr\"><a href=\"https://engineering.monday.com/zero-downtime-cassandra-migration-between-eks-clusters\">Other companies </a>tackling similar challenges, such as migrating Cassandra clusters across Kubernetes environments, have also emphasized the need for careful planning, staged rollouts, and strong operational controls to achieve zero downtime in production systems.</p>\n   <p dir=\"ltr\">Ultimately, Yelp's Cassandra upgrade underscores a key evolution in platform engineering: reliability is no longer just about uptime, but about seamless change. Systems must not only remain available but also be continuously upgradable without disrupting users.</p>\n   <p dir=\"ltr\">By demonstrating that even large-scale, stateful infrastructure can be modernized without downtime, Yelp sets a new benchmark for engineering teams managing critical data platforms, showing that with the right combination of strategy, tooling, and discipline, zero-downtime operations are achievable at scale.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Yelp Achieves Zero-Downtime Upgrade of Over 1,000 Cassandra Nodes\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/yelp-cassandra-upgrade/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1777032000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Yelp 成功完成了超过 1，000 个 Cassandra 节点的零停机升级，通过精心规划、分阶段执行和自动化，为大规模有状态系统的现代化改造提供了蓝图。",
+  "oneSentenceSummary": "Yelp 成功完成了超过 1，000 个 Cassandra 节点的零停机升级，通过精心规划、分阶段执行和自动化，为大规模有状态系统的现代化改造提供了蓝图。",
+  "summary": "Yelp 的数据库可靠性工程团队详细介绍了他们成功实现超过 1，000 个 Apache Cassandra 节点零停机升级的过程，Cassandra 是其核心服务的关键基础设施组件。该项目解决了在不中断生产工作负载的情况下，升级一个实时、高可用分布式数据库的复杂挑战。团队采用了滚动升级策略，在保持集群可用性和数据一致性的同时，以受控批次升级节点。成功的关键在于严格遵守兼容性和增量变更原则，允许集群在步骤之间进行重新平衡和修复。在自动化和可观测性方面的大量投入，使得每个阶段都能进行实时监控和验证，从而减少了人为错误，并能够快速检测异常。文章将这种原地升级方法与双写或引入新集群等其他常见策略进行了对比，将 Yelp 的方法定位为大规模有状态基础设施现代化改造中一种可行且严谨的替代方案。这一成就反映了更广泛的行业趋势，即消除停机这一约束，向着不仅始终在线，而且能在不中断用户服务的情况下持续升级的系统迈进。",
+  "mainPoints": [
+    {
+      "point": "Yelp 采用滚动升级策略，实现了超过 1，000 个 Cassandra 节点的零停机升级。",
+      "explanation": "升级以增量方式进行，在集群保持运行的同时，以受控批次升级节点，确保应用程序的读写操作不受中断。"
+    },
+    {
+      "point": "严格遵守兼容性和增量变更原则是降低风险的核心。",
+      "explanation": "通过在升级步骤之间允许集群进行重新平衡和修复，团队最大程度地降低了级联故障的风险，这是升级有状态分布式系统的一个关键挑战。"
+    },
+    {
+      "point": "在自动化和可观测性方面的大量投入对于实时监控和错误预防至关重要。",
+      "explanation": "自动化编排减少了人为错误，而持续的健康检查使团队能够在异常影响用户之前发现并处理它们。"
+    },
+    {
+      "point": "此次成功表明，凭借严谨的态度和强大的工具，大型集群的原地升级是可以实现的。",
+      "explanation": "这与双写或集群迁移等更复杂的策略形成对比，为关键数据基础设施的现代化改造提供了一种更简单但有效的蓝图。"
+    }
+  ],
+  "keyQuotes": [
+    "Yelp 已成功完成其 Apache Cassandra 基础设施的大规模升级，涉及超过 1，000 个节点，且未造成任何服务停机，为大规模管理有状态系统提供了蓝图。",
+    "该方法的核心是严格遵守兼容性和增量变更原则。",
+    "团队还在自动化和可观测性方面投入了大量资源，确保升级的每个阶段都能被实时监控和验证。",
+    "Yelp 的 Cassandra 升级凸显了平台工程的一个关键演变：可靠性不再仅仅关乎正常运行时间，更关乎无缝变更。",
+    "通过证明即使是大规模的有状态基础设施也能在不宕机的情况下实现现代化，Yelp 为管理关键数据平台的工程团队树立了新的标杆。"
+  ],
+  "tags": [
+    "Cassandra",
+    "零停机升级",
+    "分布式系统",
+    "数据库可靠性工程",
+    "有状态系统"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 484,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777032000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-24 12:00:00"
+}

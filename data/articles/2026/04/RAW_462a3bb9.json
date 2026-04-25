@@ -1,0 +1,53 @@
+{
+  "id": "RAW_462a3bb9",
+  "title": "强化学习近似求解方法入门",
+  "url": "https://towardsdatascience.com/introduction-to-approximate-solution-methods-for-reinforcement-learning-2/",
+  "date": "2026-04-24 16:30:00",
+  "author": "Oliver S",
+  "siteName": "Towards Data Science",
+  "content": null,
+  "aiSummary": "本文介绍了强化学习的近似求解方法，通过函数近似、梯度下降和半梯度 TD 学习，突破了表格方法的局限，能够处理大规模状态空间。",
+  "oneSentenceSummary": "本文介绍了强化学习的近似求解方法，通过函数近似、梯度下降和半梯度 TD 学习，突破了表格方法的局限，能够处理大规模状态空间。",
+  "summary": "本文是 Sutton 和 Barto 强化学习教材系列文章的一部分，标志着从第一部分（表格方法）向第二部分（近似方法）的过渡。其动机源于需要解决具有海量状态空间的问题，例如四子棋或基于视觉的任务。作者引入了函数近似的核心概念，即用一个参数化函数来替代值表。文中定义了预测目标（均方值误差），并介绍了随机梯度下降作为优化方法。文章涵盖了梯度方法（使用无偏目标，如蒙特卡洛回报）和半梯度方法（使用自举目标，如 TD(0)），后者在收敛性保证上有所妥协，但换来了实际性能。最后，文章简要讨论了线性函数近似和多项式基等特征构建技术，并指出深度神经网络已成为现代标准。这篇文章为从基础强化学习理论过渡到可扩展的现实世界算法搭建了概念桥梁。",
+  "mainPoints": [
+    {
+      "point": "对于具有大规模或连续状态空间的强化学习问题，近似求解方法是必要的。",
+      "explanation": "对于四子棋（10^20 个状态）或基于视觉的任务等状态空间极其庞大的问题，表格方法无法胜任。函数近似则能够实现泛化和可扩展性。"
+    },
+    {
+      "point": "函数近似引入了一个预测目标，即均方值误差，这是表格方法所不需要的。",
+      "explanation": "由于不再可能实现完美收敛，因此需要一个代价函数来衡量预测值与实际状态值之间的误差，该误差由状态分布 µ 加权。"
+    },
+    {
+      "point": "半梯度方法（如带有函数近似的 TD(0)）虽然失去了收敛性保证，但在实践中很实用。",
+      "explanation": "这些方法根据值估计的梯度来更新权重，但忽略了权重变化对自举目标的影响，这在实践中是一种常见且有效的启发式方法。"
+    }
+  ],
+  "keyQuotes": [
+    "可能的相机图像数量超过了已知宇宙中的原子数量。",
+    "当我们通过调整某些权重来更新函数时，我们不仅仅是在更新表格中的单个条目——这也会（可能）对所有其他估计产生影响。",
+    "我们的某些方法可能非常完美地优化了上述目标，但仍然无法解决手头的问题——例如，当策略在不良状态上花费了过多时间时。"
+  ],
+  "tags": [
+    "强化学习",
+    "函数近似",
+    "梯度下降",
+    "半梯度方法",
+    "TD 学习"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 85,
+  "wordCount": 1721,
+  "domain": "towardsdatascience.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777048200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-24 16:30:00"
+}

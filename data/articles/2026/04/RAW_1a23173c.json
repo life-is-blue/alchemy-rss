@@ -1,0 +1,58 @@
+{
+  "id": "RAW_1a23173c",
+  "title": "HashiCorp Vault 2.0 转向 IBM 生命周期管理，引入新的身份联合功能",
+  "url": "https://www.infoq.com/news/2026/04/vault-2-0-ibm-identity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-24 07:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": null,
+  "aiSummary": "HashiCorp Vault 2.0 是自 2018 年以来的首个主版本更新，引入了工作负载身份联合、IBM 的版本管理与支持模型，以及破坏性变更，旨在为多云环境实现身份安全的现代化。",
+  "oneSentenceSummary": "HashiCorp Vault 2.0 是自 2018 年以来的首个主版本更新，引入了工作负载身份联合、IBM 的版本管理与支持模型，以及破坏性变更，旨在为多云环境实现身份安全的现代化。",
+  "summary": "HashiCorp 发布了 Vault 2.0，这是自 2018 年 1.0 版本以来，该密钥管理平台首次进行主版本号更新。此次发布正值工程团队应对跨多云和容器化环境的安全通信所带来的运维复杂性。升级到 2.0 版本确立了近期收购后的 IBM 版本管理与支持模型，保证每个主版本至少提供两年的标准支持。本次迭代的核心是一个经过优化的基于身份的安全模型，该模型优先考虑如何在分布式环境中验证工作负载和服务身份。一个突出的技术新增功能是用于密钥同步的工作负载身份联合，它允许 Vault 利用 OIDC 令牌与 AWS、Azure 和 GCP 进行身份验证，而无需使用长期有效的静态凭证。该版本还包括对内部存储引擎的修改以提升性能、破坏性变更（如 Azure 身份验证需要显式配置）、SCIM 2.0 身份置备的 Beta 支持、用于身份网格的 SPIFFE JWT-SVID 支持，以及用于证书生命周期自动化的 PKI 密钥引擎更新。在更广泛的市场中，Vault 2.0 与 AWS Secrets Manager 和 Azure Key Vault 等云原生服务，以及 Akeyless 和 Doppler 等托管替代方案展开竞争。",
+  "mainPoints": [
+    {
+      "point": "Vault 2.0 引入了用于密钥同步的工作负载身份联合，消除了长期有效的静态凭证。",
+      "explanation": "通过使用 OIDC 令牌，Vault 可以在没有静态凭证的情况下与 AWS、Azure 和 GCP 进行身份验证，从而降低同步过程中凭证泄露的风险。"
+    },
+    {
+      "point": "此次发布标志着在被收购后采用了 IBM 的版本管理与支持模型。",
+      "explanation": "Vault 现在遵循 IBM Support Cycle-2 策略，保证每个主版本至少提供两年的标准支持，这标志着平台治理方式的转变。"
+    },
+    {
+      "point": "此版本强制执行了破坏性变更，例如 Azure 身份验证需要显式配置。",
+      "explanation": "用户在升级时必须考虑这些变更，因为旧组件已被移除，以简化长期维护并支持更频繁的更新。"
+    },
+    {
+      "point": "新功能包括 SCIM 2.0 Beta 支持、SPIFFE JWT-SVID 支持以及 PKI 引擎更新。",
+      "explanation": "SCIM 2.0 支持从外部平台进行自动化身份管理，SPIFFE 支持桥接了专有和开放身份标准，PKI 更新则为零信任网络自动化证书生命周期。"
+    }
+  ],
+  "keyQuotes": [
+    "此次发布正值工程团队应对跨多云和容器化环境的安全通信所带来的运维复杂性。",
+    "一个突出的技术新增功能是引入了用于密钥同步的工作负载身份联合。",
+    "移除旧元素旨在简化代码库的长期维护，并允许在新所有权下进行更频繁的更新。",
+    "这符合企业基础设施中日益广泛采用的零信任网络原则。"
+  ],
+  "tags": [
+    "HashiCorp Vault",
+    "密钥管理",
+    "身份联合",
+    "IBM",
+    "DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 527,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777014000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-24 07:00:00"
+}
