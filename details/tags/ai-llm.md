@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-25 08:18:03 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-25 11:01:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [DeepSeek-V4-预览版：迈入百万上下文普惠时代](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c)
 
-2026-04-24 02:56:00 | 标签: DeepSeek-V4, 大语言模型, 百万上下文, 开源模型, Agent
-
-> DeepSeek 正式发布 V4 系列模型的预览版本，包含 DeepSeek-V4-Pro 和 DeepSeek-V4-Flash 两个版本，均支持百万字超长上下文。Pro 版本在 Agent 能力、世界知识和推理性能上达到开源模型最佳水平，性能比肩顶级闭源模型；Flash 版本则在保持接近推理能力的同时，提供更快捷经济的 API 服务。模型采用了全新的注意力机制和 DSA 稀疏注意力，大幅降低长上下文场景下的计算和显存需求。API 已同步上线，支持 OpenAI 和 Anthropic 接口格式。模型权重和技术报告已开源。
+2026-04-24 02:56:00
 
 
 
@@ -11944,81 +11942,61 @@
 
 ### [我为-Kindle-高亮笔记构建了一个-AI-流水线](https://towardsdatascience.com/i-built-an-ai-pipeline-for-kindle-highlights/)
 
-2026-04-24 15:00:00 | 标签: Python, Ollama, Kindle, LLM, 数据流水线
-
-> 作者描述了一个个人项目，旨在自动化 Kindle 高亮笔记的总结过程，其动机源于常见的过度高亮和缺乏时间手动回顾的问题。该流水线包含两个主要阶段：数据检索/处理和 AI 总结。第一阶段涉及从 Kindle 的 'My Clippings.txt' 文件中提取高亮笔记，使用 Python 进行解析，按书籍过滤，按位置排序，去重重叠条目，并启发式地检测章节标题。第二阶段使用通过 Ollama 运行的本地开源 LLM，从处理后的文本生成结构化摘要（论点、关键思想、要点）。最终输出导出为 Markdown 文件，适用于 Obsidian。整个解决方案在不到 300 行 Python 代码中实现，并在本...
+2026-04-24 15:00:00
 
 
 
 ### [如何通过自动化测试提升-Claude-Code-性能](https://towardsdatascience.com/how-to-vastly-improve-claude-code-performance-with-automated-testing/)
 
-2026-04-24 13:30:00 | 标签: Claude Code, 自动化测试, AI 编码智能体, 开发者工作流, 测试策略
-
-> 文章认为，随着 Claude Code 等编码智能体在生成代码方面变得极为高效，开发者的主要瓶颈已从编写代码转向测试代码。作者提出了一种双管齐下的策略来克服这一瓶颈。首先，完全自动化测试流程：赋予智能体运行测试的权限，提示它创建并执行单元测试或集成测试，并确保在提交或合并前运行测试。其次，对于无法自动化的测试，作者提供了一些让手动测试更高效的技术，例如使用 AI 生成的视觉检查清单，其中包含链接和描述，以简化验证过程。核心论点是，优化测试工作流是使用 AI 编码工具时最大化开发者整体效率的最有效方式。
+2026-04-24 13:30:00
 
 
 
 ### [GLM-5.1-的战略性思考、数据中心反抗加剧、乐于助人的-LLM-变得不友善，以及更多...](https://www.deeplearning.ai/the-batch/issue-350)
 
-2026-04-24 10:34:12 | 标签: 编程智能体, GLM-5.1, 人形机器人, 数据中心, AI 对齐
-
-> 本期《The Batch》是吴恩达的新闻通讯，对当前 AI 和技术趋势进行了多主题分析。吴恩达的领衔文章根据编程智能体对软件开发任务的加速程度进行了分类，从最快（前端）到最慢（研究）。新闻部分涵盖了四个主要故事：Z.ai 发布了 GLM-5.1，这是一个为长时间、自主编程任务设计的开放权重模型；Agility Robotics 的 Digit 人形机器人在舍弗勒工厂首次投入运营部署；美国各地社区和立法机构对数据中心建设的抵制日益加剧；以及 Anthropic 与学术合作伙伴共同发表的一篇研究论文，提出了一种在长时间或情绪激烈的对话中稳定 LLM“助手”角色的方法。
+2026-04-24 10:34:12
 
 
 
 ### [使用-Visier-和-Amazon-Quick-构建劳动力-AI-智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick/)
 
-2026-04-24 10:04:20 | 标签: MCP, Amazon Quick, Visier, AI 智能体, 劳动力智能
-
-> 本文提供了一个详细的技术操作指南，介绍如何使用模型上下文协议 (MCP) 将劳动力 AI 平台 Visier 与智能体 AI 工作空间 Amazon Quick 连接起来。文章概述了其架构：Visier 的 MCP 服务器将人员分析能力作为可调用的工具暴露出来，而 Amazon Quick 则作为 MCP 客户端，协调对实时劳动力数据以及存储在 Quick Spaces 中的企业内部知识的查询。文章通过一个具体场景——HR 业务伙伴和财务经理为领导层会议做准备——来说明该集成如何支持自然语言查询，将 Visier 中的实时员工人数、任职年限和高绩效者数据与 Quick Spaces 中的政策文...
+2026-04-24 10:04:20
 
 
 
 ### [DeepSeek-V4——接近前沿性能，价格仅需零头](https://simonwillison.net/2026/Apr/24/deepseek-v4/#atom-everything)
 
-2026-04-24 06:01:04 | 标签: DeepSeek V4, 专家混合, 开源权重, AI 定价, 前沿模型
-
-> DeepSeek 发布了备受期待的 V4 系列的首批预览模型：DeepSeek-V4-Pro 和 DeepSeek-V4-Flash。两者都是专家混合模型，拥有 100 万 token 的上下文窗口。Pro 版本总参数量达 1.6T（激活参数 49B），是迄今为止最大的开源权重模型；而 Flash 版本总参数量为 284B（激活参数 13B）。这些模型均采用 MIT 许可证发布。最引人注目的是它们的定价：Flash 模型输入成本为每百万 token 0.14 美元，输出成本为每百万 token 0.28 美元，甚至低于 OpenAI 的 GPT-5.4 Nano；而 Pro 模型输入成本为 1...
+2026-04-24 06:01:04
 
 
 
 ### [AINews-GPT-5.5-与-OpenAI-Codex-超级应用](https://www.latent.space/p/ainews-gpt-55-and-openai-codex-superapp)
 
-2026-04-24 04:40:43 | 标签: GPT-5.5, OpenAI, Codex, DeepSeek-V4, AI 智能体
-
-> 本期来自 Latent Space 的 AINews 全面汇总了 2026 年 4 月 22 日至 23 日期间最重要的 AI 发展动态。最引人注目的是 OpenAI 发布的 GPT-5.5，它被定位为面向实际工作的新一代智能，在长周期执行、计算机使用行为和 Token 效率方面均有改进。此次发布还伴随着 Codex 的重大升级，包括浏览器控制、Sheets/Slides 集成和自动审查模式，这标志着 OpenAI 将 Codex 打造为其超级应用基础的战略。数小时内，DeepSeek 以 V4 Preview 作为回应，这是一个采用 MIT 许可证的开源模型，拥有 1.6T 参数和激进定价，...
+2026-04-24 04:40:43
 
 
 
 ### [工具：毫秒转换器](https://simonwillison.net/2026/Apr/24/milliseconds/#atom-everything)
 
-2026-04-24 04:23:11 | 标签: 开发者工具, 毫秒, 时间转换, 实用工具, LLM
-
-> Simon Willison 创建了一个极简的网页工具，用于将毫秒转换为秒和分钟。其动机源于个人需求：他的 LLM 工具以毫秒为单位报告提示时长，而他发现手动换算非常繁琐。该工具托管在他的个人工具网站上，是一个功能单一、专注实用的页面。这代表了开发者常见的一种模式：构建一个小巧、专注的工具，来解决某个特定的、反复出现的麻烦。
+2026-04-24 04:23:11
 
 
 
 ### [DeepSeek-V4-终于发布！打破最强闭源垄断，明确携手华为芯片](https://www.qbitai.com/2026/04/406359.html)
 
-2026-04-24 04:17:45 | 标签: DeepSeek-V4, 大语言模型, 开源模型, 华为算力, 注意力机制
-
-> DeepSeek 于 2026 年 4 月正式发布 V4 系列模型，包含 V4-Pro（1.6T 参数，49B 激活）和 V4-Flash（284B 参数，13B 激活）两个版本，均支持 1M 上下文长度。V4-Pro 在 Agent 能力、世界知识和推理性能上达到开源模型最佳水平，内部评测中 Agent Coding 体验优于 Sonnet 4.5，交付质量接近 Opus 4.6 非思考模式。V4 开创了全新的注意力机制，在 token 维度进行压缩，结合 DSA 稀疏注意力，大幅降低计算和显存需求。API 同步上线，支持 OpenAI 和 Anthropic 两套接口。值得关注的是，Dee...
+2026-04-24 04:17:45
 
 
 
 ### [这期内容很丰富](https://simonwillison.net/2026/Apr/24/weekly/#atom-everything)
 
-2026-04-24 04:09:54 | 标签: 通讯, Simon Willison, 智能体工程模式, AI 开发
-
-> 这是一篇简短的推广帖，用于宣传 Simon Willison 博客的每周电子邮件通讯。它列出了最新一期内容，包含一些趣味元素（骑自行车的鹈鹕、骑电动滑板车的负鼠、带着业余无线电的浣熊）和实质性内容（5 篇博客文章、8 个链接、3 条引用，以及智能体工程模式指南的新章节）。该帖旨在吸引读者订阅通讯。
+2026-04-24 04:09:54
 
 
 
 ### [关于近期-Claude-Code-质量报告的更新](https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything)
 
-2026-04-24 01:31:25 | 标签: Claude Code, Anthropic, 事后分析, 智能体系统, AI 编程
-
-> Simon Willison 重点分析并解读了 Anthropic 关于近期 Claude Code 质量问题的官方事后分析报告。该报告证实，过去两个月用户关于 Claude Code 结果质量下降的投诉是合理的，问题根源在于 Claude Code 框架中的三个独立 Bug，而非模型本身。其中影响尤为严重的一个 Bug 于 3 月 26 日引入，其本意是清除空闲会话中超过一小时的旧思考记录以降低延迟，但由于 Bug 导致该清除操作在会话剩余时间内每次交互都会触发，而非仅执行一次，使得 Claude 显得健忘且重复。Willison 指出，他经常使用长时间运行的 Claude Code 会话，...
+2026-04-24 01:31:25
 
 
 
@@ -37128,57 +37106,43 @@
 
 ### [Google-Cloud-Next-2026-大会总结](https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up/)
 
-2026-04-25 00:00:00 | 标签: Google Cloud Next, 智能体 AI, Gemini Enterprise, TPU, Agentic Data Cloud
-
-> 本文全面总结了 Google Cloud Next '26 大会，详细介绍了超过 260 项产品发布。大会的核心主题是向“智能体时代”的转型，重点围绕全新的 Gemini Enterprise Agent 平台展开，该平台为构建、部署、管理和优化 AI 智能体提供了完整的生命周期。关键组件包括 Agent 开发工具包（ADK）、Agent Studio、Agent Runtime，以及 Agent Identity 和异常检测等强大的安全功能。大会还发布了第八代 TPU（8t 用于训练，8i 用于推理），并对 Agentic Data Cloud 进行了重大更新，包括知识目录、零拷贝联邦以及 ...
+2026-04-25 00:00:00
 
 
 
 ### [深度伪造、虚假信息与-AI-内容正在占领互联网](https://www.infoq.com/presentations/deepfakes-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-24 09:55:00 | 标签: 深度伪造, 虚假信息, 生成式AI, 网络安全, AI安全
-
-> 前谷歌点击欺诈主管 Shuman Ghosemajumder 全面阐述了生成式 AI 带来的社会与安全风险。他通过 YouTube Shorts、谷歌搜索结果甚至同行评审期刊中的实例，说明 AI 生成内容（深度伪造、AI 垃圾内容）已无处不在，且越来越难以与真实内容区分。演讲引入了一个理解虚假信息自动化的框架，展示了从高成本伪造到大规模生产的演变。核心论点是：生成式 AI 是网络犯罪分子的终极工具，它使此前需要人工操作的任务（如实时欺诈中的语音克隆，例如导致 2500 万美元损失的 Arup 案）得以自动化，并让 CAPTCHA 等传统防御手段形同虚设。演讲最后呼吁提高警惕，并给出实用建议（如...
+2026-04-24 09:55:00
 
 
 
 ### [使用-Apache-Camel-编排智能体和多模态-AI-流水线](https://www.infoq.com/articles/orchestrating-agentic-multimodal-ai-pipelines-apache-camel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-24 09:00:00 | 标签: Apache Camel, 智能体 AI, 多模态 AI, RAG, AI 编排
-
-> 文章认为，大多数 AI 系统在生产环境中的失败并非源于模型能力不足，而是由设计不佳的周边基础设施导致。文章通过一个支持工单分类系统的案例研究，展示了如何将基于 LLM 的推理、检索增强生成（RAG）和图像分类结合起来，并由 Apache Camel 统一编排。其核心架构思想是将执行控制从 AI 智能体中剥离出来，转移到一个确定性的集成框架中。Camel 负责处理路由、重试、熔断器和负载验证，而 LangChain4j 智能体则专注于推理和工具选择。该系统使用专用模型（通过 TensorFlow Serving 部署的 ResNet50）进行图像分析，而非多模态 LLM；同时，Camel 管理 ...
+2026-04-24 09:00:00
 
 
 
 ### [800-行代码实现-Open-Claw-的-Tool、消息总线、子-Agent-管理架构](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543287&idx=1&sn=a871de8246ffbb5733259e5434958404)
 
-2026-04-24 08:29:00 | 标签: Agent 框架, Tool 系统, 消息总线, 子 Agent, Anthropic Claude
-
-> 本文来自大淘宝技术团队，记录了对开源 Agent 框架 Open Claw 的研究与最小可运行实现。文章核心观点是：对于 Tool 调用、消息分发、子 Agent 管理这三类 Agent 系统的核心组件，优先采用薄抽象、显式控制流和贴近模型 API 的实现方式，比引入多层中间件更容易获得工程上的确定性。文章详细介绍了四个核心模块：Tool 抽象与 ToolRegistry（统一的工具注册和调用接口，通过 exclude() 实现能力隔离）、MessageBus 入站消息总线（支持 subscribe 实时回调和 drain 轮询两种消费模式）、SubagentManager 子 Agent 管...
+2026-04-24 08:29:00
 
 
 
 ### [GPT-5.5-登陆-Vercel-AI-Gateway---Vercel](https://vercel.com/changelog/gpt-5.5-on-ai-gateway)
 
-2026-04-24 07:00:00 | 标签: GPT-5.5, OpenAI, Vercel AI Gateway, 智能体编码, AI 模型
-
-> 本文宣布 OpenAI 的 GPT-5.5 和 GPT-5.5 Pro 模型已在 Vercel AI Gateway 平台上可用。GPT-5.5 针对智能体编码和长期任务进行了调优，能够在大型代码库中保持上下文，并执行创建文档和电子表格等计算机使用任务。GPT-5.5 Pro 则面向商业、法律、教育和数据科学领域中要求苛刻的多步骤工作流，优先考虑响应质量而非延迟。文章提供了使用 AI SDK 调用新模型的代码示例，并重点介绍了 AI Gateway 的功能，包括统一 API、使用量追踪、成本管理、重试、故障转移和可观测性。
+2026-04-24 07:00:00
 
 
 
 ### [当互联网用-AI-卷效率时，这家公司先问了一连串“能不能”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282476&idx=2&sn=55274ddbdad81dff629171096b5b09c3)
 
-2026-04-24 04:15:00 | 标签: AI 编程, 金融科技, 人机协同, 开发者生产力, 神州信息
-
-> 本文是对神州信息软件工艺创新部的独家专访，详细介绍了这家金融科技企业在 AI 编程落地过程中的理性实践。文章核心围绕三个层面展开：第一，神州信息在引入 AI 编程工具前，用真实金融项目需求进行了长达数月的系统性验证，从代码质量、任务拆解能力、存量工程匹配度到开发规范兼容性等维度反复校验，确认 AI 生成代码在缺陷密度和扫描覆盖度上与人工开发基本持平后才谨慎推广。第二，面对外界将 AI 提效与裁员划等号的叙事，神州信息给出了截然不同的答案——AI 现阶段只能作为经验工程师的副驾驶，省下来的人效被用来承接更多项目而非减少岗位，同时警惕能力断层风险，坚持保留初级工程师培养路径。第三，文章前瞻性地讨论...
+2026-04-24 04:15:00
 
 
 
 ### [深度解析-Hermes-Agent-如何实现“自进化”及其-Prompt-/-Context-/-Harness-的设计实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559664&idx=1&sn=2c26ac0a4898e4c986d289a543808dd7)
 
-2026-04-24 00:30:00 | 标签: Hermes Agent, 自进化, 强化学习, Agent 架构, Prompt Engineering
-
-> 本文是「项目深度解析」系列的第三篇，聚焦于开源 Agent 项目 Hermes Agent。文章首先介绍了 Hermes Agent 的核心亮点——「自进化」（Self-Evolving），并详细剖析了其实现路径：一是通过后台审查 Agent 自动将执行经验沉淀为可复用的 Skill 文件，实现「外挂式」进化；二是通过构建从轨迹捕获、数据合成到 GRPO 强化学习训练的完整闭环，实现模型权重的「内化式」进化。随后，文章从 Prompt Engineering、Context Engineering 和 Harness Engineering 三个维度，对比了 Hermes Agent 与 Op...
+2026-04-24 00:30:00
 
 
 
