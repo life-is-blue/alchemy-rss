@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-26 08:17:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-26 11:02:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -32851,9 +32851,7 @@
 
 ### [与-Martin-Kleppmann-探讨设计数据密集型应用](https://www.youtube.com/watch?v=SVOrURyOu_U)
 
-2026-04-22 16:16:18 | 标签: 分布式系统, 数据工程, Kafka, 云原生, 形式化验证
-
-> 本期播客节目是 Gergely Orosz 与《设计数据密集型应用》这本开创性著作的作者 Martin Kleppmann 之间的一次深入对话。Kleppmann 分享了他从创立初创公司（Reportive）到被 LinkedIn 收购，再到他在数据基础设施团队中与 Kafka 和 Samza 合作并激发第一版书籍创作的关键历程。讨论涵盖了第二版的创作动机和关键更新，包括向云原生架构的转变、淘汰 MapReduce 等过时技术，以及增加对向量索引等 AI 支持系统的介绍。Kleppmann 对分布式系统的实际现状、抽象与理解之间的权衡，以及工程师的伦理责任提供了深刻的见解。他还详细介绍了自己向...
+2026-04-22 16:16:18
 
 
 
@@ -33361,11 +33359,11 @@
 
 
 
-### [构建-Claude-Code-的经验：我们如何使用-Skills](https://baoyu.io/translations/2026-03-17/claude-code-skills-lessons)
+### [智能体工程的-8-个等级](https://baoyu.io/translations/2026-03-11/levels-of-agentic-engineering)
 
-2026-03-17T00:00:00.000Z
+2026-03-16T00:00:00.000Z
 
-> Anthropic 内部团队分享 Claude Code Skills 的实战经验：9 大 Skills 类型分类、编写技巧和团队分发策略。
+> AI 的编程能力正在超越我们驾驭它的能力，而弥合这个差距需要一步步来——总共 8 个等级。从 Tab 补全到自主智能体团队，这是完整的进阶之路。
 
 
 
