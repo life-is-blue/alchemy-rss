@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-27 04:11:25 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-27 06:10:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -33359,11 +33359,11 @@
 
 
 
-### [构建-Claude-Code-的经验：我们如何使用-Skills](https://baoyu.io/translations/2026-03-17/claude-code-skills-lessons)
+### [智能体工程的-8-个等级](https://baoyu.io/translations/2026-03-11/levels-of-agentic-engineering)
 
-2026-03-17T00:00:00.000Z
+2026-03-16T00:00:00.000Z
 
-> Anthropic 内部团队分享 Claude Code Skills 的实战经验：9 大 Skills 类型分类、编写技巧和团队分发策略。
+> AI 的编程能力正在超越我们驾驭它的能力，而弥合这个差距需要一步步来——总共 8 个等级。从 Tab 补全到自主智能体团队，这是完整的进阶之路。
 
 
 
