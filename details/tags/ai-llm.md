@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-27 08:18:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-27 11:03:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11948,17 +11948,13 @@
 
 ### [记忆，是-Agent-基建｜对话-Calvin@Vida](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247516299&idx=1&sn=c3233ab0dd43f620ef87eb82241b5952)
 
-2026-04-26 04:32:00 | 标签: Agent 记忆, OpenChronicle, AX Tree, MCP 协议, 主动式 Agent
-
-> 文章以 OpenAI 为 Codex 推出 Chronicle 记忆功能和开源项目 OpenChronicle 的快速跟进为引子，深入探讨了 AI Agent 时代记忆层的核心价值与技术实现。作者与清华 00 后创业者 Calvin 进行了长达一小时的对话，核心观点包括：随着模型能力趋同，记忆与上下文将成为决定用户体验的关键差异点；OpenChronicle 采用 AX Tree 优先、截图兜底的混合方案，在 macOS 上实现低成本、高精度的屏幕内容结构化提取；通过 MCP 协议与各类 Agent 协作，实现跨应用的记忆共享；记忆所有权应归属用户而非模型厂商。文章还讨论了 Token 成本（...
+2026-04-26 04:32:00
 
 
 
 ### [一周-1.2w-Star，热门赛道杀出一匹黑马！对谈-Multica-张佳圆：如何重写“人-A-协作”规则？](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649107549&idx=1&sn=93c3df1b92c4363f419a114708dad629)
 
-2026-04-26 02:49:00 | 标签: Multica, AI Agent, 人机协作, AI 编程, 创业访谈
-
-> 本文是一篇对 Multica 创始人张佳圆的深度访谈。Multica 是一个让人类和 AI Agent 在同一工作空间内协同工作的平台，上线不到 3 周即获得 1.2 万 GitHub Star。文章详细介绍了 Multica 的产品理念、设计思路和团队内部实践。核心观点包括：将协作范式从“人驱动 Agent”转变为“批量创建 Issue → Agent 自主执行 → 人 review 决策”；产品形态采用看板式界面，以 Issue、Agent Runtime、Agent Profile 和 Inbox 为核心概念；团队内部已实现 Agent 7x24 小时工作，从早晨的日报生成到傍晚的自动部...
+2026-04-26 02:49:00
 
 
 
@@ -37128,25 +37124,19 @@
 
 ### [你不知道的-AI-Coding：非技术人的上手、场景与实战---Tw93](https://tw93.fun/2026-04-26/ai-coding.html)
 
-2026-04-26 17:00:00 | 标签: AI Coding, Claude Code, 非技术入门, AI 编程工具, 工作流
-
-> 本文是 Tw93 面向非技术同学撰写的 AI Coding 实战指南。文章从「命令行是第一道坎」切入，推荐了专为 AI Coding 设计的 Kaku 终端，并介绍了 Claude Code 的安装与使用。作者强调，非技术同学要真正用好 Claude Code，需要补充一些技术通识（如框架概念、Git、读代码和报错），并详细说明了账号订阅的注意事项。文章核心部分围绕如何让 Claude Code 高效工作展开：通过 CLAUDE.md 文件设定项目背景和工作规范，用精确的需求描述减少返工，利用 Plan 模式避免误操作，以及通过三层验收（命令通过、眼见为实、对照清单）确保结果正确。作者还介绍了...
+2026-04-26 17:00:00
 
 
 
 ### [AWS-终止-WorkMail-并将-App-Runner-转入维护模式](https://www.infoq.com/news/2026/04/aws-deprecates-workmail-apprunne/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-26 06:53:00 | 标签: AWS, WorkMail, App Runner, 云服务, 服务弃用
-
-> 本文报道了 AWS 近期宣布终止 WorkMail 并将 App Runner 转入维护模式的举措，总共影响约 14 项服务和功能。App Runner 将于 4 月 30 日停止接受新客户，而 WorkMail 将于明年 3 月关闭。其他进入维护模式的服务包括 Audit Manager、CloudTrail Lake、IoT FleetWise、Glue Ray Jobs，以及 Comprehend、Rekognition、SNS 和 Application Recovery Controller 中的部分功能。进入停用阶段的服务包括 RDS Custom for Oracle、WorkS...
+2026-04-26 06:53:00
 
 
 
 ### [智能体工程的隐形技术债：10-分钟造出一个-Agent，公司却要为它养一个平台团队](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282718&idx=2&sn=1ac4808104c740971206faa71bc4cde7)
 
-2026-04-26 02:16:00 | 标签: 智能体工程, 技术债务, 平台工程, AI 基础设施, 生产环境
-
-> 文章以谷歌 2015 年关于机器学习系统隐性技术债务的经典论文为引，指出智能体工程正面临类似的模式：智能体代码本身只占系统极小部分，围绕它的基础设施才是真正的复杂度所在。作者基于与工程领导者的对话和自身经验，绘制出智能体生产环境中的七大基础设施模块：集成、上下文湖、智能体注册表、度量、人机回环、治理和编排。每个模块都详细阐述了其隐性技术债务的具体表现，例如集成层因分散管理导致的凭证混乱和 API 变更应对滞后，上下文湖因缺乏运行时上下文和决策痕迹导致智能体重复犯错，注册表缺失导致智能体不可见和重复建设，度量体系不健全导致无法评估智能体性能与 ROI，人机回环缺乏统一标准导致审批逻辑混乱，治理缺...
+2026-04-26 02:16:00
 
 
 
@@ -52538,9 +52528,7 @@ http://antirez.com/news/162
 
 ### [用-Agent-动力学，和-40-个-Agents-一起为「人-+-AI」做产品｜42-章经](https://mp.weixin.qq.com/s?__biz=MzIyMDE5OTYyMw==&mid=2651051564&idx=1&sn=babc1b1e75b77826a63d304d33c348e0)
 
-2026-04-26 13:01:00 | 标签: Agent 动力学, 多 Agent 协作, CLI, Slock, Kimi CLI
-
-> 本文是 42 章经对 Slock.ai 创始人、Kimi CLI 作者 RC 的深度访谈。文章从 CLI 的演变切入，讨论了为 AI Agent 而非人类设计 CLI 的核心理念。RC 分享了他在 Kimi 开发 CLI 的经历，以及为何选择离开并创立 Slock——一个为多 Agent 和人提供协作环境的平台。文章深入探讨了「Agent 动力学」概念，包括多 Agent 协作中的分工、记忆共享、任务认领等机制，以及 Agent 之间可能形成的「企业文化」和「办公室政治」。RC 还分享了对模型安全、反爬攻防、编程教育路径变化等话题的见解，并提出了「需求本身就是 idea」的终极观点。
+2026-04-26 13:01:00
 
 
 
