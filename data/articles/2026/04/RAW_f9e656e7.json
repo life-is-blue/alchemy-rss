@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f9e656e7",
+  "title": "AWS 终止 WorkMail 并将 App Runner 转入维护模式",
+  "url": "https://www.infoq.com/news/2026/04/aws-deprecates-workmail-apprunne/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-26 06:53:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has recently announced that <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/03/aws-service-availability/\">WorkMail will be discontinued and that App Runner will stop accepting new customers</a> and move into maintenance mode. Several other less popular services and features are also entering maintenance or sunset phases, triggering concern and debate across the AWS community.</p>\n   <p>App Runner will move to maintenance mode on April 30, although existing users can continue using it, while <a href=\"https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html\">WorkMail will be shut down in March next year</a>. Several other services and features are also moving to maintenance or sunset stages. While this is part of AWS's lifecycle management, encouraging customers to plan migrations while maintaining continuity for existing workloads, the shift in long-term approach and the number of affected services and features have sparked debate in the community.</p>\n   <p>The fact that App Runner's deprecation was <a href=\"https://www.linkedin.com/posts/darryl-ruggles_migrating-from-aws-app-runner-to-amazon-ecs-share-7429621710087303168-gxEr?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">inadvertently leaked earlier in the year</a> and then retracted, and that a previously deprecated service like <a href=\"https://www.infoq.com/news/2025/12/aws-codecommit-ga/\">CodeCommit was recently resurrected</a>, contributed to some confusion in the community.</p>\n   <p>According to the announcement, App Runner, Audit Manager, CloudTrail Lake, <a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html\">IoT FleetWise</a>, Glue Ray Jobs, and some less popular features in Amazon Comprehend, Rekognition, SNS, and Application Recovery Controller are moving to maintenance mode and will not accept new customers. At the same time, <a href=\"https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html\">WorkMail</a>, <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS-Custom-for-Oracle-end-of-support.html\">RDS Custom for Oracle</a>, <a href=\"https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html\">WorkSpaces Thin Client</a>, and Service Management Connector are entering sunset and will be discontinued. Corey Quinn, chief cloud economist at The Duckbill Group, writes <a href=\"https://www.lastweekinaws.com/newsletter/s3-gets-vectors-cloudfront-gets-sha-256-you-get-the-bill/\">in his newsletter</a>:</p>\n   <blockquote>\n    <p>Roughly 14 services and features (...) getting the Old Yeller treatment in one blog post is a bold move. RDS Custom for Oracle and WorkMail heading to sunset, App Runner going to maintenance - someone finally checked the usage metrics. Pour one out for WorkSpaces Thin Client, a product I'm genuinely surprised lasted this long. Someone owes me a $300 refund for mine. I'm not kidding.</p>\n   </blockquote>\n   <p>Launched less than three years ago as an \"<a href=\"https://www.aboutamazon.com/news/aws/amazon-workspaces-thin-client\">enterprise hardware to provide businesses with easy-to-use virtual desktops</a>,\" WorkSpaces Thin Client is the only hardware product affected by the announcement. <a href=\"https://www.reddit.com/r/aws/comments/1s9iy4p/workmail_dead/\">Discussing the WorkMail shutdown</a> on Reddit, user <em>wz2b</em> comments:</p>\n   <blockquote>\n    <p>Workmail solved some real problems for me that weren't always easy to replicate elsewhere. Like CodeCommit, it let me manage everything more centrally within my AWS environment. (...) I get that these services probably don't drive revenue. What I don't buy is that they were particularly expensive to maintain. To me, they functioned as classic loss leaders - tools that make the broader AWS ecosystem more sticky and convenient. AWS seems to undervalue that concept.</p>\n   </blockquote>\n   <p>Evaluating alternatives to App Runner, <a href=\"https://www.reddit.com/r/aws/comments/1s9lk7k/app_runner_alternative/\">many Reddit users suggest Google Cloud Run</a>, even though AWS recommends ECS Express Mode instead. User <em>timhottens</em> writes:</p>\n   <blockquote>\n    <p>We ended up deciding to move a service we were building on App Runner to Google Cloud Run. It was fairly simple to set up access to AWS resources using workload identity federation. (...) Cloud Run is head and shoulders above any container offering on AWS, it's actually embarrassing that Amazon doesn't have anything like it.</p>\n   </blockquote>\n   <p>In the past, <a href=\"https://aws.amazon.com/simpledb/\">SimpleDB</a> was often <a href=\"https://news.ycombinator.com/item?id=36373129\">cited as evidence that AWS did not kill services,</a> even though it was largely obsolete and had been replaced by DynamoDB. A recent article titled \"<a href=\"https://aws.amazon.com/blogs/database/export-amazon-simpledb-domain-data-to-amazon-s3/\">Export Amazon SimpleDB domain data to Amazon S3</a>\" suggests that the status of SimpleDB might also change.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Ends WorkMail and Moves App Runner to Maintenance Mode\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/aws-deprecates-workmail-apprunne/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1777186380000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 宣布终止 WorkMail 并将 App Runner 转入维护模式，同时涉及多项其他服务，引发社区对其长期服务策略的讨论。",
+  "oneSentenceSummary": "AWS 宣布终止 WorkMail 并将 App Runner 转入维护模式，同时涉及多项其他服务，引发社区对其长期服务策略的讨论。",
+  "summary": "本文报道了 AWS 近期宣布终止 WorkMail 并将 App Runner 转入维护模式的举措，总共影响约 14 项服务和功能。App Runner 将于 4 月 30 日停止接受新客户，而 WorkMail 将于明年 3 月关闭。其他进入维护模式的服务包括 Audit Manager、CloudTrail Lake、IoT FleetWise、Glue Ray Jobs，以及 Comprehend、Rekognition、SNS 和 Application Recovery Controller 中的部分功能。进入停用阶段的服务包括 RDS Custom for Oracle、WorkSpaces Thin Client 和 Service Management Connector。这一公告在 AWS 社区引发了广泛讨论，人们担忧受影响服务的数量、此前 App Runner 弃用消息泄露后又撤回所造成的混乱，以及像 WorkMail 和 CodeCommit 这类作为生态系统引流工具的服务被低估。文章还指出，尽管 AWS 推荐使用 ECS Express Mode，但许多用户正在考虑将 Google Cloud Run 作为 App Runner 的替代方案。",
+  "mainPoints": [
+    {
+      "point": "AWS 正在终止 WorkMail 并将 App Runner 转入维护模式，影响约 14 项服务和功能。",
+      "explanation": "这代表了同时宣布的大量服务变更，包括停用（WorkMail、RDS Custom for Oracle、WorkSpaces Thin Client）和转入维护模式（App Runner、Audit Manager、CloudTrail Lake）。"
+    },
+    {
+      "point": "该公告引发了社区对 AWS 长期服务策略及其对非热门服务承诺的讨论。",
+      "explanation": "用户担心 AWS 低估了那些作为生态系统引流工具的服务，这些服务本应让平台更具粘性和便利性；同时，此前 App Runner 弃用消息泄露后又撤回也造成了混乱。"
+    },
+    {
+      "point": "尽管 AWS 推荐使用 ECS Express Mode，但许多用户正在考虑将 Google Cloud Run 作为 App Runner 的替代方案。",
+      "explanation": "社区普遍认为 Google Cloud Run 优于 AWS 上的任何容器服务，这表明 AWS 在无服务器容器领域可能存在竞争劣势。"
+    }
+  ],
+  "keyQuotes": [
+    "在一篇博客文章中同时宣布约 14 项服务和功能进入淘汰阶段，这真是个大胆的举动。",
+    "WorkMail 确实为我解决了一些在其他地方难以复制的实际问题。对我来说，它们就像是经典的引流工具——让整个 AWS 生态系统更具粘性和便利性。但 AWS 似乎低估了这一概念的价值。",
+    "Cloud Run 远超 AWS 上的任何容器服务，亚马逊竟然没有类似的产品，这实在令人尴尬。"
+  ],
+  "tags": [
+    "AWS",
+    "WorkMail",
+    "App Runner",
+    "云服务",
+    "服务弃用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 539,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777186380000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-26 06:53:00"
+}

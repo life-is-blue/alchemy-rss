@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-27 06:10:32 | [返回首页](/README.md)
+**更新时间**: 2026-04-27 08:18:19 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11522)
+- [AI & 大模型](#ai-llm) (11528)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (790)
 - [DevOps](#devops) (528)
@@ -43,7 +43,7 @@
 - [浅谈-Agent-Memory](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491772&idx=1&sn=bbbbfbe12bff30ae169d21b8d04eef65) - AI 精选
 - [AI-正在推动职场快速变革，但收益分配并不均衡](https://www.microsoft.com/en-us/research/blog/new-future-of-work-ai-is-driving-rapid-change-uneven-benefits/) - AI 精选
 
-- [查看全部 11522 篇...](/details/tags/ai-llm.md)
+- [查看全部 11528 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
