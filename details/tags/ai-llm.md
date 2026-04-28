@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-28 08:21:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-28 11:03:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4700,25 +4700,19 @@
 
 ### [Java-世界中的-MCP：为-LLM-集成带来架构策略](https://www.infoq.com/articles/mcp-java-architectural-strategy-llm-integrations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-27 11:00:00 | 标签: MCP, Java, 企业架构, LLM 集成, 防腐层
-
-> 本文认为，MCP（模型上下文协议）不仅仅是又一个集成工具，而是企业级 Java 环境中基于 LLM 的系统的一次根本性架构转变。文章将 MCP 定位为一种协议级契约，用于解耦模型与系统，从而实现松耦合、版本控制和治理。作者详细阐述了 Java SDK 如何与 JVM 生态系统实践保持一致，使团队能够在集成 LLM 的同时，保留现有的安全、可观测性和运维模式。关键的架构概念包括：将 MCP 服务器视为防腐层，暴露受控的能力而非原始 API；将 MCP 客户端视为编排器，管理上下文和交互流程。文章通过一个企业运维助手的实际案例，展示了监控、知识和工单领域的 MCP 服务器如何在协调的客户端下协同工...
+2026-04-27 11:00:00
 
 
 
 ### [Harness-不是目的，知识才是护城河-——-一个-AI-工程交付团队的知识沉淀实践](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801437&idx=1&sn=c5e13bae6cc04ef21f1ef819128e50e9)
 
-2026-04-27 09:37:00 | 标签: Harness Engineering, 知识管理, AI Agent, 工作流编排, 知识沉淀
-
-> 文章以 2026 年 AI 工程领域 Harness Engineering 热潮为背景，指出业界过度关注工作流编排而忽视了知识沉淀这一核心问题。作者团队在 AI Team 项目中实践了一套完整的知识管理体系：设计了五层存储（个人偏好、团队约定、技术知识、业务知识、项目知识）与五种知识类型（model、decision、guideline、pitfall、process）的三维正交架构，引入三级成熟度（draft、verified、proven）和自动衰减机制管理知识生命周期。文章详细阐述了团队知识库的独立 Git 仓库设计、三种角色权限、贡献暂存与异步合并机制，以及工作流如何通过 INIT ...
+2026-04-27 09:37:00
 
 
 
 ### [淘天营销中后台生码工作流最佳实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543289&idx=1&sn=235682d03ec05a63e3f31a5740bcb1dc)
 
-2026-04-27 08:16:00 | 标签: AI生码, 云端托管, 工作流编排, 跨仓库研发, 功能树
-
-> 文章详细介绍了淘天营销中后台团队在 AI 生码提效方面的系统性升级实践。团队从 S1 阶段的点状辅助演进为覆盖需求交付全链路的一体化工作流。核心路径是统一收敛至云端托管生码（基于 AoneSuper），解决了本地研发环境不一致、AK 管理难、执行易中断等问题。在工程能力建设上，构建了基于 git submodule 和 turborepo 的跨仓库工作区，以及可编排的场景化工作流，将需求理解、编码、构建发布全链路串联。针对高确定性的迁移/重构任务，采用架构说明文档+领域 Skill 固化规则；针对低确定性的日常迭代任务，引入产品功能树实现精准查表式知识供给，并通过 D2C/API 还原优化、知...
+2026-04-27 08:16:00
 
 
 
@@ -11972,41 +11966,31 @@
 
 ### [追踪已失效的-OpenAI-微软-AGI-条款历史](https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/#atom-everything)
 
-2026-04-27 18:38:17 | 标签: OpenAI, 微软, AGI, AGI 条款, 合作
-
-> Simon Willison 的这篇文章详细记录了微软与 OpenAI 合作中备受争议的 AGI 条款的存续周期。该条款规定，一旦实现 AGI，微软的知识产权权利将失效，这曾是双方原始协议的核心。Willison 追溯了该条款从 OpenAI 章程中模糊的哲学概念，演变为 2024 年报道中高达 1000 亿美元利润的财务目标。随后，他介绍了 2025 年引入的独立专家小组，以及最终在 2026 年 4 月，新协议使微软的收入分成支付不再依赖于 OpenAI 的技术进步，该条款由此宣告终结。这篇文章简洁地记录了一项 AI 安全基本原则如何在商业现实面前被逐步重新定义并最终抛弃的历史。
+2026-04-27 18:38:17
 
 
 
 ### [Google-Meet-的语音翻译功能现已向移动设备推出](https://simonwillison.net/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d/#atom-everything)
 
-2026-04-27 17:37:47 | 标签: Google Meet, 语音翻译, AI 产品, 实时翻译, 移动端
-
-> 这篇来自 Simon Willison 博客的文章报道了 Google Meet 语音翻译功能向移动设备推出的消息。该功能允许使用不同语言的两人进行对话，Meet 会翻译语音并以用户偏好的语言显示文本，甚至能模仿原说话者的声音。作者在一次会议中通过提示体验了该功能并进行了测试，发现它“勉强能用”。目前，该功能仅支持六种语言（英语、西班牙语、法语、德语、葡萄牙语和意大利语），且被描述为“非常初期的 Alpha 版本”。测试在两台笔记本电脑之间成功进行，但在 iPhone 和 iPad 之间却失败了，这凸显了其早期阶段的可靠性问题。
+2026-04-27 17:37:47
 
 
 
 ### [OpenAI-获得-FedRAMP-Moderate-授权](https://openai.com/index/openai-available-at-fedramp-moderate)
 
-2026-04-27 14:00:00 | 标签: FedRAMP, OpenAI, 政府 AI, AI 安全, GPT-5.5
-
-> OpenAI 的这份官方公告详细介绍了公司为 ChatGPT Enterprise 和 API 平台获得 FedRAMP 20x Moderate 授权的成就。这一里程碑使得美国政府机构能够在符合联邦标准的安全框架内部署 OpenAI 最先进的 AI 模型，包括 GPT-5.5。文章阐述了 FedRAMP 20x 流程的重要性，该流程在不降低严谨性的前提下，提供了一条更快速、云原生的安全授权路径。文章概述了机构现在可用的能力，例如使用 ChatGPT Enterprise 进行研究、起草和分析，以及使用 API 将 AI 功能集成到现有政府系统中。公告还提供了机构与 OpenAI 接洽的实用步...
+2026-04-27 14:00:00
 
 
 
 ### [Google-DeepMind-与韩国合作加速科学发现](https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/)
 
-2026-04-27 07:00:06 | 标签: Google DeepMind, 韩国, AI 合作, 科学发现, AI 人才
-
-> 这篇来自 Google DeepMind 的博客文章宣布，在“国家 AI 合作伙伴关系”倡议下，与大韩民国科学技术信息通信部（MSIT）建立新的合作伙伴关系。此次合作旨在支持韩国的 AI 战略，并加速生命科学、天气和气候领域的突破。关键组成部分包括：在首尔建立 AI 校园，与顶尖大学和研究机构开展合作；提供对 AlphaEvolve、AlphaGenome、AlphaFold、AI 联合科学家以及 WeatherNext 等先进 AI 模型的访问。该合作还侧重于通过实习和奖学金培养 AI 人才，并与韩国 AI 安全研究所（AISI）在 AI 安全研究方面进行合作。该公告的发布，被视为建立在十年...
+2026-04-27 07:00:06
 
 
 
 ### [微软与-OpenAI-合作的新阶段](https://openai.com/index/next-phase-of-microsoft-partnership)
 
-2026-04-27 06:00:00 | 标签: OpenAI, 微软, 合作, 云计算, AI 基础设施
-
-> 这份来自 OpenAI 的官方公告详细说明了与微软修订后的合作协议，旨在简化双方协作并提供更强的可预测性。主要变化包括：微软仍是 OpenAI 的主要云合作伙伴，并拥有在 Azure 上部署 OpenAI 产品的优先权，除非微软无法支持所需能力；OpenAI 现在可以通过任何云提供商提供其产品。微软对 OpenAI 模型和产品的知识产权许可延长至 2032 年，但变为非独占。微软将不再向 OpenAI 支付收入分成，而 OpenAI 向微软支付的收入分成将持续到 2030 年，并设有总上限。微软仍是主要股东。此次修订旨在平衡灵活性和确定性，使两家公司能够追求新的机遇，同时继续在数据中心容量、芯...
+2026-04-27 06:00:00
 
 
 
