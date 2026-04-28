@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d698c288",
+  "title": "追踪已失效的 OpenAI 微软 AGI 条款历史",
+  "url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/#atom-everything",
+  "date": "2026-04-27 18:38:17",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Apr/27/now-deceased-agi-clause/\">\n    <p class=\"mobile-date\">27th April 2026</p>\n    <p>For many years, Microsoft and OpenAI’s relationship has included a weird clause saying that, should AGI be achieved, Microsoft’s commercial IP rights to OpenAI’s technology would be null and void. That clause appeared to end today. I decided to try and track its expression over time on <a href=\"https://openai.com/\">openai.com</a>.</p>\n    <p>OpenAI, July 22nd 2019 in <a href=\"https://openai.com/index/microsoft-invests-in-and-partners-with-openai/\">Microsoft invests in and partners with OpenAI to support us building beneficial AGI</a> (emphasis mine):</p>\n    <blockquote>\n     <p>OpenAI is producing a sequence of increasingly powerful AI technologies, which requires a lot of capital for computational power. The most obvious way to cover costs is to build a product, but that would mean changing our focus. Instead, we intend to license <strong>some of our pre-AGI technologies</strong>, with Microsoft becoming our preferred partner for commercializing them.</p>\n    </blockquote>\n    <p>But what <em>is</em> AGI? The <a href=\"https://openai.com/charter/\">OpenAI Charter</a> was first published in April 2018 and has remained unchanged at least since this <a href=\"https://web.archive.org/web/20190311213352/https://openai.com/charter/\">March 11th 2019 archive.org capture</a>:</p>\n    <blockquote>\n     <p>OpenAI’s mission is to ensure that artificial general intelligence (AGI)—by which we mean highly autonomous systems that outperform humans at most economically valuable work—benefits all of humanity.</p>\n    </blockquote>\n    <p>Here’s the problem: if you’re going to sign an agreement with Microsoft that is dependent on knowing when “AGI” has been achieved, you need something a little more concrete.</p>\n    <p>In December 2024 <a href=\"https://www.theinformation.com/articles/microsoft-and-openai-wrangle-over-terms-of-their-blockbuster-partnership\">The Information reported the details</a> (summarized here outside of their paywall <a href=\"https://techcrunch.com/2024/12/26/microsoft-and-openai-have-a-financial-definition-of-agi-report/\">by TechCrunch</a>):</p>\n    <blockquote>\n     <p>Last year’s agreement between Microsoft and OpenAI, which hasn’t been disclosed, said AGI would be achieved only when OpenAI has developed systems that have the ability to generate the maximum total profits to which its earliest investors, including Microsoft, are entitled, according to documents OpenAI distributed to investors. Those profits total about $100 billion, the documents showed.</p>\n    </blockquote>\n    <p>So AGI is now whenever OpenAI’s systems are capable of generating $100 billion in profit?</p>\n    <p>In October 2025 the process changed to being judged by an “independent expert panel”. In <a href=\"https://openai.com/index/next-chapter-of-microsoft-openai-partnership/\">The next chapter of the Microsoft–OpenAI partnership</a>:</p>\n    <blockquote>\n     <p>The agreement preserves key elements that have fueled this successful partnership—meaning OpenAI remains Microsoft’s frontier model partner and Microsoft continues to have exclusive IP rights and Azure API exclusivity until Artificial General Intelligence (AGI). [...]</p>\n     <p>Once AGI is declared by OpenAI, that declaration will now be verified by an independent expert panel. [...]</p>\n     <p>Microsoft’s IP rights to research, defined as the confidential methods used in the development of models and systems, will remain until either the expert panel verifies AGI or through 2030, whichever is first.</p>\n    </blockquote>\n    <p>OpenAI on February 27th, 2026 in <a href=\"https://openai.com/index/continuing-microsoft-partnership/\">Joint Statement from OpenAI and Microsoft</a>:</p>\n    <blockquote>\n     <p><strong>AGI definition and processes are unchanged</strong>. The contractual definition of AGI and the process for determining if it has been achieved remains the same.</p>\n    </blockquote>\n    <p>OpenAI today, April 27th 2026 in <a href=\"https://openai.com/index/next-phase-of-microsoft-partnership/\">The next phase of the Microsoft OpenAI partnership</a> (emphasis mine):</p>\n    <blockquote>\n     <ul>\n      <li>Microsoft will continue to have a license to OpenAI IP for models and products through 2032. Microsoft’s license will now be non-exclusive.</li>\n      <li>Microsoft will no longer pay a revenue share to OpenAI.</li>\n      <li>Revenue share payments from OpenAI to Microsoft continue through 2030, <strong>independent of OpenAI’s technology progress</strong>, at the same percentage but subject to a total cap.</li>\n     </ul>\n    </blockquote>\n    <p>As far as I can tell “independent of OpenAI’s technology progress” is a declaration that the AGI clause is now dead. Here’s The Verge coming to the same conclusion: <a href=\"https://www.theverge.com/ai-artificial-intelligence/918981/openai-microsoft-renegotiate-contract\">The AGI clause is dead</a>.</p>\n    <p>My all-time favorite commentary on OpenAI’s approach to AGI remains this 2023 hypothetical <a href=\"https://www.bloomberg.com/opinion/articles/2023-11-20/who-controls-openai\">by Matt Levine</a>:</p>\n    <blockquote>\n     <p>And the investors wailed and gnashed their teeth but it’s true, that is what they agreed to, and they had no legal recourse. And OpenAI’s new CEO, and its nonprofit board, cut them a check for their capped return and said “bye” and went back to running OpenAI for the benefit of humanity. It turned out that a benign, carefully governed artificial superintelligence is really good for humanity, and OpenAI quickly solved all of humanity’s problems and ushered in an age of peace and abundance in which nobody wanted for anything or needed any Microsoft products. And capitalism came to an end.</p>\n    </blockquote>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9274/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 追溯了微软与 OpenAI 合作中 AGI 条款从 2019 年诞生到 2026 年被移除的完整历程，揭示了 AGI 定义如何随商业化而演变。",
+  "oneSentenceSummary": "Simon Willison 追溯了微软与 OpenAI 合作中 AGI 条款从 2019 年诞生到 2026 年被移除的完整历程，揭示了 AGI 定义如何随商业化而演变。",
+  "summary": "Simon Willison 的这篇文章详细记录了微软与 OpenAI 合作中备受争议的 AGI 条款的存续周期。该条款规定，一旦实现 AGI，微软的知识产权权利将失效，这曾是双方原始协议的核心。Willison 追溯了该条款从 OpenAI 章程中模糊的哲学概念，演变为 2024 年报道中高达 1000 亿美元利润的财务目标。随后，他介绍了 2025 年引入的独立专家小组，以及最终在 2026 年 4 月，新协议使微软的收入分成支付不再依赖于 OpenAI 的技术进步，该条款由此宣告终结。这篇文章简洁地记录了一项 AI 安全基本原则如何在商业现实面前被逐步重新定义并最终抛弃的历史。",
+  "mainPoints": [
+    {
+      "point": "AGI 条款（即实现 AGI 后微软知识产权权利失效）已从 OpenAI 与微软的合作协议中被移除。",
+      "explanation": "文章追溯了该条款从 2019 年诞生到 2026 年终结的历程，标志性事件是新协议规定微软的收入分成支付不再依赖于 OpenAI 的技术进步。"
+    },
+    {
+      "point": "合作中 AGI 的定义从哲学概念转变为财务目标。",
+      "explanation": "最初在 OpenAI 章程中，AGI 被定义为一个高度自主的系统；而 2024 年的协议据报道将其定义为能够产生 1000 亿美元利润的系统，这凸显了定义上的重大转变。"
+    },
+    {
+      "point": "在 AGI 条款最终被放弃之前，宣布 AGI 的流程演变为包含一个独立专家小组。",
+      "explanation": "2025 年，一个独立专家小组被引入以验证 AGI 声明，但 2026 年的协议通过移除该条款的触发机制，实际上使这一流程变得毫无意义。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 正在开发一系列越来越强大的 AI 技术……相反，我们计划授权部分前 AGI 技术，并让微软成为我们商业化的首选合作伙伴。",
+    "去年微软与 OpenAI 之间的协议……规定，只有当 OpenAI 开发出的系统能够为其最早期的投资者产生最大总利润时，才算实现 AGI。",
+    "OpenAI 向微软支付的收入分成将持续到 2030 年，且不依赖于 OpenAI 的技术进步，分成比例保持不变，但设有总上限。",
+    "据我所知，‘不依赖于 OpenAI 的技术进步’这一表述，宣告了 AGI 条款现已死亡。"
+  ],
+  "tags": [
+    "OpenAI",
+    "微软",
+    "AGI",
+    "AGI 条款",
+    "合作"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 667,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "BT_NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777315097000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-27 18:38:17"
+}

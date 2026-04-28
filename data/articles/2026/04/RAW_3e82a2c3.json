@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3e82a2c3",
+  "title": "Google Meet 的语音翻译功能现已向移动设备推出",
+  "url": "https://simonwillison.net/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d/#atom-everything",
+  "date": "2026-04-27 17:37:47",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">27th April 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d/\">\n    <p><strong><a href=\"https://workspaceupdates.googleblog.com/2026/04/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-devices.html\">Speech translation in Google Meet is now rolling out to mobile devices</a></strong>. I just encountered this feature via a \"try this out now\" prompt in a Google Meet meeting. It kind-of worked!</p>\n    <p>This is Google's implementation of the ultimate sci-fi translation app, where two people can talk to each other in two separate languages and Meet translates from one to the other and - with a short delay - repeats the text in your preferred language, with a rough imitation of the original speaker's voice.</p>\n    <p>It can only handle English, Spanish, French, German, Portuguese, and Italian at the moment. It's also still very alpha - I ran it successfully between two laptops running web browsers, but then when I tried between an iPhone and an iPad it didn't seem to work.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9431/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google Meet 的语音翻译功能，一种科幻般的实时语言翻译工具，现已向移动设备推出，不过仍处于早期 Alpha 阶段，语言支持和可靠性有限。",
+  "oneSentenceSummary": "Google Meet 的语音翻译功能，一种科幻般的实时语言翻译工具，现已向移动设备推出，不过仍处于早期 Alpha 阶段，语言支持和可靠性有限。",
+  "summary": "这篇来自 Simon Willison 博客的文章报道了 Google Meet 语音翻译功能向移动设备推出的消息。该功能允许使用不同语言的两人进行对话，Meet 会翻译语音并以用户偏好的语言显示文本，甚至能模仿原说话者的声音。作者在一次会议中通过提示体验了该功能并进行了测试，发现它“勉强能用”。目前，该功能仅支持六种语言（英语、西班牙语、法语、德语、葡萄牙语和意大利语），且被描述为“非常初期的 Alpha 版本”。测试在两台笔记本电脑之间成功进行，但在 iPhone 和 iPad 之间却失败了，这凸显了其早期阶段的可靠性问题。",
+  "mainPoints": [
+    {
+      "point": "Google Meet 的语音翻译功能现已向移动设备推出。",
+      "explanation": "该功能可实现使用不同语言的两人之间的实时翻译，显示翻译文本并模仿声音，现正从桌面端扩展至移动平台。"
+    },
+    {
+      "point": "该功能仍处于早期 Alpha 阶段，能力有限。",
+      "explanation": "目前仅支持六种语言，且存在可靠性问题，作者在笔记本电脑间测试成功后，iPhone 与 iPad 间的测试却失败了。"
+    },
+    {
+      "point": "作者的亲测显示该功能“勉强能用”。",
+      "explanation": "这次实践体验真实展现了该技术的当前状态，既突出了其潜力，也暴露了现有局限。"
+    }
+  ],
+  "keyQuotes": [
+    "我刚刚在 Google Meet 会议中通过一个“立即试用”的提示遇到了这个功能。它勉强能用！",
+    "这是 Google 对终极科幻翻译应用的实现，两个人可以用两种不同的语言交谈，Meet 在两者之间进行翻译。",
+    "目前它只能处理英语、西班牙语、法语、德语、葡萄牙语和意大利语。而且它仍然非常初期。"
+  ],
+  "tags": [
+    "Google Meet",
+    "语音翻译",
+    "AI 产品",
+    "实时翻译",
+    "移动端"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 137,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777311467000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-27 17:37:47"
+}
