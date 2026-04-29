@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-29 11:02:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-29 13:04:55 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -33449,11 +33449,11 @@
 
 
 
-### [构建-Claude-Code-的经验：我们如何使用-Skills](https://baoyu.io/translations/2026-03-17/claude-code-skills-lessons)
+### [被美国遣返、禁止入境-5-年，他在温哥华的卧室里做出了日处理-400-万工作流的-AI-平台](https://baoyu.io/blog/gumloop-max-interview)
 
-2026-03-17T00:00:00.000Z
+2026-03-18T00:00:00.000Z
 
-> Anthropic 内部团队分享 Claude Code Skills 的实战经验：9 大 Skills 类型分类、编写技巧和团队分发策略。
+> 被遣返的微软工程师在温哥华卧室里创业，做出日处理 400 万工作流的 AI 自动化平台 Gumloop，刚拿下 Benchmark 领投的 5000 万美元 B 轮。
 
 
 
