@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-29 08:24:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-29 11:02:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -650,9 +650,7 @@
 
 ### [滚动驱动动画-•-Josh-W.-Comeau](https://www.joshwcomeau.com/animation/scroll-driven-animations/)
 
-2026-04-28 12:00:00 | 标签: CSS, 滚动驱动动画, Animation Timeline API, 前端开发, Web 动画
-
-> 这篇由 Josh W. Comeau 撰写的博客文章，深入讲解了新的 CSS Animation Timeline API，该 API 允许开发者使用原生 CSS 创建滚动驱动动画。其核心概念是用基于滚动的 `animation-timeline`（如 `view()` 或 `scroll()`）取代传统基于时间的 `animation-duration`。文章涵盖了关键特性，包括定时函数、动画范围（`cover`、`contain`、`entry`、`exit`）、用于精确控制的百分比范围、用于整体页面进度指示器的滚动进度时间线，以及用于根据一个元素的滚动位置来驱动另一个元素动画的链接时间线...
+2026-04-28 12:00:00
 
 
 
