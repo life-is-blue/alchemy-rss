@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-30 08:24:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-30 11:03:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -650,25 +650,19 @@
 
 ### [VoidZero-实验性-Oxc-Angular-编译器实现高达-20-倍构建性能提升](https://www.infoq.com/news/2026/04/angular-compiler-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-29 15:32:00 | 标签: Angular, Oxc, Rust, 构建性能, Vite
-
-> VoidZero，即 Vite 和 Oxc JavaScript 工具链背后的公司，发布了一款用 Rust 编写的实验性 Angular 编译器，相比现有的 Angular CLI 编译器，显著提升了构建性能。该编译器基于 VoidZero 的 Oxc 基础设施构建，并作为一流的 Vite 插件提供，支持完整的模块热替换（HMR）功能。根据基准测试，该编译器在 Super Productivity 代码库上比 Angular CLI 快 6.4 倍，在 Bitwarden 的开源代码库上比使用 @ngtools/webpack 的 Webpack 快 20.7 倍。性能提升源于根本性的架构差异...
+2026-04-29 15:32:00
 
 
 
 ### [如何使用-GitHub-Actions-CI/CD-将全栈-Next.js-应用部署到-Cloudflare-Workers](https://www.freecodecamp.org/news/how-to-deploy-a-full-stack-next-js-app-on-cloudflare-workers-with-github-actions-ci-cd/)
 
-2026-04-29 14:23:26 | 标签: Next.js, Cloudflare Workers, 部署, CI/CD, GitHub Actions
-
-> 本文是一份实用的操作手册，面向希望将集成 Supabase 的全栈 Next.js（App Router）应用部署到 Cloudflare Workers 的开发者。文章首先对比了 Cloudflare Workers 与 Vercel，突出了其在全球延迟、冷启动和成本效率方面的优势，同时也指出了缺乏完整 Node.js 环境等权衡。指南的核心部分提供了详细且可执行的步骤：安装 `@opennextjs/cloudflare` 适配器、使用 `.dev.vars` 和 `next.config.mjs` 配置开发环境、从本地机器部署以及安全管理密钥。文章用大量篇幅介绍了如何设置一个健壮的 Gi...
+2026-04-29 14:23:26
 
 
 
 ### [如何使用-Next.js、Express-和-Prisma-构建多租户-SaaS-平台](https://www.freecodecamp.org/news/how-to-build-a-multi-tenant-saas-platform-with-next-js-express-and-prisma/)
 
-2026-04-29 14:21:24 | 标签: Next.js, Express, Prisma, 多租户, SaaS
-
-> 这份全面的教程将引导开发者从零开始构建一个多租户 SaaS 平台。它涵盖了完整的架构：用于租户和模板管理的 Express + Prisma 后端、包含用户注册落地页的 Next.js 前端，以及一个关键的 Next.js 中间件层，用于处理基于子域名的路由。该平台允许每个用户创建个性化的作品集网站，并通过自己的子域名（例如 `name.localhost:3000`）进行访问。教程解释了多租户的核心概念，详细介绍了用于租户、模板和文章的 Prisma 数据模型，并提供了 Express API、Next.js 落地页以及动态租户作品集页面的完整代码。它强调采用 JSON 驱动的模板系统，以便...
+2026-04-29 14:21:24
 
 
 

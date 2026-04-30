@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-30 08:24:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-30 11:03:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -500,33 +500,25 @@
 
 ### [如何将-Go-应用容器化-–-完整的分步指南](https://www.freecodecamp.org/news/how-to-dockerize-a-go-application-full-step-by-step-walkthrough/)
 
-2026-04-29 18:05:56 | 标签: Docker, Go, Docker Compose, 容器化, DevOps
-
-> 本教程引导初学者完成将 Go 应用 Docker 化的全过程。它首先通过一个简单的类比解释了 Docker、镜像和容器的核心概念。接着，指南详细介绍了为 Go 应用创建 Dockerfile 的步骤，涵盖了 FROM、WORKDIR、COPY、RUN 和 CMD 等指令。随后，教程深入到 Docker Compose，演示了如何定义和编排多个相互连接的服务：Go 应用、MySQL 数据库和 phpMyAdmin。文章解释了关键的 Docker Compose 配置，如服务、网络、数据卷、环境变量和端口映射。教程最后展示了如何构建并运行整个多容器应用，并强调 Docker 使得应用能够在不同环境...
+2026-04-29 18:05:56
 
 
 
 ### [支撑-Wise-的技术栈](https://blog.bytebytego.com/p/the-tech-stack-powering-wise)
 
-2026-04-29 15:31:30 | 标签: Wise, 技术栈, 微服务, Kubernetes, Spinnaker
-
-> 本文探讨了 Wise 背后的全面技术栈和工程文化，这家公司每季度跨境转移 360 亿英镑。文章详细介绍了 Wise 如何通过微服务底座框架（以版本化制品形式交付）以及一系列内部 Gradle 插件来标准化开发。部署策略方面，重点是从 Octopus 迁移到 Spinnaker，实现了自动金丝雀分析，在 2024 年阻止了数百起生产事故。基础设施层由计算运行时平台（CRP）管理，该平台基于 Kubernetes 重建，使用了 RKE2、Helm 和 ArgoCD。文章还涵盖了 Wise 的数据架构，使用 Kafka 进行实时数据移动，基于 S3 和 Apache Iceberg 构建数据湖，并通...
+2026-04-29 15:31:30
 
 
 
 ### [AWS-Interconnect-正式可用，提供托管多云与最后一公里连接](https://www.infoq.com/news/2026/04/aws-interconnect-multicloud-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-29 09:13:00 | 标签: AWS, 多云, 云网络, AWS Interconnect, Google Cloud
-
-> AWS 宣布 AWS Interconnect 正式可用，这是一项托管私有连接服务，具备两大核心功能。多云功能提供 AWS VPC 与其他云提供商之间的三层私有连接，上线初期支持 Google Cloud，并计划于 2026 年晚些时候支持 Microsoft Azure 和 Oracle Cloud Infrastructure。最后一公里功能通过参与的网络提供商，简化了从分支机构、数据中心和远程位置到 AWS 的高速私有连接。此前，跨云提供商连接工作负载需要管理 VPN 隧道、与托管设施协作以及配置第三方网络架构，这一过程可能需要数周或数月。借助 Interconnect 多云功能，通过 ...
+2026-04-29 09:13:00
 
 
 
 ### [Amazon-CloudWatch-推出-OpenTelemetry-指标支持预览版](https://www.infoq.com/news/2026/04/cloudwatch-opentelemetry-metrics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-29 06:53:00 | 标签: Amazon CloudWatch, OpenTelemetry, 可观测性, PromQL, AWS
-
-> AWS 宣布 Amazon CloudWatch 公开预览 OpenTelemetry 指标支持，允许开发者通过 OpenTelemetry 协议（OTLP）直接发送指标，无需转换或截断。该功能引入了一个高基数指标存储，每个指标支持多达 150 个标签，并自动丰富 AWS 资源元数据，如账户 ID、区域和标签。团队可以在 CloudWatch 控制台中使用 PromQL 查询这些指标，并在 Kubernetes 和本地系统等环境中构建仪表板和告警。这完成了 CloudWatch 对 OpenTelemetry 在追踪、日志和现在指标方面的支持。社区反响积极，但也有人对长期成本和基数定价表示担忧...
+2026-04-29 06:53:00
 
 
 
