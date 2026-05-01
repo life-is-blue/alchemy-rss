@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-01 06:18:45 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-01 08:24:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -9,6 +9,14 @@
 ### [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025)
 
 2025-04-01 20:05:02
+
+
+
+### [DPoP-存储悖论：为什么基于浏览器的持有证明仍然是一个未解决的问题](https://www.infoq.com/articles/dpop-key-storage-unsolved-problem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-04-30 09:00:00 | 标签: DPoP, OAuth 2.0, Web 安全, XSS, BFF 模式
+
+> 本文探讨了基于浏览器的 DPoP（RFC 9449）实现中的一个关键安全漏洞：虽然该协议将令牌绑定到客户端密钥对，但并未指定密钥的存储方式。作者证明，将私钥作为不可提取的 CryptoKey 存储在 IndexedDB 中并不能阻止 XSS 攻击，因为攻击者可以调用 `crypto.subtle.sign()` 来伪造 DPoP 证明，而无需提取密钥。这种“预言机攻击”在 IETF 自身的安全考虑中已有记载。文章评估了当前行业标准——后端即前端（BFF）模式，该模式将密钥材料移至服务器端，从而同时防止了预言机攻击和新鲜令牌获取攻击。对于无法使用 BFF 的场景（例如浏览器扩展、嵌入式小部件），...
 
 
 
@@ -366,7 +374,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -378,7 +386,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 

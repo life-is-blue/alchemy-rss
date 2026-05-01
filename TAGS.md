@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-01 06:18:45 | [返回首页](/README.md)
+**更新时间**: 2026-05-01 08:24:32 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11605)
+- [AI & 大模型](#ai-llm) (11626)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (794)
+- [前端与全栈](#frontend-fullstack) (795)
 - [DevOps](#devops) (533)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5592)
+- [其他](#other) (5605)
 
 
 ---
@@ -43,7 +43,7 @@
 - [万字综述-Harness-革命！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247721825&idx=1&sn=b3415031a3bad0026f9e09a3a2b81cb6) - AI 精选
 - [你的-ReAct-智能体正在浪费-90%-的重试机会——以下是解决方法](https://towardsdatascience.com/your-react-agent-is-wasting-90-of-its-retries-heres-how-to-stop-it/) - AI 精选
 
-- [查看全部 11605 篇...](/details/tags/ai-llm.md)
+- [查看全部 11626 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -80,6 +80,7 @@
 
 
 - [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025) - AI 精选
+- [DPoP-存储悖论：为什么基于浏览器的持有证明仍然是一个未解决的问题](https://www.infoq.com/articles/dpop-key-storage-unsolved-problem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [TypeScript-6.0-发布公告---TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0) - 编程 精选
 - [【第-3636-期】深度解读：React-+-Next.js-打造高性能-Web-应用的实战经验](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278350&idx=1&sn=b0ed516b541595cacb1742bf2aa5aedd) - 编程 精选
 - [【第-3629-期】2025-版现代-Node.js-开发模式](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278227&idx=1&sn=15f7d73db285cdb284e2a5bfd0aee702) - 编程 精选
@@ -98,9 +99,8 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
-- [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 794 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 795 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5592 篇...](/details/tags/other.md)
+- [查看全部 5605 篇...](/details/tags/other.md)
 
 

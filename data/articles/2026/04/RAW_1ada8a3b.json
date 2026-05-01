@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1ada8a3b",
+  "title": "我们需要 RSS 来分享大量由 Vibe Coding 生成的应用程序",
+  "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
+  "date": "2026-04-30 18:38:48",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th April 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://interconnected.org/home/2026/04/29/syndicating-vibes\">We need RSS for sharing abundant vibe-coded apps</a></strong>. Matt Webb:</p>\n    <blockquote>\n     <p>I would love an RSS web feed for all those various tools and apps pages, each item with an “Install” button. (But install to where?)</p>\n     <p>The lesson here is that when vibe-coding accelerates app development, apps become more personal, more situated, and more frequent. Shipping a tool or a micro-app is less like launching a website and more like posting on a blog.</p>\n    </blockquote>\n    <p>This inspired me to <a href=\"https://github.com/simonw/simonwillisonblog/pull/665\">have Claude</a> add an Atom feed (and icon) to my <a href=\"https://simonwillison.net/elsewhere/tool/\">/elsewhere/tools/</a> page, which itself is populated by content from my <a href=\"https://tools.simonwillison.net/\">tools.simonwillison.net</a> site.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Matt Webb 提议为日益增长的、个人化的、由 Vibe Coding 生成的微型应用建立一个类似 RSS 的聚合订阅源，而 Simon Willison 则在自己的工具页面上实现了这一想法。",
+  "oneSentenceSummary": "Matt Webb 提议为日益增长的、个人化的、由 Vibe Coding 生成的微型应用建立一个类似 RSS 的聚合订阅源，而 Simon Willison 则在自己的工具页面上实现了这一想法。",
+  "summary": "本文重点介绍了 Matt Webb 的一篇博文，该文指出了在大量由 Vibe Coding 生成的应用程序时代面临的一个关键挑战：可发现性和分发。Webb 认为，随着 AI 辅助编码（Vibe Coding）使应用开发变得更快、更个性化，这些微工具变得更像博文，而非传统网站。他提议为这些应用建立一个 RSS 风格的网络订阅源，允许用户订阅并轻松安装新工具。本文作者 Simon Willison 立即将这个想法付诸实践，在他自己策划的工具列表中添加了一个 Atom 订阅源，展示了这一概念的实际应用。这篇文章是 AI 编码领域快速、社区驱动创新的一个简洁例证。",
+  "mainPoints": [
+    {
+      "point": "Vibe Coding 创造了一类新的、个人化的、大量的微型应用，它们需要一种新的分发模式。",
+      "explanation": "AI 辅助编码的便利性催生了许多小型、个人化的工具，但它们缺乏像传统网站或应用那样被分享和发现的标准方式。"
+    },
+    {
+      "point": "一个类似 RSS 的订阅源被提议作为这些由 Vibe Coding 生成的应用程序的理想聚合机制。",
+      "explanation": "正如 RSS 允许用户订阅博文一样，一个类似的应用订阅源将使用户能够发现并安装新创建的工具，将每个应用视为一篇博文。"
+    },
+    {
+      "point": "该概念通过 Simon Willison 工具页面上的实际实现立即得到了验证。",
+      "explanation": "Simon Willison 在他策划的工具列表中添加了一个 Atom 订阅源，表明这个想法不仅是理论上的，而且可以快速有效地实现。"
+    }
+  ],
+  "keyQuotes": [
+    "我非常希望有一个针对所有这些各种工具和应用页面的 RSS 网络订阅源，每个条目都带有一个“安装”按钮。",
+    "这里的教训是，当 Vibe Coding 加速了应用开发，应用就变得更加个人化、更具情境性、也更加频繁。",
+    "发布一个工具或微型应用，与其说像是启动一个网站，不如说更像是发布一篇博文。"
+  ],
+  "tags": [
+    "Vibe Coding",
+    "RSS",
+    "微型应用",
+    "AI 辅助开发",
+    "软件分发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 105,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777574328000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-30 18:38:48"
+}
