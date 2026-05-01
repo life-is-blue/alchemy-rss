@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-01 08:24:32 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-01 11:03:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4712,17 +4712,13 @@
 
 ### [长时间运行的智能体](https://addyo.substack.com/p/long-running-agents)
 
-2026-04-30 14:30:29 | 标签: 长时间运行智能体, AI 智能体, 智能体架构, Anthropic, Cursor
-
-> 文章指出，将 AI 智能体视为单次会话聊天循环的主流范式已达上限，下一个前沿是能够持续运行数小时、数天甚至数周的长时间运行智能体。文章识别出三个根本性障碍：有限的上下文窗口、跨会话缺乏持久状态，以及模型无法可靠地进行自我验证。随后，作者详细调研了主要参与者如何解决这些问题。Anthropic 的方法通过其 harness 设计和托管智能体中的“大脑/双手/会话”解耦来详细阐述。Cursor 的解决方案采用规划者/执行者/评判者架构，将不同模型分配给不同角色。Google 的 Gemini Enterprise Agent Platform 通过 Agent Runtime、Agent Sess...
+2026-04-30 14:30:29
 
 
 
 ### [RAG-已死？不，是-Grep-回归了！](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695473&idx=1&sn=517ef2bad8a85f2f31c1ef309c1eae76)
 
-2026-04-30 00:46:00 | 标签: RAG, Claude Code, Grep, 代码搜索, AI Agent
-
-> 本文围绕「RAG 已死」这一行业热议话题，以 Claude Code 的源码拆解为核心，系统分析了 AI Agent 时代代码搜索架构的演进。文章首先指出 Claude Code 和 Codex 等前沿产品已放弃传统 RAG（预索引 + embedding + 向量库），转而采用 LLM 驱动的 Grep 多轮循环搜索。作者基于泄露的 Claude Code 源码，详细拆解了其搜索循环机制，包括 GrepTool、GlobTool、FileReadTool、AgentTool 等核心工具的设计，以及 GrepTool 的三种输出模式（files_with_matches、content、cou...
+2026-04-30 00:46:00
 
 
 
@@ -12030,153 +12026,115 @@
 
 ### [史上最大的资本错配？](https://garymarcus.substack.com/p/the-greatest-capital-misallocation)
 
-2026-04-30 20:37:42 | 标签: AI 基础设施, 资本错配, Gary Marcus, AI 炒作, 科技投资
-
-> 著名 AI 批评家 Gary Marcus 认为，当前对 AI 基础设施的巨额投资（今年可能达到 7000 亿美元）是历史上最大的资本错配。他指出，自己长期以来在技术和经济方面的警告，如今在 MarketWatch 和 Last Week Tonight 等主流媒体上获得了关注，这证明怀疑情绪终于开始抬头。文章认为，炒作周期导致了非理性的繁荣，企业将巨额资金投入基础设施，但鉴于当前 AI 技术的局限性，这些投入可能无法带来相应的回报。Marcus 的核心论点是，这场支出狂潮不可持续，并且很可能导致一次重大调整，因为 AI 所承诺的回报无法达到预期的规模。
+2026-04-30 20:37:42
 
 
 
 ### [我们需要-RSS-来分享大量由-Vibe-Coding-生成的应用程序](https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything)
 
-2026-04-30 18:38:48 | 标签: Vibe Coding, RSS, 微型应用, AI 辅助开发, 软件分发
-
-> 本文重点介绍了 Matt Webb 的一篇博文，该文指出了在大量由 Vibe Coding 生成的应用程序时代面临的一个关键挑战：可发现性和分发。Webb 认为，随着 AI 辅助编码（Vibe Coding）使应用开发变得更快、更个性化，这些微工具变得更像博文，而非传统网站。他提议为这些应用建立一个 RSS 风格的网络订阅源，允许用户订阅并轻松安装新工具。本文作者 Simon Willison 立即将这个想法付诸实践，在他自己策划的工具列表中添加了一个 Atom 订阅源，展示了这一概念的实际应用。这篇文章是 AI 编码领域快速、社区驱动创新的一个简洁例证。
+2026-04-30 18:38:48
 
 
 
 ### [如何在-ComfyUI-中构建、运行和扩展高质量创作者工作流](https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui/)
 
-2026-04-30 16:18:01 | 标签: ComfyUI, 生成式 AI, NVIDIA RTX, 图像分解, 修复
-
-> 这篇 NVIDIA 技术博客为创意和可视化团队提供了一份全面的实践指南，指导他们使用 ComfyUI 来利用生成式 AI。ComfyUI 是一个开源的、基于节点的工具，可在本地 NVIDIA RTX GPU 上运行。该指南详细介绍了 NVIDIA GenAI Creator Toolkit 中的三个生产级工作流：将图像分解为带有 Alpha 蒙版的前景、中景和背景图层；使用智能修复从照片中移除不需要的对象；以及将单张 2D 照片转换为带纹理的 3D 模型（GLB 格式）。每个工作流都以预构建的节点图形式呈现，用户只需极少的设置即可加载并运行。文章涵盖了硬件和软件前提条件、分步安装过程、每个工作...
+2026-04-30 16:18:01
 
 
 
 ### [借助-NVIDIA-TensorRT-for-RTX-运行时加速-Unreal-Engine-NNE-推理](https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime/)
 
-2026-04-30 16:13:12 | 标签: Unreal Engine, NVIDIA TensorRT, 神经网络引擎, 实时图形, AI 推理
-
-> 这篇 NVIDIA 技术博客详细介绍了新插件 NNERuntimeTRT 的集成方法与性能优势。该插件将 NVIDIA TensorRT for RTX 作为 Unreal Engine 5 神经网络引擎（NNE）的一个运行时选项。文章指出，NNE 是 UE5 中神经网络推理的抽象层，支持多种后端。全新的 TensorRT for RTX 插件利用即时（JIT）优化器，根据用户特定的 RTX GPU 定制推理引擎，相比 DirectML 等其他 GPU 运行时提供了更高的吞吐量。作者提供了实用的分步指南，用于设置一个在后期处理中应用风格迁移模型的示例 UE5 项目。该指南包括修改引擎源代码以注...
+2026-04-30 16:13:12
 
 
 
 ### [利用-AI-智能体实现-GPU-内核自动翻译：从-cuTile-Python-到-cuTile.jl](https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl/)
 
-2026-04-30 15:55:12 | 标签: GPU 内核, cuTile, Julia, Python, AI 智能体
-
-> 这篇 NVIDIA 技术博客文章详细介绍了一个项目，该项目使用 AI 智能体工作流，将 cuTile Python 编写的 GPU 内核移植到 cuTile.jl（Julia）。核心挑战并非翻译本身的概念难度，而是两种 DSL 之间大量表面上的语义差异，例如 0 基索引与 1 基索引、隐式广播与显式广播、行优先与列优先内存布局。任何一个细节的遗漏，比如将 `ct.bid(0)` 误写为 `ct.bid(1)`，都可能导致静默数据损坏。文章通过翻译三个内核——向量加法、矩阵乘法和 Softmax——逐步说明了具体的陷阱。主要成果是一个可复用的“技能”目录（`.claude/skills/conv...
+2026-04-30 15:55:12
 
 
 
 ### [Proxy-Pointer-RAG：无需多模态嵌入的多模态问答](https://towardsdatascience.com/proxy-pointer-rag-multimodal-answers-without-multimodal-embeddings/)
 
-2026-04-30 15:00:00 | 标签: RAG, 多模态 RAG, Proxy-Pointer, 文档结构, 信息检索
-
-> 本文探讨了构建企业级聊天机器人的挑战，这类机器人需要从源文档中可靠地返回图像以及文本响应。文章指出，传统的 RAG 方法之所以失败，是因为它们基于碎片化的片段进行操作，破坏了将图像与其上下文关联所需的语义连贯性。作者引入了 Proxy-Pointer 多模态 RAG，这是一个开源的管道，它将文档视为语义块的层次树。通过按章节边界进行分块、注入结构线索并检索完整章节，该系统允许 LLM 基于完整的章节上下文选择相关图像。这种方法不需要多模态嵌入，仅依赖文本嵌入和 LLM 进行推理。该管道包括噪声过滤、锚点感知的结构重排序以及可选的视觉过滤器。在包含 270 张图像的 5 篇 AI 研究论文上测试...
+2026-04-30 15:00:00
 
 
 
 ### [AI-协同临床医生：探索-AI-增强医疗之路](https://deepmind.google/blog/ai-co-clinician/)
 
-2026-04-30 14:57:51 | 标签: AI 协同临床医生, 医疗 AI, 三方医疗, 多模态 AI, 医疗保健
-
-> 这篇来自 Google DeepMind 的博文介绍了 AI 协同临床医生研究计划，这是一种名为“三方医疗”的新型医疗服务模式，其中 AI 智能体在医生的临床权威下与患者互动。该研究建立在 MedPaLM 和 AMIE 等先前工作的基础上，并聚焦于两个关键领域：增强临床医生能力和研究面向患者的功能。在临床医生支持方面，AI 协同临床医生使用 NOHARM 框架对 98 个现实初级保健查询进行了评估，结果显示在 97 个案例中未出现严重错误，并且优于领先的证据综合工具。它还在 OpenFDA RxQA 基准测试中展现出显著进步，尤其是在开放式用药问题上。在面向患者的研究方面，团队在模拟远程医疗环...
+2026-04-30 14:57:51
 
 
 
 ### [刚刚，DeepSeek-最新成果，节前发布！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247722411&idx=1&sn=bdec00adace587c9737956cd7554bdb4)
 
-2026-04-30 13:08:00 | 标签: DeepSeek, 多模态, 视觉原语, 思维链, V4-Flash
-
-> 本文报道了 DeepSeek 在五一节前联合北大、清华发布的最新多模态研究成果。文章指出，当前多模态模型在复杂视觉任务（如密集计数、迷宫导航）上的瓶颈并非感知能力不足，而是引用差距——自然语言无法精确锚定视觉实体。DeepSeek 的解决方案是在模型的思维链中插入 bounding box 和 point 坐标 token，让模型一边推理一边「指」出视觉位置。模型基于 V4-Flash 架构（284B 总参、13B 激活），通过极致 token 压缩（端到端 7056 倍）将视觉 KV cache 占用降至极低水平。训练采用五段式流水线：cold-start 分别训练 box 和 point ...
+2026-04-30 13:08:00
 
 
 
 ### [使用-LLM-作为评判者的强化微调-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-with-llm-as-a-judge/)
 
-2026-04-30 12:07:25 | 标签: 强化微调, LLM 作为评判者, RLAIF, Amazon Nova, AWS Lambda
-
-> 这篇 AWS 机器学习博客文章详细介绍了一种使用 LLM 作为评判者（RLAIF）进行强化微调（RFT）的实用方法。文章将其与通用 RFT 和可验证奖励（RLVR）进行了对比，突出了 LLM 评判者的灵活性和细致反馈。文章的核心是一个六步实施指南，涵盖评判者架构选择（基于规则 vs. 基于偏好）、评估标准定义、评判模型选择、提示优化、与生产指标对齐，以及构建稳健的奖励 Lambda 函数。一个关于自动化法律合同审查的详细案例研究展示了整个工作流程，从使用代码示例定义复合奖励函数，到部署具有 IAM 权限和预置并发的 Lambda 函数。结果表明，使用 Amazon Nova 2 Lite 的 ...
+2026-04-30 12:07:25
 
 
 
 ### [为什么-AI-工程师正从-LangChain-转向原生智能体架构](https://towardsdatascience.com/why-ai-engineers-are-moving-beyond-langchain-to-native-agent-architectures/)
 
-2026-04-30 12:00:00 | 标签: LangChain, 智能体架构, LLM, 生产级 AI, 抽象债务
-
-> 本文批判性地审视了使用 LangChain 这类高级编排框架构建 LLM 驱动应用时的权衡取舍。文章承认 LangChain 在加速初始原型开发、降低 LLM 开发门槛方面具有价值。然而，文章指出，这些带来速度的抽象层在生产环境中会积累显著的“抽象债务”。作者指出了四个关键失败点：不透明的调试、有限的可观测性、复杂的多智能体状态管理以及累积的延迟开销。提出的替代方案“原生智能体架构”要求将编排逻辑、状态管理和工具调用直接编写为团队拥有的代码。这种方法用前期的开发速度换取长期的清晰度、控制力和可靠性。文章总结道，框架与原生架构之间的选择并非绝对，而是取决于项目所处的阶段。框架适用于快速原型开发和...
+2026-04-30 12:00:00
 
 
 
 ### [Stripe-发布-288-项新功能，构建-AI-时代的经济基础设施](https://www.qbitai.com/2026/04/412018.html)
 
-2026-04-30 09:16:56 | 标签: Stripe, AI 经济基础设施, 智能体支付, 流式支付, 风控系统
-
-> 本文报道了 Stripe 在 Stripe Sessions 2026 上发布的 288 项新产品和功能。核心内容包括：与 Google 合作，允许企业在 AI Mode 和 Gemini 应用内销售；推出 Streaming Payments，结合 Metronome 追踪和 Tempo 区块链稳定币微支付，实现按 token 消耗实时计费；扩展 Radar 风控系统，新增对 token 盗用的防护；推出全新的 Stripe Treasury 全球企业账户，支持多币种持有和全天候资金调度；联合 Privy 推出 Digital Asset Accounts，简化稳定币金融产品构建；以及正式开...
+2026-04-30 09:16:56
 
 
 
 ### [「生物信息学」评测，Claude-反超人类专家](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247516536&idx=1&sn=8a900b75edd30b8b15af41a91692682d)
 
-2026-04-30 09:11:00 | 标签: Claude, Anthropic, BioMysteryBench, 生物信息学, AI 评测
-
-> 本文详细解读了 Anthropic 最新发布的 BioMysteryBench 生物信息学评测集及其评估结果。该评测集旨在解决生物学科研评估的三大难点：问题解法多样、研究决策主观、以及大量问题人类自身也无法解答。评测集包含 99 道题目，其中 76 道被人类专家视为可解，23 道为人类难题。结果显示，Claude Opus 4.6 及后续模型在人类可解题上已追平甚至超越专家平均水平（Mythos 达 82.6%）。更引人注目的是，在人类专家全部答错的 23 道难题上，Claude Mythos 取得了 29.6% 的准确率。文章深入分析了 Claude 的两种主要解题策略：一是直接调用内部知识...
+2026-04-30 09:11:00
 
 
 
 ### [AWS-生成式-AI-模型敏捷性解决方案：将-LLM-迁移至生成式-AI-生产的全面指南-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/aws-generative-ai-model-agility-solution-a-comprehensive-guide-to-migrating-llms-for-generative-ai-production/)
 
-2026-04-30 09:04:41 | 标签: LLM 迁移, Amazon Bedrock, 提示词优化, 模型评估, 生成式 AI
-
-> 这篇 AWS 机器学习博客文章提出了一个全面的三步框架，用于生成式 AI 生产环境中的 LLM 迁移与升级。该解决方案设计为通用且具体、自动化且可扩展，同时应对技术与非技术挑战。它详细阐述了评估源模型、使用 Amazon Bedrock Prompt Optimization 和 Anthropic Metaprompt 等工具迁移并优化提示词，以及评估目标模型的过程。文章提供了关于数据集准备、评估指标选择（包括 Ragas 和 DeepEval 等框架的预定义指标以及自定义指标）以及模型选择标准的详尽指导。它强调采用数据驱动的方法，使用成本、延迟和质量的可量化指标，并包含实际实施步骤、代码示...
+2026-04-30 09:04:41
 
 
 
 ### [在-Amazon-SageMaker-上通过-Amazon-Athena-和-Amazon-Quick-释放智能体-AI-分析的力量-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick/)
 
-2026-04-30 08:52:40 | 标签: AWS, Amazon SageMaker, Amazon Athena, Amazon Quick Sight, 智能体 AI
-
-> 这篇 AWS 机器学习博客文章详细介绍了一种利用智能体 AI 实现数据分析民主化的解决方案。它演示了如何使用 TPC-H 基准数据在 AWS 上构建湖仓一体，利用 Amazon S3 进行存储、AWS Glue 进行编目，以及 Amazon Athena 对多种格式（CSV、Apache Iceberg Parquet 和 Amazon S3 Tables）进行无服务器 SQL 查询。该解决方案的核心是与 Amazon Quick Sight 的集成，数据集被导入到 SPICE 内存引擎中以实现快速性能。文章提供了详细的分步指南，涵盖数据准备、数据集创建、SPICE 数据摄取、通过自定义 SQ...
+2026-04-30 08:52:40
 
 
 
 ### [配置-Amazon-Bedrock-AgentCore-Gateway-以安全访问私有资源-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources/)
 
-2026-04-30 08:32:43 | 标签: Amazon Bedrock, AgentCore Gateway, VPC 出站, MCP 服务器, 私有 API
-
-> 这篇 AWS 机器学习博客文章提供了配置 Amazon Bedrock AgentCore Gateway 的全面指南，用于安全访问 VPC 内的私有资源，而无需将流量暴露到公共互联网。文章介绍了两种实现模式：托管 VPC 资源模式，由 AgentCore 自动处理网络基础设施；以及自托管 Lattice 资源模式，提供更高的控制权和跨账户能力。文章定义了资源 VPC、资源网关和资源配置等关键术语，并解释了涉及弹性网络接口（ENI）的底层架构。随后，文章提供了三个实际场景的逐步操作指南：连接到私有 Amazon API Gateway 端点、与运行在 Amazon EKS 上的模型上下文协议（...
+2026-04-30 08:32:43
 
 
 
 ### [阿里发布数字员工产品-QoderWake，可承担工程师、运营、销售等岗位角色](https://www.qbitai.com/2026/04/411955.html)
 
-2026-04-30 07:24:29 | 标签: QoderWake, 数字员工, 阿里, AI Agent, Harness-First 架构
-
-> 阿里于 4 月 30 日发布两款 Agent 产品：QoderWake 和 Qoder 移动端。QoderWake 定位为业界首个安全可控、持续进化的生产级数字员工产品，采用创新的 Harness-First 架构，能够在执行任务后将经验沉淀到记忆、技能、策略、验证规则和工作流五个维度，解决通用 Agent 做完即忘的问题。该产品还内置防腐机制，可自动淘汰过时经验、合并冲突、撤回失效策略，确保越用越准。目前 QoderWake 已上线「数字程序员」角色，在阿里内部实现了反馈分类、日志分析、根因定位和自动生成修复代码等全流程无人值守工作，将单条问题根因分析耗时从 30 分钟缩短至 2 分钟。未来...
+2026-04-30 07:24:29
 
 
 
 ### [LWiAI-播客-#242---ChatGPT-图像-2.0，Qwen-3.6-Max，Kimi-K2.6](https://lastweekin.ai/p/lwiai-podcast-242-chatgpt-images)
 
-2026-04-30 07:14:45 | 标签: AI 新闻, ChatGPT 图像, Qwen 3.6, Kimi K2.6, 谷歌 Deep Research
-
-> 本期《上周 AI》播客全面回顾了 2026 年 4 月 22 日这一周最重要的 AI 发展。主要话题包括 OpenAI 发布的新 ChatGPT 图像模型（Images 2.0），该模型在生成准确文本和截图方面表现出色，暗示其采用了基于 Transformer 的方法。节目还涵盖了中国 AI 模型开发的加速，包括阿里巴巴的 Qwen 3.6 Max Preview、月之暗面开源的 Kimi K2.6（一个 1T 参数的 MoE 模型）以及 MiniMax 的 M2.7。其他亮点包括谷歌推出 Deep Research 和 Deep Research Max 智能体、Mozilla 使用 Ant...
+2026-04-30 07:14:45
 
 
 
 ### [DeepSeek-识图模式是个新模型？！一手实测在此（没错我被灰度到了）](https://www.qbitai.com/2026/04/411797.html)
 
-2026-04-30 06:52:23 | 标签: DeepSeek, 识图模式, 多模态, 视觉模型, 灰度测试
-
-> 文章作者在获得 DeepSeek 识图模式灰度测试资格后，对该功能进行了全面实测。核心发现包括：识图模式背后可能是一个独立于 V4 Flash/Pro 的新视觉模型；非思考模式下响应极快，但空间推理题秒错；开启深度思考后虽能正确解答，但耗时长达 4 分钟且思考过程存在过度绕圈的问题。在实用功能方面，OCR 识别纯文本和表格表现优秀，能将网页截图复原为可交互的 HTML 代码，通过隐藏图片测试，但在色盲测试中偶见翻车。文章还通过对比知识边界，推测视觉模型是独立训练的。整体而言，DeepSeek 多模态能力来得比外界预期的更快，但仍有不少精进空间。
+2026-04-30 06:52:23
 
 
 
 ### [AI「生肉证明」堆爆-GitHub！陶哲轩重磅发声：只会解题没用了](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652696520&idx=2&sn=31be61e5f6a35e44b5da2b2252a59186)
 
-2026-04-30 05:00:00 | 标签: 陶哲轩, AI 数学证明, 证明过剩, 生肉证明, 学术评价体系
-
-> 文章报道了陶哲轩在 Mastodon、Nature 访谈和博客中同步发出的重磅判断：数学正在从「证明稀缺」进入「证明过剩」时代。AI 以极低成本大量生成数学证明，但人类验证和消化的能力严重滞后，导致 Erdős 问题 GitHub 仓库中出现大量待评估的 AI 提交。陶哲轩提出数学问题求解的三件套框架——生成、验证、消化，并指出 AI 大幅加速了生成环节，但消化环节成为瓶颈，形成「阻抗失配」。他以 Erdős #1196 问题为例，展示了 AI 生成证明后由人类数学家完成验证和消化的理想流程。文章进一步指出，这一范式变化将冲击整个学术评价体系，包括引用、评审、奖项和晋升标准，且影响将扩散到理论...
+2026-04-30 05:00:00
 
 
 
