@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-02 08:23:03 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-02 11:02:20 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -500,25 +500,19 @@
 
 ### [Code-Orange：Fail-Small-完成，Cloudflare-网络更加强大](https://blog.cloudflare.com/code-orange-fail-small-complete/)
 
-2026-05-01 21:07:30 | 标签: Cloudflare, 韧性工程, 站点可靠性工程, 事件管理, 配置管理
-
-> 这篇来自 Cloudflare 博客的文章详细介绍了 'Code Orange: Fail Small' 计划的完成情况。该计划是在 2025 年 11 月和 12 月发生全球性宕机后启动的一项全面工程计划，重点关注三个核心领域：更安全的配置变更、减少故障影响以及修订事件管理流程。主要成果包括：开发了 'Snapstone' 系统，用于实现基于健康检查的渐进式部署和配置变更的自动回滚；实施了 'fail stale' 和 'fail open' 模式以确保优雅降级；创建了内部 'Codex'——一个由 AI 代码审查强制执行、持续更新的工程标准知识库，以防止问题复发。文章还详细介绍了 'bre...
+2026-05-01 21:07:30
 
 
 
 ### [Dynamic-Workflows-介绍：遵循租户的持久化执行](https://blog.cloudflare.com/dynamic-workflows/)
 
-2026-05-01 14:00:01 | 标签: Cloudflare Workers, 持久化执行, 多租户, Dynamic Workflows, CI/CD
-
-> Cloudflare 发布了 `@cloudflare/dynamic-workflows`，这是一个约 300 行的小型 TypeScript 库，它弥合了持久化执行与动态部署之间的鸿沟。该库允许单个 Worker Loader 将 `create()` 调用和 `run(event， step)` 调度路由到不同的租户代码，使多租户 SaaS 平台、智能体系统和 CI/CD 产品能够为每个客户提供其自己的持久化工作流，而无需预先部署。该库通过包装 Workflow 绑定来注入租户元数据，Workflows 引擎会持久化这些元数据，并在后续用于将执行路由回正确租户的 Dynamic Work...
+2026-05-01 14:00:01
 
 
 
 ### [Broadcom-将-Velero-捐赠给-CNCF，Kubernetes-备份转向社区治理](https://www.infoq.com/news/2026/05/broadcom-velero-cncf/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-01 08:00:00 | 标签: Velero, Kubernetes, CNCF, 备份, 灾难恢复
-
-> 本文报道了 Broadcom 将 Velero（一个 Kubernetes 原生的备份、恢复和迁移项目）作为沙箱项目捐赠给云原生计算基金会（CNCF）的消息。该公告是在 2026 年欧洲 KubeCon + CloudNativeCon 大会上发布的。Velero 起源于 Heptio，后被 VMware 收购，并一直由 Broadcom 管理。文章详细阐述了此举背后的动机，包括建立信任和确保供应商中立的治理。文中包含了 Broadcom 的 Dilpreet Bindra、CNCF 的 Chris Aniszczyk 以及社区成员的观点。文章还涵盖了该项目的架构、其现有的维护者（Broadc...
+2026-05-01 08:00:00
 
 
 

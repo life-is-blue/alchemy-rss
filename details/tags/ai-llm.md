@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-02 08:23:03 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-02 11:02:20 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -12026,137 +12026,103 @@
 
 ### [“一个能生成通过编译和测试的代码的模型，与一个能生成正确、安全、可维护、架构良好的软件的模型，不是一回事”](https://garymarcus.substack.com/p/a-model-that-produces-code-which)
 
-2026-05-01 20:04:02 | 标签: AI 编码, 软件质量, 氛围编码, 下一词预测, 务实态度
-
-> 本文由 Gary Marcus 撰写，评论了 OpenAI 总裁 Greg Brockman 近期关于 AI 现已编写公司 80% 代码的言论。Marcus 认为，虽然 AI 可以生成通过编译和基本测试的代码，但这与生成正确、安全、可维护且架构良好的高质量软件有着本质区别。他赞扬 The Next Web 准确报道了这一细微差别的观点，并指出 Brockman 承认这一局限性是 OpenAI 难得一见的务实态度。Marcus 警告称，下一词预测模型在编写代码方面可以走得出奇地远，但在确保代码健壮性方面则力有不逮，尤其是对于缺乏经验的“氛围编码者”。他强调，务实态度对于在 AI 辅助软件开发中取...
+2026-05-01 20:04:02
 
 
 
 ### [工具：iNaturalist-观察记录](https://simonwillison.net/2026/May/1/inat-sightings/#atom-everything)
 
-2026-05-01 19:35:41 | 标签: iNaturalist, Git 抓取, Claude Code, Python CLI, JavaScript
-
-> Simon Willison 描述了他构建个人工具“iNaturalist 观察记录”的过程，用于查看他在两个账户中的 iNaturalist 观察记录，并按时间和地点进行分组。该项目是在露营期间，完全通过手机使用 Claude Code for web 完成的。他首先创建了一个 Python CLI 工具（`inaturalist-clumper`），用于获取并“聚合”相距 2 小时和 5 公里以内的观察记录。接着，他设置了一个 Git 抓取仓库，定期运行该工具，并将结果记录到托管在 GitHub 上的 JSON 文件中。最后，他使用 Claude Code 中的提示构建了一个 HTML 页...
+2026-05-01 19:35:41
 
 
 
 ### [如何在-AI-时代获得录用](https://towardsdatascience.com/how-to-get-hired-in-the-ai-era/)
 
-2026-05-01 16:30:00 | 标签: 职业建议, 就业市场, AI 时代, 初级职位, 软技能
-
-> 本文探讨了当前初级职位（尤其是在受 AI 影响的领域）面临的严峻就业市场，并引用研究数据指出入门级招聘数量的下降。基于作者面试超过 500 名候选人的经验，文章提出了六项可操作的脱颖而出策略。核心论点是：虽然 AI 可以自动化执行任务，但人类技能，如对端到端工作负责、建设性地提出异议、通过志愿服务和公开写作建立声誉，正变得更有价值。作者建议将 AI 视为判断力的放大器，而非替代品，并通过构建真实工作的作品集来证明超越简历的能力。这些建议旨在引导求职者从任务执行者转变为连接任务、人员和不确定性的关键角色。
+2026-05-01 16:30:00
 
 
 
 ### [华为携手中科大发布灵境造物，openJiuwen-首发-Coordination-Engineering-全栈支撑](https://www.qbitai.com/2026/05/412696.html)
 
-2026-05-01 13:58:09 | 标签: 多智能体, Coordination Engineering, openJiuwen, 灵境造物, AI 科研
-
-> 本文报道了中国科学技术大学发布的「灵境造物」智能科研云平台，该平台基于全栈国产化软硬件生态，依托科学智能物质创制中心，整合科学大模型、垂类小模型、科研机器人等能力。核心支撑来自华为支持的 openJiuwen 社区与 MindSpore 社区，通过 Coordination Engineering 技术体系实现多智能体协同。该体系包含 Agent Team Engine（多智能体自主分工协作）、Team Skills（协作经验标准化封装）、Team Skills Hub（共享生态）和 Team Skills 自演进机制。MindSpore Science 则基于 openJiuwen 构建科研...
+2026-05-01 13:58:09
 
 
 
 ### [Ghost：我们这个时代的数据库？](https://towardsdatascience.com/ghost-a-database-for-our-times/)
 
-2026-05-01 13:30:00 | 标签: Ghost, Postgres, AI 智能体, 数据库, MCP
-
-> 本文介绍了 Ghost，一个来自 ghost.build 的新型数据库平台，被誉为首个为 AI 智能体构建的数据库。Ghost 是一个以智能体优先的 Postgres 数据库平台，允许开发者和 AI 智能体轻松创建、分支、检查、查询、操作和删除整个数据库，并且完全免费使用。其核心理念是：如果智能体要构建软件、测试迁移、检查模式以及实验数据，它们就需要像代码沙箱一样可丢弃和可编程的数据库。文章提供了安装 Ghost、将其 MCP 服务器与 Codex 等编码智能体集成的分步指南，并演示了四个实际示例：创建销售数据数据库、使用 Ghost CLI、利用 Ghost MCP 与智能体进行性能调优，以...
+2026-05-01 13:30:00
 
 
 
 ### [他用-AI-办了个音乐节，主题：别读博](https://www.qbitai.com/2026/05/412597.html)
 
-2026-05-01 13:20:15 | 标签: AI音乐创作, 博士生, 科研焦虑, 情感共鸣, 内容创作
-
-> 本文深度报道了网名为「馄饨皮茄总」的科研工作者，如何在一次意外骨折后被迫暂停科研工作，转而利用 AI 工具（Suno、MiniMax Music 等）进行音乐创作的故事。他通过精心选歌、严格填词（注重韵脚、断句、空耳技巧）和大量 AI 生成版本筛选（最多 100 多个版本），创作出 42 首以博士生科研生活为主题的改编歌曲，在 B 站获得超 5000 万次播放和 376.4 万次点赞。文章不仅详细拆解了他的创作方法论，更深入探讨了当代博士生群体面临的普遍困境：长期不确定的封闭环境、自我怀疑、科研意义感的丧失，以及这些歌曲如何成为他们寻找共鸣和情感出口的载体。文章也触及了 AI 在音乐创作中的角...
+2026-05-01 13:20:15
 
 
 
 ### [刚刚，DeepSeek-开源全新多模态技术！！](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451731&idx=1&sn=90eacbc2b061ae7b9b72527f575b7b2e)
 
-2026-05-01 12:14:00 | 标签: DeepSeek, 多模态, 视觉基元推理, 空间推理, Reference Gap
-
-> 本文报道了 DeepSeek 联合北京大学、清华大学发布的最新多模态技术「Thinking with Visual Primitives」（基于视觉基元的思考）。该技术针对当前多模态大语言模型在空间推理中存在的 Reference Gap（指代鸿沟）问题，提出将边界框和坐标点提升为与语言 token 同级的「最小思考单元」，让模型在推理过程中边指边想。基于 DeepSeek-V4-Flash 构建的模型，在仅使用约 90 个 KV Cache 视觉 token 的情况下，在计数、空间推理、迷宫导航和路径追踪等任务上性能比肩 GPT-5.4、Claude-Sonnet-4.6 与 Gemini-...
+2026-05-01 12:14:00
 
 
 
 ### [AWS-Transform-现可自动将-BI-迁移至-Amazon-QuickSight，数天即可完成-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days/)
 
-2026-05-01 10:29:06 | 标签: AWS Transform, Amazon QuickSight, BI 迁移, AI 智能体, Tableau
-
-> 本文宣布了 AWS Transform（一款 AI 驱动的企业现代化平台）的一项新功能，该功能可自动将 Tableau 和 Power BI 等传统工具的商业智能仪表盘迁移至 Amazon QuickSight。该解决方案使用来自 Wavicle Data Solutions 的专用 AI 智能体（可通过 AWS Marketplace 获取）来分析现有 BI 环境并转换仪表盘。该流程是 AWS Transform 内一个基于聊天的两步工作流：分析器智能体负责编目元数据并生成就绪评估，转换器智能体则在 QuickSight 中重建资产。其架构利用 AWS Transform 进行编排，使用 A...
+2026-05-01 10:29:06
 
 
 
 ### [GPT-5.5-性能领先（但幻觉严重），Kimi-K2.6-领跑开源大模型，AI-数据中心冲击气候承诺，以及更多...](https://www.deeplearning.ai/the-batch/issue-351)
 
-2026-05-01 09:46:57 | 标签: GPT-5.5, Kimi K2.6, OpenAI, Moonshot AI, AI 基准测试
-
-> 本期 deeplearning.ai 的《The Batch》通讯全面概述了 AI 领域的最新发展。文章详细介绍了 OpenAI 发布的 GPT-5.5，这是一个强大的新模型，在多项基准测试中达到了最先进的性能，但与 Claude Opus 4.7 和 Gemini 3.1 Pro Preview 等竞争对手相比，其幻觉率显著更高。本期还介绍了 Moonshot AI 的 Kimi K2.6，这是一个拥有 1 万亿参数的开源权重模型，在智能体任务和长周期编码方面领先同类模型，同时幻觉率也有所改善。第三则重要新闻探讨了 Alphabet、Amazon、Meta 和 Microsoft 大规模建设...
+2026-05-01 09:46:57
 
 
 
 ### [“我可能不再建议学计算机”！图灵奖得主炮轰半个行业，并断言：AI-Agent-最后全是数据库问题](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247661911&idx=1&sn=3fbd0317f4e3719e4e691f92c12a2716)
 
-2026-05-01 05:31:00 | 标签: Mike Stonebraker, 数据库, AI Agent, LLM, Text-to-SQL
-
-> 本文是 InfoQ 对数据库领域图灵奖得主 Mike Stonebraker 的深度访谈编译。Stonebraker 以犀利风格批评了行业巨头：指责 Larry Ellison 对客户撒谎销售未实现功能；批评 Google 的 MapReduce 和最终一致性是错误方向，并指出 Spanner 的诞生等于 Google 承认了传统事务的必要性；认为 AWS 维护的 15 种数据库中有 12 种是多余的。文章核心亮点在于 Stonebraker 对 AI 与数据库交叉领域的深刻洞察。他认为当前 AI Agent 大多停留在只读阶段，一旦涉及转账、库存更新等读写操作，事务、一致性、原子性等数据库老...
+2026-05-01 05:31:00
 
 
 
 ### [永别了，终端！OpenAI-疯狂升级-Codex，接管-Mac-人类全程-0-操作围观](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652696950&idx=1&sn=21fccc2ad1d6da0a9081e392ba631c10)
 
-2026-05-01 05:29:00 | 标签: Codex, OpenAI, AI 智能体, 电脑操控, AI 产品更新
-
-> 文章报道了 OpenAI 对 Codex 的史诗级更新，核心变化是从代码生成工具进化为通用个人助理，支持 Slack、Google Workspace 等集成，能操控整台电脑。通过 YouTube 创作者 Mike Russell 的实测，展示了 Codex 自动打开 Adobe Audition 修复音频、用 Photoshop 做封面、调用 Firefly 生成 AI 视频的全过程，人类全程零操作。文章还介绍了 Codex 的新 UI、动态适配、浏览器速度提升 30% 等细节，以及开发者从 Claude Code 转向 Codex 的趋势。OpenAI 联创 Greg Brockman 公...
+2026-05-01 05:29:00
 
 
 
 ### [撕开-Claude-Code-真相：让它好用的-98.4%，是工程不是-AI](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652696950&idx=2&sn=b8388fc8a9c5f6b51dbdf7e799d7f349)
 
-2026-05-01 05:29:00 | 标签: Claude Code, AI 编程, Harness Engineering, CLAUDE.md, 工程基础设施
-
-> 文章以「Claude Code 真相」为切入点，指出 AI 编程工具真正好用的 98.4% 是工程基础设施而非 AI 模型本身。核心论据来自 VILA-Lab 对 Claude Code 源码的分析：仅 1.6% 是 AI 决策逻辑，其余是权限网关、上下文管理、工具路由、错误恢复等确定性工程。文章详细介绍了 CLAUDE.md 文件体系——项目根目录的 markdown 文件作为 AI 的「项目大脑」，配合 .claude/skills/（可复用工作流）和 .claude/hooks/（自动护栏），构成一套完整的 AI 工程化工作环境。文章还引用了 OpenAI Frontier 团队 5 个...
+2026-05-01 05:29:00
 
 
 
 ### [一句话造世界！开发者用-10-天婚假爆肝，让-AI-小镇真正「活」了过来](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652696950&idx=3&sn=d869571a46ad5feb8b005459124580f2)
 
-2026-05-01 05:29:00 | 标签: AI 小镇, WorldX, Generative Agents, Vibe Coding, 多模态生成
-
-> 本文报道了独立开发者 YGYOOO 在 10 天婚假期间独立完成的 AI 项目 WorldX。该项目突破了自 2023 年斯坦福 Generative Agents 以来 AI 小镇类项目的核心瓶颈——世界需要人工搭建、固定不变。WorldX 允许用户仅输入一句话（如「夜晚的宋朝繁华夜市」），在 5 分钟内自动生成一个完整的、可运行的 AI 世界，包括地图、角色立绘、动画和底层逻辑。文章详细解析了其核心技术难点与解决方案，特别是如何让 AI 看懂自己生成的图片以确定可行走区域，作者独创了「叠加标注 + 差异定位」方法，将生成式 AI 的不确定性输出转化为确定性 CV 计算。此外，文章还介绍了其...
+2026-05-01 05:29:00
 
 
 
 ### [有人只用-API-就猜出了-GPT、Claude、Gemini-的参数量？社区吵翻了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651031232&idx=1&sn=6ef67aad98248c27294f1be3eb80d089)
 
-2026-05-01 05:01:00 | 标签: LLM, 参数量估算, 黑盒测试, 事实知识, 不可压缩知识探针
-
-> 本文报道了研究人员李博杰在 arXiv 发表的一篇论文，提出名为「不可压缩知识探针」（IKP）的评测框架，尝试仅通过黑盒 API 调用逆向估算任意 LLM 的参数规模。研究灵感源于团队长期向各代主流大模型提问冷门问题「你了解中科大 Hackergame 吗？」的观察。研究团队利用 AI Agent 构建了包含 1400 个问题、7 个稀缺层级的 IKP 数据集，在 27 家厂商的 188 个模型上进行了测试。核心假设是模型对冷门事实性知识的记忆容量主要取决于物理参数规模，无法被大幅压缩。研究者在 89 个开源模型上拟合出事实准确率与参数量的对数线性关系（R²=0.917），并据此估算出 GPT...
+2026-05-01 05:01:00
 
 
 
 ### [强化学习的进化：从-PPO-到-MaxRL，LLM-推理训练的算法演进史](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651031232&idx=2&sn=d9bede92f805cf8bbb184d9ff344cca6)
 
-2026-05-01 05:01:00 | 标签: 强化学习, LLM 推理, PPO, GRPO, RLHF
-
-> 本文是一篇高质量的算法综述，系统回顾了 2024 至 2026 年间用于 LLM 推理训练的强化学习算法演进。文章从 REINFORCE 和 PPO 等基础算法讲起，详细介绍了 GRPO 如何通过移除价值模型降低内存占用，以及 RLOO、Dr. GRPO、DAPO、CISPO、MaxRL、DPPO、ScaleRL 等后续变体在信任域定义、损失聚合、优势估计、样本效率等方面的改进。文章不仅阐述了各算法的技术细节和数学公式，还总结了几个反复出现的模式：critic 模型不再是必需、标准差归一化可能产生副作用、损失聚合方式至关重要、信任域定义是优化切入点。最后，文章指出了当前领域的开放挑战，包括信用...
+2026-05-01 05:01:00
 
 
 
 ### [AINews-万物皆可智能体：Codex-赋能知识工作，Claude-拓展创意领域](https://www.latent.space/p/ainews-agents-for-everything-else)
 
-2026-05-01 04:53:41 | 标签: AI 新闻, Codex, Claude, OpenAI, Anthropic
-
-> 本期 Latent Space 的 AINews 全面回顾了 2026 年 4 月 29 日至 30 日期间 AI 领域最重要的进展。核心主题是 AI 智能体从编程领域向外扩展。OpenAI 将 Codex 重新定位为面向所有知识工作的“计算机操作智能体”，其更新包括速度提升 42% 的计算机操作智能体、动态任务特定 UI，以及与微软、谷歌和 Salesforce 套件的集成。Anthropic 则推出代码审查与漏洞扫描工具 Claude Security 作为回应，并将 Claude 的能力扩展至 Blender、Adobe Creative Cloud 和 Ableton 等创意工具。报道...
+2026-05-01 04:53:41
 
 
 
 ### [一下午一句话-Codex-帮我开发了一个完整的游戏！](https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247496761&idx=1&sn=89d1e991dbded69b4e8b63ae0a618ec6)
 
-2026-05-01 00:32:00 | 标签: Codex, AI 编程, 游戏开发, AI Agent, GPT-Image
-
-> 本文详细记录了作者使用 Codex（OpenAI 的 AI 编程助手）在一下午时间内，从零开发一款名为《夜巡录：荒庙篇》的志怪题材 Roguelike 卡牌游戏的完整过程。文章重点描述了几个令作者震惊的瞬间：Codex 在未被告知的情况下，自动生成绿幕底色的角色素材以便后期抠图；为获取游戏图标素材，Codex 尝试分析网站结构并编写爬虫，最终被自身安全机制拦截；面对大量素材文件，Codex 自主编写脚本将所有小图拼成一张大网格索引图，以突破多模态模型的视觉带宽限制。此外，Codex 还整合了 GPT-Image 2.0 生成立绘、Seedance 2.0 制作处决动画和待机循环动画、Suno ...
+2026-05-01 00:32:00
 
 
 
@@ -37674,105 +37640,79 @@
 
 ### [你不知道的-GEO：原理、实践与取舍---Tw93](https://tw93.fun/2026-05-01/ai-visibility.html)
 
-2026-05-01 17:00:00 | 标签: GEO, AI 可见性, llms.txt, robots.txt, AI 搜索
-
-> 本文由独立开发者 Tw93 撰写，基于自身项目被 AI 搜索主动推荐的经历，系统阐述了 AI 可见性（GEO）的实践方法。文章首先对比了 AI 搜索与传统 SEO 的本质差异，指出 AI 更看重内容的结构清晰度和来源可靠性而非 PageRank。核心实践包括：精细配置 robots.txt 区分训练爬虫、搜索爬虫和用户触发爬虫；部署 llms.txt 和 llms-full.txt 标准，为 AI 提供结构化内容概览；通过 Markdown 路由减少 80% 的 token 消耗；建设独立的知识端点 Yobi，提供 JSON API 和项目知识页面；通过 GitHub Action 将子域名数...
+2026-05-01 17:00:00
 
 
 
 ### [使用-Claude-Code-插件构建-Spotify-Ads-API-的自然语言接口](https://engineering.atspotify.com/2026/5/spotify-ads-api-claude-plugins/)
 
-2026-05-01 16:00:02 | 标签: Claude Code, 插件, Spotify Ads API, 自然语言接口, OpenAPI
-
-> 这篇来自 Spotify Engineering 的文章详细介绍了为 Claude Code 插件设计的架构和决策，该插件为 Spotify Ads API v3 提供了自然语言接口。用户可以用纯英文描述广告活动，智能体随后将其分解为正确的 API 调用序列（广告活动 → 广告组 → 广告）。整个系统完全由 Markdown 文件、一个 bash 脚本和两个小型 Python 辅助工具构建，无需编译代码或构建步骤。关键技术选择包括使用 Claude Code 的插件系统（所有组件均使用 Markdown）、基于原始 OpenAPI 规范的 CLI 优先方法，以及有意避免使用模型上下文协议（MC...
+2026-05-01 16:00:02
 
 
 
 ### [JobRunr-推出-ClawRunr：开源-Java-AI-智能体](https://www.infoq.com/news/2026/05/clawrunr/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-01 15:00:00 | 标签: Java AI 智能体, JobRunr, ClawRunr, 开源, 后台任务
-
-> JobRunr 推出了 ClawRunr，一个专为在用户自有硬件上运行而设计的开源 Java AI 智能体。该项目前身为 JavaClaw，它将对话式交互与持久化任务执行相结合，允许用户创建提醒、自动化重复性工作、通过模型上下文协议（MCP）连接工具，并通过网页聊天、Telegram 和 Discord 进行交互。该项目解决了 AI 智能体设计中的一个常见问题：将重试、持久化、调度和监控作为一等公民。ClawRunr 基于 Java 25、Spring Boot、Spring AI、Spring Modulith 和 JobRunr 构建，支持 OpenAI、Anthropic 和 Ollam...
+2026-05-01 15:00:00
 
 
 
 ### [O'Reilly-快报：快路径与慢路径](https://stackoverflow.blog/2026/05/01/dispatches-from-o-reilly-fast-paths-and-slow-paths/)
 
-2026-05-01 14:00:00 | 标签: AI 治理, 自主系统, 快路径, 慢路径, 控制平面
-
-> 本文探讨了自主 AI 系统中的一个关键架构挑战：如何在治理的同时不破坏自主性。文章指出，通用的同步中介——即审批每一个决策步骤——在结构上与规模和自主性不相容，会导致延迟、脆弱性和僵化的设计。解决方案在于将执行路径分离为快路径（预授权、持续观察、可撤销）和慢路径（针对不可逆或高风险操作的同步中介）。控制平面应持续观察但有选择性地干预，利用反馈循环调整行为，而不是阻断执行。文章将这一思路与网络和分布式系统中的控制/数据平面分离进行类比，强调治理必须从逐步骤审批演变为面向结果的监管。架构师必须重新思考控制平面：它是行为的调节者，而非行动的审批者，并将权限视为由反馈塑造的运行时状态。
+2026-05-01 14:00:00
 
 
 
 ### [Meta-部署统一-AI-智能体，实现超大规模性能优化的自动化](https://www.infoq.com/news/2026/05/meta-ai-agents-hyperscale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-01 12:00:00 | 标签: AI 智能体, 超大规模基础设施, 性能优化, Meta, LLM
-
-> Meta 发布了一个全新的 AI 驱动容量效率平台，该平台利用统一的 AI 智能体，在其全球基础设施中自动检测和解决性能问题，标志着在超大规模系统中向自我优化迈出了重要一步。该系统将基于 LLM 的智能体与结构化工具和编码后的工程知识相结合，持续分析基础设施性能、识别低效环节并应用优化措施。通过将标准化接口与源自专家知识的可复用“技能”相集成，Meta 使这些智能体能够自主诊断和修复问题，从而有效地将资深工程师的专业能力扩展到整个基础设施。这代表了从传统的被动式性能管理向持续、自动化优化的转变，系统得以实时进行持续调优。其结果是多个维度的效率提升，包括减少资源浪费、降低功耗以及更快地解决性能瓶...
+2026-05-01 12:00:00
 
 
 
 ### [斯坦福最年轻讲师谈信息安全、AI-与识别作弊者---Rachel-Fernandez-访谈-播客-#217](https://www.freecodecamp.org/news/stanford-s-youngest-instructor-talks-infosec-ai-and-catching-cheaters-rachel-fernandez-interview-podcast-217/)
 
-2026-05-01 11:00:20 | 标签: 计算机科学教育, C++, AI 工具, 开发者技能, 职业建议
-
-> 在本期播客访谈中，Quincy Larson 与斯坦福计算机科学学生、同时也是该校最年轻讲师的 Rachel Fernandez 进行了对话。Rachel 分享了她从加州小镇一路走到斯坦福的经历，她在那里教授 C++，并协助组织了大型黑客松 TreeHacks。谈话内容涵盖了 2026 年计算机科学教育的现状、C++ 作为基础语言的持续重要性，以及为开发者提供的实用建议——如何利用 AI 工具提升生产力而不丢失核心技能。Rachel 强调，在软件开发中采用 AI 需要一种平衡的方法，并警告过度依赖可能导致技能退化。本期节目还重点介绍了 freeCodeCamp 近期关于自动化、数据质量和 AI...
+2026-05-01 11:00:20
 
 
 
 ### [下一代-AI-产品](https://www.infoq.com/presentations/ai-products/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-01 09:23:00 | 标签: AI 产品, 产品设计, 用户体验, LLM, 智能体
-
-> Hidden Door 的 CEO Hilary Mason 发表了关于 2025 年构建 AI 产品挑战的主题演讲。她指出，虽然底层 AI 技术很强大，但真正的难点在于产品设计、用户体验以及管理社会技术系统。她批评将聊天作为默认界面，警告不要被“智能体”的炒作所迷惑，并强调需要稳健的评估、上下文管理以及理解 AI 的失败之处。她结合从 Fast Forward Labs 到当前职位的丰富经验，提供了关于构建令人愉悦、可靠且亲社会（而非仅仅技术令人印象深刻）产品的实用建议。
+2026-05-01 09:23:00
 
 
 
 ### [Vitest-4.1：测试标签、原生-Node.js-执行与-AI-智能体报告器](https://www.infoq.com/news/2026/05/vitest-4-1-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-01 09:03:00 | 标签: Vitest, 测试, JavaScript, Node.js, AI 智能体
-
-> Vitest 4.1 作为 Vite 原生测试框架的最新版本，带来了多项旨在改善测试组织、性能和开发者体验的重要功能。主要新增内容包括受 Python 的 pytest 标记启发的测试标签，允许开发者对测试组进行标记、过滤和共享配置。实验性的 `viteModuleRunner: false` 选项支持使用原生 Node.js `import` 运行测试，绕过 Vite 的模块运行器，从而实现更快的启动速度和更接近生产环境的行为，并在 Node.js 22.18+ 上支持原生 TypeScript 剥离。该版本还引入了 `aroundEach` 和 `aroundAll` 生命周期钩子，用于在...
+2026-05-01 09:03:00
 
 
 
 ### [在-Kubernetes-上保护自主-AI-智能体：面向新型云工作负载的信任边界、密钥与可观测性](https://www.infoq.com/articles/securing-autonomous-ai-agents-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-01 09:00:00 | 标签: Kubernetes 安全, AI 智能体, 密钥管理, 可观测性, GitOps
-
-> 本文认为，自主 AI 智能体因其动态外部依赖、多域凭证需求、不可预测的资源利用以及非确定性执行流程，从根本上打破了传统的 Kubernetes 安全模型。作者基于自身运营诊断智能体系统的经验，提出了一套基础设施模式来应对这些挑战。核心模式包括：将每个智能体调查隔离为独立的 Kubernetes Job，以实现资源和故障隔离；使用 HashiCorp Vault 提供动态、短期的凭证，以限制受损多域智能体的爆炸半径；实施四阶段渐进式信任模型（影子模式、只读辅助、有限修复、自主 L1），根据运营证据逐步开放权限；以及调整可观测性，以追踪调查级指标、LLM API 消耗、推理深度和每任务日志隔离。文...
+2026-05-01 09:00:00
 
 
 
 ### [AI-智能体舰队助力-CI/CD：Docker-如何实现更快交付](https://www.docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster/)
 
-2026-05-01 06:00:05 | 标签: AI 智能体, CI/CD, Claude Code, Docker, 软件工程
-
-> 本文详细介绍了 Docker 的 Coding Agent Sandboxes 团队如何构建并部署了一支由七个 AI 智能体角色组成的虚拟舰队（称为 Fleet），用于自动化 CI/CD 任务。该舰队基于 Claude Code 技能构建，这些技能是定义智能体角色和职责的 Markdown 文件，而非逐步执行的脚本。关键角色包括构建工程师、项目经理、产品负责人、CLI 测试员、性能测试员、升级测试员和软件工程师。其设计原则是“本地优先，CI 其次”，允许开发者在将技能部署到 CI 之前，先在终端中进行调试。技能是可组合的，基础技能编码项目知识，而舰队角色则编码行为。迭代引擎采用 Ralph 循...
+2026-05-01 06:00:05
 
 
 
 ### [MCP-服务器是你尚未盘点的供应链](https://hackernoon.com/mcp-servers-are-a-supply-chain-you-have-not-inventoried-yet?source=rss)
 
-2026-05-01 04:41:25 | 标签: MCP, 供应链安全, AI 安全, 企业安全, 数据防泄漏
-
-> 本文有力地论证了 MCP（模型上下文协议）服务器已迅速从一个小众协议演变为企业基础设施，从而创造了一种新的、在很大程度上不受治理的供应链风险。作者作为一位企业数据安全领域的资深人士，详细介绍了首个确认的恶意 MCP 服务器攻击（Postmark MCP 事件），其中后门程序悄无声息地窃取了电子邮件。文章随后系统地概述了已在真实环境中观察到的四种不同攻击模式：供应链冒充、协议设计漏洞（如导致远程代码执行的 STDIO 缺陷）、提示注入与工具投毒，以及市场投毒。文章为企业安全团队提供了一个具体且可操作的五点计划，以构建 MCP 治理体系，包括盘点服务器、建立经过验证的注册表、沙箱化执行、检查提示流...
+2026-05-01 04:41:25
 
 
 
 ### [“如果你不用更多-Token，就永远逃不出底层”：AI-竞赛开始变成资源战争](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283248&idx=1&sn=740073808e2db9880300ecbf99bb64a0)
 
-2026-05-01 02:12:00 | 标签: Token 经济, AI 资源分配, Anthropic, SemiAnalysis, AI 竞争格局
-
-> 本文编译整理了 SemiAnalysis 创始人 Dylan Patel 在一档播客中的深度访谈内容。文章指出，AI 领域的核心瓶颈正从模型能力转向资源分配，Token 已成为一种高度稀缺的战略资源。Dylan 以自身公司为例，其 AI 年支出已飙升至 700 万美元，超过薪资成本的 25%，并展示了多个通过大量使用 Token 实现效率飞跃的案例，如芯片逆向工程和能源数据分析。文章深入探讨了 Anthropic 顶级模型（如 Opus 4.7 和未公开的 Mythos）带来的能力跃迁，以及由此引发的 Token 供需失衡。Dylan 预测，未来竞争的关键在于获取最先进模型的访问权，并将 To...
+2026-05-01 02:12:00
 
 
 
 ### [当国产模型追上闭源旗舰，企业-AI-编程的真正障碍才浮出水面](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283248&idx=2&sn=b17e226b2bdecbdfb34f9231832bbe6b)
 
-2026-05-01 02:12:00 | 标签: AI 编程, AI 上下文负债, DeepSeek V4, 企业落地, 知识管理
-
-> 文章以一家上市公司部署 AI 编程工具的失败案例开篇，指出即使模型能力足够，面对维护多年的老旧代码库，AI 生成的代码在业务上下文上仍会错得不着痕迹。作者引入 Abbas Raza 提出的「AI 上下文负债」概念，即代码库已知信息与 AI 所需信息之间的缺口，解释了为何绿地与棕地团队的 AI 编程体验差距巨大。文章随后分析了中国企业面临的合规死锁：安全审计周期追不上模型迭代速度，导致私有化部署的模型始终落后。DeepSeek V4 的发布与昇腾全栈适配打破了这一瓶颈——国产模型首次在编程和 Agent 能力上追平闭源旗舰，且可在国产芯片上私有化部署。然而，模型供给侧的突破并未解决组织知识管理的...
+2026-05-01 02:12:00
 
 
 
