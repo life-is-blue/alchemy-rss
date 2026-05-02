@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-02 11:02:20 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-02 13:01:30 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -33659,11 +33659,11 @@
 
 
 
-### [Notion-联合创始人-Simon-Last：我从去年夏天起就没写过一行代码了](https://baoyu.io/blog/from-note-taking-app-to-ai-workspace-the-simon-last-interview)
+### [在中国-AI-生态圈摸底了两周，我学到了什么](https://baoyu.io/translations/2026-03-26/what-i-learned-from-two-weeks-inside-china-s-ai-ecosystem)
 
-2026-03-28T00:00:00.000Z
+2026-03-26T00:00:00.000Z
 
-> Notion 联合创始人讲述 AI harness 每六个月推倒重写、编码 Agent 连续跑 13 天的幕后故事。
+> 一位西方 VC 深入中国 AI 生态圈的第一手观察：创始人特质、硬件壁垒、软件泡沫与那个被忽视的不对称性
 
 
 
