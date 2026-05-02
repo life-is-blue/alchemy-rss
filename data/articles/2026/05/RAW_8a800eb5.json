@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8a800eb5",
+  "title": "Confluent 将 Schema ID 移至 Kafka 消息头以简化 Schema 治理",
+  "url": "https://www.infoq.com/news/2026/05/confluent-kafka-header-schema-id/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-01 14:06:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Confluent has introduced <a href=\"https://www.confluent.io/blog/schema-id-kafka-headers-data-governance/\">a new approach to managing schema metadata in Apache Kafka</a> by enabling schema IDs to be stored in message headers rather than in the payload. The update is designed to simplify data governance and enable teams to adopt schema validation without changing existing event formats. The feature builds on Kafka’s native header support and integrates with Confluent Schema Registry, which is widely used by organizations managing event-driven architectures across microservices, analytics pipelines, and data platforms.</p>\n   <p>In traditional Kafka deployments using Confluent’s wire format, schema IDs are embedded directly in the message payload. This ensures consumers can correctly deserialize events, but it tightly couples schema metadata with the data itself. Over time, this coupling complicates schema evolution, especially in environments where multiple teams and systems consume the same event streams. It also increases coordination overhead when schema changes are introduced across producers and consumers.</p>\n   <p>With the new approach, schema identifiers are stored in Kafka record headers while the payload remains unchanged. Consumers retrieve the schema from the schema registry at runtime using the ID in the header. This maintains compatibility with formats such as <a href=\"https://github.com/apache/avro\">Avro</a>, <a href=\"https://en.wikipedia.org/wiki/Protocol_Buffers\">Protobuf</a>, and JSON Schema while reducing dependence on tightly coupled wire formats. Schema resolution is decoupled from the payload, making event streams more flexible and easier to integrate across downstream systems and tooling.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/confluent-kafka-header-schema-id/en/resources/1conflunentheader-1776737160055.jpeg\" rel=\"share\"></p>\n   <p><em>Schema handling before and after moving schema IDs to Kafka headers (Source: <a href=\"https://www.confluent.io/blog/schema-id-kafka-headers-data-governance/\">Confluent Blog Post)</a></em></p>\n   <p><a href=\"https://www.linkedin.com/in/patrick-neff-7bb3b21a4/\">Patrick Neff</a>, CSTA Team Lead CEMEA at Confluent, highlights the importance of schema governance in enabling reuse across streaming and analytics systems in a LinkedIn <a href=\"https://www.linkedin.com/posts/patrick-neff-7bb3b21a4_this-is-huge-with-schema-ids-in-headers-share-7438539292341104641-wwC8?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a>.</p>\n   <blockquote>\n    <p>Schemas are the key enabler for unlocking the full value of your data.</p>\n   </blockquote>\n   <p>The header-based approach also supports incremental adoption. Organizations can introduce schema governance without large-scale rewrites or coordinated changes across all producers and consumers. Schema IDs can be attached to existing event streams, allowing teams to gradually adopt stricter schema management practices while maintaining backward compatibility.</p>\n   <p><a href=\"https://www.linkedin.com/in/gunnar-morling/\">Gunnar Morling</a>, Technologist at Confluent, emphasized improved interoperability with storage systems and downstream processing frameworks in <a href=\"https://www.linkedin.com/posts/gunnar-morling_putting-schema-ids-into-kafka-message-headers-share-7438135378118696961-XgAz?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a>.</p>\n   <blockquote>\n    <p>Schema ids into Kafka message headers rather than the message payload is a massive quality of life improvement: payloads become valid, self-contained.</p>\n   </blockquote>\n   <p>Separating schema metadata from payloads enables independent evolution of producers and consumers, with validation centralized in the schema registry. This reduces coordination overhead and simplifies schema evolution at scale. It also improves interoperability with tools like Apache Flink and analytics or ML systems by enabling consistent reuse of structured event data across pipelines.</p>\n   <p><a href=\"https://www.linkedin.com/in/davidaraujo/\">David Araujo</a>, Director of Product Management at Coflunent, describes how the feature enables zero downtime and client-independent adoption patterns.</p>\n   <blockquote>\n    <p>By moving schema IDs to headers, you can attach schemas to existing data in Kafka without touching payload formats.</p>\n   </blockquote>\n   <p>The transition may require updates to Kafka connectors and downstream tools that assume schema metadata is embedded in payloads, creating a period where both approaches may coexist, depending on ecosystem readiness. The feature is available in Confluent Cloud and is expected in Confluent Platform with Schema Registry support under existing licensing models.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Confluent Moves Schema IDs to Kafka Headers to Simplify Schema Governance\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/confluent-kafka-header-schema-id/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1777644360000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Confluent 将 Schema ID 从 Kafka 消息负载移至消息头，将 Schema 元数据与数据解耦，从而简化 Schema 治理并支持渐进式采用。",
+  "oneSentenceSummary": "Confluent 将 Schema ID 从 Kafka 消息负载移至消息头，将 Schema 元数据与数据解耦，从而简化 Schema 治理并支持渐进式采用。",
+  "summary": "Confluent 引入了一种在 Apache Kafka 中管理 Schema 元数据的新方法，将 Schema ID 存储在消息头而非消息负载中。这实现了 Schema 元数据与数据本身的解耦，简化了 Schema 演化，并减少了生产者和消费者之间的协调开销。该功能基于 Kafka 原生的消息头支持，并与 Confluent Schema Registry 集成，支持 Avro、Protobuf 和 JSON Schema 等格式。它支持渐进式采用，使组织无需大规模重写即可引入 Schema 治理。该方法还改善了与 Apache Flink 和分析系统等下游工具的互操作性。该功能已在 Confluent Cloud 中可用，并预计将在 Confluent Platform 中推出。",
+  "mainPoints": [
+    {
+      "point": "将 Schema ID 移至 Kafka 消息头，实现了 Schema 元数据与负载的解耦。",
+      "explanation": "这种分离简化了 Schema 演化，并减少了生产者和消费者之间的协调开销，因为 Schema 解析通过消息头中的 ID 在运行时处理。"
+    },
+    {
+      "point": "基于消息头的方法支持渐进式采用，无需大规模重写。",
+      "explanation": "组织可以将 Schema ID 附加到现有的事件流中，逐步采用更严格的 Schema 管理，同时保持向后兼容性。"
+    },
+    {
+      "point": "改善了与 Apache Flink 和分析工具等下游系统的互操作性。",
+      "explanation": "将 Schema 元数据与负载解耦，使得结构化事件数据能够在不同管道中一致地复用，从而改善与处理框架的集成。"
+    }
+  ],
+  "keyQuotes": [
+    "将 Schema ID 放入 Kafka 消息头而非消息负载，是一个巨大的生活质量提升：负载变得有效且自包含。",
+    "通过将 Schema ID 移至消息头，你可以将 Schema 附加到 Kafka 中的现有数据，而无需触及负载格式。",
+    "Schema 是释放数据全部价值的关键推动力。"
+  ],
+  "tags": [
+    "Apache Kafka",
+    "Schema Registry",
+    "数据治理",
+    "事件驱动架构",
+    "Confluent"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 501,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777644360000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-01 14:06:00"
+}

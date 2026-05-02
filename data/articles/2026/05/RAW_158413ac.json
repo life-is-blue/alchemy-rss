@@ -1,0 +1,58 @@
+{
+  "id": "RAW_158413ac",
+  "title": "JobRunr 推出 ClawRunr：开源 Java AI 智能体",
+  "url": "https://www.infoq.com/news/2026/05/clawrunr/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-01 15:00:00",
+  "author": "Diogo Carleto",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.jobrunr.io\">JobRunr</a> has <a href=\"https://www.jobrunr.io/en/blog/clawrunr\">introduced</a> an open-source Java AI agent, <a href=\"https://clawrunr.io\">ClawRunr</a>, that runs on users' own hardware and is designed to execute scheduled, recurring, and one-off background tasks. Formerly known as <a href=\"https://github.com/jobrunr/JavaClaw\">JavaClaw</a>, a Java version of<a href=\"https://www.openclaw.ai\"> </a><a href=\"https://www.openclaw.ai\">OpenClaw</a>, the project combines conversational interaction with persistent task execution, allowing users to create reminders, automate recurring work, connect tools through <a href=\"https://modelcontextprotocol.io\">Model Context Protocol</a> (MCP), and interact with the agent through channels such as web chat, Telegram, and Discord. The project aims to address a common problem in AI agent design: making retries, persistence, scheduling, and monitoring first-class concerns of long-running agent work.</p>\n   <p>ClawRunr is built on <a href=\"https://openjdk.org/projects/jdk/25\">Java 25</a>, <a href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>, <a href=\"https://spring.io/projects/spring-ai\">Spring AI</a>, <a href=\"https://spring.io/projects/spring-modulith\">Spring Modulith</a>, and JobRunr. State is persisted in an embedded H2 database. The runtime supports <a href=\"https://platform.openai.com/docs\">OpenAI</a>, <a href=\"https://docs.anthropic.com\">Anthropic</a>, and <a href=\"https://ollama.com\">Ollama</a> as LLM providers.</p>\n   <p>Architecturally, the project is split into three Spring Modulith modules: <code>base</code> for the core agent, tasks, tools, channels, and configuration; <code>app</code> for the Spring Boot entry point, onboarding UI, and built-in web chat; and <code>plugin</code> for opt-in capabilities such as Brave Search, Discord, Telegram, and Playwright. The agent core wraps Spring AI's <code>ChatClient</code> and registers tools through <code>@Tool</code> annotations, while a <code>Channel</code> interface - implemented by the built-in web chat in app and by the Telegram and Discord plugins - decouples message sources from the agent. The system prompt is composed at runtime from two workspace files: <code>AGENT.md</code> for instructions and <code>INFO.md</code> for environment context.</p>\n   <p>JobRunr handles ClawRunr's asynchronous task execution. User-created tasks are stored as Markdown files under <code>workspace/tasks/</code>, organized by date and tagged with a state in the lifecycle <code>todo → in_progress → completed | awaiting_human_input</code>. Recurring tasks are persisted under <code>workspace/tasks/recurring/</code> and scheduled through JobRunr's cron support, with automatic retries and dashboard-based monitoring. InfoQ previously covered <a href=\"https://www.infoq.com/news/2025/08/jobrunr-8-carbon-aware\">JobRunr 8.0</a>, which added carbon-aware job processing, Kotlin serialization support, and dashboard notifications.</p>\n   <p>The runtime ships with tools for task management, shell command execution, file access, and web scraping. It also includes MCP server integration over both streamable HTTP and stdio transports, and <a href=\"https://brave.com/search/api\">Brave Search</a> when configured. Optional <a href=\"https://playwright.dev\">Playwright</a> integration adds browser automation, including page navigation, element clicks, JavaScript execution, and screenshots. ClawRunr exposes an opt-in dynamic tool discovery mode based on Spring AI's Tool Search Tool pattern, which uses Lucene keyword search to surface relevant tools at request time instead of including all tool definitions in every prompt.</p>\n   <p>ClawRunr's skill system is file-based. Users add capabilities by creating a directory under <code>workspace/skills/</code> and placing a <code>SKILL.md</code> file inside it:</p>\n   <pre><code>workspace/\n└── skills/\n    └── my-skill/\n        └── SKILL.md\n</code></pre>\n   <p>The runtime scans the skills directory and makes those instructions available to the agent without requiring a code change or redeployment.</p>\n   <p>Initial setup is handled through a guided onboarding flow that walks users through provider selection (OpenAI, Anthropic, or Ollama), credentials and model configuration, customization of the agent prompt, optional MCP server setup, and channel configuration for Telegram or Discord. Configuration is persisted to application.yaml, where channels are wired up declaratively:</p>\n   <pre><code>agent:\n  channels:\n    telegram:\n      token: &lt;your-bot-token&gt;\n      username: &lt;your-telegram-username&gt;\n    discord:\n      token: &lt;your-discord-bot-token&gt;\n      allowed-user: &lt;your-discord-user-id&gt;\n</code></pre>\n   <p>Changes are applied immediately. When Ollama is selected, ClawRunr runs end-to-end against a local model and no data leave the user's hardware.</p>\n   <p>ClawRunr started as a proof of concept intended to demonstrate how JobRunr could be applied to AI agents. The JobRunr team subsequently rewrote the implementation and released the project to the Java community under the LGPL-3.0 license.</p>\n   <p>Known issues called out by the JobRunr team include that Playwright requires a restart after its first browser installation, and that recurring task output is currently better supported through Telegram than through the web chat interface. The roadmap mentions additional channels such as Slack and WhatsApp, along with improved memory management, task planning, built-in tools, and skills.</p>\n   <p>More details about ClawRunr can be found on the <a href=\"https://clawrunr.io\">project website</a> and in the <a href=\"https://github.com/jobrunr/JavaClaw\">GitHub repo</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"JobRunr Introduces ClawRunr, an Open-Source Java AI Agent\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Diogo Carleto\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/clawrunr/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1777647600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "JobRunr 推出 ClawRunr，一个运行在用户自有硬件上的开源 Java AI 智能体，它将对话式交互与持久化、可调度、可监控的后台任务执行相结合。",
+  "oneSentenceSummary": "JobRunr 推出 ClawRunr，一个运行在用户自有硬件上的开源 Java AI 智能体，它将对话式交互与持久化、可调度、可监控的后台任务执行相结合。",
+  "summary": "JobRunr 推出了 ClawRunr，一个专为在用户自有硬件上运行而设计的开源 Java AI 智能体。该项目前身为 JavaClaw，它将对话式交互与持久化任务执行相结合，允许用户创建提醒、自动化重复性工作、通过模型上下文协议（MCP）连接工具，并通过网页聊天、Telegram 和 Discord 进行交互。该项目解决了 AI 智能体设计中的一个常见问题：将重试、持久化、调度和监控作为一等公民。ClawRunr 基于 Java 25、Spring Boot、Spring AI、Spring Modulith 和 JobRunr 构建，支持 OpenAI、Anthropic 和 Ollama 作为 LLM 提供商。其架构分为三个 Spring Modulith 模块：base、app 和 plugin。任务以 Markdown 文件形式存储，并带有生命周期状态，重复性任务则通过 JobRunr 的 cron 支持进行调度。运行时包含用于任务管理、shell 命令、文件访问、网页抓取、MCP 服务器集成以及可选的 Playwright 浏览器自动化的工具。一个基于文件的技能系统允许在不修改代码的情况下添加新功能。初始设置是引导式的，配置会持久化到 application.yaml 文件中。ClawRunr 采用 LGPL-3.0 许可证发布。",
+  "mainPoints": [
+    {
+      "point": "ClawRunr 是一个运行在用户自有硬件上的开源 Java AI 智能体，专为持久化、可调度和可监控的后台任务而设计。",
+      "explanation": "它解决了 AI 智能体设计中的一个常见问题：将重试、持久化、调度和监控作为长时间运行智能体工作的一等公民，从而将对话式交互与可靠的任务执行相结合。"
+    },
+    {
+      "point": "该架构基于 Spring Modulith 构建，采用模块化设计，包含三个模块：base、app 和 plugin。",
+      "explanation": "这种设计将核心智能体逻辑、Spring Boot 入口点和网页聊天，以及 Discord、Telegram 和 Playwright 等可选功能分离，实现了灵活的部署和扩展。"
+    },
+    {
+      "point": "任务基于文件系统，以 Markdown 文件形式存储并带有生命周期状态，重复性任务通过 JobRunr 的 cron 支持进行调度。",
+      "explanation": "这种方法使任务管理透明且可调试，JobRunr 提供了自动重试和基于仪表盘的监控功能。"
+    },
+    {
+      "point": "一个基于文件的技能系统允许在不修改代码或重新部署的情况下添加新功能。",
+      "explanation": "用户可以创建一个包含 SKILL.md 文件的目录，使这些指令对智能体可用，从而实现轻松的自定义和扩展。"
+    }
+  ],
+  "keyQuotes": [
+    "ClawRunr 是一个运行在用户自有硬件上的开源 Java AI 智能体，专为执行定时、重复性和一次性的后台任务而设计。",
+    "该项目旨在解决 AI 智能体设计中的一个常见问题：将重试、持久化、调度和监控作为长时间运行智能体工作的一等公民。",
+    "当选择 Ollama 时，ClawRunr 端到端地针对本地模型运行，没有任何数据离开用户的硬件。",
+    "运行时会扫描技能目录，并将这些指令提供给智能体，无需修改代码或重新部署。"
+  ],
+  "tags": [
+    "Java AI 智能体",
+    "JobRunr",
+    "ClawRunr",
+    "开源",
+    "后台任务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 630,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777647600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-01 15:00:00"
+}
