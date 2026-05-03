@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3049c8d9",
+  "title": "DuckLake 1.0：基于 SQL 目录元数据的数据湖格式",
+  "url": "https://www.infoq.com/news/2026/05/ducklake-sql-catalog/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-02 06:48:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://ducklake.select/2026/04/13/ducklake-10/\">DuckDB Labs recently released DuckLake 1.0</a>, a data lake format that stores table metadata in a SQL database rather than across many files in object storage. The first implementation is available as a DuckDB extension and includes catalog-stored small updates, improved sorting and partitioning options, and compatibility with Iceberg-style data features.</p>\n   <p>According to the DuckDB team, file-based metadata in lake formats leads to complex coordination, slow metadata operations, and many small files in object storage. While Apache Iceberg, Delta Lake, and Apache Hudi store metadata mainly as files in object storage, sometimes adding catalog services on top, <a href=\"https://ducklake.select/\">DuckLake</a> stores it directly in a SQL database.</p>\n   <p>A year ago, the so-called \"<a href=\"https://ducklake.select/manifesto/\">DuckLake manifesto</a>\" was published, arguing that lakehouse metadata should be stored in a database rather than spread across many files in object storage. The team writes:</p>\n   <blockquote>\n    <p>We are happy to announce DuckLake v1.0, almost a year after we released our first sketch of the specification. This is a production-ready release with guaranteed backward-compatibility. DuckLake v1.0 ships a stable specification, a feature-rich and fast reference implementation (the DuckDB ducklake extension), as well as a roadmap for future development.</p>\n   </blockquote>\n   <p>DuckLake 1.0 adds several features to improve lakehouse operations and performance. These include data inlining to handle small inserts, updates, and deletes without creating new files, sorted tables to speed up filtered queries, bucket partitioning for high-cardinality columns, improved support for geometry data types, and deletion vectors compatible with Iceberg. Discussing <a href=\"https://ducklake.select/2026/04/02/data-inlining-in-ducklake/\">data inlining</a>, the team notes:</p>\n   <blockquote>\n    <p>Data inlining is one of the flagship features of DuckLake. It basically enables performing small insert, delete and update operations in the catalog database, avoiding the proliferation of \"the small file problem\". DuckLake v1.0 brings full inlining of updates and deletes. This feature is now on by default with a default threshold of 10 rows.</p>\n   </blockquote>\n   <p>On a popular <a href=\"https://www.reddit.com/r/dataengineering/comments/1skalz9/ducklake_v10/\">Reddit thread</a>, user <em>SutMinSnabel4</em> asks:</p>\n   <blockquote>\n    <p>Could you add first-class support for the SMB protocol? I do not mean locally mounted filesystems, since those are OS-dependent. It should work well in traditional enterprise Windows environments too, with DFS, Kerberos, and the whole shebang, but it should also work on macOS and Linux machines (...) A lot of enterprises still rely on SMB on-premises.</p>\n   </blockquote>\n   <p>On Hacker News, Alexander Dahl, data platform engineer, <a href=\"https://news.ycombinator.com/item?id=47750931\">writes</a>:</p>\n   <blockquote>\n    <p>Very exciting! The numbers seem to crush Iceberg. Has anyone tried it out for \"real\" workloads?</p>\n   </blockquote>\n   <p>DuckLake clients are available for Apache DataFusion, Apache Spark, Trino, and Pandas. MotherDuck also offers a hosted DuckLake service that manages the catalog database and storage.</p>\n   <p>DuckLake v1.1 is expected to add improvements such as variant inlining across catalogs and multi-deletion vector Puffin files. According to the roadmap, DuckLake v2.0 will introduce Git-like branching for datasets and built-in role-based permissions.</p>\n   <p>The <a href=\"https://github.com/esadek/awesome-ducklake\">awesome-ducklake repository</a> provides DuckLake use cases and libraries. DuckLake 1.0 is <a href=\"https://github.com/duckdb/ducklake\">available on GitHub</a> under an MIT license.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DuckLake 1.0: Data Lake Format with SQL Catalog Metadata\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/ducklake-sql-catalog/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1777704480000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DuckLake 1.0 是一种新型数据湖格式，它将表元数据存储在 SQL 数据库中，而非对象存储的文件中，旨在解决小文件问题并提升元数据操作性能。",
+  "oneSentenceSummary": "DuckLake 1.0 是一种新型数据湖格式，它将表元数据存储在 SQL 数据库中，而非对象存储的文件中，旨在解决小文件问题并提升元数据操作性能。",
+  "summary": "DuckDB Labs 发布了 DuckLake 1.0，这是一个生产就绪的数据湖格式，在元数据管理上采用了根本不同的方法。与将元数据作为文件存储在对象存储中的 Apache Iceberg、Delta Lake 和 Apache Hudi 不同，DuckLake 直接将元数据存储在 SQL 数据库中。这种设计最初在一年前的“DuckLake 宣言”中提出，旨在消除基于文件的元数据所带来的复杂协调和缓慢的元数据操作。1.0 版本的关键特性包括：用于处理小型插入、更新和删除操作而无需创建新文件的数据内联、用于加速过滤查询的排序表、用于高基数列的分桶分区，以及与 Iceberg 兼容的删除向量。首个实现以 DuckDB 扩展的形式提供，同时也有适用于 Apache DataFusion、Apache Spark、Trino 和 Pandas 的客户端。该项目在 MIT 许可下开源，其路线图规划了未来计划，包括在 v2.0 中为数据集提供类似 Git 的分支功能。",
+  "mainPoints": [
+    {
+      "point": "DuckLake 将表元数据存储在 SQL 数据库中，而非对象存储的文件中。",
+      "explanation": "这与 Iceberg、Delta Lake 和 Hudi 将元数据存储为文件的做法形成对比。DuckLake 的方法旨在通过利用数据库的事务能力来消除小文件问题并加速元数据操作。"
+    },
+    {
+      "point": "数据内联是一项旗舰特性，可在不创建新文件的情况下处理小型更新。",
+      "explanation": "小型插入、更新和删除操作直接存储在目录数据库中，避免了在对象存储中产生大量小文件。此功能默认启用，阈值为 10 行。"
+    },
+    {
+      "point": "DuckLake 1.0 是一个生产就绪的版本，并保证向后兼容性。",
+      "explanation": "该版本提供了稳定的规范、作为 DuckDB 扩展的功能丰富的参考实现，以及清晰的未来发展路线图，标志着其已具备用于实际生产环境的成熟度。"
+    }
+  ],
+  "keyQuotes": [
+    "DuckLake v1.0 提供了稳定的规范、功能丰富且快速的参考实现（DuckDB ducklake 扩展），以及未来发展的路线图。",
+    "数据内联是 DuckLake 的旗舰特性之一。它基本上允许在目录数据库中执行小型插入、删除和更新操作，从而避免“小文件问题”的泛滥。",
+    "非常令人兴奋！这些数字似乎碾压了 Iceberg。有人在实际工作负载中尝试过它吗？"
+  ],
+  "tags": [
+    "DuckLake",
+    "数据湖",
+    "DuckDB",
+    "Apache Iceberg",
+    "数据工程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 467,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777704480000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-02 06:48:00"
+}

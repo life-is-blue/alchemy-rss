@@ -1,0 +1,59 @@
+{
+  "id": "RAW_ed5d24fa",
+  "title": "王兴兴亲测后点赞！这家 AI 公司提前半年把“龙虾”能力带上车，还管住了 Token 黑洞",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283262&idx=2&sn=8ea53f02c0b62df1e147d04b51f6615a",
+  "date": "2026-05-02 02:31:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": null,
+  "aiSummary": "斑马智能发布「元神 AI」升级版，推出全模态端侧大模型产品矩阵 AutoOmni 和「龙虾上车」方案 AutoClaw，旨在将智能座舱从功能集合进化为可主动协作的汽车机器人大脑。",
+  "oneSentenceSummary": "斑马智能发布「元神 AI」升级版，推出全模态端侧大模型产品矩阵 AutoOmni 和「龙虾上车」方案 AutoClaw，旨在将智能座舱从功能集合进化为可主动协作的汽车机器人大脑。",
+  "summary": "本文报道了斑马智能在 AI TECH DAY 上发布的技术升级。核心是「元神 AI 汽车机器人大脑」的进化，包含两大引擎：交流侧的 AutoOmni 全模态端侧大模型产品矩阵，以及办事侧的 AutoClaw 智能体协作方案。AutoOmni 基于阿里通义千问和高通芯片，实现端侧全模态感知与记忆，提供类人自然交互。AutoClaw 则通过端云一体中枢系统连接全车，驱动多个 SuperAgent 协同完成复杂任务，如动态规划聚餐安排。文章还重点介绍了斑马智能在 Token 消耗管控（任务信息压缩、反思机制、独立 Token 管理）和权限安全（沙箱隔离、数据密封）方面的工程实践。斑马智能 CTO 司罗判断，2026 年端侧智舱 AI 将从高配走向标配，并透露其已形成标准化 Super Agent 开发范式，可将传统 App 的 Agent 化改造周期缩短 50% 以上。",
+  "mainPoints": [
+    {
+      "point": "斑马智能发布「元神 AI」升级版，核心是交流与办事两大引擎。",
+      "explanation": "交流侧由全模态端侧大模型 AutoOmni 支撑，实现类人自然交互；办事侧由 AutoClaw 智能体协作方案驱动，通过多个 SuperAgent 协同完成复杂任务。"
+    },
+    {
+      "point": "AutoOmni 从单一技术产品升级为产品矩阵，端侧模型是必选项。",
+      "explanation": "基于阿里通义千问和高通 SA8397P 芯片，AutoOmni 提供端智能交互中枢和生成式场景引擎，强调本地感知、理解和记忆以实现连续体验。"
+    },
+    {
+      "point": "AutoClaw 方案提前半年布局「龙虾」类能力，并解决 Token 消耗和权限安全两大挑战。",
+      "explanation": "通过任务信息压缩、反思机制和独立 Token 管理来管控 Token 消耗；使用沙箱隔离和数据密封来防止权限滥用和模型幻觉导致的信息泄露。"
+    },
+    {
+      "point": "斑马智能已形成标准化 Super Agent 开发范式，可将 App 改造周期缩短 50% 以上。",
+      "explanation": "通过流程标准化，将「应用变 Agent」的路径工程化，帮助 OEM 厂商快速丰富座舱生态，已覆盖十几个智能座舱场景。"
+    }
+  ],
+  "keyQuotes": [
+    "好的智舱 AI 就是能和人顺畅交流，还能协作把事办了。",
+    "如果一个 AI 始终不能看、不能听、不能记忆，它就不能再继续进化了。",
+    "今年，AI 上车会从高配走向标配。",
+    "智舱 AI 成为中国智造的名片，技术领先欧美不是 1-2 年，而是 1-2 个代际。",
+    "谁能率先把 AI 做成可量产、可交付、可持续迭代的系统能力，谁就更有机会拿到下一阶段产业红利。"
+  ],
+  "tags": [
+    "智能座舱",
+    "端侧大模型",
+    "Agent",
+    "AutoOmni",
+    "AutoClaw"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 86,
+  "wordCount": 3276,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1777689060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-02 02:31:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a1edc9ef",
+  "title": "2021 年的量化算法如何悄然超越其 2026 年的继任者",
+  "url": "https://towardsdatascience.com/how-a-2021-quantization-algorithm-quietly-outperforms-its-2026-successor/",
+  "date": "2026-05-02 13:00:00",
+  "author": "Amit Portnoy",
+  "siteName": "Towards Data Science",
+  "content": null,
+  "aiSummary": "本文展示了 2021 年的量化算法 EDEN 通过分析优化缩放因子，持续优于 2026 年的 TurboQuant 方法，通常能在每个坐标少用一个比特的情况下达到 TurboQuant 的精度。",
+  "oneSentenceSummary": "本文展示了 2021 年的量化算法 EDEN 通过分析优化缩放因子，持续优于 2026 年的 TurboQuant 方法，通常能在每个坐标少用一个比特的情况下达到 TurboQuant 的精度。",
+  "summary": "本文对 EDEN 量化算法（首次发表于 NeurIPS 2021）与更新的 TurboQuant 方法（ICLR 2026）进行了详细的技术比较。作为 EDEN 的合著者，作者认为 TurboQuant 的 MSE 最小化变体（TurboQuant-mse）是 EDEN 的一个退化版本，它省略了关键步骤：分析优化缩放因子。由于将缩放因子固定为 1 而非根据已知的旋转后分布推导得出，TurboQuant-mse 会持续产生 MSE 损失，尤其是在实际维度（128-1024）和位宽（2-4 位）下。比较还扩展到无偏变体，其中 EDEN-unbiased 的单次通过设计优于 TurboQuant-prod 的比特拆分策略（有偏量化加 1 位残差校正）。作者表明，使用 b 位的 EDEN-unbiased 通常优于使用 b+1 位的 TurboQuant-prod，实际上每个坐标节省了整整一个比特。这些主张得到了理论分析、伪代码以及在标准 ANN 基准测试（GloVe、OpenAI3 嵌入）上的实证结果的支持。文章最后倡导使用 EDEN 及其可用的实现。",
+  "mainPoints": [
+    {
+      "point": "TurboQuant-mse 是早期 EDEN 算法的一个退化版本，它省略了最优缩放因子。",
+      "explanation": "两种算法都使用随机旋转和 Lloyd-Max 码本，但 EDEN 从已知的旋转后分布中分析推导出缩放因子 S 以最小化 MSE，而 TurboQuant-mse 固定 S=1，使其成为一个严格意义上更弱的特例。"
+    },
+    {
+      "point": "EDEN-unbiased 优于 TurboQuant-prod，其优势超过每个坐标一个比特。",
+      "explanation": "EDEN-unbiased 的单次通过设计将全部比特预算用于一个具有最优缩放因子的单一无偏量化器，而 TurboQuant-prod 将预算拆分为有偏比特和残差校正，导致更高的方差和更低的精度。"
+    },
+    {
+      "point": "性能差距在生产中使用的实际维度和位宽下最为显著。",
+      "explanation": "在维度 128-1024 和位宽 2-4 的情况下，最优缩放因子偏离 1，这使得 EDEN 的分析优化至关重要。只有在维度非常高、最优缩放因子接近 1 时，差距才会缩小。"
+    }
+  ],
+  "keyQuotes": [
+    "TurboQuant-mse 是 EDEN 的一个退化版本，而 EDEN 的各种变体始终优于其对应版本。",
+    "EDEN-unbiased 大幅优于 TurboQuant-prod 的比特拆分策略，其优势超过每个坐标整整一个比特。",
+    "通过替换为 EDEN，你可以每个坐标少用一个比特，同时仍能达到 TurboQuant-prod 的精度。"
+  ],
+  "tags": [
+    "量化",
+    "EDEN",
+    "TurboQuant",
+    "向量量化",
+    "模型压缩"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 86,
+  "wordCount": 1461,
+  "domain": "towardsdatascience.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777726800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-02 13:00:00"
+}
