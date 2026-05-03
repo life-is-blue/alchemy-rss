@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-03 08:21:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-03 11:03:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3475,25 +3475,19 @@
 
 ### [你应该实际使用哪种正则化器？来自-134，400-次模拟的经验](https://towardsdatascience.com/which-regularizer-should-you-actually-use-lessons-from-134400-simulations/)
 
-2026-05-02 15:00:00 | 标签: 正则化, Ridge, Lasso, ElasticNet, 机器学习
-
-> 本文通过一项全面的模拟研究，在 134，400 次模拟中比较了 Ridge、Lasso、ElasticNet 和 Post-Lasso OLS 正则化器。该研究基于 Instacart 的八个真实生产 ML 模型，覆盖了一个 7 维参数空间。主要发现如下：(1) 对于预测，Ridge、Lasso 和 ElasticNet 几乎可以互换，中位数 RMSE 差异最多为 0.3%，因此推荐 Ridge 作为默认选择，因其计算效率高。(2) 对于变量选择，ElasticNet 是安全的默认选择，尤其是在高多重共线性（κ > ~10⁴）下，此时 Lasso 的召回率降至 0.18，而 ElasticNe...
+2026-05-02 15:00:00
 
 
 
 ### [3-年从工程师到-CTO！华人将执掌硅谷千亿-AI-公司，毕业自中科大少年班](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247722440&idx=1&sn=1e947e3bd8de3cb616e7bf146b10b407)
 
-2026-05-02 14:08:00 | 标签: 葛小川, AppLovin, CTO, 硅谷华人, 职业发展
-
-> 文章聚焦于 AppLovin 新任 CTO 葛小川的职业历程。他毕业于中科大少年班，在意大利获得物理学博士学位，后经历学术和职业迷茫，最终在 Facebook 找到方向。2022 年，他选择加入市值暴跌的 AppLovin，在资源极度受限的情况下，从零开始重建核心广告推荐算法（AXON 2.0），并带领团队实现公司技术转型。文章深入探讨了他的技术哲学：不追逐最热门的 AI 标签，而是回归问题本身的价值；在人才招聘上，他偏爱有「underdog」精神、能做出独立思考的「聚光灯边缘」人才。他的故事不仅是一个华人工程师在硅谷的晋升奇迹，更是一份关于如何在逆境中做出「计算过的风险」、坚持自我标准的职业...
+2026-05-02 14:08:00
 
 
 
 ### [2021-年的量化算法如何悄然超越其-2026-年的继任者](https://towardsdatascience.com/how-a-2021-quantization-algorithm-quietly-outperforms-its-2026-successor/)
 
-2026-05-02 13:00:00 | 标签: 量化, EDEN, TurboQuant, 向量量化, 模型压缩
-
-> 本文对 EDEN 量化算法（首次发表于 NeurIPS 2021）与更新的 TurboQuant 方法（ICLR 2026）进行了详细的技术比较。作为 EDEN 的合著者，作者认为 TurboQuant 的 MSE 最小化变体（TurboQuant-mse）是 EDEN 的一个退化版本，它省略了关键步骤：分析优化缩放因子。由于将缩放因子固定为 1 而非根据已知的旋转后分布推导得出，TurboQuant-mse 会持续产生 MSE 损失，尤其是在实际维度（128-1024）和位宽（2-4 位）下。比较还扩展到无偏变体，其中 EDEN-unbiased 的单次通过设计优于 TurboQuant-p...
+2026-05-02 13:00:00
 
 
 
@@ -13021,9 +13015,7 @@
 
 ### [DuckLake-1.0：基于-SQL-目录元数据的数据湖格式](https://www.infoq.com/news/2026/05/ducklake-sql-catalog/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-02 06:48:00 | 标签: DuckLake, 数据湖, DuckDB, Apache Iceberg, 数据工程
-
-> DuckDB Labs 发布了 DuckLake 1.0，这是一个生产就绪的数据湖格式，在元数据管理上采用了根本不同的方法。与将元数据作为文件存储在对象存储中的 Apache Iceberg、Delta Lake 和 Apache Hudi 不同，DuckLake 直接将元数据存储在 SQL 数据库中。这种设计最初在一年前的“DuckLake 宣言”中提出，旨在消除基于文件的元数据所带来的复杂协调和缓慢的元数据操作。1.0 版本的关键特性包括：用于处理小型插入、更新和删除操作而无需创建新文件的数据内联、用于加速过滤查询的排序表、用于高基数列的分桶分区，以及与 Iceberg 兼容的删除向量。首...
+2026-05-02 06:48:00
 
 
 
@@ -33691,11 +33683,11 @@
 
 
 
-### [在中国-AI-生态圈摸底了两周，我学到了什么](https://baoyu.io/translations/2026-03-26/what-i-learned-from-two-weeks-inside-china-s-ai-ecosystem)
+### [Notion-联合创始人-Simon-Last：我从去年夏天起就没写过一行代码了](https://baoyu.io/blog/from-note-taking-app-to-ai-workspace-the-simon-last-interview)
 
-2026-03-26T00:00:00.000Z
+2026-03-28T00:00:00.000Z
 
-> 一位西方 VC 深入中国 AI 生态圈的第一手观察：创始人特质、硬件壁垒、软件泡沫与那个被忽视的不对称性
+> Notion 联合创始人讲述 AI harness 每六个月推倒重写、编码 Agent 连续跑 13 天的幕后故事。
 
 
 
