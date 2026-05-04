@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9fbe96d6",
+  "title": "为什么我制作了《工程谜题》——LessWrong",
+  "url": "https://www.lesswrong.com/posts/ht6mfTtK5jucfxCff/why-i-made-engineering-enigmas",
+  "date": "2026-05-03 18:04:53",
+  "author": "kqr",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span><span><a href=\"https://xkqr.org/engeni\"><span>Engineering Enigmas</span></a></span></span><span> is simplified Tarot reading for working engineers.</span></p>\n    <p id=\"block1\"><span>Any time you feel stuck and need help in finding a way forward, open that web page and follow the advice given. You may have to be creative in how you interpret the advice in order for it to apply to your situation – that’s intentional.</span></p>\n    <p id=\"block2\"><span>Don’t refresh the page until you get advice that suits you better. Take what you are given and roll with it.</span></p>\n    <hr>\n    <p id=\"block3\"><span>… wait, what? But why?</span></p>\n    <h1 id=\"Humans_hate_deciding_things_randomly_but_do_it_anyway\"><span>Humans hate deciding things randomly but do it anyway</span></h1>\n    <p id=\"block4\"><span>Humans like to be seen as either</span></p>\n    <ol>\n     <li value=\"1\" id=\"block5\"><span>rational, analytical people capable of strategising their decisions down to the last detail; or</span></li>\n     <li value=\"2\" id=\"block6\"><span>in tune with their inner emotions and intuition, capable of understanding exactly all nuances of how they feel about alternatives.</span></li>\n    </ol>\n    <p id=\"block7\"><span>That’s what we tell ourselves, but we are never that analytical or intuitive. In its place, we have used randomness to decide things since time immemorial. When we do it, we do it in a way that allows us to hide that it has happened – even from ourselves. Here are three of the ways.</span></p>\n    <h2 id=\"We_have_entire_professions_legitimising_arbitrary_decisions\"><span>We have entire professions legitimising arbitrary decisions</span></h2>\n    <p id=\"block8\"><span>Many of our decisions have no strong rationale either way.</span></p>\n    <ul>\n     <li value=\"1\" id=\"block9\"><span>Which of these four alternatives should we try first to improve our profitability?</span></li>\n     <li value=\"2\" id=\"block10\"><span>Which cloud provider should we rely on for primary services?</span></li>\n     <li value=\"3\" id=\"block11\"><span>Which job offer should I accept?</span></li>\n     <li value=\"4\" id=\"block12\"><span>How much time should we spend on paying down technical debt?</span></li>\n    </ul>\n    <p id=\"block13\"><span>A decision needs to be made, but among decent alternatives, we can’t really single out one clearly superior option. This means whatever we decide, it will ultimately be arbitrary.</span></p>\n    <p id=\"block14\"><span>Admitting to an arbitrary decision makes us look not-analytical and not-intuitive, so we look to others to validate our decision and lend it legitimacy. This is the reason we pay astrologers, witch-doctors, macroeconomists, and management consultants; they are all people that generate decisions </span><span><span><a href=\"https://entropicthoughts.com/no-feedback-no-good.html\"><span>with the rational capacity of a pair of dice</span></a></span></span><span>, but we pretend they know what they are doing so their support turns an arbitrary decision into a legitimate one. Result: we are no worse off, but we sleep better at night.</span></p>\n    <p id=\"block15\"><span>These professions hide how clueless we are behind fancy words and speculative hypotheses. They serve a social function, rather than a technical one. The decision is just as arbitrary as before.</span></p>\n    <h2 id=\"Randomness_can_improve_decisions_in_adversarial_situations\"><span>Randomness can improve decisions in adversarial situations</span></h2>\n    <p id=\"block16\"><span>In section five of </span><span><span><a href=\"https://slatestarcodex.com/2019/06/04/book-review-the-secret-of-our-success/\"><span>Scott Alexander’s review of </span><i><span>The Secret of Our Success</span></i></a></span></span><span> he quotes the author explaining how Naskapi foragers decide where to hunt for caribou:</span></p>\n    <blockquote id=\"block17\">\n     <p id=\"block18\"><span>Traditionally, Naskapi hunters decided where to go to hunt using divination and believed that the shoulder bones of caribou could point the way to success. To start the ritual, the shoulder blade was heated over hot coals in a way that caused patterns of cracks and burnt spots to form. This patterning was then read as a kind of map, which was held in a pre-specified orientation. The cracking patterns were (probably) essentially random from the point of view of hunting locations, since the outcomes depended on myriad details about the bone, fire, ambient temperature, and heating process. Thus, these divination rituals may have provided a crude randomizing device that helped hunters avoid their own decision-making biases.</span></p>\n    </blockquote>\n    <p id=\"block19\"><span>This randomness serves much the same function as randomness in poker or rock-paper-scissors: in adversarial situations, deterministic and systematic strategies can be exploited. The caribou can learn how the Naskapi hunt – unless they randomise their decisions. Of course, they didn’t admit to this randomisation. The cracking pattern is a message from the deities.</span></p>\n    <h2 id=\"Randomness_can_infuse_creativity\"><span>Randomness can infuse creativity</span></h2>\n    <p id=\"block20\"><span>Sometimes the astrologer (or management consultant, or heated bone) does not directly decide, but they inject enough randomness into the decision process to kick loose a few rocks and spark the creativity of the real decision-maker. (Weinberg talks a lot about this in his </span><i><span>Secrets of Consulting</span></i><span> book series, where he calls it </span><i><span>jiggling</span></i><span> the system.)</span></p>\n    <h1 id=\"Embrace_the_randomness\"><span>Embrace the randomness</span></h1>\n    <p id=\"block21\"><span>Instead of fighting against the arbitrariness and randomness involved in making decisions, we can save a lot of time and effort by realising it is there, and using it more actively. If I find it hard to decide something (e.g. between strawberry or vanilla ice cream) I glance down at my watch, and thanks to chronostasis (the neuro-optical phenomenon where when you first look at a clock, the second hand appears to stand still for longer than usual before getting moving again) it is trivial to see whether I did so when the second hand pointed at an even or odd number. If it was even, I go with the first choice, otherwise the second.</span></p>\n    <p id=\"block22\"><span>I use this method to decide on a lot of things. I don’t admit it often, because when people around me realise that’s what happened, they sigh and treat the decision as invalid and get re-stuck trying to decide again.</span></p>\n    <p id=\"block23\"><span>The reason it makes sense to embrace randomness is that however rational we are, we can never strategise down to the last detail. Chance and unknown factors play such a large part in determining the outcome that at some point, it’s better to stop strategising and just decide. Anything is better than nothing, and </span><span><span><a href=\"https://commoncog.com/action-produces-information/\" rel=\"noreferrer\"><span>doing </span><i><span>something</span></i><span> will give us more information</span></a></span></span><span>. This information is helpful for adjusting or making similar decisions in the future.</span></p>\n    <h1 id=\"Tarot_for_engineering\"><span>Tarot for engineering</span></h1>\n    <p id=\"block24\"><span>This is what </span><span><span><a href=\"https://xkqr.org/engeni\"><span>Engineering Enigmas</span></a></span></span><span> helps us do. A while back I read Xe Iaso’s </span><span><span><a href=\"https://xeiaso.net/blog/tarot-for-hackers-2019-07-24/\"><span>Tarot for Hackers</span></a></span></span><span> article, where she proposes drawing Tarot cards to help understand software systems. What I dislike about that approach is that it requires some familiarity with Tarot cards and their meaning, as well as how that meaning changes depending on location in the spread. We don’t have time for that! We just want to be kicked loose.</span></p>\n    <p id=\"block25\"><span>What we want is something closer to </span><span><span><a href=\"https://en.wikipedia.org/wiki/Oblique_Strategies\"><span>Eno and Schmidt’s </span><i><span>Obliuqe Strategies</span></i></a></span></span><span>. Inspired by that, I authored vague and widely applicable advice based on the meaning of each Tarot card. That’s what the tool shows you.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文主张工程师应在决策中拥抱随机性，并介绍了一款名为“工程谜题”的塔罗牌启发工具，旨在帮助打破分析瘫痪、激发创造力。",
+  "oneSentenceSummary": "本文主张工程师应在决策中拥抱随机性，并介绍了一款名为“工程谜题”的塔罗牌启发工具，旨在帮助打破分析瘫痪、激发创造力。",
+  "summary": "作者介绍了“工程谜题”这一基于网页的工具，它能提供随机、受塔罗牌启发的建议，帮助工程师在陷入困境时做出决策。核心论点是：人类并不像自己认为的那样理性或直觉敏锐，反而常常依赖任意或随机的过程（如咨询占星师、管理顾问，甚至古代占卜仪式）来使决策合法化。文章探讨了随机性的三个关键益处：在对抗性情境中避免被利用（如纳斯卡皮猎人利用随机骨裂来智取驯鹿）；通过“扰动”系统注入创造力；以及通过打破分析瘫痪来节省时间。作者认为，工程师不应抗拒这种固有的随机性，而应拥抱它。“工程谜题”工具正是实现这一点的实用、低摩擦方式，它基于塔罗牌含义提供模糊但适用的建议，类似于伊诺和施密特的《斜向策略》。其目标不是找到“完美”答案，而是采取行动，生成信息以指导未来决策。",
+  "mainPoints": [
+    {
+      "point": "人类并不像自己认为的那样理性或直觉敏锐；他们常常依赖隐藏的随机性来做决策。",
+      "explanation": "文章认为，管理顾问和占星师等职业通过将本质上任意的决策合法化来发挥社会功能，掩盖了我们常常缺乏明确理由的事实。"
+    },
+    {
+      "point": "在对抗性情境中，随机性可以成为避免被利用的强大工具。",
+      "explanation": "作者以纳斯卡皮猎人利用随机骨裂来猎捕驯鹿为例，解释了确定性策略可以被学习和对抗，而随机性则引入了不可预测性。"
+    },
+    {
+      "point": "拥抱随机性可以打破分析瘫痪并激发创造力。",
+      "explanation": "通过使用随机决策方法（如作者的手表秒数技巧或“工程谜题”工具），人们可以停止过度思考并采取行动，从而为未来决策生成有价值的信息。"
+    }
+  ],
+  "keyQuotes": [
+    "承认一个决策是任意的会让我们显得既不分析也不直觉，因此我们寻求他人来验证我们的决策并赋予其合法性。",
+    "骨裂的模式是神明的信息。",
+    "与其对抗决策中涉及的任意性和随机性，不如意识到它的存在并更积极地利用它，从而节省大量时间和精力。",
+    "任何行动都比没有行动好，做点什么会给我们更多信息。",
+    "我们想要的是更接近伊诺和施密特的《斜向策略》的东西。"
+  ],
+  "tags": [
+    "决策",
+    "随机性",
+    "工程",
+    "创造力",
+    "认知偏差"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 997,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PG_LEARNING",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777831493000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-03 18:04:53"
+}
