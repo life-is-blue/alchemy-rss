@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-05 06:20:44 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-05 08:24:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -492,6 +492,14 @@
 
 
 
+### [工具：Redis-数组类型交互式演示](https://simonwillison.net/2026/May/4/redis-array/#atom-everything)
+
+2026-05-04 15:53:57 | 标签: Redis, 数组数据类型, WebAssembly, 交互式演示, 开发者工具
+
+> Simon Willison 创建了一个基于 Web 的交互式演示，用于实验 Salvatore Sanfilippo（antirez）在最近 PR 中提出的新 Redis 数组数据类型。该演示将 Redis 的子集编译为 WebAssembly，用户无需在本地构建分支，即可直接在浏览器中尝试所有新的数组命令。其中最引人注目的命令是 ARGREP，它利用 TRE 正则表达式库，实现了对数组值的服务端 grep 模式匹配。该工具提供了一个可视化命令构建界面，支持谓词、标志和限制等选项。Willison 使用 Claude Code for web 构建了这个演示，而 Sanfilippo 也单独...
+
+
+
 ### [李飞飞世界模型开源渲染神器-Spark-2.0，将亿级-3D-世界搬进浏览器](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651027815&idx=2&sn=deedfb56322150d7db37f6f1ca1851f5)
 
 2026-04-15 04:21:00
@@ -651,6 +659,30 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [前端工程师如何驾驭微服务架构](https://www.freecodecamp.org/news/how-to-navigate-microservices-as-a-frontend-engineer/)
+
+2026-05-04 17:59:55 | 标签: 微服务, 前端工程, BFF, API 设计, React
+
+> 本文探讨了前端工程师在使用微服务后端时面临的独特挑战。文章指出，多个 API 契约、部分故障、数据不一致和延迟增加等问题，本质上是前端问题，需要前端解决方案。作者提出了六种实用模式：用于聚合服务调用的后端即前端（BFF）模式；通过将数据分类为关键或非关键来处理部分故障的策略；通过适当的缓存边界和跨服务失效来管理分布式状态的技术；用于规范化多个 API 契约的适配层；页面组装超时预算；以及基于服务范围的 React 错误边界。文章还强调了与后端团队就 API 契约进行主动沟通的重要性，倡导使用机器可读的规范和契约测试。最后，文章建议前端工程师对那些给 UI 层带来不合理负担的架构决策提出质疑。
+
+
+
+### [如何在浏览器中使用-JavaScript-压缩-PDF-文件（分步指南）](https://www.freecodecamp.org/news/how-to-compress-pdf-files-in-the-browser-using-javascript/)
+
+2026-05-04 14:46:42 | 标签: JavaScript, PDF 压缩, pdf-lib, 浏览器 API, 客户端
+
+> 本文提供了一份关于使用 JavaScript 创建基于浏览器的 PDF 压缩工具的分步指南。文章解释了 PDF 压缩与图像压缩的不同之处，因为 PDF 是包含文本、图像和元数据的结构化文档。核心方法是使用 `pdf-lib` 库来加载、重建并保存一个具有优化对象流的 PDF，这可以减小文件大小。本教程涵盖了项目设置、创建上传界面、读取文件、实现压缩逻辑以及启用文件下载等环节。它还包含了处理大文件、验证用户输入以及管理性能的实用建议，并强调所有处理均在客户端完成以增强隐私保护。文章最后展示了该工具的工作流程演示，并列出了一些常见错误（例如未验证文件类型或大小）以避免。
+
+
+
+### [固定高度卡片：看似稳固，实则脆弱](https://css-tricks.com/fixed-height-cards-more-fragile-than-they-look/)
+
+2026-05-04 08:01:40 | 标签: CSS, 卡片布局, 响应式设计, CSS Grid, Flexbox
+
+> 本文探讨了网页设计中固定高度卡片布局的脆弱性。文章从一个常见场景切入：设计师提供了一份卡片完美对齐的视觉稿，但当内容发生变化时——翻译导致单词变长、用户调整字体大小、或图片加载失败——布局就会崩溃。作者剖析了根本原因：固定高度覆盖了浏览器的默认尺寸计算，绝对定位元素脱离了文档流，而行数截断则是在抑制内容而非容纳内容。解决方案包括：移除固定高度，使用带有 `auto-fit` 和 `minmax()` 的 CSS Grid 实现等高对齐，将卡片转换为 `flex-direction: column` 和 `flex: 1` 的 Flex 容器以实现自然内容流，以及应用 `clamp()` 实现流...
 
 
 
@@ -1014,13 +1046,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1170,13 +1202,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2670,13 +2702,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4380,13 +4412,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

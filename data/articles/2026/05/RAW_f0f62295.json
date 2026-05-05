@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f0f62295",
+  "title": "Andy Masley 的引述",
+  "url": "https://simonwillison.net/2026/May/4/andy-masley/#atom-everything",
+  "date": "2026-05-04 22:51:09",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">4th May 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://blog.andymasley.com/p/data-center-land-use-issues-are-fake\">\n     <p>[...] Between 2000 and 2024, farmers sold in total a Colorado-sized chunk of land all on their own, 77 times all land on data center property in 2028, and grew more food than ever on what was left. None of this caused any problems for US food access.</p>\n     <p>And then, in the middle of all this, a farmer in Loudoun County sells a few acres of mediocre hay field to a hyperscaler for ten times its agricultural value, and the response is that we’re running out of farmland.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://blog.andymasley.com/p/data-center-land-use-issues-are-fake\">Andy Masley</a>, <span class=\"context\">pushing back against the \"land use\" argument against data center construction</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2166/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Andy Masley 认为，关于数据中心占用农田的担忧被夸大了，因为农民出于自愿出售的用于其他用途的土地面积远大于此，且并未影响粮食生产。",
+  "oneSentenceSummary": "Andy Masley 认为，关于数据中心占用农田的担忧被夸大了，因为农民出于自愿出售的用于其他用途的土地面积远大于此，且并未影响粮食生产。",
+  "summary": "本文是 Simon Willison 博客上发布的一段 Andy Masley 的简短引述。Masley 反驳了数据中心建设导致农田流失的观点。他提供了一个惊人的对比：2000 年至 2024 年间，农民自愿出售的土地面积相当于科罗拉多州的大小，是 2028 年数据中心总用地面积的 77 倍。尽管如此，美国的粮食供应并未受到影响，粮食产量反而有所增加。他将此与某个农民将几英亩劣质土地卖给超大规模数据中心后引发的过度反应进行对比，后者引发了农田危机的论调。这段引述以数据为依据，简洁有力地驳斥了对科技行业扩张的常见批评。",
+  "mainPoints": [
+    {
+      "point": "数据中心造成的农田流失规模与农民自愿出售的土地相比微不足道。",
+      "explanation": "2000 年至 2024 年间，农民自愿出售了相当于科罗拉多州面积的土地，是 2028 年数据中心预计总用地面积的 77 倍。"
+    },
+    {
+      "point": "农民自愿出售土地并未对美国的粮食生产或供应产生负面影响。",
+      "explanation": "尽管有大规模的土地出售，农民在剩余土地上种植的粮食比以往任何时候都多，并且粮食供应没有问题。"
+    },
+    {
+      "point": "公众对数据中心用地的反应是过度且具有误导性的。",
+      "explanation": "仅仅一个农民将几英亩劣质土地卖给超大规模数据中心，就引发了农田危机的论调，而忽视了农民更大规模、毫无争议的土地出售行为。"
+    }
+  ],
+  "keyQuotes": [
+    "2000 年至 2024 年间，农民自行出售的土地总面积相当于一个科罗拉多州，是 2028 年数据中心所有用地面积的 77 倍，并且在剩余土地上种植了比以往任何时候都多的粮食。",
+    "这一切都没有对美国的粮食供应造成任何问题。",
+    "劳登县的一个农民将几英亩劣质干草田以农业价值十倍的价格卖给超大规模数据中心，而人们的反应却是我们快没有农田了。"
+  ],
+  "tags": [
+    "数据中心",
+    "土地利用",
+    "农田",
+    "科技批评",
+    "Andy Masley"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 105,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1777935069000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-04 22:51:09"
+}
