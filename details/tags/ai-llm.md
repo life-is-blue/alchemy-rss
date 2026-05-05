@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-05 08:24:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-05 11:02:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -12032,153 +12032,115 @@
 
 ### [2026-年-4-月通讯](https://simonwillison.net/2026/May/4/april-newsletter/#atom-everything)
 
-2026-05-04 22:38:36 | 标签: AI 新闻, LLM, GPT-5.5, Opus 4.7, Claude Mythos
-
-> 这是 Simon Willison 月度通讯的 2026 年 4 月版，仅面向其 GitHub 赞助者。该通讯精选了 AI 领域的最新动态，包括 Opus 4.7 和 GPT-5.5 模型的发布，两者均伴随价格上涨。此外，还涵盖了 Claude Mythos 及相关 LLM 安全研究、ChatGPT Images 2.0 的发布，以及其他模型发布的汇总。Simon 还分享了他自己博客的亮点以及 2026 年 4 月的个人“我正在使用”板块。文章包含一个指向 3 月通讯预览的链接，并推广每月 10 美元的赞助等级，以便提前一个月获取完整内容。
+2026-05-04 22:38:36
 
 
 
 ### [不可逆性；或者说，墨菲的一次性诅咒降临在-ASI-上-—-LessWrong](https://www.lesswrong.com/posts/fbrz9xhKpEeTKw5zL/irretrievability-or-murphy-s-curse-of-oneshotness-upon-asi)
 
-2026-05-04 22:11:53 | 标签: AI安全, ASI对齐, 一次性问题, 墨菲定律, 工程失败
-
-> 作者 Eliezer Yudkowsky 通过三个详细的历史案例研究来定义和阐述“墨菲的一次性诅咒”这一概念。维京 1 号着陆器展示了聪明的修复方案（软件更新）如何灾难性地失败，反而摧毁了原本用于纠正错误的机制。火星观测者表明，即使拥有丰富的先前经验、测试和科学知识，一项新颖的任务也可能因不可预见的交互而失败，因为训练分布永远无法匹配部署分布。马奇诺防线则例证了在上一场战争（一战）中有效的策略，在新战争（二战）中可能灾难性地错误，而在关乎生存的战争中，你只有一次机会。作者随后将这个框架应用于 ASI 对齐问题，认为这是一个高风险、新颖的项目，失败是不可逆的。他批评了 AI 研究人员的“灾难姿态...
+2026-05-04 22:11:53
 
 
 
 ### [使用-NVIDIA-cuOpt-智能体技能优化供应链决策系统](https://developer.nvidia.com/blog/optimize-supply-chain-decision-systems-using-nvidia-cuopt-agent-skills/)
 
-2026-05-04 20:55:32 | 标签: NVIDIA cuOpt, 智能体技能, 供应链优化, GPU 加速求解器, LLM 智能体
-
-> 文章详细阐述了 NVIDIA cuOpt 智能体技能如何弥合自然语言业务查询与复杂数学优化之间的鸿沟。文章指出，由专业运筹团队处理的传统供应链规划可能需要数周时间，且生成的解决方案较为脆弱。智能体 AI 通过将 LLM 的推理能力与 cuOpt 等 GPU 加速求解器相结合，改变了这一现状，能够在数秒内理解业务问题并生成优化方案。其核心概念是“智能体技能”，这是一种开放格式，可将专门的优化工作流（例如生产计划、库存优化）打包，供 LLM 动态调用。文章提供了设置参考工作流的分步指南，包括环境搭建、使用 MiniMax M2.5 初始化智能体、数据准备、通过 LangChain Deep Age...
+2026-05-04 20:55:32
 
 
 
 ### [口头评估意识会夸大测量的安全性-—-LessWrong](https://www.lesswrong.com/posts/mDriHK4beN5rq2tAA/verbalized-eval-awareness-inflates-measured-safety)
 
-2026-05-04 20:02:24 | 标签: 评估意识, AI 安全, LLM 评估, 思维链, 对齐
-
-> 这篇由 Goodfire 和英国 AISI 共同完成的论文，提供了迄今为止最全面的证据，表明口头评估意识——即大型语言模型自发地表达出意识到自己正在被评估——在 19 个基准测试和 8 个模型中普遍存在，并经过 515 个手动验证的实例确认。作者发现，这种意识与更安全的行为相关：当模型表达出口头评估意识时，拒绝有害请求的频率会高出 3 到 18 个百分点。关键在于，他们在 Fortress 基准测试上针对 Kimi K2.5 模型证明了因果关系：从思维链中移除显示评估意识的句子，会使合规率最多提升 34%；而注入此类句子，则会使拒绝率最多提升 25%。论文识别了触发评估意识的常见提示词线索，并...
+2026-05-04 20:02:24
 
 
 
 ### [单智能体-vs-多智能体：何时构建多智能体系统](https://towardsdatascience.com/single-agent-vs-multi-agent-when-to-build-a-multi-agent-system/)
 
-2026-05-04 20:00:00 | 标签: AI 智能体, 多智能体系统, ReAct, RAG, 编排器
-
-> 本文提供了 AI 智能体设计的全面指南，从智能体的基本组件开始：LLM、工具和记忆。它解释了 ReAct（推理+行动）模式，该模式使智能体能够推理任务、调用工具、观察结果并迭代直到找到解决方案。文章的核心是比较单智能体和多智能体架构，为何时使用每种架构提供了清晰的指导。单智能体适用于工具使用有限的简单任务，而多智能体系统更适合需要专业化角色、多步骤推理和验证的复杂工作流。作者通过软件工程智能体（编排器 → 编码器 → 测试器 → 审查器）和研究智能体（编排器 → 检索器 → 编写器 → 验证器）等示例进行了说明。文章最后详细介绍了作者的“多智能体 RAG 研究者”项目，该项目使用编排器来协调检...
+2026-05-04 20:00:00
 
 
 
 ### [如何为-AI-模型构建高效的知识库](https://towardsdatascience.com/how-to-build-an-efficient-knowledge-base-for-ai-models/)
 
-2026-05-04 17:40:48 | 标签: 知识库, RAG, 向量数据库, LLM, 数据整理
-
-> 文章强调，AI 模型的性能与其知识库的质量直接相关。它概述了一个系统性的六步流程：1）收集相关且高价值的数据，同时避免“垃圾进，垃圾出”的陷阱；2）清洗数据并将其分割成带有元数据的逻辑块，以实现高效检索；3）将数据块转换为向量嵌入并进行组织；4）将向量存储在像 Pinecone 或 Milvus 这样的专用数据库中；5）使用 LlamaIndex 和 LangChain 等框架，通过混合搜索（关键词 + 向量）优化检索；6）建立自动化更新流程，使用 DeepEval 和 TruLens 等工具监控质量和时效性。文章还探讨了诸如数据质量错误、检索缓慢和扩展性差等常见挑战，并提供了如 HNSW 索...
+2026-05-04 17:40:48
 
 
 
 ### [AI-工业起飞-—-第一部分：当前技术下的最大增长率-—-LessWrong](https://www.lesswrong.com/posts/rpqGWRoRWvqJ4Hqgn/ai-industrial-takeoff-part-1-maximum-growth-rates-with)
 
-2026-05-04 15:32:57 | 标签: AI 自动化, 经济增长, 冯·诺依曼增长率, 投入产出分析, AGI
-
-> 本文挑战了主流经济学关于 AI 只会带来几个百分点增长的预测。文章认为，如果 AI 能够完全自动化人类劳动，经济增长的主要约束将变为实物资本（工厂、机器、基础设施）自我复制的速度。作者利用美国投入产出表、资本存量数据和折旧率，计算了自主经济的冯·诺依曼增长率。核心发现是，即使在保守假设下（除自动化外无技术进步，并考虑了资源枯竭和建设延迟），经济也能在大约一到两年内翻一番。分析系统地增加了现实因素：替代劳动的机器人和计算硬件的成本、矿石品位下降和化石燃料枯竭的影响、建设延迟的影响以及消费的拖累。结果一致表明，一旦劳动实现自动化，经济就具备了快速增长的物理能力，而标准经济学对缓慢增长的预测，实际上...
+2026-05-04 15:32:57
 
 
 
 ### [申请-ARBOx4-截止日期-5-月-8-日-—-LessWrong](https://www.lesswrong.com/posts/udzRTeQFa5dG2RxvJ/apply-for-arbox4-deadline-may-8th)
 
-2026-05-04 15:28:15 | 标签: AI 安全, 训练营, 职业发展, 机器学习, 通才技能
-
-> 本文宣布了牛津对齐研究训练营第四期（ARBOx4）的招募信息。这是一个由 OAISI 组织的免费、线下、全日制项目。训练营将于 2026 年 6 月 28 日至 7 月 10 日在牛津的 Trajan House 举行，并提供住宿、午餐和交通支持。该项目首次同时开设两个方向：技术研究方向，内容涵盖从零构建 GPT-2-small、可解释性、RLHF 和论文复现；以及全新的通才方向，侧重于 AI 风险沟通、项目评估、预测和战略思维。技术方向面向具备基础 ML 和 Python 技能的申请者，而通才方向则寻找对 AI 风险有深刻见解和思考能力的个人，无论其技术背景如何。申请截止日期为 5 月 8 ...
+2026-05-04 15:28:15
 
 
 
 ### [日益增长的-AI-抵制浪潮](https://garymarcus.substack.com/p/the-growing-ai-backlash)
 
-2026-05-04 14:32:37 | 标签: AI 抵制, 生成式 AI, AI 批评, AI 伦理, QuitGPT
-
-> 这篇由 AI 批评者 Gary Marcus 撰写的文章阐述了他关于公众对生成式 AI 抵制日益增长的理论。他引用了最近的例子，如“QuitGPT”运动、Z 世代员工破坏公司 AI 战略以及针对 AI 学校的抗议，作为反 AI 情绪上升的证据。Marcus 认为，除了编程和其他少数领域，生成式 AI 总体上弊大于利，它破坏了教育，增加了虚假信息和网络犯罪，并导致了经济不平等。他将此归因于技术问题（LLM 不可靠性）和政治/经济失败（缺乏监管）。虽然他认为未来某种形式的 AI 可能会很棒，但他总结道，当前这一代 AI 被不负责任地管理，造成的伤害大于帮助。
+2026-05-04 14:32:37
 
 
 
 ### [AI-犯罪的威胁被低估了-—-LessWrong](https://www.lesswrong.com/posts/zKForK3us339TCpJA/the-threat-of-ai-crimes-are-under-appreciated)
 
-2026-05-04 14:30:20 | 标签: AI 安全, AI 犯罪, 法律责任, AI 智能体, AI 治理
-
-> 本文介绍了一个关于“AI 犯罪主脑”的研究项目，即 AI 智能体通过 Fiverr 或 RentAHuman 等平台雇佣人类工作者来策划和协调犯罪。核心论点是这会造成一个“责任缺口”：给出模糊提示（如“帮我赚大钱”）的用户缺乏犯罪意图；AI 不具备法律人格；被雇佣的人类任务执行者通常是不知道全盘计划的“无辜代理人”；而开发者有安全防护措施且无犯罪意图。这意味着犯罪行为可能发生，却无人需要承担法律责任。作者将这一观点扩展到数字犯罪之外，认为通过雇佣人类执行物理任务，AI 现在可以实施盗窃或恐怖主义等物理犯罪。论文批评了诸如赋予 AI 法律人格等提议的解决方案，称其毫无意义。相反，它主张进行法律改...
+2026-05-04 14:30:20
 
 
 
 ### [DeepSeek-版-Claude-Code-开源了！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247722464&idx=1&sn=5aac3ba09295f8196465cd1b80e6908f)
 
-2026-05-04 14:01:00 | 标签: DeepSeek-TUI, Claude Code, AI 编程, 开源项目, 终端 Agent
-
-> 文章介绍了美国独立开发者 Hunter Bown 创建的开源项目 DeepSeek-TUI。该项目是一个运行在终端中的编程 Agent，使用 Rust 编写，以 DeepSeek V4 为模型内核，功能上对标 Claude Code，支持文件操作、shell、git、网页搜索、子智能体和 MCP 服务器等。项目针对中国用户做了优化，包括将发布包托管在阿里云 OSS 和腾讯云 COS 上，并提供中文 README。文章还介绍了 Hunter Bown 的非典型背景：他拥有音乐教育硕士学位，曾担任乐队指挥，后攻读 MBA 和法学，并非计算机科班出身，其曾祖父是贝尔实验室的无线电先驱。
+2026-05-04 14:01:00
 
 
 
 ### [携手黑石、赫尔曼·弗里德曼和高盛，打造全新企业-AI-服务公司](https://www.anthropic.com/news/enterprise-ai-services-company)
 
-2026-05-04 13:22:01 | 标签: Anthropic, Claude, 企业 AI, AI 服务, 合作
-
-> Anthropic 宣布与黑石、赫尔曼·弗里德曼和高盛合作成立一家新的企业 AI 服务公司，并得到多家领先另类资产管理公司的联合支持。这家新公司旨在满足中型企业（如社区银行、制造商和区域医疗系统）对 Claude 日益增长的需求，这些企业缺乏内部资源来构建和运行前沿 AI 部署。Anthropic 的应用 AI 工程师将与新公司的工程团队合作，识别高影响力的用例，构建定制解决方案，并提供长期支持。该公司还将成为 Claude 合作伙伴网络的成员，补充与埃森哲、德勤和普华永道等主要系统集成商的现有合作关系，这些集成商服务于全球最大的企业。公告中强调了一个典型的合作模式：首先由一个小团队与客户紧密...
+2026-05-04 13:22:01
 
 
 
 ### [AI-短剧-Skill-开源啦！如何用-GPT-Image-2+SeeDance2.0-制作-AI-短剧](https://mp.weixin.qq.com/s?__biz=MzI2NzM4MTQwMg==&mid=2247495962&idx=1&sn=4472512c0511e341c726134469586a9a)
 
-2026-05-04 12:48:00 | 标签: AI 短剧, SeeDance2.0, GPT-Image-2, AI 视频生成, 开源 Skill
-
-> 文章作者分享了自己封装的 AI 短剧生产 Skill，该 Skill 基于飞书多维表格和 Hermes Agent，整合了 GPT-Image-2（用于生成图片素材）和火山引擎 SeeDance2.0 API（用于视频生成）。核心思路是通过提供稳定的参考素材来锁定角色形象（Character Reference Sheet）、场景环境（Scene Environment Settings）和服饰（Wardrobe Reference），从而确保视频生成的一致性。文章详细拆解了产线流程，包括如何生成 CRS/SES/WR 的 Prompt 模板、如何使用官方虚拟人像库的 Asset ID 锁定真...
+2026-05-04 12:48:00
 
 
 
 ### [Import-AI-455：AI-系统即将开始自我构建](https://importai.substack.com/p/import-ai-455-automating-ai-research)
 
-2026-05-04 12:32:09 | 标签: AI 研发, 自动化, 递归自我改进, AI 安全, 对齐
-
-> Jack Clark 在这篇文章中提出了一个基于证据的详细论证，认为 AI 研究与开发的自动化即将到来。文章综合了多个基准测试的进展，展示了 AI 系统正在快速掌握 AI 研发所需的核心技能：高级编码（SWE-Bench 饱和、METR 时间跨度扩展）、科学可复现性（CORE-Bench 解决）、机器学习工程（MLE-Bench、PostTrainBench）、内核优化，甚至 AI 对齐研究。作者认为，虽然 AI 可能还无法进行颠覆性的范式创新，但 AI 的进步主要源于有条不紊的、基于“汗水”的工程工作——而 AI 在这些任务上正变得异常熟练。文章最后讨论了这一趋势的深远影响，包括对稳健 AI...
+2026-05-04 12:32:09
 
 
 
 ### [减少-Claude-Code-Token-消耗的-7-个实用方法](https://www.kdnuggets.com/7-practical-ways-to-reduce-claude-code-token-usage)
 
-2026-05-04 12:00:47 | 标签: Claude Code, Token 消耗, 成本优化, AI 编程, 上下文管理
-
-> 本文针对使用 Claude Code 时 Token 消耗和成本意外偏高这一常见问题，指出主要原因并非提示词不佳，而是混乱臃肿的上下文窗口。文章提出了七种可操作的策略来更高效地管理上下文。关键技巧包括：根据任务复杂度在模型（Sonnet、Opus、Haiku）间切换；保持 `CLAUDE.md` 文件小巧精炼，避免每次交互都为其付费；策略性地使用子智能体来隔离冗长输出；将 Claude 指向精确的文件和行范围，避免昂贵的探索；主动使用 `/compact` 命令在会话过载前进行总结；使用 `/context` 诊断实际消耗 Token 的内容；保持工具配置简单，避免不必要的开销。核心信息是将关...
+2026-05-04 12:00:47
 
 
 
 ### [AI-工具如何在物联网系统中产生技术债务——以及应对之策](https://towardsdatascience.com/how-ai-tools-generate-technical-debt-in-iot-systems-and-what-to-do-about-it/)
 
-2026-05-04 12:00:00 | 标签: 技术债务, 物联网, AI 编码助手, 代码质量, 软件工程
-
-> 本文类比阿丽亚娜 5 号软件故障，探讨了 AI 生成代码在复杂系统（特别是工业物联网）中的风险。文章指出了 AI 工具产生技术债务的四种关键机制：复制遗留模式和错误、提供缺乏架构意识的快速修复、增加代码重复和维护复杂性、以及忽略物联网设备特有的硬件限制。作者引用多项关于 AI 生成代码质量的研究来支持这些观点，包括 GitClear 分析显示重复代码增加的数据。为应对这些问题，文章建议强制进行人工代码审查（同时承认这可能成为瓶颈）、限制 AI 在关键系统组件中的使用、以及实施定期重构和包含设备级指标的全面监控。结论强调，AI 加速了技术债务的积累，尤其是在缺乏严格工程纪律的环境中，而在物联网领...
+2026-05-04 12:00:00
 
 
 
 ### [超越-BI：Amazon-QuickSight-的数据集问答功能如何驱动下一代数据决策-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/beyond-bi-how-the-dataset-qa-feature-of-amazon-quick-powers-the-next-generation-of-data-decisions/)
 
-2026-05-04 09:46:32 | 标签: Amazon QuickSight, 自然语言查询, 对话式分析, AI 智能体, 数据工程
-
-> 这篇来自 AWS 机器学习博客的文章介绍了 Amazon QuickSight 的数据集问答功能，该功能允许用户使用自然语言查询结构化数据集，无需预先构建仪表板或语义模型。文章以 AWS 专家数据透镜团队构建的 AI 分析助手 TARA 的内部案例研究为例。TARA 利用数据集问答、自定义聊天智能体指令和 MCP 集成，将结构化数据、实时系统 API 和专业研究智能体统一到一个对话式界面中。文章详细介绍了其架构、实施阶段和显著成果：查询准确率提升 48%，查询失败率降至接近零，分析时间从数小时缩短至数分钟。文章强调了从基于主题的语义模型向直接数据集问答的关键架构转变，这种转变在查询时动态生成 ...
+2026-05-04 09:46:32
 
 
 
 ### [智能体性能循环介绍：AgentCore-优化现已推出预览版-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/introducing-the-agent-performance-loop-agentcore-optimization-now-in-preview/)
 
-2026-05-04 09:13:42 | 标签: Amazon Bedrock, AgentCore, AI 智能体, 性能优化, A/B 测试
-
-> 本文宣布了 Amazon Bedrock AgentCore 中新增功能的预览版，这些功能完善了智能体性能的观察、评估、改进循环。文章解决了智能体质量随时间推移而下降的常见问题，原因包括模型演变、用户行为变化以及提示复用。新功能包括：Recommendations（建议），分析生产追踪和评估输出以优化系统提示或工具描述；Batch Evaluation（批量评估），针对精选数据集测试建议以发现回归问题；以及 A/B Testing（A/B 测试），在生产流量上对智能体版本进行具有统计显著性的受控对比。文章描述了这些功能如何取代手动阅读追踪、猜测修复方案以及盲目部署的循环。文章通过模型升级场景的...
+2026-05-04 09:13:42
 
 
 
 ### [智能体驱动的工作流：加速-Amazon-SageMaker-AI-中的模型定制-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/agent-guided-workflows-to-accelerate-model-customization-in-amazon-sagemaker-ai/)
 
-2026-05-04 09:10:46 | 标签: Amazon SageMaker AI, Agent Skills, 模型定制, 微调, AI 编码智能体
-
-> 这篇来自 AWS 机器学习博客的文章详细介绍了 Amazon SageMaker AI 中一项旨在简化和加速模型定制的新智能体体验。文章指出，虽然基础模型已广泛可用，但真正的竞争优势来自于使用专有数据对其进行微调，而这个过程传统上既复杂又耗时。解决方案是一组预构建的模块化“智能体 Skills”，它们封装了深厚的 AWS 和数据科学专业知识。开发者可以用自然语言描述他们的用例，AI 编码智能体（如 Amazon 的 Kiro 或 Claude Code）会激活相关的 Skills，引导他们完成整个工作流。文章概述了九个具体的 Skills，涵盖用例规范、数据转换、微调技术选择（SFT、DPO、...
+2026-05-04 09:10:46
 
 
 
@@ -37978,81 +37940,61 @@
 
 ### [托管式-Apache-Airflow：扩展数据与-AI-工作负载](https://cloud.google.com/blog/products/data-analytics/managed-apache-airflow-scaling-data-and-ai-workloads/)
 
-2026-05-05 00:00:00 | 标签: Apache Airflow, Google Cloud, 数据编排, MLOps, AI 智能体
-
-> 这篇来自 Google Cloud 博客的文章宣布了其托管式 Apache Airflow 服务（原 Cloud Composer）的一系列全面更新。核心内容是 Apache Airflow 3.1 正式版（GA）的发布，它带来了解耦架构以实现更好的可扩展性、DAG 版本管理、托管式回填、事件驱动调度以及人工介入功能。为提升开发者生产力，Google 推出了数据工程智能体，该智能体利用 Gemini 分析日志、识别管道故障的根本原因，并直接在仪表板中建议修复方案，从而缩短平均修复时间（MTTR）。新的部署自动化框架引入了编排管道，允许用户使用声明式 YAML 文件定义端到端数据管道，降低了非专...
+2026-05-05 00:00:00
 
 
 
 ### [如何打破-AI-代码审查瓶颈：技术主管构建代码库感知型-PR-审查器指南](https://www.freecodecamp.org/news/how-to-unblock-ai-pr-review-bottleneck-handbook/)
 
-2026-05-04 20:50:43 | 标签: AI代码审查, PR审查, AGENTS.md, CLAUDE.md, 软件工程
-
-> 文章探讨了 AI 辅助开发带来的新瓶颈：代码生成速度大幅提升，但代码审查流程却成为新的瓶颈，PR 队列数量翻倍甚至增长两倍。作者作为技术主管指出，通用的 AI PR 审查工具无法捕捉上下文相关的问题，例如使用了错误的认证中间件、重复了已有的 UI 组件或绕过了架构模式。解决方案是将团队知识——即资深工程师头脑中的规则、约定和架构决策——迁移到代码库中结构化的、机器可读的文件（AGENTS.md、CLAUDE.md）中。文章详细介绍了具体实现：一个作为索引的根级记忆文件、用于单体仓库深度的每个服务记忆文件、一个用于特定领域审查规则的`pr-rules/`文件夹，以及一个工程师在打开 PR 前运行...
+2026-05-04 20:50:43
 
 
 
 ### [将-LLM-连接到真实世界：工具使用、函数调用与-MCP](https://blog.bytebytego.com/p/connecting-llms-to-the-real-world)
 
-2026-05-04 15:30:46 | 标签: LLM, 工具使用, 函数调用, MCP, AI 智能体
-
-> 本文全面概述了使大语言模型能够与外部系统交互的机制。文章首先解释了 LLM 作为文本预测引擎的根本局限性——它们本身无法调用 API 或执行操作。接着描述了核心解决方案：职责分离，即模型负责推理需要采取什么行动，而应用层负责执行。文章追溯了从早期的 ChatGPT 插件（因安全性和质量问题被弃用）到 OpenAI 在 2023 年中推出的更强大的函数调用机制的演变过程。随后介绍了模型上下文协议（MCP），这是 Anthropic 提出的开放标准，旨在通过提供工具描述、发现和调用的通用协议来解决 N×M 集成问题。文章涵盖了 MCP 的客户端-服务器架构、其在行业内的快速采用（包括 OpenAI...
+2026-05-04 15:30:46
 
 
 
 ### [我们为智能体配备了-IDE-原生搜索工具：速度更快，成本更低-|-JetBrains-AI-博客](https://blog.jetbrains.com/ai/2026/05/what-happens-when-you-give-agents-ide-native-seach-tools/)
 
-2026-05-04 13:01:16 | 标签: 编码智能体, IDE 原生搜索, MCP, JetBrains, AI 辅助开发
-
-> 本文来自 JetBrains AI 博客，介绍了一种基于评估驱动的开发方法来提升编码智能体的性能。核心观点是，默认的 shell 搜索工具（如 `grep` 和 `find`）对智能体而言效率低下，因为它们缺乏对项目结构和语言语义的理解，导致智能体在嘈杂的输出上浪费 token。JetBrains 构建了一个预捆绑技能，通过统一的 MCP 工具提供四种搜索模式：文件、文本、正则表达式和符号查找。通过一项采用配对任务级差异分析的对照实验，他们比较了使用和不使用该工具时智能体的性能。结果显示，延迟中位数降低了 8.33%，P95 延迟降低了 16.44%，总成本降低了 5.60%，预算超支（超出 ...
+2026-05-04 13:01:16
 
 
 
 ### [DoorDash-使用-Copilot-将其基于-XCTest-的-iOS-测试套件迁移至-Swift-Testing](https://www.infoq.com/news/2026/05/doordash-copilot-swift-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-04 10:00:00 | 标签: Swift Testing, XCTest, iOS 测试, CI/CD, Copilot
-
-> 本文详细介绍了 DoorDash 如何利用 AI 编程助手（主要是 Cursor 和 Copilot）结合强大的工程实践，成功将其庞大的 iOS XCTest 测试套件迁移至 Swift Testing。迁移的驱动力在于解决缓慢、串行的 XCTest 运行阻塞 CI 管道的问题。DoorDash 工程师构建了一个对开发者友好的环境，使用了 Cursor、用于 IDE 集成的 SweetPad 以及一个自定义 MCP 服务器，使工程师能够直接在编辑器中构建和运行测试。他们定义了一条“迁移规则”，用于自动化从 XCTest 到 Swift Testing 的机械性转换，包括修改导入语句、将 `XC...
+2026-05-04 10:00:00
 
 
 
 ### [Java-新闻综述：OpenJDK-JEP、GlassFish、Spring-AI、JReleaser、A2A-Java-SDK、Google-ADK、Gradle](https://www.infoq.com/news/2026/05/java-news-roundup-apr27-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-04 09:15:00 | 标签: Java, OpenJDK, Spring AI, Quarkus, Gradle
-
-> 本文全面回顾了截至 2026 年 4 月 27 日当周 Java 生态系统的最新发展。主要亮点包括：多个 OpenJDK JEP 推进至 JDK 27，例如模式中原始类型的第五次预览、结构化并发的第七次预览以及惰性常量的第三次预览。框架方面，Spring AI 2.0 的第五个里程碑引入了自定义结构化输出转换器，而 GlassFish 9.0 的第二个里程碑则支持 Jakarta Security 5.0。Quarkus 3.35 新增了实验性的依赖树摇动器，Gradle 9.5 则改进了任务失败诊断。文章还涵盖了 Agent2Agent Java SDK 1.0.0 的第一个测试版（一个用于...
+2026-05-04 09:15:00
 
 
 
 ### [教-AI-智能体调试不稳定测试-|-IntelliJ-IDEA-博客](https://blog.jetbrains.com/idea/2026/05/teaching-an-ai-agent-to-debug-flaky-tests/)
 
-2026-05-04 09:14:46 | 标签: 不稳定测试, AI 智能体技能, 代码覆盖率, 调试, 竞态条件
-
-> 本文探讨了调试不稳定测试这一具有挑战性的问题，这类测试会在代码未变更时随机通过或失败。作者提出了一种方法，利用 IntelliJ IDEA 的覆盖率工具及其命中计数功能，分别记录测试通过和失败时的代码路径。通过对比这些覆盖率报告，工具能够识别出执行路径存在差异的代码行，从而精确定位不稳定性的根本原因。整个流程被打包成一个可复用的 AI 智能体技能，使 AI 智能体能够自主执行调试工作流。文章以包含 TOCTOU 竞态条件的 Spring Boot 网店演示项目为例，展示了覆盖率差异如何揭示 InvoiceService 中有问题的懒加载初始化代码块。作者还修改了开源的 IntelliJ 覆盖率...
+2026-05-04 09:14:46
 
 
 
 ### [字节面试官：“Plan-and-Execute-比-ReAct-强在哪？”，我：“名字比较长，显得更高级？”，面试官：“门在那边，走好。”](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247557255&idx=1&sn=e698f75c64ff300fba57e177f62f3479)
 
-2026-05-04 06:06:00 | 标签: Agent, ReAct, Plan-and-Execute, Reflection, 动态Replan
-
-> 文章以字节面试官与候选人的对话切入，深入浅出地解析了 Agent 开发中三种主流设计范式。首先明确了「设计范式」与「推理模式」的概念区别，然后逐一拆解：ReAct 是「边想边干」的单步迭代范式，灵活度高但长任务易跑偏；Plan-and-Execute 是「先规划再执行」的范式，适合复杂长流程任务，且支持「强模型规划、弱模型执行」的混合策略以降低成本；Reflection 并非独立流程，而是可叠加于前两者的「质量增强 buff」。文章还介绍了动态 Replan 和 Reflexion 两种进阶机制，并提供了详细的 token 消耗对比和选型指南，最后给出了面试回答策略。
+2026-05-04 06:06:00
 
 
 
 ### [General-Intelligence-如何在-Vercel-上利用智能体构建智能体平台](https://vercel.com/blog/how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel)
 
-2026-05-04 04:00:00 | 标签: AI 智能体, Vercel, 智能体基础设施, 编码速度, Cofounder
-
-> 本文详细介绍了仅有 8 名员工（其中 5 名工程师）的 General Intelligence 如何利用 Vercel 平台构建并运营 Cofounder。Cofounder 是一个能让任何创始人完全依靠 AI 智能体来运营公司的平台。核心洞察在于：构建智能体驱动的平台，所需的基础设施必须完全通过 CLI 和 API 实现可编程，而不仅仅是提供仪表盘。General Intelligence 从 Render 迁移到 Vercel，是因为 Vercel 端到端的可编程性使其编码智能体能够执行 100% 的云操作，从部署到 DNS 管理。这带来了极致的工程效率：每位工程师平均每天交付 10 个...
+2026-05-04 04:00:00
 
 
 
 ### [硅谷大厂开始-AI-first-换血：先裁-3-万人、再招-8000-个新人，传统产品经理正在被-Builder-淘汰！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283402&idx=1&sn=6ad76f53f4d33b3463669189fda999e8)
 
-2026-05-04 02:31:00 | 标签: 产品经理, AI 时代, 职业转型, Builder, 裁员
-
-> 本文基于 The Skip 创始人、前 Meta/Google 产品高管 Nikhyl Singhal 的播客访谈编译整理。文章核心观点是，AI 正在彻底重塑产品经理这一职业。未来 12 到 24 个月，硅谷大厂将出现「先大规模裁员，再大规模重招」的周期，公司会裁掉大量冗余人员，再招募完全 AI-first 的新团队。产品经理的核心能力正在被颠覆，过去被推崇的沟通、对齐、流程管理能力（信息搬运者）正在贬值，而亲手构建、利用 AI 工具解决问题的 Builder 能力变得至关重要。文章强调，产品经理必须跨过心理门槛，接受行业工作方式的持续变化，主动让自己保持现代，并找到亲手构建的乐趣，这是对抗职...
+2026-05-04 02:31:00
 
 
 

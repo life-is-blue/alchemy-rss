@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-05 08:24:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-05 11:02:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3475,65 +3475,49 @@
 
 ### [Andy-Masley-的引述](https://simonwillison.net/2026/May/4/andy-masley/#atom-everything)
 
-2026-05-04 22:51:09 | 标签: 数据中心, 土地利用, 农田, 科技批评, Andy Masley
-
-> 本文是 Simon Willison 博客上发布的一段 Andy Masley 的简短引述。Masley 反驳了数据中心建设导致农田流失的观点。他提供了一个惊人的对比：2000 年至 2024 年间，农民自愿出售的土地面积相当于科罗拉多州的大小，是 2028 年数据中心总用地面积的 77 倍。尽管如此，美国的粮食供应并未受到影响，粮食产量反而有所增加。他将此与某个农民将几英亩劣质土地卖给超大规模数据中心后引发的过度反应进行对比，后者引发了农田危机的论调。这段引述以数据为依据，简洁有力地驳斥了对科技行业扩张的常见批评。
+2026-05-04 22:51:09
 
 
 
 ### [谢谢你们担心我，但我真的有自己的生活-—-LessWrong](https://www.lesswrong.com/posts/qRZLEBmNtT6LBuFsE/it-s-nice-of-you-to-worry-about-me-but-i-really-do-have-a)
 
-2026-05-04 21:14:00 | 标签: 职场文化, 生活意义, 偏好伪装, 全民基本收入, 求职面试
-
-> 作者坦白了两个“羞耻的秘密”：爱他的家人和享受他的爱好。他批判了现代职场文化，在这种文化中，员工必须假装工作是他们生活的全部热情才能被录用，他将这种现象与“偏好伪装”联系起来。他认为，许多声称自己痴迷工作的人是在撒谎，以求在一个惩罚那些重视工作之外生活的人的制度中生存。作者反驳了“工作赋予生活意义”的观点，指出对他来说，意义来自家庭、朋友和爱好。他挑战了“显示性偏好”这一概念，认为它是一种公正世界谬误，并指出人们的选择受限于可用的选项，而非其真实欲望的反映。他强烈渴望全民基本收入（UBI），以将自己从他所认为的“半垃圾工作”循环中解放出来，并主动提出愿意成为测试对象，以证明 UBI 将带来更幸...
+2026-05-04 21:14:00
 
 
 
 ### [精神变态：自我-—-LessWrong](https://www.lesswrong.com/posts/DCftmGoetipnBLuFT/psychopathy-the-self)
 
-2026-05-04 21:13:33 | 标签: 精神变态, 人格障碍, 自恋, 自我, 能动性
-
-> 本文是理解精神变态系列文章的第四篇，建立在先前关于框架、生物学和环境的讨论之上。它引入了一个新颖的维度模型，用于描述具有精神变态特征的个体的心理组织（D 层面）和能动性归因风格（A 层面）。D 层面包括多种变体，如 D-anatta（空洞自我）、D-narcissistic（不稳定自我）、D-echoistic（谦抑自我）、D-sovereign（权力导向自我）、D-autonomic（自由导向自我）、D-avoidant（封闭自我）和 D-secure（稳定自我）。每种变体都从其自我方面、关系方面和典型的能动性风格进行了描述。A 层面描述了个体如何叙述自身的意向性，包括观察型、策略型、叙事型...
+2026-05-04 21:13:33
 
 
 
 ### [住房政策综述-#15：针对租户的战争-—-LessWrong](https://www.lesswrong.com/posts/jW4TeNZhxBA9Fzdim/housing-roundup-15-the-war-against-renters)
 
-2026-05-04 20:01:04 | 标签: 住房政策, 租金管制, 建后出租, YIMBY, 住房供应
-
-> 本文对美国住房政策进行了全面批判，认为这些政策系统性地使租户处于不利地位。文章指出，社会错误地污名化租房行为，同时却大规模补贴购房。作者审视了几个具体的政策失误：一项拟议的参议院法案将禁止建造用于出租的独栋住宅，这可能会消除 10% 的新建住房；伊丽莎白·沃伦对所有类型的机构租赁住房的反对不断升级；以及洛杉矶等城市日益严格的租金管制措施，这些措施将租金涨幅设定在低于通胀率的水平。文章还讨论了延长驱逐拖欠租金租户的等待期、导致房屋空置的租赁契约，以及租金管制公寓像财产一样被继承的荒谬现象。文章最后强调了在支持 YIMBY 的城市中，大量建设住房如何赋予租户谈判筹码，并以一位租户使用 Claude...
+2026-05-04 20:01:04
 
 
 
 ### [研究：TRE-Python-绑定-—-ReDoS-鲁棒性演示](https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything)
 
-2026-05-04 17:52:00 | 标签: TRE, 正则表达式, ReDoS, Python, ctypes
-
-> Simon Willison 探索了 TRE 正则表达式引擎，其动机源于 Redis 对该引擎的采用。他使用 Claude Code 构建了一个基于 ctypes 的最小化 Python 绑定，并针对 Python 内置的 re 模块进行了基准测试。结果显示，TRE 处理臭名昭著的“邪恶”正则表达式模式时，在输入长度高达 1000 万字符的情况下，速度远快于 re 模块处理极小输入，并且其性能随输入大小线性扩展，而非指数级增长。这种鲁棒性源于 TRE 不支持回溯。该项目包含代码和基准测试，以展示 TRE 在安全关键型正则表达式处理中的实际优势。
+2026-05-04 17:52:00
 
 
 
 ### [认真对待玄学，但不必字字当真-—-LessWrong](https://www.lesswrong.com/posts/oMqx9D9EEW9AMDsbf/taking-woo-seriously-but-not-literally)
 
-2026-05-04 13:36:52 | 标签: 玄学, 理性, 塔罗牌, 脉轮, 能量疗愈
-
-> 本文从理性、科学的角度探讨了“玄学”实践（如塔罗牌、脉轮和能量疗愈）的价值。作者认为，尽管许多实践者提出了不科学的形而上学主张，但这些实践本身可能产生真实、有益的效应。作者以冥想作为历史类比，展示了曾被斥为无稽之谈的实践（如超觉冥想）后来如何获得了科学验证。文章提供了详细分析：塔罗牌被定义为一种直觉辅助工具，其牌面含义经过长期优化，在唤起共鸣的普遍性和具体性之间取得了平衡，类似于国际象棋规则虽具任意性，但已为对弈而优化。脉轮和“能量”被讨论为描述真实身体感受和情绪模式的有用模型，并引用了个人经历和冥想文献中的例子。能量疗愈则被认为可能涉及安慰剂效应、神经系统共同调节以及压抑记忆的释放。作者总结...
+2026-05-04 13:36:52
 
 
 
 ### [用深度-Q-学习玩四子棋](https://towardsdatascience.com/playing-connect-four-with-deep-q-learning/)
 
-2026-05-04 13:30:00 | 标签: 深度 Q 学习, 强化学习, DQN, 四子棋, 函数逼近
-
-> 本文是强化学习系列文章的一部分，从表格方法过渡到深度 Q 学习。作者将 DQN 应用于四子棋游戏，这是一个表格方法此前无法奏效的多玩家环境。关键技术进展包括：引入经验回放缓冲区以实现批量训练，从在线策略的 Sarsa 转向离线策略的 Q 学习，以及实现向量化环境包装器以并行模拟多局游戏，达到每秒 50-100 局的速度。实现细节聚焦于强化学习方面，包括 Q 学习更新规则、使用掩码处理合法动作以及使用 Huber 损失函数。结果显示，DQN 智能体显著优于随机策略，随机策略的胜率降至约 20%。然而，智能体在一百万步后陷入平台期，并表现出明显的防守缺陷，无法阻挡对手的威胁。作者总结认为，通用框架...
+2026-05-04 13:30:00
 
 
 
 ### [从数据湖到-AI-就绪分析：Amazon-Quick-引入-S3-Tables-新数据源-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/from-data-lake-to-ai-ready-analytics-introducing-direct-query-with-s3-tables-in-amazon-quick/)
 
-2026-05-04 08:12:37 | 标签: Amazon Quick, S3 Tables, Apache Iceberg, 数据湖, 近实时分析
-
-> 这篇来自 AWS 机器学习博客的文章介绍了 Amazon Quick 的一项新功能：能够直接查询和可视化存储在 Amazon S3 表桶中的 Apache Iceberg 表。该集成使组织能够绕过传统数据仓库或 OLAP 系统，减少数据移动、延迟和操作复杂性。文章详细阐述了这种精简架构的优势，包括近实时洞察和可扩展性能。它提供了逐步实施指南，涵盖如何启用 S3 Tables 数据访问、创建数据源、构建数据集以及使用 Amazon Quick 的自然语言聊天代理 'My Assistant' 与数据交互。一个涉及金融服务公司的用例展示了如何近实时查询流式交易数据，用于欺诈检测和运营可见性。该文章...
+2026-05-04 08:12:37
 
 
 
@@ -13133,57 +13117,43 @@
 
 ### [立即报名：OpenClaw:-After-Hours-@-GitHub](https://github.blog/open-source/register-now-for-openclaw-after-hours-github/)
 
-2026-05-04 15:00:00 | 标签: OpenClaw, GitHub, 活动, 智能体系统, 开源
-
-> GitHub 博客宣布了 OpenClaw: After Hours 活动，这是为 OpenClaw 开源项目举办的线下社区活动，将于 2026 年 6 月 3 日在微软 Build 2026 大会期间于 GitHub 旧金山总部举行。OpenClaw 是一个快速增长的开源框架，用于构建和运行智能体系统，在 GitHub 上已获得超过 35 万颗星。活动将包括与创建者 Peter Steinberger（ClawFather）的炉边对谈、由维护者和生态系统构建者参与的小组讨论（探讨实际智能体系统开发）、闪电演讲以及社交欢乐时光。报名名额有限，不保证能入场。活动还将在 Twitch 上进行直播。
+2026-05-04 15:00:00
 
 
 
 ### [人类规模化难题：为什么你的团队无法像代码一样扩展](https://www.infoq.com/presentations/human-scalability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-04 12:40:00 | 标签: 团队扩展, 心理安全, 信任, 工程文化, 领导力
-
-> Bravely Amsterdam 联合创始人 Charlotte de Jong Schouwenburg 以 LeanIX 及其他科技公司为例，阐述了“人类规模化难题”。当团队从 12 人的紧密小团体扩展到数百名工程师时，协作会崩溃，决策会变慢，信任也会瓦解。演讲指出了这些问题背后的关键心理驱动因素：沟通过载、共享上下文缺失，以及信任无法自动复制。演讲引入了“行为可扩展性”的概念，并提供了应对这些瓶颈的具体工具，包括沟通架构（重复、多渠道）、通过展现脆弱性和透明决策来构建信任，以及通过仪式和跨团队桥梁来分配凝聚力。核心信息是，领导者必须投资于组织的社会系统，而不仅仅是技术系统，才能实现可持...
+2026-05-04 12:40:00
 
 
 
 ### [从批处理到微批流式处理：Delta-索引管道的实战教训](https://www.infoq.com/articles/micro-batch-streaming-lessons-learned/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-04 11:00:00 | 标签: 微批流式处理, 数据管道, Spark Structured Streaming, Delta 索引, 对象存储
-
-> 本文通过一个实际案例，展示了如何将用于搜索和广告检索系统的批处理 delta 索引管道，使用 Spark Structured Streaming 迁移到微批流式模型。核心洞察在于，主要瓶颈并非处理成本，而是调度和编排延迟。作者最初尝试了记录级流式处理，但发现这引入了不必要的操作风险，并且与面向批处理的索引逻辑存在语义不匹配。最终，他们采用了一个更简单的、具有固定触发间隔的微批模型，其中进度由时间和逻辑水印驱动，而非基于文件的完成标记。关键模式包括：使用基于速率的触发器实现确定性进度；通过优先处理最新数据而非重放中间分区来处理延迟；以及将计划重启作为管理长时间运行 JVM 作业内存压力的操作工...
+2026-05-04 11:00:00
 
 
 
 ### [Roq：借助-Quarkus-以-Go-语言般的速度构建静态网站](https://www.infoq.com/podcasts/leveraging-quarkus-build-static-sites/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-04 11:00:00 | 标签: Roq, Quarkus, 静态网站生成器, Java, 开发者体验
-
-> 在本期播客中，InfoQ 编辑 Olimpiu Pop 采访了资深 Quarkus 开发者 Andy Damevin，话题围绕 Roq 展开——这是一个基于 Quarkus Java 框架构建的静态网站生成器。Damevin 解释说，Roq 最初只是一个实验，旨在验证 Quarkus 能否驱动静态网站生成器。其架构被描述为 Quarkus 之上的一个薄层，负责将 Markdown 或 AsciiDoc 文件转换为静态 HTML 页面。一个关键的技术见解是，Roq 利用了 Quarkus 的构建时与运行时分离特性：在开发阶段，它使用 Quarkus 的热重载服务器按需渲染页面；而在生产环境中，它...
+2026-05-04 11:00:00
 
 
 
 ### [骂谷歌干蠢事、炮轰甲骨文、AI-在真实数据库测试得分为-0！83-岁图灵奖数据库教父的硅谷“狂人日记”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830711&idx=1&sn=018bda7e615e1b2696e7ea12335c7e3e)
 
-2026-05-04 05:00:00 | 标签: Mike Stonebraker, Postgres, 数据库, Text-to-SQL, DBOS
-
-> 本文编译自对图灵奖得主、Postgres 创始人 Mike Stonebraker 的深度访谈。Stonebraker 以其一贯的犀利风格，回顾了从 Ingres 到 Postgres 的数据库发展历程，直言不讳地批评了 Oracle 靠对客户撒谎赢得市场、谷歌的 MapReduce 和最终一致性是蠢事。他深入探讨了数据库查询优化器的核心难点，并重申了其「万金油式数据库并非最优解」的观点，认为 Postgres 在低端场景是绝佳选择，但在高端场景（如 PB 级数据仓库、百万级事务）则力不从心。访谈重点介绍了 Stonebraker 的最新项目 DBOS，一个旨在用数据库技术替换操作系统核心功能...
+2026-05-04 05:00:00
 
 
 
 ### [GitHub-上-3.7-万的-Star，终端里浏览文件的开源工具。](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247533435&idx=1&sn=17a5ceb8d01d4249175e29d31cb8e4d8)
 
-2026-05-04 04:10:00 | 标签: yazi, 终端文件管理器, Rust, 开源工具, 命令行
-
-> 文章介绍了 yazi 这款用 Rust 编写的终端文件管理器。其核心优势在于全异步 I/O 架构，即使进入包含数万个文件的目录也不会卡顿。yazi 内置了对 Kitty、iTerm2 等多种终端协议的图片预览支持，并能预览视频首帧和 PDF 页面，代码文件自带语法高亮。它拥有 Lua 插件系统，扩展性强，并集成了 ripgrep、fd、fzf、zoxide 等现代命令行工具，提供高效的搜索和导航体验。操作采用 Vim 键位，支持多标签页、批量重命名、Git 状态显示等功能。文章还提供了 macOS 上的安装步骤和推荐配套工具。
+2026-05-04 04:10:00
 
 
 
 ### [deepsec-正式发布：在代码库中寻找漏洞的安全检测工具](https://vercel.com/blog/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base)
 
-2026-05-04 04:00:00 | 标签: deepsec, 安全, 漏洞扫描, 开源, 编码智能体
-
-> Vercel 已将 deepsec 开源，这是一款利用编码智能体（Claude Opus 4.7 和 GPT 5.5）自动发现大型代码库漏洞的安全检测工具。该工具在本地运行，无需为获取特权源代码访问权限而设置云服务，仅需使用现有的 Claude 或 Codex 订阅进行推理。deepsec 采用多阶段工作流程：基于正则表达式扫描安全敏感文件、智能体对每个候选文件进行深入调查、重新验证以减少误报（报告误报率为 10-20%）、通过 git 元数据丰富信息以识别相关贡献者，最后将发现结果导出为可操作的工单。deepsec 支持可选地扩展到 Vercel Sandboxes 进行并行执行，可扩展至 ...
+2026-05-04 04:00:00
 
 
 
@@ -33857,11 +33827,11 @@
 
 
 
-### [飞书-CLI-开源了，为什么-AI-Agent-时代，大家都在做命令行工具？](https://baoyu.io/blog/2026-03-28/lark-cli-ai-agents)
+### [Notion-联合创始人-Simon-Last：我从去年夏天起就没写过一行代码了](https://baoyu.io/blog/from-note-taking-app-to-ai-workspace-the-simon-last-interview)
 
 2026-03-28T00:00:00.000Z
 
-> 飞书开源 lark-cli，CLI 正在成为产品接入 AI Agent 的标准方式
+> Notion 联合创始人讲述 AI harness 每六个月推倒重写、编码 Agent 连续跑 13 天的幕后故事。
 
 
 
