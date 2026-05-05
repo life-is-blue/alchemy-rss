@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-05 18:33:15 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-05 20:21:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -33827,11 +33827,11 @@
 
 
 
-### [Notion-联合创始人-Simon-Last：我从去年夏天起就没写过一行代码了](https://baoyu.io/blog/from-note-taking-app-to-ai-workspace-the-simon-last-interview)
+### [飞书-CLI-开源了，为什么-AI-Agent-时代，大家都在做命令行工具？](https://baoyu.io/blog/2026-03-28/lark-cli-ai-agents)
 
 2026-03-28T00:00:00.000Z
 
-> Notion 联合创始人讲述 AI harness 每六个月推倒重写、编码 Agent 连续跑 13 天的幕后故事。
+> 飞书开源 lark-cli，CLI 正在成为产品接入 AI Agent 的标准方式
 
 
 
