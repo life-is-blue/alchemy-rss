@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-06 06:19:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-06 08:24:27 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -660,6 +660,30 @@
 
 
 
+### [掌握-JavaScript-事件循环](https://www.freecodecamp.org/news/mastering-the-javascript-event-loop/)
+
+2026-05-05 17:09:09 | 标签: JavaScript, 事件循环, 异步编程, 调用栈, Web API
+
+> 本文推荐了 freeCodeCamp.org YouTube 频道上的一门新课程，该课程旨在揭秘 JavaScript 事件循环。它解释了尽管 JavaScript 是单线程的，但得益于事件循环，它能够处理复杂、交互式的 Web 应用而不会卡顿。这门由 Viswas 创建的课程使用动画和图表来分解关键概念，例如调用栈、Web API（如 DOM 和 setTimeout）、任务队列和微任务队列。课程强调了任务和微任务之间的优先级差异，并解释了 Promise 如何可能导致其他函数的“饥饿”问题。事件循环被描述为连接这些组件的桥梁，确保在将新任务推入执行之前调用栈为空。
+
+
+
+### [如何构建高排名的-SEO-着陆页](https://www.freecodecamp.org/news/how-to-build-high-ranking-seo-landing-page/)
+
+2026-05-05 16:56:10 | 标签: SEO, 着陆页, 联盟营销, Web开发, Netlify
+
+> 本文提供了一份全面的、实操性的指南，教你如何构建一个针对联盟营销优化的 SEO 着陆页。作者带你走完整个过程，从使用 Google Keyword Planner 等工具进行关键词研究开始，锁定页面意图（交易型/信息型），并分析 SERP 以了解竞争对手的结构。指南的核心是页面布局的详细蓝图，涵盖了关键部分：英雄区（使用针对主要关键词的 H1 标签）、用于强化关键词的价值区、优势网格、包含联盟链接的产品区、高意图对比表、用于社交证明的评论区和用于扩展搜索的 FAQ 区。随后，指南进入技术构建环节，为每个部分提供了 HTML、CSS 和 JavaScript 代码片段，包括结构化数据（FAQPa...
+
+
+
+### [用-SVG-和-GSAP-逆向工程-Claude-AI-的吉祥物动画](https://tympanus.net/codrops/2026/05/05/reverse-engineering-claude-ais-mascot-animations-with-svg-and-gsap/)
+
+2026-05-05 10:59:39 | 标签: SVG, GSAP, 动画, React, 前端开发
+
+> 本文详细技术拆解了作者如何逆向工程 Claude AI 吉祥物的四个动画片段。仅使用 SVG `<rect>` 元素、GSAP 处理动画以及 React 构建组件结构，作者精心重建了吉祥物的行走、挥旗、踩碎纸屑和健身动作。文章涵盖了关键技术，例如使用 `<clipPath>` 防止腿部拉伸破坏地面平面，利用 GSAP 的 `"<"` 运算符编排复杂的多部分补间以实现同步运动，采用精灵表处理像素风旗帜与 GSAP 变换处理身体摇摆的混合方案，以及通过动态时间延迟管理逐帧精灵序列以营造真实的重量感和节奏感。作者强调逐帧研究原始素材以匹配精确的时间、缓动效果以及落地弹跳、发力停顿等细微细节的重要性，...
+
+
+
 ### [前端工程师如何驾驭微服务架构](https://www.freecodecamp.org/news/how-to-navigate-microservices-as-a-frontend-engineer/)
 
 2026-05-04 17:59:55
@@ -1038,13 +1062,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1194,13 +1218,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2694,13 +2718,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4404,13 +4428,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

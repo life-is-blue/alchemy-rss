@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-06 06:19:50 | [返回首页](/README.md)
+**更新时间**: 2026-05-06 08:24:27 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11721)
+- [AI & 大模型](#ai-llm) (11754)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (799)
-- [DevOps](#devops) (539)
+- [前端与全栈](#frontend-fullstack) (802)
+- [DevOps](#devops) (544)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5638)
+- [其他](#other) (5652)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [GPT-5.5-Instant：更智能、更清晰、更个性化](https://openai.com/index/gpt-5-5-instant) - AI 精选
 - [Claude-Code-产品经理使用指南](https://every.to/source-code/claude-code-for-product-managers) - AI 精选
 - [NVIDIA-发布-Nemotron-3-Nano-Omni：面向文档、音频和视频智能体的长上下文多模态模型](https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence) - AI 精选
 - [AI-在生产环境中的下一个前沿：混沌工程](https://towardsdatascience.com/the-next-frontier-of-ai-in-production-is-chaos-engineering/) - AI 精选
@@ -30,8 +31,8 @@
 - [AIE-Europe-回顾-+-智能体实验室论点：无监督学习-x-潜在空间跨界特别篇（2026）](https://www.latent.space/p/unsupervised-learning-2026) - AI 精选
 - [GPT-5.5-发布](https://openai.com/index/introducing-gpt-5-5) - AI 精选
 - [Shopify-的-AI-相变：2026-年使用量激增，无限的-Opus-4.6-Token-预算，Tangle，Tangent，SimGym-——-对话-Shopify-CTO-Mikhail-Parakhin](https://www.latent.space/p/shopify) - AI 精选
-- [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) - AI 精选
 - [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt) - AI 精选
+- [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) - AI 精选
 - [如何正确-Vibe-Coding？这是来自-Anthropic-编程智能体负责人的大师课](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b) - AI 精选
 - [大模型架构的下半场](https://www.qbitai.com/2026/04/403515.html) - AI 精选
 - [使用合成数据构建快速多语言-OCR-模型](https://huggingface.co/blog/nvidia/nemotron-ocr-v2) - AI 精选
@@ -41,9 +42,8 @@
 - [Notion-的-Token-Town：5-次重构，100+-工具，MCP-对比-CLI-与软件工厂的未来-——-Notion-的-Simon-Last-和-Sarah-Sachs](https://www.latent.space/p/notion) - AI 精选
 - [Gemini-Robotics-ER-1.6：增强的具身推理](https://deepmind.google/blog/gemini-robotics-er-1-6/) - AI 精选
 - [MiniMax-Agent-更新：这次我们重新设计了-Agent-操作电脑的方式](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488360&idx=1&sn=9358b0c0a0750975e8f4c001b8f1e724) - AI 精选
-- [万字综述-Harness-革命！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247721825&idx=1&sn=b3415031a3bad0026f9e09a3a2b81cb6) - AI 精选
 
-- [查看全部 11721 篇...](/details/tags/ai-llm.md)
+- [查看全部 11754 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 
-- [查看全部 799 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 802 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 539 篇...](/details/tags/devops.md)
+- [查看全部 544 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5638 篇...](/details/tags/other.md)
+- [查看全部 5652 篇...](/details/tags/other.md)
 
 

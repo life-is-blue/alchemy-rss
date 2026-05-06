@@ -1,0 +1,58 @@
+{
+  "id": "RAW_6c677f3e",
+  "title": "使用 Django Rest Framework 和 SimpleJWT 构建作用域笔记 API",
+  "url": "https://www.freecodecamp.org/news/how-to-build-a-scoped-note-taking-api-with-django-rest-framework-and-simplejwt/",
+  "date": "2026-05-05 19:23:01",
+  "author": "Prabodh Tuladhar",
+  "siteName": "freeCodeCamp.org",
+  "content": null,
+  "aiSummary": "本教程提供了一份逐步指南，教你如何使用 Django Rest Framework 和 SimpleJWT 构建一个具有作用域的笔记 API，重点讲解 JWT 认证和用户数据隔离。",
+  "oneSentenceSummary": "本教程提供了一份逐步指南，教你如何使用 Django Rest Framework 和 SimpleJWT 构建一个具有作用域的笔记 API，重点讲解 JWT 认证和用户数据隔离。",
+  "summary": "本文是一份面向开发者的综合教程，旨在构建一个具备用户认证和数据作用域的 Django API。文章首先解释了 Django 基于会话的认证的局限性，尤其是在前后端分离架构中，并介绍了 JSON Web Token（JWT）作为一种无状态、跨域的解决方案。教程的核心内容包括：设置自定义用户模型（为灵活性考虑的最佳实践）、配置 SimpleJWT 以生成访问令牌和刷新令牌、创建保护密码等敏感字段的序列化器，以及使用 Django Rest Framework 的 ViewSet 实现作用域视图，确保用户只能访问自己的笔记。作者为每一步都提供了详细的代码示例，包括模型定义、序列化器逻辑、视图配置和 URL 路由。教程最后指导如何使用 Postman 测试 API 端点，演示用户注册、令牌获取、笔记创建和作用域验证。此外，还讨论了令牌过期处理，并提出了分页、搜索和权限等潜在改进方向。",
+  "mainPoints": [
+    {
+      "point": "对于前后端分离的架构，JWT 认证优于基于会话的认证。",
+      "explanation": "JWT 是无状态的，并且可以跨不同域工作，解决了基于会话的系统中固有的跨域 Cookie 问题和可扩展性难题。"
+    },
+    {
+      "point": "在 Django 中始终从自定义用户模型开始，以保持未来的灵活性。",
+      "explanation": "从一开始就使用 `AbstractUser`，可以让你在以后轻松添加字段或更改登录方式，而无需进行复杂的迁移，即使初始模型与默认模型完全相同。"
+    },
+    {
+      "point": "作用域视图对于防止用户访问彼此的数据至关重要。",
+      "explanation": "通过在 ViewSet 中基于已认证用户过滤查询集，可以确保用户 A 永远无法读取、编辑或删除用户 B 的笔记，即使他们猜到了正确的 ID。"
+    },
+    {
+      "point": "在序列化器中重写 `create()` 方法，以安全地哈希密码。",
+      "explanation": "使用 `create_user()` 而不是默认的 `create()` 方法，可以确保密码在存储前被哈希处理，从而防止数据库中以明文形式暴露密码。"
+    }
+  ],
+  "keyQuotes": [
+    "JWT 为你提供了一种无状态、无 Cookie 的用户认证方式。它们可以无缝地在不同域、设备和平台之间工作。",
+    "作用域意味着确保每个用户只能访问自己的数据。用户 A 永远不应该能够读取、编辑或删除用户 B 的数据。",
+    "如果你从默认模型开始，后来决定将登录方式从用户名改为邮箱，或添加必填字段，那么进行更改将变得困难且充满风险。",
+    "`write_only=True` 标志意味着密码在注册时会被接受，但永远不会出现在任何 API 响应中。"
+  ],
+  "tags": [
+    "Django",
+    "Django Rest Framework",
+    "JWT",
+    "SimpleJWT",
+    "认证"
+  ],
+  "topicTag": "other",
+  "readTime": 28,
+  "score": 86,
+  "wordCount": 6751,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778008981000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-05 19:23:01"
+}
