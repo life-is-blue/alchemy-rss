@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-06 08:24:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-06 11:02:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -512,41 +512,31 @@
 
 ### [工程师-SOC-2-Type-II-完整实施手册：基于真实命令的逐月路线图](https://www.freecodecamp.org/news/the-complete-soc-2-type-ii-implementation-guide-for-engineers/)
 
-2026-05-05 18:26:21 | 标签: SOC 2, 合规, AWS, DevSecOps, 安全
-
-> 这份综合指南为工程团队提供了 90 天内实现 SOC 2 Type II 合规的时间表。它从关键的范围决策开始，建议团队严格定义其 SOC 2 边界，仅包含处理客户数据的系统，并提供了网络隔离的框架和 Terraform 代码。指南的核心部分详细介绍了在观察期内必须从第一天起就激活的 14 项基本控制措施，包括强制 MFA、基础设施即代码、CloudTrail、GuardDuty、VPC Flow Logs、Secrets Manager 和分支保护。针对每项控制措施，它解释了 SOC 2 要求，提供了实施命令或代码（AWS CLI、Terraform、GitHub Actions），并描述了...
+2026-05-05 18:26:21
 
 
 
 ### [大规模可靠监控](https://medium.com/airbnb-engineering/monitoring-reliably-at-scale-ca6483040930?source=rss----53c7c27702d5---4)
 
-2026-05-05 17:06:16 | 标签: 可观测性, 监控, 可靠性, Kubernetes, 服务网格
-
-> 这篇来自 Airbnb 技术博客的文章探讨了可观测性中的一个关键可靠性挑战：循环依赖，即监控栈依赖于它本应监控的同一基础设施。作者描述了 Airbnb 的指标管道如何构建在共享系统之上，从而在故障期间造成失明风险。解决方案涉及三个关键设计模式：将可观测性工作负载隔离到由云团队管理的专用 Kubernetes 集群上，以打破计算依赖；构建一个自定义的基于 Envoy 的七层入口层，将遥测流量与 Istio 服务网格解耦，该网格是为业务流量设计的，无法优先处理可观测性数据；以及实施一个带有死机开关的元监控层，以检测监控系统本身的故障。文章强调，可靠的监控需要将可观测性栈视为一个生产系统，其可用性必...
+2026-05-05 17:06:16
 
 
 
 ### [如何使用-.Net-查询-DynamoDB-数据](https://www.freecodecamp.org/news/how-to-query-data-in-dynamodb-using-net/)
 
-2026-05-05 16:51:08 | 标签: DynamoDB, AWS, .NET, C#, NoSQL
-
-> 本文是一份面向 .NET 开发人员的详尽指南，讲解如何高效查询 DynamoDB 中的数据。文章首先强调了从关系型数据库转向 DynamoDB 的 NoSQL 模型时所需的基本思维转变，即表设计应由访问模式驱动。随后，指南介绍了 DynamoDB 的核心概念，如分区键、排序键和全局二级索引（GSI），包括最终一致性和写入放大等重要考量。文章重点介绍了新的多属性 GSI 功能，该功能允许组合最多 8 个属性作为复合键，从而消除了脆弱的合成键需求。文章详细说明了多属性 GSI 的严格查询规则，并提供了使用 AWS CLI 和 Terraform 的实践示例。接着，文章探讨了三种 C# SDK 选项...
+2026-05-05 16:51:08
 
 
 
 ### [使用-Vercel-CLI-查询可观测性指标---Vercel](https://vercel.com/changelog/vercel-metrics-in-cli)
 
-2026-05-05 08:00:00 | 标签: Vercel, CLI, 可观测性, 指标, DevOps
-
-> 此更新日志宣布了 Vercel Observability Plus 客户的一项新功能：通过 `vercel metrics` 命令直接从 Vercel CLI 查询可观测性指标。该命令允许用户访问任何 Vercel 团队或项目的性能、可靠性和安全数据。一个关键亮点是，编码智能体也可以利用此命令更好地分析和调试应用程序。该功能面向所有拥有 Observability Plus 的团队以公开测试版形式提供。此条目内容简洁，作为一项公告，并附有更详细文档的链接。
+2026-05-05 08:00:00
 
 
 
 ### [Cloudflare-推出-Flagship：基于-OpenFeature-的边缘原生特性标志服务](https://www.infoq.com/news/2026/05/cloudflare-flagship-openfeature/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-05 06:24:00 | 标签: Cloudflare, 特性标志, OpenFeature, 边缘计算, Cloudflare Workers
-
-> Cloudflare 宣布了 Flagship 的封闭测试版，这是一项深度集成到其全球边缘平台的新特性标志服务。Flagship 基于 CNCF 开放标准 OpenFeature 构建，允许开发者在不重新部署代码的情况下控制特性发布和运行实验。其关键区别在于通过绑定在 Cloudflare Workers 内进行原生评估，消除了到 LaunchDarkly 等外部服务的网络往返，实现了亚毫秒级延迟。Flagship 支持布尔值、字符串、数字和 JSON 类型的标志值，以及基于优先级的定位规则和百分比发布。该服务特别适用于需要快速迭代和低延迟的 AI 驱动和基于智能体的工作负载。行业评论人士认为...
+2026-05-05 06:24:00
 
 
 
