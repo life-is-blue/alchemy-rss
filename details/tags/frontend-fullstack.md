@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-07 06:17:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-07 08:24:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -372,7 +372,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -657,6 +657,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [下一代图片格式-AVIF-在-vivo-社区的落地实践](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506337&idx=1&sn=65d3b71a8bca780dcc73468d5dd70ea9)
+
+2026-05-06 12:00:00 | 标签: AVIF, WebP, 图片优化, 前端性能, CDN
+
+> 本文是 vivo 互联网前端团队的一线实战分享，系统阐述了在 WebP 已全面落地的基础上，引入下一代图片格式 AVIF 的完整技术方案。文章首先从性能瓶颈出发，论证了 AVIF 在压缩效率和生态支持上的优势。核心方案围绕「平滑、可控的降级策略」展开，采用前端能力检测、CDN 边缘缓存优先、服务端异步转码的组合策略，确保对不支持 AVIF 的客户端实现无缝降级。前端实现部分提供了完整的 AVIF 支持检测、URL 组装和自动降级代码。效果验证部分展示了详实的数据对比：AVIF 相比 JPG 实现 77%-90% 的体积优化，相比 WebP 进一步减少 30%-40%；线上 A/B 测试显示 L...
+
+
+
+### [从源码到架构：React-useActionState-深度剖析](https://juejin.cn/post/7636230868706623528)
+
+2026-05-06 02:12:37 | 标签: React 19, useActionState, 源码分析, Hooks, 前端架构
+
+> 文章以 React 19 新引入的 useActionState Hook 为分析对象，从源码层面逐层拆解其内部实现机制。作者首先通过对比传统表单处理方式和 useActionState 的简洁 API，引出该 Hook 的设计价值。随后，文章深入 React 源码（ReactFiberHooks.js），详细阐述了 useActionState 并非单一 Hook，而是由 stateHook、pendingStateHook 和 actionQueueHook 三个基础 Hook 协作构成的复合体。核心部分重点分析了循环链表数据结构在 Action 队列管理中的应用，以及 dispatchA...
 
 
 
@@ -1056,13 +1072,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1212,13 +1228,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2712,13 +2728,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4422,13 +4438,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

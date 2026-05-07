@@ -1,0 +1,59 @@
+{
+  "id": "RAW_da3571fc",
+  "title": "ITCM vs DTCM vs DDR：嵌入式存储器类型详解 [完整手册]",
+  "url": "https://www.freecodecamp.org/news/itcm-vs-dtcm-vs-ddr-embedded-memory-types-explained-handbook/",
+  "date": "2026-05-06 18:43:08",
+  "author": "Nikheel Vishwas Savant",
+  "siteName": "freeCodeCamp.org",
+  "content": null,
+  "aiSummary": "本手册解释了嵌入式系统中 ITCM、DTCM 和 DDR 存储器之间的区别，详细介绍了它们的性能特征、使用场景，以及如何手动放置代码和数据以实现最佳实时性能。",
+  "oneSentenceSummary": "本手册解释了嵌入式系统中 ITCM、DTCM 和 DDR 存储器之间的区别，详细介绍了它们的性能特征、使用场景，以及如何手动放置代码和数据以实现最佳实时性能。",
+  "summary": "这份来自 freeCodeCamp.org 的全面手册深入探讨了基于 ARM Cortex-M 和 Cortex-R 的嵌入式系统中三种主要存储器类型：ITCM（指令紧耦合存储器）、DTCM（数据紧耦合存储器）和 DDR（双倍数据速率）存储器。手册指出，与具有透明缓存的桌面 CPU 不同，嵌入式处理器要求开发人员手动管理性能关键型代码和数据的存储位置。文章详细介绍了 ITCM 用于指令和 DTCM 用于数据的单周期、确定性访问，并将其与片外 DDR 的多周期、可变延迟进行了对比。它提供了关于在每个区域放置什么内容的具体指导：将 ISR 和实时循环放入 ITCM，将堆栈和热变量放入 DTCM，将大型缓冲区和初始化代码放入 DDR。手册包含了使用 GCC section 属性和链接脚本的实用代码示例、真实世界的内存使用概况、性能计算以及需要避免的常见错误。它强调，在安全关键型和性能敏感型应用中，正确的内存放置往往是满足或错过实时截止时间的关键。",
+  "mainPoints": [
+    {
+      "point": "与具有透明缓存的桌面 CPU 不同，ARM Cortex-M/R 等嵌入式处理器需要手动内存放置以获得最佳性能。",
+      "explanation": "开发人员必须使用编译器属性和链接脚本，显式地将代码和数据放置在 ITCM、DTCM 或 DDR 中，因为硬件不会自动管理这些不同的内存区域。"
+    },
+    {
+      "point": "ITCM 和 DTCM 提供单周期、确定性的访问，使其对实时和安全关键型代码至关重要。",
+      "explanation": "ITCM 存储 ISR 和实时循环的指令，而 DTCM 存储堆栈帧和频繁访问的变量。它们的确定性时序使得可证明的最坏情况执行时间分析成为可能。"
+    },
+    {
+      "point": "DDR 内存容量大但速度慢（5-20+ 个周期），适用于初始化代码、大型缓冲区和非时间关键的协议栈。",
+      "explanation": "DDR 的可变延迟和片外位置使其不适合时间关键路径，但其大容量对于超出有限 TCM 空间的固件是必需的。"
+    },
+    {
+      "point": "内存放置决策具有可衡量的性能影响，在高频循环中，累积的延迟差异可达数百毫秒。",
+      "explanation": "文章提供了具体计算，表明在 400 MHz 下，一个包含 1000 万次指令获取的循环从 DDR 而非 ITCM 运行时，可能会慢 175 毫秒，这可能导致实时系统错过截止时间。"
+    }
+  ],
+  "keyQuotes": [
+    "同一处理器上的相同代码，在一个场景中运行很快，在另一个场景中却出奇地慢。罪魁祸首几乎总是代码和数据存储在内存中的*位置*。",
+    "ITCM 的访问时间不会变化，这使得时序分析具有可预测性。这对于安全关键型系统（汽车、医疗、航空航天）非常重要，因为你需要向认证机构证明最坏情况下的执行时间。",
+    "如果你的堆栈在 DDR 中，那么每次函数调用和返回，仅堆栈操作本身就会消耗多个周期的内存延迟，然后函数才能开始执行有用的工作。",
+    "你，作为开发人员，控制着固件每个部分所在的内存区域。编译器和链接器不会自动做出这些决定。",
+    "在一个以 1 kHz 频率运行控制循环（每次迭代 1 毫秒）的实时系统中，处理过程中额外增加的 175 毫秒延迟并非小麻烦。它可能导致系统错过截止时间、丢失传感器读数或产生错误的输出。"
+  ],
+  "tags": [
+    "嵌入式系统",
+    "ARM Cortex-M",
+    "内存架构",
+    "ITCM",
+    "DTCM"
+  ],
+  "topicTag": "other",
+  "readTime": 37,
+  "score": 86,
+  "wordCount": 9094,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778092988000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-06 18:43:08"
+}

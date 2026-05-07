@@ -1,0 +1,53 @@
+{
+  "id": "RAW_86143edf",
+  "title": "许多个体的 CEV 可能相当糟糕 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/FvERMXkaobQvdjS4q/many-individual-cevs-are-probably-quite-bad",
+  "date": "2026-05-06 20:18:12",
+  "author": "Viliam",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>I was thinking about </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/FGpDwLwtPfJ3qYbea/vladimir-putin-s-cev-is-probably-not-that-bad\"><span>Habryka's article on Putin's CEV</span></a><span>, but I am posting my response here, because the original article is already 3 weeks old.</span></p>\n    <p id=\"block1\"><span>I am not sure how exactly a person's </span><span class=\"\"><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/w/coherent-extrapolated-volition-alignment-target\"><span>CEV</span></a></span><span> is defined. \"If we knew everything and could self-modify\" seems potentially sensitive to the precise chronological order of \"realizing things\" and \"self-modification\".</span></p>\n    <p id=\"block2\"><span>Like, imagine Hitler getting the godlike powers of knowledge and self-control. If he gets the perfect knowledge of economy, sociology and psychology first, he could go like: \"Oh, now I realize that the things I blamed on the Jews are actually caused by something else. How embarrassing. No more anti-semitism, but I better erase everyone's memory first.\"</span></p>\n    <p id=\"block3\"><span>But it is also possible that he gets the self-control first, and he realizes that there is such a thing as </span><span class=\"\"><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/w/value-drift\"><span>value drift</span></a></span><span>, and thinks: \"Oh my, this could accidentally make me more similar to the Jews. I better hardcode the Nazi ideals in myself immediately, and also give myself blond hair and blue eyes.\" And using the superior knowledge, he hardcodes the Nazi values in himself so that they are reflectively stable and survive all updates.</span></p>\n    <p id=\"block4\"><span>So, Hitler's CEV seems to depend on the technical details, in which order he gets the new knowledge and the new skills. He could end up either CEV-nice or a CEV-monster.</span></p>\n    <p id=\"block5\"><span>Seems like \"knowledge first, self-modification next\" is the preferred order, but that kinda assumes perfect rationality at the beginning. I mean, perfect knowledge without perfect rationality would probably be prone to confirmation bias and other biases. So we might want perfect rationality (or merely improved rationality) first, but making ourselves more rational is already in the realm of self-modification.</span></p>\n    <p id=\"block6\"><span>Second, it seems to me that Habryka chooses between two models in the article: Either everyone is CEV-nice, or almost everyone is CEV-nice but a few people such as Putin are rare CEV-monsters. Then he concludes, in my opinion correctly given the premises, that Putin doesn't seem to be </span><i><span>that</span></i><span> exceptional. Therefore, he is probably CEV-nice.</span></p>\n    <p id=\"block7\"><span>(By \"CEV-nice\" I mean: given godlike powers of knowledge and self-modification, he will </span><i><span>ultimately</span></i><span> become a benevolent God. There may be a few atrocities in the process, but at some moment he will realize that there are no more threats, and therefore no strategic reasons to treat other people badly. And, getting the strategic reasons out of the way, there are basically no other reasons to hurt people. And by a \"CEV-monster\" I mean someome who will end up hurting people for non-strategic reasons even after feeling perfectly secure in their godlike powers.)</span></p>\n    <p id=\"block8\"><span>If this is correct, then I simply reject the premise. I think that although most people are probably \"CEV-good\", there are also quite many \"CEV-monsters\", i.e. people who value suffering for the sake of suffering (of others). I don't know how many, but as a very rough estimate, let's say between 5% and 50%? Under that premise, it doesn't seem </span><i><span>that</span></i><span> unlikely that Putin would happen to be one of them. (Or Trump, etc.) I would assume that monsters are over-represented in the positions of power, simply because on the way to the top there are many situations where people have to choose between hurting someone and losing an opportunity to gain more power, so the intrinsically nice are at a disadvantage.</span></p>\n    <p id=\"block9\"><span>I would also add a third category that I will call \"CEV-insane\", someone who after obtaining godlike powers would destroy everything that we value, even for themselves. For example, someone who believes that death gives meaning to life, and the intelligence is a source of misfortune, so he magically establishes a law that everyone will be mortal and of average intelligence. Or a Buddhist who believes that life is suffering, and there is no such thing as \"self\" anyway, and decides that the omnicide is the right way to go, no more </span><i><span>dukkha</span></i><span>. Or some eco-fanatic who decides that the </span><i><span>homo sapiens</span></i><span> or the intelligence itself is a problem, and must be eradicated. Or simply a person who does self-modification wrong, and destroys some of their essential human qualities, while retaining the ability to decide the fate of the universe. I think there are also enough people like this.</span></p>\n    <p id=\"block10\"><span>I admit that these are very dark ideas, but looking around me, it seems like the world we live in is indeed quite dark. It's not like people are born good or bad (although, as far as I know, e.g. psychopathy is hereditary to some degree), but more like we move towards some </span><i><span>attractors</span></i><span> that are self-reinforcing enough to keep us there even after the original forces are gone. Good people keep wishing they remained good, and might even self-modify towards more good, given the tools. But assholes who don't give a fuck will see </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/PtoQdG7E8MxYJrigu/no-universally-compelling-arguments\"><span>no reason</span></a><span> to self-modify into someone who gives a fuck. (This is why a group CEV seems like a safer option, if there are some good people in the group, because the good people might choose the good for everyone else, while the assholes might decide that they don't care either way as long as they are left alone.)</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，如果被赋予神一般的力量，许多人（不仅仅是像普京这样的少数人）很可能会变成'CEV 怪物'或'CEV 疯子'，这挑战了大多数人最终会变得仁慈的前提。",
+  "oneSentenceSummary": "本文认为，如果被赋予神一般的力量，许多人（不仅仅是像普京这样的少数人）很可能会变成'CEV 怪物'或'CEV 疯子'，这挑战了大多数人最终会变得仁慈的前提。",
+  "summary": "作者回应了 Habryka 关于普京的 CEV 的文章，质疑了大多数人（包括像普京这样的人物）在获得神一般的知识和自我修改能力后会变得仁慈的假设。作者认为，CEV 的结果对知识和自我修改能力的获取顺序高度敏感，并以希特勒作为思想实验来说明不同的顺序如何导致截然不同的结果。作者拒绝接受只有少数罕见个体是'CEV 怪物'（那些即使在安全状态下也会出于非战略原因伤害他人的人）的前提，估计 5% 到 50% 的人可能属于这一类，并且这类人在权力职位中占比过高。作者还引入了第三类，即'CEV 疯子'，描述了那些因意识形态承诺（例如，一个试图通过灭绝众生来终结痛苦的佛教徒，或一个消灭人类的生态狂热者）而摧毁一切有价值事物的个体。文章总结道，世界足够黑暗，以至于许多人被吸引到残忍或冷漠的自我强化吸引子中，这使得群体 CEV 比个体 CEV 更安全。",
+  "mainPoints": [
+    {
+      "point": "个体 CEV 的结果对其获取知识和自我修改能力的顺序高度敏感。",
+      "explanation": "作者以希特勒为例，说明先获取知识可能导致仁慈的结果，而先获得自我修改能力则可能导致一个'CEV 怪物'，使其有害的价值观更加固化。"
+    },
+    {
+      "point": "作者拒绝接受只有少数罕见个体是'CEV 怪物'的前提，估计 5% 到 50% 的人可能属于这一类。",
+      "explanation": "作者认为，许多人为了痛苦本身而看重痛苦，或者对伤害他人漠不关心，并且由于冷酷无情在战略上的优势，这类人在权力职位中占比过高。"
+    },
+    {
+      "point": "第三类，即'CEV 疯子'，描述了那些因意识形态承诺或有缺陷的自我修改而摧毁一切有价值事物的个体。",
+      "explanation": "例子包括一个试图通过灭绝众生来终结痛苦的佛教徒，一个消灭人类的生态狂热者，或者一个意外摧毁自身基本人性特质的人。"
+    }
+  ],
+  "keyQuotes": [
+    "我认为，虽然大多数人可能是'CEV 善良'的，但也有相当多的'CEV 怪物'，即那些为了（他人的）痛苦本身而看重痛苦的人。",
+    "我会假设怪物在权力职位中占比过高，仅仅因为在通往顶峰的途中，有许多情况人们必须在伤害他人和失去获得更多权力的机会之间做出选择，因此本性善良的人处于劣势。",
+    "善良的人一直希望自己保持善良，并且如果给予工具，他们甚至可能自我修改以变得更加善良。但那些毫不在乎的混蛋则看不到任何理由去自我修改成一个在乎的人。"
+  ],
+  "tags": [
+    "CEV",
+    "连贯外推意志",
+    "AI 对齐",
+    "价值漂移",
+    "AI 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 854,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778098692000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-06 20:18:12"
+}

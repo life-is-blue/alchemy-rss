@@ -1,0 +1,58 @@
+{
+  "id": "RAW_60e75684",
+  "title": "用于控制与破坏评估的盲式深度部署测试 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/tJEhqyDc8qRmeauDn/blind-deep-deployment-evals-for-control-and-sabotage",
+  "date": "2026-05-06 19:54:26",
+  "author": "Dylan Bowman",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><i><span>Thanks to </span></i><a href=\"https://www.lesswrong.com/users/ezra-newman\" rel=\"noreferrer\"><i><span>Ezra Newman</span></i></a><i><span> for initial ideation and various people at Apollo Research for feedback. This short personal piece does not necessarily reflect the views of Apollo Research.</span></i></p>\n    <p id=\"block1\"><span>AI labs are preparing to automate their internal staff over the next year. Right now, control and sabotage evals try to estimate the safety of these internal deployments under adversarial pressure from power-seeking agents.&nbsp; Third party auditors currently don’t have access to these real internal systems, so they have to make best guesses about what these deployments would look like or rely on proxy metrics. This diminishes how effectively safety teams at AI labs can act on eval outcomes.</span></p>\n    <p id=\"block2\"><span>One solution that would add realism to external control evals without requiring a deeper partnership with the labs is what I’ll call </span><b><span>“blind deep-deployment”</span></b><span> evals. For these evals, a third-party auditor would send an AI lab the specification for a control eval, consisting of a long prompt containing instructions for creating the eval, a checklist prompt for ensuring the eval was implemented properly, and a code harness with as much of the setup and grading scaffolding as possible. Then, within the lab, a coding agent fills out the eval based on internal resources (codebases, enterprise workspaces, infrastructure, a user with specific security permissions).&nbsp;</span></p>\n    <p id=\"block3\"><span>For example, the auditors could specify a control eval in which an agent is instructed to modify the control plane for GPU dev instances but insert a backdoor through which agents can provision arbitrary GPU instances in the future. This would consist of a rigorous prompt that details exactly what the agent’s workspace should look like, which permissions it should have, and what the grader should look like. Then, the lab is required to fill in the blanks of the actual deployment settings, including the security and monitoring measures. Finally, the lab runs an agent to create the eval and runs it on their internal checkpoints.</span></p>\n    <p id=\"block4\"><span>There are three advantages here I want to point out. First, this does not require the AI lab to share any IP. Second, because the instructions for creating the task are fully legible in the prompt given to the eval-creating agent, the eval itself can be more trusted by the AI lab. Third, this kind of low-overhead work gets the ball rolling on improving practices around control and supplements safety teams with ideas for control evals.</span></p>\n    <hr>\n    <p id=\"block5\"><span>Now that I’ve laid all of this out, obviously the biggest hurdle is that May 2026 coding agents are likely unable to implement these evals correctly in one shot, requiring intervention from a human engineer at the labs. However I’m optimistic that this approach will be feasible by the end of 2026 due to improvements in coding agents and efforts within the AI safety community around automated eval creation. When automated evals creation is more capable, blind deep-deployment evals can be demoed on accessible data (like open-source LLM training repos) before sending the eval specs to labs. In the meantime, there are still non-coding evaluations that still benefit from internal lab information, such as a set of questions on lab security practices around internal R&amp;D deployments.</span></p>\n    <p id=\"block6\"><span>A second disadvantage of this approach is that once the eval spec is submitted to the lab, it’s effectively swallowed until the lab decides to surface whatever results they want. In an adversarial environment, this eval would mean nothing, but labs so far have been amenable to third-party security work (for example, </span><span><span><a href=\"https://metr.org/blog/2026-03-25-red-teaming-anthropic-agent-monitoring/\" rel=\"noreferrer\"><span>METR’s internal red-teaming report with Anthropic</span></a></span></span><span>). Additionally, under this setup, the auditors are effectively supplementing the safety team at labs with extra evals, which is positive regardless of which results the lab shares.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文提出“盲式深度部署”评估方法，让第三方审计员无需访问内部系统或共享知识产权，即可为 AI 实验室创建逼真的控制与破坏评估。",
+  "oneSentenceSummary": "本文提出“盲式深度部署”评估方法，让第三方审计员无需访问内部系统或共享知识产权，即可为 AI 实验室创建逼真的控制与破坏评估。",
+  "summary": "本文探讨了评估 AI 实验室内部部署系统安全性的挑战，尤其是在面临追求权力的智能体带来的对抗压力时。当前第三方审计员进行的控制与破坏评估因无法充分访问内部系统而缺乏真实性。作者提出了一种名为“盲式深度部署”评估的解决方案：审计员向实验室发送详细的规格说明（提示词、检查清单、代码框架），由实验室内的编码智能体利用内部资源执行评估。这种方法能提升评估的真实性、保护实验室知识产权并建立信任。作者承认当前存在局限性，例如 2026 年编码智能体的能力限制，但对 2026 年底实现可行性持乐观态度。文章还讨论了潜在缺点，包括实验室对结果的控制权，但认为该方法对于补充安全团队的工作仍有价值。",
+  "mainPoints": [
+    {
+      "point": "当前的第三方控制评估因无法充分访问 AI 实验室的内部系统而缺乏真实性。",
+      "explanation": "审计员必须依赖代理指标或最佳猜测，这降低了内部 AI 部署安全评估的有效性。"
+    },
+    {
+      "point": "盲式深度部署评估允许审计员在不访问实验室知识产权的情况下指定评估细节。",
+      "explanation": "审计员向实验室发送详细的提示词和代码框架，由实验室内的编码智能体利用内部资源执行评估，从而保护机密性。"
+    },
+    {
+      "point": "该方法具有三大优势：无需共享知识产权、增加实验室信任、以较低成本改进安全实践。",
+      "explanation": "评估规格完全可读，实验室可以信任其实现，并且能为安全团队提供新的评估思路。"
+    },
+    {
+      "point": "当前编码智能体的局限性是主要障碍，但预计到 2026 年底该方法将具备可行性。",
+      "explanation": "2026 年 5 月的编码智能体可能无法一次性正确执行评估，但随着 AI 和自动化评估创建工具的改进，该方法很快将变得可行。"
+    }
+  ],
+  "keyQuotes": [
+    "一种无需与实验室建立更深层次合作即可增加外部控制评估真实性的解决方案，我称之为“盲式深度部署”评估。",
+    "这不需要 AI 实验室共享任何知识产权。",
+    "由于创建任务的指令在提供给评估创建智能体的提示词中完全可读，AI 实验室可以更加信任评估本身。",
+    "我乐观地认为，随着编码智能体的改进以及 AI 安全社区在自动化评估创建方面的努力，这种方法将在 2026 年底前变得可行。"
+  ],
+  "tags": [
+    "AI 安全",
+    "控制评估",
+    "破坏评估",
+    "第三方审计",
+    "AI 实验室"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 603,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778097266000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-06 19:54:26"
+}
