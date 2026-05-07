@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-07 08:24:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-07 11:03:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -308,9 +308,7 @@
 
 ### [在-AWS-Inferentia2-上经济高效地部署视觉语言模型用于宠物行为检测-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-on-aws-inferentia2/)
 
-2026-05-06 07:37:08 | 标签: AWS Inferentia2, BLIP, 视觉语言模型, 成本优化, 模型部署
-
-> 这篇 AWS 机器学习博客文章介绍了 Tomofun 的案例研究，将其 BLIP 视觉语言模型推理工作负载从基于 GPU 的 EC2 实例迁移到由 AWS Inferentia2 驱动的 EC2 Inf2 实例。核心挑战是降低数十万台 Furbo 设备上始终在线的实时宠物行为检测推理的高昂成本。解决方案采用模块化方法：将 BLIP 模型拆分为三个核心组件（图像编码器、文本编码器、文本解码器），使用 Neuron SDK 和 `torch_neuronx.trace()` 独立编译每个组件，并通过轻量级包装类进行部署，这些包装类负责处理输入/输出格式，无需修改原始模型架构。文章提供了编译和部署过...
+2026-05-06 07:37:08
 
 
 
@@ -520,25 +518,19 @@
 
 ### [Stack-Overflow-如何替换-NGINX-Ingress](https://stackoverflow.blog/2026/05/06/how-we-replaced-nginx-ingress-at-stack-overflow/)
 
-2026-05-06 18:47:46 | 标签: Kubernetes, Gateway API, Ingress, Istio, Traefik
-
-> 在 Ingress-NGINX 宣布退役后，Stack Overflow 的基础设施团队被迫为其 Kubernetes 流量路由寻找替代方案。他们决定借此机会迁移到更新的 Gateway API 标准。团队制定了选择标准，将候选方案缩小到三种 Gateway API 实现（NGINX Gateway Fabric、Traefik 和 Istio）以及两个 Ingress 备选方案。他们使用 Claude 分析现有使用模式来对路由规则进行分类，然后构建了一个全面的测试环境。性能基准测试显示，所有三种实现都能达到 10，000 RPS 的目标。然而，一项关键测试表明，Traefik 在处理 5，0...
+2026-05-06 18:47:46
 
 
 
 ### [当-DNSSEC-出错：我们如何应对-.de-顶级域中断](https://blog.cloudflare.com/de-tld-outage-dnssec/)
 
-2026-05-06 18:00:01 | 标签: DNSSEC, DNS, Cloudflare, 1.1.1.1, 事件响应
-
-> 2026 年 5 月 5 日，.de 顶级域注册机构 DENIC 在例行密钥轮换期间发布了错误的 DNSSEC 签名，导致包括 Cloudflare 的 1.1.1.1 在内的所有 DNSSEC 验证解析器对 .de 域名返回 SERVFAIL。本文提供了该事件详细的技术分析，解释了 DNSSEC 的工作原理、信任链，以及为何顶级域级别的故障会传播到所有子域名。Cloudflare 的主要缓解措施是“过期缓存服务”（RFC 8767），这使得它能够在 TTL 过期后继续提供缓存的 .de 记录，从而减轻了对许多用户的影响。对于无法从缓存提供服务的查询，Cloudflare 部署了一种变通方法，...
+2026-05-06 18:00:01
 
 
 
 ### [Grafana-Kubernetes-监控-Helm-Chart-v4-带来多项修复](https://www.infoq.com/news/2026/05/kubernetes-monitoring-helm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-06 07:00:00 | 标签: Grafana, Kubernetes, Helm Chart, 监控, 可观测性
-
-> Grafana Labs 发布了其 Kubernetes 监控 Helm Chart 的第四版，这被描述为自推出以来最重要的更新。该版本解决了用户扩展到更大、更复杂部署时积累的配置问题。关键变更包括：将目标从列表转换为映射以实现稳定的 GitOps 工作流；重构采集器以移除硬编码名称和隐藏的路由逻辑；将后端服务部署与功能分离以防止意外部署；将过载的 `clusterMetrics` 功能拆分为三个独立功能；以及通过移除 `labelsToKeep` 列表并改用显式标签声明，修复了 Pod 日志管道中的内存问题。该 Chart 面向将遥测数据发送到 Grafana Cloud 或托管 Grafa...
+2026-05-06 07:00:00
 
 
 

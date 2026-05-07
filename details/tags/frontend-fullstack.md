@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-07 08:24:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-07 11:03:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -662,17 +662,13 @@
 
 ### [下一代图片格式-AVIF-在-vivo-社区的落地实践](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506337&idx=1&sn=65d3b71a8bca780dcc73468d5dd70ea9)
 
-2026-05-06 12:00:00 | 标签: AVIF, WebP, 图片优化, 前端性能, CDN
-
-> 本文是 vivo 互联网前端团队的一线实战分享，系统阐述了在 WebP 已全面落地的基础上，引入下一代图片格式 AVIF 的完整技术方案。文章首先从性能瓶颈出发，论证了 AVIF 在压缩效率和生态支持上的优势。核心方案围绕「平滑、可控的降级策略」展开，采用前端能力检测、CDN 边缘缓存优先、服务端异步转码的组合策略，确保对不支持 AVIF 的客户端实现无缝降级。前端实现部分提供了完整的 AVIF 支持检测、URL 组装和自动降级代码。效果验证部分展示了详实的数据对比：AVIF 相比 JPG 实现 77%-90% 的体积优化，相比 WebP 进一步减少 30%-40%；线上 A/B 测试显示 L...
+2026-05-06 12:00:00
 
 
 
 ### [从源码到架构：React-useActionState-深度剖析](https://juejin.cn/post/7636230868706623528)
 
-2026-05-06 02:12:37 | 标签: React 19, useActionState, 源码分析, Hooks, 前端架构
-
-> 文章以 React 19 新引入的 useActionState Hook 为分析对象，从源码层面逐层拆解其内部实现机制。作者首先通过对比传统表单处理方式和 useActionState 的简洁 API，引出该 Hook 的设计价值。随后，文章深入 React 源码（ReactFiberHooks.js），详细阐述了 useActionState 并非单一 Hook，而是由 stateHook、pendingStateHook 和 actionQueueHook 三个基础 Hook 协作构成的复合体。核心部分重点分析了循环链表数据结构在 Action 队列管理中的应用，以及 dispatchA...
+2026-05-06 02:12:37
 
 
 
