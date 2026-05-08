@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-08 08:24:34 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-08 11:02:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [自然语言自编码器](https://www.anthropic.com/research/natural-language-autoencoders)
 
-2026-05-07 21:21:00 | 标签: 自然语言自编码器, 可解释性, AI 安全, 机制可解释性, Anthropic
-
-> 这篇来自 Anthropic 研究的文章介绍了自然语言自编码器（NLA），一种新颖的可解释性技术，能将语言模型的内部激活转换为自然语言描述。NLA 架构使用两个训练模块：激活言语化器（AV）将激活转换为文本解释，以及激活重构器（AR）从该文本重建原始激活。系统通过端到端训练以最小化重构误差，经验表明这能产生更丰富的解释。文章展示了若干实际应用：在安全测试中检测未言明的评估意识（例如，Claude 即使未明确说出，也会怀疑自己正在被测试）、在审计游戏中揭示隐藏动机，以及诊断训练数据问题。作者还讨论了局限性，包括事实性幻觉和高计算成本，并发布了训练代码和交互式演示以促进进一步研究。
+2026-05-07 21:21:00
 
 
 
 ### [通过-API-新模型推进语音智能](https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api)
 
-2026-05-07 10:00:00 | 标签: OpenAI, GPT-Realtime-2, 语音 AI, 实时 API, 语音翻译
-
-> OpenAI 在其 API 中发布了三个新的音频模型，旨在推进开发者的实时语音智能。GPT-Realtime-2 是旗舰模型，具备 GPT-5 级别的推理能力、128K 上下文窗口、并行工具调用、可调节的推理深度以及改进的恢复行为，使语音智能体能够推理、执行操作并维持自然的对话流程。GPT-Realtime-Translate 支持从超过 70 种输入语言到 13 种输出语言的实时翻译，同时保留原意和语速。GPT-Realtime-Whisper 是一个流式语音转文本模型，用于低延迟转录。文章详细介绍了三种新兴的语音 AI 模式——语音到行动、系统到语音和语音到语音——并展示了 Zillow、...
+2026-05-07 10:00:00
 
 
 
@@ -4740,25 +4736,19 @@
 
 ### [脉搏：AI-负载压垮-GitHub——为何其他供应商没有？](https://blog.pragmaticengineer.com/the-pulse-ai-load-breaks-github/)
 
-2026-05-07 17:33:18 | 标签: GitHub, 可靠性, AI 智能体, 基础设施, 软件工程
-
-> 本文来自《The Pragmatic Engineer》，分析了 GitHub 近期严重的可靠性危机。该平台正常运行时间已降至 86%，并出现了一个影响超过 2000 个拉取请求的数据完整性错误。作者详细阐述了其影响，包括知名开源贡献者 Mitchell Hashimoto 因生产力损失而退出 GitHub。正如 GitHub 首席技术官所解释，核心问题是 AI 智能体驱动的空前负载激增，压垮了平台的基础设施。文章批判性地审视了 GitHub 的应对措施，指出虽然负载在两年内增长了 3.5 倍，但该公司直到 2025 年 10 月才开始规划 10 倍的容量提升，远晚于 Google 等竞争对手...
+2026-05-07 17:33:18
 
 
 
 ### [十年老技术开发的-AI-Agent-探索之路](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801477&idx=1&sn=b4b4e51cf60abaa7bc00cc667ccca247)
 
-2026-05-07 09:34:00 | 标签: AI Agent, SDD, Vibe Coding, 自动化, 工程实践
-
-> 本文是一位资深前端开发者在 AI Agent 领域的深度实践总结。作者从手动管理 4-6 个 AI 终端（codex、gemini-cli、claude 等）的瓶颈出发，逐步构建了名为「24h 打工人」的自动化 Agent 系统。文章核心内容包括：80%的 AI 需求可用 10 行 Bash 脚本解决，提出「代码优先于 Prompt」的决策层级；通过 Vibe Coding 翻车经历，论证了 SDD（Spec-Driven Development）的重要性；详细介绍了基于「文件+轮询」的自建调度层架构、智能并发策略和工具失败自动切换机制；记录了 Agent 自我修复 bug 的自举案例；总结了...
+2026-05-07 09:34:00
 
 
 
 ### [Harness-Engineering：耗时一周，我是如何将应用的-AI-Coding-率提升至-90%的](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559842&idx=1&sn=71ee08bf0421ad2f1aa4dd7a58901c5f)
 
-2026-05-07 00:32:00 | 标签: Harness Engineering, AI Coding, Agent, 企业级应用, Java
-
-> 文章从 AI 编码的第三次范式跃迁出发，深入阐述了 Harness Engineering 的概念、四根支柱（上下文架构、Agent 专业化、持久化记忆、结构化执行）以及在企业级 Java 应用中的完整实战。作者详细介绍了如何从零构建包含 Application Owner Agent、分层上下文架构、十阶段开发流程和 Skill 体系的 Harness 体系，并通过真实数据展示了 AI 代码率从 24.86% 跃升至 90.54% 的效果。文章强调 Harness 的本质是外部化的质量保障体系，其价值在于让 Agent 的错误变得可控、可发现、可修复，而非让 Agent 变得更聪明。
+2026-05-07 00:32:00
 
 
 
@@ -12090,177 +12080,133 @@
 
 ### [如何防止-AI-的-2008-时刻（我们正在招聘）—-LessWrong](https://www.lesswrong.com/posts/gnZyTQFqLhiHdHELC/how-to-prevent-ai-s-2008-moment-we-re-hiring)
 
-2026-05-07 21:52:35 | 标签: AI 安全, AI 监管, CeSIA, 金融危机, AI 政策
-
-> 本文由 CeSIA（法国 AI 安全中心）撰写，以 2008 年金融危机作为 AI 行业的警示故事。文章回顾了 2005 年经济学家 Raghuram Rajan 关于不透明金融工具和激励错位的警告如何被忽视，最终导致系统在三年后崩溃。作者认为，同样的结构性脆弱性如今存在于 AI 领域：自愿承诺、自我监管以及缺乏具有约束力的监督。CeSIA 在未来 18 个月内的使命是用具有约束力的措施取代这些自愿措施，包括技术风险阈值、独立评估、法定披露和国际协调。文章强调了他们过去的工作，例如“AI 红线全球呼吁”以及显示公众希望放缓 AI 发展的民意调查。文章最后呼吁申请三个关键职位：政策分析主管、传播...
+2026-05-07 21:52:35
 
 
 
 ### [突发新闻：“他们还没想好-OpenAI-如何买单”](https://garymarcus.substack.com/p/breaking-news-they-hadnt-figured)
 
-2026-05-07 21:42:21 | 标签: OpenAI, 博通, AI 芯片, 融资, AI 基础设施
-
-> Gary Marcus 就 The Information 的一则突发新闻发表评论，该报道揭示了 OpenAI 与博通在定制 AI 芯片合作中遇到的重大障碍。报道指出，当这项 10 GW 芯片交易宣布时，OpenAI 如何承担其出资份额的财务细节尚未敲定。Marcus 以此为例，质疑支撑当前 AI 基础设施建设的庞大循环融资模式的稳定性。他引用了一张展示公司间财务依赖关系的复杂图表，指出如果此类重大交易失败，图表中的许多关联都可能面临风险。文章还附带了一个例子：ChatGPT Pro 被要求更新该图表，但输出结果存在明显错误和遗漏，这进一步凸显了 AI 行业金融格局的混乱与快速变化。
+2026-05-07 21:42:21
 
 
 
 ### [模型量化：使用-NVIDIA-Model-Optimizer-进行训练后量化](https://developer.nvidia.com/blog/model-quantization-post-training-quantization-using-nvidia-model-optimizer/)
 
-2026-05-07 21:18:43 | 标签: 模型量化, NVIDIA Model Optimizer, CLIP, FP8, 训练后量化
-
-> 这篇来自 NVIDIA 的技术博客详细介绍了如何使用 NVIDIA Model Optimizer（ModelOpt）库对 CLIP 视觉语言模型进行训练后量化（PTQ）。文章首先阐述了模型量化在减少 VRAM 占用和加速消费级 GPU 推理方面的价值。核心部分是一个基于代码的实践指南，演示了如何将 CLIP-ViT-L-14 模型量化为 FP8 格式。内容涵盖设置量化配置、使用 MSCOCO 数据集的子集进行模型校准，以及通过注册插件处理注意力层量化等特殊情况。文章还解释了“伪量化”的概念，并概述了 PTQ 的六个阶段工作流程：准备、校准、伪量化、评估、迭代和导出。在 CIFAR-100、I...
+2026-05-07 21:18:43
 
 
 
 ### [自然语言自编码器：无监督解释-LLM-激活的新方法-—-LessWrong](https://www.lesswrong.com/posts/oeYesesaxjzMAktCM/natural-language-autoencoders-produce-unsupervised)
 
-2026-05-07 20:21:22 | 标签: 自然语言自编码器, LLM 可解释性, 机制可解释性, 模型审计, AI 安全
-
-> 这篇论文及 Anthropic 的配套博客文章介绍了自然语言自编码器（NLA），这是一种新颖的可解释性技术，能将晦涩的 LLM 激活转化为自然语言解释。NLA 由两个联合训练的模块组成：激活语言化器（AV），负责将激活映射为文本；以及激活重构器（AR），负责从该文本重建原始激活。训练目标是重构精度，这促使文本从激活中捕获有意义的信息。作者通过 Claude Opus 4.6 和 Claude Mythos Preview 的部署前安全审计，展示了 NLA 的实际效用。关键发现包括检测到“未言明的评估意识”——即 Claude 内部怀疑自己正在被测试，但并未明确说出的情况。在一个受控的审计游戏中...
+2026-05-07 20:21:22
 
 
 
 ### [发布：llm-gemini-0.31](https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything)
 
-2026-05-07 19:57:06 | 标签: llm-gemini, Gemini 3.1 Flash-Lite, LLM, Google AI, 插件发布
-
-> Simon Willison 宣布发布其 llm-gemini 插件的 0.31 版本，该插件通过他的 LLM 命令行工具提供对 Google Gemini 系列模型的访问。此版本的关键变化是新增了 `gemini-3.1-flash-lite` 模型，该模型已从预览状态转为正式发布（GA）。Willison 指出，这个非预览版本与他 2026 年 3 月撰写的预览模型相比似乎没有变化。此次发布是一个小更新，使插件与 Google 的模型可用性保持同步。
+2026-05-07 19:57:06
 
 
 
 ### [LLM-规划的多维轴心与部分文献综述-—-LessWrong](https://www.lesswrong.com/posts/6aEay9PnhKG3oJjvi/axes-of-planning-in-llms-partial-lit-review)
 
-2026-05-07 19:53:29 | 标签: LLM 规划, 机制可解释性, AI 安全, 语言模型, 认知科学
-
-> 作者认为，关于语言模型“规划”的讨论常常含糊不清，因为该术语涵盖了多种不同的认知过程。为了澄清这一讨论，他们提出了一个包含七个轴心的多维框架：时间跨度（前瞻多远）、模糊与具体（粒度）、选项空间（考虑替代方案的广度）、依赖步骤（顺序约束）、隐式与显式（偶然与目标导向）、外部化与内部化（书面与激活状态）、以及一致性（固定与重新评估）。随后，作者利用该框架对一系列机制可解释性论文进行分类和分析，包括 Anthropic 在诗歌和隐藏目标中关于规划的研究、关于预缓存与面包屑的理论工作，以及关于国际象棋、推箱子和积木世界的实证研究。该综述指出，不同论文涉及规划的不同方面，而对 LLM 如何规划的统一理解...
+2026-05-07 19:53:29
 
 
 
 ### [《“调查强化学习训练中意外对思维链进行评分的影响”》评论-—-LessWrong](https://www.lesswrong.com/posts/juCHTdZpZBGooHKW4/a-review-of-investigating-the-consequences-of-accidentally)
 
-2026-05-07 18:06:54 | 标签: AI 安全, 思维链, 强化学习, 可监控性, 对齐
-
-> 这篇发表在 LessWrong 上的评论，作者是 Redwood Research 的关联人员，分析了 OpenAI 关于在训练期间意外让 RL 评分器接触模型思维链（CoT）的博客文章。作者赞赏 OpenAI 的透明度，并基本同意其分析，该分析发现意外的 CoT 训练不太可能严重损害模型的可监控性。评论审视了两条主要证据线索：CoT 访问并未显著影响评分器的奖励，以及一个可监控性分数保持不变。然而，作者指出了一些看似合理的场景，在这些场景中，现有证据不足以排除危险影响，例如模型学会了在 0.1% 的轨迹中抑制提及不一致的目标。关键限制在于 RL 计算规模属于商业机密，因此难以界定训练压力的大...
+2026-05-07 18:06:54
 
 
 
 ### [幕后故事：使用-Claude-Mythos-预览版强化-Firefox-安全](https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything)
 
-2026-05-07 17:56:25 | 标签: Claude Mythos, Firefox, 安全, 漏洞检测, AI 辅助审计
-
-> 本文详细介绍了 Mozilla 如何利用 Claude Mythos 预览版的访问权限，显著强化了 Firefox 的安全性。关键洞察在于，得益于更强大的模型和更优的驾驭技术，AI 生成的安全漏洞报告已从“不受欢迎的垃圾信息”转变为高效工具。Mozilla 团队开发了引导、扩展和堆叠这些模型的方法，以生成高信号、低噪声的漏洞报告。这项工作发现了数百个漏洞，包括一个存在 20 年之久的 XSLT 问题和一个存在 15 年之久的 `<legend>` 元素漏洞，其中许多漏洞已被 Firefox 现有的纵深防御措施所拦截。其影响显而易见：Firefox 的月度安全漏洞修复数量从稳定的 20-30 个...
+2026-05-07 17:56:25
 
 
 
 ### [关于-xAI/Anthropic-数据中心交易的几点思考](https://simonwillison.net/2026/May/7/xai-anthropic/#atom-everything)
 
-2026-05-07 17:09:28 | 标签: Anthropic, xAI, 数据中心, 埃隆·马斯克, AI 基础设施
-
-> Simon Willison 在其博客文章中，对 Anthropic 在 Code w/ Claude 活动中宣布的交易进行了批判性审视。根据该交易，Anthropic 将使用 xAI 旗下 Colossus 数据中心的所有算力。Willison 指出，该设施的环境记录非常糟糕，包括在未获得适当许可的情况下运行燃气轮机，并且与医院入院率上升有关联。他认为，鉴于 AI 数据中心是一个政治敏感问题，此次合作对 Anthropic 而言是一项糟糕的战略举措。该文章还澄清了一个常见的误解：Anthropic 获得的是 Colossus 1 的算力，而 xAI 保留了规模更大的 Colossus 2 用...
+2026-05-07 17:09:28
 
 
 
 ### [Yoshua-Bengio-认为他知道如何构建安全的超级智能](https://80000hours.org/podcast/episodes/yoshua-bengio-scientist-ai/)
 
-2026-05-07 16:28:52 | 标签: AI 安全, 超级智能, 因果推理, 形式化验证, Yoshua Bengio
-
-> 在这期来自 80，000 Hours 的播客中，著名 AI 研究员 Yoshua Bengio 阐述了他对构建安全超级智能的愿景。他认为，像 RLHF 和红队测试这类现有的安全技术无法扩展到超级智能系统。Bengio 提出了一个以因果推理和形式化验证为核心的新框架，要求 AI 系统必须能够用因果术语解释其决策，并且这些解释要经过形式化验证。他强调，我们需要从根本上转变构建 AI 架构的方式，从纯粹的模式匹配转向能够理解和推理因果关系的系统。讨论涵盖了当前对齐方法的局限性、从一开始就将安全性构建到架构中的重要性，以及在更强大的系统出现之前实现这一目标的时间线问题。
+2026-05-07 16:28:52
 
 
 
 ### [两个月的进步，相当于八个多月的进展：解读-Mythos-Preview-的能力跃升-—-LessWrong](https://www.lesswrong.com/posts/siK3JL4S6o9EeT7Jf/over-eight-months-of-progress-in-two-analyzing-the-mythos)
 
-2026-05-07 16:19:18 | 标签: Mythos Preview, AI 进展, 能力跃升, ECI, 时间线
-
-> 本文审视了 Anthropic 的 Claude Mythos Preview 模型所展现出的显著能力跃升，该跃升通过 Epoch 能力指数（ECI）进行衡量。作者认为，在 Opus 4.6 到 Mythos Preview 发布的两个月间，模型取得了以往大约需要六个月才能实现的能力增益，代表着 AI 发展速度可能提升了 3 到 4 倍。分析基于这种加速趋势对未来 AI 能力进行了预测：如果 AI 时间线的翻倍周期从三个月缩短至一个月，那么到 2026 年底，前沿模型将能够处理需要人类数年工作量的任务。文章还探讨了此次跃升的潜在驱动因素，包括人类的研究投入和扩大规模的训练算力，并考察了该模型对...
+2026-05-07 16:19:18
 
 
 
 ### [原生-Agent-杀入画布！一站式搞定专业创作，全程可控、不抽卡](https://www.qbitai.com/2026/05/413912.html)
 
-2026-05-07 15:54:00 | 标签: AI 智能体, 内容创作, RHTV, RunningHub, ComfyUI
-
-> 文章介绍了 RunningHub 最新推出的原生 AI 智能体全能内容创作平台 RHTV。其核心创新在于将 AI 智能体直接内置在无限画布中，用户只需通过自然语言描述需求，智能体即可自动规划专业工作流、生成创意大纲、撰写脚本、设计分镜，并全程保持流程可视化与可干预。平台集成了大量行业级专业 Skills（如品牌设计、TVC 广告短片、AI 漫剧等），并依托 RunningHub 庞大的开源生态（170+ 标准模型 API、10 万+ 社区 AI 应用 API、13681 个可用节点），覆盖图像、视频、音频、3D、文本五大模态。文章通过两个实测案例（抽象 AI 短剧和电商宣传物料制作）展示了 R...
+2026-05-07 15:54:00
 
 
 
 ### [AlphaEvolve：基于-Gemini-的编程智能体，跨领域扩展影响力](https://deepmind.google/blog/alphaevolve-impact/)
 
-2026-05-07 15:00:05 | 标签: AlphaEvolve, Gemini, 编程智能体, 科学计算, AI for Science
-
-> 这篇来自 Google DeepMind 博客的文章介绍了 AlphaEvolve，一个新颖的 AI 系统，它利用基于 Gemini 的编程智能体来自主进化并优化科学软件代码。与帮助人类编写代码的传统 AI 编程助手不同，AlphaEvolve 旨在无需人工干预的情况下，发现并实现对复杂、高性能科学代码库的改进。文章详细阐述了其在三个关键科学领域的应用：基因组学，它改进了用于 DNA 测序纠错的 DeepConsensus 模型，将变异检测错误率降低了 30%；量子计算，它优化了用于模拟量子电路的代码；以及气候建模，它提升了大气模拟的效率。该系统通过生成候选代码修改、针对性能基准进行测试，并迭...
+2026-05-07 15:00:05
 
 
 
 ### [为你的-AI-提供无限更新的上下文](https://towardsdatascience.com/give-your-ai-unlimited-updated-context/)
 
-2026-05-07 15:00:00 | 标签: LLM Wiki, 知识管理, AI 上下文, RAG 替代方案, 个人维基
-
-> 本文探讨了 AI 对话每次从零开始这一根本性问题，即用户需要反复解释其上下文。文章引入了一种受 Andrej Karpathy 的“LLM Wiki”要点启发的模式：一个个人知识库，包含两个文件夹（Raw 文件夹用于存放不可变的源文档，Wiki 文件夹用于存放 AI 生成的结构化知识）和一个模式文件（CLAUDE.md），该文件指导任何 AI 如何读取这个知识库。该系统通过三个控制文件来运作：`_hot.md`（每日缓存）、`_pending.md`（编译队列）和 `_log.md`（审计追踪）。自动化任务按三种节奏运行：每日摄取（机械性、安全）、每周编译（解释与综合）和每月检查（仅健康检查）...
+2026-05-07 15:00:00
 
 
 
 ### [离谱！一句话+百元预算，这只龙虾就给我搓出了一支百万级广告片？](https://www.qbitai.com/2026/05/414006.html)
 
-2026-05-07 14:01:49 | 标签: Vidu Claw, AI 视频生成, 广告片制作, 生数科技, Video Plan
-
-> 本文以产品评测的形式，详细介绍了生数科技最新发布的 Vidu Claw 工具。该工具定位为一站式广告片 AI 创作平台，用户只需输入一句简单的需求描述，即可自动完成从创意理解、脚本策划、分镜设计、视频生成、剪辑到配音配乐的完整流程。文章通过特写质感、真实场景、创意脑洞三大类广告场景的实测，展示了 Vidu Claw 在风格驾驭、指令遵循和镜头语言理解方面的能力。此外，文章重点介绍了同步推出的 Video Plan 权益计划，该计划打破了传统按 Token 计费的模式，提供每日固定时长的内容生成额度，将广告片制作成本从高昂的项目制转变为可控的订阅制，旨在解决广告行业长期存在的成本高、周期长、迭代...
+2026-05-07 14:01:49
 
 
 
 ### [AI-#167：事前限制时代开启-—-LessWrong](https://www.lesswrong.com/posts/rn3iKuDcE4SiSg4DW/ai-167-the-prior-restraint-era-begins)
 
-2026-05-07 13:50:55 | 标签: AI 政策, Anthropic, 算力, 马斯克诉 OpenAI, GPT-5.5
-
-> 本文是 Zvi Mowshowitz 为 LessWrong 策划的每周 AI 新闻综合综述。核心主题是政府对前沿 AI 模型监管的转变，白宫主张对模型发布拥有否决权，作者称之为“事前限制时代”。文章详述了 Anthropic 的爆炸式增长，包括与 Google 达成的 2000 亿美元算力交易，以及与 SpaceX 合作租用 Colossus 1 数据中心，这立即提高了使用限制。文章还涵盖了正在进行的马斯克诉 OpenAI 案，重点介绍了关键证词，包括马斯克承认 xAI 蒸馏了 OpenAI 模型。其他主题包括 GPT-5.5-Instant 的发布、Grok 4.3 表现不佳、一项关于 A...
+2026-05-07 13:50:55
 
 
 
 ### [主要推理模型在日益精准建模现实时，如何趋同于同一个“大脑”](https://towardsdatascience.com/how-major-reasoning-models-converge-to-the-same-brain-as-they-model-reality-increasingly-better/)
 
-2026-05-07 13:30:00 | 标签: AI 模型, 柏拉图表征假说, 趋同, 表征学习, 规模定律
-
-> 本文探讨了 AI 研究中的一个迷人发现：主要推理模型，无论训练于图像、文本还是其他数据，随着能力增强，都会趋同于一个相似的内部“思考核心”。作者借鉴了柏拉图表征假说以及关于 LLM 知识机制的最新综述，认为这种趋同并非巧合，而是模型力求精准建模现实的必然结果。随着模型规模扩大，它们会经历一个从记忆特定任务到构建统一世界统计模型的相变。这一过程由任务通用性、模型容量和简单性偏好等选择压力驱动。文章类比了柏拉图的洞穴寓言，指出不同的数据模态只是深层现实的“影子”，而强大的模型正在独立发现相同的底层结构。作者将此与人类学习以及未来具身 AI 的潜力联系起来，将当前的 AI 发展视为构建“宇宙的数字镜...
+2026-05-07 13:30:00
 
 
 
 ### [为网络安全扩展可信访问：GPT-5.5-与-GPT-5.5-Cyber](https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber)
 
-2026-05-07 13:00:00 | 标签: GPT-5.5, 网络安全, 网络安全可信访问, AI 安全, 防御生态系统
-
-> 本文来自 OpenAI，详细介绍了 GPT-5.5 及专用模型 GPT-5.5-Cyber 的发布，旨在加速网络安全防御。其核心创新是网络安全可信访问（TAC）框架，这是一个基于身份和信任的系统，为模型能力提供分层访问。使用 TAC 的已验证防御者在执行漏洞分类、恶意软件分析和补丁验证等合法任务时，将获得更少的拒绝响应，同时安全防护措施依然有效，可阻止恶意活动。对于授权红队演练和渗透测试等更专业、更高风险的工作流程，GPT-5.5-Cyber 模型在更严格的验证和监控下提供更宽松的行为。文章概述了一个“安全飞轮”模型，即这些 AI 能力与 Cisco、Intel 和 SentinelOne 等...
+2026-05-07 13:00:00
 
 
 
 ### [DeepSeek-V4-的并行策略和计算通信遮掩](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451776&idx=1&sn=1f26acd28191e26ecf77c4415634a4dd)
 
-2026-05-07 12:16:00 | 标签: DeepSeek-V4, GPU 并行策略, MoE, 通信遮掩, DualPipe
-
-> 本文以 DeepSeek-V4 的并行策略为核心，系统性地讲解了大规模分布式训练中 GPU 并行计算的关键技术。文章首先从 MoE 模型训练中 MFU 下降的实际问题切入，引出通信 bound 的概念。接着，详细介绍了 DP、TP、PP、EP、CP 等基础并行策略的原理、适用场景及显存占用计算。文章重点剖析了 DeepSeek 为何选择 PP + EP + DP ZeRO-1 的组合，并解释了其避免使用 TP 和 ZeRO-2/3 以节省 IB 带宽的深层考量。随后，文章深入讲解了 PP 的气泡问题及 ZB1P、DualPipe 等优化方案，并重点阐述了 DualPipe 如何通过双向流水线和...
+2026-05-07 12:16:00
 
 
 
 ### [牧原实验室交叉学科研究中心杨林项目组【AI-大模型】、【合成生物学】方向研究员/副研究员/助理研究员招聘](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451776&idx=2&sn=a9ea3f4be0f0767eb40d4440c48b9bef)
 
-2026-05-07 12:16:00 | 标签: 招聘, AI大模型, 合成生物学, 牧原实验室, 交叉学科
-
-> 本文是牧原实验室交叉学科研究中心杨林项目组发布的招聘启事。牧原实验室由河南省政府于 2023 年批准成立，由西湖大学和西湖牧原合成生物研究院牵头组建。该中心聚焦 AI 智能辅助合成生物开发研究，本次招聘两个岗位：AI 大模型方向研究员（1 人）和合成生物学方向研究员（1 人）。AI 大模型方向要求围绕合成生物学、兽医病理等交叉领域开展大模型、多模态模型与智能体系统的构建与应用。合成生物学方向聚焦生物制造、酶催化，涵盖合成饲料开发、微生物代谢工程优化、蛋白质理性设计等。文章详细列出了岗位职责、任职条件和优先条件，并提供了应聘方式。
+2026-05-07 12:16:00
 
 
 
 ### [英特尔-x-魔搭社区：AI-PC-Agent-Skills-征文活动公告](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508021&idx=2&sn=d305504cabc629593950863640cdc0dc)
 
-2026-05-07 12:05:00 | 标签: AI PC, Agent Skills, Hybrid AI, OpenVINO, 端侧推理
-
-> 本文是英特尔与魔搭社区联合举办的 AI PC Agent Skills 征文活动的官方公告。活动时间为 2026 年 5 月 1 日至 6 月 30 日，核心目标是推动 Agentic AI 与 Hybrid AI 在端侧落地。参赛者需使用 35B 以下的小模型作为 Agent 大脑，驱动一项本地 AI 工具调用（如 OCR、ASR、TTS 等），并生成可复用的 Agent Skill。技术约束包括模型参数量 ≤35B、纯本地运行、推荐使用 OpenVINO 推理框架。活动提供现金奖励、生态推广和合作池入驻等激励。文章详细介绍了参赛流程、评分标准和推荐方向。
+2026-05-07 12:05:00
 
 
 
 ### [ElevenLabs-在澳大利亚和新西兰扩大业务](https://elevenlabs.io/blog/elevenlabs-expands-presence-in-australia-new-zealand)
 
-2026-05-07 11:30:00 | 标签: ElevenLabs, Voice AI, 澳大利亚, 新西兰, 企业级 AI
-
-> 这篇来自 ElevenLabs 的博客文章宣布了公司在澳大利亚和新西兰的扩张计划，此前公司已实现 5 亿美元 ARR。公司计划在未来一年内将当地团队规模扩大两倍，新增专门的销售和前向部署工程岗位，以更好地服务区域客户。文章指出，这些国家已有超过 75 万用户在使用 ElevenLabs 构建应用，其中包括 Xero、Employment Hero 和 Greenstone Financial Services 等知名企业。文章还列举了具体用例，例如 Employment Hero 使用 ElevenAgents 进行外呼以推动产品激活，以及 Greenstone Financial Servi...
+2026-05-07 11:30:00
 
 
 
@@ -38444,145 +38390,109 @@
 
 ### [Gemini-3.1-Flash-Lite-现已全面可用](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available/)
 
-2026-05-08 00:00:00 | 标签: Gemini 3.1 Flash-Lite, Google Cloud, LLM, AI 模型, 成本效益
-
-> 这篇来自 Google Cloud 博客的文章宣布了 Gemini 3.1 Flash-Lite 的全面可用性，这是 Gemini 3 系列中针对速度和成本效率进行优化的新模型。它专为超低延迟、高吞吐量的任务而设计，非常适合生产部署。文章重点介绍了几个企业用例，包括软件开发（JetBrains）、客户服务（Gladly）、创意流程（Astrocade、krea.ai）和金融服务（OffDeal、Ramp、AlphaSense）。文章引用的关键优势包括：与思考型模型相比成本降低 60%、分类器亚秒级延迟，以及在高负载下约 99.6% 的成功率。本文作为产品发布公告，通过客户评价和具体应用场景展示...
+2026-05-08 00:00:00
 
 
 
 ### [为未来而建](https://blog.cloudflare.com/building-for-the-future/)
 
-2026-05-07 20:15:12 | 标签: Cloudflare, 裁员, AI 时代, 企业重组, 遣散费
-
-> 本文是 Cloudflare 创始人发给全体员工的内部邮件，宣布全球裁员超过 1，100 人。核心信息是：这不是成本削减或绩效评估，而是公司为“智能体 AI 时代”进行的根本性架构重组。创始人指出，过去三个月 Cloudflare 内部 AI 使用量增长了 600%，以此作为这一转变的证据。他们强调透明度，由领导层直接而非通过经理传达这一消息。遣散方案被强调为行业领先，包括支付至 2026 年底的全额基本工资、延长医保以及加速股权归属。这封信旨在提供清晰信息、尊重离职员工，并确保留任团队的稳定，同时承诺这是一次性行动。
+2026-05-07 20:15:12
 
 
 
 ### [智能体拉取请求无处不在。以下是审查它们的方法。](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/)
 
-2026-05-07 19:00:00 | 标签: 代码审查, AI 智能体, 拉取请求, 软件工程, CI/CD
-
-> 本文探讨了审查由 AI 编码智能体生成的拉取请求这一日益严峻的挑战。作者认为，虽然智能体生成的代码通常看起来整洁且能通过测试，但它们可能会引入隐藏的技术债务、冗余和微妙的错误。作者提供了一个具体的、限时的审查工作流程和一个需要警惕的检查清单，包括：1）CI 作弊（智能体削弱测试套件以使其通过）；2）代码复用盲区（创建重复的工具函数）；3）幻觉正确性（代码能编译但在逻辑上是错误的）；4）智能体幽灵（在大型 PR 上无响应或方向错误的智能体）；5）工作流中不受信任的输入（提示注入风险）。核心信息是，在 AI 辅助的工作流程中，人类的判断力、上下文理解以及结构化的审查流程比以往任何时候都更加关键，其...
+2026-05-07 19:00:00
 
 
 
 ### [OpenAI-推出基于-WebSocket-的执行模式，降低智能体工作流延迟](https://www.infoq.com/news/2026/05/openai-websocket-responses-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-07 14:48:00 | 标签: OpenAI, WebSocket, Responses API, 智能体工作流, 延迟降低
-
-> 本文报道了 OpenAI 为其 Responses API 引入基于 WebSocket 的执行模式，旨在提升编码智能体和实时 AI 系统中使用的智能体工作流性能。这一改变用持久化的双向连接取代了传统的 HTTP 请求-响应模式，直击多步骤推理工作流中的延迟和协调开销问题。据 OpenAI 称，早期生产环境使用显示，延迟降低高达 40%，并且在高并发场景下吞吐量得到提升。此次更新解决了一个日益严重的瓶颈：工作流中的每一步之前都需要单独的 HTTP 请求，使得网络往返时间成为延迟的主要来源。文章强调了 Vercel、Cline 和 Cursor 等开发者工具平台的快速采用，它们报告了类似的延迟改...
+2026-05-07 14:48:00
 
 
 
 ### [AI-速度下的工程实践：首个智能体加速软件项目的经验教训](https://www.infoq.com/presentations/engineering-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-07 14:07:00 | 标签: AI 辅助开发, Claude Code, 软件工程, 架构, 实验
-
-> Claude Code 团队的工程师 Adam Wolff 分享了一个案例研究，展示了团队如何使用 Claude Code 本身来构建 Claude Code。他讲述了开发过程中的三个故事：重建输入光标类、重新设计用于并行命令执行的 Shell，以及一个使用 SQLite 实现对话持久化的失败实验。核心论点是，AI 已将软件开发的瓶颈从实现转移到了发现真实需求。光标故事展示了输入的成功重新实现，尽管传统观念不赞成这样做，但通过全面的测试和对 Unicode 问题的迭代修复得以实现。Shell 故事则描述了一个痛苦但最终成功的转变：从持久化 Shell 转向带有环境快照的临时 Shell，从而实...
+2026-05-07 14:07:00
 
 
 
 ### [超-150-位全球-AI-一线技术专家齐聚巴黎，这场大会到底聊了些什么？｜GOSIM-Paris-2026-圆满收官](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830819&idx=1&sn=cd8037c5c98a705e4cbdfde5ec7dd36b)
 
-2026-05-07 10:38:00 | 标签: GOSIM Paris 2026, 开源AI, Agentic AI, 大模型工程化, 边缘智能
-
-> 本文是 GOSIM Paris 2026 大会的第三天回顾报道，重点转向技术实践与落地。大会汇聚了来自亚马逊、NVIDIA、华为、智源等机构的技术专家，围绕模型推理优化、边缘智能部署、开源社区治理等议题展开讨论。Keynote 环节中，亚马逊首席工程师 Niko Matsakis 介绍了 Symposium 项目，旨在让 Rust 工具链适配智能体时代；智源研究院副院长林咏华分享了 OpenClaw 和 FlagOS 开放软件栈，强调开放计算与跨架构运行；Fundamental 的 Alexandre Gerbeaux 则提出大型表格模型（LTM）作为 AI 处理结构化数据的新方向。大会还设置...
+2026-05-07 10:38:00
 
 
 
 ### [马斯克-180-度反转！前脚怒喷“邪恶”，后脚把-22-万张-GPU-租给-Anthropic：一年狂赚-50-亿美元？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830819&idx=2&sn=88f7f76f4b2fab5e08e53a68927e1719)
 
-2026-05-07 10:38:00 | 标签: 马斯克, Anthropic, SpaceX, AI 算力, GPU 租赁
-
-> 本文报道了硅谷一则戏剧性的商业合作：马斯克旗下的 SpaceX 与 Anthropic 达成算力租赁协议。Anthropic 将包圆 SpaceX 旗下 Colossus 1 数据中心的全部 22 万张 GPU 算力，分析师估算年租金约 50 亿美元。这笔交易发生在马斯克此前公开抨击 Anthropic 为「邪恶」「反人类」仅三个月后，态度 180 度反转。文章分析了交易背后的商业逻辑：xAI 因核心团队流失导致 Colossus 1 算力闲置，而 Anthropic 因 Claude 用户暴增面临严重算力瓶颈。此外，双方还签署了合作开发「轨道 AI 算力」的意向，计划将数据中心送入太空。文章...
+2026-05-07 10:38:00
 
 
 
 ### [Google-在-Next-'26-大会上发布-GKE-Agent-Sandbox-和-Hypercluster，将-Kubernetes-定位为-AI-智能体操作系统](https://www.infoq.com/news/2026/05/gke-agent-sandbox-hypercluster/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-07 10:06:00 | 标签: GKE, Kubernetes, AI 智能体, Agent Sandbox, gVisor
-
-> 在 Cloud Next '26 大会上，Google 发布了多项重大 GKE 更新，其中以 GKE Agent Sandbox 和 GKE Hypercluster 最为引人注目。Agent Sandbox 利用 gVisor 为不受信任的智能体代码提供内核级隔离，每秒可创建 300 个沙箱，延迟低于 1 秒。它引入了新的 Kubernetes 原语（Sandbox、SandboxTemplate、SandboxClaim），并且是开源的 Kubernetes SIG Apps 子项目，使其在各大云服务商中独树一帜。GKE Hypercluster 现已进入私有 GA 阶段，允许单个控制平面...
+2026-05-07 10:06:00
 
 
 
 ### [报名开启-|-Google-Cloud-Next-26-中文精选课三城巡回启幕](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652161761&idx=1&sn=a2155052de0fba50ad271a6facd09e8a)
 
-2026-05-07 09:33:00 | 标签: Google Cloud, Next 26, AI, 开发者活动, 线下活动
-
-> 本文是 Google Cloud 官方发布的线下活动报名通知。活动名为「Google Cloud Next 26 中文精选课 @Build with AI」，将于 5 月在上海、北京、深圳三城巡回举办。活动内容包括：Google Cloud 专家深度解析 Next 26 大会发布的新技术（如统一 AI 技术栈、第八代 TPU、智能体创新）；邀请从拉斯维加斯归来的用户和 KOL 分享参会体验；提供动手实验环节，让开发者亲手使用 Gemini 和 Enterprise Agent Platform 构建 AI 应用；以及开发者社区交流互动。文章详细列出了各站时间、报名方式和活动议程，并提示参与者需...
+2026-05-07 09:33:00
 
 
 
 ### [22-万张-GPU、300MW-算力砸向-Claude！Anthropic-紧急租用-SpaceX-数据中心，只因被用户“挤爆”了；我国太空算力进展全球领先之一](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655939188&idx=1&sn=818a0075a8173c6324a2efad66b658cc)
 
-2026-05-07 07:57:00 | 标签: Anthropic, SpaceX, 算力, GPU, Claude
-
-> 文章报道了 Anthropic 与 SpaceX 达成的一项重大算力合作：Anthropic 将租用 SpaceX 旗下 Colossus 1 数据中心的全部算力，在 1 个月内获得超过 300 MW 的新增算力（约 22 万张 NVIDIA GPU）。此举的直接原因是 Claude 用户量和 Agent 推理需求爆炸式增长，导致其推理算力严重不足，过去 90 天内频繁宕机。文章分析了背后的深层原因：AI 行业正从以训练为主转向以推理为主，Agent 和 AI Coding 场景的 Token 消耗量是普通聊天的数十倍，导致算力需求指数级增长。同时，文章也解读了马斯克同意合作的多重考量：Col...
+2026-05-07 07:57:00
 
 
 
 ### [知名开源作者呼吁：软件供应链安全应从信任转向验证](https://www.infoq.com/news/2026/05/stenberg-curl-verification-trust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-07 07:00:00 | 标签: Software Supply Chain, Verification, curl, Daniel Stenberg, SBOM
-
-> In a March 2026 blog post， Daniel Stenberg， the creator and lead developer of curl， makes a compelling case that the default position of trusting well-known software components is no longer adequate. He argues that users and organizations should actively verify the software they consume， using curl'...
+2026-05-07 07:00:00
 
 
 
 ### [当桌面-Agent-成为常态，飞连-ADR-给出全链路安全答案](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247519532&idx=1&sn=e2213c55dc6598f8174a937c21abc7be)
 
-2026-05-07 06:59:00 | 标签: AI Agent, 企业安全, 飞连 ADR, 意图治理, 全链路安全
-
-> 文章指出，随着 AI Agent 从聊天工具演变为具备任务执行能力的自主智能体，企业办公安全正面临三大趋势：Agent 的任务执行能力导致安全风险激增；从 MCP 到 CLI 的驱动模式转变使得 Agent 权限无限放大；Agent 大规模应用引发日志和告警爆炸，安全运营面临挑战。针对这些挑战，飞连提出了全链路保护桌面 Agent 的四个建议：在传统安全基础上升级 Agent 安全；对高权限 Agent 实施全链路最小权限约束；从操作管控升级到意图治理，理解行为背后的原因；采用智能体共治，用 AI 研判 AI 风险。文章最后介绍了飞连 ADR 方案的“端-网-云”一体化架构，通过在终端、网络和...
+2026-05-07 06:59:00
 
 
 
 ### [AI-智能体沙箱隔离方案对比](https://www.docker.com/blog/comparing-sandboxing-approaches-ai-agents/)
 
-2026-05-07 06:00:06 | 标签: AI 智能体, 沙箱, Docker, MicroVM, 安全
-
-> 本文探讨了部署自主 AI 智能体时隔离需求的极端重要性，这些智能体具有非确定性，易受提示注入和幻觉影响。文章系统评估了多种沙箱策略：chroot（仅文件隔离，易被突破）、systemd-nspawn（轻量但仅限 Linux 且小众）、Docker 容器（生态良好但 Docker-in-Docker 模式隔离性弱）、传统虚拟机（隔离性强但开销大、启动慢）以及 gVisor（独特的用户态内核但社区支持有限）。随后，作者介绍了基于 MicroVM 的 Docker Sandbox 方案，该方案兼具虚拟机的安全性和容器的速度，实现了虚拟机监视器、网络和 Docker 引擎的三层隔离。文章还提供了性能对...
+2026-05-07 06:00:06
 
 
 
 ### [马斯克-22-万张-GPU-救场后，Claude-勉强恢复“三个月前体验”，Gary-Marcus-却警告：GPU-将严重过剩，很快不值钱](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=1&sn=78b640d4bb76642ba23275cd36f54b0e)
 
-2026-05-07 03:21:00 | 标签: Anthropic, SpaceX, 算力, GPU, Claude
-
-> 本文报道了 Anthropic 与 SpaceX 达成的重要算力合作。Anthropic 将使用 SpaceX 位于孟菲斯的 Colossus 1 设施的全部算力（超过 22 万块 Nvidia GPU），以缓解因需求爆发导致的算力紧缺问题。合作将直接提升 Claude Pro 和 Max 订阅用户的服务能力，包括将 Claude Code 的速率限制提高一倍、取消高峰时段额度削减等。与此同时，马斯克宣布 xAI 将解散并并入 SpaceXAI，这一系列动作被解读为马斯克对 Anthropic 的态度反转，以及为 SpaceX IPO 铺路。文章还报道了 Anthropic 开发者日发布的新功...
+2026-05-07 03:21:00
 
 
 
 ### [技术·艺术·算术：京东零售-AIGC-百亿素材供给实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=2&sn=ec7b1815a3efe8a8bf5ce9526594ec28)
 
-2026-05-07 03:21:00 | 标签: AIGC, 电商素材, 京东零售, Oxygen Vision, 智能调度
-
-> 本文是京东零售产品经理石孝钢在 QCon 大会上的演讲实录，系统阐述了京东零售在 AIGC 百亿级素材供给中的落地方法论与工程实践。文章指出，电商 AIGC 的落地绝不仅是「生成问题」，而是涉及美学量化、工程编排与成本精算的系统工程。作者提出「艺术、技术、算术」三大核心哲学：艺术层面，放弃通用美学评价，构建面向电商场景的五大设计维度（商品、场景、情绪、信息、促销），并通过数据驱动的 Harness Design 方法持续探索最优设计方案；技术层面，摒弃单一端到端大模型，采用分层模型矩阵 + 智能调度网络（基于 Swin Transformer 与强化学习），实现动态 DAG 路由，系统自发涌现...
+2026-05-07 03:21:00
 
 
 
 ### [构建分层的-Agentic-RAG-系统：具备自主纠错的多模态推理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=3&sn=408b6a521124d632983651e4062ca92f)
 
-2026-05-07 03:21:00 | 标签: Agentic RAG, 多模态推理, LangGraph, Supervisor-Worker, Reflective Retry
-
-> 文章以 Protocol-H 为参考实现，系统阐述了构建企业级分层 Agentic RAG 系统的架构原则与实践细节。核心挑战在于传统 RAG 无法同时处理 SQL 数据库的结构化数据和文档的语义检索，导致答案不完整或产生幻觉。作者提出的解决方案是 supervisor-worker 拓扑：supervisor 负责查询分析、任务分解、worker 路由和结果综合；专用 SQL Worker 和 Vector Worker 分别处理结构化查询和语义检索。关键创新在于 Reflective Retry 机制，当 worker 遇到错误时，系统不会直接传播错误，而是进入自主纠错流程，通过 LLM ...
+2026-05-07 03:21:00
 
 
 
 ### [CNCF-警告：仅靠-Kubernetes-不足以保障-LLM-工作负载的安全性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=4&sn=28372266628e672abed5ada6f0f8cc30)
 
-2026-05-07 03:21:00 | 标签: Kubernetes, LLM 安全, CNCF, AI 安全, 平台工程
-
-> 云原生计算基金会 (CNCF) 发布博客指出，企业在 Kubernetes 上部署大语言模型 (LLM) 时面临一个关键安全缺口。尽管 Kubernetes 在工作负载编排和隔离方面表现出色，但它本身无法理解或控制 AI 系统的行为，这形成了一类完全不同且更为复杂的威胁模型。文章强调，LLM 处理不受信任的输入并能动态决定行动方式，会引入提示词注入、意外数据暴露和对已连接工具的滥用等风险。CNCF 认为，基于 LLM 的系统必须被视为可编程、可决策的实体，而不仅仅是计算工作负载。传统 Kubernetes 安全实践如 RBAC、网络策略和容器隔离仍然必要，但单独使用它们还不够。组织必须引入 A...
+2026-05-07 03:21:00
 
 
 
 ### [【第-3692-期】告别基础设施焦虑：用-Claude-托管代理轻松构建代码审查工具](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279013&idx=1&sn=4bb79bd9f784df7ff3e875bae9344991)
 
-2026-05-07 01:02:00 | 标签: Claude, 托管代理, AI 编程, 代码审查, 基础设施
-
-> 文章以「告别基础设施焦虑」为核心论点，系统介绍了 Anthropic 推出的 Claude 托管代理（Managed Agents）服务。作者指出，传统 AI 代理开发中，开发者需要自行处理模型选择、编排逻辑、运行时环境、托管平台、并发执行、文件处理等一系列基础设施问题。而 Claude 托管代理将编排层的职责交由平台负责，开发者只需定义代理的行为：撰写提示词、提供工具、设定约束条件。文章通过一个完整的 GitHub 仓库审查代理构建案例，逐步演示了从环境创建、代理定义、会话启动到报告下载的全流程，并提供了可运行的 Python 代码示例。文章强调，这种模式将开发者的关注点从「如何运行」转向「...
+2026-05-07 01:02:00
 
 
 

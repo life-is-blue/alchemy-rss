@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-08 08:24:34 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-08 11:02:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -518,17 +518,13 @@
 
 ### [Cloudflare-如何应对“Copy-Fail”Linux-漏洞](https://blog.cloudflare.com/copy-fail-linux-vulnerability-mitigation/)
 
-2026-05-07 14:00:01 | 标签: Linux 内核, 漏洞响应, eBPF, bpf-lsm, 安全
-
-> 这篇来自 Cloudflare 博客的文章详细复盘了其应对“Copy Fail”（CVE-2026-31431）Linux 内核本地权限提升漏洞的过程。文章首先解释了该漏洞的技术原理：内核 `algif_aead` 模块中存在一个越界写入问题，攻击者可结合 `splice()` 系统调用，修改页面缓存中的 setuid 二进制文件，从而获取 root 权限。Cloudflare 的响应涉及多个并行工作流：验证其现有行为检测能否识别该漏洞利用模式（结果在几分钟内即可识别）、主动搜寻是否存在被利用的迹象，以及工程化运行时缓解措施。主要的缓解方案是一个 bpf-lsm 程序，它拒绝所有未在预先批准的...
+2026-05-07 14:00:01
 
 
 
 ### [Vercel-Flags-现已支持-JSON-值---Vercel](https://vercel.com/changelog/vercel-flags-now-supports-json-values)
 
-2026-05-07 09:00:00 | 标签: Vercel, 功能标志, JSON, A/B 测试, DevOps
-
-> Vercel 宣布其 Flags 功能现在支持 JSON 值，扩展了已有的布尔值、字符串和数字类型支持。这一增强允许开发者在单个功能标志中存储复杂的配置对象，从而取代管理多个独立标志的需求。例如，要对不同 AI 模型进行 A/B 测试，一个 `model` 标志即可包含每个变体的完整配置（模型 ID、温度、最大 token 数、系统提示），而无需为每个参数分别管理标志。这简化了标志管理，降低了复杂性，并支持更复杂的渐进式发布和 A/B 测试场景。
+2026-05-07 09:00:00
 
 
 
