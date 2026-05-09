@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-09 08:25:39 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-09 11:03:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -662,25 +662,19 @@
 
 ### [如何利用-Brevo-和-HTTP-API-绕过云平台-SMTP-限制](https://www.freecodecamp.org/news/how-to-bypass-cloud-smtp-restrictions-using-brevo-and-http-apis/)
 
-2026-05-08 18:23:42 | 标签: Node.js, 邮件, SMTP, Brevo, REST API
-
-> 本教程解决了一个常见的部署问题：基于 Nodemailer 的邮件功能在本地可以正常工作，但在云平台上却会失败。根本原因在于云提供商为了阻止垃圾邮件，会封锁 SMTP 端口（25、465、587）的出站流量。文章提出了一个实用的解决方案：使用 Brevo 的 REST API，该 API 通过标准的 HTTPS（443 端口）运行，从而绕过了防火墙。文章涵盖了完整的实现过程，从设置 Brevo 账户和获取 API 密钥，到使用 Node.js 原生 fetch() 编写可复用的邮件函数，并将其集成到 Express.js 路由中。这种方法无需使用像 Nodemailer 这样臃肿的库，也避免了...
+2026-05-08 18:23:42
 
 
 
 ### [如何在浏览器中使用-JavaScript-将图片转换为-PDF-–-分步指南](https://www.freecodecamp.org/news/how-to-convert-images-to-pdf-using-javascript/)
 
-2026-05-08 17:18:29 | 标签: JavaScript, jsPDF, PDF 生成, 图片处理, 客户端
-
-> 本文是一份面向开发者的综合教程，讲解如何完全在客户端使用 JavaScript 创建一个基于浏览器的图片转 PDF 转换器。它利用 jsPDF 库生成 PDF 文件，无需任何服务器端处理。指南逐步介绍了整个过程：项目搭建、创建上传界面、使用 FileReader 读取图片、生成 PDF 页面以及插入图片。此外，还涵盖了高级功能，如图片排序、选择页面方向和尺寸、配置边距、自动适应图片以及不同的合并选项（单个 PDF、独立 PDF、自定义分组）。教程强调了客户端处理的优势，包括速度快、保护隐私和易于使用。最后，它提供了关于性能优化的实用建议，例如调整大图片尺寸，以及需要避免的常见错误，如缺少文件验...
+2026-05-08 17:18:29
 
 
 
 ### [如何使用-Stripe、Webhooks-和邮件通知构建完整的-SaaS-支付流程](https://www.freecodecamp.org/news/saas-payment-flow-stripe-webhooks-email/)
 
-2026-05-08 15:58:40 | 标签: Stripe, 支付流程, SaaS, Webhooks, 持久化执行
-
-> 本文呈现了一份完整且经过生产验证的指南，用于实现基于 Stripe 的完整 SaaS 支付生命周期，内容远超常规的结账教程。文章重点强调了支付完成后的关键步骤，例如在数据库中记录购买信息、发送确认邮件以及授予产品访问权限。指南涵盖了使用 Drizzle ORM 设计健壮的数据库 schema，以追踪购买状态（待处理、已完成、已退款、部分退款）；通过编程方式创建 Stripe 产品和价格；构建带有声明端点的安全结账流程；以及处理带签名验证的 Webhook。核心重点在于使用持久化后台任务（通过 Inngest）处理支付后流程，通过步骤级检查点和重试机制确保可靠性。文章还详细介绍了处理全额和部分退...
+2026-05-08 15:58:40
 
 
 

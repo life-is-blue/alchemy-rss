@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-09 08:25:39 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-09 11:03:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -518,9 +518,7 @@
 
 ### [在基于微服务的-ASP.NET-Core-应用中实现-Sidecar-模式](https://www.infoq.com/articles/asp-net-core-side-car/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-08 09:00:00 | 标签: Sidecar 模式, 微服务, ASP.NET Core, 分布式日志记录, Docker
-
-> 本文探讨了在基于微服务的 ASP.NET Core 应用中 Sidecar 设计模式的应用。文章首先定义了该模式，解释了其优势，例如将横切关注点（日志记录、监控、配置）与业务逻辑解耦，以及其语言无关的特性。文章的核心部分是一个动手教程，演示了如何构建一个分布式日志系统。该示例使用了两个微服务：一个生成日志的 TransactionsAPI 和一个处理日志并将其转发到 Elasticsearch 的 SidecarAPI。实现细节包括创建后台服务、线程安全的文件记录器、并发消息队列以及 Elasticsearch 客户端服务。文章还讨论了分布式系统中日志记录的挑战、使用 Sidecar 的权衡（...
+2026-05-08 09:00:00
 
 
 
