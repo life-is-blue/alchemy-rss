@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-09 20:16:39 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-09 22:23:38 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -34151,11 +34151,11 @@
 
 
 
-### [OpenAI-总裁-Greg-Brockman：AI-自我改进、Super-App-豪赌、通往-AGI-之路、算力扩张](https://baoyu.io/blog/openai-president-greg-brockman-ai-self-improvement-the-superapp-bet-path-to-agi-scaling-compute)
+### [编程智能体的核心组件【译】](https://baoyu.io/translations/2026-04-04/components-of-a-coding-agent)
 
-2026-04-01T00:00:00.000Z
+2026-04-05T00:00:00.000Z
 
-> Brockman 用 90 分钟重新包装每一个被动决策，但叙事缝隙里藏着 OpenAI 的三层压力。
+> 深入拆解编程智能体的六大核心组件——代码仓库上下文、提示词缓存、工具调用、上下文瘦身、会话记忆和子智能体委派，揭示为什么 Coding harness 才是让大模型编程能力飞跃的关键。
 
 
 
