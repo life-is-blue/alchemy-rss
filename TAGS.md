@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-09 06:20:02 | [返回首页](/README.md)
+**更新时间**: 2026-05-09 08:25:39 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11835)
+- [AI & 大模型](#ai-llm) (11879)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (804)
-- [DevOps](#devops) (550)
-- [产品与商业](#product-business) (36)
-- [其他](#other) (5677)
+- [前端与全栈](#frontend-fullstack) (807)
+- [DevOps](#devops) (551)
+- [产品与商业](#product-business) (37)
+- [其他](#other) (5692)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Agents-SDK-的下一阶段演进](https://openai.com/index/the-next-evolution-of-the-agents-sdk) - AI 精选
 - [Notion-的-Token-Town：5-次重构，100+-工具，MCP-对比-CLI-与软件工厂的未来-——-Notion-的-Simon-Last-和-Sarah-Sachs](https://www.latent.space/p/notion) - AI 精选
 
-- [查看全部 11835 篇...](/details/tags/ai-llm.md)
+- [查看全部 11879 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 
-- [查看全部 804 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 807 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 550 篇...](/details/tags/devops.md)
+- [查看全部 551 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -142,6 +142,7 @@
 - [分布式事务：共识之外，分布式系统状态管理的另一大基石](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552955&idx=1&sn=d05fd04e0b32486760705fcc8e4e8859) - 编程 精选
 - [把-AI-邮件工具做到-3500-万美元-ARR，Superhuman：找到-PMF-其实有明确的方法论](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247521394&idx=1&sn=5ba89a3d61d8536569fa576f077f6a2e) - 商业 精选
 - [成立-13-年的-Figma-成绩单：10-亿用户，8-亿美金-ARR，-46%年增长！](https://mp.weixin.qq.com/s?__biz=MzI0NTAwMzU1MA==&mid=2247503944&idx=1&sn=fab12d5ca626c0986eb9fa8f7d98145c) - 商业 精选
+- [客户在续约时流失：是价格问题还是项目问题？](https://towardsdatascience.com/when-customers-churn-at-renewal-was-it-the-price-or-the-project/) - AI 更多
 - [Snowflake-第一位销售大揭秘：从-0-到-40-亿美元的增长方法论](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247492081&idx=1&sn=20bf427ef9194fa1580030caa327a9fd) - AI 更多
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
@@ -156,9 +157,8 @@
 - [【云故事探索-|-No.8】：揭秘餐饮行业龙头-SaaS-厂商神州商龙的全栈可观测实践](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247507702&idx=2&sn=27ecaef51a7e6428f5cc17e76b3d1687&subscene=0) - 编程 更多
 - [MockMvcTester：Spring-控制器测试的利器](https://blog.jetbrains.com/idea/2025/04/a-practical-guide-to-testing-spring-controllers-with-mockmvctester/) - 编程 更多
 - [C++-开发环境搭建利器：CMake、vcpkg、Docker-和-GitHub-Copilot-详解](https://www.freecodecamp.org/news/c-setup-and-installation-tools-cmake-vcpkg-docker-and-copilot/) - 编程 更多
-- [复星创富投资心法：慢半步、快半拍，做好产品平衡](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866663&idx=1&sn=aff97a4f4576ac0e9a279d09def31808) - 商业 更多
 
-- [查看全部 36 篇...](/details/tags/product-business.md)
+- [查看全部 37 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5677 篇...](/details/tags/other.md)
+- [查看全部 5692 篇...](/details/tags/other.md)
 
 
