@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-11 04:14:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-11 06:15:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -34217,11 +34217,11 @@
 
 
 
-### [访谈｜Codex-团队如何用自己的产品构建产品——整个-Spec-只有-10-个要点](https://baoyu.io/blog/2026-04-06/how-openais-codex-team-builds-with-codex)
+### [Claude-Code-省-Token-指南：慎用-1M-上下文，不开新会话或者总是开新会话都不对](https://baoyu.io/blog/2026-04-06/claude-code-token-optimization)
 
 2026-04-06T00:00:00.000Z
 
-> Codex 产品负责人详解：10 个要点的 Spec、不做中期路线图、50 人团队 1 个 PM
+> 理解提示缓存机制，才能真正搞清楚 Claude Code 的成本结构——很多时候，继续聊比开新会话更省钱。
 
 
 
