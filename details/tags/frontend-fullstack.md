@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-10 08:23:42 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-10 11:03:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -662,17 +662,13 @@
 
 ### [Cloudflare-发布-Dynamic-Workflows，为每个租户和每个智能体代码带来持久化执行能力](https://www.infoq.com/news/2026/05/cloudflare-dynamic-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-09 09:31:00 | 标签: Cloudflare, Dynamic Workflows, 持久化执行, 多租户, Serverless
-
-> Cloudflare 发布了 Dynamic Workflows，这是一个采用 MIT 许可证的库，它扩展了其持久化执行引擎，以支持每个租户、每个智能体和每个请求的工作流代码。此前，工作流代码必须是部署的一部分，每次部署只有一个绑定。Dynamic Workflows 消除了这一限制，允许平台将每个 `create()` 调用路由到不同租户的代码，并让引擎稍后将执行分派回同一代码。该库大约有 300 行 TypeScript 代码，并使用 Worker Loader 将执行路由到正确的租户。文章详细描述了一个 CI/CD 用例，其中管道代码位于客户的仓库中并被动态加载，每个步骤都具备完整的持久...
+2026-05-09 09:31:00
 
 
 
 ### [AWS-改进-Aurora-Serverless：扩容速度提升-45%，吞吐量提高-30%](https://www.infoq.com/news/2026/05/aurora-serverless-v4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-09 06:56:00 | 标签: AWS, Aurora Serverless, 数据库, 云计算, 性能
-
-> AWS 宣布推出 Amazon Aurora Serverless 的新平台版本 4，该版本引入了更智能的扩缩容算法并提升了运行时效率。此次更新使数据库在需求高峰时的扩容速度提升约 45%，并将数据库性能提升高达 30%。这些改进有基准测试数据支撑：与上一版本相比，HammerDB TPROC-C 测试显示，MySQL 和 PostgreSQL 引擎的每分钟新订单数（NOPM）均提高了 27-34%。Sysbench 基准测试进一步表明，与版本 3 相比，完成速度提升 27%，成本降低 28%；与版本 2 相比，完成速度提升 41%，成本降低 42%。增强后的算法尤其适用于存在多个竞争任务的负...
+2026-05-09 06:56:00
 
 
 
