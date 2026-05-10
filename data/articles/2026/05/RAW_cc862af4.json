@@ -1,0 +1,53 @@
+{
+  "id": "RAW_cc862af4",
+  "title": "无需诉诸自由意志，解释意志力 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/qDKtcdf3G4kxzYB9W/explaining-volition-without-resorting-to-free-will",
+  "date": "2026-05-09 18:57:02",
+  "author": "joseph_c",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>People often use free will to explain how we make choices, but have great difficulty explaining how free will itself works. Philosophers gesture towards ideas like \"the capacity to choose\" or \"the freedom to do otherwise\", but these concepts just raise the same question to me: What are \"capacity\" and \"freedom\"? I suspect that the reason free will is so hard to explain is because it is not actually clarifying anything. It's a fake explanation, like the physics textbook that says everything runs on energy.</span><span data-footnote-reference=\"\" data-footnote-id=\"w8h0o7fi4r\" data-footnote-index=\"1\" role=\"doc-noteref\" id=\"fnrefw8h0o7fi4r\" class=\"footnote-reference\"><sup><span><a href=\"#fnw8h0o7fi4r\" class=\"\">[1]</a></span></sup></span><span> \"What makes the bicycle move?\" Energy! \"How do we make choices?\" Free will! It doesn't really answer anything.</span></p>\n    <p id=\"block1\"><span>However, most people do feel like they make choices. I think making choices is a real phenomenon, just that the answer isn't \"free will\". When I want to answer the question of how we make choices, I look at the process by which it occurs. For me, that consists of gathering information to determine the best action, and then performing that action. If you look at it from a purely mechanistic lens, choice-making is simply following some function from information to actions:</span></p>\n    <img src=\"https://image.jido.dev/20260509194252_hooz68q6edjnjeksk9s4.svg\" alt=\"choice-function.svg\">\n    <p id=\"block2\"><span>From this perspective, many things make choices that we might not traditionally consider to have free will. For example, my computer chooses which threads to schedule on which processors.</span></p>\n    <p id=\"block3\"><span>Nevertheless, there is definitely a difference between a computer and myself. Someone programmed the computer to make its choices, but I make my own choices. What explains the difference between us?</span></p>\n    <p id=\"block4\"><span>I think it's simply a matter of self-reference and bootstrapping. The computer doesn't write its own code (at least, not yet), but we modify our own choice functions. Namely, given certain kinds of information—such as that an action led to a suboptimal outcome—our choice functions output actions to modify themselves. When the choice function is sufficiently clever, it can even realize that </span><i><span>these</span></i><span> updates may be suboptimal, and bootstrap itself to an even cleverer choice function.</span></p>\n    <img src=\"https://image.jido.dev/20260509194252_fhfcnd54w41egmdl7xy8.svg\" alt=\"bootstrapping-choice-function.svg\">\n    <p id=\"block5\"><span>Eventually, the choice function is determined mostly by the modifications it has done to itself, and it starts to make sense to say the choice function is responsible for its own choices. I think this is the answer to the mystery behind the sense of ownership we have of our actions.</span></p>\n    <p id=\"block6\"><span>Volition doesn't have to be mysterious.</span></p>\n    <ol data-footnote-section=\"\" role=\"doc-endnotes\" class=\"footnote-section footnotes\">\n     <li data-footnote-item=\"\" data-footnote-id=\"w8h0o7fi4r\" data-footnote-index=\"1\" role=\"doc-endnote\" id=\"fnw8h0o7fi4r\" class=\"footnote-item\"><span data-footnote-back-link=\"\" data-footnote-id=\"w8h0o7fi4r\" class=\"footnote-back-link\"><sup><strong><a href=\"#fnrefw8h0o7fi4r\">^</a></strong></sup></span>\n      <div data-footnote-content=\"\" class=\"footnote-content\">\n       <p id=\"block8\"><span>\"Judging Books by Their Covers,\" </span><i><span>Surely You're Joking, Mr. Feynman!</span></i></p>\n      </div></li>\n    </ol>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，意志力可以通过自我修改的选择函数来解释，无需诉诸自由意志这一神秘概念。",
+  "oneSentenceSummary": "本文认为，意志力可以通过自我修改的选择函数来解释，无需诉诸自由意志这一神秘概念。",
+  "summary": "作者挑战了自由意志作为“虚假解释”的观点，认为它未能阐明选择是如何做出的。相反，他们提出了一种机械模型，其中选择制定是一个将信息映射到行动的函数。简单计算机与人类之间的关键区别在于自我引用和自举：人类可以根据反馈修改自己的选择函数，从而产生所有权和责任感。这种自我修改的过程，即选择函数越来越受其自身过去修改的影响，为意志力提供了一种非神秘的说明。",
+  "mainPoints": [
+    {
+      "point": "自由意志是一种“虚假解释”，无法阐明选择是如何做出的。",
+      "explanation": "就像说自行车因“能量”而移动一样，援引自由意志并不能解释决策的底层机制。"
+    },
+    {
+      "point": "选择制定可以建模为从信息到行动的函数。",
+      "explanation": "这种机械观点适用于许多系统，包括计算机，它们会做出诸如线程调度之类的选择。"
+    },
+    {
+      "point": "人类与简单计算机之间的区别在于自我修改。",
+      "explanation": "人类可以根据反馈修改自己的选择函数，这是一个自举过程，导致对行动的所有权感。"
+    }
+  ],
+  "keyQuotes": [
+    "我怀疑自由意志之所以难以解释，是因为它实际上并没有澄清任何东西。这是一种虚假解释，就像物理教科书中说一切运行都靠能量一样。",
+    "当选择函数足够聪明时，它甚至能意识到这些更新可能并非最优，并自举到一个更聪明的选择函数。",
+    "最终，选择函数主要由其对自身所做的修改决定，这时说选择函数对其自身选择负责就变得合理了。"
+  ],
+  "tags": [
+    "自由意志",
+    "意志力",
+    "选择",
+    "自我引用",
+    "心灵哲学"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 389,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PG_LEARNING",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778353022000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-09 18:57:02"
+}

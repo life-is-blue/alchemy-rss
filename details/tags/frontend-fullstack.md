@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-10 06:14:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-10 08:23:42 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -660,6 +660,22 @@
 
 
 
+### [Cloudflare-发布-Dynamic-Workflows，为每个租户和每个智能体代码带来持久化执行能力](https://www.infoq.com/news/2026/05/cloudflare-dynamic-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-05-09 09:31:00 | 标签: Cloudflare, Dynamic Workflows, 持久化执行, 多租户, Serverless
+
+> Cloudflare 发布了 Dynamic Workflows，这是一个采用 MIT 许可证的库，它扩展了其持久化执行引擎，以支持每个租户、每个智能体和每个请求的工作流代码。此前，工作流代码必须是部署的一部分，每次部署只有一个绑定。Dynamic Workflows 消除了这一限制，允许平台将每个 `create()` 调用路由到不同租户的代码，并让引擎稍后将执行分派回同一代码。该库大约有 300 行 TypeScript 代码，并使用 Worker Loader 将执行路由到正确的租户。文章详细描述了一个 CI/CD 用例，其中管道代码位于客户的仓库中并被动态加载，每个步骤都具备完整的持久...
+
+
+
+### [AWS-改进-Aurora-Serverless：扩容速度提升-45%，吞吐量提高-30%](https://www.infoq.com/news/2026/05/aurora-serverless-v4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-05-09 06:56:00 | 标签: AWS, Aurora Serverless, 数据库, 云计算, 性能
+
+> AWS 宣布推出 Amazon Aurora Serverless 的新平台版本 4，该版本引入了更智能的扩缩容算法并提升了运行时效率。此次更新使数据库在需求高峰时的扩容速度提升约 45%，并将数据库性能提升高达 30%。这些改进有基准测试数据支撑：与上一版本相比，HammerDB TPROC-C 测试显示，MySQL 和 PostgreSQL 引擎的每分钟新订单数（NOPM）均提高了 27-34%。Sysbench 基准测试进一步表明，与版本 3 相比，完成速度提升 27%，成本降低 28%；与版本 2 相比，完成速度提升 41%，成本降低 42%。增强后的算法尤其适用于存在多个竞争任务的负...
+
+
+
 ### [如何利用-Brevo-和-HTTP-API-绕过云平台-SMTP-限制](https://www.freecodecamp.org/news/how-to-bypass-cloud-smtp-restrictions-using-brevo-and-http-apis/)
 
 2026-05-08 18:23:42
@@ -1086,13 +1102,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1242,13 +1258,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2742,13 +2758,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4452,13 +4468,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
