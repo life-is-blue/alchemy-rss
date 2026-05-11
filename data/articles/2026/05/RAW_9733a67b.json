@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9733a67b",
+  "title": "一条命令将 Postman 集合转换为 Pytest 测试",
+  "url": "https://hackernoon.com/turn-your-postman-collection-into-pytest-tests-with-one-command?source=rss",
+  "date": "2026-05-10 08:40:24",
+  "author": "Mikhail Golikov",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p>\\ You have a Postman collection with 40 requests. Organized into folders. With test scripts that check status codes. You spent time on this. It's good.</p>\n  <p>You also have a CI pipeline that has never heard of Postman and doesn't plan to.</p>\n  <p>These two things have coexisted peacefully for months because nobody wants to be the person who manually rewrites 40 requests as pytest functions. There's also Newman, but Newman runs tests, it doesn't generate code you can read, modify, or version properly.</p>\n  <p>So the collection documents the API. The CI tests the API. They describe the same system and have never met.</p>\n  <p>I built&nbsp;<strong>postman2pytest</strong>&nbsp;to introduce them.</p>\n  <h2 id=\"onecommand\">One Command</h2>\n  <pre><code class=\"javascript language-javascript\">pip install postman2pytest\n\npostman2pytest \\\n  --collection my_api.postman_collection.json \\\n  --out tests/test_api.py\n\nBASE_URL=https://staging.example.com pytest tests/test_api.py -v\n</code></pre>\n  <p>The output is plain Python you can read and edit and commit to version control. No framework lock-in. No runtime wrapper. Just generated Python code.</p>\n  <h2 id=\"whattheoutputlookslike\">What the Output Looks Like</h2>\n  <p>Given a Postman collection with a&nbsp;<code>Users</code>&nbsp;folder containing&nbsp;<code>POST /api/v1/users</code>&nbsp;with a test script asserting status 201: \\n</p>\n  <pre><code class=\"javascript language-javascript\">def test_users_post_create_user():\n    \"\"\"POST ENV_base_url/api/v1/users (users)\"\"\"\n    url = f\"{BASE_URL}/api/v1/users\"\n    headers = {\n        \"Content-Type\": \"application/json\",\n        \"Authorization\": f\"Bearer {os.environ.get('token', '')}\",\n    }\n    body = json.loads('{\"name\": \"John Doe\", \"email\": \"john@example.com\"}')\n    response = requests.post(url, headers=headers, json=body)\n    assert response.status_code == 201, (\n        f\"Expected 201, got {response.status_code}: {response.text[:200]}\"\n    )\n</code></pre>\n  <p>A few things worth noticing:</p>\n  <p><strong>Folder names end up in the function name.</strong>&nbsp;<code>Create user</code>&nbsp;inside&nbsp;<code>Users</code>&nbsp;becomes&nbsp;<code>test_users_post_create_user</code>. If you have 40 requests and three folders called&nbsp;<code>List</code>, you'll thank this later.</p>\n  <p><strong>Postman variables become environment variables.</strong>&nbsp;<code>{{base_url}}</code>&nbsp;becomes the&nbsp;<code>BASE_URL</code>&nbsp;env var.&nbsp;<code>{{token}}</code>&nbsp;in an Authorization header becomes&nbsp;<code>os.environ.get('token', '')</code>&nbsp;in an f-string. The generated tests are environment-aware by default.</p>\n  <p><strong>Status codes come from your existing test scripts.</strong>&nbsp;If you wrote&nbsp;<code>pm.response.to.have.status(201)</code>&nbsp;in Postman, the generated test asserts exactly 201. No test script defaults to 200.</p>\n  <p><strong>Disabled headers stay disabled.</strong>&nbsp;You toggled them off in Postman for a reason.</p>\n  <h2 id=\"thearchitecture\">The Architecture</h2>\n  <p>Two stages, cleanly separated.</p>\n  <p><strong>Parse</strong>&nbsp;(<code>core/parser.py</code>): reads the Postman JSON and produces a flat list of&nbsp;<code>ParsedRequest</code>&nbsp;objects, validated with Pydantic v2. Nested folders are flattened recursively. Malformed items are skipped with a warning; the rest of the collection still generates. \\n</p>\n  <pre><code class=\"javascript language-javascript\">class ParsedRequest(BaseModel):\n    name: str\n    method: str\n    url: str\n    headers: dict[str, str]\n    body: str | None\n    expected_status: int\n    folder: str | None\n</code></pre>\n  <p><strong>Generate</strong>&nbsp;(<code>core/generator.py</code>): takes the flat list and renders a Jinja2 template. The tricky part is variable substitution:&nbsp;<code>{{base_url}}/api/v1/users</code>&nbsp;needs to become&nbsp;<code>f\"{BASE_URL}/api/v1/users\"</code>&nbsp;in Python, and&nbsp;<code>Bearer {{token}}</code>&nbsp;in a header needs to become&nbsp;<code>f\"Bearer {os.environ.get('token', '')}\"</code>. Two custom Jinja2 filters handle this:&nbsp;<code>strip_base_url</code>&nbsp;for URLs,&nbsp;<code>render_header_value</code>&nbsp;for header values.</p>\n  <p>The split is deliberate. You can use the parser independently to generate a different output format. The template is the only thing that knows what pytest looks like.</p>\n  <h2 id=\"whatitdoesntdoyet\">What It Doesn't Do (Yet)</h2>\n  <ul>\n   <li>Postman environments (the&nbsp;<code>.postman_environment.json</code>&nbsp;file)</li>\n   <li>OAuth 2.0 flows</li>\n   <li>Pre-request scripts</li>\n   <li>Response body assertions</li>\n  </ul>\n  <p>These are all solvable. v1.0 is small enough to be trustworthy. I'd rather you use it and tell me what's missing than promise features I haven't built.</p>\n  <h2 id=\"36testsbecauseeatingyourowndogfoodmatters\">36 Tests, Because Eating Your Own Dogfood Matters</h2>\n  <pre><code class=\"javascript language-javascript\">pip install postman2pytest pytest\npytest tests/ -v  # 36 passed\n</code></pre>\n  <p>CI runs on Python 3.10, 3.11, and 3.12 via GitHub Actions.</p>\n  <h2 id=\"whynotjustusenewman\">Why Not Just Use Newman?</h2>\n  <p>Newman runs your Postman tests. That's useful. But it doesn't generate code; it generates a report. When the test fails in CI, Newman tells you it failed. pytest tells you it failed, shows you the diff, lets you add fixtures, parametrize the case, integrate with your existing test infrastructure.</p>\n  <p>If your team runs pytest for unit tests, integration tests, and contract tests, having your API smoke tests in the same runner means a single command, one report, integrated into the existing CI step.</p>\n  <hr>\n  <p><strong>GitHub:</strong>&nbsp;<a href=\"https://github.com/golikovichev/postman2pytest\">github.com/golikovichev/postman2pytest</a> \\n <strong>PyPI:</strong>&nbsp;<a href=\"https://pypi.org/project/postman2pytest/\">pypi.org/project/postman2pytest</a></p>\n  <p><em>If you hit a collection format this doesn't handle, open an issue.</em></p>\n  <p>\\</p>\n </body>\n</html>",
+  "aiSummary": "postman2pytest 是一个 CLI 工具，只需一条命令即可将 Postman 集合转换为可读、可编辑且可版本控制的 pytest 测试文件。",
+  "oneSentenceSummary": "postman2pytest 是一个 CLI 工具，只需一条命令即可将 Postman 集合转换为可读、可编辑且可版本控制的 pytest 测试文件。",
+  "summary": "本文介绍了 postman2pytest，一个开源的 Python 工具，它能将 Postman API 集合转换为纯 pytest 测试文件。作者阐述了开发动机：Postman 集合用于记录 API，而 CI 流水线用于运行测试，但这两者往往互不沟通。Newman 可以运行 Postman 测试，但无法生成可读、可修改或可版本化的代码。postman2pytest 通过解析 Postman 集合的 JSON 文件并渲染 Jinja2 模板，生成标准的 Python 测试函数来解决这个问题。主要特性包括：文件夹名称成为函数名的一部分以便组织，像 `{{base_url}}` 这样的 Postman 变量被转换为环境变量，状态码断言从现有的 Postman 测试脚本中提取。架构清晰地分为解析器（使用 Pydantic v2）和生成器（使用 Jinja2）两部分。该工具目前不支持 Postman 环境、OAuth 2.0 流程、预请求脚本或响应体断言，但作者优先确保 v1.0 版本的可靠性。该项目通过了 36 项测试，支持 Python 3.10-3.12。",
+  "mainPoints": [
+    {
+      "point": "postman2pytest 将 Postman 集合转换为标准的、可编辑的 pytest 测试文件。",
+      "explanation": "与 Newman 仅运行测试并生成报告不同，该工具生成纯 Python 代码，可读、可修改并可提交到版本控制，与现有的基于 pytest 的 CI 流水线无缝集成。"
+    },
+    {
+      "point": "该工具智能地将 Postman 结构映射到 Python 代码。",
+      "explanation": "文件夹名称成为测试函数名的一部分以便组织，像 `{{base_url}}` 这样的 Postman 变量被转换为环境变量，状态码断言从现有的测试脚本中提取。"
+    },
+    {
+      "point": "架构清晰地分为解析器和生成器两部分。",
+      "explanation": "解析器（使用 Pydantic v2）生成一个扁平的 `ParsedRequest` 对象列表，生成器（使用 Jinja2）将其渲染为 Python 代码。这种分离使得解析器可以复用于不同的输出格式。"
+    }
+  ],
+  "keyQuotes": [
+    "Newman 可以运行你的 Postman 测试。这很有用。但它不生成代码，只生成报告。",
+    "输出的是纯 Python 代码，你可以阅读、编辑并提交到版本控制。没有框架锁定，没有运行时包装器。",
+    "v1.0 足够小巧，值得信赖。我宁愿你使用它并告诉我缺少什么，而不是承诺我尚未实现的功能。"
+  ],
+  "tags": [
+    "Postman",
+    "pytest",
+    "API 测试",
+    "开发者工具",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 638,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778402424000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-10 08:40:24"
+}

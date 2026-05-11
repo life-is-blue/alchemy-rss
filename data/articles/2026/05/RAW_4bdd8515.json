@@ -1,0 +1,56 @@
+{
+  "id": "RAW_4bdd8515",
+  "title": "React 中常见的无障碍性错误",
+  "url": "https://reactdigest.net/newsletters/2275-common-accessibility-mistakes-in-react",
+  "date": "2026-05-10 18:25:00",
+  "author": "Jakub Chodounský",
+  "siteName": "React Digest",
+  "content": "<html>\n <head></head>\n <body>\n  <p><a href=\"https://certificates.dev/blog/accessibility-in-react-common-mistakes-and-how-to-fix-them\">Common accessibility mistakes in React</a>\n   <br>\n   <em>10 minutes</em> by Aurora Scharff</p>\n  <p>A look at the most common accessibility mistakes in React applications: missing semantics, broken focus management, unlabeled elements, and silent dynamic updates. Aurora covers what to fix, when to use component libraries, and how to audit your app.</p>\n  <p><a href=\"https://www.meticulous.ai/?utm_source=react-digest&amp;utm_medium=newsletter&amp;utm_campaign=26q1&amp;utm_content=primary\">Still writing tests manually? Meticulous AI is here.</a>\n   <br>\n   <em>sponsored by Meticulous</em></p>\n  <p><span>Most teams are forced to make the tradeoff between better coverage and more maintenance effort. But top engineering teams like Notion, Dropbox, Wealthsimple and LaunchDarkly have discovered a new testing paradigm. Built by ex-Palantir engineers, Meticulous creates and maintains E2E UI tests that covers every edge case of your web app without any developer effort - making it the only tool to improve both product quality and dev velocity.</span></p>\n  <p><a href=\"https://programmingarehard.com/2026/05/06/react-router-dialogs.html/\">Untangling dialogs in React router</a>\n   <br>\n   <em>13 minutes</em> by David Adams</p>\n  <p>Dialogs seem simple until you run into when and where to data loading, handling errors and success feedback, and inevitably resorting to useEffect. David breaks down how to implement modal dialogs using React Router 7, covering patterns for nested routes, optimizing loader requests, showing feedback messages, programmatically closing dialogs, and preserving animations. All without a single useEffect.</p>\n  <p><a href=\"https://kittygiraudel.com/2026/05/02/nextjs-link-as-a-button/\">Next.js link as a button</a>\n   <br>\n   <em>3 minutes</em> by Kitty Giraudel</p>\n  <p>Kitty explains how to use a Next.js Link with a button component, such as Ant Design’s Button, without causing full page reloads. She compares different approaches: using router.push and using Next.js Link with legacyBehavior and passHref. She also shows a reusable wrapper component that cleanly combines Link and Button to enable proper client-side navigation while keeping correct HTML structure and styling.</p>\n  <p><a href=\"https://tanstack.com/blog/who-owns-the-tree\">Who owns the tree? RSC as a protocol, not an architecture</a>\n   <br>\n   <em>9 minutes</em> by Tanner Linsley</p>\n  <p>React Server Components work as both an architecture and a protocol. Most frameworks only use the server-owned model, where the server controls the tree and the client fills in interactive parts. TanStack Start also supports a client-owned model, letting you fetch and drop server-rendered fragments into a client-controlled tree without restructuring your whole app. This makes RSC a flexible tool rather than a fixed architecture you must build around.</p>\n  <p><a href=\"https://stackinsight.dev/blog/dom-manipulation-empirical-study/\">DOM manipulation that kills your 60fps</a>\n   <br>\n   <em>20 minutes</em> by Ko-Hsin Liang</p>\n  <p>Ko-Hsin studies how certain JavaScript DOM manipulation patterns slow down web pages and break smooth 60fps performance. He benchmarks real browsers and analyzes 275 code repositories. The results show that mixing reads and writes, repeatedly using innerHTML in loops, and changing styles inefficiently can cause major slowdowns. Many real-world projects still use these patterns. The study recommends batching updates and using CSS classes for better performance.</p>\n  <h2>javascript</h2>\n  <ul>\n   <li><a href=\"https://hacks.mozilla.org/2026/05/trustworthy-javascript-for-the-open-web/\">Trustworthy JavaScript for the Open Web</a></li>\n   <li><a href=\"https://thetshaped.dev/p/20-mistakes-that-quietly-destroy-javascript-typescript-codebases-common-code-smell-patterns\">20 Mistakes That Quietly Destroy JavaScript Codebases</a></li>\n   <li><a href=\"https://blog.nilenso.com/blog/2026/04/30/business-errors-are-outcomes-not-exceptions/\">Temporal anti-pattern: Don't treat expected failures as exceptions</a></li>\n  </ul>\n  <h2>webdev</h2>\n  <ul>\n   <li><a href=\"https://css-tricks.com/the-importance-of-native-randomness-in-css/\">The Importance of Native Randomness in CSS</a></li>\n   <li><a href=\"https://ishadeed.com/article/range-syntax/\">Media Queries Range Syntax</a></li>\n   <li><a href=\"https://yuanchuan.dev/multi-stroke-text-effect-in-css\">Multi-stroke text effect in CSS</a></li>\n  </ul>\n  <p>And the most popular article from the last issue was:</p>\n  <ul>\n   <li><a href=\"https://www.readwriterachel.com/things-i-learned/2026/04/23/back-to-basics-react-variables.html\">3 ways to store variables in React</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本文识别并解释了 React 应用中最常见的无障碍性错误，包括缺失语义、焦点管理混乱、未标记元素以及无声的动态更新，并提供了实用的修复方法和审计建议。",
+  "oneSentenceSummary": "本文识别并解释了 React 应用中最常见的无障碍性错误，包括缺失语义、焦点管理混乱、未标记元素以及无声的动态更新，并提供了实用的修复方法和审计建议。",
+  "summary": "本文简要概述了 React 应用中四个普遍存在的无障碍性问题：缺失语义化 HTML、导航或状态变化时焦点管理混乱、按钮和输入框等交互元素未标记、以及动态更新未能通知辅助技术。针对每个错误，作者解释了问题所在、对残障用户的影响，并提供了具体解决方案，例如使用正确的 ARIA 角色、利用 refs 管理焦点、确保所有元素都有无障碍名称，以及为动态内容实现实时区域。文章还简要讨论了何时使用内置无障碍功能的组件库，以及如何使用 axe-core 或 Lighthouse 等工具审计应用。本文为 React 开发者提供了一份实用的检查清单，以提升其应用的包容性。",
+  "mainPoints": [
+    {
+      "point": "缺失语义化 HTML 是 React 应用中最主要的无障碍性错误。",
+      "explanation": "开发者经常为交互组件使用通用的 `<div>`，导致失去原生的键盘和屏幕阅读器支持。修复方法是使用 `<button>`、`<nav>` 等语义化元素，或应用正确的 ARIA 角色。"
+    },
+    {
+      "point": "焦点管理混乱会干扰键盘和屏幕阅读器用户的操作。",
+      "explanation": "当内容动态变化时（例如模态框打开或页面导航后），焦点必须通过编程方式移动到新内容上。推荐使用 React refs 和 `focus()` 方法来解决。"
+    },
+    {
+      "point": "未标记的交互元素对辅助技术来说是不可见的。",
+      "explanation": "没有无障碍名称的按钮、输入框和图标（例如通过 `aria-label` 或关联的 `<label>`）无法被屏幕阅读器识别。每个交互元素都需要一个清晰且可编程的标签。"
+    },
+    {
+      "point": "无声的动态更新无法通知用户内容已发生变化。",
+      "explanation": "当内容在不重新加载页面的情况下更新时（例如实时搜索结果或错误消息），屏幕阅读器不会收到通知。使用 ARIA 实时区域（`aria-live`）可以确保这些变化被播报出来。"
+    }
+  ],
+  "keyQuotes": [
+    "本文探讨了 React 应用中最常见的无障碍性错误：缺失语义、焦点管理混乱、未标记元素以及无声的动态更新。",
+    "Aurora 涵盖了需要修复的内容、何时使用组件库以及如何审计你的应用。"
+  ],
+  "tags": [
+    "React",
+    "无障碍性",
+    "a11y",
+    "前端开发",
+    "Web 开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 484,
+  "domain": "reactdigest.net",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_a072e981",
+  "sourceName": "React Digest",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778437500000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-10 18:25:00"
+}
