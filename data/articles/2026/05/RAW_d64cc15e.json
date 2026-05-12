@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d64cc15e",
+  "title": "James Shore 的引述",
+  "url": "https://simonwillison.net/2026/May/11/james-shore/#atom-everything",
+  "date": "2026-05-11 19:48:32",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th May 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs\">\n     <p>Your AI coding agent, the one you use to write code, needs to reduce your maintenance costs. Not by a little bit, either. You write code twice as quick now? Better hope you’ve halved your maintenance costs. Three times as productive? One third the maintenance costs. Otherwise, you’re screwed. You’re trading a temporary speed boost for permanent indenture. [...]</p>\n     <p>The math only works if the LLM <em>decreases</em> your maintenance costs, and by exactly the inverse of the rate it adds code. If you double your output and your cost of maintaining that output, two times two means you’ve quadrupled your maintenance costs. If you double your output and hold your maintenance costs steady, two times one means you’ve <em>still</em> doubled your maintenance costs.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs\">James Shore</a>, <span class=\"context\">You Need AI That Reduces Maintenance Costs</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2195/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "James Shore 认为，AI 编码智能体必须按其所带来的速度提升比例来降低维护成本，否则将造成不可持续的技术债务。",
+  "oneSentenceSummary": "James Shore 认为，AI 编码智能体必须按其所带来的速度提升比例来降低维护成本，否则将造成不可持续的技术债务。",
+  "summary": "James Shore 对 AI 编码智能体提出了批判性观点，认为其核心价值主张必须是降低维护成本，而不仅仅是加速代码生成。他使用一个简单的数学模型来说明问题：如果 AI 使代码输出量翻倍，但维护成本保持不变，那么总维护成本将翻倍。如果输出量增加三倍，维护成本必须降至三分之一才能收支平衡。Shore 警告称，如果没有按比例降低维护成本，团队实际上是在用暂时的速度提升换取对不断增长的技术债务的永久束缚。这篇文章挑战了 AI 编码工具有百利而无一害的主流叙事，揭示了许多团队忽视的基本经济等式。",
+  "mainPoints": [
+    {
+      "point": "AI 编码智能体必须按其所带来的速度提升比例来降低维护成本。",
+      "explanation": "如果 AI 使代码输出量翻倍，维护成本必须减半才能保持总成本不变。否则，团队将面临呈指数级增长的维护负担。"
+    },
+    {
+      "point": "如果没有降低维护成本，AI 带来的速度提升将造成不可持续的技术债务。",
+      "explanation": "Shore 警告称，团队正在用暂时的生产力提升换取对不断增长的维护义务的永久束缚，而这种义务会随时间推移而加剧。"
+    },
+    {
+      "point": "这个数学问题很简单但常被忽视：输出倍数乘以维护成本倍数等于总成本倍数。",
+      "explanation": "在维护成本不变的情况下使输出量翻倍，总维护成本仍然会翻倍。可持续的唯一路径是按比例降低维护成本。"
+    }
+  ],
+  "keyQuotes": [
+    "你用来写代码的 AI 编码智能体，需要降低你的维护成本。而且不是降低一点点。",
+    "现在你写代码快了一倍？最好希望你的维护成本也减半了。生产力提高了三倍？维护成本降到三分之一。否则，你就完蛋了。",
+    "你正在用暂时的速度提升换取永久的束缚。",
+    "只有当 LLM *降低*你的维护成本，并且降低幅度恰好与它增加代码的速度成反比时，这个数学等式才成立。"
+  ],
+  "tags": [
+    "AI 编码智能体",
+    "维护成本",
+    "技术债务",
+    "软件工程",
+    "生产力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 136,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778528912000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-11 19:48:32"
+}

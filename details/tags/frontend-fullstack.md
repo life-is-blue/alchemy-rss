@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-12 06:22:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-12 08:26:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -372,7 +372,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -384,7 +384,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -663,6 +663,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [你的递归在栈安全性上欺骗了你](https://hackernoon.com/your-recursion-is-lying-to-you-about-stack-safety?source=rss)
+
+2026-05-11 15:08:00 | 标签: 递归, 尾调用优化, 栈安全, JavaScript, 蹦床函数
+
+> 本文挑战了递归（尤其是尾递归）在 JavaScript 中是栈安全的常见假设。文章解释了虽然递归对于树遍历和分治等问题很优雅，但每次调用都会消耗栈空间，导致深度过大时出现栈溢出。作者澄清了尾调用优化（TCO）在主流 JavaScript 运行时（Chrome、Node.js、Firefox、Safari、Bun）中并未可靠实现，使得尾递归在生产环境中无法安全保证。文章以斐波那契数列为例，区分了栈溢出和指数级时间复杂度。随后介绍了更安全的模式：迭代重写，完全避免栈增长；以及蹦床函数模式，在保留递归结构的同时通过循环管理控制流。结论强调，递归应仅用于有界深度，当深度由用户或数据驱动时，应优先使用迭...
+
+
+
+### [为什么键盘用户无法滚动你的溢出容器](https://css-tricks.com/why-keyboard-users-cant-scroll-your-overflow-containers/)
+
+2026-05-11 07:42:40 | 标签: 无障碍, CSS, 键盘导航, 滚动容器, 焦点管理
+
+> 这篇来自 CSS-Tricks 的文章探讨了一个常见的无障碍问题：键盘用户无法滚动溢出容器，例如数据表格或代码块。核心问题在于浏览器的焦点管理系统（跟随可交互元素）与滚动容器系统（属于布局原语）之间存在脱节。文章详细说明了 CSS 属性如 `overflow`、`transform` 和 `contain` 如何无意中创建出成为键盘陷阱的滚动容器。主要的修复方法是为容器添加 `tabindex="0"`，但这必须配合 `aria-label` 和 `role="region"` 以方便屏幕阅读器用户，同时还需要可见的焦点样式。文章还讨论了何时不应使用 `tabindex="0"`，例如当内容已...
 
 
 
@@ -1110,13 +1126,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1266,13 +1282,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2766,13 +2782,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4476,13 +4492,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
