@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-12 08:26:39 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-12 11:03:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -518,25 +518,19 @@
 
 ### [如何使用-n8n-和-WAHA-构建自托管-WhatsApp-机器人](https://www.freecodecamp.org/news/how-to-build-a-self-hosted-whatsapp-bot-with-n8n-and-waha/)
 
-2026-05-11 13:57:06 | 标签: WhatsApp 机器人, n8n, WAHA, 自托管, Docker
-
-> 这份全面的教程指导开发者使用两个开源工具：WAHA（WhatsApp HTTP API）和 n8n（工作流自动化），构建一个完全自托管的 WhatsApp 机器人。文章首先比较了自托管方案与 Meta 官方的 WhatsApp Business Cloud API，突出了在成本、上手速度和可扩展性方面的权衡。核心部分提供了详细、可操作的说明，指导如何使用 Docker Compose 运行这两个服务，通过扫描二维码启动 WhatsApp 会话，并将 WAHA 的 Webhook 连接到 n8n 工作流。接着，它演示了如何构建一个基于关键词的自动回复机器人和一个主动的预订确认工作流。教程最后介绍...
+2026-05-11 13:57:06
 
 
 
 ### [流媒体应用后端架构的演进之路](https://www.infoq.com/presentations/streaming-application-aws-infrastructure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-11 11:45:00 | 标签: AWS, 无服务器, 事件驱动架构, 流媒体应用, 可扩展性
-
-> 本次演讲详细讲述了一个两人团队在 18 个月内为国际用户扩展流媒体应用（Joyn）的历程。团队从一个脆弱的架构（单节点数据库、数据不一致、部署耗时数小时）起步，系统性地迁移到了 AWS 上的无服务器、事件驱动系统。解决的关键挑战包括数据一致性（通过使用 EventBridge 实现 Hub and Spoke 模式，以及使用 S3 实现 Claim Check 模式来解决）和可扩展性/韧性（通过基于单元架构来缩小爆炸半径、多层缓存策略（CDN、内存、Momento Cache）来降低数据库负载，以及自动化数据平面在 Fargate 和 Lambda 之间切换流量以优化成本）。演讲最后对多区域策...
+2026-05-11 11:45:00
 
 
 
 ### [使用-Vercel-Flags-实现自动化渐进式发布---Vercel](https://vercel.com/changelog/progressive-rollouts-in-vercel-flags)
 
-2026-05-11 08:00:00 | 标签: Vercel, 功能开关, 渐进式发布, 部署, DevOps
-
-> 本文宣布了 Vercel Flags 的一项新功能：渐进式发布。与用于实验的固定权重分配（例如 50/50）不同，渐进式发布遵循一个预定义的时间表，逐步将流量百分比转移到新的变体上。每个阶段都有一个目标百分比和持续时间。这种分阶段的方法使团队能够在全面发布之前，在一小部分用户中捕获回归问题。该功能可通过 Vercel 仪表盘和新的 CLI 命令 `vercel flags rollout` 使用。
+2026-05-11 08:00:00
 
 
 
