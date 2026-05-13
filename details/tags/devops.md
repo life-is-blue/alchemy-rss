@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-13 08:28:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-13 11:03:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -308,17 +308,13 @@
 
 ### [立即保护您的企业：针对-Shai-Hulud-蠕虫与-npm-漏洞的-6-个可执行步骤](https://venturebeat.com/security/shai-hulud-worm-172-npm-pypi-packages-valid-provenance-ci-cd-audit)
 
-2026-05-12 18:49:53 | 标签: 供应链安全, npm, PyPI, CI/CD, OIDC
-
-> 本文对 Mini Shai-Hulud 供应链攻击进行了全面的技术分析。该攻击利用有效的 SLSA Build Level 3 来源证明，入侵了 172 个 npm 和 PyPI 包（包括 TanStack 和 Mistral AI）。该蠕虫利用了三个连锁漏洞：执行 fork 代码的 pull_request_target 工作流、GitHub Actions 缓存投毒，以及从运行进程内存中提取 OIDC 令牌。它从超过 100 个文件路径中窃取凭证，包括 AI 智能体配置（Claude Code、VS Code），并安装了在包卸载后依然存活的持久化钩子。文章包含对 Endor Labs 研究...
+2026-05-12 18:49:53
 
 
 
 ### [自动化智能文档处理的模式生成-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/automate-schema-generation-for-intelligent-document-processing/)
 
-2026-05-12 07:54:08 | 标签: 智能文档处理, AWS, 模式生成, 文档聚类, 视觉嵌入
-
-> 这篇 AWS 机器学习博客文章介绍了开源 IDP Accelerator 解决方案的多文档发现功能。它解决了经典的先有鸡还是先有蛋的问题：提取文档数据需要模式，但创建模式又需要理解文档。该解决方案通过以下步骤自动化了这一预处理环节：首先，利用 Amazon Bedrock 上的 Cohere Embed v4 将文档图像转换为视觉嵌入；然后，使用结合轮廓系数优化的 k-means 聚类算法，自动将文档分组为不同类型。在包含 9 种类型、共 293 份文档的基准数据集上，该方法取得了完美的调整兰德指数和归一化互信息分数，均为 1.0。对于每个发现的聚类，一个配备专用工具的 Strands Age...
+2026-05-12 07:54:08
 
 
 
@@ -534,25 +530,19 @@
 
 ### [使用自然语言创建-Vercel-Firewall-规则---Vercel](https://vercel.com/changelog/create-vercel-waf-custom-rules-using-natural-language)
 
-2026-05-12 19:00:00 | 标签: Vercel, Firewall, WAF, 自然语言, DevOps
-
-> Vercel 为其 Firewall 服务引入了一项新功能，使用户能够使用自然语言创建 Web 应用程序防火墙（WAF）自定义规则。用户无需手动配置复杂的规则语法，只需用简单的英文描述所需行为，Vercel 仪表盘便会自动生成相应的规则。该公告提供了一个示例提示，用于创建一条速率限制规则，该规则可阻止每分钟请求超过 50 次的 IP，持续 5 分钟。该功能旨在使流量控制更加便捷，允许用户根据 IP、路径、国家或用户代理等各种条件，对请求执行记录、阻止、挑战、速率限制或重定向等操作。
+2026-05-12 19:00:00
 
 
 
 ### [当“空闲”并非空闲：Linux-内核优化如何成为-QUIC-的-Bug](https://blog.cloudflare.com/quic-death-spiral-fix/)
 
-2026-05-12 14:00:01 | 标签: CUBIC, QUIC, 拥塞控制, Linux 内核, Bug 修复
-
-> 这篇来自 Cloudflare 博客的文章描述了其开源 QUIC 实现 quiche 中一个微妙的 Bug，该 Bug 会导致 CUBIC 拥塞控制算法陷入“死亡螺旋”。当连接遭遇严重丢包，拥塞窗口（cwnd）被压缩至最小值时，该 Bug 被触发。在这种情况下，一项从 Linux 内核移植而来的、旨在处理应用程序空闲周期的优化发生了误判。它将极小的 cwnd 下正常的管道排空误认为是空闲周期，导致算法反复重置其恢复状态。这形成了一个自我循环，使得 cwnd 始终被锁定在最小值，即使丢包停止也无法恢复。根本原因在于，空闲时长的计算是基于最后一次数据包发送时间，而这个时间点可能是一个完整的 RTT...
+2026-05-12 14:00:01
 
 
 
 ### [在-CLI-中管理-Vercel-Firewall---Vercel](https://vercel.com/changelog/manage-vercel-firewall-in-the-cli)
 
-2026-05-12 04:00:00 | 标签: Vercel, CLI, Firewall, DevOps, 安全
-
-> 这篇来自 Vercel 的更新日志宣布，现在可以直接通过命令行管理 Vercel Firewall。新的 `vercel firewall` 命令使开发者能够配置自定义规则、IP 封禁、系统绕过、攻击模式和系统缓解措施，而无需使用 Vercel 仪表板。文章提供了具体的 CLI 示例，用于常见任务，如对 API 端点进行速率限制、封禁 IP 地址和启用攻击模式。此外，它还介绍了一项新的 Vercel Firewall 技能，允许 AI 智能体与 Firewall 交互，并包含了安全部署规则的最佳实践。此次更新为偏好终端操作的开发者简化了防火墙管理流程，并将其集成到自动化工作流中。
+2026-05-12 04:00:00
 
 
 

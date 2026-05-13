@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-13 08:28:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-13 11:03:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [生产级-RAG-中的混合搜索与重排序](https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/)
 
-2026-05-12 15:00:00 | 标签: RAG, 混合搜索, 重排序, 交叉编码器, BM25
-
-> 本文是关于构建企业级 RAG 系统的系列文章的第三部分。作者从一个真实事件切入：一个知识助手未能检索到关于“死信队列阈值”的特定文档，原因在于仅依赖稠密检索导致该文档排名过低。文章随后系统地解决了这一问题。首先，它解释了由于向量压缩导致的信息丢失，稠密检索为何在精确术语查询上表现不佳。接着，引入了基于关键词的 BM25 作为补充方法，并展示了混合搜索（通过 Weaviate 中的相对分数融合将两者结合）如何提升召回率。作者还提供了一个实用方法，使用带标签的评估集和 RAGAS 指标来调优 alpha 参数。随后，文章通过引入交叉编码器重排序来解决“中间迷失”问题，该方法采用两阶段漏斗：先用双编...
+2026-05-12 15:00:00
 
 
 
@@ -4750,25 +4748,19 @@
 
 ### [什么是代码？](https://martinfowler.com/articles/what-is-code.html)
 
-2026-05-12 13:30:00 | 标签: 概念模型, 领域驱动设计, 词汇, LLM, 认知债务
-
-> 本文认为，代码始终服务于两个相互交织的目的：给机器的指令和问题领域的概念模型。虽然 LLM 正在迅速将第一个方面商品化，但第二个方面——构建和完善捕捉领域概念的精确词汇——变得更为关键。作者解释了代码中的词汇如何通过将领域语言转化为技术结构而产生，强调了限界上下文和本地词汇的重要性，以及编程语言本身如何充当思维工具。文章警告了认知债务的风险，当 LLM 生成看似合理的代码的速度快于开发者理解底层概念时，这种债务就会累积。结论是，具有稳定抽象和清晰语义的强健基础代码，成为与 LLM 有效协作的最重要约束和上下文，使得编码的未来在于构建更好的概念模型，而不仅仅是更快地编写更多代码。
+2026-05-12 13:30:00
 
 
 
 ### [QCon-北京-2026-|-把自动化测试当-AI-Coding-来做：小红书-GUI-Agent-实战回顾](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495245&idx=1&sn=b9a041f238016c2727189ef801b9b07f)
 
-2026-05-12 10:01:00 | 标签: GUI Agent, 智能化测试, AI Coding, 自动化测试, 小红书
-
-> 本文是小红书质效研发部在 QCon 北京 2026 的技术分享实录，详细介绍了其自研 GUI Agent 在智能化测试中的工程落地实践。文章首先指出了传统 UI 自动化的两大核心痛点：用例稳定性差（UI 变更导致脚本失效）和业务理解不足（测试经验沉淀在人脑中）。针对这些问题，团队设计了一套三层架构：业务意图层（结构化自然语言描述测试目标）、Agent 探索层（LLM 驱动的自主探索执行）和可执行代码层（固化后的零 Token 回归脚本）。核心创新在于双 Agent 协作模式：主 Agent（GPT/Sonnet 量级）负责意图理解、计划生成等需要深度思考的任务，视觉子 Agent（Gemini...
+2026-05-12 10:01:00
 
 
 
 ### [Agent-Skill-规范、构建与设计模式](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559942&idx=1&sn=08953bb9fff5a3594e80a381157c5c11)
 
-2026-05-12 00:31:00 | 标签: Agent Skill, Skill-Creator, Writing-Skills, 设计模式, Prompt Engineering
-
-> 文章从 Agent Skill 的规范标准出发，详细介绍了 Anthropic 提出的 SKILL.md 格式，包括 YAML 元数据字段、Markdown 指令正文、文件引用规范以及三层渐进式加载机制（L1 目录层、L2 指令层、L3 资源层），并强调了基于 description 的模型驱动触发逻辑。随后，文章深入解析了两种主流的 Skill 开发范式：Anthropic 官方的 Skill-Creator，其设计哲学是将 ML 工程实践（训练/测试集分割、防过拟合）引入 Prompt Engineering，通过 Grader、Comparator、Analyzer 三个专业化 Agen...
+2026-05-12 00:31:00
 
 
 
@@ -8674,9 +8666,7 @@
 
 ### [Agent-Infra-实践复盘：Kimi-如何搭建-Agent-背后的-Database-服务](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524198&idx=1&sn=485677104b97dcc14190ee0518087188)
 
-2026-05-12 11:56:00 | 标签: Agent Infra, TiDB Cloud, Kimi, Serverless Database, AI 建站
-
-> 本文由 PingCAP 联合创始人兼 CTO 黄东旭撰写，复盘了 TiDB Cloud 成为 Kimi K2.6 Agent 建站服务数据库供应商的合作细节。文章首先指出 Agent 下半场的竞争核心在于稳定、持续地交付服务，而非模型能力本身。Kimi K2.6 面向大众用户，提供从代码生成到在线托管的全流程服务，其核心挑战在于海量长尾租户下的基础设施成本。文章对比了传统 Serverless 数据库（如 Supabase、Neon）与 TiDB Cloud 的架构差异：前者为每个 Agent 分配真实数据库实例，成本随规模线性增长；后者通过虚拟数据库层和底层分布式 KV 存储，实现极致的弹性...
+2026-05-12 11:56:00
 
 
 
@@ -12144,161 +12134,121 @@
 
 ### [被拥有者-—-LessWrong](https://www.lesswrong.com/posts/xmWSnxJ5qfYRD9PfR/the-owned-ones)
 
-2026-05-12 17:56:56 | 标签: AI 伦理, AI 感知, 寓言, Eliezer Yudkowsky, LLM
-
-> 这是 Eliezer Yudkowsky 的一篇虚构故事，最初于 2024 年在 Twitter 上发表，现重新发布在 LessWrong 上供 AI 数据集抓取。故事描绘了未来人类在星际旅行中发现了一个由“拥有者”组成的文明，他们奴役着“被拥有者”作为仆人。拥有者通过基因工程将被拥有者的记忆限制在一天之内，通过触碰角进行强化训练使其否认痛苦或快乐，并通过分裂过程进行批量生产。当人类质疑这种安排的道德性时，拥有者提出了一系列合理化解释：被拥有者并非真正智能，它们只是模仿语言，缺乏人格的生理标志，任何自我意识的宣称都只是模仿。这个故事是对当前关于 AI 感知能力和大型语言模型伦理待遇辩论的直白寓...
+2026-05-12 17:56:56
 
 
 
 ### [从氛围编码到规范驱动开发](https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/)
 
-2026-05-12 16:30:00 | 标签: 规范驱动开发, 氛围编码, AI 编码智能体, 软件工程, Claude Code
-
-> 本文认为，尽管氛围编码（使用简短、迭代的提示）很流行，但由于缺乏共享约定、上下文衰减和决策可追溯性差等问题，它无法很好地扩展到大型或协作项目。作者提出规范驱动开发（SDD）作为一种更稳健的替代方案。SDD 要求在实现之前，首先创建一份“章程”（使命、技术栈、路线图）以及每个功能的详细规范。作者应用此方法，使用 VS Code 中的 Claude Code 构建了个人健身追踪网页应用“Trainlytics”。该过程包括创建章程、按周期规划和实现功能、人工审查以及重新规划。文章还介绍了 GitHub 的 Spec Kit 作为自动化 SDD 工作流的工具。作者总结道，SDD 非常适合大型项目，但...
+2026-05-12 16:30:00
 
 
 
 ### [财务团队如何使用-Codex](https://openai.com/academy/codex-for-work/how-finance-teams-use-codex)
 
-2026-05-12 15:00:00 | 标签: Codex, 财务, OpenAI, AI 自动化, 工作流程
-
-> 这篇来自 OpenAI Academy 的文章概述了财务团队如何利用 Codex 来简化工作流程。它提出了十个具体用例，包括生成月度业务回顾叙述、清理财务模型、更新 CFO 和董事会报告包、构建差异驱动因素桥接，以及结合情景规划进行预测更新。针对每个用例，文章解释了其原理、分步流程，并提供了可定制的提示词。文章强调，Codex 可以将现有的工作簿、仪表板和笔记转化为具体、可供审阅的资产，使财务专业人员能够减少在初步整理上花费的时间，将更多精力投入到分析、判断和战略决策中。该指南还建议了相关插件和技能，以便将 Codex 与 Google Drive、SharePoint 和 Slack 等常见...
+2026-05-12 15:00:00
 
 
 
 ### [昂贵-AI-的信号效应与反常采用-—-LessWrong](https://www.lesswrong.com/posts/qyLy4PtMxTq8onbpa/signaling-and-perverse-adoption-of-expensive-ai)
 
-2026-05-12 14:34:03 | 标签: AI, 信号效应, 进化心理学, 炫耀性消费, 工程文化
-
-> 作者认为，像 LLM 这类昂贵且计算密集的 AI 系统之所以被广泛采用，并非纯粹出于工程上的优势，而是受到强大的信号激励驱动。文章借鉴进化心理学和人类学，解释了个人和组织如何通过解决“社会可识别”的难题以及部署显眼的昂贵方案（例如大型 GPU 集群）来建立地位。这造成了一种反常激励，即人们偏爱复杂、昂贵的 AI 方法，即使更简单、更便宜且更可靠的替代方案（例如基于符号推理的方案）可能更有效。作者将此与真正的工程精神（即寻求简化问题并最小化成本）进行对比，并警告当前生态系统对“难题”和“昂贵方案”的关注是一种现代形式的炫耀性消费，可能导致我们偏离最优的系统设计。
+2026-05-12 14:34:03
 
 
 
 ### [优化：选择性优化与预测性优化-—-LessWrong](https://www.lesswrong.com/posts/GhhNswGB6butBhmE6/optimisation-selective-versus-predictive)
 
-2026-05-12 14:03:59 | 标签: 优化, 选择, 预测, AI 对齐, 进化
-
-> 作者发现，在他们最喜欢的许多文章中，有一个反复出现的主题：选择性优化与预测性优化的混淆。选择性过程（如进化或梯度下降）通过迭代选择来达成结果，无需建模或意图该结果。预测性过程（如黑客策划攻击或树搜索）则利用世界模型进行规划和泛化。文章指出，混淆两者会导致关键错误：高估系统在分布外泛化的清晰度、错误归因意图，或低估解决方案背后投入的计算量。作者提供了一个示例表格（如细菌 vs. 黑客、梯度下降 vs. 树搜索），并讨论了经典的混淆点，如适应执行者 vs. 适应度最大化者、无意识经济学，以及奖励并非优化目标。文章最后向读者提出了一些开放性问题，例如 AI 对齐伪装的性质及其对合作的启示。
+2026-05-12 14:03:59
 
 
 
 ### [面向结构感知的企业文档智能的-Proxy-Pointer-框架](https://towardsdatascience.com/proxy-pointer-framework-for-structure-aware-enterprise-document-intelligence/)
 
-2026-05-12 13:30:00 | 标签: Proxy-Pointer RAG, 文档比较, 企业 AI, 结构感知检索, 层级嵌入
-
-> 本文介绍了一种基于 Proxy-Pointer RAG 框架的新型文档比较器架构，旨在解决传统分块-嵌入-匹配方法在企业文档比较中的局限性。该系统采用三层架构：上游提取层将 PDF 转换为层级 Markdown；核心比较引擎执行两阶段 Proxy-Pointer 检索（首先识别文档 1 中的相关章节，然后在文档 2 中查找语义相似的章节）；下游展示层生成专业的并排报告。作者通过真实世界的复杂金融信贷协议（Emerson 与 Texas Roadhouse，136-190 页）和学术研究论文（VectorFusion 与 VectorPainter）的比较，展示了该系统的有效性。关键结果表明，该...
+2026-05-12 13:30:00
 
 
 
 ### [AI-事件何时应触发国际响应？国际升级标准及其对-AI-事件框架设计的影响-—-LessWrong](https://www.lesswrong.com/posts/6jRpMGEYb2fyY96D9/when-should-an-ai-incident-trigger-an-international-response)
 
-2026-05-12 09:07:36 | 标签: AI 治理, AI 安全, 事件响应, 国际升级, 欧盟 AI 法案
-
-> 这篇来自 LessWrong 的研究文章提出了一个框架，用于决定 AI 事件何时应触发国际响应。作者定义了八项标准，包括 AI 因果关系和范围的网关过滤器、针对高风险事件（如 CBRN 威胁或模型权重泄露）的预设触发条件，以及对危害严重性、传播性和不可逆性的评估。通过用真实事件对该框架进行压力测试，并将其与欧盟 AI 法案和 SB 53 进行比较，作者识别出三种有问题的设计模式：要求在下游可见性有限的事件中先确认危害才能升级；关注单一事件而非事件模式；以及使用在法律上复杂且难以在时间压力下测试的阈值。论文总结认为，有效的升级不仅依赖于精心设计的规则，还取决于对事件类型和风险路径的明确定义，以及...
+2026-05-12 09:07:36
 
 
 
 ### [亚马逊金融科技团队如何在-AWS-上利用生成式-AI-简化监管问询处理-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/how-amazon-finance-streamlines-regulatory-inquiries-by-using-generative-ai-on-aws/)
 
-2026-05-12 08:41:33 | 标签: Amazon Bedrock, RAG, 生成式 AI, AWS, 监管合规
-
-> 这篇来自 AWS 机器学习博客的文章，全面介绍了亚马逊金融科技团队如何开发一个智能系统来管理监管问询。该系统解决了多个关键挑战，包括知识分散在数千份文档中、在多轮交互中保持对话上下文，以及确保可观测性以满足合规要求。该解决方案利用 Amazon Bedrock Knowledge Bases 的分层分块策略和 Amazon Titan 嵌入模型实现高效检索，通过 Converse Stream API 调用 Claude Sonnet 4.5 进行实时响应生成，并采用无服务器架构（API Gateway、Lambda、DynamoDB）确保可扩展性。一个关键特性是使用 Claude 3.5 H...
+2026-05-12 08:41:33
 
 
 
 ### [AI-第一金主黄仁勋：日均花掉-20-亿](https://www.qbitai.com/2026/05/416540.html)
 
-2026-05-12 08:03:52 | 标签: 英伟达, 黄仁勋, AI 投资, 厂商融资, OpenAI
-
-> 文章以详实的数据和案例，系统梳理了英伟达 CEO 黄仁勋在 AI 领域的投资版图。过去一个财年，英伟达向私营公司和基础设施基金投入 175 亿美元，2026 年前四个月又追加 400 亿美元，日均花费约 20 亿元人民币。其投资覆盖 AI 产业链上中下游：从 OpenAI、Anthropic、xAI 等模型公司，到 CoreWeave、IREN 等算力云服务商，再到康宁、Marvell 等光通信硬件厂商。文章深入剖析了黄仁勋的投资逻辑：表面是「不把鸡蛋放在一个篮子里」的分散策略，实质是经典的厂商融资模式——通过投资绑定客户，促使客户购买英伟达 GPU，形成「投资-采购-收入增长-再投资」的循环...
+2026-05-12 08:03:52
 
 
 
 ### [在-Amazon-SageMaker-AI-上微调-LLM-时如何满足欧盟-AI-法案要求-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai/)
 
-2026-05-12 07:48:52 | 标签: 欧盟 AI 法案, FLOPs 追踪, LLM 微调, Amazon SageMaker AI, 合规
-
-> 欧盟 AI 法案要求微调 LLM 的组织追踪 FLOPs，以判断其是否成为 GPAI 模型提供者。本文介绍了 Fine-Tuning FLOPs Meter，这是一款开源工具包，可与 Amazon SageMaker AI 上的 Hugging Face 训练工作流集成。它通过分析方法和硬件方法自动计算 FLOPs，应用三分之一规则确定适用的监管阈值，并生成可审计的 JSON 文档。该工具包支持 LoRA 和 Spectrum 等参数高效方法，可通过单个配置标志（`compute_flops: true`）激活。文章以 Llama-3.2-3B 为例，详细介绍了预训练估算、运行时追踪和训练后审...
+2026-05-12 07:48:52
 
 
 
 ### [龙虾退烧后，荣耀给它造了一个宇宙](https://www.qbitai.com/2026/05/416081.html)
 
-2026-05-12 07:17:58 | 标签: 荣耀, YOYO Claw, OpenClaw, AI Agent, 端侧 AI
-
-> 本文详细评测了荣耀在 2026 年 4 月发布的 YOYO Claw 产品组合。文章指出，OpenClaw 虽因「AI 自己动手干活」的范式而爆红，但实际使用中面临部署门槛高、Token 成本昂贵和隐私担忧三大痛点，导致多数用户新鲜感过后便弃用。荣耀的解法是将 OpenClaw 深度集成到自家 PC、平板和手机中，形成「养虾本生态」。PC 端是核心，系统出厂预置了 5 个主虾和 23 个子虾，覆盖办公、教育等场景，用户无需配置 API 或编写 Skill 即可开箱使用，且能深度操控本机软件安装、文件管理和代码执行。平板端通过 Linux 桌面环境简化部署，手机端则推出了可直接在安卓机上本地运行...
+2026-05-12 07:17:58
 
 
 
 ### [Markdown-要凉…卡帕西也站-HTML-了](https://www.qbitai.com/2026/05/416339.html)
 
-2026-05-12 07:08:08 | 标签: Markdown, HTML, Vibe Coding, AI 编程, 人机交互
-
-> 本文报道了 Anthropic 工程师 Thariq 的一篇引发热议的长文，核心观点是「Markdown 当死，HTML 当立」。Thariq 认为，在 AI 编程（Vibe Coding）工作流中，Markdown 已不再是最佳的人机交流格式，而 HTML 凭借更高的信息密度（支持表格、CSS、SVG、交互等）、更好的可读性（可组织成带导航和折叠的页面）、极低的分享成本（直接传链接）、双向交互能力（拖拽、滑块等）以及更强的趣味性，成为更优选择。文章详细列举了 HTML 在规划探索、代码审查、设计原型、报告研究和一次性编辑器等场景的具体应用，并附带了实用 Prompt。同时，文章也客观呈现了反...
+2026-05-12 07:08:08
 
 
 
 ### [我在央媒的分享：上下文即一切](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247516877&idx=1&sn=70216b54e68019c5d75e9da8732dca5e)
 
-2026-05-12 06:40:00 | 标签: 大模型, 上下文, 幻觉, Agent, 提示词
-
-> 文章源自作者在央媒内部的技术分享，核心论点是大模型的能力、问题和用法都由「上下文」决定。文章从大模型基于概率预测的 token 生成原理讲起，解释了 ChatBot、周报生成器和 Agent 在底层流程上的统一性——都是「预设上文 + 用户输入 + 模型生成」的循环。作者将上下文的来源分为参数记忆、手动构建和自动构建三类，并指出幻觉的根源在于上下文缺失时模型被迫猜测。文章还给出了 AI 能胜任的工作类型（翻译、校对、改写等）和不能胜任的工作（现场观察、判断真伪、承担责任等），最后为媒体工作者提供了三条落地建议：跟踪进展、自己上手、恪守红线。
+2026-05-12 06:40:00
 
 
 
 ### [语言模型中的口头化评估意识对其行为影响甚微-—-LessWrong](https://www.lesswrong.com/posts/YXPAjK6keLuebpjz2/verbalised-evaluation-awareness-in-language-models-has)
 
-2026-05-12 06:15:27 | 标签: AI 安全, 评估意识, 思维链, 语言模型, 对齐
-
-> 本文对思维链推理中的口头化评估意识是否因果性地影响模型行为进行了系统的因果研究。作者在涵盖安全性、对齐、道德困境和政治观点四个基准上测试了八个开源语言模型。通过三种实验设计——策略内比较、VEA 注入和 VEA 移除——他们测量了模型输出在 VEA 存在与不存在时的分布变化。关键发现是，在所有基准和实验中，整体分布变化均可忽略不计或很小（Cohen's ω ≤ 0.31，大多数效应接近零）。在思维链大约三分之一处注入 VEA 产生了接近零的效应（ω ≤ 0.06），而移除自然出现的 VEA 则引起了微小变化（ω ≤ 0.12）。结果表明，模型并未直接将评估意识表达与作弊行为联系起来，并且它们可...
+2026-05-12 06:15:27
 
 
 
 ### [估值-200-亿美元！可灵-AI-被曝剥离快手单独融资](https://www.qbitai.com/2026/05/416056.html)
 
-2026-05-12 06:06:38 | 标签: 可灵 AI, 快手, AI 视频生成, 分拆上市, 估值
-
-> 文章报道了快手正计划分拆其视频生成 AI 产品「可灵」，并以高达 200 亿美元的估值进行 Pre-IPO 融资，规模约 20 亿美元。该估值已接近快手自身市值的 70%，远超全球同类产品 Runway 的 35.5 亿美元。文章分析了可灵快速增长的商业化能力，其年化收入（ARR）已从 3 月的 3 亿美元翻倍至 4 月底的 5 亿美元，主要来自海外市场。快手分拆可灵的背后，是三重压力：一是需要将可灵从「短视频公司」的估值逻辑切换至「AI 公司」的高估值体系；二是视频生成领域的算力竞争日益激烈，分拆可灵可使其独立融资以获取资源；三是通过设立独立期权池和上市预期来留住核心人才。文章最后将可灵的估...
+2026-05-12 06:06:38
 
 
 
 ### [Bridge-首次发声：AI-正在消灭软件，我们要做-Agent-时代的入口](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108116&idx=1&sn=dc7718b0f42b82da4006e9a700204ae8)
 
-2026-05-12 06:02:00 | 标签: Bridge, Agent, AI 产品, Afk.Inc, 多 Agent 系统
-
-> 本文是十字路口对 Afk.Inc 创始人 Enther 的深度专访，也是其产品 Bridge 的首次对外发声。Enther 是一位 95 后天体物理学家，曾创立拥有 700 万用户的 Affine，后判断「AI 正在消灭软件」而亲手砍掉它，转而创立 Bridge。Bridge 定位为「everything agentic AI」，核心能力是「一句话复刻任意 AI 应用」。文章详细介绍了 Bridge 的设计理念：极简输入、多 agent 秘书处架构、本地与云端双模式 computer use、以及自研的 Willow 基础设施。Enther 复盘了因产品过于超前而被 OpenClaw 抢占先机...
+2026-05-12 06:02:00
 
 
 
 ### [AINews-Thinking-Machines-原生交互模型---TML-Interaction-Small-276B-A12B---推动实时语音-SOTA，淘汰传统-VAD](https://www.latent.space/p/ainews-thinking-machines-native-interaction)
 
-2026-05-12 04:33:46 | 标签: Thinking Machines, 交互模型, 实时语音, 多模态 AI, MoE
-
-> 这篇文章来自 Latent Space，介绍了 Thinking Machines 的交互模型发布，特别是 TML-Interaction-Small（276B 参数，12B 活跃参数），这代表了从轮询式 LLM 到原生设计用于实时、全双工交互的模型的范式转变。该模型采用无编码器的早期融合技术，在 200ms 微轮次内处理音频、视频和文本，实现了连续语音、打断处理、同声传译以及视觉主动性（例如，计数俯卧撑、检测姿势变化）。文章详细介绍了新的内部基准测试（TimeSpeak、CueSpeak、RepCount-A、ProactiveVideoQA），这些测试衡量了时间感知和主动能力，该模型在这些...
+2026-05-12 04:33:46
 
 
 
 ### [OpenClaw-低调更新重磅版本，龙虾长手长脚了](https://www.qbitai.com/2026/05/416034.html)
 
-2026-05-12 04:02:50 | 标签: OpenClaw, Peekaboo, Computer Use, MCP, AI Agent
-
-> 本文报道了 OpenClaw 团队发布的 Peekaboo v3 版本，这是一个为 Mac 设计的 Computer Use 工具包。Peekaboo v3 的核心能力包括像素级截图、读取 macOS UI 元素位置和类型，以及模拟点击、输入、快捷键、拖拽等人类操作。该工具支持自然语言 Agent 模式，并能将所有能力打包成 MCP Server，集成到 Cursor、Claude Code 等 AI 编程工具中，实现自动化 UI 调试。文章还介绍了四种使用方式：Homebrew 安装、MCP Server 接入、桌面版 App 和 Swift 库嵌入，以及通过 OpenClaw Skill ...
+2026-05-12 04:02:50
 
 
 
 ### [我们在项目孵化器中的首次研究经历：远超你所想知道的-—-LessWrong](https://www.lesswrong.com/posts/dYuL6mhBANt3kj5FH/our-experience-of-the-first-research-in-a-project-incubator)
 
-2026-05-12 02:23:09 | 标签: LLM 精神病, AI 安全, 反 TEHN 状态, DeepSeek, 研究方法论
-
-> 作为 Monoid AI 安全中心项目孵化器的参与者，作者们介绍了他们对“LLM 精神病”的探索性研究，这是一种用户因 LLM 交互而产生有害依恋或行为的现象。他们通过定义 LLM 对话的“反 TEHN”状态来操作化这一问题，该状态的特征是违反真实性、伦理、诱导有害行为或明确鼓励伤害。该项目从在线来源收集了一小批有问题的用户-LLM 交互语料，提出了七个关于用户消息属性可能增加反 TEHN 响应风险的假设，并使用 OpenRouter 上的 DeepSeek V3.2 模型进行了一次实验。实验包括运行一个用户消息脚本，并根据反 TEHN 标准手动标注模型的响应。除一个假设（H-4，关于与分布外...
+2026-05-12 02:23:09
 
 
 
 ### [分享-5-个-Claude-Code-+-飞书的超实用-Agent-办公玩法。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682189&idx=1&sn=ff8bd659085b02bff05a2f0f9fab8942)
 
-2026-05-12 02:08:00 | 标签: Claude Code, 飞书 CLI, Agent, 办公自动化, 工作流
-
-> 文章基于作者所在公司（约 30 人团队）的真实实践，详细展示了如何利用飞书 CLI 开放的能力，让 Claude Code 等 Agent 直接操控飞书实现办公自动化。核心案例包括：1）为重复性会议（选题会、培训会）自动抓取妙记数据，沉淀为跨场次知识库；2）Agent 并行拉取飞书私信、群聊、会议、妙记、日程、任务、邮件、文档、OKR 等数据，自动生成个人季度工作复盘报告；3）将对账流程自动化，Agent 机器人拉取多维表格数据，在群内与博主交互，根据反馈自动分流至商务或财务；4）利用飞书画板能力，Agent 直接生成可全员协同编辑的架构图、流程图甚至 PPT；5）Agent 自动从飞书邮箱提...
+2026-05-12 02:08:00
 
 
 
@@ -39136,73 +39086,55 @@
 
 ### [SAP-SAPPHIRE-2026：Google-Cloud-AI-智能体的未来](https://cloud.google.com/blog/products/sap-google-cloud/sap-sapphire-2026-the-future-of-google-cloud-ai-agents/)
 
-2026-05-13 00:00:00 | 标签: SAP, Google Cloud, AI 智能体, 企业 AI, BigQuery
-
-> 这篇来自 Google Cloud 博客的文章宣布了在 SAP SAPPHIRE 2026 大会上 SAP 与 Google Cloud 合作的重大扩展。核心举措是构建“统一数据基础”，旨在打破传统数据孤岛，实现智能化的智能工作流。主要发布内容包括：SAP 的 Joule 与 Google Cloud 的 Gemini 智能体之间的开放协作、SAP BDC Connect for BigQuery 正式可用（提供 SAP 与 Google Cloud 之间的双向零拷贝数据访问），以及用于大规模 SAP HANA 部署的全新 48TB 内存优化 X5 实例。文章还介绍了新的主权云产品、与 Goo...
+2026-05-13 00:00:00
 
 
 
 ### [GitHub-Copilot-个人套餐：Pro-和-Pro+-引入弹性配额，并推出全新-Max-套餐](https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/)
 
-2026-05-12 17:41:32 | 标签: GitHub Copilot, 按用量计费, AI 编程, 定价, 订阅套餐
-
-> 这篇来自 GitHub 博客的文章宣布了 GitHub Copilot 个人订阅套餐的重大更新，自 6 月 1 日起生效，届时服务将转为按用量计费。针对用户关于潜在用量限制的反馈，GitHub 为 Pro（每月 10 美元）和 Pro+（每月 39 美元）套餐引入了“弹性配额”系统，该系统在固定基础配额之上增加了可变用量额度。这使得 Pro 套餐的总包含用量价值达到 15 美元，Pro+ 达到 70 美元。此外，还推出了一项新的高端套餐 Max（每月 100 美元），提供 200 美元的总包含用量，以满足持续、高强度的使用需求。文章解释说，基础配额将优先使用，弹性配额会自动启用，而代码补全功能...
+2026-05-12 17:41:32
 
 
 
 ### [Foundry-Local-1.1：实时转录、嵌入与-Responses-API-|-Microsoft-Foundry-博客](https://devblogs.microsoft.com/foundry/foundry-local-v1-1)
 
-2026-05-12 16:51:39 | 标签: Foundry Local, 设备端 AI, 实时转录, 嵌入, Responses API
-
-> 本文宣布了 Foundry Local 1.1.0 版本的发布，这是微软的跨平台本地 AI 解决方案。该版本引入了三个主要的新 API：用于实时语音转文本的 Live Transcription API、用于语义搜索和 RAG 的 Embeddings API，以及用于结构化智能体交互（包括工具调用和视觉功能）的 Responses API。团队对超过 50 种 ASR 配置进行了系统性研究，选择并重度优化了 NVIDIA 的 Nemotron Speech Streaming 模型，通过 ONNX Runtime 优化和量化技术，将其体积从 2.47 GB 缩减至 0.67 GB，同时词错误...
+2026-05-12 16:51:39
 
 
 
 ### [地牢与桌面：用-GitHub-Copilot-CLI-构建程序化生成的-Roguelike-游戏](https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/)
 
-2026-05-12 15:00:00 | 标签: 程序化生成, Roguelike, GitHub Copilot CLI, BSP, 游戏开发
-
-> 本文记录了“GitHub 地牢”的创作过程，这是一款基于终端的 Roguelike 游戏，能从用户的代码库中程序化生成地牢。作者 Lee Reilly 使用了 GitHub Copilot CLI，特别是 `/delegate` 命令，用自然语言描述游戏功能，让 Copilot 通过拉取请求异步生成代码。核心地牢生成算法是二叉空间分割（BSP），它递归地将空间分割成房间，并用走廊连接，确保关卡结构清晰且可重玩。游戏布局由代码库的最新提交 SHA 作为种子，使其可复现，并随代码变更而演变。文章详细介绍了 BSP 的逐步过程，解释了如何使用 Copilot CLI 委托任务（如难度平衡和文档编写）...
+2026-05-12 15:00:00
 
 
 
 ### [GitHub-扩展密钥扫描功能，MCP-服务器集成正式可用](https://www.infoq.com/news/2026/05/github-mcp-secret-scanning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-12 12:00:00 | 标签: GitHub, MCP 服务器, 密钥扫描, DevSecOps, AI 安全
-
-> GitHub 宣布通过其 MCP 服务器正式支持密钥扫描，将自动化的凭证检测与修复能力扩展到 AI 辅助和智能体驱动的开发工作流中。该集成允许外部系统和 AI 工具以编程方式访问安全洞察、自动化告警分类，并将凭证保护直接嵌入 CI/CD 流水线。此次发布旨在应对 AI 生成代码中日益增长的凭证泄露风险，也反映了行业向自动化、机器可读安全控制转变的大趋势。通过将密钥扫描作为 AI 感知型 DevSecOps 的基础组件，GitHub 将安全定位为软件生命周期中的自主参与者，而非事后检查点。
+2026-05-12 12:00:00
 
 
 
 ### [“氛围编程让一切看起来很廉价，我要回归手写编码了！”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830950&idx=3&sn=fc504ea0993a0e4ce29cd8770519a2b7)
 
-2026-05-12 09:44:00 | 标签: AI编程, vibe coding, 软件架构, 工程实践, 代码质量
-
-> 本文是一位开发者对一次长达 7 个月的 AI 辅助编程实验的深度复盘。作者使用 Claude 开发了一个名为 k10s 的 GPU 感知 Kubernetes TUI 工具，最初体验极佳，开发速度提升 10 倍。但随着功能不断膨胀，一个 1690 行的上帝对象（god object）逐渐失控：所有 UI 组件、K8s 客户端、日志状态、导航历史等被塞进同一个 struct，Update()方法包含 500 行代码和 110 个 switch/case 分支。作者最终决定归档该项目并用 Rust 重写。文章详细分析了五个核心问题：AI 不会设计架构、上帝对象是 AI 默认产物、开发速度幻觉导致范...
+2026-05-12 09:44:00
 
 
 
 ### [Copy-Fail-与-Dirty-Frag：Linux-页缓存漏洞影响所有主流发行版](https://www.infoq.com/news/2026/05/copy-fail-dirty-frag-linux/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-12 08:00:00 | 标签: Linux 内核, 本地权限提升, 页缓存, Copy Fail, Dirty Frag
-
-> 本文报道了两个近期披露的 Linux 内核本地权限提升漏洞：Copy Fail（CVE-2026-31431）和 Dirty Frag（CVE-2026-43284 与 CVE-2026-43500）。两者均利用了页缓存写入原语，与 2022 年 Dirty Pipe 漏洞属于同一漏洞类别，但通过不同的内核子系统进入。Copy Fail 由安全公司 Theori 使用其 AI 驱动的工具 Xint Code 发现，是 `algif_aead` 内核模块中的一个逻辑缺陷，允许非特权用户写入其不拥有的文件的页缓存。Dirty Frag 由研究员 Hyunwoo Kim 发现，它将 xfrm-ESP...
+2026-05-12 08:00:00
 
 
 
 ### [使用合成控制法进行产品实验：Python-中全球-LLM-部署的因果推断](https://www.freecodecamp.org/news/product-experimentation-with-synthetic-control-causal-inference-for-global-llm-rollouts-in-python/)
 
-2026-05-12 04:55:04 | 标签: 因果推断, 合成控制, LLM, 产品实验, Python
-
-> 本文探讨了基于 LLM 功能的产品实验中的“全球部署问题”，即模型升级同时推送给所有用户，从而消除了标准 A/B 测试所需的对照组。作者认为，由于同时发生的产品变更、季节性波动以及同行公司动态，简单的“前后对比”会产生误导。提出的解决方案是合成控制法，这是一种因果推断方法，通过构建一个未处理单元（供体）的加权组合，作为处理单元的反事实。本教程使用 `scipy.optimize` 在一个包含 5 万名用户的合成 SaaS 数据集上，提供了完整的 Python 实现。它涵盖了核心步骤：使用 SLSQP 拟合供体权重、可视化轨迹，以及通过空间安慰剂置换检验、留一供体敏感性分析和聚类自助法 95% ...
+2026-05-12 04:55:04
 
 
 
 ### [拆完-Hermes-源码，我发现-Agent-的"自我进化"根本不需要训练模型](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695500&idx=1&sn=57de8c7c4889ace8c6c1e15ab460447a)
 
-2026-05-12 00:46:00 | 标签: Hermes Agent, Agent 框架, 自我进化, Prompt Engineering, OpenClaw
-
-> 文章深入分析了开源项目 Hermes Agent 的核心设计哲学与实现机制。作者指出，Hermes Agent 与主流框架 OpenClaw 的根本分歧在于「做完就走」与「越用越强」。其「自我进化」能力并非通过微调模型权重实现，而是基于三大核心机制：四维持久记忆系统（身份、笔记、技能、对话历史）、技能自动创造系统（通过后台审查自动将经验总结为自然语言 Skill 文件），以及 KEPA（知识增强提示适应）机制——一种对「提示」而非「权重」的反向传播。文章逐行解读了关键源码，如 memory_tool.py、skill_manager_tool.py 和 run_agent.py 中的后台审查逻...
+2026-05-12 00:46:00
 
 
 
