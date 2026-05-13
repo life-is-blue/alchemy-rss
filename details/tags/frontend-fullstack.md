@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-13 06:26:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-13 08:28:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -372,7 +372,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -489,6 +489,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [你的第一个-WebAssembly-程序与-Web-应用（完全在浏览器中编写、测试和部署）](https://towardsdatascience.com/your-first-webassembly-program-and-web-app-written-tested-and-deployed-entirely-in-the-web-browser/)
+
+2026-05-12 12:00:00 | 标签: WebAssembly, WASM, Emscripten, GitHub Codespaces, C 语言编程
+
+> 本文是一份面向开发者的全面实操教程，旨在帮助读者从零开始学习 WebAssembly（WASM）。作者引导读者完成创建简单 C 程序（打印 'Hello WASM!'）的完整流程，在 GitHub Codespaces 环境中使用 Emscripten 将其编译为 WebAssembly 模块，然后部署生成的 Web 应用。教程强调，从编写 C 代码到测试和部署最终应用，所有步骤都可以在线完成，无需在本地安装任何软件。内容涵盖设置 GitHub 仓库、启动 Codespaces、编写 C 代码、安装和使用 Emscripten、编译为 WASM、使用 Python HTTP 服务器进行测试，以...
 
 
 
@@ -663,6 +671,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [AdonisJS-v7-发布：端到端类型安全、重构启动模板与零配置-OpenTelemetry](https://www.infoq.com/news/2026/05/adonis-v7-opentelemetry/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-05-12 11:26:00 | 标签: AdonisJS, Node.js, TypeScript, Web 框架, OpenTelemetry
+
+> AdonisJS v7 是该功能完备的 Node.js 框架的最新主要版本，其核心特性是通过代码生成系统实现端到端类型安全。该系统可从路由定义、转换器和 Inertia 组件扫描中生成 TypeScript 类型。该版本还包含重构后的预设启动模板（Hypermedia、API、React、Vue），这些模板开箱即用地集成了身份验证和会话管理。通过新的 `@adonisjs/otel` 包，实现了零配置的 OpenTelemetry 集成。此外，还引入了一个基于 SWC 构建的内部 JIT TypeScript 编译器 `ts-exec`。v7 要求 Node.js 24，这使得团队能够用原生 ...
+
+
+
+### [【第-3696-期】Github：差异对比行的性能攀登之路](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279063&idx=1&sn=e13575e9dc5154706b28ad835abe6fc5)
+
+2026-05-12 01:02:00 | 标签: 性能优化, React, GitHub, 虚拟化, 组件树
+
+> 本文由 GitHub 工程师 Luke Ghenco 和 Adam Shwert 撰写，详细介绍了他们如何通过一系列架构优化，显著提升大型 Pull Request 中「文件变更」标签页的性能。核心策略包括：1）精简差异对比行组件，将每行所需的 React 组件数从 8 个降至 2 个，减少 DOM 节点和事件处理器；2）引入 TanStack Virtual 实现窗口虚拟化，确保超大型 PR 中仅渲染可见部分，将 DOM 节点和内存占用降低 10 倍；3）采用 O(1) 数据访问模式，利用 JavaScript Map 替代 O(n) 查找，并严格限制 useEffect 的使用以优化渲染。...
 
 
 
@@ -1122,13 +1146,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1278,13 +1302,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2778,13 +2802,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4488,13 +4512,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
