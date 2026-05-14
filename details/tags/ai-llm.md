@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-14 08:28:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-14 11:03:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [为生产级-AI-智能体构建评估框架：基于-100-多次部署的-12-项指标框架](https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/)
 
-2026-05-13 12:00:00 | 标签: AI 智能体, 评估, RAG, LLM, 生产
-
-> 文章认为，评估基础设施而非模型质量，才是成功部署生产级 AI 智能体的关键差异点。它介绍了一个由四类共 12 项指标组成的框架：检索类（上下文相关性、召回率、精确率、延迟）、生成类（答案忠实度、答案相关性、幻觉率）、智能体特定类（工具选择准确率、工具执行成功率、多步连贯性）以及生产类（每次查询成本、P99 延迟）。对于每项指标，作者都定义了其衡量内容、重要性、衡量方法以及关键阈值。文章还提供了分阶段实施路线图，将该框架与 Ragas 和 LangSmith 等现有工具进行了比较，并讨论了常见陷阱。文章强调，团队应在产品上线前就构建好评估基础设施，以避免代价高昂的后期改造和信任损失。
+2026-05-13 12:00:00
 
 
 
 ### [一个-AI-还是不够](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488475&idx=1&sn=cf5a0fa22b0ad0a665f2cb92e7e337d0)
 
-2026-05-13 03:38:00 | 标签: 多 Agent 系统, Agent Team, MiniMax, Mavis, AI 架构
-
-> 本文是 MiniMax 对其全新多 Agent 系统 Mavis（Agent Teams）的深度技术分享。文章首先指出单 Agent 在复杂任务中的四大痛点：任务中途意外停止、长任务质量衰减、无法快速响应用户、角色分工不明确。为解决这些问题，MiniMax 设计了基于 Leader-Worker-Verifier 三层架构的 Agent Team，强调多 Agent 系统本质是一套需要持续运行和维护的基础设施，而非简单的 Prompt 编排。文章详细阐述了其核心设计差异：对抗性的质量门禁（Worker 与 Verifier 相互制衡）、确定性的状态机驱动逻辑、以及上下文隔离机制。随后，文章深入...
+2026-05-13 03:38:00
 
 
 
@@ -4764,33 +4760,25 @@
 
 ### [从头构建多智能体系统学到的经验](https://www.infoq.com/presentations/multi-agent-system-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-13 12:01:00 | 标签: 多智能体系统, Claude Code, Shopify, 智能体编排, AI 工程
-
-> 这份演讲实录详细介绍了 Paulo Arruda 在 Shopify 的经历，从早期使用依赖图进行测试生成的实验，到发现智能体搜索（如 Claude Code 中的方式）优于代码库索引。一个关键的黑客马拉松项目表明，两个 Claude Code 实例能够解决单个实例无法解决的问题，这促使他创建了一个名为 Swarm 的多智能体编排工具。演讲涵盖了该工具在 Shopify 的采用情况，并分享了成功案例，例如将主题审查时间从 22 小时缩短至 7-20 分钟。关键经验包括：将智能体视为专注特定领域的专家，避免在角色设定上浪费 token，以及赋能领域专家而非集中化 AI 知识。演讲最后展望了 20...
+2026-05-13 12:01:00
 
 
 
 ### [当我把-AI-变成一个"算法"：Skill-工程化设计的心路历程](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801516&idx=1&sn=673c6ef9bc4022d29f48f753a3f1509a)
 
-2026-05-13 09:24:00 | 标签: AI Agent, 工程化, CLI, Workflow, 提示词工程
-
-> 文章围绕「把 Agent 当算法用」的核心目标，系统性地解决了 LLM 在生产环境中的两大痛点：Token 浪费和路径不确定。作者提出通过引入 CLI 程序作为确定性执行层，将 Agent 的角色从「自由意志体」转变为「决策引擎」，只负责理解意图、收集参数和组织回复，而所有确定性操作（API 调用、格式处理、状态管理）由 CLI 接管。文章详细介绍了三层工具管理（索引层、元数据层、规则层）解决上下文爆炸问题，以及 Workflow 工作流引擎的步进式披露、Gate 门禁、状态持久化和模板变量等核心机制。最后还展示了如何通过 workflow-creator 实现系统的自举扩展。全文提供了从「写...
+2026-05-13 09:24:00
 
 
 
 ### [AI-Generated-UI-技术深度解析：模型流式输出与-UI-渲染实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543420&idx=1&sn=76ea38246b7ca484a7b6aab94076fdbd)
 
-2026-05-13 08:22:00 | 标签: AI-Generated UI, 流式输出, SSE, Vercel AI SDK, v0.dev
-
-> 本文由大淘宝技术团队撰写，系统性地解析了 AI-Generated UI 的核心技术。文章从底层协议到上层应用，全面剖析了该领域的核心原理与实践模式。内容涵盖：SSE 协议详解及与 WebSocket 的选型对比；Vercel AI SDK、v0.dev、Bolt.new 等主流开源项目的架构剖析；流式渲染的核心挑战，包括不完整代码的增量解析、Markdown 流式渲染策略、流式 JSON 解析技术；以及 Cursor 等 AI 代码编辑器的流式实现，如 Ghost Text 和 Diff View 的流式更新。文章还介绍了 WebContainers 这一在浏览器内运行 Node.js 运行...
+2026-05-13 08:22:00
 
 
 
 ### [从零设计生产级-Multi-Agent-Harness：架构、评估、记忆、成本与-MCP-工具接入全拆解](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695544&idx=1&sn=865fb183130b2851900b9f4eda62da9c)
 
-2026-05-13 00:46:00 | 标签: Multi-Agent, Harness, AI 工程化, MCP, Agent 架构
-
-> 文章指出，当前多数团队的 Multi-Agent 系统停留在 Demo 阶段，真正阻碍其落地的不是模型能力，而是缺乏一个可靠的运行时底座——Multi-Agent Harness。作者将 Harness 定义为 Agent 的「操作系统」，并围绕五大核心模块展开：架构编排强调「Agent 负责局部智能，Harness 负责全局控制」，并给出了声明式计划的建议；工具治理提出 Tool Registry 作为统一关口，需登记九项元信息；状态与记忆区分了 State 和 Memory，并强调了遗忘机制的重要性；评估体系建议分四层（组件、轨迹、任务完成度、端到端），并指出 LLM-as-Judge 的...
+2026-05-13 00:46:00
 
 
 
