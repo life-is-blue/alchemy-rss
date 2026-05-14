@@ -1,7 +1,15 @@
-> **更新时间**: 2026-05-14 06:26:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-14 08:28:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
+
+
+
+### [在-Windows-上为-Codex-构建安全有效的沙箱](https://openai.com/index/building-codex-windows-sandbox)
+
+2026-05-15 00:00:00 | 标签: Codex, Windows 沙箱, 安全, 软件工程, 智能体工作流
+
+> 这篇来自 OpenAI 的工程博客文章描述了为其编程智能体 Codex 在 Windows 操作系统上实现安全有效沙箱的过程。作者指出，Windows 缺乏现成的、适合开放式智能体工作负载的隔离原语，因此他们评估并拒绝了 AppContainer、Windows Sandbox 和强制完整性控制等方案。第一个原型是“非提权沙箱”，它使用合成 SID 和写入受限令牌来控制文件写入，并通过环境变量限制网络访问。虽然功能可用，但其网络抑制仅是建议性的，很容易被绕过。为了实现强大的网络隔离，团队重新设计了沙箱，要求增加一个提权设置步骤。最终的“提权沙箱”创建了专用的 Windows 用户（CodexS...
 
 
 
@@ -653,13 +661,13 @@
 
 
 
-### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
+### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
 
 2025-04-16 00:00:00
 
 
 
-### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
+### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
 
 2025-04-16 00:00:00
 
@@ -962,6 +970,22 @@
 ### [16-张-H100-训-26-分钟，超越-o1-preview！李飞飞等用-1K-样本，揭秘测试时-Scaling](https://mp.weixin.qq.com/s/iGi20QGI8KFn-WPtBL5JCw)
 
 2025-02-06 04:55:42
+
+
+
+### [Databricks-的高性能速率限制](https://blog.bytebytego.com/p/high-performance-rate-limiting-at)
+
+2026-05-13 15:30:35 | 标签: 速率限制, 系统设计, 分布式系统, Databricks, 可扩展性
+
+> 本文详细介绍了 Databricks 如何重建其速率限制基础设施，以应对实时模型服务带来的巨大流量冲击。原有架构依赖单个 Redis 实例并通过 Envoy 进行同步查询，存在尾部延迟高、扩展性差和单点故障等问题。团队的重构涉及三个相互依赖的关键决策：将计数器状态从 Redis 迁移到使用名为 Dicer 的路由层进行分片的内存存储；从同步的逐请求检查模式转变为异步批量上报模式，即客户端做出本地决策并每 100ms 上报一次计数；以及采用令牌桶算法（一旦内存架构使其比较并交换语义变得可行）。这消除了关键路径上的两次网络跳转，将尾部延迟降低了约十倍，并使服务器负载变得可预测。其代价是故意容忍高达...
+
+
+
+### [积压队列的数学原理：面向队列恢复的容量规划](https://www.infoq.com/articles/capacity-planning-queue-recovery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-05-13 09:00:00 | 标签: 队列理论, 容量规划, 积压恢复, 分布式系统, 系统设计
+
+> 本文介绍了一种实用且基于公式的方法来管理分布式系统中的队列积压。文章从到达率、处理率和消费者数量之间的基本关系入手，解释了利用率非线性如何导致积压突然出现。文章核心部分涵盖了积压的三个阶段（积累、稳定、排空），并引入了利特尔法则用于实时影响评估。接着，文章探讨了三个关键的现实复杂情况：陈旧消息拖慢处理速度、流量模式影响剩余容量，以及由重试放大导致的危险亚稳态故障状态。文章还探讨了多阶段流水线中的级联积压、负载降级策略，并提供了具体的容量规划公式，包括一个余量公式和自动扩缩容触发器。最后，文章总结了一个用于事后分析的实用测量框架，以持续改进恢复模型。
 
 
 
@@ -34475,11 +34499,11 @@
 
 
 
-### [为什么你的"AI-优先"战略可能大错特错？](https://baoyu.io/blog/2026-04-13/ai-first)
+### [Vibe-Coding-是中年男人的钓鱼](https://baoyu.io/blog/2026-04-14/vibe-coding-and-fishing)
 
-2026-04-13T00:00:00.000Z
+2026-04-15T00:00:00.000Z
 
-> AI First 听着美好，但没有工程基础支撑，就是在沙子上盖楼。
+> Vibe Coding 对中年男人的意义，跟钓鱼一样——都是一种合法且体面的独处方式。
 
 
 
