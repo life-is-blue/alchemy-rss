@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-15 08:25:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-15 11:03:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -14,9 +14,7 @@
 
 ### [从延迟到即时：GitHub-Issues-导航性能现代化改造](https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/)
 
-2026-05-14 16:00:00 | 标签: Web 性能, 缓存, 服务工作线程, IndexedDB, 架构
-
-> 本文详细介绍了 GitHub Issues 导航性能的架构改造。团队发现，主导导航路径是最慢的（硬导航），而重复访问模式使缓存成为可行方案。他们实施了三阶段策略：首先，使用基于 IndexedDB 的客户端缓存层，配合 stale-while-revalidate 语义实现 React 软导航，使 22% 的此类导航变为即时。其次，引入了“预热”策略，从高意图界面（如问题列表）主动填充缓存，同时避免请求泛滥，将缓存命中率提升至约 96%，使高达 70% 的 React 导航变为即时。最后，部署了服务工作线程，拦截硬导航和 Turbo 导航，在有缓存数据时向服务器发送信号，以跳过昂贵的服务端渲染...
+2026-05-14 16:00:00
 
 
 

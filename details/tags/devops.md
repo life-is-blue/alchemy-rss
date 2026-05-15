@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-15 08:25:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-15 11:03:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -314,9 +314,7 @@
 
 ### [从数据孤岛到统一洞察：Amazon-Quick-的跨账户-Athena-访问-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quick/)
 
-2026-05-14 09:17:50 | 标签: Amazon Quick, Amazon Athena, AWS IAM, 跨账户访问, 角色链
-
-> 这篇 AWS 博客文章介绍了一项新功能：Amazon Quick 的跨账户 Athena 访问。它解决了企业常见的挑战：在一个 AWS 账户中集中部署 BI，而数据却分布在多个业务单元账户中。该方案使用两步 IAM 角色链机制：Quick 在中心账户中扮演一个 'RunAsRole'（角色 A），该角色再在目标账户中扮演一个 '消费者账户角色'（角色 B）来执行 Athena 查询。这确保了查询成本被计入数据所在账户，从而保持成本可见性和数据主权。文章提供了详细的逐步指南，用于创建 IAM 角色、配置带有 ExternalId 的信任策略以确保安全，以及通过 CLI 或 Python 在 Qu...
+2026-05-14 09:17:50
 
 
 
@@ -538,17 +536,13 @@
 
 ### [常见的-DevOps-错误及如何避免——初创公司指南](https://www.freecodecamp.org/news/how-to-avoid-devops-mistakes/)
 
-2026-05-14 17:53:38 | 标签: DevOps, 初创公司, 基础设施, 安全, CI/CD
-
-> 这篇发表在 freeCodeCamp 上的综合指南，面向在初创公司承担运维职责的早期 DevOps 工程师和后端开发者。它指出了十个关键错误，包括：在不了解底层基础设施的情况下部署、将生产环境当作开发环境使用、硬编码密钥、为尚不存在的规模过度设计、在无可观测性的情况下上线、将安全视为事后考虑、手动部署、缺乏灾难恢复计划、没有文档，以及在缺乏业务背景的情况下解决技术问题。针对每个错误，文章都提供了一个现实场景、业务影响（如数据丢失、收入损失或安全漏洞）以及具体可行的修复方案。这些修复方案包括实用清单、代码示例（Terraform、Python、AWS CLI、GitHub Actions）和配置...
+2026-05-14 17:53:38
 
 
 
 ### [Pinterest-工程师消除-CPU-僵尸进程以解决生产瓶颈](https://www.infoq.com/news/2026/05/pinterest-cpu-zombies-bottleneck/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-14 10:00:00 | 标签: Pinterest, CPU 瓶颈, 性能调试, Kubernetes, 内核
-
-> Pinterest 发布了一篇详细的技术文章，介绍了其基础设施团队如何追踪并解决了导致其 PinCompute 平台上机器学习训练作业失败的间歇性 CPU 匮乏问题。该问题表现为网络故障和作业崩溃，由于弹性网络适配器（ENA）设备重置，某些场景的成功率下降了超过 25%。初步调查因整体 CPU 利用率看似健康而受阻。通过使用 mpstat 进行单核分析，并利用 Netflix 的 Flamescope 可视化滚动采集的两分钟 perf 数据，团队发现 kubelet 进程的 CPU 使用率飙升至 6.5%，且大部分时间消耗在内核函数 mem_cgroup_nr_lru_pages 上。根本原因...
+2026-05-14 10:00:00
 
 
 

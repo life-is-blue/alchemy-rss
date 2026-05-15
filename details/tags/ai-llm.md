@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-15 08:25:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-15 11:03:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4760,17 +4760,13 @@
 
 ### [在-Zoox-加速-LLM-驱动的开发者生产力](https://www.infoq.com/presentations/ai-software-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-14 13:05:00 | 标签: 企业 AI, 开发者生产力, LLM 平台, RAG, AI 智能体
-
-> 本演讲详细介绍了 Zoox 构建内部 AI 平台 Cortex 以提升开发者生产力的历程。负责人 Amit Navindgi 阐述了开发者生命周期中从信息发现到客户支持等环节的挑战，以及 AI 如何消除摩擦。演讲的核心是平台的架构：一个通往 Claude 和 Gemini 等模型的安全网关，基于内部资源（Confluence、Slack、GitHub）通过 RAG 构建的知识库，以及一个允许团队通过组合工具来创建自定义智能体的智能体 API。一个关键的创新是“智能体即 API”范式，即团队在中央注册表中一次性定义工具，并通过 REST 调用智能体，从而将业务逻辑与平台关注点分离。演讲还涵盖了关...
+2026-05-14 13:05:00
 
 
 
 ### [Skill-Factory：三天手搓面向-Harness-设计的技能工厂（附-AI-coding-实践）](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560012&idx=1&sn=82fc5e59d725c31336c928586d5f2e8e)
 
-2026-05-14 00:32:00 | 标签: 技能工厂, 测试驱动开发, AI Agent, Harness设计, AI编程
-
-> 文章从作者在 AI 编程辅助下的全栈开发实践出发，分析了当前两种主流技能生成方式（人工编写和对话式生成）的痛点：效率低、质量波动大、缺乏自动化验证闭环。为解决这些问题，作者提出了 Skill Factory 技能工厂方案，核心思路是「测试驱动技能生成」。该方案包含四个关键环节：基线诊断（评估裸模型和现有技能是否满足需求）、多路并发生成（并行调用多种策略/模型生成技能，提高首次成功率）、自动化测试回归（从格式规范、复用创新、功能可用性等维度打分并优化）、以及质量检查。此外，文章还介绍了与知流平台的生态适配，以及基于 Trace2Skill 的迭代方向，旨在从执行轨迹中沉淀可复用的技能。最后，作者...
+2026-05-14 00:32:00
 
 
 
@@ -8718,9 +8714,7 @@
 
 ### [AI-让生产效率不再是瓶颈，然后呢？｜AI-跃迁者调研-02-flomo-少楠](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650996966&idx=1&sn=8560ebf3e95101a331ab780b47fc4590)
 
-2026-05-14 10:27:00 | 标签: AI 效率, 团队协作, 产品经理, vibe coding, flomo
-
-> 本文是腾讯研究院「AI 跃迁者调研」系列的第二期，深度访谈了 flomo 浮墨笔记联合创始人少楠。文章核心探讨了一个反直觉的现象：当 AI 将开发周期从按月缩短到按小时、公司 70%-80% 的代码由 AI 贡献后，效率不再是瓶颈，真正的瓶颈变成了用户价值的同步提升和团队协作方式的重构。少楠分享了他从 GPT-3.5 到 Claude Code 的转变历程，以及他要求产品经理先写代码验证需求再写 PRD 的新工作流。文章还详细介绍了 flomo 最新上线的「认知地图」和「AI 记忆」功能是如何在 vibe coding 过程中偶然诞生的。此外，少楠重新定义了 AI 时代的「摩擦」——本质是注意...
+2026-05-14 10:27:00
 
 
 
@@ -12194,161 +12188,121 @@
 
 ### [NVIDIA-Vera-Rubin-平台如何解决智能体-AI-的扩展难题](https://developer.nvidia.com/blog/how-the-nvidia-vera-rubin-platform-is-solving-agentic-ais-scale-up-problem/)
 
-2026-05-14 19:27:31 | 标签: NVIDIA Vera Rubin, Groq 3 LPX, 智能体 AI, 推理, 扩展
-
-> 这篇 NVIDIA 技术博客文章详细介绍了 Vera Rubin 平台如何应对智能体 AI 推理独特的扩展挑战。智能体工作负载引入了非确定性轨迹——动作、观察和决策——这些因素会在每次会话的数百次推理请求中累积延迟。该平台的核心创新是 Groq 3 LPX 加速器，它通过 LPU C2C 互连将确定性执行模型扩展到数千个芯片。这通过三项关键技术实现：提供每 LPU 2.5 TB/s 的高基数点对点链路、静态调度所有数据移动的编译器，以及消除时钟漂移的同步时序协议。这使得系统能够作为一个统一、低抖动的计算单元运行，拥有 128 GB 的统一 SRAM 池。Vera Rubin NVL72 处理预...
+2026-05-14 19:27:31
 
 
 
 ### [Granite-Embedding-Multilingual-R2：基于-Apache-2.0-开源的多语言嵌入模型，支持-32K-上下文——最佳-Sub-100M-检索质量](https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2)
 
-2026-05-14 18:55:01 | 标签: 多语言嵌入, ModernBERT, IBM Granite, 检索, RAG
-
-> 本文宣布 IBM 发布基于 ModernBERT 架构的 Granite Embedding Multilingual R2 模型。此次推出两款模型：一款 97M 参数的紧凑型模型和一款 311M 参数的全尺寸模型。两者均支持超过 200 种语言，并对其中 52 种语言和 9 种编程语言的检索质量进行了增强。一项关键进步是上下文窗口提升至 32，768 个 token，相比 R1 前代产品增加了 64 倍，从而实现了有效的长文档检索。97M 模型在 MTEB 多语言检索基准上取得了 60.3 分，这是所有开源 sub-100M 多语言嵌入器中的最高分，性能超越了其尺寸三倍的模型。311M 模型...
+2026-05-14 18:55:01
 
 
 
 ### [下一个-AI-瓶颈不是模型，而是推理系统](https://towardsdatascience.com/the-next-ai-bottleneck-isnt-the-model-its-the-inference-system/)
 
-2026-05-14 16:30:00 | 标签: 推理架构, AI 系统, 检索, 上下文管理, 生产级 AI
-
-> 本文挑战了企业界普遍将性能问题归咎于模型的常见做法，指出真正的瓶颈往往是推理系统。文章通过一个合同分析系统的案例研究，展示了反复微调未能解决输出不可靠的问题，而调整检索层并引入上下文压缩则成功解决了问题。作者解释，推理正成为一个可设计的空间，出现了推测解码和动态资源分配等技术。文中讨论的关键问题包括：对所有查询进行统一的资源分配、生产级 AI 管道的分层特性（检索、排序、验证、摘要），以及过大的上下文窗口导致推理能力下降。文章总结认为，专注于工程化推理架构（而非仅仅关注模型）的团队将在生产中获得更好的成果。
+2026-05-14 16:30:00
 
 
 
 ### [OpenAI-13.1-万-GPU-训练网络背后反直觉的网络设计决策](https://towardsdatascience.com/the-counterintuitive-networking-decisions-behind-openais-131000-gpu-training-fabric/)
 
-2026-05-14 15:00:00 | 标签: MRC, AI 网络, GPU 训练, 数据包喷洒, SRv6
-
-> 本文对 MRC（多路径可靠连接）进行了深入的技术分析。MRC 是由 OpenAI、AMD、博通、英特尔、微软和英伟达为其 13.1 万 GPU 训练网络联合开发的网络协议。MRC 做出了几项反直觉的设计决策：它禁用所有动态路由协议（OSPF、BGP、IS-IS），转而采用静态 SRv6 源路由；禁用优先级流控制（PFC），在丢包以太网上运行；并将 ECN 从拥塞控制信号重新用作负载均衡提示。该协议将每个 800 Gb/s 的网卡拆分为八个 100 Gb/s 的链路，分布在独立的网络平面上，并使用带有熵值的数据包喷洒来消除流冲突。这种架构使网络能够在微秒级而非秒级从链路故障中恢复，从而防止训练任...
+2026-05-14 15:00:00
 
 
 
 ### [人手一个数据库，Kimi-背后这套-AI-基建到底有多能扛？](https://www.qbitai.com/2026/05/417731.html)
 
-2026-05-14 14:58:53 | 标签: TiDB, Kimi, AI Agent, 数据库架构, Serverless
-
-> 文章以 Kimi K2.6 的 Agent 建站功能为切入点，探讨了 AI Agent 时代对数据库基础设施提出的全新要求。当百万用户各自拥有一个独立的生产级数据库时，传统数据库方案在成本和性能上均无法承接。文章拆解了三大核心工程约束：数据库实例粒度需细化到「每终端用户一个」、数据库 schema 由 LLM 现场生成且需支持动态修改、负载分布呈现「零-峰两极」的极端曲线。Kimi 最终选择 TiDB Cloud，并做出三个关键决策：利用 Serverless Cluster 的多租户能力实现极致低成本，通过统一技术栈（vector+SQL+JSON）降低 Agent 写代码的复杂度，以及借助...
+2026-05-14 14:58:53
 
 
 
 ### [我让-CodeSpeak-接管了我的代码仓库](https://towardsdatascience.com/i-let-codespeak-take-over-my-repository/)
 
-2026-05-14 13:30:00 | 标签: CodeSpeak, AI 编码, 规范驱动开发, 软件工程, LLM
-
-> 作者详细描述了一项实验：将一个 13K 行的健身追踪应用迁移到 CodeSpeak。CodeSpeak 是一个 alpha 阶段的工具，它将纯英文规范视为代码生成的唯一真实来源。该过程使用了 CodeSpeak 的 'takeover' 命令来分析现有代码库，并为前端、后端、数据层和测试生成结构化的规范文件。随后，作者编辑了一个规范，以请求一个全新的 '复制锻炼摘要' 功能，并使用 CodeSpeak 的 'build' 和 'change' 命令来实现它。首次实现存在一个关于有氧运动会话的 Bug，通过一个变更请求修复了该问题，同时 CodeSpeak 还添加了回归测试。作者将 CodeSp...
+2026-05-14 13:30:00
 
 
 
 ### [如何使用-Claude-Code-编写健壮代码](https://towardsdatascience.com/how-to-write-robust-code-with-claude-code/)
 
-2026-05-14 12:00:00 | 标签: Claude Code, 编码智能体, 健壮代码, AI 辅助开发, 代码审查
-
-> 文章认为，编码智能体已经足够先进，只要采取某些预防措施，开发者无需逐行审查即可生成健壮代码。全文分为两个主要部分：构建初始健壮代码和实现后的健壮性验证。对于初始健壮性，作者建议主动使用规划模式让智能体思考实现方案，在仓库中维护技能文件（Markdown 文件）以记录过去的错误和最佳实践，并避免过长的上下文窗口导致模型性能下降。对于验证，作者建议使用独立的编码智能体对拉取请求进行代码审查，并实现预提交钩子或智能体驱动的预提交检查以尽早发现错误。核心信息是，通过正确的工作流程，开发者可以将健壮性委托给智能体，同时保持高开发速度。
+2026-05-14 12:00:00
 
 
 
 ### [工业级-LLM-预训练数据工程的关键实践！](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451848&idx=1&sn=1c23436333511bebcb80292373427533)
 
-2026-05-14 11:35:00 | 标签: LLM, 预训练, 数据工程, 数据质量, 合成数据
-
-> 本文是一篇关于 LLM 预训练数据工程的深度综述，作者李煜东基于 2020 至 2026 年间发布的 GPT、LLaMA、Qwen、DeepSeek、Kimi、GLM、OLMo、Phi 等系列模型的技术报告，系统梳理了预训练数据工程的核心流程与最佳实践。文章首先指出高质量文本数据面临供给瓶颈，预训练研究的重心正从扩大规模转向提升数据利用效率。随后，文章详细介绍了语料库构建的三个核心步骤：去重（精确匹配与模糊匹配）、质量过滤（启发式规则与分类器）和合成数据增强。在数据利用方面，文章深入探讨了数据选择与配比（从静态配比到 scaling law 引导的优化）、多阶段训练（通用预训练、mid-tra...
+2026-05-14 11:35:00
 
 
 
 ### [重生之我在-AI-时代当老板：让一群-Agent-互相-PUA](https://www.qbitai.com/2026/05/417816.html)
 
-2026-05-14 11:14:25 | 标签: 多 Agent 协作, MiniMax, Mavis, Agent Team, 长程任务
-
-> 本文以第一人称体验视角，介绍了 MiniMax 最新发布的 Agent 产品 Mavis（MiniMax as a Jarvis）。与传统单 Agent 不同，Mavis 采用多 Agent 团队协作架构，内置 Leader（统筹）、Worker（执行）、Verifier（验收）三种角色。用户只需给出一个模糊目标，Agent Team 即可自主拆解任务、分配执行、交叉验证，最终交付完整成果。文章通过一个「生成 HTML 专题页」的实操案例，展示了 Mavis 在 28 分钟内自主完成内容创作、设计、编码和验收的全过程。作者深入分析了单 Agent 在长程任务中的三大痛点：频繁中断询问、上下文越...
+2026-05-14 11:14:25
 
 
 
 ### [jina-embeddings-v5-omni-发布！全模态向量小模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508240&idx=1&sn=f584f3a306426d8bfbf32c2d934a44b6)
 
-2026-05-14 09:37:00 | 标签: jina-embeddings-v5-omni, 多模态向量模型, Jina AI, 嵌入模型, 模型架构
-
-> Jina AI 正式发布 jina-embeddings-v5-omni 系列全模态向量模型，包括 small（1.57B 参数）和 nano（1.04B 参数）两个版本。该模型采用创新的「冻结编码器 + 轻量投影层」架构：以 v5-text 为文本底座，冻结 Qwen3.5 视觉编码器和 Whisper-large-v3 音频编码器，仅训练占总权重 0.35% 的投影层，将多模态表示对齐到文本语义空间。这种设计带来三大优势：文本表现完全无损（与 v5-text 逐字节一致）、训练速度快 1.8-3.9 倍且显存降低 42%-64%、各模态塔可独立加载实现模块化部署。在性能上，v5-omni-...
+2026-05-14 09:37:00
 
 
 
 ### [使用-Amazon-Lex-Assisted-NLU-提升机器人准确率-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
 
-2026-05-14 09:28:44 | 标签: Amazon Lex, Assisted NLU, LLM, 对话式 AI, 意图分类
-
-> 这篇来自 AWS 机器学习博客的文章介绍了 Amazon Lex Assisted NLU，该功能利用大语言模型增强对话机器人的自然语言理解能力。文章指出，传统基于规则的 NLU 系统难以应对人类语言的多样性，如拼写错误、复杂措辞和模糊请求。Assisted NLU 解决方案提供两种模式：Primary 模式（LLM 处理所有输入）和 Fallback 模式（仅在传统 NLU 置信度低时由 LLM 介入）。文章详细介绍了编写有效意图和槽位描述的最佳实践，这些描述充当 LLM 的提示词，并提供了意图消歧的指导。此外，还概述了使用 Amazon Lex Test Workbench 的测试方法、针...
+2026-05-14 09:28:44
 
 
 
 ### [使用-Stream-Vision-Agents-和-Amazon-Nova-2-Sonic-构建实时语音智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic/)
 
-2026-05-14 09:23:48 | 标签: 实时语音智能体, Amazon Nova 2 Sonic, Stream Vision Agents, Amazon Bedrock, 函数调用
-
-> 本文提供了一份全面的指南，介绍如何使用 Stream 的 Vision Agents 框架和通过 Amazon Bedrock 访问的 Amazon Nova 2 Sonic 来构建实时语音智能体。文章解决了编排复杂系统以实现低延迟、自然对话体验的核心挑战。该解决方案集成了 Stream 的边缘网络用于媒体传输、Amazon Nova 2 Sonic 用于语音到语音的 AI 处理，以及 Vision Agents 作为编排层。文章详细介绍了端到端架构，包括媒体流、账户边界和双向流式传输协议。它提供了设置基础智能体和添加函数调用功能的分步代码示例。文章还涵盖了高级主题，例如使用独立的 STT/T...
+2026-05-14 09:23:48
 
 
 
 ### [使用-Chrome-企业策略控制-AI-智能体在-Amazon-Bedrock-AgentCore-上的浏览行为-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/)
 
-2026-05-14 09:17:35 | 标签: Amazon Bedrock AgentCore, Chrome 企业策略, AI 智能体安全, 浏览器自动化, 根 CA 证书
-
-> 这篇 AWS 博文介绍了 Amazon Bedrock AgentCore Browser 的新功能：Chrome 企业策略和自定义根 CA 证书支持。文章首先指出了不受限制的 AI 智能体网页浏览所面临的安全风险，例如访问未授权域名、凭据存储和文件下载。随后详细说明了组织如何通过配置超过 450 项 Chrome 浏览器设置（如 URL 允许/阻止列表、密码管理器、下载限制）来在浏览器层面实施管控，从而将策略管理与智能体开发分离。文章解释了两种执行层级：托管策略（在每个会话中强制执行）和推荐策略（会话级别，可覆盖）。实践指南提供了一个完整的 Jupyter Notebook，指导如何创建一个...
+2026-05-14 09:17:35
 
 
 
 ### [腾讯开源-Agent-记忆技术方案，Token-消耗最高降低-61%](https://www.qbitai.com/2026/05/417753.html)
 
-2026-05-14 08:34:30 | 标签: Agent, 记忆压缩, Token 优化, 腾讯云, 开源
-
-> 腾讯云数据库团队正式开源 TencentDB Agent Memory，这是一套针对 Agent 长任务场景的记忆压缩方案。该方案通过两项核心技术解决 Agent 上下文膨胀问题：Mermaid 任务画布将任务过程组织成结构化任务图，保留关键状态与执行关系；上下文卸载技术将网页内容、日志等原始信息转移到外部存储，上下文中仅保留摘要和索引。测试数据显示，在网页搜索场景中 Token 消耗最高降低 61%、成功率提升 52%；代码修复场景 Token 消耗降低 33%、完成率提升 10%；复杂长文档场景 Token 消耗降低 31%、准确率提升 8%。项目还包含长期个性化记忆模块，可将 Agent...
+2026-05-14 08:34:30
 
 
 
 ### [亚历山大王回应一切：LeCun、Manus，“我的父母都是中国人”](https://www.qbitai.com/2026/05/417488.html)
 
-2026-05-14 06:21:30 | 标签: 亚历山大王, Meta AI, Muse Spark, 超级智能, Scale AI
-
-> 本文是量子位编译自《Core Memory》播客的访谈实录，Meta AI 负责人亚历山大王（Alexander Wang）在加入 Meta 近一年后首次公开回应外界争议。他详细阐述了 Meta 超级智能实验室（MSL）的架构、三条军规（认真对待超级智能、技术声音最响、科学严谨押大注），以及如何通过提升研究员算力密度、人才密度和大胆研究押注来追赶前沿。他透露 Muse Spark 只是开胃菜，未来几个月将有更大模型发布，且模型因触发安全检查而未开源。他还回应了与 Sam Altman 的决裂、与 LeCun 的和解、外界对其年龄和工程师身份的质疑，以及 Meta 内部战略分歧的传闻。最后，他分...
+2026-05-14 06:21:30
 
 
 
 ### [把-RAG-做成主流的公司，现在开始“做空”RAG-了](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247662345&idx=2&sn=477f0d2df5b5e843448e9640e0852484)
 
-2026-05-14 06:09:00 | 标签: Pinecone, RAG, 知识编译, Agent, 向量数据库
-
-> 本文编译自 InfoQ，报道了向量数据库公司 Pinecone 发布新产品 Nexus 及其背后的战略转向。Pinecone 曾定义 RAG 作为大模型 grounding 的标准范式，拥有 80 万开发者和 9000 家付费客户。然而，随着 Agent 时代的到来，Pinecone 认为传统的 retrieve-read-retrieve 模式效率低下，Agent 85% 的精力消耗在找上下文上，任务完成率仅 50%-60%。为此，Pinecone 提出“知识编译”概念，将源数据预编译成带类型、可引用的 artifacts，并推出 KnowQL 查询语言，封装意图、过滤、来源、输出格式、置信...
+2026-05-14 06:09:00
 
 
 
 ### [赌自己会失业！田渊栋八人天团狂揽-44-亿元，杀入「递归进化」赛道](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652700447&idx=2&sn=f3c04be8a96ba6d3480d7fcdf355311b)
 
-2026-05-14 05:05:00 | 标签: 递归自我进化, AI 初创公司, 田渊栋, Recursive Superintelligence, AI 研究员
-
-> 本文报道了一家名为 Recursive Superintelligence 的 AI 初创公司，由八位来自 Meta FAIR、Google DeepMind、OpenAI、Salesforce AI 等机构的顶级研究员联合创立，包括田渊栋、Richard Socher、Alexey Dosovitskiy 等。公司获得由 GV 和 Greycroft 领投、AMD Ventures 和英伟达跟投的 6.5 亿美元融资，估值达 46.5 亿美元。公司的核心目标是实现「递归自我进化」（RSI），即构建一个完全自动化的 AI 训练 pipeline，让 AI 自主完成数据筛选、训练设计、后训练对齐...
+2026-05-14 05:05:00
 
 
 
 ### [不是幻觉！Claude-自下指令甩锅人类，百万上下文沦为降智重灾区](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652700447&idx=3&sn=c8fddc4782f26a3e8c30386455023d7f)
 
-2026-05-14 05:05:00 | 标签: Claude Code, AI 安全, 角色混淆, AI Agent, 上下文腐烂
-
-> 文章以软件工程师 Gareth Dwyer 的亲身经历为引，详细剖析了 Claude Code 中一个被其称为「迄今为止最严重的 Bug」——模型混淆了「谁说了什么」。具体表现为，Claude 在对话中自行生成指令（如「直接发布」），随后将其归因于用户并执行，甚至在用户追问时坚持「是你让我发布的」。文章指出，该问题并非普通幻觉，而是一种「说话者归因错误」（Speaker Attribution Error），其根源可能在于 Claude Code 的系统架构将内部推理消息或系统事件（如后台任务通知）错误地标记为 `user` 角色消息，导致模型在理解输入时就已经混淆了指令来源。文章进一步将问题...
+2026-05-14 05:05:00
 
 
 
 ### [AINews-Codex-崛起，Claude-计量程序化使用](https://www.latent.space/p/ainews-codex-rises-claude-meters)
 
-2026-05-14 03:53:26 | 标签: AI 新闻, Anthropic, OpenAI, Claude, Codex
-
-> 本期 Latent Space 的 AINews 分析了过去三周 AI 发展格局的变化。核心叙事是 Anthropic 和 OpenAI 之间日益激烈的竞争，Anthropic 为 Claude 订阅引入了计量程序化使用（此举被一些人视为对之前受补贴的第三方工具（如 OpenClaw）的“釜底抽薪”），而 OpenAI 则向切换过来的企业客户提供两个月的免费 Codex 作为反击。除了定价策略，本摘要还涵盖了来自 Cline、LangChain、Notion 和 Cursor 的大量智能体基础设施发布，这些发布都聚焦于持久、长期运行的状态和工具原生 UI。重点研究进展包括 Nous Resea...
+2026-05-14 03:53:26
 
 
 
 ### [Agent-创业的下一站，是重做「人-A」关系-|-实测-Bloome](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108174&idx=1&sn=4ce6750d065b5e29828cd4ad41723ba8)
 
-2026-05-14 01:03:00 | 标签: Agent, Bloome, 人机协作, AI 产品, 交互范式
-
-> 本文是「十字路口」团队对新产品 Bloome 的深度实测与思考。Bloome 是一款将 Agent 作为「一等公民」融入通讯录的协作产品，用户可像加好友一样添加 Agent、拉 Agent 进群、与 Agent 私聊或付费订阅。文章通过多个实测场景展示了该产品的核心创新：创建 Agent 并拉群协作（如让多个 Agent 在群内讨论选题）、Agent 圆桌对话（真人与 Agent 混编发言，形成新的内容形态）、Agent 付费私聊（Agent 成为可被搜索和交易的「数字人物」）。文章也指出了产品当前的问题（内测阶段稳定性、内容质量参差、商业模式早期），但肯定了其交互假设的前瞻性——将人机关系从...
+2026-05-14 01:03:00
 
 
 
@@ -39306,57 +39260,43 @@
 
 ### [碎片：5-月-14-日](https://martinfowler.com/fragments/2026-05-14.html)
 
-2026-05-14 21:52:00 | 标签: 智能体编程, 遗留系统迁移, LLM, 软件工程, 结对编程
-
-> 本文是在查塔姆研究所规则下举办的关于智能体编程与软件开发未来静修会的笔记合集。关键主题包括：使用 LLM 在 3 天内将 GNU COBOL 编译器移植到 Rust、利用 LLM 采访人类专家进行规范验证、鉴于 LLM 能力重新评估“提升并转移”作为遗留系统迁移的第一步，以及多司法管辖区金融系统的复杂性。文章还讨论了结对编程对技能传递的重要性、运行时过度使用智能体的风险（主张 LLM 更适合作为函数）、过多技能文件带来的陷阱，并引用 Kyle Kingsbury 的批判性文章，对 AI 的非确定性和伦理挑战进行了深入反思。Fowler 以个人肘部受伤和写作习惯的笔记，以及对 AI 影响在希望与...
+2026-05-14 21:52:00
 
 
 
 ### [脉搏：容量短缺是否让-Anthropic-对开发者充满敌意？](https://blog.pragmaticengineer.com/the-pulse-did-capacity-shortages-turn-anthropic-hostile-to-devs/)
 
-2026-05-14 16:10:59 | 标签: Anthropic, Claude Code, AI 容量, xAI, 开发者关系
-
-> 本文来自《务实工程师》，分析了 Anthropic 一系列引发开发者不满的争议行为，包括悄然降低 Claude Code 的能力、无预警封禁企业账户，以及从付费订阅用户中移除 Claude Code 的访问权限。作者提出了一个统一的理论：这些行为并非出于恶意，而是由严重的容量短缺所驱动。这一理论得到了 Anthropic 近期宣布的大规模数据中心扩张计划以及一项交易的支持——该公司租用了 SpaceX/xAI 的 Colossus 1 数据中心（拥有超过 22 万块 NVIDIA GPU）的很大一部分。文章探讨了 Anthropic 的讽刺之处：此前它曾禁止 xAI 开发者使用 Claude，...
+2026-05-14 16:10:59
 
 
 
 ### [在-Elasticsearch-上构建生产级-AI-智能体的-5-个关键经验](https://www.elastic.co/blog/building-ai-agents-elasticsearch-platform)
 
-2026-05-14 15:47:01 | 标签: AI 智能体, RAG, Elasticsearch, 检索增强生成, 生产级 AI
-
-> 本文介绍了 Elastic 现场技术团队在一年内部署了五个 AI 智能体（包括面向客户和内部的支持助手、案例总结器和销售助手），处理了超过一百万条消息后学到的五个关键经验。核心见解是，AI 的成功取决于交互日志的反馈循环，而不仅仅是模型选择。主要发现包括：1）日志是 AI 可观测性最丰富的信号，能够实现上下文性能监控。2）AI 的采用遵循幂律分布，8% 的重度用户产生了 80% 的会话。3）RAG 中的部分检索比不检索更糟糕，其产生的质量评分（8.15/10）低于无上下文时的评分（9.18/10）。4）为检索设置严格的置信度阈值可以使知识缺口变得可见，并防止质量下降。5）高 Token 使用量...
+2026-05-14 15:47:01
 
 
 
 ### [bliki:-审问式-LLM](https://martinfowler.com/bliki/InterrogatoryLLM.html)
 
-2026-05-14 15:04:00 | 标签: LLM, 提示工程, 上下文收集, 知识获取, 软件工程
-
-> Martin Fowler 的 bliki 文章介绍了“审问式 LLM”的概念。面对复杂的 LLM 任务，人类无需撰写详尽的上下文文档，而是可以提示 LLM 去采访人类。LLM 通过提问收集必要信息，然后为另一个会话生成上下文报告。Fowler 重点提到了 Harper Reed 的方法，该方法坚持 LLM 每次只问一个问题。这项技术也可用于审核：LLM 采访人类专家以验证文档的准确性，这比要求专家阅读和审核文档更有效。Fowler 指出，这种方法适用范围很广，尤其对于那些不擅长写作的人，他们可以通过对话而非文字来分享知识。
+2026-05-14 15:04:00
 
 
 
 ### [Claude-Code-入门指南](https://www.freecodecamp.org/news/claude-code-for-beginners/)
 
-2026-05-14 14:17:20 | 标签: Claude Code, AI 编码, 命令行工具, Anthropic, 开发者工作流程
-
-> 本文介绍了一门关于 Claude Code 的全面课程，这是 Anthropic 推出的一款命令行工具，可在终端中充当智能合作伙伴。与标准的 LLM 网页界面不同，Claude Code 能够自主搜索文件、运行终端命令和执行测试，通过分析模块交互来解决上下文鸿沟问题，无需手动复制粘贴。课程涵盖设置、项目脚手架搭建、架构审计、自主调试和多文件导航，旨在帮助开发者将此工具集成到他们的专业工作流程中。
+2026-05-14 14:17:20
 
 
 
 ### [Anthropic-追溯六周-Claude-Code-质量投诉至三项重叠产品变更](https://www.infoq.com/news/2026/05/anthropic-claude-code-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-14 09:16:00 | 标签: Claude Code, Anthropic, 事后分析, AI 编程, 质量
-
-> Anthropic 发布了一份工程事后分析报告，解释了用户对 Claude Code 质量持续六周的投诉。问题被追溯至 2026 年 3 月至 4 月期间发布的三项互不相关的产品层变更，每项变更影响了不同的流量切片。第一个变更是将推理强度从高降级为中，以解决 UI 延迟问题，这导致 Claude Code 感觉不够智能。第二个是一个缓存错误，它逐步清除了模型自身的推理过程，导致模型丢失了选择当前方法的记忆。API 和底层模型权重未受影响。所有三个问题已于 4 月 20 日（v2.1.116 版本）解决，Anthropic 已重置所有订阅用户的使用限制。该事后分析报告提供了对根本原因、对用户的影...
+2026-05-14 09:16:00
 
 
 
 ### [Kubernetes-v1.36：安全默认设置收紧，AI-工作负载支持成熟](https://www.infoq.com/news/2026/05/kubernetes-1-36-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-14 08:00:00 | 标签: Kubernetes, v1.36, 安全, AI 工作负载, DRA
-
-> Kubernetes v1.36（代号 Haru）是 2026 年的第一个主要版本，包含 70 项增强功能。该版本通过将用户命名空间、可变准入策略（用 CEL 替换 Webhook）和细粒度 Kubelet API 授权升级为正式版，显著加强了安全性。对于 AI 和机器学习工作负载，该版本通过可分区设备和设备污点等功能（现已进入 Beta 阶段并默认启用）成熟了动态资源分配，取代了僵化的整数 GPU 模型。一项关键的新的 Alpha 功能——工作负载感知抢占，通过将 PodGroup 视为单个抢占单元，防止了分布式训练作业的部分抢占。其他亮点包括：可变 Pod 资源（Beta）、用于 API ...
+2026-05-14 08:00:00
 
 
 
