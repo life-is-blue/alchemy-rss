@@ -1,0 +1,58 @@
+{
+  "id": "RAW_1aa23f41",
+  "title": "下一个 AI 瓶颈不是模型，而是推理系统",
+  "url": "https://towardsdatascience.com/the-next-ai-bottleneck-isnt-the-model-its-the-inference-system/",
+  "date": "2026-05-14 16:30:00",
+  "author": "Shafeeq Ur Rahaman",
+  "siteName": "Towards Data Science",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">Let’s talk about something I’ve seen a lot when I’m working with enterprise AI teams: they nearly always blame the model when something goes wrong. This is understandable, but it’s also frequently incorrect, and it ends up being quite costly.</p>\n  <p class=\"wp-block-paragraph\">The usual scenario is as follows. The outputs are inconsistent; when someone raises it, the first reaction is to blame the model. It may require more training data, another fine-tuning run, or a different base model. After weeks of work, the issue remains the same or has only slightly changed. The real problem, often sitting in the retrieval layer, the context window or how tasks were being routed, was never examined.</p>\n  <p class=\"wp-block-paragraph\">I’ve seen it happen so many times before that I believe it is worth writing about.</p>\n  <h2 class=\"wp-block-heading\">Fine-tuning is useful, but it gets overused</h2>\n  <p class=\"wp-block-paragraph\">In many cases, it’s still worthwhile to make a few adjustments. If domain adaptation, tone alignment, or safety calibration are required, it should be part of the workflow. I’m not saying that you shouldn’t use it.</p>\n  <p class=\"wp-block-paragraph\">The problem is that it is the automatic answer to any problem, even if it is not the appropriate tool. Partly because it feels like it’s a productive thing to do. You start a fine-tuning job, something clearly happens, and there is a before and after. It appears that you’re addressing the issue when you are not.</p>\n  <p class=\"wp-block-paragraph\">One example of this is a contract analysis system, which I was observing a team debugging. The outputs were unreliable for complex documents, and the initial idea was that the model lacked legal reasoning skills. So they ran several tuning iterations. The problem didn’t go away. Eventually, someone noticed that the retrieval layer was doing the same retrievals multiple times and was adding them to the context window. The model was attempting to work through a lot of low-value text that was repeated over and over. They adjusted the retrieval ranking and introduced context compression, and it eventually became much better.&nbsp;</p>\n  <p class=\"wp-block-paragraph\">The model itself was never changed. And, this is a fairly common occurrence.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://contributor.insightmediagroup.io/wp-content/uploads/2026/05/image-2-1.png\" alt=\"\" class=\"wp-image-659379\">\n   <figcaption class=\"wp-element-caption\">\n    <strong>Fine-Tuning vs Inference Loop (Image by Author)</strong>\n   </figcaption>\n  </figure>\n  <h2 class=\"wp-block-heading\">What’s happening at inference time</h2>\n  <p class=\"wp-block-paragraph\">For a long time, inference was just the step where you used the model. Training was where all the interesting decisions happened. That’s changing now.</p>\n  <p class=\"wp-block-paragraph\">One reason for this is that some models began <a href=\"https://arxiv.org/abs/2408.03314\">allocating more compute</a> to generation rather than baking it into the training process. Another factor was that research demonstrated that behaviours such as self-checking or rewriting a response can be learned through reinforcement learning. Both of these pointed to inference itself as a place where performance could be improved.</p>\n  <p class=\"wp-block-paragraph\">What I see now is engineering teams starting to treat inference as something you can actually design around, rather than just a fixed step you accept. How much reasoning depth does this task need? How is memory being managed? How is retrieval being prioritized? These are becoming real questions rather than defaults you don’t think about.&nbsp;</p>\n  <h2 class=\"wp-block-heading\">The resource allocation problem</h2>\n  <p class=\"wp-block-paragraph\">What is often underrated is that most AI systems use a uniform approach to all their queries. A single question regarding account status follows the same process as a multi-step compliance process, with information to be reconciled in several conflicting documents. The same cost, the same process, the same compute.</p>\n  <p class=\"wp-block-paragraph\">This doesn’t seem to make much sense when you think about it. In all other engineering applications, resources would be allocated based on the required work. Some teams are beginning to do this with AI, offloading lighter inferences to lighter workloads and routing heavier compute to tasks that truly require it. The economics get better, and the quality of the more difficult stuff improves as well, since you’re no longer underresourcing it.</p>\n  <h2 class=\"wp-block-heading\">These systems are more layered than people realize</h2>\n  <p class=\"wp-block-paragraph\">When you look inside a production AI system today, it usually isn’t just one model answering questions.&nbsp; It is often accompanied by a retrieval step, a ranking step, possibly a verification step, and a summarization step; several steps in tandem to generate the final output. It’s not only about the capability of the underlying model, but also about how all those pieces fit together to produce the output.</p>\n  <p class=\"wp-block-paragraph\">If the <a href=\"https://arxiv.org/html/2401.05856v1\">retrieval ranker</a> isn’t properly calibrated, it will produce outputs similar to model errors. A context window that can grow without restraint will subtly affect the quality of reasoning, but nothing obviously will fail. These are systems issues, not model issues, and they need to be addressed with systems thinking.</p>\n  <p class=\"wp-block-paragraph\">An example of this type of thinking in practice is speculative decoding. The concept is that a smaller model generates candidate outputs, and a larger model verifies them. It started as a latency optimization, but it’s really an example of distributing reasoning across multiple components rather than expecting one model to do everything. Two teams using the same base model but different inference architectures can end up with quite different results in production.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://contributor.insightmediagroup.io/wp-content/uploads/2026/05/image-1-1.png\" alt=\"\" class=\"wp-image-659380\">\n   <figcaption class=\"wp-element-caption\">\n    <strong>Production AI Inference Pipeline (Image By Author)</strong>\n   </figcaption>\n  </figure>\n  <h2 class=\"wp-block-heading\">Memory is becoming a real issue</h2>\n  <p class=\"wp-block-paragraph\">Larger context windows have been useful, but past a certain point, more context doesn’t improve reasoning; it degrades it. Retrieval gets noisier, the model tracks less effectively, and inference costs go up. The teams running AI at scale are spending real time on things like paged attention and context compression, which aren’t exciting to talk about but matter a lot operationally.&nbsp;</p>\n  <p class=\"wp-block-paragraph\">The idea is to have the right context, but not too much, and to have it managed well.</p>\n  <h2 class=\"wp-block-heading\">Takeaway</h2>\n  <p class=\"wp-block-paragraph\">Model selection matters less than it used to. Capable foundation models are now available from several providers, and capability gaps have narrowed for most use cases. What’s actually determining whether a deployment succeeds is the infrastructure around the model, how retrieval is tuned, how compute is allocated, and how the system handles edge cases over time.&nbsp;</p>\n  <p class=\"wp-block-paragraph\">The teams that will be in a good position in a few years are the ones treating inference architecture as something worth engineering carefully, rather than assuming a good-enough model will sort everything else out. In my experience, it usually doesn’t.</p>\n </body>\n</html>",
+  "aiSummary": "本文认为，生产级 AI 系统的主要瓶颈不再是模型本身，而是推理架构，包括检索、上下文管理和资源分配。",
+  "oneSentenceSummary": "本文认为，生产级 AI 系统的主要瓶颈不再是模型本身，而是推理架构，包括检索、上下文管理和资源分配。",
+  "summary": "本文挑战了企业界普遍将性能问题归咎于模型的常见做法，指出真正的瓶颈往往是推理系统。文章通过一个合同分析系统的案例研究，展示了反复微调未能解决输出不可靠的问题，而调整检索层并引入上下文压缩则成功解决了问题。作者解释，推理正成为一个可设计的空间，出现了推测解码和动态资源分配等技术。文中讨论的关键问题包括：对所有查询进行统一的资源分配、生产级 AI 管道的分层特性（检索、排序、验证、摘要），以及过大的上下文窗口导致推理能力下降。文章总结认为，专注于工程化推理架构（而非仅仅关注模型）的团队将在生产中获得更好的成果。",
+  "mainPoints": [
+    {
+      "point": "将生产问题归咎于模型往往是一个代价高昂的错误；真正的罪魁祸首通常是推理系统。",
+      "explanation": "当输出不一致时，团队常常默认进行微调，但真正的问题往往出在检索层、上下文窗口管理或任务路由上，而非模型能力本身。"
+    },
+    {
+      "point": "推理正成为一个可设计的空间，而非一个固定步骤，推测解码和动态计算分配等技术便是例证。",
+      "explanation": "测试时计算和强化学习的进步，使得工程团队能够设计将推理分散到各个组件的推理管道，从而提升性能和成本效率。"
+    },
+    {
+      "point": "对所有查询进行统一的资源分配是低效的；系统应将简单任务路由到更轻量的工作负载上。",
+      "explanation": "对简单的账户状态查询和复杂的多步骤合规任务一视同仁，会浪费计算资源。动态路由可以在提升经济性的同时，保证困难任务的质量。"
+    },
+    {
+      "point": "过大的上下文窗口会降低推理能力；管理上下文的质量比数量更重要。",
+      "explanation": "过度的上下文会导致检索噪声增加、模型跟踪能力下降以及成本上升。分页注意力和上下文压缩等技术在操作层面至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "真正的问题，往往出在检索层、上下文窗口或任务路由方式上，却从未被审视。",
+    "我现在看到的是，工程团队开始将推理视为一个可以实际进行设计的东西，而不仅仅是一个需要被动接受的固定步骤。",
+    "两个使用相同基础模型但不同推理架构的团队，在生产中可能会得到截然不同的结果。",
+    "模型选择的重要性已不如从前。……真正决定部署成败的，是模型周围的底层基础设施。"
+  ],
+  "tags": [
+    "推理架构",
+    "AI 系统",
+    "检索",
+    "上下文管理",
+    "生产级 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1008,
+  "domain": "towardsdatascience.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778776200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-14 16:30:00"
+}

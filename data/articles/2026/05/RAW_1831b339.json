@@ -1,0 +1,63 @@
+{
+  "id": "RAW_1831b339",
+  "title": "软件组织中社交系统的规模化扩展",
+  "url": "https://www.infoq.com/news/2026/05/scale-social-system-software-org/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-14 11:41:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Fast-scaling teams must rebuild trust and psychological safety as their social systems expand, Charlotte de Jong Schouwenburg mentioned in the video <a href=\"https://www.infoq.com/presentations/human-scalability/\">The Human Scalability Problem</a> taken at Dev Summit Munich. She suggested using intentional, redundant communication across multiple formats to keep everyone aligned. Cross-team rituals, buddy systems, and rotating facilitators can reduce silos by building bridges between teams. Leaders accelerate this by modeling the vulnerability they want to see.</p>\n   <p>When you have a social system that changes significantly, you’re going to have to fill up that trust tank or that safety tank again; you have to find new dynamics, De Jong Schouwenburg said. When you are scaling at high speed, you also need to onboard the social systems of teams, which takes time. Scaling humans is about maintaining coherence and psychological safety as the surface area of interaction expands.</p>\n   <p>De Jong Schouwenburg suggested designing a communication architecture with intentional redundancy. Repetition is gold, she said. Use different times, different media, and different ways of repeating the core messages, context, and goals. Keep reminding people of the bigger picture:</p>\n   <blockquote>\n    <p>This way, you can fill in the gaps of the people who you would otherwise lose because they just didn’t get the message. It also allows people with different brain strategies to digest the information in their preferred method, therefore avoiding knowledge gaps or people who are zoned out.</p>\n   </blockquote>\n   <p>Trust grows through familiarity, and familiarity requires contact. To foster cross-functionality and enable those who have to work together at some point to know each other personally, De Jong Schouwenburg suggested building bridges between teams and creating structured opportunities for cross-team connection. She mentioned several ways to do this :</p>\n   <blockquote>\n    <ul>\n     <li>Multi-team offsites</li>\n     <li>Virtual coffees or shared rituals</li>\n     <li>Cross-site pairing (buddy systems), demos, or learning sessions</li>\n     <li>Rotating facilitators to reduce dependency on one \"hub\" person</li>\n    </ul>\n   </blockquote>\n   <p>These activities can reduce the risk of siloed thinking and strengthen collaboration before teams hit pressure moments.</p>\n   <p>De Jong Schouwenburg suggested monitoring human metrics as intentionally as engineering metrics. Healthy human systems behave predictably under stress; unhealthy ones fracture, she said.</p>\n   <p>She suggested tracking early indicators of the levels of resilience, like:</p>\n   <blockquote>\n    <ul>\n     <li>How openly teams raise risks</li>\n     <li>How often cross-team misalignment causes rework</li>\n     <li>Participation levels in retrospectives</li>\n     <li>Variability in team cultures across sites</li>\n    </ul>\n   </blockquote>\n   <p>Leaders and technical influencers have outsized impact, De Jong Schouwenburg said. She suggested that they should model the behavior they want to scale. When they admit uncertainty, say \"I was wrong,\" or genuinely invite dissent, they normalize vulnerability and accelerate psychological safety.</p>\n   <p>It’s vital to \"walk the talk\"- show behaviour, rather than talk about it:</p>\n   <blockquote>\n    <p>People imitate not what leaders say but what they demonstrate, tolerate and reward.</p>\n   </blockquote>\n   <p>As you scale, the job of leaders is to keep the human system reliable under pressure, De Jong Schouwenburg said. You should ensure that teams can work as best as they can, and facilitate them to do the best job they can. For that, we really need to look at that human system, she concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/charlotteschouwenburg/\">Charlotte de Jong Schouwenburg</a> about human scalability problems.</p>\n   <p><strong>InfoQ: What can companies do to spot human bottlenecks?</strong></p>\n   <blockquote>\n    <p><strong>Charlotte De Jong Schouwenburg</strong>: In highly technical, fast-scaling environments, bottlenecks often aren’t just in systems, but they’re in human architecture. Human bottlenecks emerge when information, decisions, or collaboration depend too heavily on one person, one relationship, or one fragile link between teams.</p>\n    <p>Companies can spot these bottlenecks by monitoring the health of the social system. Practical indicators include decision latency, cultural drift, and single points of human failure or overloaded connectors.</p>\n    <p>For instance, cultural drift between sites or functions can happen when teams operating in different regions or disciplines develop inconsistent norms, context gets lost, and rework increases. This is often a hidden bottleneck that compounds as scaling accelerates.</p>\n   </blockquote>\n   <p><strong>InfoQ: How do you recognize decision latency and communication problems?</strong></p>\n   <blockquote>\n    <p><strong>De Jong Schouwenburg</strong>: Some signals of issues with decision latency are that decisions are taking longer as the organization grows, or having work which is waiting for a single person’s approval, knowledge, or context. Slowing decisions are often an early sign that psychological safety is low or roles are unclear.</p>\n    <p>Your organization may have single points of human failure, where work stalls when one person is sick, overloaded, or leaves, or teams rely on \"heroes\" rather than shared ownership.This signals low redundancy in relationships and communication channels.</p>\n    <p>Finally, you may suffer from overloaded connectors. This is what can happen when some employees naturally become the \"glue\" of the team: the bridge between people, teams, or organizational layers. When they become overwhelmed, you see confusion, misalignment, and communication breakdowns.</p>\n    <p>Companies that intentionally watch human dynamics can prevent burnout, speed up delivery, and maintain coherence as the surface area of interaction expands.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Scaling Social Systems in Software Organizations\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/scale-social-system-software-org/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1778758860000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Charlotte de Jong Schouwenburg 指出，快速扩张的软件组织必须有意识地重建信任、心理安全感和沟通架构，以避免人为瓶颈并保持一致性。",
+  "oneSentenceSummary": "Charlotte de Jong Schouwenburg 指出，快速扩张的软件组织必须有意识地重建信任、心理安全感和沟通架构，以避免人为瓶颈并保持一致性。",
+  "summary": "本文总结了 Charlotte de Jong Schouwenburg 在慕尼黑 Dev Summit 上关于快速增长软件组织中人为可扩展性问题的演讲。她认为，随着团队规模扩大，必须主动管理社交系统以维持信任和心理安全感。关键策略包括：设计具有跨多种格式和渠道的刻意冗余的沟通架构；通过跨团队仪式、伙伴系统和轮值协调人来搭建团队间的桥梁；以及像监控工程指标一样严格地监控人为指标。领导者必须展现脆弱性并“言行一致”，以使期望的行为常态化。文章还涵盖了如何发现人为瓶颈，例如决策延迟、文化漂移和单点人为故障，并强调扩展人类规模的关键在于随着交互界面的扩大而维持一致性。",
+  "mainPoints": [
+    {
+      "point": "快速扩张的团队必须在其社交系统扩展时，有意识地重建信任和心理安全感。",
+      "explanation": "随着组织发展，现有的社交动态会瓦解。团队必须主动投入时间重建信任，并寻找新的、健康的动态以维持一致性。"
+    },
+    {
+      "point": "设计一个具有跨多种格式和渠道的刻意冗余的沟通架构。",
+      "explanation": "通过不同的媒介和不同的时间重复核心信息，可以确保每个人都接收到并理解背景、目标和全局图景，适应不同的学习风格，并防止知识缺口。"
+    },
+    {
+      "point": "通过结构化的跨团队连接来搭建团队间的桥梁，以减少孤岛效应。",
+      "explanation": "多团队外出活动、虚拟咖啡、伙伴系统和轮值协调人等举措，可以在高压情况出现之前，在团队之间建立熟悉感和信任，从而加强协作。"
+    },
+    {
+      "point": "像监控工程指标一样严格地监控人为指标，以便及早发现瓶颈。",
+      "explanation": "追踪团队公开提出风险的意愿、跨团队返工情况以及回顾会议的参与度等指标，可以揭示人为系统的健康状况，并在问题爆发前进行预测。"
+    },
+    {
+      "point": "领导者必须展现脆弱性并“言行一致”，以扩展心理安全感。",
+      "explanation": "领导者和技术影响者具有超乎寻常的影响力。通过承认不确定性、鼓励异议并展示期望的行为，他们能使脆弱性常态化，并加速信任文化的形成。"
+    }
+  ],
+  "keyQuotes": [
+    "当你的社交系统发生重大变化时，你必须重新填满信任或安全感的账户；你必须找到新的动态。",
+    "重复是金。在不同的时间，通过不同的媒介，以不同的方式重复核心信息、背景和目标。",
+    "人们模仿的不是领导者说的话，而是他们展示、容忍和奖励的行为。",
+    "健康的人为系统在压力下表现可预测；不健康的系统则会分崩离析。",
+    "扩展人类规模的关键在于，随着交互界面的扩大，维持一致性和心理安全感。"
+  ],
+  "tags": [
+    "团队扩展",
+    "心理安全感",
+    "组织文化",
+    "沟通",
+    "领导力"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 785,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PG_CAREER",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778758860000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-14 11:41:00"
+}

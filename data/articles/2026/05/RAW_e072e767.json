@@ -1,0 +1,49 @@
+{
+  "id": "RAW_e072e767",
+  "title": "Claude Code 入门指南",
+  "url": "https://www.freecodecamp.org/news/claude-code-for-beginners/",
+  "date": "2026-05-14 14:17:20",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>AI-powered coding has evolved beyond simple chat interfaces. The latest leap forward is Claude Code, a command-line tool from Anthropic that lives directly in your terminal and understands your entire local codebase.</p>\n  <p>We just released a comprehensive course on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel to help you integrate this tool into your professional workflow.</p>\n  <p>Unlike standard LLM web interfaces, Claude Code acts as an agentic partner. It can search your files, run terminal commands, and execute tests autonomously. It solves the \"context gap\" by analyzing how your different modules interact without you having to copy-paste dozens of files into a prompt.</p>\n  <p>This course moves from basic setup to advanced architectural audits. You'll learn things like project scaffolding, architectural audits, autonomous debugging, and multi-file navigation.</p>\n  <p>You can watch the full course now <a href=\"https://www.youtube.com/watch?v=gh2_PhgZGsM\">on the freeCodeCamp YouTube channel</a> (4-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gh2_PhgZGsM\" title=\"YouTube video player\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本课程教开发者如何使用 Anthropic 的智能命令行工具 Claude Code，将 AI 驱动的编码集成到他们的专业工作流程中。",
+  "oneSentenceSummary": "本课程教开发者如何使用 Anthropic 的智能命令行工具 Claude Code，将 AI 驱动的编码集成到他们的专业工作流程中。",
+  "summary": "本文介绍了一门关于 Claude Code 的全面课程，这是 Anthropic 推出的一款命令行工具，可在终端中充当智能合作伙伴。与标准的 LLM 网页界面不同，Claude Code 能够自主搜索文件、运行终端命令和执行测试，通过分析模块交互来解决上下文鸿沟问题，无需手动复制粘贴。课程涵盖设置、项目脚手架搭建、架构审计、自主调试和多文件导航，旨在帮助开发者将此工具集成到他们的专业工作流程中。",
+  "mainPoints": [
+    {
+      "point": "Claude Code 是一款位于终端中的智能命令行工具，能够理解整个本地代码库。",
+      "explanation": "与标准的 LLM 网页界面不同，它能够自主搜索文件、运行终端命令和执行测试，通过分析模块交互来解决上下文鸿沟问题。"
+    },
+    {
+      "point": "课程涵盖设置、项目脚手架搭建、架构审计、自主调试和多文件导航。",
+      "explanation": "课程从基础设置逐步深入到高级架构审计，教授开发者如何将 Claude Code 集成到他们的专业工作流程中。"
+    }
+  ],
+  "keyQuotes": [
+    "与标准的 LLM 网页界面不同，Claude Code 充当智能合作伙伴。",
+    "它通过分析你不同模块之间的交互方式来解决“上下文鸿沟”问题，无需你将数十个文件复制粘贴到提示中。",
+    "本课程从基础设置逐步深入到高级架构审计。"
+  ],
+  "tags": [
+    "Claude Code",
+    "AI 编码",
+    "命令行工具",
+    "Anthropic",
+    "开发者工作流程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 137,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778768240000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-14 14:17:20"
+}

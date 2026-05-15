@@ -1,0 +1,55 @@
+{
+  "id": "RAW_5654d2a8",
+  "title": "人手一个数据库，Kimi 背后这套 AI 基建到底有多能扛？",
+  "url": "https://www.qbitai.com/2026/05/417731.html",
+  "date": "2026-05-14 14:58:53",
+  "author": "思邈",
+  "siteName": "量子位",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>允中 发自 凹非寺</p>\n   <p>量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>“帮我搭个读书笔记网站，带登录和搜索，能导出的那种。”</p>\n  <p>如果你最近在<strong>Kimi K2.6的Agent模式</strong>里敲下这句话，5分钟后，你拿到的不再是一堆需要自己调试的Python代码，也不是一个只能看的静态Demo。</p>\n  <p>而是一个<strong>真实可访问的URL</strong>。</p>\n  <p>前端、后端、独立数据库、用户账号体系……全套齐备。你可以直接把链接甩给朋友，他注册后存入的数据，会稳稳地停留在你这套系统的<strong>独立数据库</strong>里。</p>\n  <p>比起v0或Lovable这些AI建站工具，Kimi实际上接管了用户<strong>从开发到托管、再到数据库运维</strong>的全生命周期。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_9589156029898dd83fef5a257fdb84bd.webp\">\n  </div>\n  <p>但在这种体验背后，真正的工程算力挑战才刚刚开始：</p>\n  <p>如果有100万个用户随口说了这句话，就意味着后台要瞬间承载100万个独立的生产级数据库——被真实用户长期读写。</p>\n  <p>在传统数据库的产品形态下，这种工作负载量几乎无法被承接。</p>\n  <p>那么Kimi究竟是如何在成本、规模与性能的“不可能三角”中，实现这种<strong>“人手一个数据库”</strong>的奢侈配置？</p>\n  <p>AI建站这一类场景，对模型厂商来说有一个基本的经济结构：</p>\n  <p>算力消耗集中在Agent生成代码的那几下，服务上线后是按月收订阅费。</p>\n  <p>一旦运行起来，托管的基础设施成本（web服务器、带宽、数据库）相对算力成本要低得多，厂商的利润空间主要靠这一部分。</p>\n  <p>但这套商业模式有一个前提：<strong>基础设施成本必须能压得下来。</strong></p>\n  <p>把Kimi K2.6这个场景的工程约束拆解开，有三条特别刺眼的要求。</p>\n  <p><strong>第一条：数据库实例的粒度，是“每终端用户一个”</strong></p>\n  <p>十万用户，就是十万个数据库。一百万用户，就是一百万个。</p>\n  <p>而且绝大多数实例会长期处于极低活跃，用户建完一个站之后，可能很久不再打开。</p>\n  <p>按传统云数据库的定价模型，一个最小实例大约每月十几到二十美元。乘以百万，账单天文数字。问题不是数据库贵，是<strong>商业模型无法规模化</strong>。</p>\n  <p><strong>第二条：数据库的schema是LLM现场生成的</strong></p>\n  <p><strong>（注：schema指数据库模式，是定义数据怎么存的逻辑结构。）</strong></p>\n  <p>过去二十年，schema设计是一个需要DBA（数据库管理员）、需要review、需要版本管理的慢决策流程。</p>\n  <p>在Kimi K2.6这里，schema是LLM对用户一句自然语言的翻译，例如“读书笔记需要什么字段？”“评分存整数还是文本？”，瞬间就能决定。</p>\n  <p>更棘手的问题是，<strong>用户会继续对话</strong>。</p>\n  <p>下一次用户说“帮我加一个收藏功能”，Agent又要动一次表结构。</p>\n  <p>这时候数据库里已经有了真实用户数据。Schema一旦改错，轻则查询失败、用户报错，重则写入紊乱、数据不可恢复。</p>\n  <p><strong>第三条：负载分布是“零-峰两极”</strong></p>\n  <p>大多数站建完就闲置。但只要有一个站被小红书推荐、被X平台热转，瞬间并发可以跳到百倍以上。</p>\n  <p>所以，数据库必须同时扛住<strong>“绝大多数近乎零、少数瞬间爆量”</strong>的极端曲线，而且要做到<strong>爆量租户不能拖垮其他所有租户</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_da9ec1132a9fe85286c12b9df24de3ef.webp\">\n  </div>\n  <p>这三条合在一起，在传统数据库的产品形态下，几乎是<strong>做不出来的</strong>：</p>\n  <ul>\n   <li><strong>路径A：单实例+schema隔离</strong></li>\n   <li>几百个租户行，几万个直接打爆查询规划器。爆款站还会连累所有邻居。Kimi工程团队也实际测过这条路：用一个大型PostgreSQL实例做多Schema隔离，单实例在万级规模时就开始扛不住，更不用说复杂的流控、故障半径控制、数据隔离这些更深一层的问题。</li>\n   <li><strong>路径B：一个用户一个RDS（托管关系型数据库服务）实例</strong></li>\n   <li>不管是RDS还是Neon/Supabase这种Serverless PG包装，本质都是为每个用户分配一个真实的PostgreSQL实例；到百万级租户，单是实例存在的基础月费就已不可接受。</li>\n  </ul>\n  <p>Kimi后端最终落在了<strong>TiDB Cloud</strong>上。</p>\n  <p>Kimi工程团队做了三个关键决策，每一个都对应解决上面三条约束中的一条。</p>\n  <p><strong>决策一：极致低成本——用Serverless Cluster的多租户能力，承接“每个用户一个独立数据库”</strong></p>\n  <p>既然问题出在“每用户一个真实实例”，TiDB Cloud在这层走了另一条路：<strong>引入一层“虚拟数据库界面”</strong>。</p>\n  <p>长尾的、绝大多数时间没请求的租户，平台并不真实分配数据库实例；只在Agent/终端用户实际发起请求的瞬间，由一个常驻的DB Session Gateway维持数据库连接，其他资源全部走弹性供给。</p>\n  <p>落到Kimi K2.6的场景里，这意味着<strong>“百万用户的建站后端”在单位经济上跑得通</strong>。</p>\n  <p>为了更直观地呈现这种技术代差，我们将这一架构与以Supabase为代表的典型Serverless数据库，进行了对比：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_b5dd5e4c176a9adb4f6350efe919fc64.webp\">\n  </div>\n  <p>下面是TiDB Cloud的多租户：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_cb3beb1144f465e136df484bbc409467.webp\">\n  </div>\n  <p><strong>决策二：统一技术栈——vector+SQL+JSON把Agent的“写代码”难度压下来</strong></p>\n  <p>Kimi K2.6建站Agent里，LLM写出来的典型查询经常在一条SQL里同时做多件事——按用户过滤、按标签筛选（JSON字段）、按向量相似度排序、按时间倒序。</p>\n  <p>在分离的栈里，同样的需求要LLM协调三个client、自己做事务、自己做结果合并……<strong>这在LLM写代码的场景下，错误率会指数级叠加。</strong></p>\n  <p>而在TiDB里，这是一条SQL。</p>\n  <p>统一栈在这里的价值不是“性能更好”，而是让Agent有机会把代码写对的前提条件。</p>\n  <p><strong>决策三：最小化摩擦——Warm Pool+scale-to-zero让Agent在1秒内拿到完全准备好的数据库实例</strong></p>\n  <p>Agent生成应用时，数据库的创建不能是一个需要等待几分钟的provisioning流程。</p>\n  <p>它应该像运行时资源一样：需要时立刻可用，用完后成本足够低。</p>\n  <p>TiDB Cloud通过Warm Pool预先维护一批已经完成底层准备的Starter实例。</p>\n  <p>Kimi需要新实例时，不再走完整创建链路，而是直接从预热池中分配；再叠加Starter scale-to-zero的能力，闲置实例的计算成本可以压到很低。</p>\n  <p>这让<strong>一用户一实例</strong>不仅在隔离和成本上成立，也在体验上成立——</p>\n  <p>Agent可以在1秒内拿到fully prepared instance，继续生成schema、写入数据、启动应用，而不需要把等待、轮询、失败重试写进自己的代码。</p>\n  <p>Kimi K2.6的这次选型，如果是孤立事件，只是一则产品新闻。</p>\n  <p>但放在更大的坐标系里看，它是<strong>一条正在形成的行业曲线上的一个点</strong>。</p>\n  <p>一个平台侧的数据可以先交代：今天在TiDB Cloud上新建的集群里，<strong>超过90%是由AI Agent直接创建的，而不是由人类工程师创建的</strong>。这个比例一年前还远没有这么高。</p>\n  <p>数字背后是一批AI Agent团队在各自做完基建选型后，不约而同地走向了同一类架构。几个关键数据点值得放在一起看：</p>\n  <p><strong>去年，某全球知名AI Agent平台的AI Agent选择TiDB作为其核心数据层</strong>，并在其技术博客和开发者社区公开了架构细节。</p>\n  <p>当时讲的是“Agent用数据库作为工作台”。</p>\n  <p>更早，<strong>Dify</strong>这家做LLMOps的低代码平台公司，过去为每个开发者租户分配独立数据库容器，规模做到一定程度后扛不住运维，最终把所有租户合并到一套TiDB Cloud上：<strong>基础设施成本降80%、运维负担降90%。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_d9a29a686a15f397073500be0da85e8e.webp\"><span class=\"pgc-img-caption\">△来自Dify官网</span>\n  </div>\n  <p><strong>今年，Kimi K2.6把TiDB用到了更复杂的场景——Agent直接向终端用户交付数据库驱动的完整应用。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_1dce96e457cc2e36539014dda494d4a3.webp\">\n  </div>\n  <p>几个团队各自做完工程评估，得到的答案差不多。</p>\n  <p>这种聚合本身就是一种行业信号，通常意味着底层工程约束已经稳定到一定程度。</p>\n  <p>把视角再拉远一层，每一代AI基础设施其实对应着一种<strong>新的“计算单位”</strong>。</p>\n  <p>Web时代是用户，一个产品要扛几亿人同时来。</p>\n  <p>移动时代是会话，一个App要扛几亿个并发会话。</p>\n  <p><strong>Agent时代是Agent自己</strong>，每个真实用户身边可能有10个、100个独立运行的Agent实例，每个都要有自己的状态、记忆、数据。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_a9b0a5ac00f89c274120bbe424b4e3fb.webp\"><span class=\"pgc-img-caption\">△图片由AI生成</span>\n  </div>\n  <p>Agent在跑起来时需要的不仅仅是数据库，还需要一个独立的sandbox来执行代码、一份独立的storage来存它的工作产物。</p>\n  <p><strong>One agent, one sandbox; one storage, one database</strong>，这套“每个Agent一份独立运行环境”的架构，正在成为Agent原生应用唯一可行的假设。</p>\n  <p>Kimi、Dify、Plaud以及全球各地不断涌现的Agent团队，都不约而同地做出了相同的判断。</p>\n  <p>新的默认标准正在形成。过去一年，TiDB的产品演进，正是在将这些共识逐一落实到具体产品中。</p>\n  <p>Kimi等团队的选型，正是这一趋势的独立验证。</p>\n  <p>当然，TiDB团队的目标，远不止数据库这一层。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260514172311_2272701ed15c91ebb80096a8c8cec264.webp\"><span class=\"pgc-img-caption\">△图片由AI生成</span>\n  </div>\n  <p>Agent作为新一代应用的核心计算单位，它需要的不只是一个数据库，还需要持久化工作产物的<strong>storage</strong>、维持跨session上下文的<strong>memory层</strong>，未来还会有更多组件。</p>\n  <p>TiDB正在沿着这条线，为Agent这一代应用补齐一整套通用的运行时基础设施：</p>\n  <ul>\n   <li><strong>mem9</strong>：是这条线上已经落地的第一个组件。Agent每次重启不应该从零开始，mem9为Agent提供持久、跨session可检索的memory层。</li>\n   <li><strong>drive9</strong>：是第二个组件，Agent的sandbox可以随时创建和销毁，但工作成果不能跟着消失。drive9为Agent Sandbox提供持久、共享、可挂载的workspace。</li>\n  </ul>\n  <p>后续还会有更多组件落地。Agent-native应用的标准运行时，正在一块一块成型。</p>\n  <p><strong>AI应用的上半场比模型，下半场比地基。</strong></p>\n  <p>当Agent进入“为终端用户交付应用”的阶段，模型能力本身已经不是决定胜负的唯一变量。</p>\n  <p>能不能选对一套数据底座，让交付出去的东西在真实用户面前稳定跑起来，正在变成模型厂商的核心运营能力。</p>\n </body>\n</html>",
+  "aiSummary": "本文深入分析了 Kimi K2.6 Agent 模式实现「人手一个数据库」背后的工程挑战与架构选型，揭示了 TiDB Cloud 如何通过多租户、统一技术栈和 Warm Pool 等能力，在成本、规模和性能的「不可能三角」中找到平衡。",
+  "oneSentenceSummary": "本文深入分析了 Kimi K2.6 Agent 模式实现「人手一个数据库」背后的工程挑战与架构选型，揭示了 TiDB Cloud 如何通过多租户、统一技术栈和 Warm Pool 等能力，在成本、规模和性能的「不可能三角」中找到平衡。",
+  "summary": "文章以 Kimi K2.6 的 Agent 建站功能为切入点，探讨了 AI Agent 时代对数据库基础设施提出的全新要求。当百万用户各自拥有一个独立的生产级数据库时，传统数据库方案在成本和性能上均无法承接。文章拆解了三大核心工程约束：数据库实例粒度需细化到「每终端用户一个」、数据库 schema 由 LLM 现场生成且需支持动态修改、负载分布呈现「零-峰两极」的极端曲线。Kimi 最终选择 TiDB Cloud，并做出三个关键决策：利用 Serverless Cluster 的多租户能力实现极致低成本，通过统一技术栈（vector+SQL+JSON）降低 Agent 写代码的复杂度，以及借助 Warm Pool 和 scale-to-zero 能力实现 1 秒内获取可用实例。文章进一步指出，这一选型并非孤立事件，而是 AI Agent 行业正在形成的共识——「One agent， one sandbox; one storage， one database」正在成为 Agent 原生应用的新默认标准。",
+  "mainPoints": [
+    {
+      "point": "Kimi K2.6 Agent 模式要求「每终端用户一个独立数据库」，对传统数据库架构构成巨大挑战。",
+      "explanation": "百万用户即百万个数据库实例，且多数处于低活跃状态。传统云数据库的定价模型和单实例架构无法在成本和性能上支撑这种规模。"
+    },
+    {
+      "point": "TiDB Cloud 通过 Serverless 多租户、统一技术栈和 Warm Pool 三大决策，解决了成本、复杂度和体验问题。",
+      "explanation": "多租户能力让长尾租户不占用真实实例，统一技术栈（vector+SQL+JSON）简化了 Agent 的代码生成，Warm Pool 则实现了 1 秒内获取可用实例，使「一用户一实例」在隔离、成本和体验上同时成立。"
+    },
+    {
+      "point": "AI Agent 时代正在形成「One agent， one sandbox; one storage， one database」的新基础设施标准。",
+      "explanation": "Kimi、Dify 等团队的选型趋同，表明 Agent 作为新一代计算单位，需要独立的运行环境和数据存储，这正在推动数据库等基础设施向 Agent-native 方向演进。"
+    }
+  ],
+  "keyQuotes": [
+    "如果有 100 万个用户随口说了这句话，就意味着后台要瞬间承载 100 万个独立的生产级数据库——被真实用户长期读写。",
+    "问题不是数据库贵，是商业模型无法规模化。",
+    "Agent 时代是 Agent 自己，每个真实用户身边可能有 10 个、100 个独立运行的 Agent 实例，每个都要有自己的状态、记忆、数据。",
+    "One agent， one sandbox; one storage， one database，这套「每个 Agent 一份独立运行环境」的架构，正在成为 Agent 原生应用唯一可行的假设。",
+    "AI 应用的上半场比模型，下半场比地基。"
+  ],
+  "tags": [
+    "TiDB",
+    "Kimi",
+    "AI Agent",
+    "数据库架构",
+    "Serverless"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 88,
+  "wordCount": 3738,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1778770733000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-14 14:58:53"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d5c425bf",
+  "title": "Moonrepo 发布 Moon v2.0，引入 WASM 插件工具链并重构 CLI",
+  "url": "https://www.infoq.com/news/2026/05/moonrepo-2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-14 12:47:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://moonrepo.dev/\">Moonrepo</a>, the developer productivity platform for monorepo management, has released <a href=\"https://moonrepo.dev/blog/moon-v2.0\">moon v2.0</a>, codenamed \"Phobos\", its first major version since v1. The release, which shipped after an alpha, beta, and release candidate cycle spanning nearly two months, delivers a plugin-based toolchain system, support for multiple configuration file formats, a restructured CLI, and a range of improvements to task inheritance and Docker integration.</p>\n   <p>The most significant change in moon v2.0 is the move from a hard-coded platform system to a WASM plugin-based toolchain architecture. Toolchains were previously baked into moon's core, limiting language support to what the maintainers built directly. The new system allows the community to create custom toolchain plugins for any language or runtime, with support for extending the project graph, modifying task commands, hooking into Docker flows, and managing tool installation via <a href=\"https://moonrepo.dev/proto\">proto</a>, moonrepo's companion version manager.</p>\n   <p>Alongside the toolchain overhaul, moon v2.0 now supports JSON, JSONC, HCL, Pkl, and TOML configuration formats in addition to YAML. The CLI has been reworked with a new low-level <code>moon exec</code> command that underpins <code>moon ci</code>, <code>moon check</code>, and <code>moon run</code>, providing a unified execution layer with support for job parallelisation and affected filtering. The <code>moonx</code> shorthand binary has been stabilised as a proper standalone executable, and interactive project and task selection prompts have been added for commands where no identifier is provided.</p>\n   <p>Task inheritance, one of moon's most compelling features for monorepo management, has been reworked to be configuration-based rather than relying on file naming conventions. A new <code>inheritedBy</code> setting allows users to define criteria such as toolchain, stack, language, and tags to control which projects inherit which tasks. Tasks can now also be associated with multiple toolchains, and <code>.env</code> file handling has been improved with automatic loading of <code>.env.local</code> and environment-specific files, with deferred loading at execution time rather than during graph creation.</p>\n   <p>For teams working with Docker, moon v2.0 introduces per-project overrides for Docker settings and support for custom Dockerfile templates powered by <a href=\"https://keats.github.io/tera/\">Tera</a>. The VCS layer has also been rewritten, with a new Git implementation that better supports worktrees and submodules, and a hooks system that no longer writes to <code>.git/hooks</code> directly.</p>\n   <p>Migrating from moon v1 involves a number of breaking changes, though the team has provided a dedicated <code>moon migrate v2</code> command to automate much of the process. The <a href=\"https://moonrepo.dev/docs/migrate/2.0\">official migration guide</a> covers changes including renamed CLI options (now kebab-case), restructured toolchain configuration, updated environment variable substitution syntax, and the removal of the legacy <code>local</code> task setting in favour of a <code>preset</code> system. Notably, the <code>moon upgrade</code> command from v1 will not work due to changes in the distribution format, and users must reinstall using the provided installation scripts.</p>\n   <p>In the wider monorepo tooling landscape, moon occupies a distinct position. A recent <a href=\"https://www.pkgpulse.com/blog/turborepo-vs-nx-vs-moon-build-tools-2026\">comparison by PkgPulse</a> described moon as \"the sleeper pick for polyglot repos (Node.js + Rust + Go) or teams that want reproducible toolchain management baked in\", while noting its smaller community at around 50K weekly downloads compared to Turborepo's 2M and Nx's 5M.</p>\n   <p>Jeff Dickey, creator of the tool <a href=\"https://github.com/jdx/mise\">mise</a>, <a href=\"https://news.ycombinator.com/item?id=45492353\">commented on Hacker News</a> that \"mise started out solving the tool problem where moon solved the build problem first,\" suggesting the two tools complement rather than directly compete.</p>\n   <p>Moon is an open-source repository management, organisation, orchestration, and notification tool written in Rust. It is developed by moonrepo, and sits between the high complexity of Bazel and the low structure of make or just, targeting teams that need structured monorepo management with built-in toolchain reproducibility across development and CI environments.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Moonrepo Releases Moon v2.0 with WASM Plugin Toolchains and Overhauled CLI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/moonrepo-2-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1778762820000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Moonrepo 发布了 moon v2.0 'Phobos'，引入了基于 WASM 插件的工具链系统、重构的 CLI 以及对多种配置格式的支持，标志着这款单体仓库管理工具实现了重大的架构转变。",
+  "oneSentenceSummary": "Moonrepo 发布了 moon v2.0 'Phobos'，引入了基于 WASM 插件的工具链系统、重构的 CLI 以及对多种配置格式的支持，标志着这款单体仓库管理工具实现了重大的架构转变。",
+  "summary": "Moonrepo 发布了 moon v2.0，代号 'Phobos'，这是自 v1 以来的首个主版本。该版本引入了一个由 WASM 驱动的基于插件的工具链系统，取代了之前硬编码的平台系统。这使得社区能够为任何语言或运行时创建自定义工具链插件，从而扩展项目图谱、修改任务命令，并通过配套的版本管理器 proto 管理工具安装。CLI 已重构，新增了 `moon exec` 命令作为其他命令的基础，提供了统一的执行层。任务继承已改为基于配置的方式，Docker 集成也通过每个项目的覆盖和自定义 Dockerfile 模板得到了改进。版本控制系统层也已重写，以更好地支持 Git worktree 和子模块。该版本包含一些破坏性变更，但专用的 `moon migrate v2` 命令可以自动化大部分迁移过程。Moon 在单体仓库工具领域中占据独特地位，主要面向多语言仓库以及需要可复现工具链管理的团队。",
+  "mainPoints": [
+    {
+      "point": "Moon v2.0 用基于 WASM 插件的工具链架构取代了硬编码的平台系统。",
+      "explanation": "这使得社区能够为任何语言或运行时创建自定义工具链插件，扩展项目图谱、修改任务命令并管理工具安装，显著提升了工具的灵活性和语言支持能力。"
+    },
+    {
+      "point": "CLI 已重构，新增了 `moon exec` 命令作为统一的执行层。",
+      "explanation": "该命令为 `moon ci`、`moon check` 和 `moon run` 等命令提供底层支持，实现了任务并行化和受影响过滤，并简化了整体命令结构。"
+    },
+    {
+      "point": "任务继承现在基于配置，使用新的 `inheritedBy` 设置取代了文件命名约定。",
+      "explanation": "这允许用户定义诸如工具链、技术栈、语言和标签等条件，以控制哪些项目继承哪些任务，从而提供更精细、更灵活的任务管理。"
+    },
+    {
+      "point": "Moon v2.0 引入了每个项目的 Docker 覆盖支持以及自定义 Dockerfile 模板。",
+      "explanation": "这通过允许团队为单个项目自定义 Docker 设置，并使用 Tera 模板生成更复杂的 Dockerfile，改进了 Docker 集成。"
+    }
+  ],
+  "keyQuotes": [
+    "Moon v2.0 最重要的变化是从硬编码的平台系统转向基于 WASM 插件的工具链架构。",
+    "工具链之前被硬编码在 moon 的核心中，限制了语言支持范围，仅能覆盖维护者直接构建的内容。",
+    "任务继承是 moon 在单体仓库管理中最引人注目的特性之一，现已改为基于配置的方式，而非依赖文件命名约定。",
+    "PkgPulse 最近的一项比较将 moon 描述为 '多语言仓库（Node.js + Rust + Go）或希望内置可复现工具链管理的团队的隐藏选择'。"
+  ],
+  "tags": [
+    "Moonrepo",
+    "单体仓库",
+    "WASM",
+    "工具链",
+    "CLI"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 584,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778762820000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-14 12:47:00"
+}

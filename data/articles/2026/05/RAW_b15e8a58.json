@@ -1,0 +1,58 @@
+{
+  "id": "RAW_b15e8a58",
+  "title": "重生之我在 AI 时代当老板：让一群 Agent 互相 PUA",
+  "url": "https://www.qbitai.com/2026/05/417816.html",
+  "date": "2026-05-14 11:14:25",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": null,
+  "aiSummary": "MiniMax 推出多 Agent 协作产品 Mavis，通过 Leader、Worker、Verifier 角色分工和 Team Engine 状态机，解决单 Agent 在长程任务中频繁中断、上下文污染和响应延迟等架构性问题。",
+  "oneSentenceSummary": "MiniMax 推出多 Agent 协作产品 Mavis，通过 Leader、Worker、Verifier 角色分工和 Team Engine 状态机，解决单 Agent 在长程任务中频繁中断、上下文污染和响应延迟等架构性问题。",
+  "summary": "本文以第一人称体验视角，介绍了 MiniMax 最新发布的 Agent 产品 Mavis（MiniMax as a Jarvis）。与传统单 Agent 不同，Mavis 采用多 Agent 团队协作架构，内置 Leader（统筹）、Worker（执行）、Verifier（验收）三种角色。用户只需给出一个模糊目标，Agent Team 即可自主拆解任务、分配执行、交叉验证，最终交付完整成果。文章通过一个「生成 HTML 专题页」的实操案例，展示了 Mavis 在 28 分钟内自主完成内容创作、设计、编码和验收的全过程。作者深入分析了单 Agent 在长程任务中的三大痛点：频繁中断询问、上下文越长越笨、IM 响应延迟，并指出这些问题的根源在于架构而非模型能力。Mavis 的 Team Engine 通过状态机硬性约束协作流程，Worker 与 Verifier 形成对抗式迭代，各 Agent 上下文隔离，主 Agent 可秒回确认并后台并行执行。文章还讨论了多 Agent 的成本问题，引用论文指出无结构的多 Agent 可能浪费 Token，而 Team Engine 的作用正是判断何时需要团队协作。最后，作者提出多 Agent 时代用户需要从「与 AI 聊天」转变为「管理一个团队」的思维升级。",
+  "mainPoints": [
+    {
+      "point": "多 Agent 团队架构可解决单 Agent 在长程任务中的三大痛点。",
+      "explanation": "单 Agent 因上下文焦虑频繁中断询问、上下文越长注意力越分散、长任务期间无法快速响应 IM 消息，根源在于架构而非模型能力。Mavis 通过 Leader/Worker/Verifier 角色分工和 Team Engine 状态机硬性约束协作流程来解决这些问题。"
+    },
+    {
+      "point": "Worker 与 Verifier 之间的对抗式迭代是质量保障的关键设计。",
+      "explanation": "Worker 停止的条件是 Verifier 启动的原因，Verifier 停止的条件是尽可能发现 Worker 的问题，通过多轮对抗式迭代交付高质量结果，类似企业研发与质量部门的关系，不需要用户事无巨细地介入。"
+    },
+    {
+      "point": "多 Agent 并非默认选项，需要 Team Engine 判断何时启用团队协作。",
+      "explanation": "无结构的多 Agent 可能浪费 Token 且准确率不提升，Team Engine 的作用是根据任务复杂度判断是否需要 Agent Team，简单任务单 Agent 甚至脚本即可，避免「AI 聊天室」式的无效协作。"
+    },
+    {
+      "point": "多 Agent 时代用户需要从「与 AI 聊天」转变为「管理一个团队」。",
+      "explanation": "用户不再需要是提示词工程师，而是通过管理面板配置 Agent 角色、能力和边界，分配任务。真正重要的能力从写提示词转向团队管理和任务拆解。"
+    }
+  ],
+  "keyQuotes": [
+    "多 Agent 时代，每个人都要学着去担任那个更高的角色。",
+    "Team，从来不是默认选项。对于简单任务而言，单 Agent 绰绰有余。甚至有些时候脚本就够了。不是所有事都要开会。",
+    "没有结构、没有验证、没有停止条件的「多 Agent」，就是在浪费 Token。那不叫团队合作，那叫 AI 聊天室。",
+    "你现在不是在跟一个 AI 聊天。你在管理一个团队。"
+  ],
+  "tags": [
+    "多 Agent 协作",
+    "MiniMax",
+    "Mavis",
+    "Agent Team",
+    "长程任务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 19,
+  "score": 88,
+  "wordCount": 4677,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1778757265000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-14 11:14:25"
+}
