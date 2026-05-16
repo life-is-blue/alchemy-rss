@@ -1,0 +1,52 @@
+{
+  "id": "RAW_1c08dfed",
+  "title": "美国 AI 政策是一团乱麻。以下是应对之策。",
+  "url": "https://garymarcus.substack.com/p/us-ai-policy-is-a-clumsy-mess-heres",
+  "date": "2026-05-15 14:01:31",
+  "author": "Gary Marcus",
+  "siteName": "Marcus on AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <div class=\"captioned-image-container\">\n    <figure>\n     <a target=\"_blank\" href=\"https://image.jido.dev/20260515152453_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png\" data-component-name=\"Image2ToDOM\" class=\"image-link image2 is-viewable-img can-restack\"> \n      <div class=\"image2-inset\">\n       <picture><source type=\"image/webp\" srcset=\"https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png 424w, https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png 848w, https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png 1272w, https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png 1456w\" sizes=\"100vw\"><img src=\"https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:772,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:1934207,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://garymarcus.substack.com/i/197860328?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" alt srcset=\"https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png 424w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/96d3b320-b924-46be-dde7-94cac6f9ea00/public 848w, https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png 1272w, https://image.jido.dev/20260515152454_59b5aba9-cceb-4232-a830-05f8520b6850_2420x1283.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\" class=\"sizing-normal\"></picture>\n       <div class=\"image-link-expand\">\n        <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image\">\n          <svg role=\"img\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\">\n           <g>\n            <title></title><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path>\n           </g>\n          </svg>\n         </button>\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2\">\n           <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n          </svg>\n         </button>\n        </div>\n       </div>\n      </div> \n     </a>\n    </figure>\n   </div>\n   <p><span>The US has 1,200 AI bills (roughly 150 enacted into law), but nothing that feels like a </span><em>coherent</em><span> AI policy. That’s not good for anyone, businesses or consumers. </span></p>\n   <p><span>Jeffrey Sonnenfeld, Stephen Henriques, and I review the chaos and suggest some ways forward, in </span><a href=\"https://fortune.com/2026/05/15/ai-policy-patchwork-state-federal-regulation-framework-sonnenfeld-marcus/\">an essay we just published at Fortune</a><span>. </span></p>\n   <p><span>Our goal was not som much to favor one extant bill or another, but to provide a </span><em>framework</em><span> “to ensure that the questions before state legislators, members of Congress, and federal agencies are the right questions, asked in the right order, before another five hundred bills are introduced and a patchwork is hardened in place that no one designed and few defend.” Might sound nerdy, but the alternative, to which we are headed, is poorly considered chaos. Read it </span><a href=\"https://fortune.com/2026/05/15/ai-policy-patchwork-state-federal-regulation-framework-sonnenfeld-marcus/\">here</a><span>.</span></p>\n   <div data-component-name=\"SubscribeWidget\" class=\"subscribe-widget\">\n    <div class=\"pencraft pc-display-flex pc-justifyContent-center pc-reset\">\n     <div class=\"container-IpPqBD\">\n      <form action=\"/api/v1/free?nojs=true\" method=\"post\" novalidate class=\"form form-M5sC90\">\n       <input type=\"hidden\" name=\"first_url\" value><input type=\"hidden\" name=\"first_referrer\" value><input type=\"hidden\" name=\"current_url\"><input type=\"hidden\" name=\"current_referrer\"><input type=\"hidden\" name=\"first_session_url\" value><input type=\"hidden\" name=\"first_session_referrer\" value><input type=\"hidden\" name=\"referral_code\"><input type=\"hidden\" name=\"source\" value=\"subscribe-widget\"><input type=\"hidden\" name=\"referring_pub_id\"><input type=\"hidden\" name=\"additional_referring_pub_ids\">\n       <div class=\"sideBySideWrap-vGXrwP\">\n        <div class=\"emailInputWrapper-QlA86j\">\n         <div class=\"pencraft pc-display-flex pc-minWidth-0 pc-position-relative pc-reset flex-auto-j3S2WA\">\n          <input name=\"email\" placeholder=\"Type your email...\" type=\"email\" class=\"pencraft emailInput-OkIMeB input-y4v6N4 inputText-pV_yWb\">\n         </div>\n        </div>\n        <button tabindex=\"0\" type=\"submit\" disabled class=\"pencraft pc-reset pencraft rightButton primary subscribe-btn button-VFSdkv buttonBase-GK1x3M\"><span class=\"button-text \">Subscribe</span></button>\n       </div>\n      </form>\n     </div>\n    </div>\n   </div>\n   <p></p>\n   <p></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "当前的美国 AI 政策是由 1200 项法案拼凑而成的碎片化体系，在混乱固化之前，需要一个连贯的框架来确保以正确的顺序提出正确的问题。",
+  "oneSentenceSummary": "当前的美国 AI 政策是由 1200 项法案拼凑而成的碎片化体系，在混乱固化之前，需要一个连贯的框架来确保以正确的顺序提出正确的问题。",
+  "summary": "这篇发表在 'Marcus on AI' Substack 上的文章，批评了美国 AI 政策的现状，将其描述为 '一团乱麻'，其特点是超过 1200 项法案（约 150 项已颁布）缺乏连贯性。作者与 Jeffrey Sonnenfeld 和 Stephen Henriques 共同认为，这种逐州拼凑的碎片化体系对企业和消费者都有害。文章并非支持任何特定法案，而是倡导一个战略框架来指导未来的立法。其目标是确保政策制定者在现有混乱变得根深蒂固之前，以正确的顺序提出正确的问题。本文是对发表在《财富》杂志上的一篇更长文章的简要介绍和指引，那篇文章可能详细阐述了这一拟议框架。",
+  "mainPoints": [
+    {
+      "point": "美国 AI 政策是由超过 1200 项法案拼凑而成的碎片化且不连贯的体系。",
+      "explanation": "约 150 项已颁布的法案数量庞大，但并未形成连贯的国家战略，反而给企业和消费者带来了困惑。"
+    },
+    {
+      "point": "需要制定一个战略框架来指导未来的 AI 立法。",
+      "explanation": "作者主张采用结构化的方法，确保政策制定者以正确的顺序提出正确的问题，防止当前混乱体系进一步固化。"
+    },
+    {
+      "point": "当前的做法正朝着考虑不周的混乱方向发展。",
+      "explanation": "如果没有一个连贯的框架，各州和联邦法律的拼凑将成为一个永久的、未经规划的混乱局面，不符合任何人的利益。"
+    }
+  ],
+  "keyQuotes": [
+    "美国有 1200 项 AI 法案（约 150 项已颁布成为法律），但没有任何一项能让人感觉是 *连贯的* AI 政策。",
+    "我们的目标与其说是支持某一现存法案，不如说是提供一个 *框架*，'以确保州立法者、国会议员和联邦机构面前的问题是正确的问题，并且是以正确的顺序提出的。'",
+    "听起来可能有些书呆子气，但另一种选择——我们正朝着这个方向前进——是考虑不周的混乱。"
+  ],
+  "tags": [
+    "美国 AI 政策",
+    "AI 监管",
+    "技术政策",
+    "AI 治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 131,
+  "domain": "garymarcus.substack.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "BT_NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_8f6e6074",
+  "sourceName": "Marcus on AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778853691000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-15 14:01:31"
+}

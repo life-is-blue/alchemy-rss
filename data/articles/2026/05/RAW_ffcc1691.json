@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ffcc1691",
+  "title": "Anthropic 为 Claude Code 引入 Routines 自动化功能",
+  "url": "https://www.infoq.com/news/2026/05/anthropic-routines-claude/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-15 15:51:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic has introduced a new feature called <a href=\"https://claude.com/blog/introducing-routines-in-claude-code\">Routines for Claude Code</a>, allowing developers to configure automated coding workflows that run on schedules, through API calls, or in response to external events. The feature runs on Claude Code’s cloud infrastructure, removing the need for developers to maintain their own cron jobs, servers, or automation pipelines locally.</p>\n   <p>A routine consists of a prompt, repository access, and connected tools or services. Once configured, the routine can execute repeatedly without manual intervention. Scheduled routines support recurring jobs such as triaging bugs, scanning documentation drift, or generating pull requests. API-triggered routines expose endpoints and authentication tokens, enabling external systems such as deployment pipelines, monitoring platforms, or internal tooling to trigger Claude Code sessions through HTTP requests.</p>\n   <p>Anthropic also introduced <a href=\"https://claude.com/blog/introducing-routines-in-claude-code#:~:text=Webhook%20routines%2C%20starting%20with%20GitHub\">webhook-based</a> routines for GitHub events. Developers can configure routines to automatically launch sessions when pull requests match specific conditions. Claude Code can then monitor updates to the pull request, respond to comments, track CI failures, and continue operating across the lifecycle of the change.</p>\n   <p>The company says teams are already using routines for workflows such as automated issue triage, deployment verification, alert analysis, documentation updates, and cross-language SDK synchronization. One example described a workflow where a <a href=\"https://claude.com/blog/introducing-routines-in-claude-code#:~:text=drafts%20the%20change-,GitHub%20routines,-Library%20port%3A%20every\">merged Python SDK</a> pull request automatically triggers a routine that ports the changes into a Go SDK and opens a corresponding pull request. Another example uses monitoring alerts to trigger automated debugging and draft fixes before an engineer reviews the incident.</p>\n   <p>Community reaction on <a href=\"https://x.com/claudeai/status/2044095086460309790\">X</a> mixed enthusiasm for automation with concerns about reliability and usage limits. Developers highlighted use cases such as automated PR reviews, CI/CD workflows, and scheduled debugging tasks</p>\n   <p>Lead Engineer <a href=\"https://x.com/DarlingtonDev/status/2044095417143431171\">Mike Darlington</a> posted:</p>\n   <blockquote>\n    <p>Oh this is massive. AI webhooks straight from your observability dashboard or CI workflow.</p>\n   </blockquote>\n   <p>Others pushed back on Anthropic’s rapid release pace, calling for fixes to model degradation, downtime, and quota limits before adding more features, like user <a href=\"https://x.com/KatieKeithBarn2/status/2044898907746914757\">Katie Keith</a> commenting:</p>\n   <blockquote>\n    <p>Ooh, this sounds good! Hopefully the new Routines can replace Schedules in Claude Cowork, which are rubbish and can only run on your own machine while you’re trying to work on something else.</p>\n   </blockquote>\n   <p>The release reflects a broader trend toward asynchronous AI coding agents that operate continuously in cloud environments instead of interactive local sessions. Compared to tools like <a href=\"https://cursor.com/\">Cursor</a>, <a href=\"https://github.com/features/copilot/agents\">GitHub Copilot agents</a>, and <a href=\"https://developers.openai.com/codex/workflows\">OpenAI Codex workflows</a>, <a href=\"https://code.claude.com/docs/en/routines\">Claude Code Routines</a> focuses more heavily on event-driven automation and persistent background execution tied directly to repositories, APIs, and operational systems.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic Introduces Routines for Claude Code Automation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/anthropic-routines-claude/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1778860260000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 为 Claude Code 推出 Routines 功能，使开发者能够配置自动化的、事件驱动的编码工作流，这些工作流在云端基础设施上运行，无需本地维护。",
+  "oneSentenceSummary": "Anthropic 为 Claude Code 推出 Routines 功能，使开发者能够配置自动化的、事件驱动的编码工作流，这些工作流在云端基础设施上运行，无需本地维护。",
+  "summary": "Anthropic 发布了 Claude Code 的 Routines 功能，这是一项新特性，允许开发者创建由定时任务、API 调用或 GitHub Webhooks 等外部事件触发的自动化编码工作流。这些 Routines 在 Claude Code 的云端基础设施上运行，消除了开发者自行管理 cron 任务或服务器的需求。一个 Routine 由提示词、仓库访问权限以及连接的工具或服务组成。定时执行的 Routine 可以处理诸如 Bug 分类、文档漂移扫描或拉取请求生成等重复性任务。API 触发的 Routine 会暴露端点，以便与部署流水线和监控平台集成。针对 GitHub 事件的基于 Webhook 的 Routine，可以在拉取请求满足特定条件时自动启动会话，监控更新、回复评论并跟踪 CI 失败。该公司报告称，团队已经在使用 Routines 进行自动化问题分类、部署验证、告警分析以及跨语言 SDK 同步。社区反应不一，一方面对自动化能力充满热情，另一方面也对可靠性、使用限制以及 Anthropic 快速的发布节奏表示担忧。该功能代表了异步 AI 编码智能体在云环境中持续运行这一更广泛的趋势，它专注于事件驱动自动化和持久后台执行，从而与 Cursor 和 GitHub Copilot 等工具的智能体区分开来。",
+  "mainPoints": [
+    {
+      "point": "Routines 在云端基础设施上实现了自动化、定时和事件驱动的编码工作流。",
+      "explanation": "开发者可以通过提示词、仓库访问权限和工具来配置 Routines，这些 Routines 可以按计划、通过 API 调用或响应 GitHub Webhooks 来执行，无需本地 cron 任务或服务器。"
+    },
+    {
+      "point": "基于 Webhook 的 GitHub 事件 Routine 实现了拉取请求生命周期管理的自动化。",
+      "explanation": "当拉取请求满足条件时，Routines 可以自动启动会话，监控更新、回复评论、跟踪 CI 失败，并在变更的整个生命周期内持续运行。"
+    },
+    {
+      "point": "实际应用案例包括自动化问题分类、部署验证和跨语言 SDK 同步。",
+      "explanation": "团队正在使用 Routines 来自动执行诸如将变更从 Python SDK 移植到 Go SDK 等任务，以及在工程师审查之前从监控告警触发调试会话。"
+    },
+    {
+      "point": "社区反应不一，在自动化热情与可靠性担忧之间寻求平衡。",
+      "explanation": "虽然开发者强调了自动化 PR 审查和 CI/CD 工作流等用例，但其他人也批评了 Anthropic 快速的发布节奏，并呼吁修复模型退化、停机时间和配额限制等问题。"
+    }
+  ],
+  "keyQuotes": [
+    "一个 Routine 由提示词、仓库访问权限以及连接的工具或服务组成。一旦配置完成，该 Routine 可以在无需人工干预的情况下重复执行。",
+    "开发者可以配置 Routines，使其在拉取请求满足特定条件时自动启动会话。",
+    "哦，这太重要了。直接从你的可观测性仪表板或 CI 工作流中发出的 AI Webhooks。",
+    "该发布反映了更广泛的趋势，即异步 AI 编码智能体在云环境中持续运行，而不是进行交互式的本地会话。"
+  ],
+  "tags": [
+    "Claude Code",
+    "Routines",
+    "AI 自动化",
+    "事件驱动",
+    "Webhooks"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 405,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778860260000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-15 15:51:00"
+}

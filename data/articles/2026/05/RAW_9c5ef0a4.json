@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9c5ef0a4",
+  "title": "为什么我对 AI 末日不太担忧：Scott Alexander 与 Nicolaus Copernicus 的对话 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/oyTQpqBtdawjAnfcm/why-i-am-not-too-worried-about-aipocalypse-scott-alexander",
+  "date": "2026-05-15 20:31:29",
+  "author": "Shmi",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>I have no good gears-level model of AI, and the expert views are all over the place (see </span><span><span><a href=\"https://en.wikipedia.org/wiki/The_AI_Doc:_Or_How_I_Became_an_Apocaloptimist\" rel=\"noreferrer\"><span>AI Doc</span></a></span></span><span>), so the only remaining argument is my physical intuition and a black-box view. Which, in this case, is based on two principles (best called rules of thumb): </span></p>\n    <ul>\n     <li value=\"1\" id=\"block1\"><span>Copernicanism, where one assumes that humanity is not unique or special among the stars </span></li>\n     <li value=\"2\" id=\"block2\"><span>The \"Law\" of Straight Lines: </span><span><span><a href=\"https://slatestarcodex.com/2019/03/13/does-reality-drive-straight-lines-on-graphs-or-do-straight-lines-on-graphs-drive-reality/\"><span>https://slatestarcodex.com/2019/03/13/does-reality-drive-straight-lines-on-graphs-or-do-straight-lines-on-graphs-drive-reality/</span></a></span></span><span>, </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/xkRtegmqL2iyhtDB3/the-gods-of-straight-lines\"><span>https://www.lesswrong.com/posts/xkRtegmqL2iyhtDB3/the-gods-of-straight-lines</span></a><span> and </span><span><span><a href=\"https://www.astralcodexten.com/p/the-sigmoids-wont-save-you\"><span>https://www.astralcodexten.com/p/the-sigmoids-wont-save-you</span></a></span></span></li>\n    </ul>\n    <p id=\"block3\"><span>Let's start with the latter: the main argument for x-risk, as I understand it, is that AI will become smarter than us in every way, becomes an agent with its own goals and will just take the Earth from us and use it for its own purposes. This seems like a reasonable possibility, given how things are going so far. Extrapolating a straight line that far means visible cosmic consequences: a normal planet or a star rather suddenly starting to behave very much unlike what we expect from the known physics: growing very bright, or very dim, or disappearing completely. Copernicanism says that if it can happen here, it probably happens in countless places elsewhere. And yet we do not see it. Why?</span></p>\n    <p id=\"block4\"><span>Hanson's </span><span><span><a href=\"https://en.wikipedia.org/wiki/Quiet_and_loud_aliens\" rel=\"noreferrer\"><span>Grabby Aliens</span></a></span></span><span> is a proposed way out, where we do not see the aliens coming until they are upon us. This, too, does not survive even the modicum of Copernicanism: the Universe has been around for 14 billion years, our local group of galaxies for almost 10 billion years, and it contains over a trillion stars and is only 20 million light years across, and many stars there are as old as the Sun. So, if Grabby Aliens developed anywhere in the local group within the last 0.1% of the Universe's lifetime, we would have been eaten already. And maybe we have been, but then the argument is moot.</span></p>\n    <p id=\"block5\"><span>So we have a contradiction between the law of straight lines and Copernicanism: we expect visible effects of AIpocalypse elsewhere, while there are none. What gives? The Fermi paradox says that naive Copernicanism fails, and we are not like anyone else, to the degree where we cannot see anyone else. What gives? Either we are unique and the universe is not a good guide, or the straight lines stop being straight and peter out before Big Bad things happen. </span></p>\n    <p id=\"block6\"><span>There are still a fair few orders of magnitude between now and Astronomically Visible Big Bad. Probably between 3 (</span><span><span><a href=\"https://en.wikipedia.org/wiki/Planetary_civilization\" rel=\"noreferrer\"><span>Kardashev I</span></a></span></span><span>) and 13 (Kardashev II). For comparison, the energy consumption by humanity has increased by 7 orders of magnitude so far:</span></p>\n    <img src=\"https://image.jido.dev/20260515210452_bvy5cfkgvrvnq7jig7ax.png\" alt=\"image.png\">\n    <p id=\"block7\"><span>Credit: Gemini.</span></p>\n    <p id=\"block8\"><span>So, unless we are unique, some limiting factor will be at play somewhere between now and 5-7 orders of magnitude from now, a bit less than what the humanity has scaled so far.</span></p>\n    <p id=\"block9\"><span>What might be this limiting factor? Who knows. It may well be self-annihilation, but that is materially different from the predictions based on AI x-risk due to unbounded resource consumption growth by the indifferent amoral bots. So there is a big unknown ahead, and that means that the probability of x-risk, the proverbial p(doom) is not a useful number to wave around. </span></p>\n    <p id=\"block10\"><span>So there you have it: no good reason to worry about conventional x-risk, a lot of good reasons to worry about the Great Filter.</span></p>\n    <p id=\"block11\">\n     <br>\n    </p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "作者借助哥白尼主义和费米悖论，认为缺乏可见的宇宙证据表明 AI 驱动的灭绝会发生，这意味着存在某种限制因素阻止 AI 无限增长，从而将关注点从 AI 生存风险转向了大过滤器。",
+  "oneSentenceSummary": "作者借助哥白尼主义和费米悖论，认为缺乏可见的宇宙证据表明 AI 驱动的灭绝会发生，这意味着存在某种限制因素阻止 AI 无限增长，从而将关注点从 AI 生存风险转向了大过滤器。",
+  "summary": "作者自认缺乏对 AI 的深入技术理解，因此依赖两个启发式原则来评估 AI 生存风险：哥白尼主义（人类并非独一无二）和“直线法则”（对当前趋势进行外推）。主流的生存风险论点认为，AI 将变得超级智能，作为智能体行动，并为了自身目标消耗地球资源。这种增长的外推将导致天文尺度上可见的后果，例如恒星或行星出现异常行为。哥白尼主义认为，如果这是可能的结果，那么宇宙中其他地方也应该发生过。然而，我们并未观察到此类现象——这构成了费米悖论的一个版本，从而产生了矛盾。作者得出结论：要么人类是独一无二的，要么指数增长的“直线”在达到灾难性的、改变宇宙的规模之前会弯曲并遇到限制因素。这个限制因素可能是自我毁灭，但这与标准 AI 生存风险场景中预测的无限制资源消耗不同。因此，作者认为没有理由担忧传统的 AI 生存风险，但有充分理由担忧大过滤器的本质。",
+  "mainPoints": [
+    {
+      "point": "缺乏 AI 驱动灭绝的可见宇宙证据，与当前 AI 增长趋势的外推相矛盾。",
+      "explanation": "如果 AI 成为超级智能、消耗资源的智能体，其影响很可能在天文尺度上可见。我们未发现此类证据，表明对 AI 发展的简单外推存在缺陷。"
+    },
+    {
+      "point": "费米悖论暗示，要么人类是独一无二的，要么增长趋势在变得灾难性之前会遇到限制因素。",
+      "explanation": "哥白尼主义认为，如果 AI 末日是常见结果，我们应该在其他地方看到证据。缺乏证据迫使我们在人类例外论或存在阻止无限增长的限制因素之间做出选择。"
+    },
+    {
+      "point": "由于对未来限制因素的根本性未知，AI 生存风险的概率（p(doom)）并非有用的指标。",
+      "explanation": "作者认为，存在一个“巨大的未知”限制因素使得精确的概率估算毫无意义。真正的关注点应从特定的 AI 驱动末日转向更广泛的问题：大过滤器究竟是什么。"
+    }
+  ],
+  "keyQuotes": [
+    "因此，我们在直线法则和哥白尼主义之间看到了矛盾：我们预期 AI 末日会在其他地方留下可见影响，但实际上并未发现。",
+    "所以，除非我们是独一无二的，否则从现在到未来 5-7 个数量级之间，某个限制因素将发挥作用，其规模略小于人类迄今为止所达到的程度。",
+    "因此，结论如下：没有充分理由担忧传统的生存风险，但有充分理由担忧大过滤器。"
+  ],
+  "tags": [
+    "AI 生存风险",
+    "费米悖论",
+    "哥白尼主义",
+    "大过滤器",
+    "生存风险"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 544,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778877089000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-15 20:31:29"
+}

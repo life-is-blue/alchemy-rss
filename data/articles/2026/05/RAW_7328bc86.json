@@ -1,0 +1,57 @@
+{
+  "id": "RAW_7328bc86",
+  "title": "Cloudflare 推出 Workflows V2，支持确定性执行和 5 万个并发工作流",
+  "url": "https://www.infoq.com/news/2026/05/cloudflare-workflows-v2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-15 14:04:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has <a href=\"https://blog.cloudflare.com/workflows-v2/\">introduced Workflows V2</a>, an updated execution model for orchestrating stateful, multi-step workflow orchestration for distributed applications on its developer platform. The release focuses on improving reliability, scalability, and observability for these distributed execution workloads, while introducing a deterministic, replayable workflow architecture.</p>\n   <p>Workflows provide a mechanism to coordinate long-running business logic and background processing across services such as APIs, queues, and storage systems while maintaining execution state and reliability across failures. The initial version (<a href=\"https://blog.cloudflare.com/workflows-v2/\">V1</a>) introduced durable execution primitives for chaining multi-step processes but faced limitations in scaling, observability, and replay behavior under failure conditions, particularly in high-throughput scenarios.</p>\n   <p>With Workflows V2, Cloudflare has increased key scaling limits to support more demanding applications. The platform now allows up to 50,000 concurrent workflow instances, compared to 4,500 previously, and supports up to 300 new workflow executions per second per account, up from 100. Queuing capacity has also been expanded to 2 million instances per workflow, doubling the previous limit. These updates are designed to support event-driven systems, including AI agents, data pipelines, and large-scale background processing workloads operating at a global scale.</p>\n   <p>Cloudflare’s engineer highlighted the new model</p>\n   <blockquote>\n    <p>V2 makes it easier to reason about execution and recover from failures without duplicating work.</p>\n   </blockquote>\n   <p>Workflows V2 enables developers to define durable, event-driven workflows that coordinate tasks across APIs, queues, and storage systems while maintaining execution state. By persisting state between steps and automatically handling retries, timeouts, and failures, the platform reduces the need for custom orchestration logic. The system also introduces improved developer ergonomics, including clearer step definitions and better alignment with application logic. Common use cases include multi-step business processes, data synchronization pipelines, and AI inference workflows that require reliable execution over extended durations.</p>\n   <p>A key architectural change in V2 is the introduction of a step-based, deterministic execution model. Each workflow step is isolated, replayable, and idempotent, allowing recovery from failures without re-running completed steps. This is supported by durable state management and execution tracking, enabling workflows to resume from the last successful step. The architecture builds on Cloudflare’s distributed runtime, integrating with Workers for compute, Queues for event ingestion, and Durable Objects for coordination and state consistency across regions.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/cloudflare-workflows-v2-release/en/resources/2cloudflarev2workflow-1777438105526.jpeg\" rel=\"share\"></p>\n   <p><em>Workflows V2 architecture overview (Source: <a href=\"https://blog.cloudflare.com/workflows-v2/\">Cloudflare Blog Post</a>)</em></p>\n   <p>The updated model also improves support for parallel execution and branching. Independent steps can run concurrently, enabling fan-out and fan-in patterns commonly used in data processing and AI pipelines. Observability has been enhanced with step-level tracing, execution histories, and debugging tools, allowing developers to inspect workflow progress and diagnose failures in production environments.</p>\n   <p>Cloudflare stated reinforcing determinism as a core design principle,</p>\n   <blockquote>\n    <p>Each step is designed to be replay-safe, ensuring workflows behave predictably even under retries.</p>\n   </blockquote>\n   <p>Migration from Workflows V1 to V2 requires adopting the explicit step-based model and updated APIs. While core concepts remain consistent, workflows must be restructured into isolated, replayable steps aligned with the new execution semantics. Cloudflare indicates that the updated model improves debuggability, operational clarity, and long-term maintainability, supported by enhanced tooling for managing workflow executions.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Introduces Workflows V2 with Deterministic Execution and 50K Concurrent Workflows\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/cloudflare-workflows-v2-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1778853840000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 推出 Workflows V2，采用确定性、可重放的执行模型，用于构建有状态的多步骤编排应用，并发实例数提升至 5 万个，并增强了可靠性和可观测性。",
+  "oneSentenceSummary": "Cloudflare 推出 Workflows V2，采用确定性、可重放的执行模型，用于构建有状态的多步骤编排应用，并发实例数提升至 5 万个，并增强了可靠性和可观测性。",
+  "summary": "Cloudflare 发布了 Workflows V2，这是其编排平台的重大更新，用于构建有状态、多步骤的分布式应用。新版本引入了确定性的、基于步骤的执行模型，其中每个步骤都是隔离、可重放且幂等的，从而能够在故障发生时可靠地恢复，无需重新执行已完成的工作。关键的扩展能力提升包括：支持多达 5 万个并发工作流实例（从 4，500 个提升），每个账户每秒新增 300 次执行（从 100 次提升），以及每个工作流 200 万个实例的队列容量。该架构与 Cloudflare 的分布式运行时集成，利用 Workers 进行计算、Queues 进行事件摄取、Durable Objects 保证状态一致性。增强的可观测性提供了步骤级追踪、执行历史记录和调试工具。常见用例包括 AI 智能体协调、数据管道、多步骤业务流程以及大规模后台处理。从 V1 迁移需要将工作流重构为新的基于步骤的模型。",
+  "mainPoints": [
+    {
+      "point": "Workflows V2 引入了确定性的、基于步骤的执行模型，以实现可靠的编排。",
+      "explanation": "每个步骤都是隔离、可重放且幂等的，允许工作流在故障后从最后一个成功步骤恢复，而无需重复工作。"
+    },
+    {
+      "point": "扩展能力限制显著提升，以支持要求严苛的生产工作负载。",
+      "explanation": "并发实例数从 4，500 个提升至 50，000 个，每秒新增执行次数从 100 次提升至 300 次，每个工作流的队列容量翻倍至 200 万个实例。"
+    },
+    {
+      "point": "增强的可观测性和调试工具改进了生产运维。",
+      "explanation": "步骤级追踪、执行历史记录和调试功能使开发者能够实时检查工作流进度并诊断故障。"
+    },
+    {
+      "point": "该架构集成了 Workers、Queues 和 Durable Objects，形成一个统一的分布式运行时。",
+      "explanation": "这种集成在跨区域范围内提供了计算、事件摄取和状态一致性，从而为事件驱动系统实现全球规模的执行。"
+    }
+  ],
+  "keyQuotes": [
+    "V2 让推理执行过程以及从故障中恢复（无需重复工作）变得更加容易。",
+    "每个步骤都被设计为可重放安全的，确保工作流即使在重试时也能表现可预测。",
+    "Workflows 提供了一种机制，用于跨 API、队列和存储系统等服务协调长时间运行的业务逻辑和后台处理，同时在故障发生时保持执行状态和可靠性。"
+  ],
+  "tags": [
+    "Cloudflare",
+    "Workflows",
+    "分布式系统",
+    "编排",
+    "持久化执行"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 499,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778853840000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-15 14:04:00"
+}
