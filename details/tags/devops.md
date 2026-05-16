@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-16 08:24:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-16 11:02:54 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -536,9 +536,7 @@
 
 ### [Cloudflare-推出-Workflows-V2，支持确定性执行和-5-万个并发工作流](https://www.infoq.com/news/2026/05/cloudflare-workflows-v2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-15 14:04:00 | 标签: Cloudflare, Workflows, 分布式系统, 编排, 持久化执行
-
-> Cloudflare 发布了 Workflows V2，这是其编排平台的重大更新，用于构建有状态、多步骤的分布式应用。新版本引入了确定性的、基于步骤的执行模型，其中每个步骤都是隔离、可重放且幂等的，从而能够在故障发生时可靠地恢复，无需重新执行已完成的工作。关键的扩展能力提升包括：支持多达 5 万个并发工作流实例（从 4，500 个提升），每个账户每秒新增 300 次执行（从 100 次提升），以及每个工作流 200 万个实例的队列容量。该架构与 Cloudflare 的分布式运行时集成，利用 Workers 进行计算、Queues 进行事件摄取、Durable Objects 保证状态一致性。...
+2026-05-15 14:04:00
 
 
 

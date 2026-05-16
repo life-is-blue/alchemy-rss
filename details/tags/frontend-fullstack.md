@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-16 08:24:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-16 11:02:54 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -680,9 +680,7 @@
 
 ### [SolidJS-2.0-Beta：一等异步支持、重构的-Suspense-与确定性批处理](https://www.infoq.com/news/2026/05/solidjs-2-async/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-15 07:30:00 | 标签: SolidJS, JavaScript 框架, 响应式编程, 异步, 前端开发
-
-> SolidJS 2.0 Beta 对框架的异步处理、响应式模型和开发者体验进行了全面革新。最引人注目的特性是一等异步支持，允许计算返回 Promise，并由响应式图自动管理，从而大幅减少手动编排。`Loading` 组件被重新设计为仅处理初始就绪状态，待定状态通过 `isPending(() => expr)` 表达。新的变更原语如 `action()` 和 `createOptimisticStore` 统一了乐观更新、服务端写入和数据重新验证。派生状态通过 `createSignal(fn)` 等函数形式成为一等原语，更新现在以微任务批处理方式进行，读取仅在调用 `flush()` 后更新...
+2026-05-15 07:30:00
 
 
 
