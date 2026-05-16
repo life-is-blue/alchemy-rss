@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-16 11:02:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-16 13:04:55 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -34607,11 +34607,11 @@
 
 
 
-### [使用-Claude-Code：会话管理与-100-万-上下文](https://baoyu.io/translations/claude-code-session-management)
+### [设计圈的-Claude-Code-时刻来了](https://baoyu.io/blog/2026-04-17/claude-design)
 
-2026-04-15T00:00:00.000Z
+2026-04-17T00:00:00.000Z
 
-> Claude Code 核心布道者 Thariq 深度解读上下文窗口管理策略：何时开新会话、回溯 vs 纠正、压缩 vs 清空、子智能体的最佳使用时机，以及如何避免糟糕的上下文压缩。
+> Claude Design 实测：3 轮对话产出可交互原型，设计工具的游戏规则正在改写。
 
 
 
