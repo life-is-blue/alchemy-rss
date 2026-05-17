@@ -1,0 +1,52 @@
+{
+  "id": "RAW_c24be48b",
+  "title": "Warelay -> OpenClaw",
+  "url": "https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything",
+  "date": "2026-05-16 20:23:30",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th May 2026</p>\n   <div class=\"note\">\n    <p>In preparation for a lightning talk I'm giving at PyCon US <a href=\"https://us.pycon.org/2026/schedule/presentation/175/\">this afternoon</a> I decided to figure out how many names OpenClaw has <em>actually</em> had since that <a href=\"https://github.com/openclaw/openclaw/commit/f6dd362d39b8e30bd79ef7560aab9575712ccc11\">first commit</a> back in November.</p>\n    <p>Thanks to this <a href=\"https://tools.simonwillison.net/python/#first_line_historypy\">first_line_history.py tool</a> (<a href=\"https://github.com/simonw/tools/blob/main/python/first_line_history.py\">code here</a>) the answer, according to the Git history of the OpenClaw README, is:</p>\n    <p>Warelay → CLAWDIS → CLAWDBOT → Clawdbot → Moltbot →🦞 OpenClaw</p>\n    <p>Or in detail (the output from the tool):</p>\n    <pre>2025-11-24T11:23:15+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/16dfc1\">16dfc1</a> # Warelay — WhatsApp Relay CLI (Twilio)\n2025-11-24T11:41:37+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/d4153d\">d4153d</a> # 📡 Warelay — WhatsApp Relay CLI (Twilio)\n2025-11-24T17:47:57+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/343ef9\">343ef9</a> # 📡 warelay — WhatsApp Relay CLI (Twilio)\n2025-11-25T04:44:10+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/14b3c6\">14b3c6</a> # 📡 warelay — WhatsApp Relay CLI\n2025-11-25T12:48:40+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/481402\">481402</a> # 📡 warelay — Send, receive, and auto-reply on WhatsApp—Twilio-backed or QR-linked.\n2025-11-25T13:50:18+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/d51a3e\">d51a3e</a> # warelay 📡 - Send, receive, and auto-reply on WhatsApp via Twilio or QR-linked WhatsApp Web; webhook setup in one command\n2025-11-25T13:51:13+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/4d2a8a\">4d2a8a</a> # 📡 warelay — Send, receive, and auto-reply on WhatsApp—Twilio-backed or QR-linked.\n2025-11-25T14:52:43+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/1ef7f4\">1ef7f4</a> # 📡 warelay — Send, receive, and auto-reply on WhatsApp.\n2025-12-03T15:45:32+00:00 <a href=\"https://github.com/openclaw/openclaw/commit/a27ee2\">a27ee2</a> # 🦞 CLAWDIS — WhatsApp Gateway for AI Agents\n2025-12-08T12:43:13+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/17fa2f\">17fa2f</a> # 🦞 CLAWDIS — WhatsApp &amp; Telegram Gateway for AI Agents\n2025-12-19T18:41:17+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/771043\">771043</a> # 🦞 CLAWDIS — Personal AI Assistant\n2026-01-04T14:32:47+00:00 <a href=\"https://github.com/openclaw/openclaw/commit/246ada\">246ada</a> # 🦞 CLAWDBOT — Personal AI Assistant\n2026-01-10T05:14:09+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/cdb915\">cdb915</a> # 🦞 Clawdbot — Personal AI Assistant\n2026-01-27T13:37:47-05:00 <a href=\"https://github.com/openclaw/openclaw/commit/3fe4b2\">3fe4b2</a> # 🦞 Moltbot — Personal AI Assistant\n2026-01-30T03:15:10+01:00 <a href=\"https://github.com/openclaw/openclaw/commit/9a7160\">9a7160</a> # 🦞 OpenClaw — Personal AI Assistant\n</pre>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 通过 Git README 追溯了 OpenClaw 项目的命名历史，揭示了六个月间从 'Warelay' 到 'OpenClaw' 的六个不同名称。",
+  "oneSentenceSummary": "Simon Willison 通过 Git README 追溯了 OpenClaw 项目的命名历史，揭示了六个月间从 'Warelay' 到 'OpenClaw' 的六个不同名称。",
+  "summary": "为准备 PyCon US 的闪电演讲，Simon Willison 使用自定义工具提取了 OpenClaw README 每次提交的第一行，记录了项目完整的命名演变过程。该项目最初名为 'Warelay'（一个 WhatsApp Relay CLI），随后依次更名为 'CLAWDIS'、'CLAWDBOT'、'Clawdbot'、'Moltbot'，最终定为 'OpenClaw'。文章按时间顺序列出了 README 标题的完整列表，展示了项目范围如何从特定的 WhatsApp 工具演变为通用的 'Personal AI Assistant'。",
+  "mainPoints": [
+    {
+      "point": "OpenClaw 项目自 2025 年 11 月启动以来，经历了六次不同的名称变更。",
+      "explanation": "名称从 'Warelay'（WhatsApp Relay CLI）演变为 'CLAWDIS'、'CLAWDBOT'、'Clawdbot'、'Moltbot'，最终确定为 'OpenClaw'。"
+    },
+    {
+      "point": "项目的范围随时间显著扩大。",
+      "explanation": "项目最初是一个特定的 WhatsApp Relay CLI 工具，最终演变为通用的 'Personal AI Assistant'，反映了用途的重大转变。"
+    },
+    {
+      "point": "Simon Willison 创建了一个自定义工具，用于从 Git 历史中提取每次提交的第一行。",
+      "explanation": "'first_line_history.py' 工具被用于高效追踪 README 变更，展示了分析项目演变的实用方法。"
+    }
+  ],
+  "keyQuotes": [
+    "Warelay → CLAWDIS → CLAWDBOT → Clawdbot → Moltbot →🦞 OpenClaw",
+    "为准备今天下午在 PyCon US 的闪电演讲，我决定弄清楚自去年 11 月首次提交以来，OpenClaw 到底用了多少个名称。"
+  ],
+  "tags": [
+    "OpenClaw",
+    "Git 历史",
+    "项目命名",
+    "Simon Willison",
+    "PyCon US"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 243,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778963010000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-16 20:23:30"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-17 06:16:10 | [返回首页](/README.md)
+**更新时间**: 2026-05-17 08:24:58 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12079)
+- [AI & 大模型](#ai-llm) (12105)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (818)
-- [DevOps](#devops) (563)
+- [前端与全栈](#frontend-fullstack) (819)
+- [DevOps](#devops) (564)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5768)
+- [其他](#other) (5779)
 
 
 ---
@@ -43,7 +43,7 @@
 - [大模型架构的下半场](https://www.qbitai.com/2026/04/403515.html) - AI 精选
 - [使用合成数据构建快速多语言-OCR-模型](https://huggingface.co/blog/nvidia/nemotron-ocr-v2) - AI 精选
 
-- [查看全部 12079 篇...](/details/tags/ai-llm.md)
+- [查看全部 12105 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 818 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 819 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 563 篇...](/details/tags/devops.md)
+- [查看全部 564 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [用开源模型强化你的-OCR-工作流](https://mp.weixin.qq.com/s?__biz=Mzk0MDQyNTY4Mw==&mid=2247495937&idx=1&sn=07fa59cf8df62d23f48404181351c2b3) - AI 精选
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 
-- [查看全部 5768 篇...](/details/tags/other.md)
+- [查看全部 5779 篇...](/details/tags/other.md)
 
 

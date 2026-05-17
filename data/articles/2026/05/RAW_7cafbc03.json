@@ -1,0 +1,57 @@
+{
+  "id": "RAW_7cafbc03",
+  "title": "Google 推出 Cloud Fraud Defense 作为 reCAPTCHA 的继任者",
+  "url": "https://www.infoq.com/news/2026/05/cloud-fraud-defense-recaptcha/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-16 08:39:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At the recent Next ‘26 conference, <a href=\"https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptcha/\">Google introduced Google Cloud Fraud Defense, the successor to reCAPTCHA</a>. The platform goes beyond basic bot detection to address broader online fraud across login, account creation, and payment flows, helping organizations detect suspicious behavior and block abuse, including fake accounts, automated attacks, and transaction fraud.</p>\n   <p>According to the cloud provider, <a href=\"http://cloud.google.com/security/products/fraud-defense\">Fraud Defense</a> combines Google’s global threat intelligence with machine learning to evaluate activity from humans, bots, and AI agents, while maintaining a low-friction experience for legitimate users. <a href=\"https://www.googlecloudevents.com/next-vegas/speaker/2145977/jian-zhen\">Jian Zhen</a>, lead product manager at Google, describes the transition:</p>\n   <blockquote>\n    <p>reCAPTCHA will continue to be the core bot defense pillar of the broader Fraud Defense platform. Existing reCAPTCHA customers are automatically Fraud Defense customers, with no migration required, no action needed, and no change to pricing. Your existing site keys and integrations remain exactly as they are today.</p>\n   </blockquote>\n   <p>Google says Fraud Defense is designed to address emerging forms of online fraud as attacks shift from automated bots to account takeovers and AI-driven identity fraud. The service is designed to detect suspicious activity before it reaches a site and to analyze signals across the entire user interaction, including registration, login, and payment, to identify coordinated fraud attempts. Google claims the system can reduce account takeover attempts while verifying most legitimate users in the background, avoiding disruptions to normal transactions. Zhen adds:</p>\n   <blockquote>\n    <p>In the agentic economy, friction kills conversion. Fraud Defense is designed to be invisible for the majority of users, replacing disruptive puzzles with silent background verification.</p>\n   </blockquote>\n   <p>Cloud Fraud Defense provides risk scores and reason codes through the existing reCAPTCHA APIs, enabling customers to automate security policies. Developer <em>Rasu</em> <a href=\"https://dev.to/rasu-555/i-tested-google-cloud-fraud-defense-here-is-what-actually-changed-4aga\">tested the service and shared their findings</a>:</p>\n   <blockquote>\n    <p>What strikes me most about this announcement is the timing. Google did not just decide to rebuild reCAPTCHA for fun. They did it because the threat landscape has fundamentally changed. (...) The old CAPTCHA approach is simply not adequate for this world anymore. You cannot reliably tell a human from an AI-generated bot using static challenges.</p>\n   </blockquote>\n   <p><em><img alt=\"Google Cloud Fraud Defence\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/cloud-fraud-defense-recaptcha/en/resources/1gcp-recaptcha-1777384016032.png\" rel=\"share\"></em></p>\n   <p><em>Source: Google Cloud blog</em></p>\n   <p>Reddit users echo these <a href=\"https://www.reddit.com/r/nextjs/comments/1qe5dcz/bots_bypassing_recaptcha_honeypot_and_aws_rate/\">concerns about reCAPTCHA v3</a>, highlighting a <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7453476604753727488?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7453476604753727488%2C7453744817119047680%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287453744817119047680%2Curn%3Ali%3Aactivity%3A7453476604753727488%29\">broader shift in digital trust</a>, where verification increasingly applies not only to human users but also to bots and autonomous agents.</p>\n   <p>Google is not the only provider offering managed CAPTCHA systems to distinguish between human and automated access. As previously reported on InfoQ, <a href=\"https://www.infoq.com/news/2023/10/cloudflare-turnstile-ga-free/\">Cloudflare offers Turnstile</a>, designed to preserve user privacy, stop bots, and enhance the user experience. <a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha-and-challenge.html\">AWS supports WAF rules to trigger CAPTCHA</a> or Challenge actions.</p>\n   <p>Zhen presented the breakout session \"Preventing Fraud and Abuse: Securing the New Agent Economy\" at Next '26. The <a href=\"https://www.googlecloudevents.com/next-vegas/session/3913051/the-$200b-blind-spot-securing-the-new-agentic-economy\">recording is publicly available</a>.</p>\n   <p>Earlier this year, Google announced that <a href=\"https://security.googlecloudcommunity.com/community-blog-42/switching-google-s-role-with-recaptcha-from-data-controller-to-data-processor-6646\">reCAPTCHA would shift from a data controller to a data processor model</a>, aligning its data handling with other Google Cloud services. Under this change, organizations deploying reCAPTCHA on their websites become the data controllers responsible for determining how their users' personal data is used.</p>\n   <p>Cloud Fraud Defense uses the same usage-based pricing model as reCAPTCHA. Organizations receive up to 10000 security assessments per month at no cost, after which charges apply based on volume.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Introduces Cloud Fraud Defense as Successor to reCAPTCHA\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/cloud-fraud-defense-recaptcha/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1778920740000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 推出 Cloud Fraud Defense 作为 reCAPTCHA 的继任者，从机器人检测扩展为一个综合性平台，利用全球威胁情报和机器学习来防范账户接管、虚假账户和交易欺诈。",
+  "oneSentenceSummary": "Google 推出 Cloud Fraud Defense 作为 reCAPTCHA 的继任者，从机器人检测扩展为一个综合性平台，利用全球威胁情报和机器学习来防范账户接管、虚假账户和交易欺诈。",
+  "summary": "在 Next '26 大会上，Google 宣布了 Cloud Fraud Defense，这是 reCAPTCHA 的演进版本，旨在应对超越基础机器人检测的现代在线欺诈。该平台整合了 Google 的全球威胁情报和机器学习，可在登录、账户创建和支付流程中评估来自人类、机器人和 AI 智能体的活动。它通过现有的 reCAPTCHA API 提供风险评分和原因代码，支持自动化安全策略。现有的 reCAPTCHA 客户将自动升级，无需迁移或更改定价。该服务旨在对合法用户保持无感，用静默后台验证取代干扰性的验证码挑战。这一公告反映了威胁格局的根本性转变，静态的 CAPTCHA 挑战已不足以应对 AI 驱动的身份欺诈和自动化攻击。文章还提到了 Cloudflare Turnstile 和 AWS WAF CAPTCHA 等竞争对手，并强调了数字信任验证向机器人和自主智能体扩展的更广泛行业趋势。",
+  "mainPoints": [
+    {
+      "point": "Google Cloud Fraud Defense 是 reCAPTCHA 的继任者，从机器人检测扩展为全面的欺诈防护。",
+      "explanation": "新平台利用全球威胁情报和机器学习，应对更广泛的在线欺诈，包括账户接管、虚假账户、自动化攻击和交易欺诈。"
+    },
+    {
+      "point": "该服务旨在对合法用户保持无感，用静默后台验证取代干扰性的验证码挑战。",
+      "explanation": "在智能体经济中，摩擦会扼杀转化率，因此 Fraud Defense 旨在保持低摩擦体验，同时在注册、登录和支付流程中检测可疑活动。"
+    },
+    {
+      "point": "现有的 reCAPTCHA 客户将自动升级，无需迁移、操作或更改定价。",
+      "explanation": "过渡是无缝的——现有的站点密钥和集成保持不变，reCAPTCHA 继续作为更广泛的 Fraud Defense 平台中的核心机器人防御支柱。"
+    },
+    {
+      "point": "这一公告反映了威胁格局的根本性转变，静态的 CAPTCHA 挑战已不再足够。",
+      "explanation": "随着攻击从自动化机器人转向 AI 驱动的身份欺诈，传统的 CAPTCHA 方法无法可靠地区分人类和 AI 生成的机器人，因此需要更复杂的解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "reCAPTCHA 将继续作为更广泛的 Fraud Defense 平台中的核心机器人防御支柱。现有的 reCAPTCHA 客户会自动成为 Fraud Defense 客户，无需迁移、无需操作，定价也不变。",
+    "在智能体经济中，摩擦会扼杀转化率。Fraud Defense 旨在对大多数用户保持无感，用静默后台验证取代干扰性的验证码挑战。",
+    "旧的 CAPTCHA 方法已经不足以应对这个世界了。你无法再通过静态挑战可靠地区分人类和 AI 生成的机器人。"
+  ],
+  "tags": [
+    "Google Cloud",
+    "欺诈防御",
+    "reCAPTCHA",
+    "机器人检测",
+    "AI 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 518,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778920740000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-16 08:39:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_6effc390",
+  "title": "Julia Evans 的引述",
+  "url": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything",
+  "date": "2026-05-16 16:45:37",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th May 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/\">\n     <p>[...] in the last 10 years I’ve learned to really love and respect CSS as a technology.</p>\n     <p>So I decided years ago that I wanted to react to “CSS is hard” by getting better at CSS and taking it seriously as a technology, instead of devaluing it. Doing that changed everything for me: I learned that so many of my frustrations (“centering is impossible”) had been addressed in CSS a long time ago, and that also what “centering” means is not always straightforward and it makes sense that there are many ways to do it. CSS is hard because it’s solving a hard problem!</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/\">Julia Evans</a>, <span class=\"context\">Moving away from Tailwind, and learning to structure my CSS</span></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Julia Evans 分享了她从对 CSS 的挫败感到深深尊重的转变历程，她认为 CSS 的困难源于它解决了真正棘手的布局问题，而认真对待这门技术会改变人们与它的关系。",
+  "oneSentenceSummary": "Julia Evans 分享了她从对 CSS 的挫败感到深深尊重的转变历程，她认为 CSS 的困难源于它解决了真正棘手的布局问题，而认真对待这门技术会改变人们与它的关系。",
+  "summary": "这篇短文是 Julia Evans 的引述，由 Simon Willison 分享，反映了她十年来对 CSS 看法的转变。她描述了自己从“CSS 很难”的心态，转变为对这门技术深深尊重和热爱的过程。Evans 解释说，通过选择提升 CSS 技能并认真对待它，她发现许多过去的挫败感（比如居中问题）早已得到解决。她认为 CSS 之所以难，并非因为设计糟糕，而是因为它解决了一个真正棘手的问题：在无数设备和场景中实现灵活、响应式的布局。这段引述摘自她关于放弃 Tailwind 并学习结构化 CSS 的博客文章。",
+  "mainPoints": [
+    {
+      "point": "CSS 之所以难，是因为它解决了一个真正棘手的问题。",
+      "explanation": "CSS 的复杂性并非缺陷，而是反映了为各种设备和场景创建灵活、响应式布局这一固有难题。"
+    },
+    {
+      "point": "认真对待 CSS 这门技术会改变开发者的体验。",
+      "explanation": "通过选择学习和尊重 CSS，而不是贬低它，开发者可以发现许多常见的挫败感已得到解决，并对其能力有更深的欣赏。"
+    },
+    {
+      "point": "许多常见的 CSS 挫败感（比如居中问题）早已得到解决。",
+      "explanation": "心态的转变揭示了经典问题的解决方案早已存在，而复杂性往往在于理解布局概念的细微含义。"
+    }
+  ],
+  "keyQuotes": [
+    "在过去的十年里，我学会了真正热爱并尊重 CSS 这门技术。",
+    "多年前我决定，面对“CSS 很难”的说法，我的反应是提升 CSS 技能并认真对待它，而不是贬低它。",
+    "CSS 之所以难，是因为它解决了一个棘手的问题！"
+  ],
+  "tags": [
+    "CSS",
+    "前端",
+    "Web 开发",
+    "心态",
+    "Julia Evans"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 120,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778949937000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-16 16:45:37"
+}

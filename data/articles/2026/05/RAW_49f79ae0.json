@@ -1,0 +1,57 @@
+{
+  "id": "RAW_49f79ae0",
+  "title": "Microsoft 发布 Aspire 13.3，带来重大部署与前端更新",
+  "url": "https://www.infoq.com/news/2026/05/aspire-13-3-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-16 08:34:00",
+  "author": "Almir Vuk",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Last week, Microsoft released <a href=\"https://aspire.dev/whats-new/aspire-13-3/\">Aspire 13.3,</a> the latest update to its cloud-native application framework. The release introduces several major features aimed at deployment, observability, and broader language support, while also bringing a number of breaking changes that developers should review before upgrading.</p>\n   <p>A central addition is the new <a href=\"https://aspire.dev/whats-new/aspire-13-3/#new-aspire-destroy-command\"><em>aspire destroy</em></a>&nbsp;<a href=\"https://aspire.dev/reference/cli/commands/aspire-destroy/\">command</a>, which tears down resources previously provisioned by <em>aspire deploy</em>. As reported, the command works across Azure, Kubernetes, and Docker Compose environments, making it easier to clean up ephemeral deployments and continuous integration setups.</p>\n   <p>Alongside this, the Aspire CLI is now available as a <a href=\"https://aspire.dev/whats-new/aspire-13-3/#aspire-cli-as-a-nativeaot-dotnet-tool\"><em>NativeAOT</em></a> .NET global tool, and a new <em><a href=\"https://aspire.dev/whats-new/aspire-13-3/#aspire-dashboard-for-the-standalone-dashboard\">aspire dashboard</a>&nbsp;</em>command as stated, lets users run the standalone dashboard without launching an <em>AppHost</em>.</p>\n   <p>The release also brings native <a href=\"https://aspire.dev/whats-new/aspire-13-3/#kubernetes-deployment-with-helm-engine\">Kubernetes deployment</a> in preview. Developers can declare a Kubernetes environment in their <em>AppHost</em>, and Aspire will generate a Helm chart and run the full deployment pipeline. Also, new <a href=\"https://aspire.dev/whats-new/aspire-13-3/#kubernetes-ingress-and-gateway-api-routing\">Ingress and Gateway API</a> routing resources allow traffic configuration to be defined at the <em>AppHost</em> level.</p>\n   <p>Furthermore, an <a href=\"https://aspire.dev/whats-new/aspire-13-3/#azure-kubernetes-service-aks-hosting-integration--kubernetes-without-the-yaml\">Azure Kubernetes Service</a> hosting integration, described as \"<em>Kubernetes without the YAML\"</em>&nbsp; has also been added in this preview.</p>\n   <p>For frontend developers, Aspire 13.3 introduces first-class <a href=\"https://aspire.dev/whats-new/aspire-13-3/#-javascript-and-typescript-apps\">JavaScript publishing</a> through a unified family of <em>PublishAs*</em>&nbsp;methods covering static sites, Node servers, and npm-script-based deployments. A new <em>AddNextJsApp</em>&nbsp;helper joins existing helpers for <a href=\"https://aspire.dev/whats-new/aspire-13-3/#vite\">Vite</a> and Node, and as stated,&nbsp;first-class support has been added for Bun, Yarn, and pnpm.</p>\n   <pre><code class=\"language-csharp\">var builder = DistributedApplication.CreateBuilder(args);\n\nvar app = builder\n    .AddNodeApp(\"app\", \"./api\", \"src/index.js\")\n    .WithHttpEndpoint(port: 3000, env: \"PORT\")\n    .WithExternalHttpEndpoints();\n\nvar frontend = builder\n    .AddViteApp(\"frontend\", \"./frontend\")\n    .WithReference(app)\n    .WaitFor(app);\n\napp.PublishWithContainerFiles(frontend, \"./static\");\n\nbuilder.Build().Run();</code></pre>\n   <p>Also, the <em>TypeScript AppHost</em> has received significant parity work with its C# counterpart, including a unified <a href=\"https://aspire.dev/whats-new/aspire-13-3/#-typescript-apphost-parity\">withEnvironment API</a>.</p>\n   <p>Regarding the integration updates in this preview, a&nbsp;new <a href=\"https://aspire.dev/whats-new/aspire-13-3/#-browser-logs-and-screenshots\"><em>Aspire.Hosting.Browsers</em></a> integration captures browser console logs, network requests, and screenshots, surfacing them in the dashboard next to server-side telemetry.</p>\n   <p>Next, the <a href=\"https://aspire.dev/whats-new/aspire-13-3/#-container-tunnel-enabled-by-default\">container tunnel</a>, previously marked as experimental, is now enabled by default, providing uniform host connectivity across Docker Desktop, Docker Engine, and Podman.</p>\n   <p>Other changes in this release include the new <a href=\"https://aspire.dev/whats-new/aspire-13-3/#aspire-init-installs-the-aspireify-agent-skill\"><em>aspire init</em></a>&nbsp;command with the <em>aspireify</em>&nbsp;agent skill, an <a href=\"https://aspire.dev/whats-new/aspire-13-3/#azure-front-door-integration--global-edge-in-one-api-call\">Azure Front Door integration</a>, Azure Network Security Perimeter support, Foundry Prompt Agent support, a dashboard notification center, VS Code extension improvements with CodeLens and gutter decorations, RabbitMQ v7 support, and the migration of the Python starter template to a TypeScript AppHost.</p>\n   <p>Developers should note several <a href=\"https://aspire.dev/whats-new/aspire-13-3/#%EF%B8%8F-breaking-changes\">breaking changes</a>, including the renaming of <em>--log-level</em>&nbsp;to <em>--pipeline-log-level</em>, the removal of the <a href=\"https://aspire.dev/whats-new/aspire-13-3/#in-dashboard-github-copilot-ui-replaced-by-agentic-development\">in-dashboard GitHub Copilot UI</a> in favor of agentic development through the CLI, and API renames in Azure Network and AKS resources.</p>\n   <p>Lastly,&nbsp;interested developers can explore&nbsp;the full release notes, which are available on the official <a href=\"https://aspire.dev/whats-new/aspire-13-3/\">Aspire 13.3 release page</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Releases Aspire 13.3 with Major Deployment and Frontend Updates\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Almir Vuk\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/aspire-13-3-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1778920440000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Microsoft 发布了其云原生框架的重大更新 Aspire 13.3，引入了销毁命令、原生 Kubernetes 部署预览、一流的 JavaScript 发布支持以及多项破坏性变更。",
+  "oneSentenceSummary": "Microsoft 发布了其云原生框架的重大更新 Aspire 13.3，引入了销毁命令、原生 Kubernetes 部署预览、一流的 JavaScript 发布支持以及多项破坏性变更。",
+  "summary": "Microsoft 已发布 Aspire 13.3，这是其云原生应用框架的最新更新。此版本专注于改进部署、可观测性并扩展语言支持。主要新增功能包括用于拆除资源的 `aspire destroy` 命令、通过 Helm Chart 生成实现的原生 Kubernetes 部署预览，以及对 JavaScript 和 TypeScript 前端的一流支持，包括对 Next.js、Vite 和 Node 的辅助工具。Aspire CLI 现在是一个 NativeAOT 全局工具，并新增了独立仪表板命令。其他更新包括用于捕获日志和屏幕截图的浏览器集成、默认启用的容器隧道以及各种 Azure 集成。此版本还引入了多项破坏性变更，例如移除了仪表板内的 GitHub Copilot UI 以及 API 重命名，开发者在升级前应仔细审查。",
+  "mainPoints": [
+    {
+      "point": "Aspire 13.3 引入了新的 `aspire destroy` 命令，用于清理已部署的资源。",
+      "explanation": "此命令适用于 Azure、Kubernetes 和 Docker Compose 环境，简化了临时部署和 CI/CD 管道的管理。"
+    },
+    {
+      "point": "原生 Kubernetes 部署现已进入预览阶段，支持 Helm Chart 生成和 AKS 集成。",
+      "explanation": "开发者可以在其 AppHost 中声明 Kubernetes 环境，Aspire 将生成 Helm Chart 并运行完整的部署管道，旨在减少 YAML 配置。"
+    },
+    {
+      "point": "新增了对 JavaScript 和 TypeScript 的一流发布支持，包括对 Next.js、Vite 和 Node 的辅助工具。",
+      "explanation": "统一的 `PublishAs*` 方法家族以及 `AddNextJsApp` 等新辅助工具，使得前端应用能够与后端服务无缝部署。"
+    },
+    {
+      "point": "此版本包含多项破坏性变更，例如移除了仪表板内的 GitHub Copilot UI 和 API 重命名。",
+      "explanation": "开发者在升级前需要了解一些变更，例如 `--log-level` 重命名为 `--pipeline-log-level` 以及 Azure 资源中的 API 重命名。"
+    }
+  ],
+  "keyQuotes": [
+    "此版本引入了多项旨在改进部署、可观测性和更广泛语言支持的主要功能，同时也带来了一些破坏性变更，开发者在升级前应仔细审查。",
+    "开发者可以在其 AppHost 中声明 Kubernetes 环境，Aspire 将生成 Helm Chart 并运行完整的部署管道。",
+    "对于前端开发者，Aspire 13.3 通过统一的 `PublishAs*` 方法家族引入了一流的 JavaScript 发布支持，涵盖静态站点、Node 服务器和基于 npm 脚本的部署。"
+  ],
+  "tags": [
+    "Aspire",
+    "云原生",
+    "Kubernetes",
+    "部署",
+    "Microsoft"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 445,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1778920440000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-16 08:34:00"
+}
