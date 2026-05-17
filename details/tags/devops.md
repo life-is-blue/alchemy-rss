@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-17 08:24:58 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-17 11:03:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -536,9 +536,7 @@
 
 ### [Microsoft-发布-Aspire-13.3，带来重大部署与前端更新](https://www.infoq.com/news/2026/05/aspire-13-3-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-16 08:34:00 | 标签: Aspire, 云原生, Kubernetes, 部署, Microsoft
-
-> Microsoft 已发布 Aspire 13.3，这是其云原生应用框架的最新更新。此版本专注于改进部署、可观测性并扩展语言支持。主要新增功能包括用于拆除资源的 `aspire destroy` 命令、通过 Helm Chart 生成实现的原生 Kubernetes 部署预览，以及对 JavaScript 和 TypeScript 前端的一流支持，包括对 Next.js、Vite 和 Node 的辅助工具。Aspire CLI 现在是一个 NativeAOT 全局工具，并新增了独立仪表板命令。其他更新包括用于捕获日志和屏幕截图的浏览器集成、默认启用的容器隧道以及各种 Azure 集成。此版本还...
+2026-05-16 08:34:00
 
 
 
