@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-17 20:17:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-17 22:30:40 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -34673,11 +34673,11 @@
 
 
 
-### [设计圈的-Claude-Code-时刻来了](https://baoyu.io/blog/2026-04-17/claude-design)
+### [两小时激辩：黄仁勋为什么不怕-TPU、不怕华为、不怕出口管制？](https://baoyu.io/blog/jensen-huang-dwarkesh-interview)
 
 2026-04-17T00:00:00.000Z
 
-> Claude Design 实测：3 轮对话产出可交互原型，设计工具的游戏规则正在改写。
+> 黄仁勋接受 Dwarkesh 两小时专访，从 CUDA 护城河到对华出口管制，每个话题都火力全开。
 
 
 
