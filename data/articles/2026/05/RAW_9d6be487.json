@@ -1,0 +1,59 @@
+{
+  "id": "RAW_9d6be487",
+  "title": "数字银行 Monzo 在 100 个团队和 12000 个 dbt 模型上构建受治理的数据网格",
+  "url": "https://www.infoq.com/news/2026/05/monzo-data-mesh/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-17 11:02:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://monzo.com/blog/a-meshy-approach-to-data\">Monzo recently redesigned its data warehouse</a> to support more than 100 teams working on over 12000 dbt models. Introducing a so-called \"meshy\" approach, Monzo cut warehouse costs by about 40% and improved data delivery speed by 25%.</p>\n   <p>In the last year, Monzo, a UK-based digital bank, rebuilt its data platform around defined modeling layers, explicitly declared interface models for cross-team data dependencies, and CI-enforced validation of structure, naming, and access patterns. The migration covered thousands of dbt models and introduced hundreds of governed interfaces, reducing redundant queries and recomputation, improving data landing times, and reversing warehouse cost growth.</p>\n   <p>While each team owns and maintains its own data models, Monzo supports distributed ownership through automated guardrails and shared tooling. <a href=\"https://www.linkedin.com/in/antoniabadarau/\">Antonia Badarau</a>, <a href=\"https://www.linkedin.com/in/irina-mugford/\">Irina Mugford</a>, and <a href=\"https://www.linkedin.com/in/massimo-f/\">Massimo Frangiamore</a>, analytics engineers at Monzo, explain the challenge:</p>\n   <blockquote>\n    <p>At Monzo, over 100 independent, empowered teams contribute to our data warehouse of 12,000+ dbt models. The health of data is owned across all these teams. That kind of distributed ownership is powerful, but it's also hard to get right at scale. Additionally, as AI-assisted coding becomes the norm and everyone can contribute to production dbt projects, the question becomes: how do we make sure the outputs are still performant, consistent, and high quality?</p>\n   </blockquote>\n   <p><a href=\"https://docs.getdbt.com/docs/build/models\">dbt models</a> are SQL queries that transform raw data into structured datasets, designed as modular, reusable components for building and maintaining data pipelines. Monzo defined three principles for its data architecture: enforce clear standards, formalize data sharing through explicit interfaces, and rely on automation and CI checks to ensure quality over manual review.</p>\n   <p>The bank structures its data models into four layers: automated landing models that flatten raw events, generated normalized models that represent entities with full history, logical models where business logic combines entities, and presentation models tailored for specific downstream uses.</p>\n   <p><img alt=\"Monzo's four Layers\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/monzo-data-mesh/en/resources/1blog_post_visual-1777979944235.jpg\" rel=\"share\"></p>\n   <p><em>Source: Monzo blog</em></p>\n   <p>The team then enforces consistency through so-called Modelgen, a command-line tool that generates SQL and YAML models from an object definition, and through CI-backed data standards that validate structure, conventions, and best practices. Luke Briscoe, Engineering Director at Monzo Bank, <a href=\"https://www.linkedin.com/posts/lbriscoe_a-meshy-approach-to-data-enabling-100-share-7453096852251504640-Zu5s?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">writes</a>:</p>\n   <blockquote>\n    <p>Scaling data in any fast-growing organisation isn't easy, never mind a bank (...) I'm not aware of many companies that run tooling like this (or at least that publicly talk about it!)</p>\n   </blockquote>\n   <p>Mateusz Ulas, founder of Expeditious Software, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7453096853174222849/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287453417290806566912%2Curn%3Ali%3Aactivity%3A7453096853174222849%29\">comments</a>:</p>\n   <blockquote>\n    <p>Treating data interfaces as first-class code is still weirdly rare. Most places I see rely on docs and hope for the best. Wiring standards into CI is what actually lands the improvement.</p>\n   </blockquote>\n   <p>According to the team, clear data layers, stable interfaces between datasets, and automated checks in CI keep the system consistent, allowing teams to work independently while reducing warehouse costs and processing time.</p>\n   <p>Monzo enforces data quality and consistency by requiring each model to define a unique key, include freshness tests, run incrementally by default, declare an owning team, provide documentation, and follow strict naming and metadata conventions validated in CI.</p>\n   <p><img alt=\"Monzo's object definition\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/monzo-data-mesh/en/resources/1monzo_data_mash-1777979944235.jpg\" rel=\"share\"></p>\n   <p><em>Source: Monzo blog</em></p>\n   <p>Badarau, Mugford, and Frangiamore add:</p>\n   <blockquote>\n    <p>We are currently about 30% through a company-wide migration to using these approaches and systems, with a long road ahead of us. Initial results have been encouraging. We’ve seen ~40% cost reduction and ~25% faster landing times in some domains - but it’s early days still.</p>\n   </blockquote>\n   <p>In a separate article, the engineering team at Monzo describes how it uses multi-task neural networks to <a href=\"https://monzo.com/blog/representation-learning-for-enhanced-fraud-detection\">learn shared representations of fraud patterns</a>, thereby improving detection of rare and previously unseen behaviors beyond what traditional models can detect. At this year’s QCon London, Suhail Patel showed instead <a href=\"https://www.infoq.com/news/2026/03/shipping-monzo/\">how Monzo has built a developer platform</a> capable of shipping hundreds of changes to production every day.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Neobank Monzo Builds Governed Data Mesh Across 100 Teams and 12000 dbt Models\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/monzo-data-mesh/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779015720000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Monzo 采用受治理的数据网格方法，在 100 多个团队和 12，000 个 dbt 模型上重新设计了数据仓库，实现了 40% 的成本降低和 25% 的数据交付速度提升。",
+  "oneSentenceSummary": "Monzo 采用受治理的数据网格方法，在 100 多个团队和 12，000 个 dbt 模型上重新设计了数据仓库，实现了 40% 的成本降低和 25% 的数据交付速度提升。",
+  "summary": "本文详细介绍了英国数字银行 Monzo 如何重建其数据平台，以支持超过 100 个独立团队在 12，000 多个 dbt 模型上协同工作。这种“网格化”方法引入了四个定义明确的建模层（自动落地层、生成标准化层、逻辑层和展示层），为跨团队数据依赖显式声明接口模型，并通过 CI 强制验证结构、命名和访问模式。关键工具包括 Modelgen，一个能从对象定义生成 SQL 和 YAML 模型的 CLI 工具。此次迁移已在某些领域实现了约 40% 的仓库成本降低和 25% 的数据落地速度提升，尽管公司整体迁移进度仅完成约 30%。文章还强调了在 AI 辅助编码成为常态、更多贡献者能够生成生产级 dbt 项目时，保持质量和一致性所面临的挑战。",
+  "mainPoints": [
+    {
+      "point": "Monzo 实施了受治理的数据网格，包含四个定义明确的建模层，以在 100 多个团队中扩展数据所有权。",
+      "explanation": "这些层级——自动落地层、生成标准化层、逻辑层和展示层——提供了清晰的结构和关注点分离，在保持一致性的同时实现了分布式所有权。"
+    },
+    {
+      "point": "显式声明的接口模型将跨团队数据依赖关系正式化，并减少了冗余计算。",
+      "explanation": "通过将数据接口视为一等代码并辅以 CI 强制验证，Monzo 消除了临时的数据共享，将仓库成本降低了 40%，并将数据落地时间缩短了 25%。"
+    },
+    {
+      "point": "自动化护栏和 CI 检查取代了人工审查，以确保大规模质量。",
+      "explanation": "Modelgen CLI 工具根据对象定义生成标准化模型，而 CI 则验证结构、命名约定、新鲜度测试和所有权元数据，使质量保障系统化，而非依赖人工审查。"
+    },
+    {
+      "point": "迁移仍在进行中，完成度为 30%，早期结果显示成本和性能均有显著改善。",
+      "explanation": "尽管该方法已在某些领域展现出明显优势，但 Monzo 承认全面采用仍有很长的路要走，这表明该方法已得到验证，但尚未完全在大规模场景下得到证明。"
+    }
+  ],
+  "keyQuotes": [
+    "在 Monzo，超过 100 个独立、有权能的团队为我们拥有 12，000 多个 dbt 模型的数据仓库做出贡献。数据健康由所有这些团队共同负责。",
+    "将数据接口视为一等代码的做法仍然出奇地罕见。我见过的大多数地方都依赖文档并寄希望于运气。将标准融入 CI 才能真正实现改进。",
+    "我们在某些领域看到了约 40% 的成本降低和约 25% 的数据落地速度提升——但这仍处于早期阶段。",
+    "我们如何确保输出仍然具有高性能、一致性和高质量？",
+    "在任何快速发展的组织中扩展数据都不容易，更不用说一家银行了。"
+  ],
+  "tags": [
+    "数据网格",
+    "dbt",
+    "数据工程",
+    "Monzo",
+    "数据仓库"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 602,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779015720000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-17 11:02:00"
+}

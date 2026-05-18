@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ad6b5cc2",
+  "title": "GDS 就 NHS 放弃开源的决定发表意见",
+  "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+  "date": "2026-05-17 15:59:41",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">17th May 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/May/17/gds-weighs-in/\">\n    <p><strong><a href=\"https://shkspr.mobi/blog/2026/05/gds-weighs-in-on-the-nhss-decision-to-retreat-from-open-source/\">GDS weighs in on the NHS's decision to retreat from Open Source</a></strong>. Terence Eden continues his coverage of the NHS' <a href=\"https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/\">poorly considered decision</a> to close down access to their open source repositories in response to vulnerabilities reported to them as part of <a href=\"https://simonwillison.net/2026/Apr/7/project-glasswing/\">Project Glasswing</a>.</p>\n    <p>Now the Government Digital Service have joined the conversation with <a href=\"https://www.gov.uk/guidance/ai-open-code-and-vulnerability-risk-in-the-public-sector\">AI, open code and vulnerability risk in the public sector</a>, published May 14th. Their key recommendation:</p>\n    <blockquote>\n     <p>Keep open by default. Making everything private adds additional delivery and policy costs, and can reduce reuse and scrutiny. Openness should remain the default posture, with closure used sparingly and deliberately.</p>\n    </blockquote>\n    <p>While they don't mention the NHS by name, Terence speaks the language of the civil service and interprets this as a major escalation:</p>\n    <blockquote>\n     <p>Within the UK's Civil Service you occasionally hear the expression \"being invited to a meeting <em>without biscuits</em>\". It implies a rather frosty discussion without any of the polite niceties of a normal meeting. In general though, even when people have severe disagreements, it is rare for tempers to fray. It is even rarer for those internal disagreements to spill over into public.</p>\n    </blockquote>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9465/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "政府数字服务部公开反对 NHS 关闭开源仓库的决定，建议将开放作为公共部门代码的默认姿态。",
+  "oneSentenceSummary": "政府数字服务部公开反对 NHS 关闭开源仓库的决定，建议将开放作为公共部门代码的默认姿态。",
+  "summary": "本文来自 Simon Willison 的博客，链接并总结了 Terence Eden 对 NHS 关闭其开源仓库这一争议性决定的持续报道。该决定是为了应对通过 Project Glasswing 披露的漏洞而做出的。政府数字服务部（GDS）现已介入讨论，发布了一份名为《AI、开放代码与公共部门漏洞风险》的指导文件。GDS 的关键建议是“默认保持开放”，认为将所有内容私有化会增加成本，并减少代码的复用和审查。虽然 GDS 没有明确点名 NHS，但 Terence Eden 认为这是公务员系统内部的一次重大升级，他用“没有饼干的会议”这一比喻来形容这场分歧异乎寻常的公开和冷淡。",
+  "mainPoints": [
+    {
+      "point": "NHS 在通过 Project Glasswing 收到漏洞报告后，决定关闭其开源仓库。",
+      "explanation": "该决定被认为考虑不周，是对开源原则的倒退，其触发因素是一个漏洞披露项目带来的安全问题。"
+    },
+    {
+      "point": "政府数字服务部公开建议默认保持代码开放。",
+      "explanation": "在一份新的指导文件中，GDS 认为将所有内容私有化会增加成本，并减少复用和公众审查带来的好处，主张将开放作为标准姿态。"
+    },
+    {
+      "point": "GDS 的干预被视为英国公务员系统内部一次罕见且重大的公开升级。",
+      "explanation": "Terence Eden 认为 GDS 的指导是对 NHS 的直接斥责，并指出此类内部分歧很少公开化，他用“没有饼干的会议”这一比喻来形容其冷淡的语气。"
+    }
+  ],
+  "keyQuotes": [
+    "默认保持开放。将所有内容私有化会增加额外的交付和政策成本，并可能减少复用和审查。",
+    "在英国公务员系统内，你偶尔会听到“被邀请参加没有饼干的会议”这种说法。",
+    "这些内部分歧公开化的情况更为罕见。"
+  ],
+  "tags": [
+    "开源",
+    "NHS",
+    "政府数字服务部",
+    "公共部门",
+    "安全"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 192,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": null,
+  "mainDomain": "News_Media",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779033581000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-17 15:59:41"
+}

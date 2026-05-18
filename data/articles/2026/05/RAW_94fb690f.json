@@ -1,0 +1,53 @@
+{
+  "id": "RAW_94fb690f",
+  "title": "一个月狂烧 130 万美元！龙虾之父自曝 token 账单，费用 OpenAI 全包",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651033486&idx=1&sn=d735fea8f939c9ca3c15a8d7d010fff7",
+  "date": "2026-05-17 03:06:00",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": null,
+  "aiSummary": "龙虾之父 Peter Steinberger 自曝其 AI 开发工作流一个月消耗 6030 亿 token，账单高达 130 万美元，但费用由 OpenAI 承担，引发关于 AI 开发成本与效率的广泛讨论。",
+  "oneSentenceSummary": "龙虾之父 Peter Steinberger 自曝其 AI 开发工作流一个月消耗 6030 亿 token，账单高达 130 万美元，但费用由 OpenAI 承担，引发关于 AI 开发成本与效率的广泛讨论。",
+  "summary": "文章报道了知名开发者「龙虾之父」Peter Steinberger 公开其 AI 辅助开发工作流的惊人 token 消耗量：30 天内消耗 6030 亿 token，对应账单约 130 万美元。Steinberger 透露，这笔费用由 OpenAI 全额承担，他本人无需支付。他详细介绍了其高度自动化的开发流程，包括运行约 100 个 Codex 实例来审查代码、处理 issue、监控安全、自动创建 PR 等，使得一个极精简的团队能够高效运转。该事件引发了社区对 AI 开发成本、Tokenmaxxing 趋势以及 AI 自动化开发效率的激烈讨论。文章还引用了 Karpathy 和 Greg Brockman 的观点，指出 Token 正成为衡量 AI 运转密度和解决问题的通用输入。",
+  "mainPoints": [
+    {
+      "point": "Peter Steinberger 的 AI 开发工作流月消耗 6030 亿 token，账单高达 130 万美元。",
+      "explanation": "该数据引发了社区对 AI 开发成本是否过高的质疑，但 Steinberger 澄清费用由 OpenAI 承担，实际成本远低于此。"
+    },
+    {
+      "point": "Steinberger 运行约 100 个 Codex 实例，实现了高度自动化的开发流程。",
+      "explanation": "这些 AI Agent 负责代码审查、issue 管理、安全监控、性能基准测试、自动创建 PR 等任务，使团队能以极精简的人力高效运转。"
+    },
+    {
+      "point": "Token 正成为衡量 AI 运转密度和解决问题的通用输入。",
+      "explanation": "文章引用了 Karpathy 和 Greg Brockman 的观点，指出 Token 消耗量已成为 AI 使用效率的关键指标，并可能改变未来的软件开发模式。"
+    }
+  ],
+  "keyQuotes": [
+    "如果 Token 不再重要，未来我们会如何构建软件？",
+    "这些代码全是用 Codex 写的。那些比较乱、我后来整理过的拉取请求，大概是 Claude 写的。",
+    "Token 正在迅速成为解决问题的通用输入。"
+  ],
+  "tags": [
+    "AI 编程",
+    "Token 消耗",
+    "Codex",
+    "自动化开发",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 82,
+  "wordCount": 1472,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1778987160000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-17 03:06:00"
+}

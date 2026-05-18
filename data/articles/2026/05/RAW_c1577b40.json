@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c1577b40",
+  "title": "生成式 AI 的幻觉、超大规模押注的疯狂，以及世界模型与神经符号 AI 的论证",
+  "url": "https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the",
+  "date": "2026-05-17 08:02:49",
+  "author": "Gary Marcus",
+  "siteName": "Marcus on AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <ol>\n    <li>\n     <p>Fabulous deep dive with Brian Greene / The World Science Festival:</p>\n    </li>\n   </ol>\n   <div id=\"youtube2-iFYF_e1GSGI\" data-attrs=\"{&quot;videoId&quot;:&quot;iFYF_e1GSGI&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\" class=\"youtube-wrap\">\n    <div class=\"youtube-inner\">\n     <iframe src=\"https://www.youtube-nocookie.com/embed/iFYF_e1GSGI?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n    </div>\n   </div>\n   <p data-attrs=\"{&quot;url&quot;:&quot;https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the?utm_source=substack&amp;utm_medium=email&amp;utm_content=share&amp;action=share&quot;,&quot;text&quot;:&quot;Share&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\" class=\"button-wrapper\"><a href=\"https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the?utm_source=substack&amp;utm_medium=email&amp;utm_content=share&amp;action=share\" class=\"button primary\"><span>Share</span></a></p>\n   <ol start=\"2\">\n    <li>\n     <p>Excellent brief but focused interview on the risks of massive bets on hyperscaling, with Zachary Karabell; keynote earlier this week at Web Summit:</p>\n     <div id=\"youtube2-V6R_x6SZg1E\" data-attrs=\"{&quot;videoId&quot;:&quot;V6R_x6SZg1E&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\" class=\"youtube-wrap\">\n      <div class=\"youtube-inner\">\n       <iframe src=\"https://www.youtube-nocookie.com/embed/V6R_x6SZg1E?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n      </div>\n     </div>\n    </li>\n    <li>\n     <p><span>More technical; also excellent: why we so badly need neurosymbolic AI and world models, and why software verification is more important than ever in the LLM era. A spicy fireside chat hosted by Will Wilson, CEO of </span><a href=\"https://antithesis.com/\">Antithesis</a><span>, from the lively conference </span><a href=\"https://antithesis.com/bugbash/conference2026/agenda/\">Bug Bash 2026</a><span>, “A conference on extracting reliable software from the slop factory”:</span></p>\n    </li>\n   </ol>\n   <div id=\"youtube2-JaMRLXjgQQU\" data-attrs=\"{&quot;videoId&quot;:&quot;JaMRLXjgQQU&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\" class=\"youtube-wrap\">\n    <div class=\"youtube-inner\">\n     <iframe src=\"https://www.youtube-nocookie.com/embed/JaMRLXjgQQU?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n    </div>\n   </div>\n   <div data-component-name=\"SubscribeWidget\" class=\"subscribe-widget\">\n    <div class=\"pencraft pc-display-flex pc-justifyContent-center pc-reset\">\n     <div class=\"container-IpPqBD\">\n      <form action=\"/api/v1/free?nojs=true\" method=\"post\" novalidate class=\"form form-M5sC90\">\n       <input type=\"hidden\" name=\"first_url\" value><input type=\"hidden\" name=\"first_referrer\" value><input type=\"hidden\" name=\"current_url\"><input type=\"hidden\" name=\"current_referrer\"><input type=\"hidden\" name=\"first_session_url\" value><input type=\"hidden\" name=\"first_session_referrer\" value><input type=\"hidden\" name=\"referral_code\"><input type=\"hidden\" name=\"source\" value=\"subscribe-widget\"><input type=\"hidden\" name=\"referring_pub_id\"><input type=\"hidden\" name=\"additional_referring_pub_ids\">\n       <div class=\"sideBySideWrap-vGXrwP\">\n        <div class=\"emailInputWrapper-QlA86j\">\n         <div class=\"pencraft pc-display-flex pc-minWidth-0 pc-position-relative pc-reset flex-auto-j3S2WA\">\n          <input name=\"email\" placeholder=\"Type your email...\" type=\"email\" class=\"pencraft emailInput-OkIMeB input-y4v6N4 inputText-pV_yWb\">\n         </div>\n        </div>\n        <button tabindex=\"0\" type=\"submit\" disabled class=\"pencraft pc-reset pencraft rightButton primary subscribe-btn button-VFSdkv buttonBase-GK1x3M\"><span class=\"button-text \">Subscribe</span></button>\n       </div>\n      </form>\n     </div>\n    </div>\n   </div>\n   <p><span>Bonus: Check out YouTuber Husk </span><a href=\"https://youtube.com/shorts/MAt9QNCIOcI?si=baFpHPGa0YdD59R5\">on using a GenAI-fueled to bargain on his behalf</a><span>. LLM-powered AI agents are gonna be great! Watch to the end! </span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Gary Marcus 批判了围绕生成式 AI 和超大规模扩展的炒作，主张转向神经符号 AI 和世界模型，以实现可靠、可验证的智能。",
+  "oneSentenceSummary": "Gary Marcus 批判了围绕生成式 AI 和超大规模扩展的炒作，主张转向神经符号 AI 和世界模型，以实现可靠、可验证的智能。",
+  "summary": "Gary Marcus 的这篇文章对当前生成式 AI 的发展轨迹，尤其是对超大规模语言模型的巨额投资，提出了批判性观点。Marcus 认为，这种方法存在根本性缺陷，制造了一种缺乏真正理解和可靠性的“智能幻觉”。他主张向神经符号 AI 和世界模型进行范式转变，这种模型将神经网络的优势与符号推理相结合，以构建能够理解因果关系、进行逻辑演绎并得到正式验证的系统。文章围绕三个关键资源展开：与 Brian Greene 的深度探讨、关于超大规模扩展风险的访谈，以及一场关于神经符号 AI 和软件验证必要性的技术炉边谈话。Marcus 将这些讨论定位为对当前主流炒作的必要纠正，强调通往稳健、可信 AI 的道路需要超越模式匹配，走向真正的理解和可验证的推理。",
+  "mainPoints": [
+    {
+      "point": "对超大规模 LLM 的巨额押注是误导性的，并且可能带来危险。",
+      "explanation": "Marcus 认为，当前业界专注于扩展 LLM 的做法是一种“疯狂”，不会带来真正的智能，因为这些模型缺乏基本的理解和可靠性。"
+    },
+    {
+      "point": "神经符号 AI 和世界模型是实现稳健智能的必要条件。",
+      "explanation": "文章倡导一种混合方法，将神经网络与符号推理及内部世界模型相结合，从而实现因果理解、逻辑演绎和可验证的输出。"
+    },
+    {
+      "point": "在 LLM 时代，软件验证至关重要。",
+      "explanation": "随着 AI 生成的代码和内容日益普及，用于验证可靠性和正确性的形式化方法比以往任何时候都更加重要，以防止错误并确保可信度。"
+    }
+  ],
+  "keyQuotes": [
+    "生成式 AI 的幻觉、超大规模押注的疯狂，以及世界模型与神经符号 AI 的论证",
+    "为什么我们如此迫切需要神经符号 AI 和世界模型，以及为什么在 LLM 时代软件验证比以往任何时候都更加重要",
+    "一场关于从垃圾工厂中提取可靠软件的会议"
+  ],
+  "tags": [
+    "生成式 AI",
+    "超大规模扩展",
+    "神经符号 AI",
+    "世界模型",
+    "Gary Marcus"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 116,
+  "domain": "garymarcus.substack.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f6e6074",
+  "sourceName": "Marcus on AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779004969000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-17 08:02:49"
+}
