@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-19 00:57:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-19 02:34:10 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -34721,11 +34721,11 @@
 
 
 
-### [Cat-Wu-面试了几百个-PM-候选人，几乎没人答对一个问题：AI-产品经理到底应该干什么？](https://baoyu.io/blog/building-agi-pilled-products-cat-wu-head-of-product-claude-code)
+### [两小时激辩：黄仁勋为什么不怕-TPU、不怕华为、不怕出口管制？](https://baoyu.io/blog/jensen-huang-dwarkesh-interview)
 
-2026-04-23T00:00:00.000Z
+2026-04-17T00:00:00.000Z
 
-> 面试几百个 PM 后，Cat Wu 发现大多数人对 AI PM 角色的理解方向不对。
+> 黄仁勋接受 Dwarkesh 两小时专访，从 CUDA 护城河到对华出口管制，每个话题都火力全开。
 
 
 
