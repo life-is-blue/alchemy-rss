@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-19 06:20:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-19 08:29:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -378,7 +378,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -681,6 +681,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [Vercel-上的-Web-应用防火墙拦截流量免费](https://vercel.com/changelog/web-application-firewall-mitigated-traffic-is-free-on-vercel)
+
+2026-05-18 20:00:00 | 标签: Vercel, Web 应用防火墙, CDN, 成本优化, 安全
+
+> Vercel 宣布，对于其 Web 应用防火墙规则拒绝、质询或限流的任何流量，将不再收取 CDN 请求和快速数据传输费用。这一变化建立在 Vercel 现有的无限免费 DDoS 缓解策略之上。WAF 包含在 CDN 成本中，允许用户创建自定义规则、使用托管规则以及设置速率限制，以处理非 DDoS 的恶意流量，例如爬虫、凭证填充僵尸网络和 API 滥用。对于所有使用 Vercel Firewall 的项目，该费用豁免是自动生效的，无需任何配置。这项策略直接解决了开发者对恶意流量导致意外高额账单的普遍担忧，使 Vercel 平台对开发者来说更具可预测性和成本效益。
+
+
+
+### [Navigation-API-达到基线新可用状态，成为-History-API-的替代方案](https://www.infoq.com/news/2026/05/navigation-api-browser/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-05-18 06:33:00 | 标签: Navigation API, History API, 单页应用, Web 开发, 浏览器 API
+
+> 作为 History API 的现代替代品，Navigation API 已于 2026 年 1 月达到基线新可用状态，获得了 Chrome、Edge、Firefox 147 和 Safari 26.2 的支持。文章详细阐述了 History API 的根本缺陷，包括无法检测所有导航触发方式、无法访问完整的历史记录栈，以及 `popstate` 事件行为不一致等问题。新的 API 引入了一个统一的 `navigate` 事件，该事件会为所有导航类型触发；`event.intercept()` 方法用于自动管理 URL 和历史记录；内置的滚动恢复功能以及中止信号。它还允许开发者检查和遍历完整的历...
 
 
 
@@ -1158,13 +1174,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1314,13 +1330,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2814,13 +2830,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4524,13 +4540,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

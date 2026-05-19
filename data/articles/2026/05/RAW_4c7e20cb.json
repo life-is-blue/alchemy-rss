@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4c7e20cb",
+  "title": "Swiggy 使用实时机器学习排序改进搜索自动补全",
+  "url": "https://www.infoq.com/news/2026/05/swiggy-autocomplete-rt-ranking/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-18 14:38:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Swiggy detailed the architecture of the company's <a href=\"https://bytes.swiggy.com/real-time-ml-ranking-in-autocomplete-part-1-3cdbbd44f85a\">real-time machine-learning ranking system for autocomplete search suggestions</a>, describing how the platform combines OpenSearch retrieval, feature stores, and learning-to-rank models while operating under strict latency requirements. The system replaced a hand-tuned heuristic ranking approach with a learned ranking model running directly inside OpenSearch, avoiding additional services or network hops while improving autocomplete relevance.</p>\n   <p>According to the company, autocomplete requests are particularly sensitive to latency because every keystroke can trigger a new search query. Traditional autocomplete systems, therefore, tend to rely on lexical matching and static ranking rules optimized for speed. Swiggy's newer approach separates the workflow into two stages: candidate generation and ranking.</p>\n   <p>When a user begins typing, the system first retrieves a broad set of candidate suggestions using OpenSearch lexical retrieval combined with embedding-based similarity search. This retrieval layer is optimized for recall and fast response times. The candidate suggestions are then passed into a ranking layer where machine learning models reorder results based on predicted relevance.</p>\n   <p>The ranking system incorporates real-time signals such as user interaction history, click behavior, query context, and item popularity. These features are combined with offline-trained models that are deployed for online inference. A feature store is used to serve both precomputed and streaming features, enabling the system to avoid expensive real-time computations while still reacting to recent user behavior. The ranking layer is built using a learning to rank approach integrated with OpenSearch, typically implemented using frameworks such as <a href=\"https://docs.opensearch.org/latest/search-plugins/ltr/index/\">OpenSearch LTR</a>, with model families like <a href=\"https://github.com/codelibs/ranklib\">RankLib</a> and gradient boosted tree methods such as <a href=\"https://en.wikipedia.org/wiki/XGBoost\">XGBoost</a> used for ranking and re-ranking tasks.</p>\n   <p>The autocomplete platform also includes a continuous feedback loop that retrains ranking models using live user interaction data. Click-through rates, conversions, and ordering behavior are streamed into offline training pipelines where updated ranking models are generated and stored in a model registry before deployment into the online ranking service.</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/swiggy-autocomplete-rt-ranking/en/resources/1swiggyranking-1778975637105.jpeg\" rel=\"share\"></p>\n   <p><em>Typical ML ranking service vs OpenSearch LTR latency (Source: <a href=\"https://bytes.swiggy.com/real-time-ml-ranking-in-autocomplete-part-1-3cdbbd44f85a\">Swiggy Blog Post)</a></em></p>\n   <p>The architecture is designed to operate under strict performance requirements. Autocomplete requests are highly interactive and require low-latency responses, which leads to design choices that favor lightweight models and optimized inference paths. Rather than relying on complex deep models in the online path, the system balances model complexity with serving efficiency to maintain responsiveness at scale.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/swiggy-autocomplete-rt-ranking/en/resources/1Screenshot 2026-05-16 at 4.53.26 PM-1778975637105.png\" rel=\"share\"></p>\n   <p>Training and deployment setup for the Autocomplete ML model using Opensearch LTR <em>(Source: <a href=\"https://bytes.swiggy.com/real-time-ml-ranking-in-autocomplete-part-1-3cdbbd44f85a\">Swiggy Blog Post)</a></em></p>\n   <p>The system also includes a feedback loop where user interactions are continuously collected and used to improve ranking models. Click-through rates and conversion signals are fed into offline training pipelines, enabling models to adapt to evolving user behavior and emerging query patterns. This enables the autocomplete system to adapt to new trends without manual rule updates.</p>\n   <p>According to Swiggy’s engineers, the design integrates machine learning into a traditionally rule and retrieval-driven component without compromising latency. The separation of candidate generation and ranking allows each stage to be independently optimized, while the use of feature stores and streaming pipelines ensures consistency between training and serving environments.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Swiggy Improves Search Autocomplete Using Real Time Machine Learning Ranking\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/swiggy-autocomplete-rt-ranking/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779115080000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Swiggy 详细介绍了其用于搜索自动补全的实时机器学习排序系统，该系统结合了 OpenSearch 检索、特征存储和学习排序模型，在严格的延迟限制下提高了相关性。",
+  "oneSentenceSummary": "Swiggy 详细介绍了其用于搜索自动补全的实时机器学习排序系统，该系统结合了 OpenSearch 检索、特征存储和学习排序模型，在严格的延迟限制下提高了相关性。",
+  "summary": "这篇来自 InfoQ 的文章总结了 Swiggy 关于构建搜索自动补全实时 ML 排序系统的工程博客。该系统用直接在 OpenSearch 内部运行的已学习排序模型，取代了手动调整的启发式排序方法，避免了额外的服务或网络跳转。该架构将工作流程分为两个阶段：使用 OpenSearch 词法检索和基于嵌入的相似性搜索进行候选生成，以及一个排序层，ML 模型在此根据预测的相关性对结果进行重新排序。该排序系统整合了用户交互历史和点击行为等实时信号，这些信号通过特征存储提供。它采用了与 OpenSearch 集成的学习排序方法，通常使用 RankLib 或 XGBoost。一个持续的反馈循环利用实时用户交互数据重新训练模型，使其能够适应不断变化的用户行为，而无需手动更新规则。该设计通过使用轻量级模型和优化的推理路径来优先考虑低延迟，在模型复杂性和服务效率之间取得平衡。",
+  "mainPoints": [
+    {
+      "point": "Swiggy 用直接在 OpenSearch 内运行的实时 ML 模型取代了启发式自动补全排序。",
+      "explanation": "新方法通过将排序模型直接集成到 OpenSearch 中，避免了额外的服务或网络跳转，在保持低延迟的同时提高了相关性。"
+    },
+    {
+      "point": "该架构将候选生成和排序分离为两个独立优化的阶段。",
+      "explanation": "候选生成阶段使用 OpenSearch 词法检索和基于嵌入的相似性搜索来保证召回率和速度，而排序层则应用 ML 模型进行相关性重排序。"
+    },
+    {
+      "point": "实时信号和特征存储使系统能够对近期用户行为做出反应，而无需进行昂贵的计算。",
+      "explanation": "用户交互历史、点击行为和查询上下文与离线训练的模型相结合，通过一个同时提供预计算和流式特征的特征存储来提供服务。"
+    },
+    {
+      "point": "一个持续的反馈循环利用实时用户交互数据重新训练排序模型。",
+      "explanation": "点击率、转化率和下单行为被流式传输到离线训练管道中，使模型能够适应不断变化的用户行为和新兴的查询模式。"
+    }
+  ],
+  "keyQuotes": [
+    "该系统用直接在 OpenSearch 内部运行的已学习排序模型，取代了手动调整的启发式排序方法，避免了额外的服务或网络跳转，同时提高了自动补全的相关性。",
+    "自动补全请求对延迟特别敏感，因为每次按键都可能触发新的搜索查询。",
+    "候选生成和排序的分离允许每个阶段独立优化，而特征存储和流式管道的使用确保了训练和服务环境之间的一致性。",
+    "该系统并非在在线路径中依赖复杂的深度模型，而是在模型复杂性和服务效率之间取得平衡，以保持大规模下的响应能力。"
+  ],
+  "tags": [
+    "机器学习",
+    "搜索自动补全",
+    "实时排序",
+    "OpenSearch",
+    "学习排序"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 502,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779115080000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-18 14:38:00"
+}

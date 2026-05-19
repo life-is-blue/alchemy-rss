@@ -1,0 +1,63 @@
+{
+  "id": "RAW_195b2712",
+  "title": "Anthropic 的 Code With Claude 发布托管智能体、主动工作流与能力曲线",
+  "url": "https://www.infoq.com/news/2026/05/code-with-claude/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-18 13:14:00",
+  "author": "Andrew Hoblitzell",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic hosted <a href=\"https://claude.com/code-with-claude/san-francisco\">Code with Claude 2026</a> in San Francisco on May 6, publishing livestream sessions to YouTube that covered shipping work across <a href=\"https://www.anthropic.com/product/claude-code\">Claude Code</a>, the Claude Developer Platform, and partner deployments at <a href=\"https://github.com\">GitHub</a>, <a href=\"https://vercel.com\">Vercel</a>, <a href=\"https://www.datadoghq.com\">Datadog</a>, <a href=\"https://bun.com\">Bun</a>, and several AI-native startups. Across the day, the throughline was the consequences of model step-changes for product architecture, organizational design, and infrastructure economics.</p>\n   <p>Dickson Tsai of Anthropic's Claude Code team showed recent updates to Claude code. On the developer experience side, remote control lets a session start on one machine and continue on a phone and a redesigned desktop GUI adds split views, the ability to pin assistant messages as chapters with a generated table of contents, and inline diff comments. On the autonomy side, auto mode moves permission decisions to a classifier that screens for destructive actions and prompt injection, and worktrees give Claude an enter and exit tool to spin up isolated branches on its own. Tsai also demonstrated routines, which run prompts on cron schedules, GitHub webhooks, or API endpoints.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/code-with-claude/en/resources/1Screenshot 2026-05-17 at 10.22.16 AM-1779028038307.png\" rel=\"share\"></p>\n   <p>GitHub chief product officer Mario Rodriguez followed with a co-presented session with Anthropic's Brad Abrams. Rodriguez framed cache hit rate as the foundational metric for any team sending billions of messages to the platform. \"It's kind of like high frequency trading,\" he said. \"Just 1% efficiency means millions overall.\" GitHub targets cache hit rates above 94 percent, with a drop to 70 percent typically signaling a bug in prompt assembly. Rodriguez listed three causes of cache invalidation that GitHub has had to engineer around.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/code-with-claude/en/resources/1Screenshot 2026-05-17 at 10.24.01 AM-1779028038307.png\" rel=\"share\"></p>\n   <p>Abrams used the slot to introduce an advisor strategy in which a smaller executor model such as Haiku calls a larger advisor model such as Opus only on the hard cases. \"We get close to opus level intelligence at much lower prices because we're being very conservative about the tokens that advisor actually sends,\" Abrams said. Rodriguez paired that with a critic, internally nicknamed Rubber Duck, that runs after planning, after a complex implementation, and after writing tests but before running them.</p>\n   <p>Anthropic Managed Agents product manager Jess Yan and Anthropic member of technical staff Lance Martin demoed <a href=\"https://platform.claude.com/docs/en/managed-agents/overview\">Claude Managed Agents</a> around the lunch slot and argued that infrastructure, rather than intelligence, is now the bottleneck for production agents, walking through primitives for sandboxed code execution, checkpointing, and credential scoping.</p>\n   <p>Anthropic co-founder and CEO Dario Amodei and co-founder and president Daniela Amodei took the main stage at 1 p.m. Daniela Amodei said developers \"are the most important users of Claude\" and described an internal cultural value, hold light and shade, that governs how Anthropic ships powerful models alongside safety guardrails. Dario Amodei reported that first-quarter 2026 revenue and usage, on an annualized basis, grew 80x rather than the 10x Anthropic had planned for, which he said is the underlying cause of recent compute pressure that the <a href=\"https://www.anthropic.com/news/higher-limits-spacex\">SpaceX partnership announced earlier in the day</a> partly addresses.</p>\n   <p>He reiterated his earlier prediction that a one-person billion-dollar company would emerge in 2026, noting that two-person companies built with AI have already crossed a billion dollars in valuation. He said the next inflection is teams of agents working at the level of organizations rather than individuals, and that the things slowing down are the non-verifiable parts of software engineering such as design quality and security review, which Anthropic is now focused on training models to handle.</p>\n   <p>Anthropic Claude Code head Boris Cherny and Bun creator Jarred Sumner used a live coding session to show how Bun maintains itself with a Robobun bot that reproduces every issue and only opens a pull request once a generated regression test fails on the previous Bun version and passes on the fix branch. Datadog VP of engineering Sesh Nalla introduced a machine tool concept that has agents emit \"precise specifications of the intent and problem domain\" rather than invent disconnected tools for every local need.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/code-with-claude/en/resources/1Screenshot 2026-05-17 at 10.24.33 AM-1779028038307.png\" rel=\"share\"></p>\n   <p>Vercel CEO Guillermo Rauch then sat with Anthropic platform product head Angela Jiang. Rauch reported that Opus tokens represent roughly twenty-something percent of Vercel AI Gateway usage but more than seventy percent of spend, and that credit spend on <a href=\"https://v0.app\">V0</a> has doubled since the most recent Anthropic upgrade. He said smarter models let Vercel simplify the harness, improved model taste meant V0 could absorb a decade of Vercel's design judgment rather than fight it, and the tool surface contracted as models wrote intermediate code in sandboxes rather than rely on predefined sub-agents. \"We're now engineering more around tool approvals,\" Rauch said. \"It's around creating the right security guardrails.\"&nbsp;</p>\n   <p>A panel moderated by Anthropic startup partnerships lead Beth Robertson brought together Cognition co-founder Walden Yan, Gamma head of product for AI Deeni Fatiha, and Harvey applied research head Niko Grupen to discuss product architecture under exponential model progress. <a href=\"https://cognition.ai\">Cognition</a> makes Devin, an autonomous coding agent that runs its own computer; <a href=\"https://gamma.app/\">Gamma</a> is an AI-native presentation and document tool with more than 70 million users; and <a href=\"https://www.harvey.ai\">Harvey</a> is the generative AI platform for legal and professional services. Each panelist described having to rewrite their product around a model inflection point.</p>\n   <p>Brad Abrams returned later in the day for a standalone Claude Platform session focused on prompt caching, structured outputs, and tool design patterns observed across customers running large workloads. Anthropic developer relations head Alex Albert closed the day by reporting that Claude moved from 62 percent on <a href=\"https://www.swebench.com/verified.html\">SWE-bench Verified</a> with Sonnet 3.7 a year ago to 87 percent with Opus 4.7, and used the capability curve framing to set expectations for the year ahead.</p>\n   <p>Developers interested in learning more can watch the full session recordings on Anthropic's YouTube channel, browse the Code with Claude session pages on claude.com, or register for the <a href=\"https://claude.com/code-with-claude/london\">London edition on May 19</a> and <a href=\"https://claude.com/code-with-claude/tokyo\">Tokyo on June 10</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic's Code With Claude Announces  Managed Agents, Proactive Workflows, Capability Curve\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Andrew Hoblitzell\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/code-with-claude/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779110040000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 的 Code with Claude 2026 活动发布了托管智能体、主动工作流和能力曲线，展示了模型阶跃变化如何重塑产品架构、组织设计和基础设施经济。",
+  "oneSentenceSummary": "Anthropic 的 Code with Claude 2026 活动发布了托管智能体、主动工作流和能力曲线，展示了模型阶跃变化如何重塑产品架构、组织设计和基础设施经济。",
+  "summary": "Anthropic 在旧金山举办了 Code with Claude 2026 活动，呈现了一系列会议，涵盖了 Claude Code、Claude 开发者平台的最新更新，以及 GitHub、Vercel、Datadog、Bun 和多家 AI 原生初创公司的合作伙伴部署。主要公告包括 Claude 托管智能体，其专注于基础设施原语，如沙盒代码执行和检查点，并引入了一种顾问策略，该策略使用较小的模型仅在困难情况下调用较大的模型。Dario Amodei 报告了 80 倍的收入增长，并重申了他对 2026 年将出现一家一人独角兽公司的预测。该活动强调了焦点从模型智能向基础设施、工具和工作流设计的转变，这些已成为生产级 AI 智能体的主要瓶颈。能力曲线的引入旨在为未来的模型进展设定预期，过去一年中 Claude 的 SWE-bench Verified 得分从 62% 上升至 87%。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 推出了 Claude 托管智能体，专注于生产级智能体的基础设施原语。",
+      "explanation": "该产品强调沙盒代码执行、检查点和凭证范围界定，认为基础设施而非智能是当前生产级智能体的瓶颈。"
+    },
+    {
+      "point": "顾问策略使用较小的模型仅在困难情况下调用较大的模型，从而优化成本和性能。",
+      "explanation": "Brad Abrams 演示的这种方法通过谨慎控制发送给顾问模型的 token 数量，以较低的价格实现了接近 Opus 级别的智能。"
+    },
+    {
+      "point": "Dario Amodei 报告了 80 倍的收入增长，并重申了对 2026 年将出现一家一人独角兽公司的预测。",
+      "explanation": "CEO 指出，由 AI 构建的两人公司估值已超过十亿美元，下一个转折点是团队级别的智能体以组织规模运作。"
+    },
+    {
+      "point": "能力曲线的引入旨在为未来的模型进展设定预期，Claude 的 SWE-bench 得分从 62% 上升至 87%。",
+      "explanation": "这一框架帮助开发者理解模型改进的轨迹，并据此规划其产品架构。"
+    },
+    {
+      "point": "Vercel 和 Datadog 等合作伙伴分享了关于更智能模型如何简化工具界面并将工程重点转向安全护栏的见解。",
+      "explanation": "Vercel 报告称，更智能的模型允许更简单的控制框架并减少对预定义子智能体的依赖，而 Datadog 则引入了“机器工具”概念，让智能体能够发出精确的规格说明。"
+    }
+  ],
+  "keyQuotes": [
+    "基础设施而非智能，现在是生产级智能体的瓶颈。",
+    "我们以低得多的价格接近 Opus 级别的智能，因为我们对顾问实际发送的 token 非常保守。",
+    "这有点像高频交易。仅 1% 的效率提升就意味着数百万的总体收益。",
+    "我们现在更多地围绕工具审批进行工程优化。这关乎创建正确的安全护栏。",
+    "下一个转折点是团队级别的智能体以组织规模而非个人规模运作。"
+  ],
+  "tags": [
+    "Anthropic",
+    "Claude Code",
+    "托管智能体",
+    "AI 编程",
+    "开发者平台"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 950,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779110040000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-18 13:14:00"
+}

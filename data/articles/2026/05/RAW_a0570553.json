@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a0570553",
+  "title": "随时随地掌控你的本地 GitHub 会话",
+  "url": "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/",
+  "date": "2026-05-18 16:54:56",
+  "author": "Candy Ho",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>The best GitHub Copilot workflows don’t happen one–thing–at–a time. You might have an agent refactoring a module in VS Code, another debugging tests in the CLI, and a third scaffolding a new feature in the background.</p>\n  <p>Managing all of that used to only be possible from your desk. The moment you stepped away from your laptop, you lost visibility into every session you had running.</p>\n  <p>Now, developers can take their GitHub Copilot agent anywhere, with <strong>remote control for</strong> <a href=\"https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli?utm_source=blog-remote-control-install-cli-cta&amp;utm_medium=blog&amp;utm_campaign=dev-pod-copilot-cli-2026\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>GitHub Copilot CLI sessions</strong></a>, <strong>now generally available on github.com and the GitHub Mobile app. We’re also introducing remote control in VS Code and JetBrains IDE</strong>, making GitHub Copilot truly multi-surface and available across any device.</p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <div class=\"mod-vh position-relative\" style=\"height: 0; padding-bottom: calc((9 / 16)*100%);\">\n     <iframe loading=\"lazy\" class=\"position-absolute top-0 left-0 width-full height-full\" src=\"https://www.youtube.com/embed/IfZglrnVkPA?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent\" title=\"YouTube video player\" allowfullscreen frameborder=\"0\"></iframe>\n    </div>\n   </div>\n  </figure>\n  <h2 class=\"wp-block-heading\" id=\"h-how-it-works\">How it works</h2>\n  <p>Start a Copilot session in VS Code or the CLI, take it on the go with <code>/remote on</code>. Your session will be available on github.com and the GitHub Mobile app. Developers will experience one continuous workflow across CLI, VS Code, web, and mobile. Remote control works with any repository as well as directories without repositories, so you can take your work on the go, regardless of set up.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-monitor-in-real-time\">Monitor in real time</h3>\n  <p>Open your session on any device to track progress as it happens. See exactly what Copilot is doing in real time, from the plans it’s researching, files it’s reading, the changes it’s making, to the commands it’s running.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-change-course-mid-flight\">Change course mid-flight</h3>\n  <p>Send additional instructions to a running session from anywhere using natural language. If an agent is heading in the wrong direction, you can send a follow-up to redirect it. Or you can tell your agent to expand scope while a task is in progress. Approve or deny permission requests and manage your sessions on the go.</p>\n  <h3 class=\"wp-block-heading\" id=\"complete-the-full-workflow-from-anywhere\">Complete the full workflow, from anywhere</h3>\n  <p>Remote control enables a complete developer workflow once a session is sent to the web or GitHub Mobile app. For example, using Copilot CLI you could:</p>\n  <ol class=\"wp-block-list\">\n   <li><code>/plan</code><strong>and scaffold</strong> with Copilot CLI.</li>\n   <li><code>/remote on</code><strong>to monitor progress</strong> in the GitHub Mobile app or web.</li>\n   <li><strong>Steer the session</strong> with follow-up instructions.</li>\n   <li><strong>Review the implementation plan</strong> and proposed changes.</li>\n   <li><strong>Create and review a pull request</strong>, right from your phone.</li>\n   <li><strong>Merge</strong> and move on.</li>\n  </ol>\n  <p><code>/remote on</code> brings everything together, removing the pain of switching surfaces.</p>\n  <h3 class=\"wp-block-heading\" id=\"private-by-default\">Private by default</h3>\n  <p>Your sessions are only visible to you. Remote control maintains full privacy; no one else can see or access your sessions.</p>\n  <h2 class=\"wp-block-heading\" id=\"get-started\">Get started</h2>\n  <p>Remote control is more than a convenience feature. It’s another step toward an end-to-end agentic platform.</p>\n  <p><a href=\"https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli?utm_source=blog-remote-control-install-cli-cta&amp;utm_medium=blog&amp;utm_campaign=dev-pod-copilot-cli-2026\" target=\"_blank\" rel=\"noreferrer noopener\">Install GitHub Copilot CLI</a> to get started in the CLI.</p>\n  <p>Or, if you’re already using the latest version of GitHub Copilot CLI or GitHub Copilot in VS Code, there’s nothing new to install. Start a session as you normally would, then use <code>/remote on</code> to send it to the web or mobile.</p>\n  <p>To learn more and for more detailed instructions, view our remote control <a href=\"https://docs.github.com/copilot/how-tos/copilot-cli/use-copilot-cli/steer-remotely?utm_source=blog-remote-control-steer-docs-cta&amp;utm_medium=blog&amp;utm_campaign=dev-pod-copilot-cli-2026\" target=\"_blank\" rel=\"noreferrer noopener\">documentation for CLI</a>, <a href=\"https://aka.ms/vscode-remote-control\" target=\"_blank\" rel=\"noreferrer noopener\">VS Code</a>, and <a href=\"https://github.com/microsoft/copilot-intellij-feedback/wiki/Enable-Copilot-CLI-Remote-Control?utm_source=blog-JetBrains-docs-cta&amp;utm_medium=blog&amp;utm_campaign=dev-pod-copilot-cli-2026\" target=\"_blank\" rel=\"noreferrer noopener\">JetBrains</a>.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub Copilot 的全新远程控制功能让开发者能够通过 `/remote on` 命令，从包括网页和移动端在内的任何设备监控和操控智能体会话。",
+  "oneSentenceSummary": "GitHub Copilot 的全新远程控制功能让开发者能够通过 `/remote on` 命令，从包括网页和移动端在内的任何设备监控和操控智能体会话。",
+  "summary": "这篇来自 GitHub 博客的文章宣布，GitHub Copilot CLI 会话的远程控制功能现已全面可用，可在 github.com 和 GitHub Mobile 应用上使用，同时 VS Code 和 JetBrains IDE 也将支持该功能。该功能允许开发者在本地机器上启动 Copilot 会话，然后使用 `/remote on` 命令使其可从其他设备访问。用户可以实时监控智能体的进度，发送后续指令以中途调整方向，并远程批准权限请求。该工作流旨在跨 CLI、VS Code、网页和移动端保持连续性，使开发者即使远离主工作站也能管理复杂的多智能体任务。文章强调，会话默认是私密的，并且该功能是迈向更集成、端到端的智能体平台的一步。",
+  "mainPoints": [
+    {
+      "point": "GitHub Copilot 会话的远程控制功能现已在网页和移动端全面可用。",
+      "explanation": "开发者可以使用 `/remote on` 命令，将正在运行的 Copilot 会话从本地 CLI 或 VS Code 发送到 github.com 或 GitHub Mobile 应用，从而在任何地方进行监控和控制。"
+    },
+    {
+      "point": "用户可以从任何设备实时监控和操控智能体会话。",
+      "explanation": "该功能允许开发者跟踪进度、阅读计划、查看文件更改，并向正在运行的智能体发送后续指令，从而能够在任务进行中重定向或扩展范围。"
+    },
+    {
+      "point": "该功能实现了完整的、多表面的开发者工作流。",
+      "explanation": "从 CLI 中的规划和搭建，到移动端的监控、通过后续指令进行引导、审查更改以及创建拉取请求，整个工作流都可以跨不同设备进行管理。"
+    }
+  ],
+  "keyQuotes": [
+    "过去，管理所有这些操作只能在你的办公桌前进行。一旦你离开笔记本电脑，就会失去对所有正在运行的会话的可见性。",
+    "现在，开发者可以带着他们的 GitHub Copilot 智能体去任何地方，因为 GitHub Copilot CLI 会话的远程控制功能已在 github.com 和 GitHub Mobile 应用上全面可用。",
+    "远程控制不仅仅是一个便利功能。它是迈向端到端智能体平台的又一步。"
+  ],
+  "tags": [
+    "GitHub Copilot",
+    "远程控制",
+    "AI 编程",
+    "开发者体验",
+    "CLI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 484,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779123296000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-18 16:54:56"
+}

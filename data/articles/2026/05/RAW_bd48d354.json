@@ -1,0 +1,47 @@
+{
+  "id": "RAW_bd48d354",
+  "title": "目击记录：灰翅鸥、褐鹈鹕、雪鹭、加拿大雁",
+  "url": "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything",
+  "date": "2026-05-18 14:51:00",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">18th May 2026</p>\n   <div class=\"beat beat-sighting\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label sighting\">Sighting</span> <span class=\"beat-title\"><a href=\"https://www.inaturalist.org/observations/362782049\">7:51 AM – 8:13 AM</a></span> <span class=\"beat-commit\">— Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose, in Los Angeles River, CA, US</span>\n     </div>\n     <figure>\n      <a href=\"https://static.inaturalist.org/photos/662161673/large.jpg\"><img src=\"https://static.inaturalist.org/photos/662161673/small.jpg\" alt=\"Glaucous-winged Gull\" loading=\"lazy\"></a>\n      <figcaption>\n       <a href=\"https://www.inaturalist.org/observations/362782049\" title=\"View observation on iNaturalist\">Glaucous-winged Gull</a>\n      </figcaption>\n     </figure>\n     <figure>\n      <a href=\"https://static.inaturalist.org/photos/662161721/large.jpg\"><img src=\"https://static.inaturalist.org/photos/662161721/small.jpg\" alt=\"Glaucous-winged Gull\" loading=\"lazy\"></a>\n      <figcaption>\n       <a href=\"https://www.inaturalist.org/observations/362782049\" title=\"View observation on iNaturalist\">Glaucous-winged Gull</a>\n      </figcaption>\n     </figure>\n     <figure>\n      <a href=\"https://static.inaturalist.org/photos/662161937/large.jpg\"><img src=\"https://static.inaturalist.org/photos/662161937/small.jpg\" alt=\"Brown Pelican\" loading=\"lazy\"></a>\n      <figcaption>\n       <a href=\"https://www.inaturalist.org/observations/362782164\" title=\"View observation on iNaturalist\">Brown Pelican</a>\n      </figcaption>\n     </figure>\n     <figure>\n      <a href=\"https://static.inaturalist.org/photos/662161148/large.jpg\"><img src=\"https://static.inaturalist.org/photos/662161148/small.jpg\" alt=\"Snowy Egret\" loading=\"lazy\"></a>\n      <figcaption>\n       <a href=\"https://www.inaturalist.org/observations/362781792\" title=\"View observation on iNaturalist\">Snowy Egret</a>\n      </figcaption>\n     </figure>\n     <figure>\n      <a href=\"https://static.inaturalist.org/photos/662161189/large.jpg\"><img src=\"https://static.inaturalist.org/photos/662161189/small.jpg\" alt=\"Snowy Egret\" loading=\"lazy\"></a>\n      <figcaption>\n       <a href=\"https://www.inaturalist.org/observations/362781792\" title=\"View observation on iNaturalist\">Snowy Egret</a>\n      </figcaption>\n     </figure>\n     <figure>\n      <a href=\"https://static.inaturalist.org/photos/662160828/large.jpg\"><img src=\"https://static.inaturalist.org/photos/662160828/small.jpg\" alt=\"Canada Goose\" loading=\"lazy\"></a>\n      <figcaption>\n       <a href=\"https://www.inaturalist.org/observations/362781627\" title=\"View observation on iNaturalist\">Canada Goose</a>\n      </figcaption>\n     </figure>\n     <figure>\n      <a href=\"https://static.inaturalist.org/photos/662160866/large.jpg\"><img src=\"https://static.inaturalist.org/photos/662160866/small.jpg\" alt=\"Canada Goose\" loading=\"lazy\"></a>\n      <figcaption>\n       <a href=\"https://www.inaturalist.org/observations/362781627\" title=\"View observation on iNaturalist\">Canada Goose</a>\n      </figcaption>\n     </figure>\n     <div class=\"beat-note blogmark-body\">\n      <p>I'm heading home from PyCon US today so I went on a last morning walk to try and spot a pelican. I saw one! Didn't get a great photo but I did also see some goslings down by the swan boat lake.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一篇个人博客文章，记录了在洛杉矶清晨观鸟散步的见闻，包括灰翅鸥、褐鹈鹕、雪鹭和加拿大雁，附有照片和 iNaturalist 链接。",
+  "oneSentenceSummary": "一篇个人博客文章，记录了在洛杉矶清晨观鸟散步的见闻，包括灰翅鸥、褐鹈鹕、雪鹭和加拿大雁，附有照片和 iNaturalist 链接。",
+  "summary": "这是 Simon Willison 博客上的一篇简短个人日记，记录了 2026 年 5 月 18 日在洛杉矶河沿岸的一次晨间散步。作者在参加完 PyCon US 返程途中，分享了四种鸟类的照片和 iNaturalist 观察链接：灰翅鸥、褐鹈鹕、雪鹭和加拿大雁。帖子还提到在天鹅船湖附近看到了幼雁。内容纯属个人观察记录，不包含任何技术分析、代码或与软件工程师及技术专业人士相关的专业见解。",
+  "mainPoints": [
+    {
+      "point": "作者记录了在洛杉矶的一次个人观鸟散步经历。",
+      "explanation": "该帖子记录了四种鸟类的目击情况，附有照片和 iNaturalist 观察链接，是一篇个人日记。"
+    },
+    {
+      "point": "内容非技术性，与软件工程或技术无关。",
+      "explanation": "该帖子缺乏任何技术分析、代码或专业见解，与目标受众（技术专业人士）无关。"
+    }
+  ],
+  "keyQuotes": [
+    "我今天要从 PyCon US 回家了，所以趁最后一次晨间散步，想试着找找鹈鹕。我看到了！",
+    "没拍到好照片，但我也在天鹅船湖附近看到了几只幼雁。"
+  ],
+  "tags": [
+    "观鸟",
+    "个人博客",
+    "自然",
+    "洛杉矶"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 80,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": null,
+  "mainDomain": "Lifestyle_Culture",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779115860000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-18 14:51:00"
+}
