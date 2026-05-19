@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-19 08:29:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-19 11:03:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4760,33 +4760,25 @@
 
 ### [从-0-开发大模型的-17-种-Agent-架构演进详细拆解](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801545&idx=1&sn=b2d15c583715f519cbec484e8b10abdf)
 
-2026-05-18 09:40:00 | 标签: Agent 架构, 控制流设计, agno, LangGraph, 多 Agent 系统
-
-> 本文基于 all-agentic-architectures 项目，使用 agno 框架重新实现了 17 种 Agent 架构模式。作者的核心观点是：Agent 架构的本质不是提示工程或框架 DSL，而是控制流设计。文章从单次生成（Reflection）开始，逐步引入工具交互（Tool Use）、观察-行动循环（ReAct）、显式规划（Planning）、验证驱动重规划（PEV）、多 Agent 协作、黑板模式（Blackboard）、元控制器（Meta-Controller）等架构。每种架构都通过六个固定问题（要解决的问题、状态、拓扑、路由器、失败模式、升级时机）进行统一分析，并给出了完整的...
+2026-05-18 09:40:00
 
 
 
 ### [RAG-全链路技术详解](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543478&idx=1&sn=3d53b81dc195e7ccd6e652000bcf8ba8)
 
-2026-05-18 09:36:00 | 标签: RAG, 检索增强生成, AI Agent, 向量数据库, Graph RAG
-
-> 本文由淘天集团品牌行业架构团队撰写，旨在解决 Agent 开发中 RAG 落地的共性挑战：知识库构建不规范、检索召回不准、缺乏量化评测。文章从实战角度出发，系统性地拆解了 RAG 全链路的核心技术点。内容覆盖了从文档加载（多格式解析与元数据提取）、智能切分（规则/语义/结构化方法，并深入介绍了 Meta-Chunking 原理）、索引构建（详细图解 embedding 模型从分词到向量生成的完整过程）、检索优化（Query 改写、HyDE/Doc2Query、标签过滤、重排序）、生成调优（Prompt 设计、参数控制、SFT 微调），到进阶的 Graph RAG（解决多跳推理与全局摘要问题）。...
+2026-05-18 09:36:00
 
 
 
 ### [CIO-正在抛弃-AI-生码率：一场关于什么才算产研提效的实践复盘](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284581&idx=1&sn=14fdab712501627cd59e8a24854c08d9)
 
-2026-05-18 07:37:00 | 标签: AI 提效, 研发效能, 组织变革, 左移测试, Half-Stack
-
-> 本文是阿里云 CIO 蒋林泉及其团队对 AI 时代产研组织效能规模化提升的深度复盘。文章首先指出两个流行误区：AI 生码率作为过程指标容易导致「灌水」，Vibe Coding 在存量企业系统中难以直接落地。核心观点是，代码一旦生产出来首先是负债，规模化提效应聚焦业务价值而非代码量。团队通过 AI 辅助实现了四大左移：质量与测试覆盖从 20% 提升至接近 100%、存量系统知识工程与 Spec 还原、API First 规约终结系统「代偿」、Vibe Coding 用于需求澄清前置。在组织层面，放弃全栈工程师幻想，重构为 PDFE（AI 产品设计前端工程师）和 ABE（AI 架构与后端工程师）两...
+2026-05-18 07:37:00
 
 
 
 ### [重新定义-Skill-开发：保姆级教程&amp;一站式开发助手发布](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560111&idx=1&sn=d90140ce9a63a953c990c1696a01beef)
 
-2026-05-18 00:30:00 | 标签: AI Agent, Skill, Agent开发, 工作流自动化, 最佳实践
-
-> 文章以阿里内部实践为背景，全面讲解了 AI Agent Skill 的开发与管理。内容从 Skill 的本质（结构化的指令文档）和类比（开发操作手册）入手，详细说明了其三级加载机制。随后，文章介绍了 Skill 的目录结构、SKILL.md 文件的 YAML 头部和 Markdown 正文编写规范，并提供了从安装到发布的完整流程。文章重点剖析了 Skill 生态的三大痛点：跨平台一致性、版本管理和开发调试效率，并给出了具体的应对策略和最佳实践。最后，文章发布了一站式 Skill 开发助手 skill-dev-aio，该工具整合了创建、发布、评测、查询、迁移和批量更新等功能，旨在降低 Skill...
+2026-05-18 00:30:00
 
 
 
@@ -12238,105 +12230,79 @@
 
 ### [世纪-AI-审判以程序性收场](https://garymarcus.substack.com/p/the-ai-trial-of-the-century-ends)
 
-2026-05-18 18:30:21 | 标签: OpenAI, 埃隆·马斯克, AI审判, 非营利, AI治理
-
-> 加里·马库斯对马斯克与 OpenAI 之间备受瞩目的法律案件结局进行了反思。该审判并非就 OpenAI 行为的合法性做出实质性裁决，而是基于程序性裁定，认为马斯克的诉讼提起过晚。马库斯感叹，陪审团从未就 OpenAI 从最初的非营利、开源使命转向营利性、封闭模式是否合法这一根本性问题做出裁决。文章强调，这是一次错失的机会，未能为一家领先 AI 公司的发展方向提供法律上的明确性，使得公众对此问题仍无定论。
+2026-05-18 18:30:21
 
 
 
 ### [每位-AI-工程师必须做出的六个选择（但没人教）](https://towardsdatascience.com/six-choices-every-ai-engineer-has-to-make-and-nobody-teaches/)
 
-2026-05-18 16:30:00 | 标签: AI 工程, 生产级 AI, LLM 权衡, 机器学习, 系统设计
-
-> 本文填补了 AI 教育中的一个空白，聚焦于工程师在生产中面临的实际决策，而非仅仅关注模型准确率。它系统地探讨了六个关键权衡：LLM 时代的自建与购买、模型复杂度与可维护性、数据数量与数据质量、吞吐量与延迟、提示工程与微调、自动化与人工监督。每个权衡都通过具体案例、真实成本数据和最新研究进行了分析。作者提供了可操作的决策框架，例如从 API 开始并从第一天起就进行成本核算，以及在关键决策中采用选择性的人机协同。核心原则是：决策的真实成本往往是延后的，会在后续的维护、基础设施或故障模式中显现。本文是 AI 工程师从开发走向生产的宝贵指南。
+2026-05-18 16:30:00
 
 
 
 ### [PaddleOCR-3.5：使用-Transformers-后端运行-OCR-和文档解析任务](https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers)
 
-2026-05-18 15:12:46 | 标签: PaddleOCR, OCR, 文档解析, Transformers, Hugging Face
-
-> PaddleOCR 3.5 是一次重要更新，将 PaddleOCR 的 OCR 和文档解析能力更紧密地融入 Hugging Face 生态系统。核心变化是引入了一个灵活的推理引擎接口，允许开发者选择 Transformers 库作为后端，运行 PP-OCRv5 和 PaddleOCR-VL 1.5 等受支持的 PaddleOCR 模型。只需设置 `engine="transformers"` 参数即可实现。文章解释了技术栈，强调 PaddleOCR 继续管理 OCR/文档解析流程，而 Transformers 则提供替代运行时。这种集成对于 RAG、文档 AI 和智能体应用尤其有价值，在这些场...
+2026-05-18 15:12:46
 
 
 
 ### [一个灵活的工具胜过一百个专用工具](https://towardsdatascience.com/one-flexible-tool-beats-a-hundred-dedicated-ones/)
 
-2026-05-18 15:00:00 | 标签: MCP, CLI, LLM 智能体, 工具设计, Neo4j
-
-> 本文挑战了将每个服务封装为一堆专用工具（例如 `create_issue`、`list_pull_requests`）的默认 MCP 设计模式，认为对于许多工作负载而言，一个单一的灵活 CLI 工具更为优越。作者指出，虽然专用工具曾是应对早期模型无法处理复杂任务的明智之举，但如今的模型能够阅读帮助页面、了解规范的 CLI 命令并组合管道。文章通过 Neo4j MCP 服务器与 `neo4j.sh` CLI 的具体对比，阐述了 CLI 方法的三个关键优势：无需上下文膨胀即可跨多个环境查询、无需通过模型上下文传递中间数据即可链式查询、以及通过管道组合多个 CLI（例如 `gh`、`jq`、`neo...
+2026-05-18 15:00:00
 
 
 
 ### [开放智能体排行榜](https://huggingface.co/blog/ibm-research/open-agent-leaderboard)
 
-2026-05-18 14:21:51 | 标签: AI 智能体, 基准测试, 通用智能体, 评估框架, 开源
-
-> 本文介绍了开放智能体排行榜，这是 IBM 研究院与 Hugging Face 的合作项目。它填补了 AI 评估中的一个关键空白：大多数基准只对模型打分，但实际部署的智能体是涉及规划、工具使用、记忆和错误恢复的复杂系统。该排行榜在六个不同的基准（SWE-Bench Verified、BrowseComp+、AppWorld、tau2-Bench 变体）上评估完整的智能体系统，涵盖编码、客户服务、研究和个人助理等领域。它引入了一个统一协议来标准化这些不同基准之间的交互。主要发现包括：通用智能体已能与专用智能体竞争；智能体架构（不仅仅是模型）对结果和成本有可衡量的影响；失败运行的成本比成功运行高出 ...
+2026-05-18 14:21:51
 
 
 
 ### [下一场战争已经到来，西方尚未做好准备-—-与-Yaroslav-Azhnyuk（The-Fourth-Law）、客座主持人-Noah-Smith（Noahpinion）的对话](https://www.latent.space/p/the-fourth-law)
 
-2026-05-18 13:45:32 | 标签: 无人机战争, FPV 无人机, AI 自主, 乌克兰战争, 防务科技
-
-> 在 Latent Space 的这期特别节目中，客座主持人 Noah Smith 与 Brandon Anderson 采访了乌克兰科技企业家 Yaroslav Azhnyuk。他从创立 PetCube 转型为创办领先的 AI 制导无人机公司 The Fourth Law。对话涵盖了 FPV 无人机带来的战争全面变革——目前前线 70-80% 的伤亡由无人机造成，火炮已不再是“战争之神”。Azhnyuk 详细介绍了现代无人机技术栈，包括五个自主等级、光纤制导与 AI 制导系统的权衡，以及自主战场的八个维度。他认为，无人机的成本效益（一架 500 美元的无人机 vs. 一辆 500 万美元的坦克...
+2026-05-18 13:45:32
 
 
 
 ### [为什么你的-AI-演示会在生产环境中夭折](https://towardsdatascience.com/why-your-ai-demo-will-die-in-production/)
 
-2026-05-18 13:30:00 | 标签: 生产债务, AI 工程, LLM, 企业 AI, 智能体系统
-
-> 文章探讨了一个惊人的统计数据：大约 95% 的生成式 AI 试点项目未能进入生产环境。文章指出，根本原因并非算法问题，而是结构性问题，并引入了“生产债务”这一概念。作者识别了从演示过渡到生产系统时积累的五种特定债务：技术债务（脆弱的提示词和编排）、运营债务（缺乏明确的所有权和监控）、评估债务（依赖“感觉检查”而非客观指标）、集成债务（在真空中构建，不了解下游系统）以及治理债务（忽视合规性和可审计性）。针对每种债务，文章都提供了具体、可操作的修复方法，例如从提示工程转向系统工程、使用 RACI 矩阵建立明确的所有权、构建自动化测试套件、尽早定义 API 契约，以及从底层开始设计可审计性。核心信息...
+2026-05-18 13:30:00
 
 
 
 ### [如何最大化利用-OpenAI-的-Codex](https://towardsdatascience.com/how-to-maximize-openais-codex/)
 
-2026-05-18 12:00:00 | 标签: OpenAI Codex, Claude Code, AI 编码智能体, 编码工作流, AI 辅助编程
-
-> 作者是一位经验丰富的开发者，分享了他们最近在日常编程任务中从 Claude Code 切换到 OpenAI Codex 的体验。他们发现 Codex 在处理复杂任务时同样出色，通常速度更快，并且能更好地仅执行所请求的更改，而不会产生非预期的修改。文章详细介绍了一套特定的设置，包括快速模式、高思考层级、用于浏览器访问的 Playwright MCP 以及 YOLO 模式。文章还涵盖了使用 Codex 驱动 OpenClaw 机器人、针对缺失的 worktree 功能的变通方案，以及对 Codex 和 Claude Code 的平衡比较，结论是两者都非常强大，最佳选择取决于个人偏好和具体用例。
+2026-05-18 12:00:00
 
 
 
 ### [使用-Amazon-Nova-2-进行内容审核的提示工程指南-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/prompting-amazon-nova-2-for-content-moderation/)
 
-2026-05-18 10:56:36 | 标签: Amazon Nova 2, 内容审核, 提示工程, AWS Bedrock, LLM
-
-> 这篇 AWS 博客文章详细介绍了如何通过提示工程使用 Amazon Nova 2 Lite 进行文本内容审核，从而无需进行模型微调。文章介绍了两种提示方法：用于自动化管道的结构化提示（XML/JSON）和用于人工参与工作流的自由形式提示，两者均基于 MLCommons AILuminate 危害分类体系。文章包含了详细的提示模板、多类别违规的实例分析，以及一个基准测试部分，在该部分中，Nova 2 Lite 在三个公共数据集（Aegis、WildGuard、Jigsaw）上取得了最高的平均 F1 分数（75.70%），优于其他三个匿名基础模型。文章还涵盖了提示设计、操作调优和生产防护栏的最佳实...
+2026-05-18 10:56:36
 
 
 
 ### [OpenAI-与戴尔科技合作，将-Codex-引入混合云和本地企业环境](https://openai.com/index/dell-codex-enterprise-partnership)
 
-2026-05-18 10:00:00 | 标签: OpenAI, Codex, 戴尔科技, 企业 AI, AI 智能体
-
-> OpenAI 宣布与戴尔科技建立战略合作伙伴关系，将 Codex 平台引入企业混合云和本地环境。Codex 每周有超过 400 万开发者使用，其应用范围正从编码扩展到业务工作流，如报告准备、潜在客户筛选和任务协调。此次合作将把 Codex 与用于本地数据治理的戴尔 AI 数据平台以及用于支持 AI 工作负载的戴尔 AI 工厂集成。这使得企业能够将 AI 智能体部署到更接近其内部数据、代码库和业务系统的位置，为大规模生产提供了一条安全且实用的路径。该合作旨在通过解决数据本地化、安全性和与现有基础设施集成等需求，加速企业对 Codex 的采用。
+2026-05-18 10:00:00
 
 
 
 ### [Aderant-借助-Amazon-Quick-实现云运营转型-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/aderant-transforms-cloud-operations-with-amazon-quick/)
 
-2026-05-18 09:26:40 | 标签: Amazon Quick, AI 搜索, 工作流自动化, 云运营, 知识管理
-
-> 这篇来自 AWS 的客座文章详细介绍了法律业务管理软件提供商 Aderant 如何使用 Amazon Quick 统一六个分散的知识系统（Confluence、SharePoint、Git、Jira、Teams、QuickSight）的搜索功能，并实现文档工作流自动化。数周内部署的 CloudOps Helper 机器人，让工程师能够用自然语言提问，并从所有系统中获取综合答案。Amazon Quick Flows 自动创建知识库文章，将创建时间从一小时缩短至 15 分钟。该解决方案带来了可量化的成果：跨平台搜索速度提升 90%，文档创建速度提升 75-85%，CloudOps 团队采用率达到 ...
+2026-05-18 09:26:40
 
 
 
 ### [将-Atlassian-Confluence-Cloud-与-Amazon-Quick-集成-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/integrate-atlassian-confluence-cloud-with-amazon-quick/)
 
-2026-05-18 07:37:55 | 标签: Amazon Quick, Confluence Cloud, 知识库, RAG, OAuth 2.0
-
-> 这篇 AWS 机器学习博客文章详细介绍了如何将 Atlassian Confluence Cloud 与 Amazon Quick 集成，使用户无需切换系统即可对文档进行自然语言搜索和管理。文章阐述了两种主要的集成方法：知识库，用于索引 Confluence 内容以实现语义搜索和 RAG；以及操作，用于连接实时 Confluence API 以执行实时查询和写入操作。指南涵盖了前提条件（Confluence 管理员权限、Quick 订阅）、创建带有可选文档级访问控制的知识库、配置权限，以及为操作集成设置 OAuth 2.0 应用程序。文章强调了减少上下文切换，并通过 Quick 的 AI 驱动...
+2026-05-18 07:37:55
 
 
 
 ### [在-Amazon-Bedrock-AgentCore-中构建自定义代码评估器-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-custom-code-based-evaluators-in-amazon-bedrock-agentcore/)
 
-2026-05-18 07:07:15 | 标签: Amazon Bedrock, AgentCore, 代码评估器, AWS Lambda, 智能体评估
-
-> 这篇 AWS Machine Learning 博客文章详细介绍了 Amazon Bedrock AgentCore 中新的自定义代码评估器功能，旨在将智能体的可靠性从主观评估转变为契约验证的质量。文章指出，虽然 LLM 作为评判者的评估器在帮助性和语气等主观维度上很有用，但生产环境中智能体的许多关键质量方面需要确定性的、基于规则的检查。这些检查包括验证工具响应模式、对照参考数据验证数值精度、强制执行工作流契约合规性以及检测 PII 泄露。文章介绍了一种基于 Lambda 的架构，其中评估器注册到 AgentCore，并可在两种模式下运行：按需模式，用于开发迭代、回归测试和 CI/CD 门禁；...
+2026-05-18 07:07:15
 
 
 
@@ -39744,49 +39710,37 @@
 
 ### [随时随地掌控你的本地-GitHub-会话](https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/)
 
-2026-05-18 16:54:56 | 标签: GitHub Copilot, 远程控制, AI 编程, 开发者体验, CLI
-
-> 这篇来自 GitHub 博客的文章宣布，GitHub Copilot CLI 会话的远程控制功能现已全面可用，可在 github.com 和 GitHub Mobile 应用上使用，同时 VS Code 和 JetBrains IDE 也将支持该功能。该功能允许开发者在本地机器上启动 Copilot 会话，然后使用 `/remote on` 命令使其可从其他设备访问。用户可以实时监控智能体的进度，发送后续指令以中途调整方向，并远程批准权限请求。该工作流旨在跨 CLI、VS Code、网页和移动端保持连续性，使开发者即使远离主工作站也能管理复杂的多智能体任务。文章强调，会话默认是私密的，并且该功...
+2026-05-18 16:54:56
 
 
 
 ### [Grab-如何利用-AI-智能体提升团队生产力](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)
 
-2026-05-18 15:31:16 | 标签: AI 智能体, 多智能体系统, Grab, 数据工程, LLM
-
-> 本文详细介绍了 Grab 的分析数据仓库（ADW）团队如何应对关于其 15000 多张表的重复性问题，并构建了一个多智能体 AI 系统来自动化调查过程。该系统将推理型 LLM（大脑）与专门的智能体（双手）解耦，后者负责查询数据目录、追踪代码血缘以及检查管道健康状态。它包含两条路径：一条是只读调查路径，包含四个智能体（分类器、数据、代码搜索、值班）和一个摘要器；另一条是用于写操作的半自动化增强路径，需要人工审批。文章坦诚地讨论了生产环境中的挑战，如上下文溢出、工具膨胀、危险的代码执行以及用户信任问题，并详细介绍了已实施的解决方案。该系统现在能自主处理大多数标准查询，将解决时间缩短了一个数量级，并...
+2026-05-18 15:31:16
 
 
 
 ### [Anthropic-的-Code-With-Claude-发布托管智能体、主动工作流与能力曲线](https://www.infoq.com/news/2026/05/code-with-claude/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 13:14:00 | 标签: Anthropic, Claude Code, 托管智能体, AI 编程, 开发者平台
-
-> Anthropic 在旧金山举办了 Code with Claude 2026 活动，呈现了一系列会议，涵盖了 Claude Code、Claude 开发者平台的最新更新，以及 GitHub、Vercel、Datadog、Bun 和多家 AI 原生初创公司的合作伙伴部署。主要公告包括 Claude 托管智能体，其专注于基础设施原语，如沙盒代码执行和检查点，并引入了一种顾问策略，该策略使用较小的模型仅在困难情况下调用较大的模型。Dario Amodei 报告了 80 倍的收入增长，并重申了他对 2026 年将出现一家一人独角兽公司的预测。该活动强调了焦点从模型智能向基础设施、工具和工作流设计的转...
+2026-05-18 13:14:00
 
 
 
 ### [上下文是智能体架构革命的关键：与-Baruch-Sadogursky-的对话](https://www.infoq.com/podcasts/context-key-agentic-architecture-revolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 11:00:00 | 标签: 上下文工程, 智能体架构, AI 智能体, 软件架构, 提示工程
-
-> 在这期 InfoQ 播客中，Baruch Sadogursky 讨论了由智能体 AI 驱动的软件架构范式转变。他引入了上下文工程这一严谨学科，以取代提示工程中“巫术”般的不确定性。通过提供结构化的上下文工件，如技能、规则和反馈循环，LLM 可以充当能够解读人类模糊意图的推理机器。这使得规范成为真正的事实来源，而代码则作为可丢弃的输出被生成。对话涵盖了人类架构师在定义需求和验证结果方面持久不变的责任、AI 智能体通过提出澄清性问题来消除歧义的使用方式，以及在当前上下文窗口限制下，为管理从规范重新生成代码而必须采用微服务的必要性。讨论还探讨了这种方法如何实现质量保证的“大幅左移”，使团队能够在代码...
+2026-05-18 11:00:00
 
 
 
 ### [火山引擎联合中科院声学所在-ICASSP-首届低资源音频编解码器挑战赛中取得佳绩](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247519820&idx=1&sn=5077b3def6dc3ab363d7f3c9b0a97462)
 
-2026-05-18 10:20:00 | 标签: 音频编解码器, 低资源, AI Codec, ICASSP, 火山引擎
-
-> 文章报道了火山引擎多媒体实验室与中科院声学所团队在 ICASSP 2026 首届低资源音频编解码器挑战赛（LRAC Challenge）中的优异表现。赛事聚焦于资源受限设备（如嵌入式系统、移动设备）对高效语音编解码器的需求，设有透明编解码器和增强编解码器两个赛道，对延迟、计算复杂度和比特率有严格限制。团队针对赛道 1 提出了 IRIS 端到端 AI Codec 架构，通过轻量化网络设计和多维度优化策略（数据增广、多判别器、多损失函数、梯度直传、二阶段微调）在低复杂度下实现了高音质。针对赛道 2，团队设计了全时频域架构 Enhance-Nanocodec，通过三阶段训练方案，在编码压缩的同时实现...
+2026-05-18 10:20:00
 
 
 
 ### [Cloudflare-和-Stripe-让-AI-智能体能够创建账户、购买域名并部署到生产环境](https://www.infoq.com/news/2026/05/cloudflare-stripe-agent-commerce/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 09:41:00 | 标签: AI 智能体, Cloudflare, Stripe, 智能体商务, 部署
-
-> 本文报道了 Cloudflare 和 Stripe 联合推出的一项新协议，该协议允许 AI 编码智能体自主处理整个部署生命周期。该协议由三个组件构成：发现（智能体查询服务的 REST API 目录）、授权（Stripe 通过 OAuth 或自动账户创建充当身份提供商）和支付（Stripe 令牌化，默认每月 100 美元的消费上限）。端到端流程让智能体能够构建应用、配置 Cloudflare 账户、获取 API 令牌、购买域名并部署到生产环境，仅在涉及法律和财务后果的环节（初始认证、服务条款接受、计费设置和合并决策）设置人工关卡。该协议设计为开放协议，允许任何拥有已登录用户的平台充当编排器。文章...
+2026-05-18 09:41:00
 
 
 

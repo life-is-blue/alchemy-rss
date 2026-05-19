@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-19 08:29:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-19 11:03:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -686,17 +686,13 @@
 
 ### [Vercel-上的-Web-应用防火墙拦截流量免费](https://vercel.com/changelog/web-application-firewall-mitigated-traffic-is-free-on-vercel)
 
-2026-05-18 20:00:00 | 标签: Vercel, Web 应用防火墙, CDN, 成本优化, 安全
-
-> Vercel 宣布，对于其 Web 应用防火墙规则拒绝、质询或限流的任何流量，将不再收取 CDN 请求和快速数据传输费用。这一变化建立在 Vercel 现有的无限免费 DDoS 缓解策略之上。WAF 包含在 CDN 成本中，允许用户创建自定义规则、使用托管规则以及设置速率限制，以处理非 DDoS 的恶意流量，例如爬虫、凭证填充僵尸网络和 API 滥用。对于所有使用 Vercel Firewall 的项目，该费用豁免是自动生效的，无需任何配置。这项策略直接解决了开发者对恶意流量导致意外高额账单的普遍担忧，使 Vercel 平台对开发者来说更具可预测性和成本效益。
+2026-05-18 20:00:00
 
 
 
 ### [Navigation-API-达到基线新可用状态，成为-History-API-的替代方案](https://www.infoq.com/news/2026/05/navigation-api-browser/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 06:33:00 | 标签: Navigation API, History API, 单页应用, Web 开发, 浏览器 API
-
-> 作为 History API 的现代替代品，Navigation API 已于 2026 年 1 月达到基线新可用状态，获得了 Chrome、Edge、Firefox 147 和 Safari 26.2 的支持。文章详细阐述了 History API 的根本缺陷，包括无法检测所有导航触发方式、无法访问完整的历史记录栈，以及 `popstate` 事件行为不一致等问题。新的 API 引入了一个统一的 `navigate` 事件，该事件会为所有导航类型触发；`event.intercept()` 方法用于自动管理 URL 和历史记录；内置的滚动恢复功能以及中止信号。它还允许开发者检查和遍历完整的历...
+2026-05-18 06:33:00
 
 
 

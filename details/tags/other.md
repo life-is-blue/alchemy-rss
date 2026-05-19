@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-19 08:29:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-19 11:03:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3517,25 +3517,19 @@
 
 ### [使用-LoRA/DoRA-微调-NVIDIA-Cosmos-Predict-2.5-生成机器人视频](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
 
-2026-05-18 16:00:21 | 标签: Cosmos Predict 2.5, LoRA, DoRA, 机器人学习, 世界模型
-
-> 这篇来自 Hugging Face 博客上 NVIDIA 团队的文章，为微调 Cosmos Predict 2.5 世界模型以生成机器人视频提供了全面且实用的指南。它针对真实机器人数据采集成本高昂的挑战，提出了一种可扩展的替代方案：使用微调后的视频世界模型生成合成轨迹。指南的核心是使用 LoRA 和 DoRA 进行参数高效微调（PEFT），该方法将小型可训练适配器注入冻结的 20 亿参数模型中，使其在单张 GPU 上即可运行。文章详细介绍了整个流程：环境搭建、GR1-100 数据集准备、使用整流流损失实现训练循环、使用微调后的适配器进行推理，以及使用 Sampson 误差和 LLM 作为评判指...
+2026-05-18 16:00:21
 
 
 
 ### [目击记录：灰翅鸥、褐鹈鹕、雪鹭、加拿大雁](https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything)
 
-2026-05-18 14:51:00 | 标签: 观鸟, 个人博客, 自然, 洛杉矶
-
-> 这是 Simon Willison 博客上的一篇简短个人日记，记录了 2026 年 5 月 18 日在洛杉矶河沿岸的一次晨间散步。作者在参加完 PyCon US 返程途中，分享了四种鸟类的照片和 iNaturalist 观察链接：灰翅鸥、褐鹈鹕、雪鹭和加拿大雁。帖子还提到在天鹅船湖附近看到了幼雁。内容纯属个人观察记录，不包含任何技术分析、代码或与软件工程师及技术专业人士相关的专业见解。
+2026-05-18 14:51:00
 
 
 
 ### [让大模型读懂三千年汉字：中国古文字识别评测基准-Chronicles-OCR-发布](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497826&idx=1&sn=3ef613435d7e460fb6279c8cb5559f60)
 
-2026-05-18 10:18:00 | 标签: 古文字识别, OCR, 多模态大模型, 评测基准, 数字人文
-
-> 本文介绍了由腾讯混元、SSV 数字文化实验室、SSV 技术架构部联合安阳师范学院甲骨文信息处理重点实验室、中科院信工所、南开大学共同发布的 Chronicles-OCR 评测基准。该基准是业界首个覆盖汉字演化完整轨迹（甲骨文、金文、篆书、隶书、楷书、行书、草书七体）的古文字感知评测基准，包含 2800 张专家标注图像。文章详细阐述了阶段自适应标注范式、四大核心任务（跨时代字符检测、细粒度古字识别、古文转写、字体分类），并公布了 28 个主流多模态大模型的评测结果。核心发现包括：在古早字体上端到端检测全军覆没（最强模型 H-mean 仅 16.5%）；即使提供定位框，细粒度识别准确率最高仅 27...
+2026-05-18 10:18:00
 
 
 
@@ -13693,41 +13687,31 @@
 
 ### [Swiggy-使用实时机器学习排序改进搜索自动补全](https://www.infoq.com/news/2026/05/swiggy-autocomplete-rt-ranking/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 14:38:00 | 标签: 机器学习, 搜索自动补全, 实时排序, OpenSearch, 学习排序
-
-> 这篇来自 InfoQ 的文章总结了 Swiggy 关于构建搜索自动补全实时 ML 排序系统的工程博客。该系统用直接在 OpenSearch 内部运行的已学习排序模型，取代了手动调整的启发式排序方法，避免了额外的服务或网络跳转。该架构将工作流程分为两个阶段：使用 OpenSearch 词法检索和基于嵌入的相似性搜索进行候选生成，以及一个排序层，ML 模型在此根据预测的相关性对结果进行重新排序。该排序系统整合了用户交互历史和点击行为等实时信号，这些信号通过特征存储提供。它采用了与 OpenSearch 集成的学习排序方法，通常使用 RankLib 或 XGBoost。一个持续的反馈循环利用实时用户...
+2026-05-18 14:38:00
 
 
 
 ### [Java-新闻综述：OpenJDK-JEPs、Azul-Payara、WildFly、LangChain4j、OpenXava、Google-ADK](https://www.infoq.com/news/2026/05/java-news-roundup-may11-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 12:45:00 | 标签: Java, OpenJDK, JDK 27, Azul Payara, WildFly
-
-> 本文全面综述了截至 2026 年 5 月 11 日当周的 Java 生态系统最新动态。主要亮点包括三个 OpenJDK JEPs（将 G1 设为默认垃圾回收器、默认启用紧凑对象头、以及 Vector API 第十二次孵化）被定位为 JDK 27 的目标特性，同时 Oracle 宣布将在 JDK 27 之后终止对 macOS/x64 端口的维护。Azul 已将 Payara Community 重新品牌为 Azul Payara Community，并发布了 2026 年 5 月版的 Azul Payara 7。WildFly 团队推出了一款名为“wado”的基于 Rust 的新 CLI 工具，...
+2026-05-18 12:45:00
 
 
 
 ### [云原生工程师的产品思维](https://www.infoq.com/presentations/product-cloud-native/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 10:06:00 | 标签: 产品思维, 云原生, 平台工程, 开发者体验, 指标
-
-> Stéphane Di Cesare 和 Cat Morris 在一次会议上发表的演讲认为，云原生工程师应采用产品思维，以更好地展示自身价值并构建更具影响力的工具。演讲围绕四个关键领域展开：产品思维的“是什么和为什么”、在解决方案之前识别问题、选择正确的指标，以及将产品思维融入工程师的角色。演讲者强调，重点应从产出（例如，构建的功能数量）转向成果（例如，对用户和业务目标的影响）。他们以平台团队为例，说明了如何为不同的利益相关者（开发者、财务、审计人员）识别用户价值。Cat Morris 分享了一个个人失败案例：她在未理解根本问题的情况下迁移了构建流水线，并倡导使用双钻模型、客户访谈和机会解决方...
+2026-05-18 10:06:00
 
 
 
 ### [小红书引擎架构团队-ICDE-2026-新成果：CCD-感知编排突破多核-CPU-向量搜索性能天花板](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495272&idx=1&sn=2668ecaeb4fd0d7c4d03b875c0c65277)
 
-2026-05-18 10:03:00 | 标签: 向量检索, CCD 架构, 多核 CPU, 缓存亲和性, 线程编排
-
-> 本文详细介绍了小红书引擎架构团队在 ICDE 2026 上发表的最新研究成果。研究团队系统性地分析了工业级向量 ANNS 服务在 AMD EPYC 多 Chiplet（CCD）架构 CPU 上遇到的核心性能瓶颈，包括跨 CCD 缓存失效、Hot-Hot 同驻导致的缓存污染以及全局任务窃取对缓存亲和性的破坏。针对这些问题，团队提出了一个 CCD 感知的自适应线程编排框架。该框架包含三大核心模块：统一任务提交接口以兼容 HNSW 和 IVF 算法；冷热感知映射调度器，通过贪心双端扫描算法将热表和冷表配对到同一 CCD，实现流量均衡并避免缓存争抢；以及拓扑感知的层级化任务窃取机制，通过三级窃取优先级...
+2026-05-18 10:03:00
 
 
 
 ### [如何在-Python-中清洗时间序列数据](https://www.freecodecamp.org/news/how-to-clean-time-series-data-in-python/)
 
-2026-05-18 09:01:50 | 标签: 时间序列, 数据清洗, Python, pandas, 数据工程
-
-> 本文提供了一份详尽且实用的指南，介绍如何在 Python 中清洗时间序列数据，并强调由于时间顺序的结构性约束，清洗时间序列比清洗表格数据更为复杂。文章逐步讲解了一个完整的清洗流程：从审计以了解数据问题开始，接着介绍重索引到标准频率、使用不同策略（前向填充、时间加权插值、季节性分解插补）处理缺失值、使用滚动 Z 分数、IQR 和孤立森林检测和处理异常值、删除重复项、通过重采样对齐频率、使用 EWMA 和 Savitzky-Golay 滤波器平滑噪声，最后通过自动化模式检查和合理性检查来验证清洗后的数据。本指南全程使用一个模拟的智能电网电压数据集，通过代码示例和输出结果来演示每种技术，并在结尾提供...
+2026-05-18 09:01:50
 
 
 
@@ -34785,11 +34769,11 @@
 
 
 
-### [Cat-Wu-面试了几百个-PM-候选人，几乎没人答对一个问题：AI-产品经理到底应该干什么？](https://baoyu.io/blog/building-agi-pilled-products-cat-wu-head-of-product-claude-code)
+### [两小时激辩：黄仁勋为什么不怕-TPU、不怕华为、不怕出口管制？](https://baoyu.io/blog/jensen-huang-dwarkesh-interview)
 
-2026-04-23T00:00:00.000Z
+2026-04-17T00:00:00.000Z
 
-> 面试几百个 PM 后，Cat Wu 发现大多数人对 AI PM 角色的理解方向不对。
+> 黄仁勋接受 Dwarkesh 两小时专访，从 CUDA 护城河到对华出口管制，每个话题都火力全开。
 
 
 

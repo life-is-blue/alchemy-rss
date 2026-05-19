@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-19 08:29:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-19 11:03:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -536,17 +536,13 @@
 
 ### [Vercel-现已在-GitHub-上提供统一的提交状态](https://vercel.com/changelog/consolidated-commit-status-now-available-for-github)
 
-2026-05-18 20:42:00 | 标签: Vercel, GitHub, Monorepo, CI/CD, 分支保护
-
-> Vercel 的这篇更新日志宣布了一项针对单体仓库的新功能：在 GitHub 拉取请求上提供单一的、统一的提交状态，取代了之前每个项目一个状态的模式。这简化了 GitHub 中的分支保护配置，团队可以一次性定义保护规则，并从各个项目设置中管理哪些 Vercel 项目是合并所必需的。该功能为可选启用，可在项目设置中找到。
+2026-05-18 20:42:00
 
 
 
 ### [在-AWS-上为百万级公司-B2B-平台构建安全的-MCP-服务器](https://www.infoq.com/articles/secure-mcp-server-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-18 11:00:00 | 标签: MCP, 模型上下文协议, AWS, Go, GraphQL
-
-> 本文详细阐述了在 AWS 上设计并实现一个安全的 MCP（模型上下文协议）服务器的过程，该服务器旨在向 LLM 客户端开放一个包含超过一百万公司档案的 B2B 情报平台。作者将 MCP 服务器视为一等生产接口，而非一个简单的演示封装。关键的架构决策包括：在工具层面严格分离读写操作；通过 `--allow-mutations` 标志强制执行默认拒绝变更的策略；以及使用具有限定输入和输出结构的窄且定义明确的工具契约。该服务器使用 Go 语言构建，以 AWS AppSync 上的 GraphQL 作为后端，并通过短期有效的 OIDC 令牌进行身份验证。文章还涵盖了一套全面的测试策略，该策略将模拟单元...
+2026-05-18 11:00:00
 
 
 
