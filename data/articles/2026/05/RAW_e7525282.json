@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e7525282",
+  "title": "Agoda 构建多模态内容系统，弥合旅行发现中图片与评论的鸿沟",
+  "url": "https://www.infoq.com/news/2026/05/agoda-multimodal-content-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-19 14:29:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Agoda has built a <a href=\"https://medium.com/agoda-engineering/say-what-you-see-building-multimodal-content-signals-at-scale-0fa5ee20a02b\">multimodal content system that unifies</a> hotel images and guest reviews into a shared topic-based structure. The goal is to connect visual content and written feedback so users can better understand hotel attributes in a consistent way across images and reviews. The system operates at a very large scale, processing more than 700 million images along with multilingual reviews in over 40 languages.</p>\n   <p><a href=\"https://www.linkedin.com/in/adityakumarray/\">Aditya Kumar Ray</a>, VP at Flyshop, wrote on <a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7447582927309266944/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287447647063049179136%2Curn%3Ali%3AugcPost%3A7447582927309266944%29\">LinkedIn</a>,</p>\n   <blockquote>\n    <p>In modern travel tech, data is no longer just about inventory and pricing; it’s about understanding content context at scale.</p>\n   </blockquote>\n   <p>The core redesign introduces a shared topic taxonomy that replaces fragmented pipelines with a unified semantic layer. Previously, images and reviews were processed separately with independent ranking and retrieval logic, which made it difficult to correlate what users saw in photos with what was described in reviews. This led to an inconsistent interpretation of hotel features across modalities. By introducing topics such as Pool, Breakfast, Room Quality, and Location as shared anchors, the system maps both visual and textual signals into a common representation space.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/05/agoda-multimodal-content-system/news/2026/05/agoda-multimodal-content-system/en/resources/1agodamultimodal-1778985846978.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/agoda-multimodal-content-system/en/resources/1agodamultimodal-1778985846978.jpeg\" rel=\"share\"></p>\n   <p>Maps image tags and review tags into a shared topic taxonomy <em>(Source: <a href=\"https://medium.com/agoda-engineering/say-what-you-see-building-multimodal-content-signals-at-scale-0fa5ee20a02b\">Agoda Blog Post</a>)</em></p>\n   <p>Images are processed using classification models that generate semantic labels such as pool, beach view, and breakfast area, which are normalized into canonical topics. In parallel, reviews are processed through NLP pipelines that extract key phrases, representative snippets, and sentiment signals, all aligned to the same topic taxonomy. This enables each topic to function as a pre-aggregated multimodal package containing curated images, multilingual review excerpts, and sentiment metadata, avoiding runtime joins by precomputing associations offline and serving them through a low-latency retrieval layer.</p>\n   <p>The system is orchestrated using PySpark jobs managed via Kubeflow for large-scale distributed processing of ingestion and enrichment workloads across millions of reviews and hundreds of millions of images. The resulting topic-level artifacts are stored in Couchbase, which acts as the low-latency serving layer for production traffic.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/05/agoda-multimodal-content-system/news/2026/05/agoda-multimodal-content-system/en/resources/1Screenshot 2026-05-16 at 6.20.21 PM-1778985846978.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/agoda-multimodal-content-system/en/resources/1Screenshot 2026-05-16 at 6.20.21 PM-1778985846978.png\" rel=\"share\"></p>\n   <p><em>Multimodal image pipeline (Source: <a href=\"https://medium.com/agoda-engineering/say-what-you-see-building-multimodal-content-signals-at-scale-0fa5ee20a02b\">Agoda Blog Post</a>)</em></p>\n   <p>The design introduces a clear tradeoff between freshness and performance by shifting correlation logic into offline computation and relying on taxonomy stability. While this improves latency and scalability, it also requires careful governance of topic definitions to avoid drift across languages and domains. The multilingual normalization layer ensures consistent mapping of semantically equivalent content across more than 40 languages, which is critical for global consistency.</p>\n   <p>Agoda Engineering stated that the architecture is extensible, allowing integration of additional content sources such as structured property metadata and user-generated media into the same topic framework, strengthening long-term semantic coverage.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Agoda Builds Multimodal Content System to Bridge Images and Reviews in Travel Discovery\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/agoda-multimodal-content-system/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779200940000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Agoda 构建了一个大规模多模态内容系统，将酒店图片和住客评论统一到一个共享的主题分类体系中，实现了跨视觉和文本模态的一致旅行发现体验。",
+  "oneSentenceSummary": "Agoda 构建了一个大规模多模态内容系统，将酒店图片和住客评论统一到一个共享的主题分类体系中，实现了跨视觉和文本模态的一致旅行发现体验。",
+  "summary": "本文详细介绍了 Agoda 工程团队如何重新设计其内容基础设施，以弥合酒店图片与住客评论之间的鸿沟。其核心创新在于一个共享的主题分类体系（例如：泳池、早餐、房间质量、位置），该体系充当统一的语义层。此前，图片和评论在独立的管道中处理，拥有各自的排序和检索逻辑，导致视觉特征与文本反馈难以关联。新系统处理超过 7 亿张图片以及 40 多种语言的多语言评论。图片通过生成语义标签的模型进行分类，这些标签被归一化为规范主题。评论则通过 NLP 管道提取关键短语和情感，并映射到同一分类体系。这使得每个主题都能作为一个预聚合的多模态数据包。该系统使用通过 Kubeflow 编排的 PySpark 作业进行大规模处理，并以 Couchbase 作为低延迟检索层。该设计通过将关联逻辑转移到离线计算，在数据新鲜度和性能之间做出了权衡，因此需要谨慎管理主题定义，以避免跨语言出现偏差。",
+  "mainPoints": [
+    {
+      "point": "共享的主题分类体系将图片和评论统一到一个共同的语义空间。",
+      "explanation": "该系统不再分别处理图片和评论，而是将两者都映射到诸如“泳池”或“位置”这样的规范主题，从而实现对酒店特征跨模态的一致解读。"
+    },
+    {
+      "point": "系统离线预计算多模态数据包，以避免运行时进行关联操作。",
+      "explanation": "每个主题都是一个预聚合的数据包，包含精选图片、多语言评论摘录和情感元数据，通过低延迟检索层为生产流量提供服务。"
+    },
+    {
+      "point": "该架构优先考虑可扩展性和延迟，而非实时数据新鲜度。",
+      "explanation": "通过将关联逻辑转移到离线计算，系统实现了大规模下的高性能，但需要谨慎管理主题定义，以防止跨语言和跨领域出现偏差。"
+    }
+  ],
+  "keyQuotes": [
+    "Agoda 构建了一个多模态内容系统，将酒店图片和住客评论统一到基于共享主题的结构中。",
+    "核心重新设计引入了一个共享的主题分类体系，用统一的语义层取代了碎片化的管道。",
+    "该设计通过将关联逻辑转移到离线计算并依赖分类体系的稳定性，在数据新鲜度和性能之间做出了明确的权衡。"
+  ],
+  "tags": [
+    "多模态 AI",
+    "内容系统",
+    "旅行科技",
+    "NLP",
+    "计算机视觉"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 428,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779200940000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-19 14:29:00"
+}

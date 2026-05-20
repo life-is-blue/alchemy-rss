@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9c43e59d",
+  "title": "使用 Claude Code：HTML 的惊人有效性 | Claude",
+  "url": "https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html",
+  "date": "2026-05-19 16:00:00",
+  "author": "Claude Blog",
+  "siteName": "Claude Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"u-rich-text-blog u-margin-trim w-richtext\">\n   <p>Markdown has become the dominant file format used by agents to communicate with humans. It’s simple, portable, has some rich text capability and is easy for to edit. Claude has even gotten surprisingly good at using ASCII to make diagrams inside of Markdown files.</p>\n   <p>But as agents have become more and more powerful, I’ve found that Markdown has become an increasingly restrictive format. Specifically, I find it difficult to read a Markdown file of more than a hundred lines; I want to use Claude to generate richer visualizations, color and diagrams; and I want to be able to share these outputs more easily.</p>\n   <p>I also am increasingly not editing these files myself, but using them as specs and reference files. When I do make edits, I’m usually prompting Claude to edit them, which removes one of Markdown’s largest benefits.</p>\n   <p>Instead, I’ve started preferring HTML as an output format instead of Markdown and increasingly see this pattern being applied by others on the Claude Code team. In this post, I share why and how our team uses HTML to produce richer, more readable outputs with Claude Code, with <a href=\"https://thariqs.github.io/html-effectiveness/#code-review\" target=\"_blank\">HTML&nbsp;file templates</a> for common use cases you can apply today.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Claude Code 团队主张在智能体生成输出中使用 HTML 而非 Markdown，以实现更丰富的可视化、更好的可读性和更便捷的分享。",
+  "oneSentenceSummary": "Claude Code 团队主张在智能体生成输出中使用 HTML 而非 Markdown，以实现更丰富的可视化、更好的可读性和更便捷的分享。",
+  "summary": "这篇来自 Claude 博客的文章指出，尽管 Markdown 因其简洁性和可移植性一直是智能体与人类沟通的主流格式，但随着智能体能力不断增强，它已变得日益受限。作为 Claude Code 团队的成员，作者解释说，超过一百行的 Markdown 文件难以阅读，缺乏丰富的可视化能力，且不易分享。由于用户越来越多地提示智能体编辑文件而非手动编辑，Markdown 易于手动编辑这一关键优势已逐渐减弱。该团队已转向偏好使用 HTML 作为输出格式，它支持更丰富的可视化、颜色、图表以及更便捷的分享。文章还提供了针对代码审查等常见用例的 HTML 文件模板，读者可立即应用。",
+  "mainPoints": [
+    {
+      "point": "对于强大的 AI 智能体而言，Markdown 已变得过于受限。",
+      "explanation": "随着智能体生成更复杂的输出，Markdown 有限的格式、长文件可读性差以及缺乏丰富的可视化能力成为显著缺陷。"
+    },
+    {
+      "point": "HTML 为智能体输出提供了更丰富的可视化、颜色和图表。",
+      "explanation": "HTML 使智能体能够生成更具可读性和视觉信息量的内容，包括颜色编码的差异对比、图表和结构化布局，这些都是 Markdown 无法实现的。"
+    },
+    {
+      "point": "手动编辑需求的减少削弱了 Markdown 的优势。",
+      "explanation": "由于用户越来越多地提示智能体编辑文件而非手动编辑，Markdown 便于人工编辑的优势价值降低，这使得 HTML 更强大的能力更具吸引力。"
+    }
+  ],
+  "keyQuotes": [
+    "Markdown 已成为智能体与人类沟通的主流文件格式。",
+    "我发现阅读超过一百行的 Markdown 文件很困难；我想使用 Claude 生成更丰富的可视化、颜色和图表。",
+    "我已开始偏好使用 HTML 而非 Markdown 作为输出格式，并越来越多地看到 Claude Code 团队的其他成员也在应用这一模式。"
+  ],
+  "tags": [
+    "Claude Code",
+    "HTML",
+    "Markdown",
+    "AI 编程",
+    "智能体输出"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 89,
+  "wordCount": 198,
+  "domain": "claude.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_154bc38a",
+  "sourceName": "Claude Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779206400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-19 16:00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_de9240e3",
+  "title": "Anthropic 推出 MCP 隧道，实现私有智能体访问内部系统",
+  "url": "https://www.infoq.com/news/2026/05/claude-mcp-tunnels/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-19 19:20:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic has <a href=\"https://claude.com/blog/claude-managed-agents-updates\">expanded</a> its Claude Managed Agents platform with two enterprise-focused capabilities: self-hosted sandboxes and MCP tunnels. The release aims to address a recurring challenge in enterprise AI deployments, where organizations want to use autonomous agents but cannot allow execution environments or internal systems to leave their security perimeter.</p>\n   <p>Self-hosted sandboxes, now available in public beta, allow tool execution to run on infrastructure controlled by the customer or through managed providers such as Cloudflare, Daytona, Modal, and Vercel. While Anthropic continues to manage orchestration, context handling, and recovery logic, the actual execution of tools and workloads happens within customer-controlled environments.</p>\n   <p>The approach provides enterprises with better control over network policies, audit logging, runtime configuration, and data residency. It keeps repositories, files, and services within the existing infrastructure, allowing organizations to manage compute sizing and runtime images for resource-intensive tasks like long-running builds and image generation.</p>\n   <p>The supported sandbox providers expose different infrastructure models. Cloudflare focuses on microVMs, zero-trust networking, and controlled outbound traffic. Daytona offers long-running, stateful environments accessible over SSH or preview URLs. Modal emphasizes AI-focused workloads with scalable CPU and GPU allocation, while Vercel combines sandbox isolation with VPC peering and credential injection at the network boundary.</p>\n   <p>Anthropic also introduced MCP tunnels, currently available in research preview. The feature enables Managed Agents and the Messages API to connect to private Model Context Protocol (MCP) servers without exposing them to the public internet. Instead of opening inbound firewall rules, organizations deploy a lightweight gateway that establishes an outbound encrypted connection to Anthropic infrastructure.</p>\n   <p>The company positions MCP tunnels as a way to expose internal databases, APIs, ticketing systems, and knowledge bases to agents while maintaining existing security boundaries. The feature is managed through organization settings in the Claude Console.</p>\n   <p>The announcement reflects growing enterprise demand for operational controls around AI agents, particularly in regulated environments where security reviews often slow deployment. Daksh Trehan <a href=\"https://x.com/DakshTrehan/status/2056661839925461433?s=20\">commented</a>:</p>\n   <blockquote>\n    <p>The compliance team is the real bottleneck for production agents, not the model. Self-hosted sandboxes and MCP tunnels are the layer that lets agents actually run inside the customer's perimeter instead of behind a sandbox the security team takes six weeks to clear.</p>\n   </blockquote>\n   <p>Questions also emerged around how the new networking model integrates with Anthropic’s broader infrastructure. One developer <a href=\"https://x.com/emergencynap/status/2056715220119101782?s=20\">asked</a>:</p>\n   <blockquote>\n    <p>How can we make tunnels work with anthropic connectors that run through anthropic infrastructure?</p>\n   </blockquote>\n   <p>The release reflects a broader trend in the AI industry of separating orchestration from execution. Newer architectures enable enterprises to maintain their own execution environments, data access, and network controls while depending on external providers for model coordination and agent management.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic Introduces MCP Tunnels for Private Agent Access to Internal Systems\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/claude-mcp-tunnels/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779218400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 扩展了其 Claude 托管智能体平台，新增自托管沙箱和 MCP 隧道功能，使企业能够在自身安全边界内运行 AI 智能体，同时保持对执行、数据和网络访问的控制。",
+  "oneSentenceSummary": "Anthropic 扩展了其 Claude 托管智能体平台，新增自托管沙箱和 MCP 隧道功能，使企业能够在自身安全边界内运行 AI 智能体，同时保持对执行、数据和网络访问的控制。",
+  "summary": "Anthropic 为其 Claude 托管智能体平台推出了两项面向企业的功能：自托管沙箱和 MCP 隧道。自托管沙箱现已进入公开测试阶段，允许工具执行在客户控制的基础设施上运行，或通过 Cloudflare、Daytona、Modal 和 Vercel 等托管提供商运行，而 Anthropic 负责协调和上下文处理。这使企业能够更好地控制网络策略、审计日志、数据驻留和计算资源。MCP 隧道（研究预览版）通过一个轻量级网关建立出站加密连接，使托管智能体和 Messages API 能够连接到私有 MCP 服务器，而无需将其暴露在公共互联网上。此次发布解决了一个关键的企业挑战：在受监管环境中部署自主智能体时，安全审查往往会拖慢采用速度。该公告反映了更广泛的行业趋势，即将协调与执行分离，使企业能够在依赖外部提供商进行智能体管理的同时，维护自己的环境。",
+  "mainPoints": [
+    {
+      "point": "自托管沙箱让企业可以在自己的基础设施或通过托管提供商运行智能体工具执行。",
+      "explanation": "Anthropic 负责协调和上下文处理，但实际执行发生在客户控制的环境中，从而提供对网络策略、审计日志和数据驻留的控制。"
+    },
+    {
+      "point": "MCP 隧道能够安全连接到私有内部系统，而无需将其暴露在公共互联网上。",
+      "explanation": "一个轻量级网关建立到 Anthropic 基础设施的出站加密连接，允许智能体访问内部数据库、API 和知识库，同时保持现有的安全边界。"
+    },
+    {
+      "point": "此次发布解决了通常拖慢企业 AI 智能体部署的合规瓶颈。",
+      "explanation": "在受监管环境中，安全团队才是真正的瓶颈。自托管沙箱和 MCP 隧道让智能体在客户边界内运行，绕过了冗长的安全审批流程。"
+    },
+    {
+      "point": "该架构反映了更广泛的行业趋势，即将协调与执行分离。",
+      "explanation": "更新的架构使企业能够维护自己的执行环境、数据访问和网络控制，同时依赖外部提供商进行模型协调和智能体管理。"
+    }
+  ],
+  "keyQuotes": [
+    "合规团队才是生产级智能体的真正瓶颈，而不是模型。自托管沙箱和 MCP 隧道是让智能体真正在客户边界内运行的层级，而不是被困在安全团队需要六周才能清理完毕的沙箱后面。",
+    "自托管沙箱现已进入公开测试阶段，允许工具执行在客户控制的基础设施上运行，或通过 Cloudflare、Daytona、Modal 和 Vercel 等托管提供商运行。",
+    "MCP 隧道使托管智能体和 Messages API 能够连接到私有模型上下文协议（MCP）服务器，而无需将其暴露在公共互联网上。"
+  ],
+  "tags": [
+    "Anthropic",
+    "Claude 托管智能体",
+    "MCP 隧道",
+    "自托管沙箱",
+    "企业 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 430,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779218400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-19 19:20:00"
+}

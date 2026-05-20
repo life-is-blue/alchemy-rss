@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-20 06:26:52 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-20 08:29:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -378,7 +378,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -681,6 +681,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [如何使用-JavaScript-构建基于浏览器的-PDF-水印工具](https://www.freecodecamp.org/news/build-a-pdf-watermark-tool-in-javascript/)
+
+2026-05-19 15:50:51 | 标签: JavaScript, PDF-lib, PDF 水印, 客户端, Web 开发
+
+> 本教程提供了一份逐步指南，教你如何使用 JavaScript 和 PDF-lib 库构建一个基于浏览器的 PDF 水印工具，所有 PDF 操作均在客户端完成。该工具允许用户上传 PDF，添加文本或图像水印，并控制透明度、旋转、位置以及应用水印的页面等属性。整个过程在浏览器本地运行，确保了文档隐私，无需后端服务器。文章涵盖了项目设置、创建上传界面、添加文本和图像水印、位置控制、页面选择以及生成最终可下载的 PDF 文件。此外，还提供了关于性能优化和常见错误（如使用完全不透明或位置不正确）的实用建议。教程最后给出了扩展该工具功能的建议，例如添加数字签名或密码保护。
+
+
+
+### [Vite-8.0-版本：统一的-Rust-打包器，构建速度提升高达-30-倍](https://www.infoq.com/news/2026/05/vite-v8-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-05-19 06:57:00 | 标签: Vite, Rolldown, Rust, 前端构建工具, 性能
+
+> Vite 8.0 作为流行前端构建工具的最新主要版本，引入了自 Vite 2 以来最重大的架构变更：全面迁移至 Rolldown，一个单一的、统一的、基于 Rust 的打包器。这取代了之前开发环境使用 esbuild、生产环境使用 Rollup 的双打包器设置，解决了不一致性问题并减少了维护开销。实际性能提升显著，Linear、Ramp 和 Beehiiv 等公司报告构建时间减少了 57-87%。该版本还包含多项开发者体验增强，例如内置的 tsconfig 路径支持、原生的 emitDecoratorMetadata 以及浏览器控制台转发。一个值得注意的兼容性问题出现在 Yarn 的 Plug...
 
 
 
@@ -1170,13 +1186,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1326,13 +1342,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2826,13 +2842,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4536,13 +4552,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
