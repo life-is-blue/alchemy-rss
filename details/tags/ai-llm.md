@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-20 08:29:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-20 11:03:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4760,33 +4760,25 @@
 
 ### [Google-Cloud-在-I/O-'26-上为智能体开发者带来的新动态](https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud/)
 
-2026-05-20 00:00:00 | 标签: Google Cloud, 智能体开发, Antigravity, Managed Agents API, ADK
-
-> 这篇来自 Google Cloud 博客的文章详细介绍了在 Google I/O '26 上宣布的新智能体开发工具和平台更新。此次发布的核心是一套基于 A2A 协议构建的统一开发工具包，它被组织成一个四层选择阶梯。这四个层级分别是：1) 用于低代码可视化智能体构建的 Agent Studio；2) 新的 Managed Agents API，提供配置优先、智能体即服务的模式；3) Antigravity 2.0 及其 CLI，专注于面向开发者的编码和智能体编排；4) 提供完全代码优先控制的 Agent Development Kit (ADK 2.0)。文章强调这些层级是互补且可互操作的，允许...
+2026-05-20 00:00:00
 
 
 
 ### [Google-I/O-26-在-Google-Cloud-上的创新发布](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud/)
 
-2026-05-20 00:00:00 | 标签: Google I/O, Gemini 3.5, Gemini Omni, Antigravity, 智能体平台
-
-> 这篇来自 Google Cloud 博客的文章总结了 Google I/O 26 上宣布的主要 AI 和平台创新。亮点包括：发布 Gemini 3.5 Flash，这是一款针对智能体和编码任务优化的前沿模型，具有卓越性能和成本效益；Gemini Omni，一款用于生成和编辑视频内容的突破性多模态模型；以及 Google Antigravity 平台的重大扩展，包括企业级安全功能、新的桌面应用和 CLI。文章还介绍了 Gemini Spark，这是面向企业用户的 24/7 全天候个人 AI 智能体，能够跨 Workspace 和其他工具自主执行复杂工作流。其他发布包括新的 Workspace 功...
+2026-05-20 00:00:00
 
 
 
 ### [让-Skill-自己训练自己：8-阶段-Loop、3-层评测、5-维-AND-门控，从此实现自进化](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695568&idx=1&sn=492ca1e98155a9fea668213173cab654)
 
-2026-05-19 00:46:00 | 标签: Skill 自进化, AI Agent, LLM 评测, AutoResearch, Meta-Harness
-
-> 文章从作者对 AI Skill 开发中遇到的稳定性、边界和规则冲突等痛点出发，系统性地提出了一个让 Skill 自我进化的训练框架——skill-evolver。该框架借鉴了深度学习训练范式的类比，将 Skill 视为可训练的对象，并设计了 8 阶段迭代循环、三层评测流水线（L1 快速门卫、L2 Dev Eval、L3 Strict Eval）、5 维 AND 门控机制以及基于原始执行轨迹的 Trace 诊断方法。作者通过让 skill-evolver 自我进化 19 轮（全部通过门控，零回滚）和一个真实的客服问答 Skill 优化案例（召回率从 86% 提升至 98.67%），验证了该框架的...
+2026-05-19 00:46:00
 
 
 
 ### [基于浏览器请求录制与-AI-代码生成的-E2E-接口自动化测试实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560132&idx=1&sn=9cc6429ef4d08a0f4d207cecf56671fd)
 
-2026-05-19 00:32:00 | 标签: E2E自动化测试, AI编程, 浏览器录制, 接口测试, DataWorks
-
-> 文章首先剖析了复杂平台产品（如阿里云 DataWorks）在 E2E 自动化测试中面临的四大痛点：接口数量庞大且无标准文档、接口间存在复杂的数据流依赖、多版本并行演进、认证机制复杂。随后，文章对比了传统人工编码方式（需 5-6 小时）与“录制+AI”新范式（仅需 20-50 分钟）的效率和准确性。新范式的核心是：1）开发浏览器录制插件，自动捕获并过滤测试过程中的所有业务请求，生成结构化的 JSON 数据；2）利用 AI 编程工具，基于录制数据和自然语言描述的用例，自动完成接口封装、用例编排、数据流传递和代码生成。文章深入分析了录制数据作为“接口真相”的优势，并通过实战示例展示了从录制到代码生成...
+2026-05-19 00:32:00
 
 
 
@@ -12262,49 +12254,37 @@
 
 ### [OlmoEarth-v1.1：更高效的模型系列](https://huggingface.co/blog/allenai/olmoearth-v1-1)
 
-2026-05-19 18:42:37 | 标签: OlmoEarth, 遥感, 高效 AI, Transformer, 令牌化
-
-> 艾伦人工智能研究所（AI2）发布了 OlmoEarth v1.1，这是基于 Transformer 架构的遥感模型系列的更新版本。其核心创新在于重新设计了令牌化策略，将多个分辨率特定的令牌合并为每个空间补丁的单个令牌，从而将令牌序列长度减少多达 3 倍。由于 Transformer 的计算成本与序列长度呈二次方关系，这带来了显著的效率提升。作者详细阐述了挑战：简单合并令牌会导致 m-eurosat kNN 基准测试下降 10 个百分点，他们通过修改预训练方案克服了这一问题。最终结果是，该模型系列在每种规模下运行成本都比 v1 低三倍，从而能够更频繁地刷新行星尺度的地图。这些模型使用与 v1 相...
+2026-05-19 18:42:37
 
 
 
 ### [KPMG-与-Anthropic-达成战略联盟，将-Claude-整合至其核心业务及超过-276，000-名员工的工作流中](https://www.anthropic.com/news/anthropic-kpmg)
 
-2026-05-19 16:00:00 | 标签: KPMG, Anthropic, Claude, 企业 AI, 战略联盟
-
-> 该公告详细介绍了全球最大的专业服务公司之一 KPMG 与 Anthropic 之间的一项战略全球联盟。合作的核心是将 Claude（包括其 Cowork 和 Managed Agents 功能）直接嵌入 KPMG 的 Digital Gateway 平台，该平台供其专业人士和客户用于税务、法律和咨询工作。此集成旨在显著加速工作流程，例如，将构建用于税务法规调整的 AI 智能体的时间从数周缩短至数分钟。此外，KPMG 全球超过 276，000 名员工都将获得 Claude 的访问权限，这建立在此前两年内部采用的基础上。该联盟还指定 KPMG 作为在私募股权投资组合公司中部署 Claude 的首选...
+2026-05-19 16:00:00
 
 
 
 ### [使用-Claude-Code：HTML-的惊人有效性-|-Claude](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html)
 
-2026-05-19 16:00:00 | 标签: Claude Code, HTML, Markdown, AI 编程, 智能体输出
-
-> 这篇来自 Claude 博客的文章指出，尽管 Markdown 因其简洁性和可移植性一直是智能体与人类沟通的主流格式，但随着智能体能力不断增强，它已变得日益受限。作为 Claude Code 团队的成员，作者解释说，超过一百行的 Markdown 文件难以阅读，缺乏丰富的可视化能力，且不易分享。由于用户越来越多地提示智能体编辑文件而非手动编辑，Markdown 易于手动编辑这一关键优势已逐渐减弱。该团队已转向偏好使用 HTML 作为输出格式，它支持更丰富的可视化、颜色、图表以及更便捷的分享。文章还提供了针对代码审查等常见用例的 HTML 文件模板，读者可立即应用。
+2026-05-19 16:00:00
 
 
 
 ### [推进内容溯源，构建更安全、更透明的-AI-生态系统](https://openai.com/index/advancing-content-provenance)
 
-2026-05-19 10:45:00 | 标签: 内容溯源, C2PA, SynthID, AI 安全, 水印
-
-> 本文来自 OpenAI，详细介绍了该公司为加强 AI 生成媒体内容溯源所做的最新努力。鉴于没有任何单一技术是万无一失的，OpenAI 正在采用多层方法。这包括实现 C2PA（内容溯源与真实性联盟）合规，确保元数据签名在跨平台时得到信任和保留。他们还将 Google DeepMind 的 SynthID（一种不可见水印技术）集成到 ChatGPT、Codex 和 OpenAI API 生成的图像中，使溯源信号更能抵抗截图等变换。最后，他们预览了一款公开验证工具，允许用户上传图像并检查这些组合信号，以确定该图像是否由 OpenAI 的工具生成。文章强调，这种结合了开放标准、持久水印和便捷验证的生态...
+2026-05-19 10:45:00
 
 
 
 ### [30W-奖池已就位！手机上的创意-AI-挑战赛，等你瓜分](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501019&idx=1&sn=af3c5b5b315260aeddeea3fd0eaacacd)
 
-2026-05-19 08:30:00 | 标签: AI 挑战赛, 通义实验室, 开发者赛事, 手机 AI
-
-> 这是一篇由通义实验室发布的赛事推广文章，核心内容是宣布一场面向全国开发者的手机端 AI 创意挑战赛。文章主要介绍了赛事的基本信息，包括总奖池 30 万元、参赛对象为全国开发者、赛事主题聚焦于手机上的 AI 创意应用。文章通过视觉元素（图片）来吸引注意力，但正文内容非常简短，缺乏赛事的具体规则、赛程安排、评审标准、参赛方式等关键信息。整体而言，这是一篇典型的赛事预热/推广文案，旨在吸引开发者关注和报名。
+2026-05-19 08:30:00
 
 
 
 ### [五分钟回顾-LLM-的最近六个月](https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything)
 
-2026-05-19 01:09:44 | 标签: LLM, 编码智能体, OpenClaw, Gemini 3.1 Pro, GLM-5.1
-
-> 在这场来自 PyCon US 2026 的注释版闪电演讲中，Simon Willison 涵盖了 2025 年 11 月至 2026 年 5 月期间 LLM 的关键发展。他将 2025 年 11 月视为一个关键转折点，尤其是在编码领域。'最佳'模型的头衔在 Anthropic、OpenAI 和 Google 之间易手了五次。真正的突破在于，由可验证奖励强化学习驱动的编码智能体跨越了质量门槛，从'偶尔可用'变为'基本可用'，成为可靠的日常工具。演讲还涵盖了'Claws'（个人 AI 助手）的兴起，以 OpenClaw 项目为代表，该项目在 11 月时还是一个不起眼的仓库，到 2 月已风靡全球。其...
+2026-05-19 01:09:44
 
 
 
@@ -39790,57 +39770,43 @@
 
 ### [Anthropic-推出-MCP-隧道，实现私有智能体访问内部系统](https://www.infoq.com/news/2026/05/claude-mcp-tunnels/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-19 19:20:00 | 标签: Anthropic, Claude 托管智能体, MCP 隧道, 自托管沙箱, 企业 AI
-
-> Anthropic 为其 Claude 托管智能体平台推出了两项面向企业的功能：自托管沙箱和 MCP 隧道。自托管沙箱现已进入公开测试阶段，允许工具执行在客户控制的基础设施上运行，或通过 Cloudflare、Daytona、Modal 和 Vercel 等托管提供商运行，而 Anthropic 负责协调和上下文处理。这使企业能够更好地控制网络策略、审计日志、数据驻留和计算资源。MCP 隧道（研究预览版）通过一个轻量级网关建立出站加密连接，使托管智能体和 Messages API 能够连接到私有 MCP 服务器，而无需将其暴露在公共互联网上。此次发布解决了一个关键的企业挑战：在受监管环境中部署...
+2026-05-19 19:20:00
 
 
 
 ### [面向编码智能体的可维护性传感器](https://martinfowler.com/articles/sensors-for-coding-agents.html)
 
-2026-05-19 16:38:00 | 标签: AI 编码智能体, 静态代码分析, ESLint, 代码可维护性, 软件工程
-
-> Martin Fowler 探讨了在使用 AI 编码智能体时维护代码库可维护性的挑战，并分享了他使用 AI 重建内部分析仪表盘的经验。他将可维护性定义为让代码在长期内易于修改且风险较低，并指出 AI 智能体在复杂的代码库中会面临与人类开发者类似的问题。文章重点介绍了“传感器”——即为智能体提供反馈以促使其自我纠正的工具。主要探讨的传感器是 ESLint，它配置了针对常见 AI 故障模式的自定义规则，例如函数参数过多、文件长度过长和圈复杂度。一个关键的创新是使用自定义的 ESLint 格式化器来提供指导文本，指示智能体如何处理警告（例如，对类型抑制做出判断，或者将略微提高阈值作为最后手段）。Fo...
+2026-05-19 16:38:00
 
 
 
 ### [Agoda-构建多模态内容系统，弥合旅行发现中图片与评论的鸿沟](https://www.infoq.com/news/2026/05/agoda-multimodal-content-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-19 14:29:00 | 标签: 多模态 AI, 内容系统, 旅行科技, NLP, 计算机视觉
-
-> 本文详细介绍了 Agoda 工程团队如何重新设计其内容基础设施，以弥合酒店图片与住客评论之间的鸿沟。其核心创新在于一个共享的主题分类体系（例如：泳池、早餐、房间质量、位置），该体系充当统一的语义层。此前，图片和评论在独立的管道中处理，拥有各自的排序和检索逻辑，导致视觉特征与文本反馈难以关联。新系统处理超过 7 亿张图片以及 40 多种语言的多语言评论。图片通过生成语义标签的模型进行分类，这些标签被归一化为规范主题。评论则通过 NLP 管道提取关键短语和情感，并映射到同一分类体系。这使得每个主题都能作为一个预聚合的多模态数据包。该系统使用通过 Kubeflow 编排的 PySpark 作业进行大...
+2026-05-19 14:29:00
 
 
 
 ### [宣布在-Cloudflare-上推出-Claude-托管智能体](https://blog.cloudflare.com/claude-managed-agents/)
 
-2026-05-19 14:00:01 | 标签: Claude 托管智能体, Cloudflare, AI 智能体, 沙箱化, 基础设施
-
-> 本文宣布了 Cloudflare 与 Anthropic 之间的一项新集成，使开发者能够利用 Cloudflare 的基础设施来运行 Claude 托管智能体，以实现代码执行、安全性和可观测性。该集成将智能体的推理循环（在 Anthropic 上运行）与其执行环境（在 Cloudflare 上运行）解耦，通过可定制的代理、提供详细指标和 SSH 访问的沙箱控制、适用于大规模场景的轻量级 V8 隔离沙箱，以及通过 Cloudflare Mesh 和 Workers VPC 实现的私有服务连接，增强了安全性。它还内置了浏览器控制、电子邮件和自定义工具扩展等工具，所有这些都可以从默认模板进行部署。文...
+2026-05-19 14:00:01
 
 
 
 ### [赋能未来：构建你的生成式-AI-基础设施栈](https://www.infoq.com/presentations/infrastructure-ai-agent-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-19 12:43:00 | 标签: AI 智能体, GenOS, LLMOps, 生产级 AI, 评估
-
-> 这份来自 InfoQ 的演讲记录详细介绍了 Intuit 在生产环境中构建和扩展 AI 智能体的全面方法。演讲者 Merrin Kurian 阐述了从简单的对话助手到复杂的“为你完成”智能体（能够代表用户执行操作）的演变过程。演讲的核心是介绍 GenOS（生成式 AI 操作系统），这是 Intuit 为加速和扩展 AI 智能体开发而构建的内部平台。关键组件包括用于开发者工具的 AI Workbench、用于编排和工具管理的 GenRuntime，以及用于用户体验的 GenUX。文章强调了基于 LLM 的应用所面临的独特挑战，例如非确定性输出、主观评估标准以及多智能体系统中的复杂故障模式。文章强...
+2026-05-19 12:43:00
 
 
 
 ### [veRL-推出开源-Uni-Agent：为通用-Agent-训练打造统一框架](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247519822&idx=1&sn=593c83efeaade641f9ab13166dbce953)
 
-2026-05-19 05:10:00 | 标签: Uni-Agent, veRL, Agent 框架, 强化学习, 字节跳动
-
-> 本文由字节跳动 veRL 团队发布，介绍了其开源的 Uni-Agent 框架。文章指出，当前开源 Agent 框架在 Benchmark 和单任务验证中表现不错，但在支撑复杂通用场景、规模化运行及训练闭环方面存在系统性断层。Uni-Agent 的核心目标是构建一个贯通构建（Build）、运行（Run）与训练（Train）完整流程的系统。在构建层，它通过将 Agent 核心能力拆解为 model、tool、env 三个模块，实现灵活扩展。在运行层，基于火山引擎 veFaaS Sandbox 提供面向规模化的远程沙盒执行方案，支持万级并发下的安全隔离与性能优化。在训练层，Uni-Agent 可自然...
+2026-05-19 05:10:00
 
 
 
 ### [TencentDB-Agent-Memory-全球正式开源：让-Agent-沉淀经验，让人专注创造](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695568&idx=2&sn=000c9b3c8c00fe6e2fd675360a016edb)
 
-2026-05-19 00:46:00 | 标签: Agent Memory, 分层记忆, 腾讯云, 开源, AI Agent
-
-> 腾讯云数据库团队正式开源了 TencentDB Agent Memory，这是一套采用 MIT 协议的分层记忆引擎，旨在解决 AI Agent 在长周期任务中面临的跨会话记忆断裂、事实与偏好混淆、上下文膨胀等核心问题。项目提出了 L0-L3 的四层记忆架构：原始对话层、原子记忆层、场景归纳层和用户画像层，通过提取-聚合-蒸馏的管道连接各层。在技术实现上，通过上下文卸载和 Mermaid 无限画布技术，将原始工具结果和任务结构移至外部文件，上下文仅保留摘要和索引，从而打破 Token 线性增长。评测数据显示，作为 OpenClaw 插件接入后，最高可节省 61.38% Token，任务通过率相对...
+2026-05-19 00:46:00
 
 
 
@@ -56366,9 +56332,7 @@ http://antirez.com/news/162
 
 ### [世纪大诉讼，马斯克为什么输了？](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568266&idx=1&sn=96a3bdc311c11123771100e180112af8)
 
-2026-05-19 02:46:00 | 标签: 马斯克, OpenAI, 奥特曼, 世纪诉讼, 非营利转型
-
-> 2026 年 5 月 18 日，加州奥克兰联邦法院陪审团裁定，马斯克对 OpenAI 及 CEO 奥特曼提起的诉讼已超过法定诉讼时效，驳回其全部诉求。马斯克的核心指控是 OpenAI 从非营利组织转型为营利性公司，违背了创始时「为人类利益开发 AI」的承诺，要求其交出高达 1340 亿美元的「不义之财」。然而，OpenAI 律师团队通过大量私人短信和邮件证明，马斯克早在 2017 年就已了解并支持营利性转型计划，只是因未能获得控制权而离开。陪审团未对「是否偷窃慈善机构」这一实质问题作出裁决，仅基于时效问题作出判决。文章详细回顾了案件始末，包括双方的核心论点、庭审中的关键证词与证据、以及判决对 ...
+2026-05-19 02:46:00
 
 
 
@@ -70306,9 +70270,7 @@ http://antirez.com/news/162
 
 ### [深入探索-MCP-与-Spring-AI：从协议核心到企业级生产部署全链路指南](https://www.youtube.com/watch?v=gH9bheS0ifU)
 
-2026-05-18 13:44:20 | 标签: MCP, Model Context Protocol, Spring AI, Spring Boot, JSON RPC
-
-> 本次演讲由 James Ward（Agentic AI Foundation 技术委员会 Amazon 代表）和 Maximilian Schellhorn（AWS 首席解决方案架构师）在 Spring I/O 大会上联合呈现，历时 32 分钟，完整演示了 MCP 与 Spring AI 的集成方案，从协议基础原理到生产级企业架构逐层展开。  演讲首先阐明了 LLM 为何需要智能体：无状态模型需要借助记忆、上下文和工具才能具备实际能力。MCP 通过 JSON RPC 标准化了客户端与服务器之间的接口，彻底消除了为每个应用单独编写定制化厂商集成的需求。  演讲主体聚焦于 Spring AI 的实...
+2026-05-18 13:44:20
 
 
 

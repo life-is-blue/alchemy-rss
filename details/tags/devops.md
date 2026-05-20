@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-20 08:29:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-20 11:03:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -536,17 +536,13 @@
 
 ### [TanStack-披露一起复杂的-npm-供应链攻击，42-个包被攻陷](https://www.infoq.com/news/2026/05/tanstack-supply-chain-attack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-19 12:00:00 | 标签: 供应链攻击, npm, GitHub Actions, CI/CD 安全, TanStack
-
-> 本文报道了 TanStack 发布的一份详细的事后分析报告，描述了一起复杂的供应链攻击。攻击者在短短六分钟内攻陷了 42 个 npm 包并发布了 84 个恶意版本。该攻击利用了 GitHub Actions 缓存投毒、不安全的 pull_request_target 工作流以及运行时令牌提取的组合手段，在未直接泄露 npm 凭据的情况下，将恶意代码注入了发布流水线。恶意软件从 AWS、GCP、Kubernetes、Vault、GitHub、SSH 密钥和 npm 配置中窃取凭据，并具备自我传播机制。外部研究人员在 20 分钟内检测到该攻击，从而得以快速缓解。此事件凸显了攻击者将 CI/CD 流...
+2026-05-19 12:00:00
 
 
 
 ### [内核级真相：为什么-eBPF-正在取代用户空间代理实现安全可观测性](https://www.infoq.com/articles/ebpf-for-security-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-19 09:00:00 | 标签: eBPF, 安全可观测性, Kubernetes, Linux 内核, Falco
-
-> 本文提出了一个令人信服的理由，即在 Kubernetes 环境中用基于 eBPF 的检测工具取代传统的用户空间安全监控代理。作者认为，应用程序级别的日志记录和边车代理与它们所监控的工作负载共享相同的权限边界，这使得攻击者可以轻易杀死代理、截断日志或执行无文件载荷。eBPF 通过在系统调用接口（每个进程执行特权操作都必须经过此处）挂载探针来解决这个问题。文章详细介绍了其架构，包括确保内核安全的 eBPF 验证器、分阶段推出策略（观察、告警、执行），以及内核内过滤带来的显著成本节约。文章还比较了用于检测的生产级工具 Falco（CNCF 毕业项目）和用于主动执行的 Tetragon（Cilium ...
+2026-05-19 09:00:00
 
 
 
