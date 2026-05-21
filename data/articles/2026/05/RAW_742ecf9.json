@@ -1,0 +1,63 @@
+{
+  "id": "RAW_742ecf9",
+  "title": "用 Claude Code Routines 构建主动式智能体工作流",
+  "url": "https://www.youtube.com/watch?v=eSP7PLTXNy8",
+  "date": "2026-05-20 12:14:19",
+  "author": "Claude",
+  "siteName": "Claude",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Building Proactive Agent Workflows with Claude Code Routines</h1>\n  <p>In modern software engineering, AI assistants have historically served as reactive applications—utilities that patiently sit in a terminal window waiting for a developer to type a prompt and press enter. At Anthropic's developer workshop, Maya from the Applied AI team introduced <strong>Routines</strong>: a native automation feature inside Claude Code designed to transition AI from an on-demand command-line tool into an active, independent teammate.</p>\n  <hr>\n  <h2>The Problem with Traditional Proactive Architectures</h2>\n  <p>Building proactive workflows that run independently in the background is fully achievable today, but the architectural and infrastructure requirements often become cumbersome. Developers looking to establish continuous automation loops usually face several key friction points:</p>\n  <ul>\n   <li><strong>Infrastructure Management:</strong> Running scripts locally isn't reliable; if a laptop lid closes or loses power, the execution thread terminates. Migrating to serverless or cloud infrastructure means dealing with infrastructure boilerplate like hosting, persistent session tracking, and secret management.</li>\n   <li><strong>Triggering Logic:</strong> Orchestrating workflows necessitates setting up custom cron jobs, spinning up webhook receiver endpoints, and manually writing integration code to catch system notifications.</li>\n   <li><strong>Visibility Deficit:</strong> Standard headless terminal operations are notoriously difficult to monitor. If an autonomous script goes off track, engineers generally have no way to watch progress in real time, steer execution variables, or pause and resume state manually.</li>\n  </ul>\n  <p>To remove this operational boilerplate, Anthropic engineered Routines to execute directly within Claude Code's managed serverless cloud environment.</p>\n  <hr>\n  <h2>Foundational Design Pillars of Routines</h2>\n  <p>Claude Code Routines are constructed around three core capabilities tailored specifically toward continuous operations:</p>\n  <h3>1. Fully Managed Cloud Infrastructure</h3>\n  <p>Because Routines execute in the cloud, sessions run smoothly regardless of your local machine's status. The hosting layer natively maintains your active operational state, environmental contexts, and the secure authorization parameters required by external application dependencies.</p>\n  <h3>2. Omnichannel Trigger Systems</h3>\n  <p>Workflows don't need to be strictly tied to manual inputs. Routines support multiple core trigger configurations:</p>\n  <ul>\n   <li><strong>Schedule-Driven:</strong> Time-based intervals (e.g., executing an environment analysis every Monday morning at 10:00 AM).</li>\n   <li><strong>Event-Driven:</strong> Live system events, including native GitHub repository updates (such as opening a new issue or tracking a pull request modification).</li>\n   <li><strong>Webhook-Driven:</strong> Standard external HTTP POST payloads, passing external data contexts directly into a fresh operational thread.</li>\n  </ul>\n  <h3>3. Interactive, Real-Time Steerability</h3>\n  <p>Unlike typical automated cron systems that execute entirely in the dark, every routine functions as an accessible live environment. Engineers can view active runs through Claude's web panel, CLI interface, or desktop app, allowing them to issue adjustments, inject clarifying guidelines mid-session, or pick up and manually finish a historical automation run.</p>\n  <hr>\n  <h2>Real-World Application: Automating Codebase Documentation</h2>\n  <p>To showcase how Routines operate under production conditions, Maya shared an internal system implemented by Anthropic's own documentation engineers.</p>\n  <p>As community contributions and developer updates to Claude Code scaled by over 200% in short order, keeping user guides and technical reference documentation aligned with the core source code became a massive manual bottleneck. To resolve this, engineers set up an automated Routine through a single terminal command:</p>\n  <pre><code class=\"language-bash\">/schedule \"once a week please review all the new changes merged to main against our documentation repo and create a pr to update docs if you see any changes\"\n</code></pre>\n  <p>When a Routine is initialized, the system automatically steps the user through baseline configuration questions—such as defining precise operational schedules or setting up team communication alerts via Slack.</p>\n  <pre><code>+-----------------------+       +-------------------------+\n| Claude Code Source    | ----&gt; | Routines Cloud Service  |\n| GitHub Repository     |       | (Scheduled Trigger Mon) |\n+-----------------------+       +-------------------------+\n                                             |\n                                             v\n                                +-------------------------+\n                                | Auto-Generates PR for   |\n                                | Documentation Updates   |\n                                +-------------------------+\n                                             |\n                                             v\n                                +-------------------------+\n                                | Pings Engineering Team  |\n                                | via Slack Connector     |\n                                +-------------------------+\n</code></pre>\n  <p>During its scheduled execution, Claude acts upon the exact scope provided, evaluating the functional diff between raw code updates and existing markdown documentation. It checks the latest changes, reviews the updated project changelog, updates documentation pages, builds a fresh pull request, and notifies the team directly on Slack.</p>\n  <hr>\n  <h2>Planning a Custom Production Routine</h2>\n  <p>When translating an existing manual developer workflow into an autonomous routine, engineers must establish parameters across three core architectural phases:</p>\n  <p>| Operational Phase | Key Structural Requirement | Examples | | :--- | :--- | :--- | | <strong>1. The Trigger</strong> | Pinpoint the precise system lifecycle event or schedule required to initiate execution safely. | Scheduled time cadence, a new GitHub issue release, or an incoming webhook payload. | | <strong>2. The Context</strong> | Define the complete environment boundaries and permission layers required for the task. | Specific codebase branch permissions, Google Drive product briefs, or Slack webhooks. | | <strong>3. The Steerability</strong> | Put operational constraints, safety checks, and human review protocols in place to monitor outcomes. | Multi-agent generator-critique code patterns, manual UI confirmation views, or mid-session user input. |</p>\n  <h3>Expanding to Broader Infrastructure Ecosystems</h3>\n  <p>This design framework directly enables a wide range of autonomous operations workflows:</p>\n  <ul>\n   <li><strong>Post-Deployment Validation:</strong> A deployment tool can pass a webhook notice immediately after pushing code. The Routine initiates, securely gathers logs from monitoring setups like Datadog or Grafana, assesses operational health indices, and flags a Slack alert or proceeds with an automated system rollback if an issue surfaces.</li>\n   <li><strong>Backlog Grooming and Optimization:</strong> Product teams can launch weekly routines to sweep project trackers. The agent parses raw user issues, analyzes existing contextual trends, helps prioritize code tasks, and automatically links preliminary draft PRs directly to corresponding feature requests.</li>\n  </ul>\n  <p>By moving away from infrastructure maintenance and delegating recurring operations to serverless cloud runtimes, engineers can focus their efforts where they matter most: refining product logic, processes, and unique domains.</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 工程师 Maya 介绍 Claude Code Routines：一项托管云端自动化功能，让 Claude Code 从被动编码工具进化为能够按计划、GitHub 事件和 Webhook 主动触发工作流的自主智能体队友。",
+  "oneSentenceSummary": "Anthropic 工程师 Maya 介绍 Claude Code Routines：一项托管云端自动化功能，让 Claude Code 从被动编码工具进化为能够按计划、GitHub 事件和 Webhook 主动触发工作流的自主智能体队友。",
+  "summary": "在 Anthropic 「Code with Claude」 开发者大会的这场 20 分钟工作坊中，Applied AI 团队的 Maya 展示了 Routines——Claude Code 内置的全新原生自动化功能，将 AI 辅助从被动响应升级为主动驱动。演讲首先剖析了当前工程师构建主动式智能体时面临的三大痛点：不稳定的本地托管（笔记本合盖即断连）、繁琐的触发基础设施（手动配置 cron 和 Webhook 端点），以及糟糕的会话可见性（无法监控、介入或恢复无头运行中的任务）。Routines 通过在 Anthropic 托管的无服务器云上运行 Claude Code 会话，支持基于时间表和事件的触发器（包括原生 GitHub 事件和自定义 Webhook），并让每个会话都可以通过 Web、CLI 或桌面端实时查看和调控，从而一举解决上述三个问题。Maya 随后演示了一个 Anthropic 内部的真实部署案例：一个每周运行的 Routine，自动对比 Claude Code 源码仓库与文档仓库的差异，为缺口自动生成 Pull Request 并在 Slack 通知团队，整个流程只需一条 `/schedule` 终端命令即可启动。演讲最后提出了一套三步规划框架（触发 → 上下文 → 可操控性）以及两个具体的架构蓝图：部署后健康验证器和 Issue 积压整理智能体，展示工程师如何在无需编写任何基础设施样板代码的情况下，将重复性 DevOps 手动任务转化为自主运行的 Routines。",
+  "mainPoints": [
+    {
+      "point": "Routines 彻底消除构建主动式智能体的基础设施负担",
+      "explanation": "工程师无需自行管理托管、cron 基础设施和认证，只需定义 prompt、关联仓库、可用连接器和触发条件，其余一切由 Claude Code 在 Anthropic 托管云上自动处理，会话生命周期完全独立于开发者的本地机器。"
+    },
+    {
+      "point": "三种触发模式覆盖灵活多样的自动化入口",
+      "explanation": "Routines 支持基于时间的计划触发（如每周一上午 10 点）、原生 GitHub 事件触发（Issue 创建、PR 合并、标签变更），以及接受外部 HTTP POST 请求的自定义 Webhook 端点，完整覆盖开发者工作流的各类入口场景。"
+    },
+    {
+      "point": "每个 Routine 会话全程保持交互性，支持实时调控",
+      "explanation": "与不透明的无头 cron 任务不同，Routine 会话可以随时通过 Claude Web 面板、CLI 或桌面端打开、查看并在执行过程中动态调整方向，在保持完全自主运行能力的同时，依然保留了人工介入的控制权。"
+    },
+    {
+      "point": "三阶段规划框架为高效 Routine 设计提供方法论",
+      "explanation": "设计高质量 Routine 需要在三个维度上做出审慎决策：(1) 触发——触发执行的精确事件或时间计划；(2) 上下文——Claude 所需的仓库、连接器（Drive、Slack、监控工具）和权限；(3) 可操控性——多智能体生成-评审机制、输出验证以及中途人工介入等质量管控手段。"
+    },
+    {
+      "point": "多智能体生成-评审模式将质量管控延伸至自主工作流",
+      "explanation": "团队可以串联两个 Routines：一个负责生成文档 PR，另一个在 PR 创建后自动触发，在人工查看之前留下审查意见——将成熟的多智能体评审模式引入自动化 Routine，确保自主智能体的输出质量可控。"
+    }
+  ],
+  "keyQuotes": [
+    "我们相信，编码智能体不应该等待你按下回车键才开始工作",
+    "现在 Claude Code 是一款非常强大的编码工具，但我们希望把它打造成一位真正强大的编码队友",
+    "Routines 是 Claude Code 内置的全新功能，是一种自动化机制——你只需定义 prompt、要关联的仓库、可用的连接器，以及触发条件，就能启动一个远程 Claude Code 会话",
+    "每个 Routine 本质上都是一个 Claude Code 会话，你可以随时打开它、查看它、跟进、调控，也可以从 Web、CLI 和桌面端恢复运行",
+    "主动式智能体胜过被动式智能体，我们希望 Claude 从工具进化为队友"
+  ],
+  "tags": [
+    "Claude Code",
+    "Routines",
+    "主动式智能体",
+    "智能体工作流",
+    "无服务器自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 916,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_5f307b71",
+  "sourceName": "Claude",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1779279259000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-20 12:14:19"
+}

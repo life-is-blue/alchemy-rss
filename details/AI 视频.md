@@ -1,79 +1,157 @@
-> **更新时间**: 2026-04-26 08:17:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-21 08:29:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Erdős-突破：OpenAI-模型首次实现重大-AI-数学发现](https://www.youtube.com/watch?v=Br4l9YjCyRU)
+
+2026-05-20 19:20:13 | 标签: OpenAI, 数学突破, 组合几何, 代数数论, Erdős 问题
+
+> OpenAI 研究人员以亲历者视角分享了这一历史性 AI 成就：AI 模型首次解决了组合几何领域一个久负盛名的开放问题，这也是该数学子领域最广为人知的未解问题之一。该问题涉及平面上点的排列（即 Erdős 单位距离问题），表面上是纯粹的初等几何题，但其解法却需要代数数论中的深层工具。在此结果出现之前，已有的几何构造方案被普遍认为已接近最优。AI 模型证明，这一构造实际上还可以得到显著改进。关键洞察在于：证明路径需要做出海量极为精密的连续决策，其复杂程度超出了人类数学家系统执行的能力范畴；而 AI 得以穷举探索全部证明可能性，并最终找到一条可行路径。研究人员坦言，看到结果的第一反应是难以置信，这...
+
+
+
+### [用-Claude-Code-Routines-构建主动式智能体工作流](https://www.youtube.com/watch?v=eSP7PLTXNy8)
+
+2026-05-20 12:14:19 | 标签: Claude Code, Routines, 主动式智能体, 智能体工作流, 无服务器自动化
+
+> 在 Anthropic 「Code with Claude」 开发者大会的这场 20 分钟工作坊中，Applied AI 团队的 Maya 展示了 Routines——Claude Code 内置的全新原生自动化功能，将 AI 辅助从被动响应升级为主动驱动。演讲首先剖析了当前工程师构建主动式智能体时面临的三大痛点：不稳定的本地托管（笔记本合盖即断连）、繁琐的触发基础设施（手动配置 cron 和 Webhook 端点），以及糟糕的会话可见性（无法监控、介入或恢复无头运行中的任务）。Routines 通过在 Anthropic 托管的无服务器云上运行 Claude Code 会话，支持基于时间表和...
+
+
+
+### [告别「盯屏守候」：Claude-Code-高级自动化三层框架](https://www.youtube.com/watch?v=wI0ptqCSL0I)
+
+2026-05-20 11:49:28 | 标签: Claude Code, AI 智能体, 验证循环, 多智能体自动化, Chrome MCP
+
+> 在这场大会演讲中，Claude Code 创始工程师 Sid Bidasaria 直击一个日益突出的悖论：AI 模型越来越强大，开发者却要花更多时间盯着屏幕等待结果。他围绕三层架构路线图，系统讲解如何一步步实现「无人值守」工程协作。  第一层是验证循环：让 Claude 按照人类开发者的测试 SOP 自主校验工作成果——写代码、编译、启动运行时、通过 Chrome MCP 或 Playwright 进行浏览器自动化、检查副作用，并持续迭代直至达到预设的成功状态。Sid 以开源项目 Monkeytype 进行了现场演示：Claude 自动启动开发服务器，用 Chrome MCP 操作 UI，发现...
+
+
+
+### [Code-with-Claude-伦敦-2026-开幕主题演讲：Opus-4.7、Advisor-Strategy-与-Routines-全面解析](https://www.youtube.com/watch?v=6amLO7I9xdg)
+
+2026-05-19 19:18:23 | 标签: Claude Code, Anthropic, AI 原生工程, 智能体工作流, MCP Tunnels
+
+> Code with Claude 伦敦 2026 开幕主题演讲是 Anthropic 的旗舰开发者活动，汇聚了模型研究、平台与开发者工具三大团队，共同呈现 AI 原生工程的完整图景。  演讲以一个核心命题破题：从创意到上线产品的距离正在急剧压缩。现实案例包括：Spotify 基于 Claude 构建的迁移智能体每月合并 1000 余个 PR，迁移时间缩短 90%；Binty 的寄养家庭平台将家庭资质审核周期缩短了 20 天。  研究 PM 团队的 Lisa 梳理了从 Opus 3 到 Opus 4.7 再到 Mythos 预览版的模型演进历程。Mythos 在完整 OpenBSD 源码中发现了...
+
+
+
+### [别构建垃圾：AI-智能体成熟度的四个层级](https://www.youtube.com/watch?v=yUmS-F9IX90)
+
+2026-05-19 15:00:06 | 标签: AI 智能体, 智能体架构, 状态机, 看板, 云端智能体
+
+> 在这场技术分享中，Cline 的 Ara Khan 提出了一套清醒务实的 AI 智能体工程框架，反驳了业界对智能体的「集体狂热」。他将构建之旅拆分为四个层级：Level 1 使用现有框架（LangChain、LangGraph）快速验证产品方向；Level 2 从零构建智能体，以自定义状态机为核心，遵循五条基础准则；Level 3 引入看板 UX，并发管理多个推理密集型智能体；Level 4 将智能体部署至云端，支持长时运行与规模化扩展。  Level 2 的五条准则是本次分享的核心。准则一：每个智能体本质上都是一个带条件和终态的递归 while 循环，将其建模为状态机可使工程过程可预期。准则...
+
+
+
+### [LLM-时代的个性化推荐：Spotify-生成式推荐引擎的三大技术支柱](https://www.youtube.com/watch?v=5YSJEP0HWzM)
+
+2026-05-19 13:00:06 | 标签: Spotify, 推荐系统, LLM 个性化, 语义 ID, 软分词
+
+> Shivam Verma 是 Spotify AI Foundation 团队用户表征组的技术负责人，他以第一视角完整讲解了 Spotify 如何为全球 7.5 亿月活用户现代化推荐基础设施。演讲围绕三大核心支柱展开。第一，用户基础建模：Spotify 从基于自编码器的用户嵌入迁移至以 Transformer 为骨干的序列模型，将用户、歌曲和播客节目映射到同一超球面嵌入空间，实现十亿用户规模下的跨内容建模。第二，通过语义 ID 理解内容目录：将 1000 维内容向量压缩为 4-6 个离散层次化 Token，让在 Spotify 数据上微调的开源 LLM（Llama、Qwen）能够自回归地预测用...
+
+
+
+### [构建能持续运行数小时的智能体：Anthropic-工程师揭秘对抗式生成-评估架构](https://www.youtube.com/watch?v=mR-WAvEPRwE)
+
+2026-05-18 13:00:06 | 标签: 长时运行智能体, Anthropic, Claude Code, Agent SDK, 对抗式评估
+
+> 在这场 34 分钟的 AI Engineer 大会技术演讲中，Anthropic 应用 AI 工程师 Ash Prabaker 与 Andrew Wilson 系统回顾并蓝图化了构建长时间运行自主智能体的方法论。  Andrew 首先归纳了导致智能体在长时运行中退化的三类结构性失效：上下文约束（有限的上下文窗口、上下文腐化、以及接近 token 上限时的「上下文焦虑」）、原生规划能力不足，以及输出奉承——模型会对自身不完整的工作盖章放行。  随后 Andrew 梳理了 Claude 模型权重与外部 Agent SDK 脚手架一年来的协同演化历程：自主运行时长从 Opus 3.7 的约 1 小时...
+
+
+
+### [超越代码覆盖率：用-Playwright-实现功能测试，重塑-AI-时代的-TDD-闭环](https://www.youtube.com/watch?v=FWEInOtngmM)
+
+2026-05-16 18:00:06 | 标签: Playwright, 测试驱动开发, 端到端测试, GitHub Copilot, AI 生成代码
+
+> 在这场 22 分钟的 AI Engineer 大会演讲中，微软和 GitHub 高级开发者布道师 Marlene Mhangami 以一组震撼数据开场：GitHub 预计在 2026 年底前录得 140 亿次提交，是去年创纪录数量的 14 倍，其中越来越多的提交由 AI 智能体协同完成。她引用斯坦福大学对 12 万名开发者的研究指出，AI 是一个放大器：整洁的代码库能显著放大 AI 带来的生产力收益，而在混乱代码库中不加约束地使用 AI，只会加速代码腐化，让团队花在重构上的时间远超新功能交付。  演讲的核心论点是对传统「以代码覆盖率为中心的 TDD」的批判。她归纳出 AI 时代的两种失效模式：...
+
+
+
+### [智能体不开站会：构建「后工程师」工程组织的实战案例](https://www.youtube.com/watch?v=VMemhtlsoNk)
+
+2026-05-15 17:00:06 | 标签: AI 智能体, 后工程师组织, 工程组织变革, 轻量设计文档, 智能体代码审查
+
+> 在 AI Engineer 大会上，来自 PFF（Pro Football Focus）的 Mike Spitz 分享了一个将传统工程团队转型为「后工程师」组织的具体案例。从 2025 年底使用 Claude Opus 进行实验开始，PFF 抽调两名工程师组成攻坚小组，通过结合工单数量与代码复杂度的综合衡量方式，最终实现了每日部署量 25 倍于 10 人传统团队的成绩（5 次/天 vs. 每 5 天 1 次），整体产出提升 10 倍，客户质量评分也从 7.0 升至 8.6。  最颠覆性的结果是：Scrum 没能活下来。冲刺计划会、每日站会、冲刺梳理会以及项目经理角色全部被裁撤。取而代之的是智能...
+
+
+
+### [用-AI-让工程团队产出翻倍：Intercom-高级首席工程师-Brian-Scanlan-的-Agent-First-实战](https://www.youtube.com/watch?v=4_VQBbs2iQA)
+
+2026-05-15 13:00:06 | 标签: AI Engineering, Claude Code, 研发效能, Agent-First SDLC, Intercom
+
+> 在这场 AI Engineer 大会演讲中，Brian Scanlan 详细复盘了 Intercom 在 ChatGPT 发布后全公司转向 AI-first 的推进过程。管理层只定了一个硬指标——「人均 R&D 代码变更数」，并公开承诺一年内做到 2X。落地打法围绕三步：第一是自上而下的文化变革，岗位说明书直接写明「不采用 AI 即不达预期」，同时成立专职的 Team 2X；第二是平台收敛，放弃过去对各类编辑器一视同仁的策略，全面押注 Claude 与 Claude Code，并把它接入公司内部所有系统、约定和架构模式；第三是 agent-first 工程原则，工程师必须「向上一层」工作，把工...
+
+
+
+### [OpenAI-Codex-负责人-Tibo-Sio：Codex-如何从开发者工具进化为通用-Agent，并预告-Slash-Goal-与-Auto-Review](https://www.youtube.com/watch?v=DLP9CagE3dU)
+
+2026-05-14 20:28:12 | 标签: OpenAI Codex, AI Agent, 知识工作, Slash Goal, Auto Review
+
+> 在这场 OpenAI Forum 对谈中，Codex 负责人 Tibo Sio 与主持人 Chris Nicholson 一同复盘了 Codex 的关键转向：从面向开发者的云端 Web 工具，演化为运行在用户本地、服务所有知识工作者的通用 Agent。Tibo 指出，即便是工程师，每天真正写代码的时间也只有 20%-30%，而 GPT-5 让长时任务的执行可靠性大幅提升后，产品自然外延到信息搜集、跨团队协同、数据拉取、财务运营、市场调研和会议准备等场景。他现场用一句语音指令，在几分钟内生成了一份旧金山面包店表格，并进一步做成可交互的地图页面；随后他描述自己每天会跑上百个 Codex 任务，把 ...
+
+
+
+### [OpenAI-Imagen-2.0-深度解析：文字渲染、多语言支持与创意-Agent-路线图](https://www.youtube.com/watch?v=bH2nP-aCFjk)
+
+2026-05-14 17:31:22 | 标签: Imagen 2.0, OpenAI, AI 图像生成, 文字渲染, 写实主义
+
+> 本期 OpenAI 播客由主持人 Andrew Maine 与 Adele Lee（产品负责人）及 Kenji（研究员）共同探讨 Imagen 2.0 的发布与市场反响。两位嘉宾将新模型定性为相较于前代 DALL-E 的「文艺复兴」级进步，并重点介绍三项核心突破：大幅提升的文字渲染能力（能生成真实可读的文字与信息图表）、契合亚欧用户需求的多语言支持，以及基于世界知识而非理想化美学的写实图像生成。  用量数据印证了这一影响力：ChatGPT 每周生成超过 15 亿张图像，自发布以来增长超过 50%。Kenji 介绍了内部「Grid Test」评测方法——要求模型正确渲染 100 个随机指定物体—...
+
+
+
 ### [GPT-5.5-发布](https://www.youtube.com/watch?v=blGtYq9mL18)
 
-2026-04-23 18:06:56 | 标签: GPT-5.5, OpenAI, AI 智能体, 自主 AI, LLM
-
-> 这段来自 OpenAI 的视频演示展示了 GPT-5.5，它代表了从对话式 AI 到自主智能体的范式转变。该模型展示了三项核心能力：通过自主逻辑推理和试错在浏览器中解魔方；通过读取 Slack 报告、分析 GitHub 代码、创建拉取请求并在合并后通知团队，自动化完整的软件 Bug 修复工作流；以及将 Excel 电子表格中的原始财务数据转化为精美的 PowerPoint 演示文稿。GPT-5.5 不仅被视为一次模型更新，更是一种人类与计算机交互的新方式——AI 能够理解目标、规划路径，并在无需人类持续干预的情况下跨多个数字工具执行任务。
-
-
-
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
-
-2026-04-23 15:15:06 | 标签: AI 智能体, 生产力, 应用的未来, LLM, 智能体编排
-
-> 在这次演讲中，Kitze 分享了他对生产力工具终生的痴迷，从他 10 岁时的第一个待办事项列表，到构建名为 'Benji' 的统一生活操作系统应用。像 ChatGPT 这样的 LLM 的出现让他意识到传统应用的终结近在眼前。他详细讲述了自己投身开源智能体热潮的经历，使用 Discord 和 Telegram 作为临时生活操作系统界面的挫败感，以及他决定构建自己的多智能体编排工具 'Wolffer' 的过程。Kitze 批评了当前智能体系统的不可靠性和糟糕的用户体验，并预测未来 AI 智能体将主动管理生活的方方面面，仅在关键决策时提示人类。他认为大多数消费级应用将会消失，取而代之的是由强大的设备...
+2026-04-23 18:06:56
 
 
 
 ### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
-2026-04-23 15:15:06 | 标签: AI 辅助编程, 软件工程, 领域驱动设计, 测试驱动开发, 深度模块
+2026-04-23 15:15:06
 
-> 在这次演讲中，Matt Pocock 挑战了流行的“从规格到代码”的 AI 编程方法，认为忽视代码质量和设计会导致“软件熵”和不可维护的系统。他指出了使用 AI 时的三种常见失败模式：AI 不理解开发者的真实意图、AI 在沟通中冗长且不一致、以及 AI 生成的代码无法工作。为了解决这些问题，Pocock 引入了植根于既定软件工程原则的实用技术。他提倡使用“拷问我”技术来对齐设计概念，利用领域驱动设计中的“通用语言”来改善沟通，以及采用测试驱动开发工作流来确保代码的正确性。他论证的核心是，开发者应该专注于创建具有简单接口的“深度模块”，这为 AI 提供了清晰的边界。这使得开发者能够扮演战略架构师...
+
+
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+
+2026-04-23 15:15:06
 
 
 
 ### [SAP：与-CTO-Philipp-Herzig-一起将公司的“操作系统”带入-AI-时代](https://www.youtube.com/watch?v=5u7AjPardvo)
 
-2026-04-23 10:00:18 | 标签: 企业 AI, AI 智能体, SAP, LLM, 评估
-
-> 在这次访谈中，SAP CTO Philipp Herzig 概述了公司始终专注于客户业务成果的长期战略，这一战略使其能够跨越多个技术周期。他详细阐述了 AI 如何在三个层面从根本上重塑企业软件：动态且主动的生成式 UI、通过 AI 智能体变得更加流畅的业务流程，以及统一结构化与非结构化信息的统一数据层。Herzig 指出，主要的工程挑战在于教会 AI 大规模地做正确的事情，并强调了评估和测试驱动开发对于智能体系统的重要性。他还讨论了 LLM 在表格数据预测分析方面的局限性，并介绍了 SAP 的关系型预训练 Transformer（RPT1）模型。对话涵盖了从按席位定价向按用量和按成果定价模式的...
+2026-04-23 10:00:18
 
 
 
 ### [规模化构建生成式图像与视频模型---Sander-Dieleman-Veo-与-Nano-Banana](https://www.youtube.com/watch?v=xOP1PM8fwnk)
 
-2026-04-21 19:33:38 | 标签: 扩散模型, 生成式 AI, 视频生成, Google DeepMind, 潜在空间
-
-> 在这次深入的演讲中，Google DeepMind 的研究科学家 Sander Dieleman 系统地讲解了构建像 Veo 和 Nano Banana 这样的尖端生成模型背后的实践与理论考量。演讲强调了数据整理的关键且常被低估的作用，以及使用学习到的潜在表示（通过自编码器）进行高效建模的必要性。Dieleman 对扩散模型进行了直观的解释，将其视为迭代精炼过程，并将其重新定义为“谱自回归”，解释了它们为何天然适合视觉数据。他涵盖了从 U-Net 到 Transformer 的架构转变、使用 Jax 等工具进行分布式训练的重要性，以及以多样性换取质量的强大技术——无分类器引导。讨论还延伸到用于...
+2026-04-21 19:33:38
 
 
 
 ### [这就是-ChatGPT-图像-2.0](https://www.youtube.com/watch?v=-7JSa_luc6k)
 
-2026-04-21 19:01:59 | 标签: Imagen 2.0, OpenAI, 图像生成, 多模态 AI, AI 产品
-
-> OpenAI 宣布发布 Images 2.0，并将其定位为图像生成领域的‘文艺复兴’。该模型被描述为迄今为止最智能的模型，能够生成具有精确文本、结构化布局和高分辨率的专业级视觉效果。关键进展包括：能够‘思考’并搜索网络以获取准确信息、生成复杂的系统图表和数学证明、支持多语言提示，以及创建连贯的相关图像集（例如，一整本杂志、房屋翻新计划或漫画系列）。这一演变使技术从生成用于欣赏的图像，转向支持实际的创作和生产。
+2026-04-21 19:01:59
 
 
 
 ### [AI-如何改变软件工程：与-Gergely-Orosz-@pragmaticengineer-的对话](https://www.youtube.com/watch?v=CS5Cmz5FssI)
 
-2026-04-21 16:00:06 | 标签: AI 编程, 软件工程, Token Maxing, 科技文化, AI 基础设施
-
-> 本次对 The Pragmatic Engineer 创始人 Gergely Orosz 的采访深入探讨了 AI 对大型科技公司内部软件工程产生的深刻且常常自相矛盾的影响。一个核心主题是‘Token Maxing’的兴起——这是一种由于错误的内部指标和绩效焦虑，工程师人为夸大其 AI token 使用量，导致荒谬和浪费行为的现象。对话探讨了驱动这种行为的管理压力、软件工程师角色向更广泛职责（产品、DevOps、规划）的加速演变，以及管理 AI 智能体与人类团队的区别。Gergely 从内部视角解释了为什么像 Uber、Meta 和 Shopify 这样的公司正在大力投资定制化的内部 AI 基础...
-
-
-
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
-
-2026-04-20 15:15:06 | 标签: AI 智能体, AI 工程, 软件经济学, 应用层, Vercel
-
-> 在 European AI Engineer Summit 的主题演讲中，Vercel CTO Malte Ubl 提出了一个由 AI 智能体塑造未来的全面愿景。他认为，AI 工程是 Web 开发的合法继承者，并将在未来十年成为主导的工程学科。一个核心论点是，智能体使得以前在经济上不可行的软件自动化成为可能，从而导致软件需求爆炸式增长，进而增加了对软件工程师的需求。Ubl 概述了四种当前正在产生投资回报的高价值、实用的智能体原型：7x24 小时运营智能体、压缩研究时间的智能体、挖掘现有内部数据的智能体以及消除繁琐工作的智能体。他观察到基础设施的范式转变，即软件越来越多地由智能体构建和消费，这需...
+2026-04-21 16:00:06
 
 
 
 ### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
-2026-04-20 15:15:06 | 标签: Gemma 4, 开源模型, 边缘 AI, 多模态 AI, 多语言 AI
+2026-04-20 15:15:06
 
-> 来自 Google DeepMind 的 Omar Sanseviero 介绍了在一周前发布的 Gemma 4 系列开放模型。该系列包含从 20 亿到 320 亿参数不等的模型，旨在满足多样化的使用场景。关键创新包括采用逐层嵌入的 E2B（有效 20 亿）架构，该架构大幅减少了内存占用，并能在智能手机和树莓派等边缘设备上高效运行。这些模型具备强大的多模态（图像、视频、音频）和多语言（140 多种语言）能力。演讲展示了设备端代码生成、智能体任务和并行推理的实际演示。它强调了模型的 Apache 2.0 许可证、快速的社区采用（一周内下载量超过 1000 万）以及与 Android Studio ...
+
+
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+
+2026-04-20 15:15:06
 
 
 
@@ -431,7 +509,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -443,7 +521,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 

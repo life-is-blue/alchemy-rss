@@ -1,0 +1,59 @@
+{
+  "id": "RAW_35bc4c3",
+  "title": "Spring Native：构建高性能 Spring 应用的未来之路",
+  "url": "https://www.youtube.com/watch?v=cpHrLgJ-OJY",
+  "date": "2026-05-20 13:24:34",
+  "author": "Spring I/O",
+  "siteName": "Spring I/O",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Spring Native: The Future of Fast and Efficient Spring Applications</h1>\n  <p>Alina Yurenko from the GraalVM team presents the architectural state of Spring Native and details the path toward maximizing performance in the Java ecosystem using GraalVM 25.</p>\n  <h2>GraalVM 25 Ecosystem Roadmap</h2>\n  <p>GraalVM 25 aligns closely with Java 25 as its long-term support (LTS) baseline. This baseline serves as the framework foundation for upcoming releases like Spring Framework 7.0. While Java language enhancements remain a core focus, GraalVM continues investing heavily in polyglot language implementations:</p>\n  <ul>\n   <li><strong>Python:</strong> Highly optimized runtimes capable of processing complex AI and machine learning packages built inside Java execution pathways.</li>\n   <li><strong>JavaScript (Graal.js):</strong> Mature implementations that enable modular enterprise scripting environments inside corporate stacks.</li>\n   <li><strong>WebAssembly:</strong> Comprehensive tools that allow developers to run WebAssembly payloads on GraalVM or cross-compile full Java microservices directly into WebAssembly modules for browser and edge runtime runtimes.</li>\n  </ul>\n  <h2>Deep Dive on Profile Guided Optimization (PGO)</h2>\n  <p>Traditional Java Virtual Machines optimize processing capabilities using dynamic runtime profiling, analyzing application patterns natively as code operates to trigger optimized compilation branches. Ahead-Of-Time (AOT) binaries face unique constraints because they lack native visibility into deployment workloads.</p>\n  <p>To balance build simplicity against peak framework capabilities, GraalVM delivers <strong>Machine Learning Profile Guided Optimization (MLPGO)</strong>. A pre-trained ML model processes underlying application logic directly during structural compilation pipelines. It infers code logic distributions, identifying probable paths for execution parameters (such as <code>if</code> statements) to optimize compilation boundaries without standard multi-step profiling deployments.</p>\n  <h2>Live Performance Benchmarking</h2>\n  <p>Using the classic Spring Pet Clinic benchmark, multiple build structures show distinct processing profiles under live request load testing:</p>\n  <ul>\n   <li><strong>Baseline JVM:</strong> Demonstrates solid peak throughput but carries structural startup overhead (averaging 4 seconds locally).</li>\n   <li><strong>Standard Native Image (-O2):</strong> Restores immediate start timelines, delivering baseline operational performance at roughly 757 requests per second.</li>\n   <li><strong>Optimized AOT Compiler (-O3 without ML):</strong> Elevates request processing through higher internal optimization loops.</li>\n   <li><strong>Optimized AOT Compiler (-O3 with ML Profile Inference):</strong> Capitalizes on embedded code heuristic modeling to push peak system throughput significantly higher.</li>\n   <li><strong>Full Two-Step User PGO:</strong> Leverages real-world profiling data coupled with the G1 Garbage Collector to deliver the highest performance margins, reaching 1,163 requests per second while capping core Resident Set Size (RSS) memory utilization to just over 200 megabytes under active system load.</li>\n  </ul>\n  <p>Whether choosing automated <code>-O3</code> compilation flags for rapid CI/CD build environments or deploying strict two-stage custom PGO graphs for extreme low-latency environments, GraalVM 25 provides reliable production foundations for high-scale enterprise frameworks.</p>\n </body>\n</html>",
+  "aiSummary": "GraalVM 团队工程师 Alina Yurenko 在 Spring I/O 2026 上通过实时 benchmark，对比 JVM 基线、带 MLPGO 的 Native Image 与用户自采 PGO，系统讲解 Spring Native 的性能优化策略。",
+  "oneSentenceSummary": "GraalVM 团队工程师 Alina Yurenko 在 Spring I/O 2026 上通过实时 benchmark，对比 JVM 基线、带 MLPGO 的 Native Image 与用户自采 PGO，系统讲解 Spring Native 的性能优化策略。",
+  "summary": "GraalVM 团队的 Alina Yurenko 在 Spring I/O 2026 上发表了以 demo 为核心的演讲，全面介绍 Spring Native 与 GraalVM 25 的现状及近期路线图。演讲以 GraalVM 25 生态路线图开篇：Java 25 确立为稳定 LTS 基线（与 Spring Framework 7.0 对齐），持续投入多语言运行时（Python 面向 AI/ML 负载、Graal.js 面向企业脚本、WebAssembly 面向浏览器与边缘场景），并预告 GraalVM 在 AI 领域的后续能力。\n\n演讲的核心技术部分深入解析了 Native Image 的 PGO（配置文件引导优化）机制。JVM 可通过运行时动态 profiling 获得峰值吞吐，但 AOT 编译的 Native Image 二进制文件天然缺乏这一能力。GraalVM 为此提供两种策略：一是经典两步 PGO，即先构建插桩二进制、采集真实运行时 profile，再重新构建生产版本；二是 MLPGO（ML 驱动的 profile 推断），将预训练 ML 模型直接内嵌到编译器中，在不需要多阶段部署的情况下推断执行概率（如分支可能性），并结合 Graal 编译器内部的 CPU 周期开销模型共同指导优化决策。\n\n实时 benchmark 环节在真实多端点负载下对 Spring Pet Clinic 进行四种配置的横向对比：JVM 基线（4 秒启动，峰值吞吐最高）、-O2 标准 Native Image（757 req/s）、-O3+MLPGO Native Image，以及搭配 G1 GC 的完整两步用户 PGO（1163 req/s，活跃负载下峰值 RSS 略超 200 MB）。实践建议清晰明确：希望单次构建即获得良好峰值吞吐的 CI/CD 流水线选 -O3+MLPGO；延迟敏感、高负载的生产环境则选完整用户 PGO，以换取最大性能。演讲还特别强调了内存效率这一常被忽视的 Native Image 优势——相较于启动时间，内存节省在生产环境中同样具有显著价值。",
+  "mainPoints": [
+    {
+      "point": "GraalVM 25 以 Java 25 为 LTS 基线，与 Spring Framework 7.0 对齐，同时拓展对 Python、Graal.js 和 WebAssembly 的多语言支持。",
+      "explanation": "这一对齐简化了企业 Spring 团队的依赖管理，标志着稳定的多年技术基础已然就位。多语言扩展尤为值得关注：Python 面向 AI/ML 嵌入场景，WebAssembly 面向浏览器与边缘目标，使 GraalVM 的价值远超纯 Java 用例。"
+    },
+    {
+      "point": "MLPGO（ML 驱动的 profile 推断）在编译时嵌入预训练 ML 模型，通过预测执行分支概率，让 Native Image 单步构建即可达到接近传统 PGO 的峰值吞吐。",
+      "explanation": "与经典两步 PGO 不同，MLPGO 无需插桩部署或 profile 采集阶段。嵌入模型在 AOT 构建期间分析应用代码，并结合编译器内部的 CPU 周期开销模型共同指导优化决策，大幅降低了高吞吐 Native Image 部署的运维门槛。"
+    },
+    {
+      "point": "Pet Clinic 实时 benchmark 显示，-O3+MLPGO 与完整用户 PGO 配置的 Native Image 在显著活跃负载下可达 1163 req/s，峰值 RSS 略超 200 MB。",
+      "explanation": "-O2 标准 Native Image 达到 757 req/s，每个优化层级均带来可观的吞吐提升。在活跃负载（而非空闲状态）下 200 MB RSS 的数据，印证了 Native Image 除启动时间优势外同样具备内存效率价值，在注重成本的云部署场景中尤为突出。"
+    },
+    {
+      "point": "实践决策框架：追求简便 CI/CD 构建与良好峰值性能时选 -O3+MLPGO；延迟敏感、高负载的生产环境则选两步用户 PGO 以榨取极限性能。",
+      "explanation": "这一清晰的权衡指南直接回应了团队在采用 PGO 时的常见顾虑——两次构建的复杂性。MLPGO 为大多数团队消除了这道门槛，同时相较默认 -O2 编译提供了显著的吞吐提升。"
+    }
+  ],
+  "keyQuotes": [
+    "目前我们将继续以 Java 25 作为基线，这也将是我们稳定版本的方向。",
+    "我们的做法是使用 PGO，也就是配置文件引导优化，基本上需要进行两次构建。",
+    "在 2026 年，在 AI 和 ML 无处不在的今天，我们理应能够直接审视应用程序，以一定的准确度预测它在运行时的行为。",
+    "Native Image 通常因启动速度或打包体积而被关注，但我认为内存占用往往没有得到足够的重视和强调——而内存，在当下是相当昂贵的资源。",
+    "如果你希望部署简单并享受 ML 驱动的峰值性能，建议选择 -O3 性能优化级别；如果想要 Native Image 能给你的绝对最大值，请使用用户自采 PGO。"
+  ],
+  "tags": [
+    "Spring Native",
+    "GraalVM",
+    "Native Image",
+    "PGO",
+    "MLPGO"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 404,
+  "domain": "youtube.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dd9239",
+  "sourceName": "Spring I/O",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1779283474000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-20 13:24:34"
+}

@@ -1,15 +1,21 @@
-> **更新时间**: 2026-04-07 08:13:34 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-21 08:29:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 播客
 
 
 
 
+### [人类和-AI-Agent-的最佳配合方式，还没被发明｜对谈-Paperboy](https://www.xiaoyuzhoufm.com/episode/6a0be0cfe1eb34a939abced5)
+
+2026-05-20 16:00:00 | 标签: AI Agent, OS层上下文, Session-based, Proactive Agent, 个性化记忆
+
+> 本期播客深度访谈了 Paperboy 团队（John Yang 与 Jett Chen），讨论了当前 AI Agent 产品形态的根本性问题。John 提出核心论点：人类和 AI 的最佳协作方式尚未被发明，现有 Cursor、Manus、Claude Code 等产品存在 Session-based（上下文不连续）、Reactive（被动等待 prompt）和缺乏个性化记忆三大缺陷。Paperboy 的解决方案是从 OS 层面收集用户屏幕、键盘、鼠标等操作数据，构建持续性的 Context Layer 和记忆系统，使 Agent 能主动学习用户习惯并实时提供帮助。团队在内部实践中已实现多个场景...
+
+
+
 ### [“AGI-来了？我用了一周，头皮发麻“｜对谈-Moxt-联合创始人张昊然：定义-AI-原生协同新范式](https://www.xiaoyuzhoufm.com/episode/69ca3aa4b977fb2c479fe088)
 
-2026-04-06 16:00:00 | 标签: AI Native, Moxt, AI Agent, 协作工具, AGI
-
-> 本期播客深入探讨了 AI 如何从工具演变为协作伙伴的过程。嘉宾张昊然（原猿辅导/Motiff 核心成员）分享了其新产品 Moxt 的设计哲学：构建一个 AI Native Workspace。Moxt 的核心逻辑在于「原教旨主义」：采用 AI 易读的 Markdown、CSV 和 HTML 格式替代传统的 Office 套件，并基于文件系统（OS 级别）而非复杂的知识库结构，以最大程度减少 AI 处理时的信息损耗。产品引入了「AI 同事」概念（如 MOMO、增长天王、批评家），这些 Agent 具备独立身份、目标驱动的主动性和基于记忆的成长性。讨论还涉及了传统协同软件（如飞书、Notion）在...
+2026-04-06 16:00:00
 
 
 

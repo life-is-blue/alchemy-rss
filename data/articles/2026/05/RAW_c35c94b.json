@@ -1,0 +1,63 @@
+{
+  "id": "RAW_c35c94b",
+  "title": "人类和 AI Agent 的最佳配合方式，还没被发明｜对谈 Paperboy",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6a0be0cfe1eb34a939abced5",
+  "date": "2026-05-20 16:00:00",
+  "author": "十字路口Crossing",
+  "siteName": "十字路口Crossing",
+  "content": "<html>\n <head></head>\n <body>\n  <figure>\n   <img src=\"https://image.jido.dev/20251116223437_fl43ndayisgcygmsnzpnedykg7t8.png\">\n  </figure>\n  <p><span>🚥 本周，十字路口的嘉宾是 Paperboy（</span><a href=\"https://www.paperboy.com\"><span>www.paperboy.com</span></a><span>）团队。John Yang 21 岁，CEO。Jett Chen 19 岁，CMU 大一在读，同时是 founding engineer。Paperboy 团队 12 人，10 位工程师，融资 470 万美金。</span></p>\n  <p><span>John 认为：</span><strong><span>人类和 AI Agent 配合工作的最佳方式，很可能还没被发明出来。</span></strong><span>虽然已经有了 Claude Code、Codex、Manus、OpenClaw，但它们本质上都是 session-based + prompt-based。用户需要打开一个窗口，输入 prompt，等完成，关掉。下次从零开始。</span></p>\n  <p><strong><span>Paperboy 正在尝试找到一种更自然、更连续、更可协作的 Agent 界面与记忆结构</span></strong><span>——Agent 应该通过观察你用电脑来自己学习，用 IM 而不是 session 来组织对话，主动找你，而不是等你 prompt。</span></p>\n  <p><span>如果你在做 AI 产品、AI infra、或正在思考 Agent 如何进入团队工作流，希望这期内容会给你启发。</span></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20260520221643_nrlAcfOvO4ReC3jLrU6fyta6nOQ_.png\">\n  </figure>\n  <img src=\"https://image.jido.dev/20260520221643_nsdhNNkmLwX7N80ad69_9eLwj8z1.png\" alt=\"\">\n  <p></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20260520221643_njJOW2EAtJ-qwHD_wifKu1UcBUMU.png\">\n  </figure>\n  <p><span>🎬 我们的视频播客已同步上线于 @Koji杨远骋 的视频号、</span><a href=\"https://www.xiaohongshu.com/user/profile/548251dce779893bcf3f77bc\"><span>小红书</span></a><span>、</span><a href=\"https://space.bilibili.com/505301413\"><span>哔哩哔哩</span></a><span>、</span><a href=\"https://www.youtube.com/@kojiyang\"><span>Youtube</span></a><span> 等平台。</span></p>\n  <p><span>📒 文字版已发布于 @十字路口Crossing 公众号。</span></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20251116223437_fuotj4nvinqsdpnmgjvnzcutdkid.png\">\n  </figure>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">00:00</a></span></strong></span><strong><span> 快问快答</span></strong></p>\n  <ul>\n   <li>\n    <p><span>年龄、毕业院校、MBTI 与星座、一句话介绍 Paperboy、融资情况、收入与利润、团队规模、创业前经历</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">01:59</a></span></strong></span><strong><span> 起点：现在的 AI 产品，我用着不爽</span></strong></p>\n  <ul>\n   <li>\n    <p><span>今天的 AI 产品都有一个共同的问题：你必须把文件、邮件、个人信息手动扔进对话框，然后对话完就消失了。</span></p>\n   </li>\n   <li>\n    <p><span>三个核心痛点：不该这样协作，不该这样留下历史，不该这样主动。</span></p>\n   </li>\n   <li>\n    <p><span>「人类和 AI 配合工作的最佳方式，很可能还没有被发明出来。」</span></p>\n   </li>\n   <li>\n    <p><span>现有的 Chatbot 和 Agent 产品形态是 AI 时代的「默认答案」，而默认答案几乎从不是最优解。</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">06:21</a></span></strong></span><strong><span> Claude Code 轰炸之下</span></strong></p>\n  <ul>\n   <li>\n    <p><span>Agent 赛道的三个机会：一，让 agent 真正从用户环境中学习；二，足够个性化，做到主动的同时不造成干扰；三，使用体验必须极其直觉——「你不该像学新工具一样学怎么用它。」</span></p>\n   </li>\n   <li>\n    <p><span>这三点依然要靠人类团队，市场上冒出的新东西还没有打破这个框架。</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">08:01</a></span></strong></span><strong><span> Agent 的两大问题</span></strong></p>\n  <blockquote>\n   <p><span>Cursor 和 Manus 是目前最成功的 agent 形态，但 John 说它们有两个根本性的问题——这直接定义了 Paperboy 要做的事。</span></p>\n  </blockquote>\n  <ul>\n   <li>\n    <p><strong><span>问题</span></strong><span>一：</span><strong><span>基于 Session</span></strong><span>。你有一堆工作区、一堆对话，每次开新 session 就像重新认识一次，context 不跟着你走。</span></p>\n   </li>\n   <li>\n    <p><strong><span>问题</span></strong><span>二：</span><strong><span>Reactive（被动）</span></strong><span>。你必须先问，它才回答。</span><a href=\"http://Agent.md\"><span>Agent.md</span></a><span> 文件要主动维护。</span></p>\n   </li>\n   <li>\n    <p><span>Agent 应该知道你的鼠标移动、视频音频、所有电脑活动——context 应该比 context window 长得多。</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">14:21</a></span></strong></span><strong><span> 屏幕数据成了行业共识之后</span></strong></p>\n  <blockquote>\n   <p><span>「收集用户屏幕数据去构建 Context Layer，已经一定程度上成为行业共识。」</span></p>\n  </blockquote>\n  <ul>\n   <li>\n    <p><span>Codex、Littlebird 在做，各路玩家都在做，但接下来怎么做——是预测用户下一个 Keystroke，还是预测他接下来一个小时要做什么——还没有人找到最佳”配方“。</span></p>\n   </li>\n   <li>\n    <p><span>这个领域需要大量 engineering 和 research，「在今天，对一家公司来说，探索这个区域还是一个非常好的选择。」</span></p>\n   </li>\n  </ul>\n  <hr>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">16:46</a></span></strong></span><strong><span> Mini Vivian &amp; Auto John</span></strong></p>\n  <ul>\n   <li>\n    <p><span>Mini Vivian 是团队在内部 Slack 里训练出来的 Paperboy 实例，理解 Vivian 曾经说过的所有话、她的判断品味、她的招聘标准。</span></p>\n   </li>\n   <li>\n    <p><span>它能帮 Vivian 从 GitHub、小红书、推特挖掘候选人。</span></p>\n   </li>\n   <li>\n    <p><span>和 Auto John（John 的 agent 分身）聊天，有时候比直接找 John 更顺。</span></p>\n   </li>\n   <li>\n    <p><span>「期待我可以直接躺平，让 Auto John 成为比我更聪明的存在。」</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">27:36</a></span></strong></span><strong><span> 微信群聊，启发了界面设计</span></strong></p>\n  <ul>\n   <li>\n    <p><span>不同角色的「侧边栏」完全不同，如果每人一个定制版，根本没法做成产品。</span></p>\n   </li>\n   <li>\n    <p><span>转机来自微信——同一批人，可以同时存在于多个主题不同的群组里，这是人类组织信息最自然的方式，而且不会让人觉得烦。</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">33:36</a></span></strong></span><strong><span> The Last Interface 与五种速度</span></strong></p>\n  <ul>\n   <li>\n    <p><span>Paperboy 目前唯一一篇 blog 标题叫「The Last Interface」——context 的速度层级，决定了产品形态。</span></p>\n   </li>\n   <li>\n    <p><span>「节奏分层」理论（Pace Layers）：时尚、商业、基础设施各自以不同的节奏变化。</span></p>\n   </li>\n   <li>\n    <p><span>映射到 AI 产品：1 秒内的 task 可能最好的形式是 autocomplete；几小时的 task 用 IM；更长的 time horizon，产品形态还是「一个非常值得被探索的区域」。</span></p>\n   </li>\n   <li>\n    <p><span>「五种速度」不是说 Paperboy 真的只做五种，而是一个思考框架：你在哪个速度层的 automation 上，直接决定了你应该做什么样的产品。</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">42:09</a></span></strong></span><strong><span> 两种工程师、一本书、一个教练</span></strong></p>\n  <ul>\n   <li>\n    <p><span>12 人的团队，John 说他招的是两种完全不同的人。</span></p>\n   </li>\n   <li>\n    <p><span>第一种：像 Jett 这样——年轻、高智商、充满创造力，能为每一个难题极速搭出 prototype。第二种：领域基本功极度扎实的人，比如来自 AWS 做过 Windows 内核开发的工程师，来负责底层基建。</span></p>\n   </li>\n   <li>\n    <p><span>管理经验几乎全靠自学：《格鲁夫给经理人的第一课》、《创业维艰》、《万亿美元教练》——以及和一位前 VC 高管出身的 CEO 教练每周一小时。</span></p>\n   </li>\n   <li>\n    <p><span>找教练比心理治疗好太多，原因是：「你可以谈情绪，然后接着谈业务里正在发生的一切。」</span></p>\n   </li>\n  </ul>\n  <p><span>🟢 </span><span class=\"timestamp\"><strong><span><a class=\"timestamp\">48:07</a></span></strong></span><strong><span> 拒绝过 Cognition、Vercel、Sentry，然后呢</span></strong></p>\n  <ul>\n   <li>\n    <p><span>Million 时代，他们收到过来自 Cognition（Devin）、Vercel、Sentry 的收购邀约。</span></p>\n   </li>\n   <li>\n    <p><span>「加入那些公司，某种程度上就像是做一名普通员工，你必须为别人的想法工作。」</span></p>\n   </li>\n   <li>\n    <p><span>最喜欢的 AI 产品？Jett：Codex——「它以最 ambitious 的形式在定义未来的软件工程师是怎么 work 的」，而且核心 agent 是开源的。</span></p>\n   </li>\n  </ul>\n  <figure>\n   <img src=\"https://image.jido.dev/20251116223437_fjshlgnjxbizodfg0m8_fswp1its.png\">\n  </figure>\n  <h2><span>欢迎订阅「十字路口」：</span></h2>\n  <p><span>🚦 我们关注新一代 AI 技术浪潮带来的行业新变化和创业新机会。</span></p>\n  <p><span>🚦 十字路口是乔布斯对苹果公司的一个比喻，形容它站在科技与人文的十字路口，伟大的产品往往诞生在这里。AI 正在给各行各业带来改变，我们寻找、访谈和凝聚新一代 AI 创业者和 AI 时代的积极行动者，和他们一起，探索和拥抱新变化，新的可能性。</span></p>\n  <p><span>👦🏻 &nbsp;主播 Koji：我创办了十字路口，发起了 AI Hacker House 这个新一代 AI 创业者的社群空间，在真格基金担任 Venture Partner（投资合伙人）。我相信科技尤其是 AI 是我们这一代人最大的价值创造机遇。</span><a href=\"https://okjk.co/0JSUes\"><span>Koji 的即刻</span></a><span>，</span><a href=\"https://kojiyang.me/\"><span>Koji 的网站</span></a></p>\n  <p><span>👧🏻 主播 Ronghui：我联合创办了十字路口，在美元 VC 工作过，也做过五年的硅谷驻站记者，关注科技发展和商业故事，欢迎大家找我聊天，和我交流。</span><a href=\"https://okjk.co/0cbnYV\"><span>Ronghui 的即刻</span></a></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20251116223437_fjy0z2wwnwlcggi2i-xbbrsugk67.png\">\n  </figure>\n  <figure>\n   <img src=\"https://image.jido.dev/20251124004100_ft0hq3y8r2c_zjzhbkoxiakpjaoz.png\">\n  </figure>\n  <p></p>\n </body>\n</html>",
+  "aiSummary": "对话 Paperboy 创始人 John Yang 与创始工程师 Jett Chen，深入探讨 Agent 产品形态的三大痛点（Session-based、Reactive、无记忆），并分享通过 OS 层面收集用户上下文、构建个性化 Agent 的实践与探索。",
+  "oneSentenceSummary": "对话 Paperboy 创始人 John Yang 与创始工程师 Jett Chen，深入探讨 Agent 产品形态的三大痛点（Session-based、Reactive、无记忆），并分享通过 OS 层面收集用户上下文、构建个性化 Agent 的实践与探索。",
+  "summary": "本期播客深度访谈了 Paperboy 团队（John Yang 与 Jett Chen），讨论了当前 AI Agent 产品形态的根本性问题。John 提出核心论点：人类和 AI 的最佳协作方式尚未被发明，现有 Cursor、Manus、Claude Code 等产品存在 Session-based（上下文不连续）、Reactive（被动等待 prompt）和缺乏个性化记忆三大缺陷。Paperboy 的解决方案是从 OS 层面收集用户屏幕、键盘、鼠标等操作数据，构建持续性的 Context Layer 和记忆系统，使 Agent 能主动学习用户习惯并实时提供帮助。团队在内部实践中已实现多个场景：通过 Auto John 分身处理 Slack 问答和招聘候选人、通过 Text Completion 功能自动生成 Git commit 和 PR description、以及通过 Agent 监控用户工作效率。此外，John 分享了其产品设计框架「五种速度」理论，以及团队管理经验。节目还讨论了 Paperboy 拒绝来自 Cognition、Vercel 等公司的收购邀约背后的独立创业信念。",
+  "mainPoints": [
+    {
+      "point": "当前主流 Agent 产品存在两大根本性缺陷：Session-based 和 Reactive",
+      "explanation": "Session-based 导致上下文不连续，用户每次新对话都需从零开始构建 context；Reactive 设计使 Agent 必须等待用户主动 prompt 才能行动，缺乏基于用户环境自动学习和 proactive 能力。"
+    },
+    {
+      "point": "通过 OS 层面收集用户操作数据，是构建真正个性化 Agent 的最佳路径",
+      "explanation": "相比直接从微信/iMessage 等应用提取数据，OS 层面的屏幕、键盘、鼠标数据具有更高信息密度和 Scalability，60 分钟使用数据可学到大量用户习惯和判断品味。"
+    },
+    {
+      "point": "Agent 所服务的 task 时间跨度（Time Horizon）不同，应设计不同产品形态",
+      "explanation": "John 提出「五种速度」框架：1 秒内的 task 适合 autocomplete，几小时的 task 适合 IM 式对话，更长时间跨度的 task 产品形态仍是一个值得探索的开放区域。"
+    },
+    {
+      "point": "Paperboy 的 IM 式界面设计受微信群聊启发，解决了侧边栏定制难的问题",
+      "explanation": "同一批人可以同时存在于多个主题不同的群组，这种组织信息的方式自然且不令人厌烦，是 Agent 协作界面的理想范式。"
+    },
+    {
+      "point": "创业公司应专注于三件事：让 Agent 从用户环境学习、实现个性化、使体验极度直觉",
+      "explanation": "John 认为市场新出的工具（如 Claude Code、Codex）都没有超出这三条技术维度的范畴，这些维度仍然靠人类团队推进，创业公司仍有足够空间。"
+    }
+  ],
+  "keyQuotes": [
+    "人类和 AI 配合工作的最佳方式，很可能还没有被发明出来。",
+    "Agent 应该通过观察你用电脑来自己学习，用 IM 而不是 session 来组织对话，主动找你，而不是等你 prompt。",
+    "收集用户屏幕数据去构建 Context Layer，已经一定程度上成为行业共识。",
+    "我不想要 prompt，人类不是用 prompt 思考的。我们发文字，期待对方知道我们在说什么。",
+    "我觉得安全能力对于国家安全是非常重要的一个事情。"
+  ],
+  "tags": [
+    "AI Agent",
+    "OS层上下文",
+    "Session-based",
+    "Proactive Agent",
+    "个性化记忆"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 92,
+  "wordCount": 2238,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8a4d53",
+  "sourceName": "十字路口Crossing",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1779292800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-20 16:00:00"
+}

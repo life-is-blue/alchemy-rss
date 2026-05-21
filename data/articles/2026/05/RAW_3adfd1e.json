@@ -1,0 +1,63 @@
+{
+  "id": "RAW_3adfd1e",
+  "title": "Code with Claude 伦敦 2026 开幕主题演讲：Opus 4.7、Advisor Strategy 与 Routines 全面解析",
+  "url": "https://www.youtube.com/watch?v=6amLO7I9xdg",
+  "date": "2026-05-19 19:18:23",
+  "author": "Claude",
+  "siteName": "Claude",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Code with Claude London 2026: Opening Keynote</h1>\n  <h2>Shifting Engineering paradigms: Collapsing the Distance from Idea to Code</h2>\n  <p>Software development is undergoing a fundamental structural transition. In earlier paradigms, the trajectory from a developer's conceptual idea to a working feature was separated by an increasingly dense layer of tooling friction—including complex build setups, compilers, type-checkers, package managers, and configuration management infrastructure. This configuration overhead systematically prolonged development timelines.</p>\n  <p>The advent of frontier-class agentic models has collapsed this distance. Software engineering is transitioning from active, line-by-line manual code prompting into automated execution loops where engineers provide declarations of intent, and full distributed architectures or implementation features are synthesized autonomously.</p>\n  <h3>Enterprise Velocity Case Studies</h3>\n  <ul>\n   <li><strong>Spotify:</strong> Implemented autonomous agentic workflows running background loops on top of the Claude API infrastructure. By describing repo-migration parameters in natural language, a core agent orchestrated fleets of secondary workers. This engine handles over 1,000 production Pull Requests (PRs) monthly, driving a 90% reduction in end-to-end code migration times.</li>\n   <li><strong>Binty:</strong> Integrated Claude primitives directly into specialized caseworker tooling to streamline foster family licensing pipelines. By automating manual compliance documentation, background review, and licensing flows, the platform reduced the foster family placement lifecycle by 20 full calendar days.</li>\n  </ul>\n  <hr>\n  <h2>Exponential Capabilities &amp; The Research Roadmap</h2>\n  <p>Model progress continues along an exponential vector, characterized by expanding capabilities and compressing deployment intervals. A retrospective analysis illustrates this rapid evolution:</p>\n  <ul>\n   <li><strong>2 Years Prior:</strong> Frontier capabilities were bounded to short, contextual tasks like generating git commit messages.</li>\n   <li><strong>1 Year Prior:</strong> Core iterations such as Opus 4 enabled multi-minute feature builds without persistent human alignment checks.</li>\n   <li><strong>6 Months Prior:</strong> Agentic code loops began operating fully end-to-end overnight, turning out complex production features autonomously.</li>\n   <li><strong>Recent Milestone:</strong> The specialized Mythos preview model successfully ingested the complete OpenBSD source code tree. It successfully isolated a 27-year-old security vulnerability that had evaded human inspectors, fuzzing utilities, and traditional static program analysis pipelines for nearly three decades.</li>\n  </ul>\n  <pre><code>Traditional Adoption Paradigm:\nLinear Organization Path  ======&gt; [ Growing Capability Gap ]\n\nFrontier Engineering Paradigm:\nExponential Model Scaling ======&gt; [ Architecture Ready to Absorb Upgrades ]\n</code></pre>\n  <h3>Task Horizon Projections</h3>\n  <p>Model capability is effectively evaluated by its <strong>Task Horizon</strong>—the exact duration an agentic execution loop can continuously process complex code directives without deviating from core programmatic intent. While the standard baseline a year ago was measured in single-digit minutes, contemporary workflows consistently execute multi-hour operations. Future generations of Claude are engineered to run on a continuous loop. These agents will operate proactively as persistent, always-on engines managing high-level organizational objectives (e.g., maintaining full financial model forecasting accuracy or keeping cross-functional software projects on schedule under shifting parameters).</p>\n  <h3>Architectural Strategies for Engineers</h3>\n  <p>To capture the value of this exponential development curve, developers must shift their architecture strategy from optimizing for present-day models to building infrastructure tailored for incoming capability jumps. Smart agents can often achieve greater velocity when provided generalized operating primitives—such as sandbox execution computing layers and native virtual file systems—rather than highly restricted, custom scaffolding scripts. Rigid, hyper-optimized custom prompt-chain frameworks frequently bottleneck model execution as basic intelligence tiers scale.</p>\n  <hr>\n  <h2>Platform Infrastructure &amp; Security Innovations at Scale</h2>\n  <p>To bridge the gap between linear business workflows and exponential AI capability, new framework primitives have been added to the Claude Platform, focusing on cost efficiency, execution security, and internal network accessibility.</p>\n  <h3>The Advisor Strategy</h3>\n  <p>To counteract the economic constraints of running massive agentic workloads at high volume, the platform provides an automated architectural design known as the <strong>Advisor Strategy</strong>. This primitive splits the execution layer from the evaluation layer within the Messages API:</p>\n  <p>| Operational Tier | Model Allocation | Functionality | Cost Impact | | :--- | :--- | :--- | :--- | | <strong>Execution Layer</strong> | Small/Fast Model (Haiku / Sonnet) | Handles high-volume, line-item codebase changes and simple actions | Drastically lowers standard baseline token burn | | <strong>Advisory Layer</strong> | Frontier Model (Opus Class) | Evaluates plans, catches logical errors, and steps in when execution fails | Maximizes quality while reducing direct workflow costs up to 5x |</p>\n  <h3>Claude Managed Agents: Enterprise Guardrails</h3>\n  <p>Building prototypes is relatively simple, but scaling secure agents inside enterprise networks introduces intense security challenges. New platform extensions address this specifically:</p>\n  <ol>\n   <li><strong>Self-Hosted Sandboxes:</strong> Allows agents to safely perform isolated code changes, script evaluations, and file system edits directly inside the client's own servers. Native integrations are introduced for Daytona, Cloudflare, Vercel, and Modal sandbox infrastructure.</li>\n   <li><strong>Model Context Protocol (MCP) Tunnels:</strong> Addresses firewalled network access requirements. By routing requests through an encrypted gateway gateway (<code>tunnel.anthropic.com</code>), internal enterprise tools, data warehouses, and private microservices can be read by agents securely without exposing private databases over the public internet.</li>\n  </ol>\n  <hr>\n  <h2>Asynchronous Engineering Workflows via Claude Code</h2>\n  <p>The interface footprint for Claude Code spans multiple execution layers, including lightweight command-line interfaces (CLI) for power-user environments, complete IDE extensions for transparent context following, full desktop applications with side-car graphical dashboards, and mobile remote control clients.</p>\n  <h3>Routines: The Shift to Async Self-Prompting</h3>\n  <p>Engineering workflows are shifting heavily from synchronous human-to-agent interactions to asynchronous system execution loops. This model is underpinned by <strong>Routines</strong>—a higher-order orchestration prompt that sets up persistent developer automations. Configured once, routines continuously watch operational endpoints, running code changes on a schedule or spinning up code loops in response to webhook payloads or API requests.</p>\n  <p>Instead of an engineer manually prompting a client tool to resolve an issue, a background routine picks up a newly filed customer ticket or security alert async, triggers an isolated execution sandbox, implements a fix, runs validation checks, and presents the developer with a fully green, verified Pull Request. The default engineering paradigm has fundamentally changed: developers no longer simply prompt code agents; they write higher-order configurations that enable Claude to prompt itself.</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 在 Code with Claude 伦敦 2026 大会上发布完整 AI 原生工程栈：Opus 4.7 与 Mythos 模型路线图、可降低 5 倍成本的 Advisor Strategy、企业级安全沙盒与 MCP Tunnels，以及让 Claude 自主触发自身的 Routines 异步开发范式。",
+  "oneSentenceSummary": "Anthropic 在 Code with Claude 伦敦 2026 大会上发布完整 AI 原生工程栈：Opus 4.7 与 Mythos 模型路线图、可降低 5 倍成本的 Advisor Strategy、企业级安全沙盒与 MCP Tunnels，以及让 Claude 自主触发自身的 Routines 异步开发范式。",
+  "summary": "Code with Claude 伦敦 2026 开幕主题演讲是 Anthropic 的旗舰开发者活动，汇聚了模型研究、平台与开发者工具三大团队，共同呈现 AI 原生工程的完整图景。\n\n演讲以一个核心命题破题：从创意到上线产品的距离正在急剧压缩。现实案例包括：Spotify 基于 Claude 构建的迁移智能体每月合并 1000 余个 PR，迁移时间缩短 90%；Binty 的寄养家庭平台将家庭资质审核周期缩短了 20 天。\n\n研究 PM 团队的 Lisa 梳理了从 Opus 3 到 Opus 4.7 再到 Mythos 预览版的模型演进历程。Mythos 在完整 OpenBSD 源码中发现了一个存在 27 年的漏洞，此前历代人工审查者、模糊测试工具与静态分析器均未能发现。最具前瞻性的概念是「Task Horizon」：模型从一年前可靠运行数分钟，到如今可运行数小时，未来 Claude 新一代将支持持续主动运作。开发者被建议面向下一次能力跃升来设计架构，而非仅针对当前能力，并以通用原语取代刚性 scaffolding。\n\n平台侧发布了 Advisor Strategy：通过 Messages API 将执行层（Haiku 或 Sonnet 级别模型）与顾问层（Opus 级别模型）分离，以最多 5 倍的成本优势实现前沿级别的输出质量。两项 Claude Managed Agents 新特性解决了企业规模化部署的安全瓶颈——Self-Hosted Sandboxes（原生集成 Daytona、Cloudflare、Vercel 和 Modal）让代码在客户私有基础设施内执行；MCP Tunnels 通过加密网关路由智能体请求，使内部工具与数据仓库无需暴露于公网即可访问。\n\nCat 介绍了 Claude Code 从 CLI 到 IDE、桌面应用再到移动端远程控制的界面演进历程，并分享了 Shopify 和 Mercado Libre 已在全公司范围采用 Claude Code 的案例——后者 23000 名工程师的人均 PR 数量提升了 200%。最重要的新原语是 Routines：一次配置的高阶 prompt，可让 Claude Code 按计划或响应 webhook 自主触发，将工程范式从「工程师提示 Claude」转变为「Claude 提示 Claude」。\n\nBoris Cherny 通过现场演示收尾：并行异步 session、竞态条件被自主发现并修复后才标记任务完成、CI autofix 自动将 PR 推至绿色，以及一个 Routine 在夜间自主响应 GitHub issue 并开启已验证 PR。",
+  "mainPoints": [
+    {
+      "point": "模型能力呈指数级增长，而多数组织对 AI 的采纳速度仍是线性的——弥合这一差距是开发者最核心的使命。",
+      "explanation": "Claude 平台的 API 调用量增长了近 17 倍，开发者平均每周使用 Claude 超过 20 小时。Mythos 发现 OpenBSD 27 年前漏洞的案例，直观说明了前沿能力已走到多远；将这种能力转化为可用产品，正是最大的商业机遇所在。"
+    },
+    {
+      "point": "Task Horizon 是理解 AI 进步最具操作价值的指标：从一年前的分钟级，到如今的小时级，再到不久后的持续运行。",
+      "explanation": "随着模型在长时间任务中保持意图不偏移的能力增强，工程工作的本质也在改变——工程师将整块工作流委托给智能体，而非仅仅是单个步骤。未来的 Claude 智能体将主动且持续在线，无需显式指令便能自主推动项目目标的实现。"
+    },
+    {
+      "point": "Advisor Strategy 通过在 Messages API 中将执行与顾问职能分离，让前沿智能在规模化场景下具备经济可行性。",
+      "explanation": "小型、低成本的模型（Haiku 或 Sonnet 级别）承担高频执行任务，在遇到困难时上报给前沿模型（Opus 级别）处理。有客户反馈，以 5 倍更低的成本实现了与前沿模型同等的输出质量，使高并发智能体工作负载具备了实际可行性。"
+    },
+    {
+      "point": "Self-Hosted Sandboxes 与 MCP Tunnels 填补了阻碍企业将智能体系统投入生产的安全空白。",
+      "explanation": "Self-Hosted Sandboxes 允许 Claude 在企业自有私有基础设施（Daytona、Cloudflare、Vercel、Modal）内执行代码。MCP Tunnels 通过 tunnel.anthropic.com 路由智能体请求，使内部数据库和微服务在不暴露于公网的前提下保持可访问性。"
+    },
+    {
+      "point": "Routines 将默认工程范式从「工程师提示 Claude」转变为「Claude 提示 Claude」，实现真正的异步自主开发。",
+      "explanation": "Routines 是一次配置即可反复生效的高阶 prompt，可让 Claude Code 按计划或通过 webhook 和 API 事件触发。配合 CI autofix 与代码审查智能体，工程师醒来便能看到已合并、已验证的 PR，而无需全程盯守流水线。"
+    }
+  ],
+  "keyQuotes": [
+    "现在发生的事情是，这段距离再次在坍缩。你描述一个问题，程序就出现了。这就像计算器的感觉，只不过现在这个计算器能写出分布式系统。",
+    "上个月，Mythos 读完了整个 OpenBSD 源码，发现了一个存在 27 年的漏洞——此前近三十年间，所有人工审查者、所有模糊测试工具、所有静态分析器都没有找到它。",
+    "我用来理解这一切变化的指标，是 Task Horizon——模型能在不跑偏的情况下工作多久。一年前，模型可以可靠地工作几分钟；而今天，大多数用户的智能体已经能运行数小时了。",
+    "我们一次次看到，真正胜出的开发者，是那些架构已经准备好吸收下一次重大能力跃升的人。",
+    "这就是转变所在：默认不再是「我去提示 Claude Code」，默认现在是「让 Claude 去提示 Claude Code」。"
+  ],
+  "tags": [
+    "Claude Code",
+    "Anthropic",
+    "AI 原生工程",
+    "智能体工作流",
+    "MCP Tunnels"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 945,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_5f307b71",
+  "sourceName": "Claude",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1779218303000,
+  "publishDateStr": "05-19",
+  "publishDateTimeStr": "2026-05-19 19:18:23"
+}

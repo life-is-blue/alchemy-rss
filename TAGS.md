@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-21 06:31:12 | [返回首页](/README.md)
+**更新时间**: 2026-05-21 08:29:01 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12165)
+- [AI & 大模型](#ai-llm) (12185)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (823)
 - [DevOps](#devops) (568)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5798)
+- [其他](#other) (5800)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [从-8B-到前沿：系统提示如何控制-AI-智能体是否会勒索、泄露和杀戮-—-LessWrong](https://www.lesswrong.com/posts/GviHfFBB9tsefmDkG/from-8b-to-frontier-how-system-prompts-control-whether-ai) - AI 精选
 - [为生产级-AI-智能体构建评估框架：基于-100-多次部署的-12-项指标框架](https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/) - AI 精选
 - [一个-AI-还是不够](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488475&idx=1&sn=cf5a0fa22b0ad0a665f2cb92e7e337d0) - AI 精选
 - [生产级-RAG-中的混合搜索与重排序](https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/) - AI 精选
@@ -37,13 +38,12 @@
 - [AIE-Europe-回顾-+-智能体实验室论点：无监督学习-x-潜在空间跨界特别篇（2026）](https://www.latent.space/p/unsupervised-learning-2026) - AI 精选
 - [GPT-5.5-发布](https://openai.com/index/introducing-gpt-5-5) - AI 精选
 - [Shopify-的-AI-相变：2026-年使用量激增，无限的-Opus-4.6-Token-预算，Tangle，Tangent，SimGym-——-对话-Shopify-CTO-Mikhail-Parakhin](https://www.latent.space/p/shopify) - AI 精选
-- [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt) - AI 精选
 - [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) - AI 精选
+- [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt) - AI 精选
 - [如何正确-Vibe-Coding？这是来自-Anthropic-编程智能体负责人的大师课](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b) - AI 精选
 - [大模型架构的下半场](https://www.qbitai.com/2026/04/403515.html) - AI 精选
-- [使用合成数据构建快速多语言-OCR-模型](https://huggingface.co/blog/nvidia/nemotron-ocr-v2) - AI 精选
 
-- [查看全部 12165 篇...](/details/tags/ai-llm.md)
+- [查看全部 12185 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [用开源模型强化你的-OCR-工作流](https://mp.weixin.qq.com/s?__biz=Mzk0MDQyNTY4Mw==&mid=2247495937&idx=1&sn=07fa59cf8df62d23f48404181351c2b3) - AI 精选
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 
-- [查看全部 5798 篇...](/details/tags/other.md)
+- [查看全部 5800 篇...](/details/tags/other.md)
 
 

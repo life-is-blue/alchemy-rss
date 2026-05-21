@@ -1,0 +1,67 @@
+{
+  "id": "RAW_e310426",
+  "title": "OpenAI Codex 负责人 Tibo Sio：Codex 如何从开发者工具进化为通用 Agent，并预告 Slash Goal 与 Auto Review",
+  "url": "https://www.youtube.com/watch?v=DLP9CagE3dU",
+  "date": "2026-05-14 20:28:12",
+  "author": "OpenAI",
+  "siteName": "OpenAI",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Codex for Everyday Work: AI Agents Beyond Coding</h1>\n  <p>In a recent session of the OpenAI Forum, <strong>Tibo Sio</strong>, Head of Codex, joined <strong>Chris Nicholson</strong> to discuss how AI agents are evolving from niche developer tools into essential partners for everyday knowledge work.</p>\n  <h2>From Cloud Code to Local Action</h2>\n  <p>Originally launched as a cloud-based web tool for developers, Codex has undergone a massive pivot. The OpenAI team realized that for an AI agent to be truly useful, it needed to live where the user lives: on their local machine. With the release of more reliable models like <strong>GPT-5</strong>, Codex has shifted its focus from simple code completion to performing \"long-horizon\" tasks—complex projects that require hours or days of autonomous effort.</p>\n  <h2>The \"Home-Cooked Software\" Era</h2>\n  <p>Tibo Sio demonstrated a future where software is no longer a static product you buy, but something you \"cook\" for yourself. By giving Codex a single voice prompt, he generated a custom spreadsheet and a functioning web map of San Francisco bakeries, optimized by price and quality. This ability to create \"personal software\" in minutes allows non-technical users to build tools that fit their exact needs without writing a single line of code.</p>\n  <h2>Codex as a Digital Chief of Staff</h2>\n  <p>For many professionals, the most significant impact of Codex is the reduction of \"tedious coordination.\" Tibo shared how he uses the tool to:</p>\n  <ul>\n   <li><strong>Summarize the day:</strong> Codex scans Gmail, Notion, and Calendar to flag at-risk projects.</li>\n   <li><strong>Manage information:</strong> It chases status updates on Slack and coalesces feedback into living documents.</li>\n   <li><strong>Automate life:</strong> Beyond work, it handles meal planning and even orders groceries.</li>\n  </ul>\n  <h2>Trust, Security, and Sandboxing</h2>\n  <p>As agents gain the power to act on the world, security becomes paramount. OpenAI is addressing enterprise adoption bottlenecks by implementing <strong>Sandboxing</strong>, which restricts agents to specific file directories and permissions. Additionally, the new <strong>Auto Review</strong> feature acts as a \"referee,\" where a secondary AI agent audits the primary agent's actions to ensure they stay within safe and ethical boundaries.</p>\n  <h2>The Goal: High-Level Intent, AI-Powered Execution</h2>\n  <p>The future of Codex lies in the <strong>\"Slash Goal\"</strong> feature—a mode where an agent works relentlessly on a high-level objective for days or weeks. However, Tibo warns against \"over-delegation.\" The most successful users are those who use Codex to elevate their own understanding of a problem, rather than just offloading the thinking entirely. As we move into this \"golden era\" of productivity, the human role shifts from performing tasks to defining intent and providing the \"aesthetic taste\" and judgment that only humans can offer.</p>\n </body>\n</html>",
+  "aiSummary": "OpenAI Codex 负责人 Tibo Sio 讲述 Codex 如何从开发者工具进化为面向所有知识工作者的通用 Agent，现场演示个人软件创作，并预告面向长时任务的 Slash Goal 模式与安全护航的 Auto Review Agent。",
+  "oneSentenceSummary": "OpenAI Codex 负责人 Tibo Sio 讲述 Codex 如何从开发者工具进化为面向所有知识工作者的通用 Agent，现场演示个人软件创作，并预告面向长时任务的 Slash Goal 模式与安全护航的 Auto Review Agent。",
+  "summary": "在这场 OpenAI Forum 对谈中，Codex 负责人 Tibo Sio 与主持人 Chris Nicholson 一同复盘了 Codex 的关键转向：从面向开发者的云端 Web 工具，演化为运行在用户本地、服务所有知识工作者的通用 Agent。Tibo 指出，即便是工程师，每天真正写代码的时间也只有 20%-30%，而 GPT-5 让长时任务的执行可靠性大幅提升后，产品自然外延到信息搜集、跨团队协同、数据拉取、财务运营、市场调研和会议准备等场景。他现场用一句语音指令，在几分钟内生成了一份旧金山面包店表格，并进一步做成可交互的地图页面；随后他描述自己每天会跑上百个 Codex 任务，把 Codex 当成「数字版幕僚长」，自动汇总 Gmail、Notion、Calendar，追问 Slack 上的进度，并标记出有风险的项目。对谈还预告了 Slash Goal 模式：用户给出一个高层目标，Agent 就会持续工作数小时、数天甚至数周，直到自己判断目标已经达成。Tibo 同时介绍了 Sandboxing 与全新的 Auto Review 裁判型 Agent 如何回应企业对信任与安全的关切。结尾他特别提醒：杠杆最大的用户，不是把所有事都甩给 Codex，而是用它来反向提升自己的理解力，把判断和意图牢牢握在自己手里。",
+  "mainPoints": [
+    {
+      "point": "Codex 从云端 Web 工具转型为本地通用 Agent",
+      "explanation": "早期的 Codex Web 需要在 OpenAI 云端复刻开发者的本地环境，摩擦过大。把执行下沉到用户机器，再叠加 GPT-5 在可靠性上的跃升，才真正解锁了面向知识工作者的长时、非编码任务。"
+    },
+    {
+      "point": "真正的红利在非编码型知识工作，而不是生成代码",
+      "explanation": "工程师每天写代码的时间也只有 20%-30%。Codex 如今承担起上下文搜集、跨 Slack 追进度、市场调研、财务运营和数据拉取，让个体不再被沟通协调卡住。"
+    },
+    {
+      "point": "「家常菜」式的个人软件，只需一句语音指令",
+      "explanation": "Tibo 用一句语音指令，在十分钟内生成一份按价格与品质优化的旧金山面包店表格，并接着做成基于地图的网页，展示出非技术用户也能不写代码就打造称手的小工具。"
+    },
+    {
+      "point": "Slash Goal 把 Agent 自治时长从分钟拉到数周",
+      "explanation": "新的 slash 命令允许用户下达长期目标，Agent 会持续工作数小时、数天乃至数周，直到自己判定目标已经达成。早期试用场景包括数学、物理研究和程序重写。"
+    },
+    {
+      "point": "企业落地的真正瓶颈是信任，而不是能力",
+      "explanation": "能力已经不再是阻碍，OpenAI 把投入重点放在 Sandboxing 上：按目录与网络范围做权限隔离，并由 Auto Review 裁判型 Agent 检查主 Agent 的每一步动作，在风险操作执行前及时叫停。"
+    },
+    {
+      "point": "过度授权是最常见的使用误区",
+      "explanation": "Tibo 提醒，把一切都甩给 Agent，会逐步侵蚀自己对问题的理解。最好的用法，是让 Codex 既负责执行，也负责讲解、画图和教学，让人始终掌握意图与判断。"
+    }
+  ],
+  "keyQuotes": [
+    "它不是用来生成代码的，它就是来执行通用任务的",
+    "我能感觉到，这一波浪潮里，每个人都将拥有并维护属于自己的个人软件",
+    "它真正承诺的，是给你一个值得信赖的伙伴，能替你把大量工作扛下来",
+    "我们现在讨论的，是让 Agent 在最难的任务上连续工作好几周",
+    "我能预见到这样一个时刻：把一切都委托出去会变得极具诱惑，连同你自己的理解也一并交出去"
+  ],
+  "tags": [
+    "OpenAI Codex",
+    "AI Agent",
+    "知识工作",
+    "Slash Goal",
+    "Auto Review"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 419,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d90853",
+  "sourceName": "OpenAI",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1778790492000,
+  "publishDateStr": "05-14",
+  "publishDateTimeStr": "2026-05-14 20:28:12"
+}
