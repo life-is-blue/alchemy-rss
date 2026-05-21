@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-21 08:29:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-21 11:03:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -973,9 +973,7 @@
 
 ### [TLiveOmni-1.0:-直播视频多模态理解大模型](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543551&idx=1&sn=1c54bcc7ec88c7e19655ae7a299cdf2e)
 
-2026-05-20 08:26:00 | 标签: 全模态大模型, 电商直播, TLiveOmni, 多模态理解, ASR
-
-> 本文详细介绍了由阿里巴巴大淘宝技术团队研发的 TLiveOmni 1.0 全模态大模型。该模型以 Qwen3-VL-Instruct 为基座，通过添加音频编码器并采用「模态对齐→能力强化→全任务微调」三阶段训练范式，实现了对图像、文本、视频、音频四模态的原生统一输入与 128K 上下文窗口支持。文章深入阐述了模型在电商直播场景下的能力矩阵，涵盖音频维度的语境感知 ASR 与多说话人分离、视频维度的商品时序切分与卖点提取、图像维度的商品空间定位与细粒度 OCR 等超 20 项原子能力。在技术实现上，文章重点介绍了 Audio DeepStack 模块设计、同步长度分组采样器解决分布式训练死锁问题...
+2026-05-20 08:26:00
 
 
 
@@ -34287,9 +34285,7 @@
 
 ### [Spring-Native：构建高性能-Spring-应用的未来之路](https://www.youtube.com/watch?v=cpHrLgJ-OJY)
 
-2026-05-20 13:24:34 | 标签: Spring Native, GraalVM, Native Image, PGO, MLPGO
-
-> GraalVM 团队的 Alina Yurenko 在 Spring I/O 2026 上发表了以 demo 为核心的演讲，全面介绍 Spring Native 与 GraalVM 25 的现状及近期路线图。演讲以 GraalVM 25 生态路线图开篇：Java 25 确立为稳定 LTS 基线（与 Spring Framework 7.0 对齐），持续投入多语言运行时（Python 面向 AI/ML 负载、Graal.js 面向企业脚本、WebAssembly 面向浏览器与边缘场景），并预告 GraalVM 在 AI 领域的后续能力。  演讲的核心技术部分深入解析了 Native Image ...
+2026-05-20 13:24:34
 
 
 
@@ -34803,11 +34799,11 @@
 
 
 
-### [Cat-Wu-面试了几百个-PM-候选人，几乎没人答对一个问题：AI-产品经理到底应该干什么？](https://baoyu.io/blog/building-agi-pilled-products-cat-wu-head-of-product-claude-code)
+### [为-Agent-设计产品](https://baoyu.io/blog/2026-04-24/teddy-riker-2047312986696454584)
 
-2026-04-23T00:00:00.000Z
+2026-04-24T00:00:00.000Z
 
-> 面试几百个 PM 后，Cat Wu 发现大多数人对 AI PM 角色的理解方向不对。
+> UI 并没有死，但软件交互的 80% 正在转向 Agent。产品团队需要像过去为人设计界面一样，认真为 Agent 设计工具、上下文和反馈闭环。
 
 
 
