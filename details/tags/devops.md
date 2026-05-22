@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-22 08:28:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-22 11:04:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -314,9 +314,7 @@
 
 ### [跨-Kubernetes-集群实时监控-GPU-使用情况](https://developer.nvidia.com/blog/get-real-time-visibility-into-gpu-usage-across-kubernetes-clusters/)
 
-2026-05-21 17:59:41 | 标签: GPU 监控, Kubernetes, NVIDIA, DCGM Exporter, Prometheus
-
-> 这篇来自 NVIDIA 技术博客的文章介绍了 GPU Usage Monitor，一个旨在解决 GPU 加速 Kubernetes 集群可观测性缺失问题的开源工具。文章强调了常见的代价高昂的问题，例如 GPU 过度配置和 Pod 调度盲点，这些是标准 Kubernetes 指标无法检测到的。解决方案是一个单一的 Helm Chart，它部署了一个完全集成的技术栈，包括 DCGM Exporter、kube-state-metrics、Prometheus 和 Grafana，并附带预构建的仪表盘。这些仪表盘提供了关键洞察，例如 GPU 分配趋势、带阈值的每 GPU 计算利用率、每 Pod 内存...
+2026-05-21 17:59:41
 
 
 
@@ -544,9 +542,7 @@
 
 ### [OpenTofu-1.12：Terraform-从未实现的功能](https://www.infoq.com/news/2026/05/opentofu-release-terraform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-21 10:00:00 | 标签: OpenTofu, Terraform, 基础设施即代码, DevOps, IaC
-
-> OpenTofu 1.12.0 于 2026 年 5 月 14 日发布，引入了多项重要功能，解决了基础设施管理中的长期痛点，特别是对于在多个环境中使用共享模块的团队。最引人注目的功能是动态 `prevent_destroy`，它允许通过变量控制此生命周期设置，解决了 Terraform 生态系统中一个长达十年的问题——团队不得不硬编码保护或重复模块。此更新还改进了 provider 校验和处理，OpenTofu Registry 现在以 `zh:` 和 `h1:` 两种格式返回完整的校验和集合，无需单独运行 `tofu providers lock`。新的 `-json-into=FILENA...
+2026-05-21 10:00:00
 
 
 

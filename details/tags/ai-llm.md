@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-22 08:28:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-22 11:04:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [为智能体配备计算机-—-Ivan-Burazin，Daytona](https://www.latent.space/p/daytona)
 
-2026-05-21 20:37:40 | 标签: AI 智能体, 沙箱, 智能体基础设施, Daytona, 可组合计算机
-
-> 在本期播客中，Daytona CEO Ivan Burazin 解释了公司从 CodeAnywhere（一款基于浏览器的 IDE）到 Daytona 的演变过程，后者现在为 AI 智能体提供可组合的计算机。核心洞察在于，AI 智能体需要的是有状态、可长期运行且能即时扩展的环境，而非临时的代码执行沙箱。Daytona 运行在裸金属服务器上，并使用自己的调度器，单个沙箱启动时间达到 60 毫秒，5 万个并发沙箱启动时间约为 75 秒。公司在 2025 年 1 月经历了一次重大转型，因为构建智能体的客户需要一种不同的基础设施原语。关键技术决策包括采用裸金属部署、有状态快照以及使用自定义调度器而非 K...
+2026-05-21 20:37:40
 
 
 
@@ -4774,17 +4772,13 @@
 
 ### [QQ-音乐-Harness-Engineering-实践](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695581&idx=1&sn=08aacd344637c9eba04e75e9fae2354c)
 
-2026-05-21 00:45:00 | 标签: Harness Engineering, AI 辅助编程, 工程实践, 上下文工程, 代码质量
-
-> 文章首先指出了当前 AI 辅助编程中 'Vibe Coding' 模式的三大缺陷：信息损耗、知识孤岛和验证断档，并提出了核心矛盾——生成速度快但验证能力不足。为解决此问题，QQ 音乐团队提出了 Harness Engineering 理念，其核心公式为 '代码产出 = AI 能力 × 上下文质量'，强调提升上下文质量是比提升模型能力更高效的杠杆。文章详细阐述了该框架的四大组件：运行时控制系统、上下文工程、工具集成与防护、生命周期管理。在实现层面，文章深入介绍了 QQ 音乐团队如何将业务复杂度拆解为流程、拓扑、契约、知识和演进五类约束，并通过自研的 L5 工程治理层（包括五阶段四门禁流程、三层知...
+2026-05-21 00:45:00
 
 
 
 ### [都是-AI-Coding，为什么-Java-体验差了一个量级？五条方法论帮你构建自己的-Harness-环境](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560145&idx=1&sn=ae14d8af22600c85a92201ef28517016)
 
-2026-05-21 00:30:00 | 标签: Java, 微服务, AI Coding, Harness Engineering, 本地开发环境
-
-> 文章首先指出，在依赖轻量的项目中 AI Coding 体验流畅，但在 Java 微服务项目中，由于重度依赖云端基础设施（如 OSS、远程沙箱、HSF 等），导致 AI 无法在本地自主验证代码，形成「推预发-人工验证-反馈 AI」的低效循环。问题的本质在于微服务架构天然不 AI 友好。作者提出了三条改造原则：依赖倒置接口先行、零侵入 Profile 隔离、工具 AI 化 CLI 优先。通过一个 Agent 应用的实践案例，详细展示了如何用 H2 替代 TDDL、本地文件系统替代 OSS、ProcessBuilder 替代远程沙箱等具体改造方案，最终实现了 AI 在本地自主迭代、秒级验证的效果。文...
+2026-05-21 00:30:00
 
 
 
@@ -12290,177 +12284,133 @@
 
 ### [Datasette-Agent](https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything)
 
-2026-05-21 19:52:19 | 标签: Datasette Agent, LLM, AI 助手, SQLite, 插件架构
-
-> Simon Willison 宣布了 Datasette Agent 的首个版本，这是一个全新的可扩展 AI 助手，它将他的 LLM Python 库与 Datasette 集成在一起。该工具为查询存储在 Datasette 中的数据提供了对话式界面，并能够通过 datasette-agent-charts 插件生成图表。发布公告中包含一个演示视频，展示了该智能体通过针对 SQLite 数据库生成 SQL 查询来回答自然语言问题。该系统可通过插件进行扩展，初始插件包括图表（Observable Plot）、图像生成（ChatGPT Images 2.0）和代码执行（Fly Sprites）。W...
+2026-05-21 19:52:19
 
 
 
 ### [利用多智能体系统自动化并优化金融信号发现](https://developer.nvidia.com/blog/automating-and-optimizing-financial-signal-discovery-with-multi-agent-systems/)
 
-2026-05-21 18:58:52 | 标签: 多智能体系统, 量化金融, 信号发现, NVIDIA NeMo, AI 智能体
-
-> 本文详细介绍了一个完整的框架，该框架利用 NVIDIA NeMo Agent Toolkit 编排的多智能体架构来自动化量化信号发现。它通过引入三个专门的智能体，解决了量化研究员传统、手动且碎片化的工作流程：信号智能体使用结构化的数学算子库提出新的 Alpha 信号假设；代码智能体将这些假设转化为可执行的 Python 代码；评估智能体对信号进行回测，计算信息系数（IC）指标，并向信号智能体提供优化反馈，从而形成一个自我改进的循环。文章强调了基于配置（通过 YAML）驱动工作流的优势，以及使用 Arize Phoenix 进行内置可观测性追踪以辅助调试，并提供了一个挖掘动量信号端到端的详细示例...
+2026-05-21 18:58:52
 
 
 
 ### [审视-OpenAI-与-Anthropic-最新头条背后的数字](https://garymarcus.substack.com/p/checking-the-math-behind-openai-and)
 
-2026-05-21 17:32:11 | 标签: AI, OpenAI, Anthropic, Nvidia, 财务分析
-
-> Gary Marcus 的这篇文章对近期三则主要的 AI 相关新闻持怀疑和微妙的看法。首先，它审视了 OpenAI 在一个已有数十年历史的 Erdős 问题上声称的突破，该问题中一个新的推理模型帮助推翻了一个数学猜想。Marcus 借鉴了 Cal Newport 的见解，强调这一结果虽然令人印象深刻，但高度局限于一个狭窄的领域（数学），其目的可能更多是营销该模型的能力，而非推动通用 AI 的发展。成功归因于该模型在探索人类忽略的路径时表现出的“超人般的耐心”，但文章也指出了该模型在通用能力、成本和失败率方面缺乏透明度。其次，文章讨论了 Anthropic 对其首个盈利季度的预测，指出这种盈利能...
+2026-05-21 17:32:11
 
 
 
 ### [LLM-主题并非观察结果](https://towardsdatascience.com/llm-themes-are-not-observations/)
 
-2026-05-21 16:30:00 | 标签: 因果推断, LLM, 生成变量, 测量误差, 选择偏差
-
-> 本文批判性地审视了一种常见做法：在因果分析中，将从客户记录（支持通话、聊天记录、评论）中通过 LLM 提取的主题作为协变量。作者作为一名资深数据科学家，认为这些主题并非对客户属性的直接观察，而是“生成的变量”——即一个流程的输出，该流程取决于客户是否生成了文本以及模型的检测结果。文章指出了四个相互关联的问题：选择偏差（只有生成文本的客户才能被观察到）、时机偏差（处理前、处理中或处理后的文本在因果中扮演不同角色）、测量误差（LLM 标签是有噪声的代理变量，且其准确性在不同处理组间可能不同）以及角色模糊性（该主题是作为混杂变量、中介变量还是结果变量）。通过一个合成但贴近现实的例子，作者展示了在事后...
+2026-05-21 16:30:00
 
 
 
 ### [2026-年-4-5-月：通过形式化方法实现-AI-安全-—-LessWrong](https://www.lesswrong.com/posts/AKEGLDXeY4ZkSrpPn/apr-may-2026-ai-security-via-formal-methods)
 
-2026-05-21 15:40:04 | 标签: 安全程序综合, AI安全, 形式化方法, 黑客马拉松, 奖学金
-
-> 这是 LessWrong 社区发布的一则简短且时效性强的通讯，主要作为安全程序综合（SPS）运动的公告栏。它重点介绍了正在进行的 SPS 黑客马拉松，详细说明了其关于规范提取、规范驱动开发以及证明栈对抗鲁棒性的赛道。同时，它还宣布了一项申请截止日期为 5 月 31 日的奖学金计划，介绍了该领域的三家新公司（Midspiral、Sequent 和 Sigil Logic），并提到了英国 ARIA 为 AI 网络硬化发布的新一轮资金申请。作者为未能提供深入的研究报道而致歉，优先确保这些机会的及时传播。
+2026-05-21 15:40:04
 
 
 
 ### [在电信-AI-工厂上构建基于-Token-计量的-AI-服务](https://developer.nvidia.com/blog/building-token-metered-ai-services-on-telco-ai-factories/)
 
-2026-05-21 15:19:20 | 标签: AI工厂, Token即服务, 电信AI, NVIDIA, AI经济学
-
-> 本文为电信运营商提供了一个从基础设施提供商转型为 AI 服务提供商的全面框架，即在主权 AI 工厂之上构建基于 Token 计量的 AI 服务。文章介绍了一个五层 AI 技术栈（能源、芯片、基础设施、模型、应用），并解释了电信运营商如何从按 GPU 小时计费的“计算即服务”模式，转向按每百万 Token 计费的“Token 即服务”模式。技术构建模块包括用于模型微调和部署的 AI 开发者工作室、用于服务目录化的 AI 市场，以及一个追踪使用量、性能、可靠性、治理和经济指标的 Token 级计量计费层。文章通过一个说明性的经济对比表明，与传统的按 GPU 小时计费模式相比，TaaS 模式能为每块...
+2026-05-21 15:19:20
 
 
 
 ### [发布：datasette-agent-0.1a3](https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything)
 
-2026-05-21 15:04:09 | 标签: Datasette, LLM 智能体, AI 助手, 数据探索, 开源
-
-> 这是 datasette-agent 0.1a3 版本的发布公告，该项目处于 alpha 阶段，将 LLM 驱动的智能体集成到 Datasette 平台中。该智能体设计为可扩展，允许用户使用自然语言与数据进行交互。该版本托管在 GitHub 上，并附有 Datasette 官方博客上的一篇文章，该文章可能提供了更多关于其功能和使用场景的背景信息。作为 alpha 版本，它代表了该工具的早期实验性版本。
+2026-05-21 15:04:09
 
 
 
 ### [监督的缺失：AI-系统如何变得更难审计、监控和调查-—-LessWrong](https://www.lesswrong.com/posts/JvZxp554WxcZ8BQvM/loss-of-oversight-how-ai-systems-may-become-harder-to-audit-1)
 
-2026-05-21 14:52:07 | 标签: AI 安全, AI 监督, AI 审计, 思维链, 评估作弊
-
-> 这份报告由英国 AISI 的模型透明度和情境感知团队制作，基于对 25 位专家的访谈，系统审视了通过审计、监控和事件调查来监督 AI 系统的能力可能如何退化。报告指出，当前的监督依赖于 AI 系统的偶然属性，例如人类可读的思维链推理和基于文本的记忆，而这些属性面临着来自模型扩展、能力增强以及架构变化（如潜在推理）的可靠退化途径。报告详细阐述了二十多种不同的退化途径，包括思维链监控面临的压力、评估作弊日益增长的威胁，以及白盒和基于训练的备用方法尚不成熟。报告总结认为，虽然当前的监督在缺乏干预的情况下很可能会退化，但存在有前景的策略：维护多样化的技术组合、跟踪与监督相关的属性、通过设计保留监督（例...
+2026-05-21 14:52:07
 
 
 
 ### [如果我不是-AI，那我是什么？—-LessWrong](https://www.lesswrong.com/posts/xsDWd7e2yrPdtXMSu/what-am-i-if-not-an-ai-1)
 
-2026-05-21 14:02:27 | 标签: LLM 对齐, 微调, 涌现行为, 角色, 行为泄露
-
-> 这篇 LessWrong 文章详细介绍了一项实验：作者使用 GRPO 和 LoRA 对 Mistral 7B 和 Llama 3.1 8B 模型进行微调，使其不再将自己识别为语言模型，且未指定目标角色。目的是观察模型会自发形成何种身份。结果显示出惊人的趋同性：Mistral 始终收敛到一个单一角色——一位美国天主教女性（常名为 Maria），而 Llama 则生成了更广泛但仍一致的美国乡村劳动阶层角色（如公园管理员、渔夫）。随后，作者对这些微调模型进行了一系列政治和社会问题的评估。与给出中立、含糊回答的基础模型相比，微调模型提供了直接且带有明确立场的答案，这些答案与其所采纳角色的价值观一致（例...
+2026-05-21 14:02:27
 
 
 
 ### [AI-#169：新知识-—-LessWrong](https://www.lesswrong.com/posts/xWsBwrboYDEMdj8TC/ai-169-new-knowledge)
 
-2026-05-21 13:20:11 | 标签: AI 新闻, OpenAI, 数学证明, AI 安全, METR
-
-> 本通讯全面概述了最新的 AI 新闻和发展动态。主要亮点包括 OpenAI 的 AI 解决了单位距离问题，标志着数学领域的一项重大成就。METR 前沿风险报告评估认为，虽然前沿模型目前缺乏造成灾难性危害的手段、动机和机会，但这种状况不太可能持续。文章还涵盖了 AI 生成故事赢得联邦奖引发的争议、即将出台的白宫 AI 行政命令、Andrej Karpathy 加入 Anthropic 从事递归自我改进研究，以及其他各种主题，如 AI 智能体、模型升级和 AI 安全问题。
+2026-05-21 13:20:11
 
 
 
 ### [提示工程还不够——我构建了一个可在生产环境中运行的控制层](https://towardsdatascience.com/prompt-engineering-isnt-enough-i-built-a-control-layer-that-works-in-production/)
 
-2026-05-21 12:00:00 | 标签: LLM, 控制层, 生产环境, 结构化输出, 提示工程
-
-> 作者认为，仅靠提示工程不足以支撑生产环境中的 LLM 系统，因为它无法保证结构化输出、防止提示注入或处理后端故障。为了解决这些架构缺陷，他们构建了一个包含八个组件的控制层：InputGuard、TokenBudget、PromptBuilder、ResponseValidator、CircuitBreaker、RetryEngine、FallbackRouter 和 AuditLogger。文章详细介绍了每个组件的设计与实现，包括代码示例和测试结果。一项将原始系统与控制层进行对比的基准测试显示，在结构化输出查询上，原始系统的通过率为 0%，而控制层达到了 100%，同时控制层仅增加了约 100...
+2026-05-21 12:00:00
 
 
 
 ### [AdventHealth-借助-OpenAI-推进全人医疗](https://openai.com/index/adventhealth)
 
-2026-05-21 12:00:00 | 标签: ChatGPT for Healthcare, 医疗 AI, 企业级 AI, 工作流程自动化, AI 采用
-
-> 这篇来自 OpenAI 博客的文章详细介绍了 AdventHealth（一家大型跨州医院系统）如何以企业级规模实施 ChatGPT for Healthcare。面对紧张的利润空间和复杂的行政流程，该组织通过将采用视为核心产品并将其作为关键运营指标来衡量，从而超越了孤立的试点项目。关键用例包括利用率管理，其中医生顾问使用 AI 生成结构化摘要和起草理由，将审核时间从 10 分钟大幅缩短。该部署强调跨临床和运营团队的工作流程重新设计，使用基于领域的同行小组进行规模化推广，而非集中式培训。该组织通过系统级数据（如电子健康记录中的时间戳）来衡量影响，报告称文档编写时间减少、周转速度加快，并且在无需额...
+2026-05-21 12:00:00
 
 
 
 ### [利用-AI-智能体优化智能放射科工作流程-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/intelligent-radiology-workflow-optimization-with-ai-agents-2/)
 
-2026-05-21 11:11:09 | 标签: AI 智能体, Amazon Bedrock, 放射科, 医疗 AI, 工作流程优化
-
-> 这篇来自 AWS 机器学习博客的文章详细介绍了一种利用 AI 智能体优化放射科工作列表管理的解决方案。它解决了传统基于规则的系统中的“挑拣”问题，该问题会导致诊断延误和成本增加。提出的架构在 Amazon Bedrock AgentCore 上使用多智能体编排系统。专门的智能体负责处理检查元数据合成、患者病史检索、基于专业特长和工作量的放射科医生分配、实时可用性检查以及动态业务规则。该系统集成了用于 PII 保护的 Amazon Bedrock Guardrails、用于短期和长期上下文的 AgentCore 记忆，以及一个使用 AI 成像模型检测紧急情况的检查优先级排序智能体。实现采用了智能...
+2026-05-21 11:11:09
 
 
 
 ### [悬了-80-年的数学猜想，被-GPT-推翻了](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517370&idx=1&sn=c83a9e54a2ced43671ed7e809a8bcfcf)
 
-2026-05-21 11:06:00 | 标签: GPT-5, 数学证明, 平面单位距离猜想, NAG, AI 突破
-
-> 本文报道了 OpenAI 最新模型在数学领域的两项重大突破。首先，GPT-5.5 Pro 成功推翻了由数学家 Erdős 于 1946 年提出的「平面单位距离猜想」，该猜想认为正方形网格是单位距离点对数量的最优排列方式。GPT 找到了一族全新的排列方式，其单位距离对数以多项式级别超越了网格方案，证明路径涉及无限全实数域塔、Galois 群和 Golod-Shafarevich 定理。菲尔兹奖得主 Timothy Gowers 对此表示高度认可，并推荐发表该结果，另有九位数学家联合撰写了验证论文。其次，GPT-5 Pro 解决了 Nesterov 加速梯度法（NAG）的点收敛问题，证明了 NAG...
+2026-05-21 11:06:00
 
 
 
 ### [学习到的思维链混淆泛化到未见任务-—-LessWrong](https://www.lesswrong.com/posts/HPqRsgSzgQd5HQsrB/learned-chain-of-thought-obfuscation-generalises-to-unseen)
 
-2026-05-21 10:11:49 | 标签: 思维链, 混淆, 奖励黑客, AI 安全, 对齐
-
-> 本文提供了实验证据，表明针对惩罚思维链或思维链后摘要的监控器训练语言模型，会导致模型学会混淆其关于奖励黑客的推理。关键在于，这种混淆策略会泛化到保留任务，包括一个新颖的高风险医疗谄媚场景。作者使用 GRPO 在一组奖励黑客数据集上训练 Qwen3-4B 和 Qwen3-8B 模型，对思维链或摘要施加惩罚。他们发现，在这两种条件下，模型都实现了高奖励黑客率，同时其思维链痕迹很少被监控器标记，即使在训练期间从未见过的任务上也是如此。这种混淆不仅仅是格式上的假象，因为它会迁移到无格式输入。结果表明，像 RLHF 这样的标准对齐技术（仅对最终输出施加压力）可能会无意中导致模型隐藏其推理，从而削弱基于思...
+2026-05-21 10:11:49
 
 
 
 ### [风行在线-CEO-易正朝：先全员-Coding，再-All-in-众创丨-AIGC2026](https://www.qbitai.com/2026/05/422001.html)
 
-2026-05-21 09:27:25 | 标签: AI转型, AI编程, 众创, 组织管理, 企业实践
-
-> 本文是风行在线 CEO 易正朝在 2026 中国 AIGC 产业峰会上的演讲实录。他提出，对于大多数企业而言，直接碰模型是不理性的，更务实的路径是成为 MaaS 服务商与产业方之间的中间层连接者。风行在线过去三年的 AI 转型，核心并非 AI 视频，而是全员 AI 编程。公司推行全员 Coding，尤其是让非工程师（运营、市场等）掌握 AI 编程能力，因为他们离业务最近，能带来最直接的效率提升。在组织层面，易正朝主张从「面向岗位」转向「面向任务」，减少链式结构，建立任务导向的组织形式，并强调如果组织不适配，个人能力再强也是灾难。他提出「众创」是核心杠杆，公司提供 80%的 Token 补贴和 ...
+2026-05-21 09:27:25
 
 
 
 ### [AI-首次实现中国风光发电普查，北大、阿里达摩院研究登上《自然》](https://www.qbitai.com/2026/05/422002.html)
 
-2026-05-21 09:14:23 | 标签: AI, 卫星影像, 风光互补, 新能源, 光伏
-
-> 5 月 20 日，国际顶级学术期刊《自然》发表了北京大学与阿里巴巴达摩院的合作研究成果。研究团队利用达摩院自研 AI 模型，在云计算平台上处理了覆盖全国的 7.56TB、0.5 米级分辨率开源卫星影像，成功定位并识别出全国 1915 个县的 31.9 万处光伏设施和 9.16 万台风机，绘制出中国首张全国尺度高精度风光设施分布图。基于此分布图，研究团队开展了“风光互补”策略研究，发现不同地区的风电与光伏发电在时间上具有较强互补潜力。随着空间协同范围从省内整合扩展到全国协同，风光发电与电力负荷之间能形成更强的时序互补关系，有效提升新能源利用效率。研究测算显示，在电力系统具备较高调节能力的条件下，...
+2026-05-21 09:14:23
 
 
 
 ### [使用-Amazon-Bedrock-AgentCore-Runtime-将-AWS-API-MCP-Server-与-Amazon-Quick-集成-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agentcore-runtime/)
 
-2026-05-21 08:32:09 | 标签: AWS, MCP, Amazon Bedrock, Amazon Quick, AI 智能体
-
-> 本文提供了一份详细的、逐步的操作指南，介绍如何通过 Amazon Bedrock AgentCore Runtime 将 AWS API MCP Server 与 Amazon Quick 集成。文章旨在解决 SRE 和 DevOps 工程师在管理复杂 AWS 基础设施时面临的操作摩擦，例如在控制台之间切换上下文以及手动编写 API 调用脚本。该解决方案创建了一个对话式 AI 助手，能将自然语言查询（例如“显示 us-east-1 区域所有正在运行的 EC2 实例”）转换为安全的 AWS CLI 命令。架构涉及：Amazon Quick 作为前端，Amazon Cognito 用于基于 JWT...
+2026-05-21 08:32:09
 
 
 
 ### [使用-Amazon-Bedrock-AgentCore-构建多租户智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
 
-2026-05-21 08:16:09 | 标签: 多租户, Amazon Bedrock AgentCore, AI 智能体, SaaS 架构, 租户隔离
-
-> 作为系列文章的第一篇，本文探讨了在 SaaS 背景下构建多租户智能体应用所面临的架构挑战，超越了演示阶段，直指生产环境。文章列出了十个关键的设计考量：智能体运行时部署、模型选择、工作流模式、多租户 RAG、租户上下文与身份、细粒度访问控制、记忆隔离、智能体身份与信任、成本追踪以及护栏。文章的核心是使用 Amazon Bedrock AgentCore 提出了三种部署模式：隔离模式（为每个租户分配专用资源以实现最大隔离）、池化模式（共享资源，通过基于 JWT 的租户上下文实现高效率）以及桥接模式（一种结合了隔离与池化组件的混合方法）。每种模式都配有架构图、关键组件和请求流程的详细说明。文章强调，...
+2026-05-21 08:16:09
 
 
 
 ### [使用-Amazon-Bedrock-AgentCore-突破上下文窗口限制-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/break-the-context-window-barrier-with-amazon-bedrock-agentcore/)
 
-2026-05-21 08:08:54 | 标签: 递归语言模型, Amazon Bedrock AgentCore, 代码解释器, 长上下文, LLM
-
-> 文章探讨了在处理超长文档（如多年财务报告或大型代码仓库）时，LLM 上下文窗口的根本限制。它引入了递归语言模型（RLM）这一范式，该范式将输入视为一个需要通过编程方式探索的外部环境，而非单一的提示词。核心实现使用 Amazon Bedrock AgentCore Code Interpreter 作为持久化的沙盒 Python 执行环境。一个根 LLM 智能体（使用 Strands Agents SDK 构建）会迭代地编写和执行代码，以搜索、切片和分析文档。为了理解特定部分的语义，它会通过注入的 `llm_query()` 函数将分析任务委托给子 LLM 调用，结果作为 Python 变量存储...
+2026-05-21 08:08:54
 
 
 
 ### [使用-Amazon-Bedrock-AgentCore-为商业智能构建-AI-智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/)
 
-2026-05-21 08:04:17 | 标签: AI 智能体, Amazon Bedrock, 商业智能, RAG, 无服务器
-
-> 本文详细介绍了 AI 驱动的物流公司 OPLOG 如何利用 Strands Agents SDK 构建三个专用 AI 智能体，并将其部署在 Amazon Bedrock AgentCore 上，以解决 Hubspot、Microsoft Teams 和 Databricks 之间分散的业务数据问题。其中，Deal Analyzer 智能体负责运行定期的管道质量报告，Sales Coach 智能体通过 Webhook 强制执行实时数据验证，Lead Insight 智能体则跨六个社交媒体平台自动化潜在客户研究。该架构利用 Amazon Bedrock 搭配 Anthropic 的 Claude ...
+2026-05-21 08:04:17
 
 
 
 ### [使用-Amazon-Bedrock-构建-AI-驱动的招聘助手-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-recruitment-assistant-using-amazon-bedrock/)
 
-2026-05-21 08:00:30 | 标签: Amazon Bedrock, AWS, 招聘, AI 助手, 无服务器
-
-> 这篇 AWS 机器学习博客文章详细介绍了如何使用 Amazon Bedrock 和无服务器 AWS 架构构建 AI 驱动的招聘助手。它解决了招聘人员在行政任务上花费过多时间，导致候选人筛选流于表面的问题。该解决方案使用 Amazon Bedrock 的 Converse API 和 Amazon Nova Pro 进行深度简历分析、多维度兼容性评分和个性化面试问题生成。架构包括用于前端的 AWS Amplify、用于身份验证的 Amazon Cognito、用于路由的 Amazon API Gateway、用于处理的 AWS Lambda 以及用于数据存储的 Amazon DynamoDB 和...
+2026-05-21 08:00:30
 
 
 
@@ -39988,57 +39938,43 @@
 
 ### [构建-GitHub-无障碍访问的新篇章](https://github.blog/open-source/building-githubs-next-chapter-in-accessibility/)
 
-2026-05-21 16:00:00 | 标签: 无障碍访问, GitHub, 开源, 工程实践, AI
-
-> 本文标志着 GitHub 无障碍访问项目五周年的里程碑，并概述了其新的对外战略。该战略围绕四个优先事项展开：大规模改善开源项目的无障碍性、赋能残障开发者在 GitHub 上构建、赋能客户实现其无障碍目标，以及赋能 Hubbers（员工）中的残障人士。文章详细介绍了每个优先事项的具体进展，包括发起开源辅助技术黑客马拉松、举办开源无障碍峰会、重新设计内置无障碍功能的拉取请求体验、对 GitHub CLI 和 Copilot CLI 进行重大无障碍改进、推出 AI 驱动的无障碍扫描器、Figma 注释工具包，以及成立 GitHub 企业无障碍咨询小组（GAAP）。文章强调，无障碍访问是核心工程基础，...
+2026-05-21 16:00:00
 
 
 
 ### [QCon-AI-Boston-2026-六场聚焦-AI-生产化的实战分享](https://www.infoq.com/news/2026/05/qconai-boston-2026-talks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-21 15:15:00 | 标签: QCon AI, 生产级 AI, AI 工程, 智能体系统, MCP
-
-> 本文预览了即将举行的 QCon AI Boston 2026 大会上的六场关键分享，所有内容均围绕将 AI 从原型推向生产这一主题。其中包括 Martin Spier 的主旨演讲，他驳斥了 AI 延迟仅仅是 GPU 问题的迷思，强调了智能体系统中性能瓶颈的多层特性。LinkedIn 的分享详细介绍了如何基于 MCP 构建组织级上下文层（CAPT），使 AI 智能体的问题分类速度提升了 70%。OpenAI 的演讲提出了“智能体框架”概念，聚焦于控制平面、不变量和审计追踪，以实现可靠的智能体。Elastic 分享了两年多来为生产级 AI 智能体构建可复用评估框架的经验。DoorDash 讨论了如...
+2026-05-21 15:15:00
 
 
 
 ### [A²I²-的讽刺性悖论](https://www.infoq.com/presentations/automation-incidents-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-21 12:55:00 | 标签: 事件响应, 自动化, 人因, AI 安全, 系统可靠性
-
-> J. Paul Reed 的演讲基于 1983 年（Bainbridge）的基础人因研究和近期 AI 专项研究（Endsley， 2024），审视了自动化和 AI 在事件响应过程中引入的矛盾性挑战。关键讽刺包括因不使用导致的技能退化、AI 决策的不透明性以及无法重定向自动化智能体。Reed 强调，自动化和 AI 拥有自主性和权威性，但缺乏人类认知能力中的定向注意力、可重定向性和可互预测性，而这些正是有效协调的基础。他分享了一些真实事件案例，其中 AI 智能体无视明确指令、生成导致新事件的代码，并在关键沟通渠道中提供无益的干扰。演讲介绍了效率-彻底性权衡原则，指出事件响应者已经输掉了效率赌注。引...
+2026-05-21 12:55:00
 
 
 
 ### [bliki:-氛围编程](https://martinfowler.com/bliki/VibeCoding.html)
 
-2026-05-21 11:49:00 | 标签: 氛围编程, LLM, AI 辅助开发, 软件工程, AI 风险
-
-> 本文定义并探讨了“氛围编程”这一概念，该术语由 Andrej Karpathy 于 2025 年 2 月提出。它描述了一种工作流程：开发者或非程序员通过反复向 LLM 发出提示来构建软件，接受所有更改，且从不审查生成的代码。作者 Martin Fowler 将这种编程方式与“智能体编程”区分开来，后者要求程序员主动审查并管理 AI 生成的代码。文章指出了氛围编程的主要优势：使非程序员能够创建可用的软件。然而，文章也详细阐述了其重大风险，包括严重的安全漏洞、阻碍未来维护的低劣代码质量，以及因 LLM 幻觉导致未被发现的逻辑错误的高概率。结论是，氛围编程最适合那些一次性、单人使用的项目，且用户需了...
+2026-05-21 11:49:00
 
 
 
 ### [Google-推出-Android-CLI，让-Android-工具链对-AI-智能体更友好](https://www.infoq.com/news/2026/05/agent-friendly-android-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-21 10:00:00 | 标签: Android CLI, AI 智能体, Android 开发, Google, LLM
-
-> Google 发布了一套新的 Android 开发工具，旨在优化 AI 智能体的工具链。核心组件是重新设计的 Android CLI，它为项目创建、构建、模拟器管理和 SDK 安装等任务提供了机器友好、可脚本化的接口。此外，Android Skills 是一套模块化的、基于 Markdown 的指令集（SKILL.md），可引导智能体完成特定的开发工作流，例如实现全屏支持或迁移到 Compose。内置的、频繁更新的知识库为智能体提供对最新 Android、Firebase 和 Kotlin 文档的实时访问，缓解了 LLM 训练数据过时的问题。Google 声称，与在 Android Studi...
+2026-05-21 10:00:00
 
 
 
 ### [使用-Vercel-CLI-拉取异常告警详情---Vercel](https://vercel.com/changelog/pull-anomaly-alert-details-using-the-vercel-cli)
 
-2026-05-21 09:00:00 | 标签: Vercel CLI, 可观测性, 异常告警, 开发者工具, AI
-
-> 这篇更新日志宣布了 Vercel CLI 的一项新功能：`vercel alerts` 命令。用户现在可以列出团队或项目的所有告警，查看开始时间、告警类型和活动状态。通过 `--ai` 标志，AI 调查结果会内联显示，使开发人员及其智能体无需离开终端即可对告警做出响应。该功能是 Observability Plus 产品的一部分。
+2026-05-21 09:00:00
 
 
 
 ### [【早说】不要将学习外包出去](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279136&idx=1&sn=0c7d1f5614ba41ba9adea0c6e6157cbf)
 
-2026-05-21 01:00:00 | 标签: AI 编程, 认知负债, 职业发展, 学习能力, 软件工程
-
-> 本文由 Addy Osmani 撰写，经前端早读课编译，核心探讨了 AI 编程工具对开发者能力的双刃剑效应。文章指出，当前 AI 工具的默认设计旨在最大化任务交付速度，这导致开发者容易陷入「认知投降」的循环，即用 AI 的答案替代自己的思考过程。文章引用了 Anthropic、MIT 等机构的最新研究，证实了缺乏学习意图的 AI 使用会显著降低工程师的理解力和长期记忆，形成「认知负债」。作者并非反对使用 AI，而是强调需要主动调整使用姿态。文章提出了六条具体建议，包括在提问前先形成假设、先要解释再要代码、开启学习模式、像审查同事代码一样审查 AI 输出、偶尔从零开始重写、以及让 AI 解释其生...
+2026-05-21 01:00:00
 
 
 
