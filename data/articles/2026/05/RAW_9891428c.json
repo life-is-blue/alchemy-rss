@@ -1,0 +1,58 @@
+{
+  "id": "RAW_9891428c",
+  "title": "Bintrail：利用索引 Binlog 实现 MySQL 时间旅行查询",
+  "url": "https://www.infoq.com/news/2026/05/bintrail-mysql-timetravel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-21 17:03:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Bintrail is a recently introduced layer that brings <a href=\"https://blog.dbtrail.com/time-travel-sql-for-mysql-finally/\">point-in-time queries and row-history lookups to MySQL</a>, the only major relational database lacking native temporal querying. Using indexed binlogs behind ProxySQL and without modifying MySQL or application code, Bintrail supports querying data as of a past timestamp and reviewing change history, primarily for recovery and audit scenarios.</p>\n   <p>The approach adds <code>AS OF</code> and <code>BETWEEN</code> time-travel queries to standard MySQL by combining ProxySQL-based query routing with indexed binary logs. Bintrail parses MySQL ROW-format binary logs, indexes every row event with full before/after images, and generates reversal SQL for point-in-time recovery without requiring the original binlog files. <a href=\"https://www.linkedin.com/in/danielmauricioguzman/\">Daniel Guzman-Burgos</a>, database specialist, explains why he started the project:</p>\n   <blockquote>\n    <p>Last month I mapped out how every major OLTP except MySQL gives you point-in-time queries out of the box. Oracle has AS OF TIMESTAMP. SQL Server has FOR SYSTEM_TIME AS OF. MariaDB ships system-versioned tables. PostgreSQL has three extensions that get you there.</p>\n   </blockquote>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/bintrail-mysql-timetravel/en/resources/1Captura-de-pantalla-2026-05-06-a-las-1.58.53-p.m-1024x508-1779305185335.png\" rel=\"share\"></p>\n   <p><em>Source: dbtrail blog</em></p>\n   <p>In Oracle and SQL Server, the historical state can be queried directly. In MySQL, recovering or inspecting past data states often becomes an operational task built around binary logs rather than native temporal querying.</p>\n   <p>In a <a href=\"https://blog.dbtrail.com/every-major-oltp-has-time-travel-except-mysql/\">separate article</a> comparing options for the most popular relational databases, the author argues that the practical gap between queryable history and raw log data is where many recovery and audit incidents occur. Guzman-Burgos adds:</p>\n   <blockquote>\n    <p>Flashback has been in Oracle for a quarter century. Temporal Tables landed in SQL Server a decade ago. CockroachDB shipped time travel on day one. PostgreSQL users reach for extensions because the gap is too obvious to ignore. MariaDB forked away from MySQL and built it there. Oracle MySQL didn’t, won’t, and has no incentive to.</p>\n   </blockquote>\n   <p>The <code>_diff</code> query returns all row-level changes over a specified time range, including event type, GTID, and before/after values. While SQL Server, MariaDB, and Oracle provide various forms of historical row queries, they typically expose stored row versions and depend on temporal storage or retention settings. In contrast, Bintrail reads directly from indexed MySQL binlogs to reconstruct the full sequence of changes for a row across any selected period.</p>\n   <pre><code class=\"language-sql\">-- The state of order #42 at any past instant\nSELECT * FROM _flashback.orders\n  AS OF '2026-04-15 09:30:00'\n  WHERE id = 42;\n\n-- Or the whole table at that instant (every row that existed then)\nSELECT * FROM _flashback.orders AS OF '2026-04-15 09:30:00';\n\n-- Every change to order #42 in a time window\nSELECT * FROM _diff.orders\n  BETWEEN '2026-04-15 00:00:00' AND '2026-04-15 23:59:59'\n  WHERE id = 42;</code></pre>\n   <p>Bintrail can automatically generate <a href=\"https://www.proxysql.com/\">ProxySQL</a> routing rules that direct historical query patterns such as <code>_flashback</code>, <code>_diff</code>, and <code>_snapshot</code> to its own backend while leaving normal MySQL traffic untouched. The system maintains its own indexed history store independently of MySQL binlog retention, allowing historical queries to span longer periods and optionally extend into archived Parquet data stored on S3. Guzman-Burgos writes:</p>\n   <blockquote>\n    <p>No ALTER TABLE to enable system-versioning. No special storage engine. No binary log replay tooling. Same MySQL, same driver: point the connection at ProxySQL instead of the real MySQL port and the rest just works.</p>\n   </blockquote>\n   <p>Peter Zaitsev, founder of Percona and open source advocate, <a href=\"https://www.linkedin.com/posts/peterzaitsev_time-travel-sql-for-mysql-finally-dbtrail-activity-7458145657837547520-J59o/\">writes</a>:</p>\n   <blockquote>\n    <p>Daniel Guzmán Burgos continues to do amazing work with efficient solutions for MySQL recoverability.</p>\n   </blockquote>\n   <p>Discussing the new option, Roman Agabekov, founder of Releem, <a href=\"https://www.linkedin.com/posts/roman-agabekov_had-a-cool-conversation-with-daniel-guzm%C3%A1n-share-7460718050913476610-c0o-?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">notes</a>:</p>\n   <blockquote>\n    <p>Restoring a full backup is often too heavy, too slow, and too risky. That matters even more now, as AI-generated SQL, automated scripts, and operational changes are moving faster than before. More automation increases speed. It also increases the need for precise recovery.</p>\n   </blockquote>\n   <p>Among the current limitations, Bintrail supports only literal timestamp queries, primary-key lookups, and capped full-table restores, while joins and more complex filtering must be handled outside the shim layer. Bintrail is <a href=\"https://github.com/dbtrail/bintrail\">available on GitHub</a> under BUSL, a source-available license.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Bintrail: MySQL Time-Travel Queries Using Indexed Binlogs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/bintrail-mysql-timetravel/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779382980000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Bintrail 是一个新的开源层，它通过 ProxySQL 索引二进制日志，为 MySQL 带来时间点和行历史查询功能，无需修改 MySQL 或应用程序代码。",
+  "oneSentenceSummary": "Bintrail 是一个新的开源层，它通过 ProxySQL 索引二进制日志，为 MySQL 带来时间点和行历史查询功能，无需修改 MySQL 或应用程序代码。",
+  "summary": "Bintrail 解决了 MySQL 中长期存在的短板：缺乏 Oracle、SQL Server、MariaDB 和 PostgreSQL 中原生的时间查询能力。它结合基于 ProxySQL 的查询路由与索引二进制日志，为 MySQL 引入了 `AS OF` 和 `BETWEEN` 时间旅行 SQL 语法。该系统解析 MySQL ROW 格式的 binlog，为每个行事件建立完整的前后镜像索引，并生成用于时间点恢复的反向 SQL，无需原始 binlog 文件。它作为一个透明的代理层运行，自动将历史查询模式路由到自己的后端，同时保持正常的 MySQL 流量不受影响。Bintrail 独立于 MySQL binlog 保留策略维护自己的索引历史存储，允许查询跨越更长时间段，并可选择扩展到 S3 上归档的 Parquet 数据。该项目在 GitHub 上以 BUSL 许可证发布，主要面向恢复和审计场景。",
+  "mainPoints": [
+    {
+      "point": "Bintrail 为 MySQL 带来了原生的时间查询功能，弥补了与其他主流 OLTP 数据库相比的缺失。",
+      "explanation": "Oracle、SQL Server、MariaDB 和 PostgreSQL 都提供了内置的时间点查询能力，而 MySQL 历来依赖操作性的 binlog 回放来执行恢复和审计任务。"
+    },
+    {
+      "point": "它使用 ProxySQL 作为一个透明的代理层运行，无需更改 MySQL 或应用程序代码。",
+      "explanation": "Bintrail 自动将诸如 `_flashback` 和 `_diff` 之类的历史查询模式路由到自己的后端，而正常的 MySQL 流量不受影响，这使得采用变得非常简单。"
+    },
+    {
+      "point": "该系统索引 MySQL ROW 格式的二进制日志，以重建任意选定时间段内的完整行变更历史。",
+      "explanation": "通过解析和索引每个行事件的前后镜像，Bintrail 支持诸如 `SELECT * FROM _flashback.orders AS OF '2026-04-15 09:30:00'` 之类的查询，而无需原始 binlog 文件。"
+    },
+    {
+      "point": "Bintrail 维护自己独立的历史存储，允许查询跨越比 MySQL binlog 保留期更长的时间段。",
+      "explanation": "索引历史存储可以可选地扩展到 S3 上归档的 Parquet 数据，从而支持在更长时间范围内进行历史查询，而无需依赖 MySQL 的原生保留设置。"
+    }
+  ],
+  "keyQuotes": [
+    "无需 ALTER TABLE 来启用系统版本控制。无需特殊的存储引擎。无需二进制日志回放工具。同样的 MySQL，同样的驱动：将连接指向 ProxySQL 而非真实的 MySQL 端口，其余一切即可正常工作。",
+    "Flashback 在 Oracle 中已存在了四分之一个世纪。Temporal Tables 在十年前就已登陆 SQL Server。CockroachDB 从第一天起就支持时间旅行。PostgreSQL 用户寻求扩展，因为差距太过明显而无法忽视。",
+    "恢复完整备份通常过于沉重、缓慢且风险过高。这一点现在更为重要，因为 AI 生成的 SQL、自动化脚本和操作变更正以前所未有的速度推进。",
+    "上个月我梳理了除 MySQL 外，所有主流 OLTP 数据库如何开箱即用地提供时间点查询功能。"
+  ],
+  "tags": [
+    "MySQL",
+    "时间旅行查询",
+    "二进制日志",
+    "时间点恢复",
+    "ProxySQL"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 632,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779382980000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-21 17:03:00"
+}

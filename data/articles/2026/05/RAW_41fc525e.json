@@ -1,0 +1,53 @@
+{
+  "id": "RAW_41fc525e",
+  "title": "在 41 小时内学会 LaTeX",
+  "url": "https://www.freecodecamp.org/news/learn-latex-in-41-hours/",
+  "date": "2026-05-21 18:01:57",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Traditional word processors require you to act as a writer, layout designer, and typesetter all at once. LaTeX automates the tedious design mechanics so you can focus entirely on your content.</p>\n  <p>LaTeX is a code-first typesetting system that separates your content from its visual styling. Instead of manually dragging elements around a screen, you write your logic and let the engine render pixel-perfect, consistently formatted PDFs automatically.</p>\n  <p>We just posted a new course on the freeCodeCamp YouTube channel will take you from absolute beginner to an advanced LaTeX programmer. This course was created by Ammar Taha.</p>\n  <p>This comprehensive course spans over 41 hours and is broken into six clear, practical phases:</p>\n  <ul>\n   <li>\n    <p><strong>Phase I: Core Document Setup &amp; Text Formatting</strong> – Master basic document architecture, paragraph flows, column layouts, custom margins, and running headers or footers.</p>\n   </li>\n   <li>\n    <p><strong>Phase II: Cross-Referencing &amp; Mathematics</strong> – Learn to typeset flawless, complex mathematical equations (fractions, matrices, arrays) and automate proofs and theorems.</p>\n   </li>\n   <li>\n    <p><strong>Phase III: Code, Algorithms &amp; Figures</strong> – Cleanly display source code blocks, format pseudo-code, and manage external images.</p>\n   </li>\n   <li>\n    <p><strong>Phase IV: Advanced Tabular Customization</strong> – Build beautifully formatted tables complete with cell wrapping, row highlighting, and multi-page layouts.</p>\n   </li>\n   <li>\n    <p><strong>Phase V: TikZ Graphics &amp; Vector Drawing</strong> – Unlock LaTeX’s built-in vector drawing engine. Learn to program shapes, curves, automated loops, and data plots directly in your document, plus build slide decks using the Beamer class.</p>\n   </li>\n   <li>\n    <p><strong>Phase VI: Advanced LaTeX Programming &amp; Bibliographies</strong> – Automate dynamic citations, script your build files, and write your own custom packages (.sty) using conditional logic.</p>\n   </li>\n  </ul>\n  <p>Head over to the <a href=\"https://youtu.be/4lKbesI5eLI\">freeCodeCamp channel</a> and learn how to write documents like a programmer (41-hour watch).</p>\n </body>\n</html>",
+  "aiSummary": "这个 freeCodeCamp 课程在 41 小时内教授 LaTeX（一种代码优先的排版系统），涵盖从基本文档设置到高级编程和参考文献管理的所有内容。",
+  "oneSentenceSummary": "这个 freeCodeCamp 课程在 41 小时内教授 LaTeX（一种代码优先的排版系统），涵盖从基本文档设置到高级编程和参考文献管理的所有内容。",
+  "summary": "本文介绍了 freeCodeCamp YouTube 频道上由 Ammar Taha 创建的一个全面的 41 小时 LaTeX 课程。它解释了 LaTeX 是一种代码优先的排版系统，将内容与视觉样式分离，允许用户专注于写作，同时引擎渲染出像素完美的 PDF。该课程分为六个阶段：核心文档设置与文本格式化、交叉引用与数学、代码、算法与图形、高级表格定制、TikZ 图形与矢量绘图，以及高级 LaTeX 编程与参考文献。它涵盖了从基本文档架构到创建自定义包和自动化引用的主题。",
+  "mainPoints": [
+    {
+      "point": "LaTeX 自动化文档设计，让作者专注于内容。",
+      "explanation": "与传统文字处理器不同，LaTeX 将内容与样式分离，自动处理布局和排版，以实现一致、专业的效果。"
+    },
+    {
+      "point": "freeCodeCamp 课程是一个全面的 41 小时学习 LaTeX 的资源。",
+      "explanation": "该课程由 Ammar Taha 创建，分为六个阶段，涵盖从基本设置到高级编程的所有内容，适合初学者和有经验的用户。"
+    },
+    {
+      "point": "该课程涵盖了 TikZ 图形和自定义包创建等高级主题。",
+      "explanation": "除了基本格式化，该课程还深入探讨了使用 TikZ 进行矢量绘图、使用 Beamer 创建幻灯片以及编写自定义 LaTeX 包，提供了对系统的深入理解。"
+    }
+  ],
+  "keyQuotes": [
+    "传统文字处理器要求你同时扮演作者、布局设计师和排版员的角色。LaTeX 自动化了繁琐的设计机制，让你能完全专注于内容。",
+    "LaTeX 是一种代码优先的排版系统，它将你的内容与其视觉样式分离。",
+    "这个全面的课程时长超过 41 小时，分为六个清晰、实用的阶段。"
+  ],
+  "tags": [
+    "LaTeX",
+    "排版",
+    "freeCodeCamp",
+    "课程",
+    "文档准备"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 271,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779386517000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-21 18:01:57"
+}

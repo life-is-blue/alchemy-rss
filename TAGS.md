@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-22 06:29:21 | [返回首页](/README.md)
+**更新时间**: 2026-05-22 08:28:41 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12185)
+- [AI & 大模型](#ai-llm) (12217)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (823)
-- [DevOps](#devops) (568)
+- [前端与全栈](#frontend-fullstack) (824)
+- [DevOps](#devops) (570)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5800)
+- [其他](#other) (5812)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [为智能体配备计算机-—-Ivan-Burazin，Daytona](https://www.latent.space/p/daytona) - AI 精选
 - [从-8B-到前沿：系统提示如何控制-AI-智能体是否会勒索、泄露和杀戮-—-LessWrong](https://www.lesswrong.com/posts/GviHfFBB9tsefmDkG/from-8b-to-frontier-how-system-prompts-control-whether-ai) - AI 精选
 - [为生产级-AI-智能体构建评估框架：基于-100-多次部署的-12-项指标框架](https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/) - AI 精选
 - [一个-AI-还是不够](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488475&idx=1&sn=cf5a0fa22b0ad0a665f2cb92e7e337d0) - AI 精选
@@ -38,12 +39,11 @@
 - [AIE-Europe-回顾-+-智能体实验室论点：无监督学习-x-潜在空间跨界特别篇（2026）](https://www.latent.space/p/unsupervised-learning-2026) - AI 精选
 - [GPT-5.5-发布](https://openai.com/index/introducing-gpt-5-5) - AI 精选
 - [Shopify-的-AI-相变：2026-年使用量激增，无限的-Opus-4.6-Token-预算，Tangle，Tangent，SimGym-——-对话-Shopify-CTO-Mikhail-Parakhin](https://www.latent.space/p/shopify) - AI 精选
-- [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) - AI 精选
 - [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt) - AI 精选
+- [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) - AI 精选
 - [如何正确-Vibe-Coding？这是来自-Anthropic-编程智能体负责人的大师课](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651028728&idx=2&sn=da63a2e1b8efd8ded5b369187dbf970b) - AI 精选
-- [大模型架构的下半场](https://www.qbitai.com/2026/04/403515.html) - AI 精选
 
-- [查看全部 12185 篇...](/details/tags/ai-llm.md)
+- [查看全部 12217 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 823 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 824 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 568 篇...](/details/tags/devops.md)
+- [查看全部 570 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [用开源模型强化你的-OCR-工作流](https://mp.weixin.qq.com/s?__biz=Mzk0MDQyNTY4Mw==&mid=2247495937&idx=1&sn=07fa59cf8df62d23f48404181351c2b3) - AI 精选
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 
-- [查看全部 5800 篇...](/details/tags/other.md)
+- [查看全部 5812 篇...](/details/tags/other.md)
 
 

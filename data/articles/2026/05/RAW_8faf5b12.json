@@ -1,0 +1,47 @@
+{
+  "id": "RAW_8faf5b12",
+  "title": "发布：datasette-agent-sprites 0.1a0",
+  "url": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything",
+  "date": "2026-05-21 18:21:07",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">21st May 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-agent-sprites/releases/tag/0.1a0\">datasette-agent-sprites 0.1a0</a></span> <span class=\"beat-commit\">— Datasette Agent tools for working with Fly Sprites</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>A Datasette Agent plugin for running commands in a <a href=\"https://sprites.dev\">Fly Sprites</a> sandbox.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4602/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "用于在 Fly Sprites 沙箱中运行命令的 Datasette Agent 插件。",
+  "oneSentenceSummary": "用于在 Fly Sprites 沙箱中运行命令的 Datasette Agent 插件。",
+  "summary": "这是 datasette-agent-sprites 0.1a0 的发布公告，这是一个新的 Datasette Agent 插件，提供了与 Fly Sprites 沙箱协作的工具。该插件支持在 Fly Sprites 环境中运行命令，扩展了 Datasette 在沙箱化命令执行方面的能力。该版本为早期 alpha 版本（0.1a0）。",
+  "mainPoints": [
+    {
+      "point": "用于 Fly Sprites 沙箱集成的新 Datasette Agent 插件。",
+      "explanation": "该插件允许在 Fly Sprites 沙箱环境中运行命令，扩展了 Datasette 在沙箱化命令执行方面的功能。"
+    },
+    {
+      "point": "早期 alpha 版本（0.1a0），具备基本功能。",
+      "explanation": "初始版本提供了 Fly Sprites 集成的核心工具，适合早期测试和实验。"
+    }
+  ],
+  "keyQuotes": [
+    "一个用于在 Fly Sprites 沙箱中运行命令的 Datasette Agent 插件。"
+  ],
+  "tags": [
+    "Datasette",
+    "Fly Sprites",
+    "插件",
+    "沙箱",
+    "发布"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 27,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779387667000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-21 18:21:07"
+}
