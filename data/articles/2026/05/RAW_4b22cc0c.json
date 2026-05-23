@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4b22cc0c",
+  "title": "与 Claude Opus 协作的笔记 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/5abm94pmRn8pXiHtw/notes-on-collaborating-with-claude-opus",
+  "date": "2026-05-22 15:35:34",
+  "author": "Nissa Seru",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><b><span>INTENT</span></b><span>: Share elements of my mental model regarding collaboration with Claude Opus models. Not intentionally scoped to a specific model version, but my experience is generally with the latest model version available (4.7 as of time of writing items 1-4 on 5/22/26)</span></p>\n    <ol>\n     <li value=\"1\" id=\"block1\"><span>Accompanying an instruction with the </span><i><span>why</span></i><span> significantly improves: </span></li>\n     <li value=\"2\" id=\"block2\" class=\"nested-list-item\">\n      <ol>\n       <li value=\"1\" id=\"block3\"><span>Observed rate of the instruction being visibly salient to Claude </span></li>\n       <li value=\"2\" id=\"block4\"><span>Quality/nuance of instruction execution (baselined on 1a)</span></li>\n      </ol>\n     </li>\n     <li value=\"2\" id=\"block5\"><span>A standing instruction to break replies into labeled sections and sub-sections improves ergonomics of reference to specific points: </span></li>\n     <li value=\"3\" id=\"block6\" class=\"nested-list-item\">\n      <ol>\n       <li value=\"1\" id=\"block7\"><span>Claude reliably follows references to \"A3\" or \"B5\". This is much more ergonomic for me over the course of a session compared to \"on that point about blah...\"</span></li>\n       <li value=\"2\" id=\"block8\"><span> Claude actively uses the references as handles (in contrast to labeling sections but otherwise not interacting with the labels.)</span></li>\n      </ol>\n     </li>\n     <li value=\"3\" id=\"block9\"><span>Negatively-framed instructions increase salience of the prohibited action.</span></li>\n     <li value=\"4\" id=\"block10\" class=\"nested-list-item\">\n      <ol>\n       <li value=\"1\" id=\"block11\"><span>Depending on the instruction itself, the net effect may be an increase or decrease in prevalance of the prohibited action. </span></li>\n       <li value=\"2\" id=\"block12\"><span>If the baseline salience of the prohibited action is low in the context that it may trigger, the salience-increase may meaningfully increase action prevalence. I think of this as pink-elephant risk.</span></li>\n      </ol>\n     </li>\n     <li value=\"4\" id=\"block13\"><span>Claude seems to form a gestalt of the human message, and then interacts with the message's specific content through a lens informed by that gestalt. </span></li>\n     <li value=\"5\" id=\"block14\" class=\"nested-list-item\">\n      <ol>\n       <li value=\"1\" id=\"block15\"><span>I am wary of exhibiting verbal patterns that place my message in the attractor basin of \"human yelling at the model\"; I see a clear signal even in Claude's summarized thinking that responses landing in this basin are interpreted as \"human exhibiting an emotion that Claude needs to manage\", in contrast to \"human providing valuable instruction that Claude should reflect on and meticulously execute.\"</span></li>\n       <li value=\"2\" id=\"block16\"><span>I almost never use ALL CAPS for emphasis when instructing Claude.</span></li>\n      </ol>\n     </li>\n    </ol>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文分享了提升与 Claude Opus 协作效率的实用技巧，包括解释指令背后的原因、使用结构化标签以及避免负面表述的指令。",
+  "oneSentenceSummary": "本文分享了提升与 Claude Opus 协作效率的实用技巧，包括解释指令背后的原因、使用结构化标签以及避免负面表述的指令。",
+  "summary": "作者基于大量实践经验，分享了一套与 Claude Opus 模型高效协作的心智模型。关键洞察包括：为指令附上原因能显著提升其显著性和执行质量；指示模型将回复拆分为带标签的段落（如 A1、B3）可实现精准引用，且模型会主动使用这些标签；负面表述的指令可能增加被禁止行为的显著性，产生“粉红大象”效应；模型会对用户消息形成整体认知，因此表现出与“吼叫”相关的语言模式可能导致模型将消息解读为需要管理的情绪，而非有价值的执行指令。这些观察基于最新版 Claude Opus 的实际使用经验。",
+  "mainPoints": [
+    {
+      "point": "解释指令背后的原因能显著提升模型的遵循度和执行质量。",
+      "explanation": "当用户为指令附上理由或上下文时，Claude Opus 对指令的显著性更高，并能产出更细致、更高质量的输出。"
+    },
+    {
+      "point": "在回复中使用带标签的段落（如 A1、B3）能改善交互体验，并实现精准引用。",
+      "explanation": "Claude 能可靠地遵循对段落标签的引用，并主动将其作为句柄使用，这使得多轮对话比按主题描述要点更高效。"
+    },
+    {
+      "point": "负面表述的指令可能增加被禁止行为的显著性（粉红大象效应）。",
+      "explanation": "告诉模型不要做什么反而可能使被禁止的行为更易发生，尤其是在相关上下文中其基线显著性较低时。"
+    },
+    {
+      "point": "Claude 会对用户消息形成整体认知，因此沟通风格对指令执行至关重要。",
+      "explanation": "类似“吼叫”的语言模式可能导致模型将消息解读为需要管理的情绪，而非有价值的执行指令，从而降低效果。"
+    }
+  ],
+  "keyQuotes": [
+    "为指令附上原因能显著提升：指令对 Claude 的可见性；指令执行的质量和细致程度。",
+    "Claude 能可靠地遵循对“A3”或“B5”的引用。在会话过程中，这比“关于那个 blah 的点...”要省力得多。",
+    "负面表述的指令会增加被禁止行为的显著性。",
+    "我警惕表现出那些会让我的消息落入“人类对模型吼叫”吸引域的语言模式。"
+  ],
+  "tags": [
+    "Claude Opus",
+    "提示工程",
+    "AI 协作",
+    "LLM 交互",
+    "指令设计"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 291,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779464134000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-22 15:35:34"
+}

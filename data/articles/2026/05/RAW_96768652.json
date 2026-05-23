@@ -1,0 +1,53 @@
+{
+  "id": "RAW_96768652",
+  "title": "xAI 发布 Grok Skills 并更新工具调用 Responses API",
+  "url": "https://www.infoq.com/news/2026/05/xai-grok-skills/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-22 10:24:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>xAI has released <a href=\"https://x.ai/news/grok-skills\">Grok Skills</a> together with enhancements to the Responses <a href=\"https://docs.x.ai/overview\">API for Grok 4.3</a>, enabling persistent custom expertise that the model retains across all conversations on the web platform, iOS app, and Android app. Users create these skills once through natural language descriptions or file uploads, after which Grok applies the defined workflows, preferences, and document-handling routines automatically without needing repeated instructions in future sessions.</p>\n   <p>The built-in capabilities cover full generation and editing of Word documents that preserve headings, tables, and styles, creation of PowerPoint-style slide decks that include visual hierarchy and speaker notes, Excel spreadsheets that support formulas, data analysis, charts, and conditional formatting, and PDF operations that allow creation, merging, splitting, text extraction, and content reorganization. These skills operate at the account level, take priority over default behaviors when invoked via slash commands, and support sharing between users for collaborative setups.</p>\n   <p>On the developer side, the <a href=\"https://docs.x.ai/overview\">Responses API</a> integrates these concepts through tool calling that follows an OpenAI-compatible format while adding native server-side execution for built-in tools. Developers include tools in API requests by specifying types such as <a href=\"https://docs.x.ai/developers/tools/web-search\">web_search</a>, <a href=\"https://docs.x.ai/developers/tools/x-search\">x_search</a>, or <a href=\"https://docs.x.ai/developers/tools/code-execution\">code_interpreter</a> for automatic handling on xAI infrastructure, or define custom functions using JSON schemas that describe name, description, and parameters. When Grok 4.3 determines a tool is needed, it returns structured <a href=\"https://docs.x.ai/developers/tools/function-calling\">tool_call</a> objects with call identifiers and arguments. Client applications then execute the logic locally, append the results as tool outputs in the next request, and continue the conversation loop. The model supports parallel tool calls by default, handles up to 128 tools per request, maintains a 1 million token context window, and produces outputs suited for multi-step agentic tasks. Custom skills created in the chat interface can complement API flows by providing reusable instructions that developers incorporate into system prompts or state management on their end.</p>\n   <p>Community comments on <a href=\"https://x.com/grok/status/2056584354948674046\">X</a> showed a mix of excitement and early testing, with users highlighting the practical value for workflows.</p>\n   <p>Software developer <a href=\"https://x.com/tiagobuilds/status/2056475482065911936\">Tiago Rama</a> posted:</p>\n   <blockquote>\n    <p>Custom skills/workflow automation have been becoming the default in other AI tools, so Grok needed to catch up here.</p>\n   </blockquote>\n   <p>Meanwhile developer <a href=\"https://x.com/Will_W_Welker/status/2056549158090330581\">William Wallace</a> shared a sample of a Grok Skill connected to GitHub, saying:</p>\n   <blockquote>\n    <p>I have enabled Grok to connect to my Github account to read and commit. I added this context.md file to help maintain context across multiple development conversations.</p>\n   </blockquote>\n   <p>Compared with similar approaches from <a href=\"https://developers.openai.com/api/docs/guides/tools-skills\">OpenAI Skills</a>, <a href=\"https://claude.com/skills\">Claude Skills</a>, and Vercel <a href=\"https://vercel.com/docs/agent-resources/skills\">Agent Skills</a>, <a href=\"https://grok.com/skills\">Grok Skills</a> acts more like a reusable workflow and capability layer than a fully deployable autonomous agent system. Vercel Skills focuses on extending developer and web application workflows with composable capabilities, while OpenAI and Anthropic currently center their ecosystems around broader agent, tool-calling, and long-context collaboration models. Grok Skills differentiates itself through tight integration with the X platform, combining reusable instructions, search, multimodal capabilities, and social context into lightweight platform-native workflows.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"xAI Releases Grok Skills and Updates Tool Calling Responses API\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/xai-grok-skills/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779445440000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "xAI 推出 Grok Skills，支持持久化自定义工作流，并更新 Responses API，兼容 OpenAI 工具调用格式、原生服务端执行以及 100 万 token 上下文窗口。",
+  "oneSentenceSummary": "xAI 推出 Grok Skills，支持持久化自定义工作流，并更新 Responses API，兼容 OpenAI 工具调用格式、原生服务端执行以及 100 万 token 上下文窗口。",
+  "summary": "xAI 发布了 Grok Skills 功能，用户可通过自然语言描述或上传文件创建持久化的自定义技能，Grok 会在网页、iOS 和 Android 平台的所有对话中保留这些技能。这些技能可自动化工作流、偏好设置和文档处理流程，无需重复指令。内置功能包括生成和编辑 Word 文档、创建 PowerPoint 演示文稿、处理包含公式和图表的 Excel 电子表格，以及执行 PDF 操作。在开发者方面，针对 Grok 4.3 更新的 Responses API 引入了兼容 OpenAI 的工具调用格式，支持原生服务端执行内置工具（如网页搜索、X 搜索和代码解释器）。开发者还可以使用 JSON 模式定义自定义函数。该模型支持并行工具调用，每次请求最多可处理 128 个工具，并保持 100 万 token 的上下文窗口。文章将 Grok Skills 与 OpenAI、Anthropic 和 Vercel 的类似产品进行了比较，认为 Grok Skills 是一个与 X 平台紧密集成的可复用工作流层，而非完全自主的智能体系统。",
+  "mainPoints": [
+    {
+      "point": "Grok Skills 可在所有 xAI 平台上实现持久化、可复用的自定义工作流。",
+      "explanation": "用户通过自然语言或文件上传一次性创建技能，Grok 会在网页、iOS 和 Android 平台的所有对话中自动应用这些技能，无需重复指令。"
+    },
+    {
+      "point": "更新的 Responses API 支持兼容 OpenAI 的工具调用格式，并具备原生服务端执行能力。",
+      "explanation": "开发者可以使用内置工具（如网页搜索和代码解释器），或通过 JSON 模式定义自定义函数。该模型支持并行调用，每次请求最多处理 128 个工具，并拥有 100 万 token 的上下文窗口。"
+    },
+    {
+      "point": "Grok Skills 定位为可复用工作流层，而非完全自主的智能体系统。",
+      "explanation": "与 OpenAI、Anthropic 和 Vercel 的产品相比，Grok Skills 侧重于与 X 平台的紧密集成，将可复用指令、搜索和社交上下文结合为轻量级、平台原生的工作流。"
+    }
+  ],
+  "keyQuotes": [
+    "自定义技能/工作流自动化已成为其他 AI 工具的标配，因此 Grok 需要迎头赶上。",
+    "Grok Skills 更像是一个可复用的工作流和能力层，而非一个可完全部署的自主智能体系统。",
+    "Grok Skills 通过与 X 平台的紧密集成实现差异化，将可复用指令、搜索、多模态能力和社交上下文结合为轻量级、平台原生的工作流。"
+  ],
+  "tags": [
+    "Grok Skills",
+    "xAI",
+    "工具调用",
+    "Responses API",
+    "AI 工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 471,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779445440000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-22 10:24:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_5dd573d2",
+  "title": "🚀 新课程上线：用 Claude Code 构建应用",
+  "url": "https://blog.bytebytego.com/p/build-with-claude-code-new-cohort",
+  "date": "2026-05-22 15:31:20",
+  "author": "ByteByteGo",
+  "siteName": "ByteByteGo Newsletter",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <p>We’re launching a new 2 day intensive, cohort based course called Build with Claude Code, taught by John Kim, who has trained hundreds of engineers at Meta to use Claude Code in real production workflows.</p>\n   <p><strong>The course starts soon on May 28.</strong></p>\n   <p data-attrs=\"{&quot;url&quot;:&quot;https://go.bytebytego.com/claude-c1-substack&quot;,&quot;text&quot;:&quot;Check it out now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\" class=\"button-wrapper\"><a href=\"https://go.bytebytego.com/claude-c1-substack\" class=\"button primary\"><span>Check it out now</span></a></p>\n   <div class=\"captioned-image-container\">\n    <figure>\n     <a target=\"_blank\" href=\"https://go.bytebytego.com/claude-c1-substack\" data-component-name=\"Image2ToDOM\" class=\"image-link image2 is-viewable-img can-restack\"> \n      <div class=\"image2-inset\">\n       <picture><img src=\"https://image.jido.dev/20260522223702_60dca5aa-afd4-4f29-9233-3b5d82c84154_2360x2920.png\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/60dca5aa-afd4-4f29-9233-3b5d82c84154_2360x2920.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1801,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:854119,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:&quot;https://go.bytebytego.com/claude-c1-substack&quot;,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://blog.bytebytego.com/i/198752484?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F60dca5aa-afd4-4f29-9233-3b5d82c84154_2360x2920.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" alt=\"\" sizes=\"100vw\" fetchpriority=\"high\" class=\"sizing-normal\"></picture>\n       <div class=\"image-link-expand\">\n        <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image\">\n          <svg role=\"img\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\">\n           <g>\n            <title></title><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path>\n           </g>\n          </svg>\n         </button>\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2\">\n           <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n          </svg>\n         </button>\n        </div>\n       </div>\n      </div> \n     </a>\n     <figcaption class=\"image-caption\"></figcaption>\n    </figure>\n   </div>\n   <p>A few things you’ll learn:</p>\n   <ul>\n    <li>\n     <p>The agentic loop, context engineering, and memory layers that make Claude Code useful for real projects</p>\n    </li>\n    <li>\n     <p>How to build with Claude Code Skills, MCPs, and hooks to give Claude the tools and feedback loops it needs to self correct</p>\n    </li>\n    <li>\n     <p>Parallel development with Git worktrees, subagents, and agent teams</p>\n    </li>\n    <li>\n     <p>A capstone project where you ship something real on your own stack</p>\n    </li>\n   </ul>\n   <p>The course includes live sessions, assignments, and office hours, so there’s plenty of room to ask questions and get unstuck.</p>\n   <p>The first cohort starts in just a few days: May 28 to 29, 2026. If you want to learn everything from the fundamentals of Claude Code to advanced production workflows, including working with large codebases, this could be a great way to level up.</p>\n   <p data-attrs=\"{&quot;url&quot;:&quot;https://go.bytebytego.com/claude-c1-substack&quot;,&quot;text&quot;:&quot;Check it out now&quot;,&quot;action&quot;:null,&quot;class&quot;:&quot;button-wrapper&quot;}\" data-component-name=\"ButtonCreateButton\" class=\"button-wrapper\"><a href=\"https://go.bytebytego.com/claude-c1-substack\" class=\"button primary button-wrapper\"><span>Check it out now</span></a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "ByteByteGo 推出为期 2 天的集训课程，主题为 Claude Code，涵盖智能体循环、上下文工程、MCP 和并行开发，由前 Meta 工程师授课。",
+  "oneSentenceSummary": "ByteByteGo 推出为期 2 天的集训课程，主题为 Claude Code，涵盖智能体循环、上下文工程、MCP 和并行开发，由前 Meta 工程师授课。",
+  "summary": "本文介绍了 ByteByteGo 新推出的一门高强度集训课程《用 Claude Code 构建应用》，由曾培训过 Meta 数百名工程师的 John Kim 授课。该 2 天课程涵盖 Claude Code 的高级工作流，包括智能体循环、上下文工程、记忆层、技能、MCP、钩子，以及基于 Git worktrees 和子智能体的并行开发。课程包含直播授课、作业、答疑和结业项目。首期课程将于 2026 年 5 月 28 日至 29 日举办。",
+  "mainPoints": [
+    {
+      "point": "本课程专注于生产环境中的高级 Claude Code 工作流。",
+      "explanation": "课程主题包括智能体循环、上下文工程、记忆层、技能、MCP 和钩子，超越基础用法，聚焦真实世界中的可扩展实践。"
+    },
+    {
+      "point": "课程涵盖基于 Git worktrees 和子智能体的并行开发技术。",
+      "explanation": "学员将学习如何管理多个开发流，并协调智能体团队完成复杂项目。"
+    },
+    {
+      "point": "课程由一位经验丰富的 Meta 工程师授课，他曾培训数百名工程师使用 Claude Code。",
+      "explanation": "John Kim 带来了来自大型科技公司的实战级生产经验，增加了课程的可信度和实用深度。"
+    },
+    {
+      "point": "课程形式包括直播授课、作业、答疑和结业项目。",
+      "explanation": "这种结构确保了互动式学习、个性化支持，以及将技能应用于真实代码库的机会。"
+    }
+  ],
+  "keyQuotes": [
+    "智能体循环、上下文工程和记忆层，这些让 Claude Code 在真实项目中发挥作用。",
+    "如何利用 Claude Code 的技能、MCP 和钩子来构建工具和反馈循环，使 Claude 能够自我纠正。",
+    "基于 Git worktrees、子智能体和智能体团队的并行开发。"
+  ],
+  "tags": [
+    "Claude Code",
+    "AI 编程",
+    "课程",
+    "智能体循环",
+    "MCP"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 179,
+  "domain": "blog.bytebytego.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_996ae6",
+  "sourceName": "ByteByteGo Newsletter",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779463880000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-22 15:31:20"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b146a1dc",
+  "title": "AI 不是普通技术 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/F2mwKxFRhjqizA89p/ai-is-not-normal-technology",
+  "date": "2026-05-22 10:27:48",
+  "author": "Olivia Scharfman",
+  "siteName": "LessWrong",
+  "content": null,
+  "aiSummary": "本文认为 AI 并非像电力或互联网那样的普通技术，而是一种从根本上具有变革性的力量，它模拟认知能力，并可能导致灾难性风险，以此批判《AI 作为普通技术》一文中提出的对立观点。",
+  "oneSentenceSummary": "本文认为 AI 并非像电力或互联网那样的普通技术，而是一种从根本上具有变革性的力量，它模拟认知能力，并可能导致灾难性风险，以此批判《AI 作为普通技术》一文中提出的对立观点。",
+  "summary": "这篇回应文章直接挑战了 Arvind Narayanan 和 Sayash Kapoor 提出的“AI 作为普通技术”论点。作者认为，虽然对立观点令人安心，但其存在严重缺陷。批评集中在几个关键领域：参考类别选择不当（将 AI 与电力比较，而非认识到其作为首个模拟认知技术的独特性）、否认 AI 具有可衡量的智能，以及低估灾难性风险，尤其是生物安全风险。作者利用国际象棋等历史类比，展示了关于机器智能的评判标准如何被不断移动，并认为技术的缓慢普及并不能使其变得“普通”。文章总结道，承认 AI 的非普通性质对于正确治理至关重要，并且政策结论虽然可能正确，但应基于与 Narayanan 和 Kapoor 所提不同的理由得出。",
+  "mainPoints": [
+    {
+      "point": "AI 与电力等过去的通用技术在本质上截然不同。",
+      "explanation": "过去的技术补充了人类认知，而 AI 是首个模拟认知的技术，并且能够独立对世界采取行动，这使其成为人类历史上的一个阶跃性变化，而非持续演进。"
+    },
+    {
+      "point": "否认 AI 具有可衡量智能的论点存在缺陷，这反映了历史上不断移动评判标准的模式。",
+      "explanation": "作者利用国际象棋 AI 的历史表明，批评者一再移动智能的定义以排除机器的成就，这种模式如今正被套用在语言模型上。"
+    },
+    {
+      "point": "AI 带来的灾难性风险，尤其是生物安全风险，并非空穴来风，也不需要失控的 AI。",
+      "explanation": "最具体的灾难性风险是 AI 降低了设计和合成病原体的门槛，这不需要 AI 自主行动，代表了一种全新的威胁格局。"
+    }
+  ],
+  "keyQuotes": [
+    "每一项过去的技术都补充了认知。而这项技术模拟了认知，并使得模拟几乎任何类型的劳动成为可能。",
+    "它是第一项，也是唯一一项理论上可以无限期地自我扩张和消耗能量的技术。",
+    "基于连续性的“AI 是普通的”论点存在一个结构性问题，即从过去许多关于非连续性的预测都是错误的这一事实中进行泛化。",
+    "即使 AI 没有欲望，我们也知道它会表现得好像有欲望一样——今天的 AI 已经如此。",
+    "任何拥有电脑的人都能有能力设计出比任何核弹更具杀伤力的大规模杀伤性武器，这绝非正常情况。"
+  ],
+  "tags": [
+    "AI 安全",
+    "超级智能",
+    "AI 风险",
+    "技术扩散",
+    "智能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 23,
+  "score": 87,
+  "wordCount": 5600,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779445668000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-22 10:27:48"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_50f4e95c",
+  "title": "InfoQ 为资深软件从业者推出在线 AI 工程研修班与认证",
+  "url": "https://www.infoq.com/news/2026/05/ai-engineering-certification-pro/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-22 13:00:00",
+  "author": "Artenisa Chatziou",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>As technical practitioners move into senior, staff, or principal roles, they frequently face a hidden career bottleneck: the number of people inside their organization who can meaningfully challenge their reasoning gets smaller.</p>\n   <p>InfoQ's online certification cohorts are built around that gap: small groups of senior engineers from different companies and industries, working through real decisions together, in confidence.</p>\n   <p>InfoQ has launched the <a href=\"https://certification.qconferences.com/ai-engineering?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may22_onlinecohortaijuly26\">InfoQ Certified AI Engineering Program</a>, an online cohort with live sessions, 4 hours a week, for 5 weeks, for senior engineers, software architects, AI/ML platform engineers, technical leads, and engineering managers working on production AI systems. The first cohort begins on July 25, 2026, with weekly live sessions on Saturdays at 9:00 AM PDT.</p>\n   <p>The program is facilitated by <a href=\"https://www.linkedin.com/in/hienluu/\">Hien Luu</a>, Sr. Engineering Manager at Zoox and author of <em>MLOps with Ray</em> and <em>Beginning Apache Spark 3</em>. Luu leads the Machine Learning Platform team at Zoox and has presented at QCon conferences on AI/ML infrastructure and production engineering.</p>\n   <blockquote>\n    <p>\"Most teams are making infrastructure, platform, and reliability decisions for production AI systems before they have strong internal benchmarks for what good looks like. The cohort gives senior engineers a way to apply proven frameworks to their own work, with experienced peers from other organizations challenging their assumptions and trade-offs.\"</p>\n   </blockquote>\n   <p><em>— Hien Luu, InfoQ Certified AI Engineering Cohort facilitator</em></p>\n   <h2>From AI Prototypes to Production Systems</h2>\n   <p>As teams move AI features from prototype to production, the core engineering questions shift. The challenge is no longer just whether a system can work once, but whether it can keep working predictably under production constraints and at scale.</p>\n   <p>For many teams, the calls around retrieval architecture, context pipelines, agent orchestration, evaluation, platform boundaries, inference cost, observability, and operational ownership are being made for the first time, with few people outside the team to compare notes with.</p>\n   <p>In each cohort, senior engineers from different companies apply proven frameworks to the AI engineering decisions they are working on, and share what worked and what did not, in confidence. Participants leave with either new approaches or confirmation that the calls they are already making are the right ones.&nbsp;</p>\n   <p>Sessions are kept small and run as confidential peer groups, allowing participants to examine architectural decisions, technical debt, and organizational constraints in a closed setting.</p>\n   <h2>The Curriculum</h2>\n   <p><a href=\"https://certification.qconferences.com/modules/custom/qcon_home/assets/Program-Syllabus-InfoQ-Certified-AI-Engineering-Program.pdf?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may22_onlinecohortaijuly26\">Each week</a>, join a four-hour live online session with the facilitator and a small cohort of peers. The live sessions focus on applying frameworks to real problems from participants’ own work rather than working through generic case studies.</p>\n   <ul>\n    <li><strong>Week 1: Becoming an AI-Native Engineering Team</strong>. Participants examine where AI changes engineering habits, product thinking, and architectural trade-offs, and where existing resilience and risk-management practices still apply.</li>\n    <li><strong>Week 2: Designing and Building RAG and Context Pipelines</strong>. Retrieval architectures, knowledge graphs, and memory pipelines that remain grounded as data changes and query complexity increase.</li>\n    <li><strong>Week 3: Designing and Building AI Agents</strong>. Single-purpose tools through to multi-agent orchestration, with a focus on the tradeoffs between autonomy and control in production systems.</li>\n    <li><strong>Week 4: AI Platforms and Infrastructure</strong>. Platform layer design for AI systems: what to centralize, what to federate, and how to route batch and real-time workloads without overspending on inference.</li>\n    <li><strong>Week 5: AI Operational Excellence: Evals, Trust, and Reliability</strong>. Evaluation frameworks and operational disciplines that keep AI systems dependable after deployment.</li>\n   </ul>\n   <p>Throughout the cohort, participants develop a technical capstone article. Week 5 includes cohort presentations of the article drafts. The strongest pieces are published on InfoQ. Graduates earn the InfoQ Certified AI Engineering Program certification, which can be added to their LinkedIn profile.</p>\n   <h2>Upcoming online cohorts and certifications</h2>\n   <ul>\n    <li>The Software Architecture cohort starts June 10, 2026. <a href=\"https://certification.qconferences.com/architecture?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_ai-engineering-certification?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may22_onlinecohortaijuly26\">Reserve a place now</a>.</li>\n    <li>The Organizational Architect cohort starts June 19, 2026. <a href=\"https://certification.qconferences.com/organizational-architect?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may22_onlinecohortaijuly26\">Reserve a place now</a>.&nbsp;</li>\n    <li>The AI Engineering cohort starts on July 25, 2026. <a href=\"https://certification.qconferences.com/ai-engineering?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may22_onlinecohortaijuly26\">Reserve a place now</a>.&nbsp;</li>\n   </ul>\n   <p>Most companies reimburse professional development. A <a href=\"https://certification.qconferences.com/content/convince-your-boss?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may22_onlinecohortaijuly26\">Convince Your Boss template</a> is available, laying out the business case for your manager.&nbsp;</p>\n   <p>More details and enrollment for all three programs are available at the <a href=\"https://certification.qconferences.com/?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may22_onlinecohortaijuly26\">InfoQ Online Certification Program</a> page.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"InfoQ Launches Online AI Engineering Cohort and Certification for Senior Software Practitioners\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Artenisa Chatziou\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/ai-engineering-certification-pro/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779454800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "InfoQ 推出了为期 5 周的在线 AI 工程认证研修班，面向资深工程师，由行业专家引导，通过小型保密同行小组聚焦生产级 AI 系统。",
+  "oneSentenceSummary": "InfoQ 推出了为期 5 周的在线 AI 工程认证研修班，面向资深工程师，由行业专家引导，通过小型保密同行小组聚焦生产级 AI 系统。",
+  "summary": "本文介绍了 InfoQ 新推出的在线 AI 工程认证项目，这是一个为期 5 周的研修班，专为从事生产级 AI 系统工作的资深软件从业者（如工程师、架构师和管理者）设计。该项目由 Zoox 公司的高级工程经理 Hien Luu 引导，旨在解决资深工程师缺乏同行来挑战其技术决策的难题。课程涵盖关键的 AI 工程主题，包括如何成为 AI 原生团队、设计 RAG 与上下文管道、构建 AI 智能体、AI 平台与基础设施，以及卓越运营。该研修班强调在保密环境中将框架应用于参与者自身工作中的实际问题，并以一篇技术顶点文章作为结业成果。文章还提到了即将推出的其他研修班，主题涉及软件架构和组织架构师。",
+  "mainPoints": [
+    {
+      "point": "InfoQ 为资深工程师推出新的在线认证研修班，聚焦生产级 AI 系统。",
+      "explanation": "这个为期 5 周的项目面向那些缺乏同行来挑战其推理的资深工程师、高级工程师和首席工程师，提供了一个应用成熟框架的结构化环境。"
+    },
+    {
+      "point": "课程覆盖从战略到运营的关键 AI 工程主题。",
+      "explanation": "每周的课程涵盖成为 AI 原生团队、RAG 管道、AI 智能体、平台基础设施和卓越运营，注重实际应用而非通用案例研究。"
+    },
+    {
+      "point": "该项目被设计为一个保密的同行小组，以促进深度的技术讨论。",
+      "explanation": "小班制和保密环境允许来自不同公司的资深工程师公开分享架构决策、技术债务和组织约束。"
+    }
+  ],
+  "keyQuotes": [
+    "大多数团队在为生产级 AI 系统做出基础设施、平台和可靠性决策时，还没有建立强有力的内部基准来评判什么是好的实践。",
+    "该研修班让资深工程师能够将成熟的框架应用于自身工作，并与其他组织的经验丰富的同行一起挑战他们的假设和权衡。",
+    "挑战不再仅仅是系统能否运行一次，而是它能否在生产约束和大规模条件下持续可预测地运行。"
+  ],
+  "tags": [
+    "AI 工程",
+    "认证",
+    "InfoQ",
+    "资深工程师",
+    "生产级 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 668,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779454800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-22 13:00:00"
+}

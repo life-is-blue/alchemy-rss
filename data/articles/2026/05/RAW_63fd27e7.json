@@ -1,0 +1,53 @@
+{
+  "id": "RAW_63fd27e7",
+  "title": "“时间线到何时”提案：DIAL 分布 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/tXyu3kFkXdhP8jJKB/proposal-for-timelines-to-what-dial-distribution",
+  "date": "2026-05-22 14:40:47",
+  "author": "tlevin",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>This is a linkpost for </span><span><span><a href=\"https://multipliercg.substack.com/p/timelines-to-what-a-proposal\" rel=\"noreferrer\"><span>my post on the Coefficient Giving Substack</span></a></span></span><span> today, which bundles a few points about AI timelines that I think are important to keep in mind when making decisions. TLDR, when making decisions with respect to AI timelines, usually you should:</span></p>\n    <ul>\n     <li value=\"1\" id=\"block1\"><span>Use distributions, not point estimates/deadlines;</span></li>\n     <li value=\"2\" id=\"block2\"><span>Use \"decision importance\" rather than capability thresholds;</span></li>\n     <li value=\"3\" id=\"block3\"><span>Remember to account for leverage.</span></li>\n    </ul>\n    <p id=\"block4\"><span>I coin \"DIAL distribution,\" where DIAL stands for \"decision importance adjusted for leverage,\" as a handy acronym for this bundle of concepts.</span></p>\n    <p id=\"block5\"><span><span><a href=\"https://x.com/trevposts/status/2057832519756648661/photo/1\"></a></span></span></p>\n    <img src=\"https://image.jido.dev/20260522223849_i7vcw0e2lbtsfgdmcgoe.png\" alt=\"image.png\">\n    <p id=\"block6\"><span>The post itself is </span><span><span><a href=\"https://multipliercg.substack.com/p/timelines-to-what-a-proposal\" rel=\"noreferrer\"><span>here</span></a></span></span><span>. Appreciate your feedback!</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文提出了用于 AI 时间线的 DIAL 分布框架，主张使用基于决策重要性调整的分布而非点估计，以便在不确定性下做出更优决策。",
+  "oneSentenceSummary": "本文提出了用于 AI 时间线的 DIAL 分布框架，主张使用基于决策重要性调整的分布而非点估计，以便在不确定性下做出更优决策。",
+  "summary": "文章认为，在做出与 AI 时间线相关的决策时，依赖点估计或固定截止日期存在根本性缺陷。为此，它引入了 DIAL（决策重要性调整杠杆）分布框架。核心思想是使用可能时间线的概率分布，根据所做出决策的重要性进行加权，并考虑个人影响结果所拥有的杠杆。这种方法有助于决策者避免过度优化单一预测日期，而是针对一系列合理的场景做好稳健准备。本文是一篇指向 Coefficient Giving Substack 上更详细文章的链接帖，简明扼要地总结了关键概念。",
+  "mainPoints": [
+    {
+      "point": "对于 AI 时间线，应使用分布，而非点估计或截止日期。",
+      "explanation": "点估计会造成虚假的精确性，并导致脆弱的策略。使用时间线分布可以捕捉不确定性，从而实现更稳健的规划。"
+    },
+    {
+      "point": "关注“决策重要性”，而非能力阈值。",
+      "explanation": "决策的重要性取决于其背景和利害关系，而不仅仅是达到某个 AI 能力水平的时间点。决策应根据其实际影响进行加权。"
+    },
+    {
+      "point": "在时间线不确定性下做决策时，要考虑到杠杆因素。",
+      "explanation": "影响结果的能力会随时间变化。决策应根据个人在何时拥有最大杠杆来创造积极变化进行优先级排序。"
+    }
+  ],
+  "keyQuotes": [
+    "使用分布，而非点估计/截止日期。",
+    "使用“决策重要性”，而非能力阈值。",
+    "记住要考虑到杠杆因素。"
+  ],
+  "tags": [
+    "AI 时间线",
+    "决策理论",
+    "不确定性",
+    "DIAL 分布",
+    "理性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 92,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779460847000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-22 14:40:47"
+}

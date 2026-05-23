@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ed3084ed",
+  "title": "Cloudflare 用浏览器运行重建和六层平台完成其智能体基础设施栈",
+  "url": "https://www.infoq.com/news/2026/05/cloudflare-agent-platform-stack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-22 09:21:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has <a href=\"https://blog.cloudflare.com/browser-run-containers/\">rebuilt Browser Run on top of its own Containers platform</a>, delivering 4x higher concurrency (120 simultaneous browsers, up from 30), 50% faster response times for quick actions, and support for WebGL and WebMCP.</p>\n   <p>The upgrade, which required no changes from existing users, caps a sequence of launches over the past two months that collectively assemble a full-stack platform for building and running AI agents. Ruskin Constant, Rui Figueira, and Sofia Cardita from the Browser Run team <a href=\"https://blog.cloudflare.com/browser-run-containers/\">write</a>:</p>\n   <blockquote>\n    <p>AI agent builders discovered Browser Run and quickly brought request volumes outpacing our existing capacity.</p>\n   </blockquote>\n   <p>That demand spike forced an architectural rethink. Browser Run previously shared infrastructure with Cloudflare's Browser Isolation (BISO) product, where long, steady human sessions clashed with the short, spiky usage patterns of AI agents. The rebuild moved to dedicated Containers with regional pools of pre-warmed browsers, migrated state management from Workers KV (eventual consistency causing race conditions) to D1 with Queues (transactional assignment, batch writes handling up to 500,000 containers per location), and eliminated the multi-step WebSocket choreography for quick actions in favor of single HTTP requests executed entirely inside the container.</p>\n   <p>Browser Run is the browsing layer, but the broader story is the platform. Over the past two months, Cloudflare has shipped six distinct infrastructure primitives that together cover every layer an agent platform needs:</p>\n   <ul>\n    <li>Compute comes in two tiers. <a href=\"https://www.infoq.com/news/2026/04/cloudflare-dynamic-workers-beta/\">Dynamic Workers</a> provide V8 isolate-based execution that boots in milliseconds for lightweight tasks such as lint, typecheck, and API calls. <a href=\"https://www.infoq.com/news/2026/04/cloudflare-sandboxes-ga/\">Sandboxes</a>, now generally available, provide full Linux containers for when agents need git, bash, dev servers, and multi-language builds, with secure credential injection via egress proxy so agents never see raw tokens.</li>\n    <li>Orchestration is handled by <a href=\"https://www.infoq.com/news/2026/05/cloudflare-dynamic-workflows/\">Dynamic Workflows</a>, a roughly 300-line MIT-licensed library that extends Cloudflare's durable execution engine so workflow code can differ per tenant, agent, or request at runtime. Every step is independently retryable, every sleep hibernates for free, and idle tenants cost approximately nothing.</li>\n    <li>Memory is provided by <a href=\"https://www.infoq.com/news/2026/04/cloudflare-agent-memory-beta/\">Agent Memory</a>, currently in private beta. The service extracts structured memories from agent conversations using a dual-pass ingestion pipeline and retrieves them through five-channel parallel search with Reciprocal Rank Fusion. Shared memory profiles let teams of agents access common knowledge.</li>\n    <li>Browsing is now Browser Run on Containers, giving agents headless Chromium instances they can control via the DevTools Protocol or the Agents SDK. The WebMCP addition enables Model Context Protocol interactions directly through the browser.</li>\n    <li>Commerce rounds out the stack. Through a <a href=\"https://www.infoq.com/news/2026/05/cloudflare-stripe-agent-commerce/\">protocol co-designed with Stripe</a>, agents can autonomously create Cloudflare accounts, register domains, start subscriptions, and deploy to production. Stripe handles identity and payment with a $100/month default spending cap per provider.</li>\n   </ul>\n   <p>The competitive question is whether this constitutes the most complete agent infrastructure offering outside the hyperscalers. AWS has Bedrock AgentCore with <a href=\"https://www.infoq.com/news/2026/04/aws-agent-registry-preview/\">Agent Registry</a>, but no managed browser or agent memory equivalent. Google Cloud has <a href=\"https://www.infoq.com/news/2026/05/gke-agent-sandbox-hypercluster/\">GKE Agent Sandbox,</a> but as a Kubernetes-native primitive rather than a managed platform service. Neither offers anything comparable to the commerce protocol.</p>\n   <p>Cloudflare's bet is different from both: a vertically integrated stack where every layer is edge-distributed across its global network, every binding is heading toward a dynamic per-tenant counterpart, and the platform itself is what Cloudflare calls \"Customer Zero\" for, running its own products on the same infrastructure it sells. Whether this integration advantage outweighs the hyperscalers' broader ecosystem remains an open question for platform teams evaluating where to build their agent infrastructure.</p>\n   <p>Browser Run improvements are live now on all Workers plans. The <a href=\"https://developers.cloudflare.com/agents/\">Agents SDK</a> includes built-in Browser Run support.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Completes Its Agent Infrastructure Stack with Browser Run Rebuild and Six-Layer Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/cloudflare-agent-platform-stack/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779441660000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 在其容器平台上重建了 Browser Run，并推出了一个六层、边缘分布式的基础设施栈，用于构建和运行 AI 智能体，将自己定位为超大规模云之外最完整的智能体平台。",
+  "oneSentenceSummary": "Cloudflare 在其容器平台上重建了 Browser Run，并推出了一个六层、边缘分布式的基础设施栈，用于构建和运行 AI 智能体，将自己定位为超大规模云之外最完整的智能体平台。",
+  "summary": "Cloudflare 完成了对其 Browser Run 服务的重大重建，将其从与 Browser Isolation 共享的基础设施迁移到专用容器，实现了 4 倍的并发度提升（120 个同时运行的浏览器）、快速操作响应速度提升 50%，并支持 WebGL 和 WebMCP。此次升级是两个月内一系列发布的压轴之作，这些发布共同构建了一个面向 AI 智能体的全栈平台。该平台包含六个不同的基础设施原语：Dynamic Workers（轻量级 V8 隔离执行环境）、Sandboxes（完整 Linux 容器）、Dynamic Workflows（具备持久化执行能力的编排）、Agent Memory（结构化记忆提取与检索）、Browser Run（无头 Chromium 浏览器），以及与 Stripe 联合设计的用于自主账户创建和计费的商业协议。Cloudflare 的赌注是一个垂直整合、边缘分布式的技术栈，其中每一层都全球分布，每个绑定都是按租户动态的。文章将此产品与 AWS Bedrock AgentCore 和 Google Cloud 的 GKE Agent Sandbox 进行了比较，指出 Cloudflare 平台在托管浏览器、智能体记忆和商业能力方面是独一无二的。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 在其容器平台上重建了 Browser Run，实现了 4 倍的并发度和 50% 的响应速度提升。",
+      "explanation": "从与 Browser Isolation 共享的基础设施迁移到使用预预热浏览器和通过 D1 及 Queues 进行事务状态管理的专用容器，解决了长时间人工会话与短促、突发的 AI 智能体使用模式之间的架构不匹配问题。"
+    },
+    {
+      "point": "Cloudflare 在过去两个月内组装了一个用于构建和运行 AI 智能体的六层全栈平台。",
+      "explanation": "该平台包括计算（Dynamic Workers 和 Sandboxes）、编排（Dynamic Workflows）、记忆（Agent Memory）、浏览（Browser Run）和商业（Stripe 协议），所有这些都分布在 Cloudflare 的全球网络上。"
+    },
+    {
+      "point": "Cloudflare 垂直整合、边缘分布式的技术栈提供了与超大规模云产品相比独特的价值主张。",
+      "explanation": "与 AWS Bedrock AgentCore（没有托管浏览器或智能体记忆）或 Google Cloud 的 GKE Agent Sandbox（基于 Kubernetes，非托管服务）不同，Cloudflare 提供了一个完整、集成的平台，其中每一层都全球分布且按租户动态。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 智能体构建者发现了 Browser Run，并迅速带来了超出我们现有容量的请求量。",
+    "Cloudflare 的赌注与两者都不同：一个垂直整合的技术栈，其中每一层都边缘分布在其全球网络上，每个绑定都趋向于动态的按租户对应物，而平台本身正是 Cloudflare 所谓的“客户零号”。",
+    "这种集成优势是否胜过超大规模云提供商的更广泛生态系统，对于评估在哪里构建其智能体基础设施的平台团队来说，仍然是一个悬而未决的问题。"
+  ],
+  "tags": [
+    "Cloudflare",
+    "AI 智能体",
+    "智能体基础设施",
+    "Browser Run",
+    "边缘计算"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 584,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779441660000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-22 09:21:00"
+}
