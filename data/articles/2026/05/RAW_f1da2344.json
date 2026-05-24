@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f1da2344",
+  "title": "关于 `<dl>` 元素",
+  "url": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything",
+  "date": "2026-05-23 20:24:48",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">23rd May 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/May/23/on-the-dl/\">\n    <p><strong><a href=\"https://benmyers.dev/blog/on-the-dl/\">On the &lt;dl&gt;</a></strong> (<a href=\"https://news.ycombinator.com/item?id=48247325\" title=\"Hacker News\">via</a>) I learned a few new-to-me things about the <code>&lt;dl&gt;</code> element from this article by Ben Meyer:</p>\n    <ol>\n     <li>A <code>&lt;dt&gt;</code> can be followed by <em>multiple</em> <code>&lt;dd&gt;</code></li>\n     <li>You can optionally group the <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> elements in a <code>&lt;div&gt;</code> for styling - but only a <code>&lt;div&gt;</code>.</li>\n     <li>You can label them using ARIA.</li>\n     <li>They've been called \"description lists\", not \"definition lists\", since <a href=\"https://www.w3.org/TR/2008/WD-html5-20080122/#the-dl\">an HTML5 draft in 2008</a>. So this is valid:</li>\n    </ol>\n    <pre><span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">h2</span> <span class=\"pl-c1\">id</span>=\"<span class=\"pl-s\">credits</span>\"<span class=\"pl-kos\">&gt;</span>Credits<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">h2</span><span class=\"pl-kos\">&gt;</span>\n<span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dl</span> <span class=\"pl-c1\">aria-labelledby</span>=\"<span class=\"pl-s\">credits</span>\"<span class=\"pl-kos\">&gt;</span>\n  <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">div</span><span class=\"pl-kos\">&gt;</span>\n    <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dt</span><span class=\"pl-kos\">&gt;</span>Author<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dt</span><span class=\"pl-kos\">&gt;</span>\n    <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>Jeffrey Zeldman<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>\n    <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>Ethan Marcotte<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dd</span><span class=\"pl-kos\">&gt;</span>\n  <span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">div</span><span class=\"pl-kos\">&gt;</span>\n<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">dl</span><span class=\"pl-kos\">&gt;</span></pre>\n    <p>Here's a useful note from Adrian Roselli on <a href=\"https://adrianroselli.com/2025/01/updated-brief-note-on-description-list-support.html\">screen reader support for description lists</a>.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9469/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 HTML `<dl>` 元素一些鲜为人知的功能，包括每个 `<dt>` 可对应多个 `<dd>`、使用 `<div>` 进行可选分组以及 ARIA 标签。",
+  "oneSentenceSummary": "本文介绍了 HTML `<dl>` 元素一些鲜为人知的功能，包括每个 `<dt>` 可对应多个 `<dd>`、使用 `<div>` 进行可选分组以及 ARIA 标签。",
+  "summary": "Simon Willison 分享了 Ben Meyer 关于 HTML `<dl>`（描述列表）元素的文章链接，指出了几个不为人知的功能。这些功能包括：单个 `<dt>` 元素后可以跟随多个 `<dd>` 元素；可以选择将 `<dt>` 和 `<dd>` 对包裹在 `<div>` 中以便于样式设置（但仅限 `<div>` 元素）；以及使用 ARIA 属性进行标签标记。文章还指出，自 2008 年 HTML5 草案起，该元素正式被称为“描述列表”，而非“定义列表”。此外，文章还引用了 Adrian Roselli 关于屏幕阅读器对描述列表支持情况的文章。",
+  "mainPoints": [
+    {
+      "point": "一个 `<dt>` 元素后可以跟随多个 `<dd>` 元素。",
+      "explanation": "这允许单个术语拥有多个描述或关联值，这是 `<dl>` 元素的一个标准但常被忽视的功能。"
+    },
+    {
+      "point": "将 `<dt>` 和 `<dd>` 元素包裹在 `<div>` 内进行样式设置是有效的。",
+      "explanation": "这提供了一种更灵活地结构和样式化描述列表的方式，但仅允许使用 `<div>` 作为分组容器。"
+    },
+    {
+      "point": "`<dl>` 元素支持 ARIA 标签以改善无障碍访问。",
+      "explanation": "使用 `aria-labelledby` 或类似属性可以帮助将列表与标题或其他描述性元素关联起来，从而增强屏幕阅读器的支持。"
+    }
+  ],
+  "keyQuotes": [
+    "一个 `<dt>` 后可以跟随*多个* `<dd>`",
+    "你可以选择将 `<dt>` 和 `<dd>` 元素包裹在 `<div>` 中以便于样式设置——但仅限 `<div>` 元素。",
+    "自 2008 年 HTML5 草案起，它们就被称为“描述列表”，而非“定义列表”"
+  ],
+  "tags": [
+    "HTML",
+    "dl 元素",
+    "描述列表",
+    "ARIA",
+    "Web 开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 103,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779567888000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-23 20:24:48"
+}

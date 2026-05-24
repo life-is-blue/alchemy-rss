@@ -1,0 +1,58 @@
+{
+  "id": "RAW_473e6bda",
+  "title": "Google Cloud 在 BigQuery 中引入跨引擎 Iceberg 支持",
+  "url": "https://www.infoq.com/news/2026/05/google-cross-engine-iceberg/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-23 08:42:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At the Apache Iceberg Summit last month, Google announced <a href=\"https://cloud.google.com/blog/products/data-analytics/improved-interoperability-for-your-apache-iceberg-lakehouse\">new interoperability features for Apache Iceberg in BigQuery</a>. The preview of the serverless <a href=\"https://docs.cloud.google.com/lakehouse/docs/lakehouse-iceberg-rest-catalog\">Iceberg REST catalog</a> lets teams create, update, and query the same Apache Iceberg tables in BigQuery and in engines like Spark, Flink, and Trino without duplicating data.</p>\n   <p>The preview allows multiple tools to work on the same datasets without copying data or relying on proprietary formats. The cloud provider also introduced managed support for metadata, table maintenance, and synchronization tasks commonly handled manually in Iceberg deployments. <a href=\"https://www.linkedin.com/in/yuriy-zhovtobryukh-8595554/\">Yuriy Zhovtobryukh</a>, senior product manager at Google, and <a href=\"https://www.linkedin.com/in/angeladsoares/\">Angela Soares</a>, senior product marketing manager at Google, explain why it matters:</p>\n   <blockquote>\n    <p>If you're building a lakehouse today, you're probably using Apache Iceberg, which has gained massive popularity among data platform teams that need to support multiple compute engines (like Spark and BigQuery) that access the same data for different workloads.</p>\n   </blockquote>\n   <p>At the recent Next ’26, <a href=\"https://cloud.google.com/blog/products/data-analytics/the-future-of-data-lakehouse-for-the-agentic-era\">Google has expanded Iceberg interoperability into a cross-cloud lakehouse</a>, supporting querying of Iceberg catalogs across AWS, Azure, Databricks, and Snowflake, as well as AI workflows. According to Google, the overall goal is to enable organizations to keep data in open formats while using different processing and analytics tools on the same datasets.</p>\n   <p>Google argues that many teams using Apache Iceberg still face higher costs and operational complexity compared with fully managed data platforms, especially for streaming data, replication pipelines, and governance across multiple tools. To address this, Google is extending its BigQuery infrastructure to support Iceberg tables, including managed metadata, automatic table maintenance, transactions, and change data replication. Zhovtobryukh and Soares add:</p>\n   <blockquote>\n    <p>Previously, customers building lakehouses chose between Iceberg tables in the Google-managed Iceberg REST catalog or tables managed by BigQuery based on their primary ETL engine. That means that customers relying on Apache Spark for ETL to Iceberg REST Catalog tables couldn’t write through BigQuery or use its storage management features.</p>\n   </blockquote>\n   <p>The preview also includes centralized table access controls, allowing permissions to be managed consistently across query engines. With the latest announcements, Google Cloud now supports querying Iceberg data across AWS and Azure, interoperability with external platforms like Databricks and Snowflake, and integration with unstructured data and AI workflows.</p>\n   <p>BigQuery ObjectRefs are now generally available, allowing teams to combine structured Iceberg data with unstructured files stored in Cloud Storage for multimodal analysis and AI workflows. Additionally, <a href=\"https://cloud.google.com/products/knowledge-catalog/\">Knowledge Catalog</a> (formerly Dataplex), a governance layer currently in preview, manages metadata, lineage, and access controls across systems.</p>\n   <p>Practitioners discuss how <a href=\"https://www.linkedin.com/posts/sandeep-patel-google-agentic-ai-ecosystem-creator-3567a238_improved-interoperability-for-your-apache-activity-7447810446079905792-8gIN/\">the integration might remove the \"hidden tax\" on Iceberg adoption</a>. David Colbert comments:</p>\n   <blockquote>\n    <p>Teams get excited about Iceberg/Delta capabilities but hit friction fast on compaction, metadata management, and orchestration. The catalog point is key. Open formats solve storage portability, but control plane choices determine long-term optionality.</p>\n   </blockquote>\n   <p>Reviewing the announcements from Next ‘26, Precious Pendo <a href=\"https://dev.to/precious_pendo_911264e7ce/the-announcement-everyone-slept-on-at-google-cloud-next-26-the-cross-cloud-lakehouse-233n\">writes</a>:</p>\n   <blockquote>\n    <p>Google is betting that enterprise AI value will accrue to whoever owns the reasoning layer over data, not just the storage layer. AWS and Azure charge you for compute and storage. Google wants to charge you for context and intelligence.</p>\n   </blockquote>\n   <p>Google Cloud is not the only provider focusing on Iceberg workloads, with <a href=\"https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/introduction.html\">AWS analytics services</a> such as EMR, Glue, Athena, and Redshift providing native support for Iceberg. Discussing how <a href=\"https://blog.redoakstrategic.com/apache-iceberg-transforming-the-modern-data-lake\">Apache Iceberg is transforming modern data lakes</a>, <a href=\"https://www.linkedin.com/in/shashank-muthuraj/\">Shashank Muthuraj</a>, cloud engineer at Red Oak Strategic, writes:</p>\n   <blockquote>\n    <p>Apache Iceberg has moved from a Netflix engineering project to the undisputed standard for open data lakehouse architecture in less than seven years. The technical merits — ACID transactions, hidden partitioning, time travel, and engine independence — are compelling, but the real story is the unprecedented industry alignment.</p>\n   </blockquote>\n   <p>While the core managed Iceberg table support in BigQuery is now generally available, the broader open interoperability and REST catalog capabilities announced at Iceberg Summit 2026 are still in preview.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Cloud Introduces Cross-Engine Iceberg Support in BigQuery\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/google-cross-engine-iceberg/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779525720000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Cloud 宣布为 BigQuery 推出无服务器 Iceberg REST 目录预览版，支持跨引擎和跨云查询 Apache Iceberg 表，无需数据复制，同时提供托管元数据与治理功能。",
+  "oneSentenceSummary": "Google Cloud 宣布为 BigQuery 推出无服务器 Iceberg REST 目录预览版，支持跨引擎和跨云查询 Apache Iceberg 表，无需数据复制，同时提供托管元数据与治理功能。",
+  "summary": "本文来自 InfoQ，报道了 Google Cloud 在 Apache Iceberg 峰会及 Next '26 大会上发布的最新动态，重点涉及 BigQuery 中 Apache Iceberg 互操作性的增强。核心预览功能是一个无服务器 Iceberg REST 目录，允许团队使用 Spark、Flink、Trino 和 BigQuery 等引擎创建、更新和查询相同的 Iceberg 表，而无需复制数据。Google 还将此功能扩展为跨云数据湖仓，支持跨 AWS、Azure、Databricks 和 Snowflake 查询 Iceberg 目录。文章强调了 Google 通过提供托管元数据、自动表维护、事务和集中访问控制来降低运维复杂度的策略。此外，文章还提到了 BigQuery ObjectRefs 的正式可用性，该功能可将结构化 Iceberg 数据与非结构化文件结合用于 AI 工作流，以及 Knowledge Catalog 治理层。从业者评论认为，此举通过解决控制平面挑战，消除了 Iceberg 采用中的“隐性成本”；而另一种观点则指出，Google 押注于拥有数据之上的推理层。文章将这些举措与 AWS 的原生 Iceberg 支持进行了对比，并总结道，虽然核心的托管 Iceberg 支持已正式可用，但更广泛的 REST 目录互操作性仍处于预览阶段。",
+  "mainPoints": [
+    {
+      "point": "Google Cloud 预览了 BigQuery 的无服务器 Iceberg REST 目录，实现了跨引擎数据访问。",
+      "explanation": "这使得团队可以在 BigQuery 之外，使用 Spark、Flink 和 Trino 等引擎访问相同的 Iceberg 表，而无需数据复制，从而解决了互操作性方面的关键挑战。"
+    },
+    {
+      "point": "该互操作性扩展至跨云数据湖仓，支持 AWS、Azure、Databricks 和 Snowflake。",
+      "explanation": "Google 的策略旨在让组织在跨云使用不同处理工具的同时，将数据保留在开放格式中，从而减少数据层的供应商锁定。"
+    },
+    {
+      "point": "托管元数据、表维护和集中访问控制降低了运维复杂度。",
+      "explanation": "通过自动化压缩和元数据管理等任务，Google 旨在降低 Iceberg 采用的“隐性成本”，使数据湖仓架构更加实用。"
+    },
+    {
+      "point": "BigQuery ObjectRefs 和 Knowledge Catalog 将 Iceberg 数据与 AI 及治理工作流集成。",
+      "explanation": "ObjectRefs 将结构化和非结构化数据结合用于多模态 AI，而 Knowledge Catalog 则提供跨系统的元数据、血缘和访问控制。"
+    }
+  ],
+  "keyQuotes": [
+    "如果你今天正在构建数据湖仓，很可能正在使用 Apache Iceberg，它在需要支持多种计算引擎的数据平台团队中已变得极为流行。",
+    "开放格式解决了存储可移植性问题，但控制平面的选择决定了长期的可选择性。",
+    "Google 押注于企业 AI 的价值将归属于拥有数据之上推理层的厂商，而不仅仅是存储层。",
+    "Apache Iceberg 在不到七年的时间里，从 Netflix 的一个工程项目发展成为开放数据湖仓架构无可争议的标准。"
+  ],
+  "tags": [
+    "Google Cloud",
+    "BigQuery",
+    "Apache Iceberg",
+    "数据湖仓",
+    "跨云"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 628,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779525720000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-23 08:42:00"
+}
