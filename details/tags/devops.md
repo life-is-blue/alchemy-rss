@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-24 08:26:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-24 11:03:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -542,9 +542,7 @@
 
 ### [Google-Cloud-在-BigQuery-中引入跨引擎-Iceberg-支持](https://www.infoq.com/news/2026/05/google-cross-engine-iceberg/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-23 08:42:00 | 标签: Google Cloud, BigQuery, Apache Iceberg, 数据湖仓, 跨云
-
-> 本文来自 InfoQ，报道了 Google Cloud 在 Apache Iceberg 峰会及 Next '26 大会上发布的最新动态，重点涉及 BigQuery 中 Apache Iceberg 互操作性的增强。核心预览功能是一个无服务器 Iceberg REST 目录，允许团队使用 Spark、Flink、Trino 和 BigQuery 等引擎创建、更新和查询相同的 Iceberg 表，而无需复制数据。Google 还将此功能扩展为跨云数据湖仓，支持跨 AWS、Azure、Databricks 和 Snowflake 查询 Iceberg 目录。文章强调了 Google 通过提供托管元...
+2026-05-23 08:42:00
 
 
 
