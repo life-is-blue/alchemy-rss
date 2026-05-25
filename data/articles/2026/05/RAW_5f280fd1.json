@@ -1,0 +1,53 @@
+{
+  "id": "RAW_5f280fd1",
+  "title": "Google 为 Genkit 应用引入中间件架构",
+  "url": "https://www.infoq.com/news/2026/05/google-genkit-middleware/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-25 01:55:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has introduced <a href=\"https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/\">Middleware for Genkit</a>, its open-source framework for building AI-powered and agentic applications. The update adds a programmable interception layer around model calls, tool execution, and generation loops, giving developers more control over reliability, safety, and orchestration inside production AI systems.</p>\n   <p>The release enhances Genkit by enabling developers to inject custom behaviors into workflows. Middleware can now add features like retries, model fallbacks, and logging without changing application logic. Genkit supports TypeScript, Go, and Dart, with Python support coming soon.</p>\n   <p>According to Google, every <code>generate()</code> call in Genkit operates through a tool loop in which the model generates output, executes tools, processes results, and continues until completion. Middleware hooks can intercept that cycle at three levels: generation, model calls, and tool execution.</p>\n   <p>Google also released several prebuilt middleware components. These include retry handling with exponential backoff, automatic fallback to alternative models when APIs fail, approval gates for sensitive tool calls, filesystem access controls, and a “skills” system that dynamically injects instructions from local files.</p>\n   <p>The company said middleware components can also be stacked together, allowing retries, filters, approvals, and logging to operate in a defined execution order. The system is also integrated into the Genkit Developer UI, where developers can inspect middleware behavior, trace execution flows, and debug runtime interactions.</p>\n   <p>The release reflects a broader trend across the AI tooling ecosystem toward operational safeguards and runtime controls for autonomous systems. Instead of relying only on prompts or model tuning, frameworks are increasingly adding programmable layers that govern how models behave during execution.</p>\n   <p>The announcement prompted discussion around how Genkit fits into Google’s broader AI tooling ecosystem. Developers on X <a href=\"https://x.com/manitchahar/status/2055102487120777528?s=20\">debated</a> the distinction between Genkit and Google’s Agent Development Kit (ADK).</p>\n   <p>In response, Michael Doyle, a software engineer at Google, <a href=\"https://x.com/mikeydoyle/status/2055355782980321525?s=20\">clarified</a> the distinction between the two frameworks:</p>\n   <blockquote>\n    <p>Have an app (web, mobile, etc)? Want to add agentic features to it? Use Genkit! Building complex, standalone, multi-agent systems? E.g.&nbsp;on GCPs Agent Platform? Use ADK.</p>\n   </blockquote>\n   <p>The exchange highlighted how Google is positioning Genkit primarily as an application-layer framework for integrating AI features into existing products, while ADK targets larger orchestration-heavy agent systems running on dedicated infrastructure.</p>\n   <p>Google said developers can begin using the middleware system immediately through the latest Genkit release and publish custom middleware packages for reuse across projects.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Introduces Middleware Architecture for Genkit Applications\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/google-genkit-middleware/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779645300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 为其 Genkit 框架引入中间件架构，使开发者能够拦截并自定义 AI 模型调用、工具执行和生成循环，从而在生产系统中增强可靠性、安全性和编排能力。",
+  "oneSentenceSummary": "Google 为其 Genkit 框架引入中间件架构，使开发者能够拦截并自定义 AI 模型调用、工具执行和生成循环，从而在生产系统中增强可靠性、安全性和编排能力。",
+  "summary": "Google 宣布为其开源框架 Genkit（用于构建 AI 驱动和智能体应用）推出新的中间件系统。此次更新引入了一个可编程的拦截层，允许开发者在不修改核心应用逻辑的情况下，向模型调用、工具执行和生成循环等核心工作流注入自定义行为。该中间件可用于添加诸如带指数退避的重试逻辑、自动模型回退、敏感工具调用的审批关卡以及全面的日志记录等功能。Google 还发布了多个预构建的中间件组件，并确认中间件可以堆叠以创建复杂的、有序的执行管道。该系统已集成到 Genkit 开发者 UI 中，用于调试和追踪。此次发布是行业更广泛趋势的一部分，即增加自主 AI 系统的运营保障和运行时控制，而不仅仅依赖提示词。公告还澄清了 Genkit 与 Google 的 Agent 开发工具包（ADK）之间的区别：Genkit 定位为应用层框架，用于将 AI 添加到现有应用中；而 ADK 则用于构建复杂的、独立的、多智能体系统。",
+  "mainPoints": [
+    {
+      "point": "Genkit 的新中间件为 AI 应用工作流提供了一个可编程的拦截层。",
+      "explanation": "这允许开发者在不修改核心应用逻辑的情况下，向模型调用、工具执行和生成循环注入重试、回退和日志记录等自定义行为，从而提高可靠性和控制力。"
+    },
+    {
+      "point": "中间件钩子在三个不同层级运行：生成、模型调用和工具执行。",
+      "explanation": "这种细粒度的控制允许开发者针对 AI 工作流的特定部分，例如在工具执行前添加审批关卡，或在主 API 调用失败时实现回退模型。"
+    },
+    {
+      "point": "Google 将 Genkit 定位为应用层框架，与 Agent 开发工具包（ADK）有所区别。",
+      "explanation": "Genkit 旨在将 AI 功能集成到现有的 Web 或移动应用中，而 ADK 则用于在专用基础设施（如 GCP 的 Agent 平台）上构建复杂的、独立的、多智能体系统。"
+    }
+  ],
+  "keyQuotes": [
+    "此次更新在模型调用、工具执行和生成循环周围增加了一个可编程的拦截层，让开发者对生产 AI 系统中的可靠性、安全性和编排拥有更多控制权。",
+    "框架不再仅仅依赖提示词或模型微调，而是越来越多地增加可编程层，以控制模型在执行过程中的行为。",
+    "有一个应用（Web、移动等）？想为其添加智能体功能？使用 Genkit！构建复杂的、独立的、多智能体系统？例如在 GCP 的 Agent 平台上？使用 ADK！"
+  ],
+  "tags": [
+    "Genkit",
+    "中间件",
+    "AI 开发",
+    "智能体应用",
+    "Google"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 380,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779645300000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-25 01:55:00"
+}

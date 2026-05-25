@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-25 06:19:08 | [返回首页](/README.md)
+**更新时间**: 2026-05-25 08:28:02 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12268)
+- [AI & 大模型](#ai-llm) (12291)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (825)
 - [DevOps](#devops) (571)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5826)
+- [其他](#other) (5834)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [致超级个体-|-To-The-Crazy-Ones](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108669&idx=1&sn=c9bb3541cba65b524992eda339f32e83) - AI 精选
 - [专业化胜过规模：大多数-AI-采购决策忽视的战略变量](https://huggingface.co/blog/Dharma-AI/specialization-beats-scale) - AI 精选
 - [Hermes-vs.-OpenClaw，-网络安全警报频响，-更具互动性的对话，-智能体能胜任人类工作吗？](https://www.deeplearning.ai/the-batch/issue-354) - AI 精选
 - [为智能体配备计算机-—-Ivan-Burazin，Daytona](https://www.latent.space/p/daytona) - AI 精选
@@ -41,9 +42,8 @@
 - [AIE-Europe-回顾-+-智能体实验室论点：无监督学习-x-潜在空间跨界特别篇（2026）](https://www.latent.space/p/unsupervised-learning-2026) - AI 精选
 - [GPT-5.5-发布](https://openai.com/index/introducing-gpt-5-5) - AI 精选
 - [Shopify-的-AI-相变：2026-年使用量激增，无限的-Opus-4.6-Token-预算，Tangle，Tangent，SimGym-——-对话-Shopify-CTO-Mikhail-Parakhin](https://www.latent.space/p/shopify) - AI 精选
-- [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) - AI 精选
 
-- [查看全部 12268 篇...](/details/tags/ai-llm.md)
+- [查看全部 12291 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Z-Image-零基础上手指南：本地部署-+-提示词模板实战](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247498939&idx=1&sn=1e149e96e383a0f381f86cb9e6ce74de) - AI 精选
 - [用开源模型强化你的-OCR-工作流](https://mp.weixin.qq.com/s?__biz=Mzk0MDQyNTY4Mw==&mid=2247495937&idx=1&sn=07fa59cf8df62d23f48404181351c2b3) - AI 精选
 
-- [查看全部 5826 篇...](/details/tags/other.md)
+- [查看全部 5834 篇...](/details/tags/other.md)
 
 

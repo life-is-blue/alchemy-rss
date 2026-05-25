@@ -1,0 +1,53 @@
+{
+  "id": "RAW_86b85ec1",
+  "title": "来自 Armin Ronacher 的一句引述",
+  "url": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
+  "date": "2026-05-25 02:46:53",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">24th May 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://lucumr.pocoo.org/2026/5/24/pi-oss/\">\n     <p>The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adjacent but often the wrong code, and long lists of error classes that might or might not matter. [...]</p>\n     <p>So at least personally, I increasingly want issue reports to be condensed to what the human actually observed:</p>\n     <ol>\n      <li>I ran this command.</li>\n      <li>I expected this to happen.</li>\n      <li>This happened instead.</li>\n      <li>Here is the exact error or log.</li>\n     </ol>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://lucumr.pocoo.org/2026/5/24/pi-oss/\">Armin Ronacher</a>, <span class=\"context\">on slop issues filed against <a href=\"https://pi.dev/\">Pi</a></span></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Armin Ronacher 批评了 AI 生成的错误报告趋势，这些报告冗长、不准确，且缺乏人类观察者的直接声音，他主张回归简洁、基于事实的问题报告。",
+  "oneSentenceSummary": "Armin Ronacher 批评了 AI 生成的错误报告趋势，这些报告冗长、不准确，且缺乏人类观察者的直接声音，他主张回归简洁、基于事实的问题报告。",
+  "summary": "这篇文章突显了开源软件维护中日益增长的挫败感：大量由大语言模型生成或大幅改写的低质量错误报告涌入。Flask 等工具的创建者 Armin Ronacher 将这些“垃圾问题”描述为充满自信但不准确的结论、虚假的最小复现步骤以及无关的建议。他认为这种做法浪费了维护者的时间，并掩盖了真正的问题。他提出的解决方案是一种简单的结构化格式，强制报告者仅陈述他们直接观察到的情况：运行的命令、预期结果、实际结果以及确切的错误或日志。这篇文章由 Simon Willison 分享，尖锐地批评了 AI 工具如何降低协作软件开发中人与人之间技术沟通的质量。",
+  "mainPoints": [
+    {
+      "point": "AI 生成的错误报告在开源项目中日益成为问题。",
+      "explanation": "这些报告通常由 LLM 生成，冗长且充满自信但不准确的结论，缺乏人类报告者的直接观察，使维护者难以处理。"
+    },
+    {
+      "point": "核心问题是失去了人类的直接声音和观察。",
+      "explanation": "当一个问题被“扔进机器”处理后，原始、精确的观察就丢失了，取而代之的是猜测和无关细节，这掩盖了根本原因。"
+    },
+    {
+      "point": "提出了一种简单的结构化格式来改进错误报告。",
+      "explanation": "Ronacher 主张将报告精简为四个事实要点：运行的命令、预期结果、实际结果以及确切的错误信息，去除所有 AI 生成的噪音。"
+    }
+  ],
+  "keyQuotes": [
+    "目前最令人沮丧的失败模式是，人们提交的问题并非出自他们自己的声音。",
+    "结果是关于根本原因的完全猜测、虚假的最小复现、建议的实现策略、对邻近但通常是错误代码的类比，以及可能重要也可能不重要的长串错误类别列表。",
+    "所以至少就我个人而言，我越来越希望问题报告能浓缩为人类实际观察到的情况：1. 我运行了这个命令。2. 我期望发生这个。3. 实际发生了这个。4. 这是确切的错误或日志。"
+  ],
+  "tags": [
+    "AI",
+    "错误报告",
+    "开源",
+    "软件维护",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 149,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779648413000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-25 02:46:53"
+}

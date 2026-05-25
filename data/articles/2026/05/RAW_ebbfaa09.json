@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ebbfaa09",
+  "title": "对小排量汽车征税以提高燃油经济性 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/7K8Bnn6Pwh5ciXpKR/taxing-small-cars-to-improve-mpg",
+  "date": "2026-05-25 05:50:06",
+  "author": "jefftk",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span> Cars and trucks are getting bigger, and I had a vague sense that fuel economy regulations were partly to blame. Looking into it, it's hard to say how much is regulations vs people wanting to buy vehicles that look rugged, but the regulations really aren't helping. </span></p>\n    <p id=\"block1\">This chart is the core of it:</p>\n    <p id=\"block2\"><span><span><a href=\"https://www.jefftk.com/2026-cafe-mpg-target-curves-big.png\"><img src=\"https://image.jido.dev/20260524220250_6d6bfa4.webp\" srcset=\"https://image.jido.dev/20260524220250_6d6bfa4.webp 550w, https://image.jido.dev/20260524220250_2408717.webp 1100w\"></a></span></span></p>\n    <p id=\"block3\"></p>\n    <p id=\"block4\">This is what manufacturers were looking at when they decided to build today's cars. To figure out the target fuel economy for a vehicle you first calculate its \"footprint\", which is the area between the wheels. On <span><span><a href=\"https://www.jefftk.com/p/shared-car-one-year-in\">our</a></span></span> 2013 <span><span><a href=\"https://en.wikipedia.org/wiki/Honda_Fit\">Honda Fit</a></span></span> that's 4.8ft side-to-side and 8.2ft front-to-back, for a footprint of 39sqft. Then you ask if it's a car or truck. This tells you which curve to use, and where along it to look.</p>\n    <p id=\"block5\">Looking at the chart we can now see why it's hard for Honda to sell a Fit today. The best Honda could do for a five-seater non-hybrid hatchback is maybe a CAFE rating of 44mpg. [1] This puts them 23mpg short, and if Honda was a one-model car company they'd expect to owe $3,910/vehicle in fines: $17 per 0.1mpg shortfall. Since the regulation is about an average across all the cars they sell the actual effect is both lower and more complex, and maybe something like $2k.</p>\n    <p id=\"block6\">Aside: the fine structure here is a sad artifact of us thinking in miles-per-gallon instead of gallons-per-mile. Going from 25mpg (0.04 gpm) to 50mpg (0.02 gpm) saves as much gas as going from 50mpg (0.02 gpm) to infinite (0 gpm). But the penalty for being below a target is calculated on the gap in miles-per-gallon and not gallons-per-mile. If you miss a 50mpg (0.02gpm) target by hitting 25mpg (0.04gpm), or miss a 75mpg (0.013gpm) target by hitting 50mpg (0.02gpm), you pay the same fine even though the first involves burning much more counterfactual gas: over 10,000 miles the first burns 200 gallons more than its target while the second only burns 67 more.</p>\n    <p id=\"block7\">What did Honda do? They discontinued the Fit, and replaced it with the <span><span><a href=\"https://en.wikipedia.org/wiki/Honda_HR-V#Third_generation_(2021)\">HR-V</a></span></span>. It's bigger and heavier, and looks like it was trying to be a \"light truck\". Combined with its larger footprint that would give a much lower target: 49mpg instead of 67mpg. It still doesn't hit that, but it's less of a penalty. And then it doesn't actually count as a light truck, though I don't know if that was the plan from the beginning or a compromise they had to accept.</p>\n    <p id=\"block8\">Overall, this regulatory structure taxes manufacturers more for making small low vehicles, the kind that are easiest to make fuel efficient. Here's where I would write that this is counterproductive and we should stop, except we sort of already did. In 2025 the penalty for non-compliance was set to $0 as part of the <span><span><a href=\"https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act#Miscellaneous\">OBBBA</a></span></span>. This means in some sense manufacturers are free to make small cars and trucks with achievable mileage. Except the rest of the structure is still there, complete with the distorted incentives, and ready to be reinstated by a future government.</p>\n    <p id=\"block9\">If at some point there's political will to improve this situation, and a carbon tax remains off the table, I'd like to see a return to the simpler Ford-era system where targets didn't scale with vehicle size. But then I'd need to understand why they switched to this system (if it's crash safety we should legislate that directly) and it's not clear that continued regulatory whiplash is worth it.</p>\n    <p id=\"block10\">\n     <br>\n     [1] The closest to 67mpg would be something like the <span><span><a href=\"https://en.wikipedia.org/wiki/Honda_Insight#First_generation_(ZE1;_1999)\">first-gen Honda Insight</a></span></span>. This got very close, but seating only two people with a lightweight construction that would do very poorly in modern crash testing. If you're willing to make it a hybrid, which does add significant cost, it is possible: the the <span><span><a href=\"https://en.wikipedia.org/wiki/Honda_Fit#Powertrain\">Jazz e:HEV</a></span></span> (essentially a hybrid Fourth-generation Fit) would probably come in around 72mpg.\n    </p>\n    <p id=\"block11\"><i>Comment via: <span><span><a href=\"https://www.facebook.com/jefftk/posts/pfbid0JKJdhS5Mpn8L6urfbtqx2mAW6iZU7rQrKrBBDHLRiPu4ys3fDxrSrwhg5ysw26Sjl\">facebook</a></span></span>, <span><span><a href=\"https://mastodon.mit.edu/@jefftk/116631732521533417\">mastodon</a></span></span>, <span><span><a href=\"https://bsky.app/profile/jefftk.com/post/3mmmwncigvk2d\">bluesky</a></span></span></i></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，美国燃油经济性法规通过将目标与车辆占地面积挂钩，产生了不当激励，惩罚了小型、高效的汽车，并鼓励制造商制造更大的车辆，最终削弱了减少燃油消耗的目标。",
+  "oneSentenceSummary": "本文认为，美国燃油经济性法规通过将目标与车辆占地面积挂钩，产生了不当激励，惩罚了小型、高效的汽车，并鼓励制造商制造更大的车辆，最终削弱了减少燃油消耗的目标。",
+  "summary": "本文探讨了美国企业平均燃油经济性（CAFE）法规如何根据车辆的“占地面积”（车轮之间的面积）设定燃油经济性目标，无意中激励汽车制造商生产更大、效率更低的车辆。作者以本田飞度的停产及其被更大的 HR-V 取代作为案例研究。飞度的小占地面积使其面临非常高的目标（67 英里/加仑），但无法达到，从而导致巨额罚款。而 HR-V 由于占地面积更大，目标低得多（49 英里/加仑），合规更容易。文章批评了在处罚结构中使用英里/加仑（mpg）而非加仑/英里（gpm），这进一步扭曲了激励措施。文章指出，不合规的罚款最近被设定为 0 美元，但认为其基本结构仍然存在问题，并可能被恢复。作者建议回归到更简单的系统，即目标不随车辆尺寸变化，但也承认需要理解当前系统存在的历史原因。",
+  "mainPoints": [
+    {
+      "point": "美国燃油经济性法规创造了有利于大型车辆的不当激励。",
+      "explanation": "CAFE 系统为“占地面积”更大的车辆设定了更低的燃油经济性目标，惩罚了制造像本田飞度这样小型、高效汽车的制造商，并鼓励他们制造更大的 SUV 和卡车。"
+    },
+    {
+      "point": "基于英里/加仑的处罚结构效率低下。",
+      "explanation": "罚款是根据 mpg 差距计算的，而不是加仑/英里。这意味着，未能达到高 mpg 目标与未能达到低 mpg 目标，即使差距相同，也会招致相同的罚款，尽管前者浪费的燃油要多得多。"
+    },
+    {
+      "point": "最近取消罚款并未解决根本的监管问题。",
+      "explanation": "尽管目前不合规的罚款为 0 美元，但基于占地面积的监管目标结构仍然存在，随时可能被未来的政府重新激活，并且仍在扭曲制造商的决策。"
+    }
+  ],
+  "keyQuotes": [
+    "这种监管结构对制造小型低矮车辆的制造商征税更多，而这类车辆恰恰是最容易实现燃油效率的。",
+    "从 25mpg（0.04 gpm）提高到 50mpg（0.02 gpm）节省的燃油，与从 50mpg（0.02 gpm）提高到无限（0 gpm）节省的燃油一样多。",
+    "但其余的结构仍然存在，伴随着扭曲的激励措施，并随时可能被未来的政府重新启用。"
+  ],
+  "tags": [
+    "CAFE 标准",
+    "燃油经济性",
+    "法规",
+    "汽车行业",
+    "激励措施"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 647,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779659406000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-25 05:50:06"
+}

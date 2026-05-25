@@ -1,0 +1,58 @@
+{
+  "id": "RAW_21b22fbe",
+  "title": "AWS MCP 服务器正式发布，提供完整 API 覆盖与基于 IAM 的治理",
+  "url": "https://www.infoq.com/news/2026/05/aws-mcp-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-24 16:53:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has recently made its managed <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/\">Model Context Protocol (MCP) server generally available</a>, giving AI coding agents controlled access to AWS APIs, documentation, and operational workflows through a standard interface. It provides a safer and more auditable way to connect AI agents to AWS services without handing over broad credentials.</p>\n   <p>The MCP server provides IAM-based access controls, CloudWatch metrics, and CloudTrail logging, enabling organizations to govern and audit agent activity independently. <a href=\"https://aws.amazon.com/about-aws/whats-new/2025/11/aws-mcp-server/\">Since its preview</a> at the annual re:Invent conference, AWS has expanded support to cover all AWS APIs, including long-running operations and file uploads, and added sandboxed Python execution for multi-step tasks.</p>\n   <p>The MCP server is now part of the recently announced <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/\">Agent Toolkit for AWS</a>, a set of tools, plugins, and workflows that help AI coding agents work with AWS services. The <a href=\"https://github.com/aws/agent-toolkit-for-aws\">open source toolkit</a> provides agents with up-to-date AWS documentation, controlled API access, and operational guidance to reduce errors, retries, and token usage. <a href=\"https://www.linkedin.com/in/sebastienstormacq/\">Sébastien Stormacq</a>, principal developer advocate at AWS, <a href=\"https://aws.amazon.com/blogs/aws/the-aws-mcp-server-is-now-generally-available/\">writes</a>:</p>\n   <blockquote>\n    <p>AI coding agents are already useful for many tasks, but they run into real trouble when working with AWS at any meaningful depth. Without access to current AWS documentation, agents rely on training data that may be months out of date and may not know about services like Amazon S3 Vectors, Amazon Aurora DSQL, or Amazon Bedrock AgentCore.</p>\n   </blockquote>\n   <p>Sandboxed execution allows agents to run Python code for multi-step AWS tasks without access to the local filesystem or shell. In addition, documentation search and skill discovery can now be used without requiring AWS credentials.</p>\n   <p><em><img alt=\"AWS MCP Server\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/aws-mcp-ga/en/resources/12026-04-23_09-29-47-1024x678-1778439779594.png\" rel=\"share\"></em></p>\n   <p><em>Source: AWS blog</em></p>\n   <p>The MCP Server can be integrated with any AI agent that supports MCP, including Claude Code, Kiro, Cursor, and Codex. In the following example, the setup connects Claude Code to the MCP server through a local configuration command:</p>\n   <p>&nbsp;</p>\n   <pre><code>claude mcp add-json aws-mcp --scope user \\\n   '{\"command\":\"uvx\",\"args\":[\"mcp-proxy-for-aws@latest\",\"https://aws-mcp.us-east-1.api.aws/mcp\",\"--metadata\",\"AWS_REGION=us-west-2\"]}'</code></pre>\n   <p>The AWS MCP Server uses IAM and SigV4 authentication. As the MCP server currently supports only OAuth 2.1, local AWS credentials can be used through the open-source MCP Proxy for AWS, which runs locally and translates IAM-based authentication into OAuth-compatible requests. Stormacq adds:</p>\n   <blockquote>\n    <p>The combination of current documentation, authenticated API access, and sandboxed script execution in a single server changes what an agent can actually do on AWS.</p>\n   </blockquote>\n   <p>Darryl Ruggles, principal cloud solutions architect at Ciena, <a href=\"https://www.linkedin.com/posts/darryl-ruggles_the-aws-mcp-server-is-now-generally-available-activity-7457843305712672768-EWTO?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">comments</a>:</p>\n   <blockquote>\n    <p>You don't hear quite as much about MCP servers these days but they are still important. Giving AI agents access to AWS has always been a balancing act between usefulness and safety (...) The AWS MCP Server is now GA and it seems to take a measured approach.</p>\n   </blockquote>\n   <p>While some practitioners <a href=\"https://www.reddit.com/r/aws/comments/1qgshy7/what_is_the_value_proposition_of_aws_mcp_server/\">question the MCP server's value proposition</a>, others discuss security and governance concerns. Kunal Parsewar, DevOps engineer at ReliaQuest, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7457843305712672768?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7457843305712672768%2C7458053473935298560%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287458053473935298560%2Curn%3Ali%3Aactivity%3A7457843305712672768%29\">comments</a>:</p>\n   <blockquote>\n    <p>I am using this with Claude but major concern with it there are no gateways to restrict certain actions or operations.</p>\n   </blockquote>\n   <p>Jeremy Daly, founder of Ampt, <a href=\"https://offbynone.io/issues/365/\">writes</a>:</p>\n   <blockquote>\n    <p>AWS is trying really hard to be the default platform for AI coding agents. Giving devs an opinionated, authenticated entry point seems like the smart play, but AWS doesn't have the same head start they did with serverless.</p>\n   </blockquote>\n   <p>The AWS MCP Server is currently available only in two regions, Northern Virginia and Frankfurt. It is free to use, although charges apply to the resources consumed by agents.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS MCP Server Reaches GA with Full API Coverage and IAM-Based Governance\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/aws-mcp-ga/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779612780000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 已将其托管的模型上下文协议（MCP）服务器正式发布，为 AI 编码智能体提供基于 IAM 的治理、完整的 API 覆盖以及沙盒执行环境，确保安全且可审计的 AWS 操作。",
+  "oneSentenceSummary": "AWS 已将其托管的模型上下文协议（MCP）服务器正式发布，为 AI 编码智能体提供基于 IAM 的治理、完整的 API 覆盖以及沙盒执行环境，确保安全且可审计的 AWS 操作。",
+  "summary": "AWS 宣布其托管的 MCP 服务器正式可用，这是新的 Agent Toolkit for AWS 的关键组件。该服务器为 AI 编码智能体与 AWS 服务交互提供了标准化、安全的接口。它具备基于 IAM 的访问控制、CloudWatch 指标和 CloudTrail 日志功能，可实现完整的治理和可审计性。自预览版以来，AWS 已扩展支持范围，覆盖所有 AWS API，包括长时间运行的操作和文件上传，并增加了沙盒 Python 执行环境以支持多步骤任务。该服务器可与任何兼容 MCP 的智能体（如 Claude Code、Cursor 和 Codex）集成。虽然其平衡智能体实用性与安全性的审慎方法受到称赞，但一些从业者对缺乏细粒度的操作级网关表示担忧，并质疑其整体价值主张。该服务目前可在两个区域使用，且免费提供，仅对消耗的底层 AWS 资源收费。",
+  "mainPoints": [
+    {
+      "point": "AWS MCP 服务器现已正式发布，为 AI 智能体提供安全、受治理的接口。",
+      "explanation": "该服务器使用 IAM 进行访问控制、CloudWatch 进行指标监控、CloudTrail 进行日志记录，使组织能够审计和治理智能体活动，而无需授予广泛的凭证。"
+    },
+    {
+      "point": "该服务器提供完整的 AWS API 覆盖和沙盒 Python 执行能力。",
+      "explanation": "它支持所有 AWS API，包括长时间运行的操作和文件上传，并允许智能体在沙盒环境中运行多步骤 Python 任务，而无需访问本地文件系统或 shell。"
+    },
+    {
+      "point": "MCP 服务器是新的 Agent Toolkit for AWS 的一部分，这是一套开源工具。",
+      "explanation": "该工具包为智能体提供最新的文档、受控的 API 访问和操作指导，以减少错误、重试和 Token 消耗，旨在使 AWS 成为 AI 编码智能体的默认平台。"
+    },
+    {
+      "point": "该服务收到的反馈褒贬不一，其方法受到赞扬，但治理粒度令人担忧。",
+      "explanation": "虽然一些专家称赞其在实用性和安全性之间取得平衡的审慎方法，但其他人对其价值主张提出质疑，并指出缺乏限制特定操作或动作的网关。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 编码智能体在许多任务中已经很有用，但在与 AWS 进行任何有意义的深度交互时，它们会遇到真正的麻烦。",
+    "将当前文档、经过身份验证的 API 访问和沙盒脚本执行整合到单个服务器中，改变了智能体在 AWS 上实际能做的事情。",
+    "让 AI 智能体访问 AWS 一直是在实用性和安全性之间寻求平衡 (...) AWS MCP 服务器现已正式发布，它似乎采取了一种审慎的方法。",
+    "AWS 正在非常努力地成为 AI 编码智能体的默认平台。为开发者提供一个有明确主张、经过身份验证的入口点似乎是明智之举，但 AWS 并不像他们在无服务器领域那样拥有同样的先发优势。"
+  ],
+  "tags": [
+    "AWS",
+    "MCP",
+    "AI 智能体",
+    "模型上下文协议",
+    "云计算"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 546,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779612780000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-24 16:53:00"
+}
