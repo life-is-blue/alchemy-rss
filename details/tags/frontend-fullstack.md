@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-26 06:22:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-26 08:28:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -378,7 +378,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -687,6 +687,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [跨文档视图过渡：在数百个元素间扩展](https://css-tricks.com/cross-document-view-transitions-part-2/)
+
+2026-05-25 15:54:29 | 标签: 视图过渡, CSS, Web 性能, 前端开发, 渐进增强
+
+> 本文是跨文档视图过渡系列文章的第二部分，旨在解决将 API 扩展到单个元素之外的挑战。它介绍了 `view-transition-class` 属性，作为一个样式钩子，允许开发者通过单条 CSS 规则为一组元素应用动画样式，从而避免使用唯一 `view-transition-name` 值时选择器爆炸的问题。文章还详细介绍了即时命名策略，利用 `pageswap` 和 `pagereveal` 事件，仅对导航目标元素分配 `view-transition-name`，避免因快照页面所有元素而浪费性能。文章涵盖了照片画廊、标签页切换和动态内容的实用模式，并强调了尊重用户减少动画偏好的关键重要性。...
+
+
+
+### [【第-3704-期】谁来掌控组件树？重新理解-RSC-的本质](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279147&idx=1&sn=7bd6cb65bb2e0f521aa8b3ca3c7d2a13)
+
+2026-05-25 09:00:00 | 标签: React Server Components, RSC, TanStack Start, 前端架构, 组件树
+
+> 文章围绕 React Server Components (RSC) 展开，核心观点是 RSC 不应被简单视为一种固定的「服务端掌控组件树」架构，而是一套底层的序列化与流式传输协议。作者以 TanStack Start 框架为例，阐述了两种 RSC 组合模型：服务端掌控（通过 'use client' 嵌入客户端交互）和客户端掌控（通过组合式组件嵌入服务端渲染片段）。文章通过仪表盘等实际场景，论证了客户端掌控模型在特定场景下的优势，并批评了将 RSC 视为万能灵药的倾向。此外，文章还解释了 TanStack Start 为何不提供类似 'use cache' 的缓存指令，而是选择更透明、可移植...
 
 
 
@@ -1194,13 +1210,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1350,13 +1366,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2850,13 +2866,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4560,13 +4576,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

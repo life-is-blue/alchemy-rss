@@ -1,0 +1,62 @@
+{
+  "id": "RAW_43b7fa2a",
+  "title": "跨越三种未来的有感知福利 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/N7sCXKfJ7RCJ9toyK/sentient-welfare-across-three-futures",
+  "date": "2026-05-26 00:22:55",
+  "author": "MichaelDickens",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p><em>Cross-posted from <span><span><a href=\"https://mdickens.me/2026/05/25/three_futures_sentient_welfare/\">my website</a></span></span>.</em></p>\n    <p>Three categories of futures, depending on how AI goes:</p>\n    <ol>\n     <li>ASI timelines are long.</li>\n     <li>ASI timelines are short, and we're on track to solving AI alignment.</li>\n     <li>ASI timelines are short, and we're <strong>not</strong> on track to solving AI alignment.</li>\n    </ol>\n    <p>If we want to make a good future for all sentient beings, each of these futures has different implications for what we should work on.</p>\n    <h3 id=\"If_timelines_are_long___\">If timelines are long...</h3>\n    <p>...we can prioritize work that takes a long time to complete. That includes:</p>\n    <ul>\n     <li>foundational research</li>\n     <li>moral philosophy</li>\n     <li>decision theory</li>\n     <li>moral circle expansion</li>\n     <li>theoretical AI alignment paradigms</li>\n     <li>traditional animal advocacy</li>\n    </ul>\n    <h3 id=\"If_we_re_on_track_to_solving_AI_alignment___\">If we're on track to solving AI alignment...</h3>\n    <p>...the shape of the future will be determined by an aligned ASI. Therefore, we should steer toward a future where ASI cares about sentient welfare. Possible areas of work include:</p>\n    <ul>\n     <li>research on how to align ASI to sentient welfare <a href=\"https://www.lesswrong.com/2026/03/26/quick_ideas_animal_welfare_in_light_of_ASI#research-how-to-align-asi-to-animal-welfare\">[details]</a></li>\n     <li>work on making LLMs more animal-friendly <a href=\"https://www.lesswrong.com/2026/03/26/quick_ideas_animal_welfare_in_light_of_ASI#change-ai-training-to-make-llms-more-animal-friendly\">[details]</a></li>\n     <li>traditional animal advocacy targeted at frontier AI developers <a href=\"https://www.lesswrong.com/2026/03/26/quick_ideas_animal_welfare_in_light_of_ASI#traditional-animal-advocacy-targeted-at-frontier-ai-developers\">[details]</a></li>\n    </ul>\n    <p>If an aligned superintelligence creates a stable future where humans are empowered, then—some might argue—we can defer \"long-timelines\" work until we have superintelligent assistance. However, <span><span><a href=\"https://mdickens.me/2026/04/11/pause_for_post-alignment_problems/#we-cant-delay-until-after-asi\">I cannot envision how we could get a stable future</a></span></span> without solving some foundational problems first.</p>\n    <h3 id=\"If_we_re_not_on_track_to_solving_AI_alignment___\">If we're not on track to solving AI alignment...</h3>\n    <p>...none of those other types of work listed above will pay off. There's not much we can do for non-human welfare; step one is to prevent ASI from destroying all value in the universe.</p>\n    <p>Areas of work include:</p>\n    <ul>\n     <li>AI pause advocacy <a href=\"https://www.lesswrong.com/2026/03/26/quick_ideas_animal_welfare_in_light_of_ASI#advocate-to-pause-ai\">[details]</a></li>\n     <li>developing and advocating for AI regulations that enforce safety rules</li>\n     <li>AI alignment research</li>\n    </ul>\n    <h2 id=\"Which_future_are_you_betting_on_\">Which future are you betting on?</h2>\n    <p><span><span><a href=\"https://mdickens.me/2026/03/29/future_will_be_weirder_than_that/\">Some plans make strong assumptions without making them explicit.</a></span></span> When you pursue a strategy, you're making an implicit bet on which future you'll find yourself in. You're assuming that you live in the world where that strategy makes most sense.</p>\n    <p>It's worth taking the time to probe our beliefs:</p>\n    <ul>\n     <li>What do we expect the future to look like, and what strategies make sense given those expectations?</li>\n     <li>What are we currently working on? In which futures does that work pay off?</li>\n    </ul>\n    <p>At the community level, we shouldn't bet everything on one future. (For individuals, it's often better to specialize.<span data-footnote-reference=\"\" data-footnote-index=\"1\" data-footnote-id=\"-NnPZSXerFnCymwJ78-1\" role=\"doc-noteref\" id=\"fnref-NnPZSXerFnCymwJ78-1\" class=\"footnote-reference\"> <sup><span><a href=\"#fn-NnPZSXerFnCymwJ78-1\" class=\"\">[1]</a></span></sup> </span>) Some people should pursue long-timelines work; others should prioritize optimistic short-timelines work; still others should focus on pessimistic short timelines. It's worth considering what this balance ought to look like, and how we might get closer to the right balance.</p>\n    <p>A natural next question: What plausible futures are we neglecting? That's a question I want to spend more time thinking about.</p>\n    <ol data-footnote-section=\"\" role=\"doc-endnotes\" class=\"footnote-section footnotes\">\n     <li data-footnote-item=\"\" data-footnote-index=\"1\" data-footnote-id=\"-NnPZSXerFnCymwJ78-1\" id=\"fn-NnPZSXerFnCymwJ78-1\" role=\"doc-endnote\" class=\"footnote-item\">\n      <p>Individuals benefit from developing expertise over time. In most fields, it takes more than 80,000 person-hours for diminishing marginal utility of effort to kick in. The gains of increasing expertise outweigh the diminishing utility of marginal work. <a href=\"#fnref-NnPZSXerFnCymwJ78-1\" class=\"footnote-backref\">↩︎</a></p>\n     </li>\n    </ol>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文基于 ASI 时间线和对齐进展，勾勒出三种可能的 AI 未来，并为每种未来推荐了不同的战略工作重点，以改善有感知福利。",
+  "oneSentenceSummary": "本文基于 ASI 时间线和对齐进展，勾勒出三种可能的 AI 未来，并为每种未来推荐了不同的战略工作重点，以改善有感知福利。",
+  "summary": "作者提出了一个思考 AI 对有感知福利影响的框架，将未来分为三种情景：ASI 时间线漫长、时间线短且对齐问题已解决、时间线短但对齐未解决。针对每种情景，文章建议了具体的工作领域：在时间线漫长的情况下，侧重于基础研究和道德哲学；在乐观的短时间线情况下，引导已对齐的 ASI 关注有感知福利；在悲观的情况下，则倡导暂停 AI 发展并进行对齐研究。文章强调了明确自身策略背后假设的重要性，并建议社区应在这几种未来中分散押注，而非集中于单一方向。",
+  "mainPoints": [
+    {
+      "point": "三种不同的 AI 未来需要针对有感知福利采取不同的战略重点。",
+      "explanation": "文章根据 ASI 时间线长度和对齐进展对未来进行分类，认为道德哲学或动物倡导方面的工作仅在特定情景下才有价值。"
+    },
+    {
+      "point": "如果 ASI 时间线漫长，基础研究和道德圈扩展是可行的。",
+      "explanation": "漫长的时间线允许进行缓慢而深入的工作，如理论对齐范式、道德哲学和传统的动物倡导，这些都需要长期投入。"
+    },
+    {
+      "point": "如果对齐问题已解决，重点应转向引导 ASI 关心有感知福利。",
+      "explanation": "在乐观的短时间线未来中，工作应致力于使 ASI 对齐动物福利、让大语言模型更友好地对待动物，并影响前沿 AI 开发者。"
+    },
+    {
+      "point": "如果对齐问题未解决，优先任务是防止灾难性后果。",
+      "explanation": "在悲观情景下，非人类福利工作毫无意义；当务之急是暂停 AI 发展并强制执行安全法规，以避免价值毁灭。"
+    },
+    {
+      "point": "个人和社区应在这几种未来中分散押注。",
+      "explanation": "虽然个人可以专精于某一领域，但社区应保持策略的平衡组合，以对冲关于哪种未来会成真的不确定性。"
+    }
+  ],
+  "keyQuotes": [
+    "当你执行一项策略时，你实际上是在对你会身处哪种未来下注。",
+    "如果我们没有走在解决 AI 对齐问题的轨道上……上面列出的其他类型工作都不会有回报。",
+    "在社区层面，我们不应把所有赌注押在一种未来上。",
+    "我无法想象，在不先解决一些基础问题的情况下，我们如何能获得一个稳定的未来。"
+  ],
+  "tags": [
+    "AI 对齐",
+    "有感知福利",
+    "ASI 时间线",
+    "有效利他主义",
+    "AI 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 474,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779726175000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-26 00:22:55"
+}

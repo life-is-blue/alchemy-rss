@@ -1,0 +1,58 @@
+{
+  "id": "RAW_57950b92",
+  "title": "追求高效 Java 开发：从 1BRC 到原生构建 Hardwood AI",
+  "url": "https://www.infoq.com/podcasts/chasing-efficient-java-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-25 19:00:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": null,
+  "aiSummary": "Gunnar Morling 探讨了构建高性能 Java 应用程序，从十亿行挑战到持久化执行引擎，以及零依赖 Parquet 解析器 Hardwood 的 AI 原生开发。",
+  "oneSentenceSummary": "Gunnar Morling 探讨了构建高性能 Java 应用程序，从十亿行挑战到持久化执行引擎，以及零依赖 Parquet 解析器 Hardwood 的 AI 原生开发。",
+  "summary": "在本期播客访谈中，Java Champion 及 Confluent 技术专家 Gunnar Morling 分享了他对现代 Java 开发的见解。他回顾了“十亿行挑战”出人意料的影响力，该挑战展示了 Java 的性能潜力。Morling 主张升级到现代 Java 版本（17+），以利用紧凑对象头、ZGC 等特性获得开箱即用的性能提升。他解释了持久化执行引擎的概念，该引擎允许将复杂的工作流编写为普通的、可恢复的代码，并介绍了他的最新项目 Hardwood。Hardwood 是一个快速、零依赖的 Apache Parquet Java 解析器，旨在最小化供应链风险，并通过使用虚拟线程实现页面级并行化来最大化性能。Morling 还详细介绍了他以 AI 原生方式开发 Hardwood 的经验，强调了 AI 编码助手带来的生产力提升，同时也指出了在代码质量和设计遵循方面进行人工监督的关键必要性。",
+  "mainPoints": [
+    {
+      "point": "现代 Java 版本（17+）提供了显著的开箱即用性能提升。",
+      "explanation": "紧凑对象头和改良的垃圾回收算法（如 ZGC）等功能减少了内存占用和 CPU 周期，使得升级成为一种低投入、高回报的优化手段。"
+    },
+    {
+      "point": "持久化执行引擎通过将复杂、长期运行的工作流表示为普通的、可恢复的代码来简化它们。",
+      "explanation": "这种方法允许开发者在单个程序中定义端到端流程，由引擎管理状态持久化和恢复，从而降低了基础设施的复杂性。"
+    },
+    {
+      "point": "Hardwood 是一个零依赖的 Parquet 解析器，专为速度和最小化供应链风险而设计。",
+      "explanation": "通过避免庞大的依赖树（如 Hadoop 栈），Hardwood 减少了类路径冲突和安全风险，同时利用页面级并行化和虚拟线程实现高性能。"
+    },
+    {
+      "point": "AI 原生开发是巨大的生产力助推器，但需要严格的人工监督。",
+      "explanation": "虽然 AI 助手能加速编码，但开发者必须确保代码质量、遵循设计文档并防止回归，应将 AI 的输出视为初级开发者的工作成果。"
+    }
+  ],
+  "keyQuotes": [
+    "使用现代 Java 版本能带来显著的开箱即用性能优势，包括通过紧凑对象头减少对象内存占用，以及改进的并发垃圾回收。",
+    "持久化执行引擎允许将复杂、长期运行的工作流定义为普通的端到端代码，从而以最小的基础设施简化可恢复和可恢复流程的实现。",
+    "与现有引入庞大依赖足迹并带来供应链攻击风险和类路径冲突等问题的 Java 解析器不同，Hardwood 被构建为一个快速、零依赖的项目，以最小化这些问题。",
+    "Hardwood 的 AI 原生开发过程很顺利，这主要归功于该格式详尽的文档。然而，人工监督对于确保代码质量、遵循设计以及防止回归至关重要。"
+  ],
+  "tags": [
+    "Java",
+    "性能",
+    "Parquet",
+    "持久化执行",
+    "AI 编码"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 31,
+  "score": 88,
+  "wordCount": 7740,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779706800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-25 19:00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_9ae660ec",
+  "title": "无人车遇水则瘫？Waymo 大规模召回，叫停多城 Robotaxi 服务",
+  "url": "https://www.qbitai.com/2026/05/424610.html",
+  "date": "2026-05-25 16:48:14",
+  "author": "杰西卡",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"81\">杰西卡 发自 副驾寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"82\">智能车参考 | 公众号 AI4Auto</p>\n  </blockquote>\n  <p data-track=\"2\">都2026年了，<strong>无人车Waymo</strong>还是搞定不了<strong>积水路面</strong>？！</p>\n  <p data-track=\"3\">最近暴雨多发，Waymo又出新事故。一辆无人车驶入了无法通行的严重积水路面，导致车辆陷入其中停滞不前。</p>\n  <p data-track=\"4\">而且在短短一个月内，这已是Waymo第二次因积水问题引发运营事故：</p>\n  <p data-track=\"5\">今年4月，Waymo曾被曝出驶入了一段积水车道，由于水势比系统判断的要急得多，车辆最终被溪流冲走。</p>\n  <p data-track=\"6\">Waymo事后承认其软件存在缺陷，并进行了一次<strong>大规模召回</strong>，通过地理围栏在特定时间、区域限制车辆行驶。</p>\n  <p data-track=\"7\">但就现在的情况来看，这种临时措施<strong>治标不治本</strong>，积水问题仍是这家无人车公司的“顽疾”。</p>\n  <p data-track=\"9\">事情发生在最近，一场强降雨突袭美国亚特兰大。</p>\n  <p data-track=\"10\">而一辆处于空载状态的<strong>Waymo无人车</strong>，当天驶入了无法通行的严重积水路段，被困大约一小时后才被拖离。</p>\n  <p data-track=\"11\">Waymo官方事后解释，此次暴风雨来得突然，在当地气象局<strong>正式发布山洪预警之前</strong>，部分道路就已经开始积水。</p>\n  <p data-track=\"12\">也就是说，Waymo车队目前仍依赖<strong>官方天气警报</strong>，来决定是否避开深水区。</p>\n  <p data-track=\"13\">这个解释，实际揭示了Waymo系统设计中的一个关键依赖：<strong>外部信息输入</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093940_8e753af6fd3ca4d6b9d3d0a577408d38.png\">\n  </div>\n  <p data-track=\"14\">更令人担忧的是，这已是Waymo近期第二次因积水问题造成运营事故。</p>\n  <p data-track=\"15\">就在今年4月20日，美国圣安东尼奥，也有一辆Waymo无人车在极端天气受困，好在当时车内也没有乘客。</p>\n  <p data-track=\"16\">调查文件显示，尽管系统已检测到路面积水，车辆却仍以低速继续前行，最终被冲入溪流。</p>\n  <p data-track=\"17\">当时，这场事故很快引起了交通部门的关注。</p>\n  <p data-track=\"18\">5月中旬，Waymo向美国国家公路交通安全管理局（NHTSA）提交了<strong>自愿召回申请</strong>，涉及<strong>3791辆</strong>搭载第五代和第六代自动驾驶系统的车辆。</p>\n  <p data-track=\"19\">给出的召回理由是<strong>软件存在缺陷</strong>，可能导致车辆在检测到积水后，仍以低速驶入无法通行的路段。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_9b6c941d0ca66361d8fcb2bf2058fffc.png\">\n  </div>\n  <p data-track=\"20\">同时，公司也承认，<strong>尚未完全开发出识别并避开积水区域的最终方案</strong>。</p>\n  <p data-track=\"21\">因此，Waymo暂时只能通过OTA推送临时软件更新，<strong>通过地理围栏在特定时间和区域限制车辆行驶</strong>。</p>\n  <p data-track=\"22\">但如今看来，这种临时措施，更像是一种“治标不治本”的权宜之计。</p>\n  <p data-track=\"23\">所以新的事故发生后，Waymo决定<strong>暂停亚特兰大、奥斯汀、达拉斯、休斯顿等城市的运营</strong>，同时暂停旧金山、洛杉矶、凤凰城、迈阿密四座城市的<strong>高速公路服务</strong>。</p>\n  <p data-track=\"24\">公司对外解释称，这是为了更新软件，改善车辆在施工区与淹水道路周边的表现，更新完成后会陆续恢复。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_541212eb0ac2bb4befa4cacef097dc91.png\">\n  </div>\n  <p data-track=\"25\">主动停掉已经开通的付费服务，在Waymo历史上并不常见。这次停运虽然只是部分城市、部分路段，但对<strong>订单量和用户体验</strong>的打击是实实在在的。</p>\n  <p data-track=\"26\">这在一定程度上或许能说明，积水问题已经无法通过远程补丁快速解决，必须让所有车停下来等升级。</p>\n  <p data-track=\"27\">那么，为什么Waymo在水坑里屡次栽跟头？从技术维度去考虑，可能有两方面的核心原因：</p>\n  <p data-track=\"28\">其一，是<strong>感知层面</strong>存在挑战。</p>\n  <p data-track=\"29\">水面本身具有独特的物理特性，激光雷达发射的脉冲遇到水面时，部分被吸收，部分发生镜面反射，导致点云数据稀疏或失真。</p>\n  <p data-track=\"30\">而摄像头在暴雨天气下，不仅视野受限，水面反光还会造成过曝或识别混淆。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_176812a47d3fb9f300a8c8729ffd58b3.png\">\n  </div>\n  <p data-track=\"31\">Waymo采用的多传感器融合算法，需要结合实时水深、水流速度、车辆通过性等多维度信息，对系统的感知能力要求极高。</p>\n  <p data-track=\"32\">其二，Waymo的系统过度依赖<strong>提前设定</strong>。</p>\n  <p data-track=\"33\">Waymo的自动驾驶系统，本质上是一套<strong>规则驱动</strong>的系统，基于海量驾驶数据进行训练。</p>\n  <p data-track=\"34\">工程师会先写好成千上万条规则——比如“限速范围内行驶”，或者“前方有障碍物则刹车”等等，然后车辆在道路上匹配这些规则。</p>\n  <p data-track=\"35\">这种方式在90%的场景下没有问题，但剩下的10%——也就是所谓的<strong>“长尾场景”</strong>——往往是最容易发生变故的。</p>\n  <p data-track=\"36\">积水路面就属于典型。至少目前，还没有一条规则能涵盖所有涉水情况：</p>\n  <p data-track=\"37\">水深多少算危险？水流速度多快算危险？路面下面是平坦还是有坑？这些变量无法用固定规则穷举。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_24974429a7a6c9ff708a36ee24b2318d.png\">\n  </div>\n  <p data-track=\"38\">平时依赖预设规则和高精地图时，在已知的高风险积水区域，无人车可以通过更新地图数据、设置运营限制来规避风险。</p>\n  <p data-track=\"39\">但极端天气突发时——例如亚特兰大的事故，这种基于规则和外部信息的防御机制可能就会失效。</p>\n  <p data-track=\"40\">所以，如何让系统具备类似人类驾驶员的<strong>“常识判断”</strong>，是Waymo工程师当前面临的真正挑战。</p>\n  <p data-track=\"41\">与此同时的另一边，同样在推进Robotaxi运营的特斯拉，倒是被发现悄悄学聪明了。</p>\n  <p data-track=\"43\">对于模仿人类驾驶中微妙的、不成文的规则，<strong>特斯拉FSD</strong>是越学越“上道”了。</p>\n  <p data-track=\"44\">最近有车主发现，当FSD发现高速公路中央隔离带上有<strong>警车</strong>时，就会主动调整驾驶行为：</p>\n  <p data-track=\"45\">这辆车原本以<strong>77英里/小时</strong>的速度超速行驶（限速70英里/小时）。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_7b8768b5e9b0edaa2c645f02a45759da.gif\">\n  </div>\n  <p data-track=\"46\">但在发现警车后，系统果断<strong>主动减速、变换车道</strong>，并无缝融入周围较慢的车流，成功避免了引起警官的注意。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_dae2eb2daf0093410032cc74c7a8dbab.gif\">\n  </div>\n  <p data-track=\"47\">emm，这驾驶手法……</p>\n  <p data-track=\"48\"><s>看着怎么那么像人类“老司机”呢。</s></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_04cfb5eb21659931dd36f82e47651d48.jpeg\">\n  </div>\n  <p data-track=\"49\">这种<strong>应对紧急车辆</strong>的功能，特斯拉曾在过去的软件更新中多次提及。</p>\n  <p data-track=\"50\">2025年10月，特斯拉在FSD版本更新中明确：加入了对应急车辆（例如警车、消防车、救护车）靠边停车或让行的处理能力。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_188bc79539249bc3025378f0bd806227.png\">\n  </div>\n  <p data-track=\"51\">不久前推送的<strong>FSD V14.3.3版本</strong>中，特斯拉又增加了对急救车、校车等特种车辆的<strong>专项识别模块</strong>。</p>\n  <p data-track=\"52\">根据部分测试车主反馈，当系统检测到这类车辆时，会提前<strong>300米左右</strong>启动避让策略——</p>\n  <p data-track=\"53\">以城市道路50公里/小时的速度计算，300米大约需要20秒，这给车辆留出了充足的变道、减速或靠边的时间。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_2889afb48bb4807ff89109c1de0ed51b.png\">\n  </div>\n  <p data-track=\"54\">两相对比，其实就又回到了<strong>Waymo</strong>和<strong>特斯拉</strong>代表的两种技术路线之争，本质上也是两种工程哲学的分歧。</p>\n  <p data-track=\"55\">Waymo代表的是“顶层设计”思路，这种思路认为自动驾驶是一个可以分解、可以设计、可以验证的系统工程，直接瞄准L4/L5级全无人驾驶。</p>\n  <p data-track=\"56\">工程师会定义系统的各个模块，包括感知、定位、预测、规划、控制。每个模块有明确的功能定义和性能指标，通过精心设计和严格测试，最终集成为一个可靠的系统。</p>\n  <p data-track=\"57\">这种路线依赖<strong>高精地图和多传感器</strong>，简单来说就是提前把路扫一遍，靠多种传感器保证不遗漏，然后用海量规则把车框起来。</p>\n  <p data-track=\"58\">其优势在于<strong>可控性</strong>，系统行为是可预测、可解释的。在地图覆盖的区域，车辆定位极准，安全性有保障。</p>\n  <p data-track=\"59\">当发生事故时，工程师可以追溯问题到具体模块，进行针对性的修复。</p>\n  <p data-track=\"60\">但“顶层设计”的代价是<strong>复杂性</strong>。现实世界的驾驶场景几乎是无限的，当系统遇到未经设计的场景时，可能会表现僵硬甚至失效。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_8d2f3354f5a728f7e5077888c6a70309.png\">\n  </div>\n  <p data-track=\"61\">特斯拉则是走<strong>渐进式路线</strong>，从L2起步，通过海量用户车辆收集数据，利用端到端神经网络不断迭代，最终实现L4/L5级自动驾驶。</p>\n  <p data-track=\"62\">其核心是依靠摄像头捕捉周围环境，通过<strong>神经网络</strong>处理这些视觉信息，最终做出驾驶决策。</p>\n  <p data-track=\"63\">这种方法的优势在于适应性和扩展性。系统不依赖预先定义的规则，因此能够处理未曾见过的场景。随着数据不断积累，系统的能力会自然增长。</p>\n  <p data-track=\"64\">同时，系统在训练过程中，看到了无数包含紧急车辆的驾驶场景，以及人类驾驶员在这些场景下的反应，应对方式也更加“类人”。</p>\n  <p data-track=\"65\">但纯视觉系统在感知层面存在物理限制，摄像头在暴雨、大雾、强逆光等条件下性能会下降。</p>\n  <p data-track=\"66\">更重要的是，神经网络是“黑箱”——工程师可能很难完全理解系统做出某个具体决策的原因，也很难保证它在所有边缘情况下都能安全运行。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_2196f3a4cf2aa8bc9ee7999a6d7c0234.png\">\n  </div>\n  <p data-track=\"67\">所以特斯拉的选择是通过OTA更新，让系统能够不断从新的驾驶数据中学习。</p>\n  <p data-track=\"68\">两种路线，各有优劣。有意思的是，两种路线也都在悄悄向对方靠拢。</p>\n  <p data-track=\"69\">Waymo在第六代Driver的宣传语中，提到了“轻量级、强大的机器学习模型”，这意味着他们正在引入更多基于学习的方法，开始降低对高精地图的依赖，而不是死守规则。</p>\n  <p data-track=\"70\">特斯拉则开始更注重安全冗余，FSD V14版本中增加了更多交叉验证机制，不再完全依赖单一神经网络。</p>\n  <p data-track=\"71\">这听起来有点像Waymo的多传感器融合思路——虽然传感器仍然是纯视觉。</p>\n  <p data-track=\"72\">最终的自动驾驶方案，或许不会是纯粹的某一条路线，而是两者的结合：用地图提供先验信息，用神经网络处理实时判断，用规则保证基本安全。</p>\n  <p data-track=\"73\">到那时，<strong>成本</strong>更占优势的一方，或许会更早拿下主动权。</p>\n  <p data-track=\"75\">最近特斯拉更受关注的新闻，还属公司披露的<strong>FSD监督版</strong>最新进展——面向<strong>中国</strong>在内的10个国家和地区开放使用。</p>\n  <p data-track=\"76\">而特斯拉中国发布的多个<strong>智驾测试</strong>相关的招聘岗位，似乎也进一步验证了这一消息的真实性。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_aed995d30dc700a9c55d0cbf68ccff74.png\">\n  </div>\n  <p data-track=\"77\">不过FSD来了中国，也只敢叫“辅助驾驶”……</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_1c93541ed83906553f3aefbc9f29922e.png\">\n  </div>\n  <p data-track=\"78\">特斯拉驾驶技术的巅峰，或许很快就能在国内和各家车企赛场上相见了。</p>\n  <p data-track=\"79\">不过小鹏副总裁说，车企里或许只有小鹏欢迎FSD入华，“背后的道理，大家或许都懂。”</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260525093939_e440a01dcdc89b6b443564e2dacc2fc7.png\">\n  </div>\n  <p data-track=\"80\">你怎么看？</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文报道了 Waymo 因积水问题导致多起事故并大规模召回，分析了其规则驱动系统在极端天气下的局限性，并与特斯拉 FSD 的端到端学习路线进行了对比。",
+  "oneSentenceSummary": "本文报道了 Waymo 因积水问题导致多起事故并大规模召回，分析了其规则驱动系统在极端天气下的局限性，并与特斯拉 FSD 的端到端学习路线进行了对比。",
+  "summary": "文章首先报道了 Waymo 无人车在亚特兰大因暴雨驶入严重积水路段被困的事故，这是一个月内第二次因积水问题引发的运营事故。Waymo 随后提交了涉及 3791 辆车的自愿召回申请，承认软件缺陷，并暂停了亚特兰大、奥斯汀等多城的 Robotaxi 服务。文章从技术角度分析了 Waymo 屡次栽跟头的原因：一是感知层面，水面会导致激光雷达点云稀疏和摄像头视野受限；二是其规则驱动系统难以穷举积水这类长尾场景的变量。文章随后对比了特斯拉 FSD 的端到端学习路线，以 FSD 识别警车后主动减速变道为例，说明其在处理微妙驾驶规则上的优势。最后，文章指出两种技术路线正在相互靠拢，未来的自动驾驶方案可能是地图、神经网络和规则的结合。",
+  "mainPoints": [
+    {
+      "point": "Waymo 因积水问题导致多起事故并大规模召回，暴露了其规则驱动系统在极端天气下的脆弱性。",
+      "explanation": "Waymo 的自动驾驶系统依赖预设规则和高精地图，难以应对积水这类变量复杂的「长尾场景」，导致车辆在检测到积水后仍低速驶入危险路段。"
+    },
+    {
+      "point": "Waymo 的感知系统在积水路面存在物理局限。",
+      "explanation": "水面会吸收或镜面反射激光雷达脉冲，导致点云数据失真；摄像头在暴雨中视野受限，水面反光也会造成识别混淆，增加了多传感器融合的难度。"
+    },
+    {
+      "point": "特斯拉 FSD 的端到端学习路线在处理微妙驾驶规则上更具优势。",
+      "explanation": "FSD 通过海量驾驶数据训练，能学习到类似人类驾驶员的「常识判断」，例如识别警车后主动减速变道，展现出更强的适应性和类人行为。"
+    },
+    {
+      "point": "Waymo 和特斯拉的技术路线正在相互靠拢。",
+      "explanation": "Waymo 开始引入更多基于学习的方法，降低对高精地图的依赖；特斯拉则开始增加安全冗余和交叉验证机制，未来的自动驾驶方案可能是两者的结合。"
+    }
+  ],
+  "keyQuotes": [
+    "都 2026 年了，无人车 Waymo 还是搞定不了积水路面？！",
+    "Waymo 事后承认其软件存在缺陷，并进行了一次大规模召回，通过地理围栏在特定时间、区域限制车辆行驶。",
+    "但就现在的情况来看，这种临时措施治标不治本，积水问题仍是这家无人车公司的'顽疾'。",
+    "如何让系统具备类似人类驾驶员的'常识判断'，是 Waymo 工程师当前面临的真正挑战。",
+    "最终的自动驾驶方案，或许不会是纯粹的某一条路线，而是两者的结合：用地图提供先验信息，用神经网络处理实时判断，用规则保证基本安全。"
+  ],
+  "tags": [
+    "Waymo",
+    "特斯拉",
+    "自动驾驶",
+    "Robotaxi",
+    "FSD"
+  ],
+  "topicTag": "other",
+  "readTime": 14,
+  "score": 84,
+  "wordCount": 3311,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1779698894000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-25 16:48:14"
+}

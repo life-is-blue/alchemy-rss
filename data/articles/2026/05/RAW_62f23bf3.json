@@ -1,0 +1,54 @@
+{
+  "id": "RAW_62f23bf3",
+  "title": "安全程序合成奖学金申请现已开放 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/RmKGiB8xmPK2hGmB9/applications-open-for-the-secure-program-synthesis",
+  "date": "2026-05-25 18:04:06",
+  "author": "eitan sprejer",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><i><b><span>TL;DR:</span></b></i><span>&nbsp;Applications are now open for the&nbsp;</span><span><span><a href=\"https://apartresearch.com/fellowships/the-secure-program-synthesis-fellowship\"><span>Secure Program Synthesis Fellowship</span></a></span></span><span>, powered by&nbsp;</span><span><span><a href=\"https://apartresearch.com/\"><span>Apart Research</span></a></span></span><span>&nbsp;and&nbsp;</span><span><span><a href=\"https://atlascomputing.org/\"><span>Atlas computing</span></a></span></span><span>.&nbsp;</span><span><span><a href=\"https://tally.so/r/44PVxB\"><b><span>Apply</span></b></a></span></span><b><span>&nbsp;by Sunday the 31st of May</span></b><span>.</span></p>\n    <p id=\"block1\"><span>This fellowship offers&nbsp;</span><b><span>part-time research opportunities on mentor-led projects at the intersection of formal methods, AI systems, and security</span></b><span>. Participants work in small teams to tackle challenging, underspecified problems in specification, validation, and adversarial robustness.</span></p>\n    <h2 id=\"Why_This_Matters\"><span>Why This Matters</span></h2>\n    <p id=\"block2\"><span>As code generation becomes cheaper and more scalable, the bottleneck shifts from implementation to specification and validation. Many real-world systems lack clear or complete specifications, and errors at this level propagate across all downstream implementations. Improving how we elicit, formalize, and validate specs is critical to building secure and reliable AI systems.</span></p>\n    <h2 id=\"Projects_and_Mentors\"><span>Projects and Mentors</span></h2>\n    <p id=\"block3\"><span>Projects are proposed and guided by field leaders in Formal Methods and AI Security, such as&nbsp;</span><span><span><a href=\"https://www.linkedin.com/in/erikmeijer1/\"><span>Erik Maijer&nbsp;</span></a></span></span><span>and&nbsp;</span><span><span><a href=\"https://scholar.google.com/citations?user=Cxwj5hEAAAAJ&amp;hl=en\"><span>Shririam Krishnamurthi</span></a></span></span><span>.​</span></p>\n    <p id=\"block4\"><span>Our vision is high quality and productive collaborations that produce publishable and impactful work in a short time frame.</span></p>\n    <p id=\"block5\"><span>For a full list of mentors, see&nbsp;</span><span><span><a href=\"https://docs.google.com/document/d/1v4ws76TdBbHHiK7Neh4KKTSCKFppXCwGa5TMEUV2gUw/edit?tab=t.1tanl284dwfn#heading=h.8eabpqhl023g\"><span>here.</span></a></span></span></p>\n    <h2 id=\"Resources\"><span>Resources</span></h2>\n    <p id=\"block6\"><span>For a curated list of secure program synthesis work across the field, see&nbsp;</span><span><span><a href=\"https://github.com/for-all-dev/awesome-secure-program-synthesis\"><span>awesome-secure-program-synthesis</span></a></span></span><span>.</span></p>\n    <h2 id=\"FAQ\"><span>FAQ</span></h2>\n    <h3 id=\"What_background_do_I_need_\"><span>What background do I need?</span></h3>\n    <p id=\"block7\"><span>No specific background is needed, so don't hesitate to apply. Useful skillsets include:</span></p>\n    <ul>\n     <li value=\"1\" id=\"block8\"><span>Proof engineering (in verified software preferred, but math proofs in ITP is somewhat fine)</span></li>\n     <li value=\"2\" id=\"block9\"><span>Redteaming/pentesting, fuzzing, reverse engineering</span></li>\n     <li value=\"3\" id=\"block10\"><span>SMT and model checking</span></li>\n     <li value=\"4\" id=\"block11\"><span>Critical and secure systems design</span></li>\n     <li value=\"5\" id=\"block12\"><span>Agentdev, ML benchmarks/evals/environments</span></li>\n    </ul>\n    <h3 id=\"Is_this_paid_\"><span>Is this paid?</span></h3>\n    <p id=\"block13\"><span>By default, no. However, if a stipend would enable your participation, please indicate this in the application form or emailing us at </span><a href=\"mailto:secure-program-synthesis-fellowship@apartresearch.com\"><span>secure-program-synthesis-fellowship@apartresearch.com</span></a></p>\n    <h3 id=\"Can_I_participate_while_working_full_time_\"><span>Can I participate while working full-time?</span></h3>\n    <p id=\"block14\"><span>Only if you can dedicate at least 8 hours per week.</span></p>\n    <h3 id=\"What_if_I_m_not_accepted_\"><span>What if I’m not accepted?</span></h3>\n    <p id=\"block15\"><span>You’ll stay in the Apart network for future projects and opportunities.</span></p>\n    <h3 id=\"Other_Questions_\"><span>Other Questions?</span></h3>\n    <p id=\"block16\"><span>Please email: </span><a href=\"mailto:secure-program-synthesis-fellowship@apartresearch.com\"><span>secure-program-synthesis-fellowship@apartresearch.com</span></a></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "安全程序合成奖学金申请现已开放，这是一个由导师指导的兼职研究项目，聚焦于形式化方法、AI 系统与安全的交叉领域，申请截止日期为 5 月 31 日。",
+  "oneSentenceSummary": "安全程序合成奖学金申请现已开放，这是一个由导师指导的兼职研究项目，聚焦于形式化方法、AI 系统与安全的交叉领域，申请截止日期为 5 月 31 日。",
+  "summary": "本文宣布安全程序合成奖学金申请正式启动。该奖学金由 Apart Research 和 Atlas Computing 组织，是一个兼职研究项目，专注于在导师指导下解决形式化方法、AI 系统与安全交叉领域中的难题，包括规范、验证和对抗鲁棒性。文章强调，随着代码生成变得更廉价、更具可扩展性，规范与验证的重要性日益凸显。文中列出了潜在导师，如 Erik Maijer 和 Shriram Krishnamurthi，并提供了常见问题解答，涵盖背景要求、津贴、时间投入和申请流程。申请截止日期为 5 月 31 日。",
+  "mainPoints": [
+    {
+      "point": "该奖学金提供兼职、导师制的研究项目，聚焦形式化方法、AI 系统与安全的交叉领域。",
+      "explanation": "参与者将在领域领袖的指导下，组成小型团队，攻克规范、验证和对抗鲁棒性方面的难题。"
+    },
+    {
+      "point": "该项目旨在应对代码生成廉价且可扩展时代中，规范与验证这一关键瓶颈。",
+      "explanation": "随着 AI 生成更多代码，缺乏清晰完整的规范成为错误的主要来源，这使得该研究领域对于构建安全可靠的系统愈发重要。"
+    },
+    {
+      "point": "申请面向广泛背景，无需特定先决条件。",
+      "explanation": "有用的技能包括证明工程、红队测试、SMT、模型检查和安全系统设计，但该项目鼓励任何感兴趣的人申请。"
+    }
+  ],
+  "keyQuotes": [
+    "由 Apart Research 和 Atlas Computing 支持的安全程序合成奖学金现已开放申请。",
+    "随着代码生成变得更廉价、更具可扩展性，瓶颈正从实现转向规范与验证。",
+    "改进我们获取、形式化和验证规范的方式，对于构建安全可靠的 AI 系统至关重要。",
+    "我们的愿景是，通过高质量且富有成效的合作，在短时间内产出可发表且有影响力的成果。"
+  ],
+  "tags": [
+    "安全程序合成",
+    "形式化方法",
+    "AI 安全",
+    "奖学金",
+    "研究"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 80,
+  "wordCount": 294,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779703446000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-25 18:04:06"
+}
