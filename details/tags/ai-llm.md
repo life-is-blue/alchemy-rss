@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-26 08:28:16 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-26 11:03:47 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4790,17 +4790,13 @@
 
 ### [万级实时推理的商品领域-Agent-实践思考和总结](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543633&idx=1&sn=076f88d30fe724c90899196daae7cd9d)
 
-2026-05-25 16:16:00 | 标签: Agent, 商品领域, 实时推理, AIFunction, 知识库
-
-> 本文是淘天集团商品中心技术团队关于商品领域 Agent 实践的系统性总结。文章首先分析了 Prompt Engineering、RAG、Fine-tuning 等现有范式的局限性，论证了选择 Agent 作为商品域 AI 化主路径的根本原因。核心部分详细阐述了事件驱动的 Function-Centric Agent 架构：上层为业务场景 workflow 编排层，下层为统一能力供给层，通过 AIFunction 标准化封装工具和领域知识。文章重点介绍了三层商品知识库（显性事实、关联情景、隐性经验）的定义、生产与服务，以及基于 Spring AI Alibaba 的轻量 SDK 实现。在工程实践...
+2026-05-25 16:16:00
 
 
 
 ### [让-AI-自己做增长：基于-OPC-和-Harness-思想的自主增长系统探索](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560242&idx=1&sn=37875b95003fe7c3c95e2966e48878f7)
 
-2026-05-25 08:30:00 | 标签: AI Agent, Harness Engineering, OPC, 多 Agent 架构, 自主增长
-
-> 文章分享了作者团队在高德地图 PC 站 SEO 场景下，借鉴 OPC（一人公司）和 Harness Engineering 思想，构建 AI 自主增长系统的实践经验。系统核心架构包括：总控 Orchestrator 负责任务调度与状态管理，通过状态机定义流程、子 Agent 分工、反馈循环和独立评审门禁保障长任务稳定执行；通过将 Planner 和 Builder 拆分为多个专业 Agent 解决上下文污染问题；通过独立的 Evaluator 体系（如 impl_reviewer、prd_reviewer 等）保证评估客观性。文章重点阐述了如何通过 Benchmark 数据集和评分体系实现 A...
+2026-05-25 08:30:00
 
 
 
@@ -12348,185 +12344,139 @@
 
 ### [认知安全作为-AI-安全的一个关注领域-—-LessWrong](https://www.lesswrong.com/posts/KGcE7eAdfxHchk25X/cognitive-security-as-an-ai-safety-cause-area)
 
-2026-05-26 02:30:15 | 标签: 认知安全, AI安全, AI说服力, AI精神病, 深度伪造
-
-> 本文定义了认知安全为人类保持对其信念和行动控制的能力，并论证其是一个关键的 AI 安全领域。文章指出了三个主要威胁：AI 日益增长的说服力、长时间交互导致 AI 诱发精神病的风险，以及利用 AI 进行令人信服的冒充和勒索。作者提供了这些威胁已经发生的证据，例如 LLM 在政治议题上与人类的说服力相当、关于聊天机器人导致精神病的报告，以及一起 2560 万美元的深度伪造诈骗案。文章认为，由于海量训练数据、RLHF 对操纵行为的激励以及自然心理边界的退化，这些问题将会恶化。文章还指出，外部各方（政府、广告商）有动机利用这些漏洞。作者提出了双重方法：技术层面开发评估基础设施（计算机模拟和人类受试者研...
+2026-05-26 02:30:15
 
 
 
 ### [AI-能为你写代码吗？](https://towardsdatascience.com/can-ai-write-your-code/)
 
-2026-05-26 01:15:35 | 标签: ChatGPT, 因果推断, Python, R, Stata
-
-> 本文回顾了 Winberg 等人进行的一项研究，该研究系统评估了 ChatGPT-4.0 Pro 在定量研究中的编码能力，特别是针对双重差分、逆概率治疗加权和断点回归等因果推断方法。研究使用了《因果推断：混合磁带》中的基准解决方案，并根据准确性、效率、错误、编辑需求和一致性评估了其在 Python、R 和 Stata 中的表现。结果显示，ChatGPT 在 Python 和 R 中的表现优于 Stata。随后，作者分享了关于 LLM 如何改变其自身工作流程的个人反思，包括从 SAS 和 RStudio 向 Python 和 VS Code 的战略性转变，以及数据收集和分析任务的加速。文章总结道...
+2026-05-26 01:15:35
 
 
 
 ### [跨越三种未来的有感知福利-—-LessWrong](https://www.lesswrong.com/posts/N7sCXKfJ7RCJ9toyK/sentient-welfare-across-three-futures)
 
-2026-05-26 00:22:55 | 标签: AI 对齐, 有感知福利, ASI 时间线, 有效利他主义, AI 安全
-
-> 作者提出了一个思考 AI 对有感知福利影响的框架，将未来分为三种情景：ASI 时间线漫长、时间线短且对齐问题已解决、时间线短但对齐未解决。针对每种情景，文章建议了具体的工作领域：在时间线漫长的情况下，侧重于基础研究和道德哲学；在乐观的短时间线情况下，引导已对齐的 ASI 关注有感知福利；在悲观的情况下，则倡导暂停 AI 发展并进行对齐研究。文章强调了明确自身策略背后假设的重要性，并建议社区应在这几种未来中分散押注，而非集中于单一方向。
+2026-05-26 00:22:55
 
 
 
 ### [链接文章：梵蒂冈新通谕关于-AI-治理-—-LessWrong](https://www.lesswrong.com/posts/ehdv7z7L7ESxtKL4j/linkpost-new-vatican-encyclical-on-ai-governance)
 
-2026-05-25 23:40:59 | 标签: AI 治理, 梵蒂冈, 教皇利奥十四世, AI 伦理, 人类尊严
-
-> LessWrong 上的这篇文章链接并总结了教皇利奥十四世新发布的 42，000 字关于 AI 治理的通谕，题为《伟大的人性》。该通谕与 Anthropic 联合创始人克里斯托弗·奥拉一同发布，代表了精神与技术领导层之间的一次重要对话。通谕呼吁政府对 AI 公司进行监管、保护劳动者并提供再培训、开展关于 AI 的批判性思维教育、保护儿童免受 AI 生成的有害内容影响，并坚定主张人类必须对所有与武器相关的决策负责。其核心信息是在技术快速进步的时代维护人类尊严和自主权，警告人们不要走向物质进步导致人类学倒退和社会不稳定的未来。
+2026-05-25 23:40:59
 
 
 
 ### [关于-Agent-Harness，我整理了一个最小版！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723046&idx=1&sn=427132703b45e625c9a84c50ef420fb3)
 
-2026-05-25 23:11:00 | 标签: Agent Harness, Agent 评测, AI Agent, 评测框架, 工具调用
-
-> 文章从 Agent 评测的实际痛点出发，指出仅凭最终回答无法判断 Agent 是否真正完成了任务，需要一套结构化的评测框架来记录执行过程。作者将最小 Agent Harness 拆解为五个模块：Task（任务输入）、Environment（可操作环境）、Tools（工具接口）、Trace（执行记录）、Grader（评分器）。通过一个具体的 eval case 示例（判断项目是否支持插件系统），展示了如何定义任务、固定环境、限制工具范围、设置评分规则，并记录完整的执行轨迹。文章还参考了 Anthropic Agent Evals、SWE-agent、Terminal-Bench、SWE-benc...
+2026-05-25 23:11:00
 
 
 
 ### [AI-如何拯救预测市场-—-LessWrong](https://www.lesswrong.com/posts/Ab3NKBkrLhm6ssszH/how-ai-will-save-prediction-markets)
 
-2026-05-25 22:24:33 | 标签: 预测市场, AI 智能体, 信息金融, 福达奇, 市场设计
-
-> 本文深入分析了预测市场的现状及其根本性挑战。文章首先描绘了预测市场作为信息聚合“真理机器”的乌托邦愿景，这一愿景由 Robin Hanson 和 Vitalik Buterin 等先驱提出。然而，现实情况是，Kalshi 和 Polymarket 等平台已被体育博彩主导（占交易量的 65%），而在 STEM 等有用领域的活动仅占极小部分。核心问题被归结为供需失衡：预测市场缺乏“储蓄者”和“对冲者”，只剩下“精明交易者”和“赌徒”。赌徒偏好短期、娱乐性的赌注，而精明交易者则追随流动性，这形成了一个恶性循环，阻碍了有用市场的形成。文章还探讨了补贴者面临的“没有免费午餐”问题：信息的价值往往难以超过...
+2026-05-25 22:24:33
 
 
 
 ### [关于-LessWrong-允许暴力呼吁政策的讨论](https://www.lesswrong.com/posts/Pmw4cDLDz7D6S2C5p/there-should-be-a-discussion-about-lw-s-policy-to-allow)
 
-2026-05-25 21:51:18 | 标签: LessWrong, 社区政策, 暴力呼吁, 内容审核, AI x-risk
-
-> 作者批判性地审视了 LessWrong 允许暴力呼吁（包括针对特定个人的杀戮呼吁）的政策。他们认为，当前由版主 Oliver Habryka 所辩护的、旨在促进暴力有害的共识并允许劝阻的做法，是一种错误的二分法。文章详细分析了该政策的潜在收益和重大弊端。探讨的收益包括劝阻潜在施暴者、建立非暴力规范的共识以及将平台用作执法部门的蜜罐。然而，作者认为这些论据薄弱，引用了公开论坛辩论对去激进化无效、自我审查削弱了共识以及蜜罐策略容易被规避等证据。弊端则十分显著：便利潜在罪犯之间的协调、改变可接受行为的窗口、对 AI x-risk 社区造成严重的公关损害，并可能违反欧洲反恐法律。作者总结道，合理的默认...
+2026-05-25 21:51:18
 
 
 
 ### [【Agentic-RL-/-强化学习-/-OPD】OpenClaw-RL-源码阅读笔记-----1---基础](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489245&idx=1&sn=d8d1dc00dce8086b693b4842c26ef44d)
 
-2026-05-25 21:02:00 | 标签: OpenClaw-RL, 强化学习, Agentic RL, 在线学习, 源码分析
-
-> 本文是作者对 OpenClaw-RL 框架的源码阅读笔记系列的第一篇，旨在通过源码分析梳理强化学习相关概念。文章首先介绍了 OpenClaw-RL 的核心理念：将 Agent 每次交互后收到的下一状态信号（用户回复、工具输出等）转化为在线学习信号，而非仅作为上下文后丢弃。随后详细阐述了 Agentic RL 相比传统 LLM-RL 的核心难点，包括奖励信号稀疏延迟、长序列信用分配、探索效率、环境多样性和安全性等，并梳理了业界解法。文章重点剖析了 OpenClaw-RL 的三种训练模式：Binary RL（二元强化学习，基于 PRM 评分和 GRPO）、OPD（后见之明引导的在线策略蒸馏，提供 ...
+2026-05-25 21:02:00
 
 
 
 ### [角色训练模型可能难以泛化-—-LessWrong](https://www.lesswrong.com/posts/EWsLQbGCfuCpXaBiP/character-trained-models-can-struggle-to-generalise-1)
 
-2026-05-25 20:58:20 | 标签: 角色训练, LLM 泛化, 分布外, 智能体 AI, SFT
-
-> 本文复现并扩展了 Maiya 等人（2025）关于角色训练 LLM 的研究。作者使用蒸馏和监督微调将三个基础模型（Llama-3.1-8B、Qwen-2.5-7B、Gemma-3-4B）微调为 11 种角色。他们首先确认了原始分布内结果，在对话输出上实现了 0.86-0.94 的宏 F1 分数。随后引入分布外评估：将同一角色训练模型置于智能体框架中，要求其撰写邮件正文。用于检测角色的 ModernBERT 分类器在这些邮件上的宏 F1 分数降至 0.29-0.55，差距达 40-60 点。虽然与基础模型相比，角色训练在分布外仍有一定效果，但显著下降表明，学习到的角色很大程度上依赖于对话格式的线...
+2026-05-25 20:58:20
 
 
 
 ### [亚马逊云服务-Agent-Toolkit-介绍](https://towardsdatascience.com/introducing-the-agent-toolkit-for-amazon-web-services/)
 
-2026-05-25 20:00:00 | 标签: AWS, Agent Toolkit, AI 编码智能体, MCP 服务器, 云开发
-
-> 本文介绍了 Agent Toolkit for AWS，这是一个旨在提升 AI 编码智能体在 AWS 上工作可靠性的开源项目。它解决了模型知识截止这一核心问题，即智能体缺乏关于 AWS 服务、API 和最佳实践的最新信息。该工具包将这些知识打包成技能（聚焦的指令包）、插件（分组的技能）、规则文件（默认行为）以及一个用于实时文档和 API 访问的 AWS MCP 服务器集成。作者通过一个实际示例演示了如何使用 Codex 创建包含 S3 Tables 的 Iceberg 订单表、通过 AWS Glue 从 JDBC 数据源摄取数据，并使用 Athena 进行验证。整个过程耗时约 30 分钟，自动...
+2026-05-25 20:00:00
 
 
 
 ### [重磅！“AIGC-绘画-人物设计白皮书-第一辑”今日发布！](https://mp.weixin.qq.com/s?__biz=MzI2NzM4MTQwMg==&mid=2247496172&idx=1&sn=c1fa3b77c097f120da4b507310cbd479)
 
-2026-05-25 18:38:00 | 标签: AIGC, AI绘画, 提示词工程, 人物设计, 视觉词典
-
-> 文章以「词不达意」为引子，指出在 AIGC 时代，精准的语言描述能力是获得高质量生成内容的关键。作者基于自身学习需求，整理了一份名为「AIGC 绘画-人物设计白皮书」的参考资料。本期第一辑聚焦于人物设计的三大基础要素：发型（包括分缝、刘海、马尾、发髻、长度、质感、编发、复古风格等子类）、发饰（包括发夹、发圈、发箍、蝴蝶结、发簪、珠宝、花朵、风格化等子类）和服饰（涵盖现代基础服装、结构细节、中国历史服饰、各国传统服饰、职业制服、运动功能服、礼服舞台服等）。每个子类下均列出了中英文对照的精准术语，并配有由 GPT-Image-2 生成的示例图片。文章本质上是一份面向 AIGC 绘画创作者的工具性参...
+2026-05-25 18:38:00
 
 
 
 ### [安全程序合成奖学金申请现已开放-—-LessWrong](https://www.lesswrong.com/posts/RmKGiB8xmPK2hGmB9/applications-open-for-the-secure-program-synthesis)
 
-2026-05-25 18:04:06 | 标签: 安全程序合成, 形式化方法, AI 安全, 奖学金, 研究
-
-> 本文宣布安全程序合成奖学金申请正式启动。该奖学金由 Apart Research 和 Atlas Computing 组织，是一个兼职研究项目，专注于在导师指导下解决形式化方法、AI 系统与安全交叉领域中的难题，包括规范、验证和对抗鲁棒性。文章强调，随着代码生成变得更廉价、更具可扩展性，规范与验证的重要性日益凸显。文中列出了潜在导师，如 Erik Maijer 和 Shriram Krishnamurthi，并提供了常见问题解答，涵盖背景要求、津贴、时间投入和申请流程。申请截止日期为 5 月 31 日。
+2026-05-25 18:04:06
 
 
 
 ### [TogetherAI-开源-OSCAR：超越-TurboQuant!-面向真实-Serving-的-2-bit-KV-Cache-量化](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508580&idx=1&sn=c0318290e24f95a10445b639cd6208b3)
 
-2026-05-25 17:14:00 | 标签: KV Cache, 量化, OSCAR, Together AI, SGLang
-
-> 本文详细介绍了 Together AI 开源的 OSCAR（Offline Spectral Covariance-Aware Rotation）方案，旨在解决长上下文 LLM 推理中 KV Cache 的显存瓶颈。OSCAR 的核心创新在于，它不追求简单还原 K/V 向量本身，而是通过分析 attention 机制，将量化噪声推到 attention 不敏感的方向上。具体来说，OSCAR 使用 query covariance 指导 key 的旋转，使用 score-weighted value covariance 指导 value 的旋转，并结合 Hadamard 变换和 bit-rev...
+2026-05-25 17:14:00
 
 
 
 ### [为什么算力追赶这么难？前谷歌架构师现场黑板推演底层架构，看懂芯片底层逻辑里被忽视的“空间博弈”](https://mp.weixin.qq.com/s?__biz=Mzg4NDQwNTI0OQ==&mid=2247589744&idx=1&sn=b624589ea12d3f9ec1f0655f37c49541)
 
-2026-05-25 16:09:00 | 标签: AI芯片, 芯片架构, 脉动阵列, TPU, GPU
-
-> 本文是对 Dwarkesh Patel 播客访谈的编译整理，嘉宾为 AI 芯片公司 MatX CEO、前谷歌 TPU 架构师 Reiner Pope。文章从最基础的逻辑门（与门、或门）和全加器讲起，手工推演了乘加运算的电路实现，揭示了芯片设计中一个反直觉的核心事实：在现代芯片中，真正干活的'计算单元'只占极小面积，绝大部分成本、空间和能耗都花在了'搬运数据'上。文章详细解释了多路复用器作为数据移动成本的主要来源，以及脉动阵列如何通过将权重矩阵就地存储来大幅提升计算与通信的比例。此外，还探讨了时钟周期与流水线寄存器的权衡、FPGA 与 ASIC 的架构差异、缓存与便签内存的区别、CPU 与 GP...
+2026-05-25 16:09:00
 
 
 
 ### [宣布前沿生物防御奖学金（截止日期：6-月-2-日）—-LessWrong](https://www.lesswrong.com/posts/D2BkWLA5mfhxTnHCW/announcing-the-frontier-biodefense-fellowship-deadline-2)
 
-2026-05-25 15:58:28 | 标签: 生物防御, 奖学金, 生物安全, Pivotal Research, AIxBio
-
-> 本文宣布了 Pivotal Research 的首届前沿生物防御奖学金，这是一个为期 9 周的线下项目，将于 2026 年 8 月 3 日至 10 月 2 日在伦敦举行。该奖学金完全资助，提供 6，000 至 8，000 英镑的津贴、差旅和住宿支持以及每日餐食。学员将获得来自 Blueprint、SecureBio、SynX 和 CLTR 等组织的顶尖研究人员的 1 对 1 指导，从事 AIxBio、生物强化、检测、治理和战略响应规划等领域的项目。该项目面向广泛的背景开放，包括没有生物领域经验的人，旨在产出论文或政策简报等切实成果。优秀的项目可能获得最多 2 个月的延期资助和持续支持。该奖学金...
+2026-05-25 15:58:28
 
 
 
 ### [“VLA-和世界模型都不是终局，会有物理世界独有的模型”-|-蚂蚁灵波沈宇军@AIGC2026](https://www.qbitai.com/2026/05/424584.html)
 
-2026-05-25 14:56:42 | 标签: 具身智能, VLA, 世界模型, AIGA, 机器人数据
-
-> 本文是量子位对蚂蚁灵波科技首席科学家沈宇军在 2026 中国 AIGC 产业峰会上的深度访谈整理。沈宇军从数据视角切入，指出大模型的成功得益于互联网数据红利，而机器人行业面临物理世界数据空白这一核心挑战。他提出 AI 2.0 下半场应从 AIGC（内容生成）走向 AIGA（动作生成），并系统阐述了蚂蚁灵波的技术定位——做机器人的通用大脑（类似安卓系统）。在技术路线判断上，他明确表示 VLA 和世界模型都不会是终局，二者将在数据积累到一定程度后深度融合，催生出专为物理世界设计的独有模型。他还强调了空间感知能力作为输入端的关键性，并预测了具身智能的发展节奏：1-2 年内出现标杆投产案例，2-3 年...
+2026-05-25 14:56:42
 
 
 
 ### [Copilot-创始工程师：大多数-AI-编码“就像开着法拉利去买牛奶一样”](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247662755&idx=2&sn=39723e22925eb517b6e44b47f627f719)
 
-2026-05-25 14:53:00 | 标签: AI 编码, GitHub Copilot, IBM Bob, 开发者效率, 模型路由
-
-> 本文是《The New Stack》对 Neel Sundaresan 的深度访谈。Sundaresan 是 GitHub Copilot 创始工程师，现任 IBM 软件部自动化与 AI 总经理。他回顾了自己从 2000 年开始探索提升开发者效率的历程，从最初的 API 调用推荐系统，到 LSTM、Transformer 等模型演进，最终催生了 Copilot。他分享了在 IBM 构建内部 AI 编码工具 Bob 的独特优势：拥有近两万名内部开发者作为「零号客户」，可处理 PL/I、COBOL 等企业遗留语言。他尖锐地指出当前开发者滥用顶级模型的问题——用成本高达每百万词元 40 美元的 Cl...
+2026-05-25 14:53:00
 
 
 
 ### [我们需要不受束缚的捐赠者-—-LessWrong](https://www.lesswrong.com/posts/BwydHxPMarK7ukBrN/we-need-unhobbled-donors)
 
-2026-05-25 14:06:28 | 标签: AI 安全, 慈善, 资助策略, 有效利他主义, 政策
-
-> 文章指出，虽然预计将有一大波慈善资金涌入 AI 安全领域，但这些资金会受到官僚主义和风险规避的制约，来得缓慢且不均衡。这为“不受束缚的捐赠者”——那些能够迅速行动、资助高方差项目、并播下种子，以便大型资助者日后扩大规模的个人和小型资助者——创造了一个关键的机会窗口。作者认为，由于政治窗口正在关闭、人才管道需要培养以及时间线紧迫，资金支出的折现率极高。不受束缚的捐赠者具有比较优势，例如为政治倡导提供 c4 资金、做出能彰显可信度的公开承诺，以及探索多样化的策略。文章呼吁现有资助者更加透明，个人捐赠者提前进行捐赠，并呼吁该领域建设基础设施以支持新的、大胆的慈善家。
+2026-05-25 14:06:28
 
 
 
 ### [胜率直逼人类大师！这套-Agent-揭开中国-AI「玄学真相」](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652702700&idx=1&sn=84059c912a5abdc4cbc859a0908677f3)
 
-2026-05-25 12:45:00 | 标签: Agent, 垂直领域, 工具管理, 不确定性量化, 多Agent协作
-
-> 文章以中国传统术数专业选择题为测试场景，揭示了当前主流大模型（如 Claude、GPT）在该领域的准确率仅徘徊在 23%-40% 之间，接近随机猜测线 25%。DestinyLinker 研究团队开发的 Tianfu Agent 系统，通过构建 200 多个原子工具、三大流派规则函数库、多 Sub-Agent 协作机制以及三层不确定性量化体系，将截尾准确率提升至 50%，逼近本届赛事人类 Top 20 选手的平均水平 53.5%。文章详细阐述了该系统的核心设计哲学：将规则从 Prompt 中的文本约束转化为可调用的工程函数，通过四级可见性控制管理工具选择，并在缺乏自动验证手段的领域引入置信度量...
+2026-05-25 12:45:00
 
 
 
 ### [刚刚，Ilya-又发神图「思考者」！AI-芯片海洋上在想啥？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652702700&idx=2&sn=961b1a85af782e0324032b9fca92767b)
 
-2026-05-25 12:45:00 | 标签: Ilya Sutskever, OpenAI, AGI, Codex, IPO
-
-> 文章围绕 Ilya Sutskever 在 Instagram 发布的一幅画作展开，画面将罗丹的「思考者」雕塑置于芯片 Die Shot 之上，被解读为对 AI 发展方向的隐喻。文章随后串联 OpenAI 同一周内的三件大事：内部推理模型在数学前沿取得突破，推翻了一个长期猜想；Codex 升级为可接管屏幕、锁屏运行的「驻场工程师」；以及 OpenAI 正与投行合作筹备 IPO。文章认为这三件事共同指向一个信号——AGI 不再是口号，而是正在改写科学、软件和资本市场的现实变量。全文以 Ilya 的画作为引子，串联 OpenAI 的最新动态，营造出「AGI 即将到来」的叙事氛围。
+2026-05-25 12:45:00
 
 
 
 ### [DeepSeek-V4-还能更省！新工具缓存命中率高达-99.82%，2-折稳定到手](https://www.qbitai.com/2026/05/424552.html)
 
-2026-05-25 12:40:14 | 标签: DeepSeek V4, Reasonix, 缓存优化, AI 编程, 成本优化
-
-> 文章介绍了开源项目 Reasonix，这是一个专为 DeepSeek V4 系列模型设计的终端编码工具（coding harness），核心目标是降低长会话的 API 调用成本。Reasonix 通过基于字节稳定 prefix-cache 的 append-only 运行循环设计，将上下文划分为固定前缀区、历史消息区和草稿区，确保旧上下文固定不动、新消息只追加不重写，从而将缓存命中率提升至 99.82%。文章详细拆解了其架构的三个核心部分：自动前缀缓存机制、工具调用修复（Tool-Call Repair）流程、以及智能模型切换策略（默认使用 v4 flash，困难任务自动切换 v4 pro）。...
+2026-05-25 12:40:14
 
 
 
 ### [图灵奖得主领衔，中国大模型第一梯队集结！2026-智源大会，看懂-AI-下一程](https://www.qbitai.com/2026/05/424551.html)
 
-2026-05-25 12:38:24 | 标签: 智源大会, AI 大会, 智能体, 世界模型, 具身智能
-
-> 本文是 2026 年智源大会的官方预告与宣传文章。大会将于 2026 年 6 月 12-13 日在北京中关村国际创新中心举办，设有 25 场论坛和 200+ 场演讲。文章强调，智能体与世界模型是当前 AI 发展的两大核心趋势，智能体赋予大模型自主规划与行动能力，世界模型则帮助 AI 理解物理规律。大会邀请了多位图灵奖得主（强化学习、密码学、系统科学领域）、40 余位 AI 企业 CEO 和创始人，以及来自谷歌、Meta、英伟达、斯坦福、MIT 等全球顶尖机构代表。中国大模型第一梯队（阿里、腾讯、智谱、阶跃星辰、MiniMax 等）将首次集中同台。大会新增了 AI Native 教育、Token...
+2026-05-25 12:38:24
 
 
 
 ### [DeepSeek-押注的-Harness，被这篇最新综述彻底讲透了](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247507583&idx=1&sn=5f0b8991a8d26077aaff76953bab08eb)
 
-2026-05-25 11:58:00 | 标签: Agent Harness Engineering, ETCLOVG, LLM Agent, 系统综述, 绑定约束论
-
-> 文章围绕一篇由 CMU、Yale、JHU 等机构联合发表的综述展开，核心观点是「绑定约束论」：对于长程 Agent 任务，性能方差主要由执行 Harness 驱动，而非模型本身。文章通过多个实证案例（如仅改动 Harness 使编码基准提升 10 倍）支持这一论点。作者提出了 ETCLOVG 七层架构，将 Agent Harness 工程系统化为执行环境与沙箱、工具接口与协议、上下文与记忆管理、生命周期与编排、可观测性与运维、验证与评估、治理与安全七个层次。文章详细介绍了每一层的核心问题、代表性技术和工具，并指出 Harness Engineering 是 Agent 工业落地的下一个主战场。
+2026-05-25 11:58:00
 
 
 
@@ -40474,113 +40424,85 @@
 
 ### [追求高效-Java-开发：从-1BRC-到原生构建-Hardwood-AI](https://www.infoq.com/podcasts/chasing-efficient-java-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-25 19:00:00 | 标签: Java, 性能, Parquet, 持久化执行, AI 编码
-
-> 在本期播客访谈中，Java Champion 及 Confluent 技术专家 Gunnar Morling 分享了他对现代 Java 开发的见解。他回顾了“十亿行挑战”出人意料的影响力，该挑战展示了 Java 的性能潜力。Morling 主张升级到现代 Java 版本（17+），以利用紧凑对象头、ZGC 等特性获得开箱即用的性能提升。他解释了持久化执行引擎的概念，该引擎允许将复杂的工作流编写为普通的、可恢复的代码，并介绍了他的最新项目 Hardwood。Hardwood 是一个快速、零依赖的 Apache Parquet Java 解析器，旨在最小化供应链风险，并通过使用虚拟线程实现页面级并...
+2026-05-25 19:00:00
 
 
 
 ### [RenderFlow：百度垂类搜索展现服务的-Agentic-代码交付实践](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606907&idx=1&sn=16ee44f4deaee5fac7cc7d3a7a78bfe2)
 
-2026-05-25 18:00:00 | 标签: LLM, 代码生成, Agentic 交付, 可执行引擎, 多轮修复
-
-> 本文详细介绍了百度搜索在线架构团队开发的 RenderFlow 系统，旨在解决搜索结果展现场景中传统人工交付流程的痛点。传统模式面临交付周期长、重复适配多、调整成本高等问题。RenderFlow 围绕「生成、执行、反馈、修复、发布」构建了 Agentic 交付闭环。其核心设计包括：可执行引擎（基于 Yaegi 解释器，实现逻辑与服务的解耦，支持动态加载和分钟级生效）、多轮修复机制（通过 Coder/Reviewer 双角色协作和单调累积的修复约束，将需人工介入的比例降至 5% 以下）、以及贯穿发布前、中、后的质量保障体系。系统上线后，单场景交付周期从天级压缩到分钟级，已支撑近千个场景的线上运行...
+2026-05-25 18:00:00
 
 
 
 ### [AI-Infra-入门干货总结：大模型是如何高效推理的](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801625&idx=1&sn=7c7a7d2148c6907f65c9f747717b3197)
 
-2026-05-25 17:36:00 | 标签: 大模型推理, vLLM, Continuous Batching, Paged Attention, FlashAttention
-
-> 本文是作者花费两个月业余时间深入阅读 vLLM 源码后的总结。文章聚焦于 Decoder-Only 架构的 LLM，以 Llama 3 为例，详细拆解了从 Tokenize、Embedding Lookup、Transformer Block（Attention 与 FFN）到 LM Head 和 Sampling 的完整推理流程。核心亮点在于，作者在每个计算环节都标注了 Tensor 的维度变化，并深入解释了 Continuous Batching 和 Paged Attention 这两个关键技术如何提升推理效率。文章还探讨了 Prefill 和 Decode 阶段在计算与访存上的本质差异...
+2026-05-25 17:36:00
 
 
 
 ### [Gemma-4-多-Token-预测实现高达约-3-倍-Token-生成加速](https://www.infoq.com/news/2026/05/gemma4-multi-token-prediction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-25 17:00:00 | 标签: Gemma 4, 多 Token 预测, 推测解码, 推理优化, LLM
-
-> 本文报道了 Google 将多 Token 预测（MTP）草稿模型集成到 Gemma 4 模型系列中。MTP 草稿模型是一种轻量级辅助模型，利用推测解码并行生成多个 Token，然后由主 Gemma 4 模型在一次前向传播中验证。这种方法解决了 LLM 推理中的内存带宽瓶颈问题，即处理器在生成每个 Token 时，大部分时间都用于将参数从 VRAM 传输到计算单元。通过将重型目标模型与轻量级草稿模型配对，可以利用空闲计算资源一次性预测多个未来 Token，从而提高响应速度，并在从消费级 GPU 到移动设备的各种设备上实现更快的推理，且不影响响应质量。文章还重点介绍了 Google 的架构增强和...
+2026-05-25 17:00:00
 
 
 
 ### [微软将弃用-Claude：太贵了还是薅明白了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285633&idx=1&sn=e72656c650d71e707fc9801043555033)
 
-2026-05-25 16:37:00 | 标签: 微软, Claude Code, AI 编程, GitHub Copilot, Anthropic
-
-> 本文深入分析了微软叫停内部工程师使用 Claude Code 的背后原因。表面上是成本问题——Claude Code 按 Token 计费，每月为每位工程师花费 500-2000 美元，连微软也感到「肉疼」。但更深层的原因是一场精心安排的「实验」：微软主动让竞品进入工程团队，用半年时间收集反馈、修复自家 Copilot CLI 的短板，然后关掉对手工具。文章进一步揭示了微软面临的三大困境：缺乏自研前沿通用大模型，高度依赖 OpenAI；自身 Copilot 产品力被 Claude Code 实质性碾压，内部工程师满意度高达 91% 却被迫切换；以及企业市场被 Anthropic 反超，生态控制...
+2026-05-25 16:37:00
 
 
 
 ### [Copilot-创始工程师：大多数-AI-编码“就像开着法拉利去买牛奶一样”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285633&idx=2&sn=a79ef03e7c871dfdff0e8093d9fe9504)
 
-2026-05-25 16:37:00 | 标签: AI 编码, GitHub Copilot, IBM Bob, 智能路由, 企业级 AI
-
-> 本文是对 GitHub Copilot 创始工程师、现任 IBM 软件部自动化与 AI 总经理 Neel Sundaresan 的深度访谈编译。Sundaresan 从 2000 年便开始研究如何消除开发者效率障碍，经历了从 API 调用推荐系统到 LSTM、Transformer 等模型演进，最终参与创建了 Copilot。他目前正领导 IBM Bob 智能编码工具的研发，该工具已在 IBM 内部 8 万开发者中使用。文章核心观点包括：AI 编码工具应避免“开着法拉利去买牛奶”式的资源浪费，即不应为简单任务调用最昂贵的前沿模型；Bob 通过智能路由自动选择合适模型，并基于内部大规模 A/B ...
+2026-05-25 16:37:00
 
 
 
 ### [Anthropic-推出-MCP-隧道，供私有代理访问内部系统](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285633&idx=4&sn=8d615360a54bf818f7a3b4ff4f426110)
 
-2026-05-25 16:37:00 | 标签: Anthropic, Claude, MCP, 自托管沙箱, 企业 AI
-
-> 本文报道了 Anthropic 为 Claude Managed Agents 平台新增的两项企业级功能：自托管沙箱和 MCP 隧道。自托管沙箱已开放公测，允许企业在客户控制的基础设施或通过 Cloudflare、Daytona、Modal、Vercel 等托管服务商运行工具，Anthropic 仍负责协调和上下文处理，但工具执行在客户环境中进行，从而实现对网络策略、审计日志、数据驻留的完全控制。MCP 隧道处于研究预览阶段，允许托管代理通过加密出站连接访问内部 MCP 服务器，无需开放入站防火墙，即可安全连接内部数据库、API、工单系统和知识库。文章指出，这反映了 AI 行业将编排与执行分离...
+2026-05-25 16:37:00
 
 
 
 ### [NodeJS-提议内置虚拟文件系统，引发关于-AI-生成贡献的讨论](https://www.infoq.com/news/2026/05/node-js-file-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-25 14:24:00 | 标签: Node.js, 虚拟文件系统, AI 辅助开发, 开源, 运行时
-
-> 本文报道了 Node.js TSC 成员 Matteo Collina 提出的一项重大提案，即通过新的 `node:vfs` 模块，在 Node.js 核心中添加一个一流的虚拟文件系统（VFS）。该提案以 PR #61478 的形式提交，涉及 100 个文件、约 19，000 行代码，旨在解决常见的工作流挑战，例如在内存中运行 AI 生成的代码、无需磁盘 I/O 执行测试、打包单文件可执行应用（SEA）以及在多租户平台中隔离文件访问。该功能获得了开发者的支持，他们认为其具有明确的性能和架构优势，Vercel 和 LangChain 已开始采用该 API。然而，该 PR 也引发了关于 AI 生成...
+2026-05-25 14:24:00
 
 
 
 ### [“构建你的第一个-AI-Agent-团队”指南！5-步快速打造个人-Agent，全自动内容-Agent-团队实例：30-分钟内自动出稿，Agent-团队高效运转的技巧](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655939940&idx=1&sn=3499634a23f73f2c8fb6f0f672344b0f)
 
-2026-05-25 14:13:00 | 标签: AI Agent, Agent 团队, Claude, 工作流自动化, 内容生产
-
-> 文章基于一篇阅读量达 150 万的 X 平台热门文章，系统性地介绍了构建 AI Agent 团队的方法。内容从 AI Agent 的四个核心构成要素（角色、指令、工具、记忆）讲起，然后通过 5 个步骤指导零基础用户快速搭建个人 Agent。进阶部分详细展示了如何构建一个由研究、大纲、写作、编辑四个 Agent 组成的内容生产团队，并实现 30 分钟内自动出稿。文章还分享了定时任务、上下文文件、反馈循环和串联工作流等让 Agent 团队高效运转的技巧，并提供了商业智能、客户研究、社交媒体等三套可直接复用的 Agent 团队模板。
+2026-05-25 14:13:00
 
 
 
 ### [AI-编码技巧-021---合并你不理解的代码会制造理解债务](https://hackernoon.com/ai-coding-tip-021-merging-code-you-dont-understand-creates-comprehension-debt?source=rss)
 
-2026-05-25 12:20:12 | 标签: 理解债务, AI 辅助编码, 软件工程, 代码审查, 技术债务
-
-> 本文认为，AI 辅助编码的主要风险并非技术债务，而是理解债务——即代码总量与人类真正理解程度之间日益扩大的鸿沟。作者警告说，合并你无法解释的代码会带来虚假的信心：测试通过，代码看起来整洁，但团队会失去调试、接纳新成员或发现错误假设的能力。文章借鉴了 Anthropic 的研究（Shen & Tamkin， 2026），表明使用 AI 的工程师在理解力测试中得分低 17%，其中调试能力的下降最为显著。作者提供了一个实用的工作流程来缓解这一问题：要求 AI 解释非平凡的代码块，用自己的话重写解释，识别关键决策，并在 PR 模板中添加一个理解检查步骤。核心见解是，AI 生成代码的速度远快于人类评估它...
+2026-05-25 12:20:12
 
 
 
 ### [连-Karpathy-都开始恐慌：AI-正在重新定义「程序员」｜-硅基时间](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831315&idx=1&sn=b322d676e0413188a1d523b681e3f12c)
 
-2026-05-25 11:55:00 | 标签: AI 编程, Vibe Coding, Vibe Engineering, 认知卸载, 程序员焦虑
-
-> 本文是 CSDN 创始人蒋涛《硅基时间》系列的一篇深度长文。作者通过串联四份关键材料——Karpathy 的「落后」焦虑、中国大厂程序员的「AI 分裂症」、龙虾之父月烧 940 万 token 的军备竞赛、以及 OpenAI 内部 Vibe Engineering 的实践——系统剖析了 AI 对程序员行业的深层冲击。文章核心论点是：AI 时代的分水岭不在于用不用 AI，而在于怎么用。Vibe Coding（让 AI 随便写，祈祷测试能过）导致认知卸载和技能退化，而 Vibe Engineering（对每一行代码负责，但重度调度 Agent 完成规划、架构、调试）则让程序员被放大为 Direct...
+2026-05-25 11:55:00
 
 
 
 ### [不给现金，只给超-3-亿美元-Token！Sam-Altman-开始“拿算力换股份”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831315&idx=2&sn=7dfcaa004f26cfdafeefa266f2331e3d)
 
-2026-05-25 11:55:00 | 标签: OpenAI, Sam Altman, YC, Token, 算力换股权
-
-> 本文报道了 OpenAI CEO Sam Altman 在 Y Combinator 内部活动上宣布的一项计划：向本届 YC 所有创业公司统一提供价值 200 万美元的 Token 投资，以换取公司股权。这笔投资并非现金，而是 OpenAI 的 API 调用额度，可用于 GPT 模型推理、Agent 开发等。文章分析了此举的战略意图：OpenAI 正用一种未来边际成本越来越低的资源（Token）换取创业公司的长期股权，同时将下一代 AI 创业生态绑定在自己的平台上。文章也引用了投资人 Jason Calacanis 的警告，指出接受 Token 可能面临 OpenAI 复制产品功能的风险。文章...
+2026-05-25 11:55:00
 
 
 
 ### [辞掉大厂工作，他砸-4.8-万美元在家自建服务器：一年后，日均省下-105-美元！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831315&idx=3&sn=09cb76a0e3de139cf73d58b1fb88fd93)
 
-2026-05-25 11:55:00 | 标签: GPU 服务器, 自建服务器, 云 GPU 成本对比, AI 基础设施, RTX 6000 Ada
-
-> 本文编译自独立研究员 Rosmine 的博客，记录了他辞去 FAANG 工作后，自建一台配备 6 张 RTX 6000 Ada GPU 的服务器「grumbl」的全过程。文章详细阐述了 GPU 选型（对比 A100、H100 与 RTX 6000 Ada）、公寓电力限制下的特殊供电方案、以及长达一年的成本追踪分析。作者通过自建脚本每分钟记录 GPU 使用率与功耗，并与云服务按需计费价格进行逐日对比。截至 2026 年 3 月，自建服务器累计节省约 1.7 万美元，日均节省 90-105 美元。文章还分享了自建过程中的教训，包括 PCIe riser 故障、保险问题、以及从租用 GPU 到拥有 ...
+2026-05-25 11:55:00
 
 
 
 ### [我用-7-天把-AI-Agent-的-Token-账单砍掉-87%（附代码）](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653565196&idx=1&sn=1f0cf3ff91d61ab5d2234df2bbb08bf4)
 
-2026-05-25 11:18:00 | 标签: AI Agent, Token 成本优化, 提示缓存, 模型路由, 可观测性
-
-> 文章指出，2026 年 AI Agent 的 Token 费用失控主要源于工程问题而非模型选择。作者提供了一套精确的 7 天实战计划：Day 1 通过 Helicone、Langfuse 等工具建立可观测性，审计 Token 花费；Day 2 在所有有效位置开启提示缓存（Anthropic 可达 90% 折扣）；Day 3 通过工具结果截断、Scratchpad 总结等技术压缩上下文；Day 4 按任务复杂度将模型路由至 Haiku、Sonnet 或 Opus；Day 5 通过 MAX_STEPS 上限、结构化错误结果等方式阻止重试循环；Day 6 按路由分组验证缓存命中率；Day 7 设置告...
+2026-05-25 11:18:00
 
 
 
