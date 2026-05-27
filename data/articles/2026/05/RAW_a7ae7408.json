@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a7ae7408",
+  "title": "Paul Graham 的一句话",
+  "url": "https://simonwillison.net/2026/May/26/paul-graham/#atom-everything",
+  "date": "2026-05-26 23:02:30",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">26th May 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://twitter.com/paulg/status/2058844147092488401\">\n     <p>A lot of the emails I get from founders are now written in a hard-hitting journalistic style. I know they're written by AI, because no founder ever wrote this way before. And once you realize something is written by AI, it's hard not to ignore it.</p>\n     <p>I have never knowingly finished reading an email signed by a human but written by AI. It feels like being lied to, and who would stand for that?</p>\n     <p>[<a href=\"https://twitter.com/paulg/status/2058863028523659390\">...</a>] It makes me think less of the author. It means they can't write well unaided (or feel they can't), and that they're trying to trick me.</p>\n     <p>It's not impressive to use AI to write stuff for you; any teenager can do that.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://twitter.com/paulg/status/2058844147092488401\">Paul Graham</a></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Paul Graham 认为，创始人使用 AI 撰写邮件适得其反，因为这让人感觉受到欺骗，并降低了他对发件人的评价。",
+  "oneSentenceSummary": "Paul Graham 认为，创始人使用 AI 撰写邮件适得其反，因为这让人感觉受到欺骗，并降低了他对发件人的评价。",
+  "summary": "这篇文章是 Simon Willison 博客上分享的 Paul Graham 的一句简短引述。Graham 对创始人发送的明显由 AI 撰写的邮件表达了强烈的负面反应。他表示自己从未完整读完过这样的邮件，因为这感觉像是在被欺骗。他进一步解释道，使用 AI 写作会让他对作者的评价降低，暗示作者无法独立写好文章，并试图欺骗他。核心信息是，在个人沟通中使用 AI，尤其是在融资等专业场合，并不会给人留下好印象，反而可能有害。",
+  "mainPoints": [
+    {
+      "point": "由 AI 撰写的创始人邮件很容易被识别，并且令人反感。",
+      "explanation": "Graham 注意到创始人邮件中写作风格的明显变化，并将其归因于 AI。这种识别会让他立即放弃阅读该邮件。"
+    },
+    {
+      "point": "在个人沟通中使用 AI 会让人感觉具有欺骗性，并损害信任。",
+      "explanation": "Graham 将一封由人类署名但由 AI 撰写的邮件等同于谎言。这种感知到的不诚实是建立关系的主要障碍。"
+    },
+    {
+      "point": "依赖 AI 进行写作会降低发件人的感知能力。",
+      "explanation": "Graham 表示，使用 AI 会降低他对作者的评价，因为这表明作者缺乏写作能力并试图欺骗，这并不令人印象深刻。"
+    }
+  ],
+  "keyQuotes": [
+    "我从未有意识地读完过一封由人类署名但由 AI 撰写的邮件。这感觉就像在被欺骗，谁会容忍这种事？",
+    "这会让我对作者的评价降低。这意味着他们无法独立写好文章（或者他们自认为不能），并且他们试图欺骗我。",
+    "使用 AI 为你写东西并不令人印象深刻；任何青少年都能做到。"
+  ],
+  "tags": [
+    "Paul Graham",
+    "AI 写作",
+    "创始人建议",
+    "沟通",
+    "职业伦理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 123,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PG_CAREER",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779807750000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-26 23:02:30"
+}

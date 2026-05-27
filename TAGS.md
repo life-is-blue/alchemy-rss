@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-27 06:29:38 | [返回首页](/README.md)
+**更新时间**: 2026-05-27 08:29:56 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12330)
+- [AI & 大模型](#ai-llm) (12376)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (827)
-- [DevOps](#devops) (572)
+- [前端与全栈](#frontend-fullstack) (828)
+- [DevOps](#devops) (575)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5848)
+- [其他](#other) (5855)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [我们如何在多个产品中约束-Claude](https://www.anthropic.com/engineering/how-we-contain-claude) - AI 精选
+- [从透明开发到系统工程：AgentScope-2.0-发布](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501135&idx=1&sn=0b96d8e21b27a20f60c423657f2bca84) - AI 精选
 - [致超级个体-|-To-The-Crazy-Ones](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108669&idx=1&sn=c9bb3541cba65b524992eda339f32e83) - AI 精选
 - [专业化胜过规模：大多数-AI-采购决策忽视的战略变量](https://huggingface.co/blog/Dharma-AI/specialization-beats-scale) - AI 精选
 - [Hermes-vs.-OpenClaw，-网络安全警报频响，-更具互动性的对话，-智能体能胜任人类工作吗？](https://www.deeplearning.ai/the-batch/issue-354) - AI 精选
@@ -40,10 +42,8 @@
 - [DeepSeek-V4-报告太详尽了！484-天换代之路全公开](https://www.qbitai.com/2026/04/406809.html) - AI 精选
 - [DeepSeek-V4-预览版：迈入百万上下文普惠时代](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c) - AI 精选
 - [AIE-Europe-回顾-+-智能体实验室论点：无监督学习-x-潜在空间跨界特别篇（2026）](https://www.latent.space/p/unsupervised-learning-2026) - AI 精选
-- [GPT-5.5-发布](https://openai.com/index/introducing-gpt-5-5) - AI 精选
-- [Shopify-的-AI-相变：2026-年使用量激增，无限的-Opus-4.6-Token-预算，Tangle，Tangent，SimGym-——-对话-Shopify-CTO-Mikhail-Parakhin](https://www.latent.space/p/shopify) - AI 精选
 
-- [查看全部 12330 篇...](/details/tags/ai-llm.md)
+- [查看全部 12376 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 827 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 828 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 572 篇...](/details/tags/devops.md)
+- [查看全部 575 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Z-Image-零基础上手指南：本地部署-+-提示词模板实战](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247498939&idx=1&sn=1e149e96e383a0f381f86cb9e6ce74de) - AI 精选
 - [用开源模型强化你的-OCR-工作流](https://mp.weixin.qq.com/s?__biz=Mzk0MDQyNTY4Mw==&mid=2247495937&idx=1&sn=07fa59cf8df62d23f48404181351c2b3) - AI 精选
 
-- [查看全部 5848 篇...](/details/tags/other.md)
+- [查看全部 5855 篇...](/details/tags/other.md)
 
 

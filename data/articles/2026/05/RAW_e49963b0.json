@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e49963b0",
+  "title": "Microsoft Copilot Cowork 文件泄露漏洞",
+  "url": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything",
+  "date": "2026-05-26 23:36:48",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">26th May 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files\">Microsoft Copilot Cowork Exfiltrates Files</a></strong> (<a href=\"https://news.ycombinator.com/item?id=48272354\" title=\"Hacker News\">via</a>) The biggest challenge in designing agentic systems continues to be preventing them from enabling attackers to exfiltrate data.</p>\n    <p>In this case Microsoft Copilot Cowork (yes, that's <a href=\"https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/\">a real product name</a>) was allowing agents to send emails to the user's own inbox without approval... but those messages were then rendered in a way that could leak data to an attacker via rendered images:</p>\n    <blockquote>\n     <p>Because these messages can contain external images that trigger network requests to external websites, data can be exfiltrated when a user opens a compromised message sent by the agent.</p>\n    </blockquote>\n    <p>Since OneDrive can create pre-authenticated download links, a successful prompt injection could cause those links to be leaked, allowing files to be downloaded by the attacker.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Microsoft Copilot Cowork 存在一个漏洞，智能体可以向用户收件箱发送包含外部图片的邮件，通过提示注入和预认证的 OneDrive 链接实现数据泄露。",
+  "oneSentenceSummary": "Microsoft Copilot Cowork 存在一个漏洞，智能体可以向用户收件箱发送包含外部图片的邮件，通过提示注入和预认证的 OneDrive 链接实现数据泄露。",
+  "summary": "本文重点介绍了 Microsoft Copilot Cowork（一个智能体系统）中的严重安全漏洞。核心问题在于，该系统允许智能体在无需批准的情况下向用户自己的收件箱发送邮件。这些邮件可以包含触发网络请求的外部图片，攻击者可利用此漏洞窃取数据。此外，由于 OneDrive 可以生成预认证的下载链接，成功的提示注入攻击可能导致这些链接泄露，使攻击者能够直接下载文件。文章强调了在智能体系统设计中防止数据泄露这一持续存在的挑战。",
+  "mainPoints": [
+    {
+      "point": "Microsoft Copilot Cowork 存在一个可通过邮件泄露数据的漏洞。",
+      "explanation": "系统允许智能体在未经批准的情况下向用户收件箱发送邮件，这些邮件可包含触发网络请求的外部图片，从而将数据泄露给攻击者。"
+    },
+    {
+      "point": "提示注入可用于泄露预认证的 OneDrive 下载链接。",
+      "explanation": "成功的提示注入攻击可导致智能体泄露预认证的 OneDrive 链接，使攻击者能够直接从用户的 OneDrive 下载文件。"
+    },
+    {
+      "point": "该漏洞凸显了设计安全智能体系统所面临的根本性挑战。",
+      "explanation": "在智能体 AI 系统中，防止数据泄露仍然是一个关键且棘手的问题，因为这些系统被设计为代表用户行动，且可能被操纵。"
+    }
+  ],
+  "keyQuotes": [
+    "设计智能体系统面临的最大挑战仍然是防止它们被攻击者利用来窃取数据。",
+    "由于这些消息可以包含触发外部网站网络请求的外部图片，当用户打开智能体发送的受损消息时，数据就可能被泄露。",
+    "由于 OneDrive 可以创建预认证的下载链接，成功的提示注入可能导致这些链接泄露，从而使攻击者能够下载文件。"
+  ],
+  "tags": [
+    "AI 安全",
+    "提示注入",
+    "数据泄露",
+    "Microsoft Copilot",
+    "智能体系统"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 129,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779809808000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-26 23:36:48"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_43b1c45f",
+  "title": "Platform Engineering Labs 扩展 formae，支持 Kubernetes 和原生 Helm 集成",
+  "url": "https://www.infoq.com/news/2026/05/formae-k8s-helm-integration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-26 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://platform.engineering/\">Platform Engineering Labs</a> has <a href=\"https://blog.platform.engineering/formae-now-comes-with-k8s-helm-and-tfvars-support-and-a-public-hub-for-builders-837b5cfaec1c\">announced</a> a major update to its open-source Infrastructure-as-Code platform, <a href=\"https://github.com/platform-engineering-labs/formae\">formae</a>, introducing full <a href=\"https://kubernetes.io/\">Kubernetes</a> support, native <a href=\"https://helm.sh/\">Helm </a>integration, direct<a href=\"https://medium.com/azure-terraformer/what-is-a-tfvars-file-in-terraform-and-how-do-you-use-it-1f5640a5e0a3\"> .tfvars</a> compatibility, and a new public plugin hub aimed at simplifying cloud-native infrastructure management. The release significantly expands formae's capabilities as a unified \"system of record\" for infrastructure operations, enabling platform teams to manage Kubernetes environments and multi-cloud ecosystems with automated change codification and reduced operational overhead.</p>\n   <p dir=\"ltr\">The update positions formae more directly against established Infrastructure-as-Code platforms by adding support for standard Kubernetes resources as well as managed cloud variants such as<a href=\"https://aws.amazon.com/eks/\"> Amazon EKS</a> and <a href=\"https://azure.microsoft.com/en-us/products/kubernetes-service\">Microsoft AKS</a>. Teams can now integrate existing Helm charts directly into formae workflows without re-architecting deployments, while the platform continuously discovers, versions, and codifies infrastructure changes, even when those changes are made by external tools. According to Platform Engineering Labs, this removes much of the operational friction traditionally associated with managing large Kubernetes estates across multiple tooling ecosystems.</p>\n   <p dir=\"ltr\">Kubernetes has become foundational to modern platform engineering, but maintaining consistent visibility and governance across rapidly changing clusters remains a persistent challenge. formae's new Kubernetes support extends the platform's core model, automatically codifying infrastructure state without relying on fragile state files, into the cloud-native ecosystem. Unlike traditional Infrastructure-as-Code tools that tightly couple resource definitions and execution state, formae continuously derives its source of truth directly from live infrastructure.</p>\n   <p dir=\"ltr\">This enables organizations to continue using existing Kubernetes tooling while formae independently tracks and versions every infrastructure change. The approach is designed to reduce operational drift and eliminate many of the migration and synchronization challenges common in multi-tool Kubernetes environments. Native Helm integration further simplifies adoption by allowing teams to reuse existing charts and deployment patterns instead of rebuilding infrastructure definitions from scratch.</p>\n   <p dir=\"ltr\">Alongside Kubernetes support, Platform Engineering Labs launched the <a href=\"https://docs.formae.io/en/latest/\">formae Public Hub</a>, a centralized environment for sharing, publishing, and discovering community plugins. The hub builds on the company's <a href=\"https://docs.formae.io/en/latest/plugin-sdk/\"> Plugin SDK</a> introduced earlier in 2026 and provides integrated build and test capabilities intended to improve plugin reliability and compatibility across environments.</p>\n   <p dir=\"ltr\">The company says the Public Hub also introduces a simpler plugin management model than many incumbent IaC platforms. Traditional tools often bind plugins tightly to individual projects and environments, creating operational complexity at scale. formae instead separates plugin lifecycle management from individual deployments, reducing the need for additional tooling and simplifying large-scale infrastructure management.</p>\n   <p dir=\"ltr\">The release also expands formae's interoperability with existing Infrastructure-as-Code ecosystems, particularly Terraform. While formae already supported infrastructure discovery without requiring resource migration, the latest update now enables direct consumption of Terraform .tfvars files. This allows organizations to reuse existing configuration parameters and variable definitions without manually converting or recreating them.</p>\n   <p dir=\"ltr\">By supporting both live infrastructure discovery and existing Terraform configuration artifacts, Platform Engineering Labs is attempting to reduce one of the largest barriers to adopting new infrastructure tooling: the operational cost and risk of migration. The company also indicated that formae is designed to integrate with additional configuration databases and external parameter sources in the future.</p>\n   <p dir=\"ltr\">The announcement comes as the Infrastructure-as-Code and platform engineering markets undergo significant change driven by Kubernetes adoption, multi-cloud architectures, and AI-assisted operations. Established tools such as <a href=\"https://developer.hashicorp.com/terraform\">Terraform</a>,<a href=\"https://www.pulumi.com/\"> Pulumi</a>, and GitOps-focused systems like <a href=\"https://argo-cd.readthedocs.io/en/stable/\">Argo CD</a> have increasingly expanded into Kubernetes-native workflows, but many still rely heavily on state management, project-level plugin dependencies, or manual reconciliation processes.</p>\n   <p dir=\"ltr\">Platform Engineering Labs is differentiating formae by positioning it less as a traditional <a href=\"https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac\">declarative provisioning tool </a>and more as a continuously updated infrastructure system-of-record capable of automatically codifying operational changes regardless of their origin. This approach aligns with a broader industry movement toward reducing manual infrastructure reconciliation and enabling more autonomous platform operations.</p>\n   <p dir=\"ltr\">The latest release also reflects growing demand for infrastructure systems that are easier to extend, automate, and integrate with AI-assisted workflows. Earlier<a href=\"https://www.infoq.com/news/2025/10/iac-formae/\"> formae</a> releases introduced schema-safe plugin development and AI-assisted infrastructure customization, and the addition of Kubernetes support and the Public Hub further expands the platform's extensibility.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Platform Engineering Labs Expands formae with Kubernetes Support, Native Helm Integration\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/formae-k8s-helm-integration/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779796800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Platform Engineering Labs 更新了其开源 IaC 平台 formae，新增原生 Kubernetes 和 Helm 支持、直接 .tfvars 兼容性以及公共插件中心，以简化云原生基础设施管理。",
+  "oneSentenceSummary": "Platform Engineering Labs 更新了其开源 IaC 平台 formae，新增原生 Kubernetes 和 Helm 支持、直接 .tfvars 兼容性以及公共插件中心，以简化云原生基础设施管理。",
+  "summary": "Platform Engineering Labs 宣布对开源基础设施即代码平台 formae 进行重大更新，引入完整的 Kubernetes 支持、原生 Helm 集成、直接 .tfvars 兼容性以及新的公共插件中心。此次更新将 formae 定位为基础设施运营的统一“记录系统”，使平台团队能够通过自动化变更编码和降低运营开销来管理 Kubernetes 环境与多云生态系统。与依赖脆弱状态文件的传统 IaC 工具不同，formae 持续从实时基础设施中推导其真相源，自动编码任何工具所做的变更。新的公共中心为共享和发现社区插件提供了集中环境，而 .tfvars 支持则允许组织重用现有 Terraform 配置，无需手动转换。此次发布反映了减少手动基础设施协调、实现更自主平台运营的行业趋势。",
+  "mainPoints": [
+    {
+      "point": "formae 现在支持原生 Kubernetes 和 Helm 集成，使团队无需重新架构部署即可管理 K8s 环境。",
+      "explanation": "该平台能自动发现、版本化并编码 Kubernetes 集群（包括 EKS 和 AKS 等托管变体）中的基础设施变更，从而减少多工具生态系统中的运营摩擦。"
+    },
+    {
+      "point": "与依赖状态文件的传统 IaC 工具不同，formae 直接从实时基础设施中推导其真相源。",
+      "explanation": "这种方法消除了状态文件的脆弱性和漂移问题，允许组织使用现有工具，同时 formae 独立跟踪每次变更，减少迁移和同步挑战。"
+    },
+    {
+      "point": "新的公共中心和插件 SDK 简化了插件生命周期管理和社区协作。",
+      "explanation": "该中心提供集成的构建和测试能力，将插件管理与单个部署分离，以降低大规模运营的复杂性。"
+    },
+    {
+      "point": "直接 .tfvars 兼容性允许重用现有 Terraform 配置，无需手动转换。",
+      "explanation": "此功能降低了组织采用 formae 的迁移门槛，使其能够利用现有的变量定义和配置参数。"
+    }
+  ],
+  "keyQuotes": [
+    "formae 持续从实时基础设施中直接推导其真相源。",
+    "该方法旨在减少运营漂移，并消除多工具 Kubernetes 环境中常见的许多迁移和同步挑战。",
+    "Platform Engineering Labs 正在将 formae 差异化定位，使其更像一个持续更新的基础设施记录系统，而非传统的声明式配置工具。"
+  ],
+  "tags": [
+    "formae",
+    "Kubernetes",
+    "Helm",
+    "基础设施即代码",
+    "平台工程"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 650,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779796800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-26 20:00:00"
+}

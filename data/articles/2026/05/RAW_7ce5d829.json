@@ -1,0 +1,57 @@
+{
+  "id": "RAW_7ce5d829",
+  "title": "InfoQ 在线认证计划：新增 AI 工程与组织架构专题",
+  "url": "https://www.infoq.com/news/2026/05/online-cohort-certification-prog/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-26 18:00:00",
+  "author": "Artenisa Chatziou",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>As technical practitioners move into senior, staff, or principal roles, the number of people inside their organization who can challenge their reasoning often gets smaller. The decisions they are asked to make also become harder to reverse: architectural boundaries, platform strategy, AI infrastructure, team design, and the trade-offs behind long-term technical direction.</p>\n   <p><a href=\"https://certification.qconferences.com/?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">InfoQ’s Online Certification Programs</a> are expanding around that problem. The cohorts are designed to give senior engineers, architects, technical leads, and engineering managers a confidential peer group where they can apply frameworks from QCon talks to real decisions from their own work, alongside practitioners from other companies and contexts.</p>\n   <p>The latest addition is the <a href=\"https://certification.qconferences.com/ai-engineering?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_ai-engineering-certification?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">InfoQ Certified AI Engineering Program</a>, a production AI-focused cohort for senior practitioners working on RAG, agents, AI platforms, evals, and reliability.</p>\n   <p>InfoQ has also launched the <a href=\"https://certification.qconferences.com/organizational-architect?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">InfoQ Certified Organizational Architect Program</a>, covering the organizational decisions that shape how engineering work gets done, team structure, value stream design, and platform strategy.&nbsp;</p>\n   <p>These cohorts join the existing InfoQ online certification portfolio, which already includes the <a href=\"https://certification.qconferences.com/architecture?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_ai-engineering-certification?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">Certified Architect Program</a>.</p>\n   <h2>A Shared Cohort Format</h2>\n   <p>The format is designed for practitioners who already have deep technical experience. The emphasis is not on introductory instruction, but on making better decisions in areas where the trade-offs are difficult to reverse.</p>\n   <p>Across all programs, each week follows the same practical, five-week structure:</p>\n   <ul>\n    <li><strong>Independent preparation</strong>: Participants watch a curated QCon talk on their own time before the session.</li>\n    <li><strong>Live workshop</strong>: Participants join a weekly, four-hour live workshop with the facilitator and a senior peer group.</li>\n    <li><strong>Real-world application</strong>: The group applies the framework to an active decision from the participant’s own work, discussing trade-offs in a confidential peer setting.</li>\n    <li><strong>Apply at work</strong>: Participants leave with an approach, framing, or trade-off analysis they can use with their team that week.</li>\n   </ul>\n   <p>The cohorts give participants a way to compare approaches with senior peers from different industries, validate decisions they are already making, and improve how they articulate trade-offs to stakeholders.</p>\n   <h2>Upcoming online cohorts and certifications</h2>\n   <h3><a href=\"https://certification.qconferences.com/architecture?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_ai-engineering-certification?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">Software Architecture</a></h3>\n   <p>Dives into the sociotechnical side of architecture. Topics include distributed systems and resilience patterns, decentralized architectural decision-making, platform engineering, and integrating AI into architecture practice.</p>\n   <ul>\n    <li><strong>Facilitator</strong>: Luca Mezzalira, Principal Solutions Architect and O'Reilly author of <em>Building Micro-Frontends</em>.</li>\n    <li><strong>Starts</strong>: Wednesday, June 10. Choice of BST or EDT cohorts.</li>\n    <li><strong>Syllabus</strong>: <a href=\"https://certification.qconferences.com/modules/custom/qcon_home/assets/Program-Syllabus-InfoQ-Certified-Architect-Program.pdf?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">View the full week-by-week overview</a>.</li>\n   </ul>\n   <p>Starts June 10, 2026. <a href=\"https://certification.qconferences.com/architecture?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">Reserve your place</a>.</p>\n   <h3><a href=\"https://certification.qconferences.com/organizational-architect?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">Organizational Architect (New)</a></h3>\n   <p>This cohort is exploring the non-technical decisions that shape whether the technical strategy gets adopted. Topics include leadership communication, value stream architecture, architecting for flow, platformization, and managing cognitive load.</p>\n   <ul>\n    <li><strong>Facilitator</strong>: Manuel Pais, <em>Co-author of Team Topologies</em> and Director of the Team Topologies Academy.</li>\n    <li><strong>Starts</strong>: Friday, June 19, 2026, at 9:00 AM CEST.</li>\n    <li><strong>Syllabus</strong>: <a href=\"https://certification.qconferences.com/modules/custom/qcon_home/assets/Program-Syllabus-InfoQ-Certified-Organizational-Architect-Program.pdf?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">View the full week-by-week overview</a>.</li>\n   </ul>\n   <p>Starts June 19, 2026. <a href=\"https://certification.qconferences.com/organizational-architect?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">Reserve your place</a>.&nbsp;</p>\n   <h3><a href=\"https://certification.qconferences.com/ai-engineering?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_ai-engineering-certification?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">AI Engineering (New)</a></h3>\n   <p>Focuses on building AI systems that hold up in production. Topics include AI-native engineering, RAG and context pipelines, agent design, AI platform infrastructure, inference cost, and system reliability.</p>\n   <ul>\n    <li><strong>Facilitator</strong>: Hien Luu, Sr. Engineering Manager at Zoox and author of <em>MLOps with Ray</em> and <em>Beginning Apache Spark 3</em>.</li>\n    <li><strong>Starts</strong>: Saturday, July 25, 2026, at 09:00 AM PDT.</li>\n    <li><strong>Syllabus</strong>: <a href=\"https://certification.qconferences.com/modules/custom/qcon_home/assets/Program-Syllabus-InfoQ-Certified-AI-Engineering-Program.pdf?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">View the full week-by-week overview</a>.</li>\n   </ul>\n   <p>Starts July 25, 2026. <a href=\"https://certification.qconferences.com/ai-engineering?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">Reserve your place</a>.</p>\n   <h2>Program Details</h2>\n   <p>The cohorts require a weekly commitment of four hours of live session time, plus up to two hours of time-boxed homework.</p>\n   <p>Most companies reimburse professional development. InfoQ provides <a href=\"https://certification.qconferences.com/content/convince-your-boss?utm_source=infoq&amp;utm_medium=referral&amp;utm_campaign=newspost_may26_onlinecohorts26\">Convince Your Boss templates</a> for participants who need to explain the value of the cohort internally.&nbsp;</p>\n   <p>New topics are added over the coming weeks. If these don't quite match your current focus, feel free to check out our full lineup. Explore all upcoming cohorts.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"InfoQ Online Certification Program: New AI Engineering and Organizational Architecture Cohorts\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Artenisa Chatziou\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/online-cohort-certification-prog/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779789600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "InfoQ 扩展其在线认证计划，新增 AI 工程与组织架构两个专题，为资深从业者提供结构化的同伴学习模式，以应对复杂且高风险的技术与组织决策。",
+  "oneSentenceSummary": "InfoQ 扩展其在线认证计划，新增 AI 工程与组织架构两个专题，为资深从业者提供结构化的同伴学习模式，以应对复杂且高风险的技术与组织决策。",
+  "summary": "InfoQ 宣布扩展其在线认证计划，新增两个专题：AI 工程与组织架构。这些计划专为资深工程师、架构师、技术负责人和工程经理设计，他们在职业发展过程中面临着日益复杂且不可逆的决策。该专题提供了一个保密的同伴小组，参与者可以将 QCon 演讲中的框架应用到自身工作中的真实挑战上。其形式是一个为期五周的实用结构，包括独立准备、实时研讨会、实际应用和可执行的收获。AI 工程专题聚焦于生产级 AI 系统，涵盖 RAG、智能体、AI 平台、评估和可靠性等主题。组织架构专题则探讨影响技术战略采纳的非技术决策，包括团队结构、价值流设计和平台战略。这两个专题加入了已有的软件架构专题。该计划面向已具备深厚技术经验、需要在难以权衡的领域提升决策能力的从业者。",
+  "mainPoints": [
+    {
+      "point": "InfoQ 的新专题面向面临复杂、不可逆决策的资深从业者。",
+      "explanation": "这些计划专为资深工程师、架构师和经理设计，他们需要一个同伴小组来挑战其在 AI 基础设施和团队设计等高风险话题上的推理。"
+    },
+    {
+      "point": "这些专题采用为期五周的实用形式，结合 QCon 演讲与实际应用。",
+      "explanation": "每周包括独立准备、实时研讨会、将框架应用于参与者自身工作，并为其团队留下可执行的方法。"
+    },
+    {
+      "point": "AI 工程专题聚焦于生产级 AI 系统及其可靠性。",
+      "explanation": "它涵盖了 AI 原生工程、RAG、智能体设计、AI 平台基础设施、推理成本和系统可靠性，适用于构建能在生产环境中稳定运行的 AI 系统的从业者。"
+    },
+    {
+      "point": "组织架构专题专注于支撑技术战略的非技术决策。",
+      "explanation": "它探讨了领导力沟通、价值流架构、平台化以及管理认知负荷，以确保技术战略得到有效采纳。"
+    }
+  ],
+  "keyQuotes": [
+    "这些专题旨在为资深工程师、架构师、技术负责人和工程经理提供一个保密的同伴小组，他们可以将 QCon 演讲中的框架应用到自身工作中的真实决策上。",
+    "重点不在于入门指导，而在于在那些难以逆转的权衡领域做出更好的决策。",
+    "参与者将带着一种方法、框架或权衡分析离开，并能在当周立即与团队分享使用。"
+  ],
+  "tags": [
+    "InfoQ",
+    "认证",
+    "AI 工程",
+    "组织架构",
+    "软件架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 606,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PG_CAREER",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779789600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-26 18:00:00"
+}
