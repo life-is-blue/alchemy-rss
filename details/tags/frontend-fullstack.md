@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-27 08:29:56 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-27 11:04:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -692,9 +692,7 @@
 
 ### [CSS-vs.-JavaScript-•-Josh-W.-Comeau](https://www.joshwcomeau.com/animation/css-vs-javascript/)
 
-2026-05-26 21:30:00 | 标签: CSS 动画, JavaScript 动画, Web 性能, 动画库, Motion
-
-> 文章挑战了 CSS 动画总是比基于 JavaScript 的动画性能更好的传统观念。它澄清了现代浏览器引擎能够高效处理 JS 动画的计算成本；真正的问题是 JavaScript 运行在主线程上，可能会被其他应用任务（例如 React 更新、fetch 请求）阻塞，导致动画卡顿。而 CSS 关键帧和过渡则运行在单独的线程上，因此不受主线程拥塞的影响。文章随后比较了流行的 JS 动画库：Motion（使用 Web Animations API 在单独线程上运行）和 GSAP（在主线程上运行，但提供了不同的权衡）。文章还讨论了动画同步的重要性以及库的初始下载成本。作者最后主张优先使用原生 CSS 动...
+2026-05-26 21:30:00
 
 
 

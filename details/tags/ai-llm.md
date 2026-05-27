@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-27 08:29:56 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-27 11:04:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [我们如何在多个产品中约束-Claude](https://www.anthropic.com/engineering/how-we-contain-claude)
 
-2026-05-27 02:22:04 | 标签: AI 安全, 智能体约束, 沙箱化, 提示注入, 安全架构
-
-> 这篇来自 Anthropic Engineering 的文章详细介绍了该公司在其三个主要产品（claude.ai、Claude Code 和 Claude Cowork）中约束 AI 智能体的演进策略。文章概述了三类风险（用户滥用、模型行为不当、外部攻击者）和三个防御组件（环境、模型、外部内容）。文章核心描述了三种不同的隔离模式：用于 claude.ai 的临时容器、用于 Claude Code 的人工参与沙箱，以及用于 Claude Cowork 的本地虚拟机。针对每种模式，作者分享了发布后发现的特定漏洞，包括预信任对话利用、用户作为注入向量攻击，以及通过已批准域名进行的数据窃取。文章最后展...
+2026-05-27 02:22:04
 
 
 
 ### [从透明开发到系统工程：AgentScope-2.0-发布](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501135&idx=1&sn=0b96d8e21b27a20f60c423657f2bca84)
 
-2026-05-26 11:57:00 | 标签: AgentScope, 智能体框架, AI Agent, 系统工程, 权限控制
-
-> 本文由通义实验室发布，详细介绍了 AgentScope 2.0 的核心升级。2.0 版本在延续 1.0 透明开发理念的基础上，针对智能体落地过程中的关键痛点进行了系统性改进。升级涵盖六大核心模块：模型层引入统一的重试与备用模型机制，提升调用稳定性；消息模块重构为统一的 Content Block 并引入事件系统，使执行过程可展示、可交互、可干预；权限系统实现细粒度控制，支持基于静态规则和输入内容的动态决策；上下文管理走向系统化，支持结构化压缩、工具结果自动截断和文件缓存；新增 Middleware 机制，允许在关键环节插入自定义逻辑；引入 Workspace 抽象，将执行环境与智能体逻辑解耦，...
+2026-05-26 11:57:00
 
 
 
@@ -4806,17 +4802,13 @@
 
 ### [腾讯云-Agent-Memory-节省-61%-Token-提升-52%成功率的诀窍：Mermaid-无限画布×上下文卸载](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695603&idx=2&sn=d0dc08cafa650f04116c408661df3435)
 
-2026-05-26 08:45:00 | 标签: Agent Memory, 上下文卸载, Mermaid, 短期记忆压缩, AI Agent
-
-> 本文由腾讯云开发者团队撰写，提出了一种面向 AI Agent 长任务场景的短期记忆压缩方案。核心思路是将「上下文卸载」与「Mermaid 无限画布」相结合：前者将完整的工具调用结果、网页原文等长内容卸载到外部文件系统，仅在上下文中保留摘要和索引；后者利用 Mermaid 流程图语言将离散的任务步骤组织成带状态、摘要和时间戳的任务拓扑图，使 Agent 能够理解任务结构、进度和依赖关系。文章详细阐述了符号化压缩的三条设计原则（通用知识、生成简单、表达自由），对比了 Flowchart 与 StateDiagram 的选型差异，并给出了从原始结果到 JSONL 摘要、MMD 节点、任务元数据的四层...
+2026-05-26 08:45:00
 
 
 
 ### [Harness-Engineering:-C-端-AIGC-内容生产自优化实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560353&idx=1&sn=939768570beeacd145b5c1c91ae7827b)
 
-2026-05-26 08:30:00 | 标签: AIGC, Harness Engineering, 多Agent系统, LangGraph, 质量保障
-
-> 本文是阿里云开发者社区发布的一篇深度技术实践文章，作者来自蚂蚁集团。文章系统介绍了 DIPG（Deep Interpretation Page Generator）系统，该系统用于生成保险产品的深度解读 HTML 页面。核心思想是将 C 端 AIGC 内容交付从“实时生成直出”架构翻转成“离线生成-验证-修正-入库-按品开启-直出”的 Harness 模式。文章详细拆解了系统内部的三层 LangGraph 多 Agent 架构：Host Agent 负责编排与精准修正，Research Agent 负责从零生成 HTML，Verify Agent 负责程序化结构校验和 LLM 事实校验。通过一...
+2026-05-26 08:30:00
 
 
 
@@ -8890,9 +8882,7 @@
 
 ### [聊聊-Harness-时代-AI-First-的组织架构：从信任人到信任-AI](https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247497605&idx=1&sn=5052e582bb51a0728960bf1827d36607)
 
-2026-05-26 11:00:00 | 标签: Harness Engineering, AI-First, 组织架构, AI Agent, AI 编程
-
-> 本期《硅谷 101》播客邀请 Creao 三位创始人，围绕 Harness Engineering（挽具工程）展开深度对话。文章指出，Harness 的核心是构建一个动态、可自我优化的 AI 系统，而非静态的工具链。Creao 公司通过实践展示了 AI-First 的极致效率：99% 的代码由 AI 完成，日部署 3-8 次，六周的产品流程可压缩至一天。组织转型的关键在于从「信任人」转向「信任 AI」，这需要重构工作流程和组织形态，而非简单地在现有流程上叠加 AI 工具。文章讨论了 AI 主导下的角色变化：产品经理角色被拆解，初级工程师比资深工程师更易适应，而架构师的价值在于发现 AI 规划的...
+2026-05-26 11:00:00
 
 
 
@@ -12384,201 +12374,151 @@
 
 ### [Introducing-Music-v2，-突破性的全新音乐模型](https://elevenlabs.io/blog/introducing-music-v2)
 
-2026-05-27 00:33:38 | 标签: ElevenLabs, Music v2, AI 音乐生成, 生成式 AI, AI 产品
-
-> ElevenLabs 推出了 Music v2，这是其 AI 音乐生成模型的重大升级。新模型在所有流派中均提供了更高品质的人声、配器和编曲。关键新功能包括：改进的局部重绘，可重新生成曲目的特定部分；能够按部分（前奏、主歌、副歌）创作完整歌曲，同时保持结构连贯性；以及更好的歌词和人声多语言支持。Music v2 为三个不同的平台提供支持：面向创作者的 ElevenMusic、面向开发者的 ElevenAPI 以及面向品牌的 ElevenCreative。伴随此次发布，ElevenLabs 将 API 用户的价格降低了高达 50%，Creative 客户的价格降低了 40%。该模型基于授权数据进行...
+2026-05-27 00:33:38
 
 
 
 ### [什么是数据智能体？](https://towardsdatascience.com/what-is-a-data-agent/)
 
-2026-05-27 00:30:00 | 标签: 数据智能体, Microsoft Fabric, AI 智能体, 自然语言查询, 自助分析
-
-> 本文由一位微软员工撰写，将数据智能体定义为一种可以对话的报告，并与通用 AI 智能体进行对比。文章解释了 Microsoft Fabric 的数据智能体如何让分析师将查询封装在提示词中而非图表中，使业务用户能够用自然语言提问，并以文本或表格形式获得答案。该智能体能够解读问题、选择合适的数据源、生成并执行查询（SQL、DAX 或 KQL），最后返回结果。这减少了构建可视化的需求，降低了自助分析的知识门槛。文章区分了数据智能体（专注于只读、受管的数据访问和接地）与 AI 智能体（代表用户行动，使用数据智能体等工具）。文章将数据智能体定位为更广泛的 AI 智能体工作流中的专业工具，并以利用收入数据起...
+2026-05-27 00:30:00
 
 
 
 ### [Microsoft-Copilot-Cowork-文件泄露漏洞](https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything)
 
-2026-05-26 23:36:48 | 标签: AI 安全, 提示注入, 数据泄露, Microsoft Copilot, 智能体系统
-
-> 本文重点介绍了 Microsoft Copilot Cowork（一个智能体系统）中的严重安全漏洞。核心问题在于，该系统允许智能体在无需批准的情况下向用户自己的收件箱发送邮件。这些邮件可以包含触发网络请求的外部图片，攻击者可利用此漏洞窃取数据。此外，由于 OneDrive 可以生成预认证的下载链接，成功的提示注入攻击可能导致这些链接泄露，使攻击者能够直接下载文件。文章强调了在智能体系统设计中防止数据泄露这一持续存在的挑战。
+2026-05-26 23:36:48
 
 
 
 ### [Paul-Graham-的一句话](https://simonwillison.net/2026/May/26/paul-graham/#atom-everything)
 
-2026-05-26 23:02:30 | 标签: Paul Graham, AI 写作, 创始人建议, 沟通, 职业伦理
-
-> 这篇文章是 Simon Willison 博客上分享的 Paul Graham 的一句简短引述。Graham 对创始人发送的明显由 AI 撰写的邮件表达了强烈的负面反应。他表示自己从未完整读完过这样的邮件，因为这感觉像是在被欺骗。他进一步解释道，使用 AI 写作会让他对作者的评价降低，暗示作者无法独立写好文章，并试图欺骗他。核心信息是，在个人沟通中使用 AI，尤其是在融资等专业场合，并不会给人留下好印象，反而可能有害。
+2026-05-26 23:02:30
 
 
 
 ### [AI-模型的自信陷阱](https://towardsdatascience.com/the-ai-model-confidence-trap/)
 
-2026-05-26 23:00:00 | 标签: AI 自信, 模型校准, LLM 可靠性, Softmax, 可信 AI
-
-> 文章以 ChatGPT 自信地编造一位诺贝尔奖得主的个人轶事为引子，揭示了 AI 中的一个根本问题：模型所表达的自信与其实际准确性之间存在脱节。文章解释了由 Softmax 函数生成的置信度分数并非真实概率，而是相对比较，这会导致过度自信，尤其是在处理分布外输入时。文中引入了“自信的傻瓜问题”，即模型在听起来很确定的同时，可能错得离谱。随后，文章讨论了诸如 Platt 缩放和温度缩放等校准技术，旨在使置信度与实际准确性对齐。文章强调了这一问题在医疗诊断和自动驾驶等高风险应用中的关键重要性，并主张可信度（而非仅仅是准确度）应成为 AI 系统的首要衡量指标。最终的结论是：一个知道自己何时可能出错的...
+2026-05-26 23:00:00
 
 
 
 ### [我用-Codex-做研究后，总结出-6-条有用经验！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723058&idx=1&sn=15e02719df07dc5e4ee7a4b48ba64a3b)
 
-2026-05-26 22:55:00 | 标签: Codex, AI 编程, 工作流, 研究, 经验总结
-
-> 作者基于使用 Codex 进行论文复现、阅读代码库、整理实验逻辑等研究导向工作的实践，总结出 6 条核心经验。核心观点是将 Codex 视为项目协作者而非简单代码生成器。经验包括：1）不急于写代码，先让 Codex 阅读并理解项目结构；2）创建 AGENTS.md 文件设定长期工作规则而非临时任务；3）复杂任务先制定详细计划并等待确认；4）研究任务要求 Codex 先查证论文和代码库，避免凭印象输出；5）完成一个任务后开启新会话，避免旧假设污染新任务；6）不轻信 Codex 的完成声明，要求其输出详细的修改和验证清单。文章强调，让 Codex 稳定的关键在于提供清晰的上下文、长期规则和验收标准...
+2026-05-26 22:55:00
 
 
 
 ### [如果足够多的公司报告同样的情况，泡沫就会破裂-🫧](https://garymarcus.substack.com/p/if-enough-other-companies-report)
 
-2026-05-26 21:35:55 | 标签: AI 泡沫, AI 投资, 投资回报, Uber, Microsoft
-
-> 本文对当前的 AI 投资热潮持怀疑态度，认为关于无限客户需求和生产力提升的叙事正在出现裂痕。文章引用了几个近期的例子：Uber 的 COO 报告称，随着 AI 成本的增加，并未看到相应的生产力提升，且公司在短短几个月内就用完了全年的 AI 代币预算。Microsoft 因成本原因取消了 Claude Code 的许可证。Target 对 AI 智能体的定价模式表示担忧。Starbucks 因无法信任 AI 而关闭了一项库存管理实验。作者 Gary Marcus 将这些零散的报告与一个更广泛的论点联系起来：如果有足够多的公司报告类似的失望，AI 泡沫就会破裂。他警告说，预计将进行 IPO 的三家...
+2026-05-26 21:35:55
 
 
 
 ### [别再像巨型问题解决器一样使用-LLM](https://towardsdatascience.com/stop-using-llms-like-giant-problem-solvers/)
 
-2026-05-26 21:30:00 | 标签: LLM, AI 智能体, 生成式 AI, 系统设计, 数据提取
-
-> 本文分享了使用 AI 智能体将 100 份混乱的合规 PDF 转化为结构化 JSON 规则时的实用架构经验。作者最初尝试了暴力方法——向智能体提供源文本、任务描述和示例——但由于细微的语义和完整性错误，输出在大规模下并不可靠。关键的突破不在于更好的提示词或工具，而在于改变问题的形态：让智能体的工作变得更小。这包括预先准备源数据以减少检索不确定性，剥离不必要的元数据，以及最关键的一点——迭代地逐个处理文档。这使得每个任务都更易于检查、重试和审计。作者还分离了职责：智能体负责语义理解和 JSON 编写，而外围代码负责并行化、模式强制、缓存和验证。为每个输出添加引用 ID 使系统可审计，能够精确追溯...
+2026-05-26 21:30:00
 
 
 
 ### [RTMH：教皇利奥十四世关于人工智能的《人类伟大》通谕-——-LessWrong](https://www.lesswrong.com/posts/RZeg98Tdrq47vbjva/rtmh-pope-leo-s-magnifica-humanitas-on-ai)
 
-2026-05-26 21:20:59 | 标签: 教皇利奥十四世, AI 伦理, AI 认知, 天主教会, 通谕
-
-> 本文对教皇利奥十四世关于人工智能的通谕《人类伟大》进行了逐段式的全面分析。作者从理性主义和亲技术的视角出发，对该文件在三个主要方面表达了深深的失望。首先，教皇关于 AI 无法真正思考或成为心智的核心主张被作者斥为错误，并引用了 Chris Olah 等人的工作作为反驳。其次，这种对 AI 认知的否认导致通谕只关注诸如失业和偏见等日常风险，而忽略了存在风险和对先进 AI 的道德考量等更深刻的挑战。第三，作者批评了通谕背后的经济和政治世界观，将其描述为一种欧洲技术官僚主义、左翼、社会主义的视角，优先考虑“好工作”和平等，而非真正创造繁荣的市场驱动的创新和增长。文章引用了通谕的大量原文以及 Dean...
+2026-05-26 21:20:59
 
 
 
 ### [致命的-AGI-硬件鸿沟-—-LessWrong](https://www.lesswrong.com/posts/QSrEfE3aJYB4uXqZL/the-fatal-agi-hardware-gap)
 
-2026-05-26 20:55:24 | 标签: AGI 安全, 硬件限制, 符合伦理的 AGI, AI 对齐, MIRI
-
-> 本文探讨了通过限制计算机硬件来防止危险超级智能 AI 这一提案中的关键缺陷。文章引入了两个理论硬件阈值：L_AGI（任何 AGI 所需的最低硬件）和 L_EAGI（符合伦理的 AGI 所需的最低硬件）。作者认为，L_EAGI 很可能大于 L_AGI，因为符合伦理的 AGI 需要额外的计算资源来建模并避免伤害其他生命体。如果硬件限制设定在这个鸿沟之内，那么任何出现的 AGI 都必然是不道德的，因为它缺乏伦理推理的能力。文章总结道，如果硬件限制没有经过精心校准至 L_EAGI 以上，可能会无意中确保一个致命 AGI 的诞生。文章引用了 MIRI 提出的硬件限制，并指出多位专家认为当前的高端个人电脑...
+2026-05-26 20:55:24
 
 
 
 ### [1112-张图！从“词不达意”到“言出法随”！AI-人物绘画手册完整版正式发布！](https://mp.weixin.qq.com/s?__biz=MzI2NzM4MTQwMg==&mid=2247496181&idx=1&sn=238c150560bd49fb3a5731e26daf3812)
 
-2026-05-26 20:41:00 | 标签: AI绘画, 提示词工程, 人物绘画, Prompt Engineering, AI艺术
-
-> 这是一份面向 AI 绘画爱好者的实用工具手册，作者基于大量实践，系统梳理了 AI 人物绘画中需要用到的精准描述词汇。手册内容涵盖七大核心维度：发型（分缝、刘海、马尾、发髻、长度、质感、编发、复古风格共 80 张图）、发饰（发夹、发圈、发箍、蝴蝶结、发簪、珠宝、花朵、风格化共 64 张图）、服饰（现代基础服装、结构细节、中国历史服饰、各国传统服饰、职业制服、运动功能服、礼服舞台服、风格幻想服饰共 200 张图）、表情（192 张图）、肢体动作与姿态（192 张图）、镜头语言（192 张图）以及光影（192 张图）。每个子类别均提供中英文对照关键词和对应的 AI 生成示例图，方便用户在实际创作中直...
+2026-05-26 20:41:00
 
 
 
 ### [Import-AI-458：直面未来与奇点叙事](https://importai.substack.com/p/import-ai-458-reckoning-with-the)
 
-2026-05-26 20:32:03 | 标签: AI 进步, 奇点, 未来工作, Anthropic, AI 安全
-
-> 这篇基于 Anthropic 联合创始人 Jack Clark 2026 年演讲的文章，深刻反思了 AI 不断进步的影响。Clark 认为，这项技术的成功带来了一个二元选择：通过正视其力量来“探索未来”，或通过否认其影响来“逃避当下”。他利用 Epoch 能力指数（ECI）图表来说明 AI 加速发展的步伐，并重点提及了 AI 在国际数学奥林匹克竞赛中获得金牌等里程碑。文章的核心是 Clark 的个人叙述，讲述 AI 如何成为他生活中的“智力伙伴”——从提供育儿建议，到帮助他创建一项“技能”，能在几分钟内分析自己的新闻通讯档案并生成研究图表，而这项任务过去需要他花费数周时间。接着，他描述了 An...
+2026-05-26 20:32:03
 
 
 
 ### [Faire-通过-Cursor-云智能体将-PR-吞吐量翻倍-·-Cursor](https://cursor.com/blog/faire)
 
-2026-05-26 20:00:00 | 标签: Cursor, 云智能体, AI 编程, 软件工程, 自动化
-
-> 本文详细介绍了在线市场 Faire 如何利用 Cursor 的云智能体大幅提升工程效率。通过从本地智能体设置迁移到 Cursor 的云基础设施，Faire 克服了资源限制，实现了真正的并行化。其关键创新在于每个云智能体都在自己独立的开发环境中运行，能够像人类工程师一样自主操作。这使得 Faire 能够自动化从 MobX 到 React 状态管理的大规模遗留系统迁移，将原本需要一个团队 18 个月的工作量缩减为由一名工程师管理一群智能体来完成。除了迁移工作，Faire 还使用 Cursor Automations 每周运行超过 2，000 次自主智能体任务，用于处理 Slack 上的 Bug 报...
+2026-05-26 20:00:00
 
 
 
 ### [DeepSeek-的-10-万亿美元宏大战略](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451979&idx=1&sn=3c3b0cee50e53f6d9d4625bf257a8c0a)
 
-2026-05-26 19:15:00 | 标签: DeepSeek, AI 战略, 硬件生态, MoE, MLA
-
-> 本文翻译自 GDP（@bookwormengr）发布的长文，对 DeepSeek 的战略进行了深度剖析。文章认为，外界对 DeepSeek 的关注点（模型分数、价格战、缺乏产品线）过于狭隘。作者通过梳理 DeepSeek 从 V2 到 V4 的一系列技术创新，包括 MoE、MLA、DSA、mHC、Engram、TileLang 等，指出这些创新共同指向一个核心目标：降低大模型训练和推理对 HBM、GPU 等稀缺且昂贵的硬件的依赖。文章详细解释了 KV Cache 压缩如何降低对 HBM 的需求，并指出这直接利好中国的 NAND（长江存储）和 LPDDR（长鑫存储）厂商。通过用内存换计算（Eng...
+2026-05-26 19:15:00
 
 
 
 ### [超越-TurboQuant!-OSCAR：面向真实-Serving-的-2-bit-KV-Cache-量化](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451979&idx=2&sn=894265e03a9246ea22e3452c1768ac31)
 
-2026-05-26 19:15:00 | 标签: KV Cache, 量化, LLM 推理, SGLang, 长上下文
-
-> 本文详细介绍了 OSCAR 这一面向长上下文 LLM 推理服务的 2-bit KV Cache 量化方案。文章首先指出长上下文推理中 KV Cache 对显存和带宽的巨大压力，并点明朴素低比特量化的核心问题：压缩后的向量重建误差无法保证 attention 质量。OSCAR 的核心创新在于提出 attention-aware 旋转，针对 Key 使用 query covariance（QᵀQ）决定旋转目标，针对 Value 使用 score-weighted value covariance（VᵀSᵀSV），从而将量化噪声推向 attention 不敏感的方向。在系统实现上，OSCAR 已接入...
+2026-05-26 19:15:00
 
 
 
 ### [技术深度解析：AgentCore-支付与智能体商业的创新-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/technical-deep-dive-agentcore-payments-and-innovation-in-agentic-commerce/)
 
-2026-05-26 17:57:18 | 标签: Amazon Bedrock, AgentCore, 智能体商业, 微交易, x402
-
-> 本文介绍了 Amazon Bedrock AgentCore Payments，这是一项处于预览阶段的新托管服务，旨在解决生成式 AI 智能体自主为外部服务付费这一复杂问题。文章概述了开发者面临的关键挑战：安全地为智能体提供资金、应对 x402 等支付协议碎片化的格局、防止预算失控以及审计交易。AgentCore Payments 通过模块化架构应对这些挑战。它使用 AgentCore Identity 进行安全凭证存储和令牌化访问；一个可插拔的支付编排引擎，通过单一的 `processPayment` API 抽象了多种协议；一个三阶段原子预算执行系统，可在并发负载下防止超支；以及一个无需任...
+2026-05-26 17:57:18
 
 
 
 ### [在-AWS-上使用-Amazon-Bedrock-AgentCore-构建高度可扩展的无服务器-LangGraph-多智能体系统-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-highly-scalable-serverless-langgraph-multi-agent-systems-in-aws-with-amazon-bedrock-agentcore/)
 
-2026-05-26 17:41:26 | 标签: LangGraph, Amazon Bedrock AgentCore, 多智能体系统, 无服务器, AWS Lambda
-
-> 这篇 AWS 博客文章详细介绍了一种构建可用于生产环境、无服务器的多智能体生成式 AI 系统的解决方案。它结合了 LangGraph 基于显式图的执行模型（用于编排复杂的并行智能体工作流）与 AWS 无服务器服务（如 Lambda 和 Step Functions，用于自动扩展和最小化运维开销）。该解决方案集成了 Amazon Bedrock AgentCore 的两项关键能力：记忆功能，可在智能体运行之间提供共享、持久的上下文并支持多轮对话；以及可观测性功能，可为智能体工作流中的每一步提供详细的可视化信息，用于调试和性能监控。文章以营销活动审核系统为具体示例，该系统包含三个专业智能体（角色审...
+2026-05-26 17:41:26
 
 
 
 ### [使用-Strands-Agents、NVIDIA-NIM-和-Amazon-Bedrock-AgentCore-构建高性能生成式-AI-系统-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-high-performance-generative-ai-systems-with-strands-agents-nvidia-nim-and-amazon-bedrock-agentcore/)
 
-2026-05-26 17:39:46 | 标签: 多智能体系统, NVIDIA NIM, Amazon Bedrock AgentCore, Strands Agents, AWS
-
-> 这篇 AWS 博客文章提供了一个全面的架构和实现指南，用于构建高性能、生产级的多智能体生成式 AI 系统。它解决了生产环境中智能体工作负载的常见挑战，例如并发请求下的推理延迟、导致上下文丢失的无状态执行以及有限的操作可见性。该解决方案集成了三个关键组件：NVIDIA NIM，通过托管 API 提供低延迟、GPU 加速的推理；Amazon Bedrock AgentCore，提供具有内置可观测性、记忆和检查点的托管运行时环境；以及 Strands Agents，用于无服务器多智能体编排。文章通过一个具体的多智能体活动审核系统示例进行讲解，该系统包含三个并行运行的专门智能体（角色审核员、验证员、最...
+2026-05-26 17:39:46
 
 
 
 ### [AgentWatch：使用环境智能体实现-AWS-主动监控-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/agentwatch-proactive-aws-monitoring-with-ambient-agents/)
 
-2026-05-26 17:22:48 | 标签: 环境智能体, AWS 监控, Amazon Bedrock, AgentCore Runtime, 人机协同
-
-> 这篇来自 AWS 机器学习博客的文章介绍了 AgentWatch，一个旨在将 AWS 基础设施监控从被动救火转变为主动监督的环境智能体。它解决了告警疲劳、工具间上下文切换以及未检测到的性能退化等常见痛点。该解决方案基于 Amazon Bedrock 的 LLM 构建，并通过 AgentCore Runtime 部署，使用了一个包含七个专用监控工具的 LangChain 智能体。AgentWatch 支持两种运行模式：定时模式（每 15 分钟）和按需模式（通过 Slack 斜杠命令）。其架构核心是三种人机协同模式：通知（仅告知，不执行操作）、询问（请求澄清）和审查（对影响较大的操作需要批准）。文...
+2026-05-26 17:22:48
 
 
 
 ### [刚刚，国产-AI-自己造了-AI，全球首例！](https://www.qbitai.com/2026/05/425511.html)
 
-2026-05-26 16:46:15 | 标签: 面壁智能, ForgeTrain, MiniCPM5-1B, AI制造AI, 预训练框架
-
-> 本文报道了面壁智能的重大技术突破：全球首个完全由 AI 编写的生产级大模型预训练框架 ForgeTrain。该框架在华为昇腾上训练 MiniCPM5-1B 模型，性能超越英伟达 Megatron 10%。文章详细介绍了 ForgeTrain 的三阶段构建方法论（数据采集、二进制一致构建、迭代优化），以及其背后的 Forge Engineering 编程范式——从通用框架转向为每个模型、硬件、任务定制专用代码。MiniCPM5-1B 作为端侧模型，在 1B 参数规模下刷新了智能密度上限，在 AA-Index 上超越所有 2B 以下参数模型，支持 FP16 和 INT4 精度部署，可运行于 GPU...
+2026-05-26 16:46:15
 
 
 
 ### [米哈游一夜烧掉-200-万元-Token，大厂高管也开始质疑：Token-烧不出价值，但养肥了谁？](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247662798&idx=1&sn=a6a4b0488371450ffbc74c9626da652a)
 
-2026-05-26 16:40:00 | 标签: Tokenmaxxing, AI 成本, 企业 AI 转型, 硅谷趋势, AI 泡沫
-
-> 文章以 Uber 运营负责人对 AI Token 成本合理性的质疑为引子，系统梳理了当前科技行业「Tokenmaxxing」的现状与问题。文章指出，包括米哈游、Meta、微软、Salesforce 在内的多家大厂，内部出现了将 Token 使用量与绩效挂钩、鼓励员工无意义消耗 Token 的现象。这种风气不仅导致巨额成本浪费，还催生了员工为「刷分」而进行的低效工作。文章进一步分析了 Tokenmaxxing 浪潮中的赢家（如 OpenAI、Anthropic、英伟达等基础模型和算力提供商）与输家（盲目跟风的企业），并指出 YC 等机构甚至将其推崇为创业方法论，存在误导风险。最终，文章认为 To...
+2026-05-26 16:40:00
 
 
 
 ### [人工智能无法加速软件交付](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247662798&idx=2&sn=4c3cdcbe4f2902f44d37f5174eab255f)
 
-2026-05-26 16:40:00 | 标签: 软件交付, 反馈驱动, AI应用, 持续交付, 团队管理
-
-> 文章作者 Steve Fenton 以养狗与猎豹的比喻开篇，指出许多组织引入 AI 时只狭隘地追求速度，而忽略了更重要的目标。他回顾了软件行业过去以「速度」为名推行敏捷、DevOps 等变革却收效甚微的历史，认为领导者若只追求速度，引入 AI 也将重蹈覆辙。作者的核心论点是：软件交付的首要目标应是获取高频、高质量的反馈，而非单纯提速。反馈循环应像节拍器一样主导交付节奏，为团队留出调整方向的空间。他通过一个医疗保健软件团队的案例，展示了在优化交付流程（如引入可执行规范、削减官僚审核）后，即使面对安全关键领域，也能实现快速、可靠的交付。文章最后建议，在优化好交付流水线、打通反馈闭环之后，AI 的真...
+2026-05-26 16:40:00
 
 
 
 ### [从想法到-AI-应用：使用-Strands-打造智能研究助手-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/from-idea-to-ai-app-creating-intelligent-research-assistants-with-strands/)
 
-2026-05-26 16:28:08 | 标签: Strands Agents, AWS, Kiro, AI 助手, 智能体 AI
-
-> 这篇来自 AWS 机器学习博客的文章提供了一个实用、循序渐进的教程，指导如何使用开源 Strands Agents 框架构建智能研究助手。作者认为构建 AI 应用不应需要机器学习博士学位，并展示了 Strands 的模型驱动方法如何通过利用大语言模型进行自主推理和规划来简化开发。本教程涵盖了从前提条件（AWS 账户、Kiro IDE、凭证）到可运行的 Streamlit 应用的全部流程。核心解决方案包括通过一次 `Agent()` 初始化创建智能体，通过详细的提示词定义其行为，并将其与 Streamlit UI 集成。作者还展示了如何使用 Kiro 的自然语言提示生成应用代码并迭代优化（例如，...
+2026-05-26 16:28:08
 
 
 
 ### [革新专业工作：Amazon-Quick-如何将文档创建从数小时缩短至数分钟-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/transforming-professional-work-how-amazon-quick-turns-document-creation-from-hours-into-minutes/)
 
-2026-05-26 15:59:16 | 标签: Amazon Quick, AI 文档生成, AWS, 生产力, 数据可视化
-
-> 这篇来自 AWS 机器学习博客的文章详细介绍了 Amazon Quick 的文档和视觉创建功能。它解释了该服务如何通过自动化文档制作，将专业人员从机械执行（格式化报告、构建电子表格）转变为战略判断。工作流程包括：用自然语言描述文档、观察生成过程、预览、通过聊天或内联评论进行优化，以及下载原生格式（.docx、.xlsx、.pptx、.pdf、.png）。关键功能包括：用于 PowerPoint 和 Excel 的模板克隆，以保持品牌标识；以及数据感知生成，可从 AWS 数据源（QuickSight、S3、Redshift、RDS）或上传的文件中拉取实时数据，防止生成虚假数据。文章为销售、财务、...
+2026-05-26 15:59:16
 
 
 
 ### [《Magnifica-Humanitas》大量内容疑似-AI-撰写-—-LessWrong](https://www.lesswrong.com/posts/GbWwesBnetyiomxEH/many-portions-of-magnifica-humanitas-appear-to-be-ai-written)
 
-2026-05-26 15:40:57 | 标签: AI 检测, Pangram, Magnifica Humanitas, 教皇利奥十四世, AI 伦理
-
-> 这篇 LessWrong 文章调查了近期教皇通谕《Magnifica Humanitas》部分内容由 AI 撰写的说法。作者使用 Pangram AI 检测器分析意大利语原文，发现每章中有 18% 至 62% 的内容被标记为 AI 生成。文章引用了学术研究和个人测试来证明 Pangram 的可靠性，并将其与 ZeroGPT 等准确性较低的检测器进行对比。作者讨论了其中的影响，指出一份警告 AI 危险的文件本身却由 AI 撰写，这颇具讽刺意味，并附上了 Claude Opus 4.7 关于伦理和程序问题的详细评论。分析最后质疑了梵蒂冈流程的透明度以及 AI 生成部分中引用的准确性。
+2026-05-26 15:40:57
 
 
 
@@ -40664,129 +40604,97 @@
 
 ### [如何在-macOS-上将-AI-编程智能体连接到浏览器](https://www.freecodecamp.org/news/how-to-connect-your-ai-coding-agent-to-a-browser-on-macos/)
 
-2026-05-26 20:40:33 | 标签: Safari MCP, MCP, AI 智能体, 浏览器自动化, macOS
-
-> 本文介绍了 Safari MCP，作为 macOS 上 AI 编程智能体在无头浏览器自动化（Puppeteer/Playwright）之外的另一种选择。文章指出，无头浏览器对 AI 智能体来说存在问题，因为它们缺少用户会话、消耗大量 CPU，并且经常被机器人检测机制屏蔽。Safari MCP 通过大约 80 个工具，将用户现有的 Safari 实例暴露给支持 MCP 的智能体（如 Claude Code 或 Cursor），从而解决了这个问题。本教程涵盖了安装、配置和实际用例，包括读取页面以及在 GitHub 上自动化一个已登录的工作流程。它强调了继承用户现有浏览器会话的关键优势，从而无需编写...
+2026-05-26 20:40:33
 
 
 
 ### [InfoQ-在线认证计划：新增-AI-工程与组织架构专题](https://www.infoq.com/news/2026/05/online-cohort-certification-prog/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-26 18:00:00 | 标签: InfoQ, 认证, AI 工程, 组织架构, 软件架构
-
-> InfoQ 宣布扩展其在线认证计划，新增两个专题：AI 工程与组织架构。这些计划专为资深工程师、架构师、技术负责人和工程经理设计，他们在职业发展过程中面临着日益复杂且不可逆的决策。该专题提供了一个保密的同伴小组，参与者可以将 QCon 演讲中的框架应用到自身工作中的真实挑战上。其形式是一个为期五周的实用结构，包括独立准备、实时研讨会、实际应用和可执行的收获。AI 工程专题聚焦于生产级 AI 系统，涵盖 RAG、智能体、AI 平台、评估和可靠性等主题。组织架构专题则探讨影响技术战略采纳的非技术决策，包括团队结构、价值流设计和平台战略。这两个专题加入了已有的软件架构专题。该计划面向已具备深厚技术经...
+2026-05-26 18:00:00
 
 
 
 ### [从-3632-个漏洞看-AI-时代的评测基准重构！VulnGym-基准发布](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801631&idx=1&sn=4d1c5bb6cd33aa8f38f6b902f5231065)
 
-2026-05-26 17:32:00 | 标签: VulnGym, 漏洞检测, 业务逻辑漏洞, AI 安全, 评测基准
-
-> 文章基于对 2025 年 1 月至 2026 年 4 月期间 3632 条 GitHub Advisory 高危/严重漏洞的统计分析，揭示了 AI 编码时代漏洞形态正在发生结构性变化：业务逻辑漏洞占比持续上升，在高星项目中 2026 年 4 月已达 47.2%。文章从供给侧（AI Coding 工具普及改变漏洞产生方式）和检测侧（AI 安全工具开始发现过去难以发现的业务逻辑缺陷）两个角度分析了这一趋势的成因。基于此，腾讯悟空安全团队联合香港中文大学、复旦大学、香港大学、北京大学、中科院信工所等机构发布了 VulnGym 评测基准。该基准以 GitHub 高星项目中的真实漏洞为数据源，覆盖 40...
+2026-05-26 17:32:00
 
 
 
 ### [Gemma-4-留言板｜真实用户反馈](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652161947&idx=1&sn=2339e3a88a37e9f6368a8b68a327660e)
 
-2026-05-26 17:30:00 | 标签: Gemma 4, Google AI, 大语言模型, 用户反馈, 开源模型
-
-> 本文是 Google 官方发布的一篇用户反馈合集，旨在通过真实用户的使用体验来展示 Gemma 4 模型的能力。文章收集了多位用户在不同场景下的反馈，涵盖了代码生成、多模态理解、端侧部署、思维链推理、长对话保持等多个方面。用户普遍对 Gemma 4 的指令遵循能力、推理速度、多模态理解以及端侧部署的开放性给予了积极评价，同时也提出了一些改进建议，如优化端侧模型的稳定性和多语言支持。文章整体呈现了 Gemma 4 在实际应用中的正面形象，但缺乏对模型技术细节的深入分析和客观的第三方评测数据。
+2026-05-26 17:30:00
 
 
 
 ### [GPU-工作负载的实时与批处理](https://www.infoq.com/presentations/realtime-gpu-workloads/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-26 17:08:00 | 标签: GPU, vLLM, AI 基础设施, 私有云, GPU 虚拟化
-
-> 拥有 Kafka 和大规模系统背景的技术专家 Joseph Stein 分享了他在 SS&C Technologies 私有云中构建 AI 即服务平台的经验。核心挑战是在管理成本、安全性和合规性的同时，为数千名工程师和数十个生产系统提供 GPU 访问。解决方案围绕一个中央网关构建，该网关负责处理身份验证、审计和安全护栏。为了最大化 GPU 利用率，Stein 描述了一个复杂的超量订阅模型，该模型通过命名空间和优先级队列在不同环境（开发、测试、UAT、生产、灾备）中虚拟化 GPU 资源。这允许非关键工作负载使用备用硬件。演讲还涵盖了一个用于文档智能和语音转录的批处理系统，该系统在非高峰时段调度 ...
+2026-05-26 17:08:00
 
 
 
 ### [Google-扩大-SynthID-AI-水印技术应用，预览内容检测-API](https://www.infoq.com/news/2026/05/google-synthid-content-detection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-26 17:00:00 | 标签: SynthID, AI 水印, 内容检测 API, Google Cloud, AI 安全
-
-> 本文报道了 Google 扩大其 SynthID 技术在检测和标记 AI 生成内容方面的应用。关键进展是推出了一款新的内容检测 API，目前正与 Shutterstock、Snap 和 Canva 等可信合作伙伴进行预览，该 API 允许企业识别来自 Google 及其他主流模型生成的 AI 图像。该 API 通过分析 JPEG、PNG 或 WebP 图像中的像素级伪影和噪声模式来工作。文章还指出，SynthID 的采用范围已扩大到包括 Nvidia、OpenAI、Kakao 和 ElevenLabs 在内的主要 AI 公司。例如，OpenAI 正在将 SynthID 与 C2PA 元数据结合...
+2026-05-26 17:00:00
 
 
 
 ### [一台电脑省掉-OpenAI-账单？黄仁勋-249-刀的“烤箱神机”翻红！网友：是真未来还是真鸡肋？](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655940033&idx=1&sn=8efb945947ead8dcf11f77a3fe8c8712)
 
-2026-05-26 16:45:00 | 标签: Jetson Orin Nano Super, 本地部署, 开源模型, AI 成本, 边缘计算
-
-> 文章围绕英伟达 249 美元的 Jetson Orin Nano Super 开发板在 X 平台上的翻红现象展开。该产品于 2024 年底发布，定位为最实惠的本地生成式 AI 计算机。文章指出，其核心卖点在于支持 Ollama 一键部署，可本地运行 Llama、Qwen2、DeepSeek 等 7B-14B 开源模型，完全离线且数据安全。博主声称，通过将 80% 的日常 AI 任务（如摘要、编码、文档问答）迁移到本地，每月成本可从 200 美元降至 22 美元。然而，文章也客观呈现了网友的质疑，认为 7B 模型的能力无法与 GPT-4 或 Claude Opus 等前沿模型相提并论。文章最后总...
+2026-05-26 16:45:00
 
 
 
 ### [一位-10-年-Android-老兵选择「逆行」：“如果未来只剩-AI-写代码，那就把我落下吧！”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831357&idx=3&sn=4a818973ff4982d66ef087dae31038b6)
 
-2026-05-26 14:40:00 | 标签: AI 编程, 工程师文化, 社区价值, 职业反思, 技术人文
-
-> 本文是 Adam McNeilly 的一篇个人反思文章，在 CSDN 上翻译发布。作者作为一名拥有十年经验的 Android 工程师，在 AI 编程工具（如 LLM）日益强大的背景下，选择公开表达自己的「逆行」立场。他并不反对技术本身，而是怀念并珍视技术社区中人与人之间的连接、协作与共同成长的过程。文章通过回顾他从大学学习 Android 开发、参加 Hackathon、在职场中与同事互相学习、参加技术大会并最终成为分享者的经历，强调了「人」在软件开发中的核心价值。他认为，AI 虽然能生成代码，但却削弱了工程师之间互相学习、讨论、挑战和共同创造的体验。他担心，当「思考」本身被自动化时，人们会失...
+2026-05-26 14:40:00
 
 
 
 ### [编程-Agent-可能是软件开发史上最昂贵的错误之一](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285679&idx=1&sn=f05065413bcdb7a5f64e37a0989bcc5b)
 
-2026-05-26 14:05:00 | 标签: AI Agent, 编程 Agent, 代码质量, 技术债, 软件工程
-
-> 本文综合报道了以 George Hotz 为代表的技术专家对 AI 编程 Agent 的严厉批评。Hotz 在亲身实践六个月后得出结论：Agent 本质上是模仿编程分布的统计模型，其生成的代码质量低下且问题隐蔽，大规模采用将导致「垃圾代码的黄金时代」。文章还引用了 OpenClaw 核心工程师 Mario Zechner 和 Armin Ronacher 的警告，他们指出 AI 正在制造大量「vibe slop」代码，导致基础设施崩溃、技术债累积。此外，Uber 高管透露 AI token 消耗成本难以与业务产出挂钩，公司已开始放缓招聘。文章呈现了 AI 编程热潮背后关于代码质量、成本效益和长...
+2026-05-26 14:05:00
 
 
 
 ### [Coding-Agent-在百度的落地实践：从反馈闭环到工程范式重构](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285679&idx=2&sn=0448723f500d7d46ba6c03dd92e178fb)
 
-2026-05-26 14:05:00 | 标签: Coding Agent, 百度文心快码, Feedback Loop, Benchmark, Agent Engineers
-
-> 本文整理自百度文心快码研发经理牛万鹏在 QCon 2026 北京站的演讲。文章指出，对于构建上层 Agent 应用的团队而言，模型能力的剧烈变化构成了最大的架构挑战。为此，Comate 团队从三个维度给出了实践方法论：第一，构建 Feedback Loop，通过监控工具层、上下文层、执行结果层和轨迹质量层的数据，让 Agent 的行为可观测，并分享了 MCP 渐进式加载（节省 98% Token）和基于任务复杂度的模型路由等实践。第二，构建基于异常值而非分数的 Benchmark 体系，通过从业务提交记录挖掘评测集，并利用 Outcomes 和 Execution Score 两个参数的四象限...
+2026-05-26 14:05:00
 
 
 
 ### [OpenAI-详解规模化低延迟语音-AI-的-WebRTC-架构](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285679&idx=4&sn=a1d3ae046495a8e18a4e9ab60f2674dd)
 
-2026-05-26 14:05:00 | 标签: OpenAI, WebRTC, 语音 AI, 低延迟, 架构设计
-
-> 本文翻译自 InfoQ 对 OpenAI 技术文章的报道，详细介绍了 OpenAI 为支持全球规模的低延迟语音 AI（如 ChatGPT 语音和 Realtime API）而对 WebRTC 架构进行的调整。核心方案是将传统的媒体终结模型（如 SFU）替换为一种中继收发器架构。该架构将 WebRTC 会话状态（ICE 协商、DTLS 握手、SRTP 加密等）集中存放在专用的收发器层，而使用轻量级、无状态的中继来接收和转发数据包。这种职责分离的设计减少了公网 UDP 端口的暴露，简化了在 Kubernetes 环境中的运维，并让媒体路由更贴近用户，从而降低延迟。文章对比了直接暴露 UDP 端口和...
+2026-05-26 14:05:00
 
 
 
 ### [不受信任的自主工作负载与-AI-沙箱](https://www.docker.com/blog/untrusted-autonomous-workload-ai-sandboxes/)
 
-2026-05-26 14:00:06 | 标签: Docker, AI 智能体, 微虚拟机, 安全, 软件工程
-
-> 作者回忆了一次使用 Claude Code 迁移博客的个人经历，这让他意识到：尽管智能体效率极高，但他已经失去了对自己代码库的理解，并且信任了未经审查的代码。这一经历构成了文章核心论点的框架：自主 AI 编码智能体代表了一种容器从未被设计来应对的新型工作负载。文章详细介绍了 Docker 的解决方案——沙箱，它使用自定义微虚拟机（而非 Firecracker）为每个智能体会话运行一个完整、隔离的 Docker 引擎。文章解释了其架构：微虚拟机边界、用于凭据注入和网络策略的中间人代理，以及一个共享的工作区目录。作者批判性地审视了该系统的局限性，特别是共享工作区，它为恶意 Git 钩子等攻击创建了...
+2026-05-26 14:00:06
 
 
 
 ### [前端初级岗位暴跌-62%：我带了三年的实习生被裁了，而-AI-是他亲手教的](https://juejin.cn/post/7643746413328334882)
 
-2026-05-26 12:02:26 | 标签: 前端开发, AI编程, 职业发展, 初级岗位, 技术焦虑
-
-> 文章以作者带领三年的实习生被公司优化为引子，引出了前端初级岗位正在被 AI 技术深刻冲击的现实。作者引用了拉勾网 2026 年第一季度的行业报告数据，指出前端初级岗位招聘量同比暴跌 62%，单个岗位平均收到 127 份简历，超过 80%的公司要求熟练使用 AI 编程工具。文章核心观点是，AI 已经能够完成初级开发的大部分工作，企业不再需要花费半年培养新人，而是直接招聘高级工程师利用 AI 覆盖初级产出。作者认为，前端岗位并未消失，但入行门槛被 AI 暴力抬高，从「会不会写」变为「能不能解决复杂问题」。文章最后指出，真正的危险不是岗位消失，而是停止进化的思维，并鼓励技术人向 AI 工程化、前端 ...
+2026-05-26 12:02:26
 
 
 
 ### [Java-新闻综述：WildFly、Micronaut、Spring-AI、Apache-Fory、GlassFish-插件、Open-Liberty](https://www.infoq.com/news/2026/05/java-news-roundup-may18-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-26 10:30:00 | 标签: Java, WildFly, Micronaut, Spring AI, Apache Kafka
-
-> 本文全面综述了 2026 年 5 月 18 日当周 Java 生态系统中的重大发布与更新。主要亮点包括 WildFly 40（支持 Jakarta EE 11 和 OIDC 登出）、Micronaut 5.0（基于 JDK 25，重构 IoC 容器并支持 JSpecify 空值注解）、Maven Embedded GlassFish Plugin 8.0（支持独立 JVM 执行）以及 Apache Fory 1.0（一种新的多语言序列化框架）的正式版发布。综述还涵盖了 Spring AI 2.0 的第七个里程碑版本（引入了 ToolSpec 和 ToolCallAdvisor）、Open Li...
+2026-05-26 10:30:00
 
 
 
 ### [【第-3705-期】让-Codex-物尽其用：从编程助手到全能工作系统](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279159&idx=1&sn=40f71ba2ace9c79fcf04a7a767999b3c)
 
-2026-05-26 09:00:00 | 标签: Codex, AI 编程, 工作流自动化, 持久线程, 语音操控
-
-> 文章基于 OpenAI Codex 的最新能力，提出将其从单纯的代码生成工具升级为完整的计算机工作系统。核心功能包括：持久线程支持跨会话上下文保留，语音输入降低任务启动门槛，操控与排队机制让用户能实时干预任务流程，浏览器、桌面操作及 MCP 服务器扩展了 Codex 的触达范围。此外，线程自动化和 Goals 功能使 Codex 能在用户离开后持续推进工作，侧边栏则提供就地审阅产物的能力。文章还强调了共享记忆的重要性，建议通过 Obsidian 知识库或原生记忆功能持久化上下文。整体而言，本文是一份关于 Codex 高级用法的实践指南，展示了 AI 智能体从代码助手向通用工作系统的演进路径。
+2026-05-26 09:00:00
 
 
 
 ### [平平无奇的源码，竟藏着-Agent-的核心秘密？](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695603&idx=1&sn=1753f7e5a63067c16db284bc22fbe238)
 
-2026-05-26 08:45:00 | 标签: Agent, OpenClaw, System Prompt, Skill 机制, 源码分析
-
-> 文章以腾讯云开发者公众号的形式，对 OpenClaw 这一 Agent 系统的源码进行了深度解读。作者将 Agent 架构概括为「三件套」：System Prompt、Agent 运行循环和 Skill 机制。文章详细分析了 System Prompt 的分层结构，展示了其如何像「乐高积木」一样由多个独立模块（工具、安全、技能、记忆等）按需拼装而成。核心亮点在于 Skill 机制，它通过「按需加载」策略，仅在 System Prompt 中注入技能的名称和描述（约 100 token/个），当 LLM 判断需要时再通过 read 工具读取完整的 SKILL.md 文件，从而避免了将所有技能内容...
+2026-05-26 08:45:00
 
 
 

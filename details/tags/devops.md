@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-27 08:29:56 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-27 11:04:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -314,9 +314,7 @@
 
 ### [为-Amazon-Quick-构建企业级可观测性解决方案-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-an-enterprise-observability-solution-for-amazon-quick/)
 
-2026-05-26 16:09:06 | 标签: Amazon Quick, 可观测性, AWS, 数据湖, Quick Sight
-
-> 随着 Amazon Quick 等企业级 AI 平台的扩展，平台所有者需要集中了解用户采用率、满意度、功能参与度和成本。本文详细介绍了为 Amazon Quick 构建企业级可观测性平台的分步解决方案。该方案使用 Amazon CloudWatch vended 日志和 AWS CloudTrail 事件作为数据源，通过订阅过滤器和 EventBridge 规则，经由 Amazon Data Firehose 流式传输到 S3 数据湖。数据在 AWS Glue 中编目，并通过 Amazon Athena 进行查询。对于业务用户，该解决方案提供了一个预构建的 Quick Sight 仪表盘用于交...
+2026-05-26 16:09:06
 
 
 
@@ -550,17 +548,13 @@
 
 ### [Vercel-如何将构建等待时间从-90-秒缩短至-5-秒](https://blog.bytebytego.com/p/how-vercel-cut-build-wait-times-from)
 
-2026-05-26 23:31:10 | 标签: Vercel, Hive, Firecracker, 微虚拟机, 构建基础设施
-
-> ByteByteGo 新闻通讯的这篇文章详细分析了 Vercel 如何通过构建其内部构建基础设施平台 Hive，实现了 18 倍的构建预置时间提升。核心挑战在于对抗性多租户：Vercel 必须在共享硬件上运行不受信任的客户代码，这需要比标准容器更强的隔离性。文章解释了为什么容器无法满足这种对抗性威胁模型，以及 Vercel 如何采用 AWS Firecracker 微虚拟机作为基础。Firecracker 提供了虚拟机级别的隔离，同时具备接近容器的速度，启动时间约 125 毫秒。在此基础上，Vercel 叠加了三个关键优化：通过镜像缓存和块设备快照实现更快的启动、预启动单元预热池以消除大多数构...
+2026-05-26 23:31:10
 
 
 
 ### [Platform-Engineering-Labs-扩展-formae，支持-Kubernetes-和原生-Helm-集成](https://www.infoq.com/news/2026/05/formae-k8s-helm-integration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-26 20:00:00 | 标签: formae, Kubernetes, Helm, 基础设施即代码, 平台工程
-
-> Platform Engineering Labs 宣布对开源基础设施即代码平台 formae 进行重大更新，引入完整的 Kubernetes 支持、原生 Helm 集成、直接 .tfvars 兼容性以及新的公共插件中心。此次更新将 formae 定位为基础设施运营的统一“记录系统”，使平台团队能够通过自动化变更编码和降低运营开销来管理 Kubernetes 环境与多云生态系统。与依赖脆弱状态文件的传统 IaC 工具不同，formae 持续从实时基础设施中推导其真相源，自动编码任何工具所做的变更。新的公共中心为共享和发现社区插件提供了集中环境，而 .tfvars 支持则允许组织重用现有 Ter...
+2026-05-26 20:00:00
 
 
 

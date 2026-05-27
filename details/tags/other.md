@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-27 08:29:56 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-27 11:04:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3529,33 +3529,25 @@
 
 ### [借助-NVIDIA-CompileIQ-自动调优，挖掘更多内核性能](https://developer.nvidia.com/blog/extract-more-kernel-performance-with-nvidia-compileiq-auto-tuning/)
 
-2026-05-27 06:08:58 | 标签: NVIDIA, CompileIQ, 编译器自动调优, GPU 优化, CUDA
-
-> 本文介绍了 NVIDIA CompileIQ，这是一个随 CUDA 13.3 发布的全新编译器自动调优框架，旨在弥合通用编译器启发式算法与特定工作负载最优性能之间的差距。CompileIQ 使用进化算法和遗传算法来探索内部编译器参数——寄存器分配、指令调度、循环变换——这些参数无法通过公开标志暴露。其输出是一个高级控制文件（ACF），编译器通过 --apply-controls 标志使用该文件。文章解释了其动机，重点关注“90% 问题”，即一小部分代码占据了绝大部分计算时间，这使得即使是微小的改进也能产生显著影响。文章通过代码示例提供了逐步入门指南，包括一个简单的单目标示例和一个实现了 1% ...
+2026-05-27 06:08:58
 
 
 
 ### [NVIDIA-CUDA-13.3-引入-C++-Tile-编程、编译器自动调优及-Python-更新，全面提升-GPU-开发体验](https://developer.nvidia.com/blog/nvidia-cuda-13-3-enhances-gpu-development-with-tile-programming-in-c-compiler-autotuning-and-python-updates/)
 
-2026-05-27 05:41:49 | 标签: CUDA, GPU 编程, NVIDIA, C++, Python
-
-> 这篇来自 NVIDIA 技术博客的文章详细介绍了 CUDA 13.3 版本的主要特性。核心亮点包括推出 CUDA C++ Tile 编程，它通过自动化底层 GPU 细节，简化了高性能内核的开发。该版本还标志着 CUDA Python 达到稳定的 1.0 版本，为 CUDA 运行时提供了 Pythonic 接口，并支持绿色上下文和进程检查点等功能。在性能方面，新的 CompileIQ 编译器自动调优框架在 GEMM 和注意力机制等关键内核上可实现高达 15% 的加速。其他重要更新包括 NVCC 正式支持 C++23、CCCL 3.3 扩展了与 DLPack/mdspan 的张量互操作性，以及数学...
+2026-05-27 05:41:49
 
 
 
 ### [使用-NVIDIA-CUDA-Tile-在-C++-中开发高性能-GPU-内核](https://developer.nvidia.com/blog/develop-high-performance-gpu-kernels-in-cpp-with-nvidia-cuda-tile/)
 
-2026-05-27 05:41:44 | 标签: CUDA, GPU 编程, C++, Tile 编程, NVIDIA
-
-> 这篇来自 NVIDIA 技术博客的文章介绍了 CUDA Tile C++，这是一种使用基于 tile 的抽象来编写 GPU 内核的新编程模型，现已随 CUDA 13.3 在 C++ 中可用。文章解释了 tile 编程的核心概念，并将其与传统 SIMT 模型进行了对比。文章提供了向量加法和矩阵乘法内核的详细、可运行代码示例，演示了如何使用 tensor span、分区视图和 tile 操作。文章还介绍了用于分析 tile 内核的 Nsight Compute 等开发者工具，并概述了硬件和软件要求（计算能力 8.x+、CUDA 13.3、R580+ 驱动）。其关键优势在于 CUDA Tile C+...
+2026-05-27 05:41:44
 
 
 
 ### [领域迁移：将数据治理从产品分类转向基础设施投资](https://towardsdatascience.com/the-domain-shift-moving-data-governance-from-product-triage-to-infrastructure-investment/)
 
-2026-05-26 20:00:00 | 标签: 数据治理, 数据架构, 领域驱动设计, 基础设施投资, 可扩展性
-
-> 本文探讨了现代数据治理中的一个关键瓶颈：随着组织数据产品组合的增长，如何衡量和扩展治理有效性。作者认为，持续分类的默认运营模式——根据合规清单逐一审查单个产品——在大规模下会失效，导致团队倦怠和隐藏的系统性故障。核心洞见在于将分析单位从产品转移到领域（例如财务、人力资源）。通过跨领域聚合产品级合规数据，组织可以发现模式，例如某个特定的治理支柱（如基于角色的访问控制、数据血缘）在多个领域普遍失效，这指向的是基础设施层面的问题，而非孤立的产品问题。文章引入了一个领域成熟度热力图作为诊断工具来可视化这些模式，使领导层能够优先处理系统性修复（例如修复元数据采集工具），而不是处理单个产品工单。这种方法将...
+2026-05-26 20:00:00
 
 
 
@@ -13905,25 +13897,19 @@
 
 ### [将-DSA-注意力引入多模态，快手-Keye2.0-开启强化推理新范式](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500530&idx=1&sn=246a6c7439b7dfd5d31dccd574cd22ff)
 
-2026-05-26 18:37:00 | 标签: Keye-VL-2.0, 快手, 多模态大模型, DSA, 稀疏注意力
-
-> 本文是快手技术团队发布的官方技术博客，详细介绍了其最新多模态大语言模型 Keye-VL-2.0-30B-A3B 的核心技术突破。文章首先指出长视频理解的痛点在于超长视觉上下文带来的算力瓶颈和信息稀释，而 Keye-VL-2.0 通过首次在多模态场景中应用 DeepSeek Sparse Attention (DSA) 架构，结合稀疏注意力与特征聚合，成功实现了对 256K 超长上下文的深度感知，并在 TimeLens、LongVideoBench 等视频理解基准上取得了超越 Gemini 等闭源模型及同级别开源模型的成绩。其次，模型首次内建了 Agent 协作机制，在 Code Agent、T...
+2026-05-26 18:37:00
 
 
 
 ### [架构云原生-Kafka：从分层存储迈向无盘未来](https://www.infoq.com/articles/architecting-cloud-native-kafka/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-26 17:00:00 | 标签: Apache Kafka, 云原生, 分层存储, FinOps, KIP-848
-
-> 这篇全面的技术文章审视了 Apache Kafka 在适应云原生环境过程中正在进行的架构转型。文章首先阐述了推动这一演进的经济压力，并以 Discover Financial Services 的案例研究说明了在云中运行 Kafka 的成本现实。随后，文章深入探讨了代表重大架构转变的几个关键 Kafka 改进提案（KIP）。它涵盖了 KIP-405（分层存储），该提案通过将冷数据迁移到对象存储来解耦计算和容量，以及相关的 FinOps 风险，如请求放大。文章详细介绍了 KIP-1267，该提案提出了分层存储的成本归属指标，并提供了使用 Prometheus 和 Grafana 的实用实施指南。...
+2026-05-26 17:00:00
 
 
 
 ### [TamboUI-承诺为-Java-构建-TUI-带来更强大的能力](https://www.infoq.com/news/2026/05/tamboui-java-tui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-26 17:00:00 | 标签: TamboUI, Java, TUI, 终端 UI, CLI
-
-> TamboUI 是一个面向 Java 的现代文本用户界面（TUI）库，于 2026 年初发布。受 Rust 的 Ratatui 库以及 Charm 和 Bubbletea 等其他框架的启发，它致力于将 Java 的终端 UI 能力从原始水平提升到现代水平。该库提供了一系列 API，从底层的终端绘制到高级组件、事件处理和 CSS 样式。它与 GraalVM 完全兼容，可编译为原生二进制文件，从而解决了启动时间和分发问题。TamboUI 已被 Maven 和 Spring 等主要项目采用，并集成到了 Quarkus 生态系统中。该项目源于社区号召，旨在让 2026 年成为 Java 在终端领域的一...
+2026-05-26 17:00:00
 
 
 
@@ -35143,11 +35129,11 @@
 
 
 
-### [为-Agent-设计产品](https://baoyu.io/blog/2026-04-24/teddy-riker-2047312986696454584)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-24T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> UI 并没有死，但软件交互的 80% 正在转向 Agent。产品团队需要像过去为人设计界面一样，认真为 Agent 设计工具、上下文和反馈闭环。
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 
