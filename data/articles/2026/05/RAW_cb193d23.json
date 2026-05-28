@@ -1,0 +1,58 @@
+{
+  "id": "RAW_cb193d23",
+  "title": "ITBench-AA：前沿模型在首个智能体企业 IT 任务基准测试中得分低于 50% —— 来自 Artificial Analysis 和 IBM",
+  "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+  "date": "2026-05-28 01:20:29",
+  "author": "Ayhan Sebin, Saurabh Jha, Rohan Arora",
+  "siteName": "Hugging Face Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"SVELTE_HYDRATER contents\"></div>\n  <div class=\"mb-4\">\n   <span style=\"font-size: 1rem;\">Artificial Analysis and IBM Research are launching ITBench-AA, the first in a new series of benchmarks evaluating models on agentic enterprise IT tasks, starting with Site Reliability Engineering tasks where frontier models score below 50% ITBench-AA’s SRE tasks benchmark model performance on Kubernetes incident response, where models and agents must diagnose live systems by reading logs, tracing dependencies, and identifying root-cause entities across complex infrastructure. The underlying ITBench dataset has been developed by IBM Research, leveraging IBM’s deep expertise in enterprise IT operations. Artificial Analysis has worked closely with IBM over the last 6 months to develop an implementation of the dataset for frontier AI evaluation, beginning with Site Reliability Engineering (SRE) and expanding to Financial Operations (FinOps) and Chief Information Security Officer (CISO) tasks over time.</span>\n  </div>\n  <p></p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/rFWkDKqoSuNa1daGKfCiR.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/rFWkDKqoSuNa1daGKfCiR.png\" alt=\"image\"></a></p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"key-findings\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#key-findings\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Key findings: </span></h2>\n  <ol>\n   <li>Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads at 47%, followed by GPT-5.5 (xhigh) at 46% and Qwen3.7 Max at 42%.</li>\n   <li>All frontier models score below 50%, making ITBench-AA SRE one of the least saturated agentic benchmarks in our suite. For context, frontier models score considerably higher on Terminal-Bench.</li>\n   <li>Turn counts vary nearly 3x and longer trajectories do not translate to higher accuracy. GPT-5.5 (xhigh) averages 31 turns per task at 46%, while Gemini 3.1 Pro Preview averages 83 turns at 30%. Models that over-investigate tend to surface upstream fault-injection mechanisms or co-occurring symptoms as false positives.</li>\n   <li>GLM-5.1 (Reasoning) leads open weights models at 40%, effectively tied with Gemini 3.5 Flash (high). DeepSeek V4 Pro (Reasoning, Max Effort) follows at 38%, with Gemma 4 31B (Reasoning) at 37%, ahead of Gemini 3.1 Pro Preview at 30%.</li>\n  </ol>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"itbench-aa-sre-overview\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#itbench-aa-sre-overview\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> ITBench-AA SRE overview: </span></h2>\n  <ul>\n   <li>59 SRE tasks in total: 40 public tasks and 19 brand new, held-out tasks</li>\n   <li>Each task provides a Kubernetes incident snapshot containing alerts, events, traces, metrics, logs, and application topology. The model must identify the minimal set of independent root-cause Kubernetes entities responsible for the incident.</li>\n   <li>Faults span typical SRE failure modes including infrastructure, service, application, and chaos-injected incidents, such as resource quota exhaustion, rollout failures, connection pool exhaustion, and network partitions. Methodology details:</li>\n   <li>Agentic harness: each task is solved by the model running in our open-source Stirrup reference harness, with shell access to a sandboxed file system containing the relevant logs and snapshots. 100-turn cap per task, 3 repeats per task.</li>\n   <li>Models and agents submit a list of root-cause entities (Kubernetes Deployments, Services, Pods, etc.) they believe caused the incident. Each submission is compared against a ground-truth set of root causes provided by IBM Research.</li>\n   <li>Scoring uses average precision at full recall: if a model misses any of the ground-truth root causes, it scores 0.0 for that repeat. If it identifies all of them, it is awarded a score equal to its precision - the share of its submitted entities that are actual root causes, i.e. true positives / (true positives + false positives). The headline score is the average across 59 tasks × 3 repeats.</li>\n   <li>The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models.</li>\n  </ul>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"highlights\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#highlights\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Highlights </span></h2>\n  <ol>\n   <li>Tasks require agents to investigate Kubernetes incident snapshots through shell commands and submit a structured JSON diagnosis identifying the responsible root-cause entities. In one public SRE task, the agent sees user-facing failures in the frontend path. It uses shell commands to inspect the offline snapshot: reviewing alerts shows the incident window, then traces/logs narrow the failure to frontend traffic. Topology pins down the affected services, and Kubernetes manifests reveal a network policy blocking the frontend. The successful diagnosis identifies the responsible root-cause entity: otel-demo/NetworkPolicy/frontend-block-all-ports.</li>\n  </ol>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/bi6cs45lhrvALO5j303PN.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/bi6cs45lhrvALO5j303PN.png\" alt=\"image\"></a></p>\n  <ol start=\"2\">\n   <li>More turns do not mean better answers. Models that submit additional contributing entities beyond the true root cause get penalized: identifying the correct root cause but adding upstream mechanisms (e.g., a chaos-mesh controller) or co-occurring symptoms counts as a false positive under recall-gated precision. This is why some models with long trajectories underperform terser ones: Gemini 3.1 Pro Preview averages 83 turns and scores 30%, while Gemma 4 31B (Reasoning) averages 58 turns and scores 37%.</li>\n  </ol>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/IFJRbHrxyRk9LHLloHDti.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/IFJRbHrxyRk9LHLloHDti.png\" alt=\"image\"></a></p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/R39j4n7rMywHbbl3T-Zkc.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/R39j4n7rMywHbbl3T-Zkc.png\" alt=\"image\"></a></p>\n  <ol start=\"3\">\n   <li>Open weights models sit on the cost frontier of ITBench-AA SRE. Gemma 4 31B (Reasoning) scores 37% at $0.14 per task, outperforming Gemini 3.1 Pro Preview ($2.23 per task, 30%) on both score and cost. GLM-5.1 (Reasoning) scores 40% at $1.23 per task, matching Gemini 3.5 Flash (high) ($1.70) on score at lower cost. Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads the leaderboard at 47% but is the most expensive at $5.38 per task.</li>\n  </ol>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/q41bYt89VC6cCt_W9TY97.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/q41bYt89VC6cCt_W9TY97.png\" alt=\"image\"></a></p>\n  <h3 class=\"relative group flex items-baseline\"><a id=\"itbench-aa-is-built-in-partnership-with-ibmresearch-based-on-their-itbench-benchmark\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#itbench-aa-is-built-in-partnership-with-ibmresearch-based-on-their-itbench-benchmark\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> ITBench-AA is built in partnership with @IBMResearch based on their ITBench benchmark. </span></h3>\n  <ul>\n   <li>For more information see: ITBench paper on arXiv: <a href=\"https://arxiv.org/abs/2502.05352\" rel=\"nofollow\">https://arxiv.org/abs/2502.05352</a></li>\n   <li>GitHub: <a href=\"https://github.com/itbench-hub/ITBench\" rel=\"nofollow\">https://github.com/itbench-hub/ITBench</a></li>\n   <li>ITBench-AA leaderboard: <a href=\"https://artificialanalysis.ai/evaluations/itbench-aa\" rel=\"nofollow\">https://artificialanalysis.ai/evaluations/itbench-aa</a></li>\n   <li>ITBench-AA HuggingFace repo: <a href=\"https://huggingface.co/datasets/ArtificialAnalysis/ITBench-AA/tree/main/sre\">https://huggingface.co/datasets/ArtificialAnalysis/ITBench-AA/tree/main/sre</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "ITBench-AA 是一个针对智能体企业 IT 任务的新基准测试，结果显示前沿 AI 模型在站点可靠性工程（SRE）事件响应任务中得分均低于 50%，其中 Claude Opus 4.7 以 47% 的成绩领先。",
+  "oneSentenceSummary": "ITBench-AA 是一个针对智能体企业 IT 任务的新基准测试，结果显示前沿 AI 模型在站点可靠性工程（SRE）事件响应任务中得分均低于 50%，其中 Claude Opus 4.7 以 47% 的成绩领先。",
+  "summary": "Artificial Analysis 与 IBM Research 联合发布了 ITBench-AA，这是首个旨在评估前沿 AI 模型在智能体企业 IT 任务上表现的基准测试系列，首期聚焦于站点可靠性工程（SRE）。该基准测试包含 59 个 Kubernetes 事件响应任务，模型需通过读取日志、追踪依赖关系并识别根本原因实体来诊断实时系统。关键发现是，所有前沿模型的得分均低于 50%，使其成为饱和度最低的智能体基准测试之一。Claude Opus 4.7 以 47% 的成绩领先，其次是 GPT-5.5（46%）和 Qwen3.7 Max（42%）。该基准测试采用基于召回率的精确度评分指标，对提交了正确根本原因但附带误报的模型进行惩罚。值得注意的是，调查轨迹更长的模型并不一定获得更高准确率，Gemini 3.1 Pro Preview 平均进行了 83 轮交互，但得分仅为 30%。像 Gemma 4 31B 和 GLM-5.1 这样的开源权重模型，在成本显著更低的情况下提供了有竞争力的性能，凸显了企业 AI 智能体的成本效益前沿。",
+  "mainPoints": [
+    {
+      "point": "所有前沿 AI 模型在 ITBench-AA SRE 任务上得分均低于 50%，表明智能体企业任务的饱和度较低。",
+      "explanation": "Claude Opus 4.7 以 47% 的成绩领先，其次是 GPT-5.5（46%）和 Qwen3.7 Max（42%），这表明在复杂、多步骤的诊断推理方面仍有巨大的改进空间。"
+    },
+    {
+      "point": "更长的调查轨迹与更高的准确率并不相关；过度调查的模型会受到惩罚。",
+      "explanation": "Gemini 3.1 Pro Preview 每个任务平均进行 83 轮交互，但得分仅为 30%，而 Gemma 4 31B 平均进行 58 轮交互，得分 37%，这表明效率和精确度比穷举式探索更重要。"
+    },
+    {
+      "point": "开源权重模型在 ITBench-AA SRE 基准测试中提供了极具吸引力的成本-性能权衡。",
+      "explanation": "Gemma 4 31B 每个任务成本为 0.14 美元，得分 37%，在得分和成本上均优于 Gemini 3.1 Pro Preview（成本 2.23 美元，得分 30%），而 GLM-5.1 在得分上与 Gemini 3.5 Flash 持平，但成本更低。"
+    },
+    {
+      "point": "该基准测试采用基于召回率的精确度评分指标，惩罚误报并奖励精确的根本原因识别。",
+      "explanation": "模型必须识别出所有真实根本原因才能获得正分；遗漏任何原因都会导致该次尝试得分为零，而额外的误报则会降低精确度。"
+    }
+  ],
+  "keyQuotes": [
+    "所有前沿模型得分均低于 50%，这使得 ITBench-AA SRE 成为我们测试套件中饱和度最低的智能体基准测试之一。",
+    "交互轮次数量差异近 3 倍，但更长的轨迹并未转化为更高的准确率。",
+    "过度调查的模型倾向于将上游故障注入机制或同时出现的症状作为误报提出。",
+    "开源权重模型位于 ITBench-AA SRE 的成本前沿。"
+  ],
+  "tags": [
+    "ITBench-AA",
+    "智能体基准测试",
+    "站点可靠性工程",
+    "Kubernetes",
+    "前沿模型"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 767,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779902429000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-28 01:20:29"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-28 06:32:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-28 08:27:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -378,7 +378,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -687,6 +687,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [CAPTCHA-如何影响无障碍体验：问题、变通方案与替代方案](https://www.freecodecamp.org/news/how-captchas-affect-accessibility-problems-and-alternatives/)
+
+2026-05-27 23:11:10 | 标签: 无障碍, CAPTCHA, Web 开发, UX 设计, 包容性设计
+
+> 本文全面分析了常见 CAPTCHA 系统固有的无障碍问题。它详细阐述了视觉 CAPTCHA（屏幕阅读器兼容性差、图片选择模糊、对比度低）、听觉 CAPTCHA（音频失真、环境噪音、听力障碍）以及基于时间的 CAPTCHA（认知障碍、行动障碍、焦虑）所带来的具体挑战。作者认为，这些系统常常迫使残障用户在无法使用的视觉界面和同样存在问题的音频替代方案之间做出艰难选择。文章随后提出了更易访问的实用替代方案，包括分析用户行为的基于风险的身份验证、使用安全令牌和密钥的设备信任机制，以及电子邮件确认链接和一次性验证码等人性化验证方法。核心信息是，提升机器人检测的无障碍性并不意味着降低安全性，而是为真实用户...
+
+
+
+### [如何使用-JavaScript-构建基于浏览器的-PDF-旋转工具](https://www.freecodecamp.org/news/how-to-rotate-pdf-pages/)
+
+2026-05-27 23:02:55 | 标签: JavaScript, PDF-lib, PDF 旋转, 基于浏览器的工具, 客户端
+
+> 本文提供了一份逐步教程，教你如何使用 JavaScript 和 PDF-lib 库创建一个基于浏览器的 PDF 旋转工具。它解释了 PDF 旋转的核心概念，即通过更新页面方向元数据来实现，无需服务端处理。教程涵盖了完整的工作流程：使用 CDN 加载库来搭建项目、创建上传界面、预览页面、选择特定页面或页码范围进行旋转、应用旋转选项（左旋、右旋、翻转、纵向、横向）、生成更新后的 PDF，以及预览和下载最终文件。文章强调了此类工具在修复扫描文档、发票和表格方向问题上的实用价值，并突出了客户端处理带来的隐私优势。此外，还包含了常见错误（如意外多次旋转和忽略页面选择）的说明，以及处理大文件时的实用技巧。
 
 
 
@@ -1212,13 +1228,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1368,13 +1384,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2868,13 +2884,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4578,13 +4594,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c2b47d15",
+  "title": "ElevenLabs 推出斯坦·李语音功能",
+  "url": "https://elevenlabs.io/blog/introducing-stan-lee-on-elevenlabs",
+  "date": "2026-05-28 00:24:29",
+  "author": "Dustin Blank, Bridget Ferris",
+  "siteName": "ElevenLabs Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"\">\n   <div class=\"relative\">\n    <template></template>\n    <article class=\"tw-grid tw-grid-cols-1 tw-max-w-[calc(50rem+var(--outer-gutter)*2)] tw-mx-auto xl:tw-max-w-none xl:tw-grid-cols-[calc(50%-25rem)_1fr_calc(50%-25rem)] tw-items-start tw-gap-y-20 tw-px-[var(--outer-gutter)] xl:tw-px-0 tw-pb-[7.5rem] tw-pt-16 md:tw-pb-40 md:tw-pt-20 lg:tw-pt-[6.25rem]\">\n     <header class=\"tw-relative xl:tw-col-start-2\">\n      <nav aria-label=\"Breadcrumbs\">\n       <div>\n        <font color=\"#334155\">\n         <br>\n        </font>\n       </div>\n      </nav>\n     </header>\n     <aside class=\"tw-col-start-1 tw-row-start-2 tw-w-full tw-max-w-[21.25rem] 2xl:tw-pl-5 2xl:tw-ml-auto tw-pr-12 2xl:tw-pr-16 tw-sticky tw-top-28 empty:tw-hidden tw-hidden xl:tw-block\">\n      <nav aria-label=\"Table of contents\" class=\"tw-flow-root\">\n       <div class=\"tw-relative tw-pl-10\" style=\"margin-top:-0.21875rem;margin-bottom:-0.25rem\">\n        <ul role=\"list\" class=\"tw-text-xs/[1.125rem]\"></ul>\n       </div>\n      </nav>\n     </aside>\n     <div id=\"introduction\" class=\"tw-min-w-0 xl:tw-col-start-2 rich-text-blog\" style=\"scroll-margin-top:calc(var(--contextual-nav-height, 0rem) + 3rem)\">\n      <div style=\"--em:var(--tw-font-size-lg);--lh:var(--tw-line-height-lg-loose, var(--tw-line-height-lg));--trim-top:var(--tw-trim-top-lg-loose, var(--tw-trim-top-lg));--trim-bottom:var(--tw-trim-bottom-lg-loose, var(--tw-trim-bottom-lg))\" class=\"typography typography-loose typography-headings\">\n       <p class=\"content-element\">ElevenLabs is proud to announce a landmark partnership with Stan Lee Universe, bringing the voice, likeness, and spirit of one of pop culture's most beloved icons to our platform - across voice, image, and music.</p>\n       <div class=\"block-el block-el-asset block-el-asset-video\">\n        <figure class=\"\">\n         <div class=\"group relative w-full\">\n          <div class=\"aspect-16x9 border rounded-xl flex justify-center items-center relative overflow-hidden bg-dark\">\n           <div class=\"pointer-events-none absolute inset-0 z-20 flex items-center justify-center\">\n            <button aria-label=\"Play\" class=\"pointer-events-auto inline-flex items-center shadow-sm rounded-full effect-transform group-hover:scale-105 hover:scale-105 effect-focus min-h-48 gap-12 p-4 bg-default text-default\"><span class=\"flex items-center justify-center rounded-full h-40 w-40\"> \n              <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" fill=\"none\">\n               <path fill=\"currentColor\" d=\"M24 12 6 22.392V1.608z\"></path>\n              </svg> \n             </span></button>\n           </div>\n          </div>\n         </div>\n        </figure>\n       </div>\n       <h2 class=\"content-element\" id=\"the-voice-of-a-legend\"><span style=\"font-weight:bold\">The voice of a legend</span></h2>\n       <p class=\"content-element\">Stan Lee's voice is now available on the<a href=\"https://elevenlabs.io/iconic-marketplace\" class=\"content-element\"> ElevenLabs Iconic Marketplace</a> and the<a href=\"https://elevenreader.io/\" class=\"content-element\" rel=\"noopener noreferrer\"> Eleven Reader app</a>. Crafted from professional recordings that capture his unmistakable warmth, wit, and energy, this voice clone lets fans experience Stan's narration and storytelling in a manner that feels true to the man himself.</p>\n       <p class=\"content-element\">The partnership also marks the launch of the <span style=\"font-weight:bold\">Stan Lee Book of the Month Club</span> inside Eleven Reader. It’s a monthly celebration of the literature Stan loved, beginning with June's selection:</p>\n       <p class=\"content-element\"><span style=\"font-weight:bold\">Treasure Island</span> by Robert Louis Stevenson: A perfect summer opener for the adventurous. Pirates, treasure maps, and high-seas action. It’s short and propulsive, just the way Stan would've liked it.</p>\n       <p class=\"content-element\">ElevenLabs is committed to adding one public domain work featured in the Stan Lee Book of the Month Club to the platform over the next 12 months, honoring his lifelong love of literature and making the classics accessible to all.</p>\n       <h2 class=\"content-element\" id=\"his-image-reimagined\"><span style=\"font-weight:bold\">His image, reimagined</span></h2>\n       <p class=\"content-element\">Stan Lee's likeness is coming to the<a href=\"https://elevenlabs.io/creative-templates\" class=\"content-element\"> ElevenLabs Creative Templates</a></p>\n       <p class=\"content-element\">For a limited time, users will be able to generate visual content featuring Stan Lee - in the spirit of the cameos that cemented his legend. All use is governed by mutually approved safety guidelines for personal, non-commercial use only. Licensed commercial use of his likeness is available through the Stan Lee Universe team via ElevenLabs.</p>\n       <h2 class=\"content-element\" id=\"inspired-by-stan-two-new-finetunes-on-eleven-creative-music\"><span style=\"font-weight:bold\">Inspired by Stan: Two new Finetunes on ElevenCreative Music</span></h2>\n       <p class=\"content-element\">On <a href=\"https://elevenlabs.io/app/music\" class=\"content-element\">ElevenCreative Music</a>, we're releasing two <a href=\"https://elevenlabs.io/app/music?dialog=finetunes\" class=\"content-element\">Stan Lee-inspired Finetunes</a> - music filters shaped by the aesthetic and energy of his world:</p>\n       <ul class=\"content-element\">\n        <li class=\"content-element\"><span style=\"font-weight:bold\">Superhero Swells</span> <span style=\"font-style:italic\">inspired by Stan Lee</span></li>\n        <li class=\"content-element\"><span style=\"font-weight:bold\">Retro Hero Fanfare</span> <span style=\"font-style:italic\">inspired by Stan Lee</span></li>\n       </ul>\n       <p class=\"content-element\">They're available to all ElevenLabs users, with no additional approval required. They're simply a way to bring more of Stan's universe into what you create.</p>\n       <h2 class=\"content-element\" id=\"built-for-fans\"><span style=\"font-weight:bold\">Built for fans</span></h2>\n       <p class=\"content-element\">This partnership was designed from the ground up to honor Stan's legacy while giving fans something they've never had before: a real, living connection to the man behind the myths.</p>\n       <blockquote class=\"content-element\">\n        <p><span style=\"font-style:italic\">\"Stan always believed in meeting his fans where they were: in the pages of a comic, at a convention, or in a quick on-screen cameo. This partnership is a way of continuing that. Fans have always told us that when they read his comics, they hear the words in Stan's voice, and now, thanks to ElevenLabs, we can make that a reality. His voice, his image, his love of storytelling...ElevenLabs gives us a way to keep that alive and in fans' hands in a way that's true to who he was.\"&nbsp;&nbsp;</span></p>\n       </blockquote>\n       <p class=\"content-element\">- Chaz Rainey, Stan Lee Universe</p>\n       <h2 class=\"content-element\" id=\"get-started\"><span style=\"font-weight:bold\">Get started</span></h2>\n       <p class=\"content-element\">Stan Lee's voice is available now on the<a href=\"https://elevenlabs.io/iconic-marketplace\" class=\"content-element\"> Iconic Marketplace</a> and<a href=\"https://elevenreader.io/\" class=\"content-element\" rel=\"noopener noreferrer\"> Eleven Reader</a>. Create your own Stan Lee cameo-worthy Image &amp; Video <a href=\"https://elevenlabs.io/creative-templates\" class=\"content-element\">Templates</a> and craft your own cinematic worthy score via the Stan Lee-inspired <a href=\"https://elevenlabs.io/app/music?dialog=finetunes\" class=\"content-element\">Finetunes</a>.&nbsp;</p>\n       <p class=\"content-element\">Stan Lee® is a registered trademark of Stan Lee Universe, LLC. The name, image, likeness, voice, and distinctive physical characteristics of the late Stan Lee are the property of Stan Lee Universe LLC. All rights reserved.</p>\n      </div>\n     </div>\n    </article>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "ElevenLabs 宣布与斯坦·李宇宙合作，将这位已故传奇人物的声音、形象及灵感音乐滤镜引入其平台，供粉丝使用。",
+  "oneSentenceSummary": "ElevenLabs 宣布与斯坦·李宇宙合作，将这位已故传奇人物的声音、形象及灵感音乐滤镜引入其平台，供粉丝使用。",
+  "summary": "本文宣布了 ElevenLabs 与斯坦·李宇宙之间的一项新合作。此次合作将斯坦·李标志性的声音引入 ElevenLabs 的 Iconic Marketplace 和 Eleven Reader 应用，让粉丝能够聆听他朗读经典文学作品。同时，合作还通过 Creative Templates 提供其形象用于有限的非商业用途，并发布了两款受其世界启发的新音乐微调模型。此次合作旨在致敬斯坦·李的遗产，为粉丝提供与这位漫威神话背后人物之间全新的、个人化的连接，重点聚焦于故事讲述和粉丝体验。",
+  "mainPoints": [
+    {
+      "point": "斯坦·李的声音现已登陆 ElevenLabs 的 Iconic Marketplace 和 Reader 应用。",
+      "explanation": "一个基于专业录音制作的声音克隆，让粉丝能够听到斯坦·李朗读故事，作为新“月度之书”俱乐部的一部分，首部作品是《金银岛》。"
+    },
+    {
+      "point": "斯坦·李的形象可用于有限的非商业图像和视频生成。",
+      "explanation": "用户可以通过 ElevenLabs 的 Creative Templates 创建包含斯坦·李形象的视觉内容，但需遵守仅限个人使用的安全准则。"
+    },
+    {
+      "point": "受斯坦·李世界启发的两款新音乐微调模型已在 ElevenCreative Music 上发布。",
+      "explanation": "“超级英雄浪潮”和“复古英雄号角”滤镜对所有用户开放，旨在将他的宇宙美学和能量融入用户的创作中。"
+    }
+  ],
+  "keyQuotes": [
+    "ElevenLabs 自豪地宣布与斯坦·李宇宙达成里程碑式的合作，将流行文化中最受爱戴的偶像之一的声音、形象和精神带到我们的平台——涵盖语音、图像和音乐。",
+    "此次合作从头到尾都旨在致敬斯坦的遗产，同时为粉丝提供他们从未有过的东西：与神话背后人物之间真实、鲜活的连接。",
+    "他的声音、他的形象、他对故事讲述的热爱……ElevenLabs 让我们能够以忠于他本真的方式，让这一切保持活力并交到粉丝手中。"
+  ],
+  "tags": [
+    "ElevenLabs",
+    "斯坦·李",
+    "AI 语音",
+    "AI 音乐",
+    "Iconic Marketplace"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 529,
+  "domain": "elevenlabs.io",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_31dbd8",
+  "sourceName": "ElevenLabs Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779899069000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-28 00:24:29"
+}

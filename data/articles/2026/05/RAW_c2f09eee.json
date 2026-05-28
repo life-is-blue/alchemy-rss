@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c2f09eee",
+  "title": "LinkedIn 如何识别导致系统反复冻结的内核锁竞争问题",
+  "url": "https://www.infoq.com/news/2026/05/linkedin-kernel-lock-freeze/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-28 02:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>When LinkedIn engineers encountered <a href=\"https://www.linkedin.com/blog/engineering/feed/the-58-million-key-freeze-what-a-hashmap-resize-taught-us-about-memory-allocation-at-scale\">short-lived, recurring outages where the database powering their user feed became unavailable</a> and then recover without leaving helpful traces, they had to devise a novel approach to uncover the root cause using <em>off-CPU profiling</em> with <a href=\"https://www.infoq.com/ebpf/\">eBPF</a>.</p>\n   <p>As LinkedIn engineer Pratikmohan Srivastav explains, investigating those incidents was especially challenging because they were ephemeral, lasting only 10-15 seconds, and left no useful logs. Additionally, they recurred with no clear pattern and showed no clear external trigger.</p>\n   <p>A first clue emerged by correlating the incidents with the system memory behavior, which showed that each event coincided with a momentary spike in memory allocation, quickly resolved with the system stabilizing at a higher baseline. Further analysis ruled out other common causes, including CPU throttling, memory fragmentation and compaction, and file I/O.</p>\n   <p>Thus, the analysis based on conventional monitoring and metrics provided no hits at the root cause of the issue, which prompted LinkedIn engineers to dig deeper into the OS and runtime-level behavior during the freezes. Their approach turned to off-CPU profiling to understand what threads were blocked at the time.</p>\n   <blockquote>\n    <p>Our solution was to build a trap. We wrote a monitoring script that would automatically capture an off-CPU profile the instant a freeze was detected. The script works as follows:</p>\n   </blockquote>\n   <p>The script used an eBPF toolkit, <a href=\"https://github.com/iovisor/bcc\">BCC</a>, to continuously monitor database health and immediately trigger the BCC <a href=\"https://www.infoq.com/news/2026/05/linkedin-kernel-lock-freeze/offcputime.py\">offcputime.py</a> profiler to record kernel stack traces of blocked or sleeping threads during 15 seconds. This allowed LinkedIn engineers to capture an off-CPU profile during a live freeze:</p>\n   <blockquote>\n    <p>This was the key breakthrough - these events were too brief for conventional monitoring to capture the underlying cause, so the only way to observe the root cause was to have profiling instrumentation already in place when the freeze began.</p>\n   </blockquote>\n   <p>The root cause was traced to a huge memory allocation, around 3.5 GB, which triggered a kernel-level lock on the <code>mmap_lock</code> semaphore, effectively blocking all threads.</p>\n   <blockquote>\n    <p>Any operation that modifies the process's virtual address space - such as a large mmap allocation - must hold this lock in write mode. While the write lock is held, all other threads that need any memory operation (including <code>madvise</code> for purging, and page fault handling for I/O) are blocked.</p>\n   </blockquote>\n   <p>Further analysis revealed that the allocation was triggered by Rust in-memory HashMap (<code>pkey_vs_docref</code>), which maps primary keys to internal document references. When it grew past 58,720,256 entries, it hit a resize threshold and doubled in size.</p>\n   <p>Once the root cause was identified, LinkedIn engineers quickly resolved the issue by pre-allocating the HashMap, thus preventing the resizing during operation. This came at the cost of an additional ~3 GB of resident memory at startup, which proved to be an acceptable trade-off.</p>\n   <p>This incident highlighted several important lessons, Srivastav says: pre-allocating large data structures can help prevent sudden memory spikes in latency-sensitive paths; eBPF-based off-CPU profiling is a powerful tool for diagnosing “silent freezes” that leave little to no trace; and for ephemeral issues, automated instrumentation that activates on failure conditions can be essential for capturing meaningful diagnostics when the problem occurs.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How LinkedIn Identified a Kernel Lock Contention Issue Causing Recurring System Freezes\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/linkedin-kernel-lock-freeze/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779904800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "LinkedIn 工程师利用基于 eBPF 的 off-CPU 性能分析，诊断并修复了由大型 Rust HashMap 扩容引发的内核锁竞争，该问题导致系统反复冻结 10-15 秒。",
+  "oneSentenceSummary": "LinkedIn 工程师利用基于 eBPF 的 off-CPU 性能分析，诊断并修复了由大型 Rust HashMap 扩容引发的内核锁竞争，该问题导致系统反复冻结 10-15 秒。",
+  "summary": "LinkedIn 工程师面临一个棘手的调试场景：为其用户信息流提供支持的数据库出现短暂（10-15 秒）、反复的宕机。这些冻结没有留下有用的日志，也没有明确的模式。传统的监控排除了 CPU 节流、内存碎片化和文件 I/O 的可能性。突破口来自使用 eBPF 和 BCC 工具集构建一个自动化陷阱。一个监控脚本持续检查数据库健康状况，一旦检测到冻结，立即触发 off-CPU 性能分析器，捕获被阻塞线程的内核堆栈跟踪。这揭示了一个 3.5 GB 的巨大内存分配以写模式持有了内核级别的 `mmap_lock` 信号量，阻塞了所有其他需要内存操作的线程。该分配追溯到 Rust 内存中的 HashMap（`pkey_vs_docref`），它在条目数达到 58，720，256 时触发了扩容阈值，导致其大小翻倍。修复方法是在启动时预分配该 HashMap，这增加了约 3 GB 的常驻内存，但消除了运行时的冻结。此事件凸显了基于 eBPF 的 off-CPU 性能分析在诊断无声、短暂系统问题上的强大能力，以及在延迟敏感路径上预分配大型数据结构的重要性。",
+  "mainPoints": [
+    {
+      "point": "LinkedIn 使用基于 eBPF 的 off-CPU 性能分析来诊断无声、反复的系统冻结。",
+      "explanation": "冻结时间太短（10-15 秒），传统监控无法捕获根本原因。构建了一个自动化 eBPF 脚本，在检测到冻结的瞬间触发性能分析，提供了关键的诊断数据。"
+    },
+    {
+      "point": "根本原因是由大内存分配引起的 `mmap_lock` 信号量上的内核锁竞争。",
+      "explanation": "来自 Rust HashMap 扩容的 3.5 GB 分配以写模式持有了 `mmap_lock`，阻塞了所有其他需要内存操作的线程，从而有效地冻结了系统。"
+    },
+    {
+      "point": "修复方法是在启动时预分配大型 HashMap，用增加的内存使用换取运行时稳定性。",
+      "explanation": "预分配 `pkey_vs_docref` HashMap 防止了运行时的突然大容量扩容，以额外增加约 3 GB 常驻内存为代价消除了冻结，这是一个可接受的权衡。"
+    }
+  ],
+  "keyQuotes": [
+    "这是关键的突破——这些事件持续时间太短，传统监控无法捕获根本原因，因此观察根本原因的唯一方法是在冻结开始时就已经部署好性能分析工具。",
+    "任何修改进程虚拟地址空间的操作——例如大型 mmap 分配——都必须以写模式持有此锁。当写锁被持有时，所有其他需要任何内存操作（包括用于清理的 madvise 和用于 I/O 的缺页处理）的线程都会被阻塞。",
+    "我们的解决方案是构建一个陷阱。我们编写了一个监控脚本，一旦检测到冻结，就会自动捕获 off-CPU 性能分析数据。"
+  ],
+  "tags": [
+    "eBPF",
+    "内核锁竞争",
+    "性能调试",
+    "Rust",
+    "HashMap"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 512,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779904800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-28 02:00:00"
+}

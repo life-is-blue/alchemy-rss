@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-28 06:32:13 | [返回首页](/README.md)
+**更新时间**: 2026-05-28 08:27:45 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12376)
+- [AI & 大模型](#ai-llm) (12420)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (828)
-- [DevOps](#devops) (575)
+- [前端与全栈](#frontend-fullstack) (830)
+- [DevOps](#devops) (578)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5855)
+- [其他](#other) (5871)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [使用-Codex-构建自我改进的税务智能体](https://openai.com/index/building-self-improving-tax-agents-with-codex) - AI 精选
 - [我们如何在多个产品中约束-Claude](https://www.anthropic.com/engineering/how-we-contain-claude) - AI 精选
 - [从透明开发到系统工程：AgentScope-2.0-发布](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501135&idx=1&sn=0b96d8e21b27a20f60c423657f2bca84) - AI 精选
 - [致超级个体-|-To-The-Crazy-Ones](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108669&idx=1&sn=c9bb3541cba65b524992eda339f32e83) - AI 精选
@@ -41,9 +42,8 @@
 - [AI-在生产环境中的下一个前沿：混沌工程](https://towardsdatascience.com/the-next-frontier-of-ai-in-production-is-chaos-engineering/) - AI 精选
 - [DeepSeek-V4-报告太详尽了！484-天换代之路全公开](https://www.qbitai.com/2026/04/406809.html) - AI 精选
 - [DeepSeek-V4-预览版：迈入百万上下文普惠时代](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485745&idx=1&sn=ef3bc11042fc329e89bc66a8938e8b2c) - AI 精选
-- [AIE-Europe-回顾-+-智能体实验室论点：无监督学习-x-潜在空间跨界特别篇（2026）](https://www.latent.space/p/unsupervised-learning-2026) - AI 精选
 
-- [查看全部 12376 篇...](/details/tags/ai-llm.md)
+- [查看全部 12420 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 828 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 830 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 575 篇...](/details/tags/devops.md)
+- [查看全部 578 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -165,6 +165,7 @@
 
 
 
+- [🔬ESMFold2：蛋白质领域的“苦涩教训”——Alex-Rives-与-BioHub](https://www.latent.space/p/esmfold2) - AI 精选
 - [GLM-5.1-高速版：400-tokens/s，顶尖模型跑出最快速度](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493927&idx=1&sn=3a85cdfcaa82cbd9cafc02d6d8af713e) - AI 精选
 - [在-Windows-上为-Codex-构建安全有效的沙箱](https://openai.com/index/building-codex-windows-sandbox) - AI 精选
 - [GLM-5.1-开源：支持-8-小时独立工作的长程任务模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493695&idx=1&sn=3c096efd1739c7e0266befeef6ebcd4d) - AI 精选
@@ -184,8 +185,7 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 - [Z-Image-零基础上手指南：本地部署-+-提示词模板实战](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247498939&idx=1&sn=1e149e96e383a0f381f86cb9e6ce74de) - AI 精选
-- [用开源模型强化你的-OCR-工作流](https://mp.weixin.qq.com/s?__biz=Mzk0MDQyNTY4Mw==&mid=2247495937&idx=1&sn=07fa59cf8df62d23f48404181351c2b3) - AI 精选
 
-- [查看全部 5855 篇...](/details/tags/other.md)
+- [查看全部 5871 篇...](/details/tags/other.md)
 
 
