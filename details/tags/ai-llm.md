@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-29 08:31:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-29 11:04:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [Dubbing-v2-发布：革命性的全新配音模型](https://elevenlabs.io/blog/introducing-dubbing-v2)
 
-2026-05-28 23:56:31 | 标签: ElevenLabs, Dubbing v2, AI 配音, 语音合成, 视频本地化
-
-> ElevenLabs 宣布发布 Dubbing v2，这是一款革命性的 AI 配音模型，旨在解决该领域的一个关键问题：让翻译后的语音听起来像是原说话者亲口所说。与那些严重依赖文本稿、常常产生平淡且脱节音频的传统系统不同，Dubbing v2 直接以原始表演为条件。这使得它能够在 90 多种语言中保留说话者的语调、节奏、情感意图和表达细节。该模型还配备了一个同步感知翻译系统，能在与原始视频保持同步的同时，为每种目标语言调整措辞和节奏，以实现自然的口语表达。文章强调了传统专业配音的高昂成本和复杂性，并将 Dubbing v2 定位为面向创作者、营销人员和工作室的更易用、更自动化的替代方案。该模型现...
+2026-05-28 23:56:31
 
 
 
@@ -4816,17 +4814,13 @@
 
 ### [我们如何构建-Cloudflare-的数据平台及其上的-AI-智能体](https://blog.cloudflare.com/our-unified-data-platform/)
 
-2026-05-28 22:00:01 | 标签: 数据平台, AI 智能体, 数据湖仓, Trino, Iceberg
-
-> 本文详细介绍了 Cloudflare 构建统一数据平台 Town Lake 及其对话式 AI 智能体 Skipper 的过程。面对数十个系统造成的数据严重分散问题，Cloudflare 采用数据湖仓架构，基于 Apache Trino、运行在 R2 上的 Apache Iceberg 以及一系列用于治理、PII 检测和 ELT 的内部工具。Skipper 构建在此平台之上，允许用户用自然语言提问，并通过一个多层上下文系统（包括 schema 元数据、人工标注、代码衍生知识和精心整理的数据模型）来锚定问题。文章强调了“默认关闭”的安全模型、使用带有“代码模式”的 MCP 服务器来实现高效的多步骤...
+2026-05-28 22:00:01
 
 
 
 ### [Harness-的尽头不是缰绳，是镜子：AI-时代最沉默的那场革命](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801799&idx=1&sn=bfc162fcfd7607063940ca400285d9ef)
 
-2026-05-28 17:38:00 | 标签: 显形, 隐性知识, 判断工程, Goodhart 定律, AI 编程
-
-> 文章以一位老工程师写下《项目口味说明》为引子，提出核心命题：AI 时代最深刻的变革不是效率提升，而是「显形」——将过去不可言说的隐性知识、直觉判断和团队默契，首次转化为机器可读的文本。作者借用 James C. Scott 的《Seeing Like a State》理论，将人类历史上的三次大规模显形运动（科学林业、标准化治理、数字文明）与当前 AI 引发的第四次显形进行类比，指出这次显形的独特之处在于「镜子转向了我们自己」。文章系统分析了显形运动在研发的三个层次（意图层、执行层、判断层）中的渗透，并提出了「判断工程的不可能三角」：Spec 完备性、Goodhart 抗性、Tacit 保全三者...
+2026-05-28 17:38:00
 
 
 
@@ -12422,145 +12416,109 @@
 
 ### [突发：三大史上最大-IPO-迎来坏消息](https://garymarcus.substack.com/p/breaking-bad-news-for-three-of-the)
 
-2026-05-29 03:40:00 | 标签: AI行业, Tokenmaxxing, 投资回报率, 企业AI, AI泡沫
-
-> Gary Marcus 分析了 Axios 近期的一篇报道及其他信号，指出企业 AI 支出正发生重大转变。他认为，'Tokenmaxxing'（即公司鼓励大量消耗 AI Token 却缺乏明确商业理由的做法）正在迅速消退。其驱动力在于缺乏可证明的 ROI，Uber 的 COO 质疑 AI 成本，以及有报道称数百万美元花在 Token 上却回报甚微。Marcus 将此与更广泛的财务担忧联系起来，引用 FT 数据显示微软和谷歌等大型科技公司的 AI ROI 为负。他警告称，这种曾暂时提振 Anthropic 等公司收入的趋势不可持续，将导致预算收紧、价格下降，并可能给 AI 行业带来财务困境，这与...
+2026-05-29 03:40:00
 
 
 
 ### [EmoNet：用于情感识别的说话人感知-Transformer——以及-2026-年我会如何重构](https://towardsdatascience.com/emonet-speaker-aware-transformers-for-emotion-recognition-and-what-id-build-differently-in-2026/)
 
-2026-05-29 00:30:00 | 标签: 对话情感识别, ERC, 说话人感知 Transformer, LLM 微调, LoRA
-
-> 作者回顾了其 2024 年关于对话情感识别（ERC）的硕士论文，其中构建了 EmoNet 模型，在 EmoryNLP 数据集上取得了 39.18 的加权 F1 分数。文章详细阐述了三个关键贡献：全局说话人身份（跨对话的持久化说话人 ID）、说话人行为模块（基于 GRU 的说话人历史压缩）以及加权交叉熵损失（处理类别不平衡而不扭曲序列数据）。消融实验结果显示，单独使用全局说话人 ID 会损害性能，但与说话人行为模块结合后，相比 CoMPM 基线获得了 +1.81 F1 的净增益。随后，作者审视了 2026 年的技术格局，指出顶级系统现在都使用带有 LoRA 微调和检索增强提示的 LLM（如 In...
+2026-05-29 00:30:00
 
 
 
 ### [为什么-AI-仍然无法解决你的真实数学优化问题](https://towardsdatascience.com/why-ai-still-cant-solve-your-real-mathematical-optimization-problem-and-what-orpilot-does-differently/)
 
-2026-05-28 21:30:00 | 标签: 运筹学, 数学优化, AI 智能体, ORPilot, LLM
-
-> 本文认为，现有的基于 LLM 的运筹学工具在处理真实商业问题时存在不足，因为它们假设问题描述完整且无歧义，并且数据规模小、可内联。作者介绍了 ORPilot，一个专为生产环境设计的开源 AI 智能体。ORPilot 的关键创新在于其顺序执行的五阶段流水线：一个通过结构化对话澄清模糊需求的访谈智能体、一个指定所需 CSV 模式的数据收集智能体、一个从原始数据（例如，根据 GPS 坐标计算距离矩阵）中推导出模型就绪参数的参数计算智能体、一个生成求解器特定 Python 代码（支持 Gurobi、CPLEX、PuLP、Pyomo、OR-Tools）的代码生成智能体，以及一个将数值结果转化为通俗易懂语...
+2026-05-28 21:30:00
 
 
 
 ### [使用-LangSmith-在-AWS-上评估深度智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/evaluating-deep-agents-using-langsmith-on-aws/)
 
-2026-05-28 20:32:23 | 标签: AI 智能体, LangSmith, 评估, AWS, Amazon Bedrock
-
-> 这篇文章由 LangChain 的合作伙伴关系负责人合著，探讨了在生产环境前验证 AI 智能体行为的挑战。文章解释了为什么由于非确定性、错误传播和创造性解决方案，智能体评估比评估标准 LLM 输出更困难。文中详细介绍了五种评估模式：每个数据点的自定义测试逻辑、单步评估、完整智能体轮次、多轮评估以及安全性和状态检查。文章提供了一个完整的端到端示例，使用 Amazon Bedrock 上的 text-to-SQL 深度智能体，并附有每种模式的代码片段。此外，文章还涵盖了从离线评估（使用 pytest 和 LangSmith）过渡到在线生产监控的过程，后者利用 LangSmith 的代码评估器、LL...
+2026-05-28 20:32:23
 
 
 
 ### [Skill-文档也能训练？SkillOpt：把-Agent-的经验写进一份可优化说明书](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451990&idx=1&sn=63e53397bfc684a3fa0aa3aca70a11c8)
 
-2026-05-28 19:58:00 | 标签: SkillOpt, Agent, Skill 文档, 提示词优化, LLM
-
-> 本文详细解读了微软发表的论文 SkillOpt，该论文提出了一种将 Agent 的 Skill 文档（即提示词、说明书或工作流规范）作为可训练外部状态进行优化的方法。文章指出，传统的 Skill 文档要么靠人手写，要么由 LLM 一次性生成，缺乏反馈闭环。SkillOpt 则模仿深度学习训练范式，将 Skill 文档视为参数，通过 rollout（执行任务）、reflection（反思轨迹）、bounded edits（受限编辑）、validation gate（验证门控）和 rejected-edit buffer（拒绝编辑缓冲）等机制，在文本空间内对 Skill 文档进行迭代优化。实验结果...
+2026-05-28 19:58:00
 
 
 
 ### [SCOPE-开源：首个跨游戏-FPS-世界模型，逐像素动作控制零样本泛化未见场景](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508704&idx=1&sn=862ff8a75146319976b5734af2b1f16e)
 
-2026-05-28 19:07:00 | 标签: 世界模型, FPS 游戏, 视频生成, 扩散 Transformer, 零样本泛化
-
-> 本文介绍了由中国科学院大学、腾讯、新加坡国立大学等机构联合开源的 SCOPE 模型，这是首个面向第一人称射击（FPS）游戏的交互式世界模型。SCOPE 的核心创新在于提出逐像素空间选择性动作调节机制，将离散事件（开火、换弹）的视觉效果精确约束在武器区域，同时保持环境区域的稳定生成，解决了传统方法中全局动作注入导致的全帧像素扰动问题。该模型基于 5B 参数视频扩散 Transformer 端到端训练，在 CrossFPS 测试集上 8 项指标中取得 7 项最优（JEPA 0.806、FVD 690.3、动作完成率 71.5%），并可零样本迁移至训练中从未出现的游戏风格。文章还介绍了 CrossF...
+2026-05-28 19:07:00
 
 
 
 ### [在-Amazon-Bedrock-AgentCore-中构建随智能体成长的测试套件-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-a-test-suite-that-grows-with-your-agent-with-dataset-management-in-amazon-bedrock-agentcore/)
 
-2026-05-28 18:10:47 | 标签: 智能体评估, Amazon Bedrock AgentCore, 带版本的数据集, 用户模拟, CI/CD
-
-> 文章认为，只有当测试输入在多次运行中保持稳定时，智能体评估才有意义，这样分数变化才能反映智能体的实际改进，而非测试集的漂移。文章将 Amazon Bedrock AgentCore 中的数据集作为一等、带版本管理的资源引入，用于管理评估场景。文章区分了预定义场景（向后看，包含脚本化输入、预期输出、工具序列和断言）和用户模拟场景（向前看，由 LLM 驱动的角色根据人物画像发起多轮对话）。以面向金融经纪人的市场趋势智能体为例，文章逐步介绍了如何将生产环境中的故障捕获为永久测试用例、创建和发布带版本的数据集、以按需和批量模式运行评估，以及根据结果迭代智能体。文章强调将测试套件基于真实事件，使用预定义...
+2026-05-28 18:10:47
 
 
 
 ### [Claude-Opus-4.8-现已在-AWS-上可用-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/claude-opus-4-8-is-now-available-on-aws/)
 
-2026-05-28 17:51:32 | 标签: Claude Opus 4.8, Amazon Bedrock, Anthropic, AWS, AI 模型
-
-> 本文宣布 Anthropic 的 Claude Opus 4.8 在 Amazon Bedrock 和 AWS 上的 Claude Platform 正式可用。该模型被视为生产工作流的一次有意义进步，关键改进体现在智能体编码、深度知识工作以及可独立运行数小时的多阶段自主任务上。Opus 4.8 能够跨阶段维持计划、跟踪进度，并在出现错误时自主调整方向，从而带来更可预测的行为和更少的审查周期。文章重点介绍了金融服务、法律、生命科学和网络安全领域的特定用例，并为 AI 工程师提供了实用指导，包括前提条件、使用 AWS SDK for Python（Boto3）和 Bedrock Converse ...
+2026-05-28 17:51:32
 
 
 
 ### [Qwen-Image-Bench：56-个创作级考点，定义生图评测新标准！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501322&idx=1&sn=b7133e4650fd3ecbdd80a69ec3780a98)
 
-2026-05-28 17:48:00 | 标签: Qwen-Image-Bench, 文生图评测, T2I, 多模态模型, Q-Judger
-
-> 文章介绍了通义实验室最新发布的文生图评测基准 Qwen-Image-Bench。该基准由专业影像视觉与美学设计艺术家团队参与开发，旨在解决现有 T2I 评测仅关注基础语义对齐和图像质量，而忽略真实创作场景中所需的审美直觉、世界知识和逻辑推理能力的问题。Qwen-Image-Bench 将创作能力解构为 5 大核心能力支柱与 17 大典型创作场景，并细化为 56 项可量化的评估维度，覆盖影像叙事、品牌设计、游戏美术、漫画创作等高频真实场景。基准包含 1000 条中英文双语分层 Prompt，每条精准覆盖 4+ 三级维度考点。同时，文章介绍了配套开源的自动化评估模型 Q-Judger，其评估结果与...
+2026-05-28 17:48:00
 
 
 
 ### [实测小云雀短剧-Agent-2.0：真的可以告别抽卡了吗？](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108753&idx=1&sn=ed579e8e94915c3652035d78ca251ff7)
 
-2026-05-28 17:00:00 | 标签: 小云雀, 短剧 Agent, AI 视频生成, 可控性, 角色一致性
-
-> 文章以近期爆火的 AI 短片《丧尸清道夫》和《聚宝仙盆》为引，指出 AI 短剧创作已进入新阶段，但核心痛点仍是「不可控」。作者通过实测小云雀短剧 Agent 2.0 的全链路（从剧本生成、角色与场景资产库建立，到故事板分镜编排），详细展示了其核心升级：支持 100+ 影视级画风的风格库、角色三视图与光影/镜头控制面板、以及通过「@」符号调用预设资产的资产化工作流。文章认为，2.0 版本将专业控制维度从模糊的 prompt 中拆解为独立参数，极大提升了确定性。这种确定性不仅解决了角色换脸、光影随机等痛点，更让创作者能将精力回归到故事本身。文章最后指出，AI 短剧正从「艺术家模式」走向「工业化模式...
+2026-05-28 17:00:00
 
 
 
 ### [使用-Amazon-Quick-和-Snowflake-Cortex-AI-自动化-AML-预警分类-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/automate-aml-alert-triage-with-amazon-quick-and-snowflake-cortex-ai/)
 
-2026-05-28 16:41:07 | 标签: Amazon Quick, Snowflake Cortex AI, MCP, AML, AI 自动化
-
-> 本文展示了 Amazon Quick 与 Snowflake Cortex AI 之间的实际集成，用于自动化金融服务中反洗钱（AML）预警分类这一劳动密集型流程。文章指出，90-95% 的 AML 预警都是误报，因此高效分类至关重要。该解决方案使用 Amazon Quick Flows 作为编排层，通过 Snowflake 托管的 MCP 服务器（使用 OAuth 认证）与 Snowflake Cortex Agent 通信。Cortex Agent 内部编排了两个工具：Cortex Analyst（通过语义视图查询结构化交易数据）和 Cortex Search（从非结构化合规文档中检索相关章...
+2026-05-28 16:41:07
 
 
 
 ### [5-篇-AI-生成的数学论文被接收！00-后创始人洪乐潼融资-14-个亿](https://www.qbitai.com/2026/05/426198.html)
 
-2026-05-28 16:11:40 | 标签: Axiom Math, AI 数学证明, 形式化验证, 洪乐潼, Lean
-
-> 本文报道了 AI 数学初创公司 Axiom Math 的最新进展。该公司由 2001 年出生的 MIT 天才洪乐潼创立，其 AI 系统 AxiomProver 能够将自然语言数学问题转化为 Lean 形式化证明，并通过独立检测器验证每一步。从 2026 年 2 月开始提交的 8 篇论文中，已有 5 篇通过同行评审登上学术期刊，横跨数论、组合、代数几何等多个领域。Axiom 在 3 月完成 2 亿美元融资，估值达 16 亿美元。文章还介绍了洪乐潼的成长经历——14 岁立志 MIT，三年完成数学物理双学位，从斯坦福退学创业，以及团队中知名数学家 Ken Ono 的加入。AxiomProver 曾在...
+2026-05-28 16:11:40
 
 
 
 ### [7B-打败-o3、GPT-5！医学-AI-智能体让模型学会“看哪里、怎么看”](https://www.qbitai.com/2026/05/426150.html)
 
-2026-05-28 16:01:57 | 标签: 医学 AI, 多模态大模型, 视觉推理, AI Agent, ICML 2026
-
-> 本文介绍了上海创智学院 LeapQuest 团队联合浙江大学、上海交通大学、复旦大学提出的两项 ICML 2026 接收工作：Ophiuchus 和 MedScope。核心创新在于将 Think with Images/Videos 范式引入医学 AI，使多模态模型不再被动接收视觉输入后生成解释，而是在推理链中主动调用视觉工具（如 SAM2 分割、BiomedParse 定位、Zoom-in 放大、crop_video 截取等），重新观察关键区域或关键时刻，并用新证据修正判断。Ophiuchus 面向医学图像，在 8 个 VQA benchmark 上以 7B 参数超越 o3、GPT-5 等闭...
+2026-05-28 16:01:57
 
 
 
 ### [AI-正在重写软件行业？8-岁孩子做操作系统，一人公司拿下千万订单](https://www.qbitai.com/2026/05/426069.html)
 
-2026-05-28 15:34:57 | 标签: Vibe Coding, 百度秒哒, 无代码开发, AI编程, OPC
-
-> 本文是百度秒哒产品总经理朱广翔在 2026 中国 AIGC 产业峰会上的演讲整理。核心观点是，AI 驱动的自然语言编程（Vibe Coding）正在引发第四次编程革命，将软件开发门槛从写代码降低到聊天。秒哒作为国内最早探索 Vibe Coding 的平台，通过多智能体协作，让用户只需说出想法就能生成网页、小程序、APP 等。文章通过多个案例展示了这一趋势：8 岁小学生用秒哒制作了专属操作系统；一人公司（OPC）通过平台承接软件订单，如上海一家企业用 4 名项目经理替代 12 人研发团队，交付周期从年缩短至月，并拿下千万订单；石油工程师自建平台替代了 140 万的采购方案。文章强调，Vibe C...
+2026-05-28 15:34:57
 
 
 
 ### [AINews-Cognition-以-260-亿美元估值完成-10-亿美元-D-轮融资](https://www.latent.space/p/ainews-cognition-raises-1b-in-26b)
 
-2026-05-28 15:26:09 | 标签: AI 新闻, Cognition, 推理优化, 智能体基础设施, 持续学习
-
-> 本期来自 Latent Space 的 AINews 全面概述了 2026 年 5 月 26 日至 27 日的 AI 格局。头条新闻是 Cognition 以 260 亿美元估值完成 10 亿美元 D 轮融资，其年化运行收入达 4.92 亿美元，预计年经常性收入（ARR）将达 10 亿美元，这标志着编程智能体在商业上获得了强有力的验证。本摘要涵盖了几个关键主题：推理优化正变得架构化，DeepSeek V4-Pro 的混合注意力机制将 KV 缓存减少至 V3.2 的约 10%；智能体栈正从模型质量转向模型-工具-记忆的契合度，例如 LangChain 的 Deep Agents v0.6 通过 ...
+2026-05-28 15:26:09
 
 
 
 ### [翻译-AI-Agent-的-Zero-Trust-框架｜Anthropic-安全白皮书](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517425&idx=1&sn=c5eab9b48287990941f197fd6369f4d8)
 
-2026-05-28 11:13:00 | 标签: AI Agent, Zero Trust, 安全架构, Anthropic, 提示注入
-
-> 本文是 Anthropic 官方白皮书的翻译与整理，核心探讨在 AI Agent 自主执行操作、调用工具、跨系统协作的场景下，如何落地 Zero Trust 安全原则。文章首先分析了 Agent 系统与传统软件在安全模型上的根本差异，包括无人值守执行、工具访问、决策能力、上下文持久化和多 Agent 协作等新特性，并提出了「爆炸半径」和「最小代理权」两个关键概念。随后，文章系统梳理了当前 Agent 面临的主要威胁，包括提示注入、工具滥用、身份权限滥用、供应链风险和上下文投毒。核心部分围绕六大安全能力域（Agent 身份与认证、访问控制、可观测性与审计、行为监控与响应、输入验证与输出控制、完整...
+2026-05-28 11:13:00
 
 
 
 ### [飞书终于支持-Markdown-了，这个最弱的格式却赢下了整个-AI-时代。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682756&idx=1&sn=f8e09f9f2c7e5a3da57c11d4e6464281)
 
-2026-05-28 09:58:00 | 标签: Markdown, AI 时代, 信息流转, 飞书, Aaron Swartz
-
-> 文章以飞书云文档新增的「下载为 Markdown」功能为引子，指出这一看似微小的更新对重度 AI 用户意义重大。作者随后系统梳理了 Markdown 的诞生背景：2004 年，科技博主 John Gruber 与 17 岁的天才少年 Aaron Swartz 为摆脱 HTML 写作的繁琐，共同创造了这套基于纯文本的轻量级标记语法。文章回顾了 Markdown 从博客圈到 GitHub、再到 Notion 等现代工具的普及历程，并重点分析了其在 AI 时代的决定性优势：纯文本特性使其易于被大模型生成和理解，结构化语法使其对人类可读，极低的 token 消耗使其在成本上远优于 HTML。文章还引用...
+2026-05-28 09:58:00
 
 
 
 ### [《“自动化之后”》](https://every.to/context-window/after-after-automation)
 
-2026-05-28 09:12:57 | 标签: AI 自动化, 人类专业知识, 就业市场, AI 悖论, Every
-
-> 本文是 Every 的一篇通讯稿，旨在推广一档新的播客节目，节目中 Dan Shipper 讨论了他那篇爆款文章《自动化之后》。其核心论点反直觉：尽管 Every 已使用 AI 智能体完全自动化了工作流程，但公司规模却从 4 人增长到了 30 人。Shipper 认为，AI 提高了工作的基准质量，使得人类专家在将输出从“接近完美”打磨至“令人难忘”的过程中更具价值。文章还探讨了，随着模型在固定基准上不断进步，AI 的目标会持续移动，而人类则擅长重新定义问题。文章驳斥了“AI 裁员”的说法，认为这不过是过度招聘或财务问题的遮羞布，并建议读者通过使用 AI 来增强自身现有技能，从而“驾驭模型”。通...
+2026-05-28 09:12:57
 
 
 
@@ -40928,105 +40886,79 @@
 
 ### [UCO-如何利用-AI-简化刑事案件分析](https://cloud.google.com/blog/topics/public-sector/how-the-university-of-central-oklahoma-is-using-ai-to-streamline-analysis-of-complex-criminal-cases/)
 
-2026-05-29 08:00:00 | 标签: NotebookLM, 法医科学, 政府 AI, Google Cloud, 案件分析
-
-> 这篇来自 Google Cloud 博客的文章详细介绍了 Google Public Sector 与中央俄克拉荷马大学法医科学研究所之间的合作。该项目使用 Google 的 AI 研究工具 NotebookLM 来分析复杂的刑事案件文档并构建清晰的时间线。在早期测试中，这一 AI 驱动的解决方案已将分析时间从数月大幅缩短。UCO 团队正在开发一个可重复且可扩展的框架，确保每个 AI 生成的结论都能直接引用回原始源文档，这对于在司法系统中维护证据完整性至关重要。该项目源于一次 AI 黑客马拉松，旨在为法医研究所和执法机构的运作方式设定新的国家标准，并有望在全国范围内推广。
+2026-05-29 08:00:00
 
 
 
 ### [当你的客户是-AI-智能体：B2B-企业如何在买家变成-AI-智能体时保持可见](https://www.freecodecamp.org/news/what-to-do-when-your-customer-is-an-ai-agent/)
 
-2026-05-29 03:00:29 | 标签: AI智能体, B2B采购, 智能体驱动发现, 市场进入策略, API优先
-
-> 本文通过数据驱动分析，阐述了 AI 智能体如何改变 B2B 采购流程。文章引用了 2X AI 创新实验室的 AI 可见性指数，该指数发现，在分析的 70 家 B2B 企业中，96%在智能体驱动的发现过程中实际上不可见。文章指出，传统营销基础设施——为点击链接和阅读页面的人类读者而构建——产生的信号只有人类能读取，而 AI 智能体则解析结构化数据、查询 API 并返回综合推荐。文章确定了三个关键的基础设施缺口：机器可读的市场存在（OpenAPI 规范、schema.org 标记）、面向非人类调用者的产品工具化（API 优先于 UI），以及将品牌证明转化为结构化数据（从 PDF 到可查询记录）。文...
+2026-05-29 03:00:29
 
 
 
 ### [通过真实项目简单理解-RAG](https://www.freecodecamp.org/news/rag-explained-simply-with-a-real-project/)
 
-2026-05-29 00:17:22 | 标签: RAG, 检索增强生成, LangChain, Gemini, ChromaDB
-
-> 本文是一份面向初学者的 RAG 综合指南。文章首先解释了传统 LLM 的根本局限性，例如训练数据截止、无法访问私有数据以及幻觉问题。通过“开卷考试”的类比引入 RAG 的核心概念，即系统从数据库中检索相关信息来增强 LLM 的提示。接着，文章深入剖析了 RAG 流水线的内部工作原理，涵盖了文档分块、嵌入、向量数据库和语义搜索等关键概念。实践部分提供了一个完整的分步教程，指导读者使用 Python、LangChain、Google 的 Gemini API 和 ChromaDB 构建一个“与 PDF 对话”的应用。教程包含了加载 PDF、对文本进行分块、创建嵌入、设置向量数据库以及构建用于回答用...
+2026-05-29 00:17:22
 
 
 
 ### [Slack-AI：通往多云之路](https://slack.engineering/slack-ai-the-path-to-multi-cloud/)
 
-2026-05-28 22:15:20 | 标签: 多云, AI 基础设施, AWS Bedrock, GCP Vertex AI, LLM 服务
-
-> 本文记录了 Slack AI 在三年间的架构演进，经历了四个不同阶段，最终构建了一个多云、多模型的 AI 服务平台。从 AWS SageMaker 起步，团队面临运营开销和模型功能滞后的问题。他们迁移到 Amazon Bedrock 以获得托管服务的简洁性和即时模型访问，但遇到了预置吞吐量的效率瓶颈。这促使他们采用预置与按需容量相结合的混合策略，并开发了包含模型层级和断路器的智能路由层。最后阶段，平台扩展至 Google Cloud 的 Vertex AI，形成了真正的多云架构，实现了基础设施冗余、模型与特性优化以及创新技术的获取。文章详细阐述了每个阶段的技术挑战、权衡取舍和工程解决方案，强调...
+2026-05-28 22:15:20
 
 
 
 ### [使用-LangChain-与向量数据库构建生产级-RAG-系统](https://www.freecodecamp.org/news/production-rag-with-langchain-vector-databases/)
 
-2026-05-28 20:52:22 | 标签: RAG, LangChain, 向量数据库, 生产环境, 可观测性
-
-> 本文宣布在 freeCodeCamp YouTube 频道上推出一门时长 8 小时的综合课程，该课程引导开发者从基本的 RAG 原型逐步进阶到生产就绪系统。课程涵盖完整的 RAG 流水线，包括使用 Chroma 和 PGVector 进行向量数据库优化、混合搜索、Token 预算管理以及使用 LangSmith 实现可观测性。同时，课程还涉及关键的生产问题，如扩展、成本分析、安全层和调试。高级主题包括具有自纠正检索能力的智能体 RAG、用于多跳推理的 GraphRAG，以及使用 ColPali 进行基于视觉文档检索的多模态 RAG。该课程由 Paulo Dichone 讲授，旨在帮助开发者掌握...
+2026-05-28 20:52:22
 
 
 
 ### [问责是-AI-的目标，欧盟法规支持透明度](https://www.infoq.com/news/2026/05/accountability-AI-EU-regulations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-28 19:08:00 | 标签: AI 伦理, 欧盟法规, 问责, AI 法案, GDPR
-
-> 本文总结了 AI 伦理研究员 Joanna Bryson 在 GOTO 哥本哈根大会上的主题演讲，她探讨了 AI、伦理与欧盟法规之间的关系。Bryson 指出，AI 偏见是人类偏见在语言和经验中的体现，伦理与 AI 密不可分。她概述了多项关键欧盟法规——GDPR、《数字服务法案》、《数字市场法案》、《AI 法案》以及新的《产品责任指令》——这些法规共同构建了 AI 问责框架。核心信息是：透明度是实现问责的手段，而问责才是改善社会的真正目标。Bryson 强调，公司应对其使用 AI 构建的产品负责，法律应倾向于使用能完成工作的最简单 AI。在采访中，她讨论了监管面部识别的挑战，并澄清 AI 系统...
+2026-05-28 19:08:00
 
 
 
 ### [Viking-AI-搜索-CLI-正式发布：会说话，就能做搜索推荐](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520074&idx=1&sn=3eed7d763e69903e7c29cbe894a0f156)
 
-2026-05-28 17:00:00 | 标签: Viking, AI 搜索, CLI, IaC, Agent
-
-> 本文介绍了字节跳动 Viking 团队正式发布的 AI 搜索 CLI 工具（SearchCLI）。该工具基于 Infrastructure as Code 范式，将传统搜索推荐系统搭建中涉及的数据清洗、Embedding 选型、索引构建、策略配置、效果调优等复杂环节，整合为一组简洁命令。用户只需通过 AI Agent（如 Trae、Claude Code 等）以对话方式发出指令，即可自动完成从数据导入、搜索推荐问答策略配置到效果评测与自动化调优的全流程。文章以独立设计师小 V 管理上万条 AI 生成素材的案例，详细演示了 SearchCLI 的安装授权、智能数据预处理与导入、多模态搜索配置、个...
+2026-05-28 17:00:00
 
 
 
 ### [用-20%的工资去买-Token？旧金山开源大神：OpenAI-和-Anthropic-找到了-PMF！Anthropic-下场清理中间商，Cursor-倒逼开发模型](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655940081&idx=1&sn=90f6d2cbe8d058dcd2313003706b3b8f)
 
-2026-05-28 16:39:00 | 标签: PMF, AI Agent, Claude Code, Codex, 商业化
-
-> 本文编译自 Simon Willison 的博客及 Hacker News 讨论，核心观点是 AI 公司已找到产品市场契合点（PMF），但驱动因素并非 ChatGPT 等通用聊天机器人，而是 Claude Code、Codex 这类能深度嵌入开发者工作流的 AI Agent 产品。文章通过数据论证了这一观点：ChatGPT 周活超 9 亿，付费率仅 5.6%，难以覆盖万亿美元级基础设施成本；而 Anthropic 因 Claude Code 等产品实现盈利，企业用户每月花费超 200 美元购买 Token，实际价值可达 2000 美元以上。文章还分析了 AI 巨头的商业化策略变化：OpenAI...
+2026-05-28 16:39:00
 
 
 
 ### [Opus-4.8-登陆-Vercel-AI-Gateway](https://vercel.com/changelog/opus-4-8-on-ai-gateway)
 
-2026-05-28 15:00:00 | 标签: Claude Opus 4.8, Vercel AI Gateway, Anthropic, AI 模型, 智能体执行
-
-> Vercel 宣布 Anthropic 的 Claude Opus 4.8 已在 AI Gateway 平台上可用。该新模型专为长周期智能体执行而设计，能够处理复杂的多步骤编码任务，例如此前需要人工中途介入的重构工作。此外，在知识工作场景中，如起草文档、分析数据和制作演示文稿，它也能生成更清晰、更果断的文本。文章提供了使用 AI SDK 和模型标识符 `anthropic/claude-opus-4.8` 的代码示例，以及自适应思考和高努力模式的配置选项。文章还重点介绍了 AI Gateway 的关键特性，包括统一 API、用量追踪、自定义报告、零数据保留支持，以及基于延迟和成本的动态供应商排...
+2026-05-28 15:00:00
 
 
 
 ### [Cloudflare-新增对-Claude-托管智能体的支持](https://www.infoq.com/news/2026/05/cloudflare-claude-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-28 14:23:00 | 标签: Claude 托管智能体, Cloudflare, AI 智能体, 基础设施, 安全连接
-
-> Cloudflare 已增加对 Claude 托管智能体的支持，允许开发者将智能体的编排（“大脑”）与其执行层（“双手”）解耦。智能体逻辑在 Anthropic 平台上运行，而代码执行、安全连接和自定义工具则在 Cloudflare 上管理。此集成提供了沙箱控制、日志记录、轻量级或基于 VM 的执行、通过 Mesh 和 Workers VPC 实现的私有服务访问、浏览器会话监控、内置电子邮件功能以及可定制的工具。默认部署是开源的，并包含快速启动模板。Cloudflare 与 Daytona、Modal 和 Vercel 等其他提供商一同出现在发布阵容中，但获得了优先席位，并拥有诸如用于自动化的...
+2026-05-28 14:23:00
 
 
 
 ### [大模型的-Agent-Skill-功能，在-LLM-HTTP-底层交互流中是怎么承载的？](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695701&idx=1&sn=a8b5dfd8cee58567104bcccc39af6947)
 
-2026-05-28 08:45:00 | 标签: Agent Skill, Tool Calling, Cursor, LLM 协议, AI 编程
-
-> 文章以作者自己实现的 mp-read Skill 为例，通过 7 个步骤的详细拆解，完整展示了 Agent Skill 在 OpenAI 兼容协议下的底层交互流程。核心结论是：Skill 在协议层面完全不存在，它被 Cursor 等客户端「编译」成三种协议原语的组合：System/Developer Message 注入指令、Tools Definition 注册工具、Multi-turn Tool Calling 循环执行。文章从 Skill 发现与描述摘要注入开始，逐步演示了 LLM 如何通过 Read 工具加载 SKILL.md 文件、如何按照指令执行前置检查、如何发起核心命令，最终生成...
+2026-05-28 08:45:00
 
 
 
 ### [5-月-30-日·腾讯-AI-公开课到杭州！0-基础也能拥有「能动手干活」的-AI！名额有限，全程免费！](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695701&idx=2&sn=301af26601a74df0ee689fc198061b72)
 
-2026-05-28 08:45:00 | 标签: AI Agent, 腾讯云, AI 公开课, 零基础, AI 工具
-
-> 本文是腾讯云社区 AI 公开课·杭州站的活动推广文章。活动定于 5 月 30 日在杭州西湖区文体中心举行，全程免费。文章强调，AI 已从被动的对话式工具进化为能主动执行任务的 AI Agent，本次活动旨在帮助零基础用户亲手搭建一个属于自己的 AI Agent。活动内容包括现场装机、场景实操、互动体验和行家沙龙四个板块，并提供技术专员 1V1 陪跑。讲师阵容覆盖不同背景，分享从认知到变现的多元视角。文章列出了五个参与理由，包括体验主动式 AI、零代码门槛、互动挑战、多元讲师阵容以及免费参与和周边礼品。
+2026-05-28 08:45:00
 
 
 
 ### [Claude-code-云端部署-&amp;-魔改-sdk-实现-http-流式调用保姆级教程](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560355&idx=1&sn=c7c83c7bf352322ee7221ca404468fb6)
 
-2026-05-28 08:30:00 | 标签: Claude Code, 云端部署, HTTP 流式调用, FastAPI, SSE
-
-> 文章围绕将 Claude Code 云端化部署的核心挑战展开：离线安装、HTTP 服务化、多用户隔离。作者首先通过 npm pack 打包和 Docker 基础镜像解决了无外网环境下的部署问题。然后，基于 claude-agent-sdk 和 FastAPI + SSE 构建了 HTTP 服务层，将 SDK 的 query() 和 ClaudeSDKClient 两种调用模式封装为 RESTful 接口，支持单次查询、多轮会话、流式输出，并集成了子代理、MCP 服务器、Hooks 等高级特性。最后，针对多用户场景，提出了「一用户一沙箱 + 用户文件版本化存储」的架构，利用容器级隔离解决运行时串...
+2026-05-28 08:30:00
 
 
 

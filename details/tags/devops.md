@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-29 08:31:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-29 11:04:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -314,9 +314,7 @@
 
 ### [使用-REST-API-代理简化对-Amazon-SageMaker-MLflow-的外部访问-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/streamline-external-access-to-amazon-sagemaker-mlflow-using-a-rest-api-proxy/)
 
-2026-05-28 20:35:44 | 标签: Amazon SageMaker, MLflow, REST API, Flask, AWS
-
-> 这篇 AWS 博客文章为正在进行云转型的企业提供了一个解决方案，这些企业需要将 Amazon SageMaker MLflow 与其现有系统集成，并使用基于 HTTPS 的集成方式，而非直接使用 SDK。该架构由三个主要组件构成：作为上游路由器的 Application Load Balancer (ALB)、处理身份验证和请求转换的 Flask 代理服务，以及作为后端的 Amazon SageMaker MLflow。文章提供了使用 AWS CDK 的详细分步部署指南，包括基础设施设置、代理服务安装以及 MLflow REST API 端点的验证。此外，还涵盖了安全方面的考量，例如 Clou...
+2026-05-28 20:35:44
 
 
 
@@ -562,9 +560,7 @@
 
 ### [微软发布-Azure-Linux-4.0，其首个通用服务器-Linux-发行版](https://www.infoq.com/news/2026/05/azure-linux-4-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-28 17:49:00 | 标签: Azure Linux, 微软, Linux 发行版, 云计算, Fedora
-
-> 微软在 2026 年北美开源峰会上宣布了 Azure Linux 4.0 和 Azure Container Linux。Azure Linux 4.0 是一个基于 Fedora 的通用服务器发行版，专为 Azure 虚拟机设计，这是微软首次提供除容器托管之外的支持型 Linux 发行版。Azure Container Linux 基于收购的 Flatcar 项目构建，是一个不可变的、针对容器优化的主机，现已正式 GA。这两个产品的拆分反映了不同的工作负载模式：Azure Linux 4.0 适用于需要熟悉 RPM 生态系统的通用虚拟机工作负载，而 Azure Container Linux ...
+2026-05-28 17:49:00
 
 
 

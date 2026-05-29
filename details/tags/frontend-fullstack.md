@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-29 08:31:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-29 11:04:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -500,9 +500,7 @@
 
 ### [使用嵌入式-Amazon-SageMaker-AI-MLflow-应用构建自定义门户-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-a-custom-portal-with-embedded-amazon-sagemaker-ai-mlflow-apps/)
 
-2026-05-28 20:39:22 | 标签: Amazon SageMaker, MLflow, AWS CDK, Flask, React
-
-> 这篇 AWS 博客文章提供了构建自定义门户的详细指南，该门户嵌入了 Amazon SageMaker AI MLflow 应用的用户界面。该解决方案通过使用单个可书签的 URL 替代预签名 URL 或单独的 AWS 控制台访问，解决了为不断增长的机器学习团队管理访问权限的可扩展性挑战。其架构包括一个作为入口点的 Application Load Balancer (ALB)、一个在 iframe 中嵌入 MLflow 界面的 React 前端，以及一个运行在 Amazon EC2 上的 Flask 反向代理。该代理处理所有 AWS SigV4 身份验证，重写 MLflow URL 以确保正确的...
+2026-05-28 20:39:22
 
 
 
@@ -700,9 +698,7 @@
 
 ### [【第-3706-期】Node.js-Stream-没有在做背压控制，正在悄悄吃掉内存](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279174&idx=1&sn=8b6d812bae24d88634f0fb0ec25c3422)
 
-2026-05-28 09:00:00 | 标签: Node.js, Stream, 背压, 内存泄漏, 工程实践
-
-> 文章以一个真实的生产事故为引子，揭示了 Node.js Stream 背压机制的核心问题：背压是协作协议，消费者可以发出暂停信号，但生产者可以无视它，导致内存无声堆积直至 OOM。作者详细拆解了多个常见陷阱：highWaterMark 只是建议性阈值而非内存上限、Transform 流两端独立缓冲可能膨胀、.pipe() 不传播错误且易造成资源泄漏、async/await 只控制读取节奏不控制写入节奏、流动模式会静默放弃背压控制。针对每个问题，文章提供了具体的修复代码，包括检查 write() 返回值并 await drain 事件、使用 pipeline() 替代 .pipe()、显式配置 ...
+2026-05-28 09:00:00
 
 
 
