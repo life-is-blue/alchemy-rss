@@ -1,0 +1,58 @@
+{
+  "id": "RAW_2340a34a",
+  "title": "微软发布 Azure Linux 4.0，其首个通用服务器 Linux 发行版",
+  "url": "https://www.infoq.com/news/2026/05/azure-linux-4-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-28 17:49:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Microsoft recently announced <a href=\"https://opensource.microsoft.com/blog/2026/05/18/from-open-source-to-agentic-systems-microsoft-at-open-source-summit-north-america-2026/\">Azure Linux 4.0</a> and Azure Container Linux at <a href=\"https://events.linuxfoundation.org/open-source-summit-north-america/\">Open Source Summit North America 2026</a> in Minneapolis.</p>\n   <p>Azure Linux 4.0 is a Fedora-based, general-purpose server distribution for Azure virtual machines, marking the first time Microsoft has offered a supported Linux distribution beyond container hosting. Azure Container Linux, built on the acquired <a href=\"https://github.com/flatcar/Flatcar\">Flatcar project</a>, is an immutable, container-optimized host that is now generally available.</p>\n   <p>Brendan Burns, Kubernetes co-founder and Corporate VP for Azure Cloud Native, <a href=\"https://opensource.microsoft.com/blog/2026/05/18/from-open-source-to-agentic-systems-microsoft-at-open-source-summit-north-america-2026/\">writes</a>:</p>\n   <blockquote>\n    <p>Open source is the foundation for AI and, as AI workloads scale, developers need that foundation to be more secure, more predictable, and easier to build apps and agents. Azure Linux 4.0 and Azure Container Linux give developers and organizations a hardened Linux distribution purpose-built for cloud native and AI workloads.</p>\n   </blockquote>\n   <p>The context makes the announcement less surprising than the headlines suggest. More than two-thirds of customer cores in Azure already run Linux. ChatGPT scales across over 10 million compute cores running Linux. Microsoft's previous Azure Linux (version 3.0, originally CBL-Mariner) was available only through AKS as a container host. The split into two products reflects two distinct workload patterns: Azure Linux 4.0 for general-purpose VM workloads where teams need a familiar RPM-based package ecosystem, and Azure Container Linux for immutable, minimal container hosts in regulated and security-sensitive environments.</p>\n   <p>Lachlan Everson, Microsoft's Principal Program Manager on Azure's open-source team, explained the immutable model at the summit: everything is baked in with no package manager, and all customer workloads run in containers on top of the immutable base. If teams need to change system packages, they're on the wrong product.</p>\n   <p>Azure Linux 4.0 is built on Fedora as its upstream base. The <a href=\"https://github.com/microsoft/azurelinux\">GitHub repository</a> describes it as a set of TOML configuration files and targeted overlays applied on top of Fedora, with packages coming from Fedora's upstream repositories and deviations kept minimal and documented. It's FOSS <a href=\"https://itsfoss.com/news/azure-linux-4/\">reported</a> that Microsoft engineers had initially considered forking Fedora entirely, but were guided toward working within the Fedora ecosystem instead. Microsoft is actively contributing back, with Kyle Gospodnetich, a Linux engineer at Microsoft, co-authoring a proposal to build x86-64-v3 packages for Fedora 45, motivated directly by Azure Linux's performance needs.</p>\n   <p>Gerard Braad, a principal software engineer who <a href=\"https://www.linkedin.com/posts/harishpillay_foss-share-7462889480425734145-uIU9/\">examined the distribution</a>, cautioned that \"<em>Fedora-based</em>\" should not be read as \"<em>Fedora-compatible</em>.\" The minimal package footprint means dependency assumptions that hold on Fedora or Ubuntu may not apply, and binaries are not yet available despite the sources being public. Teams evaluating Azure Linux 4.0 should test their specific dependency chains rather than assuming portability from existing Fedora workflows.</p>\n   <p>The distribution ships with a two-year support lifecycle that encourages regular image refreshes rather than long-term static deployments. In addition, WSL support is planned, which would let Windows developers run the same OS locally that their workloads run on in Azure, closing a dev/prod parity gap.</p>\n   <p>Jim Zemlin, CEO of the Linux Foundation, captured the historical irony during the summit. In response to Burns' announcement, Zemlin noted:</p>\n   <blockquote>\n    <p>When Microsoft joined the Linux Foundation, there was this big conspiracy theory that somehow the Linux Foundation was undermining open source in partnership with Microsoft, and now you announce that you're shipping a Linux distribution. That's amazing.</p>\n   </blockquote>\n   <p>The strategic move mirrors what AWS and Google have done for years. <a href=\"https://aws.amazon.com/linux/\">Amazon Linux</a> (now on version 2023) is the default and recommended OS for EC2 instances and ECS container hosts. Google's Container-Optimized OS runs on <a href=\"https://cloud.google.com/kubernetes-engine\">GKE</a> nodes. Both companies treat their first-party Linux distributions as a way to control the base layer, optimize for their own hardware and services, and reduce dependency on third-party OS vendors.</p>\n   <p>Microsoft was the last of the three major hyperscalers to ship a general-purpose server distribution, and the Fedora-based approach (rather than building from scratch, as with Amazon Linux) is a deliberate bet on upstream collaboration over proprietary control.</p>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=48187736\">Hacker News</a>, practitioners flagged a gap between the announcement and the current reality. One commenter noted:</p>\n   <blockquote>\n    <p>Despite being named here as \"Azure Linux\" and being described as a \"General purpose Linux OS for Azure\", once you go to the product documentation it's referred to as \"Microsoft Azure Linux Container Host for AKS\", and the Quickstart guide is about how to deploy a Kubernetes cluster. It doesn't seem very capable of general use.</p>\n   </blockquote>\n   <p>Sean McKenna, who identified himself as leading the AKS and Azure Linux PM teams at Microsoft, responded directly:</p>\n   <blockquote>\n    <p>To date, its only external exposure was as a container host for AKS. This announcement is about also offering it as a general-purpose OS for VMs in Azure. The public preview will come in a few weeks, at which point you'll see documentation showing how to use it in that capacity.</p>\n   </blockquote>\n   <p>Azure Linux 4.0 is available in public preview with a <a href=\"https://forms.cloud.microsoft/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR4tGI-RsmUBFl6S5RxP0DBtUNUZOUzlGNlZKQlZRUTA1SDVKNktOSjNWSS4u&amp;route=shorturl\">sign-up form</a> for early access. Azure Container Linux is generally available now, with full rollout planned during Microsoft Build on June 2.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Announces Azure Linux 4.0, Its First General-Purpose Server Linux Distribution\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/azure-linux-4-server/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779961740000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "微软发布了基于 Fedora 的 Azure Linux 4.0，这是其首个通用服务器 Linux 发行版，同时 Azure Container Linux 也正式 GA，标志着微软在云端操作系统层控制上的战略布局。",
+  "oneSentenceSummary": "微软发布了基于 Fedora 的 Azure Linux 4.0，这是其首个通用服务器 Linux 发行版，同时 Azure Container Linux 也正式 GA，标志着微软在云端操作系统层控制上的战略布局。",
+  "summary": "微软在 2026 年北美开源峰会上宣布了 Azure Linux 4.0 和 Azure Container Linux。Azure Linux 4.0 是一个基于 Fedora 的通用服务器发行版，专为 Azure 虚拟机设计，这是微软首次提供除容器托管之外的支持型 Linux 发行版。Azure Container Linux 基于收购的 Flatcar 项目构建，是一个不可变的、针对容器优化的主机，现已正式 GA。这两个产品的拆分反映了不同的工作负载模式：Azure Linux 4.0 适用于需要熟悉 RPM 生态系统的通用虚拟机工作负载，而 Azure Container Linux 则适用于受监管环境中不可变、极简的容器主机。该发行版基于 Fedora，仅做了最小化改动，提供两年支持生命周期，并计划支持 WSL。这一战略举措与 AWS 和 Google 的第一方 Linux 发行版类似，使微软成为三大超大规模云厂商中最后一个推出通用服务器发行版的公司。然而，从业者指出公告与实际现状之间存在差距，微软项目经理确认公开预览文档将在数周内发布。",
+  "mainPoints": [
+    {
+      "point": "Azure Linux 4.0 是微软首个面向 Azure 虚拟机的通用服务器 Linux 发行版。",
+      "explanation": "此前，Azure Linux（CBL-Mariner）仅作为 AKS 的容器主机使用。4.0 版本扩展至通用虚拟机工作负载，提供基于 Fedora 的 RPM 包生态系统。"
+    },
+    {
+      "point": "该发行版基于 Fedora，仅做最小化改动，并积极参与上游贡献。",
+      "explanation": "微软选择在 Fedora 生态系统中工作，而非完全分支，并通过为 Fedora 45 提出 x86-64-v3 包等方案进行上游贡献。GitHub 仓库将其描述为基于 Fedora 的 TOML 配置文件与针对性覆盖层。"
+    },
+    {
+      "point": "Azure Linux 4.0 和 Azure Container Linux 服务于不同的工作负载模式。",
+      "explanation": "Azure Linux 4.0 面向需要熟悉包管理器的通用虚拟机工作负载，而 Azure Container Linux 则是受监管环境中不可变、极简的主机，所有工作负载均在容器中运行。"
+    },
+    {
+      "point": "此举与 AWS 和 Google 控制云端操作系统层的策略一致。",
+      "explanation": "Amazon Linux 和 Google 的 Container-Optimized OS 长期以来一直是各自云平台的第一方发行版。微软是三大超大规模云厂商中最后一个推出通用服务器发行版的公司。"
+    }
+  ],
+  "keyQuotes": [
+    "开源是 AI 的基础，随着 AI 工作负载的扩展，开发者需要这个基础更加安全、可预测，并且更易于构建应用和智能体。",
+    "当微软加入 Linux 基金会时，有一种巨大的阴谋论认为 Linux 基金会与微软合作会破坏开源，而现在你宣布要发布一个 Linux 发行版。这太棒了。",
+    "基于 Fedora 不应被理解为与 Fedora 兼容。",
+    "迄今为止，它唯一的外部用途是作为 AKS 的容器主机。此次公告意味着它也将作为 Azure 中虚拟机的通用操作系统提供。"
+  ],
+  "tags": [
+    "Azure Linux",
+    "微软",
+    "Linux 发行版",
+    "云计算",
+    "Fedora"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 810,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779961740000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-28 17:49:00"
+}

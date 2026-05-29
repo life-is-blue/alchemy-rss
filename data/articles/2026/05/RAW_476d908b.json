@@ -1,0 +1,58 @@
+{
+  "id": "RAW_476d908b",
+  "title": "问责是 AI 的目标，欧盟法规支持透明度",
+  "url": "https://www.infoq.com/news/2026/05/accountability-AI-EU-regulations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-28 19:08:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AI bias mirrors human bias; both stem from our language and lived experiences, Joanna Bryson mentioned in her keynote <a href=\"https://www.youtube.com/watch?v=9Yc7Mi7yW7g\">AI, Corporate Responsibility, and Democratic Legitimacy</a> at GOTO Copenhagen. Ethics and AI are inseparable, but AI changes affordances, making harmful actions easier to carry out. The EU regulations apply to AI, since digital products are products. The ultimate goal is accountability: companies must ensure transparency, and laws should favor using the simplest AI that gets the job done.</p>\n   <p>Human implicit bias and AI bias are the same, as Bryson outlined in the Science article <a href=\"https://www.science.org/doi/10.1126/science.aal4230\">Semantics Derived Automatically from Language Corpora Contain Human-Like Biases</a>. Generative AI outputs are a kind of transcription of the human outputs used to train the systems, and implicit biases are embedded in our language and in everything we say, she said. Bryson and her co-authors also found that implicit biases correspond to people’s lived experiences.</p>\n   <p>Ethics can be affected by technology, including AI technology, Bryson explained:</p>\n   <blockquote>\n    <p>There are no discrete ethical matters for AI. AI is a part of how we all do everything all the time now.</p>\n   </blockquote>\n   <p>Affordances can shift when you use AI and digital tools. Affordances, even when used for good purposes, can make harmful actions faster and more efficient, Bryson mentioned.</p>\n   <p>Several regulations exist in the EU regarding artificial intelligence. The General Data Protection Regulation (GDPR) is the basis on which all other EU digital regulations are based, Bryson noted. It’s the starting point for stating what is okay to retain and what is not. You have an obligation in the EU to let people know how fully algorithmic decisions about themselves are made.</p>\n   <p>The Digital Services Act covers areas like recommenders, targeted advertising, and profiling. It concerns whether powerful systems are being used for unlawful purposes, such as preferential treatment of particular partners, accepting money, or steering election outcomes, Bryson said.</p>\n   <p>The Digital Markets Act is about regulating only certain, very large companies that produce some AI, not about AI itself. The AI Act is the most boring of the four acts, Bryson argued:<em> </em></p>\n   <blockquote>\n    <p>The AI Act says that if you’re building a system that could alter people’s lives, then you’d better do decent DevOps. You’d better be able to show that you followed best practice and things like that.</p>\n   </blockquote>\n   <p>The new EU Product Liability Directive states that digital products are products. This implies that all kinds of EU regulations now apply to AI just like they would to any other sector, Bryson explained:</p>\n   <p>You have an obligation to do due diligence. The digital sector didn’t used to be mature, but now it’s coming of age.</p>\n   <p>When you build something with AI, you are responsible for what you build, Bryson argued. If you can’t tell if the outputs are okay, then you’d better not deliver the product.</p>\n   <p>Transparency is about showing people that you’ve done what you needed to do. For AI products, transparency isn’t in itself the goal; it’s a means. Accountability is the goal, Bryson claimed:</p>\n   <blockquote>\n    <p>The real goal is to keep improving our society. The way we improve is through accountability to each other, and continuing to do good practices. Transparency is how we see whether or not you’ve done that good practice.</p>\n   </blockquote>\n   <p>The Digital Services Act and the AI Act both have audits, but no one is going to audit what each neuron in a neural network is doing, as these are process audits, Bryson said. She gave examples of things that those audits check:</p>\n   <blockquote>\n    <p>Did you actually go through the best practices? What were the tests? How did you know something was ready for release?</p>\n   </blockquote>\n   <p>Knowing whether or not your system is operating correctly is essential, Bryson argued. The law should favor using the simplest kind of AI that does the job, she concludes.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/bryson/\">Joanna Bryson</a> about AI ethics and the responsibility of designers.</p>\n   <p><strong>InfoQ: Can you give an example of an ethical issue with AI systems? </strong></p>\n   <blockquote>\n    <p><strong>Joanna Bryson</strong>: In the European AI Act, one of the things that was considered was which technology should be forbidden in Europe. The original draft literally said, \"No face recognition except when there’s terrorism or kidnapping\". But there’s kidnapping every day, unfortunately. The vast majority of kidnappings are done by parents who didn’t agree with a custody decision.</p>\n    <p>The idea is not that we surveil everyone all the time, but rather to use cameras for surveilling public spaces, which only monitor people who have either opted in, or whom a judge has opted in, like terrorists and kidnapped children. But how would we know those cameras are only being used to monitor that small number of targeted people? And how hard would it be for someone to co-opt that infrastructure and use it for something that we, as a union, had agreed shouldn’t happen?</p>\n   </blockquote>\n   <p><strong>InfoQ: What’s your view on the responsibility of the designers of AI systems?</strong></p>\n   <blockquote>\n    <p><strong>Bryson</strong>: Some people are trying to put too much responsibility on the programmers. They have this idea that software engineers are professionals like doctors who need to be licensed, and who have some kind of individual one-to-one obligation in how they design AI systems.</p>\n    <p>I agree that we’re professionals. However, there’s no one-to-one correlation suggesting that a particular programmer should have reported a specific issue or problem. If you see something, then you may have a moral obligation to be a whistleblower. But the liability and obligations ultimately lie in the hands of the entire company that developed the software.</p>\n    <p>You have liabilities to ensure that your customers get the experience that they signed up for. If you include other people’s AI software in your products, you need contracts with the company that created that software so that if anything goes wrong, you can pass the damage obligations back to them.</p>\n    <p>This is similar to the automotive industry; if a car has a design defect, then customers can sue the manufacturer. If it turns out it was because of something in the supply chain, the manufacturer still has the responsibility to check it out. Depending on your contractual arrangements with your suppliers and their solvency, you may or may not be able to push damages back through the supply chain if that’s where the fault lay.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Accountability is the Goal for AI, with EU Regulations Supporting Transparency\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/accountability-AI-EU-regulations/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1779966480000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Joanna Bryson 认为，问责而非透明度才是 AI 的最终目标，而欧盟的《AI 法案》和《产品责任指令》等法规为负责任的 AI 开发提供了框架。",
+  "oneSentenceSummary": "Joanna Bryson 认为，问责而非透明度才是 AI 的最终目标，而欧盟的《AI 法案》和《产品责任指令》等法规为负责任的 AI 开发提供了框架。",
+  "summary": "本文总结了 AI 伦理研究员 Joanna Bryson 在 GOTO 哥本哈根大会上的主题演讲，她探讨了 AI、伦理与欧盟法规之间的关系。Bryson 指出，AI 偏见是人类偏见在语言和经验中的体现，伦理与 AI 密不可分。她概述了多项关键欧盟法规——GDPR、《数字服务法案》、《数字市场法案》、《AI 法案》以及新的《产品责任指令》——这些法规共同构建了 AI 问责框架。核心信息是：透明度是实现问责的手段，而问责才是改善社会的真正目标。Bryson 强调，公司应对其使用 AI 构建的产品负责，法律应倾向于使用能完成工作的最简单 AI。在采访中，她讨论了监管面部识别的挑战，并澄清 AI 系统的责任在于整个公司，而非个别程序员。",
+  "mainPoints": [
+    {
+      "point": "问责是 AI 的最终目标，透明度是实现这一目标的手段。",
+      "explanation": "Bryson 认为，真正的目标是通过相互问责来改善社会，而透明度是我们验证良好实践是否得到遵循的方式。"
+    },
+    {
+      "point": "欧盟的《AI 法案》和《产品责任指令》等法规为 AI 问责构建了框架。",
+      "explanation": "《AI 法案》要求进行流程审计以确保遵循最佳实践，而《产品责任指令》将数字产品视为产品，使公司对其构建的内容承担责任。"
+    },
+    {
+      "point": "AI 系统的责任在于整个公司，而非个别程序员。",
+      "explanation": "Bryson 澄清，虽然软件工程师是专业人士，但责任和义务最终由开发软件的公司承担，这与汽车行业类似。"
+    },
+    {
+      "point": "法律应倾向于使用能完成工作的最简单 AI。",
+      "explanation": "Bryson 总结道，更简单的 AI 系统更容易审计和控制，从问责角度来看更可取。"
+    }
+  ],
+  "keyQuotes": [
+    "真正的目标是不断改善我们的社会。我们通过相互问责和持续践行良好实践来实现改善。透明度是我们判断你是否遵循了良好实践的方式。",
+    "当你用 AI 构建产品时，你就要对其负责。如果你无法判断输出是否妥当，那么最好不要交付该产品。",
+    "《AI 法案》规定，如果你正在构建一个可能改变人们生活的系统，那么你最好做好 DevOps。你最好能证明你遵循了最佳实践等要求。",
+    "AI 没有独立的伦理问题。AI 现在是我们所有人做所有事情的一部分。"
+  ],
+  "tags": [
+    "AI 伦理",
+    "欧盟法规",
+    "问责",
+    "AI 法案",
+    "GDPR"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1035,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1779966480000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-28 19:08:00"
+}
