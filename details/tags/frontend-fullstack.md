@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-30 06:31:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-30 08:29:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -378,7 +378,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -693,6 +693,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [HTML-中的声明式局部更新如何工作](https://www.freecodecamp.org/news/how-declarative-partial-updates-work-in-html/)
+
+2026-05-30 04:20:47 | 标签: HTML, 流式传输, 声明式局部更新, Web 性能, Chrome
+
+> 本文全面概述了 Chrome 的声明式局部更新提案，这是一项浏览器级别的功能，允许 HTML 为流中稍后到达的内容定义占位符。文章将其与传统的顺序 HTML 流式传输（内容按发送顺序渲染）进行了对比。作者详细阐述了核心机制：用于插入点的标记占位符，以及用于替换回退内容的开始/结束范围占位符。文章还涵盖了相关的 JavaScript HTML 插入 API（例如 `setHTML()`、`streamHTML()`），这些 API 提供了一种更安全、更明确的方式来将 HTML 插入 DOM。文章包含了与 React、HTMX 和 Astro 等现有解决方案的比较，并提供了一个实用的 Node.j...
+
+
+
+### [【第-3707-期】Node.js-流泄漏的生产实战手册](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279180&idx=1&sn=617062faa7a92a87c7321721d169c5ca)
+
+2026-05-29 09:00:00 | 标签: Node.js, Stream, 内存泄漏, 背压, pipeline
+
+> 本文是 Node.js 流泄漏生产实战手册的第二部分，继第一部分介绍背压控制基础后，深入剖析了五种在真实流量下才会暴露的泄漏模式：客户端断开但服务端不知情、手动移除监听器导致泄漏、超时只关闭响应未销毁上游、数据库连接绑定到网络速度、以及 pipeline() 清理的异步窗口问题。针对每种模式，文章提供了具体的修复方案和代码示例，核心是使用 pipeline() 替代 .pipe()、利用异步迭代器、结合 AbortSignal 进行超时控制、将上游资源与下游传输解耦、以及显式的兜底清理。文章还总结了五条防御法则：永远用 pipeline()、尊重 .write() 的布尔返回值、谁创建谁销毁、...
 
 
 
@@ -1236,13 +1252,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1392,13 +1408,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2892,13 +2908,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4602,13 +4618,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

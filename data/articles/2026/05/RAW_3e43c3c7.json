@@ -1,0 +1,54 @@
+{
+  "id": "RAW_3e43c3c7",
+  "title": "Braintrust 如何利用 Codex 将客户需求转化为代码",
+  "url": "https://openai.com/index/braintrust",
+  "date": "2026-05-29 20:00:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"w-full\">\n   <div class=\"relative w-full gap-lg flex flex-col\" style=\"--hero-aspect-ratio:1/1;--hero-aspect-ratio-mobile:1/1\">\n    <div class=\"w-full group-data-[spacing=tight]/component-group:first:-mb-3xs group-data-[spacing=default]/component-group:first:-mb-7 flex-1 self-end\">\n     <div>\n      <div class=\"relative flex flex-col\">\n       <div class=\"mb-md gap-2xs flex flex-wrap\">\n        <p class=\"text-meta text-primary-100\">\n         <br>\n        </p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n   <div class=\"pt-2xl w-full\">\n    <div class=\"pt-3xs border-t-primary-4 flex w-full items-center justify-between border-t\">\n     <div class=\"flex gap-4 ms-auto\">\n      <div class=\"relative\">\n       <div class=\"gap-5xs flex items-center\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-_R_ar5bsnqtpknpfivb_\">\n        <span class=\"text-cta\"> </span>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><b><span>Braintrust is the observability and eval platform for shipping quality AI products.</span></b></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>With Codex, its engineers can now take customer feature requests and create preview branches to show working ideas to customers in minutes.</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>In one month, half of the Braintrust team moved to Codex. For founder and CEO Ankur Goyal, the biggest change is not just faster coding. It’s a faster feedback loop with customers.</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>“It sounds simple, but Codex can literally print more text in the terminal without getting slow, and other models just can’t replicate that,” says Goyal.</span></p>\n   </div>\n   <div class=\"group [&amp;:not(:first-child)]:mt-xl [&amp;:not(:last-child)]:mb-xl\">\n    <div class=\"w-full\">\n     <div class=\"px-sm gap-y-8\">\n      <blockquote class=\"text-h3 text-primary-100 text-center font-medium tracking-tight\">“The biggest gain is speed.”</blockquote>\n      <div class=\"text-primary-100 text-meta text-center text-pretty\">—Ankur Goyal, Founder and CEO</div>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-xl\">\n    <div class=\"w-full toc-content-heading scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\" id=\"turning-customer-requests-into-previews-in-minutes\">\n     <div class=\"full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none\">\n      <h2 class=\"text-h3 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\"><span>Turning customer requests into previews in minutes</span></h2>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Speed is often treated as a property of a tool, one that exists separate from its core functionality, but for Goyal, the speed difference “changes the way I interact with Codex compared to other models.”</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>With Codex, the Braintrust team can integrate iteration into its development workflow rather than letting requests sit and wait. “Codex unlocked our ability to try out customer feature requests in real time,” says Goyal. “Previously, if someone gave us a feature request, it would enter a backlog and get prioritized later.”</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Instead, the team can copy and paste requests into Codex, create a preview branch, and show the completed request to the customer in minutes. “The really cool thing with Codex is that we get to iterate and ideate on feature requests with the customer in real time,” says Goyal.</span></p>\n   </div>\n   <div class=\"group [&amp;:not(:first-child)]:mt-xl [&amp;:not(:last-child)]:mb-xl\">\n    <div class=\"w-full\">\n     <div class=\"px-sm gap-y-8\">\n      <blockquote class=\"text-h3 text-primary-100 text-center font-medium tracking-tight\">“The more code we write, the more customer problems we can solve, and Codex is the most effective way to do that right now.”</blockquote>\n      <div class=\"text-primary-100 text-meta text-center text-pretty\">—Ankur Goyal, Founder and CEO</div>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-xl\">\n    <div class=\"w-full toc-content-heading scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\" id=\"speed-makes-autonomous-problem-solving-possible\">\n     <div class=\"full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none\">\n      <h2 class=\"text-h3 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\"><span>Speed makes autonomous problem-solving possible</span></h2>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>For Goyal, Codex changes how much setup it takes to try new ideas. “With other models, I would have to try to prompt the model to solve a specific problem,” he says. Slower tools require more hands-on guidance, which raises the cost of experimentation.</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>“With Codex, I’ve shifted to writing a test that demonstrates a problem, creating a sandbox environment, and then letting Codex run in that environment,” Goyal says. “This is a novel use case for me, and I can run experiments because of the speed.”</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>That speed gives the Braintrust team more room to experiment. Instead of prompting step by step, engineers can define the problem, let Codex work in a controlled environment, and move faster from idea to working solution.</span></p>\n   </div>\n   <div class=\"group [&amp;:not(:first-child)]:mt-xl [&amp;:not(:last-child)]:mb-xl\">\n    <div class=\"w-full\">\n     <div class=\"px-sm gap-y-8\">\n      <blockquote class=\"text-h3 text-primary-100 text-center font-medium tracking-tight\">“The really cool thing with Codex is that we get to iterate and ideate on feature requests with the customer in real time.”</blockquote>\n      <div class=\"text-primary-100 text-meta text-center text-pretty\">—Ankur Goyal, Founder and CEO</div>\n     </div>\n    </div>\n   </div>\n   <div class=\"group [&amp;:not(:first-child)]:mt-xl [&amp;:not(:last-child)]:mb-xl\">\n    <div class=\"w-full\">\n     <div class=\"py-3xl relative bg-primary-4 overflow-hidden rounded-md\">\n      <div class=\"px-2xs relative flex flex-col\">\n       <h2 class=\"text-h2 text-center\"><span>Join the new era of work</span></h2>\n       <div class=\"pt-3xs text-center text-balance\">More than 1 million businesses around the world are achieving meaningful results with OpenAI.</div>\n       <div class=\"flex flex-col items-center justify-center\">\n        <div class=\"gap-3xs pt-md flex flex-row flex-wrap items-center justify-center\">\n         <a class=\"transition duration-short ease-curve-a rounded-[2.5rem] text-nowrap min-h-md flex items-center justify-center gap-[0.3em] text-cta focus:outline outline-offset-2 h-[2.5rem] bg-primary-100 text-secondary-100 px-xs hover:bg-primary-80 disabled:bg-primary-4 disabled:text-primary-60 focus:bg-primary-80 focus:outline-primary-12\" href=\"https://openai.com/contact-sales/\">Contact sales</a>\n        </div>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"flex w-auto\">\n    <div class=\"w-full no-scrollbar overflow-x-auto overflow-y-hidden\">\n     <div class=\"px-sm pe-sm flex min-w-224 flex-none\">\n      <div class=\"mb-md relative ps-sm min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Braintrust 使用 OpenAI 的 Codex 与 GPT-5.5，在几分钟内将客户功能请求转化为可运行的预览分支，极大加速了反馈循环，并实现了自主问题解决。",
+  "oneSentenceSummary": "Braintrust 使用 OpenAI 的 Codex 与 GPT-5.5，在几分钟内将客户功能请求转化为可运行的预览分支，极大加速了反馈循环，并实现了自主问题解决。",
+  "summary": "OpenAI 的这篇案例研究详细介绍了 Braintrust（一个面向 AI 产品的可观测性与评估平台）如何利用 Codex 与 GPT-5.5 彻底革新其开发工作流。其关键创新在于速度：Codex 能够快速生成代码，使工程师能够获取客户功能请求，将其粘贴到 Codex 中，并在几分钟内创建带有可行解决方案的预览分支。这取代了传统的积压驱动流程，实现了与客户的实时迭代和构思。创始人 Ankur Goyal 强调，Codex 的速度改变了交互范式，使工作流从逐步提示转变为更自主的模式：工程师定义问题、创建沙箱，然后让 Codex 自行解决。一个月内，Braintrust 团队中 50% 的成员采用了 Codex，他们提到的主要优势是更快的编码速度，以及更重要的——更快的客户反馈循环。",
+  "mainPoints": [
+    {
+      "point": "Codex 实现了对客户功能请求的实时迭代。",
+      "explanation": "工程师可以将请求复制粘贴到 Codex 中，生成预览分支，并在几分钟内向客户展示可行的解决方案，取代了缓慢的积压流程。"
+    },
+    {
+      "point": "Codex 的速度将开发工作流从引导式提示转变为自主问题解决。",
+      "explanation": "工程师无需逐步提示，而是可以在测试中定义问题、创建沙箱，然后让 Codex 自主寻找并实现解决方案，从而降低了实验成本。"
+    },
+    {
+      "point": "Codex 在团队中的快速采用凸显了其实用价值。",
+      "explanation": "一个月内，Braintrust 团队中 50% 的成员转向使用 Codex，这表明该工具的速度和有效性立即得到了工程师的认可和采用。"
+    }
+  ],
+  "keyQuotes": [
+    "Codex 解锁了我们实时尝试客户功能请求的能力。",
+    "最大的收获是速度。",
+    "使用 Codex 后，我转而编写一个演示问题的测试，创建一个沙箱环境，然后让 Codex 在该环境中运行。",
+    "我们编写的代码越多，能解决的客户问题就越多，而 Codex 是目前做到这一点的最有效方式。"
+  ],
+  "tags": [
+    "Codex",
+    "GPT-5.5",
+    "AI 编程",
+    "Braintrust",
+    "开发者工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 450,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780056000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-29 20:00:00"
+}

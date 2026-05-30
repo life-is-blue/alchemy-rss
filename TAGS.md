@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-05-30 06:31:59 | [返回首页](/README.md)
+**更新时间**: 2026-05-30 08:29:25 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12454)
+- [AI & 大模型](#ai-llm) (12477)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (832)
-- [DevOps](#devops) (580)
+- [前端与全栈](#frontend-fullstack) (834)
+- [DevOps](#devops) (581)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5879)
+- [其他](#other) (5887)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [浅谈-AI-编程](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492008&idx=1&sn=69ac47da219bed079bc38f80e3d61f7e) - AI 精选
+- [Gemini-Flash-价格上涨，AI-法案延迟，智能体驱动网络流量激增](https://www.deeplearning.ai/the-batch/issue-355) - AI 精选
 - [Dubbing-v2-发布：革命性的全新配音模型](https://elevenlabs.io/blog/introducing-dubbing-v2) - AI 精选
 - [使用-Codex-构建自我改进的税务智能体](https://openai.com/index/building-self-improving-tax-agents-with-codex) - AI 精选
 - [我们如何在多个产品中约束-Claude](https://www.anthropic.com/engineering/how-we-contain-claude) - AI 精选
@@ -40,10 +42,8 @@
 - [GPT-5.5-Instant：更智能、更清晰、更个性化](https://openai.com/index/gpt-5-5-instant) - AI 精选
 - [Claude-Code-产品经理使用指南](https://every.to/source-code/claude-code-for-product-managers) - AI 精选
 - [NVIDIA-发布-Nemotron-3-Nano-Omni：面向文档、音频和视频智能体的长上下文多模态模型](https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence) - AI 精选
-- [AI-在生产环境中的下一个前沿：混沌工程](https://towardsdatascience.com/the-next-frontier-of-ai-in-production-is-chaos-engineering/) - AI 精选
-- [DeepSeek-V4-报告太详尽了！484-天换代之路全公开](https://www.qbitai.com/2026/04/406809.html) - AI 精选
 
-- [查看全部 12454 篇...](/details/tags/ai-llm.md)
+- [查看全部 12477 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 832 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 834 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 580 篇...](/details/tags/devops.md)
+- [查看全部 581 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5879 篇...](/details/tags/other.md)
+- [查看全部 5887 篇...](/details/tags/other.md)
 
 

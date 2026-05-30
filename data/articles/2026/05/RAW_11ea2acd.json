@@ -1,0 +1,53 @@
+{
+  "id": "RAW_11ea2acd",
+  "title": "构建真正可用的专业级网络爬虫",
+  "url": "https://www.freecodecamp.org/news/build-professional-web-scrapers-that-actually-work/",
+  "date": "2026-05-29 23:20:05",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Web scraping has evolved. If you’ve ever tried to pull data from a site, only to be hit with a CAPTCHA, an IP ban, or a \"403 Forbidden\" error, you know that modern websites are built to block automated scripts.</p>\n  <p>To get the data you need today, you have to bypass sophisticated anti-bot detection systems.</p>\n  <p>We are just posted full-stack web scraping course on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel. Gavin Lon developed this course.</p>\n  <p>Many scraping tutorials focus on basic scripts that fail the moment they hit a real-world website. This course bridges the gap between a \"toy script\" and a production-ready application. You'll learn how to bypass advanced fingerprinting and bot detection using managed browser infrastructure and residential proxies.</p>\n  <p>Gavin will teach you how to build a fully deployed MERN (MongoDB, Express, React, Node.js) application. It's a dashboard that visualizes live data scraped from major platforms like Amazon, Booking.com, Indeed, and the TIOBE Index.</p>\n  <p>Evomi provided a grant to make this course possible. You can try out Evomi here: <a href=\"https://evomi.com/freecodecamp\">https://evomi.com/freecodecamp</a></p>\n  <p>Here are the key things you will learn in the course:</p>\n  <ul>\n   <li>\n    <p><strong>Master Modern Scraping:</strong> Move beyond basic libraries to use Playwright, Cheerio, and Evomi’s enterprise-grade Scraping Browser and Scraper API.</p>\n   </li>\n   <li>\n    <p><strong>Defeat Anti-Bot Systems:</strong> Learn exactly why standard scripts get flagged and how to configure residential proxies and browser fingerprints to remain undetected.</p>\n   </li>\n   <li>\n    <p><strong>Full-Stack Integration:</strong> Learn how to pipeline raw data into a MongoDB database and build a clean, responsive UI with React, Vite, and Bootstrap.</p>\n   </li>\n  </ul>\n  <p>Watch the full course on <a href=\"https://youtu.be/V1JmI5sUc5E\">the freeCodeCamp.org YouTube channel</a> (6-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/V1JmI5sUc5E\" title=\"YouTube video player\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本 freeCodeCamp 课程教你使用 Playwright、住宅代理和完整的 MERN 技术栈，构建能够绕过现代反爬系统的生产级网络爬虫。",
+  "oneSentenceSummary": "本 freeCodeCamp 课程教你使用 Playwright、住宅代理和完整的 MERN 技术栈，构建能够绕过现代反爬系统的生产级网络爬虫。",
+  "summary": "本文介绍了 freeCodeCamp YouTube 频道上由 Gavin Lon 开发的一门全新全栈网络爬虫课程。课程强调了网络爬虫的演变：如今，简单的脚本很容易被 CAPTCHA、IP 封禁等复杂的反爬系统拦截。该课程旨在弥合简单“玩具脚本”与生产级应用之间的差距。核心学习成果包括掌握 Playwright 和 Cheerio 等现代爬虫工具，使用住宅代理和浏览器指纹识别来对抗反爬系统，以及将抓取的数据集成到包含实时仪表盘的完整 MERN 技术栈应用（MongoDB、Express、React、Node.js）中。本课程由企业级爬虫基础设施提供商 Evomi 赞助。",
+  "mainPoints": [
+    {
+      "point": "现代网络爬虫需要绕过复杂的反爬系统。",
+      "explanation": "基础脚本无法应对 CAPTCHA、IP 封禁和指纹识别。本课程教授如何使用住宅代理和浏览器指纹识别来保持不被检测。"
+    },
+    {
+      "point": "本课程构建的是一个生产级的全栈应用，而不仅仅是玩具脚本。",
+      "explanation": "课程涵盖了从使用 Playwright 抓取数据，到将其存入 MongoDB，再到在 React 仪表盘中可视化的完整流程，使技能能够立即应用。"
+    },
+    {
+      "point": "本课程使用了 Evomi 的 Scraping Browser 和 Scraper API 等企业级工具。",
+      "explanation": "这提供了一种实用、可扩展的网络爬虫方法，超越了基础库，使用了专业环境中的工具。"
+    }
+  ],
+  "keyQuotes": [
+    "如今，要获取你所需的数据，必须绕过复杂的反爬检测系统。",
+    "本课程弥合了“玩具脚本”与生产级应用之间的差距。",
+    "深入了解标准脚本为何会被标记，以及如何配置住宅代理和浏览器指纹来保持不被检测。"
+  ],
+  "tags": [
+    "网络爬虫",
+    "Playwright",
+    "MERN 技术栈",
+    "反爬系统",
+    "住宅代理"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 256,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780068005000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-29 23:20:05"
+}
