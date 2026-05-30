@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-30 08:29:25 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-30 11:03:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3541,33 +3541,25 @@
 
 ### [4nm！比亚迪自研-AI-芯片来了：制程对齐英伟达，算力拉爆特斯拉](https://www.qbitai.com/2026/05/426557.html)
 
-2026-05-29 22:30:20 | 标签: 比亚迪, 璇玑A3, 4nm芯片, NPU, 智驾芯片
-
-> 比亚迪正式发布璇玑 A3，这是中国第一颗车规级 4nm 智驾芯片，从自主研发、设计到测试完全自主完成。该芯片采用专用 NPU 架构，而非英伟达 Thor 等采用的通用 GPU 衍生架构，在单位算力功耗上降低 20%，算力利用率提升 100%。三颗组合算力超 2100 TOPS，原生支持 Transformer 大模型，可实现纳秒级数据调度。文章深入分析了 NPU 与 GPU 的技术路线差异，指出专用 NPU 通过将矩阵乘法、卷积等 AI 常用算子直接硬化，在同样晶体管数量下产出更高有效算力。比亚迪同时宣布对城市领航辅助驾驶事故提供不设上限的全额赔付。文章认为，璇玑 A3 的意义不仅在于车载芯片...
+2026-05-29 22:30:20
 
 
 
 ### [大模型竞争下半场：千万级-SFT-+-全球最大中文合成数据，一起开源了！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723116&idx=1&sn=d5e868b1c42fc6476f23be75a2d305fa)
 
-2026-05-29 22:26:00 | 标签: 数据治理, 合成数据, SFT, 开源数据集, 面壁智能
-
-> 本文由面壁智能团队发布，核心介绍了其联合清华大学、OpenBMB 开源的 UltraData 系列数据集。文章首先指出，大模型竞争的下半场焦点已从参数规模转向数据质量。为此，面壁智能提出了 L0-L4 数据分级治理体系，将数据按加工深度分为五级，强调在不同训练阶段使用不同层级的数据，以实现成本与收益的最优平衡。基于此体系，他们开源了两大 L3 数据集：Ultra-FineWeb-L3，这是当前全球最大规模的中文预训练合成数据，总量超 600B Tokens（中文超 200B），通过大规模 Q&A 生成与多风格改写，将原始网页文本转化为结构化对话，提升模型推理能力；UltraData-SFT-2...
+2026-05-29 22:26:00
 
 
 
 ### [超越-TurboQuant，面向长上下文推理的真-2-bit-KV-Quantization-算法问世](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651035616&idx=3&sn=77117cdc692cf9180e0a36a494e98f6c)
 
-2026-05-29 12:04:00 | 标签: KV Cache, 量化, 长上下文, SGLang, 模型推理
-
-> 本文介绍了 TogetherAI 等机构提出的 OSCAR 算法，旨在解决长上下文大模型推理中 KV Cache 显存占用过大的问题。OSCAR 的核心创新在于，它不再以重建原始 K/V 向量为目标，而是通过离线校准，从少量样本中估计 attention-aware 的旋转矩阵，将量化误差压缩到 attention 不敏感的方向上。具体来说，对 key 使用 query covariance 构造旋转目标，对 value 使用 score-weighted value covariance。最终旋转由对准 attention 方向的矩阵、Hadamard 矩阵和 bit-reversal 矩阵...
+2026-05-29 12:04:00
 
 
 
 ### [发布：datasette-1.0a31](https://simonwillison.net/2026/May/29/datasette/#atom-everything)
 
-2026-05-29 11:32:02 | 标签: Datasette, SQL, 开源, 数据发布, 数据库工具
-
-> Datasette 1.0a31 的发布公告重点介绍了两个主要新功能：授权用户能够直接对其数据库执行写入查询（INSERT、UPDATE、DELETE），以及能够保存存储查询（以前称为 canned queries），这些查询既可以是私有的，也可以在 Datasette 实例内共享使用。此版本是持续进行的 1.0 alpha 系列的一部分，文章链接到了 Datasette 博客上的一篇详细博文，该博文提供了新写入查询界面的操作演示和动画演示。演示展示了用户如何选择表、选择执行写入 SQL 语句以及使用插入操作模板，同时还展示了防止未经授权操作（如创建表）的权限控制。此版本标志着 Dataset...
+2026-05-29 11:32:02
 
 
 
@@ -13995,33 +13987,25 @@
 
 ### [可穿戴物联网如何实现实时跌倒检测与警报](https://www.freecodecamp.org/news/how-wearable-iot-enables-real-time-fall-detection-and-alerts/)
 
-2026-05-29 23:22:13 | 标签: 物联网, 跌倒检测, 可穿戴技术, 边缘计算, 机器学习
-
-> 文章详细解释了现代可穿戴跌倒检测系统的完整流程，从硬件传感器到警报分发。它阐述了结合加速度计和陀螺仪的惯性测量单元的作用，并讨论了三种算法方法：基于阈值的检测、经典机器学习（SVM、随机森林、k-NN）和深度学习（CNN-LSTM）。文章强调了实验室精度与现实世界性能之间的关键差距，并描述了物联网流程，包括边缘处理、用于减少误报的确认窗口以及各种通信协议（NB-IoT、BLE、Wi-Fi、LoRaWAN）。此外，还回顾了 Apple Watch 和 Samsung Galaxy Watch 等消费级设备，并探讨了误报、隐私问题和用户依从性等关键挑战。
+2026-05-29 23:22:13
 
 
 
 ### [为什么你的深度学习模型学不到东西：医学影像中的数据问题诊断](https://www.freecodecamp.org/news/why-your-deep-learning-model-isn-t-learning-data-problems-in-medical-imaging/)
 
-2026-05-29 23:20:57 | 标签: 深度学习, 医学影像, 数据质量, 领域差距, 数据集诊断
-
-> 本文介绍了一个使用 MONAI 在公开腹部超声数据集上构建医学图像分割管道的案例研究。尽管进行了精心的工程处理——包括按受试者分组、正确解码掩码以及使用合适的损失函数——模型仍然难以学习。作者没有调整模型，而是通过系统性地审视数据集来诊断问题。三个简单的检查揭示了核心问题：数据集中包含 926 张合成图像，但只有来自 4 位患者的 60 张标注真实图像。合成图像与真实超声图像的强度分布不同，造成了领域差距。作者总结道，数据集的实际大小取决于独立受试者的数量，而非图像数量，并提供了一个实用的检查清单，用于在投入模型开发前评估任何数据集。
+2026-05-29 23:20:57
 
 
 
 ### [构建真正可用的专业级网络爬虫](https://www.freecodecamp.org/news/build-professional-web-scrapers-that-actually-work/)
 
-2026-05-29 23:20:05 | 标签: 网络爬虫, Playwright, MERN 技术栈, 反爬系统, 住宅代理
-
-> 本文介绍了 freeCodeCamp YouTube 频道上由 Gavin Lon 开发的一门全新全栈网络爬虫课程。课程强调了网络爬虫的演变：如今，简单的脚本很容易被 CAPTCHA、IP 封禁等复杂的反爬系统拦截。该课程旨在弥合简单“玩具脚本”与生产级应用之间的差距。核心学习成果包括掌握 Playwright 和 Cheerio 等现代爬虫工具，使用住宅代理和浏览器指纹识别来对抗反爬系统，以及将抓取的数据集成到包含实时仪表盘的完整 MERN 技术栈应用（MongoDB、Express、React、Node.js）中。本课程由企业级爬虫基础设施提供商 Evomi 赞助。
+2026-05-29 23:20:05
 
 
 
 ### [超越-TurboQuant!-OSCAR：面向真实-Serving-的-2bit-KV-Cache-量化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285886&idx=2&sn=4edea3aefc77fd98dce2d9a9fc2d44f9)
 
-2026-05-29 14:00:00 | 标签: KV Cache 量化, 模型推理优化, 低比特量化, 长上下文, SGLang
-
-> 本文详细介绍了 OSCAR（Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization）这一新型 KV Cache 量化方法。与 TurboQuant 等仅关注向量重建误差的方法不同，OSCAR 的核心创新在于将量化目标对准 attention 质量本身。它通过离线校准，利用 query covariance 和 score-weighted value covariance 为每一层、每个 head 生成 attention-aware 旋转矩阵和裁剪阈值，将量化噪声推到 attention 相对不敏感...
+2026-05-29 14:00:00
 
 
 
@@ -35337,11 +35321,11 @@
 
 
 
-### [为-Agent-设计产品](https://baoyu.io/blog/2026-04-24/teddy-riker-2047312986696454584)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-24T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> UI 并没有死，但软件交互的 80% 正在转向 Agent。产品团队需要像过去为人设计界面一样，认真为 Agent 设计工具、上下文和反馈闭环。
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 

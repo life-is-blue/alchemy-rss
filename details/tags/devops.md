@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-30 08:29:25 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-30 11:03:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -560,9 +560,7 @@
 
 ### [GitHub-通过每日审计和-MCP-剪枝将智能体工作流-Token-消耗降低高达-62%](https://www.infoq.com/news/2026/05/github-agentic-token-savings/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-29 16:30:00 | 标签: GitHub, Token 效率, 智能体工作流, MCP, CI/CD
-
-> GitHub 发布了一份关于减少其自身智能体 CI 工作流中 Token 消耗的详细案例研究。该公司通过实施系统化的优化循环，实现了有效 Token (ET) 高达 62% 的减少。关键策略包括剪枝未使用的模型上下文协议 (MCP) 工具（这些工具每次 API 调用都会增加显著的 schema 开销），以及用预下载的 `gh CLI` 命令替换用于获取 PR 差异等常见任务的 MCP 调用。为了推动这一优化，GitHub 构建了两个专用智能体：一个每日 Token 使用审计器，用于汇总消耗并标记异常；以及一个每日 Token 优化器，用于读取源代码和日志，并提交一个包含具体修复方案的 GitH...
+2026-05-29 16:30:00
 
 
 

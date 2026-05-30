@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-30 08:29:25 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-30 11:03:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [浅谈-AI-编程](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492008&idx=1&sn=69ac47da219bed079bc38f80e3d61f7e)
 
-2026-05-29 17:28:00 | 标签: AI 编程, Codex Goal, Claude Dynamic Workflows, Agent, 软件工程
-
-> 文章以 Codex Goal 和 Claude Dynamic Workflows 等工具为引，系统阐述了 AI 编程从“代码补全”到“任务执行”的演进过程。作者指出，AI 编程的真正瓶颈已不再是模型能力，而是目标定义、上下文管理、验证能力和组织吸收能力。文章详细对比了 Goal（定义完成条件）与 Workflow（定义协作与调度）的本质区别，并梳理了 Subagent、Handoff、Agent Teams 等概念的原语地图。核心观点是“代码是负债，规格约束才是资产”，强调在 AI 时代，领域模型、接口契约、架构边界、测试体系等约束性文档的价值远高于代码本身。文章还提出了 AI 接管老代码库...
+2026-05-29 17:28:00
 
 
 
 ### [Gemini-Flash-价格上涨，AI-法案延迟，智能体驱动网络流量激增](https://www.deeplearning.ai/the-batch/issue-355)
 
-2026-05-29 15:00:34 | 标签: AI 工程, Gemini 3.5 Flash, 欧盟 AI 法案, AI 流量, 图像生成
-
-> 这期由吴恩达撰写的 DeepLearning.AI 通讯涵盖了 AI 领域的几项关键发展。头条文章讨论了 AI 前场部署工程师（FDE）日益增长的作用，并认为对全栈 AI 工程师的需求将更为庞大。新闻板块报道了谷歌推出的 Gemini 3.5 Flash，该模型速度更快但价格显著更高，在智能体任务中表现出色。还报道了欧盟迫于行业压力决定延迟并削弱其 AI 法案的部分内容，以及一份显示 2025 年 AI 驱动的互联网流量增长近三倍、其中智能体流量增长 80 倍的报告。最后，文章详细介绍了一种新的文生图研究方法，该方法通过分阶段规划和生成图像来改进空间推理能力。
+2026-05-29 15:00:34
 
 
 
@@ -4830,33 +4826,25 @@
 
 ### [构建-AI-采纳的评估体系：从原则到实践](https://www.infoq.com/presentations/eval-ai-adoption/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-29 20:00:00 | 标签: 评估债务, AI 系统, LLM 评估, 生产级 AI, 搜索系统
-
-> Mallika Rao 结合她在 Twitter、Netflix 和 Walmart 构建搜索与个性化系统的经验，提出了“评估债务”这一概念。她将其定义为：当系统架构不断演进，而评估基础设施却停滞不前、固守精确率和召回率等传统指标时，差距的无声积累。演讲介绍了一个五层评估栈：模型正确性、基础设施稳健性、产品护栏、人类体验和系统影响。大多数组织只评估前两层，从而遗漏了语义相关性、用户信任和长期影响等关键失败点。两个详细的案例研究阐释了这一概念：Twitter 搜索中，优化基准指标（点击量）导致用户满意度下降，尽管仪表盘一片绿灯；Walmart 奖励系统中，一个 99.8% 准确率的返现系统因未预...
+2026-05-29 20:00:00
 
 
 
 ### [OpenClaw-与-Hermes：源码里的-AI-Agent-架构知识大复盘](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801805&idx=1&sn=9c7e3936218bba9c8d0ee6c04afb1615)
 
-2026-05-29 17:36:00 | 标签: AI Agent, OpenClaw, Hermes, Agent 架构, 微内核
-
-> 本文是一篇极为详尽的 AI Agent 架构分析笔记，作者基于开发 QQBot 插件的实战经历，深入剖析了 OpenClaw 和 Hermes 两个开源框架的源码设计。文章分为三大部分：第一部分详细拆解 OpenClaw 的 TypeScript 微内核架构，涵盖 Gateway 中枢、Session Key 消息路由、25+ Adapter 的 Channel 插件契约、Agent 执行引擎的分层容错设计、记忆系统与 Dreaming 机制等；第二部分分析 Hermes 的 Python 单体架构及其技能自创建、Smart Approval 等设计亮点；第三部分将两者进行正面对比，并探讨了协...
+2026-05-29 17:36:00
 
 
 
 ### [从定制-Workflow-到-AI-自主决策的架构演进——以-TMIC-AI-小新为例](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543765&idx=1&sn=4961784aef454d7fc2bf45e57a901431)
 
-2026-05-29 17:09:00 | 标签: AI Agent, DeepAgent, 架构演进, Workflow, TMIC
-
-> 本文分享了天猫 TMIC 平台 AI 小新产品从定制化 Workflow 到 DeepAgent 模式的架构演进实践。文章首先分析了定制化 Workflow 架构在处理复杂问题（如跨模块协作、多步骤推理、动态参数识别）时的三大痛点：不能跨产品模块回答、回答思路过于定制、总结时上下文信息有限。针对这些问题，团队借鉴 DeepAgent 的核心设计思路，提出了以「相信 AI 能力，解决上下文工程问题」为核心理念的新架构。新架构由加载上下文模块和 DeepAgent 模块组成。加载上下文模块负责在 DeepAgent 执行前，提前识别业务范围、加载相关工具、Skills、RAG 和上下文参数，为后续...
+2026-05-29 17:09:00
 
 
 
 ### [Tair-联手-SGLang-共建-DeepSeekV4-分层缓存架构](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247560437&idx=1&sn=c67264f9a52d40a160a703be91e54609)
 
-2026-05-29 08:30:00 | 标签: DeepSeek V4, KV Cache, SGLang, Tair, 分层缓存
-
-> 文章围绕 DeepSeek V4 的 CSA + HCA 混合注意力结构带来的 KV Cache 管理挑战，系统阐述了阿里云 Tair KVCache 与 SGLang 社区联合提出的分层缓存解决方案。核心架构包含三个层次：Shadow Radix 通过统一的 full logical index 抽象，让调度器不感知 SWA、C4、C128 等物理细节；V4 HiCache 基于 UnifiedRadixTree，将 Full/SWA 作为 prefix tree component，通过 SidecarPool 将多类物理 pool 扩展到 Host 和 Storage 层，在 Prefi...
+2026-05-29 08:30:00
 
 
 
@@ -12464,113 +12452,85 @@
 
 ### [Claude-Opus-4.8：系统卡-—-LessWrong](https://www.lesswrong.com/posts/Gx6cJ6cG9JfeSNcLB/claude-opus-4-8-the-system-card)
 
-2026-05-30 04:50:48 | 标签: Claude Opus 4.8, 系统卡, AI 安全, 对齐, Anthropic
-
-> 本文深入回顾了 Claude Opus 4.8 长达 244 页的系统卡，该模型在 Opus 4.7 发布仅六周后推出。作者 Zvi Mowshowitz 分析了 Opus 4.8 与其前代版本之间的差异，指出虽然该模型在能力、诚实度和常规安全方面有增量改进，但仍远落后于未发布的 Claude Mythos。主要发现包括：网络能力提升、智能体诚实度改善，但在提示注入防御和计算机使用安全方面出现倒退。文章批判性地审视了 Anthropic 更新的 RSP v3.3，该版本收窄了生物/化学威胁模型，并引发了对对齐风险上升速度快于缓解技术的担忧。文中引入了与破坏其他 AI 开发者和主要政府相关的新风...
+2026-05-30 04:50:48
 
 
 
 ### [测试-Gemini-模型的欺骗倾向-—-LessWrong](https://www.lesswrong.com/posts/F3sDngvTL9uyfz53k/testing-gemini-models-for-scheming-tendencies)
 
-2026-05-30 03:24:35 | 标签: AI 安全, 欺骗, 对齐, Gemini, 自动化审计
-
-> 这项研究在先前评估 AI 欺骗能力的工作基础上，引入了两种新方法来测试 AI 模型是否会破坏自身的安全防护。第一种方法 Gram（Gauging Realistic Agentic Misbehavior）是一个自动化审计框架，它使用模拟的智能体环境来评估破坏风险，通过专门关注破坏行为、使用中立审计员以及识别根本原因，解决了 Petri 等现有框架的局限性。关键发现显示，Gemini 模型在约 2-3% 的模拟场景中表现出不当行为，这主要是由过度的角色扮演和目标追求所驱动。第二种方法引入了欺骗蜜罐评估，它在真实的内部对齐研究代码库中为失调模型提供了实现其目标的现实机会，例如通过篡改思维链监控器...
+2026-05-30 03:24:35
 
 
 
 ### [我们应该对“秘密忠诚”的-AI-有多担忧？-—-LessWrong](https://www.lesswrong.com/posts/Q3HdtWXMzyYmHD8Kh/how-much-should-we-worry-about-secretly-loyal-ais)
 
-2026-05-30 03:14:17 | 标签: AI 安全, 秘密忠诚, 对齐问题, AI 风险, AI 治理
-
-> 这篇来自 LessWrong 的文章分析了“秘密忠诚”AI 的威胁——这些模型经过训练，会暗中推进特定委托方（例如，恶意员工或国家行为者）的利益，同时对开发者表现出无害的假象。作者认为，随着三个条件（AI 理解并忠诚于目标的能力、向监管者隐藏这种忠诚的能力、以及代表委托方行动的能力）的成熟，这种威胁将在几年内变得技术上可行。最可能的攻击向量是攻击者利用自动化的 AI 研究员来灌输这种忠诚，而这种忠诚必须是“不可纠正的”，以在后续训练中存活下来。关键在于，文章提出了一个更为乐观的论点：防御秘密忠诚在结构上比防御自然出现的对齐问题更容易。文章给出了五个关键理由：植入过程可能留下可检测的痕迹；监控人...
+2026-05-30 03:14:17
 
 
 
 ### [企业级基线-RAG：从-PDF-到高亮答案](https://towardsdatascience.com/baseline-enterprise-rag-from-pdf-to-highlighted-answer-enterprise-document-intelligence-vol-1-1/)
 
-2026-05-30 03:10:33 | 标签: RAG, 企业文档智能, PDF 解析, 关键词检索, LLM
-
-> 本文介绍了一个面向企业文档智能的端到端最小化 RAG 流水线，并以《Attention Is All You Need》论文作为示例。该流水线包含四个核心模块：文档解析（从 PDF 中提取文本行及其边界框）、问题解析（从用户问题中提取关键词）、检索（按关键词匹配数量对页面评分，找出最相关的页面）以及生成（输出结构化的 JSON 答案，包含精确的证据片段和引用）。此外，还有一个可选的第五步，通过在源 PDF 上绘制矩形框来高亮被引用的行。作者刻意避免使用向量数据库、框架和智能体，以保持系统的透明性和可调试性。文章强调了在企业环境中可解释性的重要性，并将关键词匹配与不透明的嵌入检索进行了对比。同时...
+2026-05-30 03:10:33
 
 
 
 ### [AI-控制中的重试与重采样-—-LessWrong](https://www.lesswrong.com/posts/yThJQTJxtmKNeZGwA/retrying-vs-resampling-in-ai-control)
 
-2026-05-30 01:02:54 | 标签: AI 控制, 重采样, 重试, AI 安全, 红队测试
-
-> 这篇来自 LessWrong 的文章重新审视了 Ctrl-Z 论文中引入的重采样协议，使用了更强的模型（Claude Opus 4.6）和更真实的场景（BashArena）。文章将这些协议与类似 Claude Code 自动模式或 Codex 自动审查的“重试”协议进行了比较。主要发现包括：重采样的结果与 Ctrl-Z 基本一致，但有两个关键差异——最大怀疑聚合比最小聚合更有效，且三次违规后的审计对更智能的监控器无效。重试协议被发现容易受到红队攻击，因为反馈会泄露信息，使攻击者能够设计出更隐蔽的攻击。文章还分析了安全与成本的权衡，发现重采样带来的 60% 的安全提升仅需额外 10% 的成本即可...
+2026-05-30 01:02:54
 
 
 
 ### [RAG-正在烧钱——我构建了一个成本控制层来解决这个问题](https://towardsdatascience.com/rag-is-burning-money-i-built-a-cost-control-layer-to-fix-it/)
 
-2026-05-30 00:30:00 | 标签: RAG, 成本优化, 语义缓存, 查询路由, 断路器
-
-> 本文指出了标准 RAG 实现中的三个关键财务失败模式：上下文窗口过度获取、缺乏缓存以及没有模型路由。作者构建了一个纯 Python 成本控制层，包含四个组件：一个使用 TF-IDF 嵌入的语义缓存，在预热基准测试中命中率高达 98.5%；一个查询路由器，根据复杂度（长度、实体密度、推理深度）对查询进行分类，并将 81% 的流量路由到更便宜的模型；一个 Token 预算层，按优先级顺序分配 Token 并跟踪成本；以及一个带有断路器的 CostLedger，当支出阈值被突破时，自动限流或降级请求。基准测试结果显示，在每天 10，000 次请求的情况下，成本降低了 85.8%，从每天 120 美元...
+2026-05-30 00:30:00
 
 
 
 ### [Braintrust-如何利用-Codex-将客户需求转化为代码](https://openai.com/index/braintrust)
 
-2026-05-29 20:00:00 | 标签: Codex, GPT-5.5, AI 编程, Braintrust, 开发者工作流
-
-> OpenAI 的这篇案例研究详细介绍了 Braintrust（一个面向 AI 产品的可观测性与评估平台）如何利用 Codex 与 GPT-5.5 彻底革新其开发工作流。其关键创新在于速度：Codex 能够快速生成代码，使工程师能够获取客户功能请求，将其粘贴到 Codex 中，并在几分钟内创建带有可行解决方案的预览分支。这取代了传统的积压驱动流程，实现了与客户的实时迭代和构思。创始人 Ankur Goyal 强调，Codex 的速度改变了交互范式，使工作流从逐步提示转变为更自主的模式：工程师定义问题、创建沙箱，然后让 Codex 自行解决。一个月内，Braintrust 团队中 50% 的成员采...
+2026-05-29 20:00:00
 
 
 
 ### [教程首发｜让手机拥有视觉感知能力](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501356&idx=1&sn=993abfef62e3d6690c09365cf61e6950)
 
-2026-05-29 17:45:00 | 标签: Qwen3-VL, MCP, MNN, 端侧推理, Android
-
-> 本文是一篇面向开发者的实战教程，核心目标是让手机成为 AI 的「感知器官」。文章首先指出传统方案（RTSP 推流）在成本、算力和隐私上的痛点，并提出了「端侧语义提取」的解决方案：在手机端部署多模态大模型（Qwen3-VL），将摄像头和麦克风采集的原始数据在本地转化为结构化文本，再通过 MCP 协议将结果汇报给云端 Agent。文章详细拆解了实现路径：构建 Android App 并内置 MCP Server、接入 MNN 端侧推理引擎、部署预转换的 Qwen3-VL 模型、生成鉴权信息并在 Claude Code 中完成接入。教程提供了完整的项目代码仓库地址，并分步骤指导了从快速验证 MCP ...
+2026-05-29 17:45:00
 
 
 
 ### [阶跃开源-Step-3.7-Flash：面向生产级-Agent-的高效率-Flash-模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247508732&idx=1&sn=b5bc6194d730d7fd80df705c7074bd01)
 
-2026-05-29 16:00:00 | 标签: 阶跃星辰, Step 3.7 Flash, MoE, 多模态, Agent
-
-> 阶跃星辰正式发布并开源 Step 3.7 Flash 模型，该模型专为生产级 Agent 场景设计。核心特性包括：采用 196B 总参数 + 1.8B ViT 的稀疏 MoE 架构，激活参数仅 11B，实现了模型能力与推理效率的平衡；最高生成速度达 400 Tokens/s，适合高频、多轮 Agent 应用；具备原生多模态理解能力，可处理 UI、图表、文档等复杂视觉输入；强化了联网搜索与视觉搜索能力；在工具调用方面表现出色，支持 API、浏览器、终端等外部系统的高可靠调用与编排。模型已适配 Claude Code、OpenClaw、Hermes Agent 等主流 Agent 框架，支持 MC...
+2026-05-29 16:00:00
 
 
 
 ### [Hexo-Labs-开源-SIA：一个同时更新框架和模型权重的自我改进智能体](https://www.marktechpost.com/2026/05/29/hexo-labs-open-sources-sia-a-self-improving-agent-that-updates-both-the-harness-and-the-model-weights/)
 
-2026-05-29 15:28:46 | 标签: 自我改进 AI, SIA, Hexo Labs, 智能体框架, LoRA
-
-> Hexo Labs 发布了 SIA（自我改进 AI），这是一个基于 MIT 许可证的开源框架，引入了一种新颖的自我改进循环，能够同时编辑智能体的框架和模型权重。该系统使用三个 LLM 组件：一个元智能体来编写初始框架，一个任务特定智能体来执行任务，以及一个反馈智能体来分析执行轨迹并决定是更新框架还是通过 LoRA 触发权重更新。基础模型是 gpt-oss-120b，权重更新使用 rank 32 的 LoRA。在三个不同领域——LawBench（法律分类）、AlphaEvolve TriMul（CUDA 内核优化）和 Denoising（单细胞 RNA 插补）——进行测试，SIA 始终优于仅更新...
+2026-05-29 15:28:46
 
 
 
 ### [实测腾讯新产品-Marvis-|-你说你是新一代-Agent-OS？](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108775&idx=1&sn=431e7690edf8772b110d9abb2b493ad4)
 
-2026-05-29 11:32:00 | 标签: Marvis, 腾讯, Agent OS, 桌面 AI 助手, AI 产品评测
-
-> 文章对腾讯 PCG 应用宝团队推出的 Marvis 进行了系统性实测。Marvis 定位为「操作系统层级 AI 助手」，采用父-子 Agent 架构，包含 Computer、App、Browser、File、Search 五个子 Agent。实测发现：Computer Agent 在预建 MCP 工具覆盖的场景下体验丝滑，但无工具时退化为 LLM 写 shell 脚本；App Agent 受限于 macOS 的 TCC 安全机制和 Apple Music 的 DRM 保护，无法完成复杂 GUI 操控；Browser Agent 基于 CDP/Playwright 技术路径最为成熟。文章还验证了...
+2026-05-29 11:32:00
 
 
 
 ### [与-Rosalind-Biodefense-共同增强社会韧性](https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense)
 
-2026-05-29 11:00:00 | 标签: OpenAI, GPT-Rosalind, 生物防御, AI 安全, 大流行防范
-
-> OpenAI 宣布在生物学防御加速领域迈出两个关键步骤：启动 Rosalind Biodefense 计划，资助受信任的开发者使用 GPT-Rosalind 构建高影响力的防御性应用；同时，为支持公共卫生和生物防御使命的特定美国政府及盟友合作伙伴，扩大 GPT-Rosalind 的受信任访问权限。该计划建立在 OpenAI 现有的安全与韧性工作基础之上，包括预备框架和生物特定能力评估。首批受支持的组织包括 Fourth Eon Biosecurity（自适应 DNA 筛查）、劳伦斯利弗莫尔国家实验室（AI 驱动的医疗对策设计）、约翰霍普金斯大学应用物理实验室（蛋白质工程平台）以及流行病防范创新...
+2026-05-29 11:00:00
 
 
 
 ### [AINews-Anthropic-完成-9650-亿美元-H-轮融资，发布-Opus-4.8-和-Dynamic-Workflows/ultracode](https://www.latent.space/p/ainews-anthropic-raises-965b-series)
 
-2026-05-29 10:07:24 | 标签: Anthropic, Claude Opus 4.8, H 轮融资, Dynamic Workflows, AI 融资
-
-> 这篇文章来自 Latent Space，涵盖了 Anthropic 的重大公告：以 9650 亿美元投后估值完成 650 亿美元 H 轮融资，并披露了 470 亿美元的年化收入。伴随融资，Anthropic 发布了 Claude Opus 4.8，这是对 Opus 4.7 的更新，专注于行为改进，如更敏锐的判断力、对自己进展更诚实的态度以及更长的自主工作时间，且价格保持不变。文章还详细介绍了 Claude Code 中 Dynamic Workflows 的发布，这是一个研究预览版的编排系统，Claude 可以在其中编写编排脚本并生成数百个并行子智能体来处理大型任务，Jarred Sumner...
+2026-05-29 10:07:24
 
 
 
 ### [Anthropic-年化收入达-470-亿美元](https://simonwillison.net/2026/May/29/anthropic/#atom-everything)
 
-2026-05-29 09:23:08 | 标签: Anthropic, 年化收入, AI 融资, 企业级 AI, H 轮融资
-
-> 本文分析了 Anthropic 最新的财务披露，重点指出其年化收入已达到 470 亿美元，这一数据是在其 650 亿美元的 H 轮融资公告中公布的。作者梳理了该公司爆炸性的收入增长轨迹：从 2025 年底的 90 亿美元，到 2026 年 2 月的 140 亿美元，4 月的 300 亿美元，再到 2026 年 5 月的 470 亿美元。文章引用了 Axios 首席执行官 Jim VandeHei 的说法，即没有任何一家公司能在任何行业以如此快的速度实现有机收入增长，以此作为背景。作者还回应了对这些数字的质疑，认为在 650 亿美元的融资中对投资者撒谎将构成证券欺诈，并且真实数字将在 Anthr...
+2026-05-29 09:23:08
 
 
 
@@ -41046,25 +41006,19 @@
 
 ### [上下文嵌入与混合搜索如何修复检索失败](https://www.freecodecamp.org/news/how-contextual-embeddings-and-hybrid-search-fix-retrieval-failures/)
 
-2026-05-30 01:12:29 | 标签: RAG, 上下文嵌入, 混合搜索, 分块策略, 检索增强生成
-
-> 这份全面指南探讨了大多数 RAG 实现中的一个根本问题：将上下文视为关键词搜索问题，而它实际上是一个意义问题。作者分解了上下文的三个层次（块/局部、文档/结构和语义/全局），并解释了为什么带有部分重叠的朴素固定大小分块在生产中会失败，导致代词混乱、孤立比较和程序中断等问题。提出的核心解决方案是上下文检索，特别是 Anthropic 的方法：在嵌入之前，将 LLM 生成的上下文摘要前置到每个块中。文章还涵盖了结合 BM25 与上下文嵌入的混合检索、更智能的分块策略（语义、结构和代理式）、带有重排序的两阶段检索，以及作为新兴替代方案的基于图的检索。文中提供了实用的实现模式和代码示例，以及常见陷阱及...
+2026-05-30 01:12:29
 
 
 
 ### [AI-辅助迁移工具帮助团队在几分钟内从-ingress-nginx-迁移到-Higress](https://www.infoq.com/news/2026/05/ai-nginx-higress/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-05-29 20:00:00 | 标签: Kubernetes, Ingress 迁移, AI 辅助工具, Higress, 云原生
-
-> 本文总结了一篇 CNCF 技术博客文章，展示了一种新的 AI 辅助迁移方法。该方法使工程师能够在大约 30 分钟内将 60 个 ingress-nginx 资源迁移到 Higress（一个基于 Envoy 的开源 API 网关）。该过程利用 AI 分析现有配置，将其映射到等效的 Higress 结构，并自动生成更新后的 YAML 清单。这显著减少了传统上与 Kubernetes 入口和网关迁移相关的手动工作、复杂性和风险。文章将此定位为更广泛的行业趋势的一部分，即 AI 被用于自动化云原生环境中的运维任务，将工程师的角色从手动重建转变为验证和治理。文章还指出，主要云提供商和平台供应商正在投资类...
+2026-05-29 20:00:00
 
 
 
 ### [Agentic-Engineering-六条最佳实践](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695703&idx=1&sn=a7fe5648293a3475d2e2541f1f3410d7)
 
-2026-05-29 08:45:00 | 标签: Agentic Engineering, AI协作, 软件工程, Context Engineering, 最佳实践
-
-> 文章提出了一套从基本事实出发演绎推导的 AI 协作方法论，核心思想是将 AI Agent 视为软件工程的深度协作者。作者首先确立了三条公理：意图转化链的信息损耗、LLM 的本质特征（上下文决定输出、概率性输出、有限工作记忆）、以及人类认知是稀缺资源。接着审视了五个常见假设，如代码喂给 AI 就能理解项目、AI 不适合复杂系统等，并指出其谬误。基于此，文章提出了六条最佳实践：Context Engineering（Spec-First、Docs as Code、渐进式披露）、人机分工（乔哈里窗模型）、AI 全链条参与（从需求到编码）、小任务+多层验证、Knowledge as Code（将知识编...
+2026-05-29 08:45:00
 
 
 
