@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-31 08:29:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-31 11:04:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -500,9 +500,7 @@
 
 ### [研究：通过-Pyodide-和服务工作者在浏览器中运行-Python-ASGI-应用](https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything)
 
-2026-05-31 05:02:16 | 标签: Pyodide, ASGI, 服务工作者, WebAssembly, Python
-
-> Simon Willison 展示了一个研究项目，使 Python ASGI Web 应用（如 FastAPI 和 Datasette）能够在浏览器中完全运行。其关键创新在于使用一个专用的服务工作者，拦截所有对 `/app/` 路径下的同源请求，并通过 ASGI 协议在 Python 应用中执行它们，从而消除了对后端服务器的需求（仅需静态文件托管）。这种方法克服了作者早期 Datasette Lite 项目的一个局限——该项目使用 Web Workers，无法执行 `<script>` 标签中的 JavaScript，导致部分 Datasette 功能和插件失效。该项目在 Claude Opu...
+2026-05-31 05:02:16
 
 
 
