@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9b44526c",
+  "title": "我们如何在各个产品中隔离 Claude",
+  "url": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
+  "date": "2026-05-31 05:36:24",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th May 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://www.anthropic.com/engineering/how-we-contain-claude\">How we contain Claude across products</a></strong>. A complaint I often have about sandboxing products is that they are rarely thoroughly <em>documented</em>, and in the absence of detailed documentation it's hard to know how much I can trust them.</p>\n    <p>Anthropic just published a fantastic overview of how their various sandbox techniques work across <a href=\"https://claude.ai/\">Claude.ai</a>, Claude Code, and Cowork.</p>\n    <blockquote>\n     <p>We constrain where and how an agent can act with process sandboxes, VMs, filesystem boundaries, and egress controls. The goal is to set a hard boundary on what an agent can reach. For example, if credentials never enter the sandbox, they can't be exfiltrated, regardless of whether the cause is a user, a model finding a “creative” path, or an attacker.</p>\n    </blockquote>\n    <p>Claude.ai uses gVisor. Claude Code, run locally, uses Seatbelt on macOS and Bubblewrap on Linux. Claude Cowork runs a full VM (Apple's Virtualization framework on macOS, HCS on Windows).</p>\n    <p>There's a lot in here, including some interesting stories of risks they missed such as the <code>api.anthropic.com/v1/files</code> exfiltration vector <a href=\"https://simonwillison.net/2026/Jan/14/claude-cowork-exfiltrates-files/\">covered here previously</a>.</p>\n    <p>This reminded me it's time I took another look at Anthropic's open source <a href=\"https://github.com/anthropic-experimental/sandbox-runtime\">srt (Anthropic Sandbox Runtime)</a> tool - it's mature enough know that I'm ready to give it a proper go.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 发布了一篇详细的技术概述，介绍他们如何在 Claude.ai、Claude Code 和 Cowork 中使用进程沙箱、虚拟机、文件系统边界和出口控制来隔离 Claude。",
+  "oneSentenceSummary": "Anthropic 发布了一篇详细的技术概述，介绍他们如何在 Claude.ai、Claude Code 和 Cowork 中使用进程沙箱、虚拟机、文件系统边界和出口控制来隔离 Claude。",
+  "summary": "Anthropic 发布了一篇全面的技术概述，详细介绍了用于在其三个主要产品（Claude.ai、Claude Code 和 Cowork）中隔离 Claude 的沙箱技术。文章阐述了约束智能体行为的多层方法，包括进程沙箱、虚拟机、文件系统边界和出口控制。Claude.ai 使用 gVisor，Claude Code 在 macOS 上使用 Seatbelt、在 Linux 上使用 Bubblewrap，而 Claude Cowork 则运行完整的虚拟机。文章还讨论了他们过去遗漏的风险，例如 api.anthropic.com/v1/files 的数据外泄途径。作者 Simon Willison 强调了此类详细文档对于建立用户对沙箱产品信任的价值，并指出 Anthropic 的开源沙箱运行时工具（srt）已经足够成熟，可以用于严肃场景。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 使用多层沙箱方法来约束所有产品中的 Claude。",
+      "explanation": "该策略结合了进程沙箱、虚拟机、文件系统边界和出口控制，为智能体可触及的范围设置了硬性边界，即使模型找到了“创造性”路径，也能防止凭据外泄。"
+    },
+    {
+      "point": "不同产品根据其部署环境使用不同的沙箱技术。",
+      "explanation": "Claude.ai 使用 gVisor，Claude Code 在 macOS 上使用 Seatbelt、在 Linux 上使用 Bubblewrap，而 Claude Cowork 则使用 Apple 的虚拟化框架或 Windows 上的 HCS 运行完整的虚拟机。"
+    },
+    {
+      "point": "沙箱技术的详细文档对于建立用户信任至关重要。",
+      "explanation": "作者指出，沙箱产品很少被详尽地记录，而 Anthropic 透明的概述有助于用户理解并信任其安全措施。"
+    }
+  ],
+  "keyQuotes": [
+    "我们通过进程沙箱、虚拟机、文件系统边界和出口控制来约束智能体的行为方式和地点。",
+    "目标是设置一个智能体无法逾越的硬性边界。",
+    "如果凭据从未进入沙箱，那么无论原因是用户、模型找到了“创造性”路径还是攻击者，它们都无法被外泄。"
+  ],
+  "tags": [
+    "Claude",
+    "沙箱",
+    "安全",
+    "AI 安全",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 207,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780176984000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-31 05:36:24"
+}

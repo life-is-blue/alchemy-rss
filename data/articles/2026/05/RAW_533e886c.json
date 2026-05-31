@@ -1,0 +1,47 @@
+{
+  "id": "RAW_533e886c",
+  "title": "Daniel Jalkut 的一句引言",
+  "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything",
+  "date": "2026-05-31 01:29:55",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th May 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://mastodon.social/@danielpunkass/116639318125898071\">\n     <p>My take on AI is, essentially, everybody who’s against it is too against it and everybody who’s for it is too for it.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://mastodon.social/@danielpunkass/116639318125898071\">Daniel Jalkut</a>, <span class=\"context\">via <a href=\"https://daringfireball.net/linked/2026/05/30/jalkut-on-ai\">John Gruber</a></span></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Daniel Jalkut 对 AI 提出了一个平衡的观点，认为批评者和支持者往往都持有过于极端的看法。",
+  "oneSentenceSummary": "Daniel Jalkut 对 AI 提出了一个平衡的观点，认为批评者和支持者往往都持有过于极端的看法。",
+  "summary": "这篇来自 Simon Willison 博客的简短文章，分享了 Daniel Jalkut 关于人工智能领域两极分化讨论的一句精辟引言。Jalkut 认为，当前对 AI 的主流态度呈现出极端化特征：反对者过于苛责，而支持者又过于热衷。这句最初在 Mastodon 上分享、并由 John Gruber 转述的引言，呼吁人们围绕 AI 的能力、风险和社会影响展开更温和、更细致、更平衡的对话。它强调了超越非此即彼的二元立场的必要性。",
+  "mainPoints": [
+    {
+      "point": "围绕 AI 的辩论呈现出双方立场都极端的特征。",
+      "explanation": "Jalkut 观察到，AI 的批评者和支持者往往都持有过于绝对的观点，缺乏细微差别和平衡。"
+    },
+    {
+      "point": "我们需要对 AI 采取一种更温和、更平衡的视角。",
+      "explanation": "这句引言含蓄地倡导一种中间立场，既承认 AI 技术的潜在益处，也承认其引发的合理担忧。"
+    }
+  ],
+  "keyQuotes": [
+    "我对 AI 的看法，本质上就是：每个反对它的人都反对得太过，而每个支持它的人又支持得太过。"
+  ],
+  "tags": [
+    "AI",
+    "视角",
+    "讨论",
+    "平衡",
+    "引言"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 32,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780162195000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-31 01:29:55"
+}

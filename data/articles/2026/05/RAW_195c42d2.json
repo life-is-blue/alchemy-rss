@@ -1,0 +1,53 @@
+{
+  "id": "RAW_195c42d2",
+  "title": "研究：通过 Pyodide 和服务工作者在浏览器中运行 Python ASGI 应用",
+  "url": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything",
+  "date": "2026-05-31 05:02:16",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th May 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label research\" href=\"https://simonwillison.net/elsewhere/research/\">Research</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/research/tree/main/pyodide-asgi-browser#readme\">Running Python ASGI apps in the browser via Pyodide + a service worker</a></span> <span class=\"beat-commit\">— By running Python ASGI web applications entirely in the browser using Pyodide and a dedicated service worker, this project intercepts all same-origin requests under `/app/` and executes them against the Python app via the ASGI protocol—removing the need for a backend server except for static files. The mechanism is demonstrated with both a FastAPI demo and the full Datasette app, confirming its generality across ASGI apps.</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p><a href=\"https://lite.datasette.io/\">Datasette Lite</a> is my version of Datasette that runs entirely in the browser using Pyodide in WebAssembly.</p>\n      <p>When I first built it <a href=\"https://simonwillison.net/2022/May/4/datasette-lite/\">four years ago</a> I used Web Workers and code that intercepts navigation operations and fetches the generated HTML by running the Python app.</p>\n      <p>This worked, but had the disadvantage that any JavaScript in <code>&lt;script&gt;</code> tags would not be executed - breaking some Datasette functionality and a whole lot of Datasette plugins.</p>\n      <p>This morning I <a href=\"https://github.com/simonw/research/pull/112\">set Claude Opus 4.8 the task</a> (in Claude Code for web) of figuring out how to run Python ASGI apps in Pyodide using Service Workers instead, and it seems to work! Here's a <a href=\"https://simonw.github.io/research/pyodide-asgi-browser/\">basic ASGI FastCGI demo</a> and here's <a href=\"https://simonw.github.io/research/pyodide-asgi-browser/datasette.html\">a demo that runs Datasette 1.0a31</a>.</p>\n      <p>I'm still getting my head around exactly how it works, but once I've done that I plan to upgrade Datasette Lite itself.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "该项目展示了如何使用 Pyodide 和服务工作者，在浏览器中完全运行 Python ASGI Web 应用（如 FastAPI 和 Datasette），通过拦截同源请求并经由 ASGI 协议执行它们，无需后端服务器。",
+  "oneSentenceSummary": "该项目展示了如何使用 Pyodide 和服务工作者，在浏览器中完全运行 Python ASGI Web 应用（如 FastAPI 和 Datasette），通过拦截同源请求并经由 ASGI 协议执行它们，无需后端服务器。",
+  "summary": "Simon Willison 展示了一个研究项目，使 Python ASGI Web 应用（如 FastAPI 和 Datasette）能够在浏览器中完全运行。其关键创新在于使用一个专用的服务工作者，拦截所有对 `/app/` 路径下的同源请求，并通过 ASGI 协议在 Python 应用中执行它们，从而消除了对后端服务器的需求（仅需静态文件托管）。这种方法克服了作者早期 Datasette Lite 项目的一个局限——该项目使用 Web Workers，无法执行 `<script>` 标签中的 JavaScript，导致部分 Datasette 功能和插件失效。该项目在 Claude Opus 4.8 的协助下开发，并提供了基础 ASGI FastCGI 应用和完整 Datasette 1.0a31 的工作演示。作者计划升级 Datasette Lite，采用这种新的服务工作者方法。",
+  "mainPoints": [
+    {
+      "point": "Python ASGI 应用可以使用 Pyodide 和服务工作者在浏览器中完全运行。",
+      "explanation": "一个专用的服务工作者拦截所有对 `/app/` 路径下的同源请求，并通过 ASGI 协议在 Python 应用中执行它们，从而消除了对后端服务器的需求（仅需静态文件）。"
+    },
+    {
+      "point": "服务工作者方法解决了 Datasette Lite 中早期 Web Worker 方法的一个关键局限。",
+      "explanation": "之前的 Web Worker 方法无法执行 `<script>` 标签中的 JavaScript，导致部分 Datasette 功能和插件失效。服务工作者方法克服了这一问题。"
+    },
+    {
+      "point": "该方法具有通用性，适用于多种 ASGI 框架。",
+      "explanation": "该项目通过基础 FastAPI 演示和完整 Datasette 1.0a31 应用展示了该机制，证实了其在不同 ASGI 应用中的通用性。"
+    }
+  ],
+  "keyQuotes": [
+    "通过使用 Pyodide 和专用服务工作者，在浏览器中完全运行 Python ASGI Web 应用，该项目拦截所有对 `/app/` 路径下的同源请求，并通过 ASGI 协议在 Python 应用中执行它们——从而消除了对后端服务器的需求（仅需静态文件）。",
+    "这种方法虽然可行，但缺点是任何 `<script>` 标签中的 JavaScript 都不会被执行——导致部分 Datasette 功能和大量 Datasette 插件失效。",
+    "我仍在努力理解它的具体工作原理，但一旦理解透彻，我计划升级 Datasette Lite 本身。"
+  ],
+  "tags": [
+    "Pyodide",
+    "ASGI",
+    "服务工作者",
+    "WebAssembly",
+    "Python"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 227,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780174936000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-31 05:02:16"
+}

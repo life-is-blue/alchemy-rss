@@ -1,0 +1,57 @@
+{
+  "id": "RAW_7bc01b21",
+  "title": "Google Cloud 自动暂停 Railway 生产账号，引发全平台八小时宕机",
+  "url": "https://www.infoq.com/news/2026/05/railway-gcp-account-outage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-30 18:03:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Cloud's automated systems suspended Railway's production account on May 19, triggering an <a href=\"https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage\">eight-hour platform-wide outage</a> that took down the dashboard, API, all deployments, and all databases for the platform's 3 million users.</p>\n   <p>The suspension was not triggered by anything Railway did. Google applied it as part of a broader automated action affecting multiple accounts, with no advance notice to individual customers. Chandrika Khanduri and Cody De Arkland from Railway's engineering team <a href=\"https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage\">write</a>:</p>\n   <blockquote>\n    <p>We take full responsibility for the architectural decisions that allowed a single upstream provider action to cascade into a platform-wide outage.</p>\n   </blockquote>\n   <p>The cascade mechanism is the architecturally interesting part. Railway runs a mesh network across Google Cloud, AWS, and its own bare-metal infrastructure (Railway Metal). When GCP suspended the account, workloads on AWS and Metal initially kept running because Railway's edge proxies maintain a cache of routing tables from the network control plane. But that control plane was hosted in Google Cloud. Once the cached routes expired, the edge could no longer resolve routes to active instances, and workloads across all regions, including Metal and AWS, began returning 404 errors. The workloads themselves were still running. They were just unreachable.</p>\n   <p>Recovery was not instant either. Restoring account access did not restore services. Persistent disks, compute instances, and networking all required separate recovery. Disks were ready by 23:54 UTC, but core networking didn't restore until 01:30 UTC the following day. Then a backlog of queued deployments had to be drained carefully to avoid overwhelming the build systems. In parallel, GitHub began rate-limiting Railway's OAuth and webhook integrations due to the burst of retried requests, temporarily blocking user logins and builds.</p>\n   <p>Railway's founder Jake Cooper told <a href=\"https://cybernews.com/news/railway-outage-caused-by-google-cloud-account-suspension/\">Cybernews</a> he was \"gobsmacked\" by the suspension and announced that Railway is demoting GCP to backup-only status. The incident report confirms this: Railway is removing Google Cloud from the data plane's hot path, extending high-availability database shards across AWS and Metal, and redesigning the mesh so that if any interconnect fails, routing tables can still be populated from surviving paths.</p>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=48204770\">Hacker News</a>, the thread generated 150+ comments across multiple submissions. One commenter pointed to the unresolved question:</p>\n   <blockquote>\n    <p>Put all the timestamps you want in the post mortem about what you observed, but you haven't addressed the root cause. The \"this doesn't make sense\" part of the story likely has a real explanation that nobody wants to reveal yet.</p>\n   </blockquote>\n   <p>Google has not issued a public statement explaining why the account was suspended. Railway's report notes only that it was \"incorrectly\" flagged \"as part of an automated action\" affecting many accounts.</p>\n   <p>Another commenter captured the broader trust implication:</p>\n   <blockquote>\n    <p>Building on someone else's platform is always gonna be a risky move, and building a platform on top of someone else's platform is even riskier.</p>\n   </blockquote>\n   <p>A Railway customer shared their response to the outage directly:</p>\n   <blockquote>\n    <p>Unfortunately we had to make emergency migration off to Azure yesterday due to this. As much as we loved the simplicity they provided us, there's just been too many mishaps and shortcomings for us to continue running a B2B enterprise app on their infrastructure.</p>\n   </blockquote>\n   <p>The incident was not isolated. <a href=\"https://northflank.com/blog/railway-app-outage\">Northflank reported</a> that developers experienced worker crashes, partial outages, and build delays in the days before the full platform went down, with some noting this was their second or third major outage in a few months. Railway's own February 2026 postmortem acknowledged a pattern of \"tightly coupled systems with a large blast radius causing single failures to cascade into broader outages.\" A specific pain point during the May outage was the inability to access database backups: with the dashboard and API both offline, users had no way to retrieve their own data during the incident window.</p>\n   <p>The architectural lesson extends beyond Railway. Any platform built on a single hyperscaler account, whether GCP, AWS, or Azure, carries the risk that an automated account-level action can take down everything simultaneously. The traditional multi-AZ and multi-region patterns protect against infrastructure failures within a provider but offer no protection against account-level suspension. Railway's planned remediation, making the mesh truly provider-independent with no single cloud on the hot path, is the pattern that addresses this class of failure.</p>\n   <p>Railway's <a href=\"https://status.railway.com/incident/I23M92U0\">status page</a> tracks the ongoing resolution. The company says the incident report \"reflects what we know at time of publication and may be updated pending Google Cloud's internal review.\"</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Cloud Suspends Railway's Production Account, Causing Eight-Hour Platform-Wide Outage\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/railway-gcp-account-outage/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780135380000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Cloud 的自动化系统暂停了 Railway 的生产账号，导致其多云网状网络发生级联故障，引发全平台八小时宕机，影响 300 万用户。",
+  "oneSentenceSummary": "Google Cloud 的自动化系统暂停了 Railway 的生产账号，导致其多云网状网络发生级联故障，引发全平台八小时宕机，影响 300 万用户。",
+  "summary": "本文报道了一起重大事故：2026 年 5 月 19 日，Google Cloud 的自动化系统暂停了 Railway 的生产账号，引发全平台八小时宕机。此次暂停是波及多个账号的广泛自动化操作的一部分，且未提前通知。Railway 的网状网络横跨 Google Cloud、AWS 及其自有裸金属基础设施，遭遇了级联故障：托管在 GCP 上的网络控制平面宕机后，一旦缓存的路由表过期，边缘代理便无法解析通往所有区域（包括 AWS 和 Metal 上）活跃实例的路由。恢复过程十分复杂，需要分别恢复持久化磁盘、计算实例和网络。Railway 创始人宣布，该公司将 GCP 降级为仅作备份使用，并重新设计网状网络以实现提供商无关。文章强调了一个架构教训：单一提供商内的多可用区和多区域模式无法防范账号级别的暂停，真正的韧性需要提供商无关的架构。",
+  "mainPoints": [
+    {
+      "point": "Google Cloud 的自动化系统暂停了 Railway 的生产账号，导致全平台八小时宕机。",
+      "explanation": "此次暂停是更广泛的自动化操作的一部分，未提前通知，影响了 Railway 的控制台、API、部署和数据库，波及 300 万用户。"
+    },
+    {
+      "point": "由于控制平面存在单点故障，宕机在 Railway 的多云网状网络中引发了级联故障。",
+      "explanation": "网络控制平面托管在 GCP 上。当其宕机后，缓存的路由表过期，边缘代理无法再将流量路由到 AWS 和裸金属基础设施上的活跃实例。"
+    },
+    {
+      "point": "恢复过程复杂且缓慢，需要分别恢复磁盘、计算和网络。",
+      "explanation": "恢复账号访问后并未立即恢复服务。持久化磁盘、计算实例和网络需要分别恢复，随后还需仔细处理积压的排队部署。"
+    },
+    {
+      "point": "Railway 正在重新设计其架构以实现提供商无关，并将 GCP 降级为仅作备份使用。",
+      "explanation": "此次事故凸显了在单一超大规模云服务商账号上构建的风险。Railway 计划的补救措施包括将高可用数据库分片扩展到 AWS 和 Metal，并重新设计网状网络，以便从幸存的路径填充路由表。"
+    }
+  ],
+  "keyQuotes": [
+    "我们对导致单一上游提供商操作级联为全平台宕机的架构决策负全责。",
+    "在别人的平台上构建始终是冒险之举，而在别人的平台上构建平台则风险更高。",
+    "传统的多可用区和多区域模式可以防范提供商内部的基础设施故障，但无法防范账号级别的暂停。"
+  ],
+  "tags": [
+    "Google Cloud",
+    "Railway",
+    "宕机",
+    "多云",
+    "架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 721,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780135380000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-30 18:03:00"
+}

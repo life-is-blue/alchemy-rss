@@ -1,4 +1,4 @@
-> **更新时间**: 2026-05-31 06:20:58 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-05-31 08:29:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -495,6 +495,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [研究：通过-Pyodide-和服务工作者在浏览器中运行-Python-ASGI-应用](https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything)
+
+2026-05-31 05:02:16 | 标签: Pyodide, ASGI, 服务工作者, WebAssembly, Python
+
+> Simon Willison 展示了一个研究项目，使 Python ASGI Web 应用（如 FastAPI 和 Datasette）能够在浏览器中完全运行。其关键创新在于使用一个专用的服务工作者，拦截所有对 `/app/` 路径下的同源请求，并通过 ASGI 协议在 Python 应用中执行它们，从而消除了对后端服务器的需求（仅需静态文件托管）。这种方法克服了作者早期 Datasette Lite 项目的一个局限——该项目使用 Web Workers，无法执行 `<script>` 标签中的 JavaScript，导致部分 Datasette 功能和插件失效。该项目在 Claude Opu...
 
 
 
@@ -1248,13 +1256,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1404,13 +1412,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2904,13 +2912,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4614,13 +4622,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c74a608e",
+  "title": "AI 是一颗流星，别做恐龙 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/RTyKtw89jfJjjYsui/ai-is-a-meteor-don-t-be-a-dinosaur",
+  "date": "2026-05-31 03:50:22",
+  "author": "Boaz Barak",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>This is a linkpost for my </span><span><span><a href=\"https://www.thecrimson.com/article/2026/5/28/barak-harvard-commencement-ai/\" rel=\"noreferrer\"><span>Harvard Crimson op-ed</span></a></span></span><span> for its commencement issue.</span></p>\n    <p id=\"block1\"><span>I will not reproduce the whole text here, but my advice to the class of 2026 is in the following parts:</span></p>\n    <p id=\"block2\">\n     <br>\n    </p>\n    <blockquote id=\"block3\">\n     <p id=\"block4\"><span>My advice for the Class of 2026 is to embrace AI as a technology, but treat it critically as citizens.</span>\n      <br>\n      <br>\n      <span>...</span>\n      <br>\n      <br>\n      <span>Throughout your time at Harvard, you received&nbsp;</span><span><span><a href=\"https://www.thecrimson.com/article/2025/9/19/AI-Shapes-Classroom-Embrace/\"><span>mixed signals</span></a></span></span><span>&nbsp;on whether AI was to be avoided or carefully used in approved sandboxes. My signal to you is clear: make sure to master AI and use it as much as you can. Whether your degree is in English or Computer Science, you should be using not just ChatGPT, but also Claude Code, Codex, and products from cool startups I haven’t heard of. Ask yourself how you can use AI to realize ambitious projects that would have been impossible last year, or even last month.</span></p>\n     <p id=\"block5\"><span>On the other hand, using AI does not mean exempting the companies that build and use it, as well as the governments responsible for regulating it, from account. You have a right and a duty to make your voice heard in how this technology should be used to maximize benefit for humanity. You should educate yourself on both its benefits and risks. In my view, some of the latter (such as&nbsp;</span><span><span><a href=\"https://andymasley.com/writing/the-ai-water-issue-is-fake/\"><span>water usage</span></a></span></span><span>) are overblown, while others (such as&nbsp;</span><span><span><a href=\"https://windowsontheory.org/2026/03/03/mass-surveillance-red-lines-and-a-crazy-weekend/\"><span>concentration of power</span></a></span></span><span>) receive too little attention. But you should make your own mind, and even if you oppose AI deployment,&nbsp;</span><span><span><a href=\"https://www.wsj.com/pro/sustainable-business/locals-are-using-ai-to-fight-data-centers-being-built-in-their-backyards-d0642630?eafs_enabled=false\"><span>still use AI</span></a></span></span><span>&nbsp;to advance your case.</span></p>\n     <p id=\"block6\"><span>AI can be extremely empowering for those who possess initiative, creativity, and vision, even if they lack experience or capital. I believe that over the coming years, we will see teams of a few young people achieve results that previously would have required large companies with hundreds or thousands of employees. I wish for you to be one of those people.</span></p>\n    </blockquote>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文建议 2026 届毕业生全面拥抱并掌握 AI 这一变革性工具以实现自我赋能，同时也要批判性地思考其社会风险与治理问题。",
+  "oneSentenceSummary": "本文建议 2026 届毕业生全面拥抱并掌握 AI 这一变革性工具以实现自我赋能，同时也要批判性地思考其社会风险与治理问题。",
+  "summary": "本文是《哈佛深红报》毕业典礼专栏文章的一篇转载，向 2026 届毕业生传递了一个清晰且双重的信息。作者认为，AI 是一种类似流星的根本性力量，将重塑整个社会，个人必须适应才能蓬勃发展。核心建议有两点：第一，积极掌握并使用 ChatGPT、Claude Code 和 Codex 等 AI 工具，在跨学科领域实现此前不可能完成的雄心勃勃的项目。第二，保持批判性公民意识，让 AI 公司和政府为技术带来的社会影响（如权力集中）负责。作者鼓励读者即使反对 AI 的部署，也要利用 AI 本身来推进自己的事业，并预测由 AI 赋能的小团队很快就能与大型组织抗衡。",
+  "mainPoints": [
+    {
+      "point": "毕业生必须掌握 AI 工具才能保持相关性和竞争力。",
+      "explanation": "作者敦促所有学科的学生积极使用包括 ChatGPT 在内的多种 AI 工具，以实现雄心勃勃的项目并获得竞争优势。"
+    },
+    {
+      "point": "将 AI 作为技术来拥抱，但要以公民身份批判地对待它。",
+      "explanation": "建议是双重的：一方面利用 AI 实现个人和职业赋能，另一方面参与关于其社会风险（如权力集中）的批判性讨论，并倡导负责任的治理。"
+    },
+    {
+      "point": "AI 将使小型创意团队取得能与大公司媲美的成果。",
+      "explanation": "作者预测 AI 将实现能力的民主化，让拥有主动性和远见的小团队能够完成此前需要数百或数千名员工才能完成的工作。"
+    }
+  ],
+  "keyQuotes": [
+    "我给 2026 届毕业生的建议是：将 AI 作为技术来拥抱，但要以公民身份批判地对待它。",
+    "对于那些拥有主动性、创造力和远见的人来说，即使缺乏经验或资本，AI 也能带来极大的赋能。",
+    "我相信在未来几年里，我们将看到少数年轻人组成的团队取得此前需要拥有数百或数千名员工的大公司才能实现的成果。"
+  ],
+  "tags": [
+    "AI 采纳",
+    "职业建议",
+    "AI 伦理",
+    "技术批判",
+    "赋能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 316,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780170622000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-31 03:50:22"
+}

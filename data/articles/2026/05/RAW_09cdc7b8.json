@@ -1,0 +1,55 @@
+{
+  "id": "RAW_09cdc7b8",
+  "title": "我决定从科技行业退休，去过离线生活",
+  "url": "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/#atom-everything",
+  "date": "2026-05-31 03:39:08",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th May 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://openpath.quest/2026/i-am-retiring-from-tech-to-live-offline/\">I Am Retiring from Tech to Live Offline</a></strong> (<a href=\"https://news.ycombinator.com/item?id=48323683\" title=\"Hacker News\">via</a>) I've seen a lot of posts on forums from people threatening to quit their careers over AI. This is <em>not</em> one of those: Chad Whitacre is taking concrete steps, starting with this typewritten, scanned letter</p>\n    <blockquote>\n     <p>I'm retiring from tech. Well, \"retiring\" is euphemistic. I'm stepping away from tech, and that includes Open Source. [...]</p>\n     <p>AI was the last straw. Have you heard of that island off India where the indigenous population kills any outsiders fool-hardy enough to land? They are doing the rest of us a favor by preserving a way of life we may need again someday, or at the very least should not want to see completely extinguished. A reminder. Never forget your roots. Here in Pennsylvania we have the Amish performing a similar function. Significantly less hostile, though still set apart, they bear witness to what was normal for all of us a couple short centuries ago: horse and buggy, wood stoves and lanterns. My intent is to be AI Amish, which means Internet Amish. Not 1780, but 1980. Neo-Amish. I'm fine driving a car and flipping a lightswitch, by which I mean that they don't make me into something I hate, which AI and [struck through: social media] [handwritten above: doomscrolling] do.</p>\n    </blockquote>\n    <p>I'll admit that at first I wasn't entirely sure if this was serious. Then I found this earlier post by Chad from Feb 19 2026, <a href=\"https://openpath.quest/2026/spitting-out-the-agentic-kool-aid/\">Spitting Out the Agentic Kool-Aid</a>:</p>\n    <blockquote>\n     <p>I figured I’d better taste the Kool-Aid in order to form an opinion, so I dove into Claude Code with Opus 4.5 on a side project. I spent three 12+ hour days with it. I was intoxicated. My family was weirded out. [...]</p>\n     <p>It weirded me out too, when I unplugged for a long weekend. Something felt off. It was like I had another “person” in my head, sharing my inner monologue—but the “person” was a computer system owned by a budding megacorp.</p>\n     <p>[...] I am now also committing myself to disembarking from the titantic of technological accelerationism.</p>\n     <p>All efforts to address the problems of invasive technology are worthwhile, even those that are only partially effective. For my part, I have started trying to return more fully to a pre-screen, analog life.</p>\n    </blockquote>\n    <p>It's accompanied by <a href=\"https://www.youtube.com/watch?v=DCC76jmmzkc\">a video version of the essay</a> which I found touching and sincere.</p>\n    <p>Chad has been trying to solve the open source sustainability problem <a href=\"https://simonwillison.net/2024/Jan/23/the-open-source-sustainability-crisis/\">for <em>years</em></a> - I talked with him about this at PyCon 2025 in Cleveland. That's a very tough nut to crack, and the disruption caused by AI looks to be making it even harder.</p>\n    <p>I'm glad that the <a href=\"https://endowment.dev/\">Open Source Endowment</a> will continue without him. I'm very much going to miss his online voice.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Chad Whitacre 决定从科技行业退休，过一种离线的“新阿米什”式生活，他表示 AI 是促使他离开开源和数字加速主义的最终催化剂。",
+  "oneSentenceSummary": "Chad Whitacre 决定从科技行业退休，过一种离线的“新阿米什”式生活，他表示 AI 是促使他离开开源和数字加速主义的最终催化剂。",
+  "summary": "这篇文章由 Simon Willison 分享，重点介绍了 Chad Whitacre 从科技行业退休并过离线生活的决定。作为长期的开源可持续性倡导者，Whitacre 将他的举动描述为成为“AI 阿米什人”或“互联网阿米什人”，目标是过上 1980 年代水平的模拟生活，而非前工业时代的生活。他解释说，AI 是“压垮骆驼的最后一根稻草”，起因是一次使用 Claude Code 和 Opus 4.5 的极其不安的体验，感觉就像有一个侵入性的“人”在他脑海里。这篇文章还附有一段真诚的视频随笔，并引用了他在 2026 年 2 月发表的早期文章《吐掉智能体这杯迷魂汤》。Willison 指出 Whitacre 的决定是严肃的，与论坛上常见的威胁言论形成对比，并表示他会怀念 Whitacre 在网上的声音，同时很高兴他的开源捐赠项目将继续下去。",
+  "mainPoints": [
+    {
+      "point": "Chad Whitacre 正在真正地从科技行业退休，去过一种离线的模拟生活，而 AI 是这一决定的催化剂。",
+      "explanation": "与许多因 AI 而威胁要退出的人不同，Whitacre 正在采取具体行动，包括一封用打字机打出的辞职信，以离开开源和互联网，目标是过上“新阿米什”式的 1980 年代水平生活。"
+    },
+    {
+      "point": "一次与 AI 编码工具的极其不安的体验是 Whitacre 做出决定的最终催化剂。",
+      "explanation": "在与 Claude Code 和 Opus 4.5 连续工作了三个 12 小时以上的日子后，Whitacre 感到“陶醉”，随后又感到“怪异”，他将这种体验描述为感觉有一个属于某家新兴巨头的“人”在他脑海里，这促使他拒绝技术加速主义。"
+    },
+    {
+      "point": "Whitacre 的离开对开源社区是一个重大损失，他长期以来一直致力于维持这个社区。",
+      "explanation": "Simon Willison 指出，Whitacre 多年来一直试图解决开源可持续性危机，而 AI 的颠覆使这个问题变得更加棘手，并表示他的网络声音将被人们怀念。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 是压垮骆驼的最后一根稻草。",
+    "我的意图是成为 AI 阿米什人，也就是互联网阿米什人。不是 1780 年，而是 1980 年。新阿米什。",
+    "感觉就像有另一个“人”在我脑海里，分享着我的内心独白——但这个“人”是一个属于某家新兴巨头的计算机系统。",
+    "所有解决侵入性技术问题的努力都是有价值的，即使是那些只能部分奏效的努力。",
+    "我现在也承诺自己要从技术加速主义这艘泰坦尼克号上下来。"
+  ],
+  "tags": [
+    "科技退休",
+    "AI 影响",
+    "开源",
+    "数字极简主义",
+    "Chad Whitacre"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 463,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "BT_PEOPLE",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780169948000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-31 03:39:08"
+}

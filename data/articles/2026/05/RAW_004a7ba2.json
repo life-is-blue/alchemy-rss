@@ -1,0 +1,58 @@
+{
+  "id": "RAW_004a7ba2",
+  "title": "Meta 如何重建 PB 级可靠性的数据摄入平台",
+  "url": "https://www.infoq.com/news/2026/05/meta-cdc-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-30 14:01:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The engineering team at Meta recently outlined how the company <a href=\"https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/\">migrated a data ingestion platform</a> that transfers several petabytes of MySQL social graph data daily to improve reliability and operational efficiency. The team used techniques like reverse shadowing and continuous checksum monitoring to ensure zero downtime during the transition.</p>\n   <p>Meta operates one of the <a href=\"https://engineering.fb.com/2021/07/22/data-infrastructure/mysql/\">world’s largest MySQL deployments</a>, with a data ingestion platform that supports analytics, reporting, machine learning, and internal product development workloads. The company recently redesigned its architecture, replacing customer-owned pipelines with a centralized, self-managed warehouse service.</p>\n   <p>With the migration, Meta replaced fragmented, pipeline-owned infrastructure with a centralized managed system, using staged migrations, automated validation, rollback controls, and compatibility layers to transition thousands of ingestion pipelines without disrupting downstream analytics and ML workloads.</p>\n   <p>Deploying distributed systems canarying at massive scale, Meta migrated ingestion jobs through three stages: a shadow phase that validated the new system against production data, a reverse shadow phase that swapped production ownership while preserving rollback capability, and a cleanup phase that retired the legacy pipeline after consistency and performance checks passed. <a href=\"https://engineering.fb.com/author/zihao-tao/+\">Zihao Tao</a>, software engineer at Meta, and colleagues from the engineering team explain:</p>\n   <blockquote>\n    <p>We continuously monitored row count and checksum mismatches between the production jobs and the shadow jobs. When mismatches occurred, we quickly investigated the root cause and deployed fixes to the pre-production environment, then verified that the mismatch was resolved. During this step, we also measured the compute and storage quotas for the shadow jobs to ensure that the production environment had sufficient resources before proceeding.</p>\n   </blockquote>\n   <p><img class=\"zoom-image\" alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/meta-cdc-migration/en/resources/1Migrating-Data-Ingestion-Systems-at-Meta-Scale-image-1-e1778517437665-1779134836589.png\" rel=\"share\"></p>\n   <p><em>Source: Meta engineering blog</em></p>\n   <p>Having now completed the migration of the entire data ingestion workload and retired the legacy system, the team acknowledges the challenge of the large-scale infrastructure transition:</p>\n   <blockquote>\n    <p>Ensuring a seamless migration meant we had to effectively track the migration lifecycle for thousands of jobs and put robust rollout and rollback controls in place to handle issues that might arise during the migration process.</p>\n   </blockquote>\n   <p>Each migration job had to be validated against strict correctness and performance checks before rollout, comparing row counts and checksums between old and new systems, monitoring latency and resource usage for regressions, and applying additional requirements for critical tables used by dependent teams. The team explains:</p>\n   <blockquote>\n    <p>Both our legacy and new data ingestion systems used change data capture (CDC) to incrementally ingest data into the target table. Each data ingestion job has its own internal table for a full dump of source databases (full dump), an internal table for capturing changes of source databases (delta), and the target table consumed by the data customers. All the information about job entities, including table names and table schemas, is saved and managed by the central management service.</p>\n   </blockquote>\n   <p><em><img class=\"zoom-image\" alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/meta-cdc-migration/en/resources/1Migrating-Data-Ingestion-Systems-at-Meta-Scale-image-2-1779134836589.jpg\" rel=\"share\"></em></p>\n   <p><em>Source: Meta engineering blog</em></p>\n   <p>Syed Moeen Kazmi <a href=\"https://www.linkedin.com/posts/syed-moeen-kazmi_softwareengineering-backenddevelopment-opentowork-share-7461094294817427456-x1TG?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">comments</a>:</p>\n   <blockquote>\n    <p>Migrating data ingestion at Meta scale isn't an upgrade. It's open-heart surgery on core business. The challenge isn't just moving data, it's maintaining consistency and zero downtime.</p>\n   </blockquote>\n   <p>Because the CDC architecture relied on expensive full snapshots for initial loads and post-fix recovery, Meta minimized the creation of unnecessary shadow jobs until data quality issues were resolved. This avoided repeated large-scale full dumps and significantly improved migration efficiency. The team also reduced infrastructure load by reusing snapshot partitions from the legacy system during initial migration stages.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Meta Rebuilt Data Ingestion for Petabyte-Scale Reliability\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/meta-cdc-migration/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780120860000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 的工程团队详细介绍了如何通过反向影子模式和持续校验和监控，实现 PB 级数据摄入平台的零宕机迁移。",
+  "oneSentenceSummary": "Meta 的工程团队详细介绍了如何通过反向影子模式和持续校验和监控，实现 PB 级数据摄入平台的零宕机迁移。",
+  "summary": "本文详细介绍了 Meta 如何成功将其处理 PB 级 MySQL 社交图谱数据的海量数据摄入平台迁移至新的集中式架构。此次迁移将碎片化的、由客户自行管理的管道替换为自管理的仓库服务，以提升可靠性和运营效率。团队采用了三阶段流程：影子阶段用于验证，反向影子阶段交换生产所有权同时保留回滚能力，以及清理阶段。关键技术包括持续的行计数和校验和监控以确保数据一致性、自动化验证以及稳健的回滚控制。此次迁移在不中断下游分析、报告和机器学习工作负载的情况下完成，突显了在 Meta 规模下进行此类关键基础设施改造的复杂性。",
+  "mainPoints": [
+    {
+      "point": "Meta 将 PB 级数据摄入平台迁移至集中式架构以提升可靠性。",
+      "explanation": "此次迁移将碎片化的、由客户自行管理的管道替换为自管理的仓库服务，旨在提升运营效率并降低复杂性。"
+    },
+    {
+      "point": "采用了三阶段迁移流程：影子、反向影子和清理。",
+      "explanation": "影子阶段针对生产数据验证新系统。反向影子阶段交换生产所有权同时保留回滚能力。清理阶段在一致性检查后淘汰旧管道。"
+    },
+    {
+      "point": "持续的校验和与行计数监控确保了迁移过程中的数据一致性。",
+      "explanation": "团队持续监控生产作业与影子作业之间的不匹配情况，快速调查并修复根本原因，以维护数据完整性和零宕机。"
+    },
+    {
+      "point": "此次迁移在不中断下游分析和机器学习工作负载的情况下完成。",
+      "explanation": "通过采用分阶段迁移、自动化验证和回滚控制，Meta 确保了数千条摄入管道的无缝过渡。"
+    }
+  ],
+  "keyQuotes": [
+    "我们持续监控生产作业与影子作业之间的行计数和校验和不匹配情况。",
+    "确保无缝迁移意味着我们必须有效跟踪数千个作业的迁移生命周期，并部署稳健的发布和回滚控制，以处理迁移过程中可能出现的问题。",
+    "在 Meta 规模下迁移数据摄入不是一次升级。这是对核心业务进行的心脏直视手术。",
+    "我们的旧系统和新数据摄入系统都使用变更数据捕获（CDC）来增量地将数据摄入到目标表中。"
+  ],
+  "tags": [
+    "Meta",
+    "数据摄入",
+    "MySQL",
+    "PB 级",
+    "系统迁移"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 539,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780120860000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-30 14:01:00"
+}

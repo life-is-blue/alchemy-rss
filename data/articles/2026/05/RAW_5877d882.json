@@ -1,0 +1,57 @@
+{
+  "id": "RAW_5877d882",
+  "title": "Arm 开源 Metis，一款性能超越传统 SAST 工具的 AI 安全框架",
+  "url": "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-31 03:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://newsroom.arm.com/blog/arm-metis-agentic-ai-security\">Arm has open-sourced Metis</a>, an agentic AI security framework designed to autonomously uncover complex software vulnerabilities. Unlike traditional pattern-based tools, <a href=\"https://github.com/arm/metis\">Metis</a> applies semantic reasoning to analyze cross-component dependencies and provides clear, natural language explanations for its findings.</p>\n   <p>According to Arm, the growing complexity of modern codebases makes it challenging for traditional static application security testing (SAST) tools to detect vulnerabilities across multiple function boundaries or libraries without generating high false-positive rates. Instead of relying on fixed rules and pattern matching, Metis employs \"agentic\" AI to identify security issues across large-scale codebases:</p>\n   <blockquote>\n    <p>By combining advanced analysis techniques with AI-enabled workflows, Metis identifies more sophisticated security vulnerabilities that are difficult to detect using existing approaches, as well as identifying them earlier in the process.</p>\n   </blockquote>\n   <p>Metis uses retrieval-augmented generation (RAG) to enhance a base large language model with project-specific context derived from source code, build files, and documentation, giving it a clearer picture of the system design and intended behavior. With this approach, Arm says, Metis can analyze entire repositories, individual files, pull requests, or recent code changes delivering up to 10x higher true positive rates and approximately 50% fewer false positives compared to leading static analysis tools.</p>\n   <blockquote>\n    <p>False positives consume valuable engineering time and can reduce trust in automated tooling. By reducing false positives, Metis helps engineering teams focus on the issues that matter most, accelerating remediation and reducing wasted effort during validation and review.</p>\n   </blockquote>\n   <p>Metis can also operate alongside external SAST tools and validate their findings to help reduce the number of false positives. In Arm's internal benchmarks using GPT-5.5-Cyber as the base model, Metis achieved 98% accuracy in identifying vulnerabilities, compares to just 6% for traditional SAST, according to the company.</p>\n   <p>Beyond simply flagging vulnerabilities, Metis can also explain its findings with clear, actionable summaries, giving developers and engineers the context they need to understand and address issues quickly.</p>\n   <p>Metis can be used with any OpenAI-compatible LLM and supports a wide range of programming languages, including C, C++, Python, Go, TypeScript, Rust, and others. Its plugin-based architecture also allows developers to easily extend support for additional languages, models, and custom prompts.</p>\n   <p>Metis supports both Ollama and vLLM deployments, which are configured in <code>metis.yaml</code>. For example, to use Llama 3.1 with Ollama on a local machine:</p>\n   <pre><code>llm_provider:\n  name: \"ollama\"\n  base_url: \"http://localhost:11434/v1\"\n  model: \"llama3.1:8b\"\n  code_embedding_model: \"nomic-embed-text:v1.5\"\n  docs_embedding_model: \"nomic-embed-text:v1.5\"\n</code></pre>\n   <p>For vLLM deployments, Arm recommends using LiteLLM as a frontend for the LLM provider and configuring Metis to route requests through it. A typical setup includes one vLLM instance serving a chat model, another serving the embedding model, and a LiteLLM router to coordinate traffic between them.</p>\n   <p>While the current release focuses on vulnerabilities in software system, Arm is working to extend Metis to support hardware vulnerability verification.</p>\n   <p>Arm says that Metis is currently monitoring over 130 software projects within the company. The code is available under an Apache 2.0 license on GitHub.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Arm Open-Sources Metis, an AI Security Framework Outperforming Traditional SAST Tools\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/arm-metis-agentic-security/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780167600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Arm 已开源 Metis，这是一个基于智能体的 AI 安全框架，利用语义推理和 RAG 技术自主发现复杂软件漏洞，相比传统 SAST 工具，其真阳性率提升高达 10 倍，误报率降低 50%。",
+  "oneSentenceSummary": "Arm 已开源 Metis，这是一个基于智能体的 AI 安全框架，利用语义推理和 RAG 技术自主发现复杂软件漏洞，相比传统 SAST 工具，其真阳性率提升高达 10 倍，误报率降低 50%。",
+  "summary": "Arm 已开源 Metis，这是一个基于智能体的 AI 安全框架，旨在自主发现传统静态应用安全测试（SAST）工具经常遗漏的复杂软件漏洞。与基于模式的工具不同，Metis 采用语义推理和检索增强生成（RAG）技术来分析跨组件依赖关系，并为其发现提供清晰的自然语言解释。在内部基准测试中，使用 GPT-5.5-Cyber 的 Metis 在识别漏洞方面达到了 98% 的准确率，而传统 SAST 仅为 6%。它支持任何兼容 OpenAI 的 LLM 以及多种编程语言，包括 C、C++、Python、Go、TypeScript 和 Rust。Metis 在 GitHub 上以 Apache 2.0 许可证发布，目前正在 Arm 内部监控超过 130 个软件项目。该框架可以与外部 SAST 工具协同工作，以验证发现并减少误报，帮助工程团队专注于关键问题。",
+  "mainPoints": [
+    {
+      "point": "Metis 使用智能体 AI 和语义推理来检测代码库中的复杂漏洞。",
+      "explanation": "与依赖固定规则和模式匹配的传统 SAST 工具不同，Metis 分析跨组件依赖关系并应用语义理解来识别跨多个函数或库的复杂安全问题。"
+    },
+    {
+      "point": "Metis 相比传统 SAST 工具实现了显著更高的准确率和更低的误报率。",
+      "explanation": "在 Arm 的内部基准测试中，Metis 在识别漏洞方面达到了 98% 的准确率，而传统 SAST 仅为 6%，真阳性率提升高达 10 倍，误报率降低约 50%。"
+    },
+    {
+      "point": "Metis 为其发现提供清晰、可操作的说明，以加速修复。",
+      "explanation": "除了标记漏洞外，Metis 还会生成自然语言摘要，为开发者提供理解和快速解决问题所需的上下文，从而减少验证和审查过程中的无效工作。"
+    },
+    {
+      "point": "Metis 是开源的，支持多种 LLM 和语言，并能与现有 SAST 工具集成。",
+      "explanation": "Metis 以 Apache 2.0 许可证发布，可与任何兼容 OpenAI 的 LLM 配合使用，支持 C、C++、Python、Go、TypeScript、Rust 等多种语言，并能验证外部 SAST 工具的发现以减少误报。"
+    }
+  ],
+  "keyQuotes": [
+    "通过将先进的分析技术与 AI 驱动的工作流程相结合，Metis 能够识别使用现有方法难以检测的更复杂的软件安全漏洞，并且能在流程中更早地发现它们。",
+    "误报会消耗宝贵的工程时间，并降低对自动化工具的信任。通过减少误报，Metis 帮助工程团队专注于最重要的问题，从而加速修复并减少验证和审查过程中的无效工作。",
+    "据该公司称，在内部基准测试中，使用 GPT-5.5-Cyber 作为基础模型的 Metis 在识别漏洞方面达到了 98% 的准确率，而传统 SAST 仅为 6%。"
+  ],
+  "tags": [
+    "Metis",
+    "AI 安全",
+    "智能体 AI",
+    "SAST",
+    "RAG"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 479,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780167600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-05-31 03:00:00"
+}
