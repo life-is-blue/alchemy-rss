@@ -1,23 +1,35 @@
-> **更新时间**: 2026-04-17 02:22:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-01 08:28:40 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Anthropic-完成-650-亿美元-H-轮融资，估值达-9650-亿美元](https://x.com/AnthropicAI/status/2060061347522433422)
+
+2026-05-29 02:11:13 | 标签: Anthropic, Claude, H 轮融资, AI 融资, 估值
+
+> Anthropic 成功获得 650 亿美元 H 轮融资，投后估值高达 9650 亿美元。本轮融资由 Altimeter Capital、Dragoneer Investment Group、Greenoaks 和 Sequoia Capital 联合领投。这笔巨额资金——堪称科技史上规模最大的融资之一——将用于推进 AI 研究和扩大基础设施，以满足对 Claude 日益增长的需求。此次融资也表明了投资者对 Anthropic 在与 OpenAI 及其他前沿 AI 实验室竞争中保持优势的信心。
+
+
+
+### [RAG、文档上下文与-AI-Agent-全景回顾（2023-2026）](https://x.com/jerryjliu0/status/2058953208782074127)
+
+2026-05-26 00:47:53 | 标签: RAG, AI Agent, 文档解析, LlamaIndex, 检索
+
+> 本条推文宣布发布一份 116 页的幻灯片，内容源自 Pierre-Loic Doulcet 在 AI Engineer Singapore 大会上所做的 90 分钟研讨会。该幻灯片对过去三年间关键 AI 模式的发展进行了历史性回顾，涵盖了朴素 RAG 的 12 个痛点、重排序与查询重写的重要性、Agent 循环的演进、检索环节如何成为瓶颈，以及文档解析这一持续存在的挑战。对于长期关注 LlamaIndex 的追随者而言，内容会带有些许怀旧感；对于新读者，则是一次绝佳的教育机会。幻灯片也揭示了 LlamaIndex 当前为何将核心聚焦于面向 Agent 的最先进文档解析技术。
+
+
+
 ### [Anthropic-发布-Claude-Opus-4.7](https://x.com/claudeai/status/2044785261393977612)
 
-2026-04-16 14:29:31 | 标签: Claude Opus 4.7, Anthropic, AI 模型发布, 大语言模型, AI 能力
-
-> 这是 Anthropic 官方 Claude 账号发布的推文，正式介绍了 Claude Opus 4.7。推文将其定位为迄今为止能力最强的 Opus 版本，并重点突出了关键改进：更严谨地处理长时任务、更精确地遵循指令，以及在反馈前自我验证输出的能力。推文强调用户现在可以更少监督地委派复杂工作，暗示了其可靠性和自主性的提升。推文包含一张宣传图片。
+2026-04-16 14:29:31
 
 
 
 ### [Qwen3.6-35B-A3B：开源稀疏-MoE-模型正式发布](https://x.com/Alibaba_Qwen/status/2044768734234243427)
 
-2026-04-16 13:23:50 | 标签: Qwen3.6, MoE, 开源, AI 模型发布, 多模态 AI
-
-> 这是阿里巴巴通义千问团队发布新开源模型 Qwen3.6-35B-A3B 的官方公告推文。该模型采用稀疏专家混合（MoE）架构，总参数量达 350 亿，但在推理时仅激活 30 亿参数，并采用 Apache 2.0 许可证。主要亮点包括：其智能体编码能力强大，可与激活参数量是其 10 倍的模型相媲美；具备稳健的多模态感知与推理能力；并支持多模态思维模式。推文提供了博客文章、Qwen Studio、Hugging Face 和 ModelScope 的直接链接，方便用户立即访问，并承诺 API 版本即将推出。
+2026-04-16 13:23:50
 
 
 
@@ -231,13 +243,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-01 06:21:17 | [返回首页](/README.md)
+**更新时间**: 2026-06-01 08:28:40 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12506)
+- [AI & 大模型](#ai-llm) (12522)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (835)
 - [DevOps](#devops) (581)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5900)
+- [其他](#other) (5902)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Claude-Code-产品经理使用指南](https://every.to/source-code/claude-code-for-product-managers) - AI 精选
 - [NVIDIA-发布-Nemotron-3-Nano-Omni：面向文档、音频和视频智能体的长上下文多模态模型](https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence) - AI 精选
 
-- [查看全部 12506 篇...](/details/tags/ai-llm.md)
+- [查看全部 12522 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5900 篇...](/details/tags/other.md)
+- [查看全部 5902 篇...](/details/tags/other.md)
 
 

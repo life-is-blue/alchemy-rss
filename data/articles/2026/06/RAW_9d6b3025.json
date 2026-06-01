@@ -1,0 +1,54 @@
+{
+  "id": "RAW_9d6b3025",
+  "title": "解决方案或许是取消我的 AI 订阅",
+  "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+  "date": "2026-06-01 00:31:32",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st May 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://thoughts.hmmz.org/2026-05-31.html\">The solution might be cancelling my AI subscription</a></strong> (<a href=\"https://news.ycombinator.com/item?id=48345896\" title=\"Hacker News\">via</a>) I find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes:</p>\n    <blockquote>\n     <p>I didn't mean to build most of these things. Usually the Claude session started with something like \"<em>write a quick script for X</em>\", and one hour later the result is not a <em>quick script for X</em>, nor in the usual case is my problem solved, whatever the original itch happened to be.</p>\n     <p>On that last point, this technology is <strong>horrific</strong> for attention. It's a thermonuclear ADHD amplifier and I have seen the same effect in every single one of my adult friends. Folk running 3 screens simultaneously working on totally unrelated \"projects\" they have little hope of maintaining, and such little commitment to the outcome that the time is obviously wasted.</p>\n    </blockquote>\n    <p>This is a <em>very</em> real problem. I'm finding that coding agents can take me from a vague idea to a working solution, one with tests and documentation and that <em>looks</em> like a carefully considered project evolved over the course of many weeks... in less than an hour.</p>\n    <p>Even if the code is rock solid, there's a limit to how many projects like that I can sensibly care for - and if they're instantly abandoned, what value was there from creating them in the first place?</p>\n    <p>David doesn't think this is sustainable at all:</p>\n    <blockquote>\n     <p>I have no idea how to manage AI at present except by curtailing use, because a tool producing a cheap reward with minimal input and no friction can only be a liability, and achieving that realisation is probably the only real contribution of AI to date.</p>\n    </blockquote>\n    <p>I'm hopeful that the critical skill to develop here is <em>discipline</em>. That’s not great news for me: I’ve been trying to figure that one out for decades!</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "David Wilson 认为，AI 编程工具虽然强大，但就像一个“热核 ADHD 放大器”，导致人们构建大量被遗弃的项目，唯一的解决方案可能就是限制其使用。",
+  "oneSentenceSummary": "David Wilson 认为，AI 编程工具虽然强大，但就像一个“热核 ADHD 放大器”，导致人们构建大量被遗弃的项目，唯一的解决方案可能就是限制其使用。",
+  "summary": "这篇由 Simon Willison 分享的 David Wilson 的博客文章，反思了 AI 编程工具的问题本质。Wilson 列举了他在 AI 辅助下启动的 16 多个项目，而这些项目原本都不在计划之内。他将这种体验描述为“ADHD 放大器”，导致人们构建大量被遗弃且无法维护的项目。Simon Willison 对此表示赞同，他指出，虽然 AI 智能体可以在不到一小时内生成一个完整且文档完善的解决方案，但这种创造的便利性导致了缺乏投入感和价值感。Wilson 总结道，管理 AI 的唯一可持续方法是限制其使用，因为它能以极少的投入产生廉价的回报。Willison 希望关键技能在于自律，但他也承认这对他个人而言是一个长期存在的挑战。",
+  "mainPoints": [
+    {
+      "point": "AI 编程工具充当了注意力缺陷的强大放大器，导致大量项目被遗弃。",
+      "explanation": "从模糊想法生成完整解决方案的便利性，创造了一个低摩擦、高回报的循环，鼓励人们启动许多项目，却不去完成或维护它们。"
+    },
+    {
+      "point": "如果一个项目在创建后立即被遗弃，那么其价值就会大打折扣。",
+      "explanation": "即使 AI 生成的代码质量很高，一个不被关心或维护的项目也几乎没有长期价值，这使得最初的创造变成了浪费时间。"
+    },
+    {
+      "point": "唯一可持续的解决方案可能是限制 AI 工具的使用，因为它们本质上就是一种负担。",
+      "explanation": "鉴于该工具的成瘾性和自我调节的困难，最有效的策略可能就是减少或停止使用 AI 编程助手。"
+    }
+  ],
+  "keyQuotes": [
+    "这些项目中的大多数我原本都没打算构建。",
+    "这项技术对注意力来说太可怕了。它是一个热核 ADHD 放大器。",
+    "一个以最小输入、无摩擦方式产生廉价回报的工具，只能是一种负担。",
+    "这里需要培养的关键技能是自律。"
+  ],
+  "tags": [
+    "AI 编程",
+    "ADHD",
+    "生产力",
+    "注意力",
+    "自律"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 313,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780245092000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-01 00:31:32"
+}

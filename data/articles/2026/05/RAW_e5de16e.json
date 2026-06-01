@@ -1,0 +1,63 @@
+{
+  "id": "RAW_e5de16e",
+  "title": "Builders Unscripted 第 3 期：Matias Castello 如何用 Codex 搭建 AI 编码与产品工作流",
+  "url": "https://www.youtube.com/watch?v=8QKqENa_eQQ",
+  "date": "2026-05-30 04:29:25",
+  "author": "OpenAI",
+  "siteName": "OpenAI",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Builders Unscripted: Ep. 3 - Matias Castello, Product Lead at Alchemy</h1>\n  <p>In the third episode of <em>Builders Unscripted</em>, Ato from OpenAI sits down with <strong>Matias Castello</strong>, Product Lead at Alchemy. Despite lacking a traditional engineering background, Matias has spent his career navigating complex technical ecosystems—from early developer platform work at Facebook to leading web3 infrastructure efforts at Alchemy. More impressively, he has established himself as an elite AI power-user, leveraging modern language models to automate complex end-to-end development lifecycles.</p>\n  <hr>\n  <h2>The Turn to AI in the Workplace</h2>\n  <p>Matias notes that his team's initial exposure to corporate AI integration started simple: hooking <strong>Codex into a corporate Slack channel</strong> to make quick documentation updates without running site servers locally. However, the major engineering turning point occurred during a post-mortem incident investigation.</p>\n  <p>Following a large software migration, a subtle race condition caused an internal production error. After engineering resolved the problem, they retroactively requested Codex review the historical faulty commit. To their surprise, the model identified the exact root cause automatically.</p>\n  <p>This proof-of-capability immediately shifted cultural paradigms at Alchemy. Engineers quickly moved past typical developer skepticism, adopting interactive workflows where they prompts Codex to review draft code directly inside pull requests before finalizing changes.</p>\n  <h2>Redefining the Modern Developer</h2>\n  <p>This shift in workflows has completely transformed how Alchemy approaches infrastructure design. According to Matias, platform product managers must design systems for two modern types of developers:</p>\n  <ul>\n   <li><strong>AI-Assisted Human Developers:</strong> Software professionals utilizing generative tools to write and verify code. Platforms assume 100% of these users build with AI assistance.</li>\n   <li><strong>Autonomous AI Agents:</strong> Programmatic agents navigating cloud platforms independently. These machine-driven developers interact via unique entry points, requiring seamless API integrations, autonomous blockchain onboarding, and custom tooling parameters.</li>\n  </ul>\n  <p>Comparing today's landscape to his historical experience as a startup founder, Matias highlights that an application MVP that once required 15 engineers and 18 months of intensive development can now be drafted independently by a non-technical founder in less than seven days.</p>\n  <hr>\n  <h2>Advanced Automation: Sleeping While Codex Builds</h2>\n  <p>To overcome the constant anxiety of missing out on technological milestones, Matias engineered automated background pipelines. Rather than sitting in front of code editors for hours, he uses brief transitional periods—such as lunch breaks or right before bed—to dispatch high-level instructions to autonomous processes.</p>\n  <pre><code class=\"language-text\">[User Idea / Directives]\n         │\n         ▼\n┌────────────────────────────────┐\n│ Codex Competitive Research     │\n└────────────────────────────────┘\n         │\n         ▼\n┌────────────────────────────────┐\n│ Modular Feature Proposal &amp; UI  │\n└────────────────────────────────┘\n         │\n         ▼\n┌────────────────────────────────┐\n│ Automated Feature Flag Deploy  │\n└────────────────────────────────┘\n</code></pre>\n  <p>Before going to sleep, Matias prompts Codex to execute target industry research, map out competitive feature enhancements, structure programmatic execution loops, and implement components behind clean <strong>feature flags</strong> inside the primary repository. He wakes up to functional experimentation suites that he can activate or deactivate at a button click.</p>\n  <h3>The Linear and <code>agents.md</code> Pipeline</h3>\n  <p>To manage these tasks cleanly, Matias utilizes <strong>Linear</strong> tracking software as a central hub. By constructing an <code>agents.md</code> parameters file containing precise rules on his preferred architecture styles, directory structures, and code logic choices, he removes execution alignment issues. Codex parses this markdown criteria, creates structured project backlogs inside Linear, categorizes release milestones, assigns technical cards, and commits code to close tickets without manual oversight.</p>\n  <hr>\n  <h2>Alternative Engineering Entry Points</h2>\n  <p>Matias showcases creative user-interface integrations built on top of the open-source <strong>Codex App Server</strong> to run tasks on the go:</p>\n  <h3>1. The Apple Watch Complication</h3>\n  <p>Matias built a custom Apple Watch complication that translates speech into active repository modifications. By dictating a statement like <em>\"create a test.md file in my skills repo\"</em> into his wrist:</p>\n  <ul>\n   <li>The recording travels to an iPhone companion app.</li>\n   <li>The tool identifies the functional intent and validates context data regarding his GitHub account profiles.</li>\n   <li>The task routes through Codex App Server to successfully generate a pull request in the background.</li>\n  </ul>\n  <h3>2. OpenClaw and Discord</h3>\n  <p>Using an integration named Lou, Matias routes specific Discord communication channels to dedicated code repositories running on private home servers. This allows him to manage, test, and adapt development tasks instantly through standard chat prompts while traveling.</p>\n  <h3>3. Browser-Driven Computer Use</h3>\n  <p>Matias shared a recent experiment using OpenAI's computer use feature. Tasked with migrating tedious administration URLs into a control panel on a localized Raspberry Pi, Matias allowed Codex to leverage browser-driven system operations. The model initiated a secure SSH terminal sequence, evaluated internal raw files, navigated the application browser panel, and executed the copy-paste routine flawlessly while Matias monitored the cursor movements.</p>\n  <hr>\n  <h2>Prototyping and Model Evaluation</h2>\n  <p>To evaluate new model updates, Matias maintains an evaluation benchmark app called <strong>Snapchat</strong>—a playful hackathon tool built 10 years ago allowing cats to capture self-portraits via an interactive laser-pointer UI.</p>\n  <p>Testing the newly released <strong>GPT-5.5</strong>, Matias discovered the model easily one-shots complex core application architectures that previously required five developers an entire weekend to complete. Furthermore, the model exhibits multimodal styling capabilities: Matias generated a visual layout asset via prompt engineering, instructed Codex to mimic that design palette, and watched the model successfully restyle independent internal menus to match the generated theme.</p>\n  <h2>Three Golden Rules for AI Success</h2>\n  <p>Matias closes with three philosophical rules for creators aiming to master prompt-driven development platforms:</p>\n  <blockquote>\n   <ol>\n    <li><strong>Assume it is possible:</strong> Proceed under the functional guarantee that your application concepts can be constructed.</li>\n    <li><strong>Assume you can do it:</strong> Remove inner professional barriers and doubt surrounding non-traditional engineering capabilities.</li>\n    <li><strong>Assume execution failures are your fault:</strong> If a large language model yields flawed or unexpected architecture outputs, do not blame tool limitations. Recognize that the system made inaccurate assumptions because you failed to clarify contextual boundaries up front, then adjust your documentation and try again.</li>\n   </ol>\n  </blockquote>\n </body>\n</html>",
+  "aiSummary": "Matias Castello 展示了他如何把 Codex 用成一套实用的 AI 编码与产品构建系统，覆盖 Alchemy 代码审查、Linear 驱动的 backlog、feature flag 实验、Apple Watch 触发任务，以及 GPT-5.5 一次性原型生成。",
+  "oneSentenceSummary": "Matias Castello 展示了他如何把 Codex 用成一套实用的 AI 编码与产品构建系统，覆盖 Alchemy 代码审查、Linear 驱动的 backlog、feature flag 实验、Apple Watch 触发任务，以及 GPT-5.5 一次性原型生成。",
+  "summary": "这一期 Builders Unscripted 是一次信息密度很高的一手工作流拆解，展示一位没有正式工程训练的产品负责人，如何把 Codex 变成日常开发操作系统。Matias Castello 讲到 Alchemy 早期用 Slack 修改文档的经历、Codex 在事故复盘中回溯发现 race condition bug 的关键时刻，以及开发者平台为什么必须同时服务使用 AI 辅助的人类开发者和自主智能体开发者。最有迁移价值的是他的个人流程：共享 skills、`agents.md` 偏好文件、由 Codex 生成的 Linear 里程碑和 tickets、隔夜竞品研究，以及通过模块化 feature flag 实验在委派执行的同时保持控制。视频还展示了 Discord、OpenClaw、Apple Watch 语音备忘录、Codex App Server、Raspberry Pi 上的浏览器 computer use，以及 GPT-5.5 一次性 UI 原型等创造性入口。它不是严谨的技术教程，而是一个鲜活的操作者案例，为 builders 提供了关于上下文设置、任务委派、智能体界面和产品实验的具体模式。",
+  "mainPoints": [
+    {
+      "point": "Codex 在 Alchemy 从小型文档修改走向了专业代码审查。",
+      "explanation": "Matias 描述了一个团队文化转折点：事故复盘时，团队回溯运行 Codex code review，发现它确实能抓到那个 race condition bug，这让工程师相信 LLM 可以参与大型生产级代码库中的实际工作。"
+    },
+    {
+      "point": "开发者平台现在必须同时面向 AI 辅助的人类开发者和自主智能体。",
+      "explanation": "Alchemy 的产品思路已经发生变化，因为人类开发者越来越多地借助 AI 构建软件，同时自主智能体也可能需要注册、集成 API、执行基础设施任务，而它们未必需要和人类相同的界面。"
+    },
+    {
+      "point": "最值得迁移的流程，是通过 skills、`agents.md` 和 Linear 进行高上下文委派。",
+      "explanation": "Matias 通过提前写入自己的偏好、架构风格、规划方式和项目预期，减少 LLM 出错的空间，再让 Codex 创建 milestones、拆解任务，并通过结构化 backlog 执行工作。"
+    },
+    {
+      "point": "当入口离开编辑器后，AI coding 的能力会被进一步放大。",
+      "explanation": "Apple Watch、Discord、OpenClaw、Codex App Server 和 computer use 示例表明，编码智能体正在变成一种环境化执行界面，适合在离开电脑时派发小任务或管理工作。"
+    },
+    {
+      "point": "他的建议把 LLM 失败重新定义为沟通和上下文设置问题。",
+      "explanation": "Matias 并不急着断定模型能力不足，而是建议 builders 先假设任务可完成、自己可以驱动结果，再不断改进指令，直到智能体的默认假设与真实意图对齐。"
+    }
+  ],
+  "keyQuotes": [
+    "但我觉得更有意思的是，你并不是工程师出身，却比我认识的很多工程师构建得更多。",
+    "团队里有人想到，可以让 Codex 回溯运行 code review，看看 Codex 当时是否能抓到这个 bug，结果它真的抓到了。",
+    "现在我们基本假设，100% 的开发者都会在 AI 的帮助下构建软件，对吧？",
+    "我很好奇，如果今天只靠我自己用 AI 来构建我们当时正在做的那个 app 的第一版，需要多久。我猜不到一周。",
+    "当你想从 LLM 得到某个结果却没有成功时，这一点有点难。你必须放下自我。先假设是自己的问题。不要假设工具做不到，而是假设你还没有找到表达或传达自己意图的方式。"
+  ],
+  "tags": [
+    "Codex",
+    "AI coding",
+    "AI 智能体",
+    "产品管理",
+    "开发者工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 924,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d90853",
+  "sourceName": "OpenAI",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1780086565000,
+  "publishDateStr": "05-30",
+  "publishDateTimeStr": "2026-05-30 04:29:25"
+}

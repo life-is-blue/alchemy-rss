@@ -1,0 +1,54 @@
+{
+  "id": "RAW_66368033",
+  "title": "DuckDB Quack：基于 HTTP 的客户端/服务器协议，实现多用户分析",
+  "url": "https://www.infoq.com/news/2026/05/duckdb-quack-protocol/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-05-31 19:17:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://duckdb.org/2026/05/12/quack-remote-protocol\">DuckDB has recently announced Quack</a>, a new remote protocol over HTTP that lets multiple DuckDB instances connect to and work with the same database over a network. The protocol introduces client-server capabilities to a database that was previously mostly local and embedded.</p>\n   <p>Keeping DuckDB’s lightweight workflow and SQL compatibility, <a href=\"https://duckdb.org/quack/\">Quack</a> makes it easier to share datasets, support concurrent users, run analytics remotely, and build production-style data services without switching to a heavier, more traditional database system. Compared to existing approaches, Quack is designed to be simpler to use and significantly faster.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/duckdb-quack-protocol/en/resources/1duckdb-1779461054935.png\" rel=\"share\"></p>\n   <p><em>Source: DuckDB blog</em></p>\n   <p>Quack allows multiple applications to access the same DuckDB database simultaneously over standard HTTP connections, using DuckDB’s native data format. DuckDB says this approach can move large datasets about 3.5× faster than Arrow Flight and significantly faster than PostgreSQL.</p>\n   <p>Released under the permissive MIT License, <a href=\"https://github.com/duckdb/duckdb\">DuckDB</a> is a popular open source analytical database designed for fast SQL queries on large datasets, directly from local files, applications, or notebooks. Like SQLite, it is an in-process database that can be embedded within an application without requiring a separate database server. Introducing Quack, the team writes:</p>\n   <blockquote>\n    <p>With Quack, DuckDB can now be useful in a wide range of new use cases, where centralizing state is more important than hyper-local querying. We have already had to learn that data is not always local with the rise of data lakes. Speaking of lakes, Quack is also going to be integrated into DuckLake so that DuckDB itself can be a remotely-accessible Catalog server.</p>\n   </blockquote>\n   <p>DuckDB decided not to use <a href=\"https://arrow.apache.org/docs/format/FlightSql.html\">Arrow Flight SQL</a>, a protocol for interacting with SQL databases using the Arrow in-memory format and the Flight RPC framework, because they wanted full control over how data is transferred and how the protocol evolves. They also claim that Quack is more efficient for small queries as it can send a query and return results in a single network round trip. The team adds:</p>\n   <blockquote>\n    <p>We feel that in order to be able to keep innovating in data systems, we cannot allow ourselves to be restricted by formats that are controlled externally.</p>\n   </blockquote>\n   <p><a href=\"https://news.ycombinator.com/item?id=48111765\">The Hacker News response</a> was largely positive, with developers viewing it as an important step toward shared, multi-user analytics workflows while keeping DuckDB lightweight and easy to deploy. Ryan Glover, managing principal at Lattice Engineering, comments:</p>\n   <blockquote>\n    <p>This is rad. I've been eyeballing using DuckDB in my firm's internal app framework and this just solved the \"but how do I horizontally scale this\" problem. Kudos to the DuckDB folks. Love \"Quack\" for the protocol name, too.</p>\n   </blockquote>\n   <p>User <em>kvlonge</em> <a href=\"https://www.reddit.com/r/dataengineering/comments/1tbszfh/comment/oljyq65/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">adds on Reddit</a>:</p>\n   <blockquote>\n    <p>Being able to spin up DuckDB on a server and have people talk to it remotely like a 'normal' DB will be such a big unlock.</p>\n   </blockquote>\n   <p>DuckDB plans to integrate Quack with DuckLake, improve performance, and ship a production-ready release with DuckDB 2.0 later in 2026. The team is also working on better support for remote databases, higher transaction throughput, customizable protocol extensions, and replication features.</p>\n   <p>In the \"<a href=\"https://dev.to/amirsefati/from-deepseek-to-quack-when-the-dream-of-distributed-duckdb-started-to-feel-real-188m\">From DeepSeek to Quack: When the Dream of Distributed DuckDB Started to Feel Real</a>\" article, Amir Sefati highlights the advantage of DuckDB instances talking to each other:</p>\n   <blockquote>\n    <p>When you combine that with object storage, DuckLake, Parquet, and vector databases, you get a very pragmatic architecture for modern AI and data engineering. Not because it is trendy. Because it removes unnecessary complexity.</p>\n   </blockquote>\n   <p>Discussing further use cases, such as a browser tab talking directly to a DuckDB server or notebook-to-notebook query forwarding, Mehdi Ouazza, data engineer and developer advocate at MotherDuck, a cloud data warehouse built on the open-source DuckDB query engine, <a href=\"https://www.linkedin.com/posts/mehd-io_duckdb-just-released-quack-a-clientserver-ugcPost-7460051827259256832-JwBn\">concludes</a>:</p>\n   <blockquote>\n    <p>Can we finally retire the \"DuckDB has no multi-writer support\" take? There are plenty of options out there now, just depends how you want to slice and dice.</p>\n   </blockquote>\n   <p>Support for the new protocol currently requires the Quack extension in both DuckDB instances. The <a href=\"https://duckdb.org/2026/05/20/announcing-duckdb-153\">recently released DuckDB v1.5.3</a> supports Quack as an autoloadable core extension and as a DuckLake catalog.</p>\n   <p><a href=\"https://www.linkedin.com/in/hfmuehleisen/\">Hannes Mühleisen</a>, creator of the DuckDB database and CEO of DuckDB Labs, previously <a href=\"https://www.infoq.com/presentations/duckdb/\">presented a QCon session</a> on in-process analytical data management with DuckDB.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DuckDB Quack: Client/Server Protocol over HTTP for Multi-User Analytics\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/05/duckdb-quack-protocol/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780226220000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DuckDB 宣布推出 Quack，一种基于 HTTP 的新型客户端/服务器协议，能够在保持其轻量级嵌入式数据库工作流的同时，实现多用户远程分析。",
+  "oneSentenceSummary": "DuckDB 宣布推出 Quack，一种基于 HTTP 的新型客户端/服务器协议，能够在保持其轻量级嵌入式数据库工作流的同时，实现多用户远程分析。",
+  "summary": "DuckDB 宣布推出 Quack，这是一种基于 HTTP 的新型远程协议，允许多个 DuckDB 实例通过网络连接到同一数据库并进行协作，为原本本地化、嵌入式的数据库引入了客户端-服务器能力。Quack 的设计目标是比 Arrow Flight SQL 等现有方案更简单、更快速，据称传输大型数据集的速度快约 3.5 倍。它支持并发用户、远程分析以及生产级数据服务，而无需切换到更重的数据库系统。该协议使用 DuckDB 的原生数据格式，对于小型查询，可以在单次网络往返中完成查询发送和结果返回。Hacker News 和 Reddit 社区对此反响积极，认为这是迈向共享、多用户分析的关键一步。DuckDB 计划将 Quack 与 DuckLake 集成，并于 2026 年晚些时候随 DuckDB 2.0 发布生产就绪版本。近期发布的 DuckDB v1.5.3 已支持 Quack 作为可自动加载的核心扩展。",
+  "mainPoints": [
+    {
+      "point": "DuckDB 推出 Quack，一种基于 HTTP 的客户端/服务器协议，用于多用户分析。",
+      "explanation": "Quack 允许多个 DuckDB 实例远程连接到同一数据库，实现共享数据集、并发用户和生产级数据服务，同时保持 DuckDB 的轻量级工作流。"
+    },
+    {
+      "point": "Quack 的设计目标是比 Arrow Flight SQL 等现有协议更简单、更快速。",
+      "explanation": "DuckDB 声称 Quack 传输大型数据集的速度比 Arrow Flight 快约 3.5 倍，比 PostgreSQL 快得多，并且对于小型查询可以在单次网络往返中返回结果。"
+    },
+    {
+      "point": "该协议是迈向分布式 DuckDB 的关键一步，计划集成 DuckLake 并在 DuckDB 2.0 中发布生产版本。",
+      "explanation": "DuckDB 计划将 Quack 与 DuckLake 集成、提升性能，并于 2026 年晚些时候随 DuckDB 2.0 发布生产就绪版本，同时支持远程数据库和复制。"
+    }
+  ],
+  "keyQuotes": [
+    "借助 Quack，DuckDB 现在可以广泛应用于一系列新场景，在这些场景中，集中化状态比超本地化查询更为重要。",
+    "我们认为，为了能够持续在数据系统领域进行创新，我们不能让自己受制于由外部控制的格式。",
+    "能够在服务器上启动 DuckDB，并让人们像使用“普通”数据库一样远程访问它，这将是一个巨大的突破。",
+    "当你将其与对象存储、DuckLake、Parquet 和向量数据库结合使用时，你会得到一个非常实用的现代 AI 和数据工程架构。"
+  ],
+  "tags": [
+    "DuckDB",
+    "Quack",
+    "客户端/服务器协议",
+    "分析型数据库",
+    "HTTP"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 679,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780226220000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-05-31 19:17:00"
+}

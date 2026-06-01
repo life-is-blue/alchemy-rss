@@ -1,103 +1,103 @@
-> **更新时间**: 2026-05-21 08:29:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-01 08:28:40 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [删除-95%-的-Agent-Skills-后，WorkOS-如何让智能体结果变好](https://www.youtube.com/watch?v=vy7o1g2iHY8)
+
+2026-05-31 02:00:06 | 标签: AI 智能体, 智能体 harness, Claude skills, evals, 状态机
+
+> 这场分享是一个把 AI 智能体从演示推进到可反复交付系统的工程案例。Nick Nisi 介绍了 WorkOS 内部的 Case harness：它最初只是一个 Claude skill，后来被重建为 TypeScript 状态机，包含实现、验证、评审、收尾和复盘等多个智能体。核心经验是，不能相信智能体自己报告任务完成，而要让它在进入人工评审前产出证据，例如测试输出 hash 或 UI 录屏。后半部分同样有价值：WorkOS 一开始生成了超过 10，000 行产品 skills，但通过 eval 发现额外上下文反而让部分任务变差。最后他们改成 553 行手写 gotchas，把 eval 时间从...
+
+
+
+### [Builders-Unscripted-第-3-期：Matias-Castello-如何用-Codex-搭建-AI-编码与产品工作流](https://www.youtube.com/watch?v=8QKqENa_eQQ)
+
+2026-05-30 04:29:25 | 标签: Codex, AI coding, AI 智能体, 产品管理, 开发者工作流
+
+> 这一期 Builders Unscripted 是一次信息密度很高的一手工作流拆解，展示一位没有正式工程训练的产品负责人，如何把 Codex 变成日常开发操作系统。Matias Castello 讲到 Alchemy 早期用 Slack 修改文档的经历、Codex 在事故复盘中回溯发现 race condition bug 的关键时刻，以及开发者平台为什么必须同时服务使用 AI 辅助的人类开发者和自主智能体开发者。最有迁移价值的是他的个人流程：共享 skills、`agents.md` 偏好文件、由 Codex 生成的 Linear 里程碑和 tickets、隔夜竞品研究，以及通过模块化 fe...
+
+
+
+### [OpenAI-Agents-SDK：面向长任务智能体的生产级-Harness](https://www.youtube.com/watch?v=tK32trvj_b4)
+
+2026-05-29 04:09:34 | 标签: Agents SDK, 智能体 harness, 沙箱, 工具调用, skills
+
+> 这场 Build Hour 是一次面向开发者的新版 Agents SDK 讲解和演示。Steve Coffey 解释了为什么生产级智能体不能只是一个简单的 LLM 循环：它们需要持久编排、隔离计算、文件访问、工具路由、状态恢复、审批机制，以及把应用上下文带入运行过程的能力。最有技术含量的观点是把 harness 与 compute 分离。智能体循环不必和执行文件、命令的沙箱绑在一起，harness 可以运行在更持久的基础设施中，而沙箱保持临时可丢弃，从而降低状态丢失和密钥管理风险。现场 demo 构建了一个智能体任务追踪器，展示 sandbox agents、上传文件、快照、自定义工具、工具调...
+
+
+
 ### [Erdős-突破：OpenAI-模型首次实现重大-AI-数学发现](https://www.youtube.com/watch?v=Br4l9YjCyRU)
 
-2026-05-20 19:20:13 | 标签: OpenAI, 数学突破, 组合几何, 代数数论, Erdős 问题
-
-> OpenAI 研究人员以亲历者视角分享了这一历史性 AI 成就：AI 模型首次解决了组合几何领域一个久负盛名的开放问题，这也是该数学子领域最广为人知的未解问题之一。该问题涉及平面上点的排列（即 Erdős 单位距离问题），表面上是纯粹的初等几何题，但其解法却需要代数数论中的深层工具。在此结果出现之前，已有的几何构造方案被普遍认为已接近最优。AI 模型证明，这一构造实际上还可以得到显著改进。关键洞察在于：证明路径需要做出海量极为精密的连续决策，其复杂程度超出了人类数学家系统执行的能力范畴；而 AI 得以穷举探索全部证明可能性，并最终找到一条可行路径。研究人员坦言，看到结果的第一反应是难以置信，这...
+2026-05-20 19:20:13
 
 
 
 ### [用-Claude-Code-Routines-构建主动式智能体工作流](https://www.youtube.com/watch?v=eSP7PLTXNy8)
 
-2026-05-20 12:14:19 | 标签: Claude Code, Routines, 主动式智能体, 智能体工作流, 无服务器自动化
-
-> 在 Anthropic 「Code with Claude」 开发者大会的这场 20 分钟工作坊中，Applied AI 团队的 Maya 展示了 Routines——Claude Code 内置的全新原生自动化功能，将 AI 辅助从被动响应升级为主动驱动。演讲首先剖析了当前工程师构建主动式智能体时面临的三大痛点：不稳定的本地托管（笔记本合盖即断连）、繁琐的触发基础设施（手动配置 cron 和 Webhook 端点），以及糟糕的会话可见性（无法监控、介入或恢复无头运行中的任务）。Routines 通过在 Anthropic 托管的无服务器云上运行 Claude Code 会话，支持基于时间表和...
+2026-05-20 12:14:19
 
 
 
 ### [告别「盯屏守候」：Claude-Code-高级自动化三层框架](https://www.youtube.com/watch?v=wI0ptqCSL0I)
 
-2026-05-20 11:49:28 | 标签: Claude Code, AI 智能体, 验证循环, 多智能体自动化, Chrome MCP
-
-> 在这场大会演讲中，Claude Code 创始工程师 Sid Bidasaria 直击一个日益突出的悖论：AI 模型越来越强大，开发者却要花更多时间盯着屏幕等待结果。他围绕三层架构路线图，系统讲解如何一步步实现「无人值守」工程协作。  第一层是验证循环：让 Claude 按照人类开发者的测试 SOP 自主校验工作成果——写代码、编译、启动运行时、通过 Chrome MCP 或 Playwright 进行浏览器自动化、检查副作用，并持续迭代直至达到预设的成功状态。Sid 以开源项目 Monkeytype 进行了现场演示：Claude 自动启动开发服务器，用 Chrome MCP 操作 UI，发现...
+2026-05-20 11:49:28
 
 
 
 ### [Code-with-Claude-伦敦-2026-开幕主题演讲：Opus-4.7、Advisor-Strategy-与-Routines-全面解析](https://www.youtube.com/watch?v=6amLO7I9xdg)
 
-2026-05-19 19:18:23 | 标签: Claude Code, Anthropic, AI 原生工程, 智能体工作流, MCP Tunnels
-
-> Code with Claude 伦敦 2026 开幕主题演讲是 Anthropic 的旗舰开发者活动，汇聚了模型研究、平台与开发者工具三大团队，共同呈现 AI 原生工程的完整图景。  演讲以一个核心命题破题：从创意到上线产品的距离正在急剧压缩。现实案例包括：Spotify 基于 Claude 构建的迁移智能体每月合并 1000 余个 PR，迁移时间缩短 90%；Binty 的寄养家庭平台将家庭资质审核周期缩短了 20 天。  研究 PM 团队的 Lisa 梳理了从 Opus 3 到 Opus 4.7 再到 Mythos 预览版的模型演进历程。Mythos 在完整 OpenBSD 源码中发现了...
+2026-05-19 19:18:23
 
 
 
 ### [别构建垃圾：AI-智能体成熟度的四个层级](https://www.youtube.com/watch?v=yUmS-F9IX90)
 
-2026-05-19 15:00:06 | 标签: AI 智能体, 智能体架构, 状态机, 看板, 云端智能体
-
-> 在这场技术分享中，Cline 的 Ara Khan 提出了一套清醒务实的 AI 智能体工程框架，反驳了业界对智能体的「集体狂热」。他将构建之旅拆分为四个层级：Level 1 使用现有框架（LangChain、LangGraph）快速验证产品方向；Level 2 从零构建智能体，以自定义状态机为核心，遵循五条基础准则；Level 3 引入看板 UX，并发管理多个推理密集型智能体；Level 4 将智能体部署至云端，支持长时运行与规模化扩展。  Level 2 的五条准则是本次分享的核心。准则一：每个智能体本质上都是一个带条件和终态的递归 while 循环，将其建模为状态机可使工程过程可预期。准则...
+2026-05-19 15:00:06
 
 
 
 ### [LLM-时代的个性化推荐：Spotify-生成式推荐引擎的三大技术支柱](https://www.youtube.com/watch?v=5YSJEP0HWzM)
 
-2026-05-19 13:00:06 | 标签: Spotify, 推荐系统, LLM 个性化, 语义 ID, 软分词
-
-> Shivam Verma 是 Spotify AI Foundation 团队用户表征组的技术负责人，他以第一视角完整讲解了 Spotify 如何为全球 7.5 亿月活用户现代化推荐基础设施。演讲围绕三大核心支柱展开。第一，用户基础建模：Spotify 从基于自编码器的用户嵌入迁移至以 Transformer 为骨干的序列模型，将用户、歌曲和播客节目映射到同一超球面嵌入空间，实现十亿用户规模下的跨内容建模。第二，通过语义 ID 理解内容目录：将 1000 维内容向量压缩为 4-6 个离散层次化 Token，让在 Spotify 数据上微调的开源 LLM（Llama、Qwen）能够自回归地预测用...
+2026-05-19 13:00:06
 
 
 
 ### [构建能持续运行数小时的智能体：Anthropic-工程师揭秘对抗式生成-评估架构](https://www.youtube.com/watch?v=mR-WAvEPRwE)
 
-2026-05-18 13:00:06 | 标签: 长时运行智能体, Anthropic, Claude Code, Agent SDK, 对抗式评估
-
-> 在这场 34 分钟的 AI Engineer 大会技术演讲中，Anthropic 应用 AI 工程师 Ash Prabaker 与 Andrew Wilson 系统回顾并蓝图化了构建长时间运行自主智能体的方法论。  Andrew 首先归纳了导致智能体在长时运行中退化的三类结构性失效：上下文约束（有限的上下文窗口、上下文腐化、以及接近 token 上限时的「上下文焦虑」）、原生规划能力不足，以及输出奉承——模型会对自身不完整的工作盖章放行。  随后 Andrew 梳理了 Claude 模型权重与外部 Agent SDK 脚手架一年来的协同演化历程：自主运行时长从 Opus 3.7 的约 1 小时...
+2026-05-18 13:00:06
 
 
 
 ### [超越代码覆盖率：用-Playwright-实现功能测试，重塑-AI-时代的-TDD-闭环](https://www.youtube.com/watch?v=FWEInOtngmM)
 
-2026-05-16 18:00:06 | 标签: Playwright, 测试驱动开发, 端到端测试, GitHub Copilot, AI 生成代码
-
-> 在这场 22 分钟的 AI Engineer 大会演讲中，微软和 GitHub 高级开发者布道师 Marlene Mhangami 以一组震撼数据开场：GitHub 预计在 2026 年底前录得 140 亿次提交，是去年创纪录数量的 14 倍，其中越来越多的提交由 AI 智能体协同完成。她引用斯坦福大学对 12 万名开发者的研究指出，AI 是一个放大器：整洁的代码库能显著放大 AI 带来的生产力收益，而在混乱代码库中不加约束地使用 AI，只会加速代码腐化，让团队花在重构上的时间远超新功能交付。  演讲的核心论点是对传统「以代码覆盖率为中心的 TDD」的批判。她归纳出 AI 时代的两种失效模式：...
+2026-05-16 18:00:06
 
 
 
 ### [智能体不开站会：构建「后工程师」工程组织的实战案例](https://www.youtube.com/watch?v=VMemhtlsoNk)
 
-2026-05-15 17:00:06 | 标签: AI 智能体, 后工程师组织, 工程组织变革, 轻量设计文档, 智能体代码审查
-
-> 在 AI Engineer 大会上，来自 PFF（Pro Football Focus）的 Mike Spitz 分享了一个将传统工程团队转型为「后工程师」组织的具体案例。从 2025 年底使用 Claude Opus 进行实验开始，PFF 抽调两名工程师组成攻坚小组，通过结合工单数量与代码复杂度的综合衡量方式，最终实现了每日部署量 25 倍于 10 人传统团队的成绩（5 次/天 vs. 每 5 天 1 次），整体产出提升 10 倍，客户质量评分也从 7.0 升至 8.6。  最颠覆性的结果是：Scrum 没能活下来。冲刺计划会、每日站会、冲刺梳理会以及项目经理角色全部被裁撤。取而代之的是智能...
+2026-05-15 17:00:06
 
 
 
 ### [用-AI-让工程团队产出翻倍：Intercom-高级首席工程师-Brian-Scanlan-的-Agent-First-实战](https://www.youtube.com/watch?v=4_VQBbs2iQA)
 
-2026-05-15 13:00:06 | 标签: AI Engineering, Claude Code, 研发效能, Agent-First SDLC, Intercom
-
-> 在这场 AI Engineer 大会演讲中，Brian Scanlan 详细复盘了 Intercom 在 ChatGPT 发布后全公司转向 AI-first 的推进过程。管理层只定了一个硬指标——「人均 R&D 代码变更数」，并公开承诺一年内做到 2X。落地打法围绕三步：第一是自上而下的文化变革，岗位说明书直接写明「不采用 AI 即不达预期」，同时成立专职的 Team 2X；第二是平台收敛，放弃过去对各类编辑器一视同仁的策略，全面押注 Claude 与 Claude Code，并把它接入公司内部所有系统、约定和架构模式；第三是 agent-first 工程原则，工程师必须「向上一层」工作，把工...
+2026-05-15 13:00:06
 
 
 
 ### [OpenAI-Codex-负责人-Tibo-Sio：Codex-如何从开发者工具进化为通用-Agent，并预告-Slash-Goal-与-Auto-Review](https://www.youtube.com/watch?v=DLP9CagE3dU)
 
-2026-05-14 20:28:12 | 标签: OpenAI Codex, AI Agent, 知识工作, Slash Goal, Auto Review
-
-> 在这场 OpenAI Forum 对谈中，Codex 负责人 Tibo Sio 与主持人 Chris Nicholson 一同复盘了 Codex 的关键转向：从面向开发者的云端 Web 工具，演化为运行在用户本地、服务所有知识工作者的通用 Agent。Tibo 指出，即便是工程师，每天真正写代码的时间也只有 20%-30%，而 GPT-5 让长时任务的执行可靠性大幅提升后，产品自然外延到信息搜集、跨团队协同、数据拉取、财务运营、市场调研和会议准备等场景。他现场用一句语音指令，在几分钟内生成了一份旧金山面包店表格，并进一步做成可交互的地图页面；随后他描述自己每天会跑上百个 Codex 任务，把 ...
+2026-05-14 20:28:12
 
 
 
 ### [OpenAI-Imagen-2.0-深度解析：文字渲染、多语言支持与创意-Agent-路线图](https://www.youtube.com/watch?v=bH2nP-aCFjk)
 
-2026-05-14 17:31:22 | 标签: Imagen 2.0, OpenAI, AI 图像生成, 文字渲染, 写实主义
-
-> 本期 OpenAI 播客由主持人 Andrew Maine 与 Adele Lee（产品负责人）及 Kenji（研究员）共同探讨 Imagen 2.0 的发布与市场反响。两位嘉宾将新模型定性为相较于前代 DALL-E 的「文艺复兴」级进步，并重点介绍三项核心突破：大幅提升的文字渲染能力（能生成真实可读的文字与信息图表）、契合亚欧用户需求的多语言支持，以及基于世界知识而非理想化美学的写实图像生成。  用量数据印证了这一影响力：ChatGPT 每周生成超过 15 亿张图像，自发布以来增长超过 50%。Kenji 介绍了内部「Grid Test」评测方法——要求模型正确渲染 100 个随机指定物体—...
+2026-05-14 17:31:22
 
 
 
@@ -107,13 +107,13 @@
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
@@ -143,13 +143,13 @@
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
@@ -509,7 +509,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -521,7 +521,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

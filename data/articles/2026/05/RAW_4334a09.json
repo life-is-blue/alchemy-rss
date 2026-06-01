@@ -1,0 +1,64 @@
+{
+  "id": "RAW_4334a09",
+  "title": "OpenAI Agents SDK：面向长任务智能体的生产级 Harness",
+  "url": "https://www.youtube.com/watch?v=tK32trvj_b4",
+  "date": "2026-05-29 04:09:34",
+  "author": "OpenAI",
+  "siteName": "OpenAI",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Build Hour: Deep Dive into OpenAI's Agents SDK</h1>\n  <p>In the latest edition of OpenAI Build Hours, host Christine from the startup marketing team joined Steve from the API engineering team to unveil major architecture and ecosystem updates to the open-source <strong>Agents SDK</strong>. The session details how AI models are scaling to handle long-horizon trajectories and how developers can reliably deploy these systems using native sandbox runtimes.</p>\n  <h2>The Evolution toward Long-Horizon Tasks</h2>\n  <p>AI models have rapidly progressed in their ability to perform multi-step work independently over prolonged execution boundaries. OpenAI's internal tools demonstrate this shift clearly:</p>\n  <ul>\n   <li><strong>Codex:</strong> An engineering-focused agent capable of operating from minutes up to a full week continuously on target milestones inside dedicated environments.</li>\n   <li><strong>Security Scanners:</strong> Production implementations built on top of Codex that parse large codebases and structural dependencies to find hidden security flaws in legacy software layers.</li>\n   <li><strong>Data Lake Agents:</strong> Natural language data interfaces that parse data storage systems to quickly answer technical metrics, removing the requirement to manually write complex SQL queries.</li>\n  </ul>\n  <p>Despite these advancements, configuring production-ready systems manually remains incredibly difficult. Teams struggle to find an elegant balance between maximizing performance while maintaining multi-model fallback distribution rules across providers. Managing runtime files and computing layers adds further complexity.</p>\n  <h2>Decoupling Harness Architecture from Compute</h2>\n  <p>A critical innovation highlighted within the new Agents SDK is the separation of the model-native <strong>orchestration harness</strong> from the <strong>ephemeral compute sandbox</strong>.</p>\n  <p>In early agent architectures, execution loops ran directly inside the targeted workspace file structures. If an environment or container suddenly crashed, the conversation state, local file system mutations, and running loops disappeared instantly. This design also introduced clear security issues, exposing API secret tokens to exfiltration vectors via malicious prompt injection attacks inside the unisolated sandbox.</p>\n  <p>By splitting the architecture, the container becomes entirely ephemeral. The orchestrating runtime loop manages rehydration, security, and snapshot storage via isolated backend infrastructures (like AWS or temporal workers). This prevents security leaks and preserves task continuity regardless of container health.</p>\n  <h2>Sandboxing with Multi-Tenant Runtimes</h2>\n  <p>The Agents SDK provides out-of-the-box infrastructure adapters supporting a variety of sandbox environments. Teams can test applications locally using <strong>Docker</strong> containers before deploying production workflows to specialized platforms like <strong>Modal, Cloudflare, E2B, Vercel, Daytona, or Blackel</strong>.</p>\n  <p>To manage state continuously between fragmented user turns, the SDK tracks execution layers on two core fronts:</p>\n  <ol>\n   <li><strong>Conversation History:</strong> Saving the full structural message rollout as a portable JSON payload.</li>\n   <li><strong>File System Snapshots:</strong> Compressing the active directory structures into automated backup tarballs.</li>\n  </ol>\n  <p>When resuming a paused workflow, the SDK pulls the tarball from remote storage (such as Cloudflare R2), provisions a fresh container instance, and rehydrates the file system. This transition happens fluidly, meaning the underlying model continues executing its script entirely unaware that its host container has changed.</p>\n  <h2>Advanced Features: Custom Tools, Skills, and Mounts</h2>\n  <h3>Formatted Function Tools and Approvals</h3>\n  <p>Developers can attach local backend code logic to an agent using the <code>@function_tool</code> Python or TypeScript decorator. The SDK translates these methods into formal API tool definitions and automatically handles back-and-forth loops without requiring custom manual infrastructure.</p>\n  <p>For sensitive workflows, the SDK supports custom human-in-the-loop permission layers. Developers can define targeted rules—for example, requiring human confirmation before a specific function updates an issue status to <code>DONE</code>.</p>\n  <h3>Centralized Skills API &amp; Volume Mounts</h3>\n  <p>To help maintain consistent prompt logic across highly parallel multi-agent deployments, OpenAI introduced a version-controlled <strong>Skills API</strong> alongside direct git repo synchronization. Complex skill structures can be developed, code-reviewed, and distributed via Git pull requests.</p>\n  <p>Furthermore, the SDK handles the <strong>Manifest</strong> object pattern to control file distribution styles:</p>\n  <ul>\n   <li><strong>Copying Payloads:</strong> Copies data blobs into the active workspace at startup, enabling faster runtime execution loops but introducing initial transfer delays.</li>\n   <li><strong>Network Mounts (S3/R2):</strong> Mounts external buckets natively onto the container. This enables instant agent startup times and guarantees strong freshness constraints over live data lakes, though it incurs minor network latency during deep directory searches.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "OpenAI 把新版 Agents SDK 定位为模型原生 harness，让长时间运行的智能体能在生产系统中使用沙箱、文件、工具、记忆、skills、快照和人工审批。",
+  "oneSentenceSummary": "OpenAI 把新版 Agents SDK 定位为模型原生 harness，让长时间运行的智能体能在生产系统中使用沙箱、文件、工具、记忆、skills、快照和人工审批。",
+  "summary": "这场 Build Hour 是一次面向开发者的新版 Agents SDK 讲解和演示。Steve Coffey 解释了为什么生产级智能体不能只是一个简单的 LLM 循环：它们需要持久编排、隔离计算、文件访问、工具路由、状态恢复、审批机制，以及把应用上下文带入运行过程的能力。最有技术含量的观点是把 harness 与 compute 分离。智能体循环不必和执行文件、命令的沙箱绑在一起，harness 可以运行在更持久的基础设施中，而沙箱保持临时可丢弃，从而降低状态丢失和密钥管理风险。现场 demo 构建了一个智能体任务追踪器，展示 sandbox agents、上传文件、快照、自定义工具、工具调用审批、智能体交接和挂载 R2 存储。",
+  "mainPoints": [
+    {
+      "point": "生产级智能体需要持久 harness，而不是手写 LLM 循环",
+      "explanation": "SDK 打包了循环、工具执行、文件、web search、MCP、code interpreter、skills 和记忆，让团队把精力放在产品行为而不是编排胶水上。"
+    },
+    {
+      "point": "分离 harness 和 compute 可以让沙箱智能体更安全、更易恢复",
+      "explanation": "演讲把沙箱视为可丢弃的执行环境，而 harness 负责在更持久的基础设施中管理快照、恢复和运行状态。"
+    },
+    {
+      "point": "SDK 把 Codex 风格能力带入应用智能体",
+      "explanation": "Shell 交互、文件编辑、skills、记忆、沙箱使用和长时间异步命令处理，被包装成可用于非编码领域的通用原语。"
+    },
+    {
+      "point": "自定义工具和审批对接真实产品工作流至关重要",
+      "explanation": "demo 展示了用于分配任务和改变状态的 function tools，也展示了对标记完成等敏感动作设置审批门禁。"
+    },
+    {
+      "point": "外部存储挂载让智能体无需复制数据，也能处理新鲜或大规模文件集",
+      "explanation": "R2 和 S3 兼容挂载示例说明，智能体可以操作中心化应用数据，而沙箱里看到的仍像普通文件系统。"
+    }
+  ],
+  "keyQuotes": [
+    "在你自己的系统中构建生产级智能体仍然很难。",
+    "我们把 harness 和 compute 拆开了。",
+    "你可以把沙箱当成完全临时的东西，不必太担心它是否存活。",
+    "智能体循环是内置的，设计上非常接近 Codex。",
+    "使用这些工具，是把你应用自己的上下文或功能带入智能体的好方式。",
+    "从中心化事实来源挂载数据，而不是在智能体开始工作时复制一份可能已经过期的数据，这非常关键。"
+  ],
+  "tags": [
+    "Agents SDK",
+    "智能体 harness",
+    "沙箱",
+    "工具调用",
+    "skills"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 644,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d90853",
+  "sourceName": "OpenAI",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1779998974000,
+  "publishDateStr": "05-29",
+  "publishDateTimeStr": "2026-05-29 04:09:34"
+}

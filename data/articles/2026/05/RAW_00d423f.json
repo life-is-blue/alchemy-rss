@@ -1,0 +1,63 @@
+{
+  "id": "RAW_00d423f",
+  "title": "雨森的创投观察第 2 集：Harness、下一个字节、2026 大机会和 Stanley Druckenmiller",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6a15a2cbff7b9a8c0a5b953f",
+  "date": "2026-05-27 08:00:00",
+  "author": "张小珺",
+  "siteName": "张小珺Jùn｜商业访谈录",
+  "content": "<html>\n <head></head>\n <body>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/nsLTK_gpweH8qfLfmNbmc8TjpYEh.png\">\n  </figure>\n  <p><span>今天是我们的系列节目</span><strong><span>《雨森的创投观察》</span></strong><span>第2集。</span></p>\n  <p><span>在</span><a href=\"https://www.xiaoyuzhoufm.com/episode/693d7c172a383da167ecfcde\"><span>《雨森的创投观察》第1集（我们节目124集）</span></a><span>中，真格基金管理合伙人戴雨森预言称，2026年的关键词是“The Year of R”，他彼时较为谨慎，觉得2026年将是一个现实与回调之年。并在过年前清空了所有二级市场股票。</span></p>\n  <p><span>现在过去了小半年，很多人说他的一部分观点有点打脸。</span><strong><span>雨森经过了短暂的内心挣扎，决定还是继续录制我们的系列节目。他将持续分享自己的投资思考。</span></strong></p>\n  <p><strong><span>OUTLINE:</span></strong></p>\n  <blockquote>\n   <p><strong><span>Strong Opinions, Weakly Held</span></strong></p>\n  </blockquote>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:02:00</a></span></span><span> 雨森回应第一集“被打脸”往事：“Strong Opinions, Weakly Held”</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:06:50</a></span></span><span> 我的二级市场投资偶像是Stanley Freeman Druckenmiller</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:09:07</a></span></span><span> 在《雨森的创投观察》第1集，我说对了什么？说错了什么？</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:13:06</a></span></span><span> 理解Anthropic的选择、组织和价值观（Dario的memo和对齐）</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:18:57</a></span></span><span> Harness由模型公司第一方地来做，更有优势吗？</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:20:07</a></span></span><span> Anthropic vs OpenAI，Claude Code vs Codex</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:23:17</a></span></span><span> “Year of Return”，到今天return的问题并没有真正被解答</span></p>\n  <blockquote>\n   <p><strong><span>好的Harness是很有生命力的，Harness本身更像OS，模型更像处理器</span></strong></p>\n  </blockquote>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:34:05</a></span></span><span> 重新总结2026年的大叙事、大变化</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:37:14</a></span></span><span> 在模型外面包了越来越多的层次，“壳”早已不是简单的壳：model - harness - context - runtime</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:41:30</a></span></span><span> 通过Harness带来的数据也能够反哺模型的训练，形成数据飞轮。Chatbot没有数据飞轮，是因为普通人的聊天很难给模型带来新的知识。但Agentic模型要的就是帮用户解决真实问题，用户真实使用产品的轨迹是很好的训练资料</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:44:45</a></span></span><span> 之前节目中罗福莉和姚顺宇的观点差异（关于Harness重要性），其实不矛盾</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:46:26</a></span></span><span> 一个好的Harness是很有生命力的。按照出现顺序，像Manus、Claude Code、OpenClaw、Codex、Hermes是用户喜欢的Coding Agent Harness，甚至说ChatGPT可以认为是GPT API的第一个 Harness</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:52:25</a></span></span><span> 我认为Harness本身更像是OS：之前广密有一个比方说，模型公司是新生代的OS，但我感觉，模型更像是驱动OS的处理器，我们看到有越来越多的应用是跟用户的Harness对接，而并非直接跟用户使用的底层模型去进行耦合</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:55:24</a></span></span><span> 一个反直觉的现象是，勇敢地去做创新，勇敢地去做通用的，是有大机会的</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:57:33</a></span></span><span> 我的第一个暴论：“AGI是在缩水的”</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">00:59:20</a></span></span><span> 模型能力提升会不会向下吞并Harness的空间？有可能出现Agent的网络效应</span></p>\n  <blockquote>\n   <p><strong><span>字节系创始人，要把在字节学的东西，自己颠覆自己</span></strong></p>\n  </blockquote>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:04:03</a></span></span><span> 2026年各个基金投的创业公司变多了，估值也变高了</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:04:07</a></span></span><span> 创业者要做大厂看不上的事情，比如曾经的“套壳”、“开源”</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:10:50</a></span></span><span> 好的创始人和好的方向有时候是共振的</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:21:26</a></span></span><span> “你原来的护城河可能会变成你的软肋”</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:26:24</a></span></span><span> 对于AI产品，大DAU应该成为目标吗？ 大DAU vs 高质量任务，优化哪个指标？</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:28:51</a></span></span><span> “AI有点像外星人，来到了人类的世界”，这里面的机会</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:34:35</a></span></span><span> AI时代的组织与组织变革</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:38:51</a></span></span><span> “下一个字节跳动级的公司可能长得不像字节”</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:41:42</a></span></span><span> 我的第二个暴论：“字节系创始人，要把在字节学的东西，自己颠覆自己”</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:42:37</a></span></span><span> 我眼中的AI创业框架和大机会</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">01:48:01</a></span></span><span> 美国vs中国创业端对比</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">02:01:30</a></span></span><span> 思考需要刻意练习，创新需要刻意练习</span></p>\n  <p><strong><span>LINKS：</span></strong></p>\n  <p><span>我们的播客在</span><a href=\"https://www.xiaoyuzhoufm.com/podcast/626b46ea9cbbf0451cf5a962\"><span>小宇宙</span></a><span>、</span><a href=\"https://podcasts.apple.com/cn/podcast/%E5%BC%A0%E5%B0%8F%E7%8F%BAj%C3%B9n-%E5%95%86%E4%B8%9A%E8%AE%BF%E8%B0%88%E5%BD%95/id1634356920\"><span>Apple Podcast</span></a><span>、Spotify等全音频平台播出；</span></p>\n  <p><span>我们的视频播客在</span><a href=\"https://b23.tv/FZ0s2Q1\"><span>Bilibili</span></a><span>、</span><a href=\"https://xhslink.com/m/4clvm6edHk1\"><span>小红书</span></a><span>、视频号、抖音等全视频平台播出；</span></p>\n  <p><span>如果你想服用文字版，请搜索我们工作室的公众号：语言即世界language is world。</span></p>\n  <p><strong><span>DISCLAIMER: </span></strong><span>本内容不作为投资建议。</span></p>\n  <p><strong><span>CONTACT: </span></strong><span>xiaojunzhang@lisw.ai</span></p>\n  <p><strong><span>Jump into the new world-and explore with us!</span></strong><span>😉</span></p>\n </body>\n</html>",
+  "aiSummary": "真格基金戴雨森复盘 2026 年 AI 投资判断，深入分析 Harness 架构、模型公司 vs 应用公司格局、字节系创业者机会以及 AI 时代组织变革与投资策略。",
+  "oneSentenceSummary": "真格基金戴雨森复盘 2026 年 AI 投资判断，深入分析 Harness 架构、模型公司 vs 应用公司格局、字节系创业者机会以及 AI 时代组织变革与投资策略。",
+  "summary": "本期播客是真格基金合伙人戴雨森的创投观察系列第二集。节目开场他直面第一集「Year of R（回调之年）」判断被认为「被打脸」的评论，以「Strong Opinions， Weakly Held」的理念解释了为何自己应持续进化而非固守观点。核心讨论围绕 Harness（套壳/马具）架构展开，戴雨森提出「Harness 本身更像 OS，模型更像处理器」的框架，认为模型外面包的 Context、Tool、Runtime、Sandbox 等层次的价值正在增加，且好的 Harness 能通过数据回流反哺模型训练，形成数据飞轮。他强调 2026 年 Agent 将真正落地——模型能力提升使 Agent 能在无人关注时自主完成任务。关于竞争格局，他认为短期头部模型公司（Anthropic/OpenAI）可能被低估，中期被高估，长期可能成长为 5-10 万亿公司。他提出两大「暴论」：「AGI 是在缩水的」以及「字节系创始人，要把在字节学的东西，自己颠覆自己」。最后他深入讨论了 AI 投资的结构性机会、中美投资差异以及投资人应具备的持续学习心态。",
+  "mainPoints": [
+    {
+      "point": "Harness 架构正在成为 AI 应用的核心价值层",
+      "explanation": "模型外面包的 Context、Tool、Runtime、Sandbox 等多层次结构决定了 Agent 的任务完成效果，Harness 本身更像 OS，模型更像处理器，这层价值正在超过纯模型 API。"
+    },
+    {
+      "point": "好的 Harness 能通过数据回流形成飞轮效应",
+      "explanation": "Chatbot 的数据对模型提升有限，但 Agent 在解决真实用户问题时产生的高质量数据（如 coding 数据）能反哺模型训练，形成持续进化的闭环。"
+    },
+    {
+      "point": "AI 投资中短期和长期估值逻辑截然不同",
+      "explanation": "短期市场情绪下 Anthropic 和 OpenAI 可能被低估，中期 Return 问题未真正解决可能被高估，长期赢家可能成长为 5-10 万亿公司。"
+    },
+    {
+      "point": "字节系创业者需要颠覆自己学到的字节方法论",
+      "explanation": "字节系创始人是优质投资人群，但 AI 时代需要把字节打法「自己颠覆自己」，不能简单复制过去的成功模式。"
+    },
+    {
+      "point": "AI 的组织变革比技术变革更重要",
+      "explanation": "从蒸汽机到电动机的历史证明，技术进步需伴随组织变革才能实现生产力跃迁，AI Native 公司的组织结构扁平化和全栈人才需求正在重塑企业形态。"
+    }
+  ],
+  "keyQuotes": [
+    "一个好的 Harness 是很有生命力的。Harness 本身更像 OS，模型更像处理器。",
+    "AGI 是在缩水的。模型能力提升不会向下吞并 Harness 的空间，反而可能出现 Agent 的网络效应。",
+    "字节系创始人，要把在字节学的东西，自己颠覆自己。你原来的护城河可能会变成你的软肋。",
+    "让人类拥有更多更好的 Agent，第二波是让 Agent 更好的适应人类的数字世界，第三步是构建 AI 专属的数字世界。",
+    "思考需要刻意练习，创新需要刻意练习。在 AI 时代，学习有效利用 AI 工具并进行创新实践至关重要。"
+  ],
+  "tags": [
+    "AI 投资",
+    "Harness",
+    "创投观察",
+    "字节系",
+    "Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 93,
+  "wordCount": 1364,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "BT_STARTUP",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_31d080",
+  "sourceName": "张小珺Jùn｜商业访谈录",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1779840000000,
+  "publishDateStr": "05-27",
+  "publishDateTimeStr": "2026-05-27 08:00:00"
+}

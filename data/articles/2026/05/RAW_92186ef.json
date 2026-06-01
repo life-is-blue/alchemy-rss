@@ -1,0 +1,63 @@
+{
+  "id": "RAW_92186ef",
+  "title": "王建硕：Markdown，是新时代的编程语言",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6a145491fe904f387314d866",
+  "date": "2026-05-25 21:02:07",
+  "author": "徐文浩，任鑫",
+  "siteName": "AI炼金术",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>王建硕一上来就跟我说：</span><b><span>「徐文浩上一期讲怎么治理'屎山代码'——我不是特别同意。」</span></b></p>\n  <p><span>他的反驳是：屎山代码就是不可维护的代码，</span><b><span>根本不需要去维护</span></b><span>。「代码不存在错误，只存在跟你的 intention 不一致——所谓 bug，要么是 bug 本身，要么是 feature 写得不对。」治理屎山代码的所有方法、所有 skill、所有最佳实践——王建硕都认同——但他认为</span><b><span>这一刀切错了层：你不该去改 source code 这一层，你应该改它上面的自然语言</span></b><span>。</span></p>\n  <br>\n  <p><span>这一刀划下去之后，他跟我聊了 1 小时\"AI 时代真正的程序员长什么样\"。</span></p>\n  <p><span>中间最神经病的一段，是他拿手机给我看他做的 APP——</span></p>\n  <p><span>最重要的功能叫「</span><b><span>用户反馈</span></b><span>」。用户随便写一句\"字体大一点\"或\"增加一个 XX 功能\"，</span><b><span>5 分钟后 APP 就按用户的反馈更新了</span></b><span>。AI 接到 GitHub Issue 自动拉代码、自动写、自动 build、自动推 TestFlight。</span></p>\n  <br>\n  <p><span>我以为这已经够离谱了。过几天他又跟我说：</span></p>\n  <blockquote>\n   <p><span>「</span><b><span>我现在不需要用户反馈了。它自己想想要更新什么，它就自己更新自己。</span></b><span>」</span></p>\n  </blockquote>\n  <p><span>他给那个 APP 接了一个 PM Agent。AI 自己判断「下一版应该做什么」，然后自己把功能补上去。</span><b><span>王建硕从开发者，变成了那个翻手机看自己 APP 又变成什么样的好奇用户</span></b><span>——「我都好奇今天它又变成了什么样」。</span></p>\n  <br>\n  <p><span>这一期是给所有产品经理、程序员、创业者的。如果你今天还在跟 AI\"聊天\"——这一期请认真听完。</span></p>\n  <hr>\n  <p><span>【嘉宾】</span></p>\n  <p><b><span>王建硕</span></b><span>｜互联网老兵，百姓网创始人。最近一两个月他又重新「上岗当程序员」——只不过这一次他写的不是 C、也不是 Python，是一堆.md文件，让大模型按 schedule 跑。他自己一个人，跑了 4 个 Agent 团队（PM / 工程 / 市场 / 客服），其中 PM Agent 会自己决定下一版要做什么，不再需要他亲自指挥。他的 APP 五分钟更新一个版本，每天审完核就上线。</span></p>\n  <br>\n  <p><strong><span>【本期亮点】</span></strong></p>\n  <p><b><span>「徐文浩讲'治理屎山代码'，我不太同意」——开场就是一记隔空交锋</span></b></p>\n  <p><span>王建硕一开口就跟前一期嘉宾徐文浩抬杠。徐文浩前期主张：要用 skill、用最佳实践、用各种治理工具，让 AI 写的代码可维护。王建硕的反驳是——</span><b><span>屎山代码就是不可维护的代码，根本不需要去维护</span></b><span>。他的意思大致是：屎山只要不被人看到，它就不是屎山。他承认徐文浩讲的治理方法都对，</span><b><span>但他认为这一刀根本切错了层</span></b><span>：你不应该在 source code 这一层做治理，应该在它上面的自然语言层。</span></p>\n  <br>\n  <p><b><span>「代码不存在错误，只存在跟你的 intention 不一致」</span></b></p>\n  <p><span>王建硕重新定义了什么是 bug：所谓错误，</span><b><span>要么是 bug 本身，要么是你的 feature 写得不对</span></b><span>——本质上都是你的意图（intention）没说清。他举例：在 C 语言里你说print color，没指定颜色，编译器给你 print 出白色——这是 bug 吗？不是。这是你没说要蓝色。</span><b><span>所有现在大家骂\"AI 写的代码不对\"，其实绝大多数都是自己 intention 给得不清晰，跟 AI 无关</span></b><span>。这就是他为什么不同意\"治理 source code\"——治理治错了对象。</span></p>\n  <br>\n  <p><b><span>「用户写反馈，5 分钟后 APP 就按你要求改完」</span></b></p>\n  <p><span>这是这期最神经病的一段。王建硕的 APP 里有一个功能叫\"用户反馈\"。</span><b><span>用户随便写一句——\"希望字体大一点\"、\"增加搜索功能\"——5 分钟之后，APP 就按这条反馈生成了一个新版本</span></b><span>。技术链路其实很朴素：用户反馈直接落到 GitHub Issue，触发一个 hook，Claude Code 自动拉代码、写代码、跑测试、合主分支，自动 build，自动推 TestFlight。「从你提交问题到你的手机上面可以测试它，大概五分钟左右 APP 更新一个版本。」</span></p>\n  <br>\n  <p><span>「我现在不需要用户反馈了——它自己想要更新什么，自己就更新了」</span></p>\n  <p><span>更狠的是后面这一层。王建硕给那个 APP 接了一个 </span><b><span>PM Agent——没人提反馈的时候，AI 自己判断\"下一版应该做什么\"，然后自己把功能补上去</span></b><span>。「我每天大概每隔一两个小时，那边 TestFlight 就会咚咚地说一个新版本发布了。我就很好奇今天它又变成了什么样。」</span><b><span>他从开发者变成了那个翻手机看自己 APP 又变成什么样的好奇用户。</span></b></p>\n  <br>\n  <p><b><span>「</span></b><b><span>我手写了几万行自然语言，才让这套系统跑起来」</span></b></p>\n  <p><span>那这件事是不是甩手掌柜？不是。王建硕反复强调：「</span><b><span>我所说的自然语言是真的手写，不是大语言模型生成。光你自己一个字一个字敲的自然语言，可能你都至少要敲个几百行。</span></b><span>」他的工作目录按 Model / View / Control 分层，子文件夹里几万行.md。</span><b><span>他手写自然语言的颗粒度，就是他对这个项目的控制颗粒度</span></b><span>。\"你的不满意，是对它的缺省值不满意——但它的缺省值不是你的内容。\"</span></p>\n  <br>\n  <p><b><span>「聊天不叫程序，聊天叫 debug」</span></b></p>\n  <p><span>王建硕抛出一个让我反复回味的判断：</span><b><span>程序，是你写好的、确定的、可以被定期或被 trigger 执行的、给你出结果的东西</span></b><span>。聊天的反面就是写程序。「聊天是一种非常快速的 debug 方法，但它不是你写程序的方法。」他估算现在 90% 的人用 AI 还停留在\"打开 Python 命令行学语言\"那一层——不积累、不沉淀，第二天再来还是一样。</span></p>\n  <br>\n  <p><b><span>「自然语言是新的'汇编'，Python 正在变成新的'屎山'」</span></b></p>\n  <p><span>王建硕画了一张产业演进图：机器码、汇编、C、Python、自然语言——每往上一层，下一层都变成\"屎山\"——人不可读、不可维护，但不影响人类继续生活。</span><b><span>LLM 是新的编译器，自然语言是新的\"汇编\"</span></b><span>。这一张图反过来也是他不同意徐文浩\"治理屎山代码\"的理论基础——</span><b><span>你治的不是地基，治的是上面那一层；地基让它沉下去就好</span></b><span>。</span></p>\n  <br>\n  <p><b><span>「程序员就是上一代的抬轿子的人」</span></b></p>\n  <p><span>全集最有共鸣的隐喻。\"我们以为抬轿子是真的力气；忽然变成车了，我们以为我们对车也是有控制的——</span><b><span>但其实你早离开了</span></b><span>。\"程序员现在被困在\"教父\"的位置——他们的代码能力可以被 AI 完全替代，但</span><b><span>因为情感蒙蔽，他们学开车的意愿反而远远低于一个普通人</span></b><span>。\"离新技术越近的产业工人，是越惨的。\"</span></p>\n  <br>\n  <p><b><span>「你每天烧多少 Token，是 AI 时代的 GDP」</span></b></p>\n  <p><span>王建硕的硬指标只有一个：Token 使用量乘以单价。不管你 PPT 多 make sense、不管你说你 AI 认知多牛——A 组织和 B 组织看一眼 Token 量就分胜负。他自己一天烧大约两千美金。\"</span><b><span>省 Token 这件事，就像身体上的一个脓疮——你不把它清掉，你看不到真正里面到底是什么问题。</span></b><span>\" 他最近做的海报上写：</span><b><span>使用 Token 拥抱浪费</span></b><span>。</span></p>\n  <br>\n  <p><strong><span>【时间戳】</span></strong></p>\n  <p><span><a class=\"timestamp\">01:40</a> 王建硕跟徐文浩抬杠：屎山代码不需要治理</span></p>\n  <p><span><a class=\"timestamp\">02:24</a> 屎山代码的真实定义：不可被人维护的代码</span></p>\n  <p><span><a class=\"timestamp\">03:18</a> 屎山只要不被人看到，它就不是屎山</span></p>\n  <p><span><a class=\"timestamp\">06:00</a> 重新定义\"屎山\"：人不可维护的代码</span></p>\n  <p><span><a class=\"timestamp\">06:51</a> 代码不存在错误，只存在跟 intention 不一致</span></p>\n  <p><span><a class=\"timestamp\">07:06</a> 王建硕承认徐文浩方法都对，但切错层了</span></p>\n  <p><span><a class=\"timestamp\">12:12</a> 聊天不是写程序，是 debug</span></p>\n  <p><span><a class=\"timestamp\">14:43</a> 真正的\"程序员\"长什么样：工作目录、文件夹工程</span></p>\n  <p><span><a class=\"timestamp\">21:47</a> 抬轿子的、教父和驾驶员</span></p>\n  <p><span><a class=\"timestamp\">33:08</a> 王建硕的新身份——一个人 4 个 Agent 团队</span></p>\n  <p><span><a class=\"timestamp\">37:18</a> 用户写反馈，5 分钟后 APP 自动改完（核心段落）</span></p>\n  <p><span><a class=\"timestamp\">38:17</a> 「我现在不需要用户反馈了——它自己想要更新什么自己更新」</span></p>\n  <p><span><a class=\"timestamp\">38:30</a> 整套流程拆解（反馈、GitHub Issue、Claude Code、TestFlight）</span></p>\n  <p><span><a class=\"timestamp\">39:38</a> PM Agent：让 AI 替代用户反馈做决策</span></p>\n  <p><span><a class=\"timestamp\">45:30</a> 「APP Store 我已经不下载了」+ 即抛即用型软件</span></p>\n  <p><span><a class=\"timestamp\">50:25</a> 21 世纪所有人都需要会用计算机——10 年后所有人都会用 AI</span></p>\n  <p><span><a class=\"timestamp\">1:02:01</a> 唯一硬指标：你每天烧多少 Token</span></p>\n  <p><span><a class=\"timestamp\">1:04:20</a> 拥抱浪费：使用 Token 拥抱浪费</span></p>\n  <br>\n  <p><strong><span>欢迎订阅「AI 炼金术」的播客，以及同名公众号、视频号</span></strong><span>&nbsp;</span></p>\n  <p><span>「AI 炼金术」是一档由徐文浩和任鑫——两位多年老友、AI 领域的资深从业者——打造的播客。这里是探讨 AI 和创业的理想聚集地，我们会邀请一线创业者、产品产品和科研学者，深入探讨 AI 如何重塑行业、变革生活，以及如何从 0 到 1 打造 AI 原生产品。&nbsp;</span></p>\n  <p><span>我们的讨论会涵盖多个话题：从 AI 如何改变世界的未来，到如何找到 AI 创业的 PMF；从如何利用 AI 降本增效，到怎样将 AI 技术融入日常生活……如果你对 AI、产品、创业感兴趣，这里有满满的干货和一线实战经验，欢迎关注并推荐给你的朋友，共同探索未来的无限可能！&nbsp;</span></p>\n  <p><span>商务合作：公众号 「AI炼金术 」菜单栏中【商务】获取联系方式&nbsp;</span></p>\n  <br>\n  <p><strong><span>节目主理人：</span></strong><span>&nbsp;</span></p>\n  <p><b><span>徐文浩：</span></b><span>某AI创业公司联合创始人，正在面向全球市场开发AI应用。连续创业者，参与过多家创业公司，拼多多早期员工。广告科技公司MediaV的算法和数据负责人，后被360收购。离开后加入成立不到1个月的拼多多。后创办了基于AI的海外客服聊天机器人公司 BotHub.AI 和 海外社交电商平台 Bukito 都宣告失败。2023年再次下场创业。&nbsp;</span></p>\n  <br>\n  <p><b><span>任鑫：</span></b><span>美元基金合伙人，主要在投资和孵化面向全球市场的 AI 应用。之前是连续创业者，曾经打造“今夜酒店特价”用移动互联网应用特价销售酒店尾房；被京东并购后内部创业“京东到家”开展本地即时零售业务；2015 年再次创业 Get 探索对话式人工智能助理成为先烈；2021 年出售公司，2023 年重新回到 AI 世界。</span></p>\n  <br>\n  <p><strong><span>播客剪辑：</span></strong></p>\n  <p><span>十六颗糖</span></p>\n  <br>\n  <p><strong><span>BGM：</span></strong></p>\n  <p><b><span>片头：</span></b><span>Shortwire - Reconfig</span></p>\n  <p><b><span>片尾：</span></b><span>Sam Wills,Honey Mooncie - Traingazing</span></p>\n  <br>\n  <br>\n </body>\n</html>",
+  "aiSummary": "王建硕提出自然语言是新的“汇编”，LLM 是新的编译器，程序员应彻底放弃直接修改 AI 生成的代码，转而在更上层的自然语言层编写可重复执行的工程。",
+  "oneSentenceSummary": "王建硕提出自然语言是新的“汇编”，LLM 是新的编译器，程序员应彻底放弃直接修改 AI 生成的代码，转而在更上层的自然语言层编写可重复执行的工程。",
+  "summary": "本期播客中，嘉宾王建硕（百姓网创始人）与主持人徐文浩展开了一场关于 AI 时代编程本质的深度交锋。王建硕的核心论点清晰而激进：**大语言模型（LLM）是新一代编译器，自然语言则是新的“汇编语言”**。他反对传统“治理屎山代码”的思路，认为 AI 生成的代码既然不可人维护，就不应该去直接修改（即代码层），而应通过在更上层的自然语言层（.md 文件）纠偏意图（Intention）来解决问题。\n\n他分享了自身实践：一个人通过编写几万行自然语言工程（组织成 Model/View/Control 分层），驱动了 4 个 Agent 团队（PM、工程、市场、客服）自主运作。他甚至开发了一个 APP，能让用户反馈在 5 分钟内通过自动化管线（GitHub Issue → Claude Code → TestFlight）更新上线，并进一步接入了 PM Agent，让 AI 自主决定功能迭代。\n\n王建硕认为，**“聊天”不是写程序，而是 Debug**。真正的程序员应少写代码、少跟 AI 聊天，多写可被 schedule 定期执行的“程序”（自然语言文件）。他警告，程序员群体正成为“上一代抬轿子的人”，因情感蒙蔽而学习“驾驶”（驾驭 AI）的意愿远低于普通人，面临被时代抛弃的风险。最后，他强调**“Token 使用量”是衡量组织 AI 能力的唯一硬指标**，建议拥抱浪费，通过大量使用 Token 来突破瓶颈。",
+  "mainPoints": [
+    {
+      "point": "LLM 是新时代的编译器，自然语言是新的“汇编”",
+      "explanation": "就像 C 语言的出现让汇编成为“屎山”，LLM 使得自然语言成为可编译的源代码。不应直接修改 AI 生成的代码（底层汇编），而应在自然语言层修正意图，利用编译器（LLM）进化来改善输出。"
+    },
+    {
+      "point": "真正的程序员应少写代码，多写可执行的“程序”",
+      "explanation": "将工作模式从“交互式聊天”转变为“编写可重复执行的自然语言工程”。程序是确定的、可由 schedule 或 trigger 执行并产生结果的，而非零散的一次性对话。"
+    },
+    {
+      "point": "驾驭 AI 的工程能力是新时代的核心技能，程序员风险最高",
+      "explanation": "程序员因情感依赖和现有饭碗的保障，学习“驾驶”（驾驭 AI 工程）的意愿低于普通人。而真正的竞争力在于编写几万行自然语言工程来精确控制 AI 输出，而非直接修改代码。"
+    },
+    {
+      "point": "Token 使用量是衡量组织 AI 能力的唯一硬指标",
+      "explanation": "不要因为怕浪费而限制 Token 使用。只有通过大量使用 Token（如王建硕每日消耗两千美金），才能暴露真实瓶颈和问题，从而推动创新和找到正确的解决方案。"
+    },
+    {
+      "point": "开发资源无限化将彻底重塑软件开发流程",
+      "explanation": "当 AI Agent 能以分钟级迭代产品时，传统的 PM 排期、资源争夺流程将失效。未来的软件形态将是即抛即用式、高度定制化的，基于基础构建块（Building Block）由 AI 自主组合和演进。"
+    }
+  ],
+  "keyQuotes": [
+    "代码不存在错误，只存在跟你的 intention 不一致。所谓 bug，要么是 bug 本身，要么是你的 feature 写得不对。",
+    "聊天是一种非常快速的 debug 方法，但它不是你写程序的方法。",
+    "你每天烧多少 Token，是 AI 时代的 GDP。省 Token 这件事，就像身体上的一个脓疮——你不把它清掉，你看不到真正里面到底是什么问题。",
+    "自然语言是新的'汇编'，Python 正在变成新的'屎山'。",
+    "程序员就是上一代的抬轿子的人。离新技术越近的产业工人，是越惨的。"
+  ],
+  "tags": [
+    "自然语言编程",
+    "大语言模型",
+    "Vibe Coding",
+    "AI 赋能开发",
+    "Token 经济"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 92,
+  "wordCount": 3277,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_29b54a",
+  "sourceName": "AI炼金术",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1779714127000,
+  "publishDateStr": "05-25",
+  "publishDateTimeStr": "2026-05-25 21:02:07"
+}
