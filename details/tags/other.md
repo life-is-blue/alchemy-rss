@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-02 08:34:45 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-02 11:05:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3541,25 +3541,19 @@
 
 ### [使用加密哈希和以太坊区块链确保数据完整性](https://towardsdatascience.com/ensuring-data-integrity-with-cryptographic-hashing-and-the-ethereum-blockchain/)
 
-2026-06-01 23:00:00 | 标签: 数据完整性, 加密哈希, 以太坊, 区块链, 机器学习
-
-> 本文探讨了在分布式数据科学和机器学习工作流中数据完整性这一关键挑战，并提出了一种结合加密哈希与以太坊区块链的轻量级解决方案。核心方法是对数据集使用 Blake2b 等算法进行哈希处理，然后将该哈希值写入免费 Sepolia 测试网上零值以太坊交易的 `input data` 字段中，从而创建数据集不可变、可验证且永久的指纹。文章提供了完整的逐步指南，包含使用 `web3.py` 和 `hashlib` 的 Python 代码，涵盖密钥生成、交易创建、广播以及验证函数。文章强调该方法完全免费，无需智能合约，并可扩展用于验证模型权重或源代码，是协作研究和审计追踪的实用工具。
+2026-06-01 23:00:00
 
 
 
 ### [Amazon-Quick-通过-MCP-与时序数据库集成，实现市场情报分析-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/amazon-quick-integration-with-time-series-databases-for-market-intelligence-using-mcp/)
 
-2026-06-01 16:01:24 | 标签: MCP, Amazon Quick, KDB-X, 时序数据库, Amazon Bedrock
-
-> 这篇 AWS 博客文章提供了将 KDB-X MCP 服务器与 Amazon Quick 集成的全面、分步指南，旨在让时序市场情报的访问更加大众化。文章详细介绍了其架构，该架构使用 Amazon Bedrock AgentCore Gateway 作为 Quick 与运行在 EC2 实例上的 MCP 服务器之间的身份验证和路由层。文章涵盖了完整的设置过程，包括安装和配置 KDB-X 服务、使用 HTTPS 设置 MCP 服务器、与 AgentCore Gateway 集成，以及在 Quick 中创建聊天智能体。文章通过多个示例查询（从检索样本股票数据到生成价格可视化图表）展示了该集成如何将复杂的...
+2026-06-01 16:01:24
 
 
 
 ### [如何使用-NVIDIA-Alpamayo-对自动驾驶模型进行闭环后训练](https://developer.nvidia.com/blog/how-to-post-train-autonomous-vehicle-models-in-closed-loop-with-nvidia-alpamayo/)
 
-2026-06-01 12:55:18 | 标签: 自动驾驶, 强化学习, 闭环训练, NVIDIA Alpamayo, AlpaGym
-
-> 本文探讨了自动驾驶汽车开发中的一个关键挑战：开环训练（将模型输出与真实行为进行比较）与闭环部署（决策会影响环境，且错误会累积）之间的差距。文章介绍了 NVIDIA AlpaGym，这是 Alpamayo 平台内的一个框架，能够实现闭环强化学习后训练。文章提供了分步指南，涵盖安装与配置、定义闭环奖励（例如，行驶进度、碰撞避免）、启动训练以及导出后训练检查点以用于仿真。文章强调，这种方法允许自动驾驶策略在仿真中学习自身行为的后果，从而揭示静态数据集遗漏的故障模式。该工作流程集成了 AlpaSim 仿真、Cosmos-RL 训练框架和 Physical AI 数据集，可从单 GPU 扩展到多节点集群...
+2026-06-01 12:55:18
 
 
 
@@ -14065,49 +14059,37 @@
 
 ### [如何将核心服务器启动时间从数小时缩短至数分钟](https://blog.cloudflare.com/optimizing-core-unit-boot-time/)
 
-2026-06-02 00:53:39 | 标签: UEFI, PXE, iPXE, 网络启动, 固件
-
-> 本文详细介绍了 Cloudflare 对其 Gen12 核心服务器集群中一个关键启动时间回归问题的调查。在一次常规的 UEFI 固件更新后，服务器启动时间从几分钟延长至四小时，原因是固件的一个特性导致其对所有可用的网络启动接口（如 IPv4 HTTPS、IPv4 iPXE 等）进行详尽的线性搜索，每个接口的超时时间约为五分钟。根本原因被追溯到一个过于激进的搜索模式和一个供应商禁用的启动顺序设置。团队实施了一个多管齐下的解决方案：重构自动化工作流程以预先声明正确的启动接口；与供应商合作以启用可编程的启动顺序控制（克服了一个懒加载的 EFI_IFR_REF3 数据结构）；并使用正则表达式处理 NI...
+2026-06-02 00:53:39
 
 
 
 ### [Shopify-采用广度优先引擎实现-GraphQL-执行速度提升-15-倍](https://www.infoq.com/news/2026/06/shopify-graphql-cardinal-bfs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-01 22:25:00 | 标签: GraphQL, Shopify, 广度优先执行, 性能优化, GraphQL Cardinal
-
-> Shopify 推出了 GraphQL Cardinal，这是一个重新设计的 GraphQL 执行引擎，用广度优先执行模型取代了传统的深度优先遍历。这一架构变革解决了 GraphQL 执行本身的低效问题，而非数据库或网络瓶颈。在对大型 GraphQL 列表查询的生产测试中，新引擎实现了 15 倍的字段级执行速度提升、6 倍的垃圾回收开销降低，以及 P50 端到端响应时间减少超过 4 秒。该引擎逐层执行跨实体集合的查询，将同一深度上对象组的解析器执行进行批处理。这种方法改善了 CPU 缓存局部性，减少了冗余计算，并降低了每个请求的内存波动。迁移过程需要在执行编排、解析器行为、追踪基础设施和运行时...
+2026-06-01 22:25:00
 
 
 
 ### [从-Flutter-到后端：使用-Dart-和-Shelf-构建并交付生产级-REST-API](https://www.freecodecamp.org/news/how-to-build-and-ship-production-rest-apis-with-dart-and-shelf/)
 
-2026-06-01 22:11:06 | 标签: Dart, Shelf, REST API, 后端开发, PostgreSQL
-
-> 本文是一篇面向 Flutter 开发者的实用教程，这些开发者已经熟悉 Dart，但对后端开发尚不熟悉。文章通过教授 Dart 在服务器端（脱离 Flutter 框架）的行为方式，填补了这一知识空白。本指南将从头开始，使用 Shelf 库构建一个完整的用户与资料管理 REST API。关键主题包括：理解 Shelf 的核心概念（处理器、中间件、管道、路由器）、使用 Docker 搭建 PostgreSQL 数据库、为用户和资料实现模型、仓库和处理器、添加基于 JWT 的身份验证与密码哈希、实现错误处理，以及最终将应用部署到 Fly.io。文章强调了清晰的架构和关注点分离，使结构对 Flutter...
+2026-06-01 22:11:06
 
 
 
 ### [规模化主题系统：如何构建高度可定制的软件](https://www.infoq.com/presentations/liquid-theme-system-dsl/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-01 19:30:00 | 标签: Shopify, Liquid, 主题系统, DSL, 可扩展性
-
-> 这篇来自 InfoQ 的演讲实录由 Shopify 的一位高级工程师呈现，深入剖析了 Liquid 主题系统的架构组件。内容涵盖了从创建安全、领域特定的模板语言（Liquid），到通过 JSON 模式和可视化编辑器将其扩展给非技术商家的完整生命周期。随后，演讲重点讨论了在大规模场景下（尤其是在黑色星期五/网络星期一等流量高峰期）渲染这些高度可定制模板所面临的关键挑战。文中介绍的核心策略包括：通过强制资源限制来保障安全、维护严格的向后兼容性、采用带有主动数据复制的多租户架构，以及利用原生扩展（Rust）来处理性能关键的渲染任务。本文为构建可扩展且可定制的软件平台提供了一个全面的案例研究。
+2026-06-01 19:30:00
 
 
 
 ### [AI-生产力悖论在测试自动化中的体现：从结构验证迈向感知与意图](https://www.infoq.com/articles/solving-ai-productivity-paradox-test-automation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-01 19:00:00 | 标签: 测试自动化, 端到端测试, Playwright, 感知鸿沟, 视觉失同步
-
-> 文章指出现代 Web 自动化的核心问题：Playwright 和 Cypress 等框架验证的是 DOM 结构，而非用户的实际感知，这导致了固有的可靠性鸿沟。这种“感知鸿沟”被 AI 生成的测试进一步放大，因为 AI 扩展的是结构脆弱性，而非提升鲁棒性。作者引入了“视觉失同步”的概念（例如，水合间隙、布局偏移），它会产生传统工具无法检测到的“幽灵交互”。为解决此问题，他们提出了一个三维验证框架：结构（代码存在性）、感知（视觉可供性）和意图（业务成果）。文章详细描述了一个“混合感知流水线”的实践方案，该方案利用浏览器检测（稳定性预言机）确保时间稳定性，使用视觉语言模型（智能体回退）进行语义自愈，...
+2026-06-01 19:00:00
 
 
 
 ### [架构师的需求分析：与-Sonya-Natanzon-的对话](https://www.infoq.com/podcasts/requirements-analysis-architects/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-01 19:00:00 | 标签: 软件架构, 需求分析, 领域驱动设计, 约束, 业务成果
-
-> 在本期播客中，Michael Stiefel 采访了 Sonya Natanzon，探讨软件架构中技术与社交层面的交叉点。Natanzon 认为，理解业务及其运作方式比使用特定技术更为重要。她强调，有效的需求分析应聚焦于需要解决的问题，这些描述应指向好的或坏的结果，而非需求陈述或解决方案陈述。讨论涵盖了约束在缩小设计选项方面的价值、领域驱动设计技术在不拘泥于正式方法论教条下的实际应用，以及 AI 编码工具时代架构的未来。Natanzon 分享了如何通过持续对话挖掘真正需求、通用语言的重要性，以及初级开发者如何通过解释和审查 AI 生成的代码来学习。
+2026-06-01 19:00:00
 
 
 
@@ -35483,11 +35465,11 @@
 
 
 
-### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
+### [为-Agent-设计产品](https://baoyu.io/blog/2026-04-24/teddy-riker-2047312986696454584)
 
-2026-04-28T00:00:00.000Z
+2026-04-24T00:00:00.000Z
 
-> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
+> UI 并没有死，但软件交互的 80% 正在转向 Agent。产品团队需要像过去为人设计界面一样，认真为 Agent 设计工具、上下文和反馈闭环。
 
 
 

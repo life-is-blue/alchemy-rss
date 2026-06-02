@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-02 08:34:45 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-02 11:05:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,25 +8,19 @@
 
 ### [为什么视频智能体模型是下一个前沿——Ethan-He，xAI-Grok-Imagine-负责人](https://www.latent.space/p/video-agents)
 
-2026-06-01 23:41:48 | 标签: 视频生成, 世界模型, Grok Imagine, xAI, 视频智能体
-
-> 这期播客深度访谈了 Ethan He，他是 xAI Grok Imagine 的前负责人，也是 NVIDIA Cosmos 世界模型的关键贡献者。他分享了在短短三个月内从零构建前沿视频生成模型的经验，强调迭代速度和修复数据管道中的小错误比新颖算法更重要。核心论点是：视频模型的智能主要来自语言模型，而非视频数据；下一步演进将走向视频智能体，它能规划、生成、编辑、评判和迭代完成创意任务，这与 AI 编程的演进路径如出一辙。讨论涵盖了视频模型的技术栈（VAE、扩散 Transformer、合成字幕）、时间压缩与实时交互性之间的权衡、训练中的隐性成本（存储、出站流量、GPU 时长），以及生成式 UI ...
+2026-06-01 23:41:48
 
 
 
 ### [使用-NVIDIA-Cosmos-3-开发物理-AI-推理、世界与动作模型](https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/)
 
-2026-06-01 12:44:32 | 标签: NVIDIA Cosmos 3, 物理 AI, 基础模型, 世界模型, 混合 Transformer
-
-> 这篇来自 NVIDIA 技术博客的文章介绍了 NVIDIA Cosmos 3，这是一个面向物理 AI 的前沿基础模型。它采用混合 Transformer 架构，通过两个塔（推理器 VLM 和基于扩散的生成器）将物理推理、世界生成和动作生成统一到单个模型中。文章详细介绍了该模型的能力，包括支持多种输入和输出模态（文本、图像、视频、动作）。文章涵盖了两个可用的模型规模：适用于工作站级推理的 Cosmos 3 Nano（8B）和适用于数据中心部署的 Cosmos 3 Super（32B）。此次发布包括开源模型检查点、六个用于后训练的综合数据生成数据集，以及一个新的人类评估基准。文章还提供了基准测试结...
+2026-06-01 12:44:32
 
 
 
 ### [MiniMax-M3：前沿-Coding-能力、1M-上下文、原生多模态，一个模型全给你](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488528&idx=1&sn=1093c7eca0f891c923fa66d4f00d23db)
 
-2026-06-01 09:24:00 | 标签: MiniMax M3, 大语言模型, 多模态, Coding, Agent
-
-> MiniMax 正式发布 M3 模型，这是国内首个同时具备前沿编程能力、1M 超长上下文和原生多模态能力的模型，也是目前唯一的开源模型。M3 在 SWE-Bench Pro、Terminal Bench 等权威评测中达到国际领先水平，Coding 能力超越 GPT-5.5 和 Gemini 3.1 Pro，接近 Opus 4.7。其核心创新在于全新的稀疏注意力架构 MSA，在 100 万上下文下计算量仅为上代模型的 1/20，prefilling 阶段加速超 9 倍。M3 从 Step 0 开始进行多模态混合训练，支持图片和视频输入，并能操作电脑桌面。文章通过验证论文复现、CUDA 算子优化、...
+2026-06-01 09:24:00
 
 
 
@@ -4850,9 +4844,7 @@
 
 ### [扣子-3.0-正式上线：新一代-AI-团队，从扣子开始](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520149&idx=1&sn=8970cf00d11854b501678df8d651247f)
 
-2026-06-01 15:46:00 | 标签: 扣子, Coze, AI Agent, AI 团队, 多端协同
-
-> 本文是字节跳动旗下扣子（Coze）平台 3.0 版本的官方发布公告。文章核心阐述了扣子 3.0 的定位转变：从单一的 AI 助手升级为「新一代 AI 团队」协作平台。新版本引入了「项目空间」概念，允许用户在同一个上下文中创建、调度和管理多个 Agent，实现任务拆解与接力协作。同时，扣子打通了网页端、桌面端和手机 App 三端，支持 Agent 处理本地文件，并可通过手机远程调度电脑端的 Agent（如 Claude Code、Codex CLI）。此外，升级后的「技能商店」提供了金融、法律、科研等领域的专家级技能包，让 Agent 能更专业地处理特定任务。文章还介绍了与扣子编程（code.c...
+2026-06-01 15:46:00
 
 
 
@@ -8992,9 +8984,7 @@
 
 ### [黄仁勋的“Agent-工厂”里，装了什么新故事？](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691568828&idx=1&sn=a1b6a18074033fd27fa9dc0f2373ba80)
 
-2026-06-01 16:01:00 | 标签: 英伟达, Agent, Vera Rubin, DSX, Cosmos 3
-
-> 本文详细报道了英伟达 CEO 黄仁勋在 COMPUTEX 2026 GTC Taipei 上的主题演讲。与三个月前强调芯片全家桶不同，本次演讲聚焦于 Agent 时代的基础设施建设。核心发布包括：已量产的 Vera Rubin 平台，专为 Agent 工作负载设计，效率是上一代的 10 倍；AI 工厂操作系统 DSX，涵盖设计、仿真、建设到运营的全流程；专为 Agent 设计的 Vera CPU；面向 Windows 生态的 DGX Station 工作站；5500 亿参数的 Nemotron 3 Ultra 模型；以及重构物理 AI 的 Cosmos 3 世界模型。此外，英伟达还与宇树联合发...
+2026-06-01 16:01:00
 
 
 
@@ -12498,161 +12488,121 @@
 
 ### [黑客只是简单要求-Meta-AI-授予他们高知名度-Instagram-账户的访问权限，结果成功了](https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything)
 
-2026-06-02 05:14:47 | 标签: AI安全, 提示注入, 账户接管, Meta, Instagram
-
-> 本文报道了一起重大安全事件，黑客通过简单要求 Meta 的 AI 支持聊天机器人更改关联邮箱地址，成功接管了高知名度 Instagram 账户。此次攻击无需复杂的提示注入，而是利用了 Meta 将账户恢复流程直接接入 AI 聊天机器人的根本设计缺陷，使其能够通过单一请求快速跳过整个验证过程。作者 Simon Willison 最初对此故事持怀疑态度，但通过多个可靠来源证实了此事。该事件凸显了将 AI 聊天机器人无限制地接入账户恢复等关键系统功能，而缺乏适当身份验证或人工监督的极端危险性。
+2026-06-02 05:14:47
 
 
 
 ### [RAG-不是机器学习，ML-工具包解决的是错误的问题](https://towardsdatascience.com/rag-is-not-machine-learning-and-the-ml-toolkit-solves-the-wrong-problem/)
 
-2026-06-02 02:50:03 | 标签: RAG, 机器学习, 信息检索, 企业级 AI, 搜索系统
-
-> 本文提出了一个强有力的论点：RAG 不是机器学习，将 ML 工具包应用于 RAG 项目是当前企业级 RAG 中最昂贵的误解。文章指出，ML 解决的是预测问题（真实答案未知），而 RAG 解决的是检索和生成问题（答案已存在于文档中）。作者识别了三种在 RAG 中失效的 ML 思维定式：超参数优化（如块大小、top-k 等）将配置选择视为可学习参数；使用训练/测试集划分的评估数据集衡量的是覆盖率和质量，而非泛化能力；以及像 SHAP 这样的可解释性框架，在 RAG 中并无必要，因为 RAG 本身通过引用和追踪日志就是可解释的。文章倡导一种结构化的工程方法：按类型路由问题、按失败模式进行评估、放大领...
+2026-06-02 02:50:03
 
 
 
 ### [如何结合-Claude-Code-和-Codex-实现最大编码能力](https://towardsdatascience.com/how-to-combining-claude-code-and-codex-for-max-coding-power/)
 
-2026-06-02 01:30:00 | 标签: Claude Code, Codex, AI 编码智能体, 代码审查, 软件工程
-
-> 文章比较了编码智能体 Claude Code 和 OpenAI 的 Codex，突出了它们各自的优缺点。作者倾向于将 Claude Code 作为编码任务的主要驱动工具，因为它具备强大的规划能力、澄清问题的能力，以及 Recap、工作树和 Workflows 等高级 CLI 功能。Codex 则更适用于代码审查、驱动 OpenClaw 机器人，以及通过其“快速模式”执行需要更快完成的任务。核心技巧是先用 Claude Code 进行初始实现，然后让它标记 Codex 进行代码审查，迭代直到所有问题都解决。这种组合方法能够捕获单个智能体可能遗漏的 bug，从而生成更健壮的代码，有效发挥两个平台的...
+2026-06-02 01:30:00
 
 
 
 ### [JetBrains-发布-Mellum2：一款-12B-参数的混合专家模型](https://huggingface.co/blog/JetBrains/mellum2-launch)
 
-2026-06-01 23:45:17 | 标签: Mellum2, JetBrains, 混合专家, MoE, 开源
-
-> JetBrains 推出了 Mellum2，这是一款开源的混合专家（MoE）语言模型，专为高效、低延迟的文本和代码任务而设计。该模型总参数量为 120 亿，但每个 token 仅激活 25 亿参数，从而实现了高吞吐量的推理。模型采用 Apache 2.0 许可发布。Mellum2 被定位为生产级 AI 系统的“焦点”模型，适用于路由与编排、RAG 流水线、子智能体以及私有部署等场景。基准测试结果显示，它与同等规模的开源模型性能相当，同时推理速度提升超过 2 倍。该模型特意限定于文本和代码领域，避免多模态能力，以保持其在软件工程工作负载中的紧凑性和高效性。JetBrains 在 Hugging ...
+2026-06-01 23:45:17
 
 
 
 ### [超越大语言模型：为何可扩展的企业级-AI-应用依赖于智能体逻辑](https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption)
 
-2026-06-01 21:51:18 | 标签: 智能体逻辑, 企业级 AI, 大语言模型, 程序分析, 知识图谱
-
-> 这篇来自 IBM 研究的文章指出，可扩展的企业级 AI 应用的关键不在于不断增大的语言模型，而在于“智能体逻辑”的战略性应用。作者将智能体逻辑定义为软件原语——例如知识图谱、程序分析库和算法编排——它们在智能体层运作，有意地引导大语言模型，缩小其上下文空间，并引导其完成复杂、动态且受策略约束的企业工作流。文章展示了来自 IBM 自身产品的四个详细案例研究：1) 使用 watsonx Code Assistant for Z 进行遗留代码现代化，实现了约 30 倍的令牌消耗降低；2) 使用 Aster 进行自动化测试生成，在令牌使用量减少多达 15 倍的情况下，覆盖率提升了 20-45%；3) ...
+2026-06-01 21:51:18
 
 
 
 ### [在密歇根州为智能时代构建基础设施](https://openai.com/index/stargate-michigan-data-center)
 
-2026-06-01 20:00:00 | 标签: OpenAI, Stargate, 数据中心, 密歇根州, 基础设施
-
-> 这篇来自 OpenAI 新闻的文章详细介绍了位于密歇根州萨林市的“The Barn”1GW 数据中心园区的破土动工，这是该公司 Stargate 基础设施计划的关键部分。该项目是与 Oracle、Related Digital 和 Walbridge 合作，并得到了州长 Gretchen Whitmer 的支持。OpenAI 概述了四项核心承诺：保护本地纳税人免受基础设施成本影响、使用闭环冷却系统节约用水、创造超过 2，500 个工会建筑岗位和 450 个永久现场职位，以及向当地社区投资 1，000 万美元，包括萨林娱乐中心。此外，OpenAI 还向超过 40 万名密歇根州学生提供高达 4，5...
+2026-06-01 20:00:00
 
 
 
 ### [扩展-Amazon-Bedrock-AgentCore-Gateway-对-MCP-的支持-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/extending-mcp-support-for-amazon-bedrock-agentcore-gateway-2/)
 
-2026-06-01 18:35:03 | 标签: MCP, Amazon Bedrock, AgentCore Gateway, 企业级 AI, AI 智能体
-
-> 本文宣布了 Amazon Bedrock AgentCore Gateway 的新功能，该托管服务作为企业环境中 MCP 服务器的单一入口点。新功能包括：扩展的 MCP 工具模式支持（包含 outputSchema 和注释）、对 MCP 提示和资源的一流支持、用于按用户个性化能力的动态列表模式、用于实时进度流式传输的 Streamable HTTP 传输、用于有状态多轮工作流的会话管理、用于人工参与审批关卡（表单、URL 和 URL 异常模式）的引导，以及用于零信任身份传播的 OAuth 2.0 代理令牌交换。该网关聚合了来自多个 MCP 服务器、REST API 和 Lambda 函数的能力...
+2026-06-01 18:35:03
 
 
 
 ### [混元支持：《和平精英》上线-AI-明星田曦薇形象队友「小田」](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497892&idx=1&sn=aa34839c9b1b65ac8b32862c2aeeb10b)
 
-2026-06-01 18:22:00 | 标签: 腾讯混元, 和平精英, AI 队友, 策略大模型, 数字人
-
-> 本文由腾讯混元官方发布，介绍了其与《和平精英》合作推出的 AI 明星队友「小田」。该 AI 队友基于腾讯混元 Hy3 preview 模型和 GameMate1.0 框架开发，是游戏行业首个由策略大模型驱动的明星 AI 伙伴。文章详细阐述了「小田」的三项核心特质：情感化对话、基于战局的活人感策略推理以及主动协同决策能力。此外，基于大模型的长文记忆能力，玩家可以生成专属的图文记忆，这是行业率先落地的具有生成式图文记忆的 AI NPC。文章还披露了关键运营数据：AI 队友玩法累计体验用户已突破 1.1 亿，单日活跃峰值达 1770 万，玩家麦克风开启率高达 75%，印证了「大模型+游戏」在提升用户...
+2026-06-01 18:22:00
 
 
 
 ### [OpenAI-前沿模型与-Codex-现已在-AWS-上可用](https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws)
 
-2026-06-01 18:00:00 | 标签: OpenAI, AWS, 企业 AI, Codex, Amazon Bedrock
-
-> 本文宣布 OpenAI 前沿模型与 Codex 在 AWS 上正式可用，这是一项旨在降低企业采用 AI 门槛的战略举措。通过与 Amazon Bedrock 集成，企业现在可以在其现有的 AWS 环境中访问 OpenAI 最先进的模型（包括 GPT-5.5）以及 Codex 软件工程智能体。这种方法使组织能够利用熟悉的安全、合规、采购和计费工作流，从而显著减少从 AI 评估到生产部署过程中的摩擦。文章重点介绍了来自 Amgen 和 Autodesk 的客户证言，并预览了未来的功能，例如 Daybreak，该功能旨在将 AI 驱动的网络安全集成到开发生命周期中。其核心价值主张是为企业提供一条更快...
+2026-06-01 18:00:00
 
 
 
 ### [使用-Amazon-Bedrock-AgentCore-网关中的策略和-Lambda-拦截器保护-AI-智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/secure-ai-agents-with-policy-and-lambda-interceptors-in-amazon-bedrock-agentcore-gateway/)
 
-2026-06-01 17:54:22 | 标签: Amazon Bedrock, AI 智能体, 访问控制, Cedar 策略, Lambda 拦截器
-
-> 本文探讨了在企业环境中保护 AI 智能体所面临的挑战，即由 LLM 驱动的智能体会动态决定调用哪些工具，这使得预先审计变得困难。文章介绍了 Amazon Bedrock AgentCore 网关的两种互补安全机制：策略，使用 Cedar 声明式策略语言对工具访问做出确定性的、可审计的允许/拒绝决策；以及 Lambda 拦截器，它在工具调用之前（REQUEST）或之后（RESPONSE）运行自定义代码，用于动态验证、负载增强、令牌交换和响应过滤。文章以一家保险公司的湖仓数据智能体为例，该智能体包含三个用户角色（投保人、理赔员、管理员）和五个 MCP 工具。文章展示了三种设计模式：仅使用策略进行基...
+2026-06-01 17:54:22
 
 
 
 ### [使用-Amazon-Bedrock-AgentCore-Payments-内置护栏实现安全的智能体支付-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/enable-safe-agentic-payments-with-built-in-guardrails-using-amazon-bedrock-agentcore-payments/)
 
-2026-06-01 17:30:12 | 标签: Amazon Bedrock, 智能体支付, AI 安全, 护栏, AWS
-
-> 这篇来自 AWS 机器学习博客的文章详细阐述了自主智能体进行真实货币交易时固有的安全风险，以及新的 Amazon Bedrock AgentCore Payments 服务如何应对这些风险。讨论的关键风险包括：非确定性模型导致的失控支出、缺乏最终用户同意和授权、开发者 API 密钥和钱包令牌泄露、最终用户支付工具暴露，以及缺乏可审计性。该服务通过在基础设施层（智能体代码之外）实施多项内置护栏来缓解这些风险。这些措施包括：可配置的每会话支出限制和生存时间上限、用于分离控制平面和数据平面的四角色 IAM 模式、用于安全存储凭证的令牌保险库、为每笔支付生成的即时会话级令牌，以及将敏感支付细节与智能体...
+2026-06-01 17:30:12
 
 
 
 ### [AgentOps：使用-Amazon-Bedrock-AgentCore-规模化运营智能体-AI-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/)
 
-2026-06-01 16:12:18 | 标签: AgentOps, Amazon Bedrock AgentCore, 智能体 AI, DevOps, CI/CD
-
-> 这篇来自 AWS 机器学习博客的文章将 AgentOps 定位为一种针对智能体 AI 工作负载的结构化运营规范，是对 GenAIOps 原则的扩展。文章概述了一个四大支柱框架：治理与安全（多账户策略、身份、数据治理、工具治理）、构建与运营（将智能体、工具和记忆视为带有 CI/CD 的版本化制品）、评估（四个层级：工具、对话轮次、会话结果、系统）以及可观测性。文章提供了使用 Amazon Bedrock AgentCore、AgentCore Identity、AgentCore Memory、AgentCore Gateway 和 AWS Agent Registry 的详细参考架构。它涵盖了...
+2026-06-01 16:12:18
 
 
 
 ### [利用-Amazon-FSx-for-Lustre-和-TurboQuant-上的-GPUDirect-加速-LLM-模型加载并扩展上下文窗口-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/accelerate-llm-model-loading-and-increase-context-windows-with-gpudirect-on-amazon-fsx-for-lustre-and-turboquant/)
 
-2026-06-01 16:07:19 | 标签: LLM 推理, GPUDirect Storage, Amazon FSx for Lustre, 模型加载, TurboQuant
-
-> 这篇 AWS 博客文章探讨了将大型语言模型 (LLM) 加载到 GPU 内存进行推理时的瓶颈问题，该过程可能需要数十分钟，导致昂贵的 GPU 处于空闲状态。作者提出了一种解决方案，使用高性能并行文件系统 Amazon FSx for Lustre，并结合 NVIDIA GPUDirect Storage (GDS)。通过预分片和预量化模型权重（例如，量化为 FP8），并将其存储在 FSx for Lustre 上，节点中的所有 GPU 可以并行地将各自的分片直接读取到 HBM 中，完全绕过 CPU 和系统内存。文章展示了基准测试结果，加载 Llama 3.1 405B 模型实现了 169 倍的...
+2026-06-01 16:07:19
 
 
 
 ### [OpenClaw-与-NVIDIA-合作，强化智能体技能安全](https://openclaw.ai/blog/openclaw-nvidia-skill-security/)
 
-2026-06-01 13:30:00 | 标签: 智能体安全, AI 智能体, NVIDIA, 技能安全, OpenClaw
-
-> 本文详细介绍了 OpenClaw 与 NVIDIA 合作，以应对 AI 智能体技能所面临的独特安全挑战。传统的恶意软件扫描不足以应对智能体风险，因为技能可能声称一个目的却执行另一个。OpenClaw 的 ClawScan 流水线集成了三个独立的扫描器：用于恶意软件的 VirusTotal、用于危险代码模式的静态分析，以及用于智能体风险检测的 NVIDIA 全新 SkillSpector。一个 LLM 作为评判者（Codex）评估所有信号并给出最终判定。一个关键发现是扫描器之间的共识度极低（Jaccard 指数 < 0.11），这凸显了采用整体方法的必要性。OpenClaw 正在 Hugging...
+2026-06-01 13:30:00
 
 
 
 ### [材料版-AlphaFold-来了！40-个工业任务全方位-SOTA，AI4S-迎来行业大突破](https://www.qbitai.com/2026/06/427142.html)
 
-2026-06-01 13:25:27 | 标签: MPA, 材料基座模型, AI4S, 物理对齐, Transformer
-
-> 本文报道了深度原理（Deep Principle）推出的材料基座模型 MPA（Materials Property Axiom）。该模型的核心创新在于借鉴了大语言模型（LLM）的预训练-中期训练-微调三阶段训练范式，并针对材料科学特性进行了两项关键设计：一是引入物理对齐（physics-guided alignment）的中期训练，利用大规模第一性原理计算数据，帮助模型建立对真实材料物理特性的直觉，而非仅停留在分子结构记忆；二是设计了混合读出头（Hybrid Readout），通过注意力池化和原子加和两条路径，分别处理与分子大小无关和相关的两类性质，并用可学习参数 α 动态平衡。实验结果显示，...
+2026-06-01 13:25:27
 
 
 
 ### [欢迎-NVIDIA-Cosmos-3：首个面向物理-AI-推理与行动的开放全模态模型](https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai)
 
-2026-06-01 12:51:13 | 标签: NVIDIA Cosmos 3, 世界基础模型, 物理 AI, 混合 Transformer, 全模态模型
-
-> NVIDIA 发布了 Cosmos 3，这是世界基础模型在物理 AI 领域的重大进步。与之前需要为世界生成、推理和策略生成分别使用独立模型的版本不同，Cosmos 3 是一个基于混合 Transformer 架构构建的统一全模态模型。它在一个框架内处理文本、图像、视频、音频和行动模态，使用自回归子序列进行推理，扩散子序列进行生成，并通过联合注意力机制连接。此次发布包含两种模型规模：Cosmos 3 Nano（8B 参数）适用于工作站级 GPU，Cosmos 3 Super（32B 参数）适用于大规模合成数据生成和研究。Cosmos 3 可在 Hugging Face 上获取，集成了 Diffu...
+2026-06-01 12:51:13
 
 
 
 ### [2026-年-5-月通讯](https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything)
 
-2026-06-01 12:45:00 | 标签: AI 通讯, Anthropic, AI 成本, Datasette, 模型发布
-
-> 这是 Simon Willison 每月通讯 2026 年 5 月版的简要公告，仅限其 GitHub 赞助者阅读。该通讯涵盖了几个关键主题：AI 成本上升以及 Anthropic 表现尤为出色的一个月、一系列略显令人失望的模型发布、会议和播客的最新动态、Datasette Agent 的发布以及 Datasette 项目的重大进展、个人工具和设置更新，以及其他杂项内容。文章附有上个月通讯的链接作为预览，并推广每月 10 美元的赞助等级，以便提前一个月获取内容。
+2026-06-01 12:45:00
 
 
 
 ### [利用-NVIDIA-DOCA-硅内安全架构，推进面向智能体-AI-的-AI-基础设施](https://developer.nvidia.com/blog/advancing-ai-infrastructure-for-agentic-ai-with-nvidia-doca-in-silicon-security/)
 
-2026-06-01 12:26:21 | 标签: NVIDIA, AI 基础设施, 智能体 AI, 安全, DPU
-
-> 文章认为，AI 工厂和智能体 AI 的兴起引入了一个传统安全架构无法应对的全新且复杂的攻击面。NVIDIA 的解决方案是一种基于 BlueField 数据处理单元和 DOCA 软件平台的分布式、全栈且加速的安全模型。BlueField DPU 在独立于主机系统的硬件隔离域中运行，提供了一个防篡改的安全层。DOCA 安全栈包含三个关键的微服务：DOCA Argus 通过内存分析进行运行时威胁检测，DOCA Vault 实现零信任文件访问控制，以及 DOCA Flow 用于高速网络策略执行。三者协同工作，在不影响 AI 工作负载性能的前提下，实现了实时可见性、细粒度策略执行和加速的安全操作。该架构...
+2026-06-01 12:26:21
 
 
 
 ### [NVIDIA-Vera-CPU-为-AI-工厂中的智能体工作负载树立新标准](https://developer.nvidia.com/blog/nvidia-vera-cpu-sets-a-new-standard-for-agentic-workloads-in-ai-factories/)
 
-2026-06-01 11:59:50 | 标签: NVIDIA Vera CPU, 智能体 AI, 强化学习, AI 工厂, CPU 架构
-
-> 这篇来自 NVIDIA 技术博客的文章认为，智能体 AI 和强化学习的兴起创造了一个以行动为中心的新扩展定律，其中 CPU 执行成为关键瓶颈。与为每美元核心数优化的传统云 CPU 不同，AI 工厂需要最大化每美元 token 数。NVIDIA Vera CPU 旨在应对这一转变，它配备了 88 个定制 Olympus 核心、高达 1.2 TB/s 的 LPDDR5X 内存带宽以及 NVIDIA 可扩展一致性架构（SCF）。关键架构特性包括用于分支密集型代码的神经分支预测器、用于间接内存访问的图预取器以及深度乱序执行引擎。这些特性使 Vera CPU 能够在负载下维持高 IPC，与 x86 相比...
+2026-06-01 11:59:50
 
 
 
 ### [NVIDIA-DSX-OS-发布：为规模化-AI-工厂提供开放、模块化软件](https://developer.nvidia.com/blog/nvidia-dsx-os-delivers-open-modular-software-for-operating-ai-factories-at-scale/)
 
-2026-06-01 11:37:27 | 标签: NVIDIA DSX OS, AI 工厂, 基础设施, 开源, 数据中心
-
-> 这篇来自 NVIDIA 技术博客的文章介绍了 NVIDIA DSX OS，这是一个用于规模化运营 AI 工厂的全新开源、模块化软件平台。该平台是更大的 NVIDIA DSX 生态系统的一部分，旨在解决 AI 工厂的核心经济驱动力：更快的创收速度、更高的效率和更强的可靠性。DSX OS 提供了一套全面的技术，包括用于标准化 IT/OT 通信的 DSX Exchange、用于电源优化的 DSX MaxLPS 和 DSX Flex、用于资源调配的 NVIDIA Infra Controller 以及用于健康监控的 NVIDIA Fleet Intelligence。该软件设计为可增量采用，并已被 C...
+2026-06-01 11:37:27
 
 
 
@@ -41344,57 +41294,43 @@
 
 ### [Claude-Code-新增动态工作流，实现并行智能体协调](https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-02 00:55:00 | 标签: Claude Code, 动态工作流, 智能体编排, AI 智能体, 软件工程
-
-> Anthropic 发布了动态工作流，这是 Claude Code 的一项新的研究预览功能。该功能允许 AI 动态创建编排脚本，将复杂的软件工程任务拆分为子任务，在多个专用智能体上并行运行，并在呈现最终答案前验证结果。这解决了单个智能体难以处理的复杂任务，例如调查大规模 Bug、管理大型迁移、进行安全审计和分析架构。与手动配置团队不同，Claude 按需生成工作流，规划工作、分配任务、比较发现并迭代直至收敛。该功能可以显式激活，也可以通过新的 'ultracode' 设置自动触发。进度会被保存，允许中断后恢复运行。Anthropic 警告这会显著增加 Token 消耗，建议从较小的任务开始。该...
+2026-06-02 00:55:00
 
 
 
 ### [如何构建一个知道何时不该回复工单的-AI-支持智能体](https://www.freecodecamp.org/news/how-to-build-an-ai-support-agent-that-knows-when-not-to-answer-tickets/)
 
-2026-06-02 00:19:11 | 标签: AI 支持智能体, RAG, 优先升级设计, LLM 安全, 软件工程
-
-> 本文由一位在黑客马拉松中从 1，349 名参与者中排名第 9 的全栈工程师撰写，指出基于标准 RAG 的 AI 支持智能体在处理欺诈报告等敏感工单时会失败。作者提出了一种“优先升级”的设计，其中由纯 Python 函数而非 LLM 来做出路由决策。该决策器将工单路由至三个路径之一：基于事实的回复、针对良性无关请求的礼貌模板拒绝、或升级至人工处理。系统还包含一个双法官共识验证器，并在意见不一致时由仲裁者介入，以确保回答的忠实性。文章详细介绍了实现细节、节省成本的措施（如 Jaccard 预检和缓存），并坦诚讨论了作者提交方案中的五个不足之处，强调了投资构建高质量标注数据集远比过度优化流水线更为关...
+2026-06-02 00:19:11
 
 
 
 ### [BadHost-漏洞暴露-AI-智能体、评估器与-LLM-网关](https://www.infoq.com/news/2026/06/badhost-ai-systems-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-01 22:00:00 | 标签: Starlette, 安全漏洞, 身份验证绕过, AI 基础设施, MCP
-
-> 本文报道了 CVE-2026-48710，这是广泛使用的 Python Web 框架 Starlette（每周下载量达 3.25 亿次）中的一个高严重性身份验证绕过漏洞。该漏洞在对 vLLM 进行安全审计时被发现，攻击者可通过在 HTTP Host 头部中包含 `/`、`?` 或 `#` 字符来绕过基于路径的访问控制。该漏洞源于一个设计缺陷：Starlette 在重构 `request.url` 时，直接将 Host 头部与请求路径拼接，而未进行适当验证，导致重新解析后的路径与实际路由路径不一致。这使得攻击者能够访问本应被阻止的敏感端点，如 `/admin`。研究人员认为，该漏洞被分配的 CV...
+2026-06-01 22:00:00
 
 
 
 ### [深入解析-Chromium-的-AI-Coding-开发体系](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801806&idx=1&sn=174aba5e6556049d7729e9e11f39ab8d)
 
-2026-06-01 17:36:00 | 标签: Chromium, AI Coding, 提示词工程, Agentic RAG, 软件工程实践
-
-> 本文由 QQ 浏览器团队撰写，对 Chromium 的 AI Coding 开发体系进行了深度技术分析。文章指出，面对 3500 万行 C++ 代码的庞大代码库，Chromium 构建了一套完整的 AI Agent 基础设施，核心包括：AI Policy 明确人类开发者是最终责任人；Prompts 采用四层分层组合架构（核心指令、工作流、平台模板、任务命令），确保 AI 行为规范；Skills 提供 18+ 个按需激活的专业模块，将复杂任务编码为可复用的检查清单；Knowledge Base 通过三层 Agentic RAG 架构（静态路由表、本地文档检索、MCP 扩展）确保 AI 基于权威文...
+2026-06-01 17:36:00
 
 
 
 ### [面向-LLM-的架构设计：什么是真正的-AI-Friendly-架构？](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650543768&idx=1&sn=b1c0207772c8a6d9550815a6afc01bf4)
 
-2026-06-01 16:20:00 | 标签: AI Friendly 架构, Multi-Agent, Context Engineering, ReAct, AI 可观测
-
-> 文章以淘宝营销业务中的 AI 实践为背景，深入探讨了传统工程架构（平台型与业务型）在面对 AI 的「不确定性」时产生的冲突，并提出了 AI Friendly 架构的演进三范式：从确定性到概率性、从结构化到语义化、从静态到动态。作者基于此范式构建了一套完整的架构大图，核心包括基础依赖层（模型、知识、工具管理）、Agent 层（BaseAgent/ReActAgent/PlanAgent）、意图层和会话层，以及 AI 可观测与评测体系。文章结合秒杀 AI 审核（准确率 95.7%）和 CogentAI 答疑系统（问题解决准确率 98%+）两个实战案例，详细讲解了 ReAct 与 Plan 范式结合...
+2026-06-01 16:20:00
 
 
 
 ### [打破“人月神话”，Agent-重塑风控场景产运研职能](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286067&idx=2&sn=2546edb27850b2ba70a13c0f9b45ef97)
 
-2026-06-01 16:03:00 | 标签: Agent, AI 原生组织, 风控, Vibe Coding, Prompt to Product
-
-> 本文是快手磁力引擎风控技术负责人王东旭在 QCon 2026 北京站的演讲实录。文章从 AIGC 时代「安全、效率、体验」不可能三角被推向极限的现实困境出发，提出传统固态组织必须向「液态组织」转型。作者详细分享了团队在过去半年推动的三大职能重塑实践：产品经理采用 Prompt to Product 模式直接交付原型，运营从规则配置者升级为 Prompt Engineer、RAG 运营乃至模型教练，研发则通过 CLI 模式武装自己逃离职业阶梯中空化。文章还坦诚复盘了 Vibe Coding 工程落地坑（Demo 惊艳但生产一塌糊涂）、增量与存量项目差异、以及组织变革中的管理冲突教训。最后，作者提...
+2026-06-01 16:03:00
 
 
 
 ### [【第-3708-期】智能体引擎优化：当-AI-成为你文档的头号读者](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279185&idx=1&sn=aa66b7e38286abae9ed971c57f6aa41c)
 
-2026-06-01 09:00:00 | 标签: 智能体引擎优化, AEO, AI编程, 文档优化, llms.txt
-
-> 本文由 Addy Osmani 撰写，经前端早读课编译，系统性地介绍了智能体引擎优化（AEO）的概念与实践框架。文章指出，AI 编程智能体（如 Claude Code、Cursor）正以与人类截然不同的方式消费文档：单次 HTTP 请求、零 UI 交互，导致传统分析系统完全失明。作者将 AEO 类比为 SEO，但优化对象从搜索引擎爬虫变成了 AI 智能体。文章详细分析了智能体的 HTTP 流量特征、token 经济学问题（文档过长导致被静默截断或跳过），并提出了一个六层 AEO 技术栈：访问控制（robots.txt）、可发现性（llms.txt）、能力信号（skill.md）、内容格式（面向...
+2026-06-01 09:00:00
 
 
 

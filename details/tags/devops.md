@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-02 08:34:45 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-02 11:05:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -560,25 +560,19 @@
 
 ### [Elastic-Build-Machines-现已防止构建内存溢出---Vercel](https://vercel.com/changelog/elastic-build-machines-now-protect-against-out-of-memory-builds)
 
-2026-06-02 02:30:00 | 标签: Vercel, Elastic Build Machines, 部署, 内存管理, CI/CD
-
-> Vercel 为其 Elastic Build Machines 引入了一项新功能，可主动防止部署过程中出现内存溢出（OOM）错误。该系统会实时监控构建的内存使用情况，并自动调整机器层级：不会降级快速但内存密集型的构建，会升级接近 OOM 的构建，并在构建因 OOM 失败后自动在更高层级上重试。阈值设置较为保守，以平衡可靠性和成本，该功能可在团队或项目设置中启用。
+2026-06-02 02:30:00
 
 
 
 ### [如何在预发服务器上自托管兼容-S3-的对象存储-MinIO（每月节省数百美元）](https://www.freecodecamp.org/news/how-to-self-host-an-s3-compatible-object-store-with-minio-on-your-staging-server/)
 
-2026-06-01 22:40:43 | 标签: MinIO, S3, 自托管, Docker, Traefik
-
-> 本文为开发者提供了一份全面的指南，介绍如何在预发服务器上使用 MinIO 自托管兼容 S3 的对象存储。文章指出，虽然托管云存储（如 AWS S3、Cloudflare R2）用于生产环境是合理的，但预发环境会因自动化测试、每日数据库重置和孤立对象而产生大量浪费。解决方案是在 Docker 容器中运行 MinIO，并将其置于 Traefik 和 Let's Encrypt HTTPS 之后，使用与生产环境相同的 S3 API 和 SDK。本指南涵盖了 DNS 设置、Docker Compose 配置、Traefik 路由、使用最小权限访问密钥创建存储桶、通过环境变量进行应用配置、三种上传方法（...
+2026-06-01 22:40:43
 
 
 
 ### [尾部斜杠绕过-AWS-API-Gateway-授权](https://www.infoq.com/news/2026/06/aws-api-gateway-auth-bypass/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-01 17:55:00 | 标签: AWS, API Gateway, 安全, Lambda 授权器, 漏洞
-
-> 本文详细介绍了研究人员 Piyush Gupta 在 AWS HTTP API（API Gateway 的更新、更便宜版本）中发现的一个严重安全漏洞。只需在 API 路径后附加一个尾部斜杠（例如，使用 GET /v1/accounts/ 代替 GET /v1/accounts），Gupta 就能完全绕过 Lambda 授权器认证。根本原因是路由匹配层和授权器层之间的路径规范化不匹配。授权器使用贪婪路径匹配，将 /v1/accounts/ 视为 /v1/accounts 的前缀匹配并返回 Allow。然而，在执行集成时，路径被重写，认证上下文（例如 userId）被丢弃，导致后端 Lambda ...
+2026-06-01 17:55:00
 
 
 
