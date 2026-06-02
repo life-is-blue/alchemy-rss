@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-02 06:44:46 | [返回首页](/README.md)
+**更新时间**: 2026-06-02 08:34:45 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12522)
+- [AI & 大模型](#ai-llm) (12554)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (835)
-- [DevOps](#devops) (581)
+- [DevOps](#devops) (584)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5902)
+- [其他](#other) (5911)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [为什么视频智能体模型是下一个前沿——Ethan-He，xAI-Grok-Imagine-负责人](https://www.latent.space/p/video-agents) - AI 精选
+- [使用-NVIDIA-Cosmos-3-开发物理-AI-推理、世界与动作模型](https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/) - AI 精选
+- [MiniMax-M3：前沿-Coding-能力、1M-上下文、原生多模态，一个模型全给你](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488528&idx=1&sn=1093c7eca0f891c923fa66d4f00d23db) - AI 精选
 - [浅谈-AI-编程](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492008&idx=1&sn=69ac47da219bed079bc38f80e3d61f7e) - AI 精选
 - [Gemini-Flash-价格上涨，AI-法案延迟，智能体驱动网络流量激增](https://www.deeplearning.ai/the-batch/issue-355) - AI 精选
 - [Dubbing-v2-发布：革命性的全新配音模型](https://elevenlabs.io/blog/introducing-dubbing-v2) - AI 精选
@@ -39,11 +42,8 @@
 - [OpenAI-推出-OpenAI-部署公司，助力企业围绕智能构建业务](https://openai.com/index/openai-launches-the-deployment-company) - AI 精选
 - [自然语言自编码器](https://www.anthropic.com/research/natural-language-autoencoders) - AI 精选
 - [通过-API-新模型推进语音智能](https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api) - AI 精选
-- [GPT-5.5-Instant：更智能、更清晰、更个性化](https://openai.com/index/gpt-5-5-instant) - AI 精选
-- [Claude-Code-产品经理使用指南](https://every.to/source-code/claude-code-for-product-managers) - AI 精选
-- [NVIDIA-发布-Nemotron-3-Nano-Omni：面向文档、音频和视频智能体的长上下文多模态模型](https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence) - AI 精选
 
-- [查看全部 12522 篇...](/details/tags/ai-llm.md)
+- [查看全部 12554 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 581 篇...](/details/tags/devops.md)
+- [查看全部 584 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5902 篇...](/details/tags/other.md)
+- [查看全部 5911 篇...](/details/tags/other.md)
 
 

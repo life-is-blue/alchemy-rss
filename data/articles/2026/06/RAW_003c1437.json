@@ -1,0 +1,53 @@
+{
+  "id": "RAW_003c1437",
+  "title": "Claude Code 新增动态工作流，实现并行智能体协调",
+  "url": "https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-02 00:55:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic has introduced <a href=\"https://claude.com/blog/introducing-dynamic-workflows-in-claude-code\">Dynamic Workflows</a>, a new capability for Claude Code designed to handle complex software engineering tasks by coordinating large numbers of AI agents within a single workflow. Available in research preview, the feature allows Claude to dynamically create orchestration scripts, break work into subtasks, run them in parallel, and validate results before presenting a final answer.</p>\n   <p>The release addresses tasks that are too complex for a single agent, such as investigating widespread bugs, managing large migrations, conducting security audits, reviewing performance, and analyzing the architecture of complex software projects. Dynamic Workflows can manage multiple subagents, allowing Claude to handle extensive tasks that could take hours or days to complete.</p>\n   <p>Instead of relying on manually configured agent teams, Claude generates workflows on demand based on the user's objective. The system plans the work, distributes tasks across specialized agents, compares and verifies findings, and iterates until results converge. Anthropic says this approach allows Claude to tackle projects that would traditionally require significant coordination and oversight from engineering teams.</p>\n   <p>The feature can be activated explicitly by asking Claude to create a workflow or by enabling a new setting called ultracode, which automatically allows Claude to decide when a workflow-based approach is appropriate. Progress is saved throughout execution, allowing interrupted runs to resume without starting over.</p>\n   <p>Early reactions suggest the feature formalizes workflows that many developers have already been assembling manually. One Reddit user <a href=\"https://www.reddit.com/r/ClaudeAI/comments/1tq9ofy/comment/oofyhrt/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">wrote</a>:</p>\n   <blockquote>\n    <p>To be honest, I’ve been waiting for a feature like this. It’s not for all use cases of course, but I’ve got a project that I wanted to test this on for a long time, and I’m currently doing exactly that. Haven’t checked the output in detail yet, but the speed and autonomy seem to be what I was hoping for.</p>\n   </blockquote>\n   <p>The company warns that Dynamic Workflows can consume substantially more tokens than a typical Claude Code session and recommends starting with smaller, well-scoped tasks before using the feature for larger projects.</p>\n   <p>Dynamic Workflows are available in research preview for Claude Code users on Max, Team, and eligible Enterprise plans, as well as through the Claude API and partner platforms including Amazon Bedrock, Google Vertex AI, and Microsoft Foundry.&nbsp;</p>\n   <p>The launch reflects a broader shift toward agent orchestration systems, where the focus increasingly moves from individual model performance to coordinating large numbers of specialized agents that can work together on complex engineering tasks.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Claude Code Adds Dynamic Workflows for Parallel Agent Coordination\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780332900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 为 Claude Code 推出动态工作流功能，支持并行协调多个 AI 智能体，自主处理复杂的软件工程任务，如 Bug 调查、迁移和安全审计。",
+  "oneSentenceSummary": "Anthropic 为 Claude Code 推出动态工作流功能，支持并行协调多个 AI 智能体，自主处理复杂的软件工程任务，如 Bug 调查、迁移和安全审计。",
+  "summary": "Anthropic 发布了动态工作流，这是 Claude Code 的一项新的研究预览功能。该功能允许 AI 动态创建编排脚本，将复杂的软件工程任务拆分为子任务，在多个专用智能体上并行运行，并在呈现最终答案前验证结果。这解决了单个智能体难以处理的复杂任务，例如调查大规模 Bug、管理大型迁移、进行安全审计和分析架构。与手动配置团队不同，Claude 按需生成工作流，规划工作、分配任务、比较发现并迭代直至收敛。该功能可以显式激活，也可以通过新的 'ultracode' 设置自动触发。进度会被保存，允许中断后恢复运行。Anthropic 警告这会显著增加 Token 消耗，建议从较小的任务开始。该功能适用于 Max、Team 及符合条件的 Enterprise 计划用户，也可通过 Claude API 及 Amazon Bedrock 和 Google Vertex AI 等合作伙伴平台使用。",
+  "mainPoints": [
+    {
+      "point": "动态工作流使 Claude Code 能够并行协调多个 AI 智能体处理复杂任务。",
+      "explanation": "系统动态创建编排脚本，将工作拆分为子任务，并发运行并验证结果，处理传统上需要大量人工协调的项目。"
+    },
+    {
+      "point": "该功能专为处理大规模工程挑战而设计，例如管理广泛 Bug、进行安全审计、审查性能和分析复杂软件架构。",
+      "explanation": "该功能旨在解决单个智能体难以处理的复杂任务，如 Bug 调查、迁移和安全审计。"
+    },
+    {
+      "point": "动态工作流可以通过 'ultracode' 设置显式激活或自动触发。",
+      "explanation": "用户可以要求 Claude 创建工作流，或启用 ultracode 让 Claude 自主决定何时采用工作流方法，进度会被保存以便恢复。"
+    }
+  ],
+  "keyQuotes": [
+    "动态工作流可以管理多个子智能体，使 Claude 能够处理可能需要数小时甚至数天才能完成的大规模任务。",
+    "Claude 并非依赖手动配置的智能体团队，而是根据用户目标按需生成工作流。",
+    "此次发布反映了向智能体编排系统的更广泛转变，焦点正从单个模型性能转向协调大量专用智能体。"
+  ],
+  "tags": [
+    "Claude Code",
+    "动态工作流",
+    "智能体编排",
+    "AI 智能体",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 396,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780332900000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-02 00:55:00"
+}

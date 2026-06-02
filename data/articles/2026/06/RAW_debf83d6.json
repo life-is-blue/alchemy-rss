@@ -1,0 +1,55 @@
+{
+  "id": "RAW_debf83d6",
+  "title": "Elastic Build Machines 现已防止构建内存溢出 - Vercel",
+  "url": "https://vercel.com/changelog/elastic-build-machines-now-protect-against-out-of-memory-builds",
+  "date": "2026-06-02 02:30:00",
+  "author": "Mehul Kar",
+  "siteName": "Vercel News",
+  "content": "<html>\n <head></head>\n <body>\n  <div data-customer-story=\"false\" class=\"flex flex-col items-center justify-start gap-6 flex-initial article-module__XJFYTq__content\">\n   <div class=\"flex flex-row items-center justify-between flex-initial w-full gap-4 pt-2\">\n    <div class=\"flex flex-row items-center justify-start gap-1.5 flex-initial\">\n     <p class=\"text-copy-14 text-gray-900\">1<!-- --> min <!-- -->read</p>\n    </div>\n    <div class=\"flex items-center gap-x-2 sm:gap-x-6 flex-1 justify-start\"></div>\n    <time class=\"text-copy-14 text-gray-900 order-2 md:order-3\" datetime=\"2026-06-01T13:30-05:00\">Jun 1, 2026</time>\n   </div>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">Elastic build machines now monitor your build's memory usage and automatically adjust to prevent out-of-memory (OOM) failures:</p>\n   <ul class=\"text-module__qZtYrq__unorderedList\">\n    <li class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph text-module__qZtYrq__listItem\">\n     <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">If your build is fast but memory-intensive, we will no longer downgrade you to a smaller machine</p>\n    </li>\n    <li class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph text-module__qZtYrq__listItem\">\n     <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">If your build is close to running out of memory, we will automatically upgrade to a higher tier</p>\n    </li>\n    <li class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph text-module__qZtYrq__listItem\">\n     <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">If your build fails due to an out-of-memory error, the next deployment will automatically run on a higher tier</p>\n    </li>\n   </ul>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">Thresholds are set conservatively to balance deployment reliability and cost. Vercel only considers your build's memory usage, not the memory used by Vercel's own build infrastructure.</p>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">Enable elastic builds in your <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F~%2Fsettings%2Fbuild-and-deployment%23build-machines\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F~%2Fsettings%2Fbuild-and-deployment%23build-machines\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">team settings</a> or <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fsettings%2Fbuild-and-deployment%23build-machine\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fsettings%2Fbuild-and-deployment%23build-machine\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">project settings</a>, or read the <a href=\"https://vercel.com/docs/builds/managing-builds#elastic-build-machines\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/docs/builds/managing-builds#elastic-build-machines\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">docs</a>.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Vercel 的 Elastic Build Machines 现在能够自动监控并调整内存分配，根据实时使用情况升级或降级机器层级，从而防止构建因内存不足而失败。",
+  "oneSentenceSummary": "Vercel 的 Elastic Build Machines 现在能够自动监控并调整内存分配，根据实时使用情况升级或降级机器层级，从而防止构建因内存不足而失败。",
+  "summary": "Vercel 为其 Elastic Build Machines 引入了一项新功能，可主动防止部署过程中出现内存溢出（OOM）错误。该系统会实时监控构建的内存使用情况，并自动调整机器层级：不会降级快速但内存密集型的构建，会升级接近 OOM 的构建，并在构建因 OOM 失败后自动在更高层级上重试。阈值设置较为保守，以平衡可靠性和成本，该功能可在团队或项目设置中启用。",
+  "mainPoints": [
+    {
+      "point": "Vercel 的 Elastic Build Machines 现在可以自动防止构建因内存不足而失败。",
+      "explanation": "系统实时监控内存使用情况并调整机器层级以避免 OOM 错误，从而提高部署可靠性。"
+    },
+    {
+      "point": "该功能包含三个关键行为：不降级快速内存密集型构建、自动升级接近 OOM 的构建、以及在 OOM 失败后自动在更高层级重试。",
+      "explanation": "这些行为确保构建不会因内存限制而不必要地变慢或失败，同时也能管理成本。"
+    },
+    {
+      "point": "阈值设置较为保守，以平衡部署可靠性和成本。",
+      "explanation": "Vercel 仅考虑构建自身的内存使用情况，而非基础设施开销，以做出公平且高效的扩缩容决策。"
+    }
+  ],
+  "keyQuotes": [
+    "弹性构建机器现在会监控你的构建内存使用情况，并自动调整以防止内存溢出（OOM）失败。",
+    "如果你的构建速度快但内存密集，我们将不再将其降级到更小的机器。",
+    "如果你的构建接近内存耗尽，我们将自动升级到更高层级。",
+    "如果构建因内存溢出错误而失败，下一次部署将自动在更高层级上运行。",
+    "阈值设置较为保守，以平衡部署可靠性和成本。"
+  ],
+  "tags": [
+    "Vercel",
+    "Elastic Build Machines",
+    "部署",
+    "内存管理",
+    "CI/CD"
+  ],
+  "topicTag": "devops",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 117,
+  "domain": "vercel.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_0256cc",
+  "sourceName": "Vercel News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780338600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-02 02:30:00"
+}
