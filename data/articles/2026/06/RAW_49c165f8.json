@@ -1,0 +1,50 @@
+{
+  "id": "RAW_49c165f8",
+  "title": "构建你自己的 AI 智能体",
+  "url": "https://www.freecodecamp.org/news/build-your-own-ai-agent/",
+  "date": "2026-06-02 20:02:39",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We just posted a course on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that will teach you how to build and deploy intelligent AI agents that bridge the gap between Large Language Models (LLMs) and real-world automation. Ania Kubow will teaches this course.</p>\n  <p>In this hands-on project, you will learn to create a production-ready AI-powered Slackbot capable of handling complex research and data analysis. The bot automatically detects when new members join your Slack community, researches their professional background via email and GitHub, and utilizes OpenAI's GPT-4 to score their fit for your business.</p>\n  <p>This course takes you from zero to deployment, covering essential modern development tools and practices:</p>\n  <ul>\n   <li>\n    <p>Backend Development: Using Node.js, Express, and Slack Bolt.</p>\n   </li>\n   <li>\n    <p>AI Integration: Connecting to OpenAI’s GPT-4 to perform intelligent lead qualification.</p>\n   </li>\n   <li>\n    <p>Database Management: Implementing a PostgreSQL database on Render to store member information and fit scores.</p>\n   </li>\n   <li>\n    <p>Infrastructure as Code: Using Render blueprints to define, deploy, and manage your project infrastructure.</p>\n   </li>\n  </ul>\n  <p>You can watch the full course now on the <a href=\"https://youtu.be/MnG0ugK2JAI\">freeCodeCamp.org YouTube channel</a> (2-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MnG0ugK2JAI\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本课程将教你构建并部署一个可用于生产环境的、由 AI 驱动的 Slack 机器人，该机器人使用 GPT-4、Node.js 和 PostgreSQL 实现潜在客户资格的自动评估。",
+  "oneSentenceSummary": "本课程将教你构建并部署一个可用于生产环境的、由 AI 驱动的 Slack 机器人，该机器人使用 GPT-4、Node.js 和 PostgreSQL 实现潜在客户资格的自动评估。",
+  "summary": "本文介绍了一门新的 freeCodeCamp 课程，该课程指导学习者构建和部署一个智能 AI 智能体。项目是一个 Slack 机器人，能够自动检测新社区成员，通过电子邮件和 GitHub 研究他们的专业背景，并使用 OpenAI 的 GPT-4 评估他们与业务的匹配度。课程涵盖使用 Node.js、Express 和 Slack Bolt 进行后端开发，使用 GPT-4 进行 AI 集成，使用 Render 上的 PostgreSQL 进行数据库管理，以及使用 Render 蓝图实现基础设施即代码。这是一门时长 2 小时的视频课程，可在 freeCodeCamp 的 YouTube 频道上观看。",
+  "mainPoints": [
+    {
+      "point": "该课程教授构建一个用于自动化潜在客户资格评估的生产级 AI Slack 机器人。",
+      "explanation": "该机器人使用 GPT-4 分析新成员来自电子邮件和 GitHub 的专业背景，评估他们与业务的匹配度。"
+    },
+    {
+      "point": "它涵盖了完整的现代开发技术栈：Node.js、Express、Slack Bolt、PostgreSQL 和 Render。",
+      "explanation": "学习者将获得后端开发、AI 集成、数据库管理和基础设施即代码的实践经验。"
+    },
+    {
+      "point": "该课程是 freeCodeCamp YouTube 频道上一个时长 2 小时的视频教程。",
+      "explanation": "它专为基于项目的实践学习而设计，带领学习者从零开始直到完成部署。"
+    }
+  ],
+  "keyQuotes": [
+    "在这个实践项目中，你将学习创建一个能够处理复杂研究和数据分析的生产级 AI 驱动的 Slack 机器人。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "LLM",
+    "AI 编程",
+    "后端开发",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 168,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780401759000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-02 20:02:39"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_1b243482",
+  "title": "工具：粘贴文件编辑器",
+  "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+  "date": "2026-06-02 12:13:36",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">2nd June 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label tool\" href=\"https://simonwillison.net/elsewhere/tool/\">Tool</a> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/pasted-file-editor\">Pasted File Editor</a></span> <span class=\"beat-commit\">— Create and manage a text editor with automatic file attachment capabilities. Paste files or text content of 1,000 characters or more to attach them below the editor, while keeping the editor text unchanged. View attached files as previews or in full, and remove files as needed using drag-and-drop, file selection, or clipboard paste functionality.</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I really like how you can paste a large volume of text into <a href=\"https://claude.ail\">claude.ai</a> (or the Claude desktop/mobile apps) and it will detect it as a large paste and turn it into a file attachment instead.</p>\n      <p>I decided to have Codex desktop <a href=\"https://gist.github.com/simonw/74c79119b487a5acce18b4dcc26b9f79\">build me a version of that</a> as a prototype.</p>\n      <p>You can also open files directly - including images which will be shown as thumbnails - or drag files onto the texture.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4621/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 构建了一个网页工具，复制了 Claude 中将大量粘贴文本自动转为文件附件的行为，允许用户将文本粘贴或拖放文件到文本编辑器中，自动创建文件附件。",
+  "oneSentenceSummary": "Simon Willison 构建了一个网页工具，复制了 Claude 中将大量粘贴文本自动转为文件附件的行为，允许用户将文本粘贴或拖放文件到文本编辑器中，自动创建文件附件。",
+  "summary": "Simon Willison 描述了他构建的一个简单但实用的网页工具，灵感来自 Claude（claude.ai）的一个功能：当粘贴大量文本时，会自动将其转换为文件附件。他的工具——粘贴文件编辑器，允许用户粘贴 1000 个字符或以上的文本内容，这些内容会作为文件附件出现在编辑器下方，而编辑器中的文本保持不变。用户也可以直接打开文件（包括以缩略图形式显示的图片），或将文件拖放到界面上。该工具提供附件的预览和完整视图，并允许按需移除文件。Willison 使用 Codex 桌面版构建了原型，该工具托管在他的个人工具网站上。",
+  "mainPoints": [
+    {
+      "point": "该工具复制了 Claude 的大文本粘贴转文件附件功能，供通用场景使用。",
+      "explanation": "受 Claude 将大量粘贴文本转换为文件附件的行为启发，Willison 构建了一个独立的网页工具来实现相同功能，允许用户粘贴文本或拖放文件来创建附件。"
+    },
+    {
+      "point": "该工具支持多种输入方式：粘贴、文件选择和拖放。",
+      "explanation": "用户可以粘贴文本（1000 个字符以上）、直接打开文件（包括以缩略图显示的图片）或将文件拖放到界面上，使其适用于不同的工作流程。"
+    },
+    {
+      "point": "该工具是使用 Codex 桌面版作为原型构建的。",
+      "explanation": "Willison 使用 Codex 桌面版快速构建了该工具的原型，展示了 AI 辅助编码如何加速小型、专注型工具的创建。"
+    }
+  ],
+  "keyQuotes": [
+    "我真的很喜欢在 claude.ai（或 Claude 桌面版/移动应用）中粘贴大量文本时，它会检测到这是大量粘贴并将其转换为文件附件。",
+    "我决定让 Codex 桌面版为我构建一个原型版本。",
+    "粘贴 1000 个字符或以上的文件或文本内容，将其附加到编辑器下方，同时保持编辑器文本不变。"
+  ],
+  "tags": [
+    "网页工具",
+    "文件附件",
+    "Claude",
+    "Codex",
+    "Simon Willison"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 135,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780373616000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-02 12:13:36"
+}

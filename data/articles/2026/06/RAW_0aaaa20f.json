@@ -1,0 +1,56 @@
+{
+  "id": "RAW_0aaaa20f",
+  "title": "Holo3.1：快速且本地的计算机使用智能体",
+  "url": "https://huggingface.co/blog/Hcompany/holo31",
+  "date": "2026-06-02 22:19:55",
+  "author": "Maxime Langevin, Hamza Benchekroun, Axel Moyal, Emrick Sinitambirivoutin",
+  "siteName": "Hugging Face - Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"SVELTE_HYDRATER contents\"></div>\n  <div class=\"mb-4\">\n   <span style=\"font-size: 1rem;\">Last March, we released Holo3, our state-of-the-art computer-use model. Adoption was immediate. Developers, enterprises, and partners started deploying Holo3 across a wide range of workflows, from browser automation and business software to internal tools and desktop applications. As adoption grew, we realized performance alone was no longer enough.</span>\n  </div>\n  <p></p>\n  <p>Users want to run the same computer-use capabilities across desktop and mobile environments, with seamless integration with different agent frameworks. They want deployment flexibility, from cloud inference to fully local execution on end-user devices.</p>\n  <p>This is why we are releasing the Holo3.1 family. Holo3.1 improves robustness across the three dimensions that matter most in production: environments (web, desktop, mobile), agent frameworks, and deployment targets. For the first time, we release quantized checkpoints optimized for local inference, including FP8, Q4 GGUF, and NVFP4.</p>\n  <p>Holo3.1 is a major step toward our vision of universal computer-use agents: systems that can operate across environments, integrate into any agent stack, and run wherever the workflow lives.</p>\n  <hr>\n  <p>Based on the Qwen family, Holo3.1 was designed to improve robustness across the environments where computer-use agents are actually deployed, while retaining state-of-the-art performance.</p>\n  <p>As teams moved Holo3 from evaluation to production, we repeatedly observed the same challenge: strong performance in one setting does not necessarily transfer to another. Mobile devices, alternative agent harnesses, and different execution frameworks all introduce their own sources of distribution shift.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/FZHF8oDkdWeMRSghXlO7h.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/FZHF8oDkdWeMRSghXlO7h.png\" alt=\"Capture d’écran 2026-06-01 à 16.30.52\"></a></p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"mobile-automation\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#mobile-automation\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Mobile Automation </span></h2>\n  <p>Holo3.1 expands Holo3's capabilities beyond browser and desktop control, delivering major gains on mobile environments. On AndroidWorld, our 35B-A3B model improves from 67% to 79.3%, while the smaller 4B and 9B variants improve from 58% to 72%.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"cross-harness-performance\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#cross-harness-performance\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Cross-Harness Performance </span></h2>\n  <p>To better support teams deploying Holo inside third-party agent stacks, Holo3.1 introduces native support for function-calling protocols in addition to the structured JSON outputs already available in Holo3.</p>\n  <p>Across OSWorld and our internal benchmark suite covering e-commerce, business software, and collaboration workflows, function-calling and native execution now achieve near-parity performance. Holo3.1 also delivers more than a 25% improvement over Holo3 when evaluated inside our Holotab product harness.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"smaller-sizes-for-cost-performance-tradeoffs\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#smaller-sizes-for-cost-performance-tradeoffs\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Smaller Sizes for Cost-Performance Tradeoffs </span></h2>\n  <p>To further enable local and on-device inference, we are also releasing new model sizes including small models (0.8B, 4B, and 9B) for cost-effective and private deployment, in addition to the larger 35B-A3B model for state-of-the-art performance.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/RyP4nSDHYTtKv0eb3CjZI.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/RyP4nSDHYTtKv0eb3CjZI.png\" alt=\"Capture d’écran 2026-06-01 à 16.21.18\"></a></p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/5voXQcpFKz6Fz3s3e4Kpu.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/5voXQcpFKz6Fz3s3e4Kpu.png\" alt=\"overall_pareto_light_notitle\"></a></p>\n  <p><em>Performance versus cost for the Holo3.1 and Qwen 3.5 families. Overall performance averages the four H Corporate benchmarks first (so each family is equally weighted), then takes the mean across OSWorld, AndroidWorld, H Corporate, ScreenSpot-Pro, and OSWorld-G.</em></p>\n  <hr>\n  <p>This is our first release to ship quantized weights. We’re starting with 35B-A3B checkpoints, available in FP8, Q4 GGUF, and NVFP4.</p>\n  <p>For NVFP4, we used NVIDIA's Model Optimizer in a W4A16 configuration. These checkpoints enable fast local inference for Computer Use Agents with little to no degradation in model performance. FP8 and NVFP4 achieve the same OSWorld scores, only about two points below the full-precision BF16 checkpoint.</p>\n  <p>The speedups are substantial: on DGX Spark, NVFP4 W4A16 delivers 1.41× the total token throughput of FP8 and 1.74× that of BF16. <a href=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/LRDMlYHe5n_FLLu41CRXd.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/LRDMlYHe5n_FLLu41CRXd.png\" alt=\"quality_throughput_pareto_light (1)\"></a></p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"towards-local-agents-on-consumer-hardware\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#towards-local-agents-on-consumer-hardware\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Towards Local Agents on Consumer Hardware </span></h2>\n  <p>We also release Q4 GGUF checkpoints aimed at local deployment of Computer Use Agents on consumer hardware.</p>\n  <p>The agent itself runs locally on a Windows or Mac machine, while the model can either run on that same machine—we include reference numbers for Apple Silicon—or on a DGX Spark on the same network. In both cases, execution stays fully private and local, with nothing leaving the user's network.</p>\n  <p>On Spark, agent harness optimizations we developed with NVIDIA combined with the NVFP4 quantization above deliver a compound ~2× end-to-end speedup over the FP8 baseline, cutting average step time from 6.8s to 3.3s.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/FbfYX69aNTL-U6yhOBQDN.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/69ce2739f4b9146a31e99a2f/FbfYX69aNTL-U6yhOBQDN.png\" alt=\"agent_request_rate_light\"></a></p>\n  <p><em>Agent request rate across platforms and precisions. On DGX Spark, vLLM with NVFP4 achieves the highest request rate in both Default and Fast modes, followed by Q4 GGUF and FP8. These improvements and more will land in an upcoming desktop agent harness.</em></p>\n  <hr>\n  <p>The Holo3.1 family is available in four sizes:</p>\n  <div class=\"max-w-full overflow-auto\">\n   <table>\n    <thead>\n     <tr>\n      <th>Model</th>\n      <th>Deployment Target</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Holo3.1-0.8B</td>\n      <td>Ultra-lightweight local agents</td>\n     </tr>\n     <tr>\n      <td>Holo3.1-4B</td>\n      <td>Cost-efficient deployment</td>\n     </tr>\n     <tr>\n      <td>Holo3.1-9B</td>\n      <td>Balanced performance and latency</td>\n     </tr>\n     <tr>\n      <td>Holo3.1-35B-A3B</td>\n      <td>State-of-the-art performance</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>We are also releasing optimized FP8, NVFP4, and Q4 GGUF checkpoints for local and edge deployment.</p>\n  <hr>\n  <ul>\n   <li>Technical Blog</li>\n   <li>Holo Models API</li>\n   <li>Hugging Face Collection</li>\n  </ul>\n  <p>We look forward to seeing what developers build with Holo3.1.</p>\n </body>\n</html>",
+  "aiSummary": "Holo3.1 是一系列新的计算机使用 AI 模型，提升了在网页、桌面和移动环境中的鲁棒性，引入了用于本地推理的量化检查点，并提供了多种尺寸以权衡成本与性能。",
+  "oneSentenceSummary": "Holo3.1 是一系列新的计算机使用 AI 模型，提升了在网页、桌面和移动环境中的鲁棒性，引入了用于本地推理的量化检查点，并提供了多种尺寸以权衡成本与性能。",
+  "summary": "本文宣布发布 Holo3.1 系列计算机使用智能体，该系列基于之前的 Holo3 模型构建。关键改进体现在三个方面：跨多种环境（网页、桌面和移动）的鲁棒性增强；通过原生函数调用支持，更好地与各种智能体框架集成；以及引入量化检查点（FP8、Q4 GGUF、NVFP4）以支持本地和设备端推理。该模型系列包含四种尺寸（0.8B、4B、9B 和 35B-A3B），以满足从超轻量级本地智能体到顶尖性能的不同部署需求。文章展示了在移动自动化（AndroidWorld）和跨框架性能上的显著基准测试提升，并详细介绍了量化带来的速度提升，尤其是在 NVIDIA DGX Spark 硬件上。此次发布被视为迈向通用、私密且可本地执行的计算机使用智能体的重要一步。",
+  "mainPoints": [
+    {
+      "point": "Holo3.1 提升了在网页、桌面和移动环境中的鲁棒性。",
+      "explanation": "该模型系列旨在应对生产中遇到的分布偏移，在 AndroidWorld 等移动基准测试上取得了显著提升（35B 模型从 67% 提升至 79.3%）。"
+    },
+    {
+      "point": "原生函数调用支持实现了与第三方智能体框架的无缝集成。",
+      "explanation": "除了结构化的 JSON 输出，Holo3.1 还支持函数调用协议，在各项基准测试中实现了与原生执行近乎一致的表现。"
+    },
+    {
+      "point": "量化检查点（FP8、Q4 GGUF、NVFP4）实现了快速、本地且私密的推理。",
+      "explanation": "Holo 系列首次提供量化权重。DGX Spark 上的 NVFP4 相比 BF16 实现了 1.74 倍的吞吐量提升，且性能损失极小，从而支持完全本地的智能体执行。"
+    },
+    {
+      "point": "该模型系列提供多种尺寸以权衡成本与性能。",
+      "explanation": "尺寸范围从适用于超轻量级本地智能体的 0.8B 到追求顶尖性能的 35B-A3B，使开发者能够为其部署场景选择最佳的平衡点。"
+    }
+  ],
+  "keyQuotes": [
+    "Holo3.1 是实现我们通用计算机使用智能体愿景的重要一步：这些系统能够跨环境运行，集成到任何智能体技术栈中，并在工作流所在的任何地方执行。",
+    "当团队将 Holo3 从评估推向生产时，我们反复观察到同样的挑战：在一个环境中的强劲表现并不一定能迁移到另一个环境。",
+    "智能体本身在 Windows 或 Mac 机器上本地运行，而模型可以在同一台机器上运行……也可以在同一网络中的 DGX Spark 上运行。在这两种情况下，执行过程都完全保持私密和本地化，没有任何数据离开用户的网络。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "计算机使用",
+    "LLM",
+    "模型量化",
+    "本地 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 708,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face - Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780409995000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-02 22:19:55"
+}
