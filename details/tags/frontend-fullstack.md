@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-03 08:38:58 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-03 11:05:20 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -704,9 +704,7 @@
 
 ### [从-Flutter-到后端：使用-Dart-和-Serverpod-构建生产级-REST-API](https://www.freecodecamp.org/news/how-to-build-production-grade-rest-apis-with-dart-and-serverpod/)
 
-2026-06-03 00:25:50 | 标签: 后端开发, Dart, Serverpod, REST API, 代码生成
-
-> 本文是一份面向希望使用 Serverpod 构建后端的 Flutter 和 Dart 开发者的详细教程。文章将 Serverpod 这种固执己见、由代码生成驱动的开发方式，与 Shelf 那种更手动、基于原语的方法进行了对比。指南逐步讲解了如何创建用户和资料管理 API，包括在 YAML 中定义模型、使用 Serverpod 内置的 ORM、通过 bcrypt 和 JWT 实现身份验证、保护端点、处理错误，以及部署到 Fly.io 或 Serverpod Cloud。文章强调了 Serverpod 通过代码生成和集成工具带来的生产力提升，同时也承认了其在灵活性方面的权衡。
+2026-06-03 00:25:50
 
 
 
