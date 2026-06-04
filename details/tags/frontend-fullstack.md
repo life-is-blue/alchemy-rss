@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-04 08:39:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-04 11:04:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -704,25 +704,19 @@
 
 ### [如何使用-JavaScript-构建一个基于浏览器的-PDF-整理工具](https://www.freecodecamp.org/news/how-to-build-a-browser-based-pdf-organizer-tool-using-javascript/)
 
-2026-06-04 00:23:33 | 标签: JavaScript, PDF 处理, 前端与 Web, 开发者工具, 教程
-
-> 本文提供了一个创建基于浏览器的 PDF 整理工具的分步教程。文章首先列举了常见的 PDF 管理问题，如页面顺序错乱、旋转方向错误以及需要合并多个文档等。解决方案完全使用客户端 JavaScript 实现，并借助 PDF-lib 库完成所有 PDF 操作。教程涵盖了完整的工作流程：设置项目、创建上传界面、读取 PDF 文件、预览页面、旋转单个或所有页面、通过拖拽或按钮重新排序页面、删除不需要的页面、插入空白页、合并其他 PDF 文件，最后生成并下载整理好的文档。文章强调了客户端处理在隐私和速度方面的优势，因为文件无需上传到服务器。此外，文章还包含了处理大文件、验证上传以及避免常见错误（如在确认页...
+2026-06-04 00:23:33
 
 
 
 ### [Node.js-改为每年一个主要版本，从-Node-27-开始](https://www.infoq.com/news/2026/06/nodejs-release-changes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-03 14:40:00 | 标签: Node.js, 版本管理, 开源, JavaScript, 软件工程
-
-> OpenJS 基金会宣布对 Node.js 发布计划进行根本性调整。从 2026 年 10 月的 Node.js 27 开始，该项目将改为每年发布一个主要版本，取代已沿用十年的奇数/偶数版本模型。根据新计划，每个版本都将成为 LTS，并引入为期六个月的 Alpha 频道用于早期测试。这一决定由 TSC 成员 Rafael Gonzaga 提出，主要源于维护者压力以及奇数版本采用率低。虽然这一变化简化了维护工作，但也引发了偏好长支持窗口的企业用户与频繁升级的团队之间的争论。官方指南建议库作者将 Alpha 版本集成到 CI 流水线中。2026 年 4 月发布的 Node.js 26 将是旧模型下...
+2026-06-03 14:40:00
 
 
 
 ### [单仓库下的四十模块-——-React-Monorepo-工程架构拆解](https://juejin.cn/post/7646780176223010826)
 
-2026-06-03 10:34:19 | 标签: 前端架构, Monorepo, React, 工程实践, 构建工具
-
-> 文章从一个因 `console.log` 导致线上崩溃的真实事故切入，引出对 React Monorepo 架构的深度分析。作者将 React 四十多个模块划分为四层骨架（shared/scheduler → react → 渲染器层 → 工具层），并详细解释了每层的职责与依赖铁律。重点剖析了 `shared/` 的编译时内联设计——通过 Rollup 将工具函数直接嵌入各包产物，以体积换零运行时依赖与版本自治。文章核心亮点是对 Fork 系统的深入解读，展示了如何通过 `forks.js` 实现同一个 import 路径在不同构建目标下加载不同文件，以及 `findNearestExisti...
+2026-06-03 10:34:19
 
 
 

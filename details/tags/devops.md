@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-04 08:39:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-04 11:04:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -560,9 +560,7 @@
 
 ### [导致-Spark-在-Kubernetes-上-OOM-失败的两个错误配置](https://www.infoq.com/articles/spark-oom-kubernetes-misconfigurations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-03 17:00:00 | 标签: Spark, Kubernetes, 云迁移, 性能优化, 数据工程
-
-> 本文记录了一个真实事件：一个在本地稳定运行多年的 Spark 批处理管道，在迁移到 Azure Kubernetes Service (AKS) 后，开始每天出现执行器 OOM 失败。作者详细描述了一次系统性的调查过程，排除了常见的 Spark 调优问题，如堆内存不足和数据倾斜。根本原因被追溯到迁移过程中引入的两个叠加的基础设施错误配置：设置 `spark.kubernetes.local.dirs.tmpfs=true`（将 shuffle 溢出目录挂载到节点 RAM 而非磁盘），以及一条硬性 `podAffinity` 规则（强制所有四个执行器共置于一个 64GB 的节点上）。这种组合集中...
+2026-06-03 17:00:00
 
 
 
