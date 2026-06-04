@@ -1,0 +1,51 @@
+{
+  "id": "RAW_5f5e2800",
+  "title": "Uber 限制 Claude Code 等 AI 工具使用量以控制成本",
+  "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+  "date": "2026-06-03 20:01:27",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">3rd June 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://www.bloomberg.com/news/articles/2026-06-02/uber-caps-usage-of-ai-tools-like-claude-code-to-cut-costs\">Uber Caps Usage of AI Tools Like Claude Code to Manage Costs</a></strong>. I wrote <a href=\"https://simonwillison.net/2026/May/27/product-market-fit/#the-ai-failure-stories-around-this-are-pretty-thin\">the other day</a> about Uber blowing its 2026 AI budget in four months, and how that wasn't particularly surprising given they would have set that budget in 2025, before anyone could have predicted how popular token-burning coding agents were about to become.</p>\n    <p>Natalie Lung for Bloomberg:</p>\n    <blockquote>\n     <p>The rideshare giant is limiting all employees to $1,500 in monthly token spending per AI coding tool, an Uber spokesperson said in response to a Bloomberg News inquiry. That means spending on one tool doesn’t have a bearing on the budget for another. The limits, which have been instituted in recent months, only apply to agentic coding software such as Cursor or Anthropic PBC’s Claude Code.</p>\n    </blockquote>\n    <p>A $1,500 monthly limit per tool strikes me as <em>much</em> more sensible than those <a href=\"https://en.wikipedia.org/wiki/Token_maxxing\">tokenmaxxing</a> leaderboards encouraging employees to compete for as much AI usage as possible, and as a rational policy response to over-spending.</p>\n    <p>It's also interesting in that it hints at a real dollar value for what Uber is getting out of these tools. If we assume two actively used tools per engineer that's $3,000 * 12 = $36,000 cap per engineer per year. Levels.fyi lists <a href=\"https://www.levels.fyi/companies/uber/salaries/software-engineer?country=254\">the median yearly compensation package for Uber software engineers in the USA</a> at $330,000.</p>\n    <p>That means each employee's AI spending cap is ~11% of that median compensation package.</p>\n    <p>I <a href=\"https://simonwillison.net/2026/May/27/product-market-fit/#enterprise-customers-are-now-paying-api-prices\">noted</a> that my own token usage comes to about $1,000/month against each of Anthropic and OpenAI - which currently costs me just $100 per provider thanks to their generous subsidized plans for individual subscribers - plans that are no longer available to larger companies like Uber.</p>\n    <p>That means if I were working at Uber I'd still have ~$500/month of tokens to spare for each of those tools, given my current usage patterns.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 分析了 Uber 每月每工具 1500 美元的 AI 编程使用上限，计算出这大约相当于一名工程师薪酬中位数的 11%，并与自己的使用模式进行了对比。",
+  "oneSentenceSummary": "Simon Willison 分析了 Uber 每月每工具 1500 美元的 AI 编程使用上限，计算出这大约相当于一名工程师薪酬中位数的 11%，并与自己的使用模式进行了对比。",
+  "summary": "Simon Willison 就彭博社的一篇报道发表了评论，该报道称 Uber 已将其员工在 Claude Code 和 Cursor 等 AI 编程工具上的支出上限设定为每月每工具 1500 美元，此前该公司在四个月内就花光了 2026 年的 AI 预算。他认为，这比鼓励无限使用的“token 排行榜”方法更为明智。Willison 随后计算了其经济影响：假设每位工程师使用两种工具，年度上限为 36000 美元，约占 Uber 软件工程师 33 万美元薪酬中位数的 11%。他将此与自己的使用情况进行了对比：他每月每服务商的费用约为 1000 美元，但由于享受了面向个人的补贴计划（大型企业无法享受），实际仅需支付 100 美元。他指出，即便在 Uber 的上限下，他仍有约每月 500 美元的空间。",
+  "mainPoints": [
+    {
+      "point": "Uber 每月每工具 1500 美元的上限是对 AI 成本超支的理性回应。",
+      "explanation": "在四个月内花光 2026 年 AI 预算后，Uber 实施了每工具支出上限，Willison 认为这比通过排行榜鼓励无限使用要明智得多。"
+    },
+    {
+      "point": "该上限约占工程师薪酬中位数的 11%。",
+      "explanation": "Willison 使用 Levels.fyi 的数据，将 36000 美元的年上限（两种工具）与 33 万美元的薪酬中位数进行对比，为 AI 工具的投资回报率提供了一个具体的基准。"
+    },
+    {
+      "point": "个人补贴计划相比企业定价具有显著的成本优势。",
+      "explanation": "Willison 指出，他每月 1000 美元的使用量因个人计划仅需支付 100 美元，而这种定价结构是像 Uber 这样的大公司无法获得的，这突出了一个关键的企业成本挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "每月每工具 1500 美元的上限在我看来，比那些鼓励员工尽可能多地使用 AI 的 token 排行榜要明智得多，也是对过度支出的理性政策回应。",
+    "这意味着每位员工的 AI 支出上限大约是该薪酬中位数的 11%。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "AI 智能体",
+    "开发者工具",
+    "成本管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 311,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780488087000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-03 20:01:27"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-04 06:43:23 | [返回首页](/README.md)
+**更新时间**: 2026-06-04 08:39:09 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12576)
+- [AI & 大模型](#ai-llm) (12597)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (836)
-- [DevOps](#devops) (586)
+- [前端与全栈](#frontend-fullstack) (839)
+- [DevOps](#devops) (587)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5915)
+- [其他](#other) (5918)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [⚡️萨提亚·纳德拉：Microsoft-Build-上的-No-Priors-x-Latent-Space-特别跨界对话](https://www.latent.space/p/satya-2026) - AI 精选
+- [Kimi-Work-Beta-版邀你体验：你的工作，分我一半](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488492&idx=1&sn=f7a0013c095a20f7aaeac00eacec1c16) - AI 精选
 - [打造-AI-原生工程组织-|-Claude](https://claude.com/blog/running-an-ai-native-engineering-org) - AI 精选
 - [为什么视频智能体模型是下一个前沿——Ethan-He，xAI-Grok-Imagine-负责人](https://www.latent.space/p/video-agents) - AI 精选
 - [使用-NVIDIA-Cosmos-3-开发物理-AI-推理、世界与动作模型](https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/) - AI 精选
@@ -40,10 +42,8 @@
 - [为生产级-AI-智能体构建评估框架：基于-100-多次部署的-12-项指标框架](https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/) - AI 精选
 - [一个-AI-还是不够](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488475&idx=1&sn=cf5a0fa22b0ad0a665f2cb92e7e337d0) - AI 精选
 - [生产级-RAG-中的混合搜索与重排序](https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/) - AI 精选
-- [OpenAI-推出-OpenAI-部署公司，助力企业围绕智能构建业务](https://openai.com/index/openai-launches-the-deployment-company) - AI 精选
-- [自然语言自编码器](https://www.anthropic.com/research/natural-language-autoencoders) - AI 精选
 
-- [查看全部 12576 篇...](/details/tags/ai-llm.md)
+- [查看全部 12597 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 836 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 839 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 586 篇...](/details/tags/devops.md)
+- [查看全部 587 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5915 篇...](/details/tags/other.md)
+- [查看全部 5918 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_1c5acf1d",
+  "title": "还在好奇鹅厂人 Vibe Coding 了什么东西？",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801828&idx=1&sn=8a039db77b364696448024073e7d25be",
+  "date": "2026-06-03 19:03:00",
+  "author": "腾讯技术工程",
+  "siteName": "腾讯技术工程",
+  "content": null,
+  "aiSummary": "腾讯员工第二期 Vibe Coding 项目展示，涵盖心理测试、设计工具、团建地图、提示词管理、特斯拉数据可视化、工作进展管理、智能 PDF 阅读器、AI 记账等 11 个脑洞大开的 AI 编程实践。",
+  "oneSentenceSummary": "腾讯员工第二期 Vibe Coding 项目展示，涵盖心理测试、设计工具、团建地图、提示词管理、特斯拉数据可视化、工作进展管理、智能 PDF 阅读器、AI 记账等 11 个脑洞大开的 AI 编程实践。",
+  "summary": "本文是腾讯技术工程公众号发布的第二期 Vibe Coding 项目合集，展示了 11 个由鹅厂员工利用 AI 编码助手 CodeBuddy 快速搭建的创意应用。项目覆盖多个领域：趣味心理测试小程序、ISUX 团队 AI 设计工具聚合门户、3D 地球仪团建目的地选择器、纯本地存储的提示词管理工具、特斯拉数据可视化与 OpenClaw 接入、工作进展管理工具、智能 PDF 阅读器、AI 猫猫桌面工具、文生图与视频分镜头生成工具、AI 记账与学习打卡小程序、以及 AI 驱动的代码可视化设计工具。每个项目均配有简短介绍、截图和核心功能说明，展示了 AI 编程在降低开发门槛、激发个人创意方面的实际效果。文章末尾邀请读者评论想体验的项目，并鼓励分享自己的 Vibe Coding 作品。",
+  "mainPoints": [
+    {
+      "point": "Vibe Coding 大幅降低了非专业开发者的编程门槛。",
+      "explanation": "从设计师、行政到产品经理，不同背景的员工都能借助 AI 编码助手快速搭建功能完整的应用，验证了 AI 编程的普惠性。"
+    },
+    {
+      "point": "项目覆盖趣味、效率、工具等多个实用场景。",
+      "explanation": "心理测试、团建地图、AI 记账等应用兼具趣味性与实用性，提示词管理、工作进展管理等工具则直接解决日常工作痛点。"
+    },
+    {
+      "point": "AI 编程催生了个人化、轻量级的「超级个体」工具。",
+      "explanation": "多个项目体现了「为自己或小团队打造专属工具」的趋势，如特斯拉数据看板、学习打卡小程序，展示了 AI 编程在满足个性化需求上的潜力。"
+    }
+  ],
+  "keyQuotes": [
+    "让不会写代码的设计师也能享受 AI 生产力红利；让散落的团队 AI 能力形成合力，避免重复造轮子。",
+    "用 AI 赋能设计全流程，让每个设计师都成为超级个体。"
+  ],
+  "tags": [
+    "AI 编程",
+    "Vibe Coding",
+    "AI 产品与应用",
+    "开发者工具",
+    "AI 工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 87,
+  "wordCount": 2720,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_958ae8",
+  "sourceName": "腾讯技术工程",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1780484580000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-03 19:03:00"
+}

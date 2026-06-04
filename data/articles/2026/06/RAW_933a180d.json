@@ -1,0 +1,54 @@
+{
+  "id": "RAW_933a180d",
+  "title": "谷歌全球服务集群协调 A/B 测试系统揭秘",
+  "url": "https://www.infoq.com/news/2026/06/google-fleet-ab-experimentation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-03 22:54:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": null,
+  "aiSummary": "谷歌详细介绍了其内部用于协调全集群 A/B 实验的系统，该系统通过一个集中式框架，确保其全球服务能够进行一致、可靠且安全的因果推断。",
+  "oneSentenceSummary": "谷歌详细介绍了其内部用于协调全集群 A/B 实验的系统，该系统通过一个集中式框架，确保其全球服务能够进行一致、可靠且安全的因果推断。",
+  "summary": "本文总结了谷歌一篇博客文章，描述了其内部用于大规模、全集群 A/B 实验的系统。该系统通过提供一个用于实验配置、分配逻辑和曝光日志记录的集中式框架，解决了在众多相互关联的服务中运行可信实验的挑战。关键组件包括一个用于确定性、分层流量分配的统一分配层，以及一个用于区分已分配人群与真正暴露人群的健壮曝光日志系统。该设计强调将配置传播到服务系统，以实现低延迟的本地决策，并集成了安全护栏。其目标是标准化实验原语，减少运营开销，并提高谷歌生态系统中产品决策的速度和信心。",
+  "mainPoints": [
+    {
+      "point": "谷歌使用一个集中式实验框架来协调其服务集群中的 A/B 测试。",
+      "explanation": "这个共享基础设施管理实验配置、分配逻辑和曝光日志记录，确保用户在与多个服务交互时也能获得一致的分组。"
+    },
+    {
+      "point": "一个统一的分配层提供了确定性和分层的流量分配。",
+      "explanation": "这减少了重叠测试之间的冲突，并确保给定用户或会话的实验暴露是稳定的，这对于避免不同变体之间的污染至关重要。"
+    },
+    {
+      "point": "该系统强调曝光日志记录，以区分已分配人群与真正暴露人群。",
+      "explanation": "这使得下游分析能够考虑那些被分配到一个变体但实际上从未体验过该处理的用户，从而提高了指标的可靠性。"
+    },
+    {
+      "point": "实验定义被传播到服务系统，用于本地、低延迟的决策。",
+      "explanation": "这种设计通过减少运行时对集中式调用的依赖，支持高吞吐量环境，允许服务在本地评估实验状态。"
+    }
+  ],
+  "keyQuotes": [
+    "关键在于，基础设施实验不仅仅涉及代码调整；它需要一个健壮、统计严谨且安全的框架，将数据中心视为一个实验室。"
+  ],
+  "tags": [
+    "A/B 测试",
+    "实验",
+    "系统设计",
+    "基础设施",
+    "Google"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 487,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780498440000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-03 22:54:00"
+}

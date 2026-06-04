@@ -1,0 +1,50 @@
+{
+  "id": "RAW_944aa8d3",
+  "title": "前沿 AI 民主治理蓝图",
+  "url": "https://openai.com/index/frontier-safety-blueprint",
+  "date": "2026-06-03 18:00:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"w-full\">\n   <div class=\"relative w-full\" style=\"--hero-aspect-ratio:16/9;--hero-aspect-ratio-mobile:3/4\">\n    <div class=\"w-full gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px]\">\n     <div>\n      <div class=\"relative flex flex-col items-center text-center\">\n       <div class=\"mb-md gap-2xs flex flex-wrap justify-center\">\n        <p class=\"text-meta text-primary-100\">\n         <br>\n        </p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>We’re releasing a blueprint outlining how the U.S. can build a durable federal framework for governing increasingly capable AI systems. The blueprint outlines a three-part strategy: building a national framework that leverages the emerging consensus reflected in state frontier safety laws; strengthening CAISI as the U.S. federal government’s primary institution for frontier AI safety; and mobilizing a broader resilience plan across government to address the national security and public safety challenges posed by frontier AI.</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>This is an important moment to seize. States have started developing harmonized approaches to frontier AI governance, including California’s SB 53, New York’s RAISE Act, and Illinois’s SB 315, and the White House’s new executive order on </span><a href=\"https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\" rel=\"noreferrer\"><u class=\"decoration-1 underline-offset-4\"><span>Promoting Advanced Artificial Intelligence Innovation and Security</span></u>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span> is another important step forward. The federal government must now build on that foundation and create a durable federal framework capable of evolving alongside the technology itself.</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Read the full blueprint </span><a href=\"https://cdn.openai.com/pdf/25752ecb-0e5c-47f9-b9e4-c0f4d76f8d3d/a-blueprint-for-a-federal-framework.pdf\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\"><span>here</span>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span>.</span></p>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"flex w-auto\">\n    <div class=\"w-full no-scrollbar overflow-x-auto overflow-y-hidden\">\n     <div class=\"px-sm pe-sm flex min-w-224 flex-none\">\n      <div class=\"mb-md relative ps-sm min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布了一份蓝图，提议为美国前沿 AI 建立由三部分组成的联邦治理框架，利用州法律、加强 CAISI 并动员更广泛的韧性计划。",
+  "oneSentenceSummary": "OpenAI 发布了一份蓝图，提议为美国前沿 AI 建立由三部分组成的联邦治理框架，利用州法律、加强 CAISI 并动员更广泛的韧性计划。",
+  "summary": "OpenAI 发布了一份政策蓝图，概述了美国联邦政府如何为日益强大的 AI 系统构建一个持久的治理框架。该提案围绕三大支柱构建：首先，创建一个国家框架，该框架建立在州级前沿安全法律（如加利福尼亚州的 SB 53、纽约州的 RAISE 法案和伊利诺伊州的 SB 315）所反映的初步共识之上；其次，加强 CAISI（美国联邦政府负责前沿 AI 安全的主要机构）的作用；第三，动员政府各部门制定更广泛的韧性计划，以应对国家安全和公共安全挑战。该蓝图是在白宫发布关于促进先进 AI 创新与安全的新行政令的背景下发布的，代表了 OpenAI 对当前 AI 治理政策辩论的贡献。",
+  "mainPoints": [
+    {
+      "point": "该蓝图提出了一个由三部分组成的联邦前沿 AI 治理框架。",
+      "explanation": "它呼吁建立一个利用州法律的国家框架，加强作为主要联邦机构的 CAISI，并制定更广泛的政府韧性计划。"
+    },
+    {
+      "point": "加利福尼亚州的 SB 53 和纽约州的 RAISE 法案等州级法律提供了基础。",
+      "explanation": "该蓝图将这些州的努力视为反映了联邦政府应在此基础上发展的初步共识。"
+    },
+    {
+      "point": "该提案与白宫关于 AI 的新行政令同步发布。",
+      "explanation": "OpenAI 将其蓝图定位为对当前政策进程的贡献，旨在创建一个能够随技术发展而演进的框架。"
+    }
+  ],
+  "keyQuotes": [
+    "该蓝图概述了一个三部分战略：建立一个利用州前沿安全法律所反映的初步共识的国家框架；加强 CAISI 作为美国联邦政府负责前沿 AI 安全的主要机构；并动员政府各部门制定更广泛的韧性计划。"
+  ],
+  "tags": [
+    "AI 安全",
+    "AI 监管",
+    "科技政策",
+    "前沿 AI",
+    "治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 159,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "News_Media",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780480800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-03 18:00:00"
+}
