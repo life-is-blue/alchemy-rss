@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-05 06:30:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-05 08:32:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -702,6 +702,22 @@
 
 
 
+### [请求的路径：现代-Web-架构漫游](https://blog.bytebytego.com/p/the-path-of-a-request-a-tour-of-modern)
+
+2026-06-04 23:31:29 | 标签: 系统设计, Web 架构, 后端开发, 性能优化, 基础设施
+
+> 本文通过单个 Web 请求的旅程，解释了现代 Web 系统的分层架构。文章从一个前提开始：一次不到一秒的页面加载，涉及大约十个不同的系统，它们像漏斗一样排列，每一层在将剩余流量传递下去之前先吸收一部分。接着，作者逐一讲解每一跳——DNS、CDN、负载均衡器、Web 服务器、应用服务器、缓存、数据库等——在每个节点询问该层的作用以及它所做的权衡。整篇文章以导览的形式展开，强调延迟消耗在每一跳中，理解每一层的功能和取舍是掌握整个技术栈的关键。
+
+
+
+### [VoidZero-加入-Cloudflare](https://blog.cloudflare.com/voidzero-joins-cloudflare/)
+
+2026-06-04 21:59:01 | 标签: Vite, JavaScript, 开源, Cloudflare, 开发者工具
+
+> 本文宣布，打造 Vite、Vitest、Rolldown 和 Oxc 等基础 JavaScript 工具链的团队 VoidZero 将加入 Cloudflare。核心信息是：所有项目将继续采用 MIT 许可、保持开源、供应商无关且由社区驱动。Cloudflare 承诺投入工程资源并设立 100 万美元的 Vite 生态系统基金。文章详细介绍了双方在 Vite Environment API 和 Cloudflare Vite 插件上的现有合作，并展望了 Vite 成为现代应用（包括 AI 智能体编写的应用）全栈基础的未来。Cloudflare 计划在 Vite 之上构建自己的开发者工具（如新的...
+
+
+
 ### [如何使用-JavaScript-构建一个基于浏览器的-PDF-整理工具](https://www.freecodecamp.org/news/how-to-build-a-browser-based-pdf-organizer-tool-using-javascript/)
 
 2026-06-04 00:23:33
@@ -1278,13 +1294,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1434,13 +1450,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2934,13 +2950,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4644,13 +4660,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

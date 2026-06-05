@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-05 06:30:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-05 08:32:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -27,6 +27,14 @@
 ### [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-08 00:00:00
+
+
+
+### [Netflix-构建集中式数据删除平台的架构实践](https://www.infoq.com/presentations/architecting-deletion-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-06-04 18:26:00 | 标签: System Design, Data Engineering, Backend Development, Netflix Tech, Distributed Systems
+
+> 这份来自 Netflix 工程师 Vidhya Arvind 和 Shawn Liu 的演讲实录，详细阐述了集中式数据删除平台的设计与实现。演讲首先指出了意外数据丢失与未能删除数据的高昂代价，并确立了三大核心支柱：持久性（确保数据在 Cassandra、DynamoDB 和 Elasticsearch 等不同存储系统中被彻底删除）、可用性（管理批量删除的操作风险，如墓碑记录堆积和压缩风暴）以及正确性（使用幂等令牌和比较并设置等技术处理并发写入和竞态条件）。随后，作者介绍了他们的删除生命周期：识别（通过自助机制和模式注册表）、审计与验证（使用针对 S3 备份的离线工作流）、执行（通过具有速率限制...
 
 
 

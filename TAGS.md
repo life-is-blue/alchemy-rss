@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-05 06:30:40 | [返回首页](/README.md)
+**更新时间**: 2026-06-05 08:32:23 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12597)
-- [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (839)
-- [DevOps](#devops) (587)
+- [AI & 大模型](#ai-llm) (12639)
+- [软件架构](#architecture) (21)
+- [前端与全栈](#frontend-fullstack) (841)
+- [DevOps](#devops) (590)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5918)
+- [其他](#other) (5926)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [梦境：更强大的记忆，让-ChatGPT-更贴心](https://openai.com/index/chatgpt-memory-dreaming) - AI 精选
 - [⚡️萨提亚·纳德拉：Microsoft-Build-上的-No-Priors-x-Latent-Space-特别跨界对话](https://www.latent.space/p/satya-2026) - AI 精选
 - [Kimi-Work-Beta-版邀你体验：你的工作，分我一半](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488492&idx=1&sn=f7a0013c095a20f7aaeac00eacec1c16) - AI 精选
 - [打造-AI-原生工程组织-|-Claude](https://claude.com/blog/running-an-ai-native-engineering-org) - AI 精选
@@ -41,9 +42,8 @@
 - [从-8B-到前沿：系统提示如何控制-AI-智能体是否会勒索、泄露和杀戮-—-LessWrong](https://www.lesswrong.com/posts/GviHfFBB9tsefmDkG/from-8b-to-frontier-how-system-prompts-control-whether-ai) - AI 精选
 - [为生产级-AI-智能体构建评估框架：基于-100-多次部署的-12-项指标框架](https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/) - AI 精选
 - [一个-AI-还是不够](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488475&idx=1&sn=cf5a0fa22b0ad0a665f2cb92e7e337d0) - AI 精选
-- [生产级-RAG-中的混合搜索与重排序](https://towardsdatascience.com/hybrid-search-and-re-ranking-in-production-rag/) - AI 精选
 
-- [查看全部 12597 篇...](/details/tags/ai-llm.md)
+- [查看全部 12639 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -55,6 +55,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [Netflix-构建集中式数据删除平台的架构实践](https://www.infoq.com/presentations/architecting-deletion-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [QCon-London-2026：引入-Tansu.io-—-重新思考-Kafka-的精简运营](https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [LinkedIn-如何为数千个服务构建下一代服务发现系统](https://blog.bytebytego.com/p/how-linkedin-built-a-next-gen-service) - 编程 更多
 - [初创公司软件架构——你永远无法真正推倒重来：对话-David-Gudeman](https://www.infoq.com/podcasts/startup-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
@@ -70,8 +71,8 @@
 - [想给面试官吹-DDD-吗？项目像搭积木一样运行：领域驱动设计（DDD）让复杂业务变简单](https://juejin.cn/post/7519812174899478582) - 编程 更多
 - [浅谈团队代码风格/结构一致性](http://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650539951&idx=1&sn=6aac8c34c6d1d680caf981ea285c6d79) - 编程 更多
 - [QCon-London-2025：领域驱动设计的大规模实践](https://www.infoq.com/news/2025/04/ddd-scale-healthcare-qcon/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
-- [分布式多模式数据库-Aerospike-8-引入-ACID-实时事务支持](https://www.infoq.com/news/2025/02/aerospike-database-8-acid/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 
+- [查看全部 21 篇...](/details/tags/architecture.md)
 
 
 ## <a id="frontend-fullstack"></a>前端与全栈
@@ -100,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 839 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 841 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +130,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 587 篇...](/details/tags/devops.md)
+- [查看全部 590 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5918 篇...](/details/tags/other.md)
+- [查看全部 5926 篇...](/details/tags/other.md)
 
 

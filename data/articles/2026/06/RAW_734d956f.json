@@ -1,0 +1,42 @@
+{
+  "id": "RAW_734d956f",
+  "title": "来自 404 Media 的 Emanuel Maiberg 的一段引述",
+  "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+  "date": "2026-06-05 00:38:29",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">4th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/\">\n     <p>After this story was published Google's spokesperson reached out and asked us to publish a slightly different version of that statement. The new statement no longer stated that \"it's critical that we maintain humans in the loop.\"</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/\">Emanuel Maiberg, 404 Media</a>, <span class=\"context\">Google Employees Internally Share Memes About How Its AI Sucks</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2209/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "谷歌要求 404 Media 从已发表的文章中删除关于“保持人类参与”的表述。",
+  "oneSentenceSummary": "谷歌要求 404 Media 从已发表的文章中删除关于“保持人类参与”的表述。",
+  "summary": "这是 Simon Willison 分享的一段来自 404 Media 的 Emanuel Maiberg 的简短引述。该引述指出，在一篇文章发表后，谷歌的发言人要求发布一个修订版本，具体是删除了“保持人类参与至关重要”这句话。这段引述凸显了谷歌在 AI 人类监督方面的公开表态发生了转变。",
+  "mainPoints": [
+    {
+      "point": "谷歌要求修改已发表的关于 AI 监督的声明。",
+      "explanation": "在一篇文章发表后，谷歌的发言人联系了 404 Media，要求其发布一个修订版本，该版本不再提及保持人类参与的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "在这篇文章发表后，谷歌的发言人联系了我们，要求我们发布该声明的另一个版本。新版本不再提及“保持人类参与至关重要”。"
+  ],
+  "tags": [
+    "科技新闻",
+    "AI",
+    "谷歌",
+    "AI 安全",
+    "媒体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 55,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "News_Media",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780591109000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-05 00:38:29"
+}
