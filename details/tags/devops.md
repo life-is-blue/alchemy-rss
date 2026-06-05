@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-05 08:32:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-05 11:04:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -560,25 +560,19 @@
 
 ### [Sitar-agent：构建大规模可靠的动态配置边车](https://medium.com/airbnb-engineering/sitar-agent-building-a-reliable-dynamic-configuration-sidecar-at-scale-b7e00c152068?source=rss----53c7c27702d5---4)
 
-2026-06-05 01:29:46 | 标签: 系统设计, Kubernetes, 后端开发, 边车模式, 配置管理
-
-> 这篇来自 Airbnb 技术博客的文章描述了 sitar-agent 的架构和关键设计决策。sitar-agent 是一个 Kubernetes 边车，负责向数千个服务 Pod 分发动态配置变更。文章概述了从开发者提交到文件系统读取的端到端配置分发生命周期。核心内容涵盖了从 Ruby 重写为 Java 过程中评估的各种权衡，包括：为了隔离性和多语言支持，保留边车模式而非库方案；为了简化，选择基于拉取的轮询模型配合服务端缓存，而非基于推送的架构；以及选择 SQLite 而非 RocksDB 和 Sparkey 作为本地数据存储，因为 SQLite 具有更优的多语言支持、更简单的运维模型以及足够的...
+2026-06-05 01:29:46
 
 
 
 ### [Docker-完整课程](https://www.freecodecamp.org/news/docker-full-course/)
 
-2026-06-04 21:15:42 | 标签: Docker, DevOps, 容器化, 云原生 / DevOps, 开发者工具
-
-> 本文宣布在 freeCodeCamp.org 的 YouTube 频道上发布一套全新的、全面的 Docker 课程。该课程旨在帮助学习者从零基础达到就业水平，涵盖从物理服务器到容器的转变等基础概念、Dockerfile 和镜像管理等核心技能、网络和存储、使用 Docker Compose 和 Swarm 进行编排，以及实际项目。课程由一位拥有超过 25 年行业经验的资深讲师授课，并配有测验和作业。
+2026-06-04 21:15:42
 
 
 
 ### [数据驱动对话文化如何支撑平台工程](https://www.infoq.com/news/2026/06/data-driven-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-04 19:54:00 | 标签: 平台工程, SRE, DevOps, 工程文化, 云原生
-
-> 本文总结了 Sergiu Petean 在慕尼黑 Dev Summit 上的演讲，描述了他的团队在平台工程实践中演变为提供 SRE 即服务的历程。关键策略包括建立卓越中心、引入联邦 SRE、生产经理和技术部落负责人等新角色，以及将 SLO 和 SLA 民主化，以创建数据驱动的对话文化。该团队通过持续简化和重构架构来管理日益增长的认知负荷，并将主权和韧性嵌入每一个设计决策中。文章还包含一段采访，Petean 在其中讨论了降低每次变更成本的因素以及实现数字主权所需的行动。
+2026-06-04 19:54:00
 
 
 
