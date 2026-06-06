@@ -1,0 +1,55 @@
+{
+  "id": "RAW_200b01f2",
+  "title": "Netflix 如何实时映射数千个微服务",
+  "url": "https://www.infoq.com/news/2026/06/netflix-microservices-realtime/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-05 20:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix has <a href=\"https://netflixtechblog.com/from-silos-to-service-topology-why-netflix-built-a-real-time-service-map-0165ba13a7bc\">shared</a> details about Service Topology. This internal system creates and updates a live dependency graph for thousands of microservices. It helps engineers see how services connect and resolve issues more quickly. The system merges three separate data sources into a single, queryable graph. It updates almost in real-time as traffic patterns shift.</p>\n   <p>The motivation came from a consistent pattern in engineering support requests over four years. Engineers fixing distributed systems often face the same questions. They need to know which services depend on each other. They also ask about the blast radius of a change or failure. Finally, they want to determine if a problem starts locally or comes from an upstream dependency. Existing observability tools, metrics, logs, and traces each captured part of the picture but provided no unified view of how services connected at runtime.</p>\n   <p>The system ingests data from three sources, each stored in a separate graph partition. eBPF network flow logs capture data at the kernel level. This gives a complete view, even if services aren’t instrumented. However, they lack application-level context, like which API endpoints are called. IPC metrics emitted by instrumented services provide that endpoint and protocol detail, but only for services that actively emit them. Aggregated distributed traces reveal real request paths, including conditional branches. This is subject to sampling limitations. Each layer compensates for the gaps in the others, and queries can target a single layer or merge all three in parallel.</p>\n   <p>A three-stage aggregation pipeline solves a key problem with raw network flows. Logs track individual hops through intermediaries like load balancers and NAT gateways. However, they don’t show the direct application-to-application connection that engineers need to understand. The second stage performs intermediary resolution, collapsing multi-hop paths into direct edges. This graduated method spreads the load. It helps prevent hot spots when some intermediaries handle too much traffic.</p>\n   <p>&nbsp;</p>\n   <center>\n    <img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/netflix-microservices-realtime/en/resources/1SCR-20260605-keio-1780650804183.jpg\" rel=\"share\">\n   </center>\n   <center>\n    <small>Netflix&nbsp;Approach: Three Sources of Truth</small>\n   </center>\n   <p>The processing pipeline runs on <a href=\"https://pekko.apache.org\">Apache Pekko</a> Streams across multi-region <a href=\"https://kafka.apache.org\">Kafka</a> consumers. Graph storage is built on Netflix's internal distributed key-value system. It uses a graph database layer designed for fast traversal. A gRPC API exposes the topology with support for multi-hop queries, filtering by availability tier and business domain, and sub-second response times as a hard requirement.</p>\n   <p>Historical queries use time-window aggregation instead of keeping separate snapshots. This lets engineers see the topology at a certain time in the past without high storage costs. The team describes this as useful for correlating dependency changes with the onset of an incident.</p>\n   <p>The team notes that several design decisions emerged from earlier failed attempts. Static or delayed dependency maps proved useless in environments where services deploy multiple times per day. Solutions that worked at a smaller scale hit walls at Netflix's service count and traffic volume. And incomplete or incorrect dependency data, they found, was worse than no data at all because it led engineers to wrong conclusions during incidents.</p>\n   <p>Future work will include adding deployment and configuration change events to the topology graph. In the long term, the team aims to use this graph as a basis for automated root cause analysis.</p>\n   <p>The Netflix post lands in a space where public engineering writing is notably thin. Most recent work on service dependency mapping either stops at what <a href=\"https://oneuptime.com/blog/post/2026-02-06-otel-service-dependency-graphs-traces/view\">OpenTelemetry's Service Graph Connector </a>can derive from traces alone or treats the dependency graph as supporting infrastructure for something else, <a href=\"https://blog.cloudflare.com/internal-ai-engineering-stack/\">Cloudflare's AI agent context</a> or <a href=\"https://www.infoq.com/news/2024/11/stripe-observability-aws-managed\">Stripe's metrics migration</a>.</p>\n   <p>Nobody is publishing at the same level of detail about building a multi-source, graph-stored, real-time topology system at this scale. That's either because the problem is genuinely rare at Netflix's service count or because the teams that have solved it consider the solution a competitive asset worth keeping internal.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Netflix Maps Thousands of Microservices in Real-Time\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/netflix-microservices-realtime/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780660800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 构建了一个实时服务拓扑系统，将 eBPF 流日志、IPC 指标和分布式追踪合并为一张实时依赖关系图，帮助工程师理解微服务连接并更快地解决事件。",
+  "oneSentenceSummary": "Netflix 构建了一个实时服务拓扑系统，将 eBPF 流日志、IPC 指标和分布式追踪合并为一张实时依赖关系图，帮助工程师理解微服务连接并更快地解决事件。",
+  "summary": "本文详细介绍了 Netflix 内部的 Service Topology 系统，该系统为数千个微服务创建并更新实时依赖关系图。其动机源于四年间反复出现的工程支持请求，工程师需要在事件期间理解服务依赖、爆炸半径和根本原因。现有的可观测性工具提供的视图是碎片化的。该系统整合了三个数据源：eBPF 网络流日志（内核级别，完整但缺乏应用上下文）、IPC 指标（端点和协议细节，但仅适用于已检测的服务）以及聚合的分布式追踪（真实请求路径，受采样影响）。一个三阶段聚合管道将经过中间件的多跳路径解析为直接边。处理管道运行在 Apache Pekko Streams 上，并配有多区域 Kafka 消费者，图存储则使用基于 Netflix 内部分布式键值系统的快速遍历图数据库层。gRPC API 支持多跳查询、过滤和亚秒级响应时间。历史查询使用时间窗口聚合来避免高存储成本。团队指出，在 Netflix 的部署频率下，静态或延迟的映射图被证明是无用的，而不完整的数据比没有数据更糟糕。未来的工作包括添加部署事件和启用自动根因分析。",
+  "mainPoints": [
+    {
+      "point": "Netflix 合并了三个数据源，以构建一个完整的、实时的服务依赖关系图。",
+      "explanation": "eBPF 流日志提供完整覆盖但缺乏上下文；IPC 指标补充了端点细节；分布式追踪揭示了真实请求路径。每个数据源都弥补了其他数据源的不足。"
+    },
+    {
+      "point": "一个三阶段聚合管道解决了中间件解析问题。",
+      "explanation": "原始网络流显示了经过负载均衡器和 NAT 网关的多跳路径。该管道将这些路径折叠为直接的应用到应用边，并分散负载以防止热点。"
+    },
+    {
+      "point": "在事件期间，不完整或不正确的依赖数据比没有数据更糟糕。",
+      "explanation": "团队发现，不准确的映射图会导致工程师得出错误结论，使系统适得其反。这推动了对高准确性和实时更新的需求。"
+    },
+    {
+      "point": "在 Netflix 的部署频率下，静态或延迟的依赖关系图是无用的。",
+      "explanation": "由于服务每天部署多次，依赖关系图的任何延迟都会使其在事件响应中失去价值。"
+    }
+  ],
+  "keyQuotes": [
+    "他们发现，不完整或不正确的依赖数据比没有数据更糟糕，因为它会在事件期间引导工程师得出错误结论。",
+    "在服务每天部署多次的环境中，静态或延迟的依赖关系图被证明是无用的。"
+  ],
+  "tags": [
+    "微服务",
+    "可观测性",
+    "系统设计",
+    "分布式系统",
+    "Netflix 技术博客"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 619,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780660800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-05 20:00:00"
+}

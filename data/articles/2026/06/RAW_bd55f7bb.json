@@ -1,0 +1,56 @@
+{
+  "id": "RAW_bd55f7bb",
+  "title": "OpenAI 如何为 Codex 智能体构建安全的 Windows 沙箱",
+  "url": "https://www.infoq.com/news/2026/06/codex-windows-sandbox-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-05 22:37:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>OpenAI has published details of the <a href=\"https://openai.com/index/building-codex-windows-sandbox/\">Windows sandbox architecture that powers its Codex coding agent</a>, highlighting the engineering tradeoffs required to balance security, usability, and developer productivity on Microsoft’s operating system. . The company explained that it built a custom sandboxing approach after finding that existing Windows isolation mechanisms did not fully satisfy the requirements of autonomous coding agents. As OpenAI noted, Windows does not provide a single primitive that cleanly maps to a safe execution environment for agentic workloads.</p>\n   <p>Codex, OpenAI’s coding agent, runs locally on developer machines through command line interfaces, IDE extensions, and desktop applications. Because the agent can execute commands, read files, modify source code, and perform development tasks, OpenAI needed a mechanism to restrict its access while minimizing interruptions to developer workflows. According to David Wiesen, a member of OpenAI’s technical staff, users previously faced a tradeoff between approving nearly every agent action or granting unrestricted system access through a full-access mode.</p>\n   <p>OpenAI said in a LinkedIn <a href=\"https://www.linkedin.com/posts/building-a-safe-effective-sandbox-to-enable-share-7460822566228897792-CJt3/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a> announcing the release:</p>\n   <blockquote>\n    <p>This work helps make Codex on Windows both powerful and secure, enabling developers to use coding agents in real-world environments with greater confidence.</p>\n   </blockquote>\n   <p>The company evaluated several existing Windows security technologies, including Windows Sandbox and <a href=\"https://en.wikipedia.org/wiki/Mandatory_Integrity_Control\">Mandatory Integrity Control (MIC)</a>. While Windows Sandbox provides strong isolation through a disposable virtual machine, OpenAI concluded it was not suitable because Codex requires direct access to a developer’s working environment, tools, and repositories. Additionally, Windows Sandbox is not available across all Windows editions, limiting its applicability.</p>\n   <p>The first implementation, referred to internally as the unelevated sandbox, combined Windows <a href=\"https://en.wikipedia.org/wiki/Security_Identifier\">security identifiers</a> (SIDs), <a href=\"https://en.wikipedia.org/wiki/Access-control_list\">access control lists</a> (ACLs), and write-restricted tokens. OpenAI introduced a synthetic security identifier, sandbox-write, granting write access only to designated directories such as the current workspace and explicitly configured writable locations. Sensitive paths, including Git metadata directories, remained protected through ACL enforcement.</p>\n   <p>OpenAI later redesigned the system into what it calls the elevated sandbox. During setup, the sandbox creates dedicated local Windows accounts, including CodexSandboxOffline and CodexSandboxOnline. Commands are executed under these isolated accounts using restricted tokens. Network access can be controlled through firewall rules, allowing enforcement of both filesystem and networking boundaries while preserving compatibility with common developer workflows.</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/codex-windows-sandbox-design/en/resources/1Screenshot 2026-05-30 at 4.33.32 PM-1780184795983.png\" rel=\"share\"></p>\n   <p>Complete sandbox architecture (Source: <a href=\"https://openai.com/index/building-codex-windows-sandbox/\">OpenAI Blog Post</a>)</p>\n   <p>The announcement also sparked discussion among developers evaluating the security implications of coding agents. Responding on X, Marcus <a href=\"https://x.com/MarcusSpillane/status/2055150311904338315\">commented</a>:</p>\n   <blockquote>\n    <p>The sandbox architecture is the unsung hero. Every other coding agent treats your filesystem like a playground. The fact that Codex on Windows actually isolates the environment means you can let it run without hovering over it like a nervous parent.</p>\n   </blockquote>\n   <p>As coding agents become increasingly capable of executing actions on behalf of users, vendors must balance strict security constraints against expectations for seamless automation. Unlike traditional applications, autonomous coding agents require access to source code, development tools, and operating system resources while still maintaining meaningful isolation boundaries. OpenAI’s approach illustrates how existing operating system primitives may need to be combined and adapted to support this emerging class of workloads, where usability, compatibility, and enforcement must be balanced simultaneously.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How OpenAI Built a Secure Windows Sandbox for Codex Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/codex-windows-sandbox-design/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780670220000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 详细介绍了其 Codex 编程智能体的定制 Windows 沙箱架构，通过结合受限令牌、ACL 和专用本地账户，在安全性、易用性和开发者生产力之间取得平衡。",
+  "oneSentenceSummary": "OpenAI 详细介绍了其 Codex 编程智能体的定制 Windows 沙箱架构，通过结合受限令牌、ACL 和专用本地账户，在安全性、易用性和开发者生产力之间取得平衡。",
+  "summary": "OpenAI 发布了一篇详细文章，介绍了为其 Codex 编程智能体提供支持的 Windows 沙箱架构，解释了在安全性、易用性和开发者生产力之间取得平衡所需做出的工程权衡。该公司发现，现有的 Windows 隔离机制（如 Windows Sandbox 和强制完整性控制）无法完全满足一个需要直接访问开发者工作环境、工具和代码仓库的自主编程智能体的需求。最初的“非提权沙箱”结合了安全标识符、访问控制列表和写入受限令牌，仅允许对指定目录进行写入操作。后来，该方案被重新设计为“提权沙箱”，它创建专用的本地 Windows 账户，并使用受限令牌来执行命令，通过网络防火墙规则控制网络访问。这篇文章突显了在新兴的自主编程智能体类别中，供应商在严格的安全约束与无缝自动化的期望之间取得平衡所面临的更广泛挑战。",
+  "mainPoints": [
+    {
+      "point": "现有的 Windows 隔离机制无法满足 Codex 的需求。",
+      "explanation": "Windows Sandbox 提供了强大的隔离性，但会阻止访问开发者的工作环境，而 MIC 和其他原语无法清晰地映射到适用于智能体工作负载的安全执行环境。"
+    },
+    {
+      "point": "最初的“非提权沙箱”使用了自定义的合成 SID 和 ACL 来限制写入访问。",
+      "explanation": "引入了一个名为“sandbox-write”的合成安全标识符，仅允许对指定目录（如当前工作空间）进行写入操作，同时保护敏感路径（如 Git 元数据）。"
+    },
+    {
+      "point": "重新设计的“提权沙箱”使用了专用的本地 Windows 账户和受限令牌。",
+      "explanation": "命令在隔离账户（CodexSandboxOffline/Online）下使用受限令牌执行，并通过防火墙规则控制网络访问，从而保持与常见开发者工作流程的兼容性。"
+    },
+    {
+      "point": "该架构揭示了自主编程智能体面临的更广泛挑战。",
+      "explanation": "供应商必须在严格的安全约束与无缝自动化的期望之间取得平衡，这需要将现有的操作系统原语进行组合和调整，以适应这种新兴的工作负载。"
+    }
+  ],
+  "keyQuotes": [
+    "Windows 并没有提供一个能够清晰映射到智能体工作负载安全执行环境的单一原语。",
+    "沙箱架构是默默无闻的英雄。其他每一个编程智能体都把你的文件系统当作游乐场。",
+    "这项工作有助于使 Windows 上的 Codex 既强大又安全，让开发者能够在真实环境中更自信地使用编程智能体。"
+  ],
+  "tags": [
+    "AI Agent",
+    "AI 编程",
+    "安全",
+    "Windows 沙箱",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 508,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780670220000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-05 22:37:00"
+}

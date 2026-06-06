@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d0450927",
+  "title": "Dropbox 推出 Nova，一个用于大规模运行 AI 编程智能体的内部平台",
+  "url": "https://www.infoq.com/news/2026/06/dropbox-nova-ai-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-05 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.dropbox.com/home\">Dropbox</a> has <a href=\"https://dropbox.tech/machine-learning/introducing-nova-our-internal-platform-for-coding-agents\">unveiled Nova</a>, an internal platform designed to orchestrate and operationalize AI coding agents across the company's engineering workflows. Rather than treating AI assistants as standalone coding tools, Nova provides a centralized execution layer that allows agents to operate within Dropbox's monorepo, CI systems, observability tooling, and infrastructure workflows, enabling AI systems to participate in everything from flaky test remediation to dependency migrations and production incident investigation.</p>\n   <p dir=\"ltr\">According to Dropbox, the platform was created in response to a growing mismatch between the capabilities of off-the-shelf coding agents and the realities of enterprise-scale software engineering. While many AI coding tools excel at generating code snippets locally, Dropbox engineers needed systems that could operate safely inside a highly customized environment built around <a href=\"https://bazel.build/\">Bazel,</a> <a href=\"https://monorepo.tools/\">monorepo</a> validation pipelines, and internal operational tooling. Nova addresses this by running coding agents inside isolated cloud-based sessions connected directly to Dropbox's engineering infrastructure, where proposed changes can be validated against real builds, tests, and operational systems before being accepted.</p>\n   <p dir=\"ltr\">Dropbox describes Nova not as a single AI assistant, but as a reusable platform for AI-assisted workflows. Each Nova session operates within an isolated environment tied to a specific repository commit and can execute validation commands, iterate on failures, and automatically continue refining solutions if tests or builds fail. This creates what Dropbox calls a \"propose, validate, iterate\" workflow designed to keep agents grounded in the same deterministic systems engineers already rely on.</p>\n   <p dir=\"ltr\">The platform supports both interactive developer sessions and asynchronous operational workflows. Engineers can launch sessions through a web interface, CLI, or APIs, while internal services can invoke agents programmatically as part of larger automation pipelines. Dropbox says this shared execution model allows the company to experiment with AI-assisted engineering workflows without having to build bespoke infrastructure for every use case.</p>\n   <p dir=\"ltr\">While code generation remains a core capability, Dropbox emphasized that many of Nova's most successful deployments involve operational and maintenance tasks rather than feature development. One prominent example is Deflaker, an internal workflow built on Nova that automatically investigates and repairs flaky tests. The system analyzes passing and failing test logs, proposes candidate fixes through Nova, validates changes through repeated CI runs, and retries the process iteratively until a stable fix is identified or retry limits are reached.</p>\n   <p dir=\"ltr\">Nova is also being used for large-scale migrations and dependency upgrades, including framework conversions and automated remediation of breakages introduced by dependency updates. Dropbox says earlier migration tooling lacked interactivity and left teams struggling to recover from failed automation attempts. By consolidating these workflows into Nova, engineers can now launch large batches of AI-assisted migrations while maintaining human review, shared guardrails, and reusable operational tooling.</p>\n   <p dir=\"ltr\">A major design goal for Nova was ensuring that AI agents operate within Dropbox's existing engineering ecosystem rather than creating parallel workflows. The platform integrates with observability systems, internal plugins, Slack discussions, and MCP-based tooling to provide agents with contextual awareness beyond source code alone. Dropbox also intentionally separated code publication from agent execution, keeping branching and merge operations deterministic and externally controlled to reduce operational complexity and maintain clear auditability.</p>\n   <p dir=\"ltr\">The company says one of its biggest lessons was that the surrounding platform infrastructure matters as much as the underlying language models themselves. Validation loops, isolated execution environments, contextual knowledge sources, hermetic testing, and deterministic workflows all proved critical to making AI-assisted engineering trustworthy at scale.</p>\n   <p dir=\"ltr\">Dropbox's Nova platform reflects a broader industry trend toward building internal \"agent platforms\" rather than relying solely on standalone AI coding assistants. Companies across the software industry are increasingly experimenting with AI systems that can autonomously investigate failures, remediate infrastructure issues, review code, and execute operational tasks. Platforms such as <a href=\"https://github.com/\">GitHub</a>, <a href=\"https://www.anthropic.com/\">Anthropic</a>, and <a href=\"https://openai.com/\">OpenAI </a>have all expanded tooling around coding agents, workflow orchestration, and MCP integrations as organizations attempt to operationalize AI inside production engineering environments.</p>\n   <p dir=\"ltr\">At the same time, research and industry experience increasingly suggest that model quality alone is insufficient for enterprise AI adoption. A recent <a href=\"https://arxiv.org/abs/2604.09805\">academic study</a> on internal coding agents found that workflow integration, safety guardrails, deterministic tooling, and human oversight often have a greater impact on reliability and trust than prompt engineering itself. Dropbox's Nova architecture strongly reflects this philosophy, prioritizing orchestration, validation, and operational integration over raw code generation.</p>\n   <p dir=\"ltr\">Ultimately, Nova represents Dropbox’s vision of AI agents as long-running participants in the engineering lifecycle rather than isolated copilots for individual developers. The company is already experimenting with workflows where multiple agents review pull requests from different perspectives, investigate production crashes, triage operational toil, and coordinate large-scale infrastructure migrations.</p>\n   <p dir=\"ltr\">As software organizations continue integrating AI deeper into engineering operations, platforms like Nova suggest the industry is moving toward a future where AI agents become embedded infrastructure components - capable not just of writing code, but of participating directly in the ongoing operation, maintenance, and governance of complex software systems.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Dropbox Introduces Nova, an Internal Platform for Running AI Coding Agents at Scale\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/dropbox-nova-ai-coding-agents/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780660800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Dropbox 推出内部平台 Nova，该平台在其企业工程基础设施中编排 AI 编程智能体，能够针对从修复不稳定测试到大规模迁移等任务，实现经过验证的迭代工作流。",
+  "oneSentenceSummary": "Dropbox 推出内部平台 Nova，该平台在其企业工程基础设施中编排 AI 编程智能体，能够针对从修复不稳定测试到大规模迁移等任务，实现经过验证的迭代工作流。",
+  "summary": "Dropbox 发布了 Nova，这是一个旨在编排和运营其工程工作流中 AI 编程智能体的内部平台。与独立的 AI 编程工具不同，Nova 提供了一个集中的执行层，并与 Dropbox 的单仓库、Bazel 构建系统、CI 流水线和可观测性工具集成。它在连接到公司基础设施的隔离云会话中运行智能体，实现了“提议、验证、迭代”的工作流，即在接受更改之前，会针对实际构建和系统对提议的更改进行测试。关键用例包括 Deflaker（一个自动修复不稳定测试的系统）和大型依赖项迁移。Dropbox 强调，对于大规模可信赖的 AI 辅助工程而言，周围的平台基础设施——验证循环、隔离环境和确定性工作流——与底层语言模型同样重要。该平台反映了一个更广泛的行业趋势，即构建内部的“智能体平台”，将 AI 作为长期运行的参与者嵌入工程生命周期中，使其能够调查故障、修复问题并协调复杂任务。",
+  "mainPoints": [
+    {
+      "point": "Nova 是一个在 Dropbox 现有企业基础设施内编排 AI 编程智能体的集中式平台。",
+      "explanation": "与使用独立的 AI 工具不同，Nova 提供了一个与 Dropbox 的单仓库、Bazel 构建系统、CI 和可观测性工具集成的执行层，使智能体能够在复杂环境中安全有效地运行。"
+    },
+    {
+      "point": "该平台的核心工作流是“提议、验证、迭代”，将 AI 行为锚定在确定性工程系统中。",
+      "explanation": "智能体提出更改，并在隔离会话中针对实际构建和测试自动进行验证。失败会触发迭代优化，从而在更改被接受之前确保可靠性和信任度。"
+    },
+    {
+      "point": "Nova 最成功的部署是针对运营和维护任务，而不仅仅是功能开发。",
+      "explanation": "示例包括 Deflaker（自动调查和修复不稳定测试）以及大规模依赖项迁移。这些任务受益于 Nova 的验证循环及其处理复杂迭代过程的能力。"
+    },
+    {
+      "point": "对于企业采用 AI 而言，平台基础设施和集成比模型质量更为关键。",
+      "explanation": "Dropbox 的经验和外部研究表明，验证循环、隔离环境、安全护栏和人工监督对可靠性和信任度的影响比底层语言模型本身更大。"
+    }
+  ],
+  "keyQuotes": [
+    "Nova 并未将 AI 助手视为独立的编码工具，而是提供了一个集中的执行层，使智能体能够在 Dropbox 的单仓库、CI 系统、可观测性工具和基础设施工作流中运行。",
+    "Dropbox 表示，其最大的经验教训之一是，周围的平台基础设施与底层语言模型本身同样重要。",
+    "Nova 代表了 Dropbox 的愿景：AI 智能体是工程生命周期中的长期参与者，而不是面向单个开发者的孤立副驾驶。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "开发者工具",
+    "平台工程",
+    "CI/CD"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 799,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780660800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-05 20:00:00"
+}

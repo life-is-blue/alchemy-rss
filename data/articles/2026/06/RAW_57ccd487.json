@@ -1,0 +1,56 @@
+{
+  "id": "RAW_57ccd487",
+  "title": "Andreas Kling 的一段话",
+  "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+  "date": "2026-06-05 19:10:05",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">5th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://ladybird.org/posts/changing-how-we-develop-ladybird/\">\n     <p>We will no longer accept public pull requests. [...]</p>\n     <p>A substantial patch used to imply substantial effort, and that effort was a reasonable proxy for good faith. That assumption no longer holds. [...]</p>\n     <p>Whether code was typed by hand is beside the point. What matters is who is responsible for it once it enters the browser. Ladybird is becoming a browser for real users. The people introducing changes to it must be the people who decide those changes belong in the project, and who will answer for the consequences.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://ladybird.org/posts/changing-how-we-develop-ladybird/\">Andreas Kling</a>, <span class=\"context\">Changing How We Develop Ladybird</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2210/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Ladybird 浏览器项目负责人 Andreas Kling 解释了停止接受公开 Pull Request 的决定，他认为“大量代码补丁即代表善意”的假设已不再成立，代码的责任归属比其编写方式更重要。",
+  "oneSentenceSummary": "Ladybird 浏览器项目负责人 Andreas Kling 解释了停止接受公开 Pull Request 的决定，他认为“大量代码补丁即代表善意”的假设已不再成立，代码的责任归属比其编写方式更重要。",
+  "summary": "Ladybird 浏览器项目的创始人 Andreas Kling 宣布其开发流程将发生重大变化：项目将不再接受公开的 Pull Request。他认为，在当前环境下，过去那种“大量代码补丁即代表善意努力”的传统假设已不再成立。核心问题不在于代码是手工编写还是由 AI 辅助生成，而在于代码进入浏览器后由谁负责。随着 Ladybird 转型为面向真实用户的浏览器，引入变更的人必须同时是决定这些变更应属于项目、并愿意为后果承担责任的人。这标志着项目从开放的贡献模式，转向了更受控、以责任为导向的开发方式。",
+  "mainPoints": [
+    {
+      "point": "Ladybird 将不再接受公开的 Pull Request。",
+      "explanation": "该项目正从开放的贡献模式转向更受控的流程，优先考虑责任而非贡献数量。"
+    },
+    {
+      "point": "“大量代码补丁即代表善意”的假设已不再成立。",
+      "explanation": "Kling 认为，生成大量补丁所需的工作量已不再是判断贡献者意图的可靠指标，尤其是在 AI 辅助代码生成的时代。"
+    },
+    {
+      "point": "代码的责任归属比其编写方式更重要。",
+      "explanation": "关键问题不在于代码是手工编写还是 AI 生成的，而在于代码合并到项目后，谁为其正确性和影响负责。"
+    },
+    {
+      "point": "Ladybird 正成为面向真实用户的浏览器，需要更高的问责制。",
+      "explanation": "随着项目日趋成熟并面向真实用户群体，对代码质量的门槛以及对明确所有权和责任的需求显著提高。"
+    }
+  ],
+  "keyQuotes": [
+    "过去，大量代码补丁意味着大量的努力，而这种努力是善意的合理代表。这个假设已不再成立。",
+    "代码是手工编写的还是次要的。重要的是，一旦它进入浏览器，由谁负责。",
+    "为项目引入变更的人，必须同时是决定这些变更应属于项目、并愿意为后果承担责任的人。"
+  ],
+  "tags": [
+    "开源",
+    "软件开发",
+    "工程文化",
+    "AI 编程",
+    "代码审查"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 100,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780657805000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-05 19:10:05"
+}

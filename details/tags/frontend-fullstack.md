@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-06 06:26:04 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-06 08:30:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -702,6 +702,30 @@
 
 
 
+### [Lesse-Studio-新官网的打造：清晰、性能与意图](https://tympanus.net/codrops/2026/06/05/the-making-of-the-new-lesse-studio-website-clarity-performance-and-intentionality/)
+
+2026-06-05 20:28:46 | 标签: Web 开发, Svelte, 性能优化, 自托管, 前端架构
+
+> 本文记录了 Lesse Studio 重建其机构网站的历程，其驱动力源于从视觉实验到创意与功能平衡的理念转变。核心挑战是在保留品牌艺术本质的同时，改善可用性和导航。解决方案涉及彻底的基础设施改造：从云服务商（AWS、Vercel）转向自托管，这引发了整个团队对优化的痴迷。这种心态促使他们用 SvelteKit 取代了重型前端框架（Next.js、Vue），使得每个实例的 RAM 占用从约 500MB 大幅降至约 30MB。他们还使用 Drizzle ORM 和 SQLite 构建了一个自定义的轻量级 CMS，实现了图片到 WebP 格式的自动转换，并利用 Svelte 的内置功能从头编写了所有...
+
+
+
+### [TypeORM-历经近十年终达-1.0-版本，标志着维护工作重启](https://www.infoq.com/news/2026/06/typeorm-1-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-06-05 14:52:00 | 标签: TypeORM, ORM, TypeScript, JavaScript, Node.js
+
+> TypeORM 团队发布了 1.0 版本，这是这款广泛使用的 TypeScript 和 JavaScript ORM 的首个主版本，标志着其自 2016 年以来一直处于的 pre-1.0 状态正式结束。该版本移除了长期弃用的 API，现代化了平台要求（最低 Node.js 20，编译目标为 ECMAScript 2023），并带来了多项新特性，包括支持 INSERT INTO SELECT 的 InsertQueryBuilder、为 update/upsert 操作添加的 RETURNING 子句，以及用于 QueryRunner 的 await using 语法。安全性方面也得到了加强，所...
+
+
+
+### [两个字符让-Django-接口快了-8-倍：一次险些翻车的线上性能排查实录](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695850&idx=1&sn=ecfbc2739caa6d9ebda151aadc400c8a)
+
+2026-06-05 08:45:00 | 标签: 后端开发, Django, 性能优化, Python, Web 开发
+
+> 文章详细复盘了某直播业务监控系统接口 get_svr_info 的性能优化过程。该接口在外部模块扩容后出现严重抖动，返回全量数据时响应体约 7MB，耗时 13.6 秒。作者最初判断瓶颈是 Django ORM 的 model 对象构造与 dict 转换开销，将代码改为 values() 直出 dict 并裁剪字段，但仅获得 1.12 倍提升。随后尝试 ujson 替换 json.dumps（1.23x）和 nginx gzip 压缩（反而更慢），均未解决根本问题。通过 TTFB 分析和本机回环测试，发现 TTFB 仅 1 秒而 Total 长达 13 秒，说明瓶颈不在数据生成而在数据输出。最终...
+
+
+
 ### [请求的路径：现代-Web-架构漫游](https://blog.bytebytego.com/p/the-path-of-a-request-a-tour-of-modern)
 
 2026-06-04 23:31:29
@@ -1290,13 +1314,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1446,13 +1470,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2946,13 +2970,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4656,13 +4680,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

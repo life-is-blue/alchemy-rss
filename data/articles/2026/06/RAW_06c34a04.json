@@ -1,0 +1,59 @@
+{
+  "id": "RAW_06c34a04",
+  "title": "Google LiteRT-LM 借助 Gemma 4 多 Token 预测，将本地推理速度提升至 2.2 倍",
+  "url": "https://www.infoq.com/news/2026/06/google-litertlm-gemma4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-05 17:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>LiteRT-LM <a href=\"https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/\">brings native support for Gemma 4 Multi-Token Prediction (MTP) drafters</a>, enabling up to 2.2x faster inference. The framework is expanding beyond Kotlin and C++ adding support for new Swift and a JavaScript APIs.</p>\n   <p>LiteRT-LM includes a specialized orchestration layer built on top of LiteRT, formerly known as TensorFlow Lite, specifically designed to handle large language models (LLM). According to Google, it is a production-proven, highly optimized runtime for running Gemma 4 on-device across platforms like Android, iOS, and the web.</p>\n   <p>Its LiteRT foundation enables it to efficiently handle constraints like limited memory, compute, and fragmented hardware leveraging advanced quantization schemes along with accelerated XNNPACK and MLDrift kernels. At the orchestration level, it employs optimized pipelines to minimize costly CPU-GPU data transfers, supports multi-token prediction, and features advanced session management. According to Google, this combination makes it \"the highest-performing runtime environment for Gemma models\".</p>\n   <p>LiteRT-LM adopts speculative decoding for MTP and implements it in a way that avoids the bottlenecks of naive approaches by \"optimizing the data interplay between the primary Gemma 4 model and the MTP drafter\".</p>\n   <blockquote>\n    <p>To achieve this, LiteRT-LM enforces memory locality by executing both the lightweight MTP drafter and the primary model on the same hardware IP (e.g., the GPU). Managing the shared KV cache and activations within local memory entirely eliminates the latency penalties of cross-IP synchronization and data transfers. Once the drafter predicts future tokens, the primary model evaluates them using optimized kernels that maximize parallelization during verification</p>\n   </blockquote>\n   <p>Based on its own benchmarks, Google says that MTP decoding speed is 1.6x faster for Gemma 4 E2B and 2.2x faster for Gemma 4 E4B. The company also reports that both prefill and decode performance are 1.8x to 3.7x faster than competing frameworks like llama.cpp, MLX, Cactus, and ONNX.</p>\n   <p>Session management is treated as a first-class feature in LiteRT-LM. It can save and restore KV cache state, enabling seamless continuation of long interactions while avoiding expensive recomputation. This can improve both overall user experience and efficiency.</p>\n   <p>Another pillar in LiteRT-LM is memory efficiency, as it minimizes its footprint by keeping per-layer embeddings out of memory and dynamically loading image and audio encoders only when required. As a result, the runtime remains lean, with, for example, the the ~2.58GB Gemma 4 E2B model taking just 607MB on Apple mobile CPUs.</p>\n   <p>The system also emphasizes agentic capabilities through native support for Gemma 4 \"Thinking Mode\", <a href=\"https://ai.google.dev/edge/litert-lm/cpp#constrained_decoding\">constrained decoding</a> for structured outputs, and <a href=\"https://developers.googleblog.com/on-device-function-calling-in-google-ai-edge-gallery/\">function-calling</a>. These features allow it to pause execution, return structured tool-call requests, and eventually resume.</p>\n   <p>Launched with Gemma 4, <a href=\"https://www.infoq.com/news/2026/05/gemma4-multi-token-prediction/\">multi-token prediction drafters use speculative decoding to generate multiple tokens in parallel</a>. which can be verified together in a single pass. This approach reduces constant data movement between VRAM and compute units while exploiting the fact that many predictions are \"obvious\" and do not require the same amount of computation as others.</p>\n   <p><a href=\"https://github.com/google-ai-edge/LiteRT-LM\">LiteRT-LM is available on GitHub</a> and includes a <a href=\"https://ai.google.dev/edge/litert-lm/cli\">CLI for experimenting on the desktop</a>, as well as a <a href=\"https://github.com/google-ai-edge/gallery\">mobile app for on-device usage</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google LiteRT-LM Speeds Up Local Inference Up to 2.2x With Gemma 4 Multi-Token Prediction\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/google-litertlm-gemma4/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780650000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 的 LiteRT-LM 框架原生支持 Gemma 4 的多 Token 预测，通过新的 Swift 和 JavaScript API，在设备端推理速度最高提升 2.2 倍。",
+  "oneSentenceSummary": "Google 的 LiteRT-LM 框架原生支持 Gemma 4 的多 Token 预测，通过新的 Swift 和 JavaScript API，在设备端推理速度最高提升 2.2 倍。",
+  "summary": "本文报道了 Google 推出 LiteRT-LM 的消息，这是一个基于 LiteRT（原 TensorFlow Lite）构建的专用运行时，用于在设备端运行大型语言模型。其核心亮点是对 Gemma 4 多 Token 预测（MTP）草稿模型的原生支持，该技术利用推测解码并行生成多个 Token，推理速度最高提升 2.2 倍。该框架通过将草稿模型和主模型运行在同一个硬件 IP 上来优化内存局部性，消除了跨 IP 同步带来的性能损失。Google 的基准测试显示，MTP 解码在 Gemma 4 E2B 上快 1.6 倍，在 E4B 上快 2.2 倍，其预填充和解码性能比 llama.cpp 和 MLX 等竞品框架快 1.8 到 3.7 倍。文章还介绍了用于实现无缝长交互的会话管理、内存效率（例如，在 Apple 移动 CPU 上，一个 2.58GB 的模型仅需 607MB 内存），以及包括约束解码和函数调用在内的智能体能力。LiteRT-LM 正在通过新的 Swift 和 JavaScript API 扩展到 Kotlin 和 C++ 之外。",
+  "mainPoints": [
+    {
+      "point": "LiteRT-LM 原生支持 Gemma 4 的多 Token 预测，推理速度最高提升 2.2 倍。",
+      "explanation": "该框架使用 MTP 草稿模型实现推测解码，优化了主模型与草稿模型之间的数据交互，避免了朴素方法中的瓶颈问题。"
+    },
+    {
+      "point": "通过将草稿模型和主模型运行在同一个硬件 IP 上来强制实现内存局部性。",
+      "explanation": "这消除了跨 IP 同步和数据传输带来的延迟损失，共享的 KV 缓存和激活值在本地内存中进行管理。"
+    },
+    {
+      "point": "基准测试显示，性能显著优于竞品框架。",
+      "explanation": "Google 报告称，其预填充和解码性能比 llama.cpp、MLX、Cactus 和 ONNX 快 1.8 到 3.7 倍，其中 MTP 解码在 Gemma 4 E2B 上快 1.6 倍，在 E4B 上快 2.2 倍。"
+    },
+    {
+      "point": "内存效率是核心设计支柱。",
+      "explanation": "该运行时通过将逐层嵌入保留在内存之外，并仅在需要时动态加载编码器，最大限度地减少了内存占用，在 Apple 移动 CPU 上，一个 2.58GB 的模型仅需 607MB 内存。"
+    },
+    {
+      "point": "内置智能体能力，支持约束解码和函数调用。",
+      "explanation": "原生支持 Gemma 4 的“思考模式”、结构化输出和工具调用请求，可实现智能体工作流的暂停与恢复执行。"
+    }
+  ],
+  "keyQuotes": [
+    "LiteRT-LM 通过将轻量级 MTP 草稿模型和主模型执行在同一个硬件 IP（例如 GPU）上，强制实现了内存局部性。",
+    "在本地内存中管理共享的 KV 缓存和激活值，完全消除了跨 IP 同步和数据传输带来的延迟损失。"
+  ],
+  "tags": [
+    "LLM",
+    "端侧 AI",
+    "推理优化",
+    "Gemma 4",
+    "多 Token 预测"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 497,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780650000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-05 17:00:00"
+}
