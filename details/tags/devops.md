@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-07 08:30:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-07 11:04:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -560,9 +560,7 @@
 
 ### [超越-fork-+-exec](https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/)
 
-2026-06-06 22:34:20 | 标签: Linux 内核, 系统设计, 操作系统, 性能优化, 进程管理
-
-> 这篇 LWN 文章报道了 Li Chen 最近的一项内核开发提案，该提案引入“spawn 模板”来优化重复的 fork()+exec() 模式，特别是针对那些频繁启动同一可执行文件的应用程序。该提案引入了新的系统调用（spawn_template_create， spawn_template_spawn）来缓存可执行文件的元数据，性能提升约 2%。然而，内核社区（尤其是 Mateusz Guzik 和 Christian Brauner）提出了批评性反馈。Guzik 认为该提案并未解决 fork() 本身的核心开销问题，主张改为创建“原始进程”。Brauner 则提出了一种架构上更合理的方法：...
+2026-06-06 22:34:20
 
 
 

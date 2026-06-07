@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-07 08:30:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-07 11:04:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -704,9 +704,7 @@
 
 ### [使用-MicroPython-和-WASM-在沙箱中运行-Python-代码](https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/)
 
-2026-06-06 22:15:32 | 标签: Python, WebAssembly, 沙箱, MicroPython, WASM
-
-> Simon Willison 详细介绍了为其插件系统（Datasette、LLM）构建安全 Python 代码执行沙箱的过程。他列出了需求：易于通过 PyPI 安装、内存和 CPU 限制、受控的文件和网络访问，以及宿主函数支持。在评估了多种方案后，他最终选择将 MicroPython 编译为 WebAssembly，并使用 wasmtime Python 库来运行。文章涵盖了技术实现细节，包括通过基于线程的队列系统实现持久化解释器状态、通过小型 C 模块实现宿主函数支持，以及使用 wasmtime 的燃料机制进行 CPU 限制。最终成果是 `micropython-wasm` alpha 包，...
+2026-06-06 22:15:32
 
 
 
