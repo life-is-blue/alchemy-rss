@@ -1,0 +1,51 @@
+{
+  "id": "RAW_9642b109",
+  "title": "OpenAI 帮助：锁定模式",
+  "url": "https://simonwillison.net/2026/Jun/6/openai-help-lockdown-mode/#atom-everything",
+  "date": "2026-06-07 07:56:40",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">6th June 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://help.openai.com/en/articles/20001061-lockdown-mode\">OpenAI Help: Lockdown Mode</a></strong>. OpenAI first teased this <a href=\"https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/\">in February</a>, but now it's live and \"rolling out to eligible personal accounts, including Free, Go, Plus, and Pro, and self-serve ChatGPT Business accounts\":</p>\n    <blockquote>\n     <p>Lockdown Mode is designed to help prevent the final stage of data exfiltration from a prompt injection attack by limiting outbound network requests that could transfer sensitive data to an attacker. Lockdown Mode does not prevent prompt injections from appearing in the content ChatGPT processes. For example, a prompt injection could appear in cached web content or in an uploaded file, and could still affect the behavior or accuracy of a response.</p>\n    </blockquote>\n    <p>This looks really good to me.</p>\n    <p>The <a href=\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\">Lethal Trifecta</a> occurs when an LLM system has access to all three of access to private data, exposure to untrusted content and a way to steal data and transmit it back to the attacker.</p>\n    <p>The only way to solve the trifecta is to cut off one of the three legs, and by far the easiest leg to restrict without making your LLM systems far less useful is the exfiltration vectors to steal data.</p>\n    <p>It looks to me like lockdown mode directly attacks that leg, using mechanisms that are deterministic and, crucially, are not evaluated by AI systems that themselves can be subverted by sufficiently devious attacks.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 为 ChatGPT 推出的全新锁定模式，通过确定性、非 AI 机制，直接切断了提示注入“致命三重奏”中的数据外泄环节。",
+  "oneSentenceSummary": "OpenAI 为 ChatGPT 推出的全新锁定模式，通过确定性、非 AI 机制，直接切断了提示注入“致命三重奏”中的数据外泄环节。",
+  "summary": "Simon Willison 分析了 OpenAI 新推出的 ChatGPT 锁定模式。他将此置于其“致命三重奏”概念框架下——提示注入攻击需要三个条件：访问私有数据、接触不可信内容、以及数据外泄途径。他认为锁定模式是一个出色的解决方案，因为它使用确定性、非 AI 机制切断了外泄途径，而这些机制不会被它们本应保护的 AI 系统本身所颠覆。这使得系统在防范提示注入攻击导致的数据窃取方面更加稳健。",
+  "mainPoints": [
+    {
+      "point": "锁定模式直接针对致命三重奏中的数据外泄环节。",
+      "explanation": "Willison 认为，打破三重奏最实际的方法是限制数据被盗的方式，而锁定模式通过限制出站网络请求正好做到了这一点。"
+    },
+    {
+      "point": "该解决方案使用确定性、非 AI 机制，因此非常稳健。",
+      "explanation": "关键在于，安全执行并非由可能被欺骗的 AI 系统来评估，这使得它成为抵御甚至复杂提示注入攻击的可靠防线。"
+    },
+    {
+      "point": "锁定模式并不阻止处理内容中出现提示注入。",
+      "explanation": "该功能专门设计用于阻止数据外泄的最后阶段，而非阻止注入本身，这是一种现实且有效的设计选择。"
+    }
+  ],
+  "keyQuotes": [
+    "解决三重奏的唯一方法是切断其中一条腿，而要在不显著降低 LLM 系统实用性的前提下，最容易限制的就是窃取数据的外泄途径。",
+    "在我看来，锁定模式直接攻击了这条腿，它使用的机制是确定性的，并且关键在于，这些机制不是由那些本身可能被足够狡猾的攻击所颠覆的 AI 系统来评估的。"
+  ],
+  "tags": [
+    "AI 安全",
+    "LLM",
+    "提示注入",
+    "安全",
+    "ChatGPT"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 223,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780790200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-07 07:56:40"
+}

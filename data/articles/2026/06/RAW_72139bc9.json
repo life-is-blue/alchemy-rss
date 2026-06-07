@@ -1,0 +1,51 @@
+{
+  "id": "RAW_72139bc9",
+  "title": "从树到流再回归：统一决策树与扩散模型",
+  "url": "https://arxiv.org/abs/2605.00414",
+  "date": "2026-06-06 20:59:59",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"abs-outer\">\n   <div class=\"leftcolumn\">\n    <div class=\"subheader\">\n     <h1>Computer Science &gt; Machine Learning</h1>\n    </div>\n    <div class=\"header-breadcrumbs-mobile\">\n     <strong>arXiv:2605.00414</strong> (cs)\n    </div>\n    <div id=\"content-inner\">\n     <div id=\"abs\">\n      <div class=\"dateline\">\n       [Submitted on 1 May 2026 (<a href=\"https://arxiv.org/abs/2605.00414v1\">v1</a>), last revised 21 May 2026 (this version, v2)]\n      </div>\n      <div class=\"authors\">\n       <span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Ramachandran,+S+N\" rel=\"nofollow\">Sai Niranjan Ramachandran</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Suvrit\" rel=\"nofollow\">Suvrit Sra</a>\n      </div>\n      <a class=\"mobile-submission-download\" href=\"https://arxiv.org/pdf/2605.00414\">View PDF</a>\n      <blockquote class=\"abstract mathjax\">\n       <span class=\"descriptor\">Abstract:</span>Decision trees and diffusion models are ostensibly disparate model classes, one discrete and hierarchical, the other continuous and dynamic. This work unifies the two by establishing a crisp mathematical correspondence between hierarchical decision trees and diffusion processes in appropriate limiting regimes. Our unification reveals a shared optimization principle: \\emph{Global Trajectory Score Matching (GTSM)}, for which gradient boosting (in an idealized version) is asymptotically optimal. We underscore the conceptual value of our work through two key practical instantiations: \\treeflow, which achieves competitive generation quality on tabular data with higher fidelity and a 2\\times computational speedup, and \\dsmtree, a novel distillation method that transfers hierarchical decision logic into neural networks, matching teacher performance within 2\\% on many benchmarks.\n      </blockquote>\n      <div class=\"metatable\">\n       <table summary=\"Additional metadata\">\n        <tbody>\n         <tr>\n          <td class=\"tablecell label\">Comments:</td>\n          <td class=\"tablecell comments mathjax\">12 pages (main), 68 pages (inclusive of appendix), Accepted in the Forty-Third International Conference on Machine Learning (ICML) 2026</td>\n         </tr>\n         <tr>\n          <td class=\"tablecell label\">Subjects:</td>\n          <td class=\"tablecell subjects\"><span class=\"primary-subject\">Machine Learning (cs.LG)</span>; Statistical Mechanics (cond-mat.stat-mech); Artificial Intelligence (cs.AI)</td>\n         </tr>\n         <tr>\n          <td class=\"tablecell label\">Cite as:</td>\n          <td class=\"tablecell arxivid\"><span class=\"arxivid\"><a href=\"https://arxiv.org/abs/2605.00414\">arXiv:2605.00414</a> [cs.LG]</span></td>\n         </tr>\n         <tr>\n          <td class=\"tablecell label\">&nbsp;</td>\n          <td class=\"tablecell arxividv\">(or <span class=\"arxivid\"> <a href=\"https://arxiv.org/abs/2605.00414v2\">arXiv:2605.00414v2</a> [cs.LG]</span> for this version)</td>\n         </tr>\n         <tr>\n          <td class=\"tablecell label\">&nbsp;</td>\n          <td class=\"tablecell arxivdoi\"><a href=\"https://doi.org/10.48550/arXiv.2605.00414\" id=\"arxiv-doi-link\">https://doi.org/10.48550/arXiv.2605.00414</a>\n           <div class=\"button-and-tooltip\">\n            <button class=\"more-info\" aria-describedby=\"more-info-desc-1\">\n             <svg height=\"15\" role=\"presentation\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n              <path fill=\"currentColor\" d=\"M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z\"></path>\n             </svg>\n             <span class=\"visually-hidden\">Focus to learn more</span>\n            </button>\n            <div role=\"tooltip\" id=\"more-info-desc-1\">\n             <span class=\"left-corner\"></span> arXiv-issued DOI via DataCite\n            </div>\n           </div></td>\n         </tr>\n        </tbody>\n       </table>\n      </div>\n     </div>\n    </div>\n    <div class=\"submission-history\">\n     <h2>Submission history</h2>\n     From: Sai Niranjan Ramachandran [<a href=\"https://arxiv.org/show-email/4bd0d387/2605.00414\" rel=\"nofollow\">view email</a>]\n     <br>\n     <strong><a href=\"https://arxiv.org/abs/2605.00414v1\" rel=\"nofollow\">[v1]</a></strong> Fri, 1 May 2026 05:19:54 UTC (8,277 KB)\n     <br>\n     <strong>[v2]</strong> Thu, 21 May 2026 04:49:57 UTC (8,277 KB)\n     <br>\n    </div>\n   </div>\n   <div class=\"extra-services\">\n    <div class=\"full-text\">\n     <a name=\"other\"></a> <span class=\"descriptor\">Full-text links:</span>\n     <h2>Access Paper:</h2>\n     <ul>\n      <li><a href=\"https://arxiv.org/pdf/2605.00414\" aria-describedby=\"download-button-info\" class=\"abs-button download-pdf\">View PDF</a></li>\n      <li><a href=\"https://arxiv.org/src/2605.00414\" class=\"abs-button download-eprint\">TeX Source </a></li>\n     </ul>\n     <div class=\"abs-license\">\n      <a href=\"http://creativecommons.org/licenses/by/4.0/\" title=\"Rights to this article\" class=\"has_license\"> <img alt=\"license icon\" role=\"presentation\" src=\"https://arxiv.org/icons/licenses/by-4.0.png\"> <span>view license</span></a>\n     </div>\n    </div>\n   </div>\n   <div class=\"endorsers\">\n    <span class=\"help\" style=\"font-style: normal; float: right; margin-top: 0; margin-right: 1em;\"></span>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文建立了层次化决策树与扩散过程之间的数学对应关系，通过一个名为全局轨迹得分匹配（GTSM）的共享优化原则将它们统一起来。",
+  "oneSentenceSummary": "本文建立了层次化决策树与扩散过程之间的数学对应关系，通过一个名为全局轨迹得分匹配（GTSM）的共享优化原则将它们统一起来。",
+  "summary": "本文提出了两个看似截然不同的模型类别——层次化决策树与连续扩散模型——的理论统一。作者在适当的极限条件下建立了它们之间清晰的数学对应关系，揭示了一个他们称之为全局轨迹得分匹配（GTSM）的共享优化原则。他们证明，梯度提升（在理想化版本中）对于 GTSM 是渐近最优的。这一理论贡献通过两个实际实例得到验证：TreeFlow 在表格数据上实现了具有更高保真度和 2 倍计算加速的竞争性生成质量；以及 DSMTree，一种新颖的蒸馏方法，可将层次化决策逻辑迁移到神经网络中，在许多基准测试中与教师模型的性能差距在 2% 以内。该论文已被 ICML 2026 接收。",
+  "mainPoints": [
+    {
+      "point": "决策树与扩散模型在特定极限条件下是数学等价的。",
+      "explanation": "本文建立了决策树的离散层次结构与扩散模型的连续动态过程之间的形式化对应关系，揭示了两者之间比以往理解更为深刻的联系。"
+    },
+    {
+      "point": "一个统一的优化原则——全局轨迹得分匹配（GTSM）——支配着这两种模型类别。",
+      "explanation": "GTSM 提供了一个共享框架，用于理解决策树和扩散模型的学习方式，其中梯度提升成为该目标的渐近最优求解器。"
+    },
+    {
+      "point": "理论统一带来了实际效益：TreeFlow 和 DSMTree。",
+      "explanation": "TreeFlow 为表格数据生成提供了 2 倍加速和更高保真度，而 DSMTree 则能够将基于树的逻辑高效蒸馏到神经网络中，且性能损失极小。"
+    }
+  ],
+  "keyQuotes": [
+    "这项工作通过在适当的极限条件下建立层次化决策树与扩散过程之间清晰的数学对应关系，将两者统一起来。",
+    "我们的统一揭示了一个共享的优化原则：全局轨迹得分匹配（GTSM），对于该原则，梯度提升（在理想化版本中）是渐近最优的。"
+  ],
+  "tags": [
+    "机器学习",
+    "扩散模型",
+    "决策树",
+    "生成模型",
+    "理论机器学习"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 89,
+  "wordCount": 229,
+  "domain": "arxiv.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780750799000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-06 20:59:59"
+}

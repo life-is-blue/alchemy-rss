@@ -1,0 +1,50 @@
+{
+  "id": "RAW_789c774e",
+  "title": "经典 100：2001 至 2021",
+  "url": "https://classic100.gotski.workers.dev/",
+  "date": "2026-06-06 09:32:09",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <main>\n   <h2>ABC Classic 100 Rankings: 2001 to 2021</h2>\n   <p>Every year since 2001, ABC Classic FM has run a <a href=\"https://www.abc.net.au/classic/classic100/archive/\">Classic 100</a> event, where listeners vote on their favourite pieces.</p>\n   <p>This page visualises the rankings for three different years:</p>\n   <ul>\n    <li>The <a href=\"https://www.abc.net.au/classic/classic100/archive/search/?year=2001-original\">Original Classic 100</a> from 2001,</li>\n    <li>Classic 100 <a href=\"https://www.abc.net.au/classic/classic100/archive/search/?year=2010-10years\">10 Years on</a> from 2010, and</li>\n    <li><a href=\"https://www.abc.net.au/classic/classic100/archive/search/?year=2021-livewithout\">Music you can't live without</a> from 2021</li>\n   </ul>\n   <p></p>\n   <p>Each dot\n    <svg width=\"10\" height=\"10\">\n     <circle cx=\"5\" cy=\"5\" r=\"8\" width=\"10\" height=\"10\" fill=\"grey\"></circle>\n    </svg>\n    represents a piece of music.</p>\n   <p>The lines track how the rankings for that piece have changed between 2001 and 2021.</p>\n   <svg width=\"100%\" height=\"140\" viewBox=\"0 0 450 140\">\n    <text x=\"30\" y=\"20\">2001</text> <text x=\"180\" y=\"20\">2010</text> <text x=\"330\" y=\"20\">2021</text> <path d=\"M 50 110 C 125 110 125 60 200 60\" opacity=\"0.1\" stroke=\"grey\"></path> <path d=\"M 350 35 C 275 35 275 60 200 60\" opacity=\"0.1\" stroke=\"grey\"></path> <circle cx=\"50\" cy=\"110\" fill=\"grey\"></circle> <text x=\"50\" y=\"130\">4th</text> <circle cx=\"200\" cy=\"60\" fill=\"grey\"></circle> <text x=\"200\" y=\"80\">2nd</text> <circle cx=\"350\" cy=\"35\" fill=\"grey\"></circle> <text x=\"350\" y=\"55\">1st</text>\n   </svg>\n   <p>You can <b>click or tap on a dot to highlight</b> that piece and show detailed information.</p>\n   <p>Other pieces by the <b class=\"highlighted\">same composer</b> will also highlight in a lighter shade.</p>\n   <p>My favourite observation from this visualisation is that 'The Lark Ascending' started high in the rankings (#2) in 2001, descended in 2010, before ascending again in 2021.</p>\n   <svg width=\"100%\" height=\"2500px\" id=\"viz\"></svg>\n   <h3>About me</h3>\n   <p>My name is Alex and I live in Nipaluna / Hobart.</p>\n   <p>I don't often vote in the Classic 100, but if I did my favourite piece would probably be \"La Follia\", by Vivaldi. I don't take it personally that it didn't make it in to this dataset.</p>\n   <p>If you have any feedback on this piece, I'd love to hear it!</p>\n   <form action=\"https://api.web3forms.com/submit\" method=\"POST\">\n    <input type=\"hidden\" name=\"access_key\" value=\"72e8a4cd-0d03-41ee-b11a-42a93e7ff17f\">\n    <p>Your name\n     <br>\n     <input type=\"text\" name=\"name\" required></p>\n    <p>Your email\n     <br>\n     <input type=\"email\" name=\"email\" required></p>\n    <p>Message\n     <br>\n     <textarea name=\"message\" required rows=\"10\" cols=\"35\"></textarea></p>\n    <button type=\"submit\">Send Feedback</button>\n   </form>\n   <p></p>\n  </main>\n </body>\n</html>",
+  "aiSummary": "一个数据可视化项目，展示了 ABC 经典 100 榜单中古典音乐作品在 2001 年、2010 年和 2021 年间的排名变化。",
+  "oneSentenceSummary": "一个数据可视化项目，展示了 ABC 经典 100 榜单中古典音乐作品在 2001 年、2010 年和 2021 年间的排名变化。",
+  "summary": "本页面呈现了 ABC 经典 100 榜单在三个关键年份的交互式数据可视化：2001 年（原始榜单）、2010 年（十年后）和 2021 年（不可或缺的音乐）。每个圆点代表一首乐曲，连线则追踪其排名随时间的变化。用户可以点击圆点查看详细信息，并高亮显示同一作曲家的其他作品。作者还分享了一个个人观察：关于《云雀高飞》，它在 2001 年排名很高，2010 年下降，又在 2021 年重新上升。页面还包含简短的“关于我”部分和反馈表单。",
+  "mainPoints": [
+    {
+      "point": "该可视化追踪了古典乐曲在三个十年间的排名变化。",
+      "explanation": "它比较了 2001 年、2010 年和 2021 年的 ABC 经典 100 榜单，展示了 20 年间听众偏好的演变。"
+    },
+    {
+      "point": "交互式设计允许用户探索单首乐曲和作曲家。",
+      "explanation": "点击圆点可显示详细信息并高亮同一作曲家的其他作品，从而实现对数据的深入探索。"
+    },
+    {
+      "point": "一个显著的趋势是《云雀高飞》排名的波动。",
+      "explanation": "这首乐曲在 2001 年排名第 2，2010 年下降，又在 2021 年重新上升，反映了听众品味的变化。"
+    }
+  ],
+  "keyQuotes": [
+    "《云雀高飞》在 2001 年排名很高（第 2 位），2010 年下降，之后又在 2021 年重新上升。"
+  ],
+  "tags": [
+    "古典音乐",
+    "数据可视化",
+    "音乐排行榜",
+    "交互式",
+    "文化"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 210,
+  "domain": "classic100.gotski.workers.dev",
+  "category": "Programming_Technology",
+  "mainDomain": "Lifestyle_Culture",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780709529000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-06 09:32:09"
+}

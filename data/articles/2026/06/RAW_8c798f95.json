@@ -1,0 +1,56 @@
+{
+  "id": "RAW_8c798f95",
+  "title": "人格图谱：绘制著名思想家的思维地图",
+  "url": "https://huggingface.co/blog/build-small-hackathon/persona-atlas",
+  "date": "2026-06-06 20:09:18",
+  "author": "insuperabilehart",
+  "siteName": "Hugging Face - Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"SVELTE_HYDRATER contents\"></div>\n  <div class=\"mb-4\">\n   <br>\n  </div>\n  <div>\n   <div class=\"mb-6 flex items-center gap-x-4 text-base\"></div>\n  </div>\n  <div class=\"not-prose mb-6 font-sans lg:hidden\">\n   <div class=\"SVELTE_HYDRATER contents\">\n    <div class=\"flex flex-wrap items-center gap-2.5 pt-1  z-1 lg:sticky lg:top-8\">\n     <a href=\"https://huggingface.co/login?next=%2Fblog%2Fbuild-small-hackathon%2Fpersona-atlas\" class=\"self-start\"> \n      <div class=\"shadow-alternate group flex h-9 cursor-pointer select-none items-center gap-2 rounded-lg border pl-3 pr-3.5 border-gray-300 bg-white dark:bg-gray-850\">\n       Upvote\n       <div class=\"font-semibold text-orange-500\">-</div>\n      </div> \n     </a>\n    </div>\n    <dialog class=\"shadow-alternate z-40 mx-4 my-auto h-fit select-text overflow-hidden rounded-xl bg-white max-sm:max-w-[calc(100dvw-2rem)] sm:mx-auto lg:mt-26 md:portrait:mt-30 xl:mt-30 2xl:mt-32 w-full sm:w-96 max-w-[calc(100%-4rem)] text-base not-prose\"></dialog>\n   </div>\n  </div>\n  <p></p>\n  <strong>TL;DR.</strong> Persona Atlas turns a public figure into a <em>behavioral</em> portrait you can actually measure. You type a name, a small-model agent researches that person on the open web, writes up a grounded dossier, and then answers a fixed set of open-ended \"thinking\" questions <em>in their voice</em>. Every answer gets embedded, so a persona stops being a wall of prose and becomes a point in space. Line several thinkers up next to each other and you can see who reaches for skepticism, who for humor, who for cold abstraction. The bet underneath it: personality is mostly style, not horsepower, so it survives even when the models doing the talking are small. Which, this being the <em>build-small</em> hackathon, is sort of the whole point.\n  <p></p>\n  <blockquote>\n   <p>Watch the short tour: research a persona, compare a few, read the trait heatmap.</p>\n  </blockquote>\n  <p>\n   <video controls=\"\" src=\"https://huggingface.co/spaces/build-small-hackathon/persona-atlas/resolve/main/assets/demo.mp4\" width=\"100%\" poster=\"https://huggingface.co/spaces/build-small-hackathon/persona-atlas/resolve/main/assets/persona-atlas-thumbnail.png\"></video>\n  </p>\n  <p><em>Trouble loading the player? <a href=\"https://www.youtube.com/watch?v=sxHs7EACkTg\" rel=\"nofollow\">Watch it on YouTube</a>.</em></p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"the-question-that-started-it\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#the-question-that-started-it\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> The question that started it </span></h2>\n  <p>What if you could put Socrates, Churchill, and a Silicon Valley founder in the same room, hand them the same unanswerable question, and watch how differently each one reaches for an answer? Most benchmarks measure what a model knows. Persona Atlas is after something harder to pin down, which is how a given mind moves, and it tries to make that visible instead of just claiming it.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"how-it-works\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#how-it-works\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> How it works </span></h2>\n  <p>A run has three steps.</p>\n  <p>First, research. A tool-calling agent runs real web searches, pulls a portrait, and puts together a public profile, a list of grounded facts (each one linked back to a source it actually visited), and a \"style hypothesis\" that's its best guess at how this person attacks a problem they've never seen before.</p>\n  <p>Second, the persona answers the benchmark: ten deliberately open-ended prompts about identity, ethics, truth, free will, meaning, and machine consciousness. There are no right answers, on purpose. These are the questions where a personality leaks through instead of the model's raw capability.</p>\n  <p>Third, every answer becomes an embedding. That turns each persona into points you can compare: put two side by side and measure the distance between their answers.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"comparing-minds\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#comparing-minds\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Comparing minds </span></h2>\n  <p>Pick any of the saved personas and the comparison view does two things. It measures how far apart their answers sit in embedding space, giving you one number for how much the whole group diverges, and it scores each persona against ten trait anchors (meticulousness, clarity, creativity, skepticism, confidence, kindness, humor, curiosity, pragmatism, abstraction), drawn as a trait-leaning heatmap.</p>\n  <p>The grid is double-centered, which matters more than it sounds. A warm cell never means \"high on this trait\" in some absolute sense. It means this persona leans toward that trait more than the others you happened to put on the table. Drop a handful of very different people side by side and the rows pull apart. One runs warm on humor and confidence, another on abstraction and skepticism.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"under-the-hood\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#under-the-hood\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Under the hood </span></h2>\n  <p>Everything runs on small, hosted models through Hugging Face Inference Providers: a compact generator driving the agent, a lightweight embedding model doing the geometry, plus live web and image search for grounding. The front end is Gradio, with three tabs: research a run, compare saved personas, and inspect the full agent trace, so you can check for yourself that it leans on real sources rather than quietly making things up. A set of personas ships prebuilt, so the comparison works the moment the page loads, no token required.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"try-it\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#try-it\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Try it </span></h2>\n  <p>Open the Compare saved personas tab to start, or research someone new and add them to the atlas: huggingface.co/spaces/build-small-hackathon/persona-atlas</p>\n </body>\n</html>",
+  "aiSummary": "Persona Atlas 通过让一个小模型智能体研究公众人物，以其口吻回答开放式问题，并将答案嵌入空间进行比较，从而将公众人物转化为可量化的行为画像。",
+  "oneSentenceSummary": "Persona Atlas 通过让一个小模型智能体研究公众人物，以其口吻回答开放式问题，并将答案嵌入空间进行比较，从而将公众人物转化为可量化的行为画像。",
+  "summary": "Persona Atlas 是 Hugging Face \"build-small\" 黑客马拉松的一个项目，旨在创建著名思想家的行为画像。其流程包含三个步骤：首先，一个智能体通过网络搜索研究公众人物，构建基于事实的档案；然后，该人格模型回答十个精心设计的关于身份、伦理、真理和意义的开放式问题；最后，每个答案被嵌入向量空间，将人格转化为几何空间中的一个点。用户可以并排比较多个人格，测量其答案集之间的距离，并查看特质倾向热力图（根据怀疑论、幽默感、抽象思维等锚点进行评分）。该系统完全通过 Hugging Face Inference Providers 在小型托管模型上运行，使用紧凑的生成器、轻量级嵌入模型和实时网络搜索来确保事实基础。其核心洞见在于，人格更多关乎风格而非原始能力，因此即使进行对话的模型很小，这种风格依然能够保留。",
+  "mainPoints": [
+    {
+      "point": "Persona Atlas 使用小型模型为公众人物创建可量化的行为画像。",
+      "explanation": "它使用一个工具调用智能体来研究一个人，然后让一个小模型以其口吻回答开放式问题，并将答案嵌入空间以进行比较。"
+    },
+    {
+      "point": "该项目证明了人格是风格问题，而非模型算力问题。",
+      "explanation": "通过使用小型模型，该项目表明，即使没有大规模推理能力，独特的思维风格也能被捕捉和比较。"
+    },
+    {
+      "point": "比较视图使用嵌入距离和特质热力图来可视化认知差异。",
+      "explanation": "用户可以通过测量多个答案嵌入之间的距离，并查看显示相对特质倾向的双中心热力图，来比较多个人格。"
+    },
+    {
+      "point": "系统完全透明，每个论断都附有智能体追踪和来源链接。",
+      "explanation": "用户可以查看完整的智能体追踪记录，以验证人格档案是否基于真实的网络来源，而非模型幻觉。"
+    }
+  ],
+  "keyQuotes": [
+    "人格主要是风格，而非算力，因此即使进行对话的模型很小，这种风格依然能够保留。",
+    "大多数基准测试衡量的是模型知道什么。Persona Atlas 追求的是更难定义的东西——一个特定思维是如何运作的。",
+    "一个暖色单元格绝不意味着在某个绝对意义上'这个特质得分高'。它只意味着，在你恰好放在一起比较的这些人格中，这一个更倾向于该特质。"
+  ],
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "Hugging Face",
+    "人格建模",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 590,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face - Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780747758000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-06 20:09:18"
+}

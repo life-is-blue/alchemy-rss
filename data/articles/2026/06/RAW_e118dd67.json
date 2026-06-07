@@ -1,0 +1,52 @@
+{
+  "id": "RAW_e118dd67",
+  "title": "Cloudflare 发现 ClickHouse 查询规划瓶颈",
+  "url": "https://www.infoq.com/news/2026/06/cloudflare-clickhouse-bottleneck/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-06 12:55:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare recently described how a <a href=\"https://blog.cloudflare.com/clickhouse-query-plan-contention/\">slowdown in its billing pipeline was traced to contention inside the query planning stage of ClickHouse</a>. The team profiled the bottleneck and patched ClickHouse to replace an exclusive lock with a shared lock, drop the per-query copy of the parts list, and improve part filtering.</p>\n   <p>Cloudflare's pipeline supports billing and fraud systems, so delays can affect multiple downstream services. After a migration that significantly increased the number of data parts, the daily aggregation jobs in ClickHouse became much slower, even though standard performance metrics such as I/O, memory usage, and scanned rows appeared normal.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/06/cloudflare-clickhouse-bottleneck/news/2026/06/cloudflare-clickhouse-bottleneck/en/resources/1BLOG-3299_image2-1779254163610.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/cloudflare-clickhouse-bottleneck/en/resources/1BLOG-3299_image2-1779254163610.png\" rel=\"share\"></p>\n   <p><em>Average SELECT query durations. Source: Cloudflare blog</em></p>\n   <p>Cloudflare has used ClickHouse since before it supported built-in data expiration, and handles hundreds of petabytes of data. As a result, it created its own retention system by splitting data in the Ready-Analytics table into daily partitions and deleting anything older than 31 days. <a href=\"https://www.linkedin.com/in/james-morrison-38784912a/\">James Morrison</a> and <a href=\"https://www.linkedin.com/in/christian-end/\">Christian Endres</a>, senior distributed systems engineers at Cloudflare, explain:</p>\n   <blockquote>\n    <p>This system is popular, with hundreds of applications using it. It had already grown to more than 2PiB of data by December 2024, and an ingestion rate of millions of rows per second. But it had one critical flaw: its retention policy.</p>\n   </blockquote>\n   <p>During the migration, Cloudflare changed its ClickHouse partitioning scheme to include customer namespaces, allowing data retention to be managed separately per tenant. <a href=\"https://clickhouse.com/\">ClickHouse</a> is an open-source analytical database designed for fast analysis of large data volumes, commonly used for logs, metrics, analytics, and real-time reporting. While the number of parts accessed per query was expected to remain the same with the new sharding approach, Morrison and Endres summarize the issue and its root cause:</p>\n   <blockquote>\n    <p>A huge amount of time was being spent in query planning. This is the phase before execution when ClickHouse decides which parts to read (...) 45% of the sampled CPU time was being spent in a single function called filterPartsByPartition (...) The problem wasn't CPU-bound work; it was massive lock contention. More than half of our query duration was spent waiting to acquire a single mutex (MergeTreeData) that protects the table's list of parts.</p>\n   </blockquote>\n   <p>The team applied three changes to reduce the slowdown: it patched ClickHouse, replacing the exclusive lock with a shared lock and removing the copy of the full list of data parts for every query. Furthermore, they improved part filtering to avoid scanning the entire list each time. Together, the changes significantly reduced query latency and stabilized performance as part counts continued to grow. Morrison and Endres conclude:</p>\n   <blockquote>\n    <p>After deploying this patch in March 2026, query durations dropped by 50%. More importantly, this finally breaks correlation of query durations with the number of parts.</p>\n   </blockquote>\n   <p><em><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/06/cloudflare-clickhouse-bottleneck/news/2026/06/cloudflare-clickhouse-bottleneck/en/resources/1BLOG-3299_image8-1779254163610.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/cloudflare-clickhouse-bottleneck/en/resources/1BLOG-3299_image8-1779254163610.png\" rel=\"share\"></em></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>While most <a href=\"https://www.reddit.com/r/CloudFlare/comments/1tcznp5/our_billing_pipeline_was_suddenly_slow_the/\">practitioners on Reddit focus on the recent layoffs and the \"single massive table\" design</a>, Edydh Marquez Avila, field engineer at Park Place Technologies, <a href=\"https://www.linkedin.com/posts/edydh-marquez-avila-52bb2425_cloudflares-clickhouse-investigation-is-share-7460863516007317504-3rK_?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">comments</a> on LinkedIn:</p>\n   <blockquote>\n    <p>Cloudflare’s ClickHouse investigation is a good reminder that modern infrastructure failures increasingly happen in coordination layers, not obvious resource limits (...) The interesting signal is broader than ClickHouse itself (...) High-level telemetry alone is no longer enough for diagnosing large-scale systems under concurrency. Low-level execution visibility still matters.</p>\n   </blockquote>\n   <p>While the fixes stabilized query performance and resolved the immediate billing slowdown, the underlying partitioning design may still create operational problems as the number of data parts continues to grow. According to the authors, the increasing metadata load has also affected <a href=\"https://github.com/cloudflare/kafka_zookeeper_exporter\">ZooKeeper</a>, which manages ClickHouse cluster coordination, and discussing an \"uneasy truce\", the team questions whether the current architecture will remain sustainable long-term.</p>\n   <p>Cloudflare contributed the changes to the ClickHouse project, where they were merged upstream and became available starting with <a href=\"https://clickhouse.com/blog/clickhouse-release-25-11\">version 25.11</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Identifies Query Planning Bottleneck in ClickHouse\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/cloudflare-clickhouse-bottleneck/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780721700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 发现 ClickHouse 中由锁竞争引起的查询规划瓶颈，并通过共享锁和优化分区过滤进行修复，将查询耗时降低了 50%。",
+  "oneSentenceSummary": "Cloudflare 发现 ClickHouse 中由锁竞争引起的查询规划瓶颈，并通过共享锁和优化分区过滤进行修复，将查询耗时降低了 50%。",
+  "summary": "本文报道了 Cloudflare 如何诊断并解决其基于 ClickHouse 的计费管道中严重的性能下降问题。在迁移导致数据分区数量增加后，尽管 I/O、内存和行扫描指标正常，但每日聚合任务的速度却急剧下降。性能分析显示，由于保护表分区列表的互斥锁存在大量锁竞争，45% 的 CPU 时间消耗在单个函数 `filterPartsByPartition` 上。团队应用了三个针对性补丁：将独占锁替换为共享锁、消除每次查询对完整分区列表的复制、以及改进分区过滤逻辑。这些更改于 2026 年 3 月部署，将查询耗时降低了 50%，并使查询延迟与分区数量增长脱钩。文章还指出，底层分区设计可能仍会带来长期运维挑战，并且 Cloudflare 已将该修复贡献给上游的 ClickHouse 25.11 版本。",
+  "mainPoints": [
+    {
+      "point": "ClickHouse 计费管道性能下降的根源是查询规划中的锁竞争，而非资源限制。",
+      "explanation": "尽管 I/O、内存和扫描行数正常，但在迁移导致数据分区增加后，查询耗时激增。性能分析显示，由于单个互斥锁的竞争，45% 的 CPU 时间消耗在 `filterPartsByPartition` 函数上。"
+    },
+    {
+      "point": "三个针对性补丁解决了瓶颈：共享锁、移除每次查询的分区列表复制以及改进过滤逻辑。",
+      "explanation": "将独占锁替换为共享锁、停止为每个查询复制完整分区列表以及优化分区过滤，共同将查询耗时降低了 50%。"
+    },
+    {
+      "point": "该修复使查询延迟与分区数量增长脱钩，但分区设计可能仍面临长期挑战。",
+      "explanation": "虽然性能得以稳定，但不断增长的元数据负载也会影响 ZooKeeper 的协调，团队对该架构的长期可持续性存疑。"
+    }
+  ],
+  "keyQuotes": [
+    "45% 的采样 CPU 时间消耗在名为 filterPartsByPartition 的单个函数上 (...) 问题不在于 CPU 密集型工作，而在于严重的锁竞争。",
+    "在 2026 年 3 月部署此补丁后，查询耗时下降了 50%。更重要的是，这终于打破了查询耗时与分区数量之间的相关性。",
+    "Cloudflare 对 ClickHouse 的调查很好地提醒我们，现代基础设施故障越来越多地发生在协调层，而非显而易见的资源限制上。"
+  ],
+  "tags": [
+    "ClickHouse",
+    "数据库",
+    "性能优化",
+    "云基础设施",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 607,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780721700000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-06 12:55:00"
+}
