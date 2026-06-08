@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-08 08:31:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-08 11:05:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4868,9 +4868,7 @@
 
 ### [Coding-Agent-技术全景图：Context-Engineering、Subagents-与-Harness，一年范式转移全解析](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286556&idx=1&sn=e20fc46413fcb8fae553d416e38598d6)
 
-2026-06-07 10:15:00 | 标签: AI Agent, Coding Agent, Context Engineering, AI 编程, LLM
-
-> 文章是 InfoQ 对 Thoughtworks 全球 AI 辅助软件交付负责人 Birgitta Böckeler 在 QCon 纽约站演讲的编译整理。内容全面回顾了过去一年 Coding Agent 领域的关键演进：从 Context Engineering 的兴起（Skills、Subagents、渐进式上下文加载），到云端低监督/无监督自主开发模式的普及，再到核心问题——如何通过 Harness Engineering（确定性工具、结构性测试、自定义 Lint 规则）构建安全网来约束非确定性模型产出。演讲还深入分析了减少人工监督带来的风险评估框架（概率、影响、可检测性）、安全风险（Pr...
+2026-06-07 10:15:00
 
 
 
@@ -9040,17 +9038,13 @@
 
 ### [“没水了，鱼需要进化”：再访田渊栋，46.5-亿美金估值的-RSI-与-AI-自进化｜Neolabs-特辑](https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247497762&idx=1&sn=c0c3d6ac1eea0507a13fa1285ba23cc4)
 
-2026-06-07 12:35:00 | 标签: AI Agent, AI 商业化, LLM, 强化学习, AI 安全与对齐
-
-> 本文是硅谷 101 对 Meta 前 FAIR 研究总监田渊栋的深度视频访谈文字版。田渊栋在访谈中详细解释了他为何选择加入由 8 位顶级研究员联合创立的 AI 实验室 RSI（Recursive Superintelligence），以及 RSI 的核心愿景——通过递归自我改进（RSI）实现 AI 的自动化科研，最大化知识发现速率。他阐述了 RSI 的技术路线，包括对预训练、强化学习、连续思维链（Coconut）、可解释性等关键方向的看法，并对比了 SSI、AMI Labs、Ineffable Intelligence 等新兴 AI 实验室的路线差异。访谈还深入探讨了 AI 对就业市场的冲击，...
+2026-06-07 12:35:00
 
 
 
 ### [对话奇点灵智：少儿-AI-硬件的下一代，不是-Chatbot，而是能自进化的实体智能体](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524534&idx=1&sn=2f7576a63d4e48931bbd6cb2fe125430)
 
-2026-06-07 10:30:00 | 标签: AI 产品设计, AI 硬件, 儿童教育, AI Agent, 产品管理
-
-> 本文是 Founder Park 对奇点灵智创始人兼 CEO 包塔的深度专访。文章详细阐述了团队从 2023 年开始，如何通过「软硬倒置」的方法论（手工原型、多轮 Alpha 测试）验证产品方向，并最终推出面向 3-8 岁儿童的 AI 硬件「多奇 AI 小外教」。核心观点是，少儿 AI 硬件的下一代不应只是 Chatbot，而应是能自进化的实体智能体。文章深入探讨了团队如何通过底层软硬件解耦，将摄像头、屏幕、按钮等硬件器官封装成 AI 可调用的 Tools，并构建了多奇 OS（Agentic OS），内含教育专家 Agent、伙伴 Agent、PM Agent 和 Coding Agent。这...
+2026-06-07 10:30:00
 
 
 
@@ -12578,73 +12572,55 @@
 
 ### [Room360：视频转-3D-空间重建平台](https://huggingface.co/blog/build-small-hackathon/video-to-3d-spatial-reconstruction-platform)
 
-2026-06-08 03:30:16 | 标签: 3D 重建, AI 应用, 计算机视觉, 云计算, 空间计算
-
-> 本文介绍了 Room360，一个 AI 驱动的空间重建平台，旨在将标准智能手机视频转化为可交互的 3D 环境。该平台的流程包括五个阶段：视频采集、帧提取、使用预训练模型进行图像到 3D 的转换、将单个 3D 模型进行空间对齐与融合以形成统一场景，以及交互式可视化。关键技术方面包括用于平衡质量与速度的动态帧提取、用于模型对齐的旋转变换估计，以及用于快速处理的云端推理。文章概述了其工作流程、技术组件以及在房地产、室内设计和虚拟导览中的潜在应用，将 Room360 定位为基于专用硬件的 3D 重建系统的一种易于使用的替代方案。
+2026-06-08 03:30:16
 
 
 
 ### [Mythograph-Atelier-#1---对你有意义的抽象艺术](https://huggingface.co/blog/build-small-hackathon/mythograph-atelier-01-inspirations)
 
-2026-06-08 03:19:08 | 标签: AI 艺术, 生成式 AI, AI 产品与应用, 创意 AI, 黑客马拉松项目
-
-> 作者讲述了他们在 Build Small 黑客马拉松中构建 Mythograph Atelier 的经历。该项目是一个 AI 驱动的艺术工作室，能够创作具有个人意义的抽象画，超越了随机图像生成。灵感来源于三个方面：一次博物馆参观中，一幅抽象画引发了对艺术可及性和个人连接的思考；对具有动态、对话式界面并能适应用户意图的 AI 原生应用的展望；以及强调通过提问实现深度理解的“拷问我”AI 技能。作者详细阐述了该项目旨在创造用户能够解释并与之产生共鸣的艺术品的目标，分享了使用 FLUX 的初步成果，并概述了未来的改进计划。本文是一篇关于黑客马拉松项目创意与技术过程的个人反思性文章。
+2026-06-08 03:19:08
 
 
 
 ### [AI-垃圾内容、生产力，以及为什么-AI-驱动的世界不会飞速前进](https://garymarcus.substack.com/p/slop-productivity-and-why-the-ai)
 
-2026-06-07 23:31:43 | 标签: AI 垃圾内容, AI 经济学, 生产力, 生成式 AI, AI 批评
-
-> Gary Marcus 综合了来自《金融时报》、《华盛顿邮报》等来源的数据，论证了生成式 AI 虽然极大地增加了内容（应用、书籍、音乐曲目、科学论文和法律文件）的数量，但并未带来质量、销售额或 GDP 的相应增长。他引入了“垃圾内容”这一概念来描述这种低价值的产出。文章进一步将批评延伸到智能体编程领域，指出尽管这可能是最有希望的生产力用例，但它也是资金消耗最密集的领域，像 OpenAI 和 Anthropic 这样的提供商可能亏损远超其收入。Marcus 总结道，AI 行业有制造一场空洞繁荣的风险，即产生了活动却没有持久价值，并警告说 AI 的成本可能很快就会超过它所取代的人力劳动。
+2026-06-07 23:31:43
 
 
 
 ### [重磅！Anthropic-内部-Skills-经验公开了！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723318&idx=1&sn=39d853bbc8aedef524f0adc4fdf0bdd8)
 
-2026-06-07 22:03:00 | 标签: AI 编程, Claude Code, Skills, 提示工程, AI 工作流
-
-> 本文是对 Anthropic 官方博客《Lessons from building Claude Code: How we use Skills》的深度编译与解读。文章首先纠正了将 Skill 简单等同于提示词的常见误解，指出 Skill 更像一个围绕任务组织的文件夹，可包含文档、脚本、模板、示例和 hooks。核心内容分为三大部分：一是 Anthropic 内部将 Skills 归为 9 类，从补知识（library/API reference）、补验证（product verification）、补数据（data fetching），到接流程（business process automa...
+2026-06-07 22:03:00
 
 
 
 ### [Her-·-हेर-—-你的-Claude-Code-会话侦探](https://huggingface.co/blog/build-small-hackathon/her-blog)
 
-2026-06-07 18:13:41 | 标签: AI Agent, LLM, 开发者工具, 开源, AI 安全
-
-> 本文介绍了 Her (हेर)，一个在 Hugging Face 黑客马拉松期间利用一个周末构建的工具。它解决了一个常见痛点：Claude Code 会话会生成冗长的 JSONL 跟踪文件，但很少有人会去阅读。Her 读取这些文件，并提供结构化、人类可读的调查结果。它能重构会话的叙事脉络，识别风险操作（部署、配置更改、密钥访问），可视化 token 和工具使用情况，并提供基于事实的改进建议。一个关键设计原则是可信赖性：评估引擎是确定性的，小型语言模型 (Nemotron-Mini-4B-Instruct) 通过 ZeroGPU 在 Hugging Face Space 的 GPU 上本地运行，...
+2026-06-07 18:13:41
 
 
 
 ### [激活语言化器能否揭示内部思维链？—-LessWrong](https://www.lesswrong.com/posts/QQQAcKuWK6k98FivY/can-activation-verbalizers-surface-an-internal-chain-of-1)
 
-2026-06-07 12:24:01 | 标签: LLM, AI 安全, 可解释性, 机制可解释性, 思维链
-
-> 这篇 LessWrong 文章介绍了一项对激活语言化器（AV）的系统性评估。AV 是自然语言自编码器（NLA）的一个组件，旨在判断其能否揭示大语言模型在单次前向传播中的不透明推理过程。作者在竞赛数学问题数据集上测试了 Qwen2.5（7B）、Gemma（3 27B）和 Llama（3.3 70B）的开源权重 NLA。核心发现是，当前的 NLA 在此任务上并不可靠。关键证据包括：（1）NLA 的重建噪声很高，通常比一个简单基线（平均激活方向）更差，因此无法追踪细微的推理差异。（2）语言化结果无法可靠地预测模型的输出，尤其是在模型出错时。（3）虽然确实浮现出一些推理迹象，但它们很少能形成连贯的思维...
+2026-06-07 12:24:01
 
 
 
 ### [AI-真能学会心算？隐式思维链首次得到理论证明，Stuart-Russell-参与](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651037576&idx=2&sn=8fe5a722058d772b225ca70a6170e5a8)
 
-2026-06-07 11:30:00 | 标签: LLM, 推理模型, 思维链, Transformer, AI 研究
-
-> 本文报道了 UC Berkeley 与普林斯顿大学的一项新研究，该研究首次为「隐式思维链（ICoT）」提供了严格的数学证明。文章首先点明显式思维链的高成本问题——推理延迟与 token 消耗随链长线性增长，并指出 ICoT 旨在让模型将中间步骤「内化」到隐藏状态中。研究的核心创新在于提出了「Log-ICoT」训练方法：利用思维链的树状结构，一次性隐藏一整层中间步骤，将训练阶段从 k-1 个缩减至 log₂k 个。团队以 k-奇偶校验问题为实验平台，证明了在 Log-ICoT 课程下，一个 L 层 Transformer 只需多项式数量的样本和 log₂k 个梯度步骤，即可学会直接预测结果，且误...
+2026-06-07 11:30:00
 
 
 
 ### [ICML-2026｜FusionRoute：从专家路由到自我修正，一种新的多-LLM-协作范式](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651037576&idx=3&sn=d9f62fcd25f17dc41ab5b387f1862731)
 
-2026-06-07 11:30:00 | 标签: LLM, 多模型协作, 模型路由, AI Agent, 模型训练与推理
-
-> 本文介绍由 CMU、Meta AI 和马里兰大学合作提出的 FusionRoute 方法。不同于以往在整段生成后选择模型（sequence-level）或仅从多个专家中挑选 token（token-level），FusionRoute 训练一个轻量级路由器，在每一步解码时动态判断当前 token 最适合由哪个专家生成，同时路由器自身也输出补充 logits 与专家输出融合。这种设计解决了纯选择范式在理论上存在的「不可识别性」问题——仅凭最优轨迹的 Q 值无法可靠识别应选专家。路由器训练分两阶段：先通过监督微调学习基础选择与语言能力，再通过基于偏好的优化（CDPO）增强补充生成能力，其中专家 l...
+2026-06-07 11:30:00
 
 
 
 ### [硅谷大佬集体下场做-Neo-Labs-|-盘点估值最高的-20-家](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108935&idx=1&sn=635c3ff3a485da86b902c6d2f21edd90)
 
-2026-06-07 10:16:00 | 标签: AI 商业化, 创业, 硅谷, 科技投资, AI 创业公司
-
-> 文章以 Jeff Bezos 的 Project Prometheus 为引，定义了一种新型组织形态「Neo Labs」—— 介于学术机构与创业公司之间，同时承担科学验证、工程落地、市场验证与资本支撑四重任务。作者从研究即生产、工程门槛下降、资本提前入场三个条件解释了 Neo Labs 为何在当下集中涌现，并逐一盘点了估值 TOP 20 的公司，涵盖 AI 安全、机器人、空间智能、AI 芯片、AI 药物、数学推理等方向。最后指出，这些公司真正的考验并非技术，而是能否熬过产品问世前的沉默期，并面临人才与资本的双重压力。
+2026-06-07 10:16:00
 
 
 
@@ -41930,41 +41906,31 @@
 
 ### [GitHub---yukiyokitani/office-open-xml-viewer](https://github.com/yukiyokotani/office-open-xml-viewer)
 
-2026-06-08 01:22:28 | 标签: WebAssembly, Rust, Canvas 2D, Office Open XML, AI 编程
-
-> 这个 GitHub 仓库提供了一个完整的、基于浏览器的 Office Open XML 文档（DOCX、XLSX、PPTX）查看器。该项目的显著之处在于，整个代码库——包括 Rust 解析器、TypeScript 渲染器、测试和工具——都是由 Anthropic 的 AI 助手 Claude 通过迭代提示生成的，没有任何人类编写的应用代码。解析器用 Rust 编写并编译为 WebAssembly，而渲染器则使用 Canvas 2D API。该包以 `@silurus/ooxml` 发布在 npm 上，并提供了一个无头 API（`DocxDocument`、`XlsxWorkbook`、`Ppt...
+2026-06-08 01:22:28
 
 
 
 ### [LLM-正在侵蚀我的软件工程职业生涯，我不知道该怎么办](https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/)
 
-2026-06-07 20:49:29 | 标签: 软件工程, LLM, AI 编程, 职业发展, 领域知识
-
-> 作者是一位在金融和支付系统领域拥有十年经验的软件工程师，他讲述了自己因 LLM 迅速侵蚀其专业支柱而遭遇的个人与职业危机。他首先意识到，自己深厚的领域知识（PCI 合规、复式记账、幂等性）正在变得商品化，因为 LLM 已经能够生成以往需要多年经验才能完成的高级设计文档。接着，他曾经引以为傲的调试和分布式系统直觉——长期就业能力的通行证——也被智能体工作流和 MCP 几乎淘汰，这些工具能一次性解决 90% 的 Bug，包括竞态条件和边缘情况。最后，他仅剩的支柱——代码质量与架构（“品味”）——也在逐渐瓦解，因为行业正在接受为 LLM 阅读而非人类维护而优化的 C 级代码库。他总结道，市场正在将所...
+2026-06-07 20:49:29
 
 
 
 ### [GitHub---devenjarvis/lathe：按需生成动手实践的多部分技术教程，借助-LLM-技能让内容更易理解，然后你亲手完成它们-✋](https://github.com/devenjarvis/lathe)
 
-2026-06-07 19:16:46 | 标签: AI 编程, LLM, 开发者工具, AI 智能体, 提示词工程
-
-> Lathe 是一个将 LLM 技能与 Go CLI 相结合的工具，用于生成和管理动手实践的技术教程。用户向 LLM 会话（Claude Code、Cursor 或 Codex）输入一个主题，LLM 便会生成一个结构化的多部分教程。然后，用户在一个专门构建的本地 Web UI 中逐步完成该教程。该项目强调主动学习而非被动代码生成，将其定位为利用 LLM 进行教学而非替用户思考的方式。它包含教程验证、来源溯源、可定制的写作风格以及库管理系统等功能。作者明确承认，LLM 生成的教程不如人类编写的教程，但认为它们填补了人力资源稀缺的晦涩或新兴领域的空白。该项目对其自身的“氛围编码”性质以及 LLM 的...
+2026-06-07 19:16:46
 
 
 
 ### [我现在用-Claude-设计比用-Figma-还多](https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/)
 
-2026-06-07 13:04:24 | 标签: AI 设计, UX 设计, 产品开发, AI 编程, 设计工作流
-
-> 作者是 Jane Street 的一名设计师，讲述了他们从对 LLM 持怀疑态度到产生依赖的历程，驱动力是需要驾驭 OCaml 和 Bonsai 等不熟悉的技术。他们详细描述了一种新的工作流程：先撰写问题描述，然后使用 Claude Code 在实际代码库中构建可工作的原型，自由迭代，最后推送以获取用户反馈。这种方法（例如为内部 SQL 工具添加 LLM 提示功能）消除了对线框图和规范文档的需求，使所有精力都投入到最终产品上。作者承认存在挑战，包括呈现一个功能完备的特性可能会抑制评审者的意见，以及担心使用 AI 进行迭代设计可能会限制创造性探索。尽管存在这些矛盾，他们发现构建真实产品的能力令人...
+2026-06-07 13:04:24
 
 
 
 ### [砍掉-90%冗余词元，省下-70-万美元：Netflix-开源工具狙击-AI-账单黑洞](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286556&idx=2&sn=5f2c0c609af8ed994a20ecc86aae53bd)
 
-2026-06-07 10:15:00 | 标签: AI 编程, LLM, 开源项目, 成本优化, AI 工程化
-
-> 本文报道了 Netflix 高级工程师 Tejas Chopra 开发并开源的词元精简工具 Headroom。文章从 AI 使用成本飙升的行业背景切入，以 Chopra 个人 287 美元的 Claude Sonnet 账单为引子，指出高达 90% 的词元对模型是冗余的，主要来自 JSON 结构、API 模板、数据库字段等机器生成数据。Headroom 通过 CacheAligner 识别变化内容、路由分发至 AST/JSON/DOM 等专用压缩器、以及 CCR 机制实现可逆压缩，在压缩后仍允许模型按需获取原始数据。文章还介绍了 Headroom 的实际效果（节省约 70 万美元、2000 亿...
+2026-06-07 10:15:00
 
 
 
@@ -59396,25 +59362,19 @@ http://antirez.com/news/162
 
 ### [AI-不会合作？那是因为他们没见过市场经济｜Hao-好聊趋势](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569024&idx=1&sn=1a73a60848e59c69ffc6c066c314a872)
 
-2026-06-07 20:21:00 | 标签: AI Agent, 多智能体系统, LLM, AI 研究, AI 架构
-
-> 文章围绕「AI 为何不合作」与「如何让 AI 学会合作」两个核心问题展开。首先引用 2026 年多项研究（北卡大学、UIUC、斯坦福、Google DeepMind）揭示现状：多 Agent 系统失败率高达 41%-87%，核心原因并非模型能力不足，而是协调崩溃与趋同推理；能力越强的模型（如 o3）反而合作能力越差，根源在于当前 LLM 的训练过程本质上是「单人游戏」（MDP），从未面对过真正的他者，形成「唯我论」认知架构。接着，文章批判了当下主流的 Orchestrator-Worker 架构，将其类比为「计划经济」，指出其面临分工悖论、信用分配失灵和哈耶克「知识分散诅咒」三大结构性困境。最...
+2026-06-07 20:21:00
 
 
 
 ### [ChatGPT-将迎来史上最大改版，“AI-只用来聊天的时代结束了”](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569001&idx=1&sn=b90d3c7f17b3a8c8f8040ff3d994e411)
 
-2026-06-07 19:17:00 | 标签: AI 产品与应用, AI Agent, AI 编程, ChatGPT, OpenAI
-
-> 文章基于《金融时报》独家消息，报道 OpenAI 正对 ChatGPT 进行自 2022 年推出以来最大规模改版，核心是将增长最快的编程工具 Codex 并入 ChatGPT，并接入外部合作伙伴应用。文章从战略意图、技术基础、竞争压力、商业逻辑四个层面展开：OpenAI 高管认为 AI 的未来在于替用户执行任务的智能体，而非简单对话；底层模型 GPT-5.5 的升级使 Codex 能独立执行复杂多步骤任务；Anthropic 的 Claude Code 在编程能力上曾领先 OpenAI，直接促使 OpenAI 火速组建 Codex 团队并调整组织架构；IPO 在即，OpenAI 需要将 Cod...
+2026-06-07 19:17:00
 
 
 
 ### [微软-CEO-纳德拉最新谈-AI-革命：从“Token-资本”到人类能动性的未来-|-全文+视频](https://mp.weixin.qq.com/s?__biz=MzIxODUzNTg2MA==&mid=2247492069&idx=1&sn=da57d47904c7d2b575ef09042da06f8f)
 
-2026-06-07 18:11:00 | 标签: AI Agent, LLM, AI 商业化, AI 工作流, AI 安全与对齐
-
-> 本文是微软 CEO 萨提亚·纳德拉与领英创始人里德·霍夫曼的一场深度对话实录。纳德拉从个人对诗歌的热爱切入，将 AI 大模型类比为对知识的“压缩”，并提出了 AI 时代的新基础概念——“爬坡机器”，即通过数据和强化学习不断逼近目标。他进一步阐述了“Token 资本”将作为与人力资本并列的经济新引擎，并警告企业需保护“隐性知识”不被 AI 模型外泄。在工作形态方面，纳德拉认为开发正从代码补全向自主代理循环演进，并提出了“代理开发环境”的概念。他还介绍了微软在 AI 治理方面的“Agent 365”计划，强调可观测性与审计。在宏观层面，纳德拉主张国家主权应体现为让本国企业在 Token 经济中蓬勃...
+2026-06-07 18:11:00
 
 
 

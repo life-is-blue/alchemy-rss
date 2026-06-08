@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-08 08:31:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-08 11:05:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -560,9 +560,7 @@
 
 ### [ExtendDB：开源-Amazon-DynamoDB-兼容适配器，支持可插拔存储后端](https://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-07 14:25:00 | 标签: Cloud Native / DevOps, 开源, 数据库, Rust, AWS
-
-> AWS 发布了 ExtendDB，这是一个开源的 DynamoDB 兼容适配器，使开发者能够使用 DynamoDB API 搭配不同的存储后端，首发支持 PostgreSQL。ExtendDB 使用 Rust 编写，充当应用程序与存储之间的翻译器，支持现有 AWS SDK 和工具，无需修改。它专为本地开发、CI 测试以及无法使用 DynamoDB 的本地工作负载而设计。该项目处于早期开发阶段（v0.1），实现了 DynamoDB 核心控制平面和数据平面 API。其架构基于 Rust crate，通过存储 trait 可独立添加 Cassandra 或 MySQL 等后端。文章将 ExtendD...
+2026-06-07 14:25:00
 
 
 
