@@ -1,0 +1,56 @@
+{
+  "id": "RAW_e58e788f",
+  "title": "ExtendDB：开源 Amazon DynamoDB 兼容适配器，支持可插拔存储后端",
+  "url": "https://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-07 14:25:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/aws-extenddb-dynamodb/\">AWS recently announced ExtendDB</a>, a DynamoDB-compatible adapter that lets developers use the DynamoDB API with different storage backends, starting with PostgreSQL. The open source project supports existing AWS SDKs and tools without modification, giving teams greater flexibility to run DynamoDB-style workloads outside of native DynamoDB while maintaining compatibility with current applications and workflows.</p>\n   <p>Currently at version 0.1, <a href=\"https://extenddb.org/\">ExtendDB</a> implements DynamoDB control plane and data plane APIs, including support for tables, items, and streams. Its initial storage backend is PostgreSQL, while the adapter’s pluggable design allows additional backends to be added independently. It can be used for local development, CI testing, and running DynamoDB-compatible workloads in on-premises environments backed by PostgreSQL databases. <a href=\"https://www.linkedin.com/in/lee-hannigan/\">Lee Hannigan</a>, senior database engineer at AWS, and <a href=\"https://www.linkedin.com/in/deepthimohan/\">Deepthi Mohan</a>, principal product manager at AWS, explain:</p>\n   <blockquote>\n    <p>ExtendDB is an implementation of the DynamoDB wire protocol, written in Rust and developed by AWS engineers. Think of it as a translator sitting between your application and your storage backend. If you use the PostgreSQL reference backend, your application speaks DynamoDB, ExtendDB translates to SQL, and PostgreSQL handles the storage.</p>\n   </blockquote>\n   <p><em><img class=\"zoom-image\" alt=\"\" data-src=\"https://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter/news/2026/06/extenddb-dynamodb-adapter/en/resources/1DB5622-1-1779640791081.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/extenddb-dynamodb-adapter/en/resources/1DB5622-1-1779640791081.png\" rel=\"share\"></em></p>\n   <p><em>Source: AWS blog</em></p>\n   <p>ExtendDB runs as a single binary with no external runtime dependencies. It requires TLS, generating a self-signed certificate on first run, and supports SigV4 authentication through a local IAM-like credential store compatible with standard DynamoDB signing workflows. Hannigan and Mohan add:</p>\n   <blockquote>\n    <p>ExtendDB separates concerns into Rust crates. The core crate handles types, validation, and expression evaluation as pure synchronous Rust. The engine crate implements DynamoDB API semantics. The storage-postgres crate is the PostgreSQL backend, built against a storage trait that defines the interface any backend must implement. The server crate ties it together with an HTTP server, management API, and web console.</p>\n   </blockquote>\n   <p>The storage layer is defined as a Rust trait, allowing additional backends such as Apache Cassandra or MySQL to be added without modifying the core adapter. Answering questions about the differences with <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html\">DynamoDB Local</a>, Hannigan <a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7462911160804245504?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7462911160804245504%2C7462918963761430528%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7462911160804245504%2C7462924778983731205%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287462918963761430528%2Curn%3Ali%3AugcPost%3A7462911160804245504%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287462924778983731205%2Curn%3Ali%3AugcPost%3A7462911160804245504%29\">clarifies on LinkedIn</a>:</p>\n   <blockquote>\n    <p>Initially, in the current version it doesn't differ that much except you can use Postgres. But as we progress, it'll have more parity with DynamoDB and potentially be suitable to run for production workloads. Think of when some of your application must remain on prem for compliance reasons etc.</p>\n   </blockquote>\n   <p>While Corey Quinn opened a PR to add a <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7463035640884973569/\">Route53 backend</a>, in a <a href=\"https://www.reddit.com/r/aws/comments/1titr6v/introducing_extenddb_an_open_source/\">popular Reddit thread</a>, user<em> Akustic646</em> comments:</p>\n   <blockquote>\n    <p>Will be really interesting to see where people go with this, sort of surprised AWS is offering this up.</p>\n   </blockquote>\n   <p>User <em>Dull-Mathematician45</em> writes instead:</p>\n   <blockquote>\n    <p>Sadly the performance is not good (yet). Latency shoots up under high write load. I'm seeing 300ms p90 latency on update_item commands. and it causes reads to reach 20ms p90. This is hitting it with concurrency 10 on a 16 core MacBook.</p>\n   </blockquote>\n   <p>A similar Rust project, called <a href=\"https://github.com/jakelarkn/rektifier\">Rektifier</a>, was being developed independently before ExtendDB’s release, reflecting broader interest in DynamoDB-compatible, PostgreSQL-backed proxies. Its author, Jake Larkin, also <a href=\"https://www.linkedin.com/posts/jakelarkn_github-jakelarknrektifier-activity-7463090628583735298-DqNU?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">claims stronger early performance results</a>.</p>\n   <p><a href=\"https://github.com/ExtendDB/extenddb\">Available on GitHub</a> under an Apache-2.0 license, ExtendDB runs on Linux and macOS and requires Rust 1.85+ and PostgreSQL 14+.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"ExtendDB: Open Source Amazon DynamoDB Compatible Adapter with Pluggable Storage Backends\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780813500000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 发布了 ExtendDB，一个用 Rust 编写的开源 DynamoDB 兼容适配器，允许使用 DynamoDB API 搭配可插拔的存储后端，首发支持 PostgreSQL。",
+  "oneSentenceSummary": "AWS 发布了 ExtendDB，一个用 Rust 编写的开源 DynamoDB 兼容适配器，允许使用 DynamoDB API 搭配可插拔的存储后端，首发支持 PostgreSQL。",
+  "summary": "AWS 发布了 ExtendDB，这是一个开源的 DynamoDB 兼容适配器，使开发者能够使用 DynamoDB API 搭配不同的存储后端，首发支持 PostgreSQL。ExtendDB 使用 Rust 编写，充当应用程序与存储之间的翻译器，支持现有 AWS SDK 和工具，无需修改。它专为本地开发、CI 测试以及无法使用 DynamoDB 的本地工作负载而设计。该项目处于早期开发阶段（v0.1），实现了 DynamoDB 核心控制平面和数据平面 API。其架构基于 Rust crate，通过存储 trait 可独立添加 Cassandra 或 MySQL 等后端。文章将 ExtendDB 与 DynamoDB Local 进行了对比，指出了高写入负载下的早期性能问题，并提及了一个类似的独立项目 Rektifier。ExtendDB 在 GitHub 上以 Apache-2.0 许可证提供。",
+  "mainPoints": [
+    {
+      "point": "ExtendDB 是一个开源的 DynamoDB 兼容适配器，支持可插拔的存储后端。",
+      "explanation": "它允许开发者使用 DynamoDB API 搭配 PostgreSQL 等后端，从而实现本地开发、CI 测试和本地工作负载。"
+    },
+    {
+      "point": "该适配器使用 Rust 编写，并采用模块化的 crate 架构。",
+      "explanation": "核心 crate 处理类型和验证，引擎 crate 实现 DynamoDB 语义，存储 crate 则为可插拔后端定义了 trait。"
+    },
+    {
+      "point": "早期性能显示，在写入密集型负载下延迟较高。",
+      "explanation": "有用户报告，在 16 核 MacBook 上以并发数 10 执行 update_item 命令时，p90 延迟达到 300ms，表明该项目尚未达到生产就绪状态。"
+    },
+    {
+      "point": "ExtendDB 与 DynamoDB Local 不同，其目标是更广泛的生产用例。",
+      "explanation": "AWS 工程师表示，未来版本将与 DynamoDB 实现更高程度的对等，使其可能适用于生产工作负载，尤其是合规驱动的本地部署需求。"
+    }
+  ],
+  "keyQuotes": [
+    "可以把它想象成一个位于应用程序和存储后端之间的翻译器。",
+    "ExtendDB 将关注点分离到 Rust crate 中。核心 crate 以纯同步 Rust 方式处理类型、验证和表达式求值。",
+    "遗憾的是，性能目前还不理想。在高写入负载下，延迟会急剧上升。"
+  ],
+  "tags": [
+    "Cloud Native / DevOps",
+    "开源",
+    "数据库",
+    "Rust",
+    "AWS"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 504,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780813500000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-07 14:25:00"
+}

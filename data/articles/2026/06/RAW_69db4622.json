@@ -1,0 +1,56 @@
+{
+  "id": "RAW_69db4622",
+  "title": "Her · हेर — 你的 Claude Code 会话侦探",
+  "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+  "date": "2026-06-07 18:13:41",
+  "author": "Ashish Chalke",
+  "siteName": "Hugging Face - Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"SVELTE_HYDRATER contents\"></div>\n  <blockquote>\n   <p><strong>Her · हेर</strong> — <em>Marathi for “detective.”</em> A detective for your Claude Code sessions.</p>\n  </blockquote>\n  <p>Try it here: <a href=\"https://huggingface.co/spaces/build-small-hackathon/her\">Her on Hugging Face</a></p>\n  <p>Every Claude Code session leaves a trace — a <code>.jsonl</code> file with every turn, tool call, and token. But in practice, that trace is write-only. Rarely anyone reads 4,000 lines of JSON to figure out <em>why the agent reached for production</em>, where the context budget actually went, or which subagent quietly burned half the run.</p>\n  <p>Her reads it for you.</p>\n  <p><strong>The premise is simple: drop a session file onto the page and let her investigate.</strong> She reconstructs what happened in plain English, flags the risky moves — deploys, config and production changes, secrets — and traces each one back to the exact turn where it happened.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/cOmdEJrsJErSGYf7-ff4J.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/cOmdEJrsJErSGYf7-ff4J.png\" alt=\"CleanShot 2026-06-07 at 15.33.19@2x\"></a></p>\n  <p>She shows where the tokens went, which tools, subagents, skills, and MCP servers were used, and — only when a named, fixable pattern fires — what you could have done better, grounded in Anthropic’s and the community’s best practices. She <em>suggests, never asserts</em>, and stays silent when there’s nothing worth saying.</p>\n  <p>There’s also a built-in copilot: <strong>Ask Her</strong>. Ask <em>“why was this tool used?”</em> and she answers from the trace, cites the turns, and opens the exact tool call. Drop one file for a <strong>session view</strong>; drop several to build a <strong>project view</strong> and hunt a question across many sessions at once.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/BhGpqQDSAN7zIsU13jIlb.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/BhGpqQDSAN7zIsU13jIlb.png\" alt=\"CleanShot 2026-06-07 at 15.34.50@2x\"></a></p>\n  <p><strong>No third-party AI API is ever called.</strong> The model — <code>Nemotron-Mini-4B-Instruct</code> — runs on the Space’s own GPU via ZeroGPU. Your session is uploaded only to a private, auto-deleted namespace that belongs to your run, and nothing about it leaves the box.</p>\n  <p>The split that makes this trustworthy: the <strong>evaluation engine is purely deterministic</strong>. The model is used <em>only</em> to write the English and propose softer suggestions. It never asserts a finding. The numbers don’t move when the model changes.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/qAmjXdtVIAQZNgAfXq-LG.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/qAmjXdtVIAQZNgAfXq-LG.png\" alt=\"CleanShot 2026-06-07 at 15.34.15@2x\"></a></p>\n  <p>One nice detail: Her doesn’t just list the CLI tools a session used — she <strong>identifies</strong> them. A database of top tools from Homebrew, npm, and PyPI ships with the Space, so most tools are named offline with a one-line blurb. When deploy tools, database clients, or dev servers are actually executed, Her flags that activity for the second look it deserves.</p>\n  <p><strong>It grew over a weekend.</strong> It started as an operator’s view — a <strong>journey</strong> graph where every query is a node sized by cost, the heaviest one glowing — built for a friend.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/r8pTOPeIeDoeVpPMA6jfT.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/r8pTOPeIeDoeVpPMA6jfT.png\" alt=\"CleanShot 2026-06-07 at 15.16.31@2x\"></a></p>\n  <p>I showed it to another friend who wanted it simpler, so the graph grew an executive <strong>Report</strong> that’s now the default. Then the first friend asked why <em>their</em> CLI tool didn’t show up — which is how the tool database was born.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/AlqUSi_vlQDk8CDzSsExA.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/67b09a0bbac2756ce900a8fa/AlqUSi_vlQDk8CDzSsExA.png\" alt=\"CleanShot 2026-06-07 at 15.17.45@2x\"></a></p>\n  <p>The frontend is a React app served straight off a Gradio server, with the deterministic engine doing the forensics and Nemotron handling the prose.</p>\n  <p>When Claude loses his mind, call <strong>Her</strong>. ;)</p>\n  <p>Try it here: <a href=\"https://huggingface.co/spaces/build-small-hackathon/her\">Her on Hugging Face</a></p>\n </body>\n</html>",
+  "aiSummary": "Her 是一款开源侦探工具，可分析 Claude Code 会话日志，重构智能体行为、标记风险操作，并提供可操作的洞察，且不会将数据发送至第三方 API。",
+  "oneSentenceSummary": "Her 是一款开源侦探工具，可分析 Claude Code 会话日志，重构智能体行为、标记风险操作，并提供可操作的洞察，且不会将数据发送至第三方 API。",
+  "summary": "本文介绍了 Her (हेर)，一个在 Hugging Face 黑客马拉松期间利用一个周末构建的工具。它解决了一个常见痛点：Claude Code 会话会生成冗长的 JSONL 跟踪文件，但很少有人会去阅读。Her 读取这些文件，并提供结构化、人类可读的调查结果。它能重构会话的叙事脉络，识别风险操作（部署、配置更改、密钥访问），可视化 token 和工具使用情况，并提供基于事实的改进建议。一个关键设计原则是可信赖性：评估引擎是确定性的，小型语言模型 (Nemotron-Mini-4B-Instruct) 通过 ZeroGPU 在 Hugging Face Space 的 GPU 上本地运行，不会将任何数据发送至第三方 API。该工具还内置了一个协作者（'Ask Her'）用于查询跟踪记录，以及一个工具识别数据库用于识别常见的 CLI 工具。文章详细介绍了项目的起源、核心功能、技术架构（基于 Gradio 的 React 前端、确定性引擎、本地 LLM）以及'建议而非断言'的理念。",
+  "mainPoints": [
+    {
+      "point": "Her 解决了 AI 智能体会话日志的'只写'问题。",
+      "explanation": "Claude Code 会话会生成详细但难以阅读的 JSONL 跟踪记录。Her 自动分析这些记录，提供清晰、可操作的摘要，说明智能体做了什么、为什么做以及涉及哪些风险。"
+    },
+    {
+      "point": "通过确定性引擎和仅限本地的 AI 构建信任。",
+      "explanation": "核心取证分析是纯粹确定性的，确保发现结果可靠。LLM 仅用于生成文本和提出建议，并且完全在用户的 Hugging Face Space GPU 上运行，没有任何数据被发送到第三方 API。"
+    },
+    {
+      "point": "该工具既提供高层级报告，也提供细粒度调查界面。",
+      "explanation": "用户可以从会话的执行摘要开始，然后深入查看具体的交互轮次、工具调用和 token 使用情况。'Ask Her' 协作者允许用户使用自然语言查询跟踪记录。"
+    },
+    {
+      "point": "Her 是根据用户反馈，在一个周末内迭代构建而成的。",
+      "explanation": "该项目最初是为朋友制作的一个简单的'旅程'图，随后根据早期用户的需求演变出报告视图、工具数据库和其他功能，展示了一个精益、用户驱动的开发过程。"
+    }
+  ],
+  "keyQuotes": [
+    "每一次 Claude Code 会话都会留下痕迹——一个包含每次交互、工具调用和 token 的 `.jsonl` 文件。但实际上，这个痕迹是'只写'的。",
+    "她*建议，从不断言*，并且在没什么可说的时候保持沉默。",
+    "使其值得信赖的关键在于：**评估引擎是纯粹确定性的**。模型*仅*用于撰写英文文本和提出较软性的建议。"
+  ],
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "开发者工具",
+    "开源",
+    "AI 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 485,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face - Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780827221000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-07 18:13:41"
+}
