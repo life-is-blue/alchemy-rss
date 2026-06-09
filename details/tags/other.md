@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-09 08:27:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-09 11:04:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3547,9 +3547,7 @@
 
 ### [解决-30-年布料模拟难题的多项式](https://towardsdatascience.com/the-polynomial-that-fixed-30-years-of-cloth-simulation/)
 
-2026-06-08 20:30:00 | 标签: 计算机图形学, 物理模拟, 数值方法, 布料模拟, ACM Transactions on Graphics
-
-> 本文详细介绍了 ZOZO 在 2024 年底发表的一项布料模拟突破。文章指出了核心问题：在目前最先进的增量势接触（IPC）方法中使用的对数势垒，会导致牛顿系统在接触面附近的条件数激增，从而引发不稳定性，尤其是在应变限制严格的情况下。ZOZO 的解决方案包含两个部分：首先，用曲率从零开始逐渐增加的三次多项式替代对数函数，从而保持系统的良好条件性；其次，将势垒刚度与材料的局部弹性动态耦合。文章解释了背后的数学原理，提供了一个简化的 Python 实现来演示条件性的差异，并探讨了更广泛的背景——一家时尚公司对可靠虚拟试穿的商业需求如何推动了这项研究。文章还指出，该求解器适用于离线渲染和电子商务的生产...
+2026-06-08 20:30:00
 
 
 
@@ -14157,49 +14155,37 @@
 
 ### [GitHub-初学者指南：常见问题解答](https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions/)
 
-2026-06-09 00:00:00 | 标签: GitHub, Git, 版本控制, 开发者工具, 新手教程
-
-> 这是 GitHub 初学者系列的最后一集，解答了常见问题。文章提供了设置 SSH 密钥和个人访问令牌进行身份验证的分步指南，解释了细粒度令牌和经典令牌的区别。接着，它介绍了如何通过 GitHub UI 解决合并冲突，解释了合并与变基的区别，并展示了如何使用 UI 和命令行撤销提交。文章还详细介绍了如何 Fork 和同步仓库，并提供了审查拉取请求的最佳实践，包括使用 Copilot 代码审查。内容实用且以教程为导向，面向绝对的初学者。
+2026-06-09 00:00:00
 
 
 
 ### [Pinterest-使用内容指纹对数百万域名的-URL-进行去重](https://www.infoq.com/news/2026/06/pinterest-miqps-url-dedup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-08 22:37:00 | 标签: 系统设计, 数据工程, 后端开发, 可扩展性, URL 规范化
-
-> 本文详细介绍了 Pinterest 在大规模场景下进行 URL 去重的方法，重点介绍了他们的最小重要查询参数集（MIQPS）系统。核心问题是，来自不同商家和发布者域名的数百万个 URL，其差异仅在于非必要的跟踪或会话参数，这导致了冗余的处理成本。传统的基于允许/拒绝列表的规则方法无法扩展到这种异构域名的长尾场景。MIQPS 通过采用数据驱动的方法解决了这个问题：它渲染页面，生成内容指纹，并通过统计方法判断移除特定查询参数是否会改变页面内容。如果内容变化超过阈值，则该参数被视为“重要”并保留；否则，它将被移除。该系统包含一个用于昂贵渲染和评估的离线分析管道，以及一个应用预计算参数重要性映射的运行...
+2026-06-08 22:37:00
 
 
 
 ### [Java-新闻综述：JDK-27-进入降速阶段，JDK-28-专家组组建，GlassFish、Infinispan、Kotlin-更新](https://www.infoq.com/news/2026/06/java-news-roundup-jun01-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-08 21:45:00 | 标签: Java, JDK, OpenJDK, Kotlin, GlassFish
-
-> 本文是 2026 年 6 月 1 日当周 Java 生态系统的全面新闻综述。主要亮点包括：JDK 27 进入降速第一阶段，最终确定了九项 JEP，如紧凑对象头和结构化并发；JDK 28 专家组正式宣布成立；GlassFish 8.0.3 发布，带来安全性和性能改进；新的 GlassFish Arquillian Connectors Suite 大幅加速了 Jakarta EE TCK 测试；Micronaut 5.0.1 和 5.0.2 补丁版本修复了安全漏洞；Open Liberty 26.0.0.6 的 Beta 预览版引入了基于 Netty 的 HTTP 传输；Infinispan 1...
+2026-06-08 21:45:00
 
 
 
 ### [庆祝-InfoQ-成立-20-周年](https://www.infoq.com/news/2026/06/infoq-turns-20/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-08 19:35:00 | 标签: 科技资讯, 行业趋势, 技术采用, 媒体与出版, 周年纪念
-
-> 本文宣布 InfoQ 成立 20 周年，并重点介绍了一篇回顾技术采用曲线的配套文章。文章总结了指导 InfoQ 发展的编辑策略：寻找实践者，让他们诚实写作，对内容进行同行评审，然后呈现给资深工程师。文章还展示了来自世界各地 InfoQ 编辑的短视频寄语，回顾了该出版物对他们职业生涯的影响。
+2026-06-08 19:35:00
 
 
 
 ### [超越速度极限：探索-Valkey-的性能潜力](https://www.infoq.com/presentations/valkey-datastore/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-08 18:15:00 | 标签: Valkey, 内存缓存, 缓存策略, 数据结构, 性能优化
-
-> 这份由 AWS 高级解决方案架构师 Viktor Vedmich 提供的演示文稿记录，全面概述了 Valkey——Linux 基金会下 Redis 的一个开源分支。演讲首先将 Valkey 定位为 Redis 的 100% API 兼容替代品，并强调了 AWS 的贡献，这些贡献将性能提升至每线程每秒超过 100 万次请求。演讲的核心部分通过一个虚构的初创公司场景（一个夜空图像市场）来说明实际用例。涵盖的关键主题包括缓存策略（惰性加载、直写式、组合方法）、通过锁定机制解决惊群问题，以及实现客户端缓存以获得超低延迟。随后，演讲深入探讨了特定的数据结构：用于会话存储和特征存储的哈希表、用于排行榜和实...
+2026-06-08 18:15:00
 
 
 
 ### [如何优化企业知识图谱以构建可扩展的数字产品平台](https://www.freecodecamp.org/news/how-to-optimize-enterprise-knowledge-graphs-for-scalable-digital-product-platforms/)
 
-2026-06-08 12:18:06 | 标签: 知识图谱, 系统设计, 数据工程, 架构, 性能优化
-
-> 这篇架构指南探讨了企业知识图谱（EKG）从小规模试点过渡到支撑面向用户应用的生产级关键基础设施时，所面临的核心可扩展性挑战。作者认为，大规模性能下降通常源于架构与工作负载的不匹配，而非硬件不足。文章提出了四项关键优化策略：(1) 采用混合架构，将语义推理（RDF/OWL）与操作型图查询（LPG）分离，以隔离性能关键路径；(2) 实施拓扑感知分区，将频繁连接的实体就近放置，最小化代价高昂的跨节点遍历；(3) 通过选择性物化管理语义推理，在批量管道中预计算频繁访问的推理结果，避免运行时开销；(4) 利用机器学习辅助查询规划，实现更准确的行数估计和执行计划选择。文章以全球电子供应链图谱为例贯穿始终，...
+2026-06-08 12:18:06
 
 
 
@@ -35707,11 +35693,11 @@
 
 
 
-### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
+### [为-Agent-设计产品](https://baoyu.io/blog/2026-04-24/teddy-riker-2047312986696454584)
 
-2026-04-28T00:00:00.000Z
+2026-04-24T00:00:00.000Z
 
-> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
+> UI 并没有死，但软件交互的 80% 正在转向 Agent。产品团队需要像过去为人设计界面一样，认真为 Agent 设计工具、上下文和反馈闭环。
 
 
 

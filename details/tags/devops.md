@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-09 08:27:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-09 11:04:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -314,9 +314,7 @@
 
 ### [Amazon-Quick-ARNs：跨账户迁移与命名空间权限-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/amazon-quick-arns-cross-account-migration-and-namespace-permissions/)
 
-2026-06-08 16:07:29 | 标签: AWS, Amazon Quick, 云架构, 数据工程, DevOps
-
-> 这篇文章提供了 Amazon Quick ARNs 的全面指南，重点介绍了其结构以及对于跨账户迁移和多租户命名空间权限的实际影响。它使用邮政地址的类比来解释 ARN 的组成部分（分区、服务、区域、账户、资源类型、ID），并演示了迁移过程中账户 ID 如何变化，从而导致权限无法转移。文章涵盖了仪表盘、数据集和数据源之间的依赖链，以及 Asset Bundle API 如何处理 ARN 转换。接着深入探讨了命名空间，解释了资产存在于命名空间之外，而用户和组存在于命名空间之内，这使得跨命名空间共享成为可能。文章提供了一个完整的端到端迁移工作流程，包括用于导出、使用 OverrideParameter...
+2026-06-08 16:07:29
 
 
 
@@ -568,17 +566,13 @@
 
 ### [通过本地优先软件和-AT-协议降低地缘政治风险](https://www.infoq.com/presentations/cloud-computing-technological-sovereignty-multi-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-08 19:00:00 | 标签: 系统设计, 云原生 / DevOps, 去中心化, 分布式系统, 地缘政治
-
-> Martin Kleppmann 发表了一场关于通过技术主权降低地缘政治风险的演讲。他认为，近期事件，如美国制裁和潜在冲突，使得欧洲被美国云服务封锁的风险成为一个严重的、非零概率事件。演讲探讨了三种降低这种依赖性的技术策略。首先，使用商品化、标准化的 API（如 S3、Kubernetes、Kafka、Postgres）构建多云架构，以便于切换供应商，但这会带来成本、复杂性和功能限制方面的权衡。其次，AT 协议，即 Bluesky 背后的去中心化协议，它通过允许用户将其数据、社交图谱和身份在供应商之间无缝迁移，实现了“可信退出”。第三，本地优先软件，它优先考虑本地数据所有权和离线功能，减少了对...
+2026-06-08 19:00:00
 
 
 
 ### [Terraform-1.15-缩小与-OpenTofu-在动态源和弃用功能上的差距](https://www.infoq.com/news/2026/06/terraform-1-15/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-08 16:00:00 | 标签: Terraform, 基础设施即代码, DevOps, OpenTofu, HashiCorp
-
-> HashiCorp 发布了 Terraform 1.15，这是一次重大更新，解决了社区长期以来的多项诉求。其核心功能是通过新的 `const` 属性，允许在模块源和版本属性中使用变量，从而无需重复代码即可实现动态模块源。为变量和输出提供的正式 `deprecated` 属性，使模块作者能够通过清晰的警告来传达接口变更。此版本还增加了用于内联类型转换的 `convert` 函数、输出块的类型约束、原生 Windows ARM64 支持，以及对测试框架和 stacks 功能的改进。值得注意的是，动态源功能自 2024 年 8 月起已在开源分支 OpenTofu 1.8.0 版本中可用，变量弃用功能...
+2026-06-08 16:00:00
 
 
 
