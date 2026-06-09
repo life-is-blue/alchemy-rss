@@ -1,0 +1,51 @@
+{
+  "id": "RAW_adeffab8",
+  "title": "向 SEC 秘密提交 S-1 草案",
+  "url": "https://openai.com/index/openai-submits-confidential-s-1",
+  "date": "2026-06-08 22:00:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"w-full\">\n   <div class=\"relative w-full\" style=\"--hero-aspect-ratio:16/9;--hero-aspect-ratio-mobile:3/4\">\n    <div class=\"w-full gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px]\">\n     <div>\n      <div class=\"relative flex flex-col items-center text-center\">\n       <div class=\"mb-md gap-2xs flex flex-wrap justify-center\">\n        <p class=\"text-meta text-primary-100\">\n         <br>\n        </p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>We recently submitted a confidential S-1. We expect it to leak so we’re just announcing it. We have not decided on timing yet; it may be a while because there are things we want to do that are likely easier as a private company. But it’s a complicated set of tradeoffs and this gives us the option to go public sooner if that ends up being best.</span></p>\n   </div>\n   <div class=\"max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><i><span>This announcement is being made pursuant to Rule 135 under the Securities Act of 1933, as amended, and does not constitute an offer to sell or the solicitation of an offer to buy any securities. Any offers, solicitations of offers to buy, or any sales of securities will be made in accordance with the registration requirements of the Securities Act.</span></i></p>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"flex w-auto\">\n    <div class=\"w-full no-scrollbar overflow-x-auto overflow-y-hidden\">\n     <div class=\"px-sm pe-sm flex min-w-224 flex-none\">\n      <div class=\"mb-md relative ps-sm min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 已向美国证券交易委员会秘密提交 S-1 草案，预示着未来可能进行 IPO，同时承认该决策的复杂性以及上市与非上市状态之间的权衡。",
+  "oneSentenceSummary": "OpenAI 已向美国证券交易委员会秘密提交 S-1 草案，预示着未来可能进行 IPO，同时承认该决策的复杂性以及上市与非上市状态之间的权衡。",
+  "summary": "OpenAI 宣布已向美国证券交易委员会秘密提交了一份注册声明草案（S-1）。该公司预计该文件会被泄露，因此主动发布公告。OpenAI 表示尚未决定潜在 IPO 的时间，并指出某些战略举措作为私营公司可能更容易推进。该公告依据《证券法》第 135 条发布，不构成出售证券的要约。这份简短声明强调了上市所涉及的复杂权衡。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 已向 SEC 秘密提交 S-1 草案，这是迈向潜在 IPO 的关键一步。",
+      "explanation": "秘密提交使 OpenAI 能够在无需立即公开披露的情况下启动 SEC 审查流程，这是考虑上市公司的常见做法。"
+    },
+    {
+      "point": "该公司尚未决定公开上市的时间，并可能在一段时间内保持私营状态。",
+      "explanation": "OpenAI 明确表示，某些战略目标作为私营公司可能更容易实现，这表明该决策涉及重大权衡，且并非迫在眉睫。"
+    },
+    {
+      "point": "该公告是预期秘密文件会被泄露而采取的主动披露。",
+      "explanation": "OpenAI 预计秘密提交的 S-1 会通过泄露方式公开，因此选择自行宣布提交，以掌控叙事并提供背景信息。"
+    }
+  ],
+  "keyQuotes": [
+    "我们尚未决定时间；可能还需要一段时间，因为有些我们想做的事情作为私营公司可能更容易推进。",
+    "但这涉及一系列复杂的权衡，而这一步让我们在必要时能够更快地选择上市。"
+  ],
+  "tags": [
+    "IPO",
+    "OpenAI",
+    "资本市场",
+    "企业战略",
+    "科技资讯"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 127,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Finance_Economy",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780927200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-08 22:00:00"
+}

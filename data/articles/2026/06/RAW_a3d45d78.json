@@ -1,0 +1,51 @@
+{
+  "id": "RAW_a3d45d78",
+  "title": "Pinterest 使用内容指纹对数百万域名的 URL 进行去重",
+  "url": "https://www.infoq.com/news/2026/06/pinterest-miqps-url-dedup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-08 22:37:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Pinterest engineers have developed a<a href=\"https://medium.com/pinterest-engineering/smarter-url-normalization-at-scale-how-miqps-powers-content-deduplication-at-pinterest-4aa42e807d7d\"> URL normalization system called Minimal Important Query Param Set (MIQPS)</a> to improve content deduplication across its large-scale ingestion pipeline. The system is used to determine which URL query parameters affect page identity and should be retained, and which are considered non-essential and can be safely removed. The goal is to reduce duplicate-content processing across millions of domains while maintaining the accuracy of ingested data.</p>\n   <p>The system is used within Pinterest's content ingestion infrastructure, which processes URLs from a wide variety of merchant and publisher websites. Many of these URLs point to the same underlying page but differ due to tracking parameters, campaign identifiers, session tokens, and other query string variations. Although downstream systems can eventually detect duplicates, each URL variant still incurs separate fetch, render, and indexing costs, increasing infrastructure overhead at scale.</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/pinterest-miqps-url-dedup/en/resources/1duplicateurl-1780112720449.jpeg\" rel=\"share\"></p>\n   <p>Multiple URLs with different query parameters all point to the same underlying product (Source: <a href=\"https://medium.com/pinterest-engineering/smarter-url-normalization-at-scale-how-miqps-powers-content-deduplication-at-pinterest-4aa42e807d7d\">Pinterest Blog Post</a>)</p>\n   <p><a href=\"https://www.linkedin.com/in/shanhai-liao-8017a014a/\">Shanhai Liao</a>, a Software Engineer at Pinterest, highlighted the scale of the problem in a LinkedIn <a href=\"https://www.linkedin.com/posts/shanhai-liao-8017a014a_smarter-url-normalization-at-scale-how-miqps-share-7452391326387441664-SuYh/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a>.</p>\n   <blockquote>\n    <p>This is the kind of problem that sounds trivial until you're operating at Pinterest scale, across millions of merchant domains with wildly different URL conventions. Static allowlists work for the top platforms. For the long tail, we needed something smarter.</p>\n   </blockquote>\n   <p>To address this, MIQPS replaces traditional rule-based URL normalization approaches that rely on manually maintained allowlists, denylists, or domain-specific heuristics. These approaches are difficult to scale across a long tail of heterogeneous domains with inconsistent URL structures. Instead, MIQPS uses a data-driven approach that evaluates whether removing a query parameter changes the rendered content of a page. If content changes exceed a defined threshold, the parameter is classified as important and retained; otherwise, it is considered noise and removed during normalization.</p>\n   <p>The system operates by first collecting a large corpus of URLs from Pinterest's ingestion pipelines and grouping them based on query parameter patterns. It then renders pages and generates content fingerprints to compare the effect of removing individual parameters. This allows the system to infer parameter importance based on observed content behavior rather than predefined rules or metadata such as canonical tags. Pinterest noted that canonical tags are often missing, inconsistent, or polluted with tracking parameters, making them unreliable for large-scale deduplication.</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/pinterest-miqps-url-dedup/en/resources/1miqps-1780112720449.jpg\" rel=\"share\"></p>\n   <p>End-to-end system architecture<em> </em>(Source: <a href=\"https://medium.com/pinterest-engineering/smarter-url-normalization-at-scale-how-miqps-powers-content-deduplication-at-pinterest-4aa42e807d7d\">Pinterest Blog Post</a>)</p>\n   <p>MIQPS uses a small set of tunable parameters that control mismatch thresholds and minimum sample sizes. To improve efficiency, it applies early exit logic that stops evaluation once mismatch rates exceed a threshold after limited tests, avoiding unnecessary page renders. It also uses a conservative default that treats parameters as non-neutral when data is insufficient. The output is a parameter importance map stored in a configuration service and applied at runtime alongside static rules. MIQPS is protected by anomaly detection that rejects updates where important parameters are downgraded, while safely allowing additions to the non-neutral set.</p>\n   <p>The architecture separates offline analysis from runtime processing. Expensive content rendering and parameter evaluation are performed offline, while runtime systems apply precomputed rules during URL processing. Pinterest stated that URL structures tend to evolve slowly, making offline computation a practical tradeoff between freshness, cost, and operational complexity for large-scale ingestion systems.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinterest Uses Content Fingerprints for URL Deduplication Across Millions of Domains\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/pinterest-miqps-url-dedup/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780929420000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinterest 工程师开发了 MIQPS，一个数据驱动的系统，它利用内容指纹来确定哪些 URL 查询参数对去重是必要的，从而在大规模场景下取代了静态规则。",
+  "oneSentenceSummary": "Pinterest 工程师开发了 MIQPS，一个数据驱动的系统，它利用内容指纹来确定哪些 URL 查询参数对去重是必要的，从而在大规模场景下取代了静态规则。",
+  "summary": "本文详细介绍了 Pinterest 在大规模场景下进行 URL 去重的方法，重点介绍了他们的最小重要查询参数集（MIQPS）系统。核心问题是，来自不同商家和发布者域名的数百万个 URL，其差异仅在于非必要的跟踪或会话参数，这导致了冗余的处理成本。传统的基于允许/拒绝列表的规则方法无法扩展到这种异构域名的长尾场景。MIQPS 通过采用数据驱动的方法解决了这个问题：它渲染页面，生成内容指纹，并通过统计方法判断移除特定查询参数是否会改变页面内容。如果内容变化超过阈值，则该参数被视为“重要”并保留；否则，它将被移除。该系统包含一个用于昂贵渲染和评估的离线分析管道，以及一个应用预计算参数重要性映射的运行时组件。它还包含效率机制，如提前退出逻辑和异常检测，以防止错误的参数降级。文章强调了离线计算在解决一个变化缓慢的问题时的实际权衡，使其成为 Pinterest 摄取基础设施中一个经济高效且可扩展的解决方案。",
+  "mainPoints": [
+    {
+      "point": "静态 URL 规范化规则无法扩展到数百万个异构域名。",
+      "explanation": "手动维护的允许列表和拒绝列表对于 URL 结构的长尾场景是不切实际的，这使得数据驱动的方法成为必要。"
+    },
+    {
+      "point": "MIQPS 使用内容指纹推断参数的重要性。",
+      "explanation": "通过渲染页面并比较带参数和不带参数时的内容指纹，系统凭经验确定参数是否影响页面标识，从而绕过了规范标签等不可靠的启发式方法。"
+    },
+    {
+      "point": "该架构将离线分析与运行时处理分离，以提高效率。",
+      "explanation": "昂贵的页面渲染和指纹计算在离线进行，而运行时系统则应用预计算的参数重要性映射，从而在新鲜度、成本和操作复杂性之间取得平衡。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一个听起来很简单的问题，直到你在 Pinterest 的规模下，面对数百万个具有截然不同 URL 约定的商家域名时，才会发现其复杂性。",
+    "MIQPS 采用数据驱动的方法，评估移除某个查询参数是否会改变页面的渲染内容。"
+  ],
+  "tags": [
+    "系统设计",
+    "数据工程",
+    "后端开发",
+    "可扩展性",
+    "URL 规范化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 529,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780929420000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-08 22:37:00"
+}
