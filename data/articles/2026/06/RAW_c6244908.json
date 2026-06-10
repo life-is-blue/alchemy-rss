@@ -1,0 +1,51 @@
+{
+  "id": "RAW_c6244908",
+  "title": "IBM Vault Enterprise 2.0 为企业身份安全带来自动化 LDAP 密钥管理",
+  "url": "https://www.infoq.com/news/2026/06/ibm-hashicorp-vault-ldap-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-09 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">IBM and <a href=\"https://www.hashicorp.com/en\">HashiCorp</a> have <a href=\"https://www.hashicorp.com/en/blog/ldap-secrets-management-now-available-in-ibm-vault-enterprise-20\">announced</a> new <a href=\"https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol\">LDAP</a> secrets management capabilities in <a href=\"https://www.ibm.com/docs/en/security-qradar/security-qradar-soar/saas?topic=managers-hashicorp-vault\">IBM Vault</a> Enterprise 2.0, introducing a redesigned architecture to manage LDAP credentials, support password rotation, and automate the identity lifecycle. The update integrates LDAP static roles into Vault's centralized rotation framework, allowing organizations to automate credential management while reducing reliance on privileged administrative accounts.</p>\n   <p dir=\"ltr\">The announcement also reflects the continuing integration of HashiCorp's portfolio into IBM following <a href=\"https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp,-creates-comprehensive,-end-to-end-hybrid-cloud-platform\">IBM's acquisition of the company in 2025</a>. While the product remains the well-established HashiCorp Vault platform familiar to infrastructure and security teams, IBM Vault Enterprise 2.0 represents the next stage of that evolution under IBM ownership. For existing Vault users, the release signals continuity rather than disruption, with IBM continuing to invest in Vault';s core strengths around secrets management, identity security, and infrastructure automation while integrating the technology more closely into its broader enterprise security strategy.</p>\n   <p dir=\"ltr\">The release addresses a long-standing challenge for enterprises that continue to rely on LDAP-based identity systems such as <a href=\"https://www.proofpoint.com/us/threat-reference/active-directory\">Active Directory</a>, <a href=\"https://www.openldap.org/\">OpenLDAP</a>, and <a href=\"https://www.ibm.com/docs/en/zos-basic-skills?topic=zos-what-is-racf\">RACF</a>. While LDAP remains a foundational component of enterprise authentication and authorization, managing service account passwords, credential rotation schedules, and lifecycle controls has often required significant manual effort and operational oversight. Vault Enterprise 2.0 aims to reduce that burden through centralized automation, configurable rotation policies, and improved operational controls.</p>\n   <p dir=\"ltr\">A key enhancement is the migration of LDAP static roles into Vault's centralized rotation manager. Previously, LDAP credential rotation was handled through plugin-specific mechanisms, limiting operational visibility and flexibility. Under the new architecture, administrators gain access to standardized scheduling, retry logic, pause-and-resume controls, and centralized governance for credential rotation activities.</p>\n   <p dir=\"ltr\">The platform also introduces support for defining an initial password when onboarding LDAP accounts into Vault. This allows Vault to become the authoritative source of credential management from the start of an account's lifecycle, helping organizations establish clearer ownership and auditability for identity-related operations.</p>\n   <p dir=\"ltr\">Perhaps the most significant architectural change is the introduction of a \"self-managed flow\" model. Rather than relying on a highly privileged administrative account to rotate credentials across an entire directory, individual LDAP accounts can now authenticate and rotate their own passwords under controlled policies. This approach aligns with the principle of least privilege, a foundational security practice that seeks to minimize the impact of credential compromise by limiting access rights wherever possible.</p>\n   <p dir=\"ltr\">The result is a more decentralized model for secrets management that reduces the operational and security risks associated with maintaining high-privilege service accounts. Organizations can automate password rotation more frequently while limiting the blast radius of any single credential compromise.</p>\n   <p dir=\"ltr\">For existing Vault customers, the transition is designed to be largely automatic. During the first unseal operation after upgrading to Vault Enterprise 2.0, the platform identifies legacy LDAP static roles and migrates them to the new rotation framework in the background. Vault continues normal operations throughout the process, while administrators can monitor migration progress through dedicated APIs and governance controls.</p>\n   <p dir=\"ltr\">The migration model reflects a broader emphasis on minimizing disruption while modernizing security controls. By automating credential lifecycle management and reducing manual intervention, organizations can focus more on governance and policy management rather than operational maintenance.</p>\n   <p dir=\"ltr\"><a href=\"https://arxiv.org/abs/2509.09036\">Research into secrets management</a> practices has highlighted the difficulties organizations face when managing credentials at scale, particularly when manual processes are involved. Automated rotation and centralized governance are widely viewed as important steps toward reducing credential exposure and limiting opportunities for attackers.</p>\n   <p dir=\"ltr\">The LDAP enhancements are part of a larger Vault Enterprise 2.0 release focused on identity-based security, credential lifecycle automation, and centralized secrets management. As organizations adopt hybrid cloud environments, AI-driven systems, and increasingly automated infrastructure, the number of non-human identities requiring management continues to grow rapidly.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"IBM Vault Enterprise 2.0 Brings Automated LDAP Secrets Management to Enterprise Identity Security\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/ibm-hashicorp-vault-ldap-secrets/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781006400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "IBM Vault Enterprise 2.0 引入了自动化 LDAP 密钥管理，具备集中轮换、自管理凭证流程以及为现有客户提供无缝迁移路径等特性。",
+  "oneSentenceSummary": "IBM Vault Enterprise 2.0 引入了自动化 LDAP 密钥管理，具备集中轮换、自管理凭证流程以及为现有客户提供无缝迁移路径等特性。",
+  "summary": "本文报道了 IBM 与 HashiCorp 联合宣布的 IBM Vault Enterprise 2.0 中新增的 LDAP 密钥管理功能。此次更新代表了重大的架构演进，将 LDAP 静态角色迁移至 Vault 的集中式轮换管理器，以实现标准化的调度、重试逻辑和治理。一项关键创新是“自管理流程”模型，该模型允许单个 LDAP 账户在受控策略下自行轮换密码，从而减少对特权管理账户的依赖，并遵循最小权限原则。文章还结合 IBM 于 2025 年收购 HashiCorp 的背景，强调了现有 Vault 用户的连续性。文章重点指出了管理基于 LDAP 的身份系统（如 Active Directory 和 OpenLDAP）凭证这一长期存在的挑战，并将自动化生命周期管理定位为混合云和 AI 驱动环境中企业身份安全的关键一步。现有客户的迁移过程在设计上可在升级后的首次解封操作期间基本自动完成。",
+  "mainPoints": [
+    {
+      "point": "IBM Vault Enterprise 2.0 将 LDAP 凭证轮换集中到统一框架中。",
+      "explanation": "此前通过特定插件机制处理的 LDAP 静态角色，现在通过 Vault 的集中式轮换管理器进行管理，提供标准化的调度、重试逻辑和治理控制。"
+    },
+    {
+      "point": "新的“自管理流程”模型减少了对特权管理账户的依赖。",
+      "explanation": "单个 LDAP 账户可以在受控策略下进行身份验证并自行轮换密码，这符合最小权限原则，并限制了凭证泄露的影响范围。"
+    },
+    {
+      "point": "此次升级为现有 Vault 客户提供了无缝的自动迁移路径。",
+      "explanation": "在升级后的首次解封操作期间，旧的 LDAP 静态角色会在后台迁移到新框架，影响极小，同时管理员可以通过 API 监控迁移进度。"
+    }
+  ],
+  "keyQuotes": [
+    "不再依赖高特权管理账户来轮换整个目录中的凭证，单个 LDAP 账户现在可以在受控策略下进行身份验证并自行轮换密码。",
+    "其结果是形成了一种更加去中心化的密钥管理模型，降低了与维护高特权服务账户相关的运营和安全风险。"
+  ],
+  "tags": [
+    "科技资讯",
+    "企业安全",
+    "身份管理",
+    "云基础设施",
+    "DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 605,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781006400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-09 20:00:00"
+}

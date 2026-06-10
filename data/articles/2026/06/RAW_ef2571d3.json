@@ -1,0 +1,47 @@
+{
+  "id": "RAW_ef2571d3",
+  "title": "Andrej Karpathy 的一段话",
+  "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/#atom-everything",
+  "date": "2026-06-10 03:03:10",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">9th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://twitter.com/karpathy/status/2064409694761054332\">\n     <p>I feel a lot of things changing as working software increasingly comes out on a tap. The Jevon's paradox kicks in and I feel my own demand for software growing substantially. You can ask for anything - explainers, visualizers, dashboards, bespoke single-use apps (e.g. a full wandb that is hyper-specific just for your project), you can 10X your test suite, auto-optimize code, run giant research projects with custom HTML for the results, anything! \"Free your mind\" (Matrix ref).</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://twitter.com/karpathy/status/2064409694761054332\">Andrej Karpathy</a>, <span class=\"context\">on Claude Fable 5</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2225/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Andrej Karpathy 反思了 AI 生成软件的丰富如何从根本上改变了他自己对可构建内容的期望与需求。",
+  "oneSentenceSummary": "Andrej Karpathy 反思了 AI 生成软件的丰富如何从根本上改变了他自己对可构建内容的期望与需求。",
+  "summary": "Andrej Karpathy 分享了一段简短但见解深刻的观察，探讨了 AI 编程工具的影响。他指出，随着可用的软件变得愈发丰富且易于生成（\"像水龙头一样源源不断\"），杰文斯悖论开始显现：他自己对软件的需求大幅增长。他列举了如今轻而易举就能实现的各种例子，从定制的一次性应用、自定义仪表盘，到大规模测试套件扩展，以及带有自定义 HTML 结果的大型研究项目。这段话捕捉了软件创作从稀缺心态向富足心态的转变。",
+  "mainPoints": [
+    {
+      "point": "丰富的 AI 生成软件触发了杰文斯悖论，需求反而增长。",
+      "explanation": "随着软件变得更容易生产，Karpathy 发现自己想要并构建的软件比以往更多，而不是更少。"
+    },
+    {
+      "point": "如今可能实现的范围已大幅扩展。",
+      "explanation": "例子包括定制的一次性应用、自定义仪表盘、自动优化的代码，以及带有自定义 HTML 结果的大型研究项目。"
+    }
+  ],
+  "keyQuotes": [
+    "随着可用的软件像水龙头一样源源不断地流出，我感觉很多事情都在发生变化。杰文斯悖论开始显现，我发现自己对软件的需求大幅增长。",
+    "你可以要求任何东西——解释器、可视化工具、仪表盘、定制的一次性应用（例如一个完全针对你项目的超具体 wandb），你可以将测试套件扩大 10 倍，自动优化代码，运行带有自定义 HTML 结果的大型研究项目，任何东西！"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "Vibe Coding",
+    "开发者工具",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 88,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781031790000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-10 03:03:10"
+}

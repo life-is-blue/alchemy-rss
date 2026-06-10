@@ -1,0 +1,55 @@
+{
+  "id": "RAW_370bf10d",
+  "title": "Spring for Apache Pulsar 1.2.18 和 2.0.6 现已发布",
+  "url": "https://spring.io/blog/2026/06/10/spring-for-apache-pulsar-1-2-18-and-2-0-6-are-now-available",
+  "date": "2026-06-10 08:00:00",
+  "author": "sobychacko",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On behalf of the team and everyone who has contributed, I'm happy to announce that Spring for Apache Pulsar <code>1.2.18</code> and <code>2.0.6</code> have been released and are now available from Maven Central.</p>\n  <p>Both releases are maintenance releases focused on dependency updates. The <code>2.0.6</code> release includes an upgrade to Apache Pulsar client <code>4.2.1</code>, along with updates to Jackson, logback, Caffeine, and Testcontainers. The <code>1.2.18</code> release brings Jackson and logback maintenance bumps for the <code>1.2.x</code> line.</p>\n  <p>The <code>1.2.18</code> release will be included in the upcoming Spring Boot <a href=\"https://github.com/spring-projects/spring-boot/milestones/3.5.15\">3.5.15</a> release. The <code>2.0.6</code> release will be included in the upcoming Spring Boot <a href=\"https://github.com/spring-projects/spring-boot/milestones/4.0.7\">4.0.7</a> and Spring Boot <a href=\"https://github.com/spring-projects/spring-boot/milestones/4.1.0\">4.1.0</a> releases, respectively.</p>\n  <h3 id=\"cves-fixed-in-this-release\"><a href=\"#cves-fixed-in-this-release\" aria-label=\"cves fixed in this release permalink\" class=\"anchor before\"></a>CVEs fixed in this release</h3>\n  <ul>\n   <li><a href=\"https://spring.io/security/cve-2026-41732\">CVE-2026-41732: Default header mapper deserializes attacker-chosen classes</a></li>\n  </ul>\n  <p>Please see the release notes (<a href=\"https://github.com/spring-projects/spring-pulsar/releases/tag/v1.2.18\">1.2.18</a> and <a href=\"https://github.com/spring-projects/spring-pulsar/releases/tag/v2.0.6\">2.0.6</a>) for more details.</p>\n </body>\n</html>",
+  "aiSummary": "Spring for Apache Pulsar 1.2.18 和 2.0.6 现已从 Maven Central 发布，这两个维护版本主要侧重于依赖项更新和一个 CVE 修复。",
+  "oneSentenceSummary": "Spring for Apache Pulsar 1.2.18 和 2.0.6 现已从 Maven Central 发布，这两个维护版本主要侧重于依赖项更新和一个 CVE 修复。",
+  "summary": "Spring 团队发布的此公告详细介绍了 Spring for Apache Pulsar 1.2.18 和 2.0.6 版本的发布。这两个版本都是维护版本，主要侧重于更新项目依赖项。2.0.6 版本升级到了 Apache Pulsar 客户端 4.2.1，并包含了对 Jackson、logback、Caffeine 和 Testcontainers 的更新。1.2.18 版本包含了对 Jackson 和 logback 的维护性升级。该版本还修复了一个与默认标头映射器相关的安全漏洞（CVE-2026-41732）。这些版本将包含在即将发布的 Spring Boot 版本中：1.2.18 将包含在 3.5.15 中，2.0.6 将包含在 4.0.7 和 4.1.0 中。",
+  "mainPoints": [
+    {
+      "point": "Spring for Apache Pulsar 1.2.18 和 2.0.6 是维护版本。",
+      "explanation": "这两个版本都侧重于更新项目依赖项（如 Jackson、logback 和 Caffeine），而非引入新功能。"
+    },
+    {
+      "point": "2.0.6 版本升级到了 Apache Pulsar 客户端 4.2.1。",
+      "explanation": "对于 2.0.x 系列的用户来说，这是一项关键的依赖项更新，确保了与最新 Pulsar 客户端的兼容性。"
+    },
+    {
+      "point": "修复了一个安全漏洞（CVE-2026-41732）。",
+      "explanation": "该修复解决了默认标头映射器中的一个反序列化问题，这对用户来说是一个关键的安全问题。"
+    },
+    {
+      "point": "这些版本将包含在即将发布的 Spring Boot 版本中。",
+      "explanation": "1.2.18 版本将包含在 Spring Boot 3.5.15 中，而 2.0.6 版本将包含在 Spring Boot 4.0.7 和 4.1.0 中，提供了清晰的升级路径。"
+    }
+  ],
+  "keyQuotes": [
+    "代表团队以及所有做出贡献的人，我很高兴地宣布 Spring for Apache Pulsar `1.2.18` 和 `2.0.6` 已发布，并可从 Maven Central 获取。",
+    "这两个版本都是专注于依赖项更新的维护版本。"
+  ],
+  "tags": [
+    "Spring",
+    "Apache Pulsar",
+    "发布说明",
+    "Java",
+    "消息"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 128,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781049600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-10 08:00:00"
+}

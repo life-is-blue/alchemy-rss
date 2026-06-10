@@ -1,0 +1,52 @@
+{
+  "id": "RAW_465ddf70",
+  "title": "Nextdoor 工程师如何利用 Codex 实现无限制开发",
+  "url": "https://openai.com/index/nextdoor",
+  "date": "2026-06-09 20:00:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"w-full\">\n   <div class=\"relative w-full gap-lg flex flex-col\" style=\"--hero-aspect-ratio:1/1;--hero-aspect-ratio-mobile:1/1\">\n    <div class=\"w-full gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px] flex-1 self-end\">\n     <div>\n      <div class=\"relative flex flex-col\">\n       <div class=\"mb-md gap-2xs flex flex-wrap\">\n        <p class=\"text-meta text-primary-100\">\n         <br>\n        </p>\n       </div>\n       <div class=\"mt-md min-h-sm flex justify-between\"></div>\n      </div>\n     </div>\n    </div>\n   </div>\n   <div class=\"gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px] pt-2xl w-full\">\n    <div class=\"pt-3xs border-t-primary-4 flex w-full items-center justify-between border-t\">\n     <div class=\"flex gap-4 ms-auto\">\n      <div class=\"relative\">\n       <div class=\"gap-5xs flex items-center\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-_R_2mpav5unedknpfivb_\">\n        <span class=\"text-cta\"> </span>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>A product like Nextdoor, which serves over 110 million users across 11 countries, puts many demands on a platform team. For Cory Dolphin, Head of Engineering at, Codex represents an essential shift: “away from iteratively prompting an agent, and towards outcome engineering, where engineers start to think about the result they want to see and work with an agent to engineer that result.”</span></p>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>This means that individual engineers move up the stack—no longer locked up as specialists in a certain system or framework, they’re able to own the product experience more or less end-to-end, even across multiple platforms. Productivity has accelerated so much that the bottleneck is no longer engineering, but rather the hard strategic questions about what to build next.</span></p>\n   </div>\n   <div class=\"group not-first:mt-xl not-last:mb-xl max-w-none\">\n    <div class=\"w-full mx-auto ease-curve-c duration-medium transition-opacity max-w-container-desktop relative min-h-0\">\n     <div class=\"relative min-h-0 w-full\">\n      <div class=\"w-full\"></div>\n     </div>\n    </div>\n   </div>\n   <div class=\"group not-first:mt-xl not-last:mb-xl\">\n    <div class=\"w-full\">\n     <div class=\"gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px] px-sm gap-y-8\">\n      <blockquote class=\"text-h3 text-primary-100 text-center font-medium tracking-tight\">“Codex has fundamentally changed how we think about engineering, to the point that we can’t even imagine engineering without it.”</blockquote>\n      <div class=\"text-primary-100 text-meta text-center text-pretty\">—Cory Dolphin, Head of Engineering, Nextdoor</div>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none not-first:mt-xl\">\n    <div class=\"w-full gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px] toc-content-heading scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\" id=\"product-engineers-can-focus-on-the-product\">\n     <div class=\"full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none\">\n      <h2 class=\"text-h3 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\"><span>Product engineers can focus on the product</span></h2>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>With Codex, “engineers get to spend a lot less time thinking about exactly </span><i><span>how</span></i><span> they build, and more time thinking about the outcome,” Dolphin explains. That outcome might take the form of screenshots or video that the agent can build towards, a certain performance or test result, or a brand new feature idea. </span></p>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Nextdoor recently released Opportunity Alerts, which let people find service providers near them; with Codex, engineers are driving the product experience and roadmap. As an example, one engineer working on the alerts realized it would be helpful to show service providers on a map. Historically, that kind of feature would have required collaboration between three teams—mobile, frontend, and backend engineering—and might have never made it out of the backlog.</span></p>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>But with Codex, “we were able to have one engineer build it end to end,” Dolphin explains, “which means not only are they able to drive the product faster, but they’re able to better understand the actual product experience and what the right thing to ship is.”</span></p>\n   </div>\n   <div class=\"group not-first:mt-xl not-last:mb-xl\">\n    <div class=\"w-full\">\n     <div class=\"gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px] px-sm gap-y-8\">\n      <blockquote class=\"text-h3 text-primary-100 text-center font-medium tracking-tight\">“As engineers start to shift up the stack, they get to be more responsible for the product that they’re building. You really see individual engineers start to drive products.”</blockquote>\n      <div class=\"text-primary-100 text-meta text-center text-pretty\">—Cory Dolphin, Head of Engineering, Nextdoor</div>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none not-first:mt-xl\">\n    <div class=\"w-full gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px] toc-content-heading scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\" id=\"compressing-software-engineering-time\">\n     <div class=\"full-grid-content:@md:col-span-12 full-grid-content:@md:col-start-1 max-w-none\">\n      <h2 class=\"text-h3 scroll-mt-[calc(var(--header-h)+var(--toc-button-h))]\"><span>Compressing software engineering time</span></h2>\n     </div>\n    </div>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Working with embedded Rust databases and systems with tight race conditions, Nextdoor turns to Codex for help debugging the most hard-to-reproduce issues. The team provides the agent with a clean environment and harness for investigation, then uses it for everything from figuring out why Kubernetes pods won’t start, to finding the right trend line in a data analysis.</span></p>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>“With GPT‑5.4 and 5.5, it’s been a really impressive upgrade. We see Codex excel at being extremely persistent and trying to figure out the right solution, diving deep into some seemingly esoteric technical details to arrive at the root cause,” Dolphin explains.</span></p>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>About Fast Mode with Codex and GPT‑5.5, Dolphin says, “I’ve got to be honest, a lot of the team are addicted to it. When you have a quick feedback loop with the problem that you’re working on, the feeling is exhilarating as an engineer.”</span></p>\n   </div>\n   <div class=\"max-w-none not-first:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Engineering work has gotten so much faster that Dolphin has seen a shift in the pressures on different parts of the organization. “We’re moving so much faster that the bottlenecks are no longer in engineering. It’s really now a question of, how can we identify the right things to build and the right strategy—and less about how we actually build it.”</span></p>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"flex w-auto\">\n    <div class=\"w-full no-scrollbar overflow-x-auto overflow-y-hidden\">\n     <div class=\"px-sm pe-sm flex min-w-224 flex-none\">\n      <div class=\"mb-md relative ps-sm min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Nextdoor 工程主管描述了 Codex 如何将工程工作从迭代提示转变为结果工程，使单个工程师能够端到端地拥有产品功能，并将开发时间压缩到极致，以至于瓶颈变成了战略决策，而非工程能力。",
+  "oneSentenceSummary": "Nextdoor 工程主管描述了 Codex 如何将工程工作从迭代提示转变为结果工程，使单个工程师能够端到端地拥有产品功能，并将开发时间压缩到极致，以至于瓶颈变成了战略决策，而非工程能力。",
+  "summary": "本文发表于 OpenAI 新闻博客，讲述了拥有超过 1.1 亿用户的社交网络 Nextdoor 的客户故事。工程主管 Cory Dolphin 解释了 Codex 如何改变了他们的工程工作流程。关键转变是从“迭代提示智能体”转向“结果工程”，即工程师专注于期望的结果（例如，截图、性能指标或功能创意），并与智能体协作来实现它。这使得单个工程师能够“向上移动”，跨多个平台端到端地拥有产品体验，减少了在诸如服务提供商地图视图等功能上跨团队协作的需求。Codex 还被用于调试嵌入式 Rust 数据库和 Kubernetes 中的复杂问题。其结果是开发速度大幅提升，主要瓶颈从工程能力转变为关于下一步该构建什么的战略问题。本文是一个推广性的案例研究，但它提供了一个关于特定工程工作流程转变的具体、第一手的描述。",
+  "mainPoints": [
+    {
+      "point": "Codex 实现了从迭代提示到结果工程的转变。",
+      "explanation": "工程师定义期望的结果（例如，一个功能、性能目标），并与智能体协作来实现该结果，而不是迭代地提示生成代码。"
+    },
+    {
+      "point": "单个工程师现在可以端到端地拥有产品功能。",
+      "explanation": "以前需要移动端、前端和后端团队协作才能实现的功能，现在可以由单个工程师构建，从而加速交付并提升对产品的理解。"
+    },
+    {
+      "point": "主要瓶颈从工程能力转变为战略决策。",
+      "explanation": "随着开发速度的显著提升，限制因素不再是“如何构建”，而是确定要构建的正确事物和正确的策略。"
+    }
+  ],
+  "keyQuotes": [
+    "从迭代提示智能体，转向结果工程，工程师开始思考他们想要看到的结果，并与智能体协作来实现该结果。",
+    "Codex 从根本上改变了我们对工程的看法，以至于我们无法想象没有它的工程。",
+    "我们的速度大大加快，瓶颈不再存在于工程领域。现在真正的问题是，我们如何确定要构建的正确事物和正确的策略——而较少关注我们实际如何构建它。"
+  ],
+  "tags": [
+    "AI 编程",
+    "Codex",
+    "LLM",
+    "开发者工具",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 567,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781006400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-09 20:00:00"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "RAW_b7ce8efa",
+  "title": "Microsoft Foundry 新增运行时、工具链与治理能力，助力生产级智能体",
+  "url": "https://www.infoq.com/news/2026/06/microsoft-foundry-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-09 16:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Microsoft used their Build 2026 event in San Francisco to announce new functionality for Microsoft Foundry. Citing Foundry as \"the place where AI agents move from experiments to production systems,\" in&nbsp;<a href=\"http://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-build-2026/\">a blog post</a>, Nick Brady writes that the release brings 'runtime, tools, memory, grounding, models, observability, and governance' that developers need for production agents, rather than just new model endpoints.</p>\n   <p>Microsoft Foundry is Microsoft’s 'AI app and agent factory', a unified Azure platform that <a href=\"http://azure.microsoft.com/en-us/products/ai-foundry\">Microsoft describes</a> as an interoperable platform that lets teams build, ground, and govern AI apps and agents that understand business context, with shared observability and policy across every agent. Foundry documentation highlights native integration with Azure services, Microsoft 365 data sources, and open protocols for tools and frameworks.</p>\n   <p>Hosted agents in Foundry Agent Service provide managed sandboxed sessions with state, filesystem access, and support for multiple frameworks, exposing both a stateful Responses API and a lighter weight invocations protocol for passthrough calls. The same runtime supports long-running agents such as OpenClaw and Hermes with durable state and files, and routines, currently in public preview, to run agents on schedules for tasks like overnight ticket triage or daily reporting. These additions extend the <a href=\"http://www.infoq.com/news/2025/05/azure-ai-foundry-agents-ga/\">Azure AI Foundry Agent Service general availability release that InfoQ covered in 2025</a>, which introduced multi agent orchestration, Agent to Agent APIs, and support for frameworks such as Semantic Kernel, AutoGen, and CrewAI.</p>\n   <p><img alt=\"Foundry Hosted Agents, showing guardrails functionality, (C) Microsoft\" data-src=\"https://www.infoq.com/news/2026/06/microsoft-foundry-agents/news/2026/06/microsoft-foundry-agents/en/resources/1Hosted-Agents-guardrails-2048x1088-1780920732061.webp\" src=\"https://res.infoq.com/news/2026/06/microsoft-foundry-agents/en/resources/1Hosted-Agents-guardrails-2048x1088-1780920732061.webp\" rel=\"share\"></p>\n   <p>The blog turns to speak of tooling and distribution. Toolboxes in Foundry, now in public preview, give agents a single managed endpoint for tools, skills, Model Context Protocol clients, and enterprise data integrations, so that tools are registered once and then discovered at runtime rather than wired into each agent. Skills can be versioned, project-scoped artefacts cab be exposed via MCP, and tool search helps the platform select a small set of relevant tools for each task instead of exposing everything to the model. Microsoft is also introducing direct publishing from Foundry into Microsoft Teams and Microsoft 365 Copilot, with <a href=\"http://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/\">general availability planned for June 2026</a>, so that agents built in Foundry can be surfaced where employees already work with identity, permissions, and policy applied automatically.</p>\n   <p>Foundry treats \"memory\" as a function of the platform, rather than just in applications. Memory in Foundry Agent Service, which entered public preview at the end of 2025, now offers procedural, user, and session memory. Procedural memory, new at Build, is designed to help agents learn how to carry out work across runs, with early benchmarks showing improvements in task success rates when it is enabled. <a href=\"http://www.infoq.com/news/2025/12/foundry-agent-memory-preview/\">InfoQ’s earlier coverage of Foundry memory</a> describes how the service extracts key facts and procedures from conversations, consolidates them, and then retrieves them through a managed store scoped by identifiers such as Entra ID, with controls for retention and inspection.</p>\n   <blockquote>\n    Procedural memory helps agents learn how to do the work across runs, not just what was said, with early Tau bench results showing 7 to 14 percent absolute success rate gains at near baseline cost.\n    <br>\n    --Nick Brady\n   </blockquote>\n   <p>Grounding and retrieval are tackled through Foundry IQ, which Brady presents as a knowledge layer behind agents that unifies Work IQ, Fabric IQ, Azure SQL, file search, and other sources behind a single SLA backed retrieval endpoint. At Build, Microsoft announced Foundry IQ Serverless in public preview, multi source knowledge bases in general availability, and Microsoft Web IQ for live web grounding with sub 200 millisecond responses and zero data retention guarantees, together with security features around encryption, permission synchronisation, and sensitivity label governance. In a <a href=\"http://www.linkedin.com/pulse/microsoft-iq-powering-agentic-enterprise-deep-dive-work-padidapu-0lftc\">separate deep dive</a>, Satyanarayana Padidapu describes Microsoft IQ, which covers Work IQ, Fabric IQ, and Foundry IQ, as an 'intelligence layer' that aims to reduce duplicated retrieval augmented generation pipelines and make grounding a shared service across Copilot Studio, Microsoft 365, and Foundry agents.</p>\n   <p>On the model side, Foundry’s catalogue adds four first party MAI models in public preview: MAI Thinking 1 for chat and reasoning, MAI Image 2.5 for image generation and editing, MAI Transcribe 2 for speech to text with diarisation, and MAI Voice 2 for multilingual text to speech with voice cloning. Fireworks AI on Foundry is now generally available, providing access to open models through a single Azure endpoint with enterprise SLAs, support for custom weight models, and integration with Foundry’s access controls and logging. <a href=\"http://futurework.blog/2026/02/10/claude-opus-4-6-now-available-in-microsoft-foundry/\">Vesa Nopanen’s analysis</a> of Claude Opus on Foundry calls this pattern 'a meaningful step forward' for organisations that want frontier models with Azure governance, highlighting day zero access, low latency, and integration with Foundry IQ and Work IQ for grounded agents. Managed Compute in Foundry Models is aimed at routing workloads around regional GPU constraints and supports fine tuning and 'Frontier Tuning', which Microsoft claims is <a href=\"http://devblogs.microsoft.com/foundry/build-2026-foundry-models/\">significantly more cost efficient</a> than using GPT 5.5 directly for tasks such as technical documentation generation.</p>\n   <blockquote>\n    Tracing and evaluations for any agent framework mean no team has to choose between its stack and observability. You can keep LangChain, Semantic Kernel, or your own code, and still get production grade traces and evaluations in Foundry.\n    <br>\n    --Nick Brady\n   </blockquote>\n   <p>Outside the Build recap, Microsoft and community authors describe a layered picture in which Microsoft 365 Copilot Agent Builder and Copilot Studio provide visual, low code experiences, while Foundry is the code first platform with evaluations and observability. <a href=\"http://www.linkedin.com/pulse/agent-builder-vs-copilot-studio-microsoft-foundry-szymon-bochniak-bgt5f\">Szymon Bochniak’s comparison</a> of Agent Builder, Copilot Studio, and Foundry presents this as three tiers, with Foundry used when teams need custom logic, advanced retrieval, and deeper integration with developer workflows. <a href=\"https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/build-secure-process\">Microsoft's secure agent process guidance</a> recommends that teams map where agents already touch build, test, and release, and then apply the same discipline they use for microservices: clear scope, policy, tracing, and continuous evaluation, now supported as first class features in Foundry.And a Build 2026 recap written from a DevOps perspective<a href=\"http://dev.to/pwd9000/microsoft-build-2026-top-announcements-from-a-devops-lens-419k\">describes these additions</a> as the point where \"Foundry feels like a real production platform for agents, not just a place to wire up demos.\"</p>\n   <p>Further <a href=\"https://azure.microsoft.com/en-us/products/ai-foundry/\">information on Foundry is available</a> on Microsoft's website.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Foundry Adds Runtime, Tooling, and Governance for Production Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/microsoft-foundry-agents/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1780992000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "在 Build 2026 大会上，Microsoft Foundry 为 AI 智能体新增了生产级运行时，包括托管智能体、程序性记忆、通过 Foundry IQ 实现的统一知识源接入、全新 MAI 模型，以及直接发布到 Microsoft 365 的能力。",
+  "oneSentenceSummary": "在 Build 2026 大会上，Microsoft Foundry 为 AI 智能体新增了生产级运行时，包括托管智能体、程序性记忆、通过 Foundry IQ 实现的统一知识源接入、全新 MAI 模型，以及直接发布到 Microsoft 365 的能力。",
+  "summary": "本文来自 InfoQ，介绍了 Build 2026 上公布的 Microsoft Foundry 面向生产环境的新功能。文章详细阐述了新的托管智能体运行时，该运行时提供受管的沙箱会话、状态和文件系统访问，支持多种框架和长时间运行的智能体。文章解释了 Foundry 通过 Toolboxes 实现工具集中注册与发现的工具链方法，以及将智能体直接发布到 Microsoft Teams 和 365 Copilot 的能力。文章重点介绍了作为平台级特性的程序性记忆，它能提升任务成功率；以及 Foundry IQ，这是一个统一的知识层，提供无服务器和网络知识源接入选项，用于知识源连接。在模型方面，文章涵盖了新的第一方 MAI 模型以及 Fireworks AI 在 Foundry 上的正式发布。文章还将 Foundry 置于微软更广泛的智能体生态系统中，将其与 Copilot Studio 等低代码工具进行对比，并引用了社区分析，将 Foundry 定位为面向智能体的、以代码为先的生产级平台。",
+  "mainPoints": [
+    {
+      "point": "Foundry 新的托管智能体运行时为生产级智能体提供了受管的有状态执行环境。",
+      "explanation": "该运行时支持带有状态和文件系统访问权限的沙箱会话、多种智能体框架，以及具有持久化状态的长时间运行智能体，将智能体从原型阶段推进到生产系统。"
+    },
+    {
+      "point": "Toolboxes 集中管理工具的注册与发现，将工具与单个智能体代码解耦。",
+      "explanation": "工具、技能和 MCP 客户端在受管端点中一次性注册，并在运行时被发现。平台级的工具搜索功能会根据每个任务选择相关工具，从而提高了可维护性和可扩展性。"
+    },
+    {
+      "point": "程序性记忆是一项新的平台级特性，可帮助智能体跨运行学习如何执行任务。",
+      "explanation": "早期基准测试显示，在成本接近基线的情况下，绝对成功率提升了 7-14%。这代表了智能体学习能力超越简单对话历史的重大进步。"
+    },
+    {
+      "point": "Foundry IQ 将多个知识源统一到单个检索端点之后，并提供企业级 SLA。",
+      "explanation": "这包括 Work IQ、Fabric IQ 以及全新的 Web IQ（用于实时知识源接入，响应时间低于 200 毫秒），旨在减少重复的 RAG 流水线，使知识源接入成为微软智能体生态系统中的一项共享服务。"
+    },
+    {
+      "point": "Foundry 被定位为面向生产级智能体的代码优先平台，与 Copilot Studio 等低代码工具形成互补。",
+      "explanation": "社区分析提出了一个三层模型：Agent Builder（可视化）、Copilot Studio（低代码）和 Foundry（代码优先，具备评估、可观测性和深度集成能力），为团队根据复杂度提供了清晰的选择。"
+    }
+  ],
+  "keyQuotes": [
+    "程序性记忆帮助智能体跨运行学习如何完成工作，而不仅仅是记住了什么。早期 Tau 基准测试结果显示，在成本接近基线的情况下，绝对成功率提升了 7% 到 14%。",
+    "为任何智能体框架提供的追踪和评估功能，意味着没有团队需要在技术栈和可观测性之间做出选择。你可以继续使用 LangChain、Semantic Kernel 或你自己的代码，同时仍然能在 Foundry 中获得生产级的追踪和评估。",
+    "Foundry 感觉像是一个真正的智能体生产平台，而不仅仅是一个搭建演示的地方。"
+  ],
+  "tags": [
+    "AI Agent",
+    "Microsoft Foundry",
+    "LLM",
+    "AI 基础设施",
+    "企业级 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 988,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1780992000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-09 16:00:00"
+}
