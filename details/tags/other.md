@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-10 08:33:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-10 11:04:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -14155,25 +14155,19 @@
 
 ### [Spring-for-Apache-Pulsar-1.2.18-和-2.0.6-现已发布](https://spring.io/blog/2026/06/10/spring-for-apache-pulsar-1-2-18-and-2-0-6-are-now-available)
 
-2026-06-10 08:00:00 | 标签: Spring, Apache Pulsar, 发布说明, Java, 消息
-
-> Spring 团队发布的此公告详细介绍了 Spring for Apache Pulsar 1.2.18 和 2.0.6 版本的发布。这两个版本都是维护版本，主要侧重于更新项目依赖项。2.0.6 版本升级到了 Apache Pulsar 客户端 4.2.1，并包含了对 Jackson、logback、Caffeine 和 Testcontainers 的更新。1.2.18 版本包含了对 Jackson 和 logback 的维护性升级。该版本还修复了一个与默认标头映射器相关的安全漏洞（CVE-2026-41732）。这些版本将包含在即将发布的 Spring Boot 版本中：1.2.18 将包...
+2026-06-10 08:00:00
 
 
 
 ### [每位-STEM-学生都应了解的开源工具](https://www.freecodecamp.org/news/open-source-tools-every-stem-student-should-know-about/)
 
-2026-06-09 14:14:32 | 标签: 开源, STEM 教育, 开发者工具, 学习方法, 职业发展
-
-> 本文认为，开源工具对于现代 STEM 教育至关重要，它正在取代昂贵的商业授权软件。文章重点介绍了七款关键工具：用于交互式编程与可视化的 Jupyter Notebook、全能代码编辑器 VS Code、动态数学可视化工具 GeoGebra、版本控制与协作工具 Git 和 GitHub、3D 科学可视化工具 Blender，以及用于录制演示和教程的 OBS Studio。文章强调，这些工具不仅降低了经济门槛，还真实反映了行业工作流程，有助于学生培养实用且与职业相关的技能。最后，文章指出学习方式正转向项目制学习，以及利用易得技术进行自主探索的重要性。
+2026-06-09 14:14:32
 
 
 
 ### [可合并容器：修复并发子容器创建问题-–-Loro](https://loro.dev/blog/mergeable-containers)
 
-2026-06-09 12:48:10 | 标签: CRDT, 本地优先, 协同编辑, 系统设计, 开源
-
-> 本文来自 Loro 团队，介绍了可合并容器（Mergeable Containers），这是对 JSON 类 CRDT 中一个知名问题的解决方案：当两个离线对等端在同一 Map 键下并发创建子容器（例如 List 或 Text）时，同步后只有一个对等端的容器会存活，导致明显的数据丢失。根本原因在于，常规子容器 ID 包含了创建它们的操作 ID，因此并发的首次创建会产生不同的 ID。可合并容器通过从子容器的逻辑位置（父 Map + 键 + 类型）而非创建操作来派生其身份，从而解决了这个问题。该设计包含两层：一个确定性的合成 ContainerID（使用保留的 `🤝:` 命名空间和扁平化路径编码...
+2026-06-09 12:48:10
 
 
 
@@ -35717,11 +35711,11 @@
 
 
 
-### [为-Agent-设计产品](https://baoyu.io/blog/2026-04-24/teddy-riker-2047312986696454584)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-24T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> UI 并没有死，但软件交互的 80% 正在转向 Agent。产品团队需要像过去为人设计界面一样，认真为 Agent 设计工具、上下文和反馈闭环。
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 

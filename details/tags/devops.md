@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-10 08:33:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-10 11:04:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -566,25 +566,19 @@
 
 ### [自信地自动化管理多样化服务集群的变更](https://www.infoq.com/presentations/automate-fleetwide-changes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-09 20:14:00 | 标签: DevOps / 云原生, 工程实践, 自动化, 平台工程, 软件交付
-
-> Netflix 工程师 Casey Bleifer 详细阐述了公司为在超过 4，000 个服务的多样化集群中自动化代码迁移所做的努力。其目标是将迁移时间从数月或数年缩短至数天，特别是针对关键漏洞的修复。解决方案是一个全集群自动化平台，具备可组合的步骤、事件驱动的编排以及内置的安全检查机制，如分阶段发布和合规性门禁。一个关键见解是，信心是双向的：平台必须可靠，服务也必须具备可自动化性。为了建立这种信任，团队开展了一项名为“信心猩猩”的演练，从 120 个 Java 服务和一次简单的日志变更开始。这揭示了主要障碍：缺失的联系人元数据、长期未关闭的拉取请求以及缓慢的部署频率。通过全公司范围的倡议和工...
+2026-06-09 20:14:00
 
 
 
 ### [IBM-Vault-Enterprise-2.0-为企业身份安全带来自动化-LDAP-密钥管理](https://www.infoq.com/news/2026/06/ibm-hashicorp-vault-ldap-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-09 20:00:00 | 标签: 科技资讯, 企业安全, 身份管理, 云基础设施, DevOps
-
-> 本文报道了 IBM 与 HashiCorp 联合宣布的 IBM Vault Enterprise 2.0 中新增的 LDAP 密钥管理功能。此次更新代表了重大的架构演进，将 LDAP 静态角色迁移至 Vault 的集中式轮换管理器，以实现标准化的调度、重试逻辑和治理。一项关键创新是“自管理流程”模型，该模型允许单个 LDAP 账户在受控策略下自行轮换密码，从而减少对特权管理账户的依赖，并遵循最小权限原则。文章还结合 IBM 于 2025 年收购 HashiCorp 的背景，强调了现有 Vault 用户的连续性。文章重点指出了管理基于 LDAP 的身份系统（如 Active Directory ...
+2026-06-09 20:00:00
 
 
 
 ### [使用-Liquibase-和-Spring-Boot-进行数据库版本控制](https://www.freecodecamp.org/news/database-version-control-with-liquibase-and-spring-boot/)
 
-2026-06-09 10:29:12 | 标签: 数据库迁移, Spring Boot, Liquibase, 后端开发, DevOps
-
-> 本文解决了团队开发中常见的数据库模式漂移问题，即手动共享 SQL 脚本会导致不同环境间的不一致。文章介绍了 Liquibase 作为解决方案，它将版本控制纪律引入数据库变更。该指南解释了 changeLog 和 changeSet 等核心概念，详细说明了 Spring Boot 启动期间的自动迁移过程，并逐步指导构建一个员工管理 API 的模式。内容涵盖创建初始模式、通过新增列和表来演进模式、检查 Liquibase 的元数据表（DATABASECHANGELOG 和 DATABASECHANGELOGLOCK），以及永远不要修改已执行 changeSet 的关键规则。文章还演示了如何处理种子...
+2026-06-09 10:29:12
 
 
 
