@@ -1,0 +1,51 @@
+{
+  "id": "RAW_56aa1bf6",
+  "title": "能不能不要让我看到某个 AI 自媒体博主投放 AI 生成的废品，然后说自己拿了多少个 star",
+  "url": "https://www.v2ex.com/t/1219251#reply0",
+  "date": "2026-06-10 09:31:56",
+  "author": "walterggg",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  例如，把多个 AI CLI 终端放在一个浏览器 UI 里就叫做多 agent 协作，如果只是这样，你不知道 vsc 的终端支持分屏吗？你不知道扔下一个指令就可以让 agent 把当前窗口的会话内容全量导出一个 md 吗？\n  <br>\n  <br>\n  可是用户实际的痛点：\n  <br>\n  A：codex 额度没有了，换到 DeepSeek ，如何让后者更好的理解我和 codex 的会话上下文\n  <br>\n  <br>\n  这应该是最基本的需求吧？\n  <br>\n  你如果声称多 agent 团队协作，那么你必须解决上下文转移的痛点，起码你需要潜心做一套算法把最基本的会话记录抽象成结构化的上下文，这基本是可以无限优化的点了。如果你的算法有价值，也可以做 saas 变现啊？这种东西的价值我相信会有人付费的。\n  <br>\n  <br>\n  B：两个 agent 同时编排一个文件的时候怎么不打架\n  <br>\n  <br>\n  你说，你的程序可以让 agent 互相汇报进度，递交任务，那我问你，能不能解决我的这两个问题？你有算法吗？如果做个什么 <a target=\"_blank\" href=\"http://task.md\" rel=\"nofollow noopener\">task.md</a> 就发自媒体叙事能力，那我只能怀疑你的开源价值观有问题，你要的是流量，而不是真正的为社区创造价值。\n  <br>\n  <br>\n  我为啥把多 agent 协作程序拉出来编排，因为太多自媒体盯着这块大肉来叙事了，我对这种叙事越来越反感。\n  <br>\n  我承认一些开源方案有小工具的价值，能带来流量，但我拒绝接受他的大叙事。\n  <br>\n  <br>\n  我觉得有用的开源项目，比如 clash 几年前就停止维护了，后来的 mihomoparty 站出来了，再比如现在很多大模型中转站都在用的 cli2proxy ，还有给中转站做壳子的那个开源程序，我忘记是什么了，我觉得这种真正解决痛点的东西才算是有价值的输出吧？\n  <br>\n  <br>\n  如果开源生态越来越奖励大叙事，而不是奖励真正解决痛点的工程能力，这对新人其实不是好信号。\n </body>\n</html>",
+  "aiSummary": "本文批评部分 AI 自媒体博主用表面功能包装成「多 Agent 协作」大叙事，实际未解决上下文转移、文件冲突等真实痛点，认为开源生态应奖励工程能力而非叙事能力。",
+  "oneSentenceSummary": "本文批评部分 AI 自媒体博主用表面功能包装成「多 Agent 协作」大叙事，实际未解决上下文转移、文件冲突等真实痛点，认为开源生态应奖励工程能力而非叙事能力。",
+  "summary": "作者以 V2EX 帖子形式，对当前 AI 开源社区中「多 Agent 协作」类项目的叙事方式提出尖锐批评。核心论点是：许多项目将多个 AI CLI 终端放入浏览器 UI 就称为「多 Agent 协作」，但并未解决用户真正的痛点——如跨模型上下文转移、多 Agent 同时编辑同一文件时的冲突。作者认为这种「大叙事」本质是追逐流量，而非为社区创造价值。文章列举了 clash、mihomo party、cli2proxy 等真正解决痛点的开源项目作为对比，并警示：如果开源生态奖励叙事而非工程能力，对新人不是好信号。",
+  "mainPoints": [
+    {
+      "point": "多 Agent 协作项目普遍存在「叙事大于实质」的问题。",
+      "explanation": "作者认为将多个 AI CLI 终端放入浏览器 UI 就称为多 Agent 协作，是表面功能包装，未触及跨模型上下文转移、文件冲突等核心工程难题。"
+    },
+    {
+      "point": "真正有价值的开源项目应解决具体痛点。",
+      "explanation": "作者以 clash、mihomo party、cli2proxy 为例，认为这些项目因解决网络代理、模型中转等真实需求而具备长期价值，而非依靠叙事吸引流量。"
+    },
+    {
+      "point": "开源生态奖励叙事而非工程能力，对新人构成误导。",
+      "explanation": "作者担忧这种趋势会让新人误以为「讲故事」比「解决实际问题」更重要，不利于社区长期健康发展。"
+    }
+  ],
+  "keyQuotes": [
+    "如果开源生态越来越奖励大叙事，而不是奖励真正解决痛点的工程能力，这对新人其实不是好信号。",
+    "你如果声称多 agent 团队协作，那么你必须解决上下文转移的痛点。"
+  ],
+  "tags": [
+    "开源项目",
+    "AI Agent",
+    "开发者社区",
+    "工程实践",
+    "技术评论"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 594,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1781055116000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-10 09:31:56"
+}

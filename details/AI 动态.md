@@ -1,23 +1,35 @@
-> **更新时间**: 2026-06-01 08:28:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-11 08:34:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Karpathy-评-Claude-Fable-5：AI-能力的重大阶跃](https://x.com/karpathy/status/2064409694761054332)
+
+2026-06-10 02:10:00 | 标签: Claude Fable 5, Andrej Karpathy, AI 模型评测, LLM, 软件开发
+
+> Andrej Karpathy 对新发布的 Claude Fable 5 模型进行了定性评测。他确认该模型与 Mythos 底层相同，但增加了安全防护措施。虽然基准测试已显示其达到 SOTA 水平，但他强调，其定性提升是一次重大阶跃，堪比从 Claude 4 到 4.5 的跨越。他特别指出该模型在长时间、高难度的解题任务上表现卓越，能够处理比以往更具雄心的任务。他还反思了更广泛的影响，引用杰文斯悖论来解释自己日益增长的软件需求——该模型能以空前的便捷性创建解释器、可视化工具、仪表盘和定制化应用。
+
+
+
+### [Anthropic-发布-Claude-Fable-5：面向大众的-Mythos-级模型](https://x.com/claudeai/status/2064394146916229443)
+
+2026-06-10 01:08:13 | 标签: Claude Fable 5, Anthropic, AI 模型发布, Mythos 级, AI 安全
+
+> Anthropic 的官方 Claude 账号宣布发布 Claude Fable 5，一款全新的 Mythos 级 AI 模型。该模型的能力超越了 Anthropic 此前向公众开放的任何模型，并且经过专门设计和安全测试，可面向大众使用。这是该公司一次重大的产品发布。
+
+
+
 ### [Anthropic-完成-650-亿美元-H-轮融资，估值达-9650-亿美元](https://x.com/AnthropicAI/status/2060061347522433422)
 
-2026-05-29 02:11:13 | 标签: Anthropic, Claude, H 轮融资, AI 融资, 估值
-
-> Anthropic 成功获得 650 亿美元 H 轮融资，投后估值高达 9650 亿美元。本轮融资由 Altimeter Capital、Dragoneer Investment Group、Greenoaks 和 Sequoia Capital 联合领投。这笔巨额资金——堪称科技史上规模最大的融资之一——将用于推进 AI 研究和扩大基础设施，以满足对 Claude 日益增长的需求。此次融资也表明了投资者对 Anthropic 在与 OpenAI 及其他前沿 AI 实验室竞争中保持优势的信心。
+2026-05-29 02:11:13
 
 
 
 ### [RAG、文档上下文与-AI-Agent-全景回顾（2023-2026）](https://x.com/jerryjliu0/status/2058953208782074127)
 
-2026-05-26 00:47:53 | 标签: RAG, AI Agent, 文档解析, LlamaIndex, 检索
-
-> 本条推文宣布发布一份 116 页的幻灯片，内容源自 Pierre-Loic Doulcet 在 AI Engineer Singapore 大会上所做的 90 分钟研讨会。该幻灯片对过去三年间关键 AI 模式的发展进行了历史性回顾，涵盖了朴素 RAG 的 12 个痛点、重排序与查询重写的重要性、Agent 循环的演进、检索环节如何成为瓶颈，以及文档解析这一持续存在的挑战。对于长期关注 LlamaIndex 的追随者而言，内容会带有些许怀旧感；对于新读者，则是一次绝佳的教育机会。幻灯片也揭示了 LlamaIndex 当前为何将核心聚焦于面向 Agent 的最先进文档解析技术。
+2026-05-26 00:47:53
 
 
 
@@ -243,13 +255,13 @@
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 

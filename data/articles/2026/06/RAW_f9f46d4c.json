@@ -1,0 +1,51 @@
+{
+  "id": "RAW_f9f46d4c",
+  "title": "Fable 5 的安全机制：回退 Opus 4.8",
+  "url": "https://www.v2ex.com/t/1219246#reply2",
+  "date": "2026-06-10 09:25:41",
+  "author": "shineonme",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown_body\">\n   <p><a href=\"https://www.anthropic.com/news/claude-fable-5-mythos-5\" rel=\"nofollow\">https://www.anthropic.com/news/claude-fable-5-mythos-5</a></p>\n   <hr>\n   <blockquote>\n    <p>发布如此强大的模型伴随着风险。如果没有安全措施，Fable 5 在网络安全等领域的能力可能会被滥用，造成严重损害。因此，我们在发布该模型时配备了安全机制：当用户查询某些主题时，系统将改用我们次强模型 Claude Opus 4.8 进行回复。为了在安全的前提下快速发布模型，我们采取了较为保守的安全设定——这些机制有时会误拦截无害请求（尽管平均触发率低于 5%）。随着未来几个月内更强大模型的陆续推出，我们正努力改进安全措施，降低误报率。</p>\n   </blockquote>\n   <hr>\n   <blockquote>\n    <p>我们此前已发现，有大规模尝试从 Claude 中提取（“蒸馏”）其能力，用于在威权国家训练竞争模型。对 Fable 5 能力的蒸馏可能间接导致近前沿 AI 能力的扩散——而这些能力可能在缺乏适当安全措施的情况下被释放。被我们的分类器标记为属于此类蒸馏尝试的请求，将回退到 Opus 4.8 。</p>\n   </blockquote>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 在发布 Fable 5 时引入安全机制，对高风险主题和蒸馏尝试的请求回退至次强模型 Opus 4.8，以平衡能力释放与安全风险。",
+  "oneSentenceSummary": "Anthropic 在发布 Fable 5 时引入安全机制，对高风险主题和蒸馏尝试的请求回退至次强模型 Opus 4.8，以平衡能力释放与安全风险。",
+  "summary": "文章介绍了 Anthropic 在发布其最强模型 Fable 5 时采取的安全策略。核心机制是：当用户查询涉及网络安全等敏感主题时，系统会自动改用次强模型 Claude Opus 4.8 进行回复。此外，针对在威权国家大规模提取模型能力（蒸馏）以训练竞争模型的行为，被分类器标记的相关请求也会回退到 Opus 4.8。Anthropic 承认当前安全设定较为保守，平均误报率低于 5%，并承诺在未来更强大模型推出时改进安全措施以降低误报。",
+  "mainPoints": [
+    {
+      "point": "Fable 5 发布时配备了回退安全机制，对敏感主题改用次强模型 Opus 4.8 回复。",
+      "explanation": "为防范模型在网络安全等领域被滥用，Anthropic 采取了保守的安全设定，对高风险查询自动降级到能力较弱的模型，以在快速发布与安全之间取得平衡。"
+    },
+    {
+      "point": "针对模型能力蒸馏的请求也会触发回退机制。",
+      "explanation": "Anthropic 发现存在大规模从 Claude 中提取能力用于在威权国家训练竞争模型的行为，因此将此类蒸馏尝试标记并回退到 Opus 4.8，以防止近前沿 AI 能力在缺乏安全措施的情况下扩散。"
+    },
+    {
+      "point": "当前安全设定保守，平均误报率低于 5%，未来将改进。",
+      "explanation": "Anthropic 承认安全机制有时会误拦截无害请求，但为了快速发布模型而采取了较为保守的设定，并承诺在后续更强大模型推出时优化安全措施以降低误报。"
+    }
+  ],
+  "keyQuotes": [
+    "发布如此强大的模型伴随着风险。如果没有安全措施，Fable 5 在网络安全等领域的能力可能会被滥用，造成严重损害。",
+    "我们此前已发现，有大规模尝试从 Claude 中提取（'蒸馏'）其能力，用于在威权国家训练竞争模型。"
+  ],
+  "tags": [
+    "AI 安全与对齐",
+    "LLM",
+    "模型发布",
+    "AI 商业化",
+    "AI 治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 324,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1781054741000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-10 09:25:41"
+}

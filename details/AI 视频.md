@@ -1,31 +1,49 @@
-> **更新时间**: 2026-06-01 08:28:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-11 08:34:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Claude-Code-一周年复盘：从辅助写代码到自主智能体工作流](https://www.youtube.com/watch?v=Hth_tLaC2j8)
+
+2026-06-09 00:31:07 | 标签: Claude Code, AI 编程, 自主智能体, 验证循环, Auto Mode
+
+> 在这场 Claude 官方对话中，两位讲者回顾 Claude Code 发布第一年的变化，重点讨论它如何从简单的开发辅助工具，演进为由智能体、routine、验证循环、Auto Mode、远程控制和上下文极简主义共同组成的工作系统。内容最有价值的部分来自团队内部的一手实践：智能体的验证不应只停留在单元测试、lint 或类型检查，而应能真正运行环境、操作应用、发现问题、修复并再次验证；Auto Mode 通过安全分类模型和红队 eval 减少人工权限确认疲劳；routine 可以监听 issue、修复 bug、处理 code review 并持续推进工作。视频还进一步讨论组织形态，认为 AI 只...
+
+
+
+### [OpenAI-如何打造-AI-原生财务团队：工程师嵌入、ChatGPT、Codex-与工作流智能体](https://www.youtube.com/watch?v=1NtS2KdnDok)
+
+2026-06-08 16:30:39 | 标签: AI 原生运营, 财务转型, OpenAI, 工作流自动化, Codex
+
+> Stacie Faggioli 从 OpenAI 内部视角展示了公司如何围绕 AI 原生工作流建设未来的财务团队。她强调三条运营原则：重新设计流程，而不是把 AI 贴到旧流程上；用实际结果证明人效杠杆；尽早上线并快速迭代。随后她拆解了多类具体实践，包括用于大型融资尽调的投资者关系智能体、能生成可追溯 LBO 模型的 ChatGPT for Excel、用于营销 ROI 和销售情报的 Codex 仪表盘、算力毛利演示材料自动化，以及面向采购、信用检查、合同审查和供应商风险的组织级智能体。最有价值的部分，是内部运营细节、量化案例和组织经验放在一起说明：真正持久的杠杆，来自把 AI 工具交给最贴近数...
+
+
+
+### [全栈构建者与高杠杆通才的崛起：Satya-Nadella-谈企业-AI-的下一阶段](https://www.youtube.com/watch?v=RQE8OS392dU)
+
+2026-06-04 18:00:31 | 标签: 智能体工作流, 企业 AI, 私有 eval, 全栈构建者, Microsoft
+
+> 这期 Microsoft Build 现场访谈以紧凑而高密度的方式呈现了 Satya Nadella 对 AI 平台下一阶段的判断。他并没有把竞争简化为单一模型之争，而是把 AI 描述成一个生态：企业需要自己的模型 harness、上下文层、工具和私有评测，才能持续积累专有价值。访谈把模型谱系、前沿智能、GitHub Copilot、Microsoft 365 的 work IQ、SaaS 解构、混合定价和全栈构建者的兴起串成一条清晰主线：组织会从手工执行工作流，转向构建能够执行并持续改进这些工作流的智能体系统。最有价值的部分在于解释为什么私有 eval 可能成为战略级 IP，为什么 SaaS...
+
+
+
 ### [删除-95%-的-Agent-Skills-后，WorkOS-如何让智能体结果变好](https://www.youtube.com/watch?v=vy7o1g2iHY8)
 
-2026-05-31 02:00:06 | 标签: AI 智能体, 智能体 harness, Claude skills, evals, 状态机
-
-> 这场分享是一个把 AI 智能体从演示推进到可反复交付系统的工程案例。Nick Nisi 介绍了 WorkOS 内部的 Case harness：它最初只是一个 Claude skill，后来被重建为 TypeScript 状态机，包含实现、验证、评审、收尾和复盘等多个智能体。核心经验是，不能相信智能体自己报告任务完成，而要让它在进入人工评审前产出证据，例如测试输出 hash 或 UI 录屏。后半部分同样有价值：WorkOS 一开始生成了超过 10，000 行产品 skills，但通过 eval 发现额外上下文反而让部分任务变差。最后他们改成 553 行手写 gotchas，把 eval 时间从...
+2026-05-31 02:00:06
 
 
 
 ### [Builders-Unscripted-第-3-期：Matias-Castello-如何用-Codex-搭建-AI-编码与产品工作流](https://www.youtube.com/watch?v=8QKqENa_eQQ)
 
-2026-05-30 04:29:25 | 标签: Codex, AI coding, AI 智能体, 产品管理, 开发者工作流
-
-> 这一期 Builders Unscripted 是一次信息密度很高的一手工作流拆解，展示一位没有正式工程训练的产品负责人，如何把 Codex 变成日常开发操作系统。Matias Castello 讲到 Alchemy 早期用 Slack 修改文档的经历、Codex 在事故复盘中回溯发现 race condition bug 的关键时刻，以及开发者平台为什么必须同时服务使用 AI 辅助的人类开发者和自主智能体开发者。最有迁移价值的是他的个人流程：共享 skills、`agents.md` 偏好文件、由 Codex 生成的 Linear 里程碑和 tickets、隔夜竞品研究，以及通过模块化 fe...
+2026-05-30 04:29:25
 
 
 
 ### [OpenAI-Agents-SDK：面向长任务智能体的生产级-Harness](https://www.youtube.com/watch?v=tK32trvj_b4)
 
-2026-05-29 04:09:34 | 标签: Agents SDK, 智能体 harness, 沙箱, 工具调用, skills
-
-> 这场 Build Hour 是一次面向开发者的新版 Agents SDK 讲解和演示。Steve Coffey 解释了为什么生产级智能体不能只是一个简单的 LLM 循环：它们需要持久编排、隔离计算、文件访问、工具路由、状态恢复、审批机制，以及把应用上下文带入运行过程的能力。最有技术含量的观点是把 harness 与 compute 分离。智能体循环不必和执行文件、命令的沙箱绑在一起，harness 可以运行在更持久的基础设施中，而沙箱保持临时可丢弃，从而降低状态丢失和密钥管理风险。现场 demo 构建了一个智能体任务追踪器，展示 sandbox agents、上传文件、快照、自定义工具、工具调...
+2026-05-29 04:09:34
 
 
 
@@ -107,13 +125,13 @@
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
@@ -143,13 +161,13 @@
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
@@ -509,7 +527,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -521,7 +539,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
