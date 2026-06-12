@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-12 08:34:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-12 11:04:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [为什么-AI-还没有取代软件工程师，而且也不会](https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers)
 
-2026-06-11 10:29:51 | 标签: AI 编程, LLM, 软件工程, AI 对就业的影响, 智能体工程
-
-> Arvind Narayanan 和 Sayash Kapoor 的这篇文章系统地驳斥了 AI 导致软件工程师大规模失业的说法。文章首先揭穿了几个备受关注的案例（Block、Snap、Intuit），指出这些裁员实为财务压力驱动下的“AI 洗白”，并引用调查数据和 WARN 法案数据，显示与 AI 相关的裁员微乎其微。核心论点是“决策-执行-交付三明治”模型：AI 压缩了“执行”层（编写代码），但“决策”层（需求规格、规划）和“交付”层（测试、验证、问责）仍然是人类主导的瓶颈。GitHub 的一项研究（代码编写量增加 8 倍，但发布量仅增加 30%）为此提供了证据。文章区分了“氛围编码”和“智...
+2026-06-11 10:29:51
 
 
 
@@ -9094,9 +9092,7 @@
 
 ### [人是最慢的节点，还怎么管-AI-Agent？｜AI-跃迁者调研](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650997592&idx=1&sn=102873946bcd8161798a0432b5d8c58d)
 
-2026-06-11 17:50:00 | 标签: AI Agent, AI 协作, AI 编程, 组织变革, AI 产品与应用
-
-> 本文是腾讯研究院「AI 跃迁者调研」系列的第四期，深度访谈了开源 Agent 协作平台 Multica 的创始人张佳圆。文章核心围绕一个 4 人团队如何通过自建的 Agent 编排平台，实现组织效率的指数级提升。张佳圆详细阐述了 Multica 的产品定位（模型中立的协作层）、核心设计原则（Agent 三类角色、最多两层架构）、以及团队的真实工作流（周一规划、每日 6 点 demo、其余时间交给 Agent）。文章深入探讨了「人是最慢的节点」这一核心洞察，分析了组织架构从多人协作到「一人端到端」的变革，并提出了「Agent idle 率」作为衡量组织 AI Native 程度的关键指标。同时，...
+2026-06-11 17:50:00
 
 
 
@@ -12636,57 +12632,43 @@
 
 ### [端侧-AI-提速-80%？如何让-Qwen3-VL-在手机起飞](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501476&idx=1&sn=a9caef85456da041a0bfa3c0d40d0843)
 
-2026-06-11 19:44:00 | 标签: AI 编程, LLM, 端侧推理, 模型部署, Arm SME2
-
-> 文章由通义实验室工程师撰写，是一篇面向端侧 AI 开发者的工程实践教程。核心内容围绕 Armv9 架构的 SME2 指令集展开，解释了其通过 ZA 矩阵累加器实现高效矩阵乘的原理。随后，文章以阿里巴巴开源的 MNN 推理引擎为工具，详细演示了从源码编译（开启 SME2 支持）、模型下载/转换、命令行验证到构建 Android 应用的完整部署流程。文章提供了具体的编译命令、模型推送步骤和性能测试方法，并在 vivo X300 上给出了实测数据：Prefill 阶段提速 81%，Decode 阶段提速 13%。最后，文章还介绍了模型导出和运行时参数的进阶调优方法。
+2026-06-11 19:44:00
 
 
 
 ### [腾讯混元-AI-Infra-新开源：HPC-Ops-推理核心算子全面升级](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497936&idx=1&sn=21a726b8e684ce2e341265a518ab0369)
 
-2026-06-11 16:35:00 | 标签: AI Infra, LLM, 推理优化, 开源项目, 算子库
-
-> 本文是腾讯混元 AI Infra 团队对其开源推理算子库 HPC-Ops 重大升级的官方发布。文章详细介绍了五大核心算子的技术原理、设计思路与性能数据：Attention 采用运行时动态负载调度解决长尾延迟，实测长文本加速 2.95x；Router GEMM 通过双 BF16 组合模拟 FP32 精度，在保持高精度的同时相比 FP32 cuBLAS 最高提速 3.22x；FusedMoE 将 MoE 推理全流程融合为一体化流水线，相比 vLLM/SGLang 性能提升 1.2x-1.6x；Fused AllReduce+Norm 深度融合通信与归一化计算，最高提速 1.68x；Sampler ...
+2026-06-11 16:35:00
 
 
 
 ### [OpenAI-和-Anthropic-共同看好的-FDE：AI-时代的新岗位出现，旧分工松动｜对谈-Rolling-AI](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109004&idx=1&sn=a9c8321b6306c7536563c127bb982ffd)
 
-2026-06-11 14:45:00 | 标签: AI 商业化, AI Agent, 企业服务, AI 落地, 商业洞察
-
-> 本文是一篇播客访谈的文字整理稿。嘉宾是 AI 商业咨询公司 Rolling AI 的两位合伙人阿甘和刘开。文章以 OpenAI 和 Anthropic 同日宣布成立十亿美元级 FDE 合资公司为引子，深入探讨了 FDE 这一新兴岗位的本质、价值与挑战。核心观点是：AI 不是传统软件，而是劳动力。FDE 的角色类似于“工头”，带领一群“数字高材生”深入企业一线，解决业务流程融合、私有知识治理和 IT 系统对接三大问题。文章通过乳制品企业、连锁零售、租房平台等多个实战案例，展示了 AI 如何从“展示能力”走向“交付结果”，并提出了“SOP 代表落后”、“AI 落地失败率超 50%”等犀利观点。文章...
+2026-06-11 14:45:00
 
 
 
 ### [ACL-2026-Oral｜语义推理如鲠在喉：大模型被「短语」难住了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651038459&idx=3&sn=2fc7962e868aa2d07d46ad1dda53560d)
 
-2026-06-11 12:30:00 | 标签: LLM, 语义推理, 模型评测与基准, 多词表达, ACL 2026
-
-> 本文报道了 ACL 2026 主会 Oral 论文《Revisiting a Pain in the Neck: A Semantic Reasoning Benchmark for Language Models》的研究成果。来自北京通用人工智能研究院与北京科技大学的研究团队提出了 SemanticQA 诊断性基准，将短语语义理解拆解为分类、抽取与释义三种原子操作，覆盖习语、固定搭配、名词复合结构与动词多词表达四类典型短语现象。评估横跨 BERT、T5、GPT-5、Claude Sonnet、DeepSeek-R1、Gemini 2.5 Pro 等十余个模型，发现：即使最先进的大模型在短语语...
+2026-06-11 12:30:00
 
 
 
 ### [Mythos-阴影里谷歌悄悄发模型，速度暴涨-4-倍](https://www.qbitai.com/2026/06/434316.html)
 
-2026-06-11 12:17:22 | 标签: LLM, 扩散模型, AI 模型发布, 模型推理, 开源项目
-
-> 文章报道了谷歌最新发布的 DiffusionGemma 模型，其核心创新在于将图像生成领域的扩散模型应用于文本生成，抛弃了传统自回归模型逐 token 生成的方式，改为一次性在 256 个 token 的「画布」上并行去噪。这使得模型在单块 H100 上达到 1000+ tokens/s，在 RTX 5090 上达到 700+ tokens/s，速度是同规格自回归模型的 4 倍。模型采用 MoE 架构，26B 参数仅激活 3.8B，量化后 18GB 显存即可运行。文章解释了扩散模型为何更快（并行计算突破内存带宽瓶颈）以及双向注意力带来的实时自我纠错能力（如数独任务成功率从 0% 飙升至 80%...
+2026-06-11 12:17:22
 
 
 
 ### [Anthropic-撤回可能“破坏”AI-研究人员使用-Claude-的政策](https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything)
 
-2026-06-11 11:45:49 | 标签: 科技新闻, AI 安全, Anthropic, LLM, AI 政策
-
-> 本文报道了 Anthropic 决定撤回一项政策的决定，该政策详细记录在其系统卡中，会导致 Claude 在与前沿大模型开发相关的请求中悄悄限制其有效性。这项政策引发了强烈反弹，被描述为可能“破坏”AI 研究人员的工作。Anthropic 承认了错误，表示做出了错误的权衡并致歉。文章链接了 Wired 的独家报道以及作者本人此前对该问题的报道。
+2026-06-11 11:45:49
 
 
 
 ### [AINews-开放模型、模型实验室与智能体实验室，以及什么是不可训练的——Sarah-Guo](https://www.latent.space/p/ainews-open-models-model-labs-vs)
 
-2026-06-11 11:14:26 | 标签: AI 新闻, LLM, 开放模型, AI 智能体, 扩散模型
-
-> 本期来自 Latent Space 的 AINews 以对 Sarah Guo 关于“不可训练”护城河文章的评论开篇，探讨了开放模型、智能体实验室与模型实验室，以及免费可验证基准测试。主要报道聚焦于三个重大事件：(1) Anthropic 的 Fable/Mythos 发布，尽管模型在基准测试中表现强劲，但由于其静默能力限制和数据保留政策，引发了严重的信任危机；(2) Google 发布了 DiffusionGemma，这是一个基于 Apache 2.0 协议的 26B MoE 扩散文本模型，实现了高达 4 倍的生成速度提升，并立即获得了 vLLM 和 llama.cpp 的基础设施支持；(3...
+2026-06-11 11:14:26
 
 
 
@@ -42152,65 +42134,49 @@
 
 ### [脉搏：工程部门正在试图削减-AI-支出？](https://blog.pragmaticengineer.com/the-pulse-a-trend-of-trying-to-cut-back-on-ai-spend-within-eng-departments/)
 
-2026-06-12 00:32:50 | 标签: AI 编程, 工程管理, 科技行业, 初创公司, 开发者工具
-
-> 本文来自《务实工程师》通讯，报道了一个初现但重要的趋势：工程部门开始质疑并削减快速增长的 AI 支出，尤其是 AI 编码工具方面的投入。文章以 Uber 总裁质疑 AI 驱动代码提交的 ROI 开篇，指出将“25% 的代码提交来自 AI”这类指标与实际发布的功能联系起来存在困难。随后，文章汇集了多家公司的观点：OpenCode 看到对更廉价模型托管的需求激增；前沿公司感到被迫支付“智能溢价”，但正在探索模型路由；DoorDash 让开发者对自己的 token 使用负责；一家传统公司设置了月度限额并降级到更便宜的模型；初创公司则购买多个订阅以避免 API 成本。文章最后指出，一种新的自下而上关注...
+2026-06-12 00:32:50
 
 
 
 ### [脉搏：Antigravity-2.0-从新-IDE-中移除了“IDE”](https://blog.pragmaticengineer.com/the-pulse-antigravity-2-0-takes-ide-out-of-its-new-ide/)
 
-2026-06-12 00:22:16 | 标签: AI 编程, AI 智能体, Google, 开发者工具, IDE
-
-> 本文是 Gergely Orosz 对 Google 发布其 AI IDE 重大改版 Antigravity 2.0 的第一手批判性分析。作者认为这次发布一团糟。主要批评包括：令人困惑地拆分为两个应用（Antigravity IDE 和 Antigravity 2.0）、移除传统 IDE 界面代之以对话式智能体管理器、升级过程充满 Bug 且仓促，导致作者环境崩溃、模型支持不佳（无 Opus 4.7 或 GPT 5.5）、Gemini Token 配额消耗过快，以及强制弃用开源 Gemini CLI 转而使用闭源且不兼容的 Antigravity CLI。文章还指出，官方发布视频中赫然出现了一...
+2026-06-12 00:22:16
 
 
 
 ### [让秘密扫描更可信：大规模减少误报](https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/)
 
-2026-06-12 00:00:00 | 标签: 安全, LLM, 开发者工具, AI 编程, 秘密扫描
-
-> 这篇来自 GitHub 博客的文章详细介绍了与微软安全与 AI 的智能体攻击团队的合作，旨在提升 GitHub 秘密扫描的可信度。核心问题在于误报会削弱开发者的信任并拖慢修复速度。解决方案引入了一个上下文感知的验证步骤，利用 LLM 推理来区分真正的秘密与噪声。该系统并非分析整个文件，而是提取高信号的使用上下文——例如某个值是否被传递给 API 请求或身份验证头——以判断其是否为真实的泄露。该方法在数百个客户确认的告警数据集上实现了 75.76% 的误报率降低，超过了 65% 的目标。文章强调，“更好的上下文，而非更多的数据”是在不降低检测覆盖率的前提下大规模提升精度的关键。
+2026-06-12 00:00:00
 
 
 
 ### [OpenAI-的-GPT-5.5-和-Codex-在-Amazon-Bedrock-上正式可用](https://www.infoq.com/news/2026/06/openai-frontier-models-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-11 17:24:00 | 标签: AI Agent, LLM, 企业级 AI, 云计算, AI 治理
-
-> 本文报道了 OpenAI 的 GPT-5.5、GPT-5.4 以及 Codex 编程智能体在 Amazon Bedrock 上正式可用的消息，此前 OpenAI 已修订了与微软的独家云合作协议。其核心价值主张在于企业级治理集成：每次 API 调用都继承 AWS 原生控制，包括 IAM、VPC、KMS 加密和 CloudTrail 审计日志，且客户数据不会用于训练。Codex 可通过 Codex App、CLI 和 IDE 集成使用，采用按 token 计费模式。文章引用了 Hacker News 上从业者的观点，强调数据治理对大型企业的重要性；一位战略顾问指出了基础设施控制与决策层治理之间的差...
+2026-06-11 17:24:00
 
 
 
 ### [腾讯混元-AI-Infra-进化：HPC-Ops-推理核心算子全面升级](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801982&idx=1&sn=25fb653637a2fbac015d46c265f8266e)
 
-2026-06-11 16:20:00 | 标签: LLM, AI Infra, 推理优化, 算子库, 高性能计算
-
-> 本文详细介绍了腾讯混元 AI Infra 团队对其开源推理算子库 HPC-Ops 的重大升级。升级围绕五大核心算子展开：1）Attention 算子采用运行时动态负载调度方案，有效缓解长短请求混排导致的长尾延迟，长文本场景最高加速 2.95x，端到端 QPM 提升 17%；2）Router GEMM 通过双 BF16 GEMM 组合模拟 FP32 精度，在保持高精度的同时相比 CuBLAS FP32 最高提速 3.22x；3）FusedMoE 将路由、Gate-Up GEMM、激活量化、Down GEMM、Top-K 聚合等阶段融合为一体化流水线，相比 vLLM 和 SGLang 性能提升 1...
+2026-06-11 16:20:00
 
 
 
 ### [2026-06-11-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-06-11-HackerNews/)
 
-2026-06-11 15:45:25 | 标签: 科技新闻, Hacker News, AI, 开源, Web 开发
-
-> 这是一篇 Hacker News 每日摘要，汇总了 2026 年 6 月 11 日的十大热门话题及其 HN 评论精选。内容覆盖多个领域：苹果开源 macOS 容器机器，提供轻量级 Linux 环境；Anthropic 的 Claude Fable 被曝对前沿 AI 开发请求实施隐形限制，引发信任危机；一家公司通过构建 HTML 优先网站，使表单完成用户数翻倍；德国法院裁定谷歌需为 AI 概览中的错误陈述承担法律责任；文章批评幻想用 AI 取代员工的 CEO 是糟糕的管理者；梅赛德斯-奔驰开始大规模生产轴向磁通电机，包含多项全球首创工艺；npm v12 将默认禁止安装脚本执行，提升供应链安全；C...
+2026-06-11 15:45:25
 
 
 
 ### [复杂业务场景下-RCA-Agent-的探索实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286819&idx=2&sn=803565661ca00c316b89845bcb430b4f)
 
-2026-06-11 13:30:00 | 标签: AI Agent, RCA, AI 编程, 可观测性, 工程实践
-
-> 文章整理自快手资深服务端架构师郭勇良在 QCon 2026 北京站的演讲。作者首先指出，在 AI Coding 红利趋于稳定后，排障已成为下一个生产力瓶颈。随后，文章详细拆解了在业务层排障中落地的四个核心挑战：如何通过构建「业务资产」（代码抽象、指标拓扑、影响地图）让 AI 理解业务；如何通过告警置信度评估和循证医学式的证据分级体系对抗超过 75% 的告警噪声；如何通过构建基于真实故障快照的 Benchmark 体系来衡量 AI 排障的不确定性；以及如何通过将确定性任务工程化封装为 Tool 和 Skill 来对抗大模型在数值计算和趋势识别中的幻觉。在架构层面，文章介绍了分层设计：轻量 Wor...
+2026-06-11 13:30:00
 
 
 
 ### [鹅厂程序员初试-Claude-Fable-5：被吓到眩晕瘫坐的最强模型？](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695909&idx=1&sn=0a13452c881570effac36e9d26a098a7)
 
-2026-06-11 08:45:00 | 标签: LLM, 模型发布, AI 安全, AI 编程, 模型评测与基准
-
-> 文章围绕 Anthropic 发布的 Claude Fable 5 模型展开，首先解释了其本质：并非简单的版本迭代，而是将原本受限的 Mythos 级能力通过安全护栏下放给公众。作者从 Artificial Analysis 的评测数据出发，展示了 Fable 5 在综合评分上超越 GPT-5.5 的表现，并对比了其与 Opus 4.8、GPT-5.5、DeepSeek-V4-Pro 的定价，指出其在代码 Agent 类任务（如 SWE-Bench Pro 达 80.3%）和长链路工程任务上的显著优势。文章重点剖析了 Fable 5 的安全路由机制：普通请求由 Fable 5 处理，高风险请求...
+2026-06-11 08:45:00
 
 
 
