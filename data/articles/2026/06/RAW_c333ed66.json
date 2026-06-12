@@ -1,0 +1,56 @@
+{
+  "id": "RAW_c333ed66",
+  "title": "以项目即服务模式构建和扩展平台",
+  "url": "https://www.infoq.com/news/2026/06/platform-project-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-11 19:17:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>When a platform started with total developer autonomy, teams felt overwhelmed and ended up solving the same problems in completely different ways, Jerry van Hulst and Marcel Kerker showed in their presentation <a href=\"https://www.youtube.com/watch?v=PUHAYSM_jGI\">Ghost in the Platform</a> at <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/\">KubeCon &amp; CloudNativeCon Europe</a>. They shifted to enablement over support, working together with teams intensively, and helping teams feel confident and capable, turning the right way into being the easiest way.</p>\n   <p>In 2017, they started with a small team building an OpenShift proof of concept. Their initial philosophy was total developer autonomy, Van Hulst explained:</p>\n   <blockquote>\n    <p>We provided the platform, and developers were responsible for the entire lifecycle.</p>\n   </blockquote>\n   <p>By 2019, early adopters were thriving, but as they tried to move beyond that, they hit major growing pains. One was high cognitive load; early users were enthusiasts, but newer teams felt that the learning curve was way too steep. They found themselves overwhelmed by \"Kubernetes tax\", spending more time managing the platform than actually writing code.</p>\n   <p>Another growing pain was the fragmentation of knowledge: they didn’t offer teams a lot of standardization, and teams were solving the same problems, like logging or ingress, in completely different ways, Van Hulst explained:</p>\n   <blockquote>\n    <p>It was the \"Wild West\" even within the same cluster, which made it a headache for us to support and for teams to run.</p>\n   </blockquote>\n   <p>They realized that giving everyone total freedom was actually slowing them down, and they needed to move toward a more \"paved road\" approach.</p>\n   <p>Their current platform has a strong automation-first philosophy, which also applies to the onboarding journey, Van Hulst said. Their <a href=\"https://github.com/belastingdienst/opr-paas\">Project-as-a-Service operator</a> offers teams the means to create their environments with one simple YAML file. It includes most of what teams need to get started on the platform, from namespaces and RBAC to resource quota.\n    <br>\n    <br>\n    To enable your developers and empower teams, the philosophy is to prioritize enablement over support, Kerker said. Instead of just functioning as a helpdesk that solves support tickets, their ultimate goal is to build genuine self-sufficiency within engineering teams:</p>\n   <blockquote>\n    <p>We want them to feel confident and capable.</p>\n   </blockquote>\n   <p>With over 99+ DevOps teams, scaling knowledge is a challenge. They tackle this by fostering Communities of Practice where teams learn from each other, Kerker said. To keep everyone aligned and inspired, they host a regular Container User Group (CUG) to demo new platform features, alongside larger Containerization Days featuring plenary sessions and external speakers to explore emerging tech.</p>\n   <p>For hands-on upskilling, they offer targeted, self-paced workshops covering essentials like Tekton, ArgoCD, Identity Access Management, RightSizing, and Kustomize, Kerker said.</p>\n   <p>Kerker mentioned that their most impactful initiative is the Accelerator Hackathon:</p>\n   <blockquote>\n    <p>Rather than just handing over documentation, our platform experts sit side-by-side with a development team for a full day. We roll up our sleeves and work together to fast-track their first app onto the platform. It’s hands-on, highly collaborative, and the best way to turn enablement into immediate results.</p>\n   </blockquote>\n   <p>Their focus is on reducing cognitive load for developers and making their platform even smarter, Kerker said. They are going to double down on their Golden Path, making the \"right way\" the easiest way to build software. They are planning deep integrations into Backstage, and extending their CI/CD starters:</p>\n   <p>We want developers to have everything they need right out of the box.</p>\n   <p>They are also integrating AI to streamline operations by implementing AI-driven auto-answers for ChatOps and support tickets, Kerker explained:</p>\n   <blockquote>\n    <p>By automating the resolution of repetitive questions, we give developers instant help, while freeing up platform engineers to focus on high-value enablement instead of basic support.</p>\n   </blockquote>\n   <p>What’s next is determined by the community, Kerker said. They prioritize new features requested by users, and keep listening closely to development teams to ensure they are building the capabilities that actually solve their day-to-day challenges, Kerker concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/jerry-van-hulst/\">Jerry van Hulst</a> and <a href=\"https://www.linkedin.com/in/mkerker/\">Marcel Kerker</a>:</p>\n   <p><strong>InfoQ: What were the growing pains of your platform?</strong></p>\n   <blockquote>\n    <p><strong>Jerry van Hulst</strong>: The onboarding process was a manual, high-touch process to roll out new environments. Between us prepping the clusters and developers manually configuring their apps, it took forever for a team to actually start delivering value on the platform.</p>\n   </blockquote>\n   <blockquote>\n    <p><strong>Marcel Kerker</strong>: We shifted our strategy to focus on enablement. We started doing massive amounts of knowledge sharing with the DevOps teams. Our main goal became to completely unburden the developers—removing any friction and making the onboarding process onto the platform as incredibly easy and seamless as possible. We didn’t just give them a platform; we held their hands and guided them onto it.</p>\n   </blockquote>\n   <p><strong>InfoQ: What have you learned?</strong></p>\n   <blockquote>\n    <p><strong>Van Hulst</strong>: Coming from an infrastructure background, my old mindset was: ’If I gave you access to the server, my job is done.’ But I learned that in the cloud-native world, access isn’t enough. If I give a developer a namespace but they have to spend three days configuring ingress and CI/CD, I haven’t really helped them. My personal lesson is that my job isn’t just to provide infrastructure, it’s to remove the friction that stops code from reaching production.</p>\n   </blockquote>\n   <blockquote>\n    <p><strong>Kerker</strong>: I’ve learned that to make a platform successful, you have to relentlessly focus on your developers’ needs and always keep listening to their feedback. Hand in hand with that, I’ve learned that standardization is the absolute key to adoption. If every single team has to figure out the plumbing themselves, adoption grinds to a halt. By standardizing our processes, we remove that friction, prevent teams from reinventing the wheel, and make the platform significantly easier and more intuitive to embrace.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Building and Scaling a Platform with Project-as-a-Service\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/platform-project-as-a-service/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781176620000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了平台团队从完全的开发者自治模式转向“项目即服务”模式，强调赋能、标准化和动手协作，以降低认知负荷并实现有效扩展。",
+  "oneSentenceSummary": "本文详细介绍了平台团队从完全的开发者自治模式转向“项目即服务”模式，强调赋能、标准化和动手协作，以降低认知负荷并实现有效扩展。",
+  "summary": "本文基于 KubeCon Europe 上的一次演讲，记录了一个平台团队策略的演变过程。最初，他们采用完全的开发者自治理念，提供平台后让各团队自行管理整个生命周期。这导致了严重的成长阵痛：新团队面临高认知负荷（即“Kubernetes 税”），知识碎片化，各团队以完全不同的方式解决日志记录、入口等常见问题，形成了“狂野西部”式的环境。为解决此问题，团队转向了“赋能优于支持”的模式。他们引入了“项目即服务”操作器，允许团队通过单个 YAML 文件创建环境。当前策略的核心是通过标准化（“铺平道路”方法）减少摩擦，建立实践社区，举办动手工作坊，并开展“加速器黑客马拉松”，让平台专家与开发团队并肩工作。未来计划包括与 Backstage 深度集成、扩展 CI/CD 启动器，以及使用 AI 自动化处理重复的支持查询，所有这些都由开发者社区的持续反馈驱动。",
+  "mainPoints": [
+    {
+      "point": "完全的开发者自治会导致碎片化和高认知负荷。",
+      "explanation": "给予团队完全的自由而不进行标准化，导致他们以不同方式解决相同的问题（日志记录、入口），形成了难以支持的“狂野西部”环境，并增加了开发者的“Kubernetes 税”。"
+    },
+    {
+      "point": "关键在于从支持转向赋能。",
+      "explanation": "平台团队不是充当帮助台，而是通过知识分享、工作坊和“加速器黑客马拉松”等动手协作，建立真正的自给自足能力。"
+    },
+    {
+      "point": "标准化是采用和扩展的关键。",
+      "explanation": "通过“项目即服务”模式（为环境提供单个 YAML 文件）创建“铺平道路”，消除摩擦，防止重复造轮子，并使平台更易于大规模采用。"
+    },
+    {
+      "point": "平台的成功源于对开发者需求的持续关注。",
+      "explanation": "团队优先处理社区请求的功能，并利用反馈确保他们构建的能力能够解决开发团队日常面临的实际挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "我的工作不仅仅是提供基础设施，而是消除阻碍代码进入生产环境的摩擦。",
+    "标准化绝对是实现采用的关键。如果每个团队都必须自己搞清楚底层架构，采用就会停滞不前。",
+    "我们不是简单地移交文档，而是让平台专家与开发团队并肩工作一整天。我们卷起袖子，一起努力，帮助他们将第一个应用快速部署到平台上。"
+  ],
+  "tags": [
+    "平台工程",
+    "DevOps",
+    "云原生",
+    "开发者体验",
+    "Kubernetes"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 916,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781176620000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-11 19:17:00"
+}

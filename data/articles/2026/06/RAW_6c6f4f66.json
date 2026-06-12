@@ -1,0 +1,46 @@
+{
+  "id": "RAW_6c6f4f66",
+  "title": "发布：Datasette 1.0a33",
+  "url": "https://simonwillison.net/2026/Jun/11/datasette/#atom-everything",
+  "date": "2026-06-11 23:26:49",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th June 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/datasette/releases/tag/1.0a33\">datasette 1.0a33</a></span> <span class=\"beat-commit\">— An open source multi-tool for exploring and publishing data</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>This alpha is a significant step on the road to a stable 1.0, finally extending the <code>?_extra=</code> pattern I introduced <a href=\"https://docs.datasette.io/en/1.0a3/changelog.html#a3-2023-08-09\">in Datasette 1.0a3</a> to cover queries and rows in addition to tables. That pattern is also <a href=\"https://docs.datasette.io/en/latest/json_api.html#expanding-json-responses\">now documented</a>!</p>\n      <p>I wrote a whole lot more about the new release on the Datasette project blog: <strong><a href=\"http://datasette.io/blog/2026/api-extras/\">Datasette 1.0a33 with JSON extras in the API</a></strong>.</p>\n      <p>Because API explorer tools are almost free to build now I had Claude Fable 5 in Claude Code (for <a href=\"https://gist.github.com/simonw/d8bf1a8f36e28fbd595cede946e0ab6d\">the plan</a>) and GPT-5.5 xhigh in Codex Desktop (for <a href=\"https://gist.github.com/simonw/12d5e09797072a6807d7b9cfcc8ff6b7\">the implementation</a>) build me this <a href=\"https://tools.simonwillison.net/datasette-extras-explorer\">custom extras API explorer</a> to help demonstrate the feature:</p>\n      <p><img alt=\"Screenshot of a web application titled &quot;Datasette extras explorer&quot;. A URL input field contains https://latest.datasette.io/fixtures/facetable.json with a teal Explore button next to it. Below, a left panel labeled EXTRAS (30) lists checkboxes: all_columns - All columns in the table, regardless of _col/_nocol filtering; column_types - Column type assignments for this table; columns (checked) - Column names returned by this query; count - Total count of rows matching these filters; count_sql - SQL query used to calculate the total count; custom_table_templates - Custom template names considered for this table; database - Database name; database_color - Color assigned to the database. A right panel labeled RESPONSE shows GET /fixtures/fac… with Copy JSON and Copy URL buttons, then a dark JSON viewer showing 200 - 9.9 KB - 114ms and JSON: &quot;ok&quot;: true, &quot;next&quot;: null, &quot;columns&quot;: (highlighted array) &quot;pk&quot;, &quot;created&quot;, &quot;planet_int&quot;, &quot;on_earth&quot;, &quot;state&quot;, &quot;_city_id&quot;, &quot;_neighborhood&quot;, &quot;tags&quot;, &quot;complex_array&quot;, &quot;distinct_some_null&quot;, &quot;n&quot;, &quot;rows&quot;: list of objects.\" src=\"https://static.simonwillison.net/static/2026/extras-explorer.png\"></p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4666/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Datasette 1.0a33 将 `?_extra=` 模式扩展至查询和行，标志着向稳定版 1.0 迈出了重要一步，并附带一个使用 AI 编程工具构建的全新自定义 API 浏览器。",
+  "oneSentenceSummary": "Datasette 1.0a33 将 `?_extra=` 模式扩展至查询和行，标志着向稳定版 1.0 迈出了重要一步，并附带一个使用 AI 编程工具构建的全新自定义 API 浏览器。",
+  "summary": "本次 Datasette 1.0a33 的发布公告重点介绍了一项重要的 API 改进：此前仅适用于数据表的 `?_extra=` 模式，现在同样适用于查询和行。该模式现已收录于官方 JSON API 文档中。作者还描述了如何使用 Claude Fable 5 和 GPT-5.5 构建一个自定义 API 浏览器工具来演示这一新功能，展示了借助现代 AI 助手构建此类工具的低成本。此次发布被视为 Datasette 1.0 稳定版道路上的一个关键里程碑。",
+  "mainPoints": [
+    {
+      "point": "`?_extra=` 模式现已扩展至查询和行，而不仅限于数据表。",
+      "explanation": "这一 API 改进使得 JSON 响应更加灵活和精细，是迈向稳定版 1.0 的关键一步，并且现已正式记录在文档中。"
+    },
+    {
+      "point": "AI 编程工具使得构建自定义 API 浏览器的成本几乎为零。",
+      "explanation": "作者使用 Claude Fable 5 和 GPT-5.5 生成了演示工具的计划和实现代码，凸显了当前创建此类工具的便捷性。"
+    }
+  ],
+  "keyQuotes": [
+    "由于现在构建 API 浏览器工具的成本几乎为零，我让 Claude Code 中的 Claude Fable 5 和 Codex Desktop 中的 GPT-5.5 xhigh 为我构建了这个自定义 extras API 浏览器，以帮助演示该功能。"
+  ],
+  "tags": [
+    "Datasette",
+    "开源",
+    "API 设计",
+    "开发者工具",
+    "数据工程"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 119,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781191609000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-11 23:26:49"
+}

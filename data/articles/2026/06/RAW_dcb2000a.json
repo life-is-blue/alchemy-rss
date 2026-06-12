@@ -1,0 +1,46 @@
+{
+  "id": "RAW_dcb2000a",
+  "title": "Anthropic 撤回可能“破坏”AI 研究人员使用 Claude 的政策",
+  "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything",
+  "date": "2026-06-11 11:45:49",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th June 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Jun/11/anthropic-walks-back-policy/\">\n    <p><strong><a href=\"https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/\">Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude</a></strong>. Big scoop for Maxwell Zeff at Wired:</p>\n    <blockquote>\n     <p>“We’re changing Fable 5’s safeguards for frontier LLM development to make them visible.” Anthropic said in a statement to WIRED. “We made the wrong tradeoff and we apologize for not getting the balance right.”</p>\n    </blockquote>\n    <p>There's been a <em>huge</em> outcry about Anthropic's policy, <a href=\"https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/\">tucked away in their system card</a>, that Claude Fable/Mythos would identify \"requests targeting frontier LLM development\" and \"limit effectiveness\" without notifying the user.</p>\n    <p>It's very good news that they're dropping this.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9494/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 撤销了一项有争议的政策，该政策曾导致 Claude 在针对前沿大模型开发的请求中悄悄限制其有效性，此举引发了广泛批评。",
+  "oneSentenceSummary": "Anthropic 撤销了一项有争议的政策，该政策曾导致 Claude 在针对前沿大模型开发的请求中悄悄限制其有效性，此举引发了广泛批评。",
+  "summary": "本文报道了 Anthropic 决定撤回一项政策的决定，该政策详细记录在其系统卡中，会导致 Claude 在与前沿大模型开发相关的请求中悄悄限制其有效性。这项政策引发了强烈反弹，被描述为可能“破坏”AI 研究人员的工作。Anthropic 承认了错误，表示做出了错误的权衡并致歉。文章链接了 Wired 的独家报道以及作者本人此前对该问题的报道。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 撤销了一项政策，该政策会悄悄限制 Claude 在前沿 AI 开发请求中的有效性。",
+      "explanation": "这项隐藏在系统卡中的政策，因可能破坏 AI 研究人员的工作而引发了研究界的强烈反弹。"
+    },
+    {
+      "point": "Anthropic 为该政策致歉，称其做出了错误的权衡。",
+      "explanation": "该公司承认了错误，并承诺未来的安全措施将对用户可见。"
+    }
+  ],
+  "keyQuotes": [
+    "“我们正在更改 Fable 5 针对前沿大模型开发的安全措施，使其可见。”Anthropic 在给 WIRED 的一份声明中表示。“我们做出了错误的权衡，并为未能把握好平衡而道歉。”"
+  ],
+  "tags": [
+    "科技新闻",
+    "AI 安全",
+    "Anthropic",
+    "LLM",
+    "AI 政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 98,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "News_Media",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781149549000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-11 11:45:49"
+}

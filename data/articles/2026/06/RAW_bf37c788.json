@@ -1,0 +1,57 @@
+{
+  "id": "RAW_bf37c788",
+  "title": "OpenAI 的 GPT-5.5 和 Codex 在 Amazon Bedrock 上正式可用",
+  "url": "https://www.infoq.com/news/2026/06/openai-frontier-models-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-11 17:24:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>OpenAI's frontier models and Codex coding agent are now <a href=\"https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/\">generally available on Amazon Bedrock</a>, one month after OpenAI revised its exclusive cloud arrangement with Microsoft to allow distribution through other providers. GPT-5.5 and GPT-5.4 are accessible through the Responses API on Bedrock's next-generation inference engine, with pricing matching OpenAI's direct rates and usage counting toward existing AWS commitments. More than 100,000 organizations already on Bedrock can now access OpenAI models without introducing a new vendor relationship, billing path, or governance process.</p>\n   <p>AWS VP Swami Sivasubramanian confirmed that GPT-5.5 is \"available natively on Amazon Bedrock,\" alongside the full lineup of OpenAI models. OpenAI <a href=\"https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/\">described</a> the launch as the beginning of a broader expansion:</p>\n   <blockquote>\n    <p>This is the start of a broader path for customers to bring frontier AI into the environments where they already build, govern, and ship.</p>\n   </blockquote>\n   <p>The enterprise governance integration is the most significant aspect for teams evaluating this. Every OpenAI API call routed through Bedrock inherits AWS-native controls: IAM for identity and access, VPC and PrivateLink for network isolation, KMS encryption for data at rest, and CloudTrail for audit logging. OpenAI states that customer data is not used for model training and is not shared with model providers. Bedrock offers three inference routing options: In-Region for strict compliance, Geo Cross-Region for higher throughput within a geography (US or EU), and Global Cross-Region for maximum throughput without residency constraints.</p>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=48363132\">Hacker News</a>, practitioners made clear why the Bedrock path matters more than the models themselves. One engineering manager at a large enterprise explained:</p>\n   <blockquote>\n    <p>I work at a large enterprise with strict data governance built into customer contracts. Using vendors where you not only have infosec permission, but they are also listed as data processors in our contracts with our customers is the way not to get fired and sued.</p>\n   </blockquote>\n   <p>Another commenter clarified the isolation model that makes this possible:</p>\n   <blockquote>\n    <p>AWS Bedrock is other companies' models running on separate dedicated AWS hardware. If you use Codex via Bedrock, OpenAI never sees your data or prompts because they stay sandboxed in an ephemeral Bedrock instance. Over the past year, Claude being available via Bedrock and ChatGPT/Codex not being available via Bedrock has been a huge competitive advantage for Anthropic in the enterprise space.</p>\n   </blockquote>\n   <p>Not everyone is convinced the governance story is complete. Marek Porycki, a strategic advisor, <a href=\"https://www.linkedin.com/posts/openai_openai-frontier-models-and-codex-are-now-activity-7467330814817792000-r1KC/\">noted on LinkedIn</a> that infrastructure controls and decision-level governance are not the same thing:</p>\n   <blockquote>\n    <p>CloudTrail logs the API call. It does not log the decision rights. That gap is exactly where most pilots stall before production: technically green, accountability undefined.</p>\n   </blockquote>\n   <p>For teams deploying agentic workflows where models act autonomously, knowing who called the model is different from knowing whether the action was authorized.</p>\n   <p>Codex, OpenAI's coding agent used by more than 5 million developers weekly, is available through the Codex App, CLI, and IDE integrations for Visual Studio Code, JetBrains, and Xcode, with all inference routed through Bedrock. The pricing model shifts from per-seat licensing to pay-per-token billing with no seat fees, a significant cost structure change for large developer teams. Codex on Bedrock uses GPT-5.5 for inference and inherits the same security controls as direct model calls.</p>\n   <p>GPT-5.5 is positioned as OpenAI's most capable model for agentic coding, data analysis, and autonomous multi-step tasks. GPT-5.4 targets the best price-performance ratio for production workloads at scale. GPT-5.5 is available in US East (Ohio). GPT-5.4 is available in US East (Ohio), US West (Oregon), and as of June 3, <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-openai-models-codex-generally-available/\">AWS GovCloud (US-West)</a>, making it the first OpenAI model available in a government cloud environment.</p>\n   <p>The competitive landscape on Bedrock has shifted considerably. AWS now hosts both Anthropic's Claude (backed by a multi-billion dollar AWS investment) and OpenAI's GPT models on the same managed infrastructure. Microsoft, which retains its investment in OpenAI, has simultaneously deepened its collaboration with Anthropic on Azure. The era of exclusive cloud partnerships for frontier AI models appears to be ending, replaced by a model where enterprises choose providers based on workload fit rather than cloud allegiance. One Hacker News commenter put the Anthropic implication bluntly:</p>\n   <blockquote>\n    <p>Anthropic's incredible revenue run-up was basically a result of botched Gemini releases and OpenAI having their hands tied behind their Azure backs. Anthropic models were quite literally the only viable serverless API models on AWS.</p>\n   </blockquote>\n   <p>Amgen CTO Sean Bruich and Autodesk VP Ritesh Bansal are among the cited early adopters. OpenAI also previewed Daybreak, a forthcoming capability bringing cyber models and Codex Security to AWS for secure code review, threat modeling, and dependency risk analysis. Teams should note that GPT models on Bedrock currently support only the Responses API, with console support coming later.</p>\n   <p>OpenAI models and Codex on Bedrock are <a href=\"https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/\">available now</a>. The <a href=\"https://developers.openai.com/api/docs/guides/amazon-bedrock\">OpenAI on Amazon Bedrock documentation</a> provides setup guides and code examples.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenAI's GPT-5.5 and Codex Reach General Availability on Amazon Bedrock\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/openai-frontier-models-aws/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781169840000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 的 GPT-5.5 和 Codex 编程智能体现在已在 Amazon Bedrock 上正式可用，使企业能够在不建立新供应商关系的情况下，借助 AWS 原生的安全、治理和计费功能访问前沿模型。",
+  "oneSentenceSummary": "OpenAI 的 GPT-5.5 和 Codex 编程智能体现在已在 Amazon Bedrock 上正式可用，使企业能够在不建立新供应商关系的情况下，借助 AWS 原生的安全、治理和计费功能访问前沿模型。",
+  "summary": "本文报道了 OpenAI 的 GPT-5.5、GPT-5.4 以及 Codex 编程智能体在 Amazon Bedrock 上正式可用的消息，此前 OpenAI 已修订了与微软的独家云合作协议。其核心价值主张在于企业级治理集成：每次 API 调用都继承 AWS 原生控制，包括 IAM、VPC、KMS 加密和 CloudTrail 审计日志，且客户数据不会用于训练。Codex 可通过 Codex App、CLI 和 IDE 集成使用，采用按 token 计费模式。文章引用了 Hacker News 上从业者的观点，强调数据治理对大型企业的重要性；一位战略顾问指出了基础设施控制与决策层治理之间的差距；并分析了竞争格局的转变——AWS 现同时托管 Anthropic Claude 和 OpenAI 模型。早期采用者包括 Amgen 和 Autodesk。文章还提及了用于安全代码审查的 Daybreak 预览版。",
+  "mainPoints": [
+    {
+      "point": "Bedrock 上的 OpenAI 模型继承了完整的 AWS 原生企业治理控制。",
+      "explanation": "IAM、VPC、KMS 加密和 CloudTrail 审计日志适用于每次 API 调用，且客户数据不会用于训练，这解决了受监管企业面临的一个关键障碍。"
+    },
+    {
+      "point": "Bedrock 上的 Codex 从按席位计费转为按 token 计费。",
+      "explanation": "这种成本结构的改变取消了席位费，对大型开发者团队来说更加灵活，所有推理都通过 Bedrock 路由并继承相同的安全控制。"
+    },
+    {
+      "point": "竞争格局已经转变；前沿 AI 的独家云合作正在终结。",
+      "explanation": "AWS 现同时托管 Anthropic Claude 和 OpenAI 模型，而微软则深化了与 Anthropic 的合作，正朝着企业根据工作负载而非云供应商忠诚度进行选择的模式发展。"
+    },
+    {
+      "point": "仅靠基础设施控制无法解决决策层面的治理差距。",
+      "explanation": "一位战略顾问指出，CloudTrail 记录的是 API 调用，而非决策权，这正是智能体工作流可能停滞的缺口：技术上可行，但责任归属未定义。"
+    }
+  ],
+  "keyQuotes": [
+    "这是为客户将前沿 AI 引入他们已用于构建、治理和交付的环境的更广阔道路的开端。",
+    "AWS Bedrock 是其他公司的模型运行在独立的专用 AWS 硬件上。如果你通过 Bedrock 使用 Codex，OpenAI 永远不会看到你的数据或提示词，因为它们被沙箱隔离在临时的 Bedrock 实例中。",
+    "CloudTrail 记录 API 调用。它不记录决策权。这个缺口正是大多数试点项目在生产前停滞不前的原因：技术上可行，责任归属未定义。",
+    "Anthropic 惊人的收入增长，基本上是由于 Gemini 发布的失误以及 OpenAI 被 Azure 束缚了手脚的结果。"
+  ],
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "企业级 AI",
+    "云计算",
+    "AI 治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 788,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781169840000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-11 17:24:00"
+}

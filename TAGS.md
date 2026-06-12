@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-12 06:34:57 | [返回首页](/README.md)
+**更新时间**: 2026-06-12 08:34:48 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12766)
+- [AI & 大模型](#ai-llm) (12783)
 - [软件架构](#architecture) (21)
-- [前端与全栈](#frontend-fullstack) (846)
-- [DevOps](#devops) (598)
+- [前端与全栈](#frontend-fullstack) (847)
+- [DevOps](#devops) (599)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5955)
+- [其他](#other) (5964)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [为什么-AI-还没有取代软件工程师，而且也不会](https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers) - AI 精选
 - [语音智能体能否处理双语客户？前沿-ASR-在语码转换语音上的基准测试](https://huggingface.co/blog/ServiceNow-AI/code-switching) - AI 精选
 - [多媒体积木块](https://huggingface.co/blog/mishig/spaces-agents-md) - AI 精选
 - [只给一份文档，Qwen3.7-Max-从-0-交付双端应用](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501453&idx=1&sn=ba96a013175e2587878e1b2e00c9ab73) - AI 精选
@@ -41,9 +42,8 @@
 - [致超级个体-|-To-The-Crazy-Ones](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108669&idx=1&sn=c9bb3541cba65b524992eda339f32e83) - AI 精选
 - [专业化胜过规模：大多数-AI-采购决策忽视的战略变量](https://huggingface.co/blog/Dharma-AI/specialization-beats-scale) - AI 精选
 - [Hermes-vs.-OpenClaw，-网络安全警报频响，-更具互动性的对话，-智能体能胜任人类工作吗？](https://www.deeplearning.ai/the-batch/issue-354) - AI 精选
-- [为智能体配备计算机-—-Ivan-Burazin，Daytona](https://www.latent.space/p/daytona) - AI 精选
 
-- [查看全部 12766 篇...](/details/tags/ai-llm.md)
+- [查看全部 12783 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 846 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 847 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 598 篇...](/details/tags/devops.md)
+- [查看全部 599 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5955 篇...](/details/tags/other.md)
+- [查看全部 5964 篇...](/details/tags/other.md)
 
 

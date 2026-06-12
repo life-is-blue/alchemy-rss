@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-12 06:34:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-12 08:34:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -702,6 +702,14 @@
 
 
 
+### [Meta-内部工具-UI-系统的构建与规模化](https://www.infoq.com/presentations/internal-tools-meta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-06-11 17:05:00 | 标签: 前端与 Web, 设计系统, 开发者工具, 工程文化, 内部工具
+
+> Meta 前端工程师 Cindy Zhang 讲述了 XDS（跨设计系统）的故事，这是 Meta 内部工具的 UI 组件库。演讲围绕四大挑战展开：起步、为所有人服务、打造稳定团队以及避免停滞。在初始阶段，团队专注于快速解决难题，通过在一个复杂且广泛使用的工具上进行试点来展示工作成果，并且不纠结于设计的完美。为了规模化，他们采用了社区贡献模式，该模式目前贡献了超过一半的代码提交，并使用自动化工具（如自定义 ESLint 规则和内部自动化工具）来管理工作量。他们还讨论了在大规模下进行安全变更的策略，包括全面测试、带终止开关的逐步发布，以及使用 codemod（传统和 AI 驱动）进行大规模 API...
+
+
+
 ### [Zero-达到-1.0-版本，标志着-Rocicorp-网络同步引擎的首个稳定版发布](https://www.infoq.com/news/2026/06/zero-version-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-08 15:49:00
@@ -1320,13 +1328,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1476,13 +1484,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2976,13 +2984,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4686,13 +4694,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

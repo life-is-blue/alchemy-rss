@@ -1,0 +1,47 @@
+{
+  "id": "RAW_93690cdd",
+  "title": "发布：asyncinject 0.7",
+  "url": "https://simonwillison.net/2026/Jun/11/asyncinject/#atom-everything",
+  "date": "2026-06-11 14:28:09",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th June 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/asyncinject/releases/tag/0.7\">asyncinject 0.7</a></span> <span class=\"beat-commit\">— Run async workflows using pytest-fixtures-style dependency injection</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I built this utility library to support an <code>asyncio</code> dependency injection pattern a few years ago. I was using it with Datasette and Claude Fable 5 spotted some bugs in the dependency which it then fixed for me. It's a very proactive model!</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4665/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "asyncinject 0.7 是一个实用库，支持使用类似 pytest fixture 的依赖注入模式运行异步工作流，并由 Claude Fable 5 贡献了 Bug 修复。",
+  "oneSentenceSummary": "asyncinject 0.7 是一个实用库，支持使用类似 pytest fixture 的依赖注入模式运行异步工作流，并由 Claude Fable 5 贡献了 Bug 修复。",
+  "summary": "这是一则简短的 asyncinject 0.7 版本发布公告。asyncinject 是 Simon Willison 开发的一个 Python 库，提供受 pytest fixture 启发的 asyncio 依赖注入模式。发布说明提到，该库是为支持 Datasette 而构建的，并且 Claude Fable 5 主动发现并修复了依赖中的 Bug。这篇文章非常简短，主要作为变更日志条目。",
+  "mainPoints": [
+    {
+      "point": "asyncinject 0.7 通过类似 pytest fixture 的依赖注入模式支持异步工作流。",
+      "explanation": "该库为 asyncio 提供了一种依赖注入模式，类似于 pytest fixture 的工作方式，实现了异步依赖的清晰分离。"
+    },
+    {
+      "point": "Claude Fable 5 主动修复了库中的 Bug。",
+      "explanation": "该 AI 模型发现并解决了依赖中的 Bug，展示了主动、自主的调试能力。"
+    }
+  ],
+  "keyQuotes": [
+    "使用类似 pytest fixture 的依赖注入模式运行异步工作流",
+    "Claude Fable 5 发现了一些依赖中的 Bug，并随后为我修复了它们。这是一个非常主动的模型！"
+  ],
+  "tags": [
+    "Python",
+    "异步",
+    "依赖注入",
+    "开发者工具",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 57,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781159289000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-11 14:28:09"
+}
