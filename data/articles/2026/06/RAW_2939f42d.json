@@ -1,0 +1,47 @@
+{
+  "id": "RAW_2939f42d",
+  "title": "Andrew Singleton 的一句引文",
+  "url": "https://simonwillison.net/2026/Jun/12/andrew-singleton/#atom-everything",
+  "date": "2026-06-13 02:09:21",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">12th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.mcsweeneys.net/articles/ai-economics-for-dummies\">\n     <p>Jenny owns a crematorium. John’s propane company gives her a $20 billion investment in return for 5 percent of her operation. Jenny throws $10 billion into the incinerator, then pays John $10 billion to buy propane to burn that money to ashes. John reports that his AI investments have generated $10 billion in revenue this quarter and that he owns 5 percent of a $100 billion business. A reporter from <em>Forbes</em> is assigned to profile John and Jenny, and over the course of his research, he becomes embroiled in a passionate but confusing three-way love affair with them, which eventually turns into a polyamorous common-law marriage. His profile is glowing, but light on financial details.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.mcsweeneys.net/articles/ai-economics-for-dummies\">Andrew Singleton</a>, <span class=\"context\">AI Economics for Dummies</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2227/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一则讽刺类比揭示了虚高的 AI 收入声明背后循环、无价值的会计操作。",
+  "oneSentenceSummary": "一则讽刺类比揭示了虚高的 AI 收入声明背后循环、无价值的会计操作。",
+  "summary": "这篇来自 Simon Willison 博客的短文引用了 Andrew Singleton 在 McSweeney's 上发表的一篇讽刺作品。该类比描述了一个火葬场老板和一家丙烷公司之间的循环交易，这种交易制造了巨额收入和估值的假象，却没有任何实际经济价值。这篇讽刺作品旨在抨击一些 AI 公司基于循环交易和不透明会计来报告收入和估值的方式，并以一位记者撰写了一篇缺乏财务审查的正面报道作为结尾。这篇文章是对 AI 行业炒作现象一针见血、幽默风趣的批判。",
+  "mainPoints": [
+    {
+      "point": "该类比揭示了循环交易如何能制造出虚幻的收入。",
+      "explanation": "Jenny 和 John 的交易产生了报告收入和 John 公司的高估值，但没有创造任何实际价值——钱只是被烧掉了。"
+    },
+    {
+      "point": "这篇讽刺作品批判了 AI 行业报道中缺乏财务审查。",
+      "explanation": "福布斯记者那篇粉饰太平、对财务细节一笔带过的正面报道，反映了现实中的媒体报道往往未能质疑虚高的 AI 指标。"
+    }
+  ],
+  "keyQuotes": [
+    "John 报告称，他的 AI 投资本季度已产生 100 亿美元的收入，并且他拥有一家价值 1000 亿美元企业 5% 的股份。",
+    "他的个人简介是正面的，但财务细节却很少。"
+  ],
+  "tags": [
+    "AI",
+    "讽刺",
+    "商业策略",
+    "科技批评",
+    "估值"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 125,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781287761000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-13 02:09:21"
+}

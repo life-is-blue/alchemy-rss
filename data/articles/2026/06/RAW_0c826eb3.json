@@ -1,0 +1,52 @@
+{
+  "id": "RAW_0c826eb3",
+  "title": "Angular 官方 Agent Skills 帮助 AI 编程工具编写现代 Angular 代码",
+  "url": "https://www.infoq.com/news/2026/06/angular-agent-skills/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-12 21:30:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google's Angular team has published <a href=\"https://github.com/angular/skills\">angular/skills</a>, a dedicated repository of Agent Skills that teach AI coding agents to write modern, idiomatic Angular instead of the outdated patterns that models still reach for by default.</p>\n   <p>Agent Skills are structured, domain-specific instruction files, an open format introduced by Anthropic, that load on demand to give an agent expertise for a particular task. The Angular collection currently ships two skills. The <code>angular-developer</code> skill generates code and provides architectural guidance across reactivity (<code>signals</code>, <code>linkedSignal</code>, <code>resource</code>), forms, dependency injection, routing, SSR, accessibility, animations, styling, and testing, while a<code>ngular-new-app</code> scaffolds a fresh application using the Angular CLI. In practice the angular-developer skill enforces v20 conventions, preferring <code>@if</code> over <code>*ngIf</code> and dropping the now redundant <code>standalone: true</code> flag. They are designed for agentic tools such as Gemini CLI and Antigravity, and the <a href=\"https://angular.dev/ai/agent-skills\">official documentation</a> notes they keep an agent in sync with conventions like Signals and standalone components. The repository is a published snapshot rather than the source of truth, since contributions are made in the main <a href=\"https://github.com/angular/angular\">angular/angular</a> repository and mirrored out automatically.</p>\n   <p>The motivation is well documented. As Brandon Roberts <a href=\"https://dev.to/brandontroberts/angular-skills-agent-skills-for-ai-assisted-development-3jgg\">explained</a>, coding agents \"often suggest outdated Angular patterns, NgModules, @Input() decorators, *ngIf, and constructor injection\" because they lack current context.</p>\n   <p>Installation uses the community skills CLI:</p>\n   <pre>\r\n<code class=\"language-bash\">npx skills add &lt;https://github.com/angular/skills&gt;\r\n</code></pre>\n   <p>The release builds on community work, and Agent Skills have, as Angular newsletter author Gérôme Grignon <a href=\"https://www.linkedin.com/pulse/8-official-angular-agent-skills-g%C3%A9r%C3%B4me-grignon-ddwwe\">observed</a>, become \"the most popular\" way to feed framework context to LLMs. The most widely used predecessor was Roberts' <a href=\"https://github.com/analogjs/angular-skills\">analogjs/angular-skills</a>. Competing approaches remain, including <a href=\"https://alfredo-perez.dev/blog/2026-02-12-angular-best-practices-for-ai\">alfredoperez/angular-best-practices</a>, inspired by Vercel's react-best-practices.</p>\n   <p>Commentary has focused on why an official, repo-based skill matters. Writing for <a href=\"http://Angular.love\">Angular.love</a>, Dominik Donoch <a href=\"https://angular.love/implementing-the-official-angular-claude-skills\">praised</a> its \"autonomous verification loop,\" which forces the agent to run ng build after edits, and its orchestrator design that loads only relevant reference files to limit token use. On <a href=\"https://www.reddit.com/r/angular/comments/1s2dkvz/implementing_the_new_official_angular_claude/\">Reddit</a>, developers said the skills \"feel more native because they live in the repo\" and are \"versionable, diffable,\" while another admitted they \"didn't know angular had its own best practices skill.\" Skeptics are less convinced the format fixes reliability.</p>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=48015397\">Hacker News</a>, one commenter argued such harnesses:</p>\n   <blockquote>\n    <p>These harnesses approaches pretend as if LLMs are strict and perfect rule followers and the only problem is not being able to specify enough rules clearly enough. That's fundamental cognitive lapse in how LLMs operate.</p>\n   </blockquote>\n   <p>While others countered that you should not \"let the perfect be the enemy of the good.\"</p>\n   <p>For migration, teams replacing community packages should remove them first with npx skills remove analogjs/angular-skills. The CLI also tracks drift through a lock file, so npx skills check and npx skills update keep pace with Angular's frequent releases. Because the skills target v20 and later, older projects should first follow the official <a href=\"https://angular.dev/update-guide\">update guide</a> to adopt standalone components, inject(), and built-in control flow that the skills assume.</p>\n   <p>Angular is Google's open-source, TypeScript-first web framework, widely adopted across enterprise applications and built around standalone components and signal-based reactivity.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Angular's Official Agent Skills Helps AI Coding Tools Write Modern Angular\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/angular-agent-skills/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781271000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Angular 团队发布了官方 Agent Skills 仓库，指导 AI 编程工具使用 v20 约定（如 Signals 和独立组件）生成现代、地道的 Angular 代码。",
+  "oneSentenceSummary": "Google Angular 团队发布了官方 Agent Skills 仓库，指导 AI 编程工具使用 v20 约定（如 Signals 和独立组件）生成现代、地道的 Angular 代码。",
+  "summary": "文章报道了 Google Angular 团队发布 `angular/skills` 仓库，这是一组旨在引导 AI 编程代理编写现代 Angular 代码的 Agent Skills。这些技能基于 Anthropic 的开放格式，包括用于通用代码生成和架构指导的 `angular-developer`，以及用于搭建新项目的 `angular-new-app`。它们强制执行 v20 约定，例如使用 `@if` 而非 `*ngIf`，并省略现已冗余的 `standalone: true` 标志。文章涵盖了发布背后的动机——AI 代理通常默认使用 NgModules 和 `*ngIf` 等过时模式——并详细介绍了安装、社区背景和开发者反应，包括对官方、可版本化方法的赞扬，以及对 LLM 可靠性的质疑。文章还为从社区包切换的团队提供了迁移指导。",
+  "mainPoints": [
+    {
+      "point": "Angular 官方 Agent Skills 在 AI 生成的代码中强制执行现代 v20 约定。",
+      "explanation": "这些技能指导代理使用 Signals、`@if` 和独立组件，防止生成模型默认使用的 NgModules 和 `*ngIf` 等过时模式。"
+    },
+    {
+      "point": "这些技能是按需加载的结构化、领域特定指令文件。",
+      "explanation": "基于 Anthropic 的开放格式，它们为 Angular 开发提供针对性专业知识，采用编排器设计，仅加载相关参考文件以限制 Token 使用量。"
+    },
+    {
+      "point": "该发布解决了 AI 辅助 Angular 开发中的一个关键痛点。",
+      "explanation": "AI 编程代理通常缺乏最新上下文，导致代码建议过时。官方技能提供了可版本化、可比较且与仓库原生的解决方案，使代理与 Angular 的快速演进保持同步。"
+    }
+  ],
+  "keyQuotes": [
+    "编程代理“常常建议过时的 Angular 模式、NgModules、@Input() 装饰器、*ngIf 和构造函数注入”，因为它们缺乏当前上下文。",
+    "开发者表示这些技能“感觉更原生，因为它们存在于仓库中”，并且“可版本化、可比较”。",
+    "一位评论者认为，此类框架“假装 LLM 是严格且完美的规则遵循者……这是对 LLM 运作方式的根本性认知错误。”"
+  ],
+  "tags": [
+    "Angular",
+    "AI 编程",
+    "Agent Skills",
+    "开发者工具",
+    "前端与 Web"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 489,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781271000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-12 21:30:00"
+}

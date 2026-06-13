@@ -1,0 +1,51 @@
+{
+  "id": "RAW_ccb2e07b",
+  "title": "Pinecone 借助 Microsoft OneLake 集成，将 AI 智能体直接带入企业数据",
+  "url": "https://www.infoq.com/news/2026/06/pinecone-ai-agents-onelake/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-12 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.pinecone.io/\">Pinecone</a> has <a href=\"https://www.pinecone.io/newsroom/microsoft-onelake-nexus/\">announced</a> a new integration between its<a href=\"https://www.pinecone.io/product/nexus/\"> Nexus</a> knowledge engine and <a href=\"https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview\">Microsoft OneLake</a>, aiming to fundamentally change how enterprise AI agents access and reason over corporate data. Unveiled at <a href=\"https://news.microsoft.com/build-2026/\">Microsoft Build 2026</a>, the integration allows AI agents to query enterprise information stored in OneLake through pre-built, structured knowledge artifacts rather than relying on traditional retrieval pipelines, a move Pinecone claims can reduce large language model token consumption by more than 95%, accelerate task execution by up to 30 times, and improve completion rates for enterprise AI workloads.</p>\n   <p dir=\"ltr\">The announcement reflects a growing challenge facing organizations deploying AI agents in production. While many enterprises have successfully centralized operational data within Microsoft Fabric and OneLake, AI systems often spend significant time and compute resources retrieving, assembling, and interpreting raw information before they can complete a task. Pinecone's Nexus platform seeks to move much of that work upstream by generating structured, task-specific knowledge artifacts in advance, enabling agents to receive contextualized, cited responses instead of raw datasets.</p>\n   <p dir=\"ltr\">At the center of the integration is Pinecone Nexus, which the company describes as a knowledge engine purpose-built for AI agents. Rather than requiring agents to retrieve documents and perform reasoning at runtime, Nexus dynamically assembles task-specific artifacts that include relevant data, permissions, context, and citations. Agents then query those artifacts through KnowQL, Pinecone's query language for knowledge retrieval.</p>\n   <p dir=\"ltr\">This approach represents a shift away from conventional <a href=\"https://aws.amazon.com/what-is/retrieval-augmented-generation/\">Retrieval-Augmented Generation</a> (RAG) architectures, which have become the dominant pattern for enterprise AI deployments. Traditional RAG systems often require multiple retrieval calls, ranking operations, prompt assembly stages, and expensive large language model interactions before arriving at an answer. Pinecone argues that these architectures become increasingly inefficient at scale, leading to rising costs, inconsistent performance, and declining task completion rates as workloads grow.</p>\n   <p dir=\"ltr\">The integration builds on the growing adoption of OneLake as the central data layer within <a href=\"https://www.microsoft.com/en-us/microsoft-fabric\">Microsoft Fabric</a>. Organizations using Fabric frequently consolidate structured data, business intelligence assets, documents, operational records, and analytics workloads into OneLake, creating a unified foundation for AI applications and data-driven services. Nexus connects directly to this ecosystem without requiring organizations to migrate data into separate vector stores or build additional ingestion pipelines.</p>\n   <p dir=\"ltr\">When an agent executes a task, Nexus queries OneLake directly, applies role-based and attribute-based permissions, assembles the appropriate knowledge artifact, and returns a structured response. According to Pinecone, every response includes source attribution and maintains compliance controls around personally identifiable information and governance policies already defined within the enterprise environment.</p>\n   <p dir=\"ltr\">One of the most significant aspects of the announcement is its focus on operational efficiency. As enterprises move from AI experimentation to production deployment, the cost of inference, retrieval, and context generation has emerged as a major concern. Organizations frequently discover that agent workloads generate unpredictable token consumption and escalating infrastructure costs when scaled across departments and business processes.</p>\n   <p dir=\"ltr\">Pinecone positions Nexus as a solution to this problem by separating knowledge preparation from runtime reasoning. Instead of repeatedly asking frontier models to interpret raw enterprise data, organizations can pre-assemble optimized knowledge structures that agents can consume directly. The company claims this significantly reduces both latency and model usage while improving consistency and governance.</p>\n   <p dir=\"ltr\">The announcement comes amid<a href=\"https://www.reddit.com/r/BayAreaHomes/comments/1tuyx4z/enterprise_ai_agents_keep_creating_data_silos\"> focus</a> on what many vendors now describe as the \"knowledge layer\" for AI agents. As organizations deploy larger numbers of autonomous and semi-autonomous agents, attention is shifting away from models alone and toward the infrastructure required to provide those models with accurate, governed, and contextually relevant information.</p>\n   <p dir=\"ltr\">Major technology providers are pursuing similar goals through different approaches. Microsoft has been expanding its Fabric ecosystem and recently introduced initiatives focused on creating unified context layers for enterprise agents. Meanwhile, companies such as<a href=\"https://www.databricks.com/\"> Databricks</a>, <a href=\"https://www.snowflake.com/en/\">Snowflake</a>, and <a href=\"https://www.mongodb.com/\">MongoDB</a> have been investing heavily in vector search, semantic retrieval, and AI-native data architectures that aim to bridge the gap between enterprise data stores and generative AI applications.</p>\n   <p dir=\"ltr\">The difference in Pinecone's strategy is its emphasis on creating reusable, structured knowledge artifacts rather than treating every AI interaction as a new retrieval exercise. This reflects a broader industry trend toward optimizing the economics and reliability of agentic AI systems rather than simply increasing model capabilities.</p>\n   <p dir=\"ltr\">The OneLake integration is the latest component of Pinecone's broader push into what it calls \"knowledge infrastructure.\" Recent launches, including Nexus, KnowQL, Marketplace, and new regional deployments, indicate the company is positioning itself beyond its origins as a vector database provider and toward becoming a foundational platform for enterprise AI agents.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinecone Brings AI Agents Directly to Enterprise Data with Microsoft OneLake Integration\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/pinecone-ai-agents-onelake/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781265600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinecone 将其 Nexus 知识引擎与 Microsoft OneLake 集成，使 AI 智能体能够查询预构建的结构化知识工件，从而将 Token 消耗降低超过 95%，并将任务执行速度提升高达 30 倍。",
+  "oneSentenceSummary": "Pinecone 将其 Nexus 知识引擎与 Microsoft OneLake 集成，使 AI 智能体能够查询预构建的结构化知识工件，从而将 Token 消耗降低超过 95%，并将任务执行速度提升高达 30 倍。",
+  "summary": "本文报道了 Pinecone 在 Microsoft Build 2026 上宣布的其 Nexus 知识引擎与 Microsoft OneLake 的新集成。该集成旨在解决企业 AI 中的一个关键挑战：传统 RAG 流水线的高成本和高延迟。Nexus 并非让 AI 智能体在运行时检索和解释原始数据，而是预先组装带有权限、上下文和引用的、结构化且面向特定任务的知识工件。智能体通过 Pinecone 的查询语言 KnowQL 查询这些工件。文章将此举定位为对传统 RAG 架构的转变，认为预先构建知识结构可以提高效率，将 LLM 的 Token 消耗降低超过 95%，并将任务执行速度提升高达 30 倍。文章还讨论了为 AI 智能体构建“知识层”的更广泛行业趋势，并指出 Databricks、Snowflake 和 MongoDB 等竞争对手正通过不同方法追求类似目标。本文是对产品公告的清晰、事实性报道，提供了关于问题、解决方案和竞争格局的背景信息。",
+  "mainPoints": [
+    {
+      "point": "Pinecone Nexus 与 Microsoft OneLake 集成，为 AI 智能体提供预构建的知识工件。",
+      "explanation": "与传统 RAG 不同，Nexus 预先组装带有权限和引用的、结构化且面向特定任务的知识工件，允许智能体通过 KnowQL 直接查询它们。"
+    },
+    {
+      "point": "该集成旨在大幅降低 Token 消耗和延迟。",
+      "explanation": "Pinecone 声称，通过将知识准备与运行时推理分离，该方法可以将 LLM 的 Token 消耗降低超过 95%，并将任务执行速度提升高达 30 倍。"
+    },
+    {
+      "point": "这代表了从传统 RAG 架构向 AI 智能体“知识层”的转变。",
+      "explanation": "文章将此定位为更广泛行业趋势的一部分，即焦点正从模型能力转向为智能体提供准确、可控且上下文相关信息的底层基础设施。"
+    }
+  ],
+  "keyQuotes": [
+    "Pinecone 认为，随着工作负载的增长，这些架构在规模上会变得越来越低效，导致成本上升、性能不稳定以及任务完成率下降。",
+    "组织无需反复要求前沿模型解释原始企业数据，而是可以预先组装优化的知识结构，供智能体直接使用。"
+  ],
+  "tags": [
+    "AI Agent",
+    "企业 AI",
+    "RAG",
+    "知识管理",
+    "Microsoft Fabric"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 737,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781265600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-12 20:00:00"
+}

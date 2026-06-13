@@ -1,0 +1,52 @@
+{
+  "id": "RAW_e284ca54",
+  "title": "Oracle 的 OpenJDK 禁止生成式 AI 贡献，而 GraalVM 却允许",
+  "url": "https://www.infoq.com/news/2026/06/oracle-genai-policies/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-12 14:00:00",
+  "author": "Karsten Silz",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Two related, Oracle-backed projects published opposing policies on open-source contributions created with generative AI: The <a href=\"https://openjdk.org/\">OpenJDK</a> Governing Board approved <a href=\"https://openjdk.org/legal/ai\">an interim policy</a> prohibiting such contributions, while the <a href=\"https://www.graalvm.org/\">Coding Assistants policy</a> from <a href=\"https://www.graalvm.org/\">GraalVM</a> permits them. Both projects require contributors to sign the same <a href=\"https://oca.opensource.oracle.com/\">Oracle Contributor Agreement (OCA)</a> for intellectual property.</p>\n   <p>In early April 2026, OpenJDK published its policy that broadly bans generative AI content:</p>\n   <blockquote>\n    <p>Contributions must not include content generated, in part or in full, by large language models, diffusion models, or similar deep-learning systems. Content, in this context, includes but is not limited to source code, text, and images in OpenJDK Git repositories, GitHub pull requests, e-mail messages, wiki pages, and JBS issues.</p>\n   </blockquote>\n   <p>This policy provides three reasons. First, reviewer burden: floods of plausible-looking but incorrect or hard-to-maintain code drain limited reviewer time. Second, safety and security: the JDK underpins mission-critical systems, and that demands a high bar. Third, intellectual property: the OCA requires contributors to own the IP rights they grant to Oracle without restriction, but whether a person owns the IP rights in AI-generated output is \"the subject of active litigation.\"</p>\n   <p>The policy carves out private use. Contributors may still use generative AI to understand, debug, and review OpenJDK code and for research — they just may not contribute AI-generated content. The <a href=\"https://openjdk.org/legal/ai#faq\">policy FAQ</a> is explicit: editing ten of 100 AI-generated lines is still not allowed because the contribution is still partly AI-generated. The policy also allows tools such as \"spell-checking, grammar-checking, auto-completion, and refactoring features in my editor or IDE\" if \"they are not based on large language models or similar deep-learning systems.\"</p>\n   <p>OpenJDK contributors must soon check a checkbox in <a href=\"https://github.com/openjdk/skara\">Skara</a>, the automated pull request review system, to confirm their contributions comply with the generative AI policy. OpenJDK acknowledges that \"in general, reliably distinguishing human-generated content from AI-generated content is impossible\", but encourages reviewers to watch out for tell-tale signs of AI-generated content nevertheless.</p>\n   <p>In mid-April 2026, GraalVM, an Oracle Labs project not governed by the OpenJDK Governing Board, clarified their <a href=\"https://github.com/oracle/graal/commits/master/CODING_ASSISTANTS.md\"> AI-assisted contribution policy and contributor guidance</a> that allows generative AI content:</p>\n   <blockquote>\n    <p><em>GraalVM contributors may use AI coding assistants and similar tools when preparing contributions. [...] For purposes of this document, \"coding assistants\" includes AI-based tools that help draft, transform, explain, review, or summarize code, tests, documentation, or commit text. This policy applies to contributions and project interactions prepared with such tools, including pull requests and issues filed with the project</em></p>\n   </blockquote>\n   <p>The project added a <a href=\"https://github.com/oracle/graal/blob/master/docs/AGENTS.md\">\"Documentation Terminology and Style Guide\"</a> for AI coding assistants on <a href=\"https://github.com/oracle/graal/commits/cfa867993ed22c44a4e9ad5dae8735cf57c74510/docs/AGENTS.md\"> June 3, 2026</a>.</p>\n   <p>The GraalVM policy \"is informed by the <a href=\"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst\"> Linux kernel's AI CodingAssistants policy</a>\" but adapts it. For instance, the Linux policy states that \"contributions should include an Assisted-by tag.\" GraalVM, on the other hand, has a weaker stance: It says that \"explicit attribution to a specific model or tool is optional,\" but the \"disclosure of AI assistance is encouraged when it helps reviewers understand how a change was produced.\"</p>\n   <p>Contributor accountability is the core of GraalVM's contributor-responsibility rules: The human submitter is responsible for the entire contribution, including any part assisted by AI. They must review and understand it, verify its correctness, and answer the reviewer's questions without deferring to a tool: \"If a contributor cannot explain, defend, or maintain an AI-assisted change, the contribution may be rejected.\"</p>\n   <p>Maintainer review remains unchanged: \"Use of AI assistance does not create any presumption that a change is correct, review-ready, or exempt from normal scrutiny.\" Maintainers may ask about provenance, design intent, licensing, testing, or contributor understanding when reviewing contributions.</p>\n   <p>Both projects require contributors to sign the same OCA and grant Oracle unrestricted IP rights. But while OpenJDK cites unclear IP exposure of AI-generated content as grounds for outright prohibition, GraalVM treats contributor accountability as sufficient grounds for permission.</p>\n   <p>Oracle is working on a full AI contribution policy for OpenJDK and will propose it in \"due course.\" At this time, there are no publicly available announcements on the evolution of the GraalVM AI contribution policy.</p>\n   <uw-ui></uw-ui>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Oracle's OpenJDK Bans Generative AI Contributions While Oracle's GraalVM Allows Them\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Karsten Silz\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/oracle-genai-policies/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781244000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Oracle 支持的 OpenJDK 和 GraalVM 项目对生成式 AI 贡献采取了截然相反的政策：OpenJDK 因审查负担、安全性和知识产权问题而全面禁止，而 GraalVM 则在严格的贡献者问责制下允许使用。",
+  "oneSentenceSummary": "Oracle 支持的 OpenJDK 和 GraalVM 项目对生成式 AI 贡献采取了截然相反的政策：OpenJDK 因审查负担、安全性和知识产权问题而全面禁止，而 GraalVM 则在严格的贡献者问责制下允许使用。",
+  "summary": "本文报道了 Oracle 支持的两个开源项目针对生成式 AI 贡献所采取的截然不同的政策。OpenJDK 管理委员会批准了一项临时政策，广泛禁止 AI 生成的内容，包括源代码、文本和图像，理由是审查负担、关键任务 JDK 基础设施的安全风险以及未解决的知识产权问题。该政策将私有调试和研究用途排除在外，但禁止即使是部分由 AI 生成的贡献。相比之下，GraalVM 项目发布了一项政策，允许 AI 辅助的贡献，该政策借鉴了 Linux 内核的做法，但强调贡献者问责制：人类提交者对整个贡献负全部责任，必须理解并能够为其辩护，且不能将责任推给工具。两个项目都要求贡献者签署相同的 Oracle 贡献者协议（OCA）。文章强调了这些政策之间的张力，并指出 Oracle 正在为 OpenJDK 制定完整的 AI 贡献政策。",
+  "mainPoints": [
+    {
+      "point": "OpenJDK 因审查负担、安全性和知识产权问题，禁止所有生成式 AI 贡献。",
+      "explanation": "该政策禁止任何由 LLM 或类似系统生成的内容，理由是低质量代码可能压垮审查者、JDK 的高安全门槛以及 AI 生成输出的知识产权归属问题尚未解决。"
+    },
+    {
+      "point": "GraalVM 允许 AI 辅助贡献，但严格执行贡献者问责制。",
+      "explanation": "人类提交者对整个贡献负全部责任，必须理解并能够为其辩护，且不能将责任推给工具。该政策借鉴了 Linux 内核的做法，但在署名方面立场较弱。"
+    },
+    {
+      "point": "两个项目要求签署相同的 Oracle 贡献者协议，造成了政策悖论。",
+      "explanation": "尽管知识产权框架相同，OpenJDK 将知识产权不确定性作为禁止 AI 贡献的理由，而 GraalVM 则认为贡献者问责制足以构成允许使用的依据。"
+    }
+  ],
+  "keyQuotes": [
+    "贡献不得包含由大语言模型、扩散模型或类似深度学习系统部分或全部生成的内容。",
+    "如果贡献者无法解释、辩护或维护 AI 辅助的变更，该贡献可能会被拒绝。",
+    "使用 AI 辅助并不意味着变更就是正确的、可供审查的，或可免于常规审查。"
+  ],
+  "tags": [
+    "开源",
+    "AI 编程",
+    "LLM",
+    "开发者工具",
+    "OpenJDK"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 663,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781244000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-12 14:00:00"
+}

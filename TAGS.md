@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-13 06:31:37 | [返回首页](/README.md)
+**更新时间**: 2026-06-13 08:34:54 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12783)
+- [AI & 大模型](#ai-llm) (12804)
 - [软件架构](#architecture) (21)
-- [前端与全栈](#frontend-fullstack) (847)
+- [前端与全栈](#frontend-fullstack) (848)
 - [DevOps](#devops) (599)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5964)
+- [其他](#other) (5967)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Kimi-K2.7-Code-编程模型已上线-Kimi-Code、API-开放平台](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488546&idx=1&sn=93d0057b04afc0c85495c6fd9a3b8516) - AI 精选
+- [神话催生寓言，Cursor-的-Composer-2.5，智能体构建智能体](https://www.deeplearning.ai/the-batch/issue-357) - AI 精选
 - [为什么-AI-还没有取代软件工程师，而且也不会](https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers) - AI 精选
 - [语音智能体能否处理双语客户？前沿-ASR-在语码转换语音上的基准测试](https://huggingface.co/blog/ServiceNow-AI/code-switching) - AI 精选
 - [多媒体积木块](https://huggingface.co/blog/mishig/spaces-agents-md) - AI 精选
@@ -40,10 +42,8 @@
 - [我们如何在多个产品中约束-Claude](https://www.anthropic.com/engineering/how-we-contain-claude) - AI 精选
 - [从透明开发到系统工程：AgentScope-2.0-发布](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501135&idx=1&sn=0b96d8e21b27a20f60c423657f2bca84) - AI 精选
 - [致超级个体-|-To-The-Crazy-Ones](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108669&idx=1&sn=c9bb3541cba65b524992eda339f32e83) - AI 精选
-- [专业化胜过规模：大多数-AI-采购决策忽视的战略变量](https://huggingface.co/blog/Dharma-AI/specialization-beats-scale) - AI 精选
-- [Hermes-vs.-OpenClaw，-网络安全警报频响，-更具互动性的对话，-智能体能胜任人类工作吗？](https://www.deeplearning.ai/the-batch/issue-354) - AI 精选
 
-- [查看全部 12783 篇...](/details/tags/ai-llm.md)
+- [查看全部 12804 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 847 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 848 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5964 篇...](/details/tags/other.md)
+- [查看全部 5967 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_251cb5ca",
+  "title": "MaxProof：基于生成-验证器强化学习与群体级测试时扩展的数学证明规模化方法",
+  "url": "https://arxiv.org/abs/2606.13473",
+  "date": "2026-06-12 20:00:02",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"abs-outer\">\n   <div class=\"leftcolumn\">\n    <div class=\"subheader\">\n     <h1>Computer Science &gt; Machine Learning</h1>\n    </div>\n    <div class=\"header-breadcrumbs-mobile\">\n     <strong>arXiv:2606.13473</strong> (cs)\n    </div>\n    <div id=\"content-inner\">\n     <div id=\"abs\">\n      <div class=\"dateline\">[Submitted on 11 Jun 2026]</div>\n      <div class=\"authors\">\n       <span class=\"descriptor\">Authors:</span><a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Chen,+J\" rel=\"nofollow\">Jiacheng Chen</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Zhang,+X\" rel=\"nofollow\">Xinyu Zhang</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Zhang,+S\" rel=\"nofollow\">Shunkai Zhang</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Wang,+Y\" rel=\"nofollow\">Yanmohan Wang</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Li,+L\" rel=\"nofollow\">Lin Li</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Qin,+T\" rel=\"nofollow\">Tiancheng Qin</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Wang,+Q\" rel=\"nofollow\">Qin Wang</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Zhu,+Z\" rel=\"nofollow\">Zhengmao Zhu</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Li,+T\" rel=\"nofollow\">Tianle Li</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Li,+J\" rel=\"nofollow\">Jingyang Li</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Li,+Z\" rel=\"nofollow\">Zehan Li</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Jiang,+B\" rel=\"nofollow\">Binyang Jiang</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Zhu,+J\" rel=\"nofollow\">Jin Zhu</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Ding,+H\" rel=\"nofollow\">Han Ding</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Yu,+F\" rel=\"nofollow\">Fei Yu</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Du,+C\" rel=\"nofollow\">Chenyu Du</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Song,+Z\" rel=\"nofollow\">Zijian Song</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Song,+J\" rel=\"nofollow\">Jiayuan Song</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Zhang,+Z\" rel=\"nofollow\">Zhi Zhang</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Huang,+Y\" rel=\"nofollow\">Yunan Huang</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Cheng,+W\" rel=\"nofollow\">Weiyu Cheng</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Zhao,+P\" rel=\"nofollow\">Pengyu Zhao</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Cheng,+Y\" rel=\"nofollow\">Yu Cheng</a>\n      </div>\n      <a class=\"mobile-submission-download\" href=\"https://arxiv.org/pdf/2606.13473\">View PDF</a> <a class=\"mobile-submission-download\" href=\"https://arxiv.org/html/2606.13473v1\">HTML (experimental)</a>\n      <blockquote class=\"abstract mathjax\">\n       <span class=\"descriptor\">Abstract:</span>We present MaxProof, a population-level test-time scaling framework for competition-level mathematical proof in the MiniMax-M3 series. M3 first trains three proof-oriented capabilities -- proof generation, proof verification, and critique-conditioned proof repair -- using a defense-in-depth generative verifier engineered for low false-positive rate. These capabilities are merged into a single released M3 model. At test time, MaxProof treats the model as a generator, verifier, refiner, and ranker, searches over a population of candidate proofs, and returns one final proof through tournament selection. With MaxProof test-time scaling, the M3 model reaches 35/42 on IMO 2025 and 36/42 on USAMO 2026, exceeding the human gold-medal threshold on both.\n      </blockquote>\n      <div class=\"metatable\">\n       <table summary=\"Additional metadata\">\n        <tbody>\n         <tr>\n          <td class=\"tablecell label\">Subjects:</td>\n          <td class=\"tablecell subjects\"><span class=\"primary-subject\">Machine Learning (cs.LG)</span>; Artificial Intelligence (cs.AI); Computation and Language (cs.CL)</td>\n         </tr>\n         <tr>\n          <td class=\"tablecell label\">Cite as:</td>\n          <td class=\"tablecell arxivid\"><span class=\"arxivid\"><a href=\"https://arxiv.org/abs/2606.13473\">arXiv:2606.13473</a> [cs.LG]</span></td>\n         </tr>\n         <tr>\n          <td class=\"tablecell label\">&nbsp;</td>\n          <td class=\"tablecell arxividv\">(or <span class=\"arxivid\"> <a href=\"https://arxiv.org/abs/2606.13473v1\">arXiv:2606.13473v1</a> [cs.LG]</span> for this version)</td>\n         </tr>\n         <tr>\n          <td class=\"tablecell label\">&nbsp;</td>\n          <td class=\"tablecell arxivdoi\"><a href=\"https://doi.org/10.48550/arXiv.2606.13473\" id=\"arxiv-doi-link\">https://doi.org/10.48550/arXiv.2606.13473</a>\n           <div class=\"button-and-tooltip\">\n            <button class=\"more-info\" aria-describedby=\"more-info-desc-1\">\n             <svg height=\"15\" role=\"presentation\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n              <path fill=\"currentColor\" d=\"M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z\"></path>\n             </svg>\n             <span class=\"visually-hidden\">Focus to learn more</span>\n            </button>\n            <div role=\"tooltip\" id=\"more-info-desc-1\">\n             <span class=\"left-corner\"></span> arXiv-issued DOI via DataCite (pending registration)\n            </div>\n           </div></td>\n         </tr>\n        </tbody>\n       </table>\n      </div>\n     </div>\n    </div>\n    <div class=\"submission-history\">\n     <h2>Submission history</h2>\n     From: Jiacheng Chen [<a href=\"https://arxiv.org/show-email/42684d8d/2606.13473\" rel=\"nofollow\">view email</a>]\n     <br>\n     <strong>[v1]</strong> Thu, 11 Jun 2026 15:27:06 UTC (2,912 KB)\n     <br>\n    </div>\n   </div>\n   <div class=\"extra-services\">\n    <div class=\"full-text\">\n     <a name=\"other\"></a> <span class=\"descriptor\">Full-text links:</span>\n     <h2>Access Paper:</h2>\n     <ul>\n      <li><a href=\"https://arxiv.org/pdf/2606.13473\" aria-describedby=\"download-button-info\" class=\"abs-button download-pdf\">View PDF</a></li>\n      <li><a href=\"https://arxiv.org/html/2606.13473v1\" class=\"abs-button\" id=\"latexml-download-link\">HTML (experimental)</a></li>\n      <li><a href=\"https://arxiv.org/src/2606.13473\" class=\"abs-button download-eprint\">TeX Source </a></li>\n     </ul>\n     <div class=\"abs-license\">\n      <a href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\" title=\"Rights to this article\" class=\"has_license\"> <img alt=\"license icon\" role=\"presentation\" src=\"https://arxiv.org/icons/licenses/by-nc-nd-4.0.png\"> <span>view license</span></a>\n     </div>\n    </div>\n   </div>\n   <div class=\"endorsers\">\n    <span class=\"help\" style=\"font-style: normal; float: right; margin-top: 0; margin-right: 1em;\"></span>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "MaxProof 提出了一种面向数学证明的群体级测试时扩展框架，使 M3 模型在 IMO 2025 和 USAMO 2026 上超越了人类金牌阈值。",
+  "oneSentenceSummary": "MaxProof 提出了一种面向数学证明的群体级测试时扩展框架，使 M3 模型在 IMO 2025 和 USAMO 2026 上超越了人类金牌阈值。",
+  "summary": "本文介绍了 MaxProof，一个面向 MiniMax-M3 系列中竞赛级数学证明的测试时扩展框架。M3 模型首先在三种核心面向证明的能力上进行了训练：证明生成、证明验证以及基于批评的证明修复。一项关键创新是“纵深防御生成式验证器”，其设计目标是实现低误报率。随后，这些能力被合并到单个 M3 模型中。在测试时，MaxProof 将该模型视为生成器、验证器、优化器和排序器。它在候选证明群体中进行搜索，通过锦标赛选择过程返回一个最终证明。结果意义重大：通过 MaxProof 扩展，M3 模型在 IMO 2025 上获得 35/42 分，在 USAMO 2026 上获得 36/42 分，两项成绩均超过了人类金牌阈值。",
+  "mainPoints": [
+    {
+      "point": "MaxProof 在测试时对候选证明进行群体级搜索。",
+      "explanation": "该框架并非单次生成，而是生成、验证、优化和排序一组证明，通过锦标赛选择找到最佳证明，从而随着计算量增加而提升性能。"
+    },
+    {
+      "point": "“纵深防御生成式验证器”是实现低误报率的关键。",
+      "explanation": "该验证器被设计为高度可靠，这对于搜索过程能够收敛到正确证明而不被看似合理但错误的证明误导至关重要。"
+    },
+    {
+      "point": "M3 模型在 IMO 2025 和 USAMO 2026 上超越了人类金牌阈值。",
+      "explanation": "这一实证结果表明，MaxProof 框架与 M3 模型的能力相结合，在最高竞赛级别的自动数学推理中达到了新的最先进水平。"
+    }
+  ],
+  "keyQuotes": [
+    "通过 MaxProof 测试时扩展，M3 模型在 IMO 2025 上达到 35/42 分，在 USAMO 2026 上达到 36/42 分，两项成绩均超过了人类金牌阈值。",
+    "MaxProof 将模型视为生成器、验证器、优化器和排序器，在候选证明群体中进行搜索，并通过锦标赛选择返回一个最终证明。"
+  ],
+  "tags": [
+    "LLM",
+    "AI Agent",
+    "推理模型",
+    "测试时扩展",
+    "数学证明"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 227,
+  "domain": "arxiv.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781265602000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-12 20:00:02"
+}

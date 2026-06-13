@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-13 06:31:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-13 08:34:54 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -702,6 +702,14 @@
 
 
 
+### [如何使用-HTML、CSS-和-JavaScript-构建一个文本大小写转换工具](https://www.freecodecamp.org/news/how-to-build-a-case-converter-tool/)
+
+2026-06-12 15:51:10 | 标签: 前端与 Web, JavaScript, HTML, CSS, 开发者工具
+
+> 本文是一份面向前端开发者的综合性教程，旨在指导他们构建一个实用的 Web 工具。教程引导读者仅使用 HTML、CSS 和原生 JavaScript 从头创建一个文本大小写转换工具。内容涵盖项目结构搭建、包含文本输入区和按钮的 HTML 界面构建、现代 CSS 样式设计，以及实现多种文本大小写转换（全大写、全小写、首字母大写等）、实时字符/单词/句子计数、以及导出为 PDF 和 Word 格式的 JavaScript 逻辑。本教程面向具备基础 Web 开发知识的初学者，每一步都提供了完整的代码片段和详细解释。
+
+
+
 ### [Meta-内部工具-UI-系统的构建与规模化](https://www.infoq.com/presentations/internal-tools-meta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-11 17:05:00
@@ -1326,13 +1334,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1482,13 +1490,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2982,13 +2990,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4692,13 +4700,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
