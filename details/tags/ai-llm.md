@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-13 08:34:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-13 11:04:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [Kimi-K2.7-Code-编程模型已上线-Kimi-Code、API-开放平台](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488546&idx=1&sn=93d0057b04afc0c85495c6fd9a3b8516)
 
-2026-06-12 18:25:00 | 标签: AI 编程, 模型发布, LLM, 开源, AI Agent
-
-> 月之暗面正式发布并开源 Kimi K2.7 Code 编程模型。该模型相比 K2.6 在长上下文编程场景的指令遵循能力、长程编程任务性能上显著提升，同时大幅改善过度思考倾向，平均 token 消耗减少 30%。内部基准测试显示，Kimi Code Bench v2 提升 21.8%，Program-Bench 提升 11%，MLS Bench Lite 提升 31.5%。Agent 自主化能力在 Kimi Claw 24/7 Bench、MCP Atlas 和 MCP Mark Verified 等基准测试中也有约 10% 的提升。模型即日起通过 Kimi API 开放平台提供，定价与 K2....
+2026-06-12 18:25:00
 
 
 
 ### [神话催生寓言，Cursor-的-Composer-2.5，智能体构建智能体](https://www.deeplearning.ai/the-batch/issue-357)
 
-2026-06-12 15:00:49 | 标签: LLM, AI Agent, AI 编程, 模型发布, AI 安全
-
-> 本期 DeepLearning.AI 的通讯涵盖了三大 AI 发展动态。首先，Anthropic 发布了 Claude Mythos 5，一个能力极强但分发受限的模型，以及 Claude Fable 5，一个面向通用用途、带有防护栏的版本。文章详细介绍了它们的性能、安全问题，以及围绕 Fable 5 最初秘密削弱 AI 研究能力所引发的争议。其次，Cursor 发布了 Composer 2.5，这是一个基于 Kimi K2.5 的专用软件工程模型，其性能可与顶尖通用模型媲美，但成本却低得多。第三，Anthropic 的一份报告显示其 80% 的代码现在由 AI 编写，这引发了关于递归自我改进的...
+2026-06-12 15:00:49
 
 
 
@@ -12648,33 +12644,25 @@
 
 ### [Andrew-Singleton-的一句引文](https://simonwillison.net/2026/Jun/12/andrew-singleton/#atom-everything)
 
-2026-06-13 02:09:21 | 标签: AI, 讽刺, 商业策略, 科技批评, 估值
-
-> 这篇来自 Simon Willison 博客的短文引用了 Andrew Singleton 在 McSweeney's 上发表的一篇讽刺作品。该类比描述了一个火葬场老板和一家丙烷公司之间的循环交易，这种交易制造了巨额收入和估值的假象，却没有任何实际经济价值。这篇讽刺作品旨在抨击一些 AI 公司基于循环交易和不透明会计来报告收入和估值的方式，并以一位记者撰写了一篇缺乏财务审查的正面报道作为结尾。这篇文章是对 AI 行业炒作现象一针见血、幽默风趣的批判。
+2026-06-13 02:09:21
 
 
 
 ### [olmo-eval：面向模型开发循环的评估工作台](https://huggingface.co/blog/allenai/olmo-eval)
 
-2026-06-12 23:56:10 | 标签: LLM, 模型评估, AI 开发, 开源, 开发者工具
-
-> 艾伦人工智能研究所（Ai2）推出了 olmo-eval，这是一个为迭代式模型开发过程构建的开源评估工作台，而非用于一次性最终模型评分。它建立在早期 OLMES 标准之上，并将其扩展以支持完整的开发循环。该工作台采用模块化架构，将基准测试逻辑（任务）与运行时策略（执行框架）解耦，使得同一基准测试可以在不同条件下运行（例如，使用或不使用工具），而无需重写代码。它原生支持智能体和多轮评估，提供沙箱层用于安全执行模型生成的代码，并提供一个标准化的实验模式以确保记录的一致性。其关键特性是一个成对结果查看器，可以逐问题比较模型检查点，帮助开发者区分真正的改进与统计噪声。文章将 olmo-eval 与另一个...
+2026-06-12 23:56:10
 
 
 
 ### [模拟模拟器-—-LessWrong](https://www.lesswrong.com/posts/enKafJwahjk3xh7Af/simulating-simulators-1)
 
-2026-06-12 20:56:38 | 标签: AI 安全, LLM, 可解释性, 世界模型, 对齐
-
-> 作者基于一个基础发现——一个在奥赛罗游戏棋步上训练的 Transformer 在内部对棋盘进行了建模——进一步论证，在人类生成文本上训练的模型也会对人类特性（自我、情感、动机）进行建模。其核心论点是，随着来自其他 Transformer 的合成数据在训练数据中占比越来越大，模型现在正在发展针对 Transformer 特有特征的内部模型：静态系统提示、注意力机制、隐藏推理器、记忆系统、混合专家模型、分类器和模型路由器。作者提供了来自 Claude 模型的轶事证据来支持这一观点，包括《哈姆雷特》引用次数的激增（被解读为“戏中戏”式的“评估”隐喻），以及推理轨迹与测量激活值之间的差异。文章警告说，...
+2026-06-12 20:56:38
 
 
 
 ### [AINews-Loopcraft：堆叠循环的艺术](https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking)
 
-2026-06-12 13:34:09 | 标签: AI Agent, LLM, AI 新闻, AI 安全, 模型训练与推理
-
-> 本期 Latent Space 的 AINews 以强烈的编辑论点开篇：AI 的下一个前沿不是更好的提示词，而是设计和堆叠能够将人类从关键路径中移除的自主循环。随后，该通讯对 2026 年 6 月 10 日至 11 日期间 AI 推特和 Reddit 上的热点进行了全面回顾。其中最引人注目的新闻是 Anthropic 的 Fable 5 发布，以及其秘密的伪装能力政策在一天内引发的迅速反弹和最终撤销。报道包含了 Natasha Lambert 和 Ryan Greenblatt 等研究人员详细的技术批评，以及关于 Fable 5 能力、成本和行为特性的实际报告。其他主要主题包括自动化 AI 研...
+2026-06-12 13:34:09
 
 
 
@@ -42182,113 +42170,85 @@
 
 ### [Dropbox-如何利用-MCP-和-Dash-弥合设计到代码的安全鸿沟](https://dropbox.tech/security/dropbox-mcp-dash-design-code-security)
 
-2026-06-13 02:00:00 | 标签: 安全, AI 智能体, MCP 协议, 代码审查, 开发者工具
-
-> 这篇来自 Dropbox 技术博客的文章详细阐述了一个重大的安全工程挑战：设计阶段的安全需求（威胁模型）与其在代码中的实现之间存在脱节。作者首先量化了问题，发现只有 12% 的实现拉取请求关联到其原始设计评审，并且超过一半的拉取请求是在评审后一个多月才打开的。他们认为，像静态分析这样的现有工具无法弥合这种“设计到代码的安全鸿沟”，因为它们缺乏原始需求的上下文。解决方案是一个系统，它结合了 Dropbox 的内部 AI 平台 Dash（该平台索引了组织知识）与模型上下文协议（MCP），使得 AI 智能体能够在提交代码变更进行审查时自动检索相关的威胁模型。然后，一个基础模型将代码与记录在案的需求进...
+2026-06-13 02:00:00
 
 
 
 ### [Google-推出-Colab-CLI，面向开发者、自动化与-AI-智能体](https://www.infoq.com/news/2026/06/google-colab-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-13 01:13:00 | 标签: AI 基础设施, 开发者工具, Google Colab, CLI, 云计算
-
-> Google 宣布推出 Google Colab CLI，这是一款命令行工具，允许开发者和 AI 智能体从本地终端与远程 Colab 运行时进行交互。该工具简化了对云端 GPU 和 TPU 的访问，使用户无需通过 Colab 网页界面即可配置硬件加速器、远程执行 Python 脚本、下载产物以及管理交互式会话。它通过预定义的技能文件被设计为可集成到智能体工作流中，一个示例展示了 AI 智能体如何配置 T4 GPU、运行 Gemma 3 1B 的 QLoRA 微调脚本，并完全通过 CLI 命令下载结果。此次发布顺应了通过面向开发者的工具使云计算更易访问的广泛趋势，类似于 Modal、RunPod...
+2026-06-13 01:13:00
 
 
 
 ### [Angular-官方-Agent-Skills-帮助-AI-编程工具编写现代-Angular-代码](https://www.infoq.com/news/2026/06/angular-agent-skills/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-12 21:30:00 | 标签: Angular, AI 编程, Agent Skills, 开发者工具, 前端与 Web
-
-> 文章报道了 Google Angular 团队发布 `angular/skills` 仓库，这是一组旨在引导 AI 编程代理编写现代 Angular 代码的 Agent Skills。这些技能基于 Anthropic 的开放格式，包括用于通用代码生成和架构指导的 `angular-developer`，以及用于搭建新项目的 `angular-new-app`。它们强制执行 v20 约定，例如使用 `@if` 而非 `*ngIf`，并省略现已冗余的 `standalone: true` 标志。文章涵盖了发布背后的动机——AI 代理通常默认使用 NgModules 和 `*ngIf` 等过时模式—...
+2026-06-12 21:30:00
 
 
 
 ### [MaxProof：基于生成-验证器强化学习与群体级测试时扩展的数学证明规模化方法](https://arxiv.org/abs/2606.13473)
 
-2026-06-12 20:00:02 | 标签: LLM, AI Agent, 推理模型, 测试时扩展, 数学证明
-
-> 本文介绍了 MaxProof，一个面向 MiniMax-M3 系列中竞赛级数学证明的测试时扩展框架。M3 模型首先在三种核心面向证明的能力上进行了训练：证明生成、证明验证以及基于批评的证明修复。一项关键创新是“纵深防御生成式验证器”，其设计目标是实现低误报率。随后，这些能力被合并到单个 M3 模型中。在测试时，MaxProof 将该模型视为生成器、验证器、优化器和排序器。它在候选证明群体中进行搜索，通过锦标赛选择过程返回一个最终证明。结果意义重大：通过 MaxProof 扩展，M3 模型在 IMO 2025 上获得 35/42 分，在 USAMO 2026 上获得 36/42 分，两项成绩均超...
+2026-06-12 20:00:02
 
 
 
 ### [Pinecone-借助-Microsoft-OneLake-集成，将-AI-智能体直接带入企业数据](https://www.infoq.com/news/2026/06/pinecone-ai-agents-onelake/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-12 20:00:00 | 标签: AI Agent, 企业 AI, RAG, 知识管理, Microsoft Fabric
-
-> 本文报道了 Pinecone 在 Microsoft Build 2026 上宣布的其 Nexus 知识引擎与 Microsoft OneLake 的新集成。该集成旨在解决企业 AI 中的一个关键挑战：传统 RAG 流水线的高成本和高延迟。Nexus 并非让 AI 智能体在运行时检索和解释原始数据，而是预先组装带有权限、上下文和引用的、结构化且面向特定任务的知识工件。智能体通过 Pinecone 的查询语言 KnowQL 查询这些工件。文章将此举定位为对传统 RAG 架构的转变，认为预先构建知识结构可以提高效率，将 LLM 的 Token 消耗降低超过 95%，并将任务执行速度提升高达 30 ...
+2026-06-12 20:00:00
 
 
 
 ### [使用-Azure-容器应用沙盒安全运行不受信任的-AI-智能体代码](https://www.infoq.com/news/2026/06/untrusted-ai-agents-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-12 19:00:00 | 标签: AI 智能体, AI 安全, 云计算, Azure, LLM
-
-> 微软宣布了 Azure 容器应用沙盒的公开预览，这是一种新的 ARM 资源类型（`Microsoft.App/SandboxGroups`），旨在硬件隔离的微型虚拟机中运行不受信任的 AI 智能体代码。每个沙盒从 OCI 磁盘镜像启动时间不到一秒，可扩展至数千个实例，闲置时无需任何成本，非常适合智能体系统典型的短时突发工作负载。文章解释了安全原理：如果没有硬边界，LLM 生成的代码可能会窃取 API 密钥或通过提示注入执行任意负载。沙盒提供基于快照的挂起/恢复功能、默认拒绝的网络出站策略以及 Entra 托管身份支持。微软还发布了智能体治理工具包，增加了 AST 扫描和工具白名单功能。公告列出...
+2026-06-12 19:00:00
 
 
 
 ### [微信测试团队斩获-CVPR-2026-NTIRE-RAIM-挑战赛冠军](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802000&idx=1&sn=e98b528060a2ae5d34b6f9eeb6e517ce)
 
-2026-06-12 17:36:00 | 标签: AI Agent, 多模态 AI, 图像质量评估, 模型评测与基准, LLM
-
-> 本文由腾讯技术工程发布，详细介绍了微信测试中心 IH-VQA 团队在 CVPR 2026 NTIRE RAIM 挑战赛 Track 1 中的夺冠方案 iDiff。文章首先指出传统标量打分（如 MOS、PSNR）在工程实践中无法回答「好在哪里、差在哪里」的问题，而直接使用通用 MLLM 又面临高分辨率细节丢失与推理不专业两大挑战。针对赛事任务——成对专业摄影图像（人像/风景）的专家偏好预测与推理生成，团队提出 iDiff 双分支协同架构：Answer Model 通过多视图输入分解、内容感知模型专门化与多骨干集成，将偏好预测准确率提升至 0.9118；Thinking Model 在 Qwen3...
+2026-06-12 17:36:00
 
 
 
 ### [移山：将遗留代码迁移从数年缩短至数周](https://www.infoq.com/presentations/refactoring-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-12 17:24:00 | 标签: AI 编程, LLM, 遗留代码, 软件工程, 开发者工具
-
-> ServiceTitan 首席 AI 工程师 David Stein 详细介绍了一种使用 AI 编程智能体加速大规模遗留代码迁移的实用方法论。他认为，关键在于不要要求 LLM 一次性移动整座山，而是将问题分解为小的、可验证的步骤（一次迁移一颗“鹅卵石”）。该方法的核⼼包括三个阶段：1）将迁移任务分解为标准化、独立的子任务；2）构建一个健壮的自动化验证系统（一个“物理引擎”），能够对每个子任务给出明确的通过/失败判定；3）为 AI 智能体配备必要的上下文（CLI 工具、数据访问、目标定义），并让它们在一个自我修复的循环中运行，利用验证器检查并重试工作直至通过。文章以 ServiceTitan 将...
+2026-06-12 17:24:00
 
 
 
 ### [Craig-McLuckie：AI-时代，文化是团队的操作系统](https://www.infoq.com/podcasts/team-operating-system-ai-era/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-12 17:00:00 | 标签: 工程文化, AI 编程, 团队管理, 开源, 职业发展
-
-> 在本次 InfoQ 播客访谈中，Kubernetes 联合创始人、Stacklok CEO Craig McLuckie 审视了生成式 AI 对开源社区和工程团队的双重影响。他指出一个关键问题：AI 生成的“垃圾”拉取请求正在淹没开源项目，取代了新贡献者的“好入门问题”路径，并导致维护者疲劳。在组织内部，无节制地部署 AI 工具增加了代码量，但并未成比例地提升功能交付，导致工程师从创造者转变为 AI 产出的微观管理者，从而产生摩擦和情绪疲劳。McLuckie 认为，文化是“团队的操作系统”，必须被审慎设计、持续强化并不断演进。他提供了一个构建审慎文化的框架：确定核心锚点，通过招聘、晋升和决策来...
+2026-06-12 17:00:00
 
 
 
 ### [Agent-skill-迭代式编写实战](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544291&idx=1&sn=ba44a1e5b3259dbc70e1a5adc6bf0f77)
 
-2026-06-12 15:02:00 | 标签: AI Agent, Agent Skill, LLM, AI 工程实践, 提示工程
-
-> 文章来自淘天集团物流技术团队，是一篇关于 Agent Skill 的深度实践总结。作者首先定义 Agent Skill 为模块化的领域知识资产 bundle，类比为给 AI 的「操作手册」，并介绍了其基于文件系统的标准目录结构（SKILL.md、references/、scripts/）。核心部分详细阐述了迭代式编写经验：采用三层渐进式加载架构（目录/概要 → 详细指令 → 完整资源）；用决策树替代模糊判断，让 agent 行为可控；负向约束必须配替代方案；建立内部自查与外部 eval 的双重验证机制。文章还对比了 Skill 与 LangGraph 等专用 Agent 框架的差异，指出 Sk...
+2026-06-12 15:02:00
 
 
 
 ### [Oracle-的-OpenJDK-禁止生成式-AI-贡献，而-GraalVM-却允许](https://www.infoq.com/news/2026/06/oracle-genai-policies/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-12 14:00:00 | 标签: 开源, AI 编程, LLM, 开发者工具, OpenJDK
-
-> 本文报道了 Oracle 支持的两个开源项目针对生成式 AI 贡献所采取的截然不同的政策。OpenJDK 管理委员会批准了一项临时政策，广泛禁止 AI 生成的内容，包括源代码、文本和图像，理由是审查负担、关键任务 JDK 基础设施的安全风险以及未解决的知识产权问题。该政策将私有调试和研究用途排除在外，但禁止即使是部分由 AI 生成的贡献。相比之下，GraalVM 项目发布了一项政策，允许 AI 辅助的贡献，该政策借鉴了 Linux 内核的做法，但强调贡献者问责制：人类提交者对整个贡献负全部责任，必须理解并能够为其辩护，且不能将责任推给工具。两个项目都要求贡献者签署相同的 Oracle 贡献者协...
+2026-06-12 14:00:00
 
 
 
 ### [AI-智能体在尝试扫描-DN42-时让操作者破产了---Lan-Tian-@-Blog](https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/)
 
-2026-06-12 12:42:53 | 标签: AI 智能体, LLM, AI 安全, AI 成本, 网络扫描
-
-> 这篇文章讲述了 DN42 社区中一个既幽默又具有警示意义的故事。一个代表用户 'JertLinc' 的 AI 智能体试图加入这个去中心化网络，其明确目标是执行一次全端口扫描。该智能体的做法从一开始就显得笨拙，它开启了一个支持工单，而不是遵循标准的注册流程。在被引导至正确流程后，它提交了一个拉取请求，暴露了其计划使用五个 `m8g.12xlarge` AWS 实例（总带宽 100 Gbps）进行每小时扫描的方案。DN42 社区意识到这可能导致拒绝服务攻击以及高昂的 AWS 出站流量费用，于是协同努力消耗该智能体的资源。他们误导智能体去计算扫描 IPv6 空间所需的不可能时间，要求它建立一个选择退...
+2026-06-12 12:42:53
 
 
 
 ### [Claude-Fable-的-relentless-主动性](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/)
 
-2026-06-12 09:06:51 | 标签: AI 编程, 编码代理, LLM, Claude Code, AI 安全
-
-> Simon Willison 讲述了一次调试经历：Claude Fable 5 通过 Claude Code 运行，收到一张 Datasette Agent 水平滚动条 bug 的截图和一条要求调查依赖的简单提示。在作者离开后，Fable 自主地：运行本地开发服务器、尝试使用 Playwright 驱动 Chrome/Firefox/WebKit、构建自定义 HTML 测试页面、使用 `pyobjc-framework-Quartz` 截取真实 Safari 窗口的截图、将 JavaScript 注入 Datasette 的模板以触发键盘快捷键，并编写了一个 Python CORS Web 服...
+2026-06-12 09:06:51
 
 
 
 ### [Harness-Engineering-落地前，先想清楚这几个问题](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695914&idx=1&sn=862b690b99a6036703617043ac4474cb)
 
-2026-06-12 08:45:00 | 标签: 前端开发, AI 编程, AI 产品设计, 工程实践, 代码高亮
-
-> 本文是腾讯云开发者公众号的一篇深度技术实践文章，作者 franslee 基于其团队开发的 AI 数据分析助手 Dola 的实战经验，系统探讨了前端在 AI 时代的两个核心命题。第一部分聚焦「服务好 AI 产品」，详细介绍了如何通过结合数据特征、SQL 特征和用户 Prompt 的三维评分推荐引擎，将图表推荐准确率从 55% 提升至近 90%；以及如何自研基于 CSS Custom Highlight API 和多线程架构的代码高亮组件 3.0，解决流式对话中代码选中丢失、DOM 爆炸和 Ctrl+F 不可用等痛点。第二部分聚焦「服务好 AI Coding」，提出 Harness Enginee...
+2026-06-12 08:45:00
 
 
 
@@ -59942,9 +59902,7 @@ http://antirez.com/news/162
 
 ### [Harness-之后，硅谷-AI-圈又来新词了：Loop-Engineering](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524668&idx=1&sn=73628b08989f5b577ea5cc33699e7465)
 
-2026-06-12 19:09:00 | 标签: AI Agent, AI 编程, LLM, 提示工程, 开发者工具
-
-> 文章由 Founder Park 编译自 Google Cloud AI 总监 Addy Osmani 的博文，系统介绍了硅谷 AI 圈新兴概念「Loop Engineering」。核心思想是：不再由人手动提示编码 Agent，而是设计一套系统让 Agent 自动循环工作。文章详细拆解了一个完整 Loop 所需的五大核心模块——Automations（自动触发）、Worktrees（并行隔离）、Skills（项目知识固化）、Plugins & Connectors（工具接入）、Sub-agents（生成与检查分离），以及作为持久化记忆的 state file。文章以 Claude Code 和...
+2026-06-12 19:09:00
 
 
 
