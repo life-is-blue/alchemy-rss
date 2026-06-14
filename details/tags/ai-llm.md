@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-14 08:31:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-14 11:05:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -12644,25 +12644,19 @@
 
 ### [致开发者：GLM-5.2-全量开放，前沿智能属于所有人](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493935&idx=1&sn=5bf94fa8e504e6c20957cca2e98c97c2)
 
-2026-06-13 14:19:00 | 标签: 模型发布, 开源模型, LLM, AI 编程, 智谱
-
-> 智谱于 2026 年 6 月 13 日发布公告，宣布其最新模型 GLM-5.2 面向 GLM Coding Plan 全量用户开放，覆盖 Lite、Pro、Max 及团队版。该模型支持真正可用的 1M 上下文，在长程任务中保持领先，并被称为智谱最强的国产 Coding 模型。API 将于下周上线，模型将遵循 MIT 协议开源。文章强调前沿智能应开放、可用、可构建，服务于每一位开发者。
+2026-06-13 14:19:00
 
 
 
 ### [Claude-Fable-禁令前，大家做了什么？](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492075&idx=1&sn=c0c7d1d36f55e1ebdabf9290a65909f8)
 
-2026-06-13 13:21:00 | 标签: AI 安全与对齐, LLM, AI Agent, 模型发布, 地缘政治
-
-> 文章首先报道了美国政府以国家安全为由，向 Anthropic 发出出口管制指令，要求暂停任何外国国民访问 Fable 5 和 Mythos 5，导致这两款模型被临时关闭。作者引用了 Anthropic 的官方声明，详细说明了指令内容、公司对所谓“越狱”风险的评估以及公司对此决定的异议。随后，文章展示了社区利用 Fable 5 生成的一系列令人印象深刻的案例，包括 CSS 液态玻璃质感、基于真实数据的 3D 场景构建（如优胜美地国家公园）以及各种交互式场景。最后，文章深入分析了暂停原因，指出这并非简单的产品事故，而是前沿模型能力被纳入国家安全和出口管制框架的标志性事件。作者认为，随着模型在网络安...
+2026-06-13 13:21:00
 
 
 
 ### [关于美国政府指令暂停-Fable-5-和-Mythos-5-访问权限的声明](https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything)
 
-2026-06-13 09:01:50 | 标签: 科技新闻, AI 安全, AI 监管, 地缘政治, Anthropic
-
-> Anthropic 发布声明称，美国政府以国家安全为由发布了一项出口管制指令，要求暂停任何外国国民对其 Fable 5 和 Mythos 5 模型的所有访问权限。实际效果迫使 Anthropic 为确保合规而突然对所有客户禁用这些模型。政府未提供其国家安全担忧的具体细节，仅提供了关于一种潜在越狱技术的口头证据。Anthropic 审查了该技术，发现它是一种非独特、非通用的方法，本质上是要求模型读取代码库并修复软件缺陷——这种能力在 OpenAI 的 GPT-5.5 等其他模型中广泛可用。该文章链接至 Anthropic 的官方声明，并指出对其他 Anthropic 模型的访问不受影响。
+2026-06-13 09:01:50
 
 
 
@@ -42194,25 +42188,19 @@
 
 ### [Terraform-MCP-Server-让-AI-助手能够与-Terraform-基础设施交互](https://www.infoq.com/news/2026/06/terraform-mcp-server-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-14 04:00:00 | 标签: AI Agent, MCP 协议, DevOps, 基础设施即代码, 开发者工具
-
-> HashiCorp 宣布 Terraform MCP Server 正式可用，这是一个开源的 MCP 服务器，可将 AI 智能体连接到 Terraform Registry API。该服务器旨在通过自动化搜索文档、解释计划文件和审计配置等常规任务，提升基础设施团队的生产力。它允许 AI 智能体发现已批准的模块并生成合规代码，从而强制执行组织标准。该服务器还提供了一个统一接口，允许用户用自然语言查询基础设施上下文，例如工作区状态和资源数量。它支持身份验证和授权强制执行、CORS 策略、速率限制以及 OpenTelemetry 集成。该服务器可与 Cursor、Claude 和 Gemini 等智...
+2026-06-14 04:00:00
 
 
 
 ### [Mastra-vs-LangChain：构建-AI-Agent-流水线并分析数据](https://www.freecodecamp.org/news/mastra-vs-langchain-building-an-ai-agent-pipeline-and-analyzing-the-data/)
 
-2026-06-13 15:17:36 | 标签: AI Agent, LLM, AI 编程, LangChain, Mastra
-
-> 作者曾在 Mastra 上交付过一个生产级 AI 平台，此次他在 Mastra 和 LangChain/LangGraph 上构建了相同的五步研究与综合流水线（研究、分析、写作、评判、循环），以进行实证对比。文章详细阐述了架构差异：Mastra 的类型化步骤合约与 `.dowhile()` 循环，对比 LangGraph 的带共享状态和条件边的有向图。内容涵盖实际实现细节，如工具创建、Agent 配置、Token 捕获、重试封装，以及针对“LLM 作为评判者”偏见（即所有内容都打 7/10 分）的关键修复。受 G-Eval 论文启发，解决方案包含一个结构化的评判器，具备声明审计、特异性审计、反...
+2026-06-13 15:17:36
 
 
 
 ### [WebMCP-标准提案现已登陆-Chrome（Origin-Trials），赋能智能体化网页操作](https://www.infoq.com/news/2026/06/webmcp-web-agent-standard-chrome/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-13 11:32:00 | 标签: AI Agent, WebMCP, Chrome, LLM, 浏览器自动化
-
-> Google 宣布 WebMCP（Web Model Context Protocol）已进入 Chrome 149 的 Origin Trials。WebMCP 是一项新的标准提案，允许网站向浏览器内的 AI 智能体暴露工具——例如 JavaScript 函数和 HTML 表单。这使得智能体能够通过调用机器友好的 API 来可靠地模拟用户操作，而不是依赖 DOM 抓取或截图分析等昂贵且不可靠的方法。文章详细介绍了两种 API 接口：声明式 API（Declarative API），用于通过自定义属性注解现有的 HTML 表单；以及命令式 API（Imperative API），使用 `mod...
+2026-06-13 11:32:00
 
 
 
@@ -59950,17 +59938,13 @@ http://antirez.com/news/162
 
 ### [美国政府禁止外国人使用-Fable-5，Anthropic-发文驳斥](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569268&idx=1&sn=f23c54fd05db179f8bd6b10fbbecab11)
 
-2026-06-13 14:03:00 | 标签: AI 监管, Anthropic, 出口管制, 科技新闻, AI 安全
-
-> 本文报道了美国政府对 Anthropic 发出出口管制指令，要求暂停所有外国主体访问其最新发布的 Fable 5 和 Mythos 5 模型。文章详细介绍了这两款模型的能力定位——Mythos 是高于 Opus 的全新旗舰系列，Fable 5 是首款面向公众的 Mythos 级模型，在多项基准测试中达到业界顶尖水平。触发指令的直接原因是另一家公司声称能够对 Mythos 实施越狱，但 Anthropic 在声明中反驳称，该越狱方式范围极窄、无法通用，且类似能力在其他公开模型（如 GPT-5.5）上同样存在。Anthropic 强调其已进行数千小时的红队测试，未发现通用越狱方法，并批评政府未遵循...
+2026-06-13 14:03:00
 
 
 
 ### [对话安克阳萌：一个好的智能硬件产品，要在感知、规划、控制这三个模块下功夫](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524677&idx=1&sn=8291c23cb8cf127185403bc10f2254f3)
 
-2026-06-13 10:00:00 | 标签: 智能硬件, AI硬件, 产品战略, 创业与投资, 组织管理
-
-> 本文是 Hardwire 对安克创新创始人兼 CEO 阳萌的深度专访。阳萌从技术视角完整拆解了安克在 AI 时代的智能硬件推理过程：以自动驾驶的「感知-规划-控制」框架为方法论，解释了为何要自研存算一体芯片以解决端侧大模型的功耗瓶颈，并分享了从 2023 年启动到产品落地的三年历程。他重新定义了「浅海战略」——「浅」只意味着市场规模不大，不代表容易做，并提出了「三缺一」的品类选择原则。在组织与人才层面，阳萌分享了安克的人才观（第一性、求极致、长期主义）、对 AI 冲击组织的判断（context bounded、公司是成长的），以及为何不进入智能眼镜等超级品类。他还透露了安克 AI 转型的内部数...
+2026-06-13 10:00:00
 
 
 
@@ -75080,9 +75064,7 @@ http://antirez.com/news/162
 
 ### [Vol.121｜硅谷-AI-大转弯，软件正在死去，创业者的真机会在哪里？｜2026-年中特辑](https://www.xiaoyuzhoufm.com/episode/6a265d55b30e1571aea280f5)
 
-2026-06-08 14:34:38 | 标签: AI泡沫, 风险投资, 大模型竞争, AI创业, 具身智能
-
-> 本期节目，极客公园主播郑玄与锦秋基金合伙人臧天宇、郑晓超，对 2026 年上半年 AI 行业进行了近两小时的深度复盘。讨论从「AI 泡沫」的现状切入，嘉宾认为当前泡沫源于资本配置低效而非整体过热，但长期看 AI 将留下真实价值，建议创业者在泡沫期理性融资、储备弹药。随后，对话梳理了「御三家」OpenAI、Anthropic、Google 的竞争态势，指出 Anthropic 因战略聚焦 Coding 暂时领先，但 Google 的综合生态与算力储备被低估。在应用层，嘉宾剖析了「模型吞噬应用」趋势，强调创业者必须避开依赖旗舰模型智能的「套壳」陷阱，转而深耕垂直场景，提供比通用大模型更深、成本更低...
+2026-06-08 14:34:38
 
 
 
@@ -75730,9 +75712,7 @@ http://antirez.com/news/162
 
 ### [美国政府要求-Anthropic-暂停外国公民访问-Fable-5-和-Mythos-5](https://x.com/AnthropicAI/status/2065597531644743999)
 
-2026-06-13 08:50:03 | 标签: AI 监管, Anthropic, 出口管制, 国家安全, Fable 5
-
-> Anthropic 官方账号发布重大消息：美国政府依据国家安全权限，发布出口管制指令，要求暂停所有外国公民（无论身处美国境内还是境外，包括 Anthropic 的外籍员工）对 Fable 5 和 Mythos 5 的访问。为遵守规定，Anthropic 必须立即为所有客户禁用这些模型。其他 Claude 模型的访问不受影响。Anthropic 对此表示歉意，并认为这是一场误会，正在努力尽快恢复访问。声明中附有完整公告的链接。
+2026-06-13 08:50:03
 
 
 

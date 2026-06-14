@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-14 08:31:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-14 11:05:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -566,9 +566,7 @@
 
 ### [AWS-推出-CDK-Mixins，实现可组合的基础设施抽象](https://www.infoq.com/news/2026/06/cdk-mixins-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-13 13:38:00 | 标签: AWS CDK, 基础设施即代码, 云计算, 开发者工具, CloudFormation
-
-> 本文报道了 AWS CDK Mixins 的正式可用。该新特性允许开发者将安全策略、监控、配置等可复用能力附加到任何 CDK 构造上，无论其抽象层级（L1、L2 或 L3）如何。该特性使用 .with() 语法，并内置于 aws-cdk-lib 中。文章解释了 Mixins 与 CDK Aspects 的区别（Mixins 将特性即时应用于特定构造；Aspects 在合成阶段广泛地强制执行规则）。文中包含了 AWS 工程师的评论、一位超大规模云服务商运营负责人对该特性的赞扬（认为它模糊了 L1 和 L2 构造之间的界限），以及 Corey Quinn 关于复杂性的质疑。文章还指出，虽然该特性于...
+2026-06-13 13:38:00
 
 
 
