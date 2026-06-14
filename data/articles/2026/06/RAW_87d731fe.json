@@ -1,0 +1,52 @@
+{
+  "id": "RAW_87d731fe",
+  "title": "关于美国政府指令暂停 Fable 5 和 Mythos 5 访问权限的声明",
+  "url": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything",
+  "date": "2026-06-13 09:01:50",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">13th June 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://www.anthropic.com/news/fable-mythos-access\">Statement on the US government directive to suspend access to Fable 5 and Mythos 5</a></strong> (<a href=\"https://twitter.com/AnthropicAI/status/2065597531644743999\" title=\"@AnthropicAI\">via</a>) Well this is <em>nuts</em>:</p>\n    <blockquote>\n     <p>The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees. The net effect of this order is that we must abruptly disable Fable 5 and Mythos 5 for <strong>all</strong> our customers to ensure compliance. <strong>Access to all other Anthropic models</strong> <strong>will not be affected.</strong></p>\n     <p>We received the directive from the government today at 5:21pm (ET). The letter did not provide specific details of its national security concern. Our understanding is that the government believes it has become aware of a method of bypassing, or \"jailbreaking\" Fable 5. We reviewed a demonstration of this specific technique being used to identify a small number of previously known, minor vulnerabilities. These vulnerabilities all appear relatively simple, and we have found that other publicly-available models are able to discover them as well without requiring a bypass. [...]</p>\n     <p>To date, the government has only given us verbal evidence of a potential narrow, non-universal jailbreak, which essentially consists of asking the model to read a specific codebase and fix any software flaws. Our understanding is that one potential jailbreak was shared with the government. We have reviewed the report and validated that the level of capability displayed there is widely available from other models (including OpenAI's <a href=\"https://deploymentsafety.openai.com/gpt-5-5/tacit-knowledge-and-troubleshooting\">GPT-5.5</a>), and is used every day by the defenders who keep systems safe. We will share more details over the next 24 hours.</p>\n    </blockquote>\n    <p>I still have access to Fable via <a href=\"https://claude.ai/\">claude.ai</a> and Claude Code now, at 9:01pm ET.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 宣布美国政府已下令其暂停所有客户对其 Fable 5 和 Mythos 5 模型的访问权限，理由是存在国家安全担忧，涉及一种 Anthropic 认为并非独特且在其他模型中广泛可用的越狱技术。",
+  "oneSentenceSummary": "Anthropic 宣布美国政府已下令其暂停所有客户对其 Fable 5 和 Mythos 5 模型的访问权限，理由是存在国家安全担忧，涉及一种 Anthropic 认为并非独特且在其他模型中广泛可用的越狱技术。",
+  "summary": "Anthropic 发布声明称，美国政府以国家安全为由发布了一项出口管制指令，要求暂停任何外国国民对其 Fable 5 和 Mythos 5 模型的所有访问权限。实际效果迫使 Anthropic 为确保合规而突然对所有客户禁用这些模型。政府未提供其国家安全担忧的具体细节，仅提供了关于一种潜在越狱技术的口头证据。Anthropic 审查了该技术，发现它是一种非独特、非通用的方法，本质上是要求模型读取代码库并修复软件缺陷——这种能力在 OpenAI 的 GPT-5.5 等其他模型中广泛可用。该文章链接至 Anthropic 的官方声明，并指出对其他 Anthropic 模型的访问不受影响。",
+  "mainPoints": [
+    {
+      "point": "美国政府命令 Anthropic 暂停所有客户对 Fable 5 和 Mythos 5 的访问权限。",
+      "explanation": "该指令以国家安全为由，针对外国国民，但迫使全球暂停服务。Anthropic 于美国东部时间下午 5:21 收到命令，必须立即遵守。"
+    },
+    {
+      "point": "政府的担忧基于一种潜在的越狱技术。",
+      "explanation": "Anthropic 表示该技术并非通用，涉及要求模型读取代码库并修复缺陷——这种能力在 GPT-5.5 等其他模型中广泛可用。"
+    },
+    {
+      "point": "Anthropic 对所谓漏洞的独特性和严重性提出异议。",
+      "explanation": "该公司认为这些漏洞是次要的、此前已知的，并且其他公开可用的模型无需绕过即可发现。"
+    }
+  ],
+  "keyQuotes": [
+    "该命令的实际效果是，我们必须突然对所有客户禁用 Fable 5 和 Mythos 5 以确保合规。",
+    "我们的理解是，政府认为其已了解到一种绕过或‘越狱’Fable 5 的方法。",
+    "我们已审查该报告并验证，其中展示的能力水平在其他模型（包括 OpenAI 的 GPT-5.5）中广泛可用，并且每天都被维护系统安全的防御者所使用。"
+  ],
+  "tags": [
+    "科技新闻",
+    "AI 安全",
+    "AI 监管",
+    "地缘政治",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 293,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "News_Media",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781312510000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-13 09:01:50"
+}

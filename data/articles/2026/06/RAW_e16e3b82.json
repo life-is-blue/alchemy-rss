@@ -1,0 +1,52 @@
+{
+  "id": "RAW_e16e3b82",
+  "title": "AWS 推出 CDK Mixins，实现可组合的基础设施抽象",
+  "url": "https://www.infoq.com/news/2026/06/cdk-mixins-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-13 13:38:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.infoq.com/news/2026/06/cdk-mixins-aws/mposable-abstractions-for-aws-resources/\">AWS recently announced CDK Mixins</a>, a new AWS CDK feature that lets developers add reusable capabilities like security, monitoring, and configuration to AWS resources. Mixins work across different construct types, making infrastructure code more flexible and reusable.</p>\n   <p><a href=\"https://www.linkedin.com/in/michael-kaiser-jr/\">Michael Kaiser</a>, senior software development engineer at AWS, and <a href=\"https://www.linkedin.com/in/momo-kornher-881328b2/\">Momo Kornher</a>, solutions architect at AWS, write:</p>\n   <blockquote>\n    <p>CDK Mixins represent a fundamental shift in how we think about infrastructure abstractions. By decoupling capabilities from construct implementations, Mixins give you the freedom to compose exactly the infrastructure you need, whether you are using L1 constructs for access to new CloudFormation resources, L2 constructs for convenience, or custom constructs for enterprise requirements.</p>\n   </blockquote>\n   <p>The <a href=\"https://github.com/aws/aws-cdk\">AWS Cloud Development Kit (CDK)</a> is an open-source infrastructure-as-code framework for provisioning cloud resources through AWS CloudFormation. The CDK relies on modular, reusable components organized into three levels: L1 maps directly to CloudFormation, L2 adds higher-level abstractions and defaults, and L3 combines resources into reusable patterns. This creates a trade-off between access to new AWS features and higher-level abstractions, often forcing teams to heavily customize or rebuild constructs.</p>\n   <p>While Kaiser and Kornher claimed on the AWS blog in late May to be \"excited to announce CDK Mixins\", the cloud provider announced the <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/03/aws-cdk-mixins/\">general availability of the new feature earlier in March</a>.</p>\n   <p>CDK Mixins are built into <code>aws-cdk-lib</code> and use the same service imports developers already use, working across L1, L2, and L3 constructs. Explaining the difference with <a href=\"https://docs.aws.amazon.com/cdk/v2/guide/aspects.html\">CDK Aspects</a>, a way to apply an operation to all constructs in a given scope, Kaiser and Kornher add:</p>\n   <blockquote>\n    <p>Mixins and Aspects are complementary. Mixins apply features immediately to specific constructs, while Aspects enforce rules broadly across a scope during synthesis. A common pattern is to use Mixins to configure resources and Aspects to validate that the configuration is correct.</p>\n   </blockquote>\n   <p>Previously, teams had to choose between direct access to new AWS features via L1 constructs and the convenience of L2 abstractions, often requiring additional customization to meet security and compliance requirements. Monica Colangelo, head of hyperscaler operations at ReeVo, <a href=\"https://www.linkedin.com/posts/monicacolangelo_aws-cdk-mixins-is-now-generally-available-share-7438591792855433216--FDy\">explains the benefits of Mixins</a>:</p>\n   <blockquote>\n    <p>Think about what happens when AWS releases a new feature on any service. The L1 construct (CfnBucket) supports it immediately because L1s are auto-generated from CloudFormation specs. The L2 construct (Bucket), the one with nice defaults and convenience methods (...), won't support it for weeks or months until someone on the CDK team writes the abstraction. So until now, you either used L2 and waited, or dropped to L1 and manually configured everything you were getting for free. Not ideal. Mixins changes this. You can use an L1 construct for day-one access and then chain on the behaviors you need (...) The boundary between L1 and L2 just got a lot blurrier.</p>\n   </blockquote>\n   <p>CDK Mixins allow developers to add reusable features and policies to constructs with a .with() syntax, making infrastructure easier to customize, secure, and maintain while preserving access to new capabilities. Corey Quinn, chief cloud economist at The Duckbill Group, writes in his <a href=\"https://www.lastweekinaws.com/newsletter/\">newsletter</a>:</p>\n   <blockquote>\n    <p>CDK now has Mixins, because L1, L2, and L3 constructs apparently weren't enough construct types to confuse newcomers. Now you can compose abstractions across all three, which sounds great until you realize you're writing TypeScript to generate YAML to provision JSON to summon God. Somewhere, a Terraform user is laughing into their coffee.</p>\n   </blockquote>\n   <p>The <a href=\"https://github.com/aws/aws-cdk/tree/main/packages/aws-cdk-lib#mixins\">CDK Mixins documentation</a> is available on GitHub.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces CDK Mixins for Composable Infrastructure Abstractions\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/cdk-mixins-aws/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781329080000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 宣布 CDK Mixins 正式可用，该新特性允许开发者使用 .with() 语法，在 L1、L2 和 L3 构造中组合安全、监控等可复用能力。",
+  "oneSentenceSummary": "AWS 宣布 CDK Mixins 正式可用，该新特性允许开发者使用 .with() 语法，在 L1、L2 和 L3 构造中组合安全、监控等可复用能力。",
+  "summary": "本文报道了 AWS CDK Mixins 的正式可用。该新特性允许开发者将安全策略、监控、配置等可复用能力附加到任何 CDK 构造上，无论其抽象层级（L1、L2 或 L3）如何。该特性使用 .with() 语法，并内置于 aws-cdk-lib 中。文章解释了 Mixins 与 CDK Aspects 的区别（Mixins 将特性即时应用于特定构造；Aspects 在合成阶段广泛地强制执行规则）。文中包含了 AWS 工程师的评论、一位超大规模云服务商运营负责人对该特性的赞扬（认为它模糊了 L1 和 L2 构造之间的界限），以及 Corey Quinn 关于复杂性的质疑。文章还指出，虽然该特性于 5 月底宣布，但实际上早在 2026 年 3 月就已正式可用。",
+  "mainPoints": [
+    {
+      "point": "CDK Mixins 将能力与构造实现解耦，实现跨层级复用。",
+      "explanation": "Mixins 允许开发者使用 .with() 语法为任何构造（L1、L2、L3）添加安全、监控等特性，解决了此前在尽早使用新 AWS 特性与享受高层级抽象之间必须做出取舍的问题。"
+    },
+    {
+      "point": "Mixins 与 Aspects 是互补而非竞争的特性。",
+      "explanation": "Mixins 将特性即时应用于特定构造，而 Aspects 则在合成阶段跨作用域广泛地强制执行规则。常见的模式是使用 Mixins 配置资源，使用 Aspects 验证正确性。"
+    },
+    {
+      "point": "该特性模糊了 L1 与 L2 构造之间的界限。",
+      "explanation": "此前，团队必须在 L1（即时访问新特性，但需手动配置）和 L2（便捷，但支持延迟）之间做出选择。Mixins 允许使用 L1 构造实现第一时间接入，同时链式组合 L2 类似的行为。"
+    }
+  ],
+  "keyQuotes": [
+    "CDK Mixins 代表了我们对基础设施抽象思考方式的根本性转变。通过将能力与构造实现解耦，Mixins 赋予你自由，去组合出你真正需要的基础设施。",
+    "Mixins 和 Aspects 是互补的。Mixins 将特性即时应用于特定构造，而 Aspects 在合成阶段跨作用域广泛地强制执行规则。",
+    "L1 和 L2 之间的界限变得模糊多了。"
+  ],
+  "tags": [
+    "AWS CDK",
+    "基础设施即代码",
+    "云计算",
+    "开发者工具",
+    "CloudFormation"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 554,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781329080000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-13 13:38:00"
+}

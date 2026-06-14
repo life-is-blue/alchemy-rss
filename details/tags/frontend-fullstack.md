@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-14 06:23:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-14 08:31:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -702,6 +702,30 @@
 
 
 
+### [阿拉伯字体渲染的奇妙体验及其技术债务：交互式入门指南](https://lr0.org/blog/p/arabic/)
+
+2026-06-13 20:40:16 | 标签: 字体排印, Unicode, Web 开发, 国际化, OpenType
+
+> 文章从一个真实的前端 bug——阿拉伯文本无法正确两端对齐——入手，以此为引子，全面探索了阿拉伯排印技术背后的技术债务。文章解释了核心的结构性事实：阿拉伯语始终是连笔的，需要在渲染时由字形引擎为每个字母选择正确的位变形式（独立、首、中、尾）。作者详述了抄写员们历史中发展出的解决方案，特别是使用 kashida（延展笔画）来实现两端对齐，这一体系由 10 世纪的伊本·穆格莱整理成文。随后，文章追溯了阿拉伯语在印刷和数字媒体中的痛苦历史，从 1514 年第一套粗糙的活字，到为莱诺排铸机设计的简化阿拉伯字体的妥协，直至现代数字时代。文章涵盖了 Unicode 中阿拉伯语呈现形式的遗留问题，这会导致无...
+
+
+
+### [Node.js-中的-Saga-模式：如何回滚跨微服务的分布式事务](https://www.freecodecamp.org/news/the-saga-pattern-in-node-js-roll-back-distributed-transactions-across-microservices/)
+
+2026-06-13 14:45:43 | 标签: 微服务, 分布式系统, Node.js, NestJS, gRPC
+
+> 本文是一份详细的、动手实践的指南，讲解如何在 Node.js 中实现 Saga 模式以管理跨微服务的分布式事务。文章以一个实际的“入驻机构”为例，该流程需要协调 `agency-service` 和 `auth-service` 两个服务。作者主张采用编排方式而非编排方式，并提供了编排器、参与者服务、补偿逻辑和状态管理的完整实现。关键主题包括：逐步的 Saga 流程、详细的状态机、参与者侧的幂等性检查、稳健补偿的规则，以及处理补偿失败的策略。文章还涵盖了通过专用数据库表进行追踪和可观测性的内容，并提供了关键组件的代码片段，如编排器的主循环和参与者的预配服务。最后，文章总结了权衡取舍和经验教训，...
+
+
+
+### [如何使用-JavaScript-构建基于浏览器的-PDF-裁剪工具](https://www.freecodecamp.org/news/build-pdf-crop-tool-javascript/)
+
+2026-06-13 14:37:43 | 标签: JavaScript, PDF 处理, 浏览器工具, Web 开发, 教程
+
+> 本文提供了一个使用 JavaScript 构建基于浏览器的 PDF 裁剪工具的分步教程。它涵盖了完整的工作流程：上传 PDF、预览页面、可视化选择裁剪区域、配置裁剪设置（坐标、预设比例、页面选择）、使用 PDF-lib 库应用裁剪，以及生成/下载裁剪后的 PDF。教程强调所有处理都在浏览器本地完成，确保了隐私性并消除了对后端服务器的需求。文中包含了关键功能的代码片段，例如读取裁剪坐标、应用自定义坐标、支持预设比例、选择页面以及验证裁剪值。文章还讨论了实际应用场景，如处理电商运单和扫描文档，并强调了需要避免的常见错误。
+
+
+
 ### [如何使用-HTML、CSS-和-JavaScript-构建一个文本大小写转换工具](https://www.freecodecamp.org/news/how-to-build-a-case-converter-tool/)
 
 2026-06-12 15:51:10
@@ -1332,13 +1356,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1488,13 +1512,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2988,13 +3012,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4698,13 +4722,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

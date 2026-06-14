@@ -1,23 +1,27 @@
-> **更新时间**: 2026-06-11 08:34:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-14 08:31:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [美国政府要求-Anthropic-暂停外国公民访问-Fable-5-和-Mythos-5](https://x.com/AnthropicAI/status/2065597531644743999)
+
+2026-06-13 08:50:03 | 标签: AI 监管, Anthropic, 出口管制, 国家安全, Fable 5
+
+> Anthropic 官方账号发布重大消息：美国政府依据国家安全权限，发布出口管制指令，要求暂停所有外国公民（无论身处美国境内还是境外，包括 Anthropic 的外籍员工）对 Fable 5 和 Mythos 5 的访问。为遵守规定，Anthropic 必须立即为所有客户禁用这些模型。其他 Claude 模型的访问不受影响。Anthropic 对此表示歉意，并认为这是一场误会，正在努力尽快恢复访问。声明中附有完整公告的链接。
+
+
+
 ### [Karpathy-评-Claude-Fable-5：AI-能力的重大阶跃](https://x.com/karpathy/status/2064409694761054332)
 
-2026-06-10 02:10:00 | 标签: Claude Fable 5, Andrej Karpathy, AI 模型评测, LLM, 软件开发
-
-> Andrej Karpathy 对新发布的 Claude Fable 5 模型进行了定性评测。他确认该模型与 Mythos 底层相同，但增加了安全防护措施。虽然基准测试已显示其达到 SOTA 水平，但他强调，其定性提升是一次重大阶跃，堪比从 Claude 4 到 4.5 的跨越。他特别指出该模型在长时间、高难度的解题任务上表现卓越，能够处理比以往更具雄心的任务。他还反思了更广泛的影响，引用杰文斯悖论来解释自己日益增长的软件需求——该模型能以空前的便捷性创建解释器、可视化工具、仪表盘和定制化应用。
+2026-06-10 02:10:00
 
 
 
 ### [Anthropic-发布-Claude-Fable-5：面向大众的-Mythos-级模型](https://x.com/claudeai/status/2064394146916229443)
 
-2026-06-10 01:08:13 | 标签: Claude Fable 5, Anthropic, AI 模型发布, Mythos 级, AI 安全
-
-> Anthropic 的官方 Claude 账号宣布发布 Claude Fable 5，一款全新的 Mythos 级 AI 模型。该模型的能力超越了 Anthropic 此前向公众开放的任何模型，并且经过专门设计和安全测试，可面向大众使用。这是该公司一次重大的产品发布。
+2026-06-10 01:08:13
 
 
 
@@ -255,13 +259,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
