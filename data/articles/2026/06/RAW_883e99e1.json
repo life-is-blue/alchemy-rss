@@ -1,0 +1,55 @@
+{
+  "id": "RAW_883e99e1",
+  "title": "AWS 为 ElastiCache for Valkey 引入持久化存储选项",
+  "url": "https://www.infoq.com/news/2026/06/elasticache-valkey-durability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-14 13:13:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has recently introduced <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/durability-amazon-elasticache/\">durability for Amazon ElastiCache for Valkey</a>, enabling reliable data retention across failures and expanding support beyond caching to persistent workloads. The feature offers new options that prioritize either minimizing data loss or maintaining lower write latency, expanding the range of use cases supported by the Redis fork, including AI memory, session storage, and real-time applications.</p>\n   <p><a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/durability.html\">ElastiCache for Valkey</a> now supports both caching and persistent data workloads. Developers can choose synchronous durability to minimize data loss during failures, or asynchronous durability for lower latency. Traditional ElastiCache without durability remains the default and cheapest option for caching scenarios where data can be rebuilt from source. <a href=\"https://www.linkedin.com/in/juleslasarte/\">Jules Lasarte</a>, software engineer at AWS, and <a href=\"https://www.linkedin.com/in/kkonaparthi1/\">Karthik Konaparthi</a>, principal product manager at AWS, explain:</p>\n   <blockquote>\n    <p>Many organizations find that Multi-AZ replication and automatic failover in ElastiCache meet their resilience requirements, but as customers increasingly adopt ElastiCache as a persistent data store, as well as a cache, data loss becomes a primary concern.</p>\n   </blockquote>\n   <p>ElastiCache can now be used for persistent data workloads in addition to caching, including AI agent memory, workflow state, RAG knowledge bases, payment tokenization, and inventory management.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/06/elasticache-valkey-durability/news/2026/06/elasticache-valkey-durability/en/resources/1DBBLOG-5680-1-1780636707690.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/elasticache-valkey-durability/en/resources/1DBBLOG-5680-1-1780636707690.png\" rel=\"share\"></p>\n   <p><em>Source: AWS blog</em></p>\n   <p>While both durability modes maintain microsecond-level read latency, synchronous writes are acknowledged only after data has been replicated across at least two AZs, reducing the risk of data loss at the cost of higher write latency. Asynchronous writes are acknowledged before replication completes, preserving lower write latency but with a risk of losing up to 10 seconds of recent data. Lasarte and Konaparthi add:</p>\n   <blockquote>\n    <p>To bound potential data loss with asynchronous writes, ElastiCache enforces a durability buffer of up to 10 seconds. The primary node continuously tracks the age of the oldest write that has been accepted but not yet persisted to the Multi-AZ transactional log, and publishes this value to Amazon CloudWatch as the DurabilityLag metric. (...) If the buffer grows beyond 10 seconds, for example because of transient network congestion to the transactional log, the primary temporarily rejects incoming write commands until it catches up.</p>\n   </blockquote>\n   <p>Read latency remains unchanged, while writes may be temporarily rejected if replication lag grows too large. Normal operation resumes automatically once the cluster catches up, with the team recommending clients such as <a href=\"https://github.com/valkey-io/valkey-glide\">Valkey GLIDE</a> to enable automatic retry and exponential backoff. Corey Quinn, chief cloud economist at The Duckbill Group, warns in his <a href=\"https://www.lastweekinaws.com/newsletter/\">newsletter</a>:</p>\n   <blockquote>\n    <p>Once again I am begging you to not confuse \"cache\" with \"primary data store.\" Once again, you will ignore me, as some lessons can only be learned and internalized via SLA breaches.</p>\n   </blockquote>\n   <p>While ElastiCache supports Valkey, Memcached, and Redis, the new feature is available only for Valkey. On Reddit, developers like the new option but question whether it <a href=\"https://www.reddit.com/r/aws/comments/1tuxkcy/announcing_durability_for_amazon_elasticache_for/\">supersedes Amazon MemoryDB</a>, the Redis-compatible in-memory database designed for applications requiring low-latency and durable data storage.</p>\n   <p>Durability for ElastiCache is available in all regions starting with Valkey 9.0.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces Durable Storage Option for ElastiCache for Valkey\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/elasticache-valkey-durability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781413980000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 为 ElastiCache for Valkey 引入持久化功能，通过同步或异步复制选项支持持久化数据工作负载。",
+  "oneSentenceSummary": "AWS 为 ElastiCache for Valkey 引入持久化功能，通过同步或异步复制选项支持持久化数据工作负载。",
+  "summary": "AWS 宣布为 Amazon ElastiCache for Valkey 推出新的持久化功能，使其既能作为缓存，也能作为持久化数据存储。该功能提供两种模式：同步持久化通过在确认前将写入复制到至少两个可用区，从而最大限度地减少数据丢失；异步持久化则保持较低的写入延迟，但可能丢失最多 10 秒的近期数据。文章解释了其中的权衡，包括用于监控异步写入的新 DurabilityLag 指标，并指出读取延迟仍保持在微秒级别。文章还强调了 AI 智能体记忆、会话存储和实时应用等用例，同时提醒该功能仅适用于 Valkey，不适用于 Memcached 或 Redis。行业评论员 Corey Quinn 警告不要将缓存与主数据存储混淆，社区讨论则质疑其与 Amazon MemoryDB 的对比。",
+  "mainPoints": [
+    {
+      "point": "ElastiCache for Valkey 现在支持两种持久化模式的持久化数据工作负载。",
+      "explanation": "同步持久化通过在确认前将写入复制到至少两个可用区，从而最大限度地减少数据丢失；异步持久化则提供更低的写入延迟，但代价是可能丢失最多 10 秒的数据。"
+    },
+    {
+      "point": "该功能将 ElastiCache 的用例从缓存扩展到 AI 记忆、会话存储和实时应用。",
+      "explanation": "这使得开发者能够使用单一服务同时处理缓存和持久化存储，简化了 AI 智能体记忆和支付令牌化等工作负载的架构。"
+    },
+    {
+      "point": "异步持久化包含一个 10 秒的缓冲区和用于监控复制延迟的新 CloudWatch 指标。",
+      "explanation": "DurabilityLag 指标跟踪最旧的未持久化写入的时长，如果延迟超过 10 秒，写入可能会被暂时拒绝，一旦集群追赶上来便会自动恢复。"
+    },
+    {
+      "point": "行业专家警告，尽管新增了持久化选项，但仍不应将缓存视为主数据存储。",
+      "explanation": "Corey Quinn 警告说，关于缓存与主数据存储区别的教训通常是通过 SLA 违规才学到的，这表明持久化并未改变根本的设计权衡。"
+    }
+  ],
+  "keyQuotes": [
+    "我再次恳求你们，不要把 '缓存' 和 '主数据存储' 混为一谈。再一次，你们会无视我，因为有些教训只能通过 SLA 违规才能学到并内化。",
+    "许多组织发现 ElastiCache 的多可用区复制和自动故障转移能够满足其弹性需求，但随着客户越来越多地将 ElastiCache 同时用作持久化数据存储和缓存，数据丢失成为了一个主要担忧。"
+  ],
+  "tags": [
+    "AWS",
+    "Valkey",
+    "ElastiCache",
+    "数据库",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 476,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781413980000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-14 13:13:00"
+}

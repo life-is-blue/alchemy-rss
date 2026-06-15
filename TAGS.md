@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-15 06:25:31 | [返回首页](/README.md)
+**更新时间**: 2026-06-15 08:33:20 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12813)
+- [AI & 大模型](#ai-llm) (12827)
 - [软件架构](#architecture) (21)
 - [前端与全栈](#frontend-fullstack) (851)
-- [DevOps](#devops) (600)
+- [DevOps](#devops) (601)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5971)
+- [其他](#other) (5975)
 
 
 ---
@@ -43,7 +43,7 @@
 - [从透明开发到系统工程：AgentScope-2.0-发布](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501135&idx=1&sn=0b96d8e21b27a20f60c423657f2bca84) - AI 精选
 - [致超级个体-|-To-The-Crazy-Ones](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649108669&idx=1&sn=c9bb3541cba65b524992eda339f32e83) - AI 精选
 
-- [查看全部 12813 篇...](/details/tags/ai-llm.md)
+- [查看全部 12827 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 600 篇...](/details/tags/devops.md)
+- [查看全部 601 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5971 篇...](/details/tags/other.md)
+- [查看全部 5975 篇...](/details/tags/other.md)
 
 
