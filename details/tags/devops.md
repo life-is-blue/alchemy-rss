@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-15 08:33:20 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-15 11:05:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -566,9 +566,7 @@
 
 ### [AWS-为-ElastiCache-for-Valkey-引入持久化存储选项](https://www.infoq.com/news/2026/06/elasticache-valkey-durability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-14 13:13:00 | 标签: AWS, Valkey, ElastiCache, 数据库, 云原生 / DevOps
-
-> AWS 宣布为 Amazon ElastiCache for Valkey 推出新的持久化功能，使其既能作为缓存，也能作为持久化数据存储。该功能提供两种模式：同步持久化通过在确认前将写入复制到至少两个可用区，从而最大限度地减少数据丢失；异步持久化则保持较低的写入延迟，但可能丢失最多 10 秒的近期数据。文章解释了其中的权衡，包括用于监控异步写入的新 DurabilityLag 指标，并指出读取延迟仍保持在微秒级别。文章还强调了 AI 智能体记忆、会话存储和实时应用等用例，同时提醒该功能仅适用于 Valkey，不适用于 Memcached 或 Redis。行业评论员 Corey Quinn 警告...
+2026-06-14 13:13:00
 
 
 
