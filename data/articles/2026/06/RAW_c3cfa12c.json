@@ -1,0 +1,50 @@
+{
+  "id": "RAW_c3cfa12c",
+  "title": "用 AI 构建自愈型 CI/CD 流水线",
+  "url": "https://www.freecodecamp.org/news/build-a-self-healing-ci-cd-pipeline-with-ai/",
+  "date": "2026-06-15 20:24:34",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Learn how how to build a fully autonomous, self-healing CI/CD pipeline from scratch with a new course we just posted on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel. Farzeen Ali developed this course.</p>\n  <p>In this hands-on project, you will learn to bridge the gap between DevOps and automation by integrating GitHub, OpenAI, and n8n to create a workflow that works for you even when you're offline. Farzeen guides you through every step of the implementation: from setting up your development environment and building a robust Node.js/Express application, to implementing a sophisticated AI-driven log analysis system that automatically detects failures, generates patches, and opens pull requests on your behalf.</p>\n  <p>The course goes beyond the basics by showing you how to secure your automation using GitHub Secrets, configure N8N webhooks, and ensure your system is production-ready. You will also learn how to set up automated email notifications, keeping your entire team in the loop without you ever having to lift a finger.</p>\n  <p>By the end of this tutorial, you will have the knowledge to reduce downtime and spend more time building great features. Watch the full course on the <a href=\"https://youtu.be/vj68el9hRvU\">freeCodeCamp.org YouTube channel</a> (1-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vj68el9hRvU\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 freeCodeCamp 的一门新课程，教授如何使用 GitHub、OpenAI 和 n8n 构建自愈型 CI/CD 流水线。",
+  "oneSentenceSummary": "本文介绍了 freeCodeCamp 的一门新课程，教授如何使用 GitHub、OpenAI 和 n8n 构建自愈型 CI/CD 流水线。",
+  "summary": "这是一门时长 1 小时的视频课程预告，由 Farzeen Ali 开发，将在 freeCodeCamp YouTube 频道上线。该课程是一个动手实践项目，引导学习者构建一个完全自主、自愈的 CI/CD 流水线。课程涵盖集成 GitHub、OpenAI 和 n8n，以创建一个能自动检测故障、生成补丁并创建拉取请求的工作流。课程还包括使用 GitHub Secrets 设置安全自动化、配置 n8n webhooks 以及实现自动邮件通知。目标是帮助开发者减少停机时间并实现 DevOps 任务自动化。",
+  "mainPoints": [
+    {
+      "point": "该课程教授使用 AI 构建自愈型 CI/CD 流水线。",
+      "explanation": "它集成了 GitHub、OpenAI 和 n8n，能够自动检测故障、生成补丁并创建拉取请求，从而减少人工干预。"
+    },
+    {
+      "point": "该项目是动手实践型，涵盖生产级配置。",
+      "explanation": "学习者将构建一个 Node.js/Express 应用，实现 AI 驱动的日志分析，并通过 GitHub Secrets 和 webhooks 保障系统安全。"
+    },
+    {
+      "point": "课程包含自动化的团队通知功能。",
+      "explanation": "它展示了如何设置邮件通知，让团队无需手动操作即可随时了解情况。"
+    }
+  ],
+  "keyQuotes": [
+    "在这个动手项目中，你将学习如何通过集成 GitHub、OpenAI 和 n8n 来弥合 DevOps 与自动化之间的差距，创建一个即使在你离线时也能为你工作的工作流。"
+  ],
+  "tags": [
+    "CI/CD",
+    "DevOps",
+    "AI 自动化",
+    "OpenAI",
+    "n8n"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 189,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781526274000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-15 20:24:34"
+}

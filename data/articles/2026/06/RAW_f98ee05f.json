@@ -1,0 +1,51 @@
+{
+  "id": "RAW_f98ee05f",
+  "title": "借助 Ensemble AI 人才壮大 Cloudflare AI 团队",
+  "url": "https://blog.cloudflare.com/ensemble-ai-talent-joins-cloudflare/",
+  "date": "2026-06-15 22:00:01",
+  "author": "Alex Reneau",
+  "siteName": "The Cloudflare Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Today, we’re excited to share that key members of the team at Ensemble AI are joining Cloudflare to help accelerate our work in AI infrastructure and make it easier for developers to run powerful AI models efficiently at scale.</p>\n  <p>Ensemble AI, founded in 2023 in San Francisco, has spent the last few years focused on one of the most important challenges in AI: making large models faster, smaller, and more cost-effective to serve, without sacrificing quality. The team has developed new approaches to model compression and efficient inference that are designed to reduce the memory, compute, and deployment overhead of large language models and multimodal architectures.</p>\n  <p>As AI becomes a core part of how developers build applications, the economics of inference matter more than ever. Models are getting larger; workloads are becoming more dynamic. And customers increasingly expect AI to be available everywhere: globally distributed, fast, reliable, and affordable. Bringing the Ensemble AI team into Cloudflare strengthens our ability to make that possible.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"incorporating-ensembles-expertise\">Incorporating Ensemble’s expertise&nbsp;</h3>\n  </div>\n  <p>The team at Ensemble AI has focused on preserving the structure inside modern AI models while reducing the cost of running them. Instead of treating model efficiency as only a <a href=\"https://www.cloudflare.com/learning/ai/what-is-quantization/\" target=\"_blank\" rel=\"noopener noreferrer\"><u>quantization</u></a> or hardware problem, Ensemble has explored new model building blocks that can make neural networks more compact and efficient at the architectural level.</p>\n  <p>A core part of this work is <a href=\"https://github.com/ensemble-core/ndlinear\" target=\"_blank\" rel=\"noopener noreferrer\"><u>NdLinear</u></a>, a drop-in replacement for standard linear layers in transformer models that operates directly on multidimensional activations rather than flattening structure away. This enables models to preserve meaningful axes, such as heads, channels, spatial dimensions, or other structured representations, while reducing parameter count and compute. Ensemble has also developed NdLinear-LoRA, an efficient adaptation method designed to reduce the trainable parameters required for fine-tuning large models.</p>\n  <p>These approaches complement other efficiency techniques, including quantization and vector quantization. Together, they point toward a future where developers can run capable AI models with substantially lower memory, compute, and cost requirements.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"making-ai-inference-more-efficient\">Making AI inference more efficient</h3>\n  </div>\n  <p>Cloudflare Workers AI gives developers access to serverless GPU-powered inference on Cloudflare’s global network. As developers build more AI-native applications, the ability to serve models efficiently becomes a critical part of the platform.</p>\n  <p>Inference cost is one of the biggest barriers to scaling AI applications. Every improvement in model size, memory footprint, throughput, and GPU utilization can make AI more accessible to developers and more economical for customers. This is especially important as AI workloads expand beyond simple text generation into agents, multimodal models, personalization, fine-tuning, retrieval, and reinforcement learning.</p>\n  <p>We are deepening our investment in the core machine learning capabilities needed to make Workers AI faster, more flexible, and more cost-efficient. This builds on top of our existing work on improving model efficiency, including our inference engine <a href=\"https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine/\"><u>Infire</u></a>, tensor compression techniques like <a href=\"https://blog.cloudflare.com/unweight-tensor-compression/\"><u>Unweight</u></a>, and our <a href=\"https://blog.cloudflare.com/high-performance-llms/\"><u>platform for running extra large language models</u></a>. The team will focus on improving the economics of serving large language models and other advanced AI architectures, with an emphasis on model efficiency, GPU utilization, and scalable deployment.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"building-for-the-next-generation-of-ai-workloads\">Building for the next generation of AI workloads</h3>\n  </div>\n  <p>AI infrastructure is entering a new phase. Developers no longer need only access to models; they need infrastructure that can run models reliably, affordably, and close to users. They need the ability to experiment with different model sizes, fine-tuning approaches, and deployment patterns without being blocked by cost or operational complexity.</p>\n  <p>Cloudflare is uniquely positioned to help solve this. Our global network, developer platform, and serverless architecture give us the foundation to bring AI closer to where applications already run. The Workers AI Machine Learning Engineering team will help us improve the efficiency layer underneath that experience.</p>\n  <p>By combining Cloudflare’s global infrastructure with Ensemble’s work in model compression and efficient architectures, we can continue building a platform where developers can deploy AI applications with lower cost, better performance, and less operational overhead.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"whats-next\">What’s next</h3>\n  </div>\n  <p>Together, we will continue building the infrastructure needed to make AI more efficient, accessible, and useful for developers everywhere. Our goal is simple: help developers run powerful AI workloads at global scale while improving the economics of inference across the Cloudflare platform. If you want to join us in our mission, check out <a href=\"https://www.cloudflare.com/careers/jobs/\" target=\"_blank\" rel=\"noopener noreferrer\"><u>our careers page</u></a>.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://cf-assets.www.cloudflare.com/zkvhlag99gkb/IYHFX88nVQ5KvJ2RqEkJW/7bbe337431623665790bda509375b96e/image2.png\" alt=\"\" class=\"kg-image\" loading=\"lazy\">\n  </figure>\n  <p></p>\n </body>\n</html>",
+  "aiSummary": "Cloudflare 宣布 Ensemble AI 的核心成员将加入公司，以加速其在 AI 基础设施方面的工作，重点聚焦模型压缩与高效推理，从而在 Workers AI 上降低成本并提升性能。",
+  "oneSentenceSummary": "Cloudflare 宣布 Ensemble AI 的核心成员将加入公司，以加速其在 AI 基础设施方面的工作，重点聚焦模型压缩与高效推理，从而在 Workers AI 上降低成本并提升性能。",
+  "summary": "Cloudflare 宣布 Ensemble AI 的核心成员将加入公司，以加速其 AI 基础设施的建设。Ensemble AI 成立于 2023 年，专注于通过模型压缩和高效推理的新方法（包括 NdLinear——一种 Transformer 中标准线性层的即插即用替代方案），使大型模型的服务速度更快、体积更小、成本效益更高。该团队的专业知识将应用于改善在 Cloudflare 的 Workers AI 平台上服务大型语言模型及其他先进 AI 架构的经济性，并基于现有的 Infire 推理引擎和 Unweight 张量压缩等工作持续发展。其目标是让全球开发者能够更高效、更易获取且更负担得起地使用 AI 推理。",
+  "mainPoints": [
+    {
+      "point": "Ensemble AI 团队为 Cloudflare 带来了模型压缩和高效推理方面的专业知识。",
+      "explanation": "该团队开发了 NdLinear，这是一种 Transformer 中标准线性层的即插即用替代方案，在减少参数和计算量的同时保留了多维结构。"
+    },
+    {
+      "point": "此次人才引进旨在改善 Cloudflare Workers AI 平台上 AI 推理的经济性。",
+      "explanation": "推理成本是扩展 AI 应用的主要障碍；在模型大小、内存占用和 GPU 利用率方面的改进将使 AI 更易于获取。"
+    },
+    {
+      "point": "Cloudflare 正在为下一代 AI 工作负载（包括智能体、多模态模型和微调）构建平台。",
+      "explanation": "该平台将专注于让开发者能够尝试不同的模型大小和部署模式，而不受成本或复杂性的阻碍。"
+    }
+  ],
+  "keyQuotes": [
+    "Ensemble 并未将模型效率仅仅视为量化或硬件问题，而是探索了新的模型构建模块，这些模块可以在架构层面使神经网络更加紧凑和高效。",
+    "推理成本是扩展 AI 应用的最大障碍之一。"
+  ],
+  "tags": [
+    "AI 基础设施",
+    "模型压缩",
+    "高效推理",
+    "LLM",
+    "Cloudflare"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 699,
+  "domain": "blog.cloudflare.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_903ae3",
+  "sourceName": "The Cloudflare Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781532001000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-15 22:00:01"
+}
