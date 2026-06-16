@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-16 08:39:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-16 11:05:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -704,9 +704,7 @@
 
 ### [AWS-上无服务器-Java-的实用性能调优](https://www.infoq.com/presentations/java-aws-serverless/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 21:12:00 | 标签: Serverless, AWS Lambda, Java, 性能优化, 云原生 / DevOps
-
-> AWS Hero Vadym Kazulkin 探讨了在 AWS Lambda 上运行 Java 的关键挑战：冷启动延迟和内存占用。他解释了冷启动的生命周期（下载代码、启动 JVM、执行静态初始化器，然后执行处理器），并演示了虽然热启动很快（p90 约 7 毫秒），但冷启动可能超过 3 秒。演讲的核心涵盖了两种优化策略：AWS SnapStart 和 GraalVM 原生镜像。对于 SnapStart，他详细介绍了它如何在部署期间创建已初始化 JVM 的快照，从而减少恢复时间。他强调了“预热”这一关键技术——使用 CRaC 钩子将延迟初始化（例如 HTTP 客户端、JSON 编组器）预加载到快...
+2026-06-15 21:12:00
 
 
 

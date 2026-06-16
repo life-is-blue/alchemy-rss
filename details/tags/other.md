@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-16 08:39:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-16 11:05:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -14185,9 +14185,7 @@
 
 ### [Spring-Boot-4.1-新增-gRPC-自动配置、SSRF-防护与-Kotlin-2.3-支持](https://www.infoq.com/news/2026/06/spring-boot-4-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 13:00:00 | 标签: Spring Boot, Java, gRPC, SSRF, Kotlin
-
-> 本文报道了 Broadcom 发布的 Spring Boot 4.1 版本。主要新特性包括 Spring gRPC（服务端和客户端）的自动配置、通过 `InetAddressFilter` 实现的 HTTP 客户端 SSRF 防护，以及升级至 Kotlin 2.3。该版本还引入了懒加载 JDBC 连接以提升启动速度、`@Async` 方法的自动上下文传播，以及多项 OpenTelemetry 增强功能，例如可切换的 `management.opentelemetry.enabled` 属性和 OTLP 示例支持。其他值得注意的变化包括 Redis 监听器端点的自动配置、`/actuator/i...
+2026-06-15 13:00:00
 
 
 
@@ -35857,11 +35855,11 @@
 
 
 
-### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-29T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 

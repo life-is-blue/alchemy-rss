@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-16 08:39:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-16 11:05:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [AI-智能体工具设计：有效与无效的模式---MachineLearningMastery.com](https://machinelearningmastery.com/ai-agent-tool-design-what-works-and-what-doesnt/)
 
-2026-06-15 20:51:23 | 标签: AI Agent, 工具设计, LLM, 提示词工程, 开发者工具
-
-> 本文有力地论证了大多数 AI 智能体失败的根本原因不在于模型本身，而在于赋予其使用的工具设计。文章系统地阐述了 AI 智能体工具设计中哪些做法有效、哪些无效。在“有效做法”部分，详细介绍了五种关键模式：单一职责工具、使无效状态不可能的严格模式、定义范围与边界的描述、结构化的可操作错误返回，以及幂等的状态变更操作。在“无效做法”部分，涵盖了五种常见反模式：未经筛选的 API 的薄封装层、将所有工具加载到每个上下文中、静默的部分成功、重叠的工具名称与描述，以及缺少确认闸门的破坏性操作。每种反模式都配有具体的解决方案。文章最后以设计决策总结表收尾，并引用了 Anthropic 关于为智能体编写工具的...
+2026-06-15 20:51:23
 
 
 
@@ -4912,9 +4910,7 @@
 
 ### [一篇搞懂-AI-Coding-Agent-的-Token-成本控制](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802024&idx=1&sn=14ebabcd0d270ae39c6d9cd1d12fca84)
 
-2026-06-15 17:27:00 | 标签: AI 编程, Token 成本优化, AI Agent, 上下文工程, 工程实践
-
-> 文章以腾讯技术工程团队的实际经验为基础，深入分析了 AI Coding Agent 的 Token 成本构成。核心观点是：成本大头并非用户提问本身，而是系统为维持上下文而重复搬运的固定前缀、会话历史、工具定义等。作者提出了一个五层优化模型：1）使用习惯层（单 Session 单任务、压缩历史、完整路径引用等）；2）模型路由层（按任务匹配模型档位、调整推理预算）；3）上下文压缩层（RTK 压缩终端输出、Caveman 压缩 AI 回复、headroom 压缩所有输入、context-mode 压缩工具输出）；4）代码图谱层（Graphify/CodeGraph 减少盲搜）；5）多 Agent 协...
+2026-06-15 17:27:00
 
 
 
@@ -12660,33 +12656,25 @@
 
 ### [“他们坑了我们”：性格冲突导致-Anthropic-模型下线](https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything)
 
-2026-06-15 22:57:33 | 标签: 科技新闻, AI 监管, Anthropic, 地缘政治, AI 安全
-
-> Simon Willison 的这篇博文链接并评论了一篇 Axios 的文章，该文章提供了迄今为止关于美国政府指令暂停 Anthropic 的 Fable 和 Mythos 模型访问权限的最佳幕后报道。这篇 Axios 文章援引了熟悉政府想法的人士和接近 Anthropic 的消息人士，表明性格冲突以及 Anthropic 让政府感到被轻视，是当前争端的重要因素。Willison 强调了文章中的一句关键引述，指出解决方案可能需要 Anthropic 进行“态度调整”，让政府感到“安全、有保障和满意”，而不仅仅是解决技术上的越狱问题。他还指出，关键人物正在与商务部会面，并对问题能迅速解决表示悲观...
+2026-06-15 22:57:33
 
 
 
 ### [Wayfair-如何借助-Cursor-将机器学习模型成本降低-90%（两次！）](https://cursor.com/blog/wayfair)
 
-2026-06-15 20:00:00 | 标签: AI 智能体, AI 编程, LLM, ML 研究, 开发者工具
-
-> 本案例研究详细介绍了 Wayfair 应用研究团队如何利用 Cursor 大幅加速并降低核心电商目录丰富工作流中机器学习研究的成本。该团队需要针对全球最大的家居用品目录验证产品属性标签，但其现有模型在大规模运行时成本过高。通过使用 Cursor 自动化实验循环——构建、执行和评估模型变体——一个五人研究团队在 2025 年 12 月的四天冲刺中测试了 110 个模型变体，将推理成本降低了 94%，同时提高了精确度。2026 年 3 月，他们使用更成熟的框架重复了这一过程，运行了 140 多个实验，并实现了额外 90% 的成本降低。他们成功的关键在于 Cursor 的规模化智能体并行化（20 多...
+2026-06-15 20:00:00
 
 
 
 ### [Import-AI-461：「对齐尚未步入正轨」；FrontierCode；以及合成研究实习生](https://importai.substack.com/p/import-ai-461-alignment-is-not-on)
 
-2026-06-15 19:30:53 | 标签: AI 安全, LLM, AI 基准测试, AI 编程, 多模态 AI
-
-> 本期 Import AI 涵盖了多项关键的 AI 研究进展。来自英国 AI 安全研究所和 Timaeus 的研究人员成立了一家新的非营利组织 Sequent，旨在为超级智能 AI 开发原则性的对齐技术，初始预算为 1 亿至 1.5 亿美元。Cognition 发布了 FrontierCode，这是一个测试代码质量和可合并性的高难度编程基准，Claude Opus 4.8 在最高难度层级上仅获得 13.4% 的分数。研究人员引入了 ChinaHeritaQA，这是一个用于评估视觉语言模型对中国联合国教科文组织世界遗产地文化推理能力的多模态基准，其中开源权重模型的表现已超越人类。小米公布了一个万亿...
+2026-06-15 19:30:53
 
 
 
 ### [预训练以想象，微调以行动：世界-行动模型的崛起](https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/)
 
-2026-06-15 10:01:57 | 标签: AI Agent, World Model, Robotics, VLA, WAM
-
-> 本文对新兴的机器人基础模型范式——World-Action Model（WAM）进行了全面的综述与分析。文章将 WAM 与更成熟的 Vision-Language-Action（VLA）模型进行了对比，后者基于 VLM 主干。核心假设是，WAM 通过利用已经建模了语言如何映射到视觉变化的预训练视频主干，能够更好地弥合限制 VLA 的“语言到行动的具身鸿沟”。作者沿着三个轴组织 WAM 的设计空间：范式（逆动力学、联合预测、仅表征）、行动集成（默认 token、行动即图像、潜在行动）和架构（单体、混合 Transformer、分层）。文章包含一个使用 Google Veo 3.1 的定性实验，以...
+2026-06-15 10:01:57
 
 
 
@@ -42278,121 +42266,91 @@
 
 ### [GitHub-Copilot-CLI-初学者指南：常用斜杠命令概览](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/)
 
-2026-06-16 04:15:34 | 标签: AI 编程, GitHub Copilot, 开发者工具, CLI, 提示词工程
-
-> 本篇 GitHub Copilot CLI 初学者指南系列文章聚焦于斜杠命令，这些命令充当 CLI 内的控制面板。文章解释了输入 '/' 即可显示所有可用命令。随后，文章详细介绍了几个关键命令：'/model' 用于根据能力和成本在不同 AI 模型间切换；'/context' 用于检查 Token 使用情况，'/compact' 用于总结对话并释放上下文空间；'/clear' 用于重置会话；'/resume' 用于恢复之前的会话；'/diff' 用于检查最近的文件更改；'/cwd' 用于更改工作目录；以及 '/reset-allowed-tools' 用于管理工具权限。这篇文章将这些命令定位为...
+2026-06-16 04:15:34
 
 
 
 ### [通过全新开放数据集，加速研究人员和开发者构建多语言-AI](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
 
-2026-06-16 03:17:32 | 标签: 开源, 多语言 AI, 数据集, 开发者工具, AI 编程
-
-> 本文宣布了 GitHub 多语言仓库数据集（GitHub Multilingual Repositories Dataset）的发布。该元数据集覆盖了超过 4000 万个公共仓库中的 8000 多万条分类记录。该数据集使用三种分类器（fastText、gcld3、lingua-py）并附带置信度分数，为 README 文件、评论最多的 Issue 以及评论最多的 Pull Request 提供了语言分类。其设计旨在帮助研究人员发现包含非英语开发者内容的仓库，研究开源项目中的语言代表性，并构建更具包容性的 AI 工具。该数据集以 CC0-1.0 许可在 GitHub 上发布，是微软履行其欧洲数字...
+2026-06-16 03:17:32
 
 
 
 ### [AI-智能体暴露了你从未真正写下的安全检查](https://stackoverflow.blog/2026/06/15/ai-agents-expose-the-security-checks-you-never-actually-wrote/)
 
-2026-06-15 22:58:54 | 标签: AI Agent, LLM, AI 安全, AI 安全, 软件工程
-
-> 本文分析了 2026 年 6 月针对超过 20，000 个 Instagram 账户的攻击事件，其中包括已停用的奥巴马时代白宫账户。攻击者利用 Meta 的 AI 支持助手重置了密码，整个过程既没有利用漏洞，也没有猜测密码。作者认为，这并非 AI 的失误，而是暴露了一种依赖人类自由裁量权（即能察觉异常的支持人员）的安全模型。核心问题是“混淆的代理”模式：LLM 智能体从设计上就无法区分谁有权操作，它会执行任何听起来合理的请求。文章警告，随着智能体接入支付、CRM 及其他业务系统，其破坏半径将成倍增长。文章解释了为何更好的模型无法解决此问题（模型正是攻击者可以控制的部分），并提出了具体的工程修复...
+2026-06-15 22:58:54
 
 
 
 ### [Spring-新闻汇总：Boot、Security、Integration、Modulith-及-Spring-AI-2.0-的补丁版本](https://www.infoq.com/news/2026/06/spring-news-roundup-jun08-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 22:15:00 | 标签: Spring Boot, Spring Security, Spring AI, Spring Modulith, Java
-
-> 这篇来自 InfoQ 的新闻汇总涵盖了 2026 年 6 月 8 日那一周 Spring 生态系统中的一系列动态。文章详细介绍了 Spring Boot 4.1.0、Spring Security 7.1.0、Spring Session 4.1.0、Spring Integration 7.1.0、Spring Modulith 2.1.0、Spring AMQP 4.1.0、Spring for Apache Kafka 4.1.0、Spring LDAP 4.1.0、Spring Vault 4.1.0 以及 Spring gRPC 1.1.0 的补丁版本。文章还宣布了 Spring A...
+2026-06-15 22:15:00
 
 
 
 ### [借助-Ensemble-AI-人才壮大-Cloudflare-AI-团队](https://blog.cloudflare.com/ensemble-ai-talent-joins-cloudflare/)
 
-2026-06-15 22:00:01 | 标签: AI 基础设施, 模型压缩, 高效推理, LLM, Cloudflare
-
-> Cloudflare 宣布 Ensemble AI 的核心成员将加入公司，以加速其 AI 基础设施的建设。Ensemble AI 成立于 2023 年，专注于通过模型压缩和高效推理的新方法（包括 NdLinear——一种 Transformer 中标准线性层的即插即用替代方案），使大型模型的服务速度更快、体积更小、成本效益更高。该团队的专业知识将应用于改善在 Cloudflare 的 Workers AI 平台上服务大型语言模型及其他先进 AI 架构的经济性，并基于现有的 Infire 推理引擎和 Unweight 张量压缩等工作持续发展。其目标是让全球开发者能够更高效、更易获取且更负担得起地...
+2026-06-15 22:00:01
 
 
 
 ### [ArrowJS-达到-1.0，重新定位为智能体时代的首个-UI-框架](https://www.infoq.com/news/2026/06/arrowjs-v1-agentic/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 21:10:00 | 标签: JavaScript, UI 框架, Web 开发, AI 编程, WASM
-
-> 来自 FormKit 的 Justin Schroeder 开发的微型响应式 UI 库 ArrowJS 已发布 1.0 版本，并重新定位为智能体时代的首个 UI 框架。该框架完全基于平台原生特性（JavaScript 模块、标签模板字面量、DOM），体积小于 5kb，无需 JSX 或构建步骤，仅暴露三个函数：reactive、html 和 component。其核心新增功能是一个可选的 WASM 沙箱（`@arrow-js/sandbox`），该沙箱在 QuickJS WebAssembly 环境中运行组件逻辑，无需 iframe 或 eval 即可安全执行不受信任的、由智能体生成的代码。此次...
+2026-06-15 21:10:00
 
 
 
 ### [用-AI-构建自愈型-CI/CD-流水线](https://www.freecodecamp.org/news/build-a-self-healing-ci-cd-pipeline-with-ai/)
 
-2026-06-15 20:24:34 | 标签: CI/CD, DevOps, AI 自动化, OpenAI, n8n
-
-> 这是一门时长 1 小时的视频课程预告，由 Farzeen Ali 开发，将在 freeCodeCamp YouTube 频道上线。该课程是一个动手实践项目，引导学习者构建一个完全自主、自愈的 CI/CD 流水线。课程涵盖集成 GitHub、OpenAI 和 n8n，以创建一个能自动检测故障、生成补丁并创建拉取请求的工作流。课程还包括使用 GitHub Secrets 设置安全自动化、配置 n8n webhooks 以及实现自动邮件通知。目标是帮助开发者减少停机时间并实现 DevOps 任务自动化。
+2026-06-15 20:24:34
 
 
 
 ### [从月球漫步到赛博都市，WBench-测出了世界模型的边界](https://tech.meituan.com/2026/06/12/LongCat-WBench.html)
 
-2026-06-15 19:02:06 | 标签: 世界模型, AI 评测, 交互式视频, 多轮评测, AI 视频生成
-
-> 本文由美团 LongCat 团队撰写，正式发布了 WBench——首个面向交互式视频世界模型的系统性多轮评测基准。文章首先阐述了评测框架的核心设计理念：世界定义、指令集、统一交互接口与评测套件。WBench 包含 289 个测试案例和 1058 个交互轮次，覆盖导航、主体动作、事件编辑和视角切换四种交互方式，支持第一/第三人称视角，并设计了视频质量、设定遵循度、交互遵循度、一致性和物理真实性五个评测维度。团队对 Kling 3.0、HY-World 1.5、Genie 3 等 20 个前沿模型进行了全面评测，得出四个关键洞察：不存在全能模型、导航能力与其他维度脱钩、多轮交互中导航能力雪崩式下降...
+2026-06-15 19:02:06
 
 
 
 ### [云中-AI-治理：架构师实用指南](https://www.infoq.com/articles/governing-ai-cloud-guide/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 19:00:00 | 标签: 云安全, AI 治理, DevSecOps, AWS, IAM
-
-> 本文为云架构师提供了一份关于治理 AI 工作负载的全面实用指南。文章首先阐述了“影子 AI”问题及其带来的攻击面扩大。随后，指南详细介绍了一种多层方法：使用 CASB、服务网格遥测和 API 网关日志进行发现，以找到所有 AI 集成；在数据创建时使用 AWS Macie 和 Amazon Comprehend 等服务进行强制数据分类；通过使用标签控制 AI 训练数据访问的 IAM 策略进行执行；最后，通过将治理嵌入开发者工具和工作流程，使安全路径变得简单易行。文章强调，技术是简单的部分，真正的挑战在于组织协调以及创建自动化、非阻塞式的治理。
+2026-06-15 19:00:00
 
 
 
 ### [进球、切片、全网爆：如何打造一座跑赢热搜的赛事“AI-短视频工厂”？](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520335&idx=1&sn=f93196be715e1b060ad677c9a7705451)
 
-2026-06-15 17:12:00 | 标签: AI 产品与应用, 视频云, 赛事运营, 内容生产, 多模态 AI
-
-> 文章以赛事短视频分发的时效性痛点切入，指出人工剪辑无法满足赛后几分钟内的流量争夺。核心介绍火山引擎 AI MediaKit 的解决方案：通过语音识别、文字识别、NLP、视频理解与生成等多模态模型，实时分析直播流，自动检测进球、争议判罚等“高光时刻”，最快 3-5 分钟输出切片，并支持 90+ 语种解说。方案同时支持直播与点播，输出结构化 JSON 数据（时间戳、高光分数、画面描述），将“边播边发”变为可规模化的内容生产线。文章最后强调，对于赛事运营方，AI 短视频工厂已从可选变为必选项。
+2026-06-15 17:12:00
 
 
 
 ### [2026-06-15-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-06-15-HackerNews/)
 
-2026-06-15 15:10:35 | 标签: 科技新闻, HackerNews, 每日摘要, AI, 开源
-
-> 本文是 2026 年 6 月 15 日 Hacker News 热门话题的每日摘要，汇总了 10 条高热度帖子及其核心评论。内容包括：保罗·格雷厄姆在牛津联盟演讲中反驳「不可能赚到十亿美元」，强调指数增长与用户真心喜爱；美国生成式 AI 使用呈现约三分之一积极、三分之一偶尔、三分之一不用的三分格局，社会净正面评价仅 +8%；本田思域车机因使用公开测试密钥签名，攻击者通过 USB 物理接入即可执行任意代码；英国一名警察因用 AI 伪造证据被调查；一款免费浏览器端 SQL 转 ER 图工具发布；开源 Windows 兼容系统 ReactOS 在真实硬件上成功运行 3D 加速的《半条命》；里约热内卢...
+2026-06-15 15:10:35
 
 
 
 ### [用-AI-Skills-打通中间件迁移：定位服务从-Android-到鸿蒙的完整实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544335&idx=1&sn=4bd077bfe079f01874d3cebe4b1e80ab)
 
-2026-06-15 14:06:00 | 标签: AI 编程, AI Agent, 提示工程, 开发者工具, 鸿蒙开发
-
-> 文章从 Android 到鸿蒙的定位服务迁移这一具体场景切入，剖析了 AI 辅助开发中通用智能与领域知识断层的根本矛盾。作者指出，纯 AI 翻译因缺乏准确的 API 文档而频繁出错（如生成不存在的枚举值），而人工查源码虽准但效率低且知识无法沉淀。为此，文章提出「AI + Skills」解决方案，将 API 映射、枚举细节、回调差异及常见陷阱等隐性知识转化为结构化、AI 可读的 Skills 文档，明确了 AI 负责通用逻辑生成、Skills 提供精准领域知识的分工模型。通过构建包含 API 对比表、常见错误提示的 Skills 文档，单服务迁移时间缩短至 30 分钟且零编译错误，在 154 个...
+2026-06-15 14:06:00
 
 
 
 ### [AI-需要更多工程纪律，而非更少（转载）](https://charity.wtf/2026/06/15/ai-demands-more-engineering-discipline-not-less-xpost/)
 
-2026-06-15 13:38:29 | 标签: AI 编程, 工程纪律, 软件工程, SRE, 可观测性
-
-> 这篇由 Charity Majors 撰写、从其 Substack 转载的文章，回应了其前一篇关于 AI 的文章所引发的技术层面辩论。她认为，虽然 AI 使代码生成变得廉价且快速（代码生产的经济学已被颠覆），但这并未降低对工程纪律的需求，反而增加了需求。她以从手工打造的“宠物”服务器向不可变的“牲畜”基础设施的转变作为有力类比，提出代码正成为一种可丢弃、可再生的产物——即“理解的物化视图”。真正的挑战从编写代码转向定义规范、验证行为以及维护共同理解。她推崇可观测性、测试和以生产为中心的工程（SRE 原则）作为新的严谨性标准，认为人类大脑不擅长验证，而 AI 迫使团队最终采用他们本应一直遵循的纪...
+2026-06-15 13:38:29
 
 
 
 ### [Anthropic-发布并暂时中止-Claude-Fable-5](https://www.infoq.com/news/2026/06/claude-5-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 13:01:00 | 标签: LLM, AI Agent, 模型发布, AI 安全, AI 监管
-
-> 本文报道了 Anthropic 的 Claude Fable 5 快速发布与中止的过程，这是其 Mythos 系列中首个公开可用的模型。Fable 5 于 2026 年 6 月 9 日发布，是此前未发布的 Claude Mythos 5 的受监管版本，共享相同的底层架构、100 万 token 上下文窗口和定价。该模型专为持续自主的智能体工作而设计，具备自适应思考、任务预算和主动自我验证功能。然而，发布后三天内，美国政府出口指令迫使其下线，据称是亚马逊安全团队向白宫报告了一个越狱漏洞。文章详细介绍了该模型的能力、引发微软不满的强制性 30 天数据保留政策、上游 Project Glasswin...
+2026-06-15 13:01:00
 
 
 
 ### [vibe-coding-template：一次-Codex-对话文件丢失后，我整理了一套-Agent-长期协作模板，把-AGENTS.md、任务-prompt、code-review-、知识讲解和-web-search-工作流快速沉淀到项目](https://www.v2ex.com/t/1220512#reply0)
 
-2026-06-15 12:19:59 | 标签: AI 编程, Agent 协作, 提示工程, Vibe Coding, 开发者工具
-
-> 作者因 Codex 对话文件丢失导致大量常用提示词消失，由此开发了一套开源 Agent 协作模板。模板包含七个 skill：agents-md-creator（生成项目级 AGENTS.md，沉淀长期规则）、project-prompt-creator（处理一次性任务）、plan-mode-planner（复杂任务前先做只读探索与决策）、code-reviewer（基于 diff 和项目规则审查代码）、web-search（降低模型幻觉，优先查一手来源）、knowledge-explainer（帮助用户理解技术原理，避免过度依赖 Agent）、project-skill-creator（将稳定...
+2026-06-15 12:19:59
 
 
 
@@ -60178,49 +60136,37 @@ http://antirez.com/news/162
 
 ### [帮助员工借助-AI-变得更好，而不仅仅是更快](https://hbr.org/2026/06/help-employees-get-better-not-just-faster-with-ai)
 
-2026-06-15 20:25:29 | 标签: AI 与机器学习, 员工发展, 职业发展, 判断力, 批判性思维
-
-> 本文认为，在 AI 时代，知识工作者的关键技能不再是产出初稿的能力，而是评估、引导、情境化以及在 AI 生成的输出中进行选择的判断力。文章对比了传统的专业技能发展路径（从规则到隐性直觉）与 AI 时代的新要求：将隐性判断显性化以指导 AI。作者提出了一个培养这种技能的四步流程：1）在使用 AI 前建立初步观点；2）以多种模式与 AI 协作（生成、批判、比较、模拟、挑战）；3）分析你的初步观点与 AI 输出之间的差异；4）在交付输出时附上推理过程的解释。文章通过一个详细的竞争分析案例展示了该流程的实际应用。文章总结道，将这一实践融入发展模式的组织，将比传统的学徒制更快地建立专业判断力，从而形成复...
+2026-06-15 20:25:29
 
 
 
 ### [AI-公司如何为所需内容支付公平费用](https://hbr.org/2026/06/how-ai-companies-can-pay-fair-rates-for-the-content-they-need)
 
-2026-06-15 20:05:04 | 标签: AI 商业, AI 伦理, 数据经济, 商业策略, 知识产权
-
-> 本文探讨了 AI 公司与内容创作者之间围绕训练数据产生的核心经济冲突。作者认为，当前僵局对双方都不利：AI 公司面临迫在眉睫的数据荒和法律不确定性，而创作者只能获得一次性授权交易或陷入昂贵的诉讼。他们提出了一个基于市场的解决方案，该方案遵循三个原则：1）数据混合权重，通过等边际原则揭示不同数据源的相对价值；2）规模定律，用于估算训练数据贡献的总价值（约占模型价值的 20-50%）；3）以单个模型的运营利润分成作为支付基础，类似于好莱坞的利润分成模式。该框架利用集体管理组织（如音乐领域的 ASCAP）来分配收益。作者认为，这一系统在技术上可行，因为 AI 公司在训练过程中已经生成了必要的数据（混...
+2026-06-15 20:05:04
 
 
 
 ### [上线只活了-180-天，AI-应用层的泡沫被戳破了](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569363&idx=1&sn=e5c4f1f295290b25f9e7bcb518af99d6)
 
-2026-06-15 19:04:00 | 标签: AI应用, AI商业化, AI产品与应用, 科技评论, 创业与投资
-
-> 文章以 2026 年上半年一批 AI 应用关停为切入点，包括 OpenAI 的 Sora、a16z 投资的 Yupp.ai、Google 的 Pixel Studio 和 Project Mariner 等，分析 AI 应用层泡沫破裂的深层原因。核心论点：当底层模型能力持续下沉，仅靠包装模型能力、缺乏独立价值的「白牌化」应用将失去生存空间。文章引用 Google Cloud 高管和创业者的观点，指出上游模型厂商和下游企业客户两端挤压，应用层利润空间被压缩。同时，文章通过 a16z 的榜单分析，归纳出三类真正活下来的应用：成为默认入口的超级应用（ChatGPT、Gemini）、嵌入高频场景的垂直...
+2026-06-15 19:04:00
 
 
 
 ### [GlobalGPT-李焕之：零融资、套壳产品千万美金-ARR-后，我找到了创业的-mission](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524686&idx=1&sn=ad041374ffc8e724dafd75369d0e12c8)
 
-2026-06-15 16:55:00 | 标签: 创业, AI 产品与应用, 出海, 增长策略, 套壳产品
-
-> 本文是 Founder Park 对 GlobalGPT 创始人李焕之的深度专访。李焕之坦诚回顾了从律师转型创业的经历：经历了 LegalDAO 和 LegalNow 的失败后，团队在现金流仅剩一个月时做出了 AI 套壳产品 GlobalGPT。该产品通过聚合主流 AI 模型，以一份订阅满足用户多模型需求，踩中模型百花齐放的市场红利，依靠 KOL 营销、SEO 和广告投放，在零融资的情况下做到全球用户超 300 万、ARR 超 1000 万美金。文章详细拆解了其增长策略、用户画像（非科技圈高级白领）以及「红海第 1000 名比小市场前 10 名更大」的创业哲学。在获得商业成功后，李焕之并未满足...
+2026-06-15 16:55:00
 
 
 
 ### [对话夏勇峰：做了-6-年，我亲手按下-AI-眼镜的暂停键](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653108827&idx=1&sn=da1e7acae5508e92c56408c501f9db64)
 
-2026-06-15 12:03:00 | 标签: AI 硬件, 智能眼镜, 创业, 产品战略, AI 产品与应用
-
-> 本文是极客公园对蜂巢科技创始人夏勇峰的深度专访。夏勇峰是小米生态链早期核心人物，2020 年创立蜂巢科技，专注智能眼镜，其产品已占中国智能音频眼镜近 10% 市场份额。在 AI 行业以天为单位快速变化的背景下，他做出了一个反直觉的决定：暂停 2026 年全年 AI 眼镜新品计划，甚至主动拒绝大厂订单。文章系统阐述了他的核心判断：当前阶段，AI 大模型才是核心机会，硬件不应抢占主角，而应成为 AI 进入现实世界的「最小必要载体」。他提出「物理 AI」的第一阶段不是做复杂的具身智能，而是用最轻的硬件让 AI 进入高频场景、与用户持续交互、建立信任与记忆，最终沉淀出「灵魂」（Soul）—— 由连续记...
+2026-06-15 12:03:00
 
 
 
 ### [Scaling-Law-的真相，藏在那些「没用」的参数里｜Hao-好聊趋势](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569330&idx=1&sn=82bd49c7fd2181ab74b67f00292b2b0d)
 
-2026-06-15 11:53:00 | 标签: Scaling Law, LLM, 模型训练与推理, 参数冗余, Attention Sink
-
-> 文章从 ShortGPT 剪枝实验（砍掉 LLaMA-2-13B 四分之一层，MMLU 几乎不掉）切入，提出「参数冗余谜题」。作者将模型生命周期拆为训练、推理、后训练三阶段，逐一揭示冗余参数的四重身份：1）训练时，大参数为长尾任务提供「隔离空间」，使其免受高频任务梯度冲刷；2）训练时，部分注意力头通过将无用注意力倒给起始符（BOS）实现数值泄压，满足 Softmax 归一化约束；3）推理时，中间层执行信息压缩（压缩山谷），为最后 15%精炼层的多步推理链提供稳定输入；4）后训练时，冗余参数作为「可塑性储备」，为微调提供写入空间，避免灾难性遗忘。文章引用斯坦福-Anthropic 联合研究、牛津...
+2026-06-15 11:53:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-16 08:39:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-16 11:05:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -566,17 +566,13 @@
 
 ### [提升用户数据自主权：从-BlueSky-的-AT-协议到本地优先软件运动](https://www.infoq.com/podcasts/increasing-users-data-agency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 19:00:00 | 标签: 系统设计, 云原生 / DevOps, 去中心化, 本地优先, 数据工程
-
-> 在本次播客访谈中，《数据密集型应用系统设计》作者 Martin Kleppmann 探讨了过去十年数据系统的关键趋势。他重点阐述了从单体数据库向基于对象存储的模块化云原生架构的转变。随后，对话深入探讨了去中心化，并以支撑 BlueSky 的 AT 协议作为案例研究。Kleppmann 解释了纯联邦制与为确保无缝用户体验而追求全局一致性之间的权衡。他强烈倡导本地优先软件运动，认为用户数据的主副本应存储在客户端设备上，以实现离线访问、提升性能并避免供应商锁定。他介绍了 Automerge——一个用于构建本地优先协作应用的开源库，并讨论了其将类似 Git 的版本控制能力引入电子表格和 CAD 文件等...
+2026-06-15 19:00:00
 
 
 
 ### [Vercel-Labs-开源-Zero-Native：基于-Zig-的跨平台原生应用框架](https://www.infoq.com/news/2026/06/zero-native-zig-xplatform-vercel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-15 09:25:00 | 标签: 跨平台开发, Zig, Vercel, 桌面应用, Electron 替代方案
-
-> 本文报道了 Vercel Labs 开源 Zero-Native 的消息，这是一个用于构建原生桌面应用的新型跨平台框架。其关键创新在于使用操作系统原生的 WebView，而非像 Electron 那样捆绑完整的浏览器运行时，从而实现了更小的二进制体积和更低的内存占用。Zero-Native 使用 Zig 语言编写，因其快速的增量编译能力和直接的 C ABI 互操作性而入选，无需 FFI 绑定。开发者可以将 Web 前端（Next.js、React、Vue、Svelte）与 Zig 后端配对使用。该框架还采用了基于能力的安全模型。文章将 Zero-Native 置于 Tauri、WebUI 和 ...
+2026-06-15 09:25:00
 
 
 
