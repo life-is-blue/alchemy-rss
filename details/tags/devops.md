@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-17 08:34:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-17 11:05:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -566,17 +566,13 @@
 
 ### [Cloudflare-DMARC-管理现已全面可用](https://blog.cloudflare.com/dmarc-management-ga/)
 
-2026-06-16 22:00:01 | 标签: Cloudflare, 邮件安全, DMARC, SPF, DKIM
-
-> Cloudflare 宣布其 DMARC 管理工具现已全面可用，该工具最初作为免费产品推出。GA 版本配备了一个重新设计的仪表盘，提供电子邮件认证状态的统一视图。主要新功能包括：更深入的报告可见性与来源调查，允许用户深入查看发送源 IP 地址并访问 Cloudflare 威胁情报；电子邮件认证记录状态视图，为 SPF、DKIM、DMARC 和 BIMI 记录提供清晰的通过/警告/失败指示，并附有通俗易懂的建议；以及 SPF 查询审计，追踪每一次 DNS 查询，帮助用户保持在 10 次查询限制之内。文章阐述了在 Google、Microsoft 和 Yahoo 更严格执行的背景下电子邮件认证的重...
+2026-06-16 22:00:01
 
 
 
 ### [Coinbase-故障复盘：局部-AWS-冷却故障如何引发长达数小时的交易中断](https://www.infoq.com/news/2026/06/coinbase-aws-failure-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-16 20:00:00 | 标签: 云原生 / DevOps, 系统设计, 韧性工程, 故障复盘, AWS
-
-> 本文报道了 Coinbase 对 2026 年 5 月 7 日一次重大宕机事件的详细复盘。事件始于 AWS 美国东部 1 区（US-East-1）数据中心的一次局部冷却故障，该故障触发了 EC2 实例和 EBS 卷的热关机。导致长时间中断的主要原因是 Coinbase 的撮合引擎，它被设计为一个基于 Raft 协议的集群，部署在单个 AWS 集群置放群组内以实现超低延迟。当该集群五个节点中的三个宕机后，集群失去法定人数，所有交易被迫停止。恢复过程需要手动修改代码并重建集群。另一个问题是，受损可用区内的 Kafka 工作负载被搁置，造成积压，从而延迟了服务恢复。文章强调了延迟优化与弹性之间的工程...
+2026-06-16 20:00:00
 
 
 
