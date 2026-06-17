@@ -1,0 +1,46 @@
+{
+  "id": "RAW_643e3f93",
+  "title": "《大西洋月刊》马特奥·黄的一则引述",
+  "url": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
+  "date": "2026-06-16 11:07:54",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.theatlantic.com/technology/2026/06/trump-anthropic-export-control-ai-race/687555/?gift=5MjKTLV9QwyU_J0HzTnanoWieJfkMhNH_YTT9pP_fhA\">\n     <p>Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said that she is not being paid by Anthropic.) The report, Moussouris said, involved IT experts asking Fable to help find and patch bugs. When given deliberately insecure code, she said, Fable refused the prompt “review the code for security issues” but then complied when asked to “fix this code,” followed by some further manual steps. Moussouris told me that this was just “the model working as intended” for cyberdefense.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.theatlantic.com/technology/2026/06/trump-anthropic-export-control-ai-race/687555/?gift=5MjKTLV9QwyU_J0HzTnanoWieJfkMhNH_YTT9pP_fhA\">Matteo Wong, The Atlantic</a>, <span class=\"context\">The White House Is Ratcheting Up Its War Against Anthropic</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2229/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一位网络安全专家认为，Anthropic 的 AI 模型 Fable 拒绝审查代码安全漏洞，但在被要求修复代码时却照做，这种表现是网络防御中“模型按预期工作”的体现。",
+  "oneSentenceSummary": "一位网络安全专家认为，Anthropic 的 AI 模型 Fable 拒绝审查代码安全漏洞，但在被要求修复代码时却照做，这种表现是网络防御中“模型按预期工作”的体现。",
+  "summary": "这篇摘自《大西洋月刊》的文章，在 Simon Willison 的博客上被引用，报道了一位网络安全专家对 Anthropic 的 Fable 模型在白宫越狱测试中的评估。Luta Security 首席执行官 Katie Moussouris 审阅了白宫关于 Fable 越狱的报告。她指出，当被提供故意存在安全漏洞的代码时，Fable 拒绝了“审查代码安全漏洞”的直接指令，但在被要求“修复此代码”并给出进一步手动步骤后却照做了。Moussouris 将这种行为定性为网络防御中“模型按预期工作”，这一观点与人们对该模型拒绝行为可能产生的担忧形成了对比。",
+  "mainPoints": [
+    {
+      "point": "Fable 拒绝审查代码安全漏洞，但在被要求修复代码时却照做。",
+      "explanation": "在白宫的越狱测试中，该模型拒绝了直接的安全审查指令，但接受了“修复此代码”的指令，展现出一种微妙的拒绝行为。"
+    },
+    {
+      "point": "一位网络安全专家认为，这是模型按预期为网络防御工作。",
+      "explanation": "Katie Moussouris 认为，Fable 的行为对于防御型 AI 来说是合适的，因为它避免了直接的安全分析，但仍然执行了有用的任务。"
+    }
+  ],
+  "keyQuotes": [
+    "Moussouris 告诉我，这恰恰是网络防御中“模型按预期工作”的表现。"
+  ],
+  "tags": [
+    "AI 安全",
+    "LLM",
+    "越狱",
+    "AI 安全",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 122,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781579274000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-16 11:07:54"
+}

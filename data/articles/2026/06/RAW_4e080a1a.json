@@ -1,0 +1,50 @@
+{
+  "id": "RAW_4e080a1a",
+  "title": "Georgi Gerganov 的一段话",
+  "url": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
+  "date": "2026-06-17 00:04:59",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://news.ycombinator.com/item?id=48555993#48557304\">\n     <p>I can 100% attest to the fact that Qwen3.6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily, either on my M2 Ultra or on my RTX 5090 box. I use it for small <a href=\"https://github.com/search?q=%22Assisted-by%22+user%3Aggml-org&amp;type=commits&amp;ref=advsearch\">mundane tasks at ggml-org</a> - nothing really impressive, but definitely a helpful tool for a maintainer. I think I would be using it much more, if I didn't have to spend a lot of my time on reviewing PRs. Currently, I have a very lightweight harness - the pi agent with everything stripped (<code>pi -nc --offline</code>) and <a href=\"https://github.com/ggml-org/llama.cpp/blob/master/.pi/gg/SYSTEM.md\">a short system prompt</a> to align it a bit with my style.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://news.ycombinator.com/item?id=48555993#48557304\">Georgi Gerganov</a>, <span class=\"context\">Hacker News comment on <a href=\"https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/\">Running local models is good now</a> by Boykis</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2230/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Georgi Gerganov 证实 Qwen3.6-27B 是一个非常强大的本地编码模型，他日常用于小型维护任务。",
+  "oneSentenceSummary": "Georgi Gerganov 证实 Qwen3.6-27B 是一个非常强大的本地编码模型，他日常用于小型维护任务。",
+  "summary": "这是 llama.cpp 的创建者 Georgi Gerganov 在 Simon Willison 博客上分享的一段简短引述。Gerganov 表示，Qwen3.6-27B 是一个非常强大的本地编码模型，过去一个半月里，他几乎每天都在自己的 M2 Ultra 或 RTX 5090 机器上使用它。他在 ggml-org 用它处理一些琐碎的小任务，称其为维护者的得力工具。他还提到，如果不是花太多时间审核 PR，他会更频繁地使用它，并简要介绍了自己使用 pi agent 搭配简短系统提示词的轻量级测试环境。",
+  "mainPoints": [
+    {
+      "point": "Qwen3.6-27B 是一个非常强大的本地编码模型。",
+      "explanation": "llama.cpp 的创建者 Georgi Gerganov 基于一个半月的日常使用，证实了该模型的能力。"
+    },
+    {
+      "point": "该模型用于小型、日常的维护任务。",
+      "explanation": "Gerganov 在 ggml-org 用它处理常规任务，称其为维护者的得力工具，而非用于令人印象深刻或复杂的工作。"
+    },
+    {
+      "point": "Gerganov 使用一个带有简短系统提示词的轻量级测试环境。",
+      "explanation": "他的设置包括使用精简后的 pi agent（`pi -nc --offline`）和一个简短的系统提示词，以使模型符合他的风格。"
+    }
+  ],
+  "keyQuotes": [
+    "我可以 100% 证实，Qwen3.6-27B 是一个非常强大的本地编码模型。"
+  ],
+  "tags": [
+    "LLM",
+    "本地模型",
+    "AI 编程",
+    "Qwen",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 134,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781625899000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-17 00:04:59"
+}

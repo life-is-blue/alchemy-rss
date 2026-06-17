@@ -1,0 +1,60 @@
+{
+  "id": "RAW_1f6793b0",
+  "title": "Coinbase 故障复盘：局部 AWS 冷却故障如何引发长达数小时的交易中断",
+  "url": "https://www.infoq.com/news/2026/06/coinbase-aws-failure-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-16 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.coinbase.com/en-it\">Coinbase</a> has <a href=\"https://www.coinbase.com/en-gb/blog/a-postmortem-of-our-may-7-2026-outage\">published</a> a detailed postmortem of its May 7, 2026, outage, revealing how a localized cooling failure inside an AWS data center escalated into a multi-hour disruption that halted nearly all trading activity across the cryptocurrency exchange. While the initial incident originated from an <a href=\"https://www.itpro.com/infrastructure/aws-outage-explained-may-2026-data-center-overheating\">AWS thermal event</a> in a single availability zone, Coinbase's investigation found that architectural dependencies within its own systems, including a matching engine tightly coupled to the affected zone and cascading messaging infrastructure failures, significantly prolonged recovery efforts.</p>\n   <p dir=\"ltr\">The outage began when multiple cooling units failed simultaneously in an AWS data hall within the US-East-1 region, forcing thermal shutdowns of affected racks and taking <a href=\"https://aws.amazon.com/ec2/\">EC2</a> instances and <a href=\"https://aws.amazon.com/ebs/\">EBS</a> volumes offline. Coinbase customers were unable to buy, sell, deposit, withdraw, or transfer assets for several hours, while institutional clients experienced widespread disruption to order routing and exchange services. Full recovery took much of the following day, with trading restored incrementally through cancel-only and auction modes before normal operations resumed.</p>\n   <p dir=\"ltr\">According to Coinbase, the most significant factor delaying recovery was the design of its exchange matching engine. To achieve the ultra-low latency required for high-frequency trading, the system operates as a <a href=\"https://medium.com/@allenzhu724/an-overview-of-the-raft-architecture-7c380cabab60\">Raft-based cluster</a> within a single <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html\">AWS Cluster Placement Group</a>. This architecture intentionally collocates nodes to minimize network latency between consensus members. However, when the AWS outage took down three of the cluster's five nodes, the system lost quorum and could no longer process trades.</p>\n   <p dir=\"ltr\">The company acknowledged that while the architecture optimized performance, it lacked an automated mechanism for failover to another availability zone. Recovery required emergency code changes, manual cluster reconstruction, and careful restoration of quorum before trading could safely resume. The incident exposed a classic engineering trade-off: optimizing for latency and performance can sometimes come at the expense of resilience during rare infrastructure failures.</p>\n   <p dir=\"ltr\">Coinbase's postmortem also identified a separate issue involving its event-streaming infrastructure. <a href=\"https://kafka.apache.org/\">Kafka</a> workloads responsible for distributing operational data became stranded in the impaired availability zone, creating significant backlogs and delaying service restoration even after core trading systems were recovering. Engineers ultimately had to manually migrate partitions and rebalance workloads to restore normal data flow across the platform.</p>\n   <p dir=\"ltr\">The combination of the matching-engine failure and messaging backlog transformed what began as a localized cloud infrastructure issue into a platform-wide outage. Coinbase noted that either issue independently would have been manageable, but together they created a recovery process far more complex than anticipated.</p>\n   <p dir=\"ltr\">The outage has reignited discussion around cloud concentration risk and the operational realities of building critical financial services on hyperscale infrastructure. Although AWS regions are designed around multiple availability zones, the Coinbase incident demonstrates how applications can still develop hidden dependencies on specific locations, particularly when performance requirements encourage tightly coupled architectures. The same AWS cooling failure also affected other major platforms and services operating in the region.</p>\n   <p dir=\"ltr\"><b id=\"docs-internal-guid-9fea4568-7fff-c323-bef7-9db9abb2b9ca\">Industry observers noted that the incident highlights a growing challenge for cloud-native organizations: simply deploying across a cloud provider's infrastructure does not automatically guarantee resilience. System architecture, workload placement, failover automation, and operational assumptions often play a larger role in determining real-world availability than the underlying cloud platform itself.</b></p>\n   <p dir=\"ltr\"><b id=\"docs-internal-guid-9fea4568-7fff-c323-bef7-9db9abb2b9ca\">Coinbase's experience echoes recent outages and engineering postmortems from other large-scale technology companies. GitHub has <a href=\"https://github.blog/news-insights/company-news/addressing-githubs-recent-availability-issues-2/\">emphasized</a> the importance of eliminating hidden infrastructure assumptions after several availability incidents exposed unexpected dependencies between systems. Discord's <a href=\"https://discord.com/blog/how-discord-automates-scylladb-clusters-at-scale\">recent work</a> automating ScyllaDB operations similarly focused on reducing recovery complexity and minimizing the impact of infrastructure failures through orchestration and automation. Meanwhile, Netflix has <a href=\"https://netflixtechblog.com/mount-mayhem-at-netflix-scaling-containers-on-modern-cpus-f3b09b68beac\">invested heavily</a> in resilience engineering and workload isolation after discovering that infrastructure failures often <a href=\"https://netflixtechblog.com/tagged/chaos-engineering\">emerge from subtle architectural coupling</a> rather than single points of failure.</b></p>\n   <p dir=\"ltr\"><b id=\"docs-internal-guid-9fea4568-7fff-c323-bef7-9db9abb2b9ca\">The common thread across these incidents is that modern distributed systems rarely fail because a single component breaks. Instead, outages occur when multiple individually manageable failures interact in unexpected ways. Coinbase's postmortem reinforces this lesson: the AWS cooling failure was the trigger, but the duration and impact of the outage were ultimately shaped by architectural assumptions that had never previously been tested under real-world failure conditions.</b></p>\n   <p dir=\"ltr\"><b id=\"docs-internal-guid-9fea4568-7fff-c323-bef7-9db9abb2b9ca\">In response, Coinbase has outlined several remediation efforts, including automated cross-zone recovery capabilities for its matching engine, improved quorum restoration procedures, more resilient messaging infrastructure, and expanded disaster recovery testing. The company emphasized that while preventing outages remains important, accelerating recovery from inevitable failures is equally critical.</b></p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Coinbase Postmortem Reveals How a Localized AWS Failure Triggered a Multi-Hour Trading Outage\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/coinbase-aws-failure-postmortem/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781611200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Coinbase 对 2026 年 5 月 7 日宕机事件的复盘揭示，一个可用区内的局部 AWS 冷却故障，加上高度耦合的撮合引擎和级联的 Kafka 故障，共同导致了长达数小时的交易中断。",
+  "oneSentenceSummary": "Coinbase 对 2026 年 5 月 7 日宕机事件的复盘揭示，一个可用区内的局部 AWS 冷却故障，加上高度耦合的撮合引擎和级联的 Kafka 故障，共同导致了长达数小时的交易中断。",
+  "summary": "本文报道了 Coinbase 对 2026 年 5 月 7 日一次重大宕机事件的详细复盘。事件始于 AWS 美国东部 1 区（US-East-1）数据中心的一次局部冷却故障，该故障触发了 EC2 实例和 EBS 卷的热关机。导致长时间中断的主要原因是 Coinbase 的撮合引擎，它被设计为一个基于 Raft 协议的集群，部署在单个 AWS 集群置放群组内以实现超低延迟。当该集群五个节点中的三个宕机后，集群失去法定人数，所有交易被迫停止。恢复过程需要手动修改代码并重建集群。另一个问题是，受损可用区内的 Kafka 工作负载被搁置，造成积压，从而延迟了服务恢复。文章强调了延迟优化与弹性之间的工程权衡，并讨论了关于云集中风险、隐藏的基础设施依赖关系，以及自动化故障转移和灾难恢复测试重要性的更广泛行业教训。文章还将此次事件与 GitHub、Discord 和 Netflix 的类似复盘报告联系起来。",
+  "mainPoints": [
+    {
+      "point": "一次局部 AWS 冷却故障引发了 Coinbase 长达数小时的宕机。",
+      "explanation": "单个可用区内的故障导致热关机，使 Coinbase 系统所依赖的 EC2 和 EBS 资源下线。"
+    },
+    {
+      "point": "为低延迟优化的 Coinbase 撮合引擎成为了单点故障。",
+      "explanation": "该基于 Raft 协议的集群为追求性能而被部署在单个置放群组中，当五个节点中的三个发生故障时，集群失去法定人数，所有交易停止。"
+    },
+    {
+      "point": "Kafka 工作负载被搁置引发的级联故障使恢复工作复杂化。",
+      "explanation": "事件流基础设施在受损可用区中卡住，造成积压，即使在核心交易系统正在恢复时，也延迟了服务恢复。"
+    },
+    {
+      "point": "该事件凸显了分布式系统中性能与弹性之间的权衡。",
+      "explanation": "为优化延迟可能会对特定基础设施位置产生隐藏依赖，使系统容易受到局部故障的影响。"
+    },
+    {
+      "point": "真正的韧性更多取决于架构和自动化，而非云提供商的保证。",
+      "explanation": "仅仅跨云提供商的基础设施进行部署并不能确保弹性；系统架构、故障转移自动化和运维假设至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "该事件暴露了一个经典的工程权衡：为延迟和性能进行优化，有时可能会以在罕见基础设施故障期间牺牲弹性为代价。",
+    "仅仅跨云提供商的基础设施进行部署并不能自动保证弹性。",
+    "这些事件的共同点是，现代分布式系统很少因为单个组件损坏而失效。相反，宕机发生在多个本可单独管理的故障以意想不到的方式相互作用时。"
+  ],
+  "tags": [
+    "云原生 / DevOps",
+    "系统设计",
+    "韧性工程",
+    "故障复盘",
+    "AWS"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 713,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781611200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-16 20:00:00"
+}
