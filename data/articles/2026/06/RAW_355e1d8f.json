@@ -1,0 +1,46 @@
+{
+  "id": "RAW_355e1d8f",
+  "title": "Charity Majors 的一句话",
+  "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
+  "date": "2026-06-18 01:12:41",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">17th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline#footnote-2\">\n     <p>What happened in 2025 was this: <strong>the economics of code production were turned upside down</strong>. Instead of being very hard, time-consuming, and expensive to generate code, it became effectively free and instant. Lines of code went from being treasured, reused, cared for and carefully curated, to being disposable and regenerable, practically overnight.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline#footnote-2\">Charity Majors</a>, <span class=\"context\">AI demands more engineering discipline. Not less</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2231/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Charity Majors 认为，2025 年代码生产的经济学被彻底颠覆，代码变得可丢弃、可重新生成，而非被珍视和精心管理。",
+  "oneSentenceSummary": "Charity Majors 认为，2025 年代码生产的经济学被彻底颠覆，代码变得可丢弃、可重新生成，而非被珍视和精心管理。",
+  "summary": "这是 Charity Majors 的一句简短而有力的引述，由 Simon Willison 在他的博客上分享。其核心论点是，2025 年标志着软件工程的一个关键转折点：生成代码的成本和精力降至接近零，将代码从一种精心管理的资产转变为一种可丢弃、可重新生成的商品。这句话是对 AI 对软件开发生命周期深远影响的一个有力而简洁的观察。",
+  "mainPoints": [
+    {
+      "point": "2025 年代码生产的经济学被颠覆。",
+      "explanation": "代码生成从昂贵且耗时转变为几乎免费且即时，从根本上改变了其价值。"
+    },
+    {
+      "point": "代码变得可丢弃且可重新生成。",
+      "explanation": "代码不再被精心管理和复用，而是被视为一种可由 AI 轻松重新生成的临时产物。"
+    }
+  ],
+  "keyQuotes": [
+    "2025 年发生的事情是这样的：代码生产的经济学被彻底颠覆。生成代码不再是非常困难、耗时且昂贵的，而是变得几乎免费且即时。代码行几乎在一夜之间，从被珍视、复用、呵护和精心管理，变成了可丢弃和可重新生成的东西。"
+  ],
+  "tags": [
+    "AI 编程",
+    "软件工程",
+    "LLM",
+    "开发者工具",
+    "工程文化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 65,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781716361000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-18 01:12:41"
+}

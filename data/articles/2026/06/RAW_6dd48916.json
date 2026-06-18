@@ -1,0 +1,51 @@
+{
+  "id": "RAW_6dd48916",
+  "title": "工具：<click-to-play> — 静态帧播放器",
+  "url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+  "date": "2026-06-17 11:56:10",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">17th June 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label tool\" href=\"https://simonwillison.net/elsewhere/tool/\">Tool</a> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/click-to-play-component\">&lt;click-to-play&gt; — a still that plays</a></span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>A progressive enchantment Web Component that turns this markup:</p>\n      <pre><code>&lt;click-to-play&gt;\n  &lt;a href=\"URL to GIF\"&gt;\n    &lt;img src=\"URL to first frame\" alt=\"...\"&gt;\n  &lt;/a&gt;\n&lt;/click-to-play&gt;\n</code></pre>\n      <p>Into a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play them.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4685/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一个渐进增强的 Web Component，可将静态图片链接转换为点击播放的 GIF，按需加载，节省带宽。",
+  "oneSentenceSummary": "一个渐进增强的 Web Component，可将静态图片链接转换为点击播放的 GIF，按需加载，节省带宽。",
+  "summary": "Simon Willison 介绍了一个名为 `<click-to-play>` 的简单渐进增强 Web Component。它接收包含 GIF 链接和静态首帧图片的标记，并渲染出一个带有播放按钮的静态帧。点击按钮后按需加载 GIF，从而避免在用户选择播放之前下载大型 GIF 文件。该组件专为性能和用户控制而设计，并作为工具发布在其网站上。",
+  "mainPoints": [
+    {
+      "point": "该组件使用渐进增强技术延迟 GIF 加载。",
+      "explanation": "它从标准的 `<a>` 和 `<img>` 标签开始，然后通过播放按钮增强体验，仅在用户交互时加载 GIF。"
+    },
+    {
+      "point": "它解决了大型动画 GIF 常见的性能问题。",
+      "explanation": "GIF 文件可能非常大；该组件可防止它们在用户明确请求播放之前被加载，从而节省带宽并改善页面加载时间。"
+    },
+    {
+      "point": "实现方式是一个简单、可复用的 Web Component。",
+      "explanation": "`<click-to-play>` 元素是一个自定义 HTML 元素，封装了逻辑和样式，可以轻松嵌入到任何网页中。"
+    }
+  ],
+  "keyQuotes": [
+    "一个渐进增强的 Web Component，可将此标记……转换为带有点击播放按钮的静态帧，点击后按需加载 GIF。",
+    "适用于不希望大型 GIF 在用户未选择播放时被加载的场景。"
+  ],
+  "tags": [
+    "Web Components",
+    "性能优化",
+    "前端与 Web",
+    "开发者工具",
+    "渐进增强"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 64,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781668570000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-17 11:56:10"
+}

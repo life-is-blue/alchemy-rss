@@ -1,0 +1,56 @@
+{
+  "id": "RAW_825c8e3f",
+  "title": "刚刚，Fable-5 之下，智谱开源的 GLM-5.2 拿下 AI 编程第一！",
+  "url": "https://www.qbitai.com/2026/06/436085.html",
+  "date": "2026-06-17 10:42:10",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": null,
+  "aiSummary": "智谱开源模型 GLM-5.2 在 AI 编程 Arena 上取得全球第二、开源第一的成绩，并在多项实测中展现出强大的长上下文工程能力，标志着国产开源模型进入 AI 编程的「御三家」行列。",
+  "oneSentenceSummary": "智谱开源模型 GLM-5.2 在 AI 编程 Arena 上取得全球第二、开源第一的成绩，并在多项实测中展现出强大的长上下文工程能力，标志着国产开源模型进入 AI 编程的「御三家」行列。",
+  "summary": "文章报道了智谱最新开源模型 GLM-5.2 在 AI 编程评测中的突破性表现。该模型在 Coding Arena 上仅次于 Claude Fable 5，位列全球第二、开源第一，并在 Design Arena 中取得全球第一。文章通过多项实测（完整代码库理解、跨文件追 Bug、新增功能、多任务处理）展示了 GLM-5.2 在 1M 长上下文支持下的真实工程能力，认为其已与 Claude Code、OpenAI CodeX 形成 AI 编程领域的三大主流路线。文章同时指出，1M 上下文并非适用于所有场景，但在整库理解、跨文件调试、长期重构等复杂任务中价值显著。",
+  "mainPoints": [
+    {
+      "point": "GLM-5.2 在 AI 编程 Arena 上取得全球第二、开源第一的成绩。",
+      "explanation": "在 Coding Arena 上仅次于 Claude Fable 5，超越 OpenAI 和谷歌的模型，被官方称为「令人难以置信的里程碑」。"
+    },
+    {
+      "point": "1M 长上下文是 GLM-5.2 的核心竞争力，适用于复杂工程任务。",
+      "explanation": "文章通过实测证明，在整库理解、跨文件追 Bug、复杂功能新增等任务中，长上下文让模型能记住项目结构、接口约定和历史决策，从而完成真正的工程交付。"
+    },
+    {
+      "point": "AI 编程正在从「单次输出能力」竞争转向「长程工程能力」竞争。",
+      "explanation": "开发者开始将模型放入真实工程流，任务从写孤立函数变为理解架构、追踪调用链、修改多处文件并补测试，长上下文成为 Coding Agent 的工作内存。"
+    },
+    {
+      "point": "GLM-5.2 代表开源长程 Coding Agent 路线，与 Claude Code 和 OpenAI CodeX 形成三足鼎立。",
+      "explanation": "Claude Code 代表闭源体验上限，CodeX 代表 OpenAI 体系，而 GLM-5.2 代表开源、可私有化、面向真实工程任务的路线，补上了开发者对可控性和成本的需求拼图。"
+    }
+  ],
+  "keyQuotes": [
+    "1M 上下文是为了让它在真实工作里少忘事、少跑偏、少反复问你要背景。",
+    "AI Coding 正在换阶段……从会写一段代码，推向能做一段工程。",
+    "下一阶段，比的就是谁能更久地待在项目里，理解它、记住它、改动它，并且不把它弄坏。"
+  ],
+  "tags": [
+    "AI 编程",
+    "开源模型",
+    "GLM-5.2",
+    "长上下文",
+    "模型评测"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 87,
+  "wordCount": 3734,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1781664130000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-17 10:42:10"
+}

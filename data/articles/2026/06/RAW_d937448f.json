@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d937448f",
+  "title": "AI 智能体身份与权限挑战：Uber 和 Auth0 如何重新思考访问控制",
+  "url": "https://www.infoq.com/news/2026/06/ai-agent-identity-uber-auth0/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-17 20:15:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber recently <a href=\"https://www.uber.com/us/en/blog/solving-the-agent-identity-crisis/\">described an internal architecture</a> for propagating agent identity across multi-agent AI workflows. The design aims to preserve originating user context, agent provenance, and scoped access as agents delegate work and call internal tools. Uber's case study aligns with <a href=\"https://auth0.com/blog/why-ai-agents-need-their-own-permission-model/\">Auth0's argument</a> that AI agents need permission models based on delegated authority, scoped credentials, and explicit human approval boundaries rather than conventional service accounts or broad OAuth scopes.</p>\n   <p>The problem is that AI agents do not fit neatly into access-control models built for either human users or backend services. In Auth0's article, Cameron Pavey argues that users are usually bounded by sessions and user interfaces. Backend services, by contrast, are generally deterministic and auditable through static code paths. Agents may perform multi-step tasks, call tools, delegate to other agents, and act on behalf of a user without every action being directly selected by that user. As Pavey puts it, \"AI agents fit neither category.\"</p>\n   <p>Uber's implementation extends its Zero Trust architecture for agentic systems. Uber engineers describe an architecture that includes an Agent Registry, AI Agent Mesh, Security Token Service, <a href=\"https://modelcontextprotocol.io/docs/getting-started/intro\">Model Context Protocol</a> (MCP) Gateway, downstream systems, and an AI Gateway/AI Guard. The Agent Registry stores the relationship between an agent and the workload it is allowed to host. The Security Token Service verifies that relationship and issues short-lived <a href=\"https://www.rfc-editor.org/info/rfc7519/\">JSON Web Tokens</a> (JWTs) for each hop in an agentic workflow. The MCP Gateway then mediates access from the agent mesh to internal systems, performs tool access checks, and redacts sensitive data if needed.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/ai-agent-identity-uber-auth0/en/resources/1Uber-Image-1-1781601058959.png\" rel=\"share\">\n    <br>\n    <em>Uber’s agent identity architecture connects agent registration, token exchange, gateway enforcement, and downstream system access&nbsp;(<a href=\"https://www.uber.com/us/en/blog/solving-the-agent-identity-crisis/\">source</a>)</em></p>\n   <p>A key design choice is that Uber does not rely on a single user credential or a long-lived service account moving through the workflow. Each agent uses local metadata, inbound context, destination audience, and a <a href=\"https://spiffe.io/docs/latest/spire-about/spire-concepts/\">SPIRE-issued workload identity</a> to request a new token from the Security Token Service. Uber says the approach is conceptually based on <a href=\"https://datatracker.ietf.org/doc/rfc8693/\">OAuth 2.0 Token Exchange</a>, but customised to carry agent identity and provenance through internal auditing and performance requirements. The issued tokens are single-hop and short-lived, with a specific Audience claim and a TTL in the order of minutes.</p>\n   <p>That provenance is captured in what Uber calls an actor chain. In Uber's multi-hop investigation example, an on-call engineer may ask an Oncall Agent to investigate an issue. That agent may then delegate to an Investigation Agent before calling an internal tool through the MCP Gateway. The token presented to the gateway contains the chain of participants, not only the immediate caller. This allows downstream systems to evaluate both the originating human identity and the acting agent identity when making authorisation decisions.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/ai-agent-identity-uber-auth0/en/resources/1Uber-Image-2-1781601058959.png\" rel=\"share\">\n    <br>\n    <em>Uber’s multi-hop investigation example propagates actor-chain claims across agent-to-agent and agent-to-tool calls&nbsp;(<a href=\"https://www.uber.com/us/en/blog/solving-the-agent-identity-crisis/\">source</a>)</em></p>\n   <p>Auth0's framing complements Uber's implementation by arguing for three patterns in production agent architectures: capability-scoped permissions, task-scoped credentials, and layered enforcement. The goal is to limit the blast radius of agent mistakes without removing the autonomy that makes agents useful. In Uber's architecture, similar controls include per-hop token exchange, audience scoping, registry-backed agent verification, gateway policy checks, and redaction of sensitive data when required.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/ai-agent-identity-uber-auth0/en/resources/1Auth0-Image-3-1781601058959.png\" rel=\"share\">\n    <br>\n    <em>Auth0 describes an agent permission model where short-lived scoped tokens flow from the identity provider to the agent runtime and tool layer (<a href=\"https://auth0.com/blog/why-ai-agents-need-their-own-permission-model/\">source</a>)</em></p>\n   <p>Uber also highlights the developer-experience side of the design. The company initially considered an external proxy for agent-to-agent calls, but found that preserving execution context end to end required support in the application layer. Uber therefore built a standardised <a href=\"https://github.com/a2aproject/A2A\">A2A</a> client to automate token exchange and actor-chain propagation. Uber frames this as a secure-by-default developer experience, moving identity propagation into the standard client path rather than leaving each agent team to implement it independently.</p>\n   <p>Uber says the system has been adopted by thousands of internal agents. The company says its production metrics show P99 latency for the Security Token Service token exchange API remains below 40 milliseconds. That addresses a potential concern that per-hop token exchange could add too much overhead in workflows involving many tool calls and delegations. Uber also says it is tracking the <a href=\"https://datatracker.ietf.org/group/wimse/about/\">IETF WIMSE working group</a> and related drafts, including <a href=\"https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth/\">AI Agent Authentication and Authorization</a>, as standards activity around workload and agent identity evolves.</p>\n   <p>The pattern aligns with concerns covered in InfoQ's article on <a href=\"https://www.infoq.com/articles/building-ai-agent-gateway-mcp/\">building a least-privilege AI agent gateway with MCP, OPA, and ephemeral runners</a>, where the gateway boundary serves as the control point for tool access, policy evaluation, and auditability. Uber's case study adds a production example of how that boundary can be combined with agent identity propagation and per-hop delegation. For architects, the broader lesson is that agentic systems require access models that preserve the originating user's context, agent identity, and tool-level authorisation across the full workflow, rather than treating agents as ordinary clients or services.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AI Agent Identity and Permission Challenges: How Uber and Auth0 Are Rethinking Access Control\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/ai-agent-identity-uber-auth0/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781698500000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文探讨了 Uber 和 Auth0 如何重新思考 AI 智能体的访问控制，从服务账户转向面向多智能体工作流的委派、限定范围且可审计的身份模型。",
+  "oneSentenceSummary": "本文探讨了 Uber 和 Auth0 如何重新思考 AI 智能体的访问控制，从服务账户转向面向多智能体工作流的委派、限定范围且可审计的身份模型。",
+  "summary": "本文综合了关于 AI 智能体身份与权限的两个互补视角。Uber 的内部架构（详见其博客文章）将其零信任模型扩展至智能体系统，引入了智能体注册中心、安全令牌服务和 MCP 网关，以在多跳智能体工作流中传播“参与者链”。每一跳都使用基于 OAuth 2.0 令牌交换的短生命周期、单跳 JWT，携带原始用户上下文和智能体来源信息。Auth0 在另一篇博客文章中提出，需要为智能体建立基于委派权限、限定范围凭证和明确人工审批边界的全新权限模型，该模型有别于面向人类用户或后端服务的模型。文章将这些观点联系起来，重点介绍了 Uber 的生产环境指标（令牌交换的 P99 延迟低于 40 毫秒），以及其通过标准化 A2A 客户端实现“默认安全”开发者体验的举措。文章总结认为，智能体系统需要能够在整个工作流中保留用户上下文、智能体身份和工具级授权的访问模型。",
+  "mainPoints": [
+    {
+      "point": "AI 智能体需要一种有别于人类或后端服务的新权限模型。",
+      "explanation": "Auth0 认为，智能体具有非确定性、多步骤以及代表用户行动的特点，这使得传统的 OAuth 范围或服务账户无法满足需求。"
+    },
+    {
+      "point": "Uber 的架构在多跳智能体工作流中传播“参与者链”。",
+      "explanation": "每次智能体到智能体或智能体到工具的调用都使用一个短生命周期的 JWT，该令牌携带原始用户身份和中间智能体的链路，从而实现下游的细粒度授权。"
+    },
+    {
+      "point": "逐跳令牌交换在生产规模下是可行的。",
+      "explanation": "Uber 报告其安全令牌服务的 P99 延迟低于 40 毫秒，解决了复杂智能体工作流中关于性能开销的关键担忧。"
+    },
+    {
+      "point": "“默认安全”的开发者体验对于推广至关重要。",
+      "explanation": "Uber 构建了一个标准化的 A2A 客户端，用于自动执行令牌交换和参与者链传播，防止各个智能体团队以不一致的方式实现安全功能。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 智能体两者都不属于。",
+    "目标是在不剥夺智能体有用自主性的前提下，限制其犯错的影响范围。",
+    "Uber 将其定义为一种“默认安全”的开发者体验，将身份传播纳入标准的客户端路径，而不是让每个智能体团队独立实现。"
+  ],
+  "tags": [
+    "AI Agent",
+    "身份与访问管理",
+    "安全",
+    "LLM",
+    "MCP 协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 798,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781698500000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-17 20:15:00"
+}

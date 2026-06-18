@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-18 06:34:28 | [返回首页](/README.md)
+**更新时间**: 2026-06-18 08:36:11 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12874)
+- [AI & 大模型](#ai-llm) (12905)
 - [软件架构](#architecture) (21)
-- [前端与全栈](#frontend-fullstack) (852)
+- [前端与全栈](#frontend-fullstack) (853)
 - [DevOps](#devops) (605)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5980)
+- [其他](#other) (5982)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [GLM-5.2-上线并开源：专注-Coding-与长程任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493980&idx=1&sn=995ae194e71d723b6110fb8c621e618c) - AI 精选
 - [AI-智能体工具设计：有效与无效的模式---MachineLearningMastery.com](https://machinelearningmastery.com/ai-agent-tool-design-what-works-and-what-doesnt/) - AI 精选
 - [Kimi-K2.7-Code-编程模型已上线-Kimi-Code、API-开放平台](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488546&idx=1&sn=93d0057b04afc0c85495c6fd9a3b8516) - AI 精选
 - [神话催生寓言，Cursor-的-Composer-2.5，智能体构建智能体](https://www.deeplearning.ai/the-batch/issue-357) - AI 精选
@@ -41,9 +42,8 @@
 - [Dubbing-v2-发布：革命性的全新配音模型](https://elevenlabs.io/blog/introducing-dubbing-v2) - AI 精选
 - [使用-Codex-构建自我改进的税务智能体](https://openai.com/index/building-self-improving-tax-agents-with-codex) - AI 精选
 - [我们如何在多个产品中约束-Claude](https://www.anthropic.com/engineering/how-we-contain-claude) - AI 精选
-- [从透明开发到系统工程：AgentScope-2.0-发布](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501135&idx=1&sn=0b96d8e21b27a20f60c423657f2bca84) - AI 精选
 
-- [查看全部 12874 篇...](/details/tags/ai-llm.md)
+- [查看全部 12905 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 852 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 853 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5980 篇...](/details/tags/other.md)
+- [查看全部 5982 篇...](/details/tags/other.md)
 
 
