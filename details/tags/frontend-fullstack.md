@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-18 08:36:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-18 11:04:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -500,9 +500,7 @@
 
 ### [工具：&lt;click-to-play&gt;-—-静态帧播放器](https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything)
 
-2026-06-17 11:56:10 | 标签: Web Components, 性能优化, 前端与 Web, 开发者工具, 渐进增强
-
-> Simon Willison 介绍了一个名为 `<click-to-play>` 的简单渐进增强 Web Component。它接收包含 GIF 链接和静态首帧图片的标记，并渲染出一个带有播放按钮的静态帧。点击按钮后按需加载 GIF，从而避免在用户选择播放之前下载大型 GIF 文件。该组件专为性能和用户控制而设计，并作为工具发布在其网站上。
+2026-06-17 11:56:10
 
 
 
