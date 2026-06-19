@@ -1,0 +1,61 @@
+{
+  "id": "RAW_8d1be0f6",
+  "title": "轻量级 ADR 与架构建议论坛如何支撑架构决策",
+  "url": "https://www.infoq.com/news/2026/06/architectural-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-18 19:35:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Andrew Harmel-Law <a href=\"https://gotocph.com/2025/sessions/3816/a-commune-in-the-ivory-tower\">presented the architecture advice process</a> at GOTO Copenhagen. How we decide is at the core of architecture, and the architecture advice process is a way to <a href=\"https://www.infoq.com/news/2026/03/architecture-advice-process/\">decentralize architectural decisions</a>. It needs to be supported by Architecture Decision Records because of the speed at which technology and systems move, and can be complemented by a weekly architecture advice forum.</p>\n   <p>Writing is thinking, and therefore writing an Architectural Decision Record (ADR) helps those deciding in this practice, Harmel-Law argued. They help deciders make small, reasoned decisions, supported by the expertise of their peers. That also helps those less experienced in deciding to learn this art.</p>\n   <p>Lightweight ADRs allow the right people to be involved in the right decision-making at the right time. Offering written advice asynchronously allows different minds time to think in the way that suits them best, Harmel-Law said.</p>\n   <p>When ADRs are used to back up the architecture advice process, they combine to form an immutable change log for the overall system architecture, Harmel-Law explained:</p>\n   <blockquote>\n    <p>This represents both a granular record of the path taken to get to where the architecture is now, with all its gory and perhaps unpalatable context, as well as a learning resource for those both onboarding into a specific organization as well as for anyone desiring to learn how to think and reason architecturally.</p>\n   </blockquote>\n   <p>The architectural advice forum is a regular session open to all, which primarily serves to build trust in the advice process, make explicit the decisions that are happening following it, and to allow offering advice and discussing synchronously, Harmel-Law mentioned. It allows those less experienced in deciding to see this process (which is in older approaches frequently adversarial and undertaken behind closed doors) happening in front of them.</p>\n   <p>The architectural advice forum shines a light on the practice of architecture and democratises it. Not everyone will be inclined to attend, but they can, Harmel-Law explained:</p>\n   <blockquote>\n    <p>Not all attendees will actively participate, but they are able to. Only some will step up and present decisions and ADRs, but those that do will be able to harvest the knowledge and support of the collective. In a world that needs more architecture, not less, this is incredibly powerful.</p>\n   </blockquote>\n   <p>Failures with the advice process and lightweight ADRs arise mainly because of old \"top-down architectural practice\" mental models and a valuing of knowledge stocks (\"what I know\") over knowledge flows (\"what everyone who needs it knows\"), Harmel-Law explained:</p>\n   <blockquote>\n    <p>The issue that underpins them all is a lack of trust. In order for the advice process to work and prevent architects from becoming bottlenecks, the power to decide needs to be spread more widely. If those with that power are unwilling to share it, then none of the benefits can accrue.</p>\n   </blockquote>\n   <p>Harmel-Law mentioned that he sees traditional architects worrying about \"bad\" decisions, being the ones they disagree with. This is a failure to acknowledge that no one knows whether a decision will turn out well or poorly until it is put into action.</p>\n   <p>Feedback is the only way to know, and so deciding small and fast, and getting feedback on the outcomes of that decision rapidly, are key to avoiding this issue, Harmel-Law concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/andrewharmellaw/\">Andrew Harmel-Law</a> about the advice process, ADRs, and doing architecture.</p>\n   <p><strong>InfoQ: How can approaches like the advice process and lightweight ADRs fail?</strong></p>\n   <blockquote>\n    <p><strong>Andrew Harmel-Law</strong>: I frequently see issues where those whom the advice process now allows to decide, choose not to exercise this power as they are afraid of the ramifications. In these circumstances, those more experienced need to not take up the space the advice process opens up, and instead work with those less experienced to build their confidence and skills.</p>\n    <p>I also see decisions that fly under the radar. This can be for various reasons (typically those deciding don’t realise it’s a decision, or they do, but are afraid of being told \"no\" by others, despite the fact that the architecture advice process prevents that – they only need to seek advice, they maintain full responsibility (and accountability) for their decisions.</p>\n    <p>This can be remedied by those with more experience in the practice of architecture mentoring others. This is a great way to again turn knowledge stocks (the experience of the traditional architect) into knowledge flows (sharing that experience with others as and when they need it.).</p>\n   </blockquote>\n   <p><strong>InfoQ: Is there still value in doing architecture?</strong></p>\n   <blockquote>\n    <p><strong>Harmel-Law</strong>: The value of architecture, at all scopes and scales, is far more important than ever. With the technologies and tooling we have these days (even before LLMs came on the scene) and the number of people working on these systems, both within and outside of our firewalls, architecture (including sociotechnical architecture - who works on what) is becoming more important than ever.</p>\n    <p>We feel it when it goes wrong - just look at the mess many of us got ourselves into with microservices. It was supposed to enable team autonomy, but instead led to way too many distributed monoliths. Or think about ensuring our systems embody the systemic qualities we expect. Or the fact that our systems are constantly evolving or being put to uses that were never initially imagined.</p>\n    <p>Software is very powerful; it is capable of solving almost any problem we can throw at it. But making sure it’s a good fit for that is a lot of work. That’s architecture.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Lightweight ADRs and Architectural Advice Forums Can Support Architectural Decisions\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/architectural-decisions/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781782500000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文介绍了由轻量级 ADR 和每周架构建议论坛支撑的架构建议流程，以此实现架构决策的去中心化并构建学习型文化。",
+  "oneSentenceSummary": "本文介绍了由轻量级 ADR 和每周架构建议论坛支撑的架构建议流程，以此实现架构决策的去中心化并构建学习型文化。",
+  "summary": "本文总结了 Andrew Harmel-Law 在 GOTO Copenhagen 上关于架构建议流程的演讲。文章认为，为了跟上现代系统的复杂性和速度，架构决策应当去中心化。该流程由轻量级架构决策记录（ADR）支撑，ADR 既作为不可变变更日志，也作为学习资源。每周的架构建议论坛则通过建立信任、使决策透明化以及支持同步讨论来补充该流程。文章还讨论了常见的失败模式，例如缺乏信任以及偏好“知识存量”而非“知识流动”，最后重申了在复杂系统和 AI 时代架构日益增长的重要性。",
+  "mainPoints": [
+    {
+      "point": "架构建议流程通过赋能最接近工作的人来实现决策去中心化。",
+      "explanation": "不再由单一架构师做出所有决策，建议流程允许任何人在征求相关专家意见后做出决策，从而避免瓶颈并分散所有权。"
+    },
+    {
+      "point": "轻量级 ADR 既是决策日志，也是学习资源。",
+      "explanation": "编写 ADR 能强制进行清晰思考，并创建系统演进的不可变记录（包括上下文和权衡），这对于新员工入职和教授架构推理能力来说价值连城。"
+    },
+    {
+      "point": "架构建议论坛能建立信任并普及架构实践。",
+      "explanation": "定期、开放的论坛使决策过程透明化，允许同步讨论，并帮助经验较少的团队成员通过观察架构决策的制定过程来学习。"
+    },
+    {
+      "point": "主要的失败模式是缺乏信任和知识囤积的心态。",
+      "explanation": "传统架构师可能害怕“糟糕的”决策，或不愿分享决策权。关键在于从重视“知识存量”（我所知道的）转向重视“知识流动”（每个人都需要知道的）。"
+    },
+    {
+      "point": "在复杂、不断演进的系统时代，架构比以往任何时候都更重要。",
+      "explanation": "借助现代工具、分布式团队和 AI 的兴起，确保系统适合其目的需要深思熟虑的架构思考，包括社会技术方面的考量。"
+    }
+  ],
+  "keyQuotes": [
+    "写作即思考，因此编写架构决策记录（ADR）有助于实践中的决策者。",
+    "这既代表了系统架构演进路径的细粒度记录……也是新员工入职以及任何希望学习如何像架构师一样思考和推理的人的学习资源。",
+    "所有问题的根源都是缺乏信任。为了让建议流程发挥作用并防止架构师成为瓶颈，决策权需要更广泛地分配。",
+    "在一个需要更多架构而非更少的世界里，这非常强大。"
+  ],
+  "tags": [
+    "软件架构",
+    "架构决策记录",
+    "工程文化",
+    "决策制定",
+    "技术领导力"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 892,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781782500000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-18 19:35:00"
+}

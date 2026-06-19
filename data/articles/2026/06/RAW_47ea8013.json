@@ -1,0 +1,56 @@
+{
+  "id": "RAW_47ea8013",
+  "title": "VS Code 1.123 新增两小时扩展更新延迟，以限制供应链攻击",
+  "url": "https://www.infoq.com/news/2026/06/vscode-extension-update-delay/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-18 18:15:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Starting with <a href=\"https://code.visualstudio.com/updates/v1_123\">VS Code 1.123</a>, shipped June 3, newly published extension versions sit for two hours before auto-update kicks in. The idea is straightforward: if someone compromises an extension maintainer's account and pushes a malicious update, there's a window to catch it and pull the release before it rolls out to millions of developers. You can still click Update manually at any time. Microsoft <a href=\"https://code.visualstudio.com/updates/v1_123\">puts it plainly</a>:</p>\n   <blockquote>\n    <p>When automatic updates are enabled, new versions are auto-updated two hours after they are published, adding an extra layer of protection against problematic or potentially compromised releases.</p>\n   </blockquote>\n   <p>One catch: the delay does not apply to extensions from \"<em>trusted publishers</em>\" like Microsoft, GitHub, and OpenAI. Those keep updating instantly. That's a strange carve-out given that trusted publishers with massive install bases are exactly the highest-value targets for account compromise.</p>\n   <p>The move follows a wave of similar controls across package ecosystems. Pip 26.1 recently shipped <a href=\"https://www.infoq.com/news/2026/05/pip-261-dependency-cooldowns/\">configurable dependency cooldowns</a>, where teams can block packages younger than seven days. Research found that a seven-day cooldown would have stopped 8 out of 10 analyzed supply chain attacks. RubyGems added opt-in cooldowns to Bundler. npm, pnpm, Yarn, and Bun have all introduced minimum release age settings over the past year. VS Code now joins at the IDE extension layer, though its two-hour window is dramatically shorter than what other ecosystems offer.</p>\n   <p>The <a href=\"https://www.reddit.com/r/programming/comments/1u089ai/vs_code_adds_2hour_extension_autoupdate_delay_to/\">Reddit thread</a> was not kind about the duration. The top comment, with over 650 upvotes, set the tone:</p>\n   <blockquote>\n    <p>2 hours is not nearly enough given a lot of supply chain compromises have only been found days or even weeks after. Would be better to default to longer IMO, and also add an option to allow the user to choose.</p>\n   </blockquote>\n   <p>A security practitioner pushed back harder on the entire \"<em>update immediately</em>\" orthodoxy:</p>\n   <blockquote>\n    <p>The biggest myth in cybersecurity I've ever heard is \"Make sure you download every update as it becomes available.\" I've worked in very high security environments. We have never been current on updates. There was always a delay of a week up to even a month, barring patches for very specific vulnerabilities.</p>\n   </blockquote>\n   <p>Not everyone dismissed the two-hour window outright. One commenter pointed out that most malicious packages are caught by automated scanners, not humans:</p>\n   <blockquote>\n    <p>By far the most malicious npm packages are found not by users, but by automated security scanners. The same applies to VS Code extensions. When a new package is released, security scanners immediately look for suspicious code. But 2 hours is indeed quite short for this. After all, when a security scanner flags a package, someone still needs to look at it to verify that the threat is real.</p>\n   </blockquote>\n   <p>Several commenters argued that cooldowns miss the point entirely. One proposed that VS Code should sandbox extensions with explicit permissions instead, the same model mobile operating systems use for apps. Another suggested staged rollouts: 5% of users get the update immediately, another 10% a couple of hours later, scaling up over days until everyone has it. That way compromised updates hit a small population first, giving scanners and the community time to react before broad distribution.</p>\n   <p>The practical validation came from developers already using longer cooldowns elsewhere. One commenter reported setting npm libraries to a two-week delay and said \"<em>it has avoided more problems than it has caused</em>.\" Another shared that their workplace enforces a six-day policy on their internal npm registry. A pnpm user credited the minimumAgeRelease config with saving them from two supply chain attacks in the past few months.</p>\n   <p>The ecosystem that still lacks any cooldown mechanism is WordPress. As InfoQ <a href=\"https://www.infoq.com/news/2026/05/wordpress-plugins-supply-chain/\">recently reported</a>, an attacker bought 30+ plugins on Flippa, planted a backdoor in the first commit, and waited eight months before activation. No publication delay, no change-of-control review, no mandatory code signing. The VS Code change, modest as it is, makes that absence harder to ignore.</p>\n   <p>For teams managing VS Code deployments, the two-hour delay is on by default with no configuration needed. Those who want longer windows can disable auto-updates entirely and manage extension versions through policy-based allowlists or a curated internal marketplace.</p>\n   <p>VS Code 1.123 is <a href=\"https://code.visualstudio.com/updates/v1_123\">available now</a> for Windows, macOS, and Linux.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"VS Code 1.123 Adds Two-Hour Extension Update Delay to Limit Supply Chain Attacks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/vscode-extension-update-delay/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781777700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "VS Code 1.123 引入了两小时的自动扩展更新延迟，以缓解供应链攻击，但短暂的时间窗口和受信任发布者的豁免引发了批评。",
+  "oneSentenceSummary": "VS Code 1.123 引入了两小时的自动扩展更新延迟，以缓解供应链攻击，但短暂的时间窗口和受信任发布者的豁免引发了批评。",
+  "summary": "本文报道了 VS Code 1.123 的一项新安全功能：新发布的扩展版本在自动更新前会延迟两小时。其目的是创建一个时间窗口，以便在恶意更新影响数百万用户之前将其捕获。文章详细介绍了该功能，指出微软和 GitHub 等“受信任发布者”可获得豁免，并将其置于包生态系统冷却期（Pip、npm、RubyGems）的更广泛趋势中。文章还广泛报道了 Reddit 讨论帖中的社区反应，包括对短暂窗口期的批评、对沙盒或分阶段推出的支持，以及开发者在其他生态系统中使用更长延迟的正面案例。文章最后对比了 VS Code 的举措与 WordPress 插件生态系统缺乏此类机制的情况。",
+  "mainPoints": [
+    {
+      "point": "VS Code 1.123 为新的扩展版本增加了两小时的自动更新延迟。",
+      "explanation": "此延迟旨在提供一个时间窗口，以便在恶意更新广泛分发之前发现并撤回它们，从而为供应链攻击增加一层保护。"
+    },
+    {
+      "point": "该延迟不适用于微软和 GitHub 等“受信任发布者”。",
+      "explanation": "这种豁免被批评为逻辑缺陷，因为这些高价值目标最容易被账户入侵，理应受到最严格的保护。"
+    },
+    {
+      "point": "开发者社区普遍认为两小时窗口太短。",
+      "explanation": "社区反馈（包括 Reddit 上点赞最高的评论）认为，许多供应链入侵是在数天或数周后才被发现的，更长的默认延迟加上用户可配置的选项会更有效。"
+    },
+    {
+      "point": "有人提出了沙盒和分阶段推出等替代安全模型。",
+      "explanation": "评论者建议，VS Code 应该为扩展采用移动操作系统式的权限沙盒，或实施渐进式推出，以限制被攻破更新的影响范围。"
+    }
+  ],
+  "keyQuotes": [
+    "考虑到许多供应链入侵是在数天甚至数周后才被发现的，两小时远远不够。",
+    "我在网络安全领域听过最大的谬论就是‘确保一有更新就立即下载’。",
+    "迄今为止，绝大多数恶意的 npm 包并非由用户发现，而是由自动化安全扫描器发现的。"
+  ],
+  "tags": [
+    "安全",
+    "VS Code",
+    "供应链安全",
+    "开发者工具",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 686,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781777700000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-18 18:15:00"
+}

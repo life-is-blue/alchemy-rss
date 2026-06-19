@@ -1,0 +1,51 @@
+{
+  "id": "RAW_90bf301e",
+  "title": "[开源] 做了一个轻量终端 Agent，无 GUI，无 TUI，简单回复",
+  "url": "https://www.v2ex.com/t/1221325#reply0",
+  "date": "2026-06-18 14:10:06",
+  "author": "Dogxi",
+  "siteName": "V2EX",
+  "content": null,
+  "aiSummary": "本文介绍了一个轻量级终端 AI Agent 工具 ami，支持在终端中直接提问、代码阅读、Web 搜索和 Git 辅助，安装简单，无需 GUI 或 TUI。",
+  "oneSentenceSummary": "本文介绍了一个轻量级终端 AI Agent 工具 ami，支持在终端中直接提问、代码阅读、Web 搜索和 Git 辅助，安装简单，无需 GUI 或 TUI。",
+  "summary": "文章作者发布了一款名为 ami 的开源终端 AI Agent 工具。其核心定位是解决「只想问 AI 一个简单问题，不想打开 GUI 或完整 TUI」的轻量需求。用户可通过 `ami \"问题\"` 直接在终端获得简洁回答。工具支持本地工具调用、代码阅读、Web Search 和 Git 辅助（如自动生成 commit 信息）。安装方式为 `npm i -g @dogxi/ami`，初始化后即可使用。文章附带了官网和 GitHub 仓库链接。",
+  "mainPoints": [
+    {
+      "point": "ami 是一款轻量终端 AI Agent，无需 GUI 或 TUI。",
+      "explanation": "用户可在终端直接以 `ami \"问题\"` 形式提问，获得简洁回答，适合快速查询场景。"
+    },
+    {
+      "point": "支持本地工具调用、代码阅读、Web Search 和 Git 辅助。",
+      "explanation": "工具覆盖了开发者常见需求，如阅读项目代码、搜索网络信息、自动生成 Git commit 信息等。"
+    },
+    {
+      "point": "安装和使用门槛低。",
+      "explanation": "通过 npm 全局安装，一条命令初始化后即可使用，对开发者友好。"
+    }
+  ],
+  "keyQuotes": [
+    "有时候只是想问 AI 一个很简单的问题，不想打开 GUI ，也不需要完整 TUI 。",
+    "直接 ami commit 让 AI 帮忙写 commit 信息。"
+  ],
+  "tags": [
+    "AI Agent",
+    "AI 编程",
+    "开发者工具",
+    "开源项目",
+    "终端工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 81,
+  "wordCount": 204,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1781763006000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-18 14:10:06"
+}
