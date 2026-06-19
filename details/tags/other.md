@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-19 08:38:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-19 11:05:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -14185,41 +14185,31 @@
 
 ### [Pull-Request-限制如何减少噪音](https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/)
 
-2026-06-19 00:00:00 | 标签: 开源, 开发者工具, GitHub, 社区管理, 工程实践
-
-> 这篇来自 GitHub 博客的文章宣布了一项新功能：Pull Request 限制。该功能允许仓库维护者为没有写入权限的用户设置最大打开的 Pull Request 数量，以帮助管理日益增长的贡献量。该功能是对开源领域“永恒九月”现象的回应，即创建 Pull Request 的便捷性已经超过了人类审查它们的能力。文章解释了该限制的工作原理，包括为可信贡献者设置绕过名单以及排除草稿 PR。文章还概述了即将推出的功能，如归档 Pull Request、Issue 限制和更智能的绕过信号。文章引用了 AutoGPT 和 Homebrew 等热门项目维护者的评价，他们表示这些限制改善了他们的审查体验，...
+2026-06-19 00:00:00
 
 
 
 ### [预写意图日志：高效大规模-CDC-的基础](https://www.infoq.com/presentations/write-ahead-intent-log/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-18 21:13:00 | 标签: 系统设计, 分布式系统, 变更数据捕获, 数据工程, 后端开发
-
-> 本文基于 Vinay Chella 和 Akshat Goel 在 InfoQ 上的演讲，详细介绍了 DoorDash 从脆弱的传统变更数据捕获（CDC）系统到其自研的预写意图日志的演进历程。作者首先阐述了 CDC 在 DoorDash 的关键作用，它支撑着实时订单流、商家更新和业务分析。接着，他们剖析了传统 CDC 的主要挑战：与数据库内部机制紧密耦合（每种数据库都有不同的 CDC 方言）、可扩展性瓶颈（单一连接器成为单点故障）、生态系统碎片化（生产级功能需要付费）、以及管道脆弱性（Schema 变更会破坏连接器，恢复过程复杂）。为了解决这些问题，他们引入了一种基于四项原则的解耦架构：设计上...
+2026-06-18 21:13:00
 
 
 
 ### [轻量级-ADR-与架构建议论坛如何支撑架构决策](https://www.infoq.com/news/2026/06/architectural-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-18 19:35:00 | 标签: 软件架构, 架构决策记录, 工程文化, 决策制定, 技术领导力
-
-> 本文总结了 Andrew Harmel-Law 在 GOTO Copenhagen 上关于架构建议流程的演讲。文章认为，为了跟上现代系统的复杂性和速度，架构决策应当去中心化。该流程由轻量级架构决策记录（ADR）支撑，ADR 既作为不可变变更日志，也作为学习资源。每周的架构建议论坛则通过建立信任、使决策透明化以及支持同步讨论来补充该流程。文章还讨论了常见的失败模式，例如缺乏信任以及偏好“知识存量”而非“知识流动”，最后重申了在复杂系统和 AI 时代架构日益增长的重要性。
+2026-06-18 19:35:00
 
 
 
 ### [VS-Code-1.123-新增两小时扩展更新延迟，以限制供应链攻击](https://www.infoq.com/news/2026/06/vscode-extension-update-delay/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-18 18:15:00 | 标签: 安全, VS Code, 供应链安全, 开发者工具, 开源
-
-> 本文报道了 VS Code 1.123 的一项新安全功能：新发布的扩展版本在自动更新前会延迟两小时。其目的是创建一个时间窗口，以便在恶意更新影响数百万用户之前将其捕获。文章详细介绍了该功能，指出微软和 GitHub 等“受信任发布者”可获得豁免，并将其置于包生态系统冷却期（Pip、npm、RubyGems）的更广泛趋势中。文章还广泛报道了 Reddit 讨论帖中的社区反应，包括对短暂窗口期的批评、对沙盒或分阶段推出的支持，以及开发者在其他生态系统中使用更长延迟的正面案例。文章最后对比了 VS Code 的举措与 WordPress 插件生态系统缺乏此类机制的情况。
+2026-06-18 18:15:00
 
 
 
 ### [AI-时代，实时入湖正在告别-ETL：从-Kafka-到-Iceberg-的架构减法](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561192&idx=1&sn=125069c1fabd3e8d3295c00eb13f8236)
 
-2026-06-18 14:33:00 | 标签: 数据架构, 实时入湖, 零 ETL, Iceberg, Kafka
-
-> 文章首先指出，在 AI 驱动的数据应用中，企业需要同时支撑实时消费与历史分析的数据底座，Kafka + Iceberg + 对象存储成为主流组合。然而，传统的 Kafka → Flink/Spark → Iceberg 链路存在系统边界多、通用能力重复实现、运维成本高等问题。因此，“零 ETL”趋势应运而生，其核心并非消除数据处理，而是将高频、通用的入湖能力（如格式转换、Schema 演进、CDC 处理、小文件治理）收敛为平台内建能力。文章详细介绍了阿里云提出的 Kafka × Table Bucket 方案，阐述了其从记录转换、Schema 感知到 Iceberg 写入的端到端流程，并重点分...
+2026-06-18 14:33:00
 
 
 
@@ -35931,11 +35921,11 @@
 
 
 
-### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-29T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 

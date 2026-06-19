@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-19 08:38:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-19 11:05:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,9 +710,7 @@
 
 ### [Ky-2.0：基于-Fetch-API-的封装，重构-Hooks、更智能的超时与内置-Schema-验证](https://www.infoq.com/news/2026/06/ky-2-revamp-axios/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-18 19:30:00 | 标签: JavaScript, HTTP 客户端, Fetch API, 开源, 开发者工具
-
-> Ky 是 Sindre Sorhus 开发的基于 Fetch API 的轻量级 JavaScript HTTP 客户端，现已发布 2.0 版本。此次重大更新将所有 hooks 统一为单一状态对象，以保持一致性；新增 `totalTimeout` 选项，用于限制整个操作的总时长；并将 URL 处理拆分为更清晰的 `prefix` 和 `baseUrl` 选项。此外，`.json()` 方法现在内置了 Standard Schema 验证，允许开发者使用 Zod 或 Valibot 对响应进行验证和类型化。此版本包含一些破坏性变更，例如要求 Node.js 22、新的 hook 回调签名，以及通过...
+2026-06-18 19:30:00
 
 
 
