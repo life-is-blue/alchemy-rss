@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-20 08:30:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-20 11:04:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,17 +710,13 @@
 
 ### [纯-Headless-与混合-Headless-CMS：为企业内容管理选择正确的架构](https://www.freecodecamp.org/news/pure-headless-vs-hybrid-headless-cms-for-enterprise-content-management/)
 
-2026-06-20 01:16:15 | 标签: CMS 架构, Headless CMS, 企业内容管理, Web 开发, 数字体验平台
-
-> freeCodeCamp 的这篇文章对纯 Headless 与混合 Headless CMS 架构在企业内容管理中的应用进行了详细且平衡的比较。文章指出，纯 Headless CMS（如 Strapi、Contentful）专注于内容存储和 API 交付，为开发者提供最大的灵活性和真正的全渠道能力，但通常以牺牲编辑工具和内容预览为代价。混合 Headless CMS（如 Coremedia、Optimizely）则将 API 驱动的交付与传统 CMS 功能（如可视化编辑、页面管理和内置治理）相结合，在开发者自由度和营销人员友好工作流之间取得平衡。文章从企业关键维度（内容创作体验、开发者灵活性、...
+2026-06-20 01:16:15
 
 
 
 ### [TSRX：一种框架无关的-JSX-替代方案](https://www.infoq.com/news/2026/06/tsrx-alternative-jsx/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-19 19:49:00 | 标签: JavaScript & TypeScript, 前端与 Web, React, Vue, Svelte
-
-> 本文报道了 TSRX 的 alpha 版本发布。TSRX 是由 Dominic Gannaway（前 React 和 Svelte 核心工程师）创建的 TypeScript 语言扩展。它通过插件将单个 `.tsrx` 组件文件编译到多种运行时目标，包括 React、Preact、Solid、Vue 和 Ripple。TSRX 将语句级控制流（`@if`、`@for`、`@switch`、`@try`）、属性简写、惰性解构和组件作用域样式直接引入语法。文章涵盖了 Hacker News 上的社区反应、SolidJS 创建者 Ryan Carniato 的分析，以及实际采用说明，包括 Vite/R...
+2026-06-19 19:49:00
 
 
 

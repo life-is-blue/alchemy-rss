@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-20 08:30:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-20 11:04:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -566,9 +566,7 @@
 
 ### [幕后故事：将-450-个-JVM-仓库整合为单体仓库以减少依赖漂移](https://www.infoq.com/news/2026/06/block-450-jvm-monorepo-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-19 22:47:00 | 标签: Monorepo, 后端开发, DevOps, CI/CD, 开发者工具
-
-> 本文详细介绍了 Block， Inc. 在其 Cash App 和 Square 工程组织中，从多仓库架构向单体仓库架构的大规模迁移。该计划整合了约 450 个基于 JVM 的仓库，以解决依赖版本漂移、重复的升级工作和运行时不兼容问题。最终形成的单体仓库每周支持约 8，800 次构建，p90 CI 时间约为 10 分钟。文章涵盖了迁移背后的技术决策，包括构建自定义 IntelliJ 插件以实现选择性项目加载、实施基于依赖关系图的构建范围界定，以及采用合并队列。在接受 InfoQ 采访时，Yissachar Radcliffe 讨论了多仓库依赖管理的挑战、如何对变更进行分类以实现高效的 CI，以...
+2026-06-19 22:47:00
 
 
 

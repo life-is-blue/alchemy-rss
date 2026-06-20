@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-20 08:30:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-20 11:04:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [测试神话与寓言，超越-SWE-bench，Nvidia-的开放竞争者](https://www.deeplearning.ai/the-batch/issue-358)
 
-2026-06-19 15:00:21 | 标签: AI 政策, AI 智能体, LLM, 开源, 基准测试
-
-> 本期通讯涵盖了三大主题。首先，它审视了 Anthropic 和美国政府近期为控制前沿 AI 模型访问权所采取的行动，认为这些举动展现了赤裸裸的权力，并将加速全球范围内对 AI 主权和开源替代方案的追求。其次，它回顾了三个新的基准测试——DeepSWE、ProgramBench 和 ITBench-AA，这些测试通过在更复杂的现实世界任务上检验智能体编程能力，正在取代已趋饱和的 SWE-bench 系列。第三，它详细介绍了 Nvidia 的 Nemotron 3 Ultra，这是一个拥有混合 Mamba-Transformer 架构的大型开放权重模型，强调了其速度和开放性，但也指出其性能并非顶尖...
+2026-06-19 15:00:21
 
 
 
@@ -12694,25 +12692,19 @@
 
 ### [GPU-驻留-Top-K-实现-Agentic-RAG：我写了一个-CUDA-内核，让检索步骤不再频繁与-GPU-交换数据](https://towardsdatascience.com/gpu-resident-top-k-for-agentic-rag-i-built-a-cuda-kernel-so-my-retrieval-step-would-stop-bouncing-off-the-gpu/)
 
-2026-06-19 20:00:00 | 标签: AI Agent, RAG, CUDA, GPU 编程, 向量搜索
-
-> 本文是《生产级 Agentic 推理》系列的第三部分。作者指出了 Agentic RAG 中一个隐蔽的性能杀手：每次检索步骤所需的 PCIe 往返——查询嵌入从 GPU 传输到 CPU 进行相似度评分和 Top-K 选择，然后将结果传回 GPU。提出的解决方案是将整个语料库常驻在 GPU 显存中，并在设备上完成所有检索操作——评分、逐块局部 Top-K 以及多路归并。该内核用 343 行 CUDA 代码实现，优先考虑可审计性和位级正确性而非技巧性。在 GTX 1080 上对 45 种配置（N ∈ {10k-1M}，D ∈ {384， 768， 1024}，K ∈ {8， 32， 100}）的基...
+2026-06-19 20:00:00
 
 
 
 ### [ACL-2026-|-腾讯混元发现「不完全学习」，SFT-仍漏学-15%训练数据](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247721067&idx=2&sn=82b23158c4f51801488304b5d6a10f5c)
 
-2026-06-19 14:44:00 | 标签: LLM, SFT, 模型训练与推理, AI 研究, ACL 2026
-
-> 本文解读了腾讯混元与 UNSW 联合团队在 ACL 2026 上发表的论文，该论文首次系统性地研究了 SFT 中的「不完全学习现象」（ILP）。核心发现是，即使 SFT 训练已收敛，模型在训练集上重新测试时，平均仍有 15.3% ± 2.1% 的样本未能正确回答。这些未学习样本并非随机分布，而是系统性地集中在涉及罕见实体、多步推理、与预训练知识冲突的复杂样本上。论文将 ILP 归因于五大根因：基模型知识缺失、预训练知识冲突、数据自身矛盾、多任务训练顺序不当、以及简单样本梯度主导。针对每种病因，作者提出了相应的干预策略，如针对知识缺失的持续预训练（CPT）。文章还指出，CPT 虽能精准修复知识冲...
+2026-06-19 14:44:00
 
 
 
 ### [AINews-GLM-5.2-货真价实；Z.ai-预测年底前推出-Open-Fable](https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe)
 
-2026-06-19 13:53:54 | 标签: LLM, 开源, AI 智能体, 基准测试, AI 编程
-
-> 本期 Latent Space 的 AINews 聚焦于智谱 GLM-5.2 的突破。多位独立专家（Jeremy Howard、Artificial Analysis）以及 /r/LocalLlama 社区已证实，它是一个真正接近前沿水平的开放权重模型，这与典型的“刷榜型”开放发布截然不同。该通讯还涵盖了行业更广泛的转变：从孤立评估模型转向评估“模型 + 工具链 + 记忆 + 软件配置管理”整体栈，Noumena 的 ncode 和 OpenHands 的对比研究突显了这一点。文章讨论了新的自动化原语，如 OpenAI 的 Codex Record & Replay 和 Cursor 的 /a...
+2026-06-19 13:53:54
 
 
 
@@ -42520,81 +42512,61 @@
 
 ### [医学图像中隐藏的-PHI-问题：构建用于-AI-去标识化的合成数据集](https://www.freecodecamp.org/news/build-a-synthetic-dataset-for-ai-de-identification/)
 
-2026-06-20 01:23:54 | 标签: AI 医疗, 医学影像, 合成数据, 去标识化, DICOM
-
-> 本文探讨了在隐私法规限制下，无法自由共享包含 PHI 的训练数据时，构建医学图像 AI 去标识化系统所面临的挑战。作者提出了一种实用的解决方案：合成 PHI 生成流程。该流程使用 OpenPOCUS 的开源超声图像，通过 Python 的 Faker 库生成逼真的假患者身份信息，然后将这些合成 PHI 有意注入到图像像素（作为可见文本叠加）和 DICOM 元数据头中。其关键特性是能以 CSV 格式自动生成真实标注（边界框、文本值、DICOM 标签），从而实现对去标识化工具的客观评估。该流程包含防止遮挡临床内容的安全检查，以及确保符合标准的三层 DICOM 验证过程。作者还分享了关于图像加载库（...
+2026-06-20 01:23:54
 
 
 
 ### [如何构建一个-AI-驱动的、本地优先的-Chrome-扩展，将你的浏览历史转化为意图地图](https://www.freecodecamp.org/news/how-to-build-an-ai-powered-local-first-chrome-extension/)
 
-2026-06-20 01:14:43 | 标签: Chrome 扩展, IndexedDB, TypeScript, AI 编程, 本地优先
-
-> 这篇全面的教程将引导你构建 'openloops'，一个 Manifest V3 Chrome 扩展，旨在解决扁平化、缺乏上下文的浏览历史问题。它通过实时捕获和 14 天回溯来获取浏览数据，将其存储在 IndexedDB 中，过滤噪音，将事件分段为会话，并将它们聚类成代表活跃决策、停滞研究或未解决问题的 '意图线程'。核心流程完全在本地运行且保护隐私。可选的、需主动选择加入的层使用 Claude API 为线程生成通俗易懂的摘要和下一步行动建议，并使用 context.dev API 进行品牌识别。教程涵盖了完整的技术栈：TypeScript 类型定义、IndexedDB 模式设计、聚类算法、...
+2026-06-20 01:14:43
 
 
 
 ### [我们如何构建内部数据分析智能体](https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/)
 
-2026-06-20 00:00:00 | 标签: AI 智能体, LLM, 数据工程, AI 工程, 开发者工具
-
-> 本文详细介绍了 Qubot 的设计与演进，这是 GitHub 内部一个由 GitHub Copilot 驱动的分析智能体。其核心架构由三部分组成：用户界面（Slack、VS Code、Copilot CLI）、一个联邦上下文层（用于组织从原始遥测数据到精选业务指标的知识），以及一个连接 Kusto 和 Trino 的查询引擎。一个关键洞见是：结构良好的上下文层不仅能提高准确性，还能将返回正确答案的速度提升三倍。文章还描述了用于在部署前测试变更的离线评估框架，并分享了在内部广泛采用过程中获得的经验，包括 Qubot 如何减轻中央数据团队的负担，并赋能更多员工自主探索数据。
+2026-06-20 00:00:00
 
 
 
 ### [面向-AI-智能体的临时-Cloudflare-账户](https://blog.cloudflare.com/temporary-accounts/)
 
-2026-06-19 22:00:01 | 标签: AI Agent, Cloudflare, 开发者工具, AI 编程, 部署
-
-> Cloudflare 宣布推出面向智能体的临时 Cloudflare 账户（Temporary Cloudflare Accounts for Agents），这项新功能消除了 AI 智能体的注册障碍。当智能体运行 `wrangler deploy --temporary` 时，Cloudflare 会为其配置一个临时账户、提供 API 令牌并部署 Worker。部署内容将保持在线 60 分钟，在此期间人类用户可以认领该账户以使其变为永久账户。文章阐述了该功能的动机（后台智能体、试错循环、智能体平台期望），详细介绍了完整流程（部署、迭代、认领），并将其定位为打造无摩擦智能体部署的更广泛战略的一...
+2026-06-19 22:00:01
 
 
 
 ### [AI-智能体让-OpenAI-的数据变得有意义](https://www.infoq.com/presentations/data-aware-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-19 20:02:00 | 标签: AI 智能体, LLM, 数据工程, AI 工程, MCP 协议
-
-> 来自 OpenAI 数据生产力团队的 Bonnie Xu 介绍了 Kepler，一个内部 AI 数据分析智能体。演讲涵盖了大规模数据发现（7 万个数据集，每天 600PB）的挑战、Kepler 的架构，以及其成功的三个关键支柱：提供超越表元数据的丰富上下文（包括代码谱系和公司知识）、实现用于持续自我学习和纠正的记忆功能，以及使用稳健的评估来防止性能退化。该智能体可通过 Slack、IDE（MCP）和 Web UI 访问，并能处理复杂的多步骤分析、后续问题以及数据可视化。主要经验包括用户反馈循环的重要性、在用户所在之处提供服务（Slack 优先），以及避免过度规定性的提示词。未来计划包括微调专用...
+2026-06-19 20:02:00
 
 
 
 ### [CircleCI-推出-Chunk-Sidecars，将-CI-验证直接融入-AI-编程工作流](https://www.infoq.com/news/2026/06/circleci-chunk-sidecars/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-19 20:00:00 | 标签: CI/CD, AI 编程, 开发者工具, DevOps, 软件工程
-
-> CircleCI 发布了 Chunk Sidecars 这一新功能，可为 AI 编程智能体提供快速、预配置的云环境，使其在代码提交前就能运行测试、代码检查和验证。该功能旨在解决高速验证 AI 生成代码时的瓶颈问题——传统 CI 管道造成的延迟会导致智能体丢失上下文。Chunk Sidecars 创建了一个“内循环验证”流程，让智能体能在数秒内自我修正。此次发布反映了一个更广泛的行业趋势：验证而非代码创建，正成为主要的工程挑战。CircleCI 还将此功能与用于轻量级验证运行的 Chunk Microbuilds 相结合。文章将此定位为 CircleCI 以自主 CI/CD 智能体 Chunk ...
+2026-06-19 20:00:00
 
 
 
 ### [Azure-Functions-在-Build-2026-大会上推出无服务器智能体运行时](https://www.infoq.com/news/2026/06/azure-functions-serverless-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-19 16:57:00 | 标签: Cloud Native / DevOps, Serverless, AI Agent, Azure Functions, MCP Protocol
-
-> 本文报道了微软在 Build 2026 大会上为 Azure Functions 推出的全新无服务器智能体运行时，现已进入公开预览。其核心创新是 .agent.md 文件，这是一种 Markdown 优先的编程模型，智能体的指令、工具、触发器和连接都在一个可读的文档中声明。任何现有的 Azure Functions 触发器（HTTP、Timer、Service Bus 等）现在都可以启动一个智能体，该智能体能够访问 MCP 工具服务器、通过 Azure Container Apps 进行沙箱化代码执行，以及拥有超过 1，400 个连接器的完整目录。其运营模型与标准 Functions 保持一致...
+2026-06-19 16:57:00
 
 
 
 ### [Windows-平台安全与-AI-智能体安全竞赛](https://www.infoq.com/news/2026/06/windows-security-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-19 16:00:00 | 标签: AI Agent, 平台安全, LLM, Microsoft, Kubernetes
-
-> 本文来自 InfoQ，报道了微软新发布的 Windows 开发者博客文章，该文章介绍了 Microsoft Execution Containers (MXC) SDK，这是一个用于 Windows 和 WSL 上 AI 智能体的策略驱动执行层。MXC 抽象了进程隔离、会话隔离以及计划中的微虚拟机和 Linux 容器等隔离原语，所有这些都通过 Entra ID 和 Intune 进行集中管理。文章认为，为了实现大规模安全的智能体部署，隔离、身份和可管理性必须内置于操作系统中。随后，文章对竞争格局进行了全面调查，涵盖了 NVIDIA 的 OpenShell、Red Hat 对 OpenShell...
+2026-06-19 16:00:00
 
 
 
 ### [GitLab-19.0-将智能体-AI-嵌入密钥管理、合并请求与供应链安全](https://www.infoq.com/news/2026/06/gitlab-19-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-19 16:00:00 | 标签: DevOps, GitLab, AI 智能体, DevSecOps, CI/CD
-
-> GitLab 于 5 月 21 日发布的 19.0 版本，将其智能体 AI 能力从代码生成扩展到周边的运营工作流程。主要功能包括：GitLab Secrets Manager 的公测版，用于在平台内管理凭证；扩展后的 Developer Flow 智能体，现在可以处理审阅者反馈、拆分过大的 MR 以及解决冲突；以及基于 SBOM 的依赖扫描器的正式发布。该版本还将 GitLab Duo Core 转换为基于使用量的计费模式（通过 GitLab Credits），为 CI/CD 目录管理引入了 Components Analytics，并为 Duo Agent Platform 增加了对开源模型...
+2026-06-19 16:00:00
 
 
 
 ### [Datasette-Apps：在-Datasette-中托管自定义-HTML-应用](https://simonwillison.net/2026/Jun/18/datasette-apps/)
 
-2026-06-19 09:06:27 | 标签: Datasette, Web 开发, 安全, AI 编程, 开源
-
-> 本文由 Simon Willison 撰写，宣布并解释了 Datasette 生态系统中新插件 `datasette-apps` 背后的设计理念。其核心思想是允许用户在 Datasette 实例中托管自定义的单文件 HTML+JavaScript 应用。这些应用运行在高度受限的 `<iframe sandbox>` 中，并配有严格的内容安全策略（CSP），从而阻止它们访问 cookies、localStorage 或发起外部网络请求。它们通过 `MessageChannel()` API 与父级 Datasette 应用通信，以执行只读 SQL 查询，并可通过预配置的存储查询（stored q...
+2026-06-19 09:06:27
 
 
 
@@ -60662,41 +60634,31 @@ http://antirez.com/news/162
 
 ### [如何围绕公司隐性规则设计智能体系统](https://hbr.org/2026/06/how-to-design-agentic-systems-around-the-implicit-rules-that-govern-your-company)
 
-2026-06-19 20:05:01 | 标签: AI 智能体, 组织变革, 人工智能与机器学习, 生成式 AI, 技术与分析
-
-> 文章以一个警示故事开篇：一家金融服务公司因 AI 智能体完美执行了常规的受益人更新操作，却未能捕捉到经验丰富的顾问本应察觉的对话信号，最终失去了一位高净值客户。作者 K. Sudhir 引入了“隐性组织”的概念——即让正式流程得以运转的非书面协调、激励与专业判断系统。他认为，若不考虑这一隐藏层面就部署 AI 智能体，会造成“隐性替代”：智能体以机器速度执行真实流程的简化版本，导致错误累积并侵蚀判断力。文章以 Ramp、麦肯锡和雅诗兰黛为例，说明企业如何将隐性知识中可检索的部分编码化，但强调判断层——即知道何时暂停并破例的能力——仍然是人类独有的。文章警告了多智能体系统的风险，即错误会无声地累积...
+2026-06-19 20:05:01
 
 
 
 ### [库克的离场，苹果新-AI-权力重构与价值观天平｜WWDC26](https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247498280&idx=1&sn=d59569dc356418b24bfeb2089529420a)
 
-2026-06-19 12:25:00 | 标签: 苹果, WWDC, AI 战略, 组织变革, 隐私计算
-
-> 文章以 WWDC26 为切入点，系统梳理了苹果在 AI 领域的战略转折。首先，详细披露了苹果内部 AI 权力版图的重组过程：从 John Giannandrea 失势到 Mike Rockwell 接手 Siri，再到从谷歌挖来 Amar Subramanya 负责模型，以及新任 CEO John Ternus 即将接棒。其次，深入解读了苹果发布的五款 AFM 模型（端侧 3B/20B MoE + 云端三件套）及其与 Google Cloud/Gemini 的合作架构，强调模型自研主导、底层借力谷歌基础设施。第三，重点剖析了苹果与谷歌联合打造的 Private Cloud Compute（PC...
+2026-06-19 12:25:00
 
 
 
 ### [两个-80-后，在硅谷“崩老头”](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569456&idx=1&sn=129e2cd09998d3d65ab99e287a1c5e81)
 
-2026-06-19 11:09:00 | 标签: AI商业化, 商业模式, 科技评论, AI产业, 创新者窘境
-
-> 文章以谷歌在 AI 时代遭遇的「创新者窘境」为引，系统分析了传统搜索巨头在生成式 AI 浪潮下面临的多重挑战：从搜索广告模式向「答案经济」转型的商业模式困境，到单位经济效益因推理成本飙升而难以维持的结构性矛盾。作者进一步对比了搜索引擎与大模型截然不同的经济学——前者是低成本的信息检索，后者是实时生成的高成本计算服务，并指出当前固定订阅费模式与 AI 边际成本递增之间的根本冲突。文章还分析了 AI 产业当前的资本格局：英伟达、台积电等「卖铲人」是最大赢家，Meta 通过将 AI 嵌入生态成为「做首饰的人」，而谷歌、微软等传统巨头受制于「创新者窘境」和遗留业务包袱。对于 OpenAI、Anthro...
+2026-06-19 11:09:00
 
 
 
 ### [谁在-ChatGPT-上投广告？ChatGPT-和-Claude-又在哪投广告？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524764&idx=1&sn=66d3d09ce134fd844fe393cab7527b50)
 
-2026-06-19 10:30:00 | 标签: AI 商业化, AI 产品与应用, AI 广告, 市场分析, 行业报告
-
-> 文章摘取了 Sensor Tower《State of AI Report 2026》的核心要点，从用户、流量、收入、广告和竞争格局五个维度呈现了 2026 年 AI 应用赛道的全景。关键发现包括：ChatGPT 月活突破 10 亿，但在 AI 助手市场份额首次跌破 50%；Claude 凭借代码和深度研究能力，ARPU 从不足 0.5 美元飙升至 2.76 美元；ChatGPT 广告系统进入早期扩张，购物与软件类品牌占近半份额；头部 AI 厂商广告支出激增（OpenAI 增 800%，Anthropic 增 1184%），并开始针对不同人群进行差异化投放；生成式 AI 虽仅占互联网流量不足 ...
+2026-06-19 10:30:00
 
 
 
 ### [刚刚，Codex-大更新，你在电脑的操作正在成为-AI-经验包](https://mp.weixin.qq.com/s?__biz=MjM5MjAyNDUyMA==&mid=2651094568&idx=1&sn=4dfb4c622ac264723c54a5d615d56705)
 
-2026-06-19 09:55:00 | 标签: AI Agent, AI 编程, Computer Use, Codex, AI 产品与应用
-
-> 本文详细报道了 OpenAI Codex 新发布的 Record & Replay 功能。该功能允许用户在 macOS 上录制完整的电脑操作流程，Codex 会观察学习并打包成一个可复用的 skill（技能）。文章介绍了该功能的适用场景（如报销、订停车位、发视频等重复性任务）、七步操作流程、录制建议，以及复现时如何灵活调用。文章还深入解释了 Codex 操作电脑的三种方式：Computer Use（覆盖面最广，可操作无 API 的应用）、Chrome 扩展（利用已登录会话）和应用内浏览器（隔离环境），以及 Appshot 机制。最后，文章将这一功能置于更大的趋势中讨论：AI 的工作对象正从 A...
+2026-06-19 09:55:00
 
 
 
