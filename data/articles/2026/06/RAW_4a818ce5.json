@@ -1,0 +1,56 @@
+{
+  "id": "RAW_4a818ce5",
+  "title": "TSRX：一种框架无关的 JSX 替代方案",
+  "url": "https://www.infoq.com/news/2026/06/tsrx-alternative-jsx/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-19 19:49:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://tsrx.dev/\">TSRX</a>, a new TypeScript language extension created by <a href=\"https://x.com/trueadm?lang=en\">Dominic Gannaway</a>, the former React and Svelte core team engineer behind Inferno, Lexical and Ripple, has been released in alpha, billing itself as a framework agnostic successor to JSX for building declarative user interfaces.</p>\n   <p>Announced <a href=\"https://x.com/trueadm/status/2046696157066264846\">on X</a>, where Gannaway described it as the \"spiritual successor to JSX\" that was \"extracted from Ripple, and made framework agnostic\", TSRX compiles a single <code>.tsrx</code> component file to multiple runtime targets. Plugins such as <code>@tsrx/react</code>, <code>@tsrx/preact</code>, <code>@tsrx/solid</code>, <code>@tsrx/vue</code> and <code>@tsrx/ripple</code> walk a shared AST and emit idiomatic output for each runtime, including scoped CSS, so <a href=\"https://tsrx.dev/\">new targets</a> can be added as standalone compiler plugins without changing the language itself.</p>\n   <p>The headline idea is moving common UI ergonomics from convention into syntax. TSRX introduces statement level control flow inside templates using <code>@if</code>, <code>@for</code>, <code>@switch</code> and <code>@try</code>, alongside prop shorthands, lazy destructuring and component scoped styles. A component body uses an <code>@{ ... }</code> statement container that ends in a single rendered output.</p>\n   <p>As documented in the <a href=\"https://tsrx.dev/features\">features guide</a>, scoped styles live in a <code>&lt;style&gt;</code> block whose selectors the compiler rewrites with a unique hash, while error and async boundaries are expressed declaratively through <code>@try</code>, <code>@catch</code> and <code>@pending</code> rather than wrapper components.</p>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=47854857\">Hacker News</a> one reader wrote:</p>\n   <blockquote>\n    <p>I'm in love with everything about this.</p>\n    <p>An oxfmt plugin would be appreciated!</p>\n   </blockquote>\n   <p>While another argued:</p>\n   <blockquote>\n    <p>I think this is a step in wrong direction. We really need to move away from this XML inside/alongside JS ugliness prevalent in the webdev ecosystem. What I really want are kotlin style builders or F# style computation expressions.</p>\n   </blockquote>\n   <p>The announcement post on X drew 130 replies and 1.6k likes, and it prompted <a href=\"https://hackmd.io/@0u1u3zEAQAO0iYWVAStEvw/Hk2Jiv8T-l\">an article</a> from Ryan Carniato, the creator of SolidJS, titled ‘Why TSRX isn’t just your Favourite Templating Language’. In it, he summarises the implications for Vue, Svelte, React, Solid, and <a href=\"https://mitosis.builder.io/\">Mitosis</a> developers separately, for example, React developers might escape some of the tedious hook rules, while SolidJS users may find it at odds with the framework’s transparency.</p>\n   <p>For teams considering it, the <a href=\"https://tsrx.dev/getting-started\">getting started guide</a> covers Vite, Rspack, Turbopack and Bun setups, plus Prettier, ESLint and a <code>tsrx-tsc</code> command line type checker for CI. Adoption is per file, as a <a href=\"https://medium.com/@aguzzimarcello/tsrx-for-react-developers-conditional-hooks-co-located-styles-and-multi-target-uis-fe733c45afcf\">Medium write up</a> notes: a <code>.tsrx</code> file compiles to a <code>.tsx</code> equivalent component, so it can be introduced in one place while the rest of a codebase stays untouched. That same piece cautions that the project is alpha, advising readers to \"experiment, do not migrate\".</p>\n   <p>Compared to its closest peers, TSRX is not a runtime like Solid or Vue, nor a templating dialect tied to a single compiler like Svelte. It sits closer to JSX itself, an authoring syntax that several frameworks can consume.</p>\n   <p>TSRX is a framework-agnostic TypeScript language extension created by Dominic Gannaway, the former React and Svelte core team engineer behind Inferno, Lexical and Ripple. TSRX is open source under the MIT licence and remains in alpha, with further compiler targets promised.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"TSRX: A Framework-Agnostic Alternative to JSX\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/tsrx-alternative-jsx/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781869740000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "TSRX 是一种新的框架无关的 TypeScript 语言扩展，可编译到多种 UI 运行时，它内置了控制流、作用域样式和错误边界，定位为 JSX 的精神继承者。",
+  "oneSentenceSummary": "TSRX 是一种新的框架无关的 TypeScript 语言扩展，可编译到多种 UI 运行时，它内置了控制流、作用域样式和错误边界，定位为 JSX 的精神继承者。",
+  "summary": "本文报道了 TSRX 的 alpha 版本发布。TSRX 是由 Dominic Gannaway（前 React 和 Svelte 核心工程师）创建的 TypeScript 语言扩展。它通过插件将单个 `.tsrx` 组件文件编译到多种运行时目标，包括 React、Preact、Solid、Vue 和 Ripple。TSRX 将语句级控制流（`@if`、`@for`、`@switch`、`@try`）、属性简写、惰性解构和组件作用域样式直接引入语法。文章涵盖了 Hacker News 上的社区反应、SolidJS 创建者 Ryan Carniato 的分析，以及实际采用说明，包括 Vite/Rspack/Turbopack 设置和逐文件迁移策略。该项目处于 alpha 阶段，采用 MIT 许可证。",
+  "mainPoints": [
+    {
+      "point": "TSRX 是一种框架无关的语法层，可编译到多种 UI 运行时。",
+      "explanation": "与绑定在 React 上的 JSX 不同，TSRX 使用共享的 AST，并为 React、Preact、Solid、Vue 和 Ripple 生成惯用输出，允许团队一次编写，面向多个框架。"
+    },
+    {
+      "point": "TSRX 将常见的 UI 易用性从约定转变为语法。",
+      "explanation": "像 `@if`、`@for`、`@switch`、`@try`、作用域样式和错误边界等功能被内置到语言中，而不是依赖框架特定的模式或包装组件。"
+    },
+    {
+      "point": "采用是逐文件且增量式的，而非全有或全无。",
+      "explanation": "一个 `.tsrx` 文件会编译成对应的 `.tsx` 文件，因此可以在一个组件中引入，而代码库的其余部分保持不变，从而降低了迁移风险。"
+    },
+    {
+      "point": "该项目处于 alpha 阶段，尚未准备好用于生产环境。",
+      "explanation": "文章和社区回应提醒 TSRX 是实验性的，建议读者进行实验，但不要迁移现有代码库。"
+    }
+  ],
+  "keyQuotes": [
+    "我喜欢关于它的一切。",
+    "我认为这是朝着错误方向迈出的一步。我们真的需要摆脱 Web 开发生态系统中这种在 JS 内部/旁边使用 XML 的丑陋现象。",
+    "实验，不要迁移"
+  ],
+  "tags": [
+    "JavaScript & TypeScript",
+    "前端与 Web",
+    "React",
+    "Vue",
+    "Svelte"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 494,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781869740000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-19 19:49:00"
+}

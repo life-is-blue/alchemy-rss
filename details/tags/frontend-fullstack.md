@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-20 06:20:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-20 08:30:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -378,7 +378,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -705,6 +705,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [纯-Headless-与混合-Headless-CMS：为企业内容管理选择正确的架构](https://www.freecodecamp.org/news/pure-headless-vs-hybrid-headless-cms-for-enterprise-content-management/)
+
+2026-06-20 01:16:15 | 标签: CMS 架构, Headless CMS, 企业内容管理, Web 开发, 数字体验平台
+
+> freeCodeCamp 的这篇文章对纯 Headless 与混合 Headless CMS 架构在企业内容管理中的应用进行了详细且平衡的比较。文章指出，纯 Headless CMS（如 Strapi、Contentful）专注于内容存储和 API 交付，为开发者提供最大的灵活性和真正的全渠道能力，但通常以牺牲编辑工具和内容预览为代价。混合 Headless CMS（如 Coremedia、Optimizely）则将 API 驱动的交付与传统 CMS 功能（如可视化编辑、页面管理和内置治理）相结合，在开发者自由度和营销人员友好工作流之间取得平衡。文章从企业关键维度（内容创作体验、开发者灵活性、...
+
+
+
+### [TSRX：一种框架无关的-JSX-替代方案](https://www.infoq.com/news/2026/06/tsrx-alternative-jsx/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-06-19 19:49:00 | 标签: JavaScript & TypeScript, 前端与 Web, React, Vue, Svelte
+
+> 本文报道了 TSRX 的 alpha 版本发布。TSRX 是由 Dominic Gannaway（前 React 和 Svelte 核心工程师）创建的 TypeScript 语言扩展。它通过插件将单个 `.tsrx` 组件文件编译到多种运行时目标，包括 React、Preact、Solid、Vue 和 Ripple。TSRX 将语句级控制流（`@if`、`@for`、`@switch`、`@try`）、属性简写、惰性解构和组件作用域样式直接引入语法。文章涵盖了 Hacker News 上的社区反应、SolidJS 创建者 Ryan Carniato 的分析，以及实际采用说明，包括 Vite/R...
 
 
 
@@ -1368,13 +1384,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1524,13 +1540,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3024,13 +3040,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4734,13 +4750,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

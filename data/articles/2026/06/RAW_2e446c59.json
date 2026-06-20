@@ -1,0 +1,59 @@
+{
+  "id": "RAW_2e446c59",
+  "title": "GitLab 19.0 将智能体 AI 嵌入密钥管理、合并请求与供应链安全",
+  "url": "https://www.infoq.com/news/2026/06/gitlab-19-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-19 16:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitLab has released <a href=\"https://docs.gitlab.com/releases/19/gitlab-19-0-released/\">GitLab 19.0</a>, moving its agentic AI from code generation into the work that surrounds it: securing credentials, reviewing and merging changes, and scanning released packages. The 21st May release adds a public beta of GitLab Secrets Manager, extends the Developer Flow agent across the full merge request lifecycle, and makes software bill of materials (SBOM) dependency scanning generally available.</p>\n   <p><a href=\"https://about.gitlab.com/blog/secrets-manager-in-public-beta/\">GitLab Secrets Manager</a>, in public beta for Premium and Ultimate users, saves credentials within the same platform that runs code and pipelines, and restricts each secret to the jobs authorised to use it. Access control and audit logging use the existing group and project hierarchy in GitLab, avoiding a separate authorisation model. If a credential is compromised, responders can trace every job that used it from the GitLab audit trail. It works with HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, and Google Cloud Secret Manager instead of replacing them.</p>\n   <p>On merge requests, <a href=\"https://about.gitlab.com/blog/transform-mrs-to-automated-workflow/\">Developer Flow</a> now addresses reviewer feedback, splits oversized MRs, and resolves conflicts. The flow reads project standards from an <a href=\"http://AGENTS.md\">AGENTS.md</a> file before committing, so output reflects team context rather than generic defaults. A new Resolve with Duo button (beta) evaluates both branches, commits a proposed fix, and leaves a summary comment for the next reviewer. One-click rebase-and-merge supports fast-forward and semi-linear merges. GitLab Duo respects branch protection rules and does not force-push to protected branches.</p>\n   <p>This release also moves the GitLab Duo Core to usage-based billing. Code Suggestions in the Web IDE and desktop IDEs now use <a href=\"https://docs.gitlab.com/subscriptions/gitlab_credits/\">GitLab Credits</a>, and GitLab Duo Chat becomes agent-based, running on the GitLab Duo Agent Platform that teams must enable to keep using it. Platform engineers gain Components Analytics, which shows which CI/CD Catalog components and versions run across an organisation and where security fixes have not yet landed.</p>\n   <p>On the supply chain, the <a data-token-index=\"1\" href=\"https://docs.gitlab.com/user/application_security/dependency_scanning/dependency_scanning_sbom/\" rel=\"noopener noreferrer\" tabindex=\"0\">SBOM-based dependency scanner</a> becomes generally available, covering ecosystems including Maven, npm, NuGet, PyPI, Go, and Cargo. Automatic dependency resolution, which generates the required lockfiles or dependency graph exports when a project hasn't committed them, is enabled by default for Maven, Gradle, and Python, with manifest scanning as a fallback when necessary. Security configuration profiles let teams turn on Secret Detection, SAST, and dependency scanning through policies rather than per-project CI changes. For self-hosted teams, the GitLab Duo Agent Platform adds four open-source models, including Mistral Devstral 2 123B and GLM-5.1, for air-gapped environments, and now supports Claude Opus 4.7 and Gemini.<!-- notionvc: d8064fb5-33e5-4035-a600-b311f8bd4e05 --></p>\n   <p>Manav Khurana, chief product and marketing officer at GitLab, said that \"AI made it faster to generate code, but it didn't make it easier to trust or secure it at scale.\" He added that \"when security, automation, and governance share the same platform as the code, teams can move fast on AI without losing control of what ships, and that's exactly what GitLab 19.0 delivers.\"</p>\n   <p>GitLab 19.0 also tightens platform requirements, setting PostgreSQL 17 as the minimum, ending Redis 6 support, and dropping Linux packages for Ubuntu 20.04 and SUSE distributions. Competing firms, including <a href=\"https://github.com/features/copilot/agents\">GitHub</a> and <a href=\"https://www.atlassian.com/software/rovo\">Atlassian</a>, are pursuing similar agentic features, so the practical decision for platform teams is which governance and pricing model aligns best with their security needs and budget constraints.</p>\n   <p><!-- notionvc: 63a88519-d5ff-4d67-9478-e58a772ff67c --></p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitLab 19.0 Embeds Agentic AI in Secrets, Merge Requests, and Supply Chain Security\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/gitlab-19-agentic-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781856000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitLab 19.0 将智能体 AI 从代码生成转向周边工作流程，引入了密钥管理器，将开发者流程扩展到合并请求，并正式发布了基于 SBOM 的依赖扫描功能。",
+  "oneSentenceSummary": "GitLab 19.0 将智能体 AI 从代码生成转向周边工作流程，引入了密钥管理器，将开发者流程扩展到合并请求，并正式发布了基于 SBOM 的依赖扫描功能。",
+  "summary": "GitLab 于 5 月 21 日发布的 19.0 版本，将其智能体 AI 能力从代码生成扩展到周边的运营工作流程。主要功能包括：GitLab Secrets Manager 的公测版，用于在平台内管理凭证；扩展后的 Developer Flow 智能体，现在可以处理审阅者反馈、拆分过大的 MR 以及解决冲突；以及基于 SBOM 的依赖扫描器的正式发布。该版本还将 GitLab Duo Core 转换为基于使用量的计费模式（通过 GitLab Credits），为 CI/CD 目录管理引入了 Components Analytics，并为 Duo Agent Platform 增加了对开源模型的支持，以适用于气隙环境。文章将这些变化置于更广泛的竞争格局中，指出了 GitHub 和 Atlassian 的类似举措，并将平台团队的实践决策归结为治理和定价模式的匹配问题。",
+  "mainPoints": [
+    {
+      "point": "GitLab 19.0 将智能体 AI 的重点从代码生成转向运营工作流程。",
+      "explanation": "该版本强调保护凭证、自动化合并请求审查以及扫描已发布的软件包，超越了最初对 AI 辅助编码的关注。"
+    },
+    {
+      "point": "GitLab Secrets Manager 在平台内提供原生凭证管理。",
+      "explanation": "公测版将密钥集成到现有的 GitLab 层级结构中，提供访问控制、审计日志以及与 HashiCorp Vault 等外部保险库的集成，但不会取代它们。"
+    },
+    {
+      "point": "Developer Flow 智能体现在可以自动化合并请求生命周期中的关键部分。",
+      "explanation": "该智能体从 AGENTS.md 文件中读取项目标准，处理审阅者反馈，拆分过大的 MR，并解决冲突，新增的“使用 Duo 解决”按钮可自动提出修复方案。"
+    },
+    {
+      "point": "基于 SBOM 的依赖扫描功能正式发布。",
+      "explanation": "该扫描器覆盖主要生态系统（Maven、npm、NuGet、PyPI、Go、Cargo），并包含自动依赖解析以生成锁定文件，同时将清单扫描作为备选方案。"
+    },
+    {
+      "point": "GitLab Duo Core 转向基于使用量的计费模式，使用 GitLab Credits。",
+      "explanation": "代码建议和 Duo Chat 现在消耗 Credits，Duo Agent Platform 支持用于气隙环境的开源模型，以及 Claude Opus 4.7 和 Gemini 等模型。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 让代码生成更快，但并没有让大规模信任或保护代码变得更容易。",
+    "当安全性、自动化和治理与代码共享同一个平台时，团队可以在 AI 上快速行动，同时不失去对交付内容的控制，这正是 GitLab 19.0 所带来的。"
+  ],
+  "tags": [
+    "DevOps",
+    "GitLab",
+    "AI 智能体",
+    "DevSecOps",
+    "CI/CD"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 530,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781856000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-19 16:00:00"
+}

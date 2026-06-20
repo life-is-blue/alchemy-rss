@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-20 06:20:12 | [返回首页](/README.md)
+**更新时间**: 2026-06-20 08:30:17 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12923)
+- [AI & 大模型](#ai-llm) (12942)
 - [软件架构](#architecture) (21)
-- [前端与全栈](#frontend-fullstack) (854)
-- [DevOps](#devops) (607)
+- [前端与全栈](#frontend-fullstack) (856)
+- [DevOps](#devops) (608)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5987)
+- [其他](#other) (5993)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [测试神话与寓言，超越-SWE-bench，Nvidia-的开放竞争者](https://www.deeplearning.ai/the-batch/issue-358) - AI 精选
 - [GLM-5.2-上线并开源：专注-Coding-与长程任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493980&idx=1&sn=995ae194e71d723b6110fb8c621e618c) - AI 精选
 - [AI-智能体工具设计：有效与无效的模式---MachineLearningMastery.com](https://machinelearningmastery.com/ai-agent-tool-design-what-works-and-what-doesnt/) - AI 精选
 - [Kimi-K2.7-Code-编程模型已上线-Kimi-Code、API-开放平台](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488546&idx=1&sn=93d0057b04afc0c85495c6fd9a3b8516) - AI 精选
@@ -41,9 +42,8 @@
 - [Gemini-Flash-价格上涨，AI-法案延迟，智能体驱动网络流量激增](https://www.deeplearning.ai/the-batch/issue-355) - AI 精选
 - [Dubbing-v2-发布：革命性的全新配音模型](https://elevenlabs.io/blog/introducing-dubbing-v2) - AI 精选
 - [使用-Codex-构建自我改进的税务智能体](https://openai.com/index/building-self-improving-tax-agents-with-codex) - AI 精选
-- [我们如何在多个产品中约束-Claude](https://www.anthropic.com/engineering/how-we-contain-claude) - AI 精选
 
-- [查看全部 12923 篇...](/details/tags/ai-llm.md)
+- [查看全部 12942 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 854 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 856 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 607 篇...](/details/tags/devops.md)
+- [查看全部 608 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5987 篇...](/details/tags/other.md)
+- [查看全部 5993 篇...](/details/tags/other.md)
 
 

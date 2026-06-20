@@ -1,0 +1,51 @@
+{
+  "id": "RAW_5406faf3",
+  "title": "CircleCI 推出 Chunk Sidecars，将 CI 验证直接融入 AI 编程工作流",
+  "url": "https://www.infoq.com/news/2026/06/circleci-chunk-sidecars/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-19 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://circleci.com/\">CircleCI </a>has launched <a href=\"https://circleci.com/blog/chunk-sidecars/\">Chunk Sidecars</a>, a new capability designed to bring CI-style validation directly into an AI coding agent's inner development loop. The feature provides fast, pre-configured cloud environments where AI agents can run tests, linting, formatting, and validation before code is ever committed or pushed to a CI pipeline. CircleCI says the approach addresses one of the biggest emerging challenges in AI-assisted software development: ensuring that code generated at AI speed can be validated just as quickly.</p>\n   <p dir=\"ltr\">The release marks a significant evolution in how CI/CD platforms are adapting to the rise of agentic development. Traditionally, developers write code locally and rely on CI pipelines to catch problems after commits are pushed. But as AI agents generate code at increasingly high velocity, this feedback cycle can become a bottleneck. CircleCI argues that by the time conventional CI discovers an issue, the AI agent has already moved on, losing valuable context and requiring additional iterations, compute resources, and human intervention. Chunk Sidecars aim to solve this by moving validation earlier into the development process, allowing agents to self-correct before code reaches the pipeline.</p>\n   <p dir=\"ltr\">At its core, Chunk Sidecars are lightweight, reproducible cloud environments that mirror important aspects of a project's CI pipeline. Developers or AI agents can configure these environments once, snapshot them with dependencies and tooling pre-installed, and reuse them across sessions. As an AI agent writes code, validation hooks automatically run tests and quality checks inside the sidecar environment whenever the agent reaches a stopping point.</p>\n   <p dir=\"ltr\">This creates what CircleCI calls an \"<a href=\"https://stats.stackexchange.com/questions/456157/how-are-inner-loop-and-outer-loops-used-to-evaluate-and-build-a-machine-learning\">inner-loop validation</a>\" process, where AI agents receive CI-quality feedback while they still have the context necessary to fix problems immediately. Instead of waiting for external pipelines to run minutes later, agents can iteratively improve code within seconds, reducing wasted compute and improving the likelihood that pull requests pass downstream checks on the first attempt.</p>\n   <p dir=\"ltr\">The launch reflects broader changes in software engineering workflows. CircleCI points to internal observations showing that feature branch activity has increased significantly as AI tools accelerate code generation, while deployments to production have not kept pace. The implication is that software delivery pipelines, testing infrastructure, and quality gates are increasingly becoming the limiting factor rather than code creation itself.</p>\n   <p dir=\"ltr\">Chunk Sidecars are designed to alleviate this pressure by allowing agents to perform many CI-like validations locally in isolated environments before initiating full pipelines. CircleCI pairs the feature with <a href=\"https://circleci.com/changelog/chunk-sidecar-and-microbuilds-now-in-preview-for-performance-and-scale-plans/\">Chunk Microbuilds</a>, lightweight validation runs that execute subsets of pipeline logic, providing faster feedback at lower cost. Together, the technologies aim to improve software quality while reducing the amount of failed work entering central CI systems.</p>\n   <p dir=\"ltr\">Chunk Sidecars are part of CircleCI's broader AI strategy centered on <a href=\"https://circleci.com/product/chunk/\">Chunk</a>, the company's autonomous CI/CD agent. Earlier in 2026, CircleCI introduced capabilities that allow Chunk to analyze pipeline execution history, identify performance bottlenecks, optimize build configurations, and automatically propose fixes. With Sidecars, CircleCI is extending that intelligence into the development process itself, enabling agents not just to optimize pipelines, but to continuously validate their own output.</p>\n   <p dir=\"ltr\">The company describes this as a shift from CI/CD pipelines acting as external checkpoints to becoming active collaborators in AI-assisted software development. Rather than treating validation as a separate stage after coding is complete, the goal is to integrate quality checks directly into the AI agent's workflow so that correctness evolves alongside code generation.</p>\n   <p dir=\"ltr\">CircleCI is not alone in pursuing this vision. Companies across the software industry are building platforms that enable AI agents to operate within controlled, validated engineering environments. Dropbox recently introduced its <a href=\"https://dropbox.tech/machine-learning/introducing-nova-our-internal-platform-for-coding-agents\">Nova platform</a>, where coding agents execute within isolated sessions tied to real build systems and validation workflows. GitHub continues <a href=\"https://github.com/features/copilot\">expanding support</a> for AI-assisted development through Copilot and MCP-based tooling, while Anthropic's <a href=\"https://docs.anthropic.com/en/docs/claude-code/overview\">Claude Code</a> emphasizes tool usage and iterative validation during coding sessions.</p>\n   <p dir=\"ltr\">What differentiates CircleCI's approach is its focus on leveraging existing CI/CD expertise and infrastructure to support agentic workflows. Instead of replacing pipelines, Chunk Sidecars extend them into the earliest phases of development, effectively creating miniature CI environments that accompany agents as they work. This strategy acknowledges a growing industry consensus: as AI accelerates code generation, validation, and trust increasingly become the primary engineering challenges rather than coding itself.</p>\n   <p dir=\"ltr\">The<a href=\"https://github.com/marketplace/circleci\"> release</a> also hints at a broader transformation underway in software engineering. Increasingly, code may be written by one AI agent, validated by another, optimized by a third, and finally reviewed by humans only at critical checkpoints. In such a world, CI/CD platforms must evolve from passive automation systems into active participants in the software lifecycle.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"CircleCI Introduces Chunk Sidecars to Bring CI Validation Directly Into AI Coding Workflows\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/circleci-chunk-sidecars/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781870400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "CircleCI 推出 Chunk Sidecars，将 CI 风格的验证直接引入 AI 编程智能体的内部开发循环，以加速反馈并提升代码质量。",
+  "oneSentenceSummary": "CircleCI 推出 Chunk Sidecars，将 CI 风格的验证直接引入 AI 编程智能体的内部开发循环，以加速反馈并提升代码质量。",
+  "summary": "CircleCI 发布了 Chunk Sidecars 这一新功能，可为 AI 编程智能体提供快速、预配置的云环境，使其在代码提交前就能运行测试、代码检查和验证。该功能旨在解决高速验证 AI 生成代码时的瓶颈问题——传统 CI 管道造成的延迟会导致智能体丢失上下文。Chunk Sidecars 创建了一个“内循环验证”流程，让智能体能在数秒内自我修正。此次发布反映了一个更广泛的行业趋势：验证而非代码创建，正成为主要的工程挑战。CircleCI 还将此功能与用于轻量级验证运行的 Chunk Microbuilds 相结合。文章将此定位为 CircleCI 以自主 CI/CD 智能体 Chunk 为核心的更广泛 AI 战略的一部分，并将其与 Dropbox、GitHub 和 Anthropic 的类似努力进行了比较，强调了 CircleCI 专注于利用现有 CI/CD 基础设施的优势。",
+  "mainPoints": [
+    {
+      "point": "Chunk Sidecars 将 CI 验证引入 AI 智能体的内部开发循环。",
+      "explanation": "智能体无需等待外部 CI 管道，即可在数秒内获得 CI 级别的反馈，同时仍保留修复问题的上下文，从而减少计算和迭代周期的浪费。"
+    },
+    {
+      "point": "该功能解决了验证速度落后于 AI 代码生成速度的瓶颈问题。",
+      "explanation": "随着 AI 智能体生成代码的速度越来越快，传统的 CI 管道成为限制因素。Chunk Sidecars 将验证提前，让智能体在代码进入管道前就能自我修正。"
+    },
+    {
+      "point": "CircleCI 的方法是利用现有 CI/CD 基础设施，而非取代它。",
+      "explanation": "Chunk Sidecars 将管道扩展到最早的开发阶段，创建伴随智能体的微型 CI 环境，这承认了验证和信任是主要的工程挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "等到传统 CI 发现问题时，AI 智能体早已继续前进，丢失了宝贵的上下文，需要额外的迭代、计算资源和人工干预。",
+    "随着 AI 加速代码生成，验证和信任正日益取代编码本身，成为主要的工程挑战。"
+  ],
+  "tags": [
+    "CI/CD",
+    "AI 编程",
+    "开发者工具",
+    "DevOps",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 750,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781870400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-19 20:00:00"
+}
