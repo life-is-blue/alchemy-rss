@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-21 08:32:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-21 11:05:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -14203,9 +14203,7 @@
 
 ### [如何在-Flutter-中正确处理错误：密封类、记录与-Result-类型的实用指南](https://www.freecodecamp.org/news/how-to-handle-errors-the-right-way-in-flutter-a-practical-guide-to-sealed-classes-records-and-result-types/)
 
-2026-06-21 03:25:03 | 标签: Flutter, Dart, 错误处理, 密封类, 模式匹配
-
-> 作者认为，在 Flutter 中仅依赖 try/catch 进行错误处理会带来不可见的失败路径、不一致的处理方式，以及预期错误与异常错误之间的错配。本文介绍了一种综合模式，使用密封类定义带有 `Success` 和 `Failure` 子类型的 `Result<T>` 类型，并配合一个用于类型化错误的密封 `AppError` 类。文章演示了 Dart 3 记录如何与结果一起返回多个值，以及模式匹配如何在编译时强制穷尽处理所有结果。该模式被应用于一个完整的 Bloc 功能中，展示了将异常映射为类型化错误的仓库、根据 Result 进行分支处理的 Bloc，以及为每种错误类型显示特定消息的 UI...
+2026-06-21 03:25:03
 
 
 
@@ -35965,11 +35963,11 @@
 
 
 
-### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-29T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 

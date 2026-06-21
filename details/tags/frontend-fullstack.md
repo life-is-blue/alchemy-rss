@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-21 08:32:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-21 11:05:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,9 +710,7 @@
 
 ### [JavaScriptCore-的共享内存线程（实验性，尚未完成）——Jarred-Sumner-·-Pull-Request-#249-·-oven-sh/WebKit](https://github.com/oven-sh/WebKit/pull/249)
 
-2026-06-21 01:02:49 | 标签: JavaScript 引擎, 并发, WebKit, JSC, 共享内存
-
-> Jarred-Sumner 的此 PR 在 oven-sh/WebKit 分支中为 JavaScriptCore 引入了共享内存线程的实验性实现。核心 API 是 `new Thread(fn， ...args)`，它在同一堆内的另一个线程上运行闭包，直接共享对象，无需结构化克隆、消息传递或 SharedArrayBuffer 等变通方案。该设计基于 Filip Pizlo 2017 年的提案，使用 TID 标记的蝴蝶数据结构、共享写入时的分段存储、每个对象的单元锁以及监视点，将串行开销保持在接近零的水平（最坏情况约 0.45%）。PR 详细介绍了 API（join、asyncJoin、Loc...
+2026-06-21 01:02:49
 
 
 
