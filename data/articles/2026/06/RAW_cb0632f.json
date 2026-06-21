@@ -1,0 +1,57 @@
+{
+  "id": "RAW_cb0632f",
+  "title": "OpenAI Codex Record & Replay：演示一次，即可复用浏览器工作流",
+  "url": "https://www.youtube.com/watch?v=ZK3JhU73W18",
+  "date": "2026-06-19 02:57:34",
+  "author": "OpenAI",
+  "siteName": "OpenAI",
+  "content": null,
+  "aiSummary": "OpenAI 展示了 Codex 如何通过一次操作录制学习人工浏览器工作流，并将其转化为可复用的自动化技能，无需用户逐步编写提示词。",
+  "oneSentenceSummary": "OpenAI 展示了 Codex 如何通过一次操作录制学习人工浏览器工作流，并将其转化为可复用的自动化技能，无需用户逐步编写提示词。",
+  "summary": "这段简洁的产品演示以 YouTube 视频发布为实际场景，介绍 OpenAI Codex 的 Record & Replay 功能。Codex 会观察用户从电子表格读取元数据、查找匹配素材、在 YouTube Studio 中填写标题和简介、添加缩略图与英文字幕、将视频保存为私密状态并核验结果的完整过程。随后，它把这次录制转化为可复用技能，记住信息存放位置、上传包的组织方式以及每个步骤的执行要求。在新的对话线程中，Codex 能把学到的流程自主应用于另一套视频素材。该能力还可扩展到整理并分享 Pull Request、准备日历邀请等场景，并通过计算机操作、浏览器操作、已连接插件或这些工具的组合来完成任务。",
+  "mainPoints": [
+    {
+      "point": "Codex 能从直接演示中学习工作流",
+      "explanation": "Record & Replay 以观察操作取代细致的步骤式提示，让 Codex 同时掌握任务的操作顺序，以及用户执行任务时体现出的偏好。"
+    },
+    {
+      "point": "一次录制可转化为可复用的自动化技能",
+      "explanation": "观察 YouTube 上传流程后，Codex 会记住元数据位置、素材包结构、字幕处理方式、隐私设置和结果核验步骤，供后续任务复用。"
+    },
+    {
+      "point": "学到的流程能在全新上下文中运行",
+      "explanation": "用户在另一个对话线程中提供新的视频素材包后，Codex 会匹配正确的电子表格行、填写字段、上传素材、将视频保存为私密状态并确认任务完成。"
+    },
+    {
+      "point": "回放流程可以组合多种交互工具",
+      "explanation": "Codex 可通过计算机操作、浏览器操作、已连接插件或多种工具组合执行录制的工作流，并将这种方式从内容发布扩展到 Pull Request 和日历邀请等任务。"
+    }
+  ],
+  "keyQuotes": [
+    "完成后，Codex 会检查这段录制，并把学到的内容转化为一项技能",
+    "现在，Codex 会替我处理下一个任务",
+    "你只需向 Codex 演示一次操作，它就会记住你的流程和偏好，供下次使用",
+    "你不必在提示词中解释每一个步骤或偏好，只要向 Codex 展示你的做法，下次它就能替你完成"
+  ],
+  "tags": [
+    "OpenAI Codex",
+    "Record & Replay",
+    "工作流自动化",
+    "计算机操作",
+    "浏览器操作"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 313,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d90853",
+  "sourceName": "OpenAI",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1781809054000,
+  "publishDateStr": "06-19",
+  "publishDateTimeStr": "2026-06-19 02:57:34"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "RAW_89462380",
+  "title": "Bedrock 上的 Claude Fable 5 需要与 Anthropic 共享推理数据",
+  "url": "https://www.infoq.com/news/2026/06/bedrock-fable-5-data-sharing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-20 17:03:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Using Anthropic's Claude Fable 5 or Mythos 5 on <a href=\"https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/\">Amazon Bedrock</a> requires opting into provider_data_share, a data retention mode that sends prompts and outputs to Anthropic for 30-day retention with human review. There is no alternative mode. The allowed_modes field for these models contains exactly one value.</p>\n   <p>For every previous model on Bedrock, including Opus 4.8, Sonnet, and Haiku, inference data stayed inside the AWS boundary, and model providers never saw it. That guarantee is what got Bedrock through procurement, legal review, and the security questionnaires that sit between a proof of concept and production. Fable 5 changes the deal.</p>\n   <p>The <a href=\"https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/\">AWS blog post</a> states it plainly at the bottom:</p>\n   <blockquote>\n    <p>Once you opt into data retention, your data will leave AWS's data and security boundary.</p>\n   </blockquote>\n   <p>Anthropic frames the 30-day retention as a safety requirement for Mythos-class models, needed to catch novel attacks and jailbreaks through their blocking classifiers. The company has indicated that future models at this capability tier will carry the same requirement. This is not an AWS decision. It is Anthropic's policy applied consistently across all platforms where Fable 5 and Mythos 5 are offered.</p>\n   <p>On <a href=\"https://www.reddit.com/r/aws/comments/1u1yt4k/aws_bedrock_to_require_sharing_data_with/\">Reddit</a>, one commenter pushed back on conflating safety review with training data collection:</p>\n   <blockquote>\n    <p>The key distinction worth parsing: this is for safety evaluation, not training the next model's weights. Anthropic retains inference data temporarily to detect misuse and research model behavior, not to fold it back into pretraining. Still a legitimate compliance concern for healthcare/finance, but it's a different threat model than \"our prompts become part of future Claude.\"</p>\n   </blockquote>\n   <p>Chris Farris, a cloud security researcher at <a href=\"https://securosis.com/blog/aws-destroyed-the-value-proposition-for-bedrock/\">Securosis</a>, published a detailed critique arguing that AWS broke the core value proposition of Bedrock:</p>\n   <blockquote>\n    <p>The entire value of AWS Bedrock was that it sat as the neutral place between companies and model providers. It guaranteed data and inference residency, and there was no possibility of your organization's data used by the model providers for their own purposes. Strip that away and AWS Bedrock is first-party Anthropic, with fewer features.</p>\n   </blockquote>\n   <p>The governance implications are immediate. Anthropic becomes a sub-processor with access to inputs and outputs, including human review of flagged content. For regulated organizations, that means DPA amendments, an updated sub-processor list, a revisit of records of processing, and a fresh look at the legal basis for every workload pointed at these models. For European organizations specifically, Farris raised a concern about the CLOUD Act: Anthropic is a US company now deploying its most capable model in collaboration with the US government, putting retained data within reach of US legal requests.</p>\n   <p>One German practitioner on <a href=\"https://www.reddit.com/r/aws/comments/1u1yt4k/aws_bedrock_to_require_sharing_data_with/\">Reddit</a> confirmed the impact:</p>\n   <blockquote>\n    <p>This will be a deal breaker for us. And I would guess for a lot of German/European-based companies.</p>\n   </blockquote>\n   <p>Healthcare organizations face an additional compliance gap. One Reddit commenter raised the question directly:</p>\n   <blockquote>\n    <p>Will Anthropic provide a way to acquire a BAA with them via Bedrock then? We have health data and we can't legally share PII/PHI without a BAA. We have one with AWS which is why we use Bedrock.</p>\n   </blockquote>\n   <p>Teams with an existing AWS BAA covering Bedrock inference now need to determine whether Anthropic's sub-processor status requires a separate agreement, one that may not yet exist for this data path.</p>\n   <p>The way it shipped drew the sharpest criticism. The data retention API call went live the same minute the models launched. There was no advance notice to security teams. The SCP pattern to block data sharing org-wide exists, using the bedrock-mantle:DataRetentionMode condition key, but it was buried in a docs subsection that got no announcement. Farris noted:</p>\n   <blockquote>\n    <p>The capability got a megaphone. The guardrail didn't even get a footnote.</p>\n   </blockquote>\n   <p>A separate monitoring gap compounds the problem. Here's the monitoring gap that makes this worse: bedrock-mantle logs to a completely different CloudTrail event source (bedrock-mantle.amazonaws.com) than regular Bedrock (bedrock.amazonaws.com). If your CSPM rules and security detectors are watching for Bedrock activity, they won't catch the data retention change. You have to add the Mantle event source explicitly.</p>\n   <p>AWS has since published <a href=\"https://builder.aws.com/content/3F2mpnIhuSEHC4SDFrqoINtipZD/isolate-claude-fable-5-data-retention-with-mantle-projects\">isolation guidance</a> through the Builder Center, recommending dedicated Bedrock projects for Fable 5 with provider_data_share while keeping production workloads under zero-retention. Farris documented an <a href=\"https://securosis.com/blog/aws-destroyed-the-value-proposition-for-bedrock/\">SCP pattern</a> using the bedrock-mantle:DataRetentionMode condition key to deny any retention mode other than none org-wide, with exceptions scoped to specific accounts where an approved use case and signed-off DPA exist.</p>\n   <p>In a further development, on June 12, AWS <a href=\"https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/\">updated the blog post</a> to note that Anthropic has asked AWS to revoke access to Claude Fable 5 and Claude Mythos 5 for all users, citing compliance with a US Government export control directive. All other models, including Opus 4.8, remain unaffected. Teams that had already enabled provider_data_share at the account level during the three days the models were available should deploy Farris's SCP pattern to restore the default zero-retention posture.</p>\n   <p>The broader question for enterprises is whether this is a one-time exception for frontier safety models or a new normal. Anthropic has signaled it is the latter. Teams that chose Bedrock specifically because data never left the AWS boundary now face a choice: stay on Opus 4.8 and accept the capability gap, or move to frontier models and accept a fundamentally different data governance posture. That is a conversation for architects, legal, and compliance together, and it should have started before launch day, not after.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Claude Fable 5 on Bedrock Requires Sharing Inference Data with Anthropic\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/bedrock-fable-5-data-sharing/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781946180000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "在 AWS Bedrock 上使用 Anthropic 的 Claude Fable 5 需要选择与 Anthropic 共享数据，以供 30 天的人工审核，这打破了 Bedrock 核心的数据驻留承诺，给企业带来了重大的合规挑战。",
+  "oneSentenceSummary": "在 AWS Bedrock 上使用 Anthropic 的 Claude Fable 5 需要选择与 Anthropic 共享数据，以供 30 天的人工审核，这打破了 Bedrock 核心的数据驻留承诺，给企业带来了重大的合规挑战。",
+  "summary": "本文报道了 Amazon Bedrock 上 Anthropic 的 Claude Fable 5 和 Mythos 5 模型的一项关键政策变更。与之前所有推理数据保留在 AWS 边界内的 Bedrock 模型不同，这些新模型要求选择启用 'provider_data_share'，该设置会将提示词和输出发送给 Anthropic 进行 30 天的人工审核。文章详细阐述了其直接的治理影响：Anthropic 成为需要修订数据处理协议的子处理方，受监管组织面临合规缺口（尤其是医疗行业的 HIPAA 合规以及欧洲公司对 GDPR/CLOUD Act 的担忧），而缺乏提前通知的做法也招致了安全专业人士的尖锐批评。文章还强调了一个监控盲点：数据保留变更记录到了与常规 Bedrock 不同的 CloudTrail 事件源，可能绕过现有的安全检测器。AWS 和安全研究人员已发布了缓解指南，包括用于在组织范围内阻止数据共享的服务控制策略模式。文章最后指出，AWS 于 6 月 12 日因美国政府出口管制指令撤销了对这些模型的访问权限，并提出了一个更广泛的问题：这种数据共享要求是特例，还是前沿模型的新常态。",
+  "mainPoints": [
+    {
+      "point": "Bedrock 上的 Claude Fable 5 要求强制与 Anthropic 共享数据以供 30 天人工审核。",
+      "explanation": "与之前所有 Bedrock 模型不同，Fable 5 和 Mythos 5 强制用户选择启用 'provider_data_share'，将提示词和输出发送给 Anthropic。没有替代模式，这打破了 Bedrock 核心的数据驻留承诺。"
+    },
+    {
+      "point": "此政策给受监管企业带来了重大的合规与法律挑战。",
+      "explanation": "Anthropic 成为能够访问推理数据的子处理方，需要修订数据处理协议、更新子处理方名单并重新审查法律依据。医疗机构面临 HIPAA 合规缺口，欧洲公司则存在 CLOUD Act 方面的担忧。"
+    },
+    {
+      "point": "该功能的推出缺乏提前通知，并造成了监控盲点。",
+      "explanation": "数据保留 API 随模型一同静默上线。该变更记录到了与常规 Bedrock 不同的 CloudTrail 事件源（bedrock-mantle.amazonaws.com），可能绕过现有的安全检测器。"
+    },
+    {
+      "point": "AWS 随后因美国出口管制指令撤销了对这些模型的访问权限。",
+      "explanation": "6 月 12 日，AWS 更新了其博客文章，指出 Anthropic 要求 AWS 撤销所有用户对 Fable 5 和 Mythos 5 的访问权限。已启用数据共享的团队应部署服务控制策略模式以恢复零保留状态。"
+    }
+  ],
+  "keyQuotes": [
+    "AWS Bedrock 的全部价值在于它是公司和模型提供商之间的中立平台。它保证了数据和推理的驻留……剥离这一点，AWS Bedrock 就变成了功能更少的 Anthropic 第一方服务。",
+    "值得解析的关键区别在于：这是为了安全评估，而不是为了训练下一代模型的权重。Anthropic 临时保留推理数据是为了检测滥用和研究模型行为，而不是将其重新用于预训练。",
+    "能力得到了扩音器，而护栏连脚注都没捞着。"
+  ],
+  "tags": [
+    "云原生 / DevOps",
+    "AI 安全",
+    "数据治理",
+    "安全",
+    "AWS"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 883,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781946180000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-20 17:03:00"
+}

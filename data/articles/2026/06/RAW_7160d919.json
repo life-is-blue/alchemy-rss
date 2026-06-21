@@ -1,0 +1,60 @@
+{
+  "id": "RAW_7160d919",
+  "title": "AWS 为 Amazon Cognito 身份服务增加多区域复制功能",
+  "url": "https://www.infoq.com/news/2026/06/cognito-replication-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-20 15:40:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-cognito-multi-region/\">AWS recently introduced Amazon Cognito multi-region replication</a>, which automatically replicates user identities and user pool configurations from a primary region to a secondary one. This enables applications to continue authenticating users from a replica region during outages, without requiring custom replication and failover mechanisms.</p>\n   <p>Replication is one-way from a primary to a secondary region, synchronizing user data, credentials, and configuration. The secondary region is read-only, but during failover users can continue signing in with their existing credentials. Active sessions remain valid because both regions recognize access tokens issued by either region. <a href=\"https://www.linkedin.com/in/sebastienstormacq/\">Sébastien Stormacq</a>, principal developer advocate at AWS, <a href=\"https://aws.amazon.com/blogs/aws/improve-your-application-resilience-with-amazon-cognito-multi-region-replication/\">writes</a>:</p>\n   <blockquote>\n    <p>Engineering teams spent significant time building and maintaining custom replication solutions to synchronize configurations across Regions. Manual export and import of user data between Regions created security risks from potential data exposure and introduced opportunities for data inconsistencies. During regional transitions, end users experienced disruptions like forced password resets and re-authentication.</p>\n   </blockquote>\n   <p><a href=\"https://aws.amazon.com/cognito/\">Amazon Cognito</a> is a managed identity service that helps developers authenticate users and manage access to applications. As part of the update, it now supports customer-managed keys, providing additional flexibility for organizations with strict security and compliance requirements. Multi-region replication requires a multi-region customer-managed AWS KMS key. Stormacq adds:</p>\n   <blockquote>\n    <p>Multi-Region replication supports all authentication methods, including federated sign-in through social providers (Amazon, Google, Apple, Facebook), Security Assertion Markup Language (SAML) and OpenID Connect (OIDC) integrations, and API authorization flows.</p>\n   </blockquote>\n   <p>According to the <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-multi-region.html\">documentation</a>, multi-region replication is currently limited to user pools on Amazon Cognito's <a href=\"https://aws.amazon.com/blogs/security/amazon-cognito-unlocks-advanced-capabilities-with-next-generation-infrastructure/\">next-generation infrastructure</a> which was recently announced in a separate article. Luc van Donkersgoed, principal engineer at PostNL and author of aws-news.com, <a href=\"https://www.linkedin.com/feed/update/urn:li:share:7468129638695821312/\">comments</a>:</p>\n   <blockquote>\n    <p>This has been a major request for the longest time. Also glad to see continued investment in Cognito - it’s a pretty cool service.</p>\n   </blockquote>\n   <p>While calling it the \"pragmatic call\" for most workloads, Daniele Frasca, architect at DanAds, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7468178945528745984/\">summarizes some of the limitations</a>, too:</p>\n   <blockquote>\n    <p>Good step forward for auth resilience. For most teams, this removes a lot of complexity. But (...) it's active-passive, not active-active (...) No new sign-ups, no password resets, no profile updates unless you're in a failover state. TOTP MFA isn't supported on the secondary. If you need MFA everywhere, that's a hard stop, not a footnote. Failover is DNS-driven and needs a custom domain + health checks you own. Lockout counters aren't synced.</p>\n   </blockquote>\n   <p>On Reddit, <a href=\"https://www.reddit.com/r/aws/comments/1twu3k1/cognito_adds_multiregion_replication/\">the reaction is largely positive</a>, with developers welcoming the <a href=\"https://www.reddit.com/r/aws/comments/1ha86m9/best_workaround_for_multiregion_cognito_setup/\">long-awaited</a> feature despite some current limitations.Among competitors, Auth0 has long offered <a href=\"https://auth0.com/availability-trust\">multi-region support</a>.\n    <br>\n    <br>\n    Replication is available as an add-on for Amazon Cognito Essentials and Plus tier customers. The additional cost is $0.0045 per monthly active user (MAU) per replica region for Essentials and $0.006 per MAU per replica region for Plus. For machine-to-machine (M2M) authentication, the add-on incurs an additional 30% charge on top of standard token issuance pricing.</p>\n   <p>Multi-region replication is available across a subset of regions, including Northern Virginia, Singapore, Frankfurt, and Ireland, with any supported region serving as either the source or replica. Customer-managed key support is available for Essentials and Plus tiers across a broader set of AWS regions, including AWS GovCloud.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Adds Multi-Region Replication to Amazon Cognito Identity Service\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/cognito-replication-aws/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781941200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 宣布为 Amazon Cognito 推出多区域复制功能，可将用户身份和配置自动同步至辅助区域，在服务中断期间提升身份验证的弹性。",
+  "oneSentenceSummary": "AWS 宣布为 Amazon Cognito 推出多区域复制功能，可将用户身份和配置自动同步至辅助区域，在服务中断期间提升身份验证的弹性。",
+  "summary": "AWS 为其托管身份服务 Amazon Cognito 引入了多区域复制功能。该功能可将用户身份、凭证和用户池配置从主区域自动复制到一个只读的辅助区域。当主区域发生故障时，应用程序可以故障转移到副本区域，让用户能够使用现有凭证继续登录并保持活跃会话。该功能响应了客户长期以来构建自定义复制解决方案的需求。它支持所有身份验证方式，包括联合登录和 OIDC/SAML。然而，这是一个主-从（active-passive）架构，存在一些限制：除非发生故障转移，否则副本区域无法进行新用户注册或密码重置；辅助区域不支持 TOTP MFA；故障转移由 DNS 驱动，需要配置自定义域名。该功能作为 Cognito Essentials 和 Plus 套餐的附加组件提供，定价基于每个副本区域的月活跃用户数。目前该功能已在包括弗吉尼亚北部、新加坡、法兰克福和爱尔兰在内的部分 AWS 区域可用。",
+  "mainPoints": [
+    {
+      "point": "AWS Cognito 现在为用户池提供托管的多区域复制功能。",
+      "explanation": "该功能可将用户数据和配置从主区域自动复制到辅助区域，无需构建自定义复制方案。"
+    },
+    {
+      "point": "复制模型是主-从（active-passive）架构，而非主-主（active-active）。",
+      "explanation": "辅助区域是只读的。除非触发故障转移，否则在副本区域无法进行新用户注册、密码重置和个人资料更新。"
+    },
+    {
+      "point": "故障转移由 DNS 驱动，需要配置自定义域名。",
+      "explanation": "用户必须配置自定义域名和健康检查来管理故障转移过程，这增加了运维负担。"
+    },
+    {
+      "point": "辅助区域不支持 TOTP MFA。",
+      "explanation": "对于需要在所有区域使用多因素身份验证的应用程序来说，这是一个重大限制，社区专家也指出了这一点。"
+    },
+    {
+      "point": "定价基于每个副本区域的月活跃用户数。",
+      "explanation": "该附加组件在 Essentials 套餐中每个 MAU 收费 0.0045 美元，在 Plus 套餐中每个 MAU 收费 0.006 美元，机器对机器身份验证额外收取 30% 的费用。"
+    }
+  ],
+  "keyQuotes": [
+    "这是长期以来最大的需求。也很高兴看到对 Cognito 的持续投入——这是一个非常酷的服务。",
+    "这是身份验证弹性方面的一大进步。对大多数团队来说，这消除了很多复杂性。但（……）它是主-从架构，而非主-主架构。",
+    "辅助区域不支持 TOTP MFA。如果你需要在所有地方使用 MFA，这是一个硬性限制，而不是一个脚注。"
+  ],
+  "tags": [
+    "Cloud Native / DevOps",
+    "AWS",
+    "身份与访问管理",
+    "弹性",
+    "后端开发"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 510,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781941200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-20 15:40:00"
+}

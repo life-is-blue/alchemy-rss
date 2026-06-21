@@ -1,0 +1,55 @@
+{
+  "id": "RAW_7d7c8327",
+  "title": "苹果发布 Core AI：针对 Apple Silicon 优化的端侧生成式 AI 框架",
+  "url": "https://www.infoq.com/news/2026/06/apple-core-ai-wwdc/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-20 19:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At WWDC 26, Apple announced the <a href=\"https://developer.apple.com/documentation/coreai\">Core AI framework</a>, the official successor to Core ML. It is designed to allow developers to run large language models and generative AI entirely on-device, supporting both custom-converted PyTorch models and pre-optimized open-source models.</p>\n   <p>Apple says the new Core AI framework provides a unified architecture for deploying models ranging from <a href=\"https://developer.apple.com/videos/play/wwdc2026/324/?time=33\">compact 3B-parameter vision models to large-scale LLMs, including reasoning models with up to 70B-parameter reasoning models</a>, across the iPhone, iPad, Mac, and Apple Vision Pro.</p>\n   <p>Core AI is the technology underpinning Apple Intelligence, and with the next release of its OSes and toolchain, Apple is making it available to developers to build what it calls \"custom intelligence\". Core AI, which can only run on Apple Silicon, ensures user data privacy, zero server dependencies, and zero per-token cloud costs.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/06/apple-core-ai-wwdc/news/2026/06/apple-core-ai-wwdc/en/resources/12image1-1781953134035.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/apple-core-ai-wwdc/en/resources/12image1-1781953134035.jpg\" rel=\"share\"></p>\n   <p>Key Core AI capabilities include unified hardware access, allowing workloads to seamlessly run across the CPU, GPU, and Neural Engine under one API; a memory-safe Swift API enabling zero-copy data paths and fine-grained control over inference memory; and ahead-of-time (AOT) compilation, which shifts work off the user's device, yielding near-instant load times.</p>\n   <p>As mentioned, you can convert a PyTorch model into a Core AI model using <a href=\"https://apple.github.io/coreai-torch\">Core AI PyTorch</a>. The simplest approach is exporting a PyTorch as a <code>torch.export.ExportedProgram</code> and convert it to a CoreAI <code>AIProgram</code> using <code>TorchConverter().add_exported_program(ep).to_coreai()</code>.</p>\n   <p>Alternatively, you can author a new Core AI model from a PyTorch one using <a href=\"https://apple.github.io/coreai-torch/main/guides/composite-ops.html\">built-in composite ops</a> provided by the library, such as attention, RoPE embeddings, RMSNorm, and <code>gather-matmul</code>, registering custom lowering function to map new PyTorch ops to Core AI IR, or even creating <a href=\"https://apple.github.io/coreai-torch/main/guides/custom-metal-kernels.html\">custom Metal kernels</a> for lower-level optimization.</p>\n   <p>When converting a PyTorch model, an critical step is <a href=\"https://apple.github.io/coreai-optimization/\">compressing it for deployment on Apple hardware</a>. This process applies optimization techniques such as <a href=\"https://apple.github.io/coreai-optimization/quantization/index.html\">quantization</a> and <a href=\"https://apple.github.io/coreai-optimization/palettization/index.html\">palettization</a>, which are designed to align with the execution patterns of the Core AI runtime by default, ensuring efficient on-device performance.</p>\n   <blockquote>\n    <p>Model compression can help reduce the memory footprint of your model (disk size and at runtime), reduce inference latency, reduce power consumption, or optimize them all at once.</p>\n   </blockquote>\n   <p>One important aspect of running an <code>AIModel</code> is its automatic <a href=\"https://developer.apple.com/documentation/CoreAI/compiling-core-ai-models-ahead-of-time\"><em>specialization</em></a> to the current hardware and OS version, which is carried through when the model is first loaded into the model cache. As a result, the first attempt to use a model may take significantly longer than subsequent runs, once the model has been already cached. Developers can control how and when this process happens by customizing <a href=\"https://developer.apple.com/documentation/coreai/specializationoptions\"><code>SpecializationOptions</code></a>, accessing the <a href=\"https://developer.apple.com/documentation/coreai/aimodelcache\"><code>AICacheModel</code></a> to check whether a model is already available or delete cached ones, and even sharing the model cache across an app group.</p>\n   <p>With the introduction of Core AI, Apple is providing support for three distinct approaches to run ML/AI on its operating systems: Core ML, Core AI, and MLX Swift. Based on developer discussions based on Hacker News, <a href=\"https://news.ycombinator.com/item?id=48459443\">Apple seems to suggest</a> using Core ML for \"classic, non-neural ML\", such as decision trees or tabular feature engineering, Core AI for neural networks and transformers, and MLX for working with custom model weights—though potentially with <a href=\"https://news.ycombinator.com/item?id=48454273\">lower performance</a>. <a href=\"https://www.reddit.com/r/iOSProgramming/comments/1u1nfxr/comment/or7429o/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">Community feedback also notes</a> that while Core AI \"makes it easier to incorporate high-performance LLMs\", its long-term value will depend \"on the the future growth of the official Core AI/community\".</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Apple Launches Core AI for Apple-Silicon Optimized On-Device Generative AI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/apple-core-ai-wwdc/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781953200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "苹果在 WWDC 26 上宣布了 Core ML 的继任者 Core AI，这是一个统一的框架，用于在 Apple Silicon 上完全端侧运行大语言模型和生成式 AI，支持 PyTorch 模型转换、AOT 编译和硬件特化。",
+  "oneSentenceSummary": "苹果在 WWDC 26 上宣布了 Core ML 的继任者 Core AI，这是一个统一的框架，用于在 Apple Silicon 上完全端侧运行大语言模型和生成式 AI，支持 PyTorch 模型转换、AOT 编译和硬件特化。",
+  "summary": "在 WWDC 26 上，苹果推出了 Core AI 框架，作为 Core ML 的官方继任者，旨在让开发者能够在 Apple Silicon 上完全端侧运行大语言模型和生成式 AI。该框架提供了一个统一的架构，用于在 iPhone、iPad、Mac 和 Apple Vision Pro 上部署从紧凑的 3B 参数视觉模型到大规模 70B 参数推理模型。其关键能力包括跨 CPU、GPU 和神经网络引擎的统一硬件访问、内存安全的 Swift API（支持零拷贝数据路径），以及可实现近乎即时加载的提前（AOT）编译。开发者可以使用 Core AI PyTorch 库转换 PyTorch 模型，该库支持复合算子、自定义 Metal 内核以及量化和调色板化等模型压缩技术。文章还阐明了 Core ML（用于经典机器学习）、Core AI（用于神经网络和 Transformer）以及 MLX Swift（用于自定义模型权重）之间的区别，并提到了社区对该框架长期价值的反馈。",
+  "mainPoints": [
+    {
+      "point": "Core AI 是 Core ML 的继任者，专注于端侧生成式 AI 和 LLM。",
+      "explanation": "新框架提供了一个统一的架构，用于在苹果设备上部署从 3B 到 70B 参数的模型，确保了隐私性和零服务器成本。"
+    },
+    {
+      "point": "Core AI 提供统一的硬件访问和 AOT 编译以提升性能。",
+      "explanation": "它通过一个 API 无缝地在 CPU、GPU 和神经网络引擎上运行工作负载，并通过提前编译将工作负载从设备上转移，实现近乎即时的加载时间。"
+    },
+    {
+      "point": "开发者可以使用 Core AI PyTorch 库转换 PyTorch 模型。",
+      "explanation": "该库支持导出 PyTorch 模型、应用复合算子、自定义 Metal 内核以及量化和调色板化等压缩技术，以实现高效的端侧性能。"
+    },
+    {
+      "point": "苹果针对不同用例区分了 Core ML、Core AI 和 MLX Swift。",
+      "explanation": "Core ML 用于经典机器学习，Core AI 用于神经网络和 Transformer，MLX 用于自定义模型权重，但社区反馈指出了潜在的性能权衡。"
+    }
+  ],
+  "keyQuotes": [
+    "Core AI 提供了一个统一的架构，用于部署从紧凑的 3B 参数视觉模型到大规模 LLM（包括高达 70B 参数的推理模型）的各种模型。",
+    "模型压缩有助于减少模型的内存占用（磁盘大小和运行时）、降低推理延迟、减少功耗，或同时优化所有这些方面。"
+  ],
+  "tags": [
+    "LLM",
+    "端侧 AI",
+    "Apple Silicon",
+    "Core AI",
+    "AI 框架"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 544,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781953200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-20 19:00:00"
+}

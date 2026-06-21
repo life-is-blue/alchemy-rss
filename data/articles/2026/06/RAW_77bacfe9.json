@@ -1,0 +1,56 @@
+{
+  "id": "RAW_77bacfe9",
+  "title": "陶哲轩 12 年前的预言，现在 AI 帮他兑现了",
+  "url": "https://www.qbitai.com/2026/06/437023.html",
+  "date": "2026-06-20 19:56:57",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>&nbsp;</p>\n  <h5 data-pm-slice=\"0 0 []\">闻乐 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>事实证明，菲尔兹奖得主有时候也兼职预言家。</p>\n  <p>12年前，陶哲轩在首届数学突破奖的台上抛出的一句预言，被视作天方夜谭：</p>\n  <blockquote>\n   <p>将来有一天，我们或许不再用LaTeX撰写论文，而是使用计算机能理解的的形式化语言。</p>\n  </blockquote>\n  <p>那一年，Transformer还没诞生，ChatGPT更是连影子都没有。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182303_0b016581b87e37f52ed65efaa4aa6733.webp\" alt=\"图片\" data-aistatus=\"1\" data-imgfileid=\"100412532\" data-ratio=\"1\" data-src=\"https://image.jido.dev/20260620182303_e3603d4.png\" data-type=\"png\" data-w=\"192\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>没想到，回旋镖正中靶心。过去这一年，AI在数学领域突然开始疯狂提速。</p>\n  <p>从OpenAI解决开放问题，到DeepMind批量攻克数学猜想，越来越多数学证明被写进形式化系统，交给计算机自动验证。</p>\n  <p>回望来路，最早看清风向、亲自下场实践的人，就是陶哲轩。</p>\n  <p>十年间，他先后推进大规模协作数学、Lean形式化证明、又发起Equational Theories项目，面对2200万个数学问题，依靠「AI+人类协作」，短短48小时就攻克大半。</p>\n  <p>项目在AI助力下效率拉满，很多时候连他本人都不用插手了。</p>\n  <p>实际上，陶哲轩这也是用实际行动证明，最好的预测未来，就是亲手把它创造出来。</p>\n  <h2>神童，但更迷恋协作</h2>\n  <p>说起陶哲轩，很多人第一反应是那串传奇经历：</p>\n  <p>2岁时教比自己大的孩子数数，7岁开始接触微积分，10岁成为国际数学奥林匹克史上最年轻的铜牌得主，24岁成为UCLA历史上最年轻的终身教授之一，31岁拿下菲尔兹奖。</p>\n  <h6><strong><img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182303_871470898891e4d960c4dde836a89c3c.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260620182303_6ac25cf.png\" data-ratio=\"0.71875\" data-type=\"png\" data-w=\"800\" data-imgfileid=\"100412536\" data-aistatus=\"1\" data-original-style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;\" data-index=\"4\" data-report-img-idx=\"1\" data-fail=\"0\">△</strong>72岁的保罗・埃尔德什与10岁的陶哲轩 图源：Quantamagazine</h6>\n  <p>在大众印象里，这样的人往往属于“天才独行侠”。</p>\n  <p>但陶哲轩本人恰恰相反。</p>\n  <p>相比于孤军奋战，他一直对另一件事更感兴趣：</p>\n  <p><strong>数学家能不能像开源软件开发者一样协作？</strong></p>\n  <p>一个人知道A，一个人知道B，如果把两个人的知识拼起来，会不会出现单个人想不到的新东西？</p>\n  <p>这种想法后来深刻影响了他的整个职业生涯。</p>\n  <p>2009年，他参与了<strong>Polymath项目</strong>，一个把数学协作搬上公开论坛的实验。</p>\n  <p>在这个项目里，任何人都可以登录，认领子问题，提交思路，群策群力。</p>\n  <p>原本需要少数专家花费数月甚至数年完成的问题，在公开协作模式下被快速推进。</p>\n  <p>这次实验最终成功解决了一个组合数学问题，证明了大规模协作在数学上不是空想。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182303_49afd2a30365d658c3501b50fb435962.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260620182303_8877ad5.png\" data-ratio=\"0.8\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100412534\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"5\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>Polymath成功了，但陶哲轩很快发现一个更大的问题：</p>\n  <p><strong>所有的错误核查，都压在核心负责人身上。</strong></p>\n  <p>参与者越多，审核压力越大；协作规模越大，组织成本越高。</p>\n  <p>没有自动验证工具，人工纠错的速度永远跟不上协作的规模。协作数学的上限，被压住了。</p>\n  <p>要突破这道天花板，必须找到别的路。</p>\n  <p>2014年，他在首届突破奖的台上，描述了自己眼中的未来数学，也就是三个当时听起来不太靠谱的预言：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>数百人规模的大规模数学协作会成为常态；</section>\n   </li>\n   <li>\n    <section>计算机将能自动验证数学证明；</section>\n   </li>\n   <li>\n    <section>LaTeX会被机器能读懂的形式化语言所取代。</section>\n   </li>\n  </ul>\n  <p>今天看，这三个判断几乎对应了AI数学发展的全部主线。</p>\n  <p>但放在当时，它们听起来过于超前。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182303_fd413df0f2747befcfc95c299c30c0a0.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260620182303_294df03.jpeg\" data-ratio=\"0.6657407407407407\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100412535\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"6\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>虽然Polymath证明了协作数学行得通，但如果不能把“验证”这件事自动化，数学研究很难真正实现规模化协作。</p>\n  <p>而他等待的答案，最终出现在一种名叫<strong>Lean</strong>的工具身上。</p>\n  <h2>预言说了十年，他决定亲自试试</h2>\n  <p>转机出现在2023年。</p>\n  <p>那一年，陶哲轩在一次交流中认识了<strong>数学家Kevin Buzzard</strong>，这位也是Lean的早期推广者。</p>\n  <p>Lean是一套交互式定理证明系统，用形式化语言描述数学证明，让计算机逐行验证每一步的逻辑。</p>\n  <p>这套理念恰好击中了陶哲轩多年来思考的问题，于是，在Buzzard的鼓励下，48岁的陶哲轩决定亲自下场实践。</p>\n  <p>2023年10月9日，他在社交媒体上发了条状态：</p>\n  <blockquote>\n   <p>我决定终于开始学习Lean4交互式证明系统了（必要时使用AI协助）。</p>\n  </blockquote>\n  <p>这位菲尔兹奖得主原本觉得，这不会太难，于是挑了一道关于<strong>麦克劳林不等式</strong>的问题作为练手项目，打算以此为素材，尝试用Lean完成证明形式化。</p>\n  <p>他先按传统写法完成 10页手写风格证明，再着手将其转译为Lean代码。按照他的估计，大概一周左右就能搞定。</p>\n  <p>然后，他碰壁了。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182303_d81a38aa0b769ecf6db51593d5cc4525.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260620182303_4342444.png\" data-ratio=\"0.9523809523809523\" data-type=\"png\" data-w=\"252\" data-imgfileid=\"100412533\" data-aistatus=\"1\" data-original-style=\"margin:0px auto;padding:0px;width:163px;height:155px;\" data-index=\"7\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>上手后他发现，形式化证明和写数学论文是两种完全不同的思维模式。</p>\n  <p>在传统论文里，一句“三个大于1的数相加大于等于3”几乎没人会多看一眼，但Lean不行：</p>\n  <p>你必须明确告诉系统你引用的结论来自哪里？对应哪一个引理？</p>\n  <p>很多看似显然的步骤，都需要补上大量形式化细节，原本几行纸面推导，很容易变成数百行代码。</p>\n  <p>一个月后，陶哲轩终于完成自己的第一个正式化证明。</p>\n  <p>虽然代码并不优雅，但从那一天开始，他真正成为了形式化数学社区的一员。</p>\n  <h2>PFR项目：预言第一次落地</h2>\n  <p>在他学习Lean不久后，就出现了一个新的机会。</p>\n  <p>2023年11月9日，陶哲轩和合作者Ben Green、Tim Gowers等人完成了一篇关于PFR猜想的论文。</p>\n  <p>这是一个关于集合加法结构的数论命题，此前悬而未决多年。</p>\n  <p>论文写完了，但他没停。接着，他在Lean社区发了一篇帖子：</p>\n  <blockquote>\n   <p>大家好，我准备启动一个项目，把PFR猜想的最新证明在Lean4里正式化……欢迎任何人参与。</p>\n  </blockquote>\n  <p>这次和Polymath最大的不同在于，<strong>Lean负责审查</strong>。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182303_fcf26708b40a8bc3aecb1e70b088a15a.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260620182303_1d91ba9.png\" data-ratio=\"1.102661596958175\" data-type=\"png\" data-w=\"1052\" data-imgfileid=\"100412538\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"8\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>这一次，他把论文拆成了一块块可以独立认领的子任务，开放给全球社区。</p>\n  <p>每个人完成自己的一块，系统自动核验，通过了才能合并进主线。</p>\n  <p>结果<strong>全程仅三周，所有形式化工作全部完成。</strong></p>\n  <p>甚至，陶哲轩发布了一个额外的小任务，不到1小时就有社区成员完成并提交。</p>\n  <p>这也是他第一次看到自己十多年前设想的协作数学模式，真的能运转起来。</p>\n  <h2>2200万种数学关系，48小时确定大半</h2>\n  <p>尝到甜头之后，他把赌注押得更大了。</p>\n  <p>2024年9月25日，陶哲轩发起了<strong>Equational Theories项目</strong>，目标是系统性地确定约2200万个代数等式之间的逻辑蕴含关系。</p>\n  <p>简单说，就是搞清楚哪些方程式能从哪些方程式推导出来。</p>\n  <p>这次陶哲轩用上了全新组合：AI帮忙写证明，Lean负责检查对错，全球志愿者社区分头攻克具体难题，三方协同推进工作。</p>\n  <h6><strong><img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182303_55e5a79ceac08f0f283fc18fa7f094a6.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260620182303_d2b3c28.png\" data-ratio=\"1.5214285714285714\" data-type=\"png\" data-w=\"560\" data-imgfileid=\"100412537\" data-aistatus=\"1\" data-original-style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;\" data-index=\"9\" data-report-img-idx=\"6\" data-fail=\"0\">△</strong>自动化证明助手工作流程 图源：Quantamagazine</h6>\n  <p>这次结果出得更快！<strong>48小时内</strong>，大规模筛选基本完成，大量问题已经解决在望。</p>\n  <p>前9天，整体进度已推进到99.866%，第57天，主项目宣告基本完工，只剩162个蕴含关系等待收尾。</p>\n  <p>甚至，这个项目还在过程中催生了一个全新的数学概念<strong>magma cohomology（原群上同调）</strong>。</p>\n  <p>这个概念是为无公理约束的原群量身打造的上同调理论，核心是定义了依赖等式的上同调群H¹、H²，用于分类原群扩张、构造反例、区分不同原群，是经典群上同调的推广，用来研究最一般的代数结构。</p>\n  <p>除此之外，Equational Theories项目展现出的自主运转能力，也让陶哲轩欣喜。</p>\n  <p>依托AI辅助与自动化核验，即便他不全程跟进，各项工作也能稳步推进。</p>\n  <p>过去两年里，陶哲轩已经越来越频繁地把AI纳入自己的研究流程，也不断建议年轻学者要掌握与AI协作的能力。</p>\n  <p>从陶哲轩身上可以看到的是，最好的预言家，其实是先行者——</p>\n  <p>不止于预判未来，亲身实践，一步步把曾经的设想变为现实。</p>\n  <p>如今，这位先行者也已经成为AI数学最坚定的布道者。</p>\n  <p><em>参考链接：</em>\n   <br>\n   <em>[1]https://www.quantamagazine.org/how-terry-tao-became-an-evangelist-for-ai-in-math-20260608/</em>\n   <br>\n   <em>[2]https://terrytao.wordpress.com/2023/11/</em>\n   <br>\n   <em>[3]https://gowers.wordpress.com/2009/03/10/</em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文回顾陶哲轩从 12 年前预言到亲自下场，通过 Lean 形式化证明与 AI 协作，将大规模数学协作从设想变为现实的历程。",
+  "oneSentenceSummary": "本文回顾陶哲轩从 12 年前预言到亲自下场，通过 Lean 形式化证明与 AI 协作，将大规模数学协作从设想变为现实的历程。",
+  "summary": "文章以陶哲轩 2014 年关于「形式化语言取代 LaTeX」的预言为引，梳理了他从 Polymath 项目到 Lean 形式化证明、再到 Equational Theories 项目的十年实践。重点讲述了陶哲轩如何从「天才独行侠」转变为协作数学的推动者，以及他如何借助 Lean 系统解决协作验证瓶颈，最终在 PFR 猜想和 2200 万个代数等式项目中，通过「AI + 人类 + Lean」三方协作，实现 48 小时攻克大半问题的效率突破。文章也提及项目过程中催生的新数学概念「magma cohomology」，并点明陶哲轩已成为 AI 数学最坚定的布道者。",
+  "mainPoints": [
+    {
+      "point": "陶哲轩 12 年前预言的形式化数学，如今通过 AI 与 Lean 系统成为现实。",
+      "explanation": "2014 年他提出用机器可读的形式化语言取代 LaTeX，当时被视为天方夜谭；如今 Lean 系统与 AI 辅助已能自动验证数学证明，预言被兑现。"
+    },
+    {
+      "point": "大规模数学协作的核心瓶颈是验证自动化，Lean 系统解决了这一难题。",
+      "explanation": "Polymath 项目证明了协作可行，但人工审核跟不上规模；Lean 的自动逐行验证让社区协作变得可扩展，PFR 项目三周完成全部形式化工作。"
+    },
+    {
+      "point": "Equational Theories 项目展示了「AI + 人类 + Lean」三方协作的高效模式。",
+      "explanation": "AI 辅助写证明、Lean 负责核验、社区分头攻克，48 小时内完成 2200 万个代数等式的大规模筛选，57 天基本完工，并催生了新数学概念。"
+    },
+    {
+      "point": "陶哲轩从预言家变为先行者，成为 AI 数学最坚定的布道者。",
+      "explanation": "他不仅预判趋势，更亲自下场学习 Lean、发起协作项目，并建议年轻学者掌握与 AI 协作的能力，将设想一步步变为现实。"
+    }
+  ],
+  "keyQuotes": [
+    "将来有一天，我们或许不再用 LaTeX 撰写论文，而是使用计算机能理解的形式化语言。",
+    "最好的预测未来，就是亲手把它创造出来。",
+    "数学家能不能像开源软件开发者一样协作？"
+  ],
+  "tags": [
+    "AI 数学",
+    "形式化证明",
+    "Lean",
+    "AI 协作",
+    "陶哲轩"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 86,
+  "wordCount": 2781,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1781956617000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-20 19:56:57"
+}

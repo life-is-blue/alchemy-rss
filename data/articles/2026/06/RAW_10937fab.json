@@ -1,0 +1,55 @@
+{
+  "id": "RAW_10937fab",
+  "title": "深入解析 Atlassian Forge 计费架构：大规模分布式用量追踪",
+  "url": "https://www.infoq.com/news/2026/06/forge-billing-usage-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-20 22:21:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Atlassian has described the engineering behind its <a href=\"https://www.atlassian.com/blog/atlassian-engineering/engineering-the-forge-billing-platform-for-reliability-and-scale\">Forge billing platform, a system built to support usage-based pricing</a> across its cloud application development ecosystem. Forge is Atlassian’s serverless extensibility platform used to build apps for products such as Jira and Confluence, and the billing system is responsible for translating distributed usage signals into accurate financial records at scale.</p>\n   <p>The platform emerged as Forge evolved from a simple extension model into a usage-driven ecosystem where billing depends on fine-grained signals such as function invocations, storage consumption, and operational telemetry. This shift required Atlassian to build a system capable of collecting high-volume events from independent services, ensuring they are consistently validated, attributed to the correct tenant context, and transformed into billing-ready records without duplication or loss, while still supporting near real-time visibility for developers.</p>\n   <p>At a high level, the architecture consists of Forge services emitting usage events, a centralized ingestion and streaming layer, a usage tracking system, and downstream billing and commerce systems. Each Forge service produces structured events using a shared schema, ensuring consistent interpretation across downstream consumers regardless of origin.</p>\n   <p>Atlassian emphasized,</p>\n   <blockquote>\n    <p>UTS (Usage Tracking Service), which acts as the nervous system for Forge Billing.</p>\n   </blockquote>\n   <p>Atlassian describes UTS as the coordination layer for incoming usage data, responsible for validating, normalizing, enriching, and preparing events for billing workflows. UTS also ensures that usage data is consistently attributed to the correct entitlement or subscription context before it is persisted and passed downstream. Events flow through a streaming infrastructure built on Kafka-based systems and internal delivery abstractions. This layer enforces schema validation and ensures reliable delivery to downstream consumers. By decoupling producers from consumers, the platform reduces service dependencies and allows ingestion and processing components to scale independently.</p>\n   <p>Atlassian highlighted,</p>\n   <blockquote>\n    <p>Key complexity here is attribution and shape: every event must be attributed to the right entitlement/subscription context, and it must fit the UTS contract so that downstream systems.</p>\n   </blockquote>\n   <p>Once ingested, usage events are processed by the tracking layer, which performs validation, normalization, enrichment, deduplication, and ordering. This ensures financial correctness even in scenarios where events arrive out of order or are delivered multiple times due to retries.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/06/forge-billing-usage-platform/news/2026/06/forge-billing-usage-platform/en/resources/1Screenshot 2026-05-30 at 8.05.53 PM-1780198156897.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/forge-billing-usage-platform/en/resources/1Screenshot 2026-05-30 at 8.05.53 PM-1780198156897.png\" rel=\"share\"></p>\n   <p><em>Ingestion pipeline (Source: <a href=\"https://www.atlassian.com/blog/atlassian-engineering/engineering-the-forge-billing-platform-for-reliability-and-scale\">Atlassian Blog Post</a>)</em></p>\n   <p>The system addresses distributed consistency using idempotent event design and time-based aggregation, ensuring duplicate deliveries do not cause double counting while late-arriving events are incorporated through windowed processing. A stream processing engine converts raw usage events into aggregated metrics for billing and analytics. Data is stored in layered systems, with immutable long-term storage for auditability and a low-latency analytical layer for dashboards and APIs. Usage is mapped to developer spaces for per-app tracking and consolidated billing, enabling scalable, transparent billing with strong correctness and traceability guarantees.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Inside Atlassian’s Forge Billing Architecture for Distributed Usage Tracking at Scale\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/forge-billing-usage-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1781965260000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Atlassian 详细阐述了其 Forge 计费平台的工程实践，该系统旨在可靠地将分布式用量信号转化为大规模精确的财务记录。",
+  "oneSentenceSummary": "Atlassian 详细阐述了其 Forge 计费平台的工程实践，该系统旨在可靠地将分布式用量信号转化为大规模精确的财务记录。",
+  "summary": "本文介绍了 Atlassian Forge 计费平台背后的架构与工程决策，该系统旨在支持其云应用生态中的按用量计费模式。随着 Forge 从简单的扩展模型演变为一个由用量驱动的生态系统，Atlassian 需要构建一个系统来收集来自独立服务的高并发事件，对其进行验证并归属到正确的租户，然后将其转化为可用于计费的记录，同时确保不重复、不丢失。该架构包含一个集中式的数据摄入与流处理层、一个充当协调层的用量追踪服务（UTS），以及下游的计费系统。解决的关键挑战包括分布式一致性、事件去重、延迟到达事件的处理，以及归属到正确的授权上下文。系统采用了幂等事件设计、基于时间的聚合以及分层存储，以实现可审计性和低延迟分析。",
+  "mainPoints": [
+    {
+      "point": "Forge 计费平台旨在处理大规模的分布式用量追踪。",
+      "explanation": "它从独立服务中收集高并发事件，进行验证并归属到正确的租户，然后将其转化为可用于计费的记录，确保不重复、不丢失。"
+    },
+    {
+      "point": "用量追踪服务（UTS）充当中央协调层。",
+      "explanation": "UTS 负责验证、标准化、丰富事件数据，并为计费工作流准备数据，确保事件能一致地归属到正确的授权或订阅上下文中。"
+    },
+    {
+      "point": "通过幂等事件设计和基于时间的聚合实现分布式一致性。",
+      "explanation": "这确保了重复投递不会导致重复计数，同时通过窗口化处理将延迟到达的事件纳入计算。"
+    },
+    {
+      "point": "该架构利用流式基础设施将生产者与消费者解耦。",
+      "explanation": "基于 Kafka 系统构建的这一层强制执行模式验证，并允许数据摄入和处理组件独立扩展。"
+    }
+  ],
+  "keyQuotes": [
+    "UTS（用量追踪服务）充当着 Forge 计费系统的神经中枢。",
+    "这里的关键复杂性在于归属和形态：每个事件都必须归属到正确的授权/订阅上下文，并且必须符合 UTS 的契约，以便下游系统处理。"
+  ],
+  "tags": [
+    "系统设计",
+    "后端开发",
+    "云原生 / DevOps",
+    "分布式系统",
+    "架构"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 445,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1781965260000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-20 22:21:00"
+}

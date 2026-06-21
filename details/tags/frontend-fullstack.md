@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-21 06:25:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-21 08:32:10 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -708,6 +708,14 @@
 
 
 
+### [JavaScriptCore-的共享内存线程（实验性，尚未完成）——Jarred-Sumner-·-Pull-Request-#249-·-oven-sh/WebKit](https://github.com/oven-sh/WebKit/pull/249)
+
+2026-06-21 01:02:49 | 标签: JavaScript 引擎, 并发, WebKit, JSC, 共享内存
+
+> Jarred-Sumner 的此 PR 在 oven-sh/WebKit 分支中为 JavaScriptCore 引入了共享内存线程的实验性实现。核心 API 是 `new Thread(fn， ...args)`，它在同一堆内的另一个线程上运行闭包，直接共享对象，无需结构化克隆、消息传递或 SharedArrayBuffer 等变通方案。该设计基于 Filip Pizlo 2017 年的提案，使用 TID 标记的蝴蝶数据结构、共享写入时的分段存储、每个对象的单元锁以及监视点，将串行开销保持在接近零的水平（最坏情况约 0.45%）。PR 详细介绍了 API（join、asyncJoin、Loc...
+
+
+
 ### [纯-Headless-与混合-Headless-CMS：为企业内容管理选择正确的架构](https://www.freecodecamp.org/news/pure-headless-vs-hybrid-headless-cms-for-enterprise-content-management/)
 
 2026-06-20 01:16:15
@@ -1380,13 +1388,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1536,13 +1544,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3036,13 +3044,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4746,13 +4754,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

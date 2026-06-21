@@ -1,0 +1,55 @@
+{
+  "id": "RAW_eb897db1",
+  "title": "英伟达开始搞机器人自己研究机器人那套了…",
+  "url": "https://www.qbitai.com/2026/06/437041.html",
+  "date": "2026-06-20 20:06:20",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<html>\n <head></head>\n <body>\n  <h5>henry 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>好好好，又给英伟达这家伙，找到了新的烧token的方式（doge）</p>\n  <p>刚刚，英伟达、CMU和Berkeley联合推出具身智能Autoresearch框架——</p>\n  <p><strong>ENPIRE</strong>。</p>\n  <p>简单来说，ENPIRE就是让AI agent自己做机器人研究，让8个Coding Agent，各自控制一台双臂机器人。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182316_f3a014ad74562cb2ac9c410bb1ab54af.webp\" alt=\"图片\">\n  </section>\n  <p>Agent们会自己读论文、改算法、训练策略、部署实验、分析结果、总结经验，不满意再换个思路重来。</p>\n  <p>GEAR的研究员们不用盯着屏幕调参数，只需要第二天早上过来看报告。</p>\n  <p>在最具代表性的Pin Insertion任务中，仅用了3小时，机器人把针插进4毫米孔洞的成功率从0一路拉到99%。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182317_759196d51f466310c85d5c17914b1d67.webp\" alt=\"图片\">\n  </section>\n  <p>全程无人类参与，项目负责人之一的<strong>Jim Fan</strong>发推说：</p>\n  <blockquote>\n   <p>GEAR实验室的一部分现在已经在彻夜自我改进了。我们只需要早上来读报告。</p>\n  </blockquote>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182317_8886e8172b8fda31bad9b63e0264a09b.webp\" alt=\"图片\">\n  </section>\n  <p>不过也有网友表示：</p>\n  <blockquote>\n   <p>高情商：彻夜自我改进；低情商：没日没夜的烧token。</p>\n  </blockquote>\n  <h2>具身智能研究的harness</h2>\n  <p>先说明一点，ENPIRE并不是让Agent直接写控制代码操纵机器人，它更像一个机器人研究员，需要在真实世界里重置实验场景、检索文献、实施想法、验证结果、分析问题，优化下一轮迭代。</p>\n  <p>与类似code as policy的方法不同，ENPIRE的最终产物的不是一段控制脚本，而是一个真正能够部署到机器人上的Policy。</p>\n  <p>这种给现实环境搭建自动化框架的事儿，之所以难是因为现实世界不像代码世界。</p>\n  <p>在代码世界，Agent写错代码了，大不了删掉重来；实验跑崩了，重新启动即可。</p>\n  <p>但机器人研究不一样，实验失败之后，物体会歪掉，场景会乱掉，机器人甚至可能把东西碰飞。</p>\n  <p>如果每轮实验都要靠研究员手动复位、记录结果、整理数据，那么Agent根本不可能24小时连续做研究。</p>\n  <p>所以ENPIRE做的事情，本质上是给AI研究员搭建一套自动化实验台。</p>\n  <p>论文里把它称为<strong>Harness Framework</strong>。</p>\n  <p>可以理解为，它给Coding Agent配齐了一整套做物理实验所需的基础设施。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182316_a2503776234c1d64bb5839fc9c985a53.webp\" alt=\"图片\">\n  </section>\n  <p>这套基础设施由四部分组成，也正好对应ENPIRE这个名字：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li><strong>EN（Environment）环境模块</strong>：负责搭建实验环境，包括安全边界、自动复位和自动评分。</li>\n   <li><strong>PI（Policy Improvement）策略改进</strong>：Agent根据任务目标提出新方案。行为克隆、强化学习、启发式规则，甚至几种方法混搭，全都可以尝试。</li>\n   <li><strong>R（Rollout）——部署测试</strong>：把新策略部署到真实机器人上执行，记录轨迹、视频和传感器信号。</li>\n   <li><strong>E（Evolution）——进化</strong>： 多Agent协作的核心。8个Agent各自占用一台机器人，通过Git共享代码，互相吸收有效方案，淘汰失败路线。</li>\n  </ul>\n  <p>四个模块连起来之后，就形成了一个完整闭环：</p>\n  <p>提出想法 → 训练策略 → 真机测试 → 自动评分 → 总结经验 → 再提出新想法。</p>\n  <p>整个过程不需要人工值守，Agent自己负责做实验，也自己负责从实验里学习。</p>\n  <p>而其中最关键的一环，其实是Environment模块。因为它解决的是具身智能研究里最令人头疼的问题：</p>\n  <p><strong>怎么让实验自动跑起来。</strong></p>\n  <p>在仿真环境里，复位往往只需要一句：env.reset()</p>\n  <p>但现实世界没有env.reset()。</p>\n  <p>一次失败实验结束之后，机器人必须先把场景恢复到初始状态，下一轮实验才能开始。</p>\n  <p>以GPU插拔任务为例，机器人需要先把GPU从主板上拔出来，再移动到指定位置释放，然后退回初始状态。</p>\n  <p>整个过程涉及复杂的力控操作，因为稍有不慎就可能损坏GPU针脚。</p>\n  <p>自动评分同样如此。</p>\n  <p>例如扎带穿扎任务中，Agent需要判断：“扎带尾巴到底有没有成功穿过扎带头？”</p>\n  <p>为了回答这个问题，Agent甚至自己设计了一套视觉检测方案。</p>\n  <p>顶部和侧面两个摄像头同时观察目标区域，各自进行图像分割；只有当两个视角都确认扎带尾端已经穿过扎带头，系统才会判定实验成功。</p>\n  <p>整个检测延迟被压缩到150毫秒以内，已经接近人类视觉反应速度。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182316_88bc31b59b79f649b2634ffb63e4f5ce.webp\" alt=\"图片\">\n  </section>\n  <p>这些自动复位、自动评分、安全控制接口一旦调通，就会被固化为标准API。</p>\n  <p>后续Agent做研究时，不再需要关心底层实验流程。</p>\n  <p>由此，真实世界终于第一次变成了一个可以被反复调用、持续优化的研究环境。</p>\n  <h2>好的agent不比研究员差</h2>\n  <p>当然，光有实验平台还不够。真正有意思的问题是：</p>\n  <p>当你把机器人、GPU和Token都准备好之后，Agent到底会不会做研究？</p>\n  <p>ENPIRE给出的答案是：会，而且还挺像那么回事。</p>\n  <p>如开头所说，论文在四个高难度灵巧操作任务上进行了验证：</p>\n  <p>Push-T（推动T形积木到目标位置）、Pin Insertion（把针插进4毫米孔洞）、GPU Insertion（把GPU插进主板插槽）以及Zip-tie（扎带穿扎与剪切）。</p>\n  <p>最终四个任务全部达到了99%的成功率。</p>\n  <p>但比结果更有意思的，是Agent达到这个结果的过程，最典型的是Pin Insertion任务。</p>\n  <p>论文直接公开了Agent的Idea Tree，也就是它完整的研究思路演化过程。</p>\n  <p>从中可以清楚看到一条非常熟悉的研究路径：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>先试行为克隆（Behavior Cloning），效果一般；</li>\n   <li>加入在线强化学习数据，性能开始提升；</li>\n   <li>再增加正则化项，成功率出现明显跃升；</li>\n   <li>随后继续调整Batch Size，补偿控制器延迟，进一步提升稳定性。</li>\n  </ul>\n  <p>整个过程中，Agent就跟人类研究员一样，一步一步往上试，一路把成功率从接近零推到接近100%。</p>\n  <p>整个过程中，没有人类告诉它应该加什么模块，也没有人类规定实验顺序。</p>\n  <p>所有方案都来自Agent自己提出的假设，再通过真实实验验证。</p>\n  <p>如果把这些记录隐藏起来，只看研究过程，很难说这和一个机器人博士生在实验室里做研究有什么本质区别。</p>\n  <p>更有意思的是，Agent甚至会根据任务特点主动改变研究路线。</p>\n  <p>在Zip-tie任务中，它很快发现端到端训练效果并不好。</p>\n  <p>原因很简单，因为这个任务实在太长了：</p>\n  <p>找到剪刀 → 抓起剪刀 → 找到扎带 → 对准位置 → 完成剪切。</p>\n  <p>整个操作链跨越多个阶段，单纯依赖端到端策略很难学好，于是Agent自己换了一条路线。</p>\n  <p>先利用VLA模型（Vision-Language-Action）完成粗定位，再调用工具API执行精细操作。</p>\n  <p>某种程度上，它甚至自己做了一次系统架构设计。</p>\n  <p>如果要找一个最直接的参照物，其实就是Karpathy前段时间提出的Autoresearch。</p>\n  <p>两者本质上都在做同一件事：让AI自动提出想法、运行实验、比较结果，再根据结果继续迭代。</p>\n  <p>区别在于，Autoresearch发生在数字世界。代码写崩了可以重来，实验跑错了可以重启。</p>\n  <p>算力几乎是唯一成本，而ENPIRE第一次把这套研究循环搬进了物理世界，机器人不是代码。</p>\n  <p>你没法对一台撞坏的机械臂执行Git Revert，真实世界里，摩擦力在变化，物体位置在变化，光照在变化，传感器也会产生噪声。</p>\n  <p>ENPIRE的核心价值，<strong>就是通过自动复位、自动评分和安全控制接口，把原本混乱的物理世界包装成Agent能够反复调用的实验环境。</strong></p>\n  <p>对于Agent来说，真实世界第一次拥有了类似软件开发环境的可迭代性。</p>\n  <p>另一个有意思的发现，是所谓的「物理Scaling」。</p>\n  <p>过去大模型Scaling的是参数、数据和算力，ENPIRE开始Scaling实验数量。</p>\n  <p>论文里，8个Agent分别占用8台机器人，同时探索不同路线。</p>\n  <p>结果Pin Insertion任务达到目标成功率的时间，从单机器人模式下的1.5小时缩短到40分钟。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182316_4d6f8b83d99644ead9dc9b11d822a6bd.webp\" alt=\"图片\">\n  </section>\n  <p>换句话说，如果过去的大模型是在扩展GPU集群，那么ENPIRE扩展的则是机器人舰队。</p>\n  <p>当然，这种Scaling并不便宜。</p>\n  <p>随着Agent数量增加，每个Agent都需要阅读其他Agent的代码、理解别人的发现、总结经验并同步知识。</p>\n  <p>因此Token消耗增长得比机器人数量更快，论文甚至专门提出两个指标来衡量这种代价：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li><strong>Mean Robot Utilization</strong>：机器人有多少时间真正用于实验；</li>\n   <li><strong>Mean Token Utilization</strong>：系统每分钟究竟烧掉多少Token。</li>\n  </ul>\n  <p>看到这里，大概也能理解为什么Jim Fan会这么兴奋。因为他们发现，研究本身似乎也开始具备了可扩展性。</p>\n  <p>甚至连经验传承都出现了，论文里有个很有意思的实验：</p>\n  <p>Agent在Pin Insertion任务中积累的经验，被整理成一份文字总结，然后直接塞进GPU Insertion任务的Prompt里。</p>\n  <p>结果后续研究效率明显提升，注意，这里迁移的既不是模型权重，也不是训练数据。</p>\n  <p>而是一份研究笔记，和人类实验室传帮带时做的事情，几乎一模一样。</p>\n  <h2>大平行的最后一块拼图</h2>\n  <p>今年5月，Jim Fan在红杉资本AI Ascent大会上做了一个演讲，提出了<strong>大平行（The Great Parallel）</strong>框架：机器人领域正在加速重走大语言模型走过的路。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182316_ebb1d3b539c5716fccb28cef8ca3e39b.webp\" alt=\"图片\">\n  </section>\n  <p>如果加上最新的自主研究，语言模型正在经历四个阶段——预训练、对齐微调、强化学习推理、自主研究。</p>\n  <p>机器人也在走同样的四步，只不过每一步的介质从文本变成了物理世界。</p>\n  <p>前三步英伟达已经有了对应的布局：预训练阶段有EgoScale（用两万小时人类第一视角视频训练运动先验）和DreamZero——一种全新的世界动作模型（WAM），用视频世界模型预测下一物理状态，替代语言模型预测下一token；对齐阶段用少量传感化人类数据做动作微调；</p>\n  <p>强化学习阶段有Dream Dojo——一个纯神经仿真器，不用物理引擎，直接用视频世界模型生成模拟环境，机器人在”梦境”里做RL。</p>\n  <p>但第四步——自主研究——在物理世界一直没有可执行的实现。ENPIRE就是这一步。</p>\n  <p>一作<strong>肖文力</strong>（Wenli Xiao）在推特上写道：</p>\n  <blockquote>\n   <p>Autoresearch终于离开了沙盒，进入了具身世界。</p>\n  </blockquote>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182317_f380940e58fae88967e606450f753d75.webp\" alt=\"图片\">\n  </section>\n  <p>肖文力是CMU机器人系博士生，导师是<strong>石冠亚</strong>（Guanya Shi），此前在英伟达GEAR实验室实习了两年。这篇论文的四位共同一作。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260620182316_d2f2d5eba3e354d8dd9aba868ea8399b.webp\" alt=\"图片\">\n  </section>\n  <p>肖文力、<strong>谢佳</strong>（Jia Xie）、<strong>Tonghe Zhang</strong>、<strong>Haotian Lin</strong>，全部来自CMU，三位共同指导教师分别是范麟熙（Jim Fan）、朱玉可（Yuke Zhu）（均来自英伟达）和石冠亚（CMU）。</p>\n  <p>Jim Fan在推特上对ENPIRE的描述大概是整篇论文最有画面感的概括：</p>\n  <blockquote>\n   <p>我们给8个Codex agent一个机器人舰队、一批GPU和充足的token预算。然后人类退场。机器人舰队开始活过来：它们学会寻找视觉线索，重置场景，练习新技能，修改控制栈，在线读论文，辩论，反思，卡壳，再直接在硬件上重试。我们所做的一切，就是给Codex一个通往原子世界的API。剩下的是涌现。</p>\n  </blockquote>\n  <p>ENPIRE将全部开源。理论上，每个人也可以搭建自己的”自运行机器人实验室”。</p>\n  <p>前提是你得买得起那8台机器人、英伟达的GPU，以及跑coding agent的token。</p>\n  <p><em>参考链接</em><em> \n    <br> \n   </em></p>\n  <p><em>[1]https://x.com/_wenlixiao/status/2066913196641071464</em><em> \n    <br> \n   </em></p>\n  <p><em>[2]https://research.nvidia.com/labs/gear/enpire/#fleet-scaling</em></p>\n </body>\n</html>",
+  "aiSummary": "英伟达、CMU 和 Berkeley 联合推出 ENPIRE 框架，让多个 Coding Agent 各自控制一台双臂机器人，自主完成从读论文、改算法到真机测试的完整机器人研究闭环，在 Pin Insertion 等任务上 3 小时内将成功率从 0 提升至 99%。",
+  "oneSentenceSummary": "英伟达、CMU 和 Berkeley 联合推出 ENPIRE 框架，让多个 Coding Agent 各自控制一台双臂机器人，自主完成从读论文、改算法到真机测试的完整机器人研究闭环，在 Pin Insertion 等任务上 3 小时内将成功率从 0 提升至 99%。",
+  "summary": "文章报道了英伟达 GEAR 实验室联合 CMU 和 Berkeley 发布的具身智能自主研究框架 ENPIRE。该框架由环境、策略改进、部署测试和进化四个模块组成，让 8 个 Coding Agent 各自控制一台双臂机器人，自主完成读论文、改算法、训练策略、部署实验、分析结果和总结经验的全流程，无需人类值守。文章详细解释了 ENPIRE 的核心挑战——如何将混乱的物理世界包装成可反复调用的实验环境，并介绍了自动复位、自动评分和安全控制等关键基础设施。实验在 Push-T、Pin Insertion、GPU Insertion 和 Zip-tie 四个高难度灵巧操作任务上均达到 99% 成功率。文章还展示了 Agent 的研究过程（如从行为克隆到在线强化学习的迭代路径）和物理 Scaling 效果（8 台机器人并行将实验时间从 1.5 小时缩短至 40 分钟），并指出 ENPIRE 是 Jim Fan 提出的「大平行」框架中机器人自主研究的最后一块拼图。",
+  "mainPoints": [
+    {
+      "point": "ENPIRE 通过自动复位、自动评分和安全控制接口，将物理世界包装成 Agent 可反复调用的实验环境。",
+      "explanation": "这是 ENPIRE 的核心创新。与代码世界不同，物理实验失败后场景会乱掉，需要手动复位。ENPIRE 的 Environment 模块解决了这一痛点，让真实世界首次拥有类似软件开发环境的可迭代性。"
+    },
+    {
+      "point": "Agent 展现出了类似人类研究员的研究路径，能自主迭代策略并切换技术路线。",
+      "explanation": "在 Pin Insertion 任务中，Agent 先试行为克隆，再加入在线强化学习，然后调整正则化和 Batch Size，逐步将成功率从接近零推到 99%。在 Zip-tie 任务中，它发现端到端训练效果不佳后，自主切换为 VLA 模型加工具 API 的架构。"
+    },
+    {
+      "point": "ENPIRE 实现了物理世界的「Scaling」，扩展的是机器人舰队而非参数。",
+      "explanation": "8 个 Agent 分别占用 8 台机器人并行探索不同路线，将 Pin Insertion 任务达到目标成功率的时间从 1.5 小时缩短至 40 分钟。论文还提出了 Mean Robot Utilization 和 Mean Token Utilization 两个指标来衡量这种 Scaling 的代价。"
+    },
+    {
+      "point": "Agent 之间出现了类似人类实验室的「经验传承」现象。",
+      "explanation": "Agent 在 Pin Insertion 任务中积累的研究笔记被直接塞入 GPU Insertion 任务的 Prompt 中，后续研究效率明显提升。这里迁移的不是模型权重或训练数据，而是一份文字形式的研究经验总结。"
+    }
+  ],
+  "keyQuotes": [
+    "我们给 8 个 Codex agent 一个机器人舰队、一批 GPU 和充足的 token 预算。然后人类退场。机器人舰队开始活过来：它们学会寻找视觉线索，重置场景，练习新技能，修改控制栈，在线读论文，辩论，反思，卡壳，再直接在硬件上重试。我们所做的一切，就是给 Codex 一个通往原子世界的 API。剩下的是涌现。",
+    "Autoresearch 终于离开了沙盒，进入了具身世界。"
+  ],
+  "tags": [
+    "具身智能",
+    "AI Agent",
+    "机器人",
+    "自主研究",
+    "英伟达"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 17,
+  "score": 87,
+  "wordCount": 4224,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1781957180000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-20 20:06:20"
+}

@@ -1,31 +1,33 @@
-> **更新时间**: 2026-06-11 08:34:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-21 08:32:10 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [OpenAI-Codex-Record-&amp;-Replay：演示一次，即可复用浏览器工作流](https://www.youtube.com/watch?v=ZK3JhU73W18)
+
+2026-06-19 02:57:34 | 标签: OpenAI Codex, Record & Replay, 工作流自动化, 计算机操作, 浏览器操作
+
+> 这段简洁的产品演示以 YouTube 视频发布为实际场景，介绍 OpenAI Codex 的 Record & Replay 功能。Codex 会观察用户从电子表格读取元数据、查找匹配素材、在 YouTube Studio 中填写标题和简介、添加缩略图与英文字幕、将视频保存为私密状态并核验结果的完整过程。随后，它把这次录制转化为可复用技能，记住信息存放位置、上传包的组织方式以及每个步骤的执行要求。在新的对话线程中，Codex 能把学到的流程自主应用于另一套视频素材。该能力还可扩展到整理并分享 Pull Request、准备日历邀请等场景，并通过计算机操作、浏览器操作、已连接插件或这些工具的组合...
+
+
+
 ### [Claude-Code-一周年复盘：从辅助写代码到自主智能体工作流](https://www.youtube.com/watch?v=Hth_tLaC2j8)
 
-2026-06-09 00:31:07 | 标签: Claude Code, AI 编程, 自主智能体, 验证循环, Auto Mode
-
-> 在这场 Claude 官方对话中，两位讲者回顾 Claude Code 发布第一年的变化，重点讨论它如何从简单的开发辅助工具，演进为由智能体、routine、验证循环、Auto Mode、远程控制和上下文极简主义共同组成的工作系统。内容最有价值的部分来自团队内部的一手实践：智能体的验证不应只停留在单元测试、lint 或类型检查，而应能真正运行环境、操作应用、发现问题、修复并再次验证；Auto Mode 通过安全分类模型和红队 eval 减少人工权限确认疲劳；routine 可以监听 issue、修复 bug、处理 code review 并持续推进工作。视频还进一步讨论组织形态，认为 AI 只...
+2026-06-09 00:31:07
 
 
 
 ### [OpenAI-如何打造-AI-原生财务团队：工程师嵌入、ChatGPT、Codex-与工作流智能体](https://www.youtube.com/watch?v=1NtS2KdnDok)
 
-2026-06-08 16:30:39 | 标签: AI 原生运营, 财务转型, OpenAI, 工作流自动化, Codex
-
-> Stacie Faggioli 从 OpenAI 内部视角展示了公司如何围绕 AI 原生工作流建设未来的财务团队。她强调三条运营原则：重新设计流程，而不是把 AI 贴到旧流程上；用实际结果证明人效杠杆；尽早上线并快速迭代。随后她拆解了多类具体实践，包括用于大型融资尽调的投资者关系智能体、能生成可追溯 LBO 模型的 ChatGPT for Excel、用于营销 ROI 和销售情报的 Codex 仪表盘、算力毛利演示材料自动化，以及面向采购、信用检查、合同审查和供应商风险的组织级智能体。最有价值的部分，是内部运营细节、量化案例和组织经验放在一起说明：真正持久的杠杆，来自把 AI 工具交给最贴近数...
+2026-06-08 16:30:39
 
 
 
 ### [全栈构建者与高杠杆通才的崛起：Satya-Nadella-谈企业-AI-的下一阶段](https://www.youtube.com/watch?v=RQE8OS392dU)
 
-2026-06-04 18:00:31 | 标签: 智能体工作流, 企业 AI, 私有 eval, 全栈构建者, Microsoft
-
-> 这期 Microsoft Build 现场访谈以紧凑而高密度的方式呈现了 Satya Nadella 对 AI 平台下一阶段的判断。他并没有把竞争简化为单一模型之争，而是把 AI 描述成一个生态：企业需要自己的模型 harness、上下文层、工具和私有评测，才能持续积累专有价值。访谈把模型谱系、前沿智能、GitHub Copilot、Microsoft 365 的 work IQ、SaaS 解构、混合定价和全栈构建者的兴起串成一条清晰主线：组织会从手工执行工作流，转向构建能够执行并持续改进这些工作流的智能体系统。最有价值的部分在于解释为什么私有 eval 可能成为战略级 IP，为什么 SaaS...
+2026-06-04 18:00:31
 
 
 
@@ -125,13 +127,13 @@
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
@@ -161,13 +163,13 @@
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
@@ -527,7 +529,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -539,7 +541,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
