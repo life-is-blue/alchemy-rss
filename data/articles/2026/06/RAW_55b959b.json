@@ -1,0 +1,62 @@
+{
+  "id": "RAW_55b959b",
+  "title": "77.有关智元、觅蜂的愿景与野心，和具身智能的竞速之旅｜与姚卯青的对谈",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6a301a8543a22a6955845417",
+  "date": "2026-06-16 08:00:00",
+  "author": "卫诗婕｜漫谈Light the Star",
+  "siteName": "卫诗婕｜漫谈Light the Star",
+  "content": "<html>\n <head></head>\n <body>\n  <img src=\"https://image.jido.dev/20260109005213_fjzudykk1i0jlr8zgroijavm5oyi.jpg\">\n  <p><span>2026 年，具身智能成为了聪明人扎堆、资本热潮近乎疯狂的行业。这条热门赛道中，</span><strong><span>智元机器人是最早的百亿俱乐部成员之一。</span></strong></p>\n  <p><span>在人形机器人出货量狂奔的路上，智元的野心并不止于“具身本体”的军备竞赛。今年，他们做出了一个让全行业瞩目的反哺举措：</span><strong><span>将旗下的核心数据资产彻底剥离，独立孵化了全球领先的一站式物理 AI 数据服务平台——“觅蜂”。</span></strong></p>\n  <p><span>本期嘉宾</span><strong><span>姚卯青，不仅是智元合伙人、具身业务部总裁，也兼任觅蜂的董事长兼CEO</span></strong><span>。这期播客在五月觅蜂发布会后录制，或许是</span><strong><span>有关智元战略的，最深入完整的一次访谈。</span></strong></p>\n  <img src=\"https://image.jido.dev/20260616220453_FqQ3wgimBKEq9BlCD8vkzh9yd0ty.jpg\">\n  <p><span>（本期视频的微博开屏页，欢迎前往微博等平台观看视频版～；也欢迎前往公众号，查看「漫谈Light the Star」访谈的文字版～）</span></p>\n  <p><span>从Waymo到蔚来再到智元，姚院亲历过自动驾驶从概念到量产的全过程，他说“</span><strong><span>今天的具身智能连GPT1都没到”，而机器人离真正涌现智能，还差一亿小时的数据。</span></strong></p>\n  <p><strong><span>本期嘉宾： 姚卯青</span></strong><span>（智元合伙人、通用业务部总裁， 觅蜂董事长兼 CEO）</span></p>\n  <h2><strong><span>本期 Shownotes：</span></strong></h2>\n  <h2><span>Part 1. </span><span class=\"timestamp\"><span><a class=\"timestamp\">02:40</a></span></span><span> 关于姚卯青：从清华电子系到南加大，从 Waymo到蔚来</span></h2>\n  <ul>\n   <li>\n    <p><span>「人间清醒」与「顺势而为」</span></p>\n   </li>\n   <li>\n    <p><span>清华电子系的系统训练：电路、通信、信号处理、计算机视觉、编程和算法，都是自动驾驶和具身智能的底层能力</span></p>\n   </li>\n   <li>\n    <p><span>Google Display Ads 团队：计算机视觉、NLP 与 Transformer</span></p>\n   </li>\n   <li>\n    <p><span>内部转岗 Waymo：可能是当时全球最难的面试</span></p>\n   </li>\n   <li>\n    <p><span>Waymo 的三年： Robotaxi， 从技术 demo 走向商业化运营</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 2. </span><span class=\"timestamp\"><span><a class=\"timestamp\">17:28</a></span></span><span> 蔚来的量产课：激光雷达、车规体系和数据飞轮</span></h2>\n  <ul>\n   <li>\n    <p><span>为什么选择蔚来？ 「单平台、全标配」的产品策略，激光雷达、4K 相机和高算力硬件一体的统一底座</span></p>\n   </li>\n   <li>\n    <p><span>蔚来李斌：「被人骂也是被记住的一种方式」——做关键决策需要勇气</span></p>\n   </li>\n   <li>\n    <p><span>多模态融合感知、激光雷达感知、BEV、Occupancy Network、AEB …关于自动驾驶的种种</span></p>\n   </li>\n   <li>\n    <p><span>选择回国：相比 Waymo 的几百辆 Robotaxi，国内乘用车百万级保有量所带来的数据分布和 corner case 密度，是完全不同的飞轮</span></p>\n   </li>\n   <li>\n    <p><span>量产经验到底是什么？「不是把样机多复制几台，而是项目、研发、测试、供应链、质量、版本和数据闭环的组织能力。」</span></p>\n   </li>\n   <li>\n    <p><span>能迁移到机器人的是什么？异常数据回流、模型迭代和现场版本下发</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 3. </span><span class=\"timestamp\"><span><a class=\"timestamp\">28:31</a></span></span><span> 当自动驾驶派进入具身：优势不是算法，而是底座</span></h2>\n  <ul>\n   <li>\n    <p><span>自动驾驶派进入具身智能，最大的价值是理解强电系统、供应链、质量、量产和底层软件稳定性</span></p>\n   </li>\n   <li>\n    <p><span>机器人和车，在电子电气架构、操作系统、中间件、传感器输入到电机控制等底层工程上高度相通。</span></p>\n   </li>\n   <li>\n    <p><span>车就是最简单的机器人？「有点牵强」</span></p>\n   </li>\n   <li>\n    <p><span>在很多低速场景中，机器人反而更有机会部署 VLA、世界模型等前沿模型</span></p>\n   </li>\n   <li>\n    <p><span>真正稀缺的人才，不只是刷榜或发 paper 的人，而是上手修过 bug、和硬件软件都打过仗、能把复杂系统跑稳定的人</span></p>\n   </li>\n   <li>\n    <p><span>具身创业的三大派，都有不可替代性</span></p>\n   </li>\n   <li>\n    <p><span>机器人终局架构不会只是「快慢系统」两层，可能包含： 1000Hz 底层控制、10 到 20Hz 动作规划、1 到 2Hz 阶段目标规划，以及更高层的 Agent 长程推理。</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 4. </span><span class=\"timestamp\"><span><a class=\"timestamp\">35:19</a></span></span><span> 讲「基模」太早了，具身连 GPT 1 都没到呢！</span></h2>\n  <ul>\n   <li>\n    <p><span>「2026 年了，具身智能到底到 GPT 几了？其实 1 都没到呢」</span></p>\n   </li>\n   <li>\n    <p><span>「现阶段的真机数据量，和真正支撑基座模型涌现的数据规模，还差四五个数量级」</span></p>\n   </li>\n   <li>\n    <p><span>很多公司强调自己做「具身基模」，是借用了大语言模型时代的资本叙事</span></p>\n   </li>\n   <li>\n    <p><span>今天的具身更像 Transformer 和 BERT 早期，而不是 GPT-3 之后</span></p>\n   </li>\n   <li>\n    <p><span>数据的关键不仅是「量」，还包括信息维度、场景种类、失败样本和真实部署中的边界样本</span></p>\n   </li>\n   <li>\n    <p><span>多模态融合是必然趋势，视觉远远不够</span></p>\n   </li>\n   <li>\n    <p><span>真正的瓶颈不是算法是否足够聪明，而是真实世界数据的量、模态、场景和失败样本远远不够</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 5. </span><span class=\"timestamp\"><span><a class=\"timestamp\">49:59</a></span></span><span> 有关智元最完整的战略揭秘：一家 AI 公司，而不只是机器人公司</span></h2>\n  <ul>\n   <li>\n    <p><span>神秘的邓泰华其人</span></p>\n   </li>\n   <li>\n    <p><span>智元Day 1 定位成 AI 公司，而非单纯的人形机器人公司</span></p>\n   </li>\n   <li>\n    <p><span>人形机器人是把 AI 带入物理世界的必要载体，但不是终点</span></p>\n   </li>\n   <li>\n    <p><span>「智元确实是这个行业里最有野心的公司之一」</span></p>\n   </li>\n   <li>\n    <p><span>智元的组织架构、融资节奏与股权激励</span></p>\n   </li>\n   <li>\n    <p><span>具身公司的长期价值不只在本体硬件，而在能否把「本体、数据、模型、场景」做成闭环。</span></p>\n   </li>\n   <li>\n    <p><span>精灵 G2 所经历的完整 IPD 流程：接近 9 个月</span></p>\n   </li>\n   <li>\n    <p><span>机器人行业的需求峰谷比汽车更剧烈</span></p>\n   </li>\n   <li>\n    <p><span>工业不相信眼泪，最终都是 ROI：「」工业客户不关心你是人形、猴形还是狗形」</span></p>\n   </li>\n   <li>\n    <p><span>智元的「358 战略」：从量产、商用到部署</span></p>\n   </li>\n   <li>\n    <p><span>具身智能最终不是单点技术竞赛，而是系统工程。</span></p>\n   </li>\n   <li>\n    <p><span>当技术路线逐步收敛、场景开始渗透时，先把 90% 的体系能力构建好，才可能真正承接行业机会。</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 6. </span><span class=\"timestamp\"><span><a class=\"timestamp\">01:55:26</a></span></span><span> VLA、世界模型和机器人数据飞轮</span></h2>\n  <ul>\n   <li>\n    <p><span>智元的 AI 研发体系：模仿学习、VLA 预训练、世界模型、强化学习后训练和数据闭环</span></p>\n   </li>\n   <li>\n    <p><span>Google PaLM-E ：VLA 来自语言模型和多模态语言模型向物理世界的迁移</span></p>\n   </li>\n   <li>\n    <p><span>世界模型更像对物理规律和状态转移的数字化、神经网络化描述</span></p>\n   </li>\n   <li>\n    <p><span>「VLA 和世界模型都不是最终形态，未来更可能是分层架构」：</span><s><span>前者受限于语言和动作之间的表征鸿沟，后者仍更多来自二维视频和第三人称视角</span></s></p>\n   </li>\n   <li>\n    <p><s><span>：语言推理、物理预测、低层控制、长程规划和数据飞轮共同工作</span></s></p>\n   </li>\n   <li>\n    <p><span>世界模型的价值在于学习液体流动、玻璃破碎、软体形变等真实物理规律</span></p>\n   </li>\n   <li>\n    <p><span>「后训练和失败数据非常关键」</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 7. </span><span class=\"timestamp\"><span><a class=\"timestamp\">02:08:49</a></span></span><span> 觅蜂：具身版 Scale AI，机器人数据界的「滴滴」</span></h2>\n  <ul>\n   <li>\n    <p><span>投资人的主意：对标上一轮 AI 时代的 Scale AI ？</span></p>\n   </li>\n   <li>\n    <p><span>具身数据生意比传统数字世界标注难得多</span></p>\n   </li>\n   <li>\n    <p><span>2026 ：具身数据军备竞赛年</span></p>\n   </li>\n   <li>\n    <p><span>模型的差异化暂时不大，数据会是分水岭</span></p>\n   </li>\n   <li>\n    <p><span>打造一个公共性质的数据服务平台，一个「阳谋」：客户花钱带来数据需求，平台用数据训练模型，模型再反哺采集、预标注和质量管理效率</span></p>\n   </li>\n   <li>\n    <p><span>数据问题都没解决，讲基模预训练、后训练，都是空中楼阁</span></p>\n   </li>\n   <li>\n    <p><span>高质量数据的第一点是真实：场景和任务必须足够丰富，能够覆盖生活和生产中真正会遇到的问题</span></p>\n   </li>\n   <li>\n    <p><span>规范：相机曝光、画质、设备同步、轨迹重建精度、操作流程都要高标准</span></p>\n   </li>\n   <li>\n    <p><span>「脏数据」不是质量差的数据，而是包含失败、偏移、纠错、重新规划和最终成功的多样化数据</span></p>\n   </li>\n   <li>\n    <p><span>仿真数据并不天然低价值</span></p>\n   </li>\n   <li>\n    <p><span>关键不是流派，而是任务、场景、成功率要求和模型使用方式</span></p>\n   </li>\n   <li>\n    <p><span>数据的价格、产能和全球化</span></p>\n   </li>\n   <li>\n    <p><span>Deepmind 和 Genralist：「如果数据是具身智能竞争的唯一决定变量，中国公司现在就可以宣布他们是赢家」</span></p>\n   </li>\n   <li>\n    <p><span>As many as possible, as soon as possible（越多越好，越快越好）.</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 8. </span><span class=\"timestamp\"><span><a class=\"timestamp\">02:43:43</a></span></span><span> 从数据标准，到 G3-G4 中间态</span></h2>\n  <ul>\n   <li>\n    <p><span>好的数据标准会逐步收敛</span></p>\n   </li>\n   <li>\n    <p><span>即使不同机器人硬件不统一，很多数据仍可以被抽象为通用表达，如末端执行器轨迹、二维帧序列、物理状态变化等</span></p>\n   </li>\n   <li>\n    <p><span>机器人行业的安全和质量准入标准，会在两到三年内伴随大规模商用逐步出现。</span></p>\n   </li>\n   <li>\n    <p><span>从 G1 到 G5 ，当前行业大约处在 G3 到 G4 的中间态</span></p>\n   </li>\n   <li>\n    <p><span>预计 2027 到 2028 年行业有希望达到 1 亿小时级数据规模</span></p>\n   </li>\n   <li>\n    <p><span>真正类似语言模型那种涌现能力，还需到 1 亿小时级高质量数据出现</span></p>\n   </li>\n  </ul>\n  <h2><span>Part 9. </span><span class=\"timestamp\"><span><a class=\"timestamp\">02:54:42</a></span></span><span> 最期待的画面：机器人第一次让人觉得「觉醒了」</span></h2>\n  <ul>\n   <li>\n    <p><span>机器人出现真正的 aha moment：不再只是从画面到动作的肌肉映射，而是能在复杂环境里自主规划、理解指令、做出响应</span></p>\n   </li>\n   <li>\n    <p><span>涌现时刻大概率发生在实验室，而不是工厂</span></p>\n   </li>\n   <li>\n    <p><span>数据会成为这一轮智能化转型关键基础设施，但它比算力更难获取</span></p>\n   </li>\n  </ul>\n  <p><span>加入听友群⬇️</span></p>\n  <img src=\"https://image.jido.dev/20260616220453_FhdyQAZmn3DhlVsOr6Q37MvYElKK.jpg\">\n  <p></p>\n </body>\n</html>",
+  "aiSummary": "智元合伙人姚卯青深度剖析具身智能远未到“GPT-1”时刻的现实，揭秘智元从本体到数据的全栈战略，以及从零孵化独立数据平台“觅蜂”背后的阳谋。",
+  "oneSentenceSummary": "智元合伙人姚卯青深度剖析具身智能远未到“GPT-1”时刻的现实，揭秘智元从本体到数据的全栈战略，以及从零孵化独立数据平台“觅蜂”背后的阳谋。",
+  "summary": "本期节目是对智元合伙人、具身业务部总裁兼觅蜂 CEO 姚卯青的深度访谈。姚卯青结合其从 Waymo 到蔚来的自动驾驶量产经验，系统阐述了智元机器人的核心战略与行业判断。他指出，当前具身智能因真机数据量严重不足，远未达到涌现阶段，而行业真正的分水岭将是数据。访谈详细揭秘了智元将核心数据资产剥离并孵化一站式数据服务平台“觅蜂”的商业逻辑，旨在打造一个类似“具身版 Scale AI”的公共服务平台，通过客户带来数据需求，平台用数据训练模型，模型再反哺采集效率。此外，他还探讨了自动驾驶与机器人技术的异同、机器人的终局分层架构、VLA 与世界模型的未来，以及对行业将在 2-3 年内迎来质变关键节点的预测。",
+  "mainPoints": [
+    {
+      "point": "具身智能远未到“GPT-1”时刻，数据量是核心瓶颈",
+      "explanation": "当前真机数据量与支撑基础模型涌现所需的数据规模相差四到五个数量级，讲“基模”尚属伪概念，行业仍处在从视觉到动作的肌肉映射阶段。"
+    },
+    {
+      "point": "觅蜂是具身数据领域的“阳谋”",
+      "explanation": "通过独立提供公共性质的物理 AI 数据服务平台，客户带来数据需求，平台用数据训练模型，模型再反哺提升采集与标注效率，形成正向数据飞轮。"
+    },
+    {
+      "point": "自动驾驶经验的核心价值在于构建“底座”体系",
+      "explanation": "自动驾驶派进入具身领域的最大优势不是算法，而是对供应链管理、质量体系、量产交付和底层软件稳定性的深刻理解与系统性能力。"
+    },
+    {
+      "point": "机器人的终局架构远不止“快慢系统”两层",
+      "explanation": "未来架构应是分层的，包括 1000Hz 的底层控制、10-20Hz 的动作规划、1-2Hz 的阶段目标规划，以及更高层的 Agent 长程推理，复杂度远超当前。"
+    },
+    {
+      "point": "行业将在数据驱动下迎来质变的“Aha Moment”",
+      "explanation": "预计在 2027-2028 年，当达到一亿小时级高质量数据规模时，机器人将可能出现真正的智能觉醒，在复杂环境中自主规划和响应指令。"
+    }
+  ],
+  "keyQuotes": [
+    "今天的具身智能远未到涌现，所有的都是在做从视觉到动作的肌肉映射，没有说智能这两个字，自己似乎有觉醒这种感觉，其实是还没有到的。",
+    "2026 年了，具身智能到底到 GPT 几了？投资人很关心，希望你们已经到二了，至少求求你们了，最好到 3。其实一都没到。",
+    "工业不相信眼泪，最终都是 ROI：工业客户不关心你是人形、猴形还是狗形。",
+    "真正最稀缺的人才，不管是说大模型也好，机器人也好，其实不是那些说我发多少顶会文章……一定是要真的把这个东西应用落地的时候，是真的自己上手过的，修过很多 bug 的，跟团队里的人吵过很多架的那些人才是最最核心的。",
+    "数据问题都没解决，讲基模预训练、后训练，都是空中楼阁。"
+  ],
+  "tags": [
+    "具身智能",
+    "人形机器人",
+    "AI数据",
+    "创业战略",
+    "自动驾驶"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 91,
+  "wordCount": 2657,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_1fd3ac",
+  "sourceName": "卫诗婕｜漫谈Light the Star",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1781568000000,
+  "publishDateStr": "06-16",
+  "publishDateTimeStr": "2026-06-16 08:00:00"
+}

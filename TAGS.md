@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-22 06:26:26 | [返回首页](/README.md)
+**更新时间**: 2026-06-22 08:32:33 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12958)
+- [AI & 大模型](#ai-llm) (12966)
 - [软件架构](#architecture) (21)
 - [前端与全栈](#frontend-fullstack) (857)
 - [DevOps](#devops) (611)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5994)
+- [其他](#other) (5997)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Dubbing-v2-发布：革命性的全新配音模型](https://elevenlabs.io/blog/introducing-dubbing-v2) - AI 精选
 - [使用-Codex-构建自我改进的税务智能体](https://openai.com/index/building-self-improving-tax-agents-with-codex) - AI 精选
 
-- [查看全部 12958 篇...](/details/tags/ai-llm.md)
+- [查看全部 12966 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5994 篇...](/details/tags/other.md)
+- [查看全部 5997 篇...](/details/tags/other.md)
 
 

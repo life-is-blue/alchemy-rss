@@ -1,0 +1,56 @@
+{
+  "id": "RAW_c896fa42",
+  "title": "Anthropic 报告：Claude 现已处理 95% 的内部分析查询",
+  "url": "https://www.infoq.com/news/2026/06/anthropic-claude-analytics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-22 00:47:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic recently reported that <a href=\"https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude\">Claude now handles around 95%</a> of its internal analytics requests, letting employees query business data independently instead of relying on data teams. The company attributes this result less to advances in models and more to data governance, semantic definitions, and operational discipline.</p>\n   <p>The report argues that AI analytics is only as reliable as the underlying data platform, making data modeling, testing, metadata management, and quality checks critical to accuracy. <a href=\"https://www.linkedin.com/in/mrchenchang/\">Chen Chang</a>, Clement Peng, Justin Leder,<a href=\"https://www.linkedin.com/in/johanne-jiao/\"> Johanne Jiao</a>, and <a href=\"https://www.linkedin.com/in/josh-c-61912721/\">Josh Cherry</a> write:</p>\n   <blockquote>\n    <p>At Anthropic, 95% of business analytics queries are automated via Claude, with ~95% accuracy in aggregate. By giving this often rote, repetitive work to Claude, our data science team can focus on more strategic work like causal modeling, forecasting, and machine learning.</p>\n   </blockquote>\n   <p>Anthropic highlights how AI analytics depends less on the model itself and more on a small set of governed, canonical datasets, enforced standards, centralized data artifacts, and well-maintained metadata. These reduce ambiguity, prevent metric drift, and help AI systems locate the correct data and definitions.</p>\n   <p>The authors report that Claude answered only 21% of analytics questions correctly without skills. After encoding analytical workflows and business context as skills, accuracy rose to more than 95% overall and approached 99% in some domains.</p>\n   <p>Anthropic’s approach tackles a common analytics challenge: self-service access can create overlapping datasets and conflicting metric definitions, while tightly scoped reporting environments often fail to support long-tail business questions and lead to dashboard proliferation. The five members of the data science and data engineering team write:</p>\n   <blockquote>\n    <p>If data foundations are the data warehouse itself, sources of truth are the reference surfaces the agent consults to navigate it. This layer reduces concept &lt;&gt; entity ambiguity and turns \"weekly active users\" in a stakeholder’s question into a specific, governed entity in your data model.</p>\n   </blockquote>\n   <p>The analytics setup is built on four layers: data foundations (governed models, metrics, and metadata), the knowledge layer (semantic definitions, lineage, and business context), the skills that encode repeatable analytical workflows, and validation systems that verify outputs for correctness and consistency.</p>\n   <p><img alt=\"The Agentic Analytics Stack\" data-src=\"https://www.infoq.com/news/2026/06/anthropic-claude-analytics/news/2026/06/anthropic-claude-analytics/en/resources/16a2049920443016925a3ef72_74528df2-1781542710991.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/anthropic-claude-analytics/en/resources/16a2049920443016925a3ef72_74528df2-1781542710991.png\" rel=\"share\"></p>\n   <p><em>Source: Anthropic blog</em></p>\n   <p>The company concludes that successful AI analytics depends on three principles: maintaining a single source of truth for metrics, making the right data easy to find, and continuously detecting stale definitions. The <a href=\"https://www.reddit.com/r/BusinessIntelligence/comments/1txaamo/anthropic_says_agentic_analytics_accuracy_drifts/\">reaction from the data community has been mixed</a>, with some highlighting openness and others arguing that analytics should produce deterministic, idempotent results. Francesco Mucio, owner and BI/data architect at Untitled Data Company, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7470582735024148481/\">writes</a>:</p>\n   <blockquote>\n    <p>I saw a lot of not-so-good takes on the Anthropic article about how they do self-service analytics. I am going to make it very clear. How do they do it? With a Semantic Layer. The data foundation is a dimensional model, but they don't query the tables directly, they use the analytics skills to first use the Semantic Layer to figure out dimensions, metric definitions, and joins.</p>\n   </blockquote>\n   <p>Anthropic considers semantic metrics, lineage, query patterns, and business context to be the key sources of truth for analytics agents. Structured definitions matter more than raw query history, while human-owned documentation remains essential. Arsenii Antonenko, automation QA engineer, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7468738442999533568?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7468738442999533568%2C7468738992243527680%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287468738992243527680%2Curn%3Ali%3Aactivity%3A7468738442999533568%29\">comments</a>:</p>\n   <blockquote>\n    <p>It's interesting that more and more real-world deployments point to the same conclusion: AI performance is often constrained less by model capability and more by context definition.</p>\n   </blockquote>\n   <p>An appendix to the article provides a redacted template of the skill file used to guide analytics agents.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic Reports Claude Now Handles 95% of Internal Analytics Queries\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/anthropic-claude-analytics/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782060420000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 报告称，Claude 现已处理 95% 的内部分析查询，并将成功归因于数据治理、语义定义和运营纪律，而非模型本身的进步。",
+  "oneSentenceSummary": "Anthropic 报告称，Claude 现已处理 95% 的内部分析查询，并将成功归因于数据治理、语义定义和运营纪律，而非模型本身的进步。",
+  "summary": "Anthropic 发布了一份详细报告，阐述如何利用 Claude 实现 95% 的内部业务分析查询自动化。该公司强调，成功的关键并非 AI 模型本身，而是建立在受治理的规范数据集、语义层、编码分析工作流（技能）和验证系统之上的强大数据基础。没有这些，Claude 仅能正确回答 21% 的问题；有了它们，准确率提升至 95% 以上，在某些领域甚至接近 99%。文章概述了四层架构（数据基础、知识层、技能、验证）以及成功的三项核心原则：度量的单一事实来源、让正确的数据易于查找、以及持续检测过时的定义。该报告在数据社区引发了不同反响，有人赞扬其透明度，也有人主张采用确定性、幂等性的分析方法。文章还包含一个经过编辑的技能文件模板，用于指导分析智能体。",
+  "mainPoints": [
+    {
+      "point": "AI 分析的成功更多取决于数据治理，而非模型能力。",
+      "explanation": "Anthropic 实现 95% 的准确率并非依靠更强大的模型，而是通过投资于受治理的数据集、语义定义和运营纪律。没有这些，准确率仅为 21%。"
+    },
+    {
+      "point": "语义层是实现可靠 AI 驱动分析的关键组件。",
+      "explanation": "该系统使用语义层来定义维度、度量定义和关联，而非直接查询原始表。这减少了歧义，确保了结果的一致性和准确性。"
+    },
+    {
+      "point": "将分析工作流编码为“技能”可显著提升准确率。",
+      "explanation": "通过将可重复的分析工作流和业务上下文打包为技能，准确率从 21% 跃升至 95% 以上，在某些领域接近 99%。"
+    },
+    {
+      "point": "该架构由四个层级组成：数据基础、知识、技能和验证。",
+      "explanation": "这种分层方法确保 AI 智能体能够访问受治理的数据、语义上下文、可重复的工作流以及用于验证输出正确性的系统。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 分析的可靠性完全取决于底层数据平台，这使得数据建模、测试、元数据管理和质量检查对准确性至关重要。",
+    "如果说数据基础是数据仓库本身，那么事实来源就是智能体用来导航该仓库的参考界面。",
+    "有趣的是，越来越多的实际部署指向同一个结论：AI 性能的瓶颈往往不在于模型能力，而在于上下文定义。"
+  ],
+  "tags": [
+    "AI Agent",
+    "数据工程",
+    "LLM",
+    "语义层",
+    "数据治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 560,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782060420000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-22 00:47:00"
+}
