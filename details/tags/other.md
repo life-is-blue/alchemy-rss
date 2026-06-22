@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-22 08:32:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-22 11:05:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3565,17 +3565,13 @@
 
 ### [sqlite-utils-4.0rc1-新增迁移与嵌套事务支持](https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything)
 
-2026-06-22 07:35:47 | 标签: SQLite, Python, 数据库, 开源, 开发者工具
-
-> Simon Willison 宣布了 sqlite-utils v4 的首个候选版本，这是其用于 SQLite 的 Python 库和 CLI 工具的一个重大版本升级。该版本引入了两个关键特性：数据库迁移（移植自久经考验的 sqlite-migrate 包）以及通过新的 `db.atomic()` 上下文管理器实现的嵌套事务支持，该管理器利用了 SQLite 的保存点机制。文章通过代码示例详细介绍了迁移 API，解释了用于处理嵌套事务的 `db.atomic()` 模式，并列出了自 alpha 版本以来的所有不兼容变更，包括 upsert 行为变化、放弃对 Python 3.8 的支持以及类型...
+2026-06-22 07:35:47
 
 
 
 ### [发布：sqlite-utils-4.0rc1](https://simonwillison.net/2026/Jun/21/sqlite-utils/#atom-everything)
 
-2026-06-22 07:30:04 | 标签: sqlite-utils, SQLite, Python, 数据库, 开发者工具
-
-> 此发布公告介绍了 sqlite-utils 4.0rc1，这是用于操作 SQLite 数据库的 Python CLI 工具和库的一个重大更新。关键新特性是迁移和嵌套事务，这显著增强了该工具管理数据库模式变更和复杂事务操作的能力。该版本已在 GitHub 上发布。
+2026-06-22 07:30:04
 
 
 
@@ -14219,9 +14215,7 @@
 
 ### [（如何用-Python-编写一个（Lisp）解释器）](https://norvig.com/lispy.html)
 
-2026-06-21 23:36:33 | 标签: 解释器, Scheme, Lisp, Python, 编程语言
-
-> Peter Norvig 的经典教程逐步指导如何在 Python 中实现一个 Lisp 解释器（Lispy）。教程涵盖了解释器的两个核心组件：解析（词法分析和构建抽象语法树）和求值（递归处理表达式）。教程从一个仅支持数字、符号、条件判断、定义和过程调用的最小化“Lispy 计算器”开始，然后扩展至一个更完整的 Scheme 子集，增加了 `quote`、`set!` 和 `lambda`。关键概念包括环境（用于变量查找的嵌套作用域）、`eval` 函数以及用于用户自定义函数的 `Procedure` 类。代码完整且可运行，最终实现了一个 REPL。这篇文章是一个教学典范，通过一个实用的极简实现...
+2026-06-21 23:36:33
 
 
 
@@ -35987,11 +35981,11 @@
 
 
 
-### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-29T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 
