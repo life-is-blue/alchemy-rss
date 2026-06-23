@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-23 06:33:47 | [返回首页](/README.md)
+**更新时间**: 2026-06-23 08:31:46 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12966)
+- [AI & 大模型](#ai-llm) (12997)
 - [软件架构](#architecture) (21)
 - [前端与全栈](#frontend-fullstack) (857)
-- [DevOps](#devops) (611)
+- [DevOps](#devops) (614)
 - [产品与商业](#product-business) (37)
-- [其他](#other) (5997)
+- [其他](#other) (6008)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Daybreak：保护全球每一家组织的安全工具](https://openai.com/index/daybreak-securing-the-world) - AI 精选
 - [测试神话与寓言，超越-SWE-bench，Nvidia-的开放竞争者](https://www.deeplearning.ai/the-batch/issue-358) - AI 精选
 - [GLM-5.2-上线并开源：专注-Coding-与长程任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493980&idx=1&sn=995ae194e71d723b6110fb8c621e618c) - AI 精选
 - [AI-智能体工具设计：有效与无效的模式---MachineLearningMastery.com](https://machinelearningmastery.com/ai-agent-tool-design-what-works-and-what-doesnt/) - AI 精选
@@ -41,9 +42,8 @@
 - [浅谈-AI-编程](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492008&idx=1&sn=69ac47da219bed079bc38f80e3d61f7e) - AI 精选
 - [Gemini-Flash-价格上涨，AI-法案延迟，智能体驱动网络流量激增](https://www.deeplearning.ai/the-batch/issue-355) - AI 精选
 - [Dubbing-v2-发布：革命性的全新配音模型](https://elevenlabs.io/blog/introducing-dubbing-v2) - AI 精选
-- [使用-Codex-构建自我改进的税务智能体](https://openai.com/index/building-self-improving-tax-agents-with-codex) - AI 精选
 
-- [查看全部 12966 篇...](/details/tags/ai-llm.md)
+- [查看全部 12997 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 611 篇...](/details/tags/devops.md)
+- [查看全部 614 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 5997 篇...](/details/tags/other.md)
+- [查看全部 6008 篇...](/details/tags/other.md)
 
 

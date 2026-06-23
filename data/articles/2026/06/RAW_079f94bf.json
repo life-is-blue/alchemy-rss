@@ -1,0 +1,55 @@
+{
+  "id": "RAW_079f94bf",
+  "title": "失败主义即削弱行动力 —— LessWrong",
+  "url": "https://www.lesswrong.com/posts/yZNG4R97vBJwAejyH/defeatism-as-disempowerment",
+  "date": "2026-06-22 22:41:40",
+  "author": "Ramya",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <blockquote id=\"block0\">\n     <p id=\"block1\"><span>\"Critiques of fear-based approaches need to deal with the actual arguments for danger. It sounds like the book didn't, and you don't here</span>\n      <br>\n      <span>You don't make a new technology or encounter with a new species safe by ignoring its possible dangers. You must see them and engineer around them</span>\n      <br>\n      <span>In the historical analyses lens: This is like telling native americans that their fear based approach to the european settlers is the problem\"</span></p>\n    </blockquote>\n    <p id=\"block2\"><span>This was left as a comment on my first essay. It makes a valid point in that ignoring risk doesn't make something safe, but it also demonstrates an important pitfall of fear-based approaches. In order to credibly address that pitfall, I need to first take the dangers seriously on their own terms.</span></p>\n    <p id=\"block3\"><span>AI is already lowering the barrier to biological and chemical weapons, compressing a bottleneck that used to require years of specialized training into something a capable model can assist with in hours. </span><span><span><a href=\"https://www.anthropic.com/news/responsible-scaling-policy-v3\" rel=\"nofollow\"><span>Anthropic</span></a></span></span><span> and </span><span><span><a href=\"https://fortune.com/2025/06/19/openai-future-models-higher-risk-aiding-bioweapons-creation/\" rel=\"nofollow\"><span>OpenAI</span></a></span></span><span> have both published evaluations treating this as a present risk, not a future hypothetical, but most frontier labs haven't followed suit.</span></p>\n    <p id=\"block4\"><span>Historically, holding power required people (soldiers, workers, bureaucrats, taxpayers) which meant mass non-cooperation could bring down governments. AI erodes that dependency. A government with AI-driven surveillance, autonomous military systems, and automated administration doesn't need broad cooperation to maintain control. (</span><span><span><a href=\"https://www.forethought.org/research/ai-enabled-coups-how-a-small-group-could-use-ai-to-seize-power\" rel=\"nofollow\"><span>Davidson, Finnveden, and Hadshar, \"AI-Enabled Coups: How a Small Group Could Use AI to Seize Power,\" Forethought, 2025</span></a></span></span><span>)</span></p>\n    <p id=\"block5\"><span>In November 2025, Anthropic disclosed that a Chinese state-sponsored group used Claude Code to run an espionage campaign against roughly 30 organizations, with the model executing 80-90% of the operation independently. </span><span><span><a href=\"https://www.anthropic.com/news/disrupting-AI-espionage\" rel=\"nofollow\"><span>Anthropic called it the first documented large-scale cyberattack carried out without substantial human involvement.</span></a></span></span><span> Cyberattacks on critical infrastructure have already caused blackouts, halted global shipping, and delayed hospital care resulting in patient deaths; AI removes the specialized expertise and time that used to limit their scale.</span></p>\n    <p id=\"block6\"><span>The above risks share a structure: a person or group intentionally uses AI to do something to someone else. Gradual disempowerment is different, and in some ways harder to argue against, because no one needs to want it. The economy, our information environment, and the state are all under pressure to automate, not because any single actor decides to disempower humanity, but because each individual decision to automate is locally rational. A company that doesn't adopt AI loses to competitors that do. A government that doesn't streamline its bureaucracy with AI falls behind administratively. None of this requires misalignment in the sense of an AI secretly pursuing its own goals; it requires AI systems that are good enough at their assigned objectives (engagement, efficiency, profit, security) that humans cede more and more decision-making to them, until the systems involved are too fast and too complex for anyone, including the people in power, to meaningfully understand or intervene in. Misalignment is the mechanism running underneath all three of the aforementioned dangers, as well as the reason none of them self-correct.</span></p>\n    <p id=\"block7\"><span>With AI accelerating pathways to danger, the real threat is getting the response wrong. We cannot solely rely on labs to self-correct because capability research has funding and market pressures where safety does not. Regulatory action is needed, and oftentimes gets motivated by public pressure and collective human agency, as shown by recent government involvement. (</span><span><span><a href=\"https://www.cfr.org/articles/assessing-trumps-executive-order-on-ai-oversight\" rel=\"nofollow\"><span>CFR, \"Assessing Trump's Executive Order on AI Oversight,\" June 2026</span></a></span></span><span>) This government involvement is often far from perfect, which is why it's all the more important that the people who engage with these risks communicate in ways that build rather than foreclose collective action. Fear-based approaches justifiably take the risks seriously but operate as if communicating about them with non-defeatist language comes in conflict with this goal. On the contrary, the way we talk about these risks could easily undermine collective action as a solution pathway; if defeatist language brings about a sense of futility, public pressure can weaken, resulting in less oversight and mitigation capacity.</span></p>\n    <p id=\"block8\"><span>While the comment above is correct in the importance of acknowledging AI risks, the last portion comparing us to Native Americans demonstrates how that defeatism could lead to a sense of futility. It casts us as a doomed, unprepared party in an encounter we didn't choose, when we're in fact actively building AI and can steer its direction. The analogy is not just strained but is framing AI as something entirely independent of anything we do, formed on its own terms, with zero way for us to anticipate its behavior.</span></p>\n    <p id=\"block9\"><span>European colonizers brought unfamiliar disease, committed deliberate atrocities, and viewed Native peoples as subhuman not in reaction to Native behavior, but as a prior commitment that made those outcomes inevitable regardless. There is no fear response that would have changed an outcome that was never up to Native peoples. Native peoples attempted diplomacy and negotiation, but no human-in-the-loop mechanism could have changed an outcome driven by a prior commitment to their elimination. The situation we're in is structurally different: keeping humans meaningfully in the loop is not just possible but is specifically what AI safety researchers identify as the corrective to gradual disempowerment. The analogy imports a hopelessness that doesn't apply, and in doing so, obscures the thing that could actually help.</span></p>\n    <p id=\"block10\"><span>While it's true that ignoring danger will not make it go away, this comment illustrates how fear-based approaches can go too far and become an instrument for disempowerment. Framing ourselves as powerless when we're mid-decision is the most reliable way to make our own pessimism a reality. There are real threats in biochemical weapons, power concentration, and infrastructure collapse that we need to counter, and we have agency in how we address these dangers.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，虽然人工智能风险真实且严峻，但在沟通这些风险时使用失败主义语言会削弱集体行动和人类能动性，我们必须避免将自己描绘成无能为力。",
+  "oneSentenceSummary": "本文认为，虽然人工智能风险真实且严峻，但在沟通这些风险时使用失败主义语言会削弱集体行动和人类能动性，我们必须避免将自己描绘成无能为力。",
+  "summary": "作者回应了一条评论，该评论批评其第一篇文章忽视了基于恐惧的方法，并使用了美洲原住民与殖民者的类比。作者承认认真对待 AI 风险的必要性，并举出具体例子：AI 降低了生物武器的门槛，由国家支持的、由 AI 执行的网络攻击，以及通过自主系统导致权力集中的威胁。文章区分了故意滥用和渐进式赋能丧失，后者是指局部合理的自动化决策在没有恶意意图的情况下侵蚀了人类控制。作者认为，基于恐惧的沟通一旦变成失败主义，会产生一种徒劳感，削弱公众压力和监管行动。作者批评殖民类比具有误导性，因为我们的情况在结构上有所不同：我们正在建造 AI，并且可以将人类保留在决策回路中，而美洲原住民面临的是早已注定的结局。结论重申，我们有能动性来引导 AI 发展并减轻危险，而失败主义是一种自我实现的预言。",
+  "mainPoints": [
+    {
+      "point": "基于恐惧的方法有可能破坏集体行动。",
+      "explanation": "虽然认真对待 AI 风险是必要的，但失败主义语言可能产生徒劳感，削弱公众压力，降低监督和缓解能力。"
+    },
+    {
+      "point": "AI 带来了来自故意滥用和渐进式赋能丧失的结构性危险。",
+      "explanation": "生化武器、网络攻击和权力集中是直接风险；当自动化决策局部合理但集体侵蚀人类控制时，就会发生渐进式赋能丧失。"
+    },
+    {
+      "point": "殖民类比具有误导性，并带来了绝望。",
+      "explanation": "与面对注定结局的美洲原住民不同，我们在建造 AI，可以引导其方向；将人类保留在决策回路中是可能的，并且被 AI 安全研究者所认可。"
+    },
+    {
+      "point": "我们有应对 AI 风险的能动性。",
+      "explanation": "认识到危险并不需要接受失败主义；在决策过程中将自己描绘成无能为力是一种自我实现的预言，会削弱集体行动。"
+    }
+  ],
+  "keyQuotes": [
+    "如果失败主义语言带来徒劳感，公众压力可能会减弱，从而导致监督和缓解能力下降。",
+    "在决策过程中将自己描绘成无能为力，是将自身悲观变成现实的最可靠方式。"
+  ],
+  "tags": [
+    "AI 安全",
+    "AI 风险",
+    "AI 治理",
+    "人类能动性",
+    "集体行动"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 940,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782139300000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-22 22:41:40"
+}
