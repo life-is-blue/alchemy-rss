@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-23 08:31:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-23 11:03:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -566,25 +566,19 @@
 
 ### [EKS-成本优化手册：使用-Karpenter-和合理配置将-AWS-账单降低-60%](https://www.freecodecamp.org/news/eks-cost-optimization-reduce-your-aws-bill-using-karpenter-and-rightsizing/)
 
-2026-06-23 00:38:45 | 标签: 云原生, Kubernetes, AWS, DevOps, 成本优化
-
-> 本手册基于作者在 10 多家公司审计集群的经验，提出了一套经过验证的 7 步 EKS 成本优化方法论。它强调了正确的优化顺序：先调整 Pod 资源请求，再实施 Karpenter 实现动态扩缩容和 Spot 多样化，迁移到 Graviton 以享受 20% 的更低价计算，添加 VPC 端点消除 NAT Gateway 费用，优化 EBS 卷，整合负载均衡器。每一步都包含具体命令、YAML 配置、Terraform 模块和 ROI 估算。随附的 GitHub 仓库提供了可直接部署的脚本。该方法始终能将 EKS 账单降低 50-60%，一个案例显示从每月 85，000 美元降至 34，000 美元...
+2026-06-23 00:38:45
 
 
 
 ### [如何在-Azure-DevOps-中大规模组织与维护-Azure-仓库：工程师指南](https://www.freecodecamp.org/news/how-to-organize-and-maintain-azure-repositories-at-scale/)
 
-2026-06-23 00:19:39 | 标签: Azure DevOps, Git 仓库管理, DevOps, CI/CD, 基础设施即代码
-
-> 本指南解决了跨团队与产品管理数百个 Azure Repositories 的挑战。它倡导以所有权驱动的结构，根据业务边界定义何时使用单一仓库与多仓库。详细介绍了命名约定、跨仓库分支策略、基于角色的访问控制，以及通过 Terraform 或 Azure DevOps REST API 的自动化配置。文章还涵盖了 Git LFS 处理大型资产、仓库健康监控和 CI/CD 流水线模板等实用主题。每节都包含具体示例和代码片段，对正在扩展 Azure DevOps 环境的工程团队具有可操作性。
+2026-06-23 00:19:39
 
 
 
 ### [AWS-Graviton5-Reaches-General-Availability-with-192-Cores-and-Formally-Verified-VM-Isolation](https://www.infoq.com/news/2026/06/aws-graviton5-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-22 18:05:00 | 标签: AWS, Cloud Computing, Processor, Virtualization, Formal Verification
-
-> AWS has made the M9g and M9gd instances powered by the new Graviton5 processor generally available. The chip doubles the core count to 192， built on four chiplets using TSMC's 3nm process. It includes 192 MB of L3 cache (5x Graviton4)， the fastest DDR5 memory in any cloud instance (DDR5-8800)， PCIe ...
+2026-06-22 18:05:00
 
 
 

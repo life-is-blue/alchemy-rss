@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-23 08:31:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-23 11:03:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3565,49 +3565,37 @@
 
 ### [为异常检测编码分类数据](https://towardsdatascience.com/encoding-categorical-data-for-outlier-detection/)
 
-2026-06-23 00:30:00 | 标签: 离群点检测, 分类数据编码, 独热编码, 计数编码, 隔离森林
-
-> 本文是异常检测系列文章的一部分，专注于为数值异常检测器编码分类特征。文章指出，大多数真实世界数据是混合类型（数值和分类），但大多数检测器假设纯数值输入。文章考察了三种编码方法：独热编码（常见但会在距离度量中过度强调分类特征；建议将 1.0 替换为 0.25 以减少不平衡）、序数编码（与隔离森林配合良好，但会使其他检测器产生无意义的距离）和计数编码（将值映射到其频率，使罕见值自然距离较远，因此对异常检测有用）。文章还讨论了编码特征的缩放、在无监督设置下评估编码的挑战，并推荐了集成方法。使用 scikit-learn 的代码示例说明了这些概念。
+2026-06-23 00:30:00
 
 
 
 ### [PP-OCRv6-登陆-Hugging-Face：参数从-1.5M-到-34.5M，支持-50-种语言的-OCR-模型](https://huggingface.co/blog/PaddlePaddle/pp-ocrv6)
 
-2026-06-22 21:18:56 | 标签: OCR, 计算机视觉, PaddlePaddle, Hugging Face, 文字检测
-
-> 这篇来自 Hugging Face 的博文介绍了 PP-OCRv6，即 PaddleOCR 通用 OCR 模型的最新版本。文章详细说明了三个模型规模（tiny、small、medium），参数范围从 1.5M 到 34.5M，在内部基准测试中检测 Hmean 最高达 86.2%，识别准确率最高达 83.2%。关键技术改进包括 PPLCNetV4 骨干网络、用于文本检测的 RepLKFPN 以及用于识别的 EncoderWithLightSVTR。中等和小规模模型支持 50 种语言。博文提供了使用 PaddleOCR 的快速入门代码示例，支持多种推理后端：Paddle Inference、Tra...
+2026-06-22 21:18:56
 
 
 
 ### [【机器人-/-强化学习】SERL：让真机强化学习从“难用”走向“可复现”的强化学习框架-----（1）全景篇](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489397&idx=1&sn=ae214bb71506980a91411bdb7beb9bc6)
 
-2026-06-22 20:31:00 | 标签: 强化学习, 机器人, JAX, 样本效率, SAC
-
-> 文章从问题背景出发，指出真机强化学习面临数据昂贵、硬件风险、奖励难写、工程纷杂四大痛点，进而引出 SERL（Sample-Efficient Robotic Reinforcement Learning）——一套面向真实机器人的样本高效软件栈。全文分七章：首先介绍论文基本信息与核心理念（极高样本利用率、工程化解耦、拥抱物理约束）；随后剖析 SERL 的总体架构，展示其垂直整合的 RL 栈，包括核心算法引擎（serl_launcher）、机器人基础设施（serl_robot_infra）与仿真环境（franka_sim）；接着详述算法脉络，涵盖 SAC、RLPD、High UTD、REDQ、Dr...
+2026-06-22 20:31:00
 
 
 
 ### [3-个-NLTK-高级文本预处理与语言学分析的技巧](https://www.kdnuggets.com/3-nltk-tricks-for-advanced-text-preprocessing-linguistic-analysis)
 
-2026-06-22 20:00:18 | 标签: NLTK, 文本预处理, 分词, 词形还原, 搭配提取
-
-> 本文涵盖了三个重要的 NLTK 技巧，用于改进 NLP 预处理流程。首先，它演示了 MWETokenizer 在保留多词表达式（如 'machine learning'）方面的优势，相比脆弱的正则替换。其次，它通过将 NLTK 标记器的词性标签与 WordNet 词形还原器配对，解释了上下文感知的词形还原，以正确地将单词如 'running' 还原为 'run'、'better' 还原为 'good'。第三，它使用 BigramCollocationFinder 结合点互信息（PMI）来提取有意义的搭配，如 'natural language'，而不是基于噪声的频次统计。每个技巧都通过朴素版和...
+2026-06-22 20:00:18
 
 
 
 ### [深度-MLP-中自然学习的行为能抵抗人类和算法检测-—-LessWrong](https://www.lesswrong.com/posts/EsiLnZGDHpYoZXGAh/naturally-learned-behaviors-in-deep-mlps-resist-detection-by)
 
-2026-06-22 17:10:37 | 标签: 机制可解释性, MLP, 秘密提取, 输入优化, 权重读取器
-
-> 作者训练了小型 MLP（1-3 层）作为 16 个秘密二进制字符串（34、48 或 64 位）的成员分类器，采用两种模式：平衡模式（正负例数量相等）和硬负例模式（负例为秘密的近匹配）。随后他们尝试用一系列输入优化方法（ICM 爬山法、grad+sign、GCG、神经元种子）和学习的权重读取器（一个将 MLP 权重映射为字符串分布的 transformer）来恢复秘密。主要发现：（1）在平衡训练下，秘密基本可提取（≥9.5/16）。（2）在硬负例且层数 >1 时，恢复率骤降至接近随机采样（3 层 ReLU² 约为 0/16）。（3）对于 64 位 3 层 MLP，权重读取器优于输入优化（top-...
+2026-06-22 17:10:37
 
 
 
 ### [MoonMath-AI-开源针对-AMD-MI300X-的-HIP-注意力内核，在每种形状和舍入模式下均超越-AITER-v3](https://www.marktechpost.com/2026/06/22/moonmath-ai-open-sources-a-hip-attention-kernel-for-amd-mi300x-that-beats-aiter-v3-on-every-shape-and-rounding-mode/)
 
-2026-06-22 15:14:56 | 标签: AMD MI300X, HIP, GPU 优化, 注意力机制, 开源
-
-> 本文详细介绍了 MoonMath AI 发布的一个基于 HIP 的 bf16 前向注意力内核（针对 AMD MI300X，采用 MIT 开源）。该内核在所有测试的形状和舍入模式下均胜过 AMD 的 AITER v3（几何平均加速 1.18×/1.15×/1.08×，最高 1.26×）。核心创新包括：单指令内联汇编包装器，可在编译器管理寄存器的同时提供操作码控制；以及一种内存布局策略——将 K 放在 LDS、V 放在 L1、Q 放在寄存器中。架构采用每块 8 个线程束、分两组运行，以保持矩阵核心忙碌。一个实际应用（SGLang 的 PR）使用该内核将 Wan2.1 视频扩散速度提升 1.23×，...
+2026-06-22 15:14:56
 
 
 
@@ -14263,41 +14251,31 @@
 
 ### [从承诺到实践：构建更包容的开源生态系统](https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/)
 
-2026-06-23 01:20:35 | 标签: 开源, 无障碍, 包容性, 社区建设, GitHub
-
-> 本文分享了 GitHub 自承诺改善开源无障碍性以来在过去一年所取得的进展。文章详细阐述了三个目标领域：赋能残障贡献者、支持开源辅助技术以及提升主流工作流程的无障碍性。主要成就包括一场为期两天、有 124 名参与者和 25 多个项目的黑客马拉松，一场有 100 人参加的峰会，以及发布了诸如 GitHub 无障碍扫描器和无障碍标注工具包等资源。文章还邀请读者报名参加两场即将举行的活动：开源无障碍社区日（2026 年 7 月 9 日）和开源无障碍峰会（2026 年 10 月 19 日）。文章语气透明且注重行动，提供了具体数据、合作伙伴名称和参与的直接链接。
+2026-06-23 01:20:35
 
 
 
 ### [挑战-Google-Analytics：构建可扩展、高性价比的用户跟踪服务](https://www.infoq.com/presentations/mobile-user-tracking-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-22 23:07:00 | 标签: 用户跟踪, 系统设计, 数据工程, 可扩展性, 成本优化
-
-> 本文详细介绍了 Delivery Hero 工程经理 Alina Krasavina 关于构建和扩展内部用户跟踪服务（Perseus）以取代 Google Analytics 的演讲。内容包括动机：迁移的必要性、实时数据需求、GDPR 合规以及成本控制。最初的 MVP 使用了一个简单的 API 加 Pub/Sub 处理器，事实证明这种架构扩展性极强。上线过程包括并行测试（双管道同时向 GA 和内部服务发送数据）、按品牌逐步推进，以及用 3 倍峰值流量进行负载测试。上线后，数据质量从 85% 提升到 97%（按订单匹配率计算），成本降至 GA 的 25% 以下，后来更降至 1/3。MVP 之后面...
+2026-06-22 23:07:00
 
 
 
 ### [Moebius-项目页面](https://hustvl.github.io/Moebius/)
 
-2026-06-22 21:53:02 | 标签: 图像修复, 计算机视觉, 扩散模型, 模型压缩, 知识蒸馏
-
-> Moebius 是来自华中科技大学和 VIVO AI Lab 的轻量级图像修复框架，它将一个 10B 级别的扩散模型压缩到 0.22B 参数（不到 FLUX.1-Fill-Dev 的 2%），同时在六个基准（包括自然场景 Places2 和肖像 CelebA-HQ、FFHQ）上匹配或超越其生成质量。核心创新是 Local-λ Mix Interaction (LλMI) 模块，该模块将空间和语义上下文压缩为固定大小的矩阵，从而规避二次复杂度。此外还配有一个完全在潜在空间内运行的自适应多粒度蒸馏策略，使紧凑的学生模型与高容量教师模型 (PixelHacker) 对齐。Moebius 每步推理仅需...
+2026-06-22 21:53:02
 
 
 
 ### [8087-数学协处理器快速移位器的芯片裸片分析](https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html)
 
-2026-06-22 21:40:16 | 标签: 微处理器架构, 浮点运算单元, 桶形移位器, 芯片设计, 逆向工程
-
-> 文章首先介绍了 Intel 8087 协处理器的历史意义——它引入了 IEEE 754 浮点标准，并极大地加速了早期微型计算机的浮点运算。随后聚焦于 8087 的芯片裸片，特别是其高速桶形移位器——这是实现加法、减法、规格化和超越函数运算的关键部件。该移位器采用两级设计：位移位器（0–7 位）和字节移位器（0–7 字节），从而能在单步内完成任意最多 63 位的移位。作者详细解释了采用 NMOS 传输门逻辑的晶体管级实现，该逻辑支持双向数据流。通过详细的芯片裸片照片和示意图，展示了物理布局，包括交替使用硅和多晶硅布线以节省空间。文章还描述了驱动电路、多路复用器/解码器逻辑，以及移位数量如何从微码...
+2026-06-22 21:40:16
 
 
 
 ### [理解-ML-模型投毒：攻击原理与检测方法](https://www.infoq.com/articles/understanding-ml-model-poisoning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-22 19:00:00 | 标签: 机器学习安全, 数据投毒, 模型投毒, 后门攻击, 对抗鲁棒性
-
-> 本文系统阐述了机器学习中的数据投毒问题，涵盖干净标签投毒、后门投毒、标签翻转、梯度操纵及 DoS 投毒攻击。文中引用了真实事件，如 Microsoft Tay、BabyQ、XiaoBing、Lee Luda，以及一个反犹太团体操纵谷歌图片搜索的案例。讨论内容包括检测挑战、实际工具（如 IBM 的对抗鲁棒性工具箱 ART）以及结合传统网络安全与 ML 特定控制（数据验证、来源追踪、鲁棒训练等）的分层防御策略。结论强调持续警惕与跨学科合作。
+2026-06-22 19:00:00
 
 
 
@@ -36069,11 +36047,11 @@
 
 
 
-### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
+### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
 
-2026-04-29T00:00:00.000Z
+2026-04-28T00:00:00.000Z
 
-> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
+> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
 
 
 

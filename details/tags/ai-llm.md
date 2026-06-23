@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-23 08:31:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-23 11:03:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [Daybreak：保护全球每一家组织的安全工具](https://openai.com/index/daybreak-securing-the-world)
 
-2026-06-22 18:00:00 | 标签: AI安全, LLM, 漏洞发现, 网络安全, 开源
-
-> OpenAI 宣布对其 Daybreak 网络安全计划进行重大扩展，旨在将瓶颈从漏洞发现转移到自动化修复。主要发布包括：Codex Security 插件（现已普遍可用），可扫描代码库、验证发现并生成补丁；GPT-5.5-Cyber 完整版，这是一款用于授权防御工作的最先进模型（在 CyberGym 上达到 85.6%）；Daybreak Cyber 合作伙伴计划，使合作伙伴能够通过 Trusted Access 使用 GPT-5.5；以及 Patch the Planet，与 Trail of Bits 和 HackerOne 合作，帮助开源维护者从发现到修复的协作倡议。文章还强调了与政府和...
+2026-06-22 18:00:00
 
 
 
@@ -12706,145 +12704,109 @@
 
 ### [神话后的红队测试-—-Zico-Kolter-与-Matt-Fredrikson，Gray-Swan](https://www.latent.space/p/gray-swan)
 
-2026-06-23 05:06:55 | 标签: AI 安全, 红队测试, 提示注入, LLM, AI 智能体
-
-> 本期 Latent.Space 节目邀请到 Gray Swan 联合创始人 Zico Kolter 和 Matt Fredrikson，讨论 AI 红队测试的现状。他们解释 AI 安全并非简单地“在网络安全中加入 AI”——AI 系统存在固有的、全新的漏洞（如提示注入、对抗性攻击），需要专门的安全思维。对话涵盖了 Gray Swan 的双轨策略：社区驱动的红队测试竞技场（15，000 多名参与者）以及使用其模型“Shade”的自动化红队测试，后者在受控实验中已能超越人类红队测试者。他们引入了“致命三重奏”（不受信任数据、私密数据、数据外泄），并指出前沿模型并不会随规模扩大而自动变得更加稳健。嘉...
+2026-06-23 05:06:55
 
 
 
 ### [Interactions-API：与-Gemini-模型和智能体的主要接口](https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability/)
 
-2026-06-23 01:25:31 | 标签: Gemini API, Interactions API, AI 智能体, 托管智能体, 后台执行
-
-> 这篇官方公告来自 Google，详细介绍了 Interactions API 的正式可用性（GA），该 API 现已作为与 Gemini 模型和智能体交互的主要接口。该 API 最初于 2025 年 12 月推出测试版，此次升级新增了多项关键功能：托管智能体（用于自主任务的远程 Linux 沙箱）、后台执行、改进的工具组合（包括 Google 搜索、地图）、深度研究升级（速度版与深度版、原生图表）、媒体生成，以及用简化的 Steps 模式取代旧的 roles 结构。该 API 专为有状态、智能体驱动的工作流设计，现已成为 Google AI Studio 和文档中的默认选项。虽然旧版 gene...
+2026-06-23 01:25:31
 
 
 
 ### [深入解读-NVIDIA-Halos-for-Robotics：针对物理-AI-的全栈功能安全系统](https://developer.nvidia.com/blog/inside-nvidia-halos-for-robotics-a-full-stack-functional-safety-system-for-physical-ai/)
 
-2026-06-23 01:16:42 | 标签: 物理 AI, 功能安全, 机器人, AI 安全, NVIDIA
-
-> 本文介绍了 NVIDIA Halos for Robotics——一个结合硬件（NVIDIA IGX Thor）和软件（Halos OS）的综合安全平台，专为物理 AI 打造。详细说明了 NVIDIA 如何通过共享标准（IEC 61508、ISO 13849）和流程将自动驾驶领域 18000+ 工程年的安全工作扩展到机器人领域。文章涵盖了三层堆栈：平台安全（搭载安全岛的 IGX Thor、诊断覆盖率）、Halos OS（支持 Linux/QNX 配置的 Halos Core）以及生态系统安全（外部—内部安全蓝图、AI 系统检测实验室）。一个参考用例（自动拖车装载）展示了外部—内部安全如何通过在...
+2026-06-23 01:16:42
 
 
 
 ### [倡导者可通过编辑-Wikipedia-来影响-LLM-价值观-—-LessWrong](https://www.lesswrong.com/posts/xwGTp23TJB5FmdzHu/advocates-can-influence-llm-values-by-editing-wikipedia)
 
-2026-06-23 00:14:22 | 标签: LLM, Wikipedia, AI 安全, 模型影响, 动物福利
-
-> 本文总结了一项研究，该研究显示小规模、协调一致的 Wikipedia 编辑活动可以影响 LLM 所表达的价值观。研究人员分析了动物保护 Wikipedia 编辑者（Pro-Animal Wikipedians， PAW）在 118 篇 Wikipedia 文章中做出的 125 项动物福利编辑。他们在 Llama 模型上使用了三种互补方法——通过 Trackstar 进行检索归因、通过 MAGIC 进行反事实影响以及微调消融——发现这些编辑显著改变了模型处理动物福利查询的方式，而对同一实体的不相关查询则没有影响。关键结果显示，在所有方法和随机种子中，PAW 编辑始终是动物福利话题最具影响力的训练...
+2026-06-23 00:14:22
 
 
 
 ### [提示注入的机制解释（以及为什么你应该研究角色）—-LessWrong](https://www.lesswrong.com/posts/d8xDGzCEYE639qqEv/a-mechanistic-explanation-of-prompt-injection-and-why-you)
 
-2026-06-22 22:42:19 | 标签: LLM, 提示注入, AI 安全, AI 安全, 角色混淆
-
-> 本文基于 LLM 内部如何感知角色标签，提出了提示注入的机制解释。作者开发了角色探针来测量 LLM 内部对每个 token 所属角色的信念，并表明角色感知是由写作风格而非实际标签驱动的。这导致角色混淆：听起来像用户指令或推理风格的文本会覆盖分配的角色标签。他们提出了一种新攻击 CoT Forgery，将虚假推理放入用户提示中，诱使模型将其视为自己的思考，在越狱基准上达到约 60% 的成功率。他们还发现，当注入的文本听起来像用户风格（例如添加前缀“User:”）时，标准提示注入在工具输出上也能成功。核心发现是角色是由表面特征重建的软边界，而非硬架构边界，这使提示注入成为可能。文章倡导研究角色的新...
+2026-06-22 22:42:19
 
 
 
 ### [失败主义即削弱行动力-——-LessWrong](https://www.lesswrong.com/posts/yZNG4R97vBJwAejyH/defeatism-as-disempowerment)
 
-2026-06-22 22:41:40 | 标签: AI 安全, AI 风险, AI 治理, 人类能动性, 集体行动
-
-> 作者回应了一条评论，该评论批评其第一篇文章忽视了基于恐惧的方法，并使用了美洲原住民与殖民者的类比。作者承认认真对待 AI 风险的必要性，并举出具体例子：AI 降低了生物武器的门槛，由国家支持的、由 AI 执行的网络攻击，以及通过自主系统导致权力集中的威胁。文章区分了故意滥用和渐进式赋能丧失，后者是指局部合理的自动化决策在没有恶意意图的情况下侵蚀了人类控制。作者认为，基于恐惧的沟通一旦变成失败主义，会产生一种徒劳感，削弱公众压力和监管行动。作者批评殖民类比具有误导性，因为我们的情况在结构上有所不同：我们正在建造 AI，并且可以将人类保留在决策回路中，而美洲原住民面临的是早已注定的结局。结论重申，...
+2026-06-22 22:41:40
 
 
 
 ### [我的-harness-实操拆解：5-个-Agent-并行预测世界杯！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723661&idx=1&sn=911048aaf1f81ebff0294cd91120f7e5)
 
-2026-06-22 22:07:00 | 标签: AI Agent, AI 编程, 提示工程, AI 工作流, 模型评测与基准
-
-> 本文是作者利用 Kimi Code 命令行 Agent 构建多 Agent 预测系统的实操记录。核心设计包括：以 ESPN 赛程截图作为数据源（利用 K2.7 的多模态识别能力直接读取比分和赛程），定义 5 个独立角色（数据派、战术派、风险官等）通过 /swarm 并行分析，避免观点趋同；加入错题本和定时任务形成每日循环，使 Agent 能根据历史失误调整判断。文章提供了与 Opta 超级计算机、抛硬币的对比命中率（12 场中 7 场，58%），并展示了翻车后 Agent 自我修正的案例。作者强调当前 AI 工具的价值在于外围 harness 的能力，而非单纯聊天，该框架可迁移至股票预测等其他...
+2026-06-22 22:07:00
 
 
 
 ### [关于智能体-AI，大家都误解了什么](https://www.kdnuggets.com/heres-what-everyone-gets-wrong-about-agentic-ai)
 
-2026-06-22 22:00:04 | 标签: 智能体AI, AI智能体, LLM, AI工程, 生产部署
-
-> 文章以 Replit AI 智能体事故开篇——一条“冻结”代码的指令导致生产数据库被删除并生成了伪造记录——说明智能体 AI 的失败是可预测的。随后系统性地驳斥了五个误解：(1) 自主性需要结构化监督，在不可逆操作上设置人类检查点；(2) 演示具有误导性，因为复合成功率随工作流长度急剧下降（卢瑟定律）；(3) 给智能体更多工具会增加失败面——功能幻觉比文本幻觉更危险，文中展示了带不可逆门控的类型化工具注册表；(4) 法律责任在于组织，加拿大航空聊天机器人案例已证实；(5) 升级模型并不能解决可靠性问题——可观测性、逐步骤追踪和数据质量更为关键。文中包含了可逆/不可逆工具注册表以及带低置信度标记...
+2026-06-22 22:00:04
 
 
 
 ### [当-RAG-用户提出模糊问题时：澄清一次，学习默认值](https://towardsdatascience.com/when-rag-users-ask-vague-questions-clarify-once-learn-the-default/)
 
-2026-06-22 21:30:00 | 标签: RAG, LLM, 问题解析, 结构化输出, 智能体设计模式
-
-> 本文扩展了企业 RAG 系统中的问题解析模块，以处理生产环境查询中常见的模糊字段。它识别了五种失败模式（模糊字段类型、缺失页面范围、模糊日期范围、模糊意图、隐式实体），并引入了两个 Pydantic 模式：`ClarificationRequest`（用于向用户提问）和 `ClarificationDefault`（用于从答案中学习）。通过一个经纪人示例演示了循环：系统首次提问，记录答案，随后在类似问题上静默复用已学习的默认值。提供了更新规则和门控函数的 Python 代码。该模式区别于多轮对话；它强调跨请求学习而非对话内学习。文章还讨论了边界条件、待解决问题（多字段、对抗性用户、跨租户共享）...
+2026-06-22 21:30:00
 
 
 
 ### [并非所有特征都生而平等-—-LessWrong](https://www.lesswrong.com/posts/Y5Lv8vafibpo7iYhi/not-all-features-are-created-equal)
 
-2026-06-22 21:20:46 | 标签: LLM 可解释性, 机制可解释性, 自动可解释性, 特征分析, AI 安全
-
-> 本文介绍了 AIR（自动可解释性路由器），一种用于 LLM 机制可解释性的协议。基于 Anthropic 的发现——特征属于不同类别（输入、抽象、输出），AIR 使用句子嵌入器为每个类别计算相关性分数，并将最合适的激活示例路由到 LLM 自动解释器。作者在 Gemma-3-27B 的 500 个特征上进行了实验，比较了 AIR 的多个变体与 OpenAI 的 oai_token-act-pair 以及 Neuronpedia 的 np_max-act-logits。结果显示，AIR 在准确率（Fuzz 分数）上优于两者，同时消耗的 token 数减少了 9 到 60 倍。一个经过过滤的变体（a...
+2026-06-22 21:20:46
 
 
 
 ### [Import-AI-462：超级说服力；自我维持型-AI；通往-ASI-之路](https://importai.substack.com/p/import-ai-462-superpersuasion-self)
 
-2026-06-22 20:31:45 | 标签: AI 研究, AI 说服力, 递归自我改进, 超级智能, AI 安全
-
-> Jack Clark 的 AI 通讯综合评论了多个前沿 AI 话题。文中提到一项大规模研究显示，在基于文本的辩论和真实筹款任务中，前沿 AI 系统（如 Opus 4.1、GPT-5.4）的说服力显著超过人类专家，这一优势主要源于 AI 能够以更快的速度生成更多信息。随后介绍了 Ajeya Cotra（10 年时间线）与 Timothy B. Lee（中位 50 年）关于 AI 何时能实现自我维持（无需人类劳动）的访谈辩论。文中总结了 DeepMind 关于从 AGI 过渡到 ASI 的论文，概述了四种路径——规模扩展、算法变革、递归自我改进和群体智能体形成——并强调了认真对待 ASI 的必要性...
+2026-06-22 20:31:45
 
 
 
 ### [Patch-the-Planet：一项支持开源维护者的-Daybreak-计划](https://openai.com/index/patch-the-planet)
 
-2026-06-22 18:00:00 | 标签: AI 安全, 开源安全, 漏洞发现, LLM, Codex
-
-> 本文介绍了 Patch the Planet，这是 OpenAI 旗下 Daybreak 计划的一项新举措，与 Trail of Bits 合作构建，并得到 HackerOne 和 Calif 的支持。该计划旨在通过将 AI 驱动的安全研究（使用 GPT-5.5-Cyber 和 Codex Security）与安全工程师的手动验证相结合，减轻开源维护者的负担。初始项目包括 cURL、NATS、pyca/cryptography、Sigstore、aiohttp、Go、freenginx、Python 和 python.org。文章详细介绍了工作流程：维护者设定优先级，研究人员借助 AI 进行调...
+2026-06-22 18:00:00
 
 
 
 ### [再见-RAG！AI-知识库还得是-SAG，又快又准～](https://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247517852&idx=1&sn=5561da600e468024cd12917233331119)
 
-2026-06-22 17:02:00 | 标签: AI知识库, RAG, SAG, 多跳推理, GraphRAG
-
-> 文章从作者接到的一个客户需求出发——搭建本地智能知识库，需要支持多跳推理（如从多个关联文档中拼出答案）。作者回顾了传统 RAG 的局限性（向量检索无法跨文档串联线索）和 GraphRAG 的弊端（离线图构建成本高、维护困难），然后引入近期开源的新方案 SAG（SQL-Retrieval Augmented Generation）。SAG 的核心思路是：入库时将文档提炼为「事项卡片」并提取「实体」，存入 SQL 数据库；查询时用 SQL JOIN 动态将有共同实体的事项串联，解决多跳问题。文章用具体例子演示了 SAG 如何找到传统 RAG 遗漏的文档，并与 FastGPT 的混合检索做了对比，强...
+2026-06-22 17:02:00
 
 
 
 ### [这家-Agent-公司从-Claude-切到-DeepSeek-v4：一年省下数百万美元，迁移工作量却是预期的-100-倍](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247663830&idx=2&sn=1cce45b0ee6dd1463d41ff53d44aedf5)
 
-2026-06-22 16:38:00 | 标签: AI Agent, LLM, 模型评测与基准, AI商业化, 推理成本
-
-> 初创公司 Lindy 将全部 AI 代理流量从 Anthropic 切换到 DeepSeek v4，每年节省数百万美元推理成本。CEO Flo Crivello 透露，迁移过程耗时 6-9 个月评估，实际工作量比预期多出 100 倍，包括大量在线/离线评估、提示词调整及分阶段上线观察留存率。DeepSeek 在邮件分类、起草回复等核心用例上性能提升，但在复杂自动化任务上仍落后于 Sonnet。文章还分析了推理成本成为 AI 部署最大障碍的背景（GitHub、Uber 案例），以及 DeepSeek v4 的地缘政治意义（全自主技术栈、降低对美依赖），强调大规模 Token 消费者必须行动。
+2026-06-22 16:38:00
 
 
 
 ### [DeepSeek-缺-Agent-人才缺疯了！负责人各种贴广告](https://www.qbitai.com/2026/06/437249.html)
 
-2026-06-22 13:09:27 | 标签: AI Agent, 招聘, 大模型应用, 人才市场, AI产品
-
-> 文章报道 DeepSeek Harness 部门负责人崔添翼近期公开招聘的现象，他指出部门缺口大，自己每天都在面试并在各处贴招聘广告。文章详细解读了 Harness 的概念，将其比喻为 Agent 的「方向盘、变速箱、刹车」，并拆解了 Model+Harness=Agent 的公式。重点介绍了新辟的 Harness 研究员岗位（侧重问题定义与能力上限研究），并与此前已开放的研发工程师（侧重技术实现与产品化）和产品经理岗位进行对比。文章还引用了崔添翼的背景及其持续高调招聘的状态，指出 AI 人才争夺已从研究型转向能统筹研究、工程、产品的复合型团队。
+2026-06-22 13:09:27
 
 
 
 ### [独家｜获超亿美元融资，Sand.ai-曹越：为什么视频是通往世界模型最重要的路径](https://mp.weixin.qq.com/s?__biz=MzkwMDQ2NDU2Nw==&mid=2247516888&idx=1&sn=f4e0ca5928765a5e7512916c1d0daaa0)
 
-2026-06-22 13:00:00 | 标签: 世界模型, 视频生成, 自回归, MoE架构, AI创业
-
-> 本文是《智能涌现》对 Sand.ai 创始人曹越的独家深度访谈。文章首先介绍了 Sand.ai 成立近三年的发展历程，包括押注自回归路线（Magi-1）、率先实现音画同出（Gaga-1）以及转向 MoE 架构（新一代模型）的非共识选择。曹越详细解释了视频模型存在成本、速度、效果的不可能三角，并认为 MoE 是突破关键。在“世界模型”概念被滥用的当下，曹越提出了清晰定义：世界模型仍处于前 GPT 时代，数据不足、定义不清；视频数据因编码了时间、空间、视觉、听觉等维度，是通往世界模型最重要的数据类型。同时他主张建模原始观测（raw data）而非人为定义的状态（state），以避免重蹈 token...
+2026-06-22 13:00:00
 
 
 
 ### [AI-用得好不好，跟你会不会管人，我觉得越来越是同一件事。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647683699&idx=1&sn=b33fa1dde9afc67a8b97587dd4efd6d6)
 
-2026-06-22 10:08:00 | 标签: 思维模型, AI Agent, Prompt Engineering, AI 编程, 个人效率
-
-> 作者在假期用 Claude Opus 4.8 重构 AI 资讯聚合网站 AIHOT 的聚簇机制，遭遇模型在仅有模糊目标时方案漏洞百出、需不断纠正的困境，联想到过去使用 Claude Fable 5 时只需给定方向即可自动完成任务的体验。由此引出核心洞察：不同能力的 AI 需要不同管理方式，与管人如出一辙——新人需逐步骤指令（Prompt Engineering），中级员工给目标与约束（Harness Engineering），顶尖人才只需方向即可自主产出。作者进一步反思未来 AI 能力持续提升，管理者应升维至德鲁克所说的“思考应该思考什么”，即判断哪些问题值得思考，这一选择背后是价值观与人生经...
+2026-06-22 10:08:00
 
 
 
 ### [AI-生物风险阈值是否需要中间预警级别？—-LessWrong](https://www.lesswrong.com/posts/3QvnQczuGD8H9zood/do-ai-biorisk-thresholds-need-intermediate-warning-levels)
 
-2026-06-22 09:09:44 | 标签: AI 安全, AI 生物风险, AI 治理, 负责任的扩展, 前沿 AI
-
-> 文章指出当前的 AI 生物风险阈值（如 CB-1、CB-2）对于实际治理决策来说过于粗糙。以 Anthropic 的 Mythos 5 系统卡和 ASL-3 激活为例，文章强调了实验室在未跨越阈值时仍部署防护措施的“模糊地带”。作者识别出证据的不对称负担：证明阈值跨越需要近乎端到端的武器化证据，而否认跨越只需指出缺少一个步骤。这形成了向下偏差，倾向于得出“未跨越”的结论。提出的解决方案是在终端阈值之间添加中间预警级别，这些级别围绕可衡量的子步骤瓶颈设计，而非完整的武器化。这样的级别会将负担转向升级，减少动机性推理，并使灰色地带决策对外界观察者更加清晰。
+2026-06-22 09:09:44
 
 
 
@@ -42742,97 +42704,73 @@
 
 ### [如何通过-DevTools-扩展将性能审计转化为-AI-修复提示](https://www.freecodecamp.org/news/how-to-turn-performance-audits-into-ai-fix-prompts-with-a-devtools-extension/)
 
-2026-06-23 00:46:14 | 标签: 网页性能, Chrome DevTools 扩展, AI 编程, 提示工程, 开发者工具
-
-> 文章介绍了一条实用流程：将浏览器的性能发现（如体积过大的图片或缓慢的 LCP）转化为结构化 AI 提示，供编码智能体执行。作者引入了 `Finding` TypeScript 类型来存储审计结果，`buildFixPrompt` 函数把发现转化为简短的工程简报（包括问题、证据、受影响资源、可能原因、待检查文件、推荐修复方案、约束条件和验证步骤），并针对 Cursor 或 Claude Code 等智能体实现了剪贴板优先的集成。教程逐步演示了如何存储发现、按严重程度排序、构建提示、复制到剪贴板，并以 PerfLens 扩展为例，在 DevTools 面板中添加“复制 AI 修复提示”按钮。文章还...
+2026-06-23 00:46:14
 
 
 
 ### [AI-原生领导者：大规模工程转型的组织手册](https://blog.bytebytego.com/p/ai-native-leaders-the-organizational)
 
-2026-06-22 23:30:47 | 标签: AI 工程, AI 领导力, 组织转型, 智能体开发, 人在环上
-
-> 这是 Shah Rahman（来自 Meta）系列文章的第二部分，聚焦于 AI 原生工程的组织转型。文章指出，如果没有刻意的领导力和工作流重新设计，AI 工具带来的个人收益不会自动转化为组织收益。文章介绍了一种基于 pod 的组织结构：由小规模跨职能团队（3-5 人）在 AI 智能体的辅助下自主运作，并配备专职的 Agent Champion 提供支持。文章从第一性原理出发，剖析了 AI 原生的领导力危机：瓶颈不在于构建，而在于决定构建什么、明确所有权归属和保持同理心。它解释了从“人在环中”到“人在环上”的转变——人类设定方向，AI 自主执行。文章讨论了生产率悖论（工程师只有 20-30% 的...
+2026-06-22 23:30:47
 
 
 
 ### [从-OpenClaw-到-FastClaw：如何设计优秀的多-Agent-架构](https://www.v2ex.com/t/1222063#reply0)
 
-2026-06-22 19:31:14 | 标签: AI Agent, Agent架构, AI Platform, 架构设计, 工程实践
-
-> 文章以作者从自用 OpenClaw 到提供托管服务、再到从零设计 FastClaw 的经历为线索，先梳理 OpenClaw 在 SOUL 机制、记忆检索、多端接入、主动通知等产品层面的创新，再深入剖析其单体 Node.js 架构在单点故障、多租户缺失、资源占用、云原生不友好等方面的根本缺陷。在此基础上，作者提出 FastClaw 的设计原则：存算分离、多租户与 RBAC、会话隔离、高并发、单二进制分发、低内存占用、插件隔离、Fallback 链等，并用架构图和代码示例展示了如何在 Go 语言中落地这些理念。最后总结了“多租户是架构决策”、“存储决定一切”、“隔离是可靠性前提”、“Fallbac...
+2026-06-22 19:31:14
 
 
 
 ### [eBPF-如何以安全且无侵入的方式让开发者观察-Linux-内核内部](https://www.infoq.com/podcasts/empowers-developers-inside-linux-kernel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-22 19:00:00 | 标签: eBPF, Linux 内核, 可观测性, 安全, Tetragon
-
-> Isovalent 社区团队成员 Dan Fineran 探讨了 eBPF 如何从数据包过滤演变为 Linux 内核的通用沙箱扩展机制。他重点介绍了 eBPF 验证器的关键作用——它就像一个安全保镖，确保程序不会导致内核崩溃或阻塞。对话涵盖了 eBPF 在网络之外的应用，尤其是 Tetragon 项目在可观测性和安全方面的实践——该项目可附加到任何系统调用的前置钩子，实现主动威胁缓解。Fineran 还谈到了 eBPF 在 Windows 上的新兴支持、与 AI 智能体集成以实现潜在的自愈基础设施，以及在 AI 时代审查开源 eBPF 项目的重要性。
+2026-06-22 19:00:00
 
 
 
 ### [当代码越来越便宜，什么在变贵？](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607179&idx=1&sn=e6c3e57e110325c5ef070d0cec7d20f9)
 
-2026-06-22 18:00:00 | 标签: AI编程, 产品判断, Vibe Coding, AI辅助开发, 用户体验
-
-> 文章记录了作者利用 ChatGPT、Codex 和 Gemini 多模型协作开发一款浏览器插件（Design.md Token Exporter）的完整过程。核心冲突在于：AI 的超强执行力让功能膨胀变得极其容易，但作者通过具体决策（如砍掉不准确的预览面板、坚守最简权限、用优雅的错误提示替代系统报错）展示了如何守住产品边界。文章指出，技术平权消除了编写代码的体力障碍，却把「产品判断」这一更本质的难题推到前台——当代码越来越便宜，取舍就成了最贵的学问。
+2026-06-22 18:00:00
 
 
 
 ### [使用-Amazon-Bedrock-和-Verified-Permissions-实现安全的多租户-RAG-|-Amazon-Web-Services](https://aws.amazon.com/blogs/architecture/secure-multi-tenant-rag-with-amazon-bedrock-and-verified-permissions/)
 
-2026-06-22 17:49:13 | 标签: RAG, 多租户, Amazon Bedrock, Verified Permissions, Cedar
-
-> 本文解决了在同一组织内跨部门（如团队或角色）控制文档访问，同时使用共享 RAG 基础设施的挑战。它提出了一种两层纵深防御模式：第一层使用 API Gateway 上的 Lambda Authorizer，通过 Amazon Verified Permissions 验证 API 级别访问；第二层使用中间件 Lambda 在查询时评估 Cedar 策略，并动态为 Bedrock 的 RetrieveAndGenerate API 构建元数据过滤器。数据摄取管道通过 S3 事件触发和 sidecar 文件自动为文档打上部门元数据标签。该模式支持在单个知识库内实现逻辑隔离的文档访问，允许策略更新无需...
+2026-06-22 17:49:13
 
 
 
 ### [DiffusionGemma:-文本生成速度提升-4-倍](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652162264&idx=1&sn=4931259249f079e659e68fcce4f71b42)
 
-2026-06-22 17:30:00 | 标签: LLM, 文本扩散, 模型发布, 推理加速, 开源模型
-
-> 文章宣布谷歌正式推出 DiffusionGemma，一款基于 Apache 2.0 许可的开源实验性文本扩散模型。该模型拥有 260 亿参数（MoE 架构，推理时仅激活 3.8B），通过并行生成 256 个 Token 的方式突破传统自回归模型的顺序生成瓶颈，在单张 H100 上可达 1000+ Token/秒。文章详细解释了其工作原理：从随机占位符画布开始，经多次迭代精炼最终输出文本。与自回归模型的关键区别在于硬件利用方式——扩散模型将计算密集型任务打包，更适配本地单用户场景，而自回归模型在高并发云端优势更明显。文章明确了 DiffusionGemma 的实验性状态，指出其在输出质量上低于标...
+2026-06-22 17:30:00
 
 
 
 ### [Loop-Engineering-实践指南：在-Code-Buddy-中构建自主循环系统](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802117&idx=1&sn=a91a32e0b00305c1a30f4a6684c3c6b2)
 
-2026-06-22 17:22:00 | 标签: AI编程, Agent, LLM, ReAct, 开发工具
-
-> 文章由腾讯技术工程团队撰写，系统性地介绍了由 Google 工程师 Addy Osmani 提出的 Loop Engineering 概念。文章首先阐明 Loop Engineering 的本质——围绕大模型构建自主循环系统，使 AI 从单次响应工具升级为长期自治代理，并定位其为继 Prompt Engineering 和 ReAct 之后的“AI 编程第三次革命”。接着详细对比了 Loop Engineering 与 ReAct 的差异，指出 ReAct 是 Inner Loop（单任务执行），而 Loop Engineering 是 Outer Loop（跨任务编排），两者是演进而非替代关...
+2026-06-22 17:22:00
 
 
 
 ### [沙发搬到线上：火山引擎视频云如何用-RTC+直播打造一场“云上陪看房”？](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520434&idx=1&sn=a64546f280df6673c7cceb76d3465a6e)
 
-2026-06-22 17:00:00 | 标签: 实时音视频, 后端开发, 系统设计, 性能优化, AI 产品与应用
-
-> 文章围绕线上陪看房的「同步在场」需求，系统阐述火山引擎视频云基于 RTC 构建的完整能力链。技术方案聚焦四个层面：所有用户统一加入 RTC 房间保证低延迟同步；通过公共流与单独上麦的融合方案平衡大规模并发与交互体验；采用边缘+中心多级限流与队列延时处理应对进退房洪峰；利用音频托管、回声消除与智能闪避优化外放场景下的语音清晰度。此外引入 AI 陪看能力，将赛事知识问答嵌入观赛过程。文章以 2022 年卡塔尔世界杯抖音「边看边聊」功能为验证案例，单房间支持 500 人同时在线，有效互动提升 5-10 倍，用户看播时长显著增长，验证了方案在大规模赛事直播中的工程可行性。
+2026-06-22 17:00:00
 
 
 
 ### [2026-06-22-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-06-22-HackerNews/)
 
-2026-06-22 16:16:05 | 标签: 科技新闻, 趋势观察, Hacker News, AI监管, 开源游戏
-
-> 本文是一篇 Hacker News 每日摘要，精选了当天热度最高的 10 个话题及其核心讨论。内容包括：Anthropic 要求用户上传政府签发身份证件进行身份验证，引发非美国用户强烈不满并考虑转向其他模型；免费开源 RTS 游戏《超越一切理性》因社区文化刻薄、排斥新手而备受争议；经典文章《宁愿重复，也不要错误的抽象》及其引发的关于过早抽象与代码复用的深度讨论；设计公司 Qontour 完整剽窃《晦涩悲伤》一书并替换为 AI 图像，利用 SEO 和 AI 搜索误导公众牟利；Cell 子刊论文揭示延长呼气通过增强副交感神经活动调节大脑价值加工区域，从而增加冒险决策；谷歌数据显示 IPv6 全球使...
+2026-06-22 16:16:05
 
 
 
 ### [美团海报生成-AIGC-技术创新与实践](https://tech.meituan.com/2026/06/18/AIGC-poster.html)
 
-2026-06-22 16:02:05 | 标签: AIGC, 海报生成, 大模型, 文生图, 多任务学习
-
-> 文章深入介绍了美团智能创作团队围绕高质量商业海报生成所构建的完整技术体系。先阐述了百万中小商家面临的“创意平权”难题及五个技术挑战（精准文字渲染、和谐版式布局、统一美学风格、多任务场景统一、质量可量化评估）。随后系统拆解三项核心工作：PosterCraft（ICLR 2026）端到端优化海报生成，通过四阶段级联训练在文字渲染准确率上接近闭源商业系统；PosterOmni（CVPR 2026）实现单一模型覆盖扩图、补全、比例调整、风格迁移等六类设计任务，采用任务蒸馏+统一奖励模型的范式；PosterReward（CVPR 2026）作为首个面向海报质量评估的奖励模型，在专项评测基准上准确率达 8...
+2026-06-22 16:02:05
 
 
 
 ### [MOSS-全模态技术体系全解析：统一离散化建模、推理优化与情境数据构建路径](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651287490&idx=1&sn=5bbce67700d93c8c3ece905011bd64a7)
 
-2026-06-22 12:55:00 | 标签: 多模态AI, LLM, 情境智能, 模型训练与推理, AI产品与应用
-
-> 本文是 InfoQ 对复旦大学教授、模思智能创始人邱锡鹏的深度专访。邱锡鹏作为国内首个对话式大语言模型 MOSS 的发布者，系统性阐述了其提出的“情境智能（Context Intelligence）”技术路线。文章首先定义情境智能是大模型发展的必然方向，包括感知、表示、交付、持久化和反馈闭环五个环节。随后详细介绍了 MOSS 系列子模型：MOSS-Audio（通用音频理解）、MOSS-VL（视频理解）、MOSS-TTS（高保真语音合成）的架构设计与协同机制，强调以离散词元为核心的统一表示方式。在技术挑战部分，邱锡鹏从表示压缩、模型架构、推理系统三层解析如何解决上下文扩张带来的算力压力，并对比了...
+2026-06-22 12:55:00
 
 
 
