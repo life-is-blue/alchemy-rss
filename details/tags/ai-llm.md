@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-24 08:26:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-24 11:08:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [智能体身份：适用于自主、团队级-AI-的新型访问模型-|-Claude](https://claude.com/blog/agent-identity-access-model)
 
-2026-06-24 00:00:00 | 标签: AI Agent, 访问控制, 多人AI, Claude Tag, 企业级AI
-
-> 本文阐述了智能体身份这一概念，这是一种专为 Claude Tag 等多人 AI 体验设计的访问模型。它不同于传统的“以用户身份运行”模型——当智能体需要长时间自主运行且团队有多个用户时，后者会失效。智能体身份为每个共享频道赋予自己的一套凭证、工具和权限，由管理员在工作区和频道级别进行管理。这使得智能体能够独立行动——读取仓库、查询数据仓库、向 Slack 发送消息——而无需依赖任何单个用户的身份。该模型引入了明确的边界：私有频道拥有独立的身份、记忆和访问权限，而直接消息仍运行在个人用户账户上。文章概述了权限如何继承、连接器和技能如何配置，以及审计跟踪如何运作。还讨论了最佳实践：从宽松的访问权限...
+2026-06-24 00:00:00
 
 
 
@@ -12712,73 +12710,55 @@
 
 ### [GPT-5-如何帮助免疫学家-Derya-Unutmaz-解开一个存在三年的谜题](https://openai.com/index/gpt-5-immunology-mystery)
 
-2026-06-24 01:00:00 | 标签: GPT-5, AI 科学, 免疫学, 生物学研究, LLM
-
-> 这篇来自 OpenAI News 的文章讲述了免疫学家 Derya Unutmaz 如何使用 GPT-5 Pro 重新审视 2022 年一个令人困惑的实验。在该实验中，暴露于脱氧葡萄糖（一种葡萄糖类似物）的 T 细胞绝大多数变成了炎症性的 Th17 细胞，而处于低糖环境中的 T 细胞则没有——这种差异无法仅用能量限制来解释。Unutmaz 将数据上传到 GPT-5 Pro，模型提出脱氧葡萄糖干扰了 IL-2 蛋白的构建，而 IL-2 通常能阻止 T 细胞变成 Th17 细胞。这一见解超出了 Unutmaz 自身的专业领域，但回顾来看完全合理。随后，模型还正确模拟了另一个关于 CD8+ T 细胞...
+2026-06-24 01:00:00
 
 
 
 ### [助力构建先进-AI-共享标准](https://openai.com/index/helping-build-shared-standards-for-advanced-ai)
 
-2026-06-23 21:00:00 | 标签: AI治理, AI安全, 标准, 前沿AI, 模型评估
-
-> 文章宣布了 OpenAI 在创立 Appia 基金会（由 Linux 基金会托管）中的角色，该基金会旨在开发开放的模块化规范，将国际标准转化为贯穿 AI 价值链的实用评估标准。文章指出，随着 AI 能力的增强，社会需要具备技术和治理能力的机构来评估和保护先进系统。文章将此努力与 OpenAI 更广泛的治理框架联系起来，包括前沿治理框架和预备框架，并强调了在 ISO/IEC、NIST 和前沿模型论坛等标准制定机构中的持续参与。目标是使实践在组织和司法管辖区之间可互操作，使政府和公司能够信任彼此的评估。
+2026-06-23 21:00:00
 
 
 
 ### [使用-CUGA-构建真实智能体应用：基于轻量框架的二十四个可运行示例](https://huggingface.co/blog/ibm-research/cuga-apps)
 
-2026-06-23 20:52:32 | 标签: AI 智能体, 自主 AI, 智能体框架, 工具调用智能体, MCP 协议
-
-> 本文介绍了 CUGA，一个来自 IBM 的开源智能体框架，它抽象了构建智能体的非差异化基础设施（模型编排、工具绑定、状态管理、反思、多智能体委派和治理）。开发者无需从头搭建框架，CUGA 提供一个小型 API 表面（用工具和指令构建 CugaAgent，然后调用）。基于“大多数智能体应用从一周的基础设施工作开始”这一前提，作者展示了框架方法如何颠覆这一过程：有趣的部分（智能体的目的）先出现。为了验证这一主张，他们介绍了一个 IBM Cloud 顾问应用——一个单一的 FastAPI 文件，混合了内联目录搜索工具和 MCP 网页搜索工具——并解释了信封类型工具返回的约定，该约定实现了优雅的故障恢...
+2026-06-23 20:52:32
 
 
 
 ### [Coinbase-借助-Cursor-将创意到上线的时间缩短-90%-·-Cursor](https://cursor.com/blog/coinbase)
 
-2026-06-23 20:00:00 | 标签: AI 编程, Agent 优先, 软件工程, 开发者生产力, Cursor
-
-> 本文详细介绍了 Coinbase 如何将 Cursor 作为以 Agent 为先的软件开发生态的基础。在工程高级总监 Chintan Turakhia 的领导下，公司重新思考了冲刺规划，将工程精力转向更高层次的抽象，并组建了更小规模的跨职能团队。关键成果包括：创意到上线的时间从 20 天缩短至不到 2 天（降幅达 90%），每位工程师合并的 PR 数量增长了 55%，每位开发者每周平均节省 7 小时。文章阐述了推动这一转变的文化变革（如 Agent 极速挑战赛和 Superbuilder 角色），并强调了 Cursor 的模型灵活性、预配置设置和强大的 UI 是重要的赋能因素。
+2026-06-23 20:00:00
 
 
 
 ### [GitHub---deeplethe/forkd:-Fork-用于-AI-智能体微虚拟机。从预热父节点在约-100ms-内生成-100-个子节点；在约-150ms-内分支一个活动虚拟机。KVM-隔离，写时复制快照。](https://github.com/deeplethe/forkd)
 
-2026-06-23 19:43:50 | 标签: AI 智能体, 微虚拟机, Firecracker, 沙箱, 写时复制
-
-> forkd 是一个基于 Firecracker 构建的开源微虚拟机运行时，专为需要快速、隔离的沙箱扇出的 AI 智能体工作负载而设计。它启动一次父虚拟机，预热运行时（例如 Python 及其依赖），将其暂停到磁盘，然后通过使用 MAP_PRIVATE（内核写时复制）对父虚拟机的内存映像执行 mmap 来生成子虚拟机。这实现了每个子虚拟机的 KVM 隔离，其生成成本更接近 fork(2) 而非冷启动。该项目还引入了 BRANCH（在约 150ms 内对运行中的沙箱进行实时快照）和差异快照链（堆叠层以避免重复共享基础镜像）。基准测试显示，生成 100 个沙箱需 101ms（Firecracker ...
+2026-06-23 19:43:50
 
 
 
 ### [腾讯王腾飞：从生成内容到生成环境，世界模型的-3D-落地之路](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247663849&idx=2&sn=ce310db553fa1d3e039d7341adddd9cb)
 
-2026-06-23 14:32:00 | 标签: 世界模型, 3D 生成, 具身智能, AI 产品与应用, 仿真与渲染
-
-> 文章以专访形式深度解析腾讯 HY-World 2.0 的技术架构与产品逻辑。王腾飞首先回应李飞飞对世界模型的三层定义（渲染器、仿真器、规划器），提出腾讯更倾向于将渲染与仿真合并看待。核心观点包括：世界模型交付的是「可运行环境」而非「内容」，满足状态持续、物理准确、可交互三个特征；3D 是当前落地最具可行性的载体，因为其天然一致、可编辑复用、物理精确且成本可分摊；HY-World 2.0 采用四阶段流程（全景生成→轨迹规划→世界扩展→世界合成），对应人类感知→理解→想象→重建的认知过程；WorldLens 渲染平台解决从建到用的临门一脚；游戏与具身智能本质一致，数字世界可作为物理世界的可控代理；...
+2026-06-23 14:32:00
 
 
 
 ### [Seed2.1-正式发布，深入-AI-生产力](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247493683&idx=1&sn=ce9615d598b7cd8536096aca6df7e226)
 
-2026-06-23 12:28:00 | 标签: 模型发布, AI Agent, AI 编程, 多模态 AI, LLM
-
-> 本文是字节跳动 Seed 团队官方发布的 Seed2.1 模型介绍。文章从通用 Agent 能力、代码工程交付能力、多模态等基础能力三个维度，详细阐述了该系列模型在真实生产力场景中的提升。通用 Agent 方面，Seed2.1 在 Workspace Bench、Agent Startup Bench、GDPval、Agents' Last Exam 等基准上表现稳定或领先，并强化了 Computer-Use Agent 能力，可跨环境、跨工具完成复杂任务。代码能力方面，在 ProgramBench、NL2Repo-Bench 等基准上保持竞争力，并在众测开发者评估中对比 Claude Opu...
+2026-06-23 12:28:00
 
 
 
 ### [论-TEE-在-AI-治理中实现隐私保护监控的潜力与局限-—-LessWrong](https://www.lesswrong.com/posts/kauQxzfS7fT5yHN8C/on-tees-for-privacy-preserving-monitoring-in-ai-governance)
 
-2026-06-23 11:54:08 | 标签: AI 治理, 可信执行环境, 机密计算, AI 安全, 硬件安全
-
-> 本文作为 MIRI 技术治理奖学金项目的一部分，探讨了可信执行环境（TEE）如何在不牺牲用户隐私的前提下，对 AI 部署施加可验证的约束。文章首先阐述了基于硬件验证的需求，随后提供了 TEE 功能的技术入门介绍，包括内存隔离、加密、度量、加密身份和远程证明。作者回顾了已在商业场景中部署机密计算用于私有 AI 推理的案例（Apple、WhatsApp、Google、Tinfoil），并提出了一种“变革理论”——治理验证可以从市场驱动的产品中自举出来。后半部分（部分包含）讨论了当前硬件的不足，区分了可修复的问题与根本性局限，并得出结论：硬件可审计性仍然是最大的障碍。
+2026-06-23 11:54:08
 
 
 
 ### [使用-NVIDIA-BioNeMo-Agent-Toolkit-构建-AI-科学家，助力生命科学发现](https://developer.nvidia.com/blog/build-an-ai-scientist-for-life-science-discovery-with-nvidia-bionemo-agent-toolkit/)
 
-2026-06-23 08:33:45 | 标签: AI 智能体, BioNeMo, NIM, 分子建模, 结构预测
-
-> 文章解释了为什么通用编码智能体在生物分子研究中表现不佳（缺乏专用工具接口）。它介绍了 NVIDIA BioNeMo 平台，该平台通过 NIM 微服务和 BioNeMo Skills，将加速的生物分子模型（如结构预测、对接、分子生成）转化为智能体可用工具。文章逐步介绍了规划科学工作流、将智能体指向工具包仓库、选择托管部署或本地 NIM 部署、以及使用技能调用模型的过程。基准测试结果显示，使用 BioNeMo Skills 的智能体任务完成率达到 100%（未使用时为 57.1%），且 token 效率提升 2 倍。文章还提供了故障排除技巧和入门指导。
+2026-06-23 08:33:45
 
 
 
@@ -42784,57 +42764,43 @@
 
 ### [我自动化了我的工作（而这让我成为更好的领导者）](https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/)
 
-2026-06-24 00:00:00 | 标签: AI Agent, 自动化, 个人生产力, 领导力, GitHub Copilot
-
-> 作者是 GitHub 的开发者关系高级总监，她描述了如何利用 GitHub Copilot 应用的自动化功能来自动化其领导工作流程中的大部分内容。她解释了问题所在：她的大脑是连接 15 个不同工作表面的唯一系统，导致错过截止日期和不断切换上下文。她构建了大约 40 个每天运行的自动化流程，包括晨间简报（会议准备、分类摘要）、Ship Decoders 以保持最新、职业架构（每日胜利回顾）、团队和人员跟进跟踪器，以及维护自动化（陈旧工作查找器、Dependabot 分类）。她还讨论了 AuDHD（注意缺陷多动障碍与自闭症谱系合并症）如何导致执行功能不稳定，以及自动化如何作为无障碍工具缩小好日子和...
+2026-06-24 00:00:00
 
 
 
 ### [前-Meta-L8-工程师的智能体工程设置](https://blog.bytebytego.com/p/an-ex-meta-l8s-agentic-engineering)
 
-2026-06-23 23:31:20 | 标签: AI 编程, 智能体工程, 开发者工具, 提示工程, 终端与命令行
-
-> Kun Chen，前 Meta L8 首席工程师，详细介绍了他个人的智能体工程工作流，该工作流使他每天能提交 30+ 个高质量的 PR。整套设置完全在终端中完成：WezTerm、tmux、Neovim，以及 Claude Code 和 OpenCode 等智能体工具。Chen 强调像管理者一样编写提示词（要求结果而非行动；解释原因；提供反馈），使用语音输入提升速度（OpenSuperWhisper），并通过他开源的 Lavish Editor 利用交互式 HTML 制品规划复杂工作。计划制定后，实现完全自主，智能体会端到端验证自己的更改。文章以一个真实项目——为他儿子打造的 AI 家教 "Hi...
+2026-06-23 23:31:20
 
 
 
 ### [Microsoft-通过裸金属、舰队管理和-AI-基础设施扩展-Azure-Kubernetes-Service](https://www.infoq.com/news/2026/06/microsoft-build-aks-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-23 20:00:00 | 标签: Azure Kubernetes Service, Kubernetes, AI 基础设施, 云原生, AI 训练
-
-> 在 Microsoft Build 2026 上，该公司发布了 Azure Kubernetes Service（AKS）的重大增强，旨在使 Kubernetes 成为 AI 训练、推理和大规模云原生应用的一流平台。主要公告包括：AKS on Bare Metal（公开预览）通过消除虚拟化开销，为性能敏感的 AI 工作负载提供直接硬件访问；Azure Kubernetes Fleet Manager 面向 Arc 启用集群正式发布，支持跨混合和多云环境的集中管理；Anyscale on Azure 作为托管 Ray 服务，用于分布式 AI 工作负载；以及通过 AI Runway 和 Kuber...
+2026-06-23 20:00:00
 
 
 
 ### [AWS-发布-Blocks：面向-AI-智能体的开源-TypeScript-框架，用于构建后端](https://www.infoq.com/news/2026/06/aws-blocks-framework-preview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-23 17:15:00 | 标签: AI 智能体, TypeScript, AWS, 开发者工具, AI 编程
-
-> AWS 以公开预览形式发布了 Blocks，这是一个开源 TypeScript 框架，将应用程序代码、本地开发实现和生产级 AWS 基础设施打包成可组合的 npm 包（即 Blocks）。它专为 AI 智能体设计，使其开箱即用地编写正确的后端代码，内置引导文件（steering files）可指导智能体，无需自定义配置。开发者无需 AWS 账户即可在本地运行完整的全栈应用，包括 Postgres、身份验证、实时消息和文件存储，之后无需任何改动即可部署到 Lambda、DynamoDB、Aurora、API Gateway 和 Bedrock。该框架通过条件导出支持本地优先开发，从前端 sche...
+2026-06-23 17:15:00
 
 
 
 ### [两年实盘-+135%，聊聊我用-Claude-Code-搭的多-Agent-投研框架](https://www.v2ex.com/t/1222186#reply22)
 
-2026-06-23 10:52:26 | 标签: AI Agent, 多 Agent 系统, 投资研究, 开源项目, LLM 应用
-
-> 文章系统介绍了作者开发并开源的多 Agent 投研框架（ai-berkshire）。框架通过 4 个独立的 Claude Code agent 从商业模式、财务估值、行业竞争、风险评估四个维度分别搜索、交叉验证并给出结论，再由 Team Lead 综合并经受其他 agent 的挑战，以打破 LLM 自我强化倾向。工程上有多个关键设计：用 decimal.Decimal 确保财务计算精度、内置 Benford 定律检测异常数据、多层纠偏机制（信息丰富度分级、逆向检验、快速否决清单）。作者提供了实盘收益（2024 +69.29%，2025 至今 +66.38%）并强调工具只负责研究，买入决策由人做...
+2026-06-23 10:52:26
 
 
 
 ### [当-Agent-替你值班：基于-Devix-构建-7x24-自动化运维-Harness-Engineering](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561199&idx=1&sn=c62b6db6dcc2bd3e63bc8bc4aa7498bf)
 
-2026-06-23 09:47:00 | 标签: AI Agent, 自动化运维, DevOps, 故障诊断, 决策引擎
-
-> 文章来自阿里云开发者团队，记录了内部如何利用 Devix 平台构建一套完整的自动化运维系统（Harness Engineering）。作者从凌晨告警看板的痛点出发，指出传统人工运维“慢、重复、断层”三大问题，并论证了纯 AI 方案的不稳定性与无记忆性。核心设计哲学是“Agent 负责语义理解与推理，脚本负责数据召回与动作执行”，以此构建三层流水线：语义诊断层（Agent）、决策规则层（脚本召回+Agent 综合决策）、动作执行层（脚本）。系统通过 Devix 云端常驻 Sandbox 实现 7×24 公网服务，集成了监控告警、日志解析、关联分析、分级决策（自动重跑/按钮确认/代码修复/排查建议...
+2026-06-23 09:47:00
 
 
 
 ### [从-Harness-架构到-Token-经济学的探索](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695963&idx=1&sn=29f18a2db784e1ddb56796af76543688)
 
-2026-06-23 08:45:00 | 标签: AI编程, LLM, Harness Engineering, Token经济学, ReAct
-
-> 文章以 LangChain 实验数据引出 Harness 的概念：模型外的代码层决定 AI 的表现上限。作者从控制论（反馈与前馈）、ReAct 循环、Reflexion 记忆、蒙特卡洛树搜索、信息熵压缩等理论出发，详细拆解了项目的.codebuddy 配置——四层架构（Commands/Skills/Rules/Hooks）、Hooks 反馈控制实现、Rules 分级、Skills 领域封装、原子化提交工作流。第三部分给出模型选型与配额策略（Claude/DeepSeek/GLM/Hy3）。第四部分深入 Token 经济学，介绍 KV Cache 原理，展示通过 Rules 精简、disabl...
+2026-06-23 08:45:00
 
 
 
