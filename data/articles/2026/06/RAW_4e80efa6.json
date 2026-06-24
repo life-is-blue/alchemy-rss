@@ -1,0 +1,61 @@
+{
+  "id": "RAW_4e80efa6",
+  "title": "两年实盘 +135%，聊聊我用 Claude Code 搭的多 Agent 投研框架",
+  "url": "https://www.v2ex.com/t/1222186#reply22",
+  "date": "2026-06-23 10:52:26",
+  "author": "xbtlin",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown_body\">\n   <p>做了个 AI 投研系统，4 个 Agent 互相挑刺，结果比我自己分析靠谱多了</p>\n   <hr>\n   <p>你直接问 Claude\"帮我分析拼多多值不值得买\"，它会给你一篇\"一方面...另一方面...\"的平衡文。看起来全面，但没法拿来做决策。</p>\n   <p>我想做的系统必须给出明确倾向：一个合理价格区间，当前价位偏高、合理还是偏低，附上置信度。做不到这一点的分析，对决策没有帮助。</p>\n   <p>花了一年多，把投研流程拆成了一套多 Agent 对抗系统。项目开源在 GitHub： <a href=\"https://github.com/xbtlin/ai-berkshire\" rel=\"nofollow\">https://github.com/xbtlin/ai-berkshire</a></p>\n   <h3>先看产出</h3>\n   <p>拿拼多多举例，系统实际跑出来的结论：</p>\n   <ul>\n    <li>商业模式维度：C2M 有壁垒，好生意 → 3.7/5</li>\n    <li>财务估值维度：扣现金 PE 仅 6.3x → 4.4/5</li>\n    <li>行业竞争维度（逆向思考）：护城河比想象中浅，抖音电商 3 年做到 4 万亿 GMV → 3.5/5</li>\n    <li>风险评估维度：管理层文化有隐患，10 年后不确定 → 2.0/5</li>\n   </ul>\n   <p>一个说\"真便宜\"，另一个说\"不确定就不买\"。这种矛盾不是 bug ，是投资决策的真实状态。</p>\n   <p>完整的报告样本放在仓库 <code>reports/</code> 目录下，有 100+ 份，随便翻。</p>\n   <h3>核心设计：多 Agent 对抗</h3>\n   <p><code>/investment-team</code> 会启动 4 个独立的 Claude Code subagent ，每个从不同分析维度（商业模式 / 财务估值 / 行业竞争 / 风险评估）各自搜索网络、各自交叉验证数据、各自给出结论。这不是把一个 prompt 拆成四段再拼回来——是 4 个\"分析师\"各自做了完整研究，最后由 Team Lead 综合，并且专门有一轮挑战环节：A 的结论要经受 B 、C 、D 的质疑。</p>\n   <p>单个 LLM 容易自我强化——前面说了看好，后面就不自觉找支撑证据。多 Agent 对抗就是为了打破这个倾向。</p>\n   <p>最终报告输出分层建议：激进型 / 稳健型 / 保守型各自的仓位和价格区间，加上一个\"镜子测试\"——5 句话说不清为什么买，就是不该买。</p>\n   <h3>架构</h3>\n   <p><img alt=\"架构图\" class=\"embedded_image\" loading=\"lazy\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/xbtlin/ai-berkshire/main/assets/architecture.png\"></p>\n   <pre><code>Skill 层（ 16 个入口）— 定义你要做什么研究\n    ↓\nAgent 层（ 4 Agent 并行）— 各自搜索、独立判断、互相挑战\n    ↓\n工具层 — Decimal 精确计算 + 实时检索 + 报告校验\n</code></pre>\n   <p>两个工程细节：</p>\n   <p><strong>不信 LLM 心算。</strong> LLM 算 PE 能算错小数点，港币人民币单位搞混更是常见。所有财务计算走 Python <code>decimal.Decimal</code>，关键数据至少 2 个独立来源交叉验证。还内置了 Benford 定律检测——用首位数字分布异常发现财务数据可疑的线索。</p>\n   <p><strong>多层纠偏。</strong> AI 最危险的不是给错答案，而是给一个看起来很对但经不起推敲的答案。框架里内置了信息丰富度分级、逆向检验（强制思考\"这家公司怎么会死\"）、快速否决清单（ 8 条红线一票否决，管理层诚信有问题不管多便宜都直接否决）。</p>\n   <h3>怎么用</h3>\n   <pre><code class=\"language-bash\">npm install -g @anthropic-ai/claude-code\ngit clone https://github.com/xbtlin/ai-berkshire.git\ncp ai-berkshire/skills/*.md ~/.claude/commands/\n\n/investment-team 腾讯           # 4 Agent 并行深度研究\n/earnings-review 腾讯 2025Q4    # 财报精读\n/quality-screen 茅台, 英伟达     # 快速筛选\n</code></pre>\n   <h3>实盘记录</h3>\n   <p>附一下自己用这套流程辅助决策的实盘，仅供参考：</p>\n   <p><img alt=\"2024 实盘收益\" class=\"embedded_image\" loading=\"lazy\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/xbtlin/ai-berkshire/main/assets/2024-returns.jpg\"></p>\n   <p><img alt=\"2025 实盘收益\" class=\"embedded_image\" loading=\"lazy\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/xbtlin/ai-berkshire/main/assets/2025-returns.jpg\"></p>\n   <table>\n    <thead>\n     <tr>\n      <th>指标</th>\n      <th>2024 全年</th>\n      <th>2025 至今</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>我的实盘</td>\n      <td>+69.29%</td>\n      <td>+66.38%</td>\n     </tr>\n     <tr>\n      <td>标普 500</td>\n      <td>+23.31%</td>\n      <td>+16.39%</td>\n     </tr>\n     <tr>\n      <td>恒生指数</td>\n      <td>+17.67%</td>\n      <td>+27.77%</td>\n     </tr>\n    </tbody>\n   </table>\n   <p>几个注脚：样本量只有两年，统计上说明不了什么；集中持仓 3-5 只，波动极大；买入决策是人做的，系统只负责研究；工具是投资过程中逐步搭建的，不构成因果关系。</p>\n   <p>这个帖子不是来说\"用 AI 炒股能赚钱\"的——收益来自集中持有深度研究过的公司，框架的作用是提高研究效率和分析质量。</p>\n   <h3>已知局限</h3>\n   <ul>\n    <li>跑一次完整分析的 token 消耗不小</li>\n    <li>买入决策仍然依赖人的判断力，工具不能替代</li>\n   </ul>\n   <h3>最后</h3>\n   <p>GitHub： <a href=\"https://github.com/xbtlin/ai-berkshire\" rel=\"nofollow\">https://github.com/xbtlin/ai-berkshire</a></p>\n   <p>MIT License ，没有付费版，没有课程，没有星球。有问题直接开 issue ，我都会回。</p>\n   <p>一个我自己还没想清楚的问题：LLM 做投资研究最大的风险是什么？是幻觉？是数据滞后？还是给了你虚假的信心让你加大仓位？欢迎聊聊。</p>\n   <p>如果你想看某只股票跑出来什么样，评论区留名字（美股/港股），我挑几个跑一下贴上来。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "作者分享了一套基于 Claude Code 的多 Agent 对抗投研框架，通过 4 个独立 Agent 并行分析、互相挑战，输出分层投资建议，并附两年实盘收益验证。",
+  "oneSentenceSummary": "作者分享了一套基于 Claude Code 的多 Agent 对抗投研框架，通过 4 个独立 Agent 并行分析、互相挑战，输出分层投资建议，并附两年实盘收益验证。",
+  "summary": "文章系统介绍了作者开发并开源的多 Agent 投研框架（ai-berkshire）。框架通过 4 个独立的 Claude Code agent 从商业模式、财务估值、行业竞争、风险评估四个维度分别搜索、交叉验证并给出结论，再由 Team Lead 综合并经受其他 agent 的挑战，以打破 LLM 自我强化倾向。工程上有多个关键设计：用 decimal.Decimal 确保财务计算精度、内置 Benford 定律检测异常数据、多层纠偏机制（信息丰富度分级、逆向检验、快速否决清单）。作者提供了实盘收益（2024 +69.29%，2025 至今 +66.38%）并强调工具只负责研究，买入决策由人做出。文章同时列出了已知局限：token 消耗较大、决策仍依赖人。最后开源项目在 GitHub，MIT 许可，无任何付费版本或课程。",
+  "mainPoints": [
+    {
+      "point": "多 Agent 对抗设计：4 个独立 agent 分别研究并互相挑战，避免单一 LLM 的自我强化倾向。",
+      "explanation": "每个 Agent 从不同维度独立搜索、验证并给出结论，最后互相质疑，确保最终报告经过多方检验而非单一路径的自我确认。"
+    },
+    {
+      "point": "工程细节保证可靠性：精确计算、跨源验证、Benford 定律检测。",
+      "explanation": "所有财务计算走 Python decimal.Decimal，避免 LLM 心算错误；关键数据至少 2 个独立来源交叉验证；内置 Benford 定律检测财务数据异常。"
+    },
+    {
+      "point": "多层纠偏机制：逆向检验与快速否决清单。",
+      "explanation": "强制思考「这家公司怎么会死」，8 条红线一票否决（如管理层诚信问题），提高分析质量，降低错误决策风险。"
+    },
+    {
+      "point": "实盘收益验证但不构成因果关系。",
+      "explanation": "作者展示两年实盘（2024 +69.29%，2025 至今 +66.38%）大幅跑赢指数，但明确声明收益来自集中持有深度研究过的公司，框架仅提高研究效率。"
+    },
+    {
+      "point": "开源且无商业成分，MIT 许可。",
+      "explanation": "项目完全开源，无付费版、无课程、无星球，作者仅提供技术分享，降低读者对营销的疑虑。"
+    }
+  ],
+  "keyQuotes": [
+    "单个 LLM 容易自我强化——前面说了看好，后面就不自觉找支撑证据。",
+    "AI 最危险的不是给错答案，而是给一个看起来很对但经不起推敲的答案。",
+    "5 句话说不清为什么买，就是不该买。",
+    "这个帖子不是来说'用 AI 炒股能赚钱'的——收益来自集中持有深度研究过的公司，框架的作用是提高研究效率和分析质量。"
+  ],
+  "tags": [
+    "AI Agent",
+    "多 Agent 系统",
+    "投资研究",
+    "开源项目",
+    "LLM 应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 88,
+  "wordCount": 1305,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Finance_Economy",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1782183146000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-23 10:52:26"
+}

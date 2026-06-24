@@ -1,0 +1,61 @@
+{
+  "id": "RAW_5a200f87",
+  "title": "神经粒子自动机：学习自组织粒子动力学",
+  "url": "https://selforg-npa.github.io/",
+  "date": "2026-06-23 16:31:48",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <svg style=\"display: none;\" xmlns=\"http://www.w3.org/2000/svg\">\n   <symbol id=\"playIcon\" viewBox=\"0 0 24 24\">\n    <path d=\"M8 5v14l11-7z\"></path> <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n   </symbol>\n   <symbol id=\"pauseIcon\" viewBox=\"0 0 24 24\">\n    <path d=\"M6 19h4V5H6v14zm8-14v14h4V5h-4z\"></path> <path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n   </symbol>\n   <symbol id=\"resetIcon\" viewBox=\"0 0 24 24\">\n    <path d=\"M0 0h24v24H0z\" fill=\"none\"></path> <path d=\"M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z\"> </path>\n   </symbol>\n   <symbol id=\"zoomInIcon\" viewBox=\"0 0 24 24\">\n    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"></path> <path d=\"M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z\"></path> <path d=\"M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z\"></path>\n   </symbol>\n   <symbol id=\"zoomOutIcon\" viewBox=\"0 0 24 24\">\n    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"></path> <path d=\"M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z\"></path>\n   </symbol>\n   <symbol id=\"mouseIcon\" viewBox=\"0 0 100 100\">\n    <path d=\"M32,41v18c0,9.9,8.1,18,18,18c9.9,0,18-8.1,18-18V41c0-9.9-8.1-18-18-18C40.1,23,32,31.1,32,41z M50,27c7.7,0,14,6.3,14,14  v18c0,7.7-6.3,14-14,14s-14-6.3-14-14V41C36,33.3,42.3,27,50,27z\"> </path> <path d=\"M50,44c1.1,0,2-0.9,2-2v-6c0-1.1-0.9-2-2-2s-2,0.9-2,2v6C48,43.1,48.9,44,50,44z\"></path> <path d=\"M48.6,92.4C49,92.8,49.5,93,50,93s1-0.2,1.4-0.6l5-5c0.8-0.8,0.8-2,0-2.8s-2-0.8-2.8,0L50,88.2l-3.6-3.6  c-0.8-0.8-2-0.8-2.8,0c-0.8,0.8-0.8,2,0,2.8L48.6,92.4z\"> </path> <path d=\"M48.6,7.6l-5,5c-0.8,0.8-0.8,2,0,2.8C44,15.8,44.5,16,45,16s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6C54,15.8,54.5,16,55,16  s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8l-5-5C50.6,6.8,49.4,6.8,48.6,7.6z\"> </path>\n   </symbol>\n  </svg>\n  <section class=\"hero\">\n   <div class=\"hero-body\">\n    <div class=\"container is-max-desktop\">\n     <div class=\"columns is-centered\">\n      <div class=\"column has-text-centered\">\n       <div class=\"is-size-5 publication-authors\">\n        <span style=\"font-family: Georgia, &quot;Noto Serif SC&quot;, &quot;Songti SC&quot;, SimSun, serif; font-size: 1.5em; font-weight: 600; letter-spacing: -0.025em;\">Abstract</span>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </section>\n  <section class=\"section hero is-light\">\n   <div class=\"container is-max-desktop\">\n    <div class=\"columns is-centered has-text-centered\">\n     <div class=\"column is-four-fifths\">\n      <div class=\"content has-text-justified\">\n       <p>We introduce Neural Particle Automata (NPA), a Lagrangian generalization of Neural Cellular Automata (NCA) from static lattices to dynamic particle systems. Unlike classical Eulerian NCA where cells are fixed to pixels or voxels, NPA represent each cell as a particle with a continuous position and an internal state, both updated by a shared learnable neural rule. This particle-based formulation yields clear individuation of cells, allows heterogeneous dynamics, and focuses computation on regions where activity is present. However, particle systems introduce two challenges: neighborhoods are dynamic, and a naive implementation of local interactions scales quadratically with the number of particles. We address these issues by replacing grid-based perception with differentiable Smoothed Particle Hydrodynamics (SPH) operators, backed by memory-efficient CUDA kernels for scalable end-to-end training. Across tasks including morphogenesis, point-cloud classification, and particle-based texture synthesis, we show that NPA retain key NCA behaviors such as robustness and regeneration, while enabling new behaviors specific to particle systems. These results position NPA as a compact neural model for learning self-organizing particle systems.</p>\n      </div>\n     </div>\n    </div>\n   </div>\n  </section>\n  <section class=\"section\">\n   <div class=\"container is-max-desktop\">\n    <div class=\"columns is-centered has-text-centered\">\n     <div class=\"column is-four-fifths\">\n      <h2 class=\"title is-3\">How Do Particles Perceive Their Neighbors?</h2>\n     </div>\n    </div>\n    <div class=\"content has-text-justified sph-demo-explainer\">\n     <p>SPH perception is the particle-based counterpart of convolutional perception in grid-based Neural Cellular Automata. Each particle \\(i\\) has a continuous position \\(\\mathbf{x}_i\\) and an internal state \\(\\mathbf{S}_i\\); instead of reading from fixed lattice neighbors, it aggregates nearby particles \\(j\\) inside a support radius \\(\\epsilon\\) using smooth kernels. These local sums estimate quantities such as density \\(\\rho_i\\), smoothed state \\(\\tilde{\\mathbf{S}}_i\\), density gradient \\(\\nabla\\rho_i\\), the moment matrix \\(\\mathbf{M}_i\\), and 0th- or 1st-order state gradients. In Neural Particle Automata, these measurements form a compact local perception vector for a shared update rule, preserving the locality of NCA while allowing particles to live on irregular and dynamic configurations.</p>\n     <p>This demo visualizes those operators around the selected center particle. For clarity, particles live in 2D, all particle masses are set to \\(m_i=1.0\\), and each state has only three channels, shown as RGB color; the center particle's state is fixed to \\((0,0,0)\\). The dashed circle marks the \\(\\epsilon\\)-neighborhood, and the bottom plots show the smoothing kernel \\(W_\\epsilon(r)\\) and spiky gradient kernel's magnitude \\(\\|W_\\epsilon^{\\nabla}(r)\\|\\) as functions of distance \\(|r|\\), with dots indicating where particles fall along those kernels. Density and count display scalar neighborhood summaries; smoothing shows the kernel-averaged RGB state; and \\(\\nabla\\rho\\) points toward the direction where particle density increases, indicating which side of the center particle is more crowded.</p>\n     <p>The state-gradient modes estimate how the RGB state changes around the center particle. The 0th-order estimator uses differences \\(\\mathbf{S}_j-\\mathbf{S}_i\\), so a constant state field gives exactly zero gradient even if the particles are irregularly placed. Under uneven sampling, however, this difference formula can be biased for fields that change linearly. The 1st-order correction uses the moment matrix \\(\\mathbf{M}_i\\), which summarizes the local geometry of the neighbors around particle \\(i\\): roughly, it describes how the neighbor offsets and kernel-gradient directions cover space. Multiplying by \\(\\mathbf{M}_i^{-1}\\) normalizes out this local geometric distortion, making the gradient estimate exact for locally linear fields when the neighborhood is well-conditioned. In the demo, the RGB arrows visualize per-channel state gradients, while the moment-matrix view shows the local geometric directions used by this correction.</p>\n    </div>\n   </div>\n  </section>\n  <section class=\"section is-light\">\n   <div class=\"columns is-centered has-text-centered\">\n    <div class=\"column\">\n     <h2 class=\"title is-3\">Multi Species Simulation</h2>\n     <video controls=\"\" autoplay=\"\" loop=\"\" muted width=\"720\">\n      <source src=\"https://selforg-npa.github.io/data/multi species.webm\" type=\"video/webm\"> Your browser does not support the video tag.\n     </video>\n    </div>\n   </div>\n   <div class=\"is-centered has-text-centered\">\n    <a href=\"https://selforg-npa.github.io/texture_demo/multiagent.html\" style=\"color: rgb(170, 0, 0) !important;\">Try the multi-species Demo (Click)!</a>\n   </div>\n  </section>\n  <section class=\"section\" id=\"BibTeX\">\n   <div class=\"container is-max-desktop content\">\n    <h2 class=\"title\">BibTeX</h2>\n    <pre><code>{ }</code></pre>\n   </div>\n  </section>\n </body>\n</html>",
+  "aiSummary": "本文引入神经粒子自动机（NPA），这是神经细胞自动机（NCA）在动态粒子系统中的拉格朗日泛化，利用可微的 SPH 算子和高效的 CUDA 内核实现可扩展的自组织动力学。",
+  "oneSentenceSummary": "本文引入神经粒子自动机（NPA），这是神经细胞自动机（NCA）在动态粒子系统中的拉格朗日泛化，利用可微的 SPH 算子和高效的 CUDA 内核实现可扩展的自组织动力学。",
+  "summary": "本文提出神经粒子自动机（NPA），这是一种可学习的神经模型，将神经细胞自动机（NCA）从静态网格扩展到连续的动态粒子系统。每个粒子具有连续的位置和内部状态，由共享的神经规则更新。为了处理动态邻域和二次缩放问题，NPA 用可微的平滑粒子流体动力学（SPH）算子替代基于网格的感知，并辅以内存高效的 CUDA 内核进行端到端训练。该方法在形态发生、点云分类和基于粒子的纹理合成等任务中展示了效果，表明 NPA 既保留了 NCA 的关键特性（如鲁棒性和再生能力），又能实现新的粒子特有行为。该工作将 NPA 定位为用于学习自组织粒子系统的紧凑神经模型。",
+  "mainPoints": [
+    {
+      "point": "NPA 将 NCA 从静态网格泛化到动态粒子系统。",
+      "explanation": "每个粒子具有连续的位置和内部状态，由共享的可学习规则更新，从而实现异质动力学，并将计算集中在活跃区域。"
+    },
+    {
+      "point": "可微的 SPH 算子替代基于网格的卷积，用于局部感知。",
+      "explanation": "粒子在支持半径内使用平滑核感知邻域，计算密度、平滑状态、密度梯度和状态梯度，保持了不规则配置下的局部性。"
+    },
+    {
+      "point": "高效的 CUDA 内核克服了朴素粒子相互作用的二次缩放问题。",
+      "explanation": "内存高效的 CUDA 实现使得在大型粒子系统上进行可扩展的端到端训练成为可能，使该方法具有实用性。"
+    },
+    {
+      "point": "NPA 保留了 NCA 的鲁棒性和再生等行为。",
+      "explanation": "在形态发生、点云分类和纹理合成上的实验表明，NPA 展现出类似于 NCA 的自组织、容错和再生能力。"
+    },
+    {
+      "point": "该方法为基于神经的自组织粒子系统开辟了新的应用。",
+      "explanation": "NPA 在形态发生、点云分析和纹理合成中展示了多功能能力，将其定位为学习粒子动力学的紧凑模型。"
+    }
+  ],
+  "keyQuotes": [
+    "我们引入神经粒子自动机（NPA），这是神经细胞自动机（NCA）从静态网格到动态粒子系统的拉格朗日泛化。",
+    "这种基于粒子的表述实现了细胞的明确个体化，允许异质动力学，并将计算集中在存在活动的区域。",
+    "在包括形态发生、点云分类和基于粒子的纹理合成在内的任务中，我们表明 NPA 在保留 NCA 的鲁棒性和再生等关键行为的同时，还实现了粒子系统特有的新行为。",
+    "这些结果将 NPA 定位为学习自组织粒子系统的紧凑神经模型。"
+  ],
+  "tags": [
+    "神经粒子自动机",
+    "SPH",
+    "自组织",
+    "神经细胞自动机",
+    "粒子系统"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 535,
+  "domain": "selforg-npa.github.io",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782203508000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-23 16:31:48"
+}

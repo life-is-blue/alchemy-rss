@@ -1,0 +1,51 @@
+{
+  "id": "RAW_dba7e57b",
+  "title": "当 Agent 替你值班：基于 Devix 构建 7x24 自动化运维 Harness Engineering",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561199&idx=1&sn=c62b6db6dcc2bd3e63bc8bc4aa7498bf",
+  "date": "2026-06-23 09:47:00",
+  "author": "阿里云开发者",
+  "siteName": "阿里云开发者",
+  "content": null,
+  "aiSummary": "本文详细介绍了基于 Devix 构建的 7x24 自动化运维系统，通过 Agent + 脚本协作、分级决策引擎和规则自进化机制，实现故障诊断、分级处置与持续学习的工程化闭环。",
+  "oneSentenceSummary": "本文详细介绍了基于 Devix 构建的 7x24 自动化运维系统，通过 Agent + 脚本协作、分级决策引擎和规则自进化机制，实现故障诊断、分级处置与持续学习的工程化闭环。",
+  "summary": "文章来自阿里云开发者团队，记录了内部如何利用 Devix 平台构建一套完整的自动化运维系统（Harness Engineering）。作者从凌晨告警看板的痛点出发，指出传统人工运维“慢、重复、断层”三大问题，并论证了纯 AI 方案的不稳定性与无记忆性。核心设计哲学是“Agent 负责语义理解与推理，脚本负责数据召回与动作执行”，以此构建三层流水线：语义诊断层（Agent）、决策规则层（脚本召回+Agent 综合决策）、动作执行层（脚本）。系统通过 Devix 云端常驻 Sandbox 实现 7×24 公网服务，集成了监控告警、日志解析、关联分析、分级决策（自动重跑/按钮确认/代码修复/排查建议/升级人工）、钉钉交互及案例沉淀。文章重点描述了决策引擎的置信度调整机制与规则自进化路径（新规则发现、效果评估、安全审计），并给出了三道安全防线。最后总结了 Agent+脚本协作范式、用置信度换自动化程度、自进化机制等核心经验。",
+  "mainPoints": [
+    {
+      "point": "Agent + 脚本协作范式：让 Agent 做语义推理，让脚本做确定性操作。",
+      "explanation": "Agent 负责日志解析、根因诊断和规则匹配，所有数据召回与动作执行（如 API 调用、重跑、GitLab 归档）由确定性脚本完成，确保可审计与可控性。"
+    },
+    {
+      "point": "用置信度换自动化程度：低经验保守处理，高经验逐步放开。",
+      "explanation": "系统通过历史案例库统计重跑成功率，动态调整诊断置信度后输入决策树；新故障默认人工确认，同类故障处理多次后自动升级为全自动，实现渐进式信任。"
+    },
+    {
+      "point": "规则自进化机制：系统从 own 经验中持续学习。",
+      "explanation": "未匹配的 unknown 案例按错误码聚类后由 Agent 自动分析、生成新规则草案；已有规则通过重跑成功率监控进行效果评估与修订，防止规则僵化。"
+    }
+  ],
+  "keyQuotes": [
+    "Harness Engineering 的本质，不是让 Agent 更聪明，而是让 Agent 更可控。",
+    "用置信度换自动化程度"
+  ],
+  "tags": [
+    "AI Agent",
+    "自动化运维",
+    "DevOps",
+    "故障诊断",
+    "决策引擎"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 28,
+  "score": 90,
+  "wordCount": 6818,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_26c5f1",
+  "sourceName": "阿里云开发者",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1782179220000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-23 09:47:00"
+}

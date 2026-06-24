@@ -1,0 +1,59 @@
+{
+  "id": "RAW_5369a1f0",
+  "title": "AWS 发布 Blocks：面向 AI 智能体的开源 TypeScript 框架，用于构建后端",
+  "url": "https://www.infoq.com/news/2026/06/aws-blocks-framework-preview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-23 17:15:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS recently released <a href=\"https://docs.aws.amazon.com/blocks/latest/devguide/what-is-blocks.html\">AWS Blocks</a> in public preview, an open-source TypeScript framework in which each \"Block\" bundles application code, a local development implementation, and the AWS infrastructure required to run it in production.</p>\n   <p>Developers can use npm run dev and get a working application with Postgres, authentication, real-time messaging, and file storage on their machine. Moreover, they do not need an AWS account. When they deploy, the same code runs on Lambda, DynamoDB, Aurora, API Gateway, and Bedrock with zero changes. The <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/aws-blocks-preview/\">announcement</a> describes it as removing \"t<em>he need to learn infrastructure tools</em>.\"</p>\n   <p>What sets Blocks apart from the crowded backend-framework landscape is a design premise firmly rooted in 2026: AI agents write code, and the framework provides the correct way to write it from the start. Blocks ships with built-in steering files that guide coding agents toward correct architecture without custom configuration. A developer can prompt an agent to \"add authentication and a database,\" and the agent produces code that works locally and deploys to production-grade AWS services because the framework constrains the agent to follow correct patterns.</p>\n   <p>The composability model is straightforward. Each Block is an npm package covering one backend capability: database tables, user authentication, AI agents, file uploads, background jobs, scheduled tasks, real-time notifications, and email. Developers import the Blocks they need, compose them, and the framework generates AWS infrastructure following best practices. Furthermore, type safety flows from the data schema to the frontend without a code-generation step, covering web frameworks (Next.js, Nuxt, Astro, React, Vue, Svelte, Angular) and native clients (Swift, Kotlin, Dart/Flutter) from a single backend definition.</p>\n   <p>The local-first development model is the most developer-friendly aspect. Blocks uses Node.js conditional exports to load different implementations per context. The same new KVStore(scope, 'todos') line becomes an in-memory store during local development, a DynamoDB table at deployment time, and an SDK call in the Lambda runtime. Hot reload restarts the backend on every save with sub-second feedback. <a href=\"https://dev.classmethod.jp/en/articles/20260620-aws-blocks-preview/\">DevelopersIO tested</a> the full end-to-end flow from local startup through deployment to AWS sandbox and confirmed that writes to real Aurora and DynamoDB resources worked without code changes.</p>\n   <p>The CDK escape hatch prevents this from becoming another opinionated walled garden. Blocks applications are CDK applications, and any CDK construct works alongside Blocks, and teams can embed Blocks into existing CDK stacks. When the built-in Blocks don't cover a use case, developers can drop into CDK for direct resource configuration. Custom Blocks can package infrastructure, runtime logic, and local mocks into reusable modules shared across projects.</p>\n   <p>The Amplify question is the elephant in the room. A <a href=\"https://dev.to/aws-builders/what-is-aws-blocks-how-it-differs-from-amplify-and-app-studio-and-what-each-one-is-aiming-for-2kn0\">detailed DEV Community analysis</a> laid out the overlap directly:</p>\n   <blockquote>\n    <p>Amplify Gen 2 also defines backends code-first in TypeScript, on top of CDK. Blocks' infrastructure-from-code layer and Amplify Gen2's backend definition are both a 'write your backend in TypeScript' experience standing on CDK, so they sit close in philosophy.</p>\n   </blockquote>\n   <p>&nbsp;AWS positions them as complementary: Amplify provides hosting, CI/CD, and a managed backend experience, while Blocks focuses on type-safe infrastructure-from-code with local-first development. The same analysis noted the distinctive 2026 premise:</p>\n   <blockquote>\n    <p>It takes for granted that AI agents write code, and the framework itself carries the correct way to write from the start. This is a design that lowers not only the cost of humans learning but the cost of agents making mistakes.</p>\n   </blockquote>\n   <p>At preview, approximately <a href=\"https://docs.aws.amazon.com/blocks/latest/devguide/building-blocks-reference.html\">20 Blocks are available</a> covering databases (Postgres via Aurora, DynamoDB), authentication (Cognito), AI agents and knowledge bases (Bedrock), file storage (S3), real-time messaging, background jobs, scheduled tasks, and email (SES). There is no additional charge for Blocks itself. Teams pay only for the underlying AWS services their application consumes.</p>\n   <p>Early preview caveats from <a href=\"https://dev.classmethod.jp/en/articles/20260620-aws-blocks-preview/\">DevelopersIO's testing</a>: Block constructor signatures may change between preview releases (pin your versions), local data persistence depends on mock implementations (verify against real AWS resources for production accuracy), and the framework currently requires Node.js 22 or later.</p>\n   <p>AWS Blocks is available now in <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/aws-blocks-preview/\">public preview</a> across all commercial AWS regions. The <a href=\"https://github.com/aws-devtools-labs/aws-blocks\">source code</a> is on GitHub under the Apache 2.0 license.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Launches Blocks, an Open-Source TypeScript Framework Designed for AI Agents to Build Backends\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/aws-blocks-framework-preview/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782206100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 发布了 Blocks，这是一个开源 TypeScript 框架，使得 AI 智能体能够进行本地优先开发，并实现零基础设施学习部署来构建后端。",
+  "oneSentenceSummary": "AWS 发布了 Blocks，这是一个开源 TypeScript 框架，使得 AI 智能体能够进行本地优先开发，并实现零基础设施学习部署来构建后端。",
+  "summary": "AWS 以公开预览形式发布了 Blocks，这是一个开源 TypeScript 框架，将应用程序代码、本地开发实现和生产级 AWS 基础设施打包成可组合的 npm 包（即 Blocks）。它专为 AI 智能体设计，使其开箱即用地编写正确的后端代码，内置引导文件（steering files）可指导智能体，无需自定义配置。开发者无需 AWS 账户即可在本地运行完整的全栈应用，包括 Postgres、身份验证、实时消息和文件存储，之后无需任何改动即可部署到 Lambda、DynamoDB、Aurora、API Gateway 和 Bedrock。该框架通过条件导出支持本地优先开发，从前端 schema 到多框架前端提供类型安全，并通过逃生口集成 CDK。AWS 将 Blocks 定位为 Amplify 的补充，专注于基础设施即代码和本地开发。目前已提供约 20 个 Blocks，涵盖数据库、身份验证、AI 智能体、文件存储、实时消息、后台任务、定时任务和电子邮件。源代码基于 Apache 2.0 许可证托管在 GitHub 上，Blocks 本身不额外收费，只需承担底层 AWS 服务费用。",
+  "mainPoints": [
+    {
+      "point": "Blocks 是一个 TypeScript 框架，将代码、本地模拟和生产基础设施合并为可复用的 npm 包。",
+      "explanation": "每个 Block 涵盖一项后端能力（数据库、身份验证、AI 等），无需 AWS 即可在本地运行，随后零代码改动部署到生产级服务。"
+    },
+    {
+      "point": "该框架专为 AI 智能体生成正确的后端代码而构建。",
+      "explanation": "它包含引导文件，可约束智能体输出遵循最佳实践，减少 AI 生成代码的错误。"
+    },
+    {
+      "point": "本地优先开发是其关键差异化优势。",
+      "explanation": "通过条件导出，同一代码在本地使用内存存储，在生产环境使用 AWS 服务（DynamoDB、Aurora），并支持热重载以实现快速迭代。"
+    },
+    {
+      "point": "Blocks 补充了 Amplify，并与 CDK 集成。",
+      "explanation": "与托管后端服务不同，Blocks 提供基础设施即代码和 CDK 逃生口，允许自定义构造并嵌入现有堆栈。"
+    },
+    {
+      "point": "预览版包括约 20 个 Block，无额外费用。",
+      "explanation": "可用的 Block 覆盖数据库、Cognito 身份验证、Bedrock AI 智能体、S3 存储、实时消息等。团队仅需支付所使用的 AWS 资源。"
+    }
+  ],
+  "keyQuotes": [
+    "开发者可以在本机上使用 npm run dev，获得一个包含 Postgres、身份验证、实时消息和文件存储的可用应用程序，而且无需 AWS 账户。",
+    "它默认 AI 智能体会编写代码，而框架从一开始就承载了正确的编写方式。这种设计不仅降低了人类的学习成本，也降低了智能体犯错造成的代价。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "TypeScript",
+    "AWS",
+    "开发者工具",
+    "AI 编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 664,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782206100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-23 17:15:00"
+}
