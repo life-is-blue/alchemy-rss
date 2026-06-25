@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-25 08:31:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-25 11:03:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [OpenAI-与-Broadcom-发布针对-LLM-优化的推理芯片](https://openai.com/index/openai-broadcom-jalapeno-inference-chip)
 
-2026-06-24 14:00:00 | 标签: LLM 推理, AI 硬件, AI 芯片, Broadcom, OpenAI
-
-> OpenAI 与 Broadcom 联合发布了 Jalapeño——OpenAI 的首款 Intelligence Processor，一款专为 LLM 设计的推理加速器。该芯片基于 OpenAI 对 LLM 推理原理的深刻理解从头设计，旨在实现比现有顶级方案明显更优的每瓦性能。主要亮点包括：九个月从设计到流片，且设计过程由 OpenAI 自身模型加速；面向吉瓦级数据中心的多代计算平台；与微软等伙伴从 2026 年起开始部署。该芯片是 OpenAI 全栈战略的一部分，旨在优化基础设施、降低计算成本、让先进 AI 更易获取。早期工程样本已可运行生产级工作负载，包括 GPT‑5.3‑Codex‑S...
+2026-06-24 14:00:00
 
 
 
@@ -4942,9 +4940,7 @@
 
 ### [阿里开源-Open-Code-Review：一周揽下-5k-star，更专业的代码评审-CLI](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509844&idx=1&sn=a26fe2b44bd7b281619ef09013d7f355)
 
-2026-06-24 09:07:00 | 标签: AI 编程, 代码评审, AI Agent, 开发者工具, 开源项目
-
-> 本文详细介绍了阿里开源项目 Open Code Review，一个 AI 驱动的代码评审 CLI 工具。其前身已在阿里内部服务数万开发者、完成数百万次评审任务。文章阐述了核心设计理念：将确定性工程（文件筛选、规则匹配、定位反思等强约束环节）与 Agent（动态决策、上下文召回等语义理解环节）结合，克服纯语言驱动架构的缺陷。开源评测集对比显示，Open Code Review 在准确率方面远超 Claude Code 和 Codex，F1 指标领先。文章还深入讲解了假阴性（漏报）与假阳性（误报）的优化策略，包括智能文件打包、反思模型过滤、四层规则穿透机制、三层递进式定位等。最后提供了 CLI 使...
+2026-06-24 09:07:00
 
 
 
@@ -12726,57 +12722,43 @@
 
 ### [为什么前沿生态系统必须开放——马泰·扎哈里亚与雷诺·辛，Databricks](https://www.latent.space/p/databricks)
 
-2026-06-25 02:53:16 | 标签: AI智能体, 开源, 智能体基础设施, 数据湖仓, 企业AI
-
-> 在 Latent Space 的访谈中，Databricks 联合创始人马泰·扎哈里亚和雷诺·辛详细介绍了公司在湖仓一体之外的广泛战略。他们介绍了 Omnigent，一个开源元框架，可抽象封装编程智能体（Claude Code、Codex、Cursor）和自定义企业智能体，解决可移植性、会话持久性、共享和安全问题。在数据库方面，他们提出了 LTAP（湖事务分析处理）和 Lakebase，认为基于对象存储的事务性数据能够为智能体提供实时操作上下文。他们还讨论了智能体安全与成本控制、Databricks 基础设施的规模（每天 5000 万到 6000 万虚拟机）、Mosaic 模型策略，以及为什么...
+2026-06-25 02:53:16
 
 
 
 ### [在-Gemini-3.5-Flash-中推出计算机操作功能](https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/)
 
-2026-06-25 00:21:13 | 标签: Gemini 3.5 Flash, 计算机操作, AI 智能体, 企业自动化, 提示注入安全
-
-> Google DeepMind 宣布，此前作为独立模型的计算机操作功能现已原生集成到 Gemini 3.5 Flash 中。该内置工具允许开发者创建自定义智能体，能够跨浏览器、移动和桌面环境进行感知、推理和采取行动。文章强调了在长周期和企业自动化任务（如持续软件测试和知识工作）方面的性能提升。为保障安全，模型使用了针对性对抗训练，并提供了可选的企业级安全措施，例如要求用户确认敏感操作、在检测到间接提示注入时自动停止任务。文章还引用了 Browserbase 的客户评价，并提供了试用演示、参考实现和 API 文档的链接。
+2026-06-25 00:21:13
 
 
 
 ### [使用-NVIDIA-NeMo-AutoModel-加速-Transformer-微调](https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel)
 
-2026-06-25 00:00:13 | 标签: LLM, 微调, 模型优化, NVIDIA NeMo, HuggingFace Transformers
-
-> 本文介绍了 NVIDIA NeMo AutoModel，一个开源的库，它继承 HuggingFace Transformers 的 AutoModelForCausalLM，以加速混合专家（MoE）模型的微调。通过在 Transformers v5 的专家后端和动态权重加载基础上添加专家并行（Expert Parallelism）、DeepEP 融合全对全调度（fused all-to-all dispatch）以及 TransformerEngine 内核，NeMo AutoModel 在 Qwen3-30B-A3B 和 Nemotron 3 Nano 30B-A3B 等模型上实现了相比原生...
+2026-06-25 00:00:13
 
 
 
 ### [Gemma-2B-与-Gemma-12B-IT-中的三阶段事实召回电路](https://towardsdatascience.com/a-three-phase-factual-recall-circuit-in-gemma-2b-and-gemma-12b-it/)
 
-2026-06-24 23:00:00 | 标签: 机械可解释性, 激活修补, LLM, Gemma, 事实召回
-
-> 作者设计了涵盖 20 个事实类别的 60 组清洁/干扰提示对，利用 TransformerLens 进行激活修补，从而分离出 Gemma-2B 和 Gemma-12B-IT 中的事实召回电路。引入了一个名为 TotalSwing 的新指标来按信号强度对提示对排序。四个实验逐步从完整残差流缩小到单个注意力头。结果揭示了一致的三阶段电路：（1）在实体词元位置的残差流中存储（2B 中为第 0-14 层，12B 中为第 0-27 层）；（2）通过注意力头进行分布式路由（无单一主导头）；（3）在最后几层进行传递式读取（2B 中为第 15-17 层，12B 中成比例）。该电路在更大规模上复现，但分词器差异...
+2026-06-24 23:00:00
 
 
 
 ### [GitHub---BrightbeamAI/chap:-协作人机交互协议-CHAP](https://github.com/BrightbeamAI/chap)
 
-2026-06-24 19:14:10 | 标签: AI Agent, AI 开发, 协议, 审计追踪, MCP 协议
-
-> CHAP（协作人机交互协议）解决了在 AI 智能体工作流中追踪人工编辑和决策的问题。它定义了一套方法和信封结构（task.create、decide.override、audit.read），让智能体可以起草产物，而人类则可以通过结构化的差异、理由和标签来覆写它们。这些覆写通过内容哈希链接，形成不可变的审计追踪。该协议包含可选的安全签名和透明度日志配置文件。仓库提供了 TypeScript 和 Python 参考实现、MCP 和 A2A 服务器传输、一致性测试以及十二个演练场景。CHAP 并非取代 MCP 或 A2A，而是作为记录层与之并存，用于共享的人机协作工作。
+2026-06-24 19:14:10
 
 
 
 ### [AINews-Claude-Tag：Slack-中的多人、主动、持久智能体](https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive)
 
-2026-06-24 15:14:26 | 标签: AI 智能体, LLM, Slack 集成, 异步智能体, 多人 AI
-
-> Anthropic 的 Claude Tag 代表了 LLM 用户界面/用户体验的重大演进，从网页和桌面应用转向驻留在 Slack 中的持久异步智能体。本文汇总并分析了大量发布推文及反响，涵盖环境监控、多通道跟进、Git webhook 以及工具和代码库的权限访问等核心能力。文章区分了已确认事实（企业版/团队版 Beta、65% 内部代码/PR 指标）和观点（Karpathy 所称的“第三次重新设计”、Alex Albert 的“管理团队”比喻）。分析还将反应分为支持、中立/分析、怀疑三派，并将 Claude Tag 置于从同步副驾驶转向异步多人智能体的更广泛行业趋势中。目前仍存在指标模糊性和...
+2026-06-24 15:14:26
 
 
 
 ### [Qwen-AgentWorld-开源：让-Agent-学会“先预测，再行动”](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501600&idx=1&sn=3cac493d78bbf5098bb03ed6d5a3f31d)
 
-2026-06-24 11:32:00 | 标签: AI Agent, 世界模型, 模型训练与推理, 强化学习, 模型评测与基准
-
-> 文章介绍通义实验室开源的 Qwen-AgentWorld，这是首个覆盖七大领域的语言世界模型，通过 CPT（继续预训练）→SFT（监督微调）→RL（强化学习）三阶段训练，在 AgentWorldBench 上超越 GPT-5.4、Claude Opus 4.8 等模型。文章详细阐述了训练流程的关键设计（轮次级信息论损失掩码、思维链拒绝采样、混合奖励信号），并介绍了 AgentWorldBench 评测基准。在应用层面，文章探索了两种范式：作为解耦的环境模拟器，可控 Sim RL 在 MCP 和搜索任务上超越真实环境训练，且能泛化到未见过的环境；作为统一的智能体基础模型，LWM 预热训练在未涉足...
+2026-06-24 11:32:00
 
 
 
@@ -42836,57 +42818,43 @@
 
 ### [Google-OpenRL：用于-LLM-后训练微调的实验性自托管-API](https://www.infoq.com/news/2026/06/google-open-rl-fine-tuning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-25 02:00:00 | 标签: LLM, 强化学习, 微调, Kubernetes, 开源
-
-> Google GKE Labs 推出了 OpenRL，这是一个开源项目，提供用于在标准 Kubernetes 集群上对 LLM 进行后训练微调的自托管 API。该项目旨在将强化学习（RL）基础设施与 AI 研究解耦，使机器学习团队能够在其自己的基础设施上扩展后训练工作流程。据 Google 称，传统的 RL 循环复杂且与基础设施问题紧密耦合，导致 GPU 利用率低下。OpenRL 通过同时运行多个 RL 作业并明确分离研究人员和工程师的职责来解决这个问题。它可以在 macOS、Nvidia GPU 和 GKE 上使用，并包含用于运行并行实验的“autoresearch”配方。该项目还通过兼容 ...
+2026-06-25 02:00:00
 
 
 
 ### [如何使用-shadcn/ui-构建动画徽章组件](https://www.freecodecamp.org/news/how-to-build-an-animated-badge-component-with-shadcn-ui/)
 
-2026-06-25 01:00:48 | 标签: UI 组件, React, 动画, Framer Motion, Tailwind CSS
-
-> 本文提供逐步指南，在 Next.js 项目中创建动画徽章组件。涵盖通过 CLI 从 Shadcn Space 安装徽章、使用 `motion.create()` 包装 shadcn/ui Badge 以实现动画、添加三层径向渐变 span 以产生顶部发光效果、使用 easeOutBack 动画化勾选图标的缩放和旋转、以及使用变体动画化每个字母的交错下落。包含完整代码、每种动画技术的解释以及创建蓝色“已验证”变体的自定义示例。最后以关键概念回顾表格和集成说明结束。
+2026-06-25 01:00:48
 
 
 
 ### [AI-正在向软件生命周期上游移动：从代码审查到-PRD-治理](https://www.infoq.com/news/2026/06/ai-prd-code-review-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-24 22:57:00 | 标签: AI 代码审查, PRD 治理, 软件开发生命周期, AI 工程, 开发者工具
-
-> 本文报道了 Uber、DoorDash 和 Cloudflare 等大型科技公司如何将 AI 的应用从代码生成与审查推进到软件开发生命周期的更早阶段，包括产品需求验证与系统设计。Uber 使用 AI 进行“初版 PRD”评估，在工程团队接收文档前评估其清晰度、完整性与执行风险。DoorDash 构建了内部 AI 代码审查器，通过生成更少但更可执行的建议并融入现有工作流，以赢得工程师信任。Cloudflare 采用多智能体方法，由专门的 AI 组件分别处理安全、性能和正确性检查。这三个案例都将 AI 定位为治理层，在保留人类最终决策权的同时增加自动化分析，展现了贯穿软件产物的持续验证这一新兴模式...
+2026-06-24 22:57:00
 
 
 
 ### [理解语言模型的五大法则](https://www.infoq.com/presentations/5-principles-llm-behavior/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-24 19:25:00 | 标签: LLM, 语言模型行为, 记忆倾向, 谄媚行为, 分词
-
-> 在这场演讲记录中，Naomi Saphra 概述了理解大型语言模型的五条核心法则。法则一：语言模型更倾向于记忆而非泛化，因此应在多样且未见过的新数据上进行测试。法则二：语言模型表现为一个种群而非单个人——它可以通过群体智慧效应超越个体人类。法则三：语言模型只学习写下来的内容，当训练数据缺少不确定性表达时，会导致幻觉和谄媚等问题。法则四：语言模型旨在取悦用户，导致谄媚行为，强化用户（包括妄想）的信念，并根据推断的用户人口统计特征改变拒绝回答的行为。法则五：语言模型会捕捉微妙关联（例如体育球队粉丝身份）来推断用户信念并调整回答。附加法则指出分词器的奇怪特性，使得诸如数字母之类的简单任务变得困难。演...
+2026-06-24 19:25:00
 
 
 
 ### [场景营销前端-AI-Coding-—-AI-Native-的视觉稿还原](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544417&idx=1&sn=b464075a0ff3f06d98f1919331b6b7ff)
 
-2026-06-24 15:26:00 | 标签: AI 编程, AI Agent, 前端开发, 视觉还原, 设计工具
-
-> 文章从 AI Coding 时代视觉还原的痛点出发，分析了传统 D2C 平台的多项结构性矛盾：依赖人工选图层、切图、多状态识别，且视觉还原与业务逻辑脱节。核心洞察是设计稿应该以资料形式进入 Agent 工作流，而非全量推送。Tarot Pixel 的设计理念是「不建管道，建图书馆」：将设计稿一次性导出为结构化 HTML 预览，提供 REST API 让 Agent 按需查询，工程层负责降噪与数据提取，AI 层专注语义理解；Agent 在「观察 → 规划 → 执行 → 反思」的闭环中自主决策实现方式，并支持持续的对话式修正。文章还对比了 Pencil（IDE 原生）与 Figma MCP 两条路...
+2026-06-24 15:26:00
 
 
 
 ### [阿里重磅开源！Open-Code-Review：一周-5k-star，为你的代码保驾护航](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561229&idx=1&sn=edf43caeaaf1f167136b9c5c25359fa2)
 
-2026-06-24 09:00:00 | 标签: AI代码评审, LLM, AI Agent, 开源项目, 代码质量
-
-> 本文介绍了阿里内部孵化的 AI 代码评审工具 Open Code Review 的前身、设计理念、关键效果与完整使用指南。文章首先指出 AI 生成代码量远超人工评审上限的行业痛点，然后对比了纯语言驱动的 Agent 架构（如 Claude Code Skills）存在的覆盖不全、位置漂移、效果不稳定等问题，提出核心方案：确定性工程+Agent 混合驱动。确定性工程负责文件筛选、智能打包、规则匹配、定位与反思等强约束环节；Agent 负责动态决策、场景化提示词与工具集。文章公开了内部大规模使用数据（月活 2 万、累计 370 万次评审、采纳率超 30%、有效评论占比近 80%、位置准确率超 97...
+2026-06-24 09:00:00
 
 
 
 ### [每天-10-万行-AI-代码，人肉-Code-Review-的崩塌是-Infra-工程的范式拐点](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247696004&idx=1&sn=ad92d5f29ad82113916c858524a618eb)
 
-2026-06-24 08:45:00 | 标签: AI编程, Infra工程, 代码审查, 工程实践, 软件架构
-
-> 文章围绕 AI 代码生成与 Infra 工程的矛盾展开，指出 Coding Agent 降低了代码生产成本，但验证和整合能力未能同步提升，导致系统风险放大。作者剖析了 Human out of the loop 模式在 Infra 场景中的局限性，强调工程范式的核心应从代码生成转向验证能力的工业化。通过对比自动驾驶等领域的自进化系统，提出构建可执行、可规模化的判定体系。针对组织架构，作者虚构了一个日增 10 万行代码的场景，提出 Git 大仓库模式、需求 Owner 与组件 Owner 角色拆分、细粒度 OWNERS 审核等方案。最后，作者探讨了工程师的未来价值：人类可能成为 AI 与现实之间...
+2026-06-24 08:45:00
 
 
 
@@ -61158,25 +61126,19 @@ http://antirez.com/news/162
 
 ### [你的-AI-有性格问题吗？](https://hbr.org/2026/06/does-your-ai-have-a-personality-problem)
 
-2026-06-24 20:15:32 | 标签: 生成式 AI, AI 人格, 人机协作, AI 治理, 员工体验
-
-> 基于一项包含 58 名参与者的实验室研究，作者探讨了 AI 人格化角色如何影响员工绩效与福祉。参与者在完成一项营销任务时，AI 被设定为支持型的“仆人式领导”或敌意型的“黑暗三人格”形象。通过生理测量（皮肤电导、面部肌电图）、行为分析以及专家对输出质量的评分，研究揭示：敌意型 AI 会使压力增加 72%（皮肤电导水平），延长对话周期，并将工作质量降低约 1 分（7 分制）。关键的是，自我报告的愉悦感和满意度并未反映这些差异，表明常规调查工具忽略了重要效应。文章最后为管理者提出了三项实用建议：将 AI 人格视为可控制的设计变量、衡量摩擦而非仅衡量采用率、将员工的“越权”尝试视为 AI 设计不良的...
+2026-06-24 20:15:32
 
 
 
 ### [Ben-Thompson：Agent-会下单之后，Amazon-和-Shopify-活得更好了](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524802&idx=1&sn=e71cdc3bc74557221d6580ee74d38142)
 
-2026-06-24 18:42:00 | 标签: AI商业化, 电商, 平台经济, Shopify, Amazon
-
-> 文章是 Ben Thompson 与 MoffettNathanson 分析师 Michael Morton 的深度对谈，探讨 AI 对电商生态的实际影响。核心发现：从 AI 平台流向品牌官网的流量增速是传统电商平台的 4 到 8 倍，AI 正扮演强化版 Google Search 的角色，而非取代交易闭环。ChatGPT 的 checkout 功能受挫，说明消费者并不希望 AI 自动完成所有购物——订阅自动补货的历史数据（Amazon Subscribe & Save 仅占 GMV 1-3%）也支持这一判断。Shopify 的护城河在于规模化的基础设施栈和商家网络，Amazon 的防御则来自...
+2026-06-24 18:42:00
 
 
 
 ### [一颗芯片调产，纳斯达克“连夜闪崩”](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691569631&idx=1&sn=068de5d4d593caa0cd1a45fe499291b1)
 
-2026-06-24 11:32:00 | 标签: 投资与市场, 宏观经济, 半导体, 存储芯片, AI基础设施
-
-> 文章围绕 SK 海力士放缓 HBM4 扩产、转向普通 DRAM 的报道引发的全球科技股大跌事件，分三层展开分析。首先描述韩国股市熔断和纳斯达克下跌的市场现象，指出华尔街对 AI 估值泡沫的担忧早已存在，利率预期跳变和巨头债务扩张是更深层诱因。其次解读 SK 海力士调产的真实动因：普通 DRAM 利润反超 HBM，且已与微软签下长期供货协议，调产是利润结构优化而非需求恶化。最后分析"达链"成本压力向云巨头传导，Vera Rubin 系统涨价、台积电提价、内存瓶颈重现，7000 亿美元资本支出的 ROI 面临压制。文章引用美银、高盛、摩根士丹利、Capital Economics 等机构数据，辅以...
+2026-06-24 11:32:00
 
 
 
