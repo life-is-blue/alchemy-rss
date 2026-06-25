@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-25 06:28:42 | [返回首页](/README.md)
+**更新时间**: 2026-06-25 08:31:01 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13014)
-- [软件架构](#architecture) (21)
+- [AI & 大模型](#ai-llm) (13033)
+- [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (857)
 - [DevOps](#devops) (615)
-- [产品与商业](#product-business) (37)
-- [其他](#other) (6013)
+- [产品与商业](#product-business) (38)
+- [其他](#other) (6015)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [OpenAI-与-Broadcom-发布针对-LLM-优化的推理芯片](https://openai.com/index/openai-broadcom-jalapeno-inference-chip) - AI 精选
 - [智能体身份：适用于自主、团队级-AI-的新型访问模型-|-Claude](https://claude.com/blog/agent-identity-access-model) - AI 精选
 - [Daybreak：保护全球每一家组织的安全工具](https://openai.com/index/daybreak-securing-the-world) - AI 精选
 - [测试神话与寓言，超越-SWE-bench，Nvidia-的开放竞争者](https://www.deeplearning.ai/the-batch/issue-358) - AI 精选
@@ -41,9 +42,8 @@
 - [使用-NVIDIA-Cosmos-3-开发物理-AI-推理、世界与动作模型](https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/) - AI 精选
 - [MiniMax-M3：前沿-Coding-能力、1M-上下文、原生多模态，一个模型全给你](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488528&idx=1&sn=1093c7eca0f891c923fa66d4f00d23db) - AI 精选
 - [浅谈-AI-编程](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492008&idx=1&sn=69ac47da219bed079bc38f80e3d61f7e) - AI 精选
-- [Gemini-Flash-价格上涨，AI-法案延迟，智能体驱动网络流量激增](https://www.deeplearning.ai/the-batch/issue-355) - AI 精选
 
-- [查看全部 13014 篇...](/details/tags/ai-llm.md)
+- [查看全部 13033 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -55,6 +55,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [超越-CLEAN-与-MVP：在-Android-中构建离线优先的响应式数据层](https://www.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [Netflix-构建集中式数据删除平台的架构实践](https://www.infoq.com/presentations/architecting-deletion-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [QCon-London-2026：引入-Tansu.io-—-重新思考-Kafka-的精简运营](https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [LinkedIn-如何为数千个服务构建下一代服务发现系统](https://blog.bytebytego.com/p/how-linkedin-built-a-next-gen-service) - 编程 更多
@@ -70,9 +71,8 @@
 - [APM-最佳实践指南：工程师必知该做与不该做的事项](https://www.elastic.co/blog/apm-best-practices) - 编程 更多
 - [想给面试官吹-DDD-吗？项目像搭积木一样运行：领域驱动设计（DDD）让复杂业务变简单](https://juejin.cn/post/7519812174899478582) - 编程 更多
 - [浅谈团队代码风格/结构一致性](http://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650539951&idx=1&sn=6aac8c34c6d1d680caf981ea285c6d79) - 编程 更多
-- [QCon-London-2025：领域驱动设计的大规模实践](https://www.infoq.com/news/2025/04/ddd-scale-healthcare-qcon/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 
-- [查看全部 21 篇...](/details/tags/architecture.md)
+- [查看全部 22 篇...](/details/tags/architecture.md)
 
 
 ## <a id="frontend-fullstack"></a>前端与全栈
@@ -159,7 +159,7 @@
 - [MockMvcTester：Spring-控制器测试的利器](https://blog.jetbrains.com/idea/2025/04/a-practical-guide-to-testing-spring-controllers-with-mockmvctester/) - 编程 更多
 - [C++-开发环境搭建利器：CMake、vcpkg、Docker-和-GitHub-Copilot-详解](https://www.freecodecamp.org/news/c-setup-and-installation-tools-cmake-vcpkg-docker-and-copilot/) - 编程 更多
 
-- [查看全部 37 篇...](/details/tags/product-business.md)
+- [查看全部 38 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 6013 篇...](/details/tags/other.md)
+- [查看全部 6015 篇...](/details/tags/other.md)
 
 

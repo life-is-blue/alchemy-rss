@@ -1,0 +1,52 @@
+{
+  "id": "RAW_85df00cd",
+  "title": "AI 正在向软件生命周期上游移动：从代码审查到 PRD 治理",
+  "url": "https://www.infoq.com/news/2026/06/ai-prd-code-review-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-24 22:57:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Large technology companies are expanding the use of artificial intelligence beyond code generation and code review into earlier stages of the software development lifecycle, including product requirement validation and system design inputs. Recent initiatives from Uber, DoorDash, and Cloudflare illustrate a shift toward using AI as a governance layer that evaluates and refines engineering artifacts before implementation and during review.</p>\n   <p>Uber has introduced a <a href=\"https://www.uber.com/us/en/blog/first-pass-prd/\">first pass PRD approach</a> in which AI systems review product requirement documents before they reach engineering teams. The system evaluates clarity, completeness, and potential execution risks in early-stage specifications.&nbsp;</p>\n   <p>According to Uber's engineering <a href=\"https://www.linkedin.com/posts/dhruvghulati_such-a-great-use-case-for-ai-pms-most-people-share-7460201740043223040--b8C/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">commentary</a> on the initiative,&nbsp;</p>\n   <blockquote>\n    <p>Such a great use case for AI PMs! Most people assume the value is in co-drafting the PRD with you, but the bigger value is adding the right context to help you think through the problem, bringing in relevant company-wide sources and projects you might not even know about.&nbsp;</p>\n   </blockquote>\n   <p>The approach positions AI as a structured review mechanism for product documentation rather than a coding assistant. In Uber’s workflow, AI is introduced early in the requirements phase to surface missing dependencies, inconsistencies, and unclear assumptions before design and implementation. Engineers retain final validation authority, while the AI system serves as an initial filtering layer for PRDs.</p>\n   <p>DoorDash has taken a similar direction with an <a href=\"https://careersatdoordash.com/blog/doordash-built-an-ai-code-reviewer-engineers-actually-listen-to/\">internal AI-powered code reviewer</a> designed to provide feedback that engineers actively incorporate into their workflow. The system focuses on producing actionable and context-aware suggestions rather than generic automated comments. In commentary on the system,</p>\n   <p>&nbsp;DoorDash engineers <a href=\"https://www.linkedin.com/posts/doordash-built-an-ai-code-reviewer-that-helps-share-7465398671942283264-6vbS/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">noted</a> that</p>\n   <blockquote>\n    <p>The team designed it to earn trust, not create noise: fewer comments, more useful feedback, and real behavior change before code ships.</p>\n   </blockquote>\n   <p>The design integrates AI-generated insights directly into existing development workflows, surfacing feedback within standard review processes rather than as a separate tool. This approach reduces review latency while preserving engineering judgment as the final decision point, aiming to improve throughput without increasing low-signal noise for engineers.</p>\n   <p>Cloudflare has also described a <a href=\"https://blog.cloudflare.com/ai-code-review/\">multi-agent approach to AI-assisted code review</a>, where different AI components are assigned specialized responsibilities such as security analysis, performance evaluation, and correctness checks. This decomposition mirrors distributed systems principles by separating concerns across multiple agents and aggregating outputs through a coordination layer.&nbsp;</p>\n   <p>Cloudflare engineering notes that</p>\n   <blockquote>\n    <p>specialized agents outperform a single general-purpose reviewer when each is tightly scoped in responsibility.</p>\n   </blockquote>\n   <p>Cloudflare also emphasizes precision in what the system flags, noting that defining what not to surface is as important as defining what to detect to maintain high-signal reviews and reduce noise in developer workflows.</p>\n   <p>Across these implementations, AI is applied across the software lifecycle from requirements to implementation as a first-pass evaluation layer that supports human reviewers. It introduces structured checkpoints at PRD, design, and code review stages, adding automated analysis while preserving human oversight. This reflects an emerging model of continuous validation across software artifacts.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AI Is Moving up the Software Lifecycle: From Code Review to PRD Governance\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/ai-prd-code-review-governance/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782313020000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "大型科技公司正将 AI 从代码审查扩展到更早期的生命周期阶段，如 PRD 治理；Uber、DoorDash 和 Cloudflare 已采用 AI 作为结构化的初评与治理层。",
+  "oneSentenceSummary": "大型科技公司正将 AI 从代码审查扩展到更早期的生命周期阶段，如 PRD 治理；Uber、DoorDash 和 Cloudflare 已采用 AI 作为结构化的初评与治理层。",
+  "summary": "本文报道了 Uber、DoorDash 和 Cloudflare 等大型科技公司如何将 AI 的应用从代码生成与审查推进到软件开发生命周期的更早阶段，包括产品需求验证与系统设计。Uber 使用 AI 进行“初版 PRD”评估，在工程团队接收文档前评估其清晰度、完整性与执行风险。DoorDash 构建了内部 AI 代码审查器，通过生成更少但更可执行的建议并融入现有工作流，以赢得工程师信任。Cloudflare 采用多智能体方法，由专门的 AI 组件分别处理安全、性能和正确性检查。这三个案例都将 AI 定位为治理层，在保留人类最终决策权的同时增加自动化分析，展现了贯穿软件产物的持续验证这一新兴模式。",
+  "mainPoints": [
+    {
+      "point": "Uber 在产品需求文档（PRD）到达工程团队之前就使用 AI 进行审查，提前发现缺失的依赖与不一致之处。",
+      "explanation": "这种“初版 PRD”方法充当治理过滤器，从公司级资源中补充上下文，帮助产品经理深入思考问题，而工程师保留最终验证权。"
+    },
+    {
+      "point": "DoorDash 设计了一个工程师真正愿意采纳的 AI 代码审查器，专注于可执行、上下文相关的建议，而非泛泛的评论。",
+      "explanation": "该系统旨在通过生成更少但更有用的评注来赢得信任，降低审查延迟与噪音，同时将工程判断作为最终决策点。"
+    },
+    {
+      "point": "Cloudflare 采用了多智能体 AI 代码审查系统，将安全、性能和正确性等关注点分离给专门的智能体处理。",
+      "explanation": "这种分解反映了分布式系统原则：职责边界明确的专用智能体优于通用审查器，而且“不标记什么”与“标记什么”同样重要。"
+    }
+  ],
+  "keyQuotes": [
+    "这对 AI 产品经理来说真是一个绝佳的用例！多数人认为价值在于帮你共同起草 PRD，但更大的价值在于引入恰当的上下文帮你思考问题，带来你可能根本不知道的、公司内相关的项目和资源。",
+    "团队设计它是为了赢得信任，而不是制造噪音：更少的评论、更有用的反馈，以及在代码上线前促成真实的行为改变。",
+    "当每个智能体的职责范围被严格限定后，专业智能体的表现优于单一通用审查器。"
+  ],
+  "tags": [
+    "AI 代码审查",
+    "PRD 治理",
+    "软件开发生命周期",
+    "AI 工程",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 472,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782313020000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-24 22:57:00"
+}

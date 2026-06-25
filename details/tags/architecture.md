@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-25 06:28:42 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-25 08:31:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -27,6 +27,14 @@
 ### [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-08 00:00:00
+
+
+
+### [超越-CLEAN-与-MVP：在-Android-中构建离线优先的响应式数据层](https://www.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-06-24 17:00:00 | 标签: Android, 架构, Clean Architecture, 离线优先, 响应式数据层
+
+> 响应式数据层架构（RDLA）是一种具体模式，旨在克服传统 MVP 和 Clean Architecture 在移动开发中遇到的样板代码与同步缺陷。RDLA 强制执行三个核心原则：基于 Kotlin Flow 的响应式推送流、本地缓存作为单一数据源、以及在仓库实现中封装缓存和同步逻辑。文章将 RDLA 模块映射到 Clean Architecture 层次，并展示它如何在 MVVM 中驱动单向数据流，将 ViewModel 转变为被动转换器。一个健康指标追踪系统的详细实现展示了 API 模块、包含缓存管理和过期触发后台刷新的实现模块、带有事务组的 Room 本地存储、以及通过 StateFlow...
 
 
 

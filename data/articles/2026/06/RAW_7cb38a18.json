@@ -1,0 +1,51 @@
+{
+  "id": "RAW_7cb38a18",
+  "title": "Google OpenRL：用于 LLM 后训练微调的实验性自托管 API",
+  "url": "https://www.infoq.com/news/2026/06/google-open-rl-fine-tuning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-25 02:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://opensource.googleblog.com/2026/06/introducing-openrl-a-self-hosted-post-training-api-for-fine-tuning-llms.html\">Google's GKE Labs has introduced OpenRL</a>, an <a href=\"https://github.com/gke-labs/open-rl\">open-source</a> project that provides a self-hosted API for post-training and fine-tuning Large Language Models (LLMs) on standard Kubernetes clusters.</p>\n   <p>OpenRL abstracts reinforcement learning (RL) infrastructure from AI research, allowing machine learning teams to scale post-training workflows right on their own cluster, says Google.</p>\n   <p>According to Google engineers, when working with agentic reinforcement learning on LLMs, \"it is incredibly easy to get bogged down in system complexity\". Even a single RL loop requires juggling many moving parts: data preparation and cleaning, environment selection, training loop debugging, reward design, handling inference inconsistencies, provisioning hardware, and managing the underlying infrastructure.</p>\n   <blockquote>\n    <p>Each of these is a hard problem. But what makes it more complex is how tightly AI research and infrastructure concerns are mixed together in today's tooling and frameworks.</p>\n   </blockquote>\n   <p>By decoupling infrastructure from AI research, Google engineers argue that these challenges become more manageable, allowing specialized teams to focus on their domains, similarly to how Kubernetes enables infrastructure abstraction and simplifies workflows for application developers and reliability engineers.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/06/google-open-rl-fine-tuning/news/2026/06/google-open-rl-fine-tuning/en/resources/1img-1782322456149.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/google-open-rl-fine-tuning/en/resources/1img-1782322456149.jpg\" rel=\"share\"></p>\n   <p>One of the ways in which OpenRL makes post-training fine-tuning more efficient is by running multiple RL jobs on your infrastructure so you can increase overall GPU utilization. According to Google researchers, traditional RL loops are strictly sequential, which often leaves GPUs idle while waiting on CPU- or network-bound tasks to finish, especially for reward calculation.</p>\n   <p>Additionally, Google notes that OpenRL improves the user experience by clearly separating responsibilities: researchers can focus on developing the RL loop, while engineers handle executing and scaling the post-training fine-tuning workflows.</p>\n   <blockquote>\n    <p>When you are doing R&amp;D, you do not have to run the RL loop directly on the machines with GPUs, you can simply run your RL loop on your Mac pointing to the training APIs running on a Kubernetes cluster/VMs.</p>\n   </blockquote>\n   <p>The OpenRL repository also includes an <a href=\"https://github.com/gke-labs/open-rl/tree/main/examples/autoresearch\"><code>autoresearch</code></a> recipe demonstrating how to run parallel experiments for parameter sweep and refine the reward signal in a text-to-sql workflow for Gemma models. Beyond its practical use, Google highlights it as an example of how automation can streamline and scale AI research.</p>\n   <p>OpenRL can be used easily on macOS, Nvidia GPUs, and GKE. It also integrates with <a href=\"https://github.com/thinking-machines-lab/tinker-cookbook\">Tinker-Cookbook</a> thanks to its <a href=\"https://thinkingmachines.ai/tinker/\">Tinker</a>-compatible endpoint.</p>\n   <p>OpenRL is not the only effort focused on simplifying post-training fine-tuning through better separation of concerns. For example, <a href=\"https://github.com/FeynRL-project/FeynRL\">FeynRL</a> ensures separation of fine-tuning recipe and system logic, making it easier for researchers to develop and test new methods while still enabling those approaches to scale using tools like DeepSpeed, Ray, and vLLM.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google OpenRL is an Experimental Self-hosted API for LLM Post-Training Fine-tuning\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/google-open-rl-fine-tuning/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782324000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 推出 OpenRL，这是一个开源自托管 API，用于在 Kubernetes 集群上对 LLM 进行后训练微调，将强化学习基础设施与研究分离。",
+  "oneSentenceSummary": "Google 推出 OpenRL，这是一个开源自托管 API，用于在 Kubernetes 集群上对 LLM 进行后训练微调，将强化学习基础设施与研究分离。",
+  "summary": "Google GKE Labs 推出了 OpenRL，这是一个开源项目，提供用于在标准 Kubernetes 集群上对 LLM 进行后训练微调的自托管 API。该项目旨在将强化学习（RL）基础设施与 AI 研究解耦，使机器学习团队能够在其自己的基础设施上扩展后训练工作流程。据 Google 称，传统的 RL 循环复杂且与基础设施问题紧密耦合，导致 GPU 利用率低下。OpenRL 通过同时运行多个 RL 作业并明确分离研究人员和工程师的职责来解决这个问题。它可以在 macOS、Nvidia GPU 和 GKE 上使用，并包含用于运行并行实验的“autoresearch”配方。该项目还通过兼容 Tinker 的端点与 Tinker-Cookbook 集成。Google 将 OpenRL 与其他类似 FeynRL 的尝试进行了比较，后者也分离了微调配方和系统逻辑。",
+  "mainPoints": [
+    {
+      "point": "OpenRL 将 RL 基础设施与 AI 研究解耦，以简化后训练微调。",
+      "explanation": "通过抽象复杂性，它使研究人员能够专注于 RL 循环，而工程师则负责在 Kubernetes 集群上进行扩展。"
+    },
+    {
+      "point": "与传统的顺序循环相比，运行多个 RL 作业可提高 GPU 利用率。",
+      "explanation": "传统循环使 GPU 在等待 CPU/网络任务时处于空闲状态；OpenRL 支持并发作业执行，以最大限度地提高硬件效率。"
+    },
+    {
+      "point": "OpenRL 提供用于微调的自托管 API，可在 macOS、Nvidia GPU 和 GKE 上使用。",
+      "explanation": "它包括用于并行实验的 'autoresearch' 配方，并与 Tinker-Cookbook 生态系统集成。"
+    }
+  ],
+  "keyQuotes": [
+    "在进行研发时，您无需直接在带有 GPU 的机器上运行 RL 循环，只需在 Mac 上运行 RL 循环，指向在 Kubernetes 集群/虚拟机上运行的训练 API 即可。",
+    "很容易陷入系统复杂性的泥沼。"
+  ],
+  "tags": [
+    "LLM",
+    "强化学习",
+    "微调",
+    "Kubernetes",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 420,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782324000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-25 02:00:00"
+}
