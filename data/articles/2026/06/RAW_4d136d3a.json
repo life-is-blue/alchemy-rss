@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4d136d3a",
+  "title": "Grab 构建安全的 Agentic AI 工作负载平台",
+  "url": "https://www.infoq.com/news/2026/06/grab-ai-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-25 10:08:00",
+  "author": "Patrick Farry",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>To safely run autonomous artificial intelligence workloads, the cybersecurity and platform engineering teams at <a href=\"https://engineering.grab.com/palana-part-1-secure-platform-for-ai-agents\">Grab have built Palana</a>, a proprietary, Kubernetes-native secure execution platform. Palana acts as a secure, isolated runtime environment that implements deterministic guardrails around the inherently non-deterministic behaviors of model-driven applications. Grab developed this platform after building prototype environments to test Claw and other agent frameworks, realizing that a systematic, infrastructure-level approach was required to contain the security risks of highly autonomous agents. While traditional applications operate predictably, model-driven agents execute arbitrary tools, call application programming interfaces, and read or write source code to solve problems independently. This operational freedom introduces severe security challenges, making agents highly vulnerable to prompt injection, logic hijacking, dependency compromises, excessive goal seeking, and hallucinations. For examples see <a href=\"https://www.osohq.com/developers/ai-agents-gone-rogue\">AI Agents Gone Rogue</a>.</p>\n   <p>By introducing Palana, Grab addresses critical infrastructure-level questions regarding agent identity, network access, and operational auditability without needing to build bespoke, manual environments for every individual workload. The platform establishes isolation as its primary unit of trust through a zero-trust model, ensuring that a security compromise in one agent framework does not affect adjacent workloads or the underlying compute cluster. Palana achieves this by assigning each agent to its own dedicated Kubernetes namespace configured with restrictive Role-Based Access Control, custom network policies, and isolated service accounts. Additionally, agents receive persistent, localized storage to preserve state and memory across container restarts during long-running asynchronous workflows.</p>\n   <p>Traditional methods of passing credentials through environment variables or mounted files are unacceptably risky for autonomous agents because a compromised runtime could expose high-value API keys to untrusted scripts. To eliminate this vulnerability, Palana decouples secrets management into agent-readable credentials and proxy-only secrets. Highly sensitive credentials, such as version control personal access tokens and model gateway API keys, remain secured within HashiCorp Vault. The agent container is only provisioned with abstract, dummy placeholder tokens. When the agent initiates an outbound API call, a secure, intermediate proxy intercepts the request, validates the destination, and replaces the placeholder with the real secret dynamically. Consequently, the raw secret is never written to the agent container's environment, execution memory, or log files.</p>\n   <p>Because agents must communicate with external tools and model endpoints to be productive, the egress pathway is designed as a centralized security control point. Palana automatically routes all outbound HTTP and HTTPS traffic through an Envoy proxy and an external authorization service running Open Policy Agent rules. Using Man-in-the-Middle certificate authority termination, the proxy decrypts traffic in real-time, allowing header evaluation, endpoint validation, and token substitution while generating detailed, structured audit trails. Furthermore, because a compromised agent cannot be trusted to self-terminate, operational controls exist entirely outside the execution runtime. Network-level kill switches disable network policies directly from the control plane, and an independent external reaper triggers idle shutdowns without modifying the core agent code.</p>\n   <p>Integrating securely into a Kubernetes-native framework allows platform architects to scale and debug agent runtimes using standard infrastructure-as-code practices. Each agent is modeled as a custom resource reconciled by a custom Kubernetes operator that dynamically provisions namespaces, storage, network policies, and ingress paths. This design splits the operational experience into a simplified user interface and command-line tool for developers, and a robust, standard Kubernetes layer for systems engineers. Platform teams utilize these native definitions to programmatically audit, update, and manage the lifecycle of hundreds of concurrent agent workloads across the production cluster.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Grab Builds Secure Agentic AI Workload Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Patrick Farry\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/grab-ai-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782353280000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了 Grab 如何构建 Palana，一个原生 Kubernetes 的自主 AI 智能体安全执行平台，旨在解决提示注入和凭据泄露等安全挑战。",
+  "oneSentenceSummary": "本文详细介绍了 Grab 如何构建 Palana，一个原生 Kubernetes 的自主 AI 智能体安全执行平台，旨在解决提示注入和凭据泄露等安全挑战。",
+  "summary": "Grab 的网络安全与平台工程团队构建了 Palana，一个原生 Kubernetes 的自主 AI 智能体安全执行平台。Palana 通过实施确定性防护措施，解决了模型驱动应用固有的安全风险——如提示注入、逻辑劫持和凭据泄露。每个智能体运行在隔离的 Kubernetes 命名空间中，配备 RBAC、自定义网络策略和独立服务账户。秘密通过代理动态注入，无需将原始凭据暴露给智能体容器。所有出站流量均通过 Envoy 代理，并基于 OPA 进行授权和 MITM 解密以支持审计。外部紧急终止开关和闲置回收机制提供独立的控制平面终止能力。该平台建模为由 Operator 协调的自定义 Kubernetes 资源，支持大规模生命周期管理。",
+  "mainPoints": [
+    {
+      "point": "Palana 将每个智能体隔离在其自己的 Kubernetes 命名空间中，并配备严格的 RBAC 和网络策略。",
+      "explanation": "这可以防止被入侵的智能体影响相邻工作负载或集群本身，遵循零信任模型。"
+    },
+    {
+      "point": "秘密管理采用基于代理的动态注入方式，避免将凭据暴露给智能体容器。",
+      "explanation": "占位符令牌在安全代理内被替换为真实秘密，因此原始 API 密钥永远不会进入智能体的内存或日志。"
+    },
+    {
+      "point": "所有出站流量都通过 Envoy 代理路由，并利用 OPA 策略进行验证和令牌替换。",
+      "explanation": "这集中了安全控制，支持实时头部评估和审计，并防止未经授权的出口流量。"
+    },
+    {
+      "point": "外部紧急终止开关和回收进程允许从控制平面终止被入侵的智能体。",
+      "explanation": "由于被入侵的智能体无法被信任进行自我终止，独立的网络和闲置关闭控制确保了安全性。"
+    }
+  ],
+  "keyQuotes": [
+    "Palana 确保一个智能体框架中的安全漏洞不会影响相邻工作负载或底层计算集群。",
+    "当智能体发起出站 API 调用时，一个安全的中间代理会拦截请求，验证目标地址，并动态地将占位符替换为真实秘密。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "Kubernetes",
+    "安全",
+    "平台工程",
+    "AI 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 559,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782353280000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-25 10:08:00"
+}

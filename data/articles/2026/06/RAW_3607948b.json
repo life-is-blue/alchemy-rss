@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3607948b",
+  "title": "Slack 概述多云端 AI 服务平台的四阶段演进",
+  "url": "https://www.infoq.com/news/2026/06/slack-multicloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-25 15:02:00",
+  "author": "Matt Foster",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Slack has <a href=\"https://slack.engineering/slack-ai-the-path-to-multi-cloud/\">outlined</a> how its AI serving infrastructure evolved through four distinct phases, moving from a self-managed Amazon SageMaker deployment to a multi-cloud architecture spanning AWS Bedrock and Google Cloud Vertex AI. According to the company, the final configuration improved quality on complex reasoning workloads by around 10% while reducing latency for short prompts by approximately 67%.</p>\n   <p>The publication comes as engineering teams increasingly evaluate multi-provider AI strategies to improve resilience, gain access to a broader range of models, and reduce dependence on individual cloud platforms.</p>\n   <p>Slack’s initial AI serving platform ran on Amazon SageMaker inside an escrow VPC using cross-account IAM roles. While the approach provided strong isolation, it also required manual capacity forecasting, scheduled cluster expansion, and advance planning for scarce A100 and H100 GPU resources. With millions of daily users relying on AI-powered features, capacity shortfalls and infrastructure issues could quickly become customer-facing problems.</p>\n   <p>To reduce that operational burden, Slack migrated to Amazon Bedrock. The company said the move eliminated infrastructure management overhead, reduced feature lag, and provided faster access to newer Anthropic models. Engineers no longer needed to manage GPU reservations directly, allowing the team to focus more on model performance and product quality. Slack completed the migration through compliance reviews, load testing, and feature-flag-driven rollouts, reporting no customer-facing incidents during the transition.</p>\n   <p>Traffic variability remained another challenge. Slack reported that AI workloads can fluctuate by as much as 10× between peak and off-peak periods. To accommodate those swings, the team combined Bedrock’s Provisioned Throughput (PT) and On-Demand offerings, routing interactive traffic to lower-latency PT endpoints while allowing bursty background workloads to spill over into On-Demand capacity.</p>\n   <p>The hybrid capacity model addressed many of the scaling challenges associated with serving large AI workloads. However, Slack noted that an important limitation remained: its AI platform was still dependent on a single provider. Slack said that dependence on a single provider continued to create resiliency concerns and limited access to models available through competing ecosystems.\n    <br>\n    Those concerns led Slack to pursue a multi-cloud strategy.</p>\n   <p>Adding Google Cloud Vertex AI required the company to build a provider-agnostic serving layer that could operate consistently across cloud environments. The platform introduced secretless authentication, API normalization, unified observability, and intelligent routing between providers. Endpoints are continuously evaluated using metrics such as time-to-first-token, p90 latency, and 5xx error rates, allowing traffic to be redirected away from degraded services. The same abstraction layer also supports A/B testing and controlled model rollouts.</p>\n   <p>Slack said the resulting architecture improved both performance and flexibility. Beyond the reported gains in quality and latency, the company highlighted access to a broader range of foundation models, improved geographic failover capabilities, and reduced dependence on any single cloud AI platform.</p>\n   <p>Similar approaches are emerging elsewhere in AI infrastructure. Engineers at <a href=\"https://www.padiso.co/blog/multi-cloud-claude-failover-bedrock-vertex-direct-api/\">Padiso</a> have described routing Anthropic Claude traffic across Bedrock, Vertex AI, and Anthropic’s direct API to improve resiliency and control provider dependencies. <a href=\"https://bentoml.com/llm/infrastructure-and-operations/multi-cloud-and-cross-region-inference\">BentoML</a> likewise advocates multi-cloud and cross-region inference strategies that route traffic based on latency and availability. These examples reflect many of the same concerns around portability, failover, and operational flexibility highlighted by Slack.</p>\n   <p>For platform teams building AI-powered applications, Slack’s experience highlights how abstraction layers can help separate application logic from underlying model providers while balancing resilience, performance, and access to rapidly changing model ecosystems.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Slack Outlines Four-Phase Journey to a Multi-Cloud AI Serving Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Foster\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/slack-multicloud/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782370920000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Slack 的 AI 服务基础设施从自管理 SageMaker 演进到使用 AWS Bedrock 和 Google Cloud Vertex AI 的多云端架构，实现了 10% 的质量提升和 67% 的延迟降低。",
+  "oneSentenceSummary": "Slack 的 AI 服务基础设施从自管理 SageMaker 演进到使用 AWS Bedrock 和 Google Cloud Vertex AI 的多云端架构，实现了 10% 的质量提升和 67% 的延迟降低。",
+  "summary": "本文详细介绍了 Slack AI 服务平台的四个阶段演进，由 InfoQ 报道。从在托管 VPC 中自管理 Amazon SageMaker 部署开始，Slack 面临容量预测挑战和运营开销。随后团队迁移到 Amazon Bedrock，消除了 GPU 预留管理并改进了模型访问。为了处理高峰与低谷之间高达 10 倍的流量变化，他们实施了结合预置吞吐量和按需端点的混合容量模型。最后，Slack 增加了 Google Cloud Vertex AI 以减少单一供应商依赖，构建了一个与提供商无关的服务层，具备无密钥认证、API 规范化、统一可观测性和智能路由。最终配置将复杂推理工作负载质量提升了 10%，并将短提示延迟降低了 67%。文章还介绍了 Padiso 和 BentoML 的类似多云端模式，强调抽象层如何实现弹性、性能和生态系统灵活性。",
+  "mainPoints": [
+    {
+      "point": "Slack 的 AI 平台通过四个不同阶段演进，实现了多云端服务。",
+      "explanation": "这一历程始于自管理 SageMaker，迁移到托管 Bedrock，增加混合容量处理，最后集成 Google Cloud Vertex AI 以实现多云端弹性。"
+    },
+    {
+      "point": "高达 10 倍的流量变化需要混合容量模型。",
+      "explanation": "将 Bedrock 的预置吞吐量用于低延迟交互流量，与按需容量用于突发的后台工作负载相结合，使 Slack 能够适应波动需求而不影响客户。"
+    },
+    {
+      "point": "与提供商无关的服务层是多云端灵活性的关键。",
+      "explanation": "Slack 构建了一个抽象层，具备无密钥认证、API 规范化、统一可观测性和智能路由。该层持续根据首个令牌时间、错误率等指标评估端点，实现跨云故障切换和 A/B 测试。"
+    },
+    {
+      "point": "该架构在质量和延迟方面均有显著改进。",
+      "explanation": "Slack 报告称复杂推理工作负载质量提升了 10%，短提示延迟降低了约 67%，同时还实现了更好的地理故障切换和对更多基础模型的访问。"
+    }
+  ],
+  "keyQuotes": [
+    "最终配置将复杂推理工作负载质量提升了约 10%，同时将短提示延迟降低了约 67%。",
+    "对于构建 AI 驱动应用的平台团队，Slack 的经验凸显了抽象层如何帮助分离应用逻辑与底层模型提供商，同时平衡弹性、性能以及对快速变化的模型生态系统的访问。"
+  ],
+  "tags": [
+    "AI 基础设施",
+    "多云",
+    "AI 服务",
+    "LLM",
+    "云计算"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 546,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782370920000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-25 15:02:00"
+}

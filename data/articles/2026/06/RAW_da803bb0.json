@@ -1,0 +1,55 @@
+{
+  "id": "RAW_da803bb0",
+  "title": "Cloudflare 如何解决 quiche 中的拥塞 Bug",
+  "url": "https://www.infoq.com/news/2026/06/cloudflare-bug-quiche/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-26 03:00:00",
+  "author": "Gianmarco Nalin",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has recently shared <a href=\"https://blog.cloudflare.com/quic-death-spiral-fix/\">how they uncovered an issue in their Rust implementation of CUBIC, a congestion controller algorithm</a>, which prevented it from recovering from a scenario of heavy packet loss at the start of a connection.</p>\n   <p>The problem affected their open-source Quick UDP Internet Connections (QUIC) implementation, <a href=\"https://github.com/cloudflare/quiche\">quiche</a>, which sits in the critical path for a significant part of the traffic they serve. The team traced the issue back to a <a href=\"https://github.com/torvalds/linux/commit/30927520dbae297182990bb21d08762bcc35ce1d\">change in the Linux kernel</a> that aimed at fixing a real problem in TCP.</p>\n   <p>Esteban Carisimo, systems engineer, and Antonio Vicente, principal systems engineer at Cloudflare, explain that their investigation started from reports of unexpected failures in their ingress proxy integration test pipeline. All the failing tests had one thing in common: they were evaluating CUBIC in scenarios of heavy loss during the initial phase of the connection.</p>\n   <p>As the authors explain, CUBIC and other loss-based algorithms operate on a fundamental premise:</p>\n   <blockquote>\n    <p>(1) if there is no packet loss, increase the sending rate (i.e. increase the bandwidth utilization); (2) if there is loss, loss-based algorithms assume that the network's capacity has been exceeded, and the sender must back off (i.e. decrease the bandwidth utilization).</p>\n   </blockquote>\n   <p>To better understand the problem, the team created a simulated setup that runs a Quiche HTTP/3 client and server on localhost, with CUBIC as the congestion controller and a configured round-trip time (RTT) of 10ms. The client downloads a 10MB file over HTTP/3, with 30% randomised packet loss injected during the first two seconds. The test is expected to complete in about four to five seconds, so a timeout of 10 seconds seemed generous.</p>\n   <p>The results of the simulated test confirmed what was observed in the failing integration test pipeline: in multiple 100-run executions, around 60% of them could not complete before the 10-second timeout.</p>\n   <p>The team instrumented their implementation to collect detailed information on the faulty behaviour. They noticed that, after the packet loss phase, the congestion window was not growing as expected, showing no signs of recovery. Furthermore, the instrumentation showed during the loss-free phase that CUBIC was experiencing rapid state transitions between two states: the congestion avoidance state and the recovery state. To be more specific, 999 changes in approximately 6.7 seconds: one transition per ~14ms, which the team deemed suspiciously close to the configured connection's RTT of 10ms.</p>\n   <p>&nbsp;</p>\n   <figure>\n    <img alt=\"Connection overview of a failing test. \" data-src=\"https://www.infoq.com/news/2026/06/cloudflare-bug-quiche/news/2026/06/cloudflare-bug-quiche/en/resources/1BLOG-3273_image10-1782410833454.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/cloudflare-bug-quiche/en/resources/1BLOG-3273_image10-1782410833454.png\" rel=\"share\">\n    <figcaption>Cumulative packet loss vs. Congestion window size with faulty behaviour. Source: Cloudflare blog.</figcaption>\n   </figure>\n   <p>The team also wanted to exclude a more extended issue by replacing CUBIC with <a href=\"https://dl.acm.org/doi/10.1145/235160.235162\">Reno</a>, another loss-based congestion control algorithm. The simulated Reno test passed 100% of the time, scoping the problem to CUBIC only.</p>\n   <p>According to the team, the way CUBIC calculates idle time caused the implementation to enter a never-ending recovery loop. This loop triggered when incoming ACK packets brought the amount of in-flight bytes to zero during a noisy <a href=\"https://www.rfc-editor.org/info/rfc5681/\">slow start</a>. At a minimum congestion window of two packets, the idle period optimisation, the authors say, becomes a self-fulfilling prophecy. The loop keeps the application's state in a recovery state, with a recovery time aggressively in the future, which effectively blocks the congestion window from increasing.</p>\n   <p>According to <a href=\"https://www.reddit.com/r/CloudFlare/comments/1tb32y8/comment/olf7drj/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">RelevantKnowledge485</a> on Reddit, others have encountered similar issues:</p>\n   <blockquote>\n    <p>We hit something eerily similar with high-frequency timer-dependent workloads where C-state transitions were adding unpredictable latency spikes. The debugging approach here — correlating the kernel's power management decisions with protocol-level retransmit behavior — is really solid.</p>\n   </blockquote>\n   <p>The journey, the authors say, ends well and with a <a href=\"https://github.com/cloudflare/quiche/commit/62022d1cd773ba7baaf34873a28633f45fe24402\">rather simple solution</a> compared to the complexity of the behaviour. “It has a happy ending: an elegant (near-)one-line fix that broke the cycle,” they wrote.</p>\n   <p>Instead of measuring idle time from the last sent data only, the team also started measuring from the last ACK received.</p>\n   <p>&nbsp;</p>\n   <figure>\n    <img alt=\"Cumulative packet loss vs. Congestion window size with corrected behaviour.\" data-src=\"https://www.infoq.com/news/2026/06/cloudflare-bug-quiche/news/2026/06/cloudflare-bug-quiche/en/resources/1BLOG-3273_image11-1782410833454.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/06/cloudflare-bug-quiche/en/resources/1BLOG-3273_image11-1782410833454.png\" rel=\"share\">\n    <figcaption>Cumulative packet loss vs. Congestion window size with corrected behaviour. Source: Cloudflare blog.</figcaption>\n   </figure>\n   <p>This implemented fix was enough to break the loop and to allow the congestion window to recover as expected, restoring the test pass rate of 100%.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Cloudflare Solved a Congestion Bug in quiche\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Gianmarco Nalin\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/cloudflare-bug-quiche/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782414000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 发现并修复了其 Rust 实现的 CUBIC 拥塞控制中的一个 Bug，该 Bug 会导致连接在早期丢包时失败，而修复方法仅需调整空闲时间的测量逻辑，改动接近一行代码。",
+  "oneSentenceSummary": "Cloudflare 发现并修复了其 Rust 实现的 CUBIC 拥塞控制中的一个 Bug，该 Bug 会导致连接在早期丢包时失败，而修复方法仅需调整空闲时间的测量逻辑，改动接近一行代码。",
+  "summary": "Cloudflare 工程师分享了他们如何识别并解决开源 QUIC 实现 quiche 中影响 CUBIC 拥塞控制的一个隐蔽 Bug。该问题会导致连接在会话初期发生严重丢包时停滞，超过 60% 的模拟测试因此超时。团队将问题追溯到一个内核变更，并查明了根本原因：CUBIC 的空闲时间计算仅基于上次发送数据的时间，忽略了 ACK。这导致在嘈杂的慢启动条件下出现无限循环的恢复状态。一个简单的修复方案——同时从上次发送数据和上次接收 ACK 来测量空闲时间——使测试通过率恢复到了 100%。调试过程包括模拟、插桩观测以及与 Reno 的对比，确认了该 Bug 是 CUBIC 特有的。解决方案仅需近一行代码的修改，便彻底打破了这一死循环。",
+  "mainPoints": [
+    {
+      "point": "该 Bug 导致 CUBIC 在早期丢包时进入永久恢复循环，阻碍了拥塞窗口的增长。",
+      "explanation": "在有丢包的慢启动阶段，CUBIC 的空闲时间计算（仅基于上次发送数据的时间）导致了一个自我实现的循环，使连接无限期地卡在恢复状态。"
+    },
+    {
+      "point": "问题仅限于 CUBIC；Reno 通过了所有测试。",
+      "explanation": "通过在相同模拟环境中用 Reno 替换 CUBIC，团队确认该 Bug 是 CUBIC 实现逻辑特有的，而非通用协议缺陷。"
+    },
+    {
+      "point": "修复方法很简单，只需一行代码的修改，即同时从上次发送数据和上次 ACK 来测量空闲时间。",
+      "explanation": "修正后的实现不再仅使用上次发送的时间戳，而是同时考虑上次接收的 ACK，从而打破恢复循环，让拥塞窗口能够正常恢复。"
+    },
+    {
+      "point": "模拟和插桩观测对诊断至关重要。",
+      "explanation": "Cloudflare 搭建了具有 30% 丢包率和 10ms RTT 的本地测试环境，然后对 quiche 进行插桩以观察快速的状态转换（约每 14ms 一次），直接将行为与空闲时间 Bug 关联起来。"
+    }
+  ],
+  "keyQuotes": [
+    "(1) 如果没有丢包，则提高发送速率（即提高带宽利用率）；(2) 如果发生丢包，基于丢包的算法会假定已超出网络容量，发送方必须退避（即降低带宽利用率）。",
+    "它有一个圆满的结局：一个优雅的（接近）一行代码的修复打破了这一循环。"
+  ],
+  "tags": [
+    "QUIC",
+    "拥塞控制",
+    "CUBIC",
+    "Rust",
+    "Cloudflare"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 661,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782414000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-26 03:00:00"
+}

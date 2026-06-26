@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-26 06:30:22 | [返回首页](/README.md)
+**更新时间**: 2026-06-26 08:31:59 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13033)
+- [AI & 大模型](#ai-llm) (13046)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (857)
-- [DevOps](#devops) (615)
+- [DevOps](#devops) (618)
 - [产品与商业](#product-business) (38)
-- [其他](#other) (6015)
+- [其他](#other) (6020)
 
 
 ---
@@ -43,7 +43,7 @@
 - [MiniMax-M3：前沿-Coding-能力、1M-上下文、原生多模态，一个模型全给你](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488528&idx=1&sn=1093c7eca0f891c923fa66d4f00d23db) - AI 精选
 - [浅谈-AI-编程](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492008&idx=1&sn=69ac47da219bed079bc38f80e3d61f7e) - AI 精选
 
-- [查看全部 13033 篇...](/details/tags/ai-llm.md)
+- [查看全部 13046 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -112,6 +112,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [我们如何为-Cloudflare-Workflows-构建-Saga-回滚](https://blog.cloudflare.com/rollbacks-for-workflows/) - 编程 精选
 - [共享字典：跟上智能体网络步伐的压缩技术](https://blog.cloudflare.com/shared-dictionaries/) - 编程 精选
 - [保护非人类身份：自动化吊销、OAuth-与范围化权限](https://blog.cloudflare.com/improved-developer-security/) - 编程 精选
 - [动态-Workers-中的持久对象：为每个-AI-生成的应用提供专属数据库](https://blog.cloudflare.com/durable-object-facets-dynamic-workers/) - 编程 精选
@@ -128,9 +129,8 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
-- [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 
-- [查看全部 615 篇...](/details/tags/devops.md)
+- [查看全部 618 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 6015 篇...](/details/tags/other.md)
+- [查看全部 6020 篇...](/details/tags/other.md)
 
 

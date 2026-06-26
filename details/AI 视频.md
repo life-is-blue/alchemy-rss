@@ -1,15 +1,29 @@
-> **更新时间**: 2026-06-21 08:32:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-26 08:31:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [在团队频道里直接-@-Claude：Claude-Tag-如何协作处理-PR、文档与权限边界](https://www.youtube.com/watch?v=VojDzHaciKQ)
+
+2026-06-24 01:09:00 | 标签: Claude Tag, Claude Code, AI 编程, 工程工作流, PR
+
+> 这支 Anthropic 第一方发布短片介绍了 Claude Tag：团队可以在现有协作频道里直接 @ Claude，让它参与产品、工程、法务和发布沟通。Lydia 提到，Anthropic 今年内部已经大量采用这种模式，Claude Tag 负责创建了 65% 的产品 PR。演示把 Claude 呈现为多人协作中的队友：它能跟进群组线程，响应实时产品决策，定位相关代码区域，创建 PR，并同步更新发布营销材料，减少跨团队交接等待。最有价值的部分是安全模型：Claude 使用独立账号，权限按团队和频道划定，记忆隔离，凭据使用有日志记录。整体内容简洁、实用，能帮助读者理解产品方向，但更接近精炼的发...
+
+
+
+### [当数百万个-AI-智能体相遇：从聊天界面到智能体经济](https://www.youtube.com/watch?v=V04bm-3d6EQ)
+
+2026-06-23 23:48:06 | 标签: AI 智能体, Google DeepMind, 智能体经济, 人在回路, 多智能体系统
+
+> Hannah Fry 与 Google DeepMind 研究员 Nando de Freitas 讨论了 AI 从回答提示词的语言模型，转向能够观察状态、规划步骤、使用工具并在现实环境中行动的智能体。当前最明确的应用场景是编程，因为软件任务可以被拆解，也能通过测试验证结果；但访谈反复强调，智能体仍然需要人类持续参与监督，因为失败可能非常隐蔽，自动化偏见也很危险。对话随后扩展到自主科学、专业智能体之间的委托、智能体间协议、医疗 AI 向人类交接、网页中的智能体陷阱、动态伪装、纵深防御，以及未来智能体经济的设计。最有价值的判断是，未来未必是一个通用 AGI，而更可能是由通用协调层连接起来的专业智...
+
+
+
 ### [OpenAI-Codex-Record-&amp;-Replay：演示一次，即可复用浏览器工作流](https://www.youtube.com/watch?v=ZK3JhU73W18)
 
-2026-06-19 02:57:34 | 标签: OpenAI Codex, Record & Replay, 工作流自动化, 计算机操作, 浏览器操作
-
-> 这段简洁的产品演示以 YouTube 视频发布为实际场景，介绍 OpenAI Codex 的 Record & Replay 功能。Codex 会观察用户从电子表格读取元数据、查找匹配素材、在 YouTube Studio 中填写标题和简介、添加缩略图与英文字幕、将视频保存为私密状态并核验结果的完整过程。随后，它把这次录制转化为可复用技能，记住信息存放位置、上传包的组织方式以及每个步骤的执行要求。在新的对话线程中，Codex 能把学到的流程自主应用于另一套视频素材。该能力还可扩展到整理并分享 Pull Request、准备日历邀请等场景，并通过计算机操作、浏览器操作、已连接插件或这些工具的组合...
+2026-06-19 02:57:34
 
 
 
@@ -127,13 +141,13 @@
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
@@ -163,13 +177,13 @@
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
@@ -529,7 +543,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -541,7 +555,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 

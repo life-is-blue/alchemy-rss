@@ -1,0 +1,56 @@
+{
+  "id": "RAW_3ce72a04",
+  "title": "在企业内部构建欧洲云编排平台",
+  "url": "https://www.infoq.com/news/2026/06/europe-cloud-enterprise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-25 19:06:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Modern cloud deployments involve many tools with different lifecycles, creating a heavy burden on engineers. The Kubernetes ecosystem offers a unified Control Plane approach. Maximilian Techritz and Johannes Ott presented <a href=\"https://www.youtube.com/watch?v=hR8hFht9sFA\">How to Build a European Cloud Orchestration Platform from within an Enterprise</a> at <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/\">KubeCon &amp; CloudNativeCon Europe</a>. They showed how sharing best practices through tech talks and inner-source collaboration created an engaged community and drove adoption.</p>\n   <p>We write an application that we deploy on servers, create and configure databases, manage and persist secure secrets, and integrate with a huge range of existing services from internal and external vendors, Ott mentioned. To manage all these different aspects, many tools are involved, all coming with their own usage patterns and lifecycles. This can be pipelines, CLIs, ticket-based configurations, Click-Ops, etc.</p>\n   <p>When rolling out new versions of our software, we have to verify that nothing breaks along this complex toolchain, Ott explained:</p>\n   <blockquote>\n    <p>Our engineers have to lift the burden of maintaining and developing on the stack, taking up much time and attention from their development work. The world is becoming more complex. Software is no longer just shipped to a few data centers but more often to private and sovereign clouds.</p>\n   </blockquote>\n   <p>Reconsidering how to handle cloud orchestration, it was clear that they could not solve this by building another tool. They looked at the open source ecosystem and tools already out there, Techritz said. With the Kubernetes ecosystem, they can declaratively apply the desired configuration of all external cloud resources to a Kubernetes Control Plane:</p>\n   <blockquote>\n    <p>We have tools such as Crossplane. It allows us to manage databases at Google Cloud Platform, Buckets at AWS, or Network Policies at Microsoft Azure. We simply apply the desired state of these resources at the Control Plane. Dedicated controllers running in the Kubernetes cluster continuously reconcile the actual cloud provider APIs to create the resource, get its state, or update and delete it accordingly.</p>\n   </blockquote>\n   <p>Tools like External Secrets Operator sync and rotate credentials from one place to another, Kyverno defines custom policies that adhere to company regulations, and Flux can put all configuration files in a git repository to make use of GitOps best practices, Techritz added:</p>\n   <blockquote>\n    <p>All of these tools are already out there. And they all have the same look and feel and integrate with the Kubernetes ecosystem.</p>\n   </blockquote>\n   <p><a href=\"https://open-control-plane.io\">OpenControlPlane</a> allows companies to run a platform offering Control Planes to their development teams, Techritz said. The platform owners define how secrets, databases, and applications should be used by the development teams. Development teams order a Control Plane to get operators pre-installed and pre-configured; they do not need to worry about installing and managing all these different tools themselves.</p>\n   <p>When they introduced this full Kubernetes way of orchestrating cloud landscapes, they faced great resonance and interest. However, experience with the Kubernetes resource model is widely different between teams and organizations, Ott explained:</p>\n   <blockquote>\n    <p>We initiated a monthly tech talk, a hybrid event inviting people from different corners of the company to share commonly faced challenges. In short sessions, requiring close to zero knowledge, we demonstrated how Control Plane methodology can make their life easier. We invested time and effort to collaborate on user enablement material. From day one, everything is inner-source, with most parts open-source now.</p>\n   </blockquote>\n   <p>Our tech talk series has been attracting new and existing stakeholders, sharing best practices in informal yet informative sessions, Ott said.</p>\n   <p>To create an engaged community that supports adapting solutions, Techritz suggested finding common pain points in the company and working on a proof of concept of solving the challenges using the Control Plane methodology. Don’t highlight differences, embrace similarities, and actively invest in a shared minimum viable solution. Don’t shoot for a perfect picture, but create a culture of collectively improving what can be improved, he suggested:</p>\n   <blockquote>\n    <p>It doesn’t always work, and patience or failure openness certainly helps. But never stop enabling and educating the people around. Make it easy for people to follow along, to try it out, and give constructive feedback.</p>\n   </blockquote>\n   <p>In the end, you do need a healthy mix of engineers, domain experts, facilitators, and networks to succeed, Techritz concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.infoq.com/news/2026/06/europe-cloud-enterprise/www.linkedin.com/in/maximilian-techritz\">Maximilian Techritz</a> and <a href=\"https://www.linkedin.com/in/johannes-ott-00a74949/\">Johannes Ott</a> after their talk.</p>\n   <p><strong>InfoQ: What benefit can developers get from using Control Planes?</strong></p>\n   <blockquote>\n    <p><strong>Johannes Ott:</strong> Making the entire desired state well-defined in one machine and human-readable syntax, with Kubernetes Operators holding the knowledge of how to orchestrate and maintain them forever, significantly reduces the amount of manual operations work, handbooks, and other processes that used to slow us down.</p>\n    <p>Through this methodology, you can confidently ship out software meeting the requirements of the modern cloud landscapes.</p>\n   </blockquote>\n   <p><strong>InfoQ: What have you achieved, what are you proud of?</strong></p>\n   <blockquote>\n    <p><strong>Maximilian Techritz</strong>: We got super excited when we heard that we could donate this project to the EU-funded project IPCEI-CIS (Important Projects of Common European Interest - Cloud Infrastructure &amp; Services). This brings us closer to many different other projects that share the goal to strengthen Europeans cloud native sovereignty.</p>\n    <p>All these projects can be found under the umbrella of the <a href=\"https://neonephos.org/\">NeoNephos Foundation</a>. This is a project of the Linux Foundation Europe and ensures vendor neutrality.</p>\n   </blockquote>\n   <p><strong>InfoQ: What have you learned?</strong></p>\n   <blockquote>\n    <p><strong>Techritz</strong>: Start small. Learn what actually matters to people along the way. Find the pain points that development teams share. Solve them together using the Control Plane methodology - build a Kubernetes Operator, or find an existing open source one that fits.</p>\n    <p>On this journey, enable people with no Kubernetes experience. Active contribution is what makes projects succeed.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Building a European Cloud Orchestration Platform within an Enterprise\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/europe-cloud-enterprise/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782385560000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了如何利用 Kubernetes 控制平面生态系统（Crossplane、External Secrets、Kyverno、Flux）在企业内部构建云编排平台，并通过内源协作和技术讲座促进采用。",
+  "oneSentenceSummary": "本文详细介绍了如何利用 Kubernetes 控制平面生态系统（Crossplane、External Secrets、Kyverno、Flux）在企业内部构建云编排平台，并通过内源协作和技术讲座促进采用。",
+  "summary": "本文记录了一场在 KubeCon Europe 上的演讲，主题为在企业内部构建欧洲云编排平台。演讲者 Maximilian Techritz 和 Johannes Ott 描述了在面对众多工具和不同生命周期时管理复杂云部署的挑战。他们倡导采用基于 Kubernetes 生态系统的统一控制平面方法，具体使用 Crossplane 管理云资源、External Secrets Operator 管理凭证、Kyverno 执行策略、Flux 实现 GitOps。演讲介绍了 OpenControlPlane 项目，该项目为开发团队提供预配置的控制平面。除了技术方案，演讲者还强调了通过月度技术讲座、内源协作和分享最佳实践来建设社区的重要性。他们分享了将该贡献捐赠给欧盟资助的 IPCEI-CIS 倡议和 NeoNephos 基金会的经历，以增强欧洲云原生的主权。文章最后建议：从小处着手，找到共同痛点，赋能没有 Kubernetes 经验的人，并培养集体改进的文化。",
+  "mainPoints": [
+    {
+      "point": "统一控制平面通过声明式管理所有云资源，减轻了运维负担。",
+      "explanation": "通过在 Kubernetes 控制平面内使用 Crossplane、External Secrets 和 Kyverno 等工具，团队可以用单一、机器可读的语法定义数据库、存储桶、策略和密钥的期望状态，从而消除手动操作和特定工具的工作流。"
+    },
+    {
+      "point": "OpenControlPlane 提供预配置的控制平面，使开发团队能够专注于应用程序。",
+      "explanation": "平台所有者定义密钥、数据库和应用程序的标准化配置；开发团队订购预安装和预配置了运算符的控制平面，无需单独管理工具。"
+    },
+    {
+      "point": "通过技术讲座和内源协作建设社区，推动采用。",
+      "explanation": "每月举办的技术讲座分享常见痛点并演示解决方案，结合开放的内源项目，能够创建积极参与的社区并鼓励贡献，即使是 Kubernetes 经验较少的团队也能参与。"
+    },
+    {
+      "point": "从小处着手，解决共同痛点，拥抱集体改进，才能成功。",
+      "explanation": "不要追求完美方案，而是聚焦于解决常见挑战的最小可行方案，吸引具有不同技能的人员（工程师、领域专家、促进者），并对失败保持开放心态，将其视为学习过程的一部分。"
+    }
+  ],
+  "keyQuotes": [
+    "我们有诸如 Crossplane 这样的工具。它允许我们管理 Google Cloud Platform 上的数据库、AWS 上的存储桶或 Microsoft Azure 上的网络策略。我们只需在控制平面上应用这些资源的期望状态即可。",
+    "这些工具都已经存在。它们都具有相同的外观和感觉，并且与 Kubernetes 生态系统集成。",
+    "它并不总是有效，耐心和对失败的开放态度肯定有帮助。但永远不要停止赋能和教育周围的人。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "云原生",
+    "平台工程",
+    "GitOps",
+    "Crossplane"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 914,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782385560000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-25 19:06:00"
+}
