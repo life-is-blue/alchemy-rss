@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-26 08:31:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-26 11:03:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,9 +26,7 @@
 
 ### [我们如何为-Cloudflare-Workflows-构建-Saga-回滚](https://blog.cloudflare.com/rollbacks-for-workflows/)
 
-2026-06-25 22:00:01 | 标签: Saga模式, 持久化执行, Cloudflare Workers, 回滚, 分布式事务
-
-> 本文介绍了 Cloudflare Workflows 的 Saga 回滚功能，该功能允许开发者将补偿（回滚）逻辑直接附加到每个 step.do() 调用上。文章从一个动机示例开始：一个资金转账工作流中，失败的 credit 步骤需要撤销之前的 debit 步骤。文章展示了使用 try-catch 块的传统手动补偿方法，然后介绍了新的回滚选项，该选项将正向逻辑和补偿逻辑保持在一起。文章解释了 API 设计选择，说明为什么流式（fluent）和构建器（builder）API 由于承诺管道（promise pipelining）和仪式感（ceremony）问题而被拒绝，最终采用了简单的选项对象。文章...
+2026-06-25 22:00:01
 
 
 
@@ -574,17 +572,13 @@
 
 ### [Cloudflare-如何解决-quiche-中的拥塞-Bug](https://www.infoq.com/news/2026/06/cloudflare-bug-quiche/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-26 03:00:00 | 标签: QUIC, 拥塞控制, CUBIC, Rust, Cloudflare
-
-> Cloudflare 工程师分享了他们如何识别并解决开源 QUIC 实现 quiche 中影响 CUBIC 拥塞控制的一个隐蔽 Bug。该问题会导致连接在会话初期发生严重丢包时停滞，超过 60% 的模拟测试因此超时。团队将问题追溯到一个内核变更，并查明了根本原因：CUBIC 的空闲时间计算仅基于上次发送数据的时间，忽略了 ACK。这导致在嘈杂的慢启动条件下出现无限循环的恢复状态。一个简单的修复方案——同时从上次发送数据和上次接收 ACK 来测量空闲时间——使测试通过率恢复到了 100%。调试过程包括模拟、插桩观测以及与 Reno 的对比，确认了该 Bug 是 CUBIC 特有的。解决方案仅需近...
+2026-06-26 03:00:00
 
 
 
 ### [在企业内部构建欧洲云编排平台](https://www.infoq.com/news/2026/06/europe-cloud-enterprise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-25 19:06:00 | 标签: Kubernetes, 云原生, 平台工程, GitOps, Crossplane
-
-> 本文记录了一场在 KubeCon Europe 上的演讲，主题为在企业内部构建欧洲云编排平台。演讲者 Maximilian Techritz 和 Johannes Ott 描述了在面对众多工具和不同生命周期时管理复杂云部署的挑战。他们倡导采用基于 Kubernetes 生态系统的统一控制平面方法，具体使用 Crossplane 管理云资源、External Secrets Operator 管理凭证、Kyverno 执行策略、Flux 实现 GitOps。演讲介绍了 OpenControlPlane 项目，该项目为开发团队提供预配置的控制平面。除了技术方案，演讲者还强调了通过月度技术讲座、内源...
+2026-06-25 19:06:00
 
 
 
