@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-27 08:30:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-27 11:03:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [GPT-5.6-Sol-前瞻：下一代模型预览](https://openai.com/index/previewing-gpt-5-6-sol)
 
-2026-06-26 18:00:00 | 标签: GPT-5.6, 模型发布, AI 安全, AI 智能体, LLM
-
-> OpenAI 推出 GPT-5.6 系列：Sol（旗舰版）、Terra（均衡版）和 Luna（快速且经济版）。Sol 在 TerminalBench 2.1（91.9%）、GeneBench v1 和网络安全 ExploitBench 基准测试中创下新标杆，且 token 使用量少于竞争对手。此次发布重点强调多层安全防护体系：模型层拒绝训练、带推理模型审核的实时滥用分类器、账户层信号以及差异化访问机制。超过 70 万 A100 等效 GPU 小时被用于自动化红队测试。Sol 定价为每百万 token 输入 5 美元 / 输出 30 美元，Terra 和 Luna 价格更低。预览阶段从可信合作伙...
+2026-06-26 18:00:00
 
 
 
 ### [新一代学习-AI，苹果端侧模型配方，GLM-5.2-攻克开放性问题](https://www.deeplearning.ai/the-batch/issue-359)
 
-2026-06-26 15:00:18 | 标签: AI Agent, AI 编程, LLM, 产品开发, 开放权重
-
-> 本期 The Batch 刊登了吴恩达关于“循环工程”的信件——三个循环（智能体编码、开发者反馈、外部反馈）构成了 AI 辅助产品从 0 到 1 的开发流程。他强调，人类相对于 AI 的上下文优势使得开发者反馈循环不可或缺且难以自动化。新闻部分涵盖了 GLM-5.2，这是一款开放权重的混合专家模型，以仅为专有模型一小部分的成本，在多个智能体基准测试中领先开源模型；此外还报道了美国高校目前提供的超过 1000 个 AI 项目，详细介绍了课程设置的多样性。
+2026-06-26 15:00:18
 
 
 
@@ -4956,9 +4952,7 @@
 
 ### [构建-AI-时代的知识底座：直播数据-LLM-Wiki-实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561257&idx=1&sn=d664dbf2543b9d4b772b4b3d87c3def7)
 
-2026-06-26 10:49:00 | 标签: AI Agent, 知识管理, RAG, 数据工程, LLM
-
-> 文章详细论述了为直播数据团队构建 AI 时代知识底座的完整实践。作者指出现有领域知识散落在代码、文档、沟通记录中，导致知识质量退化与工程熵增，而直接使用 RAG 无法解决知识本身散落、矛盾、过期的问题。由此提出“LLM Wiki”概念——一个结构化、有约束、可验证的知识资产，以编译器思想将原始材料（DDL、任务代码、文档等）编译为按层级组织、关系显式记录的结构化页面。文中以主播分维度召回、交易指标查询、SQL 代码生成及数据模型迭代四个实际场景验证效果，展示了从自然语言到精准答案与可执行 SQL 的完整链路。系统架构采用多级文件系统、统一的 Schema 契约以及编排层与干活层分离的 Agen...
+2026-06-26 10:49:00
 
 
 
@@ -12758,33 +12752,25 @@
 
 ### [Timothy-B.-Lee-的一则引言](https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything)
 
-2026-06-27 05:15:09 | 标签: LLM, AI 技能, 提示词工程, 学习曲线
-
-> 这是 Simon Willison 的一篇短文，引用了 Timothy B. Lee 的一条推文。该引言将「LLM 没有学习曲线」这一误解，比作「当管理者很容易，因为员工会照章办事」。这个类比凸显了：有效使用 LLM 如同优秀的管理一样，需要实践、判断力和深入的理解。
+2026-06-27 05:15:09
 
 
 
 ### [2，000-人试图入侵我的-AI-助手之后发生了什么](https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/#atom-everything)
 
-2026-06-27 02:33:14 | 标签: LLM, AI 安全, 提示注入, 红队测试, AI 安全防护
-
-> Fernando Irarrázaval 推出了 hackmyclaw.com，邀请人们通过向其发送电子邮件来入侵他的 OpenClaw AI 助手。在经历了 6，000 次尝试、500 美元的 Token 消耗以及一个 Google 账号被封之后，没有人泄露秘密。该模型是 Opus 4.6，带有显式的反提示注入规则。Simon Willison 评论说，这与他的观察相符：前沿模型对注入攻击的抵抗力越来越强，正如 OpenAI 的 GPT-5.6 系统卡中指出的那样。然而，他警告说，6，000 次失败的尝试并不能保证对更复杂的攻击免疫，生产系统在设计时仍应假设注入可能会成功。
+2026-06-27 02:33:14
 
 
 
 ### [饮水机闲聊第-11-期：RAG-评估中的过拟合](https://towardsdatascience.com/water-cooler-small-talk-ep-11-overfitting-in-rag-evaluation/)
 
-2026-06-26 23:00:00 | 标签: RAG, AI 评估, 过拟合, 机器学习, 古德哈特定律
-
-> 文章通过一则饮水机旁的轶事，揭示了 RAG 评估中一个微妙但常见的陷阱：将评估集当作开发工具，根据其结果反复调整提示词或检索逻辑。这种行为实际上将评估集与训练过程混为一谈，导致了过拟合。作者解释了机器学习中训练/验证/测试集划分的基础原理，然后详细说明了 RAG 中发生这种情况的三种方式——在评估集上调整提示词、挑选系统擅长回答的问题，以及根据已索引的文档构建测试问题。解决之道在于维护一个真正独立的测试集，独立于系统行为构建问题，并对异常高的指标保持怀疑。文章还将此问题与古德哈特定律（“当一个指标成为目标时，它就不再是一个好的指标”）和奖励黑客现象联系起来，强调过拟合是一个流程纪律问题，而非纯...
+2026-06-26 23:00:00
 
 
 
 ### [堕落世界中的（人工）智能-—-LessWrong](https://www.lesswrong.com/posts/2sGmy2pJakSbo9vih/intelligence-artificial-in-a-fallen-world)
 
-2026-06-26 08:46:16 | 标签: AI 安全与对齐, AI 风险, AI 哲学, 神义论, 现代性
-
-> 作者以“两次堕落”神义论和天使堕落为隐喻，探讨了具备足够能力的存在所作出的不可逆选择如何永久地扭曲世界。文章追溯了伊斯兰经院哲学（在安萨里的偶因论之后放弃了自然哲学）与拉丁西方之间的认识论分歧——后者保留了世界既可知又向善的信念，直到启蒙运动侵蚀了后一基石。失去了形而上学的目的，现代性以效率和功用取代了善，导致工具理性在推动物质进步的同时，也能为暴行（如 Buck v. Bell 案与大屠杀）提供辩护。第三部分探讨了对 LLM 的常见批评——随机鹦鹉、环境足迹、知识产权与幻觉——认为这些批评要么曲解了技术本身，要么偏离了核心的对齐挑战。作者主张，真正的危险在于能力与善之间日益扩大的鸿沟，强大系...
+2026-06-26 08:46:16
 
 
 
@@ -42910,73 +42896,55 @@
 
 ### [Vercel-发布-Eve：面向-AI-智能体构建的开源框架](https://www.infoq.com/news/2026/06/vercel-eve-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-27 00:39:00 | 标签: AI 智能体, 开源, LLM, 模型上下文协议, 开发者工具
-
-> Vercel 已开源 Eve，一个用于在生产环境中构建、部署和运营 AI 智能体的框架。其核心设计是文件系统优先架构——智能体通过目录结构定义，包含指令、工具、技能、子智能体和通信渠道。Eve 包含面向生产环境的功能：持久化执行、沙箱代码执行（本地 Docker 或 Vercel Sandbox）、人工审批工作流、子智能体委派、基于 cron 的调度、基于 OpenTelemetry 的追踪以及评估套件。它通过 Model Context Protocol (MCP) 服务器或 OpenAPI 规范与外部服务集成，发布时支持 Slack、GitHub、Snowflake、Salesforce、...
+2026-06-27 00:39:00
 
 
 
 ### [AI-行得通，Pull-Request-行不通：AI-如何打破-SDLC-及应对之策](https://www.infoq.com/presentations/ai-sdlc-pull-request/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-26 22:17:00 | 标签: AI 编程, Pull Requests, Code Review, CI/CD, 测试影响分析
-
-> 本次 InfoQ 演讲探讨了 CircleCI 在软件交付中应用 AI 的三个阶段：手动复制粘贴、IDE 编程助手和无头智能体。虽然基于良好模式的机械转换（例如暗黑模式实现）能够成功，但 Pull Request 已成为主要瓶颈。AI 可以在几分钟内生成 1，500 行代码，远超人类的审查能力（约 500 行/小时）。GitHub 归档数据显示，智能体推送事件呈急剧飙升。DORA 报告证实了速度的提升，但也确认了不稳定性的增加。一项长期的开放源码研究发现，AI IDE 带来的速度提升在一个月后会消失，这归因于持续累积的技术债。排队论模拟警告称，除非交付速度能与 AI 的代码产出相匹配，否则延迟...
+2026-06-26 22:17:00
 
 
 
 ### [Dapr-1.18-引入可验证执行，为-AI-智能体和工作流带来加密信任](https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-26 20:00:00 | 标签: Dapr, AI 智能体, 工作流引擎, 分布式系统, 密码学
-
-> Diagrid 发布的 Dapr 1.18 为分布式应用和 AI 智能体带来了可验证执行功能。该版本包括工作流历史签名（使用基于 SPIFFE 的身份生成防篡改记录）、工作流历史传播（跨服务和工作流扩展执行谱系）以及工作流证明（基于已验证的来源启用策略）。这些功能旨在通过提供加密问责和可审计的执行历史，来弥合自主 AI 系统的信任差距。其他改进包括：Jobs API 晋级为稳定版，组件和配置热重载正式发布（GA），Actor 运行时的双向 gRPC 流（降低了网络复杂性和攻击面），IPv6/双栈网络支持，以及符合 RFC 7230 的逐跳标头处理。该版本反映了业界日益增长的共识，即治理、身份和...
+2026-06-26 20:00:00
 
 
 
 ### [Argo-CD-3.5-通过内部-mTLS-与源完整性强化供应链安全](https://www.infoq.com/news/2026/06/argocd-supply-chain-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-26 20:00:00 | 标签: Kubernetes, DevOps, GitOps, Argo CD, Supply Chain Security
-
-> 文章报道了 Argo CD v3.5 候选版本，重点介绍了安全性与可用性的提升：内部 repo-server 通信强制使用双向 TLS (mTLS)，通过 Git 提交签名进行源完整性验证，以及 ApplicationSet 资源的原生 UI。此外还涵盖了 Impersonation 和 Source Hydrator 晋级为 Beta、Helm 4 支持、命名空间范围的 ApplicationSet 以及 Azure AD/DevOps 的改进。作者将这些特性与竞争对手 Flux、Rancher Fleet 和 Jenkins X 进行了比较，指出 Argo CD 在签名验证方面正在迎头赶上...
+2026-06-26 20:00:00
 
 
 
 ### [腾讯混元-AI-Infra-如何优化-Hy3-Preview：一次大模型推理性能提升的技术拆解](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802370&idx=1&sn=933bed02fa58d278084e12946d3fa8ce)
 
-2026-06-26 17:36:00 | 标签: 大模型推理, LLM, 性能优化, 算子优化, 模型量化
-
-> 文章详细介绍了腾讯混元 AI Infra 推理团队针对 Hy3 Preview 模型在 Hopper 卡上的全栈性能优化实践。优化涉及五大维度：算子优化与融合、并行策略、多级缓存、MTP 异步调度以及量化与稀疏。在算子层面，实现了 Attention 动态调度负载均衡（加速最高 2.95x）、Router GEMM 双 BF16 重构 FP32 计算（加速 2.86x-3.22x）、FusedMoE 全链路一体化（加速 1.2x-1.6x）。算子融合方面，将 Rope+Norm+Quant 等 5 个算子深度融合为单一 Kernel（加速约 5x），实现 AllReduce+Norm+Add ...
+2026-06-26 17:36:00
 
 
 
 ### [京东健康-OPC-团队的产品全流程-Skill-探索](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502365&idx=1&sn=939804524a4d29f68e4170beb134dd89)
 
-2026-06-26 17:26:00 | 标签: 产品管理, 需求管理, 产品流程, AI辅助工作流, 团队协作
-
-> 文章详细介绍了京东健康 OPC（One Person Company）团队如何适配 Anthropic 开源的 8 个 Product Management Skills（synthesize-research、metrics-review、competitive-brief、product-brainstorming、write-spec、roadmap-update、sprint-planning、stakeholder-update）来强化产品流程。作者指出，在没有专职产品角色的 OPC 团队中，这套 Skill 提供了一种「产研共同决策框架」，将需求从出现到上线的过程标准化。文章按四个...
+2026-06-26 17:26:00
 
 
 
 ### [火山引擎-AI-搜索千万级-Agent-架构演进与实践：从-ReAct-三节点到-Unified-Policy](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520575&idx=1&sn=6d3a2d35f06bf57d763e1a41c5e00a6f)
 
-2026-06-26 17:00:00 | 标签: AI Agent, LLM, 系统设计, 架构演进, 上下文工程
-
-> 文章深入剖析了企业级 AI 搜索场景下标准 ReAct 架构的三大工程原罪：极高延迟、上下文震荡与控制流破碎。结合业界共识，提出 Workflow 与 Agent 严格分层、万物皆 Tool、上下文独立化等原则。火山引擎 AI 搜索团队基于此设计了 Workflow + Unified Policy Agent (UP-ReAct)架构，将确定性流程交给 Workflow，动态决策交给 Unified Policy，所有行为抽象为 Tool，状态由 Context Manager 统一管理。该架构在真实电商评测中，TTFT 从 14.045s 降至 9.8s（降 30.22%），推荐准确性提升...
+2026-06-26 17:00:00
 
 
 
 ### [QoderWork-Skills-开发实践：从传统数科到-AI-数科的转型探索-我的-Skills-进阶之旅](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544598&idx=1&sn=dc8678c46fc224211a0b384fc7e83cfc)
 
-2026-06-26 16:38:00 | 标签: AI Agent, 提示工程, AI编程, 领域知识工程, LLM
-
-> 文章作者自遂（淘天集团直播技术团队）以自身实践为背景，详细介绍了 QoderWork Skills 的开发体系与工程思想。文章首先点明数科团队重复跑数、手动出报告的痛点，引出 Skills 作为「数字助手」的价值。核心部分提出四层分离架构：SKILL.md（编排层，只负责流程指引）、config.yaml（参数模板层，避免写死业务值）、scripts/（实现层，固化复杂逻辑如统计检验、字段检测）、references/（知识层，实现渐进式信息披露）。随后通过拆解社区优秀 Skill（Follow Builders、Frontend Slides）的设计理念——如 Frontend Slides...
+2026-06-26 16:38:00
 
 
 
 ### [OpenSandbox-再进化：Credential-Vault-让真实密钥不再进入沙箱](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509853&idx=1&sn=ddffff2caf6f9e08a10dba04a8adb384)
 
-2026-06-26 16:07:00 | 标签: AI Agent, AI 安全与对齐, 沙箱安全, 凭据管理, OpenSandbox
-
-> 文章分析了 AI Agent 沙箱中直接使用密钥的安全风险，如 Prompt Injection、恶意依赖、日志泄露等。然后介绍了 OpenSandbox 新推出的 Credential Vault 方案：真实凭据保存在沙箱外，由 egress sidecar 在出站请求经过时按规则注入认证信息；沙箱内仅使用假值，确保密钥不进入环境变量、命令行、文件系统和日志。文章以 Claude Code 调用模型 API、私有 Git 仓库 clone、内部 API 访问等典型场景说明工作原理，并建议与默认拒绝的出站网络策略配合，实现更细粒度的安全边界。同时指出当前不支持与透明 service mesh ...
+2026-06-26 16:07:00
 
 
 
@@ -61314,9 +61282,7 @@ http://antirez.com/news/162
 
 ### [AI-普及正在压垮中层管理者](https://hbr.org/2026/06/ai-adoption-is-overloading-your-middle-managers)
 
-2026-06-26 20:05:13 | 标签: AI 普及, 中层管理, 组织变革, 领导力发展, 未来工作
-
-> 通过对两家主要咨询公司的合伙人、管理者和初级顾问进行 18 次半结构化访谈，作者发现 AI 普及的首要挑战并非技术，而是组织问题。压力点集中在中层管理：管理者夹在高管们的战略雄心与初级员工效率提升之间，负责验证 AI 输出（捕捉「粗制滥造」的内容）、辅导团队、保证质量——同时还面临不变的项目交付压力，且缺乏正式支持。文章识别出三个结构性断裂：持续交付压力下的非正式学习、奖励个人产出而非知识共享的激励机制错位，以及领导者与管理者之间的认知差距。文章认为，如果不加大对中层管理者的投入——通过保护性学习时间、修订激励机制、可见的领导者参与、以及针对管理者的 AI 专项培训——公司可能会耗尽正是这层人...
+2026-06-26 20:05:13
 
 
 
@@ -75422,9 +75388,7 @@ http://antirez.com/news/162
 
 ### [慢下来才能更快：AI-如何重塑软件工程](https://www.youtube.com/watch?v=5wks1W-auKY)
 
-2026-06-23 23:26:35 | 标签: AI 编程, 软件工程, 工程文化, 智能体系统, 代码审查
-
-> 这场演讲以一线观察串起 Meta、Anthropic、OpenAI、Cursor、Google、Uber、创业公司和传统企业中的 AI 编程变化。Orosz 先从一起据称由 AI 编写并由 AI 审查代码导致的 Instagram 安全事故讲起，再延伸到 token maxing、裁员、信任与安全团队调整，以及激励机制整体失衡的问题。他也给出平衡视角：智能体已经真正有用，团队能交付更多代码，大公司正在建设定制化 AI 开发平台，编程模型也越来越成为日常工作的核心。最重要的洞察是，个人提速本身不够，长期收益依赖团队级智能体系统、质量门禁、架构、代码审查、成本纪律和领域经验。演讲给出的建议很务实：...
+2026-06-23 23:26:35
 
 
 

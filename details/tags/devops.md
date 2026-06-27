@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-27 08:30:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-27 11:03:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -572,9 +572,7 @@
 
 ### [最佳-Cloudflare-Tunnel-替代方案-–-如何根据使用场景选择正确的隧道解决方案](https://www.freecodecamp.org/news/how-to-choose-the-right-tunneling-tool/)
 
-2026-06-27 00:32:20 | 标签: 隧道, 反向代理, 开发者工具, Cloudflare 替代方案, 开源
-
-> 本文全面介绍了 Cloudflare Tunnel 的替代方案，从易用性、协议支持、安全模型、自托管能力和定价等方面评估了每个工具。LocalXpose 因其流量检查和多协议支持而受到强调，Tailscale Funnel 因其安全优先的网状 VPN 方法，Inlets 用于云原生自托管，FRP 因其灵活性和开源控制，Tunnelmole 因其轻量级简洁性。作者强调，最佳选择取决于开发人员是优先考虑简单性、安全性、基础设施控制还是开源透明度。
+2026-06-27 00:32:20
 
 
 

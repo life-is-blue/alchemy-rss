@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-27 08:30:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-27 11:03:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,9 +710,7 @@
 
 ### [Shopify-春季-26-版本“无处不在”背后的-Web-体验工程](https://tympanus.net/codrops/2026/06/26/engineering-the-web-experience-behind-shopifys-spring-26-edition-everywhere/)
 
-2026-06-26 17:34:40 | 标签: WebGL, Three.js, 性能优化, 创意开发, 渲染架构
-
-> 这篇由 Shopify 首席产品设计师 Andy Thelander 撰写的深度技术解析，详细介绍了春季 26 版本“无处不在”发布页面背后的工程决策。文章涵盖了结合 WebGL（用于氛围渲染）与 DOM（用于内容展示）的渲染架构、用于高效 GPU 存储的自定义 .mdpc 点云格式、利用光线步进 KTX2 纹理从视频中实现的体积光，以及用于跨浏览器透明视频的堆叠视频技术。文章还解释了用于性能保障的设备分级系统（Tiers 0-3）、跨效果共享的流体模拟，以及保持在 React 渲染之外的滚动驱动 uniform 变量。一项关键创新是“Playground”，它使用与生产环境相同的场景预设，使...
+2026-06-26 17:34:40
 
 
 
