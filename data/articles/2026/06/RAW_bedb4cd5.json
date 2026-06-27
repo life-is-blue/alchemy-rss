@@ -1,0 +1,41 @@
+{
+  "id": "RAW_bedb4cd5",
+  "title": "Timothy B. Lee 的一则引言",
+  "url": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything",
+  "date": "2026-06-27 05:15:09",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">26th June 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://twitter.com/binarybits/status/2070527944817053862\">\n     <p>This is like saying there's no learning curve to being a manager because your employees will just do whatever you tell them to do.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://twitter.com/binarybits/status/2070527944817053862\">Timothy B. Lee</a>, <span class=\"context\">on the idea that LLMs take no skill and have no learning curve</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2260/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Timothy B. Lee 用管理类比论证，有效使用 LLM 需要真正的技能和显著的学习曲线，而非人们想象中那般轻松。",
+  "oneSentenceSummary": "Timothy B. Lee 用管理类比论证，有效使用 LLM 需要真正的技能和显著的学习曲线，而非人们想象中那般轻松。",
+  "summary": "这是 Simon Willison 的一篇短文，引用了 Timothy B. Lee 的一条推文。该引言将「LLM 没有学习曲线」这一误解，比作「当管理者很容易，因为员工会照章办事」。这个类比凸显了：有效使用 LLM 如同优秀的管理一样，需要实践、判断力和深入的理解。",
+  "mainPoints": [
+    {
+      "point": "LLM 的使用和管理一样，需要技能和学习曲线。",
+      "explanation": "这个类比反驳了「LLM 很容易使用」的普遍看法；相反，要获得好的结果需要实验、迭代和上下文理解。"
+    }
+  ],
+  "keyQuotes": [
+    "这就好比说当管理者没有学习曲线，因为你的员工会照你说的去做。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 技能",
+    "提示词工程",
+    "学习曲线"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 44,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782508509000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-27 05:15:09"
+}

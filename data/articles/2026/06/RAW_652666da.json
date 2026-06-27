@@ -1,0 +1,59 @@
+{
+  "id": "RAW_652666da",
+  "title": "Dapr 1.18 引入可验证执行，为 AI 智能体和工作流带来加密信任",
+  "url": "https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-26 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.diagrid.io/\">Diagrid</a> has announced the release of <a href=\"https://www.diagrid.io/blog/dapr-1-18-release-highlights\">Dapr 1.18</a>, introducing what it calls <a href=\"https://nexart.io/comparisons/audit-trails-vs-verifiable-execution\">Verifiable Execution</a>, a new set of capabilities designed to bring cryptographic trust, provenance, and tamper-evident execution records to distributed applications and AI agents. The update, one of the most significant since <a href=\"https://www.infoq.com/news/2023/03/dapr-version-one-ten-released/\">Dapr 1.10</a>, introduces Workflow History Signing, Workflow History Propagation, and Workflow Attestation, enabling organizations to verify how workflows were executed, which identities performed actions, and whether execution histories have been altered. The release is available immediately as an open-source update to Dapr and through Diagrid's managed <a href=\"https://www.diagrid.io/catalyst\">Catalyst Cloud platform</a>.</p>\n   <p dir=\"ltr\">The announcement addresses one of the most pressing challenges emerging in the age of agentic AI: trust. While distributed systems have become increasingly resilient over the last decade, and AI agents are now capable of carrying out complex, long-running tasks, proving how those tasks were executed has remained difficult. Dapr 1.18 aims to close that gap by introducing cryptographic chains of custody that span workflows, services, and AI agents, giving organizations a verifiable record of execution that can be independently validated.</p>\n   <p dir=\"ltr\">Historically, <a href=\"https://nhimg.org/glossary/workflow-history/\">workflow engines</a> and distributed systems have focused primarily on <a href=\"http://durability\">durability</a> and <a href=\"https://www.vmware.com/topics/fault-tolerance\">fault tolerance</a>. Modern workflows can survive infrastructure failures, recover from crashes, and retry failed operations automatically. However, questions around provenance and accountability have become increasingly important as AI systems begin making business-critical decisions.</p>\n   <p dir=\"ltr\">When an AI agent approves a financial transaction, accesses sensitive information, invokes another agent, or executes a long-running workflow, organizations increasingly need answers to questions such as: Who initiated the action? Has the execution history been altered? Can downstream systems trust the results? And can auditors verify the chain of events independently?</p>\n   <p dir=\"ltr\">Workflow History Signing allows workflow execution histories to be cryptographically signed using identities based on the open SPIFFE standard, creating tamper-evident records that can be independently verified. Workflow History Propagation extends execution lineage across services, workflows, and application boundaries, allowing downstream systems to understand where requests originated and what prior actions influenced them. Finally, Workflow Attestation enables workflows and activities to receive trusted execution context, allowing policies and compliance checks to make decisions based on verified provenance.</p>\n   <p dir=\"ltr\">Together, these capabilities create what Diagrid describes as Verifiable Execution, a model in which the history of a workflow becomes as trustworthy and auditable as the data it produces.</p>\n   <p dir=\"ltr\">The release reflects a broader shift occurring across the software industry. Over the last several years, technologies such as software signing, software bills of materials (SBOMs), and artifact attestations have become foundational elements of software supply chain security. Organizations increasingly expect to know where software came from, how it was built, and whether it has been tampered with.</p>\n   <p dir=\"ltr\">As AI systems become more autonomous, organizations are facing growing demands for explainability, regulatory compliance, and operational accountability. In regulated industries such as healthcare and financial services, proving how an AI-driven decision was made may become as important as the decision itself. Dapr 1.18 extends supply chain security concepts beyond software artifacts and into runtime execution, allowing workflows and AI agents to produce verifiable evidence of what happened, who performed an action, and whether the execution history remains intact.</p>\n   <p dir=\"ltr\">The <a href=\"https://docs.dapr.io/reference/api/jobs_api/\">Jobs API</a>, which enables scheduling of future and recurring work, has now graduated to stable status after undergoing extensive performance testing and is considered production-ready. Component and Configuration Hot Reloading is now generally available, enabling organizations to update configurations without restarting applications or interrupting running workloads.</p>\n   <p dir=\"ltr\">The release also introduces improvements to the Actor runtime model. Applications can now establish a single <a href=\"https://grpc.io/docs/what-is-grpc/core-concepts/\">bidirectional gRPC stream</a> to receive callbacks from the <a href=\"https://docs.dapr.io/concepts/dapr-services/sidecar/\">Dapr sidecar,</a> eliminating the need to expose inbound server ports and reducing networking complexity and attack surface.</p>\n   <p dir=\"ltr\">At the infrastructure level, Dapr 1.18 adds IPv6 and dual-stack networking support, alongside <a href=\"https://datatracker.ietf.org/doc/html/rfc7230\">RFC 7230</a>-compliant handling of hop-by-hop HTTP headers during service invocation, improving interoperability and networking security in modern environments.</p>\n   <p dir=\"ltr\">The timing of the release aligns with growing industry efforts to define the infrastructure required for trustworthy AI systems. Organizations including Microsoft, the<a href=\"https://aaif.io/\"> Agentic AI Foundation (AAIF)</a>, and the <a href=\"https://www.cncf.io/\">Cloud Native Computing Foundation (CNCF)</a> have increasingly focused on governance, interoperability, identity, and provenance as foundational requirements for agent-based AI systems.</p>\n   <p dir=\"ltr\">With Dapr 1.18, Diagrid is betting that the next phase of cloud-native computing will not simply be about durable execution; it will be about verifiable execution, where trust, provenance, and cryptographic accountability become built-in features of the platforms powering AI and distributed applications.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782475200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Dapr 1.18 引入可验证执行，通过签名、传播和证明功能，为工作流和 AI 智能体增加加密信任与溯源能力。",
+  "oneSentenceSummary": "Dapr 1.18 引入可验证执行，通过签名、传播和证明功能，为工作流和 AI 智能体增加加密信任与溯源能力。",
+  "summary": "Diagrid 发布的 Dapr 1.18 为分布式应用和 AI 智能体带来了可验证执行功能。该版本包括工作流历史签名（使用基于 SPIFFE 的身份生成防篡改记录）、工作流历史传播（跨服务和工作流扩展执行谱系）以及工作流证明（基于已验证的来源启用策略）。这些功能旨在通过提供加密问责和可审计的执行历史，来弥合自主 AI 系统的信任差距。其他改进包括：Jobs API 晋级为稳定版，组件和配置热重载正式发布（GA），Actor 运行时的双向 gRPC 流（降低了网络复杂性和攻击面），IPv6/双栈网络支持，以及符合 RFC 7230 的逐跳标头处理。该版本反映了业界日益增长的共识，即治理、身份和来源正成为 AI 驱动工作流的基础需求。",
+  "mainPoints": [
+    {
+      "point": "Dapr 1.18 引入可验证执行，结合了针对工作流和 AI 智能体的加密签名、谱系传播和证明功能。",
+      "explanation": "该更新提供了防篡改的执行记录、跨服务溯源以及用于策略决策的信任上下文，解决了自主 AI 系统中的问责差距。"
+    },
+    {
+      "point": "工作流历史签名使用基于 SPIFFE 的身份，为工作流执行历史创建可验证、防篡改的记录。",
+      "explanation": "这允许下游系统和审计员独立验证执行数据未被更改，将供应链安全概念扩展到了运行时。"
+    },
+    {
+      "point": "工作流历史传播跨服务和应用边界传递执行谱系。",
+      "explanation": "下游系统可以了解请求的来源和先前操作的链条，从而在分布式环境中做出明智的信任决策。"
+    },
+    {
+      "point": "工作流证明为工作流和活动提供受信任的执行上下文，支持基于已验证来源的合规性检查和策略执行。",
+      "explanation": "这在医疗保健和金融等受监管行业尤为重要，在这些行业中，证明 AI 驱动的决策是如何做出的至关重要。"
+    },
+    {
+      "point": "该版本还将 Jobs API 晋级为稳定版，增加了热重载功能，通过双向 gRPC 改进了 Actor 模型，并增加了 IPv6 支持。",
+      "explanation": "这些增强功能提高了生产就绪度，减少了运营开销，并使网络现代化，补充了以信任为导向的可验证执行功能。"
+    }
+  ],
+  "keyQuotes": [
+    "当 AI 智能体批准金融交易、访问敏感信息、调用另一个智能体或执行长时间运行的工作流时，组织越来越需要回答以下问题：谁发起了该操作？执行历史是否被篡改？下游系统能否信任结果？审计员能否独立验证事件链？",
+    "借助 Dapr 1.18，Diagrid 押注云原生计算的下一阶段将不再仅仅是持久执行，而是可验证执行，其中信任、溯源和加密问责将成为驱动 AI 和分布式应用平台的内置功能。"
+  ],
+  "tags": [
+    "Dapr",
+    "AI 智能体",
+    "工作流引擎",
+    "分布式系统",
+    "密码学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 725,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782475200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-26 20:00:00"
+}

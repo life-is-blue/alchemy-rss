@@ -1,0 +1,51 @@
+{
+  "id": "RAW_50c83c68",
+  "title": "Argo CD 3.5 通过内部 mTLS 与源完整性强化供应链安全",
+  "url": "https://www.infoq.com/news/2026/06/argocd-supply-chain-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-26 20:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://argoproj.github.io/cd/\">Argo CD</a> project <a href=\"https://blog.argoproj.io/argo-cd-v3-5-release-candidate-02b1fbf7b419\">released a v3.5</a> release candidate in June 2026. This version adds mutual TLS enforcement for internal components. It also includes Git commit signature verification for supply chain security and native ApplicationSet management in the UI. The release also graduates two significant features: impersonation and Source Hydrator, from alpha to beta.</p>\n   <p>Large-scale Argo CD deployments have long faced gaps in internal security posture and operational visibility. Communication between the repo-server and other components, like the API server and controllers, was unencrypted before. This left internal traffic outside the usual mTLS protection that teams apply at the ingress layer. On the supply chain side, nothing in Argo CD prevented a compromised Git repository from silently deploying unsigned or tampered manifests. ApplicationSet resources create applications at scale, but they lacked native UI support. Operators had to check YAML or use kubectl to see what an ApplicationSet would produce.</p>\n   <p>The repo-server now supports <a href=\"https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/\">mTLS</a>, requiring client certificates from each connecting component. For environments without custom certificates, the repo-server creates self-signed certs in memory. This helps with internal health checks and avoids relying on the filesystem. Source Integrity validation lets operators ensure Git sources have valid signatures before syncing. This can be set up through the Application spec with <code>sourceIntegrity.required: true</code> or by using the CLI flag <code>argocd app set --source-integrity-required</code>. The ApplicationSet UI, created by engineers from Intuit, Red Hat, GoTo, and Octopus Deploy, includes list, filter, and detail views. It also has a Preview Apps tab, which shows the applications an ApplicationSet template will create before deployment.</p>\n   <p>Argo CD can now take on a specific user identity for server-side tasks. This includes log streaming, resource deletion, and sync. It has moved to beta. When you set up impersonation through AppProject or <a href=\"https://en.wikipedia.org/wiki/Role-based_access_control\">RBAC policy</a>, it now applies automatically to all server operations. This is important for audit trails in multi-tenant clusters. The Source Hydrator, which separates dry (unhydrated) manifests from their hydrated output, also reaches beta. Teams can now set different <code>drySource.repoURL</code> and <code>syncSource.repoURL</code> values. This enables multi-repository <a href=\"https://about.gitlab.com/gitlab-orbit/\">GitOps</a> patterns. Here, source templates and rendered manifests are in different repositories. Each can have its own access controls.</p>\n   <p>The release also adds <a href=\"https://helm.sh/docs/overview/\">Helm 4</a> support alongside backward compatibility with Helm 3 deployments. ApplicationSets can now be deployed in any namespace, not just the Argo CD namespace. This change brings stable status and meets a long-requested need for teams managing GitOps by namespace. ApplicationSet concurrency controls help operators limit the number of applications processed at the same time. This reduces the risk of overwhelming the cluster or upstream Git APIs. Azure AD users hitting group claims overflow can now route group resolution through the Microsoft Graph API, bypassing OIDC token size limits. Azure DevOps repositories gain Service Principal authentication support, eliminating the PAT dependency.</p>\n   <p>Among Argo CD's main competitors, the three v3.5 headline features: internal mTLS, Source Integrity, and ApplicationSet UI, vary greatly based on each tool's architecture. <a href=\"https://fluxcd.io\">Flux</a> (v2.8, March 2026) avoids the internal mTLS issue by design. Its controllers use Kubernetes API objects to communicate instead of direct gRPC. This means there’s no internal traffic that needs securing. Flux supports mTLS for external connections. You can use <code>certSecretRef</code> with <code>GitRepository</code>, <code>HelmRepository</code>, and <code>OCIRepository</code> resources. On commit signature verification, Flux has offered native GPG support in the GitRepository API via <code>spec.verify.mode: head</code> longer than Argo CD, so Argo CD is catching up here. Flux 2.8 added a web dashboard to the UI via the separate Flux Operator. This includes views for Kustomization and HelmRelease. However, it lacks an ApplicationSet Preview equivalent. Instead, Flux's ArtifactGenerator API manages template-driven generation without a visual preview step. On UI, Flux 2.8 introduced a web dashboard through the separately-installed<a href=\"https://fluxoperator.dev/web-ui/\"> Flux Operator</a>, covering Kustomization and HelmRelease views, but there is no ApplicationSet Preview equivalent</p>\n   <p><a href=\"https://ranchermanager.docs.rancher.com/integrations-in-rancher/fleet/overview\">Rancher Fleet</a> uses a websocket-based agent system instead of gRPC. This means internal mTLS isn't needed. TLS is handled at the Rancher ingress and agent trust levels. Fleet lacks a built-in Source Integrity mechanism. To enforce commit signatures, you'll need a policy from your Git provider or an admission webhook. Its UI is part of the Rancher dashboard's Continuous Delivery section, not a separate app.\n    <br>\n    <br>\n    <a href=\"https://jayex.io\">Jenkins X</a> uses <a href=\"https://tekton.dev\">Tekton</a> to enforce supply chain controls at the pipeline layer. This includes Tekton Chains and GPG-signed releases. It does not provide a first-party dashboard and lacks a preview capability like ApplicationSet. Multi-cluster promotion occurs through pull request–based environment flows, not by generating templates.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Argo CD 3.5 Tightens Supply Chain Security with Internal mTLS and Source Integrity\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/argocd-supply-chain-security/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782475200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Argo CD 3.5 引入内部 mTLS、Git 提交签名验证和原生 ApplicationSet UI，增强了 Kubernetes GitOps 部署的供应链安全与运维可见性。",
+  "oneSentenceSummary": "Argo CD 3.5 引入内部 mTLS、Git 提交签名验证和原生 ApplicationSet UI，增强了 Kubernetes GitOps 部署的供应链安全与运维可见性。",
+  "summary": "文章报道了 Argo CD v3.5 候选版本，重点介绍了安全性与可用性的提升：内部 repo-server 通信强制使用双向 TLS (mTLS)，通过 Git 提交签名进行源完整性验证，以及 ApplicationSet 资源的原生 UI。此外还涵盖了 Impersonation 和 Source Hydrator 晋级为 Beta、Helm 4 支持、命名空间范围的 ApplicationSet 以及 Azure AD/DevOps 的改进。作者将这些特性与竞争对手 Flux、Rancher Fleet 和 Jenkins X 进行了比较，指出 Argo CD 在签名验证方面正在迎头赶上，但凭借 ApplicationSet 预览与 UI 获得了独特优势。",
+  "mainPoints": [
+    {
+      "point": "Argo CD 3.5 强制内部组件通信使用双向 TLS，填补了大规模部署中的安全漏洞。",
+      "explanation": "此前，repo-server 与其他组件的流量未加密。新的 mTLS 要求确保所有内部连接均经过身份验证和加密，无需仅依赖入口层防护即可提升安全态势。"
+    },
+    {
+      "point": "源完整性验证防止未经授权或被篡改的清单通过 Git 部署。",
+      "explanation": "运维人员现在可以要求在同步前对 Git 提交进行 GPG/RSA 签名验证。这解决了一个关键的供应链风险，即受损的仓库可能会静默推送恶意变更。"
+    },
+    {
+      "point": "具备预览功能的原生 ApplicationSet UI 使 Argo CD 有别于 Flux 和 Fleet 等竞争对手。",
+      "explanation": "新 UI 包含列表、过滤和详情视图，以及一个可在部署前显示生成应用的 Preview Apps 标签页。这提升了运维可见性并减少了错误。竞争对手要么缺乏此类 UI，要么需要单独的工具。"
+    }
+  ],
+  "keyQuotes": [
+    "大规模的 Argo CD 部署长期以来一直面临内部安全态势与运维可见性方面的不足。",
+    "Argo CD 中没有任何机制能够阻止受损的 Git 仓库静默部署未经签名或被篡改的清单。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "DevOps",
+    "GitOps",
+    "Argo CD",
+    "Supply Chain Security"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 738,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782475200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-26 20:00:00"
+}

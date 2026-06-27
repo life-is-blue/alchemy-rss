@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d10dba35",
+  "title": "Vercel 发布 Eve：面向 AI 智能体构建的开源框架",
+  "url": "https://www.infoq.com/news/2026/06/vercel-eve-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-27 00:39:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Vercel has released <a href=\"https://vercel.com/blog/introducing-eve\">Eve</a>, an open-source framework for building, deploying, and operating AI agents in production. The framework provides a filesystem-based project structure that organizes an agent into directories for instructions, tools, skills, subagents, communication channels, and scheduled tasks, allowing developers to define an agent's behavior without manually implementing much of the supporting infrastructure.</p>\n   <p>Eve is designed around a <a href=\"https://en.wikipedia.org/wiki/File_system\">filesystem-first architecture</a>, where each capability is represented as a file. Developers configure an agent through a single configuration file, define its behavior using Markdown instructions, add tools as TypeScript files, and organize reusable knowledge as skills. During build time, the framework automatically discovers these components and exposes them to the agent without additional registration code.</p>\n   <p>The framework includes several production-oriented capabilities, including durable execution, sandboxed code execution, human approval workflows, subagents, tracing, and evaluation tools. Each conversation is stored as a durable workflow that can pause, survive failures or deployments, and resume from the last completed step. Agent-generated code executes inside isolated sandboxes that can run locally using Docker or other adapters, or in production using Vercel Sandbox.</p>\n   <p>Eve also provides built-in support for connecting agents to external services through <a href=\"https://en.wikipedia.org/wiki/Model_Context_Protocol\">Model Context Protocol</a> servers or APIs described with OpenAPI specifications. At launch, integrations include services such as Slack, GitHub, Snowflake, Salesforce, Notion, and Linear, while developers can add additional providers through custom adapters. The same agent can be deployed across multiple communication channels, including Slack, Discord, Microsoft Teams, Telegram, GitHub, and HTTP APIs, without changing the core implementation.</p>\n   <p>The framework includes observability features based on <a href=\"https://opentelemetry.io/\">OpenTelemetry</a>. Every model call, tool invocation, and sandbox command is recorded as a trace that can be exported to existing monitoring platforms or viewed through Vercel's observability interface. Developers can also define evaluation suites that verify agent behavior locally or as part of continuous integration pipelines before deployment.</p>\n   <p>Another capability is support for subagents. Developers can define specialized agents in separate directories with their own instructions, tools, and execution environments. Parent agents can delegate work to these subagents, which execute tasks independently before returning results to the main agent. Eve also supports scheduled execution through cron-based jobs, enabling agents to perform recurring tasks automatically.</p>\n   <p>Vercel said the framework is already used internally to operate more than one hundred production agents supporting functions such as analytics, customer support, sales operations, and content review. The company has released Eve in public preview together with a command-line tool that scaffolds new agent projects and deploys them using standard <a href=\"https://workflow-sdk.dev/\">Vercel workflows</a>.</p>\n   <p>Early <a href=\"https://x.com/vercel/status/2067180054979936413\">community reactions</a> have been largely positive. Developers highlighted Eve's filesystem-based design and its inclusion of production features such as durable execution, tracing, approvals, and sandboxing.</p>\n   <p>AI Software Engineer, <a href=\"https://x.com/yagudaev/status/2067284172973170814\">Michael Yagudaev</a> shared:</p>\n   <blockquote>\n    <p>Looks simple, and follows similar ideas to Claude Code and other agents. Like Pi-mono but also for multi-tenant, How do you deploy it? I’m guessing there are Vercel primitives for it?</p>\n   </blockquote>\n   <p>Others compared it to frameworks noting that Eve attempts to consolidate infrastructure that many teams currently assemble from multiple libraries. Some commenters also expressed interest in evaluating how portable the framework will be outside the Vercel ecosystem as adoption grows.</p>\n   <p>Software developer <a href=\"https://x.com/kanlanc/status/2067344188882985035\">Vikranth Kanumuru</a> commented:</p>\n   <blockquote>\n    <p>I don’t get what is this changing from existing frameworks. Are you even removing deterministic orchestration to be more unpredictable? And hand it off to a subagent?</p>\n   </blockquote>\n   <p>Eve enters a growing ecosystem of agent frameworks that includes <a href=\"https://www.langchain.com/langgraph\">LangGraph</a>, <a href=\"https://crewai.com/\">CrewAI</a>, <a href=\"https://microsoft.github.io/autogen/stable//index.html\">AutoGen</a>, and <a href=\"https://strandsagents.com/\">Strands Agents SDK.</a> While these frameworks also support multi-agent orchestration and tool integration, Eve distinguishes itself by combining durable execution, sandboxed code execution, built-in evaluations, approvals, scheduling, and deployment into a single framework organized around the filesystem.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Vercel Introduces Eve, an Open-Source Framework for Building AI Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/vercel-eve-agents/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782491940000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Vercel 推出 Eve，一个采用文件系统优先架构的开源框架，具备持久化执行、沙箱代码、子智能体和内置生产级能力，用于构建和运营 AI 智能体。",
+  "oneSentenceSummary": "Vercel 推出 Eve，一个采用文件系统优先架构的开源框架，具备持久化执行、沙箱代码、子智能体和内置生产级能力，用于构建和运营 AI 智能体。",
+  "summary": "Vercel 已开源 Eve，一个用于在生产环境中构建、部署和运营 AI 智能体的框架。其核心设计是文件系统优先架构——智能体通过目录结构定义，包含指令、工具、技能、子智能体和通信渠道。Eve 包含面向生产环境的功能：持久化执行、沙箱代码执行（本地 Docker 或 Vercel Sandbox）、人工审批工作流、子智能体委派、基于 cron 的调度、基于 OpenTelemetry 的追踪以及评估套件。它通过 Model Context Protocol (MCP) 服务器或 OpenAPI 规范与外部服务集成，发布时支持 Slack、GitHub、Snowflake、Salesforce、Notion 和 Linear 等渠道，并支持部署到多个通信渠道。Vercel 报告内部已在 100 多个生产智能体中使用该框架。早期社区反响聚焦于文件系统设计和内置生产级功能，部分开发者质疑其与 LangGraph 等现有框架的差异化程度，以及在 Vercel 生态系统之外的可移植性。",
+  "mainPoints": [
+    {
+      "point": "Eve 采用文件系统优先架构，智能体能力映射到文件和目录。",
+      "explanation": "开发者通过单个配置文件配置智能体，用 Markdown 指令定义行为，将工具编写为 TypeScript 文件，并将知识组织为技能。框架在构建时自动发现这些组件，无需额外注册代码。"
+    },
+    {
+      "point": "Eve 提供持久化执行和沙箱代码执行，保障可靠性与安全性。",
+      "explanation": "每次对话作为持久化工作流存储，可以暂停、在故障或部署后存活，并从上一步恢复。智能体生成的代码在隔离沙箱中运行（本地使用 Docker，生产环境使用 Vercel Sandbox）。"
+    },
+    {
+      "point": "内置子智能体、调度、可观测性和评估支持，实现生产级智能体运营。",
+      "explanation": "开发者可以在独立目录中定义专用子智能体，使用基于 cron 的定时任务，通过 OpenTelemetry 追踪每次模型调用和工具调用，并为 CI/CD 流水线创建评估套件。"
+    },
+    {
+      "point": "早期社区反应褒贬不一，赞赏生产级功能的同时质疑差异化程度和 Vercel 锁定风险。",
+      "explanation": "部分开发者称赞其简洁性和持久化执行、沙箱等内置功能，另一些则将其与现有框架（LangGraph、CrewAI、AutoGen）进行比较，并对在 Vercel 生态系统之外的可移植性表示担忧。"
+    }
+  ],
+  "keyQuotes": [
+    "看起来简洁明了，遵循了 Claude Code 及其他智能体的类似思路。像 Pi-mono 但同样支持多租户，怎么部署？我猜有对应的 Vercel 基础设施工具？",
+    "我不太理解这相比现有框架有什么改变。你们是不是在移除确定性编排以增加不确定性？然后把它交给子智能体？"
+  ],
+  "tags": [
+    "AI 智能体",
+    "开源",
+    "LLM",
+    "模型上下文协议",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 597,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782491940000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-27 00:39:00"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-27 06:25:55 | [返回首页](/README.md)
+**更新时间**: 2026-06-27 08:30:12 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13046)
+- [AI & 大模型](#ai-llm) (13063)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (857)
-- [DevOps](#devops) (618)
+- [前端与全栈](#frontend-fullstack) (858)
+- [DevOps](#devops) (619)
 - [产品与商业](#product-business) (38)
-- [其他](#other) (6020)
+- [其他](#other) (6027)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [GPT-5.6-Sol-前瞻：下一代模型预览](https://openai.com/index/previewing-gpt-5-6-sol) - AI 精选
+- [新一代学习-AI，苹果端侧模型配方，GLM-5.2-攻克开放性问题](https://www.deeplearning.ai/the-batch/issue-359) - AI 精选
 - [OpenAI-与-Broadcom-发布针对-LLM-优化的推理芯片](https://openai.com/index/openai-broadcom-jalapeno-inference-chip) - AI 精选
 - [智能体身份：适用于自主、团队级-AI-的新型访问模型-|-Claude](https://claude.com/blog/agent-identity-access-model) - AI 精选
 - [Daybreak：保护全球每一家组织的安全工具](https://openai.com/index/daybreak-securing-the-world) - AI 精选
@@ -40,10 +42,8 @@
 - [打造-AI-原生工程组织-|-Claude](https://claude.com/blog/running-an-ai-native-engineering-org) - AI 精选
 - [为什么视频智能体模型是下一个前沿——Ethan-He，xAI-Grok-Imagine-负责人](https://www.latent.space/p/video-agents) - AI 精选
 - [使用-NVIDIA-Cosmos-3-开发物理-AI-推理、世界与动作模型](https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/) - AI 精选
-- [MiniMax-M3：前沿-Coding-能力、1M-上下文、原生多模态，一个模型全给你](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488528&idx=1&sn=1093c7eca0f891c923fa66d4f00d23db) - AI 精选
-- [浅谈-AI-编程](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492008&idx=1&sn=69ac47da219bed079bc38f80e3d61f7e) - AI 精选
 
-- [查看全部 13046 篇...](/details/tags/ai-llm.md)
+- [查看全部 13063 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 857 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 858 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 
-- [查看全部 618 篇...](/details/tags/devops.md)
+- [查看全部 619 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 6020 篇...](/details/tags/other.md)
+- [查看全部 6027 篇...](/details/tags/other.md)
 
 
