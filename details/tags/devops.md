@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-28 08:28:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-28 11:04:27 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -572,9 +572,7 @@
 
 ### [AWS-推出-Workload-Credentials-Provider，实现证书与密钥管理自动化](https://www.infoq.com/news/2026/06/aws-credentials-provider/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-27 19:04:00 | 标签: Cloud Native / DevOps, AWS, 密钥管理, 证书管理, 开源
-
-> AWS Workload Credentials Provider 是一款全新的开源工具，可自动化交付与续期来自 AWS Certificate Manager (ACM) 的证书以及 AWS Secrets Manager 的密钥。它作为原生系统服务在 Linux 和 Windows 上运行，在本地缓存凭证，并按可配置的计划进行刷新。该工具能在证书更新时重载 NGINX 或 Apache 等依赖服务，支持在隔离进程中运行多达 50 个证书，并且无论是在 AWS 还是本地环境中均可使用。它被视为 HashiCorp Vault Agent 的 AWS 原生替代方案，从业者称赞其消除了手动证书续...
+2026-06-27 19:04:00
 
 
 
