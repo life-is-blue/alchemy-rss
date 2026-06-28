@@ -1,0 +1,51 @@
+{
+  "id": "RAW_8e27fa53",
+  "title": "AWS 推出 Workload Credentials Provider，实现证书与密钥管理自动化",
+  "url": "https://www.infoq.com/news/2026/06/aws-credentials-provider/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-27 19:04:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has recently announced the <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/aws-workload-credentials-provider\">AWS Workload Credentials Provider</a> to automatically deliver and refresh certificates and secrets for applications. The open source tool reduces the need for custom automation, helps prevent outages caused by expired certificates, and works in both AWS and non-AWS environments.</p>\n   <p>The new tool supports ACM certificate export and automatic renewal for both public and private TLS certificates, providing a local credential layer that retrieves, caches, exports, and automatically refreshes secrets and certificates. It also caches secrets from AWS Secrets Manager and is compatible with existing Secrets Manager Agent deployments.</p>\n   <p>For organizations using AWS Secrets Manager and AWS Certificate Manager, the new service can be viewed as an AWS-native alternative to Vault Agent for credential and certificate delivery. <a href=\"https://www.linkedin.com/in/ashish-kasaudhan-713a4225/\">Ashish Kasaudhan</a>, senior cloud architect at PwC Acceleration Centers, <a href=\"https://awstip.com/aws-workload-credentials-provider-a-better-way-to-deliver-secrets-and-certificates-a86ca1b73279\">explains</a>:</p>\n   <blockquote>\n    <p>For years, HashiCorp Vault Agent provided a clean answer to this problem: authenticate once, cache locally, render credentials to disk, and refresh them automatically. AWS had excellent managed services for storing secrets and certificates, but it never offered a first-party equivalent on the client side (...) The hidden cost of secrets management isn’t the API call. It’s the operational complexity.</p>\n   </blockquote>\n   <p><a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-automation.html\">According to the documentation</a>, Workload Credentials Provider runs natively as a system service on both Linux (requires <code>systemd</code>) and Windows (with PowerShell 5.1 or later) under a dedicated low-privilege user, writing certificate files with restricted permissions. Formerly known as the AWS Secrets Manager Agent, it can be used for workloads running both on AWS and off-premises.</p>\n   <p>The project automatically checks configured certificates every 24 hours, exporting and updating local files only when certificate content has changed. When updates occur, it can trigger a command to reload dependent services such as NGINX or Apache. It also performs an initial refresh at startup, uses randomized timing to prevent large-scale simultaneous API requests, and supports dynamic configuration reloads, allowing certificate settings to be added or modified without reinstalling the service. Up to 50 certificates can be configured, each running in its own isolated management process.</p>\n   <pre>\r\n<code>[logging]\r\nlog_level = \"info\"\r\nlog_to_file = true\r\n\r\n[capabilities.acm]\r\nenabled = true\r\n\r\n[[capabilities.acm.certificates]]\r\ncertificate_arn = \"arn:aws:acm:us-west-2:123456789012:certificate/abcd1234-5678-90ab-cdef-EXAMPLE11111\"\r\nrole_arn = \"arn:aws:iam::123456789012:role/ACMExportRole\"\r\ncertificate_path = \"/etc/pki/tls/certs/example.com.crt\"\r\nprivate_key_path = \"/etc/pki/tls/private/example.com.key\"\r\nchain_path = \"/etc/pki/tls/certs/example.com-chain.pem\"\r\nrefresh_command = \"/usr/sbin/nginx -s reload\"</code></pre>\n   <p><em>Example of a configuration file. Source: AWS documentation</em></p>\n   <p>\n    <br>\n    Initial reactions are positive, with practitioners viewing it as an AWS-native alternative for local secret and certificate delivery. Corey Quinn, chief cloud economist at The Duckbill Group, writes in his <a href=\"https://www.lastweekinaws.com/newsletter/\">newsletter</a>:\n   </p>\n   <blockquote>\n    <p>A name only a committee could love, automating the certificate-renewal cron job you've maintained with duct tape and EventBridge since 2019, before it was EventBridge. It's open source and free, which means AWS will recoup costs through the Secrets Manager bill it cheerfully caches against. Your ops team finally gets to sleep through cert expiry weekends. I mean, they always did, but it was rude to say it.</p>\n   </blockquote>\n   <p>While using the provider is free, using Secrets Manager and ACM will incur associated costs. The Workload Credentials Provider is <a href=\"https://github.com/aws/aws-workload-credentials-provider#workload-credentials-provider-config\">configured via a TOML file</a>, in which developers define certificate settings, output paths, refresh commands, and other runtime options. It is released under an Apache-2.0 license and <a href=\"https://github.com/aws/aws-workload-credentials-provider\">available on GitHub</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces Workload Credentials Provider for Automated Certificate and Secret Management\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/aws-credentials-provider/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782558240000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出开源的 Workload Credentials Provider，可自动交付与刷新证书和密钥，降低运维复杂性并防止因凭证过期导致的服务中断。",
+  "oneSentenceSummary": "AWS 推出开源的 Workload Credentials Provider，可自动交付与刷新证书和密钥，降低运维复杂性并防止因凭证过期导致的服务中断。",
+  "summary": "AWS Workload Credentials Provider 是一款全新的开源工具，可自动化交付与续期来自 AWS Certificate Manager (ACM) 的证书以及 AWS Secrets Manager 的密钥。它作为原生系统服务在 Linux 和 Windows 上运行，在本地缓存凭证，并按可配置的计划进行刷新。该工具能在证书更新时重载 NGINX 或 Apache 等依赖服务，支持在隔离进程中运行多达 50 个证书，并且无论是在 AWS 还是本地环境中均可使用。它被视为 HashiCorp Vault Agent 的 AWS 原生替代方案，从业者称赞其消除了手动证书续期脚本并减轻了运维负担。该 Provider 免费使用，但底层的 AWS 服务会产生标准费用，它已在 GitHub 上以 Apache-2.0 许可证发布。",
+  "mainPoints": [
+    {
+      "point": "Workload Credentials Provider 实现了证书与密钥交付的自动化，消除了手动 cron 作业或自定义自动化。",
+      "explanation": "它从 ACM 获取、缓存、导出并自动刷新 TLS 证书，从 Secrets Manager 获取密钥，并内置支持触发服务重载。"
+    },
+    {
+      "point": "它作为本地凭证交付的 HashiCorp Vault Agent 的 AWS 原生替代方案发挥作用。",
+      "explanation": "对于已经在使用 AWS 服务的组织而言，该工具提供了一款第一方客户端解决方案，无需管理外部工具，从而降低了运维复杂性。"
+    },
+    {
+      "point": "该工具专为可靠性设计，具备随机刷新时间、按证书隔离的进程，并支持多达 50 个证书。",
+      "explanation": "它以低权限系统服务运行，每 24 小时检查一次更新，并且可以在无需重新安装的情况下动态重载配置，有助于防止因证书过期导致的服务中断。"
+    }
+  ],
+  "keyQuotes": [
+    "多年来，HashiCorp Vault Agent 为这个问题提供了一个清晰的答案：认证一次，本地缓存，将凭证渲染到磁盘，并自动刷新。AWS 拥有出色的托管服务来存储密钥和证书，但它从未在客户端提供过第一方的等效方案（……）密钥管理的隐性成本不在于 API 调用，而在于运维复杂性。",
+    "这个名字只有委员会才会喜欢，它自动化了你自 2019 年以来一直用胶带和 EventBridge（在它还叫 EventBridge 之前）勉强维持的证书续期 cron 作业。它是开源且免费的，这意味着 AWS 将通过你愉快地在其上缓存的 Secrets Manager 账单来收回成本。你的运维团队终于可以在证书过期的周末睡个好觉了。"
+  ],
+  "tags": [
+    "Cloud Native / DevOps",
+    "AWS",
+    "密钥管理",
+    "证书管理",
+    "开源"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 522,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782558240000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-27 19:04:00"
+}

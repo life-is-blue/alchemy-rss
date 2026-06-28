@@ -1,0 +1,62 @@
+{
+  "id": "RAW_b4083b2",
+  "title": "在团队频道里直接 @ Claude：Claude Tag 如何协作处理 PR、文档与权限边界",
+  "url": "https://www.youtube.com/watch?v=VojDzHaciKQ",
+  "date": "2026-06-24 01:09:00",
+  "author": "Claude",
+  "siteName": "Claude",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Tag Claude in, right where you already work</h1>\n  <p>Anthropic has officially launched <strong>Claude Tag</strong>, an integration that allows the Claude AI assistant to seamlessly collaborate alongside product, engineering, and legal teams within their existing communication channels.</p>\n  <h2>Driving Development at Anthropic</h2>\n  <p>Claude Tag has fundamentally reshaped day-to-day operations at Anthropic, where it has been utilized internally throughout the year. The tool currently accounts for <strong>65% of Anthropic's product pull requests</strong>, acting as an automated collaborator that streamlines code contributions directly within team interactions.</p>\n  <h2>Real-Time Collaboration and Contextual Awareness</h2>\n  <p>During live team workflows, Claude operates in a multiplayer fashion. It monitors group threads, tracks development choices in real time, locates relevant spots in a codebase, and executes required changes independently.</p>\n  <p>Beyond just committing code, Claude adapts to various functional needs across a business. For example, when code modifications occur, it recognizes the implications for auxiliary teams—such as launch marketing—and updates relevant tracking documentation itself to eliminate cross-team communication delays.</p>\n  <h2>A Strict Security and Permissions Architecture</h2>\n  <p>Security is built directly into how Claude interacts with human teams:</p>\n  <ul>\n   <li><strong>Isolated Permissions:</strong> Claude uses dedicated accounts equipped with independent credentials, meaning all system access is explicitly logged.</li>\n   <li><strong>Channel Constraints:</strong> Access rights are strictly bound to individual communication spaces. A Claude instance tagged inside a legal channel can analyze contract information, but it is completely blind to engineering repositories.</li>\n   <li><strong>Strict Boundaries:</strong> Memory respects structural walls. Information discussed or gathered inside a private channel or a direct message (DM) stays contained within that precise context.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Anthropic 将 Claude Tag 定位为融入团队频道的 AI 协作者，可以跟进讨论、创建代码 PR、更新发布文档，并按频道执行安全边界。",
+  "oneSentenceSummary": "Anthropic 将 Claude Tag 定位为融入团队频道的 AI 协作者，可以跟进讨论、创建代码 PR、更新发布文档，并按频道执行安全边界。",
+  "summary": "这支 Anthropic 第一方发布短片介绍了 Claude Tag：团队可以在现有协作频道里直接 @ Claude，让它参与产品、工程、法务和发布沟通。Lydia 提到，Anthropic 今年内部已经大量采用这种模式，Claude Tag 负责创建了 65% 的产品 PR。演示把 Claude 呈现为多人协作中的队友：它能跟进群组线程，响应实时产品决策，定位相关代码区域，创建 PR，并同步更新发布营销材料，减少跨团队交接等待。最有价值的部分是安全模型：Claude 使用独立账号，权限按团队和频道划定，记忆隔离，凭据使用有日志记录。整体内容简洁、实用，能帮助读者理解产品方向，但更接近精炼的发布演示，而不是深入的技术拆解。",
+  "mainPoints": [
+    {
+      "point": "Claude Tag 将 Claude 直接嵌入团队频道",
+      "explanation": "核心思路是让产品、工程、法务和发布讨论发生在哪里，团队就能在哪里 @ Claude，把它变成频道原生的协作者，而不是另一个需要切换的独立工具。"
+    },
+    {
+      "point": "Anthropic 声称内部已有大量 PR 自动化",
+      "explanation": "视频称 Claude Tag 创建了 Anthropic 产品 PR 的 65%，这个发布主张因此有了具体的运营数据支撑，尽管视频没有解释统计口径和方法。"
+    },
+    {
+      "point": "Claude 能跟进实时团队决策并执行代码变更",
+      "explanation": "在工程示例里，Claude 跟上群组线程，理解功能请求，找到代码库中的修改位置，创建 PR，并完成对应改动。"
+    },
+    {
+      "point": "跨职能协作也是产品承诺的一部分",
+      "explanation": "演示不只停留在写代码，还展示 Claude 识别到工程变更会影响发布营销，并更新相关文档，从而降低沟通延迟。"
+    },
+    {
+      "point": "安全设计围绕范围化账号和隔离记忆展开",
+      "explanation": "Claude 拥有自己的账号和凭据，访问权限按团队与频道限定，记忆遵守私有边界，凭据使用也会被记录，便于追责。"
+    }
+  ],
+  "keyQuotes": [
+    "今天我们发布 Claude Tag，让 Claude 可以直接在团队身边协作",
+    "在 Anthropic 内部，Claude Tag 创建了我们 65% 的产品 PR",
+    "Nadia 给 Claude 发消息后，Claude 会跟上群组线程，并响应实时做出的产品决策",
+    "很酷的一点是，Claude 知道这个功能是什么，也知道该去代码库的哪里改",
+    "记忆遵守同样的边界，所以它在私有频道或 DM 中学到的内容会留在那里"
+  ],
+  "tags": [
+    "Claude Tag",
+    "Claude Code",
+    "AI 编程",
+    "工程工作流",
+    "PR"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 91,
+  "wordCount": 247,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_5f307b71",
+  "sourceName": "Claude",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1782234540000,
+  "publishDateStr": "06-24",
+  "publishDateTimeStr": "2026-06-24 01:09:00"
+}

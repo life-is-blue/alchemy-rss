@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-26 08:31:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-28 08:28:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
@@ -15,9 +15,15 @@
 
 ### [当数百万个-AI-智能体相遇：从聊天界面到智能体经济](https://www.youtube.com/watch?v=V04bm-3d6EQ)
 
-2026-06-23 23:48:06 | 标签: AI 智能体, Google DeepMind, 智能体经济, 人在回路, 多智能体系统
+2026-06-23 23:48:06
 
-> Hannah Fry 与 Google DeepMind 研究员 Nando de Freitas 讨论了 AI 从回答提示词的语言模型，转向能够观察状态、规划步骤、使用工具并在现实环境中行动的智能体。当前最明确的应用场景是编程，因为软件任务可以被拆解，也能通过测试验证结果；但访谈反复强调，智能体仍然需要人类持续参与监督，因为失败可能非常隐蔽，自动化偏见也很危险。对话随后扩展到自主科学、专业智能体之间的委托、智能体间协议、医疗 AI 向人类交接、网页中的智能体陷阱、动态伪装、纵深防御，以及未来智能体经济的设计。最有价值的判断是，未来未必是一个通用 AGI，而更可能是由通用协调层连接起来的专业智...
+
+
+### [把-10994-条笔记变成记忆：构建文件驱动的-AI-研究-OS-|-Paul-Iusztin（Decoding-AI）&amp;-Louis-François-Bouchard（Towards-AI）](https://www.youtube.com/watch?v=ZRM_TfEZcIo)
+
+2026-06-23 06:25:06 | 标签: AI 研究 OS, 第二大脑, 记忆与上下文管理, 深度研究智能体, Obsidian
+
+> 在这场 AI Engineer 演讲中，Decoding AI 创始人 Paul Iusztin 与 Towards AI CTO Louis-François Bouchard 复盘了历时 18 个月打造的个人 AI 研究 OS。它位于 Codex、Claude Code 等智能体 harness 与庞大的第二大脑之间，后者横跨 Obsidian、Readwise、Notion 与 Google Drive，散落着上万条笔记。两人先给出一套决策树：何时直接 Google、何时唤起一次性智能体、何时真正需要持久记忆，随后指出向量数据库 RAG 太重、NotebookLM 既不归你所有也不是 a...
 
 
 
@@ -141,13 +147,13 @@
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
@@ -177,13 +183,13 @@
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
@@ -543,7 +549,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -555,7 +561,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

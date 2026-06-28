@@ -1,0 +1,62 @@
+{
+  "id": "RAW_f199a0c",
+  "title": "把 10994 条笔记变成记忆：构建文件驱动的 AI 研究 OS | Paul Iusztin（Decoding AI）& Louis-François Bouchard（Towards AI）",
+  "url": "https://www.youtube.com/watch?v=ZRM_TfEZcIo",
+  "date": "2026-06-23 06:25:06",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Turn 10,994 Notes Into Memory - Paul Iusztin, Decoding AI &amp; Louis-François Bouchard, Towards AI</h1>\n  <p>Source: AI Engineer.</p>\n  <h2>Overview</h2>\n  <p>I spent 18 months turning my second brain into my living research memory. Let me explain. So, within my second brain, I currently have over 5,000 notes in Obsidian and another 5,000 notes in Readwise and some scattered in Notion and Google Drive. And all of this is growing on every week 250 files per month. And this is what I want. On the left, you can see my whole Obsidian vault, this huge mass. And whenever I start working on something such as an article, a new project, a new code base, a new feature, or whatever, I want to actually pull high-signal notes that are actually useful for my current work. And you would ask yourself, why not use directly Codex Cloud or Notebook LM? And I think it's that I am. But you need a system that sits between those harnesses and your second brain. Okay, so let's go back to the root of my problem, which.</p>\n  <h2>Key Moments</h2>\n  <h3>I spent 18 months turning my second</h3>\n  <p>I spent 18 months turning my second brain into my living research memory. Let me explain. So, within my second brain, I currently have over 5,000 notes in Obsidian and another 5,000 notes in Readwise and some scattered in Notion and Google Drive. And all of this is growing on every week 250 files per month. And this is what I want. On the left, you can see.</p>\n  <h3>be able to refer to them in the future</h3>\n  <p>be able to refer to them in the future. So, if you want a process like this where the sources that you find, the notes that you take stick around in time and have an agent be able to leverage that efficiently and being able to come back to these information, to ask follow-up questions, to digest content even more. And right now, for instance, when I make a.</p>\n  <h3>In my case, I made hundreds of videos</h3>\n  <p>In my case, I made hundreds of videos and I take many notes. So, I still need to leverage these years of content that I already made and tons of meetings that I have with my team, with clients when we build for them that I want to leverage as well because we learn a lot by building for people. We have highlights from interesting tweets that I see.</p>\n  <h3>So you can imagine that there's a lot of</h3>\n  <p>So you can imagine that there's a lot of noise over there. So that's why we also applied a ranking algorithm where we wanted to like find the the information with the highest signal. And basically we compared each source against the topic, the initial topic of the user. And like that, we fully scraped only the top K elements based on the ranking score. And.</p>\n  <h3>personal wikis, personal research</h3>\n  <p>personal wikis, personal research operating systems that you want to use very lightly. So, I want a system just based on files, right? A simple mechanism that's that's very rooted into how your computer works. And that's why we'll create all the system just based on files and just based on references. So, no database, just a simple index based on.</p>\n  <h3>as I said previously, the wiki keeps</h3>\n  <p>as I said previously, the wiki keeps evolving just purely based on your questions. And another important thing to understand is that this wiki doesn't sit on top your of your entire second brain, right? For example, in my particular use case, I use the PARA method coined by Tiago Forte where all my data is structured between project, areas, resources, and.</p>\n  <h3>And now the process</h3>\n  <p>And now the process will will take around 10 to 20 minutes to actually look around my Obsidian, to look around my Readwise, my Notebook LM, and run those queries on top of this. And I actually run this, right? And now let's open this wiki that we created based on the prompt before in Obsidian and let's look what's inside the the wiki. So, we have three big.</p>\n  <h3>links</h3>\n  <p>links. And as before, I just pass this prompt and it will start the research process. And I want to highlight that you can run example two ending on the GitHub repositories and this example without any other setup like without setting up Obsidian, Readwise, or anything else. You can just install this plugin and run this examples because it here is not.</p>\n </body>\n</html>",
+  "aiSummary": "Paul Iusztin 与 Louis-François Bouchard 分享如何构建一套基于文件的 AI 研究 OS，通过深度研究循环与不断演化的 wiki 层，把上万条笔记的第二大脑变成可被智能体调用的可查询记忆。",
+  "oneSentenceSummary": "Paul Iusztin 与 Louis-François Bouchard 分享如何构建一套基于文件的 AI 研究 OS，通过深度研究循环与不断演化的 wiki 层，把上万条笔记的第二大脑变成可被智能体调用的可查询记忆。",
+  "summary": "在这场 AI Engineer 演讲中，Decoding AI 创始人 Paul Iusztin 与 Towards AI CTO Louis-François Bouchard 复盘了历时 18 个月打造的个人 AI 研究 OS。它位于 Codex、Claude Code 等智能体 harness 与庞大的第二大脑之间，后者横跨 Obsidian、Readwise、Notion 与 Google Drive，散落着上万条笔记。两人先给出一套决策树：何时直接 Google、何时唤起一次性智能体、何时真正需要持久记忆，随后指出向量数据库 RAG 太重、NotebookLM 既不归你所有也不是 agent native，都不适合个人使用。系统的核心贡献是一套零数据库、纯 markdown 文件与引用构成的三层架构：不可变的原始来源、带每条来源摘要与元数据的 index.yaml 目录，以及由 LLM 生成、包含执行摘要、概念、实体和对比的 wiki。他们沿着三个版本演进：从用手选黄金链接编译出的静态 research.md，到把同一套深度研究循环对准第二大脑，再到一份随每次提问而生长的活体 wiki。多轮深度研究算法由编排器、按问题拆分的子智能体、Gemini grounding 以及排序步骤组成，只保留信号最强的 top-K 来源。三段现场演示分别展示摄取一篇文章、克隆并对比多个开源智能体 harness、以及拉取自定义链接，全部打包为 Claude Code 插件。最后两人谈到通过分级引用实现 token 效率、来源溯源等当前不足，以及更完整的 Agent Engineering 课程。",
+  "mainPoints": [
+    {
+      "point": "智能体的瓶颈不是喂入更多上下文，而是日后能否复用过往成果",
+      "explanation": "他们指出上下文窗口承担了智能体的全部数据库、文件系统、记忆与推理空间，对话一结束就全部丢失，因此真正的需求是恰当的记忆与上下文管理，而非更多输入。"
+    },
+    {
+      "point": "对个人研究而言，文件加引用的系统胜过重型基础设施",
+      "explanation": "他们不用向量数据库、知识图谱或语义检索，而是把一切建立在纯 markdown 文件和一个索引之上，既人类可读可检查、根植于文件系统，也便于人和智能体共同调用。"
+    },
+    {
+      "point": "由原始来源、index.yaml 目录与 LLM wiki 构成的三层架构",
+      "explanation": "不可变的原始文件保存来源副本，index.yaml 用摘要和元数据为其编目，生成的 wiki 包含执行摘要、概念、实体与对比，让智能体在触及原始数据前就能以高 token 效率回答大多数查询。"
+    },
+    {
+      "point": "wiki 是活的，会随每次提问而演化，而不仅靠新内容摄取",
+      "explanation": "每个问题都可能催生一份新的概念、笔记或对比文件并被记录在案，于是 wiki 成为用户过往问题与认知盲区的真实映照，而非一份冻结的快照。"
+    },
+    {
+      "point": "多轮深度研究循环配合排序，只保留信号最强的来源",
+      "explanation": "编排器生成问题，由子智能体用 grounding 在 Google 上的 Gemini 作答，经三轮聚合摘要以避免上下文爆炸，再将来源与主题对比排序，只完整抓取 top-K。"
+    }
+  ],
+  "keyQuotes": [
+    "我花了 18 个月，把我的第二大脑变成了一段活的研究记忆。",
+    "瓶颈在于你日后如何复用它。也就是说，对智能体而言，上下文窗口成了一切——数据库、文件系统、记忆、推理空间。",
+    "于是我们的做法是，决定用纯文件来构建这套系统，主要是 markdown 文件，让我们和智能体都能轻松调用。",
+    "最妙的一点是，这份 wiki 是活的——比如说，每一个问题都会在你的 wiki 里留下一道痕迹。",
+    "项目就是工作本身，而你的第二大脑就是研究。"
+  ],
+  "tags": [
+    "AI 研究 OS",
+    "第二大脑",
+    "记忆与上下文管理",
+    "深度研究智能体",
+    "Obsidian"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 757,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1782167106000,
+  "publishDateStr": "06-23",
+  "publishDateTimeStr": "2026-06-23 06:25:06"
+}

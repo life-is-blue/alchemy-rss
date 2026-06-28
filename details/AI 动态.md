@@ -1,15 +1,37 @@
-> **更新时间**: 2026-06-22 08:32:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-28 08:28:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [OpenAI-计划在未来几周公开发布-GPT-5.6-Sol、Terra-和-Luna](https://x.com/OpenAI/status/2070555273467687257)
+
+2026-06-27 01:10:20 | 标签: GPT-5.6, OpenAI, AI 模型发布, 政府要求, API
+
+> 在这条回复推文中，OpenAI 确认了其致力于广泛开放的承诺，计划尽快将 GPT-5.6 Sol、Terra 和 Luna 全面推出。然而，应美国政府的要求，该发布首先在 Codex 和 API 中向一小部分可信合作伙伴提供有限预览，以在开放性和合规性之间取得平衡。
+
+
+
+### [OpenAI-发布首款-AI-芯片：Jalapeño](https://x.com/OpenAI/status/2069770172802773292)
+
+2026-06-24 21:10:38 | 标签: AI 芯片, Jalapeño, OpenAI, Broadcom, LLM
+
+> OpenAI 宣布了一项重要里程碑：其首款 AI 芯片 Jalapeño 的设计与制造已完成。该芯片专为支撑 ChatGPT、Codex、API 及未来智能体产品的 LLM 工作负载而打造。这款芯片由 OpenAI 与 Broadcom 合作开发，标志着 OpenAI 的全栈平台从产品到模型再到基础设施的战略性扩张。
+
+
+
+### [Karpathy：Claude-Tag-代表-LLM-UI/UX-的第三大范式](https://x.com/karpathy/status/2069547676849557725)
+
+2026-06-24 06:26:31 | 标签: Claude Tag, LLM UI/UX, AI 交互, 范式转变, Andrej Karpathy
+
+> Andrej Karpathy 对刚推出的 Claude Tag 功能进行了深度评论。该功能将 Claude 直接集成到 Slack 中，使其成为一个拥有工具和上下文访问权限的持久化团队成员。他将此定义为 LLM 用户界面的第三次重大重新设计：第一代是网站（如 ChatGPT），第二代是可下载的应用，第三代则是自包含、持久化、异步的实体，能够在组织内与人类协同工作。Karpathy 强调了实现这种无缝体验所需的大量工程工作，并称其「非常棒」。
+
+
+
 ### [Andrew-Ng-论-AI-控制：Anthropic-与美国政府行动标志着转折点](https://x.com/AndrewYNg/status/2068039709126017356)
 
-2026-06-20 02:34:23 | 标签: AI 治理, Anthropic, AI 监管, 开源 AI, AI 主权
-
-> Andrew Ng 深入分析了过去两周发生的两件大事：Anthropic 发布带有严格防护栏的 Claude Fable 5（包括限制竞争性 LLM 研究），以及美国政府随后对该模型实施出口管制。他认为，这些行动赤裸裸地展示了权力，破坏了在专有 AI 平台上进行构建的稳定性。Ng 将其与历史上的供应链中断事件（如中国的半导体制造、稀土矿物）相类比，预测这些举措将加速全球对开源 AI 和国家 AI 主权的投资。他最后呼吁建立一个更加开放、自由的世界，让研究得以自由分享，并创造一个公平的竞争环境，让所有人共同进步。
+2026-06-20 02:34:23
 
 
 
@@ -265,13 +287,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
