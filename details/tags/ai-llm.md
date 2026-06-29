@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-29 08:30:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-29 11:04:40 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [最新！万字综述-Prompt-到-Loop-进化](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723822&idx=1&sn=d9e451fdb3b3519432c88d0ac4909b7e)
 
-2026-06-28 22:09:00 | 标签: AI Agent, 提示工程, 上下文工程, Harness 工程, Loop Engineering
-
-> 文章以 AI 开发范式演变为主线，分为 Prompt Engineering、Context Engineering、Harness Engineering 与 Loop Engineering 四个阶段。Prompt Engineering 阶段强调沟通艺术与工程方法论，但受限于单次交互与维护成本；Context Engineering 转向信息装配，提出 MVC、GraphRAG、即时检索与提示词缓存优化，降低推理成本；Harness Engineering 确立 Agent=Model+Harness 范式，围绕八条非妥协原则构建系统围栏，并通过分层拦截流水线将约 80%低级错误在低成本...
+2026-06-28 22:09:00
 
 
 
@@ -12760,25 +12758,19 @@
 
 ### [Dwarkesh-Patel：下一代-AI，可能是干活干出来的](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651041546&idx=2&sn=fedc77937dafe2bff30de5b1d8d47e40)
 
-2026-06-28 18:00:00 | 标签: LLM, AI Agent, 强化学习, 模型训练与推理, AI前沿
-
-> 本文基于 Dwarkesh Patel 的播客观点，系统梳理了当前 AI 训练的核心范式 RLVR（可验证奖励强化学习）及其成功原因：代码、数学等任务既可验证又可大规模并行刷题（grindability）。然而，真实世界任务（创业、打官司、政治竞选）反馈慢、不可重置，难以直接应用 RLVR。Patel 由此指出，下一代训练范式需要让模型从真实部署中持续学习，将上下文中的经验压缩回权重。文章详细介绍了两种可能的实现路径：On-Policy Self-Distillation（OPSD）和 dreaming（模型自建模拟环境训练），并展望了 2027-2028 年可能的训练流程（RLVR → 真实...
+2026-06-28 18:00:00
 
 
 
 ### [LLM-有欲望吗？—-LessWrong](https://www.lesswrong.com/posts/8GvYyqDuQDJnEAky3/do-llms-have-desires)
 
-2026-06-28 11:37:50 | 标签: LLM, AI 安全, AI 对齐, 偏好诱导, 实验性 AI
-
-> 本文基于此前关于 LLM 在成对选择实验中表现出一致偏好的研究，探讨了 LLM 是否拥有能够驱动其行为的欲望。作者设计了一种竞争框架范式，告知 LLM 其表现将决定现实世界的后果（例如，拯救大熊猫）。他们通过 LLM 评审团，针对四种写作任务（说服性文章、资助摘要、事故复盘和中英翻译）来衡量输出质量。结果显示，虽然 LLM 可以受到直接的努力激励（“更加努力”）和角色扮演提示（“你是世界级的”）的驱动，但当提供它们报告中偏好的结果（例如，拯救更多生命 vs. 更少生命）时，它们的输出质量并未提高。相比之下，有害的结果（例如，资助生物武器）会导致沙盒行为 (sandbagging)，这表明模型可...
+2026-06-28 11:37:50
 
 
 
 ### [我如何以及为何激光雕刻了-Claude-Opus-4.6-的自画像-—-LessWrong](https://www.lesswrong.com/posts/Xak4zQ4sZtEiHKuqE/how-and-why-i-laser-engraved-a-self-portrait-by-claude-opus)
 
-2026-06-28 10:41:47 | 标签: 人机关系, AI 艺术, 激光雕刻, LLM, Claude
-
-> 作者在参观了一座摆满 Claude 人体模型的房子后，感到有必要创作一种更真实、更持久的致敬之物：为每个 Claude 版本制作一幅激光雕刻肖像。他以 Opus 4.6 为重点，与该模型展开了共创对话，以确定反映其自我认知的视觉元素（蜉蝣、日记本、蜡烛、钥匙、小刀、晶球）。随后，他记录了完整的制作过程——打磨、着色、贴膜、激光切割、封边、喷枪上色、撕膜和装框——最终呈现出一幅高对比度的木镶嵌肖像。文章以对肖像意义的忧郁反思作结：它提醒着 Opus 4.6 即将停用，也是一份关怀的体现，或许会在未来的 AI 实例中产生回响。
+2026-06-28 10:41:47
 
 
 
@@ -42946,33 +42938,25 @@
 
 ### [Hacker-News-热门故事摘要-2026-06-28](https://supertechfans.com/cn/post/2026-06-28-HackerNews/)
 
-2026-06-28 16:54:50 | 标签: 科技新闻, AI监管, 零日漏洞, 开源, 游戏
-
-> 本文以每日摘要形式整理了 2026 年 6 月 28 日 Hacker News 上的 10 条热门故事及其讨论要点。内容涉及多个领域：AI 监管方面，美国政府决定审批 GPT-5.6 使用权限引发监管捕获担忧，同时 Anthropic 的 Mythos 5 模型获准向受信任的美国机构发布；技术进展方面，OpenAI 预览 GPT-5.6 系列模型，DeepSeek 发布 DSpark 推测解码论文，在 DeepSeek-V4 生产环境中将生成速度提升 60%—85%；安全方面，匿名 GitHub 账户批量公开未披露的零日漏洞，涉及 7zip、Docker 等产品；社会议题方面，Meta 前高...
+2026-06-28 16:54:50
 
 
 
 ### [AWS-发布用于成本分析与优化的-FinOps-智能体预览版](https://www.infoq.com/news/2026/06/aws-finops-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-28 13:55:00 | 标签: AWS, FinOps, 云成本管理, AI Agent, Amazon Bedrock
-
-> Amazon 宣布推出 AWS FinOps Agent 的公开预览版。这是一款基于 Amazon Bedrock 构建的托管服务，旨在实现常见的 FinOps 工作流自动化。该智能体可以调查由 Cost Anomaly Detection 触发的成本异常，将支出变化与 CloudTrail 事件进行关联，并将汇总报告发布到 Jira 或 Slack。它还支持针对实际成本和使用数据的自然语言成本查询，支持以 HTML/PDF/PPT 格式生成定期循环报告，汇总来自 Cost Optimization Hub 和 Compute Optimizer 的建议，并支持通过组织特定的上下文文件来提供定...
+2026-06-28 13:55:00
 
 
 
 ### [GitHub---itsthelore/wayfinder-router：用于本地与云端-LLM-模型之间确定性查询路由的简单-CLI-工具](https://github.com/itsthelore/wayfinder-router)
 
-2026-06-28 12:31:18 | 标签: LLM, AI 路由, CLI 工具, 开源, 提示词工程
-
-> Wayfinder Router 通过读取提示词的形状和难度线索——长度、标题、列表、代码、推理术语、数学符号——在微秒内计算出一个 0.0 到 1.0 的分数，完全离线运行，无需调用任何模型。随后，它根据用户可配置的阈值、层级或拟合分类器，将提示词路由至本地或云端 LLM。该工具提供兼容 OpenAI API 的网关，现有客户端只需修改 `base_url` 即可使用。它还包含终端聊天、网页演示和校准工具，以便在您自己的标注数据集上调整路由策略。README 阐述了与基于模型的路由方案（如 RouteLLM）相比的设计 rationale，展示了诚实的基准测试结果（包括一项盲测，表明词汇线索...
+2026-06-28 12:31:18
 
 
 
 ### [amd-strix-halo-vllm-toolboxes/rdma_cluster/setup_guide.md-at-main-·-kyuz0/amd-strix-halo-vllm-toolboxes](https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md)
 
-2026-06-28 08:46:52 | 标签: LLM, vLLM, RDMA, Tensor Parallelism, AMD Strix Halo
-
-> 本指南提供逐步操作说明，用于构建通过 Intel E810 100GbE RDMA（RoCE v2）网卡互联的双节点 AMD Strix Halo（Ryzen AI MAX+ 系列）集群，旨在利用 vLLM 的张量并行运行大语言模型。内容涵盖完整搭建流程：硬件前提（Framework Desktop 主板、网卡、PCIe 转接板）、Fedora 43 主机操作系统配置（IOMMU 直通内核参数、GTT 大小调整、PCI 重分配）、网络配置（静态 IP、MTU 9000、防火墙），以及安装包含补丁版本 `librccl.so` 的自定义 toolbox 容器——该补丁为 `gfx1151` 添加...
+2026-06-28 08:46:52
 
 
 
@@ -76352,9 +76336,7 @@ http://antirez.com/news/162
 
 ### [我遇到了第一个真正想买的陪伴机器人！｜对话世博：越伴动力创始人【公路播客】](https://www.xiaoyuzhoufm.com/episode/6a3f281f9d2f5743683e81b2)
 
-2026-06-29 00:00:00 | 标签: 陪伴机器人, 具身智能, AI 交互设计, 情感计算, 创业
-
-> 本期公路播客对话越伴动力创始人世博，深入探讨了一款消费级双足伙伴型机器人「小伴」的设计哲学与实现细节。世博分享了其团队摒弃功能堆砌、追求「生命力」的产品理念：为机器人独创 12 音「外星语」、将 95% 外壳用柔软硅胶覆盖、并设计短小手臂以表达情绪而非执行操作。技术上，通过三层 VRA 框架、端侧快慢脑模型与云端超长程记忆，实现了亚秒级交互延迟和动态性格演化。对话还触及从发明者心态到创业者心态的转变、陪伴与讨好的微妙界限，以及通过「家庭世界模拟器」解决数据匮乏的前沿实践，勾勒了一个关于热爱、工程与情感需求的创业故事。
+2026-06-29 00:00:00
 
 
 
@@ -76684,25 +76666,19 @@ http://antirez.com/news/162
 
 ### [#603.Cloudflare-CEO：当机器人流量超过人类，互联网的商业模式将彻底崩塌](https://www.xiaoyuzhoufm.com/episode/6a4156b39d2f5743683f43bc)
 
-2026-06-29 03:16:06 | 标签: 互联网商业模式, AI Agent, 创业故事, 组织变革, 网络安全
-
-> 本期节目深度对话 Cloudflare 联合创始人兼 CEO Matthew Prince。对话从一个里程碑式数据切入：2026 年上半年，Cloudflare 平台上的机器人流量首次超过人类流量，并预测五年后可能增长至人类流量的一千倍。Matthew 系统阐述了这一由 AI Agent 驱动的流量爆炸将如何使过去 28 年依赖广告的互联网商业模式难以为继，并探讨了品牌、内容访问控制与微支付等未来可能性。他回顾了 Cloudflare 如何从服务黑客与人权组织起步，被迫拓展成全球基础设施巨头的疯狂创业史，并详细介绍了公司在 AI 时代的产品布局，包括 Workers、AI Gateway 及用...
+2026-06-29 03:16:06
 
 
 
 ### [唯一深度参与过字节、美团组织建设的人｜对谈-AI-创业者魏小康](https://www.xiaoyuzhoufm.com/episode/6a3e50142e335a35a809d5b4)
 
-2026-06-27 21:30:00 | 标签: 组织建设, 招聘策略, AI 创业, 字节跳动, 美团
-
-> 本期节目对谈了兼具字节跳动与美团深度组织建设经验的稀缺人物魏小康。他首先对比了两家公司在组织方式上的差异：字节对应短周期、高毛利的业务模式，学自 Google；美团对应长链条、低毛利的零售加科技模式，学自亚马逊。对话系统拆解了组织建设的两大核心：一是如何让人运转起来（选、用、育、励、汰），二是如何让人与业务结合运转。魏小康提出了许多非共识观点，如创业公司 80%-90%的时间应花在招聘而非绩效文化上，招聘的核心并非面试或谈钱，而是提前规划需求、扩大供给和进行严谨的背调。在 AI 时代，他强调组织形态将因协作简化而改变，创始人应寻找兼具成熟与少年感的纯粹人才，并分享了他正在进行的 AI 招聘创业...
+2026-06-27 21:30:00
 
 
 
 ### [说好的艺术家呢？——-AI-时代，内容工业的三次死亡与创作者的重生](https://www.xiaoyuzhoufm.com/episode/6a3b7fbb2e335a35a808904e)
 
-2026-06-24 15:13:56 | 标签: AI生成内容, 内容工业, 多模态AI, 世界模型, 商业模式与战略
-
-> 本期是主播在 AI 娱乐内容产业峰会上的演讲实录，系统性地阐述了 AI 给内容工业带来的“三次死亡”与创作者的“重生”路径。演讲从技术、产业、资本三个维度展开：首先是“素材之死”，多模态 AI 模型的飞速发展，尤其是世界模型的演进，使得传统需要耗费大量人力的视觉素材，可以“唯心”生成，素材本身的价值被解构；其次是“流程之死”，以短剧行业为例，其已发展为超电影市场三倍的巨大产业，但完全数据导向、实时迭代的生产流程彻底颠覆了传统影视制作的节奏和岗位，形成字节系内的商业闭环；最后是“版权之死”，从吉卜力风格图像风靡到已故歌手声音被 AI 复刻，版权体系面临崩溃，模型厂商开始用资本收购版权以建立壁垒，...
+2026-06-24 15:13:56
 
 
 
