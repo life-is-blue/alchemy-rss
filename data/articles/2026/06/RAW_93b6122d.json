@@ -1,0 +1,54 @@
+{
+  "id": "RAW_93b6122d",
+  "title": "Swift 6.4 带来新语言特性和 Swift Testing/XCTest 互操作",
+  "url": "https://www.infoq.com/news/2026/06/swift-6-4-beta-features/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-06-28 16:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Currently available as a beta in Xcode 27, <a href=\"https://developer.apple.com/swift/whats-new/\">Swift 6.4</a> introduces a range of enhancements: better C interoperability, simplified OS availability check, fine-grained warning control, async support in <code>defer</code>, efficient iteration for non-noncopyable types, up to 4x faster URL parsing, and improved interoperability between Swift Testing and XCTest.</p>\n   <p>At the language level, the new release introduces several refinements aimed at simplifying everyday development. These include removing unnecessary parentheses in certain type expressions, additional warnings for concurrency tasks, the introduction of <code>weak let</code> and <code>~Sendable</code>, and support for a new implicit memberwise initializer.</p>\n   <p>Instead of writing <code>(any Int?)</code>, you can now write <code>any Int?</code>. Task closures will generate warnings if thrown errors are not handled. <code>defer</code> statements support executing async tasks using <code>await</code>.</p>\n   <p>The new <code>weak let</code> declaration enables defining as <code>Sendable</code> a class that was previously <code>@unchecked Sendable</code> due to a <code>weak var</code> property. Conversely, if a type should not conform to <code>Sendable</code>, you can now mark it explicitly using <code>~Sendable</code>.</p>\n   <p>Additionally, Swift 6.4 enhances memberwise initializers: when a <code>struct</code> includes both <code>private</code> and <code>internal</code> properties, the compiler automatically generates two initializers, one for the internal properties and a private one including all properties.</p>\n   <p>The new <code>anyAppleOS</code> identifier can be used to simplify platform availability checks:</p>\n   <pre>\r\n<code class=\"language-swift\">@available(macOS 27, iOS 27, visionOS 27, *)\r\nfunc doSomething()\r\n\r\n@available(anyAppleOS 27, *)\r\n@available(tvOS 17, unavailable)\r\nfunc doSomething64()\r\n\r\n#if os(anyAppleOS)\r\n...\r\n#endif\r\n</code></pre>\n   <p>Swift 6.4 also introduces finer-grained control over warnings with the new <code>@diagnose</code> attribute, which lets developers silence deprecation warnings, promote warnings to errors, or downgrade future errors to warnings. The attribute applies to individual function definitions.</p>\n   <p>Testing enhancements in Swift 6.4 bring more control over test execution and reporting. You can mark issues as warnings instead of failures, dynamically cancel tests, including parameterized cases, using the <code>Test.cancel</code> API. Flaky tests can be better handled by repeating failing tests until they pass or reach a configurable retry limit.</p>\n   <p>The new Swift release also improves interoperability between XCTest and Swift Testing by reporting XCTest assertion failures as test issues within Swift Testing and allowing Swift Testing APIs to work inside XCTest. This makes migration easier and preserves test coverage. By default, these cross-framework issues are treated as warnings, with an option to upgrade them to failures in Xcode settings.</p>\n   <p>Speaking of Swift Foundation, the new release continues its migration to Swift, replacing legacy Objective-C code to improve performance and consistency. This includes faster <code>Data</code> operations, improved bridging with <code>NSData</code>, and a unified Swift implementation of <code>URL</code> types, resulting in better performance and lower memory usage while keeping APIs unchanged. Additionally, the release introduces <code>ProgressManager</code> a new type for structured, type-safe progress reporting that integrates seamlessly with <code>async/await</code> and metadata handling.</p>\n   <p>Using Swift 6.4 you will also be able to expose functions written in Swift to C using the new <code>@C</code> attribute, which works similarly to <code>@objc</code>:</p>\n   <blockquote>\n    <p>Any type you can import from C to Swift can also be used in functions that are exported from Swift to C, like integers pointers, imported C structs, and enums with raw integer value types. And, the compiler prevents you from accidentally passing types that are incompatible with C.</p>\n   </blockquote>\n   <p>Swift 6.4 also introduces many additional features beyond the scope of this overview, including enhancements to Swift-Java, WebAssembly, and JavaScriptKit, along with performance improvements, iterable protocols, borrow/mutate accessors, and more. Be sure to watch the <a href=\"https://developer.apple.com/videos/play/wwdc2026/262/?time=451\">WWDC session recording</a> for the full detail.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Swift 6.4 Brings New Language Features and Swift Testing/XCTest Interop\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/06/swift-6-4-beta-features/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782633600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Swift 6.4 beta 版本引入了增强的 C 语言互操作性、async defer、weak let、~Sendable、@diagnose、更快的 URL 解析以及更深入的 Swift Testing/XCTest 集成。",
+  "oneSentenceSummary": "Swift 6.4 beta 版本引入了增强的 C 语言互操作性、async defer、weak let、~Sendable、@diagnose、更快的 URL 解析以及更深入的 Swift Testing/XCTest 集成。",
+  "summary": "这篇来自 InfoQ 的文章报道了 Swift 6.4 的关键特性，目前该版本已在 Xcode 27 中提供 beta 版。语言改进包括简化的类型表达式（例如 `any Int?`）、`defer` 中的 async 支持、`weak let` 声明（它使类无需 `@unchecked` 即可成为 `Sendable`），以及 `~Sendable` 选择退出机制。新的 `anyAppleOS` 标识符简化了平台可用性检查，而 `@diagnose` 属性提供了细粒度的警告控制。测试增强功能允许将问题标记为警告、动态取消测试，以及针对不稳定测试的重试逻辑。XCTest 和 Swift Testing 现在可以互操作，通过将跨框架问题报告为警告或失败来实现。Foundation 的性能提升源于将遗留的 Objective-C 代码迁移到 Swift，从而使 URL 解析速度提高高达 4 倍，并改进了 `Data` 操作。`@C` 属性支持将 Swift 函数导出到 C，并自动进行兼容性检查。文章还提到了其他功能，如 Swift-Java、WebAssembly 和 JavaScriptKit 的增强。",
+  "mainPoints": [
+    {
+      "point": "语言改进简化了日常开发。",
+      "explanation": "async defer、weak let、~Sendable 以及通过 anyAppleOS 简化的可用性检查等功能，提供了更具表现力和更安全的代码，且无需样板代码。"
+    },
+    {
+      "point": "Swift Testing 和 XCTest 互操作简化了迁移。",
+      "explanation": "XCTest 断言失败现在被报告为 Swift Testing 问题，且 Swift Testing API 可在 XCTest 内部工作，允许团队在保持测试覆盖率的同时逐步采用新框架。"
+    },
+    {
+      "point": "Foundation 改进通过 Swift 原生实现提升了性能。",
+      "explanation": "用 Swift 替换遗留的 Objective-C 代码带来了更快的 URL 解析（高达 4 倍）、更好的 Data 操作以及更低的内存使用，且 API 保持不变。"
+    },
+    {
+      "point": "@C 属性实现了无缝的 Swift 到 C 的导出。",
+      "explanation": "与 C 兼容的函数和类型可以使用 @C 导出，类似于 @objc，并且编译器会防止意外传递不兼容的类型。"
+    }
+  ],
+  "keyQuotes": [
+    "任何你可以从 C 导入到 Swift 的类型，也可以用于从 Swift 导出到 C 的函数中，例如整数指针、导入的 C 结构体以及具有原始整数类型的枚举。此外，编译器会阻止你意外传递与 C 不兼容的类型。"
+  ],
+  "tags": [
+    "Swift",
+    "语言特性",
+    "Xcode",
+    "测试",
+    "Foundation"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 562,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782633600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-28 16:00:00"
+}

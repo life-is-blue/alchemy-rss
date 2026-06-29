@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-29 06:21:41 | [返回首页](/README.md)
+**更新时间**: 2026-06-29 08:30:00 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13079)
+- [AI & 大模型](#ai-llm) (13089)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (858)
 - [DevOps](#devops) (620)
 - [产品与商业](#product-business) (38)
-- [其他](#other) (6029)
+- [其他](#other) (6038)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [最新！万字综述-Prompt-到-Loop-进化](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723822&idx=1&sn=d9e451fdb3b3519432c88d0ac4909b7e) - AI 精选
 - [GPT-5.6-Sol-前瞻：下一代模型预览](https://openai.com/index/previewing-gpt-5-6-sol) - AI 精选
 - [新一代学习-AI，苹果端侧模型配方，GLM-5.2-攻克开放性问题](https://www.deeplearning.ai/the-batch/issue-359) - AI 精选
 - [OpenAI-与-Broadcom-发布针对-LLM-优化的推理芯片](https://openai.com/index/openai-broadcom-jalapeno-inference-chip) - AI 精选
@@ -41,9 +42,8 @@
 - [Kimi-Work-Beta-版邀你体验：你的工作，分我一半](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488492&idx=1&sn=f7a0013c095a20f7aaeac00eacec1c16) - AI 精选
 - [打造-AI-原生工程组织-|-Claude](https://claude.com/blog/running-an-ai-native-engineering-org) - AI 精选
 - [为什么视频智能体模型是下一个前沿——Ethan-He，xAI-Grok-Imagine-负责人](https://www.latent.space/p/video-agents) - AI 精选
-- [使用-NVIDIA-Cosmos-3-开发物理-AI-推理、世界与动作模型](https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/) - AI 精选
 
-- [查看全部 13079 篇...](/details/tags/ai-llm.md)
+- [查看全部 13089 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 6029 篇...](/details/tags/other.md)
+- [查看全部 6038 篇...](/details/tags/other.md)
 
 

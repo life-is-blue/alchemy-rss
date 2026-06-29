@@ -1,0 +1,48 @@
+{
+  "id": "RAW_c513a939",
+  "title": "Hack Your Summer",
+  "url": "https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything",
+  "date": "2026-06-29 03:26:11",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">28th June 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Jun/28/hack-your-summer/\">\n    <p><strong><a href=\"https://www.hackyoursummer.org/\">Hack Your Summer</a></strong>. I learned about this initiative from DJ Patil this morning:</p>\n    <blockquote>\n     <p>It’s a 4-week, high-velocity production sprint for undergraduate students, graduate students, and recent graduates who want to build something real this summer.</p>\n     <p>You’ll learn how to identify a project, make steady progress, get support from mentors and peers, and create tangible, public-facing work you can actually show future employers.</p>\n    </blockquote>\n    <p>Hack Your Summer is partly a reaction to the internship crisis facing US college students this year. There are way fewer available internships than usual, as companies have reduced their hiring ambitions and teams have less capacity to coach interns.</p>\n    <p>Hack Your Summer provides an alternative path for the many students who didn't catch one of those rare internships.</p>\n    <p>A second (free) cohort starts on July 13th, and the deadline for students to apply is July 8th. They're also accepting volunteers to help mentor the students.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9530/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Hack Your Summer 是一项面向本科生和研究生的免费 4 周生产冲刺活动，旨在通过构建真实项目来应对当前美国的实习岗位短缺问题。",
+  "oneSentenceSummary": "Hack Your Summer 是一项面向本科生和研究生的免费 4 周生产冲刺活动，旨在通过构建真实项目来应对当前美国的实习岗位短缺问题。",
+  "summary": "Simon Willison 分享了一项名为 Hack Your Summer 的活动，这是一个为期 4 周的高效生产冲刺项目，面向希望在今年夏天构建真实项目的本科生、研究生及应届毕业生。该计划部分是为了应对美国大学生面临的实习危机，因为企业减少了招聘，且指导实习生的精力也有所下降。它为那些未能获得稀缺实习机会的学生提供了一条替代路径。第二期免费队列将于 7 月 13 日启动，申请截止日期为 7 月 8 日。该计划也欢迎志愿者担任导师。",
+  "mainPoints": [
+    {
+      "point": "Hack Your Summer 是一项为期 4 周的生产冲刺活动，旨在帮助学生构建切实的项目。",
+      "explanation": "它教授学生如何确定项目、保持稳定进度、获得导师和同伴的支持，并为未来的雇主创作面向公众的作品。"
+    },
+    {
+      "point": "该计划直接应对美国大学生的实习危机。",
+      "explanation": "由于招聘减少导致实习机会减少，Hack Your Summer 为错失有限机会的学生提供了替代方案。"
+    },
+    {
+      "point": "第二期免费队列将于 7 月 13 日启动，申请截止日期为 7 月 8 日。",
+      "explanation": "学生必须在 7 月 8 日前提交申请，该计划目前正在招募志愿者为参与者提供指导。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "职业发展",
+    "暑期实习",
+    "学生项目",
+    "导师指导",
+    "教育"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 154,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782674771000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-29 03:26:11"
+}
