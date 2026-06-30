@@ -1,0 +1,59 @@
+{
+  "id": "RAW_69d01e9a",
+  "title": "随时随地构建：Cursor iOS 版 · Cursor",
+  "url": "https://cursor.com/blog/ios-mobile-app",
+  "date": "2026-06-29 20:00:00",
+  "author": "Chris Brauchli, Rikki Mukherjee & Kevin Niparko",
+  "siteName": "Cursor Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <figure class=\"!my-1\">\n   <div style=\"aspect-ratio:1920 / 1080;overflow:hidden\"></div>\n  </figure>\n  <p>Cursor is now available as a native iOS app in public beta, so you can build from anywhere.</p>\n  <p>Until now, developers have worked around the limits of their local machines, keeping laptops half-open and caffeinated everywhere they go.</p>\n  <p>With Cursor for iOS, you can launch always-on agents in the cloud, or control agents running on your computer from your phone. Kick them off when ideas strike, get notified when work is ready for review, and merge PRs on the go.</p>\n  <p>Whether your agents are running on your machine or in the cloud, you can move work forward from wherever you are.</p>\n  <a class=\"btn\" href=\"https://apps.apple.com/app/cursor/id6767085653\">Get Cursor for iOS</a>\n  <h3 id=\"launch-and-track-agents-from-anywhere\" class=\"anchor-heading group \"><a href=\"#launch-and-track-agents-from-anywhere\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>Launch and track agents from anywhere</h3>\n  <p>Whether you're catching a flight, cooking a meal, or in between sets at the gym, you can now act on moments of inspiration or curiosity.</p>\n  <p>Open the Cursor mobile app, choose a repo, and launch an agent the same way you would on the desktop app. You can pick any frontier model, describe ideas out loud with voice input, and use slash commands to guide Cursor in the right direction.</p>\n  <figure class=\"!my-1\">\n   <div style=\"overflow:hidden;width:fit-content;max-width:100%\"></div>\n  </figure>\n  <p>For agents running on your computer, use Remote Control to continue directing them from your phone. To ensure your machine remains reachable while you're away from your desk, you can enable a setting that keeps your computer awake.</p>\n  <h3 id=\"new-ways-of-working-from-your-phone\" class=\"anchor-heading group \"><a href=\"#new-ways-of-working-from-your-phone\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>New ways of working from your phone</h3>\n  <p>At Cursor, we use the mobile app for everything from small, well-scoped tasks to long-running projects. It has enabled new workflows for our team and early testers:</p>\n  <ul>\n   <li><strong>Handling incidents while on call:</strong> When you get paged at lunch, you can kick off an agent to investigate and propose a fix. By the time you get back to your computer, you'll have a PR ready for review.</li>\n   <li><strong>Resolving customer issues:</strong> If a customer reports a time-sensitive bug while you're away from your desk, you can start an agent from your phone to reproduce the issue, inspect the relevant code, and work toward a fix.</li>\n   <li><strong>Acting on feedback from other mobile apps:</strong> When you see user feedback on X or other platforms, take a screenshot, annotate it, and send it to an agent as visual context. This is often the fastest way to start design or UI changes.</li>\n  </ul>\n  <h3 id=\"stay-in-the-loop\" class=\"anchor-heading group \"><a href=\"#stay-in-the-loop\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>Stay in the loop</h3>\n  <p>Once an agent starts, you can leave the app. Cursor keeps you updated with Live Activities on your lock screen and push notifications when an agent finishes, needs input, or is ready for review.</p>\n  <figure class=\"!my-1\">\n   <div style=\"overflow:hidden;width:fit-content;max-width:100%\"></div>\n  </figure>\n  <p>Beyond code, <a href=\"https://cursor.com/docs/cloud-agent\" rel=\"noopener noreferrer\" target=\"_blank\">cloud agents</a> produce demos, screenshots, and logs that make it easy to validate their work. When an agent is done, you can review these generated artifacts, inspect diffs, leave follow-up instructions, or merge the PR directly from the app.</p>\n  <figure class=\"!my-1\">\n   <div style=\"overflow:hidden;width:fit-content;max-width:100%\"></div>\n  </figure>\n  <h3 id=\"handoff-between-local-and-cloud\" class=\"anchor-heading group \"><a href=\"#handoff-between-local-and-cloud\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>Handoff between local and cloud</h3>\n  <p>Cloud agents run in isolated virtual machines with full development environments to test, verify, and demo work. Since they operate asynchronously with their own tools and resources, cloud agents can run for longer and iterate toward merge-ready PRs without intervention.</p>\n  <p>To take advantage of these capabilities, send a local plan to a cloud agent or move active agents to the cloud to keep running. You can move the cloud session back to your computer to test changes locally before merging.</p>\n  <h3 id=\"whats-next\" class=\"anchor-heading group \"><a href=\"#whats-next\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>What's next</h3>\n  <p>Over time, the experience of running agents in the cloud will become indistinguishable from running them on your local machine. Until then, we want to make it easy to work with agents across both environments with Remote Control and fluid handoffs between local and cloud.</p>\n  <p>We are also working on adding the ability to create repo-less chats to make it easier to kick off tasks that don't require codebase context. Teams are already using Cursor today with MCPs to query Datadog logs, summarize activity across Slack channels, and more.</p>\n  <p>Cursor for iOS is available now in public beta on all paid plans. Get 75% off on <a href=\"https://cursor.com/docs/models/cursor-composer-2-5\" rel=\"noopener noreferrer\" target=\"_blank\">Composer 2.5</a> runs in the mobile app now through July 5, 2026.</p>\n  <p><a href=\"https://apps.apple.com/app/cursor/id6767085653\" rel=\"noopener noreferrer\" target=\"_blank\">Download for iOS</a> to start building from your phone, or read the <a href=\"http://cursor.com/docs/cloud-agent/mobile\" rel=\"noopener noreferrer\" target=\"_blank\">docs</a> to learn more.</p>\n  <figure>\n   <div class=\"media-border-container overflow-hidden w-fit mr-auto\">\n    <img alt=\"QR code to download Cursor for iOS\" loading=\"lazy\" decoding=\"async\" data-nimg=\"1\" class=\"transition-opacity duration-[220ms] ease-[var(--ease-out-spring)]\" style=\"color:transparent\" srcset=\"https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/qr-code-mobile-final.png 1x, https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/qr-code-mobile-final.png 2x\" src=\"https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/qr-code-mobile-final.png\">\n   </div>\n  </figure>\n </body>\n</html>",
+  "aiSummary": "Cursor 发布了原生 iOS 应用公测版，开发者可远程启动和控制 AI 智能体，支持云端智能体以及设备间无缝切换。",
+  "oneSentenceSummary": "Cursor 发布了原生 iOS 应用公测版，开发者可远程启动和控制 AI 智能体，支持云端智能体以及设备间无缝切换。",
+  "summary": "Cursor 的新 iOS 应用（测试版）允许开发者从手机上启动和监控 AI 智能体，既可通过远程控制运行在本地电脑上，也可通过隔离虚拟机在云端运行。该应用支持语音输入、斜杠命令和推送通知。核心使用场景包括值班时处理事故、远程修复客户 Bug 以及响应用户反馈。云端智能体异步运行，配备完整的开发环境，可生成演示、截图和日志。应用还支持本地会话与云端会话之间的无缝切换。所有付费套餐均可使用，并限时提供 Composer 2.5 运行次数的折扣。",
+  "mainPoints": [
+    {
+      "point": "Cursor iOS 版支持从手机启动和控制 AI 智能体。",
+      "explanation": "开发者可以在远程机器或云端启动智能体，使用语音输入和斜杠命令，工作完成后接收通知。"
+    },
+    {
+      "point": "云端智能体在配备完整开发环境的隔离虚拟机中运行。",
+      "explanation": "它们可以长时间异步运行，自动测试和迭代，直至生成可合并的 PR，无需人工干预。"
+    },
+    {
+      "point": "远程控制功能让你从手机上指挥电脑上的智能体。",
+      "explanation": "离开时电脑保持唤醒状态，你可以通过移动端监控进度、审查 diff 并合并 PR。"
+    },
+    {
+      "point": "真实使用场景包括移动状态下的故障响应和 Bug 修复。",
+      "explanation": "值班或离开工位时，开发者可以启动智能体来排查问题并提交修复方案，返回时即可查看结果。"
+    },
+    {
+      "point": "支持本地智能体与云端智能体之间的无缝切换。",
+      "explanation": "用户可以将本地计划发送给云端智能体，也可以将活跃会话移回本地电脑，在合并前进行最终测试。"
+    }
+  ],
+  "keyQuotes": [
+    "借助 Cursor iOS 版，你可以在云端启动始终在线的智能体，也可以从手机上控制运行在电脑上的智能体。",
+    "云端智能体在配备完整开发环境的隔离虚拟机中运行，用于测试、验证和演示工作成果。"
+  ],
+  "tags": [
+    "AI 编程",
+    "Cursor",
+    "移动开发",
+    "云端智能体",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 672,
+  "domain": "cursor.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_a88d43f5",
+  "sourceName": "Cursor Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782734400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-29 20:00:00"
+}

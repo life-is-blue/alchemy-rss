@@ -1,0 +1,60 @@
+{
+  "id": "RAW_3fca8956",
+  "title": "DiSCoFormer：跨分布同时估计密度与分数的 Transformer",
+  "url": "https://huggingface.co/blog/allenai/discoformer",
+  "date": "2026-06-30 02:02:48",
+  "author": "Kyle Wiggers",
+  "siteName": "Hugging Face - Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"SVELTE_HYDRATER contents\"></div>\n  <div class=\"not-prose mb-6 font-sans xl:hidden\">\n   <div class=\"SVELTE_HYDRATER contents\">\n    <div class=\"flex flex-wrap items-center gap-2.5 pt-1  z-1 lg:sticky lg:top-8\">\n     <div>\n      <font color=\"#334155\">\n       <br>\n      </font>\n     </div>\n    </div>\n    <dialog class=\"shadow-alternate z-40 mx-4 my-auto h-fit select-text overflow-hidden rounded-xl bg-white max-sm:max-w-[calc(100dvw-2rem)] sm:mx-auto lg:mt-26 md:portrait:mt-30 xl:mt-30 2xl:mt-32 w-full sm:w-96 max-w-[calc(100%-4rem)] text-base not-prose\"></dialog>\n   </div>\n  </div>\n  <p></p>\n  <strong>📄 Tech report:</strong> <a href=\"https://arxiv.org/abs/2511.05924\" rel=\"nofollow\">arxiv.org/abs/2511.05924</a>\n  <p></p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/RsD3JLEW1EABr7i2WCKlF.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/RsD3JLEW1EABr7i2WCKlF.png\" alt=\"DiScoFormer One Transformer for density and score across distributions - Google -image-1\"></a></p>\n  <p>Many problems in machine learning and the sciences come down to the same task: you have a collection of data points and want to recover the distribution they came from—which values are common, and which are rare. Pinning down that distribution means estimating two quantities: the distribution's density and, more useful as dimensionality grows, its score. The density is the smooth version of a histogram—high where points cluster and low where they're scarce. The score—the gradient of the log-density—points in the direction the density rises fastest: move a point along the score and it heads toward a more probable region.</p>\n  <p>Diffusion-based generative models (the technology behind AI image generators like Stable Diffusion and DALL-E) start from random noise and repeatedly follow the score, turning that noise into a realistic image. The same score drives Bayesian sampling and the particle simulations used to model systems such as plasma.</p>\n  <p>Extracting the density and score from a finite sample is challenging, and today's tools force a trade-off between generalizability and accuracy. One classical approach, kernel density estimation (KDE), computes the density at any location from the data points around it: the closer and more numerous they are, the higher the density. It needs no training and applies to any distribution, but its accuracy falls off sharply as dimensionality grows. Alternatively, neural score-matching models trained to predict the score stay accurate even in high dimensions, but each needs to learn the distribution and must be retrained from scratch for another.</p>\n  <p>We introduce a new solution called the <a href=\"https://arxiv.org/pdf/2511.05924\" rel=\"nofollow\">DiScoFormer (Density and Score Transformer)</a>—one model that, given a set of data points, estimates both the density and the score of the distribution in a single forward pass without retraining.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"training-a-transformer-for-density-and-score-estimation\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#training-a-transformer-for-density-and-score-estimation\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Training a transformer for density and score estimation </span></h2>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/tNRWwYaFG4jyW5f2xWdoY.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/tNRWwYaFG4jyW5f2xWdoY.png\" alt=\"DiScoFormer One Transformer for density and score across distributions - Google -image-2\"></a></p>\n  <p>DiScoFormer maps an entire sample to the density and score of the distribution behind it using stacked layers of transformer blocks. The model utilizes cross-attention, which allows it to evaluate density and score at any point—not just where you have data. Score and density share a mathematical relationship: score is the gradient of the logarithm of density. We leverage this by having a shared backbone with two output heads, one for the density and one for the score.</p>\n  <p>This coupling does more than save parameters. The score head has to match the gradient of the log-density head at every query, so any gap between them is a label-free consistency loss. We use this at inference—hold the context fixed, take a few gradient steps on that consistency loss, and DiScoFormer adapts itself to an out-of-distribution input on the spot, no ground-truth density or score required.</p>\n  <p>There's a mathematical reason why the transformer architecture fits this task. Kernel density estimation has a single bandwidth—how far each point's influence reaches, fixed in advance and applied identically everywhere. Attention is a strict generalization of it: we analytically show that a single attention head's weights are nearly a Gaussian kernel over the data, so one cross-attention block can already reproduce KDE's density and score. From there the model goes further, learning several such scales at once and adapting them to the data. DiScoFormer doesn't discard the classical method for a black box but instead includes KDE as a special case and improves on it.</p>\n  <p>What data did we use to train DiScoFormer? We relied on Gaussian Mixture Models for two primary reasons. Firstly, GMMs are universal density approximators—with enough components they match essentially any smooth distribution to arbitrarily small error. Secondly, GMMs have closed-form densities and scores, so we always have an exact target to supervise against. We employ both of these properties by drawing a new GMM for every batch, giving the model virtually unlimited examples of target distributions and supervising each against a given GMM's exact density and score.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"performance\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#performance\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Performance </span></h2>\n  <p>Across the board, DiScoFormer beats KDE at both density and score estimation, and the gap widens exactly where KDE struggles. In 100 dimensions, it isn't close—against the best hand-tuned KDE, it cuts score error by about 6.5x and density error by more than 37x, and it keeps improving as you add samples, while KDE runs out of memory. It also travels far outside its training data, staying accurate on mixtures with more modes than it ever saw during training and on non-Gaussian shapes like the Laplace and Student-t. KDE's main advantage remains speed, especially when datasets are small.</p>\n  <p>The part about DiScoFormer that we find most promising is that score estimation is a shared dependency across many fields, such as generative modeling, Bayesian inference, and scientific computing. A pretrained, plug-in estimator that stays accurate in high dimensions and removes the need to retrain per problem could cut that cost across all of them at once—one model, reused everywhere score and density show up.</p>\n  <p>We encourage you to <a href=\"https://arxiv.org/pdf/2511.05924\" rel=\"nofollow\">read our technical report</a> for more details.</p>\n </body>\n</html>",
+  "aiSummary": "DiSCoFormer 是一个单一的 Transformer，只需一次前向传播即可从一组数据点中估计出分布的密度和分数，在高维空间中显著优于 KDE。",
+  "oneSentenceSummary": "DiSCoFormer 是一个单一的 Transformer，只需一次前向传播即可从一组数据点中估计出分布的密度和分数，在高维空间中显著优于 KDE。",
+  "summary": "DiSCoFormer（密度与分数 Transformer）解决了从有限样本中估计分布这一基本任务。与传统方法在泛化性（KDE）和准确性（神经分数匹配）之间权衡不同，DiSCoFormer 接收一组数据点，在一次前向传播中同时输出底层分布的密度和分数，无需重新训练。该模型采用共享的 Transformer 骨干网络和两个输出头，其中分数与对数密度梯度之间的无标签一致性损失使得模型能够在推理时进行分布外自适应。作者通过分析表明，单个交叉注意力头就能推广核密度估计，证明 KDE 是注意力机制的一个特例。训练使用高斯混合模型，提供无限且精确的监督。在 100 维空间中，与最佳调参的 KDE 相比，DiSCoFormer 将分数误差降低了约 6.5 倍，密度误差降低了超过 37 倍，同时对于非高斯分布以及峰数多于训练时的分布仍然保持准确。主要局限是 KDE 在小型数据集上的速度优势。该研究提供了一种可重用的插件式估计器，可同时惠及生成建模、贝叶斯推理和科学计算。",
+  "mainPoints": [
+    {
+      "point": "DiScoFormer 在一次前向传播中从一组点估计密度和分数，无需重新训练。",
+      "explanation": "它使用交叉注意力作为核密度估计的泛化，使其能够在推理时处理新的分布。分数与对数密度梯度之间的一致性损失实现了零样本自适应。"
+    },
+    {
+      "point": "Transformer 架构将核密度估计作为其特例。",
+      "explanation": "从分析上讲，单个注意力头的权重近似于高斯核。DiScoFormer 学习多个尺度并进行调整，超越了固定带宽的 KDE。"
+    },
+    {
+      "point": "基于高斯混合模型的训练提供了精确的监督和无限的多样性。",
+      "explanation": "高斯混合模型是通用逼近器，具有闭式密度和分数。每批次采样一个新的 GMM 为模型提供了几乎无限的训练数据。"
+    },
+    {
+      "point": "DiScoFormer 在高维空间中显著优于 KDE。",
+      "explanation": "在 100 维空间中，与最佳手动调参的 KDE 相比，分数误差降低了约 6.5 倍，密度误差降低了超过 37 倍。随着样本增多，性能提升，而 KDE 会耗尽内存。"
+    },
+    {
+      "point": "该模型能够泛化到其训练分布之外。",
+      "explanation": "它在峰数多于训练时所见的高斯混合模型以及拉普拉斯分布和学生 t 分布等非高斯形状上仍保持准确，尽管从未见过这些分布。"
+    }
+  ],
+  "keyQuotes": [
+    "分数——对数密度的梯度——指向密度上升最快的方向：沿着分数移动一个点，它就会朝向更有可能的区域。",
+    "注意力是核密度估计的严格泛化：我们通过分析表明，单个注意力头的权重近似于数据上的高斯核，因此一个交叉注意力块已经可以再现 KDE 的密度和分数。",
+    "分数估计是生成建模、贝叶斯推理和科学计算等多个领域的共同依赖。"
+  ],
+  "tags": [
+    "Transformer",
+    "密度估计",
+    "分数估计",
+    "生成模型",
+    "注意力机制"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 806,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face - Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782756168000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-30 02:02:48"
+}

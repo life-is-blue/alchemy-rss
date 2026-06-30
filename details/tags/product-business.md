@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-30 06:23:58 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-30 08:30:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 产品与商业
 
@@ -63,6 +63,22 @@
 ### [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136)
 
 2025-06-08 02:25:00
+
+
+
+### [深入-GitHub-Advisory-Database：当漏洞数量打破纪录时发生了什么](https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/)
+
+2026-06-30 00:10:23 | 标签: Security, Vulnerability Management, GitHub, Open Source Security, CVE
+
+> 本文发布于 GitHub 官方博客，深入介绍了 GitHub Advisory Database 在漏洞报告数量结构性激增背景下的现状。文章指出，2026 年 3 月至 5 月期间，该数据库每月处理超过 6，000 条漏洞审核决策；与此同时，私有漏洞报告从每周约 550 份激增至超过 3，000 份，仓库公告从每周约 650 份增至超过 5，000 份，仅 5 月份的 CVE 申请就接近 4，000 份。尽管产出创下纪录，系统自 4 月中旬起仍难以满足内部时效目标，相当比例的提交处理时间延长至数周。文章区分了简单漏洞公告（仅需数分钟）与日益增多的复杂漏洞公告（需要包名消歧、版本范围重建、多生态...
+
+
+
+### [Eliya-25-为-OpenJDK-25-LTS-带来-JVM-级诊断配置](https://www.infoq.com/news/2026/06/eliya-jvm-diagnostic-profile/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-06-29 22:50:00 | 标签: JVM, OpenJDK, Java, Production Diagnostics, HotSpot
+
+> Eliya 25.0.3 由 Asymm Systems 发布，是一款 OpenJDK 25 LTS 发行版，通过 `-XX:EliyaProfile=Production` 标志为生产环境诊断提供策略接入点。该配置集中管理 OOM 时堆转储、OOM 时退出、Native Memory Tracking、崩溃日志路径和 JFR 访问等功能。文章指出，Eliya 的设计仅在涉及"可达性"或"不可覆盖性"的情况下才保留 JVM 级策略，更倾向于通过外部层（Kubernetes、服务网格、包装脚本）处理大部分运维控制。文中还包含对首席架构师 Fahim Farook 的访谈，探讨包装脚本何时不足、如...
 
 
 

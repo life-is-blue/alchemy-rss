@@ -1,0 +1,51 @@
+{
+  "id": "RAW_5b54cc25",
+  "title": "Ornith-1.0：面向智能体编程的自脚手架大语言模型",
+  "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
+  "date": "2026-06-30 00:17:59",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">29th June 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://deep-reinforce.com/ornith_1_0.html\">Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding</a></strong>. This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.</p>\n    <blockquote>\n     <p>[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks.</p>\n    </blockquote>\n    <p>As far as I can tell the licenses of those underlying models is compatible with being used in this way - Gemma 4 is Apache 2.0 licensed (and not bound by the janky additional <a href=\"https://ai.google.dev/gemma/terms\">Gemma Terms of Use</a> that afflicted the previous Gemma models) and Qwen 3.5 is Apache 2.0 licensed as well.</p>\n    <p>I've been running the model using LM Studio and the <a href=\"https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF\">ornith-1.0-35b-Q4_K_M.gguf</a> (20GB) GGUF, hooked up to <a href=\"https://pi.dev/\">Pi</a>. Initial impressions are very good - it seems to be able to run the agent harness over many tool calls in a proficient way.</p>\n    <p>Here's <a href=\"https://gisthost.github.io/?35da4d9ce7f0c27124c67655a0dc9e5d\">a terminal session</a> where I asked it to \"find the code that decodes the actor cookie\" and then \"find the code that opens the insert dialog when thebutton is clicked\" against a Datasette checkout, which it handled with ease.</p>\n    <p>I also had it <a href=\"https://gist.github.com/simonw/1869e1bbcafe5bcad0f26351f6a978a6\">draw this pelican</a>, which came out at 103 tokens/second:</p>\n    <p><img alt=\"Cartoon illustration of a white pelican (albeit slightly mangled) with a large orange beak riding a red bicycle across green hills. The scene has a blue sky with a yellow sun and three white clouds, and small grass tufts dot the foreground.\" src=\"https://static.simonwillison.net/static/2024/ornith-1-pelican.png\"></p>\n    <p>It's a little bit mangled but the pelican is clearly a pelican.</p>\n    <p>I couldn't find much information about DeepReinforce themselves. The earliest paper I could find from the was <a href=\"https://arxiv.org/abs/2507.14111\">CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning</a> from June 2025.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 介绍了 Ornith-1.0，一个用于智能体编程的全新开源权重大语言模型系列，分享了他的本地测试体验，并确认其在工具调用和代码理解任务上表现良好。",
+  "oneSentenceSummary": "Simon Willison 介绍了 Ornith-1.0，一个用于智能体编程的全新开源权重大语言模型系列，分享了他的本地测试体验，并确认其在工具调用和代码理解任务上表现良好。",
+  "summary": "这篇博文由 Simon Willison 撰写，介绍了 DeepReinforce 发布的首个模型 Ornith-1.0，该模型提供从 9B Dense 到 397B MoE 等多种尺寸，采用 MIT 许可证。它基于 Gemma 4 和 Qwen 3.5（均为 Apache 2.0 许可），在开源模型中同尺寸下取得了最先进的编程基准测试结果。Willison 使用 LM Studio 和 Pi 在本地测试了 35B GGUF 量化版本，发现它在多步骤智能体任务（例如在 Datasette checkout 中定位代码、生成鹈鹕图像）中表现出色。他分享了一个终端会话和一个图像生成示例，并指出推理速度很快（103 tokens/s）。文章还对 DeepReinforce 的背景提出了疑问，并链接到其早期的一篇 CUDA 优化论文。总体而言，这是一次快速、动手的评估，有助于读者衡量该模型在智能体编程工作负载中的实际能力。",
+  "mainPoints": [
+    {
+      "point": "Ornith-1.0 是一个新的开源权重大语言模型系列，在编程基准测试中达到 SOTA 水平。",
+      "explanation": "该模型基于 Gemma 4 和 Qwen 3.5（均为 Apache 2.0 许可），采用 MIT 许可证，参数规模从 9B 到 397B 不等，在同类开源模型中表现领先。"
+    },
+    {
+      "point": "本地测试证实该模型能很好地处理多步骤智能体任务。",
+      "explanation": "Willison 通过 LM Studio 和 Pi 运行了 35B GGUF 量化版本，展示了其在多次工具调用中熟练完成代码搜索、对话和图像生成的能力。"
+    },
+    {
+      "point": "得益于 GGUF 支持，该模型可在本地进行实验。",
+      "explanation": "Hugging Face 上提供了 20 GB 的 Q4_K_M GGUF 文件，开发者可以使用消费级硬件在本地运行，推理速度很快（约 103 tok/s）。"
+    }
+  ],
+  "keyQuotes": [
+    "初步印象非常好——它似乎能够以熟练的方式在多次工具调用中运行智能体框架。",
+    "它在编程基准测试中，在同等规模的开源模型中达到了最先进的性能。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 编程",
+    "开源模型",
+    "智能体编程",
+    "模型发布"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 251,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782749879000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-06-30 00:17:59"
+}

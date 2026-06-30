@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-06-30 06:23:58 | [返回首页](/README.md)
+**更新时间**: 2026-06-30 08:30:41 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13089)
+- [AI & 大模型](#ai-llm) (13129)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (858)
-- [DevOps](#devops) (620)
-- [产品与商业](#product-business) (38)
-- [其他](#other) (6038)
+- [前端与全栈](#frontend-fullstack) (860)
+- [DevOps](#devops) (621)
+- [产品与商业](#product-business) (40)
+- [其他](#other) (6055)
 
 
 ---
@@ -43,7 +43,7 @@
 - [打造-AI-原生工程组织-|-Claude](https://claude.com/blog/running-an-ai-native-engineering-org) - AI 精选
 - [为什么视频智能体模型是下一个前沿——Ethan-He，xAI-Grok-Imagine-负责人](https://www.latent.space/p/video-agents) - AI 精选
 
-- [查看全部 13089 篇...](/details/tags/ai-llm.md)
+- [查看全部 13129 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 858 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 860 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 
-- [查看全部 620 篇...](/details/tags/devops.md)
+- [查看全部 621 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -148,6 +148,8 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [深入-GitHub-Advisory-Database：当漏洞数量打破纪录时发生了什么](https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/) - 编程 更多
+- [Eliya-25-为-OpenJDK-25-LTS-带来-JVM-级诊断配置](https://www.infoq.com/news/2026/06/eliya-jvm-diagnostic-profile/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [如何使用-TanStack-Start、Elysia-和-Neon-构建全栈-SaaS-应用](https://www.freecodecamp.org/news/full-stack-saas-tanstack-start-elysia-neon/) - 编程 更多
 - [MySQL，InnoDB-的高并发，究竟是不是因为-MVCC？（第-5-讲，长文收藏）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651979807&idx=1&sn=8f513fa8345d591dec03f94ecfba23b4) - 编程 更多
 - [还是打不过？为什么-Uber-要从-Postgres-迁移到-MySQL？](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247633487&idx=1&sn=c02694dace9fb836f7f479247151e7b6) - 编程 更多
@@ -156,10 +158,8 @@
 - [大半夜发生的一起-MySQL-更新诡异消失案……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247632551&idx=1&sn=e3b62a62696ef05d7611f11fc5bd2f26) - 编程 更多
 - [SSL-for-SaaS-v1-漏洞披露](https://blog.cloudflare.com/vulnerability-disclosure-on-ssl-for-saas-v1-managed-cname/) - 编程 更多
 - [【云故事探索-|-No.8】：揭秘餐饮行业龙头-SaaS-厂商神州商龙的全栈可观测实践](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247507702&idx=2&sn=27ecaef51a7e6428f5cc17e76b3d1687&subscene=0) - 编程 更多
-- [MockMvcTester：Spring-控制器测试的利器](https://blog.jetbrains.com/idea/2025/04/a-practical-guide-to-testing-spring-controllers-with-mockmvctester/) - 编程 更多
-- [C++-开发环境搭建利器：CMake、vcpkg、Docker-和-GitHub-Copilot-详解](https://www.freecodecamp.org/news/c-setup-and-installation-tools-cmake-vcpkg-docker-and-copilot/) - 编程 更多
 
-- [查看全部 38 篇...](/details/tags/product-business.md)
+- [查看全部 40 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 6038 篇...](/details/tags/other.md)
+- [查看全部 6055 篇...](/details/tags/other.md)
 
 
