@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-30 08:30:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-30 11:04:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,17 +710,13 @@
 
 ### [WATaBoy：将-Game-Boy-指令-JIT-编译为-Wasm-超过原生解释器](https://humphri.es/blog/WATaBoy/)
 
-2026-06-29 23:02:00 | 标签: JIT编译, WebAssembly, Game Boy模拟, Rust, 性能优化
-
-> 文章介绍了 WATaBoy，一个作为本科生项目构建的 Game Boy 模拟器，比较了两种执行策略：一个运行在原生环境的标准取指-译码-执行解释器，以及一个即时编译器，它在运行时生成 WebAssembly (Wasm) 字节码，然后由浏览器的 Wasm 引擎编译为原生代码。作者解释了来自 iOS JIT 限制的动机，并概述了 Wasm 代码生成、Rust 中的延迟链接（使用 wasm-encoder crate）以及通过 JavaScript 嵌入器进行调度的实现细节。对《宝可梦 蓝》、《林克的觉醒》和 Tobu Tobu Girl 的性能基准测试表明，JIT-to-Wasm 方法比原生解释...
+2026-06-29 23:02:00
 
 
 
 ### [从-0-到-100-万-Lambda-函数的扩展经验-|-Amazon-Web-Services](https://aws.amazon.com/blogs/architecture/lessons-learned-from-scaling-to-1-million-lambda-functions/)
 
-2026-06-29 18:21:05 | 标签: AWS Lambda, Serverless, 多账户 SaaS, CloudFormation StackSets, 可观测性
-
-> 本文详细记录了 ProGlove 将其无服务器 SaaS 平台从少量 Lambda 函数扩展至超过 100 万、分布于数千个独立 AWS 账户的历程。文章梳理了六个增长阶段，每个阶段都暴露出新的挑战：同步调度引发的自我 DDoS、可观测性成本飙升至与计算支出持平、空闲 SQS 轮询的隐性成本，以及 StackSets 大规模部署的局限性。作者分享了具体的缓解措施，如抖动注入、集中式死信队列、以 EventBridge 直接调用替代 SQS、以及构建 mono-repo 保证一致性。核心教训在于，真正的 scale-to-zero 是成本控制的必要条件，且效率提升速度必须超过增长速度，才能让精简...
+2026-06-29 18:21:05
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-06-30 08:30:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-06-30 11:04:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -572,9 +572,7 @@
 
 ### [百万-PDF：用-Rust-与-Typst-构建现代文档基础设施](https://www.infoq.com/presentations/document-infrastructure-rust-typst/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-06-29 20:35:00 | 标签: PDF 生成, Rust, Typst, 无服务器, AWS Lambda
-
-> Erik Steiger 回顾了他在银行业和制造业中生成 PDF 的困境，那些与数据库紧耦合的缓慢工具如 Crystal Reports 和 LaTeX 造成了运营瓶颈。他介绍了 Typst，一款现代排版引擎，体积小巧（<50MB）且速度快，并展示了如何将其打包进基于 Rust 的 AWS Lambda 函数中，在 100 毫秒内渲染 PDF，成本低于每百万份 0.50 美元。演讲进一步探讨了模板版本控制、内容寻址存储和可复现性的需求，提出了一个受 Docker Hub 和 Git 启发的注册表系统。最终架构支持缓存、并行化和强大的调试能力，为文档基础设施提供了现代化的开发体验。
+2026-06-29 20:35:00
 
 
 
