@@ -1,0 +1,60 @@
+{
+  "id": "RAW_dd6fd63e",
+  "title": "教你让 Claude Code 在你睡觉时继续干活！",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723860&idx=1&sn=eca9e3e526332b86d9775d3887f8e78e",
+  "date": "2026-06-30 23:29:00",
+  "author": "Datawhale",
+  "siteName": "Datawhale",
+  "content": null,
+  "aiSummary": "本文深入区分 Prompt、/goal、/loop 和定时任务在 Claude Code 中的角色，并提供一个可复用的 Loop Charter 模板，帮助读者实现自动化、自检的 AI 工作流。",
+  "oneSentenceSummary": "本文深入区分 Prompt、/goal、/loop 和定时任务在 Claude Code 中的角色，并提供一个可复用的 Loop Charter 模板，帮助读者实现自动化、自检的 AI 工作流。",
+  "summary": "文章聚焦 Claude Code 的 Loop Engineering 概念，通过写 Brief 示例说明一次性 Prompt 与 Loop 的本质差异：Loop 具备自检、迭代与状态记录能力，而不仅仅是一次生成。作者解释了 /goal（有终点任务）与 /loop（定期检查任务）的适用场景，并提供了一个完整的 charter 模板，让读者可以直接复制并填入自己的任务细节。同时讨论了 Loop 的适用边界——不适合一次性任务、成本更高、需要清晰的目标定义。最后鼓励读者从重复的手动任务开始，先监视运行再放心交给定时任务。",
+  "mainPoints": [
+    {
+      "point": "Prompt 是做事，Loop 是管理工人。",
+      "explanation": "一次 Prompt 只生成一次回答，而 Loop 反复推进、自检、重试直到满足可衡量的完成条件，核心区别在于自检机制。"
+    },
+    {
+      "point": "/goal 用于有明确终点的任务，/loop 用于按节奏重复检查的无终点任务。",
+      "explanation": "前者目标如「每个 claim 至少三个来源且链接可打开」，完成后自动停止；后者如每 30 分钟检查网站是否恢复，直到条件满足。"
+    },
+    {
+      "point": "Loop 的核心五步：找工作、做事、检查自己、记录状态、再循环。",
+      "explanation": "记录状态的 LOOP-STATE.md 是关键，确保每次运行能接着上次进度，不重复已完成工作。"
+    },
+    {
+      "point": "Loop 不是定时任务（cron job），因为 Loop 内有 AI 决策者。",
+      "explanation": "Cron 执行固定脚本，而 Loop 使用 Claude 根据当前情况判断下一步动作，处理更复杂的任务变化。"
+    },
+    {
+      "point": "模糊的任务不适合 Loop：需要可衡量的完成状态。",
+      "explanation": "如果连「完成」是什么都说不清，Claude 无法可靠地循环推进，应先明确目标。"
+    }
+  ],
+  "keyQuotes": [
+    "每一轮之后的自检，正是一个真正 loop 和一次性 prompt 的区别。",
+    "不要再自己当 loop。让 loop 替你提示 Claude。",
+    "Prompting is doing the work. Loop engineering is managing the worker."
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "提示工程",
+    "AI 工作流",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 89,
+  "wordCount": 3124,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4688eb",
+  "sourceName": "Datawhale",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1782833340000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-06-30 23:29:00"
+}
