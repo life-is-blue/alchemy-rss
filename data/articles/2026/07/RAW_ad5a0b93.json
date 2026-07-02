@@ -1,0 +1,56 @@
+{
+  "id": "RAW_ad5a0b93",
+  "title": "美团 LongCat-2.0 正式发布：在国产算力集群上完成全流程训练与推理的万亿参数模型",
+  "url": "https://tech.meituan.com/2026/06/30/LongCat2.0.html",
+  "date": "2026-07-01 16:02:04",
+  "author": "美团 · 技术团队",
+  "siteName": "美团 · 技术团队",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"app\">\n   <div class=\"vp-theme-container external-link-icon\">\n    <button type=\"button\" class=\"vp-toggle-color-mode-button vp-color-mode-fab\" title=\"toggle color mode\">\n     <svg class=\"light-icon\" viewBox=\"0 0 32 32\" style=\"\">\n      <path d=\"M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z\" fill=\"currentColor\"></path><path d=\"M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z\" fill=\"currentColor\"></path><path d=\"M2 15.005h5v2H2z\" fill=\"currentColor\"></path><path d=\"M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z\" fill=\"currentColor\"></path><path d=\"M15 25.005h2v5h-2z\" fill=\"currentColor\"></path><path d=\"M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z\" fill=\"currentColor\"></path><path d=\"M25 15.005h5v2h-5z\" fill=\"currentColor\"></path><path d=\"M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z\" fill=\"currentColor\"></path><path d=\"M15 2.005h2v5h-2z\" fill=\"currentColor\"></path>\n     </svg>\n    </button>\n    <div class=\"vp-page-wrapper\">\n     <main class=\"vp-page\">\n      <div class=\"vp-page-content-wrapper\">\n       <div class=\"vp-page-content\">\n        <div class=\"vp-post-header\">\n         <div class=\"vp-post-cover\">\n          <img src=\"https://image.jido.dev/20260701085801_a042216363048b0aa2b0246dd928fd70371630.png\" alt=\"美团 LongCat-2.0 正式发布：在国产算力集群上完成全流程训练与推理的万亿参数模型\">\n         </div>\n        </div>\n        <div>\n         <p>6月30日，美团正式发布新一代万亿参数大模型 LongCat-2.0，并将对外开源。</p>\n         <p>作为<strong>业界首个在五万卡国产算力集群上完成全流程训练与推理的万亿参数模型</strong>（总参数 1.6 T，平均激活约 48 B，动态范围 33B~56B），LongCat-2.0 从零开始预训练，原生支持 1M 超长上下文，其架构设计自始至终围绕一个核心目标：<strong>让模型在真实的 Agentic Coding 任务中，更高效、更稳定地完成代码理解、生成与执行</strong>。</p>\n         <p>正式版发布前，LongCat-2.0预览版本已通过 OpenRouter 平台和<a href=\"https://longcat.ai/\" target=\"_blank\" rel=\"noopener noreferrer\">longcat.ai</a>面向全球开发者开放调用——截至目前该模型<strong>已跻身 OpenRouter 全球大模型调用量前三</strong>，月调用量在 Hermes、Claude Code 和 OpenClaw 分列全球第一、第二和第三位，<strong>成为最受全球 Agent 开发者欢迎的模型之一</strong>。</p>\n         <iframe frameborder=\"0\" src=\"https://s3plus.meituan.net/ddfile/2026-06-30%2011_20_15.mp4\" allowfullscreen=\"true\" height=\"720\" width=\"1280\"></iframe>\n         <h2 id=\"_01-国模国芯全栈协同-完成万亿参数-moe-模型在国产算力上的稳定训练\" tabindex=\"-1\"><a class=\"header-anchor\" href=\"#_01-国模国芯全栈协同-完成万亿参数-moe-模型在国产算力上的稳定训练\"><span>01 国模国芯全栈协同：完成万亿参数 MoE 模型在国产算力上的稳定训练</span></a></h2>\n         <p>LongCat 团队对国产算力的探索始于 2023 年，三年来，团队从千卡起步，逐步攻克算子适配、通信优化、分布式稳定性等基础难题，最终在五万卡集群上完成万亿参数模型的全流程训练与推理。</p>\n         <p>LongCat-2.0 预训练数据规模超过30Ttokens，覆盖中文、英文、多语言和代码等多类数据；面对万卡级训练中的硬件故障、通信异常、显存压力与数值波动，LongCat 团队从<strong>稳定性、正确性和效率</strong>三方面攻克国产算力训练难题。</p>\n         <ul>\n          <li>在<strong>稳定性</strong>上，通过卡间通信异常处理、弹性扩缩卡和自动故障恢复，将月均日故障率降低70%以上；</li>\n          <li>在<strong>正确性</strong>上，通过自研设计确定性算子、Bitwise 一致性验证和参数检测，保障训练结果的可靠，同时基于实践提升关键模块计算精度、优化 Reduce 逻辑；</li>\n          <li>在<strong>效率</strong>上，通过流水线调度、显存优化和算子级控核，训练 MFU 提升 1.5 倍。</li>\n         </ul>\n         <p><strong>最终，LongCat 实现稳态日吞吐超过1T tokens/day，完成万亿参数 MoE 模型在国产算力上的稳定训练。</strong></p>\n         <p>在推理阶段，LongCat-2.0 围绕模型、算子和框架进行协同优化：通过大规模专家并行聚合访存带宽，支撑万亿参数 MoE 模型的低延迟解码；将零计算专家机制融入专家并行通信流程，使路由到零专家的 token 真正避免不必要的传输与计算；并针对通信、Attention、GEMM 等核心算子优化调度，结合提前下发与权重预取等框架机制，进一步降低推理链路中的等待开销。</p>\n         <p><strong>从稳定训练到低延迟推理，LongCat-2.0 验证了我们已具备在国产算力集群上进行大规模模型训练的能力。它不只是“能训出”万亿参数模型，还让万亿参数模型能够在真实任务中稳定运行。</strong></p>\n         <h2 id=\"_02-让模型在真实-agentic-coding-任务中更高效、更稳定地完成代码理解、生成与执行\" tabindex=\"-1\"><a class=\"header-anchor\" href=\"#_02-让模型在真实-agentic-coding-任务中更高效、更稳定地完成代码理解、生成与执行\"><span>02 让模型在真实 Agentic Coding 任务中更高效、更稳定地完成代码理解、生成与执行</span></a></h2>\n         <p>LongCat-2.0 的架构设计始终围绕一个核心目标：<strong>让模型在真实 Agentic Coding 任务中更高效、更稳定地完成代码理解、生成与执行</strong>。</p>\n         <p><strong>1M超长上下文，让 Agent 看见整个项目。传统模型在处理超过 100K 上下文后就开始“遗忘”前面的内容</strong>。LongCat-2.0 采用<strong>LongCat Sparse Attention（LSA）稀疏注意力机制</strong>，在处理长文本时不再“逐字逐句地看”，而是智能筛选关键信息，将计算量从平方级降至线性级。这使得模型在 100 万 Token 的超长上下文中，依然保持精准的信息定位与理解能力。</p>\n         <p><strong>零计算专家 + ScMoE，让算力用在刀刃上</strong>。代码任务中不同 token 复杂度差异巨大——定义变量名和推导递归算法对算力的需求完全不同。LongCat-2.0 通过零计算专家实现 token 级动态激活（33B~56B），简单 token 不消耗算力，复杂 token 自动获得更多计算资源。</p>\n         <p><strong>MOPD 多专家融合，一个模型同时擅长写代码、做推理、懂交互</strong>。LongCat-2.0 通过 MOPD 架构融合 Agent、Reasoning、Interaction 三组专家能力——Agent Experts 专攻工具调用与自主纠错，Reasoning Experts 深耕数学与 STEM 推理，Interaction Experts 优化指令遵循与交互体验。推理时由门控网络根据任务类型动态调度最擅长的专家，而非简单合并参数。得益于此，模型在编程、推理、交互等维度均表现突出。</p>\n         <p><strong>LongCat-2.0 通过精细的架构设计，让万亿参数模型在实际任务中更高效、更稳定地发挥能力。</strong></p>\n         <p><img src=\"https://image.jido.dev/20260701085801_ef19600fdb0e6868a3574c4a8c7ff746220482.png\" alt=\"\"></p>\n         <h2 id=\"_03-在编程能力、真实办公场景的复杂任务处理方面表现优异\" tabindex=\"-1\"><a class=\"header-anchor\" href=\"#_03-在编程能力、真实办公场景的复杂任务处理方面表现优异\"><span>03 在编程能力、真实办公场景的复杂任务处理方面表现优异</span></a></h2>\n         <p>综合评测结果显示，LongCat-2.0 凭借卓越的综合性能与稳定的任务表现，<strong>在 Code 和 General Agent 场景表现优异</strong>。</p>\n         <p><img src=\"https://image.jido.dev/20260701085801_9d8da6909183ad1a8e591186849c0947457784.png\" alt=\"\"></p>\n         <ul>\n          <li><strong>在编程能力方面</strong>，LongCat-2.0 展现出扎实的综合实力：在考察深层工程能力的 SWE-bench Pro 中获得 59.5，领先Gemini 3.1 Pro（54.2）、GPT-5.5（58.6）和 Claude Opus 4.6（57.3）；在 SWE-bench Multilingual 中取得 77.3 的成绩，与 Claude Opus 4.6（77.8）保持在同一水位；此外，在真实终端指令交互评测 Terminal-Bench 2.1 中取得 70.8，体现了其在真实运维与开发终端任务中的稳定执行与纠错能力。</li>\n          <li><strong>在真实办公场景的复杂任务处理方面</strong>，LongCat-2.0 表现均衡：在搜索智能体评测集RWSearch中获得 78.8，在生产力场景评测集 FORTE 中获得 73.2 ，在 BrowseComp 中获得 79.9，均达到或接近前沿闭源模型水平，证明了其在多步骤任务规划、复杂工具调用及长程检索执行上的高可靠性，能够较好的契合企业级 Agent 的落地需求。</li>\n         </ul>\n         <h2 id=\"_04-在真实工作场景中-成为大家可靠的-工作伙伴\" tabindex=\"-1\"><a class=\"header-anchor\" href=\"#_04-在真实工作场景中-成为大家可靠的-工作伙伴\"><span>04 在真实工作场景中，成为大家可靠的“工作伙伴”</span></a></h2>\n         <p>内测期间，我们面向真实工作场景征集了大量真实的用户任务需求，这些来自一线的真实“工作单”，可以看出 LongCat-2.0 在用户的真实工作场景中正在成为他们可靠的“工作伙伴”。</p>\n         <p><strong>Agent 搭建：一问即得，全闭环交付</strong></p>\n         <p>通过 LongCat-2.0 搭建的 AI SQL Agent，业务人员可以直接用自然语言查询数据。LongCat-2.0 自动完成全链路闭环——理解问题意图、规划查询步骤，并将数据结果转化为清晰的业务洞察。</p>\n         <p><a href=\"https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow\" target=\"_blank\" rel=\"noopener noreferrer\">查看视频</a></p>\n         <p><strong>代码库迁移：读懂老代码，重构新架构</strong></p>\n         <p>给 LongCat-2.0 一个旧版插件代码库和一份新版SDK文档，它能自行分析整体架构、梳理核心逻辑，再将整个插件重构为符合新API的实现——保留全部原有功能，修复潜在隐患，编译一次通过。</p>\n         <p><a href=\"https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow\" target=\"_blank\" rel=\"noopener noreferrer\">查看视频</a></p>\n         <p><strong>完整应用开发：从一句话到可运行产品</strong></p>\n         <p>描述一个“儿童AI游戏训练场”的创意，LongCat-2.0 会逐步生成技术选型、页面架构、游戏逻辑与视觉细节——从首页到三个完整可玩的游戏页面，全部代码一次产出，开箱即用。从一句话到可用的产品，将灵感轻松实现。</p>\n         <p><a href=\"https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow\" target=\"_blank\" rel=\"noopener noreferrer\">查看视频</a></p>\n         <p><strong>3D交互演示：一句话，生成一个3D世界</strong></p>\n         <p>通过一句话描述，LongCat-2.0 即可生成完整 Three.js 3D 演示：透明烧瓶、荧光液体、泡沫喷发、液面下降和堆积效果全部可交互呈现。所有代码封装在一个 HTML 文件中，打开即用，让创意快速转化为可交互的3D体验。</p>\n         <p><a href=\"https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow\" target=\"_blank\" rel=\"noopener noreferrer\">查看视频</a></p>\n         <p><strong>AI 小说工厂：从单点灵感到商业变现</strong></p>\n         <p>基于 LongCat-2.0 构建的“AI小说工厂”，将创意写作升级为自动化内容流水线。用户输入灵感后，系统编排多个 Agent，自动完成世界观构建、并行章节生成、质量评估与回流修订。并通过长上下文能力保障百万字级设定一致性。最终内容可自动适配多平台发布，并由 Web 面板实时监控生成进度与质量状态，实现持续稳定的连载输出。</p>\n         <p><a href=\"https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow\" target=\"_blank\" rel=\"noopener noreferrer\">查看视频</a></p>\n         <p><strong>立即体验</strong></p>\n         <ul>\n          <li><strong>API 开放平台：<a href=\"https://longcat.chat/platform/product\" target=\"_blank\" rel=\"noopener noreferrer\">https://longcat.chat/platform/product</a></strong></li>\n         </ul>\n        </div>\n       </div>\n      </div>\n     </main>\n     <div class=\"vp-about-footer\">\n      <div class=\"footer-content\">\n       <div class=\"image-container\">\n        <img src=\"https://image.jido.dev/20260701085801_3350d0ad522eaf1b6f0cfebe837ac603112312.png\" alt=\"美团技术团队\">\n       </div>\n       <div class=\"text-container\">\n        <div class=\"slogan-en\">CODE A BETTER LIFE</div>\n        <div class=\"slogan-cn\">一行代码·亿万生活</div>\n        <div class=\"description\">美团技术团队，欢迎更多优秀技术人才加入</div>\n        <div class=\"sub-description\">微信扫码关注美团技术团队</div>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "美团发布业界首个在五万卡国产算力集群上完成全流程训练与推理的万亿参数 MoE 模型 LongCat-2.0，原生支持 1M 超长上下文，聚焦 Agentic Coding 任务，在多项基准测试中表现优异。",
+  "oneSentenceSummary": "美团发布业界首个在五万卡国产算力集群上完成全流程训练与推理的万亿参数 MoE 模型 LongCat-2.0，原生支持 1M 超长上下文，聚焦 Agentic Coding 任务，在多项基准测试中表现优异。",
+  "summary": "文章正式宣布美团新一代万亿参数大模型 LongCat-2.0 的发布与开源。该模型总参数 1.6T，平均激活约 48B，动态范围 33B-56B，是业界首个在五万卡国产算力集群上完成从零预训练到推理全流程的模型。团队从稳定性、正确性、效率三方面攻克了国产算力挑战，将月均日故障率降低 70% 以上，训练 MFU 提升 1.5 倍。架构上采用 LongCat Sparse Attention（LSA）实现 1M 超长上下文的线性复杂度推理，通过零计算专家 + ScMoE 实现 token 级动态激活，并以 MOPD 架构融合 Agent、Reasoning、Interaction 三组专家。评测方面，LongCat-2.0 在 SWE-bench Pro（59.5）、SWE-bench Multilingual（77.3）等编程基准上领先或接近最先进闭源模型，在 Search、BrowseComp 等 Agent 场景也表现均衡。文章还展示了基于 LongCat-2.0 的真实应用案例，包括 AI SQL Agent、代码库迁移、3D 交互演示等，验证了其在真实工作场景中的实用价值。",
+  "mainPoints": [
+    {
+      "point": "LongCat-2.0 是业界首个在五万卡国产算力集群上完成全流程训练的万亿参数模型。",
+      "explanation": "总参数 1.6T，平均激活 48B，训练数据超 30T tokens，通过稳定性、正确性、效率三方面优化，实现稳态日吞吐超过 1T tokens/day。"
+    },
+    {
+      "point": "架构创新实现高效长上下文与动态算力分配。",
+      "explanation": "LongCat Sparse Attention 将长文本计算量从平方级降至线性级，支持 1M 上下文；零计算专家实现 token 级动态激活，简单 token 不消耗算力；MOPD 多专家融合使模型同时擅长编程、推理与交互。"
+    },
+    {
+      "point": "在编程与 Agent 基准测试中表现突出。",
+      "explanation": "SWE-bench Pro 得分 59.5，领先 Gemini 3.1 Pro、GPT-5.5 和 Claude Opus 4.6；SWE-bench Multilingual 77.3，与 Claude Opus 4.6 持平；在终端指令交互评测 Terminal-Bench 中取得 70.8。"
+    },
+    {
+      "point": "真实场景验证了模型在 Agentic Coding 与复杂任务中的实用能力。",
+      "explanation": "内测案例涵盖 AI SQL Agent、代码库迁移、完整应用开发、3D 交互演示等，展现了模型在真实工作场景中的闭环交付能力。"
+    }
+  ],
+  "keyQuotes": [
+    "业界首个在五万卡国产算力集群上完成全流程训练与推理的万亿参数模型",
+    "LongCat-2.0 验证了我们已具备在国产算力集群上进行大规模模型训练的能力。它不只是‘能训出’万亿参数模型，还让万亿参数模型能够在真实任务中稳定运行。",
+    "传统模型在处理超过 100K 上下文后就开始‘遗忘’前面的内容。LongCat-2.0 采用 LongCat Sparse Attention（LSA）稀疏注意力机制，在处理长文本时不再‘逐字逐句地看’，而是智能筛选关键信息。"
+  ],
+  "tags": [
+    "大语言模型",
+    "LLM",
+    "MoE模型",
+    "模型训练与推理",
+    "超长上下文"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 91,
+  "wordCount": 2743,
+  "domain": "tech.meituan.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f18ad4",
+  "sourceName": "美团 · 技术团队",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1782892924787,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-01 16:02:04"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-02 06:28:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-02 08:31:08 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -378,7 +378,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -705,6 +705,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [如何使用-JavaScript-构建基于浏览器的-PDF-页边距工具](https://www.freecodecamp.org/news/build-pdf-margin-tool-javascript/)
+
+2026-07-02 00:28:38 | 标签: JavaScript, PDF 处理, 浏览器应用, pdf-lib, Web 开发
+
+> 本文提供了一个逐步指南，用于创建一个在浏览器中为 PDF 文件添加页边距的 Web 应用。它解释了为什么 PDF 页边距对打印、装订和注释很有用，然后逐步介绍了项目设置、使用 pdf-lib 库、构建上传界面、预览页面、配置页边距设置（自定义值、预设、单位、镜像边距、页面选择和调整大小模式）、通过扩展页面或重新定位内容来应用边距，最后生成和下载更新后的 PDF。所有处理都在本地进行，确保文档隐私。本指南包含每个步骤的代码片段和截图。
+
+
+
+### [如何使用-HTML、CSS-和-JavaScript-构建文本比较工具](https://www.freecodecamp.org/news/how-to-build-text-compare-tool-html-css-javascript/)
+
+2026-07-01 23:36:17 | 标签: JavaScript, HTML, CSS, Web 开发, 差分算法
+
+> 本教程来自 freeCodeCamp，逐步引导读者创建一个功能完整、基于浏览器的文本比较工具。内容包括搭建项目文件、使用两个 textarea 和结果面板构建 HTML 结构、使用 CSS 变量和 flexbox 进行样式设计，以及使用 LCS 算法实现核心 JavaScript 差分引擎。工具将文本拆分为单词，构建网格以寻找最长公共子序列，并用红色（删除）和绿色（新增）高亮标记差异。重点强调客户端处理，以确保安全并实现即时反馈。教程提供完整可运行的项目，并以一个测试示例收尾。适合具备基础 HTML、CSS 和 JavaScript 知识的初学者。
 
 
 
@@ -1416,13 +1432,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1572,13 +1588,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3072,13 +3088,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4782,13 +4798,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

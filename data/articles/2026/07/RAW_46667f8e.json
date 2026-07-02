@@ -1,0 +1,50 @@
+{
+  "id": "RAW_46667f8e",
+  "title": "Instacart 通过配置驱动的多租户平台扩展个性化营销",
+  "url": "https://www.infoq.com/news/2026/07/instacart-multi-tenant-marketing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-01 22:05:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Instacart engineers described a <a href=\"https://tech.instacart.com/scaling-personalized-marketing-for-multi-tenant-commerce-platforms-816f0c6a046b\">redesign of its personalized marketing system to support hundreds of retail banners across its commerce platform</a>&nbsp;using a configuration-driven multi-tenant architecture. The system enables retailers to run personalized campaigns without requiring separate per-tenant implementations, replacing earlier retailer-specific campaign systems.</p>\n   <p>Instacart reported 99.9% delivery success rate across retailers, and template updates propagate from configuration changes to production environments in under a minute due to the separation between configuration and execution layers with this redesign.</p>\n   <p>Storefront Pro sits on top of Instacart Marketplace, which provides the core commerce infrastructure powering retailer-facing commerce experiences. As adoption of Storefront Pro increased across hundreds of retail banners, campaign logic for definition, targeting, and execution was implemented separately for each retailer, which increased operational complexity and required repeated engineering effort to replicate similar functionality across tenants. Coordinating changes across retailers also became increasingly difficult due to divergent implementations.</p>\n   <p>To address this, Instacart introduced a centralized marketing platform built on shared commerce infrastructure. The platform consolidates campaign execution into a shared system while representing tenant-specific behavior through structured configuration rather than code. This enables a single execution model to support multiple retailers while preserving controlled variation within defined platform boundaries.</p>\n   <p>The architecture follows a multi-tenant model in which a shared campaign engine processes definitions across all retailers. Each retailer defines campaign behavior through a structured configuration that is evaluated at runtime by the execution layer. Campaign capabilities are deployed once and made available across all Storefront Pro retailers without per-tenant integration changes, reducing duplication while maintaining controlled extensibility.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/07/instacart-multi-tenant-marketing/news/2026/07/instacart-multi-tenant-marketing/en/resources/1instacartmultitenant-1781993593915.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/07/instacart-multi-tenant-marketing/en/resources/1instacartmultitenant-1781993593915.jpeg\" rel=\"share\"></p>\n   <p>Multi-tenant campaign execution model with configuration-driven personalization&nbsp;<em>(Source: <a href=\"https://tech.instacart.com/scaling-personalized-marketing-for-multi-tenant-commerce-platforms-816f0c6a046b\">Instacart Blog Post</a>)</em></p>\n   <p>A key design constraint is balancing standardization with flexibility. The shared multi-tenant platform reduces operational complexity, while configuration-based extensibility provides controlled mechanisms for tenant-specific behavior within a unified execution model. Tenant isolation is enforced at both data and execution layers to maintain separation between retailers operating on the shared system.</p>\n   <p>The architecture separates campaign configuration, audience evaluation, message generation, and delivery into distinct processing stages. This modular separation enables independent evolution of each component without requiring full system redesigns when individual capabilities change, improving long-term maintainability of the system.</p>\n   <p>The platform supports iterative improvements in campaign behavior using runtime signals. One area under evaluation is the use of early campaign performance data to adjust ongoing executions, including comparing variant performance during active campaigns and adjusting message elements such as subject lines or creative variations based on observed engagement signals.</p>\n   <p>The system also supports experimentation with automated content generation workflows, including generating subject lines aligned with retailer brand constraints, suggesting copy variations based on prior campaign performance, and evaluating potential improvements before campaign launch. These capabilities operate as advisory components rather than replacing marketer decision-making.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/07/instacart-multi-tenant-marketing/news/2026/07/instacart-multi-tenant-marketing/en/resources/1Screenshot 2026-06-20 at 2.22.03 PM-1781993593915.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/07/instacart-multi-tenant-marketing/en/resources/1Screenshot 2026-06-20 at 2.22.03 PM-1781993593915.png\" rel=\"share\"></p>\n   <p><em>Campaign lifecycle and personalization execution flow in a shared marketing platform (Source: <a href=\"https://tech.instacart.com/scaling-personalized-marketing-for-multi-tenant-commerce-platforms-816f0c6a046b\">Instacart Blog Post</a>)</em></p>\n   <p>The event-driven architecture abstracts delivery channels behind a unified execution pipeline, enabling support for additional messaging channels beyond existing configurations. This design also allows future capabilities such as coordinated messaging across email, push notifications, and SMS, along with optimization of message timing based on user-level engagement patterns.</p>\n   <p>By shifting from retailer-specific implementations to a shared configuration-driven multi-tenant model, Instacart reduces duplication, improves operational consistency, and enables faster iteration across its marketing ecosystem while preserving controlled tenant-level customization.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Instacart Scales Personalized Marketing via Configuration-Driven Multi-Tenant Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/instacart-multi-tenant-marketing/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1782914700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Instacart 工程师将其个性化营销系统重新设计为配置驱动的多租户平台，取代了针对特定零售商的实现，以减少重复、提高一致性，并加快数百个零售品牌的迭代。",
+  "oneSentenceSummary": "Instacart 工程师将其个性化营销系统重新设计为配置驱动的多租户平台，取代了针对特定零售商的实现，以减少重复、提高一致性，并加快数百个零售品牌的迭代。",
+  "summary": "本文报道了 Instacart 对其个性化营销系统进行的架构重新设计，以支持其 Storefront Pro 平台上的数百个零售品牌。以前的方法需要为每个零售商进行单独的实现，导致运营复杂性和重复工作。新的平台采用多租户模型，共享的活动引擎在运行时评估特定租户的结构化配置，将活动定义、受众评估、消息生成和投放分离为模块化阶段。主要成果包括 99.9% 的投放成功率和分钟级的配置传播。该架构通过在数据和执行层进行租户隔离，平衡了标准化和可控的灵活性。它还通过运行时信号和自动化内容生成的实验支持迭代改进，同时为未来的扩展提供渠道无关的执行。本文强调了平台标准化和零售商特定定制之间的权衡是核心设计约束。",
+  "mainPoints": [
+    {
+      "point": "Instacart 用共享的配置驱动的多租户平台取代了每个零售商的活动实现。",
+      "explanation": "以前的方法需要为每个零售商复制活动逻辑，增加了运营复杂性和工程工作量。新的集中式平台通过使用结构化配置而非代码来表示特定租户的行为，将执行整合到共享系统中。"
+    },
+    {
+      "point": "该架构将活动生命周期模块化为独立的阶段，以实现独立演进。",
+      "explanation": "活动配置、受众评估、消息生成和投放被分离为不同的处理阶段，使得可以在组件级别进行更改而无需重新设计整个系统，从而提高长期可维护性。"
+    },
+    {
+      "point": "该平台实现了 99.9% 的投放成功率和分钟级的配置传播。",
+      "explanation": "通过将配置与执行解耦，模板更新可以从配置更改传播到生产环境，耗时不到一分钟。这种运营效率是配置层和执行层架构分离的直接结果。"
+    }
+  ],
+  "keyQuotes": [
+    "通过从特定零售商的实现转变为共享的配置驱动的多租户模型，Instacart 减少了重复，提高了运营一致性，并加快了其营销生态系统的迭代，同时保留了受控的租户级定制。"
+  ],
+  "tags": [
+    "多租户架构",
+    "配置驱动",
+    "营销平台",
+    "个性化",
+    "系统设计"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 542,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782914700000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-01 22:05:00"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "RAW_feb094ec",
+  "title": "图谱 RAG：利用知识图谱构建更智能的检索工作流",
+  "url": "https://www.infoq.com/presentations/graph-rag-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-01 22:01:00",
+  "author": "Cassie Shum",
+  "siteName": "InfoQ",
+  "content": null,
+  "aiSummary": "本演讲阐述了 GraphRAG 如何借助知识图谱为检索工作流添加语义结构和可追溯性，克服了传统 RAG 在多跳推理、全局上下文和企业级复杂场景中的局限。",
+  "oneSentenceSummary": "本演讲阐述了 GraphRAG 如何借助知识图谱为检索工作流添加语义结构和可追溯性，克服了传统 RAG 在多跳推理、全局上下文和企业级复杂场景中的局限。",
+  "summary": "RelationalAI 的 Cassie Shum 介绍了 GraphRAG 的实践方法，并将其与传统 RAG 进行对比。她指出了传统 RAG 的关键缺陷——关系遍历能力差、缺乏全局上下文、多跳推理能力弱以及可追溯性不足——并认为尽管大语言模型的上下文窗口不断扩大，但企业级应用仍需要结构化的语义来支持可解释性和深度推理。GraphRAG 的核心在于构建一个包含本体论的知识图谱，以捕捉实体、关系和业务逻辑，然后通过流水线从非结构化文档（如客户反馈）中提取结构化信息并将其合并到现有图谱中。她以 Jaffle Shop 为例，展示了知识图谱如何同时支持结构化查询（如订单历史）和非结构化查询（如客户情绪）。演讲还提到了将 GraphRAG 与智能体工作流集成的可能性。",
+  "mainPoints": [
+    {
+      "point": "传统 RAG 在多跳推理、全局上下文和可追溯性方面存在困难。",
+      "explanation": "缺乏结构化图谱时，连接分散的事实、归纳主题洞察以及追踪决策路径变得不可靠，尤其是在复杂的企业领域中。"
+    },
+    {
+      "point": "GraphRAG 通过提取实体和关系构建知识图谱，并结合本体论为检索添加语义结构。",
+      "explanation": "本体论将业务逻辑和约束条件表示为关系，使语义更贴近数据，从而实现比扁平向量相似度匹配更深层次的推理。"
+    },
+    {
+      "point": "GraphRAG 流水线通过迭代扩展知识图谱，将非结构化数据纳入其中。",
+      "explanation": "无论是从已有图谱还是从零开始，流水线都可以从文档中提取实体并构建层级关系，然后合并这些信息以丰富图谱，实现更强大的查询能力。"
+    },
+    {
+      "point": "知识图谱为大语言模型生成的答案提供了可追溯性和可解释性。",
+      "explanation": "通过遍历图谱中的节点和边，GraphRAG 能够解释其得出结论的过程，这对于金融和医疗等受监管的行业至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "传统 RAG 非常局部化，它没有考虑实际上下文的主题。",
+    "知识图谱的不同之处在于其图结构本身所蕴含的语义。",
+    "上下文越丰富，赋予的语义越多，准确性就越高。"
+  ],
+  "tags": [
+    "图谱 RAG",
+    "知识图谱",
+    "大语言模型",
+    "检索增强生成",
+    "语义检索"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 31,
+  "score": 88,
+  "wordCount": 7702,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782914460000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-01 22:01:00"
+}
