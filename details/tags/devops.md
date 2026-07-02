@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-02 08:31:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-02 11:03:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -572,25 +572,19 @@
 
 ### [什么是-JSON-Schema？](https://www.freecodecamp.org/news/what-is-a-json-schema/)
 
-2026-07-02 00:14:21 | 标签: JSON Schema, API 开发, 数据验证, OpenAPI, Azure ARM 模板
-
-> 本文解释了 JSON Schema 是什么，以及它对处理 JSON 数据的开发人员的重要性。文章首先讨论了畸形或意外 JSON 数据的问题以及验证的必要性。然后，通过使用诸如 `$schema`、`$id`、`type`、`properties` 和 `required` 等关键词，逐步讲解了 JSON Schema 的结构，并提供了清晰的代码示例。文章涵盖了如何逐步创建一个基本模式，从声明模式版本到定义验证关键词。此外，文章介绍了两个主要的应用场景：OpenAPI（用于记录 API 请求/响应结构）和 Azure 资源管理器 (ARM) 模板（用于声明式基础设施部署）。最后，介绍了 JSON...
+2026-07-02 00:14:21
 
 
 
 ### [如何使用-PHP、Wasmer-和-Cloudflare-构建零成本个人项目](https://www.freecodecamp.org/news/how-to-build-a-zero-cost-personal-project-with-php-wasmer-and-cloudflare/)
 
-2026-07-01 23:43:55 | 标签: 云原生 / DevOps, PHP, Cloudflare, DNS, 免费托管
-
-> 作者分享了他使用完全免费的资源为其开源项目 Clarity 创建可持续网站的经验。教程涵盖了注册免费的 .eu.org 域名（如 clarity.pl.eu.org）、使用所需的 CNAME 记录将 Cloudflare 设置为 DNS 管理器，以及在 Wasmer 的免费 Hobby 计划上部署简单的 PHP 应用程序。它包括每个步骤的详细截图，从创建 Wasmer 帐户并将其链接到 GitHub 存储库到配置 DNS 记录和等待域名传播。文章还简要介绍了 DNS 基础知识和 Wasmer 的功能，强调整个设置无需任何费用，即使在作者去世后也能保持项目的运行。
+2026-07-01 23:43:55
 
 
 
 ### [进展报告：Linux-7.1---Asahi-Linux](https://asahilinux.org/2026/06/progress-report-7-1/)
 
-2026-07-01 18:07:04 | 标签: Asahi Linux, Apple Silicon, Linux 内核, 开源, 固件
-
-> Asahi Linux 项目的本次进展报告涵盖了 Linux 7.1 的多项重要开发进展。报告首先描述了由 macOS 27 Golden Gate 测试版引发的启动选择器问题：由于缺少 APFS 可启动标记，Asahi 安装的系统消失，现已提供修复方案。另一问题是 macOS 27 的 SMC 固件中一个三字节的变更，导致 Linux 电源驱动程序误判电池状态并触发紧急关机；该问题已在内核 7.0.12 中打补丁。报告还重点介绍了 M3 系列机型的进展：音频输出（扬声器/耳机）在最小设备树变更下实现，CPU 频率切换和 big.LITTLE 调度得到支持，PCIe、WiFi、蓝牙、NVMe、...
+2026-07-01 18:07:04
 
 
 
