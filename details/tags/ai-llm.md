@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-03 09:55:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-03 13:44:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4976,9 +4976,7 @@
 
 ### [相比层出不穷的-Agent-框架，不变的-Agent-Protocol-是什么](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561317&idx=1&sn=cfeecd649d2312d5331e2b5ffb03a8d0)
 
-2026-07-02 11:05:00 | 标签: AI Agent, Agent协议, Agent Runtime, 执行模型, LLM
-
-> 文章针对 Agent 框架层出不穷、API 各成体系的问题，从协议层面提出 Agent Protocol 的概念框架。作者首先定义 6 个通用协议对象（Thread/Session、Run/Task、Step、Event、Artifact、Checkpoint），并分层解释具体协议标准、通用协议对象和 Runtime 实现能力。接着深入执行模型，将其拆为两层：Runtime Loop 的承载方式（图式/代码式/托管式）和编排协议模式（ReAct、Plan-and-Execute、Conversation-style coordination）。文章引入 Agent Harness 概念，以 D...
+2026-07-02 11:05:00
 
 
 
@@ -9262,9 +9260,7 @@
 
 ### [对话探月校长王熙乔：AI-时代的教育者、十年沉浮，与人类文明的下一步](https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247498427&idx=1&sn=c4c4827dbc4951d55197f3e92edaeea4)
 
-2026-07-02 12:21:00 | 标签: 教育创新, AI时代教育, 人物访谈, 学校创办, 创业教育
-
-> 这篇文章是硅谷 101 与探月学校创始人王熙乔的深度对话。文章以王熙乔 2015 年写下的「AI 将取代三分之一职业」的预言为引，完整梳理了他从北大附中学生到创办探月学校的十年经历。内容涵盖：探月「内心丰盈的个体，积极行动的公民」的价值观、举办高中生黑客松的初衷、基础教育与高等教育关系的重新定义、他从绵阳「逃」到北京的教育觉醒、在北大附遇到的人文哲学课和美国教授夫妇的影响、从休学生到「高中生校长」的创业起点、第一批家长与老师的信任、2018 年后的自大与激进扩张、疫情中三次搬迁校区的「流浪月球」经历、妻子拿房产证担保的感动、最终决定放弃股份走非营利道路的思考，以及对 AI 时代教育变革的判断（...
+2026-07-02 12:21:00
 
 
 
@@ -12846,113 +12842,85 @@
 
 ### [Vercel-的-Andrew-Qu-论为何智能体是一种新的软件形态](https://www.latent.space/p/vercel-agents-new-software)
 
-2026-07-03 08:08:18 | 标签: AI 智能体, 智能体框架, Vercel, 智能体开发, 智能体可读 Web
-
-> 在接受 Latent Space 采访时，Vercel 的软件主管 Andrew Qu 讨论了智能体如何代表一种根本性的新软件形式，在可预测性和交互模式上与传统 Web 应用截然不同。他追溯了 Vercel 从 Web 开发到大力投资智能体的历程，这一转变源于构建 v0 及其他产品时的内部需求。Qu 解释了创建开源智能体框架 eve 的动机：将内部使用中涌现的最佳实践（如文件系统智能体、技能、压缩和子智能体）进行规范化。他强调，智能体擅长需要推理的重复性任务，而人在回路中的决策应取决于任务定义。Qu 指出了技能作为可移植、按需知识来纠正模型过时信息的重要性日益增长，并倡导构建智能体可读的 We...
+2026-07-03 08:08:18
 
 
 
 ### [未来的网站可能会为每位访客自动组装](https://www.latent.space/p/the-website-of-the-future)
 
-2026-07-03 05:25:14 | 标签: AI Agent, 个性化, 动态网页, 生成式 UI, LLM
-
-> 本文报道了 Adobe 首席科学家 Carlos Sanchez 在 AI Engineer World's Fair 上的演讲，他展示了一个“智能体网站”概念。与传统从预定义选项中选择的个性化方式不同，该系统通过浏览行为和搜索查询解读访客意图，对意图进行分类（例如探索、研究、购买），并使用 LLM 从现有内容中组合出相关页面。Sanchez 称这种方法为“一人受众”。文章讨论了技术可行性、延迟限制（目标在两秒以内）和成本（估计每页一到两美分）。它还探讨了对商业的影响、决定用 AI 构建什么的挑战，以及通过 WebMCP 和 A2A 等技术同时服务于人类访客和 AI 智能体的未来网站形态。作者...
+2026-07-03 05:25:14
 
 
 
 ### [发布：llm-coding-agent-0.1a0](https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything)
 
-2026-07-03 03:33:12 | 标签: AI 编程, LLM, 编码智能体, 开发者工具, 开源
-
-> 本文宣布发布 `llm-coding-agent` 0.1a0，这是一个基于 Simon Willison 的 LLM 库构建的简单编码智能体。该智能体使用 Claude Code for web 创建：首先通过一个提示词生成规范，然后通过第二个提示词使用红/绿 TDD 实现该规范。最终工具提供了命令行界面（`llm code`）和通过 `CodingAgent` 类实现的 Python API。它实现了六个工具：`edit_file`、`execute_command`、`list_files`、`read_file`、`search_files` 和 `write_file`，每个工具都带...
+2026-07-03 03:33:12
 
 
 
 ### [研究：使用-DSPy-评估并优化-Datasette-Agent-的-SQL-系统提示词](https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything)
 
-2026-07-03 02:25:00 | 标签: DSPy, Datasette Agent, 提示词工程, LLM 评估, SQL
-
-> 受 AIE 关于 DSPy 主旨演讲的启发，Simon Willison 使用 Claude Code 和 Claude Fable 5 开展了一项异步研究任务，将 DSPy 应用于 Datasette Agent SQL 问答功能的核心系统提示词。Fable 选择 GPT 4.1 mini 和 nano 进行测试，并发现了几个有潜力的改进点。关键发现是，基准提示词中关于“在已有信息时避免调用 `describe_table`”的建议导致了列名猜测错误（例如 `page_count`、`o.order_id`、`first_name`），从而引发重试循环。建议的修复方案是将列名直接包含在提示词...
+2026-07-03 02:25:00
 
 
 
 ### [设计循环，而非提示词](https://towardsdatascience.com/design-loops-not-prompts/)
 
-2026-07-02 23:00:00 | 标签: LLM, AI 智能体, 幻觉检测, 自我纠正, AI 安全
-
-> 本文挑战了“设计循环，而非提示词”这一流行观点，认为仅靠循环不足以构建可靠的 LLM 智能体。文章指出，验证环节成为瓶颈：自我批评循环（模型自我评判输出）之所以失败，是因为模型优化的是流畅性而非真实性。作者引入了一种确定性的、基于来源的几何验证器（SGI/DGI），并报告了在 HaluEval QA 数据集上使用 Claude Opus 4.8 作为生成器的实验结果，比较了四种方案：开卷参考（幻觉率 5.8%）、单次闭卷（幻觉率 40.0%，作为基准）、自我批评（幻觉率 43.3%——无改善）以及基于来源的验证器（幻觉率 19.2%——相对降低 52%）。置信区间显示，基于来源的方案显著优于自...
+2026-07-02 23:00:00
 
 
 
 ### [时间序列-LLM，原理解析以-t0-alpha-为例](https://towardsdatascience.com/time-series-llms-explained-with-t0-alpha/)
 
-2026-07-02 22:30:12 | 标签: 时间序列基础模型, 概率预测, Transformer, 模型评测, 基准测试
-
-> 作者选取了 t0-alpha——一个参数量为 102M、采用 Apache-2.0 协议开源的概率预测模型——作为具体案例，深入剖析现代时间序列基础模型的工作机制。文章梳理了模型的架构设计：分片（patching）、因果 Transformer、分位数输出，并解释了 CRPS 作为概率预测评估指标的合理性。作者独立在 GIFT-Eval 上复现了 t0-alpha 的评测结果，精确复现了论文报告的分数（CRPS 0.4941，MASE 0.7240），并指出排行榜顶端存在运行间差异。t0-alpha 击败了基准测试中的所有经典基线模型，与其他表现干净的模型处于一个紧密的竞争集群中。其薄弱环节集...
+2026-07-02 22:30:12
 
 
 
 ### [RAG-问题解析中被忽视的教训：在搜索前构建结构](https://towardsdatascience.com/the-untaught-lessons-of-rag-question-parsing-structure-before-you-search/)
 
-2026-07-02 20:00:00 | 标签: RAG, 问题解析, 企业级 RAG, LLM, 信息检索
-
-> 本文批评大多数 RAG 教程跳过了问题解析步骤，直接将用户的原始字符串发送至检索环节，这会导致产生“静默的部分回答”。作者提出了一种结构化方法：将问题解析为包含关键词、范围、形状、分解和澄清列的类型化 `question_df` 行，然后推导出两个专门的简报——用于检索的 `RetrievalQuery` 和用于生成的 `GenerationBrief`。文中详细阐述了六个关键教训：(1) 将问题进行关系建模，使其与文档端对称；(2) 将解析器作为模式（Schema，通过增加新列）来扩展，而非使用分支 `if` 链；(3) 将问题拆分为两个简报，使下游每个模块保持专注；(4) 在向量化之前使用...
+2026-07-02 20:00:00
 
 
 
 ### [天工-3.2-重磅升级：Skywork-Tags-上线，给-Agent-一张工牌，邀其加入你的工作群聊](https://www.qbitai.com/2026/07/442030.html)
 
-2026-07-02 18:24:32 | 标签: AI Agent, 协作工具, 产品发布, 团队合作, 即时通讯
-
-> 本文介绍天工 3.2 升级的核心功能 Skywork Tags，该功能允许用户将 AI Agent 直接拉入 Slack、飞书、钉钉、Discord 和 Telegram 等即时通讯群组，使 Agent 成为团队共享成员，无需将上下文移动到新平台。文章通过对比 Claude Tag 提出「不搬上下文，搬 Agent」的理念，并分享天工团队内部数月对照实验：共享版 Agent 在团队多角色、多场景的持续喂养下，两三周后反超个人精调版，持续积累上下文后表现更强。文章强调共享 Agent 的透明性、可接力性和持续进化能力，主张 Agent 应融入团队现有工作流而非要求用户改变习惯。
+2026-07-02 18:24:32
 
 
 
 ### [实测腾讯-Marivs，我拿手机指挥电脑清出了-100-个-G](https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw==&mid=2247508221&idx=1&sn=19d8972595470a52c63f7fb4a89843f7)
 
-2026-07-02 18:16:00 | 标签: AI Agent, AI 产品与应用, 桌面 AI, 远程控制, 文件管理
-
-> 文章作者对腾讯新推出的桌面 Agent Marvis 进行了系统性实测，围绕电脑自检（磁盘清理、性能优化、电池健康等）、手机远程操控多台电脑、跨应用资料自动整理成表格、快速生成 PPT 以及续写小说剧本五个典型场景展开。测试结果显示，Marvis 在一次体检中帮助清理出约 100GB 空间，远程操控体验流畅且支持鼠标键盘，跨应用整合能自动搜索信息并生成结构化表格，PPT 输出质量可达到 80 分水准。作者特别指出 Marvis 和 WorkBuddy 定位不同——前者偏电脑入口级管家，后者偏办公交付型助手。同时也提及了使用中的边界设置（如删除文件需用户确认）和不足（如台前调度与多窗口的冲突）。
+2026-07-02 18:16:00
 
 
 
 ### [Amazon-Bedrock-如何识别-AI-生成的钓鱼邮件-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/how-amazon-bedrock-catches-ai-generated-phishing/)
 
-2026-07-02 17:55:41 | 标签: AI 安全, 钓鱼检测, Amazon Bedrock, LLM, AI 应用安全
-
-> 文章阐述了生成式 AI 如何让钓鱼检测变得更加困难，因为现代钓鱼邮件在语法上完美无瑕且极具个性化。文章介绍了一种基于 Amazon Bedrock 的 AI 驱动防御系统，该系统超越了传统的过滤方式。整个系统采用五步流程：输入防护与预处理、基于发件人基线上下文的提示词构建、AI 驱动的分析与防护、多因素风险评分，以及基于分类的自动路由。持续反馈循环通过更新发件人基线和钓鱼样本库来不断提升准确率。文章包含了一个钓鱼邮件分析示例和详细的工作流伪代码，强调该方法能够捕捉基于规则的系统无法识别的 subtle 操纵企图，同时指出需要谨慎校准防护机制以在安全分析与隐私保护之间取得平衡。
+2026-07-02 17:55:41
 
 
 
 ### [Amazon-SageMaker-AI-中多轮强化学习的最佳实践-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/best-practices-for-multi-turn-reinforcement-learning-in-amazon-sagemaker-ai/)
 
-2026-07-02 17:50:23 | 标签: AI Agent, Reinforcement Learning, Multi-turn RL, Amazon SageMaker, Reward Design
-
-> 本文详细介绍了如何使用 SageMaker AI 构建可信赖的多轮智能体强化学习训练环境，强调使用模拟环境而非实时系统，以确保可复现性和安全性。文章主张建立独立于训练奖励的外部评估机制，以检测奖励作弊行为，并提供了设计密集奖励函数的逐步方法，使其能够对部分正确给予评分。此外，文章还涵盖了上下文增长管理、轮次预算控制，以及在训练前验证基础模型能力等内容。示例来自 SOP-Bench 数据集，并附有奖励实现和评估设置的具体代码片段。
+2026-07-02 17:50:23
 
 
 
 ### [Flowith-又双叒叕发布新产品-Matrix：要做-0-人-OPC？](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109666&idx=1&sn=fd1b98f9891b8ece574fd25a8b2b2444)
 
-2026-07-02 17:00:00 | 标签: AI Agent, AI 产品与应用, 内容创作, AI 工作流, AI 应用实践
-
-> 文章由「十字路口」团队撰写，对 Flowith 新推出的 Matrix——一款自称「0 人」AI Agent OPC 的产品进行了深度实测。作者以「全自动建立一个 YouTube 的 AI 儿童视频频道」为目标，从设定公司目标开始，通过 CEO、剧本创作、分镜、视频制作、YouTube 运营等 Agent 部门，完整跑通了从脚本生成到视频发布再到商业化分析的全流程。文章详细记录了各环节的衔接、主动模式的心跳机制、配额限制的自动处理等细节，并展示了最终频道的效果。同时，文章分析了 AI Agent OPC 兴起的原因（模型 Agent 化 + 工具链成熟），指出产品仍有提升空间，但已提供了一个具...
+2026-07-02 17:00:00
 
 
 
 ### [天工-AI-业务-ARR-突破-8-亿美元，向中国首个非-BAT10-亿美元-ARR-的-AI-公司迈进](https://www.qbitai.com/2026/07/441786.html)
 
-2026-07-02 14:23:10 | 标签: AI商业化, AI产品与应用, 生成式AI, AI短剧, 科技新闻
-
-> 昆仑万维宣布，旗下天工 AI 在 2026 年第二季度实现 ARR 超 8 亿美元，其中 AI 短剧平台 DramaWave 贡献超 7 亿美元，AI 工具业务超 1 亿美元。DramaWave 已完成 AI 原生化转型，超 80%新增内容由 AI 生成。文章指出，全球 AI 行业融资超千亿美元但商业化艰难，天工 AI 凭借视频、音乐、游戏等 AI 模型矩阵率先形成收入闭环，核心业务连续双位数 QoQ 增长，被视为 AI 从技术竞赛转向商业竞赛的代表。
+2026-07-02 14:23:10
 
 
 
 ### [AIEWF-每日快讯：自动研究与-AI-与人类能动性之间的张力](https://www.latent.space/p/aiewf-daily-dispatch-agency)
 
-2026-07-02 14:13:49 | 标签: AI 智能体, LLM, AI 工程, 人类能动性, 设计工具
-
-> 本文报道了 AI 工程师世界博览会第三天的内容，聚焦于“自动研究”（autoresearch）这一主题——即智能体帮助维护系统自身的循环。文章将其与 Addy Osmani、Geoffrey Litt、Paul Bakaus 等人提出的强烈观点进行了对比，他们认为人类能动性必须保留在外循环中。主要启示包括：理解代码的人与将理解委托给智能体的人之间将出现两极分化；人类在设计与创意判断中不可缺席；以及自动化“软件工厂”的局限性。本文还涵盖了生成式媒体和智能体网站的分会场，强化了以下观点：尽管 AI 能力不断增长，人类的目的、品味和责任依然不可替代。
+2026-07-02 14:13:49
 
 
 
@@ -43528,89 +43496,67 @@
 
 ### [“短绳牵引”-AI-编程法：如何击败-Fable](https://blog.okturtles.org/2026/07/short-leash-ai-method/)
 
-2026-07-03 03:11:57 | 标签: AI 编程, LLM, 提示工程, 开发者工具, Vibe Coding
-
-> 文章批判了流行的“Vibe Coding”方式——即开发者脱离编程过程，认为这会导致代码质量低下且缺乏理解。作者提出了面向关键系统开发专家的“短绳牵引法”，核心步骤包括：带任务追踪的规划阶段、绝不使用“YOLO”模式、逐条审查 AI 提出的每一处 diff、必要时拒绝权限、在每个子任务完成后提交代码以防范 AI 错误，以及最终由人工和 AI 共同进行审查。文章还详述了 AI 辅助 PR 审查的最佳实践，强调 PR 作者必须逐行审查自己用 AI 生成的代码。该方法旨在让开发者始终参与循环，同时借助 AI 提升效率。
+2026-07-03 03:11:57
 
 
 
 ### [The-Pulse：新趋势，智能模型路由](https://blog.pragmaticengineer.com/the-pulse-a-new-trend-smart-model-routing/)
 
-2026-07-03 02:46:24 | 标签: 模型路由, LLM, AI 工程, 成本优化, 开发者工具
-
-> Gergely Orosz 探讨了对智能模型路由日益增长的需求，由于不同模型之间存在 10-20 倍的价格差异，通过为每项任务选择合适的 LLM 可以有效降低成本。他列举了多家供应商（Factory Router、Not Diamond、Prism、Morph Model Router、Weave Router）以及内置路由功能的 AI 网关（OpenRouter、Kilo Gateway、Requestly.ai、LiteLLM、Envoy AI Gateway），并提及了 Cursor 和 GitHub Copilot 的自动选择功能。通过引用 Factory AI CEO 关于企业需求巨...
+2026-07-03 02:46:24
 
 
 
 ### [一个层就足够吗？训练单个-Transformer-层可媲美全参数-RL-训练](https://arxiv.org/abs/2607.01232)
 
-2026-07-02 20:10:24 | 标签: LLM, 强化学习, Transformer 层, 后训练, 模型训练
-
-> 本文挑战了 LLM 在基于 RL 的后训练过程中所有 Transformer 层贡献均相同的普遍假设。通过对 7 个模型（Qwen3， Qwen2.5）、3 种 RL 算法（GRPO， GiGPO， Dr. GRPO）以及多个领域（数学推理、代码生成、智能体决策）的系统性逐层研究，作者引入了“层贡献度”这一指标，用以量化训练单个层能恢复多少全参数 RL 的提升。研究发现，在许多情况下，训练单个 Transformer 层可以媲美甚至超越全参数训练。至关重要的是，高贡献层始终位于 Transformer 堆栈的中间，而输入/输出层的贡献显著较低。这种模式在不同模型家族、任务和 RL 算法中表现出...
+2026-07-02 20:10:24
 
 
 
 ### [迈向-AI-Native：技术团队的范式跃迁与组织进化](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500939&idx=1&sn=78945729bfbaef75fd16d2546910b396)
 
-2026-07-02 19:51:00 | 标签: AI编程, 研发效能, AI Agent, 组织进化, AI工作流
-
-> 本文整理自快手主站 AIDevops 负责人在 GIAC 2026 的演讲。文章首先用行业数据（89%企业已用 AI，生产力提升仅 0.29%）和 DORA 报告指出个人提效与组织效能之间的鸿沟。然后基于千人团队一年多的实践，揭示两个关键洞察：AI 越快，人与人协作摩擦越明显；人机协作本身成为新的隐性成本（人工补位、上下文对齐、验证纠偏、能力边界判断）。作者将摩擦根源归结为能力性约束和研发体系的结构性约束，并提出围绕 AI 重塑研发体系的三层框架：信息层面（让 AI 获取知识）、流程层面（从串行到 Agentic 模式）、组织层面（交付与守护分离、产研边界溶解）。以直播礼物设计为案例，展示方向...
+2026-07-02 19:51:00
 
 
 
 ### [GIAC-2026·深圳站｜快手-AI-工程化实践精彩回顾](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500939&idx=2&sn=8667d14002cfdce98980f86117d5d87c)
 
-2026-07-02 19:51:00 | 标签: AI Agent, AI DevOps, 模型评测与基准, 测试与质量, 工程实践
-
-> 文章总结了快手技术团队在 GIAC 2026 大会上的四个主题分享：1）AI Native 范式：从 AI-First 迈向 AI-Native，提出 L1-Copilot、L2-Agent、L3-Agentic 三级研发范式，通过工程环境、流程、组织三重突破解决「个人快了但组织没快」的瓶颈；2）Agent Verify：在直播客户端场景建设证据驱动验证能力，从传统 UI 检查升级为多维度结果判断；3）墨枢评测平台：构建可量化、可对比、可归因的 AI 应用评测体系，支撑 55+项目，拦截 badcase 290 万+；4）运营场景端到端交付：通过内循环、外循环、元循环三重交付循环，实现小需求小...
+2026-07-02 19:51:00
 
 
 
 ### [Apple-首次将-Private-Cloud-Compute-扩展到-Google-Cloud](https://www.infoq.com/news/2026/07/apple-pcc-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-02 18:04:00 | 标签: AI 隐私, 机密计算, Apple Intelligence, Google Cloud, 云基础设施
-
-> Apple 在 WWDC 2026 上宣布，其 Private Cloud Compute (PCC) 将运行在 Google Cloud 上，用于处理设备端无法承受的 AI 工作负载。为了在其不拥有的基础设施上保护隐私，Apple 集成了三个独立的硬件信任根：NVIDIA Blackwell GPU 上的机密计算、Intel CPU 上的 TDX 以及 Google 的 Titan 芯片。文章详细说明了 PCC 的需求——无状态计算、可验证的透明性、无特权访问——如何保持不变，并附带了一个仅追加的分类账，追踪 Google Cloud 上的每个硬件组件，以及双供应商软件认证。文章还呈现了行业...
+2026-07-02 18:04:00
 
 
 
 ### [如何将-AI-编程的混乱转化为可复制的实战手册？](https://stackoverflow.blog/2026/07/02/ai-coding-chaos-into-a-repeatable-playbook/)
 
-2026-07-02 15:40:00 | 标签: AI 编程, AI 智能体, 开发者工具, 工程实践, 内环
-
-> 在这篇访谈中，Snowflake 工程高级副总裁 Vivek Raghunathan 详细介绍了他们在整个工程组织中系统化推广编程智能体（Coding Agents）的历程。这一旅程始于“允许混乱”——鼓励员工使用而不刻意追求指标，随后将成功实践沉淀为 14 种可复用的“AI 设计模式”（例如：用自然语言规划、给机器人设围栏、TLF 智能体、持续学习）。他们通过“聚焦周”（Focus Weeks）来同时提升下限（针对应用者）和拉高上限（针对探索者），实现了 97% 的周活跃编程智能体使用率、1.5 倍的代码产出增长以及更短的代码合并时间。在开发外环（Outer Loop）上，AI 将发布验证时...
+2026-07-02 15:40:00
 
 
 
 ### [2026-07-02-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-07-02-HackerNews/)
 
-2026-07-02 15:27:38 | 标签: 科技新闻, 每日摘要, HackerNews, AI, 游戏产业
-
-> 这是一篇 HackerNews 每日热点摘要，精选了当日最具讨论度的 10 个话题，包括 Anthropic 发布 Claude Sonnet 5、美国商务部解除对 Claude Fable 5 和 Mythos 5 的出口管制、科学家首次构建可生长分裂的合成细胞、反思争论本质的个人博客、Claude Science 科研平台、索尼宣布 2028 年停止生产 PS 新游戏光盘、Godot 禁止 AI 生成代码贡献、Asahi Linux 7.1 进展、索尼删除用户已购买影片、任天堂加薪 10%等。每个话题均附原文链接、简洁摘要以及 HN 评论中的代表性观点。文章旨在帮助读者高效获取当日技术圈关...
+2026-07-02 15:27:38
 
 
 
 ### [Cursor-·-CursorBench](https://cursor.com/evals)
 
-2026-07-02 13:19:34 | 标签: LLM, AI 编程, 模型基准, Cursor, 成本效益
-
-> 本文公布了 CursorBench 3.1 的测试结果，该基准用于评估 LLM 在代码编辑、重构、Bug 修复、代码库理解与规划等任务上的表现。文章列出了 36 种模型配置的得分与平均每任务成本，涵盖 Fable 5、Opus 4.8、Opus 4.7、GPT-5.5、Sonnet 5、GLM 5.2、Composer 2.5、Composer 2、Kimi 系列及 Gemini 3.5 Flash 等。核心发现：Fable 5 系列得分最高但成本也更高；Composer 2.5 性价比最优；更高成本并不保证更高得分。更新日志显示，CursorBench 3.1 新增了代码库理解、规划与代码审...
+2026-07-02 13:19:34
 
 
 
 ### [Senior-SWE-Bench](https://senior-swe-bench.snorkel.ai/)
 
-2026-07-02 10:55:16 | 标签: AI 编程, LLM, AI 智能体, 基准测试, 软件工程
-
-> 本文介绍了 Senior SWE-Bench，一个旨在评估 AI 编程智能体在反映真实资深工程师工作复杂性与模糊性任务上的基准测试。与现有的 SWE-Bench Pro 等基准不同，Senior SWE-Bench 采用自然语言指令（长度仅为 Pro 的 31%），涵盖跨多个服务的功能任务（平均涉及 11 个文件），以及需要大量运行时调查的错误修复与性能优化任务。它引入了一个验证智能体，能够自适应地编写行为测试，并从正确性与「品味」两个维度为解决方案打分——后者是基于各代码库既定实践得出的代码质量指标。排行榜显示，顶尖前沿模型（如 Claude Opus 4.8）的 tasteful solv...
+2026-07-02 10:55:16
 
 
 
 ### [阿里一面，我霸气反问：你说你们在做-Agent-项目，说说-langchain、muti-agent、a2a-这些你们都是怎么做的？面试官一直在擦汗。。](https://juejin.cn/post/7657453685375369267)
 
-2026-07-02 10:25:46 | 标签: AI Agent, LangChain, Multi-Agent, MCP协议, A2A
-
-> 文章以阿里巴巴一次 Agent 岗位的面试为叙事线索，通过面试官老王与候选人的一问一答，串联起 AI Agent 开发中的关键技术和概念。内容涵盖 LangChain 的三层架构（抽象层、能力层、应用层）及其与 LangGraph 的关系、Agent 开发的四种模式（ReAct、Plan-and-Execute、Multi-Agent 协作、状态图编排）、LangChain 的六大核心模块详解、Multi-Agent 系统设计中工作流编排与传统 Multi-Agent 的区别、Agent 间通信协议 A2A 与工具扩展协议 MCP 的对比及实战应用、Transformer 架构的整体结构与关键...
+2026-07-02 10:25:46
 
 
 

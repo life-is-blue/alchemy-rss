@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-03 09:55:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-03 13:44:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,9 +710,7 @@
 
 ### [Vite+-Beta-发布公告](https://voidzero.dev/posts/announcing-vite-plus-beta)
 
-2026-07-02 19:30:01 | 标签: Vite+, 前端工具链, 开发者工具, CLI, 开源
-
-> 本文介绍了 Vite+ 的 Beta 版本发布，这是一个面向 Web 开发的开源统一工具链，集成了 Vite、Vitest、Rolldown、tsdown、Oxlint、Oxfmt 以及内置的任务运行器。它提供一致的命令行工作流（vp dev、vp check、vp test、vp build、vp pack、vp run），无需再单独组装各种工具。自 Alpha 版本以来，已合并超过 500 个 Pull Request，带来了更智能的缓存、更好的迁移支持、企业级功能和跨平台加固。文章重点介绍了实际应用情况：超过 1，300 个公开仓库依赖 vite-plus，其中包括 Dify、Block...
+2026-07-02 19:30:01
 
 
 
