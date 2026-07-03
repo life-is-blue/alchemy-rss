@@ -1,0 +1,46 @@
+{
+  "id": "RAW_c95ef8da",
+  "title": "研究：使用 DSPy 评估并优化 Datasette Agent 的 SQL 系统提示词",
+  "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
+  "date": "2026-07-03 02:25:00",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">2nd July 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label research\" href=\"https://simonwillison.net/elsewhere/research/\">Research</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/research/tree/main/dspy-datasette-agent-prompts#readme\">Using DSPy to evaluate and improve Datasette Agent's SQL system prompts</a></span> <span class=\"beat-commit\">— Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer. The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics.</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>One of this morning's AIE keynotes covered <a href=\"https://github.com/stanfordnlp/dspy\">dspy</a>, which reminded me I've been meaning to see if it could help me improve the system prompt used by <a href=\"https://agent.datasette.io\">Datasette Agent</a> - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5:</p>\n      <blockquote>\n       <p><code>Pip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data.</code></p>\n      </blockquote>\n      <p>Fable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one:</p>\n      <blockquote>\n       <p>The schema listing gives only table names; the \"don't call describe_table if you already have the information\" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice.</p>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4732/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本研究使用 DSPy 框架来评估和优化 Datasette Agent 只读 SQL 查询功能的系统提示词，识别出了列名猜测的具体问题并提出了修复方案。",
+  "oneSentenceSummary": "本研究使用 DSPy 框架来评估和优化 Datasette Agent 只读 SQL 查询功能的系统提示词，识别出了列名猜测的具体问题并提出了修复方案。",
+  "summary": "受 AIE 关于 DSPy 主旨演讲的启发，Simon Willison 使用 Claude Code 和 Claude Fable 5 开展了一项异步研究任务，将 DSPy 应用于 Datasette Agent SQL 问答功能的核心系统提示词。Fable 选择 GPT 4.1 mini 和 nano 进行测试，并发现了几个有潜力的改进点。关键发现是，基准提示词中关于“在已有信息时避免调用 `describe_table`”的建议导致了列名猜测错误（例如 `page_count`、`o.order_id`、`first_name`），从而引发重试循环。建议的修复方案是将列名直接包含在提示词的 Schema 列表中，或者放宽对调用 `describe_table` 的限制。该项目包含一个测试框架，可在运行中的 Datasette 进程中调用实际的 Datasette Agent 工具，并配备金标准数据集和自定义指标以进行严格评估。",
+  "mainPoints": [
+    {
+      "point": "DSPy 可以有效地评估和优化基于 LLM 工具的生产系统提示词。",
+      "explanation": "该项目展示了一个实用工作流：利用 DSPy 配合自动数据集和自定义指标来测试并精炼提示词，从而识别具体的失效模式。"
+    },
+    {
+      "point": "列名猜测是一个主要问题，由提示词中不鼓励调用 `describe_table` 的建议引起。",
+      "explanation": "在缺乏明确列名的情况下，LLM 会猜测如 `page_count` 或 `o.order_id` 等列，导致错误和重试循环。修复方法是在提示词中提供列名或放宽限制。"
+    }
+  ],
+  "keyQuotes": [
+    "Schema 列表仅提供了表名；基准追踪显示，“如果已有信息则不要调用 describe_table”的建议导致了列名猜测（如 page_count， o.order_id， first_name）以及错误重试循环。要么在提示词的 Schema 列表中包含列名，要么放宽该建议。"
+  ],
+  "tags": [
+    "DSPy",
+    "Datasette Agent",
+    "提示词工程",
+    "LLM 评估",
+    "SQL"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 230,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783016700000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-03 02:25:00"
+}

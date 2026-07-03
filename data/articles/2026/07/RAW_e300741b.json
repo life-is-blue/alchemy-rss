@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e300741b",
+  "title": "天工 3.2 重磅升级：Skywork Tags 上线，给 Agent 一张工牌，邀其加入你的工作群聊",
+  "url": "https://www.qbitai.com/2026/07/442030.html",
+  "date": "2026-07-02 18:24:32",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": null,
+  "aiSummary": "天工推出 Skywork Tags，让 AI Agent 直接加入飞书、Slack 等协作群，无需迁移上下文，团队共享一个 Agent 并随使用积累而进化。",
+  "oneSentenceSummary": "天工推出 Skywork Tags，让 AI Agent 直接加入飞书、Slack 等协作群，无需迁移上下文，团队共享一个 Agent 并随使用积累而进化。",
+  "summary": "本文介绍天工 3.2 升级的核心功能 Skywork Tags，该功能允许用户将 AI Agent 直接拉入 Slack、飞书、钉钉、Discord 和 Telegram 等即时通讯群组，使 Agent 成为团队共享成员，无需将上下文移动到新平台。文章通过对比 Claude Tag 提出「不搬上下文，搬 Agent」的理念，并分享天工团队内部数月对照实验：共享版 Agent 在团队多角色、多场景的持续喂养下，两三周后反超个人精调版，持续积累上下文后表现更强。文章强调共享 Agent 的透明性、可接力性和持续进化能力，主张 Agent 应融入团队现有工作流而非要求用户改变习惯。",
+  "mainPoints": [
+    {
+      "point": "Skywork Tags 让 Agent 直接进入团队已有的工作群，无需迁移上下文。",
+      "explanation": "不同于其他 Agent 产品要求用户将聊天记录、文档等导入新环境，Skywork Tags 将机器人拉入群聊即可获取上下文，降低使用摩擦。"
+    },
+    {
+      "point": "共享 Agent 比个人 Agent 优势更明显：透明、可接力、越用越强。",
+      "explanation": "团队共享同一个 Agent，所有人可见其进度，任务可异步推进并接力完成，且持续积累的团队上下文让 Agent 快速成长。"
+    },
+    {
+      "point": "团队共养的 Agent 成长速度远超个人调教。",
+      "explanation": "天工内部实验表明，共享版 Agent 在百人群组中经过多岗位、多角度的提问后，两三周即反超个人精调版，成为团队首选。"
+    }
+  ],
+  "keyQuotes": [
+    "所有 Agent 都在让你搬家，Skywork 选择上门。",
+    "不搬上下文，搬 Agent 进入你的团队工作环境。",
+    "一个团队共养的 Agent，成长速度远超任何个人调教。",
+    "共享不是妥协，是让 Agent 突破个人视野、快速变强的最短路径。"
+  ],
+  "tags": [
+    "AI Agent",
+    "协作工具",
+    "产品发布",
+    "团队合作",
+    "即时通讯"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 82,
+  "wordCount": 1645,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1782987872000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-02 18:24:32"
+}

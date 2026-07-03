@@ -1,0 +1,61 @@
+{
+  "id": "RAW_00d94a8a",
+  "title": "如何向不认识的人求助",
+  "url": "https://pradyuprasad.com/writings/how-to-ask-for-help/",
+  "date": "2026-07-02 21:19:22",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"post-meta\">30 June 2026</div>\n  <p>No matter what you’re doing, from building a civilization on Mars to getting a summer internship, you will have to ask people for help. Yet, most people get this crucial skill wrong. They put themselves at the front of their request, when they should be putting the other person there. But isn’t getting help just charisma and luck? No, asking for help is a <em>skill</em>, not an attribute you are assigned at birth like green eyes.</p>\n  <p>How do you ask for help from people? There is only one principle. <strong>Put yourself in their mind</strong>. All good communication is grounded in an understanding of the reader’s mind. And so, I have some heuristics I would recommend when you ask for help from people you don’t know.</p>\n  <p><strong>One heuristic to remember is that help is about people before it is about projects.</strong> When you ask for help from someone, their helping your project is predicated on them wanting to help you. So, you should make it clear that you are someone worth helping. One of the strongest ways to show that you’re worth helping is to <strong>demonstrate that you are a serious person</strong>. You might claim that you want to enter machine learning or learn to lift weights. Lots of people say that though, and the way you show that you’re serious is by showing proof of work. A trained model, a blog post that shows depth and thought and a vlog of your training are all ways to show that you are serious.</p>\n  <p>Another way is personal connection: you could say “Steve suggested I reach out” which situates you more warmly in their mind. But be careful here, because you’re borrowing against someone else’s credibility. If this person doesn’t like Steve, then this might hurt your credibility. Or, if you aren’t as good as Steve says, his credibility is hurt.</p>\n  <p>And finally, we get to institutional credibility. You could mention that you’re a student at some famous university, or work at a large corporation. This is the weakest because at best it proves you cleared a filter once, and nothing more. It also doesn’t situate you to them specifically and can feel like you’re signalling status. So use it sparingly and avoid making it your only source of credibility.</p>\n  <p><strong>Once you have situated yourself (or not), the next step is to explain context.</strong> Before you ask them for help, you have to answer the question: what is going on here? If you have done the previous step well, you have borrowed their attention and you must spend it judiciously. Here, your description must be so short as to be unsummarizable. You are spending lent attention which is the most precious currency. To do this, think of what makes your context connect to things that they would already know. Do not explain to your elected representative the factionalism of your university club, but do explain how the club connects to their legislative priorities. Or when asking a scientist for an internship, don’t talk about how you’ve loved science since you were a child, but do talk about how you’ve implemented and extended their paper from 2023.</p>\n  <p><strong>The next heuristic is to make your request easy to accept.</strong> Making something easy to accept largely is about reducing the cost of acceptance. One clear kind of cost is the magnitude. Do ask someone for twenty minutes of their time, but don’t ask them to read your five-hundred-page manuscript in a week. Another is to make it specific: asking for a resource to start with is better than “can I pick your brain?”. When you’ve made your request, make it low friction for them. If you’re asking for an introduction, write a blurb about yourself which they can forward. If you have a question, ask it in writing rather than over a call. And last on cost, make your ask bounded. Don’t ask for recurring obligations like being your mentor for your whole life, but do keep it limited to asking them to read a blog post. If that instance goes well, they’ll gladly read more.</p>\n  <p><strong>My last heuristic is stranger: make it easy to say no.</strong> You might think that the worst outcome is a no, but the worst outcome is a pressured, begrudging yes. If you get a no, a good response is for you to thank them for their time and move on. Making your message carry emotional guilt or pestering them over time will not have the effect you intend. Your coercion will have poisoned your relationship with this person while you feel the false glow of a hard-won victory. A person who helps you with gritted teeth is one who will never help you again. And even then, the help will be a half-hearted effort to get rid of the obligation you manufactured. By contrast, help freely given is effortless, the way you’d hold the door open for someone. Help willingly given keeps your conscience clear, free from the burden of having pressured someone. And help, when given from the heart, is the foundation of a relationship where both of you contribute to what you’re building.</p>\n  <p>These are only heuristics. You can, when following the principle, reorder or drop them altogether. What matters is whether you’re thinking from the perspective of your reader. <strong>Except. Never lie.</strong> All your asks for help come from the person attached to them – you. And if your reader gets even a whiff of something off, then no request, no matter how small, specific, low-friction, and bounded, can get a yes.</p>\n  <p><em>Edit: added a line on how to respond when you get a no.</em></p>\n </body>\n</html>",
+  "aiSummary": "本文提供了一个实用的框架，帮助读者向陌生人求助，核心在于理解对方视角并展示真实的自身价值。",
+  "oneSentenceSummary": "本文提供了一个实用的框架，帮助读者向陌生人求助，核心在于理解对方视角并展示真实的自身价值。",
+  "summary": "作者认为，求助是一项可以习得的技能，而非固定特质，并基于「换位思考」原则提供了若干启发式策略。关键策略包括：通过既往成果证明自己是认真的人，而非依赖身份地位或空泛说辞；提供简洁、相关的背景信息，与对方已知内容建立连接；让请求易于接受，即降低成本、具体明确、减少摩擦；尤为重要的是，让对方能够轻松拒绝，避免对方在压力下勉强帮忙。文章强调，求助的本质是人而非事，强迫或欺骗会毁掉关系。最后，文章严正警告绝不可撒谎，因为信任是一切的基础。",
+  "mainPoints": [
+    {
+      "point": "求助的本质是人而非项目；证明你值得被帮。",
+      "explanation": "通过实际成果（如训练好的模型、博客文章）证明你的认真态度，而非仅靠口头承诺或机构背景。个人推荐可能有帮助，但存在透支信誉的风险。"
+    },
+    {
+      "point": "背景信息必须简短、相关，并与对方已有知识建立连接。",
+      "explanation": "用与对方专业或兴趣直接相关的方式概括情况，避免不必要的背景铺垫。将借来的注意力视为珍贵资源。"
+    },
+    {
+      "point": "让请求易于接受，降低成本与摩擦。",
+      "explanation": "具体明确、有边界（如读一篇文章、书面回答一个问题），避免形成持续性义务。目标是降低帮助者的心理与时间成本。"
+    },
+    {
+      "point": "让对方轻松说「不」——维护关系。",
+      "explanation": "勉强答应往往导致敷衍的帮助，并损害关系。优雅地接受拒绝；真诚自愿的帮助才是持久合作的基础。"
+    },
+    {
+      "point": "绝不撒谎；信誉脆弱且至关重要。",
+      "explanation": "所有请求都与你这个人绑定。哪怕一丝不诚实也可能摧毁信任，使后续任何请求都无法被接受。"
+    }
+  ],
+  "keyQuotes": [
+    "换位思考。所有良好的沟通都建立在对读者心智的理解之上。",
+    "求助的本质是人，然后才是项目。",
+    "咬牙切齿帮助你的人，再也不会帮你第二次。",
+    "绝不撒谎。你所有的求助都来自于附着于其上的人——你自己。"
+  ],
+  "tags": [
+    "职业沟通",
+    "求助",
+    "职业建议",
+    "个人效率",
+    "职业成长"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 942,
+  "domain": "pradyuprasad.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1782998362000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-02 21:19:22"
+}

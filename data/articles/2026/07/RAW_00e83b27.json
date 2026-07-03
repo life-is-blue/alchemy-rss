@@ -1,0 +1,55 @@
+{
+  "id": "RAW_00e83b27",
+  "title": "SwiftUI 新增 Document 协议，改进性能及其他功能",
+  "url": "https://www.infoq.com/news/2026/07/swiftui-wwdc26/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-03 00:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://developer.apple.com/wwdc26/guides/swiftui/\">Announced at WWDC 2026</a>, the latest SwiftUI release brings a new <code>Document</code> protocol for efficient disk access and snapshot-based updates, along with improved APIs for reordering items in lists, grids, and sections. In addition, it expands presentation features, such as swipe actions on any view, better <code>AsyncImage</code> caching, and lazy state initialization for <code>Observable</code> types to boost performance.</p>\n   <p>SwiftUI’s updated toolbar APIs help manage limited space as apps grow. The system automatically hides items that don’t fit, but developers can now control this behavior by prioritizing important buttons, like Undo/Redo, with <code>visibilityPriority</code>, moving less-used actions into an overflow menu, and pinning key actions, such as Share, so they’re always visible. Additionally, toolbars can auto-minimize on scroll to maximize screen space, improving usability across different device sizes.</p>\n   <p>SwiftUI also introduces a new <code>Document</code> architecture letting document-based apps to handle heavy data and frequent UI updates more efficiently. Developers define a document type that manages reading and writing, and integrate it with the <code>Observation</code> framework so views update only when needed.</p>\n   <p>For writing, the app creates a snapshot of the document’s state and uses an asynchronous <code>DocumentWriter</code> to save only the changed parts. This improves performance and keeps the UI responsive, all the while supporting progress reporting.</p>\n   <p>For reading, a complementary <code>ReadableDocument</code> and <code>DocumentReader</code> handle loading data from disk. Overall, the system uses snapshot-based diffing and async operations to optimize performance for complex document workflows.</p>\n   <p>SwiftUI introduces reorderable container APIs that let users drag and rearrange items easily in lists, grids, or other layouts using the same code, with built-in animations and cross-platform support, including on watchOS.</p>\n   <p>It also enhances interaction and presentation features adding support for swipe actions on any view, not just lists; allowing developers to use flexible layouts like <code>LazyVStack</code> without losing swipe behavior; and enabling context menus and confirmation dialogs to support item-based bindings for actions like deleting items.</p>\n   <p>As a final note, the latest SwiftUI release also delivers significant data flow and performance improvements. <code>AsyncImage</code> now benefits from automatic HTTP caching, preventing unnecessary reloads when scrolling, while still allowing customization of request and session configurations. The <code>@State</code> property has also been optimized with lazy initialization, ensuring objects are created only once rather than on every view reinitialization. Additionally, compiler performance is enhanced through the introduction of <code>ContentBuilder</code>, which simplifies view construction and helps eliminate the notorious \"The compiler is unable to type-check this expression in reasonable time\" error.</p>\n   <p>There’s much more to SwiftUI than can be covered here, so be sure to watch the <a href=\"https://developer.apple.com/videos/play/wwdc2026/269/\">official presentation</a> for all the details.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"SwiftUI Adds New Document Protocol, Improves Performance, and More\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/swiftui-wwdc26/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1783008000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "最新的 SwiftUI 版本引入了新的 Document 协议以高效处理数据，改进了重排 API，支持在任何视图上使用滑动操作，并包含 AsyncImage 缓存和 @State 惰性初始化等性能优化。",
+  "oneSentenceSummary": "最新的 SwiftUI 版本引入了新的 Document 协议以高效处理数据，改进了重排 API，支持在任何视图上使用滑动操作，并包含 AsyncImage 缓存和 @State 惰性初始化等性能优化。",
+  "summary": "本文总结了 WWDC 2026 上宣布的 SwiftUI 关键更新。内容涵盖用于基于快照的读写和差异计算的新 Document 协议，用于列表和网格的可重排容器 API，以及扩展到任何视图的滑动操作。此次更新还改进了工具栏管理，增加了可见性优先级和滚动时自动最小化功能，为 AsyncImage 添加了自动 HTTP 缓存，引入了 @State 的惰性初始化，并通过 ContentBuilder 增强了编译器性能。本文简要概述了每个功能，未提供深入的代码示例，供评估新能力的开发者快速参考。",
+  "mainPoints": [
+    {
+      "point": "新的 Document 协议改进了基于文档的应用程序的数据处理。",
+      "explanation": "Document 协议使用快照和异步写入器仅保存更改的部分，保持 UI 响应并支持进度报告。"
+    },
+    {
+      "point": "可重排容器 API 为列表、网格和其他布局启用了拖放功能。",
+      "explanation": "开发者可以在各平台（包括 watchOS）上使用相同的 API，并内置动画，简化了可重排内容的实现。"
+    },
+    {
+      "point": "滑动操作现可用于任何视图，而不仅仅是列表。",
+      "explanation": "这允许在 LazyVStack 和其他灵活布局上使用滑动操作而不会丢失滑动行为，同时支持基于项绑定的上下文菜单和确认对话框。"
+    },
+    {
+      "point": "性能改进包括 AsyncImage 缓存和 @State 惰性初始化。",
+      "explanation": "AsyncImage 现在使用自动 HTTP 缓存以避免不必要的重新加载，而 @State 对象在每个视图生命周期内仅创建一次，减少了重新初始化的开销。"
+    }
+  ],
+  "keyQuotes": [
+    "SwiftUI 还引入了一种新的 Document 架构，使基于文档的应用程序能够更高效地处理繁重的数据和频繁的 UI 更新。",
+    "AsyncImage 现在受益于自动 HTTP 缓存，防止滚动时的不必要重新加载，同时仍允许自定义请求和会话配置。"
+  ],
+  "tags": [
+    "SwiftUI",
+    "iOS 开发",
+    "性能优化",
+    "苹果生态",
+    "WWDC"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 423,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783008000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-03 00:00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_0171f282",
+  "title": "发布：llm-coding-agent 0.1a0",
+  "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
+  "date": "2026-07-03 03:33:12",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">2nd July 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm-coding-agent/releases/tag/0.1a0\">llm-coding-agent 0.1a0</a></span> <span class=\"beat-commit\">— A coding agent built on LLM</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Another Fable 5 experiment. Now that my <a href=\"https://llm.datasette.io/\">LLM library</a> has evolved into more of an agent framework it's time to see what a simple coding agent would look like built on it.</p>\n      <p>I started a <a href=\"https://github.com/simonw/llm-coding-agent/tree/2466fa03ba8e5122c3bfa93d52167d33bce40ac6\">new Python library</a> using my <a href=\"https://github.com/simonw/python-lib-template-repository\">python-lib-template-repository</a> GitHub template repository, then ran these two prompts (here's the <a href=\"https://claude.ai/code/session_01TEUBvBbMipbFSoqjMiJ7ha\">Claude Code for web transcript</a>):</p>\n      <blockquote>\n       <p><code>Write a spec.md for this project - it will depend on the latest “llm” alpha from PyPI and implement a Claude code style coding agent complete with tools for reading and editing files and executing commands</code></p>\n      </blockquote>\n      <p>Then:</p>\n      <blockquote>\n       <p><code>Commit the spec, then build it using red/green TDD in a series of sensible commits (each with passing tests and updated docs) - occasionally manually test it using the OpenAI API key in your environment</code></p>\n      </blockquote>\n      <p>Here's the <a href=\"https://github.com/simonw/llm-coding-agent/blob/0.1a0/README.md\">resulting README file</a> and the <a href=\"https://github.com/simonw/llm-coding-agent/commits/0.1a0\">sequence of commits</a>.</p>\n      <p>I've shipped a slop-alpha to PyPI, so you can run the new agent like this:</p>\n      <pre><code>uvx --prerelease=allow --with llm-coding-agent llm code\n</code></pre>\n      <p>It's pretty good for a first attempt! Here's the (Fable-authored) <a href=\"https://github.com/simonw/llm-coding-agent/blob/0.1a0/README.md\">README</a>, which lists recipes like <code>llm code --yolo</code> and <code>llm code --allow \"pytest*\" --allow \"git diff*\"</code>.</p>\n      <p>It also presents <a href=\"https://github.com/simonw/llm-coding-agent/blob/0.1a0/README.md#codingagent\">a Python API</a> based around a <code>CodingAgent(model=\"gpt-5.5\", root=\"/path\", approve=True).run(\"Fix the failing test in tests/test_parser.py\")</code> class which I didn't ask for but I'm delighted to see implemented.</p>\n      <p>Here's the suite of tools <a href=\"https://github.com/simonw/llm-coding-agent/blob/0.1a0/llm_coding_agent/tools.py#L22\">it implemented</a>, listed using <code>uvx ... llm tools</code>:</p>\n      <blockquote>\n       <p><code>CodingTools_edit_file(path: str, old_string: str, new_string: str, replace_all: bool = False) -&gt; str</code></p>\n       <p>Replace an exact string in a file.</p>\n       <p>old_string must match the file contents exactly (including whitespace) and must identify a unique location unless replace_all is true. Returns a diff of the change so it can be verified.</p>\n       <p><code>CodingTools_execute_command(command: str, timeout: int = 120) -&gt; str</code></p>\n       <p>Run a shell command in the session root directory.</p>\n       <p>Returns combined stdout and stderr followed by an Exit code line. timeout is in seconds (maximum 600); on timeout the whole process tree is killed.</p>\n       <p><code>CodingTools_list_files(pattern: str = '**/*', path: str = '.') -&gt; str</code></p>\n       <p>List files matching a glob pattern, newest first.</p>\n       <p>Skips hidden directories, node_modules, __pycache__ and (in a git repository) anything covered by .gitignore. Returns at most 200 paths relative to the searched directory.</p>\n       <p><code>CodingTools_read_file(path: str, offset: int = 0, limit: int = 2000) -&gt; str</code></p>\n       <p>Read a text file, returning numbered lines like cat -n.</p>\n       <p>Paths are relative to the session root. Use offset (0-based first line) and limit (max lines) to page through files too large to read in one call.</p>\n       <p><code>CodingTools_search_files(pattern: str, path: str = '.', glob: str = None, max_results: int = 100) -&gt; str</code></p>\n       <p>Search file contents for a regular expression.</p>\n       <p>Returns matches as path:line_number:line, capped at max_results. Use glob (e.g. \"*.py\") to restrict which files are searched.</p>\n       <p><code>CodingTools_write_file(path: str, content: str) -&gt; str</code></p>\n       <p>Create or overwrite a file with the given content.</p>\n       <p>Parent directories are created as needed. Prefer edit_file for modifying existing files.</p>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4733/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 发布了一个基于其 LLM 框架构建的编码智能体的 Alpha 版本，该版本包含六个用于文件编辑、命令执行和搜索的工具，并提供 CLI 和 Python API。",
+  "oneSentenceSummary": "Simon Willison 发布了一个基于其 LLM 框架构建的编码智能体的 Alpha 版本，该版本包含六个用于文件编辑、命令执行和搜索的工具，并提供 CLI 和 Python API。",
+  "summary": "本文宣布发布 `llm-coding-agent` 0.1a0，这是一个基于 Simon Willison 的 LLM 库构建的简单编码智能体。该智能体使用 Claude Code for web 创建：首先通过一个提示词生成规范，然后通过第二个提示词使用红/绿 TDD 实现该规范。最终工具提供了命令行界面（`llm code`）和通过 `CodingAgent` 类实现的 Python API。它实现了六个工具：`edit_file`、`execute_command`、`list_files`、`read_file`、`search_files` 和 `write_file`，每个工具都带有详细的文档字符串。该智能体以 Alpha 版本的形式发布在 PyPI 上，并可通过 `uvx` 运行。作者指出，Python API 是在没有明确要求的情况下实现的，这是一个令人愉快的惊喜。",
+  "mainPoints": [
+    {
+      "point": "llm-coding-agent 提供了 CLI 和 Python API，用于 AI 辅助的代码编辑和命令执行。",
+      "explanation": "用户可以运行 `llm code` 或在 Python 中实例化 `CodingAgent`，以自动化文件修改和 shell 命令。"
+    },
+    {
+      "point": "该智能体是使用 Claude Code for web 构建的，通过提示词生成规范，然后通过 TDD 实现。",
+      "explanation": "此工作流程展示了不仅将 AI 用作编码助手，而且将其用作构建自身基础设施的工具。"
+    },
+    {
+      "point": "该工具包含六个内置工具，用于文件操作和命令执行。",
+      "explanation": "像 edit_file、read_file、write_file、execute_command、list_files 和 search_files 这样的工具涵盖了常见的开发工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "作为第一次尝试，这已经相当不错了！",
+    "我并没有要求这个，但很高兴看到它被实现"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "编码智能体",
+    "开发者工具",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 489,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783020792000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-03 03:33:12"
+}
