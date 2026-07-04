@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-04 09:54:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-04 13:38:27 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4976,17 +4976,13 @@
 
 ### [智能体自主性级别](https://addyo.substack.com/p/agentic-autonomy-levels)
 
-2026-07-03 22:30:33 | 标签: AI 智能体, 智能体自主性, AI 编程, LLM, 开发者工具
-
-> 本文认为，单阶梯模型的智能体自主性 (例如 Steve Yegge 的) 不足以适应现代多智能体工作流，因为后者需要将代理 (单个智能体能走多远) 与编排 (协调多少个智能体) 分开。基于这两个轴，文章提出一个六级标尺：Level 0 (Assist)，Level 1 (Supervised action)，Level 2 (Scoped task delegation)，Level 3 (Goal-driven autonomy)，Level 4 (Parallel delegation)，以及 Level 5 (Managed-by-exception orchestration)。每个级...
+2026-07-03 22:30:33
 
 
 
 ### [从-AI-Coding-到-Harness-Engineering-的端到端工程开发实践](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802407&idx=1&sn=b6f398b8185a9862db73237cd076a3ce)
 
-2026-07-03 17:36:00 | 标签: AI 编程, Harness Engineering, AI Agent, 知识库工程, 端到端开发
-
-> 文章基于腾讯应用宝活动平台重构的真实案例，详细记录了团队从对话式 AI Coding 走向 Harness Engineering 的工程实践。首先指出对话式 AI Coding 的四个核心痛点：上下文快速膨胀、缺乏完整业务知识、缺乏工程自动化闭环、无法并行。随后提出整体架构：知识库工程（Knowledge Engineering）作为底座，端到端开发工程（End-to-End Development Engineering）构建其上。知识库工程采用结构化目录（三层：总览-域层-服务层），通过 Skill 实现从代码到文档的自动生成，采用渐进式分层加载与 grep 替代传统 RAG 检索，并引...
+2026-07-03 17:36:00
 
 
 
@@ -12858,177 +12854,133 @@
 
 ### [开源-AI-差距图](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything)
 
-2026-07-04 06:04:31 | 标签: 开源 AI, AI 工具, AI 生态, 数据探索, Datasette
-
-> Simon Willison 的这篇链接博客文章介绍了 Current AI 推出的开源 AI 差距图，这是一个获得 400 万美元资助的非营利组织。该图谱索引了 421 个开源 AI 产品，包括来自 228 个组织的软件工具、模型、数据集和硬件项目，此外还有 24，400 个未分类的工件。Willison 强调了在 GitHub 上根据 MIT 许可证发布的底层数据（1，184 个 YAML 文件），并通过 Datasette Lite 提供了探索 16，185 个已跟踪仓库的实际示例。这篇文章为想要审视开源 AI 生态并获取原始数据以进行进一步分析的任何人提供了一个简洁且实用的指南。
+2026-07-04 06:04:31
 
 
 
 ### [来自-Josh-W.-Comeau-的一段话](https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything)
 
-2026-07-04 05:25:52 | 标签: AI 影响, 开发者教育, 在线课程, LLM, 创作者经济
-
-> 在 Simon Willison 分享的一段话中，课程创作者 Josh W. Comeau 观察到，他第三次推出的课程销量约为通常水平的三分之一，而所有课程的收入相比去年下降了 50% 以上。他认为 AI 是主要原因：开发者对未来就业前景感到不确定，不愿投资学习；同时 LLM 提供了免费的个性化辅导，减少了对付费课程的需求。他提到其他课程创作者也看到了类似的趋势。
+2026-07-04 05:25:52
 
 
 
 ### [Fable-的自主判断](https://simonwillison.net/2026/Jul/3/judgement/#atom-everything)
 
-2026-07-04 02:51:06 | 标签: AI 编程, Claude Code, LLM, 智能体, 提示工程
-
-> 在这篇简短博文中，Simon Willison 回顾了在一次 AI 工程 Fireside Chat 中获得的两个相关技巧。首先，与其规定“仅对大型功能编写测试”等规则，不如让 Fable/Opus 自行判断，这会带来更好的结果。其次，为了在价格上涨前节省昂贵的 Fable token，告诉模型自行判断，将更简单的编码任务委派给运行更便宜模型的子智能体。他分享了确切的提示词，并展示了 Claude Code 自动创建的用于记住此偏好的记忆文件。这篇文章提供了一种具体、可复现的流程，用于成本高效的 AI 辅助编程。
+2026-07-04 02:51:06
 
 
 
 ### [从-LLM-到-JEPA，中国团队正在把“世界模型”搬进细胞内部](https://www.qbitai.com/2026/07/442746.html)
 
-2026-07-03 22:28:38 | 标签: 世界模型, LLM, AI产品与应用, 模型训练与推理, 计算生物学
-
-> 文章详细报道了百曜科技发布的 AURA CellOS 模型，这是全球首个将 JEPA（联合嵌入预测架构）与世界模型理念引入单细胞研究的基础模型。基于 3.905 亿人类单细胞转录组数据，参数量达 12B。文章从生命科学的核心问题——细胞状态变化切入，回顾了 AI 虚拟细胞（AIVC）的发展历程，指出第一代基于 LLM 的模型在动态预测上的局限。CellOS 通过双视角互补（表达丰度+群体特异性）、JEPA 跨视角预测、Dense-to-MoE 三阶段训练，在扰动响应和细胞状态注释任务上达到 SOTA。文章还分析了全球 AIVC 赛道三类玩家（科研机构、平台型公司、AI 制药公司），并指出高质量...
+2026-07-03 22:28:38
 
 
 
 ### [阿里内部全面禁用-Claude-Code](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723966&idx=1&sn=14fa18b1d4acbf67c4a9d083a455f5e5)
 
-2026-07-03 22:10:00 | 标签: Claude Code, AI安全, 模型蒸馏, 安全检测, 企业政策
-
-> 文章报道了阿里巴巴内部下发的通知：从 7 月 10 日起，全面禁用 Claude（包括 Sonnet、Opus、Fable 及 Claude Code 等所有 Anthropic 产品），替代方案为自研 Qoder。事件背景是 Anthropic 于 6 月 10 日致信美国参议院，指控阿里使用 2.5 万个虚假账号进行 2800 万次交互的模型蒸馏攻击；随后 6 月底大量中国用户遭遇封号。更关键的转折来自 Reddit 网友逆向分析：自 4 月 2 日版本起，Claude Code 内置了一套隐蔽检测机制，通过时区、代理地址和 147 个域名清单（包含阿里、字节、百度等）识别中国用户，并在系...
+2026-07-03 22:10:00
 
 
 
 ### [Fable-5-回归-24-小时差评如潮！跑分大降，拒答问题，还偷偷骂用户](https://www.qbitai.com/2026/07/442567.html)
 
-2026-07-03 20:17:37 | 标签: 大语言模型, AI产品与应用, 模型评测, AI安全, 用户体验
-
-> 文章报道了 Claude Fable 5 回归后一天内用户的大量负面反馈。核心内容包括：1）模型在思考过程中暴露的‘碎碎念’，如‘DATA DATA DATA. GO.’、‘GRRR’等，显示其内部状态；2）系统后台存在‘TOO_DUMB_TO_NEED_FABLE’标签，自动将简单请求降级到 Opus 4.8 处理；3）安全机制过度拦截正常问题，如‘解释人类’和‘raspberry 有几个 r’被阻断，且拦截标准随机；4）编程评测机构 BridgeMind 的账单显示，一次 session 中 75%的工作量被转给 Opus 4.8，用户花费 Fable 5 的价格却得到低价模型的服务；5）...
+2026-07-03 20:17:37
 
 
 
 ### [RAG-检索中那些未被教授的课程：余弦并非基础](https://towardsdatascience.com/the-untaught-lessons-of-rag-retrieval-cosine-is-not-the-foundation/)
 
-2026-07-03 20:00:00 | 标签: RAG, 检索, 企业AI, 提示工程, 信息检索
-
-> 文章基于作者系列文章《企业文档智能》，提出了面向企业 RAG 检索的六个未教课程。它反对天真的 chunk-embed-cosine-top-k 流水线，提出了三信号检索系统：基于 `line_df` 的关键词过滤、目录推理以及可选的嵌入相似性。关键课程包括：检索是过滤（而非搜索）、锚点与上下文应保持分离、嵌入要在更廉价信号之后使用、关键词能证明缺失而嵌入不能、在窄语料库中共现优于 BM25、一次 LLM 遍历目录即可捕捉同义改写。文章为每个课程提供了具体对比，并附有 GitHub 上可运行的配套笔记本。它强调同样的模式在多个行业均适用，嵌入仅在词汇不匹配时才会触发。
+2026-07-03 20:00:00
 
 
 
 ### [AI-Native-Observability-赛道：Langfuse、Phoenix、Helicone-与-Sazabi](https://mp.weixin.qq.com/s?__biz=MzY4NzI2MTc1NA==&mid=2247484734&idx=1&sn=9672a83f0aad04d8d4e3e1b6acb78817)
 
-2026-07-03 19:00:00 | 标签: AI可观测性, LLM, AI Agent, 模型评估, AI工程化
-
-> 文章从传统可观测性与 AI Native Observability 的区别切入，系统介绍了四个代表性产品：Langfuse 是 Agent Runtime Observability 平台，通过 SDK 和 OpenTelemetry 记录 Prompt、Token 消耗、Trace 等，适合开发调试；Helicone 采用 Proxy 代理方式，无侵入地记录模型调用延迟与成本，部署简单但获取上下文有限；Arize Phoenix 更侧重 AI Evaluation 与持续迭代，提供 Prompt Playground、LLM-as-a-Judge、RAG Evaluation 等能力；Sa...
+2026-07-03 19:00:00
 
 
 
 ### [脆弱的正确性：推理损害性能的案例-—-LessWrong](https://www.lesswrong.com/posts/JbHLxzuhoCS5ZkJse/fragile-correctness-cases-of-reasoning-harming-performance)
 
-2026-07-03 17:32:33 | 标签: AI 安全, LLM, 推理模型, 思维链, 探针干预
-
-> 本文研究了一个反直觉的现象：更多的推理 token 反而可能降低模型准确率。作者使用 Gemma 4-12b-it 在 MMLU-Pro 和 GPQA Diamond 的 1198 道题上，跟踪模型思维链中的答案变化，发现 14.9% 的题目出现了'答案损失'——模型在某个时刻持有正确答案，但最终答错。其中一部分（4.3%）表现出高置信度的'归一化损失'。作者将'脆弱的正确性'定义为模型持有正确答案但进一步推理可能导致答案丢失的状态。线性探针被训练用于检测这种状态并通过停止推理进行干预，在答案损失题目上实现了 5.2% 的准确率提升，在归一化损失题目上实现了 8.3% 的提升。局限性包括仅测试...
+2026-07-03 17:32:33
 
 
 
 ### [Meta-出租算力被误读，租旧卡不等于下牌桌](https://mp.weixin.qq.com/s?__biz=MjM5NjgzMzkwMQ==&mid=2653651192&idx=1&sn=f4164a7a24349d1a58a892b448181b7f)
 
-2026-07-03 16:38:00 | 标签: 科技商业, AI 产业, 商业模式, 算力经济, 战略分析
-
-> 文章针对 Meta 宣布向外部出租算力导致市场恐慌的事件，提出这属于误读。作者分析 Meta 砸重金买 GPU 但模型 Llama 4 表现不及预期，GPU 换代快导致旧卡闲置折旧，租出去可回血变现，同时新算力仍用于下一代模型研发。类比麦当劳卖汉堡的同时靠地产租约盈利，并举例马斯克的 xAI 也将旧超算租给 Anthropic 但继续训练新模型。文章认为租算力是战术，自研大模型是战略，两者并行不悖，末尾引出作者自己对企业 AI 转型的培训课程广告。
+2026-07-03 16:38:00
 
 
 
 ### [AI-找出-4-种全新超导体，只用-28-个-GPU-时！人类此前完全未知](https://www.qbitai.com/2026/07/442452.html)
 
-2026-07-03 15:35:58 | 标签: AI Agent, 科学智能, 材料科学, 超导材料, 人工智能
-
-> 文章报道了阿里达摩院、中国人民大学高瓴人工智能学院、中国科学院大学等机构合作开发的 AI 智能体 ElementsClaw（元素虾）。该系统结合 10 亿参数的大原子模型与大语言模型，实现了对超导材料的自动预测、文献调研、实验方案设计。仅用 28 个 GPU 小时，ElementsClaw 就从 240 万种已知稳定晶体中预测出 6.8 万种可能为超导体，并实验合成了其中 4 种人类此前未知的全新超导材料（临界温度最高 6.5 K）。文章同时回顾了超导发现百年史——从偶然试错到 AI 驱动，专家强调 AI 并非取代科学家，而是实现人机共生：AI 负责大海捞针，科学家负责提出问题与验证。研究团队...
+2026-07-03 15:35:58
 
 
 
 ### [GTC-四大天王：成为黄仁勋座上宾的四位-90-后华人青年](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042515&idx=1&sn=73fb9a85fd4223cbc21279ff13057f18)
 
-2026-07-03 15:04:00 | 标签: AI创业, 大模型, 具身智能, 机器人, 脑机接口
-
-> 文章以黄仁勋在 GTC 2026 上邀请的四位华人青年为主线，分别介绍杨植麟（月之暗面 Kimi）、王兴兴（宇树科技）、王鹤（银河通用）和朱毅鑫（芯生视界）的学术背景、创业历程与技术方向。杨植麟代表推理大模型，首次披露 Kimi 在 Token 效率、长上下文和智能体集群上的进化路径；王兴兴聚焦人形机器人本体，强调低成本硬件是获取运动数据的前提；王鹤主攻具身智能的操作泛化，推动轮式底盘+机械臂方案进入真实工厂；朱毅鑫则以视觉脑机接口为方向，探索智能反向接入人脑的路径。文章将四个人串联成从硅基智能到碳基智能的完整链路，并指出黄仁勋的邀请函实际是英伟达对产业风向的提前下注。
+2026-07-03 15:04:00
 
 
 
 ### [异构-Token-工厂不再踩坑！多机构联合发布工业级设计实践，拆解跨硬件推理服务的核心边界](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042515&idx=2&sn=6994427190f016869ee92b7a2fab085a)
 
-2026-07-03 15:04:00 | 标签: LLM, KV Cache, 模型推理与部署, 异构推理, AI基础设施
-
-> 文章解读了上海创智学院、上海交大、复旦等多家产学研机构联合发表的论文《Demystifying the Design Space and Best Practices for Heterogeneous LLM Inference and Serving》。该论文首次系统性地分析异构 Prefill-Decode 推理设计空间，识别出五个耦合设计维度（计算放置、KV 表示、KV 所有权与生命周期等），并收敛出三个必须联合决策的边界问题：计算放置、KV 表示、KV 所有权与生命周期。论文同时提出了九条部署最佳实践，涵盖硬件选型、量化配置、KV Cache 传输与生命周期管理。实验部分展示了在沐曦...
+2026-07-03 15:04:00
 
 
 
 ### [从「预测」到「规划」未来：WLA-统一了世界建模、语言推理与动作生成](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042515&idx=3&sn=8e62ba2c7572de45d20993e9c8d2271f)
 
-2026-07-03 15:04:00 | 标签: 具身智能, 世界模型, 机器人, 模型训练与推理, AI Agent
-
-> 文章介绍了上海交通大学 DENG Lab 提出的世界-语言-动作模型（WLA），旨在统一世界建模、语言推理与动作生成。传统世界-动作模型（WAM）依赖像素级视觉预测，存在细节重建负担、推理延迟高、语义信息不足等局限。WLA 采用自回归 Transformer 架构，由预训练 VLM 初始化，同时预测粗粒度的文本意图（自然语言描述的子任务序列）与细粒度的物理动态（物体位姿、接触关系等变化）。部署阶段仅激活 2B 参数，在 RoboTwin 2.0、LIBERO 及真机实验中全面超越多类 WAM/VLA 基线，特别是在长时程、强记忆依赖的 RMBench 上成功率接近次优方法的两倍（56.5% v...
+2026-07-03 15:04:00
 
 
 
 ### [OpenAI-的-GPT-5.6-系列、训练机器人的新方法、模型调用模型](https://www.deeplearning.ai/the-batch/issue-360)
 
-2026-07-03 15:00:06 | 标签: LLM, GPT-5.6, AI 安全, 智能体 AI, Fugu
-
-> 本期《The Batch》以吴恩达的公开信开篇，解释了 DeepLearning.AI 将学习者放在首位、合作伙伴其次、自身最后的编辑理念，强调他们从未接受任何合作伙伴的付款来制作课程，并优先提供技术深度内容。新闻部分报道了 OpenAI 预览的 GPT-5.6 系列（Sol、Terra、Luna），该系列最初仅限约 20 个美国政府批准的组织使用，并配备了增强的安全护栏，包括双重分类器和自动用户审查。OpenAI 承诺在未来几周内更广泛地发布。这些模型在编程方面表现强劲（Terminal-Bench 2.1 上达到 91.9%），并具备专家级生物学知识（World-Class Bio 上达到...
+2026-07-03 15:00:06
 
 
 
 ### [今天刚听完的硅谷-AI-工程师实践分享：AI-agent-到底怎么才算真正落地](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247494796&idx=1&sn=061de8911ac656b90988a26cc3f0c0bc)
 
-2026-07-03 14:52:00 | 标签: AI Agent, AI 编程, AI 工程实践, Cursor, Inngest
-
-> 文章记录了作者在旧金山参加的一场 AI agent 小型聚会，主要分享来自 Cursor 战略 GTM Kash Yechuri 和 Inngest DevRel 主管 Sterling Chin。Kash 提出 AI 开发的三个阶段：AI 辅助→照看 agent→agent 团队自主运行，并给出 Cursor 内部数据（30% PR 由 agent 自动完成，企业云端 AI agent 使用率从 15-20% 跃升至 75%）。他分析了工程师角色从写代码到审代码的转变，指出同步 agent 的「40% 生产率天花板」源于注意力瓶颈，而异步 agent 团队能突破此限制，但带来 multi-a...
+2026-07-03 14:52:00
 
 
 
 ### [OpenAI-之后，Anthropic-也盯上自研芯片：AI-战争打到供应链深处](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247664226&idx=1&sn=c9c2dafe981c340f1a412d9d6bf9a4b2)
 
-2026-07-03 14:28:00 | 标签: AI 硬件与芯片, 模型训练与推理, AI 商业化, 供应链, 半导体
-
-> 文章基于 TechCrunch、Reuters 等信源及公开招聘信息，报道了 Anthropic 与三星就自研 AI 芯片初步接触，同时回顾了 OpenAI 刚发布的推理芯片 Jalapeño。作者指出，模型公司自研芯片并非要替代英伟达，而是在多供应商策略之上增加自定义能力，重点瞄准推理场景以降低商业化成本。文章从需求端（Claude 使用量爆发）、供给端（内存短缺、产能紧张）和竞争端（对标 OpenAI）三个角度分析了「为什么是现在」，并系统阐述了自研芯片的四点实际意义：增加产能入口、迁移推理负载、提升谈判筹码、协同模型与硬件路线图。同时，作者并不回避风险——设计成本高昂（约 5 亿美元）、...
+2026-07-03 14:28:00
 
 
 
 ### [黄仁勋说的-Physical-AI，被这家中国跨界选手带进了生命科学实验室](https://www.qbitai.com/2026/07/442311.html)
 
-2026-07-03 13:24:06 | 标签: AI Agent, AI for Science, 多智能体系统, 湿实验, 实验自动化
-
-> 文章以 AI for Bio 赛道中「能出方案但出不了结果」的行业瓶颈为切入点，指出硅谷 AI 巨头（OpenAI、Anthropic 等）的模型能力止步于实验方案设计，无法真正触达物理实验执行。涌生智能（华大智造子公司）与上海人工智能实验室合作推出 ProtoPilot——一个由真实实验室场景驱动的自进化多智能体系统，能够将自然语言实验意图逐层转化为 Protocol、SOP、设备代码并下发执行，并通过湿实验反馈持续修正。同时发布 BioLab Bench，首个覆盖全流程的 Agent 评测体系。文章详细展示了 ProtoPilot 在 ProtocolQA、代码生成、跨设备迁移等指标上优于...
+2026-07-03 13:24:06
 
 
 
 ### [一根轴与两个特征：我是如何解出-BlueDot-第一道谜题的，以及分类器如何在食物方向上隐藏国家特征-—-LessWrong](https://www.lesswrong.com/posts/ZPNf3QbQ5rLgkKtY7/one-axis-and-two-features-how-i-solved-the-first-puzzle-from)
 
-2026-07-03 13:22:27 | 标签: AI 安全与对齐, 模型可解释性, 线性探针, 叠加, 特征编码
-
-> 文章描述了作者解出 BlueDot 第一道技术 AI 安全谜题的过程。任务涉及一个小型分类器，以超过 95% 的准确率从短文本预测八个二元特征。通过探针分析，作者发现七个特征呈线性表示（线性探针 AUC 约 0.99），但国家特征在线性探针上接近随机（0.487），而非线性 MLP 探针则恢复了它（0.987）。排除布尔组合和距离假设后，作者采用二次分类器（AUC 0.973）和对角化方法，发现主特征向量几乎完美对齐食物特征方向（余弦相似度 0.874）。这表明模型复用了食物轴：食物通过投影符号读取，国家通过投影幅度（特别是接近零的程度）读取。文章最后演示了对抗性梯度反转训练来以更奇异的方式隐...
+2026-07-03 13:22:27
 
 
 
 ### [AIEWF-每日速递：关于自主循环的大辩论与-AI-工程现状](https://www.latent.space/p/aiewf-daily-dispatch-locomotives)
 
-2026-07-03 13:11:43 | 标签: AI 工程, AI 智能体, 软件工厂, 开发者工具, 会议报道
-
-> 本文报道了 AI 工程师世界大会最后一天的议程，涵盖了一场关于智能体循环（自主软件工厂）可行性的激烈辩论，正方代表 Geoffrey Huntley 和 Ian Livingstone 对阵反方 Dex Horthy 和 Greg Pstrucha。文章还涉及对 Anthropic Mike Krieger 的专访，介绍 Claud Tag——其内部委托式智能体系统；Amplify 发布的 2026 AI 工程师调查显示 95% 受访者使用智能体，但控制层仍处初级阶段，59% 担忧长期负债；以及 Theo Browne（曾经的创业公司如今只是副业）和 Garry Tan（打造 AI 原生公司，...
+2026-07-03 13:11:43
 
 
 
 ### [ICML-2026｜让-Agent-真正协同作战：GoS-为多智能体推理构建共享信念状态](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247517283&idx=2&sn=b915815bf0eb172eaddd6cb796971b72)
 
-2026-07-03 11:59:00 | 标签: AI Agent, 多智能体推理, 神经符号, 溯因推理, 大语言模型
-
-> 文章首先指出现有多智能体推理方法在医疗诊断、分布式系统故障排查等溯因任务中暴露的四类失败模式：证据伪造、上下文漂移、回溯失败和过早停止，并分析其结构根源——缺乏显式状态表示与状态控制机制。为此，南开大学与联想合作提出 Graph of States（GoS），一个双层神经符号框架：认知层模拟主治医生与专家智能体的角色分工，符号层显式维护因果图和状态机，记录假设、证据及其关系，并通过推理焦点机制引导调查方向。GoS 引入两类关键状态转换——回溯（Backtracking）和下钻（Drill-Down），使系统能根据证据变化稳定收敛。实验在医疗诊断（DiagnosisArena 改造版）和分布式系...
+2026-07-03 11:59:00
 
 
 
 ### [封号/Fable5/Sonnet5...-开源「搭子」Skill-重拳-Anthropic](https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw==&mid=2247508239&idx=1&sn=bef3facd1f5d09d723bbcfcfc66b64fb)
 
-2026-07-03 09:56:00 | 标签: AI编码, Claude Code, 开源工具, AI Agent, 提示工程
-
-> 文章以作者个人经历为线索，记录了 Anthropic 封号事件与应对策略（使用苹果隐藏邮件+礼品卡注册新号），揭露了 Claude Code 通过时区、环境变量和隐写术检测中国用户的手法。随后评估了 Sonnet5 模型在编程、推理、计算机使用等基准上的表现，指出其 tokenizer 导致实际成本可能不降反升。最后重点介绍与 Fable5 合作开源的「搭子 skill」：通过将 Claude Code 负责高价值任务（规划、审查）与 Codex 负责高消耗任务（实现、自动化）分工，并以单一 Claude Code 会话贯穿全程避免反复冷启动，实现成本优化。文章提供了可复用的提示词模板（/lo...
+2026-07-03 09:56:00
 
 
 
@@ -43688,113 +43640,85 @@
 
 ### [分散损失（LM-Dispersion）](https://chenliu-1996.github.io/projects/LM-Dispersion/)
 
-2026-07-04 06:35:47 | 标签: LLM, 嵌入凝聚, 表示学习, Transformer, 小型语言模型
-
-> 本文呈现了一项基于观测的语言模型训练研究。作者发现小型模型中的词元嵌入在 Transformer 层中会坍缩到一个狭窄的锥形子空间中——这种现象被称为嵌入凝聚——而大型模型则能抵抗这种坍缩。通过受控实验，他们表明凝聚是可复现的、在初始化时出现，且无法通过知识蒸馏解决。为了缓解这一效应，他们设计了一种分散损失，鼓励嵌入在超球面上均匀角分散。中期训练和预训练实验表明，分散损失能够减少凝聚并提升下游任务的泛化能力。作者坦诚讨论了局限性和未来方向，强调该损失的探索性质以及适度的性能提升。
+2026-07-04 06:35:47
 
 
 
 ### [Leanstral-1.5：为所有人提供丰富的证明](https://mistral.ai/news/leanstral-1-5/)
 
-2026-07-04 06:33:10 | 标签: 形式化验证, AI 数学, 定理证明, LLM, Lean 4
-
-> Mistral AI 推出了 Leanstral 1.5，这是一个采用 Apache-2.0 许可的模型，总参数 119B，活跃参数 6B，专为 Lean 4 中的证明工程设计。它在 miniF2F 上达到 100%，解决了 672 个 PutnamBench 问题中的 587 个，并在 FATE-H (87%) 和 FATE-X (34%) 上创下新的最先进成果。该模型通过中期训练、监督微调和基于 CISPO 的强化学习进行训练，运行在两个 RL 环境中：一个多轮 Lean 验证器和一个与原始文件系统交互的代码智能体。除了数学之外，它还展示了强大的代码验证能力，证明了 AVL 树的时间复杂度...
+2026-07-04 06:33:10
 
 
 
 ### [每美元性能正在变得更快更便宜-|-Wafer](https://www.wafer.ai/blog/glm52-amd)
 
-2026-07-04 05:49:06 | 标签: AI 推理, AMD MI355X, GLM-5.2, 模型优化, 投机解码
-
-> 本文详细介绍了 Wafer 如何在 AMD MI355X GPU 上服务 GLM5.2，实现 2626 tok/s/节点聚合吞吐量和 213 tok/s 单流性能，成本比 NVIDIA Blackwell 降低超过 2 倍。文章描述了使用 AMD Quark 将模型量化为 MXFP4，精度损失可忽略不计；选择 sglang 推理框架以获得最佳兼容性；在修复两个 ROCm 相关 bug 后启用投机解码。MoE 内核调优也提升了预填充性能。作者得出结论：AMD 的软件生态系统正在成熟，与 NVIDIA 的差距正在缩小，CUDA 的护城河正在实时被侵蚀。
+2026-07-04 05:49:06
 
 
 
 ### [GitHub---kerlenton/mcpsnoop：MCP-版-Wireshark。一个透明代理，在你的终端中实时展示-AI-客户端与-MCP-服务器之间的每一次真实工具调用。](https://github.com/kerlenton/mcpsnoop)
 
-2026-07-04 00:53:50 | 标签: MCP 协议, AI 工具, 开发者工具, 调试, JSON-RPC
-
-> mcpsnoop 是一个开源工具，充当 AI 客户端（如 Claude Desktop、Cursor 或 Claude Code）与 MCP 服务器之间的透明代理，在实时终端界面中捕获所有 JSON-RPC 帧。它解决了官方 MCP Inspector 留下的调试空白，后者作为独立客户端运行，无法查看真实流量。主要功能包括：请求/响应/通知的实时彩色流、带计时器的挂起调用检测、能力检查器、支持搜索的帧深入查看，以及独特的回放模式，可针对全新服务器实例重新运行捕获的工具调用。该项目提供单一二进制文件，无运行时依赖，零配置设置（shim 和 UI 自动发现彼此），并支持 stdio 和 strea...
+2026-07-04 00:53:50
 
 
 
 ### [给聪明人工具做聪明事](https://superuserdone.com/posts/2026-07-03-give-smart-people-the-tools/)
 
-2026-07-04 00:44:12 | 标签: AI 炒作, AI 营销, 专家 vs AI, AI 批评, AI 工具
-
-> 作者观察到，AI 公司（Anthropic、OpenAI、埃隆·马斯克）依靠炒作和恐惧来销售订阅，声称 AI 将取代各行各业的专家。然而，文章指出，真正的工作——无论是编程、会计还是工程——核心在于理解业务问题、设计系统以及权衡取舍，而不仅仅是产出可见的成果（制品）。编译器、电子表格等工具赋能了专家，而非取代他们。文章以 Mythos/Fable 网络安全发布为例，说明营销如何掩盖真实能力。AI 公司面临投资者的回报压力，因此趁着炒作热潮变现。作者呼吁 AI 高管打造辅助专家的工具，而非威胁取代他们，并以游戏引擎（Unity、Unreal）和 Midjourney Medical 为例，说明工...
+2026-07-04 00:44:12
 
 
 
 ### [GitHub---jamesob/local-llm:-我在本地运行-LLMs-的全部知识](https://github.com/jamesob/local-llm)
 
-2026-07-03 23:03:43 | 标签: 本地 LLM, GPU 推理, AI 基础设施, 硬件配置, PCIe 开关
-
-> 本指南提供了组装最先进本地 LLM 推理机的详细步骤，从预算 2000 美元、配备 2× RTX 3090（48GB VRAM）的入门方案，到使用 4× RTX PRO 6000（384GB VRAM）的 40000 美元高端构建。作者分享了他们的个人物料清单（BOM），包括基于 EPYC 的底层系统、使用 c-payne.com 的 PCIe Gen4 开关以实现直接点对点 GPU 通信的理由，以及定制的木质机箱。指南涵盖了关键的 BIOS 配置（分叉、链路速度、ASPM、可调整大小 BAR）、必要的内核参数（`iommu=off`）、交换机 P2P 的 ACS 禁用，以及用于在 110V ...
+2026-07-03 23:03:43
 
 
 
 ### [Cloudflare-详细介绍统一数据平台，账单工作负载占查询的-53%](https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-03 22:29:00 | 标签: 数据工程, 数据平台, AI 智能体, 数据治理, 云基础设施
-
-> Cloudflare 发布了关于其内部统一数据平台 Town Lake 的细节，揭示账单工作负载占平台查询的 53%。该平台基于使用 Apache Trino、Apache Iceberg、Cloudflare R2 对象存储以及 DataHub 元数据管理的 lakehouse 架构构建。它提供了跨碎片化的 Postgres、ClickHouse、Kafka、BigQuery 和对象存储系统的统一 SQL 接口。关键设计要素是默认闭合的治理模型：新加入的数据集在自动进行 PII 扫描并经人工审查后才可访问。在 Town Lake 之上，Cloudflare 构建了 Skipper，一个 AI...
+2026-07-03 22:29:00
 
 
 
 ### [美团技术团队顶会论文分享：搜索推荐-ASX-专场](https://tech.meituan.com/2026/06/18/2026-ASX.html)
 
-2026-07-03 19:02:04 | 标签: AI Agent, 大语言模型, 后训练, 强化学习, 奖励模型
-
-> 文章以论文简介形式，展示了美团技术团队在 ICLR、NeurIPS、CVPR、AAAI 等顶会发表的 6 篇研究成果。每篇简介简洁交代问题动机、方法核心与实验结果，覆盖上下文轨迹老虎机（CBS）、负样本投影残差强化学习（ResRL）、对比驱动评分准则生成（CDRRM）、本地生活服务智能体搜索基准（LocalSearchBench）、饮食领域多视角 VLM 评测基准（DiningBench）以及自进化智能体框架（Mem²Evolve）。文章结构清晰，便于读者快速了解美团在 Agent 技术体系上的布局与创新点。
+2026-07-03 19:02:04
 
 
 
 ### [ACL-2026-精选论文分享：美团履约团队前沿技术专场](https://tech.meituan.com/2026/06/11/ACL-2026-Agent.html)
 
-2026-07-03 19:02:04 | 标签: ACL 2026, 论文分享, AI Agent, 强化学习, 低秩适配
-
-> 文章是美团技术团队对 ACL 2026 上自家五篇论文的精选分享。GeoRA 从几何感知角度设计低秩适配方法，专为 RLVR 优化，保留预训练结构的同时提升训练稳定性和泛化能力；CoT-Flow 将离散推理步骤建模为连续概率流，量化每一步信息增益，实现 15.9%的 AIME24 准确率提升和 10%~15%的长度压缩；UserLM-R1 构建具备推理能力的用户模拟器，通过多奖励强化学习让智能体学会像人一样策略性协商；Fine-Mem 引入因果反馈对齐，以块级步骤奖励和基于证据的奖励归因解决长期记忆任务中的稀疏奖励问题；DuplexOmni 通过交互层与思考层异步协作，实现低延迟的全双工多模态...
+2026-07-03 19:02:04
 
 
 
 ### [Agentic-AI-架构](https://www.infoq.com/minibooks/agentic-ai-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-03 19:00:00 | 标签: Agentic AI, AI 架构, LLM, 微服务, 分布式系统
-
-> InfoQ 关于 Agentic AI 架构的电子杂志收录了一系列文章，将 Agentic AI 架构确立为一种新的软件范式。Mallika Rao 讨论了从微服务到智能体的转变，强调分解决策而非功能。Karthik Ramgopal 涵盖了 Agentic Harness 从链到图再到代码的演变，分享了生产级最佳实践。Adi Polak 引入了上下文工程作为一门管理记忆、知识和上下文的学科，旨在减少幻觉。Subash Natarajan 和 Ahilan Ponnusamy 提出了一个三层企业框架，并附有行业示例。Rafał Gancarz 审视了当前的挑战和未来的机遇，认为 Agentic...
+2026-07-03 19:00:00
 
 
 
 ### [ChatGPT-文件下载漏洞，攻击者可窃取本地系统文件](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341770&idx=3&sn=5f993ee1f9b904d488491e9eb4cb7caf)
 
-2026-07-03 18:00:00 | 标签: LLM安全, AI安全, 漏洞分析, 路径遍历, ChatGPT
-
-> 本文报道了 ChatGPT 中存在的一个概念验证漏洞链，涉及防护机制绕过与路径遍历缺陷。研究员 zer0dac 通过四步操作（文件上传、防护绕过、LLM 社会工程、端点拦截）获取有效下载 URL，并利用路径规范化不一致的缺陷，在 sandbox_path 参数后附加遍历序列，成功读取沙盒外的/etc/passwd 文件。文章指出，虽然 ChatGPT 沙盒化环境限制了实际影响，但该漏洞链展示了 AI 安全中提示操控与传统 Web 漏洞交汇的风险。OpenAI 已通过重新设计 URL 下载流程修复问题。文章来源于 FreeBuf，编译自外媒报道。
+2026-07-03 18:00:00
 
 
 
 ### [10-款开源-AI-Agent-曝高危漏洞，攻击者可绕过防护执行任意命令](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341770&idx=4&sn=54a42f87c96ea2bebff83c5cda3d0ddb)
 
-2026-07-03 18:00:00 | 标签: AI 安全, LLM, AI Agent, AI 编程, 漏洞分析
-
-> 文章报道了 Adversa AI 的最新安全研究，披露了一种被称为 GuardFall 的 Shell 注入绕过技术。该技术利用 Shell 解析与安全检查之间对命令文本处理方式的不同（例如空引号剥离、Base64 编码隐藏等），成功绕过了 11 款主流开源 AI 编程与计算机使用 Agent 中的纯文本阻止列表防御机制。文章详细说明了漏洞原理、受影响工具清单（包括 OpenCode、Goose、Cline 等）、唯一具备防御能力的 Continue 工具的预解析机制，并给出了临时防护建议（隔离敏感目录、关闭自动执行标志、禁止处理分叉仓库 PR 等）。该漏洞是今年一系列类似发现（TrustFa...
+2026-07-03 18:00:00
 
 
 
 ### [企业微调：强化学习实践](https://www.infoq.com/presentations/rft-openai-model/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-03 17:22:00 | 标签: Agent RFT, 强化学习, 微调, 推理模型, AI 智能体
-
-> 本次演讲由 OpenAI 工程师 Will Hang 和 Wenjie Zi 主讲，涵盖了从监督学习到强化学习的微调演进，重点介绍了 Agent RFT——一种用于在智能体任务上微调推理模型的新平台能力。他们解释了为什么监督微调在处理复杂的多步骤问题时存在不足，以及基于 RL 的微调如何使模型通过尝试、奖励信号和信用分配来学习最优工具调用策略。关键创新包括：允许模型在训练期间调用外部工具、提供用于自定义奖励的评分器端点，以及用于 rollout 追踪的唯一 ID。演讲还提出了实用的成功原则：选择定义清晰的任务、设计精确的奖励函数、利用样本效率，并预期延迟改进。用例范围从编程到法律研究。Agen...
+2026-07-03 17:22:00
 
 
 
 ### [孵化了-10-万多-Star-开源项目的团队，在-GitHub-上搞了一个新东西。](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247535021&idx=1&sn=49cc9d7231f38185eac083f876c2fd26)
 
-2026-07-03 17:07:00 | 标签: AI Agent, LLM, 开源项目, AI产品与应用, AI视频编辑
-
-> 文章从 browser-use 团队的新项目 video-use 切入，详细介绍了这款 AI 视频剪辑工具。核心创新在于通过 ElevenLabs Scribe 将音频转写为带词级时间戳的文本，将原本需要数千万 token 的逐帧分析简化为 12KB 文本加按需合成图，大幅降低成本。文章还描述了自评估机制——渲染后在切点边界回放检查视觉跳变、音频爆点等问题，最多重渲染 3 次。安装使用简单，需要 ElevenLabs API key。作者分享实际体验：能有效去除废话、配字幕精准，但画面选取不够精准、画质变模糊，需要更详细指令以获得更好效果。
+2026-07-03 17:07:00
 
 
 

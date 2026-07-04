@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-04 09:54:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-04 13:38:27 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -572,9 +572,7 @@
 
 ### [Oracle-悄然将免费套餐-Ampere-A1-计算资源限额减半，未做任何公开公告](https://www.infoq.com/news/2026/07/oracle-cloud-free-tier-limits/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-03 18:13:00 | 标签: 云计算, Oracle Cloud, 开发者工具, 免费套餐, 科技资讯
-
-> 本文报道了 Oracle 在 OCI 上悄然削减 Always Free Ampere A1 计算资源配额一事，期间未发布博客文章、邮件通知或公开声明。此次变更将每月的 OCPU 和内存小时数减半，影响了许多运行个人服务器、家庭自动化和轻量级 AI 工作负载的开发者。用户通过实例被关闭或文档差异对比才发现新的限额。关于 PAYG 账户是否豁免的问题引发了困惑，Oracle 支持团队据报道通过邮件确认了豁免，但官方文档仍存在歧义。本文强调了这种静默变更对信任的影响，并为受影响用户提供了审计实例和联系支持的建议。
+2026-07-03 18:13:00
 
 
 

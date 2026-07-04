@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-04 09:54:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-04 13:38:27 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,17 +710,13 @@
 
 ### [GitHub---FossPrime/Steam-Controller-Auto-Charge:-把控制器猛塞进磁性充电座直到充满电](https://github.com/FossPrime/Steam-Controller-Auto-Charge)
 
-2026-07-04 06:39:50 | 标签: OpenCV.js, WebHID, 计算机视觉, Vue.js, Rust WASM
-
-> Steam Controller Auto-Charge 是一个 Vue 3 应用，利用 OpenCV.js 进行光流追踪，并通过 WebHID 以触觉脉冲的形式与手柄通信。它借助 Lucas-Kanade 光流算法和 Rust/WASM CNN 目标检测来引导手柄滑向充电座。只需 Nix、一个 Chromium 浏览器和一个俯视摄像头即可完成搭建。架构上将摄像头处理、WebHID 控制和目标检测分离为独立模块，并通过 Web Worker 和 WebAssembly 承担重型计算以保证性能。该项目采用 MIT 许可证，灵感来源于 Very Lazy Pixel 的视频。
+2026-07-04 06:39:50
 
 
 
 ### [如何使用-JavaScript-构建基于浏览器的-PDF-分析器](https://www.freecodecamp.org/news/build-pdf-analyzer-javascript/)
 
-2026-07-03 23:37:58 | 标签: PDF, JavaScript, 教程, Web 开发, 浏览器工具
-
-> 文章首先阐述了 PDF 分析在商业、法律、教育、出版和医疗等领域的价值，并强调由于所有处理都在浏览器中进行，因此能保护隐私。接着，它逐步介绍了完整的项目搭建、上传界面、页面预览、分析配置（基础/标准/高级三个级别，可选 OCR）、核心分析流程（元数据、页面信息、安全性、字体、图片、文本统计、情感分析）以及结构化报告的展示。教程为每一步都提供了完整的代码片段，并展示了如何以多种格式导出报告。它还重点说明了实际应用中的注意事项和需要避免的常见错误。最终成果是一个功能齐全、无需服务器的 PDF 分析器，用户可以在本地部署使用。
+2026-07-03 23:37:58
 
 
 

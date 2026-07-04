@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-04 09:54:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-04 13:38:27 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3571,25 +3571,19 @@
 
 ### [LLM-维基过度工程化-—-—-我用纯-Python-编译器替换了我的维基](https://towardsdatascience.com/llm-wikis-are-over-engineered-i-replaced-mine-with-a-pure-python-compiler/)
 
-2026-07-03 21:30:00 | 标签: Python, Markdown, 知识管理, 软件工程, 开发者工具
-
-> 作者认为，LLM 驱动的维基对重组本地文本的确定性任务来说是过度工程化的。他们提出了一个四阶段的 Python 编译器（正则提取器、基于词索引的图构建器、感知章节的重写器、lint 工具），仅依赖标准库，零依赖。文档中记录了两个真实的 bug：一个二次方的图构建器被替换为线性的词索引匹配器；以及一个 lint 工具最初通过扫描 "Referenced By" 部分错误地计算了孤立页面的数量。在 Linux 和 Windows 上的基准测试显示，跨操作系统的输出是确定的，而 lint 由于磁盘 I/O 成为最昂贵的阶段。提供了完整的代码和 17 个测试。
+2026-07-03 21:30:00
 
 
 
 ### [站在十字路口，四面八方都是路，条条大路通罗马｜和《周期之外》聊我的十字路口](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109668&idx=1&sn=74732ffef2ca1e2681fdfff8507b7b77)
 
-2026-07-03 12:41:00 | 标签: 职业成长, 个人成长, 创业, 产品经理, 内容创业
-
-> 文章以访谈形式展开，Koji 分享了自己从北航计算机专业学生到初代产品经理（加入饭否），再到创立街旁、经历聚美上市、联合创立新世相、打造消费品牌躺岛，直到如今专注十字路口 Crossing 和天使投资的完整历程。他讲述了每个关键选择的动机、得失与反思，包括如何主动接近王兴、创业不要被别人控股、内容与消费领域的差异体验，以及“运气面积”等个人感悟。最后提到观鸟爱好作为精神调剂。全文聚焦于“人生十字路口”时如何跟随本心做出选择。
+2026-07-03 12:41:00
 
 
 
 ### [Interfaze-开源-diffusion-gemma-asr-small：基于-DiffusionGemma-并行去噪解码器的多语言扩散式-ASR-模型](https://www.marktechpost.com/2026/07/02/interfaze-ships-diffusion-gemma-asr-small-an-open-source-diffusion-asr-model-transcribing-six-languages-via-diffusiongemmas-parallel-denoising-decoder/)
 
-2026-07-03 11:24:26 | 标签: 扩散模型, ASR, 语音识别, 开源, 多语言 ASR
-
-> 本文报道 Interfaze 发布 diffusion-gemma-asr-small，据称是首个开源多语言扩散式 ASR 模型。该模型采用冻结的 DiffusionGemma 26B 主干（MoE 架构，40 亿活跃参数），配合约 4200 万参数的可训练适配器。核心创新在于离散扩散解码器，可并行去噪所有 token，区别于自回归模型。训练流程使用冻结的 whisper-small 编码器作为特征提取器，可训练的投影层将音频特征映射到 DiffusionGemma 的嵌入空间，并直接在投影层输出上应用 CTC 损失以解决早期训练死锁。性能基准显示，该模型在 LibriSpeech test-...
+2026-07-03 11:24:26
 
 
 
@@ -14377,97 +14371,73 @@
 
 ### [Odin、维基百科与互动农场](https://katamari64.se/posts/2026/odin-wikipedia/)
 
-2026-07-04 07:24:35 | 标签: 维基百科, 关注度, 编程语言, 网络讨论, 社区治理
-
-> 本文考察了 Odin 编程语言条目通过维基百科的存废讨论流程被删除的事件。文章列出了投票分布情况，以及支持删除和支持保留的投票者的理由，随后还提到了 Odin 语言创建者 GingerBill、维基百科联合创始人 Jimmy Wales 以及程序员 Casey Muratori 在 Twitter 上的反应。作者认为，维基百科依赖传统可靠来源的关注度指南，并不能很好地反映当前编程知识的创造和分享方式。同时，作者也批评了 Odin 支持者的一些言论，这些言论曲解了维基百科的政策。文章还反思了更广泛的互动农场现象，即在社交媒体辩论中，表演性的冷漠和不好奇会获得奖励。作者最终建议，为编程语言制定针对...
+2026-07-04 07:24:35
 
 
 
 ### [应用范畴论课程](https://math.ucr.edu/home/baez/act_course/index.html)
 
-2026-07-04 04:42:00 | 标签: 范畴论, 应用数学, 数学教育, 公开课, 组合性
-
-> 这是 John Baez 的一个课程主页，索引了基于 Fong 和 Spivak 教材的应用范畴论课程。它列出了超过 75 个讲座，分为四个章节：有序集（讲座 1-17）、资源理论（讲座 18-33）、数据库（讲座 34-54）和协作设计（讲座 55-77）。每个讲座都有一个描述性标题，并链接到由 Simon Burton 创建的专用网页。该结构反映了书籍从预序和伴随，经过资源理论和丰富范畴，到范畴数据库设计以及使用预函子和幺半范畴进行协作设计的进展。该页面充当了整个课程材料的导航图。
+2026-07-04 04:42:00
 
 
 
 ### [针对欧洲议会的间谍活动：调查间谍软件的委员会成员遭-Pegasus-飞马间谍软件入侵——Citizen-Lab](https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/)
 
-2026-07-04 04:38:26 | 标签: 飞马间谍软件, 间谍软件, 定向监控, 欧洲议会, 网络安全
-
-> 这份 Citizen Lab 报告提供了法医鉴定证据，证明希腊记者、前欧洲议会议员 Stelios Kouloglou 在 2022 年 10 月和 2023 年 3 月担任欧洲议会 PEGA 委员会成员期间，其 iPhone 多次被 Pegasus 间谍软件感染。这些感染恰好发生在委员会关键活动期间，包括报告草案筹备以及赴希腊和塞浦路斯的调研任务。该间谍软件本可窃取非公开信息，侵犯议会特权。报告未将攻击归咎于特定政府，但指出与此前已确认的针对流亡记者的 Pegasus 活动存在重叠，表明有客户获得了在多个欧洲国家运营的授权。此次发现标志着首次有现任 PEGA 委员会成员被公开确认是 Pega...
+2026-07-04 04:38:26
 
 
 
 ### [FreeBSD-吞了我的内存！](https://crocidb.com/post/freebsd-ate-my-ram/)
 
-2026-07-04 03:08:31 | 标签: FreeBSD, 内存管理, 系统监控, 调试, 开源
-
-> 作者从个人观察到 fastfetch 和 btop 显示的内存值不一致出发，探究了 FreeBSD 中已用内存报告的复杂性。他们解释了虚拟内存管理系统（活动、非活动、有线、空闲队列）以及 ZFS ARC 缓存。通过检查 btop、fastfetch 和 htop 的源代码，他们发现了 btop 的 FreeBSD 收集器中的两个错误：将页计数乘以页大小时发生 32 位整数溢出（上限约 4 GiB），以及使用了 vm.stats.vm.v_cache_count，该变量自 FreeBSD 12.0 起便成为一个始终返回 0 的虚拟变量。随后，作者为 btop 和 htop 编写了修复方案，正确地...
+2026-07-04 03:08:31
 
 
 
 ### [从第一性原理看软件-·-Faza](https://fazamhd.com/mental-models/software/)
 
-2026-07-04 02:30:00 | 标签: 逻辑门, 二进制, 晶体管, 采样定理, 信息论
-
-> 本文采用第一性原理方法解释计算机的工作原理，从开关的物理现实出发，逐步深入逻辑门、二进制算术，以及从机械计算器到真空管和晶体管的演变。文章涵盖使用 XOR 和 AND 门构建半加器、二进制计数的概念，以及通过采样和量化将模拟信号数字化的过程，并引用了香农的信息理论。文中通过交互式模拟器演示逻辑电路、二进制加法和信号重建等关键概念，旨在帮助读者建立对计算基础的理解，无需技术背景即可掌握。
+2026-07-04 02:30:00
 
 
 
 ### [国际棋联道德与纪律委员会就弗拉基米尔·克拉姆尼克特级大师案件作出裁决](https://www.fide.com/fide-ethics-disciplinary-commission-issues-a-decision-in-case-involving-gm-vladimir-kramnik/)
 
-2026-07-04 01:04:08 | 标签: 国际象棋, 国际棋联, 弗拉基米尔·克拉姆尼克, 道德, 纪律处分
-
-> 国际棋联道德与纪律委员会（EDC）已就针对前世界冠军弗拉基米尔·克拉姆尼克的纪律程序作出裁决。该案源于对其持续公开发表言论及社交媒体帖子的投诉，这些内容指控特级大师大卫·纳瓦拉、已故特级大师丹尼尔·纳罗迪茨基及其他棋手作弊。经过全面审查，EDC 认定克拉姆尼克违反了多项规定，包括损害尊严、欺凌、网络欺凌、心理虐待以及作出虚假公开指控。委员会驳回了部分指控，例如对国际棋联声誉造成损害。EDC 对其处以两年全球禁赛，不得参加国际棋联赛事，其中最后 12 个月缓期执行，考察期三年，实际为一年禁赛，另加 12 个月为国际象棋界无偿服务。该裁决强调打击作弊是首要任务，但必须通过保密程序并基于确凿证据处理...
+2026-07-04 01:04:08
 
 
 
 ### [LOAD-"PL/CBMBASIC"，8，1：PostgreSQL-中的-Commodore-64-BASIC](https://thombrown.blogspot.com/2026/07/load-plcbmbasic81-commodore-64-basic.html)
 
-2026-07-04 00:07:42 | 标签: PostgreSQL, 数据库扩展, Commodore 64, BASIC, 复古计算
-
-> 本文详细介绍了 PL/CBMBASIC 的实现与使用，这是一个 PostgreSQL 过程语言扩展，能在模拟的 Commodore 64 BASIC V2 解释器中运行函数。文章解释了该扩展如何重新编译 Michael Steil 的 cbmbasic C 移植版本，每次函数调用时重置 64KB 内存和 CPU 寄存器，耗时约 15–20 微秒。文章涵盖了强制行号、BASIC 关键字冲突（如包含 TO 的 TOTAL）、通过遍历模拟变量表提取 OUT 参数，以及基于 SPI 的 SQL 访问（通过经典的 OPEN/INPUT#/PRINT# 设备 8 模式，包括次级地址 15 的命令通道）。性...
+2026-07-04 00:07:42
 
 
 
 ### [市场具有竞争性当且仅当-P-!=-NP](https://arxiv.org/abs/2602.20415)
 
-2026-07-03 23:41:44 | 标签: 算法合谋, P vs NP, 计算复杂性, 市场设计, 博弈论
-
-> 本文证明了一个将市场竞争力与计算复杂性联系起来的基本定理。如果 P = NP，企业可以高效地解决合谋检测问题，使合谋得以持续。如果 P != NP，对于需求具有自然实例困难性的市场，合谋检测在计算上是不可行的，从而使合谋不稳定。结合先前研究（Maymin 2011）表明市场效率需要 P = NP，这产生了一个不可能性：市场无法同时实现信息效率和竞争性。作者认为，AI 通过增强计算能力，正推动市场从竞争性制度转向合谋性制度，这解释了算法合谋在没有明确协调的情况下出现的现象。
+2026-07-03 23:41:44
 
 
 
 ### [The-Fall-and-Rise-of-Screwworm](https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm)
 
-2026-07-03 20:02:57 | 标签: Agriculture, Entomology, Public Health, Pest Control, Sterile Insect Technique
-
-> The article begins with the recent discovery of screwworm cases in Texas and New Mexico in 2026， marking the first infestation in the US since the 1980s. It then traces the history of the pest， describing its devastating impact on livestock in the Southwestern US and Florida since the 19th century. ...
+2026-07-03 20:02:57
 
 
 
 ### [OpenTelemetry-晋升至-CNCF-最高成熟度等级](https://www.infoq.com/news/2026/07/opentelemetry-cncf-maturity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-03 20:00:00 | 标签: OpenTelemetry, 可观测性, 云原生, CNCF, 遥测
-
-> 本文报道了 OpenTelemetry 晋升至 CNCF 最高成熟度等级，使其成为可观测性领域的生产就绪标准。文章追溯了该项目源自 OpenTracing 与 OpenCensus 合并的起源，解释了标准化 API 和语义约定如何消除供应商锁定，并讨论了其对行业的深远影响，尤其是在生成海量遥测数据的智能体 AI 系统兴起的背景下。文章还涵盖了社区反响，以及竞争焦点从仪器化转向分析与 AI 驱动洞察的转变，将 OpenTelemetry 定位为现代可观测性的基础层。
+2026-07-03 20:00:00
 
 
 
 ### [一份被遗忘的百年政府报告揭示了我们是谁](https://www.derekthompson.org/p/america-1926-an-absurdly-deep-dive)
 
-2026-07-03 18:02:45 | 标签: History, Social Trends, American Culture, Economics, Demographics
-
-> Derek Thompson 挖掘出 1933 年出版的《近期社会趋势》——一部 1500 页的政府报告，生动描绘了 1926 年的美国图景。文章将人口、经济、文化的详尽统计数据与当代对照交织，展现了许多当今的焦虑——技术性失业、移民反弹、垄断担忧、性别角色转变——在一个世纪前同样存在。Thompson 着重呈现了快速的城市化、汽车革命、连锁商店的兴起，以及女性权利的高峰（摩登女郎、投票权），同时也指出半数美国人仍居住在没有电力或室内管道的农村地区。文章认为，尽管物质条件已大幅改善，深层的情感与社会张力却惊人地相似。这是一篇丰富的、数据驱动的历史叙事，面向希望理解过去如何映照当下的读者。
+2026-07-03 18:02:45
 
 
 
 ### [Valve-开源-Steam-Machine-的电子墨水屏，让你可以自己制作](https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/)
 
-2026-07-03 17:24:41 | 标签: 开源, 硬件, Steam Machine, 电子墨水屏, DIY 电子
-
-> Valve 在 GitLab 上以 MIT 许可协议开源了 Steam Machine 的电子墨水前面板设计，项目名为 "Inkterface"。文章详细列出了所需硬件，包括 Adafruit ESP32 Feather、电子墨水面板及紧固件，并提供了视频组装指南。虽然 Valve 不会自行生产该显示屏，但此举使 DIY 爱好者和第三方制造商（如已暗示计划推出预制版本的 JSAUX）能够制作定制前面板。该项目是 Valve 使 Steam Machine 可改装策略的延伸。
+2026-07-03 17:24:41
 
 
 
@@ -36695,11 +36665,11 @@
 
 
 
-### [AI-的经济账根本算不通](https://baoyu.io/blog/2026-04-28/ais-economics-dont-make-sense)
+### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
 
-2026-04-28T00:00:00.000Z
+2026-04-29T00:00:00.000Z
 
-> Copilot 转向按量计费只是开始：AI 订阅、token 成本和数据中心债务背后的经济账正在失衡。
+> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
 
 
 
