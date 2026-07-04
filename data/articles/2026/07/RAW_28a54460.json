@@ -1,0 +1,51 @@
+{
+  "id": "RAW_28a54460",
+  "title": "Fable 的自主判断",
+  "url": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+  "date": "2026-07-04 02:51:06",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">3rd July 2026</p>\n   <div class=\"note\">\n    <p>One of the most interesting tips I got from <a href=\"https://www.ai.engineer/worldsfair/schedule?session=asn_slot_2026_06_30_main_stage_1230_2026_06_08t09_35_43_039z\">the Fireside Chat</a> I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.</p>\n    <p>The example they gave was testing. You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead.</p>\n    <p>Jesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up. Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use.</p>\n    <p>I prompted Claude Code just now with:</p>\n    <blockquote>\n     <p><code>For all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent</code></p>\n    </blockquote>\n    <p>Claude saved this memory file in <code>~/.claude/projects/name-of-project/memory/delegate-coding-to-subagents.md</code>:</p>\n    <blockquote>\n     <pre><code>---\nname: delegate-coding-to-subagents\ndescription: Simon wants coding tasks delegated to subagents running an appropriately lower-power model\nmetadata: \n  node_type: memory\n  type: feedback\n  originSessionId: 30068d78-43a9-4fb1-bb29-9799e18c526a\n---\n</code></pre>\n     <p>Stated by Simon on 2026-07-03: \"For all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent.\"</p>\n     <p><strong>Why:</strong> cost/efficiency — implementation work rarely needs the top-tier model; judgment, review, and synthesis stay with the main loop.</p>\n     <p><strong>How to apply:</strong> when a task in this project is primarily writing/editing code, spawn an Agent with a model override (sonnet for substantive implementation, haiku for trivial/mechanical edits) and a self-contained prompt; review the result in the main loop before committing. Design, auditing, data synthesis, and anything judgment-heavy stays in the main model. See also [[project-goals]].</p>\n    </blockquote>\n    <p>So far it seems to be working well. I'm getting a <em>ton</em> of work done and my Fable allowance is shrinking less quickly than before.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 分享了使用 Claude Code（Fable）的一个实用技巧：让模型自行判断测试和任务委派，并配置它生成更便宜的子智能体来处理编码任务以节省 token。",
+  "oneSentenceSummary": "Simon Willison 分享了使用 Claude Code（Fable）的一个实用技巧：让模型自行判断测试和任务委派，并配置它生成更便宜的子智能体来处理编码任务以节省 token。",
+  "summary": "在这篇简短博文中，Simon Willison 回顾了在一次 AI 工程 Fireside Chat 中获得的两个相关技巧。首先，与其规定“仅对大型功能编写测试”等规则，不如让 Fable/Opus 自行判断，这会带来更好的结果。其次，为了在价格上涨前节省昂贵的 Fable token，告诉模型自行判断，将更简单的编码任务委派给运行更便宜模型的子智能体。他分享了确切的提示词，并展示了 Claude Code 自动创建的用于记住此偏好的记忆文件。这篇文章提供了一种具体、可复现的流程，用于成本高效的 AI 辅助编程。",
+  "mainPoints": [
+    {
+      "point": "让 AI 模型在测试生成等决策上自行判断，而非使用硬编码规则。",
+      "explanation": "告诉 Fable 在何时编写测试时“自行判断”，比用明确指令如“仅为大型功能编写测试”限制它更能产生更好的结果。"
+    },
+    {
+      "point": "配置主模型将较简单的编码任务委托给运行更便宜模型的子智能体以节省 token。",
+      "explanation": "通过提示 Claude Code “自行判断以决定合适的较低能力模型并在子智能体中运行它”，主模型将实现工作卸载到更便宜的模型（Sonnet 或 Haiku），同时保留判断和审查。"
+    },
+    {
+      "point": "该模型会自动将此类指令持久化为记忆文件，以保持行为一致性。",
+      "explanation": "在提示后，Claude Code 创建了一个包含该偏好的记忆文件，确保在对话间应用该委派模式而无需手动重复提示。"
+    }
+  ],
+  "keyQuotes": [
+    "让 Fable（以及在某种程度上 Opus）自行判断，而不是规定它们应如何工作。",
+    "对于所有编码任务，请自行判断以决定合适的较低能力模型并在子智能体中运行它。"
+  ],
+  "tags": [
+    "AI 编程",
+    "Claude Code",
+    "LLM",
+    "智能体",
+    "提示工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 332,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783104666000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-04 02:51:06"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_737ccb8a",
+  "title": "AI Native Observability 赛道：Langfuse、Phoenix、Helicone 与 Sazabi",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzY4NzI2MTc1NA==&mid=2247484734&idx=1&sn=9672a83f0aad04d8d4e3e1b6acb78817",
+  "date": "2026-07-03 19:00:00",
+  "author": "Notebookekee",
+  "siteName": "Notebookekee",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>ChatGPT</span> <span>2026-07-03 19:00</span> <span style=\"display: inline-block;\">北京</span></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=41a6b118&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2Fm7qolQYqw6mIlKRyJrN9Pr5rSeLlpKJOUQibOWhZGV2BsGOdaCjMTcsiaMOS8a0NyFq22GUyUBRGwChUY7z0iaKvCK1GsrN9H4hRBKdZeoAwZY%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">随着 AI Agent 和 AI Coding Assistant 从实验阶段逐步进入生产环境，传统 Observability 正在演变为新的 AI Native Observability 赛道。</span><span leaf=\"\"> \n    <br> \n   </span><span leaf=\"\">传统可观测性平台主要关注应用运行状态，通过日志、指标和链路追踪帮助工程师定位系统故障；而 AI Native Observability 则进一步关注 AI 应用和 Agent 的整个执行过程，包括 Prompt、模型调用、Tool Use、推理链路、运行上下文以及生产环境影响，其目标不仅是记录系统发生了什么，更重要的是理解 AI 为什么做出某个决策，以及该决策对业务产生了什么影响。</span><span leaf=\"\"> \n    <br> \n   </span><span leaf=\"\">目前这一赛道已经形成了几种不同的发展方向。</span></p>\n  <p style=\"text-align: center;\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"100001085\" data-s=\"300,640\" data-type=\"png\" type=\"block\" style=\"height: auto !important;\" data-ratio=\"0.6944444444444444\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=7775804c&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2Fm7qolQYqw6l0Xff1RejGXybywbSplEX0PHKciblnDRM0X0pI2d66kSTLcsM6LlSEl4qRxlUwDH2dVIuUOtmVFNKZGF8icr2LqxYH9Qs4qOSTc%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\"><img alt=\"Langfuse observability trace detail view showing nested observations with latency and cost\" class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"100001084\" data-type=\"png\" style=\"height: auto !important;\" data-ratio=\"0.5824074074074074\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=55ba2fdb&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2Fm7qolQYqw6mNxADnUc6GgJycLXob5q9CqsCRhDeG1uVI0avQNpZ715ZkFERAyrJ2yD0IWgWic0AHhTic5auWOTYicQVMicvskA0TVO7iaXrMOWHc%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-weight: bold;\">Langfuse</span>&nbsp;是最具代表性的开源 LLM Observability 平台之一，其核心定位是 Agent Runtime Observability，通过 SDK 和 OpenTelemetry 对 OpenAI、Anthropic、LangGraph、LlamaIndex 等框架进行埋点，记录 Prompt、Token 消耗、模型响应、Tool Call、Trace、Evaluation 以及 Prompt Management 等信息，非常适合开发阶段的调试和性能分析。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">由于与 LangGraph 等 Agent Framework 集成较深，因此能够完整还原 Agent 的执行路径和推理过程。</span></p>\n  <p style=\"text-align: center;line-height: 2em;\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"100001076\" data-ratio=\"0.9518518518518518\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=b4bf5e54&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2Fm7qolQYqw6kk9ZFqxiaGiaOfxPcBzzaKkazDCL3Cm6bw5ArujF4ibv7mqaY7dXoDiae21PMK0ok23gxL8nyGgNTia1naBOu3eLadjJhvCXzkc9YM%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"text-align: center;line-height: 2em;\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"100001077\" data-ratio=\"0.9611111111111111\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=cecc1f8a&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2Fm7qolQYqw6nWOHZlcwuKMibsgNYZUOsrjMj33Vl8NicrwBAR3ETgBhfq7JgLUaun7BCYxUswDfFbBj35jBHSrSZL488NFTjrE15W4eGwCsyLA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-weight: bold;\">Helicone</span>&nbsp;则采用另一种思路，通过 Proxy 代理模型请求，在不修改业务代码的情况下统一记录模型调用、延迟、Token 消耗、成本和错误信息，更适合快速接入 OpenAI、Anthropic 等模型服务。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">它的优势是部署简单、侵入性低，但由于主要工作在模型调用层，因此能够获取的上下文相对有限，对于复杂 Agent 的内部状态和决策过程支持较弱。</span></p>\n  <p style=\"text-align: center;line-height: 2em;\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"100001078\" data-ratio=\"0.8648148148148148\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=11306a3c&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2Fm7qolQYqw6kSHNseTzPqyNagONMu0I8PH7VASIE6bI3ia3UN5MhC1pe68KShmHDbA0jxRcdfwicxX2IWuDUiboQGsP1H9gqGXf1d7UqDOLJWaQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-weight: bold;\">Arize Phoenix</span>&nbsp;则更加偏向 AI Evaluation 与 AI Engineering。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">除了提供基于 OpenTelemetry 和 OpenInference 的 Trace 能力外，还提供 Prompt Playground、Datasets、Experiments、LLM-as-a-Judge、RAG Evaluation 等能力，帮助团队持续评估模型效果、定位质量退化，并通过实验驱动 Prompt 和模型优化。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">Phoenix 不仅关注运行过程，更关注 AI 应用的质量评估和持续迭代。</span></p>\n  <p style=\"text-align: center;line-height: 2em;\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"100001079\" data-ratio=\"0.7944444444444444\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=cc438b7f&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2Fm7qolQYqw6nxZuPYUWkCcwMvSd7XH9nY6WcbrxIL22ybaCibblbWnDq1wALlyal3YNDkE0kY73TsyGm4fFYSN1TR8ZnkmwhQn4ldWicN2S91Q%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-weight: bold;\">Sazabi</span>&nbsp;代表了 AI Native Observability 的另一种发展方向。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">其定位并非传统意义上的监控平台，而是面向 AI Agent 的生产环境上下文平台。传统可观测性产品如 Datadog、Grafana 或 Elastic，主要负责采集日志、指标和链路追踪，并通过 Dashboard 帮助工程师分析系统状态；</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">而 Sazabi 认为，在 AI Coding Agent 日益普及的背景下，未来的主要“用户”将不再只是人类工程师，而是 Claude Code、Cursor、Codex 等智能开发助手。这些 Agent 并不会主动浏览 Dashboard，而是需要能够直接理解和消费的结构化运行上下文。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">基于这一理念，Sazabi 并不试图替代企业现有的可观测性基础设施，而是作为一层智能分析能力部署在现有技术栈之上。平台通过 OpenTelemetry 以及日志、指标和链路追踪接口，接入企业已有的 Datadog、Grafana、Prometheus、Elastic、CloudWatch 等监控数据，同时关联 GitHub、CI/CD、Kubernetes、部署记录、告警系统等软件工程数据，对来自不同来源的信息进行统一关联分析。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">当系统发生异常时，平台不仅能够识别错误日志或性能波动，还能够自动关联最近的代码提交、配置变更、部署事件以及历史故障，生成结构化的根因分析、影响范围评估和修复建议，从原始 Telemetry 中提炼出 AI 可以直接理解和利用的 Context。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"100001081\" data-ratio=\"1.0518518518518518\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=4c58cb4c&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2Fm7qolQYqw6lpoDIkN3MZVjTXoPEe79w08BcrnnM8y65yStv6W9TrAickWAvBGwTpDJUgoAico58micz8Qfg8tcXnqXRIObln5NCHvOrc5v1jqo%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">与 Langfuse 等面向 Agent Runtime 的产品不同，Sazabi 的关注重点是为 Agent 提供生产环境的实时上下文。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">例如，Claude Code 可以通过 MCP 或 API 查询服务运行状态、日志、历史 Incident、部署信息和相关代码变更，并将这些信息作为推理依据生成修复方案，而无需人工切换多个监控平台进行排查。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">这种模式使 Sazabi 更像是连接 AI Agent 与生产环境之间的“上下文引擎”，负责理解生产系统发生了什么，并以标准化、机器可消费的方式提供给 AI Agent，最终形成“AI 编码—部署上线—运行监测—智能诊断—自动修复”的闭环，为 AI Software Engineering 提供关键的基础设施能力。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">总体来看，</span><span leaf=\"\">AI Native Observability 正在从单纯的日志和监控平台，逐渐演变为 AI Software Engineering 的基础设施。</span></p>\n  <p style=\"line-height: 2em;\"><span leaf=\"\">未来的主流产品很可能同时融合 Runtime Trace、Evaluation、Production Context 和自动修复能力，不仅服务于人类开发者，也将成为 AI Agent 理解生产环境、执行自主决策的重要数据基础。</span></p>\n  <p style=\"display: none;\"><mp-style-type data-value=\"3\"></mp-style-type></p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 AI Native Observability 赛道的四个代表性产品（Langfuse、Helicone、Arize Phoenix、Sazabi），对比了它们在定位、技术路线与核心能力上的差异，并指出该赛道正从传统监控向 AI 软件工程基础设施演进。",
+  "oneSentenceSummary": "本文介绍了 AI Native Observability 赛道的四个代表性产品（Langfuse、Helicone、Arize Phoenix、Sazabi），对比了它们在定位、技术路线与核心能力上的差异，并指出该赛道正从传统监控向 AI 软件工程基础设施演进。",
+  "summary": "文章从传统可观测性与 AI Native Observability 的区别切入，系统介绍了四个代表性产品：Langfuse 是 Agent Runtime Observability 平台，通过 SDK 和 OpenTelemetry 记录 Prompt、Token 消耗、Trace 等，适合开发调试；Helicone 采用 Proxy 代理方式，无侵入地记录模型调用延迟与成本，部署简单但获取上下文有限；Arize Phoenix 更侧重 AI Evaluation 与持续迭代，提供 Prompt Playground、LLM-as-a-Judge、RAG Evaluation 等能力；Sazabi 则定位为 AI Agent 生产环境上下文平台，通过接入现有监控数据（Datadog、Grafana 等）与软件工程数据，自动生成结构化根因分析，支持 Agent 以 MCP 或 API 方式获取实时上下文，形成故障诊断与自动修复的闭环。文章最后展望未来产品将融合 Runtime Trace、Evaluation、Production Context 与自动修复能力，服务于人类开发者与 AI Agent。",
+  "mainPoints": [
+    {
+      "point": "AI Native Observability 超越了传统可观测性的范畴。",
+      "explanation": "传统可观测性关注日志、指标和链路追踪以定位系统故障；AI Native Observability 进一步关注 Prompt、模型调用、Tool Use、推理链路等，目标是理解 AI 为何做出某决策及其业务影响。"
+    },
+    {
+      "point": "Langfuse 与 Helicone 分别代表埋点与代理两种不同技术路线。",
+      "explanation": "Langfuse 通过 SDK/OpenTelemetry 深度集成 Agent 框架，能完整还原执行路径；Helicone 通过 Proxy 代理模型请求，无侵入但上下文有限，适合快速接入。"
+    },
+    {
+      "point": "Arize Phoenix 强调 AI Evaluation 与实验驱动迭代。",
+      "explanation": "除 OpenTelemetry Trace 外，还提供 Prompt Playground、Datasets、LLM-as-a-Judge 等能力，帮助团队评估模型质量并在实验环境中优化 Prompt 与模型。"
+    },
+    {
+      "point": "Sazabi 定位为 AI Agent 生产环境上下文平台。",
+      "explanation": "不替代现有监控基础设施，而是在其上部署一层智能分析，自动关联代码变更、部署事件、告警等数据，生成 Agent 可直接消费的结构化 Context，实现诊断修复闭环。"
+    },
+    {
+      "point": "未来 AI Native Observability 将融合多种能力，成为 AI Software Engineering 的基础设施。",
+      "explanation": "产品趋势是同时提供 Runtime Trace、Evaluation、Production Context 与自动修复，既服务人类开发者，也为 AI Agent 理解生产环境并自主决策提供数据基础。"
+    }
+  ],
+  "keyQuotes": [
+    "传统可观测性平台主要关注应用运行状态，通过日志、指标和链路追踪帮助工程师定位系统故障；而 AI Native Observability 则进一步关注 AI 应用和 Agent 的整个执行过程，包括 Prompt、模型调用、Tool Use、推理链路、运行上下文以及生产环境影响，其目标不仅是记录系统发生了什么，更重要的是理解 AI 为什么做出某个决策，以及该决策对业务产生了什么影响。",
+    "Sazabi 代表了 AI Native Observability 的另一种发展方向。"
+  ],
+  "tags": [
+    "AI可观测性",
+    "LLM",
+    "AI Agent",
+    "模型评估",
+    "AI工程化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 82,
+  "wordCount": 1379,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_b255a8e5",
+  "sourceName": "Notebookekee",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783076400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-03 19:00:00"
+}

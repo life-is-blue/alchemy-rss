@@ -1,0 +1,54 @@
+{
+  "id": "RAW_5de07175",
+  "title": "GitHub - FossPrime/Steam-Controller-Auto-Charge: 把控制器猛塞进磁性充电座直到充满电",
+  "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
+  "date": "2026-07-04 06:39:50",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown-heading\" dir=\"auto\"></div>\n  <p dir=\"auto\">Steam Controller Auto-Charge is an open-source web application designed to automatically pilot a Steam Controller into its magnetic charging puck using optical flow computer vision and WebHID telemetry.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Features</h2>\n  </div>\n  <ul dir=\"auto\">\n   <li><strong>Optical Flow Tracking:</strong> Utilizes OpenCV.js to track user-selected points on the controller and the charging puck via an overhead camera.</li>\n   <li><strong>WebHID Telemetry &amp; Haptic Navigation:</strong> Connects to the Triton Controller natively via WebHID, streaming input and telemetry (Report 67). Navigates the controller towards the puck by firing 70Hz asymmetric haptic pulses through the internal dual Linear Resonant Actuators (LRAs).</li>\n   <li><strong>Proximity Creep Mode:</strong> Automatically cuts haptic pulse frequency by 50% when the controller is within 150 pixels of the puck to ensure a gentle magnetic dock.</li>\n   <li><strong>Battery Status Polling:</strong> Intercepts Report ID <code>121</code> (<code>0x79</code>) to confirm successful magnetic charging, and parses Report ID <code>67</code> (<code>0x43</code>) to display live battery percentage and battery cell voltage (mV).</li>\n  </ul>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Setup</h2>\n  </div>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h3 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Requirements</h3>\n  </div>\n  <ul dir=\"auto\">\n   <li><strong><a href=\"https://nixos.org/download\" rel=\"nofollow\">Nix Package Manager</a></strong>: The <em>only</em> build dependency you need. It works seamlessly on Windows, Mac, and Linux.\n    <ul dir=\"auto\">\n     <li>A Chromium-based browser supporting the WebHID API.</li>\n     <li>An overhead webcam pointing down at your desk.</li>\n    </ul></li>\n  </ul>\n  <ol dir=\"auto\">\n   <li>Mount a webcam directly overhead pointing at the desk.</li>\n   <li>Start the project with a single command (this will automatically fetch dependencies and build the WASM module):</li>\n  </ol>\n  <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"nix-shell --run &quot;npm install &amp;&amp; npm run dev&quot;\">\n   <pre>nix-shell --run <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>npm install &amp;&amp; npm run dev<span class=\"pl-pds\">\"</span></span></pre>\n  </div>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Usage</h2>\n  </div>\n  <ol dir=\"auto\">\n   <li>Mount a webcam directly overhead pointing at the desk.</li>\n   <li>Place the Steam Controller Auto-Charge puck on the desk.</li>\n   <li>Place your Steam Controller on the desk, upright.</li>\n   <li>Open the web interface and click <strong>Connect Steam Controller</strong> to pair it via WebHID.</li>\n   <li>Click <strong>✨ Auto-Track</strong> to engage automatic tracking. The button will highlight to indicate it's active and will automatically resume tracking on page reload. Click it again to disengage.</li>\n   <li>The controller will now autonomously navigate to the puck using a Lucas-Kanade optical flow loop combined with object avoidance powered by an in-browser Rust/WASM CNN!</li>\n  </ol>\n  <p dir=\"auto\"><em>(Note: Manual tracking is still available if you prefer. Just click the puck, then the top of the controller, then the bottom of the controller).</em></p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Architecture</h2>\n  </div>\n  <ul dir=\"auto\">\n   <li><code>App.vue</code>: Vue 3 application logic handling camera streams, UI reactivity, PID tracking loop, and OpenCV.js Lucas-Kanade optical flow (<code>calcOpticalFlowPyrLK</code>).</li>\n   <li><code>steamController.ts</code>: WebHID abstraction class mapping standard API calls to the Steam Controller's specific byte payloads for LRA pulses and battery status polling.</li>\n   <li><code>objectDetector.ts</code> &amp; <code>objectWorker.ts</code>: Offloads object detection to a Web Worker to ensure the main tracking loop remains fluid.</li>\n   <li><code>wasm-object-detect/</code>: Rust implementation compiled to WebAssembly for high-performance visual processing.</li>\n  </ul>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Thanks</h2>\n  </div>\n  <p dir=\"auto\">Huge thanks to Very Lazy Pixel for inspiring this project! Check out their video here: <a href=\"https://www.youtube.com/watch?v=g-8S8zk4dn8\" rel=\"nofollow\">https://www.youtube.com/watch?v=g-8S8zk4dn8</a></p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">License</h2>\n  </div>\n  <p dir=\"auto\">This project is licensed under the MIT License - see the <a href=\"https://github.com/FossPrime/Steam-Controller-Auto-Charge/blob/master/LICENSE\">LICENSE</a> file for details.</p>\n </body>\n</html>",
+  "aiSummary": "一款开源 Web 应用，利用光流计算机视觉和 WebHID 遥测技术，让 Steam 手柄自动对接磁性充电座。",
+  "oneSentenceSummary": "一款开源 Web 应用，利用光流计算机视觉和 WebHID 遥测技术，让 Steam 手柄自动对接磁性充电座。",
+  "summary": "Steam Controller Auto-Charge 是一个 Vue 3 应用，利用 OpenCV.js 进行光流追踪，并通过 WebHID 以触觉脉冲的形式与手柄通信。它借助 Lucas-Kanade 光流算法和 Rust/WASM CNN 目标检测来引导手柄滑向充电座。只需 Nix、一个 Chromium 浏览器和一个俯视摄像头即可完成搭建。架构上将摄像头处理、WebHID 控制和目标检测分离为独立模块，并通过 Web Worker 和 WebAssembly 承担重型计算以保证性能。该项目采用 MIT 许可证，灵感来源于 Very Lazy Pixel 的视频。",
+  "mainPoints": [
+    {
+      "point": "使用光流追踪（Lucas-Kanade 算法）来视觉引导控制器滑向充电座。",
+      "explanation": "OpenCV.js 在浏览器中运行，通过俯视摄像头追踪用户选定的控制器和充电座上的点，实现实时导航。"
+    },
+    {
+      "point": "通过 WebHID 与 Steam 手柄通信，使用触觉脉冲控制移动并轮询电池状态。",
+      "explanation": "应用通过手柄的线性谐振致动器发送非对称 70Hz 触觉脉冲来控制方向，并从特定的 HID 报告中读取电池状态。"
+    },
+    {
+      "point": "完全基于浏览器运行，除 Nix 外无需任何原生依赖。",
+      "explanation": "项目通过一条 nix-shell 命令自动获取依赖并编译 WebAssembly 模块，实现跨平台且易于运行。"
+    },
+    {
+      "point": "架构分离关注点：Vue 前端、WebHID 抽象层，以及运行在 Web Worker 中的 Rust/WASM 目标检测模块。",
+      "explanation": "模块化设计保持主 UI 响应流畅：目标检测在后台 Web Worker 中运行，Rust/WASM 模块负责高性能视觉处理。"
+    }
+  ],
+  "keyQuotes": [
+    "把控制器猛塞进磁性充电座直到充满电"
+  ],
+  "tags": [
+    "OpenCV.js",
+    "WebHID",
+    "计算机视觉",
+    "Vue.js",
+    "Rust WASM"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 81,
+  "wordCount": 433,
+  "domain": "github.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783118390000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-04 06:39:50"
+}
