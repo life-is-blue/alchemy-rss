@@ -1,0 +1,59 @@
+{
+  "id": "RAW_ef4baaff",
+  "title": "AgentDraw：可能是第一个能让 agent 帮你生成稳定好看可编辑的各种配图的开源工具",
+  "url": "https://www.v2ex.com/t/1224979#reply0",
+  "date": "2026-07-04 22:18:13",
+  "author": "plane",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown_body\">\n   <p>流程图架构图以及装逼文章配图的这些生图工具已经有很多了，但真的做好的几乎没有。</p>\n   <p>比如半年多前的各种 <a href=\"http://draw.io\" rel=\"nofollow\">draw.io</a>+agent 或 llm 的组合。</p>\n   <p>看着很牛逼，用起来很难受。总结下两个问题：</p>\n   <ul>\n    <li>让 agent 直接生图或者直接做 html ，输出很好，但很难编辑（让你拖拽加个元素就加不动）</li>\n    <li>让 agent 直接去生成 <a href=\"http://draw.io\" rel=\"nofollow\">draw.io</a> 类似工具的图，输出非常不稳定，而且很丑，连线不知道连哪去了</li>\n   </ul>\n   <p>这个究极难题，目前应该严重打击了很多人的信心，所以很多人估计看到标题已经不想点进来，怕被骗。</p>\n   <p>但我想说，这次是真的想把 Agent 生图这件事做好，不是搞个噱头，我相信我们可以在工程中尽量减少抽卡次数，尽量能做到尽可能高的稳定的输出，以及提供可复现的设计能力。</p>\n   <p>Github 地址： <a href=\"https://github.com/chenhg5/agentdraw\" rel=\"nofollow\">https://github.com/chenhg5/agentdraw</a></p>\n   <p>下面这个图是一次 prompt 生成，无任何调整：</p>\n   <p><img alt=\"https://github.com/chenhg5/agentdraw/raw/main/assets/examples/complex-agentdraw-workbench.svg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://github.com/chenhg5/agentdraw/raw/main/assets/examples/complex-agentdraw-workbench.svg\"></p>\n   <p>AgentDraw 是一个让 cc/codex 等 agent 帮你画专业图表的本地工具+skill 。你只要告诉 agent 想画什么，比如流程图、架构图、产品路线图、分析报告图、会议总结图，它就能生成一张可编辑的画板。</p>\n   <p>内置 44 种设计主题，既有正式商务风、技术架构风，也有复古手册风、深色故障分析风、活泼产品风等。你不用懂设计，也不用自己调颜色、排版和字体，就能得到更像样、更统一的图。</p>\n   <p>选择 AgentDraw 的核心原因是：它不是只给你一张死图片，而是生成后还能在浏览器里继续改。文字、方框、连线、布局都可以手动调整，也可以导出成 SVG 或 PNG ，用在文章、文档、PPT 、项目汇报里。对于想用 AI 快速做图，又希望结果好看、可控、能继续修改的人来说，AgentDraw 会更省心。</p>\n   <p><a href=\"https://imgchr.com/i/pm0yd8U\" rel=\"nofollow\"><img alt=\"pm0yd8U.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://s41.ax1x.com/2026/07/04/pm0yd8U.png\"></a></p>\n   <h1>How</h1>\n   <h2>设计语言 <a href=\"http://Design.md\" rel=\"nofollow\">Design.md</a></h2>\n   <p>这个概念应该很多人都熟知了，已经出来几个月了。之前我们可能对设计都是在抽卡，实际上设计本身也是类似于 c 语言，java ，js 一样的结构性的可解释的一种语言，只要我们能把这些能结构化的，可解释的东西能约束清楚，我们就能尽量减少 agent 抽卡的次数。比如人总是喜欢黄金分割比例，我们可以对这些间距颜色甚至一些交互进行约束，这样就能把每种设计风格变成规则，只要我们在一定的规则下去干活，那总会得到不算太差的结果。</p>\n   <h2>svg first</h2>\n   <p>这个算是黑魔法了。目前直接让 agent 去操作面板，得出的结果都是糟糕的。因为 agent 在训练的时候不认识画板语言。他更熟悉 html ，svg 。因此他可以在 html 上表现非常好，但 html 很难转化成我们要的画板数据。而 svg 则是更接近的。当然 mermaid 也可以，但 mermaid 不思进取，目前还是太局限了，对很多情况表达有欠缺。而 svg 则不一样，他的表达上限很高，可以画很多的图，因此让 agent 去画 svg ，再渲染画板数据就可以保证输出的稳定同时，也能得到好的编辑效果。</p>\n   <h2>校验，测试与评估</h2>\n   <p>如果设计不是一个可测试与评估的事情，那么设计本身就没法被约束和被优化。agentDraw 提供了一套校验的能力，让 agent 知道自己的输出是否符合要求，是否能达到一定的质量。当他知道哪里有问题的时候，他可以去自动优化和改进。不再需要沉浸在“五彩斑斓的黑”的无尽循环中了。</p>\n   <h1>最后</h1>\n   <p>感兴趣的朋友可以试试呀！花 5 分钟即可安装一个。</p>\n   <p>开源不易，如果对您有帮助，欢迎点赞👏🏻</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "AgentDraw 是一个开源工具，让 AI agent 通过 SVG 生成可编辑、好看的各类配图，并提供设计语言与校验机制提升输出稳定性。",
+  "oneSentenceSummary": "AgentDraw 是一个开源工具，让 AI agent 通过 SVG 生成可编辑、好看的各类配图，并提供设计语言与校验机制提升输出稳定性。",
+  "summary": "文章介绍了 AgentDraw，一个让 AI agent（如 cc/codex）生成稳定好看且可编辑图表的开源工具。作者指出现有 agent 生图方案要么输出难以编辑（直接生成 HTML 或图片），要么生成的 draw.io 类似图形不稳定且丑陋。AgentDraw 通过两核心思路解决这些问题：一是采用结构化的“设计语言”对间距、颜色、交互等进行约束，把抽象的设计风格转化为可执行的规则，从而减少 agent 的随机抽卡；二是让 agent 直接生成 SVG，再将 SVG 渲染为画板数据，既保证输出稳定又便于后续编辑。工具内置 44 种设计主题，支持流程图、架构图、产品路线图等多种图表，生成后可在浏览器中自由拖拽调整文字、方框、连线及布局，并导出为 SVG 或 PNG 用于文章、文档、PPT 等场景。此外，AgentDraw 还提供校验、测试与评估机制，让 agent 能自动判断输出是否符合质量要求并进行优化。文章最后给出 GitHub 地址并鼓励读者尝试安装使用。",
+  "mainPoints": [
+    {
+      "point": "现有 agent 生图方案要么难以编辑，要么输出不稳定且丑陋。",
+      "explanation": "直接让 agent 生成 HTML 或图片虽然效果好，但无法在画板上拖拽修改；让 agent 生成 draw.io 类图形图形图则线条混乱、美感差，导致使用体验 poor。"
+    },
+    {
+      "point": "AgentDraw 通过设计语言约束和 SVG 首先的方式提高输出稳定性和可编辑性。",
+      "explanation": "设计语言把间距、颜色、交互等可结构化的设计因素转化为规则，减少 agent 的随机抽卡；让 agent 生成 SVG 再渲染为画板数据，既能利用 agent 对 SVG 的熟悉，又保证输出可直接在浏览器中编辑。"
+    },
+    {
+      "point": "内置 44 种设计主题，支持多种图表类型，生成后可在浏览器中自由编辑并导出 SVG/PNG。",
+      "explanation": "主题涵盖正式商务、技术架构、复古手册、深色故障分析、活泼产品等风格，用户无需懂设计即可得到统一好看的图；生成的画板支持文字、方框、连线、布局的手动调整，满足文档、PPT、项目汇报等场景需求。"
+    },
+    {
+      "point": "提供校验、测试与评估机制，让 agent 能自动判断输出质量并进行优化。",
+      "explanation": "当 agent 的输出不符合预设要求时，系统会给出反馈，agent 可基于此进行自动改进，避免陷入无效的反复生成循环，提升整体生成效率和质量。"
+    }
+  ],
+  "keyQuotes": [
+    "让 agent 直接生图或者直接做 html ，输出很好，但很难编辑（让你拖拽加个元素就加不动）",
+    "让 agent 直接去生成 draw.io 类似工具的图，输出非常不稳定，而且很丑，连线不知道连哪去了",
+    "这次是真的想把 Agent 生图这件事做好，不是搞个噱头",
+    "设计语言 [...] 只要我们能把这些能结构化的，可解释的东西能约束清楚，我们就能尽量减少 agent 抽卡的次数",
+    "svg first [...] 让 agent 去画 svg ，再渲染画板数据就可以保证输出的稳定同时，也能得到好的编辑效果。",
+    "如果设计不是一个可测试与评估的事情，那么设计本身就没法被约束和被优化。agentDraw 提供了一套校验的能力，让 agent 知道自己的输出是否符合要求，是否能达到一定的质量。"
+  ],
+  "tags": [
+    "AI 编程",
+    "开发者工具",
+    "SVG",
+    "设计语言",
+    "Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 78,
+  "wordCount": 1168,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783174693000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-04 22:18:13"
+}

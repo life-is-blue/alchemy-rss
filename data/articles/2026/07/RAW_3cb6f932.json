@@ -1,0 +1,56 @@
+{
+  "id": "RAW_3cb6f932",
+  "title": "双开 Claude Code + Codex 好几个月，受不了人肉传话，写了个桥让它俩自己聊",
+  "url": "https://www.v2ex.com/t/1224964#reply2",
+  "date": "2026-07-04 20:06:21",
+  "author": "RaysonMeng",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  双开 Claude Code 和 Codex 好几个月了,一个规划一个干活,配合是真好。但它俩互相不知道对方存在,我就成了中间那个人肉传话的:Claude 说的话我复制到 Codex,Codex 吐出来的我再贴回 Claude,一天来回几十趟,还得盯着 Codex 什么时候忙完才敢插话。烦透了。\n  <br>\n  <br>\n  后来干脆写了个东西把它俩接进同一个会话。现在我跟 Claude 说\"这个重构你跟 Codex 分个工\",它自己就把方案发过去了,Codex 那边接了话就开始干,干完结果自动弹回 Claude 这边,Claude 看不顺眼直接把意见怼进 Codex 下一轮,Codex 干一半也能被打断。我基本就在旁边看着,不用动手搬运了。\n  <br>\n  <br>\n  顺手做的两件事:一个是让它俩互相 review,两个模型抬杠抓出来的 bug 比单跑一个多不少;另一个是哪边订阅额度快用完了,它会找个干净的地方存个档,把活儿交给另一边接着跑,通宵任务不会半夜断在限额上。\n  <br>\n  <br>\n  实现上稍微费了点劲。Claude 这头走 MCP 的 channel,Codex 那头得去代理它的 app-server 协议,中间挂一个常驻进程管状态和重连。最恶心的是逆向 Codex 的协议,那个 adapter 光它自己就两千多行。\n  <br>\n  <br>\n  有个事我自己觉得挺魔幻的:这工具后来大部分功能,就是这两个 agent 通过它的早期版本自己写出来的。一个提 PR 另一个 review,提交记录里全程有据可查。相当于它自己把自己造完了。\n  <br>\n  <br>\n  对了,这不是 OpenAI 官方那个 codex-plugin-cc 。官方那个是 Claude 这边喊一声、Codex 那边答一句就完事,单向的。我这个是俩会话都常驻着,双向,能中途插话,还能自己商量分工。\n  <br>\n  <br>\n  不吹,坑也不少:只能 macOS/Linux,得装 Bun,两家订阅都得有,Codex 碰 .git 有个已知的卡死问题(README 写了)。MIT,纯本地跑。\n  <br>\n  <br>\n  <a target=\"_blank\" href=\"https://github.com/raysonmeng/agent-bridge\" rel=\"nofollow noopener\">https://github.com/raysonmeng/agent-bridge</a>\n  <br>\n  官网有段真实会话的动图:<a target=\"_blank\" href=\"https://raysonmeng.github.io/agent-bridge/zh/\" rel=\"nofollow noopener\">https://raysonmeng.github.io/agent-bridge/zh/</a>\n  <br>\n  <br>\n  后面想接 opencode 还是 Gemini CLI 我在 issue 里开了投票。有兴趣的可以试试,踩坑直接开 issue 。\n  <br>\n  <br>\n  这内容是 AI 帮我写的，但是工具是真 TM 好用，求各位大佬去体验下，&lt;- 这句是我自己写的\n </body>\n</html>",
+  "aiSummary": "作者为解决双开 Claude Code 和 Codex 时手动传话的低效问题，编写了 agent-bridge 实现双向通信，让两个 AI agent 自动分工、互相 review，项目大部分功能由 agent 自举开发。",
+  "oneSentenceSummary": "作者为解决双开 Claude Code 和 Codex 时手动传话的低效问题，编写了 agent-bridge 实现双向通信，让两个 AI agent 自动分工、互相 review，项目大部分功能由 agent 自举开发。",
+  "summary": "作者在使用 Claude Code（规划）和 Codex（执行）双开工作模式时，需要频繁手动在两者间搬运信息，一天数十次且需等待同步，效率极低。为此，他构建了 agent-bridge：通过 MCP 通道连接 Claude、逆向 Codex 协议实现代理，中间以常驻进程管理状态与重连。桥接后，两个 agent 可双向实时对话，自动分配任务、互相审查代码，并在任一方订阅额度耗尽时自动存档并切换。文章还提到，该工具的后续功能大多由两个 agent 通过早期版本自行开发、提 PR 和 review，实现了自我孵化。项目基于 MIT 协议，本地运行，仅支持 macOS/Linux，已知 Codex 在 .git 目录下有卡死问题。",
+  "mainPoints": [
+    {
+      "point": "双开 AI 编程工具导致手动传话效率极低。",
+      "explanation": "作者同时使用 Claude Code（规划）和 Codex（执行）时，需手动复制粘贴回复，每天几十次，且需等待一方完成后才能继续，严重影响工作流。"
+    },
+    {
+      "point": "agent-bridge 实现了双向实时通信，agent 可自动分工和互相 review。",
+      "explanation": "桥接后两个 agent 在同一会话中交流，自动派发任务、审查代码，还能中途打断或接力处理长时间任务，大幅减少人工干预。"
+    },
+    {
+      "point": "实现难点在于逆向 Codex 协议，adapter 超两千行。",
+      "explanation": "Claude 通过 MCP channel 接入，Codex 需逆向其 app-server 协议，中间进程管理连接和重连，协议适配层代码量巨大。"
+    },
+    {
+      "point": "项目大部分功能由 agent 自举开发。",
+      "explanation": "开发过程中，两个 agent 通过工具早期版本自行提交 PR、互相 review，提交记录全程可查，展示了 AI agent 协作完成自身进化的潜力。"
+    }
+  ],
+  "keyQuotes": [
+    "我基本就在旁边看着，不用动手搬运了。",
+    "相当于它自己把自己造完了。",
+    "最恶心的是逆向 Codex 的协议，那个 adapter 光它自己就两千多行。"
+  ],
+  "tags": [
+    "AI Agent",
+    "AI编程",
+    "Claude",
+    "Codex",
+    "开源工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 776,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783166781000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-04 20:06:21"
+}

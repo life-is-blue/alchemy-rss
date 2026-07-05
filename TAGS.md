@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-05 06:47:47 | [返回首页](/README.md)
+**更新时间**: 2026-07-05 10:01:32 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13268)
+- [AI & 大模型](#ai-llm) (13296)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (867)
-- [DevOps](#devops) (628)
-- [产品与商业](#product-business) (41)
-- [其他](#other) (6111)
+- [DevOps](#devops) (629)
+- [产品与商业](#product-business) (42)
+- [其他](#other) (6116)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [停止从-RAG-返回文本：防止幻觉的类型化答案合约](https://towardsdatascience.com/stop-returning-text-from-rag-the-typed-answer-contract-that-prevents-hallucination/) - AI 精选
 - [专访美图-CEO-吴欣鸿：做-AI-产品，是一场难以提前策划的游戏](https://mp.weixin.qq.com/s?__biz=MzkwMDQ2NDU2Nw==&mid=2247517102&idx=1&sn=5915f95569ec1e9da6ddd3fe2e41d6ef) - AI 精选
 - [SkillOpt-将-AI-智能体技能转化为可训练资产](https://www.microsoft.com/en-us/research/blog/skillopt-agent-skills-as-trainable-parameters/) - AI 精选
 - [开始使用-Nano-Banana-2-Lite-和-Gemini-Omni-Flash-进行构建](https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/) - AI 精选
@@ -41,9 +42,8 @@
 - [多媒体积木块](https://huggingface.co/blog/mishig/spaces-agents-md) - AI 精选
 - [只给一份文档，Qwen3.7-Max-从-0-交付双端应用](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501453&idx=1&sn=ba96a013175e2587878e1b2e00c9ab73) - AI 精选
 - [梦境：更强大的记忆，让-ChatGPT-更贴心](https://openai.com/index/chatgpt-memory-dreaming) - AI 精选
-- [⚡️萨提亚·纳德拉：Microsoft-Build-上的-No-Priors-x-Latent-Space-特别跨界对话](https://www.latent.space/p/satya-2026) - AI 精选
 
-- [查看全部 13268 篇...](/details/tags/ai-llm.md)
+- [查看全部 13296 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 
-- [查看全部 628 篇...](/details/tags/devops.md)
+- [查看全部 629 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -148,6 +148,7 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [Cycle-推出欧盟控制面板，主权争议持续](https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [2026-年最适合小企业的-11-款-CRM-|-Zapier](https://zapier.com/blog/best-crms-for-small-business) - 编程 更多
 - [深入-GitHub-Advisory-Database：当漏洞数量打破纪录时发生了什么](https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/) - 编程 更多
 - [Eliya-25-为-OpenJDK-25-LTS-带来-JVM-级诊断配置](https://www.infoq.com/news/2026/06/eliya-jvm-diagnostic-profile/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
@@ -157,9 +158,8 @@
 - [并发丢数据深度剖析：JED-的锁机制与事务实战踩坑及解决方案](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247501465&idx=1&sn=c2b7490ce4c41d5cd719f990685a3efb) - 编程 更多
 - [我做了套小红书一键发布系统，运营小姐姐说她不想离开我了](https://juejin.cn/post/7552489208804491316) - 编程 更多
 - [大半夜发生的一起-MySQL-更新诡异消失案……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247632551&idx=1&sn=e3b62a62696ef05d7611f11fc5bd2f26) - 编程 更多
-- [SSL-for-SaaS-v1-漏洞披露](https://blog.cloudflare.com/vulnerability-disclosure-on-ssl-for-saas-v1-managed-cname/) - 编程 更多
 
-- [查看全部 41 篇...](/details/tags/product-business.md)
+- [查看全部 42 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 6111 篇...](/details/tags/other.md)
+- [查看全部 6116 篇...](/details/tags/other.md)
 
 

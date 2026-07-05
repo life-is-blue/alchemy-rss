@@ -1,0 +1,55 @@
+{
+  "id": "RAW_598e975a",
+  "title": "分享自己写的多项目 AI 终端 Codux： Codex / Claude Code 等 8 个 CLI 按项目统一管理，开源",
+  "url": "https://www.v2ex.com/t/1224999#reply4",
+  "date": "2026-07-04 23:49:07",
+  "author": "349865361",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown_body\">\n   <p>我从 2024 年开始用 AI 写代码，现在基本重度依赖 Codex 和 Claude Code 。三个月前开始把工作流里的痛点一个个做成工具，攒着攒着成了一个完整的东西：Codux ，Rust + GPUI 写的原生终端，GPL-3.0 开源，刚到 2.0 RC 。</p>\n   <p>起因很具体：有次 Codex 跑一个二十分钟的重构，我出门了，回来发现它第三分钟就停在 y/n 上等我。从那天起做的第一个功能就是把\"agent 在等确认\"这个状态在项目列表里亮出来。</p>\n   <p>现在它长这样：</p>\n   <p><img alt=\"iShot_2026-07-04_23.21.57.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://share-text.org/api/imgUrlV2?text=share-text-uploads/f70ffffa-346c-4cab-8206-e0cafbe26817-iShot_2026-07-04_23.21.57.png\"></p>\n   <p>8 个 AI CLI （ Codex 、Claude Code 、OpenCode 、Kiro CLI 、Kimi Code 、CodeWhale 、MiMo Code 、Agy ）收进一个按项目排的视图，状态分到\"生成中 / 等确认 / 闲着 / 跑完\"。换模型、调推理档位、开完全权限都在界面上点。实现是进程探测加会话文件解析，不写项目文件、不改 CLI 配置、不装 hook ，卸载即复原——这条是红线，不然我自己都不敢用。</p>\n   <p>任务按 git worktree 组织，每个 worktree 有自己的终端、git 状态和 AI 会话，几个 agent 各改各的互不干扰。git 面板能整目录 stage / 丢弃，agent 改了什么当场核。</p>\n   <p>我最较真的部分。agent 只能用 <code>codux-ssh &lt;配置名&gt;</code> 和 <code>codux-db &lt;配置名&gt;</code> 两个命令，list 只给名字和主机，真实密码在辅助进程里注入，模型全程没见过——不进上下文、不进会话记录、不进 shell 历史。数据库标只读的话 wrapper 只放行单条查询，DROP 在语法层就被拒。</p>\n   <p>桌面 / 手机 App （ iOS/Android ）/ 无界面主机端互相配对，端到端加密 P2P ，打不通走中继（中继只见密文），不要公网 IP 。手机接的是同一个活着的会话，不是远程桌面：确认权限、看输出、派新活都行。闲置的 Mac mini 或服务器一行脚本装上主机端，注册成 launchd/systemd 服务，就是台干活机。还有个隧道浏览器，能以主机身份打开它的 127.0.0.1:5173 ，远程调 Vite 不用配端口转发。</p>\n   <p>本地记忆（偏好、项目画像、笔记）自动注入回 CLI ，全走官方通道（ developer instructions / <code>--append-system-prompt</code> / 托管 plugin ）； token 按工具/模型/项目/worktree/日期统计，本地 SQLite 。</p>\n   <p>也磨了不少：粘贴截图自动落盘成路径直接发给 AI 、⌘F 搜滚动历史、IME 候选框跟光标、终端标题显示在跑的 AI 和模型、agent 可以拎成悬浮窗。</p>\n   <p>纯属好玩的：token 消耗喂一只像素宠物，属性长自作息，熬夜党夜行值拉满。</p>\n   <p>不足也说清楚：GPUI 的 Linux 桌面还不行，Linux 目前只有无界面主机端。没有云端没有账号，数据全在本机。</p>\n   <ul>\n    <li>GitHub： <a href=\"https://github.com/duxweb/codux\" rel=\"nofollow\">https://github.com/duxweb/codux</a></li>\n    <li>官网： <a href=\"https://codux.dux.cn\" rel=\"nofollow\">https://codux.dux.cn</a></li>\n    <li>macOS：<code>brew install --cask duxweb/tap/codux</code></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Codux 是一个用 Rust + GPUI 编写的开源原生终端，可统一管理 Codex、Claude Code 等 8 个 AI CLI，按项目组织任务、实时监控 agent 状态，并提供安全隔离与远程控制能力。",
+  "oneSentenceSummary": "Codux 是一个用 Rust + GPUI 编写的开源原生终端，可统一管理 Codex、Claude Code 等 8 个 AI CLI，按项目组织任务、实时监控 agent 状态，并提供安全隔离与远程控制能力。",
+  "summary": "本文介绍作者开发的 AI 终端管理工具 Codux（GPL-3.0 开源，2.0 RC）。起因是处理 Codex 长时间重构时停在确认等待的场景，随后将多个痛点工具整合为一。Codux 支持将 8 个主流 AI CLI（Codex、Claude Code、OpenCode、Kiro CLI、Kimi Code、CodeWhale、MiMo Code、Agy）收进按项目排列的视图，实时显示 agent 状态（生成中/等确认/闲着/跑完），并可在界面上切换模型、调整推理档位、开启完全权限。底层通过进程探测与会话文件解析实现，不修改 CLI 配置或系统文件，卸载即复原。任务基于 git worktree 组织，每个 worktree 拥有独立终端、git 状态和 AI 会话；agent 只能使用 codux-ssh 和 codux-db 两个受限命令，密码和敏感信息通过辅助进程注入，模型无法接触。支持桌面/手机/主机端配对，端到端加密 P2P，可远程确认权限、派发任务。内置本地记忆自动注入、Token 统计、粘贴截图自动落盘等细节。作者也说明了不足：GPUI 的 Linux 桌面尚未完善，现阶段仅提供 macOS 原生体验和 Linux 无界面主机端。",
+  "mainPoints": [
+    {
+      "point": "Codux 将多个 AI CLI 整合到统一视图中，按项目组织任务并实时监控 agent 状态。",
+      "explanation": "支持 Codex、Claude Code 等 8 个 CLI，通过进程探测与会话文件解析实现集成，不修改任何配置或系统文件，降低了多 agent 协作时的管理开销。"
+    },
+    {
+      "point": "安全设计是核心红线：agent 只能执行受限命令，密码与敏感信息对模型完全隔离。",
+      "explanation": "agent 仅暴露 codux-ssh 和 codux-db 两个封装命令，真实密码在辅助进程中注入，模型既看不到也记不住；数据库标为只读时，DROP 操作在语法层被拒绝。"
+    },
+    {
+      "point": "支持多设备配对与远程控制，端到端加密 P2P，无需公网 IP。",
+      "explanation": "桌面、手机 App、无界面主机端可互相配对，中继仅传递密文；手机可接管同一会话进行确认、查看输出和分发任务，闲置 Mac mini 或服务器可一键注册为工作机。"
+    },
+    {
+      "point": "集成本地记忆、Token 统计与多种交互优化，提升 AI 编程体验。",
+      "explanation": "偏好和项目笔记自动注入回 CLI，Token 消耗按工具/模型/项目等维度统计并存入本地 SQLite；粘贴截图自动落盘、IME 候选框跟光标、agent 可拎成悬浮窗等细节进一步降低上下文切换成本。"
+    }
+  ],
+  "keyQuotes": [
+    "这条是红线，不然我自己都不敢用。",
+    "agent 全程没见过——不进上下文、不进会话记录、不进 shell 历史。"
+  ],
+  "tags": [
+    "AI 编程",
+    "开发者工具",
+    "命令行工具",
+    "开源项目",
+    "AI 工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 871,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783180147000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-04 23:49:07"
+}
