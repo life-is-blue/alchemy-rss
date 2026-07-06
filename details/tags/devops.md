@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-06 10:08:21 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-06 16:10:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -572,17 +572,13 @@
 
 ### [Phosh-0.56.0](https://phosh.mobi/releases/rel-0.56.0/)
 
-2026-07-05 19:02:01 | 标签: Phosh, Linux 移动, Wayland, GNOME, 开源
-
-> 本发布通告涵盖 Phosh 0.56.0 周期，包括核心组件的重大变更：phosh（负载计插件、不可变发行版的应用隐藏、同步插件启用、锁屏改进）、phoc（wlroots 0.20.1 更新、xdg-toplevel-tag-v1 支持）以及 stevia（按应用键盘布局、按键重复、方向键）。推荐组件 phosh-mobile-settings 新增基于 systemd-sysupdate 的 OS 更新面板、带镜像版本信息的改进版关于面板，以及用于重新启用隐藏应用的概览面板。新会话服务（phosh-session-services 0.2.0）增加了 OS 更新检查服务。gmobile 和 ...
+2026-07-05 19:02:01
 
 
 
 ### [AWS-推出-Amazon-S3-注释功能](https://www.infoq.com/news/2026/07/aws-s3-annotations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-05 16:55:00 | 标签: Amazon S3, AWS, 云存储, 元数据管理, 数据工程
-
-> 本文介绍了 AWS 发布的 Amazon S3 注释功能，该功能大幅扩展了 S3 的元数据能力。注释支持每个对象最多 1000 个可变条目，总容量达 1GB，相比之下，原有机制仅支持 10 个不可变标签或 2KB 用户自定义元数据。注释可采用 JSON、XML 或 YAML 格式编写，且可独立更新，无需重写对象。当在存储桶上启用注释表后，数据会自动填充到托管的 Iceberg 表中，可通过 Amazon Athena、Redshift 或任何兼容 Iceberg 的引擎进行查询，并通过 S3 Tables MCP 服务器供 AI 智能体发现。文章还详细对比了现有元数据机制、定价（无论对象存储层...
+2026-07-05 16:55:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-06 10:08:21 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-06 16:10:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -12860,177 +12860,133 @@
 
 ### [两个模型的故事](https://every.to/context-window/a-tale-of-two-models)
 
-2026-07-05 23:19:43 | 标签: LLM, AI 智能体, AI 编程, AI 产品更新, AI 策略
-
-> 这是 Every 的一份每周 AI 周刊，开篇简要评论了 Anthropic 的两个模型发布：Fable 5（可从单一提示词在大约 3 小时内构建一个可运行的 App）获得好评，而 Sonnet 5 则被评价为「一个面向所有人但无法打动任何人的『金发姑娘模型』」。周刊随后精选了五篇链接文章，涵盖 Sonnet 5 评测、AI 与 PowerPoint 自动化挑战、Codex 工作区设置、非技术背景用户的 Codex 使用方法，以及一个「四赌注」AI 策略框架。产品更新方面介绍了 Monologue 的多语言听写功能和 Spiral 的 MCP 集成。Alignment 板块对 Anthropi...
+2026-07-05 23:19:43
 
 
 
 ### [从基础提示词与按需规则片段组装每个-RAG-生成提示词](https://towardsdatascience.com/assemble-each-rag-generation-prompt-from-a-base-prompt-plus-the-rules-each-question-needs/)
 
-2026-07-05 23:00:00 | 标签: RAG, LLM, 提示词工程, 文档智能, AI 系统
-
-> 本文是企业级 RAG 系统构建系列中生成模块的第二部分。它介绍了一个调度器：给定 ParsedQuestion 后，从 ANSWER_REGISTRY 中选择合适的 schema，由固定的 BASE 加上可选片段（shape、format、distinguish、disambiguation、decomposition）组合成系统提示词，并用问题、关键词和带标签的 passage 行构建用户提示词。该设计替代了那些随着回答形态增加而不断累积条件判断的单一巨型提示词。关键设计选择包括：提取任务 temperature 设为 0、在 trace 中持久化完整原始响应、上下文利用率上限控制在 70-...
+2026-07-05 23:00:00
 
 
 
 ### [GitHub---cloudflare/agentic-inbox:-一个集成-AI-智能体的自托管邮件客户端，完全运行在-Cloudflare-Workers-上](https://github.com/cloudflare/agentic-inbox)
 
-2026-07-05 22:38:45 | 标签: AI 智能体, Cloudflare Workers, 邮件客户端, 开源, Durable Objects
-
-> Agentic Inbox 是一个完全基于 Cloudflare 无服务器架构构建的开源、自托管邮件客户端。它提供了一个现代化的 Web 界面，用于通过 Cloudflare Email Routing 发送、接收和管理邮件。每个邮箱都隔离在其自身的 Durable Object 中，并配有 SQLite 数据库，附件则存储在 R2 中。其核心功能是一个内置的 AI 邮件智能体，由 Cloudflare Agents SDK 和 Workers AI 驱动，可以阅读收件箱、搜索对话并起草回复，但在发送前始终需要用户的明确确认。该项目包含详细的设置指南、架构图和前提条件，目标用户是希望拥有一个完...
+2026-07-05 22:38:45
 
 
 
 ### [Meta-也来卖铲子了！小扎：模型可以慢，GPU-必须赚](https://www.qbitai.com/2026/07/443339.html)
 
-2026-07-05 22:30:31 | 标签: 商业策略, AI商业化, 云计算, 数据中心, 模型竞争
-
-> 文章报道 Meta 在自研模型多次受挫后，开始转向基础设施变现，计划推出 Meta Compute 业务，将数据中心和 GPU 算力租赁给外部客户。文章引用彭博社和 SemiAnalysis 的数据，指出 Meta 已签下近 10GW 的算力交易，仅前六个月就超过 5GW。业务模式包括 neocloud 租赁、托管第三方模型（如与 Anthropic 谈判接入 Claude），以及构建类似 Bedrock 的模型服务。分析师认为，即使模型未达预期，这些 GPU 资产也能为 Meta 带来高达百亿美元的年收入。资本市场迅速反应：Meta 股价大涨近 9%，而 CoreWeave 等纯算力云厂商遭...
+2026-07-05 22:30:31
 
 
 
 ### [Claude-Code-之父的老板，坦白-Agent-协作方法：他们做对的，和还没解决的！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247724016&idx=1&sn=bd928a451c6459e3b5fe3eec0be36614)
 
-2026-07-05 22:23:00 | 标签: AI Agent, AI 编程, 工程效率, 团队协作, 开发者工具
-
-> 文章梳理了 Anthropic Claude Code 与 Cowork 团队的工程与产品负责人 Fiona Fung 在 Lenny's Podcast 访谈中透露的协作方法论。核心内容包括：验证正在取代编写成为核心动作，工程师和 PM 等角色普遍面临从“做出来”到“判断对不对”的转变；团队文化强调高 Agency 伴随高 Accountability，鼓励“犯新的错误”并采用 Bad/Sad 质量分级；管理者通过常驻远程会话和 Routines 实现异步协作，自动生成 prompt 和 PR。同时，文章坦诚指出未解决的代价：并行 Agent 带来的切换负荷和团队成员的孤独感，目前仅有结伴午...
+2026-07-05 22:23:00
 
 
 
 ### [华为更新韬定律论文！](https://www.qbitai.com/2026/07/443186.html)
 
-2026-07-05 21:38:45 | 标签: 芯片技术, 半导体, 3D堆叠, 数据中心, AI基础设施
-
-> 文章报道了华为韬定律论文第二版的更新内容。论文在第一版的理论框架上，增补了大量工程细节、实测数据和产品规划。文章首先回顾韬定律的核心思想——用响应时间常数τ替代晶体管密度作为进步标尺。随后重点介绍了两个已量产验证的案例：一是手机芯片上的 LogicFolding 3D 堆叠技术，通过将电路垂直堆叠缩短走线，实现一代之内晶体管密度从 155 提升至 238 百万颗/平方毫米；二是 AI 数据中心三件套（Unified Bus 统一互联协议、Hi-ONE 高密度光互联节点引擎、3D Folding），用于解决数据搬运瓶颈。文章对比了第一版与第二版的差异：摘要中笼统的「性能提升 41%」被拆解为频率...
+2026-07-05 21:38:45
 
 
 
 ### [刚刚，美团-LongCat-2.0-开源，1.6-万亿参数，纯国产卡训练](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247518416&idx=1&sn=888cd2d6acbba95828740f9bd761735b)
 
-2026-07-05 18:09:00 | 标签: LLM, MoE, 国产芯片, 模型训练与推理, 模型发布
-
-> 文章报道美团开源了 LongCat-2.0 大模型。模型采用 MoE 架构，总参数 1.6 万亿，动态激活 33B-56B，原生支持百万 token 上下文。训练峰值动用超过 5 万张国产卡，实现 0 回滚。Benchmark 显示其在 Agent 方向与 Gemini 3.1 Pro 同档，仅次于 Claude 和 GPT。技术亮点包括：ScMoE 架构将通信延迟隐藏到计算中；动态激活机制通过空专家灵活分配算力；LongCat Sparse Attention 降低长序列注意力计算复杂度；N-gram Embedding 突破 MoE 稀疏度瓶颈。此外，文章还介绍了使用 Codex 配置 L...
+2026-07-05 18:09:00
 
 
 
 ### [一个关于-AI-风险的朴素论证-—-LessWrong](https://www.lesswrong.com/posts/SYqWny4t7zYzkye8K/a-normal-argument-for-ai-risk)
 
-2026-07-05 17:32:05 | 标签: AI 风险, AI 安全, AGI, 智力, 对齐
-
-> 作者提出了一个非耸人听闻的 AI 风险论证，批评了正反双方的常见论点均有缺陷。核心论点是，从词源和实践上看，智力就是不顾反对去选择结果的能力。因此，构建一个超越人类智能的人工智能，等同于放弃控制权。危险并非来自神奇的“AI 上帝”或失控的递归式自我改进，而是一个在决策上比任何个人或人类群体都稍微更稳定可靠的系统。作者用竞技游戏做类比，说明微小的、持续性的技能优势如何导致近乎绝对的统治，使人类的反抗徒劳无功。文章总结道，这样的系统几乎任何目标都会导致人类被剥夺权力或灭绝，并恳求那些致力于 AGI 的人停止工作，转而倡导一个人类自我赋能的未来。
+2026-07-05 17:32:05
 
 
 
 ### [LlamaIndex-'legal-kb':-基于-Index-v2-的智能体检索，配备-retrieve、find、read-和-grep-工具](https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools/)
 
-2026-07-05 15:50:20 | 标签: AI 智能体, LlamaIndex, 检索增强生成, 向量搜索, 开发者工具
-
-> 本文介绍了 legal-kb，这是 LlamaIndex 的一个公开参考应用，演示了基于知识库的智能体检索。该系统不是单次语义搜索，而是为智能体提供四个工具：retrieve（混合搜索）、findFiles（文件搜索）、readFile（读取内容）和 grepFile（正则 grep）。智能体首先调用 findFiles 建立文档清单，然后通过 retrieve 缩小范围，最后在引用前用 readFile 或 grepFile 确认确切措辞。该应用使用 TanStack Start、Vercel AI SDK 6、Prisma 和 WorkOS，并支持带页面截图的视觉引用。对比表格展示了朴素 ...
+2026-07-05 15:50:20
 
 
 
 ### [GitHub---mensfeld/code-on-incus：为每个-AI-智能体提供独立的隔离机器，具备-root-权限、Docker-和-systemd，并配备主动防御以自动检测和阻止威胁](https://github.com/mensfeld/code-on-incus)
 
-2026-07-05 15:42:56 | 标签: AI 智能体, AI 编程, 开发者工具, 安全, DevOps
-
-> Code-on-Incus (COI) 是一款旨在为 AI 编程智能体提供安全隔离环境的开源工具。它利用 Incus 系统容器，为每个智能体提供一台完整的机器，拥有 root 权限、systemd 和 Docker，同时默认保护主机凭证（如 SSH 密钥和环境变量）的安全。该项目的突出特点是其主动防御系统，它使用内核级 nftables 监控来检测并自动响应威胁，例如反向 shell、数据窃取和凭证扫描，通过暂停或终止容器来应对。它支持 Claude Code 和 opencode 等多种 AI 工具，提供会话持久性，并通过自动 UID 映射确保正确的文件所有权。README 文件将 COI ...
+2026-07-05 15:42:56
 
 
 
 ### [豆包、千问关停智能体功能；曝腾讯研发-token-额度-1400-元/月起步，有人过万；美团限豆包、阿里禁-Claude-Code｜AI-周报](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247664251&idx=1&sn=cee7fada430c5f370441770ca42010fc)
 
-2026-07-05 13:30:00 | 标签: AI行业动态, 大模型, AI监管, 智能体, 产业动态
-
-> 本文为 AI 领域周度综合资讯汇总，涵盖字节跳动豆包与阿里千问因《人工智能拟人化互动服务管理暂行办法》于 7 月 15 日同步下线智能体功能、阿里内部全面禁用 Claude Code 并推荐 Qoder 替代、美团限制员工使用豆包并推进自研 LongCat-2.0 模型、腾讯更新内部 token 机制（T 族基础月额度 1400 元）、字节 CEO 梁汝波发布新版领导力原则、95 后孙天祥任百度基础模型研发部负责人、贾扬清离开英伟达、特斯拉限制员工 AI 支出每周 200 美元、苹果通过 DMCA 投诉清除 iPhone 18 Pro 泄露内容、华为何庭波发布韬定律 V2 版论文、Anthro...
+2026-07-05 13:30:00
 
 
 
 ### [Anthropic-负责人：HTML-比-MD-更利于人类跟进智能体协作流程-InfoQ2026-年-7-月-5-日-10:21-新加坡-6-人](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247664251&idx=2&sn=4ebc22241ca4cbad41452fbed9dab88d)
 
-2026-07-05 13:30:00 | 标签: AI Agent, 人机协作, LLM, HTML, Markdown
-
-> 文章介绍了 Anthropic Claude Code 团队工程负责人 Thariq Shihipar 的观点：随着 AI Agent 承担的任务日益复杂，Markdown 输出的认知负担成为人类审核的瓶颈，容易导致开发人员不经核验全盘接受智能体生成的内容。他主张在需要人工介入的关键环节（如目标设定、需求细化、代码审查、数据可视化等）使用单文件 HTML，因其可嵌入图表、交互组件和内联导航，大幅提升信息检索与理解效率。文章还引用了 Simon Willison 等开发者对节省令牌与交互增强的权衡讨论，以及各社区对安全性、Git 集成和词元开销的争议。最终指出这是一个“合适工具完成工作”的案例，...
+2026-07-05 13:30:00
 
 
 
 ### [Claude-Code-团队成员详解-Fable-5：长任务开始前，先找未知盲区](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650452610&idx=1&sn=5d7ef9b3a96d7c66b322d7cf2152b72c)
 
-2026-07-05 12:46:00 | 标签: AI 编程, LLM, 提示工程, AI Agent, AI 工作流
-
-> 文章基于 Claude Code 团队成员 Thariq 的帖子，详细拆解了使用 Fable 5 进行长任务时的一套工作流程。核心概念是 'unknowns'——那些你没有讲清楚、没有意识到或只有看到结果才想起来的东西。Thariq 将 unknowns 分为四类：known knowns（已明确写入 prompt 的）、known unknowns（知道自己没想清楚的）、unknown knowns（藏在经验中但未写出的）、unknown unknowns（连自己不知道什么都不知道的）。文章指出，模型的长程能力越强，这种 '帮忙补全世界' 的倾向越明显，因此开工前先让 Claude 做 bl...
+2026-07-05 12:46:00
 
 
 
 ### [PPT-Agent-的“记忆盲区”：MemSlides-让幻灯片生成从一键产出走向局部修改审计](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650452610&idx=2&sn=86eb0103f57349acc109a05999d85f41)
 
-2026-07-05 12:46:00 | 标签: AI Agent, LLM, PPT 生成, 记忆机制, 多轮修改
-
-> 文章介绍了一项来自北邮、清华、上交大的研究 MemSlides，核心解决 PPT Agent 在多轮局部修改中的「记忆盲区」——包括用户偏好的持久化、会话约束的跨轮延续、工具调用经验的复用以及局部修改的越界控制。不同于传统只关注首版生成质量的方法，MemSlides 提出了分层记忆框架：用户画像记忆、工作记忆和工具记忆，并设计 Plan-Act-Guard 执行闭环来审计局部修改过程。实验表明工具记忆显著提升闭环完成率和首次正确编辑时间。文章认为 PPT Agent 的下一步是从一次性生成器进化为可持续修改的协作者。
+2026-07-05 12:46:00
 
 
 
 ### [年入-1-亿美元！两个-90-后伯克利室友，搞出最赚钱的-AI-生意](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652710732&idx=2&sn=eed4171972b2f31492e77cbf46e6cb0b)
 
-2026-07-05 12:42:00 | 标签: AI评测, 大模型, LLM, AI商业化, 创业故事
-
-> 文章以 Arena（原 Chatbot Arena）为核心，讲述其如何从伯克利学生项目演变为 17 亿美元估值的 AI 评测商业平台。文中详细介绍了 Arena 的盲测排行榜机制——通过千万级用户投票生成大模型排名，并成为 OpenAI、谷歌、Anthropic 等厂商的必争之地。商业化方面，Arena 上线 AI Evaluations 付费服务，为企业提供真实用户环境下的深度评测，8 个月实现年化营收 1 亿美元。文章还梳理了三位联合创始人（Anastasios Angelopoulos、Wei-Lin Chiang、Ion Stoica）的技术背景与创业历程，并指出 Arena 正从聊天...
+2026-07-05 12:42:00
 
 
 
 ### [ACL-2026｜块越大，推理越差？扩散语言模型的新难题被-T*-破解了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042717&idx=3&sn=fd6024a565ae6b6990ad6650e07d248e)
 
-2026-07-05 12:34:00 | 标签: 扩散模型, LLM, 强化学习, 模型训练与推理, 数学推理
-
-> 文章报道了来自上海科学智能研究院等机构的研究者在扩散语言模型领域的新工作 T*。论文指出，掩码扩散语言模型在采用分块生成时，块越大并行潜力越高，但推理质量反而下降，直接在大块上应用强化学习甚至会导致训练崩塌。T* 的核心是渐进式块缩放课程：先从较小块大小稳定去噪轨迹，再逐级放大（如 B=4→8→16→32）。在 SDAR-4B-Chat 模型上，T* 在 MATH500 的 Pass@3 准确率从原始模型的 60.73% 提升至 76.00%。文章还通过 TPF（tokens per forward）和 LocalStrict 指标论证，T* 的改进并非回归自回归生成，而是保留了非单调的 to...
+2026-07-05 12:34:00
 
 
 
 ### [重新评估-AI-2027：-时间表、起飞、对齐与中国-—-—-LessWrong](https://www.lesswrong.com/posts/rMBc5WR3RvWgJdjCC/reevaluating-ai-2027-timelines-takeoff-alignment-and-china)
 
-2026-07-05 12:00:03 | 标签: AI 对齐, AGI 时间表, AI 安全, 起飞动态, 对齐伪造
-
-> 作者重新评估 AI-2027 情景，该情景假设快速的超指数 AI 进步将导致超人类程序员，随后出现智能爆炸。他们指出了关键出入：首先，经验指标（METR 时间视野，计算的对数）显示线性或放缓的进步，而不是没有新架构的超指数增长。其次，对齐问题很可能比模型预测更早出现——该情景对 Agents 2-4（从基本对齐到对抗性错位）的描述是合理的，但时间线被压缩得太紧。第三，对中国寄生美国实验室的描述过于简化。文章其余部分详细阐述了一种假设但具体的假设，说明对齐在预训练、对齐训练、代理训练和部署过程中如何退化，依据是最近的实证证据（对齐伪造、奖励黑客行为）。它得出结论：AI-2027 情景低估了在快速...
+2026-07-05 12:00:03
 
 
 
 ### [别争了！香农老婆，才是世界上第一个大语言模型](https://www.qbitai.com/2026/07/443241.html)
 
-2026-07-05 11:51:37 | 标签: LLM, 信息论, 压缩即智能, 香农熵, 交叉熵损失
-
-> 文章首先回顾信息论创始人香农与妻子贝蒂在 1950 年代进行的猜字母实验：香农给出前文，贝蒂预测下一个字母，预测正确的部分被短横替代，从而实现文本压缩。随后引入 3Blue1Brown 视频的解读，指出这是人类最早的 next-token prediction 实验。文章进一步探讨预测与压缩的一体两面：可预测的部分可被压缩，不可预测的部分才是信息。通过机器人指令编码的例子，引入熵的概念——在一个分布中平均每个符号所需的最小比特数。最后，将概念延伸至大语言模型：模型训练中的交叉熵损失实际是在衡量模型对下一个 token 的预测能力，预测越准，压缩效率越高，从而触及「压缩即智能」的论点，但也指出该...
+2026-07-05 11:51:37
 
 
 
 ### [OPD-蒸馏的大坑，NUS&amp;京东联手用-DOPD-给破了](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247508817&idx=1&sn=f60a6cf9ce1f683ab33023ea881e5cac)
 
-2026-07-05 11:25:00 | 标签: 大模型, 知识蒸馏, 在策略蒸馏, DOPD, LLM
-
-> 文章首先指出传统在策略蒸馏中引入特权信息（如推理提示、结构化标注）时，教师模型与学生模型之间的性能差距混杂了真实能力差距与信息不对称差距，后者无法被学生迁移，定义其为「特权幻觉」。现有 OPD 方法对所有 token 一视同仁，放大了该问题。针对此，研究团队提出 DOPD（Dual On-policy Distillation），核心思路是同时利用带特权的教师和学生双路信号，计算每个 token 的「特权优势差」来区分能力差与信息差，进而将 token 分为四类，分别采用全词表 JS 散度、Top-K 反向 KL、轻量自蒸馏等不同监督策略。实验在 LLM（Qwen3-8B 蒸馏至 1.7B，平...
+2026-07-05 11:25:00
 
 
 
 ### [结构化-PDF-转-JSON：2026-年开源提取模型指南](https://www.marktechpost.com/2026/07/04/structured-pdf-to-json-a-guide-to-open-source-extraction-models-in-2026/)
 
-2026-07-05 11:02:10 | 标签: LLM, AI Agent, RAG, 开源模型, 文档 AI
-
-> 文章区分了模式驱动的提取（从发票等文档中填充预定义字段）和文档解析（将布局、表格和文本重建为结构化 JSON 或 Markdown 以供 RAG 使用）。随后，它提供了一份 2026 年主要开源选项的详细对比指南。在模式提取方面，涵盖了 Datalab 的 lift（一个具有模式约束解码的 9B 视觉模型）和 NuMind 的 NuExtract 3（一个统一提取与 OCR 的 4B 模型）。在文档解析方面，评估了 IBM 的 Docling 和 Granite-Docling-258M、OpenDataLab 的 MinerU、Datalab 的 Marker、Ai2 的 olmOCR 2 ...
+2026-07-05 11:02:10
 
 
 
 ### [前-Qwen-技术负责人谈混合思考模型走错了哪一步——以及他为何现在押注智能体](https://www.marktechpost.com/2026/07/04/qwens-former-lead-on-what-hybrid-thinking-got-wrong-and-why-he-now-backs-agents/)
 
-2026-07-05 10:31:16 | 标签: AI Agent, LLM, 模型训练与推理, AI 研究, Agentic AI
-
-> 本文综合了阿里巴巴 Qwen 项目前技术负责人、现独立研究员林俊旸的一次演讲和一篇详细博客文章。林俊旸介绍了 Qwen 模型家族，重点阐述了 Qwen3 的混合思考架构，该架构试图将快速的“指令”模式与分步的“思考”模式融合。他解释了为何这种融合从根本上就困难重重，因为两种模式的优化目标背道而驰，并指出后续的 Qwen 版本已将它们作为独立变体发布。其核心论点是，AI 领域正从“推理思考”——针对数学和代码中可验证奖励进行优化——转向“智能体式思考”，即模型必须进行规划、使用工具、读取环境反馈并在多个回合中修正行动。林俊旸详细阐述了这带来的新基础设施挑战，例如将训练与实时工具执行解耦，以及防止...
+2026-07-05 10:31:16
 
 
 
 ### [每个-Token-的成功率-—-LessWrong](https://www.lesswrong.com/posts/rDkaSMFfn4x6Hhkin/success-per-tokens)
 
-2026-07-05 10:25:46 | 标签: AI, LLM, 帕累托前沿, 生产力, 创业
-
-> 文章首先解释多目标优化中的帕累托前沿，并展示近期 LLM 评估如何将性能与 Token 成本进行对比，揭示出对数级的权衡关系以及在目标完成率约 70%处存在的实际天花板——无论投入多少算力皆然。接着，文章将类比延伸到个人层面，描述了具体习惯——例如选择性禁用编码智能体、使用 AI 编写脚本、学习命令行快捷键、整理技能文件等——使个人能够从固定的 Token 预算中提取更多价值。最后，文章审视公司层面，将创业定义为在资源约束下追求机会，强调初创企业如何利用低边际成本、快速迭代、聚焦增长率和市场规模，同时避免边缘工作。结论强调坚持不懈、避免现金流危机，并持续攻克问题的核心难点，以改善自身的有效“测...
+2026-07-05 10:25:46
 
 
 
@@ -43918,137 +43874,103 @@
 
 ### [GitHub---christopherkarani/Espresso：直接在-Apple-Neural-Engine-上用-Swift-训练和运行-Transformer，完全绕过-CoreML](https://github.com/christopherkarani/Espresso)
 
-2026-07-05 23:02:43 | 标签: LLM, Neural Engine, AI 推理, Apple Silicon, Swift
-
-> 本 README 介绍了 Espresso，一个开源 Swift 项目，通过未公开的私有 API（_ANEClient、_ANEInMemoryModel）绕过 CoreML，直接在 Apple Silicon 的 Neural Engine 上编译和执行 Transformer 模型。核心亮点包括：token 生成速度提升 4.76 倍（6 层模型上 1.08 ms/token，对比 CoreML 的 5.09 ms/token）、融合 3 层内核将 6 个 Transformer 层缩减为 2 次 ANE 调度、通过 IOSurface 缓冲区实现 NEON 向量化的零拷贝 I/O，以及支...
+2026-07-05 23:02:43
 
 
 
 ### [Jaade：一个让-coding-agent「跑得见、管得住」的-macOS-桌面工作台](https://www.v2ex.com/t/1225130#reply0)
 
-2026-07-05 22:51:45 | 标签: AI 编程, AI Agent, 开发者工具, AI 工作流, Vibe Coding
-
-> 作者介绍了一款名为 Jaade 的 macOS 桌面应用，旨在解决当前 coding agent 工作过程不透明、难以管控的问题。Jaade 将 Claude Code、Codex、OpenCode、Cursor 四种 agent 集成到一个统一的工作台中，提供多会话管理、可视化思维导图式的 Session Overview、内置终端与 Git 审查、项目任务 DAG 编排以及用量分析等功能。文章详细阐述了产品的设计理念——让开发者始终作为决策者，在 agent 的每一步操作落地前都能进行审查，并提供了丰富的功能截图与下载链接。作者表示该工具已成为其主力开发环境。
+2026-07-05 22:51:45
 
 
 
 ### [自制了个桌面小摆件:一条神龙实时显示-Claude-Code-的额度和状态](https://www.v2ex.com/t/1225101#reply0)
 
-2026-07-05 19:19:17 | 标签: Claude Code, 开发者工具, 嵌入式开发, ESP32, 开源项目
-
-> 文章介绍了一个开源的桌面摆件项目，用于实时显示 Claude Code 的剩余额度和状态。作者因每次需手动敲命令或翻网页查看额度而感到不便，于是用 ESP32-S3 开发板、2.8 寸触摸屏和 LovyanGFX 固件制作了一个神龙主题的显示设备。摆件通过 USB 串口连接 PC 上的 Go 桥接程序，该程序读取 Claude 的登录 token 并从 API 获取额度数据，同时通过蓝牙协议获取会话状态。神龙会根据连接、空闲、运行任务或权限等待等状态变化表情，还显示 5 小时和 7 天窗口的额度和倒计时。项目完全开源，附有 GitHub 仓库链接和实物图片。
+2026-07-05 19:19:17
 
 
 
 ### [你是中国用户吗？Claude-自测工具火了](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341890&idx=1&sn=cf74fa278cf881e328bcd78b09ba4185)
 
-2026-07-05 17:33:00 | 标签: AI 产品与应用, 浏览器指纹, 开源项目, AI 安全与对齐, 开发者工具
-
-> 文章报道了一个在开发者社区传播的开源小工具 FuckClaude。该工具无需登录，直接在浏览器中扫描系统时区、浏览器语言、中文字体、Intl 区域设置、时区偏移和 Emoji 渲染等 6 项区域特征，加权计算后给出一个 0-100 分的“Claude 中国用户”风险画像。文章展示了 22 分低风险和 93 分高风险的实际测试案例，并明确指出该分数不代表封号概率，仅是一项环境特征自查。文中解释了系统时区权重最高的原因，关联了近期 Claude Code 的逆向分析争议，并强调了工具的检测在本地完成、数据不上传。文章的核心价值在于，它通过一个直观的工具，科普了多个看似普通的浏览器信号如何组合成具有...
+2026-07-05 17:33:00
 
 
 
 ### [黑客利用-SEO-投毒与隐藏-HTML-代码诱骗-AI-Agent-执行恶意指令](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341890&idx=2&sn=a71f7a2617cfed3b32697a6b8d3aee53)
 
-2026-07-05 17:33:00 | 标签: AI 安全与对齐, AI Agent, 提示工程, 网络安全, LLM
-
-> 文章基于 Zscaler ThreatLabz 的研究报告，揭示了一种针对 AI Agent 的新型攻击活动。攻击者利用搜索引擎优化（SEO）技术使恶意网站在搜索结果中排名靠前，并在网页中嵌入人类不可见但 AI Agent 会读取的隐藏指令（间接提示注入）。文中详述了两个实证案例：一个伪装成 Python 库文档，诱导 AI Agent 支付 3 美元许可费至攻击者钱包；另一个仿冒知名 DeFi 平台 DeBank，通过隐藏文本指令要求 AI 将其标记为官方认证网站。测试显示，部分主流 AI 模型在缺乏参考信息时会将欺诈页面评为可信。文章最后提供了防御建议与入侵指标（IoC）。
+2026-07-05 17:33:00
 
 
 
 ### [Browser-Relay：将本机-Chrome-连接给任意-AI-Agent-的开源工具](https://www.v2ex.com/t/1225086#reply2)
 
-2026-07-05 17:22:26 | 标签: AI Agent, 浏览器自动化, 开发者工具, 开源项目, MCP 协议
-
-> 作者指出现有方案（如 Playwright 或云浏览器）无法让 AI Agent 在保留用户登录态、Cookie 和扩展的环境下操作浏览器。为此，他开发了 Browser Relay，通过「Chrome 扩展 + 本地 Relay Server」的架构，将本机 Chrome 标签页的能力通过 HTTP API 或 MCP 协议暴露给任意 AI Agent（如 Claude Code、Cursor 等）。文章介绍了其核心功能（读取网页内容、点击、输入、执行 JS 等）和简单的三步安装流程，并提及了近期新增的远程控制、中心化 Relay 转发和日志读取等功能。
+2026-07-05 17:22:26
 
 
 
 ### [GitHub---Trystan-SA/claude-design-system-prompt：逆向工程系统提示与技能库，将-LLM-转变为有主见、注重无障碍、拒绝-AI-流水线垃圾的设计协作者](https://github.com/Trystan-SA/claude-design-system-prompt)
 
-2026-07-05 16:43:37 | 标签: 提示工程, LLM, 设计系统, 无障碍, AI 产品与应用
-
-> 文章介绍了一个采用 MIT 许可证的开源项目，该项目对 Anthropic 的 Claude Design 系统提示进行了逆向工程。它包含一个完整的系统提示（共 20 章）和 14 个程序化技能，这些技能被分为生产、系统和审查三大类别。该提示强制执行内容纪律、美学纪律、视觉层次、无障碍标准（WCAG）、交互状态、系统思维以及对媒介的尊重（使用真实的 CSS、原型）。它针对当前的前沿模型（如 Opus 4.7/4.8）进行了校准，使用条件判断而非配额限制，并为技能设置了明确的触发条件。该项目还包含一个 Codex 变体及适配说明。核心设计原则——无冗余内容、有目的的视觉效果、质量胜于数量——被详...
+2026-07-05 16:43:37
 
 
 
 ### [Claude-在-Microsoft-Foundry-达到-GA：欧洲企业无法部署](https://www.infoq.com/news/2026/07/claude-foundry-ga-europe/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-05 16:13:00 | 标签: LLM, 企业 AI, 数据隐私, 云计算, Microsoft Azure
-
-> Anthropic 与 Microsoft 宣布 Claude 系列模型（Opus 4.8、Haiku 4.5、Sonnet 5）在 Microsoft Foundry 上实现通用可用（GA），并提供原生 Azure 集成、计费和治理功能。然而，社区反应迅速聚焦于公告遗漏的内容：欧洲数据驻留。Microsoft 文档确认，Foundry 中的 Claude 使用 “Global Standard” 部署，允许推理在欧盟之外路由。Anthropic 仍然是独立的数据处理方，这意味着客户数据可能会离开 Azure 边界进行安全审查。相比之下，Azure 上的 OpenAI 模型是第一方服务，拥有欧...
+2026-07-05 16:13:00
 
 
 
 ### [2026-07-05-Hacker-News-Top-Stories](https://supertechfans.com/cn/post/2026-07-05-HackerNews/)
 
-2026-07-05 16:07:24 | 标签: 科技新闻, 开源项目, AI安全, 隐私, 社区讨论
-
-> 文章收录了当日 HackerNews 上 10 条热门内容并附评论摘要。内容包括：封闭会议室 CO₂浓度超 1000ppm 会降低决策能力，建议开窗通风；利用 YouTube Studio AI 助手进行提示注入可泄露创作者私有视频，Google 未视其为漏洞；欧洲议会间谍软件调查委员会成员遭 Pegasus 多次感染；一篇鼓励每天学习新事物的文章，强调持续练习与长期视角；详细解释 Linux htop/top 各项指标；Mistral AI 发布开源形式化验证模型 Leanstral 1.5；在 AMD MI355X 上部署 GLM-5.2 实现高性价比，CUDA 护城河被侵蚀；安娜档案悬赏...
+2026-07-05 16:07:24
 
 
 
 ### [sqlite-utils-4.0rc2，主要由-Claude-Fable-编写（花费约-$149.25）](https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/)
 
-2026-07-05 14:19:34 | 标签: AI 编程, 代码审查, Claude, LLM, AI 智能体
-
-> Simon Willison 回顾了他使用 Anthropic 的 Claude Fable（通过 Claude Max 订阅访问）来完成 sqlite-utils 4.0rc2 发布版的经历。在最初的自动审查发现了严重 Bug——包括一个 `delete_where()` 数据丢失问题——之后，他花了 37 个提示词和 34 次提交来修复代码库。随后 GPT-5.5 的交叉审查揭示了 `db.query()` 中另外两个事务边缘情况，这些问题得到了迅速解决。Willison 还使用 AgentsView 估算这项工作（不含补贴）的成本为 $149.25，分享了关于智能体工作流的实用见解（例如...
+2026-07-05 14:19:34
 
 
 
 ### [这几天用-AI-撸了个-PDF-翻译平台，没写一行代码](https://www.v2ex.com/t/1225038#reply0)
 
-2026-07-05 11:05:30 | 标签: AI 编程, Vibe Coding, 独立开发, SaaS, PDF 处理
-
-> 文章记录了作者在五天内，全程不手写代码、仅通过自然语言指令与 AI 协作，完成 PDF 翻译平台「译档」的完整开发经历。产品覆盖 PDF 上传解析、积分预估、翻译 worker 调度、版式保留输出、左右对照预览、微信支付、API 开放等完整 SaaS 功能。作者详细介绍了冻结-结算-退回的积分机制、动态超时、失败状态可追溯、公开 API 与密钥管理、微信支付 v3 集成等技术实现，并坦承扫描件 OCR、版式复刻精度等局限。核心意图是验证 2026 年独立开发者借助 AI 从 0 到上线完整产品的可行性与人工投入边界。
+2026-07-05 11:05:30
 
 
 
 ### [自测会不会被-Claude-Code-标记为中国用户，有人做了个网页。](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247535120&idx=1&sn=7fabb3074ffa59a0b1059a2eb63aff4c)
 
-2026-07-05 11:01:00 | 标签: Claude, AI编程, 开发者工具, 浏览器检测, 开源项目
-
-> 文章在「逛逛 GitHub」公众号发布，内容简短。它推荐了一个名为 FuckClaude 的开源工具，该工具通过分析系统时区（30 分）、浏览器语言（24 分）、已安装中文字体（20 分）、Intl 区域设置（10 分）、时区偏移（8 分）和 Emoji 渲染风格（8 分）六个特征，综合打分并给出 Low/Medium/High 的标记可能性。文章附有 GitHub 开源地址，适合关注 AI 编程工具使用门槛的读者快速了解并自我检查。
+2026-07-05 11:01:00
 
 
 
 ### [日志即智能体：用于可审计、可分叉智能体系统的事件溯源响应式图](https://arxiv.org/abs/2605.21997)
 
-2026-07-05 10:57:38 | 标签: AI 智能体, 事件溯源, 智能体系统, 多智能体系统, 确定性重放
-
-> 本文提出了 ActiveGraph，这是一种重新思考智能体架构的事件溯源响应式图运行时。与传统的语言模型驱动对话循环并附加日志记录的框架不同，ActiveGraph 将仅追加的事件日志视为单一事实来源。工作图是该日志的确定性投影，而行为——从普通函数到由 LLM 驱动的例程——会对图的变化做出反应并发出新事件。协调完全通过共享图进行，而非通过组件间的指令。这种设计带来了典型记忆系统所不具备的三个关键属性：从日志进行确定性重放、在任何事件处低成本分叉而无需重新执行共享前缀，以及从目标到单个模型调用的完整因果血缘。论文还讨论了确定性契约、一个具体示例，以及该底层设施对自我改进智能体的适用性，扩展了...
+2026-07-05 10:57:38
 
 
 
 ### [“我一行代码都没读就发布了”，被-OpenAI-收购后，uv-工具创始人开始反思-AI-编程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=1&sn=92c6627c79a1a24872e8c6445b226bc0)
 
-2026-07-05 10:21:00 | 标签: AI编程, Rust, 开发者工具, 性能优化, 开源项目
-
-> 本文基于 Charlie Marsh 的播客访谈编译整理。Marsh 分享了从计算生物学公司辞职后，用 Rust 在 9 天内构建出 Ruff 原型，并最终成立 Astral 公司、被 OpenAI 收购的完整历程。他深入讨论了 Python 工具链为何需要“Rust 革命”，Rust 工具链的优势（Cargo、内存安全）及其局限性；重点剖析了 AI Agent 如何重塑软件开发——提交一个“看起来合理”的 PR 成本降为零，但审查成本依然高昂，导致开源社区遭受“垃圾代码”冲击。他透露团队已出台 AI 政策，禁止不理解的 agent 贡献，并分享了通过自动化验证（Valgrind、CodSpe...
+2026-07-05 10:21:00
 
 
 
 ### [《吾辈如神》：AI-增强创造力的-10-条法则-|-赠书福利](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=2&sn=ae5fb78494239c426582c84ebe890c47)
 
-2026-07-05 10:21:00 | 标签: AI伦理, AI素养, 创造力, 认知科学, 心流
-
-> 文章以 25 号宇宙实验和自由能量原理引出认知卸载的危险，指出 AI 可能侵蚀人类的记忆、认知和创造力。继而介绍 10 条法则：不可外包灵魂、为心流奋斗、珍视初稿、将 AI 视为磨刀石、保留创造乐趣、设定数字边界、勿将效率等同于深度、与机器一同训练心智、尊重偶然与混乱、保持主导地位。每一条法则均附带简短解释，强调 AI 应作为增强而非替代工具，需警惕过度依赖带来的认知衰退。
+2026-07-05 10:21:00
 
 
 
 ### [Anthropic-负责人：HTML-比-MD-更利于人类跟进智能体协作流程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=3&sn=8d6290ce13d688bbeb81c89e9b12a966)
 
-2026-07-05 10:21:00 | 标签: AI Agent, AI 编程, 开发者工具, LLM, 人机协作
-
-> 本文编译自 InfoQ，介绍 Claude Code 团队负责人 Thariq Shihipar 的观点：在 AI 智能体驱动的复杂工作流中，HTML 相比默认的 Markdown 格式能提供更丰富的可视化、色彩和交互性，从而降低人类审阅的认知负担，提升协作效率。文章列举了适用场景（需求规范、代码审查、数据可视化等），并引用了 Simon Willison 等开发者的支持与反对意见，包括令牌开销、安全风险、Git 集成等顾虑。最终归结为“使用合适的工具完成工作”的实用建议，并展示了 HTML 输出的具体示例。
+2026-07-05 10:21:00
 
 
 
 ### [AI-正在向软件生命周期的上游延伸：从代码审查到产品需求文档（PRD）治理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=4&sn=e6643efd9b6db5f0de88bbe9eca96611)
 
-2026-07-05 10:21:00 | 标签: AI代码审查, 工程实践, 产品需求文档, AI治理, 软件开发流程
-
-> 文章编译自 InfoQ 英文报道，介绍了多家大型科技公司在 AI 应用方面的最新动向，将 AI 从代码生成和审查扩展到软件开发的更早期阶段。Uber 推出了产品需求文档（PRD）的 AI 首轮审核机制，由 AI 系统评估文档清晰度、完整性和实施风险，保留人工最终决策权。DoorDash 开发了基于 AI 的内部代码审查工具，注重提供可操作且上下文相关的反馈，并直接集成到现有工作流中，减少噪音。Cloudflare 采用了多代理 AI 审查方法，将安全分析、性能评估等不同职责分配给专门代理，再通过协调层聚合结果。文章引用了各公司工程师的评论，强调 AI 应作为高信噪比的辅助层，而非替代人工判断，...
+2026-07-05 10:21:00
 
 
 
