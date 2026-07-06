@@ -1,0 +1,56 @@
+{
+  "id": "RAW_08a1446c",
+  "title": "Meta 也来卖铲子了！小扎：模型可以慢，GPU 必须赚",
+  "url": "https://www.qbitai.com/2026/07/443339.html",
+  "date": "2026-07-05 22:30:31",
+  "author": "听雨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">听雨 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>模型搞不出起色，小扎开始盯上基础设施了。</p>\n  <p>起因是Meta遭受了接二连三的打击：Gemini模型被限制使用、小扎承认内部AI agent技术推进比预期慢、员工士气跌到20年谷底……</p>\n  <p>总之真是流年不利。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260705170533_f5d9a6689ff0e28171fe4f7ad0df40ef.webp\" alt=\"图片\" data-aistatus=\"1\" data-imgfileid=\"100417914\" data-ratio=\"1.0638888888888889\" data-src=\"https://image.jido.dev/20260705170530_bfd8b38.png\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>但是没关系，小扎灵光一闪，又有了Plan B。</p>\n  <p>既然自研模型赶不上，那咱可以<strong>卖GPU</strong>啊！！</p>\n  <section>\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260705170531_ef45b16fa160eae118740da5b780c46d.webp\">\n  </section>\n  <p>据彭博社报道，Meta正考虑推出<strong>Meta Compute</strong>，把庞大的AI基建开放给外部客户。</p>\n  <p>好家伙，果然都是卖铲子的天下…</p>\n  <p>既然要卖铲子，那么Meta手里有多少铲子？</p>\n  <p>据SemiAnalysis报道，Meta的数据中心和算力采购不但不会放慢，反而还会继续加速。</p>\n  <p>仅今年前6个月，Meta就已经在云和托管数据中心上签下了超过5GW的容量。这还不包括它正在加速推进的自建数据中心。</p>\n  <p>Meta正在建设中的两个最大数据中心园区，加起来就代表了2.5GW的容量。</p>\n  <p>而从2024年初以来，Meta签下的数据中心和算力相关交易，也已经接近10GW。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260705170530_6987a07602ed77633f37472fa4351d37.webp\">\n  </section>\n  <p>地图上这些密密麻麻的点位，就是小扎卖GPU的底气。</p>\n  <p>这堆算力有几个去向：</p>\n  <p>第一，继续喂给自家模型，比如亚历山大王的MSL已经推出的Muse Spark，以及正在训练中的下一代模型Watermelon。</p>\n  <p>第二，用在广告推荐系统上。SemiAnalysis认为，Meta可能希望把广告推荐系统的复杂度再放大10倍，用更多训练和推理算力提升广告收入。</p>\n  <p>第三，做类似SpaceX的neocloud交易，把一部分算力以高价租给外部客户。</p>\n  <p>如果按SpaceX那类高算力租赁合同来算，每GW年收入可达约500亿美元。</p>\n  <p>Meta只要拿出200MW算力给外部客户，就能带来100亿美元年收入，而且是超高利润率。</p>\n  <p>啧啧，这油水是真不少~</p>\n  <section>\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260705170530_6483e91f2fd3f3679e081346d666b488.webp\">\n  </section>\n  <p>而且SpaceX开创了一种新模式：合同三年，但双方都可以在90天内取消——实际上相当于3个月一签，自动续约。</p>\n  <p>这意味着Meta可以随时把算力收回来给MSL用。</p>\n  <p>第四，托管第三方模型。</p>\n  <p>SemiAnalysis甚至判断，Meta正在与Anthropic进行最终谈判，以获得Claude的私有实例访问权。</p>\n  <p>未来，Meta会做类似Amazon的Bedrock、Microsoft的Foundry、Google的Vertex这样的模型服务平台。</p>\n  <p>也就是说，Meta可以把Claude这类第三方模型部署在自己的基础设施上，再打包卖给企业客户。</p>\n  <p>对Meta来说，这至少有三层用途：</p>\n  <p>第一，当然是内部使用。</p>\n  <p>Google刚刚限制了Meta对Gemini的使用，而Meta可能反手就把Claude作为替代。</p>\n  <p>毕竟Meta自己的AI项目需要大量高质量模型token。</p>\n  <p>而Claude也正好是目前最强的模型之一。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260705170530_a579ab51a4532a35d11bde013863e8c9.webp\">\n  </section>\n  <p>二是对外销售。Meta可以像亚马逊的Bedrock一样卖Claude-as-a-service。</p>\n  <p>客户不用自己找Anthropic签约、部署、运维，只要通过Meta的平台调用模型就行。</p>\n  <p>三是垂直应用。Meta可以利用自己的广告平台，构建销售与营销SaaS，集成前沿AI Agent。</p>\n  <p>SemiAnalysis预计，Meta可能很快宣布类似协议，Anthropic就是头号对象，但OpenAI或Google也可能加入。</p>\n  <p>如果Meta的算力业务成形，那么它的对手就不只是OpenAI、Anthropic、Google这些模型公司了。</p>\n  <p>它还会站到AWS、Azure、Google Cloud，以及CoreWeave、Nebius这些AI云厂商对面。</p>\n  <p>消息一出，资本市场也立刻闻风而动。</p>\n  <p>Meta股价大涨近9%，而CoreWeave、Nebius这些 neocloud公司则遭遇抛售。</p>\n  <p>华尔街显然听懂了小扎的新故事：</p>\n  <p><strong>虽然咱模型还没赢，但GPU可以先赚钱啊！</strong></p>\n  <h2>为啥要卖算力：搞模型太烧钱</h2>\n  <p>小扎从模型转向卖铲子，最直接的原因是：<strong> \n    <br> \n   </strong></p>\n  <p><strong>研发模型，真的太烧钱了！！！</strong></p>\n  <p>Meta官方给出的2026年资本开支指引，已经上调到1250亿-1450亿美元。</p>\n  <p>作为对比，Meta今年一季度的资本开支就已经达到198.4亿美元。</p>\n  <p>但是反观Meta的模型进度，不禁让人捏了一把冷汗：</p>\n  <p>Llama系列开源，生态影响力很大，但也很难直接转变成收入。</p>\n  <p>而Meta最新的自研模型Muse Spark，也还没有真正把Meta送回第一梯队。</p>\n  <p>现在Meta内部又在训练下一代模型<strong>Watermelon</strong>（西瓜），据称算力投入比Avocado高一个数量级。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260705170530_37f56cf80392c2cc093eebc5c57077b5.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260705170530_e6471c2.png\" data-ratio=\"0.2824074074074074\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100417915\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"8\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>亚历山大王表示：大家别着急，Watermelon已经赶上GPT-5.5的水平了。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260705170530_262860e3e63cb08f00ce53b80783a51a.webp\" alt=\"图片\" data-src=\"https://image.jido.dev/20260705170530_9a855f2.png\" data-ratio=\"1\" data-type=\"png\" data-w=\"232\" data-imgfileid=\"100417916\" data-aistatus=\"1\" data-original-style=\"margin:0px auto;padding:0px;width:89px;height:89px;\" data-index=\"9\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>同时，Muse Spark当前的版本也即将更新，在编程能力和智能体方面将取得重大提升。</p>\n  <p>当用户问Meta什么时候能推出与Claude Opus旗鼓相当的模型时，王表示：</p>\n  <blockquote>\n   <p>很快就会了！</p>\n  </blockquote>\n  <p>（小王你别说了，你倒是发呀）</p>\n  <p>说到底，Meta的AI雄心一直围绕着一个简单目标展开：</p>\n  <p><strong>追上OpenAI、Anthropic和Google。</strong></p>\n  <p>为此，小扎没少砸钱。芯片、数据中心、人才，几乎样样都按最高规格投入。</p>\n  <p>但问题是，钱砸下去了，Meta还没能真正说服开发者和客户，让他们相信自家模型已经站上行业最前沿。</p>\n  <p>当模型进度无法立刻兑现，算力就成了最容易被华尔街理解的资产。</p>\n  <p>因为GPU和数据中心至少可以被定价。</p>\n  <p>这些资源可以出租，可以托管模型，可以卖API，可以服务广告主，可以做AI agent SaaS，也可以在内部继续提升广告推荐系统。</p>\n  <p>就好比，原本Meta是在向市场讲一个很远的故事：</p>\n  <blockquote>\n   <p>相信我，我们会做出超级智能。</p>\n  </blockquote>\n  <p>但现在这故事听起来近多了：</p>\n  <blockquote>\n   <p>就算超级智能没那么快出来，这些GPU也不是沉没成本。</p>\n  </blockquote>\n  <p>当然，卖算力不代表Meta放弃自研模型。<strong>小扎的Plan A依然是超级智能</strong>。</p>\n  <p>继续抢人，继续堆卡，继续训练更大的模型，继续追赶御三家。</p>\n  <p>在追求ASI的路上，小扎永不言败！</p>\n  <p>只不过，前沿模型竞争的不确定性太高，中途总得难免妥协亿下下~</p>\n  <p>参考链接：\n   <br>\n   [1]https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be\n   <br>\n   [2]https://www.bloomberg.com/news/articles/2026-07-01/meta-is-building-a-cloud-business-to-sell-excess-ai-compute</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Meta 因自研 AI 模型进展缓慢，计划将庞大的 AI 基础设施开放给外部客户，通过出售 GPU 算力实现盈利，此举引发股价大涨并重塑市场格局。",
+  "oneSentenceSummary": "Meta 因自研 AI 模型进展缓慢，计划将庞大的 AI 基础设施开放给外部客户，通过出售 GPU 算力实现盈利，此举引发股价大涨并重塑市场格局。",
+  "summary": "文章报道 Meta 在自研模型多次受挫后，开始转向基础设施变现，计划推出 Meta Compute 业务，将数据中心和 GPU 算力租赁给外部客户。文章引用彭博社和 SemiAnalysis 的数据，指出 Meta 已签下近 10GW 的算力交易，仅前六个月就超过 5GW。业务模式包括 neocloud 租赁、托管第三方模型（如与 Anthropic 谈判接入 Claude），以及构建类似 Bedrock 的模型服务。分析师认为，即使模型未达预期，这些 GPU 资产也能为 Meta 带来高达百亿美元的年收入。资本市场迅速反应：Meta 股价大涨近 9%，而 CoreWeave 等纯算力云厂商遭抛售。文章还分析了 Meta 高额资本开支（2026 年指引 1250-1450 亿美元）与模型进度（Muse Spark、Watermelon 尚未重返第一梯队）之间的矛盾，解释了转向卖铲子的底层逻辑。",
+  "mainPoints": [
+    {
+      "point": "Meta 因自研模型进展缓慢，转向出售 AI 基础设施。",
+      "explanation": "Llama 系列开源但难以直接变现，Muse Spark 和 Watermelon 未能确立领先地位，而资本开支已超千亿美元，倒逼 Meta 将 GPU 视为可定价资产出租而非沉没成本。"
+    },
+    {
+      "point": "Meta 拥有庞大的算力储备，可灵活调配给外部客户。",
+      "explanation": "仅 2026 年上半年就签下超 5GW 容量，在建数据中心园区达 2.5GW，从 2024 年初至今相关交易接近 10GW，为卖算力提供充足底牌。"
+    },
+    {
+      "point": "托管第三方模型是 Meta 算力变现的关键路径。",
+      "explanation": "Meta 正与 Anthropic 谈判获得 Claude 私有实例，未来可像 Amazon Bedrock 一样提供 Claude-as-a-service，既能内部替代被限制的 Gemini，又能对外销售并结合广告平台构建垂直 SaaS。"
+    },
+    {
+      "point": "卖算力比卖模型更容易被华尔街理解。",
+      "explanation": "当模型竞争不确定性高时，可定价的 GPU 资产提供直接营收和高利润率，消息公布后股价大涨近 9%，表明资本市场认可这一商业逻辑。"
+    }
+  ],
+  "keyQuotes": [
+    "模型可以慢，GPU 必须赚。",
+    "就算超级智能没那么快出来，这些 GPU 也不是沉没成本。",
+    "Meta 可以把 Claude 这类第三方模型部署在自己的基础设施上，再打包卖给企业客户。"
+  ],
+  "tags": [
+    "商业策略",
+    "AI商业化",
+    "云计算",
+    "数据中心",
+    "模型竞争"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 80,
+  "wordCount": 2352,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783261831000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-05 22:30:31"
+}

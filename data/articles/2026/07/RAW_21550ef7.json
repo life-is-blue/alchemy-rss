@@ -1,0 +1,44 @@
+{
+  "id": "RAW_21550ef7",
+  "title": "为什么这段 CUDA 的并行前缀算法不会数据竞争",
+  "url": "https://www.v2ex.com/t/1225136#reply0",
+  "date": "2026-07-05 23:32:03",
+  "author": "rungo",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown_body\">\n   <p>比如在 iter=1 这一轮的时候，同时会写入和读取 sum_buf[1]</p>\n   <pre><code class=\"language-python\">naive_ker = SourceModule(\"\"\" \n                         __global__ void naive_prefix(double *vec, double *out) \n                         {  \n                             __shared__ double sum_buf[1024];   \n                             int tid = threadIdx.x;   \n                             sum_buf[tid] = vec[tid]; \n                               \n                             int iter = 1;  \n                             for (int i=0; i &lt; 10; i++)  \n                             {  \n                                 __syncthreads();  \n                                 if (tid &gt;= iter )  \n                                 {  \n                                     sum_buf[tid]= sum_buf[tid] + sum_buf[tid - iter];   \n                                 }   \n                                 iter *= 2;  \n                             }  \n                             __syncthreads(); \n                             out[tid] = sum_buf[tid];  \n                             __syncthreads();  \n                         }     \n                         \"\"\") \n naive_gpu = naive_ker.get_function(\"naive_prefix\")\n</code></pre>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文通过分析 CUDA 并行前缀和算法中的 __syncthreads() 同步机制与线程索引条件，解释了为何看似存在读写冲突的代码实际上没有数据竞争。",
+  "oneSentenceSummary": "本文通过分析 CUDA 并行前缀和算法中的 __syncthreads() 同步机制与线程索引条件，解释了为何看似存在读写冲突的代码实际上没有数据竞争。",
+  "summary": "文章针对一段 CUDA 并行前缀和（prefix sum）的核函数代码，解答了关于其为何不存在数据竞争的疑问。作者指出，代码中的 __syncthreads() 屏障确保了同一 warp 内所有线程在进入下一轮迭代前，都已完成当前轮的读写操作。同时，`if (tid >= iter)` 条件保证了在每一轮迭代中，读取操作（`sum_buf[tid - iter]`）所访问的元素，其值已在上一轮迭代中被确定且不会被当前轮的任何线程写入。这两个机制共同作用，消除了数据竞争的可能性。",
+  "mainPoints": [
+    {
+      "point": "__syncthreads() 是避免数据竞争的关键同步屏障。",
+      "explanation": "该函数确保 block 内所有线程都执行到此处后，才能继续向下执行，从而保证了上一轮迭代的写入操作全部完成，下一轮的读取操作看到的是最新值。"
+    },
+    {
+      "point": "线程索引条件 `if (tid >= iter)` 从逻辑上隔离了读写冲突。",
+      "explanation": "该条件保证了在每一轮迭代中，只有索引大于等于 `iter` 的线程会进行写入，而它们读取的 `sum_buf[tid - iter]` 位置，其索引必然小于 `iter`，这些位置的值在本轮迭代中不会被任何线程修改。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "CUDA",
+    "并行计算",
+    "GPU 编程",
+    "算法",
+    "数据竞争"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 80,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783265523000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-05 23:32:03"
+}

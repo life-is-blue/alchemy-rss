@@ -1,0 +1,51 @@
+{
+  "id": "RAW_98c1aff1",
+  "title": "编译器与语言设计导论",
+  "url": "https://dthain.github.io/books/compiler/",
+  "date": "2026-07-05 19:54:16",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"wrapper\">\n   <section>\n    <p>This is a free online textbook: you are welcome to access the chapter PDFs directly below. If you prefer to hold a real book, you can also purchase a hardcover or paperback below. The textbook and materials have been developed by <a href=\"https://dthain.github.io/books/compiler/dthain.github.io\">Prof. Douglas Thain</a> as part of the CSE 40243 compilers class at the University of Notre Dame. Join our <a href=\"https://groups.google.com/a/nd.edu/forum/#!forum/compilerbook-list\">mailing list</a> to receive occasional announcements of new editions and other updates.</p>\n    <blockquote>\n     <p>A compiler translates a program written in a high level language into a program written in a lower level language. For students of computer science, building a compiler from scratch is a rite of passage: a challenging and fun project that offers insight into many different aspects of computer science, some deeply theoretical, and others highly practical. This book offers a one semester introduction into compiler construction, enabling the reader to build a simple compiler that accepts a C-like language and translates it into working X86 or ARM assembly language. It is most suitable for undergraduate students who have some experience programming in C, and have taken courses in data structures and computer architecture.</p>\n    </blockquote>\n    <table>\n     <tbody>\n      <tr>\n       <td valign=\"middle\"><img src=\"https://dthain.github.io/books/compiler/frontcover-2e.jpg\" alt=\"Book Cover (2nd edition)\"></td>\n       <td></td>\n       <td valign=\"top\">\n        <p>Douglas Thain,\n         <br>\n         <b>Introduction to Compilers and Language Design</b>,\n         <br>\n         2nd edition, 2020. (Revision Date: January 15, 2021)\n         <br>\n         <a href=\"http://compilerbook.org\"><code>http://compilerbook.org</code></a>\n         <br></p>\n        <p>Paperback ISBN: 979-8-655-18026-0\n         <br></p>\n        <p></p>\n        <div class=\"button\">\n         <a href=\"https://www.amazon.com/Introduction-Compilers-Language-Design-Second/dp/B08BFWKRJH\"><b>Buy Paperback via Amazon</b></a>\n        </div>\n        <p></p>\n       </td>\n      </tr>\n     </tbody>\n    </table>\n    <h2>Introduction to Compilers and Language Design, 2nd Edition</h2>\n    <blockquote>\n     <p>The author grants permission to download, print, and use these PDFs for personal and academic use. Commercial printing or distribution is prohibited. Instead of copying PDFs locally, please point students to this page (compilerbook.org) so that they can access the latest version.</p>\n    </blockquote>\n    <table>\n     <tbody>\n      <tr>\n       <td>Complete Book</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/compilerbook.pdf\">Single PDF Download</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;0</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter0.pdf\">Front Matter</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;1</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter1.pdf\">Introduction</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;2</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter2.pdf\">A Quick Tour</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;3</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter3.pdf\">Scanning</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;4</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter4.pdf\">Parsing</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;5</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter5.pdf\">Parsing in Practice</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;6</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter6.pdf\">The Abstract Syntax Tree</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;7</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter7.pdf\">Semantic Analysis</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;8</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter8.pdf\">Intermediate Representation</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;9</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter9.pdf\">Memory Organization</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;10</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter10.pdf\">Assembly Language</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;11</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter11.pdf\">Code Generation</a></td>\n      </tr>\n      <tr>\n       <td>Chapter&nbsp;12</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapter12.pdf\">Optimization</a></td>\n      </tr>\n      <tr>\n       <td>Appendix&nbsp;A</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapterA.pdf\">Sample Course Project</a></td>\n      </tr>\n      <tr>\n       <td>Appendix&nbsp;B</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapterB.pdf\">The B-Minor Language</a></td>\n      </tr>\n      <tr>\n       <td>Appendix&nbsp;C</td>\n       <td><a href=\"https://dthain.github.io/books/compiler/chapterC.pdf\">Coding Conventions</a></td>\n      </tr>\n     </tbody>\n    </table>\n    <p><b>Code Resources.</b> The <a href=\"http://github.com/dthain/compilerbook-examples\">compilerbook-examples</a> github repository contains additional resources that correspond to the book, including several scanners and parsers, a starter code structure for the project compiler, and sample test cases for each stage of the scanner, parser, typechecker, and code generator.</p>\n    <p><b>Errata.</b> Found a typo or mistake? Please send an email to the author `dthain@nd.edu` with the title \"Compiler Book Errata\" and I'll be happy to correct it and acknowledge you in the next edition.</p>\n   </section>\n  </div>\n  <!--[if !IE]><script>fixScale(document);</script><![endif]-->\n </body>\n</html>",
+  "aiSummary": "这是一本免费在线教材的主页，教授如何从零开始构建编译器，提供完整 PDF 下载和购买选项。",
+  "oneSentenceSummary": "这是一本免费在线教材的主页，教授如何从零开始构建编译器，提供完整 PDF 下载和购买选项。",
+  "summary": "该页面介绍了 Douglas Thain 教授的《编译器与语言设计导论》。它提供所有章节的免费 PDF，涵盖从扫描、解析到代码生成与优化等主题。本书面向具备 C 语言、数据结构和架构基础的本科生，引导他们为类 C 语言构建面向 X86/ARM 汇编的编译器。网站还包含示例课程项目、GitHub 上的代码示例以及勘误机制。",
+  "mainPoints": [
+    {
+      "point": "这是关于编译器与语言设计的免费在线教材主页。",
+      "explanation": "本书涵盖从零开始为类 C 语言构建编译器，目标平台为 X86/ARM 汇编，并以免费 PDF 形式提供。"
+    },
+    {
+      "point": "本书提供免费 PDF 或可购买的印刷版。",
+      "explanation": "作者允许 PDF 的个人/学术使用；禁止商业印刷。平装版可通过 Amazon 购买。"
+    },
+    {
+      "point": "网站提供完整章节列表、代码资源和勘误。",
+      "explanation": "章节涵盖扫描、解析、AST、语义分析、代码生成、优化等。GitHub 仓库包含示例和入门代码。"
+    }
+  ],
+  "keyQuotes": [
+    "编译器将用高级语言编写的程序翻译为用低级语言编写的程序。",
+    "对于计算机科学的学生而言，从零开始构建编译器是一种成人礼：一个既具挑战性又有趣的项目，能让人洞察计算机科学的诸多不同方面，有些深具理论性，另一些则高度实践。"
+  ],
+  "tags": [
+    "编译器设计",
+    "语言设计",
+    "免费教材",
+    "计算机科学教育",
+    "开放教育资源"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 79,
+  "wordCount": 407,
+  "domain": "dthain.github.io",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783252456000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-05 19:54:16"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_cbd5172d",
+  "title": "Jaade：一个让 coding agent「跑得见、管得住」的 macOS 桌面工作台",
+  "url": "https://www.v2ex.com/t/1225130#reply0",
+  "date": "2026-07-05 22:51:45",
+  "author": "derekw",
+  "siteName": "V2EX",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown_body\">\n   <p>大家好，来分享一个我一直在做的桌面 app —— <strong>Jaade</strong>（<em>Just Another Agentic Development Environment</em>）。</p>\n   <p>一句话介绍：它是一个 <strong>macOS 本地桌面工作台</strong>，把 coding agent 、终端、文件、版本控制 收进一个可检视、可控制的界面里。目前支持 <strong>Claude Code 、Codex 、OpenCode 、Cursor</strong> 四种 agent ，每个会话都能单独选模型、推理强度（ reasoning effort ）和权限模式。</p>\n   <p><img alt=\"Jaade 工作台：左边是会话列表，中间是正在进行的工作，右边是文件和工具\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://jaade.app/docs/images/home-workspace.png\"></p>\n   <h2>为什么做这个？</h2>\n   <p>现在的 coding agent 很能干活，但过程往往是个<strong>黑盒</strong>：你丢一个 prompt 进去，它在某个 终端里哗啦哗啦跑一堆命令、改一堆文件，跑完你才回头一个个 review 。</p>\n   <p>Jaade 想解决的就是这件事——<strong>让 agent 干活的整个过程保持可见、可控</strong>：</p>\n   <ul>\n    <li><strong>更多可视性</strong>：每次 agent 运行、每个终端、每个定时任务，都是一个可以点开检视的 session ，而不是消失在后台。</li>\n    <li><strong>更好的交接</strong>：在会话开始<em>之前</em>就把模型、推理强度、权限模式、Plan 模式配好。</li>\n    <li><strong>上下文触手可及</strong>：文件、分支、diff 、review 工具都在右侧，随时一键调出。</li>\n    <li><strong>可恢复的历史</strong>：每个会话都保留完整的 prompt 、transcript 、模型和改动文件，随时接着跑。</li>\n    <li><strong>开发者始终是决策者</strong>：每一步改动落地前你都能审。</li>\n   </ul>\n   <h2>核心功能</h2>\n   <h3>1. 多 agent 会话 &amp; Chat</h3>\n   <p>四种 agent 可以并排跑，各自独立配置。会话里不只是聊天，还带 plan / todo 、connectors 等卡片，把 agent 当前在想什么、要做什么摊开给你看。</p>\n   <p><img alt=\"正在运行的 agent 会话\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://jaade.app/docs/images/sessions-chat.png\"></p>\n   <h3>2. Session Overview 可视化画布</h3>\n   <p>这是我个人最喜欢的部分：把一整次 agent 运行渲染成一张<strong>可缩放的思维导图</strong>——每个 turn 、 工具调用、命令、文件编辑都是节点，支持实时展开，也能从历史记录回看。跑长任务时特别有用。</p>\n   <p><img alt=\"Session Overview 思维导图画布\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://jaade.app/docs/images/sessions-overview.png\"></p>\n   <h3>3. 工作区：终端 / 文件 / Git 审查</h3>\n   <p>真正的 PTY 终端（可分屏、带主题和搜索）、可编辑的文件查看器（ markdown/diff 预览、Vim 模式、LSP 诊断），以及完整的 Git 审查工具——看 diff 、按需 stage 、解决冲突、提交，全程 不用离开这个窗口。</p>\n   <p><img alt=\"分屏终端与文件视图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://jaade.app/product/terminal-files-light.webp\"></p>\n   <p><img alt=\"Source Control 面板：staged 改动和 diff\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://jaade.app/docs/images/source-control.png\"></p>\n   <h3>4. Projects 编排 + 任务 DAG</h3>\n   <p>把相关会话归到一个 Project 里，由一个 master 会话通过<strong>任务依赖图（ DAG ）</strong>去协调多个 worker ，适合把一个大任务拆开并行推进。</p>\n   <p><img alt=\"Project 详情里的任务 DAG 图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://jaade.app/docs/images/projects-dag.png\"></p>\n   <h3>5. Work Summary 用量分析</h3>\n   <p>会话数、token 用量曲线、贡献、commit 活动都能看，还能横向对比不同 agent 在一段时间里的 活跃度。</p>\n   <p><img alt=\"Work Summary 仪表盘：活动与 token 图表\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://jaade.app/docs/images/work-summary.png\"></p>\n   <h2>其他一些亮点（就不逐个配图了）</h2>\n   <ul>\n    <li><strong>Scheduled Tasks</strong>：可重复的 prompt ，支持手动 / cron / 间隔触发，每个都有健康状态。</li>\n    <li><strong>Skills 、Plugins &amp; MCP</strong>：在一个界面里安装管理 Claude 插件、Codex 插件、Agent Skills 和 MCP server 。</li>\n    <li><strong>Mini Apps</strong>：在 Jaade 内部直接构建并运行小型、可 git 版本化的 app ，还能接到 agent 上。</li>\n    <li><strong>Computer / Browser Use</strong>：让 agent 驱动你的 macOS 桌面或真实 Chrome ，按对话粒度授权， 控制权始终显式。</li>\n    <li><strong>Memory</strong>：从会话里沉淀持久事实，注入到之后的运行里。</li>\n   </ul>\n   <h2>技术栈</h2>\n   <p>Electron + React 19 + TypeScript （<code>electron-vite</code> 构建），终端走 <code>node-pty</code>，本地数据用 <code>better-sqlite3</code>，agent 通过官方 <code>@anthropic-ai/claude-agent-sdk</code>、Codex app-server 、 OpenCode SDK 和 Cursor SDK 驱动。所以它用起来更像一个原生桌面工作台。</p>\n   <h2>下载 &amp; 链接</h2>\n   <ul>\n    <li>官网 / 下载： <a href=\"https://jaade.app\" rel=\"nofollow\">https://jaade.app</a> （目前<strong>仅 macOS</strong>，.dmg 已签名并公证）</li>\n    <li>GitHub： <a href=\"https://github.com/jaadehq/jaade-public\" rel=\"nofollow\">https://github.com/jaadehq/jaade-public</a></li>\n   </ul>\n   <p>第一次打开是空工作区，指向一个项目文件夹就能开始跑第一个会话了。</p>\n   <h2>最后</h2>\n   <p>精力有限，可能有些功能测试的不太充分。但是核心功能都比较稳定了，现在已经是我的主力开发工具。</p>\n   <p>如果你平时也在终端里跑 Claude Code / Codex ，欢迎下载试试，也非常想听听大家的反馈和拍砖 🙏</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Jaade 是一个 macOS 本地桌面工作台，将 Claude Code、Codex 等 coding agent 的会话、终端、文件与版本控制整合进一个可视可控的界面，解决 agent 工作过程黑盒化的问题。",
+  "oneSentenceSummary": "Jaade 是一个 macOS 本地桌面工作台，将 Claude Code、Codex 等 coding agent 的会话、终端、文件与版本控制整合进一个可视可控的界面，解决 agent 工作过程黑盒化的问题。",
+  "summary": "作者介绍了一款名为 Jaade 的 macOS 桌面应用，旨在解决当前 coding agent 工作过程不透明、难以管控的问题。Jaade 将 Claude Code、Codex、OpenCode、Cursor 四种 agent 集成到一个统一的工作台中，提供多会话管理、可视化思维导图式的 Session Overview、内置终端与 Git 审查、项目任务 DAG 编排以及用量分析等功能。文章详细阐述了产品的设计理念——让开发者始终作为决策者，在 agent 的每一步操作落地前都能进行审查，并提供了丰富的功能截图与下载链接。作者表示该工具已成为其主力开发环境。",
+  "mainPoints": [
+    {
+      "point": "当前 coding agent 的工作过程如同黑盒，缺乏可见性与可控性。",
+      "explanation": "作者指出，agent 在后台运行大量命令和文件修改，开发者只能在事后审查，Jaade 的设计初衷就是让整个过程保持透明。"
+    },
+    {
+      "point": "Jaade 通过统一工作台整合了 agent 会话、终端、文件与版本控制。",
+      "explanation": "应用将多 agent 会话管理、真正的 PTY 终端、文件编辑器与 Git 审查工具集成，让开发者无需切换窗口即可完成所有操作。"
+    },
+    {
+      "point": "Session Overview 将 agent 运行过程渲染为可缩放的思维导图。",
+      "explanation": "这是产品的亮点功能，将每次 agent 运行的每个步骤、工具调用和文件编辑都可视化为节点，便于实时监控和历史回溯。"
+    },
+    {
+      "point": "开发者始终是决策者，每一步改动落地前都能审查。",
+      "explanation": "Jaade 的设计哲学强调人的主导地位，通过显式的权限控制和审查机制，确保 agent 的行为在开发者的监督下进行。"
+    }
+  ],
+  "keyQuotes": [
+    "现在的 coding agent 很能干活，但过程往往是个黑盒：你丢一个 prompt 进去，它在某个终端里哗啦哗啦跑一堆命令、改一堆文件，跑完你才回头一个个 review。",
+    "开发者始终是决策者：每一步改动落地前你都能审。"
+  ],
+  "tags": [
+    "AI 编程",
+    "AI Agent",
+    "开发者工具",
+    "AI 工作流",
+    "Vibe Coding"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1147,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783263105000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-05 22:51:45"
+}

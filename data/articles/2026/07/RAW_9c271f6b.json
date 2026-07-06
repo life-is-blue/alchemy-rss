@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9c271f6b",
+  "title": "Browser Relay：将本机 Chrome 连接给任意 AI Agent 的开源工具",
+  "url": "https://www.v2ex.com/t/1225086#reply2",
+  "date": "2026-07-05 17:22:26",
+  "author": "reliefe",
+  "siteName": "V2EX",
+  "content": null,
+  "aiSummary": "本文介绍了一个名为 Browser Relay 的开源项目，它通过 Chrome 扩展和本地服务，让任意 AI Agent 能够直接操作你带有完整登录态的真实浏览器。",
+  "oneSentenceSummary": "本文介绍了一个名为 Browser Relay 的开源项目，它通过 Chrome 扩展和本地服务，让任意 AI Agent 能够直接操作你带有完整登录态的真实浏览器。",
+  "summary": "作者指出现有方案（如 Playwright 或云浏览器）无法让 AI Agent 在保留用户登录态、Cookie 和扩展的环境下操作浏览器。为此，他开发了 Browser Relay，通过「Chrome 扩展 + 本地 Relay Server」的架构，将本机 Chrome 标签页的能力通过 HTTP API 或 MCP 协议暴露给任意 AI Agent（如 Claude Code、Cursor 等）。文章介绍了其核心功能（读取网页内容、点击、输入、执行 JS 等）和简单的三步安装流程，并提及了近期新增的远程控制、中心化 Relay 转发和日志读取等功能。",
+  "mainPoints": [
+    {
+      "point": "现有浏览器自动化方案无法复用本机浏览器的完整登录态与环境。",
+      "explanation": "Playwright/Puppeteer 启动的是全新环境，云浏览器则完全脱离本地，导致需要登录态的操作无法由 Agent 完成。"
+    },
+    {
+      "point": "Browser Relay 通过 Chrome 扩展 + 本地服务桥接 Agent 与真实浏览器。",
+      "explanation": "它利用 CDP 协议控制标签页，并通过 HTTP API 和 MCP 向 Agent 暴露读取、点击、输入、执行 JS 等能力，同时保留所有本地状态。"
+    },
+    {
+      "point": "项目提供了对多种主流 AI 编程 Agent 的开箱即用 Skills 支持。",
+      "explanation": "通过 `browser-relay skill` 命令可一键为 Claude Code、Cursor、Codex 等安装技能包，降低集成门槛。"
+    },
+    {
+      "point": "近期更新增加了基于中心 Relay 服务的远程控制方案。",
+      "explanation": "为解决内网穿透和 IP 不稳定问题，采用中心化 Relay 转发，并增加了远程读取控制台/网络日志、鉴权管理等功能。"
+    }
+  ],
+  "keyQuotes": [
+    "一言以蔽之，现在还没有能让 Agent 操作我的浏览器的方案",
+    "有些网站就是只有你本机 Chrome 里才是完整可用的：cookie 、localStorage 、扩展、登录态，全都在里面。"
+  ],
+  "tags": [
+    "AI Agent",
+    "浏览器自动化",
+    "开发者工具",
+    "开源项目",
+    "MCP 协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 781,
+  "domain": "v2ex.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_17e31348",
+  "sourceName": "V2EX",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783243346000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-05 17:22:26"
+}
