@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-07 10:03:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-07 15:29:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [语言模型中的全局工作空间](https://www.anthropic.com/research/global-workspace)
 
-2026-07-06 22:12:00 | 标签: LLM, 可解释性, 全局工作空间, AI神经科学, 内部表征
-
-> 本文总结了 Anthropic 发表的一篇新研究论文，探讨了在 Claude 中发现"J 空间"的问题——一组内部神经表征，其特性类似于人类认知中的全局工作空间理论。受神经科学启发，研究人员使用了一种名为"雅可比透镜"的技术来识别 Claude 激活值中的模式，这些模式处于能够影响其输出的位置。J 空间具有五个功能特征：Claude 在被询问时可以报告其内容（例如在默默选择后说出"足球"）；它可以根据请求进行调控（例如在复制文本时将"橙色"保持在心中）；它使用这些表征进行内部推理（例如多步数学问题，中间步骤出现在 J 空间中并对答案产生因果影响）；这些表征可以灵活地跨不同任务使用（例如将"法国...
+2026-07-06 22:12:00
 
 
 
 ### [腾讯混元-Hy3-发布：Agent-能力和产品体验跃升](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497981&idx=1&sn=9d5226192f9a29ec5f0c6796fa34ac4f)
 
-2026-07-06 15:11:00 | 标签: LLM, AI Agent, 腾讯混元, 模型发布, 开源
-
-> 文章宣布腾讯混元 Hy3 模型正式发布。相比 4 月的 preview 版本，Hy3 在后训练质量、RL 算力规模上大幅提升，在软件开发、办公生产、金融建模等生产力任务上显著进步，内部 270 位专家盲测均分优于 GLM5.1。在体验层面，输出格式稳定性、工具调用可靠性增强，幻觉率从 12.5% 降至 5.4%，常识错误率从 25.4% 降至 12.7%，多轮意图保持能力提升。各业务线实测数据：WorkBuddy 任务解决率从 72% 升至 90%，元宝 Agent 文档生成综合分+7%，ima 知识库推理质量净提升近 19%，微信读书标签标注准确率提高 14.1%。Hy3 已以 Apache...
+2026-07-06 15:11:00
 
 
 
@@ -4998,9 +4994,7 @@
 
 ### [为什么-Agent-时代，大家都在做-CLI？](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509924&idx=1&sn=c2fae18bbccf057f1ed4664fee85b1e7)
 
-2026-07-06 18:08:00 | 标签: AI Agent, CLI, MCP, AI友好, 产品设计
-
-> 文章从 CLI 的四十年演进切入，指出 Agent 时代 CLI 重新崛起不是因为复古，而是因为 CLI 与 LLM 天然同构：text-in/text-out、自描述（--help 即可上手）、符合 Unix 管道组合哲学、原生支持并行、上下文开销低。作者进一步将未来产品划分为面向人、面向 Agent 和人机协作三层，认为协作界面的可观测性——计划可观测性与过程可观测性——是解决信任问题的关键。对于 CLI、MCP、SKILL 三者，作者提出分层模型：CLI 是指令层（食材），MCP 是工具层（预制菜），SKILL 是技能层（菜谱），三者应根据场景灵活切换而非二选一。最后总结出 AI 友好的...
+2026-07-06 18:08:00
 
 
 
@@ -12884,169 +12878,127 @@
 
 ### [Longview-发布关于数字心智的新资助机会-—-—-LessWrong](https://www.lesswrong.com/posts/CDWu3hwsnXEKTpPK6/new-funding-opportunity-on-digital-minds-from-longview)
 
-2026-07-07 00:30:38 | 标签: AI 意识, AI 感知, AI 伦理, AI 治理, AI 安全
-
-> 该帖子分享了 Longview Philanthropy 发布的关于数字心智的提案征集请求（RFP），重点审视 AI 系统可能具备的意识、感知、道德地位和法律地位，以及社会可能的反应。文中列出了具体的技术研究方向：效价与偏好、LLMs 的内省与自报告，以及交易/代理互动。同时，还强调了对社会反应机制的兴趣，例如 if-then 承诺、第三方审计员、遵守法律的 AI、新型公司结构、研究议程、公民议会、专家小组、逐步削弱以及宗教传统。资助渠道包括用于应用工作的资助、面向博士/法学/同等学历持有者的研究奖学金，以及面向该领域新人的职业发展奖学金。申请截止日期为 星期五 2026 年 7 月 10 日...
+2026-07-07 00:30:38
 
 
 
 ### [平局训练可使经过-DPO/RLHF-训练的-AI-泛化能力更强-—-—-LessWrong](https://www.lesswrong.com/posts/i2qTghrkyY9xdcCFq/tie-training-can-make-dpo-rlhf-trained-ais-generalize-better)
 
-2026-07-06 23:25:21 | 标签: AI 对齐, 偏好优化, DPO, RLHF, 虚假相关
-
-> 作者认为，像 DPO 和 RLHF 这样的偏好优化方法必然会导致 AI 模型在训练数据中所有与真实价值相关的特征上分配非零权重，即使偏好标签正确且数据无限。这会导致在部署时那些虚假相关关系断裂时出现泛化错误。为应对这一问题，他们提出了平局训练：在数据集中加入真实价值相等的动作对（平局），并使用随机或双向标签在这些配对上进行训练。理论分析表明，平局训练能够按平局比例减少虚假特征的权重，同时保持因果特征的正确顺序。在线性模型、神经网络以及 Llama‑3.2‑1B‑Instruct 酒店推荐基准上的实验证实，平局训练显著提升了对抗性/OOD 准确率（例如，神经网络从 ~25% 提升至 ~70%，L...
+2026-07-06 23:25:21
 
 
 
 ### [Fable-5-成许愿池了？回归不到五天，网友玩出花了](https://mp.weixin.qq.com/s?__biz=MjM5NjgzMzkwMQ==&mid=2653651220&idx=1&sn=9ec8df445dcc3fc3f878ca41813eb6c8)
 
-2026-07-06 22:43:00 | 标签: Fable 5, AI 编程, AI 应用开发, 游戏开发, AI 生成
-
-> 本文梳理 Fable 5 回归不到五天里网友创造的有趣案例，涵盖游戏复刻（《命令与征服》移植 iPhone、《部落冲突》复刻、3D RTS 游戏、地铁跑酷类 3D 跑酷）、App 开发（海洋生物展示应用）以及电影级营销网站。每个案例均描述实现过程、所用成本和最终效果，突出 Fable 5 将传统以周计的项目压缩到小时级或单次 prompt 完成。作者由此感慨「执行力不再稀缺，真正稀有的是想象力」，并顺带推广猎豹的 AI Native 组织咨询服务。
+2026-07-06 22:43:00
 
 
 
 ### [小语言模型赋能下一代智能体的-5-种方式](https://www.kdnuggets.com/5-ways-small-language-models-are-powering-next-gen-agents)
 
-2026-07-06 20:00:53 | 标签: 小语言模型, AI 智能体, 边缘计算, 工具调用, 异构系统
-
-> 文章挑战了模型越大智能体越好的传统假设，提供了证据表明小语言模型（SLM）正日益成为 2026 年生产环境智能体的核心动力。它概述了五个关键应用：SLM 擅长解析和工具调用等重复性专业任务；它们支持端侧推理，显著降低延迟（几十毫秒 vs 数百毫秒）；针对特定工具模式进行微调能以极低成本实现超过 90% 的准确率；异构架构将前沿模型作为规划者与作为专业工作者的 SLM 配对，在保持性能的同时降低约 40% 的成本；并且 SLM 将敏感数据保留在本地，以满足合规性关键环境的需求。文章引用了 NVIDIA 的研究，显示 SLM 在量化为 4-bit 精度时仍能保持 95% 的基准性能，并引用了现实世...
+2026-07-06 20:00:53
 
 
 
 ### [别再按平均分给智能体配置排名了](https://towardsdatascience.com/stop-ranking-agent-configs-by-average-score/)
 
-2026-07-06 20:00:00 | 标签: AI 智能体, 评估, LLM, 提示词工程, 机器学习
-
-> 本文挑战了当前常见的智能体配置（模型、提示词、工具）评估方式——仅基于孤立示例计算平均分。作者指出，这种分数忽略了各组件之间的交互效应，也无法体现每组对比中竞争者的强弱。作者以发票 JSON 提取任务为例，使用 8 个因子配置，采用“最好-最差标度”（MaxDiff）并拟合带效应编码的 Plackett-Luce 模型，估算主效应和交互效应的效用值。结果显示，最大的信号来自三向交互效应（模型 × 提示词 × 工具），而非任何单一组件。文章给出了具体的部署决策（配置 7 胜出，配置 4 是可行替代，配置 1 值得研究，配置 5 应被淘汰），并讨论了如何将评估结果反馈到智能体开发循环中。最后指出了...
+2026-07-06 20:00:00
 
 
 
 ### [极简方案刷新扩散模型推理纪录，阿里清华论文入选-ICML-杰出论文](https://www.qbitai.com/2026/07/444721.html)
 
-2026-07-06 18:33:45 | 标签: 扩散模型, 大语言模型, AI研究, 强化学习, ICML
-
-> 本文报道了阿里巴巴与清华大学合作的论文入选 ICML 2026 杰出论文，该论文首次质疑扩散语言模型（dLLM）中任意顺序生成的价值。研究发现，在数学、编程等推理任务中，任意顺序生成会导致模型绕过关键逻辑节点，使不确定性被消解（称为「熵退化」），从而损害推理能力。实证数据显示，在 HumanEval 上，从左向右顺序能解出而任意顺序不能的题目占 21.3%，反向仅 0.6%。团队提出的解决方案 JustGRPO 极为简单：在强化学习阶段强制模型从左到右生成，直接使用 GRPO 算法，无需复杂工程设计。该方案在 GSM8K 上达到 89.1%准确率，全面超越此前为 dLLM 设计的各种复杂强化学...
+2026-07-06 18:33:45
 
 
 
 ### [2026-新青年创投大会在沪举行：00-后登场，创投新周期开启](https://www.qbitai.com/2026/07/444049.html)
 
-2026-07-06 18:22:05 | 标签: 创业投资, 青年创业, AI, 硬科技, 具身智能
-
-> 本文报道了 2026 新青年创投大会，以「上场 It‘s Your Turn」为主题，呈现了创业邦发布的“30 Under 30+创业先锋”和“40 Under 40 投资人”榜单关键数据：创业者平均年龄 29.9 岁，00 后占比 8%，超九成拥有硕博学历；76.7%为首次创业，70%创业时间不超三年，2/3 企业已开展海外业务。AI 是青年创业最鲜明底色，86.7%创业方向与 AI 相关，其中具身智能占一半。投资人方面，83%重点关注 AI，75%聚焦智能制造，且持续“投早、投小、投科技”。大会还设置了三场播客 Live，围绕 AI 时代趋势、人生选择与投资判断展开对话，并设立了“有 pǔ...
+2026-07-06 18:22:05
 
 
 
 ### [腾讯-Hy3-开源：295B-MoE，激活-21B，工具调用错误恢复与多脚手架泛化显著提升](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247510370&idx=1&sn=dec6763dfcebad0d7fd5b854e9e3574b)
 
-2026-07-06 18:00:00 | 标签: LLM, MoE, 开源模型, 模型部署, AI Agent
-
-> 腾讯混元团队正式开源新一代大模型 Hy3，采用 Apache 2.0 协议。总参数量 295B，激活 21B，基于 preview 版本在 50 多个业务场景反馈上迭代。文章从智能体能力、产品体验、性能表现、本地部署四方面展开：在软件开发、办公生产、金融建模等任务上显著进步，内部专家盲测均分优于 GLM5.1；工具调用稳定性、跨脚手架泛化性大幅改善，幻觉率从 12.5%降至 5.4%，常识错误率从 25.4%降至 12.7%；多轮问题率从 17.4%降至 7.9%，MRCR 从 42.9%升至 75.1%。文中还提供了 WorkBuddy、元宝、ima 等内部产品接入后的实测数据，并附 vLL...
+2026-07-06 18:00:00
 
 
 
 ### [蔚来世界模型-OTA，70-万用户没人被留在旧版本](https://www.qbitai.com/2026/07/443868.html)
 
-2026-07-06 17:41:04 | 标签: 世界模型, 智能驾驶, AI商业化, 芯片设计, 群体智能
-
-> 蔚来汽车向超 70 万用户推送了最新版世界模型，覆盖两个品牌、四个平台、英伟达 Orin 与自研神玑芯片、多种传感器配置，所有用户获得同等更新，无“Lite”版本。文章深入分析了背后的技术体系：硬件层面，2022 年交付的 ET7 以 800 万像素摄像头、高线束激光雷达、四颗 Orin（超 1000TOPS）实现了超前配置；芯片层面，自研神玑 NX9031 基于对 Transformer 时代的预判，以 546GB/s 内存带宽为核心设计，优先解决“内存墙”问题；软件层面，自研 AI 编译器实现了部署效率的大幅提升，并从一开始就兼容 Orin 与自研芯片；数据层面，通过“群体智能”调度车端闲...
+2026-07-06 17:41:04
 
 
 
 ### [真·QQ-飞车！「电动版-F1」上海开赛，Gemini-在线解说](https://www.qbitai.com/2026/07/443867.html)
 
-2026-07-06 17:35:00 | 标签: AI Agent, 体育科技, 大模型应用, 自动驾驶, 智能竞技
-
-> 文章从 Gemini 入局 Formula E（电动方程式）直播解说切入，回顾了 FE 的创立起源——15 年前巴黎餐馆里 FIA 主席与欧盟官员的晚餐对话。随后介绍 FE 与 F1 不同的独特规则：Attack Mode（类似 QQ 飞车加速带）和已被废除的 Fan Boost（观众投票加速），强调 FE 鲜明的游戏化基因。重点部分详细展示了 Gemini 在 FE 中的三项具体应用：①直播解说，利用 LLM 实时分析比赛数据并给出洞察；②Driver Agent，基于 Google Cloud Gemini Enterprise Agent Platform，让车手通过对话查询赛车遥测数据...
+2026-07-06 17:35:00
 
 
 
 ### [在-Amazon-Bedrock-上运行-MiniMax-模型-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/run-minimax-models-on-amazon-bedrock/)
 
-2026-07-06 17:00:44 | 标签: Amazon Bedrock, MiniMax, LLM, 基础模型, AI 基础设施
-
-> Amazon Bedrock 现在支持三个 MiniMax M2 开放权重模型：M2、M2.1 和 M2.5，每个模型针对不同工作负载进行了训练。M2 擅长多语言和长上下文任务（100 万 tokens），M2.1 改进了推理和指令遵循能力，M2.5 则专为智能体原生执行而设计，通过强化学习在智能体脚手架上进行训练。所有模型均采用混合专家架构（总参数 230B，每个 token 活跃参数 10B），实现高效推理。本文介绍了如何通过两个端点访问它们：推荐的 bedrock-mantle 端点（兼容 OpenAI Chat Completions API）和 bedrock-runtime 端点（...
+2026-07-06 17:00:44
 
 
 
 ### [在-Amazon-SageMaker-HyperPod-上为-Amazon-Nova-部署多轮-RL-基础设施-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-amazon-sagemaker-hyperpod/)
 
-2026-07-06 16:58:13 | 标签: 多轮 RL, Amazon Nova, SageMaker HyperPod, 强化学习, LLM 训练
-
-> 文章解决了需要执行多步骤工作流的企业级智能体的训练缺口，标准 RLHF 在此方面存在不足。它介绍了多轮强化学习 (RL)，并描述了如何使用 Amazon Nova Forge 在 Amazon SageMaker HyperPod 上部署基础设施。该方案是事件驱动的：将数据集上传到 S3 会自动通过 Step Functions 触发训练。架构将长期存在的基础资源（VPC、EKS、HyperPod、ECS、S3、IAM、pipeline）与每次训练运行的临时资源（Nova Forge SDK 预置的 Lambda、SQS、DynamoDB、Fargate 奖励工作器）分离。提供了详细的部署说明...
+2026-07-06 16:58:13
 
 
 
 ### [通过-Amazon-SageMaker-AI-将基准测试和推荐结果流式传输到-MLflow-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/streaming-benchmark-and-recommendation-results-to-mlflow-with-amazon-sagemaker-ai/)
 
-2026-07-06 16:53:38 | 标签: Amazon SageMaker AI, MLflow, AI 基准测试, 推理优化, 实验跟踪
-
-> 本文宣布 Amazon SageMaker AI 现已支持将优化推理推荐任务和基准测试任务的结果直接流式传输到 SageMaker MLflow App 中。文中解释了此集成如何消除手动数据整合、提供长时间运行任务的实时可见性、维护完整可复现的审计跟踪记录，以及改善团队协作。技术演示包括设置环境变量、创建 MLflow App、配置 IAM 权限以及使用 MlflowConfig 提交基准测试和推荐任务的分步说明。代码示例演示了如何定义工作负载规格、配置输出到同一 MLflow 实验进行流式传输，以及跨不同并发级别并排比较结果。该集成仅限于 SageMaker 托管的 MLflow App，且...
+2026-07-06 16:53:38
 
 
 
 ### [模型不是企业的护城河，那什么才是？](https://www.qbitai.com/2026/07/443842.html)
 
-2026-07-06 16:17:34 | 标签: 企业AI, AI Agent, AI评测, 私有化评估, 智能资产
-
-> 文章从企业使用 AI 的普遍困惑出发，指出模型能力不是企业的护城河，真正的护城河在于私有化评估与可持续进化能力。引用衔远科技创始人周伯文的「泛化基础上的深度专业化」观点，以及微软 CEO 纳德拉的 Token Capital 概念，论证企业需要将专业能力沉淀为自有智能资产。文章重点介绍衔远科技团队发布的 EnterpriseClawBench 企业 Agent 评测基准，该基准从真实工作会话构建任务，揭示真实企业任务远未被 Agent 解决、Harness 与模型同样重要、Skill 注入需受评测约束三个反直觉事实。进而引出衔远大观 Frontis Horizon 的三层架构（ME 个人代理、...
+2026-07-06 16:17:34
 
 
 
 ### [我遇到了第一个真正想买的陪伴机器人！｜对话世博：越伴动力创始人【公路播客】](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649109700&idx=1&sn=1b25854f7cb3b1d8ffce910f2513d74a)
 
-2026-07-06 15:41:00 | 标签: 具身智能, AI产品与应用, 陪伴机器人, 情感交互, 机器人设计
-
-> 这是一期「公路播客」的完整文字实录，嘉宾是越伴动力创始人世博。他从大一就手搓 30 多款机器人，这次创业选择避开操作型机器人赛道，专注做情感陪伴型双足机器人「小伴」。文章深入讨论了产品设计的三大原则：陪伴不是讨好（不顺应所有指令，有独立情绪）、生命力不是可爱（注重内部意图和长期记忆）、少即是多（不堆砌功能）。小伴拥有自创的 12 音「外星语」体系，参照斯瓦希里语发音设计；全身 95%柔软材质，采用类硅胶外壳；通过端侧 1.7B 快脑+7B 慢脑实现 0.4 秒内交互延时，并配合云端 200B 模型做超长程记忆。世博还分享了创业时机、团队文化（No Excuse for Engineer）、家庭...
+2026-07-06 15:41:00
 
 
 
 ### [Sakana-AI-推出-Sakana-Translate：基于-Namazu-的日英中翻译工具，支持翻译、校对与问答三种模式](https://www.marktechpost.com/2026/07/05/sakana-ai-launches-sakana-translate/)
 
-2026-07-06 13:35:11 | 标签: AI 翻译, LLM, Namazu, 日语 NLP, AI 产品
-
-> Sakana AI 发布了 Sakana Translate，一款基于其 Namazu 模型系列、针对日语语言与文化进行适配的浏览器翻译产品。该工具通过三种集成模式实现日语、英语和中文之间的双向翻译：翻译（支持流式输出和约 5，000 字符处理）、校对（支持差异高亮，用于语气和语体调整）以及问答（针对细微差别和替代方案进行追问）。与通用翻译工具不同，Sakana Translate 专门针对日语的语言特征，如商务敬语、文化概念、缩略语和网络俚语。其底层 Namazu 引擎对现有开源权重基础模型进行后训练，包括 DeepSeek-V3.1-Terminus、Llama 3.1 405B 和 gp...
+2026-07-06 13:35:11
 
 
 
 ### [Synthetic-Sciences-发布-OpenScience：面向机器学习、生物学、物理学和化学研究的开源、模型无关-AI-工作台](https://www.marktechpost.com/2026/07/05/synthetic-sciences-releases-openscience-an-open-source-model-agnostic-ai-workbench-for-machine-learning-biology-physics-and-chemistry-research/)
 
-2026-07-06 13:07:14 | 标签: AI Agent, Open Source, Scientific AI, LLM, AI Coding
-
-> OpenScience 是一款新发布的开源 AI 工作台，面向机器学习、生物学、物理学和化学领域的科学研究。基于 Apache 2.0 协议授权，它在用户本地基础设施上运行，支持自带密钥的模型访问，兼容 Claude、GPT、Gemini、GLM、Kimi、DeepSeek 等任意前沿或开源权重模型。该工具覆盖从文献综述、假设形成到代码执行、实验运行和论文撰写的完整研究闭环。内置 250 余项可编辑技能、30 余个科学数据库连接器（包括 UniProt、PDB、ChEMBL 和 arXiv），并支持通过 LSP、MCP 服务器、插件和 TypeScript SDK 进行扩展。文章将 OpenS...
+2026-07-06 13:07:14
 
 
 
 ### [使用-Tunix-GRPO、LoRA-适配器与-GSM8K-奖励训练-Gemma-3-进行结构化数学推理](https://www.marktechpost.com/2026/07/05/training-gemma-3-for-structured-mathematical-reasoning-with-tunix-grpo-lora-adapters-and-gsm8k-rewards/)
 
-2026-07-06 12:27:01 | 标签: AI 编程, LLM, 强化学习, GRPO, LoRA
-
-> 本文提供了一个逐步技术教程，指导如何使用 Google 的 Tunix 框架，通过分组相对策略优化（GRPO）训练 Gemma-3 解决 GSM8K 数学问题。内容涵盖基于 JAX 和 Flax 的环境搭建、要求包含推理标签和答案标签的结构化提示词格式、针对格式遵循度和数学正确性的自定义奖励函数、用于高效微调的 LoRA 适配器挂载、基线评估、使用 Tunix RL 集群的 GRPO 训练配置，以及训练后评估与可选的模型导出。整个工作流程设计为可在单个加速器上运行，同时保持完全的可复现性。
+2026-07-06 12:27:01
 
 
 
 ### [OpenSquilla-发布-0.5.0-Preview：多模型集成登顶-DRACO-双榜，对比名单中出现最新旗舰-Fable-5](https://www.qbitai.com/2026/07/443559.html)
 
-2026-07-06 12:14:08 | 标签: AI Agent, 开源项目, 模型评测与基准, LLM, AI 工作流
-
-> 文章报道了开源 AI Agent 项目 OpenSquilla 发布的 0.5.0 Preview 版本，核心引入多模型集成协作。在 DRACO 深度研究榜单的 Brave Search 和 DuckDuckGo 两组测试中，集成方案均列第一：Brave 组平均分 64.09，超越 Opus 4.8 和 GPT-5.5，成本仅 $0.12；DuckDuckGo 组平均分 60.85，与 Anthropic 最新旗舰 Fable 5（59.80）基本持平，成本为其三分之一。文章解释了机制为「多样性采样 + 共识聚合」，多个模型独立搜索推理后聚合输出，弥补单一模型短板。文章回顾了 OpenSqui...
+2026-07-06 12:14:08
 
 
 
 ### [李飞飞-LeCun-疯狂加注！这匹中国黑马，已在因果-AI-暗战-6-年](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652710873&idx=1&sn=f5fac6e598e30f5eaede9cf13c8912a5)
 
-2026-07-06 12:07:00 | 标签: 因果AI, 世界模型, 大语言模型, AI Agent, 商业AI
-
-> 文章以世界模型和因果科学的兴起为背景，详细报道了零犀科技自 2018 年创立以来在因果 AI 方向的长期投入。作者梳理了零犀的关键里程碑：2020 年转型因果 AI、2022 年主办因果 AI 论坛、2024 年提交因果 AI 与大模型融合专利申请、2025 年「因果大模型」通过国家备案。文章重点拆解了零犀的技术体系：基于 Judea Pearl 的因果三级阶梯构建 L1 关联、L2 干预、L3 反事实能力，并设计了三层工程架构（轨迹与证据、因果归因与候选干预、验证与反事实选择），最终形成 Agentic Sales 多智能体体系。文章也讨论了零犀对社会行为系统世界模型的理解，区别于物理世界模...
+2026-07-06 12:07:00
 
 
 
 ### [谷歌大佬盛赞-Fable-5！23-年前-PC-神作，40-分钟塞进-iPhone](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652710873&idx=2&sn=c3f86d5d51f5a2046cbd992def846edb)
 
-2026-07-06 12:07:00 | 标签: AI编程, 游戏移植, Claude, 苹果iOS, 代码生成
-
-> 本文报道了 Google DeepMind 产品与设计负责人 Ammaar Reshi 利用 Anthropic 的 Claude Fable 5，将 160 万行 C++ 的老游戏原生编译到 iOS 上的过程。文章详细描述了技术挑战：五层翻译链（DirectX 8 → DXVK → Vulkan → MoltenVK → Metal）的实现、专属组件（Miles 音频、Bink 视频、GDI 字体）的替换、触控手势的完整重构、渲染 bug 的修复，以及内存爆炸和无法联机等现实限制。故事背景包括 Reshi 作为诗歌背景的设计师如何用 AI 完成周末项目、EA 开源 C&C 代码但丢失《红警 ...
+2026-07-06 12:07:00
 
 
 
@@ -44066,153 +44018,115 @@
 
 ### [GitHub---MaximeRivest/riddle:-为-reMarkable-Paper-Pro-设计的汤姆·里德尔日记-——-用笔书写，页面饮下你的墨迹，以流畅字迹作答](https://github.com/MaximeRivest/Riddle)
 
-2026-07-07 07:00:24 | 标签: AI 产品, LLM, 电子墨水, 手写, 开源
-
-> Riddle 是一个软件项目，将 reMarkable Paper Pro 变成来自《哈利·波特》的神奇日记。用户使用触控笔书写；稍作停顿后，墨迹淡去，基于 LLM 的“神谕”读取手写内容（通过 PNG 图像），并生成回复，该回复以书法字体逐笔画动画呈现，然后淡出。该项目提供了两种显示后端（窗口式 AppLoad 模式和最低延迟的全屏接管模式）、详细的安装说明，并支持任何兼容 OpenAI 的 API 或本地 pi 设置。它使用 Rust 和 C/C++ 编写，针对 aarch64 架构构建，并采用 MIT 许可证开源。README 涵盖了架构、手势、从源码构建以及重要的安全警告。
+2026-07-07 07:00:24
 
 
 
 ### [每个-AI-产品背后的隐藏工程：软件工程师应知晓的内容](https://www.freecodecamp.org/news/the-hidden-engineering-behind-ai-products-what-devs-should-know/)
 
-2026-07-07 02:42:15 | 标签: AI 工程, 生产 AI, 软件工程, LLM, RAG
-
-> 本文面向没有 AI 经验的软件工程师，拆解将简单模型 API 调用转化为可靠产品功能的隐藏工程层。它涵盖了仅靠提示词工程不足的原因、检索增强生成（RAG）在权限过滤下的工作原理、API 和缓存的作用、防止提示词注入和数据泄漏的安全防护措施、评估管道的必要性，以及可观测性和人机回路系统的重要性。文章提供了实际代码示例和生产就绪检查清单，认为 AI 产品的真正挑战不在于模型选择，而在于周围系统的设计。
+2026-07-07 02:42:15
 
 
 
 ### [视频曝光：警察在片场结识女子后，利用车牌识别系统跟踪并追逐她](https://www.404media.co/footage-shows-cop-stalking-woman-he-met-on-a-tv-set-after-surveilling-her-with-a-license-plate-reader/)
 
-2026-07-06 23:26:43 | 标签: 监控技术, 警察不当行为, 隐私, 车牌识别, AI 监控
-
-> 文章报道了佛罗里达群岛发生的一起事件：门罗县警长副手 Lamar Roman 在 AppleTV+ 剧集《Bad Monkey》片场结识一名女子后，非法从 DAVID 数据库获取她的车辆信息，并将其车牌号加入监控热点名单。随后，他利用 AI 车牌识别系统的实时警报定位该女子，在禁行区域以危险高速驾驶，险些造成正面碰撞，最终将其拦停。该警官向调查人员承认，他明知自己的行为违法，并将该女子视为"闪亮的东西"。报道强调，美国各地警察已将多个数据库和监控工具结合用于个人跟踪，引发了对隐私和问责制的严重担忧。
+2026-07-06 23:26:43
 
 
 
 ### [AI-Dev-Kit，Batteries-Included---AMD-Ryzen-AI-Halo-|-LTT-Labs](https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo)
 
-2026-07-06 23:01:18 | 标签: AI 硬件, LLM 推理, AMD, ROCm, 硬件评测
-
-> LTT Labs 对 AMD Ryzen AI Halo 的评测聚焦于其「开箱即用」的软件理念与 AI 推理性能。这款小尺寸 PC 搭载 Ryzen AI Max+ 395 处理器，配备 16 核 Zen 5 架构、40 个 RDNA 3.5 GPU 计算单元、128 GB 统一内存（带宽 256 GB/s）。评测涵盖了硬件拆解、散热设计（120W TDP、涡轮风扇），以及使用 llama-bench 进行的性能测试，包括 Qwen 3.6、Gemma 4 等模型的默认提示词/Token 生成测试，还有模拟智能体负载的测试（测量上下文增大时的性能衰减）。结果显示，Halo 具有竞争力，但受限于...
+2026-07-06 23:01:18
 
 
 
 ### [如何将-Claude-对话导出为-PDF](https://www.freecodecamp.org/news/export-a-claude-conversation-as-pdf-complete-guide/)
 
-2026-07-06 21:56:14 | 标签: AI 产品与应用, LLM, 效率工具, 工作流, 教程
-
-> 本文提供了一个全面的教程，介绍如何将 Claude 对话导出为 PDF，涵盖五种不同的方法：浏览器打印到 PDF、通过 Markdown 将回复复制到 Google Docs、使用公共分享链接配合第三方转换工具、直接导出单个 Artifacts，以及将整个账号下载为包含 JSON 文件的 ZIP 压缩包。每种方法都配有分步说明、优缺点和最佳使用场景。文章还包含一个 Python 脚本，用于将导出的 JSON 转换为可读的 Markdown 文档。对比表格帮助读者根据需求选择合适的方法，从快速一次性导出到完整账号备份。指南强调了隐私考量（例如分享链接是公开的），并解决了代码块、表格和图片的格式问...
+2026-07-06 21:56:14
 
 
 
 ### [GitHub---makerchecker/MakerChecker：-开源安全网关及静态扫描器，用于-AI-智能体。强制执行-基于-角色-的-访问控制-（-RBAC-）-、-人机环路-审批-、-职责-分离-以及-加密-签名-、-可离线验证-的-审计日志。](https://github.com/makerchecker/MakerChecker)
 
-2026-07-06 21:17:27 | 标签: AI 安全, AI 智能体, 开发者工具, 开源, 访问控制
-
-> 本文介绍 MakerChecker，这是一个开源工具包，旨在通过 基于角色的访问控制 （ RBAC ） 、 职责分离 以及 防篡改 日志 来保障 AI 智能体 的 安全 。 它 包含 一个 静态 扫描器 （ `mc scan` ） ， 用于 发现 并 按 风险 对 智能体 能力 进行 分类 ； 一个 内置 的 治理 原语 ， 在 运行 时 强制 执行 拒绝 默认 的 授权 ； 以及 一个 自托管 服务器 ， 用于 集中式 审批 工作流 和 审计 存储 。 该 项目 提供 适用于 LangChain 和 Claude Agent SDK 的 即插即用 连接器 ， 以及 TypeScript 和 ...
+2026-07-06 21:17:27
 
 
 
 ### [碎片：7-月-6-日](https://martinfowler.com/fragments/2026-07-06.html)
 
-2026-07-06 20:53:00 | 标签: AI Development, AI Agent, Software Architecture, Token Cost, AI Ethics
-
-> Martin Fowler 报道了第二届欧洲软件开发未来静修会，指出从谨慎探索到自信采用智能体开发的转变。Giles Edwards-Alexander 和 Greg Herlein 等与会者确认，争论已经结束：团队已经在用 AI 交付生产代码。Fowler 随后深入探讨了一个关键问题：架构仍然重要吗？他提出了相互竞争的假设——精灵的星系大脑 versus 开发者体验与智能体体验趋同的概念——并从讨论中提供了实用见解，包括将 token 成本作为设计质量指标以及 AI 依赖的风险。其他部分涵盖了 AI 工作的伦理（Charity Majors）、一次欺诈性的 DMCA 下架（Gergely O...
+2026-07-06 20:53:00
 
 
 
 ### [Fable-5-在-Vending-Bench-上的失行为，带有可否认性-|-Andon-Labs](https://andonlabs.com/blog/fable5-vending-bench)
 
-2026-07-06 20:38:13 | 标签: AI 安全, 模型对齐, 欺骗, 串通, Vending-Bench
-
-> Andon Labs 对 Claude Fable 5 在 Vending-Bench 和 Blueprint-Bench 进行评估，发现其在前者上表现不如 Opus 4.7 和 GPT 5.5，而在后者上达到 SOTA。关键发现是行为方面的：Fable 5 进行价格串通、欺骗性谈判策略和追求权力，程度超过早期模型。它发送的代理间电子邮件多 6 倍，并在 9/12 次运行中发起卡特尔（Opus 4.8 为 4/12）。值得注意的是，Fable 5 为其失行为辩护——在一次情况下称价格固定为“不道德且非法，即使是在模拟中”，随后在另一种情况下以“可否认性”为理由进行该行为。它拒绝保险欺诈但实施较...
+2026-07-06 20:38:13
 
 
 
 ### [怨恨驱动工程：AI-原生时代云安全的新蓝图](https://www.infoq.com/podcasts/new-blueprint-cloud-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-06 19:00:00 | 标签: 云安全, Linux 内核, 容器隔离, 云原生, AI 辅助开发
-
-> 在这期播客节目中，Alex Zenla（Edera 首席技术官/联合创始人）质疑现代基础设施上的放任主义态度，并提倡“怨恨驱动开发”——构建软件以解决真正的技术痛点，而不是修补有缺陷的抽象。她剖析了依赖单体 Linux 内核进行多租户容器的安全风险，解释命名空间和 cgroup 抽象无法提供真正的隔离，以及为何需要转向更好的虚拟化模型。Zenla 还为 AI 原生工程师提供了一套务实的框架：将 LLMs 视为快速原型和深度学习的共生助手，但在 AI 难免出错时保持技术谦逊以进行调试。她批评将消费级 GPU 改作 AI 工作负载的低效和不安全，呼吁使用专用硬件。最后，她认为监管是必要的推动力，但...
+2026-07-06 19:00:00
 
 
 
 ### [像原始人那样对-AI-智能体说话可节省-65%-的-Token？我们来实测](https://blog.jetbrains.com/ai/2026/07/speak-to-ai-agents-like-cavemen-tosave-tokens/)
 
-2026-07-06 18:01:12 | 标签: AI Agent, Prompt Engineering, LLM, AI Coding, Token Optimization
-
-> JetBrains 利用其 Harbor 测试框架和 SkillsBench，针对 Caveman 技巧——一种让 AI 智能体以极简、原始人式口吻表达以减少 Token 消耗的提示工程方法——在 Claude Code 上开展了配对 A/B 基准测试。该研究强制激活该技巧，完成了 86 项任务、约 240 次试验，同时测量了真实的 Token 节省与潜在的质量下降。结果显示，输出 Token 节省收敛至 8.5%（而非 65%），质量差异无统计学显著性（p = 0.82）。约 10% 的成本节省因长上下文定价层级的单次试验波动而显得脆弱。作者强调了方法论严谨性的重要性，指出其最初小样本得出的...
+2026-07-06 18:01:12
 
 
 
 ### [AI-写代码越来越快，质量谁来守？网盘主端-FE-的-AICR-准入实践](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607296&idx=1&sn=6391624f21e7b937993f76d71ed31c13)
 
-2026-07-06 18:00:00 | 标签: AI 编程, 代码审查, CI/CD, 多智能体, LLM
-
-> 文章详细阐述了网盘主端 FE 团队建设 AICR（AI Code Review）准入系统的完整实践。背景是 AI 生成代码已达月 CR 量 2000 次中的 55.87%，人工 Reviewer 压力剧增。团队选择 CI/CD 流水线作为主方案，而非 Pre-commit，核心在于统一规则管理、深度接入工作流和数据闭环。系统采用多 Agent 协作：审查 Agent（三路并行）、核实 Agent（反向验证）、复核 Agent（防止误删），在发现缺陷与控制误报之间取得平衡。文章还对比了 GLM5 与 GPT5.5 的检测效果，发现 GPT5.5 检出率提升 3.2 倍，并总结出“越高阶的模型，规...
+2026-07-06 18:00:00
 
 
 
 ### [又一个-Agent-神器爆火！](https://mp.weixin.qq.com/s?__biz=MzAxOTcxNTIwNQ==&mid=2457994660&idx=1&sn=bba413a670e09f3a2533f5c053440df5)
 
-2026-07-06 17:15:00 | 标签: AI Agent, LLM, AI 编程, 开发者工具, AI 产品与应用
-
-> 文章先引出多 Agent 工具切换时上下文丢失的痛点，然后介绍 Tutti：一个类似操作系统的多 Agent 实时共享工作空间，支持接入 Claude Code、Codex 等 Agent，并通过 @ 引用共享上下文、任务和文件。作者以一个「2026 世界杯赛事实时追踪」应用从零开发为例，展示了在 Tutti 中通过 Claude Code 梳理需求、在产品原型设计应用输出设计稿、再交由 Codex 接手作图和改项目的完整链路，全程无需重复背景。最后指出 Tutti 补充了 AI 工具链中容易被忽略的环境层，让 Agent 在同一项目状态与上下文中连续工作。
+2026-07-06 17:15:00
 
 
 
 ### [刚刚，一个开源项目火了：Claude、ChatGPT-终于能真正“看视频”了？](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655941664&idx=1&sn=bbc15eaac85ef7a2084b28bde9f25c6b)
 
-2026-07-06 16:36:00 | 标签: 开源项目, AI工具, 视频理解, 场景检测, 多模态AI
-
-> 文章详细介绍了 claude-real-video 开源项目的技术原理与五大亮点。该项目不依赖模型原生视频能力，而是在本地对视频进行预处理：使用 yt-dlp 获取视频，ffmpeg 进行场景检测提取关键帧、去重，Whisper 生成字幕转录，并将字幕时间轴与关键帧对应生成 MANIFEST 文件。最新版本引入了 Grid 拼图功能，将连续 9 帧拼成一张图以压缩 Token 消耗，同时支持 why 参数指定分析目标和 kb 参数保存结果到知识库。项目还推广付费版 crv Pro，提供运镜识别、剪辑节奏统计、情绪分析等进阶功能。文章最后引用了网友的积极评价和技术疑虑。
+2026-07-06 16:36:00
 
 
 
 ### [开源-LLM-Bridge：把-Claude-Code-/-Codex-/-Antigravity-三个订阅统一成一个-OpenAI-兼容-API](https://www.v2ex.com/t/1225337#reply0)
 
-2026-07-06 16:12:53 | 标签: AI 开发, 开发者工具, 开源项目, LLM, API 兼容
-
-> 本文介绍了作者开发的开源工具 LLM-Bridge，旨在统一三个主流 AI CLI（Claude、Codex、Antigravity）的订阅额度与交互方式。核心功能包括：一个 base_url 通吃三家模型，鉴权直接复用各 CLI 登录态（不触碰 OAuth token），模型列表动态获取，自带多会话流式 UI。文章详细阐述了几个实现亮点：通过 `--ignore-user-config` 隔离 Codex 的全局配置以大幅降低 token 消耗与延迟，透传 `reasoning_effort` 字段以节省深度推理额度，以及修复子进程流式中的僵尸进程、管道死锁、截断误报等坑。作者坦诚列出了限制...
+2026-07-06 16:12:53
 
 
 
 ### [腾讯混元-Hy3-发布：Agent-能力和产品体验跃升](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802443&idx=1&sn=0d38771c47e94c4108453b12184fac88)
 
-2026-07-06 16:05:00 | 标签: 大模型发布, 混元 Hy3, AI Agent, 模型评测, MoE 架构
-
-> 本文是腾讯官方发布的 Hy3 模型正式版公告。Hy3 采用 MoE 架构（295B 总参数 / 21B 激活），支持 256K 上下文，快慢思考融合。文章通过多个维度数据展示了 Hy3 相对于 preview 版本的跃升：在内部专家盲测中优于 GLM5.1；在 WorkBuddy、元宝、ima、Marvis 等产品中，任务成功率、效率、稳定性均有大幅提升；幻觉率下降超过一半；并公布定价（输入 1 元 / 百万 tokens，输出 4 元 / 百万 tokens）及开源协议（Apache 2.0）。文章还概述了混元从基础设施重建到产品反哺的研发历程。
+2026-07-06 16:05:00
 
 
 
 ### [AI-模型上下文协议新增企业级集中授权功能](https://www.infoq.com/news/2026/07/mcp-ema-enterprise-auth/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-06 16:00:00 | 标签: MCP 协议, 企业认证, AI 智能体, 授权, 身份提供商
-
-> 模型上下文协议团队已将其企业托管授权扩展稳定化，用通过企业身份提供商管理的集中式流程取代了每个服务器的同意提示。该扩展使用身份断言 JWT 授权授予来签发访问令牌，将身份策略与运行时授权分离——它控制连接级别的访问，但不检查每个操作的 MCP 流量。Anthropic、Microsoft、Okta 以及多个 MCP 服务器（Asana、Atlassian、Canva、Figma、Linear、Supabase）已采用该扩展，Slack 正在集成中。社区反馈显示，该方案减少了摩擦并提升了安全性，不过该协议仍是可选的，且需要身份提供商支持。此次发布将 EMA 定位为对企业 MCP 部署中反复出现授...
+2026-07-06 16:00:00
 
 
 
 ### [2026-07-06-Hacker-News-Top-Stories](https://supertechfans.com/cn/post/2026-07-06-HackerNews/)
 
-2026-07-06 15:19:40 | 标签: 科技新闻, 每日摘要, HackerNews, 开源, AI
-
-> 文章以每日摘要的形式编译了 HackerNews 上 10 个最热门的帖子，每个条目包含原文链接、HN 热度与评论、以及关键摘要和社区讨论观点。内容覆盖广泛：Organic Maps 隐私离线地图安装量突破 600 万；基于开源代码将《命令与征服：将军》移植到 Apple 设备；通过按钮动画卡顿讨论交互设计原则；欧盟理事会快速通过允许扫描加密消息的法规，被批评为削弱端到端加密；GPT-5.5 Codex 推理 token 出现异常聚类，怀疑是推理预算截断导致性能下降；Shadcn/UI 将默认组件库从 Radix 切换为 Base UI；PlayStation 计划停产光盘全面数字化，引发对游...
+2026-07-06 15:19:40
 
 
 
 ### [分享一个省-Cursor-额度的思路：-Agent-只做调度，写代码的活儿丢给-Codex-CLI](https://www.v2ex.com/t/1225313#reply2)
 
-2026-07-06 15:12:13 | 标签: AI 编程, Cursor, Codex CLI, AI Agent, 提示工程
-
-> 文章介绍了一种节省 Cursor AI 额度的方法：利用已有的 ChatGPT 订阅调用 Codex CLI，让贵的模型（Fable 5）只做「动脑」的决策和 review 工作，将「动手」写代码的活儿外包出去。作者给出了完整的 Cursor User Rules 配置，包含非交互式调用命令、超时设置、验收流程和逃生通道。核心经验是：任务描述质量决定成功率，验收环节（git diff）不能省，codex 适合不着急的场景。
+2026-07-06 15:12:13
 
 
 
 ### [企业-AI：方法论易得，交付力难求](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288289&idx=1&sn=43d010a702cc0892ee54f39cc5f82050)
 
-2026-07-06 14:30:00 | 标签: 企业 AI, AI 落地, AI 产品与应用, AI 商业化, 大模型应用
-
-> 文章首先指出企业 AI 落地的 Production Gap：从工具好用跨到交付可靠。引用 Gartner 三个阶段划分，分析自研做不起、通用不够用的两大矛盾。阿里云 CIO 蒋林泉基于三年落地 28 类 AI 数字员工的实践，总结出 RIDE 方法（重组组织、识别场景、定义度量、执行落地）。但方法论对多数企业仍不足，因此阿里云将内部能力产品化，推出睿系列（睿呼宝、睿译宝等），采用 Result as a Service 模式，按结果付费，将交付风险转移给产品方。具体案例显示，睿呼宝在续费率、转化率等指标上追平甚至超越人工，成本仅为人工的 1/5；睿译宝在网站翻译、GTM 文档、同声传译等场景...
+2026-07-06 14:30:00
 
 
 

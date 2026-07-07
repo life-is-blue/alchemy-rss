@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-07 10:03:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-07 15:29:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,9 +26,7 @@
 
 ### [您的-Worker-现在可以拥有前置缓存](https://blog.cloudflare.com/workers-cache/)
 
-2026-07-06 22:00:01 | 标签: Cloudflare Workers, 边缘计算, 缓存, 无服务器, 性能优化
-
-> Cloudflare 宣布推出 Workers Cache，这是一个位于所有 Worker 入口点前面的分层缓存，通过单个 Wrangler 设置和标准 HTTP Cache-Control 标头进行配置。文章解释了这如何颠覆传统架构：不再是 Worker 位于缓存前面（每个请求都运行代码），而是缓存首先拦截请求。命中时，Worker 不会运行，从而节省 CPU 成本。未命中时，Worker 运行并对响应进行缓存。主要功能包括：stale-while-revalidate 实现即时后台刷新、基于 Vary 的内容协商、按 Worker 缓存（而非按区域）跨域和环境跟随 Worker、默认区域分...
+2026-07-06 22:00:01
 
 
 
@@ -328,9 +326,7 @@
 
 ### [使用-Amazon-Nova-自动对图像中的-PII-进行脱敏处理-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/automatically-redact-pii-in-images-with-amazon-nova/)
 
-2026-07-06 16:55:02 | 标签: PII 脱敏, Amazon Nova, 计算机视觉, 基础模型, AWS
-
-> 文章描述了一种多步骤、无服务器架构，用于对图像中的个人身份信息（PII）进行脱敏处理，解决了反光、部分人脸和上下文文本线索等挑战。Amazon Nova 2 Lite 充当中央协调器：首先筛查 PII，判断存在的是文本还是视觉 PII，并将图像路由到相应处理模块。视觉 PII（人脸、车牌）由部署在 SageMaker AI 上的 Meta SAM 3 处理，生成精确的像素级分割掩码。文本 PII（姓名、地址、证件号）由 Amazon Textract 进行 OCR 处理，然后 Nova 结合提取的文本与完整图像评估敏感内容。Lambda 函数执行脱敏操作，Nova 进行最终验证以确保所有 PI...
+2026-07-06 16:55:02
 
 
 
@@ -588,9 +584,7 @@
 
 ### [x402，一个静态博客变现练习](https://shtein.me/posts/x402-poc/)
 
-2026-07-06 18:37:58 | 标签: x402, 支付协议, 博客变现, Cloudflare Workers, 静态站点
-
-> 作者使用 x402 协议为静态博客实现了付费墙，该协议通过区块链网络实现微支付。实验使用 Cloudflare Workers 托管基于 Hono 的中间件，该中间件会以 402 状态码和付费需求头拒绝请求。文章详细介绍了使用 EVM 和 SVM 支付方案配置中间件、集成浏览器付费墙 UI、在测试网上使用 MetaMask 进行测试，以及切换到主网（Base 和 Solana）进行操作。作者对比了两个促进者（Dexter 和 PayAI），并分享了实际观察，例如需要 Node.js 兼容性标志以及非 HTML 响应导致浏览器导航的问题。结论是 x402 已准备好用于博客变现，尽管目前没有开箱即...
+2026-07-06 18:37:58
 
 
 
