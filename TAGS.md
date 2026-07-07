@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-07 06:58:41 | [返回首页](/README.md)
+**更新时间**: 2026-07-07 10:03:35 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13335)
+- [AI & 大模型](#ai-llm) (13378)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (868)
-- [DevOps](#devops) (631)
-- [产品与商业](#product-business) (42)
-- [其他](#other) (6130)
+- [前端与全栈](#frontend-fullstack) (869)
+- [DevOps](#devops) (634)
+- [产品与商业](#product-business) (43)
+- [其他](#other) (6146)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [语言模型中的全局工作空间](https://www.anthropic.com/research/global-workspace) - AI 精选
+- [腾讯混元-Hy3-发布：Agent-能力和产品体验跃升](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497981&idx=1&sn=9d5226192f9a29ec5f0c6796fa34ac4f) - AI 精选
 - [停止从-RAG-返回文本：防止幻觉的类型化答案合约](https://towardsdatascience.com/stop-returning-text-from-rag-the-typed-answer-contract-that-prevents-hallucination/) - AI 精选
 - [专访美图-CEO-吴欣鸿：做-AI-产品，是一场难以提前策划的游戏](https://mp.weixin.qq.com/s?__biz=MzkwMDQ2NDU2Nw==&mid=2247517102&idx=1&sn=5915f95569ec1e9da6ddd3fe2e41d6ef) - AI 精选
 - [SkillOpt-将-AI-智能体技能转化为可训练资产](https://www.microsoft.com/en-us/research/blog/skillopt-agent-skills-as-trainable-parameters/) - AI 精选
@@ -40,10 +42,8 @@
 - [为什么-AI-还没有取代软件工程师，而且也不会](https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers) - AI 精选
 - [语音智能体能否处理双语客户？前沿-ASR-在语码转换语音上的基准测试](https://huggingface.co/blog/ServiceNow-AI/code-switching) - AI 精选
 - [多媒体积木块](https://huggingface.co/blog/mishig/spaces-agents-md) - AI 精选
-- [只给一份文档，Qwen3.7-Max-从-0-交付双端应用](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501453&idx=1&sn=ba96a013175e2587878e1b2e00c9ab73) - AI 精选
-- [梦境：更强大的记忆，让-ChatGPT-更贴心](https://openai.com/index/chatgpt-memory-dreaming) - AI 精选
 
-- [查看全部 13335 篇...](/details/tags/ai-llm.md)
+- [查看全部 13378 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 868 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 869 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -112,6 +112,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [您的-Worker-现在可以拥有前置缓存](https://blog.cloudflare.com/workers-cache/) - 编程 精选
 - [我们如何为-Cloudflare-Workflows-构建-Saga-回滚](https://blog.cloudflare.com/rollbacks-for-workflows/) - 编程 精选
 - [共享字典：跟上智能体网络步伐的压缩技术](https://blog.cloudflare.com/shared-dictionaries/) - 编程 精选
 - [保护非人类身份：自动化吊销、OAuth-与范围化权限](https://blog.cloudflare.com/improved-developer-security/) - 编程 精选
@@ -128,9 +129,8 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
-- [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 
-- [查看全部 631 篇...](/details/tags/devops.md)
+- [查看全部 634 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -148,6 +148,7 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [Castro-Podcasts-—-我做错的事：客户支持](https://www.uncommonapps.nyc/p/castro-podcasts-things-i-got-wrong-support) - 编程 更多
 - [Cycle-推出欧盟控制面板，主权争议持续](https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [2026-年最适合小企业的-11-款-CRM-|-Zapier](https://zapier.com/blog/best-crms-for-small-business) - 编程 更多
 - [深入-GitHub-Advisory-Database：当漏洞数量打破纪录时发生了什么](https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/) - 编程 更多
@@ -157,9 +158,8 @@
 - [还是打不过？为什么-Uber-要从-Postgres-迁移到-MySQL？](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247633487&idx=1&sn=c02694dace9fb836f7f479247151e7b6) - 编程 更多
 - [并发丢数据深度剖析：JED-的锁机制与事务实战踩坑及解决方案](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247501465&idx=1&sn=c2b7490ce4c41d5cd719f990685a3efb) - 编程 更多
 - [我做了套小红书一键发布系统，运营小姐姐说她不想离开我了](https://juejin.cn/post/7552489208804491316) - 编程 更多
-- [大半夜发生的一起-MySQL-更新诡异消失案……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247632551&idx=1&sn=e3b62a62696ef05d7611f11fc5bd2f26) - 编程 更多
 
-- [查看全部 42 篇...](/details/tags/product-business.md)
+- [查看全部 43 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 - [在谷歌-14-年的-21-条经验教训](https://addyo.substack.com/p/21-lessons-from-14-years-at-google) - AI 精选
 
-- [查看全部 6130 篇...](/details/tags/other.md)
+- [查看全部 6146 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_66c184c3",
+  "title": "蔚来世界模型 OTA，70 万用户没人被留在旧版本",
+  "url": "https://www.qbitai.com/2026/07/443868.html",
+  "date": "2026-07-06 17:41:04",
+  "author": "贾浩楠",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"90\">贾浩楠 发自 凹非寺量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">“我自己就是ET7车主，四年多了还能用上最好的软件”——</p>\n  <p data-track=\"3\">说这话的人是<strong>任少卿</strong>，“21世纪被引次数最多的AI论文”（Nature统计结果）ResNet核心作者，也是现在<strong>蔚来汽车</strong>的智能驾驶研发的掌舵人。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163940_1e5a4b4c870761b774ba710067d158be.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">他的座驾是2022年交付的首代蔚来ET7。</p>\n  <p data-track=\"5\">同他一样，几天前<strong>超70万蔚来和乐道车主用户都收到了最新版世界模型的推送更新</strong>。</p>\n  <p data-track=\"6\">巧的是，几乎同一时间马斯克在做相同的事：给最早7年前的HW3硬件车主更新FSD V14 Lite（蒸馏版）。</p>\n  <p data-track=\"7\">但不同的是，任少卿面临的挑战更加复杂：</p>\n  <p data-track=\"8\">两个品牌、四个平台、2种芯片方案、4种传感器硬件配置、十几款不同车型……</p>\n  <p data-track=\"9\">一套代码、一个模型、一次推送，覆盖了全部。</p>\n  <p data-track=\"10\">而且，没有“Lite”。</p>\n  <p data-track=\"12\">超70万辆车，蔚来和乐道两个品牌，四个平台——Banyan、Cedar、Cedar S、Coconut+——最早能追溯到2022年3月交付的第一批ET7。</p>\n  <p data-track=\"13\">芯片有两套：英伟达Orin-X和蔚来自研神玑NX9031。</p>\n  <p data-track=\"14\">传感器也不一样——NT2的3D毫米波雷达，NT3的4D毫米波雷达；NT2的SiPM激光雷达，Coconut+的SPAD激光雷达；摄像头ISP因芯片不同也有差异。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163941_467d85fd466020d44a428fd8c094921f.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"15\">行业常规做法是：新芯片配新算法，老硬件要么“降级”要么停更。就比如特斯拉HW3车主等了一年多终于等到V14，只不过后面跟了个“Lite”——知识蒸馏压缩出来的小模型。</p>\n  <p data-track=\"16\">蔚来的版本号后面什么都没有。</p>\n  <p data-track=\"17\">不管你的车是四年前买的还是昨天提的，不管上面是Orin还是神玑——OTA收到的模型代码一样。</p>\n  <p data-track=\"18\">斌哥的诚意没得说，但真正让人在意的，是技术上可行吗？</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163940_394b80f182d78ab5123685aeda71cf96.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"19\">特斯拉能做到的也只是蒸馏出一个规模只有完整版FSD V14 15%左右的小模型，这使得Lite版本的FSD V14，在某些场景，尤其是不规则路口、恶劣天气条件下，能力有明显短板。</p>\n  <p data-track=\"20\">任少卿的解释是：“<strong>不同的摄像头用同一个网络处理，靠神经网络把性能拉平</strong>。激光雷达和毫米波雷达是热插拔接口，有就输入，没有也能跑。”</p>\n  <p data-track=\"21\">但车企层面，模型不同，需要的Corner case也不同；车企内部，不同传感器方案，不同车型，数据可能也不尽相同。</p>\n  <p data-track=\"22\">一般来说，各自的数据只能在各自的技术方案里产生价值。</p>\n  <p data-track=\"23\">但任少卿给出了反常识的认知：</p>\n  <p data-track=\"24\">“数据不是零成本拷贝的文件。真正有价值的数据，是针对某一个模型的Corner case。要找到它，必须让模型在场景里跑起来”——</p>\n  <p data-track=\"25\">蔚来“70万辆车”的真正意义，不仅是销量数字——<strong>是蔚来能调度这70万辆车的闲置算力做验证、做筛选</strong>。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163941_d85ae229cd87cff6bdbd3b57c8f35588.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"26\">每周主动安全验证里程超4000万公里，整体超1亿公里，相当于1000辆测试车跑一整年……</p>\n  <p data-track=\"27\">而为了做到这一点，蔚来自研搭建的整套AI技术体系，远比传统认知的“影子模式”更为复杂。</p>\n  <p data-track=\"29\">2021年1月9日在NIO Day 2020上第一次亮相的ET7，其实已经完整体现了蔚来智能技术布局，只不过当时不被行业和用户理解。</p>\n  <p data-track=\"30\">比如800万像素摄像头，比如高线束激光雷达，以及四颗Orin——超1000TOPS算力。</p>\n  <p data-track=\"31\">内部有人觉得“用不了那么多”、“太贵了”，外部有人批评是“过度配置”。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163942_00db5061c79d57aa2f2097301b7aa88a.png\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"32\">四年后回头看，2022年的ET7能跑2026年的模型，恰恰是因为当年的“过度”。</p>\n  <p data-track=\"33\">这可能是巧合，或者是任少卿和他的团队在技术路线未收敛的情况下，一次大胆的“投石问路”。</p>\n  <p data-track=\"34\">但蔚来在后面数年内一步步落地交付的产品、方案，似乎不支持“巧合”“押注”的猜测。</p>\n  <p data-track=\"35\">紧接着首款ET7交付，2022年蔚来在做的还有自主设计芯片<strong>神玑NX9031</strong>。</p>\n  <p data-track=\"36\">当时行业主流还是CNN，Transformer架构还没等到2023年一战成名的ChatGPT Moment。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163941_ddb7fa44172bbf639f8ec7c4d85f6ef7.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"37\">但蔚来的芯片团队和AD团队在反复讨论：<strong>下一代神经网络会不会变成纯Transformer？</strong></p>\n  <p data-track=\"38\">如果是的话，那么相比堆计算单元，<strong>内存带宽反而会是新范式最大的瓶颈</strong>。</p>\n  <p data-track=\"39\">因为CNN与Transformer计算存在本质差异。</p>\n  <p data-track=\"40\">CNN的核心操作是卷积，同一组权重在输入特征图上滑动复用，数据一旦被加载到片上缓存就能完成大量乘加运算，复用率高、算术强度大，对带宽的依赖相对温和。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163941_0fb30505c4d86dd6315f3eea369cdc49.png\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"41\">Transformer的灵魂是自注意力机制，<strong>每个token需要与序列中所有其他token计算相关性</strong>，这种全局依赖导致了<strong>大矩阵乘法和动态生成的KV Cache</strong>：</p>\n  <p data-track=\"42\">自回归推理每解码一步都要把不断膨胀的KV Cache从内存中完整搬运一遍，数据复用率低、搬运次数多。</p>\n  <p data-track=\"43\">CNN芯片可能在算力上很好看，但它的设计假设是数据能被喂饱；但当Transformer来了，再高的TOPS也会被内存墙卡住——算得动但喂不进来。</p>\n  <p data-track=\"44\">最终，蔚来在ChatGPT震惊世界之前，选择了Transformer作为芯片设计的主要驱动导向，做出了546GB/s的内存带宽，行业最高。即使今年量产的几款最新芯片，内存带宽也只有蔚来的一半。一块神玑芯片，就能产生与四块Orin类似的性能。</p>\n  <p data-track=\"45\">与其说是造“算力更大的芯片”，更准确的说法是造“能让大模型跑起来的芯片”。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163940_562e70d560c22784ea2bc21655e75038.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"46\">软件层面的布局，甚至能追溯到更早的2020年。</p>\n  <p data-track=\"47\">当时蔚来刚搭全栈自研团队，做的决定依然不被行业理解：</p>\n  <p data-track=\"48\">英伟达的软件只用到CUDA层，之上的部署框架、推理引擎、AI编译器全部自研。</p>\n  <p data-track=\"49\">就比如，<strong>蔚来自研的AI编译器</strong>，实现自动算子优化和图优化，大部分算子自动生成，多层之间自动融合。</p>\n  <p data-track=\"50\">效果很直接：模型部署从1-2周压缩到1-2天，推理效率比通用工具链提升20%以上。</p>\n  <p data-track=\"51\">而传统做法是，神经网络每一层算子都需要工程师手写优化。算法工程师改个模型，工程团队就得跟着改部署代码。</p>\n  <p data-track=\"52\">直白说，类似编译器、工具链，是算法和芯片之间的“翻译”，如果翻译是由他人提供的，可能很难把算力、算法匹配到极致。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163941_ad1f71a548f002999cf829080975e07a.png\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"53\">任少卿透露坚持自研工具链的原因很简单：2020年当时已经决定要自研芯片，所以必须从一开始就兼容Orin和蔚来的自研芯片。</p>\n  <p data-track=\"54\">2026年蔚来给老车主OTA最新世界模型，这件事的逻辑很清晰：</p>\n  <p data-track=\"55\">先判断智驾能力的上限会持续拉升，于是把硬件一步到位；</p>\n  <p data-track=\"56\">为了让下一代硬件能跟现有硬件共享同一套软件体系，提前自研工具链；</p>\n  <p data-track=\"57\">有了自己的工具链，才能让自研芯片按照自己对算法范式的判断去设计，而不是被供应商的既有方案牵着走。</p>\n  <p data-track=\"58\">不是三次独立的押注赌博，更不是“无心插柳”，而是每一步都在为下一步铺路——“看见十步、落子三步”。</p>\n  <p data-track=\"59\">这个闭环中，所有工具类的“生产资料”到这一步都已经就绪，差最后的关键“原料”：<strong>数据</strong>。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163940_c58a884fbd7d0d4dec9b96ce32922dd4.png\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"60\">AI有个经典曲线：性能提升3个点，往往数据翻10倍。</p>\n  <p data-track=\"61\">但对于与真实世界交互的AI司机来说，有效数据远比大语言模型稀缺：<strong>测试会越来越难跑</strong>——<strong>中早期corner case会大量反馈并被解决</strong>，<strong>但后期越是极端致命的案例，越罕见</strong>，最后1%的问题，往往要付出巨大成本。</p>\n  <p data-track=\"62\">蔚来的解法叫“群体智能”：<strong>新版本通过云端下发到量产车的闲置算力，在用户无感的情况下完成验证</strong>，NT2和NT3的车进同一个验证池。</p>\n  <p data-track=\"63\">蔚来的群体智能当然也是“影子模式”的一种落地方法，但有效数据必须用车端的真实模型去跑、去筛、去扰动才能产生。</p>\n  <p data-track=\"64\">蔚来从2020年开始搭建的就是这个体系——车端算力调度加云端验证下发，加Corner case自动回收。</p>\n  <p data-track=\"65\">六年没改过底层逻辑。</p>\n  <p data-track=\"66\">这套体系的效果正在显现：如今蔚来用户保险出险赔付相比2023年降低40%，人驾平均安全里程达679万公里，重大事故率随车量增长反而下降。</p>\n  <p data-track=\"68\">今年开始，蔚来除了经营业绩上不断给外界惊喜，也越来越多展现技术实力，只不过常被解读为“终于追赶上来了”。</p>\n  <p data-track=\"69\">但从这次OTA背后的透露出的蔚来技术体系来看，<strong>其实这几年中，蔚来从来没追赶、模仿过任何玩家</strong>，自然也没有什么转轨、挣扎、沉没成本。</p>\n  <p data-track=\"70\">多平台同步升级不是2026年才解决的，是6年前“AI基建马拉松”的自然抵达。</p>\n  <p data-track=\"71\">即使这个过程的开局，是2019年蔚来岌岌可危命悬一线，期间还经历了2021年从巅峰陡然坠落…….</p>\n  <p data-track=\"72\">但<strong>李斌丝毫没让这些经营层面的麻烦，影响技术团队的探索</strong>，让蔚来成为广义AI领域中，第一个看清世界模型价值，并且最早在终端落地的玩家：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163940_c1216211de24501f68f6ff3bdfb1e881.png\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"73\">除了前瞻，现在蔚来作为“先驱”又有了新的认知：</p>\n  <p data-track=\"74\">明确区分了“表层算法”（如端到端、VLA）和“底层工程”，而真正的护城河并不在于今年用了什么模型，最大程度避免模型范式“一代版本一代神”的困境。</p>\n  <p data-track=\"75\">直白地说，蔚来走过的路，其他玩家都免不了要再走一遍。</p>\n  <p data-track=\"76\">换电体系投入了八年，自研芯片投入了六年，AI工具链也投入了六年。这些决策都是前期投入重、回报周期长、过程中一直被质疑。</p>\n  <p data-track=\"77\">但2026年的结果开始说话——销量在涨，毛利在好转，四年前的车还在同步更新。</p>\n  <p data-track=\"78\">换电网络是物理基础设施，工具链、芯片是AI基础设施，底层逻辑相同：</p>\n  <blockquote>\n   <p data-track=\"79\">对蔚来自己，<strong>用户权益、归属感这件事，现在有了新高度：技术即服务、AI即服务</strong>；</p>\n   <p data-track=\"80\">建成之后，别人很难复制。</p>\n  </blockquote>\n  <p data-track=\"81\">“技术即服务，服务即技术”看似是抽象理念，放到智能车迭代迅猛的当下却格外有分量——当技术更新快到让人眼花缭乱时，能靠技术守住对用户的承诺，用稳定体验筑牢信任，才是真本事。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260706163941_c1a65071f7b9ddf0a218ae8643847817.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"82\">这种信任会像飞轮一样转起来：技术扎实赢得用户认可，用户信任反过来助推销量和产品迭代，销量上去了又能反哺技术研发，形成越滚越强的正向循环。</p>\n  <p data-track=\"83\">这时候，技术就不只是冰冷的参数，而成了串联用户与品牌的纽带，这种由信任驱动的规模化增长，才是最稳当的飞轮动力。</p>\n  <p data-track=\"84\">现在的蔚来，有世界上规模最大的“物理世界数据采集网络”之一。</p>\n  <p data-track=\"85\">有“让模型在物理世界里持续进化”的工程能力。</p>\n  <p data-track=\"86\">有正在打通的“虚拟”和“物理”闭环。</p>\n  <p data-track=\"87\">不需要太久，智能汽车的竞争会变成 “谁的模型能更快地从物理世界里学习、更聪明地理解世界、更安全地应对未知。”</p>\n  <p data-track=\"88\">蔚来在走的这条路，不只是让2022年的车跑2026年的模型，他们在搭建一个能持续从物理世界学习的智能系统。</p>\n  <p data-track=\"89\">这个系统的终点，不是L3\\L4，也不会一直停留在“汽车”这具躯体上。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "蔚来成功向 70 万用户统一推送世界模型 OTA，覆盖不同硬件方案，验证了自研芯片、工具链与群体智能体系的长期技术积累。",
+  "oneSentenceSummary": "蔚来成功向 70 万用户统一推送世界模型 OTA，覆盖不同硬件方案，验证了自研芯片、工具链与群体智能体系的长期技术积累。",
+  "summary": "蔚来汽车向超 70 万用户推送了最新版世界模型，覆盖两个品牌、四个平台、英伟达 Orin 与自研神玑芯片、多种传感器配置，所有用户获得同等更新，无“Lite”版本。文章深入分析了背后的技术体系：硬件层面，2022 年交付的 ET7 以 800 万像素摄像头、高线束激光雷达、四颗 Orin（超 1000TOPS）实现了超前配置；芯片层面，自研神玑 NX9031 基于对 Transformer 时代的预判，以 546GB/s 内存带宽为核心设计，优先解决“内存墙”问题；软件层面，自研 AI 编译器实现了部署效率的大幅提升，并从一开始就兼容 Orin 与自研芯片；数据层面，通过“群体智能”调度车端闲置算力，每周验证里程超 4000 万公里。文章指出，这不是孤立的押注，而是从 2020 年开始的“AI 基建马拉松”的自然抵达，体现了蔚来“技术即服务”的长期主义。",
+  "mainPoints": [
+    {
+      "point": "硬件超前配置是实现统一 OTA 的物质基础。",
+      "explanation": "2022 年交付的蔚来 ET7 配备 800 万像素摄像头、高线束激光雷达、四颗 Orin 芯片（超 1000TOPS），这种当时被视为“过度”的配置，四年后保证了老用户能运行同一套世界模型。"
+    },
+    {
+      "point": "自研芯片神玑 NX9031 以 Transformer 架构为设计导向，优先解决内存带宽瓶颈。",
+      "explanation": "蔚来团队预判下一代神经网络将是纯 Transformer，其自注意力机制导致 KV Cache 搬运量大，带宽比算力更重要。神玑芯片 546GB/s 内存带宽为行业最高，使大模型能高效运行。"
+    },
+    {
+      "point": "自研 AI 编译器与工具链实现了跨平台统一部署。",
+      "explanation": "蔚来从 2020 年起自研 AI 编译器，实现自动算子优化与图优化，部署时间从 1-2 周压缩到 1-2 天，推理效率提升 20%以上，并一开始就兼容 Orin 与自研芯片，为多平台同步更新提供软件基础。"
+    },
+    {
+      "point": "群体智能验证体系利用 70 万辆车端闲置算力，形成数据飞轮。",
+      "explanation": "蔚来调度量产车的空闲算力进行模型验证和 corner case 筛选，每周验证里程超 4000 万公里，有效数据反哺模型迭代，实现出险赔付率降低 40%、人驾安全里程提升。"
+    },
+    {
+      "point": "该 OTA 不是临时解决方案，而是六年“AI 基建”战略的成果。",
+      "explanation": "从硬件储备、芯片设计、工具链自研到群体智能，蔚来在 2020 年就开始系统性布局，使统一 OTA 成为水到渠成的结果，而非追赶或偶然。"
+    }
+  ],
+  "keyQuotes": [
+    "不同的摄像头用同一个网络处理，靠神经网络把性能拉平。",
+    "蔚来能调度这 70 万辆车的闲置算力做验证、做筛选。",
+    "看见十步、落子三步。",
+    "技术即服务、AI 即服务。",
+    "技术扎实赢得用户认可，用户信任反过来助推销量和产品迭代。"
+  ],
+  "tags": [
+    "世界模型",
+    "智能驾驶",
+    "AI商业化",
+    "芯片设计",
+    "群体智能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 16,
+  "score": 87,
+  "wordCount": 3913,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783330864000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-06 17:41:04"
+}
