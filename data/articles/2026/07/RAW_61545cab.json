@@ -1,0 +1,60 @@
+{
+  "id": "RAW_61545cab",
+  "title": "从 PostgreSQL 迁移到 ClickHouse 以提升性能与可扩展性",
+  "url": "https://www.infoq.com/news/2026/07/momentic-postgres-clickhouse/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-08 04:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Momentic, the company behind an AI-driven software testing platform, recently <a href=\"https://momentic.ai/blog/postgres-to-clickhouse-migration\">rearchitected its caching system</a> to handle over 2 million queries per day across 20 billion total entries, while maintaining an average response latency of around 250 ms. This improvement was made possible by transitioning from PostgreSQL to the column-oriented database ClickHouse.</p>\n   <p>The primary driver for adopting a new caching architecture was the rapid growth of the cache table from approximately 80,000 to 1 billion entries, which began to expose PostgreSQL’s performance limitations:</p>\n   <blockquote>\n    <p>Because of the high-write, high-read workload, we were running into both elevated resource usage as well as lock contention from queries trying to read and write to the cache concurrently, and as we increased the number of entries by several orders of magnitude, this only became worse.</p>\n   </blockquote>\n   <p>When Momentic decided to migrate to ClickHouse, it was handling roughly 600,000 cache lookups per day with a requirement of sub-second latency. A key architectural advantage ClickHouse offered over PostgreSQL was its use of sparse primary indexes rather than B-tree indexes. In PostgreSQL, query costs tend to grow with data size, whereas ClickHouse can narrow searches to a small number of “granules” when key values are known, significantly improving efficiency at scale.</p>\n   <p>By carefully designing its primary key, incorporating test ID, step ID, Momentic version, git branch, and commit timestamp, Momentic was able to achieve this efficient lookup behavior in 90% of cases, namely with feature branches. However, main branches required accessing a potentially huge number of entries:</p>\n   <blockquote>\n    <p>This meant that most queries were reading 1-2 data parts, but some outliers were reading almost all of the parts on every query, leading to spiky memory usage and disk operations.</p>\n   </blockquote>\n   <p>To address this limitation, Momentic leveraged <em>materialized views</em> to precompute available commit timestamps per test ID, enabling them jump straight to the right data part.</p>\n   <p>Another significant change was reducing the number of queries for every test run, as the three separate queries used in PostgreSQL did not play well with ClickHouse.</p>\n   <blockquote>\n    <p>Instead we switched to using only INSERTS combined with ClickHouse’s ReplacingMergeTree: SELECT to get the caches, re-INSERT the caches that were used to extend TTL, INSERT the new caches after the test run, and let ClickHouse take care of deduplicating entries asynchronously. This was such an improvement that we were able to fully eliminate the Redis layer, which at this point had limited value due to the higher cache key cardinality.</p>\n   </blockquote>\n   <p>To carry through the migration, Momentic ran ClickHouse alongside PostgreSQL, duplicating all writes to both systems. Production traffic continued to be served from PostgreSQL while ClickHouse was \"shadow queried\", but results from both databases were diffed to ensure correctness. Once Momentic gained confidence in the new setup, traffic was gradually shifted from PostgreSQL to ClickHouse. Even after the cutover, dual writes were maintained for a period to allow for a safe rollback if needed.</p>\n   <p>As a result of this rearchitecture, Momentic was able to scale its cache to 20 billion entries, handling over two million queries per day while maintaining an average resolution latency of around 250 ms. For a deeper dive into the migration and its design decisions, refer to the original article.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Switching from PostgreSQL to ClickHouse for Improved Performance and Scalability\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/momentic-postgres-clickhouse/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1783454400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Momentic 从 PostgreSQL 迁移到 ClickHouse，以处理每日超过 200 万次查询、跨越 200 亿条缓存条目，通过利用稀疏索引和物化视图实现了约 250 毫秒的平均延迟。",
+  "oneSentenceSummary": "Momentic 从 PostgreSQL 迁移到 ClickHouse，以处理每日超过 200 万次查询、跨越 200 亿条缓存条目，通过利用稀疏索引和物化视图实现了约 250 毫秒的平均延迟。",
+  "summary": "本文详述了 AI 驱动的测试平台 Momentic 如何通过从 PostgreSQL 迁移到 ClickHouse 来重构其缓存系统。随着缓存条目从 8 万增长到 10 亿，PostgreSQL 遭遇了锁争用和高资源消耗问题。ClickHouse 的稀疏主键索引在 90% 的情况下实现了高效查找，而物化视图和 ReplacingMergeTree 引擎解决了边缘情况并简化了查询模式，从而不再需要 Redis。迁移采用了影子查询和双写策略以确保安全，最终使缓存规模扩展到 200 亿条目，平均延迟为 250 毫秒，每日查询次数超过 200 万。",
+  "mainPoints": [
+    {
+      "point": "在高写入、高读取的工作负载下，PostgreSQL 的 B 树索引和锁争用成为规模化瓶颈。",
+      "explanation": "随着缓存条目数量级增长，并发的读写操作导致资源使用率升高和锁争用加剧，从而催生了对列式数据库的需求。"
+    },
+    {
+      "point": "ClickHouse 的稀疏主键索引通过将搜索范围缩小到少量颗粒来实现高效查找，但主分支查询仍需访问大量数据分片。",
+      "explanation": "通过设计主键（测试 ID、步骤 ID、版本、分支、时间戳），90% 的查询只读取 1-2 个数据分片，但主分支查询可能读取几乎所有分片，导致内存和磁盘使用出现峰值。"
+    },
+    {
+      "point": "物化视图为每个测试 ID 预先计算可用的提交时间戳，使主分支查询能直接跳转到正确的数据分片。",
+      "explanation": "这通过避免在主分支上进行全扫描解决了异常值问题，保持了查询延迟的一致性。"
+    },
+    {
+      "point": "ReplacingMergeTree 和减少查询类型简化了架构，并允许移除 Redis。",
+      "explanation": "Momentic 不再使用单独的 SELECT、UPDATE 和 INSERT 查询，而是仅使用 SELECT 和 INSERT 配合异步去重，这提升了性能并消除了 Redis 缓存层。"
+    },
+    {
+      "point": "迁移通过影子查询策略和双写安全执行，确保了正确性并允许回滚。",
+      "explanation": "两个数据库并行运行；生产流量由 PostgreSQL 提供服务，同时对 ClickHouse 进行影子查询并比对结果。在获得信心后，流量逐步转移，并在一段时间内维持双写。"
+    }
+  ],
+  "keyQuotes": [
+    "由于高写入、高读取的工作负载，我们不仅遇到了资源使用率升高的问题，还遭遇了因查询尝试并发读写缓存而导致的锁争用，并且随着我们将条目数量提升了几个数量级，这种情况只会变得更糟。",
+    "这意味着大多数查询只读取 1-2 个数据分片，但一些异常值在每次查询时几乎要读取所有分片，导致内存使用和磁盘操作出现峰值。",
+    "我们转而仅使用 INSERT 结合 ClickHouse 的 ReplacingMergeTree：用 SELECT 获取缓存，重新 INSERT 已使用的缓存以延长 TTL，在测试运行后 INSERT 新的缓存，并让 ClickHouse 异步处理条目去重。"
+  ],
+  "tags": [
+    "数据库迁移",
+    "ClickHouse",
+    "PostgreSQL",
+    "缓存",
+    "性能优化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 525,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783454400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-08 04:00:00"
+}

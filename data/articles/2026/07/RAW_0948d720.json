@@ -1,0 +1,59 @@
+{
+  "id": "RAW_0948d720",
+  "title": "AI 智能体入门",
+  "url": "https://www.freecodecamp.org/news/ai-agents-for-beginners/",
+  "date": "2026-07-07 23:35:18",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We just released an in-depth, hands-on video course on the freeCodeCamp.org YouTube channel about AI agents</p>\n  <p>Led by Mumshad Mannambeth, founder of CodeCloud, this full-length course is designed to take you from the absolute fundamentals of Large Language Models (LLMs) to building specialized, multi-agent systems.</p>\n  <p>Here are the core things you will learn in this course:</p>\n  <ul>\n   <li>\n    <p>LLM Core Concepts: Learn how generative pre-trained transformers (GPT) work, understand tokens and tokenization, and see how temperature shapes model predictability.</p>\n   </li>\n   <li>\n    <p>Workflows vs. Agents: Learn the important architectural distinction between predefined code pathways (workflows) and fully autonomous loops where the AI decides its own next steps using tools.</p>\n   </li>\n   <li>\n    <p>Hands-on Implementation: Build four distinct agent personalities from scratch: Zippy (the orchestrator), Savvy (the research specialist utilizing the React pattern), Meshi (the memory manager), and Cody (the code and automation specialist).</p>\n   </li>\n   <li>\n    <p>Production Patterns &amp; Security: Explore critical design patterns including structured JSON outputs, input/output guardrails, human-in-the-loop approvals, and secure sandbox execution.</p>\n   </li>\n   <li>\n    <p>OpenClaw Case Study: Wrap up the course by dissecting OpenClaw, a popular open-source, production-grade personal assistant framework. You will trace its 5-phase loop, check how it manages session state, and see how it dynamically builds a 19-section system prompt based on real-world research.</p>\n   </li>\n  </ul>\n  <p>Watch the full course on <a href=\"https://youtu.be/AZDSpS5v57w\">the freeCodeCamp.org YouTube channel</a> (3-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AZDSpS5v57w\" title=\"YouTube video player\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了一门免费的实践视频课程，内容涵盖 AI 智能体、LLM 基础概念、智能体与工作流概念、构建四种智能体个性以及生产模式。",
+  "oneSentenceSummary": "本文介绍了一门免费的实践视频课程，内容涵盖 AI 智能体、LLM 基础概念、智能体与工作流概念、构建四种智能体个性以及生产模式。",
+  "summary": "本文宣布在 freeCodeCamp YouTube 频道发布了一门全面的 AI 智能体视频课程。课程内容包括 LLM 核心概念（变压器、令牌、温度），智能体与工作流之间的架构区别，以及四种不同智能体个性的实践实现：Zippy（编排者）、Savvy（使用 React 模式的研究专家）、Meshi（记忆管理器）和 Cody（代码/自动化专家）。课程还涵盖生产模式，如结构化 JSON 输出、防护栏、人在环路和安全沙箱执行，最后以 OpenClaw 开源个人助手框架的案例研究 conclusion，该案例追踪其 5 阶段循环和动态系统提示构造。该课程由 Mumshad Mannambeth 主讲，时长约 3 小时。",
+  "mainPoints": [
+    {
+      "point": "课程教授 LLM 核心概念，包括变压器、标记化和温度。",
+      "explanation": "学生学习生成式预训练变压器的工作原理，理解令牌以及温度如何影响模型可预测性。"
+    },
+    {
+      "point": "区分预定义的工作流路径和具有工具使用的自主智能体循环。",
+      "explanation": "课程涵盖架构差异，其中智能体使用工具决定下一步操作，而工作流是静态的。"
+    },
+    {
+      "point": "学习者构建具有专门功能的四种不同智能体个性。",
+      "explanation": "Zippy 负责编排，Savvy 使用 React 模式进行研究，Meshi 管理记忆，Cody 处理代码和自动化。"
+    },
+    {
+      "point": "涵盖防护栏和人在环路在内的生产模式和安全实践。",
+      "explanation": "主题包括结构化 JSON 输出、输入/输出防护栏、人工批准机制和安全沙箱执行。"
+    },
+    {
+      "point": "分析 OpenClaw 开源个人助手框架的端到端案例研究。",
+      "explanation": "案例研究追踪其 5 阶段循环、会话状态管理和基于实际研究的动态系统提示生成。"
+    }
+  ],
+  "keyQuotes": [
+    "我们刚在 freeCodeCamp.org YouTube 频道发布了一门关于 AI 智能体的深入实践视频课程",
+    "这门全程课程旨在带您从大型语言模型 (LLMs) 的绝对基础知识开始，逐步构建专业化的多智能体系统"
+  ],
+  "tags": [
+    "AI Agent",
+    "LLM",
+    "AI Course",
+    "AI 编程",
+    "入门"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 209,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783438518000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-07 23:35:18"
+}
