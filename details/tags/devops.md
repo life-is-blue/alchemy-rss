@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-08 09:32:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-08 13:00:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,41 +584,31 @@
 
 ### [Better-Auth-加入-Vercel](https://better-auth.com/blog/better-auth-joins-vercel)
 
-2026-07-07 23:52:22 | 标签: Better Auth, Vercel, 开源, 认证, 创业
-
-> Better Auth 创始人在文中宣布，这款开源认证框架将加入 Vercel。文章回顾了项目的起源：创始人当时需要一个支持多租户的 Next.js 认证方案，发现现有方案不足，于是自行开发了 Better Auth，后来还收购了 Auth.js/NextAuth.js。经过 Y Combinator 孵化并获得融资后，团队开始探索 Agent Auth 协议。加入 Vercel 让他们能够加倍投入开源使命，专注于解决智能体工作流安全这一新兴挑战，而无需分心搭建托管平台。
+2026-07-07 23:52:22
 
 
 
 ### [Cloudflare-正式加入英国政府网络韧性承诺](https://blog.cloudflare.com/cloudflare-joins-uk-cyber-resilience-pledge/)
 
-2026-07-07 22:00:01 | 标签: 网络韧性, Cloudflare, 英国政府, 网络安全, DDoS 防护
-
-> 本文宣布 Cloudflare 参与英国政府的网络韧性承诺——这是一项关于基础网络安全治理和董事会问责制的自愿性框架。Cloudflare 将其现有的安全理念——安全民主化、领导层问责和彻底透明——与该承诺的目标相结合。文章提供了网络威胁态势的背景，指出 Cloudflare 的网络每天拦截 2340 亿次威胁，并提及近期一次 31.4 Tbps 的 DDoS 攻击。文章阐述了 Cloudflare 的架构（网络即传感器、安全即默认、客户优先、透明）如何支撑韧性，详细说明了公司如何履行承诺中关于董事会责任、供应链安全和网络基础认证的承诺。本文将该承诺定位为对 Cloudflare 方案的认可，...
+2026-07-07 22:00:01
 
 
 
 ### [PostgreSQL-on-AWS：大小与基准测试-EC2-实例](https://postgres.saneengineer.com)
 
-2026-07-07 20:40:28 | 标签: PostgreSQL, AWS, 云基础设施, 数据库性能, 基准测试
-
-> 本文提供一个实用的交互式工具和一个详细的基准数据集，用于在 AWS EC2 上对 PostgreSQL 服务器进行规模估算。用户指定数据集大小（1GB、10GB、50GB）和目标吞吐量（RPS），工具会列出所有满足条件的实例 × 磁盘配置，并突出显示最便宜的选项。页面包含一个完整可排序的表格，列出 52 个已基准测试的配置，展示 RPS、延迟百分位数、每小时/每月成本、每美元 RPS 以及 Graviton （arm64） 和 x86-64 实例家族的余量。作者提供了精心挑选的推荐，例如最便宜的配置（m8g.large 在 gp3-baseline 上，$82/月）以及每美元 RPS 最佳的配...
+2026-07-07 20:40:28
 
 
 
 ### [欧洲公司网站主要由美国供应商提供---CipherCue](https://ciphercue.com/blog/european-web-hosting-vendor-share-2026)
 
-2026-07-07 20:07:01 | 标签: 基础设施, Cloudflare, 数字主权, 网站托管, BGP
-
-> CipherCue 的这项研究分析了 19，450 欧洲公司的主要网站在七个市场（英国、荷兰、意大利、西班牙、法国、德国、波兰）的互联网基础设施供应商。研究发现美国供应商为英国超过三分之二的网站提供服务，荷兰占多数，意大利、西班牙和法国则占最大群体份额。Cloudflare 单独占据了 15-37% 的网站，具体比例取决于国家。德国和波兰是例外，因为它们拥有强大的国内托管产业。研究强调这一指标衡量的是供应商归属（谁响应 DNS 请求），而非物理地理位置，并讨论了对数字主权讨论的影响。提供了方法论细节、局限性以及测量因素与未测量因素之间的明确区分。
+2026-07-07 20:07:01
 
 
 
 ### [Vercel-收购-Better-Auth，加速开源身份验证](https://vercel.com/blog/vercel-acquires-better-auth)
 
-2026-07-07 15:00:00 | 标签: Vercel, Better Auth, 身份验证, 开源, 收购
-
-> Vercel 宣布收购 Better Auth，一个开源 TypeScript 身份验证库，每周 npm 下载量超过 4.7M，拥有 850+ 贡献者。创始人 Bereket Engida 及核心团队加入 Vercel，继续开发 Better Auth 和智能体身份。此次收购符合 Vercel 的开放网络战略：框架无关、可移植、默认开源。该团队一直在构建 Agent Auth Protocol，使每个智能体能够携带自身具有作用域和可撤销权限的身份。Better Auth 仍保持免费、MIT 开源，社区治理和贡献模式不变。库名保持不变，社区可以继续在 GitHub 上贡献。
+2026-07-07 15:00:00
 
 
 

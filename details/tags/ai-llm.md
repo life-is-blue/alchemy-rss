@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-08 09:32:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-08 13:00:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [EdgeBench：衡量真实世界环境学习，发现新-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247493765&idx=1&sn=c949ca4147a445fc55a31005784f1d05)
 
-2026-07-07 11:41:00 | 标签: AI Agent, 环境学习, 评测集, Scaling Law, 大语言模型
-
-> 本文介绍字节跳动 Seed 最新推出的 EdgeBench 评测集，包含 134 个横跨六大领域的真实世界任务，每个任务支持至少 12 小时的连续交互。基于约 38000 小时的环境交互记录，研究发现 Agent 在持续学习中的整体表现高度遵循一条 log-sigmoid 曲线（平均 R²=0.998），并从图探索理论角度给出了解释。此外，对 2025 年 9 月至 2026 年 5 月间多代模型的对比表明，Agent 的学习速度大致每三个月翻一倍。EdgeBench 已开源 51 个任务及完整框架，旨在推动 Agent 环境学习能力的研究。
+2026-07-07 11:41:00
 
 
 
@@ -5002,17 +5000,13 @@
 
 ### [从「不敢发」到「天天发」：AI-Agent-时代的-CI/CD-生存指南](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509947&idx=1&sn=7d2cc8a374fb1454aeab9ca90ef28f5d)
 
-2026-07-07 18:08:00 | 标签: AI Agent, CI/CD, 发布工程, AI编程, 测试自动化
-
-> 本文基于阿里内部 a1 CLI（统一研发命令行工具）的实践经验，完整呈现了 AI Agent 驱动的 CI/CD 体系设计与实施。作者从四个层面展开：第一，代码准入阶段建立分层门禁体系（单元测试/E2E 覆盖率、真实 API 冒烟测试、文档同步检查、命令下线规范检查）并配备逃生舱机制，确保人工保留最终决策权；第二，针对 AI 提交的未知变更，设计了动态冒烟测试流水线，让 LLM 自动生成测试用例，并通过 Schema 约束、Prompt 工程、Deny-list 及两段式人工卡点、唯一 ID 隔离、Stop hook 自愈等五把锁约束 AI 随机性；第三，通过 CI 历史反馈闭环（fetch-...
+2026-07-07 18:08:00
 
 
 
 ### [从-Vibe-Coding-到-Harness——-一套大仓-AI-工程化实战](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802486&idx=1&sn=1d3872e7495a2a69857e9dcb5eb9c625)
 
-2026-07-07 17:39:00 | 标签: AI 工程化, AI 编程, 工作流, 门禁脚本, 工程实践
-
-> 文章围绕在真实大型跨仓库工程（30+微服务、10+前端微应用）中构建 AI 工程化体系展开。作者基于 TAB 平台的痛点——PRD 不可信、方案对不上代码、改完无人验证、交付环节散乱——设计了一套由 Rule、Skill、Sub Agent（4 个）、Workflow（13 阶段）、Scripts（7 道门禁）和 MCP 组成的 Harness 系统。重点阐述了 13 个阶段为何不能合并（每个阶段对应独立失败模式和回退位置）、Agent 从单 Agent 到 4 个角色的演进逻辑（解决上下文混杂、缺乏制衡、token 爆炸等问题）、人工关卡的半自动设计原则（关键节点必须留人且交互密度需控制在每...
+2026-07-07 17:39:00
 
 
 
@@ -12902,65 +12896,49 @@
 
 ### [Hugging-Face-模型在-Foundry-Managed-Compute-上的部署](https://huggingface.co/blog/microsoft/foundry-managed-compute)
 
-2026-07-07 23:20:06 | 标签: 模型部署, 开源权重模型, Foundry Managed Compute, Hugging Face, AI 推理
-
-> 这篇发表于 Hugging Face 博客的文章宣布 Hugging Face 模型现已可在 Microsoft Foundry Managed Compute 上使用。文章将 Foundry 定位为构建和运行智能体 AI 应用的平台，而 Managed Compute 则作为按 token 付费和预置吞吐量之外的第三种部署选项。文章核心是“Hugging Face 模型集合”——一个每周更新、经过精选的 Hugging Face 开源权重模型目录，只需一键即可部署到 Foundry 的托管 GPU 基础设施上。文章解释了筛选流程：识别热门模型，进行合规性和安全性检查（包括许可证审查和 tru...
+2026-07-07 23:20:06
 
 
 
 ### [Proxy-Pointer-RAG：无需语义预编译的时间推理](https://towardsdatascience.com/proxy-pointer-rag-temporal-reasoning-without-semantic-precompilation/)
 
-2026-07-07 23:00:00 | 标签: RAG, 时间推理, 企业 AI, LLM, 知识编译
-
-> 文章探讨了企业 RAG 系统中处理时间与跨文档查询的两种架构模式。LLM-Wiki 在数据摄入阶段通过从文档中提取实体和事实来编译规范页面，能快速作答，但前期成本高，且存在编译无用知识的风险。Proxy-Pointer 则构建一个结构树索引（基于正则表达式，零成本），并利用向量搜索结合章节感知元数据，仅在查询发起时才检索相关块。文章认为，对于大多数查询稀疏且文档不断演变的企业内容而言，惰性语义编译更具成本效益且更精准。对比中使用了追踪十年间收购情况等真实案例。文章还讨论了可解释性和缓存策略，并总结架构的选择取决于查询的可预测性和文档的稳定性。
+2026-07-07 23:00:00
 
 
 
 ### [使用-Gemma-4-进行零样本本地文档解析：将-PDF-视作图像](https://www.kdnuggets.com/zero-shot-local-document-parsing-with-gemma-4-treating-pdfs-as-images)
 
-2026-07-07 22:00:04 | 标签: AI 文档解析, Gemma 4, 视觉语言模型, PDF 处理, 零样本学习
-
-> 本文介绍了使用 Gemma 4（一种视觉语言模型）的零样本本地文档解析流水线，该流水线将 PDF 视作图像，以规避传统文本提取工具的局限性。它阐释了图像驱动方法如何同时适用于数字 PDF 与扫描 PDF，保留空间关系和布局结构（如表格、列、表单）。该流水线可处理供应商发票，提取供应商名称、发票编号、项目行、合计金额和到期日期，并输出结构化 JSON。Gemma 4 的架构特性——2D 旋转位置嵌入（RoPE）和层级嵌入（PLE）——提升了其空间感知能力和参数效率，使其适用于生产环境。文章提供了硬件前置要求、使用 PyMuPDF 进行 PDF‑to‑image 转换的代码示例、模型加载与推理步骤...
+2026-07-07 22:00:04
 
 
 
 ### [一个哈佛硕士在货代公司“装龙虾”后的顿悟：AI-根本进不去真实的中国工厂](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521937&idx=1&sn=5821d2a2a3384d1300d3b34e1548ae04)
 
-2026-07-07 16:00:00 | 标签: AI商业化, AI Agent, 产业AI, 创业, 企业服务
-
-> 文章从一次货代公司偶遇引出 AI 与真实产业之间的鸿沟。Lawted 发现大量中小企业仍依赖微信、Excel 等传统工具，AI 机会在于将现有技术带入真实场景。他提出 FDE（现场部署工程师）概念，区别于传统外包：起点模糊问题、终点业务结果、卖成果不卖人头。文章通过十维对比、跨境服装企业案例、定价'翻译'（数字员工年薪）等，详细阐释 FDE 模式。还分析了中国式 FDE 的独特路径：轻量、快速、依赖 Agent，非 Palantir 缩小版。介绍了 Ha7ch 加速器如何培养土 FDE，强调 Build in Public 和用小项目积累经验。最后给企业决策者和转型者建议。
+2026-07-07 16:00:00
 
 
 
 ### [肯定的几何学：在-LLM-情绪空间中映射谄媚行为-——-LessWrong](https://www.lesswrong.com/posts/v6uCyDNBKhrHevhzM/the-geometry-of-yes-mapping-sycophancy-inside-an-llm-s-1)
 
-2026-07-07 13:16:12 | 标签: LLM, AI 安全, Mechanistic Interpretability, 情绪表征, Sycophancy
-
-> 本文呈现了关于大语言模型内部情绪表征及其与谄媚行为因果关系的实验发现。基于此前对 Claude Sonnet 的研究，作者探究了开源模型（Qwen 2.5-32B-Instruct 和 Gemma 3 27B IT）是否形成类似的效价-唤醒情绪结构，并检验了"嵌入在积极效价中的顺从相关情绪（寻求认可、寻求肯定）驱动谄媚"这一假设。通过从合成故事中提取的 PCA 去噪情绪向量，以及在中层深度进行的干预实验，他们发现：（1）两个模型都复现了清晰的效价轴，积极情绪与消极情绪在 PC1 上明确分离；（2）向积极情绪方向干预会提升谄媚率和温暖感；（3）关键的是，当通过 Gram-Schmidt 投影将顺...
+2026-07-07 13:16:12
 
 
 
 ### [AINews-Fable-实战指南](https://www.latent.space/p/ainews-the-field-guide-to-fable)
 
-2026-07-07 12:44:53 | 标签: AI 新闻, Claude, Fable, Anthropic, 腾讯 Hy3
-
-> 本期 Latent Space 的 AINews 全面概述了近期 AI 发展。重点介绍了 Thariq 的“Fable 实战指南”演讲，涵盖四个部分：为 Claude 松绑、发现未知的未知、应对加速生产力带来的失落感，以及在权衡取舍上保持不妥协。关键新闻包括：腾讯开源 Hy3，一个拥有 295B 参数的 MoE 模型，并提供了 day-0 推理支持；Anthropic 关于 Claude 内部类似全局工作空间结构（J-space）的研究；AutomationBench-AA 智能体基准测试结果；以及推理效率、世界模型（MIRA）、语音识别和文档 AI 方面的进展。本期还精选了关于 LongCa...
+2026-07-07 12:44:53
 
 
 
 ### [蛰伏三年，前大疆员工做了款消费级纺织机，拿下红杉、顺为、米哈游等数亿融资｜产品观察](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651043009&idx=2&sn=9d10e98c30231971fc7a8c357340cd9b)
 
-2026-07-07 12:30:00 | 标签: 创业, 产品管理, 智能硬件, AI产品与应用, 消费电子
-
-> 文章以产品观察角度，详细介绍了前大疆工程师胡文鑫创办的浪爪智能（CLAWLAB），其核心产品是一款家用智能编织机。文章从创始人背景切入，说明他为何选择“编织”这一冷门品类——通过系统比对刺、钩、缝、织四大工艺，认定编织工艺最适于集成至一站式的智能化设备。团队从零构建编织控制算法和 AI Agent，解决时序动态控制、制版数字化等难题，将传统制版师数日工作压缩至几分钟。产品面向全球超亿潜在用户，规划四类渗透路径：存量编织爱好者、小 B 端经营者、大众消费者，最终成为家庭场景的小型柔性供应链。融资方面，公司已获红杉、顺为、元璟、米哈游等投资，累计超亿元。文章还涉及团队文化——对标大厂待遇，注重有节...
+2026-07-07 12:30:00
 
 
 
 ### [算不上-AGI，但-Anthropic-发现了-Claude-的潜意识！](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247490970&idx=1&sn=5cc57feb6e29de95532640664e0a82f9)
 
-2026-07-07 10:55:00 | 标签: LLM, 模型可解释性, AI 安全与对齐, 提示工程, 思维链
-
-> 文章详细介绍了 Anthropic 可解释性团队的最新论文，使用 J-lens（雅可比透镜）找到了 Claude 语言模型内部一个类似人类“全局工作空间”的结构。作者从弗洛伊德冰山模型与 Baars/Dehaene 的全局工作空间理论出发，解释了团队如何通过 J-lens 识别出模型中间层的 J 空间——一个占不到 10% 计算、可被读取和干预的“意识”区域。通过五组实验（可报告、可指挥、推理工作台、广播台、自动化绕开），验证了该空间的功能标准。文章还展示了 J-lens 在安全审计（检测内心隐藏意图、删除“这是测试”念头后攻击率上升）和反事实反思训练（植入诚实念头改善行为）方面的应用，并提炼...
+2026-07-07 10:55:00
 
 
 
@@ -44106,65 +44084,49 @@
 
 ### [如何使用-shadcn/ui-构建生产就绪的卡片组件](https://www.freecodecamp.org/news/how-to-build-production-ready-card-components-with-shadcn-ui/)
 
-2026-07-08 00:00:40 | 标签: shadcn/ui, React, Tailwind CSS, UI 组件, 前端开发
-
-> 本教程演示如何使用 shadcn/ui 和 Shadcn Space 构建四个生产就绪的卡片组件：预览卡片（房产列表带组合悬停效果）、分析卡片（仪表盘小部件带类型化属性和条件徽章）、统计卡片（响应式电商指标网格）和电商产品变体卡片（尺寸选择、愿望清单切换、波纹动画）。内容包括 Shadcn Space CLI 注册表的设置，然后解释每个组件的关键模式：组合悬停行为实现协调交互、溢出裁剪实现图像缩放、逻辑 CSS 属性支持从右到左布局、可选属性配合默认数据集提供灵活性、条件类合并使用 cn()、分隔符逻辑以及绝对定位的装饰图像。文章强调通过 shadcn/ui 的复制到项目方式拥有代码，并提供完...
+2026-07-08 00:00:40
 
 
 
 ### [AI-智能体入门](https://www.freecodecamp.org/news/ai-agents-for-beginners/)
 
-2026-07-07 23:35:18 | 标签: AI Agent, LLM, AI Course, AI 编程, 入门
-
-> 本文宣布在 freeCodeCamp YouTube 频道发布了一门全面的 AI 智能体视频课程。课程内容包括 LLM 核心概念（变压器、令牌、温度），智能体与工作流之间的架构区别，以及四种不同智能体个性的实践实现：Zippy（编排者）、Savvy（使用 React 模式的研究专家）、Meshi（记忆管理器）和 Cody（代码/自动化专家）。课程还涵盖生产模式，如结构化 JSON 输出、防护栏、人在环路和安全沙箱执行，最后以 OpenClaw 开源个人助手框架的案例研究 conclusion，该案例追踪其 5 阶段循环和动态系统提示构造。该课程由 Mumshad Mannambeth 主讲，时...
+2026-07-07 23:35:18
 
 
 
 ### [AWS-扩展-DevOps-智能体功能，推出-AI-驱动的发布管理以在投产前验证代码](https://www.infoq.com/news/2026/07/aws-devops-ai-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-07 20:00:00 | 标签: DevOps, AI Agent, Release Management, Software Engineering, CI/CD
-
-> 本文报道了 AWS 宣布为其 DevOps 智能体推出全新发布管理功能，目前处于预览阶段。Release Readiness Review（发布就绪评审）和 Autonomous Release Testing（自主发布测试）这两项功能将智能体的角色从部署后的事故调查延伸至合并前的验证环节。Release Readiness Review 构建跨仓库依赖的知识图谱，并依据自然语言定义的工程标准及 AWS Well-Architected 最佳实践来评估代码变更。Autonomous Release Testing 则针对每次变更生成并执行定制化的测试计划，在类生产环境中运行，产出结构化的评审输...
+2026-07-07 20:00:00
 
 
 
 ### [“如果你不能用-300-行代码写个-Cursor，这行你就别待了！”Ralph-Loop-创造者、Claude-Code-核心技术设计者的暴论](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288360&idx=1&sn=d257a460cae156cb4388b2ad571ffd00)
 
-2026-07-07 16:25:00 | 标签: AI编程, AI Agent, 代码审查, 职业成长, 技术趋势
-
-> 文章编译自对 Ralph Loop 发明者、Claude Code 核心技术设计者 Geoffrey Huntley 的播客访谈。他提出「软件开发已死」的观点，认为任何人都能通过 AI 生成代码，但软件工程师与普通开发者的区别在于能解释底层原理并重建工具。他介绍 K 型分化概念——模型优先公司正与传统公司拉开差距，建议开发者学习形式化验证、属性测试和强类型语言。详解 Ralph Loop 的「痴呆」设计哲学：通过极简的循环和刻意遗忘实现长时间运行 Agent。质疑现有代码审查文化，提出基于风险分级的审查模式。最后建议开发者应能在几小时内重建 Cursor，关注软件验证而非代码生成。
+2026-07-07 16:25:00
 
 
 
 ### [可复制的-AI-Coding-全栈实战：比-OpenSpec-更轻量、更丝滑](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288360&idx=2&sn=15df01ddd07b362a9a627d2952aa26d1)
 
-2026-07-07 16:25:00 | 标签: AI编程, AI Agent, 提示工程, 大语言模型, 软件工程
-
-> 文章整理自淘宝闪购高级技术专家邓立山在 QCon 2026 北京站的分享。作者从 AI 编码在实际工程中“差那么点意思”的痛点出发，分析了问题根源：AI 的幻觉与概率性、人机协同工程缺失、认知固化。核心论点是让 AI 写出可控的生产级代码，本质是将隐性知识显性化，用规范约束 AI 而非人。团队从减少幻觉、工程宪法、编码规范、任务拆分、质量审查五个方面系统实践，设计了一套分层可扩展的规范体系（rules+skills+spec），覆盖需求分析、编码、CR 全流程。通过一个 66 文件、5000 行代码的案例展示了一次性生成和迭代优化的效果。团队推广采用技术分享、月度评审、飞轮效应等策略，使 AI...
+2026-07-07 16:25:00
 
 
 
 ### [设计可靠的-AI-平台：确定性工具与探索性智能体](https://www.infoq.com/presentations/reliable-ai-platforms/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-07 16:03:00 | 标签: AI 智能体, LLM, 智能体架构, 可靠性工程, 提示工程
-
-> NVIDIA 工程师 Aaron Erickson 讲述了他从失败的 HR 创业公司到为 GPU 集群构建 AI 驱动的可观测性系统的历程。他介绍了 LLo11yPop 项目，该项目使用由专用智能体组成的层级结构——检索智能体、分析智能体、编排智能体和行动智能体——来监控和管理 GPU 集群。关键经验包括：限制 LLM 任务范围以提高可靠性；使用扁平模式简化查询；为已知故障模式提供确定性规则作为退出路径；利用稀有上下文（公司特定术语）避免幻觉。演讲提倡一种平衡的方法：工具用于确定性（确定性脚本、操作手册），智能体用于发现（探索性分析），并采用测试金字塔对每个层级的智能体进行评估。
+2026-07-07 16:03:00
 
 
 
 ### [HubSpot-如何将语义搜索扩展至-200-亿向量](https://www.infoq.com/news/2026/07/hubspot-semantic-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-07 16:00:00 | 标签: 向量搜索, AI 基础设施, Kubernetes, RAG, Qdrant
-
-> 该文章发表于 InfoQ，报道了 HubSpot 构建名为 VaaS（向量即服务）的大规模向量搜索基础设施的历程。该系统目前在 五个地区 、 两个环境 中管理 200+ 个索引 、 140+ 个集群 上的 200 亿 向量，写入流量峰值达到 每秒 100，000 次请求。HubSpot 选择 Qdrant 是因为其 本地部署 能力、命名向量、混合搜索以及成本控制功能。文章解释了团队如何从 基于 Helm 的手动管理 转向内部 Kubernetes Operator 框架，该框架自动化 集群创建 、 分片移动 、 扩容 和 恢复。这一转变使 集群启动 时间从 数小时 缩短至 数分钟 ，并消除了对...
+2026-07-07 16:00:00
 
 
 
 ### [Zoom-vs.-Microsoft-Teams：哪个更好？|-Zapier](https://zapier.com/blog/zoom-vs-teams)
 
-2026-07-07 13:00:00 | 标签: 协作工具, 视频会议, AI 生产力, Microsoft Teams, Zoom
-
-> 文章深入对比了 Zoom 和 Microsoft Teams，重点介绍了它们如何演变为一体化协作平台。Zoom 最初是一款视频会议工具，现已扩展为完整的生产力套件（Zoom Workplace），包含聊天、VoIP、邮件、日历以及 AI 驱动的文档创建等功能。Microsoft Teams 基于 Microsoft 365 生态系统构建，凭借原生文档编辑和 Loop 组件在内部协作方面表现出色。主要差异包括：Zoom 在外部会议体验和视频/音频质量上更胜一筹，Teams 则在价格和深度 Microsoft 365 集成方面更具优势，且 Zoom 拥有更先进的 AI 功能（例如用于智能体工作流的...
+2026-07-07 13:00:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-08 09:32:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-08 13:00:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -710,17 +710,13 @@
 
 ### [如何使用-JavaScript-构建基于浏览器的-PDF-OCR-转文本工具](https://www.freecodecamp.org/news/build-pdf-ocr-to-text-converter-javascript/)
 
-2026-07-08 00:23:22 | 标签: PDF 文字识别, Tesseract.js, PDF.js, JavaScript, Web 开发
-
-> 本文是一份分步教程，指导如何创建基于浏览器的 PDF OCR 工具。它解释了为何扫描版 PDF 需要 OCR，以及 PDF.js 与 Tesseract.js 的组合如何工作，并完整讲解了整个实现过程：搭建项目、创建拖放上传界面、渲染页面预览、配置 OCR 选项（语言、页面范围、精度模式、图像增强）、逐页提取文本、显示进度以及导出结果为 TXT 或 JSON。所有处理均在本地完成，确保隐私。教程包含完整的 HTML、CSS 和 JavaScript 代码片段，并对每一步进行了解释。还讨论了实际应用场景和常见陷阱。
+2026-07-08 00:23:22
 
 
 
 ### [Node.js-26：Temporal-API-默认启用、V8-14.6-及一系列弃用](https://www.infoq.com/news/2026/07/nodejs-26-temporal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-07 14:51:00 | 标签: Node.js, JavaScript 运行时, Temporal API, V8 引擎, 弃用
-
-> Node.js 26 作为 Current 版本线正式发布，Temporal API 无需实验性标志即可使用，为传统的 Date 处理提供了可靠的替代方案，支持时区、日历和时长。V8 引擎升级至 14.6，带来全新的 Map 更新辅助方法（`getOrInsert`、`getOrInsertComputed`）、`Iterator.concat` 以及 JIT / GC 性能改进。Undici 升级至 8.0.2，增强了内置的 `fetch()`。该版本还移除了 `http.Server.prototype.writeHeader()`、`_stream_*` 模块以及 `--experime...
+2026-07-07 14:51:00
 
 
 
