@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-09 09:55:15 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-09 13:56:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,17 +584,13 @@
 
 ### [Airbnb-分享-Sitar-Agent-动态配置-Sidecar-在-Kubernetes-服务中的架构](https://www.infoq.com/news/2026/07/sitar-agent-sidecar-config/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-08 22:25:00 | 标签: Kubernetes, Sidecar, 动态配置, 微服务, Java
-
-> Airbnb 工程师详细介绍了 Sitar-agent，一个 Kubernetes Sidecar，负责在数万个 Pod 之间分发动态配置更新，更改每分钟传播数次。该 Sidecar 与应用程序容器一同运行，通过共享文件系统和内存缓存本地提供配置数据，使 Java、Python、Go、TypeScript 和 Ruby 编写的服务无需联系中央配置服务即可读取配置。作为重新设计的一部分，团队用 Java 重写了该代理，增加了基于 S3 的快照引导过程，并在评估 RocksDB 后将本地数据存储从 Sparkey 替换为 SQLite。快照让新 Pod 能够快速加载最新配置，缩短启动时间，并确保即...
+2026-07-08 22:25:00
 
 
 
 ### [互联网为何频繁崩溃？深入剖析-AWS-US-East-1](https://www.freecodecamp.org/news/why-does-the-internet-keep-breaking-a-deep-dive-into-aws-us-east-1/)
 
-2026-07-08 22:05:37 | 标签: 云原生 / DevOps, 系统设计, AWS, 站点可靠性工程, 科技新闻
-
-> 本文介绍了一段 freeCodeCamp 视频论文，该论文调查了 AWS US-East-1 区域为何如此容易发生导致互联网中断的大规模故障。文章将问题描述为不是一系列孤立事件，而是弗吉尼亚北部单一数据中心集群内部复杂性叠加的故事，该集群已成为现代互联网的“连接组织”。论文追溯了故障时间线，从 2011 年的网络升级错误到 2025 年的缺失 DNS 记录，以说明此规模系统的故障往往是被遗忘或被忽视的方式，而非可预测的方式。
+2026-07-08 22:05:37
 
 
 
