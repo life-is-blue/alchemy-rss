@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-10 05:12:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-10 07:03:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -37049,11 +37049,11 @@
 
 
 
-### [Karpathy-最新访谈：Vibe-Coding-只是开始，真正重要的是-Agentic-Engineering](https://baoyu.io/blog/andrej-karpathy-from-vibe-coding-to-agentic-engineering)
+### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
 
 2026-04-29T00:00:00.000Z
 
-> Karpathy 认为，AI 编程的下一步不是更快写代码，而是用 Agentic Engineering 守住软件质量。
+> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
 
 
 
