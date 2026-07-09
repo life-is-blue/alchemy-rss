@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-09 06:56:49 | [返回首页](/README.md)
+**更新时间**: 2026-07-09 09:55:15 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13397)
+- [AI & 大模型](#ai-llm) (13442)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (871)
-- [DevOps](#devops) (639)
+- [前端与全栈](#frontend-fullstack) (874)
+- [DevOps](#devops) (641)
 - [产品与商业](#product-business) (43)
-- [其他](#other) (6158)
+- [其他](#other) (6175)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [智能体的数据之道](https://huggingface.co/blog/nvidia/open-data-for-agents) - AI 精选
 - [EdgeBench：衡量真实世界环境学习，发现新-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247493765&idx=1&sn=c949ca4147a445fc55a31005784f1d05) - AI 精选
 - [语言模型中的全局工作空间](https://www.anthropic.com/research/global-workspace) - AI 精选
 - [腾讯混元-Hy3-发布：Agent-能力和产品体验跃升](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247497981&idx=1&sn=9d5226192f9a29ec5f0c6796fa34ac4f) - AI 精选
@@ -41,9 +42,8 @@
 - [Kimi-K2.7-Code-编程模型已上线-Kimi-Code、API-开放平台](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488546&idx=1&sn=93d0057b04afc0c85495c6fd9a3b8516) - AI 精选
 - [神话催生寓言，Cursor-的-Composer-2.5，智能体构建智能体](https://www.deeplearning.ai/the-batch/issue-357) - AI 精选
 - [为什么-AI-还没有取代软件工程师，而且也不会](https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers) - AI 精选
-- [语音智能体能否处理双语客户？前沿-ASR-在语码转换语音上的基准测试](https://huggingface.co/blog/ServiceNow-AI/code-switching) - AI 精选
 
-- [查看全部 13397 篇...](/details/tags/ai-llm.md)
+- [查看全部 13442 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -81,6 +81,7 @@
 
 
 - [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025) - AI 精选
+- [宣布-TypeScript-7.0-——-TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) - 编程 精选
 - [从延迟到即时：GitHub-Issues-导航性能现代化改造](https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/) - 编程 精选
 - [DPoP-存储悖论：为什么基于浏览器的持有证明仍然是一个未解决的问题](https://www.infoq.com/articles/dpop-key-storage-unsolved-problem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [TypeScript-6.0-发布公告---TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0) - 编程 精选
@@ -99,9 +100,8 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
-- [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 
-- [查看全部 871 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 874 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 639 篇...](/details/tags/devops.md)
+- [查看全部 641 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6158 篇...](/details/tags/other.md)
+- [查看全部 6175 篇...](/details/tags/other.md)
 
 

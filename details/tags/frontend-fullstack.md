@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-09 06:56:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-09 09:55:15 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -9,6 +9,14 @@
 ### [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025)
 
 2025-04-01 20:05:02
+
+
+
+### [宣布-TypeScript-7.0-——-TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/)
+
+2026-07-09 02:50:32 | 标签: TypeScript, 编译器, 性能, 开源, 开发者工具
+
+> 微软宣布 TypeScript 7.0 正式发布，这是对编译器在 Go 中的完全重写，完整构建速度提升 8-12 倍，内存使用最多减少 26%。文章详细列出了在 VS Code、Sentry 和 Bluesky 等大型开源项目上的性能基准测试结果，并解释了新的并行化架构，可通过 `--checkers` 与 `--builders` 标志进行精细调优。改进后的 `--watch` 模式基于 Parcel 文件监视器的 Go 移植版本重建，提供稳定的跨平台性能。通过 `@typescript/typescript6` 包的并排安装机制，保持了与 TypeScript 6.0 的兼容性。该版本已由...
 
 
 
@@ -378,7 +386,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -390,7 +398,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -705,6 +713,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [使用-TypeScript-提升你的-React-技能](https://www.freecodecamp.org/news/level-up-your-react-skills-with-typescript/)
+
+2026-07-08 22:28:51 | 标签: React, TypeScript, 前端与 Web, 开发者工具, 代码质量
+
+> 本文介绍了 freeCodeCamp.org YouTube 频道上一个新的完整教程，该教程专注于将 TypeScript 集成到 React 开发中。课程由 Rachel Johnson 主讲，引导学习者重构一个真实项目，使其完全类型安全。内容涵盖原生 TypeScript 复习、为显式状态管理键入 `useState`、为组件架构定义自定义 prop 类型，以及掌握函数 props 以实现可靠的回调处理。其目标是为在现代 React 工作流中使用 TypeScript 打下坚实基础，以便尽早发现 Bug。
+
+
+
+### [十年之遥：为-Studio375-十周年设计互动漫画](https://tympanus.net/codrops/2026/07/08/ten-years-away-designing-an-interactive-comic-for-studio375s-tenth-anniversary/)
+
+2026-07-08 18:32:42 | 标签: WebGL, React Three Fiber, GSAP, Three.js, 交互设计
+
+> Studio375 选择用叙事驱动的互动漫画而非传统的作品集来纪念十年历程。插画师 Davide Grazi 创作了十个年度章节，每章捕捉了人员的加入、离开及工作室的氛围。该体验以滚动驱动的横向漫画形式构建，使用 React Three Fiber、Lenis 实现平滑滚动、GSAP 制作动画，以及无头 WordPress 后端管理内容。视觉效果包括基于 GLSL 着色器、随滚动速度动态变化的背景，3D 翻页书导航，鼠标轨迹的半色调效果，以及通过 Howler.js 管理的按年音频轨道（带有网络感知加载）。文章还反思了为自己创作所带来的独特压力、关于工作室身份的领悟，以及完成个人项目的价值——...
 
 
 
@@ -1470,13 +1494,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1626,13 +1650,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3126,13 +3150,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4836,13 +4860,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

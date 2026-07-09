@@ -1,0 +1,60 @@
+{
+  "id": "RAW_ca966b69",
+  "title": "我们开展政府与国家安全合作的方式",
+  "url": "https://openai.com/index/government-national-security-partnerships",
+  "date": "2026-07-08 21:30:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"w-full\">\n   <div class=\"relative w-full\" style=\"--hero-aspect-ratio:16/9;--hero-aspect-ratio-mobile:3/4\">\n    <div class=\"w-full toc-visible:md:grid-cols-9 gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px]\">\n     <div class=\"col-span-full toc-visible:@md:col-span-8 toc-visible:@md:col-start-1\">\n      <div class=\"relative flex flex-col items-center text-center\">\n       <div class=\"mb-8 flex flex-wrap gap-4 justify-center\">\n        <p class=\"text-meta text-primary-100\">\n         <br>\n        </p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"contents\">\n   <div class=\"w-full toc-visible:md:grid-cols-9 gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px]\">\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>Governments are beginning to use frontier AI systems for increasingly important work, including in national security. That creates new imperatives for AI labs, governments, and civil society to work together on how these tools should be used in sensitive settings.&nbsp;</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>We believe democratic societies should be able to use AI to protect people, defend critical infrastructure, deliver public services, and respond to emerging threats, including in areas like cyber defense and biological security where AI can meaningfully advantage defenders. But increasingly capable AI systems must be deployed in ways that reinforce democratic accountability, meaningful human judgment, and the rule of law, and that strengthen democratic institutions rather than concentrate power.</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><b><span>Today we are publishing OpenAI’s National Security Principles to offer transparency into how we approach government partnerships and national security uses of our technology.</span></b></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>These principles reflect a cross-company effort to develop a more comprehensive approach to our work in the national security and law enforcement area as our technology continues to advance. We engaged a leading national security expert, David Kris, to help facilitate the process and provide his independent judgment, held listening sessions across the company, and engaged employees representing a range of teams from research and safety to policy and government partnerships.</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>We are publishing them now as we expand our work with the U.S. government and allied partners in critical defensive areas, particularly cyber and biosecurity. In the past month, as part of our </span><a class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" href=\"https://openai.com/daybreak/\"><span>Daybreak</span>⁠</a><span> cyber defense program, we have already established Trusted Access for Cyber partnerships with Australia, Canada, Japan, Republic of Korea, France, Germany, Poland, the Netherlands and EU institutions like ENISA. We also have a growing and trusted partnership with the UK government around cyber, testing and evaluation. We are taking a similar approach in biosecurity. Last month, we also announced expanded trusted access to our GPT‑Rosalind model for select U.S. government and allied partners supporting public health and biodefense missions.</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>These principles apply to our current and future national security and law enforcement partnerships, including our existing work with the Department of War. When we announced our agreement earlier this year, we articulated several contractual restrictions: no use of OpenAI technology for mass domestic surveillance, no use of OpenAI technology to direct autonomous weapons systems, and no use of OpenAI technology for high-stakes automated decisions. Those restrictions are consistent with the principles we are sharing today.</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>We believe the right thing to do is to be clear about how our technology can and cannot be used, and to be transparent about them. But many of the most consequential questions about AI in government, especially in national security, should be answered through the democratic process. The role of companies like ours is to help inform those decisions, not make them alone. That is why we support legislative efforts to establish safeguards around some of the highest-risk military uses of AI, including in the contexts of domestic surveillance, autonomous weapons systems, and other high-risk uses that directly affect U.S. national security.</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>Read the principles </span><a href=\"https://cdn.openai.com/pdf/openai-principles-for-national-security-partnerships.pdf\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\" rel=\"noopener\"><span>here</span>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span>.</span></p>\n    </div>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"flex w-auto\">\n    <div class=\"w-full no-scrollbar overflow-x-auto overflow-y-hidden\">\n     <div class=\"flex min-w-224 px-6 pe-6 flex-none\">\n      <div class=\"relative mb-8 ps-6 min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布其《国家安全原则》，阐述其如何开展政府合作和人工智能在国家安全中的防御性用途，明确限制大规模监视、自主武器和高风险自动化决策。",
+  "oneSentenceSummary": "OpenAI 发布其《国家安全原则》，阐述其如何开展政府合作和人工智能在国家安全中的防御性用途，明确限制大规模监视、自主武器和高风险自动化决策。",
+  "summary": "OpenAI 宣布发布其《国家安全原则》，该原则通过跨公司协作并吸纳外部专家意见而制定。这些原则规定了 OpenAI 如何与政府及国家安全伙伴（包括执法机构）开展合作。公司强调，AI 的部署应有利于强化民主问责、人类判断和法治。文章详细介绍了现有合作项目，例如与多个盟国共同开展的 Daybreak 网络防御计划，以及为生物防御领域提供 GPT‑Rosalind 受信访问权限。文章重申了已与美国战争部（Department of War）签订的合同中存在的限制条款：禁止国内大规模监视、禁止自主武器系统、禁止高风险自动化决策。OpenAI 还支持针对最高风险军事用途的 AI 立法保障。这些原则旨在提高透明度，并为关于 AI 在国家安全领域应用的民主讨论提供信息。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 发布一套原则以指导其国家安全及执法合作。",
+      "explanation": "这些原则是公司范围内努力的结果，经过独立协调，涵盖当前及未来的合作项目，并为可接受的用途提供透明度。"
+    },
+    {
+      "point": "AI 的部署必须维护民主价值观、人类判断和法治。",
+      "explanation": "OpenAI 认为，AI 在国家安全领域的应用应保护人员和关键基础设施，同时强化民主制度，而非集中权力。"
+    },
+    {
+      "point": "现有合作项目包括与盟国开展的网络防御和生物安全计划。",
+      "explanation": "Daybreak 计划为澳大利亚、加拿大、日本、韩国及多个欧洲国家提供 GPT 模型的受信访问权限，用于网络防御；GPT‑Rosalind 则为美国及部分盟国合作伙伴支持公共卫生和生物防御。"
+    },
+    {
+      "point": "OpenAI 已通过合同禁止大规模监视、自主武器和高风险自动化决策。",
+      "explanation": "这些限制条款在与战争部的协议中已经确立，与最新发布的原则保持一致。"
+    },
+    {
+      "point": "OpenAI 支持通过立法监管最高风险的 AI 军事用途。",
+      "explanation": "公司认为，关于 AI 在国家安全领域的重大决策应通过民主程序决定，而非由公司单独做出，并支持对国内监视和自主武器进行监管保障。"
+    }
+  ],
+  "keyQuotes": [
+    "我们相信，民主社会应当能够利用 AI 来保护人民、捍卫关键基础设施、提供公共服务并应对新兴威胁，包括在网络防御和生物安全等领域——在这些领域，AI 能够为防御者带来显著优势。",
+    "我们认为，正确的做法是明确我们的技术可以如何使用、不能如何使用，并保持透明。",
+    "像我们这样的公司的职责是帮助提供信息以支持这些决策，而不是独自做出决策。"
+  ],
+  "tags": [
+    "AI 治理",
+    "国家安全",
+    "AI 安全与对齐",
+    "政府合作",
+    "AI 政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 505,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783517400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-08 21:30:00"
+}

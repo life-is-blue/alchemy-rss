@@ -1,0 +1,56 @@
+{
+  "id": "RAW_19402596",
+  "title": "如何使用 FastMCP 为本地 AI 智能体构建 MCP 服务器",
+  "url": "https://www.freecodecamp.org/news/build-an-mcp-server-with-fastmcp-for-local-ai-agent/",
+  "date": "2026-07-09 02:56:26",
+  "author": "Darsh Shah",
+  "siteName": "freeCodeCamp",
+  "content": null,
+  "aiSummary": "本教程逐步讲解如何使用 FastMCP 构建 MCP 服务器、连接本地和远程 MCP 服务器，并将其接入由本地 Ollama/Qwen 模型驱动的 LangChain v1 智能体。",
+  "oneSentenceSummary": "本教程逐步讲解如何使用 FastMCP 构建 MCP 服务器、连接本地和远程 MCP 服务器，并将其接入由本地 Ollama/Qwen 模型驱动的 LangChain v1 智能体。",
+  "summary": "本教程演示如何使用 FastMCP 构建 MCP 服务器并将其与 LangChain v1 智能体集成。作者将 MCP 解释为向 AI 智能体暴露工具的标准协议，然后逐步讲解如何设置包含两个实用工具（current_time 和 word_count）的本地 MCP 服务器、如何通过 HTTP 连接到 DeepWiki 的公共远程 MCP 服务器，以及如何使用 langchain-mcp-adapters 将两者合并为统一的智能体。智能体通过 Ollama 和 Qwen 模型在本地运行，确保对话数据保留在设备上。教程提供了 MCP 服务器和智能体的完整 Python 代码，以及测试运行示例，展示了智能体在本地工具和远程工具之间正确路由的能力。",
+  "mainPoints": [
+    {
+      "point": "MCP 为 AI 智能体的工具暴露提供标准化协议，使工具能够在不同客户端和框架之间复用。",
+      "explanation": "正如 REST 标准化了 Web API 一样，MCP 为 AI 工具提供了共享协议。将工具编写为 MCP 服务器一次，任何兼容的客户端都可以使用它，无论服务器运行在本地还是远程。"
+    },
+    {
+      "point": "FastMCP 通过从 Python 类型提示和文档字符串自动生成工具架构，简化了 MCP 服务器的创建。",
+      "explanation": "使用 @mcp.tool 装饰函数会自动处理 JSON-RPC 消息传递、架构生成和传输层细节。文档字符串的措辞直接影响 LLM 决定是否调用每个工具。"
+    },
+    {
+      "point": "langchain-mcp-adapters 抽象了本地（stdio）和远程（HTTP）MCP 服务器之间的区别。",
+      "explanation": "智能体代码接收统一的工具列表，无论工具来自本地机器上的子进程还是远程 HTTP 端点。MultiServerMCPClient 透明地处理两种传输类型。"
+    },
+    {
+      "point": "Qwen 4B 等本地模型可以正确路由工具调用，但由于幻觉风险较高，需要进行抽查验证。",
+      "explanation": "测试运行展示了智能体调用 current_time 处理时间查询、调用 DeepWiki 的 ask_question 处理代码库查询，以及对于事实性问题（如法国首都）完全跳过工具的情况。"
+    }
+  ],
+  "keyQuotes": [
+    "将工具编写为 MCP 服务器一次，任何兼容的客户端都可以复用它。",
+    "智能体代码不知道工具是运行在本地机器上的子进程还是远程服务器上。它只看到带有名称和描述的工具列表。",
+    "本地模型比托管的前沿模型更小，更容易产生幻觉。抽查验证有助于发现这些问题。"
+  ],
+  "tags": [
+    "MCP 协议",
+    "FastMCP",
+    "LangChain",
+    "Ollama",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 84,
+  "wordCount": 2019,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783536986000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-09 02:56:26"
+}

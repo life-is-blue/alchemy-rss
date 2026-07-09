@@ -1,0 +1,57 @@
+{
+  "id": "RAW_b5b101bf",
+  "title": "GitHub - gbouziden/skillrail：AI 代理技能的单一版本化源，可编译为 Claude Code、Cursor、Copilot、Windsurf 和 AGENTS.md。零依赖。",
+  "url": "https://github.com/gbouziden/skillrail",
+  "date": "2026-07-08 22:00:16",
+  "author": "skillrail",
+  "siteName": "Hacker News - Newest: \"AI Agent\"",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown-heading\" dir=\"auto\"></div>\n  <p dir=\"auto\"><strong>One skill source. Every agent surface.</strong></p>\n  <p dir=\"auto\">Your org writes the same agent instructions five times: a Claude Code skill, a Cursor rule, a Copilot instructions file, a Windsurf rule, and an <code>AGENTS.md</code> section. They drift immediately, nobody knows which version is current, and there's no owner, no versioning, and no review gate.</p>\n  <p dir=\"auto\">Anthropic's own enterprise guidance tells you to solve this yourself:</p>\n  <blockquote>\n   <p dir=\"auto\">\"Custom Skills do not sync across surfaces… If your organization deploys Skills across multiple surfaces, implement your own synchronization process.\" \"Maintain an internal registry for each Skill with: Purpose… Owner… Version… Dependencies… Evaluation status.\" — <a href=\"https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise\" rel=\"nofollow\">Anthropic Agent Skills enterprise docs</a></p>\n  </blockquote>\n  <p dir=\"auto\">skillrail is that missing piece: a canonical, versioned skill registry that <strong>compiles</strong> to every tool your teams actually use.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">How it works</h2>\n  </div>\n  <p dir=\"auto\">Skills live once, in the open Anthropic <code>SKILL.md</code> format, with org metadata:</p>\n  <div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"skills/\n  deploy-checklist/\n    SKILL.md          # frontmatter: name, description, version, owner, targets\n    reference.md      # optional supporting files (copied for Claude)\">\n   <pre class=\"notranslate\"><code>skills/\n  deploy-checklist/\n    SKILL.md          # frontmatter: name, description, version, owner, targets\n    reference.md      # optional supporting files (copied for Claude)\n</code></pre>\n  </div>\n  <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"npm i -g skillrail\nskillrail init                 # set up skillrail.json + skills/ in a repo\nskillrail add deploy-checklist # scaffold a skill\nskillrail sync                 # compile + write to every configured target\">\n   <pre>npm i -g skillrail\nskillrail init                 <span class=\"pl-c\"><span class=\"pl-c\">#</span> set up skillrail.json + skills/ in a repo</span>\nskillrail add deploy-checklist <span class=\"pl-c\"><span class=\"pl-c\">#</span> scaffold a skill</span>\nskillrail sync                 <span class=\"pl-c\"><span class=\"pl-c\">#</span> compile + write to every configured target</span></pre>\n  </div>\n  <p dir=\"auto\"><code>sync</code> generates, idempotently, with do-not-edit provenance headers:</p>\n  <markdown-accessiblity-table>\n   <table>\n    <thead>\n     <tr>\n      <th>Target</th>\n      <th>Output</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td><code>claude</code></td>\n      <td><code>.claude/skills/&lt;name&gt;/</code> (verbatim, supporting files included)</td>\n     </tr>\n     <tr>\n      <td><code>cursor</code></td>\n      <td><code>.cursor/rules/&lt;name&gt;.mdc</code></td>\n     </tr>\n     <tr>\n      <td><code>copilot</code></td>\n      <td><code>.github/instructions/&lt;name&gt;.instructions.md</code></td>\n     </tr>\n     <tr>\n      <td><code>windsurf</code></td>\n      <td><code>.windsurf/rules/&lt;name&gt;.md</code></td>\n     </tr>\n     <tr>\n      <td><code>agentsmd</code></td>\n      <td>one managed block in <code>AGENTS.md</code> (Codex, Jules, Amp, …)</td>\n     </tr>\n    </tbody>\n   </table>\n  </markdown-accessiblity-table>\n  <p dir=\"auto\">Per-skill targeting: <code>targets: [claude, cursor]</code> in frontmatter overrides the project default.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Share skills across the org</h2>\n  </div>\n  <p dir=\"auto\">Any git repo is a registry — platform team publishes, product teams consume:</p>\n  <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"skillrail pull git@github.com:acme/agent-skills.git deploy-checklist\nskillrail sync\">\n   <pre>skillrail pull git@github.com:acme/agent-skills.git deploy-checklist\nskillrail sync</pre>\n  </div>\n  <p dir=\"auto\">The lockfile records origin + commit for every installed skill.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Governance built in</h2>\n  </div>\n  <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"skillrail check    # lint: description present &amp; ≤1024 chars, owner set, semver,\n                   # body ≤500 lines — exit 1 on failure (CI gate)\nskillrail status   # exit 2 if any target is stale, missing, or DRIFTED\n                   # (drift = someone hand-edited a generated file; flagged before sync overwrites it)\nskillrail list     # inventory: version, owner, targets, origin\">\n   <pre>skillrail check    <span class=\"pl-c\"><span class=\"pl-c\">#</span> lint: description present &amp; ≤1024 chars, owner set, semver,</span>\n                   <span class=\"pl-c\"><span class=\"pl-c\">#</span> body ≤500 lines — exit 1 on failure (CI gate)</span>\nskillrail status   <span class=\"pl-c\"><span class=\"pl-c\">#</span> exit 2 if any target is stale, missing, or DRIFTED</span>\n                   <span class=\"pl-c\"><span class=\"pl-c\">#</span> (drift = someone hand-edited a generated file; flagged before sync overwrites it)</span>\nskillrail list     <span class=\"pl-c\"><span class=\"pl-c\">#</span> inventory: version, owner, targets, origin</span></pre>\n  </div>\n  <p dir=\"auto\">Drop <code>check</code> + <code>status</code> into CI and skill quality/consistency becomes a merge requirement, exactly the lifecycle Anthropic's enterprise docs prescribe — but automated.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Why this exists (the market gap, verified mid-2026)</h2>\n  </div>\n  <ul dir=\"auto\">\n   <li>Agent observability/eval is saturated (Braintrust $80M Series B; Langfuse acquired by ClickHouse; promptfoo acquired by OpenAI).</li>\n   <li>Memory, orchestration, and interop are absorbed by funded startups and hyperscalers (Mem0, Letta; A2A in Copilot Studio and Bedrock AgentCore).</li>\n   <li>But <strong>skill/instruction management across tools and teams has no incumbent</strong>: vendors each ship their own silo format, Anthropic explicitly punts cross-surface sync to customers, and 97% of orgs report they haven't scaled agents across the organization.</li>\n  </ul>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Roadmap (the paid layer)</h2>\n  </div>\n  <p dir=\"auto\">The CLI stays MIT/open-source. The hosted product adds what teams pay for:</p>\n  <ol dir=\"auto\">\n   <li><strong>Hosted registry</strong> — private org registry with RBAC, review/approval flow on skill versions, and audit log.</li>\n   <li><strong>Usage telemetry</strong> — which skills get invoked, by which agents, and which correlate with successful runs; kill dead skills with data.</li>\n   <li><strong>API/claude.ai surface push</strong> — sync skills to Anthropic API workspaces and claude.ai, not just repos.</li>\n   <li><strong>Skill eval harness</strong> — run each version against recorded scenarios before promotion (CI for skills).</li>\n  </ol>\n  <p dir=\"auto\">Pricing sketch: free CLI → $29/seat/mo Team (hosted registry, telemetry) → Enterprise (SSO, audit, on-prem).</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Notes</h2>\n  </div>\n  <ul dir=\"auto\">\n   <li>Zero runtime dependencies, Node ≥18, single file.</li>\n   <li>Name check pending before npm publish (<code>skillrail</code> npm namespace / trademark).</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "skillrail 提供单一的、版本化的 AI 代理技能源，可编译为 Claude Code、Cursor、Copilot、Windsurf 和 AGENTS.md，消除重复和漂移。",
+  "oneSentenceSummary": "skillrail 提供单一的、版本化的 AI 代理技能源，可编译为 Claude Code、Cursor、Copilot、Windsurf 和 AGENTS.md，消除重复和漂移。",
+  "summary": "skillrail 通过提供一个规范的注册表来解决在不同 AI 编码助手之间维护重复的代理技能文件的问题，在该注册表中每个技能仅需以开放的 Anthropic SKILL.md 格式编写一次，并可添加组织元数据（名称、描述、版本、所有者、目标）。CLI 工具（skillrail init、add、sync）会将技能编译为每个目标表面所需的格式——Claude Code、Cursor 规则、Copilot 指令、Windsurf 规则以及 AGENTS.md 中的托管代码块——同时添加不可编辑的来源头部。它支持通过 git 进行跨团队共享，在 lockfile 中记录来源和提交，并内置治理命令（skillrail check 用于 linting，skillrail status 用于检测漂移，skillrail list 用于清单），这些命令可挂钩到 CI 以强制一致性。该项目概述了一个付费托管层，该层将增加具备 RBAC 的私有注册表、使用遥测、向 Anthropic 工作空间推送 API 以及技能评估 harness，并采用免费增值定价模型。该工具零运行时依赖，需要 Node ≥18，并以单文件 MIT/开源 CLI 形式发布。",
+  "mainPoints": [
+    {
+      "point": "将 AI 代理技能定义集中在一个版本化的源中。",
+      "explanation": "技能仅以带前置元数据的 SKILL.md 文件存储一次，防止在为每个 AI 编码助手维护独立文件时出现的漂移和重复。"
+    },
+    {
+      "point": "在带来源头部的所有主要代理表面上编译技能。",
+      "explanation": "sync 命令为 Claude Code、Cursor、Copilot、Windsurf 以及 AGENTS.md 中的托管代码块生成幂等输出，每个输出均带有不可编辑的头部以标识生成内容。"
+    },
+    {
+      "point": "提供治理和可直接用于 CI 的技能质量检查。",
+      "explanation": "诸如 skillrail check（linting）和 skillrail status（漂移检测）之类的命令强制执行正确性和一致性，使团队能够将技能更新视为合并请求的要求。"
+    },
+    {
+      "point": "为付费托管服务提供清晰的路线图。",
+      "explanation": "未来的付费功能包括具备 RBAC 的私有注册表、使用遥测、向 Anthropic 工作空间推送 API 以及技能评估 harness，面向团队和企业采用。"
+    }
+  ],
+  "keyQuotes": [
+    "skillrail 是那缺失的拼图：一个规范的、版本化的技能注册表，可编译为您团队实际使用的每个工具。",
+    "Anthropic 自己的企业指南告诉您要自行解决此问题：“自定义技能不会在不同表面之间同步……如果您的组织在多个表面上部署技能，请实现自己的同步流程。”",
+    "skillrail check    # lint: 描述存在且 ≤1024 字符，所有者已设置，semver，主体 ≤500 行 --- 失败时退出码 1（CI 门禁）",
+    "零依赖，Node ≥18，单文件。"
+  ],
+  "tags": [
+    "AI 代理",
+    "开发者工具",
+    "CLI",
+    "版本控制",
+    "AI 编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 542,
+  "domain": "github.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_87ebb4f7",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783519216000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-08 22:00:16"
+}

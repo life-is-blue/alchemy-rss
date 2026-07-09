@@ -1,0 +1,50 @@
+{
+  "id": "RAW_9070eac6",
+  "title": "Kenton Varda 的一句话",
+  "url": "https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything",
+  "date": "2026-07-09 04:03:34",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">8th July 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://twitter.com/kentonvarda/status/2074924213983740233\">\n     <p>I just declared a moratorium against AI-written change descriptions (e.g. PR and commit messages, also issues/tickets) from my team.</p>\n     <p>AI was writing change descriptions that were worse than useless to me as I tried to review PRs: outlining details of the code that could easily be seen by looking at the code, but omitting the higher-level framing needed to understand broadly what the code is doing.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://twitter.com/kentonvarda/status/2074924213983740233\">Kenton Varda</a></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2265/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Kenton Varda 宣布在其团队中禁止 AI 生成的变更描述（例如 PR/提交信息），批评这些描述缺乏高层次上下文，只关注显而易见的代码细节。",
+  "oneSentenceSummary": "Kenton Varda 宣布在其团队中禁止 AI 生成的变更描述（例如 PR/提交信息），批评这些描述缺乏高层次上下文，只关注显而易见的代码细节。",
+  "summary": "在一条引用的推文中，技术领袖 Kenton Varda 宣布在其团队内部对 AI 编写的变更描述（如 PR 和提交信息）实行暂停。他认为 AI 生成的描述对代码审查适得其反，因为它们仅仅概括了表层的代码细节——审阅者轻易即可在代码中看到——却未能提供理解更广泛目的和影响所必需的高层次框架。",
+  "mainPoints": [
+    {
+      "point": "AI 生成的变更描述往往缺乏高层次上下文。",
+      "explanation": "Varda 观察到，AI 工具倾向于关注显而易见的代码细节（例如语法或细微改动），而不是阐释更广泛的意图，这使得它们对需要了解变更背后“为何”的审阅者帮助不大。"
+    },
+    {
+      "point": "人工撰写的描述对代码审查更有价值。",
+      "explanation": "有效的 PR/提交信息应优先阐明问题、解决方案和影响，而 AI 目前在表达这些方面仍显吃力。这与工程沟通的最佳实践相吻合。"
+    },
+    {
+      "point": "此暂停反映了对 AI 在工程工作流中角色的更广泛担忧。",
+      "explanation": "该决定凸显了在技术协作中 AI 自动化与人工判断之间的张力，尤其是在需要细致理解或特定领域上下文的任务中。"
+    }
+  ],
+  "keyQuotes": [
+    "在我审阅 PR 时，AI 编写的变更描述对我而言不仅无用，甚至更糟：它们列出了代码中容易通过查看代码本身就能看到的细节，却省略了理解代码整体作用所需的高层次框架。"
+  ],
+  "tags": [
+    "AI 编码",
+    "代码审查",
+    "开发者工具",
+    "工程实践",
+    "PR 管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 72,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783541014000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-09 04:03:34"
+}
