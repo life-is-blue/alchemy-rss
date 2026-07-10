@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-10 09:53:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-10 13:55:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,33 +584,25 @@
 
 ### [加速-Netflix-数据：从离线到在线的跨团队之旅](https://www.infoq.com/presentations/netflix-data-offline-online/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-09 23:20:00 | 标签: 系统设计, 数据工程, 后端开发, 云原生 / DevOps, 数据库
-
-> 在 InfoQ 的本次演讲中，Netflix 软件工程师 Raj Ummadisetty 和 Ken Kurzweil 回顾了跨团队加速数据从离线数据仓库迁移到面向客户的在线系统的历程。驱动每项决策的核心理念是“信心即货币”，建立在安全性、可观测性和验证之上。他们首先解释如何建立键值（KV）抽象层，以保护应用团队免受数据库迁移和复杂性的影响，并使用双向门流程实现无风险的 API 迁移。随后，演讲详细介绍了迁移数百个生产环境 Cassandra 集群的巨大挑战，他们为现有的黑盒系统增加了限流、进度报告和一致性校验，以建立利益相关者的信心。主要焦点是解决“批量数据移动”问题，加载数 TB 数据的批...
+2026-07-09 23:20:00
 
 
 
 ### [开源如何助力平台构建中的协作](https://www.infoq.com/news/2026/07/open-source-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-09 19:53:00 | 标签: 平台工程, 开源, 云原生, Kubernetes, 工程文化
-
-> 基于 KubeCon 上的一场演讲和访谈，Marcy Paramonova 和 Stéphane Cusin 分享了他们在银行环境中构建云原生平台的经验。他们认为，开源提供了至关重要的共享标准和通用语言，使得平台团队与应用团队之间能够实现协作。信任不是通过功能获得的，而是通过可预测的行为赢得的，这需要通过标准化、自动化和卓越运营来实现。文章强调了诸如降低认知负荷、透明地分享工作进展以及培养社区驱动的所有权等实践。这种文化转变源于采纳开源规范——如文档化、明确的所有权和贡献——而非自上而下的举措。关键要点包括工程师需要培养软技能，以及“只改变工具而不改变文化会导致失败”这一观点。
+2026-07-09 19:53:00
 
 
 
 ### [Windows-全球桌面份额首次跌破-60%，Linux-创新高！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247832993&idx=2&sn=5b62c858d321159a0881c05d678a83a4)
 
-2026-07-09 17:34:00 | 标签: 操作系统, Windows, Linux, 桌面系统, 市场份额
-
-> 根据 StatCounter 最新数据，2026 年 6 月 Windows 全球桌面操作系统份额降至 56.61%，这是近年来首次低于 60% 大关；同期 Linux 桌面份额升至 4.36%，创下该机构近年来的较高水平，连续站稳 4% 以上。文章指出这些数字反映的是网页访问中的活跃使用情况，而非设备保有量。Linux 的增长与 Steam Deck 推广、游戏兼容性提升以及各发行版对桌面体验的持续优化有关；部分用户对 Windows 11 的硬件要求、隐私争议及微软在线服务策略也不满，促使其尝试其他系统。整体来看，全球桌面操作系统市场正在变得更加多元，Windows 虽然仍居第一，但其绝对...
+2026-07-09 17:34:00
 
 
 
 ### [AWS-详解某客户如何扩展至一百万个-Lambda-函数](https://www.infoq.com/news/2026/07/aws-lambda-1m/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-09 15:44:00 | 标签: AWS Lambda, 无服务器, 云架构, CloudFormation, 扩展性
-
-> 本文总结了 AWS 架构博客的一篇文章，描述了工业可穿戴设备制造商 ProGlove 如何实现大规模无服务器扩展。该公司采用了单租户单账户策略，以实现强安全隔离和成本归属，但最初带来了运营摩擦。为了管理数千个账户，ProGlove 使用 AWS Organizations、Step Functions 和 CloudFormation StackSets 自动化了账户预置。扩展挑战包括服务配额、由 cron 调度引起的自我 DDoS（通过抖动事件驱动触发器缓解），以及高可观测性成本（通过集中失败日志和移除未使用队列降低）。文章还提到了 Capital One 和 DoorDash 的类似模式，...
+2026-07-09 15:44:00
 
 
 

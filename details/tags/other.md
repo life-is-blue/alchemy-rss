@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-10 09:53:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-10 13:55:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3607,17 +3607,13 @@
 
 ### [使用-GPU-初始化通信的分子动力学实用指南](https://developer.nvidia.com/blog/a-practical-guide-to-gpu-initiated-communication-for-molecular-dynamics-at-scale/)
 
-2026-07-10 01:15:27 | 标签: GPU 计算, 分子动力学, NVSHMEM, 高性能计算, GROMACS
-
-> 该文章详细介绍了 GPU 加速的 GROMACS 中的性能瓶颈，主要是由于 CPU 编排的 MPI 交换在光环交换期间消耗了超过一半的 CPU 墙上时间。然后，它提出了一种解决方案，使用 NVSHMEM 代替 MPI，融合打包、远程放置和完成等待到一个单独的设备侧内核中，以消除 CPU-GPU 同步点。该方法进一步针对 NVLink 连接的 GPU 进行了优化，通过直接将数据打包到对等内存中，并且依赖感知的内核融合可以并发处理多个通信脉冲。图表、代码片段和性能分析说明了这些技术如何重叠计算和通信，从而显著提高了强扩展性能。
+2026-07-10 01:15:27
 
 
 
 ### [太阳有多大？你如何才能算出来？-—-LessWrong](https://www.lesswrong.com/posts/Bc4Ch63cx8KHdQABw/how-big-is-the-sun-how-could-you-figure-it-out)
 
-2026-07-10 00:24:18 | 标签: 科学史, 科学推理, 古代天文学, 学习方法, 批判性思维
-
-> 这篇文章介绍了古希腊人可能用来估算太阳大小的九步推理过程：通过月食和船只的消失证明地球是圆的，使用消失的船只和埃拉托斯特尼的阴影技巧来测量地球的周长，通过类似的估计推断出太阳的距离，利用月食和日食来找到月球的大小和距离，最后通过太阳的视觉大小和估计距离来计算其直径。解释突出了裸眼天文学的聪明才智和简单几何推理的力量。
+2026-07-10 00:24:18
 
 
 
@@ -14573,57 +14569,43 @@
 
 ### [LMS-软件如何帮助技术团队更快提升技能](https://www.freecodecamp.org/news/how-an-lms-software-helps-technical-teams-upskill-faster/)
 
-2026-07-10 00:41:35 | 标签: LMS, 技术培训, 技能提升, 员工入职培训, 学习路径
-
-> 本文探讨了学习管理系统（LMS）如何成为技术团队跟上快速演变的技能所不可或缺的工具。文章概述了其诸多优势，包括标准化入职培训、结构化学习路径、集中式知识共享、一致的培训交付、可衡量的进度跟踪以及对持续学习文化的支持。通过集中培训并提供分析功能，LMS 平台帮助组织在保持质量并与业务目标对齐的同时，实现技能发展的规模化。
+2026-07-10 00:41:35
 
 
 
 ### [GitHub-如何为每个仓库赋予持久的所有者](https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/)
 
-2026-07-10 00:29:40 | 标签: GitHub, 仓库管理, 所有权模型, 内部工具, 安全修复
-
-> GitHub 面临未绑定服务的仓库所有权缺失问题，这阻碍了秘密扫描的修复工作。他们引入了两个自定义属性——`ownership-type`（服务目录、Hubber 账号、团队）和 `ownership-name`——通过由 Kubernetes CronJob 支持的 GitHub App 进行验证。初始同步覆盖了约 1，500 个有服务支持的仓库；一个宽限期工作流会为无主仓库创建问题，30 天后归档，随后将执行周期收紧至一小时。针对通知失败和过时的服务目录数据等边界情况，通过 @提及 回退机制和低水位线护栏加以缓解。该工作归档了约 8，000 个过时仓库，剩下约 3，000 个活跃仓库拥有已...
+2026-07-10 00:29:40
 
 
 
 ### [我们为何不能等待更好的后量子签名算法](https://blog.cloudflare.com/ml-dsa-will-have-to-do/)
 
-2026-07-09 22:00:00 | 标签: 后量子密码学, ML-DSA, 签名算法, 密码学, NIST PQC
-
-> Cloudflare 探讨了 NIST 在 2024 年标准化 ML-DSA 之后后量子签名算法的现状。虽然 ML-DSA 是可用的，但它的签名尺寸较大，缺乏 RSA 和 ECC 等经典算法的灵活性。文章审视了 NIST 第三轮“签名快速通道”中的九个候选方案，包括 SQIsign（签名极小但签名速度慢且实现复杂）、UOV 家族（签名非常小但公钥巨大，且有攻击史）以及基于哈希的方案（保守但签名速度不切实际）。文章指出，尽管这些新算法对未来优化至关重要，但在 2029 年迁移截止日期前它们尚未准备就绪。Cloudflare 持 pragmatic 立场：“你只能用手头的算法作战，而非你所希望的算...
+2026-07-09 22:00:00
 
 
 
 ### [欧洲议会批准聊天控制-1.0——布雷耶："我们的孩子输了"](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/)
 
-2026-07-09 20:40:29 | 标签: 欧盟法规, 隐私, 监控, 儿童保护, 技术政策
-
-> 欧洲议会投票恢复了临时的聊天控制 1.0 法规，允许美国科技公司在没有搜查令或事先嫌疑的情况下，扫描 Instagram、Discord、Snapchat、Skype、Xbox、Gmail 和 iCloud 等平台上的私人信息。尽管投票的欧洲议会议员多数（314 票反对，276 票赞成）反对该措施，但否决动议未能达到所需的绝对多数 361 票，因此该规则将一直有效至 2028 年，或直至达成一项永久性法律。包括民权活动家帕特里克·布雷耶和儿童性虐待幸存者在内的批评者认为，该措施无效、不民主且有害，并引用数据显示定罪率低、误报率高，而且大多数虐待报告来自公开帖子和云存储，而非私人聊天。幸存者强调...
+2026-07-09 20:40:29
 
 
 
 ### [OpenAI-用流行病学方法调试-18-年之久的-GNU-libunwind-漏洞](https://www.infoq.com/news/2026/07/openai-libunwind-core-dumps/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-09 18:15:00 | 标签: 调试, C++, 系统编程, 开源, 开发者工具
-
-> OpenAI 工程师详细介绍了他们对 Rockset（ChatGPT 的 C++ 数据基础设施）中神秘且看似不可能的崩溃的调查过程。最初的假设之所以失败，是因为团队在不知不觉中同时分析了两个不同的漏洞。突破来自于“流行病学调试”：自动分析过去一年所有的生产环境 core dump，以寻找群体层面的模式。这揭示了栈未对齐的崩溃是由 Azure 某个区域中的一颗故障 CPU 引起的，而返回空值的崩溃则源于 GNU libunwind 的 `_Ux86_64_setcontext` 函数中一个存在 18 年的竞态条件。这个仅有一个指令宽度的竞态窗口，被 Rockset 频繁的性能分析信号所触发。团队...
+2026-07-09 18:15:00
 
 
 
 ### [基于虚拟分片和原生播放的节拍对齐移动音频流](https://www.infoq.com/articles/android-beat-aligned-mobile-audio-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-09 17:00:00 | 标签: 移动音频, 节拍对齐, 虚拟分片, MP3 解码, 原生播放
-
-> 作者描述了构建一个节拍发现应用的过程，该应用需要在有限的带宽和延迟下实现音频段落和曲目的即时、节拍对齐切换。在评估了标准播放器、HLS/DASH 以及完整文件下载后，他们设计了一个自定义架构：一个带有虚拟分片（字节范围描述符）的单一 MP3 文件、一个与 React Native 集成的原生 C++ 播放引擎、用于 MP3 边界处理的重叠帧预热、一个预取优先级算法，以及严格的线程隔离以保证音频线程的实时安全性。该设计满足了对即时切换、无缝循环、小节对齐的曲目过渡以及在慢速 3G 连接下的可用性的严格需求。
+2026-07-09 17:00:00
 
 
 
 ### [首个具身视频基模开源！LingBot-Video-如何为“机器人大脑”构建物理引擎？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288485&idx=1&sn=a3182b48dce28b38e85e243a183ef8c7)
 
-2026-07-09 14:52:00 | 标签: 具身智能, 视频生成模型, MoE架构, 物理引擎, 机器人技术
-
-> 文章详细介绍了蚂蚁灵波开源的具身视频基础模型 LingBot-Video，该模型专注于模拟物理世界的动态变化，而非追求视觉逼真。LingBot-Video 在北京大学与字节跳动联合发布的 RBench 基准测试中表现优异，超越多个主流模型。文章深入分析了其技术架构、数据处理及训练机制：1）采用 MoE 架构提升推理效率，总参数 30B 但单次仅激活 3B；2）引入超 7 万小时具身多模态数据（VLA、VLN、Ego-vision），并通过数据画像引擎实现结构化描述；3）设计六维奖励机制（包括物理合理性、动作可执行性等），强化模型对物理法则的理解。LingBot-Video 被定位为机器人「世界...
+2026-07-09 14:52:00
 
 
 
@@ -37121,11 +37103,11 @@
 
 
 
-### [Karpathy-最新访谈：Vibe-Coding-只是开始，真正重要的是-Agentic-Engineering](https://baoyu.io/blog/andrej-karpathy-from-vibe-coding-to-agentic-engineering)
+### [深度拆解-Hermes-Agent-的记忆系统：它如何修正-OpenClaw-的误区](https://baoyu.io/blog/2026-04-29/manthanguptaa-2034849672985288957)
 
 2026-04-29T00:00:00.000Z
 
-> Karpathy 认为，AI 编程的下一步不是更快写代码，而是用 Agentic Engineering 守住软件质量。
+> 如果你读过我之前关于 ChatGPT Memory、Claude Memory 和 OpenClaw 记忆系统的文章，你应该已经知道，我一直在追问同一个问题：这些 Agent 到底是怎么记住事情的？
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-10 09:53:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-10 13:55:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -716,9 +716,7 @@
 
 ### [如何在-Node.js-REST-API-中使用-JWT-实现基于角色的访问控制](https://www.freecodecamp.org/news/role-based-access-control-nodejs-rest-api-jwt/)
 
-2026-07-09 22:46:47 | 标签: 后端开发, Node.js, JWT, 身份验证, 授权
-
-> 文章以一个关于权限过高的个人轶事开头，并介绍了基于角色的访问控制（RBAC）这一简单理念：权限取决于用户是谁，而不仅仅取决于用户已登录。文章逐步讲解如何使用 Node.js、Express、jsonwebtoken 和 bcryptjs 构建一个包含三个角色（admin、editor、user）的小型内容管理 API。实现方式是将用户存储在一个内存数组中，创建在登录时将角色嵌入 JWT 负载的身份验证路由，并定义两个中间件函数——verifyToken 用于解码并附加 JWT，checkRole 用于强制实施基于角色的访问。针对内容和管理员端点的受保护路由演示了如何应用这些中间件。指南包括注册...
+2026-07-09 22:46:47
 
 
 
