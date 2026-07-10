@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-10 07:03:36 | [返回首页](/README.md)
+**更新时间**: 2026-07-10 09:53:36 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13442)
+- [AI & 大模型](#ai-llm) (13467)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (874)
-- [DevOps](#devops) (641)
+- [前端与全栈](#frontend-fullstack) (875)
+- [DevOps](#devops) (645)
 - [产品与商业](#product-business) (43)
-- [其他](#other) (6175)
+- [其他](#other) (6184)
 
 
 ---
@@ -22,6 +22,10 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [全新-GPT-5.6-系列：Luna、Terra、Sol](https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything) - AI 精选
+- [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6) - AI 精选
+- [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work) - AI 精选
+- [TS-7：AI-生成式代码的拐点](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492258&idx=1&sn=c60d0392b9dd7bf475d4a4882849f148) - AI 精选
 - [智能体的数据之道](https://huggingface.co/blog/nvidia/open-data-for-agents) - AI 精选
 - [EdgeBench：衡量真实世界环境学习，发现新-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247493765&idx=1&sn=c949ca4147a445fc55a31005784f1d05) - AI 精选
 - [语言模型中的全局工作空间](https://www.anthropic.com/research/global-workspace) - AI 精选
@@ -38,12 +42,8 @@
 - [Daybreak：保护全球每一家组织的安全工具](https://openai.com/index/daybreak-securing-the-world) - AI 精选
 - [测试神话与寓言，超越-SWE-bench，Nvidia-的开放竞争者](https://www.deeplearning.ai/the-batch/issue-358) - AI 精选
 - [GLM-5.2-上线并开源：专注-Coding-与长程任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493980&idx=1&sn=995ae194e71d723b6110fb8c621e618c) - AI 精选
-- [AI-智能体工具设计：有效与无效的模式---MachineLearningMastery.com](https://machinelearningmastery.com/ai-agent-tool-design-what-works-and-what-doesnt/) - AI 精选
-- [Kimi-K2.7-Code-编程模型已上线-Kimi-Code、API-开放平台](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488546&idx=1&sn=93d0057b04afc0c85495c6fd9a3b8516) - AI 精选
-- [神话催生寓言，Cursor-的-Composer-2.5，智能体构建智能体](https://www.deeplearning.ai/the-batch/issue-357) - AI 精选
-- [为什么-AI-还没有取代软件工程师，而且也不会](https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers) - AI 精选
 
-- [查看全部 13442 篇...](/details/tags/ai-llm.md)
+- [查看全部 13467 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 874 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 875 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 641 篇...](/details/tags/devops.md)
+- [查看全部 645 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6175 篇...](/details/tags/other.md)
+- [查看全部 6184 篇...](/details/tags/other.md)
 
 

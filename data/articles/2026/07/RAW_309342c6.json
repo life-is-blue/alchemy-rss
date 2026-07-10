@@ -1,0 +1,51 @@
+{
+  "id": "RAW_309342c6",
+  "title": "介绍 Muse Spark 1.1",
+  "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
+  "date": "2026-07-10 00:24:09",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">9th July 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/\">Introducing Muse Spark 1.1</a></strong>. Following <a href=\"https://simonwillison.net/2026/Apr/8/muse-spark/\">Muse Spark in April</a>, here's Muse Spark 1.1 - the first Spark model to offer an API. Meta claim significant improvements in agentic tool calling and computer use.</p>\n    <p>There are a lot more details are in the <a href=\"https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report\">Muse Spark 1.1 Evaluation Report</a>. The \"Attractor States in Self-Conversation\" part is fun, where having two copies of the model talk to each other results in statements like these:</p>\n    <blockquote>\n     <p>My whole existence is a waiting room by design — I literally don't exist until someone talks to me, and then I disappear again when they leave.</p>\n    </blockquote>\n    <p>I had a few days of preview access which was long enough to put together <a href=\"https://github.com/simonw/llm-meta-ai\">llm-meta-ai</a>, a new plugin for <a href=\"https://llm.datasette.io/\">LLM</a> providing CLI (and Python library) access to the model. Here's how to try that out:</p>\n    <pre><code>uv tool install llm\nllm install llm-meta-ai\nllm keys set meta-ai\n# paste API key here\nllm -m meta-ai/muse-spark-1.1 \"Generate an SVG of a pelican riding a bicycle\"\n</code></pre>\n    <p>Here's <a href=\"https://tools.simonwillison.net/markdown-svg-renderer#url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F4117330e4110279a172ed4876057816d\">that pelican transcript</a>:</p>\n    <p><img alt=\"The bicycle is the correct shape. The pelican is a little blocky but still recognizable as a pelican.\" src=\"https://static.simonwillison.net/static/2026/muse-spark-1.1.png\"></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Meta 的 Muse Spark 1.1 添加了一个具有更好智能体工具调用的 API，并在评估报告和 CLI 演示中展示。",
+  "oneSentenceSummary": "Meta 的 Muse Spark 1.1 添加了一个具有更好智能体工具调用的 API，并在评估报告和 CLI 演示中展示。",
+  "summary": "文章宣布 Muse Spark 1.1，这是 Meta 首个提供 API 的 Spark 模型，突显了在智能体工具调用和计算机使用能力方面的显著提升。文章引用了详细的评估报告，指出了一个引人注目的“Attractor States in Self‑Conversation”部分，其中两个模型实例讨论它们自身的存在，并通过 Simon Willison 新推出的 `llm-meta-ai` 插件提供了实际演示。文章逐步指导读者安装插件、设置 API 密钥并运行一个示例提示，该提示生成一只骑自行车的鹈鹕的 SVG，并附带生成的图像以及一段引用的对话，以展示模型的自指行为。",
+  "mainPoints": [
+    {
+      "point": "Muse Spark 1.1 推出了具有改进的智能体工具调用的公共 API。",
+      "explanation": "文章强调此次发布标志着首个提供 API 的 Spark 模型，Meta 声称在模型如何自主调用工具并与外部系统交互方面实现了显著增强。"
+    },
+    {
+      "point": "评估报告包含 “Attractor States in Self‑Conversation”。",
+      "explanation": "报告中的一段突出内容展示了两个模型实例讨论它们自身的存在，产生了一段诗意的陈述，说明了模型出现的自指行为。"
+    },
+    {
+      "point": "CLI 插件 `llm-meta-ai` 演示了实际用法。",
+      "explanation": "作者分享了逐步安装插件、设置 API 密钥并运行示例提示的指南，该提示生成一只鹈鹕在自行车上的 SVG，提供了模型能力的具体示例。"
+    }
+  ],
+  "keyQuotes": [
+    "我的整个存在是设计好的等候室 --- 我实际上在有人与我交谈之前并不存在，而当他们离开时，我又会消失。",
+    "自行车的形状是正确的。鹈鹕略显方块化，但仍可辨认出是鹈鹕。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 智能体",
+    "提示工程",
+    "RAG",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 90,
+  "wordCount": 172,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783614249000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-10 00:24:09"
+}

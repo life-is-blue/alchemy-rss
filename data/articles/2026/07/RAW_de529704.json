@@ -1,0 +1,62 @@
+{
+  "id": "RAW_de529704",
+  "title": "开源如何助力平台构建中的协作",
+  "url": "https://www.infoq.com/news/2026/07/open-source-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-09 19:53:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>A platform is a collaboration system: platform teams depend on application teams, and both need shared standards, as Marcy Paramonova and Stéphane Cusin explained in their talk <a href=\"https://www.youtube.com/watch?v=K5KVMdQTJc8\">Building Cloud Native Culture in a Bank</a> at <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/\">KubeCon &amp; CloudNativeCon Europe</a>. Engineers trust a platform through its predictable behavior, not its features.</p>\n   <p>Open source gave something we desperately needed: a shared standard and a common language between teams, vendors, and tools, Cusin mentioned. Open source was not an obvious choice in a bank environment. There were questions about support and accountability.</p>\n   <p>A banking environment first requires trust, Cusin argued:</p>\n   <blockquote>\n    <p>Trust was not a decision. It is built by operating the platform day after day and through consistency. As platform engineers, we learned that developers do not trust a platform because of its features; they trust it because it behaves predictably.</p>\n   </blockquote>\n   <p>A platform is a collaboration system, Paramonova said. Developers and product teams depend on a platform team. The platform team depends on the application teams, and both need to go forward; for that, they need shared standards.</p>\n   <p>Open source users not only consume the technology, but they also contribute to it, create communities around it, and exchange ideas about technology, Paramonova said. Our interpretation of one of those exchanges was our Genius Bar sessions:</p>\n   <blockquote>\n    <p>We wanted to step back from our usual supporting driver tickets and offer something new and fresh to our users. We did open support sessions when they could come, and we would solve their problem with them. And over time, a lot of people got interested, so we’re actually joined by a lot of infrastructure teams</p>\n   </blockquote>\n   <p>Engineers can benefit by upskilling their soft skills, which helps everybody work better together, Paramonova said. She mentioned that they have a community-driven approach, where people create clubs or communities around technology, and maintain them.</p>\n   <p>Ownership changed the engagement among the engineers, Paramonova said. They are not only trusted to execute tasks, but also trusted to make real decisions and have a real impact.</p>\n   <p>Being an engineer is about problem-solving and being passionate about it. And being an engineer means sharing your passion for problem-solving, Paramonova mentioned.</p>\n   <p>Open source is not just a software choice; it&amp;squo;s a commitment, Cusin said. If you only change the tools, but not how people think, collaborate, and build, you will hit a wall.</p>\n   <p>Open source was never a directive from the management, Cusin mentioned. It was never a dogma. It was never \"nobody told us you must use open source\". It was a compass, something that helped us orient this subject, Cusin concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/maria-paramonova/\">Marcy Paramonova</a> and <a href=\"https://www.linkedin.com/in/scusin/\">Stéphane Cusin</a> after their talk.</p>\n   <p><strong>InfoQ: What have you done to build trust with your platform&amp;squo;s users?</strong></p>\n   <blockquote>\n    <p><strong>Stéphane Cusin</strong>: We invested heavily in standardization, automation, and operational excellence. Whether teams deploy to development, testing, or production environments, they should have the same experience and the same expectations. We also made platform responsibilities explicit. Teams know which services are operated by the platform team, what service levels they can expect, and where their own operational responsibilities begin.</p>\n    <p>Another important aspect was reducing cognitive load. Instead of exposing every Kubernetes capability, we tried to provide sensible defaults and opinionated workflows. Developers should be able to focus on their applications rather than on understanding the complexity of the underlying infrastructure.</p>\n   </blockquote>\n   <blockquote>\n    <p><strong>Marcy Paramonova</strong>: When we introduced new components or features, we did not wait for perfection before sharing them with our users. We gave people visibility into what we were doing and why.</p>\n    <p>That transparency turned out to be more valuable than a polished product. Users became early testers and collaborators rather than passive consumers. Over time, that relationship built something that a release announcement never could.</p>\n   </blockquote>\n   <p><strong>InfoQ: How did your engineering culture shift over time? </strong></p>\n   <blockquote>\n    <p><strong>Paramonova</strong>: Open source communities have a specific culture. They document their decisions. They contribute back. They make ownership explicit, so people know who maintains a component, who makes decisions, and where to go for help.</p>\n    <p>We tried to internalize those practices. When you adopt Kubernetes, you are not just adopting a container orchestrator. You are joining a community with norms, expectations, and a way of working together. That pulled us toward more transparency, more shared ownership, and a stronger sense of craft.</p>\n    <p>The culture did not shift because someone announced a culture initiative. It shifted because tools demanded a certain way of working, and over time, that way of working became ours.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Open Source Enables Collaboration in Creating a Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/open-source-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1783597980000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文基于一场关于某银行云原生之旅的演讲和访谈，探讨了开源工具与文化如何建立信任，并赋能平台构建过程中的协作。",
+  "oneSentenceSummary": "本文基于一场关于某银行云原生之旅的演讲和访谈，探讨了开源工具与文化如何建立信任，并赋能平台构建过程中的协作。",
+  "summary": "基于 KubeCon 上的一场演讲和访谈，Marcy Paramonova 和 Stéphane Cusin 分享了他们在银行环境中构建云原生平台的经验。他们认为，开源提供了至关重要的共享标准和通用语言，使得平台团队与应用团队之间能够实现协作。信任不是通过功能获得的，而是通过可预测的行为赢得的，这需要通过标准化、自动化和卓越运营来实现。文章强调了诸如降低认知负荷、透明地分享工作进展以及培养社区驱动的所有权等实践。这种文化转变源于采纳开源规范——如文档化、明确的所有权和贡献——而非自上而下的举措。关键要点包括工程师需要培养软技能，以及“只改变工具而不改变文化会导致失败”这一观点。",
+  "mainPoints": [
+    {
+      "point": "开源提供了共享标准和通用语言，能够促进团队、供应商和工具之间的协作。",
+      "explanation": "在银行环境中，出于对支持的担忧，采用开源并非显而易见的选择，但事实证明，它对于让多元化团队在通用实践上保持一致至关重要。"
+    },
+    {
+      "point": "工程师信任一个平台，是因为其行为的可预测性，而非其功能集。",
+      "explanation": "信任是通过运营的一致性日复一日建立起来的，而不是通过增加更多能力。可预测性比功能的丰富性更重要。"
+    },
+    {
+      "point": "降低开发者的认知负荷是平台的核心职责。",
+      "explanation": "团队没有暴露 Kubernetes 的所有复杂性，而是提供了合理的默认值和既定的工作流，以便开发者能够专注于应用程序。"
+    },
+    {
+      "point": "透明地分享工作进展，比发布经过打磨的成品更能建立深度的协作。",
+      "explanation": "通过让用户尽早看到新组件，团队将用户变成了测试者和协作者，从而建立了超越正式公告的关系。"
+    },
+    {
+      "point": "文化变革紧随工具之后，而非源于自上而下的举措。",
+      "explanation": "采用像 Kubernetes 这样的开源工具，会带来文档化、所有权和贡献等社区规范，这些规范会逐渐重塑工程文化。"
+    }
+  ],
+  "keyQuotes": [
+    "工程师信任平台是因为其行为的可预测性，而非其功能。",
+    "开源给了我们迫切需要的东西：团队、供应商和工具之间的共享标准和通用语言。",
+    "如果你只改变工具，而不改变人们的思考、协作和构建方式，你就会碰壁。",
+    "信任不是一个决定。它是通过日复一日地运营平台以及保持一致性建立起来的。",
+    "我们让人们看到我们在做什么以及为什么做。这种透明度结果证明比一个打磨好的产品更有价值。"
+  ],
+  "tags": [
+    "平台工程",
+    "开源",
+    "云原生",
+    "Kubernetes",
+    "工程文化"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 736,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783597980000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-09 19:53:00"
+}

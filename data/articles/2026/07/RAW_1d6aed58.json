@@ -1,0 +1,51 @@
+{
+  "id": "RAW_1d6aed58",
+  "title": "全新 GPT-5.6 系列：Luna、Terra、Sol",
+  "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+  "date": "2026-07-10 03:46:38",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div>\n    <p class=\"mobile-date\">9th July 2026</p>\n    <p>OpenAI’s latest flagship model <a href=\"https://openai.com/index/gpt-5-6/\">hit general availability this morning</a>, and comes in three sizes: Luna, Terra, and Sol (from smallest to largest).</p>\n    <p>The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30. For comparison, the Claude Opus series are $5/$25 and the Claude Fable 5 is $10/$50, but price-per-million tokens doesn’t tell us much now that the number of reasoning tokens can differ so much between models for the same task.</p>\n    <p>OpenAI’s biggest benchmark claim concerns long-running agentic performance, with one benchmark showing all three models outperforming Claude Fable 5:</p>\n    <blockquote>\n     <p>We trained GPT-5.6 to get more useful work from every token. On <a href=\"https://agents-last-exam.org/\">Agents’ Last Exam</a>, an evaluation of long-running professional workflows across 55 fields, GPT-5.6 Sol sets a new high of 53.6, eclipsing Claude Fable 5 (adaptive reasoning) by 13.1 points. Even at medium reasoning, it beats Fable 5 by 11.4 points at roughly one-quarter the estimated cost. That efficiency extends to smaller models, which are essential to making intelligence more abundant and affordable: GPT-5.6 Terra and GPT-5.6 Luna outperform Fable 5 at around one-sixteenth the cost.</p>\n    </blockquote>\n    <p>Amusingly, one self-reported benchmark that Fable 5 crushed the GPT-5.6 family on was SWE-Bench Pro, where Fable 5 got 80% compared to GUT-5.6 Sol getting 64.6%. This may help explain why OpenAI chose to publish <a href=\"https://openai.com/index/separating-signal-from-noise-coding-evaluations/\">this article yesterday</a> specifically calling out SWE-Bench Pro for problems they found while auditing that benchmark:</p>\n    <blockquote>\n     <p>In light of these results, we estimate that ~30% of SWE-bench Pro tasks are broken, and advise that model developers carefully examine results</p>\n    </blockquote>\n    <p>I’ve had some early access to GPT-5.6 Sol—it’s definitely very competent, though so far it hasn’t struck me as better than Fable at the kind of complex coding tasks I’ve been using with Anthropic’s model.</p>\n    <p>As usual, the <a href=\"https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6\">model guidance for using GPT-5.6</a> has the most interesting details. There are a bunch of new API features that I need to explore (and probably add support for in <a href=\"https://llm.datasette.io/\">LLM</a>), including:</p>\n    <ul>\n     <li><a href=\"https://developers.openai.com/api/docs/guides/tools-programmatic-tool-calling\">Programmatic Tool Calling</a> allows the models to “compose and run JavaScript that orchestrates tool calls”—which sounds to me like it could help bridge the gap between MCPs and full terminal sessions that can compose CLI utilities in useful ways. Also reminiscent of the <a href=\"https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool#dynamic-filtering\">dynamic filtering</a> mechanism Anthropic added to their web search tool, which allows code execution against web results as part of a single model turn.</li>\n     <li><a href=\"https://developers.openai.com/api/docs/guides/tools-multi-agent\">Multi-agent</a> lets the model “spin up subagents for parallel, focused work”—the sub-agent pattern now baked into the core API.</li>\n     <li><a href=\"https://developers.openai.com/api/docs/guides/prompt-caching#prompt-cache-breakpoints\">Prompt cache breakpoints</a> brings the Claude model of prompt caching to OpenAI, letting you be explicit about where the cache breakpoints are rather than relying on the API to detect them automatically. Personally I much prefer automatic detection (still supported by OpenAI), but presumably there are optimization cost savings to be had here if you put the work in.</li>\n     <li>You can now set <a href=\"https://developers.openai.com/api/docs/guides/images-vision#choose-an-image-detail-level\">detail: original</a> on image requests to avoid resizing the image at all before it is processed.</li>\n    </ul>\n    <p>Here’s <a href=\"https://static.simonwillison.net/static/2026/gpt-5.6-pelicans.html\">a full page with 18 different pelicans</a>—for reasoning efforts none, low, medium, high, xhigh, and max across the three different models. It also lists their token and calculated costs—the least expensive was gpt-5.6-luna at effort none for 0.71 cents, the most expensive was gpt-5.6-sol at max reasoning level for 48.55 cents.</p>\n    <p><img src=\"https://image.jido.dev/20260709211221_gpt-5.6-pelicans.webp\" alt=\"A grid of nine pelicans riding bicycles, of varying quality\" style=\"max-width: 100%\"></p>\n    <p>In further pelican news, if you jump to 17:50 in <a href=\"https://www.youtube.com/live/Wq45rvPGNHs?t=1070s\">their livestream from this morning</a> you’ll see OpenAI’s own demo of 3D pelicans riding a tricycle, a bicycle, a pony, and another pelican!</p>\n    <p><img src=\"https://image.jido.dev/20260709211221_pelican-riding-a-pelican.jpg\" alt=\"Frame from a livestream showing a 3D model of a pelican riding another pelican\" style=\"max-width: 100%\"></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布 GPT-5.6 系列（Luna、Terra、Sol），并公布定价与基准测试结果，在长时间运行智能体方面超越 Claude Fable 5。",
+  "oneSentenceSummary": "OpenAI 发布 GPT-5.6 系列（Luna、Terra、Sol），并公布定价与基准测试结果，在长时间运行智能体方面超越 Claude Fable 5。",
+  "summary": "OpenAI 推出了其新的 GPT-5.6 模型系列，提供三种变体——Luna（最小型）、Terra（中型）和 Sol（最大型），每百万输入/输出 tokens 定价分别为 1 美元/6 美元、2.50 美元/15 美元和 5 美元/30 美元。文章将这些价格与 Claude Opus 和 Claude Fable 5 进行了对比，强调仅凭 token 成本不足以评估，因为推理 token 数量各有不同。OpenAI 宣称其最大模型 GPT-5.6 Sol 在 Agents' Last Exam 中获得了 53.6 分，比 Claude Fable 5 高出 13.1 分，而成本仅为后者的约四分之一。文章还指出了在 SWE‑Bench Pro 上的对比结果：Fable 5 得分为 80%，而 GPT-5.6 Sol 为 64.6%，并引用了 OpenAI 的警告——约 30% 的 SWE‑Bench Pro 任务存在问题。除了基准测试，文章还详细介绍了新的 API 功能：程序化工具调用、多智能体编排、提示缓存断点以及可调节的图像细节级别。可视化图表（\"pelicans\" 网格）展示了推理投入水平及相关成本，直播片段则显示 3D 鹈鹕骑乘各种物体。总体而言，文章全面阐述了新模型的性能、经济性及开发者特性。",
+  "mainPoints": [
+    {
+      "point": "分层定价体现了不同模型规模下的成本效率。",
+      "explanation": "Luna、Terra 和 Sol 的每百万 token 价格分别为 1 美元/6 美元、2.50 美元/15 美元和 5 美元/30 美元，用户可根据能力与开销进行选择，同时需注意推理 token 消耗会大幅影响实际成本。"
+    },
+    {
+      "point": "GPT-5.6 Sol 在长时间运行智能体基准测试中超越 Claude Fable 5。",
+      "explanation": "在 Agents' Last Exam 中，Sol 获得 53.6 分，比 Claude Fable 5 高出 13.1 分，且成本约为后者的四分之一，展现了复杂工作流的卓越效率。"
+    },
+    {
+      "point": "新 API 功能扩展了程序化控制与多智能体工作流。",
+      "explanation": "OpenAI 引入了程序化工具调用、多智能体子智能体创建、提示缓存断点以及可选择的图像细节级别，使开发者能够编排工具使用、并行化任务并微调缓存策略，以获得更好的性能与成本控制。"
+    }
+  ],
+  "keyQuotes": [
+    "我们训练 GPT-5.6，让每个 token 都能产生更多有用工作。在 Agents' Last Exam（一项覆盖 55 个领域的长时间专业工作流评估）中，GPT-5.6 Sol 以 53.6 分创下新高，比 Claude Fable 5（自适应推理）高出 13.1 分。",
+    "鉴于这些结果，我们估计约 30% 的 SWE-bench Pro 任务存在问题，并建议模型开发者仔细审视结果。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 模型",
+    "基准测试",
+    "定价",
+    "智能体性能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 579,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783626398000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-10 03:46:38"
+}

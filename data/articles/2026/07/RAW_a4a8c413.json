@@ -1,0 +1,50 @@
+{
+  "id": "RAW_a4a8c413",
+  "title": "GPT-5.6 现在是 Microsoft 365 Copilot 的首选模型",
+  "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+  "date": "2026-07-09 21:00:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"w-full\">\n   <div class=\"relative w-full\" style=\"--hero-aspect-ratio:16/9;--hero-aspect-ratio-mobile:3/4\">\n    <div class=\"w-full toc-visible:md:grid-cols-9 gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px]\">\n     <div class=\"col-span-full toc-visible:@md:col-span-8 toc-visible:@md:col-start-1\">\n      <div class=\"relative flex flex-col items-center text-center\">\n       <div class=\"mb-8 flex flex-wrap gap-4 justify-center\">\n        <p class=\"text-meta text-primary-100\">\n         <br>\n        </p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"contents\">\n   <div class=\"w-full toc-visible:md:grid-cols-9 gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16px] lg:[--grid-gap:24px]\">\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>Today, OpenAI announced GPT‑5.6, which will become the new preferred model in Microsoft 365 Copilot—in Word, Excel, PowerPoint, Chat and Cowork. For Microsoft 365 customers, the update brings OpenAI's latest flagship model series into productivity tools people use every day, helping them create, analyze, and collaborate with more capable AI assistance across workstreams. GPT‑5.6 is OpenAI’s latest flagship model series, which delivers more useful work from every token, with stronger performance per dollar and on demand capability for the most complex tasks.</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>With GPT‑5.6, Microsoft 365 users will be able to create higher-quality work products with less effort across the apps they already rely on:</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <ul class=\"mb-8 marker:text-inherit last:mb-0 in-[:where(ul,ol)]:mt-2 list-disc in-[:where(ul,ol)]:list-[circle] mx-3 ps-4\">\n      <li class=\"mb-2\"><span>In Word, GPT‑5.6 can help people draft, edit, and refine documents with fewer rounds of prompting.&nbsp;</span></li>\n      <li class=\"mb-2\"><span>In Excel, it can support deeper analysis while using tokens more efficiently, helping users move faster from data to insights.&nbsp;</span></li>\n      <li class=\"mb-2\"><span>In PowerPoint, it can help turn early ideas into more polished, visually compelling presentations with less manual guidance.&nbsp;</span></li>\n      <li class=\"mb-2\"><span>In Cowork, it can help users complete complex, cross-functional work and produce higher-quality outputs with less manual coordination.</span></li>\n     </ul>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>“We can’t wait for customers to see what GPT‑5.6 in Microsoft 365 will do, enabling them to work even more effectively with AI in the tools they use every day,” said Nitin Agrawal, President, Copilot &amp; Agents Core, Microsoft. “Using Copilot powered by OpenAI’s latest model, customers will be able to produce more polished outputs in Word, Excel, PowerPoint, Cowork, and Copilot Chat, whether they are drafting documents, analyzing data, creating presentations, or collaborating across teams. We’re excited to continue building with OpenAI to bring more powerful AI experiences to people and organizations around the world.”</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>“Microsoft 365 is where millions of people write, analyze, create, and collaborate every day,” said Nikunj Handa, Head of API Product, OpenAI. “By bringing GPT‑5.6 to Microsoft 365 Copilot through the OpenAI API, we're helping organizations get more useful work from every token, and more value from AI in the tools they already use.”</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>In addition to serving the models natively, Microsoft will also access OpenAI models directly through the API to bring GPT‑5.6 to Microsoft 365 customers.&nbsp;</span></p>\n    </div>\n    <div class=\"col-span-full toc-visible:@md:col-start-2 max-w-none not-first:mt-6\">\n     <p class=\"mb-6 last:mb-0\"><span>Our partnership with Microsoft has always been about bringing the benefits of advanced AI to more individuals and organizations, and we’re excited to continue building on that shared commitment.</span></p>\n    </div>\n   </div>\n  </div>\n  <div class=\"w-full\">\n   <div class=\"flex w-auto\">\n    <div class=\"w-full no-scrollbar overflow-x-auto overflow-y-hidden\">\n     <div class=\"flex min-w-224 px-6 pe-6 flex-none\">\n      <div class=\"relative mb-8 ps-6 min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 宣布 GPT-5.6 成为 Microsoft 365 Copilot 的新首选模型，将最新旗舰模型带到 Word、Excel、PowerPoint、Chat 和 Cowork，以提升 AI 辅助生产力。",
+  "oneSentenceSummary": "OpenAI 宣布 GPT-5.6 成为 Microsoft 365 Copilot 的新首选模型，将最新旗舰模型带到 Word、Excel、PowerPoint、Chat 和 Cowork，以提升 AI 辅助生产力。",
+  "summary": "OpenAI 宣布 GPT-5.6 将成为 Microsoft 365 Copilot 在 Word、Excel、PowerPoint、Chat 和 Cowork 中的新首选模型。此次更新将 OpenAI 最新旗舰模型系列带到每天被数百万人使用的生产力工具。根据公告，GPT-5.6 每个 token 的性能更强，复杂任务能力得到提升。文章概述了各应用的预期改进——Word 中文档起草更快，Excel 中数据分析更高效，PowerPoint 中演示更精美，Cowork 中跨功能协作更佳。微软和 OpenAI 高管的引述强调了合作伙伴关系及其在现有工作流程中通过 AI 提供更多价值的潜力。微软将通过原生方式和 OpenAI API 两种渠道访问这些模型。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.6 成为 Microsoft 365 Copilot 应用中的首选模型",
+      "explanation": "旗舰模型已集成到 Word、Excel、PowerPoint、Chat 和 Cowork 中，取代之前的模型成为这五款工具的默认模型。"
+    },
+    {
+      "point": "该模型侧重于复杂任务的效率与能力",
+      "explanation": "OpenAI 声称 GPT-5.6 每个 token 的性能更强，这暗示在提升输出质量的同时具备更好的成本效益。"
+    },
+    {
+      "point": "微软通过原生方式和 OpenAI API 两种渠道访问 GPT-5.6",
+      "explanation": "双渠道访问确保了在 Microsoft 365 中的深度集成，同时保持了两家公司之间的 API 关系。"
+    }
+  ],
+  "keyQuotes": [
+    "使用由 OpenAI 最新模型驱动的 Copilot，客户将能够在 Word、Excel、PowerPoint、Cowork 和 Copilot Chat 中生成更精美的输出。"
+  ],
+  "tags": [
+    "LLM",
+    "GPT-5.6",
+    "Microsoft 365",
+    "Copilot",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 380,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783602000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-09 21:00:00"
+}
