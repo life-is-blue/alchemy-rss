@@ -1,0 +1,48 @@
+{
+  "id": "RAW_43a34bd4",
+  "title": "Nilay Patel 的一番话",
+  "url": "https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything",
+  "date": "2026-07-11 01:05:26",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">10th July 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://youtu.be/v4vkwUf4AMw?t=2427\">\n     <p>The reality is to make augmented reality glasses, you need to put a camera next to your eyes that is continuously recording everything you see and processing that to put information over it.</p>\n     <p>There is not another way around it. And there's certainly not a chip that can fit in the stem of a glasses that is both powerful enough and power miserly enough to do that in real time.</p>\n     <p>You have to send that data to a cloud. You gotta do it. [...] Or you can build something the size of a Vision Pro with a battery pack that lives somewhere else. Those are the current choices in this world.</p>\n     <p>And it means if you want to build the product that everyone thinks is the next thing, you are going to have to invade people's privacy.</p>\n     <p>And maybe you shouldn't. Like, there's an incredible argument for, nope, you shouldn't do that. Nope, the trade-offs required to make this product are so high at a societal level that we should stop it.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://youtu.be/v4vkwUf4AMw?t=2427\">Nilay Patel</a>, <span class=\"context\">The Vergecast</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2267/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Nilay Patel 认为，AR 眼镜必然需要摄像头，这会侵犯隐私，他质疑这种社会层面的权衡是否值得。",
+  "oneSentenceSummary": "Nilay Patel 认为，AR 眼镜必然需要摄像头，这会侵犯隐私，他质疑这种社会层面的权衡是否值得。",
+  "summary": "这篇短文分享了 Nilay Patel 在 The Vergecast 节目中的一段犀利评论。Patel 认为，AR 眼镜需要在眼睛附近安装摄像头，持续录制视觉数据，由于功率和尺寸限制，这些数据必须在云端处理——这使得隐私侵犯不可避免。他指出，目前唯一的选择要么是接受这种监控，要么是制造像 Apple Vision Pro 那样体积更大的设备。Patel 然后提出了一个关键的伦理问题：也许社会成本太高了，这款产品根本不应该被开发。这段话概括了 AR 发展面临的核心困境。",
+  "mainPoints": [
+    {
+      "point": "AR 眼镜需要在眼睛附近安装摄像头，持续录制眼前的一切。",
+      "explanation": "由于眼镜镜腿上无法容纳足够功率和效率的芯片，数据必须发送到云端进行实时处理。"
+    },
+    {
+      "point": "开发这样的产品必然侵犯人们的隐私。",
+      "explanation": "Patel 认为，目前唯一的选择是侵犯隐私的云端 AR 眼镜或像 Vision Pro 这样的笨重头显，他质疑社会是否应该接受这种权衡。"
+    }
+  ],
+  "keyQuotes": [
+    "现实情况是，要制造增强现实眼镜，你需要在眼睛旁边放置一个摄像头，持续录制你看到的一切，并对其进行处理以叠加信息。",
+    "这意味着，如果你想打造所有人都认为的下一个划时代产品，你就必须侵犯人们的隐私。",
+    "制造这款产品所需的社会代价太过沉重，我们应当停止开发。"
+  ],
+  "tags": [
+    "增强现实",
+    "隐私",
+    "云计算",
+    "科技伦理",
+    "产品策略"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 77,
+  "wordCount": 180,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783703126000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-11 01:05:26"
+}

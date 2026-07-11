@@ -1,0 +1,51 @@
+{
+  "id": "RAW_32c49cb4",
+  "title": "Slack 引入智能体驱动的端到端测试，提升 UI 测试自动化的韧性",
+  "url": "https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-10 21:48:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Slack engineering has introduced an approach called <a href=\"https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/\">agentic testing that explores how AI agents can be incorporated into end-to-end testing</a> to improve resilience in dynamic software systems. to improve resilience in large distributed systems. The work targets a common challenge in continuous delivery environments, where end-to-end tests frequently fail due to user interface or service changes rather than actual functional regressions, leading to increased maintenance overhead for engineering teams.</p>\n   <p>Traditional end-to-end tests rely on fixed steps, stable selectors, and predictable flows across UI or APIs. In fast-changing systems, these assumptions often break, increasing maintenance effort. Slack engineers describe agentic testing as shifting part of this responsibility from static scripts to AI-driven agents that execute based on higher-level intent.</p>\n   <p>In this model, a test is expressed as an objective rather than a strict sequence of actions. An AI agent interprets the intent and attempts to complete the workflow by interacting with the application through UI or API surfaces. The agent evaluates the application state at each step and selects actions dynamically. When minor changes are encountered, such as modified UI structure or relocated elements, the agent attempts alternate paths to continue execution instead of failing immediately. The execution is then validated against expected assertions defined by engineers.</p>\n   <p>The workflow typically begins with a test intent being passed to the agent layer. The agent performs planning, executes actions against the system under test, observes results, and iterates until the objective is completed or a stopping condition is reached. The outcome is then recorded along with execution traces that capture the sequence of decisions and interactions taken during the run. Slack engineers blog that due to cost considerations, agent driven testing is currently better suited for targeted debugging and exploratory testing rather than frequent execution in continuous integration pipelines.</p>\n   <p>Traditional testing flow:</p>\n   <blockquote>\n    <p>click → click → type → assert</p>\n   </blockquote>\n   <p>\n    <br>\n    Agentic testing flow:\n   </p>\n   <blockquote>\n    <p>goal → agent adapts → verify result</p>\n   </blockquote>\n   <p>Slack engineers note that deterministic tests continue to serve as the primary mechanism for validating critical logic and contract correctness. Agentic testing is positioned within the end-to-end layer where workflows are more sensitive to UI and structural changes. The agent-based approach is used to reduce failures caused by superficial changes that do not reflect functional regressions.</p>\n   <p>The system also includes constraints to govern agent behavior during execution. These include limits on allowed actions, boundaries for exploration, and conditions under which execution should stop. Observability is a key requirement, and execution logs are structured to provide visibility into each step taken by the agent, enabling teams to replay and inspect failures.</p>\n   <p>&nbsp;</p>\n   <p id=\"gdcalert1\"><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/news/2026/07/slack-agentic-e2e-testing-ui/en/resources/1slacktestpyramid-1782245112564.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/07/slack-agentic-e2e-testing-ui/en/resources/1slacktestpyramid-1782245112564.jpeg\" rel=\"share\"></p>\n   <p><em>Testing pyramid with four layers: Unit Tests, Integration Tests, E2E Testing, and Agentic Testing (Source: <a href=\"https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/\">Slack Blog Post</a>)</em></p>\n   <p>Slack engineering positions agentic testing as a complementary capability rather than a replacement for existing testing approaches. Deterministic end-to-end tests continue to support fast, repeatable regression validation in CI, while agent-driven execution is applied where UI changes introduce brittleness. Scripted or generated tests provide stable verification for predefined journeys, whereas agent-based execution operates from a goal-oriented model, observing application state and dynamically determining how to reach the desired outcome. This makes it useful for exploring complex UI behavior, debugging flaky workflows, and reproducing production issues, alongside traditional deterministic testing within the end-to-end layer.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Slack Introduces Agent Driven End-to-End Testing to Improve Resilience in UI Test Automation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1783691280000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Slack 工程团队推出了一种智能体测试方法，由 AI 智能体根据高层目标执行端到端测试，动态适应 UI 变化，以减少快速演进系统中的脆弱性失败。",
+  "oneSentenceSummary": "Slack 工程团队推出了一种智能体测试方法，由 AI 智能体根据高层目标执行端到端测试，动态适应 UI 变化，以减少快速演进系统中的脆弱性失败。",
+  "summary": "Slack 工程师开发了一种智能体测试方法论，以解决传统端到端测试在动态软件环境中的脆弱性问题。该方法不再依赖带有脆弱选择器的固定脚本，而是将测试表达为目标。AI 智能体解读这一意图，通过 UI 或 API 与应用交互，并根据当前应用状态动态选择操作。这使得测试能够适应微小的 UI 或结构变化，而不会立即失败。其工作流程包括规划、执行、观察和迭代，直至目标达成或满足停止条件。Slack 将其定位为传统测试金字塔之上的一个补充层，最适合用于定向调试、探索性测试和复现复杂的生产环境问题，而确定性测试仍然是 CI 流水线的主要机制。目前，成本因素限制了其在频繁、广泛的回归测试中的使用。",
+  "mainPoints": [
+    {
+      "point": "智能体测试将端到端测试从脆弱的、按部就班的脚本，转变为由 AI 智能体执行的、以目标为导向的执行方式。",
+      "explanation": "测试由一个高层意图定义，而非固定的点击序列。智能体动态规划并调整其操作以达到目标，减少了因表面 UI 变化导致的失败。"
+    },
+    {
+      "point": "该方法被定位为一个补充层，而非确定性测试的替代品。",
+      "explanation": "确定性测试对于在 CI 中快速、可重复地验证关键逻辑仍然至关重要。智能体测试专门应用于对 UI 和结构脆弱性最敏感的工作流的端到端层。"
+    },
+    {
+      "point": "由于成本原因，智能体测试目前更适合定向调试和探索性测试，而非频繁的 CI 执行。",
+      "explanation": "运行 AI 智能体的计算成本使其不适用于每次提交。其优势在于调查不稳定的工作流、复现生产环境问题以及探索复杂的 UI 行为。"
+    }
+  ],
+  "keyQuotes": [
+    "在这种模式下，测试被表达为一个目标，而非一系列严格的操作序列。",
+    "确定性测试仍然是验证关键逻辑和契约正确性的主要机制。"
+  ],
+  "tags": [
+    "AI 编程",
+    "开发者工具",
+    "测试与质量",
+    "DevOps",
+    "智能体测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 537,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783691280000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-10 21:48:00"
+}

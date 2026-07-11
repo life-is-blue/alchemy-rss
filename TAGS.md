@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-11 06:51:28 | [返回首页](/README.md)
+**更新时间**: 2026-07-11 09:32:44 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13467)
+- [AI & 大模型](#ai-llm) (13516)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (875)
-- [DevOps](#devops) (645)
+- [DevOps](#devops) (646)
 - [产品与商业](#product-business) (43)
-- [其他](#other) (6184)
+- [其他](#other) (6191)
 
 
 ---
@@ -22,9 +22,12 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b) - AI 精选
+- [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018) - AI 精选
+- [从模型到-Harness：WorkBuddy-如何把-Agent-做成可用产品](https://mp.weixin.qq.com/s?__biz=MzYzODgxODMzNQ==&mid=2247489478&idx=1&sn=d3e025d2b32eb8b5b79519df735ac9d2) - AI 精选
 - [全新-GPT-5.6-系列：Luna、Terra、Sol](https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything) - AI 精选
-- [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6) - AI 精选
 - [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work) - AI 精选
+- [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6) - AI 精选
 - [TS-7：AI-生成式代码的拐点](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492258&idx=1&sn=c60d0392b9dd7bf475d4a4882849f148) - AI 精选
 - [智能体的数据之道](https://huggingface.co/blog/nvidia/open-data-for-agents) - AI 精选
 - [EdgeBench：衡量真实世界环境学习，发现新-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247493765&idx=1&sn=c949ca4147a445fc55a31005784f1d05) - AI 精选
@@ -39,11 +42,8 @@
 - [新一代学习-AI，苹果端侧模型配方，GLM-5.2-攻克开放性问题](https://www.deeplearning.ai/the-batch/issue-359) - AI 精选
 - [OpenAI-与-Broadcom-发布针对-LLM-优化的推理芯片](https://openai.com/index/openai-broadcom-jalapeno-inference-chip) - AI 精选
 - [智能体身份：适用于自主、团队级-AI-的新型访问模型-|-Claude](https://claude.com/blog/agent-identity-access-model) - AI 精选
-- [Daybreak：保护全球每一家组织的安全工具](https://openai.com/index/daybreak-securing-the-world) - AI 精选
-- [测试神话与寓言，超越-SWE-bench，Nvidia-的开放竞争者](https://www.deeplearning.ai/the-batch/issue-358) - AI 精选
-- [GLM-5.2-上线并开源：专注-Coding-与长程任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493980&idx=1&sn=995ae194e71d723b6110fb8c621e618c) - AI 精选
 
-- [查看全部 13467 篇...](/details/tags/ai-llm.md)
+- [查看全部 13516 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 645 篇...](/details/tags/devops.md)
+- [查看全部 646 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6184 篇...](/details/tags/other.md)
+- [查看全部 6191 篇...](/details/tags/other.md)
 
 
