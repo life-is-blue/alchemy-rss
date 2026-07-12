@@ -1,0 +1,64 @@
+{
+  "id": "RAW_76e30d7",
+  "title": "ChatGPT Work 发布：Codex 与 GPT-5.6 驱动的新一代 AI 工作入口",
+  "url": "https://www.youtube.com/watch?v=Wq45rvPGNHs",
+  "date": "2026-07-09 04:25:53",
+  "author": "OpenAI",
+  "siteName": "OpenAI",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Introducing ChatGPT Work, Powered by Codex and GPT-5.6</h1>\n  <p>OpenAI has announced a major wave of product releases and research breakthroughs, centered around the rollout of its next-generation frontier model family: <strong>GPT-5.6</strong>. Composed of three distinct models optimized for specialized workloads, this new intelligence framework is paired with core product developments targeting high-level agentic capabilities in professional, personal, and coding environments.</p>\n  <hr>\n  <h2>The GPT-5.6 Model Family: Soul, Terra, and Luna</h2>\n  <p>Developed by multiplying pre-training capabilities with scaled reinforcement learning under OpenAI’s established <strong>reasoning paradigm</strong>, the new family represents a massive milestone in agentic efficiency.</p>\n  <ul>\n   <li><strong>GPT-5.6 Soul:</strong> The most robust model in the portfolio, engineered purposefully for highly intricate, long-horizon agentic workflows and automated technical computation.</li>\n   <li><strong>GPT-5.6 Terra:</strong> A sleek, optimized engine built to handle mainstream, everyday professional and personal workflows with heightened speed.</li>\n   <li><strong>GPT-5.6 Luna:</strong> OpenAI's fastest and most cost-effective model designed specifically for high-volume execution.</li>\n  </ul>\n  <p>Indicating the rapid pace of internally accelerated automation, OpenAI researchers revealed that GPT-5.6 Soul was robust enough to autonomously handle the post-training optimization run for its sibling model, Luna.</p>\n  <hr>\n  <h2>ChatGPT Work and Native Cross-Application Tools</h2>\n  <p>To bridge these models into daily business workflows, OpenAI debuted <strong>ChatGPT Work</strong> across web, mobile, and desktop formats. Grounded in the capabilities of GPT-5.6 Soul, the system targets high-precision professional operational chains.</p>\n  <h3>Financial Planning Automation</h3>\n  <p>In a live financial presentation demonstration, the tool executed complex data manipulation across spreadsheets and output formats. ChatGPT Work performed automated variance analysis on multi-case financial spreadsheets, calculated forecast differentials, dynamically updated underlying corporate Excel models, and exported findings directly into a formatted PowerPoint presentation slide deck. Users can then immediately distribute these assets via automated communication updates.</p>\n  <h3>Advanced Computer Use</h3>\n  <p>The core release of the new <strong>ChatGPT Desktop App</strong> unlocks profound integration with a user’s native computer architecture. The model is capable of scraping data across local document directories and active web browser tabs simultaneously to build presentations matching strict company style guides.</p>\n  <p>More notably, the desktop app introduces a state-of-the-art <strong>computer use</strong> feature. When tasked with intricate system file management, the AI agent can invoke its own internal cursor, manipulating and restructuring local third-party applications (such as Apple Notes) entirely in the background while the user continues independent tasks.</p>\n  <hr>\n  <h2>Prompt-to-Site Generation and Immersive Web Spaces</h2>\n  <p>OpenAI highlighted a major paradigm shift away from static spreadsheets and text logs through the introduction of <strong>hosted sites</strong>. Powered directly by the visual intelligence of the model, users can generate fully responsive, interactive, and collaborative front-end dashboards or prototypes on demand from raw natural language prompts.</p>\n  <p>Designers demonstrated how the tool instantly renders intricate custom data visualizations and immersive 3D mockups without a single line of manually typed code. Because these hosted sites are collaborative, teams can annotate live web canvases to dynamically embed playable games, asset libraries, or design toggles, greatly shortening creative iteration loops.</p>\n  <hr>\n  <h2>Advanced Multi-Agent Intelligence and Cybersecurity Patches</h2>\n  <p>For enterprise workflows requiring absolute peak performance, OpenAI announced <strong>Ultra Mode</strong>. Rather than relying on a solitary system run, Ultra Mode splits complex inputs across a parallelized network of multiple autonomous agents that synchronize efforts like an experienced professional team.</p>\n  <h3>Security Red Teaming</h3>\n  <p>Safety metrics were emphasized heavily, with OpenAI dedicating over 700,000 A100-equivalent hours of compute to rigorous red teaming exercises alongside advanced activation probes. Under the security deployment umbrella known as <strong>Project Daybreak</strong>, early-access research agents successfully identified critical zero-day vulnerabilities inside major operating databases and internet browsers.</p>\n  <h3>Automated Patch Generation</h3>\n  <p>Through the broader <strong>Patch the Planet</strong> initiative, OpenAI models moved from bug discovery to autonomous defense. When tasked with writing system patches for open-source repositories, the Linux kernel network officially accepted over 50% of the AI-generated security patches, proving the model's high coding precision.</p>\n  <hr>\n  <h2>Real-World Impact: From Corporate Boards to the Farm</h2>\n  <p>Demonstrating the flexibility of the update, the event featured the real-world operational workflow of <strong>Hiroshi</strong>, a non-technical broccoli farmer from Hokkaido, Japan. Leveraging ChatGPT step-by-step to coordinate field notes, trace vegetable growth cycles, and design tracking frameworks on his mobile device, Hiroshi demonstrated how advanced AI models optimize operational efficiency across large agricultural fields.</p>\n  <p>The interaction was managed on stage utilizing ChatGPT's low-latency, two-way <strong>live voice translation</strong> tool, translating spoken Japanese and English simultaneously. This case study served to reinforce a core theme of the release: anyone can build highly advanced tools by starting with incremental steps and scaling their operational ambition.</p>\n </body>\n</html>",
+  "aiSummary": "OpenAI 通过密集的产品演示、研究声明和真实工作流案例，展示 GPT-5.6、ChatGPT Work、新桌面应用、Hosted Sites、Ultra Mode 与实时翻译能力。",
+  "oneSentenceSummary": "OpenAI 通过密集的产品演示、研究声明和真实工作流案例，展示 GPT-5.6、ChatGPT Work、新桌面应用、Hosted Sites、Ultra Mode 与实时翻译能力。",
+  "summary": "这场发布会介绍了 GPT-5.6 模型家族：Soul 面向高难度智能体工作流，Terra 面向日常任务，Luna 面向高频低成本使用。最有价值的部分是多组具体演示，包括 ChatGPT Work 处理财务差异分析、更新 Excel、生成 PowerPoint、通过 Slack 分享结果，以及桌面应用综合本地文件、浏览器标签并操作 Apple Notes。Hosted Sites 部分展示了交互式网站、3D 原型和内部仪表盘的 prompt 驱动生成。研究段落补充了强化学习扩展、Token 效率、Ultra Mode 多智能体执行、红队测试、Project Daybreak 和 Linux 安全补丁接受率等信息。结尾的北海道农场案例将叙事从办公室扩展到非技术用户，展示实时语音翻译和逐步采用 AI 的实际路径。整体信息量高且时效性强，但仍是官方发布会，带有明显宣传框架，独立验证有限。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.6 被定位为覆盖不同工作负载层级的三模型家族",
+      "explanation": "发布会将 Soul 定义为处理长周期智能体任务的最强模型，将 Terra 定义为更快的日常工作模型，将 Luna 定义为面向高频使用的低成本模型，并说明付费与免费用户的分层发布节奏。"
+    },
+    {
+      "point": "ChatGPT Work 被展示为专业工作流的智能体操作层",
+      "explanation": "财务和发布准备演示显示，ChatGPT 可以从 Slack、反馈、电子表格、本地文件夹、浏览器标签、Excel 模型、PowerPoint 模板和网站发布流程中取材，完成多步骤业务任务。"
+    },
+    {
+      "point": "桌面应用让 ChatGPT 从问答工具扩展到本地应用操作",
+      "explanation": "最具辨识度的演示是 computer use：ChatGPT 获得自己的光标，并在后台操作 Apple Notes，暗示产品正在从聊天界面走向本地系统级任务执行。"
+    },
+    {
+      "point": "Hosted Sites 将生成式回答变成可交互的仪表盘、原型和 3D 体验",
+      "explanation": "设计演示展示了 prompt 驱动的网站、发布看板、数据可视化、模型选择器原型和轻量 3D 案例，让这场 AI 发布不只是文本能力展示，而是更具体的视觉化工作流演示。"
+    },
+    {
+      "point": "研究与安全段落把产品能力连接到模型扩展、网络防御和多智能体执行",
+      "explanation": "OpenAI 声称 GPT-5.6 Soul 能自主完成 Luna 的后训练任务，提升基准表现，驱动 Ultra Mode 的智能体团队，发现浏览器和数据库漏洞，并生成被上游接受的 Linux 安全补丁。"
+    }
+  ],
+  "keyQuotes": [
+    "我们正在发布最新、最强大的模型 GPD56 Soul、Terra 和 Luna",
+    "第一个是 ChatGPT Work，ChatGPT Work 是你完成高目标工作的全新伙伴",
+    "接下来会发生的是，ChatGPT 借助内置的强大 computer use 能力和新模型的进步，将获得自己的光标，并开始在后台操作 Apple Notes",
+    "Soul 已经在改变我们的研究项目。举个例子，5.6 Soul 实际上自主完成了 Luna 的后训练",
+    "如果你想要金钱可以买到的最高智能，我们也发布 Ultra Mode，它会释放一整队智能体为你工作",
+    "以 Linux 为例，他们接受了我们超过一半的补丁，这表明我们不仅发现了长期未被发现的关键漏洞，也能够自动修补它们，并大幅加速网络防御",
+    "我相信，从小处开始、一步一步构建真的很重要"
+  ],
+  "tags": [
+    "OpenAI",
+    "GPT-5.6",
+    "ChatGPT Work",
+    "AI 智能体",
+    "computer use"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 721,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d90853",
+  "sourceName": "OpenAI",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783542353000,
+  "publishDateStr": "07-09",
+  "publishDateTimeStr": "2026-07-09 04:25:53"
+}

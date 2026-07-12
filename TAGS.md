@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-12 06:38:55 | [返回首页](/README.md)
+**更新时间**: 2026-07-12 09:44:12 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13516)
+- [AI & 大模型](#ai-llm) (13537)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (875)
 - [DevOps](#devops) (646)
 - [产品与商业](#product-business) (43)
-- [其他](#other) (6191)
+- [其他](#other) (6194)
 
 
 ---
@@ -43,7 +43,7 @@
 - [OpenAI-与-Broadcom-发布针对-LLM-优化的推理芯片](https://openai.com/index/openai-broadcom-jalapeno-inference-chip) - AI 精选
 - [智能体身份：适用于自主、团队级-AI-的新型访问模型-|-Claude](https://claude.com/blog/agent-identity-access-model) - AI 精选
 
-- [查看全部 13516 篇...](/details/tags/ai-llm.md)
+- [查看全部 13537 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6191 篇...](/details/tags/other.md)
+- [查看全部 6194 篇...](/details/tags/other.md)
 
 

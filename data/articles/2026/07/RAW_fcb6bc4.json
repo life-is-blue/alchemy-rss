@@ -1,0 +1,62 @@
+{
+  "id": "RAW_fcb6bc4",
+  "title": "构建让人保持判断力的 AI 系统，而不是只会点批准的流程",
+  "url": "https://www.youtube.com/watch?v=CDqzWpwkSls",
+  "date": "2026-07-08 07:31:51",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Build AI Systems for Discernment, Not Approval</h1>\n  <p>Angel Ortmann Lee's talk is a warning about a common failure mode in human-in-the-loop AI: the human may be present in the workflow, but the system can still train them to stop thinking. As AI becomes embedded in search, navigation, tutoring, and review tools, trust rises and caution falls. The result is cognitive surrender, where people adopt AI output with minimal scrutiny.</p>\n  <p>The Duolingo English Test case study makes the risk concrete. The team tested whether skilled proctors would catch a fake copy-typing signal on legitimate historical sessions. Even though the reviewers were highly trained and calibrated above 90%, they accepted half of the fake signals. The model was not the core problem, and neither were the people. The interaction design had made the AI signal feel too authoritative.</p>\n  <p>A small wording change produced a meaningful improvement. Proctors were told that the AI signal was only a preliminary alert, that they were the final decision-maker, and that they needed independent evidence in the video before upholding a flag. Rejection of the fake signals increased by 21 percentage points, showing that the system could elicit more careful judgment without changing the model.</p>\n  <p>The broader lesson is that AI systems are not linear pipelines from model to human to decision. They are cycles: model output shapes an interaction, the interaction shapes human behavior, and that behavior becomes labels, evals, and future training data. Poorly designed interactions create automation bias and polluted labels. Well-designed interactions create disagreement, evidence, and high-quality data.</p>\n  <p>The same principle applies to product examples such as headphone detection, writing tutors, and coding agents. Split hidden decisions into explicit questions, tie feedback to the exact source material, surface assumptions early, and add friction where the stakes are high. The goal is not more approval clicks. The goal is to engineer interfaces that help humans discern.</p>\n </body>\n</html>",
+  "aiSummary": "Angel Ortmann Lee 认为，human-in-the-loop AI 只有在界面促使人独立核验证据，而不是机械批准模型输出时，才真正有效。",
+  "oneSentenceSummary": "Angel Ortmann Lee 认为，human-in-the-loop AI 只有在界面促使人独立核验证据，而不是机械批准模型输出时，才真正有效。",
+  "summary": "这场演讲以 Duolingo English Test 的安全审核为案例，具体解释了自动化偏差和认知让渡如何进入真实 AI 工作流。Angel Ortmann Lee 展示，即使审核员训练充分、校准表现很强，当界面把 AI 复制输入信号呈现得过于权威时，他们仍会在大约一半的合法历史场景中接受假的作弊提示。团队没有先改模型，而是把信号重新表述为初步提醒，并要求审核员在视频中找到独立证据，结果假信号拒绝率提升了 21 个百分点。由此她提出更普遍的产品与工程原则：AI 系统不是从模型到人再到决策的线性管道，而是交互闭环；UI 文案、审核门槛、反馈结构和用户行为都会变成后续标签、评估与训练信号。演讲最有价值的部分，是把这套原则延伸到监考、写作辅导和编码智能体：拆开隐藏决策、暴露假设、让摩擦匹配风险、捕捉 diff，并把智能体设计成可审查的协作者，而不是制造批准点击的机器。",
+  "mainPoints": [
+    {
+      "point": "human-in-the-loop 系统仍可能制造认知让渡",
+      "explanation": "演讲质疑了只要加入人工审核就能提升 AI 安全性的假设，指出界面呈现方式可能让熟练审核员放弃独立判断，转而默认相信模型输出。"
+    },
+    {
+      "point": "Duolingo 假信号实验揭示了自动化偏差",
+      "explanation": "训练充分的审核员在合法考试录像中接受了大量虚假的复制输入警报，结果接近抛硬币，说明问题不只在模型或人员，而在交互设计。"
+    },
+    {
+      "point": "很小的交互改动也能显著改善判断质量",
+      "explanation": "把 AI 信号定位为初步提醒，并要求审核员寻找独立视频证据，使假信号拒绝率提升 21 个百分点，证明无需改模型也能改善结果。"
+    },
+    {
+      "point": "每一次 AI 交互都会成为未来系统的数据",
+      "explanation": "用户在工作流中的行为会变成标签、评估和训练信号；结构差的批准会污染数据，而结构化分歧能帮助模型更准确地迭代。"
+    },
+    {
+      "point": "编码智能体应该成为可审查的协作者",
+      "explanation": "演讲把同一原则应用到编码工具，主张智能体应先计划、暴露假设、记录取舍，并把工作拆成可审查步骤，而不是一次生成巨大 diff 或不断索要批准。"
+    }
+  ],
+  "keyQuotes": [
+    "当人放弃深思熟虑，并在几乎不审查的情况下把 AI 输出当成自己的判断。",
+    "他们接受了 50% 的假信号，也就是说有一半时间在错误指控别人作弊。",
+    "AI 信号只是初步提醒。他们才是最终决策者。",
+    "作为 AI 工程师，你的交互闭环决定了 AI 系统有多有效，也决定了你能从中学到什么。",
+    "有时修复方式不是更好的模型或更多监督，而只是把交互本身工程化。"
+  ],
+  "tags": [
+    "human-in-the-loop AI",
+    "自动化偏差",
+    "AI 产品设计",
+    "交互设计",
+    "模型评估"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 312,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783467111000,
+  "publishDateStr": "07-08",
+  "publishDateTimeStr": "2026-07-08 07:31:51"
+}

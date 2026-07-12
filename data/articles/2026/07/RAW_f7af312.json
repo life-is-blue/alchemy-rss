@@ -1,0 +1,58 @@
+{
+  "id": "RAW_f7af312",
+  "title": "AI 智能体的持续学习：把失败转化为可验证、可持久的改进",
+  "url": "https://www.youtube.com/watch?v=2IxD9OB3XuQ",
+  "date": "2026-07-05 11:13:35",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Continual Learning for AI Agents: From Failures to Durable Improvements</h1>\n  <p>Soheil Feizi presents continual learning as the agent equivalent of learning from experience: an agent acts, receives feedback, and improves without forgetting what already worked. The talk separates the problem into two hard questions. First, where does useful feedback come from? Second, once feedback exists, which part of the agent should change?</p>\n  <p>The central argument is that production logs are not learning environments. A log plus feedback may explain what happened once, but it does not provide a replayable test. To make learning verifiable, the system must infer a simulation and evaluation environment from the observed session: tool behavior, user behavior, success criteria, and evaluators. Once a failure becomes executable, candidate agents can be tested against it.</p>\n  <p>Feizi then compares update layers. Model updates such as SFT, DPO, GRPO, RLVR, and LoRA can change weights but usually need benchmarks and explicit evaluators. Harness updates can modify prompts, tools, code, skills, or workflows, but trace-to-harness changes are risky when they cannot be tested. Memory updates are cheaper and faster, storing facts or distilled skills, but they also need verification to avoid hidden regressions.</p>\n  <p>The proposed answer is verifiable continual learning. Every fix should be replayable, routed holistically to the right layer, checked lifelong against previous learning environments, and efficient enough to run frequently. Rely’s loop takes logs, feedback, instructions, or prompts; turns them into replayable learning environments; performs root-cause analysis; optimizes with regression awareness; and produces a reviewable agent update. The practical takeaway is direct: durable agent improvement requires measured gains without breaking prior successes.</p>\n </body>\n</html>",
+  "aiSummary": "Soheil Feizi 提出可验证持续学习，将智能体失败转化为可回放环境、带回归意识的修复，并在模型、运行框架和记忆层形成持久改进。",
+  "oneSentenceSummary": "Soheil Feizi 提出可验证持续学习，将智能体失败转化为可回放环境、带回归意识的修复，并在模型、运行框架和记忆层形成持久改进。",
+  "summary": "这场演讲给出了一个紧凑但有分量的 AI 智能体持续学习框架。Feizi 指出，生产日志和反馈是有价值的信号，但还不足以构成可测试的学习场景。更强的方法是推断出可回放的学习环境，其中包含模拟用户、工具行为、成功标准和评估器，然后把修复路由到最小且持久的层级：模型权重、运行框架调整或记忆更新。核心贡献是可验证持续学习这一概念，并围绕可回放性、整体性、终身性和效率展开。Rely 的闭环会把日志、反馈、指令或 prompt 转化为可执行测试，进行根因分析，在关注回归风险的前提下优化，并产出可审查的智能体更新。客服智能体示例让方法更具体，不过视频整体更偏框架介绍和产品演示，而不是完整的技术深挖。",
+  "mainPoints": [
+    {
+      "point": "生产日志是信号，不是学习环境",
+      "explanation": "演讲反复区分了一次性的会话日志加反馈，以及可以用明确成功标准反复测试智能体候选版本的可回放模拟环境。"
+    },
+    {
+      "point": "智能体改进应落在最小且持久的层级",
+      "explanation": "Feizi 对比了模型微调、运行框架工程和记忆更新，并认为学习引擎应把每次修复路由到最能解释失败、且改动最小的持久层。"
+    },
+    {
+      "point": "可验证持续学习需要回归感知优化",
+      "explanation": "VCL 框架要求每次更新都证明它能改善新案例，同时保留已有成功结果，让回归检查成为优化闭环的一部分，而不是事后审计。"
+    },
+    {
+      "point": "Rely 将反馈转化为可审查的智能体更新",
+      "explanation": "这个产品闭环接收日志、反馈、指令或 prompt，构建可回放环境，执行根因分析，在记忆、模型或运行框架之间优化，并输出类似 pull request 的更新说明，解释具体变化。"
+    }
+  ],
+  "keyQuotes": [
+    "持续学习的目标，是让智能体也能做到同样的事：通过行动、获得反馈并改进来从经验中学习，同时不遗忘已有能力。",
+    "这里有日志和反馈，但我们真正需要的是一个可回放的学习环境，也就是一种可以反复运行、并用明确评分标准判断成功的模拟，而不是一次发生过的实例加上其上的反馈。",
+    "一个好的学习引擎应该在智能体的正确层级上，寻找最小且持久的改变。",
+    "在可验证持续学习中，目标是让智能体从自身经验中改进，并且每个修复都被证明有帮助，也被证明不会破坏已经有效的能力。",
+    "前沿方向是具备回归意识的持续改进：在修复新的失败时，我们要验证自己没有忘掉旧的成功。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "持续学习",
+    "可验证学习",
+    "可回放环境",
+    "智能体评估"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 264,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783221215000,
+  "publishDateStr": "07-05",
+  "publishDateTimeStr": "2026-07-05 11:13:35"
+}

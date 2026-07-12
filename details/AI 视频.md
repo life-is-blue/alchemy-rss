@@ -1,15 +1,101 @@
-> **更新时间**: 2026-06-28 08:28:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-12 09:44:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [会做梦的工厂：100-人的-Machinecraft-如何打造企业大脑](https://www.youtube.com/watch?v=jtzh-GBXBWc)
+
+2026-07-12 04:00:27 | 标签: AI 智能体, 企业记忆, Brain OS, 知识图谱, 市场拓展自动化
+
+> Rushabh Doshi 介绍 Machinecraft 如何保存一家拥有三代积累、100 名员工的热成型机工厂所沉淀的实践知识。团队没有训练新模型，而是把报价、图纸、排期、邮件及其他私有记录处理为事实、向量表示和图关系。由此形成的企业大脑结合了分层记忆、显著性筛选、修正优先级、夜间巩固，以及负责销售、定价、机器规格、事实核查和外联的专业智能体。系统可以支持客户简报、报价单、入站回复和唤醒沉睡线索等具体的市场拓展工作，同时坚持由 AI 起草、由人发送。演讲还将治理规则与 Jain 商业原则联系起来，并介绍 Brain OS：一个空白且可分叉的架构，其他公司可以用自己的知识填充它。
+
+
+
+### [构建智能体基础设施的未来：Claude-Platform-如何迈向组织级能力](https://www.youtube.com/watch?v=ksfm6jeTg3Q)
+
+2026-07-11 01:41:00 | 标签: 智能体基础设施, 托管智能体, 智能体身份, MCP, harness 工程
+
+> 这场对话讨论了 Claude Platform 如何从模型推理和 token 访问 API，转向托管智能体及更完整的智能体基础设施。嘉宾重点介绍了记忆、结果导向、长时运行，以及智能体身份的新模式：智能体接收期望结果，只申请完成任务所需的权限，通过服务账号执行，并让全部操作保持可审计。智能体可以通过 API 或轻量 MCP server 协作；随着模型能力和运行时基础设施提升，团队不再需要脆弱且高度脚本化的 harness。讨论还涉及多个智能体竞争、对抗式审查和顾问调用等组合策略，以及保留制造业经验、协调端到端软件开发等案例。对于企业落地，较稳妥的 ROI 路径是先提升个人速度，再提升团队生产力...
+
+
+
+### [ChatGPT-Work-发布：Codex-与-GPT-5.6-驱动的新一代-AI-工作入口](https://www.youtube.com/watch?v=Wq45rvPGNHs)
+
+2026-07-09 04:25:53 | 标签: OpenAI, GPT-5.6, ChatGPT Work, AI 智能体, computer use
+
+> 这场发布会介绍了 GPT-5.6 模型家族：Soul 面向高难度智能体工作流，Terra 面向日常任务，Luna 面向高频低成本使用。最有价值的部分是多组具体演示，包括 ChatGPT Work 处理财务差异分析、更新 Excel、生成 PowerPoint、通过 Slack 分享结果，以及桌面应用综合本地文件、浏览器标签并操作 Apple Notes。Hosted Sites 部分展示了交互式网站、3D 原型和内部仪表盘的 prompt 驱动生成。研究段落补充了强化学习扩展、Token 效率、Ultra Mode 多智能体执行、红队测试、Project Daybreak 和 Linux 安全...
+
+
+
+### [三台机器上的-AI-智能体舰队：真正坏掉的环节](https://www.youtube.com/watch?v=4kYl2_mqmnQ)
+
+2026-07-08 16:05:32 | 标签: AI 智能体, 智能体编排, AI 编程, Kubernetes, Claude Code
+
+> 这是一段紧凑的一手复盘，讲述 Kyle 如何在一台 MacBook 和两台 Linux 机器上运行 AI 编程智能体。最早的瓶颈不是硬件，而是他自己：多个智能体同时在 tmux 中工作时，他被迫同时充当调度器、记忆和评审者。为了解决这个问题，他建立了 CEO、VP、manager、worker 这样的真实智能体层级，把状态从模型上下文迁移到文件工作区，用 reset 取代 compact，并加入会阻塞执行直到批准的评审网关。当系统扩展到单机之外，又暴露出五类问题：智能体不愿委派、窗格不可读、内存耗尽、凭证串 workspace，以及笔记本导致任务中断。当前架构依靠 Git、SSH、按机器隔离的...
+
+
+
+### [超越固定-Harness：走向运行时自适应的-AI-工程](https://www.youtube.com/watch?v=qdZzND79mcg)
+
+2026-07-08 07:32:02 | 标签: 自适应工程, AI 智能体, 多智能体编排, 复杂系统科学, Harness 工程
+
+> 这场演讲把 adaptive engineering 作为对当前 AI 工程 Harness 脆弱性的回应。Chandegra 将 Claude Code、Cursor、Codex、LangChain 式编排和自定义智能体脚手架等工具，概括为类似工厂流水线的系统：它们对固定或复杂但可预测的问题很可靠、可审计，也很强大，但这种能力来自在运行前压低变化空间。他随后用复杂系统科学对比这种还原论模型，指出真实世界由不断变化的关系、局部互动、反馈循环和涌现秩序构成。核心判断是，随着模型能力增强，AI 系统进入多智能体、多人与跨机构协作以及物理环境，真正瓶颈会从模型能力转向 Harness 的适应性。因此...
+
+
+
+### [如果-Agent-的-Harness-比模型本身更重要会怎样？](https://www.youtube.com/watch?v=2e9ANoOEn28)
+
+2026-07-08 07:31:54 | 标签: LLM Harness, 智能体框架, Agency 语言, 本地模型, 工具安全
+
+> 这场 AI Engineer 演讲提出了一个面向现代智能体工程的明确判断：尤其在希望让较弱或本地开源模型具备竞争力时，包裹在 LLM 周围的 Harness 可能比模型本身更关键。Bhargava 用 Harness Bench 的结果说明，仅改变 Harness 就能带来超过 20 个百分点的性能差异，并进一步展示 Agency 语言如何一步步构建更好的编程智能体。内容最有价值的部分，是从原始模型调用逐步演进到工具、 interrupt handler、部分函数应用、ReAct 循环、子智能体委派和提示词自优化的实践阶梯。整体上，这是一段对构建智能体系统的工程师很有参考价值的紧凑演讲，但由于...
+
+
+
+### [构建让人保持判断力的-AI-系统，而不是只会点批准的流程](https://www.youtube.com/watch?v=CDqzWpwkSls)
+
+2026-07-08 07:31:51 | 标签: human-in-the-loop AI, 自动化偏差, AI 产品设计, 交互设计, 模型评估
+
+> 这场演讲以 Duolingo English Test 的安全审核为案例，具体解释了自动化偏差和认知让渡如何进入真实 AI 工作流。Angel Ortmann Lee 展示，即使审核员训练充分、校准表现很强，当界面把 AI 复制输入信号呈现得过于权威时，他们仍会在大约一半的合法历史场景中接受假的作弊提示。团队没有先改模型，而是把信号重新表述为初步提醒，并要求审核员在视频中找到独立证据，结果假信号拒绝率提升了 21 个百分点。由此她提出更普遍的产品与工程原则：AI 系统不是从模型到人再到决策的线性管道，而是交互闭环；UI 文案、审核门槛、反馈结构和用户行为都会变成后续标签、评估与训练信号。演讲最...
+
+
+
+### [SWE-Marathon：用项目级评测检验编码智能体的真实工程能力](https://www.youtube.com/watch?v=Rx8f05JI_WA)
+
+2026-07-07 11:45:51 | 标签: SWE-Marathon, 编码智能体, AI 评测, 长程智能体, 软件工程基准
+
+> 这场演讲介绍了 SWE-Marathon，一个面向编码智能体的项目级评测基准，目标是跳出孤立 bug 和 GitHub issue，检验智能体能否完成更接近真实软件工程的长程任务。Rishi Desai 说明了它如何把 HumanEval、SWE-bench 和 Terminal-bench 延伸到多小时项目环境中，覆盖库克隆、全栈产品克隆、ML 工程和算法任务。最有价值的部分在验证设计和失败分析：隐藏测试、参考实现一致性检查、computer-use 浏览器验证、反作弊层，以及在 Rust 编译器任务中调用 GCC 这类 reward hacking 案例。排行榜结果刻意保持冷静：即使 Cl...
+
+
+
+### [Claude-心智中心的-J-space：Anthropic-如何观察隐藏推理与安全信号](https://www.youtube.com/watch?v=rKV5JcALQoQ)
+
+2026-07-07 00:59:51 | 标签: Claude, Anthropic, AI 可解释性, J-space, AI 安全
+
+> 这段 Anthropic 短视频介绍了 J-space：Claude 内部一组神经活动模式，研究者可以把它们与模型可能在内部使用、但并未说出口的词语关联起来。视频将这一概念连接到人类的意识访问和 global workspace theory，并通过几组实验说明它像一个有限的心智工作空间：Claude 在不展示过程的情况下解数学题时，内部会出现中间数字；Golden Gate Bridge 相关意象会在复制无关文本时浮现；关闭 J-space 后，简单流畅表达仍可保留，但更复杂的推理会失败。视频对结论保持克制：监测 J-space 或许能提前暴露伪造数据、操纵等隐藏不当行为，因此有助于 AI ...
+
+
+
+### [AI-智能体的持续学习：把失败转化为可验证、可持久的改进](https://www.youtube.com/watch?v=2IxD9OB3XuQ)
+
+2026-07-05 11:13:35 | 标签: AI 智能体, 持续学习, 可验证学习, 可回放环境, 智能体评估
+
+> 这场演讲给出了一个紧凑但有分量的 AI 智能体持续学习框架。Feizi 指出，生产日志和反馈是有价值的信号，但还不足以构成可测试的学习场景。更强的方法是推断出可回放的学习环境，其中包含模拟用户、工具行为、成功标准和评估器，然后把修复路由到最小且持久的层级：模型权重、运行框架调整或记忆更新。核心贡献是可验证持续学习这一概念，并围绕可回放性、整体性、终身性和效率展开。Rely 的闭环会把日志、反馈、指令或 prompt 转化为可执行测试，进行根因分析，在关注回归风险的前提下优化，并产出可审查的智能体更新。客服智能体示例让方法更具体，不过视频整体更偏框架介绍和产品演示，而不是完整的技术深挖。
+
+
+
+### [MCP-apps、应用商店与下一代软件入口：AI-客户端如何承载交互式产品](https://www.youtube.com/watch?v=sAOBXCDiDOs)
+
+2026-07-05 11:12:17 | 标签: MCP, MCP apps, AI 客户端, Model Context Protocol, ChatGPT apps
+
+> 这场演讲及时而务实地描绘了 MCP apps 超越普通 MCP servers 之后的形态。Pietro Zullo 说明，工具不仅可以返回 JSON，还能返回沙箱化 iframe 组件，让这些组件与宿主应用和模型通信；model-visible state、follow-up messages、streaming tool arguments、private UI output、fullscreen modes、external links、theme awareness 等基础能力，使 AI 客户端中的界面越来越接近真正的软件。更有战略价值的部分在于分发：ChatGPT、Claude 与 ...
+
+
+
 ### [在团队频道里直接-@-Claude：Claude-Tag-如何协作处理-PR、文档与权限边界](https://www.youtube.com/watch?v=VojDzHaciKQ)
 
-2026-06-24 01:09:00 | 标签: Claude Tag, Claude Code, AI 编程, 工程工作流, PR
-
-> 这支 Anthropic 第一方发布短片介绍了 Claude Tag：团队可以在现有协作频道里直接 @ Claude，让它参与产品、工程、法务和发布沟通。Lydia 提到，Anthropic 今年内部已经大量采用这种模式，Claude Tag 负责创建了 65% 的产品 PR。演示把 Claude 呈现为多人协作中的队友：它能跟进群组线程，响应实时产品决策，定位相关代码区域，创建 PR，并同步更新发布营销材料，减少跨团队交接等待。最有价值的部分是安全模型：Claude 使用独立账号，权限按团队和频道划定，记忆隔离，凭据使用有日志记录。整体内容简洁、实用，能帮助读者理解产品方向，但更接近精炼的发...
+2026-06-24 01:09:00
 
 
 
@@ -21,9 +107,7 @@
 
 ### [把-10994-条笔记变成记忆：构建文件驱动的-AI-研究-OS-|-Paul-Iusztin（Decoding-AI）&amp;-Louis-François-Bouchard（Towards-AI）](https://www.youtube.com/watch?v=ZRM_TfEZcIo)
 
-2026-06-23 06:25:06 | 标签: AI 研究 OS, 第二大脑, 记忆与上下文管理, 深度研究智能体, Obsidian
-
-> 在这场 AI Engineer 演讲中，Decoding AI 创始人 Paul Iusztin 与 Towards AI CTO Louis-François Bouchard 复盘了历时 18 个月打造的个人 AI 研究 OS。它位于 Codex、Claude Code 等智能体 harness 与庞大的第二大脑之间，后者横跨 Obsidian、Readwise、Notion 与 Google Drive，散落着上万条笔记。两人先给出一套决策树：何时直接 Google、何时唤起一次性智能体、何时真正需要持久记忆，随后指出向量数据库 RAG 太重、NotebookLM 既不归你所有也不是 a...
+2026-06-23 06:25:06
 
 
 
@@ -147,13 +231,13 @@
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
@@ -183,13 +267,13 @@
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
@@ -549,7 +633,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -561,7 +645,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 

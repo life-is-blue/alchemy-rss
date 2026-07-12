@@ -1,0 +1,62 @@
+{
+  "id": "RAW_5fa5402",
+  "title": "Modal CTO：你的 AI 应用不该跑在 K8s 上，Agent 时代的云应该长什么样",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6a4efcce2e335a35a8105ac0",
+  "date": "2026-07-09 09:46:11",
+  "author": "跨国串门儿计划",
+  "siteName": "跨国串门儿计划",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>📝 本期播客简介</span></p>\n  <p><span>本期我们克隆了：知名 AI 工程播客 Latent Space</span><a href=\"https://www.youtube.com/watch?v=UwxxlTNPjWo\"><span> </span><strong><span>The AI Infra Stack: DeFlash, Auto Endpoints, RDMA, and Sandboxes — Akshat Bubna, Modal CTO</span></strong></a></p>\n  <p><span>原内容更新时间：2026-07-08</span></p>\n  <p><span>本期嘉宾是云平台 Modal 的 CTO Akshat Bubna，主持人是 swyx 和 Vibhu。Modal 刚完成 C 轮融资，正从一家\"为开发者提供更好体验\"的公司，转向\"为 AI Agent 提供更好体验\"的公司。他们服务着 Suno、Runway、Cognition 等一众前沿 AI 公司，为弹性推理、模型训练和 Agent 沙箱提供底层算力。</span></p>\n  <p><span>这期节目不是 Modal 的产品发布会，而是一场关于 AI 基础设施本质的深度思辨。Akshat 详细拆解了为什么传统云架构（尤其是 Kubernetes）从根本上不适合突发性、算力密集型的 AI 工作负载，以及 Modal 如何用\"自供应运行时\"和\"代码即配置\"的理念来替代 YAML 地狱。如果你在思考 AI 应用的部署、Agent 的沙箱安全、推理性能优化，或者云平台的未来形态，这期会提供大量来自一线构建者的高密度判断。</span></p>\n  <p><span>👨‍⚕️ 本期嘉宾</span></p>\n  <p><span>Akshat Bubna，云平台 Modal 的联合创始人兼 CTO。Modal 是一个专为 AI 工作负载从零构建的云平台，覆盖弹性推理、分布式训练、批处理和 Agent 沙箱等场景。Akshat 带领团队在 GPU 快照、推测解码（DFlash）、自动缩放等底层技术上做了大量开源贡献，服务着从大语言模型到计算生物学、机器人等领域的头部 AI 公司。</span></p>\n  <p><span>⏱️ 时间戳</span></p>\n  <p><span>Modal 的起源与核心理念</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">02:50</a></span></span><span> 创业起点：为什么工作流编排产品都那么难用</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">03:46</a></span></span><span> 构建更好的运行时：从 serverless 函数到 GPU 推理</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">05:34</a></span></span><span> 核心理念：用装饰器定义一切，告别 YAML</span></p>\n  <p><span>从开发者体验到 Agent 体验</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">06:53</a></span></span><span> SDK 团队方向转向 Agent 体验</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">07:34</a></span></span><span> Agent 时代的新重点：可观测性比代码本身更重要</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">08:33</a></span></span><span> Modal 是什么：一个为 AI 应用从零搭建的云平台</span></p>\n  <p><span>弹性推理：Modal 的核心战场</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">13:24</a></span></span><span> 最大用例是弹性推理，刻意避开大语言模型领域</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">14:34</a></span></span><span> 技术护城河：GPU 快照与自动缩放</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">16:24</a></span></span><span> 开源 DFlash：基于块的推测解码，实现乘法级性能提升</span></p>\n  <p><span>沙箱、网络与 Agent 基础设施</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">10:52</a></span></span><span> 2023 年就做了沙箱，第一个例子是让 Agent 自我迭代</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">26:42</a></span></span><span> 沙箱支持 sidecar，一个 pod 里跑多个容器</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">27:38</a></span></span><span> 隐藏功能 I6PN：用 IPv6 构建的私有覆盖网络</span></p>\n  <p><span>训练、批量处理与容量管理</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">31:28</a></span></span><span> 多节点训练聚焦小规模后训练，不做大规模预训练</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">35:24</a></span></span><span> 计算策略团队：如何在 17 家云厂商之上做容量规划</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">36:51</a></span></span><span> 批量处理层：不在乎延迟就能拿到便宜得多的价格</span></p>\n  <p><span>Agent 时代的云与未来展望</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">40:04</a></span></span><span> 如何看待托管 Agent 与基础设施层的关系</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">47:12</a></span></span><span> CI/CD 的浪费：用内存快照让 Agent 驱动的 CI 更高效</span></p>\n  <p><span class=\"timestamp\"><span><a class=\"timestamp\">50:19</a></span></span><span> 公司能否只靠更好的 Agent 体验就做起来</span></p>\n  <p><span>🌟 精彩内容</span></p>\n  <p><span>💡 \"你为什么要让一个 Agent 去读几百个 Kubernetes 文件、写那种连类型都没有的 YAML？\"</span></p>\n  <p><span>Akshat 指出，Agent 体验和开发者体验在本质上高度一致——好的工具应该让使用者（无论人还是 AI）用最简单的方式表达意图，而不是陷入配置文件的泥潭。Modal 的答案是：用代码中的装饰器声明需求，运行时自动供应。</span></p>\n  <p><span>\"它明明只需要改几个装饰器里的参数，就能得到一个自供应的运行时，直接看到自己的改动实时生效。\"</span></p>\n  <p><span>💡 AI 工作负载不是 Web 服务器，Kubernetes 的慢速扩缩容根本不适合</span></p>\n  <p><span>传统云架构为常驻型 Web 服务设计，扩缩容是渐进的。但 AI 推理和训练是突发性的——你可能需要在几分钟内从 1000 张 GPU 扩到 1500 张，而且必须在特定区域内完成。Modal 从第一天就为这种\"算力密集型、高度突发\"的负载设计。</span></p>\n  <p><span>\"Kubernetes 是为慢速扩缩容设计的，更适合 Web 服务器那种场景。而这些工作流需要快速伸缩，运行环境也越来越专门化。\"</span></p>\n  <p><span>💡 推测解码的加速是乘法级的，不是优化 kernel 那几个百分点能比的</span></p>\n  <p><span>Akshat 解释了推测解码的核心逻辑：用小模型预测 token，大模型批量验证。关键指标是\"接受长度\"——只要草稿模型产出的 token 被足够多地接受，就能获得数倍加速。Modal 开源的 DFlash 在此基础上做基于块的推测，进一步提升效率。</span></p>\n  <p><span>\"优化 kernel 通常只能带来几个百分点的提升，而提高接受长度，带来的可是乘法级的降低。\"</span></p>\n  <p><span>💡 沙箱的硬边界不可替代，用 LLM 中介权限让人不安</span></p>\n  <p><span>当 swyx 提出\"AI 操作系统的内核可能就是一个 LLM\"时，Akshat 明确表达了怀疑。他认为沙箱层面必须有硬边界来防止数据泄露，LLM 只能作为软护栏的补充。这是基础设施构建者对安全底线的坚持。</span></p>\n  <p><span>\"我对沙箱层面用 LLM 来中介权限持怀疑态度，因为你确实需要硬边界。不然的话，别人显然可以把数据偷出去。\"</span></p>\n  <p><span>💡 我们刻意不做模型 API，因为纯爱好者市场粘性低</span></p>\n  <p><span>与竞争对手 Replicate 不同，Modal 选择不提供\"一键调用模型\"的 API 服务。Akshat 认为，真正在打造产品的公司需要的是代码级的灵活性和控制力，而不是一个黑盒 API。这种筛选效应让 Modal 的客户更有差异化，粘性也更强。</span></p>\n  <p><span>\"我们一直刻意避开的一件事，就是给模型提供 API。我们一直想服务的是那些在打造产品、需要更多灵活性的公司，而不只是要一个 API。\"</span></p>\n  <p><span>💡 在 17 家云厂商之上构建可靠性层，让用户接触到的容量比自己能拿到的多得多</span></p>\n  <p><span>Modal 没有自己的数据中心，而是在全球 17 家云厂商和裸金属提供商之上构建了一个\"超级云\"。他们在上面加了一层可靠性抽象，让 GPU 掉线或故障对用户工作负载透明。这种轻资产、重软件的策略让他们能专注在真正的差异化上。</span></p>\n  <p><span>\"新云厂商的可靠性程度各不相同，所以我们花了很多时间在上面构建了我们自己的可靠性层。这实际上让我们能使用的容量，比你自己作为用户能接触到的要多得多。\"</span></p>\n  <p><span>💡 基础设施最激动人心的时代，之前其实无聊了好一阵子</span></p>\n  <p><span>swyx 回顾了过去几年的变化：从\"你很难让人对数据基础设施兴奋起来\"，到现在\"大家都在意了\"。Akshat 认同这一点，并指出规模是一切变化的底层驱动力——AI 需要的算力规模让基础设施重新变成了一个性感且充满挑战的领域。</span></p>\n  <p><span>\"这是个非常激动人心的时代。我觉得很大一部分原因是，这一切需要的规模太大了。\"</span></p>\n  <p><span>🌐 播客信息补充</span></p>\n  <p><span>本播客采用原有人声声线进行播客音频制作，也可能会有一些地方听起来怪怪的</span></p>\n  <p><span>使用 AI 进行翻译，因此可能会有一些地方不通顺；</span></p>\n  <p><span>如果有后续想要听中文版的其他外文播客，也欢迎联系微信：iEvenight</span></p>\n </body>\n</html>",
+  "aiSummary": "Modal CTO Akshat Bubna 深度解析为何 Kubernetes 等传统云架构不适应突发性、算力密集型的 AI 工作负载，并分享了用“自供应运行时”和“代码即配置”理念为 AI Agent 重新设计云平台的实战经验。",
+  "oneSentenceSummary": "Modal CTO Akshat Bubna 深度解析为何 Kubernetes 等传统云架构不适应突发性、算力密集型的 AI 工作负载，并分享了用“自供应运行时”和“代码即配置”理念为 AI Agent 重新设计云平台的实战经验。",
+  "summary": "本期播客深度探讨了专为 AI 工作负载设计的云平台 Modal 的技术哲学与产品实践。联合创始人兼 CTO Akshat Bubna 详细阐述了传统云架构，尤其是 Kubernetes，在处理 AI 推理与训练时面临的本质矛盾：它们是为中心化的、常驻型 Web 服务设计的，扩缩容缓慢，而 AI 负载是去中心化、突发性的。他强调 Agent 体验的核心与开发者体验一致，都是让使用者（人或 AI）用最简单的方式表达意图，而非陷入 YAML 配置文件的地狱。Modal 的方案是通过代码中的装饰器声明需求，由平台自动供应资源。讨论还覆盖了弹性推理作为核心用例的深度优化，如引入推测解码技术 DFlash 实现乘法级性能提升，以及如何为 Agent 构建具备硬边界、网络控制和持久化能力的沙箱环境。Akshat 还分享了公司在全球 17 家云厂商之上构建“超级云”，通过软件层提供统一可靠性的轻资产策略，并对 AI 基础设施的未来进行了展望。",
+  "mainPoints": [
+    {
+      "point": "Kubernetes 从根本上不适合突发性、去中心化的 AI 工作负载",
+      "explanation": "Kubernetes 是为慢速扩缩容和常驻型 Web 服务设计的，而 AI 负载需要快速伸缩和专门化的运行环境，Modal 从底层重新构建了运行时来满足这一需求。"
+    },
+    {
+      "point": "Agent 体验与开发者体验的本质高度一致：简化意图表达",
+      "explanation": "无论是人类开发者还是 AI Agent，都不应该去处理复杂的 YAML 和多层配置文件。通过代码装饰器声明需求，平台自动供应资源的方式，对二者都大幅提升了效率。"
+    },
+    {
+      "point": "推测解码（Speculative Decoding）带来的性能提升是乘法级的",
+      "explanation": "与优化 kernel 带来的几个百分点提升不同，通过 DFlash 提高草稿模型 Token 的“接受长度”，可以实现 2-4 倍的推理加速，且不牺牲模型质量，这是推理基础设施的关键创新。"
+    },
+    {
+      "point": "未替代 LLM 的安全沙箱需要 LLM 之外的硬边界",
+      "explanation": "为了保护数据安全，沙箱层面不能仅依赖 LLM 来中介权限，必须要有操作系统级别的硬护栏作为底线，LLM 只能作为软护栏的补充，这是基础设施构建者对安全的基本坚持。"
+    },
+    {
+      "point": "在多家云厂之上构建“超级云”平台，形成独特竞争优势",
+      "explanation": "Modal 坚持轻资产策略，专注于在 17 家云厂商之上构建可靠性抽象层，以软件为核心竞争力，能为用户提供远超其自行获取的 GPU 容量和更高的可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "你为什么要让一个 Agent 去读几百个 Kubernetes 文件、写那种连类型都没有的 YAML？它明明只需要改几个装饰器里的参数，就能得到一个自供应的运行时，直接看到自己的改动实时生效。",
+    "Kubernetes 是为慢速扩缩容设计的，更适合 Web 服务器那种场景。而这些工作流需要快速伸缩，运行环境也越来越专门化。",
+    "优化 Kernel 通常只能带来几个百分点的提升，而提高接受长度，带来的可是乘法级的降低。",
+    "我对沙箱层面用 LLM 来中介权限持怀疑态度，因为你确实需要硬边界。不然的话，别人显然可以把数据偷出去。",
+    "我们一直刻意避开的一件事，就是给模型提供 API。我们一直想服务的是那些在打造产品、需要更多灵活性的公司，而不只是要一个 API。"
+  ],
+  "tags": [
+    "AI 基础设施",
+    "Kubernetes",
+    "自供应运行时",
+    "Agent 体验",
+    "弹性推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2297,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_938310",
+  "sourceName": "跨国串门儿计划",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783561571000,
+  "publishDateStr": "07-09",
+  "publishDateTimeStr": "2026-07-09 09:46:11"
+}
