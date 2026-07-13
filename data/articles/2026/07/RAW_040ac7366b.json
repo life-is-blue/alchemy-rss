@@ -1,0 +1,51 @@
+{
+  "id": "RAW_040ac7366b",
+  "title": "Fable 再次获得提升",
+  "url": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+  "date": "2026-07-13 05:20:07",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">12th July 2026</p>\n   <div class=\"note\">\n    <p>One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, <a href=\"https://x.com/claudeai/status/2076351399999557669\">bumped the date</a> that Fable stops being available in their Claude Max plans:</p>\n    <blockquote>\n     <p>We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.</p>\n     <p>As before, you can use up to half of your weekly usage limit on Fable 5. After that, you can continue using Fable 5 with usage credits, or switch to another model to keep working within your remaining limits.</p>\n    </blockquote>\n    <p>Anthropic's original rationale for this was compute constraints - they wanted a better idea of both demand and compute availability before committing to keeping the new model cheap for subscribers.</p>\n    <p>OpenAI appear confident that they won't need to restrict access to GPT-5.6 in the same way.</p>\n    <p>At this point I think Anthropic should change track and keep Fable permanently available on those plans. OpenAI are winning users simply due to the uncertainty that surrounds Fable access.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/500/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 将 Fable 模型在 Claude Max 计划中的访问权限延长至 July 19，而 OpenAI 似乎有信心避免类似限制；Simon Willison 主张应永久提供该访问。",
+  "oneSentenceSummary": "Anthropic 将 Fable 模型在 Claude Max 计划中的访问权限延长至 July 19，而 OpenAI 似乎有信心避免类似限制；Simon Willison 主张应永久提供该访问。",
+  "summary": "在一篇简短的博客更新中，Simon Willison 报告称 Anthropic 再次延长了 Fable 模型在 Claude Max 计划中的可用性，直至 July 19， 2026，原因是持续的算力限制。该帖子引用了 Anthropic 在官方 X（Twitter）上的公告，并对比了 OpenAI 有信心无需限制 GPT-5.6 访问的报道。Willison 建议 Anthropic 应让 Fable 永久可用，以避免因访问不确定性而流失用户给 OpenAI。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 将 Fable 访问权限延长至 Claude Max 计划的 July 19。",
+      "explanation": "该延伸适用于所有付费计划，并保持 Claude Code 每周速率限制提高 50%；用户在需要使用积分之前，可以将其配额的一半用于 Fable。"
+    },
+    {
+      "point": "算力限制是延长的声明理由。",
+      "explanation": "Anthropic 想在承诺廉价模型访问之前了解需求和算力可用性，而 OpenAI 似乎对其基础设施更有信心。"
+    },
+    {
+      "point": "Willison 主张 Anthropic 应让 Fable 永久可用。",
+      "explanation": "他认为围绕 Fable 访问的持续不确定性正在将用户推向 OpenAI，因此使其永久可用将是一种战略举措。"
+    }
+  ],
+  "keyQuotes": [
+    "我们将在所有付费计划中延长 Claude Fable 5 的访问权限，并保持 Claude Code 每周速率限制提高 50%，直至 July 19。",
+    "我认为此时 Anthropic 应该改变方向，让 Fable 在这些计划中永久可用。"
+  ],
+  "tags": [
+    "LLM",
+    "模型访问",
+    "Anthropic",
+    "Claude",
+    "AI 新闻"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 174,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783891207000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-13 05:20:07"
+}

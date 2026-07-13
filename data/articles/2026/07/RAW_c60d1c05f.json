@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c60d1c05f",
+  "title": "会做梦的工厂：100 人的 Machinecraft 如何打造企业大脑",
+  "url": "https://www.youtube.com/watch?v=jtzh-GBXBWc",
+  "date": "2026-07-12 04:00:27",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>The Factory That Dreams: Building a Company Brain</h1>\n  <p>Rushabh Doshi describes how Machinecraft, a 100-person thermoforming-machine factory in India, turned decades of operational knowledge into an AI system. The company’s most valuable asset was not its machines but the memory of customers, quotes, customizations, and decisions held by three generations of family leaders. As employees left, that knowledge could leave with them.</p>\n  <p>Machinecraft did not train a new model or build a GPU-heavy system. It processed years of private quotes, drawings, payment schedules, timelines, and email threads into chunks, used off-the-shelf models to extract facts, and stored meaning as vectors and relationships in a graph. The result was a structured company memory that could understand different customers across seven industries.</p>\n  <p>The system is organized like a biological body and coordinated by specialist agents. One agent runs the room, others handle sales, pricing, machine specifications, fact checking, and corrections. Together they support daily go-to-market work such as account briefs, quotations, outreach, inbound replies, and lead revival. A key boundary remains in place: the AI drafts, but a human sends.</p>\n  <p>Its memory has working context, pinned facts, episodes, relationship strength, and a salience gate that filters what deserves to be remembered. Corrections take precedence when facts conflict, and a nightly dream cycle consolidates useful information, finds contradictions, forgets stale material, and turns experience into skills. The system’s rules are also shaped by principles from a Jain family business: cross-check sources, avoid absolute claims, do your own job, report uncomfortable truth, and work with others.</p>\n  <p>Doshi says the system cost roughly 30,000 dollars to build and a few thousand dollars per month to run. Machinecraft released the architecture as Brain OS, an empty nervous system with agents, memory, dreams, and a soul file. Each company must supply its own knowledge; the central promise is not to outsource a company’s brain, but to help it grow one.</p>\n </body>\n</html>",
+  "aiSummary": "Rushabh Doshi 讲述一家拥有 100 名员工的工厂如何把私人企业史转化为以记忆为核心、由专业智能体协作且由人控制沟通的 AI 运营系统。",
+  "oneSentenceSummary": "Rushabh Doshi 讲述一家拥有 100 名员工的工厂如何把私人企业史转化为以记忆为核心、由专业智能体协作且由人控制沟通的 AI 运营系统。",
+  "summary": "Rushabh Doshi 介绍 Machinecraft 如何保存一家拥有三代积累、100 名员工的热成型机工厂所沉淀的实践知识。团队没有训练新模型，而是把报价、图纸、排期、邮件及其他私有记录处理为事实、向量表示和图关系。由此形成的企业大脑结合了分层记忆、显著性筛选、修正优先级、夜间巩固，以及负责销售、定价、机器规格、事实核查和外联的专业智能体。系统可以支持客户简报、报价单、入站回复和唤醒沉睡线索等具体的市场拓展工作，同时坚持由 AI 起草、由人发送。演讲还将治理规则与 Jain 商业原则联系起来，并介绍 Brain OS：一个空白且可分叉的架构，其他公司可以用自己的知识填充它。",
+  "mainPoints": [
+    {
+      "point": "企业持久的优势在于积累下来的运营知识",
+      "explanation": "Machinecraft 认为员工流动会带走客户历史、报价、定制方案和决策记录，因此组织记忆是一个具体的业务问题，而不是抽象的 AI 用例。"
+    },
+    {
+      "point": "有用的企业智能来自有组织的记忆，而不是训练模型",
+      "explanation": "系统使用现成模型从私有记录中提取事实，再用向量和图关系保存其中的含义，展示了区别于微调或构建新基础模型的实用路径。"
+    },
+    {
+      "point": "专业智能体让系统成为一支协同运营团队",
+      "explanation": "不同智能体分别负责编排、销售、定价、机器规格、事实核查和修正，并围绕日常市场拓展任务协作，而不是依赖一个负担过重的超级提示词。"
+    },
+    {
+      "point": "记忆与治理和智能体层同样重要",
+      "explanation": "演讲将工作记忆、固定事实、事件记录、关系热度、显著性筛选、修正优先级、休眠周期、来源交叉核查和人工审批视为保证连续性及可信行动的安全机制。"
+    }
+  ],
+  "keyQuotes": [
+    "但真正的公司，真正重要的那一部分，不是机器，而是知识。",
+    "我们从未训练过模型。",
+    "企业大脑并不是一个更聪明的模型。它其实是一套组织得非常非常好的记忆。",
+    "一个智能体，一个任务。它是一支团队，而不是一个英雄。",
+    "Eira 负责起草，人来发送。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "企业记忆",
+    "Brain OS",
+    "知识图谱",
+    "市场拓展自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 313,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783800027000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-12 04:00:27"
+}

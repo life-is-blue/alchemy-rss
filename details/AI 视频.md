@@ -1,7 +1,23 @@
-> **更新时间**: 2026-07-12 09:44:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-13 09:47:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
+
+
+
+### [别再用-50-年代的方法评估模型：用心理测量学重构-LLM-基准测试](https://www.youtube.com/watch?v=EfcfUB2uprc)
+
+2026-07-12 16:00:21 | 标签: 心理测量学, LLM 评测, 项目反应理论, 基准测试审计, 基准测试泄漏
+
+> Alejandro Vidal 指出，单一的基准测试准确率会掩盖许多关键假设：每道题都同样有用，相关性与噪声无关紧要，而模型总分足以代表它的能力。他提出使用项目反应理论，在保留完整题目与模型响应矩阵的同时，估计题目难度、模型能力 theta、区分度和置信区间。这些估计可以区分原始分数相近的模型，找出有噪声或答案标注错误的题目，检测异常推理行为，并在保留有效信号的前提下缩减基准测试。演讲还介绍了自适应测试、锚定题集和组织专属指纹题集，用于控制题目曝光并调查基准测试泄漏。残差模式既能支持公平性分析，也能揭示模型之间的共享检查点、蒸馏关系、模型家族与互补能力。未来还可以合并多个基准测试，把 toke...
+
+
+
+### [「完成」究竟意味着什么：把智能体交付变成可验证对象](https://www.youtube.com/watch?v=7P0elyLIxXo)
+
+2026-07-12 14:45:06 | 标签: 智能体系统, 完成定义, 验证, 控制平面, 活性
+
+> Paperclip 创作者 Dotta 解释说，智能体如今生成代码和文档的速度已经超过人类核验产出的速度，由此形成一种新的失败模式：未经检查的输出不断累积，审查能力却跟不上。他提出，应把「完成」视为一组运营层面的声明：产物确实存在，范围和标准清晰明确，有证据支持完成状态，验证者与有权审批的人已经确定，剩余风险保持可见，并且下一步行动有明确负责人。演讲进一步区分生产者声明、审查、验证、审批、问责和经受现实检验这几个层次，并将智能体工作流定义为控制平面问题。Paperclip 通过明确的状态转换、真实阻塞、审批记录、审查者、审批者、有界循环以及与具体工具链无关的 watchdog，在活性与验证之间...
 
 
 
@@ -23,9 +39,7 @@
 
 ### [ChatGPT-Work-发布：Codex-与-GPT-5.6-驱动的新一代-AI-工作入口](https://www.youtube.com/watch?v=Wq45rvPGNHs)
 
-2026-07-09 04:25:53 | 标签: OpenAI, GPT-5.6, ChatGPT Work, AI 智能体, computer use
-
-> 这场发布会介绍了 GPT-5.6 模型家族：Soul 面向高难度智能体工作流，Terra 面向日常任务，Luna 面向高频低成本使用。最有价值的部分是多组具体演示，包括 ChatGPT Work 处理财务差异分析、更新 Excel、生成 PowerPoint、通过 Slack 分享结果，以及桌面应用综合本地文件、浏览器标签并操作 Apple Notes。Hosted Sites 部分展示了交互式网站、3D 原型和内部仪表盘的 prompt 驱动生成。研究段落补充了强化学习扩展、Token 效率、Ultra Mode 多智能体执行、红队测试、Project Daybreak 和 Linux 安全...
+2026-07-09 04:25:53
 
 
 
@@ -55,9 +69,7 @@
 
 ### [构建让人保持判断力的-AI-系统，而不是只会点批准的流程](https://www.youtube.com/watch?v=CDqzWpwkSls)
 
-2026-07-08 07:31:51 | 标签: human-in-the-loop AI, 自动化偏差, AI 产品设计, 交互设计, 模型评估
-
-> 这场演讲以 Duolingo English Test 的安全审核为案例，具体解释了自动化偏差和认知让渡如何进入真实 AI 工作流。Angel Ortmann Lee 展示，即使审核员训练充分、校准表现很强，当界面把 AI 复制输入信号呈现得过于权威时，他们仍会在大约一半的合法历史场景中接受假的作弊提示。团队没有先改模型，而是把信号重新表述为初步提醒，并要求审核员在视频中找到独立证据，结果假信号拒绝率提升了 21 个百分点。由此她提出更普遍的产品与工程原则：AI 系统不是从模型到人再到决策的线性管道，而是交互闭环；UI 文案、审核门槛、反馈结构和用户行为都会变成后续标签、评估与训练信号。演讲最...
+2026-07-08 07:31:51
 
 
 
@@ -71,25 +83,19 @@
 
 ### [Claude-心智中心的-J-space：Anthropic-如何观察隐藏推理与安全信号](https://www.youtube.com/watch?v=rKV5JcALQoQ)
 
-2026-07-07 00:59:51 | 标签: Claude, Anthropic, AI 可解释性, J-space, AI 安全
-
-> 这段 Anthropic 短视频介绍了 J-space：Claude 内部一组神经活动模式，研究者可以把它们与模型可能在内部使用、但并未说出口的词语关联起来。视频将这一概念连接到人类的意识访问和 global workspace theory，并通过几组实验说明它像一个有限的心智工作空间：Claude 在不展示过程的情况下解数学题时，内部会出现中间数字；Golden Gate Bridge 相关意象会在复制无关文本时浮现；关闭 J-space 后，简单流畅表达仍可保留，但更复杂的推理会失败。视频对结论保持克制：监测 J-space 或许能提前暴露伪造数据、操纵等隐藏不当行为，因此有助于 AI ...
+2026-07-07 00:59:51
 
 
 
 ### [AI-智能体的持续学习：把失败转化为可验证、可持久的改进](https://www.youtube.com/watch?v=2IxD9OB3XuQ)
 
-2026-07-05 11:13:35 | 标签: AI 智能体, 持续学习, 可验证学习, 可回放环境, 智能体评估
-
-> 这场演讲给出了一个紧凑但有分量的 AI 智能体持续学习框架。Feizi 指出，生产日志和反馈是有价值的信号，但还不足以构成可测试的学习场景。更强的方法是推断出可回放的学习环境，其中包含模拟用户、工具行为、成功标准和评估器，然后把修复路由到最小且持久的层级：模型权重、运行框架调整或记忆更新。核心贡献是可验证持续学习这一概念，并围绕可回放性、整体性、终身性和效率展开。Rely 的闭环会把日志、反馈、指令或 prompt 转化为可执行测试，进行根因分析，在关注回归风险的前提下优化，并产出可审查的智能体更新。客服智能体示例让方法更具体，不过视频整体更偏框架介绍和产品演示，而不是完整的技术深挖。
+2026-07-05 11:13:35
 
 
 
 ### [MCP-apps、应用商店与下一代软件入口：AI-客户端如何承载交互式产品](https://www.youtube.com/watch?v=sAOBXCDiDOs)
 
-2026-07-05 11:12:17 | 标签: MCP, MCP apps, AI 客户端, Model Context Protocol, ChatGPT apps
-
-> 这场演讲及时而务实地描绘了 MCP apps 超越普通 MCP servers 之后的形态。Pietro Zullo 说明，工具不仅可以返回 JSON，还能返回沙箱化 iframe 组件，让这些组件与宿主应用和模型通信；model-visible state、follow-up messages、streaming tool arguments、private UI output、fullscreen modes、external links、theme awareness 等基础能力，使 AI 客户端中的界面越来越接近真正的软件。更有战略价值的部分在于分发：ChatGPT、Claude 与 ...
+2026-07-05 11:12:17
 
 
 
@@ -231,13 +237,13 @@
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
@@ -267,13 +273,13 @@
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
@@ -633,7 +639,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -645,7 +651,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

@@ -1,0 +1,56 @@
+{
+  "id": "RAW_4672f74574",
+  "title": "Cloudflare 发现 hyper 的 HTTP/1 实现中的竞态条件",
+  "url": "https://www.infoq.com/news/2026/07/cloudflare-hyper-bug-fix/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-12 14:18:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare recently documented how its development team identified and fixed a <a href=\"https://blog.cloudflare.com/hyper-bug/\">rare bug in the widely used Rust HTTP library hyper</a> that could silently truncate large HTTP responses while still returning a successful 200 OK status. The issue had existed for years, was triggered only under specific timing conditions, and has now been fixed upstream, prompting discussion among Rust practitioners about the incident and Cloudflare's handling of it.</p>\n   <p>The bug surfaced in <a href=\"https://www.cloudflare.com/products/images/\">Cloudflare Images</a> during a redesign of its Workers Images binding. After rollout, some large image transformation requests intermittently returned truncated data despite reporting an <code>HTTP 200</code> success.</p>\n   <p>In the technical breakdown, the team clarifies how they isolated the root cause and outlines their remediation path. <a href=\"https://www.linkedin.com/in/deannalam\">Deanna Lam</a>, product manager at Cloudflare, <a href=\"https://www.linkedin.com/in/diretnan-domnan/\">Diretnan Domnan</a>, senior system engineer at Cloudflare, and <a href=\"https://www.linkedin.com/in/matthew-lewis-97336462/\">Matt Lewis</a>, senior system engineer at Cloudflare, summarize:</p>\n   <blockquote>\n    <p>We spent six weeks chasing a nearly invisible bug — a race condition that occurred only under specific conditions — in the hyper library that impacted how the Images binding returned processed image data back to the client. In the end, it took four lines of code to fix it.</p>\n   </blockquote>\n   <p>The <a href=\"https://github.com/hyperium/hyper\">Rust hyper library</a> is a low-level networking library that implements the HTTP protocol, providing the core client and server functionality that many higher-level Rust web frameworks and applications rely on. It was started in 2014 by Sean McArthur and is released under the permissive MIT license.</p>\n   <p>After customers started reporting truncated images, the team noticed that responses returned HTTP 200 and the expected Content-Length, but in one case delivered only 200 KB of the expected 3.3 MB, making the source of the truncation difficult to identify.</p>\n   <p>The team systematically isolated each component in the request path by building a reliable reproduction, testing across hyper versions and environments, instrumenting every service, and using distributed tracing to progressively eliminate possible causes until the issue was narrowed to the Images service's HTTP response path.</p>\n   <p>Application-level tracing and logs showed no errors, but low-level kernel syscall tracing (<code>strace</code>) revealed that hyper was prematurely closing connections before buffered response data had been fully transmitted, confirming a timing-dependent race condition.</p>\n   <p>Cloudflare traced the bug to hyper's HTTP/1 dispatch loop, which incorrectly ignored an incomplete buffer flush and prematurely closed the connection, causing buffered response data to be lost under rare timing conditions. To fix the bug, the team added a deterministic test that reproduced the race condition and modified Hyper to ensure buffered data is fully flushed before closing the connection. Lam, Domnan, and Lewis add:</p>\n   <blockquote>\n    <p>Our breakthrough came from using kernel-level tooling with strace, the one layer that records what actually happened on the socket. The underlying bug lived in the few milliseconds between a partial flush and a premature shutdown — a window that opened only after we made the system faster.</p>\n   </blockquote>\n   <p>On Reddit, Martin Nordholts, a contributor to the Rust compiler, <a href=\"https://www.reddit.com/r/CloudFlare/comments/1ucs0bm/comment/ot9b66u/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">comments</a>:</p>\n   <blockquote>\n    <p>This is a known design flaw of async Rust. In sync Rust, if it compiles, it works (generally). In async Rust, that is not the case, unfortunately. One class of problems that contributes to that is silent cancellation. The article is one example of what bugs that can cause.</p>\n   </blockquote>\n   <p>Highlighting how Cloudflare is not sponsoring Sean McArthur, who maintains hyper and other foundational Rust libraries, Jim Fuller <a href=\"https://mastodon.social/@jimfuller/116820394372669853\">writes</a>:</p>\n   <blockquote>\n    <p>Nice write-up by another $2b revenue company that does not appear to directly support developers that work on critical path to said revenue.</p>\n   </blockquote>\n   <p>In a popular <a href=\"https://news.ycombinator.com/item?id=48670314\">Hacker News thread</a>, some practitioners focus on the Rust code:</p>\n   <blockquote>\n    <p>This would have been flagged by Clippy lints `let_underscore_untyped` or `let_underscore_must_use`, which sadly are not enabled by default.</p>\n   </blockquote>\n   <p>Others question Cloudflare's monitoring:</p>\n   <blockquote>\n    <p>Cloudflare does not notice (until a customer complains) that they are sending broken responses at scale? I would have thought they would notice this from sampling and linting a few replies.</p>\n   </blockquote>\n   <p>The fix and accompanying test have been <a href=\"https://github.com/hyperium/hyper/pull/4018\">merged into the hyper project </a>and will be available in a future release, preventing the response truncation bug.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Identifies Race Condition in hyper’s HTTP/1 Implementation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/cloudflare-hyper-bug-fix/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1783837080000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 发现 hyper 中罕见的竞态条件，静默截断 HTTP 200 响应，并添加了修复。",
+  "oneSentenceSummary": "Cloudflare 发现 hyper 中罕见的竞态条件，静默截断 HTTP 200 响应，并添加了修复。",
+  "summary": "Cloudflare 团队在 Rust hyper HTTP/1 库中追踪到一个罕见的竞态条件，该问题导致大图像响应被截断，但仍返回 HTTP 200。通过使用内核级 strace，他们识别出 hyper 调度循环中过早关闭连接的问题，添加了确定性测试，并向上游贡献了一个四行修复代码，引发了关于异步 Rust 可靠性的讨论。",
+  "mainPoints": [
+    {
+      "point": "该 bug 是 hyper 的 HTTP/1 调度循环中一个罕见的竞态条件，导致连接过早关闭。",
+      "explanation": "它仅在特定的时序条件下出现，导致尽管状态为 200 OK，大响应仍被截断，通过 strace 发现。"
+    },
+    {
+      "point": "Cloudflare 重现了该问题，并贡献了一个最小的四行修复代码，确保在连接关闭前刷新缓冲数据。",
+      "explanation": "该修复已合并到 hyper 上游，防止未来版本中出现截断。"
+    },
+    {
+      "point": "该事件引发了 Rust 社区关于异步 Rust 可靠性和静默取消问题的讨论。",
+      "explanation": "贡献者指出异步 Rust 可能隐藏诸如静默取消之类的 bug，并建议启用 Clippy lint 来捕获类似问题。"
+    },
+    {
+      "point": "Cloudflare 的调试方法结合了应用程序追踪、分布式追踪和底层内核系统调用追踪，以隔离根本原因。",
+      "explanation": "这种分层可观测性策略使他们能够在六周调查后精确定位问题。"
+    }
+  ],
+  "keyQuotes": [
+    "我们花了六周时间追踪一个几乎不可见的 bug——一个仅在特定条件下出现的竞态条件——位于 hyper 库中，该问题影响了 Images 绑定将处理后的图像数据返回给客户端的方式。最终，只需四行代码就修复了它。",
+    "这是异步 Rust 已知的设计缺陷。在同步 Rust 中，如果编译通过，通常就能工作（一般而言）。不幸的是，在异步 Rust 中并非如此。导致这一问题的一类问题是静默取消。这篇文章就是它可能导致的 bug 的一个例子。",
+    "这本会被 Clippy lint 规则 `let_underscore_untyped` 或 `let_underscore_must_use` 标记出来，可惜它们默认并未启用。"
+  ],
+  "tags": [
+    "Rust",
+    "hyper",
+    "竞态条件",
+    "异步 Rust",
+    "系统编程"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 661,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1783837080000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-12 14:18:00"
+}
