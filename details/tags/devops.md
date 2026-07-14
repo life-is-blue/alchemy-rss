@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-14 09:25:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-14 12:41:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,25 +584,19 @@
 
 ### [推出-Precursor：通过持续的客户端信号检测智能体行为](https://blog.cloudflare.com/introducing-precursor/)
 
-2026-07-13 22:00:01 | 标签: 机器人检测, 机器人管理, 客户端安全, 行为分析, Cloudflare
-
-> Cloudflare 推出 Precursor，这是一款注重隐私、基于 JavaScript 的系统，搭配 Turnstile 运行，收集跨用户整个会话的持续交互信号——如鼠标移动、键盘时序和焦点变化。通过在边缘聚合这些信号，Precursor 为机器人检测添加持久的行为上下文，使机器人难以长期模仿人类行为，同时降低合法用户的摩擦。系统分为四层：轻量脚本的注入与事件收集、边缘侧的专用评估器进行实时评估、跨页面刷新持久的会话范围聚合、以及遵循隐私设计的数据处理，避免将原始输入暴露给客户。Precursor 与现有的 bot‑score 与挑战系统相结合，现已在 Cloudflare 仪表板中免费...
+2026-07-13 22:00:01
 
 
 
 ### [合规之路：你的内部用户会讨厌你的平台团队吗？](https://www.infoq.com/presentations/platform-engineering-team-compliance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-13 20:20:00 | 标签: 平台工程, 云基础设施, DevOps, AWS, 合规
-
-> Davide de Paolis，Sevdesk 的工程经理，讲述了他的平台团队如何通过引入标签策略来应对不断增长的云成本和安全漏洞。在经历了一次由于信息过载而导致开发者反感的初始失败尝试后，他们转向了一种轻量级、AWS 原生的方法：使用服务控制策略（SCP）强制执行必需的标签，利用 Security Hub 的标签标准，并构建了一个由 EventBridge 驱动的管道——在资源创建时打标签，汇总违规事件，并通过队列发送精准的 Slack 通知以避免垃圾信息。该团队还推出了每周合规报告，表扬合规团队并警告落后团队，从而创建一个鼓励采用的反馈循环，同时不破坏部署。本次分享强调了变革的人性层面—...
+2026-07-13 20:20:00
 
 
 
 ### [从多区域-AWS-API-中移除隐藏的往返请求](https://www.infoq.com/articles/aws-multi-region-signing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-13 19:00:00 | 标签: AWS, 云计算, API 网关, SigV4, SigV4a
-
-> 文章描述了一个内部 AWS 用户设置服务最初依赖 SigV4，SigV4 将每个请求绑定到单个区域，迫使客户端必须先执行预飞行 DiscoverRegion 调用以了解在哪里签名。这增加了延迟，并在区域故障期间带来了运营复杂性。在一系列 us‑east‑1 事件凸显了区域绑定变通方案的脆弱性后，团队采用了 SigV4a，它允许签名在一组区域内有效。代码更改非常小——仅需为区域集合而不是单个区域进行签名——但推出过程需要协调多个内部调用方、更新白名单并在六个月的并行运行期间管理 SDK 版本。此次迁移消除了发现往返，降低了延迟，简化了重试逻辑，并实现了无缝的多区域故障转移。文章最后给出了何时仍适...
+2026-07-13 19:00:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-14 09:25:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-14 12:41:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -716,41 +716,31 @@
 
 ### [通往主权数据的路径：本地优先计算的挑战与优先级](https://www.infoq.com/news/2026/07/data-ownership-localfirst/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-13 22:14:00 | 标签: 本地优先, 数据所有权, 去中心化 Web, Bluesky, AT Protocol
-
-> 在柏林举行的 Local First Conf 2026 大会上，来自 Scuttlebutt、Bluesky、Ink & Switch、Supramundane 的专家以及独立研究员 Eileen Wagner 共同探讨了超越“本地优先”理想的数据所有权含义。他们将其定义为安全性、可用性和结构独立性的结合，并指出如果缺乏可用的工具（例如 GDPR 式的访问请求），仅有法律形式上的权利是不足够的。发言者认为，将平台解耦既是技术目标也是政治目标，应设计出适应本地社会语境的系统，而不是强迫用户适应中心化基础设施。去中心化理想与互联网规模需求之间存在张力，Bluesky 从点对点架构向基于服务器的架...
+2026-07-13 22:14:00
 
 
 
 ### [如何在-React-中构建-Shadcn-Sheet-组件：购物车与筛选面板示例](https://www.freecodecamp.org/news/how-to-build-a-shadcn-sheet-component-in-react-cart-and-filter-panel-examples/)
 
-2026-07-13 22:13:49 | 标签: React, shadcn/ui, UI 组件, 前端开发, Sheet 组件
-
-> 本文提供了一份使用 shadcn/ui 和通过 Shadcn Space 注册表引入的 Base UI 原语来构建两个实用 Sheet 组件的分步指南。第一个是带有数量控制、项目移除和实时小计功能的购物车面板。第二个是带有类别复选框、价格范围滑块、星级评分和当前激活筛选数量的筛选面板。本教程不仅解释代码，还阐述了每个设计选择背后的逻辑：使用派生总量而非追踪状态、通过将数量归零来移除项目、使用 `render` prop 而非 `asChild`，以及通过固定页眉/页脚和可滚动中间区域来构建布局。此外，本文还涵盖了 CLI 注册表的设置以及如何安装这些组件。本文内容实用且具操作性，面向熟悉 sh...
+2026-07-13 22:13:49
 
 
 
 ### [如何使用-JavaScript-构建基于浏览器的-PDF-图片提取器](https://www.freecodecamp.org/news/build-pdf-image-extractor-javascript/)
 
-2026-07-13 22:12:57 | 标签: JavaScript, PDF 处理, PDF.js, PDF-lib, Web 开发
-
-> 本教程解释了开发专用 PDF 图片提取工具的必要性，并详细说明了嵌入图片与渲染后的页面截图之间的区别。教程涵盖了项目搭建、上传界面创建、使用 pdf.js 生成页面预览、扫描 PDF 内部结构中的 paintImageXObject 操作、按页提取并整理图片，以及实现单张或全部图片下载等步骤。此外，文章还介绍了实际应用场景、性能优化技巧及常见错误，确保读者能够构建并扩展出一个功能完备、保护隐私且完全在浏览器中运行的工具。
+2026-07-13 22:12:57
 
 
 
 ### [GitHub---floodtide/dom-docx:-将语义化-HTML-片段转换为原生可编辑的-Word-文档-OOXML](https://github.com/floodtide/dom-docx)
 
-2026-07-13 19:51:56 | 标签: 开源, JavaScript, Node.js, HTML, Word 文档
-
-> dom-docx 是一个 JavaScript 库，可将语义化 HTML 片段转换为原生可编辑的 Word 文档（OOXML 格式），无需截图或布局 hack。支持段落、文本流、列表、表格、图片及多种格式选项。该库提供两个入口：纯 Node.js 包（`dom-docx`）和浏览器包（`dom-docx/browser`）。默认的 `inline` 路径无需浏览器依赖，而 `styleSource: 'computed'` 在 Node 端使用 Playwright，在浏览器端使用 live DOM。可选的 `rasterizeInPlace` 功能可在转换前将图表和复杂 SVG 转为 PNG...
+2026-07-13 19:51:56
 
 
 
 ### [如何利用-AT-Protocol-基础设施构建更具韧性的本地优先应用](https://www.infoq.com/news/2026/07/atproto-webapp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-13 15:07:00 | 标签: AT Protocol, 本地优先架构, CRDT, WebRTC, 分布式系统
-
-> Jake Lazaroff 的演讲指出，AT Protocol（atproto）可以作为社交网络之外分布式应用的基础。他通过三个实验加以说明：一个使用 YJS 协作文本编辑器，数据存储在个人数据服务器（PDS）中；一个使用原生 CRDT 记录的协作待办清单，采用最后写入胜利和比较-交换逻辑；以及一个利用 atproto 作为信令机制的 WebRTC 视频聊天。每个实验都移除了 App View 服务器，仅依赖静态应用、PDS 和 Relay。演讲强调了处理并发写入和网络穿越等挑战，并总结道：共享基础设施减少了单点故障和对每个应用服务器的依赖。
+2026-07-13 15:07:00
 
 
 
