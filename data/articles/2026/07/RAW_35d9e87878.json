@@ -1,0 +1,59 @@
+{
+  "id": "RAW_35d9e87878",
+  "title": "Agent 要数量也要脑子！浪潮信息一边单柜养 4 万 Agent，一边让大模型组队答题",
+  "url": "https://www.qbitai.com/2026/07/449311.html",
+  "date": "2026-07-13 19:59:57",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>AI基础设施的核心任务，已经从支撑大模型推理，转向支撑海量智能体的规模化运行与高质量Token的持续生产。</p>\n  <p>据IDC数据，2025年中国AI Agent企业级市场规模约190亿元，预计2025至2028年复合增长率超过110%。Gartner的判断更直接，2026年将有40%的企业应用集成任务型AI Agent。</p>\n  <p>大模型推理阶段，AI基础设施只需要支撑一次输入一次输出。</p>\n  <p>进入Agent阶段，基础设施要支撑的是任务拆解、工具调用、多轮协作和持续运行，这对算力提出了完全不同的要求。</p>\n  <p>这背后其实是两个方向的能力缺口，一个是海量Agent能不能规模化、稳定地运行起来，另一个是多个模型能不能协同工作，让Agent变得更聪明。</p>\n  <p>浪潮信息在2026开放计算大会上，针对这两个缺口分别给出了新的产品方案。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260713195023_403fbd0bb0a510329b248f45a4202a60.webp\" alt=\"img\" data-aistatus=\"1\" data-backh=\"267\" data-backw=\"520\" data-imgfileid=\"100419456\" data-ratio=\"0.512962962962963\" data-type=\"png\" data-w=\"1080\" data-src=\"https://image.jido.dev/20260713195022_945ff3c.png\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;width: 100%;height: auto !important;\" data-index=\"3\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>Agent时代，人们对AI基础设施也有了新的要求。</p>\n  <p>过去企业部署AI，大多是接入一两个模型，处理相对独立的任务，调用一次、返回一次，事情就结束了。</p>\n  <p>Agent不是这样。</p>\n  <p>一个Agent应用要先把任务拆开，再一步步调用工具、来回协作，背后同时运转的可能是一整群Sub-Agent。</p>\n  <section>\n   <section>\n    <section>\n     <img decoding=\"async\" src=\"https://image.jido.dev/20260713195023_7c0462fb6924883510692b525ca0540c.webp\" alt=\"图片\" data-ratio=\"0.8538461538461538\" data-type=\"jpeg\" data-w=\"780\" data-src=\"https://image.jido.dev/20260713195022_f29fe17.jpeg\" data-original-style=\"height: auto !important;\" data-index=\"4\" data-report-img-idx=\"1\" data-fail=\"0\">\n    </section>\n   </section>\n  </section>\n  <p>部署到企业之后，Agent的数量更是可能高达成千上万。</p>\n  <p>怎么让这么大规模的Agent群体稳定协同地跑起来，就成了一个绕不开的新问题。</p>\n  <p>除了Agent数量在增多，单一模型这边的压力也在增加。</p>\n  <p>有的模型擅长逻辑推理，有的擅长写文本，这种能力上的偏科没法靠堆参数量解决。</p>\n  <p>但实际任务又变得越来越复杂，很难指望一个模型什么都会。</p>\n  <p>所以，怎么让多个模型分工协作、互相补台，成了另一个必须解决的问题。</p>\n  <p>这两件事要真正落地，都必须有底层算力基础设施打头阵。</p>\n  <p>新需求来临之后，基础设施的第一个变化，就是CPU变得更重要，戏份也更多了。</p>\n  <p>以前的问答模式下，大模型推理是一次输入一次输出，更多依靠GPU运行。</p>\n  <p>但Agent不一样，它要做任务拆解、调用工具、多轮协作、汇总结果，这些整型运算和逻辑推理，运行在CPU之上。</p>\n  <p>而且Agent不是跑一次就“下班”，很多Agent必须常年在线，运行时间被大幅拉长。</p>\n  <p>所以在AI Infra行业里，算力配比也在发生变化，从过去以GPU为中心，走向多元算力系统协同。</p>\n  <p>CPU的重要性上来之后，紧接着要面对的是功率密度问题。</p>\n  <p>浪潮信息副总经理赵帅介绍，国内的AI机柜功率今年内就要冲到300千瓦，全球部分机柜已经进入兆瓦级。</p>\n  <p>如果CPU侧还停留在单柜几千瓦的密度，根本没法匹配数据中心全新的电力基础设施。</p>\n  <p>随着机柜功率不断攀升，散热就成了问题，传统风冷单机柜散热40到50千瓦的上限早就撑不住了，液冷方案成了必选项。</p>\n  <h2>单柜运行4万+Agent</h2>\n  <p>为了实现Agent的规模化运行，浪潮信息发布了业界首款CPU原生液冷整机柜服务器。</p>\n  <p>这台服务器单柜最大可支持384颗基于开放OCM（开放计算模组）架构的CPU处理器，兼容x86和ARM，可以支撑4万+个Agent协同运行。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260713195023_de1bddf5b94c1426d2b37e299b973390.webp\" alt=\"img\" data-aistatus=\"1\" data-backh=\"347\" data-backw=\"520\" data-imgfileid=\"100419455\" data-ratio=\"0.6666666666666666\" data-type=\"png\" data-w=\"1080\" data-src=\"https://image.jido.dev/20260713195022_8bfab9c.png\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;width: 100%;height: auto !important;\" data-index=\"5\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <h6><strong>△</strong>浪潮信息副总经理 赵帅</h6>\n  <p>这个规模是浪潮信息今年4月发布的“企千虾”方案的40倍。</p>\n  <p>企千虾当时是用单台2U服务器部署1000个OpenClaw，这一次，浪潮信息直接把Agent塞满了一整个机柜。</p>\n  <p>而且该机柜采用的OCM架构。能够兼容不同代际、不同架构的处理器，不用为每一代新芯片重新设计整套系统，研发周期因此被大幅压缩。</p>\n  <p>要在一个机柜里塞进384颗CPU，散热是绕不开的坎。</p>\n  <p>浪潮信息提出了一种全新的散热理念：原生液冷。</p>\n  <p>这一想法完全颠覆传统风液混合的散热逻辑，以前的冷板液冷服务器设计是给计算部件贴散热冷板，其他内存、网卡、硬盘还是要再研究怎么通过风扇把产生的热量散出去。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260713195023_b013f0177983a029eebcecd846ce39b3.webp\" alt=\"img\" data-aistatus=\"1\" data-backh=\"376\" data-backw=\"520\" data-imgfileid=\"100419453\" data-ratio=\"0.7222222222222222\" data-type=\"png\" data-w=\"1080\" data-src=\"https://image.jido.dev/20260713195022_3ed4c41.png\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;width: 100%;height: auto !important;\" data-index=\"6\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>这一次思路完全颠覆，计算和散热协同设计，突破传统液冷仅覆盖CPU的局限，对内存、网卡、光模块、SSD等所有发热部件一并纳入液冷散热体系，重构整个算力系统。</p>\n  <p>浪潮信息的具体做法是把算力单元做成2U超薄形态，一个节点塞进16颗CPU，同时把内存、网卡、光模块这些原本靠风扇和线缆维持散热与连接的部件，直接平铺在主板上，用一整块冷板统一承接散热，连服务器托架也省了。</p>\n  <p>这样，原来被风扇、冷管、线缆占用的空间，都被腾出来留给计算和IO资源，整机柜也因此做到了无线缆设计，支持热维护，保障业务零中断，整机柜运维效率提升100%以上。</p>\n  <h2>多个大模型，协同完成一次任务</h2>\n  <p>为了让Agent变得更聪明，浪潮信息还在元脑企智EPAI平台上线了多模融合API，并同步发布了元脑SD200超节点AI服务器企业版。</p>\n  <p>多模融合做的事情，是把同一个任务同时甩给多个候选模型，让它们各自独立生成答案，再由一个评审融合模型出面，比较这些答案里的共识、分歧、遗漏和独特观点，最终拼出一个统一的输出。</p>\n  <p>这套流程也不是所有任务都要走一遍，简单问答、工具调用、格式转换这类短任务，系统会直接路由给更轻量的单模型处理。</p>\n  <p>只有复杂的长链路任务，系统才会调度多个候选模型协同处理，避免小题大做。</p>\n  <p>这套机制在DRACO测试里取得了53.9%的成绩，高于同一测试候选池里任何一个单模型的表现。</p>\n  <p>目前这项能力可以多模融合API的形式对外开放，既可以像普通模型服务一样直接接入应用，也可以配置到智能体和开发框架里，沿用原有的对话、推理和工具调用流程。</p>\n  <p>不过问题也随之而来，多个大模型同时参与一次任务，无疑对底层算力提出了更高的要求，既要一次装得下多个万亿参数模型，又不能牺牲输出速度。</p>\n  <p>这正是元脑SD200超节点要扛住的部分。</p>\n  <p>元脑SD200超节点去年发布时，已经能同时部署4个万亿参数大模型，token生成时间做到8.9毫秒，是国内首个突破10毫秒大关的产品。</p>\n  <p>今年，这个数字进一步压到4.77毫秒，是国内首个跑进5毫秒的方案，首Token延迟也降低了35%。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260713195023_d7474c58030931690b8289f97f3c9d92.webp\" alt=\"img\" data-aistatus=\"1\" data-imgfileid=\"100419454\" data-ratio=\"0.562962962962963\" data-type=\"png\" data-w=\"1080\" data-src=\"https://image.jido.dev/20260713195022_7b83217.png\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;width: 520px;height: auto !important;\" data-index=\"7\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>这些提升背后是多Token预测、W4A8精度方案和JIT即时编译这类软硬协同优化在起作用。</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>多Token预测让解码阶段一次生成多个候选token再校验，减少了逐字生成的轮次；</section>\n   </li>\n   <li>\n    <section>W4A8把万亿参数模型里MoE模块的计算精度从BF16降到INT8，降低了访存带宽压力；</section>\n   </li>\n   <li>\n    <section>JIT则会在运行时根据张量形状动态生成专用的GPU内核，让算力更贴近硬件的特性。</section>\n   </li>\n  </ul>\n  <p>目前，元脑SD200超节点已经完成了对Kimi K2.6、DeepSeek V4、GLM 5.2、MiniMax M3等主流开源模型的适配。</p>\n  <p>不过，这套架构的门槛，对不少中小企业来说依然偏高。</p>\n  <p>因此，浪潮信息还推出了元脑SD200超节点企业版，可以理解成是小号的元脑SD200。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260713195022_1a19e6bd950cd90ad4e7dcbdf3b6abaf.webp\" alt=\"img\" data-aistatus=\"1\" data-backh=\"293\" data-backw=\"520\" data-imgfileid=\"100419457\" data-ratio=\"0.562962962962963\" data-type=\"jpeg\" data-w=\"1080\" data-src=\"https://image.jido.dev/20260713195022_9d010c1.jpeg\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;width: 100%;height: auto !important;\" data-index=\"8\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>它把Scale Up计算域从64卡减少到16卡，万亿参数模型的首token延迟降低40%以上，给企业提供了更低迁移和适配成本的选择。</p>\n  <p>这样，原本只能部署千亿模型做辅助的企业，现在也能把万亿模型真正用进生产环境。</p>\n  <h2>Agent基础设施，竞争已经生变</h2>\n  <p>如今，CPU、GPU和软件平台这三者的分工，正在变得更紧密。</p>\n  <p>其中，软件平台负责模型接入、任务编排、资源调度、权限治理和结果融合，CPU承载Agent实例、工具调用、沙箱运行和业务系统交互，GPU负责模型推理与Token生成。</p>\n  <p>三者协同，才能支撑海量Agent稳定运行和复杂任务高效执行。</p>\n  <p>这条链路里，任何一环掉队，整个Agent应用都跑不顺畅。</p>\n  <p>这也让Agent时代基础设施的竞争重点发生了变化。</p>\n  <p>过去比的是谁对单一模型的支持能力更强，现在比的是谁系统级协同能力谁做得更好。</p>\n  <p>单点强已经不够，整条链路跑不跑得顺、协不协同才是关键。</p>\n  <p>这正是浪潮信息这次想在Agent基础设施上给出的答案。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文报道浪潮信息在 2026 开放计算大会上发布的两大 Agent 基础设施方案：支持单柜 4 万+ Agent 运行的 CPU 原生液冷整机柜服务器，以及实现多模型协同的多模融合 API 与元脑 SD200 超节点。",
+  "oneSentenceSummary": "本文报道浪潮信息在 2026 开放计算大会上发布的两大 Agent 基础设施方案：支持单柜 4 万+ Agent 运行的 CPU 原生液冷整机柜服务器，以及实现多模型协同的多模融合 API 与元脑 SD200 超节点。",
+  "summary": "文章报道浪潮信息针对 Agent 时代基础设施需求发布的最新方案。核心内容分两部分：一是业界首款 CPU 原生液冷整机柜服务器，单柜最大支持 384 颗 CPU，可支撑 4 万+个 Agent 协同运行，是此前方案的 40 倍；二是元脑企智 EPAI 平台上线多模融合 API，通过让多个候选模型独立生成答案再由评审模型融合，在 DRACO 测试中取得 53.9%成绩，超越任何单模型。配套的元脑 SD200 超节点将首 Token 延迟压至 4.77 毫秒，为国内首个进入 5 毫秒的方案。文章还分析了 Agent 时代基础设施竞争重点的转变——从单模型支持能力转向系统级协同能力。",
+  "mainPoints": [
+    {
+      "point": "Agent 时代基础设施需求发生根本性变化，CPU 重要性显著提升。",
+      "explanation": "与一次输入一次输出的大模型推理不同，Agent 需要任务拆解、工具调用、多轮协作和持续运行，这些整型运算和逻辑推理主要运行在 CPU 上，且 Agent 常年在线，运行时间被大幅拉长。"
+    },
+    {
+      "point": "浪潮信息发布 CPU 原生液冷整机柜，单柜可支撑 4 万+ Agent 协同运行。",
+      "explanation": "该服务器采用 OCM 开放架构，单柜最大支持 384 颗 CPU，兼容 x86 和 ARM。散热思路完全重构，计算和散热协同设计，将内存、网卡、光模块、SSD 等所有发热部件一并纳入液冷体系，实现整机柜无线缆设计，运维效率提升 100%以上。"
+    },
+    {
+      "point": "多模融合 API 让多个大模型协同完成复杂任务，超越单模型表现。",
+      "explanation": "系统将同一任务同时分配给多个候选模型独立生成答案，再由评审融合模型比较共识、分歧、遗漏和独特观点，最终拼出统一输出。简单任务直接路由给轻量单模型，避免小题大做。"
+    },
+    {
+      "point": "元脑 SD200 超节点首 Token 延迟压至 4.77 毫秒，为国内首个进入 5 毫秒的方案。",
+      "explanation": "背后是软硬协同优化：多 Token 预测减少逐字生成轮次，W4A8 精度方案降低访存带宽压力，JIT 即时编译动态生成专用 GPU 内核。已适配 Kimi K2.6、DeepSeek V4、GLM 5.2 等主流开源模型。"
+    },
+    {
+      "point": "Agent 基础设施竞争重点从单点能力转向系统级协同能力。",
+      "explanation": "软件平台负责模型接入与资源调度，CPU 承载 Agent 实例与业务交互，GPU 负责模型推理，三者缺一不可。整条链路跑得顺不顺、协不协同成为关键。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 基础设施的核心任务，已经从支撑大模型推理，转向支撑海量智能体的规模化运行与高质量 Token 的持续生产。",
+    "单点强已经不够，整条链路跑不跑得顺、协不协同才是关键。"
+  ],
+  "tags": [
+    "AI基础设施",
+    "AI Agent",
+    "液冷服务器",
+    "多模融合",
+    "大模型协同"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 81,
+  "wordCount": 3010,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1783943997000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-13 19:59:57"
+}
