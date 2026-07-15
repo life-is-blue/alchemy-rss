@@ -1,0 +1,62 @@
+{
+  "id": "RAW_140de6b",
+  "title": "构建智能体基础设施的未来：Claude Platform 如何迈向组织级能力",
+  "url": "https://www.youtube.com/watch?v=ksfm6jeTg3Q",
+  "date": "2026-07-11 01:41:00",
+  "author": "Claude",
+  "siteName": "Claude",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Building the future of agentic infrastructure</h1>\n  <p>Claude Platform 正在从一个提供模型推理与 token 访问的 API，演进为承接更多基础设施和 harness engineering 的 agentic infrastructure。对话中提到，managed agents 让代理可以拥有 memory、outcomes 和更清晰的身份边界；代理还可以通过 API 或薄 MCP server 相互调用。</p>\n  <p>模型能力提升后，开发者不必再用大量固定步骤把模型限制在复杂流程里，harness 可以变得更薄，并通过多代理竞争、对抗策略或 advisor strategy 组合出更强的解决路径。制造业知识保存和端到端软件开发案例说明，代理正在处理超越单纯写代码的工作。</p>\n  <p>企业采用仍受安全、合规和 evals 影响。更实际的 ROI 路径是先测量个人速度，再看团队生产力，最后扩展到跨团队流程。工程团队不会消失，而是由仍然负责系统理解和运维的人组成，并由代理放大每个人的执行能力。</p>\n  <p>未来，代理可能不再是人主动寻找的独立工具，而会成为组织中共享接口下的隐形基础设施：它们可以按 outcome 和预算运行，主动发现问题、提出修复，并在授权范围内完成工作。同时，组织必须防止过度独立、协调困难和工作流蔓延。</p>\n </body>\n</html>",
+  "aiSummary": "Claude Platform 团队解释了更强的模型、托管智能体、身份体系、MCP 和更轻量的 harness 如何把智能体基础设施转化为组织能力。",
+  "oneSentenceSummary": "Claude Platform 团队解释了更强的模型、托管智能体、身份体系、MCP 和更轻量的 harness 如何把智能体基础设施转化为组织能力。",
+  "summary": "这场对话讨论了 Claude Platform 如何从模型推理和 token 访问 API，转向托管智能体及更完整的智能体基础设施。嘉宾重点介绍了记忆、结果导向、长时运行，以及智能体身份的新模式：智能体接收期望结果，只申请完成任务所需的权限，通过服务账号执行，并让全部操作保持可审计。智能体可以通过 API 或轻量 MCP server 协作；随着模型能力和运行时基础设施提升，团队不再需要脆弱且高度脚本化的 harness。讨论还涉及多个智能体竞争、对抗式审查和顾问调用等组合策略，以及保留制造业经验、协调端到端软件开发等案例。对于企业落地，较稳妥的 ROI 路径是先提升个人速度，再提升团队生产力，最后连接跨团队工作流，同时更新安全、合规和 evals。最终愿景是一个隐形、主动运行的组织底层系统，但嘉宾也提醒要警惕过度独立、协调失败和工作流蔓延。",
+  "mainPoints": [
+    {
+      "point": "托管智能体正在把平台能力从模型访问拓展出去",
+      "explanation": "Claude Platform 通过托管智能体、记忆、结果导向和长时运行，承担更多基础设施与 harness 工程工作，让团队可以利用模型智能，同时减少自定义脚手架。"
+    },
+    {
+      "point": "智能体身份应结合结果导向的权限管理与可审计性",
+      "explanation": "智能体可以先接收期望结果，再申请完成任务所需的具体资源权限，由人批准或拒绝，最后通过自己的服务账号执行，从而让每项操作都能被审计。"
+    },
+    {
+      "point": "更强的模型让 harness 更轻量，也让策略更容易组合",
+      "explanation": "当模型越来越擅长在合理边界内选择步骤时，僵化的业务流程框架就可以减少。多个智能体竞争、对抗式审查和顾问策略可以进一步组合，用来处理更复杂的问题。"
+    },
+    {
+      "point": "智能体 ROI 应从个人逐步衡量到团队和工作流",
+      "explanation": "嘉宾建议先衡量个人速度，再衡量团队生产力，之后才评估跨团队连接工作流的价值，同时同步解决安全、合规和 evals 问题。"
+    },
+    {
+      "point": "未来是隐形的组织基础设施，但协调风险仍然存在",
+      "explanation": "智能体可能主动监控系统、修复问题，并通过人们熟悉的共享界面运行；但不受约束的自主性也可能带来过多原型、协调薄弱和组织蔓延。"
+    }
+  ],
+  "keyQuotes": [
+    "你能看出来我们是 API 极客，因为我们会说智能体应该通过 API 彼此沟通。",
+    "但我认为，智能体身份越来越接近这样一种东西：智能体会听取你想要的结果。",
+    "模型的不确定性过去要麻烦得多，而现在已经没有那么严重了。",
+    "你的大部分 ROI 计算，首先应该围绕速度，尤其是生产力。",
+    "我们可能会越来越接近这样一个世界：你对 Claude 说，我想要这个结果，这是预算。去完成它。"
+  ],
+  "tags": [
+    "智能体基础设施",
+    "托管智能体",
+    "智能体身份",
+    "MCP",
+    "harness 工程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 415,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_5f307b71",
+  "sourceName": "Claude",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783705260000,
+  "publishDateStr": "07-11",
+  "publishDateTimeStr": "2026-07-11 01:41:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_a65b28aed",
+  "title": "「完成」究竟意味着什么：把智能体交付变成可验证对象",
+  "url": "https://www.youtube.com/watch?v=7P0elyLIxXo",
+  "date": "2026-07-12 14:45:06",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>What Does Done Even Mean?</h1>\n  <p>Dotta, the creator of Paperclip, explains why agentic systems need a richer definition of completion than a green checkbox. Agents can produce code and documentation faster than people can verify them, creating a new failure mode: more work than humans have time to inspect.</p>\n  <h2>Done is a bundle of claims</h2>\n  <p>A task is not complete merely because its status changed. Completion should identify the artifact, scope, standard or rubric, evidence, verifier, authorized approver, remaining risk, owner, and next action. Different states—producer completion, review, verification, approval, accountability, and real-world survival—carry different levels of assurance.</p>\n  <h2>Liveness and verification</h2>\n  <p>Paperclip's liveness model balances two needs. Work should keep moving without blockers, but it should not become uncontrolled AI slop. A control plane handles dependencies, explicit blockers, state transitions, multiple agents, approvals, and bounded loops. Its key invariants are that productive work continues, only real blockers stop work, and infinite loops are bounded.</p>\n  <p>Paperclip also uses reviewers, approvers, audit trails, and harness-agnostic watchdogs. A watchdog receives a goal and keeps agents working toward it across tools such as Claude Code or Codex.</p>\n  <h2>A practical checklist</h2>\n  <p>Treat done as an object, separate the author from the verifier, require evidence, and give agents tools to test their own work. Browser harnesses, screenshots, hooks, and clear handoffs help establish a chain of custody. For accountable work, define completion in enough detail that every claim behind done can be verified.</p>\n </body>\n</html>",
+  "aiSummary": "Dotta 认为，智能体工作中的「完成」不应只是勾选一个状态，而应是一个可验证的对象，包含范围、证据、标准、责任人、审批、剩余风险和下一步行动。",
+  "oneSentenceSummary": "Dotta 认为，智能体工作中的「完成」不应只是勾选一个状态，而应是一个可验证的对象，包含范围、证据、标准、责任人、审批、剩余风险和下一步行动。",
+  "summary": "Paperclip 创作者 Dotta 解释说，智能体如今生成代码和文档的速度已经超过人类核验产出的速度，由此形成一种新的失败模式：未经检查的输出不断累积，审查能力却跟不上。他提出，应把「完成」视为一组运营层面的声明：产物确实存在，范围和标准清晰明确，有证据支持完成状态，验证者与有权审批的人已经确定，剩余风险保持可见，并且下一步行动有明确负责人。演讲进一步区分生产者声明、审查、验证、审批、问责和经受现实检验这几个层次，并将智能体工作流定义为控制平面问题。Paperclip 通过明确的状态转换、真实阻塞、审批记录、审查者、审批者、有界循环以及与具体工具链无关的 watchdog，在活性与验证之间取得平衡。这套实践清单具有广泛适用性：让作者与验证者分离，要求提供证据，为智能体配备测试工作所需的工具，并为每次交接保留清晰的责任链。",
+  "mainPoints": [
+    {
+      "point": "智能体的产出让单一的完成勾选在实际工作中失去意义",
+      "explanation": "智能体创建代码和文档的速度可能超过人们检查它们的速度，因此任务状态发生变化，并不能证明内容已经可以合并、部署，或足以支撑面向客户的承诺。"
+    },
+    {
+      "point": "完成状态应被表示为一组可验证的声明",
+      "explanation": "有用的完成定义应记录产物、范围、评判标准、证据、验证者、获授权的审批者、负责问责的人、剩余风险和下一步行动，从而拆开经常被混为一谈的不同保障层次。"
+    },
+    {
+      "point": "智能体工作流需要在活性与验证之间取得平衡的控制平面",
+      "explanation": "Paperclip 用明确的状态转换处理依赖树、阻塞、多个智能体、审批和幂等 checkout，并坚持三个不变量：有生产力的工作持续进行，只有真实阻塞才能停止工作，无限循环必须受到限制。"
+    },
+    {
+      "point": "证据与职责分离让智能体工作能够被追责",
+      "explanation": "团队应让作者与验证者分离，要求提供具体证据，为智能体配备浏览器、截图、hooks 和测试工具，并为每次交接维护清晰的责任链。"
+    }
+  ],
+  "keyQuotes": [
+    "完成并不意味着智能体只是把任务状态改成了已完成。",
+    "说某件事已经完成，其实是在提出一组声明。",
+    "你要确保有生产力的工作能够持续进行。",
+    "你要确保只有真实的阻塞才能让工作停下来。",
+    "我们能给出的最佳建议之一，就是不要再把完成当作一个布尔值，而要把它当作一个对象。",
+    "你应该要求智能体提供证据。"
+  ],
+  "tags": [
+    "智能体系统",
+    "完成定义",
+    "验证",
+    "控制平面",
+    "活性"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 89,
+  "wordCount": 237,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783838706000,
+  "publishDateStr": "07-12",
+  "publishDateTimeStr": "2026-07-12 14:45:06"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_91337a18e1",
+  "title": "Google 的 Genkit 发布带有脱机轮次和人工干预的 Agents API，支持 TypeScript 和 Go",
+  "url": "https://www.infoq.com/news/2026/07/genkit-agents-api-preview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-14 18:17:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google recently <a href=\"https://developers.googleblog.com/build-agentic-full-stack-apps-with-genkit/\">released the Agents API</a> in preview for <a href=\"https://genkit.dev/\">Genkit</a>, its open-source framework for building full-stack AI applications. The API packages message history, the tool execution loop, streaming, state persistence, and a frontend protocol behind a single chat() interface that works identically whether the agent runs in-process or behind an HTTP endpoint. The preview is available today in TypeScript and Go, with Python and Dart support planned.</p>\n   <p>The design principle is one abstraction that scales up without swapping primitives. The same agent object handles a one-shot reply, a streamed multi-turn conversation, a paused tool call waiting for human approval, and a detached long-running task. Teams do not need to reach for a different framework component as the feature grows from a simple chatbot to a multi-agent workflow.</p>\n   <p>Genkit separates two kinds of agent data that most frameworks conflate. Custom state is typed application data that drives the next turn: a workflow status, a task list, or selected entities. Artifacts are generated outputs the user may inspect, download, or version independently: a report, a code patch, or a travel itinerary. Tools update either one through the active session, and Genkit streams changes to the client as they happen.</p>\n   <p>State persistence follows two paths. With a session store configured, the agent is server-managed: messages, custom state, and artifacts persist as snapshots, and clients reconnect by session ID. Genkit ships stores for Firestore (production multi-instance), in-memory (development), and file-based (local testing), with a pluggable interface for custom implementations. Without a store, the agent is client-managed: the server returns full state and the client sends it back on each turn.</p>\n   <p>Ebenezer Don, an AI engineer, <a href=\"https://getaibook.com/blog/how-to-build-stateful-ai-agents-with-the-genkit-agents-api/\">highlighted the compliance dimension</a> of this architectural choice:</p>\n   <blockquote>\n    <p>Maintaining reliable context is the primary challenge when you decide to add memory to AI agents.</p>\n   </blockquote>\n   <p>On client-managed state specifically, Don noted the data residency angle that server-managed approaches cannot offer:</p>\n   <blockquote>\n    <p>This approach is ideal for ephemeral sessions or applications with strict data residency constraints where the server should not persist user data. The tradeoff is increased network payload size as the conversation grows.</p>\n   </blockquote>\n   <p>Two capabilities stand out from the crowded agentic framework landscape.</p>\n   <p>Detached turns let a client start an agent task, disconnect, and poll for results later. Moreover, the agent continues working server-side, writing progress to snapshots that any client can read:</p>\n   <pre>\r\n<code class=\"language-go\">const chat = reportAgent.chat({ sessionId: 'report-123' });\r\nconst task = await chat.detach('Write the quarterly market report.');\r\n\r\nsavePendingSnapshot(task.snapshotId);\r\n\r\nfor await (const snapshot of task.poll({ intervalMs: 1000 })) {\r\n&nbsp; renderStatus(snapshot.status);\r\n&nbsp; if (snapshot.status === 'completed') renderMessages(snapshot.state.messages);\r\n}</code></pre>\n   <p>With detached runs, developers can create long research jobs, multi-step planning, and tool-heavy workflows practical without WebSockets, a separate job queue, or holding a connection open.</p>\n   <p>The other capability interruptible tools provide human-in-the-loop control with anti-forgery protection. When a tool is marked as interruptible, the agent pauses mid-execution, returns the pending action to the client, and resumes only after the user approves or rejects. The runtime validates the resume payload against session history, preventing a tool from being tricked into running with forged input. In Go:</p>\n   <pre>\r\n<code class=\"language-go\">runShell := genkitx.DefineInterruptibleTool(g, \"run_shell\",\r\n\r\n&nbsp; \"Run a shell command after a safety check.\",\r\n\r\n&nbsp; func(ctx context.Context, input ShellInput, confirm *Confirmation) (ShellOutput, error) {\r\n&nbsp;&nbsp;&nbsp; if isRisky(input.Command) {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if confirm == nil {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return ShellOutput{}, tool.Interrupt(ShellInterrupt{\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Command: input.Command, Reason: \"The command can modify files.\",\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; })\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else if !confirm.Approved {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return ShellOutput{}, errors.New(\"user rejected shell command execution\")\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; }\r\n&nbsp;&nbsp;&nbsp; return execute(input.Command)\r\n&nbsp; },\r\n)</code></pre>\n   <p>For multi-agent orchestration, Genkit's <a href=\"https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/\">middleware system</a> (shipped in May) injects a delegation tool for each sub-agent, so an orchestrator model can route parts of a request to specialists. Sub-agents can run locally or behind HTTP endpoints using the same chat() interface. The middleware layer also provides composable hooks for retries with exponential backoff, model fallbacks across providers, tool approval gates, and a skills system that loads SKILL.md files into the system prompt.</p>\n   <p>Genkit is model-agnostic through its plugin architecture. Official plugins exist for Google AI (Gemini), Vertex AI, Anthropic, OpenAI, and Ollama. A <a href=\"https://genkit.dev/\">Vercel AI SDK adapter</a> lets teams integrate Genkit agents into Next.js applications. Every agent is already a servable action, and route helpers wire up turn, snapshot, and abort endpoints on a standard HTTP mux in a few lines.</p>\n   <p>The competitive context is a crowded field. LangChain, CrewAI, Semantic Kernel, Autogen, Mastra, and Pydantic AI all address overlapping problems. Google itself is building agent infrastructure at two layers simultaneously: Genkit for self-hosted agent apps, and <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/\">Managed Agents in the Gemini API</a> for a Google-hosted runtime where background execution, remote MCP servers, and sandboxed code execution are handled entirely server-side. Genkit's differentiator in the broader landscape is the full-stack approach: server-side agent logic, typed client SDKs for web and mobile, built-in streaming protocol, and deployment to Firebase, Cloud Run, or any environment that runs Node.js or Go. The tradeoff is that Genkit is younger and has a smaller ecosystem of community integrations than LangChain.</p>\n   <p>The Agents API is in <a href=\"https://firebase.google.com/docs/genkit/agents\">preview</a>. The middleware system is GA in TypeScript, Go, and Dart. Genkit is open source under the Apache 2.0 license on <a href=\"https://github.com/firebase/genkit\">GitHub</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google's Genkit Ships Agents API with Detached Turns and Human-in-the-Loop for TypeScript and Go\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/genkit-agents-api-preview/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784024220000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 在其开源的 Genkit 框架中预览了 Agents API，提供统一的抽象，用于构建全栈 AI 代理，支持脱机多轮工作流、可中断工具以及基于中间件的多代理编排，可用于 TypeScript 和 Go。",
+  "oneSentenceSummary": "Google 在其开源的 Genkit 框架中预览了 Agents API，提供统一的抽象，用于构建全栈 AI 代理，支持脱机多轮工作流、可中断工具以及基于中间件的多代理编排，可用于 TypeScript 和 Go。",
+  "summary": "Google 已在其开源的 Genkit 框架中发布了 Agents API 的预览版，这是一个面向全栈 AI 应用的开源工具包。该 API 引入了单一的 chat() 接口，可在进程内和通过 HTTP 两种方式工作，处理一次性回复、流式多轮对话、暂停的工具调用以及断开连接的长期任务。它将自定义状态（即驱动工作流的有类型的业务数据）与 artifacts（即用户可以检查或独立版本的生成输出）区分开来。状态可以由服务器管理（使用 Firestore、in‑memory、file 等可插拔存储）或由客户端管理（每次轮次将完整状态返回客户端）。关键功能包括脱机轮次，使客户端可以启动任务、断开连接并随后轮询快照进度，以及可中断工具，在需要人工批准并通过会话历史验证后才能恢复执行。中间件系统支持子代理的编排，提供可组合的钩子用于重试、模型回退和技能加载。Genkit 通过插件支持 Gemini、Vertex AI、Anthropic、OpenAI、Ollama 等模型，可集成到 Next.js 应用中通过 Vercel SDK adapter，并可部署到 Firebase、Cloud Run 或任何 Node.js/Go 环境。虽然生态系统不如 LangChain 成熟，但 Genkit 的全栈方法——有类型的客户端 SDK、流式协议以及部署选项——为构建生产级 AI 代理提供了独特的价值主张。",
+  "mainPoints": [
+    {
+      "point": "统一抽象在不切换原语的情况下扩展代理",
+      "explanation": "同一代理对象处理一次性回复、流式多轮对话、暂停的工具调用以及脱机长期任务，让开发者从简单聊天机器人成长为复杂的多代理工作流。"
+    },
+    {
+      "point": "自定义状态与 artifacts 的清晰分离",
+      "explanation": "自定义状态保存工作流数据（如任务列表），而 artifacts 是用户可以检查或独立版本的生成输出。"
+    },
+    {
+      "point": "脱机轮次实现离线继续和轮询",
+      "explanation": "客户端可以启动任务、断开连接，随后轮询快照；代理继续在服务器端运行，并将进度写入持久化快照。"
+    },
+    {
+      "point": "可中断工具提供人工干预安全",
+      "explanation": "被标记为可中断的工具会暂停执行，将挂起的操作返回给客户端，并在此之后在获得用户批准并通过会话历史验证后才继续执行。"
+    },
+    {
+      "point": "中间件支持多代理编排和可组合的钩子",
+      "explanation": "委派工具让协调者将子请求路由给专家，支持重试、回退，并通过 MARKDOWN 文件加载技能。"
+    }
+  ],
+  "keyQuotes": [
+    "在决定为 AI 代理添加记忆时，保持可靠的上下文是主要挑战。",
+    "这种方法非常适合短暂会话或数据主权受限的应用，在这种情况下服务器不应持久化用户数据。",
+    "脱机轮次让客户端启动代理任务、断开连接，随后轮询结果。",
+    "中间件系统提供可组合的钩子，支持指数退避的重试、跨提供商的模型回退、工具审批门闸，以及加载 SKILL.md 文件到系统提示词的技能系统。",
+    "Genkit 通过其插件架构实现模型中立。"
+  ],
+  "tags": [
+    "AI 代理",
+    "提示工程",
+    "RAG",
+    "MCP 协议",
+    "后端开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 849,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784024220000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-14 18:17:00"
+}

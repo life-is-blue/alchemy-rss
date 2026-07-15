@@ -1,7 +1,15 @@
-> **更新时间**: 2026-07-13 09:47:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-15 09:20:07 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
+
+
+
+### [跨行业打造-AI-原生产品：研究、执行与反馈闭环](https://www.youtube.com/watch?v=HrEy6MmqI-g)
+
+2026-07-14 04:39:35 | 标签: AI 原生产品, AI 智能体, 市场进入策略, 生产级应用, 智能体基础设施
+
+> 这场 Sequoia 圆桌从三个具体的运营场景讨论如何打造 AI 原生公司。Clay 展示了如何把模型驱动的网页研究与数据补全转化为可执行的市场进入工作流，例如识别潜在客户并生成个性化触达。Emergent 解释说，面向非技术用户构建生产可用的应用，关键在于让智能体获得开发者同等速度的反馈，包括沙盒容器、日志、数据库和运行中的服务。Sylvia 则从个人理财提出警示：主动式环境智能体能够创造价值，但过早依据对用户的假设实施全天候自动化，曾消耗大量 token。共同的实践结论是，将复杂任务拆分成可控工作流，为智能体提供检视结果的基础设施，并先从真实用户行为中学习默认设置，再规模化自动化。
 
 
 
@@ -23,9 +31,7 @@
 
 ### [会做梦的工厂：100-人的-Machinecraft-如何打造企业大脑](https://www.youtube.com/watch?v=jtzh-GBXBWc)
 
-2026-07-12 04:00:27 | 标签: AI 智能体, 企业记忆, Brain OS, 知识图谱, 市场拓展自动化
-
-> Rushabh Doshi 介绍 Machinecraft 如何保存一家拥有三代积累、100 名员工的热成型机工厂所沉淀的实践知识。团队没有训练新模型，而是把报价、图纸、排期、邮件及其他私有记录处理为事实、向量表示和图关系。由此形成的企业大脑结合了分层记忆、显著性筛选、修正优先级、夜间巩固，以及负责销售、定价、机器规格、事实核查和外联的专业智能体。系统可以支持客户简报、报价单、入站回复和唤醒沉睡线索等具体的市场拓展工作，同时坚持由 AI 起草、由人发送。演讲还将治理规则与 Jain 商业原则联系起来，并介绍 Brain OS：一个空白且可分叉的架构，其他公司可以用自己的知识填充它。
+2026-07-12 04:00:27
 
 
 
@@ -53,17 +59,13 @@
 
 ### [超越固定-Harness：走向运行时自适应的-AI-工程](https://www.youtube.com/watch?v=qdZzND79mcg)
 
-2026-07-08 07:32:02 | 标签: 自适应工程, AI 智能体, 多智能体编排, 复杂系统科学, Harness 工程
-
-> 这场演讲把 adaptive engineering 作为对当前 AI 工程 Harness 脆弱性的回应。Chandegra 将 Claude Code、Cursor、Codex、LangChain 式编排和自定义智能体脚手架等工具，概括为类似工厂流水线的系统：它们对固定或复杂但可预测的问题很可靠、可审计，也很强大，但这种能力来自在运行前压低变化空间。他随后用复杂系统科学对比这种还原论模型，指出真实世界由不断变化的关系、局部互动、反馈循环和涌现秩序构成。核心判断是，随着模型能力增强，AI 系统进入多智能体、多人与跨机构协作以及物理环境，真正瓶颈会从模型能力转向 Harness 的适应性。因此...
+2026-07-08 07:32:02
 
 
 
 ### [如果-Agent-的-Harness-比模型本身更重要会怎样？](https://www.youtube.com/watch?v=2e9ANoOEn28)
 
-2026-07-08 07:31:54 | 标签: LLM Harness, 智能体框架, Agency 语言, 本地模型, 工具安全
-
-> 这场 AI Engineer 演讲提出了一个面向现代智能体工程的明确判断：尤其在希望让较弱或本地开源模型具备竞争力时，包裹在 LLM 周围的 Harness 可能比模型本身更关键。Bhargava 用 Harness Bench 的结果说明，仅改变 Harness 就能带来超过 20 个百分点的性能差异，并进一步展示 Agency 语言如何一步步构建更好的编程智能体。内容最有价值的部分，是从原始模型调用逐步演进到工具、 interrupt handler、部分函数应用、ReAct 循环、子智能体委派和提示词自优化的实践阶梯。整体上，这是一段对构建智能体系统的工程师很有参考价值的紧凑演讲，但由于...
+2026-07-08 07:31:54
 
 
 
@@ -75,9 +77,7 @@
 
 ### [SWE-Marathon：用项目级评测检验编码智能体的真实工程能力](https://www.youtube.com/watch?v=Rx8f05JI_WA)
 
-2026-07-07 11:45:51 | 标签: SWE-Marathon, 编码智能体, AI 评测, 长程智能体, 软件工程基准
-
-> 这场演讲介绍了 SWE-Marathon，一个面向编码智能体的项目级评测基准，目标是跳出孤立 bug 和 GitHub issue，检验智能体能否完成更接近真实软件工程的长程任务。Rishi Desai 说明了它如何把 HumanEval、SWE-bench 和 Terminal-bench 延伸到多小时项目环境中，覆盖库克隆、全栈产品克隆、ML 工程和算法任务。最有价值的部分在验证设计和失败分析：隐藏测试、参考实现一致性检查、computer-use 浏览器验证、反作弊层，以及在 Rust 编译器任务中调用 GCC 这类 reward hacking 案例。排行榜结果刻意保持冷静：即使 Cl...
+2026-07-07 11:45:51
 
 
 
@@ -237,13 +237,13 @@
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
@@ -273,13 +273,13 @@
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
@@ -639,7 +639,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -651,7 +651,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 

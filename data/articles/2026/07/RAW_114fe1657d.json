@@ -1,0 +1,51 @@
+{
+  "id": "RAW_114fe1657d",
+  "title": "SwiftData 增强查询功能，增加对外部类型和数据存储观察的支持",
+  "url": "https://www.infoq.com/news/2026/07/swiftdata-27-whats-new/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-14 16:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://developer.apple.com/videos/play/wwdc2026/274/\">2027 release of SwiftData</a> introduces support for persisting custom and third-party types via <code>Codable</code>, along with the ability to organize data into SwiftUI list sections. It also adds new capabilities for observing data store changes through <code>ResultsObserver</code> and <code>HistoryObserver</code>.</p>\n   <p><code>Codable</code> attributes solve a limitation in SwiftData when integrating custom or third-party types into a model. Since you do not control a third-party reference type, you cannot mark it with <code>@Model</code>. As a result, it cannot be included directly into a model, because SwiftData is unable to generate a schema for it.</p>\n   <p>With the new release, though, a third-party type can work seamlessly with SwiftData as long as it conforms to the <code>Codable</code> protocol. In the following example, <code>ExLocation</code> is a value type that we do not control, originating either from the iOS SDK or a third-party library:</p>\n   <pre><code class=\"language-swift\">struct ExLocation: Codable {\n    ...\n}\n\n@Model\nfinal class Destination {\n    var title: String\n    @Attribute(.codable) var locationInfo: ExLocation\n    \n    init(title: String, locationInfo: ExLocation) {\n        self.title = title\n        self.locationInfo = locationInfo\n    }\n}\n</code></pre>\n   <p>Using a <code>Codable</code> property in a SwiftData model comes with a few limitations. Most notably, such properties cannot be used for filtering or sorting, as they are treated as opaque values. Additionally, changes to the underlying type, such as adding a new property, do not trigger automatic migrations. Due to these constraints, using <code>.codable</code> for types you control is not considered a good practice. In those cases, it is so far more practical to define them as <code>@Model</code> types instead.</p>\n   <p>To support sectioning fetches, SwiftData extends the <code>@Query</code> property wrapper with the new <code>sectionBy</code> parameter, allowing to specify a key path on the fetched type to use for grouping:</p>\n   <pre><code>@Query(sort: \\Trip.startDate, sectionBy: \\.destination)\nvar trips: [Trip]\n</code></pre>\n   <p>Passing a <code>sectionBy</code> argument will make the wrapped object, <code>_trips</code>, expose a <code>sections</code> property that can be used to iterate over them:</p>\n   <pre><code class=\"language-swift\">List {\n    ForEach (_trips.sections) { section in \n        Section(section.id) {\n            ForEach(section) { trip in\n                TripListItem(trip: trip)\n            }\n        }\n    }\n}\n</code></pre>\n   <p>SwiftData 2027 also introduces <code>ResultObserver</code>, which provides a mechanism similar to <code>@Query</code> but can be used outside of SwiftUI. This makes it suitable for contexts such as object classes that need to recompute values in response to data changes, or for environments like SceneKit-based apps that do not use SwiftUI at all. <code>ResultObserver</code> is built on the Observation framework and supports the same features as <code>@Query</code>, including sorting, filtering, and sectioning.</p>\n   <p>The following snippets shows how you define a controller object that uses <code>ResultObserver</code> to observe changes to Trip entities:</p>\n   <pre><code class=\"language-swift\">@Observable @MainActor final class MapCameraController {\n    private let ResultObserver: ResultObserver&lt;Trip&gt;\n    ...\n    private var token: ObservationTracking.Token?\n\n    init(modelContext: ModelContext) throws {\n        resultObserver = try ResultObserver&lt;Trip&gt;(modelContext: modelContext)\n        token = withContinuosObservation(option: [.didSet]) { [weak self] event in\n            ...\n        }\n    }\n}\n</code></pre>\n   <p>Similarly to <code>ResultsObserver</code>, <code>HistoryObserver</code> monitors the persistent history of your data store and allows your code to react when new transactions are added. This is particularly useful for keeping parts of the data store in sync with other systems, like remote servers. <code>HistoryObserver</code> exposes an observable <code>eventCounter</code> property that increments whenever new transactions become available in the persistent history. By observing this property, an app can use <code>ModelContext.fetchHistory</code> API to retrieve the latest changes.</p>\n   <p>SwiftData for Apple's 2027 platform releases is available in <a href=\"https://developer.apple.com/documentation/xcode-release-notes\">Xcode 27 beta</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"SwiftData Enhances Queries, Adds Support for External Types and Data Store Observation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/swiftdata-27-whats-new/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784016000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "SwiftData 2027 增加了对外部类型的 Codable 支持，通过 @Query 实现分段查询，并提供了 ResultObserver/HistoryObserver 用于在 SwiftUI 之外观察数据变化。",
+  "oneSentenceSummary": "SwiftData 2027 增加了对外部类型的 Codable 支持，通过 @Query 实现分段查询，并提供了 ResultObserver/HistoryObserver 用于在 SwiftUI 之外观察数据变化。",
+  "summary": "本文详细介绍了在 WWDC 2026 上发布的 SwiftData 2027 新特性。文章解释了开发者现在可以通过使用 @Attribute(.codable) 标记属性来持久化第三方 Codable 类型，从而集成那些无法直接控制的类型，例如 SDK 或库中的结构体。文章还涵盖了使用 Codable 属性的局限性——即它们不能用于过滤或排序，并且当底层类型发生变化时不会触发自动迁移。为了解决分段数据展示的问题，SwiftData 扩展了 @Query，新增了 `sectionBy` 参数，允许将结果分组并在 SwiftUI 的 Section 中显示。此外，文章介绍了 ResultObserver 和 HistoryObserver，它们分别为非 SwiftUI 上下文带来了可观察的数据变化能力和持久化历史跟踪。代码示例展示了这些 API 的用法，文章指出该技术已在 Xcode 27 beta 中提供。",
+  "mainPoints": [
+    {
+      "point": "Codable 属性支持在 SwiftData 模型中持久化第三方 Codable 类型。",
+      "explanation": "以前，只有 @Model 类型可以存储在 SwiftData 中；第三方引用类型无法被包含，因为 SwiftData 无法为它们生成架构。随着 2027 版本的发布，标注为 @Attribute(.codable) 的属性可以容纳任何 Codable 类型，允许将外部结构体（如 ExLocation）无缝集成到模型中，而无需控制其定义。"
+    },
+    {
+      "point": "通过 @Query 的新增 `sectionBy` 参数支持分段获取。",
+      "explanation": "开发者现在可以指定一个键路径将获取的结果分组到各个 section 中，暴露出一个 `sections` 属性，该属性可与 SwiftUI 的 List 和 Section 视图配合使用。这简化了分层数据显示的创建，无需手动分组逻辑。"
+    },
+    {
+      "point": "ResultObserver 和 HistoryObserver 提供了 SwiftUI 之外的可观察变化监控。",
+      "explanation": "ResultObserver 提供了一种基于 Observation 的机制来监视 Trip 实体，适用于非 SwiftUI 代码路径，例如 SceneKit 或服务器同步逻辑。HistoryObserver 跟踪持久化历史事务，每当记录新更改时递增事件计数器，从而实现与外部服务的同步。"
+    }
+  ],
+  "keyQuotes": [
+    "在 SwiftData 模型中使用 Codable 属性有一些限制。最值得注意的是，此类属性不能用于过滤或排序，因为它们被视为不透明值。",
+    "ResultObserver 构建在 Observation 框架之上，并支持与 @Query 相同的功能，包括排序、过滤和分段。"
+  ],
+  "tags": [
+    "SwiftData",
+    "Codable",
+    "SwiftUI",
+    "数据持久化",
+    "ResultObserver"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 539,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784016000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-14 16:00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_ed21f4e",
+  "title": "三台机器上的 AI 智能体舰队：真正坏掉的环节",
+  "url": "https://www.youtube.com/watch?v=4kYl2_mqmnQ",
+  "date": "2026-07-08 16:05:32",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>I Run a Fleet of AI Agents Across Three Machines: What Broke</h1>\n  <p>Kyle Jaejun Lee describes a real daily setup for running AI coding agents across a MacBook and two Linux machines. The first failure was not hardware, but attention: once several agents were active in tmux, he had become the scheduler, memory, and reviewer for the whole system.</p>\n  <p>His first answer was to treat agents like an organization. CEO, VP, manager, and worker are actual entity types with scoped context and approval boundaries. Context flows down, results flow up, and he only reviews what reaches the top.</p>\n  <p>The next shift was moving state out of the model context window and into files. Each entity has a workspace, shared state lives in shared files, machine-bound state lives under machine-specific paths, and handoff folders preserve work product. Instead of compacting a full context window, he resets and lets the agent read its own saved files back in.</p>\n  <p>A review gateway became the control point: plans block until approval, then hooks resume the work automatically. But scaling to one machine exposed five failures: agents avoided delegation, tmux panes became unreadable, memory filled up, credentials crossed workspaces, and laptop power or network loss killed jobs.</p>\n  <p>The fleet then split work across machines. Long-running coding tasks moved to Linux A, short-lived personal projects moved to Linux B, and the MacBook stopped carrying everything. Context moves with Git and SSH, machine-specific state is separated, shared changes go through pull requests, and review requests collapse into one main gateway on an always-on Linux box. Discord became the single router with one bot per machine.</p>\n  <p>Kyle ends with the unsolved parts: consistency across machines, local-only tools, secure credential handoff, and resource management. His conclusion is that agents should declare what they need, not where they run. Kubernetes already answers many of the compute, secrets, and tool-placement questions, so he plans to stack that infrastructure underneath a custom orchestration manager for task flow, review, and context management.</p>\n </body>\n</html>",
+  "aiSummary": "Kyle Jaejun Lee 复盘了他日常运行 AI 编程智能体舰队时，在人类注意力、状态管理、评审、凭证和多机协同层面遇到的故障，以及支撑系统继续运转的基础设施模式。",
+  "oneSentenceSummary": "Kyle Jaejun Lee 复盘了他日常运行 AI 编程智能体舰队时，在人类注意力、状态管理、评审、凭证和多机协同层面遇到的故障，以及支撑系统继续运转的基础设施模式。",
+  "summary": "这是一段紧凑的一手复盘，讲述 Kyle 如何在一台 MacBook 和两台 Linux 机器上运行 AI 编程智能体。最早的瓶颈不是硬件，而是他自己：多个智能体同时在 tmux 中工作时，他被迫同时充当调度器、记忆和评审者。为了解决这个问题，他建立了 CEO、VP、manager、worker 这样的真实智能体层级，把状态从模型上下文迁移到文件工作区，用 reset 取代 compact，并加入会阻塞执行直到批准的评审网关。当系统扩展到单机之外，又暴露出五类问题：智能体不愿委派、窗格不可读、内存耗尽、凭证串 workspace，以及笔记本导致任务中断。当前架构依靠 Git、SSH、按机器隔离的状态、PR、集中评审网关和 Discord 路由协作；下一步则指向类似 Kubernetes 的调度层，用来处理计算、密钥、工具和运行位置。",
+  "mainPoints": [
+    {
+      "point": "人类注意力是第一个扩展瓶颈",
+      "explanation": "最初基于 tmux 的方案让 Kyle 同时承担调度器、记忆和评审者三个角色，所以系统在硬件之前先被人的注意力限制住了。"
+    },
+    {
+      "point": "智能体状态更适合落在文件里",
+      "explanation": "把任务、状态、历史和交接产物放到磁盘后，智能体即使经历上下文 reset、崩溃或机器重启，也不再依赖单个模型窗口保存工作。"
+    },
+    {
+      "point": "评审和委派需要显式控制点",
+      "explanation": "层级结构降低了上下文负担，评审网关则让计划必须等待批准后才能继续执行，避免操作者逐个进入工作窗口检查。"
+    },
+    {
+      "point": "多机舰队会带来新的协同故障",
+      "explanation": "把工作拆到 Linux 机器上缓解了笔记本可靠性和资源压力，但也引入了上下文分叉、评审入口分散、凭证边界和路由混乱。"
+    },
+    {
+      "point": "未来形态接近面向智能体的 Kubernetes",
+      "explanation": "Kyle 把下一层描述为智能体只声明自己需要什么，由基础设施在更高层编排器之下调度计算、密钥、工具和运行位置。"
+    }
+  ],
+  "keyQuotes": [
+    "到了那个时候，我已经不是在运行智能体了。",
+    "我自己的注意力成了瓶颈。",
+    "状态存在文件里。它没有被困在某一个模型里。",
+    "我不再这么做了。它很慢。我也无法选择什么会被保留下来。",
+    "智能体应该只声明自己需要什么，而不是声明自己在哪里运行。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "智能体编排",
+    "AI 编程",
+    "Kubernetes",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 329,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783497932000,
+  "publishDateStr": "07-08",
+  "publishDateTimeStr": "2026-07-08 16:05:32"
+}

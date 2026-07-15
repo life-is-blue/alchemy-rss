@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-15 06:47:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-15 09:20:07 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -711,6 +711,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [SwiftData-增强查询功能，增加对外部类型和数据存储观察的支持](https://www.infoq.com/news/2026/07/swiftdata-27-whats-new/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-07-14 16:00:00 | 标签: SwiftData, Codable, SwiftUI, 数据持久化, ResultObserver
+
+> 本文详细介绍了在 WWDC 2026 上发布的 SwiftData 2027 新特性。文章解释了开发者现在可以通过使用 @Attribute(.codable) 标记属性来持久化第三方 Codable 类型，从而集成那些无法直接控制的类型，例如 SDK 或库中的结构体。文章还涵盖了使用 Codable 属性的局限性——即它们不能用于过滤或排序，并且当底层类型发生变化时不会触发自动迁移。为了解决分段数据展示的问题，SwiftData 扩展了 @Query，新增了 `sectionBy` 参数，允许将结果分组并在 SwiftUI 的 Section 中显示。此外，文章介绍了 ResultObser...
+
+
+
+### [只让我写数字-|-博客-|-Guillaume-Endignoux](https://gendx.dev/blog/2026/07/13/input-digits.html)
+
+2026-07-14 13:57:50 | 标签: JavaScript, UI/UX 设计, 无障碍, 键盘布局, 政府技术
+
+> 文章讲述了作者在瑞士强制性政府登录系统 AGOV 注册过程中的挫败感。由于无法输入六位数的电子邮件验证码，作者在多种浏览器和操作系统上进行了系统测试，结果仍然出现同样的错误。在发现使用 QWERTY 键盘的同事没有此问题后，作者深入研究了压缩的 JavaScript 代码，找到了根本原因：一个自定义的按键处理程序阻止了 Shift 键，导致使用 AZERTY 键盘布局（在这些布局中输入数字需要 Shift）的用户无法输入数字。作者还批评了该系统仅有一个支持渠道（而该渠道本身也需要通过相同的验证），并提供了事后复盘，提出了关于 UI 弹性、支持冗余以及开源透明性的教训。
 
 
 
@@ -1524,13 +1540,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1680,13 +1696,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3180,13 +3196,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4890,13 +4906,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

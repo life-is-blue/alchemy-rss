@@ -1,0 +1,59 @@
+{
+  "id": "RAW_74462c078",
+  "title": "别再用 50 年代的方法评估模型：用心理测量学重构 LLM 基准测试",
+  "url": "https://www.youtube.com/watch?v=EfcfUB2uprc",
+  "date": "2026-07-12 16:00:21",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>Stop Evaluating Models Like It's the 50s</h1>\n  <p>Alejandro Vidal presents psychometrics as a practical framework for evaluating large language models. Instead of reducing a benchmark to one accuracy number, he keeps the item-by-model response matrix and models how difficult each question is, how informative it is, and how capable each model appears.</p>\n  <p>Using item response theory (IRT), evaluators can estimate item difficulty, model ability (theta), discrimination, and confidence intervals. This makes it possible to distinguish models with similar raw scores, remove noisy or negatively discriminating items, and identify questions whose labels may be wrong. Residual analysis can also surface unlikely answers, inference instability, and benchmark items that may have leaked onto the internet.</p>\n  <p>The talk then describes smaller and adaptive benchmarks. Items can be selected for different users or organizations under exposure policies, while anchor and fingerprint sets provide a common scale and help investigate suspected leakage. The same response patterns can support fairness analysis across groups and reveal relationships among models, including shared checkpoints, distillation, and related generations.</p>\n  <p>Vidal closes with possible extensions: merging benchmarks, incorporating tokens and latency as secondary signals, and studying multidimensional intelligence. He offers to share the benchmarks, tools, data, and skills used in the work.</p>\n </body>\n</html>",
+  "aiSummary": "Alejandro Vidal 介绍如何借助心理测量学和项目反应理论，替代笼统的 LLM 基准分数，更细致地衡量题目难度、模型能力、数据泄漏、公平性与模型之间的关系。",
+  "oneSentenceSummary": "Alejandro Vidal 介绍如何借助心理测量学和项目反应理论，替代笼统的 LLM 基准分数，更细致地衡量题目难度、模型能力、数据泄漏、公平性与模型之间的关系。",
+  "summary": "Alejandro Vidal 指出，单一的基准测试准确率会掩盖许多关键假设：每道题都同样有用，相关性与噪声无关紧要，而模型总分足以代表它的能力。他提出使用项目反应理论，在保留完整题目与模型响应矩阵的同时，估计题目难度、模型能力 theta、区分度和置信区间。这些估计可以区分原始分数相近的模型，找出有噪声或答案标注错误的题目，检测异常推理行为，并在保留有效信号的前提下缩减基准测试。演讲还介绍了自适应测试、锚定题集和组织专属指纹题集，用于控制题目曝光并调查基准测试泄漏。残差模式既能支持公平性分析，也能揭示模型之间的共享检查点、蒸馏关系、模型家族与互补能力。未来还可以合并多个基准测试，把 token 数量和延迟作为次级信号，并建立多维智能模型。",
+  "mainPoints": [
+    {
+      "point": "原始基准测试准确率掩盖了题目的难度与信息价值",
+      "explanation": "把每道题视为同等权重，可能掩盖题目之间的相关性、有噪声的题目、错误标注的答案，以及对目标任务更重要的问题。保留响应矩阵，才能分析这些差异。"
+    },
+    {
+      "point": "IRT 同时估计模型能力与每道题的质量",
+      "explanation": "项目反应理论把题目难度和模型能力 theta 放在同一尺度上；区分度表示题目能提供多少有效信息，置信区间则传达估计中的不确定性。"
+    },
+    {
+      "point": "残差可以审计基准测试并暴露数据泄漏",
+      "explanation": "异常正确或错误的回答可能暴露错误标注、不稳定的推理行为或已经泄漏的题目。自适应选题、锚定题集和组织专属指纹题集，可以让泄漏调查更有针对性。"
+    },
+    {
+      "point": "残差相关性揭示模型之间的关系",
+      "explanation": "相关的错误模式可能意味着模型共享检查点、存在蒸馏关系、属于同一模型家族或来自相关代际；这些信息还能帮助选择能力互补的模型，构建更稳健的系统。"
+    }
+  ],
+  "keyQuotes": [
+    "这场演讲尝试真正借鉴心理测量学中的思想",
+    "每道题都应该以相同权重计入这项测量",
+    "我们要估计两个数字。对于每道题，我会估计 B，也就是这道题的难度等级。",
+    "我们实际上可以检测一道题是否被有意泄漏",
+    "我们可以使用自适应测试，也就是说，我会按需为你挑选合适的题目。",
+    "我们可以分析模型，并检测出例如一个模型是否由另一个模型蒸馏而来"
+  ],
+  "tags": [
+    "心理测量学",
+    "LLM 评测",
+    "项目反应理论",
+    "基准测试审计",
+    "基准测试泄漏"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 91,
+  "wordCount": 201,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1783843221000,
+  "publishDateStr": "07-12",
+  "publishDateTimeStr": "2026-07-12 16:00:21"
+}
