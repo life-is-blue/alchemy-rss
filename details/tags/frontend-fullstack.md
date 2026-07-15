@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-15 09:20:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-15 12:41:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -716,17 +716,13 @@
 
 ### [SwiftData-增强查询功能，增加对外部类型和数据存储观察的支持](https://www.infoq.com/news/2026/07/swiftdata-27-whats-new/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-14 16:00:00 | 标签: SwiftData, Codable, SwiftUI, 数据持久化, ResultObserver
-
-> 本文详细介绍了在 WWDC 2026 上发布的 SwiftData 2027 新特性。文章解释了开发者现在可以通过使用 @Attribute(.codable) 标记属性来持久化第三方 Codable 类型，从而集成那些无法直接控制的类型，例如 SDK 或库中的结构体。文章还涵盖了使用 Codable 属性的局限性——即它们不能用于过滤或排序，并且当底层类型发生变化时不会触发自动迁移。为了解决分段数据展示的问题，SwiftData 扩展了 @Query，新增了 `sectionBy` 参数，允许将结果分组并在 SwiftUI 的 Section 中显示。此外，文章介绍了 ResultObser...
+2026-07-14 16:00:00
 
 
 
 ### [只让我写数字-|-博客-|-Guillaume-Endignoux](https://gendx.dev/blog/2026/07/13/input-digits.html)
 
-2026-07-14 13:57:50 | 标签: JavaScript, UI/UX 设计, 无障碍, 键盘布局, 政府技术
-
-> 文章讲述了作者在瑞士强制性政府登录系统 AGOV 注册过程中的挫败感。由于无法输入六位数的电子邮件验证码，作者在多种浏览器和操作系统上进行了系统测试，结果仍然出现同样的错误。在发现使用 QWERTY 键盘的同事没有此问题后，作者深入研究了压缩的 JavaScript 代码，找到了根本原因：一个自定义的按键处理程序阻止了 Shift 键，导致使用 AZERTY 键盘布局（在这些布局中输入数字需要 Shift）的用户无法输入数字。作者还批评了该系统仅有一个支持渠道（而该渠道本身也需要通过相同的验证），并提供了事后复盘，提出了关于 UI 弹性、支持冗余以及开源透明性的教训。
+2026-07-14 13:57:50
 
 
 
