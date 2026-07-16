@@ -1,0 +1,52 @@
+{
+  "id": "RAW_ac7059c74c",
+  "title": "数据原生 AI 智能体：为什么智能体必须迁移到您的数据",
+  "url": "https://www.databricks.com/blog/data-native-ai-agents-why-agents-must-move-your-data",
+  "date": "2026-07-16 01:30:00",
+  "author": "Kaan Kuguoglu, John Karlsson",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li>External agents break at scale: When AI agents run in a separate stack, enterprises face compounding penalties: fragmented governance, rising egress costs, sluggish multi-hop latency, and observability gaps that make production deployment risky.</li>\n   <li>Governance cannot be retrofitted: Post-hoc controls fail because agents compute over data rather than just retrieve it. A financial summary shaped by ungoverned rows cannot be redacted after the fact. Policy must be enforced at query planning time, and only data-native agents embed governance directly into computation.</li>\n   <li>Data-native agents on Databricks: By running agents within the Data Intelligence Platform, teams get Unity Catalog governance, AI Search retrieval, MLflow tracing, Lakebase state management, and AI Gateway traffic control as a single integrated stack, enabling them to ship trusted AI features faster with security and lineage built in.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "AI 智能体必须在数据平台内部运行，以确保治理、降低成本并减少延迟。",
+  "oneSentenceSummary": "AI 智能体必须在数据平台内部运行，以确保治理、降低成本并减少延迟。",
+  "summary": "文章解释说，在数据栈外部运行 AI 智能体会导致治理碎片化、高昂的出口成本、延迟以及可观测性差距，使生产环境变得风险高。文章认为治理必须在查询时强制执行，而只有数据原生智能体才能提供这种能力，并展示了 Databricks 集成平台如何提供统一的 Unity Catalog 治理、AI Search、MLflow 追踪、Lakebase 状态管理以及 AI Gateway 流量控制。",
+  "mainPoints": [
+    {
+      "point": "外部智能体在规模化时会失效",
+      "explanation": "当 AI 智能体在独立的栈中运行时，企业会面临治理碎片化、出口成本上升、多跳延迟变慢以及可观测性差距，这些使得生产部署变得风险高。"
+    },
+    {
+      "point": "治理无法事后补救",
+      "explanation": "事后控制失效，因为智能体是在数据上进行计算而不仅仅是检索；由未受管控的行数据塑造的财务摘要在事后无法进行编辑，因此政策必须在查询规划时强制执行，而只有数据原生智能体能够将治理直接嵌入计算过程中。"
+    },
+    {
+      "point": "在 Databricks 上的数据原生智能体提供了一个集成栈",
+      "explanation": "通过在数据智能平台内部运行智能体，团队可以获得统一的 Unity Catalog 治理、AI Search 检索、MLflow 追踪、Lakebase 状态管理以及 AI Gateway 流量控制，从而在安全和血缘内置的前提下更快地交付可信的 AI 功能。"
+    }
+  ],
+  "keyQuotes": [
+    "外部智能体在规模化时会失效：当 AI 智能体在独立的栈中运行时，企业会面临叠加的惩罚：治理碎片化、出口成本上升、多跳延迟变慢以及可观测性差距，这些使得生产部署变得风险高。",
+    "治理无法事后补救：事后控制失效，因为智能体是在数据上进行计算而不仅仅是检索。由未受管控的行数据塑造的财务摘要在事后无法进行编辑。政策必须在查询规划时强制执行，而只有数据原生智能体能够将治理直接嵌入计算过程中。",
+    "数据原生智能体在 Databricks 上：通过在数据智能平台内部运行智能体，团队可以获得统一的 Unity Catalog 治理、AI Search 检索、MLflow 追踪、Lakebase 状态管理以及 AI Gateway 流量控制，从而在安全和血缘内置的前提下更快地交付可信的 AI 功能。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "数据治理",
+    "MLflow",
+    "Unity Catalog",
+    "AI Search"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 129,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784136600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-16 01:30:00"
+}
