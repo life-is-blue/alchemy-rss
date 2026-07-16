@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-16 09:32:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-16 12:51:55 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -716,9 +716,7 @@
 
 ### [pointer-events](https://css-tricks.com/almanac/properties/p/pointer-events/)
 
-2026-07-15 21:57:51 | 标签: CSS, 前端与Web开发, Web开发, SVG, UI开发
-
-> 这篇 CSS-Tricks Almanac 条目为 `pointer-events` 属性提供了全面参考。它首先解释了命中测试的核心概念，澄清该属性不会禁用事件，而是控制哪个元素成为目标。文章详细介绍了所有可能的值，包括通用的 `auto` 和 `none`，以及九个仅用于 SVG 的关键字，如 `visiblePainted` 和 `bounding-box`，这些关键字提供了对图形交互区域的细粒度控制。它还涵盖了关键且常被忽略的行为：该属性可继承，因此子元素可以通过 `pointer-events: auto` 重新加入；它不会阻止事件传播；它不会禁用键盘焦点；它不会阻止文本选择。实际演示...
+2026-07-15 21:57:51
 
 
 

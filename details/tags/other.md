@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-16 09:32:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-16 12:51:55 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -997,9 +997,7 @@
 
 ### [谁在运行那些微小的-RPKI-服务器？|-APNIC-Blog](https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/)
 
-2026-07-15 16:37:11 | 标签: RPKI, BGP, 网络路由, 网络安全, 云计算
-
-> 这篇文章将“小型”RPKI 服务器定义为发布少于 1，300 个 ROA 对象的服务器，并调查了由云提供商、ISP、业余爱好者、教育机构和 RPKI 即服务公司运营的独立服务器的长尾。文章展示了来自这些服务器的 2，467 个 ROA 的数据集，显示其中 91% 在密码学上是有效的，并强调超过一半使用了 maxLength 参数（其中约 19.6% 存在潜在的子前缀劫持风险），概述了提供托管服务、简化跨 RIR 管理、研究、运营控制和个人学习等动机。显著的异常值包括一台用于垃圾邮件基础设施的服务器和另一台拥有 99 个未知有效性 ROA 的服务器。
+2026-07-15 16:37:11
 
 
 
@@ -3633,25 +3631,19 @@
 
 ### [别再使用-If-Else-链条：改用-Python-注册模式](https://www.kdnuggets.com/stop-using-if-else-chains-use-the-registry-pattern-in-python-instead)
 
-2026-07-15 22:00:06 | 标签: Python, 设计模式, 代码组织, 软件架构, 最佳实践
-
-> 本文阐述了注册模式作为解决 Python 中日益严重的 if-else 链条问题的方案。文章首先指出了长条件语句的缺点（违反开闭原则、混合无关逻辑、扩展性差、不灵活）。最简单的修复是使用字典查找，它提供 O(1) 分派和可自省的选择。更高级的版本使用装饰器让每个组件自行注册，保持分派器不变。一个可复用的 `Registry` 类增加了冲突检测和更清晰的错误消息。对于类注册，`__init_subclass__` 在子类化时自动完成注册。实际应用包括机器学习实验配置（例如 Hugging Face Transformers）、文件格式分派、Web 路由、插件系统和事件处理程序。文章还涵盖了注意事...
+2026-07-15 22:00:06
 
 
 
 ### [我如何在-6-周内掌握面向-ML-的数据结构与算法](https://towardsdatascience.com/how-i-mastered-data-structures-algorithms-for-ml-in-6-weeks/)
 
-2026-07-15 21:30:00 | 标签: DSA, LeetCode, 数据结构, 算法, 编程面试
-
-> 文章概述了一套针对数据科学与机器学习编程面试的反直觉 6 周备考计划。作者提倡“逆向学习”——即在掌握概念之前先解题——并主张专注于一份包含 40 个高频主题（如数组、双指针、滑动窗口等）的精选清单，而非试图面面俱到。该指南还强调了每日坚持与外部监督对于确保取得进展的重要性。
+2026-07-15 21:30:00
 
 
 
 ### [马斯克也开始-L4-降维-L2-了！FSD-正式进入反转时刻](https://www.qbitai.com/2026/07/450657.html)
 
-2026-07-15 15:22:26 | 标签: 特斯拉, FSD, 自动驾驶, Robotaxi, 模型蒸馏
-
-> 特斯拉推送 FSD v14.3.5，核心变化是智能召唤、FSD 和 Robotaxi 开始共用一套模型架构。据报道，特斯拉目前先在 Cybercab 及其下一代硬件上开发更大、更复杂的 L4 级自动驾驶模型，训练完成后再通过蒸馏技术压缩成轻量化版本，下放给搭载 HW4 的 Model 3、Model Y 等量产车使用。这与特斯拉此前坚守的「L2 量产车数据 scaling 驱动 L4 能力」的渐进式路线形成逆转——Robotaxi 的优先级已超越量产车，Cybercab 成为 FSD 开发的「第一性原理」平台，量产车 FSD 反成技术「继承者」。文章同时梳理了特斯拉纯视觉路线、端到端模型等未变...
+2026-07-15 15:22:26
 
 
 
@@ -14673,57 +14665,43 @@
 
 ### [GitHub-初学者指南：掌握-GitHub-要点的路线图](https://github.blog/developer-skills/github/github-for-beginners-your-roadmap-to-mastering-the-github-essentials/)
 
-2026-07-16 01:29:34 | 标签: GitHub, Git, 版本控制, 开源, 软件开发
-
-> 本文提炼自“GitHub 初学者”系列，是一份面向现代软件开发在 GitHub 上的完整入门手册。它分为四个逻辑部分：1) 掌握版本控制（Git）的基础、账户安全（2FA）和基本命令；2) 通过仓库、Markdown 和 GitHub Flow 构建第一个项目；3) 通过 Pull Request、合并冲突解决以及 Issue/项目管理掌握协作；4) 通过自动化（GitHub Actions）、免费托管（GitHub Pages）、安全工具（Dependabot、Secret Scanning）和开源贡献策略提升水平。旨在帮助用户从基本理解过渡到专业级工作流程。
+2026-07-16 01:29:34
 
 
 
 ### [通用目标条件-Minecraft-模型---Pantograph](https://pantograph.com/journal/pan-1)
 
-2026-07-16 00:35:09 | 标签: 强化学习, 目标条件强化学习, 视频预训练, 机器人学, Minecraft
-
-> 本文介绍 Pan，一系列在约 500k 小时多样化 Minecraft 游戏视频上进行目标条件预训练的模型，且未使用任何动作标签。这种与动作无关的预训练教会模型仅从观察中推断价值函数和下一帧分布，通过将视频帧作为目标的后见重新标注来实现。预训练后，使用承包商收集的小规模轨迹数据集（视频加动作）对模型进行后训练，以生成可执行的智能体。最大的变体 Pan‑4B（4B 参数）在覆盖基础、建造、问题求解、探索、机制、战斗和泛化的 104 个评估环境套件上表现出强劲性能，优于 STEVE‑1 等基线以及从 Gemma 4 初始化的 VLA 模型。消融研究表明，模型规模在机制和灵巧建造等复杂语义任务上的性...
+2026-07-16 00:35:09
 
 
 
 ### [FreeBSD-16-从基础系统中移除最后一段-GPL-代码](https://www.phoronix.com/news/FreeBSD-16-Goes-GPL-Free)
 
-2026-07-16 00:32:05 | 标签: FreeBSD, BSD, GPL, 开源许可, 操作系统
-
-> 根据最新的 FreeBSD 16 源码树，最后一段 GNU GPL 许可的软件——dialog 工具——已被退役。此前 dialog 已被 bsddialog 替代，随后又被 dpv 取代，其移除通过 ticket D55424 提交，该 ticket 于 2 月开放并合并到面向 FreeBSD 16.0 版本的源码树中，预计于 2027 年 12 月发布。随着 dialog 的移除，FreeBSD 基础系统现在不再包含任何 GNU 代码，标志着该项目追求无 GPL 核心的里程碑，这一核心倾向于为嵌入式及商业用途提供宽松许可。
+2026-07-16 00:32:05
 
 
 
 ### [GitHub---welcome-to-the-sunny-side/misa77：解压缩速度惊人，压缩比也很好。misa77-在-x86-和-ARM-上的解压缩速度比-LZ4-快-1.5‑3-倍（且压缩比更好）。](https://github.com/welcome-to-the-sunny-side/misa77)
 
-2026-07-15 23:58:59 | 标签: 数据压缩, LZ 算法, 性能基准测试, C++, 开源
-
-> misa77 是一种基于 LZ 的压缩编解码器，面向一次写入、多次读取的场景。它追求极高的单线程解压缩吞吐量，适度的压缩比（无后端熵编码），以及恒定的内存使用（压缩时 ≤5 MB，解压缩时 0 MB）。该编解码器提供两种努力级别：级别 0 优先考虑解压缩速度，级别 1（默认）提升压缩比，以及实验模式（‑‑adaptive、‑‑params、‑‑yolo）用额外的压缩努力换取更快的解压缩。在 Silesia Corpus 和 enwik8 的基准测试中，misa77 经常在解压缩速度上优于 LZ4、zxc、lzsse*、lizard、zstd 和 snappy，同时在许多文件上匹配或超越它们的压...
+2026-07-15 23:58:59
 
 
 
 ### [优先考虑-心理健康](https://ramones.dev/posts/mental-health/)
 
-2026-07-15 19:27:35 | 标签: 心理健康, 抑郁, 个人成长, 心理健康, 职业挑战
-
-> 作者描述了他们与严重抑郁症的长期斗争，包括因沟通问题、工作缓慢和输出质量低而被两次解雇，他们将此与自己的心理健康联系起来。他们表示目前正在服用 fluoxetine 和 oxazepam，获得全科医生（ GP ），朋友和家人的支持，并认识到公开表达感受以避免误解的重要性。展望 2027 年底，他们设定目标：完全完成任务、为自己的工作感到自豪、通过关系获得稳定，并在思维更清晰时培养工作纪律。
+2026-07-15 19:27:35
 
 
 
 ### [GitHub---Michael-Manning/E-Paper-Climate-Logger](https://github.com/Michael-Manning/E-Paper-Climate-Logger)
 
-2026-07-15 19:02:43 | 标签: 硬件, ESP32, 电子纸, 数据记录器, 开源硬件
-
-> 该项目提供了一种基于 ESP32‑S3、外部 EEPROM（用于数据记录）和 1.54 英寸电子纸显示屏的低功耗温湿度记录器的完全开源硬件设计。它详细说明了硬件原理图（KiCad）、固件（PlatformIO/Arduino）、电源管理策略（深度睡眠 <20 µA，DS3231 报警唤醒，BQ27441 电量计），并提供了包括 3D 打印外壳文件的逐步构建说明。README 还列出了已知问题（电量计不准确、低温显示限制）和限制（无无线数据导出），同时致谢来自 SparkFun 和 Waveshare 的硬件参考。总体而言，它为制作者提供了完整的指南，以复制一周的自主气候记录器。
+2026-07-15 19:02:43
 
 
 
 ### [红帽决定聚焦中国企业的“多模型、多-GPU、多云”选择权](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288872&idx=3&sn=d322f8aff996c1dd75674eec081ba2cc)
 
-2026-07-15 17:33:00 | 标签: 人工智能, 多模型, 多云, GPU, 开源平台
-
-> 文章通过红帽全球副总裁兼大中华区总裁曹衡康及其他高管的访谈，阐释红帽认为企业 AI 成功的关键在于平台而非单一模型选择。红帽 AI 3.4 重点围绕推理（vLLM、llm-d）、数据主权和智能体治理三方面展开，强调多模型、多 Agent、多 GPU、多云并存的未来形态。文中还介绍了红帽与 NVIDIA 的合作（Red Hat AI Factory with NVIDIA）、硬件中立策略、RHEL Forever 长期支持、OpenShift 虚拟机增长、Red Hat Desktop 打通开发与生产环境、Agent 纳入 Ansible Automation Platform 统一编排以及 I...
+2026-07-15 17:33:00
 
 
 
@@ -37365,11 +37343,11 @@
 
 
 
-### [大多数公司根本没有为-AI-做好准备](https://baoyu.io/blog/2026-05-03/danielmiessler-status-2050666594188304484)
+### [Demis-Hassabis：AGI-还缺什么，智能体到底行不行，下一个科学突破长什么样](https://baoyu.io/blog/demis-hassabis-agents-agi-and-the-next-big-scientific-breakthrough)
 
-2026-05-03T00:00:00.000Z
+2026-04-30T00:00:00.000Z
 
-> 企业用不好 AI，往往不是因为 AI 不够强，而是因为企业自己说不清目标、流程、责任和成本。
+> Hassabis 用 50/50 的判断拆解 AGI、智能体和 AI for Science 的真实进展。
 
 
 
