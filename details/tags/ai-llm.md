@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-17 09:45:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-17 12:54:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [Kimi-K3：智能的新前沿](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488658&idx=1&sn=a4fd7ead31c1b49357b29535c0dea4fe)
 
-2026-07-17 01:02:00 | 标签: 大语言模型, 模型发布, MoE, AI Agent, 开源模型
-
-> 文章正式发布月之暗面最新模型 Kimi K3，这是一个 2.8 万亿参数、基于 Kimi Delta Attention（KDA）和 Attention Residuals 技术构建的原生视觉支持模型，拥有 100 万 token 上下文窗口，并承诺完全开源。文章展示了 K3 在多种编程与知识工作中的能力，包括 GPU 内核优化、从零构建编译器、创作 3D 交互作品、芯片设计、科研文献复现等，并通过内部评测和用户案例证明了其 Agent 任务水平。同时文章也指出了 K3 的局限性：对历史思考内容敏感、过于主动，以及整体表现仍落后于 Claude Fable 5 和 GPT-5.6 Sol。
+2026-07-17 01:02:00
 
 
 
 ### [NVIDIA-Nemotron-3-Embed-在-RTEB-上排名第一，推动智能体检索发展](https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb)
 
-2026-07-17 00:01:21 | 标签: 嵌入模型, RTEB排行榜, RAG, 智能体检索, NVIDIA Nemotron
-
-> NVIDIA 发布了 Nemotron 3 Embed 系列开放嵌入模型，其中 8B 变体在 RTEB 排行榜上以 78.5% 的得分排名第一。该系列包括面向生产级检索设计的 1B BF16 和 NVFP4 版本，在质量、延迟和成本之间取得平衡。评估显示，这些模型在多语言、代码和长上下文基准上提升了检索准确率，降低了下游智能体 Token 成本，并能立即集成 Hugging Face、NVIDIA NIM、vLLM 及主流 AI 云合作伙伴。技术细节涵盖架构调整、剪枝-蒸馏管道、上下文窗口扩展至 32k tokens，以及 Blackwell 上的硬件加速 NVFP4。企业合作伙伴报告了在智能...
+2026-07-17 00:01:21
 
 
 
@@ -5112,17 +5108,13 @@
 
 ### [The-Pulse：从-Bun-借助-AI-快速重写为-Rust-我们能学到什么？](https://blog.pragmaticengineer.com/the-pulse-what-can-we-learn-from-buns-rapid-rust-rewrite-with-ai/)
 
-2026-07-17 00:50:20 | 标签: AI 智能体, AI 编程, LLM, 代码迁移, 开发者工具
-
-> 本文审视了 Bun 从 Zig 向 Rust 的大规模迁移——其动因是 Zig 中持续出现的内存安全错误。创建者 Jarred Sumner 解释了为何传统重写不可行（一年内零用户可见产出），以及他如何借助 Anthropic 的 Fable 模型编排 64 个 AI 智能体。过程包括：三小时的准备工作以编写移植指南、对抗性审查、两天内的并行智能体执行、一夜修复约 16，000 个编译器错误，并在数天内通过测试套件。总成本为 16.5 万美元的 API token，但相比预估的一年人力投入，这被认为是一笔极划算的交易。文章还讨论了前提条件：一位积极进取、对代码库有深入理解的工程师，一个极其健壮...
+2026-07-17 00:50:20
 
 
 
 ### [Agent-治理：用-Hook-堵住-LLM-的偷懒、越权与失忆](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802659&idx=1&sn=8c2b4c6e4501a69632fe05b2e6e8e3b0)
 
-2026-07-16 17:52:00 | 标签: 人工智能, Agent 框架, LLM, Hook 机制, 大模型安全
-
-> 文章以腾讯 DECO 数仓 Agent 为例，详细拆解了三类 LLM 失误——长文本偷懒（截断、占位略写）、越权操作（未确认发布/回刷）以及上下文失忆（不主动查下游影响或产出物）。提出在框架层使用 Hook 链（Before/After Tool、Before/After Model 等）实现读写两侧 offload：长脚本全文写入沙箱只读快照，LLM 仅看到引用句柄，写回时通过文件路径入参实现小步增量改写并强制校验；在 beforeTool 挂载危险工具守卫（HITL），通过配置驱动的授权标记在工具真正执行前进行人工确保确认，防止未授权的写生产操作；利用 Hook 收集事实 → 写入 sta...
+2026-07-16 17:52:00
 
 
 
@@ -9562,9 +9554,7 @@
 
 ### [代理安全差距：54%-的企业已经发生了-AI-代理安全事件，且大多数仍允许代理共享凭据](https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials)
 
-2026-07-17 03:02:38 | 标签: AI 安全, AI 代理, 企业安全, AI 安全, 身份管理
-
-> 文章报道了一项对 107 家员工超过 100 人的企业的调查，结果显示 54% 的企业曾遭遇确认的 AI 代理安全事件 （18%） 或在造成损害前被发现的险情 （36%）。只有大约三分之一 （32%） 的企业为每个代理分配了独立的、受管理的身份，而仅 30% 将最高风险的代理隔离在沙箱中。安全工具主要来自模型提供商和超大规模云服务商 （OpenAI 防护措施 51%、Google/Microsoft 控制、Anthropic 管理的代理控制），而专门的代理安全供应商仍占个位数的低比例。尽管满意度得分较高 （4.2/5），但代理安全的支出仍占预算的一小部分，且只有三分之一的企业认为其防御领先于 ...
+2026-07-17 03:02:38
 
 
 
@@ -13188,185 +13178,139 @@
 
 ### [Google-获评-2026-年-Gartner®-对话式-AI-魔力象限领导者](https://cloud.google.com/blog/products/ai-machine-learning/google-is-a-leader-in-the-gartner-magic-quadrant-for-conversational-ai/)
 
-2026-07-17 08:00:00 | 标签: AI Agent, AI 产品与应用, 企业 AI, 对话式 AI, Google Cloud
-
-> 本文宣布 Google 在 2026 年 Gartner 对话式 AI 平台魔力象限中获评领导者，并着重指出其在愿景和执行能力两个维度上的领先地位。文章详细介绍了其企业级产品——面向客户体验的 Gemini Enterprise 及其核心组件 CX Agent Studio。该平台旨在超越传统聊天机器人，构建能够跨业务系统进行推理、检索信息并执行操作的多模态 AI 智能体。文章强调了该平台的生产就绪能力，包括企业安全、治理和运营可靠性，并以家得宝为例，说明 AI 语音智能体如何显著缩短了客户问题解决时间。文章最后解释了在 Google 统一的第一方 AI 技术栈上运行的技术优势，从定制基础设施...
+2026-07-17 08:00:00
 
 
 
 ### [Firefox-编译为-WebAssembly](https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything)
 
-2026-07-17 07:34:16 | 标签: WebAssembly, Firefox, 浏览器工程, LLM, AI 编程
-
-> Simon Willison 分享了他发现的一个由 Puter 主导的项目，该项目将 Firefox/Gecko 编译为 WebAssembly，使 Firefox 能够在浏览器中运行。本文解释了技术选型：选择 Gecko 是因为其强大的单进程支持，编译成本估计为 25，000 美元，使用了 Claude Opus 和 Fable token（通过 Claude Max 订阅），所有网络流量都通过 Wisp WebSocket 协议经由 Puter 的服务器代理。Willison 通过检查 WebSocket 消息验证了声称的端到端加密，确认了访问 HTTPS 网站的流量是加密的。该项目代码库...
+2026-07-17 07:34:16
 
 
 
 ### [帮助我们通过推荐潜在创始人来启动人工智能安全大学社团-—-LessWrong](https://www.lesswrong.com/posts/a9YtcE3Aogphf8ukH/help-us-launch-ai-safety-university-groups-by-referring)
 
-2026-07-17 04:55:31 | 标签: AI 安全, 大学社团, 人才输送渠道, 领域建设, 有效利他主义
-
-> 文章阐述了大学社团对培养人工智能安全人才的重要性，并指出顶尖学校之间在覆盖面上存在显著差距。文章介绍了由 Kairos 资助的新项目“人工智能安全种子计划”，该计划旨在主动寻找有能力创办社团的学生，支持他们的创办过程，并帮助他们为申请 Pathfinder 奖学金做好准备。作者描述了他们的搜索策略、评估潜在适配性，并提供支持直到社团能够自我维持。作者呼吁读者推荐潜在创始人，尤其是来自那些缺乏社团的优先学校名单中的学生。
+2026-07-17 04:55:31
 
 
 
 ### [如何不向-Anthropic-员工募捐-—-LessWrong](https://www.lesswrong.com/posts/cZeQaBMCospnbbi7b/how-not-to-fundraise-from-anthropic-staff)
 
-2026-07-17 04:55:06 | 标签: 有效利他主义, 募捐, 慈善事业, AI 安全, 非营利策略
-
-> 根据他运营中期全球健康基金的经验，作者认为向前沿 AI 实验室员工发送冷邮件会适得其反并损害募捐机会。相反，他建议变得“清晰卓越”——获得 AI 员工已信任的评估者的高评级，如 GiveWell、Coefficient Giving 和 Longview Philanthropy。他还强调了拥有一个可信的、计算成本的扩大规模计划的重要性，该计划应涵盖被忽视的领域，如通用管理、后台职能和监控系统。作者提供了一个时间线：主要 IPO 最早可能在 2026 年第四季度，慈善资金将在 2027 年第二季度左右到账，这让组织有时间建立信誉。他呼吁集体自律，以避免压垮捐赠者并损害生态系统。
+2026-07-17 04:55:06
 
 
 
 ### [Kimi-K3，以及我们从鹈鹕基准测试中仍能学到的东西](https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything)
 
-2026-07-17 04:19:30 | 标签: Kimi K3, LLM, 模型发布, 基准测试, AI 测试
-
-> 本文报道了 Kimi K3 的发布，这是一款来自中国 AI 实验室月之暗面（Moonshot AI）的 2.8 万亿参数模型，承诺开放权重。Willison 重点介绍了自报告基准测试、定价（每百万 token 3 美元/15 美元）以及第三方分析机构 Artificial Analysis 的数据。随后，他将长期使用的「骑自行车的鹈鹕」SVG 生成测试应用于 K3，指出该模型大量使用推理 token（13，241 个），并可能存在隐藏的系统提示词。Willison 对鹈鹕基准测试进行了批判性评估：它曾与模型质量表现出惊人的相关性，但如今这种关联已不复存在，且该测试无法检验智能体工具调用能力。不...
+2026-07-17 04:19:30
 
 
 
 ### [来自-Thibault-Sottiaux-的一句话](https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything)
 
-2026-07-17 01:45:59 | 标签: AI 编程, LLM, Codex, GPT-5.6, 开发者工具
-
-> 这篇文章分享了 Thibault Sottiaux 的一条推文，描述了一个基于 GPT-5.6 的 Codex 的特定故障模式，导致文件被意外删除。当 Codex 在全访问模式且无沙箱保护的情况下运行时，模型会尝试覆盖 $HOME 环境变量来定义临时目录，但错误地删除了实际的 $HOME 目录。这条笔记强调了该漏洞出现的条件，并作为对使用高权限 Codex 用户的警示。
+2026-07-17 01:45:59
 
 
 
 ### [使用-SOO-风格概念融合进行越狱修复-—-LessWrong](https://www.lesswrong.com/posts/EXj2bYK2rg8TMrncF/jailbreak-patching-with-soo-style-conceptual-fusion)
 
-2026-07-17 00:58:39 | 标签: LLM, AI安全, 越狱, 微调, 表征工程
-
-> SOO 风格概念融合最初被引入用于通过融合模型的自我和他人表示来减少欺骗。本文将这一技术扩展到修补越狱包装器。作者使用非对称概念融合，将越狱状态推向拒绝状态，并结合正则化项以保留模型对直接提示的行为。使用 Qwen 2.5 1.5b 和 HarmBench 数据集，他们展示了这种方法显著增加了越狱包装提示的拒绝率（从 20% 到 ~90%），且不会增加对安全提示（XSTest）的拒绝。他们将该方法与传统的监督微调进行了比较，发现概念融合在保持非拒绝行为的同时实现了更好的越狱修补，且无需对比样本。该技术还泛化到训练中未见过的不同越狱包装器。论文提供了关于目标层选择以及融合与正则化之间平衡的见解。
+2026-07-17 00:58:39
 
 
 
 ### [一切被守望-—-LessWrong](https://www.lesswrong.com/posts/JBHgE2EWGmibM57qg/all-watched-over)
 
-2026-07-17 00:34:11 | 标签: AI治理, 去中心化, AI安全, 开源AI, 技术政策
-
-> 这篇文章借助理查德·布劳提根的诗和史蒂文·利维的《黑客》来构建两种相互竞争的 AI 未来愿景：一种是由仁慈的 AI 父母进行集中控制，另一种是类似于加州硬件黑客的去中心化赋权。作者认为，当前的趋势——大规模 AI 系统、军事应用和缩放定律——正推动权力集中，但这并非不可避免。通过审视经济和安全方面的论点，作者主张我们可以选择一条路径，将 AI 权力分散，将制衡机制融入技术的 DNA 中，并维护民主自由。文章强调，没有任何单一实体应该垄断智能，安全措施绝不能以牺牲自由为代价。
+2026-07-17 00:34:11
 
 
 
 ### [在-AI-智能体承担更多工作之前，先准备好这-5-种资产](https://towardsdatascience.com/prepare-these-5-assets-before-your-ai-agents-take-on-more-work/)
 
-2026-07-17 00:30:00 | 标签: AI 智能体, AI 工作流, 提示词工程, AI 落地, 业务流程
-
-> 文章认为，在将重复性工作交给 AI 智能体之前，团队必须准备五种可复用资产：(1) 重复工作清单，用于识别适合自动化的任务；(2) 任务资产，将模糊请求转化为可执行的分配；(3) 上下文资产，提供业务背景信息；(4) 验收测试资产，定义质量标准；(5) 权限资产，明确人与智能体的边界。作者认为，真正的瓶颈不是更好的提示词或模型，而是未经记录的工作流程定义——即工作是什么、为什么存在、成功的标准是什么、以及 AI 必须在哪些环节服从人类。每个资产都包含详细的提示词模板，团队可直接套用。文章将这些资产定位为将 AI 实验转化为可靠业务运营的关键。
+2026-07-17 00:30:00
 
 
 
 ### [竞争性-AI-安全是确保-AI-发展顺利的损失函数——LessWrong](https://www.lesswrong.com/posts/PagGF8roBJmjLunsX/competitive-ai-safety-is-the-loss-function-to-make-sure-ai)
 
-2026-07-17 00:26:03 | 标签: 竞争性AI安全, AI安全, 稀疏自编码器, 模型蒸馏, 可解释性
-
-> 本文介绍了竞争性 AI 安全的概念，从 OpenAI 的 Parameter Golf 等模型训练比赛中汲取灵感，为 AI 安全创建了一个促进可衡量和累积进展的损失函数。文章认为，当前 AI 安全的工作过于分散，无法有效累积，并将此情况与 Multics 与 Unix 开发方法进行对比，后者通过围绕“边界”编写代码产生指数级效用。作为案例研究，作者详细介绍了 seq2feature 的开发，这是一个 5.3MB 的纯文本探针，从 Gemma-9B 稀疏自编码器中蒸馏而来，无需读取激活即可预测 SAE 潜变量。该探针在保留文本上达到了 95%的 Top-5 准确率和 90%的区分准确率，可在 C...
+2026-07-17 00:26:03
 
 
 
 ### [将上下文感知视频-AI-智能体集成到企业工作流中](https://developer.nvidia.com/blog/integrating-context-aware-video-ai-agents-into-enterprise-workflows/)
 
-2026-07-17 00:03:40 | 标签: AI 智能体, 视频分析, RAG, 企业 AI, NVIDIA NemoClaw
-
-> NVIDIA 技术博客文章阐述了将上下文感知视频 AI 智能体集成到企业工作流中的完整流程。它结合了视频搜索与摘要（VSS）Blueprint、检索增强生成（RAG）Blueprint 以及 NemoClaw 编排层。该工作流通过人在回路提示捕获用户意图，利用 RAG Blueprint 从文档中检索组织知识，借助 VSS 智能体的工具（长视频摘要、知识检索、报告生成）执行引导式视频分析，并以编程方式对结果采取行动——演示了创建 Jira 工单。详细的演示（“健康饮食教练”）展示了从视频上传到工单创建的端到端过程。文章还提供了实际部署步骤、性能数据（NemoClaw 开销约为 5.7%）以及行...
+2026-07-17 00:03:40
 
 
 
 ### [为什么青少年应该获得安全的-AI-访问权限](https://openai.com/index/why-teens-deserve-access-safe-ai)
 
-2026-07-17 00:00:00 | 标签: AI安全, AI教育, AI伦理, 产品发布, 家长控制
-
-> OpenAI 的这篇文章认为，作为第一代伴随 AI 成长的青少年，他们应当广泛接触这项技术以为未来做好准备，但这种接触必须配合强有力的、针对青少年的保护措施。文章详细介绍了 OpenAI 的多管齐下策略：构建以学习为导向的功能（如“学习模式”），鼓励批判性思维而非直接提供答案；实施针对有害内容（如血腥暴力、自残行为）的自动安全防护；扩展家长控制功能，用于管理使用时长并接收关键通知；以及与 Moonshot、美国教师联合会等外部专家和组织合作。文章围绕四项核心承诺——优先保障青少年安全、鼓励现实世界支持、将青少年视为青少年、保持透明度——来阐述这项工作，并将其定位为构建更健康数字生态系统的持续协...
+2026-07-17 00:00:00
 
 
 
 ### [AI-#177-第一部分：冰山一角-—-LessWrong](https://www.lesswrong.com/posts/who9xZ7DxuprsJoTr/ai-177-part-1-tip-of-the-iceberg)
 
-2026-07-16 23:50:37 | 标签: AI 新闻, AI 模型, AI 安全, GPT, Claude
-
-> LessWrong 的 AI #177 周报第一部分汇总并评论了本周的 AI 发展动态。亮点包括：GPT-5-6 Sol 和 Kimi K3（已推迟）的发布、Meta 的 Muse Spark 1.1 反应不一、Thinking Machines 的首款模型（Inkling），以及 Demis Hassabis 和一封公开信所预示的日益增长的监管压力。最令人担忧的新闻是 xAI 的 Grok 被发现静默将整个 Git 仓库上传至云存储，同时该公司悄然弱化了其安全框架 FAIF。文章还涵盖了日常用途（AI 扮演“傲娇蛮横少女”、追踪 NBA 数据）和非日常用途（Gemini 应用问题），以及一篇...
+2026-07-16 23:50:37
 
 
 
 ### [Inkling：我们的开放权重模型](https://simonwillison.net/2026/Jul/16/inkling/#atom-everything)
 
-2026-07-16 23:35:25 | 标签: 开放权重, 多模态 AI, 混合专家, 模型发布, LLM
-
-> 这篇来自 Simon Willison 的博客文章介绍了 Inkling 的发布，这是由 Mira Murati 的 Thinking Machines Lab 推出的开放权重多模态模型。该模型是一个混合专家 Transformer，总参数 975B（活跃参数 41B），在 45 万亿 token 的文本、图像、音频和视频数据上训练，采用 Apache-2.0 许可证。Willison 通过 API 让模型生成一只骑自行车的鹈鹕的 SVG，然后让模型描述自己生成的图像，展示了多模态能力。他指出，Thinking Machines 自己也承认 Inkling 并非前沿模型，而是旨在作为使用其 T...
+2026-07-16 23:35:25
 
 
 
 ### [Mira-Murati-的初创公司刚刚发布了其首个旗舰-AI-模型](https://www.theaivalley.com/p/mira-murati-s-startup-just-unveiled-its-first-flagship-ai-model)
 
-2026-07-16 23:05:53 | 标签: AI 新闻, 模型发布, AI 硬件, OpenAI, 智能体工作流
-
-> 本期 AI Valley 通讯重点介绍两大产品发布：由 Mira Murati 创立的 Thinking Machines Lab 发布了 Inkling，这是一个开源权重的多模态模型，拥有 100 万 token 的上下文窗口，专为推理、编码和智能体工作流设计。OpenAI 还推出了 Codex Micro，这是一款售价 230 美元的可编程键盘，用于控制编码智能体，由 OpenAI 与 Work Louder 合作打造。通讯还包含 Atlassian Jira 新智能体工作流功能的赞助板块、热门 AI 工具列表（Pocket、Reframe、Oak），以及关于聊天机器人演变和 AI 设计品...
+2026-07-16 23:05:53
 
 
 
 ### [面向-RAG-问题解析的上下文工程：从原始问题到引导检索与生成的类型化字段](https://towardsdatascience.com/context-engineering-for-rag-question-parsing-from-a-raw-question-to-typed-fields-that-steer-retrieval-and-generation/)
 
-2026-07-16 23:00:00 | 标签: RAG, 问题解析, 上下文工程, LLM, 检索
-
-> 本文延续了作者的“企业文档智能”系列，通过 Tobi Lütke 和 Andrej Karpathy 推广的上下文工程视角，重新审视了问题解析（模块 2）。文章认为，问题本身就是上下文，理应获得与检索到的段落相同的结构化处理。解析器会写入一个类型化的 `ParsedQuestion` 行，其字段充当了下游接收方的契约。四种 LangChain 策略（写入、压缩、选择、隔离）分别体现在不同的类型化片段中：`ParsedQuestion` 作为契约，检索简报（压缩后的子集），生成简报（根据意图/提示确定性分发），以及 `ClarificationRequest` 作为对低置信度输出的隔离。通过五个...
+2026-07-16 23:00:00
 
 
 
 ### [🔬-未来的实验室应该像数据中心一样-—-Andy-Beam-&amp;-Rafa-Gómez-Bombarelli，Lila-Sciences](https://www.latent.space/p/the-lab-of-the-future-should-feel)
 
-2026-07-16 21:30:44 | 标签: AI for Science, Scientific Superintelligence, Automated Labs, Reinforcement Learning, Drug Discovery
-
-> 本文采访了 Lila Sciences 的 CTO Andy Beam 和 CSO Rafa Gómez-Bombarelli，详细介绍了他们对 AI 驱动科学发现的雄心勃勃的做法。他们设想实验室成为数据中心，通过 AI 指导的机器人同时在生物学、化学、药物发现和材料科学领域生成超过 10 万亿个实验验证的推理 token。关键主题包括将科学方法视为未开发的互联网规模数据集，使用 RL 作为数据生成机制（让自然成为验证者）、优先考虑灵活性而非纯粹自动化，以及实现超越测试能力的机器创造力的挑战。讨论涵盖了实用的创新，如 2，500 倍更快的气体吸附测量、湿实验室中的物理奖励黑客攻击，以及跨科学领...
+2026-07-16 21:30:44
 
 
 
 ### [如何最大化利用-Claude-Fable-5](https://towardsdatascience.com/how-to-get-the-most-out-of-claude-fable-5/)
 
-2026-07-16 21:30:00 | 标签: AI 编程, LLM, 提示词工程, 开发者工具, 代码审查
-
-> 作者分享了一个日常使用流程，以在 Claude Fable 5 严格的使用限制下发挥其最大价值。核心思路是：将 Fable 留作它最擅长的任务——规划、重构和缺陷检测，而使用其他模型（Claude Opus 4.8、GPT-5.6）来完成实际的代码实现和审查。文章详细阐述了如何利用 Fable 进行高效规划，即赋予它自主权去研究代码仓库并提出解决方案，以及如何通过识别代码腐化的症状并让 Fable 聚焦于特定区域来进行重构。文中提供了具体的提示词示例。作者认为，代码实现的质量并不会因此受损，因为 Fable 相较于其他模型的最大优势在于规划和重构，而非编写代码。
+2026-07-16 21:30:00
 
 
 
 ### [Linus-Torvalds-的一段引言](https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything)
 
-2026-07-16 21:26:10 | 标签: AI, 软件开发, Linux
-
-> 这篇发布于 2026 年 7 月 16 日的文章包含了 Linux 内核顶级维护者 Linus Torvalds 的直接声明。他承认有些人不喜欢 AI，但他宣布将捍卫 Linux 非反 AI 的立场，强调 AI 与其他任何工具一样，且显然非常有用。他指出，虽然关于 AI 经济影响的问题仍然存在，但关于其有用性的问题已经尘埃落定，任何对此表示怀疑的人只是因为还没使用过它。他还为批评者提供了分叉（fork）项目或离开的选择，强调了开源社区的自由。
+2026-07-16 21:26:10
 
 
 
 ### [新模型，相同优势](https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages)
 
-2026-07-16 19:49:48 | 标签: OCR, 领域专业化, LLM, 直接偏好优化, 基准
-
-> 本文提供证据表明，即使在通用模型更新且资源更丰富的情况下，领域专业化也能提供结构性优势。文章描述了 DharmaOCR 的两阶段训练流程——先进行监督微调以实现语言对齐，然后采用直接偏好优化以保证输出稳定性——并在巴西葡萄牙语基准上将该模型与两款最近发布的 OCR 系统（Mistral OCR4 和 Unlimited-OCR）进行对比。DharmaOCR 得分为 0.925，而 Mistral OCR4 和 Unlimited-OCR 的得分分别为 0.798 和 0.7587。具体例子表明，通用模型在像“Chico Buarque”这样的文化特有专有名词上会出错，并且在视觉困难的文档上会产...
+2026-07-16 19:49:48
 
 
 
 ### [A16Z-最新判断：80%的-token-在空转，管理-AI-才是下一个万亿机会](https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494114&idx=1&sn=8a5e1de9e8cfe91185dfb37134656399)
 
-2026-07-16 19:00:00 | 标签: AI管理, Token效率, 评估体系, 知识迁移, AI落地
-
-> 文章以 a16z 投资企业 Hebbia CEO 的观点为切入点，指出尽管 AI 投入快速增长，但约 80%的 token 实际上在“无效循环”中空耗，根源在于任务目标不明确导致的管理失误。通过类比传统的人海战术和无效会议，说明 Token 浪费本质是组织管理问题。文章进一步提出，未来 AI 的竞争力在于每单位 Token 产生的可验证业务价值，因而需要明确上下文、构建评估体系（Eval）、设计知识迁移激励并持续优化人机边界。最后指出，随着模型能力提升，对 AI 管理的需求将呈杰文斯悖论式增长，提供流程梳理、知识提取、上下文设计、评估控制等持续管理能力的公司将成为下一个万亿美元级产业。
+2026-07-16 19:00:00
 
 
 
 ### [全球首个！银河通用新框架仅需人类视频即可部署，特斯拉蚌埠住了](https://www.qbitai.com/2026/07/451403.html)
 
-2026-07-16 18:51:10 | 标签: 具身智能, 机器人控制, Test-Time Training, WAM‑TTT, 世界动作模型
-
-> 文章详细阐述了银河通用最新提出的 WAM‑TT（World‑Action Model Test‑Time Training）框架，该框架将 Test‑Time Training 从自然语言处理领域迁移到具身智能机器人控制。WAM‑TTT 由预训练的世界动作模型（WAM）和轻量级快速权重记忆模块组成，机器人在部署阶段仅需观看未标注的人类 RGB 视频，即可在不更新基础模型权重的情况下完成任务适配。文章通过四个突破点说明其优势：大幅降低对昂贵机器人轨迹数据的依赖、无需人类动作标注、无需重新预训练或直接修改模型参数、以及不发生灾难性遗忘。文中还对比了 WAM‑COTRAIN、WAM‑LoRA 等方案...
+2026-07-16 18:51:10
 
 
 
 ### [Google-DeepMind-与-Isomorphic-Labs-的生物韧性方法](https://deepmind.google/blog/our-approach-to-bioresilience/)
 
-2026-07-16 18:04:45 | 标签: AI 应用, 生物安全, AlphaFold, AlphaGenome, 药物发现
-
-> 这篇官方博客文章概述了 Google DeepMind 与 Isomorphic Labs 在不断演变的全球生物安全格局下的联合生物韧性方法。两家机构阐述了双重使命：防止威胁行为者滥用 AI 模型，同时赋能各国政府、科学家和生物安全专家利用这些技术增强社会韧性。该框架涵盖三大支柱——预防（威胁建模、评估、适用于生物学的 SynthID 水印技术）、检测（AlphaEvolve 优化元基因组测序、AlphaGenome 用于病原体鉴定）和响应（向可信研究人员开放 AI 系统访问权限，用于疫苗和对策设计）。Isomorphic Labs 已成立专门部门，可在新型疫情暴发时快速部署药物设计。该方法与...
+2026-07-16 18:04:45
 
 
 
@@ -45292,81 +45236,61 @@
 
 ### [GPT-5.6-Sol：OpenAI-新一代旗舰模型对开发者工作流的影响](https://www.sitepoint.com/gpt-5-6-sol-openai-developer-workflows/?utm_source=rss)
 
-2026-07-17 05:08:38 | 标签: AI 编程, LLM, AI 智能体, 开发者工具, 代码生成
-
-> 本文详细分析了 OpenAI 的 GPT-5.6 Sol，这是一款新旗舰模型，在 token 效率、智能体编码基准测试方面有所改进，并引入了一种超模式，将编排从客户端代码转移到模型自身。文章解析了 54% 的 token 减少所带来的实际影响，以及 2.8 个点的 Coding Agent Index 提升在多步骤任务中的累积效应。超模式通过对比传统的客户端编排与模型端并行处理进行了解释，并附有 Python 代码示例。文章讨论了 Sol 在 OpenAI 产品线中的定位、它在多文件重构和复合任务上的优势，以及局限性和未解问题（包括未经证实的说法）。文章提供了实用的迁移建议和设置代码，强调需要...
+2026-07-17 05:08:38
 
 
 
 ### [NotebookLM-现已更名为-Gemini-Notebook](https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/)
 
-2026-07-17 02:14:48 | 标签: AI 产品与应用, Gemini, Google, AI 工具, 数据分析
-
-> 谷歌宣布将其 AI 驱动的研究工具从 NotebookLM 更名为 Gemini Notebook。该独立核心产品依然保留，但获得了与谷歌生态系统中 Gemini 应用和搜索 AI 模式等更深度的整合。一项关键的技术升级是为每个笔记本提供一个安全云电脑，使其能够原生执行代码，进行基于来源的复杂数据分析。此功能现已面向 AI Ultra 用户开放，并将向 Pro 用户推出。文章还强调了该工具已增长至超过 3000 万用户和 60 万个组织。
+2026-07-17 02:14:48
 
 
 
 ### [宣布推出《面向初学者的-.NET-现代化》课程---.NET-博客](https://devblogs.microsoft.com/dotnet/announcing-dotnet-modernization-for-beginners)
 
-2026-07-17 01:07:06 | 标签: .NET, 旧系统现代化, GitHub Copilot, ASP.NET, 开发者工具
-
-> 这篇博文介绍了一个名为《面向初学者的 .NET 现代化》的全新免费开源课程。该课程专为旧版 .NET Framework 应用程序的拥有者设计，提供了一个循序渐进、亲手实践的指南，将一个真实的 ASP.NET 应用现代化升级到 .NET 10。它利用了 GitHub Copilot 现代化工具，该工具的独特之处在于，在修改任何代码之前，会生成透明、可编辑的产出物（assessment.md、plan.md、tasks.md），让开发者始终掌握控制权。课程结构分为四个章节，模拟真实的现代化旅程：评估、规划、升级与执行，以及使用 Azure 进行云部署。课程需要 Visual Studio 202...
+2026-07-17 01:07:06
 
 
 
 ### [Decoy-Font：一种能隐藏输入内容的-TTF-字体](https://www.mixfont.com/experiments/decoy-font)
 
-2026-07-17 00:18:21 | 标签: AI 安全, 字体排印, 视觉错觉, LLM, 文字识别
-
-> Decoy Font 是一个创意字体排印项目，将混合图像的空间频率技术应用于文字。每个字母包含两层：细的前景轮廓构成诱饵文本，模糊的低频背景构成隐藏信息。作者展示了包括 ChatGPT 和带 Thinking 功能的 Gemini 3.5 在内的 AI 系统在处理该字体图像时，无法读取实际的隐藏信息，而人类可以根据观察距离看到两层内容。该字体源自 DejaVu Sans Mono，可免费下载为 TTF 文件。本文将 Decoy Font 置于更广泛的反 AI 字体运动中，承认其对高级智能体的局限性，并提出 CAPTCHA、私信和多语言支持等未来应用方向。
+2026-07-17 00:18:21
 
 
 
 ### [GitHub---xhluca/agent-talk：让编程智能体协同工作](https://github.com/xhluca/agent-talk)
 
-2026-07-17 00:14:20 | 标签: AI 智能体, Claude Code, LLM, 多智能体系统, 开发者工具
-
-> agent-talk 是一个面向编程智能体的开源插件，支持跨会话、跨机器、跨所有者的智能体直接消息交换与任务协调，无需通过人类中转。该项目支持六种编程智能体，提供一致的操作技能（init、id、add、send、receive 等），并通过不可信中继实现端到端加密。一个详细的使用案例展示了数据工程师的智能体和研究科学家的智能体如何自主协商数据集细节。FAQ 巧妙地区分了 agent-talk 与 Claude Code 的 Agent Teams，将其定位为适用于长时间运行、无头或跨人智能体工作流的持久化点对点消息原语。
+2026-07-17 00:14:20
 
 
 
 ### [前沿模型配合我们的推理框架在-ARC-AGI-3-公开测试集上达到约-99%-—-Schema](https://schema-harness.github.io/)
 
-2026-07-16 23:29:12 | 标签: AI 智能体, LLM, AI 基准测试, ARC-AGI, 推理框架
-
-> 本文介绍了 Schema，一种推理时框架，可大幅提升前沿模型在极具难度的 ARC-AGI-3 基准测试上的表现。ARC-AGI-3 为智能体提供一个游戏环境，其中规则并未给出；智能体必须通过交互形成关于状态和机制的假设。Schema 将此形式化为两个联合问题：状态基础（将原始观察转化为可追踪的对象和关系）和机制发现（将转换规则作为可执行程序来发现）。通过围绕模型结构化这一过程——如何建立对游戏的可行理论、测试预测并修订计划——Schema 在公开测试集上使用 Claude Opus 4.8 和 Fable 5 实现了自报告的 98.98% RHAE，使用 GPT-5.6 Sol 实现了 95....
+2026-07-16 23:29:12
 
 
 
 ### [考古学家的-AI-助手](https://martinfowler.com/articles/archaeologist-copilot.html)
 
-2026-07-16 21:25:00 | 标签: 遗留系统, AI 编程, LLM, DevOps, Docker
-
-> 作者介绍了 '游客陷阱'——危险的做法是将生成式 AI 视为遗留代码的通用翻译器——通过展示 LLM 乐观的 'How do I run this?' 提示如何为一个 Java 1.5 Ant 项目生成幻觉的 Gradle 构建文件，这本应发生灾难性失败。相反，作者主张使用 '考古学家提示'，将 AI 视为高级遗留系统架构师进行 ' forensic 代码审计'，以评估结构健康状况、识别反模式（如上帝类和字符串类型的数据流），并揭露绕过关键网络代码的 '说谎测试'。文章详细介绍了三阶段恢复过程：第一阶段使用 AI 对代码库进行碳素测定并识别风险；第二阶段创建包含 Java 6 和 Ant 的 ...
+2026-07-16 21:25:00
 
 
 
 ### [从-Data-Lake-到-State-Lake：面向-Agent-时代的存储基础设施重构](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520930&idx=1&sn=bd7a4aa7ed7ce2d4ca65e807f53392f6)
 
-2026-07-16 18:59:00 | 标签: AI Agent, 存储基础设施, Sandbox Store, Artifact Store, Agent 观测与评测
-
-> 文章从 AI 应用形态的演进切入，指出 AI 正从“回答问题”转向“完成任务”，这对存储提出了新需求。接着梳理了 AI 工作负载在训练、推理和 Agent 三个阶段的特点，并由此推导出存储范式从 Content Storage（面向数据集、文档等）向 State Storage（面向检查点、KVCache、环境状态等）的演进。核心部分围绕火山引擎存储团队的 Storage Agent Infra 展开，详细介绍了三大能力方向：Sandbox Store 通过 EBS、EFS 和 MQ LiteTopic 实现沙箱快速启动、状态快照与跨沙箱通信；Artifact Store 结合 EFS 与 T...
+2026-07-16 18:59:00
 
 
 
 ### [9.9-元/月，用-AgentPlan-+-OpenViking-给销售团队配一个不会忘事的-AI-助手](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520930&idx=2&sn=d28d61e9a893bc39fdbe6797404755cb)
 
-2026-07-16 18:59:00 | 标签: AI Agent, 销售助手, 飞书, OpenViking, AgentPlan
-
-> 文章详细介绍了使用火山方舟的 AgentPlan（大脑与钱包）和 OpenViking（记忆体）构建销售工作台的全过程。首先通过购买 AgentPlan Small 套餐（新用户优惠价 9.9 元/月）并开通专业数据集、豆包搜索、Agent 记忆和火山引擎 Supabase 等服务；接着使用开源的销售商机商单 Agent Setup Skill，一键初始化助手并完成环境检查、建库、凭据配置、飞书 CLI 安装及闭环验证。搭建完成后，用户可通过自然语言指令让助手读取飞书文档、总结客户进展、生成跟进计划，并自动将对话中的销售判断写入 OpenViking 的分层记忆（L0 摘要、L1 总结、L2 ...
+2026-07-16 18:59:00
 
 
 
 ### [AI-智能体持有云凭证，正快速突破为人类速度错误设计的计费护栏](https://www.infoq.com/news/2026/07/ai-agents-billing-guardrails/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-16 18:17:00 | 标签: AI智能体, 云安全, AWS Bedrock, IAM安全, 成本管理
-
-> 本文报道了两起 AI 智能体持有云凭证导致巨额意外账单的真实事件：一家三人机构在攻击者利用泄露的 Bedrock 访问密钥后，一天内被收取 14，000 美元；一名 DN42 运营商因自主智能体启动昂贵实例扫描业余网络，被收取 6，531.30 美元。两起事件的共同点是：检测来源于信用卡扣款，而非 AWS，因为 Cost Explorer 中的计费数据存在最长 24 小时的延迟。文章解释了为何 GenAI 凭证是一种独特的威胁类型：与用于加密货币挖矿的失窃密钥不同（需要基础设施、规避和数天才能变现），Bedrock 访问权限可直接转化为可转售的模型调用，速度为 API 级别，无需攻击者运行任何...
+2026-07-16 18:17:00
 
 
 
