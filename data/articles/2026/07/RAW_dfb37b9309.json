@@ -1,0 +1,55 @@
+{
+  "id": "RAW_dfb37b9309",
+  "title": "AWS Continuum 为企业启用智能体代码安全",
+  "url": "https://www.infoq.com/news/2026/07/aws-continuum-code-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-17 03:00:00",
+  "author": "Gianmarco Nalin",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://aws.amazon.com/blogs/security/introducing-aws-continuum-security-at-machine-speed/\">Amazon Web Services has recently introduced AWS Continuum</a>, a new integrated security platform to automate the discovery, enforcement, and remediation of security issues across codebases, dependencies, and applications. AWS Continuum launches with four agentic capabilities, aiming at the entire vulnerability lifecycle: penetration testing, code review, threat modelling, and code vulnerabilities.</p>\n   <p>“Continuum is built on lessons learned from running security across AWS and Amazon.com”, claims Chet Kapoor, vice president of search, security, and observability at AWS.</p>\n   <p>AWS launched penetration testing and code review capabilities as part of AWS Security Agent <a href=\"https://aws.amazon.com/blogs/security/aws-launches-ai-enhanced-security-innovations-at-reinvent-2025/\">during AWS re:Invent 2025</a>. These capabilities allow teams to run penetration testing sessions, both on-demand and integrated into CI/CD workflows, and to execute on-demand code reviews of applications’ source code to identify security vulnerabilities and validate compliance with company standards.</p>\n   <p>The threat-modelling capability allows developers to analyse applications’ architectures in order to identify security threats. It produces a system overview describing how the system is built and behaves, and a set of threats describing how the system could be attacked, each with a severity level, a <a href=\"https://en.wikipedia.org/wiki/STRIDE_model\">STRIDE</a> classification, and actionable recommendations.</p>\n   <p>The code-vulnerabilities capability enables teams to streamline how they discover, prioritise, implement and monitor security vulnerabilities. According to the author, the service can reason over the company's full environment, including both structured and unstructured data, such as infrastructure, permissions, network topology, documents, company communications, and business priorities.</p>\n   <p>It operates in four continuous phases: discovery, prioritisation, validation, and mitigation and remediation.</p>\n   <p>The discovery phase evaluates a company's entire backlog and augments it with a scan of the whole environment. This creates a comprehensive list of vulnerabilities and associated attack paths that form the foundation for the next phase. In his keynote during the <a href=\"https://www.youtube.com/watch?v=x0sXP4Lipqc\">AWS Summit New York City 2026</a>, Kapoor shared that the team implemented this phase using a model-agnostic principle, allowing the service to adopt the latest models as soon as they are released.</p>\n   <p>During the prioritisation and validation phases, the service promises to surface the most important vulnerabilities by validating whether the affected components are deployed and reachable, and assessing the business impact if those vulnerabilities were exploited. AWS claims that building fully functional exploit examples in a sandboxed environment can reduce the amount of false positives, providing real evidence of the issue.</p>\n   <p>Finally, in the mitigation and remediation phase, the service recommends possible corrections for the validated vulnerabilities. These recommendations can include, for example, a network or a policy change, or a code patch. In this phase, the service can also provide visibility over the blast radius of the change and possible rollback strategies where feasible.</p>\n   <p>According to the company, the capability operates using a graduated trust model. This allows security and product teams to choose the level of autonomy they are willing to delegate to the tool when analysing, remediating, and enforcing code vulnerabilities, based on user-defined categories and risk profiles.</p>\n   <p>In a <a href=\"https://www.linkedin.com/posts/theburningmonk_aws-security-agent-is-a-perfectly-descriptive-activity-7474710346486751232-cMVR/\">LinkedIn post</a>, <a href=\"https://www.linkedin.com/in/theburningmonk/\">Yan Cui</a>, AWS serverless hero, highlights how the newly launched capabilities overlap with services still available in the company’s portfolio. In his opinion, this risks creating more confusion in the community, which might not know which service to use on their applications.</p>\n   <blockquote>\n    <p>Only six months after its release, AWS Security Agent has been folded into another product line and rebranded as \"Continuum pen testing\" and \"Continuum code scanning\".</p>\n    <p>But Security Agent still has its own product page, and the same capabilities still exist there. Just last week, they announced \"Security Agent adds threat modelling, Kiro power and Claude Code plugin, and more\".</p>\n    <p>So now we have the same capabilities, two product names, and no clarity on which one you should use or whether they will diverge at some point.</p>\n    <p>This is just confusing.</p>\n   </blockquote>\n   <p>AWS isn't the only company exploring the landscape of agentic security remediation for enterprises. Similar capabilities have already been introduced by competitors such as <a href=\"https://cloud.google.com/security/ai-threat-defense\">Google AI Threat Defense</a>, and Microsoft's <a href=\"https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/?v=1\">MDASH</a>. While Google has prioritised a cloud-agnostic strategy to allow security scans on diverse cloud environments and applications, Microsoft and AWS have opted for more integrated architectures within their respective ecosystems.</p>\n   <p>Penetration testing and code-review capabilities are already generally available with <a href=\"https://aws.amazon.com/security-agent/pricing/\">established pricing</a>, while others are still under development. The threat modelling is in preview, and the code-vulnerabilities capability is in gated preview. Users and companies interested in the code-vulnerabilities feature must sign up to request access.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Continuum to Enable Agentic Code Security for Enterprises\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Gianmarco Nalin\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/aws-continuum-code-security/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784228400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出 Continuum，这是一个智能体安全平台，能够在完整的漏洞生命周期内自动化进行渗透测试、代码审查、威胁建模和代码漏洞检测，并为企业团队提供分级信任模型。",
+  "oneSentenceSummary": "AWS 推出 Continuum，这是一个智能体安全平台，能够在完整的漏洞生命周期内自动化进行渗透测试、代码审查、威胁建模和代码漏洞检测，并为企业团队提供分级信任模型。",
+  "summary": "AWS 宣布推出 AWS Continuum，这是一个新的集成安全平台，统一了四种智能体能力：渗透测试、代码审查、威胁建模和代码漏洞。该平台建立在 re:Invent 2025 上宣布的早期 Security Agent 能力之上，并在四个连续阶段——发现、优先级排序、验证和缓解/修复——上运行。Continuum 采用分级信任模型，允许团队选择委托给工具的自主程度。文章还指出，威胁建模能力处于预览阶段，而代码漏洞功能处于受控预览阶段。文章包含了 AWS 领导层的观点以及 AWS 无服务器社区英雄 Yan Cui 的批评，他指出将 Security Agent 在 Continuum 下重新品牌化而仍保留独立产品页面可能造成混淆。该文简要将 Continuum 与 Google AI Threat Defense 和 Microsoft MDASH 进行比较，突显不同的战略方法。",
+  "mainPoints": [
+    {
+      "point": "Continuum 在完整的漏洞生命周期内统一了四种智能体安全能力。",
+      "explanation": "该平台涵盖渗透测试、代码审查、威胁建模和代码漏洞，并在从发现到修复的四个连续阶段中运行。"
+    },
+    {
+      "point": "分级信任模型允许团队选择委托给工具的自主程度。",
+      "explanation": "安全和产品团队可以定义类别和风险配置文件，以控制 Continuum 如何分析、修复和强制执行代码漏洞。"
+    },
+    {
+      "point": "Yan Cui 指责重新品牌化导致用户产生混淆。",
+      "explanation": "AWS 无服务器社区英雄 Yan Cui 指出，Security Agent 在发布仅六个月后就被纳入 Continuum，但两个产品页面仍然保持活跃，导致客户不确定应使用哪一个。"
+    },
+    {
+      "point": "AWS 的方法与竞争对手的策略形成对比。",
+      "explanation": "Google AI Threat Defense 强调云中立扫描，而微软和 AWS 则选择在各自生态系统内采用更集成的架构。"
+    }
+  ],
+  "keyQuotes": [
+    "仅在发布六个月后，AWS Security Agent 被并入另一个产品线，并重新品牌化为 \\\"Continuum pen testing\\\" 和 \\\"Continuum code scanning\\\"。...... 现在我们拥有相同的功能、两个产品名称，并且不清楚应该使用哪一个，或者它们是否会在某个时候分歧。这只是令人困惑。",
+    "Continuum 建立在跨 AWS 和 Amazon.com 运行安全所获得的经验教训之上。"
+  ],
+  "tags": [
+    "AWS",
+    "云安全",
+    "智能体安全",
+    "渗透测试",
+    "代码审查"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 718,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784228400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-17 03:00:00"
+}

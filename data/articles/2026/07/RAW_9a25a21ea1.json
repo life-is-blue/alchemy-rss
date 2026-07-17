@@ -1,0 +1,51 @@
+{
+  "id": "RAW_9a25a21ea1",
+  "title": "一款 278 字节的 16 位 x86 DOS 国际象棋程序",
+  "url": "https://nicholas-afk.github.io/AttoChess/",
+  "date": "2026-07-17 02:33:24",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <span class=\"opt__num\">01 · Display</span>\n  <h3>The board draws itself: no render buffer, no int 21h/09h</h3>\n  <p>This accounts for the largest saving.</p>\n  <p>The original renders the position into a separate buffer: it walks the board, transforms each square into a printable character, stores it, appends a <code>$</code> terminator, and prints the whole string with DOS function <code>09h</code> (<code>int 21h</code>). That path costs a buffer pointer setup, the copy loop's store, the terminator write, and, because the buffer lives after the board, a reserved board array in the image.</p>\n  <p>AttoChess deletes all of it. The board's border columns are laid out as <code>CR, LF, CR, LF</code> (<code>0Dh, 0Ah, 0Dh, 0Ah</code>) instead of the previous <code>08h</code> filler. Both CR and LF still have bit 3 set, so every existing border/color mask test fires exactly as before, but now the raw board bytes are already a printable frame. The display loop streams each byte straight to the console with <code>int 29h</code> (DOS fast console output): borders become newlines, empty squares become NULs, and only real pieces take the ASCII transform.</p>\n  <pre><code><span class=\"k\">main_loop:</span>\n    mov si, offset board_db + 24   <span class=\"c\">; row 2 (black back rank), col 0</span>\n    mov cl, 98                     <span class=\"c\">; 8 rank rows + final CR,LF (CH=0)</span>\n<span class=\"k\">disp_loop:</span>\n    lodsb                          <span class=\"c\">; read square contents</span>\n    test al, 30h                   <span class=\"c\">; piece?</span>\n    jz disp_cont                   <span class=\"c\">;   no: emit raw (CR / LF / NUL)</span>\n    inc ax                         <span class=\"c\">; zero-align king</span>\n    and al, 27h                    <span class=\"c\">; isolate piece type + black/lowercase bit</span>\n    add al, 4Bh                    <span class=\"c\">; K, N, B, P, Q, R (upper/lower by color)</span>\n<span class=\"k\">disp_cont:</span>\n    int 29h                        <span class=\"c\">; fast console output of AL</span>\n    loop disp_loop</code></pre>\n  <p>Removed in one move: the render buffer, its pointer setup, the <code>$</code> terminator, the <code>int 21h</code>/<code>09h</code> string print, and the reserved board array in the file image.</p>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了 AttoChess 如何通过将 CR/LF 作为棋盘边框嵌入棋盘数据，并使用 int 29h 直接输出原始字节，从而省去渲染缓冲区和 DOS 字符串打印，节省代码空间。",
+  "oneSentenceSummary": "本文详细介绍了 AttoChess 如何通过将 CR/LF 作为棋盘边框嵌入棋盘数据，并使用 int 29h 直接输出原始字节，从而省去渲染缓冲区和 DOS 字符串打印，节省代码空间。",
+  "summary": "本文介绍了 AttoChess（一个 278 字节的 16 位 x86 DOS 国际象棋程序）中的显示优化。它解释了原始方法使用单独的缓冲区来渲染棋盘，然后通过 DOS 功能 09h 打印棋盘。AttoChess 通过将棋盘边框列设置为 CR/LF（0Dh、0Ah）而不是填充字节来消除这一步骤，这样棋盘字节本身就构成了一个可打印的框架。然后显示循环使用 int 29h 直接输出每个字节，跳过缓冲区、终止符和字符串打印例程。代码片段演示了转换棋子并输出字符的紧凑循环。这一改动消除了渲染缓冲区及其设置、终止符和预留的棋盘数组，对实现 278 字节的总大小做出了重要贡献。",
+  "mainPoints": [
+    {
+      "point": "AttoChess 通过将 CR/LF 作为棋盘边框字节来避免单独的渲染缓冲区。",
+      "explanation": "通过将 CR/LF 作为棋盘边框字节，AttoChess 无需单独的渲染缓冲区。边框列被设置为 CR (0Dh) 和 LF (0Ah)，这些是可打印的换行符，使得棋盘的原始内存可以直接显示而无需复制。"
+    },
+    {
+      "point": "显示循环使用 int 29h 进行快速控制台输出，取代了 DOS 09h 字符串打印。",
+      "explanation": "显示循环使用 int 29h 进行快速控制台输出，取代了 DOS 09h 的字符串打印。棋盘的每个字节通过 int 29h 直接流式输出到控制台，空格子（NUL）原样输出，棋子字节被转换为 ASCII 字符，边框字节则成为换行符。"
+    },
+    {
+      "point": "该设计通过消除设置、终止符和预留数组来节省代码。",
+      "explanation": "渲染缓冲区指针设置、'$' 终止符、int 21h/09h 调用以及文件镜像中预留的棋盘数组都被移除，从而减小了可执行文件的总大小。"
+    }
+  ],
+  "keyQuotes": [
+    "棋盘自我绘制：无需渲染缓冲区，无需 int 21h/09h",
+    "一举移除：渲染缓冲区及其指针设置、$ 终止符、int 21h/09h 字符串打印，以及文件镜像中预留的棋盘数组。"
+  ],
+  "tags": [
+    "国际象棋",
+    "代码高尔夫",
+    "x86 汇编",
+    "DOS 编程",
+    "复古计算"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 288,
+  "domain": "nicholas-afk.github.io",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784226804000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-17 02:33:24"
+}

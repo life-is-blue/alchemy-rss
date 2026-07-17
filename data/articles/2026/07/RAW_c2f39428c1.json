@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c2f39428c1",
+  "title": "T-SQL 卫生习惯：SET NOCOUNT ON 有什么大不了的？—— Azure SQL 开发者角",
+  "url": "https://devblogs.microsoft.com/azure-sql/tsql-nocount",
+  "date": "2026-07-17 01:48:00",
+  "author": "Jerry Nixon",
+  "siteName": "Microsoft for Developers",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry-content sharepostcontent  \" data-bi-area=\"body_article\" data-bi-id=\"post_page_body_article\">\n   <p>Perhaps you have seen <code><a href=\"https://learn.microsoft.com/en-us/sql/t-sql/statements/set-nocount-transact-sql?view=sql-server-ver17\">SET NOCOUNT</a> ON;</code> at the beginning of a stored procedure and wondered why it is there. By default, SQL Server uses <code>SET NOCOUNT OFF;</code>, which sends messages such as “(10 rows affected)” after each statement. Using <code>SET NOCOUNT ON;</code> suppresses those messages.</p>\n   <h3>For example</h3>\n   <p>If an update changes 10 rows, with row-count messages enabled:</p>\n   <pre class=\"prettyprint language-sql\"><code class=\"language-sql\">SET NOCOUNT OFF;</code></pre>\n   <p><em>SQL Server sends:</em></p>\n   <pre class=\"prettyprint language-sql\"><code class=\"language-sql\">(10 rows affected)</code></pre>\n   <p>And with row-count messages suppressed:</p>\n   <pre class=\"prettyprint language-sql\"><code class=\"language-sql\">SET NOCOUNT ON;</code></pre>\n   <p><em>SQL Server sends no row-count message.</em></p>\n   <h3>A developer’s perspective</h3>\n   <p>In a .NET or Entity Framework application, the affected-row messages are usually ignored. Your code typically cares about returned data, output parameters, return values, or an explicitly returned row count. Suppressing unused messages can reduce unnecessary work for SQL Server, the network, and your application.</p>\n   <p></p>\n   <div class=\"alert alert-primary\">\n    <p class=\"alert-divider\"><i class=\"fabric-icon fabric-icon--Info\"></i><strong>One exception to watch for</strong></p>\n    Code using SqlCommand.ExecuteNonQuery() may receive -1 instead of an affected-row count when NOCOUNT is enabled. Return @@ROWCOUNT explicitly when the application requires that value.\n   </div>\n   <p></p>\n   <h2>A simple walk-through</h2>\n   <p>Consider this stored procedure, which closes old orders and returns the number updated:</p>\n   <pre class=\"prettyprint language-sql\"><code class=\"language-sql\">CREATE PROCEDURE dbo.CloseOldOrders AS\r\nBEGIN\r\n    SET NOCOUNT ON;\r\n\r\n    UPDATE dbo.Orders\r\n    SET Status = 'Closed'\r\n    WHERE ShipDate &lt; GETDATE();\r\n\r\n    SELECT @@ROWCOUNT AS RowsUpdated;\r\nEND;</code></pre>\n   <p><code>SET NOCOUNT ON;</code> does not prevent the update, suppress the <code>SELECT</code>, disable <code>@@ROWCOUNT</code>, or change the result of the procedure. It only suppresses the extra affected-row message.</p>\n   <h2>Better performance at scale</h2>\n   <p>The savings from one statement are small, but they add up. A procedure with 20 statements called 100,000 times could avoid about <em>2 million</em> unnecessary row-count protocol tokens. These tokens may share network packets, but they still add processing overhead. Loops, triggers, multiple updates, and nested procedures can generate even more. Removing them can reduce network traffic, client processing, latency, and compute usage.</p>\n   <p></p>\n   <div class=\"alert alert-success\">\n    <p class=\"alert-divider\"><i class=\"fabric-icon fabric-icon--Lightbulb\"></i><strong>Nested Procedures</strong></p>\n    When one stored procedure calls another, the current NOCOUNT setting applies during the nested call unless the nested procedure changes it. When the nested procedure returns, SQL Server restores the caller’s previous setting. Even so, each procedure should include SET NOCOUNT ON; so its behavior is clear and independent.\n   </div>\n   <p></p>\n   <h3>Safe and easy</h3>\n   <p>Inside a transaction, <code>SET NOCOUNT ON;</code> does not affect locking, commits, rollbacks, or error handling. It only controls whether affected-row messages are sent.</p>\n   <pre class=\"prettyprint language-sql\"><code class=\"language-sql\">CREATE PROCEDURE dbo.CloseOrder\r\n    @OrderId int\r\nAS\r\nBEGIN\r\nSET NOCOUNT ON;\r\n\r\n    BEGIN TRANSACTION;\r\n\r\n        UPDATE dbo.Orders\r\n        SET Status = 'Closed'\r\n        WHERE OrderId = @OrderId;\r\n\r\n        INSERT INTO dbo.OrderHistory (OrderId, Status)\r\n        VALUES (@OrderId, 'Closed');\r\n\r\n    COMMIT;\r\n\r\n    SELECT @OrderId AS OrderId, 'Closed' AS Status;\r\n\r\nEND;</code></pre>\n   <p>With <code>SET NOCOUNT OFF;</code>, the procedure sends two affected-row messages before returning the final order status. With <code>SET NOCOUNT ON;</code>, it returns only the final order status.</p>\n   <p>The transaction behaves exactly the same either way. <code>NOCOUNT</code> simply prevents the intermediate messages that your application probably ignores.</p>\n   <p></p>\n   <div class=\"alert alert-info\">\n    <p class=\"alert-divider\"><i class=\"fabric-icon fabric-icon--Info\"></i><strong>Messages can still be sent.</strong></p>\n    <code>SET NOCOUNT ON;</code> suppresses only affected-row messages. It does not suppress messages produced by <code>PRINT</code> or <code>RAISERROR</code>, and it does not suppress result sets returned by <code>SELECT</code>\n   </div>\n   <p></p>\n   <h2>Conclusion</h2>\n   <p><code>SET NOCOUNT ON;</code> is a small change with a real benefit. It removes messages your .NET application usually does not need, reduces unnecessary work, and keeps stored procedure behavior more predictable. For most stored procedures, it should be the default unless you specifically need those messages.</p>\n  </div>\n  <!-- .entry-content -->\n  <!-- AI Disclaimer -->\n </body>\n</html>",
+  "aiSummary": "本文解释了为什么在 SQL Server 存储过程中使用 SET NOCOUNT ON 是减少网络开销和提升应用性能的最佳实践，尤其是在大规模场景下。",
+  "oneSentenceSummary": "本文解释了为什么在 SQL Server 存储过程中使用 SET NOCOUNT ON 是减少网络开销和提升应用性能的最佳实践，尤其是在大规模场景下。",
+  "summary": "这篇来自 Azure SQL 开发者角的文章阐述了 SET NOCOUNT ON 这个 T-SQL 语句的目的和好处。它详细说明了 SQL Server 默认情况下会在每条语句后发送额外的“受影响行数”消息，而这些消息通常被 .NET 应用程序忽略。作者演示了抑制这些消息如何减少 SQL Server、网络和客户端应用程序的不必要处理。演示过程表明，NOCOUNT 不会干扰数据修改、SELECT 语句或 @@ROWCOUNT。文章强调，虽然单条语句节省的资源很少，但在频繁执行或复杂的过程中，这些节省会累积起来，可能避免数百万个冗余的网络令牌。文章还澄清，该设置在事务中是安全的，不会影响锁定或错误处理，并得出结论：SET NOCOUNT ON 应成为大多数存储过程的默认设置。",
+  "mainPoints": [
+    {
+      "point": "SET NOCOUNT ON 抑制了客户端应用程序通常会忽略的多余“受影响行数”消息。",
+      "explanation": "默认情况下，SQL Server 在每条 DML 语句后都会发送类似“(10 行受影响)”的消息。这种额外的网络流量很少被 .NET 或 Entity Framework 代码使用，它们关心的是结果集和输出参数。"
+    },
+    {
+      "point": "抑制行数消息能在规模化场景下带来显著的性能收益。",
+      "explanation": "一个包含 20 条语句的过程被调用 100，000 次，可以避免大约 200 万个不必要的网络令牌。这减少了网络流量、客户端处理开销和延迟，尤其是在循环或嵌套过程中。"
+    },
+    {
+      "point": "该设置是安全的，不会改变事务行为或数据结果。",
+      "explanation": "SET NOCOUNT ON 不影响锁定、提交、回滚或错误处理。它只控制额外的信息性消息，而显式的 SELECT 语句和 @@ROWCOUNT 仍然正常工作。"
+    },
+    {
+      "point": "对于依赖 SqlCommand.ExecuteNonQuery() 的代码，存在一个例外情况。",
+      "explanation": "当启用 NOCOUNT 时，ExecuteNonQuery() 可能返回 -1 而不是受影响的行数。如果应用程序需要该值，开发人员应使用显式的 SELECT @@ROWCOUNT。"
+    }
+  ],
+  "keyQuotes": [
+    "单条语句节省的资源很少，但它们会累积起来。一个包含 20 条语句的过程被调用 100，000 次，可以避免大约 200 万个不必要的行数协议令牌。",
+    "SET NOCOUNT ON; 是一个能带来实际好处的小改动。它移除了你的 .NET 应用程序通常不需要的消息，减少了不必要的工作，并使存储过程的行为更具可预测性。"
+  ],
+  "tags": [
+    "SQL Server",
+    "T-SQL",
+    "数据库",
+    "性能优化",
+    "后端开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 532,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e0e15b83",
+  "sourceName": "Microsoft for Developers",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784224080000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-17 01:48:00"
+}

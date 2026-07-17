@@ -1,0 +1,55 @@
+{
+  "id": "RAW_19746617ac",
+  "title": "宣布推出《面向初学者的 .NET 现代化》课程 - .NET 博客",
+  "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-modernization-for-beginners",
+  "date": "2026-07-17 01:07:06",
+  "author": "Pablo Lopes",
+  "siteName": "Microsoft for Developers",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry-content sharepostcontent  \" data-bi-area=\"body_article\" data-bi-id=\"post_page_body_article\">\n   <p>We’ve built a new course to help you navigate the journey when you’re the owner of an application built on a legacy .NET framework and it needs to be modernized. The whole concept of modernization is overwhelming! Security updates aren’t being issued any longer! Dependencies are out of date because they’re not being updated! You’re not alone. We have a suite of tools to help you modernize and this course helps you use those tools. We’ve built the <a href=\"https://learn.microsoft.com/azure/developer/github-copilot-app-modernization/overview\">GitHub Copilot modernization tooling</a> to help you modernize your .NET code. And we wanted to create a course to help you use the tools so we created the <a href=\"https://aka.ms/ghcp-modernization/dotnet-mod-beginners\"><strong>.NET Modernization for Beginners course</strong></a>.</p>\n   <p>This is a free, open-source, hands-on course that walks you through modernizing a real legacy ASP.NET application all the way to .NET 10, using the GitHub Copilot modernization agent. The course walks you through the modernization journey step-by-step. Along the way you’ll learn how the tooling produces assessments and plans before it changes any code and how you can modify those to tell the coding agent exactly what needs to happen.</p>\n   <h2>Why a hands-on course?</h2>\n   <p>There’s no better way to learn than by doing. And in this course you’re not just going to read about the GitHub Copilot modernization and some theory, but the course will give you exercises to do it too. (You will need a <a href=\"https://github.com/features/copilot/plans\">GitHub Copilot subscription</a>.)</p>\n   <p>GitHub Copilot modernization works differently from agentic development tools you may have tried before. It does not just rewrite your code behind the scenes and hand you back something you have to reverse-engineer. It produces transparent, editable artifacts that you can read, question, and adjust: an <code>assessment.md</code>, a <code>plan.md</code>, and a <code>tasks.md</code>. Those files become your guide and your source of truth. You review them, you shape them, and only then does the work begin. The agent assists you, but you make the calls.</p>\n   <h2>The four chapters</h2>\n   <p>The course is organized in the same way you’d approach a modernization journey. Each chapter builds on the last, and each one teaches you not just what to do, but why you are doing it.</p>\n   <h3>Chapter 1 – Assessment</h3>\n   <p>You start by pointing the modernization agent at a legacy solution and letting it analyze what is really there. You explore the generated <code>assessment.md</code> to understand the risks, the dependencies, and the level of effort involved, so you begin from facts instead of guesses.</p>\n   <h3>Chapter 2 – Planning</h3>\n   <p>Next you turn those insights into a plan. The agent produces a <code>plan.md</code> with recommended target frameworks, a sequence of upgrade steps, and an effort estimate. You learn how to review it, customize it for your context, and finalize a plan you actually believe in.</p>\n   <h3>Chapter 3 – Upgrade &amp; Execution</h3>\n   <p>This is where the agentic development happens. The agent executes the plan while you track progress in <code>tasks.md</code>, moving the application forward iteratively. You will see it do the heavy lifting while you stay in the driver’s seat and make the decisions that matter.</p>\n   <h3>Chapter 4 – Cloud with Azure</h3>\n   <p>Modernization is not finished until your app is running where it belongs. In the final chapter you publish the modernized application to Azure App Service and look at the next steps for operating and evolving it, so the journey ends with something live, not just something that compiles.</p>\n   <h2>Get started</h2>\n   <p>You can be up and running in just a few minutes.</p>\n   <ol>\n    <li>Make sure you have Visual Studio 2022 (17.10 or later) or Visual Studio 2026 with a GitHub Copilot subscription.</li>\n    <li>Clone the repository from <a href=\"https://github.com/microsoft/dotnet-modernization-for-beginners\">github.com/microsoft/dotnet-modernization-for-beginners</a>.</li>\n    <li>Begin with Chapter 0 (Introduction).</li>\n   </ol>\n   <p>Everything you need is in the repo, including step-by-step written instructions and companion videos for each chapter.</p>\n   <p>We’re not creating this in a vacuum and we want to hear from you. Open some issues to suggest improvements, request new chapters, or report problems. Feel free to submit PRs if you want too! And don’t forget to star the repo if you find it useful!</p>\n   <p>Legacy code does not have to be overwhelming. <a href=\"https://aka.ms/ghcp-modernization/dotnet-mod-beginners\">Grab the repo</a>, open Visual Studio, and let us modernize .NET together, one application at a time.</p>\n  </div>\n  <!-- .entry-content -->\n  <!-- AI Disclaimer -->\n </body>\n</html>",
+  "aiSummary": "微软宣布推出一个免费的实践课程，教导初学者如何使用 GitHub Copilot 现代化智能体，将旧版 ASP.NET 应用程序现代化升级到 .NET 10。",
+  "oneSentenceSummary": "微软宣布推出一个免费的实践课程，教导初学者如何使用 GitHub Copilot 现代化智能体，将旧版 ASP.NET 应用程序现代化升级到 .NET 10。",
+  "summary": "这篇博文介绍了一个名为《面向初学者的 .NET 现代化》的全新免费开源课程。该课程专为旧版 .NET Framework 应用程序的拥有者设计，提供了一个循序渐进、亲手实践的指南，将一个真实的 ASP.NET 应用现代化升级到 .NET 10。它利用了 GitHub Copilot 现代化工具，该工具的独特之处在于，在修改任何代码之前，会生成透明、可编辑的产出物（assessment.md、plan.md、tasks.md），让开发者始终掌握控制权。课程结构分为四个章节，模拟真实的现代化旅程：评估、规划、升级与执行，以及使用 Azure 进行云部署。课程需要 Visual Studio 2022/2026 和 GitHub Copilot 订阅，所有材料（包括配套视频）均可在 GitHub 仓库中获取。",
+  "mainPoints": [
+    {
+      "point": "该课程提供了一种实用、亲手实践的方法，使用新型 AI 驱动的工具来现代化旧版 .NET 应用程序。",
+      "explanation": "课程不仅仅是理论讲解，还提供了现代化真实应用程序的练习，通过实践来教学。它使用了 GitHub Copilot 现代化智能体，该智能体与其他 AI 工具的不同之处在于其透明性和可控性。"
+    },
+    {
+      "point": "GitHub Copilot 现代化智能体通过透明的规划产出物，将开发者控制权放在首位。",
+      "explanation": "该工具首先生成评估报告、计划和任务列表。开发者在任何代码被更改之前审查和编辑这些内容，确保他们理解并同意现代化策略。"
+    },
+    {
+      "point": "课程结构模拟了从评估到云部署的完整、真实的现代化旅程。",
+      "explanation": "四个章节引导用户从分析旧代码库和创建计划，到迭代执行升级，最后将现代化后的应用发布到 Azure App Service。"
+    },
+    {
+      "point": "该课程及其相关工具旨在让旧代码现代化不再那么令人望而生畏，并使其更易于上手。",
+      "explanation": "通过提供结构化的路径、透明的 AI 辅助以及对实际执行的关注，该课程旨在赋能那些受困于不受支持的旧版应用程序的开发者。"
+    }
+  ],
+  "keyQuotes": [
+    "它不会只是在幕后重写你的代码，然后交给你一个需要逆向工程才能理解的东西。它会生成透明、可编辑的产出物，让你可以阅读、质疑和调整：assessment.md、plan.md 和 tasks.md。",
+    "智能体协助你，但决策由你做出。"
+  ],
+  "tags": [
+    ".NET",
+    "旧系统现代化",
+    "GitHub Copilot",
+    "ASP.NET",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 685,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e0e15b83",
+  "sourceName": "Microsoft for Developers",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784221626000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-17 01:07:06"
+}

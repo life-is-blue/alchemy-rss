@@ -1,0 +1,52 @@
+{
+  "id": "RAW_9ded9975bf",
+  "title": "Firefox 编译为 WebAssembly",
+  "url": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
+  "date": "2026-07-17 07:34:16",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th July 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Jul/16/firefox-in-webassembly/\">\n    <p><strong><a href=\"https://developer.puter.com/labs/firefox-wasm/\">Firefox in WebAssembly</a></strong> (<a href=\"https://news.ycombinator.com/item?id=48926939\" title=\"Hacker News\">via</a>) This is absurdly cool: Puter compiled Firefox to WebAssembly such that the whole browser runs in another browser.</p>\n    <p>Here's my blog, running in Firefox, running in WebAssembly, running in Chrome:</p>\n    <p><img alt=\"A Chrome window. The tab has the Firefox UI and has loaded my blog. On the right is the Chrome network panel showing that it loaded resources that include a 233MB gecko.wasm and an 18MB chrome-assets.tar.zst\" src=\"https://static.simonwillison.net/static/2026/firefox-wasm.webp\"></p>\n    <p>They chose Firefox/Gecko because it has strong single-process support. The project took an estimated $25,000 of Claude Opus and Fable tokens, taking advantage of a Claude Max subscription plan.</p>\n    <p>The demo funnels all traffic over a WebSocket protocol (using the <a href=\"https://github.com/MercuryWorkshop/wisp-protocol\">Wisp protocol</a>) through Puter's server - a requirement to get this kind of thing to work because code running in browsers can't open arbitrary network connections.</p>\n    <p>(That proxying sounds expensive! The team <a href=\"https://news.ycombinator.com/item?id=48926939#48936563\">had to scale the servers up</a> to handle the traffic during the Hacker News conversation about the project.)</p>\n    <p>Puter claim this supports end-to-end encryption and that looks to be true - I inspected the WebSocket messages and traffic to my own HTTPS site was encrypted whereas requests and responses to <code>http://www.example.com/</code> were in cleartext.</p>\n    <p><a href=\"https://github.com/HeyPuter/firefox-wasm\">Here's the repo</a> for <code>firefox-wasm</code>. <a href=\"https://github.com/theogbob/WebkitWasm\">theogbob/WebkitWasm</a> is a similar project that compiles WebKit to WASM, but that one doesn't currently have an accessible online demo.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9552/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文报道了一个将 Firefox 编译为 WebAssembly 的项目，实现了在浏览器中运行完整浏览器，并提供了包括成本、代理使用和加密验证在内的技术细节。",
+  "oneSentenceSummary": "本文报道了一个将 Firefox 编译为 WebAssembly 的项目，实现了在浏览器中运行完整浏览器，并提供了包括成本、代理使用和加密验证在内的技术细节。",
+  "summary": "Simon Willison 分享了他发现的一个由 Puter 主导的项目，该项目将 Firefox/Gecko 编译为 WebAssembly，使 Firefox 能够在浏览器中运行。本文解释了技术选型：选择 Gecko 是因为其强大的单进程支持，编译成本估计为 25，000 美元，使用了 Claude Opus 和 Fable token（通过 Claude Max 订阅），所有网络流量都通过 Wisp WebSocket 协议经由 Puter 的服务器代理。Willison 通过检查 WebSocket 消息验证了声称的端到端加密，确认了访问 HTTPS 网站的流量是加密的。该项目代码库公开可用，还有一个类似的 WebKitWasm 项目但没有可访问的演示。",
+  "mainPoints": [
+    {
+      "point": "Puter 将 Firefox 编译为 WebAssembly，实现了在另一个浏览器中运行完整浏览器。",
+      "explanation": "该项目使用 Firefox 的 Gecko 引擎，选择它是因为其单进程支持，编译成本约为 25，000 美元的 Claude Opus 和 Fable token。"
+    },
+    {
+      "point": "演示通过 Wisp 协议将所有流量路由到 WebSocket 代理。",
+      "explanation": "由于在浏览器中运行的代码无法打开任意网络连接，Puter 的服务器代理了所有请求，在高流量期间需要大量扩展。"
+    },
+    {
+      "point": "通过检查 WebSocket 消息验证了端到端加密。",
+      "explanation": "Willison 确认访问他自己的 HTTPS 网站的流量是加密的，而访问 http://www.example.com/ 的请求和响应是明文的，证实了项目的声明。"
+    }
+  ],
+  "keyQuotes": [
+    "这太酷了：Puter 将 Firefox 编译为 WebAssembly，使得整个浏览器可以在另一个浏览器中运行。",
+    "该项目花费了约 25，000 美元的 Claude Opus 和 Fable token，利用了 Claude Max 订阅计划。",
+    "我检查了 WebSocket 消息，访问我自己 HTTPS 网站的流量是加密的，而访问 http://www.example.com/ 的请求和响应是明文的。"
+  ],
+  "tags": [
+    "WebAssembly",
+    "Firefox",
+    "浏览器工程",
+    "LLM",
+    "AI 编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 191,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784244856000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-17 07:34:16"
+}

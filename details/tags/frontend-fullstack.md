@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-17 06:49:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-17 09:45:38 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -711,6 +711,38 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [运行时日志现已显示缓存原因---Vercel](https://vercel.com/changelog/runtime-logs-now-show-cache-reasons)
+
+2026-07-17 09:00:00 | 标签: DevOps, Cloud Native / DevOps, 开发者工具, Web 开发, 缓存
+
+> Vercel 在其运行时日志中新增了“缓存原因”字段，透明地展示了为何一个可被 CDN 缓存的请求会返回 MISS、BYPASS、STALE 或 REVALIDATED 状态。该功能涵盖的原因包括基于时间的重新验证、基于标签的失效、草稿模式和冷启动等。这些数据可通过 Vercel 仪表板的“日志”选项卡查看，也可通过 `vercel logs`、`vercel metrics` 以及 Vercel 插件的 cdn-caching 技能以编程方式获取，让开发者能够检查单个请求或量化所有流量中缓存原因的出现情况。
+
+
+
+### [T-SQL-卫生习惯：SET-NOCOUNT-ON-有什么大不了的？——-Azure-SQL-开发者角](https://devblogs.microsoft.com/azure-sql/tsql-nocount)
+
+2026-07-17 01:48:00 | 标签: SQL Server, T-SQL, 数据库, 性能优化, 后端开发
+
+> 这篇来自 Azure SQL 开发者角的文章阐述了 SET NOCOUNT ON 这个 T-SQL 语句的目的和好处。它详细说明了 SQL Server 默认情况下会在每条语句后发送额外的“受影响行数”消息，而这些消息通常被 .NET 应用程序忽略。作者演示了抑制这些消息如何减少 SQL Server、网络和客户端应用程序的不必要处理。演示过程表明，NOCOUNT 不会干扰数据修改、SELECT 语句或 @@ROWCOUNT。文章强调，虽然单条语句节省的资源很少，但在频繁执行或复杂的过程中，这些节省会累积起来，可能避免数百万个冗余的网络令牌。文章还澄清，该设置在事务中是安全的，不会影响锁定或错...
+
+
+
+### [首届-Three.js-大会演讲嘉宾介绍](https://tympanus.net/codrops/2026/07/16/meet-the-speakers-of-the-first-three-js-conference/)
+
+2026-07-16 22:45:56 | 标签: Three.js, 会议, WebGL, WebGPU, TSL
+
+> 文章宣布了首届 Three.js 大会，将于 2026 年 9 月在巴黎举行，并介绍了多位演讲嘉宾，包括 Bruno Simon、Célia Lopez、Daniel Beauchamp、Anderson Mancini、Natalia Markoborodova & Thomas Nattestad、Patrick Heng & Justine Soulie、Robin Payot、Julie Marting、Vicente Lucendo 和 Jean Carlo Deconto。每位嘉宾分享了他们近期的工作——从 TSL 课程更新、WebGPU 性能工具，到 AI 生成的 3D 资产、C...
+
+
+
+### [使用-React-Native-掌握全栈移动开发](https://www.freecodecamp.org/news/master-full-stack-mobile-development-with-react-native/)
+
+2026-07-16 19:32:57 | 标签: React Native, 全栈开发, 移动开发, Expo, Drizzle ORM
+
+> 本文是一则简短公告，宣布 freeCodeCamp YouTube 频道发布了一门全新的全栈 React Native 课程。文章概述了课程涵盖的关键技术：跨平台框架 Expo 和 React Native、后端数据库 Neon Postgres 与 Drizzle ORM、认证服务 Clerk（支持 Google、Apple、GitHub）、基于 Tailwind CSS 的样式库 NativeWind、状态管理库 Zustand 以及错误报告工具 Sentry。该课程提供四个小时的动手实践教程，指导学员构建一个真实的购物清单应用。文章未提供进一步分析、代码示例或个人见解，主要作为学习资源的...
 
 
 
@@ -1542,13 +1574,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1698,13 +1730,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3198,13 +3230,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4908,13 +4940,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
