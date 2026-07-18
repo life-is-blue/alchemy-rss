@@ -1,0 +1,52 @@
+{
+  "id": "RAW_3bb7b6743e",
+  "title": "Uber 如何构建区域故障弹性的 OpenSearch 集群",
+  "url": "https://www.infoq.com/news/2026/07/uber-opensearch-zone-failure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-17 18:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": null,
+  "aiSummary": "Uber 使用隔离组和强制分片分配来实现 OpenSearch 的区域故障弹性。",
+  "oneSentenceSummary": "Uber 使用隔离组和强制分片分配来实现 OpenSearch 的区域故障弹性。",
+  "summary": "Uber 介绍了如何在可用区故障期间保持 OpenSearch 集群的正常运行，引入了隔离组（IG）抽象层，将物理区域映射到节点数量相等的逻辑组，并结合强制分片分配感知和扩大的集群管理器仲裁。隔离组层确保即便区域大小不均匀，也能实现均衡的分片放置；而强制感知则通过将缺失的分片保持未分配状态（直到故障区域恢复），避免引发重平衡风暴。借助 5 个管理器节点和自动缩减投票机制，集群可以容忍整个区域丢失外加一个额外节点的故障而不丢失仲裁。这种方法消除了黄色状态下的分片分配问题，减少了磁盘倾斜和热点节点效应，并适用于 Uber 所有 Tier-3+ 级别的 OpenSearch 和 Elasticsearch 部署。工程师可以使用标准的 OpenSearch 功能来采用该模式：在已声明的感知属性集合上均匀分布节点、至少配置三个与故障域一一对应的分片副本、以及启用投票缩减的奇数个管理器节点。",
+  "mainPoints": [
+    {
+      "point": "隔离组解耦了物理区域的不均衡与分片放置逻辑。",
+      "explanation": "每个隔离组保证拥有相同数量的节点，因此分片分配感知看到的始终是均衡的节点池，不受底层区域大小的影响，从而消除了磁盘倾斜和热点节点。"
+    },
+    {
+      "point": "强制分片分配感知避免了区域故障期间的重平衡风暴。",
+      "explanation": "通过预先声明所有预期的隔离组值，OpenSearch 能检测到缺失的组并将受影响的分片保持未分配状态，使集群处于黄色状态而非触发激进的重新分配，避免对健康节点造成过载。"
+    },
+    {
+      "point": "配备自动投票缩减的 5 个集群管理器节点可在区域和节点丢失后保持仲裁。",
+      "explanation": "一个区域故障最多可移除两个管理器；投票配置自动缩减至剩余的三个，随后即使再丢失一个节点，仍有两个节点满足 2/3 的仲裁要求，使集群保持可写入状态。"
+    }
+  ],
+  "keyQuotes": [
+    "该设计可容忍整个区域故障外加一个额外节点故障，同时保持仲裁并避免数据丢失。",
+    "Uber 通过强制分片分配感知来解决这个问题。集群从一开始就配置了所有预期的隔离组属性值，而不仅仅是当前可见的值。",
+    "Uber 报告称，隔离组抽象层修复了黄色状态和分片分配故障。这些问题源于物理区域大小的不均匀。现在，分片分配达到 100%，集群健康状况始终为绿色。"
+  ],
+  "tags": [
+    "OpenSearch",
+    "Elasticsearch",
+    "分片分配",
+    "容错",
+    "多可用区"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 622,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784282400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-17 18:00:00"
+}

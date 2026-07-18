@@ -1,0 +1,62 @@
+{
+  "id": "RAW_f5f4ec779a",
+  "title": "5 个免费的智能体 AI 学习资源",
+  "url": "https://www.kdnuggets.com/5-free-resources-on-agentic-ai",
+  "date": "2026-07-17 20:00:22",
+  "author": "Nahla Davies",
+  "siteName": "KDnuggets",
+  "content": null,
+  "aiSummary": "本文精选了五款免费资源——课程、指南、论文和白皮书——帮助读者高效构建、理解和评估 AI 智能体。",
+  "oneSentenceSummary": "本文精选了五款免费资源——课程、指南、论文和白皮书——帮助读者高效构建、理解和评估 AI 智能体。",
+  "summary": "文章介绍了五个免费的智能体 AI 学习资源：Microsoft 的初学者课程、Hugging Face 的智能体课程、Anthropic 的工程指南、Shoham 与 Leyton-Brown 的经典教材《多智能体系统》，以及 Google/Kaggle 的智能体白皮书系列。针对每个资源，文章指出了其价值所在——例如内容及时更新、包含动手项目、概念清晰、理论扎实或侧重评估——并建议了一条从实践技能到理论与评估的学习路径。这些资源共同构成了一条全面且零成本的路线图，适合任何希望超越浅显的智能体演示、扎实理解智能体工作原理及如何评估其质量的人。",
+  "mainPoints": [
+    {
+      "point": "Microsoft 的 AI Agents for Beginners 提供了一门结构化的、MIT 许可的课程，包含视频和可运行的 Python 代码，涵盖基础、工具使用、规划、RAG、多智能体设置以及 MCP 等现代标准。",
+      "explanation": "其优势在于持续维护，并涵盖了 2023 年前后大多数教材缺失的新兴互操作性标准，使其成为一个可靠、教科书级别的起点。"
+    },
+    {
+      "point": "Hugging Face Agents Course 提供了一个动手实践、框架无关的教学，使用 smolagents、LlamaIndex 和 LangGraph，最终完成一个带有基准测试的项目并获取证书。",
+      "explanation": "通过强制学习者在不同库之间切换，它帮助建立实用的直觉，为在生产环境中选定单一生态系统做好准备。"
+    },
+    {
+      "point": "Anthropic 的 Building Effective Agents 指南区分了工作流与真正的智能体，并概述了关键模式，如提示链、路由、并行化、编排器-工人以及评估器-优化器循环。",
+      "explanation": "其最有价值的贡献是一个常被忽略的警告：智能体会增加成本与错误传播，因此应从最简单的方案开始，只在必要时才加入自主性。"
+    },
+    {
+      "point": "Shoham 与 Leyton-Brown 的《多智能体系统》提供了关于博弈论、分布式决策和逻辑基础的免费、严谨的理论基础，这些正是现代智能体讨论的基础。",
+      "explanation": "由于该书早于 LLM 时代，它将协调、协商和激励问题作为早已被深入研究的课题来处理，使读者无需重新发明已知理论。"
+    },
+    {
+      "point": "Google 与 Kaggle 的智能体白皮书系列涵盖了架构、工具、MCP 互操作性、上下文工程、评估以及从原型到生产的跃迁，其中评估部分尤为突出。",
+      "explanation": "评估卷解决了最不常教授但最急需的技能——衡量智能体是否真的有效——这使得该系列对于超越演示 demo 特别有价值。"
+    }
+  ],
+  "keyQuotes": [
+    "\"每个人都在构建智能体。但很少有人能准确解释，为什么他们的智能体会无限循环、忽略给定的工具，或者自信地报告完成了一项从未真正完成的任务。\"",
+    "\"它之所以成为最好的免费起点，是因为它持续维护而非被遗弃，并且涵盖了 Model Context Protocol (MCP) 等较新的互操作性标准，而大多数 2023 年的资料完全早于这些标准。\"",
+    "\"它完全免费，没有付费墙，最后还有一个带基准测试的项目和证书，所以有明确的终点而非无休止的播放列表。\"",
+    "\"它最大的贡献是一个大多数教程跳过的警告：智能体会带来更高的成本和复合错误的可能，所以你应该先使用最简单的可行方案，只在问题需要时才增加自主性。\"",
+    "\"第四个主题——评估——正是这个系列赢得一席之地的原因：衡量智能体是否真的有效是整个领域中最不常教授但最急需的技能，而大多数免费资料在‘它在我这个例子上能跑通’时就停了下来。\""
+  ],
+  "tags": [
+    "AI 智能体",
+    "智能体 AI",
+    "LLM",
+    "多智能体系统",
+    "AI 课程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 78,
+  "wordCount": 862,
+  "domain": "kdnuggets.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_948a69fc",
+  "sourceName": "KDnuggets",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784289622000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-17 20:00:22"
+}

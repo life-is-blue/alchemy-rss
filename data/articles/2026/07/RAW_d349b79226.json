@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d349b79226",
+  "title": "说“是”的成本已经改变",
+  "url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/",
+  "date": "2026-07-18 00:46:51",
+  "author": "Dalia Abuadas",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">The most expensive part of a small feature request used to be writing the code. Now it’s usually the meeting about whether or not to write the code.</p>\n  <p class=\"wp-block-paragraph\">That’s a real shift, and it quietly breaks a lot of engineering instincts. Engineers learn early that most “small asks” aren’t small: they need tests, a rollout plan, someone to think through the edge cases and own the behavior after it ships. A two-hour change can become a two-week distraction if it touches the wrong part of the system. So we push back. Is this really needed? Does it belong in this release? Does it change a contract we already agreed to? I’m not giving that instinct up.</p>\n  <p class=\"wp-block-paragraph\">But it rests on an assumption that’s quietly breaking, which is that writing the first version of the code is the expensive step. For a specific class of change, it no longer is. If you can tell those changes apart from the rest, you can replace “is this in scope?” with a question you can answer in thirty minutes instead of a two-day debate.</p>\n  <h2 id=\"h-the-debate-often-costs-more-than-the-patch\" class=\"wp-block-heading\">The debate often costs more than the patch</h2>\n  <p class=\"wp-block-paragraph\">Here’s a pattern I keep seeing. Someone asks for a small change such as surfacing a <code>last_active_at</code> timestamp that already exists in the backend on a settings page. The team spends forty minutes in a thread. One person says it sounds risky. Someone remembers a related migration from two years ago. Someone mentions the deadline. Eventually we land on “probably a day or two, could be more,” with low confidence, primarily because nobody has actually tried it.</p>\n  <p class=\"wp-block-paragraph\">That process made sense when trying was the expensive part. You had to stop what you were doing, load the context into your head, make the change by hand, write the tests, then discover the second- and third-order consequences. When the first attempt is cheap, defending the boundary can cost more than crossing it.</p>\n  <p class=\"wp-block-paragraph\">An agent can produce that first patch in the time the thread takes to warm up. It’s not free and definitely not automatically correct. But it is cheap enough that the smart move is often to stop guessing and look at a real diff.</p>\n  <h2 id=\"h-the-first-patch-is-a-price-check-not-the-product\" class=\"wp-block-heading\">The first patch is a price check, not the product</h2>\n  <p class=\"wp-block-paragraph\">The mistake is to treat the generated patch as the deliverable. It isn’t. It’s a probe. It turns an abstract scope argument into a concrete artifact you can interrogate:</p>\n  <ul class=\"wp-block-list\">\n   <li>Does it touch the files you expected, or does it sprawl across five packages?</li>\n   <li>Are the tests obvious, or does the change resist being tested?</li>\n   <li>Does it preserve the existing abstractions?</li>\n   <li>Does it quietly require a new product decision?</li>\n   <li>Would you be comfortable owning this behavior six months from now?</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Those are better questions than “does this feel like scope creep?” because now you’re arguing from evidence instead of vibes. If the <code>last_active_at</code> field comes back as a four-line diff with a passing test, ship it. The debate was the expensive part. However, if that same request comes back touching the auth middleware, you’ve learned the request was never small. Not only that, you learned this in thirty minutes instead of two days.</p>\n  <p class=\"wp-block-paragraph\">This is not letting the AI decide. It’s using the AI to make human judgment cheaper and better-informed.</p>\n  <h2 id=\"h-cheap-to-write-is-not-the-same-as-cheap-to-own\" class=\"wp-block-heading\">Cheap to write is not the same as cheap to own</h2>\n  <p class=\"wp-block-paragraph\">Here’s the trap, and it’s the most important distinction of the AI era. A <strong>change is not cheap just because the code was cheap to generate. It’s cheap only if a human can confidently review and own the result.</strong></p>\n  <p class=\"wp-block-paragraph\">A thousand-line diff that technically passes but nobody wants to own is not a cheap change. It’s a deferred cost. So the dividing line in that case isn’t “can an agent write this?” It’s “can a person validate it?”</p>\n  <ul class=\"wp-block-list\">\n   <li>Adding a display field that already exists in the backend is usually cheap.</li>\n   <li>Changing authorization behavior is not cheap, no matter how clean the diff.</li>\n   <li>Refactoring a well-tested helper is usually cheap.</li>\n   <li>Changing data-retention semantics is not cheap.</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Plenty of changes still deserve a hard no even when the code is trivial. This includes anything that moves the product contract, creates a support burden, or touches privacy, billing, or compliance. AI lowers the cost of <em>producing</em> a candidate. It does nothing to lower the cost of <em>owning</em> one.</p>\n  <h2 id=\"h-move-scope-discipline-closer-to-the-evidence\" class=\"wp-block-heading\">Move scope discipline closer to the evidence</h2>\n  <p class=\"wp-block-paragraph\">Traditionally, scope discipline happened before implementation, because implementation was the expensive thing to protect. Now some of that discipline can move to review. That doesn’t mean skipping planning. It means being precise about which planning actually pays off.</p>\n  <p class=\"wp-block-paragraph\">Before relitigating a small change, ask for a constrained attempt. The constraints are the whole point.</p>\n  <p class=\"wp-block-paragraph\">Produce the smallest possible patch. Keep it behind the existing feature flag. Don’t change the public contract. Add or update tests. List every file you touched and call out anything risky.</p>\n  <p class=\"wp-block-paragraph\">If the agent can’t produce a clean patch under those constraints, the request was bigger than you thought, and you know it carries a real ownership cost before anyone commits to it. If it can, that tells you something too. Either way you’ve replaced “is this in scope?” with “here’s what it costs. Do we want to pay it?”</p>\n  <h2 id=\"h-the-new-skill-is-pricing-uncertainty\" class=\"wp-block-heading\">The new skill is pricing uncertainty</h2>\n  <p class=\"wp-block-paragraph\">The best engineers in an AI-assisted world won’t be the ones who say yes to everything, and they won’t be the ones who reflexively say no. They’ll be the ones who can price uncertainty fast. They’ll know when a request is a product decision wearing an implementation costume, when review will be harder than writing, and when a change is small enough that the fastest responsible answer is to just try it.</p>\n  <p class=\"wp-block-paragraph\">That last one is genuinely new. “Try it and see” used to mean pulling a developer off other work. Now, for the right kind of task, it means handing an agent a bounded assignment and using the result to make a better call. Less time guessing, more time supervising. Less time treating implementation as a black box, more time evaluating concrete artifacts.</p>\n  <p class=\"wp-block-paragraph\">Scope creep is still real. But “no, because any new code is too expensive” is a much weaker argument than it was two years ago. The cost of producing code has dropped. The cost of understanding, reviewing, and owning it didn’t. So the question worth asking shifted from “is this more work?” to “where’s the real cost?” And sometimes, for a small, bounded change, the real cost is just finding out.</p>\n  <p class=\"wp-block-paragraph\">The cost of saying yes has changed. The cost of saying no should change with it.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "本文认为，随着 AI 降低了生成代码的成本，工程团队应从争论是否实施小改动转向使用智能体生成首个补丁作为价格检验，同时仍需认识到代码便宜并不意味着所有权成本也便宜。",
+  "oneSentenceSummary": "本文认为，随着 AI 降低了生成代码的成本，工程团队应从争论是否实施小改动转向使用智能体生成首个补丁作为价格检验，同时仍需认识到代码便宜并不意味着所有权成本也便宜。",
+  "summary": "文章指出工程经济学发生了转变：以前小功能请求最昂贵的部分是编写代码，而现在往往是就要不要编写代码而进行的会议。作者建议使用 AI 智能体快速生成首个补丁作为“价格检验”——一种具体的产出物，能揭示真实的范围和所有权成本。然而，关键的区别在于，代码编写便宜并不意味着所有权也便宜；只有当人类能够自信地审查并承担所有权时，改动才算便宜。工程师的新技能是定价不确定性：知道何时尝试有界的 AI 辅助尝试，何时基于所有权成本说不。文章提供了将范围纪律从前期规划转移到基于证据审查的实际指导。",
+  "mainPoints": [
+    {
+      "point": "关于范围的争论往往比生成代码的第一个版本更昂贵。",
+      "explanation": "在 AI 辅助下，生成候选补丁变得便宜，因此明智的做法是停止猜测，检查实际的 diff，而不是花费数小时进行理论讨论。"
+    },
+    {
+      "point": "首个补丁作为价格检验，而非交付物。",
+      "explanation": "它将抽象的范围争论转化为具体的产出物，能够揭示真实影响——例如是否涉及意外文件或难以测试，从而便于人类做出明智判断。"
+    },
+    {
+      "point": "代码便宜并不意味着所有权便宜。",
+      "explanation": "真正的成本在于理解、审查和承担行为。即使快速生成，影响授权、隐私或数据保留的更改也不便宜，仍应评估其所有权负担。"
+    }
+  ],
+  "keyQuotes": [
+    "编写便宜并不等同于所有权便宜。",
+    "争论往往比补丁本身更昂贵。",
+    "第一个补丁是价格检验，而非产品。",
+    "说“是”的成本已经改变。说“不”的成本也应随之改变。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "工程工作流",
+    "开发者工具",
+    "提示词工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1098,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784306811000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-18 00:46:51"
+}

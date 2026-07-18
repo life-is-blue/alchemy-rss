@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-18 06:40:17 | [返回首页](/README.md)
+**更新时间**: 2026-07-18 09:26:27 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13705)
+- [AI & 大模型](#ai-llm) (13753)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (887)
-- [DevOps](#devops) (652)
+- [DevOps](#devops) (654)
 - [产品与商业](#product-business) (43)
-- [其他](#other) (6245)
+- [其他](#other) (6251)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [AI-Overviews-让谷歌陷入麻烦，GPT-Live-将推理置于后台，如何判断你的模型是否具有操控性](https://www.deeplearning.ai/the-batch/issue-362) - AI 精选
 - [Kimi-K3：智能的新前沿](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488658&idx=1&sn=a4fd7ead31c1b49357b29535c0dea4fe) - AI 精选
 - [NVIDIA-Nemotron-3-Embed-在-RTEB-上排名第一，推动智能体检索发展](https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb) - AI 精选
 - [模型路由看似简单，实则不然。](https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt) - AI 精选
@@ -32,18 +33,17 @@
 - [Claude-的价值观如何随模型和语言变化](https://www.anthropic.com/research/claude-values-models-languages) - AI 精选
 - [训推全开源：HyOCR-1.5-让端到端-OCR-大模型跑得更快、看得更准、功能更全](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498015&idx=1&sn=aa97c2dd942e4c50d2553cf922bc61bd) - AI 精选
 - [使用-Amazon-Bedrock-AgentCore-Gateway-为多租户代理实现代表令牌交换-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/implement-on-behalf-of-token-exchange-for-multi-tenant-agents-with-amazon-bedrock-agentcore-gateway/) - AI 精选
-- [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b) - AI 精选
 - [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018) - AI 精选
+- [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b) - AI 精选
 - [从模型到-Harness：WorkBuddy-如何把-Agent-做成可用产品](https://mp.weixin.qq.com/s?__biz=MzYzODgxODMzNQ==&mid=2247489478&idx=1&sn=d3e025d2b32eb8b5b79519df735ac9d2) - AI 精选
 - [全新-GPT-5.6-系列：Luna、Terra、Sol](https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything) - AI 精选
-- [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work) - AI 精选
 - [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6) - AI 精选
+- [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work) - AI 精选
 - [TS-7：AI-生成式代码的拐点](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492258&idx=1&sn=c60d0392b9dd7bf475d4a4882849f148) - AI 精选
 - [智能体的数据之道](https://huggingface.co/blog/nvidia/open-data-for-agents) - AI 精选
 - [EdgeBench：衡量真实世界环境学习，发现新-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247493765&idx=1&sn=c949ca4147a445fc55a31005784f1d05) - AI 精选
-- [语言模型中的全局工作空间](https://www.anthropic.com/research/global-workspace) - AI 精选
 
-- [查看全部 13705 篇...](/details/tags/ai-llm.md)
+- [查看全部 13753 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 652 篇...](/details/tags/devops.md)
+- [查看全部 654 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6245 篇...](/details/tags/other.md)
+- [查看全部 6251 篇...](/details/tags/other.md)
 
 

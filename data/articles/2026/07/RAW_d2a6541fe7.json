@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d2a6541fe7",
+  "title": "云原生基础设施成为可信自主 AI 的基础",
+  "url": "https://www.infoq.com/news/2026/07/cncf-trustworthy-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-17 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">A new technical analysis<a href=\"https://www.cncf.io/blog/2026/06/17/why-cloud-native-belongs-at-the-heart-of-agentic-ai-lessons-from-building-a-multi-agent-security-platform-on-kubernetes/\"> published</a> by the <a href=\"https://www.cncf.io/\">Cloud Native Computing Foundation (CNCF) </a>argues that the future of agentic AI will be built not on entirely new infrastructure, but on the mature cloud-native ecosystem that already powers modern distributed applications. Drawing on the experience of building a multi-agent cybersecurity platform on <a href=\"https://kubernetes.io/\">Kubernetes</a>, the article contends that technologies such as Kubernetes, <a href=\"https://opentelemetry.io/\">OpenTelemetry</a>, <a href=\"https://dapr.io/\">Dapr</a>, <a href=\"https://spiffe.io/\">SPIFFE</a>, <a href=\"https://falco.org/\">Falco</a>, <a href=\"https://kafka.apache.org/\">Kafka</a>, and <a href=\"https://opengitops.dev/\">GitOps</a> collectively provide many of the capabilities autonomous AI systems require, including orchestration, observability, workload identity, security, resilience, and governance.</p>\n   <p dir=\"ltr\">Rather than treating AI agents as a completely new architectural paradigm, the authors argue that agentic systems are fundamentally distributed systems with additional reasoning capabilities. As enterprises move beyond experimental AI assistants toward autonomous agents capable of invoking tools, collaborating with other agents, and making operational decisions, the operational challenges become remarkably familiar: securing identities, coordinating long-running workflows, managing state, ensuring observability, and recovering from failures. According to CNCF, these are precisely the problems the cloud-native ecosystem has spent the last decade solving.</p>\n   <p dir=\"ltr\">The article centers on the development of a Kubernetes-based multi-agent security platform designed to detect and respond to runtime threats. The platform combines several cloud-native technologies into an integrated architecture where each component performs a specialized role.</p>\n   <p dir=\"ltr\">Rather than replacing traditional security tooling, the AI agents build upon an existing cloud-native foundation, demonstrating how established operational platforms can be extended with intelligent decision-making rather than rewritten from scratch.</p>\n   <p dir=\"ltr\">The authors argue that as multi-agent systems become more sophisticated, infrastructure concerns become increasingly important. Agents may execute for hours or days, coordinate with numerous external services, invoke multiple tools, and collaborate with other agents across distributed environments. Kubernetes provides the resilience and orchestration necessary to support these complex execution patterns while maintaining operational consistency across hybrid and multi-cloud deployments.</p>\n   <p dir=\"ltr\">The article also highlights observability as one of the defining requirements of production AI systems. Unlike traditional applications, AI agents make probabilistic decisions, invoke external tools, and adapt dynamically to changing context, making them significantly harder to monitor and troubleshoot</p>\n   <p dir=\"ltr\">Cloud-native observability technologies such as OpenTelemetry are <a href=\"https://www.infoq.com/presentations/OpenTelemetry-instrumentation/\">becoming essential</a> for tracing not only service interactions but also reasoning paths, tool invocations, execution contexts, and multi-agent collaboration. Rather than simply measuring latency or throughput, observability must evolve to explain why an agent reached a particular decision and how that decision propagated across the broader system.</p>\n   <p dir=\"ltr\">Security is another major theme throughout the article. As AI agents increasingly gain access to sensitive systems, APIs, and business processes, strong workload identity becomes essential. The authors point to projects such as SPIFFE and SPIRE as examples of how cloud-native identity frameworks can provide cryptographically verifiable identities for autonomous workloads.</p>\n   <p dir=\"ltr\">This emphasis aligns with broader industry efforts to establish trusted execution for AI systems. Recent initiatives, including <a href=\"https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/\">Dapr 1.18's Verifiable Execution</a> capabilities and the Linux Foundation's Akrites security initiative, reflect a growing recognition that future AI systems must be able to prove not only what decisions they made, but also who made them, under what authority, and whether those execution histories have remained intact.</p>\n   <p dir=\"ltr\">The article reflects an increasingly visible trend across the cloud-native ecosystem. Technologies created for microservices are rapidly being adapted for AI workloads.</p>\n   <p dir=\"ltr\">The broader message is that successful agentic AI depends less on increasingly capable models than on disciplined systems engineering. As enterprises move beyond chatbots toward autonomous workflows, the limiting factor shifts from model intelligence to operational reliability.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloud Native Infrastructure Emerges as the Foundation for Trustworthy Agentic AI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/cncf-trustworthy-agentic-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784289600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文认为，自主 AI 系统应建立在成熟的云原生基础设施（Kubernetes、OpenTelemetry、Dapr 等）之上，而非全新的平台，并借鉴了构建多智能体安全平台的经验。",
+  "oneSentenceSummary": "本文认为，自主 AI 系统应建立在成熟的云原生基础设施（Kubernetes、OpenTelemetry、Dapr 等）之上，而非全新的平台，并借鉴了构建多智能体安全平台的经验。",
+  "summary": "文章报道了 CNCF 的技术分析，该分析将云原生技术定位为可信自主 AI 的自然基础。文章认为，自主 AI 智能体本质上是具有额外推理能力的分布式系统，因此运营挑战——身份、可观测性、弹性、治理——正是云原生生态系统在过去十年中已经解决的问题。文章重点介绍了一个基于 Kubernetes 的多智能体安全平台，该平台结合了 OpenTelemetry、SPIFFE、Falco、Kafka 和 GitOps，用于检测和响应运行时威胁。文章强调，可观测性必须扩展到追踪推理路径和工具调用，并且像 SPIFFE/SPIRE 这样的安全框架为自主工作负载提供加密可验证的身份。总体信息是，成功的自主 AI 更多取决于严谨的系统工程，而非模型能力，现有云原生工具已经能够支持生产级 AI 智能体。",
+  "mainPoints": [
+    {
+      "point": "自主 AI 系统本质上是具有推理能力的分布式系统，而不是一个全新的范式。",
+      "explanation": "运营挑战——编排、身份、可观测性、弹性——正是云原生基础设施多年来一直在解决的问题。"
+    },
+    {
+      "point": "像 Kubernetes、OpenTelemetry、Dapr 和 SPIFFE 这样的云原生技术已经为可信自主 AI 提供了必要的基础。",
+      "explanation": "文章通过一个基于 Kubernetes 构建的多智能体安全平台来证明这一点，该平台集成了多个 CNCF 项目用于运行时威胁检测。"
+    },
+    {
+      "point": "可观测性必须演进，以追踪推理路径、工具调用和多智能体协作，而不仅仅是延迟或吞吐量。",
+      "explanation": "由于 AI 智能体做出概率性决策并动态适应，解释为何做出某个决策对于故障排除和治理变得至关重要。"
+    },
+    {
+      "point": "工作负载身份和加密证明对于访问敏感系统的 AI 智能体至关重要。",
+      "explanation": "像 SPIFFE/SPIRE 这样的项目提供了可验证的身份，而最近的举措（Dapr 1.18、Akrites）表明行业正在朝着可信执行历史记录迈进。"
+    }
+  ],
+  "keyQuotes": [
+    "作者认为，与其将 AI 智能体视为一种全新的架构范式，不如说自主系统本质上是具有额外推理能力的分布式系统。",
+    "更广泛的信息是，成功的自主 AI 更多取决于严谨的系统工程，而非日益强大的模型能力。"
+  ],
+  "tags": [
+    "云原生",
+    "自主 AI",
+    "Kubernetes",
+    "可观测性",
+    "安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 564,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784289600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-17 20:00:00"
+}
