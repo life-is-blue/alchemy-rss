@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-18 09:26:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-18 12:39:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,17 +584,13 @@
 
 ### [Cloudflare-WAF-保护-WordPress-应用免受两个高危漏洞影响](https://blog.cloudflare.com/wordpress-vulnerabilities/)
 
-2026-07-18 04:18:59 | 标签: WordPress, Cloudflare, WAF, CVE, 漏洞
-
-> 这篇来自 Cloudflare 博客的文章宣布，Cloudflare 的 Web 应用防火墙（WAF）已更新，以保护 WordPress 应用免受两个新披露的高危漏洞的影响。文章可能描述了漏洞的性质、潜在影响，以及 Cloudflare 的托管 WAF 规则如何检测和阻止利用尝试。它还提供了 WordPress 管理员启用这些保护的指南。作为官方公告，本文既是安全公告，也是产品更新。
+2026-07-18 04:18:59
 
 
 
 ### [Manufact-招聘高级基础设施工程师-|-Y-Combinator](https://www.ycombinator.com/companies/manufact/jobs/Dh6PYP5-senior-infrastructure-engineer)
 
-2026-07-17 21:22:33 | 标签: 初创公司, YC, DevOps, 云基础设施, MCP 协议
-
-> 这是一则来自 Manufact 的招聘信息。Manufact 是一家 Y Combinator S25 届初创公司，为 MCP 服务器和 AI 应用提供云基础设施。该公司已筹集 630 万美元种子轮融资，正在招聘首位高级基础设施工程师。该职位涉及构建核心云平台、搭建监控和可观测性技术栈、创建告警系统、确保可扩展性，以及为私有云（AWS、Azure、GCP）构建部署工具。招聘信息详细说明了公司的发展势头（其 mcp-use SDK 在 GitHub 上获得 1 万颗星，下载量超 800 万次，使用量每月翻倍），并概述了面试流程，其中包括一项为平台托管和可观测性层设计架构的练习。
+2026-07-17 21:22:33
 
 
 
