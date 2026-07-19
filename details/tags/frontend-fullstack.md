@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-19 09:32:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-19 13:02:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -506,9 +506,7 @@
 
 ### [工具：SQLite-查询解释器](https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything)
 
-2026-07-19 01:19:10 | 标签: SQLite, 开发工具, 查询计划, Pyodide, WebAssembly
-
-> 本文介绍了 SQLite 查询解释器，这是一个基于浏览器的工具，它针对 SQLite 数据库（通过 Pyodide 在 WebAssembly 中运行 Python）执行 SQL 查询，并用通俗易懂的英文注释对 EXPLAIN QUERY PLAN 和底层 EXPLAIN 字节码进行注解。受 Julia Evans 关于想学习阅读查询计划的评论启发，Simon 使用 Fable 构建了该工具来添加解释层。他坦言自己验证结果的专业知识有限，但将这款工具作为有用的学习辅助工具分享出来。
+2026-07-19 01:19:10
 
 
 
