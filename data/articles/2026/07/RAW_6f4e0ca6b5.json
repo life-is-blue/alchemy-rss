@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6f4e0ca6b5",
+  "title": "Pinecone 推出 Nexus 引擎，将业务上下文编译为 AI 智能体的结构化数据",
+  "url": "https://www.infoq.com/news/2026/07/pinecon-nexus-knowledge-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-18 22:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Now generally available, <a href=\"https://www.pinecone.io/blog/pinecone-nexus-public-preview/\">Pinecone Nexus is a \"knowledge engine\" for AI agents</a> that transforms enterprise data into a structured layer agents can query directly. It enables teams to ingest and curate business context once for all, making it reusable across agents and reducing token costs while improving accuracy.</p>\n   <p>Pinecone argues that while large language models \"are great at world knowledge\" and vector databases make it easy to \"find specific information buried across files\", enterprises depend on a different layer of knowledge: business context. This context usually lives scattered through \"contracts, wikis, HR docs, meeting notes, support tickets, and financial records\".</p>\n   <p>Agents can search through this information, but doing so every time they start a task is highly inefficient and leads to higher token costs as well as slower and potentially incomplete answers.</p>\n   <blockquote>\n    <p>Pinecone Nexus is a knowledge engine that closes that gap. It compiles an enterprise's distributed knowledge into a structured layer agents can query directly, shifting token spend out of the per-query retrieval loop and into a one-time curation step.</p>\n   </blockquote>\n   <p>Pinecone reports that early adopters of Nexus have seen significant performance gains, particularly in financial services and legal research. In the legal domain, Nexus completed all assigned tasks, compared to just 6% for a coding agent and 66% for a RAG system. The RAG system struggled with \"doctrine synthesis, cross-case reasoning, and coverage questions, the shapes that require many sources assembled into one answer\". Token spend was also substantially lower, reduced by approximately ~9–15×, according to Pinecone.</p>\n   <p>Similar improvements were found for enterprise data management, with a 90% accuracy, vs. 65% of a RAG system, and a curation cost of $0.0038 per document.</p>\n   <p>Pinecone Nexus is built around the concept of <em>workspace</em>, the top-level container for all resources, usually associated to a team or business unit. Within a workspace, data is organized into <em>contexts</em>, each representing a specific dataset or knowledge domain. A <em>manifest</em> defines how raw data sources should be ingested and converted into structured knowledge. Through manifests, subject matter expertise is incorporated directly into the system:</p>\n   <blockquote>\n    <p>A subject matter expert can design a blueprint defining the artifact types and relationships that encode their domain knowledge into the curation layer before any query runs. The agent isn't left to figure out the structure of the corpus at query time. It inherits the SME's understanding of it.</p>\n   </blockquote>\n   <p>Data ingestion is handled through connectors that support a range of sources, including local files, Box, and Microsoft OneLake. Support for Google Drive, Slack, GitHub, Notion, Confluence, and S3 is expected soon, according to Pinecone. Once ingested and curated, the data can be queried via KnowQL, which is used by agents, chatbots, and recommendation systems alike.</p>\n   <p>Pinecone Nexus includes a preview playground where users can connect their data sources, design a context, and run a query to validate their approach. It also offers a BYOC (Bring your own Cloud) deployment options for environments where \"data residency, security, and compliance are non-negotiable\".</p>\n   <p>Other existing solutions similar to Pinecon Nexus include <a href=\"https://www.cognite.com/\">Cognite</a>, <a href=\"https://www.relational.ai\">RationalAI</a>, <a href=\"https://developers.llamaindex.ai/python/framework/\">LlamaIndex</a> and others.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinecone Introduces Nexus Engine for Compiling Business Context into Structured Data for AI Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/pinecon-nexus-knowledge-engine/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784383200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinecone Nexus 是一款知识引擎，可将企业业务上下文编译为 AI 智能体可直接查询的结构化数据，从而降低 Token 成本并提高准确性。",
+  "oneSentenceSummary": "Pinecone Nexus 是一款知识引擎，可将企业业务上下文编译为 AI 智能体可直接查询的结构化数据，从而降低 Token 成本并提高准确性。",
+  "summary": "Pinecone Nexus 现已全面上市，它是一款知识引擎，能将分散的企业数据转化为 AI 智能体可直接查询的结构化层。该引擎解决了智能体每次任务都需从合同、维基、工单等来源检索业务上下文导致的低效问题，将 Token 消耗转移到一次性的策管步骤中。金融服务和法律研究领域的早期采用者取得了显著成效：法律任务完成率达到 100%（而编码智能体为 6%，RAG 系统为 66%），Token 成本降低约 9–15 倍，企业数据管理准确率达到 90%（RAG 为 65%），策管成本仅为每份文档 0.0038 美元。该系统围绕工作区、上下文和清单构建，允许领域专家嵌入领域知识。连接器支持本地文件、Box 和 Microsoft OneLake，即将支持 Google Drive、Slack、GitHub 等。查询通过 KnowQL 进行，供智能体、聊天机器人和推荐系统使用。同时提供预览沙盒和 BYOC 部署选项。",
+  "mainPoints": [
+    {
+      "point": "Pinecone Nexus 将分散的业务上下文编译为智能体的结构化层，解决了每次查询检索的低效问题。",
+      "explanation": "智能体无需在每次任务中搜索合同、维基和工单，Nexus 预先策管数据，从而降低 Token 成本并提高速度和准确性。"
+    },
+    {
+      "point": "早期采用者取得了显著改进：法律任务完成率 100%，而编码智能体为 6%，RAG 为 66%。",
+      "explanation": "RAG 系统在需要综合多个来源的任务上表现不佳，而 Nexus 处理了所有分配的任务。Token 成本降低 9–15 倍，数据管理准确率达到 90%，策管成本低廉。"
+    },
+    {
+      "point": "该系统使用工作区、上下文和清单将领域专业知识嵌入策管层。",
+      "explanation": "清单定义了原始数据如何被摄取并转换为结构化知识，允许领域专家在任何查询运行之前设计编码领域关系的蓝图。"
+    },
+    {
+      "point": "查询通过 KnowQL 进行，使智能体、聊天机器人和推荐系统能够访问策管后的知识。",
+      "explanation": "KnowQL 作为所有下游应用的统一查询语言，确保对结构化层的一致访问。"
+    }
+  ],
+  "keyQuotes": [
+    "Pinecone Nexus 是一款知识引擎，填补了这一空白。它将企业分散的知识编译成智能体可直接查询的结构化层，将 Token 消耗从每次查询检索循环转移到一次性的策管步骤中。",
+    "领域专家可以设计一个蓝图，定义工件类型和关系，在查询运行之前将其领域知识编码到策管层中。智能体无需在查询时自行推断语料库的结构。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "知识引擎",
+    "企业 AI",
+    "RAG",
+    "数据策管"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 502,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784383200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-18 22:00:00"
+}

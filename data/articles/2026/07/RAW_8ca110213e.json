@@ -1,0 +1,51 @@
+{
+  "id": "RAW_8ca110213e",
+  "title": "工具：SQLite 查询解释器",
+  "url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
+  "date": "2026-07-19 01:19:10",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">18th July 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label tool\" href=\"https://simonwillison.net/elsewhere/tool/\">Tool</a> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/sqlite-query-explainer\">SQLite Query Explainer</a></span> <span class=\"beat-commit\">— Run SQL queries against a SQLite database in your browser and see exactly how SQLite executes them: the tool runs your query, then annotates every line of both `EXPLAIN QUERY PLAN` and the low-level `EXPLAIN` bytecode output with plain-English descriptions of what the query planner and virtual machine are doing.</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Julia Evan's, in <a href=\"https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/\">Learning a few things about running SQLite</a>:</p>\n      <blockquote>\n       <p>Maybe one day I’ll learn to read a query plan.</p>\n      </blockquote>\n      <p>Big same.... which inspired me to <a href=\"https://github.com/simonw/tools/pull/299#issue-4919268017\">have Fable build</a> this interactive explain tool, which runs SQLite in Python in Pyodide in Web Assembly in the browser and adds a layer of explanation to the results of both EXPLAIN and EXPLAIN QUERY PLAN.</p>\n      <p>Approach with caution, since I don't know enough about SQLite query plans to verify the results myself, but it seems cromulent enough to me.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4764/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 展示了一个基于浏览器的工具，它通过 Pyodide 和 WebAssembly 运行 SQLite，并利用带注释的 EXPLAIN 输出来解释查询执行。",
+  "oneSentenceSummary": "Simon Willison 展示了一个基于浏览器的工具，它通过 Pyodide 和 WebAssembly 运行 SQLite，并利用带注释的 EXPLAIN 输出来解释查询执行。",
+  "summary": "本文介绍了 SQLite 查询解释器，这是一个基于浏览器的工具，它针对 SQLite 数据库（通过 Pyodide 在 WebAssembly 中运行 Python）执行 SQL 查询，并用通俗易懂的英文注释对 EXPLAIN QUERY PLAN 和底层 EXPLAIN 字节码进行注解。受 Julia Evans 关于想学习阅读查询计划的评论启发，Simon 使用 Fable 构建了该工具来添加解释层。他坦言自己验证结果的专业知识有限，但将这款工具作为有用的学习辅助工具分享出来。",
+  "mainPoints": [
+    {
+      "point": "该工具在浏览器中运行 SQLite 查询并解释执行计划。",
+      "explanation": "它使用 Pyodide 在 WebAssembly 中运行 Python SQLite，然后用人类可读的描述对 EXPLAIN 和 EXPLAIN QUERY PLAN 输出进行注释。"
+    },
+    {
+      "point": "它的灵感来自 Julia Evans 希望理解查询计划的愿望。",
+      "explanation": "Simon 在读到 Julia 的推文“也许有一天我会学会阅读查询计划”后构建了这个工具。"
+    },
+    {
+      "point": "作者提醒说，他自己也无法完全验证这些解释。",
+      "explanation": "Simon 承认自己对 SQLite 查询计划的知识有限，建议用户谨慎使用该工具，同时指出其解释似乎合理。"
+    }
+  ],
+  "keyQuotes": [
+    "也许有一天我会学会阅读查询计划。",
+    "请谨慎对待，因为我对 SQLite 查询计划的了解不足以自行验证结果，但对我来说它似乎足够合理。"
+  ],
+  "tags": [
+    "SQLite",
+    "开发工具",
+    "查询计划",
+    "Pyodide",
+    "WebAssembly"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 144,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784395150000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-19 01:19:10"
+}

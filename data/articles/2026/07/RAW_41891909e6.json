@@ -1,0 +1,56 @@
+{
+  "id": "RAW_41891909e6",
+  "title": "最近 AI 智能体随机每周配额重置到底是怎么回事？",
+  "url": "https://minimaxir.com/2026/07/agent-quota-reset/",
+  "date": "2026-07-18 20:00:00",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Subscription-based coding agents such as <a href=\"https://claude.com/product/claude-code\">Claude Code</a> and <a href=\"https://openai.com/codex/\">Codex</a> famously have 5-hour and weekly quotas on their LLM usage. Both of these are understandable: 5-hour quotas help stagger usage so the servers don’t get overloaded, and weekly resets prevent users from dumping an entire month’s worth of usage into a single day which a) also prevents overload and b) stops the user from just unsubscribing after they do so. Both Anthropic and OpenAI have played around with quota limits, from doubling them for a limited time to even removing the 5-hour quota.</p>\n  <p>These model providers can reset the weekly quota for all users, often gifted as compensation in the event of technical glitches on their end. If, for example, you have a $100/mo Codex plan, then a weekly reset is worth $25 to you assuming you fully consume your quota—nowadays with the cost of top-tier LLMs like <a href=\"https://www.anthropic.com/news/redeploying-fable-5\">Fable 5</a> and <a href=\"https://openai.com/index/gpt-5-6/\">GPT-5.6 Sol</a>, that’s easier to do. However, these quota resets are not telegraphed and are generally not announced through company-owned channels: unless you follow specific people such as <a href=\"https://x.com/thsottiaux\">Thibault Sottiaux (Tibo)</a>, the engineering lead for Codex, you just look at your weekly quota and see it’s at 100%. You can even get a quota reset hours before your actual reset and not benefit from it all.</p>\n  <p>Recently, in the wake of the release of Fable 5/GPT-5.6, Anthropic and OpenAI have been doing weekly quota resets for their harnesses far more frequently. In the past two weeks, OpenAI has directly reset the Codex weekly quota <strong>six times</strong>: <a href=\"https://x.com/thsottiaux/status/2075330198887940337\">July 9</a>, <a href=\"https://x.com/thsottiaux/status/2075641131002700120\">July 10</a>, <a href=\"https://x.com/thsottiaux/status/2075820987833274448\">July 10 (again)</a>, <a href=\"https://x.com/thsottiaux/status/2077114635308986427\">July 14</a>, <a href=\"https://x.com/thsottiaux/status/2077607697487188198\">July 15</a>, and <a href=\"https://x.com/thsottiaux/status/2078320950488297917\">July 17</a>. That’s not even getting into the rarely discussed banked reset system for Codex, where OpenAI gave quota resets <a href=\"https://x.com/thsottiaux/status/2076418567143408112\">July 12</a> and <a href=\"https://x.com/thsottiaux/status/2076735790567338203\">July 13</a> which can be manually used at any time but expire within 30 days.</p>\n  <figure>\n   <img loading=\"lazy\" srcset=\"https://minimaxir.com/2026/07/agent-quota-reset/tracker_hu_5110c2c2ef6ae8de.webp 320w, https://minimaxir.com/2026/07/agent-quota-reset/tracker_hu_956c1ebe79fbb1b3.webp 768w, https://minimaxir.com/2026/07/agent-quota-reset/tracker_hu_968f5204c7f8c9c2.webp 1024w, https://minimaxir.com/2026/07/agent-quota-reset/tracker.png 1484w\" src=\"https://minimaxir.com/2026/07/agent-quota-reset/tracker.png\" alt=\"https://codex-resets.com tracks Codex resets.\">\n   <figcaption>\n    <p><a href=\"https://codex-resets.com\">https://codex-resets.com</a> tracks Codex resets.</p>\n   </figcaption>\n  </figure>\n  <p>No one wants to be the weirdo who complains about literally getting free stuff because if the quota resets stop, they will be the one blamed for it. Despite that, I’m going to be the weirdo who complains about literally getting free stuff.</p>\n  <p>As a person who doesn’t like wasting money if I can easily avoid it, I try to use as much of my weekly quota as I can. I was on the $20/mo Codex plan but with the promise of GPT-5.6 on the horizon and with the frequency I kept hitting the 5-hour limits, I upgraded to the $100/mo plan. By using GPT-5.5, I used the 5x prompt capacity to build and test a number of <em>ambitious</em> projects, but that’s a topic for another blog post. I was able to consistently exhaust my weekly quota over the full week, although I had to have a browser window open with my Codex usage to constantly monitor it. I’ve set reminders on my phone for the exact time a 5-hour or weekly quota resets so I can keep running more prompts—as an aside, I wish there was a canonical platform endpoint to programmatically check Codex usage amount and the quota reset times so I could just vibecode an app to manage for me. Before the release of GPT-5.6, I thought “should I deliberately exhaust my quota all on the weaker GPT-5.5 and gamble that OpenAI does a quota reset to greet GPT-5.6?” (I did not exhaust my quota and OpenAI did indeed do a quota reset)</p>\n  <p>GPT-5.6 Sol is indeed a great model that does live up to the hype, and I’ve had to create new projects just to have an excuse to test its limits. The rate of quota usage is about the same as GPT-5.5 even with a prompt running at all times. Despite that, almost every time a reset has happened after the GPT-5.6 release, it has been when my weekly quota has been at 50+%, which makes me feel like I “wasted” $12. There’s also the factor that when the quota resets occur, the weekly reset time is unset, so I have to input <em>some</em> prompt just to trigger it again even if I’m doing something else.</p>\n  <figure>\n   <img loading=\"lazy\" srcset=\"https://minimaxir.com/2026/07/agent-quota-reset/emollick_hu_1b274cdcec736163.webp 320w, https://minimaxir.com/2026/07/agent-quota-reset/emollick_hu_4f0cc74e5e0473b8.webp 768w, https://minimaxir.com/2026/07/agent-quota-reset/emollick_hu_d84c97f7878255dc.webp 1024w, https://minimaxir.com/2026/07/agent-quota-reset/emollick.png 1183w\" src=\"https://minimaxir.com/2026/07/agent-quota-reset/emollick.png\" alt=\"@emollick / X\">\n   <figcaption>\n    <p><a href=\"https://x.com/emollick/status/2077629800508801471\">@emollick / X</a></p>\n   </figcaption>\n  </figure>\n  <p>After the flurry of quota resets over the past two weeks, the intended excitement has instead become annoyance as I now have to urgently create new ideas to spin down the quota before it inevitably resets <em>again</em>. Random rewards are supposed to give a dopamine hit but I end up with a net dopamine deficit from both the sense of wasted quota and having to abruptly change my plans. I admit that this may just be a sign I’m burnt out and need to take a break.</p>\n  <figure>\n   <img loading=\"lazy\" srcset=\"https://minimaxir.com/2026/07/agent-quota-reset/thsottiaux_hu_c369ad62e1edf5ef.webp 320w, https://minimaxir.com/2026/07/agent-quota-reset/thsottiaux_hu_9ae9e27c22d7f4bb.webp 768w, https://minimaxir.com/2026/07/agent-quota-reset/thsottiaux_hu_7de3ccb597e7e8c7.webp 1024w, https://minimaxir.com/2026/07/agent-quota-reset/thsottiaux.png 1194w\" src=\"https://minimaxir.com/2026/07/agent-quota-reset/thsottiaux.png\" alt=\"Tibo polls if there are too many resets, with a few thousand responses.\">\n   <figcaption>\n    <p>Tibo polls <a href=\"https://x.com/thsottiaux/status/2077271889626706300\">if there are too many resets</a>, with a few thousand responses.</p>\n   </figcaption>\n  </figure>\n  <p>Resets of the weekly quota for all users must be ludicrously expensive for these companies, although when you already spend <a href=\"https://www.ft.com/content/e15b0d7e-ff6b-4f16-ba7a-4068feddb828?syn-25a6b1a6=1\">billions of dollars in CapEx per year</a> it’s likely a rounding error. The recent surge of quota resets is likely not a coincidence: July has been an insane month in LLM releases, with not just Fable 5 and GPT-5.6 Sol pushing frontier models even further, but also <a href=\"https://x.ai/news/grok-4-5\">Grok 4.5</a>, <a href=\"https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/\">Muse Spark 1.1</a>, and <a href=\"https://platform.kimi.ai/docs/guide/kimi-k3-quickstart\">Kimi K3</a> offering more options across the cost/utility curve. The cynical take is that weekly quota resets are not intended to be fun serendipity, but instead intended to prevent power users from experimenting with sufficiently competitive competitors once the quota naturally runs out.</p>\n  <p>I don’t expect weekly quota resets to last forever even if competition intensifies, because if quotas keep resetting this frequently they won’t matter at all. It would instead give me an incentive to downgrade from the $100/mo plan back to the $20/mo plan to avoid wasting quota, which I don’t think is OpenAI’s intended goal.</p>\n </body>\n</html>",
+  "aiSummary": "本文探讨了 AI 编程智能体（如 Codex 和 Claude Code）最近每周配额重置激增的现象，认为这种看似大方的做法实际上因时间不可预测而让重度用户感到沮丧，甚至可能适得其反。",
+  "oneSentenceSummary": "本文探讨了 AI 编程智能体（如 Codex 和 Claude Code）最近每周配额重置激增的现象，认为这种看似大方的做法实际上因时间不可预测而让重度用户感到沮丧，甚至可能适得其反。",
+  "summary": "作者审视了 AI 编程智能体最近配额重置激增的现象，尤其是 Codex 在 GPT-5.6 发布后的两周内重置了六次。作为升级到 100 美元/月套餐的重度用户，作者分享了自己不断监控使用量、在配额剩余 50%+ 时遭遇重置而感到「浪费」的体验。文章解释了配额背后的商业逻辑（防止服务器过载和订阅套现），并提出一种讽刺性的解读：重置阻止了用户在配额耗尽后尝试竞争对手。作者总结道，如果重置继续如此频繁，可能会促使用户降级到更便宜的套餐，而这并不符合提供商的利益。",
+  "mainPoints": [
+    {
+      "point": "每周配额重置变得频繁且不可预测，非但没有带来好感，反而引发用户不满。",
+      "explanation": "OpenAI 在 GPT-5.6 发布后两周内将 Codex 配额重置了六次，且往往在用户剩余配额还有 50%+ 时进行，这让用户感觉钱白花了。"
+    },
+    {
+      "point": "配额的商业逻辑是合理的，但重置的时机损害了用户信任。",
+      "explanation": "配额可以防止服务器过载和订阅套现，但未经通知的重置会让用户对「浪费」的配额感到焦虑，并打乱使用计划。"
+    },
+    {
+      "point": "频繁重置可能会适得其反，激励用户降级套餐。",
+      "explanation": "如果重置过于频繁，重度用户可能会理性地从 100 美元/月套餐降级到 20 美元/月套餐，从而减少提供商收入。"
+    },
+    {
+      "point": "讽刺性解读：重置阻止用户在配额耗尽后尝试竞争对手。",
+      "explanation": "当配额耗尽时，用户可能会转向其他产品；重置则消除了这种动机，使用户继续绑定当前提供商。"
+    }
+  ],
+  "keyQuotes": [
+    "没有人愿意成为那个抱怨免费赠送的东西的人，因为一旦配额重置停止，他们就会成为被责怪的对象。",
+    "随机奖励本应触发多巴胺分泌，但我最终却因为配额被浪费的感觉以及不得不突然改变计划而陷入多巴胺净亏损。",
+    "这反而会激励我从 100 美元/月套餐降级回 20 美元/月套餐以避免浪费配额，我认为这不是 OpenAI 的预期目标。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "AI 智能体",
+    "Codex",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 78,
+  "wordCount": 955,
+  "domain": "minimaxir.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784376000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-18 20:00:00"
+}

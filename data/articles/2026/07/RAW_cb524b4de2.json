@@ -1,0 +1,58 @@
+{
+  "id": "RAW_cb524b4de2",
+  "title": "Kimi K3，夯爆了！编程直逼 Fable 5 和 GPT-5.6",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247560197&idx=1&sn=288ead7c398c65319cb8655a6eec4978",
+  "date": "2026-07-18 14:36:00",
+  "author": "小林coding",
+  "siteName": "小林coding",
+  "content": null,
+  "aiSummary": "本文详细介绍了使用 Kimi K3 模型与 Kimi Code 构建 AI 面试官项目的全过程，包括需求、架构、接口、前后端开发及功能演示。",
+  "oneSentenceSummary": "本文详细介绍了使用 Kimi K3 模型与 Kimi Code 构建 AI 面试官项目的全过程，包括需求、架构、接口、前后端开发及功能演示。",
+  "summary": "文章以作者亲手使用 Kimi K3 模型打造「铁面 AI 面试官」为线索，详细记录了从需求梳理、原型设计、架构与接口文档、后端开发及测试、前端实现到功能验证的每一步。全文配有代码片段、架构图和实际演示 gif，展示了如何利用 AI 编程助手快速搭建一个功能完整的 Agent 应用，并提供了可直接参考的开发流程。",
+  "mainPoints": [
+    {
+      "point": "需求梳理与原型设计：通过 Kimi K3 交互式澄清需求并快速迭代原型。",
+      "explanation": "作者先与 K3 交流明确产品交互形态、技术栈和题目来源，得到详细需求文档后，让 K3 快速生成前端原型并根据反馈进行风格迭代。"
+    },
+    {
+      "point": "架构与接口设计：利用 K3 生成详细的架构文档和 API 接口，明确前后端交互。",
+      "explanation": "K3 根据需求输出了完整的技术架构图、流程图以及六个 REST API 和八类 SSE 事件的接口说明，为后续开发提供了清晰蓝图。"
+    },
+    {
+      "point": "后端开发与测试：K3 编写后端代码、自动补全依赖并通过 pytest 测试核心流程。",
+      "explanation": "在后端阶段，K3 按照架构文档编写 FastAPI 服务，自行检查并安装缺失依赖，编写并通过了所有单元测试，确保核心链路可运行。"
+    },
+    {
+      "point": "前端开发与功能验证：K3 按原型实现界面，接入真实接口，实现完整面试流程。",
+      "explanation": "前端由 K3 根据原型和接口文档完成页面布局、状态交互以及 SSE 消息处理，最终实现从创建面试、回答问题、AI 追问到生成报告的完整闭环。"
+    }
+  ],
+  "keyQuotes": [
+    "这是我昨天用 Kimi K3 爆肝一天做出来的 Agent 项目，叫铁面 AI 面试官！",
+    "最让我意外的是，K3 在 Arena.ai 的前端代码竞技场里直接登顶第一，把 Claude Fable 5 和 GPT-5.6 Sol 都甩在了身后。",
+    "所以 K3 发布之后，已经有人开始说：中国 AI，怕是又要迎来一个「DeepSeek 时刻」了。",
+    "这可不是简单的网页 demo 应用，背后涉及的架构和技术栈还是很复杂的",
+    "实际体验之后，还真有点惊喜。不只是页面能正常打开，而是从创建面试、回答问题、AI 追问，到最后生成报告，每个功能都能正常使用，整个过程也没有碰到什么明显的 Bug。"
+  ],
+  "tags": [
+    "AI 编程",
+    "大模型",
+    "Agent 项目",
+    "Kimi K3",
+    "Kimi Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 22,
+  "score": 80,
+  "wordCount": 5490,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ae55d008",
+  "sourceName": "小林coding",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1784356560000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-18 14:36:00"
+}

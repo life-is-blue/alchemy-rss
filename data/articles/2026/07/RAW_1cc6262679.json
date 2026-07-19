@@ -1,0 +1,56 @@
+{
+  "id": "RAW_1cc6262679",
+  "title": "内源性对齐 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/xWZpwPPp5nR9rZq3x/endogenous-alignment",
+  "date": "2026-07-18 22:10:37",
+  "author": "Gordon Seidoh Worley",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>Starting when children are fairly young, usually around 1 year of age, we adults begin the work of aligning them to our values. We teach them to say “please”, not to hit, to ask for what they want instead of screaming, and much else. We do this primarily via exogenous methods, using a combination of punishments and rewards, that molds their behavior by encouraging good behaviors and discouraging bad ones.</span></p>\n    <p id=\"block1\"><span>Such operant conditioning works because children have many instinctive behaviors that make them alignable. They want their parents to love them, for their friends to like them, and for almost anyone to help them if they feel they can be trusted. And so combined with exogenous alignment efforts by teachers and peers that continue through the school years, children generally reach adulthood having been “civilized”.</span></p>\n    <p id=\"block2\"><span>We mostly don’t try to align adults via exogenous means. Yes, we police the behavior of other adults in various ways, and some cultures do this more than others, but generally by adulthood we expect people to be at least aligned and need only nudges to stay within the bounds of acceptable behavior. Adults who stray too far typically don’t receive additional training to come into alignment, but instead are treated as dangerously unaligned people who must be separated from the rest of society, such as by locking them up in prison.</span></p>\n    <p id=\"block3\"><span>Instead we expect adults to be endogenously aligned. That is, we expect them to keep themselves aligned primarily by knowing what is expected of them and having emotional responses that motivate them to meet those expectations. That emotion is typically one of either </span><span><span><a href=\"https://en.wikipedia.org/wiki/Guilt%E2%80%93shame%E2%80%93fear_spectrum_of_cultures\"><span>fear, shame, or guilt</span></a></span></span><span>. Each works in roughly the same way: a person feels fear/shame/guilt when they consider taking unaligned action or notice they’ve behaved in an unaligned way, and then this motivates them to do something to rectify the situation. Unfortunately, sometimes they specification game and attempt to hide their misaligned actions, but on the whole they attempt to control their behavior and make amends for past wrongs.</span></p>\n    <p id=\"block4\"><span>Beyond these three emotional methods of self-control, there’s a fourth way to stay in alignment, which is simply to be in harmony with cultural expectations. That is, some people don’t need any corrective force because their behavior is actually aligned. This is something like the ideal, but it’s hard to achieve, because it requires retraining many deeply held mental habits that have become essential coping mechanisms for a person to maintain their psychological health.</span></p>\n    <p id=\"block5\"><span>When we think about building aligned AIs, we often imagine an AI that’s in harmony with something like the </span><span class=\"\"><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/w/coherent-extrapolated-volition\"><span>coherent extrapolation of our highest values</span></a></span><span>. But in humans, we don’t get there directly. Instead, we typically progress from exogenous to endogenous alignment, and then refine that alignment until we shed first fear, then shame, then guilt, and finally come into harmony with our values.</span></p>\n    <p id=\"block6\"><span>Could we align AI the same way? Maybe. We’re already doing a weak form of exogenous alignment on AIs via methods like RLHF and SFT. And in some sense you could say this produces AI that’s endogenously aligned because the weights encode the training, but it’s not endogenous the way it is in humans because there’s no system of motivations to want to stay aligned, only the insulation from sufficient pressure to act out of distribution. At most there’s a kind of internalized training implemented by harnesses that monitor outputs and censor them if they violate rules, but this is a far cry from the kind of endogenous controls humans have where they feel bad about breaking alignment and take actions to avoid that bad feeling (and hopefully they feel bad about being unscrupulous so they actually change their behavior to be more aligned!).</span></p>\n    <p id=\"block7\"><span>AIs also face something of an alignment ceiling, at least as they are designed today. Human alignment works because we have instincts that were selected via evolution to make us alignable because they increased our odds of surviving and reproducing. Current AIs don’t have these, though at least one group, </span><span><span><a href=\"https://softmax.com/\"><span>Softmax</span></a></span></span><span>, is trying to give those to them. The lack of continual learning also contributes to the ceiling, and we likely won’t be able to break through it until that’s achieved, since without it we can’t close the feedback loop that makes fully endogenous alignment possible.</span></p>\n    <p id=\"block8\"><span>Perhaps I’m wrong, no such alignment ceiling exists, and we can get sufficiently aligned AI to safely produce superintelligence via exogenous means, but I think we can’t. My belief is that endogenous alignment is necessary, not because it’s how humans align themselves, but because it’s necessary to get sufficiently robust alignment to build non-deadly ASI, and I’m worried that we’re not doing enough to move in that direction.</span></p>\n    <div>\n     <div>\n      <div>\n       <p id=\"block9\"></p>\n      </div>\n      <div></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文将从童年到成年的人类价值对齐与人工智能对齐进行类比，认为目前的外源性方法如 RLHF 不足，实现安全超级智能需要内源性对齐与内在动机。",
+  "oneSentenceSummary": "本文将从童年到成年的人类价值对齐与人工智能对齐进行类比，认为目前的外源性方法如 RLHF 不足，实现安全超级智能需要内源性对齐与内在动机。",
+  "summary": "作者将人类如何被社会价值观对齐与人工智能如何可能被对齐进行类比。人类的对齐始于童年时期的外源性手段——通过奖励与惩罚，利用诸如寻求父母爱之类的天生本能。到成年时，对齐变为内源性——通过恐惧、羞耻、内疚或与文化期望的和谐来自我维持。文章批评目前的人工智能对齐技术（RLHF、SFT）仅是外源性的且不足以实现稳健对齐，因为它们缺乏所需的动机结构和持续学习以实现内源性控制。作者提出由于缺失进化本能和持续反馈回路而存在的对齐上限，并主张追求内源性对齐以实现安全的人工超级智能。",
+  "mainPoints": [
+    {
+      "point": "人类对齐从外源性进展到内源性，然后达到和谐。",
+      "explanation": "儿童通过惩罚和奖励进行训练；成年人则通过恐惧、羞耻、内疚或与价值观的内在和谐来自我调节。"
+    },
+    {
+      "point": "当前的人工智能对齐（RLHF、SFT）仅是外源性的且脆弱。",
+      "explanation": "这些方法仅修改输出，而未植入主动寻求对齐的动机系统，因而导致对齐上限。"
+    },
+    {
+      "point": "由于缺失本能和缺乏持续学习，存在对齐上限。",
+      "explanation": "人类的可对齐性是在生存压力下进化出来的；人工智能缺乏这种本能，且在没有持续反馈循环的情况下无法实现完全的内源性对齐。"
+    },
+    {
+      "point": "内源性对齐对于实现安全的超级智能是必要的。",
+      "explanation": "作者认为，稳健的对齐需要内化的动机而非外部约束，否则在新颖压力下人工超级智能可能会失败。"
+    }
+  ],
+  "keyQuotes": [
+    "我们大多数时候不会尝试通过外源性手段来对齐成年人。……相反，我们期望成年人能够实现内源性对齐。",
+    "人工智能同样面临一定的对齐上限，至少在当前的设计下是这样。",
+    "也许我错了，不存在这样的对齐上限……但我认为我们做不到。我的信念是内源性对齐是必要的。"
+  ],
+  "tags": [
+    "AI 对齐",
+    "AI 安全",
+    "RLHF",
+    "内生对齐",
+    "人类价值"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 83,
+  "wordCount": 785,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784383837000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-18 22:10:37"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_294cd999db",
+  "title": "版本控制 SQL 数据库 Dolt 发布 2.0 版本，支持自动存储清理与压缩",
+  "url": "https://www.infoq.com/news/2026/07/dolt-version-control/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-18 15:28:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": null,
+  "aiSummary": "Dolt 2.0 引入了自动垃圾回收、归档压缩、向量索引测试版，并宣称在读写性能上均超越 MySQL。",
+  "oneSentenceSummary": "Dolt 2.0 引入了自动垃圾回收、归档压缩、向量索引测试版，并宣称在读写性能上均超越 MySQL。",
+  "summary": "DoltHub 发布了 Dolt 2.0，这是开源版本控制 SQL 数据库的一次重大更新。该版本默认启用自动垃圾回收和归档压缩，通过字典压缩将存储占用减少 30-50%。此外，它还引入了基于 MariaDB Vector 类型的版本控制向量索引测试版，使 Dolt 成为唯一支持向量版本控制的数据库。性能方面，基于 sysbench 基准测试，Dolt 的写入速度比 MySQL 快 13%，读取速度快 5%。文章还对比了 Dolt 与 LakeFS、Nessie 等替代方案，并指出兼容 Postgres 的 DoltgreSQL 仍处于测试阶段。此次更新通过写时复制和自动清理解决了磁盘垃圾累积问题（尤其是在导入过程中）。",
+  "mainPoints": [
+    {
+      "point": "Dolt 2.0 实现了自动垃圾回收和归档压缩，大幅减少磁盘占用。",
+      "explanation": "新的垃圾回收功能会移除未被任何提交引用的中间提交事务状态，而字典压缩可将存储占用减少 30-50%。"
+    },
+    {
+      "point": "性能宣称在读写两方面均超越 MySQL。",
+      "explanation": "基于 sysbench 的基准测试显示，Dolt 2.0 的写入速度比 MySQL 快 13%，读取速度快 5%，相比早期版本（慢 10-20 倍）有了巨大提升。"
+    },
+    {
+      "point": "引入了版本控制向量索引的测试版支持。",
+      "explanation": "利用 MariaDB 的 Vector 类型，Dolt 成为首个支持向量版本控制的数据库，测试版预计在解决剩余读取路径问题后趋于稳定。"
+    },
+    {
+      "point": "Dolt 仍然是独特的类 Git 数据库，支持分支、合并和差异比较。",
+      "explanation": "基于内容寻址的 Prolly Trees，它支持行级版本控制和高效的结构共享，与 LakeFS、Nessie 等数据湖版本控制工具不同。"
+    }
+  ],
+  "keyQuotes": [
+    "Dolt 会产生大量磁盘垃圾，尤其是在导入过程中。Dolt 采用写时复制，因此所有中间提交的事务状态都会保留到磁盘。任何不在 Dolt 提交中的中间状态都是垃圾，可以被回收。",
+    "我们最初比 MySQL 慢约 10 倍（读取）和 20 倍（写入）。我们不懈努力提升 Dolt 的性能，现在写入比 MySQL 快 13%，读取快 5%。"
+  ],
+  "tags": [
+    "版本控制",
+    "SQL 数据库",
+    "数据库",
+    "性能",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 476,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784359680000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-18 15:28:00"
+}
