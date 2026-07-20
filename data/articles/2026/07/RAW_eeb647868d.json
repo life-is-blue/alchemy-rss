@@ -1,0 +1,52 @@
+{
+  "id": "RAW_eeb647868d",
+  "title": "Claude Code 现在使用 Rust 编写的 Bun",
+  "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+  "date": "2026-07-19 18:03:23",
+  "author": "Simon Willison",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"smallhead\">\n   <div id=\"smallhead-inner\">\n    <h1><a href=\"https://simonwillison.net/\">Simon Willison’s Weblog</a></h1>\n    <a id=\"smallhead-about\" href=\"https://simonwillison.net/about/#subscribe\">Subscribe</a>\n   </div>\n  </div>\n  <!-- #smallhead -->\n  <div id=\"sponsored-banner\" class=\"sponsor-scheme-sky\">\n   <div id=\"sponsored-banner-inner\">\n    <strong class=\"sponsored-label\">Sponsored by:</strong> Atlassian — Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. <a class=\"sponsor-learn-more-label\" href=\"https://fandf.co/4gCMW1I\" rel=\"sponsored noopener\" target=\"_blank\">Learn more</a>\n   </div>\n  </div>\n  <div id=\"wrapper\">\n   <div id=\"primary\">\n    <div class=\"entry entryPage\">\n     <p class=\"mobile-date-eyebrow\">19th July 2026</p>\n     <div class=\"note\">\n      <p>In <a href=\"https://bun.com/blog/bun-in-rust\">Rewriting Bun in Rust</a> Jarred Sumner made the following claim:</p>\n      <blockquote>\n       <p>Claude Code v2.1.181 (released June 17th) and later use the Rust port of Bun. Startup got 10% faster on Linux but otherwise, barely anyone noticed. Boring is good.</p>\n      </blockquote>\n      <p>I decided to have a poke at my own Claude Code installation to see if I could find evidence that it was using Bun written in Rust.</p>\n      <p>I found these two commands convincing:</p>\n      <pre><code>strings ~/.local/bin/claude | grep -m1 'Bun v1'\n</code></pre>\n      <p>For me this outputs <code>Bun v1.4.0 (macOS arm64)</code>. The most recent release of <a href=\"https://github.com/oven-sh/bun/releases\">Bun on GitHub</a> is currently <a href=\"https://github.com/oven-sh/bun/releases/tag/bun-v1.3.14\">v1.3.14</a> from May 12th, so that v1.4.0 version number in Claude supports them shipping a preview of a not-yet-released Bun version.</p>\n      <p>(<strong>Update</strong>: The Rust version <em>has</em> been released as <a href=\"https://bun.com/docs/installation#canary-builds\">Bun canary</a> - running <code>bun upgrade --canary</code> will install <a href=\"https://github.com/oven-sh/bun/releases/tag/canary\">this release</a>.)</p>\n      <pre><code>strings ~/.local/bin/claude | grep -Eo 'src/[[:alnum:]_./-]+\\.rs'\n</code></pre>\n      <p>This outputs a list of <a href=\"https://gist.github.com/simonw/c92fb0f67b114ac26e3b95a09ddccfdc\">563 filenames</a>, starting with these:</p>\n      <pre><code>src/runtime/bake/dev_server/mod.rs\nsrc/runtime/bake/production.rs\nsrc/bundler/bundle_v2.rs\n</code></pre>\n      <p>It looks like Bun in Rust is indeed being run in production across millions of different devices. Like Jarred said, \"Boring is good\".</p>\n     </div>\n     <div class=\"entryFooter\">\n      Posted <a href=\"https://simonwillison.net/2026/Jul/19/\">19th July 2026</a> at 3:54 am\n     </div>\n     <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/502/\" style=\"display: none;\"></p>\n    </div>\n    <div class=\"recent-articles\">\n     <h2>Recent articles</h2>\n     <ul class=\"bullets\">\n      <li><a href=\"https://simonwillison.net/2026/Jul/16/kimi-k3/\">Kimi K3, and what we can still learn from the pelican benchmark</a> - 16th July 2026</li>\n      <li><a href=\"https://simonwillison.net/2026/Jul/9/gpt-5-6/\">The new GPT-5.6 family: Luna, Terra, Sol</a> - 9th July 2026</li>\n      <li><a href=\"https://simonwillison.net/2026/Jul/7/sqlite-utils-4/\">sqlite-utils 4.0, now with database schema migrations</a> - 7th July 2026</li>\n     </ul>\n    </div>\n   </div>\n   <!-- #primary -->\n   <div id=\"secondary\">\n    <div class=\"metabox\">\n     <p class=\"this-is\">This is a <strong>note</strong> by Simon Willison, posted on <a href=\"https://simonwillison.net/2026/Jul/19/\">19th July 2026</a>.</p>\n     <a class=\"item-tag\" href=\"https://simonwillison.net/tags/rust/\" rel=\"tag\"> rust <span>112</span> </a> <a class=\"item-tag\" href=\"https://simonwillison.net/tags/anthropic/\" rel=\"tag\"> anthropic <span>311</span> </a> <a class=\"item-tag\" href=\"https://simonwillison.net/tags/claude-code/\" rel=\"tag\"> claude-code <span>122</span> </a> <a class=\"item-tag\" href=\"https://simonwillison.net/tags/bun/\" rel=\"tag\"> bun <span>7</span> </a> <a class=\"item-tag\" href=\"https://simonwillison.net/tags/jarred-sumner/\" rel=\"tag\"> jarred-sumner <span>3</span> </a>\n     <section style=\"\n    /* .promo */\n    border-radius: 8px;\n    margin: 1.5rem 0;\n    padding: 1rem 1.25rem;\n    /* .variant-a */\n    border: 2px solid #6c3eb9;\n  \">\n      <h3 style=\"\n      /* h3 */\n      margin: 0 0 0.5rem;\n      font-size: 1.25rem;\n    \">Monthly briefing</h3>\n      <p style=\"\n      /* p */\n      margin: 0 0 1rem;\n      line-height: 1.4;\n    \">Sponsor me for <strong>$10/month</strong> and get a curated email digest of the month's most important LLM developments.</p>\n      <p style=\"\n      /* p */\n      margin: 0 0 1rem;\n      line-height: 1.4;\n    \">Pay me to send you less!</p>\n      <a href=\"https://github.com/sponsors/simonw/\" style=\"\n      /* a.button */\n      display: inline-block;\n      padding: 0.5rem 1rem;\n      background: #6c3eb9;\n      color: #fff;\n      text-decoration: none;\n      border-radius: 4px;\n      font-weight: 600;\n    \"> Sponsor &amp; subscribe </a>\n     </section>\n    </div>\n    <!-- .metabox -->\n   </div>\n   <!-- #secondary -->\n  </div>\n  <!-- #wrapper -->\n  <div id=\"ft\">\n   <ul>\n    <li><a href=\"https://simonwillison.net/about/#disclosures\">Disclosures</a></li>\n    <li><a href=\"https://simonwillison.net/about/#about-site\">Colophon</a></li>\n    <li>©</li>\n    <li><a href=\"https://simonwillison.net/2002/\">2002</a></li>\n    <li><a href=\"https://simonwillison.net/2003/\">2003</a></li>\n    <li><a href=\"https://simonwillison.net/2004/\">2004</a></li>\n    <li><a href=\"https://simonwillison.net/2005/\">2005</a></li>\n    <li><a href=\"https://simonwillison.net/2006/\">2006</a></li>\n    <li><a href=\"https://simonwillison.net/2007/\">2007</a></li>\n    <li><a href=\"https://simonwillison.net/2008/\">2008</a></li>\n    <li><a href=\"https://simonwillison.net/2009/\">2009</a></li>\n    <li><a href=\"https://simonwillison.net/2010/\">2010</a></li>\n    <li><a href=\"https://simonwillison.net/2011/\">2011</a></li>\n    <li><a href=\"https://simonwillison.net/2012/\">2012</a></li>\n    <li><a href=\"https://simonwillison.net/2013/\">2013</a></li>\n    <li><a href=\"https://simonwillison.net/2014/\">2014</a></li>\n    <li><a href=\"https://simonwillison.net/2015/\">2015</a></li>\n    <li><a href=\"https://simonwillison.net/2016/\">2016</a></li>\n    <li><a href=\"https://simonwillison.net/2017/\">2017</a></li>\n    <li><a href=\"https://simonwillison.net/2018/\">2018</a></li>\n    <li><a href=\"https://simonwillison.net/2019/\">2019</a></li>\n    <li><a href=\"https://simonwillison.net/2020/\">2020</a></li>\n    <li><a href=\"https://simonwillison.net/2021/\">2021</a></li>\n    <li><a href=\"https://simonwillison.net/2022/\">2022</a></li>\n    <li><a href=\"https://simonwillison.net/2023/\">2023</a></li>\n    <li><a href=\"https://simonwillison.net/2024/\">2024</a></li>\n    <li><a href=\"https://simonwillison.net/2025/\">2025</a></li>\n    <li><a href=\"https://simonwillison.net/2026/\">2026</a></li>\n    <li>\n     <button id=\"theme-toggle\" type=\"button\" aria-label=\"Toggle theme\"><!-- Auto/System icon (default) -->\n      <svg id=\"icon-auto\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n       <path d=\"M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2V4a8 8 0 1 0 0 16z\" />\n      </svg>\n      <!-- Light icon --><!-- Dark icon --></button>\n    </li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 验证了 Claude Code v2.1.181+ 使用基于 Rust 构建的预发布版 Bun v1.4.0，Linux 启动速度提升约 10%。",
+  "oneSentenceSummary": "Simon Willison 验证了 Claude Code v2.1.181+ 使用基于 Rust 构建的预发布版 Bun v1.4.0，Linux 启动速度提升约 10%。",
+  "summary": "Simon Willison 检查了他本地的 Claude Code 二进制文件，发现了表明 Bun v1.4.0 (macOS arm64) 的字符串，该版本比公开发布的 v1.3.14 更新，说明 Claude 使用的是预发布版本。通过 grep 查找 Rust 源文件，发现了数百个类似 src/runtime/bake/dev_server/mod.rs 的路径，确认 Bun 已移植到 Rust 并在数百万设备上运行。正如 Jarred Sumner 所指出的，Rust 移植在 Linux 上带来了约 10% 的启动速度提升，但除此之外对大多数用户来说“平淡无奇”且不易察觉。",
+  "mainPoints": [
+    {
+      "point": "Claude Code 使用的是预发布版 Bun v1.4.0。",
+      "explanation": "Claude 二进制文件内部的字符串显示 Bun v1.4.0 (macOS arm64)，比公开发布的 v1.3.14 更新，表明这是一个内部预览版本。"
+    },
+    {
+      "point": "Bun 的 Rust 源文件嵌入在 Claude 二进制文件中。",
+      "explanation": "通过 grep 查找 .rs 文件，发现了数百个 Rust 源路径（例如 src/runtime/bake/dev_server/mod.rs），证明 Bun 现已用 Rust 编写并投入生产。"
+    },
+    {
+      "point": "Rust 移植带来约 10% 的 Linux 启动速度提升，其余影响微不足道。",
+      "explanation": "Jarred Sumner 指出启动速度得到了提升；除此之外这一变化“平淡无奇”，大多数用户不会注意到。"
+    }
+  ],
+  "keyQuotes": [
+    ": 2.181 (2024 年 6 月 17 日发布) 及之后的版本使用 Bun 的 Rust 移植版本。Linux 启动速度提升了 10%，但除此之外，几乎没有人注意到。平淡无奇是好事。",
+    "Bun v1.4.0 (macOS arm64)",
+    "**更新**：Rust 版本*已经*作为 [Bun canary](https://bun.com/docs/installation#canary-builds) 发布——运行 `bun upgrade --canary` 将安装[此版本](https://github.com/oven-sh/bun/releases/tag/canary)。"
+  ],
+  "tags": [
+    "AI 编程助手",
+    "Claude Code",
+    "Bun",
+    "Rust",
+    "软件工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 79,
+  "wordCount": 346,
+  "domain": "simonwillison.net",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784455403000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-19 18:03:23"
+}

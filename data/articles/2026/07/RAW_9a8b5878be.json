@@ -1,0 +1,57 @@
+{
+  "id": "RAW_9a8b5878be",
+  "title": "Google 的 AlphaEvolve 正式上线，提供进化代码优化即服务",
+  "url": "https://www.infoq.com/news/2026/07/alphaevolve-generally-available/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-19 18:16:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google recently announced the general availability (GA) of AlphaEvolve on the <a href=\"https://console.cloud.google.com/agent-platform/overview\">Gemini Enterprise Agent Platform</a>, turning the DeepMind research project that discovered new matrix multiplication algorithms into a product any Google Cloud customer can run against their own code.</p>\n   <p><a href=\"https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf\">AlphaEvolve</a> is an evolutionary code optimization agent. Starting from a baseline algorithm, it uses Gemini models to generate mutated candidate programs, scores each one against a user-defined evaluation function, and iterates until the search converges on optimized, human-readable code.</p>\n   <p>The deployment model separates concerns in a way that matters for enterprises with code they cannot share. The user's evaluator runs client-side, on their own infrastructure, whether that is a laptop, a private cluster, or a supercomputer. AlphaEvolve's API generates candidate programs; the user's environment scores them locally and submits results back.</p>\n   <p>The workflow follows four steps: define a baseline seed algorithm and problem context, establish a scoring function for the metrics that matter, run the agentic optimization harness, and deploy the resulting algorithm into production.</p>\n   <p>The GA announcement is unusually heavy on customer evidence with specific numbers. <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-is-available-for-everyone/\">Klarna</a> doubled its ML training throughput, exploring roughly 6,000 candidate programs over three weeks while maintaining the bit-exact reproducibility that financial services regulation requires. JetBrains saw IDE code completion latency improve by 15 to 20 percent.</p>\n   <p>FM Logistic shaved 10.4 percent off warehouse picking routes, a baseline that had already been through production optimization. At Kinaxis, forecasting accuracy went up 22 percent while runtime dropped 90 percent. Oak Ridge National Laboratory runs AlphaEvolve on Frontier, its exascale system, where the agent generates optimized GPU kernels for scientific computing workloads.Google's internal usage predates the product. AlphaEvolve has optimized silicon design for next-generation TPUs, reduced write amplification in Google Spanner's LSM-tree compaction by 20 percent, and cut storage footprint by 9 percent, according to the announcement.</p>\n   <p>The JetBrains testimonial contains the sharpest framing of what changes for engineering teams:</p>\n   <blockquote>\n    <p>Engineers still own the benchmark, review, and release decision. The search space is what gets smaller.</p>\n   </blockquote>\n   <p>That division of labor is the practical answer to the question practitioners raised when the research paper landed. On <a href=\"https://news.ycombinator.com/item?id=48050278\">Hacker News</a>, discussing the expanded AlphaEvolve paper in May, one commenter summarized the split reaction after Redis creator Salvatore Sanfilippo used the approach on Redis internals:</p>\n   <blockquote>\n    <p>There have been two reactions: \"Oh it would never work for me\" and \"I have seen months of my life accomplished in an hour\", and I think they're both right.</p>\n   </blockquote>\n   <p>Another commenter on the same thread framed the boundary most production teams will hit:</p>\n   <blockquote>\n    <p>What I'm most curious about is how this translates to messy, real-world codebases without well-defined metrics. Most production software isn't chip design or kernel optimization - it's business logic with unclear success criteria. The infrastructure story is impressive, but I'd love to see how they handle domains where the evaluation function itself is ambiguous.</p>\n   </blockquote>\n   <p>The pattern that determines which reaction applies: AlphaEvolve works where the problem has a measurable, automatable evaluation function. Code with a clear benchmark, a scoring metric, or a verifiable correctness check is optimizable. Code whose quality depends on human judgment is not. Google's customer list reflects this: forecasting pipelines (WMAPE), warehouse routing (distance), GPU kernels (throughput), chip layouts (area and power). Every case has a number to optimize.</p>\n   <p>Practitioners evaluating AlphaEvolve should note what the announcement does not include. All performance figures are vendor-provided or customer testimonials published on Google's own blog, with no independent benchmarks. Pricing is not disclosed in the announcement. One practitioner who studied the Evolve publications pointed out where the unglamorous work sits:</p>\n   <blockquote>\n    <p>All the *Evolve publications have very impressive results but from the time I've spent on the information published I feel that the attention goes to the LLMs and the AI side of things, although the outcomes reported are in almost all cases the result of very well designed environments for both the LLM and the evolutionary algorithm to work well.</p>\n   </blockquote>\n   <p>That environment design is real work: teams must build a scoring harness that captures every property they care about, because the evolutionary search will exploit anything the evaluator fails to measure, such as producing fast code that is subtly wrong in ways the tests do not catch.</p>\n   <p>AlphaEvolve is generally <a href=\"https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/developer-guide/overview\">available</a> on the Gemini Enterprise Agent Platform. In addition, Google also published an AlphaEvolve Skill that integrates the optimization workflow into agentic coding tools. For teams that want to experiment with the same LLM-driven evolutionary approach without the Gemini Enterprise Agent Platform, <a href=\"https://github.com/algorithmicsuperintelligence/openevolve\">OpenEvolve</a> offers an open-source implementation.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google's AlphaEvolve Reaches General Availability with Evolutionary Code Optimization as a Service\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/alphaevolve-generally-available/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784456160000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 宣布 AlphaEvolve 正式可用，这是一项基于 Gemini Enterprise 的进化代码优化服务，并有客户成果和开源替代方案作为支撑。",
+  "oneSentenceSummary": "Google 宣布 AlphaEvolve 正式可用，这是一项基于 Gemini Enterprise 的进化代码优化服务，并有客户成果和开源替代方案作为支撑。",
+  "summary": "Google 已将 AlphaEvolve（一种由 Gemini 模型驱动的进化代码优化代理）在 Gemini Enterprise Agent 平台上正式推出。该服务从用户提供的基线代码生成变异候选程序，使用用户定义的评估函数在本地进行评分，并迭代生成优化的、可读性高的代码，同时将评估器保留在客户端基础架构上以保护专有代码。早期客户报告了切实的收益：Klarna 将其机器学习训练吞吐量提升了一倍，JetBrains 将 IDE 代码补全延迟改善了 15‑20%，FM Logistic 将仓库拣货路线缩短了 10.4%，Kinaxis 将预测准确率提升 22% 并将运行时间削减 90%，橡树岭国家实验室在 Frontier 百亿亿次系统上运行 AlphaEvolve 以优化 GPU 内核。该公告还提到了 Google 内部的使用案例，如 TPU 硅片设计和 Spanner 存储改进。评论指出，AlphaEvolve 在存在清晰、可自动化的评估函数时效果最佳；而对于成功标准模糊的领域（例如典型的业务逻辑）则不太适用，这一点在 Hacker News 的讨论中有所体现。此外，Google 还发布了开源对应版本 OpenEvolve 以及用于智能编码工具的 AlphaEvolve Skill，同时指出已发表的结果依赖于精心设计的环境，且缺乏独立基准测试。",
+  "mainPoints": [
+    {
+      "point": "AlphaEvolve 使用 Gemini 模型进化代码，通过变异基线算法，并用用户定义的客户端评估函数对候选方案进行评分。",
+      "explanation": "搜索循环在 Google 的 API 中运行，但适应度评估保留在用户自己的硬件上，从而保护敏感代码库的数据隐私。"
+    },
+    {
+      "point": "早期采用者报告在多种工作负载下均取得了可衡量的性能提升。",
+      "explanation": "Klarna 将机器学习训练吞吐量提升了一倍；JetBrains 将 IDE 代码补全延迟改善了 15-20%；FM Logistic 将仓库拣货路线缩短了 10.4%；Kinaxis 将预测准确率提升 22%，同时将运行时间削减 90%；橡树岭国家实验室在 Frontier 超级计算机上运行 AlphaEvolve，以优化用于科学计算的 GPU 内核。"
+    },
+    {
+      "point": "只有当存在清晰、可自动化的评估函数时，该技术才有效；模糊的成功标准会限制其适用性。",
+      "explanation": "Hacker News 评论者指出，虽然芯片设计、内核优化和预测有明确的指标，但大多数业务逻辑缺乏这种清晰性，使得进化搜索的可靠性较低。"
+    },
+    {
+      "point": "Google 通过开源替代方案 (OpenEvolve) 和面向智能编码工具的 AlphaEvolve Skill 来补充托管服务，但指出已发表的结果依赖于精心设计的环境，且缺乏独立基准测试。",
+      "explanation": "实践者提醒，令人印象深刻的收益往往源于精心设计的评估框架，而非单纯依靠 AI，这突显了稳健指标设计的必要性。"
+    }
+  ],
+  "keyQuotes": [
+    "“工程师仍然掌握基准制定、审查和发布决策权。只是搜索空间在变小。”",
+    "“有两种反应：‘哦，这对我不可能有用’和‘我看到了自己几个月的工作在一小时内完成’，我认为两者都是对的。”",
+    "“我最感兴趣的是，这如何应用到没有明确定义指标的混乱的真实代码库中。大多数生产软件并非芯片设计或内核优化——而是具有不明确成功标准的业务逻辑。基础设施方面令人印象深刻，但我很想知道他们如何处理评估函数本身模棱两可的领域。”",
+    "“所有 *Evolve 出版物都有非常令人印象深刻的结果，但根据我对已发布信息的了解，我觉得注意力都集中在 LLM 和 AI 方面，尽管所报告的结果几乎都是在精心设计的环境中，让 LLM 和进化算法都能良好工作的结果。”"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "进化算法",
+    "谷歌云",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 746,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784456160000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-19 18:16:00"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "RAW_5e958d2c2e",
+  "title": "AWS 推出 CloudFormation Express 模式，加速基础设施部署",
+  "url": "https://www.infoq.com/news/2026/07/cloudformation-express-mode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-19 13:59:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has recently <a href=\"https://aws.amazon.com/blogs/aws/accelerate-your-infrastructure-deployments-by-up-to-4x-with-aws-cloudformation-express-mode/\">introduced CloudFormation express mode</a>, a deployment option that can reduce infrastructure deployment times by marking stack operations complete once resource configuration is applied, rather than waiting for full resource stabilization.</p>\n   <p>In <a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-express-mode.html\">express mode</a>, CloudFormation marks an operation complete once the create, update, or delete API call succeeds. As a result, resources may still be initializing, not yet ready to serve traffic, or still being deleted.</p>\n   <p>The new option does not require template changes, supports existing CloudFormation features such as nested stacks and change sets, and is intended for faster development workflows where immediate traffic readiness is not required. Enabling Express mode on a parent stack automatically applies Express mode to all nested stacks. <a href=\"https://www.linkedin.com/in/channy/\">Channy Yun</a>, principal developer advocate at AWS, writes:</p>\n   <blockquote>\n    <p>Express mode benefits two primary use cases: iterative development workflows and production scenarios where you are comfortable with eventual stabilization. These use cases include iterating on infrastructure configurations during development, testing individual components of your application, and AI-assisted infrastructure development that benefits from sub-minute feedback loops.</p>\n   </blockquote>\n   <p>Until now, every CloudFormation deployment included mandatory stabilization checks after resources were configured to ensure they were ready to handle traffic before it was shifted. CloudFormation express mode is not the default and is enabled in the AWS CLI using the following option:</p>\n   <pre>\r\n<code class=\"language-bash\">--deployment-config '{\"mode\": \"EXPRESS\"}'</code></pre>\n   <p>According to the announcement, creating an SQS queue with a dead-letter queue takes over a minute in standard mode but less than 10 seconds in express mode. Similarly, deleting a Lambda function with network interface attachments goes from 20–30 minutes to seconds. Yun adds:</p>\n   <blockquote>\n    <p>If you need resources to be fully operational before proceeding with traffic or testing, continue using the default deployment behavior, which performs stabilization checks before completing.</p>\n   </blockquote>\n   <p>The operational friction of waiting for CloudFormation deployments has been a <a href=\"https://www.reddit.com/r/aws/comments/1oomtw6/cloudformation_or_terraform\">long-term complaint from the AWS community</a>, with several developers saying in the past they preferred Terraform because of the experience. On LinkedIn, Yan Cui, AWS Hero and serverless expert, <a href=\"https://www.linkedin.com/posts/theburningmonk_the-new-cloudformation-express-mode-is-useful-activity-7478032105663438849-lJvN?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">argues</a>:</p>\n   <blockquote>\n    <p>The new CloudFormation Express mode is useful for dev environments (...), but I don't agree with the AI framing \"AI-assisted infrastructure development that benefits from sub-minute feedback loops\". A fast feedback loop has always mattered! It's a major reason why so many have preferred Terraform over CloudFormation for years. Time spent waiting for CloudFormation deployment to finish is no different from time spent waiting for an AI agent to finish.</p>\n   </blockquote>\n   <p>Other practitioners, while appreciating the new option, highlight the tradeoffs. Michał Piszczek, CTO at Archdesk, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7478093224071417856/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287478737483925606400%2Curn%3Ali%3Aactivity%3A7478093224071417856%29\">warns</a>:</p>\n   <blockquote>\n    <p>Rollback disabled by default is the detail people will skip past. Fine for AI agents provisioning throwaway stacks, risky for anything a human has to debug at 3 am.</p>\n   </blockquote>\n   <p>In a separate announcement, AWS also <a href=\"https://aws.amazon.com/blogs/devops/ship-infrastructure-faster-with-cloudformation-and-cdk-pre-deployment-validation-on-every-stack-operation/\">expanded CloudFormation's pre-deployment validation</a> to run automatically on every stack create and update operation, helping detect template errors before resources are provisioned. The update also introduces additional validation checks, a new cdk validate command for AWS CDK projects, and an option to disable validation for specific deployments when needed.</p>\n   <p>Both express mode and the new validation are available in all regions where CloudFormation is supported, with no opt-in required and without extra costs.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces CloudFormation Express Mode for Faster Infrastructure Deployments\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/cloudformation-express-mode/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784440740000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出 CloudFormation Express 模式，跳过稳定性检查，将部署速度提升最高 4 倍，同时增强了部署前验证功能。",
+  "oneSentenceSummary": "AWS 推出 CloudFormation Express 模式，跳过稳定性检查，将部署速度提升最高 4 倍，同时增强了部署前验证功能。",
+  "summary": "AWS 推出了 CloudFormation Express 模式，这是一种新的部署选项，一旦资源配置 API 调用成功即标记堆栈操作完成，跳过了传统的稳定性检查。这可以显著缩短部署时间——例如，创建带有死信队列的 SQS 队列从超过一分钟缩短到不到 10 秒。该模式针对迭代开发和 AI 辅助基础设施工作流，这些场景不需要立即就绪的流量。然而，代价包括默认禁用回滚以及资源并非立即可用。文章还涵盖了社区反应：AWS Hero Yan Cui 强调快速反馈循环一直很重要，而 CTO Michał Piszczek 则警告禁用回滚对生产堆栈的风险。此外，AWS 宣布了 CloudFormation 和 CDK 的自动部署前验证功能，可在预置前检测模板错误。这两个功能在所有区域均可免费使用。",
+  "mainPoints": [
+    {
+      "point": "CloudFormation Express 模式通过跳过稳定性检查，在 API 调用成功后即标记操作完成，从而加速部署。",
+      "explanation": "这种新选项可将部署时间缩短最多 4 倍，但资源可能不会立即可用，因此适用于开发和测试场景。"
+    },
+    {
+      "point": "该功能解决了社区长期以来对 CloudFormation 部署速度的抱怨。",
+      "explanation": "AWS Hero Yan Cui 认为快速反馈循环一直很重要，而这一功能终于使 CloudFormation 与 Terraform 等工具达到同等水平。"
+    },
+    {
+      "point": "实践者警告了其中的权衡，特别是默认禁用回滚。",
+      "explanation": "CTO Michał Piszczek 指出，Express 模式对 AI 智能体来说没问题，但对于需要人工调试的生产堆栈则存在风险。"
+    },
+    {
+      "point": "AWS 同时宣布了部署前验证更新，可在预置前自动检测模板错误。",
+      "explanation": "这减少了部署失败，并通过在流程早期发现问题来补充 Express 模式。"
+    }
+  ],
+  "keyQuotes": [
+    "Express 模式主要适用于两种场景：迭代开发工作流，以及你能接受最终稳定性的生产场景。",
+    "新的 CloudFormation Express 模式对开发环境很有用（……），但我不同意 AI 框架下的说法——「AI 辅助基础设施开发受益于亚分钟级反馈循环」。快速反馈循环一直都很重要！",
+    "默认禁用回滚是人们容易忽略的细节。对于 AI 智能体预置的一次性堆栈来说没问题，但对于任何需要人类在凌晨 3 点调试的东西来说都有风险。"
+  ],
+  "tags": [
+    "AWS CloudFormation",
+    "基础设施即代码",
+    "云原生/DevOps",
+    "部署",
+    "开发者工具"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 521,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784440740000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-19 13:59:00"
+}

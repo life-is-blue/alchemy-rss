@@ -1,0 +1,62 @@
+{
+  "id": "RAW_22940935b5",
+  "title": "硬件并没有那么难",
+  "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+  "date": "2026-07-19 18:34:58",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <h1>What I learned selling 2500 MIDI recorders, part 1: Hardware is not so hard</h1>\n  <time class=\"article-date\" datetime=\"2026-07-19\">July 19, 2026</time>\n  <p>A <a href=\"https://news.ycombinator.com/item?id=42082430\">year and a half ago</a>, I launched <a href=\"https://jamcorder.com\">Jamcorder</a>.</p>\n  <figure>\n   <img src=\"https://chipweinberger.com/assets/20260719-hardware-is-not-so-hard/jamcorder-in-situ.png\" alt=\"A Jamcorder connected to a piano\">\n   <figcaption>A Jamcorder, in situ.</figcaption>\n  </figure>\n  <p>It marked the completion of two life goals of mine.</p>\n  <p>First, I finally had the piano recording device I’d always wanted: a fully automated device that captures everything I play, no human-involvement required.</p>\n  <p>And second, after a career in software, I got to build hardware. It was super fun.</p>\n  <p>2500 units have already been sold, and counting! <a href=\"https://jamcorder.myshopify.com/pages/reviews\">People genuinely love it!</a> And it’s able to stand on its own feet as a business. In my eyes, that’s a success.</p>\n  <p>For my first blog post, I want to reflect on the biggest surprise I encountered creating Jamcorder.</p>\n  <figure>\n   <img src=\"https://chipweinberger.com/assets/20260719-hardware-is-not-so-hard/early-prototypes.jpg\" alt=\"A timeline of early Jamcorder prototypes\">\n   <figcaption>A selection of prototypes, from the first prototype to the first pre-production unit.</figcaption>\n  </figure>\n  <p>Coming from a career in software, I expected building hardware to be the hardest part.</p>\n  <p>After all, <em>hardware is hard</em>. That’s the saying, right?</p>\n  <p>Electronics design, plastics, manufacturing, fulfilment, component shortages, etc, etc, etc.</p>\n  <p>I expected these &amp; more to make hardware hard.</p>\n  <p>But, <em>it wasn’t</em>.</p>\n  <figure>\n   <img src=\"https://chipweinberger.com/assets/20260719-hardware-is-not-so-hard/first-500-assembly.jpg\" alt=\"Jamcorders being assembled and packed in a kitchen\">\n   <figcaption>To refine the process, I hand assembled the first 500 units myself. It took 4 days. Unexpectedly, everything went completely smoothly and I made no changes. Yes, really.</figcaption>\n  </figure>\n  <p>I kept waiting for something to get me by surprise. A scrapped production run (my worst nightmare). Or component sourcing issues, perhaps?</p>\n  <p>It never happened. (Though Trump’s tariffs were a close call).</p>\n  <p>The hardest part of building Jamcorder was still, by far, the software -- roughly 200K lines of code spread across the firmware, app, and manufacturing tooling. It took over 3 years and many long nights in a pre-LLM world.</p>\n  <p>When compared to that, the hardware was undeniably smooth sailing.</p>\n  <p>For the record, I don’t think I’m special. It’s just that hardware’s reputation for being difficult is, IMO, overstated.</p>\n  <p>Now, granted, Jamcorder is -- very much intentionally -- a simple device. <em>I get that</em>.</p>\n  <figure>\n   <img src=\"https://chipweinberger.com/assets/20260719-hardware-is-not-so-hard/jamcorder-pcb.jpg\" alt=\"The Jamcorder printed circuit board\">\n   <figcaption>The Jamcorder PCB. 25 unique components. The MIDI connectors are made to order, everything else on the PCB is off-the-shelf.</figcaption>\n  </figure>\n  <p>Assembly is just a single screw, for a single PCB. The injection mold has generous draft, no slides.</p>\n  <p>I cut low battery detection, ambient light detection, the power-button, even USB-C.</p>\n  <p>All these things kept Jamcorder simple.</p>\n  <p>I’m also under no illusion that 2500 units is a lot by most standards.</p>\n  <p>But you know what? <em>The hardware side would have been easy regardless.</em></p>\n  <p>Don’t get me wrong. If Jamcorder was 10x more complex, or 100x more scale, that would be a different story (and a very popular product!).</p>\n  <p>Or if I was trying to compete in the smartwatch market, or the car market, or any number of very established industries with low margins, <em>good luck</em>.</p>\n  <p>But for me the take away still is: “hardware is as hard as you make it”.</p>\n  <p>If you’re thinking about building a hardware product &amp; have a way to protect your margins, don’t let building hardware scare you.</p>\n  <p>It’s not as hard as the saying goes.</p>\n  <p class=\"postscript-label\">POSTSCRIPT</p>\n  <p>I don’t want to end this article without some practical take-aways. So here are my top recommendations for successfully shipping hardware that worked for me at medium scale:</p>\n  <ol>\n   <li>Keep your BOM simple. Avoid single-manufacturer components wherever possible.</li>\n   <li>Avoid complex assembly and calibration.</li>\n   <li>Partner with a Chinese assembly house and suppliers. Alibaba is your friend.</li>\n   <li>Aim for at least 70% gross margin or more.</li>\n   <li>Keep your company lean. Scaling hardware is slower.</li>\n   <li>Have a strong anti-counterfeit strategy. Don’t overlook this.</li>\n   <li>Do final Q/A in-house &amp; hold finished inventory locally.</li>\n   <li>Request samples before every production run.</li>\n   <li>Write a step-by-step manufacturing &amp; assembly guide with pictures.</li>\n   <li>Keep your packaging small. A value dense product makes everything easier.</li>\n  </ol>\n  <figure>\n   <img class=\"portrait\" src=\"https://chipweinberger.com/assets/20260719-hardware-is-not-so-hard/first-100-post-office.jpg\" alt=\"Chip Weinberger carrying the first Jamcorder shipment to the post office\">\n   <figcaption>Me dropping off the first 100 units at the post office. A good day!</figcaption>\n  </figure>\n </body>\n</html>",
+  "aiSummary": "作者回顾了制造并销售 2，500 台 MIDI 录音机的经历，认为硬件其实比传闻中要容易，软件才是真正的挑战，并分享了中等规模硬件出货的十个实用技巧。",
+  "oneSentenceSummary": "作者回顾了制造并销售 2，500 台 MIDI 录音机的经历，认为硬件其实比传闻中要容易，软件才是真正的挑战，并分享了中等规模硬件出货的十个实用技巧。",
+  "summary": "Chip Weinberger 推出了 Jamcorder，这是一款全自动 MIDI 录音机，旨在实现两个个人目标：获得他一直想要的钢琴录音设备，以及在软件职业生涯后体验硬件开发。在售出 2，500 台后，他发现硬件出奇地顺利——手工组装前 500 台仅用了四天，且无需重新设计——而软件（固件、应用程序和制造工具）包含约 200 K 行代码，耗时超过三年。他将硬件的易用性归功于刻意的简单设计（25 个独特组件，现成零件，极少组装），并强调利润率和简洁性比硬件固有的难度更重要。文章最后列出了一系列可操作的建议，例如保持物料清单（BOM）简单，与中国组装厂合作，目标毛利率 ≥70 %，保持精简运营，实施防伪措施，进行内部 QA，每次生产前要求样品，用图片记录组装步骤，以及使用紧凑、高密度的包装。",
+  "mainPoints": [
+    {
+      "point": "硬件组装出奇地顺利，无需重新设计。",
+      "explanation": "作者在四天内手工组装了前 500 台，没有遇到任何需要更改的问题，这与硬件本质上很难的预期相反。"
+    },
+    {
+      "point": "软件开发消耗了大部分的时间和精力。",
+      "explanation": "固件、应用程序和制造工具总计约 200 K 行代码，耗时三年多才完成，这使得软件成为项目中真正的瓶颈。"
+    },
+    {
+      "point": "简单的物料清单和现成组件降低了制造风险。",
+      "explanation": "Jamcorder 仅使用 25 个独特零件，配有定制的 MIDI 连接器；避免单一来源组件并保持设计简单，缓解了采购和组装的难度。"
+    },
+    {
+      "point": "中等规模硬件出货的实用指南侧重于保护利润率和精简运营。",
+      "explanation": "作者提供了十条建议：保持 BOM 简单，避免复杂的组装，与中国供应商合作，目标毛利率 ≥70 %，保持精简，实施防伪策略，进行内部 QA，每次运行前要求样品，用图片记录组装过程，并使用紧凑的包装。"
+    },
+    {
+      "point": "硬件的难度很大程度上取决于设计选择，而非固有的障碍。",
+      "explanation": "如果能保护利润率并保持产品简单，硬件可以很容易；复杂性只有在大幅扩大规模或进入低利润、竞争激烈的市场时才会出现。"
+    }
+  ],
+  "keyQuotes": [
+    "\"硬件并没有那么难。\"",
+    "\"构建 Jamcorder 最难的部分，毫无疑问，仍然是软件——大约 200K 行代码分布在固件、应用程序和制造工具中。\"",
+    "\"如果你正在考虑构建一个硬件产品，并且有办法保护你的利润率，不要让制造硬件吓到你。\"",
+    "\"保持你的 BOM 简单。尽可能避免单一制造商的组件。\"",
+    "\"目标毛利率至少为 70% 或更多。\""
+  ],
+  "tags": [
+    "硬件开发",
+    "制造",
+    "创业",
+    "产品开发",
+    "供应链"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 637,
+  "domain": "chipweinberger.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784457298000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-19 18:34:58"
+}

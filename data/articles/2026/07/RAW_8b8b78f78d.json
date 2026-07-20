@@ -1,0 +1,52 @@
+{
+  "id": "RAW_8b8b78f78d",
+  "title": "模型是容易的部分",
+  "url": "https://every.to/context-window/the-model-is-the-easy-part",
+  "date": "2026-07-19 20:14:38",
+  "author": "Every Staff",
+  "siteName": "Every",
+  "content": null,
+  "aiSummary": "测量有意义的 AI 成果推动业务价值和数据货币化策略。",
+  "oneSentenceSummary": "测量有意义的 AI 成果推动业务价值和数据货币化策略。",
+  "summary": "本文论述公司必须为 AI 采用设定明确、可衡量的目标并收集数据以跟踪进度，将模糊的 AI 意图转化为可操作的目标。它强调专门的小型模型可在细分任务上超越大型 LLM，以 Arkadium 的游戏玩法模型示例，其中一个紧凑的专家模型以低成本实现 90% 胜率。文章还探讨了向前沿 AI 实验室出售匿名化专有数据的新兴市场，指出其收入潜力以及在数据是核心产品时保护 IP 的必要性。总体而言，它将“良好”的衡量视为 AI 采用的下一阶段，强调定义和衡量价值将成为竞争优势的关键。",
+  "mainPoints": [
+    {
+      "point": "定义明确、可衡量的 AI 采用目标。",
+      "explanation": "文章论述公司必须设定具体、业务导向的目标并收集数据以跟踪进度，将模糊的 AI 意图转化为可操作的目标。"
+    },
+    {
+      "point": "专门的小型模型可在细分任务上超越大型 LLM。",
+      "explanation": "通过在域内特定数据上训练紧凑的专家模型，公司以低成本实现高性能，如 Arkadium 的游戏玩法模型所示。"
+    },
+    {
+      "point": "向前沿 AI 实验室出售匿名化数据创造新的收入来源。",
+      "explanation": "拥有独特数据集的公司可以向 AI 实验室出售数据，但当数据是核心产品时必须保护 IP。"
+    }
+  ],
+  "keyQuotes": [
+    "唯一能区分并高效花费的方法是进行测量---但测量什么？",
+    "在全力状态下，它约 90% 的时间击败人类玩家，且其经济优势极为倾斜：",
+    "定义和衡量 \"良好\" 正在成为 AI 采用的下一阶段。"
+  ],
+  "tags": [
+    "AI",
+    "数据货币化",
+    "衡量 AI",
+    "专用模型",
+    "商业策略"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 88,
+  "wordCount": 1734,
+  "domain": "every.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_b42603f1",
+  "sourceName": "Every",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784463278000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-19 20:14:38"
+}
