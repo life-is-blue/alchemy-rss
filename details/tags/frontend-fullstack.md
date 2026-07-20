@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-20 09:58:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-20 13:31:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -722,9 +722,7 @@
 
 ### [我加入了-IndieWeb，这是我的所学-|-Andros-Fenollosa](https://en.andros.dev/blog/0b8e451e/i-joined-the-indieweb-heres-what-i-learned/)
 
-2026-07-19 19:14:38 | 标签: 独立网络, 去中心化网络, microformats2, Webmention, IndieAuth
-
-> 本文介绍 IndieWeb 作为以人为中心、对抗商业网络的替代方案，概述了三大支柱——拥有自己的数据、更好的连接、保持控制——以及十一项指导原则。接着详解了核心技术标准（微格式 2、rel="me"、Webmention、IndieAuth、Micropub、WebSub、Microsub）以及 POSSE、PESOS、反向反馈等发布策略，展示了它们如何实现去中心化社交网络，让个人网站成为你的 API 和身份中心。作者最后回顾了自己的实施体会，指出用户体验得到改善，并重新找回了对网络的喜爱。
+2026-07-19 19:14:38
 
 
 

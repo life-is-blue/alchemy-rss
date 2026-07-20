@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-20 09:58:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-20 13:31:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [AWS-推出-CloudFormation-Express-模式，加速基础设施部署](https://www.infoq.com/news/2026/07/cloudformation-express-mode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-19 13:59:00 | 标签: AWS CloudFormation, 基础设施即代码, 云原生/DevOps, 部署, 开发者工具
-
-> AWS 推出了 CloudFormation Express 模式，这是一种新的部署选项，一旦资源配置 API 调用成功即标记堆栈操作完成，跳过了传统的稳定性检查。这可以显著缩短部署时间——例如，创建带有死信队列的 SQS 队列从超过一分钟缩短到不到 10 秒。该模式针对迭代开发和 AI 辅助基础设施工作流，这些场景不需要立即就绪的流量。然而，代价包括默认禁用回滚以及资源并非立即可用。文章还涵盖了社区反应：AWS Hero Yan Cui 强调快速反馈循环一直很重要，而 CTO Michał Piszczek 则警告禁用回滚对生产堆栈的风险。此外，AWS 宣布了 CloudFormation ...
+2026-07-19 13:59:00
 
 
 
