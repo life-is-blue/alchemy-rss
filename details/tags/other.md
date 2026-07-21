@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-21 19:43:22 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-21 21:16:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -37733,11 +37733,11 @@
 
 
 
-### [大多数公司根本没有为-AI-做好准备](https://baoyu.io/blog/2026-05-03/danielmiessler-status-2050666594188304484)
+### [Demis-Hassabis：AGI-还缺什么，智能体到底行不行，下一个科学突破长什么样](https://baoyu.io/blog/demis-hassabis-agents-agi-and-the-next-big-scientific-breakthrough)
 
-2026-05-03T00:00:00.000Z
+2026-04-30T00:00:00.000Z
 
-> 企业用不好 AI，往往不是因为 AI 不够强，而是因为企业自己说不清目标、流程、责任和成本。
+> Hassabis 用 50/50 的判断拆解 AGI、智能体和 AI for Science 的真实进展。
 
 
 
