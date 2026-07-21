@@ -1,0 +1,56 @@
+{
+  "id": "RAW_2f70f4e2c3",
+  "title": "1 亿美元助力开源：一个由社区共同创造的里程碑",
+  "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+  "date": "2026-07-21 00:00:00",
+  "author": "Stephanie Lincoln",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">We launched GitHub Sponsors in 2019 with a simple belief: the people who build and maintain open source software deserve to be supported for their work. Since then, tens of thousands of sponsors—individuals and organizations alike—have turned that belief into action.</p>\n  <p class=\"wp-block-paragraph\">We’re proud to announce that more than $100 million has been invested in open source maintainers and projects through GitHub Sponsors. This milestone belongs to the developers, organizations, and maintainers who have invested in a more sustainable open source ecosystem, and it signals that the way we value open source is changing.</p>\n  <h2 id=\"h-how-we-got-here\" class=\"wp-block-heading\">How we got here</h2>\n  <p class=\"wp-block-paragraph\">GitHub Sponsors started with individuals. We wanted to make it possible for any developer to directly support the maintainers they depend on. In 2023, we made organization-funded sponsorships generally available and saw organizations like Shopify step up to fund their dependencies at scale. The program expanded to 103 regions, partnered with Patreon, and introduced tools like bulk sponsorships and invoice payments to make it easy to participate.</p>\n  <p class=\"wp-block-paragraph\">The result: a global funding network that supports over 70,000 maintainers and organizations, and includes more than 280,000 sponsors spanning individual developers to Fortune 500 companies.</p>\n  <p class=\"wp-block-paragraph\">The pace is accelerating, too. The first $10 million took nearly two years. The most recent $10 million took just five months.</p>\n  <h2 id=\"h-the-people-behind-the-number\" class=\"wp-block-heading\">The people behind the number</h2>\n  <p class=\"wp-block-paragraph\">While $100 million is a meaningful number, the real measure of impact is what it’s made possible for real people.</p>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\">GitHub Sponsors changed how I think about open source. It gave me a direct, sustainable way to fund the time it takes to build and maintain projects, instead of treating it like side work. That has let me invest more consistently in the projects and build with a much longer-term view. Thanks to GitHub Sponsors, I am able to give back to our community, build a business, and actually make a difference in OSS.</p>\n   <cite>Kelvin Tegelaar, Maintainer, Lime Networks</cite>\n  </blockquote>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\">Shopify invests in open source because our platform, our merchants, and our engineering culture all depend on a healthy open source ecosystem. GitHub Sponsors gives us a direct way to support the maintainers and projects that move the industry forward, from foundational technologies to smaller tools that make developers’ daily work better. For us, sponsorship is both practical and values-driven: it helps sustain the software we rely on while strengthening our connection to the people building it.</p>\n   <cite>Shopify</cite>\n  </blockquote>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\">As strong advocates of open source software, Mercedes-Benz recognizes the incredible contributions made by developers and maintainers worldwide. Through GitHub Sponsors, we aim to support and empower these dedicated individuals and projects that drive innovation, collaboration, and the advancement of open source. By providing financial assistance to these projects, we hope to enable them to dedicate more time and resources to their impactful work, thereby making open source more sustainable and contributing to the overall health and longevity of the projects. We extend our deep gratitude to all the participants and celebrate their dedication. Together, we can continue to foster a vibrant and sustainable open source ecosystem that benefits our teams, developers and users alike.</p>\n   <cite>Dr. Wolfgang Gehring, OSPO Lead &amp; FOSS Ambassador, Mercedes-Benz Tech Innovation GmbH</cite>\n  </blockquote>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\">GitHub Sponsors has meant many things for me and my open source. First, it showed me people’s appreciation and motivated me. Then it showed me I could and should figure out how to do more open source. And then, for the past years, it has also allowed me to sub-sponsor many of the open source tools that power mine, to share that appreciation and support.</p>\n   <cite>Sebastián Ramírez, tiangolo</cite>\n  </blockquote>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\">My projects wouldn’t be what they are today without GitHub Sponsors. Sponsorships allowed me to quit my job and work on them full time. GitHub Sponsors opened my eyes to the opportunities available for passionate people working on projects that people care about.</p>\n   <cite>Caleb Porzio, Livewire &amp; Alpine.js</cite>\n  </blockquote>\n  <p class=\"wp-block-paragraph\">Open source careers shouldn’t depend on geography or circumstance. They should depend on the value of the work. Increasingly, the community is making that possible.</p>\n  <h2 id=\"h-what-we-ve-learned\" class=\"wp-block-heading\">What we’ve learned</h2>\n  <p class=\"wp-block-paragraph\">Building GitHub Sponsors over the past seven years has taught us a few things:</p>\n  <p class=\"wp-block-paragraph\"><strong>Organizations move the needle</strong>. In 2022, nearly 40% of sponsorship funding came from organizations, with each organization-funded sponsorship worth an average of nearly 15x more than the average individual sponsorship. As more companies recognize their dependence on open source, this share continues to grow.</p>\n  <p class=\"wp-block-paragraph\"><strong>Reducing friction matters</strong>. Every time we’ve made it easier to sponsor (e.g. adding invoice payments, expanding regions, enabling bulk sponsorships) we’ve seen a corresponding increase in funding. The demand to support open source is there. We aim to make that easy to do.</p>\n  <h2 id=\"h-what-s-next\" class=\"wp-block-heading\">What’s next</h2>\n  <p class=\"wp-block-paragraph\">This milestone proves that when the community shows up for open source, the impact is real. But the work isn’t done. The open source funding gap is still enormous, many critical projects remain underfunded, and maintainer burnout continues to be one of the biggest risks to the software supply chain. This $100 million is proof that the community can change how open source is sustained, one sponsorship at a time.</p>\n  <p class=\"wp-block-paragraph\">The best way to keep this momentum going? Start sponsoring the projects you depend on or encourage your organization to do the same.</p>\n  <h2 id=\"h-how-you-can-get-involved\" class=\"wp-block-heading\">How you can get involved</h2>\n  <p class=\"wp-block-paragraph\">Behind the scenes, maintainers are working daily to make open source better for all of us. If you or your organization depend on open source — and you almost certainly do — there’s no better time to invest in the people who make it possible.</p>\n  <p class=\"wp-block-paragraph\">Visit the <a href=\"https://github.com/sponsors/explore\">Sponsors Explore page</a> to discover which maintainers you depend on and start supporting them today. If you’re a maintainer and haven’t set up your Sponsors profile yet, visit <a href=\"https://github.com/sponsors\">github.com/sponsors</a> to get started.</p>\n  <p class=\"wp-block-paragraph\">Thank you to every sponsor and every maintainer who has been part of this $100 million journey. This is what happens when a community decides that open source is worth investing in. We can’t wait to see where it goes from here.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub Sponsors 为开源维护者提供的累计资助已突破 1 亿美元，凸显了组织支持在维持 OSS 生态系统中的关键作用。",
+  "oneSentenceSummary": "GitHub Sponsors 为开源维护者提供的累计资助已突破 1 亿美元，凸显了组织支持在维持 OSS 生态系统中的关键作用。",
+  "summary": "这篇来自 GitHub 的官方公告庆祝了 GitHub Sponsors 自 2019 年推出以来达到的 1 亿美元里程碑。文章详细介绍了该平台从个人主导的贡献演变为包含超过 280，000 名赞助者和 70，000 名维护者的全球网络的历程。关键见解表明，组织资助是增长的主要驱动力，公司赞助的平均价值是个人赞助的 15 倍。通过维护者以及 Shopify 和 Mercedes-Benz 等企业合作伙伴的证言，本文阐述了可持续的资金如何将开源从“副业”转变为可行的职业，同时也承认，巨大的资金缺口和维护者倦怠仍对软件供应链构成风险。",
+  "mainPoints": [
+    {
+      "point": "组织资助是生态系统可持续性的主要催化剂。",
+      "explanation": "数据表明，组织在推动发展方面更为有效，其赞助金额平均显著高于个人。"
+    },
+    {
+      "point": "减少运营摩擦可直接增加资金流。",
+      "explanation": "引入发票支付、批量赞助和区域扩张，使得投资速度有了明显的提升。"
+    },
+    {
+      "point": "资金支持实现了从爱好者到专业 OSS 维护者的转变。",
+      "explanation": "证言表明，赞助让维护者能够辞去传统工作，全身心投入到关键项目中，从而改善项目的长期健康度。"
+    },
+    {
+      "point": "尽管达到了 1 亿美元的里程碑，但关键的资金缺口依然存在。",
+      "explanation": "文章警告称，许多核心项目仍面临资金不足的问题，且维护者倦怠仍是全球软件供应链面临的系统性风险。"
+    }
+  ],
+  "keyQuotes": [
+    "第一个 1，000 万美元花了近两年，而最近的 1，000 万美元仅用了五个月。",
+    "组织是推动实质性进展的关键力量。",
+    "开源职业不应取决于地理位置或环境，而应取决于工作的价值。"
+  ],
+  "tags": [
+    "开源",
+    "GitHub Sponsors",
+    "OSS 可持续性",
+    "开发者资助",
+    "软件供应链"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 987,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784563200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-21 00:00:00"
+}

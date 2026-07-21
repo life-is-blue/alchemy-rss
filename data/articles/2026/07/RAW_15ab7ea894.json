@@ -1,0 +1,56 @@
+{
+  "id": "RAW_15ab7ea894",
+  "title": "内容摄取与播客视频事件报告",
+  "url": "https://engineering.atspotify.com/2026/7/content-ingestion-and-podcast-video-incident-report/",
+  "date": "2026-07-21 00:24:48",
+  "author": "Jim Whitehead (Director, Engineering), Ulrik Mikaelsson (Staff Engineer), John Lagomarsino (Product Manager II), and Saunak Jai Chakrabarti (Senior Director, Engineering)",
+  "siteName": "Spotify Engineering",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Over the past two months, podcast creators have experienced a series of reliability issues on Spotify. This report covers the most significant of these, the June 24 publishing delay, in full detail and describes the broader reliability program now underway across our publishing pipeline.</p>\n  <h2>What happened?</h2>\n  <p>When a podcast creator publishes a new episode, the audio and video content goes through a series of processing steps before it becomes available to Spotify users. These steps include transcoding (converting media into the formats our apps need) and content analysis.</p>\n  <p>On June 24, our video transcoding infrastructure reached maximum capacity. This created a backlog that delayed the publication of video podcast episodes for several hours. Creators reported that their episodes were not appearing on Spotify as expected. A queue built up and video podcast episodes that would normally be published within minutes were delayed for hours. Understandably, some creators re-uploaded episodes that had not appeared, which added further load. That is on us, not them: the system should have confirmed their upload was received and queued, and it did not.</p>\n  <figure class=\"figure-image\">\n   <img src=\"https://media.bestblogs.dev/20260720183037_BlogPostGraph.png\" style=\"max-width:100%;\" class=\"blog-image\" alt=\"BlogPostGraph\">\n  </figure>\n  <p>The image above shows the build-up and subsequent emptying of the medium-priority (used for new episodes - shown in blue) and low-priority (used for updates to older episodes - shown in yellow) queues.</p>\n  <p>Four factors converged to create this situation:</p>\n  <ul>\n   <li>\n    <p><b>Our transcoding infrastructure was running with insufficient headroom to handle large spikes of content delivery</b>. During typical periods of content submission our transcoding systems were able to scale and support both low-priority transcoding as well as the high-priority publication of new content. However, there wasn’t sufficient headroom to scale and support large spikes caused by the bulk delivery of new content.</p>\n   </li>\n  </ul>\n  <ul>\n   <li>\n    <p><b>A scheduled batch processing job was running.</b> On occasion, we need to re-process existing episodes to be compatible with changes or additions to Spotify’s playback systems. During the June 24 disruption, a routine batch job processing existing content was consuming additional capacity alongside the regular processing for new episodes. While this job appeared fine earlier in the day, it became problematic when combined with increased content submissions.</p>\n   </li>\n  </ul>\n  <ul>\n   <li>\n    <p><b>Recent improvements increased per-item processing cost.</b> We had recently changed our video transcoding to deliver better quality at lower bitrates. That change increased the time and processing power each episode requires, and we did not fully account for that added demand in our capacity planning.</p>\n   </li>\n  </ul>\n  <ul>\n   <li>\n    <p><b>A software bug was underutilizing available compute resources.</b> Following a recent infrastructure migration to more powerful hardware, a bug in our resource scheduling caused our systems to underuse available processing capacity, reducing throughput by about 10%.</p>\n   </li>\n  </ul>\n  <p>When we identified the issue, we stopped the batch job, deployed a fix for the resource scheduling bug, and added additional processing capacity overnight. By the following morning, all backlogs had cleared and publishing was operating normally. We subsequently added further capacity to provide the headroom that had been missing.</p>\n  <h2>Timeline (UTC)</h2>\n  <ul>\n   <li>\n    <p><b>13:30</b> — Early alerts fire in our internal monitoring. Not immediately recognized as a broader capacity issue.</p>\n   </li>\n   <li>\n    <p><b>15:00</b> — Video podcast delivery spike pushes transcoding close to maximum capacity.</p>\n   </li>\n   <li>\n    <p><b>16:35</b> — Batch processing job stopped to free capacity.</p>\n   </li>\n   <li>\n    <p><b>17:34</b> — Automated alerts confirm queue backlog exceeding thresholds. Incident response begins.</p>\n   </li>\n   <li>\n    <p><b>19:00</b> — Creator reports of episodes not appearing on Spotify.</p>\n   </li>\n   <li>\n    <p><b>20:49</b> — Software fix deployed to improve resource utilization.</p>\n   </li>\n   <li>\n    <p><b>00:14 (Jun 25)</b> — Additional processing cluster brought online.</p>\n   </li>\n   <li>\n    <p><b>01:02</b> — All queues cleared.</p>\n   </li>\n   <li>\n    <p><b>07:30</b> — Full confirmation: all publishing pipelines operating normally.</p>\n   </li>\n  </ul>\n  <p>One thing this timeline makes plain: roughly four hours passed between the first alerts and formal incident response. We want to do better. Engineers investigating the early alerts stopped the batch job at 16:35, but we did not recognize the full scope of the capacity problem until queues breached thresholds at 17:34. The monitoring improvements described below exist to close exactly that gap.</p>\n  <h2>Where do we go from here?</h2>\n  <p>We have already taken several steps to address this specific incident:</p>\n  <ul>\n   <li>\n    <p>Increased our transcoding capacity by approximately 67%, providing significantly more headroom for traffic spikes and batch operations.</p>\n   </li>\n   <li>\n    <p>Fixed the resource scheduling bug that was leaving under-utilized compute capacity.</p>\n   </li>\n   <li>\n    <p>Improved our monitoring to alert earlier when capacity is approaching limits.</p>\n   </li>\n  </ul>\n  <p>Beyond this specific incident, we are investing in broader improvements to the reliability of our podcast publishing pipeline. We've formed a dedicated cross-team effort focused on:</p>\n  <ul>\n   <li>\n    <p>Building better capacity planning that accounts for not just steady-state traffic, but also burst capacity and incident recovery.</p>\n   </li>\n   <li>\n    <p>Improving prioritization across our publishing systems so that real-time content from creators is always processed ahead of background operations.</p>\n   </li>\n   <li>\n    <p>Extending rate limiting and backpressure mechanisms throughout the pipeline to handle unexpected load gracefully.</p>\n   </li>\n   <li>\n    <p>During this incident, many creators learned something was wrong from their audiences before they heard anything from us. We are improving our processes and technical capabilities so creators get notified as soon as possible when things aren’t working.&nbsp;</p>\n   </li>\n  </ul>\n  <p>When a creator hits publish, their audience is waiting, and hours matter. We fell short repeatedly this summer, and we know a report like this only counts if the next incident is handled better than the last. The work above is how we intend to earn that trust back.</p>\n </body>\n</html>",
+  "aiSummary": "Spotify 发布的详细工程事后分析报告，解释了 6 月 24 日播客视频发布延迟是由多个技术故障同时发生导致的。",
+  "oneSentenceSummary": "Spotify 发布的详细工程事后分析报告，解释了 6 月 24 日播客视频发布延迟是由多个技术故障同时发生导致的。",
+  "summary": "本报告透明地分析了 Spotify 播客视频发布流程中发生的重大服务中断事件。该事件发生在 6 月 24 日，由四个不同因素的叠加触发：转码头 room 不足、同时运行的例行批处理任务、近期质量改进带来的单项处理成本增加，以及导致计算资源 10%利用率下降的软件 bug。报告包含精确的 UTC 时间线，承认在事件响应中存在关键的四小时延迟，并概述了一项全面的可靠性计划，包括 67%的容量增加以及改进的监控和优先级机制。",
+  "mainPoints": [
+    {
+      "point": "该事件是四个不同技术因素的融合结果。",
+      "explanation": "转码头 room 不足、计划批处理任务、单项处理成本的增加以及资源调度 bug 共同作用，导致转码基础设施不堪重负。"
+    },
+    {
+      "point": "软件 bug 导致了显著的资源利用不足。",
+      "explanation": "在最近的硬件迁移后，资源调度器中的一个 bug 降低了吞吐量约 10%，从而有效浪费了可用计算容量。"
+    },
+    {
+      "point": "事件响应存在关键时机空白。",
+      "explanation": "从首次内部警报到正式事件响应之间大约相隔了四小时，这凸显了需要更好的基于阈值的监控和更快的升级机制。"
+    },
+    {
+      "point": "Spotify 正在实施多层次的可靠性计划。",
+      "explanation": "补救措施包括将转码容量增加 67%、修复调度 bug，以及改进容量规划以应对流量高峰和事件恢复。"
+    }
+  ],
+  "keyQuotes": [
+    "四个因素融合在一起造成了这种情况。",
+    "系统应该已经确认他们的上传已收到并加入队列，但实际上并没有这样做。",
+    "这样的报告只有在下一次事件处理得比上一次更好时才有意义。"
+  ],
+  "tags": [
+    "事件报告",
+    "基础设施",
+    "容量规划",
+    "DevOps",
+    "可靠性工程"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 854,
+  "domain": "engineering.atspotify.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_52b1b5b1",
+  "sourceName": "Spotify Engineering",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784564688000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-21 00:24:48"
+}

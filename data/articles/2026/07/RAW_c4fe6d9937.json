@@ -1,0 +1,52 @@
+{
+  "id": "RAW_c4fe6d9937",
+  "title": "完美并非过度工程 — var0.xyz",
+  "url": "https://var0.xyz/posts/perfection-is-not-over-engineering.html",
+  "date": "2026-07-20 22:10:30",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <time class=\"published\" datetime=\"2026-07-19\">2026-07-19</time>\n  <p>\"We don't want to do perfect.\" \"We don't want to build the perfect solution.\" I've heard versions of that line more times than I can count, delivered as if \"perfect\" were a dirty word. And I understand the caution — over-engineering burns teams, and people have learned to treat anything that smells like perfection as the same risk.</p>\n  <p>It isn't. The industry has quietly conflated the two.</p>\n  <p>Over-engineering is <em>solving the wrong problem</em>. That's the whole definition. Not \"caring too much.\" Not \"making it too good.\" Solving the wrong problem. Often with good intentions, and almost always with a growing pile of incidental complexity.</p>\n  <h2>There is a perfect solution</h2>\n  <p>I believe a perfect solution exists. With one big caveat: you need a very clear set of requirements. Every constraint on the table. Tighten those enough and something interesting happens, you end up with only one possible solution. And that solution is, somewhat ironically, the perfect one. It's perfect <em>because</em> it's the only one that fits.</p>\n  <p>Start a new project. Every language, every tool, every hosting model available. You pick serverless. Python is a strong choice: no compilation step, upload your files to Lambda, ship. For someone else it's the wrong choice, they don't know Python, or they need to optimize for a different set of requirements, such as performance. Different constraints, different answer. Same problem space, different \"perfect.\"</p>\n  <p>Or you chose Python and you're building a web app. Django or Flask? You can reach similar results with both. They're still different tools with completely different philosophies. Which one wins? It depends. Set clearer requirements, set stricter constraints, and the solution follows. That solution is the perfect one for you, for that case.</p>\n  <h2>Systems are products</h2>\n  <p>When a system is over-engineered, the cause is almost always requirements. And I mean requirements in the product sense, not just the technical one.</p>\n  <p>A library, an API, an internal tool... we like to pretend these are \"purely technical,\" that they somehow sit outside the idea of a product. They don't. You have users. Those users have needs. You need to understand those needs well enough to address them properly.</p>\n  <p>Maybe what they need is a service. Or maybe it's better served by a library than by an HTTP call. Instead of handing them an API, maybe you hand them a package. The shape of the solution only becomes obvious once you treat the system as a product and define the requirements honestly. Then the solution follows.</p>\n  <h2>How you can tell</h2>\n  <p>The clearest tell that something is over-engineered: you start asking <em>why are things built the way they are?</em> and the answers don't hold.</p>\n  <p>Classic example. A team of three people maintains five microservices. The services share data among each other. Is it over-engineered? Figure out which problem they were trying to solve. Most likely you'll conclude they were solving the wrong ones (or several of them at once).</p>\n  <p>Look at what the split actually costs. What used to be a hard reference in a database, a foreign key the engine enforces for you, is now a loose string id sitting in a field. Data integrity is gone. One service can delete a record and the other has no idea; it just keeps a dangling reference and finds out later, the hard way. Why all this ceremony between services when it's all part of the same domain? Why give up those integrity checks?</p>\n  <p>What did you gain in exchange? Usually: not as much as you lost. Independent deploys, sure, but was that a problem you actually had? Three people, one domain. You solved for a scaling and ownership problem that wasn't on the table, and paid for it with distributed inconsistency, operational overhead, and a system that solves multiple problems partially, none of them completely, while introducing a bunch of problems you wouldn't have had otherwise.</p>\n  <p>That's the signature. Not elegance. Not thoroughness. And it's not that these solutions are bad, usually they're the correct answer to the problems that were proposed. The problem is that those were problems you never had.</p>\n  <h2>Gather the right requirements</h2>\n  <p>So the diagnosis is simple, even if the work isn't. Over-engineering is a failure of requirements gathering. Call it product engineering if you want. It's the consequence of collecting the wrong requirements, and then engineering diligently against them.</p>\n  <p>Perfection was never the enemy. Ambiguous requirements were. Get those right, get every constraint on the table, and the perfect solution stops being a fantasy. It becomes the only thing left standing.</p>\n  <hr>\n  <p>I made a video version of this argument, if you'd rather watch it: <a href=\"https://youtu.be/YDFzvQpn4mo\">Perfection is not over-engineering</a>.</p>\n  <p>Thanks for reading.</p>\n </body>\n</html>",
+  "aiSummary": "本文认为完美与过度工程有着本质区别：过度工程解决的是错误的问题，而完美的解决方案源自清晰完整的需求。",
+  "oneSentenceSummary": "本文认为完美与过度工程有着本质区别：过度工程解决的是错误的问题，而完美的解决方案源自清晰完整的需求。",
+  "summary": "作者挑战了一种普遍观念，即追求完美会导致过度工程。相反，他们将过度工程定义为解决错误的问题，常常是投入资源构建那些应对不存在需求的特性或复杂性。他们认为，真正的完美是在需求定义明确时，找到唯一符合所有约束的解决方案。通过选择技术栈或小团队使用微服务这一常见陷阱等例子，文章说明了模糊的需求——而非对质量的追求——导致了过度工程。关键启示是将每个系统视为产品，收集真实的需求，然后让解决方案自然浮现。",
+  "mainPoints": [
+    {
+      "point": "过度工程是解决错误的问题，而非过于关心。",
+      "explanation": "业界常将“完美”与过度工程混为一谈，但真正的问题在于未能识别出正确的待解决问题，从而导致不必要的复杂性。"
+    },
+    {
+      "point": "当需求具体且约束明确时，完美的解决方案是存在的。",
+      "explanation": "在足够严格的需求下，只剩下一个最优方案——这就是“完美”的方案。若没有清晰的约束，任何选择都会变得主观，从而可能引发过度工程。"
+    },
+    {
+      "point": "过度工程是需求收集的失败，而非技艺的失败。",
+      "explanation": "像小团队使用不必要的微服务这样的系统，展示了解决你并不存在的问题（如独立部署）只会制造出比解决掉的更多的问题。解决之道是将系统视为拥有真实用户需求的产品。"
+    }
+  ],
+  "keyQuotes": [
+    "过度工程是*解决错误的问题*。这就是全部的定义。",
+    "完美的解决方案是存在的。但有一个重要前提：你需要一套非常清晰的需求。",
+    "某事物过度工程最明显的迹象是：当你开始问*为什么事情要这样构建？*而答案站不住脚的时候。"
+  ],
+  "tags": [
+    "软件工程",
+    "系统设计",
+    "技术债务",
+    "软件架构",
+    "产品思维"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 772,
+  "domain": "var0.xyz",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784556630000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-20 22:10:30"
+}

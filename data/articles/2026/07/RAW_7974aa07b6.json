@@ -1,0 +1,51 @@
+{
+  "id": "RAW_7974aa07b6",
+  "title": "逆向工程现在变得很便宜了",
+  "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+  "date": "2026-07-21 03:24:05",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">20th July 2026</p>\n   <div class=\"note\">\n    <p>I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes.</p>\n    <p>I think this is an interesting illustration of the impact of the reduced cost of writing code.</p>\n    <p>Prior to agents, it was entirely possible to reverse-engineer home devices. The problem was the ROI - was it really worth all of that effort? More importantly, any experienced programmer knows that undocumented, unstable APIs like that may well change or break in the future. Is that initial work worth the effort if you're committing yourself to a frustrating cycle of maintenance in the future?</p>\n    <p>Coding agents change that equation entirely. The effort to get a simple automation working has dropped, as has the cost of trying and failing to get it to work. Since the code is so cheap, the idea of having to maintain it in the future - or throw it away and start again - carries way less psychological baggage.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "编程智能体大幅降低了逆向工程家用设备的成本和心理门槛，让以往不切实际的自动化项目突然变得值得一试。",
+  "oneSentenceSummary": "编程智能体大幅降低了逆向工程家用设备的成本和心理门槛，让以往不切实际的自动化项目突然变得值得一试。",
+  "summary": "Simon Willison 认为，编程智能体从根本上改变了逆向工程家用设备的经济账。虽然在技术上一直可行，但高昂的投入、不确定的回报以及未来的维护负担，过去让大多数程序员望而却步。编程智能体降低了初始编码成本和试错成本，使其便宜到值得尝试。这也减轻了未来维护的心理包袱，因为丢弃并重新生成廉价的代码远没有那么痛苦。",
+  "mainPoints": [
+    {
+      "point": "逆向工程家用设备的主要障碍是经济上的，而非技术上的。",
+      "explanation": "所需的高昂投入和未来 API 变更的风险，使得投资回报率太低，大多数程序员不愿费心。"
+    },
+    {
+      "point": "编程智能体同时降低了初始开发成本和试错成本。",
+      "explanation": "实现一个简单自动化功能的投入已显著下降，即使面对不稳定、无文档的 API，也鼓励了人们进行实验。"
+    },
+    {
+      "point": "廉价的代码生成消除了维护的心理负担。",
+      "explanation": "当代码的生产成本很低时，维护脆弱的集成或日后丢弃重写的前景，就不再是一个重要的阻碍因素。"
+    }
+  ],
+  "keyQuotes": [
+    "编程智能体彻底改变了这个等式。实现一个简单自动化功能的投入已经下降，尝试并失败的代价也同样降低了。",
+    "既然代码如此廉价，那么未来需要维护它——或者把它扔掉重新开始——这个想法带来的心理包袱就小得多了。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "开发者工具",
+    "氛围编程",
+    "家庭自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 162,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784575445000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-21 03:24:05"
+}
