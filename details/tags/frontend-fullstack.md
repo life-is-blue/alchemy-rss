@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-21 09:31:42 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-21 13:00:15 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -722,17 +722,13 @@
 
 ### [如何使用-Node.js、RBAC-和审计日志构建多租户-SaaS-API](https://www.freecodecamp.org/news/how-to-build-a-multi-tenant-saas-api-with-nodejs-rbac-and-audit-logging/)
 
-2026-07-21 04:46:12 | 标签: 多租户, SaaS, Node.js, RBAC, 审计日志
-
-> 本教程详细介绍了如何从零开始构建一个生产级别的多租户 SaaS API。教程首先通过一个真实的失败案例（缺失租户过滤器）来阐述设计动机，随后涵盖了基于行级隔离的数据库模式设计、嵌入 tenantId 和角色的 JWT Payload 设计、在路由处理程序之前运行的身份验证与 RBAC 中间件、始终根据 JWT 中的 tenantId 进行查询范围限制的租户安全 Repository 层、具有数据库级保护的仅追加（append-only）审计日志服务、使用 Redis 实现的单租户速率限制，以及专门的租户隔离测试文件。作者强调，tenantId 必须来自经过验证的 JWT，而不能来自请求体或 U...
+2026-07-21 04:46:12
 
 
 
 ### [如何在-Node.js-中使用-Azure-Key-Vault-安全地管理密钥](https://www.freecodecamp.org/news/how-to-manage-secrets-securely-with-azure-key-vault-in-node-js/)
 
-2026-07-20 21:50:42 | 标签: Azure Key Vault, Node.js, Express.js, 密钥管理, 云安全
-
-> 本文探讨了通过 .env 文件泄露凭据的系统性风险，并提出了一种使用 Azure Key Vault 的安全架构。文章详细介绍了如何构建一个 Node.js Express API，该 API 在启动时获取密钥，并将其缓存在内存中以降低延迟和成本，同时使用 DefaultAzureCredential 确保同一套代码既能在本地开发环境（通过 Azure CLI）运行，也能在生产环境（通过托管身份）中工作。指南还包括 CLI 设置、项目结构以及安全最佳实践，例如避免输出过于详细的错误信息以防止信息泄露。
+2026-07-20 21:50:42
 
 
 
