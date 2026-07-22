@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-22 09:30:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-22 12:59:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -722,9 +722,7 @@
 
 ### [RSPack-2.0：性能提升、更精简的依赖项与-ESM-核心](https://www.infoq.com/news/2026/07/rspack-2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-21 23:23:00 | 标签: 打包工具, Rust, Rspack, Webpack, ESM
-
-> Rspack 2.0 是由字节跳动开发的基于 Rust 的打包工具，其核心关注三个支柱：性能、精简的依赖项以及现代 ESM 标准。与 1.0 版本相比，构建速度提升了高达 100%，大型项目的 HMR 和生产构建时间也大幅缩短。一个突出的特点是 `@rspack/dev-server` 中依赖项的激进减少，将其安装体积从 15 MB 缩减至 1.4 MB。核心层已转型为纯 ESM，符合现代 Node.js 标准。凭借约 95% 的 Webpack 配置兼容性以及用户量的激增（每周下载量超过 500 万次），Rspack 为 Webpack 生态系统提供了一条低摩擦、高性能的迁移路径。
+2026-07-21 23:23:00
 
 
 

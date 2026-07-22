@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-22 09:30:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-22 12:59:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [GitLab-将碳意识引入-CI/CD，以衡量软件交付的环境成本](https://www.infoq.com/news/2026/07/gitlab-carbon-awareness/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-21 20:00:00 | 标签: CI/CD, Green DevOps, 碳意识, 可持续发展, GitLab
-
-> 这篇 InfoQ 文章报道了 GitLab 在绿色 DevOps 方面的新方法，即在 CI/CD 流水线中引入碳排放测量。通过将执行数据与区域电网碳强度和能源模型相结合，团队可以估算构建、测试和部署过程中的排放量。GitLab 认为，减少排放通常与提高工程效率相关：优化缓存、并行执行、选择性测试和制品复用既能降低成本，也能减少碳排放。文章将此置于更广泛的可持续发展努力背景下，例如 Green Software Foundation 的 SCI 规范和云提供商的仪表板，并指出尽管 CI/CD 层的可观测性仍不成熟，但随着 AI 生成的代码推高了构建频率，其重要性正日益凸显。本文是一篇简明扼要的概...
+2026-07-21 20:00:00
 
 
 
