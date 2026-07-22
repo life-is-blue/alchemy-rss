@@ -1,0 +1,55 @@
+{
+  "id": "RAW_12fc4f5563",
+  "title": "Android Studio Quail 2 重新设计智能体模式，简化 AI 辅助编程",
+  "url": "https://www.infoq.com/news/2026/07/android-studio-quail-2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-22 03:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The latest release of <a href=\"https://android-developers.googleblog.com/2026/06/android-studio-quail-2-stable-features.html\">Android Studio, Quail 2, now stable, expands Gemini/AI Agent Mode inside the IDE</a> by enabling multiple AI conversations in parallel and further advancing Google's push to integrate AI-powered workflows directly into Android Studio. It also enhances debugging and profiling capabilities and makes it easier to explore experimental features.</p>\n   <p>Google says that Agent Mode has been completely redesigned in Quail 2, delivering improved performance, more effective task decomposition, and enhanced tool support. Most notably, the new design allows developers to work across multiple agent conversations simultaneously:</p>\n   <blockquote>\n    <p>Waiting for the Android Studio agent to finish a task before you can ask another question or initiate a separate task in Agent Mode is a bottleneck of the past. You can multi-task seamlessly: kick off a UI refactor in one tab, fix a ProGuard rule in a second, and generate documentation in a third.</p>\n   </blockquote>\n   <p>Android Studio's agent mode supports multiple large language models beyond Gemini. To help developers know which models perform better for specific tasks, Google has created a dedicated benchmark for Android development, <a href=\"https://developer.android.com/bench\">Android Bench</a>. This benchmark evaluates models against a set of common development tasks while incorporating Android best practices across areas such as permissions, navigation, connectivity, and more.</p>\n   <p>Android Studio Quail 2 also improves support for memory leak detection by integrating the popular open-source <a href=\"https://square.github.io/leakcanary/\">LeakCanary</a> into the IDE:</p>\n   <blockquote>\n    <p>This integration transforms your debugging performance by lifting and shifting the heap analysis off your resource-constrained testing phone, and onto your powerful development computer. By running the analysis on your computer, leak tracing is up to five times faster and jank-free, leaving your test app running smoothly on the device.</p>\n   </blockquote>\n   <p>Once a leak is detected, the IDE makes it easy to jump to the exact line of code responsible, fix it with agent mode, or have the model explain the root cause of the retained reference.</p>\n   <p>Another area where agent mode integration can significantly assist developers, according to Google, is in tracking down the root cause of crashes. With App Quality Insights (AQI) now being fully integrated into Android Studio, the IDE can automatically synthesize stack traces, device data, and source code to identify an issue and suggest fixes. When addressing a crash, the agent analyzes the root cause, propose sa step-by-step fix plan, and allows the developer to review it before applying the necessary changes to the project and verifying the fix.</p>\n   <p>Android Studio also stabilizes <a href=\"https://developer.android.com/studio/releases#studio-labs\">Studio Labs</a>, a feature aimed at allowing developers to discover and test experimental AI features without upgrading the IDE.</p>\n   <p>As a final note, <a href=\"https://developer.android.com/studio\">Android Studio Quail 2</a> also includes the latest stability and performance improvements from the IntelliJ platform.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Android Studio Quail 2 Redesigns Agent Mode, Streamlines AI-Assisted Coding\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/android-studio-quail-2/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784660400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Android Studio Quail 2 稳定版重新设计了智能体模式，支持并行 AI 对话，集成 LeakCanary 以更快检测内存泄漏，并稳定了 Studio Labs 以提供实验性 AI 功能。",
+  "oneSentenceSummary": "Android Studio Quail 2 稳定版重新设计了智能体模式，支持并行 AI 对话，集成 LeakCanary 以更快检测内存泄漏，并稳定了 Studio Labs 以提供实验性 AI 功能。",
+  "summary": "文章宣布 Android Studio Quail 2 稳定版发布，重点介绍了智能体模式的完全重新设计，支持多个并行 AI 对话、改进的任务分解和更好的工具支持。它集成了开源库 LeakCanary 用于内存泄漏检测，将堆分析从设备转移到开发电脑，追踪速度提升高达 5 倍。IDE 还完全集成了应用质量洞察，用于自动分析崩溃根本原因并提供修复建议，同时稳定了 Studio Labs，无需升级即可测试实验性 AI 功能。Google 还推出了 Android Bench，用于在 Android 开发任务上对模型进行基准测试。该版本还包括 IntelliJ 平台的稳定性和性能改进。",
+  "mainPoints": [
+    {
+      "point": "智能体模式现在支持多个并行对话，消除了串行瓶颈。",
+      "explanation": "开发者可以在不同标签页中同时启动独立任务，例如重构 UI、修复 ProGuard 规则和生成文档，提高多任务处理效率。"
+    },
+    {
+      "point": "集成 LeakCanary 将内存泄漏检测速度提升高达 5 倍。",
+      "explanation": "堆分析从测试设备卸载到开发电脑上，提供更快、无卡顿的追踪，并可直接导航到有问题的代码行。"
+    },
+    {
+      "point": "应用质量洞察（AQI）实现 AI 驱动的崩溃根本原因分析并提供修复方案。",
+      "explanation": "智能体自动综合堆栈跟踪、设备数据和源代码来识别问题，并提出逐步修复建议，开发者可在应用前进行审查。"
+    },
+    {
+      "point": "Google 推出 Android Bench 用于评估模型在 Android 任务上的性能。",
+      "explanation": "该基准测试涵盖常见开发任务以及权限、导航和连接等领域的最佳实践，帮助开发者选择最适合其工作的 LLM。"
+    }
+  ],
+  "keyQuotes": [
+    "等待 Android Studio 智能体完成一个任务后才能提出另一个问题或在智能体模式中启动另一个任务，这已成为过去的瓶颈。你可以无缝地多任务处理：在一个标签页中启动 UI 重构，在第二个标签页中修复 ProGuard 规则，在第三个标签页中生成文档。",
+    "这一集成将堆分析从资源受限的测试手机转移到强大的开发电脑上，从而彻底改变你的调试性能。"
+  ],
+  "tags": [
+    "AI 编程",
+    "Android Studio",
+    "开发者工具",
+    "智能体模式",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 438,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784660400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-22 03:00:00"
+}
