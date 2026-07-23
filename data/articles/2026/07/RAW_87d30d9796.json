@@ -1,0 +1,51 @@
+{
+  "id": "RAW_87d30d9796",
+  "title": "下一章：重构 GitHub 的漏洞赏金计划",
+  "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+  "date": "2026-07-23 00:00:00",
+  "author": "Catherine Cassell",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">The security research community makes GitHub safer for everyone. That’s the simple idea behind our bug bounty program.</p>\n  <p class=\"wp-block-paragraph\">For more than a decade, researchers from around the world have helped us find and fix vulnerabilities before they could be exploited, and we’ve worked hard to be a program worth their time.</p>\n  <p class=\"wp-block-paragraph\">Today, we’re sharing some meaningful changes to how the program works. These decisions comes after months of reflecting on our program, analyzing what’s happening across the industry, and thinking about researcher experience.</p>\n  <h2 id=\"h-what-s-changed-and-why\" class=\"wp-block-heading\">What’s changed and why</h2>\n  <p class=\"wp-block-paragraph\">The program is facing an increasing queue. We have already made adjustments to accommodate the rise in new researchers and the acceleration in efforts of researchers we’ve been working with. We shared these changes in a recent <a href=\"https://github.blog/security/raising-the-bar-quality-shared-responsibility-and-the-future-of-githubs-bug-bounty-program/\">blog post</a>.</p>\n  <p class=\"wp-block-paragraph\">These changes are about two things: reducing the noise so we can focus on the signal, and building a program that serious researchers find rewarding to participate in.</p>\n  <h2 id=\"h-introducing-a-permanent-vip-program\" class=\"wp-block-heading\">Introducing a permanent VIP program</h2>\n  <p class=\"wp-block-paragraph\">We’re formalizing a permanent private/invite-only VIP program for qualified researchers who consistently deliver high-quality, high-impact work. VIP researchers get higher payouts, faster response times, and a closer working relationship with our security engineering team. The goal is to create a space where the researchers who invest deeply in understanding GitHub can work with us directly and get an experience that reflects the effort they put in.</p>\n  <p class=\"wp-block-paragraph\">VIP program bounty table:</p>\n  <figure class=\"wp-block-table\">\n   <table class=\"has-fixed-layout\">\n    <thead>\n     <tr>\n      <th><strong>Severity</strong>&nbsp;</th>\n      <th><strong>Payout</strong>&nbsp;</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Low&nbsp;</td>\n      <td>$1,000&nbsp;</td>\n     </tr>\n     <tr>\n      <td>Medium&nbsp;</td>\n      <td>$7,500&nbsp;</td>\n     </tr>\n     <tr>\n      <td>High&nbsp;</td>\n      <td>$20,000&nbsp;</td>\n     </tr>\n     <tr>\n      <td>Critical&nbsp;</td>\n      <td>$30,000+&nbsp;</td>\n     </tr>\n    </tbody>\n   </table>\n  </figure>\n  <p class=\"wp-block-paragraph\"><strong>How to qualify<em>:</em></strong> We’ll publish clear criteria on our <a href=\"https://hackerone.com/github?type=team\">public HackerOne page</a>. The path in is built around demonstrated, consistent quality. To qualify, you must accomplish <strong><strong>at lea</strong>st</strong> <strong>one</strong> of the following:</p>\n  <ul class=\"wp-block-list\">\n   <li>One critical finding</li>\n   <li>Two high findings</li>\n   <li>Four medium findings</li>\n   <li>Seven low findings</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">The core shift here is in what we’re incentivizing: you don’t earn more by submitting more. You earn more by submitting better.</p>\n  <h2 id=\"h-a-restructured-public-bounty-table\" class=\"wp-block-heading\">A restructured public bounty table</h2>\n  <p class=\"wp-block-paragraph\">To commit ourselves to the changes in our prioritization above, we also must make changes that enable it. We are adjusting our public program rates to accommodate this shift in focus towards quality of relationships and findings over quantity of reports. We are also updating to static payouts—a single, clear number per severity level, rather than a wide range. Ranges sound flexible, but in practice they create uncertainty for researchers and overhead for our team. Static payouts set clear expectations on both sides, and we retain the ability to award discretionary bonuses for work that goes above and beyond.</p>\n  <p class=\"wp-block-paragraph\">Our new public program bounty table:</p>\n  <figure class=\"wp-block-table\">\n   <table class=\"has-fixed-layout\">\n    <thead>\n     <tr>\n      <th><strong>Severity</strong>&nbsp;</th>\n      <th><strong>Payout</strong>&nbsp;</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Low&nbsp;</td>\n      <td>$250&nbsp;</td>\n     </tr>\n     <tr>\n      <td>Medium&nbsp;</td>\n      <td>$2,000&nbsp;</td>\n     </tr>\n     <tr>\n      <td>High&nbsp;</td>\n      <td>$5,000&nbsp;</td>\n     </tr>\n     <tr>\n      <td>Critical&nbsp;</td>\n      <td>$10,000&nbsp;</td>\n     </tr>\n    </tbody>\n   </table>\n  </figure>\n  <p class=\"wp-block-paragraph\">This adjustment will enable us to provide more tailored attention and higher rewards to our VIP program, while still enabling our public program to be a place to explore and serve as a feeder into the VIP program.</p>\n  <h2 id=\"h-raising-the-signal-requirement\" class=\"wp-block-heading\">Raising the signal requirement</h2>\n  <p class=\"wp-block-paragraph\">To reduce the volume of low-effort and AI-generated reports, we’re implementing a HackerOne signal requirement on the public program. Researchers who don’t yet meet the signal threshold will have a limited number of allowed submissions while they establish a track record.</p>\n  <p class=\"wp-block-paragraph\">This isn’t a wall against new researchers. HackerOne’s platform gives researchers who don’t meet the threshold up to four initial submissions, which is enough runway for a newcomer with a genuine finding to demonstrate their skills. We want to remain accessible to the full security research community; we just need a baseline that keeps the program workable for everyone.</p>\n  <h2 id=\"h-what-stays-the-same\" class=\"wp-block-heading\">What stays the same</h2>\n  <p class=\"wp-block-paragraph\">Our commitment to rewarding real security research isn’t changing. We’ll continue to pay out quickly, communicate clearly, and treat researchers as the partners they are.</p>\n  <p class=\"wp-block-paragraph\">Reports submitted before these changes take effect will be honored under the previous bounty structure. We’re grandfathering the backlog so that only reports made on or after July 27, 2026 will be assessed with the new structure.</p>\n  <h2 id=\"h-looking-ahead\" class=\"wp-block-heading\">Looking ahead</h2>\n  <p class=\"wp-block-paragraph\">This is one part of the broader evolution we’re working through. Alongside the bounty restructuring and the VIP program, we’re investing in faster response times, clearer severity reasoning, and more community engagement. Great working relationships are built on more than a pay table. You can engage directly with us at conferences like DEFCON and you’ll hear from us through ongoing outreach. We look forward to joining the researcher community at security conferences, building relationships, and continuing to explore ways to make our bug bounty program one that rewards the kind of deep, thoughtful research we care about most.</p>\n  <p class=\"wp-block-paragraph\">The security research community is one of GitHub’s greatest assets. These changes are meant to honor them. We want to build a program that attracts the research we value, creates an experience that reflects how seriously we take this work, and upholds the trust researchers place in us every time they submit a report.</p>\n  <p class=\"wp-block-paragraph\">We’ll see you out there, and happy hacking!</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 正在重构其漏洞赏金计划，通过设立新的 VIP 等级和实施更严格的信号要求，优先考虑高影响力的研究，以打击低投入和 AI 生成的报告。",
+  "oneSentenceSummary": "GitHub 正在重构其漏洞赏金计划，通过设立新的 VIP 等级和实施更严格的信号要求，优先考虑高影响力的研究，以打击低投入和 AI 生成的报告。",
+  "summary": "GitHub 宣布其漏洞赏金计划发生战略转变，优先考虑“信号而非噪音”。此次更新引入了一个永久性的、仅限受邀的 VIP 计划，面向经验丰富的研究人员，提供显著更高的奖金和更快的响应时间，以奖励对平台的深度投入。同时，公开赏金表进行了重构，采用较低的固定奖金以设定明确的预期。为了保持计划的可持续性，GitHub 正在通过 HackerOne 实施“信号要求”，以限制来自低投入或 AI 驱动账户的提交，确保计划对真正的新手仍然开放，同时过滤掉噪音。",
+  "mainPoints": [
+    {
+      "point": "通过永久 VIP 计划实现从数量到质量的转变。",
+      "explanation": "持续交付高影响力工作的合格研究人员将获得进入专属层级的权限，关键发现的奖金高达 $30，000+，以此激励深度研究而非单纯追求数量。"
+    },
+    {
+      "point": "将公开奖金简化为固定费率。",
+      "explanation": "GitHub 用每个严重级别单一、明确的数字取代了灵活的奖金范围，以减少研究人员的不确定性并降低安全团队的管理开销。"
+    },
+    {
+      "point": "引入信号要求以缓解 AI 生成的噪音。",
+      "explanation": "为了应对低投入和 AI 生成报告的兴起，公开提交现在需要达到一定的门槛，不过新手仍可获得有限次数的初始尝试机会来证明其技能。"
+    }
+  ],
+  "keyQuotes": [
+    "提交得越多并不意味着赚得越多，提交得越好才能赚得更多。",
+    "减少噪音，以便我们专注于信号"
+  ],
+  "tags": [
+    "漏洞赏金",
+    "网络安全",
+    "GitHub",
+    "安全研究",
+    "AI 噪音"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 795,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784736000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-23 00:00:00"
+}

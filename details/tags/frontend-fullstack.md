@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-23 06:54:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-23 09:49:21 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -717,6 +717,30 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [如何在-React-中使用-shadcn/ui-构建可复用的日期时间选择器](https://www.freecodecamp.org/news/build-a-reusable-date-time-picker-in-react-with-shadcn-ui/)
+
+2026-07-23 00:47:40 | 标签: React, shadcn/ui, UI 组件, JavaScript, 前端开发
+
+> 这篇 freeCodeCamp 教程提供了三个基于 shadcn/ui 构建的日期时间选择器组件的即用型模式。第一个组件将日历弹出框与开始/结束时间字段结合，用于预订流程，将日期和时间作为独立状态存储，在确认时合并。第二个组件使用 react-day-picker 的范围模式，配合双月日历视图和计算的夜间计数，适用于旅行或租赁表单。第三个组件将原生 HTML 时间输入包装在带有时钟图标触发器的 InputGroup 中，使用浏览器的 showPicker() API 以编程方式打开选择器，同时保持原生可访问性。三个组件都可通过 shadcn-space 注册表的单个 CLI 命令安装，文章还解...
+
+
+
+### [GitHub-通过重构客户端架构，将即时导航率从-4%-提升至-22%](https://www.infoq.com/news/2026/07/github-issues-navigation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-07-22 22:09:00 | 标签: 客户端架构, Web 性能, 缓存, Service Workers, 前端工程
+
+> 本文详细介绍了 GitHub 为最小化感知延迟而对 GitHub Issues 进行的架构重新设计。通过将更多工作负载转移到客户端，GitHub 实施了一种本地优先的方法，使用 IndexedDB 进行持久化存储，使用内存缓存处理活跃会话，并使用 Service Worker 拦截请求。该系统采用“后台更新”策略和“外壳优先渲染 + 缓存命中注水”模式，在后台更新数据的同时立即显示内容。这一转变显著降低了延迟，P10 延迟从 600 毫秒降至 70 毫秒，中位延迟从 1200 毫秒降至 700 毫秒。
+
+
+
+### [OpenAI-将崩溃调试视为流行病学研究，修复了存在-18-之久年的-GNU-libunwind-漏洞](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289339&idx=4&sn=f4b4d41b9cb61bfc0848405959a37e26)
+
+2026-07-22 15:24:00 | 标签: C++ 调试, 系统编程, libunwind, 核心转储, 流行病学调试
+
+> 文章讲述 OpenAI 工程师在排查 Rockset（为 ChatGPT 提供搜索和数据插件的 C++ 数据基础设施）反复崩溃时，采用"流行病学调试"——批量分析过去一年的所有核心转储文件，自动提取寄存器并标注崩溃类型，从而区分出两组完全不同的故障特征。一组源于特定 Azure 区域的一台故障物理机器产生的随机 CPU 错误，导致栈对齐错误；移除该机器后此类崩溃消失。另一组则指向 GNU libunwind 的 _Ux86_64_setcontext 函数中存在已有 18 年的竞态条件：在更新栈指针 (%rsp) 前未完成对指令指针 (%rip) 的读取，若信号窗口到达则破坏指令指针，导致函数...
 
 
 
@@ -1596,13 +1620,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1752,13 +1776,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3252,13 +3276,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4962,13 +4986,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

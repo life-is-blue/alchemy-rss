@@ -1,0 +1,56 @@
+{
+  "id": "RAW_78262364da",
+  "title": "Copilot 对比原生 API 访问：你实际在为什么买单？",
+  "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+  "date": "2026-07-23 03:00:00",
+  "author": "Andrea Griffiths",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">I keep seeing this question: “Why would I pay for GitHub Copilot when I can call the same models through an API?”</p>\n  <p class=\"wp-block-paragraph\">It’s a fair question. The answer depends on what work you need to own.</p>\n  <p class=\"wp-block-paragraph\">Are you building a product feature with your own prompts, retrieval, routing, logs, security model, and billing controls? Or are you trying to get from a GitHub Issue to a reviewed pull request with the editor, repository, terminal, and organization policies already connected?</p>\n  <p class=\"wp-block-paragraph\">Cost is part of that equation. Copilot plans include a monthly allocation of GitHub AI Credits. Metered usage is calculated from input, output, and cached tokens at the listed rate for the selected model.</p>\n  <p class=\"wp-block-paragraph\">Raw API access and Copilot address different layers of that system. The right choice follows the work you need to own.</p>\n  <h2 id=\"h-copilot-is-development-tooling-around-the-model\" class=\"wp-block-heading\">Copilot is development tooling around the model</h2>\n  <p class=\"wp-block-paragraph\">Now take a common maintenance task: a developer starts from a GitHub Issue, inspects the repository, changes the affected files, runs the test suite in the terminal, and opens a pull request for review. The model call is one step in that workflow. The surrounding system needs the issue, the diff, repository instructions, permitted commands, and the organization’s policies.</p>\n  <p class=\"wp-block-paragraph\">GitHub Copilot connects those surfaces across the editor, repository, pull request, issue, terminal, and organization controls. That is what the plan covers alongside model access. The billing change makes the split easier to see: code completions and Next Edit Suggestions remain included in paid plans, while AI Credits apply to more resource-intensive chat and agentic work.</p>\n  <p class=\"wp-block-paragraph\">Cost per task therefore depends on more than the listed token rate. Context selection, tool use, retries, and the path from an issue to a reviewed pull request all affect the number of tokens spent and whether the work finishes.</p>\n  <p class=\"wp-block-paragraph\">The same billing model gives buyers visibility. Organization plans “pool” AI Credits across the organization, and admins can set budgets and track usage in the billing dashboard. Adoption stays measurable instead of scattering across individual API keys and untracked scripts.</p>\n  <aside data-color-mode=\"light\" data-dark-theme=\"dark\" data-light-theme=\"light_dimmed\" class=\"wp-block-group post-aside--large p-4 p-md-6 is-style-light-dimmed has-global-padding is-layout-constrained wp-block-group-is-layout-constrained is-style-light-dimmed--1\" style=\"border-top-width:4px\">\n   <p class=\"wp-block-paragraph\">GitHub’s evaluation held the model, benchmark task, context window, reasoning effort, tool selection, and MCP servers constant while comparing Copilot CLI with model-vendor harnesses. Across SWE-bench Verified, SWE-bench Pro, SkillsBench, TerminalBench, and Win-Hill, Copilot reached task-resolution parity while using fewer tokens in most configurations. For TerminalBench 2.0, each agent-model configuration ran at least five times to measure cost and completion variance.</p>\n   <p class=\"wp-block-paragraph\">Read&nbsp;<a href=\"https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/\" target=\"_blank\" rel=\"noreferrer noopener\">the full agentic-harness evaluation across models and tasks</a>.&nbsp;</p>\n  </aside>\n  <h2 id=\"h-raw-api-access-is-for-systems-you-own\" class=\"wp-block-heading\">Raw API access is for systems you own</h2>\n  <p class=\"wp-block-paragraph\">Direct API access is the right foundation when you are building a product feature, an internal agent platform, an evaluation harness, or an automation pipeline. You control the prompts, retrieval, routing, retries, logs, security model, and billing.</p>\n  <p class=\"wp-block-paragraph\">Consider an internal agent that reads a tagged issue, retrieves company documentation, creates a change request in a separate system, and writes a complete audit record. That workflow needs its own data boundaries, event triggers, and approval points. An API gives the team the primitives to build those requirements into the product.</p>\n  <p class=\"wp-block-paragraph\">The engineering work is real. A production system needs to decide which repository files to retrieve, how to preserve instructions, when to retry a failed tool call, where to store traces, and which credentials an agent can use. Those are system design decisions made by developers. A model endpoint does not make them for you.</p>\n  <p class=\"wp-block-paragraph\">Agent SDKs sit between these layers. Handling orchestration, tool use, sessions and streaming, with some tradeoffs: some are tied to a single provider’s API while others work across providers. GitHub ships this layer. The Copilot SDK exposes the same agent’s runtime that powers the Copilot CLI, so you can embed a benchmarked, production tested harness instead of building one. Run it with your Copilot subscription or your own provider key.</p>\n  <h2 id=\"h-byok-keeps-the-workflow-and-changes-the-bill\" class=\"wp-block-heading\">BYOK keeps the workflow and changes the bill</h2>\n  <p class=\"wp-block-paragraph\">Bring Your Own Key for Copilot, currently in public preview, lets developers make supported provider models available in Copilot Chat, Copilot CLI, and VS Code. Supported providers include Anthropic, AWS Bedrock, Google AI Studio, Microsoft Foundry, OpenAI, OpenAI-compatible providers, and xAI.</p>\n  <p class=\"wp-block-paragraph\">BYOK models run through the same harness and the same integrations GitHub builds and maintains. Your provider takes over the token bill. GitHub still develops the tooling.</p>\n  <p class=\"wp-block-paragraph\">Model access is a policy decision either way. Copilot supports more than 20 models, and enterprise and organization admins choose which ones are enabled for their teams, whether GitHub-hosted or connected through BYOK.</p>\n  <p class=\"wp-block-paragraph\">A team with an existing provider contract or committed cloud spend can keep that commercial relationship while developers use Copilot in their normal workflow. Copilot CLI also supports local and external BYOK models, including OpenAI-compatible endpoints, Azure OpenAI, Anthropic, and local Ollama models.</p>\n  <p class=\"wp-block-paragraph\">Check the current documentation on <a href=\"https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-enterprise/use-your-own-api-keys\">using your own API keys with GitHub Copilot (enterprise)</a> and <a href=\"https://docs.github.com/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models\">using your own LLM models in Copilot CLI</a> before making purchasing or architecture decisions because BYOK is still in public preview.</p>\n  <h2 id=\"h-choose-the-layer-you-need\" class=\"wp-block-heading\">Choose the layer you need</h2>\n  <p class=\"wp-block-paragraph\">Choose raw API access when you are building a system that requires custom behavior, integrations, and controls. Choose GitHub Copilot when the work is software development inside the tools and repositories where a team already writes, reviews, secures, and ships code.</p>\n  <p class=\"wp-block-paragraph\">Shipping software is the work around the code: issues, pull requests, reviews, checks, actions, and security. GitHub is where teams do that work. Copilot helps them move through it faster.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "本文对比了 GitHub Copilot 与原生 API 访问，解释了 Copilot 提供的是围绕模型的集成开发工具，而原生 API 则用于构建自定义系统，并介绍了 BYOK 作为将工具与模型计费分离的一种选项。",
+  "oneSentenceSummary": "本文对比了 GitHub Copilot 与原生 API 访问，解释了 Copilot 提供的是围绕模型的集成开发工具，而原生 API 则用于构建自定义系统，并介绍了 BYOK 作为将工具与模型计费分离的一种选项。",
+  "summary": "GitHub Copilot 与原生 API 访问满足不同的需求。Copilot 将模型与编辑器、代码库、终端、Issue、Pull Request 以及组织策略集成在一起，使其成为一个完整的开发助手。原生 API 访问则为构建自定义智能体平台或产品功能提供了对提示词、检索、路由、日志和安全性的完全控制权。本文还涵盖了成本影响、面向组织的 AI Credits 汇总，以及允许团队使用自有模型提供商模型来使用 Copilot 工具的 BYOK 公开预览。来自 SWE-bench 和其他基准测试的关键评估数据表明，在大多数配置下，Copilot 的智能体框架能以更少的 Token 实现任务解决能力的对等。核心建议是根据你需要掌控的工作内容进行选择：原生 API 用于自定义系统，Copilot 用于现有工具和工作流中的软件开发。",
+  "mainPoints": [
+    {
+      "point": "Copilot 是围绕模型的开发工具，而不仅仅是模型访问。",
+      "explanation": "它集成了编辑器、代码库、终端、Issue、PR 以及组织策略，提供了一个超越简单 API 调用的完整开发助手。"
+    },
+    {
+      "point": "原生 API 访问用于构建需要完全控制权的自定义系统。",
+      "explanation": "在构建产品功能、内部智能体平台或自动化流水线时，直接使用 API 可以控制提示词、检索、路由、重试、日志和安全性。"
+    },
+    {
+      "point": "BYOK 允许使用自有模型提供商来配合 Copilot 的工具。",
+      "explanation": "BYOK 目前处于公开预览阶段，它将工具与模型计费分离，使团队能够在保留现有供应商合同的同时，让开发人员使用 Copilot 的框架和集成功能。"
+    },
+    {
+      "point": "单项任务的成本不仅取决于 Token 费率。",
+      "explanation": "上下文选择、工具使用、重试以及从 Issue 到已评审 PR 的完整工作流，都会影响总 Token 消耗量以及任务能否高效完成。"
+    }
+  ],
+  "keyQuotes": [
+    "原生 API 访问与 Copilot 解决的是该系统的不同层级。正确的选择取决于你需要掌控的工作内容。",
+    "Copilot 是围绕模型的开发工具。",
+    "当你正在构建一个需要自定义行为、集成和控制的系统时，请选择原生 API 访问。当工作内容是在团队已经编写、评审、安全保障并交付代码的工具和代码库中进行软件开发时，请选择 GitHub Copilot。"
+  ],
+  "tags": [
+    "GitHub Copilot",
+    "LLM API",
+    "开发者工具",
+    "AI 辅助开发",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 892,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784746800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-23 03:00:00"
+}
