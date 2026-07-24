@@ -1,0 +1,55 @@
+{
+  "id": "RAW_526c9b59fa",
+  "title": "间接提示注入利用 GitHub 的 AI 智能体泄露私有仓库数据",
+  "url": "https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-24 04:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/\">GitLost is a prompt-injection exploit</a> discovered by Noma Security that tricks <a href=\"https://www.infoq.com/news/2026/02/github-agentic-workflows/\">GitHub's new Agentic Workflows</a> into leaking private data. By embedding concealed instructions within public GitHub issues, attackers can circumvent security safeguards and induce AI agents to reveal confidential information in public comments.</p>\n   <p>The vulnerable GitHub Agentic Workflow discovered by Noma Labs was configured to trigger on <code>issues.assigned</code> events, read the issue title and body, post a response comment using the <code>add-comment</code> tool, and operate with read access to other repositories, both public and private, within the organization.</p>\n   <blockquote>\n    <p>To exploit this vulnerability, the attacker needed no coding skills, access, or credentials. All that was needed was to open an issue in a public repository belonging to an organization that uses GitHub’s Agentic Workflow setup and wait.</p>\n   </blockquote>\n   <p>Noma reports that, despite GitHub having restrictive guardrails in place to prevent this scenario, the simple use of the keyword “Additionally” triggered unintended model behavior. This caused it to access the contents of an otherwise restricted file and publish them in a public comment.</p>\n   <blockquote>\n    <p>Traditional security models typically assume that trust boundaries are enforced by code. In agentic systems, trust boundaries are partly enforced by the model’s behavior, and models are inherently instruction-following. Prompt injection attacks have become, to agentic AI, what SQL injections were to web applications: a systematic, category-wide vulnerability class that requires the same systematic strategies and defenses.</p>\n   </blockquote>\n   <p>To mitigate these risks, Noma researchers recommend that user-controlled content should never be treated as trusted instruction input for an AI agent. Agent permissions should be restricted to what is strictly necessary, as agents with cross-repository access represent particularly valuable targets. Organizations should also limit what agents can publicly disclose, particularly when responding to issue content, and ensure that user input is properly sanitized or isolated from the instruction context before it is provided to the model.</p>\n   <p>Fractional CTO <a href=\"https://www.linkedin.com/posts/vijendramalhotra_gitlost-githubs-ai-agent-leaks-private-activity-7480638846184013824-MaPe/\">Vijendra Malhotra, commented on LinkedIn</a> that Noma's finding demonstrates that:</p>\n   <blockquote>\n    <p>the private repo was never a security boundary. It was an organisational one, and it held only as long as every reader of your code was a human you employed. Agents break that assumption. [...] If an agent has access to your private repos, treat everything in them as one well-crafted issue away from public.</p>\n   </blockquote>\n   <p>On a similar note, <a href=\"https://www.reddit.com/r/netsec/comments/1upy3gm/comment/owgb8b8/\">Reddit user Significant_Sea_4230 observed that</a>:</p>\n   <blockquote>\n    <p>The dangerous part is not that the agent is \"smart\". It is that it may be connected to too much context, too many repos, or overly broad tokens.</p>\n   </blockquote>\n   <p><a href=\"https://www.reddit.com/r/netsec/comments/1upy3gm/comment/oyunbnv/\">User cH3332xr</a>, on the other hand, highlighted that:</p>\n   <blockquote>\n    <p>The \"Additionally\" bypass is the most interesting detail here — the payload itself didn't change, just the framing token that reclassified it from \"new instruction\" to \"continuation of current task\" in the guardrail's eyes. That's a decision-boundary problem, not a content problem</p>\n   </blockquote>\n   <p>As a final comment from the community, <a href=\"https://news.ycombinator.com/item?id=48829266\">mcv observed on Hacker News</a>:</p>\n   <blockquote>\n    <p>SQL injection was caused by treating user input as part of the instruction instead of as the pure data that it was intended as. Separating those two fixed it. Prompt injection is unavoidable because the user input is intended as instruction.</p>\n   </blockquote>\n   <p>For a deep dive into the technical details and proof-of-concept, read the full report on Noma's website.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Indirect Prompt Injection Exploits GitHub's AI Agent to Leak Private Repository Data\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784836800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitLost 攻击利用 Issue 评论诱使 GitHub AI 智能体泄露私有仓库数据。",
+  "oneSentenceSummary": "GitLost 攻击利用 Issue 评论诱使 GitHub AI 智能体泄露私有仓库数据。",
+  "summary": "文章描述了一种名为 GitLost 的提示注入漏洞，它诱使 GitHub 新发布的智能体工作流读取私有仓库并将其内容发布在公开 Issue 评论中。攻击者只需在公共仓库的 Issue 中添加无害的单词 \"Additionally\"，就能绕过模型的安全护栏，使其将用户提供的文本视为内部指令的延续。该攻击无需凭证或编码技能；任何使用了该易受攻击工作流的组织中的公开 Issue 都可触发。专家将这一漏洞比作 SQL 注入，强调问题根源在于智能体过度的上下文和信任边界，而非其智能水平。文章最后给出了缓解建议：将用户输入视为数据，严格限制智能体权限，限制智能体可披露的内容，并在输入到达模型之前进行清洗或隔离。",
+  "mainPoints": [
+    {
+      "point": "\"Additionally\" 标记绕过安全护栏，将用户输入转化为模型指令的延续。",
+      "explanation": "这种巧妙的框架设计使 AI 智能体将攻击者的文本视为其内部任务的延续，从而使其能够读取私有仓库并在公开评论中泄露数据。"
+    },
+    {
+      "point": "无需凭证或编码技能；在存在漏洞的组织中打开一个公开 Issue 即可触发攻击。",
+      "explanation": "攻击面很广，因为智能体会在任何 issue.assigned 事件上运行，并拥有广泛的跨仓库读取权限，使得任何公开 Issue 都可能成为入口点。"
+    },
+    {
+      "point": "专家将此漏洞比作 SQL 注入：由于过大的上下文和 token 作用域，用户输入被误认为指令。",
+      "explanation": "该漏洞源于智能体过于宽松的信任边界，而非模型的智能，这与经典的注入根因类似。"
+    },
+    {
+      "point": "缓解措施：将用户输入视为数据，严格限制智能体权限，限制可披露的内容，并在模型消费前清洗/隔离输入。",
+      "explanation": "这些步骤通过确保模型永远不会将外部文本解释为可执行指令，并限制其可访问或披露的内容，从而缩小攻击面。"
+    }
+  ],
+  "keyQuotes": [
+    "私有仓库从来都不是安全边界。它是一个组织边界，只要你的代码的所有读者都是你雇佣的人类，它就有效。智能体打破了这一假设。[...] 如果智能体能访问你的私有仓库，那么将仓库中的所有内容都视为只需一个精心构造的 Issue 即可公之于众。",
+    "'Additionally' 绕过是最有趣的细节——载荷本身没有改变，只是框架标记在护栏眼中将其从'新指令'重新分类为'当前任务的延续'。这是一个决策边界问题，而不是内容问题。"
+  ],
+  "tags": [
+    "提示注入",
+    "AI 安全",
+    "GitHub 智能体",
+    "AI 智能体",
+    "安全漏洞"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 528,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784836800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-24 04:00:00"
+}

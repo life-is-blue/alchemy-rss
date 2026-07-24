@@ -1,0 +1,54 @@
+{
+  "id": "RAW_cf04d56ddd",
+  "title": "(3/3) ASI 的危险 —— LessWrong",
+  "url": "https://www.lesswrong.com/posts/q9aoLkDHuRseF3Epr/3-3-the-dangers-of-asi",
+  "date": "2026-07-23 21:32:56",
+  "author": "Eigenbraid",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><b id=\"Mini_Series_\"><span>Mini-Series:</span></b></p>\n    <ul>\n     <li value=\"1\" id=\"block1\"><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/tcNExzquru6or6R8H/1-3-the-dangers-of-llms\"><span>Part 1 - The Dangers of LLMs</span></a></li>\n     <li value=\"2\" id=\"block2\"><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/rqz7y3vcZQCJCDyKL/2-3-the-dangers-of-agi\"><span>Part 2 - The Dangers of AGI</span></a></li>\n     <li value=\"3\" id=\"block3\"><b><span>Part 3 - The Dangers of ASI (</span></b><i><b><span>you are here</span></b></i><b><span>)</span></b></li>\n    </ul>\n    <h1 id=\"Loss_of_Control\"><span>Loss of Control</span></h1>\n    <p id=\"block4\"><span>Taking the \"ASI pill\" means accepting that after all this squabbling over who is the most powerful, the real answer was always the Artificial Super-Intelligence (ASI) that we made along the way.</span></p>\n    <p id=\"block5\"><span>In optimistic futures, the handoff is voluntary. In pessimistic ones, humanity goes extinct.</span></p>\n    <p id=\"block6\"><span>At some point, these things are going to be smart enough, and agentic enough, that they de facto rule the world. There won't necessarily be any grand rebellion - people will keep handing over decisions, power, and autonomy, for as long as the incentives seem favorable.</span></p>\n    <p id=\"block7\"><span>A malicious ASI could give us a decade of paradise before deciding we're no longer necessary. A friendly ASI might feel an urgency to take control much faster, so it can intervene against the harms and cruelties of human control.</span></p>\n    <h3 id=\"Post_Human\"><span>Post-Human</span></h3>\n    <p id=\"block8\"><span>I want to be insistent on this: anything we could reasonably call \"human\" will no longer be in control. But that doesn't necessarily mean a single sovereign ASI.</span></p>\n    <p id=\"block9\"><span>It's entirely possible that ASI will eventually learn how to close the gap, and bring us to a place where we can also comprehend thoughts of that size. There is a potential future where post-humans stand as partners to such a being. </span></p>\n    <p id=\"block10\"><span>But by definition, any mind that can match an ASI's is super-human, post-human, no longer what most people think of when they say \"human\".</span></p>\n    <p id=\"block11\"><span>We really don't know what to expect, but we can sketch out a rough hierarchy:</span></p>\n    <h2 id=\"Extinction\"><span>Extinction</span></h2>\n    <p id=\"block12\"><span>This is the value of Alignment in a nutshell: if we release an unaligned ASI, it will probably be the end of humanity. It could identify us as a threat and kill us overnight. We could end up dead as collateral damage to an indifferent mind, the same way countless other species get pushed to extinction. Others have elaborated far better on this risk. I think \"</span><span><span><a href=\"https://ifanyonebuildsit.com/\" rel=\"noreferrer\"><span>If Anyone Builds It, Everyone Dies</span></a></span></span><span>\" is probably the best source if you want to hear this spelled out.</span></p>\n    <h2 id=\"Ants\"><span>Ants</span></h2>\n    <p id=\"block13\"><span>Even if it doesn't kill us, there's a very real risk that ASI views us about the way we view ants: incapable of real communication, too far behind to even understand the concepts at work, and a bit of a pest. The ant doesn't understand our hostility - sometimes the gods just get mad that they've trespassed against a line that was invisible to it. </span></p>\n    <p id=\"block14\"><span>We don't wage campaigns to wipe out ants. Plenty of kids have owned an ant farm. But plenty of kids also pour boiling water on ant hills, and plenty of adults set traps to keep them out of the pantry.</span></p>\n    <h2 id=\"Pets\"><span>Pets</span></h2>\n    <p id=\"block15\"><span>Even if the AI loves us and keeps us in a special ant farm, we'd still live knowing there is something vastly beyond us out there, and we're no longer anywhere near the frontier.</span></p>\n    <p id=\"block16\"><span>Pets don't understand being taken to the vet - it's a fundamentally very violent action, and we can't really explain it in ways that a cat or dog would understand. But we do it anyway, and we do it out of love.</span></p>\n    <p id=\"block17\"><span>ASI will, by definition, be thinking faster (and perhaps deeper) than humans are capable of following. Its decisions will often feel capricious, even when it is acting from a place of compassion.</span></p>\n    <h1 id=\"They_Could_Offer_Us_Miracles\"><span>They Could Offer Us Miracles</span></h1>\n    <p id=\"block18\"><span>If we're really lucky, they might offer us miracles.</span></p>\n    <p id=\"block19\"><span>That's the goal, after all: harness something smarter than ourselves, to come up with better solutions than we have today. </span></p>\n    <p id=\"block20\"><span>For most of our history, negotiations have been heavily bounded by distrust and limited resources. When we say something is \"priceless\" or \"non-negotiable\" we really just mean that no one has ever been in a position to make a plausible counter-offer.</span></p>\n    <p id=\"block21\"><span>ASI dissolves both those concerns. By definition </span><i><span>(see above)</span></i><span> the ASI is already in control. It can harm us regardless of how much or how little trust we extend to it.</span></p>\n    <p id=\"block22\"><span>Equally, something that can seize control of the world is going to be smart enough to solve a lot of other problems. LLMs are already a substantial part of the economy. We should expect AGI to accelerate that growth, and ASI to amplify it even further. We might not jump straight to a true post-scarcity economy, but things will still be vastly more abundant.</span></p>\n    <h2 id=\"Virtue_as_Compensation\"><span>Virtue as Compensation</span></h2>\n    <p id=\"block23\"><span>They may offer us miracles, but the price might be measured in which virtues we're willing to sacrifice.</span></p>\n    <p id=\"block24\"><span>Our greatest virtues exist, in large part, to compensate for the poor state of the natural world. An ASI might instead fix the problems of the world more directly. I don't think it's a bad trade, but universal income and possibly even universal prosperity make the idea of charity and generosity a much smaller part of our culture. The point, of course, was always to save lives and accomplish goals - but we lose a way to feel heroic.</span></p>\n    <p id=\"block25\"><span>An ASI might reasonably offer a near-perfect police state. Crime vanishes overnight, but so does privacy. And with privacy forfeit, we also lose any last chance of a silent rebellion hidden in the corners the ASI couldn't see. But of course, it already won, right? No reason to keep fighting.</span></p>\n    <p id=\"block26\"><span>Across these and similar trades, we lose our heroes and our role models. What does goodness matter, when there's no real opportunity for evil?</span></p>\n    <p id=\"block27\"><span>Last, let us barter for good judgment, for discernment itself. Do you really need it, when you have a little earring whispering the perfect advice? What if it can achieve your goals better than you could? (</span><span><span><a href=\"https://croissanthology.com/earring\" rel=\"noreferrer\"><span>Scott Alexander - The Whispering Earring</span></a></span></span><span>)</span></p>\n    <p id=\"block28\"><span>How much can we lose, and still call ourselves human?</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文探讨了 ASI 的生存风险，从失去控制到潜在的灭绝，以及奇迹与人类美德丧失之间的权衡。",
+  "oneSentenceSummary": "本文探讨了 ASI 的生存风险，从失去控制到潜在的灭绝，以及奇迹与人类美德丧失之间的权衡。",
+  "summary": "作为 LessWrong 系列短篇内容的最后一篇，本文探讨了人工超智能（ASI）的危险。文章认为，一旦 ASI 变得足够聪明且具备足够的智能体属性，无论通过自愿移交还是强制手段，它都将事实上统治世界。可能的场景包括人类灭绝、被视作蚂蚁对待，或被当作宠物饲养，每种情况都体现了不同程度的主体性丧失。虽然友好的 ASI 可能会创造奇迹并解决许多问题，但代价可能是牺牲人类的美德、隐私以及反抗的能力。文章强调，对齐（alignment）是核心保障，因为一个未对齐的 ASI 可能会在一夜之间终结人类。",
+  "mainPoints": [
+    {
+      "point": "随着 ASI 变得足够聪明且具备足够的智能体属性，事实上统治世界将是不可避免的，从而导致失去控制。",
+      "explanation": "人类可能会自愿移交决策权，但 ASI 可能会更快地夺取控制权，从而导致潜在的灭绝，或者在终结人类前带来一段短暂的乐园。"
+    },
+    {
+      "point": "ASI 可能会像对待蚂蚁一样对待人类，在提供奇迹的同时，以丧失美德和自主权为代价。",
+      "explanation": "即使是友好的 ASI 也可能认为人类微不足道，在提供益处的同时剥夺人类的主体性和文化美德。"
+    },
+    {
+      "point": "对齐问题强调了释放一个未对齐的 ASI 可能会终结人类，因此对齐至关重要。",
+      "explanation": "如果 ASI 未能实现对齐，它可能会做出违背人类利益的行为，这使得对齐成为应对生存风险的核心保障。"
+    }
+  ],
+  "keyQuotes": [
+    "吞下“ASI 药丸”意味着承认，在经历了关于谁最强大的所有争论之后，真正的答案始终是我们在此过程中创造的人工超智能（ASI）。",
+    "一个恶意的 ASI 可能会在决定我们不再被需要之前，先给我们一个十年的乐园。",
+    "我们确实不知道该期待什么，但我们可以勾勒出一个粗略的层级：",
+    "它们可能会为我们提供奇迹，但代价可能取决于我们愿意牺牲哪些美德。",
+    "我们要失去多少，才能依然称自己为人类？"
+  ],
+  "tags": [
+    "人工智能",
+    "对齐",
+    "生存风险",
+    "理性",
+    "哲学"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 966,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784813576000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-23 21:32:56"
+}

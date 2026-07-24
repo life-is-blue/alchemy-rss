@@ -1,0 +1,57 @@
+{
+  "id": "RAW_296ebbea13",
+  "title": "数学家感到危机 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/zKCGq2bbCQrpCNc3W/mathematicians-are-feeling-the-doom",
+  "date": "2026-07-23 21:16:25",
+  "author": "alkjash",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>I think there's a critical opportunity for someone here. </span></p>\n    <p id=\"block1\"><span>Mathematicians are feeling the doom (mostly in the \"lose our jobs\" sense). </span></p>\n    <p id=\"block2\"><span>Academics are freaking out about the daily news that amateurs are asking GPT \"prove career-defining theorem, make no mistakes\" and </span><i><span>it's just working</span></i><span>. </span>\n     <br>\n     <br>\n     <span>Senior researchers are leaving for frontier AI labs. Many are mentally spiralling or flailing about their life's work not mattering anymore.</span></p>\n    <p id=\"block3\"><span>Last year, when I tried explaining IABIED to colleagues, I would be met with incredulous stares. This year, I'm met with incredulous stares and \"So what should I do now?\" (I don't have a good answer for them, which is part of why I'm posting this.)</span></p>\n    <p id=\"block4\"><span>I've quarantined AI discussions on my research discord because otherwise it would overwhelm everything else.</span></p>\n    <p id=\"block5\"><span>Top mathematicians, people on par in mathematical ability with Critch, Christiano, and Steinhardt, people who have been running leading-edge research groups for decades, people with enormous soft power in academic circles, are going to OpenAI without even having considered x-risk for five minutes. </span></p>\n    <p id=\"block6\"><span>Many more will be leaving soon. </span></p>\n    <p id=\"block7\"><span>If you want these folks to hear something at all, to consider some other option in the rest of their life, now is the time.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "数学家担心 AI 突破正在使他们的专业知识变得过时，导致大量离职并迫切呼吁寻找替代职业道路。",
+  "oneSentenceSummary": "数学家担心 AI 突破正在使他们的专业知识变得过时，导致大量离职并迫切呼吁寻找替代职业道路。",
+  "summary": "本文反思了数学家日益增长的焦虑，随着 AI 系统展示出能够证明定理和解决此前被认为只能由人类专家完成的问题的能力。高级研究人员正离开学术界，转投前沿 AI 实验室，许多人开始质疑自己毕生工作的未来意义。作者呼吁社区在趋势加速之前主动讨论替代方案，并指出即便是顶尖学者也在未深度考虑生存风险的情况下加入 OpenAI。文章还描述了个人措施，例如对 AI 讨论进行隔离，以应对压倒性的情绪。",
+  "mainPoints": [
+    {
+      "point": "数学家担心 AI 正在使定理证明变得平凡，威胁他们的职业身份。",
+      "explanation": "作者指出，业余人士现在可以让 GPT 无误地证明决定职业生涯的定理，这让高级研究人员感到自己的专业知识被超越，并引发对工作安全的担忧。"
+    },
+    {
+      "point": "许多高级研究人员正离开学术界，转投前沿 AI 实验室。",
+      "explanation": "文本观察到顶尖数学家正转向 OpenAI 等公司，这受到前沿 AI 工作的吸引以及传统学术角色正在失去相关性的认知所驱动。"
+    },
+    {
+      "point": "作者敦促社区现在就讨论替代职业道路。",
+      "explanation": "随着 AI 采纳势头加速，作者认为在人才外流变得不可逆转之前，启动关于其他可行选项的讨论至关重要。"
+    },
+    {
+      "point": "AI 讨论已被隔离，以防淹没其他话题。",
+      "explanation": "为管理弥漫的焦虑，作者在其研究 Discord 中将与 AI 相关的对话隔离，凸显了当前氛围对情绪的影响。"
+    }
+  ],
+  "keyQuotes": [
+    "更多人将很快离开。",
+    "如果你想让这些人听到任何声音，考虑他们余生的其他选项，现在就是时机。",
+    "顶尖数学家——在数学能力上与 Critch、Christiano 和 Steinhardt 相当、数十年来领导前沿研究团队、在学术界拥有巨大软实力的人——正前往 OpenAI，甚至连五分钟的生存风险（x‑risk）都未曾考虑。",
+    "我已在我的研究 Discord 上对 AI 讨论进行隔离，否则它会淹没其他所有内容。"
+  ],
+  "tags": [
+    "AI",
+    "数学",
+    "职业转变",
+    "AI 影响",
+    "研究"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 200,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784812585000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-23 21:16:25"
+}

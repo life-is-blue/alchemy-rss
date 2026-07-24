@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-24 06:47:53 | [返回首页](/README.md)
+**更新时间**: 2026-07-24 09:46:18 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (13901)
+- [AI & 大模型](#ai-llm) (13941)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (895)
-- [DevOps](#devops) (663)
+- [DevOps](#devops) (666)
 - [产品与商业](#product-business) (43)
-- [其他](#other) (6300)
+- [其他](#other) (6321)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [AI-#178：通用智能的警钟-—-LessWrong](https://www.lesswrong.com/posts/BK7E4jHNMykpnt796/ai-178-a-fire-alarm-for-general-intelligence) - AI 精选
+- [编程心得：Vibe-上百亿-Token-后，我收获了什么?](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492307&idx=1&sn=e9fb1f4fae460a121e6097f5726603d5) - AI 精选
 - [Gemini-3.6-Flash、3.5-Flash-Lite-和-3.5-Flash-Cyber-正式发布](https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/) - AI 精选
 - [与-Claude-Code-团队的-Cat-和-Thariq-的炉边谈话](https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything) - AI 精选
 - [长时程模型时代的安全与对齐](https://openai.com/index/safety-alignment-long-horizon-models) - AI 精选
@@ -38,12 +40,10 @@
 - [Claude-的价值观如何随模型和语言变化](https://www.anthropic.com/research/claude-values-models-languages) - AI 精选
 - [训推全开源：HyOCR-1.5-让端到端-OCR-大模型跑得更快、看得更准、功能更全](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498015&idx=1&sn=aa97c2dd942e4c50d2553cf922bc61bd) - AI 精选
 - [使用-Amazon-Bedrock-AgentCore-Gateway-为多租户代理实现代表令牌交换-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/implement-on-behalf-of-token-exchange-for-multi-tenant-agents-with-amazon-bedrock-agentcore-gateway/) - AI 精选
-- [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018) - AI 精选
 - [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b) - AI 精选
-- [从模型到-Harness：WorkBuddy-如何把-Agent-做成可用产品](https://mp.weixin.qq.com/s?__biz=MzYzODgxODMzNQ==&mid=2247489478&idx=1&sn=d3e025d2b32eb8b5b79519df735ac9d2) - AI 精选
-- [全新-GPT-5.6-系列：Luna、Terra、Sol](https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything) - AI 精选
+- [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018) - AI 精选
 
-- [查看全部 13901 篇...](/details/tags/ai-llm.md)
+- [查看全部 13941 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 663 篇...](/details/tags/devops.md)
+- [查看全部 666 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6300 篇...](/details/tags/other.md)
+- [查看全部 6321 篇...](/details/tags/other.md)
 
 

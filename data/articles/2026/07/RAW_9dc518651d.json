@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9dc518651d",
+  "title": "实施冷却期的理由：为何 Dependabot 在发出版本更新前增加了等待时间",
+  "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+  "date": "2026-07-24 00:00:00",
+  "author": "Carlin Cherry",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">In September 2025, an attacker phished the credentials of a single npm maintainer and published booby-trapped versions of <code>chalk</code>, <code>debug</code>, and around a dozen other packages that are together downloaded more than 2 billion times a week. The code rewrote cryptocurrency wallet addresses inside any browser app that loaded it. The poisoned versions were live for roughly two hours before the community caught them and npm pulled them.</p>\n  <p class=\"wp-block-paragraph\">Two hours is a fast response. However, it is also more than enough time for an automated update tool to see the new version, open a pull request, and put it in front of your team, because version update tooling is built to grab the newest release the moment it lands.</p>\n  <p class=\"wp-block-paragraph\">That pattern sits behind a growing share of supply chain attacks. The malicious code rides in on a brand-new release, is published to a public registry, and gets pulled into build pipelines within minutes, before a human or a scanner has even looked at it.</p>\n  <p class=\"wp-block-paragraph\">A cooldown changes that math. Waiting a few days before adopting a new release gives maintainers, security researchers, and automated scanners time to spot a malicious version and get it pulled before it ever reaches your pull requests.</p>\n  <p class=\"wp-block-paragraph\">For non-security version bumps, Dependabot now waits at least three days after a release is published before opening a pull request. The <code>cooldown</code> configuration option in the <code>dependabot.yml</code> still controls the behavior, though, so you can choose a different cooldown parameter that fits your project.</p>\n  <aside class=\"wp-block-group post-aside--large p-4 p-md-6 is-style-light-dimmed has-global-padding is-layout-constrained wp-block-group-is-layout-constrained is-style-light-dimmed--1\" style=\"border-top-width:4px\">\n   <p class=\"wp-block-paragraph\">Dependabot is GitHub’s built-in tool for keeping dependencies secure and up-to-date, and it does two distinct jobs:</p>\n   <ul class=\"wp-block-list\">\n    <li><a href=\"https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-security-updates\" target=\"_blank\" rel=\"noreferrer noopener\">Security updates</a>&nbsp;respond to a known vulnerability: when an advisory is published for a package you&nbsp;use,&nbsp;Dependabot&nbsp;issues an alert and&nbsp;opens a pull request to move you to&nbsp;the&nbsp;patched version.&nbsp;</li>\n    <li><a href=\"https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-version-updates\" target=\"_blank\" rel=\"noreferrer noopener\">Version&nbsp;updates</a>&nbsp;keep&nbsp;your dependencies current as new releases come out, regardless of your current version’s health.&nbsp;</li>\n   </ul>\n   <p class=\"wp-block-paragraph\"><strong>The&nbsp;new three-day&nbsp;cooldown default applies only to version updates</strong>. Security updates&nbsp;still&nbsp;open right away, since a delay there would hold back a fix for a flaw that is already public. Everything&nbsp;in this article&nbsp;is about version updates, where the goal is staying&nbsp;current,&nbsp;and the risk is adopting a release before it has been vetted.&nbsp;</p>\n  </aside>\n  <h2 id=\"h-case-studies-and-github-advisory-database-data\" class=\"wp-block-heading\">Case studies and GitHub Advisory Database data</h2>\n  <p class=\"wp-block-paragraph\">When attackers compromise a popular package, the poisoned version tends to have a short lifespan. It gets published, spreads through whatever installs it, and gets caught, usually within hours. The previous example was live for only two hours. Other widely used packages have followed the same arc, with compromised builds of <a href=\"https://github.com/advisories/GHSA-jcxm-7wvp-g6p5\">Solana web3.js</a>, <a href=\"https://github.com/advisories/GHSA-fw8c-xr5c-95f9\">Axios</a>, and <a href=\"https://github.com/advisories/GHSA-pjwm-rvh2-c87w\">ua-parser-js</a> each caught within a few hours of publication.</p>\n  <p class=\"wp-block-paragraph\">More generally, GitHub sees this pattern directly through the <a href=\"https://github.com/advisories?query=type%3Amalware+ecosystem%3Anpm\">GitHub Advisory Database</a>, which catalogs open source security advisories across ecosystems. In the year ending May 2026, the database published more than 6,500 npm malware advisories, up from roughly 6,200 the year before, which adds up to approximately 18 newly cataloged malicious npm packages every day. A cooldown keeps you out of that opening window and lets a release accumulate some scrutiny before it reaches you.</p>\n  <h2 id=\"h-why-three-days\" class=\"wp-block-heading\">Why three days</h2>\n  <p class=\"wp-block-paragraph\">Published malware targeting popular packages tends to get caught fast. A <a href=\"https://daniakash.com/posts/simplest-supply-chain-defense/\">review of 21 widely reported supply chain incidents</a> between 2018 and 2026 found the same pattern: malicious versions of axios, Solana web3.js, ua-parser-js, and Ledger Connect Kit were each pulled within hours of publication, and a cooldown could have filtered out the majority of these short-lived publishes before anyone installed them.</p>\n  <p class=\"wp-block-paragraph\">Three days as the default balances two goals: it pushes you past the window where most of these attacks live, and it doesn’t hold your dependencies back longer than necessary.</p>\n  <p class=\"wp-block-paragraph\">Other community members have also landed on a three-day cooldown (though some go even longer), so this default behavior keeps Dependabot consistent as developers move between tools.</p>\n  <p class=\"wp-block-paragraph\">You can always set a longer or shorter window with Dependabot’s <code>cooldown</code> configuration option.</p>\n  <h2 id=\"h-defense-in-depth\" class=\"wp-block-heading\">Defense in depth</h2>\n  <p class=\"wp-block-paragraph\">A cooldown is built for a specific pattern: a malicious version that ships, spreads, and gets caught quickly. It does little against attacks that play a longer game, including backdoors planted in releases and left dormant, maintainer sabotage, or a compromised build system. The point of the default is to remove a common and time-sensitive path, not to stand in for the rest of your defenses.</p>\n  <p class=\"wp-block-paragraph\">Because a cooldown only addresses the fast-moving case, it should be one layer among several. Some additional steps to take include pinning dependencies with lockfiles, disabling install scripts in CI where you can, scoping the tokens in your build pipelines, and reviewing updates before they merge.</p>\n  <p class=\"wp-block-paragraph\">If you’d like to customize your delay for highly trusted internal packages versus public registries, check out the <a href=\"https://docs.github.com/en/code-security/concepts/supply-chain-security/about-the-dependabot-yml-file\">documentation on configuring Dependabot.</a> Or see the <a href=\"https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference#cooldown\">Dependabot configuration options reference</a> for the full set of <code>cooldown</code> parameters.</p>\n  <h2 id=\"h-where-we-go-from-here\" class=\"wp-block-heading\">Where we go from here</h2>\n  <p class=\"wp-block-paragraph\">This is one step among several we are taking to harden the software supply chain for everyone who builds on GitHub. It’s on by default, so you don’t have to change anything to activate it. You can also tune it to fit your workflow.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "Dependabot 正在为版本更新引入默认的三天冷却期，通过留出时间让恶意包被识别并移除，从而缓解供应链攻击。",
+  "oneSentenceSummary": "Dependabot 正在为版本更新引入默认的三天冷却期，通过留出时间让恶意包被识别并移除，从而缓解供应链攻击。",
+  "summary": "这篇来自 GitHub 博客的文章解释了 Dependabot 针对版本更新引入默认三天冷却期背后的基本原理。通过延迟非安全性质的版本升级，GitHub 旨在缩小自动化工具在包发布后立即拉取恶意代码的漏洞窗口——这种拉取往往早于研究人员发现问题的时间。文章将此与安全更新区分开来，后者仍保持即时更新，以确保关键修复能快速应用。文章还强调，冷却期只是“纵深防御”策略中的一层，旨在应对快速传播的攻击，而非解决像休眠后门这类长期威胁。",
+  "mainPoints": [
+    {
+      "point": "自动化更新工具可能会在无意中加速供应链攻击。",
+      "explanation": "由于版本更新工具被设计为立即获取最新发布版本，它们可能在几分钟内就将恶意代码拉入构建流水线，这通常发生在人工或自动扫描器介入之前。"
+    },
+    {
+      "point": "三天的冷却期在安全性与依赖项新鲜度之间取得了平衡。",
+      "explanation": "数据显示，大多数恶意包会在数小时内被发现并下架。三天的延迟让开发者度过这一高风险窗口，同时不会导致跟进最新版本时出现过度延误。"
+    },
+    {
+      "point": "冷却期仅适用于版本更新，不适用于安全更新。",
+      "explanation": "为了确保关键漏洞补丁能被及时应用，冷却机制严格限制在常规版本升级范围内，以确保安全仍然是首要任务。"
+    },
+    {
+      "point": "冷却期是“纵深防御”的一个组成部分，而非完整的解决方案。",
+      "explanation": "该功能针对的是快速传播、短命的恶意发布版本，但无法防范维护者破坏或休眠后门等长期威胁，因此还需要结合锁定文件和人工审查等其他实践。"
+    }
+  ],
+  "keyQuotes": [
+    "冷却期改变了这种算式。在采用新版本前等待几天，能给维护者、安全研究人员和自动扫描器留出时间，以便在恶意版本进入你的 Pull Request 之前发现并将其下架。",
+    "设置默认值的目的是为了消除一条常见且时间敏感的攻击路径，而不是为了替代你其他的防御措施。"
+  ],
+  "tags": [
+    "Dependabot",
+    "供应链安全",
+    "软件工程",
+    "DevOps",
+    "GitHub"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 854,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784822400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-24 00:00:00"
+}

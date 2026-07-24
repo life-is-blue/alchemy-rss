@@ -1,0 +1,56 @@
+{
+  "id": "RAW_2c2103d7a3",
+  "title": "要点：新趋势——对代码审查负荷大幅增加的担忧",
+  "url": "https://blog.pragmaticengineer.com/the-pulse-new-trend-concern-about-massive-increase-in-code-review-load/",
+  "date": "2026-07-24 00:55:29",
+  "author": "Ivan Klaric",
+  "siteName": "The Pragmatic Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Hi, this is Gergely with a bonus, free issue of the Pragmatic Engineer Newsletter. In every issue, I cover Big Tech and startups through the lens of senior engineers and engineering leaders. Today, we cover one out of four topics of </em><a href=\"https://newsletter.pragmaticengineer.com/p/the-pulse-groks-cli-caught-uploading?ref=blog.pragmaticengineer.com\" rel=\"noreferrer\"><em>last week's The Pulse issue</em></a><em>. Full subscribers received the article below seven days ago. If you’ve been forwarded this email, you can </em><a href=\"https://newsletter.pragmaticengineer.com/about?ref=blog.pragmaticengineer.com\" rel=\"noopener noreferrer nofollow\"><em>subscribe here</em></a><em>.</em></p>\n  <p>One thing I am hearing that’s top of mind for many engineering leaders is what is being done to deal with&nbsp;the&nbsp;continuous increase in code review load. It’s been a topic for a while, and more such conversations seem to be taking place.</p>\n  <p>For me, it began in January, when Opus 4.5 and GPT 5.4 started to write more and better code at most companies. Around then, Director-level folks started talking about the bottleneck of building software moving from coding to the review phase.</p>\n  <p><strong>There’s been a boom in AI code review tools to deal with the increase in load since February</strong>, and an explosion of experimentation with and adoption of dedicated AI code review tools like&nbsp;<a href=\"https://www.coderabbit.ai/?ref=blog.pragmaticengineer.com\"><u>CodeRabbit</u></a>,&nbsp;<a href=\"https://www.greptile.com/?ref=blog.pragmaticengineer.com\"><u>Greptile</u></a>,&nbsp;<a href=\"https://www.qodo.ai/?ref=blog.pragmaticengineer.com\"><u>Qodo</u></a>,&nbsp;<a href=\"https://www.sonarsource.com/products/sonarqube/?ref=blog.pragmaticengineer.com\"><u>SonarQube</u></a>&nbsp;(now also&nbsp;<a href=\"https://gitar.ai/?ref=blog.pragmaticengineer.com\"><u>Gitar</u></a>). There’s also tools offered by coding harnesses themselves like Claude Code review, Cursor review, GitHub Copilot review. And then tools previously not involved in code reviews – but which have context on the codebase – are also adding this, like&nbsp;<a href=\"https://sentry.io/product/seer/ai-code-review/?ref=blog.pragmaticengineer.com\"><u>Sentry’s Seer AI reviews</u></a>,&nbsp;<a href=\"https://linear.app/diffs?ref=blog.pragmaticengineer.com\"><u>Linear code reviews</u></a>.</p>\n  <p><strong>Larger companies are building in-house tools to improve the code review experience.&nbsp;</strong>Uber’s Code Inbox is one case:</p>\n  <figure class=\"kg-card kg-image-card kg-card-hascaption\">\n   <img src=\"https://media.bestblogs.dev/20260723170409_3a171592-37ca-4c2a-b1b8-0086fe9c88fe_1456x901.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\">\n   <figcaption>\n    <i><em class=\"italic\" style=\"white-space: pre-wrap;\">Uber’s Code Inbox. From </em></i><a href=\"https://newsletter.pragmaticengineer.com/p/how-uber-uses-ai-for-development?ref=blog.pragmaticengineer.com\"><i><em class=\"italic\" style=\"white-space: pre-wrap;\">How Uber uses AI for software development</em></i></a>\n   </figcaption>\n  </figure>\n  <p>Smart assignments are a feature inside Code Inbox for having reviews progress:</p>\n  <figure class=\"kg-card kg-image-card kg-card-hascaption\">\n   <img src=\"https://media.bestblogs.dev/20260723170408_20aa60fe-9b8b-4772-b971-1c6737adcf93_956x692.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\">\n   <figcaption>\n    <i><em class=\"italic\" style=\"white-space: pre-wrap;\">Smart assignment settings for Code Inbox</em></i>\n   </figcaption>\n  </figure>\n  <p>Then there’s Risk Profiles which estimate the impact of a change, and encourage devs to pay extra attention to risky ones:</p>\n  <figure class=\"kg-card kg-image-card kg-card-hascaption\">\n   <img src=\"https://media.bestblogs.dev/20260723170409_30e886bc-2fd9-4626-a79a-eb988a8b7647_996x812.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\">\n   <figcaption>\n    <i><em class=\"italic\" style=\"white-space: pre-wrap;\">Code Inbox tries to estimate the risk of a code change, and bring attention to it</em></i>\n   </figcaption>\n  </figure>\n  <p>We covered&nbsp;<a href=\"https://newsletter.pragmaticengineer.com/p/how-uber-uses-ai-for-development?ref=blog.pragmaticengineer.com\"><u>how Uber uses AI for software development</u></a>, and it’s not just Uber: companies like Cloudflare (<a href=\"https://blog.cloudflare.com/ai-code-review/?ref=blog.pragmaticengineer.com\"><u>AI Code Reviewer</u></a>), Faire (<a href=\"https://craft.faire.com/agent-fairey-agentic-development-with-custom-mcp-servers-71784c9bc5bd?gi=8a98cd2b8d91&amp;ref=blog.pragmaticengineer.com\"><u>Fairey</u></a>), and HubSpot (<a href=\"https://product.hubspot.com/blog/automated-code-review-the-6-month-evolution?ref=blog.pragmaticengineer.com\"><u>Sidekick</u></a>) and many others have also built tools to make their code review flows more fluid, after finding that an in-house implementation worked better than integrating a vendor.</p>\n  <p><strong>Another approach is thinking about how to verify code, instead of reviewing.</strong>&nbsp;This is easier said than done; in theory, thorough testing should be able to verify that code works as expected. But how much testing is ‘thorough’? What type of tests are we talking about? Integration and end-to-end as well? What about fuzz testing? Or formal methods? What about verifying that new tests exercise the functionality as expected? And how do we connect all of this with observability?</p>\n  <p><strong>Too much thorough code review is burning out engineers, and resulting in sub-par code reviews.&nbsp;</strong>I hear a lot anecdotally that devs see others as no longer able to review code with intent, whereby, if the AI code review has no real comments, they just approve it. Meanwhile, those devs who put the same effort and energy into code review as before feel overloaded by AI slop PRs sent their way.</p>\n  <p>The problems exist, and the solutions feel more like experiments.</p>\n  <p>What are you seeing inside your company, and how are you dealing with the increase in code reviews? Share your ideas for practical, workable “replacements”?</p>\n  <hr>\n  <p>Read the full issue of <a href=\"https://newsletter.pragmaticengineer.com/p/the-pulse-groks-cli-caught-uploading?ref=blog.pragmaticengineer.com\" rel=\"noreferrer\"><strong>The Pulse this excerpt is from</strong></a>, or check out <a href=\"https://newsletter.pragmaticengineer.com/s/the-pulse?ref=blog.pragmaticengineer.com\" rel=\"noopener noreferrer nofollow\"><strong>the latest The Pulse</strong></a> from today. <a href=\"https://pragmaticengineer.substack.com/p/the-pulse-quitting-spotify-podcasts?ref=blog.pragmaticengineer.com\" rel=\"noreferrer\">Today’s issue</a> covers:</p>\n  <ol>\n   <li>Moving video podcasts off Spotify due to constant reliability issues</li>\n   <li>“Kimi K3” moment &amp; a US lobby for closed-source AI models</li>\n   <li>AWS laughs off huge billing error</li>\n   <li>Industry Pulse</li>\n  </ol>\n  <p><a href=\"https://pragmaticengineer.substack.com/p/the-pulse-quitting-spotify-podcasts?ref=blog.pragmaticengineer.com\" rel=\"noreferrer\"><em>Read the full issue here</em></a></p>\n  <p><a href=\"https://newsletter.pragmaticengineer.com/about\">Subscribe to my weekly newsletter</a> to get articles like this in your inbox. It's a pretty good read - and the <a href=\"https://substack.com/top/technology\">#1 software engineering newsletter</a> on Substack.</p>\n </body>\n</html>",
+  "aiSummary": "本文强调了工程领导者对由 AI 生成代码导致的代码审查负荷激增的日益担忧，并探讨了新兴的 AI 审查工具、内部解决方案以及验证与审查之间的挑战。",
+  "oneSentenceSummary": "本文强调了工程领导者对由 AI 生成代码导致的代码审查负荷激增的日益担忧，并探讨了新兴的 AI 审查工具、内部解决方案以及验证与审查之间的挑战。",
+  "summary": "该文章来自《The Pragmatic Engineer》通讯，指出一种新趋势：AI 生成代码的质量和数量正将软件开发的瓶颈从编码转移到代码审查。作者报告称，自 2025 年初，随着 Opus 4.5 和 GPT 5.4 等模型产出更多代码，工程领导者开始将代码审查瓶颈置于优先位置。文章调查了蓬勃发展的 AI 代码审查工具生态（CodeRabbit、Greptile、Qodo、SonarQube/Gitar 以及内置的 harness 审查），并指出 Uber、Cloudflare、Faire、HubSpot 等大型公司正在构建定制内部工具（例如 Uber 的 Code Inbox，具备风险画像和智能分配功能）以提升流程。文中还将审查方式与通过测试进行彻底验证的理想进行对比，同时承认实际操作的困难。文章强调了工程师因审查负荷过重而产生的倦怠，以及审查可能变得表面化的风险（例如，当 AI 工具未提出任何修改时，开发者直接批准 PR，缺乏审查意图）。最后，作者邀请读者分享实际可行的解决方案。",
+  "mainPoints": [
+    {
+      "point": "AI 生成的代码正将软件开发的瓶颈从编码转移到代码审查。",
+      "explanation": "随着先进的 AI 模型编写更多且更好的代码，需要审查的代码量急剧增加，使得代码审查成为工程工作流中的新瓶颈。"
+    },
+    {
+      "point": "AI 驱动的代码审查工具正出现爆发式增长，涵盖第三方和内部解决方案。",
+      "explanation": "CodeRabbit、Greptile、Qodo 和 SonarQube/Gitar 等工具已被快速采用，而 Uber、Cloudflare、Faire、HubSpot 等大型科技公司则在构建定制方案以简化审查流程。"
+    },
+    {
+      "point": "审查负荷的增加导致工程师倦怠并降低审查质量。",
+      "explanation": "工程师因 AI 生成的 PR 感到不堪重负，部分人仅在 AI 审查工具未标出问题时直接批准更改，导致审查质量下降并带来潜在的质量风险。"
+    },
+    {
+      "point": "一些团队正在探索通过测试进行验证，以替代传统审查，但这并不简单。",
+      "explanation": "完整的测试（集成测试、端到端测试、模糊测试、形式化方法）理论上可以替代部分审查，但实现全面验证十分复杂，需要与可观测性体系相结合。"
+    }
+  ],
+  "keyQuotes": [
+    "自二月以来，为应对负荷增加，AI 代码审查工具出现了爆发式增长。",
+    "过度细致的代码审查正在让工程师燃尽，并导致审查质量下降。",
+    "我经常听到开发者抱怨，认为其他人已经无法带着审查意图去审查代码；如果 AI 代码审查没有实质性评论，他们就直接批准。"
+  ],
+  "tags": [
+    "代码审查",
+    "AI 代码审查",
+    "开发者工具",
+    "软件工程",
+    "工程管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 642,
+  "domain": "blog.pragmaticengineer.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_52d75b43",
+  "sourceName": "The Pragmatic Engineer",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784825729000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-24 00:55:29"
+}
