@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-24 09:46:18 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-24 13:01:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,25 +584,19 @@
 
 ### [介绍-Cache-Response-Rules](https://blog.cloudflare.com/introducing-cache-response-rules/)
 
-2026-07-24 02:40:38 | 标签: 内容分发网络, 边缘计算, 缓存, Cloudflare, 网页性能
-
-> Cloudflare 已推出 Cache Response Rules，这是一项新功能，为开发者提供了对内容缓存和投递方式更精确的控制。与仅依赖源站设置的头部不同，用户现在可以根据各种请求条件（如 URI 模式、头部或 Cookie）创建规则，以覆盖缓存设置、操作响应头部并优化投递性能。这使得边缘侧内容管理更加灵活，并减少了在源站实现复杂逻辑的需求。
+2026-07-24 02:40:38
 
 
 
 ### [实施冷却期的理由：为何-Dependabot-在发出版本更新前增加了等待时间](https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/)
 
-2026-07-24 00:00:00 | 标签: Dependabot, 供应链安全, 软件工程, DevOps, GitHub
-
-> 这篇来自 GitHub 博客的文章解释了 Dependabot 针对版本更新引入默认三天冷却期背后的基本原理。通过延迟非安全性质的版本升级，GitHub 旨在缩小自动化工具在包发布后立即拉取恶意代码的漏洞窗口——这种拉取往往早于研究人员发现问题的时间。文章将此与安全更新区分开来，后者仍保持即时更新，以确保关键修复能快速应用。文章还强调，冷却期只是“纵深防御”策略中的一层，旨在应对快速传播的攻击，而非解决像休眠后门这类长期威胁。
+2026-07-24 00:00:00
 
 
 
 ### [通过帮助开发者实现合规的平台工程团队](https://www.infoq.com/news/2026/07/platform-that-helps-developers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-23 19:42:00 | 标签: 平台工程, 开发者体验, 合规, DevOps, AWS
-
-> 文章讲述了一个由经验丰富的开发者组成的平台团队最初在被迫的工作流程和糟糕的文档中挣扎，这损害了开发者体验。通过简化治理——从最小的、带有观点的资源标签集合开始，通过 AWS 标签策略和服务控制策略强制执行，利用 Security Hub 检测不合规资源，并逐步收紧执行力度——他们提高了采纳率。关键经验包括：聚焦对业务真正重要的事情，分享背景和目的使团队将合规视为推动者，并通过职责轮换、 RFC 和 问答 等实践培养共同所有权。受访者强调将政策视为防护栏而非手铐，并认为透明度、同理心和渐进式推出是成功合规的关键，与技术本身同样重要。
+2026-07-23 19:42:00
 
 
 
