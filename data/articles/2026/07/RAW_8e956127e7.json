@@ -1,0 +1,54 @@
+{
+  "id": "RAW_8e956127e7",
+  "title": "苹果不让我展示我的应用",
+  "url": "https://wisedayplanner.com/blog/apple-wont-let-me-show-my-app/",
+  "date": "2026-07-25 00:41:16",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<!-- {heroImage && (\n\t\t\t<div class=\"mb-6\">\n\t\t\t\t<Image\n\t\t\t\t\twidth={720}\n\t\t\t\t\theight={360}\n\t\t\t\t\tsrc={heroImage}\n\t\t\t\t\talt=\"\"\n\t\t\t\t\tclass=\"rounded-xl w-full\"\n\t\t\t\t/>\n\t\t\t</div>\n\t\t)} -->\n<!-- <hr class=\"mb-8 border-gray-200\" /> -->\n<html>\n <head></head>\n <body>\n  <div class=\"prose\" data-astro-cid-bvzihdzo>\n   <p><img loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" src=\"https://wisedayplanner.com/_astro/screenshots-example.CvKRMArq_2ctNvo.webp\"></p>\n   <p>Writing code is the #1 usage of LLMs right now. In the future that will likely change to automation (powering agents’ thinking as they work on tasks), but for today, the explosion of vibe coding has had a real effect on Apple.</p>\n   <p>The App Store is seeing a deluge of vibe coded apps being submitted each day.</p>\n   <p>For the first time in its history, non-game apps have overtaken games as the #1 revenue source on the App Store. Probably because CRUD apps are easier to turn out than games.</p>\n   <p>This has almost certainly created immense pressure for the app review team, who in general do a great job of keeping app quality high.</p>\n   <p>After you submit a new app update for review, the message you get is that you should receive a response in 24 to 48 hours. This is a relic of the bygone era when they didn’t have as much volume to handle.</p>\n   <p>Even some of the most used apps in the world, like X, are facing delays of a week or more</p>\n   <p><img loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" src=\"https://wisedayplanner.com/_astro/bier.W9K3F1B5_1cFKTD.webp\"></p>\n   <p>That’s why when I received my rejection for the newest release of Wiseday, I was (and still am) upset. Because just communicating back and forth has a long delay. In my case, my initial submission managed to get a review in 3 days, but who knows when the next one will be?</p>\n   <p>It seems like when you get rejected, the reviewers don’t actually write anything. They just pick from a menu of issues, and the reply is automatically drafted for them.</p>\n   <p>That’s why if you disagree with the rejection, it can feel stifling, like you’re not actually talking to anyone.</p>\n   <p>I’ve changed and improved Wiseday a lot since the initial release. I consider the present release the actual app, one that I’m happy to promote. The prior one was just for testing the waters.</p>\n   <p>Part of the challenge was communicating the idea of the app through screenshots, namely showing that the daily page is the biggest value proposition.</p>\n   <p>For some products, it’s easy to know what they do and who they’re for, but Wiseday hasn’t been one of those. Communicating the idea has always been difficult for this app, and I am happy with my latest attempt through the new screenshots I created.</p>\n   <p>Or at least I was, until they were the reason Apple rejected me:</p>\n   <blockquote>\n    <p>Issue: The screenshots do not show the actual app in use in the majority of the screenshots. Screenshots should highlight the app’s core concept to help users understand the app’s functionality and value.</p>\n   </blockquote>\n   <blockquote>\n    <p>Resources:</p>\n    <ul>\n     <li>Marketing or promotional materials that do not reflect the UI of the app are not appropriate for screenshots.</li>\n     <li>The majority of the screenshots should highlight the app’s main features and functionality. Note that splash and login screens are generally not considered to show the app in use.</li>\n    </ul>\n   </blockquote>\n   <p>Communication is one of those things where if it’s done well, you don’t notice it. I had to figure out how I would show that the main value proposition is printing a page that does 3 different things.</p>\n   <p>Doing this for Wiseday requires that the two sentences of advice the app review team gave me be diametrically opposed</p>\n   <p><em>“The screenshots do not show the actual app in use in the majority of the screenshots.”</em></p>\n   <p>is not compatible with</p>\n   <p><em>“Screenshots should highlight the app’s core concept to help users understand the app’s functionality and value.”</em></p>\n   <p>because the core concept is a <strong>paper</strong> page.</p>\n   <p>I responded to the rejection by pointing out that technically, the paper in screenshots #2 and #3 <em>are</em> in fact part of the app’s UI, in the page preview component.</p>\n   <p>I also added another more traditional device-wrapped screenshot to try and handle the “majority screenshots” rule if they don’t accept that argument.</p>\n   <p><img loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" src=\"https://wisedayplanner.com/_astro/screenshots-new.DTekg2UZ_ZLHPg7.webp\"></p>\n   <p>Let’s see how it turns out. I really hope they read developer responses and consider the unique objections to their rules.</p>\n  </div>\n  <a href=\"https://wisedayplanner.com/blog\" class=\"mt-10 inline-flex items-center gap-1.5 text-sm uppercase tracking-wider text-[hsl(254,50%,10%)] no-underline hover:text-blue-500 transition-colors\" data-astro-cid-bvzihdzo> Read more posts </a>\n </body>\n</html>",
+  "aiSummary": "开发者分享 App Store 审核延迟与截图问题，指出非游戏应用收入增长及 AI 编程趋势。",
+  "oneSentenceSummary": "开发者分享 App Store 审核延迟与截图问题，指出非游戏应用收入增长及 AI 编程趋势。",
+  "summary": "作者描述了他们对苹果 App Store 审核流程的沮丧，指出审核时间已远超宣传的 24-48 小时窗口，甚至像 X 这样的主流应用也面临长达一周的延迟。他们将其归因于由 LLM 辅助的“vibe coding”推动的提交量激增，以及非游戏应用跃居商店收入榜首的变化。作者还详细描述了一次截图被拒的情况：苹果的指南要求大部分截图展示应用正在使用，同时突出应用的核心概念，但对于一个核心价值在于可打印页面的应用，这两者存在冲突。在修改了截图（添加了设备包裹视图，并论证纸张预览是 UI 的一部分）后，他们等待重新审核，希望审核团队能考虑开发者的反馈。",
+  "mainPoints": [
+    {
+      "point": "App Store 审核时间已增至超过宣传的 24-48 小时窗口，甚至主流应用也面临长达一周的延迟。",
+      "explanation": "由 LLM 辅助的“vibe coding”和作为顶级收入类别的非游戏应用崛起所推动的提交量激增，给审核团队带来了压力，导致所有开发者的等待时间变长。"
+    },
+    {
+      "point": "苹果的截图指南为那些核心概念是实体物件的应用制造了冲突，迫使开发者在展示 UI 和突出核心价值之间做选择。",
+      "explanation": "审核员的检查清单要求大部分截图展示应用正在使用，同时突出应用的核心概念；对于一个以可打印页面为中心的应用，这些要求相互矛盾，导致自动化的、非人性化的拒绝。"
+    },
+    {
+      "point": "作者迭代了他们的截图，以满足“大部分截图必须展示应用正在使用”的规定，同时试图传达纸张页面的价值主张。",
+      "explanation": "他们添加了设备包裹截图，并论证截图 #2 和 #3 中的纸张预览是应用 UI 的一部分（页面预览组件），希望审核团队在下次审核中考虑开发者的反馈。"
+    }
+  ],
+  "keyQuotes": [
+    "\"这些截图并未在大多数截图中展示实际应用的使用情况。\"",
+    "\"截图应突出应用的核心概念，以帮助用户了解应用的功能和价值。\"",
+    "\"即使是世界上一些使用最广泛的应用，如 X，也面临着一周或更长时间的延迟。\"",
+    "\"编写代码是目前 LLM 的首要用途。\"",
+    "\"我回复拒绝时指出，从技术上讲，截图 #2 和 #3 中的纸张实际上是应用 UI 的一部分，属于页面预览组件。\""
+  ],
+  "tags": [
+    "应用开发",
+    "App Store 审核",
+    "独立开发",
+    "软件工程",
+    "移动应用"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 650,
+  "domain": "wisedayplanner.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784911276000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-25 00:41:16"
+}

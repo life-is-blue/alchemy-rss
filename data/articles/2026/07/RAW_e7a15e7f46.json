@@ -1,0 +1,57 @@
+{
+  "id": "RAW_e7a15e7f46",
+  "title": "利用 Linux 进程进行高性能网络仿真",
+  "url": "https://www.usenix.org/conference/atc22/presentation/jansen",
+  "date": "2026-07-24 22:28:38",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"outer-wrapper\"></div>\n  <article id=\"node-280767\" class=\"node node-paper view-mode-full\">\n   <div class=\"content\">\n    <div class=\"field field-name-field-paper-people-text field-type-text-long field-label-hidden\">\n     <div class=\"field-items field-items\">\n      <div class=\"field-item odd\">\n       <p>Rob Jansen, <em>U.S. Naval Research Laboratory;</em> Jim Newsome, <em>Tor Project;</em> Ryan Wails, <em>Georgetown University, U.S. Naval Research Laboratory</em></p>\n       <p style=\"font-weight: 600; font-style: italic;\">Awarded Best Paper!</p>\n      </div>\n     </div>\n    </div>\n    <div class=\"field field-name-field-paper-description field-type-text-long field-label-hidden\">\n     <div class=\"field-items field-items\">\n      <div class=\"field-item odd\">\n       <p>Network experimentation tools are vitally important to the process of developing, evaluating, and testing distributed systems. The state-of-the-art simulation tools are either prohibitively inefficient at large scales or are limited by nontrivial architectural challenges, inhibiting their widespread adoption. In this paper, we present the design and implementation of Phantom, a novel tool for conducting distributed system experiments. In Phantom, a discrete-event network simulator directly executes unmodified applications as Linux processes and innovatively synthesizes efficient process control, system call interposition, and data transfer methods to co-opt the processes into the simulation environment. Our evaluation demonstrates that Phantom is up to 2.2× faster than Shadow, up to 3.4× faster than NS-3, and up to 43× faster than gRaIL in large P2P benchmarks while offering performance comparable to Shadow in large Tor network simulations.</p>\n      </div>\n     </div>\n    </div>\n    <div class=\"field field-name-field-paper-people field-type-node-reference field-label-hidden\">\n     <div class=\"field-items field-items\">\n      <div class=\"field-item odd\">\n       <article id=\"node-282324\" class=\"node node-speaker view-mode-schedule\"></article>\n      </div>\n      <div class=\"field-item even\">\n       <article id=\"node-282422\" class=\"node node-speaker view-mode-schedule\"></article>\n      </div>\n      <div class=\"field-item odd\">\n       <article id=\"node-282485\" class=\"node node-speaker view-mode-schedule\"></article>\n      </div>\n     </div>\n    </div>\n    <div id=\"node-paper-full-group-open-access-content\" class=\" group-open-access-content field-group-div\">\n     <h2><span>Open Access Media</span></h2>\n     <div class=\"description\">\n      <p>USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. <a href=\"https://www.usenix.org/annual-fund\">Support USENIX</a> and our commitment to Open Access.</p>\n     </div>\n     <div class=\"usenix-files-protected\">\n      <img src=\"https://www.usenix.org/modules/custom/usenix_files/images/usenix-locked.png\" alt=\"\">\n     </div>\n     <div class=\"field field-name-field-bibtex-node field-type-node-reference field-label-hidden\">\n      <div class=\"field-items field-items\">\n       <div class=\"field-item odd\">\n        <div class=\"bibtex-accordion\">\n         <div class=\"bibtex-accordion-label\">BibTeX</div>\n         <div class=\"bibtex-accordion-content\">\n          <div class=\"bibtex-text-entry bibtex-accordion-text-entry\">\n           @inproceedings {280766,\n           <br>\n           author = {Rob Jansen and Jim Newsome and Ryan Wails},\n           <br>\n           title = {Co-opting Linux Processes for {High-Performance} Network Simulation},\n           <br>\n           booktitle = {2022 USENIX Annual Technical Conference (USENIX ATC 22)},\n           <br>\n           year = {2022},\n           <br>\n           isbn = {978-1-939133-29-52},\n           <br>\n           address = {Carlsbad, CA},\n           <br>\n           pages = {327--350},\n           <br>\n           url = {https://www.usenix.org/conference/atc22/presentation/jansen},\n           <br>\n           publisher = {USENIX Association},\n           <br>\n           month = jul\n           <br>\n           }\n           <br>\n          </div>\n          <div class=\"bibtex-download-link bibtex-accordion-download-link\">\n           <a href=\"https://www.usenix.org/biblio/export/bibtex/280766\">Download</a>\n          </div>\n         </div>\n        </div>\n       </div>\n      </div>\n     </div>\n     <div class=\"field field-name-field-final-paper-pdf field-type-file field-label-hidden\">\n      <div class=\"field-items field-items\">\n       <div class=\"field-item odd\">\n        <span class=\"file\"><img class=\"file-icon\" alt=\"PDF icon\" title=\"application/pdf\" src=\"https://www.usenix.org/core/modules/file/icons/application-pdf.png\"> <a href=\"https://www.usenix.org/system/files/atc22-jansen.pdf\" type=\"application/pdf; length=1500953\" title=\"atc22-jansen.pdf\">Jansen PDF</a></span>\n       </div>\n      </div>\n     </div>\n     <div class=\"field field-name-field-paper-slides field-type-file field-label-hidden\">\n      <div class=\"field-items field-items\">\n       <div class=\"field-item odd\">\n        <div class=\"usenix-schedule-slides\">\n         <a href=\"https://www.usenix.org/sites/default/files/conference/protected-files/atc22_slides_jansen.pdf\">View the slides</a>\n        </div>\n       </div>\n      </div>\n     </div>\n     <div class=\"field field-name-field-artifact-evaluated field-type-taxonomy-term-reference field-label-hidden\">\n      <div class=\"field-items field-items\">\n       <div class=\"field-item odd\">\n        <img src=\"https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_available_125_update.png\" alt=\"\" title=\"\">\n       </div>\n       <div class=\"field-item even\">\n        <img src=\"https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_functional_125.png\" alt=\"\" title=\"\">\n       </div>\n       <div class=\"field-item odd\">\n        <img src=\"https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_reproduced_125.png\" alt=\"\" title=\"\">\n       </div>\n      </div>\n     </div>\n     <h2 class=\"field field-name-field-embed-video field-type-video-embed-field field-label-above\"><span class=\"field-label\">Presentation Video&nbsp;</span><span class=\"field-item odd first last\"> \n       <div class=\"embedded-video\">\n        <div class=\"player\">\n         <iframe title=\"YouTube video\" class=\"large-12 medium-12 small-12 columns usenix-schedule-media\" width=\"745\" height=\"420\" src=\"//www.youtube.com/embed/5o20p7n68sc?width%3D745%26amp%3Bheight%3D420%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd720%26amp%3Brel%3D0%26amp%3Bshowinfo%3D0%26amp%3Bmodestbranding%3D0%26amp%3Biv_load_policy%3D1%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque\" frameborder=\"0\" allowfullscreen></iframe>\n        </div>\n       </div> \n      </span></h2>\n    </div>\n   </div>\n  </article>\n </body>\n</html>",
+  "aiSummary": "Phantom 在仿真器中运行 Linux 进程，相比之前的工具最高可实现 43× 加速。",
+  "oneSentenceSummary": "Phantom 在仿真器中运行 Linux 进程，相比之前的工具最高可实现 43× 加速。",
+  "summary": "本文介绍 Phantom，一种新颖的网络仿真工具，它在离散事件仿真器中将未修改的 Linux 应用程序作为进程进行协同。通过结合高效的进程控制、系统调用拦截和优化的数据传输，Phantom 能够在不修改代码的情况下将真实软件集成到仿真环境中。评估表明 Phantom 的性能优于现有仿真器：在大规模点对点基准测试中，其速度比 Shadow 快达 2.2×，比 NS-3 快达 3.4×，比 gRaIL 快达 43×；而在大规模 Tor 网络仿真中，其性能与 Shadow 相当。该工作荣获 USENIX ATC 22 最佳论文奖，凸显其提升分布式系统实验可扩展性和真实性的潜力。",
+  "mainPoints": [
+    {
+      "point": "Phantom 在离散事件网络仿真器中将未修改的 Linux 应用程序作为进程执行。",
+      "explanation": "它通过创新的进程控制、系统调用拦截和数据传输机制，将这些进程协同到仿真环境中，无需修改应用程序。"
+    },
+    {
+      "point": "性能提升显著：在大规模点对点基准测试中，比 Shadow 快达 2.2×，比 NS-3 快达 3.4×，比 gRaIL 快达 43×。",
+      "explanation": "这些结果表明 Phantom 在保持正确性的同时，相比最先进的仿真器具有显著的效率优势。"
+    },
+    {
+      "point": "在大规模 Tor 网络仿真中，Phantom 的性能与 Shadow 相当，表明其在隐私保护网络方面具有良好的可扩展性。",
+      "explanation": "该工具能够在不牺牲速度的情况下处理隐私网络的真实工作负载。"
+    },
+    {
+      "point": "通过使用真实软件进行逼真的实验，Phantom 降低了分布式系统研究和测试的门槛。",
+      "explanation": "研究者可以使用实际的二进制文件评估系统，从而提升基于仿真的研究的保真度。"
+    }
+  ],
+  "keyQuotes": [
+    "荣获最佳论文奖！",
+    "网络实验工具对开发、评估和测试分布式系统的过程至关重要。",
+    "在 Phantom 中，离散事件网络仿真器直接将未修改的应用程序作为 Linux 进程执行，并创新地综合了高效的进程控制、系统调用拦截和数据传输方法，以将这些进程协同到仿真环境中。",
+    "我们的评估表明，在大规模点对点基准测试中，Phantom 比 Shadow 快达 2.2×，比 NS-3 快达 3.4×，比 gRaIL 快达 43×；而在大规模 Tor 网络仿真中，其性能与 Shadow 相当。"
+  ],
+  "tags": [
+    "网络仿真",
+    "系统性能",
+    "Linux",
+    "分布式系统",
+    "性能评估"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 270,
+  "domain": "usenix.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784903318000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-24 22:28:38"
+}
