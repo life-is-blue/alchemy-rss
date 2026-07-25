@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-25 09:46:22 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-25 12:57:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -722,17 +722,13 @@
 
 ### [Foldkit---基于-Effect-TS-和-Elm-架构的-TypeScript-前端框架](https://foldkit.dev/)
 
-2026-07-24 23:24:00 | 标签: TypeScript, 前端框架, Elm 架构, Effect-TS, 状态管理
-
-> 本页面介绍了 Foldkit，一个以 Effect-TS 为核心、强制执行 Elm 架构的前端框架。它描述了 Foldkit 如何提供单一不可变模型、基于命令的显式副作用，以及随项目规模线性增长的可扩展性。该框架内置了类型安全路由、可访问的 UI 组件、子模型、订阅、托管资源、字段验证、两种测试原语（Story 和 Scene）、支持 MCP AI 代理的时间旅行开发者工具，以及基于 Schema 类型的端口嵌入。文章还对比了 Foldkit 与 React，列出了适用和不适用场景，并指出当前缺少服务端渲染。网站内嵌了 DevTools 的实时演示。
+2026-07-24 23:24:00
 
 
 
 ### [使用-TypeScript-在-Express-中构建无懈可击的-API](https://www.freecodecamp.org/news/build-bulletproof-apis-using-typescript-in-express/)
 
-2026-07-24 22:24:13 | 标签: TypeScript, Express.js, 后端开发, API 设计, Node.js
-
-> 本文介绍了 freeCodeCamp 的新 YouTube 课程《TypeScript in Express》，该课程引导学习者从零开始构建一个类型安全的宠物收容所 API。它概述了课程大纲：使用 TypeScript 配置 Express、使用泛型对请求和响应进行类型定义、使用路由器和控制器组织代码、编写自定义中间件（验证、认证），以及处理字符串、布尔值和数字类型的查询参数过滤。该课程包含实践挑战和编码练习，以强化后端技能和类型安全。
+2026-07-24 22:24:13
 
 
 
