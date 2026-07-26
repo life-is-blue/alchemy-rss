@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-26 09:48:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-26 13:23:40 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [Fedora-45-香肠工厂](https://supakeen.com/weblog/the-fedora-45-sausage-factory/)
 
-2026-07-25 19:04:57 | 标签: 软件工程, 发布工程, Linux, 开源, 包管理
-
-> 这篇详细的文章解释了 Fedora 如何将源代码转化为可交付的制品，例如 ISO、云镜像、容器镜像和 OSTree 部署。文章从打包者向 dist-git 推送 Git 提交开始（其中存储了源代码定义和 spec 文件），然后跟踪通过 Koji 的 hub-and-spoke 系统进行的构建过程，该系统使用干净的 Mock chroot 和基于标签的构建目标。更新由 Bodhi 通过基于 karma 的测试进行门控，对于关键路径包有更严格的规则。然后 Pungi 编排组合（compose），快照包集，解析 comps 和变体，通过 lorax 生成 boot.iso，并分层包以生成最终的安装程...
+2026-07-25 19:04:57
 
 
 
