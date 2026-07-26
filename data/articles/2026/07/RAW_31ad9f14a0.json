@@ -1,0 +1,60 @@
+{
+  "id": "RAW_31ad9f14a0",
+  "title": "Zalando 如何构建每秒处理一百万次请求的进程内客户端负载均衡器",
+  "url": "https://www.infoq.com/news/2026/07/client-side-load-balancer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-25 14:43:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The engineering team at Zalando recently described the <a href=\"https://engineering.zalando.com/posts/2026/06/client-side-load-balancing.html\">design and implementation of an in-process, client-side load balancer</a> for a high-throughput API handling around 1 million requests per second. The result was more predictable latency, a drop in infrastructure costs, and better visibility into where failures actually originate.</p>\n   <p><a href=\"https://engineering.zalando.com/posts/2025/03/event-driven-to-api.html\">Zalando's Product Read API</a> is designed to serve millions of requests per second with single-digit-millisecond latency across the 25 markets of one of the largest European online fashion retailers. Its batch endpoint fans a single request into up to 100 parallel calls to individual product pods, each transiting <a href=\"https://github.com/zalando/skipper\">Skipper</a>, the shared cluster edge load balancer. As a batch waited on the slowest of 100 hops through infrastructure the team didn't own, they could not separate Skipper latency spikes from their own. To address that, they moved routing for high fan-out internal traffic in-process, while keeping Skipper for edge and single-GET traffic. <a href=\"https://www.linkedin.com/in/cjbooms/\">Conor Gallagher</a>, senior principal engineer at Zalando, explains:</p>\n   <blockquote>\n    <p>We decided that for high fan-out internal traffic, the routing decision should live inside the calling process itself. Edge traffic, where Skipper excels, should stay exactly where it is. We were not replacing Skipper; we were graduating the internal fan-out path to a client-side load balancer that runs inside the process.</p>\n   </blockquote>\n   <p><em><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/07/client-side-load-balancer/news/2026/07/client-side-load-balancer/en/resources/1cslb-consistent-hash-load-balancing-after-1783270121535.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/07/client-side-load-balancer/en/resources/1cslb-consistent-hash-load-balancing-after-1783270121535.jpg\" rel=\"share\"></em></p>\n   <p><em>Product-sets routing directly to product pods. Source: Zalando blog</em></p>\n   <p>The team reimplemented Skipper's exact algorithm (xxHash64, 100 virtual nodes per endpoint) so both paths route identical keys to identical pods during migration, avoiding cache splits, with unit tests pinning this behavior. Gallagher writes:</p>\n   <blockquote>\n    <p>This means that adding or removing an endpoint remaps only about 1/N of keys, minimising cache churn. And because both Skipper and our library use the same hash function and the same number of virtual nodes, they produce identical rings for the same set of pods.</p>\n   </blockquote>\n   <p>The article covers the engineering decisions and challenges of client-side routing, including consistent hashing, occupancy-based load balancing, cache-aware scaling, rollout strategy, observability improvements, and experiments with availability-zone routing.</p>\n   <p>The team replaced control-plane-crashing polling with a watch-based Kubernetes informer, rebuilt a pipeline that took hours into fast, reversible deploys, and ramped the load balancer from 1% to 100% behind toggles, shrinking Skipper's fleet from 50+ pods to 8 and cutting deployment daily cost from $450 to $110. To eliminate scale-up latency spikes, they added N-ring fade-in over 30 seconds on a ^2.5 curve so new pods warm only the products they'll actually serve. Werner Vogels, CTO of Amazon, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7478418168869257216/\">writes</a>:</p>\n   <blockquote>\n    <p>I am not a big fan of doing this client-side, for a whole slew of reasons, but this is impressive engineering by the Zalando team. I like the \"lessons learned\" they conclude with.</p>\n   </blockquote>\n   <p>Alexey Kuznetsov, principal engineer at AWS, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7478418168869257216?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7478418168869257216%2C7478565621895688192%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287478565621895688192%2Curn%3Ali%3Aactivity%3A7478418168869257216%29\">comments</a>:</p>\n   <blockquote>\n    <p>Client side load balancing was kind of a revelation for me when I moved from Amazon to Google. (...) I think this thinking needs to be more prominent.</p>\n   </blockquote>\n   <p>While Zalando’s attempt at AZ-aware routing was meant to cut inter-AZ costs, it fragmented caches and triggered DynamoDB read explosions. With the new approach, they hardened the path with a single jittered retry, FIFO overload shedding, and richer logging that exposed brief node-level freezes the balancer now routes around on its own.</p>\n   <p>Highlighting that Zalando built its own client-side load balancer only because they sat at a genuine extreme edge case, Gallagher concludes:</p>\n   <blockquote>\n    <p>Should you build your own? For almost everyone, the answer is don't. A mature proxy like Skipper or Envoy gives you consistent-hash routing out of the box, maintained by someone else and hardened by thousands of other users.</p>\n   </blockquote>\n   <p>On Hacker News, a user questions the <a href=\"https://news.ycombinator.com/item?id=48745118\">choice to develop an independent LB module</a>:</p>\n   <blockquote>\n    <p>The approaches described in the article are clever and the results are impressive, so kudos to the team! However, while reading, it felt weird that they treated Skipper as a third-party dependency, even though it is developed and operated by their colleagues. I mean, they could've tried contributing some updates and improvements to Skipper, maybe reusing Skipper's discovery mechanism.</p>\n   </blockquote>\n   <p>While Skipper is open source and available on GitHub, the new client-side load balancer is not published and remains internal to Zalando.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Zalando Built an In-Process Client-Side Load Balancer for One Million Requests per Second\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/client-side-load-balancer/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784961780000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Zalando 为一个处理 1M req/s 的高吞吐 API 构建了进程内客户端负载均衡器，实现了可预测的延迟、降低成本并提升故障可见性，同时警告大多数团队不要自行构建。",
+  "oneSentenceSummary": "Zalando 为一个处理 1M req/s 的高吞吐 API 构建了进程内客户端负载均衡器，实现了可预测的延迟、降低成本并提升故障可见性，同时警告大多数团队不要自行构建。",
+  "summary": "本文详细介绍了 Zalando 工程团队如何为其产品读取 API（Product Read API）设计并实现一个客户端负载均衡器，该 API 在 25 个市场中每秒处理约 100 万次请求。面对共享集群边缘负载均衡器（Skipper）在高扇出内部流量中导致的不可预测延迟尖峰，他们将路由决策移至进程内，同时保留 Skipper 处理边缘流量。关键的工程决策包括：重新实现 Skipper 的一致性哈希算法（xxHash64，每个端点 100 个虚拟节点）以确保迁移期间路由一致；将轮询替换为基于 Watch 的 Kubernetes Informer 以实现更快的部署；新增 N-ring 30 秒淡入机制以避免扩容延迟尖峰。结果：Skipper 集群从 50+ 个 Pod 缩减至 8 个，每日部署成本从 450 美元降至 110 美元，更强的可观测性暴露了节点级别的冻结问题。文章还介绍了因缓存碎片化而失败的 AZ 感知路由实验，并引用了 Werner Vogels 和 Hacker News 的关键观点。团队强烈建议大多数用例不要构建客户端负载均衡器，推荐使用 Skipper 或 Envoy 等成熟的代理。",
+  "mainPoints": [
+    {
+      "point": "Zalando 构建了一个进程内客户端负载均衡器，以解决共享边缘负载均衡器在高扇出内部流量中导致的延迟不可预测问题。",
+      "explanation": "批量端点通过 Skipper 将一个请求扇出到多达 100 个产品 Pod 的并行调用，使得延迟取决于最慢的跳点。将路由移至进程内后消除了这种依赖。"
+    },
+    {
+      "point": "他们重新实现了 Skipper 精确的一致性哈希算法，以确保迁移期间路由一致，避免缓存分裂。",
+      "explanation": "使用 xxHash64 和每个端点 100 个虚拟节点，两条路径将相同的键路由到相同的 Pod，最小化了端点变化时的缓存抖动。"
+    },
+    {
+      "point": "新的负载均衡器显著降低了基础设施成本：Skipper 集群从 50+ 个 Pod 缩减至 8 个，每日成本从 450 美元降至 110 美元。",
+      "explanation": "将轮询替换为基于 Watch 的 Kubernetes Informer 实现了快速、可逆的部署，而客户端方案消除了为内部流量保留大型 Skipper 集群的需求。"
+    },
+    {
+      "point": "他们实现了 N-ring 30 秒淡入机制（基于 ^2.5 曲线），以消除扩容时的延迟尖峰。",
+      "explanation": "新 Pod 仅预热它们将要服务的产品，避免了扩容事件期间的缓存未命中与延迟尖峰。"
+    },
+    {
+      "point": "团队强烈建议大多数用例不要构建客户端负载均衡器。",
+      "explanation": "像 Skipper 或 Envoy 这样的成熟代理开箱即用地提供一致性哈希路由，由众多用户维护和加固。Zalando 的案例是一个极端的边缘情况。"
+    }
+  ],
+  "keyQuotes": [
+    "我们决定，对于高扇出的内部流量，路由决策应位于调用进程内部。而边缘流量（Skipper 的强项）则应保持现状。我们并非取代 Skipper，而是将内部扇出路径升级为运行在进程内部的客户端负载均衡器。",
+    "这意味着添加或移除一个端点只会重新映射约 1/N 的键，从而最小化缓存抖动。而且，由于 Skipper 和我们的库使用相同的哈希函数和相同数量的虚拟节点，它们对同一组 Pod 会产生完全相同的哈希环。",
+    "你应该自己构建吗？对几乎所有人来说，答案都是不要。像 Skipper 或 Envoy 这样的成熟代理开箱即用地提供一致性哈希路由，由其他人维护并经过成千上万用户的加固。"
+  ],
+  "tags": [
+    "负载均衡",
+    "一致性哈希",
+    "系统设计",
+    "高可用",
+    "性能优化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 678,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784961780000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-25 14:43:00"
+}

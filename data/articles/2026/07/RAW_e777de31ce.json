@@ -1,0 +1,52 @@
+{
+  "id": "RAW_e777de31ce",
+  "title": "AI 根因分析：从模型推理转向上下文工程",
+  "url": "https://www.infoq.com/news/2026/07/ai-rca-context-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-25 17:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>A growing view among observability engineers holds that the reasoning ability of large language models is no longer the bottleneck in AI-assisted root cause analysis, and that the harder problem now sits in the pipeline that decides what data reaches the model.</p>\n   <p>For teams adding LLMs to incident response, the practical takeaway is that effort spent preparing context may pay off more than reaching for a larger model.</p>\n   <p>Most AI RCA efforts fall into two camps. Agent-based designs hand the model tools and let it investigate, choosing what telemetry to fetch as it reasons. Deterministic designs correlate signals up front and hand the model a single prepared context. Coroot's work reflects a broader industry shift towards that second camp: <a href=\"https://www.dynatrace.com/news/blog/what-is-causal-ai-deterministic-ai/\">Dynatrace's Davis AI</a> likewise leans on deterministic, topology-based causal analysis, traversing a real-time dependency map to pinpoint a root cause rather than turning an LLM loose in an open-ended agent loop. The two approaches break in different ways, which makes it hard to tell whether a failed diagnosis came from weak reasoning or from a harness that fed the model the wrong evidence.</p>\n   <p>Recent research from observability vendor Coroot tries to separate those two variables. In its <a href=\"https://coroot.com/blog/hard-part-of-ai-root-cause-analysis-is-no-longer-the-model/\">original research</a>, engineer Nikolay Sivko split RCA with an LLM into two jobs: reasoning over the data in front of it, and the harness that decides what data reaches the model and in what shape. He argued that \"can AI do RCA?\" is the wrong question, because the two jobs need to be measured apart.</p>\n   <p>Coroot's pipeline correlates signals into findings and passes them to the model in one focused context with no agent loop, which lets a wrong answer be blamed on the model rather than on missing evidence. To test it, Sivko built one scenario: a <a href=\"https://chaos-mesh.org/\">Chaos Mesh</a> NetworkChaos experiment injecting delay between a catalogue service and its Postgres database, slowing queries and pushing the front-end into 502 errors. The context deliberately included misleading signals, including query timings inflated by network round-trip time. He then ran the same prompt, around 9,800 tokens, against eleven models, asking each for the root cause, the cause-and-effect chain, and the immediate fix.</p>\n   <p>Closed frontier models Claude Opus 4.8, GPT-5.5 and Gemini 3.1 Pro all passed, naming the experiment and flagging the need to delete both it and its schedule. Larger open-weight models mostly kept pace. Lower down, Gemma 4 31B was the only self-hostable model to identify the root cause, while the larger Qwen3.6 35B and Qwen3 Coder Next both missed it.</p>\n   <p>The findings do not settle the debate. Agent-based approaches keep a genuine advantage, since a model that fetches its own data can pull signals a fixed pipeline never anticipated, which matters for novel incidents outside a predefined correlation set. They pay for that flexibility in operability, though. Accounts from <a href=\"https://www.zenml.io/llmops-database/ai-powered-incident-response-system-with-multi-agent-investigation\">ZenML and Incident.io</a> describe multi-agent LLM investigations as notoriously hard to debug in production, because a failed run leaves no clean stack trace, only unpredictable prompt interactions and emergent coordination between agents. That fragility pushes many practitioners the other way: engineers <a href=\"https://www.reddit.com/r/ExperiencedDevs/comments/1nqlm09/agentic_ai_vs_deterministic_workflows_with_llm/\">discussing the trade-off on Reddit</a> report scrapping fully agentic designs in favour of mostly deterministic workflows with a narrow LLM step, citing better reliability and lower token cost. Deterministic pipelines trade some of that flexibility for repeatability and cleaner evaluation, which is much of why the industry increasingly treats the harness, not the model, as the hardest part of AI RCA.</p>\n   <p>On cost, Sivko noted that a single short call runs a few cents even on frontier models, because the correlation work happens before the model is called. He judged that the reasoning part of AI RCA \"is basically solved\" and that the real work is now \"preparing the right, compact context for the model before you call it\", a conclusion that points the next round of engineering effort at the harness rather than the model. That framing echoes a wider push around context engineering. Guidance from <a href=\"https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents\">Anthropic</a> and <a href=\"https://www.langchain.com/blog/context-engineering-for-agents\">LangChain</a>, along with observability vendor <a href=\"https://www.mezmo.com/learn/context-engineering-for-observability-how-to-deliver-the-right-data-to-llms\">Mezmo</a>, converges on the same idea: that curating the smallest set of high-signal, compact context is now a core discipline for making LLM-based reasoning and observability reliable.</p>\n   <p><!-- notionvc: 36125927-d06f-4090-b7e2-391983bbc7c5 --></p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AI Root Cause Analysis Shifts from Model Reasoning to Context Engineering\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/ai-rca-context-engineering/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1784970000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "可观测性工程师日益认同，AI 辅助根因分析的瓶颈不在于模型推理，而在于上下文管道，确定性方法正逐步超越智能体设计方案。",
+  "oneSentenceSummary": "可观测性工程师日益认同，AI 辅助根因分析的瓶颈不在于模型推理，而在于上下文管道，确定性方法正逐步超越智能体设计方案。",
+  "summary": "本文报道了可观测性工程师间逐渐形成的共识：大型语言模型的推理能力已不再是 AI 辅助根因分析的限制因素。基于 Coroot 公司 Nikolay Sivko 的原创研究，文章指出当前更棘手的问题在于准备和筛选数据以输入模型的管道环节。Sivko 将根因分析拆分为两个独立工作——数据推理与上下文准备，并在受控的 Chaos Mesh 实验中测试了 11 个模型。所有三个封闭前沿模型（Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro）均通过测试，而仅有一个可自托管模型（Gemma 4 31B）正确识别了根因。文章对比了确定性管道（以灵活性换取可重复性与更清晰的评估）与基于智能体的方法（能获取管道无法预见的信号，但极难调试）。来自 Anthropic、LangChain 和 Mezmo 的行业指导均聚焦于上下文工程——精选最小的高信号上下文集合——将其视为构建可靠 LLM 可观测性的新兴核心原则。",
+  "mainPoints": [
+    {
+      "point": "AI 根因分析中模型推理不再是瓶颈——上下文管道才是。",
+      "explanation": "Sivko 的研究将根因分析拆分为推理与上下文准备两个任务。在受控实验中，对 11 个模型的测试表明，前沿模型均能通过，说明应将精力集中在管道而非模型上。"
+    },
+    {
+      "point": "确定性管道以灵活性换取可重复性与可调试性。",
+      "explanation": "预关联的上下文可实现更清晰的评估与更低的 token 成本，但基于智能体的设计能捕捉固定管道从未预见的信号——对于超出预定义关联范围的新颖事件至关重要。"
+    },
+    {
+      "point": "上下文工程正成为 LLM 可靠性的核心原则。",
+      "explanation": "来自 Anthropic、LangChain 和 Mezmo 的指导均聚焦于精选最小的高信号、紧凑上下文集合，以此作为实现 LLM 推理与可观测性可靠性的关键。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 根因分析的推理部分基本已解决，真正的工作现在是在调用模型之前为其准备好正确且紧凑的上下文。",
+    "这两种方法以不同方式失效，因此很难判断一次失败的诊断究竟是源于推理薄弱，还是管道向模型提供了错误的证据。",
+    "精选最小的高信号、紧凑上下文集合，如今已成为使基于 LLM 的推理与可观测性可靠的核心原则。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 智能体",
+    "上下文工程",
+    "可观测性",
+    "RAG"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 687,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1784970000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-25 17:00:00"
+}
