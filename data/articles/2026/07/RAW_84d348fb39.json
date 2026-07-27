@@ -1,0 +1,60 @@
+{
+  "id": "RAW_84d348fb39",
+  "title": "Amazon EKS 新增 Kubernetes 版本回滚功能，升级后 7 天内可回退",
+  "url": "https://www.infoq.com/news/2026/07/eks-version-rollback/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-07-26 14:04:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Amazon EKS has recently introduced <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/rollback-cluster.html\">support for Kubernetes version rollbacks</a>, letting practitioners revert a cluster's control plane to its previous Kubernetes version within 7 days of an upgrade if issues arise. The feature reduces the risk of in-place cluster upgrades by giving teams a safety net to recover quickly from problematic updates.</p>\n   <p>EKS reverts the Kubernetes API server and control plane components while preserving all <code>etcd</code> data, workloads, and persistent volumes. According to the <a href=\"https://docs.aws.amazon.com/eks/latest/userguide/rollback-cluster.html\">documentation</a>, for clusters running EKS Auto Mode, EKS automatically rolls back Auto Mode worker nodes before reverting the control plane, with options to speed up or cancel the process.</p>\n   <p>Explaining why \"upgrading a Kubernetes control plane has long been a one-way door,\" <a href=\"https://www.linkedin.com/in/micahwalter\">Micah Walter</a>, senior solutions architect at AWS, <a href=\"https://aws.amazon.com/blogs/aws/upgrade-amazon-eks-clusters-with-confidence-using-kubernetes-version-rollbacks/\">writes</a>:</p>\n   <blockquote>\n    <p>With Kubernetes releasing three minor versions per year, teams managing hundreds of clusters, especially in regulated environments, often delay upgrades entirely because they aren’t confident they can recover if something goes wrong. The result is clusters stuck on older versions, missing security patches, and eventually running up against extended support timelines.</p>\n   </blockquote>\n   <p>Unlike <a href=\"https://aws.amazon.com/ecs/\">Amazon ECS</a>, AWS's proprietary container orchestrator, EKS is a managed AWS service that runs and maintains the Kubernetes control plane, allowing developers to deploy and operate containerized applications.</p>\n   <p>Rollbacks work one minor version at a time, mirroring EKS's incremental upgrade path. EKS runs cluster insights to check rollback readiness, surfacing issues like node version mismatches or add-on dependencies before you proceed. Use<code> --force</code> to skip these checks.</p>\n   <p>Open source Kubernetes lacked a control plane rollback, with <a href=\"https://github.com/kubernetes/enhancements/blob/master/keps/sig-architecture/4330-compatibility-versions/README.md\">KEP-4330</a> adding emulated versions to enable rollbacks, but this limitation has led organizations to adopt workarounds such as bake periods, staggered groups, automated sign-offs, and lengthy upgrade cycles. The rollback capability on EKS has been a long-standing request from the AWS community, with developers previously discussing various <a href=\"https://www.reddit.com/r/kubernetes/comments/1iw7puq/amazon_eks_downgrade_a_practical_solution/\">workarounds</a>. Ismail Baig, senior cloud &amp; DevOps leader at Uniphore, <a href=\"https://www.linkedin.com/posts/ismailbaig007_kubernetes-eks-aws-share-7478744543916388353-3y2H/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">comments</a>:</p>\n   <blockquote>\n    <p>AWS just gave EKS teams something we've been asking for years: native Kubernetes rollback (...) Before this, teams had two workarounds, both expensive: Blue/green cluster deployments that doubled infra cost during upgrades. Manual snapshots that ate engineering hours and still weren't guaranteed to work cleanly.</p>\n   </blockquote>\n   <p>AWS is not the first cloud provider to add rollback features to managed Kubernetes clusters: while Azure AKS offers only partial support, limited to <a href=\"https://learn.microsoft.com/en-us/azure/aks/roll-back-node-pool-version\">node pool rollbacks</a>, GKE introduced <a href=\"https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-gets-minor-version-rollback\">control plane minor-version rollbacks</a> with GKE 1.33, built on an upstream Kubernetes capability that Google developed with the community. Walter adds:</p>\n   <blockquote>\n    <p>To give you control over this process, we’ve introduced a cancel API that lets you stop a node rollback at any point. If you decide the rollback is taking too long or you want to change your approach, you can cancel and adjust your disruption budgets to accelerate things, or choose a different path forward.</p>\n   </blockquote>\n   <p>Corey Quinn, chief cloud economist at The Duckbill Group, writes in his<a href=\"https://www.lastweekinaws.com/newsletter/\"> newsletter</a>:</p>\n   <blockquote>\n    <p>An undo button for Kubernetes upgrades, arriving only after years of ops teams building bake periods and month-long ceremonies to avoid the one-way door.</p>\n   </blockquote>\n   <p>Ashref Gamoudi, DevOps engineer at Tnker, <a href=\"https://www.linkedin.com/posts/ashref-gamoudi_aws-amazoneks-kubernetes-activity-7479925201284079620-kmbt\">adds</a> on LinkedIn:</p>\n   <blockquote>\n    <p>AWS just solved one of the biggest fears of every Kubernetes engineer.</p>\n   </blockquote>\n   <p>Kubernetes version rollbacks are available now at no additional cost in all regions where EKS is available. Control plane rollbacks apply to all EKS clusters, whereas node rollbacks are limited to clusters running EKS Auto Mode. Rollbacks are supported for Kubernetes versions in both EKS standard and extended support.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Amazon EKS Adds Kubernetes Version Rollback Within 7 Days of an Upgrade\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/eks-version-rollback/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1785045840000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Amazon EKS 现支持在升级后 7 天内回滚 Kubernetes 版本，为团队提供安全网，可在保留工作负载和数据的同时回退控制平面。",
+  "oneSentenceSummary": "Amazon EKS 现支持在升级后 7 天内回滚 Kubernetes 版本，为团队提供安全网，可在保留工作负载和数据的同时回退控制平面。",
+  "summary": "本文报道了 Amazon EKS 对 Kubernetes 版本回滚的新支持，这是一个用户长期要求的功能，允许用户在升级后 7 天内将集群的控制平面回滚到之前的次版本。文章解释了该功能的机制：回滚仅影响控制平面，保留 etcd 数据和工作负载；对于 EKS Auto Mode 集群，工作节点会自动回滚。文章提供了背景说明其重要性——传统上升级是单向门，导致团队推迟升级或采用昂贵的工作区方案，如蓝绿部署或手动快照。它还将 EKS 的功能与 Azure AKS（部分回滚，仅节点池）和 GKE（控制平面回滚，源自上游 Kubernetes）进行了比较。新功能在所有 EKS 区域均可使用，无需额外费用，支持标准和扩展支持版本。",
+  "mainPoints": [
+    {
+      "point": "EKS 现支持在升级后 7 天内将控制平面回滚到之前的 Kubernetes 版本。",
+      "explanation": "回滚会还原 API 服务器和控制平面组件，同时保留所有 etcd 数据、工作负载和持久卷，提供快速恢复路径。"
+    },
+    {
+      "point": "该功能解决了一个长期存在的痛点：传统上升级是单向门，导致升级恐惧和延迟。",
+      "explanation": "AWS 高级解决方案架构师 Micah Walter 指出，管理数百个集群的团队往往因对恢复缺乏信心而完全推迟升级，导致集群停滞、缺少安全补丁。"
+    },
+    {
+      "point": "EKS 回滚每次回退一个次版本，并通过集群洞察进行就绪检查。",
+      "explanation": "用户可以运行集群洞察来发现节点版本不匹配或附加组件依赖等问题；--force 标志可绕过这些检查。"
+    },
+    {
+      "point": "AWS 并非首个提供此功能的厂商：GKE 更早通过上游 Kubernetes 引入了控制平面回滚；Azure AKS 仅提供部分节点池回滚。",
+      "explanation": "文章提供了竞争背景，指出 EKS 的原生回滚消除了蓝绿部署或手动快照等昂贵的工作区方案。"
+    },
+    {
+      "point": "回滚功能在所有 EKS 区域免费提供，支持标准和扩展支持的 Kubernetes 版本。",
+      "explanation": "这种低摩擦的可用性旨在通过降低运维风险来鼓励更频繁的升级。"
+    }
+  ],
+  "keyQuotes": [
+    "升级 Kubernetes 控制平面长久以来一直是单向门",
+    "Kubernetes 升级的撤销按钮，在运维团队多年建立观望期和长达数月的仪式来规避单向门之后才终于到来。",
+    "AWS 刚刚解决了每一位 Kubernetes 工程师最大的恐惧之一。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "AWS EKS",
+    "云原生",
+    "DevOps",
+    "容器"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 80,
+  "wordCount": 567,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785045840000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-26 14:04:00"
+}

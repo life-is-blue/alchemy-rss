@@ -1,0 +1,55 @@
+{
+  "id": "RAW_5253151f52",
+  "title": "深入探究驱动代币转售与欺诈的中继市场",
+  "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
+  "date": "2026-07-27 03:30:54",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">26th July 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://vectoral.com/blog/token-relay-market\">An Inside Look at the Relay Market Powering Token Resellers and Fraud</a></strong> (<a href=\"https://news.ycombinator.com/item?id=49058993\" title=\"Hacker News\">via</a>) Fascinating investigation by Matt Lenhard into the market that has grown up around reselling LLM tokens at a discount by pooling API keys from various sources.</p>\n    <p>This looks to be mostly a thing in China. Resellers sell access to an LLM proxy that offers significant discounts on regular API pricing, which they achieve by abusing free trials, proxying through unprotected support bots, or sometimes through stolen credit cards or chargeback attacks.</p>\n    <p>The software they are using for these proxies is open source - mostly <a href=\"https://github.com/songquanpeng/one-api\">one-api</a> and its more actively developed fork <a href=\"https://github.com/QuantumNous/new-api\">new-api</a>, both legitimate API proxy products which can be used to load. balance requests across a pool of API credentials.</p>\n    <p>The buyers are seeking cheap tokens, avoiding geo-restrictions, and in some cases collecting data for model distillation.</p>\n    <p>I've been cautious about exposing my own LLM-driven applications publicly out of fear of abuse leading to big token bills. The existence of this marketplace makes me even more cautious: there's now an entire ecosystem that can profit from finding a new unprotected endpoint to exploit.</p>\n    <p>LLM vendors <em>really</em> need to get better at offering strict caps for their API keys. I want my LLM apps to stop working the moment they hit a dollar threshold I've set for a period of time.</p>\n    <p>Here's <a href=\"https://www.v2ex.com/t/1196011\">the (Chinese language) forum thread</a> that served as the principal source for Matt's article.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文概述了对通过滥用免费试用、被盗凭证和开源代理软件以降低价格转售 LLM API 代币的地下市场的调查。",
+  "oneSentenceSummary": "本文概述了对通过滥用免费试用、被盗凭证和开源代理软件以降低价格转售 LLM API 代币的地下市场的调查。",
+  "summary": "文章引用了 Matt Lenhard 的调查，揭示了代币转售商（主要在中国运营）如何通过利用免费试用、未受保护的支持机器人、被盗信用卡和退款攻击来提供折扣的 LLM API 访问。这些转售商使用诸如 one-api 和 new-api 之类的开源代理工具来汇总凭证并负载均衡请求。买家包括寻求更便宜代币的开发者、绕过地理限制的用户以及收集数据以进行模型蒸馏的人。作者 Simon Willison 对该生态系统发表评论，表达了对因滥用导致高额代币账单而公开暴露自己的 LLM 应用的谨慎，并呼吁供应商提供严格的 per-key 消费上限，以防止因滥用导致的失控成本。",
+  "mainPoints": [
+    {
+      "point": "转售商利用免费试用、未受保护的机器人和被盗信用卡提供折扣代币。",
+      "explanation": "中国的中继市场利用开源代理软件汇总欺诈获取的凭证，并以显著折扣转售访问权限。"
+    },
+    {
+      "point": "开源 one-api 和 new-api 被重新用于恶意转售。",
+      "explanation": "这些合法的 API 代理产品被改造为在被盗或滥用的 API 密钥之间负载均衡请求，从而实现了中继市场。"
+    },
+    {
+      "point": "买家的动机包括节省成本、绕过限制以及进行模型蒸馏。",
+      "explanation": "需求来源于想要更便宜代币的开发者、规避地理封锁的用户以及收集数据以进行模型蒸馏或复制的人。"
+    },
+    {
+      "point": "作者呼吁 LLM 供应商实施严格的 per-key 消费上限。",
+      "explanation": "Simon Willison 强调需要设定硬性美元阈值，以保护开发者免受因滥用导致的成本激增。"
+    }
+  ],
+  "keyQuotes": [
+    "我一直对公开暴露自己的 LLM 驱动应用持谨慎态度，担心滥用会导致巨额代币账单。此市场的存在让我更加谨慎：如今已有一个完整的生态系统，可以通过发现新的未受保护端点来牟利。",
+    "LLM 供应商真的需要在为其 API 密钥提供严格上限方面做得更好。我希望我的 LLM 应用在达到我设定的美元阈值时立即停止工作。"
+  ],
+  "tags": [
+    "LLM API",
+    "代币转售",
+    "AI 安全",
+    "API 滥用",
+    "开源代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 245,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785094254000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-27 03:30:54"
+}

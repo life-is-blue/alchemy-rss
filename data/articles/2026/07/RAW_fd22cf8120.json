@@ -1,0 +1,44 @@
+{
+  "id": "RAW_fd22cf8120",
+  "title": "Opus 5 错误率上升报告",
+  "url": "https://status.claude.com/incidents/zftg3gqkmv18",
+  "date": "2026-07-26 17:18:34",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"layout-content status status-incident\">\n   <div class=\"container\">\n    <div class=\"page-title\">\n     <div class=\"font-largest color-secondary subheader \">\n      Incident Report for <a class=\"color-secondary\" href=\"https://status.claude.com/\">Claude</a>\n     </div>\n     <a role=\"button\" id=\"btn-subscribe-modal-zftg3gqkmv18\" class=\"flat-button subscribe-button\" data-toggle=\"modal\" href=\"#subscribe-modal-zftg3gqkmv18\">Subscribe to Updates</a>\n    </div>\n    <div class=\"incident-updates-container\">\n     <!-- postmortem if it's published -->\n     <!-- incident updates in reverse order -->\n     <div class=\"row update-row\">\n      <h2 class=\"update-title span3 font-large\">Monitoring</h2>\n      <div class=\"update-container span9\">\n       <div class=\"update-body font-regular\">\n        <span class=\"whitespace-pre-wrap\">A fix has been implemented and we are monitoring the results.</span>\n       </div>\n       <div class=\"update-timestamp font-small color-secondary\">\n        Posted <span class=\"ago\" data-datetime-unix=\"1785062044000\"></span>Jul <var data-var=\"date\">26</var>, <var data-var=\"year\">2026</var> - <var data-var=\"time\">10:34</var> UTC\n       </div>\n      </div>\n     </div>\n     <div class=\"row update-row\">\n      <h2 class=\"update-title span3 font-large\">Update</h2>\n      <div class=\"update-container span9\">\n       <div class=\"update-body font-regular\">\n        <span class=\"whitespace-pre-wrap\">We are continuing to work on a fix for this issue.</span>\n       </div>\n       <div class=\"update-timestamp font-small color-secondary\">\n        Posted <span class=\"ago\" data-datetime-unix=\"1785061701000\"></span>Jul <var data-var=\"date\">26</var>, <var data-var=\"year\">2026</var> - <var data-var=\"time\">10:28</var> UTC\n       </div>\n      </div>\n     </div>\n     <div class=\"row update-row\">\n      <h2 class=\"update-title span3 font-large\">Identified</h2>\n      <div class=\"update-container span9\">\n       <div class=\"update-body font-regular\">\n        <span class=\"whitespace-pre-wrap\">The issue has been identified and a fix is being implemented.</span>\n       </div>\n       <div class=\"update-timestamp font-small color-secondary\">\n        Posted <span class=\"ago\" data-datetime-unix=\"1785059134000\"></span>Jul <var data-var=\"date\">26</var>, <var data-var=\"year\">2026</var> - <var data-var=\"time\">09:45</var> UTC\n       </div>\n      </div>\n     </div>\n     <div class=\"row update-row\">\n      <h2 class=\"update-title span3 font-large\">Investigating</h2>\n      <div class=\"update-container span9\">\n       <div class=\"update-body font-regular\">\n        <span class=\"whitespace-pre-wrap\">We are currently investigating this issue.</span>\n       </div>\n       <div class=\"update-timestamp font-small color-secondary\">\n        Posted <span class=\"ago\" data-datetime-unix=\"1785057432000\"></span>Jul <var data-var=\"date\">26</var>, <var data-var=\"year\">2026</var> - <var data-var=\"time\">09:17</var> UTC\n       </div>\n      </div>\n     </div>\n     <!-- affected components -->\n     <div class=\"components-affected font-small color-secondary border-color\">This incident affects: claude.ai, Claude Console (platform.claude.com), Claude API (api.anthropic.com), Claude Code, and Claude Cowork.</div>\n    </div>\n    <div class=\"page-footer border-color font-small\">\n     <a href=\"https://status.claude.com/\"><span style=\"font-family:arial\">←</span> Current Status</a> <span class=\"color-secondary powered-by\"><a class=\"color-secondary\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.atlassian.com/software/statuspage?utm_campaign=status.claude.com&amp;utm_content=SP-notifications&amp;utm_medium=powered-by&amp;utm_source=inapp\">Powered by Atlassian Statuspage</a></span>\n    </div>\n   </div>\n  </div>\n  <!-- all of the content_for stuff -->\n  <!-- FOR FLASH NOTICES -->\n  <!-- FOR ERROR -->\n </body>\n</html>",
+  "aiSummary": "这是一份关于 Claude Opus 错误率上升的事故报告，记录了从调查到实施修复的全过程。",
+  "oneSentenceSummary": "这是一份关于 Claude Opus 错误率上升的事故报告，记录了从调查到实施修复的全过程。",
+  "summary": "这份来自 Anthropic 状态页面的事故报告记录了一次影响 Claude Opus 的服务中断。报告按时间顺序记录了事件进展：09:17 UTC 开始调查，09:45 UTC 确认问题，10:28 UTC 开始着手修复，最终在 10:34 UTC 完成修复并进入监控阶段。此次中断影响了包括 claude.ai、Claude Console、Claude API、Claude Code 和 Claude Cowork 在内的多项服务。",
+  "mainPoints": [
+    {
+      "point": "Claude 服务出现错误率上升。",
+      "explanation": "此次事故专门影响了 Claude 的核心界面，包括 Web 应用、开发者控制台、API 以及 Claude Code 等专业工具。"
+    },
+    {
+      "point": "通过快速部署周期解决了此次事故。",
+      "explanation": "时间线显示，从最初调查到实施修复，整个过程大约在 50 分钟内完成。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "Claude",
+    "Anthropic",
+    "服务中断",
+    "AI API",
+    "事故报告"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 100,
+  "domain": "status.claude.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785057514000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-26 17:18:34"
+}

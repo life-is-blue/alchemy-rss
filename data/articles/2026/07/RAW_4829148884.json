@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4829148884",
+  "title": "GitHub - eouzoe/reel: 一种用于 AI 智能体工作空间状态和效果管理的协议",
+  "url": "https://github.com/eouzoe/reel",
+  "date": "2026-07-26 16:02:03",
+  "author": "eouzoe",
+  "siteName": "Hacker News - Newest: \"AI Agent\"",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown-heading\" dir=\"auto\"></div>\n  <p dir=\"auto\">reel is a protocol for the boundary between an AI agent's speculative work and the systems it does not own.</p>\n  <p dir=\"auto\">An agent reasons by attempting things. Some attempts cross that boundary: a message is posted, a row is written, a payment is taken. Once an action has crossed, no later decision — including the decision to abandon the line of reasoning that produced it — can retract it. reel exists to make the boundary transactional, so that an action the system decides to discard is never performed in the first place.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">What it is</h2>\n  </div>\n  <p dir=\"auto\">reel defines six content-addressed types — <code>Hash</code>, <code>Block</code>, <code>Ref</code>, <code>Delta</code>, <code>Capability</code>, <code>View</code> — three verbs — <code>fork</code>, <code>commit</code>, <code>abort</code> — and three invariants: reachability, the silencing of discarded irreversible effects, and capability narrowing.</p>\n  <p dir=\"auto\">The load-bearing decision is that a <code>View</code>'s pending side-effects are themselves a content-addressed <code>Block</code>. <code>commit</code> moves that block into the committed log and drains it; <code>abort</code> drops the reference, after which the block is unreachable and is collected. No path between the submission of an irreversible effect and <code>commit</code> can fire it, because the capability needed to fire one is constructed only inside <code>commit</code>'s drain. <code>abort</code> constructs none, so on the discard path the effect is, by construction, unable to run.</p>\n  <p dir=\"auto\">The verbs, the snapshot-isolation reading of a <code>View</code>, the capability model and the effect taxonomy are each taken from existing work — Gray (1981), Wang &amp; Zheng (2026), Berenson et al. (1995), Miller, Yee &amp; Shapiro (2003), Garcia-Molina &amp; Salem (1987). reel's contribution is their composition under a single content-addressed representation.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Why it is more than a single tool</h2>\n  </div>\n  <p dir=\"auto\">State, side-effects and capabilities are represented as the same kind of content-addressed block. One transactional kernel therefore provides rollback, audit and sharing for an entire workspace, rather than each being implemented again for each feature. A system that routes work across many external resources can rebuild its state-and-effect layer on this one kernel instead of reasoning about transactionality resource by resource.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">What is built</h2>\n  </div>\n  <ul dir=\"auto\">\n   <li><strong>The specification</strong> (<code>spec/</code>): the six types, three verbs and three invariants; the effect classes; the conformance criteria; the adapter interface.</li>\n   <li><strong>A Rust kernel</strong> (<code>crates/</code>):\n    <ul dir=\"auto\">\n     <li><code>reel-spec</code> — the protocol types. The namespace is a persistent, copy-on-write map, so a fork shares it in constant time.</li>\n     <li><code>reel-store</code> — a content-addressed block-and-ref store, with an in-memory backend and a redb-backed persistent one, and a reachability walker for collection.</li>\n     <li><code>reel-effects</code> — the sealed effect-class traits and the linear fire-capability.</li>\n     <li><code>reel-core</code> — the kernel. <code>fork</code> (constant-time copy-on-write inheritance with capability narrowing) and <code>abort</code> are implemented; <code>commit</code> follows.</li>\n     <li><code>adapters/</code>, <code>reel-cli</code> — the filesystem and remote adapters and the command-line surface, in progress.</li>\n    </ul></li>\n  </ul>\n  <p dir=\"auto\">The workspace builds on stable Rust and passes its test suite, which includes property-based tests over the kernel's invariants.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">What is next</h2>\n  </div>\n  <ul dir=\"auto\">\n   <li><code>commit</code> — precondition validation and the ordered drain of buffered effects.</li>\n   <li>The command-line tool — a dry-run loop that runs a process, displays its pending effects, and either commits or discards them.</li>\n   <li>The effect-interception layer — capturing a process's outbound effects through a replaceable backend, so that classifying a new service is the only work a new integration requires.</li>\n  </ul>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Building</h2>\n  </div>\n  <div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\">\n   <pre class=\"notranslate\"><code>cargo build --workspace\ncargo test  --workspace\n</code></pre>\n  </div>\n  <p dir=\"auto\">Rust 1.95 (stable), edition 2024.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Status</h2>\n  </div>\n  <p dir=\"auto\">Pre-release. The specification is settled; the kernel is under construction along the path described above. Interfaces may change.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Licence</h2>\n  </div>\n  <p dir=\"auto\">Apache-2.0. See <a href=\"https://github.com/eouzoe/reel/blob/master/LICENSE\">LICENSE</a>.</p>\n </body>\n</html>",
+  "aiSummary": "Reel 提出了一种内容寻址协议，使 AI 智能体的副作用具有事务性，从而实现跨工作空间资源的回滚、审计和共享。",
+  "oneSentenceSummary": "Reel 提出了一种内容寻址协议，使 AI 智能体的副作用具有事务性，从而实现跨工作空间资源的回滚、审计和共享。",
+  "summary": "Reel 定义了一种协议，将 AI 智能体的推测性工作及其副作用视为内容寻址块，使用了六种类型（哈希、块、引用、增量、能力、视图）、三种动词（分支、提交、中止）和三个不变量（可达性、丢弃的不可逆副作用静默化、能力缩小）。通过将待处理的副作用本身作为内容寻址块，系统可以事务性地提交或中止效果，通过单一内核为整个工作空间提供回滚、审计和共享。该项目包括一个 Rust 实现（spec、reel-spec、reel-store、reel-effects、reel-core、适配器和 CLI），该实现通过了基于属性的内核不变量测试，并计划未来的工作包括提交前提条件验证、命令行预演工具以及用于轻松集成新服务的效果拦截层。",
+  "mainPoints": [
+    {
+      "point": "Reel 将副作用视为内容寻址块，使其具有事务性。",
+      "explanation": "视图的待处理副作用本身就是一个块；提交将块移动到已提交日志中，而中止则丢弃引用，使得该效果不可达，从而永远不会执行。"
+    },
+    {
+      "point": "该协议在统一的内容寻址模型下复用了现有概念（Gray 1981， Wang & Zheng 2026 等）。",
+      "explanation": "六种类型、三种动词和三个不变量均来自先前的工作；Reel 的新颖之处在于将它们组合在单一的内容寻址表示中。"
+    },
+    {
+      "point": "Rust 内核为整个工作空间提供回滚、审计和共享。",
+      "explanation": "reel-core 实现了分支（写时复制并带有能力缩小）和中止；提交即将推出。存储提供了内存和持久化两种后端，并具有基于可达性的垃圾回收。"
+    },
+    {
+      "point": "未来的工作包括提交验证、CLI 预演循环和效果拦截层。",
+      "explanation": "这些补充将允许进行前提条件检查、效果的交互式预览，以及仅通过实现效果拦截的后端即可轻松集成新服务。"
+    }
+  ],
+  "keyQuotes": [
+    "reel 定义了六种内容寻址类型——哈希、块、引用、增量、能力、视图——三种动词——分支、提交、中止——以及三个不变量：可达性、丢弃的不可逆副作用的静默化以及能力缩小。",
+    "关键决策在于，视图的待处理副作用本身就是一个内容寻址块。提交将该块移动到已提交日志并清空它；中止则丢弃引用，之后该块不可达并被回收。",
+    "reel 的贡献在于它们在单一内容寻址表示下的组合。",
+    "该工作空间基于稳定 Rust 构建，并通过了其测试套件，其中包括基于属性的内核不变量测试。",
+    "效果拦截层——通过可替换的后端捕获进程的出站效果，从而使得对新服务进行分类成为新集成所需的唯一工作"
+  ],
+  "tags": [
+    "AI 智能体",
+    "协议设计",
+    "Rust",
+    "内容寻址存储",
+    "事务性副作用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 553,
+  "domain": "github.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_87ebb4f7",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785052923000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-26 16:02:03"
+}

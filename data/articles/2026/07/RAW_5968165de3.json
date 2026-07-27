@@ -1,0 +1,52 @@
+{
+  "id": "RAW_5968165de3",
+  "title": "没有 Stack Overflow，没有自动补全：80 年代的编程体验 | Comuniq",
+  "url": "https://comuniq.xyz/post?t=1439",
+  "date": "2026-07-26 17:58:11",
+  "author": "Comuniq Team",
+  "siteName": "Hacker News",
+  "content": "<!--<noscript>\n        <div style=\"color: red; text-align: center;\">\n            This site requires Javascript to work properly. Please enable Javascript in your browser.\n        </div>\n    </noscript>-->\n<html>\n <head></head>\n <body>\n  <div id=\"root\">\n   <div class=\"appBody postMod\">\n    <div class=\"modDescCmmt\">\n     <h1><a href=\"https://comuniq.xyz/categ?gr=Programming\">/Programming</a></h1>\n     <br>\n     <p style=\"color: grey;\">Learn to develop things, get out of debt, find answers and take part in coding and programming challenges.</p>\n     <br>\n     <span style=\"color: lightgrey;\">Members: 10</span>\n     <div class=\"join-btn\" id=\"joinBtn\">Join</div>\n     <br>\n     <br>\n     <span>Moderated by</span>: <span><a href=\"https://comuniq.xyz/profile?u=mozzapp\">mozzapp</a></span>\n    </div>\n    <div class=\"postzone\">\n     <div class=\"vtTitle\">\n      <div class=\"votesSession\">\n       <div class=\"vote Up\" onclick=\"toggleImg();\">\n        <img class=\"voteClk\" src=\"https://comuniq.xyz/assets/img/up_inativ.png\" alt=\"up\">\n       </div>\n       <span class=\"numbers dw\">4</span>\n       <div class=\"vote down\" onclick=\"downvo();\">\n        <img class=\"dwv\" src=\"https://comuniq.xyz/assets/img/dow_inative.png\" alt=\"up\">\n       </div>\n      </div>\n      <div class=\"postCont\">\n       <div class=\"titlp\"></div>\n       <div class=\"dataPost\">\n        <div class=\"datasOne\">\n         <span style=\"color: #ff6600;\" class=\"usrsub user\"><a style=\"color: #ff6600;\" href=\"https://comuniq.xyz/profile?u=mozzapp\">mozzapp</a></span> <span class=\"usrsub tmer\">1785059256</span> <span class=\"usrsub\">[<a id=\"subadd\" style=\"color: #707070; text-decoration: underline;\" href=\"https://comuniq.xyz/categ?gr=Programming\">Programming</a>]</span> <span class=\"usrsub\">0 comments</span>\n        </div>\n        <div class=\"dataTwo\">\n         <span class=\"sorce\"><a style=\"color: #ff6600;\" href=\"\"></a></span>\n        </div>\n       </div>\n       <div class=\"textbd\" id=\"textbd\">There was a kind of patience almost nobody practices anymore: opening a computer magazine, finding a program listing in BASIC or assembly spread across three or four pages, and starting to copy it. Line by line. No skipping, no \"close enough,\" because one extra space or a swapped parenthesis meant the program simply wouldn't run. I remember the sound of the keyboard clacking away for hours, that mechanical rhythm of someone more focused on not making a mistake than on actually understanding what they're typing. And it was normal to reach the end, sometimes after a whole afternoon, hit RUN, and have the screen throw back some syntax error on some line, with no real explanation. There was no Stack Overflow. No search button. There was just you, the magazine open on the desk, and the errata list that would come out — if it came out at all — in the next issue. Debugging, back then, was an almost physical thing. Comparing character by character what was on screen against what was printed on the page. Realizing that the \"1\" that looked like a lowercase \"l\" had tricked you for half an hour. Or that a DATA line was missing somewhere among thirty lines of numbers. It was slow, tedious at times, but it taught something people now try to simulate with exercises and tutorials: reading code carefully, understanding the structure before touching anything. And there was community in all of this, just scattered and slow, moving at the pace of the mail. People writing to the editors pointing out mistakes in the listing, others sending in variants of the same program, improved or adapted for a different computer. Letters to the editor were a kind of forum avant la lettre, except with weeks of delay between question and answer. Not so different from what happens today in a programming chat, except we traded paper and stamps for an instant reply — and honestly, I'm still not sure that was a good trade in every sense. It's not that things are worse now. Having autocomplete, having an AI that flags the error in seconds, having an entire community one click away — that saves hours that used to get lost without learning much, just frustration. But something also got lost along the way, and it's that obligation to read slowly, to understand every line because there was no shortcut available. Coding from a magazine wasn't efficient. It was something else entirely.</div>\n       <div class=\"cmmtFrm\">\n        <form method=\"POST\" id=\"cmtFrm\">\n         <input type=\"hidden\" name=\"user\" value=\"\" id=\"user\"> <input type=\"hidden\" name=\"ownp\" value=\"mozzapp\" id=\"ownp\"> <input type=\"hidden\" name=\"idp\" value=\"1439\" id=\"idpost\"> <textarea id=\"cmtText\" name=\"text\" placeholder=\"comment here\"></textarea>\n         <button type=\"submit\" class=\"cntBtn\">Comment</button>\n        </form>\n       </div>\n       <div class=\"downbody\">\n        <p class=\"site-tagline\">A social news and discussion community</p>\n        <ul class=\"ft\">\n         <li>Comuniq © 2026</li>\n         |\n         <li><a href=\"https://comuniq.xyz/allcomments\">Comments</a></li>\n         |\n         <li><a href=\"https://comuniq.xyz/terms\">Terms</a></li>\n         |\n         <li><a href=\"https://comuniq.xyz/guidelines\">Guidelines</a></li>\n         |\n         <li><a href=\"mailto:contact@comuniq.xyz\">Contact</a></li>\n        </ul>\n        <div class=\"searchFrm\">\n         <form action=\"#\">\n          <input type=\"text\" name=\"search\" autocomplete=\"off\" placeholder=\"type your search\" required>\n          <button class=\"btnSearch\">Search</button>\n         </form>\n        </div>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文通过回忆 80 年代手动输入杂志代码列表的经历，探讨了当时缓慢且易错的编程过程，以及深度代码理解能力与现代工具快捷方式之间的权衡。",
+  "oneSentenceSummary": "本文通过回忆 80 年代手动输入杂志代码列表的经历，探讨了当时缓慢且易错的编程过程，以及深度代码理解能力与现代工具快捷方式之间的权衡。",
+  "summary": "作者回忆起那个学习编程意味着翻开计算机杂志，逐行复制 BASIC 或汇编代码列表，并进行手动调试的时代。在没有 Stack Overflow 或即时搜索的情况下，任何一个拼写错误都可能导致程序中断，迫使开发者必须细致地阅读代码，并将屏幕上的每个字符与印刷页进行比对。当时的社区互动通过给编辑写信来实现，且存在数周的延迟。虽然现代工具——自动补全、AI 错误检测、即时论坛——节省了大量时间，但作者认为它们也削弱了缓慢阅读代码并理解每一行代码的习惯。从杂志中学习编程虽然效率低下，却培养了一种不同的纪律感和社区意识。",
+  "mainPoints": [
+    {
+      "point": "手动抄录杂志代码列表迫使开发者进行细致的逐行阅读。",
+      "explanation": "由于没有复制粘贴功能，一个字符的放错就会导致程序崩溃，因此开发者必须逐字符地将屏幕输出与打印的代码进行比对。"
+    },
+    {
+      "point": "社区互动是缓慢且基于纸质媒介的，类似于早期的论坛。",
+      "explanation": "读者通过给编辑写信来指出错误或提交变体代码，这种长达数周的交流过程依然促进了协作式的问题解决。"
+    },
+    {
+      "point": "现代工具加速了开发，但也侵蚀了深度的代码理解能力。",
+      "explanation": "自动补全、AI 诊断和即时论坛虽然节省了时间，但却减少了仔细阅读每一行代码的习惯，而作者认为这是一种非常有价值的技能。"
+    }
+  ],
+  "keyQuotes": [
+    "那时没有 Stack Overflow，没有搜索按钮。",
+    "它教会了人们现在试图通过练习和教程来模拟的东西：仔细阅读代码，在动手操作之前先理解其结构。",
+    "拥有自动补全，拥有能在几秒钟内标记错误的 AI，拥有触手可及的整个社区——这节省了原本会耗费在挫败感中、却学不到太多东西的时间。"
+  ],
+  "tags": [
+    "复古计算",
+    "编程历史",
+    "BASIC",
+    "调试",
+    "编程文化"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 78,
+  "wordCount": 462,
+  "domain": "comuniq.xyz",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785059891000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-26 17:58:11"
+}
