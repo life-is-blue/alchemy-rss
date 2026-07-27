@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-27 09:54:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-27 13:41:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [Amazon-EKS-新增-Kubernetes-版本回滚功能，升级后-7-天内可回退](https://www.infoq.com/news/2026/07/eks-version-rollback/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-26 14:04:00 | 标签: Kubernetes, AWS EKS, 云原生, DevOps, 容器
-
-> 本文报道了 Amazon EKS 对 Kubernetes 版本回滚的新支持，这是一个用户长期要求的功能，允许用户在升级后 7 天内将集群的控制平面回滚到之前的次版本。文章解释了该功能的机制：回滚仅影响控制平面，保留 etcd 数据和工作负载；对于 EKS Auto Mode 集群，工作节点会自动回滚。文章提供了背景说明其重要性——传统上升级是单向门，导致团队推迟升级或采用昂贵的工作区方案，如蓝绿部署或手动快照。它还将 EKS 的功能与 Azure AKS（部分回滚，仅节点池）和 GKE（控制平面回滚，源自上游 Kubernetes）进行了比较。新功能在所有 EKS 区域均可使用，无需额外费用...
+2026-07-26 14:04:00
 
 
 
