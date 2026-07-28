@@ -1,0 +1,61 @@
+{
+  "id": "RAW_56ddf64854",
+  "title": "工具链足矣（大多数情况）",
+  "url": "https://github.blog/company/the-harness-is-all-you-need-mostly/",
+  "date": "2026-07-28 02:00:00",
+  "author": "Burke Holland",
+  "siteName": "The GitHub Blog",
+  "content": null,
+  "aiSummary": "本文介绍了一种简单而高效的 GitHub Copilot 工作流程，强调掌握工具的核心功能，而非复杂的提示词或技能。",
+  "oneSentenceSummary": "本文介绍了一种简单而高效的 GitHub Copilot 工作流程，强调掌握工具的核心功能，而非复杂的提示词或技能。",
+  "summary": "作者分享了一个围绕 GitHub Copilot（称为“工具链”）的精简工作流，以最大化 AI 辅助开发。该工作流包含八个步骤：选择合适的 Copilot 界面（CLI 或应用）；启用 YOLO 模式以实现自主操作，但使用沙盒保障安全；从原型开始，通过可视化探索选项；使用模型进行系统规划，发现边界情况；通过 Autopilot 自动执行；通过人工审查和设计指导进行迭代；使用不同的 AI 模型进行 Rubber Duck 审查（交叉检查）；最后提交代码。核心理念是：有效使用 AI 的关键在于理解工具本身，而非依赖花哨的提示词或技能。文章包含了具体示例，例如构建日期选择器 Web 组件，并强调通过迭代和人类判断来保证质量。",
+  "mainPoints": [
+    {
+      "point": "掌握核心 AI 工具，而非追逐复杂提示词或附加功能。",
+      "explanation": "作者认为，生产力提升来自于深入理解 GitHub Copilot 的内置功能，而非安装大量技能或精心设计复杂的提示词。"
+    },
+    {
+      "point": "启用 YOLO 模式，使用沙盒实现智能体自主与安全。",
+      "explanation": "允许智能体无需批准即可执行命令，能极大加快工作速度，但应在 Codespaces 等隔离环境中进行，以防止数据泄露。"
+    },
+    {
+      "point": "尽早原型设计，在实施前发现细微差异。",
+      "explanation": "利用 AI 生成多种可视化或图表式原型，有助于澄清需求并避免代价高昂的返工，适用于 UI 元素和 API 设计。"
+    },
+    {
+      "point": "系统规划，让 AI 提出边界问题以完善需求说明。",
+      "explanation": "使用规划模式或类似'grill-me'的技能，促使深入思考问题，捕捉歧义并用人类专业知识引导模型。"
+    },
+    {
+      "point": "通过迭代的人工审查和跨模型审核坚持质量。",
+      "explanation": "人类必须利用品味和领域知识优化 AI 输出，并使用 Rubber Duck 审查（另一个 AI 模型）来发现盲点，确保最终结果的稳健性。"
+    }
+  ],
+  "keyQuotes": [
+    "我发现最大的生产力提升来自于我如何使用工具链以及对其理解的程度。",
+    "学会工具链一次，处处可用。",
+    "关键在于你要深入参与问题并引导模型。",
+    "坚持质量。对此毫不留情。"
+  ],
+  "tags": [
+    "AI编程",
+    "GitHub Copilot",
+    "工作流",
+    "原型设计",
+    "Autopilot"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 88,
+  "wordCount": 2846,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785175200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-28 02:00:00"
+}

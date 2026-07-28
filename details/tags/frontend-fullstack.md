@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-28 06:52:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-28 09:30:38 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -717,6 +717,30 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [在印刷与数字之间：MERSI-网站的打造过程](https://tympanus.net/codrops/2026/07/27/between-print-and-digital-the-making-of-mersis-website/)
+
+2026-07-27 21:18:10 | 标签: 网页设计, 建筑, 编辑设计, 交互设计, Webflow
+
+> 总部位于巴黎的建筑事务所 MERSI 委托 Codrops 对其在线形象进行全面改造。原网站依赖于通用的 Webflow 模板，这与事务所精致、精准的视觉身份显得格格不入。重新设计保留了 Webflow 作为 CMS 的功能，但重建了整个体验——包括结构、视觉方向、交互和自定义代码——以创造出一个感觉像是建筑书籍与交互对象相结合的数字环境。设计强调克制、材质感和编辑节奏，利用分屏滑块、翻转过渡和 GSAP 驱动的水平滚动来引导用户浏览精心策划的项目展示。技术实现包括使用 GSAP、Lenis 和其他库的自定义 JavaScript 层（Vite， Netlify），同时保留了客户的自主权。该项...
+
+
+
+### [Serverless-的整洁架构：可以随处迁移的业务逻辑](https://www.infoq.com/presentations/kotlin-serverless/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-07-27 19:26:00 | 标签: Serverless, 整洁架构, Spring Cloud Function, 云无关性, AWS Lambda
+
+> 演讲者 Elena van Engelen 探讨了 Serverless 计算中厂商锁定（vendor lock-in）的风险。她提出了一种针对函数即服务（FaaS）定制的简化版整洁架构解决方案。通过利用 Spring Cloud Function 进行依赖注入，并使用 Gradle 模块来强制执行架构边界，开发者可以将核心业务逻辑（领域层与应用层）与云特定的实现细节（基础设施层）分离。演示展示了如何通过仅更换基础设施适配器，就能将相同的业务逻辑无缝部署到 AWS Lambda 和 Azure Functions，从而确保核心逻辑与特定的云触发器及 S3 或 Azure Blob Storag...
+
+
+
+### [TanStack-Table-V9-Beta：支持-Tree-shaking-的特性、TanStack-Store-状态管理以及更低的内存占用](https://www.infoq.com/news/2026/07/tanstack-table-v9-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-07-27 13:45:00 | 标签: TanStack Table, JavaScript, 前端开发, 状态管理, Web 开发
+
+> 本文报道了热门 Headless UI 库 TanStack Table V9 的 Beta 版本发布。主要改进包括引入了可选特性模型以支持 Tree-shaking，使 Bundle 体积可根据需求灵活缩放，简单表格仅需 5kb，而企业级网格则可加载完整功能。此次更新还利用 TanStack Store 彻底重构了状态管理，通过提供细粒度的重新渲染控制来解决性能问题。此外，V9 引入了更清晰的插件模型和重写的 Devtools，以提升可扩展性和开发者体验。尽管状态流的变化较大，但维护者提供了 `useLegacyTable` hook 作为迁移路径，以方便现有用户逐步过渡。
 
 
 
@@ -1626,13 +1650,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1782,13 +1806,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3282,13 +3306,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4992,13 +5016,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
