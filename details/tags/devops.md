@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-28 09:30:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-28 12:55:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [如何构建生产就绪的-DevSecOps-平台：从-Homelab-到-AWS-全书](https://www.freecodecamp.org/news/how-to-build-a-production-ready-devsecops-platform-from-homelab-to-aws-full-book/)
 
-2026-07-28 02:30:27 | 标签: DevSecOps, Kubernetes, AWS, CI/CD, GitOps
-
-> 本文提供了一套从零开始构建 DevSecOps 平台的完整路线图。通过一个金融科技交易账本（ClearLedger）作为实践载体，引导读者逐步完成：搭建 Kubernetes、使用 GitHub Actions 实现 CI/CD、采用 ArgoCD 实现 GitOps，并通过 Gitleaks、Semgrep、Kyverno、Vault 和 Falco 构建多层安全防御。最后，通过 Terraform 和 EKS 完成向 AWS 的迁移。其教学方法强调在引入具体工具前先理解运维痛点，使其在实际技能提升和面试准备方面都非常高效。
+2026-07-28 02:30:27
 
 
 
