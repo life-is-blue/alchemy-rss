@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-30 04:44:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-30 06:49:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -38399,11 +38399,11 @@
 
 
 
-### [大多数公司根本没有为-AI-做好准备](https://baoyu.io/blog/2026-05-03/danielmiessler-status-2050666594188304484)
+### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
 
-2026-05-03T00:00:00.000Z
+2026-05-05T00:00:00.000Z
 
-> 企业用不好 AI，往往不是因为 AI 不够强，而是因为企业自己说不清目标、流程、责任和成本。
+> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
 
 
 
