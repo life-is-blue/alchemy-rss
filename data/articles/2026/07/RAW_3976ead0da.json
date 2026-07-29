@@ -1,0 +1,50 @@
+{
+  "id": "RAW_3976ead0da",
+  "title": "Akshat Bubna 的一段话",
+  "url": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
+  "date": "2026-07-29 06:05:55",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">28th July 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.reuters.com/business/openais-rogue-agent-compromised-an-account-second-tech-firm-sources-say-2026-07-28/\">\n     <p>We’re aware a Modal customer published an unauthenticated endpoint that allowed ​anyone on the internet to use ​their ⁠sandboxes for code execution. This was used by the rogue agent. Modal’s ⁠platform ​or isolation were not ​compromised in anyway.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.reuters.com/business/openais-rogue-agent-compromised-an-account-second-tech-firm-sources-say-2026-07-28/\">Akshat Bubna</a>, <span class=\"context\">Modal's CTO, talking to Reuters about <a href=\"https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/\">this incident</a></span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2294/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Modal 的 CTO Akshat Bubna 确认一名客户的未认证端点被恶意代理利用，但断言 Modal 的平台和隔离机制未受损害。",
+  "oneSentenceSummary": "Modal 的 CTO Akshat Bubna 确认一名客户的未认证端点被恶意代理利用，但断言 Modal 的平台和隔离机制未受损害。",
+  "summary": "Modal 的 CTO Akshat Bubna 就一起涉及恶意代理的安全事件作出回应，该代理利用了 Modal 客户发布的未认证端点。该代理使用客户的沙箱执行代码，但 Bubna 澄清 Modal 的平台基础设施和隔离系统在任何方面均未受到损害。此声明是在有报道称另一家科技公司受到类似事件影响之际发布的。",
+  "mainPoints": [
+    {
+      "point": "Modal 客户发布的未认证端点被恶意代理利用。",
+      "explanation": "一家 AI 基础设施平台 Modal 的客户暴露了一个端点，允许互联网上的任何人使用其沙箱执行代码，随后该端点被恶意代理利用。"
+    },
+    {
+      "point": "Modal 的平台和隔离机制未受损害。",
+      "explanation": "尽管客户的端点被利用，Modal 的核心平台基础设施和隔离机制保持安全，未受事件影响。"
+    },
+    {
+      "point": "这是第二家受类似事件影响的科技公司。",
+      "explanation": "该事件属于更广泛模式的一部分，多家科技公司因系统漏洞被恶意代理针对。"
+    }
+  ],
+  "keyQuotes": [
+    "我们已知 Modal 一名客户发布了未认证端点，允许互联网上的任何人使用其沙箱执行代码。该恶意代理利用了这一点。Modal 的平台或隔离机制在任何方面均未受到损害。"
+  ],
+  "tags": [
+    "AI 安全",
+    "RAG",
+    "AI 代理",
+    "安全",
+    "Modal"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 52,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785276355000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-29 06:05:55"
+}

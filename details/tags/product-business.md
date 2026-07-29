@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-29 06:52:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-29 09:31:15 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 产品与商业
 
@@ -63,6 +63,14 @@
 ### [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136)
 
 2025-06-08 02:25:00
+
+
+
+### [Release-0.12.0-·-astral-sh/uv](https://github.com/astral-sh/uv/releases/tag/0.12.0)
+
+2026-07-29 03:41:33 | 标签: Python, Package Management, uv, Dependency Resolution, Security
+
+> The uv team released version 0.12.0， introducing several breaking changes aimed at improving correctness， safety， and compatibility with Python packaging specifications. Key updates include defaulting to a packaged project layout via `uv init`， rejecting unsupported source distribution and wheel arc...
 
 
 

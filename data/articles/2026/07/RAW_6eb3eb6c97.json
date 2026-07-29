@@ -1,0 +1,50 @@
+{
+  "id": "RAW_6eb3eb6c97",
+  "title": "uv 0.12.0",
+  "url": "https://simonwillison.net/2026/Jul/28/uv/#atom-everything",
+  "date": "2026-07-29 05:51:38",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">28th July 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Jul/28/uv/\">\n    <p><strong><a href=\"https://github.com/astral-sh/uv/releases/tag/0.12.0\">uv 0.12.0</a></strong>. Some interesting breaking changes in this release of <code>uv</code>, in particular to the default project produced by the <code>uv init</code> command.</p>\n    <p><a href=\"https://docs.astral.sh/uv/concepts/projects/init/\">uv init</a> is the <code>uv</code> shortcut for creating a new project. The previous version of <code>uv</code>, version 0.11.x, produced <a href=\"https://github.com/simonw/uv-init-demos/tree/29656a55ec733a632005abfd7b89dea5c04fa10b/uv-init\">this directory</a> when you ran <code>uv init uv-init</code>.</p>\n    <p>Here's <a href=\"https://github.com/simonw/uv-init-demos/tree/9111a2bb85741f034eee2fd63efe13ef98b37a14/uv-init\">what you get with uv 0.12</a>. I have a GitHub repository that <a href=\"https://simonwillison.net/2025/Dec/24/uv-init-demos/\">automatically snapshots</a> the output of <code>uv init</code>, so you can also <a href=\"https://github.com/simonw/uv-init-demos/commit/9111a2bb85741f034eee2fd63efe13ef98b37a14#diff-e036881d034aedd813010ffa96464995ae5b0339213d6f4ab492f97442c5bdd4\">see the full diff</a>:</p>\n    <p><img alt=\"GitHub diff view. uv-init/main.py is an old __name__==&quot;__main__&quot; file that has been entirely deleted. The pyproject.toml now has an authors list and a new project.scripts block defining uv-init as uv_init:main - and a new build-system block that uses uv_build as the build-backend. A new src/uv_init/__init__.py file contains a main() method with a -&gt; None type annotation that prints Hello from uv-init.\" src=\"https://static.simonwillison.net/static/2026/uv-diff.webp\"></p>\n    <p><code>uv init</code> now defaults to a <code>src/</code> shaped package, instead of dropping <code>main.py</code> in the root of the project. It also configures the <a href=\"https://docs.astral.sh/uv/concepts/build-backend/\">uv_build backend</a> for building wheels and <code>.tar.gz</code> distribution files when you run <code>uv build</code>. Finally, it sets up <code>uv-init</code> as a script alias which, when run with <code>uv run uv-init</code>, executes a new <code>main()</code> function in <code>src/uv_init/__init__.py</code>.</p>\n    <p>I've so far avoided using <a href=\"https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/\">src layout</a> in my own projects just out of inertia. I think it's time I switched.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9566/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文分析了 uv 0.12.0 中的破坏性变更，特别是 'uv init' 创建的默认项目结构已转变为 src/ 布局，并配备了 uv_build 后端和脚本别名。",
+  "oneSentenceSummary": "本文分析了 uv 0.12.0 中的破坏性变更，特别是 'uv init' 创建的默认项目结构已转变为 src/ 布局，并配备了 uv_build 后端和脚本别名。",
+  "summary": "Simon Willison 考察了 uv 0.12.0 的 'uv init' 命令引入的破坏性变更，现在默认采用 src/ 结构的包，而不是将 main.py 放在根目录。新的配置包括用于 wheel 和 .tar.gz 分发的 uv_build 后端，设置了 uv-init 作为脚本别名，并在 src/uv_init/__init__.py 中引入了带类型注解的 main() 函数。作者分享了他个人的感悟，尽管之前有所犹豫，现在是时候采用 src/ 布局了，并通过 GitHub 快照展示了不同版本目录差异的视觉对比。",
+  "mainPoints": [
+    {
+      "point": "uv 0.12.0 将默认项目结构更改为 src/ 布局",
+      "explanation": "'uv init' 命令现在创建的是 src/ 包结构，而不是将 main.py 放在根目录的扁平布局，这符合 Python 打包的最佳实践。"
+    },
+    {
+      "point": "新的构建系统使用 uv_build 后端",
+      "explanation": "使用 uv 0.12+ 初始化的项目会自动配置 uv_build 作为构建后端，用于创建 wheel 和源码分发包。"
+    },
+    {
+      "point": "脚本别名设置与带类型的 main 函数",
+      "explanation": "新结构将 uv-init 定义为脚本别名，执行 src/uv_init/__init__.py 中的 main() 函数，并带有明确的 -> None 类型注解。"
+    }
+  ],
+  "keyQuotes": [
+    "我迄今为止在自己的项目中一直避免使用 src 布局，仅仅是出于惯性。我想是时候切换了。"
+  ],
+  "tags": [
+    "Python",
+    "包管理",
+    "构建工具",
+    "uv",
+    "src 布局"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 165,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785275498000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-29 05:51:38"
+}

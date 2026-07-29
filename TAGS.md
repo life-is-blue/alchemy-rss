@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-29 06:52:17 | [返回首页](/README.md)
+**更新时间**: 2026-07-29 09:31:15 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14084)
+- [AI & 大模型](#ai-llm) (14130)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (900)
-- [DevOps](#devops) (671)
-- [产品与商业](#product-business) (44)
-- [其他](#other) (6384)
+- [前端与全栈](#frontend-fullstack) (902)
+- [DevOps](#devops) (674)
+- [产品与商业](#product-business) (45)
+- [其他](#other) (6400)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [智能体-AI-时代的科学计算](https://openai.com/index/scientific-computing-agentic-ai) - AI 精选
+- [Codex-从-0-到-1000-万用户：构建-ChatGPT-Work-—-与-OpenAI-的-Akshay-Nathan-对话](https://www.latent.space/p/chatgpt-work) - AI 精选
+- [Agent-开发指南：技术太多，该怎么学？](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492366&idx=1&sn=260b5fac24951a19de106ab89c5cec31) - AI 精选
 - [Kimi-K3-重新绘制开放前沿，-Muse-Spark-1.1-以低价击败竞争对手，-Cloudflare-采取措施阻止爬虫](https://www.deeplearning.ai/the-batch/issue-363) - AI 精选
 - [AI-#178：通用智能的警钟-—-LessWrong](https://www.lesswrong.com/posts/BK7E4jHNMykpnt796/ai-178-a-fire-alarm-for-general-intelligence) - AI 精选
 - [编程心得：Vibe-上百亿-Token-后，我收获了什么?](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492307&idx=1&sn=e9fb1f4fae460a121e6097f5726603d5) - AI 精选
@@ -39,11 +42,8 @@
 - [机器学习研究中有多少是围绕-AI-安全的，具体内容是什么，谁在做？——-LessWrong](https://www.lesswrong.com/posts/hcq4ZDoijSjy3Wrba/how-much-of-ml-research-is-about-ai-safety-what-is-it-about) - AI 精选
 - [极致量化，近三千亿参数-Hy3-单卡即可部署](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498028&idx=1&sn=9b6f4f0d9eff9d2a6925f3860eb63665) - AI 精选
 - [Claude-的价值观如何随模型和语言变化](https://www.anthropic.com/research/claude-values-models-languages) - AI 精选
-- [训推全开源：HyOCR-1.5-让端到端-OCR-大模型跑得更快、看得更准、功能更全](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498015&idx=1&sn=aa97c2dd942e4c50d2553cf922bc61bd) - AI 精选
-- [使用-Amazon-Bedrock-AgentCore-Gateway-为多租户代理实现代表令牌交换-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/implement-on-behalf-of-token-exchange-for-multi-tenant-agents-with-amazon-bedrock-agentcore-gateway/) - AI 精选
-- [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018) - AI 精选
 
-- [查看全部 14084 篇...](/details/tags/ai-llm.md)
+- [查看全部 14130 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 900 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 902 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 671 篇...](/details/tags/devops.md)
+- [查看全部 674 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -148,6 +148,7 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [Release-0.12.0-·-astral-sh/uv](https://github.com/astral-sh/uv/releases/tag/0.12.0) - 编程 更多
 - [微型-SaaS-已死，取而代之的是“服务+软件”模式-—-Adrien-Gonin](https://adriengonin.com/writing/service-with-a-software/) - 编程 更多
 - [Castro-Podcasts-—-我做错的事：客户支持](https://www.uncommonapps.nyc/p/castro-podcasts-things-i-got-wrong-support) - 编程 更多
 - [Cycle-推出欧盟控制面板，主权争议持续](https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
@@ -157,9 +158,8 @@
 - [如何使用-TanStack-Start、Elysia-和-Neon-构建全栈-SaaS-应用](https://www.freecodecamp.org/news/full-stack-saas-tanstack-start-elysia-neon/) - 编程 更多
 - [MySQL，InnoDB-的高并发，究竟是不是因为-MVCC？（第-5-讲，长文收藏）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651979807&idx=1&sn=8f513fa8345d591dec03f94ecfba23b4) - 编程 更多
 - [还是打不过？为什么-Uber-要从-Postgres-迁移到-MySQL？](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247633487&idx=1&sn=c02694dace9fb836f7f479247151e7b6) - 编程 更多
-- [并发丢数据深度剖析：JED-的锁机制与事务实战踩坑及解决方案](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247501465&idx=1&sn=c2b7490ce4c41d5cd719f990685a3efb) - 编程 更多
 
-- [查看全部 44 篇...](/details/tags/product-business.md)
+- [查看全部 45 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6384 篇...](/details/tags/other.md)
+- [查看全部 6400 篇...](/details/tags/other.md)
 
 
