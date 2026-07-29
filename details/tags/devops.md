@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-29 09:31:15 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-29 13:00:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,25 +584,19 @@
 
 ### [GitHub---ghaziwali/Hulios：基于-Rust-的透明-Tor-代理，通过-Tor-网络路由所有系统流量，增强安全性、正确的-DNS-隔离和现代-Linux-兼容性。](https://github.com/ghaziwali/Hulios)
 
-2026-07-29 03:54:38 | 标签: Rust, eBPF, Tor, Linux, Security
-
-> Hulios 是一个基于 Rust、由 eBPF 驱动的透明 Tor VPN 网关，适用于 Linux，通过将 TCP 套接字和 DNS 查询重定向到嵌入的 Arti Tor 客户端和基于 Hickory 的 DNS 解析器来保护出站网络流量。它通过 cgroup 挂钩和策略路由在内核套接字级别运行，实施健壮的防泄漏边界，而无需修改运行时 resolv.conf 配置或依赖外部防火墙守护进程。该工具具有严格的特权分离运行时模型，包含沙箱隔离、安全故障关闭开关和原始套接字阻止器，以防止 IP 泄漏。它需要 Linux 内核 5.10 或更高版本，并进行了特定的内核配置测试，已在 Arch Lin...
+2026-07-29 03:54:38
 
 
 
 ### [GitHub-为-Dependabot-版本更新引入默认-"冷却期"-策略](https://www.infoq.com/news/2026/07/github-dependabot-cooldown/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-29 03:00:00 | 标签: Dependabot, 供应链安全, 冷却期策略, GitHub, CI/CD
-
-> GitHub 宣布 Dependabot 将在创建非安全依赖更新的拉取请求前暂停三天。这一变化旨在给安全扫描器和开发人员时间以检测恶意发布，这是从过去影响数十亿次下载的供应链攻击中吸取的教训。冷却期可以在 `dependabot.yml` 文件中自定义，而安全更新仍会立即执行。GitHub 产品经理 Carlin Cherry 引用了社区对三天窗口的共识，并强调该措施应与其他防御措施（如锁定文件固定、令牌范围和人工审查）相辅相成。Reddit 和 Hacker News 上的社区反馈普遍支持这一延迟，尽管有些人担心如果更新 routinely 被推迟，可能会导致潜在的自满情绪。
+2026-07-29 03:00:00
 
 
 
 ### [颠覆针对-npm-和-GitHub-Actions-的供应链攻击](https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/)
 
-2026-07-29 00:00:00 | 标签: 供应链安全, npm, GitHub Actions, CI/CD, 凭据安全
-
-> 本文概述了针对 npm 和 GitHub Actions 的供应链攻击的解剖结构，随后详细介绍了 2026 年 4 月至 7 月期间发布的一系列缓解措施。这些措施包括：在电子邮件或 2FA 更改后，对高影响力的 npm 账户实施预防性只读模式；为 actions/checkout 提供更安全的默认设置以阻止不受信任的分叉代码；针对不受信任触发器的工作流触发控制和只读缓存；npm 可信发布现在支持 CircleCI；npm 的分阶段发布；npm v12 默认禁用安装脚本；Dependabot 包冷却期；以及新的自助服务凭据吊销和扩展的 API 支持。这些措施共同在初始妥协、凭据窃取和传播阶段破坏...
+2026-07-29 00:00:00
 
 
 

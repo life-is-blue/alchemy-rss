@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-29 09:31:15 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-29 13:00:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 产品与商业
 
@@ -68,9 +68,7 @@
 
 ### [Release-0.12.0-·-astral-sh/uv](https://github.com/astral-sh/uv/releases/tag/0.12.0)
 
-2026-07-29 03:41:33 | 标签: Python, Package Management, uv, Dependency Resolution, Security
-
-> The uv team released version 0.12.0， introducing several breaking changes aimed at improving correctness， safety， and compatibility with Python packaging specifications. Key updates include defaulting to a packaged project layout via `uv init`， rejecting unsupported source distribution and wheel arc...
+2026-07-29 03:41:33
 
 
 
