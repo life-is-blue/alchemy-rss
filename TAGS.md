@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-30 06:49:37 | [返回首页](/README.md)
+**更新时间**: 2026-07-30 09:24:04 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14130)
+- [AI & 大模型](#ai-llm) (14175)
 - [软件架构](#architecture) (22)
 - [前端与全栈](#frontend-fullstack) (902)
-- [DevOps](#devops) (674)
+- [DevOps](#devops) (677)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6400)
+- [其他](#other) (6414)
 
 
 ---
@@ -43,7 +43,7 @@
 - [极致量化，近三千亿参数-Hy3-单卡即可部署](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498028&idx=1&sn=9b6f4f0d9eff9d2a6925f3860eb63665) - AI 精选
 - [Claude-的价值观如何随模型和语言变化](https://www.anthropic.com/research/claude-values-models-languages) - AI 精选
 
-- [查看全部 14130 篇...](/details/tags/ai-llm.md)
+- [查看全部 14175 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 674 篇...](/details/tags/devops.md)
+- [查看全部 677 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 - [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6400 篇...](/details/tags/other.md)
+- [查看全部 6414 篇...](/details/tags/other.md)
 
 

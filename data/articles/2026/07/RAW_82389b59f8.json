@@ -1,0 +1,54 @@
+{
+  "id": "RAW_82389b59f8",
+  "title": "Lyria 3.5 正式登陆 Google Flow Music，在音乐性、歌词、人声与创作控制上全面升级",
+  "url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
+  "date": "2026-07-30 00:00:01",
+  "author": "Google DeepMind News",
+  "siteName": "Google DeepMind News",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"uni-page uni-grid uni-article-paragraph\" data-analytics-module=\"{\n            &quot;module_name&quot;: &quot;Paragraph&quot;,\n            &quot;section_header&quot;: &quot;We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control.&quot;\n          }\">\n   <uni-article-paragraph class=\"uni-article-paragraph__container uni-grid__col--layout-6\">\n    <div class=\"rich-text\">\n     <p data-block-key=\"s6knr\">Our newest music generation model, Lyria 3.5, delivers significant advancements across musicality, lyrics, and vocal quality, empowering you to craft richer tracks. We’re rolling it out today in <a href=\"http://flowmusic.google/\" rel=\"noopener\" target=\"_blank\">Google Flow Music</a>, where we want to help you create songs you love, with creative control.</p>\n     <p data-block-key=\"cvrp9\">Here's what’s new:</p>\n     <ul>\n      <li data-block-key=\"far35\"><b>Improved musicality:</b> Create richer, more complex melodic structures that sound more natural.</li>\n      <li data-block-key=\"29gjc\"><b>Enhanced lyrics:</b> Generate higher quality lyrics with improved prompt adherence and structural awareness.</li>\n      <li data-block-key=\"4cfbl\"><b>Improved vocals:</b> Bring more expression and emotion to your songs with more realistic and emotionally nuanced vocals, plus improved pronunciation.</li>\n      <li data-block-key=\"5stu3\"><b>Creative control:</b> More easily control the tempo and duration of your outputs.</li>\n     </ul>\n     <p data-block-key=\"1v00q\">Try it today in <a href=\"http://flowmusic.google/\" rel=\"noopener\" target=\"_blank\">Flow Music</a>.</p>\n    </div>\n    <!---->\n   </uni-article-paragraph>\n  </section>\n  <div class=\"block-video\">\n   <uni-youtube-player-article index=\"0\" page-title=\"We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control.\" thumbnail-alt=\"Hear a track created with Lyria 3.5\" video-id=\"WQkg3n5bwKQ\" video-type=\"video\">\n    <!---->\n    <div data-yt-video=\"module\" class=\" uni-youtube-player-article \" data-analytics-module=\"{&quot;module_name&quot;:&quot;Youtube Video&quot;,&quot;section_header&quot;:&quot;We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control.&quot;}\">\n     <div class=\" uni-page uni-grid uni-youtube-player-article__container \">\n      <div class=\" uni-youtube-player-article__media uni-grid__col--layout-8 \">\n       <div class=\"uni-youtube-player-article__player\">\n        <uni-youtube-player-core>\n         <!---->\n         <div class=\"uni-article-video\" data-component=\"uni-article-yt-player\" data-page-title=\"\" data-video-id=\"WQkg3n5bwKQ\" data-index-id=\"0\" data-type=\"video\" data-component-initialized=\"true\">\n          <button tabindex=\"0\" class=\"uni-article-video__custom-wrapper \" aria-label=\"Hear a track created with Lyria 3.5\">\n           <div class=\"uni-article-video__aspect-image\">\n            <!--?lit$39087464$-->\n            <img loading=\"lazy\" src=\"https://i.ytimg.com/vi_webp/WQkg3n5bwKQ/default.webp\" alt=\"Hear a track created with Lyria 3.5\" data-loading=\"{\n                      &quot;desktop&quot;: &quot;https://i.ytimg.com/vi_webp/WQkg3n5bwKQ/sddefault.webp&quot;,\n                      &quot;mobile&quot;: &quot;https://i.ytimg.com/vi_webp/WQkg3n5bwKQ/mqdefault.webp&quot;\n                    }\">\n            <div class=\"uni-article-video__icon-layer\">\n             <div class=\"uni-article-video__icons-group\">\n              <uni-icon-component class=\"uni-article-video__icon-wrapper\" custom-class=\"uni-article-video__play-button--active\" remove-viewbox=\"true\" icon-id=\"yt_video_play_button_no_hole\"><!----></uni-icon-component><uni-icon-component class=\"uni-article-video__icon-wrapper\" custom-class=\"uni-article-video__play-button\" custom-role=\"img\" remove-viewbox=\"true\" icon-id=\"yt_video_play_button\" custom-label=\"Video Title \"><!----></uni-icon-component>\n             </div>\n             <!--?lit$39087464$-->\n             <div class=\"uni-article-video__duration loading\">\n              <uni-icon-component icon-id=\"yt_video_duration\" custom-class=\"uni-article-video__duration-icon\" remove-viewbox=\"true\"><!----></uni-icon-component><span class=\"uni-article-video__duration-time font-body-xs\">00:00</span>\n             </div>\n            </div>\n           </div>\n          </button>\n         </div>\n        </uni-youtube-player-core>\n       </div>\n      </div>\n      <!--?lit$39087464$-->\n     </div>\n    </div>\n   </uni-youtube-player-article>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google DeepMind 在 Flow Music 中推出 Lyria 3.5，在音乐生成的音乐性、歌词、人声质量与创作控制方面带来显著提升。",
+  "oneSentenceSummary": "Google DeepMind 在 Flow Music 中推出 Lyria 3.5，在音乐生成的音乐性、歌词、人声质量与创作控制方面带来显著提升。",
+  "summary": "Google DeepMind 发布最新音乐生成模型 Lyria 3.5，现已在 Google Flow Music 中上线。本次更新带来四项关键进展：更丰富、更自然的旋律结构（音乐性提升）、更高质量的歌词生成，对提示词的遵循度与结构感知能力更强（歌词增强）、更具表现力与情感层次的人声，发音也更清晰（人声改进），以及对输出节奏与时长更便捷的调控（创作控制）。这篇简短的公告将 Lyria 3.5 定位为打造更精致作品的工具，并邀请用户立即前往 Flow Music 体验。",
+  "mainPoints": [
+    {
+      "point": "音乐性提升，带来更丰富、更自然的旋律结构",
+      "explanation": "模型现在可以生成更复杂、更连贯的旋律，减少机械感，提升音乐表现力。"
+    },
+    {
+      "point": "歌词生成增强，对提示词的遵循度与结构感知能力更好",
+      "explanation": "生成的歌词更加连贯，更贴合用户提供的提示词，并尊重主歌、副歌等歌曲结构。"
+    },
+    {
+      "point": "人声更具表现力与真实感，情感层次与发音均有改进",
+      "explanation": "人声输出传达出更丰富的情感与更清晰的咬字，让生成歌曲听起来更贴近真人、更具感染力。"
+    },
+    {
+      "point": "创作控制让用户可以便捷地设定输出的节奏与时长",
+      "explanation": "用户不再受限于固定的生成参数，可以针对不同类型的歌曲进行更精细的定制。"
+    }
+  ],
+  "keyQuotes": [
+    "empowering you to craft richer tracks"
+  ],
+  "tags": [
+    "AI 音乐生成",
+    "模型发布",
+    "Google DeepMind",
+    "创意 AI",
+    "生成式 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 111,
+  "domain": "deepmind.google",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_cca1dc",
+  "sourceName": "Google DeepMind News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785340801000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-30 00:00:01"
+}

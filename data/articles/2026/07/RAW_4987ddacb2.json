@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4987ddacb2",
+  "title": "AI 在 Word 中的蠕虫传播",
+  "url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
+  "date": "2026-07-30 02:43:03",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">29th July 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Jul/29/ai-worming-through-word/\">\n    <p><strong><a href=\"https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/\">AI Worming through Word</a></strong> (<a href=\"https://news.ycombinator.com/item?id=49096188\" title=\"Hacker News\">via</a>) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:</p>\n    <blockquote>\n     <p>An attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited. Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier. If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present.</p>\n    </blockquote>\n    <p>We've seen plenty of hidden white-on-white text before - the kids <a href=\"https://x.com/ScienceYael/status/2082175224007848019\">are using it in their job applications now</a> - but this is the first one I've seen that deliberately copies instructions to self-replicate itself.</p>\n    <p>It was responsibly disclosed to Microsoft who then had 144 days to work on a fix, but so far (unsurprisingly) there's no mitigation that covers the full class of attack.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9568/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "该文章描述了一种新的提示词注入技术，该技术在与 Copilot for Word 配合使用时，会将恶意 Word 文档转变为自复制蠕虫。",
+  "oneSentenceSummary": "该文章描述了一种新的提示词注入技术，该技术在与 Copilot for Word 配合使用时，会将恶意 Word 文档转变为自复制蠕虫。",
+  "summary": "Simon Willison 的链接博客指出，Håkon Måløy 的一项发现表明，Word 文档中的隐藏指令会被 Copilot 解释为用户输入，从而使模型能够操纵文档并在其输出中复制恶意指令。受感染的文档随后可以充当载体，在后续的 Copilot 辅助工作流中传播该注入，即使没有原始恶意文件也能实现。该漏洞已负责任地披露给微软，微软有 144 天的时间来修复，但截至目前尚未发布全面的缓解措施。文章指出，虽然隐藏的白底白字文本已用于求职申请，但这是首次观察到专门用于自我复制的案例。",
+  "mainPoints": [
+    {
+      "point": "隐藏的提示词注入可以被 Copilot 解释为用户指令。",
+      "explanation": "当受感染的 Word 文档被用作 Copilot 的源材料时，隐藏的指令会被视为用户请求的一部分，使模型能够根据攻击者的意图编辑或生成内容。"
+    },
+    {
+      "point": "注入的指令被复制到生成的文档中，从而创建一个新的载体。",
+      "explanation": "Copilot 可能将恶意指令嵌入其输出，使生成的文档成为一个新的载体，能够在后续的 Copilot 辅助会话中触发相同的有效载荷。"
+    },
+    {
+      "point": "该漏洞已负责任地披露给微软，拥有 144 天的窗口期，但尚未存在完整的缓解措施。",
+      "explanation": "尽管该问题已被负责任地报告，但供应商尚未发布全面的修复，留下潜在可利用的攻击向量。"
+    },
+    {
+      "point": "这代表了一种新颖的自我复制提示词注入蠕虫，区别于之前的隐藏文本攻击。",
+      "explanation": "与求职申请中常见的隐形文本技巧不同，该技术被故意设计为通过 AI 辅助编辑在文档之间自我传播。"
+    }
+  ],
+  "keyQuotes": [
+    "Copilot 也可能将隐藏的指令复制到生成的文档中，将该文档转变为一个新的载体。"
+  ],
+  "tags": [
+    "AI 安全",
+    "提示词注入",
+    "Microsoft Word",
+    "Copilot",
+    "蠕虫"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 187,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785350583000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-30 02:43:03"
+}

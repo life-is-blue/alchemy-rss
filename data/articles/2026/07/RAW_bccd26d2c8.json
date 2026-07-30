@@ -1,0 +1,51 @@
+{
+  "id": "RAW_bccd26d2c8",
+  "title": "制造业依赖资本，金融保护利润率。",
+  "url": "https://www.databricks.com/blog/manufacturing-runs-capital-finance-protects-margin",
+  "date": "2026-07-30 02:30:00",
+  "author": "Caitlin Gordon",
+  "siteName": "Databricks",
+  "content": null,
+  "aiSummary": "金融通过 AI 代理和本体论释放被锁定的资本，以保护利润率。",
+  "oneSentenceSummary": "金融通过 AI 代理和本体论释放被锁定的资本，以保护利润率。",
+  "summary": "金融通过释放被占用在库存、应收账款和设备中的资本来保护利润率，估计在大型美国公司中有 $1.7 T 的过剩营运资本被锁定。AI 代理加速规划和金融决策；准确的数字需要完整的业务上下文，而本体论能够提供这些上下文。Genie 是一款面向金融的数据智能 AI 同事，它回答现金被锁定的地点、应收账款的老化以及哪些资产未能产生回报，展示其可追溯的工作并为人工判断准备行动。",
+  "mainPoints": [
+    {
+      "point": "金融释放被锁定的资本以保护利润率。",
+      "explanation": "制造业将现金占用在库存、应收账款和设备中；在大型美国公司中，约有 $1.7 T 作为过剩营运资本被锁定，金融必须释放这些资本以维持盈利能力。"
+    },
+    {
+      "point": "准确的数据需要业务上下文才能可靠。",
+      "explanation": "只有当数字关联到具体的工厂、SKU 或客户条款时才可信；本体论捕获这些含义，并随需求、交付时间和付款行为的变化而更新。"
+    },
+    {
+      "point": "Genie AI 解答现金相关问题并展示其工作。",
+      "explanation": "它识别现金在库存中的锁定位置、应收账款的老化以及哪些资产未能产生回报，提供可追溯、受治理的答案供人工判断。"
+    }
+  ],
+  "keyQuotes": [
+    "准确并不等同于正确。只有在业务的完整上下文中——具体到哪座工厂、哪种 SKU、哪种客户条款——数字才可信。",
+    "Genie 是一款面向金融的数据智能 AI 同事。它回答三个核心问题（现金在库存中的锁定位置、应收账款的老化、哪些资产未能产生回报），以受治理、可追溯的答案展示其工作，并在人工做出决策时准备相应行动。"
+  ],
+  "tags": [
+    "营运资本",
+    "AI 代理",
+    "本体论",
+    "金融自动化",
+    "现金管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 150,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Finance_Economy",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785349800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-30 02:30:00"
+}
