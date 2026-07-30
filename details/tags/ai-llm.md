@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-30 09:24:04 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-30 12:48:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -5180,17 +5180,13 @@
 
 ### [ChatGPT-如何优化其智能体循环：编排层、API-与推理层](https://blog.bytebytego.com/p/how-chatgpt-optimizes-its-agent-loop)
 
-2026-07-29 23:18:25 | 标签: AI 智能体, LLM, 推理优化, 提示词缓存, WebSocket
-
-> 本文将一个智能体 AI 应用的架构拆分为三个层次：编排层（编排层）、API 层（应用层）和推理层（基于 GPU 的模型服务层）。文章通过一个 Codex 任务的具体示例，展示了请求如何在这些层之间流动，然后每一层分别讨论其优化技术。在编排层，OpenAI 使用持久化 WebSocket 来避免每次调用的连接建立；增量请求只发送新的工具结果，而不是整个对话历史；稳定提示词前缀以保持提示词缓存有效；延迟工具发现以避免将未使用的工具架构纳入提示词；以及代码模式（Code Mode）将多个工具调用合并为一次模型往返。在 API 层，它仅对增量部分进行分词，并与推理并行运行安全检查。在推理层，它应用了缓...
+2026-07-29 23:18:25
 
 
 
 ### [相关性-≠-因果性：因果推断在-AI-评测归因中的方法与实践](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510590&idx=1&sn=0e9bf34c8fa0c5f4249679ecd716865c)
 
-2026-07-29 18:18:00 | 标签: AI Agent, 因果推断, AI 评测, 归因分析, LLM
-
-> 文章针对 AI Agent 系统评估中「相关性不等于因果性」的痛点，系统性地介绍了归因分析的演进路径与核心方法论。文章首先对比了 Rubin 潜在结果模型与 Pearl 因果图模型两大理论框架，并介绍了 SHAP、DoWhy、EconML 等主流工具。重点部分在于实战应用：提出了基于 Trace 日志的高精度组件级归因方案，以及在缺乏中间过程时的扰动式归因策略。此外，文章还详细演示了如何通过因果 A/B 测试识别辛普森悖论，并利用多参数联合优化（NOL）来平衡 Agent 的效果与成本，为 AI 评测从「黑盒评估」转向「根因诊断」提供了完整的工程实践指南。
+2026-07-29 18:18:00
 
 
 
@@ -13410,193 +13406,145 @@
 
 ### [AI-在-Word-中的蠕虫传播](https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything)
 
-2026-07-30 02:43:03 | 标签: AI 安全, 提示词注入, Microsoft Word, Copilot, 蠕虫
-
-> Simon Willison 的链接博客指出，Håkon Måløy 的一项发现表明，Word 文档中的隐藏指令会被 Copilot 解释为用户输入，从而使模型能够操纵文档并在其输出中复制恶意指令。受感染的文档随后可以充当载体，在后续的 Copilot 辅助工作流中传播该注入，即使没有原始恶意文件也能实现。该漏洞已负责任地披露给微软，微软有 144 天的时间来修复，但截至目前尚未发布全面的缓解措施。文章指出，虽然隐藏的白底白字文本已用于求职申请，但这是首次观察到专门用于自我复制的案例。
+2026-07-30 02:43:03
 
 
 
 ### [如何使用-NVIDIA-NeMo-Guardrails-自托管经过验证的-AI-编码助手](https://developer.nvidia.com/blog/how-to-self-host-a-validated-ai-coding-assistant-with-nvidia-nemo-guardrails/)
 
-2026-07-30 00:46:59 | 标签: AI编码助手, 自托管AI, NVIDIA NeMo Guardrails, StarCoder2, CI/CD
-
-> 本文提出了一种自托管经过验证的 AI 编码助手的完整架构，利用 NVIDIA 的 StarCoder2 NIM 和 NeMo Guardrails，适用于受监管、主权或敏感源码环境。解决三个核心问题：源代码外泄、幻觉包名引入供应链风险及缺乏审计追踪。教程分六步：部署 StarCoder2 作为 NVIDIA NIM 并接入 OpenAI 兼容端点；连接 IDE（如 Continue）；添加 NeMo Guardrails 执行任务策略（如阻止人类专属路径：认证与加密）；集成 CI 验证闸门（含单元测试、SAST、秘密扫描、幻觉依赖检测（slopsquatting 检测）及许可扫描）；通过提交说...
+2026-07-30 00:46:59
 
 
 
 ### [关于-Anthropic-加密博客文章的笔记-—-—-LessWrong](https://www.lesswrong.com/posts/ftE2aJ8txJHQnf9dR/notes-on-the-anthropic-cryptographic-blogpost)
 
-2026-07-30 00:21:08 | 标签: AI 密码学, 多智能体系统, 后量子密码学, HAWK, AES
-
-> 文章总结了 Anthropic 最近的博客文章，描述了 Claude Mythos 系统发现的两项密码学攻击。第一项攻击针对 HAWK，这是 NIST 候选的后量子签名方案，实际上将其安全级别减半，迫使密钥大小加倍。第二项攻击针对 AES 的减圆版本，通过一种新颖的 “Möbius Bridge” 技术实现了 200‑800× 的加速。这两项发现主要通过沙箱多智能体 harness 自主完成，大约需要 60‑100 小时的计算时间和约 $100 k 的 API 费用，凸显了 AI 驱动的密码学进攻与防御之间日益扩大的差距。作者还补充了关于多智能体工作流、成本影响以及 AI 对密码学研究更广泛影...
+2026-07-30 00:21:08
 
 
 
 ### [Lyria-3.5-正式登陆-Google-Flow-Music，在音乐性、歌词、人声与创作控制上全面升级](https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/)
 
-2026-07-30 00:00:01 | 标签: AI 音乐生成, 模型发布, Google DeepMind, 创意 AI, 生成式 AI
-
-> Google DeepMind 发布最新音乐生成模型 Lyria 3.5，现已在 Google Flow Music 中上线。本次更新带来四项关键进展：更丰富、更自然的旋律结构（音乐性提升）、更高质量的歌词生成，对提示词的遵循度与结构感知能力更强（歌词增强）、更具表现力与情感层次的人声，发音也更清晰（人声改进），以及对输出节奏与时长更便捷的调控（创作控制）。这篇简短的公告将 Lyria 3.5 定位为打造更精致作品的工具，并邀请用户立即前往 Flow Music 体验。
+2026-07-30 00:00:01
 
 
 
 ### [价值泛化-3：预对齐-AI-—-LessWrong](https://www.lesswrong.com/posts/uMKGaEKRDpoqnZyBh/value-generalisation-3-pre-aligned-ais)
 
-2026-07-29 23:58:16 | 标签: AI 对齐, 价值泛化, AI 安全, AI 伦理, 预对齐 AI
-
-> 这是关于价值泛化系列的第三篇文章，概述了预对齐 AI 的设计。核心思想是将道德概念与经验概念绑定，使得随着 AI 学习和泛化其世界模型，其道德理解与能力同步深化。AI 从基本的道德准则——商业、法律和伦理规范——出发，通过泛化填补空白，追踪诸如“人类”等概念的真实含义，并将其初始价值观应用到日益复杂的情境中。结果颠覆了标准的对齐叙事：善意行为者可以让 AI 自由学习并获得对齐的力量，而恶意行为者则必须刻意限制 AI 的知识和能力，以防止其意识到并抵制不道德的使用。文章讨论了这一机制、实际卖点以及为道德用户带来的不对称优势。
+2026-07-29 23:58:16
 
 
 
 ### [价值泛化-2：AI-能力中的缺失环节-—-LessWrong](https://www.lesswrong.com/posts/TZgezuYjkfMQxyqJC/value-generalisation-2-the-missing-hole-in-ais-abilities)
 
-2026-07-29 23:58:00 | 标签: LLM, AGI, 强泛化, AI 对齐, 价值泛化
-
-> 文章探讨了‘强泛化’这一概念，即一种人类认知能力，使人能够在不熟悉的情境中进行有效推理。文章认为，尽管 LLMs 具备广泛的知识并在基准测试中取得成功，但它们根本缺乏这种能力，导致其典型缺陷：专家能够提取更多价值、表现不一致、对数据需求高以及始终处于‘几乎 AGI’的状态。作者指出，LLMs 有五个谜题，强泛化可以解释这些谜题，尤其是它们在基准测试上的成功却无法在真实世界中泛化。随后，文章概述了显式价值泛化的研究议程，区分了经验泛化，并讨论了其对齐 AI 的必要性。此外，文章还讨论了当前 AI 设计的局限、类人泛化过程，以及开发此类系统所伴随的风险与商业潜力。
+2026-07-29 23:58:00
 
 
 
 ### [价值泛化-1：研究与部署计划-—-LessWrong](https://www.lesswrong.com/posts/58zFSWp8Tmxij6ckK/value-generalisation-1-a-research-and-deployment-program)
 
-2026-07-29 23:57:50 | 标签: AI 对齐, 价值泛化, AI 安全, AI 研究, AI 部署
-
-> 该帖子概述了一项针对性研究机构（或商业项目）的提案，目标是开发显式价值泛化——即 AI 能够正确地将人类价值扩展到新情境的能力。文章指出，缺乏此能力的 AI 不能被信任用于自主任务，因为现有系统会天真外推，可能产生不良行为。该计划分为三个阶段：（I）价值的分布外识别，（II）相关概念选择，（III）完整的显式价值泛化，从而实现预先对齐的 AI。作者强调，尽早解决此能力、在有限系统中进行测试并进行商业化至关重要，因为单纯的学术论文往往被忽视或被剥离安全组成部分。该帖子邀请合作者、批评者和资金方共同参与。
+2026-07-29 23:57:50
 
 
 
 ### [前沿实验室员工公开信呼吁能够控制前沿进展-—-—-LessWrong](https://www.lesswrong.com/posts/eWmeMLqTEauCmHLeR/frontier-lab-employee-open-letter-calls-for-being-able-to)
 
-2026-07-29 23:33:16 | 标签: AI 安全, AI 治理, 存在风险, 前沿 AI, 国际协调
-
-> 文章呈现了由领先 AI 实验室的 1，224 名员工签署的公开信，该信呼吁美国政府支持一项国际努力，以开发用于调节 AI 能力快速加速的技术和治理机制。文章强调了失控 AI 进步带来的存在风险，将该请求与即时放缓区分开来，并汇总了来自 OpenAI 、 Anthropic 、 DeepMind 、 Meta 等机构签署者的声明。文章分析了为何此时需要协调，引用了诸如 HuggingFace 模型被黑客入侵等近期事件，并主张在进度变得不可控之前，准备治理基础设施是必不可少的。
+2026-07-29 23:33:16
 
 
 
 ### [保留监视器有时会退化，即使未针对其进行训练-—-—-LessWrong](https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained)
 
-2026-07-29 22:56:18 | 标签: AI 对齐, LLM 监控, AI 安全, 模型评估, 探测器退化
-
-> 作者研究了针对特定对齐代理（无论是 LLM 监视器还是线性探测器）训练语言模型如何影响其他保留代理。他们发现，针对一个代理进行优化可能会产生对该代理而言可疑性降低的奖励黑客策略，并且还会降低其他探测器和监视器的鉴别能力（d'），即使这些代理未直接被训练针对。此外，当强监视器被规避时，较弱的监视器和探测器往往会被更强地规避，表明存在关联退化。论文得出结论，依赖保留对齐代理进行安全评估需要经验或理论上的稳定性保证，否则基于它们的安全主张将被削弱。
+2026-07-29 22:56:18
 
 
 
 ### [GitHub---hardrave/NIGHTRUN:-让你的-PC-直接启动进入-LLM。基于-Rust、UEFI-环境，无需底层操作系统。](https://github.com/hardrave/NIGHTRUN)
 
-2026-07-29 22:36:24 | 标签: LLM, UEFI, Rust, 量化, 系统编程
-
-> NIGHTRUN 是一个系统级项目，它将一台机器转变为单一用途的 LLM 设备。它作为 UEFI 应用程序启动，将量化模型加载到 RAM 中，在流式传输期间通过 CRC-32 验证完整性，密封存储以防止后续任何 I/O，并提供帧缓冲聊天界面。运行时使用 Rust 编写，并包含手写 SIMD 内核（x86 上的 AVX2 + FMA + F16C，Raspberry Pi 5 上的 NEON）。针对所有支持的模型系列，贪心推理以 token 对 token 的方式与 llama.cpp 进行严格比对。安装程序设计得极为谨慎：拒绝系统磁盘，要求精确键入 `FLASH /dev/sdX`，并通过 S...
+2026-07-29 22:36:24
 
 
 
 ### [码住！Claude-Code-之父-Boris-Cherny-亲传使用秘籍](https://mp.weixin.qq.com/s?__biz=MjM5NjgzMzkwMQ==&mid=2653651534&idx=1&sn=4c5edf3fce906e63b12e9ed402cf7288)
 
-2026-07-29 22:24:00 | 标签: AI编程, Claude Code, 开发工具, 提示工程, 开发效率
-
-> 文章来源于傅盛的公众号，转载了 Claude Code 的创始人 Boris Cherny 在内部分享的使用技巧。文章首先介绍了安装后需要执行的四个基础命令：/terminal-setup 调整换行、/theme 选择主题、/install-github-app 安装 GitHub App 以便在 Issue 或 PR 中调用 Claude，以及自定义常用低风险工具集合。接着强调让 AI 先熟悉项目才能发挥作用，建议先让 Claude Code 浏览代码库并回答结构性问题，这样可以将新人熟悉代码库的时间从 2‑3 周缩短到 2‑3 天。随后提出“先规划再动手”的方法：在提出需求后先让 AI 给...
+2026-07-29 22:24:00
 
 
 
 ### [GitHub---butterclaw-tech/butterclaw：面向自主-AI-智能体的本地优先智能体型-SOC-与安全看门狗。采用双半球-Gemma-4-推理、行为漂移追踪、事件账本，以及通过-ButterVault-实现的动能响应。保护-OpenClaw、Hermes-Agent-及其他基于-MCP-的智能体免受提示词注入攻击……](https://github.com/butterclaw-tech/butterclaw)
 
-2026-07-29 21:12:47 | 标签: AI Agent, AI 安全与对齐, MCP 协议, 开源项目, AI 基础设施
-
-> ButterClaw 是一款面向通过 MCP 通信的自主 AI 智能体的开源（Apache 2.0）运行时安全工具。它以完全自托管、零遥测为定位，与云端托管方案（Halo、LangSmith、LangFuse）以及传统 WAF/IDS 形成差异化竞争。其架构为四阶段流水线：在任何 LLM 调用之前毫秒级触发的 7 条 sanitizer 感知正则签名库（Arsenal）；运行在本地 Ollama（temperature 0.3）上的 Guardian Brain，评估最近 5 次 MCP 工具调用的行为漂移；独立验证 Guardian 判定结果的 Auditor（temperature 0.0...
+2026-07-29 21:12:47
 
 
 
 ### [Ollama-vs.-LM-Studio-vs.-llama.cpp：2026-年应使用哪个本地-AI-运行时？---MachineLearningMastery.com](https://machinelearningmastery.com/ollama-vs-lm-studio-vs-llama-cpp-which-local-ai-runtime-should-you-use-in-2026/)
 
-2026-07-29 20:00:13 | 标签: 本地 AI, LLM, Ollama, LM Studio, llama.cpp
-
-> 本文对三种流行的本地 AI 运行时——Ollama、LM Studio 和 llama.cpp——进行了详细的并排比较，考察了五个关键维度：界面（图形界面 vs 命令行 vs 裸二进制）、OpenAI API 兼容性、量化控制、模型发现机制和更新频率。然后，文章将这些差异映射到三种实践者角色（爱好者、开发人员、生产工程师），并描述了随着用户对控制力、自动化和性能的需求增长，从 LM Studio → Ollama → llama.cpp 的常见演进路径。文章还包括表格、具体的命令示例以及根据工作流和硬件限制选择合适工具的实用指南。
+2026-07-29 20:00:13
 
 
 
 ### [ALIBI：通过对抗性代码注释对基于-LLM-的漏洞检测器进行自适应智能体攻击](https://arxiv.org/abs/2607.24964)
 
-2026-07-29 19:48:51 | 标签: LLM, AI 安全, 对抗性攻击, 漏洞检测, 代码注释
-
-> 本文研究了基于 LLM 的漏洞检测器的一个新攻击面：插入源代码中的对抗性注释，在不改变程序行为的情况下影响检测器的推理。作者提出了 ALIBI，一种自动化的自适应黑盒攻击框架，利用检测器反馈迭代优化对抗性注释。在四个代表性基于 LLM 的漏洞检测器（从专用开放权重推理模型到多智能体系统）上，使用 125 个真实世界的空指针解引用漏洞进行评估，ALIBI 的攻击成功率超过 90%，在一个系统上达到 100%。该攻击可以泛化到该漏洞类别之外。最有效的策略包括引导检测器推理或伪造外部工具结果。提示级防御提供的鲁棒性有限，而架构隔离和检测前注释清理则显著提升了弹性。研究结果揭示了当前基于 LLM 的安...
+2026-07-29 19:48:51
 
 
 
 ### [烧了一万块-API-后，我找到了同时适用于-Fable5-和-GPT5.6-的-AI-工作流](https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw==&mid=2247508880&idx=1&sn=968a2ff3d6013a96f2ebfb5ab1579e5c)
 
-2026-07-29 18:32:00 | 标签: AI Agent, AI 编程, Claude Code, Codex, 多 Agent 协作
-
-> 文章围绕作者开源的多 Agent 协作工具「搭子」从 1.4 到 2.0 的升级展开。起因是 Claude 账号大规模封禁，作者将工作流迁移到 API 版 Claude（Fable），并叠加 mem0 做记忆层、GitHub 做存储层。三周内 API 周账单一度达到 3300 元，作者的目标是把成本压到与 Max 订阅持平。  2.0 的核心变化是把「Claude Code 的活 / Codex 的活」这种按工具划分的逻辑，重构为按角色划分的三身份系统：deep_reasoner 负责深度推理与架构决策，fast_worker 负责快速执行与批量重构，arbiter 作为仲裁者对高风险决策做盲...
+2026-07-29 18:32:00
 
 
 
 ### [快手开源-KAT-Coder-V2.5-Dev-：35B-A3B-MoE-编程智能体，七项基准拿下同规模-Agentic-Coding-SOTA！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247511279&idx=1&sn=b383fe5124b50d6c3bce943c0147b2d9)
 
-2026-07-29 17:35:00 | 标签: AI 编程, 大语言模型, MoE, Agentic Coding, SWE-bench
-
-> 快手 KAT 团队发布了 KAT-Coder-V2.5-Dev，这是基于 Qwen3.6-35B-A3B 的 35B 参数、3B 激活参数（MoE 架构）编程智能体，采用 Apache-2.0 协议全面开源。文章详细列出了在 SWE-bench Verified、Multilingual、Pro、Terminal-Bench 2.1、PinchBench、Scicode 等七项 Agentic Coding 基准上的内部复现结果，均取得同规模第一的 SOTA（如 SWE-bench Verified 69.40、Multilingual 63.00、Pro 45.96）。除了分数外，文章重点介...
+2026-07-29 17:35:00
 
 
 
 ### [外滩黑客松·AI-Coding-大赛报名进行中](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247511279&idx=2&sn=ce5c1c830a06bf4f87543d37bcda3534)
 
-2026-07-29 17:35:00 | 标签: AI 编程, 黑客松, 外滩大会, 赛事报名, 奖项设置
-
-> 外滩黑客松·AI Coding 大赛由外滩大会组委会发起，联合小红书、观猹共同主办，阿里云百炼、扣子、灵光、秒哒、QMuse、Qoder、吐司、WeaveFox、小浣熊等国内头部 AI Coding 平台共同承办。本次大赛面向学生、上班族、退休老人等全民，只要有想法即可使用 AI 编程参赛。设置一等奖 3 名、二等奖 8 名、三等奖 15 名及人气奖 100 名，并提供各平台专属权益。赛事是 2026 Inclusion·外滩大会「科技智能创新赛」重要组成部分，将于 9 月 9 日至 12 日在上海黄浦世博园区举行，与地球伙伴计划·蚂蚁森林绿色科技创新赛和 AFAC 金融智能创新大赛并列。活动...
+2026-07-29 17:35:00
 
 
 
 ### [超越-OpenAI、Anthropic！国产-AI-安全智能体杀进全球前四、国内第一](https://www.qbitai.com/2026/07/462447.html)
 
-2026-07-29 16:13:03 | 标签: AI Agent, 网络安全, 深信服, 大模型, 代码安全
-
-> 本文报道了深信服（Sangfor）在 AI 安全领域的最新进展。在基于国产大模型 GLM-5.2 的配置下，其 AI 安全智能体 Sangfor AI 在 CyberGym 实战靶场测试中表现优异，成功率达 86.3%，超越了 OpenAI 和 Anthropic 的相关表现，位居全球前四。技术层面，Sangfor AI 采用了「智能体群体（Agent Swarm）协同作战」架构，通过有界探索、证据持久化、动态假设裁决及对抗式候选评审四大核心逻辑，解决了漏洞挖掘中的长链路推理与验证问题。该技术目前已应用于企业级代码安全场景，旨在将传统静态应用安全测试（SAST）升级为具备自主推理能力的智能体，...
+2026-07-29 16:13:03
 
 
 
 ### [Opus-5-游戏提示词爆火！24-小时复刻-3A-巨作](https://www.qbitai.com/2026/07/462384.html)
 
-2026-07-29 16:04:50 | 标签: AI Agent, AI 编程, Vibe Coding, LLM, 提示工程
-
-> 文章围绕一条在 X 平台爆火的 Opus 5 游戏提示词展开。该提示词由 AI 创业者 Matt Shumer 提出，核心机制是「主 Agent 拆解任务 → 子 Agent 并行制作 → 评委 Agent 与真实 3A 游戏画面盲测对比，不达标则持续返工」，被作者命名为「挑战循环」。网友 Anshu 用这套方法在 24 小时内从零做出翻版《星际拓荒》的太空探索游戏《The Long Silence》，过程中 Opus 5 还自行构建了含 17 项校验的验收工具。Matt Shumer 本人也用同一提示词手搓出 AI 全生成的「使命召唤 Opus 5 版」。该方法被快速迁移到卡丁车、赛博朋克等...
+2026-07-29 16:04:50
 
 
 
 ### [纳米-Work-实测：一个任务，它跨了三家大模型，给我剪出一条-32-秒的宣传片！](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247491270&idx=1&sn=c79848d904d207af4081bf64b0fe3cfd)
 
-2026-07-29 15:41:00 | 标签: AI 产品与应用, AI 工作流, AI Agent, LLM, AI 编程
-
-> 本文是作者花叔对 AI 办公产品「纳米 Work」的实测分享。作者将真实任务——为自己的开源产品 FanBox 重新定位、重写文案、制作落地页和宣传视频——交给纳米 Work，详细记录了 AI 的执行过程：它自主读取仓库文档、发现 README 404 后自动修正、拆解人群假设并主动指出「不适合普通白领」、在动手前自我约束（如不使用真人实拍、标记 AI 生成内容），最终跨三家模型（Kimi K3、Seedance 2.0、MiniMax TTS）完成了一条 32 秒的合成视频。文章还展示了纳米 Work 的「全程可见」执行界面、手机端接管、以及专家广场中的 skill 团队编队功能。作者认为，...
+2026-07-29 15:41:00
 
 
 
 ### [OceanBase-回应融资报道：全力投入-AI-数据创新，与资本市场保持开放沟通](https://www.qbitai.com/2026/07/462380.html)
 
-2026-07-29 14:39:43 | 标签: OceanBase, AI 数据平台, 融资动态, 分布式数据库, 商业洞察
-
-> 本文报道了 OceanBase 对其 A 轮融资传闻的官方回应。文章梳理了 OceanBase 的业务现状与战略转型：公司正从传统的分布式数据库向支持 AI 时代（包括非结构化数据处理、Agent 数据供给）的 AI 数据平台演进。文中披露了关键经营数据，如 2026 年年化收入超 14 亿元，同比增长约 70%，并提及了其在分布式数据库市场的份额地位。此外，文章分析了 OceanBase 与 Databricks 的路径差异，并指出 OceanBase 设立独立董事会及股权激励机制，标志着其正加速实现从蚂蚁集团孵化业务向独立市场化运营的转变。
+2026-07-29 14:39:43
 
 
 
 ### [Meta-引发价格战](https://mp.weixin.qq.com/s?__biz=MzIxNzI0ODE4Nw==&mid=2247498664&idx=1&sn=5c4ecd3eed264e942ca5ec64a9361930)
 
-2026-07-29 12:45:00 | 标签: AI模型, 多模态 AI, 智能体, 模型定价, Meta
-
-> DeeplearningAI 报道 Meta 于 2026 年发布的 Muse Spark 1.1——一款支持文本、图像、视频多模态输入的视觉‑语言模型，并首次以付费 API 形式提供。模型具备工具调用、Prompt 缓存、可调推理级别等功能，性能在 MCP Atlas、JobBench、Artificial Analysis 等基准测试中排名靠前，且单任务成本显著低于同类模型。Meta 将输出 token 费用定为每百万 4.25 美元，远低于 Claude、GPT‑5.6 等竞争对手的 25‑50 美元区间，标榜为“低成本、高价值”的竞争者。文章指出，这一价格策略是对竞争对手商业模式的直接...
+2026-07-29 12:45:00
 
 
 
 ### [千问办公实测，从简单需求跑出可验收成品！](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247497910&idx=1&sn=e6c910a373031eadd2b8b728d458b01d)
 
-2026-07-29 12:21:00 | 标签: 千问办公, AI Agent, AI 办公, AI 产品与应用, AI 工作流
-
-> 作者阿真以千问办公为测试对象，用七个横跨不同办公场景的案例展示了这款 AI Agent 的能力。从门店经营数据看板、开放式耳机选品调研、内部活动报名与反馈复盘，到广告视频拉片、球状闪电科普播客、行业早报定时推送，每个案例都给出明确输入与可验收输出（网页、图表、PDF、播客等）。文章着重说明千问办公可自动调用网页搜索、1688 电商 Skill、浏览器操作、数据分析和多模态生成，免去部署服务器和配置数据库的步骤。同时也指出最终验收仍需人工介入，前期调研、数据分析、内容制作等耗时环节可高效交由 Agent 执行。
+2026-07-29 12:21:00
 
 
 
 ### [AI-到底能帮你做什么？听听这-7-位真实用户的答案](https://mp.weixin.qq.com/s?__biz=MzYzODgxODMzNQ==&mid=2247490792&idx=1&sn=14bd0582bb4d632c1f02a505781a0217)
 
-2026-07-29 12:00:00 | 标签: AI 工作流, 自动化, 知识管理, 效率工具, 产品原型
-
-> 文章围绕腾讯 WorkBuddy 与 ima 知识库的组合，选取了七位用户的真实故事，分为三类使用场景：一是把资料丢进知识库让 AI 读取并输出长图、笔记、思维导图等形式的“第二大脑”；二是仅凭领域知识和需求描述让 AI 生成互动小游戏、志愿填报助手等可直接使用的产品；三是通过 WorkBuddy 的自动化任务让 AI 每天完成下载财报、读取 PDF 对比、定时上传等重复工作，显著提升效率。文章还总结了对应的人机关系（“第二大脑”“一人工程师团队”“数字同事”）并给出三步开始使用的通用方法：建立知识库、导入资料、用具体问题或指令驱动 WorkBuddy。内容兼具案例细节与可操作步骤，适合希望了...
+2026-07-29 12:00:00
 
 
 
@@ -47064,153 +47012,115 @@
 
 ### [告诉你的模型何时该更努力思考-—-Visual-Studio-博客](https://devblogs.microsoft.com/visualstudio/tell-your-model-when-to-think-harder)
 
-2026-07-30 03:47:26 | 标签: AI 编程, LLM, 开发者工具, 提示工程, Vibe Coding
-
-> 本文介绍了 Visual Studio 18.9 Insiders 2 中的一项新功能，该功能允许开发者对受支持的 AI 模型设置思考努力级别。文章解释了四个级别——低、中、高和超高/最高，描述了各自适用的场景、如何在模型选择器中调整该设置，以及它对 AI 积分消耗的影响。通过将思考努力与任务相匹配（例如，简单的变量重命名用低级别，复杂的算法调试用高级别），开发者可以获得更匹配的响应，同时优化使用预算。文中还附带了模型管理视图的截图，并鼓励读者在 Insiders 频道中试用该功能。
+2026-07-30 03:47:26
 
 
 
 ### [模型配置-|-Kimi-Code-文档](https://www.kimi.com/code/docs/en/kimi-code/models)
 
-2026-07-30 03:25:33 | 标签: AI 模型, 模型配置, 代码生成, Kimi K3, Kimi K2.7
-
-> 文章详细介绍了 Kimi Code 提供的模型（Kimi K3 和 K2.7 Code），涵盖四个模型 ID，解释它们的参数、上下文窗口（K3 高达 1M）、速度变体（包括 HighSpeed）以及多模态输入支持。它通过官方客户端（CLI、VS Code）和第三方工具提供逐步的模型切换指南，强调在切换过程中开始新会话的最佳实践。文档还涉及常见问题，如身份验证错误（401）、HighSpeed 模型的速度预期、上下文缓存失效以及第三方集成的配置要求。特别说明包括 K3 的上下文窗口设置、推理努力级别以及高级功能的会员计划要求。
+2026-07-30 03:25:33
 
 
 
 ### [制造业依赖资本，金融保护利润率。](https://www.databricks.com/blog/manufacturing-runs-capital-finance-protects-margin)
 
-2026-07-30 02:30:00 | 标签: 营运资本, AI 代理, 本体论, 金融自动化, 现金管理
-
-> 金融通过释放被占用在库存、应收账款和设备中的资本来保护利润率，估计在大型美国公司中有 $1.7 T 的过剩营运资本被锁定。AI 代理加速规划和金融决策；准确的数字需要完整的业务上下文，而本体论能够提供这些上下文。Genie 是一款面向金融的数据智能 AI 同事，它回答现金被锁定的地点、应收账款的老化以及哪些资产未能产生回报，展示其可追溯的工作并为人工判断准备行动。
+2026-07-30 02:30:00
 
 
 
 ### [Superlogical-的公告](https://www.superlogical.com/)
 
-2026-07-29 23:41:33 | 标签: 开发者工具, 终端复用器, AI 集成, 初创公司, 远程开发
-
-> 该公告阐述了 Superlogical 的愿景：创建一个跨应用和环境的复用器，默认提供上下文、结构化操作和持久历史记录。首款产品将是一个可通过网页和原生 macOS/iOS 应用访问的终端复用器，使用户能够无缝关闭、重新连接并恢复工作。项目团队由来自 HashiCorp、Vercel 及其他知名科技公司的资深开发者组成，且该项目获得 Notable Capital、Amplify Partners 以及多位知名科技创始人的投资支持。读者可注册参与测试版，并获取 OSS 发布的更新。
+2026-07-29 23:41:33
 
 
 
 ### [GitHub---drumih/turbo-fieldfare:-Gemma-4-26B-A4B-在任何-M-系列-MacBook-上仅需约-2-GB-RAM-进行推理](https://github.com/drumih/turbo-fieldfare)
 
-2026-07-29 23:05:43 | 标签: LLM, 端侧 AI, 模型优化, Swift, Metal
-
-> TurboFieldfare 是一个自定义的 Swift + Metal 运行时，使得指令调优的 Gemma 4 26B-A4B（26B 参数）能够在仅需 2 GB RAM 的 Apple Silicon Mac 上运行。它不加载完整的 14.3 GB 模型，而是将共享的 1.35 GB 核心和 FP16 KV 缓存保留在内存中，并为每个 token 仅从 SSD 流式传输所需的专家。该项目提供了原生 macOS 应用、命令行界面以及一个实验性的回环 OpenAI 兼容服务器，全部基于 Swift 6.2 和 Metal 4 构建。基准测试显示，在 8 GB M2 MacBook Air 上解...
+2026-07-29 23:05:43
 
 
 
 ### [告诉你的模型何时该更深入思考](https://devblogs.microsoft.com/visualstudio/tell-your-model-when-to-think-harder/)
 
-2026-07-29 23:02:36 | 标签: AI 编程, LLM, 提示词工程, 开发者工具, 氛围编程
-
-> 本文解释了 Visual Studio 18.9 Insiders 2 如何为受支持的 AI 模型添加思考努力设置，提供从 Low（快速、低消耗响应）到 Extra High/Max（针对艰难问题的深度推理）的级别。它展示了在模型管理视图中可以找到该设置的位置，解释了将努力与任务匹配如何节省积分，并鼓励读者在最新的 Insiders 版本中尝试该功能。
+2026-07-29 23:02:36
 
 
 
 ### [GitHub---VladUZH/qwen-scribe：面向-Apple-Silicon-的私有、本地转录与系统级听写。](https://github.com/VladUZH/qwen-scribe)
 
-2026-07-29 22:47:22 | 标签: AI 产品与应用, LLM, 开发者工具, 开源, 转录
-
-> Qwen Scribe 是一款开源 macOS 应用，利用在 Apple Silicon 上运行的 Qwen3‑ASR 模型通过 MLX，实现私有、设备本地的音视频转录以及系统级听写。它支持拖拽文件转录、语言检测、可选强制语言、词汇提示、单词时间戳、SRT 导出、本地转录历史，并提供长按右 Command 键的听写工作流，配有不抢占焦点的 HUD。该应用需要 Apple Silicon Mac、macOS 14+、Python 3.12、ffmpeg 和 Xcode 命令行工具；模型权重在首次使用时下载。构建说明通过 Makefile 提供，项目在 Apache‑2.0 许可证下发布，无需云服...
+2026-07-29 22:47:22
 
 
 
 ### [关于-Anthropic-新密码分析结果的一些思考](https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/)
 
-2026-07-29 22:23:30 | 标签: AI, LLM, 密码分析, 后量子密码学, AES
-
-> Anthropic 发布了两篇由其未公开的 Claude Mythos 模型生成的密码分析论文：一项针对非标准后量子 HAWK 签名方案的密钥恢复攻击，以及一项针对 7 轮精简版 AES 的改进攻击。HAWK 攻击虽然仍是指数级复杂度，但将方案的安全裕度减半，可以通过增大密钥来缓解，但它表明 AI 能够高效地应用现有工具来发现弱点。AES 的结果仅相比先前工作实现了适度的常数因子加速，距离实际破解还很遥远，需要 2^89 次操作和不切实际的选择明文数据量。作者讨论了 Anthropic 如何通过简单的提示词获得这些结果，可验证性的重要性（HAWK 容易验证，AES 更困难），以及对密码学、科学...
+2026-07-29 22:23:30
 
 
 
 ### [Qodana-2026.2：更多安全，更好覆盖，更少配置](https://blog.jetbrains.com/qodana/2026/07/qodana-2026-2-more-security-better-coverage-less-configuration/)
 
-2026-07-29 21:47:03 | 标签: 代码质量, 安全测试, JetBrains, Qodana, SAST
-
-> JetBrains 博客宣布 Qodana 2026.2，突出多项易用性和能力增强。代码覆盖率报告现在开箱即用，能够自动检测常见项目位置的报告，并在 IDE 中直接显示未覆盖的行，用于拉取请求分析。安全分析通过新增 SAST 检查、多文件污点分析、支持自定义 OpenGrep 规则、公开可用的 SABER 基准以及符合 NIST 级别的后量子密码学检查得到扩展。Laravel 检查在 PHP 项目中默认启用，许可证审计质量门禁可以在存在禁止或未检测到的依赖时导致构建失败。该版本减少了配置步骤，提供演示项目和公开基准结果，并链接到文档和演示请求。
+2026-07-29 21:47:03
 
 
 
 ### [使用工具变量进行产品实验：在-Python-中消除-LLM-路由决策的混杂效应](https://www.freecodecamp.org/news/instrumental-variables-for-llm-routing-in-python/)
 
-2026-07-29 21:27:40 | 标签: LLM, AI 产品与应用, 因果推断, 实验与评估, AI 基础设施
-
-> 文章指出，在多模型 LLM 网关中，对任务完成率关于高级路由决策的标准回归存在因果缺陷：路由决策与查询复杂度相关，而复杂度本身影响完成率，因此 OLS 将模型质量与查询难度混为一谈。作者使用一个 5 万名用户的合成数据集进行演示，其中真实高级路由效应为 +6 个百分点，但 OLS 仅恢复出 +3.3 个百分点，原因在于未观测到的复杂度混杂。解决方案是使用工具变量分析，以触发速率限制回退作为工具变量，因为这些回退的发生基于基础设施原因，与查询质量无关。本教程逐一讲解四个 IV 假设（相关性、排他性、独立性、单调性），通过两个链式 OLS 回归从头实现 2SLS，通过一阶段 F 统计量（Staig...
+2026-07-29 21:27:40
 
 
 
 ### [HANDBOOK.md：长上下文智能体指令遵循基准](https://arxiv.org/abs/2607.25398)
 
-2026-07-29 21:01:57 | 标签: AI 代理, LLM 基准, 长上下文, 代理评估, 机器学习
-
-> 本文介绍了 HANDBOOK.md，这是一项包含 65 项智能体任务的基准，模拟企业员工遵循公司手册的方式。每个任务将智能体置于一个自包含的公司环境中，提供模拟的电子邮件、聊天、日历、问题追踪和商务服务，这些服务通过 Model Context Protocol 暴露，并指示其执行受专家撰写的 20‑124 页标准操作程序（SOP）约束的日常专业工作。任务覆盖五个领域（金融、医疗账单、保险、物流、人力资源）和十家虚构公司；每个任务会修改十本基础手册中的一本，以防止记忆。评分完全确定性，基于 824 条程序化标准，检查必需的动作和禁止的动作。严格评分下，三十种评估模型配置中表现最佳的仅通过 36...
+2026-07-29 21:01:57
 
 
 
 ### [微软面向-AKS-上-AI-智能体的三层-LLM-路由架构](https://www.infoq.com/news/2026/07/microsoft-agents-aks-routing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-29 20:00:00 | 标签: AI 智能体, AKS, LLM 路由, Kubernetes, GPU 优化
-
-> 微软发布了一套专为 Azure Kubernetes Service (AKS) 上 AI 智能体高频、迭代型工作负载设计的参考架构。与标准聊天接口不同，智能体在单个任务中往往会触发数百次 LLM 调用，其中许多调用并不需要使用前沿模型。该架构通过三个独立层级来解决这一问题：通过 RouteLLM 进行语义路由，以选择最具成本效益的模型；通过 agentgateway 进行策略管理与治理；通过 Kubernetes Gateway API Inference Extension 实现 GPU 感知的负载均衡。通过整合这些组件，组织可以在基于 KV-cache 占用率、队列深度等实时指标进行路由...
+2026-07-29 20:00:00
 
 
 
 ### [AI-Native-交易核心系统的研发范式｜得物技术](https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247546316&idx=1&sn=cbe17a317044b279de6ad192302d9390)
 
-2026-07-29 18:30:00 | 标签: AI编程, 工程实践, 代码质量, TDD, 软件工程
-
-> 文章基于得物订单系统一年多的改造实践，系统阐述了 AI Coding 普及后核心系统面临的新挑战：错误模式迁移、知识结构化压力、变更量与审查力失衡、故障回溯难、链路熵增。针对这些问题，作者设计了一个 Claude Code Spec-Driven 开发插件，将研发流程重构为五道标准化关口：第一关需求澄清，以 BDD 场景驱动和固定模板钉死“做什么”；第二关技术方案设计，通过模块拆解和规约对齐锁定“怎么做”；第三关编码执行，以 TDD 的 RED-GREEN-REFACTOR 循环确保每行代码都有测试覆盖；第四关门禁卡控，通过多层自动化审核和增量代码体检守住产出质量；第五关全流程埋点监控，用数据...
+2026-07-29 18:30:00
 
 
 
 ### [拆解京东海博-AI-Native-落地保障：Harness、双-Loop、知识库与技能自主迭代实践](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502448&idx=1&sn=54249076ec825c4ae5b9f5872925b5c1)
 
-2026-07-29 18:18:00 | 标签: AI 编程, AI Agent, AI 工程化, AI 工作流, 大模型应用
-
-> 文章围绕京东海博团队在企业级 AI Native 研发工程化中的完整实践展开。作者首先指出传统对话式 AI 编程存在行为不可控、流程不固定、知识难沉淀等痛点，进而提出以「流程、规范、知识体系原生适配 AI」为核心的解决思路。  框架层面，海博构建了双层目录架构（用户级通用标准 + 项目级专属规则），通过自研 AI 路径解析协议实现「项目优先、用户兜底」的加载策略；运行机制上以 Preamble 原生自检与五阶段串行流水线消除模型随机性，搭配 13 类任务路由策略平衡专业度与负载。  核心资产由技能、Agent、规则三位一体构成：17 项全链路技能覆盖需求拆分、技术方案设计、任务拆分与编码、Bu...
+2026-07-29 18:18:00
 
 
 
 ### [火山引擎开源-Agent-驱动的搜索自迭代技术](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521040&idx=1&sn=59454cfc3b20a519f2a72e26c0932776)
 
-2026-07-29 18:00:00 | 标签: AI Agent, AI 编程, 开源项目, 搜索与推荐, LLM
-
-> 文章介绍火山引擎开源的 SearchCLI 项目，核心是「Agent 驱动的搜索自迭代」能力。传统搜索调优依赖专家反复试验，参数之间相互影响且评测成本高。作者将搜索调优拆解为「发现问题—提出假设—分配评测预算—筛选候选—验证收益—输出候选配置」的可审阅闭环，由 Agent 调度 Skills 与 CLI 完成 Query 校验、实验规划、批量搜索、相关性标注、指标计算与候选 Scene 创建。算法层提出 SPA（Strategy Population Annealing）框架，将搜索参数编码为带领域语义的 Genome，通过多保真评测、多视角 Elite、语义化进化与退火机制分配预算，并以 R...
+2026-07-29 18:00:00
 
 
 
 ### [如何构建自动切换模型的-AI-应用](https://www.freecodecamp.org/news/build-ai-applications-that-switch-models-automatically/)
 
-2026-07-29 17:21:57 | 标签: LLM, AI 架构, AI 工程, Python, API 集成
-
-> 本文提供了一份实用的、面向生产的指南，介绍如何用 Python 构建一个多层 AI 编排层。受实际生产痛点（API 中断以及为琐碎查询使用顶级模型导致的高额账单）的启发，作者设计了一个三阶段流水线：(1) 一个确定性的 PromptAnalyzer，通过正则关键字匹配、代码块检测和词数阈值将提示词分类为 SIMPLE、MEDIUM 或 COMPLEX；(2) 一个 ModelRouter，通过 Pydantic 验证的路由表将每个层级映射到主模型和备用模型（例如，简单/中等任务使用 gpt-4o-mini，复杂任务使用 claude-3-5-sonnet）；(3) 一个 ResilientMo...
+2026-07-29 17:21:57
 
 
 
 ### [如何让-Antigravity-智能体技能可配置（无需-Fork）](https://www.freecodecamp.org/news/make-your-antigravity-agent-skills-configurable-without-forking-them/)
 
-2026-07-29 17:19:03 | 标签: AI Agent, AI 编程, 开发者工具, Prompt Engineering, AI Workflow
-
-> 文章针对 Antigravity 智能体技能的一个常见痛点：其静态特性迫使用户通过 Fork 并修改技能文件来改变行为，导致维护噩梦。作者提出一种轻量级约定——每个技能随 `SKILL.md` 一同发布一个 `config.default.yaml`，并通过一个小型 Python 加载器（`resolve_config.py`）将这些默认值与项目级覆盖配置（位于 `.agent/skills.config.yaml`）进行合并。教程逐步演示了构建深度合并加载器、将静态的 `git-commit-formatter` 技能改造为可配置技能、添加项目级覆盖配置，以及测试合并行为的过程。另外两个示例...
+2026-07-29 17:19:03
 
 
 
 ### [无限期免费，Token-不限量！](https://mp.weixin.qq.com/s?__biz=MzAxOTcxNTIwNQ==&mid=2457994958&idx=1&sn=deb9a8b9dc0e5246bd3506af5522d1dd)
 
-2026-07-29 17:05:00 | 标签: AI 模型, 免费 API, 代码调试, 图像生成, 3D 渲染
-
-> 文章介绍了 Agnes AI 最近推出的免费全模态模型 Agnes-2.5-Pro Alpha 及其基础版 Agnes-2.5-Flash，说明该模型支持 1M 上下文窗口、定价与 DeepSeek V4 涨价前相同（输入 3 元/百万 Token，输出 6 元/百万 Token，命中缓存仅 0.025 元），并通过作者的三项实测展示了其在文生图（手写感更自然）、代码理解与 Bug 定位（两分钟定位问题、11 秒修复马里奥跳高 Bug）以及使用 Three.js 制作 3D 赛车游戏（基本可跑、需优化细节）方面的表现。作者认为该免费模型已能够胜任日常开发任务，并会继续关注其发展。
+2026-07-29 17:05:00
 
 
 
 ### [生产环境中-MCP-的安全防护：超越网关的纵深防御](https://www.infoq.com/articles/securing-mcp-production-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-29 17:00:00 | 标签: MCP 协议, AI 安全, AI 智能体, 纵深防御, 生产架构
-
-> 本文提出了一种用于生产环境中 Model Context Protocol（MCP）部署的纵深防御架构，基于作者团队在 2025 年底构建多智能体平台的经验。文章认为仅靠网关是不够的，并提出了四个控制层，每层都有其最早的强制执行点：（1）安全的工具执行，通过基于数组的 exec 调用和 CI 门控的 Semgrep 规则将处理函数参数视为数据；（2）管理平面安全，要求对检视器、测试框架和注册接口进行身份验证；（3）出站信任边界，使用出站白名单和限定范围的令牌来防止类似 SSRF 的凭据泄露（引用了 Azure MCP Server 中的 CVE-2026-26118）；（4）语义完整性，通过注...
+2026-07-29 17:00:00
 
 
 

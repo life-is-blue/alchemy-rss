@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-30 09:24:04 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-30 12:48:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,25 +584,19 @@
 
 ### [驯服-Dependabot：分组更新、降低频率、保持安全更新快速](https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/)
 
-2026-07-30 00:00:00 | 标签: Dependabot, 依赖管理, DevOps, GitHub, 安全更新
-
-> 文章以微软 GCToolkit 仓库的具体例子开始，其中超过六分之一的提交是常规的 Dependabot 版本升级，造成了嘈杂的拉取请求流。文章解释说，这种噪音源于每日检查间隔和缺乏分组。解决方案涉及对 dependabot.yml 进行三项更改：(1) 使用带有通配符模式的 groups 功能将某个生态系统中的所有依赖项更新捆绑到一个拉取请求中；(2) 将 schedule.interval 从每日改为每月（或每周），以创建可预测的节奏；(3) 为每个实际使用的生态系统（例如 maven、npm）添加 updates 条目，以便所有依赖项都接收版本更新。文章澄清，这些设置仅影响版本更新；De...
+2026-07-30 00:00:00
 
 
 
 ### [如何构建-Kubernetes-Operator：开发者手册](https://www.freecodecamp.org/news/how-to-build-kubernetes-operators-a-handbook-for-devs/)
 
-2026-07-29 22:11:02 | 标签: Kubernetes, Operator, DevOps, 云原生, 后端开发
-
-> 这份深度指南分为四个部分，引导开发者构建 Kubernetes Operator。第一部分介绍 Operator 模式，区分 Operator、控制器与 CRD，并解释为什么 Operator 优于 Helm Chart、CronJob 或脚本，用于持续调和状态。第二部分剖析组件：含 spec/status 分离的自定义资源、用于事件驱动变更检测的 Informer/Liste r/Workqueue、带 Leader 选举的 Manager 进程以及调和循环本身，涵盖幂等性、重新入队、错误处理和漂移修正。第三部分构建一个完整的 VMOperator，管理由 Python/Flask 模拟云提...
+2026-07-29 22:11:02
 
 
 
 ### [Cloudflare-发布-Internal-DNS-正式版](https://www.infoq.com/news/2026/07/cloudflare-internal-dns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-29 18:30:00 | 标签: Cloudflare, DNS, 网络基础设施, 云原生, 企业 IT
-
-> Cloudflare 在自 2025 年 6 月开始的测试期后，正式推出了 Internal DNS 服务。该服务面向运营私有 DNS 工作负载的 IT 团队，旨在通过统一的 API、审计日志和策略注册表，将私有与公共 DNS 整合到单一控制平面中。它由两个组件组成：Gateway Resolver 和 Internal Authoritative DNS，两者均构建在 Cloudflare 现有的 DNS 平台之上。用户可以通过三个实体（内部区域、DNS 视图和解析策略）进行交互，从而在无需并行系统的情况下实现 Split-Horizon（分层解析）设置。查询会首先由 Gateway Res...
+2026-07-29 18:30:00
 
 
 
