@@ -1,0 +1,51 @@
+{
+  "id": "RAW_3661e66953",
+  "title": "Bruce Schneier 的一段引言",
+  "url": "https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything",
+  "date": "2026-07-31 02:25:26",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th July 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.schneier.com/blog/archives/2026/07/should-you-use-ai-for-a-task-heres-a-simple-way-to-decide.html\">\n     <p>The writing assignments I give my students are gym tasks, not work tasks. I ask them to write policy memos not because the world needs more policy memos. I assign them because the very act of writing, which includes thinking and outlining and drafting and editing, making and criticizing and revising arguments, will help develop the critical thinking skills they will need in their future careers. And without this constant mental exercise, those skills will atrophy. Employers are&nbsp;<a href=\"https://futurism.com/future-society/college-critical-thinking-ai\">already noticing</a>.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.schneier.com/blog/archives/2026/07/should-you-use-ai-for-a-task-heres-a-simple-way-to-decide.html\">Bruce Schneier</a>, <span class=\"context\">Should You Use AI for a Task? Here’s a Simple Way to Decide</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2297/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 引用了 Bruce Schneier 的一段话，认为写作任务是对批判性思维的心智训练，而不仅仅是产出成果，尤其是在 AI 正在侵蚀这些能力的当下。",
+  "oneSentenceSummary": "Simon Willison 引用了 Bruce Schneier 的一段话，认为写作任务是对批判性思维的心智训练，而不仅仅是产出成果，尤其是在 AI 正在侵蚀这些能力的当下。",
+  "summary": "这篇短文分享了 Bruce Schneier 在一篇关于何时使用 AI 的文章中所写的一段话。Schneier 认为，他给学生布置的写作任务是“健身任务，而非工作任务”——目的不是产出更多的政策备忘录，而是锻炼思考、列提纲、起草、编辑和修改论证这些心智肌肉。他警告说，如果没有持续的练习，批判性思维技能会退化，并引用证据指出雇主们已经注意到这种能力的下滑。Willison 的摘录引出了一个更广泛的观点：随着 AI 工具让按需生成文本变得轻而易举，把写作作为认知训练的有意练习反而变得更加重要，而不是更不重要。",
+  "mainPoints": [
+    {
+      "point": "写作任务的作用是认知训练，而非生产任务。",
+      "explanation": "Schneier 将学生的写作视为“健身任务”——其价值在于思考、列提纲、起草和修改的过程，而不在于最终产出的备忘录。"
+    },
+    {
+      "point": "批判性思维技能若缺乏刻意练习会逐渐退化。",
+      "explanation": "他警告说，若没有持续的心智锻炼，这些能力会衰退，并引用报道指出雇主们已经观察到这种下滑。"
+    },
+    {
+      "point": "反对把思考外包给 AI 的论据，恰恰支持更刻苦的练习。",
+      "explanation": "Willison 的摘录暗示，随着 AI 让文本生成变得毫不费力，把写作当作思考训练的这种自律反而更有价值，而非过时。"
+    }
+  ],
+  "keyQuotes": [
+    "我给学生布置的写作任务是健身任务，而非工作任务。",
+    "如果没有这种持续的心智锻炼，这些技能就会退化。"
+  ],
+  "tags": [
+    "批判性思维",
+    "AI 与教育",
+    "写作与表达",
+    "学习方法",
+    "心智模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 72,
+  "wordCount": 99,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785435926000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-31 02:25:26"
+}

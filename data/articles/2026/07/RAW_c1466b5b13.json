@@ -1,0 +1,51 @@
+{
+  "id": "RAW_c1466b5b13",
+  "title": "GPT-5.6 推动性价比新前沿",
+  "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
+  "date": "2026-07-31 07:58:42",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th July 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Jul/30/luna-price-drop/\">\n    <p><strong><a href=\"https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/\">Advancing the price-performance frontier with GPT‑5.6</a></strong> (<a href=\"https://news.ycombinator.com/item?id=49112867\" title=\"Hacker News\">via</a>) Huge price drop from OpenAI today: GPT-5.6 Terra got a 20% reduction, and GPT-5.6 Luna got a massive 80% drop.</p>\n    <p>OpenAI credit 5.6 Sol with enabling this: in <a href=\"https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/\">How GPT‑5.6 fuses frontier intelligence with frontier efficiency</a> they describe using 5.6 Sol to optimize load balancing, and more impressively to optimize inference itself:</p>\n    <blockquote>\n     <p>We also used GPT‑5.6 Sol to optimize the model’s forward pass: the computation that transforms inputs into next-token predictions. Even when individual operations are fast, excess memory movement, synchronization, and inefficient data layouts can leave GPUs idle. To avoid this, GPT‑5.6 Sol found work that could be precomputed, avoided, or parallelized. With Codex, GPT‑5.6 Sol autonomously rewrote and optimized our production kernels, the core code that executes the mathematical operations that make up the model. This worked in part because we’ve trained GPT‑5.6 to be effective at writing and improving kernels in&nbsp;<a href=\"https://triton-lang.org/main/index.html\">Triton⁠</a>and&nbsp;<a href=\"https://triton-lang.org/main/gluon/index.html\">Gluon⁠</a>, two open-source GPU programming languages maintained by OpenAI. These efforts, combined with broader kernel advancements from GPT‑5.6 Sol, reduced end-to-end serving costs by 20%.</p>\n    </blockquote>\n    <p>That Luna price drop completely changes the landscape with respect to lower priced models. At $0.20/million tokens for input and $1.20/million for output Luna is now cheaper than Google's Gemini 3.1 Flash-Lite ($.025/$1.50).</p>\n    <p>Anthropic's cheapest current model is Claude Haiku 4.5, and that's $1/$5 - Luna is now 1/5th of that for input, previously it cost the same.</p>\n    <p>My <a href=\"https://agent.datasette.io/\">agent.datasette.io</a> demo site was running on Gemini 3.1 Flash-Lite. I've switched it over to Luna.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9570/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 将 GPT-5.6 Luna 的价格削减了 80%，使其比 Gemini 3.1 Flash-Lite 和 Claude Haiku 4.5 更便宜，这得益于使用 GPT-5.6 Sol 优化推理。",
+  "oneSentenceSummary": "OpenAI 将 GPT-5.6 Luna 的价格削减了 80%，使其比 Gemini 3.1 Flash-Lite 和 Claude Haiku 4.5 更便宜，这得益于使用 GPT-5.6 Sol 优化推理。",
+  "summary": "OpenAI 宣布对 GPT-5.6 进行大幅降价：Terra 降价 20%，Luna 降价 80%。文章解释了如何使用 GPT-5.6 Sol 优化负载均衡和推理（前向传播、使用 Triton 和 Gluon 重写内核）以降低服务成本。作者将 Luna 的新价格（每百万 tokens $0.20 / $1.20）与竞品模型进行比较，指出其现在比 Gemini 3.1 Flash-Lite 更便宜，并且比 Claude Haiku 4.5 便宜得多。作者还提到将他的演示站点从 Gemini 切换到 Luna。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.6 Luna 价格下降 80%，降至每百万 tokens $0.20 / $1.20。",
+      "explanation": "这使得 Luna 比 Gemini 3.1 Flash-Lite 和 Claude Haiku 4.5 便宜得多，改变了低成本模型的竞争格局。"
+    },
+    {
+      "point": "降价是由使用 GPT-5.6 Sol 的推理优化驱动。",
+      "explanation": "GPT-5.6 Sol 优化了负载均衡，并使用 Triton 和 Gluon 重写了生产内核，将端到端服务成本降低了 20%。"
+    },
+    {
+      "point": "作者将他的演示站点从 Gemini 3.1 Flash-Lite 切换到了 Luna。",
+      "explanation": "价格优势使 Luna 成为以前依赖更便宜替代品的应用中更具成本效益的选择。"
+    }
+  ],
+  "keyQuotes": [
+    "我们还使用了 GPT-5.6 Sol 来优化模型的前向传播：即把输入转换为下一个 token 预测的计算。即使单个操作很快，过多的内存移动、同步和低效的数据布局也可能让 GPU 空闲。",
+    "借助 Codex，GPT-5.6 Sol 自主重写并优化了我们的生产内核，即执行构成模型的数学运算的核心代码。"
+  ],
+  "tags": [
+    "AI 定价",
+    "GPT-5.6",
+    "OpenAI",
+    "LLM",
+    "推理优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 257,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785455922000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-31 07:58:42"
+}

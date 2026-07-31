@@ -1,0 +1,56 @@
+{
+  "id": "RAW_c4305cabe2",
+  "title": "大世界直觉 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/s22XzjQsrh6JXhXGH/big-world-intuitions",
+  "date": "2026-07-31 03:10:28",
+  "author": "sarahconstantin",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <div>\n     <figure>\n      <span><span><a href=\"https://media.bestblogs.dev/20260730192413_dbdda04f-30a0-4142-a05e-a8c3e728311d_994x897.jpeg\" class=\"image-link image2 is-viewable-img\"> \n         <div>\n          <img src=\"https://media.bestblogs.dev/20260730192413_22c8ca6.webp\" alt=\"\" srcset=\"https://media.bestblogs.dev/20260730192413_fb25dd0.webp 424w, https://media.bestblogs.dev/20260730192413_c333be9.webp 848w, https://media.bestblogs.dev/20260730192413_95c4ad0.webp 1272w, https://media.bestblogs.dev/20260730192413_22c8ca6.webp 1456w\">\n          <div></div>\n         </div> \n        </a></span></span>\n     </figure>\n    </div>\n    <p id=\"block0\">Consider the following situations:</p>\n    <ul>\n     <li id=\"block1\">\n      <p id=\"block2\">when you are a small, growing startup in a big market, standard advice is not to worry too much about your competitors or try to do anything adversarial “against” them, but just to focus on growing and providing value to your own customers.</p>\n     </li>\n     <li id=\"block3\">\n      <p id=\"block4\">when you are a small trader in a big market, you don’t need to worry about your trades shifting the market price or revealing information to your competitors; in many contexts, your optimal strategy is simply to bid your true price, buying when an asset is cheaper than your “happy price” and selling when it’s more expensive.</p>\n     </li>\n     <li id=\"block5\">\n      <p id=\"block6\">when you are in the early stages of a game, often your best strategy is to grow your “resources” (like developing your pieces in chess, trying to control more territory and have more value on the board), following a pattern that’s mostly independent of what the other players are doing and gets you more of something that’s valuable across many possible game states.</p>\n     </li>\n     <li id=\"block7\">\n      <p id=\"block8\">when you are a species whose resource needs are much smaller than the carrying capacity of your environment, you are <span><span><a href=\"https://en.wikipedia.org/wiki/R/K_selection_theory\">r-selected</a></span></span>; your fitness is maximized by just having as many offspring as possible and not “worrying” about running out of resources.</p>\n     </li>\n     <li id=\"block9\">\n      <p id=\"block10\">when you expect that you’re going to run into the same people over and over again for a long time to come, it’s wise to be consistently trustworthy and helpful even if you could get an advantage in the short run by betraying someone; the long-term costs to your reputation, and the costs of making a habit of doing something that’s <em>usually </em>destructive, vastly outweigh any short-term advantage you could gain this one time.</p>\n     </li>\n     <li id=\"block11\">\n      <p id=\"block12\">when you are working on a hard technical problem that’s a long way from solved, and could have both benefits and harms to humanity if it were solved, you don’t really have to worry about “what if we succeed and it’s bad?” or “what if this information gets into the hands of the wrong people?” You’re a long way from winning, worrying about winning too much is silly, and heuristics like “do a good job on important work” and “share scientific knowledge freely” are more trustworthy than galaxy-brained arguments for why in this particular case the utilitarian calculus works out the other way.</p>\n     </li>\n    </ul>\n    <p id=\"block13\">These kinds of intuitions are what I’d call “big-world” heuristics.</p>\n    <p id=\"block14\">What they have in common is that the world is “big” enough relative to you — the market is much bigger than you, the problem is much bigger than your progress on it, the game is very far from being over, the environment is much bigger than your resource consumption, etc — that your best strategy for achieving your goals is <em>not </em>to explicitly calculate how your action will affect the environment (including how your actions will affect other agents’ actions.) There are zones where the best move is <em>non-consequentialist</em>, in the sense that you do best by following heuristics (or principles, or virtues) that are good regardless of the exact specifics of the situation you’re in. You can <em>neglect your (immediate) action’s (immediate and specific) effect on the environment.</em><a class=\"LinkStyles-link footnote-anchor\" href=\"https://www.lesswrong.com/posts/s22XzjQsrh6JXhXGH/big-world-intuitions#footnote-1\">1</a></p>\n    <p id=\"block15\">By contrast, if you are in the endgame of a game of chess, or in an oligopolistic competition, you absolutely need to think about how other players will respond to your actions. You do need to search through a tree of “if I do this, that will happen” and compute that specifically for the specific game state you’re in, and recompute it every time the game state changes.</p>\n    <p id=\"block16\">Big-world intuitions feel a bit like “play fair, mind your own business, cultivate your own garden, do your best, and it’ll all more-or-less work out for the best in the long run”. Or like “keep your eyes on your own paper”, don’t try to manipulate people, just follow the same path you would if you were alone; whether you’re Robinson Crusoe alone on an island or one anonymous citizen in a big city, your “job” is pretty much the same, in that you need to work to take care of your own needs.</p>\n    <p id=\"block17\">This came to mind because I noticed that I pretty much always rely on big-world intuitions. I don’t really know what to do about questions like “what if we win too much and it’s bad” or “what if I, personally, have the power to shape society, how would I choose to set it up”. And I don’t really even know where to begin with chains of adversarial strategic thinking like “if I do this, she’ll do that, so I’ll do this…” I’m always thinking of myself as one participant among many, with a small share of power/influence, working on problems hard enough that the only thing I have to worry about is doing the best job I can, and trying to follow universally sound principles/heuristics.</p>\n    <p id=\"block18\">The nice thing about sticking to principles/heuristics is that it’s robust to uncertainty. What if you’ve misread the situation? What if you’re not as big a deal as you think you are? Behave in a way that’s <em>usually for the best, even so</em>.</p>\n    <p id=\"block19\">Except, of course, if you really are super powerful, super close to winning, super close to the “endgame” in some sense, or in a really bizarre situation where the consequences of following generally-good heuristics happen to be very bad. <em>Most of the time, for most people, this is not the case!</em> But it is disquieting to notice that none of my grounding intuitions or usual ways of thinking about what “healthy” or “prudent” or “ethical” look like, are fit for such situations.</p>\n    <div>\n     <a class=\"LinkStyles-link footnote-number\" href=\"https://www.lesswrong.com/posts/s22XzjQsrh6JXhXGH/big-world-intuitions#footnote-anchor-1\">1</a>\n     <div class=\"footnote-content\">\n      <p id=\"block20\">This intro to <a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/rduzFkTKx5pGKWKcL/mean-field-sequence-an-introduction\">mean field theory</a> seems to be pointing to a similar concept of a “foreground” particle and a “background”, where the background is made of the interaction of lots of little “foreground” particles, but each particle has negligible impact on the background; you can just model the particle’s behavior as some function of the (assumed approximately fixed) background. But I don’t really know mean field theory in physics so I can’t be sure the analogy is apt.</p>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章介绍了'大世界'启发式——在你的影响相对于环境而言很小时效果最佳的原则，主张关注个人成长和可靠的美德，而非对抗性计算。",
+  "oneSentenceSummary": "文章介绍了'大世界'启发式——在你的影响相对于环境而言很小时效果最佳的原则，主张关注个人成长和可靠的美德，而非对抗性计算。",
+  "summary": "文章探讨了一组作者称为'大世界'启发式的直觉，这些启发式适用于个体的影响相对于周围系统而言微乎其微的情况——例如在大市场中的小型初创公司、次要交易者、游戏早期阶段、r 选择物种、重复互动，或是在尚未解决的艰难技术问题上工作。在这些情境下，最佳策略不是计算自己行为对他人的精确影响，而是遵循诸如'公平竞争'、'管好自己的事'、'把重要工作做好'以及'自由分享知识'等简单且普遍良好的原则。这些启发式对不确定性和误判具有鲁棒性，因为即使你高估了自己的能力或误读了情形，它们仍然有益。作者指出，当一个人实际上拥有显著权力、接近'终局'情境，或面临一种奇怪的情况——在这种情况中，遵循通常的美德反而导致不良结果时，该方法就会失效，需要更多后果主义和对抗性思考。回顾自己的思考风格，作者承认自己很大程度上依赖大世界直觉，避免复杂的'如果我这样做，她就会那样做'推理链，而是专注于做好自己的工作并遵循普遍原则。文章得出结论，虽然这种启发式在大多数时间对大多数人有效，但认识到其局限性对于那些可能拥有重大影响力的人来说至关重要。",
+  "mainPoints": [
+    {
+      "point": "大世界启发式适用于你的影响相对于环境而言很小时，建议关注个人成长和原则性行动，而非试图控制他人。",
+      "explanation": "文章通过初创公司、交易者、游戏早期阶段、r 选择物种、重复互动以及艰难的技术问题来说明这一点，表明在这些情境中，遵循简单美德相比试图操控系统能够获得更好的结果。"
+    },
+    {
+      "point": "这些启发式对不确定性具有鲁棒性，因为它们依赖的普遍良好原则即使在你误判情形或高估影响时仍然有益。",
+      "explanation": "通过遵循诸如'把重要工作做好'或'自由分享知识'等规则，你可以避免误计后果的陷阱，并在各种情境中保持良好结果。"
+    },
+    {
+      "point": "当你实际上拥有显著权力或接近'终局'情境时，该方法会失效，因为此时你的行为能够对他人产生重大影响，需要后果主义推理。",
+      "explanation": "作者指出，如果你非常强大、接近获胜，或处于一种通常良好启发式会导致不良结果的奇怪情境，你就必须转向战略性、对抗性思考。"
+    },
+    {
+      "point": "依赖大世界直觉塑造了作者的个人决策方式，使他避免复杂的对抗性推理链，而是专注于做好自己的工作并遵循普遍原则。",
+      "explanation": "这反映了一种心态：将自己视为众多参与者之一，专注于个人贡献，而非试图预测或控制他人的反应。"
+    }
+  ],
+  "keyQuotes": [
+    "\"大世界直觉有点像'公平竞争、管好自己的事、耕耘自己的花园、尽力而为，从长远来看一切都会或多或少地朝着最好的方向发展'。\"",
+    "\"坚持原则/启发式的好处在于它对不确定性具有鲁棒性。如果你误读了情形呢？如果你实际上没有你想象的那么重要呢？即使如此，也应该以通常最有益的方式行事。\"",
+    "\"当然，除非你真的非常强大、非常接近获胜、在某种意义上非常接近'终局'，或者处于一种真的非常奇怪的情境——在这种情境中，遵循普遍良好启发式的后果竟然非常糟糕。\""
+  ],
+  "tags": [
+    "启发式",
+    "决策理论",
+    "理性",
+    "个人成长",
+    "原则"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 80,
+  "wordCount": 1016,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785438628000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-31 03:10:28"
+}

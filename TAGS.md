@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-07-31 06:57:34 | [返回首页](/README.md)
+**更新时间**: 2026-07-31 09:50:49 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14175)
+- [AI & 大模型](#ai-llm) (14221)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (902)
-- [DevOps](#devops) (677)
+- [前端与全栈](#frontend-fullstack) (906)
+- [DevOps](#devops) (681)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6414)
+- [其他](#other) (6430)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Gemini-Robotics-ER-2-发布](https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/) - AI 精选
+- [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6) - AI 精选
 - [智能体-AI-时代的科学计算](https://openai.com/index/scientific-computing-agentic-ai) - AI 精选
 - [Codex-从-0-到-1000-万用户：构建-ChatGPT-Work-—-与-OpenAI-的-Akshay-Nathan-对话](https://www.latent.space/p/chatgpt-work) - AI 精选
 - [Agent-开发指南：技术太多，该怎么学？](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492366&idx=1&sn=260b5fac24951a19de106ab89c5cec31) - AI 精选
@@ -40,10 +42,8 @@
 - [从构建-Shippy-中学到的智能体构建经验](https://huggingface.co/blog/allenai/shippy-tech-blog) - AI 精选
 - [GPT-Red：解锁自我改进以增强鲁棒性](https://openai.com/index/unlocking-self-improvement-gpt-red) - AI 精选
 - [机器学习研究中有多少是围绕-AI-安全的，具体内容是什么，谁在做？——-LessWrong](https://www.lesswrong.com/posts/hcq4ZDoijSjy3Wrba/how-much-of-ml-research-is-about-ai-safety-what-is-it-about) - AI 精选
-- [极致量化，近三千亿参数-Hy3-单卡即可部署](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498028&idx=1&sn=9b6f4f0d9eff9d2a6925f3860eb63665) - AI 精选
-- [Claude-的价值观如何随模型和语言变化](https://www.anthropic.com/research/claude-values-models-languages) - AI 精选
 
-- [查看全部 14175 篇...](/details/tags/ai-llm.md)
+- [查看全部 14221 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 902 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 906 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 677 篇...](/details/tags/devops.md)
+- [查看全部 681 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -166,6 +166,7 @@
 
 
 
+- [Gemini-Robotics-2-为机器人带来全身智能](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) - AI 精选
 - [sqlite-utils-4.0-发布，引入数据库模式迁移功能](https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything) - AI 精选
 - [异步智能体时代-—-Cognition-的-Walden-Yan-与-OpenInspect-的-Cole-Murray](https://www.latent.space/p/cognition) - AI 精选
 - [🔬ESMFold2：蛋白质领域的“苦涩教训”——Alex-Rives-与-BioHub](https://www.latent.space/p/esmfold2) - AI 精选
@@ -185,8 +186,7 @@
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
-- [GLM-4.6V-开源：从看懂图片到自动完成任务](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492347&idx=1&sn=356dc3c064b9324c5c7599309b57927b) - AI 精选
 
-- [查看全部 6414 篇...](/details/tags/other.md)
+- [查看全部 6430 篇...](/details/tags/other.md)
 
 

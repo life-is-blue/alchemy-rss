@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-31 06:57:34 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-31 09:50:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -717,6 +717,38 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [使用-GSAP-构建带视差和-Flip-转场的无限滚动画廊](https://tympanus.net/codrops/2026/07/30/building-an-infinite-gsap-scroll-gallery-with-parallax-and-flip-transitions/)
+
+2026-07-30 22:16:27 | 标签: GSAP, 无限滚动, 视差, Web 动画, JavaScript
+
+> 本详细教程引导读者使用 GSAP 和原生 JavaScript 构建一个散落图像画廊，该画廊具有无限滚动、视差效果和变形转场。画廊由三个核心模块组成：幻灯片引擎（使用暂停的时间线作为滚动代理）、渐显系统（当图像和标题进入视口时逐字符淡入）、以及转场引擎（使用 GSAP Flip 将点击的缩略图变形为完整的详情视图）。作者解释了恒速循环的数学原理、隐藏环绕接缝的视差偏移补偿、使用 Observer 实现统一输入、以及使用 SplitText 实现文本渐显。最后部分涉及通过背景颜色过渡来扩展画廊。教程提供了完整的代码片段和实时演示。
+
+
+
+### [上面级将于-2026-年-8-月-5-日撞击月球](https://www.projectpluto.com/25010d.htm)
+
+2026-07-30 21:21:34 | 标签: Space Science, Astronomy, Space Junk, Lunar Exploration, SpaceX
+
+> 本文由首位识别该天体的天文学家撰写，对 SpaceX 猎鹰 9 号上面级（目录编号 2025-010D）即将于 2026 年 8 月 5 日约 06:35 UTC 撞击月球的事件进行了详尽的技术解读。作者解释了为何该天体由业余天文学家和小行星巡天项目进行跟踪（因为军用雷达在月球距离上无效），如何通过纳入太阳辐射压的轨道计算预测撞击，以及其中涉及的不确定性。撞击点位于近月面边缘附近的 Einstein 环形坑附近，撞击速度为 2.43 km/s，释放能量约 145 亿焦耳。文章讨论了观测前景（由于撞击速度较慢，闪光不太可能出现；喷射羽流理论上勉强可能），将该事件与 2022 年嫦娥 5 号 T1...
+
+
+
+### [Server-Timing-响应头将透传给客户端---Vercel](https://vercel.com/changelog/server-timing-header)
+
+2026-07-30 20:00:00 | 标签: Vercel, CDN, Server-Timing, Web 性能, Performance API
+
+> 这是一则 Vercel 更新日志公告，内容涉及其 CDN 处理 Server-Timing HTTP 响应头的方式变更。目前 Vercel 会从所有响应中剥离该响应头；自 2026 年 8 月 10 日起，该响应头将被透传给客户端。文章介绍了开发者如何利用 Server-Timing 暴露后端指标，例如数据库查询耗时和缓存命中情况，这些指标随后会显示在浏览器的网络面板中，并可通过 Performance API 以 PerformanceServerTiming 条目的形式访问。文章还提供了一个展示响应头格式的代码示例，以及一段 vercel.json 配置片段，供希望保留现有剥离行为的开发者...
+
+
+
+### [JavaScript-中文周刊-#247---Rust-仍在吞噬-JavaScript（2026-版）](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247548929&idx=1&sn=111cf835251010b953114120c34bda28)
+
+2026-07-30 18:05:00 | 标签: JavaScript, Rust, TypeScript, 前端工具, 性能优化
+
+> 本期内容围绕 JavaScript 生态的最新动态展开。首先指出 Rust 继续替换传统 JS 工具链，Rspack、Biome、Turbopack 及 Bun 的重写验证了 Lee Robinson 早期的预测。其次，TypeScript 之父 Anders Hejlsberg 演示了基于 Go 重写的 TypeScript v7 编译器，在 VS Code 代码库上实现约十倍提速，并介绍了新的 LSP 与 API 迁移注意事项。接着介绍了 Octane 框架，它提供类 React 的编程模型但采用编译时响应式，无需虚拟 DOM，支持 TSX/JSX/TSRX 并可与 TanStack Qu...
 
 
 
@@ -1656,13 +1688,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1812,13 +1844,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3312,13 +3344,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5022,13 +5054,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,44 @@
+{
+  "id": "RAW_1ba1b12e33",
+  "title": "发布：llm 0.32rc2",
+  "url": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
+  "date": "2026-07-31 06:52:06",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th July 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm/releases/tag/0.32rc2\">llm 0.32rc2</a></span> <span class=\"beat-commit\">— Access large language models from the command-line</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Hot on the heels of <a href=\"https://simonwillison.net/2026/Jul/30/llm-rc1/\">RC1</a>, this fixes a dependency issue and also adds two neat new features:</p>\n      <blockquote>\n       <ul>\n        <li>The default model for users who have not set their own default is now <a href=\"https://developers.openai.com/api/docs/models/gpt-5.6-luna\">GPT-5.6 Luna</a>. It was previously <a href=\"https://developers.openai.com/api/docs/models/gpt-4o-mini\">GPT-4o mini</a>. Luna is a much better and more recent model, albeit slightly more expensive - $0.20 per million input tokens and $1.20 per million output tokens, compared to $0.15/$0.60 for 4o mini. You can switch back to 4o mini using <code>llm models default gpt-4o-mini</code>, or switch to <a href=\"https://developers.openai.com/api/docs/models/gpt-5-nano\">GPT-5 nano</a>, an even cheaper default model ($0.05/$0.40), using <code>llm models default gpt-5-nano</code>. <a href=\"https://github.com/simonw/llm/issues/1576\">#1576</a></li>\n        <li>New <a href=\"https://llm.datasette.io/en/latest/other-models.html#openai-endpoint\">llm openai endpoint</a> command for running prompts, chats and model listings against arbitrary OpenAI-compatible endpoints without first configuring a model. These calls are not logged. <a href=\"https://github.com/simonw/llm/issues/1565\">#1565</a></li>\n       </ul>\n      </blockquote>\n      <p>The <code>llm openai endpoint</code> command is <em>really</em> cool. I got frustrated at the lack of an obvious CLI tool for trying out prompts against arbitrary OpenAI Chat Completions imitation endpoints, so I decided to add that to LLM itself.</p>\n      <p>You don't even have to install LLM to use this. Here's a <code>uvx</code> one-liner for running a prompt - with tools - against an <a href=\"https://lmstudio.ai\">LM Studio</a> local model:</p>\n      <pre><code>uvx --pre llm openai endpoint http://127.0.0.1:1234/v1 \\\n  T llm_version -T llm_time --td \\\n  -m google/gemma-4-31b 'what is the current LLM version? And the time?'\n</code></pre>\n      <p><a href=\"https://github.com/simonw/llm/pull/1568#issuecomment-5136163707\">Output here</a>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4803/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本次发布的 llm 命令行工具将默认模型更换为 GPT-5.6 Luna，并新增 `llm openai endpoint` 命令，用于对接任意兼容 OpenAI 的接口。",
+  "oneSentenceSummary": "本次发布的 llm 命令行工具将默认模型更换为 GPT-5.6 Luna，并新增 `llm openai endpoint` 命令，用于对接任意兼容 OpenAI 的接口。",
+  "summary": "本发布说明介绍了 llm（一个用于访问大语言模型的命令行工具）的 0.32rc2 版本。该版本修复了一个依赖问题，并带来两项新特性：默认模型升级为 GPT-5.6 Luna（此前为 GPT-4o mini），性能有所提升，成本也略有增加；新增 `llm openai endpoint` 命令，允许在无需预先配置模型的情况下，对任意兼容 OpenAI 的 API 接口运行提示词。作者演示了一行 `uvx` 命令，针对 LM Studio 本地模型运行带工具调用的提示词，展示了新命令的灵活性。",
+  "mainPoints": [
+    {
+      "point": "新用户的默认模型升级为 GPT-5.6 Luna，性能更佳，成本略有上升。",
+      "explanation": "此前的默认模型为 GPT-4o mini；用户可通过 `llm models default` 切换回其他模型。此次升级旨在提供更好的开箱即用体验。"
+    },
+    {
+      "point": "新增的 `llm openai endpoint` 命令支持在无需预先配置的情况下，与任意兼容 OpenAI 的 API 进行临时交互。",
+      "explanation": "它解决了在任意接口（如 LM Studio 本地服务）上测试时无需先在 llm 中配置模型的问题，支持工具调用、对话以及模型列表查看，且调用不会被记录。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "LLM",
+    "开发者工具",
+    "OpenAI",
+    "GPT-5.6 Luna",
+    "CLI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 233,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785451926000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-07-31 06:52:06"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_e5b27bb542",
+  "title": "发布：llm 0.32rc1",
+  "url": "https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything",
+  "date": "2026-07-30 23:30:20",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th July 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm/releases/tag/0.32rc1\">llm 0.32rc1</a></span> <span class=\"beat-commit\">— Access large language models from the command-line</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>This RC for LLM 0.32 finishes the work that <a href=\"https://simonwillison.net/2026/Apr/29/llm/\">started in LLM 0.32a0</a> - it adds a <a href=\"https://llm.datasette.io/en/latest/logging.html#the-message-store\">new schema design</a> that does a much better job of capturing the details of the prompts and responses returned by the latest model families.</p>\n      <p>The most important change is the use of content-addressable hash IDs for stored messages. This allows de-duplication in the database, and means that LLM can now represent trees of messages for forked conversations.</p>\n      <p>Since it involves a significant schema change - new tables only, and old data should not be affected at all - it's worth running a backup of your existing <code>logs.db</code> before upgrading to the RC:</p>\n      <pre><code>llm logs backup logs-backup.db\n</code></pre>\n      <p>The RC also adds support for <code>gpt-5.6-sol</code>, <code>gpt-5.6-terra</code>, and <code>gpt-5.6-luna</code>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4804/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "LLM 0.32rc1 引入了新的架构，采用内容可寻址哈希 ID 实现去重和树形表示，同时支持最新的 GPT-5.6 模型。",
+  "oneSentenceSummary": "LLM 0.32rc1 引入了新的架构，采用内容可寻址哈希 ID 实现去重和树形表示，同时支持最新的 GPT-5.6 模型。",
+  "summary": "命令行 LLM 工具（llm 0.32rc1）的候选版本完成了之前 alpha 版的工作，添加了重新设计的消息存储，使用内容可寻址哈希 ID。这使得数据库能够去重，并允许 LLM 表示分支对话中的消息树。架构更改仅添加了新表，旧数据不受影响，但建议用户在升级前备份现有的 logs.db。该 RC 还增加了对 gpt-5.6-sol、gpt-5.6-terra 和 gpt-5.6-luna 的支持。",
+  "mainPoints": [
+    {
+      "point": "新架构对存储的消息使用内容可寻址哈希 ID。",
+      "explanation": "这一变化使得数据库能够去重，并允许 LLM 表示分支对话中的消息树。"
+    },
+    {
+      "point": "旧数据不受影响，仅添加新表。",
+      "explanation": "架构迁移仅添加表而不修改现有的 logs.db，但建议在升级前备份。"
+    },
+    {
+      "point": "增加了对三个 GPT-5.6 变体的支持：sol、terra 和 luna。",
+      "explanation": "该 RC 扩展了与最新 OpenAI 模型系列的兼容性。"
+    }
+  ],
+  "keyQuotes": [
+    "最重要的变化是对存储的消息使用内容可寻址哈希 ID。",
+    "由于涉及重大的架构更改——仅添加新表，旧数据应完全不受影响——因此值得在升级到 RC 之前对现有的 `logs.db` 进行备份。"
+  ],
+  "tags": [
+    "LLM",
+    "发布",
+    "命令行",
+    "AI 工具",
+    "数据去重"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 137,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785425420000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-30 23:30:20"
+}
