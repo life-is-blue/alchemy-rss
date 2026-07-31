@@ -1,4 +1,4 @@
-> **更新时间**: 2026-07-31 09:50:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-07-31 13:26:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,33 +584,25 @@
 
 ### [大规模内部验证：将-cdnjs-迁移到-Cloudflare-的开发者平台](https://blog.cloudflare.com/cdnjs-dev-platform-migration/)
 
-2026-07-30 21:00:52 | 标签: Cloudflare Workers, CDNJS, R2存储, Durable Objects, 无服务器架构
-
-> 本文通过将 cdnjs（全球最广泛使用的 JavaScript 库 CDN 之一）从传统基础设施迁移到基于 Workerd、Durable Objects、Queues 和 R2 的 Cloudflare 开发者平台的案例研究，展示了技术迁移的全过程。团队说明了迁移的动机，包括性能、成本和可维护性改进，并详细介绍了架构设计——如何通过 Workers 将服务拆分为引入、存储和提供层，如何利用 Durable Objects 进行协调，以及 R2 如何提供零出口费用替代 S3 方案。文章包含真实流量指标、缓存热文件和处理 GitHub Webhook 等运维挑战，以及迁移过程中的权衡决策。结尾反...
+2026-07-30 21:00:52
 
 
 
 ### [CosmosEscape：接管所有-Azure-Cosmos-DB-|-Wiz-Blog](https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db)
 
-2026-07-30 16:00:01 | 标签: 云安全, 漏洞研究, Azure, Cosmos DB, Gremlin API
-
-> 这篇 Wiz Research 的博客文章详细介绍了 CosmosEscape 的发现过程，这是 Azure Cosmos DB Gremlin API 中的一个严重漏洞。研究人员利用基于 .NET 的自定义 Gremlin 沙箱中的弱点，在多租户的 DB Gateway 服务上实现了任意代码执行。随后，他们提取了一个平台级签名密钥——被称为 Cosmos Master Key——该密钥能够跨租户、跨区域、跨 API 类型获取任何 Cosmos DB 账户的主密钥。该密钥还解锁了 Config Store，这是一个由 Cosmos DB 支持的注册表，列出了所有账户，从而能够精确枚举并定向攻击...
+2026-07-30 16:00:01
 
 
 
 ### [AWS-Lambda-的自管代码存储提高账户配额，而非函数大小限制](https://www.infoq.com/news/2026/07/lambda-self-managed-storage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-30 15:57:00 | 标签: 无服务器, AWS Lambda, 云基础设施, S3, Terraform
-
-> AWS Lambda 现在支持自管代码存储，允许函数和层直接引用客户自有 S3 存储桶中的部署包，而非 Lambda 管理的存储。这消除了每区域代码存储配额，并将默认 Lambda 管理存储从 75 GB 提升至 300 GB，而单函数包大小限制（压缩后 50 MB、解压后 250 MB，容器镜像 10 GB）保持不变。在操作上，Lambda 不再创建中间副本，从而加快激活速度，存储成本出现在客户的 S3 账单上。部署流程在替换对象后仍需调用 UpdateFunctionCode，Terraform 等基础设施即代码工具仍在跟进中。
+2026-07-30 15:57:00
 
 
 
 ### [甲骨文在未公开通知的情况下悄然将免费层-Ampere-A1-计算配额减半](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289778&idx=4&sn=d29dda2e76512282af84e0ad1c39378f)
 
-2026-07-30 15:30:00 | 标签: 云计算, 甲骨文, Oracle Cloud, 免费层, 科技新闻
-
-> 文章报道甲骨文于 2026 年 6 月 15 日悄然将 Oracle Cloud Infrastructure 上 Always Free Ampere A1 Compute 的免费配额从 4 OCPU 与 24 GB 内存减半为 2 OCPU 与 12 GB 内存，对应月配额从 3000 OCPU 小时/18000 GB 小时降至 1500/9000。甲骨文未发布博客、未通知客户、未做公开说明，仅更新了文档，用户在实例被停机或社区发现数值变化后才察觉。  计费变更引发社区混乱。Linuxiac 报道指出，已升级为 PAYG 的用户担忧旧 4 OCPU 配置可能悄然产生超额费用。6 月 22 ...
+2026-07-30 15:30:00
 
 
 
