@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-01 09:51:56 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-01 13:19:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -722,17 +722,13 @@
 
 ### [用于-MoQ-的-API：自行配置隔离的中继](https://blog.cloudflare.com/moq-relays/)
 
-2026-07-31 21:00:57 | 标签: API, 直播, QUIC, WebRTC, 产品新闻
-
-> Cloudflare 宣布了一项新的 Media over QUIC（MoQ） API，允许开发者为直播配置隔离的中继实例。文章概述了 API 端点、身份验证方法以及典型用例，例如视频流的可扩展、安全摄入和输出。它解释了该服务如何利用 Cloudflare 的全球网络降低延迟并提高可靠性，并提供了入门的示例代码片段。
+2026-07-31 21:00:57
 
 
 
 ### [Node-中文周刊-#237---2026-年安全发布-npm-包的正确方式](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247548951&idx=1&sn=3696d699f7ec644bc10add2d84e4426b)
 
-2026-07-31 16:51:00 | 标签: Node.js, npm, 供应链安全, 开发者工具, 开源项目
-
-> 本期周刊的信息密度较高。重点推荐 Andrey Sitnik（postcss、nanoid 作者）撰写的《2026 年安全发布 npm 包的正确方式》，介绍了 staged publishing 与 trusted publishing 等特性及安全收益；npm 官方宣布将在发布时扫描包内恶意软件，新版本可能需要数分钟才能安装。快讯方面包括 Node 7 月安全更新修复 11 个 CVE、微软为 Node 提供动态 WinRT API 投影、亚马逊定位朝鲜关联的 npm 供应链攻击团伙、Cloudflare wrangler 支持集成测试。文章与工具部分则涉及 GitHub 供应链安全剖析、N...
+2026-07-31 16:51:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-01 09:51:56 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-01 13:19:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -1003,9 +1003,7 @@
 
 ### [JDK-24-之后的虚拟线程：生产环境-Java-有何变化](https://www.infoq.com/articles/virtual-threads-after-jdk24/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-31 17:00:00 | 标签: Java, 虚拟线程, JDK 24, JDK 25, JEP 491
-
-> 本文提供了 JDK 24 之后、JDK 25 LTS 之前的虚拟线程生产评估。它解释了 JEP 491 如何消除了导致 JDK 21 部署停滞的监视器相关载体锁定（Netflix 有文档记录），而本机帧、类加载和 Linux 文件 I/O 周围的残余锁定仍然存在，需要通过 JFR jdk.VirtualThreadPinned 事件进行监控。核心洞察是，主要的故障模式已从载体线程饥饿转变为下游资源耗尽：一旦虚拟线程移除 servlet 线程上限，连接池、速率限制、文件描述符以及下游服务就成为真正的并发边界。文章强调了两种静默的 ThreadLocal 失效模式，包括一个基准测试显示相同工作负载...
+2026-07-31 17:00:00
 
 
 
@@ -3669,25 +3667,19 @@
 
 ### [NVIDIA-Video-Codec-SDK-13.1-：零拷贝转码、AV1-B-帧和帧精准搜索](https://developer.nvidia.com/blog/nvidia-video-codec-sdk-13-1-zero-copy-transcode-av1-b-frames-and-frame-accurate-seek/)
 
-2026-07-31 23:13:16 | 标签: NVIDIA 视频编解码 SDK, NVENC/NVDEC, AV1, 视频转码, 零拷贝
-
-> NVIDIA 发布了 Video Codec SDK 13.1 ，这是其 GPU 加速视频编码和解码工具包的重大更新 。 在编码方面，它引入了 AV1 的分层参考模式，该模式将 B 帧以树状结构排列，并将最大 B 帧数从 7 提升到 31 ，在 CQ 和 VBR 模式下实现比特率节省且无性能开销 ；UHQ 调优信息现在也可与迭代编码协同工作 。 解码新增功能包括每宏块统计（QP、块类型、运动向量）用于 H.264 和 HEVC 、基于 GOP 感知解码的帧精准搜索 API ，以及增强的 MV-HEVC 立体声支持 。 转码管道围绕模块化队列架构重新构建，每个阶段配有专用线程，并且新增的 App...
+2026-07-31 23:13:16
 
 
 
 ### [为什么器官类器官尚未解决所有药物发现问题？-—-LessWrong](https://www.lesswrong.com/posts/3y3GDy7YScjPciWjA/why-haven-t-organoids-solved-all-of-drug-discovery)
 
-2026-07-31 22:11:05 | 标签: 器官类器官, 药物发现, 可重复性, 干细胞生物学, 基底胶
-
-> 文章开头讨论了器官类器官的模糊定义，指出定义取决于细胞是多能干细胞还是组织干细胞衍生的。接着，它概述了两大不可重复性来源：用于培养的未明确定义且批次可变的基底胶基质以及起始细胞的未控制多能状态，这些因素导致不同实验室之间在分子和结构上存在显著差异。接下来，文章解释了虽然器官类器官能够再现细胞水平的生物学和粗略的组织结构，但它们缺乏身体水平的生理功能，如吸收、分布、代谢和排泄，这限制了它们预测人体药物反应的能力。最后，作者指出，尽管传统药物开发失败率很高，但围绕器官类器官变异性和转化相关性的当前未知因素阻止它们取代动物模型或临床试验，使器官类器官成为一种互补工具而非万能药。
+2026-07-31 22:11:05
 
 
 
 ### [AI-能接管实验室了？中国科大最新研究给出真实物理世界的压力测试](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652715746&idx=3&sn=f98050bf23bd70e6e0c6c315369c18a6)
 
-2026-07-31 19:07:00 | 标签: 人工智能, 科学研究, 机器人实验室, 大语言模型, 实验自动化
-
-> 文章介绍中国科学技术大学最新研究：搭建了包含 45 个模块化自动工作站的机器催化实验室，将实验能力封装为机器可读技能，使 AI 智能体能够直接调用设备并受真实设备约束。研究团队对 6 种智能体框架与 9 种大语言模型的 48 种组合进行了 4，608 次测试，覆盖 32 项领域专家定义的研究任务。结果显示，仅 3.3%的工作流能无需人工修复直接执行，表现最好的 Claude Code+Claude Opus 4.7 组合可执行率为 28.1%，Codex+GPT 5.5 组合为 19.8%。进一步的五轮闭环实验表明，智能体能根据实验结果调整局部参数，但未能重新设计工作流或纠正关键遗漏，说明局部...
+2026-07-31 19:07:00
 
 
 
@@ -15117,33 +15109,25 @@
 
 ### [来自-Cory-Doctorow-的每日链接](https://pluralistic.net/2026/07/31/just-do-it/)
 
-2026-07-31 22:05:02 | 标签: 版权, 知识共享, 合理使用, 首次销售, 最小使用
-
-> Cory Doctorow 的文章回顾了 Creative Commons 的 25 年历史，解释说版权的限制和例外——合理使用、第一次销售和最小使用——允许许多使用无需许可，但谨慎的文化导致人们过度申请许可。他分享了个人轶事，说明他因其 CC 许可证已经允许的使用而收到不必要的许可请求，并指出授予某些请求可能会违反他的出版合同。Doctorow 总结说，虽然 CC 简化了雄心勃勃的混音，但用户仍应依赖版权法内置的灵活性，并以此作为提醒：生活艰难，多读书。
+2026-07-31 22:05:02
 
 
 
 ### [懂-Kotlin？在-Shipaton-2026-中随处发布，赢取大奖](https://blog.jetbrains.com/kotlin/2026/07/know-kotlin-ship-it-everywhere-and-win-at-shipaton-2026/)
 
-2026-07-31 21:49:33 | 标签: Kotlin, Kotlin Multiplatform, KMP, 跨平台开发, 黑客马拉松
-
-> JetBrains 宣布赞助 RevenueCat Shipaton 2026，这是一场从 8 月 1 日持续到 9 月 30 日的移动端黑客马拉松。了解 Kotlin 的开发者可以使用 Kotlin Multiplatform 和 Compose Multiplatform，构建一个面向 Android、iOS、桌面和 Web 的单一多平台应用。Shipaton 的 Kotlin 类别提供 $30，000 奖金池，分给三名获胜者（$15k、$10k、$5k），第一名应用还将获得时代广场广告牌展示、RevenueCat App Growth Annual 大会邀请、奖杯和媒体曝光。参与者还可角...
+2026-07-31 21:49:33
 
 
 
 ### [麦克斯韦猜想是错误的](https://arxiv.org/abs/2607.27197)
 
-2026-07-31 19:37:12 | 标签: 物理学, 数学物理, 理论物理, 麦克斯韦猜想, 反例
-
-> 作者在欧几里得空间中构造了五个点电荷的显式排列，并分析了由此产生的静电势的临界点。他们表明该构型至少产生 24 个非退化临界点，超过了麦克斯韦猜想预测的上界 (5‑1)² = 16。本文包含详细的几何构造、非退化性的证明，以及对该猜想在经典和数学物理中的影响的讨论。
+2026-07-31 19:37:12
 
 
 
 ### [免费午餐指南：思想循环](https://www.infoq.com/presentations/tech-hype-cycles-architectural-tradeoffs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-07-31 19:00:00 | 标签: 人工智能, 微服务, 云计算, 可持续性, 软件效率
-
-> 演讲者将 1858 年泰晤士河污水危机与现代科技炒作周期作类比，说明每个“好”想法（例如，从化粪池转向下水道、微服务、AI）最终会暴露出诸如集中式污染或复杂性增加等隐藏的权衡。他强调了数据中心的碳影响，展示了像 Quarkus 这样的高效运行时如何降低能源消耗，并主张采用如 LightSwitchOps 和更好软件性能的实践。演讲还批评了由炒作驱动的融资模式、效率提升导致消费增加的杰文斯悖论，以及在云时代集中式与去中心化架构之间平衡的转变。
+2026-07-31 19:00:00
 
 
 
@@ -38643,11 +38627,11 @@
 
 
 
-### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
+### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
 
-2026-05-06T00:00:00.000Z
+2026-05-05T00:00:00.000Z
 
-> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
+> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
 
 
 

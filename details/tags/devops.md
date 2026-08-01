@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-01 09:51:56 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-01 13:19:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [Terraform-推出-tfpolicy：基于-HCL-的策略即代码框架](https://www.infoq.com/news/2026/07/terraform-policy-as-code/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-01 02:00:00 | 标签: Terraform, 策略即代码, 基础设施即代码, DevOps, HashiCorp
-
-> HashiCorp 推出了 tfpolicy，这是一个全新的策略即代码框架，基于 HCL 构建并直接集成到 Terraform 工作流中。它允许平台团队使用与基础设施相同的语言编写策略，并基于实际基础设施状态和资源关系，在部署前后进行评估。tfpolicy 还增加了对 Provider 和 Module 使用的供应链控制，并包含一个可生成和测试 tfpolicy 配置的 AI 智能体，使其成为 HCP Terraform 中 Sentinel 和 Open Policy Agent 的首选替代方案。
+2026-08-01 02:00:00
 
 
 
