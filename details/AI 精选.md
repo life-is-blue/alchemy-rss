@@ -1,31 +1,41 @@
-> **更新时间**: 2026-07-31 09:50:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-01 09:51:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 精选
 
 
 
 
+### [构建语音控制的-AI-智能体](https://www.kdnuggets.com/building-voice-controlled-ai-agents)
+
+2026-07-31 22:00:06 | 标签: 语音代理, 语音转文本, LLM, 流式架构, AI 工程
+
+> 文章不仅仅是简单的 STT-LLM-TTS 链，而是详细拆解了语音代理流水线，强调流式语音转文本 STT 能够输出部分和最终转录文本，基于沉默阈值和语义完整性的轮次检测，将流式 LLM tokens 按句子分块以便提前进行 TTS 播放，以及结合能量、语音置信度和时长的稳健 barge-in 检测以避免误触中断。文中还提供了每个组件的可运行 Python 代码片段，演示了如何在不依赖外部 API 的情况下构建响应式语音代理。
+
+
+
+### [一镜成片，随心参考｜Seedance-2.5-正式发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae)
+
+2026-07-31 12:47:00 | 标签: 视频生成, 多模态, AI创作工具, Seedance, 字节跳动
+
+> Seedance 2.5 在 Seedance 2.0 基础上将单次视频生成时长提升至 30 秒并支持多轮延长，显著提升镜头衔接与场景连贯性；模型一次可接受最多 30 张图片、10 段视频和 10 段音频作为多模态参考，增强了白模、运动和创意参考能力；同时加强了时间戳精准编辑、绿幕、视角与运镜编辑等功能，使其在影视、广告、教育及工业等场景中更具可控性和生产力。文章通过多个提示词示例展示了模型在长叙事、多角色互动及复杂场景下的表现，并指出在物理合理性和极多主体交互方面仍有提升空间。
+
+
+
 ### [Gemini-Robotics-ER-2-发布](https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/)
 
-2026-07-30 23:00:35 | 标签: 具身AI, 机器人, 空间推理, 多机器人协作, AI安全
-
-> Gemini Robotics ER 2 是 Google DeepMind 最新、最强大的具身推理模型，专为机器人设计，充当其高级大脑。它能处理连续视频流，跟踪进度、适应失败并精确控制步骤之间的转换时机。该模型支持多机器人协作，使不同类型的机器人能够相互通信和交接任务。通过与 Gemini Live API 集成，它改进了工具编排能力，实现低延迟双向流式传输，从而能够流畅地执行多步骤任务，无需停止思考。关键技术进展包括连续进度分类（准确率 57.4%）和精确时刻查找（准确率 91.3%，平均绝对距离 0.96 秒），使机器人能够验证任务完成并进行自我纠正。该模型还增强了空间推理能力：视频上成...
+2026-07-30 23:00:35
 
 
 
 ### [Gemini-Robotics-2-为机器人带来全身智能](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/)
 
-2026-07-30 22:59:54 | 标签: 视觉-语言-动作, 具身推理, 多机器人协作, 灵巧操作, 全身控制
-
-> Google DeepMind 宣布推出 Gemini Robotics 2，这是其机器人智能栈的重大升级。该版本包含三个核心模型：Gemini Robotics 2 VLA 用于完整的人形和双臂控制，Gemini Robotics ER 2 用于具身推理和多步骤任务规划，以及 Gemini Robotics On-Device 2 用于高效的本地执行和快速的本体适配。它们共同提供了智能全身运动、先进的手部和夹爪灵巧性、对复杂多步骤任务的推理能力，以及异构机器人之间的无缝协作。该系统通过 ASIMOV-Agentic 等新基准和改进的人体接近检测来强调安全性，并在操作任务上表现出强大性能，同时...
+2026-07-30 22:59:54
 
 
 
 ### [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6)
 
-2026-07-30 18:00:00 | 标签: GPT-5.6, OpenAI, AI 商业化, 模型发布, 推理优化
-
-> OpenAI 宣布 GPT-5.6 模型家族在性价比方面取得显著提升。最快且最经济的 GPT-5.6 Luna 价格下调 80%，面向日常均衡使用的 GPT-5.6 Terra 价格下调 20%。公司还为 GPT-5.6 Sol 推出了 Fast 模式，速度最高提升 2.5 倍，价格为原来的两倍，且不损失智能水平，取代了此前的 Priority Processing 服务。  文章将这些变化定位为一篇配套工程文章中所述效率提升的对外呈现。改进涵盖三个层面：模型本身以更直接的路径完成工作；推理系统得益于更优的路由与优化的生产软件；智能体框架采用更智能的上下文管理。值得注意的是，GPT-5.6 S...
+2026-07-30 18:00:00
 
 
 
@@ -161,13 +171,13 @@
 
 
 
-### [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018)
+### [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b)
 
 2026-07-10 17:00:00
 
 
 
-### [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b)
+### [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018)
 
 2026-07-10 17:00:00
 
@@ -185,13 +195,13 @@
 
 
 
-### [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6)
+### [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work)
 
 2026-07-09 18:00:00
 
 
 
-### [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work)
+### [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6)
 
 2026-07-09 18:00:00
 
@@ -569,13 +579,13 @@
 
 
 
-### [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt)
+### [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets)
 
 2026-04-22 10:00:00
 
 
 
-### [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets)
+### [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt)
 
 2026-04-22 10:00:00
 
@@ -773,13 +783,13 @@
 
 
 
-### [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7)
+### [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/)
 
 2026-04-01 16:01:00
 
 
 
-### [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/)
+### [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7)
 
 2026-04-01 16:01:00
 
@@ -2069,13 +2079,13 @@
 
 
 
-### [Veo-3.1：Flow-带来高级功能，革新-AI-视频创作](https://deepmind.google/discover/blog/introducing-veo-3-1-and-advanced-creative-capabilities/)
+### [Claude-技能：为你的工作流程定制-AI](https://www.anthropic.com/news/skills)
 
 2025-10-15 16:00:00
 
 
 
-### [Claude-技能：为你的工作流程定制-AI](https://www.anthropic.com/news/skills)
+### [Veo-3.1：Flow-带来高级功能，革新-AI-视频创作](https://deepmind.google/discover/blog/introducing-veo-3-1-and-advanced-creative-capabilities/)
 
 2025-10-15 16:00:00
 
@@ -2207,13 +2217,7 @@
 
 
 
-### [Claude-Sonnet-4.5-正式推出](https://www.anthropic.com/news/claude-sonnet-4-5)
-
-2025-09-28 16:00:00
-
-
-
-### [Claude-Code：增强自主性，赋能开发者](https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously)
+### [中国科学院信工所发布首篇-LLM-智能体幻觉综述！梳理-5-类幻觉、18-大诱因与-10-种缓解方案，300+论文资源开源](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247554700&idx=1&sn=a1111aaf763d2d26ec89cb6c55b8c03a)
 
 2025-09-28 16:00:00
 
@@ -2225,7 +2229,13 @@
 
 
 
-### [中国科学院信工所发布首篇-LLM-智能体幻觉综述！梳理-5-类幻觉、18-大诱因与-10-种缓解方案，300+论文资源开源](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247554700&idx=1&sn=a1111aaf763d2d26ec89cb6c55b8c03a)
+### [Claude-Code：增强自主性，赋能开发者](https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously)
+
+2025-09-28 16:00:00
+
+
+
+### [Claude-Sonnet-4.5-正式推出](https://www.anthropic.com/news/claude-sonnet-4-5)
 
 2025-09-28 16:00:00
 
@@ -2483,13 +2493,13 @@
 
 
 
-### [Kimi-K2-模型更新，带来更强的代码能力、更快的-API](https://mp.weixin.qq.com/s/Lac1gHCmuQ1mxTCWnSmuEA)
+### [Jina-Code-Embeddings:-为高质量代码搜索而生的-0.5B/1.5B-向量模型](https://mp.weixin.qq.com/s/I2U7eLUxk08oyAxAqfZEIQ)
 
 2025-09-05 00:00:00
 
 
 
-### [Jina-Code-Embeddings:-为高质量代码搜索而生的-0.5B/1.5B-向量模型](https://mp.weixin.qq.com/s/I2U7eLUxk08oyAxAqfZEIQ)
+### [Kimi-K2-模型更新，带来更强的代码能力、更快的-API](https://mp.weixin.qq.com/s/Lac1gHCmuQ1mxTCWnSmuEA)
 
 2025-09-05 00:00:00
 
@@ -2849,13 +2859,13 @@
 
 
 
-### [41-个榜单-SOTA！智谱最新开源-GLM-4.5V-实测：看图猜地址、视频秒变代码](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=1&sn=e002da6dc84406331fd499374e6ee262)
+### [2025-全球大模型应用报告：红海混战「忠诚度」瓦解，用户脚踏-4.7-条船！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=3&sn=8ffb126853f84859b3e26e9d7e2125c0)
 
 2025-08-11 14:22:00
 
 
 
-### [2025-全球大模型应用报告：红海混战「忠诚度」瓦解，用户脚踏-4.7-条船！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=3&sn=8ffb126853f84859b3e26e9d7e2125c0)
+### [41-个榜单-SOTA！智谱最新开源-GLM-4.5V-实测：看图猜地址、视频秒变代码](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=1&sn=e002da6dc84406331fd499374e6ee262)
 
 2025-08-11 14:22:00
 
@@ -3047,13 +3057,13 @@
 
 
 
-### [Wan2.2-开源：让每个像素都懂电影美学](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=1&sn=a0a7e3a443ff55fb51f11e0f6954fbf1)
+### [超详细提示词教程｜玩转-Wan2.2](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=2&sn=837efe78d54b6429bbb8392f15d08369)
 
 2025-07-28 13:15:00
 
 
 
-### [超详细提示词教程｜玩转-Wan2.2](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=2&sn=837efe78d54b6429bbb8392f15d08369)
+### [Wan2.2-开源：让每个像素都懂电影美学](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=1&sn=a0a7e3a443ff55fb51f11e0f6954fbf1)
 
 2025-07-28 13:15:00
 
@@ -3083,13 +3093,13 @@
 
 
 
-### [六万字长文一次性说清-LLM-的后训练技术](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=1&sn=e3f2c639a67bf0c192ccb914811d8ea1)
+### [上下文工程（Context-Engineering）综述：大模型的下一个前沿](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=3&sn=79bd28fda8f98c71c01c143cb4a69d03)
 
 2025-07-26 15:08:00
 
 
 
-### [上下文工程（Context-Engineering）综述：大模型的下一个前沿](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=3&sn=79bd28fda8f98c71c01c143cb4a69d03)
+### [六万字长文一次性说清-LLM-的后训练技术](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=1&sn=e3f2c639a67bf0c192ccb914811d8ea1)
 
 2025-07-26 15:08:00
 
@@ -3371,13 +3381,13 @@
 
 
 
-### [ScreenEnv：部署你的全功能桌面代理](https://huggingface.co/blog/screenenv)
+### [机器人异步推理：解耦动作预测与执行](https://huggingface.co/blog/async-robot-inference)
 
 2025-07-10 00:00:00
 
 
 
-### [机器人异步推理：解耦动作预测与执行](https://huggingface.co/blog/async-robot-inference)
+### [ScreenEnv：部署你的全功能桌面代理](https://huggingface.co/blog/screenenv)
 
 2025-07-10 00:00:00
 
@@ -4055,13 +4065,7 @@
 
 
 
-### [Qwen-家族再上新！](https://mp.weixin.qq.com/s/utRrkFADVdW25I_KpBtngA)
-
-2025-06-06 00:00:00
-
-
-
-### [即梦图片-3.0-又重磅更新，这可能是对普通人最有用的一次。](https://mp.weixin.qq.com/s/o_G7ZUKsf7CoYnJeMZLriQ)
+### [ScreenSuite---最全面的-GUI-Agent-评估套件！](https://huggingface.co/blog/screensuite)
 
 2025-06-06 00:00:00
 
@@ -4073,7 +4077,13 @@
 
 
 
-### [ScreenSuite---最全面的-GUI-Agent-评估套件！](https://huggingface.co/blog/screensuite)
+### [即梦图片-3.0-又重磅更新，这可能是对普通人最有用的一次。](https://mp.weixin.qq.com/s/o_G7ZUKsf7CoYnJeMZLriQ)
+
+2025-06-06 00:00:00
+
+
+
+### [Qwen-家族再上新！](https://mp.weixin.qq.com/s/utRrkFADVdW25I_KpBtngA)
 
 2025-06-06 00:00:00
 
@@ -4493,13 +4503,13 @@
 
 
 
-### [黄仁勋放话：英伟达全员拥抱智能体！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=2&sn=78043090438b28ecc36dba721e9aec29&subscene=0)
+### [谷歌发-76-页智能体白皮书！你的「AI-替身」已上线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=3&sn=0f3eaddbbab7aad9b43473bd4d88817e&subscene=0)
 
 2025-05-11 04:34:00
 
 
 
-### [谷歌发-76-页智能体白皮书！你的「AI-替身」已上线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=3&sn=0f3eaddbbab7aad9b43473bd4d88817e&subscene=0)
+### [黄仁勋放话：英伟达全员拥抱智能体！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=2&sn=78043090438b28ecc36dba721e9aec29&subscene=0)
 
 2025-05-11 04:34:00
 
@@ -4679,13 +4689,13 @@
 
 
 
-### [Qwen3-重磅开源！](https://mp.weixin.qq.com/s/NrS8SR9_FMq5GW-SJQPn8w)
+### [深夜突袭，阿里-Qwen3-登顶全球开源王座！暴击-DeepSeek-R1，2-小时狂揽-17k-星](https://mp.weixin.qq.com/s/t-3O-1lnSronDuLkcQ97aQ)
 
 2025-04-29 00:00:00
 
 
 
-### [深夜突袭，阿里-Qwen3-登顶全球开源王座！暴击-DeepSeek-R1，2-小时狂揽-17k-星](https://mp.weixin.qq.com/s/t-3O-1lnSronDuLkcQ97aQ)
+### [Qwen3-重磅开源！](https://mp.weixin.qq.com/s/NrS8SR9_FMq5GW-SJQPn8w)
 
 2025-04-29 00:00:00
 
@@ -4823,13 +4833,13 @@
 
 
 
-### [142-页长文揭秘-DeepSeek-R1「思维大脑」！开启全新「思维链学」研究](https://mp.weixin.qq.com/s/6eVSwap0tZzoruzkMGWwQA)
+### [国产-Vidu-Q1-出道即顶流，登顶-VBench！吉卜力、广告大片、科幻特效全包了](https://mp.weixin.qq.com/s/uv0FEYBrZ7iPXi4TthK9yA)
 
 2025-04-22 04:55:08
 
 
 
-### [国产-Vidu-Q1-出道即顶流，登顶-VBench！吉卜力、广告大片、科幻特效全包了](https://mp.weixin.qq.com/s/uv0FEYBrZ7iPXi4TthK9yA)
+### [142-页长文揭秘-DeepSeek-R1「思维大脑」！开启全新「思维链学」研究](https://mp.weixin.qq.com/s/6eVSwap0tZzoruzkMGWwQA)
 
 2025-04-22 04:55:08
 
@@ -4883,13 +4893,13 @@
 
 
 
-### [通义万相-2.1-首尾帧模型开源！细节真实生动+过渡丝滑，指令遵循表现出色！](https://mp.weixin.qq.com/s/ijzb-uRFgQb9e8FYDuJqeA)
+### [最新万字长文！强化学习之父联合谷歌-RL-副总裁：未来不是靠强化学习算法而是「经验流」](https://mp.weixin.qq.com/s/Pa21gCiG571j9fHBrENp1w)
 
 2025-04-18 00:00:00
 
 
 
-### [最新万字长文！强化学习之父联合谷歌-RL-副总裁：未来不是靠强化学习算法而是「经验流」](https://mp.weixin.qq.com/s/Pa21gCiG571j9fHBrENp1w)
+### [通义万相-2.1-首尾帧模型开源！细节真实生动+过渡丝滑，指令遵循表现出色！](https://mp.weixin.qq.com/s/ijzb-uRFgQb9e8FYDuJqeA)
 
 2025-04-18 00:00:00
 
@@ -4925,13 +4935,7 @@
 
 
 
-### [OpenAI-震撼发布-o3/o4-mini，直逼视觉推理巅峰！首用图像思考，十倍算力爆表](https://mp.weixin.qq.com/s/g4dvXbt5a0dR4wBLOKLMAA)
-
-2025-04-17 00:00:00
-
-
-
-### [文本向量的长度偏差及其在搜索中的影响](https://mp.weixin.qq.com/s/ajEmX7POqHwdZkEJdZPTug)
+### [ModelScope-魔搭-25-年-4-月发布月报](https://mp.weixin.qq.com/s/EMMDDD1SnaG3bgS8gpRn_w)
 
 2025-04-17 00:00:00
 
@@ -4943,7 +4947,13 @@
 
 
 
-### [ModelScope-魔搭-25-年-4-月发布月报](https://mp.weixin.qq.com/s/EMMDDD1SnaG3bgS8gpRn_w)
+### [文本向量的长度偏差及其在搜索中的影响](https://mp.weixin.qq.com/s/ajEmX7POqHwdZkEJdZPTug)
+
+2025-04-17 00:00:00
+
+
+
+### [OpenAI-震撼发布-o3/o4-mini，直逼视觉推理巅峰！首用图像思考，十倍算力爆表](https://mp.weixin.qq.com/s/g4dvXbt5a0dR4wBLOKLMAA)
 
 2025-04-17 00:00:00
 
@@ -4973,13 +4983,13 @@
 
 
 
-### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
+### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
 
 2025-04-16 00:00:00
 
 
 
-### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
+### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
 
 2025-04-16 00:00:00
 

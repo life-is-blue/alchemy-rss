@@ -1,0 +1,55 @@
+{
+  "id": "RAW_60607dc0f1",
+  "title": "懂 Kotlin？在 Shipaton 2026 中随处发布，赢取大奖",
+  "url": "https://blog.jetbrains.com/kotlin/2026/07/know-kotlin-ship-it-everywhere-and-win-at-shipaton-2026/",
+  "date": "2026-07-31 21:49:33",
+  "author": "Ekaterina Petrova",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Somewhere in your notes there’s an app idea waiting for a free weekend that never comes. Consider this its official deadline: <a href=\"https://kotlinlang.org/lp/shipaton/?utm_source=kotlin-blog&amp;utm_medium=blog&amp;utm_campaign=shipaton2026\" target=\"_blank\" rel=\"noopener\">RevenueCat Shipaton 2026</a>, the world’s biggest mobile hackathon, runs August 1 to September 30.</p>\n  <p>If you know Kotlin, that idea is closer to the App Store than you think.</p>\n  <p align=\"center\"><a class=\"ek-link jb-download-button\" title=\"Join the Shipaton\" href=\"https://kotlinlang.org/lp/shipaton/?utm_source=kotlin-blog&amp;utm_medium=blog&amp;utm_campaign=shipaton2026\" target=\"_blank\" rel=\"noopener\">Join the Shipaton</a></p>\n  <p>JetBrains is a Gold Sponsor of Shipaton this year, with our own category. The idea is simple: reuse the Kotlin you already know to build one brand-new app and bring it to multiple platforms, including Android, iOS, desktop, and web, with <a href=\"https://kotlinlang.org/multiplatform/\" target=\"_blank\" rel=\"noopener\">Kotlin Multiplatform</a> and <a href=\"https://kotlinlang.org/compose-multiplatform/\" target=\"_blank\" rel=\"noopener\">Compose Multiplatform</a>.</p>\n  <p>You don’t need to hit all four platforms. Judges reward effective cross-platform development, not platform count alone.</p>\n  <h2 class=\"wp-block-heading\">What you can win</h2>\n  <p>The award has a $30,000 prize pool split among three winners: $15,000, $10,000, and $5,000. The first-place app also receives Shipaton’s first-place category winner package: a feature on a Times Square billboard, an invitation to RevenueCat’s App Growth Annual conference in New York City on October 21, a custom Shippy trophy, and a media spotlight.</p>\n  <p>One more thing: you submit once and compete everywhere. Your Kotlin Multiplatform app also stays in the running for the <strong>$100,000 Grand Prize</strong> and more than 20 other categories, from #BuildInPublic to the Best Game Award, with over $1,000,000 worth of prizes in total.</p>\n  <p>Don’t just take our word for it. Here’s Chris Krueger, whose app <a href=\"https://devpost.com/software/momental\" target=\"_blank\" rel=\"noopener\">Momental</a> took first place in our KMP category at Shipaton 2025:</p>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p><em>“Building Momental with Kotlin Multiplatform was very enjoyable. Sharing one codebase for Android and iOS gave me so much more time to focus on user feedback and actually improving the app. I was amazed how quickly I could build a beautiful, complex UI — even features like a full music player with soundscapes worked smoothly across platforms.</em></p>\n   <p><em>If you’re hesitating, just enter the challenge. It forces you to grow, explore new parts of KMP, and ship faster than you expect. You’ll reach way more users than you think possible.”</em></p>\n  </blockquote>\n  <figure class=\"wp-block-image size-full\">\n   <img fetchpriority=\"high\" decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/07/image-55.png\" alt=\"\" class=\"wp-image-727602\">\n   <figcaption class=\"wp-element-caption\">Chris Krueger with his award and Momental in Times Square.</figcaption>\n  </figure>\n  <h2 class=\"wp-block-heading\">What you get as a participant</h2>\n  <ul class=\"wp-block-list\">\n   <li><strong>IntelliJ IDEA Ultimate, free for 3 months</strong> for the first 1,000 builders</li>\n   <li><strong>Access to Junie</strong>, our AI coding agent, for 2 months for 200 builders ready to build in public</li>\n   <li>A Starter Guide, an AI Guide, weekly livestreams, and JetBrains advocates answering questions in Discord</li>\n  </ul>\n  <h2 class=\"wp-block-heading\">Ready to ship?</h2>\n  <p>Everything you need is on the award page: rules, the starter kit, offers, and the timeline.</p>\n  <p align=\"center\"><a class=\"ek-link jb-download-button\" title=\"Join the Ship Kotlin Everywhere Award\" href=\"https://kotlinlang.org/lp/shipaton/?utm_source=kotlin-blog&amp;utm_medium=blog&amp;utm_campaign=shipaton2026\" target=\"_blank\" rel=\"noopener\">Join the Ship Kotlin Everywhere Award</a></p>\n  <p>Happy shipping!</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/kotlin/2026/07/secure-your-apis-oauth2-and-jwt-for-beginners/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Secure Your APIs: OAuth2 and JWT for Beginners</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 推广 Kotlin Multiplatform Shipaton 2026，提供最高 $30k 奖金与开发资源",
+  "oneSentenceSummary": "JetBrains 推广 Kotlin Multiplatform Shipaton 2026，提供最高 $30k 奖金与开发资源",
+  "summary": "JetBrains 宣布赞助 RevenueCat Shipaton 2026，这是一场从 8 月 1 日持续到 9 月 30 日的移动端黑客马拉松。了解 Kotlin 的开发者可以使用 Kotlin Multiplatform 和 Compose Multiplatform，构建一个面向 Android、iOS、桌面和 Web 的单一多平台应用。Shipaton 的 Kotlin 类别提供 $30，000 奖金池，分给三名获胜者（$15k、$10k、$5k），第一名应用还将获得时代广场广告牌展示、RevenueCat App Growth Annual 大会邀请、奖杯和媒体曝光。参与者还可角逐 $100k 大奖及超过 20 个其他类别，总奖金超过 $1，000，000。参赛者福利包括：前 1，000 名可免费获得三个月 IntelliJ IDEA Ultimate 许可证，前 200 名可使用两个月 JetBrains AI 编程智能体 Junie，另有入门指南、AI 指南、每周直播和 Discord 支持。往届获奖者 Chris Krueger 的引言强调了跨平台共享 Kotlin 代码库所带来的生产力提升与动力。",
+  "mainPoints": [
+    {
+      "point": "黑客马拉松详情：8 月 1 日至 9 月 30 日，$30k 奖金池，另有额外大奖和类别奖",
+      "explanation": "参赛者提交 Kotlin Multiplatform 应用；获胜者将获得现金奖励、时代广场广告牌展示、大会邀请、奖杯和媒体报道，还有机会在其他类别中赢取超过 $1M 的奖金。"
+    },
+    {
+      "point": "使用 Kotlin Multiplatform 和 Compose Multiplatform 一次构建，随处部署",
+      "explanation": "参赛者无需覆盖全部四个平台；评委看重有效的跨平台开发，允许单一代码库在 Android、iOS、桌面和 Web 上运行。"
+    },
+    {
+      "point": "参赛者福利：免费 IDE 许可证、AI 智能体访问、指南、直播和社区支持",
+      "explanation": "前 1，000 名可获得三个月 IntelliJ IDEA Ultimate；前 200 名可使用两个月 Junie AI 智能体；所有参赛者均可获得入门/AI 指南、每周直播以及 JetBrains 倡导者在 Discord 上的帮助。"
+    },
+    {
+      "point": "往届获奖者证言凸显生产力与动力提升",
+      "explanation": "Chris Krueger 表示，共享一个 Kotlin 代码库节省了时间，能够快速创建 UI，并促进了快速迭代和用户反馈。"
+    }
+  ],
+  "keyQuotes": [
+    "“使用 Kotlin Multiplatform 构建 Momental 非常愉快。为 Android 和 iOS 共享一个代码库，让我有更多时间专注于用户反馈并切实改进应用。我惊讶于自己能够如此快速地构建出美观而复杂的 UI——即使是带有音景的完整音乐播放器这样的功能，也能在多个平台上流畅运行。”",
+    "“如果你还在犹豫，那就直接参赛吧。它会迫使你成长，探索 KMP 的新领域，并以超出预期的速度发布产品。你触达的用户数将远超你的想象。”"
+  ],
+  "tags": [
+    "Kotlin",
+    "Kotlin Multiplatform",
+    "KMP",
+    "跨平台开发",
+    "黑客马拉松"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 80,
+  "wordCount": 429,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785505773000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-31 21:49:33"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-01 06:52:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-01 09:51:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -717,6 +717,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [用于-MoQ-的-API：自行配置隔离的中继](https://blog.cloudflare.com/moq-relays/)
+
+2026-07-31 21:00:57 | 标签: API, 直播, QUIC, WebRTC, 产品新闻
+
+> Cloudflare 宣布了一项新的 Media over QUIC（MoQ） API，允许开发者为直播配置隔离的中继实例。文章概述了 API 端点、身份验证方法以及典型用例，例如视频流的可扩展、安全摄入和输出。它解释了该服务如何利用 Cloudflare 的全球网络降低延迟并提高可靠性，并提供了入门的示例代码片段。
+
+
+
+### [Node-中文周刊-#237---2026-年安全发布-npm-包的正确方式](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247548951&idx=1&sn=3696d699f7ec644bc10add2d84e4426b)
+
+2026-07-31 16:51:00 | 标签: Node.js, npm, 供应链安全, 开发者工具, 开源项目
+
+> 本期周刊的信息密度较高。重点推荐 Andrey Sitnik（postcss、nanoid 作者）撰写的《2026 年安全发布 npm 包的正确方式》，介绍了 staged publishing 与 trusted publishing 等特性及安全收益；npm 官方宣布将在发布时扫描包内恶意软件，新版本可能需要数分钟才能安装。快讯方面包括 Node 7 月安全更新修复 11 个 CVE、微软为 Node 提供动态 WinRT API 投影、亚马逊定位朝鲜关联的 npm 供应链攻击团伙、Cloudflare wrangler 支持集成测试。文章与工具部分则涉及 GitHub 供应链安全剖析、N...
 
 
 
@@ -1680,13 +1696,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1836,13 +1852,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3336,13 +3352,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5046,13 +5062,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

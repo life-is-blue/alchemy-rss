@@ -1,0 +1,56 @@
+{
+  "id": "RAW_212ec7d235",
+  "title": "你何时捐赠可能比捐赠对象更重要 —  — LessWrong",
+  "url": "https://www.lesswrong.com/posts/ikpNG4yYuAF6q6j9D/when-you-donate-can-matter-more-than-where",
+  "date": "2026-08-01 01:10:49",
+  "author": "Carol N",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><i><span>And why our 2023 regrant to Timaeus was goated</span></i></p>\n    <p id=\"block1\"><span>We think the for-profit funding ecosystem has some cool properties. Different funders naturally come in at different stages, from angel investors who are good at spotting early opportunities to large funds who might invest in late-stage startups to public market traders. Funders race to back promising projects. And the more they get right, the more they’re rewarded with more money to invest in the future.</span></p>\n    <p id=\"block2\"><span>It would be great if more of those properties existed in nonprofit funding as well. We think that the flow from “person makes great early donation” → “person has more influence” is too weak. And as opposed to the VC world, where investors compete against each other to invest in something quickly, nonprofit funding is beset by “funder chicken,” in which a funder waits for other funders to fill an opportunity, each trying to preserve their capital. This makes fundraising a slog.</span></p>\n    <p id=\"block3\"><span>What if donating to nonprofits worked more like investing in companies? Impact markets have&nbsp;</span><span><span><a href=\"https://rationalaltruist.com/2014/11/15/certificates-of-impact/\"><span>been</span></a></span></span><span>&nbsp;</span><span><span><a href=\"https://www.astralcodexten.com/p/impact-markets-the-annoying-details\"><span>talked</span></a></span></span><span>&nbsp;</span><span><span><a href=\"https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c\"><span>about</span></a></span></span><span>&nbsp;in EA for a while. At Manifund, we dream of bringing impact markets to the AI safety funding ecosystem. And at the very least, we want to import more for-profit norms.</span></p>\n    <p id=\"block4\"><span>What does this look like concretely?</span></p>\n    <h2 id=\"Timaeus__a_case_study_in_charitable_ROI\"><b><span>Timaeus: a case study in charitable ROI</span></b></h2>\n    <p id=\"block5\"><span>Timaeus started as a planned 6-month research project on developmental interpretability, and got its first&nbsp;</span><span><span><a href=\"https://manifund.org/projects/scoping-developmental-interpretability-xg55b33wsfc\"><span>funding in August 2023</span></a></span></span><span>, getting $143k from Manifund regrantors. They&nbsp;</span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/nN7bHuHZYaWv9RDJL/announcing-timaeus\"><span>announced their launch</span></a><span>&nbsp;in October 2023. Later in the fall, they got a $455,000 grant from SFF.</span></p>\n    <p id=\"block6\"><span>In 2024, they continued to get funding from Manifund and SFF, and in 2025 they got two larger grants of $2m and $1.5m from Coefficient Giving. Then in June of this year, they announced that they were&nbsp;</span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/AP7YDke5jjY4v3X9Z/resolution-fka-sequent-scale-and-automation-for-higher\"><span>merging into Resolution</span></a><span>, which got&nbsp;</span><b><span>$160m</span></b><span>&nbsp;from Coefficient Giving — their largest AI safety grant to date.</span></p>\n    <p id=\"block7\"><span>What if Timaeus had been a startup? Their early investors would have earned extraordinary returns. It’s unclear how much of Resolution’s funding to credit to Timaeus; looking at the&nbsp;</span><span><span><a href=\"https://resolution.org/launch\"><span>founding team</span></a></span></span><span>, it looks to be roughly half from Timaeus and half from UK AISI. But okay, maybe Geoffrey Irving specifically gets a lot of the credit here. Even conservatively allocating 20% to Timaeus, if you compare a total of $599,700 raised in 2023 to $160m * 20% = $32m in 2026, you get a 53x return.</span></p>\n    <p id=\"block8\"><span>(Two key assumptions: all donations in a single year are treated as one funding round, and the amount of impact equity sold is constant year over year.)</span></p>\n    <p id=\"block9\"><span>Multiplied out, our $143k stake via our 2023 regrants would have grown 53x to now be worth $7.6m. This first regrant to Timaeus, alone, would more than pay back the entire Manifund regranting budget to date ($5.2m). Since the Resolution grant is so much larger than most other AIS grants, Timaeus could be the single best 2023 AI safety grant in these terms.</span></p>\n    <p id=\"block10\"><span>In an impact-market world, our regrantors might have cashed out during the Resolution merger, and reinvested proceeds to fund more early projects.</span></p>\n    <h2 id=\"Donate_early__donate_fast\"><b><span>Donate early, donate fast</span></b></h2>\n    <p id=\"block11\"><span>What lessons can you take from the VC world for your own donations?</span></p>\n    <p id=\"block12\"><span>In the for-profit world, investing in early-stage startups is high-risk, but that’s where the highest-return investments come from. Similarly, we think the best donations come from someone with good taste spotting early opportunities.</span></p>\n    <p id=\"block13\"><span>You can also have a high impact just by getting grants out the door quickly; good seed investors will say yes after one call rather than get beaten to the punch.&nbsp;</span><span><span><a href=\"https://ai-2040.com/\"><span>AI 2040</span></a></span></span><span>&nbsp;predicts that the foremost AI company will have 3 months of lead time when they fully automate AI R&amp;D. So helping an AI safety project start 3 months earlier is really valuable!</span></p>\n    <p id=\"block14\"><span>(This is why we love regranting. Jesse Hoogland, the founder of Timaeus,&nbsp;</span><span><span><a href=\"https://manifund.substack.com/p/reviewing-our-ai-safety-regrants\"><span>affirmed that</span></a></span></span><span>&nbsp;“getting early support from Manifund made a real difference for us. This was the first funding we received for research and meant that we could start months earlier than we otherwise would have.”)</span></p>\n    <p id=\"block15\"><span>Finally, consider looking at who has made the best returns on their grants when considering where to direct your donations. It’s easy to look at a fund’s track record and think “oh hey they donated to MATS, I like MATS, I’ll support that fund.” We like MATS too! But donation timing can matter a lot more than the donation target. In retrospect, the first donation to MATS was worth orders of magnitude more than a marginal donation to them today.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "以风险投资的视角审视慈善，本文认为及时快速地向有前景的非营利组织捐赠可以带来超额回报，以 Manifund 2023 年向 AI 安全实验室 Timaeus 的资助为例 —  — 该项目在并入 Resolution 后估计获得 53 倍回报 —  — 作为案例研究。",
+  "oneSentenceSummary": "以风险投资的视角审视慈善，本文认为及时快速地向有前景的非营利组织捐赠可以带来超额回报，以 Manifund 2023 年向 AI 安全实验室 Timaeus 的资助为例 —  — 该项目在并入 Resolution 后估计获得 53 倍回报 —  — 作为案例研究。",
+  "summary": "本文主张，非营利组织的资助生态系统应借鉴风险投资的规范——早期支持者因发现有前景的项目而获得回报，并争相快速提供资金。以 Manifund 对 Timaeus 的再资助为例，作者指出，$143k 在 2023 年被拨付用于一个后来并入 Resolution 的研究项目，而 Resolution 后来从 Coefficient Giving 获得了 $160m。即使保守估计仅归因 20 %，这也意味着 53 倍回报——足以偿还 Manifund 迄今为止的全部再资助预算。核心教训包括：早期捐赠，因为初创阶段的资助影响最大；快速捐赠，因为在 AI 研发上领先 three-month 的价值被放大；以及根据基金的历史资助回报来评估基金，而非根据熟悉的项目名称。文章对其假设持诚实态度，但未深入探讨幸存者偏差。",
+  "mainPoints": [
+    {
+      "point": "非营利资助存在 \"出资方博弈\"，捐赠者倾向于等待他人先行动再承诺。",
+      "explanation": "与风险投资机构争相支持有前景的初创公司不同，慈善资助方倾向于通过等待来保全资本，这导致项目进展变慢。"
+    },
+    {
+      "point": "早期捐赠可以带来超额的慈善回报。",
+      "explanation": "Manifund 的 2023 年再授予 Timaeus 的 $143k 在保守假设下，在 Resolution 并购时价值约 $7.6m —— 相当于 53 倍回报。"
+    },
+    {
+      "point": "资助速度本身就是一个高影响因素。",
+      "explanation": "AI 2040 预测，一旦研发自动化，领先的 AI 公司仅有 three-month 的领先时间，因此让项目提前几个月启动会显著放大影响。"
+    },
+    {
+      "point": "类似 MATS 项目的首笔捐赠的价值远高于今天的边际捐赠，这使得时机成为决定捐赠去向的关键信号。",
+      "explanation": "捐赠者应根据基金的资助记录来评估基金，而非根据熟悉的项目名称。"
+    }
+  ],
+  "keyQuotes": [
+    "但捐赠的时间可能比捐赠的对象重要得多。",
+    "在 impact-market 世界中，我们的再资助者可能在 Resolution 并购期间变现，并将所得再投资以资助更多早期项目。",
+    "获得 Manifund 的早期支持对我们产生了实质性的影响。这是我们用于研究的首笔资金，意味着我们本来可以早几个月启动。"
+  ],
+  "tags": [
+    "慈善",
+    "AI 安全",
+    "影响投资",
+    "风险投资",
+    "有效利他主义"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 81,
+  "wordCount": 753,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785517849000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-01 01:10:49"
+}

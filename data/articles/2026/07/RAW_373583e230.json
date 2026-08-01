@@ -1,0 +1,60 @@
+{
+  "id": "RAW_373583e230",
+  "title": "NVIDIA Video Codec SDK 13.1 ：零拷贝转码、AV1 B 帧和帧精准搜索",
+  "url": "https://developer.nvidia.com/blog/nvidia-video-codec-sdk-13-1-zero-copy-transcode-av1-b-frames-and-frame-accurate-seek/",
+  "date": "2026-07-31 23:13:16",
+  "author": "Elizabeth Goodman",
+  "siteName": "NVIDIA Technical Blog",
+  "content": null,
+  "aiSummary": "NVIDIA Video Codec SDK 13.1 添加了支持多达 31 帧 B 帧的 AV1 分层参考模式、每宏块解码统计、帧精准搜索、通过共享 CUarray 缓冲区实现的零拷贝转码以及基于 Docker 的开发环境。",
+  "oneSentenceSummary": "NVIDIA Video Codec SDK 13.1 添加了支持多达 31 帧 B 帧的 AV1 分层参考模式、每宏块解码统计、帧精准搜索、通过共享 CUarray 缓冲区实现的零拷贝转码以及基于 Docker 的开发环境。",
+  "summary": "NVIDIA 发布了 Video Codec SDK 13.1 ，这是其 GPU 加速视频编码和解码工具包的重大更新 。 在编码方面，它引入了 AV1 的分层参考模式，该模式将 B 帧以树状结构排列，并将最大 B 帧数从 7 提升到 31 ，在 CQ 和 VBR 模式下实现比特率节省且无性能开销 ；UHQ 调优信息现在也可与迭代编码协同工作 。 解码新增功能包括每宏块统计（QP、块类型、运动向量）用于 H.264 和 HEVC 、基于 GOP 感知解码的帧精准搜索 API ，以及增强的 MV-HEVC 立体声支持 。 转码管道围绕模块化队列架构重新构建，每个阶段配有专用线程，并且新增的 AppTransZeroCopy 示例将 NVDEC 输出和 NVENC 输入直接映射到共享 CUarray 缓冲区，消除中间复制和转换内核，降低 SM 和内存带宽利用率 。 两阶段 Docker 镜像提供了带有固定 CUDA、Vulkan 和 FFmpeg 版本的可重现开发环境 。",
+  "mainPoints": [
+    {
+      "point": "AV1 分层参考模式将 B 帧支持从 7 提升到 31，在不增加运行时开销的情况下提升压缩效率。",
+      "explanation": "通过将 B 帧组织成仅根节点为参考的树状结构，编码器能更有效地利用时间冗余，在仅略增加视频内存使用的情况下实现比特率节省。"
+    },
+    {
+      "point": "帧精准搜索利用 GOP 感知解码仅获取所需帧，而非顺序解码。",
+      "explanation": "SDK 定位最近的 IDR，跳过非参考帧，并在目标帧之前绕过映射和后处理，从而为 AI 和编辑工作负载提供高效的随机访问。"
+    },
+    {
+      "point": "零拷贝转码使 NVDEC 和 NVENC 共享同一 CUarray 缓冲区，消除中间转换。",
+      "explanation": "对应用分配表面的双重注册移除了复制和转换内核，降低 SM 利用率和内存占用，同时提升并发转码会话的可扩展性。"
+    },
+    {
+      "point": "重新设计的转码示例采用模块化队列架构，每个流水线阶段分配一个线程。",
+      "explanation": "解码、计算、编码和输出线程通过有界队列进行通信，保证并发性，并使得自定义或替换单个阶段（如添加自定义 CUDA 过滤器）变得容易。"
+    },
+    {
+      "point": "每宏块解码统计使得无需 CPU 解析比特流即可在 GPU 端进行视频分析。",
+      "explanation": "硬件解码自然暴露 QP 值、块类型和运动向量，从而在 GPU 上直接实现场景变化检测、目标跟踪和质量监控。"
+    }
+  ],
+  "keyQuotes": [
+    "分层参考模式通过将 B 帧排列成树状参考结构来进一步提升：叶节点为非参考 B 帧，根节点为中间 B 帧。",
+    "零拷贝消除了这些中间内核，释放 SM 资源用于 CUDA 预处理、推理或渲染。",
+    "相同的 CUDA、Vulkan、FFmpeg 和 SDK 版本在所有地方运行，减少了 \"在我的机器上能运行\" 的漂移。"
+  ],
+  "tags": [
+    "NVIDIA 视频编解码 SDK",
+    "NVENC/NVDEC",
+    "AV1",
+    "视频转码",
+    "零拷贝"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 81,
+  "wordCount": 2453,
+  "domain": "developer.nvidia.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785510796000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-31 23:13:16"
+}

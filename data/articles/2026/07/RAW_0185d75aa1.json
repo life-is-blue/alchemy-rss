@@ -1,0 +1,55 @@
+{
+  "id": "RAW_0185d75aa1",
+  "title": "指挥家式开发者",
+  "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
+  "date": "2026-07-31 21:48:00",
+  "author": "Rachel Laycock",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"precis\"><b>TL;DR</b>\n   <br>\n   <i>Why I think software development is starting to feel a little more like conducting an orchestra.</i></p>\n  <p>There’s a shift happening in software development that I don’t think we’re talking about clearly enough.</p>\n  <p>For the last couple of years we’ve framed AI as a productivity tool. How much faster can it write code? How many more features can we ship? How much cheaper can we build software? I think that’s the wrong question, but I understand why.</p>\n  <p>The first thing AI became good at was writing code, so naturally that’s where we focused. As AI got better at coding, I expected the bottlenecks to move through the software delivery lifecycle: from coding to design and specification, architecture, then verification. And they have. We spent a lot of time at the most recent <a href=\"https://martinfowler.com/bliki/FutureOfSoftwareDevelopment.html\">FOSE</a> event discussing how we ensure good design, quality and resilience while agents increasingly write the code.</p>\n  <p>That’s a topic for another ramble.</p>\n  <p>A few months ago, though, I realised I was looking at the wrong bottleneck. I kept assuming it would simply move to the next phase of software delivery.</p>\n  <p><b>I was wrong.</b></p>\n  <p><b> AI didn’t change what great software looks like. It changed what’s scarce. Human attention is now the bottleneck.</b></p>\n  <p>The next bottleneck isn’t design. It isn’t verification. It’s us. More specifically, it’s our attention. Developers have always protected long periods of uninterrupted focus because that’s where good software gets built. Pair programming. Quiet afternoons. Deep work. We optimized around flow because flow mattered. When we didn’t get that time, very little got done.</p>\n  <p>But when I watch developers using AI today, I see something different. The best developers I know aren’t spending all day in flow anymore. They’re orchestrating agents.</p>\n  <p>Great developers are starting to look less like programmers and more like conductors.</p>\n  <p>I was watching <a href=\"https://en.wikipedia.org/wiki/Jacob_Collier\">Jacob Collier</a> on YouTube recently because I’m hoping to see him in concert soon. Watching him conduct is fascinating. He’s not trying to play every instrument himself. He’s listening to the whole piece, hearing what doesn’t quite fit, bringing different voices in at the right moment, changing the energy, changing the tempo and shaping the performance as it unfolds. Increasingly, that’s what great software developers look like.</p>\n  <p>A great conductor is first and foremost a great musician. They could play the instruments themselves. That’s not why they’re standing on the podium. Their value comes from understanding the whole score. The orchestra doesn’t need the conductor because the musicians aren’t talented enough. It needs the conductor because someone has to hold the whole system in their head. Increasingly, I think that’s what great software developers are doing.</p>\n  <p>The AI agents are the musicians.</p>\n  <p>The developer is the conductor.</p>\n  <p>They’re deciding which agent should tackle which problem. They’re providing context. They’re evaluating what comes back. They’re spotting subtle mistakes. They’re deciding what deserves another iteration and what is ready to move on. I was talking to an engineer recently who told me they regularly have eight AI agents running in parallel. I’ve heard similar numbers from others. Ten. Twelve. Beyond that, they become the bottleneck.</p>\n  <p>Eight.</p>\n  <p>That number stuck with me because it sounded remarkably familiar. It sounded like my job.</p>\n  <p>As CTO, I rarely produce the work myself anymore. Instead, I have lots of streams of work progressing at once. A strategy document comes back for feedback. A client opportunity needs a decision. Someone wants guidance on a technical trade-off. Another team needs context before they can move.</p>\n  <p>None of it arrives neatly packaged. It comes as conversations, emails, documents, chat messages and half-formed ideas. My job is to decide where my attention belongs, make sense of incomplete information, provide context and help other people make progress.</p>\n  <p>When I first became CTO, I thought I needed to get better at managing my time. I was wrong.</p>\n  <p>What I really needed to learn was how to manage my energy. The challenge wasn’t the hours. It was the constant context switching. The endless stream of decisions. The feeling that nothing was ever completely finished.</p>\n  <p>An executive coach taught me some things I’ve never forgotten.</p>\n  <p>Protect your attention.</p>\n  <p>Manage your energy.</p>\n  <p>Reduce unnecessary decisions.</p>\n  <p>Create systems that help your brain, not just your calendar.</p>\n  <p>Lately I’ve been wondering whether developers are about to need exactly the same capabilities. A few weeks ago I shared this thought with our Chief People and Leadership Officer. His response surprised me. “I knew something fundamental was changing,” he said. “I just didn’t know how to help. Now I do.”</p>\n  <p>That conversation stuck with me because we’ve spent decades helping executives succeed in this kind of environment. We coach them to make decisions with incomplete information, manage cognitive load, prioritize relentlessly and protect their energy. Yet we’re still preparing developers for a world of individual execution. We’re redesigning the tools, but we haven’t started redesigning the job.</p>\n  <p>I don’t think software developers are becoming managers. I don’t think AI is replacing engineering. I think engineering expertise is simply being applied in a different place, and much more often, because execution has become so much faster.</p>\n  <p>(I suspect software developers are simply the first knowledge workers to experience it, but I’ll save that thought for another rambling.)</p>\n  <p>The question I’m most interested in now is this:</p>\n  <p><b>How do we redesign engineering careers when human attention becomes the scarce resource?</b></p>\n  <p>When I became an executive, learning to manage my own energy was one of the hardest things I’ve ever done. Even today, if I stop paying attention to it, I pay the price.</p>\n  <p>I have a feeling software development is about to demand those same capabilities from many more people.</p>\n  <p>And I don’t think we’ve quite realised how profound that change is.</p>\n </body>\n</html>",
+  "aiSummary": "AI 让开发者成为指挥家，将焦点从编码转向管理和注意力瓶颈。",
+  "oneSentenceSummary": "AI 让开发者成为指挥家，将焦点从编码转向管理和注意力瓶颈。",
+  "summary": "文章认为，随着 AI 能够编写代码，软件开发中的瓶颈已经从编码转移到人类注意力上。顶尖开发者如今扮演指挥家的角色：他们编排多个 AI 智能体，提供上下文，评估输出，并决定哪些内容需要再次迭代。作者结合自己担任 CTO 的经验和高管教练的建议，主张管理精力、保护注意力以及在信息不完整的情况下做决策，是新的必备技能。他呼吁重新设计工程职业路径，将开发者视为指挥家而非独立的编码者，并强调技术专长仍然有价值，但被应用于更高级别的系统编排。",
+  "mainPoints": [
+    {
+      "point": "AI 将开发者的角色从编写代码转变为编排 AI 智能体。",
+      "explanation": "当 AI 处理编码任务时，开发者专注于引导智能体、提供上下文、审查输出并决定需要哪些迭代，就像指挥家指挥乐手一样。"
+    },
+    {
+      "point": "人类注意力已成为软件开发中的稀缺资源。",
+      "explanation": "正如指挥家将整份乐谱记在脑海中，开发者必须在多个工作流之间管理自己的注意力，保护精力，并减少不必要的上下文切换，才能保持高效。"
+    },
+    {
+      "point": "工程职业需要重新设计，把开发者当作指挥家来对待。",
+      "explanation": "组织应培养开发者的精力管理、信息不完整下的决策以及注意力保护等技能——这些技能已在高管培训中教授——为他们的新编排角色做好准备。"
+    },
+    {
+      "point": "技术专长仍然有价值，但被应用于更高级别的系统编排。",
+      "explanation": "开发者仍然需要深入理解软件，但他们利用这些专长来引导 AI 智能体，而不是亲自编写每一行代码，这类似于一位能够演奏乐器却选择领导乐团的指挥家。"
+    }
+  ],
+  "keyQuotes": [
+    "人类注意力如今是瓶颈。",
+    "顶尖开发者开始越来越不像程序员，而更像指挥家。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "提示词工程",
+    "开发者工具",
+    "氛围编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 952,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785505680000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-31 21:48:00"
+}

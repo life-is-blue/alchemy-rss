@@ -1,0 +1,51 @@
+{
+  "id": "RAW_a2859ca205",
+  "title": "Terraform 推出 tfpolicy：基于 HCL 的策略即代码框架",
+  "url": "https://www.infoq.com/news/2026/07/terraform-policy-as-code/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-01 02:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>HashiCorp has introduced <a href=\"https://www.hashicorp.com/en/blog/introducing-tfpolicy-a-declarative-policy-workflow-built-for-terraform\">tfpolicy</a>, a new HCL-based policy-as-code framework for Terraform, now available in public beta within HCP Terraform. It is designed to simplify and modernize infrastructure governance by integrating policy creation and enforcement directly into Terraform workflows, eliminating the need for separate tools and languages.</p>\n   <blockquote>\n    <p>Terraform policy is a declarative, HCL-based policy as code framework that enables platform teams to define and enforce policies using a familiar language while introducing new governance capabilities designed for modern infrastructure systems.</p>\n   </blockquote>\n   <p><a href=\"https://www.infoq.com/policy-as-code/\">Policy as code</a> helps organizations codify governance requirements, automate compliance checks, and strengthen security outcomes. Existing solutions, such as HashiCorp <a href=\"https://www.hashicorp.com/en/sentinel\">Sentinel</a> and <a href=\"https://www.openpolicyagent.org\">Open Policy Agent</a> (OPA) operate as separate layers that validate infrastructure against policy rules.</p>\n   <p>According to HashiCorp, these approaches often fails to incorporate key external context, such as relationships between resources, which can change throughout the infrastructure lifecycle. Instead, the new policy framework addresses the growing complexity of modern infrastructure, which often spans multiple clouds and services rather than individual resources.</p>\n   <p>Terraform <code>tfpolicy</code> is deeply integrated into Terraform and uses HCL, the same language that enables the creation of Terraform infrastructure, thus reducing the need to switch tools and languages and allowing teams to define and enforce policies within the same workflow they already use.</p>\n   <blockquote>\n    <p>This deep integration brings governance closer to the infrastructure lifecycle, with policy evaluation before and after deployment. Teams can enforce requirements based on actual infrastructure state — not just planned changes — all within the familiar workflows and practices Terraform practitioners already use every day.</p>\n   </blockquote>\n   <p>tfpolicy also introduces several new capabilities, such as evaluating policies based on relationships between resources and leveraging data source lookups to incorporate external context into policy enforcement workflows. Additionally, it also addresses supply-chain risks by enabling control over provider and module downloads, helping organizations \"establish approved dependency controls, and prevent accidental use of unapproved providers or modules\".</p>\n   <p>Another benefite of tfpolicy's deep integration with Terraform is the ability to evaluate policies after deployment, allowing organizations to detect violations that may only become visible once resources have been provisioned.</p>\n   <p>Terraform will continue to support Sentinel, but HashiCorp is positioning tfpolicy as its preferred policy framework. The company is also introducing an <a href=\"https://github.com/hashicorp/agent-skills/tree/main/terraform/policy/skills/terraform-policy\">AI agent capable of generating and testing tfpolicy configurations</a>, as well as converting existing Sentinel policies.</p>\n   <p>As a final note, tfpolicy delivers its full capabilities only within HCP Terraform, where it can be tightly integrated into end-to-end infrastructure workflows, including policy enforcement during planning, deployment, and post-deployment evaluation. In contrast, the standalone CLI is more limited in scope, primarily supporting policy validation and local testing. While useful for development and iteration, it does not provide the same level of integration, automation, or enforcement available in the managed HCP Terraform environment.</p>\n   <p>HashiCorp Sentinel is an embedded policy-as-code framework that integrates natively with HCP Terraform and allows to write fine-grained, testable rules using Sentinel's custom domain-specific language. Open Policy Agent is an open-source, cloud-native, and vendor-agnostic solution supporting over 100 integrations.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Terraform Introduces tfpolicy, an HCL-based Policy-as-Code Framework\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/07/terraform-policy-as-code/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1785520800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "HashiCorp 发布 tfpolicy，一个基于 HCL 的框架，为 Terraform 提供部署前后的策略检查。",
+  "oneSentenceSummary": "HashiCorp 发布 tfpolicy，一个基于 HCL 的框架，为 Terraform 提供部署前后的策略检查。",
+  "summary": "HashiCorp 推出了 tfpolicy，这是一个全新的策略即代码框架，基于 HCL 构建并直接集成到 Terraform 工作流中。它允许平台团队使用与基础设施相同的语言编写策略，并基于实际基础设施状态和资源关系，在部署前后进行评估。tfpolicy 还增加了对 Provider 和 Module 使用的供应链控制，并包含一个可生成和测试 tfpolicy 配置的 AI 智能体，使其成为 HCP Terraform 中 Sentinel 和 Open Policy Agent 的首选替代方案。",
+  "mainPoints": [
+    {
+      "point": "tfpolicy 使用与 Terraform 相同的 HCL 语言编写策略。",
+      "explanation": "这消除了学习 Sentinel 或 Rego 等独立 DSL 的需要，让团队可以在现有的 Terraform 工作流中定义策略。"
+    },
+    {
+      "point": "它支持部署前后的策略评估，使用实时状态和资源间关系。",
+      "explanation": "与计划前验证不同，tfpolicy 可以评估实际部署的资源及其依赖关系，检测静态计划无法发现的配置漂移和运行时违规。"
+    },
+    {
+      "point": "该框架增加了供应链控制和 AI 辅助策略生成器。",
+      "explanation": "团队可以限制使用的 Provider 或 Module，并利用 AI 智能体生成和测试 tfpolicy 规则，从而改善治理并减少人工操作。"
+    }
+  ],
+  "keyQuotes": [
+    "Terraform policy 是一个声明式的、基于 HCL 的策略即代码框架，使平台团队能够使用熟悉的语言定义和执行策略，同时引入了专为现代基础设施系统设计的新治理能力。",
+    "这种深度集成将治理更紧密地融入基础设施生命周期，在部署前后进行策略评估。团队可以基于实际基础设施状态（而不仅仅是计划中的变更）来执行要求，所有这些都在 Terraform 从业者每天使用的熟悉工作流和实践中完成。"
+  ],
+  "tags": [
+    "Terraform",
+    "策略即代码",
+    "基础设施即代码",
+    "DevOps",
+    "HashiCorp"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 490,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785520800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-01 02:00:00"
+}

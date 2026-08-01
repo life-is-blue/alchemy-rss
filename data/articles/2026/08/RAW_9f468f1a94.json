@@ -1,0 +1,48 @@
+{
+  "id": "RAW_9f468f1a94",
+  "title": "Oxide and Friends：与 Simon Willison 探讨开放权重革命",
+  "url": "https://simonwillison.net/2026/Jul/31/oxide-and-friends/#atom-everything",
+  "date": "2026-08-01 05:33:13",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st July 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Jul/31/oxide-and-friends/\">\n    <p><strong><a href=\"https://oxide-and-friends.transistor.fm/episodes/the-open-weight-revolution-with-simon-willison\">Oxide and Friends: The Open Weight Revolution with Simon Willison</a></strong>. On Monday Bryan Cantrill and Adam Leventhal invited me to join their podcast to talk about the <em>wild</em> week we've had - with Kimi K3 showing open weight models can stand toe-to-toe with proprietary frontier ones, <a href=\"https://simonwillison.net/2026/Jul/22/openai-cyberattack/\">accidental cybersecurity attacks</a>, and public letters about <a href=\"https://www.microsoft.com/en-us/corporate-responsibility/topics/open-weight/\">Open Weights and American AI Leadership</a> signed by almost every big name in AI (with one <a href=\"https://www.anthropic.com/news/position-open-weights-models\">notable exception</a>).</p>\n    <p>It was a great conversation, even though it's already out-of-date! <a href=\"https://artificialanalysis.ai/models/deepseek-v4-flash\">DeepSeek V4 Flash 0731</a> and <a href=\"https://simonwillison.net/2026/Jul/30/three-real-world-incidents/\">Anthropic's own embarrassing cyber incident</a> would absolutely have made the cut if we had recorded just a few days later.</p>\n    <p>We also talk about <a href=\"https://www.anthropic.com/news/golden-gate-claude\">Golden Gate Claude</a>, the <a href=\"https://en.wikipedia.org/wiki/Zizians\">Zizians</a>, <a href=\"https://abc7news.com/post/83-year-old-alameda-woman-attacked-wild-turkeys-city-warns-residents-take-precautions-during-mating-season/19190785/\">Alameda wild turkey attacks</a>, <a href=\"https://en.wikipedia.org/wiki/Soviet_biological_weapons_program\">Soviet Marburg virus research</a>, the <a href=\"https://en.wikipedia.org/wiki/Lead–crime_hypothesis\">Lead-crime hypothesis</a>, and a bunch of other worthy digressions.</p>\n    <p>Finally, we revisited some of <a href=\"https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/\">our predictions from January</a>, and we <a href=\"https://simonwillison.net/2026/May/25/encyclical-on-ai/#another-2026-prediction-down\">added a new Pope prediction</a>:</p>\n    <blockquote>\n     <p>Prediction by the end of this year: the Pope says something about open models.</p>\n    </blockquote>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9572/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 的博客文章链接了他在《Oxide and Friends》播客中的演讲摘要，讨论了开放权重 AI 革命、近期网络安全事件及其他多样化的扩展话题。",
+  "oneSentenceSummary": "Simon Willison 的博客文章链接了他在《Oxide and Friends》播客中的演讲摘要，讨论了开放权重 AI 革命、近期网络安全事件及其他多样化的扩展话题。",
+  "summary": "本文总结了 Simon Willison 最新在《Oxide and Friends》播客中的演讲内容。讨论围绕人工智能领域的快速演变，特别是开放权重模型（如 Kimi K3）正挑战专有前沿模型，以及围绕开放权重的政治与行业争论。Willison 还提及了 AI 领域的近期网络安全漏洞，指出该领域发展迅速（如 DeepSeek V4 Flash 等新模型发布），并以多样化的知识扩展和他对 2026 年 AI 发展的个人预测结尾。",
+  "mainPoints": [
+    {
+      "point": "开放权重模型正接近专有前沿模型的性能",
+      "explanation": "Kimi K3 等模型的崛起表明，封闭源与开放权重 AI 之间的差距迅速缩小，引发行业对 AI 领导地位的广泛争论。"
+    },
+    {
+      "point": "AI 领域发展速度极快，讨论内容几天内可能过时",
+      "explanation": "Willison 指出，仅一周内可能出现重大变化，如新模型发布（DeepSeek V4 Flash）或重大网络安全事件（Anthropic），强调实时跟踪的必要性。"
+    },
+    {
+      "point": "AI 开发日益与网络安全风险交织",
+      "explanation": "提及的“意外网络安全攻击”及具体事件凸显了部署大规模 AI 模型时面临的实际风险。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "开放权重",
+    "AI 安全",
+    "大语言模型",
+    "AI 趋势",
+    "网络安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 169,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785533593000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-01 05:33:13"
+}

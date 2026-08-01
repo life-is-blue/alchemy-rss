@@ -1,0 +1,51 @@
+{
+  "id": "RAW_af01b4f59b",
+  "title": "smevals——用于评估模型、提示词和框架的小型评估套件",
+  "url": "https://simonwillison.net/2026/Jul/31/smevals/#atom-everything",
+  "date": "2026-08-01 05:15:23",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st July 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://primeradiant.com/blog/2026/smevals.html\">smevals - a small eval suite for evaluating models, prompts, and harnesses</a></strong>. I've been working with Jesse Vincent's <a href=\"https://primeradiant.com\">Prime Radiant</a> applied AI research lab building out this evals framework to help answer questions about the capabilities of different models.</p>\n    <p>The result is <strong><a href=\"https://github.com/prime-radiant-inc/smevals\">smevals</a></strong>, a new tool for running small eval suites across different model configurations and grading the results.</p>\n    <p>This blog entry describes the tool in detail. Here's the 10 second version:</p>\n    <ol>\n     <li>Tell your coding agent to <code>run uvx smevals docs</code> to learn the tool (this outputs <a href=\"https://github.com/prime-radiant-inc/smevals/blob/main/README.md\">the README</a>)</li>\n     <li>Then tell it to build you an eval suite</li>\n    </ol>\n    <p>Once you've created an eval - which takes the form of a directory with some YAML files - you can run it against models like this:</p>\n    <pre><code>uvx smevals run path-to-eval/ -m gpt-5.5 -m claude-opus-4.6\n</code></pre>\n    <p>Runs are treated separately from grading operations - you can grade your runs (against your defined set of checks) using:</p>\n    <pre><code>uvx smevals grade path-to-eval/\n</code></pre>\n    <p>Then you can run a localhost web server to explore the results:</p>\n    <pre><code>uvx smevals serve path-to-eval/\n</code></pre>\n    <p>Or run the <code>smevals build</code> command to build that report as static HTML, which you can then host anywhere. Here's <a href=\"https://static.simonwillison.net/static/2026/smevals-haiku-build/#/haiku\">an example</a> showing an eval suite I built to evaluate how well models can write haikus.</p>\n    <p><img alt=\"Screenshot of an evaluation dashboard for a haiku-writing benchmark, testing whether models can reply with exactly three non-empty lines. A header describes the eval, with panels below showing a leaderboard ranking three GPT models by score, lists of recent runs and recent grades, tag pass rates, the two haiku prompts that were tested, and details of the graders used with a 0.8 pass threshold.\" src=\"https://static.simonwillison.net/static/2026/smevals-report.webp\"></p>\n    <p>I've been trying to figure out an approach I like for evals for several years now. <code>smevals</code> is my third iteration on the idea and it feels right to me. I'm looking forward to expanding this more in the future, as well as pointing it at some of my own projects.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "smevals 是一个轻量级的评估套件，通过可配置的测试套件和评分机制来评估 AI 模型、提示词及框架。",
+  "oneSentenceSummary": "smevals 是一个轻量级的评估套件，通过可配置的测试套件和评分机制来评估 AI 模型、提示词及框架。",
+  "summary": "本文介绍了 smevals，这是由 Simon Willison 和 Jesse Vincent 的 Prime Radiant 实验室开发的一种新型评估工具。该工具允许用户针对不同的模型配置创建并运行小型评估套件，对结果进行评分，并通过 Web 界面可视化发现。其核心功能包括用于设置、执行和报告的命令行操作，文中通过一个跨 GPT 模型的俳句写作基准测试示例进行了演示。作者分享了他们在构建评估框架时的迭代方法以及未来的扩展计划。",
+  "mainPoints": [
+    {
+      "point": "smevals 通过可配置的测试套件为模型评估提供了一种结构化方法。",
+      "explanation": "用户可以通过包含 YAML 文件的评估目录来定义测试，这些测试可以针对多个模型运行，并使用可自定义的标准进行评分。"
+    },
+    {
+      "point": "该工具为评估工作流提供了命令行和基于 Web 的界面。",
+      "explanation": "核心操作包括运行评估 (`uvx smevals run`)、对结果进行评分 (`uvx smevals grade`) 以及提供交互式报告服务 (`uvx smevals serve`)。"
+    },
+    {
+      "point": "俳句基准测试展示了实际应用和评分机制。",
+      "explanation": "该示例评估了模型生成三行诗的能力，展示了 smevals 如何追踪通过率并比较模型性能。"
+    }
+  ],
+  "keyQuotes": [
+    "smevals 是我对这一想法的第三次迭代，它让我感觉很对。",
+    "告诉你的代码智能体运行 `uvx smevals docs` 来学习该工具（这会输出 README）"
+  ],
+  "tags": [
+    "AI 评估",
+    "模型基准测试",
+    "提示词工程",
+    "LLM 工具",
+    "评估框架"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 265,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785532523000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-01 05:15:23"
+}

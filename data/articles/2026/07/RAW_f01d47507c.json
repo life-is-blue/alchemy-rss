@@ -1,0 +1,60 @@
+{
+  "id": "RAW_f01d47507c",
+  "title": "在欧洲推进负责任的 AI",
+  "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+  "date": "2026-07-31 23:00:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI News",
+  "content": null,
+  "aiSummary": "OpenAI 阐述其与欧盟 AI 法案对齐的负责任 AI 实践，重点介绍了对通用人工智能（GPAI）行为准则和透明度行为准则的承诺、模型安全框架、内容溯源工具，以及与欧洲伙伴的网络安全合作。",
+  "oneSentenceSummary": "OpenAI 阐述其与欧盟 AI 法案对齐的负责任 AI 实践，重点介绍了对通用人工智能（GPAI）行为准则和透明度行为准则的承诺、模型安全框架、内容溯源工具，以及与欧洲伙伴的网络安全合作。",
+  "summary": "这篇来自 OpenAI 的文章详细介绍了在欧盟 AI 法案进入下一阶段之际，公司如何将负责任的 AI 实践与之对齐。OpenAI 重点阐述了其对两项欧盟行为准则的认可——通用人工智能（GPAI）行为准则和 AI 生成内容透明度行为准则——并描述了其内部治理机制，包括 Preparedness 框架、Frontier 治理框架、system card、红队网络以及公开的 Model Spec。文章还介绍了 OpenAI 通过 C2PA Content Credentials 和 SynthID 水印开展的内容溯源工作，并计划将溯源能力扩展到音频和文本模态。网络安全部分专门介绍了 Trusted Access for Cyber（TAC）项目以及于 2026 年 5 月发布的 OpenAI 欧盟网络安全行动计划，该计划与欧盟及各成员国网络安全机构和关键基础设施运营商开展合作。文章最后重申了 OpenAI 对务实、基于风险的监管路径的承诺，并指引读者查阅面向客户的合规资源。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 已认可两项欧盟行为准则，分别覆盖通用人工智能（GPAI）和 AI 生成内容透明度。",
+      "explanation": "OpenAI 将这些认可定位为务实、基于风险的监管路径的一部分，并将其与多年来在安全、安保、透明度和溯源方面的内部工作相挂钩。"
+    },
+    {
+      "point": "内部治理依托多层次框架与外部协作。",
+      "explanation": "OpenAI 援引了 Preparedness 框架（2025 年更新）、Frontier 治理框架、system card、红队网络以及公开的 Model Spec，同时通过 Frontier Model Forum 与美国 CAISI、英国 AISI 等开展合作。"
+    },
+    {
+      "point": "内容溯源依赖互补的技术信号，而非单一机制。",
+      "explanation": "C2PA Content Credentials 携带元数据，而 SynthID 水印在元数据丢失时仍能保留信号；OpenAI 正将该能力扩展到音频，并随着标准成熟推进文本溯源。"
+    },
+    {
+      "point": "网络安全实践体现了双重用途治理模型的实际应用。",
+      "explanation": "Trusted Access for Cyber 项目和 2026 年 5 月发布的欧盟网络安全行动计划，旨在让防御方能够使用前沿模型，同时限制滥用，与欧盟委员会的 AI 与网络安全行动计划保持一致。"
+    },
+    {
+      "point": "OpenAI 倡导灵活、基于风险的监管以促进创新。",
+      "explanation": "结尾部分主张，适应性规则对欧洲充分释放 AI 红利至关重要；OpenAI 提供文档、system card 和指引，帮助客户为合规做好准备。"
+    }
+  ],
+  "keyQuotes": [
+    "此类规则必须务实、相称且基于风险，才能在推进治理的同时支持创新。",
+    "内容溯源仍是一个不断发展的领域：元数据可能丢失，标签可能无法跨平台传递，没有任何单一信号是完美的。因此我们支持采用分层方法，并在更广泛的生态系统中持续合作。",
+    "务实、相称且基于风险的方法，对于欧洲充分实现智能时代的红利至关重要。"
+  ],
+  "tags": [
+    "AI 治理",
+    "欧盟 AI 法案",
+    "负责任 AI",
+    "AI 安全",
+    "内容溯源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 964,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785510000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-07-31 23:00:00"
+}

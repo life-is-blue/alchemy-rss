@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-01 06:52:26 | [返回首页](/README.md)
+**更新时间**: 2026-08-01 09:51:56 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14221)
+- [AI & 大模型](#ai-llm) (14270)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (906)
-- [DevOps](#devops) (681)
+- [前端与全栈](#frontend-fullstack) (908)
+- [DevOps](#devops) (682)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6430)
+- [其他](#other) (6438)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [构建语音控制的-AI-智能体](https://www.kdnuggets.com/building-voice-controlled-ai-agents) - AI 精选
+- [一镜成片，随心参考｜Seedance-2.5-正式发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae) - AI 精选
 - [Gemini-Robotics-ER-2-发布](https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/) - AI 精选
 - [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6) - AI 精选
 - [智能体-AI-时代的科学计算](https://openai.com/index/scientific-computing-agentic-ai) - AI 精选
@@ -40,10 +42,8 @@
 - [NVIDIA-Nemotron-3-Embed-在-RTEB-上排名第一，推动智能体检索发展](https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb) - AI 精选
 - [模型路由看似简单，实则不然。](https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt) - AI 精选
 - [从构建-Shippy-中学到的智能体构建经验](https://huggingface.co/blog/allenai/shippy-tech-blog) - AI 精选
-- [GPT-Red：解锁自我改进以增强鲁棒性](https://openai.com/index/unlocking-self-improvement-gpt-red) - AI 精选
-- [机器学习研究中有多少是围绕-AI-安全的，具体内容是什么，谁在做？——-LessWrong](https://www.lesswrong.com/posts/hcq4ZDoijSjy3Wrba/how-much-of-ml-research-is-about-ai-safety-what-is-it-about) - AI 精选
 
-- [查看全部 14221 篇...](/details/tags/ai-llm.md)
+- [查看全部 14270 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 906 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 908 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 681 篇...](/details/tags/devops.md)
+- [查看全部 682 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 
-- [查看全部 6430 篇...](/details/tags/other.md)
+- [查看全部 6438 篇...](/details/tags/other.md)
 
 
