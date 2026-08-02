@@ -1,0 +1,52 @@
+{
+  "id": "RAW_287d6cd02f",
+  "title": "AWS 推出免费沙箱环境用于工作坊",
+  "url": "https://www.infoq.com/news/2026/08/aws-builder-sandbox/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-01 12:49:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS Builder Center now offers free, time-limited sandbox environments for workshops, so developers no longer need to use their own AWS account and credit card or worry about unexpected charges. This has been a long-standing request from the community and removes one of the biggest friction points for practitioners learning new AWS technologies.</p>\n   <p>According to the <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/07/aws-builder-center-sandbox/\">announcement</a>, each sandbox provides 8 hours of pre-provisioned access and is ready within 15 minutes, with automatic cleanup on expiry. Developers can initially create only one sandbox per week, and the option is currently available only for a subset of workshops.</p>\n   <p>The workshops accessible via the sandbox environment are step-by-step guided labs covering topics such as building serverless APIs, setting up VPCs, deploying containers, and working with AI services. Rick Suttles, senior manager at AWS, <a href=\"https://builder.aws.com/content/3GCjkXGc1Qrs5jGsWI5fkTLNWzU/introducing-sandbox-environments-on-aws-builder-center\">explains</a>:</p>\n   <blockquote>\n    <p>Sandbox environments are a new addition to AWS Builder Center that lets you request a free, time-limited AWS account and start building right away. Whether you want to try a workshop without creating a personal account or just want to experiment without worrying about unexpected charges, sandboxes give you a clean environment to work in.</p>\n   </blockquote>\n   <p>The new option adds to a broader set of no-cost, no-account learning paths the cloud provider now offers, each suited to a different use case: Builder Center Sandbox is for trying AWS for a few hours without persisting anything, while the revamped <a href=\"https://www.infoq.com/news/2025/07/aws-risk-free-account-credits/\">Free Tier</a> gives developers an actual account with USD 200 in credits and 6-month auto-closure for side projects. Sumit Tiwari, SRE &amp; DevOps engineer at ADP, <a href=\"https://www.linkedin.com/posts/sumittiwaridevops_introducing-sandbox-environments-on-aws-builder-activity-7481357097658433536-RV6z/\">comments</a>:</p>\n   <blockquote>\n    <p>One thing that often stops people from learning AWS is not the technology itself. It's the fear of accidentally spending money, setting things up incorrectly, or forgetting to clean up resources.</p>\n   </blockquote>\n   <p>Among the workshops currently supported, many are related to generative AI and agentic AI workflows, including \"<a href=\"https://catalog.us-east-1.prod.workshops.aws/workshops/d26e21f4-3360-468f-b3b0-761e768d0427\">Claude Code on Amazon Bedrock</a>\", \"<a href=\"https://catalog.workshops.aws/workshops/8e739a82-fe61-4dde-90a7-c055e778dc2e\">AI-DLC Workshop</a>,\" and \"<a href=\"https://catalog.us-east-1.prod.workshops.aws/workshops/047883b0-0958-410c-bc70-1071f1fb3f52\">Storytelling based AI-powered insights and automation using Amazon Quick</a>.\" Explaining \"why this matters more than you think,\" Sarvar Nadaf, cloud architect at Deloitte, <a href=\"https://dev.to/aws-builders/introducing-aws-sandbox-environment-learn-aws-for-free-without-a-credit-card-58np\">writes</a>:</p>\n   <blockquote>\n    <p>I've onboarded probably 40+ engineers to AWS across different client engagements. The pattern repeats every single time. Day one of training, someone raises their hand: \"What happens if I accidentally leave something running?\" That question comes from fear. And fear makes people skip hands-on practice entirely. They read docs. Watch videos. Never deploy a thing.</p>\n   </blockquote>\n   <p>The long-awaited feature has received <a href=\"https://www.linkedin.com/posts/idan-zohar-269962121_workshops-build-aws-builder-center-share-7481397470262923264-Sg0z/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">positive reactions</a> from a community that hopes it <a href=\"https://www.linkedin.com/posts/donkersgoed_aws-builder-center-now-offers-free-sandbox-share-7480869191328321536-0wVZ/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">will be extended further</a>. Still, AWS is the last of the major hyperscalers to introduce it. Microsoft has offered <a href=\"https://github.com/ammfat/microsoft-learn-sandboxes\">no-signup Azure sandboxes via Microsoft Learn for years</a>, and Google Cloud has similarly provided comparable temporary environments through <a href=\"https://www.skills.google/\">Qwiklabs/Google Cloud Skills Boost</a>. As reported on InfoQ, Cloudflare's recent \"<a href=\"https://www.infoq.com/news/2026/07/cloudflare-temp-accounts/\">Temporary Accounts</a>\" instead addresses a different use case, with no signup required for AI coding agents and a 60-minute human claim window.</p>\n   <p>Sandboxes are currently limited to select workshops, with broader coverage planned as AWS rolls out support over time.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces Free Sandbox Environments for Workshops\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/aws-builder-sandbox/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1785559740000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS Builder Center 现提供免费、限时的沙箱账户用于工作坊，让开发者无需使用个人账户或担心意外费用即可试用 AWS 服务。",
+  "oneSentenceSummary": "AWS Builder Center 现提供免费、限时的沙箱账户用于工作坊，让开发者无需使用个人账户或担心意外费用即可试用 AWS 服务。",
+  "summary": "AWS 在其 Builder Center 中推出了免费沙箱环境，提供最多八小时的预配置访问，可在十五分钟内就绪，并在到期后自动清理。目前每周仅限一个沙箱，且仅支持部分工作坊（包括无服务器 API、VPC、容器，以及 Claude Code on Amazon Bedrock 等 AI 相关实验），该功能消除了动手学习的一大障碍：担心产生费用或遗留运行中的资源。公告引用了 AWS 高级经理 Rick Suttles、ADP SRE Sumit Tiwari 和德勤云架构师 Sarvar Nadaf 的观点，他们强调沙箱减轻了用户对意外支出的焦虑，并鼓励实际动手实验。文章还指出，AWS 是最后一家推出此类免注册沙箱的主要超大规模云厂商，Microsoft Learn 和 Google Cloud Skills Boost 多年来已提供类似环境，而 Cloudflare 近期推出的临时账户则针对不同使用场景。社区反应积极，并希望未来能覆盖更多工作坊。",
+  "mainPoints": [
+    {
+      "point": "免费沙箱环境消除了 AWS 学习者在成本和清理方面的顾虑。",
+      "explanation": "开发者可以申请一个持续八小时、无需信用卡、使用后自动删除的临时 AWS 账户，从而解决对意外费用的主要担忧。"
+    },
+    {
+      "point": "该沙箱支持一系列引导式工作坊，包括 AI 相关实验。",
+      "explanation": "目前可用的工作坊涵盖无服务器 API、VPC 搭建、容器部署，以及 Claude Code on Amazon Bedrock、AI-DLC 和基于 QuickSight 的洞察等生成式 AI 服务。"
+    },
+    {
+      "point": "AWS 的这一服务紧随微软和谷歌的同类免注册沙箱之后，但在市场上相对较新。",
+      "explanation": "Microsoft Learn 和 Google Cloud Skills Boost 多年来已提供类似的临时环境，而 Cloudflare 的临时账户则用于不同目的（面向 AI 编码智能体，提供 60 分钟的申领窗口）。"
+    }
+  ],
+  "keyQuotes": [
+    "“沙箱环境是 AWS Builder Center 的一项新增功能，让你可以申请一个免费、限时的 AWS 账户并立即开始构建。”",
+    "“阻止人们学习 AWS 的往往不是技术本身，而是担心不小心花钱、配置出错，或者忘记清理资源。”",
+    "“我曾在不同客户项目中让大约 40 多名工程师上手 AWS。这个模式每次都会重复出现。培训第一天，总会有人举手问：‘如果我不小心让某个资源一直运行会怎样？’ 这个问题源于恐惧。而恐惧会让人们完全跳过动手实践。”"
+  ],
+  "tags": [
+    "AWS",
+    "云原生 / DevOps",
+    "开发者工具",
+    "AI 工作坊",
+    "无服务器"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 490,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785559740000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-01 12:49:00"
+}

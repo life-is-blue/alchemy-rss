@@ -1,0 +1,55 @@
+{
+  "id": "RAW_edc8bb2529",
+  "title": "Leonardo de Moura 关于内核 Soundness 漏洞 #14576 的事后分析",
+  "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
+  "date": "2026-08-02 02:32:20",
+  "author": "Leonardo de Moura",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"post-meta\">2026-08-01</div>\n  <p>A soundness bug in the Lean kernel (<a href=\"https://github.com/leanprover/lean4/issues/14576\">#14576</a>) was reported and fixed during the week of July 27. It has had visibility on Zulip and social media (e.g., X, LinkedIn, and Mastodon).</p>\n  <section>\n   <h2>What happened</h2>\n   <p>On July 25, Ramana Kumar published a repository containing a <code>sorry</code>-free \"disproof\" of the Collatz conjecture, produced with AI assistance. It is not a valid proof because it exploits a bug in the kernel's handling of nested inductive types. On July 28, Kiran Gopinathan reduced it to a small proof of False and opened issue <a href=\"https://github.com/leanprover/lean4/issues/14576\">#14576</a>. We pushed a fix one hour after the report (<a href=\"https://github.com/leanprover/lean4/pull/14577\">#14577</a>). <a href=\"https://www.joachim-breitner.de/\">Joachim Breitner</a> reviewed it and suggested improvements, and it was merged. New patch releases are out.</p>\n   <p>The bug: when the kernel eliminates a nested occurrence under an inductive type <code>T</code> with parameters <code>Ds</code>, and these parameters are phantom (not mentioned in constructor fields), they disappear from the generated auxiliary type and thus escape type checking. An ill-typed argument in that position could be used to make the kernel accept a proof of <code>False</code>. The bug is only reachable through metaprogramming, by sending the inductive declaration to the kernel directly. The frontend checks the arguments and catches the ill-typed term. <strong>This is an implementation bug, not a hole in Lean's meta-theory.</strong></p>\n  </section>\n  <section>\n   <h2>Why nanoda did not catch it</h2>\n   <p>The original Collatz repository also passed a week-old version of <a href=\"https://github.com/ammkrn/nanoda_lib\">nanoda</a>, the main external checker. nanoda is an independent kernel (aka proof/type checker) for Lean implemented in Rust by <a href=\"https://christopherabailey.com/\">Chris Bailey</a>. The surprising part is that there are two unrelated bugs involved. The official kernel had a missing check in the nested inductive type support, as explained above. nanoda did check that spot, but did not verify the type name in a projection node. The nanoda bug was reported by Jeremy Chen and fixed a week before the Lean bug was reported. The proof was built so that the expression the kernel never inspects is one that the old nanoda accepted.</p>\n   <p>Ramana believes the timing was coincidental, but cannot rule out that the model had seen the nanoda report. Joachim proposed the hypothesis that the timing coincidence is due to the availability of strong models able to find this bug.</p>\n   <p>The practical consequence: checking with an independent kernel still works, since it required two distinct bugs in two implementations, but users who rely on it need current versions of both. <a href=\"https://github.com/digama0/lean4lean\">lean4lean</a> is affected by the kernel bug, since its handling of inductives is a port of the reference implementation.</p>\n  </section>\n  <section>\n   <h2>Verification</h2>\n   <p>Mario Carneiro's <a href=\"https://github.com/digama0/lean4lean\">lean4lean</a> is a Lean formalization of Lean's type theory together with a proof that the kernel implements it. The work is ongoing, the proof of consistency does not cover inductive types yet, and the to-be-verified implementation suffered from the same bug as the official kernel. The bug would have been found when attempting to conclude the verification of this part.</p>\n  </section>\n  <section>\n   <h2>On removing metaprogramming</h2>\n   <p>One suggestion in the discussion is to remove or restrict metaprogramming so that this attack is not expressible. This is misguided. The elaborator is untrusted by design. Soundness cannot depend on an untrusted component refusing to build a bad term. An attacker who wants to submit a malicious proof can also write <code>.olean</code> files directly or modify memory, both of which bypass the elaborator entirely. The kernel has to reject ill-typed declarations on its own, in its own process. <strong>This separation and isolation of concerns is one of the main advantages of proof terms.</strong></p>\n  </section>\n  <section>\n   <h2>What the FRO is doing</h2>\n   <ul>\n    <li>\n     <p>Regression tests for the exploit, and for a related non-uniform-parameter case raised by Arthur Adjedj, are in the <a href=\"https://arena.lean-lang.org/\">Kernel Arena</a>.</p>\n    </li>\n    <li>\n     <p>A follow-up PR (<a href=\"https://github.com/leanprover/lean4/pull/14582\">#14582</a>) makes the kernel check that the parameters of a nested occurrence actually behave as parameters, rather than only re-type-checking them.</p>\n    </li>\n    <li>\n     <p>Daniel Selsam at OpenAI assisted the Lean FRO with an AI specialized in cybersecurity, and found other programming mistakes in the Lean kernel. All of them have been fixed. All of them were caught by nanoda. These bugs are also only reachable through metaprogramming. PRs: <a href=\"https://github.com/leanprover/lean4/pull/14607\">#14607</a>, <a href=\"https://github.com/leanprover/lean4/pull/14608\">#14608</a>, <a href=\"https://github.com/leanprover/lean4/pull/14609\">#14609</a>, <a href=\"https://github.com/leanprover/lean4/pull/14613\">#14613</a>, <a href=\"https://github.com/leanprover/lean4/pull/14615\">#14615</a>, <a href=\"https://github.com/leanprover/lean4/pull/14616\">#14616</a>.</p>\n    </li>\n    <li>\n     <p>We have also hardened kernel invariants. PRs: <a href=\"https://github.com/leanprover/lean4/pull/14621\">#14621</a>, <a href=\"https://github.com/leanprover/lean4/pull/14631\">#14631</a>, <a href=\"https://github.com/leanprover/lean4/pull/14632\">#14632</a>.</p>\n    </li>\n    <li>\n     <p><a href=\"https://comparator.live.lean-lang.org/\">comparator.live</a> now runs nanoda by default, and nanoda is tracked daily so lean-eval and comparator stay current after upstream fixes.</p>\n    </li>\n    <li>\n     <p>We are reaching out to and supporting experts who can find further bugs, develop new kernels, and work on the theory or on verified kernels.</p>\n    </li>\n   </ul>\n  </section>\n  <section>\n   <h2>Acknowledgments</h2>\n   <p>I am grateful to <a href=\"https://www.joachim-breitner.de/\">Joachim Breitner</a> and <a href=\"https://sebasti.a.nullri.ch/\">Sebastian Ullrich</a> for their revisions and suggestions on this post.</p>\n  </section>\n </body>\n</html>",
+  "aiSummary": "本文详细描述了 Lean 内核的一个关键 Soundness 漏洞（#14576），涉及嵌套归纳类型的处理问题，通过 AI 辅助的 '反证明' 柯拉茨猜想被发现，并在报告后迅速修复，探讨了对形式验证系统的更广泛影响。",
+  "oneSentenceSummary": "本文详细描述了 Lean 内核的一个关键 Soundness 漏洞（#14576），涉及嵌套归纳类型的处理问题，通过 AI 辅助的 '反证明' 柯拉茨猜想被发现，并在报告后迅速修复，探讨了对形式验证系统的更广泛影响。",
+  "summary": "本文记录了 Lean 内核中一个关键 Soundness 漏洞：由于内核在处理嵌套归纳类型中幽灵参数时的缺陷，导致可以构造出错误的证明结果。该漏洞通过 AI 辅助的 '反证明' 柯拉茨猜想被发现，并在报告后一小时内修复。分析显示：1) 漏洞需要通过元编程才能利用；2) 独立检查器 nanoda 存在另一个漏洞，巧合地允许了相同的错误证明；3) 该事件展示了独立验证的价值，同时突显了实现挑战。文章进一步讨论了后续对内核不变式的强化、测试基础设施的改进，以及持续寻找其他漏洞的努力。强调 Soundness 依赖于内核的自检机制，而非信任未经验证的组件（如 elaborator）。",
+  "mainPoints": [
+    {
+      "point": "该漏洞允许通过利用嵌套归纳类型处理的恶意元编程证明 False。",
+      "explanation": "内核在处理嵌套归纳类型中幽灵参数时缺少必要检查，导致可以构造出非法类型的证明结果。该漏洞需要通过直接内核交互的元编程才能利用。"
+    },
+    {
+      "point": "独立检查器 nanoda 存在另一个漏洞，巧合地接受了相同的错误证明。",
+      "explanation": "虽然 nanoda 检测到了内核漏洞的位置，但它未能验证投影节点的类型名称。修复时的时间窗口导致两个检查器都接受了无效证明。"
+    },
+    {
+      "point": "该事件验证了内核隔离与独立验证的重要性。",
+      "explanation": "文章主张 Soundness 应依赖内核自检机制，而非信任未经验证的组件（如 elaborator）。展示了即使带有自身漏洞的独立检查器也能提供关键冗余验证。"
+    },
+    {
+      "point": "事件后进行了内核不变式强化、测试基础设施改进，并启动了专家协作的漏洞赏金计划。",
+      "explanation": "多个后续 PR 加强了内核不变式，comparator.live 默认切换为 nanoda，团队积极与专家合作推进进一步验证和内核开发。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一个实现漏洞，而非 Lean 元理论中的漏洞。",
+    "关注点的分离与隔离是证明术语主要优势之一。"
+  ],
+  "tags": [
+    "形式验证",
+    "Lean 定理证明器",
+    "软件漏洞",
+    "内核开发",
+    "类型理论"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 749,
+  "domain": "leodemoura.github.io",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785609140000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-02 02:32:20"
+}

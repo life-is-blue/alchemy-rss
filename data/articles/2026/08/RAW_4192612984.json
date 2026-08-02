@@ -1,0 +1,62 @@
+{
+  "id": "RAW_4192612984",
+  "title": "在 C++/WinRT 中创建敏捷委托的第十部分：处理 IContextCallback::ContextCallback 的失败",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260731-00/?p=112578",
+  "date": "2026-08-01 14:06:16",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In <a title=\"Making an agile version of a Windows Runtime delegate in C++/WinRT, part 5\" href=\"https://devblogs.microsoft.com/oldnewthing/20260724-00/?p=112562\"> part 5 of this unnecessarily long series on agile delegates</a>, <a href=\"https://devblogs.microsoft.com/oldnewthing/20260724-00/?p=112562&amp;commentid=144539#comment-144539\"> commenter LB asked</a>, “Is the <code>Context­Callback</code> in the deleter guaranteed to always succeed? According to the docs it can fail. I wonder if there’s a way to move the fallible part to an earlier point so the deleter can be infallible.”</p>\n  <p>Let’s look at the first part: What if <code>IContext­Callback::<wbr>Context­Callback</code> fails?</p>\n  <p>If it fails, it means that COM couldn’t switch to the destination context.</p>\n  <p>If you can’t switch to the destination context, then you can’t release the pointer. It’s not clear what recovery is possible anyway. Do you just keep retrying until it finally works?</p>\n  <p>If the destination context is an ASTA, then it’s possible that the reason is that the context is already busy, and ASTA doesn’t allow re-entrancy. We’d have to wait a little bit and try again later, when the destination context might be ready. We can’t just block on the retry because the destination context might be calling into the thread we are on right now, so just spinning in a retry loop won’t help because it’s waiting for us! We’re have to return, allow whatever we’re doing to finish, which in turn allows the ASTA to resume, and then it becomes worthwhile to try to call into the ASTA again.</p>\n  <p>This would be the issue for conventional COM calls into the ASTA, but we are using <code>IContextCallback</code>, and that lets us control whether or not to honor ASTA reentrancy roadblocks.</p>\n  <blockquote class=\"q\">\n   <p>If riid is set to IID_ICallbackWithNoReentrancyToApplicationSTA, the function does not reenter an ASTA arbitrarily.</p>\n  </blockquote>\n  <p>We are not passing that special value, so our call to <code>Context­Callback</code> is allowed to reenter an ASTA. That removes one possible source of failure.</p>\n  <p>What other reasons could there be for not being able to switch to the destination apartment?</p>\n  <p>The most likely reason is that the destination apartment no longer exists, in which case there is no recovery. Depending on how the object was managed by its creating thread, it might have been forcibly destroyed at thread termination¹, or it may simply have been leaked. We don’t know. At any rate, there’s no way to release it now.</p>\n  <p>The other case is that the destination apartment is not reachable due to a low-memory condition. We discussed earlier how <a title=\"What does it mean when my cross-thread COM call fails with RPC_E_SYS_CALL_FAILED?\" href=\"https://devblogs.microsoft.com/oldnewthing/20230216-00/?p=107836\"> the most common reason is a destination thread that has stopped responding to messages</a>. I guess you could wait and try again later, but in practice if a thread has stopped responding for so long that its inbound message queue is full, the odds that it will magically start responding soon are pretty low.</p>\n  <p>All of the failures are effectively unrecoverable. But some of them are non-fatal, such as the <code>Co­Disconnect­Object</code> discussed in the footnote. Unfortunately, we can’t tell what case we are in. The <code>Context­Callback</code> returns <code>RPC_E_DISCONNECTED</code> to say that the destination apartment no longer exists, but we don’t know how that apartment cleaned up its orphaned objects.</p>\n  <p>The C++/CX implementation of lazy-created agile delegates ignores errors that occur trying to release the original pointer. So we’ll do the same.</p>\n  <p>But wait, we can do better. Next time.</p>\n  <p>¹ This is often combined with a <code>Co­Disconnect­Object</code> to tell proxies to fail all calls with <code>RPC_E_DISCONNECTED</code>, so that there are no external references to destroyed objects.</p>\n </body>\n</html>",
+  "aiSummary": "本文解释了 IContextCallback::ContextCallback 失败通常为不可恢复的原因，以及为何敏捷委托的释放操作必须保持无错误",
+  "oneSentenceSummary": "本文解释了 IContextCallback::ContextCallback 失败通常为不可恢复的原因，以及为何敏捷委托的释放操作必须保持无错误",
+  "summary": "在敏捷委托系列的第十篇中，作者分析了 IContextCallback::ContextCallback 失败的后果。失败意味着 COM 无法切换到目标公寓，从而阻止了原始指针的安全释放。文章讨论了 ASTA 重入约束，指出由于未传递 IID_ICallbackWithNoReentrancyToApplicationSTA，回调允许重入 ASTA。最常见的不可恢复原因是目标公寓已销毁或线程低内存/无响应，这两种情况均无可靠恢复路径。当前 C++/CX 实现会忽略释放过程中的错误，作者暗示未来可能通过改进的方式更优雅地处理此类失败。",
+  "mainPoints": [
+    {
+      "point": "ContextCallback 失败表明 COM 无法切换上下文",
+      "explanation": "当调用失败时，运行时无法转移到目标公寓，因此无法安全释放原始指针"
+    },
+    {
+      "point": "ASTA 重入并非此处的主要失败原因",
+      "explanation": "由于代码未传递 IID_ICallbackWithNoReentrancyToApplicationSTA，回调允许重入 ASTA，从而消除了该特定阻碍"
+    },
+    {
+      "point": "已销毁或无响应的目标公寓实质上不可恢复",
+      "explanation": "如果目标公寓不再存在或其线程卡住/内存不足，则无实际可行的重试或恢复释放操作的方法"
+    },
+    {
+      "point": "当前 C++/CX 实现忽略释放错误",
+      "explanation": "现有的延迟创建敏捷委托会丢弃原始指针释放过程中的任何错误，模仿了旧实现的行为"
+    },
+    {
+      "point": "未来可能改进错误处理机制",
+      "explanation": "作者提议可能存在更好的方法，但具体细节将在系列后续部分中提供"
+    }
+  ],
+  "keyQuotes": [
+    "如果失败，则意味着 COM 无法切换到目标上下文",
+    "如果无法切换到目标上下文，则无法释放指针",
+    "我们未传递该特殊值，因此允许我们的 ContextCallback 调用重入 ASTA",
+    "最可能的原因是目标公寓不再存在，此时无恢复方法",
+    "所有失败实质上均不可恢复"
+  ],
+  "tags": [
+    "C++/WinRT",
+    "COM",
+    "线程处理",
+    "Windows Runtime",
+    "敏捷委托"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 80,
+  "wordCount": 546,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785564376000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-01 14:06:16"
+}

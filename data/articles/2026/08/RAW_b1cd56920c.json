@@ -1,0 +1,51 @@
+{
+  "id": "RAW_b1cd56920c",
+  "title": "数学与理论计算机科学的十大进展",
+  "url": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
+  "date": "2026-08-02 04:34:49",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">1st August 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Aug/1/ten-advances-in-mathematics/\">\n    <p><strong><a href=\"https://openai.com/index/ten-advances-in-mathematics/\">Ten advances in mathematics and theoretical computer science</a></strong> (<a href=\"https://news.ycombinator.com/item?id=49132058\" title=\"Hacker News\">via</a>) A few days ago it was Anthropic <a href=\"https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/\">discovering cryptographic weaknesses with Claude</a> using Mythos Preview, spending $100,000 on tokens and with prompts that included \"again we are not looking for low hanging fruit, we want proper research to find genuinly hard findings.\"</p>\n    <p>Now it's OpenAI's turn to flex. They set \"an internal version of Astra, our next major model\" on finding solutions to ten mathematical problems that \"have seen no progress on the main result for at least a decade\". They claim to have spent less than $2,000 at GPT-5.6 Sol token prices on each one.</p>\n    <p>(No news on how many problems they spent $2,000 on <em>without</em> reaching a solution though.)</p>\n    <p>The <a href=\"https://github.com/openai/ten-proofs\">openai/ten-proofs</a> repository has Lean 4 formalizations of their results, and there's also <a href=\"https://cdn.openai.com/pdf/ten-proofs-oai.pdf\">a paper</a> describing the solutions and an additional <a href=\"https://cdn.openai.com/pdf/reasoning-walkthroughs.pdf\">LLM-generated PDF</a> where the model \"reconstructs how the proof came together\" based on the unpublished reasoning traces.</p>\n    <p>That's a decent level of transparency, but I want to see the prompts they used!</p>\n    <p>A lot of mathematicians online are experiencing a collective burst of <a href=\"https://simonwillison.net/2026/Feb/15/deep-blue/\">Deep Blue</a>.</p>\n    <p>OpenAI's results reminds me of what Terence Tao described as \"big mathematics\" in <a href=\"https://spectrum.ieee.org/ai-in-mathematics\">IEEE Spectrum in June</a>:</p>\n    <blockquote>\n     <p>Unlike some of his peers, Tao is neither dismissive of AI nor fearful. Instead, he sees it as the catalyst for a fundamental shift in the discipline—a transition toward what he calls “big mathematics.” He envisions a future of large-scale, decentralized collaborations between humans and machines, where complex mathematical tasks can be diced and sliced, with humans claiming the creative parts and AI doing the lion’s share of the technical grunt work.</p>\n    </blockquote>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9574/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 的 Astra 模型以最低成本解决了十个长期未解的数学问题，通过人机协作展示了 AI 在高级研究领域的潜力。",
+  "oneSentenceSummary": "OpenAI 的 Astra 模型以最低成本解决了十个长期未解的数学问题，通过人机协作展示了 AI 在高级研究领域的潜力。",
+  "summary": "本文讨论 OpenAI 最近的突破：其内部 Astra 模型以每问题低于 2000 美元的成本（按 GPT-5.6 Sol 代价计算）解决了至少十年未有进展的十个数学难题。研究结果通过 GitHub 仓库公开，包含 Lean 4 形式化证明及相关论文，包括基于未公开追踪生成的语言模型推理演示。文章将这些进展与陶哲轩提出的'大数学'概念进行对比，展望未来分散式人机协作模式——AI 负责技术性工作，人类专注创造性部分。同时指出 OpenAI 方法的透明性，但对实际使用的提示设计表示兴趣。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 的 Astra 模型以最低成本解决了十个长期未解的数学问题",
+      "explanation": "每个问题的解决成本低于 2000 美元（按 GPT-5.6 Sol 代价计算），展示了 AI 在数学研究中的高效应用潜力。"
+    },
+    {
+      "point": "研究结果通过代码仓库和论文实现高度透明发布",
+      "explanation": "OpenAI 在 GitHub 公开了 Lean 4 形式化证明，并发布了详细论文，包含基于未公开追踪生成的语言模型推理演示。"
+    },
+    {
+      "point": "进展验证了陶哲轩'大数学'的协作愿景",
+      "explanation": "陶哲轩提出的'大数学'概念主张将复杂数学任务分配给人机协作体——人类负责创意部分，AI 负责技术实现，OpenAI 的成果正是这一模式的体现。"
+    }
+  ],
+  "keyQuotes": [
+    "与同行部分人不同，陶哲轩并不轻视 AI 也无畏惧。他将 AI 视为推动学科根本变革的催化剂——即向他所谓'大数学'的转型。",
+    "他们声称每个问题的成本低于 2000 美元（按 GPT-5.6 Sol 代价计算）"
+  ],
+  "tags": [
+    "数学研究",
+    "数学中的AI",
+    "理论计算机科学",
+    "大语言模型",
+    "人机协作"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 281,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785616489000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-02 04:34:49"
+}

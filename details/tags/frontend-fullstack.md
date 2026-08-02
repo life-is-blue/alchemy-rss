@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-02 06:45:44 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-02 09:47:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -717,6 +717,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [React-中文周刊-#287---Octane：编译式的-React-编程模型，TanStack-弃用-RSC](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247548973&idx=1&sn=89e49d75f675b2099c662fdb12657c5c)
+
+2026-08-01 16:49:00 | 标签: React, 前端开发, 技术周刊, 框架比较, 性能优化
+
+> 本期周刊涵盖多个前端技术进展：1) Octane 框架采用编译式 React 模型无需 VDOM；2) TanStack 基于性能数据完全放弃 RSC 并开源轻量级 Markdown 解析器；3) SPA 内存泄漏检测方法与工具；4) 2026 年中零运行时 CSS-in-JS 技术现状；5) 现代 Storybook 交互测试教程。内容形式为技术新闻汇总，包含多个外链指向详细技术文章，提供前端开发者社区最新进展的快照。
+
+
+
+### [React-Compiler-迁移-Rust-后更快了，但开发者担心“没人看得懂代码”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289862&idx=4&sn=a4d7082f48f9107860234f82c75cb574)
+
+2026-08-01 10:15:00 | 标签: React, Rust, 编译器优化, 工具链集成, 开发者社区
+
+> 本文介绍 Meta 将 React Compiler 从 TypeScript 移植至 Rust，提升构建速度并加强与 Rust 工具链的集成。Rust 版本在性能上显著优化，测试显示运行速度提升 3 倍，部分场景达 10 倍。该版本已合并到主仓库，并计划在 Next.js 16.3 中提供实验性支持。技术讨论中，开发者对 LLM 在移植过程中的使用提出担忧，认为可能导致代码可维护性问题和潜在的技术债务。此外，文章提到 Rust 在前端工具领域的扩张趋势，以及其他工具如 SWC、Oxc 和 Rspack 的 Rust 集成情况。
 
 
 
@@ -1692,13 +1708,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1848,13 +1864,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3348,13 +3364,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5058,13 +5074,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
