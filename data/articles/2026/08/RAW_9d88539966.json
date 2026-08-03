@@ -1,0 +1,44 @@
+{
+  "id": "RAW_9d88539966",
+  "title": "今天起， AGI Bar 提供不限量免费 token",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247519323&idx=1&sn=f223fae87d5be8d1b3f1c8c938edc8a7",
+  "date": "2026-08-02 20:54:49",
+  "author": "赛博禅心",
+  "siteName": "赛博禅心",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img src=\"https://media.bestblogs.dev/20260802214345_90bfba3.jpeg\" style=\"font-size: 1rem;\"></p>\n  <p><img src=\"https://media.bestblogs.dev/20260802214345_d801306.png\"></p>\n </body>\n</html>",
+  "aiSummary": "本文宣布 AGI Bar 服务自今日起提供不限量免费 token，支持开发者调用大模型 API，无需支付费用。",
+  "oneSentenceSummary": "本文宣布 AGI Bar 服务自今日起提供不限量免费 token，支持开发者调用大模型 API，无需支付费用。",
+  "summary": "文章简要介绍了 AGI Bar 的免费 token 政策变更，说明该服务允许开发者无限调用大模型 API，无需费用。内容主要包含服务功能的基础描述及界面截图，但未提供技术细节、使用案例或深入分析。文章适合快速获取服务信息，但深度有限。",
+  "mainPoints": [
+    {
+      "point": "AGI Bar 提供不限量免费 token。",
+      "explanation": "开发者可无限调用大模型 API，无需支付费用，适合测试与开发使用。"
+    },
+    {
+      "point": "服务支持多种大模型 API 调用。",
+      "explanation": "文章提及支持多个主流大模型，但未详细说明具体模型或调用限制。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "AGI",
+    "AI 服务",
+    "大模型 API",
+    "开发者工具",
+    "免费服务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 0,
+  "score": 80,
+  "wordCount": 0,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e02139",
+  "sourceName": "赛博禅心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1785675289000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-02 20:54:49"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b7d554ae92",
+  "title": "你的 AI 团队由专家组成",
+  "url": "https://every.to/context-window/your-ai-is-a-team-of-specialists",
+  "date": "2026-08-02 18:11:43",
+  "author": "Every Staff",
+  "siteName": "Every",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hello, and happy Sunday. Our <strong><u>Builder Pack</u></strong> for <strong>All Access</strong> members includes two new tools: Paper Pro, a design canvas that turns your work into code, and Mobbin Team, a library of more than 600,000 screens from shipped products. Both plug into Codex, Claude Code, and Cursor, and bring the Builder Pack to more than $9,000 in value. Last Friday we ran our <u>first office hours</u> for All Access subscribers, where we showed how we use the pack inside Every and worked through member projects live. This week paid subscribers also unlocked <u>14 voice-to-text workflows</u> from the Every team, a <u>Codex-to-Codex handoff</u>, and a <u>skill audit</u> from <strong><u>Kieran Klaassen</u></strong>.—<em><u>Kate Lee</u></em></p>\n  <p><em>Was this newsletter forwarded to you? <u>Sign up</u> to get it in your inbox</em>.</p>\n  <h2 id=\"knowledge-base\">Knowledge base</h2>\n  <p><strong><u>“Inside OpenAI’s Race to Reinvent Software Development for the Agent Era”</u></strong><em> by <u>Laura Entis</u></em>: Laura spoke with six members of OpenAI’s infrastructure team—including its vice president of applied infrastructure engineering—about three converging pressures: an overwhelming surge of AI-generated code, software-development infrastructure pushed toward its limits, and a fundamental redesign of how code gets reviewed and kept reliable. Read this to see what every software organization is about to face before it does.</p>\n  <p>🔏 <strong><u>“Build Faster With Voice”</u></strong><em> by <u>Naveen Naidu</u> and <u>Laura Entis</u>/<u>Guides</u></em>: Our definitive guide to working by voice. Paired with an agent, speech removes the translation step, so you can act on a customer call or a half-formed idea without writing it up first. <strong><u>Monologue</u></strong> general manager <strong><u>Naveen Naidu</u></strong> walks through the five-step loop every voice workflow follows. Paid subscribers get a library of 14 workflows from the Every team—including head of growth <strong><u>Austin Tedesco</u></strong> turning an all-hands into a recap, Kieran polishing an app and storing voice notes as living memory, and <strong><u>Daniel Rodrigues</u></strong> building custom design tools out loud.</p>\n  <p>🔏 <strong><u>“Fable as CEO”</u></strong><em> by <u>Laura Entis</u>/<u>Context Window</u></em>: Our engineers have started describing Anthropic’s models as a company org chart—<u>Fable</u> as CEO, <u>Opus 5</u> a senior engineer, <u>Sonnet 5</u> a junior—as labs shift from expensive generalist models to a “mixture-of-models” structure where specialized models collaborate inside one harness, per head of platform <strong><u>Willie Williams</u></strong>. Also inside: the rise of “Claudish,” “the daily driver,” the running list of models the team is using this week; and a “steal this workflow” on how head of operations <strong>Arielle Shipper</strong> and Austin had their Codex agents hand off work to each other.</p>\n  <p class=\"\">🔏 <strong><u>“Taming Opus 5”</u></strong><em> by <u>Katie Parrott</u>/<u>Context Window</u></em>: After the <u>Opus 5 Vibe Check</u>, the rest of the Every team spent the weekend with the model—its unruliness held up, but they found a way to tame it. Also inside: a “steal this workflow” on how Flora turns one reference image into a reusable creative system; a second workflow, “Is it the skill or the model?,” for auditing whether instructions built for an older model are hurting the new one; and why one-shot AI video-game demos flood social feeds.</p>\n </body>\n</html>",
+  "aiSummary": "本通讯整理了 Every 关于 AI 辅助软件开发的最新文章，涵盖 OpenAI 为代理时代进行的基础设施大改造、语音转文本工作流程，以及专家模型像组织架构一样协作的\"混合模型\"新范式。",
+  "oneSentenceSummary": "本通讯整理了 Every 关于 AI 辅助软件开发的最新文章，涵盖 OpenAI 为代理时代进行的基础设施大改造、语音转文本工作流程，以及专家模型像组织架构一样协作的\"混合模型\"新范式。",
+  "summary": "这是 Every 为付费订阅用户发布的周刊，整理了四篇最新文章。首篇文章介绍了 OpenAI 基础设施团队六名成员，他们讨论了三个趋同的挑战：激增的 AI 生成代码、基础设施的极限被推动以及代码评审的根本性重构。第二篇是关于语音转文本工作流的指南，认为将语音与代理结合可以消除思维到行动的转换步骤，并包含 14 个实际团队工作流程示例。第三篇引入了\"混合模型\"框架，每日工程师将 Anthropic 的模型阵列比作组织架构：Fable 担任 CEO，Opus 5 担任高级工程师，Sonnet 5 担任初级工程师，反映了从昂贵的通用型模型向专用模型在统一框架内协作的转变。最后一篇文章涵盖了团队周末驯服 Opus 5 的实验、审计旧指令是否损害新模型性能的工作流程，以及 AI 视频游戏演示为何在社交媒体上广泛传播。通讯还推广了面向全访问会员的 Builder Pack。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 正在为代理驱动的时代重新设计软件基础设施",
+      "explanation": "六名基础设施团队成员描述了三个趋同的压力：激增的 AI 生成代码、基础设施达到极限以及代码评审和可靠性保障的根本性重新思考。"
+    },
+    {
+      "point": "语音与代理结合消除了思维到行动的转换步骤",
+      "explanation": "语音转文本工作流允许用户直接处理客户电话或半成熟的想法，无需先进行书面记录，每日分享了 14 个具体的团队工作流程示例。"
+    },
+    {
+      "point": "实验室正在从昂贵的通用型模型转向混合模型结构",
+      "explanation": "Every 工程师将 Anthropic 的模型阵列描述为组织架构：Fable 担任 CEO，Opus 5 担任高级工程师，Sonnet 5 担任初级工程师，专用模型在统一框架内协作而非依赖单一巨型模型。"
+    },
+    {
+      "point": "旧模型的指令可能暗中损害新模型的性能",
+      "explanation": "\"技能审计\"工作流帮助确定遗留的提示和指令是否降低了当前模型的性能，这是模型快速迭代的实际问题。"
+    }
+  ],
+  "keyQuotes": [
+    "配合代理，语音可以消除中间的转换步骤，因此你可以直接处理客户电话或半成熟的想法，无需先进行书面记录。",
+    "我们的工程师开始将 Anthropic 的模型描述为公司组织架构：Fable 担任 CEO，Opus 5 担任高级工程师，Sonnet 5 担任初级工程师。"
+  ],
+  "tags": [
+    "AI编程",
+    "AI代理",
+    "LLM",
+    "语音转文本",
+    "混合模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 485,
+  "domain": "every.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_b42603f1",
+  "sourceName": "Every",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785665503000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-02 18:11:43"
+}

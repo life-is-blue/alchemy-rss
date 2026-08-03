@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-03 06:46:31 | [返回首页](/README.md)
+**更新时间**: 2026-08-03 09:50:10 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14301)
+- [AI & 大模型](#ai-llm) (14333)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (910)
-- [DevOps](#devops) (683)
+- [前端与全栈](#frontend-fullstack) (911)
+- [DevOps](#devops) (684)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6449)
+- [其他](#other) (6456)
 
 
 ---
@@ -43,7 +43,7 @@
 - [模型路由看似简单，实则不然。](https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt) - AI 精选
 - [从构建-Shippy-中学到的智能体构建经验](https://huggingface.co/blog/allenai/shippy-tech-blog) - AI 精选
 
-- [查看全部 14301 篇...](/details/tags/ai-llm.md)
+- [查看全部 14333 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 910 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 911 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 683 篇...](/details/tags/devops.md)
+- [查看全部 684 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 
-- [查看全部 6449 篇...](/details/tags/other.md)
+- [查看全部 6456 篇...](/details/tags/other.md)
 
 

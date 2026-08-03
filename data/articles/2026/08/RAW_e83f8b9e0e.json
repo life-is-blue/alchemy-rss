@@ -1,0 +1,51 @@
+{
+  "id": "RAW_e83f8b9e0e",
+  "title": "GitHub - AML-memory/agent-memory-leaderboard",
+  "url": "https://github.com/AML-memory/agent-memory-leaderboard",
+  "date": "2026-08-02 23:18:00",
+  "author": "IreneAI",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h1 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Public Evaluation Code</h1>\n  </div>\n  <p dir=\"auto\">This directory publishes the answer-generation and evaluation contracts used by the Agent Memory Leaderboard for its public datasets.</p>\n  <p dir=\"auto\">The scripts require Python 3.10 or newer and the dependency listed in <code>requirements.txt</code>. Service URLs, model names, and credentials must be supplied through CLI arguments or environment variables; no credential is bundled here.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Provenance and integrity</h2>\n  </div>\n  <p dir=\"auto\">Internal shorthand labels are normalized to descriptive public names; answer construction and scoring behavior are unchanged.</p>\n  <p dir=\"auto\">The disclosed runtime behavior covers Add/Search/Answer concurrency, timeouts, retries, key rotation, checkpoints, and aggregation. Internal deployment code, service addresses, credentials, databases, datasets, and run artifacts are intentionally outside this public evaluation release.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Disclosed production parameters</h2>\n  </div>\n  <ul dir=\"auto\">\n   <li>Full task timeout: 72 hours; retrieval <code>top_k</code>: 100.</li>\n   <li>Add: 64 global workers by default, 48-record per-dataset hard cap, 20-message chunks, 1,200-second HTTP timeout, and <code>global-largest-next-record-v1</code> scheduling using estimated chunk counts.</li>\n   <li>Search: 32 workers, 1,200-second HTTP timeout, six request attempts, up to three failed-record requeues, and adaptive concurrency reduction after five retryable 5xx responses.</li>\n   <li>Answer: 32 workers, <code>gpt-4o-mini</code>, temperature 0, 180-second HTTP timeout, and six attempts. The configured checkpoint value is 128 tokens, but the outbound provider request intentionally does <strong>not</strong> send <code>max_tokens</code>.</li>\n   <li>Judge: a configured evaluator, 360-second HTTP timeout, and a global cap of 15 requests. Worker phase limits are 8 for binary evaluation, 15 for rubric evaluation, and 16 for BEAM event alignment; the global cap means effective Judge request concurrency never exceeds 15.</li>\n   <li>Judge failures: HTTP 429, timeout, and transport failures rotate the key. Pool-wide 429 exhaustion uses a 30-second cooldown and at most three cooldown rounds. Qwen JSON requests set <code>enable_thinking=false</code>.</li>\n   <li>Scores are computed on <code>[0, 1]</code> internally and published on <code>[0, 100]</code>.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "该 GitHub 仓库为 Agent Memory Leaderboard 提供评估契约与脚本，详细说明了基于 LLM 的智能体的生产参数、服务配置与评分机制。",
+  "oneSentenceSummary": "该 GitHub 仓库为 Agent Memory Leaderboard 提供评估契约与脚本，详细说明了基于 LLM 的智能体的生产参数、服务配置与评分机制。",
+  "summary": "本文记录了 Agent Memory Leaderboard 的公开评估框架，包括所需依赖（Python 3.10+）、服务配置参数（超时、并发、重试逻辑）以及评分方法。文中概述了 Add/Search/Answer/Judge 操作的整体架构，并提供了 worker 数量、令牌限制和错误处理等具体技术细节。虽然未涉及内部部署细节，但披露了关键实现决策，例如使用 \"gpt-4o-mini\" 进行回答、自适应并发控制，以及将评分从 [0，1] 归一化到 [0，100]。",
+  "mainPoints": [
+    {
+      "point": "该框架使用 Python 3.10+，并采用显式依赖管理。",
+      "explanation": "要求 Python 3.10 或更高版本，并在 requirements.txt 中列出依赖项，凭据通过 CLI/环境变量处理。"
+    },
+    {
+      "point": "生产参数包括详细的并发与超时配置。",
+      "explanation": "为 Add 操作指定 64 个 worker，为 Search/Answer 指定 32 个，HTTP 超时最长 1200 秒，并具备自适应并发缩减能力。"
+    },
+    {
+      "point": "评分采用归一化的 [0，100] 指标，并具备稳健的错误处理。",
+      "explanation": "内部评分范围为 [0，1]，对外发布为 [0，100]；针对 HTTP 429/5xx 错误提供重试机制，并包含密钥轮换策略。"
+    }
+  ],
+  "keyQuotes": [
+    "评分在内部按 [0， 1] 计算，对外发布为 [0， 100]。",
+    "配置的检查点值为 128 个令牌，但对外的提供商请求有意不发送 max_tokens。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 智能体",
+    "评估框架",
+    "代码仓库",
+    "生产参数"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 274,
+  "domain": "github.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785683880000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-02 23:18:00"
+}

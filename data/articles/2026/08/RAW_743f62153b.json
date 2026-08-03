@@ -1,0 +1,51 @@
+{
+  "id": "RAW_743f62153b",
+  "title": "DeepSeek 这次，真的把大模型价格打穿了。  V4 Flash 正式版刚发布，性能暴涨，价格却几乎趴在地板上。我看完只想说一句，梁圣牛逼！  先...",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247560435&idx=1&sn=a4b27b526210b0cae3ec61c771c29844",
+  "date": "2026-08-02 17:22:00",
+  "author": "小林coding",
+  "siteName": "小林coding",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>小林coding</span> <span>2026-08-02 17:22</span> <span style=\"display: inline-block;\">广东</span></p>\n  <p>DeepSeek 这次，真的把大模型价格打穿了。</p>\n  <p>V4 Flash 正式版刚发布，性能暴涨，价格却几乎趴在地板上。我看完只想说一句，梁圣牛逼！</p>\n  <p>先说正式版和预览版有什么不同？</p>\n  <p>你以为 DeepSeek 又把模型做大了？其实没有。架构和规模都没变，主要靠后训练强化 Agent 和编程能力。同时还原生支持 Responses API，能直接接入 Codex，模型权重也用 MIT 协议开放了。</p>\n  <p>那编程能力涨了多少？</p>\n  <p>在 Terminal-Bench 2.1 上，正式版相比预览版提升约 34%。更夸张的是 DeepSWE，成绩提升超过 600%，这次编程和 Agent 能力的提升幅度非常大。</p>\n  <p>那放到整个行业里，V4 Flash 正式版是什么水平？</p>\n  <p>在 Artificial Analysis 的综合智能榜上，V4 Flash 正式版拿到 50 分，GLM-5.2 是 51 分，Kimi K3 是 57 分，榜首 Fable 5 是 60 分。也就是说，它跟 GLM-5.2 几乎打平，距离 Kimi K3 和 Fable 5 也只差 7 分和 10 分，妥妥进入了一线模型区间。</p>\n  <p>再看编程能力，双方公布的 Terminal-Bench 2.1 成绩里，Fable 5 是 84.3，V4 Flash 是 82.7，只差 1.6 分。</p>\n  <p>看到这里，你可能觉得性能提升这么大，价格怎么也得跟着涨一波吧？</p>\n  <p>结果 DeepSeek 一分钱没涨，正式版直接沿用预览版的价格。</p>\n  <p>讲真，我看到这里才是真的卧槽。性能暴涨，价格不动，这才是 V4 Flash 正式版最狠的地方。</p>\n  <p>哪怕 GPT-5.6 Luna 刚刚降价 80%，完成同一个任务，V4 Flash 的成本依然低约 60%。</p>\n  <p>跟 Fable 5 比更夸张。V4 Flash 的输入价格低约 98.6%，输出价格低约 99.4%。性能确实还差一截，但价格差了接近两个数量级，这就很离谱了。</p>\n  <p>为什么能这么便宜？一个关键是缓存。DeepSeek 给重复输入打了约 98% 的折扣，而 Agent 会反复读取系统提示词、工具定义和历史上下文，它把最烧钱的重复部分几乎抹掉了。</p>\n  <p>这就形成了一条很残酷的「斩杀线」。</p>\n  <p>性能比 V4 Flash 弱，价格还比它贵的模型，可以直接出局。性能跟它差不多，却贵出几倍的模型，也得先回答一个问题，你凭什么？</p>\n  <p>更关键的是，这还只是 V4 Flash。</p>\n  <p>别忘了，V4 Pro 正式版还没发布。如果下一波 Pro 的性能也按预期落地，这条斩杀线还会往上再推一大截，可以说非常期待了[旺柴]</p>\n  <p>对了，最后贴一下 DeepSeek V4 Flash 正式版接入 codex 的官方教程：https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/codex</p>\n  <p>可以说这是用 codex 性价比最香的模型了。</p>\n </body>\n</html>",
+  "aiSummary": "本文分析 DeepSeek V4 Flash 正式版在性能显著提升（Terminal-Bench 2.1 提升 34%，DeepSWE 提升 600%）的情况下保持低价策略，形成强大的性价比优势，尤其通过缓存机制大幅降低重复输入成本，构成对同类模型的价格杀手效应。",
+  "oneSentenceSummary": "本文分析 DeepSeek V4 Flash 正式版在性能显著提升（Terminal-Bench 2.1 提升 34%，DeepSWE 提升 600%）的情况下保持低价策略，形成强大的性价比优势，尤其通过缓存机制大幅降低重复输入成本，构成对同类模型的价格杀手效应。",
+  "summary": "文章详细解析 DeepSeek V4 Flash 正式版发布带来的行业冲击。性能方面，尽管模型规模未变，但通过后训练优化，Terminal-Bench 2.1 分数提升 34%，DeepSWE 提升 600%，在 Artificial Analysis 综合智能榜上达 50 分，接近 GLM-5.2（51 分），距离 Kimi K3（57 分）和 Fable 5（60 分）仅 7 和 10 分，进入一线模型区间。编程能力测试中，Terminal-Bench 2.1 得分 82.7，仅比 Fable 5（84.3）低 1.6 分。价格方面，DeepSeek 保持与预览版相同的低价策略，相比 GPT-5.6 Luna（降价 80% 后）仍低 60%，相比 Fable 5 输入价格低 98.6%、输出价格低 99.4%。分析认为，通过 98% 的重复输入折扣机制，DeepSeek 构建了强大的性价比优势，形成对行业的「斩杀线」，弱性能价高模型面临生存挑战。文章结尾提及 V4 Pro 未来发布可能进一步扩大优势，并提供了接入 Codex 的官方教程。",
+  "mainPoints": [
+    {
+      "point": "V4 Flash 正式版性能显著提升但价格不涨",
+      "explanation": "Terminal-Bench 2.1 提升 34%，DeepSWE 提升 600%，在综合智能榜进入一线模型区间，但价格与预览版相同，形成强性价比优势。"
+    },
+    {
+      "point": "通过缓存机制大幅降低重复输入成本",
+      "explanation": "DeepSeek 对重复输入提供约 98% 折扣，尤其在 Agent 场景中系统提示词、工具定义和历史上下文重复读取时，显著降低成本，构成价格杀手效应。"
+    },
+    {
+      "point": "形成行业性价比新标准",
+      "explanation": "相比 GPT-5.6 Luna（降价后）仍低 60%，相比 Fable 5 输入输出价格低 98.6% 和 99.4%，形成对同类模型的强劲竞争压力。"
+    }
+  ],
+  "keyQuotes": [
+    "性能提升这么大，价格却几乎趴在地板上。",
+    "这就形成了一条很残酷的「斩杀线」。"
+  ],
+  "tags": [
+    "大语言模型",
+    "AI 编程",
+    "模型性能",
+    "DeepSeek",
+    "性价比"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 902,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ae55d008",
+  "sourceName": "小林coding",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1785662520000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-02 17:22:00"
+}
