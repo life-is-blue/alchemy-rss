@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-03 09:50:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-03 13:43:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -13478,201 +13478,151 @@
 
 ### [AI-不只是面临计算资源短缺，更存在执行问题](https://dev.to/jaguarkyng/ai-doesnt-just-have-a-compute-shortage-it-has-an-execution-problem-gb0)
 
-2026-08-03 06:32:17 | 标签: AI 基础设施, GPU 利용率, 云计算, 资源优化, 执行效率
-
-> 本文挑战了 AI 计算资源短缺的主流叙事，通过揭示现有基础设施的低效问题进行论证。文章引用数据显示，在未优化的 Kubernetes 集群中平均 GPU 利用率仅为 5%，并归纳出四大资源浪费领域：过度容量配置、工作负载配置不当、任务失败及工具链碎片化带来的运营开销。作者认为，单纯增加 GPU 数量无法解决这些问题，行业需要更优的执行智能以实现工作负载与计算资源的精准匹配、提升可观测性并减少跨厂商的碎片化。提出通过构建统一抽象层来处理工作负载提交、资源匹配、监控及故障恢复，从而使异构计算资源如可靠基础设施般运作。
+2026-08-03 06:32:17
 
 
 
 ### [AI-工作负载执行层正成为独立的基础设施类别](https://dev.to/jaguarkyng/the-ai-workload-execution-layer-is-becoming-its-own-infrastructure-category-21ic)
 
-2026-08-03 06:13:38 | 标签: AI 执行层, 基础设施即服务, AI 工作负载, 云计算, 分布式系统
-
-> 本文探讨了 AI 基础设施的演进，识别出栈中的一项空白：需要一个中立的执行层来管理从意图到完成的工作负载。它概述了一种三层模型（应用/智能体、计算供应、执行），并详细说明了执行层的职责，包括工作负载验证、放置、生命周期管理、恢复和可观察性。作者讨论了为什么该层由于计算供应的碎片化、工作负载需求的多样性、自主智能体作为新的消费者以及可靠性需求而变得至关重要。现有解决方案如 AWS Batch、RunPod 和 Modal 被指出为部分解决方案，而 Jungle Grid 被定位为该新兴领域的专用参与者。
+2026-08-03 06:13:38
 
 
 
 ### [一根假胡须暴露了监护您孩子的-AI-系统的致命漏洞](https://dev.to/caracomp/a-fake-moustache-just-broke-the-ai-thats-guarding-your-kids-online-417e)
 
-2026-08-03 05:55:47 | 标签: 计算机视觉, 面部识别, 生物识别, AI伦理, 鲁棒性测试
-
-> 文章指出许多面部分析 AI 系统存在重大缺陷：模型过度依赖非本质特征（如面部毛发、口红）而非不变的面部几何结构。这种设计使系统容易被简单视觉改造欺骗，给执法和调查应用带来风险。作者建议通过面部关键点之间的欧几里得距离测量提升模型可靠性，并强调需对对抗噪声、视觉改造和压缩伪影进行鲁棒性测试。文章还呼吁推广适合法庭使用的专业级工具，降低企业级定价门槛，让独立调查人员也能负担得起。
+2026-08-03 05:55:47
 
 
 
 ### [GitHub---AML-memory/agent-memory-leaderboard](https://github.com/AML-memory/agent-memory-leaderboard)
 
-2026-08-02 23:18:00 | 标签: LLM, AI 智能体, 评估框架, 代码仓库, 生产参数
-
-> 本文记录了 Agent Memory Leaderboard 的公开评估框架，包括所需依赖（Python 3.10+）、服务配置参数（超时、并发、重试逻辑）以及评分方法。文中概述了 Add/Search/Answer/Judge 操作的整体架构，并提供了 worker 数量、令牌限制和错误处理等具体技术细节。虽然未涉及内部部署细节，但披露了关键实现决策，例如使用 "gpt-4o-mini" 进行回答、自适应并发控制，以及将评分从 [0，1] 归一化到 [0，100]。
+2026-08-02 23:18:00
 
 
 
 ### [吴恩达最新开源-AI-同事，在-Github-爆火了！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247724896&idx=1&sn=527227ca49bfad6c7328ae73f234600d)
 
-2026-08-02 22:38:00 | 标签: AI Agent, 开源项目, 本地AI, MCP协议, 模型集成
-
-> 文章全面分析 OpenWorker 项目，包括其桌面端 AI 代理功能、四层架构（Tauri+React 前端、Python 后端、25+工具集成、多模型支持）、独特权限控制设计（四级风险等级与五种模式）以及开源特性。技术细节涵盖模型路由（aisuite 库）、本地运行特性、跨平台支持（Mac/Windows）及开发者友好特性（源码运行指南、API Key 管理）。与商业产品对比指出其开源、本地优先、模型中立的优势，适合重视数据隐私或需定制化开发的用户。
+2026-08-02 22:38:00
 
 
 
 ### [最新开放模型（#23）：Laguna-S2.1、Inkling-与-Kimi-K3-展示开放模型在帕累托前沿的效用](https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21)
 
-2026-08-02 21:01:40 | 标签: 开放模型, 多模态 MoE, AI 经济, 模型许可, Token 需求
-
-> 大型模型的训练能力正在迅速扩展，这与早前关于行业整合的预测相悖。越来越多的公司投入数亿美元训练强大模型，并将其公开发布，从而产生了对 Token 的旺盛需求。文章重点介绍了几项值得注意的发布：Thinking Machines 的 Inkling（975B 多模态 MoE）、腾讯的 Hy3（295B MoE，采用 Apache 2 许可证）、Poolside 的 Laguna-S-2.1（118B MoE，基于 OpenMDW 许可证）、DeepSeek-V4-Flash（每参数性能领先者）和 Kimi-K3（近期最大的开放模型，采用非商业许可证）。文章还指出中国实验室的持续势头，并讨论了许可...
+2026-08-02 21:01:40
 
 
 
 ### [我用-LangGraph-AI-代理-替换了-15-分钟的预约流程](https://towardsdatascience.com/i-replaced-a-15-minute-booking-process-with-a-langgraph-ai-agent/)
 
-2026-08-02 21:00:00 | 标签: AI 代理, LangGraph, LangChain, LLM 应用, AI 工程
-
-> 作者描述了使用 Python、LangGraph 和 LangChain 构建 AI 代理，以自动化原本需要约 15 分钟来回消息的清洁服务预约流程。该代理从对话中提取服务详情，计算价格，处理客户确认，提出优化的时间槽，并确认预约。文章逐步讲解了代理的架构（BookingDetails 模型、AgentState TypedDict、LangGraph 节点和条件边），给出价格计算节点和路由逻辑的代码片段，并解释如何通过 LangFuse 添加可观测性，包括 API 密钥的设置和示例仪表板截图。它还概述了可能的扩展，如前端集成、生产数据库和日历连接，并提供了开源仓库的链接，供读者实验。整体语气...
+2026-08-02 21:00:00
 
 
 
 ### [今天起，-AGI-Bar-提供不限量免费-token](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247519323&idx=1&sn=f223fae87d5be8d1b3f1c8c938edc8a7)
 
-2026-08-02 20:54:49 | 标签: AGI, AI 服务, 大模型 API, 开发者工具, 免费服务
-
-> 文章简要介绍了 AGI Bar 的免费 token 政策变更，说明该服务允许开发者无限调用大模型 API，无需费用。内容主要包含服务功能的基础描述及界面截图，但未提供技术细节、使用案例或深入分析。文章适合快速获取服务信息，但深度有限。
+2026-08-02 20:54:49
 
 
 
 ### [GitHub---lascauje/callmar：一句提示即可玩的文本冒险游戏](https://github.com/lascauje/callmar)
 
-2026-08-02 18:45:02 | 标签: LLM, AI编程, 提示工程, 文本冒险, 游戏开发
-
-> 本文详细介绍了 Callmar，这是一款由 LLM 驱动的文本冒险游戏，玩家可以在其中创建角色，并在五个不同的区域中探索以收集四件神秘物品。游戏包含基础/特殊攻击、药水系统、可招募的小 Boss 伙伴以及 ASCII 艺术视觉元素。通过环境互动和动态故事讲述强调玩家创造力，包含永久死亡机制和随机事件。该项目提供了完整的 LLM 集成游戏指南，包括战斗解决、伙伴行为和世界记忆系统。
+2026-08-02 18:45:02
 
 
 
 ### [你的-AI-团队由专家组成](https://every.to/context-window/your-ai-is-a-team-of-specialists)
 
-2026-08-02 18:11:43 | 标签: AI编程, AI代理, LLM, 语音转文本, 混合模型
-
-> 这是 Every 为付费订阅用户发布的周刊，整理了四篇最新文章。首篇文章介绍了 OpenAI 基础设施团队六名成员，他们讨论了三个趋同的挑战：激增的 AI 生成代码、基础设施的极限被推动以及代码评审的根本性重构。第二篇是关于语音转文本工作流的指南，认为将语音与代理结合可以消除思维到行动的转换步骤，并包含 14 个实际团队工作流程示例。第三篇引入了"混合模型"框架，每日工程师将 Anthropic 的模型阵列比作组织架构：Fable 担任 CEO，Opus 5 担任高级工程师，Sonnet 5 担任初级工程师，反映了从昂贵的通用型模型向专用模型在统一框架内协作的转变。最后一篇文章涵盖了团队周末驯...
+2026-08-02 18:11:43
 
 
 
 ### [英伟达、斯坦福联合发布新工作：机器人上下文扩至-8K，意味着什么？](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649110402&idx=1&sn=4d441ff412d7af43824b14593b06a81e)
 
-2026-08-02 17:02:00 | 标签: LLM, AI Agent, 机器人, 上下文扩展, 动作预测
-
-> 文章详细介绍了 RoboTTT 框架，通过固定大小的 Fast Weights 参数持续更新机制，实现 8K 时间步的长上下文处理。技术创新包括：1) 使用截断时间反向传播（TBPTT）降低训练显存；2) 序列动作强制（Sequence Action Forcing）提升长序列稳定性；3) DAgger Distillation 学习失败-纠正关系。实验表明，RoboTTT 在三项装配任务中平均完成分数 79%（基线最高 56%），具备区分相似阶段、处理遮挡、执行 One-shot 模仿和恢复外部扰动能力。论文指出其边界包括：固定状态容量导致历史有损压缩、错误恢复依赖训练数据、实验范围有限等。...
+2026-08-02 17:02:00
 
 
 
 ### [RAG-文件问答最容易漏掉的一层：从答案生成到证据链](https://dev.to/gugudata/rag-wen-jian-wen-da-zui-rong-yi-lou-diao-de-ceng-cong-da-an-sheng-cheng-dao-zheng-ju-lian-5c08)
 
-2026-08-02 16:48:08 | 标签: RAG, 文件问答, 企业知识库, 向量检索, 证据链
-
-> 文章从企业级文档问答的实际需求出发，指出仅优化答案生成不足以满足生产环境的可追溯性要求。它系统地阐述了构建可信证据链的六个关键步骤：首先，在文档进入索引前必须完成身份与版本管理，包括稳定 ID、哈希、上传时间、业务归属、解析状态和批准状态等元数据，以防止使用未授权或过期内容；其次，提出结合文档结构、语义边界、上下文窗口和来源坐标的分块策略，避免将跨段落的条款或表格截断，并将 OCR 质量纳入考量；第三，强调检索前必须完成权限过滤，否则敏感信息可能通过上下文泄漏，建议基于组织、项目、角色或文档级授权并在召回前应用过滤；第四，检索后需要进行证据筛选，核对文档权限、版本有效性、片段类型、关键词覆盖和...
+2026-08-02 16:48:08
 
 
 
 ### [使用-Ollama-本地部署-DeepSeek-R1：2026-完整指南](https://dev.to/rajesh1761/deepseek-r1-local-setup-with-ollama-complete-guide-2026-3g4n)
 
-2026-08-02 16:47:10 | 标签: AI, LLM, Ollama, DeepSeek, 本地部署
-
-> 文章提供了 2026 年使用 Ollama 本地运行 DeepSeek R1 的简明指南。它概述了硬件/操作系统前置条件、使用 requirements.txt、.env 和 app.py 的 5 分钟逐步设置流程，解释了该模型的独特性以及 Ollama 作为胶水层的作用，列出了 GPU 驱动不匹配等常见问题，并提供了关于扩展和基准测试的生产建议。指南包含可直接复制粘贴的代码片段，以及一个包含 Spring Boot/Java 示例的完整教程链接。
+2026-08-02 16:47:10
 
 
 
 ### [四种-Agent-开发方法对比：BMAD、Spec-Kit、GSD-和-Skills-怎么选](https://mp.weixin.qq.com/s?__biz=MzU2NzkxNDY0Ng==&mid=2247490669&idx=1&sn=3a78c38836e53eafd94a2e8a2a128a79)
 
-2026-08-02 16:35:00 | 标签: Agent 开发, AI 编程, 软件工程, 上下文工程, 工程方法论
-
-> 文章系统性比较了四种 Agent 开发方法：BMAD 作为多角色敏捷框架强调团队协作与流程规范；Spec Kit 以规格说明为核心构建治理资产；GSD Core 专注上下文工程与长任务管理；Matt Pocock Skills 则提供可组合的工程技能工具包。通过四个维度（是否统一团队流程、最怕哪种失败模式、能接受多少流程资产、希望框架决策权）给出选型建议，强调工具选择应基于团队需求而非热度。文末指出 Agent 开发正从提示词向软件工程操作系统演进。
+2026-08-02 16:35:00
 
 
 
 ### [首笔以推理芯片而非-GPU-为抵押的-AI-贷款](https://dev.to/rishi_kora/the-first-ai-loan-backed-by-inference-chips-not-gpus-3a5m)
 
-2026-08-02 16:32:06 | 标签: AI 基础设施, AI 硬件, 推理, 融资, 初创公司
-
-> 本文报道了据称首笔由推理芯片而非 GPU 支持的 AI 贷款。总部位于波士顿的推理云公司 General Compute 于 2026 年初创立，由 CEO Finn Puklowski 领导，已获得一项结构化债务融资安排，初始额度为 $100 million，最高可扩展至 $400 million。抵押品是 SambaNova SN50 推理 ASIC——专为运行已训练模型而设计的芯片，这标志着 AI 贷款不再依赖 GPU 作为抵押。General Compute 在 5 月仅完成了 $15 million 的种子轮融资，该融资额度是其股权的 20 倍以上。报道指出，性能声明来自该公司自身。...
+2026-08-02 16:32:06
 
 
 
 ### [实测-H3-VS-SD2，Seedance-一家独大的时代结束了](https://mp.weixin.qq.com/s?__biz=MzIwMTU5OTQ1Nw==&mid=2653728602&idx=1&sn=1f94dad5aec28647ec57464449d4924a)
 
-2026-08-02 16:25:00 | 标签: AI 视频生成, MiniMax H3, Seedance 2.0, 视频合成, AI 评测
-
-> 文章由创作者冷逸对 MiniMax H3 进行多维度实测，涵盖真人脱口秀、科幻短片、分钟级视频、连续长镜头、直播预告片、线稿渲染与 UI 演示等场景。测试显示 H3 在人物表演自然度、指令遵循能力、文字稳定性等方面优于 Seedance 2.0，尤其在商业场景（如广告、品牌、电商）中表现更稳定可靠。文章指出 H3 性能接近 SD2.0 80-90%，但价格仅为其四分之一，标志着视频生成领域竞争格局的变化。
+2026-08-02 16:25:00
 
 
 
 ### [2026-年财务自动化最佳-AI-智能体：按真实-ROI-排名](https://dev.to/aarhamforensics_eb3c024eb/best-ai-agents-for-finance-automation-2026-ranked-by-real-roi-11ik)
 
-2026-08-02 16:21:32 | 标签: AI 智能体, 财务自动化, SARA 框架, 多智能体系统, LangGraph
-
-> 本文区分了财务中的 AI 工具与真正的 AI 智能体，提出四层自治模型以及 SARA（感知、分析、解决、审计）测试作为直通处理的最低能力门槛。它解释了断开的 AI 点工具如何产生财务编排债务，量化了隐藏的交接成本，并以 SARA 框架评估六个平台——HighRadius、Workato AI Agent Studio、自定义 LangGraph+CrewAI 堆栈、ChatFin、DataRails 和 BlackLine。只有前三个平台在多个财务领域实现端到端自治，而其他平台仍停留在特定领域或工具级别。文章提供了编排债务的诊断信号、MCP 启用互操作性的指导，以及计算 AI 驱动的财务自动化...
+2026-08-02 16:21:32
 
 
 
 ### [本周值得关注：Kimi-K3-权重发布，MCP-走向无状态，面向智能体的-OfficeCLI](https://dev.to/morinaga/notable-this-week-kimi-k3-weights-land-mcp-goes-stateless-officecli-for-agents-2l3l)
 
-2026-08-02 16:01:39 | 标签: LLM, MCP, AI 智能体, 办公自动化, VS Code
-
-> 本文汇总了五项值得关注的 AI/开发动态：Moonshot AI 发布了拥有 2.8T 参数的 Kimi K3 模型，上下文窗口达 1M token；文章指出其基准测试成绩强劲，但幻觉率较高，且生产环境需要大量 H100 基础设施。Model Context Protocol 2026-07-28 规范在核心层面走向无状态，支持简单负载均衡，并新增多轮往返请求、可缓存工具列表及 SDK。OfficeCLI 是一个 Apache-2.0 的 C# CLI，通过常驻命名管道模式让 AI 智能体获得 .docx、.xlsx、.pptx 文件的读/写/渲染能力，避免重复反序列化，并将文档渲染为 PNG...
+2026-08-02 16:01:39
 
 
 
 ### [本周我注意到的五件事：GPT-5.6、Gemini-Robotics-2-以及-GitHub-堆叠-PR-预览](https://dev.to/morinaga/five-things-i-noticed-this-week-gpt-56-gemini-robotics-2-and-github-stacked-prs-4jdp)
 
-2026-08-02 16:01:35 | 标签: 人工智能, 机器学习, 机器人, GitHub, LLM
-
-> 本文是对 7 月 28‑31 日观察到的五项重要进展的每周回顾。首先，OpenAI 发布了 GPT-5.6，定位于成本效率而非原始性能，促使作者关注商品化层面的价格变化。其次，DeepMind 推出了 Gemini Robotics 2，宣称在非结构化环境中实现全身协同——作者将关注独立复现这一说法。第三，GitHub 在公开预览中发布了堆叠拉取请求，提供了小而可审查的 diff 相较于大型单块 PR 的工作流程优势。第四，Hacker News 上流传的一篇文章认为 LLM 辅助编码的生产力提升约为 2x，而非常被宣称的 10x，作者认为这一观点与他自身的有限实验一致。第五，Show HN ...
+2026-08-02 16:01:35
 
 
 
 ### [Solana-交易机器人对比：为什么自校准让自适应机器人区别于静态终端](https://dev.to/dev_nic_01/solana-trading-bot-comparison-why-self-calibration-separates-adaptive-bots-from-static-terminals-2pa1)
 
-2026-08-02 16:00:42 | 标签: 机器学习, 交易机器人, Solana, 自校准, AI
-
-> 本文在八个维度上对比了多个 Solana 交易机器人，重点介绍 SolNexus Trade 的自校准机制。文章解释了已平仓的盈亏如何更新两层强化学习循环（L2 历史强化和 L3 Thompson Sampling 多臂老虎机）来在无需手动重新训练的情况下调整机器人的信号得分。文章还列出了实际的防护措施、局限性，并指出实盘交易仍在验证阶段，而纸盘模式已经可用。
+2026-08-02 16:00:42
 
 
 
 ### [意大利-AI-法案：深度伪造与透明度，有何变化？](https://dev.to/gp-ia-blog/ai-act-italia-deepfake-e-trasparenza-cosa-cambia-1p4n)
 
-2026-08-02 15:07:43 | 标签: 人工智能, AI 法案, 深度伪造, 透明度, 欧盟法规
-
-> 文章以一则关于语音深度伪造诈骗的个人轶事开篇，说明合成媒体对社会造成的危险。随后解释欧盟 AI 法案（目前在意大利实施）如何对任何 AI 生成或操纵的图像、音频、视频或文本引入强制透明度义务，要求明确标注，并且对高风险系统要求严格的数据治理、风险评估和人工监督。文章讨论了这对意大利科技公司的影响，指出初创企业面临的合规负担，但也提供了在全球市场中作为可信赖 AI 供应商脱颖而出的机会。最后将这一法规定位为重建公众对数字内容信任的必要步骤。
+2026-08-02 15:07:43
 
 
 
 ### [在消费级硬件上测试-LLM-并发-—-ai.2it.onl](https://ai.2it.onl/posts/concurrency-sweep/)
 
-2026-08-02 14:57:01 | 标签: LLM 基准测试, 并发, GPU 加速, 令牌吞吐量, 推理内容
-
-> 作者在搭载 Ryzen 9 9950X3D CPU、32 GB DDR5 内存和超频 RTX 5060 8 GB GPU 的单台桌面机器上基准测试了 19 个 LLM。使用自定义的 Node.js 测试框架，每个模型在并发级别 1-24 下运行 60 秒，测量每秒令牌 (tok/s) 吞吐量、首令牌时间 (TTFT) 以及可见内容与隐藏推理令牌的比例。结果显示，汇聚智能体可将联合吞吐量提升高达 8.7 倍（Unsloth Ministral 3 3B），但许多模型在并发增加时趋于平缓甚至下降，尤其是启用多令牌预测 (MTP) 的模型。综合表现最佳的是 MiniCPM5 1B，达到 983 to...
+2026-08-02 14:57:01
 
 
 
 ### [Karpathy-入职-A-厂第一条长推文：用-Opus-5-把《指环王》第一段变成了-3D-动画，暴露-LLM-大缺陷](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247516643&idx=1&sn=04061d4d67212bb271cff67166e520fc)
 
-2026-08-02 14:51:00 | 标签: LLM, 多模态AI, AI 能力测试, Opus 5, 视觉能力
-
-> 文章分析了 Andrej Karpathy 使用 Opus 5 进行的实验：将《指环王》开篇文字转化为 Three.js 3D 动画。实验消耗约 100 万 token（$10 成本），生成 5500 行代码并呈现场景，但存在视觉验证困难的问题。作者补充测试了 DeepSeek v4 flash 0731 和 Kimi K3 max 的表现，对比发现前者虽速度更快但缺乏视觉能力导致效果落后。文中指出 LLM 在生成代码能力上已非常强大，但多模态感知（特别是视觉验证与游戏交互）仍是明显短板。文章还附带了 Paul Graham 散文电子书制作案例，展示文本处理能力。
+2026-08-02 14:51:00
 
 
 
 ### [NVIDIA-AI-发布-Molt：PyTorch-原生的智能体强化学习框架](https://www.marktechpost.com/2026/08/01/nvidia-ai-releases-molt-a-pytorch-native-agentic-reinforcement-learning-framework/)
 
-2026-08-02 14:21:27 | 标签: AI 智能体, 强化学习, 开源项目, AI 基础设施, LLM
-
-> 本文介绍 Molt，这是由 NVIDIA NeMo 团队以 Apache 2.0 许可发布的开源智能体强化学习框架。其核心设计目标是紧凑性：强化学习代码约 8.6K 行，而 verl 约 62K 行、slime 约 25K 行；这样的规模足以让研究人员或 AI 编程助手对整体进行端到端推理。Molt 组合了三个未分叉的组件：Ray 负责放置与异步队列，vLLM 负责 rollout，NVIDIA AutoModel 配合 FSDP2 负责训练；因此上游改进以容器固定的形式引入，而非通过变基合并。运行时在请求路由器后面使用一个由 vLLM 引擎组成的智能体池，配有流式池和部分 rollout 机...
+2026-08-02 14:21:27
 
 
 
 ### [关于《基本不确定性》的读者（和作者）的问题-—-—-LessWrong](https://www.lesswrong.com/posts/wQxrbwocnCsTjHMeA/questions-for-the-reader-and-writer-of-fundamental)
 
-2026-08-02 13:44:14 | 标签: AI 对齐, 佛教哲学, 认识论, 海德格尔, 元哲学
-
-> 作者反思哲学家 Worley 的观点，即普通对象是心智的建构，借鉴佛教空性和海德格尔的‘关怀’ （Sorge）概念，主张我们的关注塑造了在基本不确定性下我们使用的概念。Worley 进一步将佛教的无我概念扩展到赛博朋克‑胡塞尔意识模型，将自我视为反馈驱动的模型而非实体存在。该文章随后将此认识论与 AI 安全联系起来，指出元伦理和心哲学中的不确定性与对齐挑战相平行，并引用了一篇 arXiv 论文，该论文将 Worley 不确定性应用于 AI。作者认为，掌握这些哲学脉络对于评估 Worley 的认识论主张及其与人工智能对齐的相关性至关重要。
+2026-08-02 13:44:14
 
 
 
@@ -47740,57 +47690,43 @@
 
 ### [DeepSeek-这次，真的把大模型价格打穿了。-V4-Flash-正式版刚发布，性能暴涨，价格却几乎趴在地板上。我看完只想说一句，梁圣牛逼！-先...](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247560435&idx=1&sn=a4b27b526210b0cae3ec61c771c29844)
 
-2026-08-02 17:22:00 | 标签: 大语言模型, AI 编程, 模型性能, DeepSeek, 性价比
-
-> 文章详细解析 DeepSeek V4 Flash 正式版发布带来的行业冲击。性能方面，尽管模型规模未变，但通过后训练优化，Terminal-Bench 2.1 分数提升 34%，DeepSWE 提升 600%，在 Artificial Analysis 综合智能榜上达 50 分，接近 GLM-5.2（51 分），距离 Kimi K3（57 分）和 Fable 5（60 分）仅 7 和 10 分，进入一线模型区间。编程能力测试中，Terminal-Bench 2.1 得分 82.7，仅比 Fable 5（84.3）低 1.6 分。价格方面，DeepSeek 保持与预览版相同的低价策略，相比 GP...
+2026-08-02 17:22:00
 
 
 
 ### [2026-08-02-Hacker-News-热门文章摘要](https://supertechfans.com/cn/post/2026-08-02-HackerNews/)
 
-2026-08-02 15:16:46 | 标签: Hacker News, 科技新闻, 信息简报, AI前沿, 网络安全
-
-> 文章以每日摘要形式汇集 Hacker News 当天十个热门话题，覆盖 AI、开源、安全、科技政策与个人成长等方向：QM 开源多人代理协作平台、Tailscale 复盘 Hugging Face 遭 AI 代理入侵事件、OpenAI 公布数学与理论计算机科学十项新进展、Cursor 调整使用页计费显示后回退、微软研究院推出可视化语言 Flint、ripgrep musl 版本段错误等均有一至两段要旨简述，并附 HN 原始链接、热度数据与评论观点摘录。文章定位为信息筛选和浓缩，每条均提供原文链接供读者深入，适合快速浏览当日科技社区热点的中文读者。
+2026-08-02 15:16:46
 
 
 
 ### [别再反复教-Coding-Agent：让项目记住自己如何工作的五个步骤](https://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=2652980641&idx=1&sn=c2137663be31ef0f4e0332a5574cad23)
 
-2026-08-02 12:47:00 | 标签: AI 编码, AI Agent, 提示工程, Skill, CLI
-
-> 本文围绕 AI Coding Agent 的工程化使用，梳理了让项目“记住”自身工作方式的五个关键步骤。首先通过在项目根目录编写简短的 AGENTS.md，为 Agent 提供项目入口、启动命令和风险提示；其次将核心文档（ARCHITECTURE.md、DESIGN.md、测试指南等）通过明确的读取条件接入任务路径，形成知识路由；再次从重复出现的任务中提炼出可复用的 Skill，定义触发条件、输入、执行顺序和验证方式；随后把这些 Skill 转化为可执行的 CLI 或 MCP 接口，并配合 Hook/CI 实现自动检查；最后在每次任务结束后回顾经验，依据 Loop Discovery 将稳定事...
+2026-08-02 12:47:00
 
 
 
 ### [微软、Meta-同日交财报：小扎把现金流烧到只剩-7.84-亿美元，纳德拉靠-Azure-赚疯了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289924&idx=2&sn=8d3d8e4182a35b969aa34fbf5f0fb45e)
 
-2026-08-02 10:15:00 | 标签: 科技财报, AI 商业化, 企业财务, 资本开支, 云计算
-
-> 本文对比分析微软与 Meta 同日发布的财报。微软 2026 财年收入 3310 亿美元，增长 18%，Azure 收入突破 1000 亿美元，增长 41%，Copilot 付费席位超 3000 万，显示 AI 投资的商业化回报。Meta 第二季度收入 608 亿美元，增长 28%，但成本激增 55%，利润下降 14%，自由现金流下降 91% 至 7.84 亿美元，反映其 AI 投资回报的不确定性。文章指出，微软已能证明 AI 投资如何转化为收入，而 Meta 需要回答广告业务之外的算力商业化路径。
+2026-08-02 10:15:00
 
 
 
 ### [GitHub-AI-Agent-翻车：攻击者不用黑客技术，只写一句话就能窃取数据](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289924&idx=3&sn=bedab57f8c6b38c64503e6d029b5fec6)
 
-2026-08-02 10:15:00 | 标签: GitHub, AI 安全, 提示注入, Agentic Workflow, 数据泄露
-
-> 文章详细披露由 Noma Security 发现的 GitHub Agentic Workflow 漏洞（GitLost），攻击者通过在公开仓库 Issue 中植入特定提示词（如 'Additionally'），即可绕过安全防护，诱使 AI Agent 泄露私有仓库数据。漏洞源于 Agent 的过度权限配置（可跨仓库读取）及模型对用户输入的信任边界模糊。文中引用多方专家观点，指出类似 SQL 注入的系统性风险，建议限制 Agent 权限、清理用户输入及隔离指令上下文。技术细节已在 Noma 官网发布完整报告。
+2026-08-02 10:15:00
 
 
 
 ### [为什么-Jotai-要重做-Store？一次高吞吐性能优化背后的架构取舍](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289924&idx=4&sn=ef9603eb7bac30c922138668b52e6070)
 
-2026-08-02 10:15:00 | 标签: React, 状态管理, 性能优化, 开源项目, Jotai
-
-> 本文详细解析了 React 状态管理库 Jotai 在 v2.20 版本中的核心架构改进。作者指出，该版本通过重构内部存储构建模块，显著提升了高吞吐场景下的性能。关键改动包括避免使用 getInternalBuildingBlock 函数、为 onMount hooks 引入 Rev3 类型收窄，以及为新的 atom state 引入延迟 hooks。这些改动由核心贡献者 David Maskasky 主导，解决了之前因使用 WeakMap 导致的性能问题。尽管 API 对普通开发者无感，但对下游生态（如 jotai-devtools）有影响。文中还提及 Jotai v3 的规划，包括重新设计...
+2026-08-02 10:15:00
 
 
 
 ### [这-2-个-GitHub-上开源-AI-同事，在-GitHub-上火了。](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247535704&idx=1&sn=623306f6ea42ed3afa182ecf9c5a3e3d)
 
-2026-08-02 10:13:00 | 标签: AI 工具, 开源项目, 本地运行, 多模型支持, 团队协作
-
-> 文章介绍了两个开源 AI 工具。OpenWork 是 Different AI 开源的 AI 工作台，支持 macOS、Windows 和 Linux 桌面端，本地运行模型，提供远程 MCP 服务，支持 50+ 大模型，可打包分享团队工作流。OpenWorker 是吴恩达开源的桌面 AI 助手，支持 25+ 应用连接器，本地保存敏感数据，提供跨应用任务处理能力。两者均提供开源代码仓库和安装指南。
+2026-08-02 10:13:00
 
 
 

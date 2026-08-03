@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-03 09:50:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-03 13:43:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [Cloudflare-推出-Meerkat-以实现强一致性全球协调](https://www.infoq.com/news/2026/08/cloudflare-meerkat-consensus/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-02 14:17:00 | 标签: 分布式系统, 共识算法, QuePaxa, Cloudflare, 全球一致性
-
-> 文章描述了 Cloudflare 的新内部服务 Meerkat，它实现了 QuePaxa 共识算法以在不依赖领导者的情况下提供强一致性，从而提升其全球网络的可用性。文章解释了 Meerkat 的日志如何工作，将其与基于领导者的算法（如 Raft）进行对比，并引用了 Cloudflare 工程师关于其保证和局限性的说明（例如，每次决策的一到三次往返延迟）。文章还包含了来自 Hacker News 和 LinkedIn 的社区反应，指出 Meerkat 仍处于概念验证阶段，最多可有 50 个全球副本，且不打算作为通用数据库使用。
+2026-08-02 14:17:00
 
 
 
