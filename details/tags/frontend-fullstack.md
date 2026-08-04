@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-04 09:26:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-04 12:55:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -728,17 +728,13 @@
 
 ### [Vercel-WAF-for-Blob-现已正式发布---Vercel](https://vercel.com/changelog/vercel-waf-for-blob-is-now-generally-available)
 
-2026-08-04 01:00:00 | 标签: Vercel, 云安全, Web 开发, Serverless, Blob 存储
-
-> Vercel 宣布 Vercel WAF for Blob 存储正式发布（GA），现已支持所有方案的生产环境使用。该功能允许开发者使用自定义防火墙规则（如基于 IP、国家/地区和路径的过滤）来保护其 Blob 存储，且无需更改任何代码。由于这些规则在 Vercel 的边缘节点进行评估，未经授权或恶意的请求在数据传输发生前就会被拦截，从而有效防止因 AI 生成媒体、用户上传或大文件下载而产生的意外账单。
+2026-08-04 01:00:00
 
 
 
 ### [WebAssembly-on-the-JVM：功能演进、性能优化及向-Endive-的转型](https://www.infoq.com/podcasts/feature-evolution-performance-transition-endive/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-03 19:00:00 | 标签: WebAssembly, JVM, WASI, 运行时性能, 服务器端计算
-
-> Andrea Peruffo 讨论了 WebAssembly 在 JVM 上日益重要的角色，强调其安全的沙盒环境是替代 JNI 的更安全选择。他指出从解释器到 JIT 编译的性能提升，Wasm 3 中 WasmGC 和多内存提案的重要性，以及 WASI 标准如何实现互操作性。实际应用包括边缘计算平台、Helm 4 和 Microcks 的模块化插件，以及在 Trino 中运行 CPython UDF。Chicory 向 Endive 的转型标志着向基金会治理开发的迈进。运行 DOOM 和 Prism（Ruby 解析器）的例子展示了 Wasm 在 JVM 上的多样性。
+2026-08-03 19:00:00
 
 
 

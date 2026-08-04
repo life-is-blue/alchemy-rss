@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-04 09:26:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-04 12:55:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3667,25 +3667,19 @@
 
 ### [逐步指南：如何安全地替代脆弱的财务电子表格](https://dev.to/mahnoor_shahid_3db36c7d02/my-step-by-step-guide-to-decommissioning-your-most-fragile-finance-spreadsheets-53cc)
 
-2026-08-03 20:50:39 | 标签: 金融自动化, 电子表格退役, 智能文档处理（IDP）, API集成, 流程自动化
-
-> 文章指出财务领域过度依赖复杂 Excel 电子表格（所谓'Steve 问题'）所带来的风险，并提出了三步自动化框架：（1）绘制电子表格中隐藏的业务逻辑图（2）利用 IDP 进行数据采集与验证（3）实施事件驱动 API 实现实时对账。文章强调电子表格中包含关键的机构知识，必须系统性地退役而非简单删除。此方法降低人工错误，提升 SOX 合规性，将财务团队从数据录入转向战略分析。高德纳（Gartner）和麦肯锡（McKinsey）的案例研究证实了金融流程自动化的优势。
+2026-08-03 20:50:39
 
 
 
 ### [2026-年-9-大最佳零抵押-DeFi-闪电贷协议](https://dev.to/holli_correa_b298121e32cb/9-best-defi-flash-loan-protocols-with-zero-collateral-2026-1oh0)
 
-2026-08-03 20:30:27 | 标签: DeFi, 闪电贷, 加密货币借贷, 零抵押贷款, 借贷协议
-
-> 本文探讨了零抵押 DeFi 闪电贷的概念，解释了智能合约如何实现无需预置资产的即时借款。文章列出了 Aave、Uniswap、Morpho、Maple Finance 和 TrueFi 等平台，并重点介绍了它们的特点。文中讨论了智能合约漏洞、执行失败和 Gas 费用等风险，同时将 OmniLender 作为简化解决方案进行推广。虽然提供了基础概述，但内容缺乏深入的技术分析或平台比较评估，且明显带有对 OmniLender 的推广成分。
+2026-08-03 20:30:27
 
 
 
 ### [我花数月训练了一个-730M-模型，但没有工具能告诉我它已经死亡](https://dev.to/bedvibe_studios/i-spent-months-training-a-730m-model-with-no-tool-that-could-tell-me-it-was-already-dead-220l)
 
-2026-08-03 20:16:57 | 标签: 机器学习, MLOps, Python, 开源, 模型训练
-
-> 本文详述作者训练大型 TTS 模型的经历及面临的挑战，当现有工具未能检测到训练失败时，他们创建了 trainproof。该工具采用确定性规则而非机器学习模型来评估训练日志，根据特定标准将运行结果分类为 FAIL、WARN 或 PASS，避免概率性判断以确保可靠性。通过控制性故障注入测试和真实训练日志验证，显示了工具的有效性及局限性（如未检测到标签损坏）。trainproof 支持多种日志格式，集成 CI/CD 流水线，可安全检查检查点而无需执行潜在恶意代码。作者强调透明性，发布测试日志，并根据实际反馈迭代改进工具。
+2026-08-03 20:16:57
 
 
 
@@ -15181,73 +15175,55 @@
 
 ### [Java-新闻综述：OpenJDK-JEP、Jakarta-EE、GraalVM、TornadoVM、Micronaut、Quarkus、JobRunr、Maven](https://www.infoq.com/news/2026/08/java-news-roundup-jul27-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-03 22:30:00 | 标签: Java, OpenJDK, JDK, JVM, Jakarta EE
-
-> 本周 Java 综述记录了 OpenJDK 及更广泛 Java 生态的最新动态。两项重要 JEP——JEP 539（JVM 中的严格字段初始化）和 JEP 401（值对象）——被提升为 JDK 28 的 Targeted 状态，而 JEP 535 提议将分代 Shenandoah 设为默认并弃用非分代模式。JDK 27 EA build 33 和 JDK 28 EA build 9 也已发布。此外，Jakarta Agentic AI 发布了首个里程碑，Eclipse Starter for Jakarta EE 增加了 Jakarta EE 11 支持，GraalVM 25.2 引入了 Gr...
+2026-08-03 22:30:00
 
 
 
 ### [HubSpot-使用规则引擎架构重构即时访问授权系统](https://www.infoq.com/news/2026/08/hubspot-jita-rule-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-03 21:59:00 | 标签: 规则引擎, 访问控制, 系统设计, 授权, 可观测性
-
-> HubSpot 将 JITA 授权系统从嵌入式条件逻辑迁移到以有向无环图（DAG）结构化的规则引擎架构。新系统通过独立规则处理访问请求，生成包含评估结果、时间戳和元数据的结构化输出，解决了原有系统中授权决策不透明及处理延迟的问题。该系统目前处理约 5，500 个日请求，覆盖 10，000 名员工，支持规则级可观测性、隔离故障处理及治理流程。迁移过程包含并行测试，且定期进行策略审查。文章对比了 HubSpot 的应用场景化工作流方法与行业方案（如 OPA 的策略即代码及云端权限管理工具）。
+2026-08-03 21:59:00
 
 
 
 ### [推出-Billable-Usage-API：为-Cloudflare-提供程序化成本可见性](https://blog.cloudflare.com/billable-usage-api/)
 
-2026-08-03 21:00:13 | 标签: API, 计费, 开发者, 工程, 产品动态
-
-> 这篇文章宣布了 Cloudflare 的 Billable Usage API，该 API 使客户能够以编程方式检索详细的用量和账单数据。文章说明了该 API 如何让开发者和财务团队自动化成本监控、集成财务系统并做出数据驱动决策。该 API 支持细粒度数据查询、实时访问和安全认证，用例包括预算跟踪、成本分摊系统和成本优化。文章强调了减少人工操作、改进预测以及使技术与财务运营更好地对齐等优势。
+2026-08-03 21:00:13
 
 
 
 ### [DMARC-实际上保护您免受什么威胁，以及它不保护什么---SenderLedger](https://senderledger.com/articles/what-dmarc-actually-protects-you-from)
 
-2026-08-03 19:41:27 | 标签: 邮件认证, DMARC, SPF, DKIM, 钓鱼
-
-> 文章开头指出了关于 DMARC 的常见误解，然后给出其精确功能的确认：通过 SPF 或 DKIM 对齐来确认 From 行中可见的域名是否被授权。它解释了 SPF 和 DKIM 的工作原理，展示了 DNS 记录示例，并详细说明了决策流程（SPF 或 DKIM 同时进行身份验证和对齐）。文章强调了 DMARC 有所帮助的地方——防止精确域名欺骗并提供聚合报告——以及它不足的地方，包括类似域名、显示名称冒充、被盗用的邮箱、经过身份验证的恶意域名、垃圾邮件过滤以及转发/邮件列表问题。文章最后指出，DMARC 通过仅表明该域名授权了该邮件，而不能判断邮件是否安全，警告不要产生错误的安全感，并建议采取互...
+2026-08-03 19:41:27
 
 
 
 ### [字节跳动-2027-校招正式启动！](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521059&idx=1&sn=3473116140a8c13351c998c519ca93a1)
 
-2026-08-03 19:26:00 | 标签: 校园招聘, 技术岗位, 职业发展, 公司公告, 求职指南
-
-> 本文为字节跳动技术团队发布的 2027 年校园招聘公告，主要内容包括招聘启动声明、岗位类型提示（涵盖技术、产品、设计等方向）及申请链接。全文以图文形式呈现，未提供具体岗位要求、招聘流程细节或公司文化深度介绍，主要作为信息传递载体。
+2026-08-03 19:26:00
 
 
 
 ### [9FRONT-"这本来应该很有趣"-发布](https://9front.org/releases/2026/08/02/0/)
 
-2026-08-03 19:17:56 | 标签: 操作系统, 内核开发, 设备驱动, 发布说明, 开源软件
-
-> 此 9front Plan 9 分支的发布公告概述了一系列技术更改：affinewarp API 已经过修订，并被许多程序采用用于缩放和放大；新的 gdbfs(4) 工具允许将远程 GDB 挂载为 /proc 文件系统；已添加 Synaptics 触控板驱动和用于 UPS 设备的 nusb/battery 驱动；nusb/dump 工具现在以人类可读的格式显示 USB 描述符；libsec 获得了 SHA3 哈希支持；awk 获得了测试套件；pc/pc64 内核现在支持 *x2apic=。该说明提供了 PC、树莓派、MNT Reform 和 QEMU 的 ISO、QCOW2 和磁盘镜像的下载链...
+2026-08-03 19:17:56
 
 
 
 ### [通过保存变化局部性实现进化架构的演进](https://www.infoq.com/articles/evolutionary-architecture-change-locality/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-03 19:00:00 | 标签: 软件架构, 进化架构, 变化局部性, 边界漂移, 团队所有权
-
-> 文章解释了进化架构要求团队在清晰边界内进行修改。它引入了'边界漂移'这一常见问题，即决策所有权与系统当前结构的对齐失效，通过电子商务地址修改案例说明了系统演进过程中初始边界如何失效。作者提出三种架构干预措施：将重复性机制重新分配给合适团队，通过合同和可视化机制暴露关键策略，以及通过演练异常路径验证边界有效性。文章强调认知负荷是边界问题的信号，架构师必须将边界视为需要定期重新评估的活假设。
+2026-08-03 19:00:00
 
 
 
 ### [微软-Azure-CTO-业余时间“整活”：拿-Windows-画图当显示屏跑《毁灭战士》，还支持-Ctrl+Z-一键“复活”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833914&idx=1&sn=47f0ed69e7401de7fbeb140d9f66c3f8)
 
-2026-08-03 17:07:00 | 标签: 开源项目, Windows, 游戏开发, 系统底层, 极客文化
-
-> 本文介绍了微软 Azure CTO Mark Russinovich 开发的开源项目 DoomPaint。该项目并非简单的截图循环，而是利用 ViZDoom 引擎在后台运行游戏逻辑，通过 Windows OLE 剪贴板机制将实时渲染的画面同步至 Paint 画布，并使用底层键盘钩子拦截输入，实现了在画图软件中流畅游玩《毁灭战士》的效果。这一实验展示了对 Windows 系统底层机制的深度挖掘，体现了计算机文化中探索系统边界的极客精神。
+2026-08-03 17:07:00
 
 
 
 ### [正则表达式的真正威力](https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html)
 
-2026-08-03 16:47:23 | 标签: 正则表达式, 形式语言, 编程, PCRE, 上下文无关文法
-
-> 文章首先反驳了“HTML 无法用正则表达式解析”的常见说法，指出这种说法源于对形式语言理论中“正则”定义与程序员所理解的正则表达式概念的混淆。文章回顾了形式语言理论，展示了正则文法如何对应像 [0-9]+ 这样的简单正则表达式，然后通过经典的 aⁿbⁿ 示例，论证了现代正则引擎（如 PCRE）可以通过递归子模式表达上下文无关语言。文章进一步说明，借助前瞻断言，正则表达式还能匹配一些上下文相关语言，例如 aⁿbⁿcⁿ。作者指出，虽然格式良好的 HTML 是上下文无关语言，因此可以用正则表达式匹配，但现实中的 HTML 往往格式不规范，因此在通用处理时更推荐使用 DOM 解析器；不过，针对特定且边...
+2026-08-03 16:47:23
 
 
 
@@ -38831,11 +38807,11 @@
 
 
 
-### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
+### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
 
-2026-05-06T00:00:00.000Z
+2026-05-05T00:00:00.000Z
 
-> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
+> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
 
 
 

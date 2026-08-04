@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-04 09:26:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-04 12:55:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,33 +584,25 @@
 
 ### [生产环境部署期间会发生什么？幕后指南](https://www.freecodecamp.org/news/what-happens-during-a-production-deployment/)
 
-2026-08-04 02:15:54 | 标签: 部署, DevOps, CI/CD, PaaS, 数据库迁移
-
-> 本文逐阶段梳理了完整的生产环境部署流水线。首先介绍构建及其产出的制品，解释为何团队应只构建一次，并推广同一个冻结的、版本化的制品，以避免测试代码与部署代码之间的细微差异。接着指出数据库迁移是风险最大的环节，主张采用向后兼容的迁移，确保新旧代码在过渡期共同工作，并阐述就绪性检查与存活性检查的区别。作者还涵盖了滚动更新、蓝绿部署和金丝雀发布，以及作为关键逃生舱口的回滚机制。后半部分有力论证 PaaS 平台已将这套机制自动化并标准化，因此对大多数团队而言，运行自定义流水线是一个不必要的“第二产品”。文章最后列出三种合理的例外情况：合规要求、部署基础设施即公司核心产品、以及真正特殊的基础设施需求。
+2026-08-04 02:15:54
 
 
 
 ### [Cloudflare-Workers-与容器现已支持入站-TCP-连接和-gRPC](https://blog.cloudflare.com/grpc-workers/)
 
-2026-08-03 21:00:13 | 标签: Cloudflare Workers, 容器, gRPC, 边缘计算, TCP
-
-> Cloudflare 的这篇官方产品公告引入了对 Cloudflare Workers 与容器的入站 TCP 和 gRPC 支持。此前平台主要以 HTTP 为中心；新的功能让开发者能够在边缘接受原始 TCP 连接，从而支持非 HTTP 协议、双向流媒体、实时通信以及通过 gRPC 的高性能 RPC 工作负载。本文阐述了公告的范围、对边缘开发者的技术影响以及新支持解锁的使用场景。
+2026-08-03 21:00:13
 
 
 
 ### [Workers-RPC-现已支持-Python-与-JavaScript-跨语言调用](https://blog.cloudflare.com/python-workers-rpc/)
 
-2026-08-03 21:00:12 | 标签: Cloudflare Workers, RPC, Python Workers, 开发者平台, 边缘计算
-
-> Cloudflare 宣布 Workers RPC 现已支持 Python 与 JavaScript 跨语言调用，这是 Agents Week 推出的开发者平台新功能。该特性允许 Python Workers 和 JavaScript Workers 直接调用彼此导出的方法，消除了运行时间的 HTTP 桥接或序列化适配层需求。对于在 Cloudflare Workers 上构建多语言服务、代理或微服务的团队，此功能降低了集成负担，实现更自然的跨运行时组合。该文档定位为官方平台更新公告，而非深度技术指南；输入内容包含文章标题、来源元数据及标签列表，但正文主体已被截断。
+2026-08-03 21:00:12
 
 
 
 ### [HashiCorp-发布-Vault-Kubernetes-密钥管理公共测试版](https://www.infoq.com/news/2026/08/vault-kubernetes-key-management/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-03 18:00:00 | 标签: Kubernetes, 密钥管理, Vault Enterprise, 静态数据加密, KMS 提供商
-
-> HashiCorp 宣布发布 Vault Kubernetes 密钥管理的公共测试版，推出兼容 KMS v2 的 `vault-kube-kms` 插件。该插件允许 Kubernetes API 服务器将信封加密任务卸载到 Vault Enterprise，从而保护存储在 etcd 中的机密信息，通过将加密密钥存储在集群外实现安全保护。该方案遵循标准的信封加密实践：Kubernetes 负责生成和使用数据加密密钥（DEKs）对敏感数据进行加密后再写入 etcd，而 Vault 通过传输密钥引擎（transit secrets engine）使用密钥加密密钥（KEKs）保护 DEK 种子。主要优...
+2026-08-03 18:00:00
 
 
 
