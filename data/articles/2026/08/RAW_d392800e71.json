@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d392800e71",
+  "title": "Azure 与社区指南：在技能与子代理之间的选择",
+  "url": "https://www.infoq.com/news/2026/08/choosing-between-subagent-skills/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-04 03:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a recent Azure Architecture blog article, Azure lead engineer Kishorekumar Pattabiraman <a href=\"https://techcommunity.microsoft.com/blog/azurearchitectureblog/skill-or-sub-agent-choosing-ai-capabilities-you-will-actually-reuse/4542099\">outlines practical criteria for choosing between skills, sub-agents, and other approaches</a> when building AI systems, emphasizing reusability, simplicity, and long-term maintainability.</p>\n   <p>According to Pattabiraman, teams often begin with the wrong question, focusing on which is the right model to use. The \"first real fork\" though, is not the model, but the architecture:</p>\n   <blockquote>\n    <p>Are you building a skill or a sub-agent? Get that wrong and no model choice will save you. A skill and a sub-agent are two different delivery shapes, and each one fails at the other one's job.</p>\n   </blockquote>\n   <p>A skill operates within an ongoing conversation: it can read files, ask questions, iterate with the user, and keep a human in the loop throughout the process. A sub-agent, by contrast, takes a single prompt, runs independently to completion, and delivers a final output. Both have their place, depending on the task, says Pattabiraman.</p>\n   <p>To decide whether to build a skill or a sub-agent, Pattabiraman highlights four key dimensions to consider: the iteration model, voice fidelity, human gate placement, and how frequently the task is repeated.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/08/choosing-between-subagent-skills/news/2026/08/choosing-between-subagent-skills/en/resources/1azure-skill-agents-1785780669671.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/choosing-between-subagent-skills/en/resources/1azure-skill-agents-1785780669671.jpg\" rel=\"share\"></p>\n   <p>Among the four dimensions, frequency is the one leading to the clearest divide: a \"one-off craft piece leans to a skill, a repeatable batch job to a sub-agent\". The other factors require more careful consideration. For example, the choice is rarely between a fully interactive conversation and a simple handoff, so you need weigh the cost of having a human engaged in an iterative skill-based flow against the risk of forcing that same process into a one-shot response that might require to be corrected each time. For each dimension, Pattabiraman outlines the key trade-offs and common pitfalls to avoid.</p>\n   <p>The question of when to use a skill versus a sub-agent has also surfaced in discussions across Reddit and Hacker News. One commenter, enthusiast_bob, points out that <a href=\"https://www.reddit.com/r/ClaudeAI/comments/1oawwlw/comment/ny5v84c/\">sub-agents start always clean and not pollute the context window</a>, whereas a skill always takes into account the whole conversation. Another user, dan-does-ai, emphasizes <a href=\"https://www.reddit.com/r/copilotstudio/comments/1v3owec/comment/ozbojn1/\">different trade-offs</a>: a skill \"is reusable across multiple agents or conversation flows\", whereas \"sub-agents make sense when: the step needs genuinely separate context, permissions, or a different knowledge source\".</p>\n   <p>Another important consideration is the need for orchestration arising when using sub-agents. Beyond added complexity, one must also consider the non-determinism introduced by the orchestration layer. For example, Reddit commenter <a href=\"https://www.reddit.com/r/copilotstudio/comments/1v3owec/comment/oz8e6q5/\">Ashlesha-msft notes that in Copilot Studio</a></p>\n   <blockquote>\n    <p>the planner dynamically decides when to call skills, tools, topics, or sub-agents based on descriptions, context, and recent conversation history. Because of that, a skill might not be invoked on every similar prompt.</p>\n   </blockquote>\n   <p>As a final perspective from the community, user Vlourenco69 suggests a simple <a href=\"https://www.reddit.com/r/vibecoding/comments/1qur9xt/ai_agents_subagents_skills_mcp_and_a_parallel/\">mental model to \"make sense of concepts like AI Agents, Sub-Agents, Skills, MCP\"</a>, where an agent acts as a director, a sub-agent as a manager, a skill as a specialized worker, a tool as a dedicated machine, and MCP as the governance rules or policies of the organization.</p>\n   <p>Bringing the discussion full circle, Pattabiraman notes that in many cases the dichotomy skill vs. sub-agent is only apparent. In practice, the two models compose cleanly and a skill can be built on top of a sub-agent when the problem calls for it. In many cases, this layered approach represents the most mature design.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Azure and Community Guidelines on Choosing Between a Skill or a Sub-Agent\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/choosing-between-subagent-skills/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1785783600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "文章概述了在 AI 技能与子代理之间选择的实用标准，涵盖迭代模型、语音保真度、人机交互环路和任务频率，并结合社区见解。",
+  "oneSentenceSummary": "文章概述了在 AI 技能与子代理之间选择的实用标准，涵盖迭代模型、语音保真度、人机交互环路和任务频率，并结合社区见解。",
+  "summary": "该文章总结了 Azure Architecture 博客文章，作者是首席工程师 Kishorekumar Pattabiraman，认为在构建 AI 系统时，首要的架构决策是将某项能力实现为技能还是子代理。文章说明，技能在持续的对话中运行，保持人机交互环路；而子代理则从单个提示独立运行直至完成。文章强调了四个决策维度：迭代模型、语音保真度、人机门放置（即人机交互的切入点）以及任务频率，其中频率提供了在一次性技能与可重复子代理之间最清晰的区分。文章引用了 Reddit 和 Hacker News 的评论，突出了上下文窗口纯净性、可重用技能以及使用子代理时编排的必要性，并得出结论：技能与子代理常能够干净地组合，分层方法代表了一种成熟的设计。",
+  "mainPoints": [
+    {
+      "point": "技能在持续的对话中运行，保持人机交互环路；子代理则从单个提示独立运行直至完成。",
+      "explanation": "这种交付形态的根本差异意味着每种方式都无法胜任另一种的工作，因此技能与子代理的选择成为 AI 系统设计中的首要架构分支。"
+    },
+    {
+      "point": "四个决策维度是迭代模型、语音保真度、人机门放置和任务频率，其中频率提供了在一次性技能与可重复子代理之间最清晰的划分。",
+      "explanation": "当任务是一次性的手工制作时，技能更合适；当任务是可重复的批处理作业时，子代理更可取。其他维度则需要权衡交互深度、上下文保真度和人机参与度。"
+    },
+    {
+      "point": "社区见解表明，子代理以干净的上下文窗口启动，而技能则保留对话历史；并且技能可在不同的代理或工作流之间复用。",
+      "explanation": "Reddit 评论者指出，子代理具有上下文纯净性的优势，而技能则带来复用的好处，这有助于团队在上下文隔离与功能复用之间进行权衡。"
+    },
+    {
+      "point": "使用子代理会引入编排复杂性和非确定性，因为规划器可能会动态决定何时调用技能、工具、主题或其他子代理。",
+      "explanation": "编排层会增加决策开销，并且在类似提示下可能会跳过技能的调用，这是选择子代理时需要权衡的取舍。"
+    }
+  ],
+  "keyQuotes": [
+    "\"您是在构建技能还是子代理？如果选择错误，没有任何模型选择能够拯救您。技能和子代理是两种不同的交付形态，而每一种都无法胜任另一种的工作。\"",
+    "\"在四个维度中，频率是导致最清晰分歧的因素：‘一次性手工制作倾向于使用技能，而可重复的批处理作业则倾向于使用子代理’。\"",
+    "\"规划器会根据描述、上下文以及最近的对话历史动态决定何时调用技能、工具、主题或子代理。因此，在类似的提示下，技能可能不会被每次调用。\""
+  ],
+  "tags": [
+    "AI 智能体",
+    "AI 工程",
+    "技能 vs 子代理",
+    "Azure 架构",
+    "提示词工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 549,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785783600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-04 03:00:00"
+}

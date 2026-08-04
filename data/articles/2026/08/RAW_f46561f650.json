@@ -1,0 +1,59 @@
+{
+  "id": "RAW_f46561f650",
+  "title": "OpenAI 预览下一代 AI 模型系列",
+  "url": "https://www.theaivalley.com/p/openai-previews-its-next-ai-model-family",
+  "date": "2026-08-03 23:00:53",
+  "author": "Barsee",
+  "siteName": "AI Valley",
+  "content": null,
+  "aiSummary": "本期通讯重点介绍 OpenAI 的 Astra 模型解决了长期存在的数学难题，同时涵盖阿里、Google DeepMind 和 Meta 的大规模基础设施投入等重大 AI 发布。",
+  "oneSentenceSummary": "本期通讯重点介绍 OpenAI 的 Astra 模型解决了长期存在的数学难题，同时涵盖阿里、Google DeepMind 和 Meta 的大规模基础设施投入等重大 AI 发布。",
+  "summary": "本期 AI Valley 汇总了本周最重大的 AI 动态：OpenAI 内部模型 Astra（可能是 GPT-5.7/6）以形式化方式证明了数学和计算机科学领域的十个开放问题；阿里巴巴发布了 Qwen3.8-Max，这是一个拥有 2.4 万亿参数的多模态模型，支持 100 万 token 上下文窗口；Google DeepMind 展示了 Gemini Robotics 2，为仿人机器人提供全身 AI 控制；Meta 宣布 2026 年 AI 基础设施预算为 1450 亿美元。本期还列出了热门 AI 工具、个人阅读推荐和社区亮点，为 AI 从业者和爱好者提供快速概览。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 的 Astra 解决了十个长达数十年的数学难题。",
+      "explanation": "该内部模型生成了经过 Lean 验证的形式化证明，仅消耗约 2000 美元的 API token，未来可能以 GPT-5.7 或 GPT-6 的名义推出。"
+    },
+    {
+      "point": "阿里巴巴发布 Qwen3.8-Max，一个 2.4 万亿参数的多模态模型。",
+      "explanation": "Qwen3.8-Max 支持 100 万 token 的上下文窗口，并在多个基准测试中与 Anthropic 的 Fable 5 持平，目标场景包括编程、研究和长周期智能体任务。"
+    },
+    {
+      "point": "Google DeepMind 推出 Gemini Robotics 2，用于全身机器人控制。",
+      "explanation": "该模型可协调行走、下蹲、伸手和物体操作等动作，能规划复杂任务，并在无持续联网的情况下本地运行。"
+    },
+    {
+      "point": "Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施。",
+      "explanation": "这笔投入包括一座 1 吉瓦的得克萨斯州数据中心，旨在为 WhatsApp、Messenger 和企业工具中的持久 AI 助手提供算力支持。"
+    },
+    {
+      "point": "提供一份热门 AI 工具和资源精选列表。",
+      "explanation": "Fish Audio、Claude Overlay 和 Gemini Spark 等工具因其在语音克隆、桌面 AI 辅助和浏览器集成智能体方面的新颖能力而受到关注。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 透露，Astra 解决了数学和计算机科学领域的 10 个长期开放问题，其中一些已悬而未决近 30 年。",
+    "Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施，包括一座新的 1 吉瓦得克萨斯州数据中心。"
+  ],
+  "tags": [
+    "OpenAI",
+    "AI 模型",
+    "机器学习",
+    "Meta AI",
+    "Google DeepMind"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 76,
+  "wordCount": 836,
+  "domain": "theaivalley.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9704d70a",
+  "sourceName": "AI Valley",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785769253000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-03 23:00:53"
+}

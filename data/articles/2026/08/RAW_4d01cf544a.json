@@ -1,0 +1,52 @@
+{
+  "id": "RAW_4d01cf544a",
+  "title": "LLM 写作与我",
+  "url": "https://www.makonea.com/en-US/casual/llm-writing-and-me",
+  "date": "2026-08-03 23:39:44",
+  "author": "MAKONEA",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": null,
+  "aiSummary": "作者探讨了 LLM 生成写作独特的「砖块般」密度和机械对称性，认为人类的「摩擦」和有意的缺陷才是创造真实声音的关键。",
+  "oneSentenceSummary": "作者探讨了 LLM 生成写作独特的「砖块般」密度和机械对称性，认为人类的「摩擦」和有意的缺陷才是创造真实声音的关键。",
+  "summary": "本文对 AI 生成散文的「无菌」和「过度密集」特性提出了细致的批评。作者创造了「语义砖块文本」一词，用以描述 LLM 的高信息密度，这种密度缺乏人类思维特有的「不必要的修饰」和节奏上的岔路。通过对比 AI 的机械对称性——对所有观点赋予同等权重——与人类写作的有意为之的不对称性——通过省略和执着来传达优先级——文章指出 AI 的「空洞感」源于对偏见和意图的外科手术式切除。最终，文章认为数字时代的人类特质由「摩擦」和「噪音」定义：正是这些低效和缺陷，让读者能在字里行间感知到一个鲜活、有呼吸的生命。",
+  "mainPoints": [
+    {
+      "point": "LLM 写作呈现「砖块般」的语义密度。",
+      "explanation": "与包含「呼吸空间」和岔路的人类散文不同，AI 将信息塞进每个句子，形成一块实心的文本块，让人感觉高效却令人窒息。"
+    },
+    {
+      "point": "「不对称性」的丧失导致空洞感。",
+      "explanation": "人类通过执着于某些细节而省略其他细节来展现意图；AI 倾向于给所有信息（优/缺点、主角/路人）同等权重，造出一种缺乏明确立场的机械平衡。"
+    },
+    {
+      "point": "人类身份体现在「摩擦」与「噪音」中。",
+      "explanation": "逻辑跳跃、情感岔路和「不必要」的修饰不是错误，而是人类说话者的指纹；而 AI 无摩擦的逻辑让人感觉无菌且匿名。"
+    }
+  ],
+  "keyQuotes": [
+    "归根结底，人类写作最强大的武器是「不对称性」。",
+    "我们所谓的「人类」特质，在抽象世界中或许仅仅是「摩擦」与「噪音」，不多也不少。",
+    "或许人性本身就是它的缺陷，而正是通过分享这些缺陷，我们才彼此确认对方是人类。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 写作",
+    "内容创作",
+    "技术哲学",
+    "语言学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 88,
+  "wordCount": 1388,
+  "domain": "makonea.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785771584000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-03 23:39:44"
+}

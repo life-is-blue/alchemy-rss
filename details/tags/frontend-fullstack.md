@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-04 06:53:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-04 09:26:33 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -723,6 +723,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [Vercel-WAF-for-Blob-现已正式发布---Vercel](https://vercel.com/changelog/vercel-waf-for-blob-is-now-generally-available)
+
+2026-08-04 01:00:00 | 标签: Vercel, 云安全, Web 开发, Serverless, Blob 存储
+
+> Vercel 宣布 Vercel WAF for Blob 存储正式发布（GA），现已支持所有方案的生产环境使用。该功能允许开发者使用自定义防火墙规则（如基于 IP、国家/地区和路径的过滤）来保护其 Blob 存储，且无需更改任何代码。由于这些规则在 Vercel 的边缘节点进行评估，未经授权或恶意的请求在数据传输发生前就会被拦截，从而有效防止因 AI 生成媒体、用户上传或大文件下载而产生的意外账单。
+
+
+
+### [WebAssembly-on-the-JVM：功能演进、性能优化及向-Endive-的转型](https://www.infoq.com/podcasts/feature-evolution-performance-transition-endive/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-08-03 19:00:00 | 标签: WebAssembly, JVM, WASI, 运行时性能, 服务器端计算
+
+> Andrea Peruffo 讨论了 WebAssembly 在 JVM 上日益重要的角色，强调其安全的沙盒环境是替代 JNI 的更安全选择。他指出从解释器到 JIT 编译的性能提升，Wasm 3 中 WasmGC 和多内存提案的重要性，以及 WASI 标准如何实现互操作性。实际应用包括边缘计算平台、Helm 4 和 Microcks 的模块化插件，以及在 Trino 中运行 CPython UDF。Chicory 向 Endive 的转型标志着向基金会治理开发的迈进。运行 DOOM 和 Prism（Ruby 解析器）的例子展示了 Wasm 在 JVM 上的多样性。
 
 
 
@@ -1710,13 +1726,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1866,13 +1882,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3366,13 +3382,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5076,13 +5092,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
