@@ -1,0 +1,58 @@
+{
+  "id": "RAW_247aaf8f10",
+  "title": "通用能力 - 以及能力普遍 - 没有良好的 y 轴 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/RxfTG5jcHH3azKQTA/general-capability-and-capabilities-generally-have-no-good-y",
+  "date": "2026-08-04 22:25:44",
+  "author": "Thrasymachus",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><b id=\"BLUF_\"><span>BLUF:</span></b></p>\n    <ul>\n     <li value=\"1\" id=\"block1\"><span>To determine whether AI is ‘improving exponentially’, ‘hitting the wall’, or any other claim which involves a quantity or magnitude (e.g. ‘This model was a big leap/small increment’). We need a good y-axis: an interval scale of AI capability which means +1 unit always represents the same degree of ‘how much better’, in the same way +1 degree Celsius is always the same amount of ‘how much hotter’.</span></li>\n     <li value=\"2\" id=\"block2\"><span>Yet there is no good y-axis for AI capability. All our measures are of something related-to but clearly not identical-with it, thus ‘true’ AI capability can be a funhouse-mirror reflection of whatever was measured. Specifically:</span>\n      <ul>\n       <li value=\"1\" id=\"block3\"><span>Benchmark score: One small step in benchmark score can be a giant leap in capability, or the opposite, or whatever else. (My 6/10 vs. your 4/10 ≠ I’m 50% better at maths than you).</span></li>\n       <li value=\"2\" id=\"block4\"><span>Elo et al: Can give a real y-axis in terms of winning chances, but doesn’t translate outside of beating others. (Going from 50% to 73% to 88% chance to get a higher score than you on a maths test ≠ gaining 0 → 1 → 2 units of maths ability over you)</span></li>\n       <li value=\"3\" id=\"block5\"><span>Epoch Capabilities Index: Analogous to IQ, so the y-axis intervals are dictated by modelling assumptions (IQ 115 → 130 not really the same increment of smarter as IQ 85 → 100). In any case, latent trait(propensity to get high scores across benchmarks) still a funhouse mirror of Capability(generally). Benchmarks are substantially endogenous to the models, so (e.g.) the 2024 acceleration observed in both ECI and TH may be explained by common measurement artefact rather than mutual corroboration.</span></li>\n       <li value=\"4\" id=\"block6\"><span>Log-loss/prediction: Analogous to reaction time, so in the same way reaction time/digit span/vocab size is non-linear in human intelligence, prediction accuracy non-linear in AI.</span></li>\n       <li value=\"5\" id=\"block7\"><span>METR Time Horizon: Measured time horizon ~ 10^(k * total score on METR task suite), likely explained by human task-completion psychometrics. If TH is linear in AI capability, then Opus 4.5 → 4.6 is a bigger advance than dawn-of-time → Opus 4.5.</span></li>\n      </ul></li>\n     <li value=\"3\" id=\"block8\"><span>Perhaps talk of ‘AI capability’ is better deflated, or maybe we await the theory which could do to intelligence what thermodynamics managed for temperature. Either way, our current measurements of AI are numerical gestures toward, not readings of, whatever is really going on.</span></li>\n    </ul>\n    <h1 id=\"Introduction\"><span>Introduction</span></h1>\n    <p id=\"block9\"><span>Consider these two graphs:</span></p>\n    <img src=\"https://media.bestblogs.dev/20260804152608_1da37a1.webp\" alt=\"\"><img src=\"https://media.bestblogs.dev/20260804152608_dc161ea.webp\" alt=\"\">\n    <p id=\"block10\"><span>These graphs paint very different pictures of AI progress: the shallow straight line of the ECI plot suggests steady incremental improvement; the (supra?)exponential sweep upwards for time horizons suggests screaming towards the singularity. Both are used (perhaps more than the researchers behind them would like) as summaries of AI in general. Yet which picture is, for want of a better term, right? Is the true (functional) form of AI capabilities best captured by linear-ish ECI or exponentially-increasing time horizons - or maybe something else?</span></p>\n    <p id=\"block11\"><span>I provide a counsel of despair. These two graphs are essentially the same picture with a transformed y-axis, and neither really measures AI capability. For what the right y-axis is, and the right transform of our measurements to get it, I only have varieties of scare-quotes and question-marks to offer.</span>\n     <br>\n     <br>\n     <span>[</span><span><span><a href=\"https://forum.effectivealtruism.org/posts/CQvdadxjCpd7i7kjA/general-capability-and-capabilities-generally-have-no-good-y\" rel=\"noreferrer\"><span>Continued</span></a></span></span><span>...]</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，目前没有任何指标——基准分数、Elo、Epoch 能力指数、log-loss 或 METR 时间范围——能够为 AI 能力提供真正的间隔尺度 y 轴，因此关于指数级进步或遇到瓶颈的说法缺乏明确定义。",
+  "oneSentenceSummary": "本文认为，目前没有任何指标——基准分数、Elo、Epoch 能力指数、log-loss 或 METR 时间范围——能够为 AI 能力提供真正的间隔尺度 y 轴，因此关于指数级进步或遇到瓶颈的说法缺乏明确定义。",
+  "summary": "本文认为，衡量 AI 能力缺乏良好的 y 轴：即一个间隔尺度，其中 +1 单位始终代表相同程度的提升。文章考察了几种常见的度量——基准分数、Elo 评级、Epoch 能力指数、log-loss/预测准确度以及 METR 时间范围——并认为每种度量都与能力相关但并不完全等同。通过类比 IQ、反应时间和温度，作者展示了度量如何成为所测量内容的歪镜映射。文章还指出，ECI 和 METR 时间范围图可能是同一底层图像的不同 y 轴变换，这意味着表观加速可能是共享的测量工件，而非独立证据。作者得出结论：关于 AI 能力的讨论可能需要被“放气”，或者说我们正在等待一种理论，能够像热力学为温度所做的那样，为智能提供一个原则性的尺度。",
+  "mainPoints": [
+    {
+      "point": "没有有效的间隔尺度 y 轴来衡量 AI 能力，因此诸如指数级进步之类的说法缺乏明确定义。",
+      "explanation": "如果没有一个 +1 单位始终代表相同改进量的尺度，那么关于飞跃或瓶颈的陈述就缺乏精确含义；当前的度量只能对能力做出粗略的暗示。"
+    },
+    {
+      "point": "常见的 AI 指标都是能力的失真代理，而非直接读数。",
+      "explanation": "基准分数是模型内生的，Elo 仅测量相对胜率，ECI 继承了类似 IQ 的建模假设，而 METR 时间范围则暗示了不切实际的跳跃。"
+    },
+    {
+      "point": "ECI 和 METR 时间范围图可能是同一图像的不同 y 轴变换。",
+      "explanation": "如果这两种指标都与潜在能力非线性相关，那么 2024 年的表观加速可能是共同的测量工件，而不是相互印证。"
+    },
+    {
+      "point": "与其讨论 AI 能力，不如将其“放气”，或等待一套原则性的智能测量理论。",
+      "explanation": "作者提出了一种悲观的建议：目前的度量只是数字手势，而非真实读数，直至我们拥有类似热力学为温度所提供的那种智能理论。"
+    }
+  ],
+  "keyQuotes": [
+    "然而，AI 能力仍然没有良好的 y 轴。",
+    "这两张图本质上是同一图像的不同 y 轴变换，且两者都并未真正测量 AI 能力。",
+    "我们的所有度量都仅与之相关但显然不完全相同，因此 '真实' 的 AI 能力可能是所测量内容的歪镜映射。",
+    "我们目前对 AI 的度量只是指向真实发生事物的数字手势，而非其读数。",
+    "也许谈论 'AI 能力’最好被放气，或者我们正在等待一种理论，它能够对智能做热力学对温度所做的事。"
+  ],
+  "tags": [
+    "AI 能力",
+    "AI 评估",
+    "AI 进展",
+    "模型评估",
+    "基准测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 516,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785853544000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-04 22:25:44"
+}

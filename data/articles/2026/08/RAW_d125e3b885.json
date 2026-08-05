@@ -1,0 +1,51 @@
+{
+  "id": "RAW_d125e3b885",
+  "title": "Agent 和聊天产品到底有什么区别？｜王俊煜专栏",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkwNDQ5MjM1Mw==&mid=2247494939&idx=1&sn=246d245194e150d315713c0121c41bff",
+  "date": "2026-08-04 22:05:00",
+  "author": "新皮层NewNewThing",
+  "siteName": "新皮层NewNewThing",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"font-weight:400;letter-spacing:0.5px;font-size:16px;line-height:2;font-style:normal;box-sizing:border-box;text-align:justify;\">\n   <div style=\"text-align: right;font-size: 12px;color: rgb(127, 127, 127);padding: 0px 10px;box-sizing: border-box;\">\n    <p style=\"margin: 0px;padding: 0px;box-sizing: border-box;\"><span>撰文：王俊煜</span></p>\n   </div>\n   <div style=\"padding:0px 10px;font-size:15px;font-family:PingFangSC-light;box-sizing:border-box;\">\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>上期专栏里我建议新手“至少花100美元”以让自己有用不完的额度，发出去后，想必收获了不少读者的白眼：我免费的AI聊天用得好好的，凭什么？</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>实事求是地说，过去这个月你确实没必要买100美元的套餐，也能畅享先进模型，因为出现了一种叫“商战”的东西。国内，腾讯的Hy3上线后在WorkBuddy限时免费；国外，OpenAI上线GPT-5.6和ChatGPT Work后三天两头找“借口”重置付费用户的额度限制，买20美元的套餐，几乎就能享受之前100美元套餐的待遇；Anthropic也把Claude Cowork的额度翻了倍。现在，这些促销多半已经结束，但</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>厂商们努力促销的目的，和我上期鼓吹的其实是一致的：让更多非程序员用上Agent。你可能注意到，最近几乎每个模型厂商都推出了后缀为“Work”的产品。背后的逻辑很简单：编程Agent已经不再是趋势，而是事实——今天开始，你用到的新软件和软件更新，很大可能都是AI Agent写的。我们也知道，编程Agent不仅能编程，也能做许多白领岗位的工作。只是，让非程序员直接去用编程Agent（尽管我还是鼓励大家去学习），许多人还是觉得别扭。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>这股“Work”风潮，就是模型厂商们给出的答案。带头的还是Anthropic，Claude Code团队在今年1月发布了Cowork，简单说就是给Claude Code换了个皮肤，努力把那些看起来很“程序员”的东西藏起来。各家的思路是完全一致的，只是质量有高有低。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>但这个新品类眼下有些尴尬。我最近追了追Claude Code和Cowork的产品负责人Cat Wu的访谈，发现她几乎每次都要回答同样的两个问题：Cowork和聊天有什么区别？和Claude Code又有什么区别？需要不断解释，说明大家确实有点困惑——<span style=\"color: rgb(202, 89, 89);\">会用编程Agent的人觉得，“Work”做的事情编程Agent都能做，它只是编程Agent的“低幼版”；没用过的人又觉得它和聊天差别不大。</span>更关键的是，“Work”产品其实暂时也没有办法把那些技术细节真正隐藏，Agent卡壳的时候仍然需要你出手相救，它也会不时扔一条命令出来问你是否同意执行——对大部分人来说，这些命令属于程序员的世界。正如我在前几期所说，使用Agent目前最大门槛不是你懂不懂AI，而是你懂不懂你的电脑，“Work”并没有真正消除这一门槛。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>因此，和程序员们几乎人手一个Agent形成强烈反差，<span style=\"color: rgb(202, 89, 89);\">尽管Anthropic的一份报告认为，理论上大部分白领的工作任务都可以由AI执行，“Work”类产品今天的普及度还很低。</span>ChatGPT Work和Codex两个产品加在一起刚刚突破一千万周活，和ChatGPT本体还有量级差距；前阵子咨询机构发布了一份行业报告，WorkBuddy以每月约两千万次的“交互数量”在国内排名第一，不拿大家都懂的活跃用户量出来说，反而要发明一个新指标，可见真实数字并不讨喜。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>今年的专栏我很少讨论具体产品，因为<span style=\"color: rgb(202, 89, 89);\">不管是哪个Agent产品，质量有高有低，模型有好有坏，但思路几乎都完全一致，都是“Agent”，没有太大必要区分</span>。说到底，不管用“Work”还是编程Agent，这些Agent和我日常用的AI聊天到底有什么区别？区别确实没有那么大，如今成熟的AI聊天产品往往也带一点Agent执行能力，这也要怪模型厂商们从来没有认真设计过旗下各个产品的定位——Cat Wu也说，快速发布牺牲了一致性和简洁性。但从今往后你大致可以这么理解，聊天大概率停留在口头上，Agent是替你把事情做完。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>上期我举了Agent帮我修音箱的例子，就有读者在公众号留言问，为什么聊天不能做这个事情？聊天确实可以帮上忙，如果我用聊天，它需要教我如何动手诊断问题、根据我提供的信息给出猜测、给出可能的解决方案并教我如何执行，再把结果贴回来供它判断……Agent则可以自主诊断问题、尝试不同的修复方案、验证是否修好，最终帮我把音箱重新连上了网，几乎是全自动的。效率的差别，显而易见。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>所以，我的Agent现在有相当一部分的工作量，是帮我修电脑。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>不谈专业工作，公司人最通用的工作无非是读报告、沟通、汇报、协调、进度确认、写文档、资料整理……在聊天中完成这些工作当然也可以，但今天大部分的Agent都有电脑客户端，能直接读写你电脑上的文件：要它改什么，不用先“上传”给它；改完的成果，也不用你复制粘贴回去。看起来只是省了几步，但放进一次次迭代里，你和AI协作的摩擦几乎降到了零。即使你的文档本来就存在云端，Agent对它们的操作也会比一般的聊天更充分。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>当摩擦消失，Agent又可以单次运行更长的时间，你会发现AI在这些日常任务中能做的也比你想象得多。还是拿写方案举例子，在聊天中写方案，大家都掌握了各种prompt写作技巧，本质上是人在给AI喂上下文——你得自己把资料收集齐、需求列清楚，可能还得附上模板和过往方案。如果你给了Agent充分的权限，这些东西Agent都可以自己去找，只在不清楚时来问你。拿我常写的产品需求文档来说，我向Agent描述大致想做什么功能，达到什么目标，按我教它的工作方法，它会去找公司本季度的OKRs，判断是否匹配；再自动搜索相关的用户反馈、分析产品数据，判断优先级；它会阅读产品过往的文档和代码，保证新功能的设计和已有功能一致。遇到不清楚的，它直接问我。Agent也会不断质疑我的思路在逻辑上站不站得住，最后再把文档写进文档仓库，再把其他相关文档一并更新，确保处处一致。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>这样一份文档从头到尾反映的完全是我的想法，它只是帮我做完了那些机械性工作。这样一来，我可以专注在功能本身的构思上，做那些AI难以做出的非共识决策。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>更极致的例子是我的会议纪要。5月那期我写过我怎么“教”它，它到底做了什么呢？今天所有的会议录音产品都能一键生成纪要，但我需要写纪要的这个AI“懂”业务：一个团队周会，每周做的事是核对目标、讨论障碍、做决策、跟进每个人负责的事，会议记录就是要把这些信息、决策呈现出来：录音里的人名、术语、公司内的专有名词，它得认识；我们的目标是什么、完成情况如何、这次的决策和之前的是否一致，它得知道。靠着积累下来的“技能”，它跑一次一般要几十分钟，多的时候一次要花掉数十美元的Token，因为它要读的东西实在太多。现在，连周会的会前准备也是它做的：检查上周计划的完成情况、更新目标进度，必要时提醒团队成员来补充。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span><span style=\"color: rgb(202, 89, 89);\">这些占据公司人时间最多的“为了工作的工作”，都可以考虑让Agent拿走。上进的人们常常抱怨：“一天全在开会‘对齐’，正事一点没干”，Agent可以兢兢业业地把这些拿走</span>。就拿OpenClaw来说，可能大多数人已经忘了它了，但我的OpenClaw仍然每天帮我汇总所有我关心的新闻。还是一样，由于很多聊天产品也有一些Agent能力，所以中间没有一个清晰的界限，但调动的工具、上下文、算力、收费方式都有区别，量变形成了质变，最终感受的变化就是：到底是谁在干活？上期我写过，过去是我掌勺，AI打下手；现在，掌勺的变成了AI，我更像那个在旁边指指点点的老师傅。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>当然，也有不少在我们看来很容易做的事情，今天的agent反而做不了。比如，它擅长的仍是通过接口去操作电脑，所以很多人类做起来很方便的事情，由于它没有接口，就要麻烦得多；另一些则是人为障碍，比如无法操作微信——这和我们1月讨论豆包手机时的境遇类似。再重复一次，只要一件事能完全在电脑上完成，都值得交给Agent试试，上期我说过，先挑重复次数多、最花你的时间、相对简单，对你又最重要的事——其实，你可以把你的待办清单贴给Agent，让它自己挑事情。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>尽可能让Agent代替自己的工作——今天已经是一个合适的时机。收益很明显，学习难度也不高。把能交的都交出去之后，剩下的是什么？我想，<span style=\"color: rgb(202, 89, 89);\">人类在工作中不可取代、应该保留的，无非是感受、判断和欲望——尤其是最后一点。今年Agent的发展让我觉得，这一天指日可待，但又迟迟未到</span>。如果这一天真的到来，这个专栏也就可以停止了。</span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span>最后提醒一下，使用这些产品的时候都务必注重安全，这也是为什么今天还是需要一些计算机的基础知识才能用好这些产品。说来也是讽刺，年初OpenClaw流行的时候大家都说不要装在自己的主力电脑上，但实际上，今天大家电脑上安装的这些Agent，并没有比OpenClaw安全太多。这其实也是最初像Manus等等首选在云端运行的原因，只是看起来历史再次证明，人们喜欢便利性远远大于安全性。</span></p>\n   </div>\n   <div style=\"text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;box-sizing: border-box;\">\n    <p style=\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: auto;box-sizing: border-box;text-align: left;\"><img class=\"rich_pages wxw-img\" style=\"vertical-align: middle;max-width: 100%;width: 160px;box-sizing: border-box;height: 160px;\" src=\"https://media.bestblogs.dev/20260804182458_91d58d3.png\"></p>\n   </div>\n   <div style=\"padding:0px 10px;font-size:15px;font-family:PingFangSC-light;box-sizing:border-box;\">\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span style=\"color: rgb(90, 88, 88);font-size: 12px;box-sizing: border-box;\"><span>王俊煜</span></span></p>\n    <p style=\"margin: 0px 0px 16px;white-space: normal;padding: 0px;box-sizing: border-box;\"><span style=\"font-size: 12px;color: rgb(90, 88, 88);box-sizing: border-box;\"><span>2010年起先后创办了豌豆荚、轻芒等。现在，一边做阅读产品“阅览室”，一边探索如何让AI在普通人的生活工作中发挥更大作用。</span></span></p>\n   </div>\n   <div style=\"text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;box-sizing: border-box;\"></div>\n  </div>\n  <p style=\"display: none;\"></p>\n </body>\n</html>",
+  "aiSummary": "本文通过实际案例与功能比较，解释了 Agent 与普通聊天产品在自动化能力、任务执行深度及工作效率提升方面的核心区别，强调 Agent 能替代人完成复杂流程而非仅提供口头建议。",
+  "oneSentenceSummary": "本文通过实际案例与功能比较，解释了 Agent 与普通聊天产品在自动化能力、任务执行深度及工作效率提升方面的核心区别，强调 Agent 能替代人完成复杂流程而非仅提供口头建议。",
+  "summary": "文章由王俊煜分享个人使用 Agent 的实践经验，通过对比 ChatGPT Work、Claude Cowork 等产品，阐释 Agent 的本质区别在于能自主执行任务而非单纯对话。作者以修电脑、写方案、会议纪要等实际场景为例，说明 Agent 如何减少人工干预、自动处理文件并保持上下文连贯。文中指出尽管当前 Agent 产品存在技术门槛（如操作接口限制）和安全风险，但其在白领日常任务自动化中的潜力已显现，未来发展趋势值得期待。同时提醒用户注意数据安全问题。",
+  "mainPoints": [
+    {
+      "point": "Agent 的核心价值在于任务自动执行而非单纯对话",
+      "explanation": "通过修电脑案例对比，Agent 能自主诊断、尝试方案、验证结果并完成连接，而聊天仅提供建议需人工操作"
+    },
+    {
+      "point": "当前 Agent 产品仍面临技术与用户认知门槛",
+      "explanation": "部分任务需依赖特定接口（如无法操作微信），且使用过程中仍需人工介入解决技术问题"
+    },
+    {
+      "point": "Agent 能显著降低日常工作摩擦，提升效率",
+      "explanation": "通过直接读写本地文件、自动更新文档、整理会议纪要等功能，减少人工传输与格式化工作"
+    }
+  ],
+  "keyQuotes": [
+    "聊天大概率停留在口头上，Agent 是替你把事情做完。",
+    "调动的工具、上下文、算力、收费方式都有区别，量变形成了质变，最终感受的变化就是：到底是谁在干活？"
+  ],
+  "tags": [
+    "AI Agent",
+    "聊天产品",
+    "工作效率",
+    "自动化任务",
+    "模型应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 87,
+  "wordCount": 3513,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_ee265eb7c7",
+  "sourceName": "新皮层NewNewThing",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1785852300000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-04 22:05:00"
+}

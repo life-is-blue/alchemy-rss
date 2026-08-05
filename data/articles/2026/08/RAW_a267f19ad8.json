@@ -1,0 +1,57 @@
+{
+  "id": "RAW_a267f19ad8",
+  "title": "GitHub 法务团队如何借助 Copilot CLI 优化工作流程",
+  "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
+  "date": "2026-08-05 03:02:38",
+  "author": "Bria Ford",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">Whether you are just starting out or are not in a technical role at all, you likely already have the skills you need to build your own tools. If you have ever thought “I’m not technical enough to build that,” this post is for you.</p>\n  <p class=\"wp-block-paragraph\">Let me introduce the team. We are lawyers, program managers, and business professionals—not engineers. A large part of our work is often repetitive, like reviewing the same kinds of contracts over and over or answering the same legal questions, and our prior guidance is frequently recycled. These are problems AI could help solve, but we lacked confidence in how to build the right tools.</p>\n  <p class=\"wp-block-paragraph\">That is where <a href=\"https://github.com/features/copilot/cli\">GitHub Copilot CLI</a> came in. We asked for what we wanted in plain language, plugged into our repos, and saw real changes fast. “I could never code” turned into “I just built something,” and that habit spread on its own until every one of us was building something.</p>\n  <p class=\"wp-block-paragraph\">What follows are two real accounts of people who did exactly that. Plus, watch the videos for two additional stories.</p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <div class=\"mod-vh position-relative\" style=\"height: 0; padding-bottom: calc((9 / 16)*100%);\">\n     <iframe loading=\"lazy\" class=\"position-absolute top-0 left-0 width-full height-full\" src=\"https://www.youtube.com/embed/nzj0JOlyhOE?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent\" title=\"YouTube video player\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen frameborder=\"0\"></iframe>\n    </div>\n   </div>\n  </figure>\n  <h2 id=\"h-why-i-built-an-internal-drafting-style-guide\" class=\"wp-block-heading\">Why I built an internal drafting style guide</h2>\n  <p class=\"wp-block-paragraph\"><em>The following is a first-person account from Ngandu Kasuku, Principal Product Counsel.</em></p>\n  <p class=\"wp-block-paragraph\">I’m a product attorney, but commercial work remains a sizable part of my practice. Around March or April, I found myself buried in partnership deals involving data, infrastructure, and product integrations. No two deals looked quite alike, so each new matter felt like starting over.</p>\n  <p class=\"wp-block-paragraph\">I started using Copilot CLI to manage the surge, which helped, but also had some problems. Then, after seeing what others had built with Copilot, I realized I wasn’t thinking big enough. Instead of using AI for one task at a time, I could build something around the way I work.</p>\n  <p class=\"wp-block-paragraph\">So, I created a contract drafting tool using Copilot CLI. I called it terms-ai, which I admit isn’t the most original name. I started by scaffolding the project and storing key documents in a repository. This gave me one place to organize and version the instructions, drafting resources, and workflows that guide the AI. That structure made the results more consistent and reduced the copying and pasting that had slowed me down when I was using a library of prompts.</p>\n  <p class=\"wp-block-paragraph\">One of the tool’s main features is an internal drafting style guide. Since my days as a commercial lawyer, I’ve favored plain language. I never understood why contracts needed words like “heretofore” and “therewith.” When I discovered that an entire legal drafting movement shared this view, I used its principles as the foundation for my style guide.</p>\n  <p class=\"wp-block-paragraph\">I also built a library of agreements I had already completed. Now, when an existing partner sends over an addendum or a new agreement, the tool can draw on that earlier work. These agreements remain in an approved, access-controlled internal environment.</p>\n  <p class=\"wp-block-paragraph\">The tool and its general workflow are open source. The agreements and other sensitive information aren’t part of the open source repository. Since I began using terms-ai, I’ve cut my review and drafting time roughly in half. My provisions are more consistent across agreements, and the drafts reflect the plain style I prefer.</p>\n  <p class=\"wp-block-paragraph\">The tool still has a long way to go. But the biggest lesson wasn’t that AI could help me draft faster. It was that I could use AI to build a tool around my own judgment, experience, and way of working.</p>\n  <h2 id=\"h-how-i-built-legal-workflows-without-writing-traditional-code\" class=\"wp-block-heading\">How I built legal workflows without writing traditional code</h2>\n  <p class=\"wp-block-paragraph\"><em>The following is a first-person account from Jesse Geraci, Online Safety Counsel.</em></p>\n  <p class=\"wp-block-paragraph\">I started with a narrow problem. We needed to analyze source code quickly and accurately to evaluate DMCA (Digital Millennium Copyright Act) notices. The original project began as a set of GitHub Copilot instructions for recurring tasks like DMCA triage, comparing code, license checks, and circumvention review. We wanted to turn the messy, one-off prompt work that everyone was doing independently into something repeatable that a legal team could trust to gather the right facts and analyze the data consistently.</p>\n  <p class=\"wp-block-paragraph\">I was surprised at how far I could go without engineering support. The core “programming” was plain-language files consisting of workflow instruction sets, policy reference materials, and templates for writing reports. Instead of writing source code, I was able to use my language crafting skills as a lawyer to build structured legal judgment into the workflow itself.</p>\n  <p class=\"wp-block-paragraph\">It grew from there. We added different analysis modes for clients and lawyers (with faster outputs and escalation recommendations for clients, and deeper review and both-sides arguments for lawyers) and integrated external data sources. When I handed the workflow off to the team, they started using it right away and asked Copilot to do more.</p>\n  <p class=\"wp-block-paragraph\">That foundation has since evolved into a full desktop app for running predefined legal workflows in a clean interface. Building the desktop app required writing some code (a lot of code, actually), but the core instructions used to customize workflows are easily edited and customized in the app using plain language.</p>\n  <p class=\"wp-block-paragraph\">The app we created has now expanded well beyond only code analysis for DMCA notices. It includes instructions for many in-house workflows like contract review, NDA triage, risk assessment, compliance checks, and response drafting. Under the hood, it can route work through reusable skills and agents (intake, playbook alignment, risk scoring, evidence verification, escalation routing, report assembly), but the important part is not technical complexity—it’s that legal teams can still control behavior in readable Markdown.</p>\n  <p class=\"wp-block-paragraph\">For me, the key lesson was that I don’t need to wait for the perfect software vendor—or become a full-time developer myself—to build serious AI tooling. If you can clearly define your methodology, your standards, and your output format, GitHub Copilot makes it easy to operationalize that knowledge.</p>\n  <p class=\"wp-block-paragraph\">My legal Copilot is not a replacement for legal judgment, and it shouldn’t be treated that way. It’s a structured decision-support system designed to keep human review central while making legal analysis more consistent, more transparent, and more scalable.</p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <div class=\"mod-vh position-relative\" style=\"height: 0; padding-bottom: calc((9 / 16)*100%);\">\n     <iframe loading=\"lazy\" class=\"position-absolute top-0 left-0 width-full height-full\" src=\"https://www.youtube.com/embed/-32wLbC973w?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent\" title=\"YouTube video player\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen frameborder=\"0\"></iframe>\n    </div>\n   </div>\n  </figure>\n  <h2 id=\"h-take-this-with-you\" class=\"wp-block-heading\">Take this with you</h2>\n  <p class=\"wp-block-paragraph\">If a team of lawyers and program managers can quickly build their way out of the hard days, so can you.</p>\n  <p class=\"wp-block-paragraph\">Many jobs, even those not centered on traditional software development, have repetitive tasks that can be automated. Pick one thing that slows you down, open Copilot CLI, and ask it to help you build a fix.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "本文分享了 GitHub 法务团队中无工程背景的成员如何利用 GitHub Copilot CLI 构建实用的法务工作流工具，并显著缩短了审查时间。",
+  "oneSentenceSummary": "本文分享了 GitHub 法务团队中无工程背景的成员如何利用 GitHub Copilot CLI 构建实用的法务工作流工具，并显著缩短了审查时间。",
+  "summary": "GitHub 法务团队——包括律师、项目经理和业务人员——介绍了他们如何在没有工程背景的情况下，借助 GitHub Copilot CLI 构建内部工具。首席产品法务 Ngandu Kasuku 开发了 terms-ai，这是一款合同起草工具，将内部通俗易懂的风格指南和已审批合同库存储在代码仓库中；AI 借助这些资源生成一致的合同草稿，将其审查与起草时间缩短了大约一半。在线安全法务 Jesse Geraci 则基于通俗易懂的指令集、政策参考和报告模板，构建了 DMCA 分析工作流，后来该工作流进一步演化为支持合同审查、NDA 分诊、风险评估、合规检查和回复起草的桌面应用。两人的经验都强调：相较于传统编程技能，定义方法论、标准与输出格式更为重要；AI 应作为决策辅助工具，由人工审查把关，而不应取代法律判断。",
+  "mainPoints": [
+    {
+      "point": "非工程师也能用自然语言构建实用的 AI 工具。",
+      "explanation": "律师和项目经理借助 GitHub Copilot CLI，在没有传统软件开发技能的情况下创建了法务工具。"
+    },
+    {
+      "point": "围绕自身工作流和判断构建工具，而非用于一次性任务。",
+      "explanation": "terms-ai 将起草风格指南和已审批合同库编码其中，使输出更加一致，并将起草时间缩短了一半。"
+    },
+    {
+      "point": "通俗易懂的文档文件可以承载结构化的法律决策流程。",
+      "explanation": "DMCA 工作流使用 Markdown 指令、政策参考和模板来标准化事实收集与分析过程。"
+    },
+    {
+      "point": "AI 法务工具应作为决策辅助，而非取代判断。",
+      "explanation": "作者以人工审查为核心，同时借助可复用的智能体与技能，提升一致性、透明度和可扩展性。"
+    }
+  ],
+  "keyQuotes": [
+    "我的法律 Copilot 并非法律判断的替代品，也不应被这样对待。",
+    "最大的收获并不是 AI 能帮我更快地起草，而是我可以用 AI 围绕自己的判断、经验和工作方式构建工具。",
+    "只要你能清晰地定义方法论、标准和输出格式，GitHub Copilot 就能轻松将这些知识落地为可执行的流程。",
+    "\"我根本不会写代码\"变成了\"我刚刚做出了一个东西\"，这个习惯自然而然地扩散开来，直到我们每个人都在动手做东西。"
+  ],
+  "tags": [
+    "AI 工作流",
+    "AI 编程",
+    "法律科技",
+    "提示词工程",
+    "AI 产品与应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1055,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785870158000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-05 03:02:38"
+}

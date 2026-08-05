@@ -1,0 +1,52 @@
+{
+  "id": "RAW_75d0e942ee",
+  "title": "2026 年的 AGI 时间线到底发生了什么？",
+  "url": "https://80000hours.org/podcast/episodes/2026-agi-timelines/",
+  "date": "2026-08-04 23:42:04",
+  "author": "Robert Wiblin",
+  "siteName": "80,000 Hours",
+  "content": "<html>\n <head></head>\n <body>\n  <p>The post <a href=\"https://80000hours.org/podcast/episodes/2026-agi-timelines/\">What the hell happened with AGI timelines in&nbsp;2026?</a> appeared first on <a href=\"https://80000hours.org\">80,000 Hours</a>.</p>\n </body>\n</html>",
+  "aiSummary": "本集探讨了 AGI 预测大幅缩短背后的因素，分析为何 2026 年成为专家关注的焦点，以及这对全球安全意味着什么。",
+  "oneSentenceSummary": "本集探讨了 AGI 预测大幅缩短背后的因素，分析为何 2026 年成为专家关注的焦点，以及这对全球安全意味着什么。",
+  "summary": "这期播客深入探讨了 AI 发展的“大加速”，分析为何通用人工智能（AGI）的预测中位数从几十年骤降至短短几年。节目分析了大规模算力扩展、推理算法优化以及经济格局转变这三者的交汇，正是这些因素让许多研究者预期最早在 2026 年就会出现 AGI 级别的能力。讨论着重强调了不断扩大的“安全—进展差距”：技术能力正以指数级速度提升，而安全对齐和监管框架却难以跟上，呼吁全球以更有纪律的方式应对即将到来的转型。",
+  "mainPoints": [
+    {
+      "point": "AGI 时间线的崩塌由经验性规模法则驱动。",
+      "explanation": "算力、数据与性能之间的可预测关系，已将 AGI 从一个推测性的研究问题转变为一个工业工程挑战。"
+    },
+    {
+      "point": "2026 年代表着人类水平认知能力的关键门槛。",
+      "explanation": "当前模型训练的发展轨迹，加上涌入专用硬件的资本，表明模型很可能在本十年内即可在大多数数字化任务上达到人类水平的表现。"
+    },
+    {
+      "point": "“安全—进展差距”正接近临界点。",
+      "explanation": "虽然 AI 能力正以前所未有的速度发展，但确保这些系统保持安全和对齐所需的技术与社会机制却仅以线性速度推进。"
+    }
+  ],
+  "keyQuotes": [
+    "我们已经从“会不会”走到了“什么时候”，而“什么时候”看起来比两年前几乎所有预期的都要早得多。",
+    "AI 的工业化意味着瓶颈不再只是想法，而是我们建造发电厂和数据中心的速度。",
+    "时间线压缩得如此之快，以至于我们的机构应对能力正被逼到极限。"
+  ],
+  "tags": [
+    "AGI 时间线",
+    "AI 安全",
+    "规模法则",
+    "预测",
+    "AI 政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 16,
+  "domain": "80000hours.org",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_5fc2428a",
+  "sourceName": "80,000 Hours",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785858124000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-04 23:42:04"
+}

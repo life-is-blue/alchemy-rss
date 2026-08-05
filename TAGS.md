@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-05 06:53:41 | [返回首页](/README.md)
+**更新时间**: 2026-08-05 09:31:49 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14380)
+- [AI & 大模型](#ai-llm) (14425)
 - [软件架构](#architecture) (22)
-- [前端与全栈](#frontend-fullstack) (913)
-- [DevOps](#devops) (688)
+- [前端与全栈](#frontend-fullstack) (915)
+- [DevOps](#devops) (691)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6468)
+- [其他](#other) (6481)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [涉及-OpenAI-模型的第三方网络安全评估](https://openai.com/index/third-party-cyber-evaluations-involving-openai-models) - AI 精选
 - [推理工程大师课-—-Philip-Kiely-与-Ali-Taha，Baseten](https://www.latent.space/p/inference-eng) - AI 精选
 - [Qwen3.8-Max：编程与办公，全面跃升](https://mp.weixin.qq.com/s?__biz=Mzk0ODg4NDI5NA==&mid=2247489871&idx=1&sn=bb0230aa69fa1f90e26149ae3c008093) - AI 精选
 - [构建语音控制的-AI-智能体](https://www.kdnuggets.com/building-voice-controlled-ai-agents) - AI 精选
@@ -41,9 +42,8 @@
 - [从“会说”走向“会创作”｜Seed-Audio-1.0-音频创作模型发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494117&idx=1&sn=479ffb4e9fc90fa66d5bf531a84376a7) - AI 精选
 - [AI-Overviews-让谷歌陷入麻烦，GPT-Live-将推理置于后台，如何判断你的模型是否具有操控性](https://www.deeplearning.ai/the-batch/issue-362) - AI 精选
 - [Kimi-K3：智能的新前沿](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488658&idx=1&sn=a4fd7ead31c1b49357b29535c0dea4fe) - AI 精选
-- [NVIDIA-Nemotron-3-Embed-在-RTEB-上排名第一，推动智能体检索发展](https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb) - AI 精选
 
-- [查看全部 14380 篇...](/details/tags/ai-llm.md)
+- [查看全部 14425 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 913 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 915 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 688 篇...](/details/tags/devops.md)
+- [查看全部 691 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 
-- [查看全部 6468 篇...](/details/tags/other.md)
+- [查看全部 6481 篇...](/details/tags/other.md)
 
 

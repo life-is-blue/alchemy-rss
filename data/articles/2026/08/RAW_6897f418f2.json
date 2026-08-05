@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6897f418f2",
+  "title": "PipeNetwork/minimax-h3-mlx",
+  "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
+  "date": "2026-08-05 03:10:09",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">4th August 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Aug/4/minimax-h3-mlx/\">\n    <p><strong><a href=\"https://github.com/PipeNetwork/minimax-h3-mlx\">PipeNetwork/minimax-h3-mlx</a></strong>. MiniMax released <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3\">MiniMax-H3</a> two days ago - they describe it as a \"a general-purpose, omni-modal generative system\", which in practice means it accepts text, images, audio and video and can use them to generate up to 15 second video clips with audio included.</p>\n    <p>This Python package ports it to MLX for running on Apple Silicon.</p>\n    <p>I got it running on my M5 Max MacBook Pro. I cloned the repo and ran the model like this:</p>\n    <pre><code># First download the models\nuvx --from huggingface_hub hf download MiniMaxAI/MiniMax-H3 \\\n  --include 'FL2VA/*' --exclude 'FL2VA/transformer/*'\nuvx --from huggingface_hub hf download pipenetwork/MiniMax-H3-MLX-8bit\n\n# Now run the prompt\nuv run --with mlx-vlm \\\n  --with-requirements requirements.txt python scripts/generate.py \\\n  \"a rainbow colored skunk leaps over a mossy log in a supermarket\" \\\n  -o skunk.mp4 \\\n  -c ~/.cache/huggingface/hub/models--MiniMaxAI--MiniMax-H3/snapshots/fa9c8ab1eaa21c8ae25e7e40b83b2e6002f340af/FL2VA \\\n  -t ~/.cache/huggingface/hub/models--pipenetwork--MiniMax-H3-MLX-8bit/snapshots/3ac52081470b0488921c3ec3ba84a39097bf2361\n</code></pre>\n    <p>Here's the video I got for the prompt:</p>\n    <blockquote>\n     <p><code>a rainbow colored skunk leaps over a mossy log in a supermarket</code></p>\n    </blockquote>\n    <p>\n     <video controls loop preload=\"none\" poster=\"https://static.simonwillison.net/static/2026/skunk.jpg\" width=\"1344\" height=\"768\" style=\"display: block; width: 100%; height: auto;\">\n      <source src=\"https://static.simonwillison.net/static/2026/skunk.web.mp4\" type=\"video/mp4\"> Your browser does not support HTML5 video.\n     </video>\n    </p>\n    <p>It downloaded ~115 GB of model files, and the video generation took just under 45 minutes.</p>\n    <p>The video is impressive, but the audio is weird speech-like garbage, because I didn't provide any prompt guidance as to what the audio should be. The <a href=\"https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_base_en.md\">prompting guide</a> (which I didn't read prior to this experiment) has a whole bunch of information on how to get this to work.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9576/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 的实战笔记：在 Apple Silicon 上通过 MLX 移植版运行 MiniMax-H3，包含具体命令、模型体积、生成耗时，以及关于无提示引导时音频质量的提醒。",
+  "oneSentenceSummary": "Simon Willison 的实战笔记：在 Apple Silicon 上通过 MLX 移植版运行 MiniMax-H3，包含具体命令、模型体积、生成耗时，以及关于无提示引导时音频质量的提醒。",
+  "summary": "Simon Willison 推荐了 PipeNetwork/minimax-h3-mlx，这是一个将 MiniMax-H3 移植到 MLX 平台、面向 Apple Silicon 的 Python 包。MiniMax-H3 被描述为一个通用的全模态生成系统，可接受文本、图像、音频和视频作为输入，并能生成最长 15 秒、附带音频的视频片段。他分享了自己在 M5 Max MacBook Pro 上下载模型并根据文本提示生成视频所使用的完整命令。整个过程需要下载约 115 GB 的模型文件，生成耗时约 45 分钟。生成的视频效果令人惊艳，但由于没有提供任何提示引导，音频输出变成了类似语音的杂音。他指出可参考 MiniMax 的提示词指南以获得更好的效果。",
+  "mainPoints": [
+    {
+      "point": "MiniMax-H3 是一个全模态系统，可基于多种输入类型生成带音频的视频片段。",
+      "explanation": "它接受文本、图像、音频和视频作为输入，并能生成最长 15 秒、附带音频的视频片段。"
+    },
+    {
+      "point": "MLX 移植版使其能够在 Apple Silicon 上运行。",
+      "explanation": "Simon 在自己的 M5 Max MacBook Pro 上使用了 PipeNetwork/minimax-h3-mlx，并给出了下载和运行模型的具体命令。"
+    },
+    {
+      "point": "现实约束：约 115 GB 下载量与约 45 分钟生成时间。",
+      "explanation": "庞大的下载量和较长的生成时间使本地运行成为一项颇具挑战但仍可行的任务。"
+    },
+    {
+      "point": "音频质量取决于提示引导。",
+      "explanation": "在没有明确音频指令的情况下，模型生成的音频变成了类似语音的杂音；MiniMax 的提示词指南介绍了如何控制音频输出。"
+    }
+  ],
+  "keyQuotes": [
+    "视频效果令人惊艳，但音频却是奇怪的类语音杂音，因为我没有提供任何关于音频应该如何呈现的提示引导。",
+    "它下载了约 115 GB 的模型文件，视频生成耗时略低于 45 分钟。"
+  ],
+  "tags": [
+    "MLX",
+    "多模态 AI",
+    "视频生成",
+    "模型发布",
+    "Apple Silicon"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 232,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785870609000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-05 03:10:09"
+}
