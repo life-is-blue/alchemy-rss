@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-05 09:31:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-05 12:56:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -728,17 +728,13 @@
 
 ### [eslint-rspack-plugin-5.0.0-作为纯-ESM-包发布，与-Rstack-生态系统保持一致](https://www.infoq.com/news/2026/08/eslint-rspack-plugin-5/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-04 15:39:00 | 标签: ESLint, Rspack, ESM, 前端开发, 构建工具
-
-> eslint-rspack-plugin 5.0.0 放弃了对 CommonJS 的支持，完全作为纯 ESM 包发布，这与 Rspack 2.0 的生态对齐相呼应。虽然 Node.js 20+ 通过 require(esm) 减少了集成阻碍，但该版本让人们重新关注构建性能。该插件的维护者和 Rsbuild 都建议将 ESLint 作为独立进程运行，而不是在编译过程中运行，以避免成为构建瓶颈。这与 Rstack 生态系统向 Rslint 转变的大趋势相契合——Rslint 是一款基于 Go 的 Linter，其执行速度可提高 20 到 40 倍。
+2026-08-04 15:39:00
 
 
 
 ### [用了多年-React，Remix-终于“叛变”了：3.0-版本彻底重写](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290027&idx=4&sn=f662b185cf64ea2e165128221d5c42d5)
 
-2026-08-04 14:33:00 | 标签: React, Remix, 全栈框架, Web 标准, 命令式编程
-
-> 本文介绍了 Remix 3.0 Beta Preview 的重大架构变更：从 React 迁移到 Web 标准原生能力，重新定位为完整全栈框架。框架改用基于 Fetch API 的路由、控制器返回 Web Response 对象、表单提交到 URL，前端保留 JSX 但移除 React 运行时，采用基于 Preact 的分支版本及命令式模型。事件系统使用统一的 on 属性，异步任务通过 AbortController，服务器驱动 UI 通过 frames 实现。社区评价分化：部分开发者认为这是从函数式编程回归命令式编程的正向尝试，但也存在对生态变化成本、迁移难度及框架稳定性的质疑。与 Next...
+2026-08-04 14:33:00
 
 
 

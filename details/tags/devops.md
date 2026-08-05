@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-05 09:31:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-05 12:56:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,25 +584,19 @@
 
 ### [如何在-AWS-上实施-HIPAA-技术保护措施-完整指南](https://www.freecodecamp.org/news/how-to-implement-hipaa-technical-safeguards-on-aws-full-handbook/)
 
-2026-08-04 21:43:18 | 标签: HIPAA 合规, AWS 安全, 云基础设施, 加密, 访问控制
-
-> 本文提供了在 AWS 上实施 HIPAA 五项技术保护措施的详细技术指南。它将每项要求映射到具体的 AWS 服务和基础设施代码，包括通过 UUID 实现的唯一用户身份认证、自动会话终止、静态和传输中的加密、通过哈希链确保审计日志完整性，以及传输安全配置。指南强调通过具体命令和输出收集合规性证据，用于审计。同时还涵盖了 AWS 网络架构、BAA 要求、持续监控和预审计清单。代码示例包括用于用户身份管理、基于 JWT 的会话控制以及使用 AWS KMS 加密的 Python 实现。
+2026-08-04 21:43:18
 
 
 
 ### [Keyv-及其相关包在-npm-供应链攻击中被入侵](https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack)
 
-2026-08-04 21:22:34 | 标签: npm 供应链, 恶意软件, 凭证窃取, 开源安全, DevOps
-
-> 2026 年 8 月 4 日，攻击者攻陷了热门键值库 keyv（每周约 127M 次 npm 下载）维护者的 GitHub 账号，并借此发布了 keyv 及多个广泛使用的缓存工具（flat-cache、file-entry-cache、cacheable-request 等）的恶意版本。每个被入侵的软件包都被植入了两个混淆文件 setup.mjs 和 Math_Symbol.js，并带有一个 preinstall 钩子，在 npm install 期间自动执行投放器 setup.mjs。该投放器获取 Bun 运行时并运行 Math_Symbol.js——一个 728 KB 的载荷，能够收集大量...
+2026-08-04 21:22:34
 
 
 
 ### [你的-MVP-并不需要-Kubernetes-集群](https://stackoverflow.blog/2026/08/04/your-mvp-doesn-t-need-a-kubernetes-cluster/)
 
-2026-08-04 15:40:00 | 标签: 云基础设施, Kubernetes, 创业发展, DevOps, MVP
-
-> 本文是 Render CEO Anurag Goel 的访谈，探讨了初创公司在 MVP 阶段为何应优先考虑简单性，而非 Kubernetes 和复杂的云基础设施。Goel 分享了他在 Stripes 处理基础设施挑战的经验，以及这一经历如何催生了 Render——一个提供直观、可扩展基础设施的平台。对话涉及自管理应用的未来、DevOps 角色的演变，以及聚焦产品开发而非基础设施管理的重要性。在介绍 Render 的同时，讨论也为初创公司提供了关于平衡技术选择与业务目标的实用建议。
+2026-08-04 15:40:00
 
 
 
