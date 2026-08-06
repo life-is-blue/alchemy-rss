@@ -1,0 +1,51 @@
+{
+  "id": "RAW_aaebf84cc4",
+  "title": "强化 MCP 在 HTTP 上的安全性：反序列化攻击与头部泄漏",
+  "url": "https://dev.to/rishi_kora/hardening-mcp-over-http-desync-and-header-leakage-16p7",
+  "date": "2026-08-05 21:31:24",
+  "author": "AI Tech Connect",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-wrapper\">\n   <article class=\"crayons-card crayons-article mb-4\" id=\"article-show-container\" data-article-id=\"4323092\" data-article-slug=\"hardening-mcp-over-http-desync-and-header-leakage-16p7\" data-author-id=\"3071990\" data-author-name=\"AI Tech Connect\" data-author-username=\"rishi_kora\" data-co-author-ids=\"\" data-path=\"/rishi_kora/hardening-mcp-over-http-desync-and-header-leakage-16p7\" data-pin-path=\"/stories/feed/pinned_article\" data-pinned-article-id=\"\" data-published=\"true\" data-scheduled=\"false\" lang=\"en\">\n    <header class=\"crayons-article__header\" id=\"main-title\">\n     <div class=\"crayons-article__header__meta\">\n      <div class=\"flex s:items-start flex-col s:flex-row\">\n       <div class=\"flex flex-1 mb-5 items-start\">\n        <div class=\"relative\">\n         <a href=\"https://dev.to/rishi_kora\"><img class=\"radius-full align-middle\" src=\"https://media2.dev.to/dynamic/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3071990%2Fd50f0308-511d-4658-be70-131b97197229.png\" alt=\"AI Tech Connect\"></a>\n        </div>\n        <div class=\"pl-3 flex-1\">\n         <a href=\"https://dev.to/rishi_kora\" class=\"crayons-link fw-bold\">AI Tech Connect</a>\n         <p class=\"fs-xs color-base-60\">Posted on <time datetime=\"2026-08-05T13:31:24Z\" class=\"date-no-year\">Aug 5</time> • Originally published at <a style=\"color:#1395b8\" href=\"https://aitechconnect.in/tips/harden-mcp-http-desync-header-leakage-2026\">aitechconnect.in</a></p>\n        </div>\n       </div>\n      </div>\n      <div class=\"spec__tags flex flex-wrap\">\n       <a class=\"crayons-tag\" style=\"\n        --tag-bg: rgba(64, 78, 211, 0.10);\n        --tag-prefix: #404ED3;\n        --tag-bg-hover: rgba(64, 78, 211, 0.10);\n        --tag-prefix-hover: #404ED3;\n      \" href=\"https://dev.to/t/policy\"><span class=\"crayons-tag__prefix\">#</span>policy</a> <a class=\"crayons-tag\" style=\"\n        --tag-bg: rgba(64, 78, 211, 0.10);\n        --tag-prefix: #404ED3;\n        --tag-bg-hover: rgba(64, 78, 211, 0.10);\n        --tag-prefix-hover: #404ED3;\n      \" href=\"https://dev.to/t/deploymentinfra\"><span class=\"crayons-tag__prefix\">#</span>deploymentinfra</a> <a class=\"crayons-tag\" style=\"\n        --tag-bg: rgba(23, 253, 26, 0.10);\n        --tag-prefix: #17fd1a;\n        --tag-bg-hover: rgba(23, 253, 26, 0.10);\n        --tag-prefix-hover: #17fd1a;\n      \" href=\"https://dev.to/t/ai\"><span class=\"crayons-tag__prefix\">#</span>ai</a> <a class=\"crayons-tag\" style=\"\n        --tag-bg: rgba(229, 255, 227, 0.10);\n        --tag-prefix: #E5FFE3;\n        --tag-bg-hover: rgba(229, 255, 227, 0.10);\n        --tag-prefix-hover: #E5FFE3;\n      \" href=\"https://dev.to/t/machinelearning\"><span class=\"crayons-tag__prefix\">#</span>machinelearning</a>\n      </div>\n     </div>\n    </header>\n    <div class=\"crayons-article__main\">\n     <div class=\"crayons-article__body text-styles spec__body\" data-article-id=\"4323092\" id=\"article-body\">\n      <p><em>Originally published on <a href=\"https://aitechconnect.in/tips/harden-mcp-http-desync-header-leakage-2026\" target=\"_blank\" rel=\"noopener noreferrer\">AI Tech Connect</a>.</em></p>\n      <p>What the new spec put on your plate The Model Context Protocol specification version 2026-07-28 was published as final on 28 July 2026. It is the version most teams will standardise on for the rest of the year, and the important thing about it is not the feature list. The important thing is the redistribution of responsibility: the overhaul shifts critical security responsibilities from the protocol itself onto developers and platform operators. SecurityWeek characterised the new enterprise-ready specification as bringing new security challenges, which is a polite way of saying that a protocol which is now good enough for enterprises is also now interesting enough for people who attack enterprises. Concretely, the specification introduces MCP-specific HTTP headers, and those headers bring…</p>\n      <hr>\n      <p><strong><a href=\"https://aitechconnect.in/tips/harden-mcp-http-desync-header-leakage-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Read the full article on AI Tech Connect →</a></strong></p>\n     </div>\n    </div>\n    <section id=\"comments\" data-follow-button-container=\"true\" data-updated-at=\"2026-08-05 13:38:33 UTC\" class=\"text-padding mb-4 border-t-1 border-0 border-solid border-base-10\">\n     <header class=\"relative flex justify-between items-center mb-6\">\n      <div class=\"flex items-center\">\n       <h2 class=\"crayons-subtitle-1\">Top comments <span class=\"js-comments-count\" data-comments-count=\"0\">(0)</span></h2>\n      </div>\n      <div id=\"comment-subscription\" class=\"print-hidden\">\n       <div class=\"crayons-btn-group\">\n        <span class=\"crayons-btn crayons-btn--outlined\">Subscribe</span>\n       </div>\n      </div>\n     </header>\n     <div id=\"comments-container\" data-testid=\"comments-container\" data-commentable-id=\"4323092\" data-commentable-type=\"Article\" data-has-recent-comment-activity=\"true\">\n      <form class=\"comment-form print-hidden\" id=\"new_comment\" action=\"/comments\" accept-charset=\"UTF-8\" method=\"post\">\n       <input type=\"hidden\" name=\"authenticity_token\" value=\"NOTHING\" id=\"new_comment_authenticity_token\"> <input value=\"4323092\" autocomplete=\"off\" type=\"hidden\" name=\"comment[commentable_id]\" id=\"comment_commentable_id\"> <input value=\"Article\" autocomplete=\"off\" type=\"hidden\" name=\"comment[commentable_type]\" id=\"comment_commentable_type\"> <span class=\"crayons-avatar m:crayons-avatar--l mr-2 shrink-0\"> <img src=\"https://media2.dev.to/dynamic/image/width=256,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png\" alt=\"pic\" class=\"crayons-avatar__image overflow-hidden\" id=\"comment-primary-user-profile--avatar\" loading=\"lazy\"> </span>\n       <div class=\"comment-form__inner\">\n        <div class=\"comment-form__field\" data-tracking-name=\"comment_form_textfield\">\n         <textarea placeholder=\"Add to the discussion\" onfocus=\"handleFocus(event)\" onkeyup=\"handleKeyUp(event)\" onkeydown=\"handleKeyDown(event)\" oninput=\"handleChange(event)\" id=\"text-area\" required class=\"crayons-textfield comment-textarea crayons-textfield--ghost\" aria-label=\"Add a comment to the discussion\" name=\"comment[body_markdown]\">\n</textarea>\n        </div>\n        <div class=\"comment-form__buttons mb-4\">\n         <button type=\"submit\" class=\"crayons-btn mr-2 js-btn-enable\" onclick=\"validateField(event)\" data-tracking-name=\"comment_submit_button\" disabled>Submit</button>\n         <button type=\"button\" class=\"preview-toggle crayons-btn crayons-btn--secondary comment-action-preview js-btn-enable mr-2\" data-tracking-name=\"comment_preview_button\" disabled>Preview</button>\n        </div>\n       </div>\n      </form>\n     </div>\n     <div class=\"align-center\">\n      <nav class=\"fs-s align-center block\" aria-label=\"Conduct controls\">\n       <a href=\"https://dev.to/code-of-conduct\" class=\"crayons-link crayons-link--secondary\">Code of Conduct</a> <span class=\"opacity-25 px-2\" role=\"presentation\">•</span> <a href=\"https://dev.to/report-abuse\" class=\"crayons-link crayons-link--secondary\">Report abuse</a>\n      </nav>\n     </div>\n    </section>\n   </article>\n   <div class=\"pb-4 crayons-layout__comments-billboard\"></div>\n   <!-- Bottom content skipped via SKIP_BOTTOM_CONTENT config -->\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文分析了 MCP 2026-07-28 规范的安全影响，重点关注由新的 MCP 专用头部引入的 HTTP 反序列化攻击和头部泄漏漏洞。",
+  "oneSentenceSummary": "本文分析了 MCP 2026-07-28 规范的安全影响，重点关注由新的 MCP 专用头部引入的 HTTP 反序列化攻击和头部泄漏漏洞。",
+  "summary": "本文审视了模型上下文协议规范 2026-07-28 版本，强调了安全责任从协议本身向开发者和平台运营者的关键转变。文章聚焦于 MCP 专用 HTTP 头部的引入及其带来的攻击面，具体包括 HTTP 反序列化攻击和头部泄漏漏洞。作者认为，虽然该规范已具备企业级就绪性，但它也使协议成为对攻击者更具吸引力的目标。完整分析发布在 AI Tech Connect 上，DEV.to 的这篇文章作为摘要和链接。",
+  "mainPoints": [
+    {
+      "point": "MCP 2026-07-28 规范将安全责任从协议转移给了开发者。",
+      "explanation": "此次全面修订使协议达到了企业级就绪水平，但也引入了新的安全挑战，现在需要开发者和平台运营者自行管理。"
+    },
+    {
+      "point": "新的 MCP 专用 HTTP 头部创造了新的攻击面。",
+      "explanation": "这些头部可能被利用来发起 HTTP 反序列化攻击和头部泄漏，这些是经典的 Web 安全问题，如今也与 AI 基础设施相关。"
+    },
+    {
+      "point": "企业级就绪性会吸引攻击者。",
+      "explanation": "随着协议变得适用于企业环境，它也成为恶意行为者更有价值的目标，从而增加了对稳健安全加固的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "此次全面修订将关键的安全责任从协议本身转移到了开发者和平台运营者身上。",
+    "一个现在对企业来说足够好的协议，也足以引起攻击企业的人的兴趣。"
+  ],
+  "tags": [
+    "MCP 协议",
+    "AI 安全",
+    "LLM",
+    "HTTP",
+    "安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 164,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785936684000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-05 21:31:24"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "RAW_2a50c60150",
+  "title": "JioHotstar 详解流媒体规模下个性化广告请求背后的分布式工程",
+  "url": "https://www.infoq.com/news/2026/08/jiohotstar-ad-decisioning-flow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-05 22:09:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>JioHotstar has published an engineering overview of its <a href=\"https://blog.hotstar.com/journey-of-an-ad-request-the-hidden-engineering-e7b7f9921e46\">ad request workflow</a>, explaining how the streaming platform coordinates distributed services to select, deliver, and measure personalized advertisements during video playback. The architecture is designed to make real-time ad decisions within strict latency requirements while supporting large-scale streaming traffic and maintaining playback reliability.</p>\n   <p>An ad request begins when a viewer reaches an advertisement opportunity during content playback. The request contains contextual information required for ad selection, including content metadata, user context, device information, and available inventory details. The platform then processes the request through multiple backend components responsible for evaluating eligible advertisements, applying targeting rules, and generating the final response returned to the video player.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/08/jiohotstar-ad-decisioning-flow/news/2026/08/jiohotstar-ad-decisioning-flow/en/resources/1Screenshot 2026-08-02 at 3.54.09 PM-1785711446360.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/jiohotstar-ad-decisioning-flow/en/resources/1Screenshot 2026-08-02 at 3.54.09 PM-1785711446360.png\" rel=\"share\"></p>\n   <p><em>Flowchart indicating the steps taken in the ad server for decisioning (Source: <a href=\"https://blog.hotstar.com/journey-of-an-ad-request-the-hidden-engineering-e7b7f9921e46\">JioHotstar Blog Post)</a></em></p>\n   <p>The ad decision workflow involves multiple stages rather than a single lookup operation. JioHotstar describes using a waterfall tiering approach combined with pacing algorithms such as <a href=\"https://arxiv.org/pdf/1905.10928\">PID</a> and <a href=\"https://research.google/pubs/shale-an-efficient-algorithm-for-allocation-of-guaranteed-display-advertising-2/\">SHALE</a> to select a small number of advertisements for a 30-second ad pod from thousands of eligible candidates. These calculations help balance campaign delivery requirements, inventory allocation, and advertiser constraints while completing ad selection and response generation within 100 milliseconds, including during high concurrency events such as major live sports moments.</p>\n   <p>Commenting on the engineering post, <a href=\"https://www.linkedin.com/in/pawan-nagar-5176182a/\">Pawan Nagar</a>, Engineering Leader, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7484916237358182400?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7484916237358182400%2C7489633744228896768%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287489633744228896768%2Curn%3Ali%3Aactivity%3A7484916237358182400%29\">noted</a> that ad serving involves backend challenges beyond API communication:</p>\n   <blockquote>\n    <p>Serving an ad is much more than just calling an API. Managing low latency, handling huge traffic, using caching, and keeping services reliable are the real backend challenges.</p>\n   </blockquote>\n   <p>The platform supports multiple advertising formats, including <a href=\"https://en.wikipedia.org/wiki/Video_advertising\">pre-roll</a> and mid-roll video advertisements, along with display-based formats integrated into the streaming experience. After an advertisement is delivered, additional systems collect delivery signals such as impressions and engagement events to support campaign reporting and measurement.</p>\n   <p><a href=\"https://www.linkedin.com/in/ayushk23/\">Ayush Kumar</a> describes engineering challenge involves coordinating services responsible for advertisement inventory, decisioning, content metadata, tracking, and analytics while maintaining low latency. Distributed ad platforms also need mechanisms for handling failures, retries, and partial service availability so that temporary issues in individual components do not disrupt playback. Operating these systems requires collaboration between advertising, platform engineering, and reliability teams to validate campaign behavior, monitor service health, and troubleshoot issues across the request path.</p>\n   <p>The architecture described by JioHotstar follows patterns used across digital advertising platforms. OpenRTB, an industry standard maintained by the Interactive Advertising Bureau (IAB), defines communication protocols between advertising buyers and sellers in programmatic advertising ecosystems.<a href=\"https://iabtechlab.com/standards/openrtb/?utm_source=chatgpt.com\"> IAB Tech Lab OpenRTB Specification</a>, while OpenRTB focuses on interoperability between advertising participants, streaming platforms typically build additional internal services for personalization, content-aware targeting, and business-specific decision logic.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"JioHotstar Explains the Distributed Engineering Behind Personalized Ad Requests at Streaming Scale\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/jiohotstar-ad-decisioning-flow/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1785938940000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "JioHotstar 详细介绍了其个性化广告请求系统背后的分布式工程工作流程，解释了该系统如何在流媒体规模下，协调多个服务在 100ms 延迟内选择和投放广告。",
+  "oneSentenceSummary": "JioHotstar 详细介绍了其个性化广告请求系统背后的分布式工程工作流程，解释了该系统如何在流媒体规模下，协调多个服务在 100ms 延迟内选择和投放广告。",
+  "summary": "本文总结了 JioHotstar 的一篇工程博客文章，该文章阐释了其个性化广告请求系统的架构和工作流程。文章描述了当观众遇到广告机会时，广告请求是如何发起的，该请求包含上下文数据，如内容元数据、用户上下文和设备信息。然后，系统通过多个后端组件处理该请求，使用带有 pacing 算法（PID 和 SHALE）的瀑布式分层方法，从数千个候选广告中为 30 秒的广告段选择少量广告，整个过程在 100ms 的延迟预算内完成。文章还涵盖了在维护可靠性和处理故障的同时，协调库存、决策、跟踪和分析服务所面临的挑战。文章指出，该架构遵循 OpenRTB 等行业模式，但增加了用于个性化和内容感知定向的内部服务。",
+  "mainPoints": [
+    {
+      "point": "广告请求工作流程涉及多个协调阶段，而非单次查找。",
+      "explanation": "JioHotstar 的系统使用带有 pacing 算法（PID 和 SHALE）的瀑布式分层方法，在 100ms 的延迟预算内，从数千个候选广告中选出少量广告。"
+    },
+    {
+      "point": "实时广告决策需要平衡广告活动投放、库存和广告主约束。",
+      "explanation": "该平台必须在直播体育赛事期间处理高并发，同时通过使用缓存和可靠的服务协调来满足严格的延迟要求。"
+    },
+    {
+      "point": "分布式广告平台需要强大的故障处理和部分可用性机制。",
+      "explanation": "单个组件中的临时问题不得中断播放，这需要广告、平台工程和可靠性团队之间的协作。"
+    }
+  ],
+  "keyQuotes": [
+    "投放广告远不止调用一个 API。管理低延迟、处理海量流量、使用缓存以及保持服务可靠，才是真正的后端挑战。"
+  ],
+  "tags": [
+    "系统设计",
+    "后端开发",
+    "分布式系统",
+    "广告技术",
+    "流媒体"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 433,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785938940000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-05 22:09:00"
+}

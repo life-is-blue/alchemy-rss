@@ -1,0 +1,55 @@
+{
+  "id": "RAW_435670edf6",
+  "title": "花旗集团、爱达荷州和 Build‑A‑Bear 对我发起了协调攻击",
+  "url": "https://knock-knock.net/blog/citigroup-idaho-build-a-bear/",
+  "date": "2026-08-05 23:01:26",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"wrap\">\n   <p class=\"tagline\"><img class=\"robot\" src=\"https://knock-knock.net/static/robot1.png\" alt=\"\">knock-knock.net</p>\n   <p class=\"deck\">A multinational bank, a US state, and a custom teddy-bear workshop all unwittingly joined the same phone-fraud botnet. Here's how to check whether one of your own machines got caught in the same honeypot.</p>\n   <p class=\"date\">August 5, 2026</p>\n   <p>On August 1st, Citigroup, the State of Idaho, and Build-A-Bear launched a coordinated attack on me. They weren't alone. Lockheed Martin joined in, along with the Spanish National Police, the Los Angeles Superior Court, SoftBank, Argentina's state oil company, a Swiss canton, a UK hedge fund, two universities, a hospital, and three additional international banks. A partial list of these organizations is at the bottom of this post.</p>\n   <p>Over the next 27 hours, in four distinct waves, all of them tried to use my VoIP (SIP) server to place phone calls on my dime. This is a scam called International Revenue Share Fraud (IRSF). The idea is simple: the attacker gets your phone system to dial an international premium-rate number that they secretly own, and they pocket a cut of every minute. It's the phone version of an open mail relay, and my server was being probed as the open relay.</p>\n   <p>Here's what makes \"coordinated\" more than a figure of speech. Every one of these networks tried to dial the same phone number, and they spoofed the same small set of fake caller IDs: the same handful that surfaced, in the same waves, on servers I run in Los Angeles, New York, and Tokyo. Unrelated infected machines don't independently choose the same disguises, target, and timing. These bots were all taking orders from the same place.</p>\n   <p>Obviously none of this was sanctioned by Citigroup, Idaho, or Build-A-Bear. What almost certainly happened is more mundane. An employee clicked a bad link, or brought an infected laptop onto the network, and a bot quietly went to work. That bot is now sitting inside a corporate or government network, dialing out to a fraud ring, and it presumably has access to whatever else is on that network.</p>\n   <p>No harm was done to me. My SIP server is one of a set of honeypots that has now recorded over 11.5 million protocol attacks, and it logs exactly what each attacker was trying to do. But if I were Citigroup, or the State of Idaho, or Build-A-Bear, I'd be less concerned about showing up in this dataset, and more concerned about having a rogue machine on my network.</p>\n   <h2>Check your own network</h2>\n   <p>The good news is that it is trivial to find these rogue machines. Here is a free and easy API that lets you look up whether any recorded attacks came from your network, providing open access to some of the honeypot's historic data. You can check a whole ASN, a set of CIDR ranges, or a single IP, with no signup and no API key.</p>\n   <p>The API is dirt simple. You can paste these into a browser, or curl them from the command line:</p>\n   <pre class=\"endpoints\"><code>https://api.knock-knock.net/check-asn?asn=&lt;your network number&gt;\nhttps://api.knock-knock.net/check-ranges?ranges=&lt;your CIDRs&gt;\nhttps://api.knock-knock.net/ip/&lt;your IP address&gt;</code></pre>\n   <p>Here's what came back when I checked Build-A-Bear's network (ASN 21811):</p>\n   <pre><code>curl 'https://api.knock-knock.net/check-asn?asn=21811'\n\n{\n  \"list\": \"year\",\n  \"generated_at\": \"2026-08-05T05:00:00Z\",\n  \"asn\": 21811,\n  \"isp\": \"Build-A-Bear Workshop, Inc.\",\n  \"hit_count\": 1,\n  \"total_matched\": 1,\n  \"truncated\": false,\n  \"hits\": [\n    {\n      \"ip\": \"104.238.197.106\",\n      \"hits\": 11,\n      \"first_seen\": \"2026-08-01 21:44:56\",\n      \"last_seen\": \"2026-08-03 06:01:49\",\n      \"protocols\": [ { \"proto\": \"SIP\", \"hits\": 11, \"last_seen\": \"2026-08-03 06:01:49\" } ]\n    }\n  ]\n}</code></pre>\n   <p>The result lists one IP, caught eleven times probing for SIP toll fraud. If that were your ASN, this is the machine to find and isolate. This story is about SIP, but the honeypot watches many protocols, so the same call would report attacks via SSH, RDP, SMB, HTTP, and more.</p>\n   <p>I would hope that the Citigroup and Lockheed Martin security teams would catch this kind of thing before a bot ever reaches outside their walls. However, they did not, and running a check like this every day is cheap insurance. A rogue machine that can reach my server can also reach the rest of your network, and that is the part that should actually worry you.</p>\n   <ul class=\"links\">\n    <li><span class=\"label\">More on the API:</span><a href=\"https://api.knock-knock.net\">api.knock-knock.net</a></li>\n    <li><span class=\"label\">The honeypot itself:</span><a href=\"https://knock-knock.net\">knock-knock.net</a></li>\n    <li><span class=\"label\">The code (MIT license):</span><a href=\"https://github.com/djkurlander/knock-knock\">github.com/djkurlander/knock-knock</a></li>\n   </ul>\n   <h2>All part of the attack</h2>\n   <table>\n    <thead>\n     <tr>\n      <th>Organization</th>\n      <th>ASN</th>\n      <th>Sector</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td class=\"org\">Lockheed Martin Corporation</td>\n      <td class=\"asn\">6075</td>\n      <td>Defense contractor</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Citigroup Inc.</td>\n      <td class=\"asn\">1696</td>\n      <td>Global bank</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Build-A-Bear Workshop</td>\n      <td class=\"asn\">21811</td>\n      <td>Toy retailer</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Direccion General de la Guardia Civil</td>\n      <td class=\"asn\">212377</td>\n      <td>Spanish national police</td>\n     </tr>\n     <tr>\n      <td class=\"org\">State of Idaho</td>\n      <td class=\"asn\">54885</td>\n      <td>US state government</td>\n     </tr>\n     <tr>\n      <td class=\"org\">State of Nebraska / Office of the CIO</td>\n      <td class=\"asn\">2769</td>\n      <td>US state government</td>\n     </tr>\n     <tr>\n      <td class=\"org\">City and County of Denver</td>\n      <td class=\"asn\">18815</td>\n      <td>US city government</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Los Angeles Superior Court of California</td>\n      <td class=\"asn\">33015</td>\n      <td>US court system</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Etat du Valais</td>\n      <td class=\"asn\">214217</td>\n      <td>Swiss cantonal government</td>\n     </tr>\n     <tr>\n      <td class=\"org\">YPF S.A.</td>\n      <td class=\"asn\">27655</td>\n      <td>Argentine state oil company</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Kalpataru Power</td>\n      <td class=\"asn\">140154</td>\n      <td>Indian power infrastructure</td>\n     </tr>\n     <tr>\n      <td class=\"org\">SoftBank Corp.</td>\n      <td class=\"asn\">17676</td>\n      <td>Japanese conglomerate</td>\n     </tr>\n     <tr>\n      <td class=\"org\">LG CNS</td>\n      <td class=\"asn\">4668</td>\n      <td>South Korean IT services</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Marshall Wace Asset Management</td>\n      <td class=\"asn\">203818</td>\n      <td>UK hedge fund</td>\n     </tr>\n     <tr>\n      <td class=\"org\">American University of Beirut</td>\n      <td class=\"asn\">12812</td>\n      <td>University</td>\n     </tr>\n     <tr>\n      <td class=\"org\">The New School</td>\n      <td class=\"asn\">27616</td>\n      <td>US university (NYC)</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Jisc Services</td>\n      <td class=\"asn\">786</td>\n      <td>UK education/research backbone</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Madison Co Memorial Hospital</td>\n      <td class=\"asn\">394139</td>\n      <td>US hospital</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Turkiye Garanti Bankasi</td>\n      <td class=\"asn\">12903</td>\n      <td>Turkish bank</td>\n     </tr>\n     <tr>\n      <td class=\"org\">Cairo Amman Bank</td>\n      <td class=\"asn\">48701</td>\n      <td>Jordanian bank</td>\n     </tr>\n     <tr>\n      <td class=\"org\">CSCBank SAL</td>\n      <td class=\"asn\">34370</td>\n      <td>Lebanese bank</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n </body>\n</html>",
+  "aiSummary": "作者描述了一个全球僵尸网络如何侵入花旗集团、洛克希德·马丁等大型组织的网络，并通过 SIP 蜜罐进行国际收入分成欺诈（IRSF）。",
+  "oneSentenceSummary": "作者描述了一个全球僵尸网络如何侵入花旗集团、洛克希德·马丁等大型组织的网络，并通过 SIP 蜜罐进行国际收入分成欺诈（IRSF）。",
+  "summary": "本文详细阐述了一场协调的电话欺诈行动，感染了来自多家高调组织——包括全球银行、政府机构和企业——的机器被用作僵尸，去探测作者的 SIP（VoIP）蜜罐。攻击者试图通过强制系统拨打高价国际号码来实施国际收入分成欺诈（IRSF）。作者解释了攻击的工作原理，提供了通过共享来电号码和时间点显示协调性的证据，并提供了一个免费 API，供网络管理员检查其 ASN 或 IP 是否已在蜜罐数据中被标记。",
+  "mainPoints": [
+    {
+      "point": "通过 SIP 蜜罐检测到一次协调的 IRSF 攻击。",
+      "explanation": "作者观察到多个高调组织试图将其 VoIP 服务器用作开放中继，以拨打高价号码，这是一种国际收入分成欺诈的典型迹象。"
+    },
+    {
+      "point": "显示出集中式僵尸网络指挥结构的证据。",
+      "explanation": "攻击被认定为‘协调的’，因为不同网络使用相同的伪造来电号码，针对相同的号码，并在不同全球地区以相同的波次进行攻击。"
+    },
+    {
+      "point": "企业网络内部‘流氓机器’的危险。",
+      "explanation": "这些僵尸的存在表明内部机器已被攻陷（例如通过钓鱼），意味着攻击者可能已获得对敏感企业或政府网络的横向访问权限。"
+    },
+    {
+      "point": "提供用于网络审计的公共工具。",
+      "explanation": "作者提供了一个简易 API，允许管理员将其 ASN 或 IP 与蜜罐的历史数据进行查询，以识别并隔离受侵资产。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM 是助手，而非能够自主可靠编写代码的存在。",
+    "能够访问我的服务器的流氓机器同样可以访问你网络的其余部分，这才是应该让你真正担忧的地方。"
+  ],
+  "tags": [
+    "网络安全",
+    "SIP",
+    "蜜罐",
+    "僵尸网络",
+    "网络安全"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 838,
+  "domain": "knock-knock.net",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1785942086000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-05 23:01:26"
+}
