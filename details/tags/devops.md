@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-06 09:28:45 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-06 12:56:46 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,17 +584,13 @@
 
 ### [域名结账后的新设置页面---Vercel](https://vercel.com/changelog/new-setup-page-after-domain-checkout)
 
-2026-08-06 01:00:00 | 标签: 云原生 / DevOps, 开发工具, DNS, 域名, Vercel
-
-> Vercel 的新域名设置页面在购买后立即出现，显示实时注册状态，并在域名就绪时解锁配置选项。用户可以部署新项目（域名预选中）、连接现有项目、通过 Vercel 的 CDN 和防火墙将流量代理到外部源站、将访问者重定向到另一个 URL，或使用 Google Workspace、Outlook、iCloud、Proton Mail、Zoho、Mailgun、ImprovMX 和 Bluesky 句柄等提供商的 DNS 预设来设置邮箱。如果注册失败，页面会显示错误和退款状态。并提供“管理 DNS 记录”链接以进行手动配置。
+2026-08-06 01:00:00
 
 
 
 ### [Drew-Penrod-|-Qoda-JetBrains-博客](https://blog.jetbrains.com/qodana/2026/08/qodana-user-spotlight-meet-fullstack-software-engineer-drew-penrod/)
 
-2026-08-05 16:17:16 | 标签: DevOps, 代码质量, 静态分析, 安全性, CI/CD
-
-> 本篇访谈介绍了 DevSecOps 工程师 Drew Penrod，他讨论了采用 Qodana 以解决碎片化的代码质量标准和安全可见性问题。面对多个代码库中 linting（代码检查）不一致和手动审查流程带来的挑战，团队利用 Qodana 统一了静态分析、依赖项扫描和许可证审计。文章重点介绍了渐进式的推广策略、IDE 与 CI 集成对开发者反馈的重要性，以及该工具如何支持 CIS Controls v8 和 NIST CSF 2.0 等合规框架。
+2026-08-05 16:17:16
 
 
 
