@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-07 10:07:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-07 13:28:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,17 +584,13 @@
 
 ### [GitHub---V4bel/Zapscape](https://github.com/V4bel/Zapscape)
 
-2026-08-07 00:24:36 | 标签: KVM, 虚拟化, 安全, 漏洞, Linux 内核
-
-> 本文介绍了由 Hyunwoo Kim (@v4bel) 发现的严重 KVM 逃逸漏洞 Zapscape（CVE-2026-64561）。这是 KVM/x86 在影子页回收过程中，影子 MMU 递归清除路径里的一个释放后使用漏洞。该漏洞允许客户机（L1）利用嵌套虚拟化（L2）触发配额回收，并在没有 root_count 防护的情况下进行递归清除，从而以内核权限逃逸到宿主（L0）。PoC 针对 AMD SVM/NPT，并在 QEMU TCG 上演示了完整利用链。受影响的内核版本从 2020 年 7 月到 2026 年 7 月。文章详细说明了利用结构（L0 宿主、L1 客户机、L2 嵌套客户机），提...
+2026-08-07 00:24:36
 
 
 
 ### [Wiz-披露-CosmosEscape-漏洞，安全从业者探讨客户本可采取何种应对措施](https://www.infoq.com/news/2026/08/cosmosescape-master-key/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-06 17:21:00 | 标签: 云安全, Azure, Cosmos DB, 漏洞, Wiz
-
-> Wiz Research 披露了 Azure Cosmos DB 中的一个严重漏洞链 "CosmosEscape"，该漏洞允许对该服务上的所有数据库进行完全的读写访问。漏洞利用始于一个精心构建的 Gremlin 查询，该查询绕过了 .NET 反射限制，从而在多租户 DB Gateway 上实现了代码执行。这暴露了 "Cosmos 主密钥"（Cosmos Master Key），这是一个平台级的机密，能够获取任何 Cosmos DB 账户的主密钥，包括微软自身的后台服务（如 Teams 和 Copilot）。尽管微软已完全修复了该缺陷且无需客户采取任何行动，但该事件引发了行业内关于保护运行中的多...
+2026-08-06 17:21:00
 
 
 
