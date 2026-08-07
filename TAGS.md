@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-07 07:49:59 | [返回首页](/README.md)
+**更新时间**: 2026-08-07 10:07:05 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14473)
-- [软件架构](#architecture) (22)
+- [AI & 大模型](#ai-llm) (14519)
+- [软件架构](#architecture) (23)
 - [前端与全栈](#frontend-fullstack) (916)
-- [DevOps](#devops) (693)
+- [DevOps](#devops) (695)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6494)
+- [其他](#other) (6507)
 
 
 ---
@@ -43,7 +43,7 @@
 - [从“会说”走向“会创作”｜Seed-Audio-1.0-音频创作模型发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494117&idx=1&sn=479ffb4e9fc90fa66d5bf531a84376a7) - AI 精选
 - [AI-Overviews-让谷歌陷入麻烦，GPT-Live-将推理置于后台，如何判断你的模型是否具有操控性](https://www.deeplearning.ai/the-batch/issue-362) - AI 精选
 
-- [查看全部 14473 篇...](/details/tags/ai-llm.md)
+- [查看全部 14519 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -55,6 +55,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [读取路径-与-写入路径：策略与技术](https://blog.bytebytego.com/p/the-read-path-versus-the-write-path) - 编程 更多
 - [超越-CLEAN-与-MVP：在-Android-中构建离线优先的响应式数据层](https://www.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [Netflix-构建集中式数据删除平台的架构实践](https://www.infoq.com/presentations/architecting-deletion-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [QCon-London-2026：引入-Tansu.io-—-重新思考-Kafka-的精简运营](https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
@@ -70,9 +71,8 @@
 - [从小不学好-，影刀-+-ddddocr-实现图片验证码认证自动化](https://juejin.cn/post/7531696180239466531) - 编程 更多
 - [APM-最佳实践指南：工程师必知该做与不该做的事项](https://www.elastic.co/blog/apm-best-practices) - 编程 更多
 - [想给面试官吹-DDD-吗？项目像搭积木一样运行：领域驱动设计（DDD）让复杂业务变简单](https://juejin.cn/post/7519812174899478582) - 编程 更多
-- [浅谈团队代码风格/结构一致性](http://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650539951&idx=1&sn=6aac8c34c6d1d680caf981ea285c6d79) - 编程 更多
 
-- [查看全部 22 篇...](/details/tags/architecture.md)
+- [查看全部 23 篇...](/details/tags/architecture.md)
 
 
 ## <a id="frontend-fullstack"></a>前端与全栈
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 693 篇...](/details/tags/devops.md)
+- [查看全部 695 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 
-- [查看全部 6494 篇...](/details/tags/other.md)
+- [查看全部 6507 篇...](/details/tags/other.md)
 
 

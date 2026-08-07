@@ -1,0 +1,51 @@
+{
+  "id": "RAW_2c9f04bd1e",
+  "title": "发布：Datasette 1.0a38",
+  "url": "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything",
+  "date": "2026-08-07 02:24:34",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">6th August 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/datasette/releases/tag/1.0a38\">datasette 1.0a38</a></span> <span class=\"beat-commit\">— An open source multi-tool for exploring and publishing data</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <p>This release fixes a <strong>SQL injection</strong> security issue that affects Datasette instances that serve a <strong>mixture of public and private tables</strong> in the same database, with access configured using the <a href=\"https://docs.datasette.io/en/latest/authentication.html\">Datasette permissions system</a>.</p>\n       <p>Site administrators who serve private tables in this way are advised to disable the <a href=\"https://docs.datasette.io/en/latest/authentication.html#execute-sql\">execute-sql permission</a> <actions_execute_sql>` on that database to prevent users from accessing private tables using raw SQL queries. The bug that has been fixed would have allowed users with access to any public table to execute SQL injection attacks despite that restriction, giving them read-only access to data in private tables in the same database.</actions_execute_sql></p>\n       <p>This fix is also available in <a href=\"https://simonwillison.net/2026/Aug/6/datasette-2/\">Datasette 0.65.3</a>.</p>\n      </blockquote>\n      <p>Thankfully this particular configuration - private tables and public tables exposed for the same database within the same instance - is likely to be rare. I've not encountered an instance like that myself.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4818/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Datasette 1.0a38 修复了一个 SQL 注入漏洞，该漏洞影响在同一个数据库中使用基于权限的访问控制同时提供公共表和私有表的实例。",
+  "oneSentenceSummary": "Datasette 1.0a38 修复了一个 SQL 注入漏洞，该漏洞影响在同一个数据库中使用基于权限的访问控制同时提供公共表和私有表的实例。",
+  "summary": "Simon Willison 宣布发布 Datasette 1.0a38，这是一个针对 SQL 注入漏洞的安全版本。该漏洞影响使用 Datasette 权限系统在同一数据库中混合配置公共表和私有表的实例。即使禁用了 execute-sql 权限，能够访问任意公共表的用户也可能利用该漏洞发起 SQL 注入攻击，获得同一数据库中私有表的只读访问权限。建议管理员在受影响的数据库上禁用 execute-sql 权限作为缓解措施。此修复也已向后移植到 Datasette 0.65.3。Willison 指出，这种配置可能很少见。",
+  "mainPoints": [
+    {
+      "point": "SQL 注入漏洞已在 Datasette 1.0a38 和 0.65.3 中修复。",
+      "explanation": "该漏洞允许能够访问公共表的用户注入 SQL 并读取同一数据库中的私有表，从而绕过权限限制。"
+    },
+    {
+      "point": "影响那些基于权限访问控制、同时暴露公共表和私有表的实例。",
+      "explanation": "只有使用 Datasette 权限系统在同一数据库中同时提供公共表和私有表的部署才会受到影响。"
+    },
+    {
+      "point": "临时解决方案：在数据库上禁用 execute-sql 权限。",
+      "explanation": "在升级之前，网站管理员应禁用 execute-sql 权限，以防止对私有表执行原始 SQL 查询访问。"
+    }
+  ],
+  "keyQuotes": [
+    "此版本修复了一个 SQL 注入安全问题，影响在同一数据库中既提供公共表又提供私有表、并使用 Datasette 权限系统配置访问权限的 Datasette 实例。",
+    "幸运的是，这种特定配置——同一实例中同时暴露同一数据库的私有表和公共表——可能很少见。"
+  ],
+  "tags": [
+    "安全",
+    "开源",
+    "Datasette",
+    "SQL 注入",
+    "漏洞"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 158,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786040674000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-07 02:24:34"
+}

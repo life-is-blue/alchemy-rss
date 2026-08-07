@@ -1,0 +1,56 @@
+{
+  "id": "RAW_0d438e3381",
+  "title": "Herdr 加入 Y Combinator。运行时保持开源。 — Herdr 博客",
+  "url": "https://herdr.dev/blog/herdr-is-joining-y-combinator/",
+  "date": "2026-08-07 03:14:21",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"article-meta\"><a href=\"https://herdr.dev/blog/\">← Blog</a> <time datetime=\"2026-08-06T00:00:00.000Z\"> August 6, 2026 </time></p>\n  <hr class=\"article-rule\">\n  <div class=\"prose\">\n   <p>Hey everyone, it’s Can, the only person behind Herdr. This post is about how I decided to change that.</p>\n   <p>Four months ago I was looking for another job. Thinking about where to go career-wise. Thinking about software engineering and its future in general, my hobby projects, applications, whiteboard interviews (I still can’t believe we do those). And at some point it hit me: I am the bottleneck.</p>\n   <p>This is a management and engineering problem. I don’t want to install an app or learn a new tool just to manage my agents and my development style. I want something that fits me. You know how every company releases their own agent these days? No, don’t do that. Let my agent integrate with your product, don’t offer me another agent.</p>\n   <p>Same idea here. I didn’t like what I tried, so why not build it? So I built a runtime. But what is a runtime?</p>\n   <h2 id=\"runtime\">Runtime</h2>\n   <p>CLI coding agents run in terminals, and terminals have always been our home: editing code (yes, nvim chads), running servers, navigating projects, maintaining CI, machines, configurations. It’s the root. It’s the connection. So agents need first class primitives there.</p>\n   <p>A terminal pane belongs to an agent. A pane belongs to a tab. Tabs belong to a project.</p>\n   <p>They need to be persistent. We have agents running for hours now, sometimes days. And once you have the runtime, where they run stops mattering. <strong>You should be able to run them anywhere and keep them running.</strong></p>\n   <p>That’s where Herdr was born. But a runtime without an interface is nothing, so: the TUI.</p>\n   <h2 id=\"tui\">TUI</h2>\n   <p>The TUI is the UI I use every day, and it carried Herdr this far. Not because it’s a UI, but because it shows the concepts Herdr believes in: tracking agents at a glance, dividing work between projects instead of getting lost in a pile of agents, being alerted only when an agent actually needs you.</p>\n   <p>It also has one big advantage, and it’s the reason it stays first class forever: it’s bundled. Install Herdr on your VPS, ssh in, and your UI is already there. Or run <code>herdr --remote user@host</code> and it installs itself. Depending on your network speed, you’re a couple of seconds away from an agent running. One command and you’re in. Nothing beats that.</p>\n   <p>Still, the TUI was never meant to be the only client. A runtime means people can build on top of it, and people did! A <a href=\"https://x.com/vladscale/status/2080195067088871582\">Raycast extension</a>, a <a href=\"https://x.com/timvdhoorn/status/2067907258260795808\">Stream Deck with buttons for herdr</a>, an <a href=\"https://x.com/imnotchalk/status/2077647387414384936\">iOS app</a> that drives a whole session from a phone. More than 500 plugins, one month after the marketplace released. I didn’t build any of these.</p>\n   <p>The TUI has its limits too. Some of the ideas in my head are hard to build inside a terminal, and I trust terminals, but Herdr will need more clients. More on that later.</p>\n   <h2 id=\"where-we-are-now\">Where we are now</h2>\n   <p>So a solo project reached <strong>25k stars and 340k downloads</strong>, and it became more than one person can carry.</p>\n   <p>Herdr is joining <span style=\"color:#fb651e\">Y Combinator, F26 batch</span>. I’m excited to make Herdr a company that builds a developer tool for anyone juggling agents all day. I want to build a small team: people who keep the runtime healthy, robust, fast, running anywhere easily, and more extensible. Letting you do more while Herdr stays small.</p>\n   <p>The runtime, what you use right now, stays free. Apache-2.0. That’s why I recently switched it from AGPL to Apache: I want everyone to use Herdr freely, without any problem.</p>\n   <h2 id=\"where-were-going\">Where we’re going</h2>\n   <p>I want to build on top of the open Herdr runtime like everyone else. I’ll keep supporting the open source while building the features people really need. The demand is already visible: multiple clients, a laptop, a VPS for the six hour job, a sandbox for risky code and ephemeral agents. Herdr can run anywhere today, but those machines are disconnected.</p>\n   <p><strong>It should be connected.</strong></p>\n   <p>There are many more features in my head, but I don’t want to rush. People keep telling me they love that Herdr stays lean, and that’s what I want to protect. In an age where adding one more feature costs nothing, choosing what goes in the core is the most important decision, I believe. So the core stays small, and everything else stays possible through extensions: your style, your flows, your company’s setup, your themes, your crazy ideas.</p>\n   <p>Thank you for getting Herdr this far. Thanks for the support, for sharing the love. You have no idea how grateful I am.</p>\n   <p>Anyway, back to work.</p>\n   <p><img src=\"https://herdr.dev/assets/where-do-agents-run-while-you-sleep.png\" alt=\"A ram, asleep above the clouds. Or working, hard to tell.\"></p>\n  </div>\n  <aside class=\"author-card\" aria-label=\"About the author\">\n   <img class=\"author-photo\" src=\"https://herdr.dev/assets/author-can.jpeg\" alt=\"Can Celik\" loading=\"lazy\" decoding=\"async\">\n   <div class=\"author-body\">\n    <p class=\"author-name\">Can Celik</p>\n    <p class=\"author-role\">Building Herdr</p>\n    <div class=\"author-links\">\n     <a href=\"https://x.com/cancelik\" target=\"_blank\" rel=\"me noopener\" aria-label=\"Can Celik on X\"> <span>X</span> </a> <a href=\"https://herdr.dev/cdn-cgi/l/email-protection#f291939cb29a97809680dc969784\" aria-label=\"Email Can Celik\"> <span>Email</span> </a>\n    </div>\n   </div>\n  </aside>\n </body>\n</html>",
+  "aiSummary": "Herdr 创始人 Can Celik 宣布 AI Agent 运行时将加入 Y Combinator F26 批次，将继续以 Apache-2.0 许可证保持开源，并计划组建小团队让运行时更健壮、跨机器连接更顺畅，同时保持核心精简且可扩展。",
+  "oneSentenceSummary": "Herdr 创始人 Can Celik 宣布 AI Agent 运行时将加入 Y Combinator F26 批次，将继续以 Apache-2.0 许可证保持开源，并计划组建小团队让运行时更健壮、跨机器连接更顺畅，同时保持核心精简且可扩展。",
+  "summary": "终端原生的 CLI 编码 Agent 运行时 Herdr 宣布入选 Y Combinator F26 批次。创始人 Can Celik 阐述产品理念：Agent 运行在终端 —— 开发者的天然主场，Herdr 提供持久化运行时并内置 TUI，通过 SSH 零配置即可工作。项目已获 25k GitHub Star 和 340k 下载量，插件市场一个月内吸引 500+ 社区扩展（含 Raycast、Stream Deck、iOS 客户端）。运行时将永久免费开源（近期从 AGPL 变更为 Apache-2.0）。Celik 计划组建小团队强化运行时，让其轻松运行在任何环境，并连接分散的机器（笔记本、VPS、沙箱），同时保持核心极简并通过插件扩展。",
+  "mainPoints": [
+    {
+      "point": "Herdr 是面向 AI 编码 Agent 的持久化终端运行时，而非又一个 Agent。",
+      "explanation": "Celik 认为开发者不需要更多 Agent，而需要一个运行时，让偏好的 Agent 能与任何工具集成。Herdr 在终端提供一流原语：持久化面板、标签页和项目，能支撑 Agent 连续工作数小时甚至数天。"
+    },
+    {
+      "point": "内置 TUI 是战略优势：在 VPS 安装 Herdr，SSH 连入即刻获得 UI。",
+      "explanation": "终端 UI 无需单独安装客户端。运行 `herdr --remote user@host` 即可在几秒内自动安装并连接。这种无摩擦的远程访问是核心差异化优势，Celik 承诺永远保持一流体验。"
+    },
+    {
+      "point": "社区扩展性已验证平台模型：一个月内 500+ 插件与多个替代客户端。",
+      "explanation": "Celik 未亲自构建，开发者已创建 Raycast 扩展、Stream Deck 集成、iOS App 及数百个插件。这验证了运行时即平台的路径：核心保持精小，扩展承载多样工作流。"
+    },
+    {
+      "point": "Y Combinator 支持将资助小团队强化运行时并连接分散机器。",
+      "explanation": "下一阶段聚焦让运行时更健壮、更快速，并能协调运行在笔记本、长期运行的 VPS 任务、临时沙箱中的 Agent —— 同时保持精简核心与 Apache-2.0 许可证。"
+    }
+  ],
+  "keyQuotes": [
+    "你应该能在任何地方运行它们，并让它们持续运行。",
+    "在增加一个功能零成本的时代，选择什么进入核心是最重要的决策，我相信。",
+    "让我的 Agent 集成你的产品，别再给我推销另一个 Agent。"
+  ],
+  "tags": [
+    "AI Agent",
+    "AI 编程",
+    "开发者工具",
+    "Vibe Coding",
+    "Y Combinator"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 768,
+  "domain": "herdr.dev",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786043661000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-07 03:14:21"
+}

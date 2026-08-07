@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-07 07:49:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-07 10:07:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -27,6 +27,14 @@
 ### [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-08 00:00:00
+
+
+
+### [读取路径-与-写入路径：策略与技术](https://blog.bytebytego.com/p/the-read-path-versus-the-write-path)
+
+2026-08-06 23:31:50 | 标签: 读取路径, 写入路径, CQRS, 数据架构, 缓存
+
+> 本文介绍了数据驱动应用中读写操作的不对称性。它展示了在读取端的一个简单修复（例如添加索引）如何随后需要缓存，最终可能需要读取副本，每一步都带来各自的一致性挑战。作者列举了一系列技术——索引、反规范化、缓存、读取副本、物化视图、专用读取存储、写入侧与读取侧的 fan‑out、以及 CQRS——并描述了它们的同步机制、陈旧窗口以及典型的故障模式。文章还涉及写入流量占主导的场景，导致设计决策相反。
 
 
 

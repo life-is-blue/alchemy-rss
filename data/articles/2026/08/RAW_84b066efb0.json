@@ -1,0 +1,56 @@
+{
+  "id": "RAW_84b066efb0",
+  "title": "我不会把谷歌排除在外的七个理由",
+  "url": "https://garymarcus.substack.com/p/seven-reasons-i-wouldnt-count-google",
+  "date": "2026-08-07 02:04:50",
+  "author": "Gary Marcus",
+  "siteName": "Marcus on AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <div class=\"captioned-image-container\">\n    <figure>\n     <a target=\"_blank\" href=\"https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg\" data-component-name=\"Image2ToDOM\" class=\"image-link image2 is-viewable-img can-restack\"> \n      <div class=\"image2-inset\">\n       <picture><source type=\"image/webp\" srcset=\"https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 424w, https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 848w, https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 1272w, https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 1456w\" sizes=\"100vw\"><img src=\"https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:961,&quot;width&quot;:2058,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:251643,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://garymarcus.substack.com/i/210105392?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc37dedf8-2743-4a09-bc78-45689818a769_2199x961.jpeg&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" alt srcset=\"https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 424w, https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 848w, https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 1272w, https://media.bestblogs.dev/20260807000755_9d256ecf-75b5-40db-b622-4bec38dd2cad_2058x961.jpeg 1456w\" sizes=\"100vw\" fetchpriority=\"high\" class=\"sizing-normal\"></picture>\n       <div class=\"image-link-expand\">\n        <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image\"></button>\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2\">\n           <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n          </svg>\n         </button>\n        </div>\n       </div>\n      </div> \n     </a>\n    </figure>\n   </div>\n   <p></p>\n   <p><span>In huge news, in case you missed it, Sir Demis Hassabis has given up the reins at GoogleDeepMind (moving aside to be Chairman and Alphabet’s Chief Science Officer), and the rightly legendary Jeff Dean and some other top talent just left altogether, following earlier departures of star researchers like John Jumper, David Silver, Tim Rocktäschel, and Noam Shazeer. Google/Alphabet are hemorrhaging talent, morale is poor, and their latest model is delayed. </span><a href=\"https://x.com/firstadopter/status/2085041030563295250?s=61\">Many are ready to count them out altogether</a><span>.</span></p>\n   <p>I think this is a mistake. Here are seven reasons why:</p>\n   <ol>\n    <li>\n     <p>Google still has access to an enormous amount of data, from search and email especially, at a scale that nobody else has.</p>\n    </li>\n    <li>\n     <p>Only a small number of companies (Meta, Microsoft, Amazon, maybe a few in China) can match on sheer compute and expertise building distributed systems. Google/Alphabet has long had their own TPU chips, lessening their dependency on Nvidia.</p>\n    </li>\n    <li>\n     <p><span>Google still makes a </span><em>ton</em><span> of money, $402 billion in revenue last year, $132 billion in profit), and has vastly more cash to play with than OpenAI and Anthropic. (The fact that Google is going to the bond market yet again is worrisome, though.)</span></p>\n    </li>\n    <li>\n     <p>Google has great distribution, through Android, Mail, Search, Docs, YouTube etc.</p>\n    </li>\n    <li>\n     <p>Hassabis, arguably the most formidable person in AI, is still there, not gone altogether. He has worked together with his replacement, Koray Kavukcuoglu, for over a decade, and they will continue to work together. (I have spoken once with Koray and found him to be smart and sober, in a world where not all of their competitors are. His lack of name recognition may be a liability in the short-term, but his sobriety may be crucial in the long-run.)</p>\n    </li>\n    <li>\n     <p>Google’s most obvious competitors have troubles of their own. OpenAI has a declining reputation, Anthropic has conflict with the administration, Microsoft and Amazon don’t have the same talent pool.</p>\n    </li>\n    <li>\n     <p>Google can probably keep going even if it doesn’t take much of the LLM market in the end (which I expect will be a multi-way tie with relatively modest profits). On the other hand, if things do turn out as I expect, and there is a multi-way tie with relatively modest profits, Anthropic and OpenAI don’t have that much else to fall back on; they may never earn out their investments. The only real existential threat would be if Google loses Search, Android, and YouTube altogether. Google may simply outlast the other two.</p>\n    </li>\n   </ol>\n   <p>Google definitely doesn’t look unassailable like they once did, and may never be as strong as they once were, but it’s premature to count them out.</p>\n   <div data-component-name=\"SubscribeWidget\" class=\"subscribe-widget\">\n    <div class=\"pencraft pc-display-flex pc-justifyContent-center pc-reset\">\n     <div class=\"container-IpPqBD\">\n      <form action=\"/api/v1/free?nojs=true\" method=\"post\" novalidate class=\"form form-M5sC90\">\n       <input type=\"hidden\" name=\"first_url\" value><input type=\"hidden\" name=\"first_referrer\" value><input type=\"hidden\" name=\"current_url\"><input type=\"hidden\" name=\"current_referrer\"><input type=\"hidden\" name=\"first_session_url\" value><input type=\"hidden\" name=\"first_session_referrer\" value><input type=\"hidden\" name=\"referral_code\"><input type=\"hidden\" name=\"source\" value=\"subscribe-widget\"><input type=\"hidden\" name=\"referring_pub_id\"><input type=\"hidden\" name=\"additional_referring_pub_ids\">\n       <div class=\"sideBySideWrap-vGXrwP\">\n        <div class=\"emailInputWrapper-QlA86j\">\n         <div class=\"pencraft pc-display-flex pc-minWidth-0 pc-position-relative pc-reset flex-auto-j3S2WA\">\n          <input name=\"email\" placeholder=\"Type your email...\" type=\"email\" class=\"pencraft emailInput-OkIMeB input-y4v6N4 inputText-pV_yWb\">\n         </div>\n        </div>\n        <button tabindex=\"0\" type=\"submit\" disabled class=\"pencraft pc-reset pencraft rightButton primary subscribe-btn button-VFSdkv buttonBase-GK1x3M\"><span class=\"button-text \">Subscribe</span></button>\n       </div>\n      </form>\n     </div>\n    </div>\n   </div>\n   <p></p>\n   <p></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，尽管谷歌最近出现人才外流和士气问题，但该公司仍拥有数据、算力、分发渠道、现金和领导力等重大结构性优势，因此现在就将它排除在 OpenAI 和 Anthropic 等竞争对手之外还为时过早。",
+  "oneSentenceSummary": "本文认为，尽管谷歌最近出现人才外流和士气问题，但该公司仍拥有数据、算力、分发渠道、现金和领导力等重大结构性优势，因此现在就将它排除在 OpenAI 和 Anthropic 等竞争对手之外还为时过早。",
+  "summary": "加里·马库斯对主流叙事——谷歌在 AI 领域正在落后——提出了一个逆向观点。他承认存在严重的麻烦迹象：戴密斯·哈萨比斯在谷歌 DeepMind 退居二线、杰夫·迪恩离职、一批明星研究员出走、士气低落，以及最新模型延迟发布。但他认为，就此认定谷歌出局还为时过早。他列举了七个结构性优势：从搜索和邮件中获得无可匹敌的数据访问权；只有少数几家公司能在算力和分布式系统专业能力上与之匹敌；充足的营收和现金（营收 4020 亿美元，利润 1320 亿美元）；遍布 Android、YouTube、Search、Docs 和 Mail 的无可匹敌的分发渠道；哈萨比斯的继续留任以及继任者科拉伊·卡武克乔格鲁的稳健；竞争对手自身也面临严重问题；以及最关键的一点——即使 LLM 市场表现平庸，谷歌也能生存，而 OpenAI 和 Anthropic 可能永远无法赚回他们的投资。这篇文章观点鲜明，刻意逆向，基于长篇推理而非突发新闻。",
+  "mainPoints": [
+    {
+      "point": "谷歌的结构性优势——数据、算力、现金、分发——在规模上仍然无可匹敌。",
+      "explanation": "马库斯认为，搜索和邮件数据、专有 TPU 以及 1320 亿美元利润，为 Alphabet 提供了竞争对手难以复制的持久基础。"
+    },
+    {
+      "point": "人才流失确实严重，但也应权衡留下来的领导层。",
+      "explanation": "哈萨比斯继续担任董事长兼首席科学官，继任者科拉伊·卡武克乔格鲁与他有十年共事经历，马库斯认为这是一个稳定因素。"
+    },
+    {
+      "point": "竞争对手的情况也并不健康。",
+      "explanation": "OpenAI 的声誉正在下滑，Anthropic 与政府存在冲突，微软和亚马逊缺乏可比的人才储备，因此这场竞争并不像表面上那样一边倒。"
+    },
+    {
+      "point": "即使谷歌不能主导 LLM 市场，它也能比竞争对手活得更久。",
+      "explanation": "马库斯预计 LLM 市场利润微薄且多方势均力敌；谷歌有非 AI 业务作为后盾，而 OpenAI 和 Anthropic 可能难以赚回巨额投资。"
+    }
+  ],
+  "keyQuotes": [
+    "谷歌明显不再像过去那样无懈可击，也许永远不会像以前那样强大，但现在就把他们排除在外还为时过早。",
+    "只有少数几家公司（Meta、微软、亚马逊，也许还有中国的几家）能在纯粹的算力和分布式系统构建专业能力上与之匹敌。",
+    "唯一真正的生存威胁是谷歌彻底失去搜索、Android 和 YouTube。谷歌可能只是比其他两家活得更久。"
+  ],
+  "tags": [
+    "AI",
+    "Google DeepMind",
+    "AI 行业",
+    "人才与领导力",
+    "AI 竞争"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 432,
+  "domain": "garymarcus.substack.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f6e6074",
+  "sourceName": "Marcus on AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786039490000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-07 02:04:50"
+}

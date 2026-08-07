@@ -1,0 +1,59 @@
+{
+  "id": "RAW_81544b7b1a",
+  "title": "你能对 ASIC 进行逆向工程吗？",
+  "url": "https://blog.janestreet.com/can-you-reverse-engineer-an-asic/",
+  "date": "2026-08-07 03:07:33",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <video autoplay=\"\" loop=\"\" muted playsinline=\"\" style=\"display: block; margin: 2em auto; max-width: 640px; width: 100%;\">\n   <source src=\"https://blog.janestreet.com/can-you-reverse-engineer-an-asic/warmup_gds_3d.mp4\" type=\"video/mp4\">\n  </video>\n  <p>Earlier this year we published a <a href=\"https://blog.janestreet.com/can-you-reverse-engineer-our-neural-network/\">puzzle</a> that handed you a complete neural network and asked you to figure out what it did. The response was great, so we’ve made another one! This time, we’re going much deeper down the tech stack.</p>\n  <p>For this puzzle we’ve designed a chip, but we’re only giving you the layout.</p>\n  <h2 id=\"a-crash-course-in-how-chips-get-made\">A crash course in how chips get made</h2>\n  <p>Modern chips start life as code. A hardware designer describes a circuit in a hardware description language like Verilog, which gets <em>synthesized</em> into a netlist of logic gates—NANDs, NORs, XORs, flip-flops. Then electronic design automation tools place and route those gates: they pick a physical location for every gate on the die and draw the metal wires that connect them, across many stacked routing layers connected by vias. The end result is a GDS file: a geometric description of every polygon on every layer of the chip, from the transistors that do the actual logic to all the metal on top of them. That’s the file a foundry such as Intel or TSMC uses to fabricate the physical silicon.</p>\n  <p>The GDS is, in a very real sense, the chip. Everything the circuit does is in there. The tricky part: nothing is labeled!</p>\n  <p><img src=\"https://blog.janestreet.com/can-you-reverse-engineer-an-asic/how_chips_are_made.png\" alt=\"Diagram of the ASIC design flow: Verilog code is synthesized into a netlist of           logic gates, placed and routed into a GDS layout, then fabricated on a wafer           and packaged into a chip\" style=\"display:block;margin:0 auto;max-width:600px;\"></p>\n  <h2 id=\"the-puzzle\">The puzzle</h2>\n  <blockquote>\n   <p>We’ve designed an ASIC, and we’re giving you its final mask: all of its metal, routing, and active transistor layers, along with some sample inputs and outputs.</p>\n   <p>Your job is to reverse engineer it. First, recover a netlist from the layout. Then figure out the circuit’s true purpose. And then comes the puzzle within the puzzle: once you understand what the chip does, use it to tease out the output it’s looking for, and find the string value that’s your final answer.</p>\n   <p>You can find everything you need <a href=\"https://github.com/janestreet/asic-puzzle-2026\">here</a>.</p>\n   <p>Some pointers for getting started:</p>\n   <ul>\n    <li>The circuit is physically arranged to hint at its functionality, so look closely at the layout!</li>\n    <li>There is one section of the design that is used to generate the output but does not affect the <code class=\"highlighter-rouge\">[success]</code> output. You can safely ignore it for the initial reverse-engineering steps.</li>\n    <li>You’ll need to come up with a way to simulate the underlying circuit to test your solution and get the final output!</li>\n    <li>You’ll know you have the correct solution when the <code class=\"highlighter-rouge\">[success]</code> output signal goes high. Don’t forget to toggle <code class=\"highlighter-rouge\">[rst_n]</code> before each input attempt.</li>\n    <li>We hid a few fun Easter eggs in the circuit and in the repository (including in parts you don’t need to look at to solve the main puzzle), see if you can spot them once you’re done with the puzzle.</li>\n   </ul>\n  </blockquote>\n  <p>Once you figure it out, submit your answer <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScNCnfZ1wC4HbARwynUZ25EKZyqJIzXM_5H5aHom-QeAhE6FA/viewform?usp=sharing&amp;ouid=113383508758462277069\">here</a> along with a brief description of how you did it. Submissions close on September 4th, 2026.</p>\n  <p>Feel free to collaborate with friends on the puzzle, but please refrain from posting spoilers (or a full writeup) online until the submissions are closed. If you do publish your solution (on a personal blog or repository) after submissions are closed, email us and we may include the link in our follow-up post!</p>\n  <p>Please don’t feed the puzzle files directly into an AI tool, nor use it to generate your writeups. Feel free to use AI for writing any scripts or code you may need as part of solving the puzzle, though! It’s also fair game to use AI to work through the warm-up puzzle, see below.</p>\n  <p>If you have questions as you go, please reach out to <a href=\"mailto:asic-puzzle@janestreet.com\">asic-puzzle@janestreet.com</a> — we can’t give hints, but we’re happy to help otherwise.</p>\n  <p>We’ll feature the most interesting writeups and techniques in a follow-up post, and send swag for our favorite solutions.</p>\n  <h2 id=\"a-warm-up\">A warm-up</h2>\n  <p>If you’ve never opened a GDS file before, don’t worry: most people haven’t either. To help you get started, we’re providing a small worked example: a simple binary adder, with its Verilog source, its gate-level netlist, and the resulting GDS. You can use it to get familiar with how a circuit maps onto a layout, and to test any tools you build before pointing them at the real puzzle.</p>\n  <p>The warm-up files are available in the <a href=\"https://github.com/janestreet/asic-puzzle-2026\">puzzle repository</a>.</p>\n  <p>Everything you need is free and open source: the design uses an open-source PDK, and tools like <a href=\"https://www.klayout.de/\">KLayout</a> or <a href=\"https://github.com/rtimothyedwards/magic\">Magic VLSI</a> will happily open the GDS and let you poke around the layers.</p>\n  <h2 id=\"and-a-bigger-challenge-is-coming\">And a bigger challenge is coming</h2>\n  <p>Consider this puzzle a warm-up of its own. Later this year we’ll be launching a competition where, instead of reverse engineering our chip, we’ll challenge you to design your own - and the most interesting entries will actually get fabricated, so you can test your chip in real life.</p>\n  <p>Stay tuned—we’ll announce the details here on the blog in the coming months.</p>\n  <h2 id=\"hardware-at-jane-street\">Hardware at Jane Street</h2>\n  <p>The hardware team at Jane Street designs FPGAs and ASICs that run some of the fastest trading systems in the world, and the day-to-day work is full of puzzles just like this one: staring at a sea of gates, timing reports, or waveforms and slowly teasing out what’s really going on. These problems are hard in a way that’s deeply satisfying to solve, and honestly, it’s a big part of why we like working here.</p>\n  <p>If that sounds intriguing, some ways of learning more:</p>\n  <ul>\n   <li>Check out our hardware (FPGA and ASIC) <a href=\"https://www.janestreet.com/join-jane-street/position/8624440002/\">internships</a> and <a href=\"https://www.janestreet.com/join-jane-street/position/8646893002/\">full-time</a> roles.</li>\n   <li>Read about <a href=\"https://hardcaml.org/\">Hardcaml</a> (our open-source OCaml hardware design libraries)</li>\n   <li>On the academic side, read about our <a href=\"https://www.janestreet.com/join-jane-street/programs-and-events/visiting-researcher/\">visiting researcher</a> and <a href=\"https://www.janestreet.com/join-jane-street/programs-and-events/graduate-research-fellowship/\">graduate fellowship</a> programs.</li>\n  </ul>\n  <p>If you just want to stay in touch, you can fill out <a href=\"https://bit.ly/4lEqiqb\">this form</a>.</p>\n </body>\n</html>",
+  "aiSummary": "Jane Street 发布了一个 ASIC 逆向工程谜题，提供完整的 GDS 版图，要求参与者还原网表、理解电路功能，并提取隐藏的字符串答案。",
+  "oneSentenceSummary": "Jane Street 发布了一个 ASIC 逆向工程谜题，提供完整的 GDS 版图，要求参与者还原网表、理解电路功能，并提取隐藏的字符串答案。",
+  "summary": "Jane Street 的硬件团队发布了一个新的工程谜题：ASIC 逆向工程挑战。参与者会获得一颗定制芯片的最终 GDS 版图（包含所有金属层、布线层和晶体管层），以及示例输入和输出。任务是从物理版图中还原门级网表，判断电路计算的内容，进行仿真，并找到能让 [success] 信号变为高电平的输入。题目提供了一个完整的热身示例（一个二进制加法器，包含 Verilog 源码、网表和 GDS），帮助新手使用 KLayout 和 Magic VLSI 等免费开源工具学习 GDS 检查。谜题仓库使用开源 PDK。提交截止日期为 2026 年 9 月 4 日，最佳解决方案将获得周边奖品，并被专题展示。这篇文章还预告了一个未来的竞赛，参与者将设计自己的芯片并进行实际流片，同时也是 Jane Street FPGA/ASIC 岗位的招聘宣传。",
+  "mainPoints": [
+    {
+      "point": "Jane Street 发布了一个提供完整 GDS 版图的 ASIC 逆向工程实战谜题。",
+      "explanation": "该谜题提供了一颗定制 ASIC 的完整物理版图（GDS），挑战参与者提取网表、理解电路功能，并找到触发 success 信号的秘密输入。"
+    },
+    {
+      "point": "一个完整的热身示例降低了 GDS 分析的上手门槛。",
+      "explanation": "仓库中包含一个二进制加法器，提供了 Verilog 源码、综合后的网表和 GDS，让参与者在挑战主谜题之前，先学习逻辑如何映射到物理版图，并测试自己的工具链。"
+    },
+    {
+      "point": "所有工具均为免费开源，并使用开源 PDK。",
+      "explanation": "参与者可以使用 KLayout 或 Magic VLSI 检查 GDS，设计采用开源工艺设计套件，因此无需昂贵的 EDA 许可证即可参与挑战。"
+    },
+    {
+      "point": "后续将举办一届实际流片的芯片设计竞赛。",
+      "explanation": "Jane Street 稍后将推出一项竞赛，参与者可以设计自己的 ASIC，其中最有意思的作品将实际流片并进行真实测试。"
+    },
+    {
+      "point": "这个谜题同时也是 Jane Street 硬件工程文化和招聘的展示。",
+      "explanation": "文章介绍了其硬件团队的日常工作（为低延迟交易开发 FPGA/ASIC），并附有实习、全职和学术项目的链接。"
+    }
+  ],
+  "keyQuotes": [
+    "从非常真实的意义上说，GDS 就是芯片本身。电路所做的一切都在其中。棘手之处在于：没有任何标注！",
+    "把这个谜题本身也当作一次热身。今年晚些时候，我们将推出一项竞赛：不是让你逆向我们的芯片，而是挑战你设计自己的芯片——其中最有意思的作品将真正流片。"
+  ],
+  "tags": [
+    "ASIC",
+    "逆向工程",
+    "硬件设计",
+    "GDS",
+    "Verilog"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 924,
+  "domain": "blog.janestreet.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786043253000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-07 03:07:33"
+}

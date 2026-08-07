@@ -1,0 +1,42 @@
+{
+  "id": "RAW_846db0b73f",
+  "title": "发布：datasette 0.65.3",
+  "url": "https://simonwillison.net/2026/Aug/6/datasette-2/#atom-everything",
+  "date": "2026-08-07 02:22:07",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">6th August 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/datasette/releases/tag/0.65.3\">datasette 0.65.3</a></span> <span class=\"beat-commit\">— An open source multi-tool for exploring and publishing data</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Back-ported the SQL Injection security fix from <a href=\"https://simonwillison.net/2026/Aug/6/datasette/\">1.0a38</a>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4819/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Datasette 0.65.3 已发布，旨在将 1.0 alpha 系列中的一项关键 SQL 注入安全修复回移植到稳定版中。",
+  "oneSentenceSummary": "Datasette 0.65.3 已发布，旨在将 1.0 alpha 系列中的一项关键 SQL 注入安全修复回移植到稳定版中。",
+  "summary": "这是一个针对 Datasette (0.65.3) 的小型维护版本，专注于安全性。此次更新回移植了最初在 1.0a38 版本中解决的 SQL 注入漏洞修复。对于目前运行 0.x 稳定分支且尚未准备好迁移到 1.0 alpha 版本的用户，建议进行此次更新。",
+  "mainPoints": [
+    {
+      "point": "来自 1.0a38 版本的关键安全回移植。",
+      "explanation": "此次发布专门解决了 SQL 注入漏洞，确保 0.x 稳定分支能够获得与最新 alpha 构建版本相同的保护。"
+    }
+  ],
+  "keyQuotes": [
+    "Back-ported the SQL Injection security fix from 1.0a38."
+  ],
+  "tags": [
+    "Datasette",
+    "安全修复",
+    "SQL 注入",
+    "开源",
+    "软件发布"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 72,
+  "wordCount": 24,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786040527000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-07 02:22:07"
+}
