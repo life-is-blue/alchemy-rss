@@ -1,0 +1,55 @@
+{
+  "id": "RAW_eb1bbb0673",
+  "title": "Rootly 取消小 PR 规则，智能体 AI 改变代码审查经济学",
+  "url": "https://www.infoq.com/news/2026/08/rootly-small-pr-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-07 16:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Incident management platform provider <a href=\"https://rootly.com/\">Rootly</a> has <a href=\"https://rootly.com/blog/why-we-got-rid-of-our-small-pr-rule\">published an account</a> of its decision to drop its long-standing small pull request rule, arguing that the practice no longer serves its purpose now that AI agents generate most of its code. The company describes a shift from measuring PR size to assessing blast radius, with feature flags and rollback capability taking precedence over line counts.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/08/rootly-small-pr-agentic-ai/news/2026/08/rootly-small-pr-agentic-ai/en/resources/16a0db572033f03f8343d1180_Q-small-pr-1786029341148.avif\" src=\"https://res.infoq.com/news/2026/08/rootly-small-pr-agentic-ai/en/resources/16a0db572033f03f8343d1180_Q-small-pr-1786029341148.avif\" rel=\"share\"></p>\n   <p>In the post, Rootly co-founder and CTO&nbsp;Quentin Rousseau explains that for two years, it enforced a strict small-PR culture with stacked PRs and atomic changes limited to a few hundred lines. He states that this made sense when humans wrote code by hand, as smaller diffs were easier to review and revert. He writes that AI agents have changed the equation because they think in features rather than increments, producing complete implementations, including migrations, models, services, controllers, tests, and frontend components, in a single output.</p>\n   <blockquote>\n    AI bugs are context bugs. The code works, but it is applied to the wrong thing. A migration that drops a column still in use by a background job. A service that writes to a table another team reads from.\n    <br>\n    - Rootly engineering team\n   </blockquote>\n   <p>The post describes how attempts to make AI agents produce stacked PRs resulted in technically correct but contextually worse outcomes. Review comments on one PR often depended on decisions made in another, forcing reviewers into mental gymnastics across multiple tabs. They figured out that the small-PR rule was optimised for human writing speed, and AI removed that constraint while turning the rule into overhead.</p>\n   <p>Rootly's response was to stop reviewing AI code the way it reviewed human code. The company built an internal AI code reviewer that reviews every PR against engineering standards and produces a structured review with a risk assessment, standardisation score, confidence score and specific findings grouped by severity. The key difference is that it is not trying to be a human reviewer; instead, it answers one question per PR: if this change has a bug, what user-facing behaviour breaks?</p>\n   <p>The AI reviewer flags changes that alter what the system does, versus changes that affect how fast or how something looks, and assigns appropriate risk profiles to each, thus giving the human reviewer a structured starting point instead of just a raw diff.</p>\n   <p>Rousseau emphasises how the use of feature flags has moved the safety boundary from merge to rollout, as every significant feature now ships behind a flag. When the PR has been merged and the code pushed to production, it’s turned off. The real review happens during progressive rollout: with the feature enabled for the team first, then a handful of customers, then 10 percent, then everyone</p>\n   <blockquote>\n    The size of the diff stopped being the useful signal. The blast radius is.\n    <br>\n    Rootly engineering team\n   </blockquote>\n   <p>In a <a href=\"https://www.infoq.com/presentations/ai-sdlc-pull-request/\">presentation at QCon London 2026</a>, Michael Webster discussed the rise of headless AI agents and their impact on software delivery pipelines. He shares how massive, AI-generated pull requests create a severe bottleneck for human reviewers and introduce persistent technical debt.&nbsp;Others in the industry are thinking similarly; Rewind, a backup and versioning provider, <a href=\"https://rewind.com/blog/ai-approve-pull-requests-safely/\">recently described</a> how it adopted Rootly's risk-based model for its AI code review tool, Diff Vader. In a post on its blog, the Rewind team wrote that a PR's risk has almost nothing to do with its line count. Diff Vader assigns a risk label to every PR based on the review's findings, not on how many lines changed.</p>\n   <p>Pull requests at agent speed is a talking point at industry events. At AI Native DevCon London in June 2026, <a href=\"https://tessl.io/podcast/111/\">a panel</a>&nbsp;featuring Patrick Debois, now DevRel at Tessl and widely credited as the godfather of DevOps, discussed why PR-based workflows are an anti-pattern inside enterprises once you are moving at agent speed. Debois argued that pull requests make sense in open source, where contributors might not be strategically aligned and trust has to be earned, but inside a team that shares context and goals, the overhead of a PR review cycle is increasingly hard to justify when agents are moving fast.&nbsp;In a podcast episode recorded at the event, Debois and fellow panellists described how agent costs are forcing process discipline. With humans alone, it was hard to see inefficiencies, but now, with measurable token costs, waste literally shows up in the bill.</p>\n   <p>Rootly's philosophy is now to ask the questions that actually predict production incidents. The 'Why and What' sections force the author to explain the motivation and scope of a change as well as its likely impact. For AI-authored PRs, the human who prompted the agent fills these in. Rootly explicitly instructs AI assistants not to generate these sections, because the whole point is capturing context the AI does not have: why this change, why now, what is the business reason. Every PR needs to describe how to safely undo itself, including any data fixes.</p>\n   <p>Rousseau closes out the post by explaining that killing the small-PR rule - a process that felt virtuous - felt uncomfortable at first, but was necessary to support the outcome of shipping reliable software quickly. He wrote more about this shift toward production-side safety in a separate post titled <a href=\"https://rootly.com/blog/stop-trying-to-review-ais-code-faster-bet-on-rollbacks-instead\">Stop Trying to Review AI's Code Faster: Bet on Rollbacks Instead</a>.</p>\n   <p>In conclusion, the team write that small PRs were the right answer for a team of humans writing code by hand, but not for a team orchestrating AI agents that ship complete features.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Rootly Drops Small PR Rule as Agentic AI Changes Code Review Economics\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/rootly-small-pr-agentic-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1786089600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Rootly 解释了为何废除其小 Pull Request 规则，认为 AI 智能体现在会生成完整功能代码，使基于代码行数的审查过时，并将焦点转向影响范围、功能开关和 AI 辅助的风险评估。",
+  "oneSentenceSummary": "Rootly 解释了为何废除其小 Pull Request 规则，认为 AI 智能体现在会生成完整功能代码，使基于代码行数的审查过时，并将焦点转向影响范围、功能开关和 AI 辅助的风险评估。",
+  "summary": "Rootly 联合创始人兼 CTO Quentin Rousseau 描述了公司长期以来实行的小 PR 策略——最初是为了让 diff 足够小、便于人工审查——在 AI 智能体开始生成公司大部分代码后变得适得其反。AI 智能体以完整功能而非增量变更的方式思考，会在一个 PR 中输出迁移、模型、服务、控制器、测试和前端组件。试图强制 AI 生成堆叠式 PR，结果产生了技术上正确但上下文混乱的变更，迫使审查者在多个标签页之间处理依赖关系。团队意识到，小 PR 规则是针对人类编写速度优化的，而 AI 消除了这一限制，使该规则变成不必要的开销。为此，Rootly 不再以审查人类代码的方式审查 AI 生成的代码，而是构建了一个内部 AI 代码审查器，根据工程标准评估每个 PR，并返回包含风险评估、标准化评分、置信度评分和按严重程度分组结果的结构化审查，回答核心问题：如果这个变更存在 bug，哪些面向用户的行为会被破坏？该审查器会区分改变系统行为的变更与影响性能或外观的变更，并分配相应的风险档案。Rootly 还将安全边界从合并阶段移到发布阶段，把每个重要功能都包裹在功能开关后面；真正的审查发生在逐步向内部团队、一小部分客户群、再向更广泛受众推出的过程中。文章还引用了类似的行业举措，如 Rewind 的 Diff Vader 工具，并提及 QCon London 2026 和 AI Native DevCon London 上的讨论，专家们认为基于 PR 的工作流在智能体速度下会变成反模式。Rootly 现在要求作者填写“Why and What”部分，以捕获 AI 缺乏的上下文，并且每个 PR 都必须描述如何安全地自我撤销，包括任何数据修复。Rousseau 总结道，放弃小 PR 规则虽然最初令人不适，但在 AI 驱动的开发环境中快速交付可靠软件是必要的。",
+  "mainPoints": [
+    {
+      "point": "AI 智能体会生成完整功能，使基于代码行数的 PR 审查变得过时。",
+      "explanation": "Rootly 发现，AI 生成的 PR 在单个 diff 中包含迁移、模型、服务、控制器、测试和前端代码，因此再以代码量来评判，已无法预测审查工作量或风险。"
+    },
+    {
+      "point": "团队将关注点从 PR 大小转向影响范围，并使用功能开关来保障安全。",
+      "explanation": "通过衡量变更的潜在影响（影响范围）并在功能开关后发布特性，Rootly 将安全门从合并阶段移至渐进式发布阶段，在真实环境中进行验证。"
+    },
+    {
+      "point": "内部 AI 代码审查器提供结构化、以风险为中心的反馈，而不是原始 diff。",
+      "explanation": "AI 审查器会根据工程标准检查每个 PR，输出风险评估、标准化分数和置信度分数，并按严重程度对结果分组，回答这样一个问题：如果此变更有 bug，哪些面向用户的行为会被破坏？"
+    },
+    {
+      "point": "每个 AI 编写的 PR 都必须包含“Why and What”部分以及回滚计划，以补全缺失的上下文。",
+      "explanation": "由于 AI 缺乏业务上下文，人类编写提示词时需要补充动机、范围和影响；每个 PR 还必须描述如何安全地自我撤销，包括任何必要的数据修复。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 的 bug 是上下文 bug。代码本身能运行，但被应用到了错误的地方。",
+    "diff 的大小已不再是有效信号，影响范围才是。"
+  ],
+  "tags": [
+    "AI 编程",
+    "AI 智能体",
+    "Pull Request",
+    "代码审查",
+    "功能开关"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 906,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786089600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-07 16:00:00"
+}

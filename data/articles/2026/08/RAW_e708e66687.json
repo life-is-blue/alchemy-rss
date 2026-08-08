@@ -1,0 +1,62 @@
+{
+  "id": "RAW_e708e66687",
+  "title": "AI 批量轰炸苹果 bug 赏金计划，审核团队已下线",
+  "url": "https://www.qbitai.com/2026/08/466738.html",
+  "date": "2026-08-07 14:21:05",
+  "author": "程浅",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"54\">程浅 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"55\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"5\">苹果终于受不了了，给自己的<strong>bug赏金计划</strong>设置了<strong>冷静期</strong>。</p>\n  <blockquote>\n   <p data-track=\"6\">急，bug太多审不过来，怎么办啊….\n    <br class=\"sysbr\">\n    哈哈，算了！不看了。</p>\n  </blockquote>\n  <p data-track=\"7\">bug赏金计划，自2016年提出，原意是邀请安全研究人员提交苹果软件、硬件及服务中的安全漏洞，经人工审查确认有效后可获得现金奖励。</p>\n  <p data-track=\"8\">随后奖池不断抬高，2025年10月，苹果宣布赏金计划重大升级：发现最严重、最复杂威胁的研究人员可获得<strong>500万美元（约3375万人民币）。</strong></p>\n  <p data-track=\"9\">然而当下，AI大幅<strong>降低了找漏洞的门槛</strong>，大量业余选手用ChatGPT批量扫描代码、批量提交报告，其中夹杂着大量AI幻觉式的虚假漏洞。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://media.bestblogs.dev/20260807092739_0b31981af2609b3a7c7dc4b43b26abfc.jpeg\" data-src=\"https://media.bestblogs.dev/20260807092739_0b31981af2609b3a7c7dc4b43b26abfc.jpeg\">\n  </div>\n  <p data-track=\"10\">这让整个苹果安全团队彻底<strong>分身乏术</strong>。</p>\n  <p data-track=\"11\">8月2日，苹果已在内部安全门户上对漏洞提交设置了<strong>数量上限和30天冷静期</strong>。</p>\n  <p data-track=\"13\">2025年9月，苹果在iPhone 17发布会上同步公布了一项名为“内存完整执行”（MIE）的安全功能。</p>\n  <p data-track=\"14\">这项技术<strong>耗时五年开发</strong>，基于苹果自研芯片的硬件能力与操作系统深度整合，为设备提供极致的内存安全保护。</p>\n  <p data-track=\"15\">苹果将该功能称为：</p>\n  <blockquote>\n   <p data-track=\"16\">消费级操作系统内存安全史上最重大的一次升级。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://media.bestblogs.dev/20260807092738_2076e3775c4bef455fbb7144efd664f1.png\" data-src=\"https://media.bestblogs.dev/20260807092738_2076e3775c4bef455fbb7144efd664f1.png\">\n  </div>\n  <p data-track=\"58\">△MIE技术原理示意图：MIE如何阻止内存攻击</p>\n  <p data-track=\"18\">然而8个月后，网络安全行业迎来了集体认知<strong>震荡</strong>。</p>\n  <p data-track=\"19\">2026年5月，安全研究公司Calif披露了首个公开的Apple M5芯片macOS的漏洞利用。其员工借助Claude的Mythos Preview模型，<strong>将两个macOS漏洞串联成一条完整的本地权限提升链，绕过了MIE的保护</strong>。</p>\n  <p data-track=\"20\">并且，该团队（仅3人）从“我们发现了一些有趣的东西”到“我们在苹果最安全的消费级硬件上获得了可工作的root shell”<strong>只用了5天</strong>。</p>\n  <p data-track=\"21\">该漏洞之严重最终使Calif的两位研究员亲自驱车前往Apple总部当面递交55页报告，以免被众多报告淹没。</p>\n  <p data-track=\"22\">Mythos Preview，由Claude在今年4月推出。官方宣称其在安全与编程领域已实现质变突破，且已自主发现了「每一个」主流操作系统和主流网络浏览器中的数千高危漏洞。然而因模型<strong>“攻击性能力过强，公开会引发大灾难”</strong>，仅向40家关键合作伙伴开放API。</p>\n  <p data-track=\"23\">如此高速发展的AI技术正在冲击整个漏洞披露体系。</p>\n  <p data-track=\"24\">据预测，2026年的CVE（公开披露的网络安全漏洞列表）登记量将至66000个，较原始预估高出46%。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://media.bestblogs.dev/20260807092740_a3e5248f0a71506cb6fd1908a2479f54.jpeg\" data-src=\"https://media.bestblogs.dev/20260807092740_a3e5248f0a71506cb6fd1908a2479f54.jpeg\">\n  </div>\n  <p data-track=\"25\">不过，就像苹果所发现的那样，这些由AI生成的漏洞报告中<strong>含有大量的噪音和AI幻觉</strong>。而审核这些报告已经成为更耗费精力的事情。</p>\n  <p data-track=\"26\">这一点也是整个安全行业的痛点。</p>\n  <blockquote>\n   <p data-track=\"27\">这是行业中一个相当困难的时期，维护人员和供应商已经被大量bug淹没。</p>\n  </blockquote>\n  <p data-track=\"28\">Curl创始人表示，他在2026年前三周收到了20份漏洞报告，其中<strong>「0份是真正的安全漏洞」</strong>。Google在3月宣布<strong>不再接受</strong>AI生成的漏洞报告；开源云平台Nextcloud在4月<strong>暂停了</strong>其漏洞赏金计划；GitHub在7月<strong>大幅削减</strong>公开漏洞赏金的奖金额度，并设立了仅限受邀研究员参与的VIP通道。</p>\n  <p data-track=\"29\">这种提交通道的拥堵已经产生了真实的安全后果，或将让安全流程本身也变成了安全问题。</p>\n  <p data-track=\"30\">例如，意大利安全初创公司Bynario利用ChatGPT在三周内发现了macOS中的50多个漏洞。其中还包括一个可以完全控制macOS的漏洞。</p>\n  <p data-track=\"31\">然而，当团队提交这条<strong>“可以在黑市上可以卖到10万至20万美元”</strong>的漏洞时，却发现苹果已经封锁了提交入口。</p>\n  <p data-track=\"33\">好消息是：防御者也能获得同样的AI工具。</p>\n  <p data-track=\"34\">坏消息是：防御者必须维持整个IT环境的正常运转，测试兼容性、协调发布窗口、确保更新不会让生产系统宕机。而攻击者呢？只需要找到一个入口。</p>\n  <p data-track=\"35\">2026年7月27日，苹果发布了macOS Tahoe 26.6安全更新。这次更新，苹果修复了194个独立安全漏洞。</p>\n  <p data-track=\"36\">这次发布也是苹果<strong>首次在安全修复中正式致谢AI</strong>。</p>\n  <p data-track=\"38\">其中，Anthropic的Claude和OpenAI的Codex Security各获得三个漏洞的致谢，NVIDIA的AI Red Team获得两个致谢，Z.ai的GLM模型获得一个致谢。</p>\n  <p data-track=\"39\">（尽管三周前，苹果还正在法庭上起诉OpenAI窃取商业机密。）</p>\n  <p data-track=\"40\">苹果公开表示，AI工具加快了我们的安全更新发布速度。从macOS Tahoe发布以来的安全更新数据我们可以看到这个加速趋势的轮廓：</p>\n  <p data-track=\"41\">26.5版本中已经出现了AI工具的署名；26.5.2作为非常规小版本更新，又追加了38个CVE的修复；26.6一个月后发布，再次刷新纪录达到155个。</p>\n  <p data-track=\"42\">然而无法确定的是，这种<strong>高频发版节奏本身是否会成为新的安全变量？</strong></p>\n  <p data-track=\"43\">毕竟，苹果<strong>一贯以严格控制发版节奏</strong>著称，每一次系统更新在推送到数十亿台设备之前，都要经过内部测试、兼容性验证和分阶段灰度发布。</p>\n  <p data-track=\"44\">如此看来，加速发版不是一个轻率的决定，它意味着苹果的安全团队做出了判断：<strong>等到下一个常规更新窗口再修复这些漏洞，风险已不可接受</strong>。</p>\n  <p data-track=\"45\">漏洞披露周期已经在变形，当AI将漏洞发现周期压缩到数天，按月发布安全更新的节奏或将变成一段漫长的「暴露期」。</p>\n  <p data-track=\"46\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://security.apple.com/blog/apple-security-bounty-evolved/\n   <br class=\"sysbr\">\n   [2]https://security.apple.com/blog/memory-integrity-enforcement/\n   <br class=\"sysbr\">\n   [3]https://support.apple.com/en-us/128067\n   <br class=\"sysbr\">\n   [4]https://www.ft.com/content/4532122d-90f2-4433-9df6-ca99d8a141d2</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "AI 大幅降低漏洞发现门槛导致苹果 bug 赏金计划出现大量虚假报告，迫使其设置冷静期并加速安全更新，同时暴露出漏洞披露体系的新挑战。",
+  "oneSentenceSummary": "AI 大幅降低漏洞发现门槛导致苹果 bug 赏金计划出现大量虚假报告，迫使其设置冷静期并加速安全更新，同时暴露出漏洞披露体系的新挑战。",
+  "summary": "文章指出，随着 AI 工具（如 ChatGPT、Claude）的普及，业余安全研究者能够批量扫描并提交漏洞报告，其中掺杂大量 AI 幻觉产生的虚假漏洞，使苹果安全团队不堪重负。为此，苹果在内部安全门户设置了漏洞提交的数量上限和 30 天冷静期。文章同时回顾了苹果历时五年研发的内存完整执行（MIE）技术，称其为消费级操作系统内存安全史上最重大升级，但已被 AI 辅助攻击绕过。AI 生成的报告噪声和幻觉严重，审核成为安全团队的主要负担，甚至促使 Google、Nextcloud、GitHub 等平台限制或暂停接受 AI 投稿。防御方同样可使用 AI 工具加速漏洞修复，苹果在 macOS Tahoe 26.6 安全更新中首次致谢 AI 工具，但高频发布安全更新是否会成为新的安全变量仍存疑问。最后，文章指出漏洞披露周期正在变形，AI 将发现周期压缩至数天，传统按月发布的安全更新可能形成较长暴露期，需要重新评估安全流程。",
+  "mainPoints": [
+    {
+      "point": "AI 降低漏洞发现门槛导致大量虚假报告，苹果 bug 赏金计划不堪重负，因而设置数量上限和 30 天冷静期。",
+      "explanation": "文章描述，业余选手利用 ChatGPT 批量扫描代码并提交报告，其中掺杂大量 AI 幻觉产生的虚假漏洞，使苹果安全团队分身乏术，因而在内部安全门户上对漏洞提交设置了数量上限和 30 天冷静期。"
+    },
+    {
+      "point": "苹果的内存完整执行（MIE）技术历时五年研发，被视为消费级 OS 内存安全史上最重大升级，但已被 AI 辅助攻击绕过。",
+      "explanation": "MIE 基于苹果自研芯片的硬件能力与操作系统深度整合，提供极致的内存安全保护。然而，安全研究公司 Calif 借助 Claude 的 Mythos Preview 模型将两个 macOS 漏洞串联成完整的本地权限提升链，绕过了 MIE 的保护，仅用五天即获得可工作的 root shell。"
+    },
+    {
+      "point": "AI 生成的漏洞报告中噪声和幻觉严重，审核成为安全团队的主要负担，甚至导致 Google、Nextcloud、GitHub 等平台限制或暂停 AI 投稿。",
+      "explanation": "文章引用 Curl 创始人称其在三周内收到 20 份漏洞报告，其中 0 份是真正的安全漏洞；Google 不再接受 AI 生成的报告；Nextcloud 暂停漏洞赏金计划；GitHub 大幅削减奖金并设立仅限受邀研究员的 VIP 通道，说明审核压力已成为行业共同痛点。"
+    },
+    {
+      "point": "防御方同样可使用 AI 工具加速漏洞修复，但高频发布安全更新可能带来新的安全变量，与苹果一贯的严格发版节奏产生张力。",
+      "explanation": "苹果在 macOS Tahoe 26.6 安全更新中首次致谢 AI 工具（Claude、Codex Security、NVIDIA AI Red Team、Z.ai GLM），并表示 AI 工具加快了安全更新发布速度。然而，苹果一贯以严格控制发版节奏著称，高频发版是否会成为新的安全变量仍需观察。"
+    },
+    {
+      "point": "漏洞披露周期正在变形，AI 将发现周期压缩至数天，传统按月发布的安全更新可能形成较长暴露期，需要重新评估安全流程。",
+      "explanation": "文章指出，AI 使漏洞发现周期从数月压缩至数天，而苹果等厂商仍依赖月度或季度的安全更新节奏，这可能导致漏洞披露与修复之间出现较长的暴露期，安全流程本身可能因此成为新的风险点。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 大幅降低了找漏洞的门槛，大量业余选手用 ChatGPT 批量扫描代码、批量提交报告，其中夹杂着大量 AI 幻觉式的虚假漏洞。",
+    "此次发布也是苹果首次在安全修复中正式致谢 AI。其中，Anthropic 的 Claude 和 OpenAI 的 Codex Security 各获得三个漏洞的致谢，NVIDIA 的 AI Red Team 获得两个致谢，Z.ai 的 GLM 模型获得一个致谢。",
+    "Curl 创始人表示，他在 2026 年前三周收到了 20 份漏洞报告，其中‘0 份是真正的安全漏洞’。",
+    "好消息是：防御者也能获得同样的 AI 工具。坏消息是：防御者必须维持整个 IT 环境的正常运转，测试兼容性、协调发布窗口、确保更新不会让生产系统宕机。而攻击者呢？只需要找到一个入口。",
+    "漏洞披露周期已经在变形，当 AI 将漏洞发现周期压缩到数天，按月发布安全更新的节奏或将变成一段漫长的『暴露期』。"
+  ],
+  "tags": [
+    "AI 安全",
+    "漏洞赏金",
+    "苹果安全",
+    "MIE",
+    "AI 生成漏洞"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1979,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1786083665000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-07 14:21:05"
+}

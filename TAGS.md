@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-08 06:26:17 | [返回首页](/README.md)
+**更新时间**: 2026-08-08 08:50:33 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14519)
+- [AI & 大模型](#ai-llm) (14539)
 - [软件架构](#architecture) (23)
 - [前端与全栈](#frontend-fullstack) (916)
 - [DevOps](#devops) (695)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6507)
+- [其他](#other) (6509)
 
 
 ---
@@ -43,7 +43,7 @@
 - [从“会说”走向“会创作”｜Seed-Audio-1.0-音频创作模型发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494117&idx=1&sn=479ffb4e9fc90fa66d5bf531a84376a7) - AI 精选
 - [AI-Overviews-让谷歌陷入麻烦，GPT-Live-将推理置于后台，如何判断你的模型是否具有操控性](https://www.deeplearning.ai/the-batch/issue-362) - AI 精选
 
-- [查看全部 14519 篇...](/details/tags/ai-llm.md)
+- [查看全部 14539 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -187,6 +187,6 @@
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 - [从代码基座模型到智能体与应用：代码智能的全面综述与实践指南](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555283&idx=1&sn=fdc50b2c2cadd9a2eb99b418a737ba8b) - AI 精选
 
-- [查看全部 6507 篇...](/details/tags/other.md)
+- [查看全部 6509 篇...](/details/tags/other.md)
 
 
