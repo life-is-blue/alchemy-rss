@@ -1,0 +1,55 @@
+{
+  "id": "RAW_acd2a2b2a3",
+  "title": "Cloudflare 的 Precursor 通过持续行为分析识别机器人与 AI 智能体",
+  "url": "https://www.infoq.com/news/2026/08/cloudflare-precursor-detection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-08 15:54:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://blog.cloudflare.com/introducing-precursor/\">Cloudflare recently introduced Precursor</a>, a client-side behavioral analysis engine that continuously evaluates session interactions, such as mouse movements and keyboard timing, to improve detection of sophisticated bots and AI agents without relying solely on one-time challenges like CAPTCHAs.</p>\n   <p>According to the <a href=\"https://developers.cloudflare.com/cloudflare-challenges/precursor/\">documentation</a>, Precursor uses continuous, session-based client signals to catch advanced bots that try to mimic human behavior over a full user journey, marking an industry shift from static bot detection like CAPTCHAs or browser fingerprinting.</p>\n   <p>Precursor extends the client-side detections provided by <a href=\"https://developers.cloudflare.com/cloudflare-challenges/\">Challenge</a> across an entire web application and complements <a href=\"https://www.infoq.com/news/2023/10/cloudflare-turnstile-ga-free/\">Turnstile</a>, Cloudflare's CAPTCHA alternative, as part of <a href=\"https://www.infoq.com/news/2026/08/cloudflare-precursor-detection/com/bots/get-started/bot-management/\">Enterprise Bot Management</a>. <a href=\"https://www.linkedin.com/in/marinaelmore/\">Marina Elmore</a>, senior product manager at Cloudflare, and <a href=\"https://www.linkedin.com/in/benediktwolters/\">Benedikt Wolters</a>, principal systems engineer, write:</p>\n   <blockquote>\n    <p>This user-journey-based detection is powerful because modern automation is increasingly capable of appearing legitimate in short bursts. Bots can execute JavaScript, use real browser environments, and pass individual CAPTCHAs without raising suspicion. What remains difficult to replicate is consistent human behavior over time.</p>\n   </blockquote>\n   <p>Precursor automatically injects a lightweight client-side script that continuously collects behavioral signals, such as pointer movements, keyboard activity, focus changes, and page visibility. The script analyzes them at the edge in real time, correlates them across the entire session to detect automated behavior, and does so using aggregated, privacy-preserving telemetry rather than recording user inputs.</p>\n   <p>The team notes that while bots can simulate human interactions by adding random delays or cursor movements, they often fail to reproduce natural behavioral patterns shaped by human physiology and cognition, such as wrist motion, reaction times, and subtle hand tremors. By analyzing these patterns across an entire session, Precursor aims to distinguish automated traffic from legitimate users. Elmore and Wolters add:</p>\n   <blockquote>\n    <p>For legitimate users, Precursor means fewer unnecessary interruptions. For bot developers, it raises the cost of operating automation by requiring them to simulate a full session. This is significantly harder to build, more expensive to maintain, and far less reliable to operate at scale.</p>\n   </blockquote>\n   <p>The release also adds session-based analytics to Security Analytics, shifting visibility from individual requests to complete visitor sessions to better identify anomalous and automated behavior. Angel Hadjiev, co-founder and CEO of foura.ai, <a href=\"https://www.linkedin.com/posts/angelhadjiev_in-case-you-missed-it-cloudflare-shipped-share-7482762284084424704-Oav_/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">comments</a> on LinkedIn:</p>\n   <blockquote>\n    <p>This is a big shift in how bot detection works (...) Tools like proxy rotation, header fuzzing, and pacing were all built for a world where you were judged one request at a time. The game has changed to five-minute behavioral coherence.</p>\n   </blockquote>\n   <p>In a <a href=\"https://news.ycombinator.com/item?id=48893446\">popular Hacker News thread</a>, many welcomed the move beyond CAPTCHAs but questioned the privacy implications and long-term effectiveness of continuous client-side behavioral monitoring. User <em>Havoc</em> writes:</p>\n   <blockquote>\n    <p>It’s a bit alarming how Cloudflare is establishing itself as arbiter of all things bots (...) Doesn’t seem healthy for the internet as a whole.</p>\n   </blockquote>\n   <p>On Reddit, a user <a href=\"https://www.reddit.com/r/CloudFlare/comments/1uvbe2l/introducing_precursor_detecting_agentic_behavior/\">comments</a>:</p>\n   <blockquote>\n    <p>I can't help but thinking that their breakdown of human mouse behavior will actually just help bot designers make bots MORE human.</p>\n   </blockquote>\n   <p>Cloudflare is not the only provider incorporating behavioral analysis into bot detection services.&nbsp;<a href=\"https://www.infoq.com/news/2026/05/cloud-fraud-defense-recaptcha/\">Google Cloud Fraud Defense</a> and AWS WAF Bot Control also use behavioral signals, albeit with different architectures and detection techniques.</p>\n   <p>Precursor is currently available to all Cloudflare customers in open beta and will remain free until general availability.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare's Precursor Detects Bots and AI Agents Through Continuous Behavioral Analysis\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/cloudflare-precursor-detection/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1786175640000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 推出 Precursor，这是一款客户端行为分析引擎，通过分析连续会话交互而不是依赖静态验证码，来检测复杂的机器人和 AI 智能体。",
+  "oneSentenceSummary": "Cloudflare 推出 Precursor，这是一款客户端行为分析引擎，通过分析连续会话交互而不是依赖静态验证码，来检测复杂的机器人和 AI 智能体。",
+  "summary": "Cloudflare 推出了 Precursor，这是一款新的行为分析工具，旨在对抗那些能够绕过传统验证码和浏览器指纹识别的高级机器人与 AI 智能体。与一次性验证不同，Precursor 在整个用户旅程中持续监控客户端信号，包括鼠标移动、键盘输入节奏和页面可见性，以识别自动化难以复制的模式，例如人类生理震颤和认知反应时间。该工具旨在降低对合法用户的干扰，并提高机器运营者的成本，但也在 Hacker News 和 Reddit 上引发了关于隐私问题的讨论，以及机器人开发者可能利用此类行为数据制造出更接近人类的自动化程序。",
+  "mainPoints": [
+    {
+      "point": "从静态验证转向持续行为一致性",
+      "explanation": "Precursor 不再依赖验证码等一次性验证方式，而是转向分析整个用户会话，这使得那些只能在短时间内表现得像正常用户的机器人更难逃避检测。"
+    },
+    {
+      "point": "利用人类生理与认知模式",
+      "explanation": "该系统能够检测细微的人类特征，例如手腕运动和反应时间，与简单随机延迟相比，这些特征对于机器人开发者来说在大规模模拟上要困难得多且成本高昂。"
+    },
+    {
+      "point": "与更广泛的安全分析集成",
+      "explanation": "该工具将视角从单个请求分析扩展到完整访客会话，从而能在安全分析中更好地识别异常的自动化行为。"
+    },
+    {
+      "point": "社区对隐私与“军备竞赛”的担忧",
+      "explanation": "批评者认为，持续监控会引发隐私问题，并可能无意中为机器人设计者提供改进其人类行为模仿能力的蓝图。"
+    }
+  ],
+  "keyQuotes": [
+    "难以复制的仍然是人类行为在时间上的持续一致性。",
+    "游戏规则已变为五分钟的行为连贯性。"
+  ],
+  "tags": [
+    "Bot 检测",
+    "AI 智能体",
+    "网络安全",
+    "Cloudflare",
+    "行为分析"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 527,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786175640000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-08 15:54:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_8e54a7c5ba",
+  "title": "GitHub 强化 npm 与 Actions 默认设置，引发延迟与签名之争",
+  "url": "https://www.infoq.com/news/2026/08/github-npm-actions-defaults/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-08 15:45:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has <a href=\"https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/\">consolidated the changes</a> it shipped across npm and GitHub Actions between March and July 2026 to disrupt supply chain attacks. Nothing in the post is new, since every item already landed through the changelog; however, it makes clear how many of these changes alter defaults rather than add options.</p>\n   <p>Greg Ose, principal product security engineer, and Zachary Steindler, principal software engineer, frame the problem as one without a single fix. These attacks chain several weaknesses together, so GitHub has prioritized the mitigations that break the most impactful links.</p>\n   <p>For initial compromise, npm now places high-impact accounts into read-only mode for 72 hours when they change their email address or use a 2FA recovery code. On the Actions side, the default behavior of actions/checkout changed so workflows no longer check out untrusted fork code under commonly exploited triggers unless a team explicitly opts out. That change was backported, so it reaches pipelines that pinned an earlier release.</p>\n   <p>Two further controls target escalation. <a href=\"https://github.blog/changelog/2026-06-18-control-who-and-what-triggers-github-actions-workflows/\">Workflow execution policies</a> let admins govern who may trigger workflows and which trigger types are permitted, while the Actions cache is now read-only for untrusted triggers, closing the path where an attacker poisons a shared cache entry to reach privileged release workflows.</p>\n   <p>For credential exfiltration, the guidance is blunt: removing long-lived credentials from the pipeline is the single most effective step, and npm <a href=\"https://docs.npmjs.com/trusted-publishers\">trusted publishing</a> now supports CircleCI. An Actions network firewall is in technical preview, logging outbound traffic so teams can spot unusual destinations.</p>\n   <p>On propagation, npm <a href=\"https://github.blog/changelog/2026-05-22-staged-publishing-and-new-install-time-controls-for-npm/\">staged publishing</a> holds versions until an additional approval and 2FA step completes, and <a href=\"https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/\">npm v12</a> disables install scripts by default along with dependencies fetched via git or remote URLs. <a href=\"https://www.infoq.com/news/2026/07/github-dependabot-cooldown/\">Dependabot version updates</a> now wait three days before opening a pull request.</p>\n   <p>Community reactions on <a href=\"https://news.ycombinator.com/item?id=49096427\">Hacker News</a> have been sharply divided, centering less on the individual controls than on whether time delays are the right instrument at all.</p>\n   <p>The 72-hour account freeze drew immediate argument over how the number was chosen. As one commenter, datakan, put it, maintainers travel and take leave, and attacks are often timed for Fridays precisely because nobody is watching:</p>\n   <blockquote>\n    <p>There is a big difference between 3 days when someone may be sick or traveling and not looking and 30, which aligns better with 99% of scenarios this may be an issue with. 3 days is absurd. Even password apps with kill switches will default to 7 days.</p>\n   </blockquote>\n   <p>Others rejected the premise that a single correct value exists. Every longer number invites a longer one, and a month-long publishing block would require an override path that does not currently exist. Commenter Normal_gaussian proposed the empirical version: plot compromised repositories against the time a maintainer takes to begin resolution, and pick a value just past the inflection point.</p>\n   <p>A sharper objection came from lrvick, who described buying the expired email domain of a sole npm package author for eight dollars, putting the ability to ship code to roughly 70,000 companies within reach of a password reset:</p>\n   <blockquote>\n    <p>72 hours would not make a difference here.</p>\n   </blockquote>\n   <p>He extended that into the thread's dominant critique, that the industry keeps building process gates while declining to implement author-side package signing of the kind Linux distributions have had since the 1990s, and that npm has rejected pull requests implementing it, even optionally, for a decade.</p>\n   <p>The rebuttal came from acdha, who argued that what actually keeps Linux distributions safer is fewer people with push access combined with a time delay, rather than signatures as such:</p>\n   <blockquote>\n    <p>What keeps Linux distributions safer is that fewer people are able to push updates and there’s a time delay. The compromises are because people exploit release pipelines, and if your build infrastructure is compromised, it’ll merrily sign the compromised packages as well.</p>\n   </blockquote>\n   <p>Commenter summarybot framed the cooldown approach as an admission of failure, given that GitHub owns npm and has extensive code analysis capability:</p>\n   <blockquote>\n    <p>Introducing a cooldown period seems like the lowest tech solution to a technological problem I have seen in a long while.</p>\n   </blockquote>\n   <p>The counterargument from insanitybit was operational: cooldowns do not depend on updating detection rules or keeping pace with obfuscation, and they buy scanners time to do their work.</p>\n   <p>Trusted publishing generated the most practical exchange, prompted by a question about why it helps when an attacker has already compromised the workflow. As commenter pimterry explained:</p>\n   <blockquote>\n    <p>Trusted&nbsp;staged&nbsp;publishing helps a lot: you have to independently pwn the workflow _and_ then complete a separate 2FA flow as a maintainer. The workflow never sees any keys that can publish independently.</p>\n   </blockquote>\n   <p>Others added that the attacker must trigger the specific workflow, which leaves a trace on GitHub.</p>\n   <p>If these reactions are representative, the disagreement is not about whether the individual controls help but about what they substitute for. GitHub has chosen mechanisms that work without maintainer participation, while the mechanism practitioners keep asking for, author-side signing, requires exactly that participation and has been declined for a decade on the grounds that it would deter contributors.</p>\n   <p>The asymmetry worth noting is that the changes arriving automatically are the moderate ones, while the strongest protections, staged and trusted publishing, remain opt-in and unevenly adopted. The install-script change in npm v12 will also break builds that never audited what runs at install time.</p>\n   <p>The changes are rolling out now, with GitHub pointing to its changelog for the remainder.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Hardens npm and Actions Defaults, Drawing Debate over Delays versus Signing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/github-npm-actions-defaults/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1786175100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 在 npm 和 Actions 中整合了一系列默认安全更改，以破坏供应链攻击，引发了关于时间延迟缓解措施能否取代作者端包签名的争论。",
+  "oneSentenceSummary": "GitHub 在 npm 和 Actions 中整合了一系列默认安全更改，以破坏供应链攻击，引发了关于时间延迟缓解措施能否取代作者端包签名的争论。",
+  "summary": "GitHub 总结了 2026 年 3 月至 7 月期间为 npm 和 GitHub Actions 推出的安全更新，强调大多数更改是修改默认设置，而非新增选项。对于 npm，高影响力账户在更改邮箱或 2FA 恢复后的 72 小时内处于只读模式；分阶段发布现在需要额外的批准和 2FA 步骤；npm v12 默认禁用安装脚本；可信发布新增了 CircleCI 支持。在 Actions 方面，actions/checkout 的默认行为现在会阻止签出不受信任的 fork 代码，除非团队选择退出；工作流执行策略允许管理员控制触发工作流的主体和条件；Actions 缓存对不受信任的触发器是只读的；Dependabot 版本更新会等待三天再开启拉取请求；网络防火墙处于技术预览阶段，可记录出站流量。Hacker News 上的社区讨论较少关注具体的控制措施，而更多关注自动延迟是否足以替代作者端的包签名。批评者认为 72 小时窗口过短或过于随意，支持者则指出延迟不需要贡献者参与就能生效，而签名机制十年来一直未获采纳。",
+  "mainPoints": [
+    {
+      "point": "npm 在高影响力账户更改邮箱或 2FA 恢复后，将其置于只读模式 72 小时。",
+      "explanation": "这可以防止劫持账户凭据的攻击者立即发布恶意包版本，为所有者留出检测并恢复遭入侵状态的时间。"
+    },
+    {
+      "point": "actions/checkout 现在默认不签出不受信任的 fork 代码，除非显式选择退出，且此更改已回溯移植到旧版本。",
+      "explanation": "通过阻断恶意 fork 代码被拉入工作流这一常见供应链攻击途径，该默认设置降低了 CI 流水线中意外执行代码的风险。"
+    },
+    {
+      "point": "其他控制措施包括工作流执行策略、对不受信任触发器的只读缓存、Dependabot 冷却期，以及面向 CircleCI 的可信发布支持。",
+      "explanation": "这些措施限制了权限提升和凭据窃取，并在发布前为维护者提供额外的验证步骤，从而打破典型攻击链中的多个环节。"
+    },
+    {
+      "point": "社区反应的核心是在自动时间延迟缓解与作者端签名之间的取舍；批评者认为延迟不够，支持者则指出延迟避免了对贡献者参与的依赖。",
+      "explanation": "这场辩论反映了更深层的理念分歧：基于流程的延迟与加密签名之间的对立，凸显了在保障软件供应链安全方面，对可用性、采用率以及每种方法有效性的不同考量。"
+    }
+  ],
+  "keyQuotes": [
+    "让 Linux 发行版更安全的是，能推送更新的人更少，而且存在时间延迟。",
+    "引入冷却期似乎是我很久以来见过的对技术问题的最低技术含量解决方案。",
+    "可信分阶段发布帮助很大：你必须独立攻破工作流，然后还要作为维护者完成单独的 2FA 流程。",
+    "72 小时不会有什么差别。",
+    "3 天的窗口与 30 天的窗口差别很大：3 天里有人可能生病或旅行而不会注意到，而 30 天更好地契合了 99% 可能出现问题的场景。"
+  ],
+  "tags": [
+    "供应链安全",
+    "npm",
+    "GitHub Actions",
+    "CI/CD",
+    "开发者工具"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 83,
+  "wordCount": 890,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786175100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-08 15:45:00"
+}
