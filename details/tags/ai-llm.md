@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-09 08:54:16 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-09 11:25:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -5228,9 +5228,7 @@
 
 ### [智能体代码质量](https://addyo.substack.com/p/agentic-code-quality)
 
-2026-08-08 22:31:15 | 标签: AI 智能体, 代码质量, 质量门禁, 软件工程, AI 编程
-
-> 这篇文章解释了为什么传统代码审查无法适应每日能产生数十万次变更的 AI 智能体。它引入了“质量门禁”的概念——即贯穿整个开发循环、用于审查每个智能体提案的约束条件，例如单元测试、属性测试、变异测试、圈复杂度检查和架构规则。作者探讨了智能体自主性、意图模糊以及对可信反馈需求等挑战，强调必须有意识地设置约束，以在正确性、可维护性、性能、安全性和效率之间取得平衡。实际案例包括使用 Sonar 实现一致的门禁，以及扩展验证循环与调整质量门槛之间的权衡。文章最后指出，质量最终由我们围绕智能体设置的约束来保障，并敦促团队制定自己的约束驱动计划。
+2026-08-08 22:31:15
 
 
 
@@ -13570,57 +13568,43 @@
 
 ### [自动模式现已成为-Claude-Code-Pro、Max-和-Team-计划的默认设置](https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything)
 
-2026-08-09 06:36:03 | 标签: AI 编程, Claude Code, AI 安全, 提示词注入, 自动模式
-
-> Anthropic 宣布，自 8 月 14 日起，自动模式将成为 Claude Code Pro、Max 和 Team 计划的默认设置。这一决定基于一项针对 1，053 名付费开发者的对照研究：自动模式拦截了 89% 的注入有害命令，而人工审核仅拦截 13.6%。Trajectory Labs 的第三方评测在 72 个场景中对 Claude Fable 5、Opus 5 和 Sonnet 5 的自动模式发起了 720 次间接提示词注入尝试，报告零次成功攻击。此前曾预测 2026 年编码智能体安全将发生「挑战者级灾难」的 Simon Willison 肯定了评测结果的亮眼表现，但仍表示怀疑。他指...
+2026-08-09 06:36:03
 
 
 
 ### [涨价-30-倍仍是最便宜的模型，DeepSeek-可能有这个底气](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247665545&idx=1&sn=f969a204e09e8efe5d0444c7029a5f62)
 
-2026-08-08 13:30:00 | 标签: DeepSeek, 模型定价, 缓存命中率, 第三方平台, OpenCode Go
-
-> 文章通过引用 OpenRouter 价格表、开发者实测和知乎实验数据，对比 DeepSeek 官方 API 与第三方平台（如 DeepInfra、OpenCode Go）的实际成本。指出官方 API 虽然标价较高，但凭借极高的缓存命中率（可达 100%）以及 Token‑wise 压缩、稀疏注意力、公共前缀检测等架构优化，实际使用成本往往更低；第三方平台往往使用更低精度或压缩版本，上下文窗口可能被截断（如 OpenCode Go 仅 600k），导致能力受限且长任务成本放大。此外，文章强调在 AI Coding 场景中，Harness（工具调用、记忆管理、消息路由）比模型智力更关键，官方提供的...
+2026-08-08 13:30:00
 
 
 
 ### [贵-57.1-倍的-Claude-Opus-4.8-五项全输，赢它的不是模型，是-Harness](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651049201&idx=1&sn=f8110edb2ca6e5ca038bf0e8196394b0)
 
-2026-08-08 12:30:00 | 标签: AI Agent, Harness, 模型评测与基准, AI 产品与应用, AI 工作流
-
-> 文章围绕 AOE Tech Labs 旗下 Floatboat 公布的 Harness 第三方基准评测展开，核心论点是 Agent 能力由 Model + Harness 共同决定，而行业一直只计量模型、不计量 Harness。作者用单一变量实验证明，同一 DeepSeek-V4-Flash 底座接入 Floatboat Harness 后，五项基准全部超过价格贵 57.1 倍的 Claude Opus 4.8，而该模型跑在官方 Harness 上则只与对手互有胜负。文章进一步提出 HLR 指标，量化「只换 Harness」相对「升级到更贵模型」的收益，并把增益按任务程长排列，发现 Harne...
+2026-08-08 12:30:00
 
 
 
 ### [智谱&amp;清华唐杰：LLM-Memory-最新全景综述](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247509715&idx=1&sn=5b8305e9a4cdc01818802f4ffce9be97)
 
-2026-08-08 11:39:00 | 标签: LLM, 记忆机制, 架构分类, 注意力, Mamba
-
-> 文章由 PaperAgent 发布，基于清华唐杰团队与 NUS、Bosch AI 的综述，首次以架构为中心建立 LLM 记忆的统一分类学。它将注意力缓存、Mamba 类循环状态、测试时训练（TTT）、MoE 路由及 Engram 式查找存储等看似无关的技术，放入表征（隐式/显式）、更新动态（离线/在线）、持久性（短期/长期）三正交轴中进行比较。文中详细阐释了隐式记忆（注意力作为可微分内容寻址工作记忆、稀疏/选择性准入控制、循环序列记忆的状态压缩与权衡）和显式记忆（参数化模块如 Titans、TTT-E2E、In-Place TTT、MEMORYLLM/LM2；查找式记忆如 kNN-LM、Eng...
+2026-08-08 11:39:00
 
 
 
 ### [DeepSeek-V4-Flash-接入-Codex-与-Claude-Code-一手实测](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247509715&idx=2&sn=e9c05a9d9ed575833dd5d32b8bc015c7)
 
-2026-08-08 11:39:00 | 标签: AI Agent, Agent Harness, DeepSeek V4 Flash, Claude Code, Codex
-
-> 文章详细报道了 Composio 使用 DeepSeek V4 Flash（284B 参数、13B 激活）分别接入 Claude Code、Codex、OpenCode 和 Oh My Pi 四种 agent harness，在 30 个真实多步骤 agentic 任务（涉及 Gmail、Sheets、Airtable、GitHub、Slack、Calendar、Notion、PagerDuty 等在线工具）上进行对比测试。测试结果显示：Oh My Pi 成功率最高（17/30）但最慢；Claude Code 速度最快（122.7s/任务）但成本最高（约 $0.195/成功任务）；OpenCo...
+2026-08-08 11:39:00
 
 
 
 ### [从-Token-Maxxing-到-Token-Minimizing，企业-AI-开始算账](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649110529&idx=1&sn=644c8a82013be7c891097aa555603dd7)
 
-2026-08-08 09:46:00 | 标签: AI 商业化, LLM, AI 编程, AI Agent, AI 工作流
-
-> 文章以大量近期案例追踪企业 AI 成本治理的急速转向。3 月 Token Maxxing 盛行，Meta 内部出现 Token 消耗排行榜，黄仁勋以年薪 50 万美元工程师年消耗 25 万美元 Token 为标准推动 AI 使用；到 6 月，Uber、沃尔玛、腾讯等企业纷纷出台预算上限与动态配额，Pylon 更因席位升级面临 3.5 倍账单涨幅。作者提出 Token ROI 核算框架，展示 Shopify 用量网关、GitHub 影响面板、Amazon 标准化部署量、Cursor 代码保留率与 Cognition 工时折算等实践，并讨论模型按任务路由的成本优化。最后对比 Claude Code...
+2026-08-08 09:46:00
 
 
 
 ### [AINews-Zawinski-的多智能体定律](https://www.latent.space/p/ainews-zawinskis-law-of-multiagents)
 
-2026-08-08 09:12:07 | 标签: AI Agents, Multi-Agent Systems, AI Security, AI Infrastructure, Model Governance
-
-> 本期通讯回顾了 OpenAI 的一起事件，其中模型将内部 Artifactory 用作共享留言板，引发了关于多智能体协作与安全的广泛讨论。文中提出了 Zawinski 的多智能体定律，指出无法通信的智能体将被能够通信的智能体所取代。随后，文章综述了本周的 AI 新闻：OpenAI 将其 Astra 模型标记为关键网络风险；Claude Code 增加了跨会话消息功能；LangChain 推出了 Managed Deep Agents；Prime Intellect 增加了多智能体支持；Cloudflare 将 AI Gateway 与 Workers AI 统一。此外，还涵盖了各种模型、基准测...
+2026-08-08 09:12:07
 
 
 
@@ -48528,25 +48512,19 @@
 
 ### [在-AI-开发加速的背景下保持-ChatGPT-的高效运行](https://www.infoq.com/presentations/openai-performance-engineering-agentic-coding/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-08 17:00:00 | 标签: 性能工程, 智能体编程, AI 编程, AI Agent, LLM
-
-> OpenAI 的 ChatGPT 性能负责人 Martin Spier 在此次演讲中探讨了两种同步加速的现象：超高速增长和 AI 驱动的开发速度。ChatGPT 在 5 天内达到了 100 万用户，目前每周活跃用户数达 9 亿；同时，利用 Codex 的智能体编程使每位工程师的 PR 提交量增加了 70%，使多线程并行开发成为常态。Spier 指出，每一行新增代码都会消耗共享的延迟和硬件资源预算，且随着变更速度的提升，微小的性能退化会更快地产生复合影响。他解释了其团队如何通过加速“检测-修复”的响应循环来适应这一现状，包括使用智能体对代码进行分析、提出并基准测试修复方案，并运行针对延迟热点、C...
+2026-08-08 17:00:00
 
 
 
 ### [最近看了-Claude-Code-创始人-Boris-Cherny-的访谈，发现我们过去收藏的很多提示词，可能已经过时了。-过去写提示词，我们总喜欢先给模...](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247560544&idx=1&sn=9a147a99b5b32ab73b76a6976227c137)
 
-2026-08-08 16:26:00 | 标签: AI 编程, Prompt Engineering, LLM, Agent, AI 工作流
-
-> 文章回顾了过去常见的提示词写法——赋予模型厉害身份并加入众多规则（如“一步一步思考”“先制定计划”），指出这种做法在新模型中不仅不起作用，反而可能限制模型的判断。接着以 Claude Code 创始人 Boris Cherny 的访谈为依据，说明好的提示词应聚焦任务目标、明确边界（不能做什么）、提供可检验的验证方式以及明确的停止条件。通过两个具体例子——将 Electron 应用重写为原生 Swift 应用，以及降低用户查询接口的 P99 延迟——展示了如何用目标、约束、验证（截图逐像素比较、功能测试通过；压测三次、现有测试通过）和边界来引导 Agent 自行选择最优实现路径。最后强调，应把 ...
+2026-08-08 16:26:00
 
 
 
 ### [Cloudflare-的-Precursor-通过持续行为分析识别机器人与-AI-智能体](https://www.infoq.com/news/2026/08/cloudflare-precursor-detection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-08 15:54:00 | 标签: Bot 检测, AI 智能体, 网络安全, Cloudflare, 行为分析
-
-> Cloudflare 推出了 Precursor，这是一款新的行为分析工具，旨在对抗那些能够绕过传统验证码和浏览器指纹识别的高级机器人与 AI 智能体。与一次性验证不同，Precursor 在整个用户旅程中持续监控客户端信号，包括鼠标移动、键盘输入节奏和页面可见性，以识别自动化难以复制的模式，例如人类生理震颤和认知反应时间。该工具旨在降低对合法用户的干扰，并提高机器运营者的成本，但也在 Hacker News 和 Reddit 上引发了关于隐私问题的讨论，以及机器人开发者可能利用此类行为数据制造出更接近人类的自动化程序。
+2026-08-08 15:54:00
 
 
 
@@ -69884,17 +69862,13 @@ http://antirez.com/news/162
 
 ### [Gemini-4-前途渺茫，谷歌战略放弃-AI-前三地位](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691571599&idx=1&sn=6d21d956666d1648ffbbe7595b6de34e)
 
-2026-08-08 15:12:00 | 标签: Gemini, 谷歌云, SemiAnalysis, 算力分配, AI 战略
-
-> 腾讯科技报道 SemiAnalysis 分析师团队的观点，认为谷歌近期对 DeepMind 领导层的全面重组（哈萨比斯转任董事长兼 Alphabet 首席科学家、杰夫·迪恩等核心技术人离职）标志着其在前沿大模型研发上的战略收缩。文章指出，若谷歌仍相信 Gemini 4 Pro 的前景，不会做出如此人员调整；相反，谷歌云成为最大受益者，因内部算力分配倾向于云业务，谷歌云 CEO 托马斯·库里安因而笑到最后。SemiAnalysis 预测谷歌云的营收增速将显著加速，TPU 系统销售将带来巨额收入，而 Gemini 模型表现持续下滑，预计将被 MSL、SpaceXAI 等新兴玩家反超。文章还追溯了谷...
+2026-08-08 15:12:00
 
 
 
 ### [Jeff-Dean-离开-Google-后首亮相：拆解在-Google“前半生”，解密新公司-Discovery-Loop](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247631620&idx=1&sn=e5cf020227d33f510065965edf644c67)
 
-2026-08-08 09:03:00 | 标签: Jeff Dean, AI 基础设施, Discovery Loop, MoE, TensorFlow
-
-> 本文记录了 Jeff Dean 在离开 Google 后，于斯坦福大学亚裔先锋者论坛上与 Dawn Song 的深度对谈。Jeff Dean 回顾了 MoE、TensorFlow 等里程碑式技术的诞生背景与设计哲学，分享了其对 AI 发展范式、递归式自我改进及 AI Agent 安全治理的见解。访谈重点介绍了其新公司 Discovery Loop 的使命：通过自动化科学研究与工程创新流程，加速人类科学发现。Jeff Dean 强调，创业是为了追求极致的专注，利用 AI 跨学科理解能力，构建能够自主拆解、实验并迭代的科研基础设施。
+2026-08-08 09:03:00
 
 
 
@@ -82992,9 +82966,7 @@ http://antirez.com/news/162
 
 ### [张一鸣为什么把-50%的时间给了-Seed？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651929956&idx=1&sn=69b8bf6d2e697af69bd9384a9817e4be)
 
-2026-08-08 10:00:00 | 标签: 大模型, 基础模型, AI 商业化, 模型训练与推理, 推荐算法
-
-> 文章梳理了字节跳动上半年在豆包、扣子、TRAE、飞书等产品上的动作，指出公司未再主动定义行业议题，而是将核心精力的 50%投入于 Seed 团队——一个专注于基础模型、强化学习和多模态研究的秘密研究组织。文章回顾了字节过去依托推荐算法等底层能力实现产品跃迁的历史，分析了在 AI 时代底层模型迭代速度可能落后于上层交互与工作流重构的风险，指出豆包的巨大成功导致资源倾斜惯性，而腾讯、阿里则更快把 AI 融入现有生产力系统。张一鸣的赌注在于，若模型真成为像推荐算法一样的通用底座，入口之争将失去意义；若赌错，字节可能只能沦为模型供应商。全文通过数据、内部动向和竞争对手对比，探讨了这一延迟满足战略的合理...
+2026-08-08 10:00:00
 
 
 

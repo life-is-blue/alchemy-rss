@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-09 08:54:16 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-09 11:25:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -584,9 +584,7 @@
 
 ### [GitHub-强化-npm-与-Actions-默认设置，引发延迟与签名之争](https://www.infoq.com/news/2026/08/github-npm-actions-defaults/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-08 15:45:00 | 标签: 供应链安全, npm, GitHub Actions, CI/CD, 开发者工具
-
-> GitHub 总结了 2026 年 3 月至 7 月期间为 npm 和 GitHub Actions 推出的安全更新，强调大多数更改是修改默认设置，而非新增选项。对于 npm，高影响力账户在更改邮箱或 2FA 恢复后的 72 小时内处于只读模式；分阶段发布现在需要额外的批准和 2FA 步骤；npm v12 默认禁用安装脚本；可信发布新增了 CircleCI 支持。在 Actions 方面，actions/checkout 的默认行为现在会阻止签出不受信任的 fork 代码，除非团队选择退出；工作流执行策略允许管理员控制触发工作流的主体和条件；Actions 缓存对不受信任的触发器是只读的；De...
+2026-08-08 15:45:00
 
 
 
