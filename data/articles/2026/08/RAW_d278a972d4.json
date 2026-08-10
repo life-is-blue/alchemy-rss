@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d278a972d4",
+  "title": "selenium-mcp：让 Claude Code 通过看到页面编写真实的 Selenium 测试",
+  "url": "https://dev.to/gentic_news/selenium-mcp-let-claude-code-write-real-selenium-tests-by-seeing-the-page-41a7",
+  "date": "2026-08-10 00:26:17",
+  "author": "gentic news",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>Install selenium-mcp to give Claude Code a real browser. It writes standard Selenium tests with accurate locators from live page inspection, integrating into your existing Java project.</p>\n  </blockquote>\n  <h2><a name=\"key-takeaways\" href=\"#key-takeaways\"> </a> Key Takeaways</h2>\n  <ul>\n   <li>Install selenium-mcp to give Claude Code a real browser.</li>\n   <li>It writes standard Selenium tests with accurate locators from live page inspection, integrating into your existing Java project.</li>\n  </ul>\n  <h2><a name=\"what-changed-seleniummcp-gives-claude-code-eyes-on-your-page\" href=\"#what-changed-seleniummcp-gives-claude-code-eyes-on-your-page\"> </a> What Changed — selenium-mcp gives Claude Code eyes on your page</h2>\n  <p>If you've ever asked Claude Code to write a Selenium test, you know the pain: it guesses locators from pasted HTML, misses dynamic elements, and produces tests that fail on the first run. <strong>selenium-mcp</strong> (github.com/Volta-Jebaprashanth/selenium-mcp) fixes that by giving your AI agent a real Selenium WebDriver session it can drive directly. It's a Java-based MCP server that exposes 112 tools across 16 categories—including <code>openBrowser</code>, <code>navigate</code>, <code>getPageElementsFiltered</code>, <code>waitForNetworkIdle</code>, and REST Assured API tools.</p>\n  <p>Instead of hallucinating selectors, Claude Code inspects the live DOM, gets disambiguated locators, and writes tests that actually work. The output is plain Java with standard Selenium—no proprietary runtime dependency.</p>\n  <h2><a name=\"what-it-means-for-you-no-more-guessing-locators\" href=\"#what-it-means-for-you-no-more-guessing-locators\"> </a> What It Means For You — No more guessing locators</h2>\n  <p>For test automation engineers, this is a game-changer. You can now prompt Claude Code to:</p>\n  <ul>\n   <li><strong>Inspect a page and write a test</strong> — Claude opens Chrome, navigates to your staging URL, finds the email and password fields with <code>getPageElementsFiltered</code>, and writes a <code>LoginPageTest</code> class in your existing Page Object style.</li>\n   <li><strong>Diagnose flaky tests</strong> — Use <code>NetworkTools</code> like <code>waitForNetworkIdle</code> and <code>getNetworkLog</code> to pinpoint timing issues.</li>\n   <li><strong>Refactor brittle locators</strong> — Point Claude at an existing Page Object and ask it to improve selectors using live element discovery.</li>\n  </ul>\n  <p>Since Claude works in your Maven project, it follows your conventions—TestNG, JUnit 5, whatever you use—and writes files directly into <code>src/test/java</code>.</p>\n  <h2><a name=\"try-it-now-setup-and-your-first-prompt\" href=\"#try-it-now-setup-and-your-first-prompt\"> </a> Try It Now — Setup and your first prompt</h2>\n  <p><strong>Step 1: Download the jar</strong> — Grab the latest release from <a href=\"https://github.com/Volta-Jebaprashanth/selenium-mcp/releases/latest/download/selenium-mcp.jar\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>. You need Java 21+ and a local Chrome, Firefox, or Edge (WebDriver binaries auto-fetch).</p>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fpjdxtzbvsfz1buuukd4u.png\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fpjdxtzbvsfz1buuukd4u.png\" alt=\"Image\" loading=\"lazy\"></a></p>\n  <p><strong>Step 2: Add to Claude Code config</strong> — Add this to your MCP server config (e.g., <code>~/.claude.json</code> or project <code>.mcp.json</code>):\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight json\"><code><span class=\"p\">{</span><span class=\"w\">\n  </span><span class=\"nl\">\"mcpServers\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"p\">{</span><span class=\"w\">\n    </span><span class=\"nl\">\"selenium-mcp\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"p\">{</span><span class=\"w\">\n      </span><span class=\"nl\">\"command\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"s2\">\"java\"</span><span class=\"p\">,</span><span class=\"w\">\n      </span><span class=\"nl\">\"args\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"p\">[</span><span class=\"s2\">\"-jar\"</span><span class=\"p\">,</span><span class=\"w\"> </span><span class=\"s2\">\"/absolute/path/to/selenium-mcp.jar\"</span><span class=\"p\">]</span><span class=\"w\">\n    </span><span class=\"p\">}</span><span class=\"w\">\n  </span><span class=\"p\">}</span><span class=\"w\">\n</span><span class=\"p\">}</span><span class=\"w\">\n</span></code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p><strong>Step 3: Open Claude Code in your Maven project</strong> — Ensure you're in the workspace with your existing Java/Selenium tests.</p>\n  <p><strong>Step 4: Prompt for a real test</strong> — Try this:</p>\n  <blockquote>\n   <p>\"Open Chrome and navigate to our staging login page at <code>https://staging.example.com/login</code>. Inspect the email and password fields using the page element tools, then write a <code>LoginPageTest</code> class in our existing <code>LoginPage</code> Page Object style, using TestNG, that logs in with a valid test user and asserts we land on the dashboard.\"</p>\n  </blockquote>\n  <p>Watch the tool calls: <code>openBrowser</code>, <code>navigate</code>, <code>getPageElementsFiltered</code>. Claude writes the test with real locators and waits.</p>\n  <p><strong>Step 5: Run and review</strong> — Run <code>mvn test</code> and review the output like a teammate's PR. It's standard Selenium code.</p>\n  <p><strong>Go further</strong>: Ask Claude to add REST Assured API checks via <code>ApiTools</code>, or debug a flaky test with <code>NetworkTools</code>.</p>\n  <h2><a name=\"why-it-works-seeing-beats-guessing\" href=\"#why-it-works-seeing-beats-guessing\"> </a> Why It Works — Seeing beats guessing</h2>\n  <p>The core problem with AI-generated tests is hallucinated selectors. selenium-mcp gives Claude a live browser session, so it can query the actual DOM, get ancestor/sibling-disambiguated locators, and verify element visibility. Combined with CDP network tools, it can even wait for network idle—addressing the #1 cause of flaky tests.</p>\n  <h2><a name=\"when-to-use-it\" href=\"#when-to-use-it\"> </a> When To Use It</h2>\n  <ul>\n   <li>You're writing new Selenium tests and want them right the first time.</li>\n   <li>You have flaky tests that need diagnosis.</li>\n   <li>You're refactoring Page Objects and want accurate locators.</li>\n  </ul>\n  <p>Skip it if you're not on Java/Selenium—this is built specifically for that stack.</p>\n  <hr>\n  <p><strong>Source:</strong> <a href=\"https://dev.to/voltajeba/from-zero-to-a-working-selenium-test-written-by-an-ai-agent-that-can-actually-see-the-page-50nj\">dev.to</a></p>\n  <hr>\n  <p><em>Originally published on <a href=\"https://gentic.news/article/selenium-mcp-let-claude-code-write\" target=\"_blank\" rel=\"noopener noreferrer\">gentic.news</a></em></p>\n </body>\n</html>",
+  "aiSummary": "selenium-mcp 通过提供真实的浏览器会话，使 Claude Code 能够编写可靠的 Selenium 测试以获得准确的定位器。",
+  "oneSentenceSummary": "selenium-mcp 通过提供真实的浏览器会话，使 Claude Code 能够编写可靠的 Selenium 测试以获得准确的定位器。",
+  "summary": "本文介绍了 selenium-mcp，这是一个基于 Java 的 MCP 服务器，为 Claude Code 提供实时的 Selenium WebDriver 会话。与其从静态 HTML 中猜测选择器，AI 可以检查实时 DOM，获取消歧义的定位器，并生成符合现有 Maven 项目的标准 Java Selenium 测试。文章概述了安装、在 Claude Code 中的配置，以及编写测试、诊断不稳定测试和重构定位器的实用提示，强调输出的是纯 Selenium 代码，没有专有运行时依赖。",
+  "mainPoints": [
+    {
+      "point": "selenium-mcp 为 Claude Code 提供实时浏览器会话，以检查 DOM 并生成准确的定位器。",
+      "explanation": "通过使用 getPageElementsFiltered 等工具，AI 可以看到实际的页面元素，避免幻觉选择器，并生成在首次运行时即可工作的测试。"
+    },
+    {
+      "point": "该工具输出标准的 Java Selenium 代码，能够无缝集成到现有的 Maven 项目中。",
+      "explanation": "生成的测试遵循项目的测试框架（TestNG、JUnit 5）和页面对象模式，无需专有运行时依赖。"
+    },
+    {
+      "point": "它通过网络和元素检查工具支持调试不稳定的测试并优化脆弱的定位器。",
+      "explanation": "诸如 waitForNetworkIdle 和 getNetworkLog 等功能有助于识别时序问题，而实时元素发现则提高了选择器的鲁棒性。"
+    },
+    {
+      "point": "设置包括下载 selenium-mcp jar、在 Claude Code 的 MCP 设置中进行配置，并提示 AI 编写测试。",
+      "explanation": "配置完成后，用户可以让 Claude 打开浏览器，导航到 URL，检查元素，并直接在 src/test/java 中生成测试类。"
+    }
+  ],
+  "keyQuotes": [
+    "与其幻觉选择器，Claude Code 检查实时 DOM，获取消歧义的定位器，并编写出实际可用的测试。",
+    "对于测试自动化工程师来说，这是一个颠覆性的变革。",
+    "输出的是标准 Selenium 的纯 Java 代码——没有专有运行时依赖。"
+  ],
+  "tags": [
+    "Selenium",
+    "测试自动化",
+    "AI 编程",
+    "MCP 协议",
+    "Java"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 601,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786292777000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-10 00:26:17"
+}

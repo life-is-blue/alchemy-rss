@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-10 06:21:10 | [返回首页](/README.md)
+**更新时间**: 2026-08-10 08:57:00 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14553)
+- [AI & 大模型](#ai-llm) (14581)
 - [软件架构](#architecture) (23)
 - [前端与全栈](#frontend-fullstack) (916)
-- [DevOps](#devops) (696)
+- [DevOps](#devops) (697)
 - [产品与商业](#product-business) (45)
-- [其他](#other) (6515)
+- [其他](#other) (6530)
 
 
 ---
@@ -43,7 +43,7 @@
 - [从“会说”走向“会创作”｜Seed-Audio-1.0-音频创作模型发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494117&idx=1&sn=479ffb4e9fc90fa66d5bf531a84376a7) - AI 精选
 - [AI-Overviews-让谷歌陷入麻烦，GPT-Live-将推理置于后台，如何判断你的模型是否具有操控性](https://www.deeplearning.ai/the-batch/issue-362) - AI 精选
 
-- [查看全部 14553 篇...](/details/tags/ai-llm.md)
+- [查看全部 14581 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 696 篇...](/details/tags/devops.md)
+- [查看全部 697 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 
-- [查看全部 6515 篇...](/details/tags/other.md)
+- [查看全部 6530 篇...](/details/tags/other.md)
 
 
