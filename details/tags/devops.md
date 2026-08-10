@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-10 08:57:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-10 11:44:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -326,9 +326,7 @@
 
 ### [使用-TensorFlow-Serving-服务模型](https://dev.to/godofgeeks/serving-models-with-tensorflow-serving-3ge0)
 
-2026-08-09 15:42:47 | 标签: TensorFlow Serving, MLOps, 模型部署, 机器学习, Docker
-
-> 本文介绍 TensorFlow Serving 作为部署已训练 TensorFlow 模型的生产级系统。它先解释核心概念，然后概述优势，如低延迟预测、批处理、可扩展性、模型版本控制、热交换、多模型支持以及与语言无关的 gRPC/REST API。动手实践部分演示如何以 SavedModel 格式保存模型、拉取官方 Docker 镜像，并通过正确的端口和卷映射启动容器。文章还提供了用于 REST 和 gRPC 预测的 Python 客户端示例，说明了预期的目录结构，并讨论了局限性，例如学习曲线、资源消耗以及对简单应用可能造成的过度设计。最后，文章重点介绍了特色功能，并建议在将机器学习模型从实验阶...
+2026-08-09 15:42:47
 
 
 

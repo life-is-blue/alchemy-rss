@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-10 08:57:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-10 11:44:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -2725,9 +2725,7 @@
 
 ### [2026-香港吴声年度演讲：下一代消费者，身体感、创造欲、信息祛魅](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650886093&idx=2&sn=1337a7d4ccd838a232454e9a5c09dfbc)
 
-2026-08-09 09:06:00 | 标签: 消费者洞察, 场景方法, 商业创新, 下一代消费者, 身体感
-
-> 文章记录了场景实验室创始人吴声在 2026 年香港立秋演讲中的核心观点。他指出，随着技术深度融入生活，出现了一种跨年龄的新型人格——「下一代消费者」（XSpecies of Us），其核心特征是身体感（对真实身体反馈的重视）、创造欲（对只有自己能完成的表达的追求）以及信息祛魅（对宏大叙事的质疑，更看重使用过程、事实证据与长期行为）。基于此，吴声提出场景叙事的四个维度：上下文（context）强调通过产品提供可进入的动态语境，举例海尔智慧家庭、九牧卫浴、问界 M9 等案例说明如何让技术隐于场景、让关系自然；非虚构（testament）强调品牌需要通过可验证的事实链来建立信任，引用厦门国贸、毛戈平...
+2026-08-09 09:06:00
 
 
 
@@ -3687,49 +3685,37 @@
 
 ### [GitHub---Tboworst/beacon](https://github.com/Tboworst/beacon)
 
-2026-08-10 03:42:24 | 标签: 开发工具, 错误追踪, 监控, 自托管, 终端 UI
-
-> Beacon 是一个开源、自托管的错误追踪平台，旨在作为 Sentry 的轻量级替代方案。它由一个基于 Python/Flask 的接收服务器（使用 SQLite 存储）、一个基于 Textual 构建的终端仪表盘，以及一个由同一服务器提供服务的 React/Vite Web 仪表盘组成。项目包含 Node.js 和 Python SDK（支持自动捕获未处理异常）、语言无关的 HTTP 接收 API，以及内置的 LLM 调用追踪（Token、延迟、成本）。错误通过指纹分组，指纹结合异常类型、归一化消息和函数调用链 —— 忽略行号以保证稳定性。配置通过环境变量进行（API Key、用于告警的 S...
+2026-08-10 03:42:24
 
 
 
 ### [我为一款-EEG-可穿戴设备注册了设计。然后我测试了电极是否放在正确的位置。](https://dev.to/bhumiiaiiot/i-registered-a-design-for-an-eeg-wearable-then-i-tested-whether-the-electrodes-were-in-the-right-3m18)
 
-2026-08-10 01:14:04 | 标签: EEG, 机器学习, 医疗器械, 数据质量, 阿尔茨海默病
-
-> 作者描述了对一款用于检测阿尔茨海默病早期迹象的 EEG 头戴式设备所进行的严谨自我验证过程。作者意识到一个潜在缺陷——该设备的前额-颞部放置方式避开了文献中通常认为信号最强的后部区域——于是使用 OpenNeuro ds004504 数据集进行了对比实验。通过将一致的机器学习流程（Welch PSD 和随机森林）应用于“类设备”、“后部”和“全头”通道子集，作者发现有限的电极放置并未带来显著的性能损失。文章强调了科学严谨性：预先设定成功阈值以避免确认偏差，同时承认所使用的粗粒度特征和小样本量存在局限性。
+2026-08-10 01:14:04
 
 
 
 ### [自托管机器学习：无需按次调用账单](https://dev.to/paulcrinigan/self-hosted-machine-learning-without-the-per-call-bill-3951)
 
-2026-08-10 01:07:25 | 标签: 机器学习, 自托管, MLOps, 开发者工具, 数据隐私
-
-> 本文探讨了拥有业务数据与部署可用机器学习模型之间的鸿沟。作者认为，许多业务问题——例如工单路由、线索评分和异常检测——本质上都是预测问题，可以通过运行本地预测服务器来解决。文章将机器学习任务划分为四大类（分类器、回归器、聚类器和异常检测器），并介绍了“机器学习预测引擎”这一工具，它将工作流简化为“一键点击”式体验。通过将 PHP 界面与 Python 内核相结合，它让非专家也能管理带标签的数据集、训练模型并执行本地 API 调用，从而确保数据隐私并消除持续的 API 费用。
+2026-08-10 01:07:25
 
 
 
 ### [用数字孪生改善中小企业运营](https://dev.to/esparksit/using-digital-twins-to-improve-smb-operations-1bf)
 
-2026-08-09 16:58:20 | 标签: 数字孪生, 物联网, 数据工程, 数字化转型, 商业战略
-
-> 本文为中小企业提供了一份实用的数字孪生指南。文章指出，数字孪生是物理资产、流程或环境的持续更新的数字表示，而不仅仅是 3D 模型、仪表盘或报告工具。作者认为，最佳起点是选择一个狭窄但高价值的用例，例如预测性维护、仓库流程或产品测试；成功更多地取决于干净的操作数据、清晰的业务规则和系统集成，而非高级可视化。文章涵盖了高价值的运营应用、数字孪生加速产品开发的方式、从边缘数据采集到分析的核心架构组件，以及用于项目范围界定的七步决策框架。文章还提醒注意常见陷阱，包括范围蔓延、供应商锁定、高估数据成熟度、变更管理不善以及忽视网络安全，并建议在早期阶段通常无需机器学习。一个实际的部署通常始于为期 6-12...
+2026-08-09 16:58:20
 
 
 
 ### [基于-DistilBERT-LoRA-的-IMDb-情感分析：TF-IDF-基准、校准、可解释性、鲁棒性测试与半监督学习](https://www.marktechpost.com/2026/08/09/imdb-sentiment-analysis-with-distilbert-lora-tf-idf-baselines-calibration-interpretability-robustness-testing-and-semi-supervised-learning/)
 
-2026-08-09 15:17:38 | 标签: 情感分析, DistilBERT, LoRA, PEFT, 模型可解释性
-
-> 本文为使用 Stanford NLP IMDb 数据集实现情感分析提供了详细的技术指南。文章首先进行了严格的数据审计（检查数据泄露、偏斜和伪影），并建立了 TF-IDF + Logistic Regression 基准模型。教程的核心在于利用 PEFT 库通过 LoRA (Low-Rank Adaptation) 对 DistilBERT 进行参数高效微调。除了标准的准确率指标外，作者还深入研究了高级模型评估，包括期望校准误差 (ECE)、用于词级可解释性的遮蔽显著性分析，以及针对长评论的头部与尾部截断对比分析。最后，文章探讨了通过基于置信度的伪标签进行半监督学习以增强基准模型，提供了从数据准...
+2026-08-09 15:17:38
 
 
 
 ### [当题库追不上模型，AI-开始给自己出题：中国这支团队跑通了数据层-RSI](https://www.qbitai.com/2026/08/468782.html)
 
-2026-08-09 11:40:25 | 标签: 递归自改进, 合成数据, 科学前沿任务, 模型自演进, 开源模型
-
-> 文章详细阐述了由上海交大人工智能学院、深势科技、上海算法创新研究院组成的无尽前沿团队所提出的 BigBang-V1 模型。该模型参数规模 35B，推理时激活约 3B 参数，支持 262K 长上下文，其后训练数据 100% 由 AI 自主合成，以科学前沿任务为核心。通过 Generator Agent 与 Critic Agent 协作的自演化合成数据管线，实现了数据生产系统与模型能力的内外双循环共同演化，突破了合成数据易坍缩的问题。在长程搜索、代码、科学研究、AI research 等评测中，BigBang-V1 拿下同规模模型的 10 项第一，并在 FrontierScience Resea...
+2026-08-09 11:40:25
 
 
 
@@ -15327,65 +15313,49 @@
 
 ### [unYOLO](https://unyolo.io/)
 
-2026-08-09 23:53:03 | 标签: 开发者工具, 安全, API 认证, 智能体, GitHub
-
-> unYOLO 提供了一种基于代理的架构来管理智能体凭据。代理将服务提供商的 Token 存储在独立进程中，而非直接交给智能体一个宽权限 Token；它向智能体发放一个短期的凭据，其权限由本地 JSON 策略文件定义。策略引擎按固定顺序（拒绝 → 激活授权 → 允许 → 请求 → 无匹配）评估请求，支持带有使用额度的定时授权，并能触发出现在受保护收件箱或 Telegram 中的操作员审批请求。审计记录会记录决策过程且不泄露密钥。该框架内置了针对 GitHub、Hugging Face 和 sudo 风格 Unix 命令的代理，且具有可扩展性，开发者可以通过实现分类器、注册表、执行器和审批用语，继...
+2026-08-09 23:53:03
 
 
 
 ### [vibez：表演、编排与混音](https://alexanderwanyoike.github.io/vibez/)
 
-2026-08-09 23:31:49 | 标签: 开源, Rust, 音频制作, DAW, 音乐技术
-
-> vibez 是一款处于 Alpha 阶段、采用 GPL-3.0 许可的数字音频工作站（DAW），使用 Rust 语言编写，支持 Linux、macOS 和 Windows。它将工作分为三个工作区：Perform（一个用于启动 Section、演奏乐器和静音轨道的 16 宫格界面）、Arrange（包含音频/MIDI Clip、钢琴卷帘、自动化控制和时间伸缩的线性时间线）以及 Mix（一个包含单通道 EQ、总线、发送和 VST3/CLAP 插件托管的控制台式混音器）。其核心设计理念是 Capture，它可以记录现场表演（包括 Section 启动、演奏、静音和自动化手势），并将其作为普通的、可编...
+2026-08-09 23:31:49
 
 
 
 ### [出租车司机很少死于阿尔茨海默病——复杂心理地图与空间推理如何保护你的大脑](https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650)
 
-2026-08-09 23:21:46 | 标签: 大脑健康, 阿尔茨海默病, 空间推理, 神经可塑性, 认知储备
-
-> 作者结合一项基于 900 万份死亡证明的 2024 年研究，以及关于伦敦出租车司机的里程碑式神经科学研究，考察了空间导航与大脑健康之间的联系。证据表明，需要不断更新心理地图的工作——与路线固定的工作不同——会增加后部海马体的灰质体积，而该区域正是阿尔茨海默病首先攻击的部位。作者将这一逻辑延伸到地理空间领域的从业者（GIS 专家）以及生活在空间复杂环境中的人群，认为持续的空间推理能够构建"认知储备"，可能延缓痴呆的发病，并提示空间训练可作为一种可行的大脑长期健康策略。
+2026-08-09 23:21:46
 
 
 
 ### [GitHub---rochus-keller/OberonSystem-的-op2-rv32-分支](https://github.com/rochus-keller/OberonSystem/tree/op2-rv32)
 
-2026-08-09 20:43:16 | 标签: RISC-V, Oberon, 操作系统, 编译器, 虚拟机
-
-> 作者成功地将 Project Oberon 系统——由 Niklaus Wirth 设计的极简操作系统和编译器——迁移到了 RISC-V (RV32) 架构。为此，作者将源代码从 Oberon-07 的激进简化版本回退到更常见的 Oberon-90，以保持与 OP2 编译器的兼容性。该项目包含一个自定义的 RISC-V 虚拟机，能够 1:1 重现 Wirth 的原始内存映射，从而使 Kernel、Display、Input 等核心模块无需修改。这一迁移弥合了 Wirth 的教育性系统设计与当代硬件之间的鸿沟，未来计划在 ESP32-P4 微控制器上原生运行该系统。
+2026-08-09 20:43:16
 
 
 
 ### [Stripe-使用图搜索与状态机自动化数据库修复](https://www.infoq.com/news/2026/08/database-remediation-graph/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-09 14:55:00 | 标签: 数据库, 可靠性工程, 状态机, 图搜索, 事件响应
-
-> InfoQ 报道了 Stripe 在自动化其全球 MongoDB 集群数据库修复方面的工程实践。Stripe 将基础设施建模为图：节点表示组件，边捕捉关系，属性描述当前状态。修复不再以硬编码工作流的形式实现，而是通过图遍历寻找有效的恢复路径，最初使用 BFS，随后改用 Dijkstra 算法以优先选择成本更低的方案，并在不存在完整路径时返回部分修复结果。Stripe 报告称，与数据库相关的寻呼告警减少了约 30%，每年减少约 200 次寻呼，每年不健康分片状态的天数减少约 12 天。文章还将这项工作置于行业背景下，提及 Uber 的 Odin 平台和 Meta 的 AI 辅助事件响应，并指出 ...
+2026-08-09 14:55:00
 
 
 
 ### [GitHub---jmarshall23/msword：Microsoft-Word-1.1a-的-x64-移植版，附带用于研究目的的额外功能](https://github.com/jmarshall23/msword)
 
-2026-08-09 13:23:41 | 标签: C++, CMake, 遗留软件, 移植, Windows 开发
-
-> 该仓库包含 Microsoft Word for Windows 1.1a（原代号 Opus）的完整原生 Windows x64 移植版本。它用现代替代方案替换 16 位汇编、分段内存和 Win16 API，从而构建原始源代码，生成可运行真实 Word 界面的 64 位可执行文件。构建需要 VS 2022、Windows 10/11 SDK、CMake 3.25+ 和 PowerShell。项目提供了详细的 CMake 预设、测试套件和清晰的项目结构，以及贡献指南和许可说明。
+2026-08-09 13:23:41
 
 
 
 ### [02011-02022（11-年）：此预测的原始-URL（www.longbets.org/601）将在十一年后不再可用。](http://longbets.org/601/)
 
-2026-08-09 12:30:26 | 标签: 链接失效, 网页保存, 长期赌注, URL 持久性, 数字归档
-
-> 文章记录了 Long Bets 预测 #601，这是 Jeremy Keith 与 Matthew Haughey 之间的一场 $1，000 赌注，赌的是 http://www.longbets.org/601 这个 URL 在十一年（2011-2022）后是否仍然有效。Keith 认为，链接失效会随着时间推移不可避免地侵蚀网络资源；而 Haughey 则认为，成熟的网站托管实践和永久重定向可以让一个 URL 在数十年内保持可用。赌约条款要求该 URL 在 2022 年 2 月 22 日返回一个包含特定句子的 HTML 页面；如果满足条件，Haughey 将为布莱切利园信托赢得赌注，否则 Ke...
+2026-08-09 12:30:26
 
 
 
 ### [Java-近期新闻：简单-JSON-API、JEPs-for-JDK-28、Oracle-CPUs、Embabel-1.0、Azul-Payara、Helidon](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290438&idx=4&sn=896fd7ccc8e5e19b90a4802991631801)
 
-2026-08-09 10:15:00 | 标签: Java, JDK, OpenJDK, JVM, 软件更新
-
-> 这是一篇关于 Java 生态系统的综合新闻汇总。重点介绍了 JDK 28 计划交付的三个重要特性：严格字段初始化（JEP 539）、值对象（JEP 401）以及标准 JSON API（JEP 540），并提及弃用 macOS/x64 适配版。此外，文章报道了 Oracle 将关键补丁更新（CPU）频率由季度改为月度，以应对 AI 时代漏洞发现速度加快的挑战。最后，汇总了 BellSoft JDK、Embabel 1.0、Azul Payara 7.2.0 和 Helidon 4.5.1 的版本更新要点。
+2026-08-09 10:15:00
 
 
 
@@ -39209,11 +39179,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 
