@@ -1,0 +1,54 @@
+{
+  "id": "RAW_517aaa8191",
+  "title": "C 语言的尾调用优化是近期才出现的 [LWN.net]",
+  "url": "https://lwn.net/Articles/1034703/",
+  "date": "2026-08-10 19:34:40",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <a name=\"t\"></a>\n  <div id=\"menu\">\n   <a href=\"https://lwn.net/\" aria-label=\"Return to the front page\"> <img src=\"https://static.lwn.net/images/logo/barepenguin-70.webp\" class=\"logo\" border=\"0\" alt=\"LWN.net Logo\"> <span class=\"logo\">LWN \n     <br>.net</span> <span class=\"logobl\">News from the source</span></a> <a href=\"https://lwn.net/\" aria-label=\"Return to the front page\"> <img src=\"https://static.lwn.net/images/lcorner-ss.png\" class=\"sslogo\" border=\"0\" alt=\"LWN\"></a>\n   <div class=\"navmenu-container\">\n    <ul class=\"navmenu\">\n     <li><a class=\"navmenu\" href=\"#t\"><b>Content</b></a>\n      <ul>\n       <li><a href=\"https://lwn.net/current/\">Weekly Edition</a></li>\n       <li><a href=\"https://lwn.net/Archives/\">Archives</a></li>\n       <li><a href=\"https://lwn.net/Search/\">Search</a></li>\n       <li><a href=\"https://lwn.net/Kernel/\">Kernel</a></li>\n       <li><a href=\"https://lwn.net/Security/\">Security</a></li>\n       <li><a href=\"https://lwn.net/Calendar/\">Events calendar</a></li>\n       <li><a href=\"https://lwn.net/Comments/unread\">Unread comments</a></li>\n       <li>\n        <hr>\n       </li>\n       <li><a href=\"https://lwn.net/op/FAQ.lwn\">LWN FAQ</a></li>\n       <li><a href=\"https://lwn.net/op/AuthorGuide.lwn\">Write for us</a></li>\n      </ul></li>\n    </ul>\n   </div>\n  </div>\n  <!-- menu -->\n  <div class=\"top-banner not-print\">\n   <ins data-revive-zoneid=\"12072\" data-revive-id=\"fa8c6c9da7f33852f7097c4a94da1070\"></ins>\n  </div>\n  <div class=\"topnav-container\">\n   <div class=\"not-handset\">\n    <form action=\"https://lwn.net/Login/\" method=\"post\" name=\"loginform\" class=\"loginform\">\n     <label><b>User:</b> <input type=\"text\" name=\"uname\" value=\"\" size=\"8\" id=\"uc\"></label> <label><b>Password:</b> <input type=\"password\" name=\"pword\" size=\"8\" id=\"pc\"></label> <input type=\"hidden\" name=\"target\" value=\"/Articles/1034703/\"> <input type=\"submit\" name=\"submit\" value=\"Log in\">\n    </form>\n    |\n    <form action=\"https://lwn.net/subscribe/\" method=\"post\" class=\"loginform\">\n     <input type=\"submit\" name=\"submit\" value=\"Subscribe\">\n    </form>\n    |\n    <form action=\"https://lwn.net/Login/newaccount\" method=\"post\" class=\"loginform\">\n     <input type=\"submit\" name=\"submit\" value=\"Register\">\n    </form>\n   </div>\n   <div class=\"handset-only\">\n    <a href=\"https://lwn.net/Login/\"><b>Log in</b></a> / <a href=\"https://lwn.net/subscribe/\"><b>Subscribe</b></a> / <a href=\"https://lwn.net/Login/newaccount\"><b>Register</b></a>\n   </div>\n  </div>\n  <div class=\"maincolumn flexcol\">\n   <div class=\"middlecolumn\">\n    <div class=\"PageHeadline\"></div>\n    <div class=\"ArticleText\">\n     <main>\n      <h2>Tail-call optimization in C is relatively recent</h2>\n      Posted Aug 21, 2025 22:11 UTC (Thu) by <b>anton</b> (subscriber, #25547)\n      <br>\n      Parent article: <a href=\"https://lwn.net/Articles/1033373/\">Python, tail calls, and performance</a>\n      <p>Actually tail calls in C have not been around forever. The C calling convention has been that the callee does not remove any stuff the caller has put on the stack. The caller could see the declaration <code>int f();</code>, the actual call could have n&gt;0 arguments, and the actual function could have m≤n parameters. That would not always work if the callee removed the arguments.</p>\n      <p>So the caller had to remove the arguments between the call and the following return, turning the call into a non-tail call.</p>\n      <p>When I looked in 1994 at the C compilers of the day, they did not perform tail-call optimization for the kind of usage shown in the article. In 2001 <a href=\"https://www.complang.tuwien.ac.at/Diplomarbeiten/probst01.ps.gz\">Mark Probst implemented tail-call optimization in GCC</a> with a separate calling convention; he lists the limitations of the then-existing tail-call optimization in GCC in section 6.4, among them: \"It cannot handle indirect calls\" (which would have been used in tail calls for interpreter dispatch).</p>\n      <p>I have not looked at the issue since then (GCC's <code>goto *</code> was good enough (well, mostly)), and I had not much reason for assuming that something had changed wrt to GCC support for tail-calls (although one release note mentioned sibcalls, and I remember thinking that I should be checking that out.</p>\n      <p>Anyway, last year I read the paper on \"Copy-and-Patch Compilation\" by Xu and Kjolstad, and they use tail-call optimization. In any case, after reading that paper, I made some tests if gcc and clang can do tail-call optimization for the kind of tail calls shown in the article. And it works. And Xu and Kjolstad report that they use 100,000 code snippets, whereas we limit ourselves in Gforth to &lt;2000 (for VM instructions, stack caching variations thereof, static superinstructions etc.). Being able to do 100,000 would allow us to use techniques that need too many different code snippets to be usable in a <code>goto *</code>-based system.</p>\n      <p>We have not gotten around to putting this into Gforth yet, so congratulations to the Python community for being there first.</p>\n      <p></p>\n      <hr width=\"60%%\" align=\"left\">\n      <form action=\"/Login/\" method=\"post\">\n       <input type=\"hidden\" name=\"target\" value=\"/Articles/1034703/\"> <input type=\"submit\" name=\"login\" value=\"Log in\"> to post comments\n       <p></p>\n       <p><a name=\"Comments\"></a> <a name=\"CommAnchor1034860\"></a></p>\n       <details class=\"CommentBox\" open>\n        <summary> \n         <h3 class=\"CommentTitle\">Tail-call optimization in C is relatively recent</h3> \n         <div class=\"AnnLine\">\n          <p class=\"CommentPoster\">Posted Aug 23, 2025 19:43 UTC (Sat) by <b>lafp</b> (subscriber, #89554) [<a href=\"https://lwn.net/Articles/1034860/\">Link</a>]</p>\n         </div> \n        </summary>\n        <div class=\"FormattedComment\">\n         For what it's worth, I recently implemented a (toy) interpreter for a variant of Forth that uses tail calls for dispatching instructions. The main gain I had was making all the built-in functions behave like instructions themselves, rather than having a \"call a built-in function\" instruction; it also has support for a few handfuls of super-instructions, which helped quite a bit as they're not that different than anything else. The performance is pretty decent, but it'll need a bit more work in the optimizer to reach what I need it to reach (ultimately I want this to run on a small computer, expose the interpreter through a browser, and let people write code that's then used to control a LED matrix; think of this project, but in a smaller scale: <a href=\"https://www.noisebridge.net/wiki/Flaschen_Taschen\">https://www.noisebridge.net/wiki/Flaschen_Taschen</a>).\n         <br>\n         <p>The code is here (<a href=\"https://github.com/lpereira/lwan/blob/master/src/samples/forthsalon/forth.c\">https://github.com/lpereira/lwan/blob/master/src/samples/...</a>) and it's a variant of the Forth Haiku language, that lets you create art with small bits and pieces of Forth code, not unlike ShaderToy is for GLSL.\n          <br></p>\n        </div>\n        <div class=\"CommentReplyButton\">\n         <input type=\"submit\" value=\"Reply to this comment\">\n        </div>\n        <p></p>\n       </details>\n      </form>\n     </main>\n    </div>\n    <!-- ArticleText -->\n   </div>\n   <!-- middlecolumn -->\n   <div class=\"rightcol not-print\">\n    <ins data-revive-zoneid=\"12085\" data-revive-id=\"fa8c6c9da7f33852f7097c4a94da1070\"></ins>\n   </div>\n  </div>\n  <!-- maincolumn -->\n  <br clear=\"all\">\n  <center>\n   <p><span class=\"ReallySmall\"> Copyright © 2026, Eklektix, Inc. \n     <br> Comments and public postings are copyrighted by their creators. \n     <br> Linux is a registered trademark of Linus Torvalds \n     <br> </span></p>\n  </center>\n </body>\n</html>",
+  "aiSummary": "文章解释了 C 语言的尾调用优化因 C 调用约定而在历史上不可行，2001 年 GCC 使其成为可能，而最近的测试表明 GCC 和 Clang 现在可以优化典型的尾调用，使 Gforth 等项目受益，并对 Python 社区的早期采用表示认可。",
+  "oneSentenceSummary": "文章解释了 C 语言的尾调用优化因 C 调用约定而在历史上不可行，2001 年 GCC 使其成为可能，而最近的测试表明 GCC 和 Clang 现在可以优化典型的尾调用，使 Gforth 等项目受益，并对 Python 社区的早期采用表示认可。",
+  "summary": "文章开头指出，与某些语言不同，C 语言的传统调用约定要求调用者清理栈上的参数，这使得许多调用模式无法进行尾调用优化（TCO）。文章回顾，早期的 C 编译器（如 1994 年观察到的情况）不会对这类用法执行 TCO，而 Mark Probst 在 2001 年向 GCC 添加了一个单独的调用约定以启用 TCO，尽管存在诸如无法处理间接调用等限制。作者在阅读了 Xu 和 Kjolstad 的“Copy-and-Patch Compilation”论文后，对 GCC 和 Clang 进行了测试，确认这两个编译器现在都可以优化文章中展示的那种尾调用。虽然 Gforth 尚未集成这一优化，但作者祝贺 Python 社区成为其生态系统中首个受益于 TCO 的社区。文章将历史背景、技术细节和个人实验相结合，说明 C 语言这项长期存在的限制如何在近期被克服。",
+  "mainPoints": [
+    {
+      "point": "C 语言的传统调用约定阻碍了许多调用模式的尾调用优化。",
+      "explanation": "由于清除栈参数的是调用者而非被调用者，被调用者若试图丢弃参数，就会破坏调用者的预期，使原本可能的尾调用变成非尾调用。"
+    },
+    {
+      "point": "GCC 在 2001 年通过一种单独的调用约定实现了尾调用优化，但存在明显限制。",
+      "explanation": "Mark Probst 的实现使直接调用得以使用 TCO；其论文第 6.4 节列举了诸如无法处理间接调用等限制，而间接调用在解释器的调度循环中很常见。"
+    },
+    {
+      "point": "最近的测试证实，GCC 和 Clang 现在都可以优化 C 语言中的典型尾调用模式。",
+      "explanation": "在阅读了 Xu 和 Kjolstad 的“Copy-and-Patch”论文后，作者进行了实验，发现 GCC 和 Clang 都能对所展示的尾调用形式成功执行 TCO，从而消除了一项历史障碍。"
+    },
+    {
+      "point": "文章指出 Gforth 缺乏 TCO，并称赞 Python 社区的早期采用。",
+      "explanation": "尽管 Gforth 尚未集成这一优化，但作者强调像 Python 这样的项目已经受益，说明了这一新可用优化的实际影响。"
+    }
+  ],
+  "keyQuotes": [
+    "无论如何，在读完那篇论文后，我做了一些测试，看 gcc 和 clang 能否对文章中展示的那种尾调用进行尾调用优化。结果是可行的。"
+  ],
+  "tags": [
+    "编译器优化",
+    "尾调用优化",
+    "C 语言",
+    "GCC",
+    "Clang"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 604,
+  "domain": "lwn.net",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786361680000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-10 19:34:40"
+}

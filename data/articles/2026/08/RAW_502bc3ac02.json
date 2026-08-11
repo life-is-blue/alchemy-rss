@@ -1,0 +1,61 @@
+{
+  "id": "RAW_502bc3ac02",
+  "title": "如何在没有服务器的情况下为静态网站添加动态功能",
+  "url": "https://www.freecodecamp.org/news/how-to-add-dynamic-features-to-a-static-site-without-a-server/",
+  "date": "2026-08-10 22:13:37",
+  "author": "Manish Shivanandhan",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Static sites are having a moment, and it makes sense. A folder of HTML, CSS, and JavaScript files is fast to load, cheap to host, and very hard to break.</p>\n  <p>Tools like <a href=\"https://astro.build/\">Astro</a>, <a href=\"https://www.11ty.dev/\">Eleventy</a>, and <a href=\"https://gohugo.io/\">Hugo</a> build that folder for you from Markdown files and templates. Hosts like Netlify, Vercel, and Cloudflare Pages then serve the result from a CDN, often for free.</p>\n  <p>Then your site needs to actually do something. A reader wants to leave a comment, or someone wants to email you. Maybe you want to show live prices, hide a page behind a login, or collect email addresses before a launch.</p>\n  <p>Most developers reach for a backend at this point. They spin up an Express app, add a database, and pick a hosting plan. Now they own a server, and servers need care forever.</p>\n  <p>The good news is that you often don't need one. Most dynamic features on a small site work fine without a server of your own, so here's how to think about the problem.</p>\n  <h2 id=\"heading-table-of-contents\">Table of Contents</h2>\n  <ul>\n   <li>\n    <p><a href=\"#heading-static-does-not-mean-frozen\">Static Does Not Mean Frozen</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-start-with-what-the-browser-already-does\">Start With What the Browser Already Does</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-handling-form-submissions\">Handling Form Submissions</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-serverless-functions-for-the-rest\">Serverless Functions for the Rest</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-databases-and-logins-you-can-rent\">Databases and Logins You Can Rent</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-comments-search-and-payments\">Comments, Search, and Payments</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-know-when-you-have-outgrown-it\">Know When You Have Outgrown It</a></p>\n   </li>\n  </ul>\n  <h2 id=\"heading-static-does-not-mean-frozen\">Static Does Not Mean Frozen</h2>\n  <p>The word \"static\" describes how your HTML reaches the browser, not what happens after it lands. A static site can still run all the JavaScript you want. It can fetch data, rewrite the page, listen for clicks, and talk to any public API.</p>\n  <p>There's only one thing it can't do, which is run your code before the page is sent. That means it can't keep a secret, query a private database, or make a decision based on who is asking.</p>\n  <p>That single limit is the whole design problem. Once you see it clearly, the rest is just sorting. Some work belongs in the browser, some belongs in a service you rent, and a small slice needs to run somewhere private.</p>\n  <h2 id=\"heading-start-with-what-the-browser-already-does\">Start With What the Browser Already Does</h2>\n  <p>Check the platform before you add anything to your stack, because browsers ship with more power than most of us use.</p>\n  <p>The <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API\"><code>fetch</code> API</a> pulls JSON from any public endpoint. The <code>&lt;dialog&gt;</code> element gives you an accessible modal with no library, and <code>&lt;details&gt;</code> gives you an accordion. CSS now handles sticky headers, scroll-driven animation, and container queries, all of which used to need JavaScript.</p>\n  <p>A lot of features that seem to need a backend are really just a fetch call and a template string. A weather widget, a GitHub activity feed, a currency converter, a live score, or a Mastodon timeline: every one of those runs happily from the browser, because the data is public and the endpoint needs no key. Write the fetch, handle the loading and error states properly, and move on.</p>\n  <h2 id=\"heading-handling-form-submissions\">Handling Form Submissions</h2>\n  <p>Forms are where most static sites hit their first real wall, because a submission has to go somewhere your visitors can't see. You can't put a database password in client-side code, and you can't send email straight from a browser.</p>\n  <p>Luckily this problem has been solved many times over, and most static hosts will handle forms for you. <a href=\"https://docs.netlify.com/manage/forms/setup/\">Netlify Forms</a> needs one extra attribute on your form tag. After that, Netlify catches each submission at the edge, stores it in a dashboard, and either emails you or pings a webhook.</p>\n  <p>Sometimes you need more than that. Spam filters, file uploads, conditional logic, multi-step flows, payments inside the form, or rows that land in a spreadsheet with no glue code all point toward a dedicated tool. This roundup of the <a href=\"https://forms.app/en/blog/best-form-builders\">best form builders</a> is a good way to compare your options, since the real differences come down to logic, integrations, and how much control you keep over the markup.</p>\n  <p>Either way, the choice is about ownership. Write your own form endpoint and you own the validation, the rate limits, the spam defense, the storage, the alerts, and the deletion requests that arrive under GDPR. That's a lot of work for a contact form. Build it yourself when the form is part of your product, and rent it when the form is just a way for people to reach you.</p>\n  <h2 id=\"heading-serverless-functions-for-the-rest\">Serverless Functions for the Rest</h2>\n  <p>Sooner or later you will need to run a few lines of code in private, whether to sign a request, hide an API key, or reshape a response before the browser sees it. That is exactly what serverless functions are for, and they're the smallest possible step away from a purely static site.</p>\n  <p>You drop a file into a folder, and your host turns it into a URL on the next deploy. That's the entire setup, and it works the same way in <a href=\"https://docs.netlify.com/build/functions/overview/\">Netlify Functions</a>, <a href=\"https://vercel.com/docs/functions\">Vercel Functions</a>, and <a href=\"https://developers.cloudflare.com/pages/functions/\">Cloudflare Pages Functions</a>. The code stays short:</p>\n  <pre><code class=\"language-js\">export default async function handler(request) {\n  const res = await fetch(\"https://api.example.com/data\", {\n    headers: { Authorization: `Bearer ${process.env.API_KEY}` },\n  });\n  const data = await res.json();\n  return Response.json({ total: data.items.length });\n}\n</code></pre>\n  <p>Your key lives in an environment variable on the host, so the browser calls <code>/api/handler</code> and never sees it. There's no server to keep alive, no operating system to patch, and no bill on a quiet day.</p>\n  <p>This is the right home for anything that needs a credential. Use it to send email through Resend or Postmark, call an AI model, check a webhook signature, or proxy a paid API whose key would otherwise leak within a day.</p>\n  <h2 id=\"heading-databases-and-logins-you-can-rent\">Databases and Logins You Can Rent</h2>\n  <p>State is the last piece people assume needs a server, but it does not. <a href=\"https://supabase.com/docs\">Supabase</a> puts Postgres behind a REST API with row-level security. Those rules live in the database itself, so you can query it from the browser and still be safe. Firebase does much the same with a different data model, while Cloudflare D1 and Turso give you SQLite at the edge.</p>\n  <p>Logins follow the same pattern. Clerk, Auth0, and Supabase Auth all handle sessions, password resets, social logins, and two-factor codes behind a client SDK. Authentication is genuinely hard to get right, so leaning on an audited service here isn't laziness. It's sensible risk management.</p>\n  <h2 id=\"heading-comments-search-and-payments\">Comments, Search, and Payments</h2>\n  <p>The last few common features have drop-in answers too. <a href=\"https://giscus.app/\">Giscus</a> turns GitHub Discussions into a comment box with a script tag and no database at all. <a href=\"https://pagefind.app/\">Pagefind</a> builds a search index while your site builds and ships it as static files, so full-text search costs you nothing at runtime.</p>\n  <p>Stripe covers money. Payment Links and Checkout let you sell something with a plain link, and Stripe handles the card, the tax, and the receipt. Your own site never touches card data.</p>\n  <h2 id=\"heading-know-when-you-have-outgrown-it\">Know When You Have Outgrown It</h2>\n  <p>This model has a real ceiling, and you should be aware of it rather than fight it. Watch for a few signs: your logic is now spread across six services, your monthly SaaS bill beats the cost of a small server, cold starts are hurting real users, or you need long jobs, a queue, or a socket that stays open for hours. When that day comes, a regular application server is the simpler tool, so move.</p>\n  <p>Until then, this setup buys you things that matter. Your site stays fast by default, your attack surface stays small, and your time goes into the product instead of the plumbing. Start with the browser, add a function when you need a secret, and rent the hard parts.</p>\n  <p>Hope you enjoyed this article. You can <a href=\"https://linkedin.com/in/manishmshiva\">connect with me on LinkedIn</a>.</p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了如何使用浏览器 API、Serverless 函数和第三方服务为静态网站添加动态功能，从而无需专用后端。",
+  "oneSentenceSummary": "本文介绍了如何使用浏览器 API、Serverless 函数和第三方服务为静态网站添加动态功能，从而无需专用后端。",
+  "summary": "静态网站托管快速、廉价且简单，但要添加评论、表单或实时数据等交互功能，往往看起来需要服务器。作者指出，大多数小规模动态功能可以完全在浏览器中处理，或通过租用特定服务来实现。主要方法包括：利用 fetch API 和原生 HTML 元素、使用 Netlify Forms（或类似服务）处理表单、部署 Serverless 函数来处理私有逻辑或密钥，以及采用 Supabase 或 Auth0 等托管数据库和认证服务。文章还涵盖了一些即插即用的评论、搜索和支付解决方案。同时，文章也提醒，当 Serverless 模式达到其极限时，传统后端会更为实用。",
+  "mainPoints": [
+    {
+      "point": "静态网站可以运行你需要的任何 JavaScript；唯一的限制是必须在页面交付之前运行的代码。",
+      "explanation": "文章澄清了“静态”指的是交付方式，而非执行方式，因此可以直接在浏览器中进行 fetch 调用、DOM 操作以及使用公共 API。"
+    },
+    {
+      "point": "通过使用主机自带的服务或第三方表单构建器，无需自定义后端即可处理表单提交。",
+      "explanation": "例如，Netlify Forms 可在边缘节点捕获提交内容，而更复杂的需求可以通过专门的表单构建平台来满足，从而在掌控性与便捷性之间取得平衡。"
+    },
+    {
+      "point": "Serverless 函数为需要密钥或自定义处理的任务提供了极简的私有层。",
+      "explanation": "将单个文件部署到 Netlify、Vercel 或 Cloudflare，即可创建一个端点，既能隐藏 API 密钥，又能执行发送邮件或代理付费 API 等操作。"
+    },
+    {
+      "point": "托管数据库和认证服务可以让你在无需自行运行服务器的情况下，添加状态和登录功能。",
+      "explanation": "Supabase、Firebase 等类似服务提供带行级安全的 REST/GraphQL API，而 Auth0 或 Clerk 则通过客户端 SDK 处理会话和双因素认证。"
+    },
+    {
+      "point": "要了解 Serverless/Jamstack 方案何时超出了其适用限度，并在必要时切换到传统服务器。",
+      "explanation": "迹象包括过高的 SaaS 成本、冷启动延迟，或需要长时间运行的任务、队列或持久连接。"
+    }
+  ],
+  "keyQuotes": [
+    "“静态”一词描述的是你的 HTML 如何到达浏览器，而不是它到达之后会发生什么。",
+    "静态网站仍然可以运行你想要的所有 JavaScript。",
+    "好消息是，你往往并不需要服务器。",
+    "当那一天到来时，普通的应用服务器是更简单的工具，所以请切换过去。"
+  ],
+  "tags": [
+    "静态网站",
+    "Serverless",
+    "表单处理",
+    "Jamstack",
+    "Web 开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1255,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786371217000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-10 22:13:37"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "RAW_3b066cf789",
+  "title": "AI 测验生成器实际上如何构建出一道题",
+  "url": "https://dev.to/paulcrinigan/how-ai-quiz-generators-actually-build-a-question-4hoa",
+  "date": "2026-08-11 04:48:36",
+  "author": "Paul Crinigan",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Quiz generation looks like a thin wrapper around a language model. Paste some text, ask for ten multiple choice questions, ship it. Then you run one against real material and the seams show. The questions cluster on the first two pages, three of them ask the same thing, and every wrong answer is obviously wrong. The distance between a demo and a usable quiz tool sits almost entirely in the parts nobody demos.</p>\n  <h2><a name=\"ingestion-is-half-the-product\" href=\"#ingestion-is-half-the-product\"> </a> Ingestion Is Half the Product</h2>\n  <p>Before a model sees anything, the source has to become clean text. A PDF means parsing document structure, pulling text page by page and preserving the heading hierarchy, because those headings are what later tell the system which ideas are central and which are supporting detail. A video means a transcript, either from embedded captions or from speech recognition. A photo of handwritten notes means OCR.</p>\n  <p>This stage decides output quality more than the prompt does. Feed in a PDF with running headers, footers and page numbers still attached and the model will happily write questions about the page numbers. The tools that feel accurate are usually the ones doing unglamorous cleanup before generation, not the ones with a cleverer system prompt.</p>\n  <p>It also explains why input format support is a real differentiator rather than a checkbox. Handling a YouTube link, a lecture recording and a photo of a whiteboard are three separate pipelines, and each one degrades differently.</p>\n  <h2><a name=\"the-distractors-are-the-hard-part\" href=\"#the-distractors-are-the-hard-part\"> </a> The Distractors Are the Hard Part</h2>\n  <p>Anyone can generate a question stem. The difficulty is the three wrong answers. A good distractor is plausible to someone who half knows the material and clearly wrong to someone who knows it. Too weak and the quiz tests nothing, because elimination gets you there. Too clever and the correct answer becomes arguable, which is worse than an easy question.</p>\n  <p>Three techniques carry most of the weight. Pull related but distinct concepts from the same source, so the wrong answers come from the same conceptual neighborhood. Encode a common misconception, which turns the distractor into a diagnostic. Or shift the correct answer along exactly one dimension, a changed quantity, a swapped mechanism, a nearby term.</p>\n  <p>All three need the surrounding content, which is why distractor quality tracks so closely with how well the ingestion step preserved context. A model handed a bare sentence cannot generate a distractor that means anything.</p>\n  <h2><a name=\"the-second-pass-nobody-talks-about\" href=\"#the-second-pass-nobody-talks-about\"> </a> The Second Pass Nobody Talks About</h2>\n  <p>Better tools run the generated set back through a review pass. Check that exactly one option is defensible. Drop near duplicate questions. Flag ambiguous wording. Rebalance difficulty across the set.</p>\n  <p>It is the same idea as a linter. The first pass optimizes each question in isolation, the second pass optimizes the set, and those are genuinely different objectives. A batch of ten individually good questions can still be a bad quiz if six of them test the same paragraph.</p>\n  <p>Difficulty control is where this gets interesting. Ask a model for harder questions and you usually get more obscure trivia rather than higher order thinking. Tools that align to something explicit, like Bloom's Taxonomy levels, land closer to what a teacher means by hard, which is analysis and application rather than rarer facts. If you are building in this space, that mapping is worth making explicit rather than hoping the model infers it. There is a fuller rundown of <a href=\"https://www.aitools9.com/ai-quiz-generator/\" target=\"_blank\" rel=\"noopener noreferrer\">which AI quiz generators handle this well</a> if you want to see how the current tools compare.</p>\n  <h2><a name=\"where-these-tools-still-need-a-human\" href=\"#where-these-tools-still-need-a-human\"> </a> Where These Tools Still Need a Human</h2>\n  <p>Even the strongest tools land at roughly 80 to 90 percent usable output, so plan to edit or cut about one question in six. That is still an enormous saving over writing an assessment by hand, but it makes this a review workflow rather than a publish workflow, and the products that pretend otherwise are the ones people quietly stop using.</p>\n  <p>If you are building here, the leverage is not in the generation prompt. It is in the parsing you do before it and the checking you do after.</p>\n </body>\n</html>",
+  "aiSummary": "这篇文章解释了为什么实用的 AI 测验生成器更依赖于内容摄取、干扰项设计和复审环节，而不是生成提示词本身。",
+  "oneSentenceSummary": "这篇文章解释了为什么实用的 AI 测验生成器更依赖于内容摄取、干扰项设计和复审环节，而不是生成提示词本身。",
+  "summary": "作者认为，将语言模型变成可用的测验生成器是一个工程问题，而不是提示词问题。首先需要清理输入：PDF 需要解析，视频需要转写，照片需要 OCR，这一摄取步骤的质量很大程度上决定了后续题目的质量。生成中最难的部分是设计合理的干扰项，它们需要邻近概念、常见误解或单一维度上的偏移。更好的产品随后会对整套题目进行第二遍审查，以消除重复、措辞含糊和难度不均衡。像 Bloom 分类法这样的显式分类法比含糊的“更难”提示词更可靠。作者估计，即使是最好的工具也只能提供 80-90% 可用的题目，因此人工审查仍然是必要的。",
+  "mainPoints": [
+    {
+      "point": "决定测验输出质量的是内容摄取质量，而非提示词。",
+      "explanation": "在生成前解析 PDF、转写视频并清理格式，可以防止模型围绕页眉和页码编写题目。"
+    },
+    {
+      "point": "干扰项生成是测验中最困难也最重要的部分。",
+      "explanation": "合理的错误选项使测验具有诊断性；它们来自相关概念、常见误解或某一维度上的细微偏移。"
+    },
+    {
+      "point": "第二遍审查优化的是整套测验，而不是单个题目。",
+      "explanation": "就像代码检查工具一样，它会删除重复题目、标记含糊措辞并重新平衡难度；即便十个好题目放在一起，仍可能是一套糟糕的测验。"
+    },
+    {
+      "point": "明确的难度目标比笼统地要求“更难”更有效。",
+      "explanation": "映射到 Bloom 分类法能生成分析和应用类任务，而开放式“更难”提示词大多只会生成冷门琐事。"
+    },
+    {
+      "point": "即使是强大的工具，在发布前也需要人工审查。",
+      "explanation": "输出大约有 80-90% 可用，因此工作流程是“审查加编辑”而非全自动发布。"
+    }
+  ],
+  "keyQuotes": [
+    "演示与可用测验工具之间的差距，几乎全部在于那些无人演示的部分。",
+    "一个好的干扰项，对一知半解的人来说看似合理，对真正掌握的人来说显然错误。",
+    "这和代码检查工具是同一个思路。第一遍孤立地优化每道题，第二遍优化整套题，这两者是真正不同的目标。",
+    "杠杆效应不在生成提示词里，而在之前的解析和之后的检查中。"
+  ],
+  "tags": [
+    "AI 产品开发",
+    "LLM",
+    "AI 工具",
+    "教育科技",
+    "提示词工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 670,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786394916000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-11 04:48:36"
+}

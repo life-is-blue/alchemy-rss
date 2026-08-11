@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-11 06:27:58 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-11 08:57:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -723,6 +723,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [Vercel-Sandbox-现已在-Vercel-Managed-Images-上运行---Vercel](https://vercel.com/changelog/vercel-sandbox-managed-images)
+
+2026-08-11 02:00:00 | 标签: 开发者工具, Vercel, 容器镜像, 沙箱, Ubuntu
+
+> Vercel 已推出 Vercel Managed Images（ VMI ），这是一套用于驱动 Vercel Sandbox 的开源基础镜像。此更新将默认操作系统从 Amazon Linux 切换为 Ubuntu，并引入了预装 Node.js、Python 以及多种编码代理（ 如 Claude Code ）的 “ 通用 ” 镜像。系统支持滚动标签以实现自动安全更新，并提供 SHA 锁定以确保环境不可变。开发者现在可以通过 SDK 使用完整路径指定镜像，而之前的 ‘ runtime ’ 属性仍保留以兼容旧版。
+
+
+
+### [如何在没有服务器的情况下为静态网站添加动态功能](https://www.freecodecamp.org/news/how-to-add-dynamic-features-to-a-static-site-without-a-server/)
+
+2026-08-10 22:13:37 | 标签: 静态网站, Serverless, 表单处理, Jamstack, Web 开发
+
+> 静态网站托管快速、廉价且简单，但要添加评论、表单或实时数据等交互功能，往往看起来需要服务器。作者指出，大多数小规模动态功能可以完全在浏览器中处理，或通过租用特定服务来实现。主要方法包括：利用 fetch API 和原生 HTML 元素、使用 Netlify Forms（或类似服务）处理表单、部署 Serverless 函数来处理私有逻辑或密钥，以及采用 Supabase 或 Auth0 等托管数据库和认证服务。文章还涵盖了一些即插即用的评论、搜索和支付解决方案。同时，文章也提醒，当 Serverless 模式达到其极限时，传统后端会更为实用。
 
 
 
@@ -1740,13 +1756,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1896,13 +1912,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3396,13 +3412,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5106,13 +5122,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

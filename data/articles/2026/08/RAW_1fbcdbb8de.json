@@ -1,0 +1,55 @@
+{
+  "id": "RAW_1fbcdbb8de",
+  "title": "Canva 分享基于 S3 的架构，用于在数 亿 会话中实现会话撤销",
+  "url": "https://www.infoq.com/news/2026/08/canva-session-revocation-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-10 22:14:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Canva has <a href=\"https://www.canva.dev/blog/engineering/session-revocations-at-scale/\">redesigned its session revocation</a> infrastructure to support hundreds of millions of active sessions while avoiding networked database lookups for most authentication requests. The new architecture stores revocation data in Amazon S3 as compact, immutable records and distributes the data to application gateways as in-memory indexes. Canva said the approach improved deployment speed, reduced database infrastructure, and cut the memory footprint of its revocation cache by 87.5%.</p>\n   <p>Canva stores session information in encrypted browser cookies, allowing gateways to authenticate requests without contacting a networked datastore. However, revoked sessions and changes to permissions need to be reflected in near real time. Canva previously kept 12 hours of revocation data in memory, while session refreshes continued to check MySQL. As the platform grew, hundreds of gateway instances could each request more than a million revocations from MySQL during deployments, creating a coordinated database load.</p>\n   <p>Canva chose Amazon S3 over Redis to avoid operating another datastore while providing durable storage for revocation data. The 12-hour revocation window is divided into 30-minute S3 objects, which gateways download as needed. Each revocation is represented as a 16-byte binary record containing a principal and timestamp. Sorted arrays enable direct in-memory searches, reducing the cache footprint by 87.5%. Gateways use conditional GETs to download changed chunks and discard data older than 12 hours. Asynchronous workers scan for new revocations, merge them into the latest chunk, and upload the result. Conditional PUTs provide optimistic concurrency control when workers update the same object, while ZooKeeper leader election reduces conflicts but is not required for correctness.</p>\n   <p>Sharing the article on <a href=\"https://www.linkedin.com/posts/adamurban_session-revocations-at-scale-canva-engineering-activity-7490312058807201792-le20?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">LinkedIn</a>, software engineer <a href=\"https://www.linkedin.com/in/adamurban/\">Adam Urban</a> highlighted the use of Amazon S3 as more than an object store, pointing to its use of immutable objects and conditional writes as coordination primitives.</p>\n   <p><img alt=\"\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/canva-session-revocation-scale/en/resources/1canvasessionrevocation-1786166615618.jpeg\" rel=\"share\"></p>\n   <p><em>How a worker task copies revocations from database into S3 (Source: <a href=\"https://www.canva.dev/blog/engineering/session-revocations-at-scale/\">Canva Blog Post</a>)</em></p>\n   <p>The design also addresses recovery and deployment. A gateway can reconstruct its local revocation state by downloading the relevant S3 chunks rather than requiring a database to rebuild the cache. Canva said the worker can process more than 2,000 revocations per second, exceeding its expected requirements, while even a chunk containing one million revocations represents about 16 megabytes of binary data.</p>\n   <p>The architecture prompted <a href=\"https://www.reddit.com/r/programming/comments/1v44xfb/comment/ozg2bkj/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">discussion</a> on Reddit, where one commenter suggested</p>\n   <blockquote>\n    <p>Just use a refresh token scheme, keep access token lifetimes short and keep refresh tokens in a database instead, no need to check each session against a million cached revocations.</p>\n   </blockquote>\n   <p>Canva engineer <a href=\"https://www.linkedin.com/in/llew-vallis-153b50246/\">Llew Vallis</a> responded to a Reddit <a href=\"https://www.reddit.com/r/programming/comments/1v44xfb/comment/ozgkxzv/?context=3&amp;utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">discussion</a>,</p>\n   <blockquote>\n    <p>Keeping revocation data in memory provided better tradeoffs because frequent token refreshes would increase database load and make availability dependent on the database during refresh operations.</p>\n   </blockquote>\n   <p>Following the migration, Canva reduced its session revocation database to two read replicas for redundancy and improved deployment speed. Database load also became more predictable, scaling with revocation write throughput and overall site traffic rather than the number of gateway instances loading the cache. Canva said testing multiple implementations on real infrastructure helped validate that the selected design could meet its scalability requirements, including workloads involving hundreds of thousands of revocations in a single array.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Canva Shares S3 Based Architecture for Session Revocation Across Hundreds of Millions of Sessions\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/canva-session-revocation-scale/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1786371240000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Canva 使用 Amazon S3 将会话撤销记录存储为内存索引，将内存占用降低 87.5%",
+  "oneSentenceSummary": "Canva 使用 Amazon S3 将会话撤销记录存储为内存索引，将内存占用降低 87.5%",
+  "summary": "Canva 重新设计了会话撤销基础设施，以在数 亿 活跃会话中无需在每次请求上访问网络数据库。撤销数据以紧凑、不可变的 16‑byte 二进制记录存储在 Amazon S3 中，划分为 30‑minute 块，网关服务下载这些块并保持为已排序的内存数组以实现快速查找。工作者异步地使用条件 PUT 进行乐观并发控制，将新撤销合并到最新的 S3 块，而网关通过条件 GET 获取更新并丢弃过期数据。该方案将撤销缓存的内存占用降低 87.5%，减轻了数据库负载，加快了部署速度，并使网关在重启后能够从 S3 重建状态。文章包含工程师评论、Reddit 讨论将该设计与短生命周期刷新令牌进行比较，以及说明系统在真实环境中每秒处理超过 2，000 次撤销。",
+  "mainPoints": [
+    {
+      "point": "撤销数据以不可变的 16‑byte 记录存储在 S3 中，划分为 30‑minute 对象。",
+      "explanation": "每条记录包含主体 ID 和时间戳；网关下载相关块并将其保持为已排序的内存数组，以实现 O(log n) 查找。"
+    },
+    {
+      "point": "该设计消除大多数网络数据库读取，将撤销缓存的内存占用降低 87.5%。",
+      "explanation": "通过仅在内存中保留最新的 S3 块并丢弃超过 12 hours 的数据，Canva 大幅降低内存使用，同时仍能几乎实时地反映撤销。"
+    },
+    {
+      "point": "异步工作者使用条件 PUT 将新撤销合并到最新的 S3 块，并通过 ZooKeeper 选举领袖以减少冲突。",
+      "explanation": "这提供了持久存储和乐观并发控制，无需像 Redis 那样的单独协调数据存储。"
+    },
+    {
+      "point": "网关实例在重启后可以从 S3 重建其撤销状态，提升部署速度和可靠性。",
+      "explanation": "与其从数据库重建缓存，网关只需下载所需的 S3 块，使发布更快且对数据库可用性的依赖更低。"
+    }
+  ],
+  "keyQuotes": [
+    "\"只需使用刷新令牌方案，将访问令牌的有效期设短，并将刷新令牌存放在数据库中，无需针对数百万缓存的撤销检查每个会话。\"",
+    "\"将撤销数据保存在内存中提供了更好的权衡，因为频繁的令牌刷新会增加数据库负载，并使可用性在刷新操作期间依赖于数据库。\""
+  ],
+  "tags": [
+    "后端开发",
+    "云原生 / DevOps",
+    "系统设计",
+    "分布式系统",
+    "Amazon S3"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 516,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786371240000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-10 22:14:00"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_36e2b869c5",
+  "title": "Cloudflare 预览网页自动 WebMCP 支持",
+  "url": "https://www.infoq.com/news/2026/08/cloudflare-webmcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-11 04:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare announced a <a href=\"https://blog.cloudflare.com/webmcp/\">developer preview that lets any website enable a WebMCP</a> (Web Model Context Protocol) interface with a single dashboard switch. This allows browser-based AI agents to interact with unmodified web pages through structured tools instead of scraping or guessing, keeping human traffic and control on the original site.</p>\n   <p>The core idea behind WebMCP is exposing structured, machine-readable tools directly to AI agents through a standard protocol. This allows them to call explicit functions like <code>searchFlights</code> or <code>bookTicket</code> without resorting to scraping and parsing HTML, which consumes tokens, or clicking UI buttons to trigger behavior. WebMCP makes interactions faster, more efficient, and far less fragile than traditional browser automation, which often breaks when the UI changes.</p>\n   <p>To adopt WebMCP, a website must expose its functionality as tools using either the <a href=\"https://developer.chrome.com/docs/ai/webmcp/imperative-api\"><code>document.modelContext</code> API</a>, which allows developers to register tools, define their schemas, and write the code that implements them, or a <a href=\"https://developer.chrome.com/docs/ai/webmcp/declarative-api\">declarative JavaScript API</a> that allows to add annotations to a standard HTML forms to create a WebMCP tool.</p>\n   <p>What CloudFlare's current preview is aiming at is giving any site on Cloudflare the possibility to support WebMCP with a single switch by selecting <em>tool packs</em> from a pre-defined library. CloudFlare is currently including two tool packs in this preview: Content Credentials to allow agents to read C2PA content-provenance metadata from images on the page, and Site MCP server, which can proxy a site's MCP server tools to the in-browser agent. CloudFlare says the tool pack library will grow and that when new packs become available, a site can enable them without redeploying.</p>\n   <p>CloudFlare's implementation is built around a <code>bridge.js</code> module, which is silently injected into a served webpage using HTMLRewriter:</p>\n   <pre>\r\n<code class=\"language-markup\">&lt;!-- Cloudflare injects this at the edge. Same origin, and your HTML is otherwise untouched. --&gt;\r\n&lt;script type=\"module\"\r\n        src=\"/.webmcp/bridge.js\"\r\n        data-packs=\"c2pa,mcp-server-client\"\r\n        data-mcp-url=\"/mcp\"&gt;&lt;/script&gt;\r\n</code></pre>\n   <p>The module reference lists the tool packs adopted by the page in the <code>data-packs</code> attribute along with any additional parameter required (e.g., <code>data-mcp-url</code> for the Site MCP server tool pack).</p>\n   <blockquote>\n    <p>From there, the bridge composes the packs named in <code>data-packs</code> into one tool list and registers each with <code>.registerTool</code>. A pack is just a set of MCP tool descriptors and their handlers. Static packs, such as Content Credentials, declare their tools up front. A dynamic pack, such as the Site MCP Server pack, discovers its tools at boot before registering anything.</p>\n   </blockquote>\n   <p>Existing MCP tools running on the server are discovered through the standard MCP <code>Tool</code> type, so for each of them the bridge registers a WebMCP proxy whose <code>execute()</code> method calls the site back on the same origin. Likewise, the bridge pass through a standard <code>CallToolResult</code> to handle the execution result.</p>\n   <p>CloudFlare WebMCP preview is highly work in progress. The WebMCP standard is itself a preview and only supported in <a href=\"https://developer.chrome.com/docs/ai/webmcp\">Chrome 145+</a>. You can enable WebMCP by going to Agent Readiness &gt; Labs in the Cloudflare Dashboard, toggle on WebMCP for your domain, and select the desired tool packs.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"CloudFlare Previews Automatic WebMCP Support for Web Pages\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/cloudflare-webmcp/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1786392000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 提供一键开关来启用 WebMCP，让 AI 智能体使用结构化工具而非爬取。",
+  "oneSentenceSummary": "Cloudflare 提供一键开关来启用 WebMCP，让 AI 智能体使用结构化工具而非爬取。",
+  "summary": "Cloudflare 的开发者预览版允许其平台上的任何网站通过一个控制面板开关启用 WebMCP，通过 document.modelContext 或声明式 JS API 将站点功能暴露为结构化工具。首批提供两个工具包——Content Credentials 和 Site MCP server，未来还会推出更多。",
+  "mainPoints": [
+    {
+      "point": "WebMCP 为 AI 智能体提供结构化、机器可读的工具。",
+      "explanation": "通过标准协议暴露像 searchFlights 这样的函数，智能体可以避免脆弱的 HTML 爬取或 UI 点击，使交互更快、更可靠。"
+    },
+    {
+      "point": "网站可以通过 Cloudflare 控制面板开关和可选择的工具包来启用 WebMCP。",
+      "explanation": "预览版包含用于读取 C2PA 元数据的 Content Credentials，以及一个代理现有 MCP 工具的 Site MCP server 包，后续还计划增加更多工具包。"
+    },
+    {
+      "point": "实现方式是在边缘注入 bridge.js 模块来注册工具。",
+      "explanation": "该桥接模块读取 data-packs 属性，组合工具描述符，通过 .registerTool 注册它们，并将 MCP 工具调用代理回源站，从而保持同源安全。"
+    }
+  ],
+  "keyQuotes": [
+    "这使得基于浏览器的 AI 智能体能够通过结构化工具与未经修改的网页交互，而无需爬取或猜测，同时保留原始网站的人工流量和控制权。",
+    "WebMCP 使交互更快、更高效，并且远不如传统浏览器自动化那样脆弱，后者通常会在 UI 变化时失效。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "MCP 协议",
+    "WebMCP",
+    "浏览器自动化",
+    "Cloudflare"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 490,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786392000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-11 04:00:00"
+}
