@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-11 08:57:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-11 11:27:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -728,17 +728,13 @@
 
 ### [Vercel-Sandbox-现已在-Vercel-Managed-Images-上运行---Vercel](https://vercel.com/changelog/vercel-sandbox-managed-images)
 
-2026-08-11 02:00:00 | 标签: 开发者工具, Vercel, 容器镜像, 沙箱, Ubuntu
-
-> Vercel 已推出 Vercel Managed Images（ VMI ），这是一套用于驱动 Vercel Sandbox 的开源基础镜像。此更新将默认操作系统从 Amazon Linux 切换为 Ubuntu，并引入了预装 Node.js、Python 以及多种编码代理（ 如 Claude Code ）的 “ 通用 ” 镜像。系统支持滚动标签以实现自动安全更新，并提供 SHA 锁定以确保环境不可变。开发者现在可以通过 SDK 使用完整路径指定镜像，而之前的 ‘ runtime ’ 属性仍保留以兼容旧版。
+2026-08-11 02:00:00
 
 
 
 ### [如何在没有服务器的情况下为静态网站添加动态功能](https://www.freecodecamp.org/news/how-to-add-dynamic-features-to-a-static-site-without-a-server/)
 
-2026-08-10 22:13:37 | 标签: 静态网站, Serverless, 表单处理, Jamstack, Web 开发
-
-> 静态网站托管快速、廉价且简单，但要添加评论、表单或实时数据等交互功能，往往看起来需要服务器。作者指出，大多数小规模动态功能可以完全在浏览器中处理，或通过租用特定服务来实现。主要方法包括：利用 fetch API 和原生 HTML 元素、使用 Netlify Forms（或类似服务）处理表单、部署 Serverless 函数来处理私有逻辑或密钥，以及采用 Supabase 或 Auth0 等托管数据库和认证服务。文章还涵盖了一些即插即用的评论、搜索和支付解决方案。同时，文章也提醒，当 Serverless 模式达到其极限时，传统后端会更为实用。
+2026-08-10 22:13:37
 
 
 

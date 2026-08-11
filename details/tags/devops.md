@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-11 08:57:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-11 11:27:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -590,17 +590,13 @@
 
 ### [Canva-分享基于-S3-的架构，用于在数-亿-会话中实现会话撤销](https://www.infoq.com/news/2026/08/canva-session-revocation-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-10 22:14:00 | 标签: 后端开发, 云原生 / DevOps, 系统设计, 分布式系统, Amazon S3
-
-> Canva 重新设计了会话撤销基础设施，以在数 亿 活跃会话中无需在每次请求上访问网络数据库。撤销数据以紧凑、不可变的 16‑byte 二进制记录存储在 Amazon S3 中，划分为 30‑minute 块，网关服务下载这些块并保持为已排序的内存数组以实现快速查找。工作者异步地使用条件 PUT 进行乐观并发控制，将新撤销合并到最新的 S3 块，而网关通过条件 GET 获取更新并丢弃过期数据。该方案将撤销缓存的内存占用降低 87.5%，减轻了数据库负载，加快了部署速度，并使网关在重启后能够从 S3 重建状态。文章包含工程师评论、Reddit 讨论将该设计与短生命周期刷新令牌进行比较，以及说明系...
+2026-08-10 22:14:00
 
 
 
 ### [Pinterest-如何通过集中式-Terraform-管道在大规模上保护-AWS-基础设施](https://www.infoq.com/news/2026/08/pinterest-secures-aws-infra/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-10 18:00:00 | 标签: Terraform, AWS, DevOps, 基础设施即代码, GitHub Actions
-
-> Pinterest 已开源其资源配置管道（RPP）的设计，这是一个构建在 GitHub Actions 上的集中式 Terraform 执行引擎。RPP 在拉取请求事件时触发，以共享复合动作的形式运行，并将每个 PR 拆分为影响的每个 Terraform 工作区的独立 plan/apply 运行。它采用链式角色模型：工作流首先假设中央 RPPActionsRole，验证 Terraform 代码路径是否与工作区的 S3 后端和 KMS 密钥匹配，然后在运行 terraform fmt、plan 以及（在显式 PR 评论后）apply 之前，下放到特定工作区的团队 IAM 角色。所有更改此外还需...
+2026-08-10 18:00:00
 
 
 

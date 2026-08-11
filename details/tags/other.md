@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-11 08:57:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-11 11:27:31 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3685,9 +3685,7 @@
 
 ### [变分自编码器（VAE）详解：从理论到-ELBO-与重参数化技巧](https://towardsdatascience.com/variational-autoencoders-vaes-explained-from-theory-to-elbo-and-the-reparameterization-trick/)
 
-2026-08-10 21:30:00 | 标签: 变分自编码器, 深度学习, 生成模型, 潜空间, ELBO
-
-> 文章首先概述普通自编码器的局限性，特别是其在潜空间中相似性保持不佳以及图像生成能力较弱的问题。随后引入变分自编码器（VAE）作为解决方案，描述编码器如何输出潜变量上的高斯分布而非单个点，以及解码器如何从该分布中采样以重建或生成图像。训练目标由证据下界（ELBO）推导而来，分为重建项和 KL 散度正则项：前者鼓励图像忠实重建，后者迫使潜分布趋近于标准高斯分布。重参数化技巧作为关键创新被提出，使采样操作可微，从而支持基于梯度的优化。文章最后总结了 VAE 的训练循环，并简要介绍了用于定向生成的条件 VAE。
+2026-08-10 21:30:00
 
 
 
@@ -15321,65 +15319,49 @@
 
 ### [服务最关键的任务---Cloudflare-for-Government-获得-FedRAMP-Class-D-High-认证](https://blog.cloudflare.com/fedramp-class-d-certification/)
 
-2026-08-10 21:00:03 | 标签: FedRAMP, 云安全, 政府合规, 零信任
-
-> Cloudflare 博客宣布，Cloudflare for Government 已获得 FedRAMP Class D (High) 认证。此授权验证了 Cloudflare 的零信任平台在处理敏感联邦数据方面的能力，并扩展了其为需要 FedRAMP High 合规性的政府机构提供服务的能力。该文章阐述了该认证的含义、为何对公共部门客户重要，以及它如何巩固 Cloudflare 在政府云市场的地位。
+2026-08-10 21:00:03
 
 
 
 ### [Java-新闻汇总：Shenandoah-GC、TeamCity-CVE、A2A-Java-SDK、Camel、Gradle、GlassFish、Groovy](https://www.infoq.com/news/2026/08/java-news-roundup-aug03-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-10 20:45:00 | 标签: Java, OpenJDK, 垃圾回收, 构建工具, 应用服务器
-
-> 本文汇总了 2026 年 8 月 3 日当周的 Java 相关公告。JEP 535 将 Shenandoah GC 在 JDK 28 中默认设为代际模式。JDK 27 build 34 已发布，其 RC 时间表因关键补丁更新频率提升而延后，Mark Reinhold 指出反馈窗口缩短。JDK 28 build 10 也已可用。GlassFish 8.0.4 添加了 bug 修复、改进的诊断功能，并修补了三个 CVE，包括一个关键的远程接管漏洞。A2A Java SDK 1.2.0 引入了 TaskStreamLifecycleHook，以提升任务流管理。Apache Grails 8.0.0‑...
+2026-08-10 20:45:00
 
 
 
 ### [50，000-船名](https://www.beautifulpublicdata.com/boat-names/)
 
-2026-08-10 20:00:09 | 标签: 数据可视化, 休闲娱乐, 流行文化引用, 政府数据, 海事
-
-> Jon Keegan 分析了来自 NOAA Marine Cadastre 数据集的超过 50，000 条船舶名称，这些名称通过自动识别系统（AIS）广播。他展示了船主如何通过航海双关语、下流笑话以及对金融、医学、文学、电影和电视节目的引用（如 SEA SLUT II、BILBOAT BAGGINS、LIQUID ASSETS、CADUCEUS、GANDALF、SEINFELD）来表达个性。分析按船舶类型划分（休闲娱乐船约 43%，货船约 14%），并引用了 2018 年美国海岸警卫队调查的人口统计信息，同时强调了拥有船只的成本。文章包含交互式可视化、可搜索数据库，并说明了使用 Jupyter...
+2026-08-10 20:00:09
 
 
 
 ### [Squeak-6.1-发布说明](https://squeak.org/release_notes/6.1/)
 
-2026-08-10 19:52:15 | 标签: Smalltalk, Squeak, GUI 框架, Morphic, 软件开发
-
-> Squeak 6.1 发布说明详细介绍了开源 Smalltalk 环境的最新版本，重点包括：用于层级类浏览的新树形浏览器、Objectland（“Squeak 的世界”）的复兴、进程处理与类重塑方面的大量内核级变更，以及 Morphic UI、调试器、文本编辑器和版本控制工具的增强。文档包含大量可在 SqueakJS 中打开的交互式链接，让读者能直接在浏览器中试用功能。它还包含主要弃用项、已知问题和兼容性说明等章节，并以对 Vanessa Freudenberg 的致敬作为结尾。总体而言，该说明既是一份变更日志，也是一份探索新功能的手把手指南。
+2026-08-10 19:52:15
 
 
 
 ### [C-语言的尾调用优化是近期才出现的-LWN.net](https://lwn.net/Articles/1034703/)
 
-2026-08-10 19:34:40 | 标签: 编译器优化, 尾调用优化, C 语言, GCC, Clang
-
-> 文章开头指出，与某些语言不同，C 语言的传统调用约定要求调用者清理栈上的参数，这使得许多调用模式无法进行尾调用优化（TCO）。文章回顾，早期的 C 编译器（如 1994 年观察到的情况）不会对这类用法执行 TCO，而 Mark Probst 在 2001 年向 GCC 添加了一个单独的调用约定以启用 TCO，尽管存在诸如无法处理间接调用等限制。作者在阅读了 Xu 和 Kjolstad 的“Copy-and-Patch Compilation”论文后，对 GCC 和 Clang 进行了测试，确认这两个编译器现在都可以优化文章中展示的那种尾调用。虽然 Gforth 尚未集成这一优化，但作者祝贺 P...
+2026-08-10 19:34:40
 
 
 
 ### [因为它不够有趣](https://bytecode.news/posts/2026/08/because-it-s-not-fun-enough)
 
-2026-08-10 19:27:47 | 标签: 编程语言, 软件工程, 开发者体验, 语言采纳, 技术文化
-
-> 该文章扩展了 Andrew Oram 的语言生命周期两部分调查，强调 Simon Peyton Jones 的观察：一种语言的采纳与其技术特质只有弱关联，主要受社会和经济因素驱动。文章将编程视为同时具有 vocation（召唤）、art（艺术）和 job（工作）三重属性——即召唤（一种召唤）、艺术（一项热爱的工艺）和工作（日常劳动）。当语言不必要地阻碍这三个维度中的任何一个时，就会导致失败——例如，由于字符串处理不佳，Pascal 在工作方面表现不佳；Ada 和 PL/I 作为艺术形式因被强制推行而失败；Perl 在其就业市场转向 Python 时，作为召唤而衰落。相反，C++、Rust 和 ...
+2026-08-10 19:27:47
 
 
 
 ### [Metabase-0Day-漏洞遭在野利用，无需认证即可获得管理员权限](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651344311&idx=3&sn=1e051bc6c34e2b38082e9f90792f10b2)
 
-2026-08-10 18:30:00 | 标签: 安全漏洞, Metabase, 零日漏洞, 数据库安全, 云安全
-
-> FreeBuf 报道，Metabase 商业智能与数据可视化软件包中存在 CVSS 10.0 的最高严重级别 0Day 漏洞，攻击者可在无需认证的情况下向 Metabase 应用数据库注入任意 SQL，进而获取实例管理员权限、窃取数据库凭据并导出数据。该漏洞尚未分配 CVE 标识符，已在野外被利用。受影响的版本包括 1.58.x‑<1.58.23、1.59.x‑<1.59.20、1.60.x‑<1.60.16、1.61.x‑<1.61.10、1.62.x‑<1.62.8、1.63.x‑<1.63.3，均已在后续小版本中修复。临时缓解措施建议屏蔽 "/api/session/reset_pass...
+2026-08-10 18:30:00
 
 
 
 ### [认识-Alexey-Gopachenko-|-Qodana-博客](https://blog.jetbrains.com/qodana/2026/08/alexey-gopachenko/)
 
-2026-08-10 18:11:25 | 标签: 产品管理, 开发者工具, IDE, 代码质量, 分析
-
-> 这篇文章介绍了 Alexey Gopachenko，纪念他在 JetBrains 工作 20 周年。文章追溯了他的职业生涯：从早期参与 TeamCity 的工作（构建检查导出、质量门禁和仪表盘，这些后来成为 Qodana 的雏形），到创建 PhpStorm 和 WebStorm，为 PHP 带来了类似 Java 的工具支持，并影响了语言本身。Alexey 描述了直觉的局限如何促使他协助构建 JetBrains 内部数据分析平台，强调以数据驱动的产品决策。他回顾了激发 Qodana 灵感的客户对话：将质量引擎从 TeamCity 中提取出来，使其与流水线无关。最后，他思考了 AI 时代，指出安全...
+2026-08-10 18:11:25
 
 
 
@@ -39251,11 +39233,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 
