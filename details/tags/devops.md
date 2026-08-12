@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-12 09:03:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-12 11:56:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -590,17 +590,13 @@
 
 ### [如何使用-Fastlane-和-GitHub-Actions-实现-Flutter-发布自动化，涵盖-Firebase-App-Distribution、Google-Play、TestFlight-以及-App-Store-Connect](https://www.freecodecamp.org/news/how-to-automate-flutter-releases-with-fastlane-and-github-actions/)
 
-2026-08-12 00:47:02 | 标签: CI/CD, Fastlane, GitHub Actions, Flutter, 移动端自动化
-
-> 本文将引导 Flutter 开发者创建一个全自动化的发布流水线。在概述了手动部署存在的问题后，文章解释了将 GitHub Actions Runner 与 Fastlane、Fastlane Match 以及各种分发服务连接起来的架构。详细步骤涵盖了前期准备、生成 Firebase、Apple 和 Google Play 的凭据、加密密钥、配置 Android 和 iOS 的 Fastlane 文件、编写 GitHub Actions 工作流，以及最佳实践建议（如保护证书、设置构建版本号策略和监控运行时间）。此外，文章还列出了常见陷阱及排障技巧，帮助团队用可复现的云端流程取代手动归档和上传步骤...
+2026-08-12 00:47:02
 
 
 
 ### [Cloudflare-推出-Meerkat，实现全球强一致性协调](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290628&idx=4&sn=908eb82658d3c7168da18b40c7368841)
 
-2026-08-11 09:30:00 | 标签: 分布式系统, 共识算法, QuePaxa, 强一致性, Cloudflare
-
-> Cloudflare 最近推出 Meerkat，这是其内部基于 QuePaxa 共识算法的全球一致性控制平面服务。文章指出，传统的 Raft 等领导者依赖型共识算法在广域网中因领导者故障和超时机制导致可用性下降，而 Meerkat 允许所有副本在不依赖领导者的情况下接受写入，从而避免领导者不可达时的写入阻塞。Meerkat 提供一个全局复制的共识日志，日志由槽（slot）组成，已决槽的值对所有副本保持一致，确保读写操作可线性化。文中还引用了工程师对 Meerkat 性能的评价：虽然它提高了可用性，但仍需一到三次往返通信才能达成共识，带来一定延迟开销；研究表明多区域 Paxos 部署中共识开销会...
+2026-08-11 09:30:00
 
 
 
