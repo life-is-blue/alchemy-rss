@@ -1,0 +1,56 @@
+{
+  "id": "RAW_21a1569fe0",
+  "title": "从编码者到编排者：智能体如何转变开发者的角色",
+  "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
+  "date": "2026-08-12 02:38:20",
+  "author": "Natalie Guevara",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">Stop me if you’ve heard this one before: I’ve created an exciting new demo with just a single prompt.</p>\n  <figure class=\"wp-block-image size-medium\">\n   <img decoding=\"async\" loading=\"lazy\" src=\"https://github.blog/wp-content/uploads/2026/08/Screenshot-2026-08-11-at-10.43.51-AM.png?resize=281%2C300\" alt=\"Screenshot of a simple 'snake' game, where the snake is 9 cubes long and approaching another piece of food.\" class=\"wp-image-98116\" srcset=\"https://github.blog/wp-content/uploads/2026/08/Screenshot-2026-08-11-at-10.43.51-AM.png?w=836 836w, https://github.blog/wp-content/uploads/2026/08/Screenshot-2026-08-11-at-10.43.51-AM.png?w=281 281w, https://github.blog/wp-content/uploads/2026/08/Screenshot-2026-08-11-at-10.43.51-AM.png?w=768 768w\" sizes=\"auto, (max-width: 281px) 100vw, 281px\">\n  </figure>\n  <p class=\"wp-block-paragraph\">Everyone claps!</p>\n  <p class=\"wp-block-paragraph\">One-prompt demos are quick and easy to create. But setting up a system that lets you generate code reliably and safely… that’s a completely different story. With a prompt, you receive a one-off output, but what you need is a wired workflow to produce repeatable delivery, with the right checks, context, and controls in place.</p>\n  <p class=\"wp-block-paragraph\">That changes the developer role. You still write code, sure, but you also design the system: how code is proposed,&nbsp;validated, reviewed, and shipped.&nbsp;</p>\n  <p class=\"wp-block-paragraph\">Doing it all in one place makes it easier to track and execute. GitHub Copilot is your control plane for building software that gets wired up. And it helps you better orchestrate your agents.</p>\n  <h2 id=\"h-the-agentic-flow-that-works\" class=\"wp-block-heading\">The agentic flow that works</h2>\n  <p class=\"wp-block-paragraph\">To create a workflow that fits the way you work, you want to start with familiar repository events and triggers. Add a label to an issue or run a scheduled workflow overnight. Those events can trigger a GitHub Actions workflow that invokes an agent to perform a task that you scoped.</p>\n  <p class=\"wp-block-paragraph\">The agent’s output is captured in a pull request, where deterministic checks take over: linting, tests, security scanning, and build verification. From there, CODEOWNERS, required reviews, and branch protections govern what can merge. Agents are flexible, but within a deterministic boundary that is rule-based and predictable.</p>\n  <p class=\"wp-block-paragraph\">The deterministic side is what makes teams trust the system.</p>\n  <p class=\"wp-block-paragraph\">CI checks produce repeatable signals. Branch rules prevent accidental bypass. Review requirements make it so your judgement is needed to make higher-risk changes. Meanwhile, agents handle the ambiguous, context-heavy tasks. Developers are the system orchestrators who define triggers, scope agent permissions, and design handoffs. Ultimately, they also decide where human judgment must remain in the loop.</p>\n  <p class=\"wp-block-paragraph\">GitHub is where you can create this ecosystem. Configure <a href=\"https://docs.github.com/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations\">event-driven automations</a> with Copilot cloud agent workflows. Run <a href=\"https://docs.github.com/copilot/how-tos/copilot-cli/use-copilot-cli-in-actions\">Copilot CLI in GitHub Actions</a> to blend AI-powered steps into your pipeline. Extend <a href=\"https://docs.github.com/copilot/tutorials/enhance-agent-mode-with-mcp\">agent capabilities with MCP</a> when you need more tools or external context. Those aren’t separate philosophies—they’re implementation options along the same maturity path.</p>\n  <h2 id=\"h-get-started\" class=\"wp-block-heading\">Get started</h2>\n  <p class=\"wp-block-paragraph\">If you’re adopting this approach, start small.</p>\n  <p class=\"wp-block-paragraph\">Pick one bounded workflow, something like issue triage, docs-and-tests sync, or low-risk maintenance updates. Bring GitHub Copilot into your existing software development infrastructure, and let it help you build what you want to see next.</p>\n  <p class=\"wp-block-paragraph\">As the developer role continues to shift, you are owning more of the delivery system around code.</p>\n  <p class=\"wp-block-paragraph\">Ready to expand into this role and learn more about working with agents? Explore <a href=\"https://githubuniverse.com/?utm_source=Blog&amp;utm_medium=GitHub&amp;utm_campaign=launch_seb_uni_26\">GitHub Universe</a>, where builders become orchestrators. Join us on October 28–29 to see what’s new and what’s next. Time is running out for Early Bird pricing—<strong>buy your ticket by August 19 to get $300 off!</strong></p>\n  <p class=\"wp-block-paragraph\">Throughout the event, you’ll be able to develop your skills and learn something new during workshops. You can connect with developers, open source maintainers, and leaders. Learn about technology that is developing fast so you can keep doing what you love—and build the next big thing.</p>\n  <p class=\"wp-block-paragraph\"><strong>Additional resources</strong></p>\n  <ul class=\"wp-block-list\">\n   <li>Need help convincing your manager? <a href=\"https://githubuniverse.com/registration/convince-your-boss.pdf\">Use our customizable email template</a>.</li>\n   <li>Want to stay updated? <a href=\"https://reg.githubuniverse.com/flow/github/universe26/getnotified/form/reggetnotified\">Sign up</a>.</li>\n   <li>Curious what the experience is like? <a href=\"https://www.youtube.com/playlist?list=PL0lo9MOBetEFKNlPHNouEmVeYeyoyGTXC\">Explore last year’s highlights</a>.</li>\n  </ul>\n  <p class=\"wp-block-paragraph\"></p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "文章解释了 AI 智能体如何将开发者的角色从编写代码转变为编排自动化工作流，并借助 GitHub Copilot 与确定性检查实现可靠、可重复的软件交付。",
+  "oneSentenceSummary": "文章解释了 AI 智能体如何将开发者的角色从编写代码转变为编排自动化工作流，并借助 GitHub Copilot 与确定性检查实现可靠、可重复的软件交付。",
+  "summary": "文章指出，虽然单次提示的演示很容易，但要构建一个值得信赖的系统，需要一套连通的流程，让智能体提出代码，自动化检查（lint 检查、测试、安全扫描、构建）进行验证，并由人工治理控制（CODEOWNERS、必需评审、分支保护）决定合并内容。开发者成为编排者，负责定义触发器、限定智能体权限并设计交接，同时对高风险变更保留判断力。GitHub 提供了组装这一生态系统的工具——Copilot 云智能体工作流、Actions 中的 Copilot CLI，以及可扩展 MCP 的智能体。文章建议从小而受限的工作流入手（如 Issue 分诊或文档与测试同步），并将 Copilot 集成到现有流水线中，同时推荐 GitHub Universe 工作坊和用于说服管理层的模板等资源。",
+  "mainPoints": [
+    {
+      "point": "智能体将开发者从编码者转变为系统编排者。",
+      "explanation": "开发者现在负责定义触发器、限定智能体权限并设计交接，而智能体则处理模糊且上下文密集的任务。"
+    },
+    {
+      "point": "确定性检查提供信任与可重复性。",
+      "explanation": "拉取请求中的 lint 检查、测试、安全扫描和构建验证会产生可靠信号；分支规则和必需评审确保高风险变更仍有人工判断参与。"
+    },
+    {
+      "point": "GitHub 提供了一套用于构建智能体驱动工作流的完整工具包。",
+      "explanation": "Copilot 云智能体工作流、GitHub Actions 中的 Copilot CLI，以及基于 MCP 的智能体扩展可以组合起来，构建一个成熟的事件驱动自动化系统。"
+    },
+    {
+      "point": "采用智能体开发时应从小处着手并持续迭代。",
+      "explanation": "选择一个有边界的流程，例如 Issue 分诊或文档与测试同步，将 Copilot 引入现有基础设施，并随着信心增长而扩展。"
+    }
+  ],
+  "keyQuotes": [
+    "单次提示的演示很容易快速创建，但要搭建一个能让你可靠、安全生成代码的系统……那完全是另一回事。",
+    "开发者就是系统编排者，负责定义触发器、限定智能体权限并设计交接。",
+    "随着开发者角色的持续转变，你将拥有更多围绕代码的交付系统。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "GitHub Copilot",
+    "开发者工作流",
+    "编排",
+    "CI/CD"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 539,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786473500000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-12 02:38:20"
+}

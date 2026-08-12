@@ -1,0 +1,56 @@
+{
+  "id": "RAW_0b78d2c38a",
+  "title": "Netflix 如何扩展其实时服务地图",
+  "url": "https://www.infoq.com/news/2026/08/netflix-service-topology/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-11 20:20:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix has described how <a href=\"https://netflixtechblog.com/building-service-topology-at-scale-architecture-challenges-and-lessons-learned-f4b792f3f0d8\">it redesigned the streaming pipeline behind Service Topology</a>, its real-time map of service dependencies, to support its production scale. The system now uses three stages to separate intermediary resolution from enrichment and persistence, propagates backpressure to Kafka rather than dropping records, and uses server-sent events instead of gRPC for high-volume internal transfers.</p>\n   <p>The account follows Netflix’s earlier description of <a href=\"https://www.infoq.com/news/2026/06/netflix-microservices-realtime/\">Service Topology’s multi-source graph</a> and focuses on the production engineering required to keep the network-flow pipeline up to date at scale.</p>\n   <p>Service Topology combines separately stored views from <a href=\"https://ebpf.io/what-is-ebpf/\">eBPF</a> network flows, inter-process communication (IPC) metrics, and <a href=\"https://opentelemetry.io/docs/concepts/signals/traces/\">distributed traces</a>. Engineers can query the layers independently or merge them for a broader view of service dependencies. Netflix says teams use it for incident investigation, blast-radius analysis, dependency understanding, and production change management.</p>\n   <p>The new post focuses on the network-flow ingestion path. Raw flow records show network hops rather than the logical application dependency: traffic can pass through load balancers, NAT gateways, API gateways, or proxies. Netflix therefore processes the data in three stages. The first consumes multi-region <a href=\"https://kafka.apache.org/documentation/#introduction\">Kafka</a> streams, filters invalid records, batches data into five-minute windows, and creates initial aggregators. The second resolves intermediaries into direct application-to-application edges and redistributes those results. The final stage enriches nodes with information such as health, ownership and metadata before persisting them to the graph database.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/08/netflix-service-topology/news/2026/08/netflix-service-topology/en/resources/1Netflix-Service-Topology-Flow-Log-1784726198402.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/netflix-service-topology/en/resources/1Netflix-Service-Topology-Flow-Log-1784726198402.png\" rel=\"share\">\n    <br>\n    <em>Netflix separates initial aggregation, intermediary resolution and graph persistence into three stages. (<a href=\"https://netflixtechblog.com/building-service-topology-at-scale-architecture-challenges-and-lessons-learned-f4b792f3f0d8\">source</a>)</em></p>\n   <p>Netflix says its earlier design concentrated work for popular destinations. Because intermediary resolution requires bringing relevant flows together, popular destinations and their intermediaries could make instances hot. The company reports that some instances experienced up to 100 times the typical traffic while also performing I/O-heavy enrichment work. Separating resolution from enrichment and persistence allowed the system to redistribute that work.</p>\n   <p>The pipeline uses <a href=\"https://pekko.apache.org/docs/pekko/current/stream/index.html\">Apache Pekko Streams</a> to manage backpressure. When graph storage cannot keep up, Netflix says pressure travels upstream through the processing stages until the Kafka consumer pauses, leaving records in Kafka until capacity returns. The result is delayed freshness under load rather than dropped data or an incomplete map; Netflix considers that preferable to batch-generated maps that may already be stale during an incident.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/08/netflix-service-topology/news/2026/08/netflix-service-topology/en/resources/1Netflix-Service-Topology-Backpressure-1784726198402.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/netflix-service-topology/en/resources/1Netflix-Service-Topology-Backpressure-1784726198402.png\" rel=\"share\">\n    <br>\n    <em>When graph writes slow, demand signals travel upstream through the pipeline to the message stream.&nbsp;(<a href=\"https://netflixtechblog.com/building-service-topology-at-scale-architecture-challenges-and-lessons-learned-f4b792f3f0d8\">source</a>)</em></p>\n   <p>Netflix also replaced <a href=\"https://grpc.io/docs/what-is-grpc/introduction/\">gRPC</a> between pipeline stages with <a href=\"https://html.spec.whatwg.org/multipage/server-sent-events.html\">server-sent events (SSE)</a>. It reports that serialisation, connection-pool management and streaming-response memory pressure became expensive at its volume; it describes SSE as lighter-weight and compatible with reactive backpressure. This internal transport is separate from the gRPC API exposed to Service Topology clients.</p>\n   <p>Netflix’s processing fleet expands and contracts with demand. Each instance reads the same current list of healthy instances from the service registry, then uses <a href=\"https://aws.amazon.com/builders-library/consistent-hashing/\">consistent hashing</a> to decide which instance owns each aggregator. When an instance joins or leaves, the updated list automatically moves only the affected aggregators to new owners, without a separate rebalancing process.</p>\n   <p>The IPC pipeline does not need this extra redistribution step. Its metrics already describe application-level calls and are partitioned by application from the start, allowing them to be aggregated in a single stage.</p>\n   <p>The post also describes historical reconstruction. Rather than retaining complete graph snapshots or replaying an event log, Service Topology keeps time-windowed aggregator snapshots and property-level mutation history. Netflix says it can reconstruct a topology at a specified point in time, enabling engineers to examine changes in dependencies around an incident.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Netflix Scaled Its Real-Time Service Map\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/netflix-service-topology/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1786450800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 重新架构了其服务拓扑管道，划分为三个阶段，向 Kafka 添加背压，改用服务器发送事件，并使用一致性哈希来扩展实时服务依赖映射。",
+  "oneSentenceSummary": "Netflix 重新架构了其服务拓扑管道，划分为三个阶段，向 Kafka 添加背压，改用服务器发送事件，并使用一致性哈希来扩展实时服务依赖映射。",
+  "summary": "Netflix 重建了其服务拓扑实时地图的摄取路径，以应对生产规模。该管道现在分为三个阶段：首先，对多区域 Kafka 流进行过滤，并以五分钟窗口进行批处理；其次，将中间跳（负载均衡器、NAT、API 网关、代理服务器）解析为直接的应用到应用边，并重新分发；第三，在节点持久化到图数据库之前，为其补充健康状态、归属信息和元数据。为避免图存储滞后时数据丢失，背压通过 Apache Pekko Streams 向上游传播，暂停 Kafka 消费者，并在容量恢复前将记录保留在 Kafka 中。内部阶段间传输从 gRPC 改为服务器发送事件（SSE），以降低 Netflix 规模下的序列化和连接池开销，而面向客户端的对外 gRPC API 保持不变。每个处理实例从服务注册中心读取当前健康实例列表，并使用一致性哈希来拥有特定聚合器，因此扩缩容时仅移动受影响的聚合器，无需单独重新平衡步骤。为支持历史重建，服务拓扑保留时间窗口聚合器快照和属性级变更历史，使工程师能够重建任意时间点的拓扑，以研究故障前后的依赖关系变化。",
+  "mainPoints": [
+    {
+      "point": "三阶段管道将聚合、中间节点解析和持久化分离开来。",
+      "explanation": "第一阶段将原始流量记录聚合成五分钟窗口；第二阶段将中间节点（负载均衡器、NAT、API 网关、代理服务器）解析为直接的应用到应用边；第三阶段在将节点持久化到图数据库之前，为其补充健康状态、归属信息和元数据。"
+    },
+    {
+      "point": "背压被传播到 Kafka，而不是丢弃记录，从而在负载下保持数据完整性。",
+      "explanation": "当图存储无法跟上时，压力会通过 Pekko Streams 向上游传播，暂停 Kafka 消费者，并在容量恢复前将记录保留在 Kafka 中，这会延迟数据新鲜度，但避免数据丢失或不完整的地图。"
+    },
+    {
+      "point": "服务器发送事件取代了管道阶段之间的 gRPC，以降低序列化和连接池开销。",
+      "explanation": "SSE 更轻量，并且天然支持响应式背压，而面向服务拓扑客户端暴露的对外 gRPC API 保持不变。"
+    },
+    {
+      "point": "一致性哈希根据当前健康实例列表将聚合器分配给实例，从而实现平滑扩缩容。",
+      "explanation": "每个实例从服务注册中心读取健康实例列表，并使用一致性哈希来拥有特定聚合器；当实例加入或离开时，只有受影响的聚合器会被移动到新的所有者，而无需单独的重新平衡过程。"
+    }
+  ],
+  "keyQuotes": [
+    "该系统现在使用三个阶段，将中间节点解析与富化和持久化分离，将背压传播到 Kafka 而不是丢弃记录，并在高吞吐内部传输中使用服务器发送事件而非 gRPC。",
+    "Netflix 表示，当图存储无法跟上时，压力会通过处理阶段向上游传播，直到 Kafka 消费者暂停，并将记录保留在 Kafka 中，直到容量恢复。",
+    "Netflix 还将管道阶段之间的 gRPC 替换为服务器发送事件（SSE）。它表示，在其规模下，序列化、连接池管理和流式响应内存压力变得代价高昂；它将 SSE 描述为更轻量且与响应式背压兼容。"
+  ],
+  "tags": [
+    "可观测性",
+    "微服务",
+    "Kafka",
+    "Apache Pekko Streams",
+    "SSE"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 568,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786450800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-11 20:20:00"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-12 06:32:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-12 09:03:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 产品与商业
 
@@ -63,6 +63,14 @@
 ### [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136)
 
 2025-06-08 02:25:00
+
+
+
+### [Vercel-Connect-现在支持通过-CLI-为-100+-个连接器进行设置---Vercel](https://vercel.com/changelog/vercel-cli-100-services)
+
+2026-08-12 03:00:00 | 标签: 开发者工具, API, SaaS, 测试版, CLI
+
+> Vercel 宣布其 Connect 功能现在允许开发者直接从 Vercel CLI 创建和附加超过 100 个服务连接器。之前，`vercel connect create` 仅在终端为部分服务完成设置，其余服务则回退到控制面板。更新后的流程允许您运行 `vercel connect create <service> --name <alias>`，让 CLI 预填充品牌、图标、身份验证类型以及 MCP/发现 URL，然后提示输入所需凭据并创建连接器。将连接器通过 `vercel connect attach` 附加到项目后，您可以通过 `@vercel/connect` 的 `getTok...
 
 
 

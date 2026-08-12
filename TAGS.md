@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-12 06:32:49 | [返回首页](/README.md)
+**更新时间**: 2026-08-12 09:03:37 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14631)
+- [AI & 大模型](#ai-llm) (14672)
 - [软件架构](#architecture) (23)
 - [前端与全栈](#frontend-fullstack) (918)
-- [DevOps](#devops) (699)
-- [产品与商业](#product-business) (45)
-- [其他](#other) (6539)
+- [DevOps](#devops) (701)
+- [产品与商业](#product-business) (46)
+- [其他](#other) (6545)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [NVIDIA-Nemotron-3.5-Lightning-为长期运行的智能体提供快速、精准的专用任务执行](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/) - AI 精选
+- [考虑使用-ACE？我们可以用更少的-Token-实现同样的效果](https://huggingface.co/blog/ibm-research/altk-evolve-sldd) - AI 精选
 - [让知识蒸馏成本足够低，可实现规模化运行](https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation) - AI 精选
 - [随着网络防御窗口收窄，扩大-Daybreak-项目](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows) - AI 精选
 - [从-Kimi-K3-技术报告看前沿模型是如何炼成的](https://towardsdatascience.com/how-a-frontier-model-gets-built-read-from-the-kimi-k3-report/) - AI 精选
@@ -40,10 +42,8 @@
 - [编程心得：Vibe-上百亿-Token-后，我收获了什么?](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492307&idx=1&sn=e9fb1f4fae460a121e6097f5726603d5) - AI 精选
 - [Gemini-3.6-Flash、3.5-Flash-Lite-和-3.5-Flash-Cyber-正式发布](https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/) - AI 精选
 - [与-Claude-Code-团队的-Cat-和-Thariq-的炉边谈话](https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything) - AI 精选
-- [长时程模型时代的安全与对齐](https://openai.com/index/safety-alignment-long-horizon-models) - AI 精选
-- [从“能说话”到“会表达”：Qwen-Audio-3.0-TTS-发布](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247501821&idx=1&sn=48ad8d176a6373940bf5c60b2cbb6b7a) - AI 精选
 
-- [查看全部 14631 篇...](/details/tags/ai-llm.md)
+- [查看全部 14672 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 699 篇...](/details/tags/devops.md)
+- [查看全部 701 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -148,6 +148,7 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [Vercel-Connect-现在支持通过-CLI-为-100+-个连接器进行设置---Vercel](https://vercel.com/changelog/vercel-cli-100-services) - 编程 更多
 - [Release-0.12.0-·-astral-sh/uv](https://github.com/astral-sh/uv/releases/tag/0.12.0) - 编程 更多
 - [微型-SaaS-已死，取而代之的是“服务+软件”模式-—-Adrien-Gonin](https://adriengonin.com/writing/service-with-a-software/) - 编程 更多
 - [Castro-Podcasts-—-我做错的事：客户支持](https://www.uncommonapps.nyc/p/castro-podcasts-things-i-got-wrong-support) - 编程 更多
@@ -157,9 +158,8 @@
 - [Eliya-25-为-OpenJDK-25-LTS-带来-JVM-级诊断配置](https://www.infoq.com/news/2026/06/eliya-jvm-diagnostic-profile/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [如何使用-TanStack-Start、Elysia-和-Neon-构建全栈-SaaS-应用](https://www.freecodecamp.org/news/full-stack-saas-tanstack-start-elysia-neon/) - 编程 更多
 - [MySQL，InnoDB-的高并发，究竟是不是因为-MVCC？（第-5-讲，长文收藏）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651979807&idx=1&sn=8f513fa8345d591dec03f94ecfba23b4) - 编程 更多
-- [还是打不过？为什么-Uber-要从-Postgres-迁移到-MySQL？](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247633487&idx=1&sn=c02694dace9fb836f7f479247151e7b6) - 编程 更多
 
-- [查看全部 45 篇...](/details/tags/product-business.md)
+- [查看全部 46 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 
-- [查看全部 6539 篇...](/details/tags/other.md)
+- [查看全部 6545 篇...](/details/tags/other.md)
 
 
