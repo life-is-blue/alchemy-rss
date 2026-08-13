@@ -1,0 +1,61 @@
+{
+  "id": "RAW_571d186b2c",
+  "title": "科罗拉多州 AI 法案：生效日期及其变更原因",
+  "url": "https://dev.to/multigrid/colorados-ai-act-the-effective-date-and-why-it-moved-1if3",
+  "date": "2026-08-13 06:39:20",
+  "author": "Multigrid",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Most searches for this law are really one question: when does it actually start. The date has moved once already, by a bill passed in a special session, and that fact is more useful than any single date this page could print.</p>\n  <h2><a name=\"the-dates-in-order\" href=\"#the-dates-in-order\"> </a> The dates, in order</h2>\n  <ul>\n   <li><strong>17 May 2024 — signed.</strong> Governor Jared Polis signed Senate Bill 24-205, the Colorado Artificial Intelligence Act, creating Part 17 of Article 1 of Title 6 of the Colorado Revised Statutes. Legislative history and the enacted text are on <a href=\"https://leg.colorado.gov/bills/sb24-205\" target=\"_blank\" rel=\"noopener noreferrer\">the General Assembly’s bill page</a>. The Governor issued a signing statement at the same time asking the legislature to amend the Act before it took effect — unusual, and the reason everything below happened.</li>\n   <li><strong>1 February 2026 — the original effective date</strong> as enacted in 2024. This is the date still printed in a great deal of 2024-vintage commentary, and it is no longer correct.</li>\n   <li><strong>August 2025 — delayed.</strong> A bill passed in Colorado’s August 2025 special session postponed the effective date to <strong>30 June 2026</strong>. The bill carries a special-session number, SB25B-004; its record is at <a href=\"https://leg.colorado.gov/bills/sb25b-004\" target=\"_blank\" rel=\"noopener noreferrer\">the General Assembly</a>. A regular-session bill numbered SB 25-004 also existed in 2025 and was a different measure, which is a common source of confusion in secondary coverage.</li>\n  </ul>\n  <p>Dates in this area are the single most volatile fact about the law, and this page states them as at 11 August 2026. Colorado has already moved this date once and substantive amendments were under active discussion when it did. Before you rely on a date — particularly before you tell anyone a deadline has passed — check the current text of section 6-1-1701 and the following sections directly. Nothing here is legal advice.</p>\n  <p>The delay was not a drafting fix. It was the product of an unusually public disagreement about the Act between the branch that passed it and the branch that signed it. Three threads ran through the argument, and they are worth knowing because they predict where any further amendment would land.</p>\n  <p>The first is scope. The definition of a high-risk system turns on whether the system makes, or is a substantial factor in making, a consequential decision, and businesses argued that “substantial factor” swept in software that merely assists a human decision. The second is the compliance burden on small deployers, which the Act addresses with a fifty-employee exemption that several parties argued was both too narrow and conditioned on terms — no training on your own data — that a modern deployment routinely fails. The third is the absence of any other state operating the same regime: a single-state obligation with a documentation programme attached is a different proposition from a rule the whole country is adopting, and Colorado spent 2025 as an outlier rather than a first mover.</p>\n  <p>A regular-session attempt to amend the Act substantively did not succeed in 2025. What passed in the special session was the narrower option: move the date, keep the substance, and give the legislature another session to work on it. That is a meaningful signal about stability — a statute delayed to buy amendment time is a statute whose text is expected to change.</p>\n  <h2><a name=\"what-the-delay-did-and-did-not-change\" href=\"#what-the-delay-did-and-did-not-change\"> </a> What the delay did and did not change</h2>\n  <p>A postponement of an effective date is the narrowest possible intervention, and it is worth being precise about what it left untouched. The duty of reasonable care on developers and deployers is the same duty it was in 2024. The definition of algorithmic discrimination is unchanged. The impact assessment contents, the ninety-day notification to the Attorney General, the three-year retention period, the rebuttable presumption, the affirmative defence, the small-deployer exemption and the exclusive enforcement authority of the Attorney General all survived the delay in the form they were enacted.</p>\n  <p>What changed is only when compliance is measured from — and one practical consequence of that. Because the impact assessment obligation is annual, the effective date sets the first cycle. A deployer that built its programme against a February date has a schedule that no longer matches the statute; the artefacts are still the right artefacts. Nothing about the substance of <a href=\"https://multigrid.ai/learn/colorado-ai-act-impact-assessment\" target=\"_blank\" rel=\"noopener noreferrer\">the impact assessment</a> or <a href=\"https://multigrid.ai/learn/colorado-ai-act-duty-of-care\" target=\"_blank\" rel=\"noopener noreferrer\">the duty of care</a> needs redoing because of the delay.</p>\n  <p>It is also worth being clear about what an effective date does to conduct before it. The Act is not retroactive: the Attorney General cannot bring an enforcement action under Part 17 in respect of a deployment that ended before the date it took effect, and no duty in the Act attaches to a decision made beforehand. What does carry across the line is a system still in use on the date — the reasonable care duty applies to it from that morning, with no grandfathering for systems already deployed, which is why the delay bought preparation time rather than an exemption.</p>\n  <p>And other Colorado law did not pause while the AI Act moved. The Colorado Privacy Act’s right to opt out of profiling in furtherance of decisions producing legal or similarly significant effects has been in force since 2023 and is unaffected by any of this; the AI Act’s consumer notice in fact points at it. The Colorado Anti-Discrimination Act and federal discrimination statutes likewise applied throughout. A company that concluded it had nothing to do until the AI Act arrived was wrong for a reason that has nothing to do with the date.</p>\n  <h2><a name=\"how-to-check-the-current-date-yourself\" href=\"#how-to-check-the-current-date-yourself\"> </a> How to check the current date yourself</h2>\n  <p>This is a page about a moving number, so the most valuable thing on it is the method rather than the number. Three checks, in order of authority.</p>\n  <p>Start with the codified statute rather than a bill. Part 17 of Article 1 of Title 6 of the Colorado Revised Statutes is the thing that is in force; a bill is only the instrument that changed it. The Colorado General Assembly publishes the Revised Statutes, and the effective-date note that follows the part is authoritative in a way that a bill summary is not.</p>\n  <p>Then check for amending bills in the current session. Search the General Assembly’s bill search for measures touching sections 6-1-1701 to 6-1-1707. A bill that has passed both chambers but has not been signed is not law, and a bill introduced is not even close; coverage routinely blurs those stages, which is why the legislature’s own status field on the bill page is the thing to read.</p>\n  <p>Finally, watch for rulemaking. The Act authorises the Attorney General to promulgate rules, and rules can add dates of their own — a compliance date for a designated risk framework, for instance — that sit alongside the statutory effective date rather than replacing it. A cross-state view of how this is moving elsewhere is in <a href=\"https://multigrid.ai/learn/us-state-ai-laws-tracker\" target=\"_blank\" rel=\"noopener noreferrer\">the state AI law tracker</a>.</p>\n  <h2><a name=\"related\" href=\"#related\"> </a> Related</h2>\n  <ul>\n   <li><a href=\"https://multigrid.ai/learn/colorado-ai-act-duty-of-care\" target=\"_blank\" rel=\"noopener noreferrer\">Colorado’s AI Act: the Duty of Care Standard, Explained</a></li>\n   <li><a href=\"https://multigrid.ai/learn/colorado-ai-act-developer-deployer-duties\" target=\"_blank\" rel=\"noopener noreferrer\">Colorado’s AI Act: the Separate Developer and Deployer Duties</a></li>\n   <li><a href=\"https://multigrid.ai/learn/us-state-ai-laws-tracker\" target=\"_blank\" rel=\"noopener noreferrer\">Which US States Have a Binding AI-Specific Statute</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "解释科罗拉多州 AI 法案生效日期为何从 2026 年 2 月 1 日推迟至 2026 年 6 月 30 日、延期改变了什么和未改变什么，以及如何核实当前日期。",
+  "oneSentenceSummary": "解释科罗拉多州 AI 法案生效日期为何从 2026 年 2 月 1 日推迟至 2026 年 6 月 30 日、延期改变了什么和未改变什么，以及如何核实当前日期。",
+  "summary": "本文阐明了科罗拉多州人工智能法案（SB 24-205）的生效日期：原定 2026 年 2 月 1 日，后经科罗拉多州 2025 年 8 月特别会议通过的法案（SB25B-004）推迟至 2026 年 6 月 30 日。作者指出，此次延期并非起草修正，而是立法机关与州长在三大问题上公开分歧的结果：高风险系统定义中“实质因素”的范围、小型部署者的合规负担，以及科罗拉多州作为异类、无其他州采用同类制度。文章强调，延期仅改变了合规起算日期，并未改变实质义务；法案不具溯及力，但生效日仍在使用的系统不享受豁免。文中还提供了三步核实当前日期的实用方法：查阅成文法典、本会期修正法案、州检察长规则制定。",
+  "mainPoints": [
+    {
+      "point": "生效日期经特别会议法案 SB25B-004 从 2026 年 2 月 1 日推迟至 2026 年 6 月 30 日。",
+      "explanation": "绝大多数 2024 年版本的评论仍引用原日期。2025 年常规会期的修正案未获通过，因此唯一的折中方案是推迟日期但保留实质内容。"
+    },
+    {
+      "point": "延期是政治妥协，而非起草修正。",
+      "explanation": "三大争议驱动了延期：高风险系统“实质因素”范围、50 人豁免门槛下小型部署者的合规负担，以及科罗拉多州作为孤例、无其他州实施同类制度。"
+    },
+    {
+      "point": "延期仅改变合规起算日期，不改变实质内容。",
+      "explanation": "合理注意义务、算法歧视定义、影响评估内容、州检察长执法权均维持原法案规定。"
+    },
+    {
+      "point": "法案不具溯及力，但现有系统不享受豁免。",
+      "explanation": "执法不触及生效日前已终止的部署，但生效日仍在使用的系统立即受合理注意义务约束。"
+    },
+    {
+      "point": "通过一手来源而非二手评论核实日期。",
+      "explanation": "查阅成文法典 C.R.S. Part 17 条文、本会期修正法案、州检察长规则制定，因为日期已变更一次且未来可能再变。"
+    }
+  ],
+  "keyQuotes": [
+    "为争取修法时间而延期的法规，其条文预期将会变更。",
+    "延期赢得的是准备时间，而非豁免。",
+    "一家公司若认为在 AI 法案生效前无需采取任何行动，其错误的原因与日期无关。",
+    "其中最有价值的是方法，而非数字。"
+  ],
+  "tags": [
+    "AI 监管",
+    "AI 政策",
+    "AI 安全与对齐",
+    "合规",
+    "算法歧视"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1148,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786574360000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-13 06:39:20"
+}

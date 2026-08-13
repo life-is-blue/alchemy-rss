@@ -1,0 +1,56 @@
+{
+  "id": "RAW_39bbc48d81",
+  "title": "如何在 IntelliJ IDEA 中通过 ACP 使用 AI 智能体",
+  "url": "https://blog.jetbrains.com/idea/2026/08/how-to-use-ai-agents-in-intellij-idea-with-acp/",
+  "date": "2026-08-12 22:50:50",
+  "author": "Anton Arhipov",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>The <a href=\"https://agentclientprotocol.com/protocol/overview\" target=\"_blank\" rel=\"noopener\">Agent Client Protocol (ACP)</a> defines a common contract between a client – like IntelliJ IDEA – and an agent. IntelliJ IDEA already includes several ACP-compatible agents: Codex, Claude Agent, and Junie. Beyond these bundled options, the ACP Registry provides more choices, and teams can register internal or unlisted agents through acp.json.</p>\n  <p>The key idea is the <strong>boundary</strong>. IntelliJ IDEA remains the environment where you navigate the project, inspect code, and review changes. Across the ACP connection, each agent maintains its own models, behavior, authentication, and agent-side tools.</p>\n  <p>This makes the replaceable unit larger than an LLM. An ACP-compatible agent includes the full harness around the model: its planning logic, tools, model-routing behavior, and observability. Because ACP standardizes the boundary between the IDE and the agent, you can swap one agent for another smoothly, without changing how IntelliJ IDEA integrates with it.&nbsp;</p>\n  <h2 class=\"wp-block-heading\"><strong>ACP in a nutshell</strong></h2>\n  <p>ACP is often described as the LSP (Language Server Protocol) for coding agents. The analogy works because the integration problem is similar.</p>\n  <p>Before the LSP, supporting each language meant writing a separate editor integration. The <a href=\"https://blog.jetbrains.com/idea/2026/08/intellij-idea-goes-lsp/\">LSP</a> replaced that matrix with a single contract.</p>\n  <p>ACP applies the same idea to the connection between an editor or IDE and a coding agent. Any ACP-compatible agent can connect without requiring a bespoke plugin or&nbsp; private API for each pairing.</p>\n  <p>ACP originated from a <a href=\"https://blog.jetbrains.com/ai/2025/10/jetbrains-zed-open-interoperability-for-ai-coding-agents-in-your-ide/\">collaboration between JetBrains and Zed</a>, with both JetBrains IDEs and Zed targeted as clients from the start.</p>\n  <p>For local agents, IntelliJ IDEA starts a subprocess and communicates with it via JSON-RPC over standard input and output. During initialization, the IDE and the agent negotiate protocol versions and capabilities. Once connected, prompts flow to the agent, while progress updates, file operations, and permission requests return to the IDE.</p>\n  <p>Agents can still behave differently under that shared contract. During initialization, each one declares the optional capabilities it supports. Plans, modes, slash commands, session loading, terminal operations, and other features can differ between agents.</p>\n  <p>ACP carries the interaction between IntelliJ IDEA and the agent. Additional tools and context can reach the agent through MCP (Model Context Protocol), including user-configured servers and the integrated IntelliJ MCP server.</p>\n  <p>IntelliJ IDEA ships with several agents that require no manual ACP configuration, including Codex, Claude Agent, and Junie. Choose one and describe the task you want it to handle.</p>\n  <p>Each agent has its own workflow style, which may include a planning mode, slash commands, or a particular authentication flow. ACP lets IntelliJ IDEA host that interaction through a shared contract while preserving those differences.</p>\n  <p>Ask the agent to make a small change. After it edits a file, AI Chat shows the changed file in the conversation. Click it to open the diff in the editor beside the chat and inspect exactly what changed.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img fetchpriority=\"high\" decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/08/image3-1.png\" alt=\"\" class=\"wp-image-730827\">\n  </figure>\n  <p>That edit-and-review loop is the part worth keeping. If you switch agents later, having the loop inside the IDE prevents you from having to move the project or review changes in a separate tool.</p>\n  <p>The <a href=\"https://agentclientprotocol.com/registry\" target=\"_blank\" rel=\"noopener\">ACP Registry</a> contains additional ACP-compatible agents, together with the metadata IntelliJ IDEA needs to install them.</p>\n  <p>In IntelliJ IDEA, open <em>Settings | Tools | AI Assistant | Agents</em> and then choose an agent from the registry. The <a href=\"https://www.jetbrains.com/help/ai-assistant/acp.html#install-agent-from-registry\" target=\"_blank\" rel=\"noopener\">current ACP documentation</a> describes the complete installation flow.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/08/image-44.png\" alt=\"\" class=\"wp-image-730797\">\n  </figure>\n  <p>The agent’s configuration view also lets you expose the MCP servers configured in AI Assistant, the integrated IntelliJ MCP server, or both.</p>\n  <p>IntelliJ IDEA downloads the agent files when you apply the settings. The first session may ask you to authenticate using a method supported by that agent.</p>\n  <p>The registry also supplies the metadata used for updates and uninstallation. These operations remain in the <em>Agents</em> settings, so adding an agent does not require maintaining another IDE plugin.</p>\n  <p>Each registry agent retains its own license, service, credentials, and privacy terms. Check these details before granting repository access.</p>\n  <p>Registry agents are intended for broad distribution. An internal agent, however, often has a narrower role and should stay inside the company.</p>\n  <p>If an internal agent implements ACP, register it in ~/.jetbrains/acp.json. IntelliJ IDEA provides an <em>Add Custom Agent</em> action that creates and opens this file, but you can also edit the file directly.</p>\n  <p>The configuration below registers a hypothetical company migration agent:</p>\n  <pre class=\"EnlighterJSRAW\" data-enlighter-language=\"json\" data-enlighter-theme=\"\" data-enlighter-highlight=\"\" data-enlighter-linenumbers=\"\" data-enlighter-lineoffset=\"\" data-enlighter-title=\"\" data-enlighter-group=\"\">{\n  \"agent_servers\": {\n    \"Company Migration Agent\": {\n      \"command\": \"/opt/company/bin/migration-agent\",\n      \"args\": [\"acp\"]\n    }\n  }\n}\n</pre>\n  <p>Each key under agent_servers becomes the agent’s display name. The command value must contain the full path to the executable that IntelliJ IDEA will start. Place the arguments required to activate that agent’s ACP mode in args; the exact values come from the agent’s documentation.</p>\n  <p>Use env when the process needs environment variables. Many agents expect you to authenticate through their CLI first and reuse credentials stored in the agent’s user configuration. If an agent accepts an API key through env, follow its documentation and avoid committing the file or its secrets to a repository.</p>\n  <p>Save <code>acp.json</code> and then select the configured agent in IntelliJ IDEA.</p>\n  <p>If any ACP-compatible agents are already installed on the machine, the IDE will detect them and offer to add them to the configuration.</p>\n  <p>Teams may want different agents for different kinds of work. ACP gives those agents a common way to connect to IntelliJ IDEA:</p>\n  <ul class=\"wp-block-list\">\n   <li>Connecting an ACP-compatible agent through `<code>acp.json</code>` avoids developing and maintaining a separate IntelliJ IDEA plugin.</li>\n   <li>Navigation, editing, and diff review remain in IntelliJ IDEA while developers choose the agent for the work.</li>\n   <li>If an agent’s service or model provider is unavailable, developers can switch to another configured agent and continue working in the same IntelliJ IDEA project.</li>\n  </ul>\n  <p>Use an agent already available in IntelliJ IDEA, install one from the ACP Registry, or register an internal agent in <code>acp.json</code>.</p>\n  <p>ACP turns the coding agent from an IDE commitment into a replaceable choice you can revisit at any time.</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/idea/2026/08/top-5-ai-features-in-intellij-idea/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Top 5 AI Features in IntelliJ IDEA</a>\n  </div>\n  <div class=\"banner\">\n   <a href=\"https://lp.jetbrains.com/intellij-idea-conf-2026/?utm_source=blog_banner&amp;utm_medium=idea&amp;utm_campaign=intellijideaconf\"><img src=\"https://admin.blog.jetbrains.com/wp-content/uploads/2026/07/ij-conf-2026-970x250-2x.png\"></a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍如何在 IntelliJ IDEA 中使用兼容 ACP 的 AI 智能体，涵盖内置智能体、ACP 注册表以及通过 acp.json 注册内部智能体。",
+  "oneSentenceSummary": "本文介绍如何在 IntelliJ IDEA 中使用兼容 ACP 的 AI 智能体，涵盖内置智能体、ACP 注册表以及通过 acp.json 注册内部智能体。",
+  "summary": "IntelliJ IDEA 的 AI Assistant 现已支持代理客户端协议（ACP）——这是 IDE 与编码智能体之间的标准契约。文章通过类比 LSP 来解释 ACP 的工作原理：无需为每个智能体构建定制集成，任何兼容 ACP 的智能体都可以通过同一协议连接。IntelliJ IDEA 内置了 Codex、Claude Agent 和 Junie，还可以通过设置从 ACP 注册表安装更多智能体。团队还可以通过编辑 acp.json 来注册内部智能体，提供可执行命令和参数。文章涵盖了配置细节，包括 MCP 服务器的暴露、按智能体的身份验证与隐私考虑，以及管理智能体更新和卸载。它强调 IDE 仍然是导航、编辑和 diff 审查的环境，而智能体保留自己的模型、工具和行为。这使得智能体可替换，而无需改变 IDE 工作流程。",
+  "mainPoints": [
+    {
+      "point": "ACP 标准化了 IDE 与编码智能体之间的边界，使智能体可替换。",
+      "explanation": "与 LSP 之于语言类似，ACP 提供单一契约，任何兼容智能体都能在无需定制插件的情况下接入，同时保留各智能体自身的模型、工具和身份验证。"
+    },
+    {
+      "point": "IntelliJ IDEA 内置了 Codex、Claude Agent 和 Junie，并支持从 ACP 注册表安装更多智能体。",
+      "explanation": "注册表智能体通过设置安装，并保留各自的许可证、凭据和隐私条款；同一视图也负责管理更新和卸载。"
+    },
+    {
+      "point": "内部智能体可通过 acp.json 在本地注册，而无需构建自定义 IDE 插件。",
+      "explanation": "通过一个指定命令和参数的 JSON 条目，团队可以接入公司专属智能体；IDE 还能检测已安装的兼容 ACP 的智能体，并提示添加它们。"
+    },
+    {
+      "point": "将编辑与审查循环保留在 IDE 内，是 ACP 集成的一个关键优势。",
+      "explanation": "在 IntelliJ IDEA 中审查 diff 和变更，避免了移动项目或切换到独立工具，即便在不同智能体之间切换，依然如此。"
+    }
+  ],
+  "keyQuotes": [
+    "ACP 将编码智能体从 IDE 的一种绑定承诺，转变为可随时重新审视的可替换选择。",
+    "关键思路在于边界。IntelliJ IDEA 仍然是浏览项目、检查代码和审查变更的环境。",
+    "这个编辑与审查循环才是值得保留的部分。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "AI 编程",
+    "IntelliJ IDEA",
+    "ACP",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 972,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786546250000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-12 22:50:50"
+}

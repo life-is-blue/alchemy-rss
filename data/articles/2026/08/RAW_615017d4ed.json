@@ -1,0 +1,61 @@
+{
+  "id": "RAW_615017d4ed",
+  "title": "科罗拉多州《人工智能法案》：注意义务标准解析",
+  "url": "https://dev.to/multigrid/colorados-ai-act-the-duty-of-care-standard-explained-1gpk",
+  "date": "2026-08-13 06:39:05",
+  "author": "Multigrid",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Colorado’s AI Act does not tell you to test your model in a particular way. It imposes a duty of reasonable care, which is a standard rather than a rule, and standards are met by evidence of judgement rather than by ticking a box. That difference is the whole subject of this page.</p>\n  <h2><a name=\"the-standard-phrase-by-phrase\" href=\"#the-standard-phrase-by-phrase\"> </a> The standard, phrase by phrase</h2>\n  <p>Senate Bill 24-205, signed on 17 May 2024 and codified in Part 17 of Article 1 of Title 6 of the Colorado Revised Statutes (sections 6-1-1701 onwards), imposes essentially the same core duty twice: a developer of a high-risk artificial intelligence system, and a deployer of one, must each use reasonable care to protect consumers from any known or reasonably foreseeable risks of algorithmic discrimination. The bill and its history are on the <a href=\"https://leg.colorado.gov/bills/sb24-205\" target=\"_blank\" rel=\"noopener noreferrer\">Colorado General Assembly’s own bill page</a>.</p>\n  <p>Four phrases carry the weight.</p>\n  <ul>\n   <li><strong>“Reasonable care”</strong> is a comparative standard, not an absolute one. It asks what a reasonable developer or deployer in your position would have done, which means it moves as industry practice moves. A technique that was exotic in 2024 and routine in 2027 becomes part of what reasonable care requires without any amendment to the statute.</li>\n   <li><strong>“Known or reasonably foreseeable”</strong> is the phrase that decides how much investigation you owe. It covers risks you actually knew about — from testing, from complaints, from a developer’s disclosure — and risks you would have known about had you looked in the way a reasonable party looks. Not looking is not a defence; it is the classic way to fail a foreseeability test.</li>\n   <li><strong>“Protect consumers from”</strong> is a duty of mitigation, not a guarantee of outcome. The statute does not say a system must produce no disparate outcome. It says you must take reasonable steps against the risk of one.</li>\n   <li><strong>“Algorithmic discrimination”</strong> is defined in the statute, and the definition is narrower than the ordinary meaning — it is tied to unlawful differential treatment or impact on protected characteristics. That definition has <a href=\"https://multigrid.ai/learn/colorado-ai-act-algorithmic-discrimination-definition\" target=\"_blank\" rel=\"noopener noreferrer\">its own page</a> because the word “unlawful” inside it does more work than anything else in the Act.</li>\n  </ul>\n  <p>Nothing here is legal advice. Whether your conduct meets a reasonable-care standard is exactly the kind of question that is decided on your specific facts, and it should be assessed with counsel rather than from a page like this one.</p>\n  <h2><a name=\"why-it-is-shaped-like-negligence\" href=\"#why-it-is-shaped-like-negligence\"> </a> Why it is shaped like negligence</h2>\n  <p>Reasonable care is the language of tort. Colorado did not, however, create a negligence action: the Act is enforced as a deceptive trade practice under the Colorado Consumer Protection Act. What it borrows is the structure of a negligence standard — a duty defined by reasonableness, breach assessed against what a reasonable party would do, and foreseeability limiting the scope of what you must guard against.</p>\n  <p>That choice has a practical consequence which is easy to miss. A rules-based statute is satisfied by compliance: do the listed things and you are done. A standards-based statute is satisfied by justification: you must be able to explain why what you did was reasonable given what you knew. Contemporaneous documentation is therefore not administrative overhead under this Act; it is the substance of the defence. A mitigation you performed and did not record is very hard to prove two years later, and the reasonableness of a decision is judged on what you knew at the time, which only a contemporaneous record can establish.</p>\n  <h2><a name=\"the-presumption-shifts-the-work-not-the-duty\" href=\"#the-presumption-shifts-the-work-not-the-duty\"> </a> The presumption shifts the work, not the duty</h2>\n  <p>Both the developer section and the deployer section pair the duty with a rebuttable presumption: a party that does the specific things the section lists is presumed to have used reasonable care. That is a burden-allocation device, not a safe harbour. The presumption can be rebutted, and doing the listed things badly is unlikely to sustain it.</p>\n  <p>The deployer’s route to the presumption runs through a risk management policy and programme, which the statute says must be reasonable in view of guidance and standards including the NIST AI Risk Management Framework, ISO/IEC 42001, or another nationally or internationally recognised framework, or one designated by the Attorney General. That is an unusual piece of drafting: it makes a voluntary standard into the reference point for a statutory duty without mandating certification to it. See <a href=\"https://multigrid.ai/learn/nist-ai-rmf-four-functions\" target=\"_blank\" rel=\"noopener noreferrer\">the NIST framework’s four functions</a> and <a href=\"https://multigrid.ai/learn/iso-42001-certification-audit-scope\" target=\"_blank\" rel=\"noopener noreferrer\">what ISO/IEC 42001 certification actually covers</a>, and <a href=\"https://multigrid.ai/learn/colorado-ai-act-rebuttable-presumption\" target=\"_blank\" rel=\"noopener noreferrer\">the presumption page</a> for how it is pleaded.</p>\n  <p>Separately, the Act provides an affirmative defence where a party discovers and cures a violation through its own internal testing — including adversarial testing or red-teaming — or through feedback it acts on, and is otherwise in compliance with a recognised risk management framework. An affirmative defence is not the same thing as a presumption: it operates after a violation is established, and the party asserting it carries the burden. The two together create a deliberate incentive to look for problems, because finding one is better protected than not having looked.</p>\n  <h2><a name=\"who-can-sue-on-it\" href=\"#who-can-sue-on-it\"> </a> Who can sue on it</h2>\n  <p>The Act gives exclusive enforcement authority to the Colorado Attorney General and creates no private right of action. That is a significant limitation on the duty of care in practice: an individual who believes a hiring model discriminated against them cannot bring a claim under this Act. They may still have claims under Title VII of the Civil Rights Act of 1964, the Colorado Anti-Discrimination Act, or the Fair Credit Reporting Act, none of which the AI Act displaces. The Act also authorises the Attorney General to promulgate rules, so parts of the standard may be made more concrete by rulemaking rather than by amendment. This is covered further in <a href=\"https://multigrid.ai/learn/colorado-ai-act-enforcement-ag-only\" target=\"_blank\" rel=\"noopener noreferrer\">the enforcement page</a>.</p>\n  <h2><a name=\"what-meeting-it-looks-like-in-practice\" href=\"#what-meeting-it-looks-like-in-practice\"> </a> What meeting it looks like in practice</h2>\n  <p>Because the standard is about justified judgement, the artefacts that evidence it are the ones that record judgement being exercised over time. In rough order of how often they are the thing that is missing: a written record of what risks of algorithmic discrimination were identified for this specific use, and by whom; the testing that was done, including what was measured and against which subgroups, with the results kept whether or not they were good; the mitigations chosen and, importantly, the ones considered and rejected with the reason; the post-deployment monitoring arrangement and what it has actually surfaced; and the review cadence, since a risk that was not foreseeable at launch may be known by the second quarter.</p>\n  <p>Note what is not on that list. Certification to a standard is not required by the Act. A vendor’s assurance that its model is unbiased is not a mitigation you performed; at best it is an input to your own assessment, and a deployer that relies on it without more has a thin story about reasonable care. The disclosures a developer must hand a deployer are designed to be that input, which is why the division between the two roles matters so much — see <a href=\"https://multigrid.ai/learn/colorado-ai-act-developer-deployer-duties\" target=\"_blank\" rel=\"noopener noreferrer\">the developer and deployer duties side by side</a>.</p>\n  <p>Finally, the duty is continuing. It is not discharged at procurement and it does not end at launch. The Act pairs it with an obligation to notify the Attorney General within ninety days of discovering that a system has caused or is reasonably likely to have caused algorithmic discrimination, which is the point at which an internal finding becomes an external one.</p>\n  <h2><a name=\"related\" href=\"#related\"> </a> Related</h2>\n  <ul>\n   <li><a href=\"https://multigrid.ai/learn/colorado-ai-act-developer-deployer-duties\" target=\"_blank\" rel=\"noopener noreferrer\">Colorado’s AI Act: the Separate Developer and Deployer Duties</a></li>\n   <li><a href=\"https://multigrid.ai/learn/colorado-ai-act-rebuttable-presumption\" target=\"_blank\" rel=\"noopener noreferrer\">Colorado's AI Act: the Rebuttable Presumption and the NIST Defence Are Not the Same Thing</a></li>\n   <li><a href=\"https://multigrid.ai/learn/colorado-ai-act-enforcement-ag-only\" target=\"_blank\" rel=\"noopener noreferrer\">Colorado's AI Act: Enforcement Without a Private Right of Action</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本文解释了科罗拉多州《人工智能法案》对高风险 AI 系统的合理注意义务，说明它为何是一项标准而非规则，以及在实践中如何满足该义务。",
+  "oneSentenceSummary": "本文解释了科罗拉多州《人工智能法案》对高风险 AI 系统的合理注意义务，说明它为何是一项标准而非规则，以及在实践中如何满足该义务。",
+  "summary": "参议院第 24-205 号法案使科罗拉多州成为全美首批制定州级 AI 反歧视法规的州之一，要求高风险 AI 系统的开发者与部署者运用合理注意义务，保护消费者免受已知或合理可预见的算法歧视风险。本文解释了为何该义务是一项标准而非规则：合规是通过理由说明和同期记录来证明的，而不是靠打勾。文章拆解了四个决定性短语——合理注意、已知或合理可预见、保护消费者免受、算法歧视——随后考察了类过失结构、可反驳推定及其与积极抗辩的区别、科罗拉多州总检察长独家执法且无私人诉权，以及随时间推移证明该义务的实际记录留存做法。文章还提醒，认证和供应商保证不能替代部署者自身记录在案的评估。",
+  "mainPoints": [
+    {
+      "point": "合理注意是一个随行业实践演进的比较性标准。",
+      "explanation": "该义务要求考量一个处于你位置的合理开发者或部署者会怎么做，因此随着时间成为常规的技术，无需修改法规就会成为标准的一部分。"
+    },
+    {
+      "point": "以标准为基础的法规通过理由说明来满足，而非靠打勾清单。",
+      "explanation": "合规是通过解释在当时所知信息下你的行为为何合理来证明的，这使得同期记录成为抗辩的实质内容，而非行政负担。"
+    },
+    {
+      "point": "可反驳推定转移的是举证责任，而非基础义务。",
+      "explanation": "遵循所列风险管理实践会形成一项可被反驳的合理注意推定，这不同于发现并纠正违规的积极抗辩。"
+    },
+    {
+      "point": "只有科罗拉多州总检察长可以执行该法案；不存在私人诉权。",
+      "explanation": "认为自己受到歧视的个人不能依据该 AI 法案提起诉讼，不过他们仍可能根据《民权法案第七章》《科罗拉多州反歧视法》或《公平信用报告法》提出索赔。"
+    },
+    {
+      "point": "履行该义务需要记录长期行使的判断。",
+      "explanation": "保留已识别风险、所做测试（包括不佳结果）、选择与舍弃的缓解措施、监测发现以及审查节奏的记录；认证和供应商保证不能替代你自己的评估。"
+    }
+  ],
+  "keyQuotes": [
+    "因此，在该法案下，同期记录并非行政负担，而是抗辩的实质内容。",
+    "以标准为基础的法规通过理由说明来满足：你必须能够解释，鉴于你所知的信息，你为何采取的行动是合理的。",
+    "不去查找并不能成为抗辩理由；这是未通过可预见性测试的典型方式。",
+    "两者合在一起，构成了一种有意的激励，促使人们主动寻找问题，因为发现问题比压根不去查看更能得到保护。"
+  ],
+  "tags": [
+    "AI 监管",
+    "AI 治理",
+    "算法歧视",
+    "合规",
+    "政策分析"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 85,
+  "wordCount": 1252,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786574345000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-13 06:39:05"
+}
