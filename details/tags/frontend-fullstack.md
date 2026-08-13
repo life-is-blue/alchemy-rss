@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-13 09:04:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-13 12:00:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -728,25 +728,19 @@
 
 ### [如何使用-JavaScript-构建基于浏览器的-PDF-滤镜工作室](https://www.freecodecamp.org/news/build-pdf-filter-studio-javascript/)
 
-2026-08-12 23:43:14 | 标签: PDF.js, Canvas API, PDF-lib, JavaScript, 前端与 Web
-
-> 本教程逐步讲解如何构建一个完全在浏览器中运行的完整 PDF 滤镜工作室。首先介绍项目结构和所需库：PDF.js 用于渲染页面，Canvas API 用于应用亮度、对比度、模糊、饱和度、灰度、棕褐色和色相旋转等滤镜，PDF-lib 用于生成结果文件。文章解释了如何构建上传界面、显示和导航 PDF 页面、创建可复用的滤镜层、应用预设效果、选择目标页面，然后生成新的可下载 PDF。关键实现细节包括：将滤镜存储为数组并转换为单个 Canvas 滤镜字符串，在滑块变化时更新预览，以及仅处理当前页、全部页面或指定页面。由于所有处理都在本地进行，上传的文档永远不会离开用户设备，兼顾速度与隐私。本教程结合代码...
+2026-08-12 23:43:14
 
 
 
 ### [Guillaume-Técher](https://guillaumetech.github.io/posts/jpg-scaling-chrome/)
 
-2026-08-12 22:00:54 | 标签: JPEG, Chrome, 图像渲染, 优化, Web 开发
-
-> 作者调查了为什么一个小 logo 在 Chrome 中比在 Firefox 中看起来更粗。调查揭示，Chrome（通过 Skia 和 libjpeg-turbo）在渲染小型 JPEG 时使用了一种称为“部分 IDCT 缩放”的优化。它并非将大图完全解码到内存中，而是只解码缩小版本所需的低频系数（“常量分量”）。虽然这显著减少了内存使用并加快了解码速度，但丢弃了高频信息，如锐利边缘和细微渐变。这种细节损失会使小图标看起来“模糊”或比预期更粗。作者总结道，JPEG 从根本上是为照片内容设计的，并建议对 logo 这类小型清晰图形使用 SVG。
+2026-08-12 22:00:54
 
 
 
 ### [使用-Three.js、TSL-和-Three-Start-创建交互式-3D-集群](https://tympanus.net/codrops/2026/08/12/creating-an-interactive-3d-cluster-with-three-js-tsl-and-three-start/)
 
-2026-08-12 21:10:49 | 标签: Three.js, WebGPU, 3D Graphics, TSL, Frontend & Web
-
-> 本教程引导读者创建一种交互式 3D 集群效果：一个旋转的正二十面体，其面经过挤出处理，并在噪声函数的驱动下产生有机缩放，最后辅以抖动后处理效果。Francesco Michelini 解释了如何使用全新的 three-start 库快速搭建场景，将应用程序逻辑拆分为模块和 Object3D 组件（例如可复用的 Spin 行为），以及如何使用 BatchedMesh 基于正二十面体构建集群。随后，他演示了如何通过沿面法线添加偏移顶点来手动挤出每个面，利用 TSL 噪声节点动画化实例缩放，并通过法线与指向网格中心方向的点积来为面着色。最后一部分通过对隐藏的内部背面网格进行射线检测，并使用 unif...
+2026-08-12 21:10:49
 
 
 

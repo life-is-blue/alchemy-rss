@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-13 09:04:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-13 12:00:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3685,17 +3685,13 @@
 
 ### [组合字符与预组合字符：实际差异在哪里](https://dev.to/multigrid/combining-characters-and-precomposed-characters-what-actually-differs-1302)
 
-2026-08-13 06:40:55 | 标签: Unicode, 字符串规范化, 文本编码, 软件工程, 后端开发
-
-> Unicode 允许同一个可见字形被编码为单个预组合码点（U+00E9），或由基字符加组合标记（U+0065 U+0301）编码。这些规范等价形式比较不相等、哈希不同，并破坏唯一性、搜索、文件名、截断和正则表达式逻辑。文章解释了 JavaScript、Python 和 Go 中字节级和代码单元级的差异，说明了规范组合类如何对多个标记排序，并说明组合为何刻意不完整。文章建议在系统边界规范化为 NFC，指出深层堆栈中的规范化是脆弱的，并补充了一个不太明显的成本：提示词缓存会把 NFC 和 NFD 前缀视为不同的缓存项。
+2026-08-13 06:40:55
 
 
 
 ### [初学者反向传播详解（第三部分）：反向传播究竟是如何工作的](https://towardsdatascience.com/backpropagation-explained-for-beginners-part-3-how-backpropagation-really-works/)
 
-2026-08-12 23:00:00 | 标签: 反向传播, 神经网络, 深度学习, 机器学习, 教育
-
-> 这是关于反向传播的入门系列文章的第三部分。文章首先观察到，如果独立计算每个参数的梯度，会重复计算许多中间偏导数。作者将反向传播定义为一种通过链式法则存储并复用这些值的方法，并将其与朴素梯度计算法进行了对比。随后，文章回顾了前向传播过程，并详细讲解了反向传播：首先计算 dL/dy_hat，然后计算输出层参数（w3， w4， b3）的梯度，最后通过 ReLU 非线性函数计算隐藏层参数（w1， b1， w2， b2）的梯度。解释侧重于数学公式，重点强调了为什么这种反向顺序能提高计算效率。
+2026-08-12 23:00:00
 
 
 
@@ -15359,41 +15355,31 @@
 
 ### [Google-Play-应用商店正式上架第一款「第三方应用商店-Aptoide-Games」](https://www.appinn.com/google-play-aptoide-games-third-party-app-store/)
 
-2026-08-12 22:47:52 | 标签: Android, Google Play, 应用商店, Epic Games, 反垄断
-
-> 文章报道 Google Play 正式上架首款第三方应用商店 Aptoide Games（目前仅美区），这是 Epic Games 反垄断诉讼胜诉后的直接结果。Google 同步上线「第三方应用商店」专题页，预计 Epic Games Store、亚马逊 Appstore 等将陆续入驻。作者指出 Google 正在推进两个看似矛盾的方向：一是被迫开放应用分发渠道，二是主动要求所有 Android 应用开发者完成身份认证（即使通过第三方商店分发），未验证开发者的应用安装将面临额外阻碍。这预示着未来 Android 生态将形成「多商店共存、身份统一由 Google 管理」的新模式。
+2026-08-12 22:47:52
 
 
 
 ### [Spotify-构建外部索引，实现其数据湖上的低延迟点查询](https://www.infoq.com/news/2026/08/spotify-data-lake-point-queries/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-12 22:26:00 | 标签: 数据湖, Apache Parquet, Apache Iceberg, 系统设计, 数据库索引
-
-> Spotify 开发了 Random Access Parquet (RAP)，旨在解决从数据湖中检索单个记录效率低下的问题，因为像 Trino 和 BigQuery 这样的引擎通常针对分析型扫描进行了优化。通过实现将键映射到特定 Parquet 文件位置和行偏移量的外部索引，RAP 使在线服务和 AI 应用能够以毫秒级的延迟进行交互式查找。该架构与 Apache Iceberg 集成，并采用了多种存储优化技术——包括交错值列、按查找键排序以及二级索引（哈希和排序）——以最大限度地减少存储操作，并消除在不同存储系统之间维护重复数据集的需求。
+2026-08-12 22:26:00
 
 
 
 ### [KidScreen：专为孩子打造的视频架](https://kidscreen.app)
 
-2026-08-12 19:44:40 | 标签: 家长控制, 数字健康, 生产力工具, YouTube, 儿童安全
-
-> KidScreen 通过将传统的 YouTube 算法推荐流替换为完全由家长策划的“视频架”，为儿童提供了一个受控的观看环境。该服务取消了滚动和搜索功能，确保儿童只能访问特定的、经批准的内容。这款工具是免费的，旨在帮助家庭掌控屏幕使用时间和内容消费。
+2026-08-12 19:44:40
 
 
 
 ### [采用-CHERI-实现内存安全与细粒度隔离](https://www.infoq.com/presentations/cheri-memory-safety-compartmentalization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-12 19:00:00 | 标签: CHERI, 内存安全, 计算机体系结构, 硬件安全, C 语言编程
-
-> 本文深入介绍了 CHERI（能力硬件增强的 RISC 指令），这是一种旨在解决内存安全问题的计算机体系结构范式转变。与传统架构中指针只是整数不同，CHERI 将指针视为受硬件保护的“能力”，携带边界、权限和唯一标签位等元数据。这使得硬件能够在指令级别强制执行空间安全与时间安全。演讲者强调了 CHERI 的多功能性，从大规模应用核心到微控制器（CHERIoT），并着重说明其实际优势：它可以将缓冲区溢出等未定义行为转化为确定性的硬件陷阱，从而追溯性地加固大量遗留 C/C++ 代码库，避免完全重写语言所带来的天文数字般成本。
+2026-08-12 19:00:00
 
 
 
 ### [Woxi-—-用-Rust-实现的-Wolfram-Language-解释器](https://woxi.ad-si.com)
 
-2026-08-12 18:06:29 | 标签: Wolfram Language, Rust, 解释器, 开发者工具, Jupyter
-
-> Woxi 是一个用 Rust 编写的 Wolfram Language 解释器，设计为完全在浏览器中运行，数据不会离开机器。这个项目页面介绍了核心 Playground 和一系列前端：一个扩展的并排 Playground、一个支持 `woxi eval` 和 `.wls` 脚本的命令行工具、一个随附 JupyterLite 并可在浏览器中运行笔记本的 Jupyter 内核，以及 Woxi Studio——一个用于 `.nb` 文件的原生笔记本编辑器，支持导出为 `.ipynb`、Markdown、LaTeX、Typst 和 PDF 格式。该页面是一份简洁的产品概览，而非技术深度解析。
+2026-08-12 18:06:29
 
 
 
@@ -39325,11 +39311,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 

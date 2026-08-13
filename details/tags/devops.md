@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-13 09:04:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-13 12:00:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -590,17 +590,13 @@
 
 ### [GitHub-可用性报告：2026-年-7-月](https://github.blog/news-insights/company-news/github-availability-report-july-2026/)
 
-2026-08-13 06:17:35 | 标签: GitHub, 事件报告, 云基础设施, Azure 迁移, DevOps
-
-> 这份来自 GitHub 的月度可用性报告开篇承认，2026 年 8 月 6 日的 GitHub Actions 事件在影响和持续时间上均不可接受，并指出 launch service 组件——仍运行在 GitHub 自己的数据中心而非 Azure 上——是恢复延迟的原因之一。GitHub 承诺加速将 Actions 迁移至 Azure，以获得更大的容量余量。  报告的主体内容介绍了 7 月在减少共享基础设施依赖方面取得的进展。Azure Central US 的 monolith 读流量在 7 月 28 日达到 52.75% 的峰值，Git 流量达到 47%，29% 的仓库现在在 Centra...
+2026-08-13 06:17:35
 
 
 
 ### [Netflix-采用云原生作业队列系统-Kueue-以取代自研方案](https://www.infoq.com/news/2026/08/netflix-kueue-kubernetes-batch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-12 22:30:00 | 标签: Kubernetes, Kueue, 云原生, 批处理, 基础设施迁移
-
-> Netflix 已将其批处理计算管理从定制的 Compute Managed Batch (CMB) 系统转向 Kueue，这是一个开源的 Kubernetes 原生作业队列系统。此次迁移的动力源于对更紧密 Kubernetes 集成的需求，以及利用开源生态系统快速创新的愿望。为了确保无缝过渡，Netflix 在两个系统之间保持了 API 一致性，并采用了基于租户绑定的迁移策略。该公司现在通过 Kueue 管理数百万个批处理工作负载，通过基于抢占的公平共享实现了更好的资源利用率，并为将复杂的遗留基础设施迁移到云原生标准提供了蓝图。
+2026-08-12 22:30:00
 
 
 
