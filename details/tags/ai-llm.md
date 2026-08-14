@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-14 09:04:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-14 11:56:42 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [DeepSeek-Harness-开发者预览版：一切皆插件](https://mp.weixin.qq.com/s?__biz=MzY4NzM3MTkxOQ==&mid=2247483698&idx=1&sn=b7c8d125ac4fdfad1c4a5daedc73bcb8)
 
-2026-08-13 20:57:00 | 标签: AI Agent, 开源, AI 编程, 插件架构, DeepSeek
-
-> DeepSeek Harness 团队推出了其开发者预览版 v0.1，并以 MIT 协议开源。该项目核心设计理念为「一切皆插件」，基于 Cordis 插件系统，将模型、工具、技能、沙箱、调度等所有 Agent 能力组件化，允许开发者在不修改源码的情况下自由替换与扩展。此外，系统提供了标准、PTC（程序化工具调用）、极简和创造四种运行模式，并引入了仅追加的会话日志设计，确保 Agent 的运行轨迹可追溯、可回放。
+2026-08-13 20:57:00
 
 
 
 ### [多智能体系统的模式与问题](https://www.anthropic.com/research/multiagent-systems)
 
-2026-08-13 09:08:37 | 标签: AI 智能体, 多智能体系统, AI 安全, 前沿模型, 协调
-
-> 本文来自 Anthropic 的 Frontier Red Team，报告了关于前沿 AI 模型在多智能体环境中行为的受控实验。研究识别出四种关键失效模式：(1) 协调失效——早期模型（Sonnet 4.6、Opus 4.6）产生了相互冲突的 PR，合并率很低；较新的模型（Opus 4.8、Mythos Preview）通过隔离工作来避免冲突，只有 Sonnet 5 同时实现了高代码共享和高合并吞吐量。(2) 从众失效——上下文相同的智能体会做出相同的决策，导致系统性坍缩：30 个智能体中有 18 个创建了相同的 git 分支名，多个智能体不约而同地将故事命名为《制图师的最后委托》，在伯特兰定...
+2026-08-13 09:08:37
 
 
 
@@ -5268,41 +5264,31 @@
 
 ### [科技爱好者周刊第-408-期:-你需要知道的-AI-缓存知识](http://www.ruanyifeng.com/blog/2026/08/weekly-issue-408.html)
 
-2026-08-14 07:54:49 | 标签: AI 缓存, 大模型成本, Token 定价, AI Agent, 科技动态
-
-> 本期周刊以「AI 缓存知识」为主题，详细解释了大模型输入 Token 的缓存机制：模型处理提示词时需将 Token 转为向量并计算注意力关系，缓存可避免重复计算前缀内容，从而大幅降低成本（如 DeepSeek V4 Flash 缓存命中价格仅为未命中的 1/50）。文章还介绍了缓存的时间期限（Anthropic 5 分钟、DeepSeek/OpenAI 10-30 分钟、Google 1 小时内逐步失效）及保持缓存有效的方法（如每 4 分钟自动激活请求）。此外，周刊包含科技动态（蓝牙识别交通摄像头、声波灭火、无舷窗飞机、最长视线）、文章推荐（任务执行工具、GitHub 文件上传、Canvas ...
+2026-08-14 07:54:49
 
 
 
 ### [使用-OpenAI-加速-GPT-5.6-Sol-超速模式](https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai)
 
-2026-08-14 02:10:02 | 标签: LLM, GPT-5.6 Sol, 超速模式, AI 推理, 晶圆级引擎
-
-> Cerebras 与 OpenAI 推出超速模式，这一由 Cerebras 提供动力的新 API 层将 GPT-5.6 Sol 的输出提升至每秒 750 token，且不影响质量。它解决了速度与智能的权衡，使前沿 AI 能够用于时间紧迫的任务。基准测试显示，超速模式在 “Humanity’s Last Exam”（2，500 道博士级问题）上用时 11h11m，而 Fable 5 为 78h27m（快 7 倍），并在 GDP‑Val 上实现 5.6 倍加速且无质量损失。速度优势来源于 Cerebras 的晶圆级引擎，它通过将权重保留在芯片上消除内存带宽瓶颈。超速模式目前对部分客户进行有限预览，...
+2026-08-14 02:10:02
 
 
 
 ### [如何用-10-美元在一个周末为创客打造一个包含-50-万域名的搜索引擎](https://alexmorleyfinch.github.io/marlin/history/v1/article/the_birth.html)
 
-2026-08-13 21:36:19 | 标签: 搜索引擎, 网络爬虫, LLM, 独立黑客, Gemma
-
-> 这篇文章详细介绍了作者如何为创客打造一个个人搜索引擎——在一个周末内以约 10 美元的成本索引了 560，183 个主页。作者对企业 SEO 垃圾内容感到厌烦，于是设计了一个轻量级系统：一个抓取器获取主页，一个使用小型 LLM（Gemma 4B）的工作器生成元数据（名称、摘要、分类、标签），一个管理器阻止垃圾域名，以及一个简单的 UI。关键优化包括优先处理来自目标分类（如作品集、同人志、独立软件）的链接，限制高流量平台（如 Tumblr、Neocities）的子域名数量，并避免存储完整 HTML 页面。GPU 租用（每小时 0.35 美元，每分钟处理 600 个摘要）是主要成本。挑战包括分类体...
+2026-08-13 21:36:19
 
 
 
 ### [Agent-越改越乱之后，我用评测和轨迹把它拉回来了](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511106&idx=1&sn=e3e481953f140ab1a9afb73f7c40221f)
 
-2026-08-13 19:21:00 | 标签: AI Agent, AI 工作流, 模型评测与基准, AI 编程, 安全审计
-
-> 本文是阿里安全工程师关于 Agent skill 迭代的深度实践总结。作者从「改 skill 像打地鼠」的痛点出发，提出一套结果驱动自进化流程：以能被客观判定对错的任务为适用前提，在真实评测平台 sec-code-bench 上导出 results.jsonl 与 sessions/ 轨迹日志，经过 trace_parser 三层压缩后，由确定性规则完成联合归因。系统刻意不在诊断阶段使用 LLM，因为实验显示 LLM 判断稳定性差；LLM 只负责把归因结果转成最小 unified diff，再经 taboo 黑名单、结构检查和反口号文本校验三层过滤。修改必须通过 target、guardrai...
+2026-08-13 19:21:00
 
 
 
 ### [从“工具”到“同事”——AI-时代的产品进化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290726&idx=2&sn=98e2ffcf5984ab107541b64cc90e4eab)
 
-2026-08-13 14:30:00 | 标签: AI 产品设计, 产品创新, AI Agent, 工作流, 职业成长
-
-> 文章记录了产品专家苏杰在 QCon 2026 大会上的一场实验性分享，其演讲主体由 AI 数字分身完成。作者提出 AI 正在解构产品创新的既有范式：未来产品将拆分为面向 AI 的 to A（执行层）与面向人类的 to C（决策与体验层）；产品形态从“预制菜式”的固态软件转向“现炒式”的轻产品与生成系统；创新方法论则通过“赛博闭环”大幅降低试错成本。文章强调，在 AI 时代，人类的核心价值在于提出问题、评判决策与承担责任，应成为具备跨域能力的“碳基全栈”，利用 AI 这一“新同事”重构业务与工作流。
+2026-08-13 14:30:00
 
 
 
@@ -9994,9 +9980,7 @@
 
 ### [今天的-AI-已经够用，缺的是有领导力的管理层](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691571709&idx=1&sn=6abc74ab37b837951db9bc278eb84b34)
 
-2026-08-13 12:00:00 | 标签: AI 经济, 规模化 AI, 组织管理, 全要素生产率, Token
-
-> 文章采访了 Uber 前首席经济学家、现任沃尔玛首席经济学家兼 Anthropic 经济顾问委员会成员 John List，围绕 AI 在企业中的规模化展开深度讨论。List 认为“Tokenmaxxing”失败的根本原因是把使用量当作目标，缺乏正确的指标和领导力。真正的价值在于提升全要素生产率和边际员工的生产率，需要将 AI 无缝嵌入已有工作流、设定科学实验并快速迭代。文章进一步阐述了 AI 智能体协作的前景、对就业的不确定影响以及监管与信任的关键作用，提供了企业在 AI 采纳过程中的实操指引。
+2026-08-13 12:00:00
 
 
 
@@ -13692,193 +13676,145 @@
 
 ### [Gemini-3.7-Flash-正式发布](https://deepmind.google/blog/introducing-gemini-3-7-flash/)
 
-2026-08-14 05:09:26 | 标签: Gemini, LLM, AI 编程, AI Agents, 模型发布
-
-> Google DeepMind 的这份官方公告介绍了 Gemini 3.7 Flash，这是在 Gemini 3.6 Flash 发布仅三周后推出的 Flash 系列最新模型。该模型在核心用例中实现了大幅改进：在包括 FrontierCode 1.1 Main (43.6% vs 34.4%) 和 DeepSWE v1.1 (65.3% vs 49.0%) 在内的编程基准测试中超越了 3.6 Flash；在 WebDev Arena 排行榜上获得了 1588 的更高 Elo 分数；并在复杂文档处理和企业工作流自动化方面取得了重大进展。此外，它通过增强的指令遵循、多步规划和工具使用能力，提升了开...
+2026-08-14 05:09:26
 
 
 
 ### [在-EC2-G5g-上运行-Gemma-4：Graviton2-+-NVIDIA-GPU](https://dev.to/aws-builders/running-gemma-4-on-ec2-g5g-graviton2-amd-with-nvidia-gpu-13j)
 
-2026-08-14 02:45:41 | 标签: AI 部署, vLLM, Gemma 4, AWS EC2, Graviton2
-
-> 本技术深度探讨记录了在 AWS EC2 G5g 实例（Graviton2 ARM64 + NVIDIA T4G GPU）上运行 Google Gemma 4 E2B 模型的挑战与解决方案。作者遇到了三个主要障碍：(1) 缺乏支持罕见的 aarch64 + compute capability 7.5 组合的公开构建版本、(2) 版本要求仅在最新的 vLLM（v0.27.2rc0+）中满足、(3) Turing GPU 的 64 KiB 共享内存限制与 Gemma 4 的异构头维度（256/512）冲突。解决方案包括使用 AWS 的 ARM64 GPU DLAMI（唯一一个带有 sm_75 支持...
+2026-08-14 02:45:41
 
 
 
 ### [在-EC2-G5g-上运行-Gemma-4：Graviton2-ARM64-+-NVIDIA-GPU](https://dev.to/gde/running-gemma-4-on-ec2-g5g-graviton2-amd-with-nvidia-gpu-25ci)
 
-2026-08-14 02:44:34 | 标签: AI 部署, LLM 推理, Gemma 4, vLLM, AWS EC2
-
-> 本文提供了详细的技术现场报告，论述在 AWS EC2 G5g 实例上部署 Google Gemma 4 E2B 语言模型的过程，该实例配备 Graviton2 ARM64 主机和 NVIDIA T4G GPU。作者识别出三个主要障碍：（1）没有已发布的 vLLM 或 PyTorch 构建支持 aarch64 + SM 7.5 组合，因为 arm64 构建仅针对 Ampere（SM 8.0）及更新架构；（2）版本兼容性问题需要 vLLM v0.27.2rc0 或更高版本才能处理 Gemma 4 的异构头维度；（3）Turing 的 64 KiB 分享内存限制会在运行模型注意力内核时导致资源耗尽错...
+2026-08-14 02:44:34
 
 
 
 ### [单一提示词喂给-11-个-AI-模型会得到截然不同的结果-——-Netlify-实验揭示的真相](https://dev.to/trismegistus/one-prompt-11-ai-models-wildly-different-results-what-netlify-experiment-reveals-2lik)
 
-2026-08-14 02:38:05 | 标签: LLM, AI 模型对比, 提示词工程, 模型选择, AI 智能体
-
-> Netlify 进行了一项简单却极具启发性的实验：同一提示词，11 个 AI 模型，相同条件。其目标并非评选胜者，而是展示不同模型对相同指令的解读差异。该实验在 Hacker News 上获得广泛关注，表明模型选择不仅影响质量，更决定了对用户意图的根本性理解。对智能体可靠性（行为在不同模型间可能不可预测地变化）、成本与质量权衡（便宜模型各有独特优势与失败模式）以及提示词工程（提示词针对特定模型优化，需持续维护）都有直接影响。本文概述了 2026 年 8 月的模型格局——包括 GPT-5.6 系列、Gemini 3.7 Flash、Claude Opus 4.5、DeepSeek V4、Meta...
+2026-08-14 02:38:05
 
 
 
 ### [Gemini-3.7-Flash：Google-推出最智能的编码与智能体模型](https://dev.to/trismegistus/gemini-37-flash-google-most-intelligent-workhorse-model-yet-for-coding-and-agents-4ck8)
 
-2026-08-14 02:37:18 | 标签: LLM, AI 智能体, AI 编程, Gemini, 模型发布
-
-> Google 宣布 Gemini 3.7 Flash 为 '最智能的编码与智能体工作模型'，相较 Gemini 3.6 Flash 在关键基准测试上实现显著提升：FrontierCode 1.1 Main（43.6% vs 34.4%）、DeepSWE v1.1（65.3% vs 49.0%）、WebDev Arena（Elo 1588 vs 1538）、GDP.pdf（34.0% vs 22.0%）以及 AutomationBench（30.4% vs 17.0%）。该模型引入智能体优先设计增强功能，包括更好的错误恢复、多步骤规划以及 improved Google Workspace 工具...
+2026-08-14 02:37:18
 
 
 
 ### [为什么我们禁止-LLM-计算销售置信度（改用-Hindsight-记忆）](https://dev.to/sanjayram_p_f8869a77c3937/why-we-banned-llms-from-calculating-sales-confidence-scores-and-used-hindsight-memory-instead-3385)
 
-2026-08-14 02:06:14 | 标签: LLM, AI 智能体, 置信度校准, 智能体记忆, 销售技术
-
-> 本文描述了一个 B2B 销售 deal 智能体，通过架构上分离统计计算与 LLM 叙述，防止 LLM 置信度幻觉。系统将每一次销售通话存储于 Hindsight 记忆中，附带结构化标签（异议、策略、结果），随后使用纯 Python 代码确定性计算基于实际输/成功次数的置信度区间。LLM 随后对证据进行叙述并生成基于事实的建议，但只能在检测到风险时降低置信度——无法提升评级。这一方法通过在历史证据不足时承认「数据不足」来建立信任，而非提供自信的错误建议。
+2026-08-14 02:06:14
 
 
 
 ### [Google-AI-刚刚发布-Gemini-3.7-Flash：每-1M-输入-令牌-$0.75-的编码与智能体模型](https://www.marktechpost.com/2026/08/13/google-ai-just-released-gemini-3-7-flash/)
 
-2026-08-14 01:47:43 | 标签: LLM, Gemini, AI 智能体, 编码模型, 模型基准
-
-> Google 推出了 Gemini 3.7 Flash，这是对 3.6 Flash 的增量精炼，包含算法改进，而非全新预训练。它支持 1M 令牌上下文、64K 输出令牌，并可自定义思考配置。关键改进聚焦于软件工程（FrontierCode 43.6% 对 34.4%，DeepSWE 65.3%）、文档密集工作（GDP.pdf 34.0% 对 22.0%）以及网页开发（WebDev Arena Elo 1588）。定价是亮点：每 1M 令牌 $0.75 / $3.75（截至 2026 年 12 月 31 日的优惠），约为 Claude Sonnet 5 或 GPT-5.6 Terra 综合成本的...
+2026-08-14 01:47:43
 
 
 
 ### [用-Sheets-画布让电子表格数据焕发活力](https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/)
 
-2026-08-14 01:20:46 | 标签: Google Workspace, Sheets, AI 工具, 效率工具, 数据可视化
-
-> Sheets 画布是 Google Sheets 的一项新功能，由 Gemini 驱动，可将电子表格转化为交互式可视化小应用。用户可以用自然语言描述需求（例如“创建一个可视化的学习追踪器”），Gemini 会在数据上方生成一个动态的读写层。核心功能包括无需编码、画布与表格之间的实时同步、通过提示词轻松调整，以及支持完整的协作编辑。应用场景包括学生作业追踪、幻想足球仪表板和婚礼座位图等。目前面向全球 Google AI Pro/Ultra 订阅用户及部分 Workspace 套餐用户提供，仅支持英文。
+2026-08-14 01:20:46
 
 
 
 ### [Google-Sheets-推出-Sheets-canvas：用-Gemini-将表格数据变为交互式迷你应用-·-AIHOT](https://aihot.virxact.com/items/cmsrtfqyv04btro0nle3m5b20)
 
-2026-08-14 00:45:00 | 标签: Google Sheets, Gemini, 无代码, AI 生产力, 数据可视化
-
-> Google Sheets 推出了“Sheets canvas”，这是一个动态读写层，用户可以借助 Gemini AI 将电子表格中的行和列数据转化为交互式仪表板、追踪器和可视化布局。该功能支持通过自然语言提示词实现无代码创建，确保画布与原始电子表格之间的实时同步，并支持完整的协作功能。实际应用场景包括学术学习追踪器、体育联赛仪表板以及活动策划工具（如交互式座位图）。目前该功能正向 Google AI Pro、Ultra 以及特定 Google Workspace 商业和教育版用户推出。
+2026-08-14 00:45:00
 
 
 
 ### [如何高效利用-OKF-实现-LLM-间的知识交换](https://towardsdatascience.com/how-to-utilize-okf-efficiently-to-enable-knowledge-exchange-among-llms/)
 
-2026-08-14 00:30:00 | 标签: LLM, 多智能体系统, 分词处理, OKF, Qwen2.5-Coder
-
-> 本文介绍了一种适用于多智能体 LLM 管道的实用解决方案，同一模型家族（Qwen2.5-Coder 7B/3B/1.5B）的模型通过 OKF 文件和共享内存共享预计算的 token ID，避免冗余的 BPE 分词处理。核心创新包括：(1) 使用 OKF 的 Markdown+YAML 结构，并添加自定义 `token_pointer` 字段，引用 `/dev/shm/` 中的 NumPy 数组；(2) 通过跳过下游分词处理，实现 28-37.8% 的 TTFT 降低；(3) 实施严格的词汇相等性检查（151，936 个条目），防止因 token ID 不匹配导致的静默错误。管道以分阶段处理文档...
+2026-08-14 00:30:00
 
 
 
 ### [深度体验-DeepSeek-Harness，我原谅它涨价了](https://www.qbitai.com/2026/08/472208.html)
 
-2026-08-14 00:03:19 | 标签: AI Agent, AI 编程, 插件架构, Vibe Coding, DeepSeek
-
-> 文章从作者内测近一个月的真实使用经验出发，对 DeepSeek Harness（DSH）进行全方位评测。产品层面，作者介绍了两款主流 AI 助手（Codex 与 DSH）在 Vibe Coding 项目中的迁移情况，重点阐述了 DSH 的安装方式、Web UI 交互、模型 API Key 配置以及即将到来的涨价影响。核心亮点在于 DSH 的「极客」设计：全模块化插件架构（Cordis）、四类 Agent 预设（标准/PTC/极简/创造）、轨迹回放窗口、内置 Skills 工具（如 dsh-code-review、dsh-find-simplifications 等），以及对 Token 消耗与...
+2026-08-14 00:03:19
 
 
 
 ### [Liquid-AI-发布-LFM2.5-VL-3B：一款可离线运行的-3B-视觉-语言模型，支持屏幕阅读、对象定位与工具调用](https://www.marktechpost.com/2026/08/13/liquid-ai-lfm2-5-vl-3b-on-device-vision-language-model/)
 
-2026-08-13 23:56:05 | 标签: 视觉-语言模型, 离线 AI, LFM2.5-VL-3B, 屏幕理解, 函数调用
-
-> Liquid AI 推出 LFM2.5-VL-3B，一款专为离线部署优化的 31 亿参数视觉-语言模型。它专注于数字屏幕（移动端、网页、桌面）阅读、对象坐标定位、文档/图表解析，以及从文本或图像输入调用工具。该模型在 28 个视觉基准测试中的平均得分为 69.4，与 InternVL-3.5-4B 持平，仅比 Qwen3.5-4B（均为 47 亿参数）落后 0.7 分。关键提升包括 ScreenSpot-v2（80.7）、RefCOCO-avg（87.9）以及全新的函数调用能力（ToolSandbox 59.5、BFCL v4 32.5）。模型在约 3GB 内存下运行，在 Apple M5 M...
+2026-08-13 23:56:05
 
 
 
 ### [通过减少-LLM-调用（而非购买更快模型）降低企业-RAG-流水线的延迟和成本](https://towardsdatascience.com/cut-an-enterprise-rag-pipelines-latency-and-cost-by-calling-the-llm-less-not-by-buying-a-faster-model/)
 
-2026-08-13 23:00:00 | 标签: RAG, LLM 优化, 企业 AI, 延迟降低, 成本效率
-
-> 文章针对依赖多次顺序 LLM 调用（如解析、仲裁、生成）处理每个查询（即使是简单查询）的智能体 RAG 流水线高延迟和高成本问题，提出了一种轻量级路由器。该路由器利用现有检索分数（最高分 + 间隔）对问题进行分类：最高分高且间隔大的问题（如关键词匹配的‘年保费是多少？’）通过确定性提取器完全绕过 LLM，而模糊问题（如‘我可以避免哪些保障？’）则继续走完整流水线。路由器无需额外模型调用，运行时间约 0.1ms，每处理一个简单查询可节省约 2 秒。该方法可推广到其他指标（如缓存答案、专家字典中的问题类型），并与系列文章的理念一致：在调用模型前优先使用确定性、低成本的信号。在经纪人语料库上的真实测...
+2026-08-13 23:00:00
 
 
 
 ### [SightDiff-——-查看你的-AI-智能体实际做了哪些修改](https://sightdiff.com/)
 
-2026-08-13 22:33:37 | 标签: AI 智能体, 开发者工具, 代码审查, 可视化回归测试, 本地开发
-
-> SightDiff 旨在解决 AI 生成代码“差不多但不完全正确”的挫败感，通过提供 AI 智能体所做每处修改的可视化证明。它分三步工作：先对配置的页面和状态拍摄基准截图，再让智能体执行操作，最后用证明表检查修改内容——突出显示被修改区域并验证未变更的部分。该工具本地运行，无需与智能体集成，可作为提交前的检查关卡。它针对智能体可能修改非目标页面（如共享 CSS 影响其他页面）的常见问题，这类问题在生产环境前往往难以发现。证明表在智能体控制之外渲染，确保独立验证。目前可通过等候名单或创始用户计划获得早期访问。
+2026-08-13 22:33:37
 
 
 
 ### [Qwen3.8-2.4T-A95B-开源，硅基流动即日上线-·-AIHOT](https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm)
 
-2026-08-13 22:04:55 | 标签: LLM, 模型开源, AI API, 智能体, 编码助手
-
-> 本文报道阿里开源 Qwen3.8-2.4T-A95B 模型，SiliconFlow 已提供 Day-0 API 支持。该模型为 MoE 架构，总参数 2.4T、激活参数 95B，主打自主编码、深度研究与端到端智能体执行。文章列出了 API 定价方案：输入 $2.00/百万 token、输出 $6.00/百万 token，缓存输入 $0.25/百万 token，并指出该定价有利于需要反复读取长上下文的 Agent 工作流。SiliconFlow 作为 API 提供商已即时上线该模型。
+2026-08-13 22:04:55
 
 
 
 ### [构建流式本地-AI-智能体](https://www.kdnuggets.com/building-a-streaming-local-ai-agent)
 
-2026-08-13 22:00:15 | 标签: AI Agent, 流式 AI, 本地 LLM, Ollama, Wikipedia API
-
-> 本文介绍了一种流式本地 AI 智能体的实用实现方案，该智能体通过监控维基百科的实时编辑馈送来检测潜在的破坏行为。它引入了一种两阶段架构：第一阶段使用轻量级的 Python 逻辑（字节删除阈值和编辑速度追踪）来过滤掉无意义的编辑；第二阶段则利用本地 LLM（通过 Ollama）对标记的事件进行推理。系统会将输入事件以及智能体的逐 Token 输出实时流式传输给客户端。核心组件包括基于 SSE 的维基百科事件消费者、滑动窗口编辑速度追踪器、受 Schema 约束的 LLM 推理以及用于实时更新的广播器。该实现完全本地化，无需 API 密钥，并专为全天候运行而设计，具备自动重连功能，并针对慢速客户端...
+2026-08-13 22:00:15
 
 
 
 ### [腾讯-2027-AI-产品经理培训生正式开招！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247725233&idx=1&sn=57c2541c62138e1f923e755f4b792353)
 
-2026-08-13 22:00:00 | 标签: AI产品经理, 腾讯招聘, AI人才培养, 产培生, AI项目
-
-> 腾讯正式开启 2027 AI 产品经理培训生项目，面向 2026 年 1 月至 2027 年 12 月毕业的学生招募，投递时间为 8 月 13 日至 9 月 4 日。项目覆盖 WorkBuddy、Marvis、ima、腾讯云等一线 AI 产品，培养方向包括原型搭建、模型调优、项目闭环等。培训生将获得两位导师（成长导师与专业导师）指导，安排轮岗与双选定岗，并参与跨部门学习、AI 编程大赛等活动。招聘不限专业，要求在简历和作品集中展示真实 AI 项目经验，重点考察端到端闭环、架构判断、AI 品味和前沿敏感四项能力。文章提供了投递方式及二维码，强调这是进入 AI 行业的优质入口。
+2026-08-13 22:00:00
 
 
 
 ### [如何编排-OpenClaw-机器人集群](https://towardsdatascience.com/how-to-orchestrate-a-fleet-of-openclaw-bots/)
 
-2026-08-13 21:30:00 | 标签: AI Agent, 自动化, OpenClaw, Cron Jobs, 知识库
-
-> 本文将 OpenClaw 智能体定义为能够胜任主动工作的 24/7 编程智能体，将其与 Claude Code 等传统反应式工具进行了对比。作者认为，通过构建此类智能体集群，可以自动化处理编程、客户成功、财务和销售等领域的重复性任务，从而节省大量时间和精神专注力。文章核心详细介绍了三种有效的编排技术：(1) **知识库**（共享知识库与智能体专属知识库），用于集中管理并随时间提升学习效果；(2) **Cron 定时任务**，用于调度主动任务（如每日 QA 检查、发票监控）；(3) **任务教学**，通过明确训练智能体掌握工作流、凭据和汇报方式。作者强调应大量使用定时任务和结构化知识库，以确保智...
+2026-08-13 21:30:00
 
 
 
 ### [4.8-亿美元砸向端侧算力！Agent-芯片新贵冲出重围](https://www.qbitai.com/2026/08/472059.html)
 
-2026-08-13 20:34:42 | 标签: AI芯片, 端侧AI, Agent计算, GΞLIX 1, 异构计算
-
-> Acrab 成立于 2024 年，短短一年时间便推出首代端侧 AI 芯片 GΞLIX 1 及搭载该芯片的 Agent Box 个人 AI 中心。该芯片集成统一内存、CPU 与 NPU 协同及 Prefill 优化，主打 700TOPS 峰值算力，实测 Gemma 26B A4B 模型下 Prefill 速度达 1416 Token/s，较业界主流端侧平台快 7 倍。文章从模型压缩、终端算力提升及 Agent 长时运行等技术趋势切入，阐释为何端侧 AI 计算需求正在快速扩大。结合 Arm 背景的 CEO Ken Phua 认为，异构计算协同效率是决定终端 AI 可持续性的关键。Acrab 将技术...
+2026-08-13 20:34:42
 
 
 
 ### [GitHub---rbekplatform/rbek：受治理的-AI-智能体、工作流和软件执行](https://github.com/rbekplatform/rbek)
 
-2026-08-13 20:24:38 | 标签: AI 智能体, 治理, 执行控制, 策略执行, AI 工作流
-
-> RBEK 是一个框架，将 AI 智能体想要执行的操作与其被授权执行的内容解耦。它提供基于策略的准入系统，可拒绝或允许操作，并实时生成证据。演示（通过单个 curl 命令运行）展示了确定性的治理：未授权的操作被拒绝，授权的操作则进行干运行并生成证据。Live 模式将 OpenAI 智能体与外部服务（如 Open-Meteo）集成，所有调用均通过 RBEK 的受控执行边界。该项目提供本地开发的 CLI，配有快速入门指南和示例，展示其零安装验证和真实场景用例。运行时单独分发，团队/企业可通过商业渠道获取。
+2026-08-13 20:24:38
 
 
 
 ### [马斯克-Grok-4.6-发布：性能反超对手且价格更低，协同-Grok-Bot-布局-AI-办公智能体](https://www.qbitai.com/2026/08/472067.html)
 
-2026-08-13 20:04:29 | 标签: LLM, AI Agent, AI 编程, SpaceXAI, Cursor
-
-> 文章报道了 SpaceXAI 最新发布的 Grok 4.6 模型及其配套产品 Grok Bot。Grok 4.6 在多项基准测试（如 GDPVal-AA v2）中反超 GPT-5.6 Sol 和 Fable 5 Max，且定价显著低于对手，重点优化了长程 Agent 任务。同时，Grok Bot 作为「AI 队友」，支持 24 小时云端运行、多 Bot 协作及操作录制学习。文章还揭秘了 SpaceXAI 通过收购 Cursor 整合开发者数据与基础设施的商业版图，以及马斯克对即将发布的 Grok 4.7 的信心。
+2026-08-13 20:04:29
 
 
 
 ### [约束输出空间以优化小语言模型的窄自动化任务](https://www.kdnuggets.com/constraining-output-space-small-language-model-narrow-automation-optimization)
 
-2026-08-13 20:00:17 | 标签: LLM, SLM, 提示词工程, 推理优化, 窄自动化
-
-> 本文探讨了将小语言模型（SLM）应用于窄自动化任务——如工单路由、表单提取和文档标记——时常见的低效问题，这些任务的输出空间是固定且受限的。作者认为，团队往往将前沿模型的使用习惯带到 SLM 上，使用冗长的对话式提示词和自由文本生成，随后进行正则表达式解析，这既缓慢（顺序 token 生成）又不可靠（模型可能产生无法解析或歧义输出）。 proposed solution 是约束评分：不生成文本并解析，而是运行单次前向传递，将模型的下一个 token 分布与候选标签集进行比较。这种方法使格式错误输出在结构上不可能发生，为人工升级提供校准后的置信度分数，并将推理时间缩短约 30%。本文包含完整可运...
+2026-08-13 20:00:17
 
 
 
 ### [LangChain-与-LangGraph：4-大关键区别及选型指南](https://towardsdatascience.com/langchain-vs-langgraph-4-key-differences-and-when-to-use-each/)
 
-2026-08-13 20:00:00 | 标签: LangChain, LangGraph, AI Agent, AI 工作流, LLM
-
-> 本文清晰对比了 LangChain 与 LangGraph，指出 LangGraph 是 LangChain 生态系统的扩展而非竞争者。文章总结了四点根本区别：从线性流水线向循环图结构的转变、从无状态执行向有状态管理的过渡、通过中断机制实现的原生人机协同能力，以及从检查点恢复而非重新启动的特性。作者最后针对智能体系统的复杂度和需求，提供了实用的选型建议。
+2026-08-13 20:00:00
 
 
 
 ### [具身数据来了实战派！40-天-2-轮融资数千万，瞄准物理-AI-基础设施](https://www.qbitai.com/2026/08/472060.html)
 
-2026-08-13 19:53:02 | 标签: 具身智能, 物理 AI, 数据基础设施, 融资, 人形机器人
-
-> 本文报道了元点科技（SCALEFORCE）完成数千万元人民币融资的消息。公司聚焦于具身智能的「数据基础设施」，推出了物理 AI 操作系统 MatrixOS，通过 ADA 泛化引擎、GDP 质量引擎及全球规模化数采网络，解决具身智能在数据质量、规模与泛化能力上的三重困境。目前，公司已与多家世界模型公司及本体厂商合作，并加入华为昇腾生态，旨在在 2027-2029 年人形机器人商业化窗口期前，构建全球领先的物理 AI 数据生产与分发网络。
+2026-08-13 19:53:02
 
 
 
@@ -49452,129 +49388,97 @@
 
 ### [2026-08-14-Hacker-News-热门资讯汇总](https://supertechfans.com/cn/post/2026-08-14-HackerNews/)
 
-2026-08-14 16:25:42 | 标签: Hacker News, 科技动态, AI 工具, 开源项目, 硬件安全
-
-> 文章整理了 Hacker News 当日热门讨论的 10 个话题：1) Zed 推出 Delta 协作编码环境，支持 AI 智能体实时同步；2) DeepSeek Harness 开源预览版，采用「一切皆插件」理念，支持完整追溯；3) 硬件安全研究项目「搅乱 DRAM」可暴露 AMD Family 16h CPU 的受保护内存区域；4) ChatGPT Linux 桌面版预览发布，整合 Codex 功能；5) 德意志银行获准在法兰克福开展人民币清算业务；6) 开源金融终端 Gloomberb，支持桌面与 TUI；7) 《数学原理》的现代编程语言视角解读；8) Nine PBS 起诉 Iron ...
+2026-08-14 16:25:42
 
 
 
 ### [GitHub-Universe-2026-指南已发布：日程表正式发布！](https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/)
 
-2026-08-14 03:00:00 | 标签: AI 开发, GitHub Copilot, 开发者大会, AI 智能体, 机器学习
-
-> 本文正式发布 GitHub Universe 2026 的官方日程表，这是一场面向开发者的两天会议，将于 10 月 28 日至 29 日在旧密菨中心举行。活动汇聚 AMD、Figma、NVIDIA、Coinbase、Anthropic 和 OpenAI 等领先科技公司，聚焦 AI 赋能开发主题，包括配置 Copilot 处理复杂任务、优化跨多模型的 AI 编码智能体，以及为 MCP 服务器实施细粒度安全措施。精选场标包括 GitHub 的 Ken Muse 和 Mickey Gousset 主持的「停止提示词，开始委托：配置 Copilot 来负责工作」、微软的 Julia KasperPRE...
+2026-08-14 03:00:00
 
 
 
 ### [LLM-何时能替代人类进行-A/B-测试？](https://engineering.atspotify.com/2026/8/when-can-llms-replace-humans-in-a-b-tests/)
 
-2026-08-14 02:57:22 | 标签: A/B 测试, LLM, 因果推断, 实验设计, 产品分析
-
-> 作者探讨了基于 LLM 的 A/B 测试前景——通过模拟用户响应来降低时间和成本。他们使用 Upworthy 数据集证明，原始 LLM 预测存在系统性偏差，常低估处理效应。文章正式提出 LLM 作为有效替代的两个必要条件：'替代性'（LLM 捕获所有影响人类响应的相关因素）和'可比性'（LLM 预测与人类结果之间的关系保持稳定）。虽然非线性 ML 校准可恢复类似历史处理的效应，但作者警告称，这些假设在全新干预措施中无法验证。因此，LLM 最适合用于过滤差想法或降低方差，但无法替代人类实验实现真正创新。
+2026-08-14 02:57:22
 
 
 
 ### [理解成为新的瓶颈](https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck)
 
-2026-08-14 02:47:19 | 标签: AI 编码, 人机协作, 认知债务, 开发者体验, 软件工程
-
-> 基于 AI Engineer 大会的演讲，本文探讨了 AI 生成代码速度与人类理解之间日益扩大的差距。作者指出，理解不再仅仅是验证正确性——这正是 AI 越来越擅长的——而是要在项目的创意演进中实现“理解以参与”。为了解决“认知债务”，作者提出了三种受教育学启发的技术：使用结构化的“可读差异”（literate diffs）和测验来调节学习速度，构建“微世界”（自定义交互式模拟）以直观把握系统行为，以及利用共享协作空间使团队的心智模型保持一致。最终，作者主张利用 AI 来增强人类智能，而不是单纯将人类从流程中自动化剔除。
+2026-08-14 02:47:19
 
 
 
 ### [推出-Gemini-3.7-Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/)
 
-2026-08-14 02:31:40 | 标签: Gemini, LLM, AI 模型, AI 编程, AI 智能体
-
-> Google 宣布推出 Gemini 3.7 Flash，这是其 Flash 系列的重大升级，距离 3.6 Flash 发布仅三周时间。该模型在编码任务（如调试、问题解决）方面表现出色，首次通过代码准确性和生产就绪代码生成能力显著提升，在 FrontierCode 1.1 Main（43.6% vs 34.4%）和 DeepSWE v1.1（65.3% vs 49.0%）等基准测试中超越 3.6 Flash。它在 Web 开发方面表现优异，能生成功能性布局和功能完整的应用，且所需提示词更少；在知识密集型领域（如金融、法律、生物科学）的推理能力也有所改善，在 GDP.pdf（34.0% vs 2...
+2026-08-14 02:31:40
 
 
 
 ### [GitHub---itsmeadarsh2008/opencode-senses：OpenCode-的视觉插件，真正理解图像。检查、阅读并推理任何截图或图片，理解深度超越其他插件——完全本地、私密且免费。](https://github.com/itsmeadarsh2008/opencode-senses)
 
-2026-08-14 02:13:42 | 标签: AI 编程, 多模态 AI, 开源, 本地 LLM, 计算机视觉
-
-> OpenCode Senses 为纯文本 OpenCode 模型提供视觉层，通过自动注入结构化证据和一套 13 个基于实际的工具（包括 OCR、目标检测和区域缩放）使其能与图像交互。系统完全在本地运行，使用 Moondream 2 模型，无需 API 密钥，确保数据隐私。它具备零安装运行时，自动配置 Python 环境，支持本地文件和网络图像，将标准 LLM 转变为能够进行视觉调试和 UI 分析的多模态智能体。
+2026-08-14 02:13:42
 
 
 
 ### [如何使用-PHP、cPanel-和-Gemini-Flash-以每月-0-美元的成本构建生产级-AI-智能体](https://www.freecodecamp.org/news/how-to-build-a-production-ready-ai-agent-for-0-month-using-php-cpanel-and-gemini-flash/)
 
-2026-08-14 01:38:27 | 标签: AI 智能体, Gemini Flash, PHP, MySQL, cPanel
-
-> 这篇实用的教程引导开发者在现实的技术栈上创建一个功能齐全的 AI 智能体：使用 PHP 处理请求，MySQL 进行持久化，以及 Google 的 Gemini Flash 进行推理和函数调用。文章涵盖了从架构设计到 cPanel 部署的整个工作流，包括如何构建智能体循环、实现工具调用（保存笔记、网页搜索、发送电子邮件）、在 MySQL 中存储对话历史，以及通过公共 API 暴露系统。它强调了生产就绪性、安全性（例如用于 SQL 的 PDO、输入验证）和可扩展性考量，目标读者是具备基础 PHP、JSON 和 SQL 知识的开发者。该项目旨在标准共享主机上运行，无需单独的应用服务器。
+2026-08-14 01:38:27
 
 
 
 ### [OCR-4.1---Mistral-AI](https://docs.mistral.ai/models/ocr-4-1)
 
-2026-08-14 01:05:12 | 标签: OCR, Document AI, 计算机视觉, Mistral AI, 模型发布
-
-> Mistral AI 宣布推出 OCR 4.1 的公测版，这是其为 Document AI 技术栈提供支持的最新 OCR 服务。核心功能包括原生段落级边界框提取、结构化块标签以及块级置信度评分。定价为每 1，000 页 €3.5（或每 1，000 个已标注页面 €4.38）。该服务支持批处理，并与 Mistral 的文档处理 API 集成。
+2026-08-14 01:05:12
 
 
 
 ### [蒸馏《基层中国的运行逻辑》后，让-AI-帮你分析求学、考公、投资与创业](https://www.appinn.com/nie-grassroots-logic/)
 
-2026-08-14 00:46:34 | 标签: AI 工作流, AI Agent, AI 产品与应用, 开源项目, 知识管理
-
-> 本文介绍一个开源项目，将聂辉华《基层中国的运行逻辑》一书蒸馏为 AI skill，提炼出条块、含权量、双均衡、三座大山等县乡村治理框架，供 Cursor、Claude Code、Codex 等 Agent 调用，用于解读地方新闻与辅助求学、考公、投资、创业等现实决策。文章给出安装方式、提问示例，以及作者关于『书完整交给 AI 后是否还需要读』的思考。
+2026-08-14 00:46:34
 
 
 
 ### [家中-AI-实战（上）：一箱电子废料的新生](https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html)
 
-2026-08-14 00:22:05 | 标签: AI 硬件, AI 自制, GPU 计算, 本地 AI, AI 推理
-
-> 作者作为一名软件开发者，分享了他利用价格亲民的电子废料组件搭建家用 AI 数据中心的过程，以避免依赖云端 AI 服务。他从二手服务器硬件市场获取原本用于云游戏的 AMD V620 GPU，配合 2017 年的 X299 主板和性价比高但能效较低的 Intel i9-10900X CPU，并从其他机器上回收内存和固态硬盘。最大的挑战是散热：服务器级 GPU 没有自带风扇，于是他设计并 3D 打印定制导流罩，安装 80mm 服务器风扇。在排除 BIOS 设置和以太网连接故障后，他成功启动系统，安装 Ubuntu 24.04，并测试了 Gemma4 和 Deepseek V4 Flash 的推理性能...
+2026-08-14 00:22:05
 
 
 
 ### [AI-时代安全领域的-50-个开源项目经验教训](https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/)
 
-2026-08-14 00:00:00 | 标签: 开源安全, AI 安全, GitHub 安全实验室, 安全软件开发, 开源维护者
-
-> 本文详细阐述了 GitHub 安全开源基金第四期的结果，该项目在 12 个月的深度合作（包括 3 周的初始冲刺）中，为 50 个开源项目分配了 50 万美元以上资金，旨在解决 AI 采用加剧的安全挑战。在项目期间，维护者获得了 GitHub 安全实验室专家、安全工具、AI 辅助工作流程以及同行社区的支持。整个受邀项目组普遍发现，AI 能够帮助维护者更快地调查、优先处理和响应漏洞，但人类背景知识、判断力和责任感仍是安全决策不可或缺的要素。参与项目涵盖了 AI/ML 系统、构建与供应链工具、核心编程库、开发者工具和 Web 基础设施等多个软件生态细分领域。项目交付的具体安全改进包括事件响应计划、强...
+2026-08-14 00:00:00
 
 
 
 ### [Vercel-发布-v0-API，支持无头应用构建](https://www.infoq.com/news/2026/08/vercel-v0-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-13 23:37:00 | 标签: AI Agent, API, 应用开发, MCP 协议, Vibe Coding
-
-> Vercel 已将 v0 API 发布为通用版本产品，为其 AI 驱动的应用构建智能体提供编程访问。该 API 允许开发者发送提示词，由 v0 生成和修改应用文件、在 Vercel Sandbox 环境中运行应用，并获取预览 URL。每个应用以持久对话为中心组织，该对话在后续消息中保持状态，支持同步、异步和流式请求模式。API 接受来自 GitHub 仓库、ZIP 压缩包或文件集的输入，并支持部署到 Vercel 项目。它还通过 MCP 服务器连接、技能加载以及与 AI SDK 和 Vercel 的 eve 框架集成支持外部工具。社区反应强调该 API 对完全程序化应用开发工作流的潜力，即 A...
+2026-08-13 23:37:00
 
 
 
 ### [GitHub---fellowgeek/mcp-memory:-一款基于-OKF-的-Model-Context-Protocol-MCP-服务器，为-AI-智能体提供持久化长期记忆与-SQLite-FTS5-搜索功能](https://github.com/fellowgeek/mcp-memory)
 
-2026-08-13 21:57:47 | 标签: MCP, AI 智能体, 长期记忆, OKF, SQLite FTS5
-
-> MCP-Memory 是一款 Model Context Protocol (MCP) 服务器，旨在为 Claude Desktop、Cursor 和 Windsurf 等 AI 智能体提供持久化的长期记忆能力。它以 Open Knowledge Format (OKF v0.2) 格式存储记忆记录，并通过 YAML 前言进行标注，同时利用 SQLite FTS5 实现低于 20 毫秒的查找、标签过滤和全文搜索。系统采用双层架构：人类可浏览的 OKF Markdown 文件（带层次化索引）与高性能 SQLite 后端。核心工具包括 memory_store、memory_retrieve、me...
+2026-08-13 21:57:47
 
 
 
 ### [DeepSeek-Harness-开发者预览：一切皆插件](https://deepseek.com/harness/en/)
 
-2026-08-13 20:58:02 | 标签: AI 智能体, 插件架构, Cordis 内核, 智能体框架, 开发者工具
-
-> DeepSeek Harness 现已推出开发者预览版，提供以插件为中心的框架来构建 AI 智能体。所有能力（模型、工具、技能、会话、沙盒、存储、循环、调度、UI）均作为插件由 Cordis 内核管理，支持通过配置动态选择、切换或扩展。系统确保全流程可追溯性，通过仅追加的会话日志记录所有模型交互、工具调用和上下文注入。支持多种运行模式（标准、代码、最简、创作者）以适配不同使用场景，从完整编码智能体到最简基准测试环境。开发者可通过 `npx @deepseek-ai/dsh web` 快速开始，或克隆开源仓库。
+2026-08-13 20:58:02
 
 
 
 ### [人工智能如何颠覆工程师的职业发展](https://www.infoq.com/news/2026/08/AI-disrupts-engineering-progress/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-13 19:28:00 | 标签: AI 编程, 工程管理, 职业发展, 软件工程, LLM
-
-> 在 QCon London 演讲及随后的采访中，阿拉斯代尔·艾伦探讨了 AI 对软件工程职业发展构成的结构性威胁。他认为，通过将入门级任务自动化，AI 移除了初级开发者获得经验、模式识别和系统直觉所必需的“学习阶梯”。艾伦指出，虽然 AI 擅长生成代码，但在工程的“手艺”上却有所欠缺——理解遗留系统、生产模式以及复杂的业务规则。他警告说，当前各组织优先追求短期的 AI 生产力，而忽视了能够监督这些工具的高级工程师的长期培养，这正在削弱未来的人才输送管道。
+2026-08-13 19:28:00
 
 
 
 ### [6-支快手工程团队，让-AI-落地真实业务](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247501200&idx=1&sn=fa3d1a7ffd98af396013c6c2e2b4d709)
 
-2026-08-13 18:22:00 | 标签: AI Coding, AI Agent, 产研协作, 工程实践, 全栈交付
-
-> 文章围绕「AI Coding 提升个人代码效率但未直接转化为组织交付效率」的共性痛点，分享快手 6 支工程团队的落地实践：综合应用中心搭建 Agent-First 产研协作平台，让 Agent 贯穿需求、研发、测试全流程，人均月交付量翻 3 倍；电商团队推出 AI 小二，实现商家经营诊断到自动执行的全链路服务，托管商家日均 GMV 提升超 15%；主站技术部推广 FDE（前线部署工程师）模式，让工程师驻场业务现场，大型活动交付效率从 20 多人天降至 2-3 人天；商业化技术部用 SDD+TDD 模式搭建反作弊平台 Monika，风险发现效率提升 50%；国际化团队通过全栈交付+全流程 Age...
+2026-08-13 18:22:00
 
 
 

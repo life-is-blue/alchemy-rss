@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-14 09:04:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-14 11:56:42 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -590,9 +590,7 @@
 
 ### [Oxide-上的-Kubernetes：客户需求如何塑造我们的集成-|-Oxide-Computer-公司](https://oxide.computer/blog/kubernetes-on-oxide)
 
-2026-08-13 22:26:41 | 标签: Kubernetes, 云基础设施, Oxide Computer, Cluster API, Rancher
-
-> 文章回顾了 Oxide 为支持其平台上的 Kubernetes 所走过的历程，这一切都由客户需求驱动。最初缺乏集成支持，团队利用客户提交的 Rancher 节点驱动和 RFD 493 启动了开发。他们构建了三种配置集成（Rancher 节点驱动、Omni 基础设施提供商、Cluster API 提供商）以适应不同的工作流程，随后开发了运行时组件，如 Oxide 云控制器管理器（CCM）用于节点协调。对于 LoadBalancer 服务，他们创造性地利用了 Oxide 的浮动 IP，尽管存在地址转换挑战。存储集成则揭示了对磁盘热插拔支持的需求，以实现原生 CSI 驱动，目前正在开发中。该生态系统...
+2026-08-13 22:26:41
 
 
 
