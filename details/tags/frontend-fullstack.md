@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-14 06:32:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-14 09:04:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -723,6 +723,54 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [如何使用-Shadcn-UI-在-React-中构建可扩展的-KYC-入驻流程](https://www.freecodecamp.org/news/how-to-create-a-kyc-onboarding-flow-with-shadcn-ui/)
+
+2026-08-14 02:10:52 | 标签: React, Shadcn UI, KYC, 入驻流程, 文件上传
+
+> 本文详细介绍了如何为有合规需求的 B2B SaaS 产品（如银行、加密货币领域）构建一个三步式 KYC（了解你的客户）入驻流程。使用 Shadcn UI 组件（单选按钮组、文件上传、步骤器、警报）构建以下功能：(1) 使用单选按钮组选择账户类型（初创企业/大型企业/政府机构），(2) 支持拖拽验证的文档上传（PDF/CSV），(3) 使用警报和进度条显示验证状态。实现过程包含真实的状态管理、验证逻辑以及生成草稿时常被忽略的边缘情况。流程通过 v0 和 Shadcn 组件的 MCP 服务器搭建，文章还讨论了 Radix UI 与 Base UI 基元的对比、项目结构以及无障碍设计的最佳实践。每个...
+
+
+
+### [DONKEY.BAS-—-IBM-PC-1981](https://donkeybas.com/)
+
+2026-08-14 01:45:50 | 标签: 复古计算, IBM PC, BASIC, 游戏开发, JavaScript
+
+> 此页面复刻了 DONKEY.BAS，这是一个简单的换道游戏，最初随早期 IBM PC DOS 一同发布，作为 BASICA 中彩色图形和音效的演示。该游戏由比尔·盖茨和尼尔·孔岑于 1981 年开发（1982 年发布 1.10 版本），玩家需通过按空格键或轻触屏幕切换车道以躲避驴子。复刻版保留了原版 CGA 游戏体验，同时采用现代 JavaScript 实现。页面还提供了原始源代码和 GitHub 仓库供参考。
+
+
+
+### [Chrome-小恐龙游戏背后的运行机制：Chromium-源代码深度解析](https://www.freecodecamp.org/news/how-the-chrome-dino-game-works/)
+
+2026-08-14 01:44:25 | 标签: 游戏设计, JavaScript, Chromium, 源代码分析, 碰撞检测
+
+> 本文分析了 Chrome 小恐龙游戏（Project Bolan）的开源 JavaScript 实现。通过查看 Chromium 源代码，作者解析了几个关键技术实现：使用 delta-time 确保不同硬件上游戏速度一致；一个‘公平性引擎’根据玩家能力动态调整障碍物生成；以及通过多个碰撞箱精确匹配角色轮廓的碰撞系统。文章强调，即使在极端技术限制下，那些不可见的细节——如可变跳跃高度、七相月亮和重启宽限期——如何共同塑造了高质量的用户体验。
+
+
+
+### [GoAccess---可视化-Web-日志分析工具](https://goaccess.io/)
+
+2026-08-14 00:22:16 | 标签: Web 日志分析, 实时监控, 终端工具, 系统管理, 开源
+
+> GoAccess 是一款开源的实时 Web 日志分析工具，支持终端（TUI）和浏览器仪表板两种界面。它能以毫秒或秒级速度更新 HTTP 统计数据，非常适合需要即时服务器报告的系统管理员。主要功能包括：支持几乎所有 Web 日志格式（Apache、Nginx、AWS 等）、依赖最小化（仅需 ncurses）、能生成实时 HTML、JSON 和 CSV 报告。同时，它也可作为安全监控工具，直接从日志中检测暴力破解尝试或异常请求等可疑活动。
+
+
+
+### [证书透明度监控现已全面可用](https://blog.cloudflare.com/certificate-transparency-monitoring-ga/)
+
+2026-08-13 21:00:20 | 标签: 证书透明度, SSL/TLS, 安全, 密码学, Web 安全
+
+> 本文宣布 Cloudflare 的证书透明度监控功能正式全面可用。该服务监控公开的证书透明度日志，以发现客户域名上签发的证书，帮助域名所有者检测未经授权的签发行为，并识别可能被用于钓鱼或品牌滥用的仿冒域名。公告说明了该功能所解决的安全问题、监控方法，以及客户如何为自己的区域启用警报。作为 Cloudflare 的第一方产品公告，该信息具有权威性，与 Cloudflare 用户和 Web 安全从业者直接相关；不过，其定位是产品可用性新闻，而非深度的技术分析。
+
+
+
+### [从动效到意义：Denis-Avramenko-的交互设计方法论](https://tympanus.net/codrops/2026/08/13/from-motion-to-meaning-denis-avramenkos-approach-to-interactive-design/)
+
+2026-08-13 20:46:05 | 标签: 交互设计, 动效设计, 品牌设计, GSAP, WebGL
+
+> 本文以访谈形式介绍了来自纽约的获奖艺术总监与动效设计师 Denis Avramenko。文章通过四个代表性项目展现其交互设计方法：13 MAL（整合模块化视觉系统与无头电商）、CBRE 的 2000 Avenue of the Stars（建筑启发的数字化存在感与排版行为系统）、X8 眼镜（自给自足的品牌识别系统，融合动态排版与 AR 试戴）以及 Dominik Tarabanski（编辑风格的电子商务平台）。Avramenko 的设计核心在于动效、排版与视觉叙事，特别关注节奏、节奏控制以及物体与背景之间的关系。文章详细描述了其创作流程，从初期探索到后期制作，并突出了其在 WebGL、GSAP...
 
 
 
@@ -1770,13 +1818,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1926,13 +1974,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3426,13 +3474,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5136,13 +5184,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_251e7f7527",
+  "title": "发布：sqlite-utils 4.2.1",
+  "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
+  "date": "2026-08-14 07:53:47",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">13th August 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/sqlite-utils/releases/tag/4.2.1\">sqlite-utils 4.2.1</a></span> <span class=\"beat-commit\">— Python CLI utility and library for manipulating SQLite databases</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Fixes a crashing bug in <a href=\"https://simonwillison.net/2026/Aug/13/sqlite-utils/\">sqlite-utils 4.2</a>. I'd introduced code that looks like this:</p>\n      <pre><code>from typing_extensions import Self\n</code></pre>\n      <p>It turned out the <a href=\"https://pypi.org/project/typing-extensions/\">typing-extensions</a> package was not listed as a dependency for <code>sqlite-utils</code> - it was installed by one of the other dependencies in the <a href=\"https://github.com/simonw/sqlite-utils/blob/56dd09702fdb9e899f577ffd51693c1f2176cb08/pyproject.toml#L34-L55\">dev dependency group</a>, but when you <code>uvx sqlite-utils</code> directly you don't get those dependencies.</p>\n      <p>As part of fixing this I figured out how to run a smoke test to ensure the CLI tool still works even without those dev dependencies, which can be run from the project checkout:</p>\n      <pre><code>uv run --isolated --no-default-groups sqlite-utils --help\n</code></pre>\n      <p>The <code>--no-default-groups</code> argument prevents it from installing that default <code>dev</code> group, and <code>--isolated</code> means that even if there is a <code>.venv/</code> folder containing extra dependencies they will be ignored for the duration of that <code>uv run</code> command.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4863/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "sqlite-utils 4.2.1 修复了因缺少 typing-extensions 依赖导致的崩溃 bug，并新增烟雾测试以验证在无开发依赖的情况下 CLI 功能是否正常。",
+  "oneSentenceSummary": "sqlite-utils 4.2.1 修复了因缺少 typing-extensions 依赖导致的崩溃 bug，并新增烟雾测试以验证在无开发依赖的情况下 CLI 功能是否正常。",
+  "summary": "此版本修复了 sqlite-utils 4.2 中的一个关键 bug，问题源于引入 `from typing_extensions import Self` 时未将 typing-extensions 列为直接依赖，导致运行 `uvx sqlite-utils` 时发生崩溃。作者发现，直接运行该命令会绕过开发依赖。为确保 CLI 在无开发依赖的情况下正常工作，新增了烟雾测试（`uv run --isolated --no-default-groups sqlite-utils --help`），其中 `--isolated` 会忽略现有的 `.venv/`，而 `--no-default-groups` 会跳过默认的开发组。",
+  "mainPoints": [
+    {
+      "point": "修复因缺少 typing-extensions 依赖导致的崩溃 bug。",
+      "explanation": "该 bug 是由于使用 `from typing_extensions import Self` 但未将 typing-extensions 列为直接依赖导致的，在通过 `uvx` 直接运行工具时会出现失败。"
+    },
+    {
+      "point": "新增烟雾测试以验证在无开发依赖的情况下 CLI 功能是否正常。",
+      "explanation": "该测试使用 `uv run --isolated --no-default-groups` 确保 CLI 在干净环境中运行，同时忽略 `.venv/` 和默认开发组。"
+    },
+    {
+      "point": "演示了依赖问题的实用调试工作流程。",
+      "explanation": "作者分享了用于隔离和测试依赖问题的具体命令与标志，为类似场景提供了可操作的见解。"
+    }
+  ],
+  "keyQuotes": [
+    "原来 typing-extensions 包未被列为 sqlite-utils 的依赖",
+    "uv run --isolated --no-default-groups sqlite-utils --help"
+  ],
+  "tags": [
+    "Python",
+    "SQLite",
+    "CLI 工具",
+    "依赖管理",
+    "发布说明"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 151,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786665227000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-14 07:53:47"
+}
