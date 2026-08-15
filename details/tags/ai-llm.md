@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-15 08:38:18 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-15 10:46:46 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [Multi-Agent-的新趋势：从-Agent-Team-到-Agent-Swarm](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518293&idx=1&sn=dc3d001cf756fd83a7cdf2fbdf177582)
 
-2026-08-15 00:00:00 | 标签: AI Agent, Multi-Agent Systems, Agent Swarm, LLM, 智能体协同
-
-> 文章系统性地梳理了 2026 年上半年多智能体（Multi-Agent）领域的技术爆发与产品形态演变。作者指出，多智能体系统正从简单的「并行搬砖」转向复杂的「创意发现」，并详细对比了 Kimi、Anthropic、MiniMax、OpenAI 及 Cursor 等主流厂商在 Agent 编排上的差异。核心讨论集中在协同效率（Context Engineering）上：通过 Evomap 的对照实验证明了自然语言汇报导致的「有损压缩」是协同失败的主因，而真正的多智能体价值在于建立一套包含「为什么拆、怎么验、什么时候停」的运行时系统（Runtime），而非简单的提示词编排。最后，文章展望了多智能体...
+2026-08-15 00:00:00
 
 
 
 ### [GLM-5.3：前沿编程能力与涌现的网络安全能力](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492)
 
-2026-08-14 13:31:00 | 标签: GLM-5.3, LLM, AI 编程, 网络安全, 强化学习
-
-> 智谱正式发布 GLM-5.3 模型。该模型在保持 GLM-5.2 基座不变的前提下，通过极致的后训练强化学习（Scaling）大幅提升了智能上限。GLM-5.3 在编程能力上表现优异，在 Terminal-Bench 3.0 等多个基准测试中取得开源第一；同时，模型涌现出强大的网络安全防御能力，在白盒代码审查与漏洞发现中表现接近顶尖闭源模型。智谱联合国内多家安全实验室，利用该模型已累计发现 2，436 个漏洞，并宣布将在两周内开源模型权重，同步启动“开源的盾”计划以赋能开源社区安全防御。
+2026-08-14 13:31:00
 
 
 
@@ -5280,25 +5276,19 @@
 
 ### [实用循环工程](https://addyo.substack.com/p/practical-loop-engineering)
 
-2026-08-14 22:30:53 | 标签: AI Agent, AI 编程, Claude Code, LLM, 自动化
-
-> 本文介绍了如何在 Claude Code 中设计可靠的智能体循环。它对比了 goal 原语（持续迭代直到满足可衡量的成功条件）与 loop 原语（像 cron 任务一样按计划重新运行提示词）。Addy Osmani 分享了他日常的开源维护工作流，包括 Agent Skills 的 GitHub issue 自动分拣和 PR 分拣，并演示了如何组合 loop 和 goal 来处理重复性工作。他强调了确定性的停止标准、将编写代码的智能体与验证代码的智能体分离，以及不要将审美或判断力随任务一起委派。他提供了具体的提示词示例，并警告说 goal 背后的评估器只检查设定的硬性规则，而不检查输出是否真正优...
+2026-08-14 22:30:53
 
 
 
 ### [DeepSeek-Harness-拆解：一套能拼装的-Agent-架构](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803587&idx=1&sn=a5ac30af9c015db111b60f947eb4e240)
 
-2026-08-14 17:20:00 | 标签: DeepSeek, AI Agent, Cordis, 插件架构, LLM
-
-> 文章详细剖析了 DeepSeek 首款 Agent 产品 DeepSeek Harness 的核心设计。其架构基于 Cordis 插件框架，践行「一切皆插件」理念，通过 Fiber 状态机和 effect 机制实现了可逆副作用管理，确保插件在卸载或热重载时能完整逆转对环境的修改。文章深入探讨了其独特的双层 Scope 链设计，通过逻辑绑定而非重复加载实现预设（Preset）的高效复用；分析了基于 node:worker_threads 的 Code Mode 隔离方案，提供了比传统 vm 沙箱更可靠的安全性；并介绍了分层遮蔽的工具注册算法。最后，作者对比了 DeepSeek Harness 与...
+2026-08-14 17:20:00
 
 
 
 ### [重构协同：关于-AI-Native-团队的思考](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650545393&idx=1&sn=d2961b8175bd165a5f6b3c950976395f)
 
-2026-08-14 11:12:00 | 标签: AI Native, AI Agent, 知识底座, 团队协同, 软件工程
-
-> 文章指出当前企业 AI 提效面临「单点优化、全局低效」的困境，其根源在于协同缺失。作者提出，AI Native 的核心在于将生产侧的流程串联者从人转变为 Agent。理想的 AI Native 团队应具备「知识底座 + Agent + 人」的三层闭环结构：最底层是沉淀业务规则与流程的统一知识底座，中间是各司其职的 Agent，顶层是负责目标与判断的人。文章强调，协同工具是基建，而真正的瓶颈在于构建具备自治与保鲜能力的存量业务知识底座，这是企业跨越全局效率门槛的必选项。
+2026-08-14 11:12:00
 
 
 
@@ -13716,105 +13706,79 @@
 
 ### [不要分类，去“幻觉”吧！](https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/)
 
-2026-08-15 05:54:35 | 标签: LLM, AI 工作流, 向量嵌入, 分类, 提示词工程
-
-> 本文讨论了在使用 LLM 将内容分类到庞大的预定义分类体系时，一种巧妙的变通方法。当标签集过于庞大，无法放入提示词的上下文窗口时，作者建议采用两步走的方法：首先，指示 LLM 在不受现有词汇限制的情况下，“幻觉”（生成）出最适合该内容的、新颖的标签；其次，利用向量嵌入在这些想象的标签与实际存在的语料库之间寻找最接近的匹配项。这种方法在保持固定数据库完整性的同时，有效地利用了 LLM 的创造力。
+2026-08-15 05:54:35
 
 
 
 ### [5-篇有趣的-Agentic-AI-论文值得阅读](https://www.kdnuggets.com/5-fun-agentic-ai-papers-to-read)
 
-2026-08-14 20:00:13 | 标签: AI 智能体, ReAct, Toolformer, Generative Agents, Voyager
-
-> 本文介绍了 agentic AI 中的五篇基础性论文，每篇聚焦于不同能力。ReAct 展示了语言模型中推理与行动的协同循环。Toolformer 证明了模型如何通过自监督方式学习使用算术、搜索和翻译等工具。Generative Agents 通过记忆、反思与规划，在交互式环境中模拟出可信的人类行为。Voyager 则在 Minecraft 中探索持久具身学习，运用自动课程设置、技能库与迭代提示实现持续探索、学习与进步。AutoGen 提出一种多智能体对话框架，借助角色专化与工具集成来解决复杂任务。这些论文共同覆盖了现代 AI 智能体的关键构建模块：推理、行动、工具、记忆、反馈、规划与协作。
+2026-08-14 20:00:13
 
 
 
 ### [Cursor-加入-SpaceX-·-Cursor](https://cursor.com/blog/joining-spacex)
 
-2026-08-14 20:00:00 | 标签: AI 编程, LLM, 收购, SpaceX, xAI
-
-> Cursor（Anysphere）已正式被 SpaceX 收购，完成了自 4 月启动的战略进程。此次收购使 Cursor 团队得以接入全球规模最大的 GPU 集群之一，从而能够开发更强大且更具成本效益的 AI 模型。公告特别指出，Grok 4.6 的近期发布正是此次协同效应的早期成果。通过将 SpaceX 庞大的算力与 Cursor 的 AI 编程界面相结合，该合作旨在实现智能的规模化，让开发者能够专注于解决复杂问题，而非处理常规编码工作。
+2026-08-14 20:00:00
 
 
 
 ### [我用-LLM-对我的《我的世界》房子发起了围攻](https://towardsdatascience.com/i-made-an-llm-lay-siege-to-my-minecraft-house/)
 
-2026-08-14 20:00:00 | 标签: LLM, AI 智能体, 游戏设计, 对抗性设计, 《我的世界》
-
-> 本文研究了大型语言模型（LLM）能否为《我的世界》完成对抗性关卡设计，这是传统游戏动态难度系统无法完成的任务。作者首先回顾了经典游戏导演系统：《求生之路》的基于强度的状态机系统，以及《雨中冒险 2》的基于信用点的敌人生成系统，指出两者都依赖标量指标（压力值、预算总额），无法理解护城河、狭窄通道这类具体的防御结构。为测试 LLM 能力，作者开发了一款《我的世界》模组，将玩家基地序列化为无显式特征标签的分层文本网格，输入给配备预算和单位菜单的 LLM，由其生成敌波次。实验显示 LLM 可以识别防御机制（如护城河、黑曜石墙），并生成针对性的反制波次，例如携带海绵的僵尸来排干护城河的水。但该项目面临诸...
+2026-08-14 20:00:00
 
 
 
 ### [GitHub---EmilResearch/RAGless:-RAGless-是一个语义检索系统，无需在运行时使用-LLM-即可回答关于文档的问题。](https://github.com/EmilResearch/RAGless)
 
-2026-08-14 17:51:11 | 标签: RAG, LLM, 向量数据库, Qdrant, AI 架构
-
-> RAGless 是一个开源项目，它通过用纯检索方法取代运行时的 LLM 合成，挑战了标准的生成式 RAG 范式。在摄入阶段，LLM 将源文档处理为结构化的问答块，并将其索引到本地的 Qdrant 向量数据库中。在运行时，系统执行“查询-问题”（Q-Q）匹配，通过答案 ID 聚合分数，从而提供稳定、可验证且即时的响应。这种架构在高风险环境中具有显著优势，包括零运行时成本、完全隐私保护以及消除运行时幻觉，但代价是牺牲了生成式模型在实时性方面的灵活性。
+2026-08-14 17:51:11
 
 
 
 ### [Seedance-2.0-fast、MiniMax-H3、Wan-3.0，高性价比模型测试来喽！](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247498156&idx=1&sn=84b0d3c678508344ac48b663fab4184e)
 
-2026-08-14 16:11:00 | 标签: AI视频, 视频生成, 模型评测, 提示词工程, AI短剧
-
-> 作者针对当前热门的 0.6 元/秒档高性价比 AI 视频模型（Seedance 2.0 fast、MiniMax H3、Wan 3.0）以及专业档的 Seedance 2.5 进行了多维度实测。文章通过动作打斗、女团 MV 群像、AI 短剧微表情、仙侠法术、产品广告及游戏 UI 交互等六大真实场景，对比了各模型在画面流畅度、角色一致性、提示词遵循度、节奏同步及细节质感等方面的表现。作者指出，Seedance 2.0 fast 在动作运镜和细节维持上表现均衡，MiniMax H3 空间关系清晰且节奏感强，而 Wan 3.0 则在人物质感和皮肤细节上更具优势。文中还附带了极其详尽的实测 Promp...
+2026-08-14 16:11:00
 
 
 
 ### [智谱发布-GLM-5.3，Google-推出-Gemini-3.7-Flash，DeepSeek-开放-V4-Pro-正式版权重](https://mp.weixin.qq.com/s?__biz=MzkyMzcwMDIyMQ==&mid=2247503253&idx=1&sn=89c6b101df2fb7b9e581b602e6f6abb7)
 
-2026-08-14 16:05:00 | 标签: AI模型, 大语言模型, Agent框架, 智谱, Google
-
-> 本文系统性梳理 8 月中旬发布的多个 AI 旗舰模型与工具框架：智谱 GLM-5.3 支持 1M 上下文，针对编程与网络安全任务优化；Google Gemini 3.7 Flash 处理多模态输入并强化 Agent 工作流，通过 API 提供服务；DeepSeek 开放 1.6T 参数 V4 Pro 正式版权重，并发布插件化 Agent 框架 Harness；Arcee nac 框架管理长周期任务，Google ADK 更新保留多轮 Agent 状态。文章详细对比各模型参数、许可证、部署门槛与适用场景。
+2026-08-14 16:05:00
 
 
 
 ### [使用-Amazon-Nova-Forge-为多轮强化学习自定义奖励函数-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge/)
 
-2026-08-14 16:02:10 | 标签: 强化学习, LLM, Amazon Nova, GRPO, 奖励函数
-
-> 本文深入探讨了如何利用 Amazon Nova Forge 对多轮智能体任务进行强化微调（RFT）。文章解释了“自带编排”（BYOO）功能如何允许开发者在隔离环境中实现复杂的自定义奖励逻辑。核心重点在于设计有效的奖励结构，结合基于结果的信号、行为激励和明确的惩罚，以引导 Nova Lite 2.0 等模型。通过一个实际的“编码前先询问”示例，作者演示了如何使用组相对策略优化（GRPO）实现这些奖励，同时强调了关键的工程挑战，如安全代码执行以及“奖励崩溃”（reward collapse）的检测——这是一种由于缺乏组内差异导致组件无法提供学习信号的隐性失败。
+2026-08-14 16:02:10
 
 
 
 ### [使用-Amazon-SageMaker-AI-和-Bedrock-AgentCore-构建智能体工作流-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore/)
 
-2026-08-14 15:58:44 | 标签: AI 智能体, Amazon SageMaker, Amazon Bedrock, OpenTelemetry, 多智能体系统
-
-> 本文解决了智能体工作流中的常见挑战：在不重写智能体框架的情况下，将托管基础模型与定制、成本优化的模型相结合。它提供了在 Amazon SageMaker AI 上部署 Qwen 3.5 9B 的详细步骤，将其集成到与 Amazon Bedrock 模型的多智能体系统中，并将工作流部署到 Amazon Bedrock AgentCore 运行时。一个关键重点是实现 SageMaker 端点的令牌级可观测性，这是 Strands Agents 默认不提供的。解决方案涉及手动发出 `gen_ai.chat` OpenTelemetry 跨度来跟踪令牌使用情况，确保成本和延迟监控。本文还强调了为 vL...
+2026-08-14 15:58:44
 
 
 
 ### [DeepSeek-Harness-很妙：这不是一个产品，而是一个战略](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649110625&idx=1&sn=0c54f707e0b4b3bf33f4325b16a970e3)
 
-2026-08-14 13:47:00 | 标签: DeepSeek, AI Agent, 开源生态, AI 编程, 软件架构
-
-> 本文对 DeepSeek 新近开源的开发工具 DeepSeek Harness (DSH) 进行了战略层面的深度解读。作者指出，DSH 采用「一切皆插件」的极端模块化设计（基于 Cordis 内核），允许开发者自由替换模型、工具、沙箱乃至 Agent Loop。这种设计并非单纯的工程审美，而是 DeepSeek 面对 Agent 范式尚未收敛时的战略选择。通过将 Harness 开源并插件化，DeepSeek 旨在动员全球开发者共同探索不确定的技术路线，从而在小团队限制下构建「内核集中、创新分布」的生态，最终通过社区反馈推动模型与 Harness 的协同进化，争夺 Agent 时代的演化主导权...
+2026-08-14 13:47:00
 
 
 
 ### [DSH：DeepSeek-Harness-架构解析](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492398&idx=1&sn=250079a72e2b6d6886dc21d2c11917e2)
 
-2026-08-14 11:09:00 | 标签: AI工具, 架构设计, 插件系统, 大模型应用开发, DeepSeek
-
-> 本文围绕 DeepSeek Harness（DSH）的架构展开深度解析，结合其公开源码、vendored Cordis 补丁及 88 页《面向时空可组合性的编程范式》论文，首先提出 DSH 的核心是 Cordis 运行时插件图与 Session 追加式事件流双系统协同：前者负责定义系统当前的能力组成、依赖关系与作用域，后者负责记录 Agent 执行的完整历史事件。文章详细拆解了 Cordis 的 Context 服务隔离机制、Fiber 插件实例生命周期管理、effect 副作用回收规则，对比了其与 React Fiber 的设计差异；同时解析了 Event 的五种拦截模式、Loader 的三...
+2026-08-14 11:09:00
 
 
 
 ### [「腾讯员工实践」手把手教你用-WorkBuddy-打造懂你的智能秘书](https://mp.weixin.qq.com/s?__biz=MzYzODgxODMzNQ==&mid=2247492657&idx=1&sn=1e635dd1da37b629508ac381b6155e20)
 
-2026-08-14 10:55:00 | 标签: 个人效率, AI 工具, 任务管理, 注意力管理, WorkBuddy
-
-> 文章讲述腾讯 PA 团队高级项目经理雅良如何使用 WorkBuddy 搭建名为「FocusFlow 专注流」的自定义 Skill，解决多线程任务管理中的痛点。作者指出传统 Todo List 只能记录任务、番茄钟只能计时，都无法降低任务启动成本。FocusFlow 的核心思路是管理注意力而非时间，通过 AI 任务分诊将模糊任务拆解为 15-25 分钟可执行的专注单元，配合红黄绿优先级标记、专注过程记录（含中断原因与能量评分）、以及日报周报复盘，形成完整闭环。截至目前已管理 81 个任务、129 个专注单元、76 条专注记录。文章最后提供了完整的五步实操指南，包括任务数据结构定义、AI 分诊指令...
+2026-08-14 10:55:00
 
 
 
 ### [DeepSeek-Harness-架构拆解：一切皆插件的-Agent-运行时](https://mp.weixin.qq.com/s?__biz=MzU2NzkxNDY0Ng==&mid=2247490890&idx=1&sn=5caeeddb3aa6fbdfdcaebcba3bbdcdae)
 
-2026-08-14 10:14:00 | 标签: AI Agent, DeepSeek, 架构设计, TypeScript, Agent 框架
-
-> DeepSeek Harness 是 DeepSeek 开源的 TypeScript Agent 运行时框架，旨在解决复杂 Agent 系统在长期会话、工具治理、安全审批及多形态部署中的可维护性问题。该框架基于 Cordis 构建，核心理念是「一切皆插件」，通过明确的「能力接缝」（Capability Seam）将模型、工具、会话存储、沙箱及界面等能力解耦。文章详细拆解了其分层的 Agent 生命周期（Turn/Step/Tool）、基于事件溯源的会话机制、以及严谨的工具安全执行链路，并分析了其在多产品形态（Web/Headless/Python SDK）下的工程优势与潜在的系统复杂性成本。
+2026-08-14 10:14:00
 
 
 
@@ -49532,41 +49496,31 @@
 
 ### [如何使用-Python-构建基础的-Discord-叙事、聊天和心理健康机器人](https://www.freecodecamp.org/news/how-to-build-a-basic-discord-bot-with-python/)
 
-2026-08-15 00:40:28 | 标签: Discord 机器人, Python, AI 聊天, 教程, 异步编程
-
-> 本文提供了一个详细的动手教程，教您从零使用 Python 创建 Discord 机器人。文章首先揭开机器人架构的神秘面纱——说明机器人只是一个连接到 Discord API 的 Python 程序——并逐步演示环境搭建、使用环境变量进行安全令牌管理，以及 discord.py 的基础知识，包括指令、事件和使用 async/await 的异步编程。教程逐步构建一个具备四大核心功能的机器人：一个交互式的 !story 指令，随机生成叙事并通过基于字典的状态系统记住用户进度；一个用于闲聊的 !chat 指令；一个提供心理健康支持的 !support 指令，并附带机器人并非治疗师的免责声明；以及通过 ...
+2026-08-15 00:40:28
 
 
 
 ### [如何使用-LangChain-深层智能体构建多智能体交易研究系统-完整手册](https://www.freecodecamp.org/news/build-a-multi-agent-trading-research-system-with-langchain-deep-agents-handbook/)
 
-2026-08-15 00:34:24 | 标签: AI 智能体, LangChain, LLM, AI 工作流, 交易策略
-
-> 本手册详细介绍了如何使用 LangChain 深层智能体、EODHD 市场数据和确定性的 Python 评估层构建多智能体交易研究系统。关键设计约束是智能体控制策略逻辑，但绝不控制用于判断其表现的证据：一个共享的回测引擎负责执行时间、投资组合会计、交易成本和指标，而固定的开发/验证/保留分割以及预先编写的策略选择规则则约束实验周期。协调员、策略工程师和研究批评家共同完成了三个版本：v1 复制手动基线，v2 测试市场制度过滤器，v3 进行最终修订。只有在冠军策略被冻结后，保留测试集才会被解锁进行最终评估，随后对完整的研发轨迹进行审计。文章强调防止无控制地搜索吸引人的回测结果，并提供了数据验证、隔...
+2026-08-15 00:34:24
 
 
 
 ### [dots3-note-Preview：迈向服务真实生活的长程智能体，坚定的第一步](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff)
 
-2026-08-14 19:25:00 | 标签: 多模态 AI, 长程 Agent, 强化学习, TEMPO 方法, 开源模型
-
-> 文章宣布开源 dots3-note Preview，作为 dots3 系列中最轻量的模型，拥有 280B 参数、16B 激活参数，支持 512K 上下文并具备文本、视觉、语音的多模态理解能力。作者阐述了模型在复杂推理、长程 Agent 任务上的优化，并通过强化学习的 TEMPO 方法将长程任务拆分为 macro‑step，实现自我评价与策略更新。文章展示了在 ARC‑AGI‑3 等环境中的实验结果，说明模型在自我评估和记忆更新方面的优势，并提供了两个面向真实生活的评测环境 VibeSearchBench 与 VibeLifeBench，以促进社区复现和衡量长程任务能力。最后指出模型仍存在幻觉抑...
+2026-08-14 19:25:00
 
 
 
 ### [为什么-Opus-5-让人感觉更难合作？](https://mun-logadan.github.io/why-does-opus-5-feel-worse/)
 
-2026-08-14 18:12:48 | 标签: AI模型, Opus AI, 用户体验, 基准测试, AI开发
-
-> 作者及其同事发现 Opus 5 不如 Opus 4.7、Opus 4.8 和 Fable 用户友好，尽管其功能增强。主要问题是 Opus 5 经常做出假设而不检查，并且在意图不明确时不询问，导致需要仔细监督。本文建议，这种行为源于在基准测试中表现良好的压力和创建自我改进 AI 的愿望。作者强调，在真实场景中，模型停止询问澄清信息的重要性，因为歧义常见，错误假设的后果可能严重。
+2026-08-14 18:12:48
 
 
 
 ### [DeepSeek-V4-Pro-GA-Release-|-DeepSeek-API-Docs](https://api-docs.deepseek.com/news/news260813/)
 
-2026-08-14 17:55:33 | 标签: AI 模型, DeepSeek, OpenAI, API, 定价
-
-> DeepSeek 发布了 V4-Pro，具有显著的智能体升级，旨在提高生产效率；灵活的推理能力，根据任务复杂度进行优化；以及原生支持 OpenAI 的 Responses API，优化了 Codex 的集成体验。此次更新还包括 API 定价的全面改革，引入峰值和非峰值时段，在非峰值时段提供 50% 的折扣，以鼓励灵活的工作负载调度。新定价将于 2026 年 8 月 16 日生效。
+2026-08-14 17:55:33
 
 
 
@@ -49578,33 +49532,25 @@
 
 ### [DeepSeek-Harness-首发实测-+-入门教程](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247589503&idx=1&sn=1ac0c26c5bd834eb68060600038d0e23)
 
-2026-08-14 15:14:00 | 标签: AI 编程, DeepSeek, AI Agent, 插件系统, 模型调用
-
-> 文章首先介绍 DeepSeek Harness 的概念与定位，随后提供完整的安装指南，包括 Node 环境准备、命令行安装以及 API Key 配置。接着通过四个实战任务（代码仓库架构图、知识讲解网站、3D 游戏、全栈 PPT 生成器）展示其在标准、极简、PTC、创造四种运行模式下的使用方法和效果，并对比了与 Codex、Claude Code 的差异。文中还解析了插件系统的设计理念、社区插件使用方式以及自定义插件的流程，最后给出使用感受、成本分析以及对未来发展的期待。
+2026-08-14 15:14:00
 
 
 
 ### [算子筑基，智惠未来｜中国电信星辰杯·高校-AI-算子开发挑战赛报名开启！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834317&idx=1&sn=b34e1c8e04eff178c349ac37a08fb6c4)
 
-2026-08-14 12:00:00 | 标签: 昇腾算子, AI 算子开发, 高校竞赛, 国产算力, 人工智能
-
-> 中国电信与华为联合主办星辰杯高校 AI 算子开发挑战赛，提供 35 万元奖金池及直通实习机会，基于昇腾 Ascend C 在 NPU 上开发高性能 AI 算子，初赛包含 9 道题目（A/B/C 三组），面向全国高校培养人才，报名截止 9 月 15 日，决赛颁奖预计 11 月。
+2026-08-14 12:00:00
 
 
 
 ### [Linux-内核被-AI-搞“太大了”！Linus-吐槽：AI-找了一堆小-Bug，但这已成为「新常态」](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834317&idx=2&sn=30823713e61e511a7d940ffdb2e57793)
 
-2026-08-14 12:00:00 | 标签: Linux 内核, AI 辅助开发, 开源社区, 软件工程, Bug 修复
-
-> 文章围绕 Linux 7.2 第七个候选版本（rc7）展开，指出该版本在提交数量和 diff 规模上远超往年，归因于 AI 辅助工具高效扫描代码、批量发现并提交大量微小 Bug 修复，形成「新常态」。Linus 在邮件中感叹虽然多数改动规模小，但数量庞大，导致整体体积异常；他表示除非出现严重问题，否则将按计划发布。文章还回顾了 Linus 对 AI 的演变态度：5 月曾因 AI 生成的 Bug 报告泛滥而抱怨，要求走公开渠道；7 月则转为欢迎并明确表示「如果不接受可以 Fork」，强调希望开发者用 AI 提升效率，而非生成不可理解的代码甩给维护者。同时，文章梳理了 Linux 7.2 的核心新...
+2026-08-14 12:00:00
 
 
 
 ### [企业内-Agent-工具落地实践：统一-Harness、Skill-与虚拟文件系统](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247696970&idx=1&sn=5f7777dfa41a0a08c6d9e4d1feab6336)
 
-2026-08-14 08:45:00 | 标签: AI Agent, Agent 架构, 企业级 AI, AI 工作流, 安全与治理
-
-> 文章结合 Stripe Knowledge AI Platform（Kai）与 Deep Agents 的公开实践，系统论述企业 Agent 从演示走向生产的核心架构问题。作者认为分水岭不是模型而是运行时，提出四层架构：入口层、控制面、企业 harness 与通用 runtime；harness 负责执行编排、权限、检查点与审计，skill 负责把分散的领域经验变成可治理的软件资产，虚拟文件系统则承担长任务的上下文、证据与交付产物。文章进一步给出 skill 的两阶段路由、联邦所有权、最小数据模型与控制面设计，强调 "prompt 不是安全边界"，提出有效能力等于用户授权、Agent 配置、s...
+2026-08-14 08:45:00
 
 
 

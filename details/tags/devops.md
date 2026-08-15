@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-15 08:38:18 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-15 10:46:46 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -590,9 +590,7 @@
 
 ### [Vercel-CDN-现已支持加密客户端问候-ECH---Vercel](https://vercel.com/changelog/encrypted-client-hello-now-supported-on-vercel-cdn)
 
-2026-08-15 00:00:00 | 标签: ECH, TLS, SNI, Vercel, CDN
-
-> Vercel 宣布在其 CDN 平台上为使用 Vercel DNS 的域名提供加密客户端问候 (ECH) 的平台级支持。ECH 通过加密服务器名称指示 (SNI) 解决了 HTTPS 中长期存在的隐私漏洞，此前 SNI 会向网络观察者泄露目标主机名。当 ECH 启用时，观察者只能看到与 Vercel 共享主机名 vercel-ech.com 的通用连接。该功能已针对 Chrome、Edge 和 Firefox 等支持的现代浏览器自动启用，开发者无需进行额外配置。
+2026-08-15 00:00:00
 
 
 
