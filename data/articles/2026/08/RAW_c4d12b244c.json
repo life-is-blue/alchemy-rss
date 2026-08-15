@@ -1,0 +1,48 @@
+{
+  "id": "RAW_c4d12b244c",
+  "title": "不要分类，去“幻觉”吧！",
+  "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+  "date": "2026-08-15 05:54:35",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">14th August 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Aug/14/dont-classify-hallucinate/\">\n    <p><strong><a href=\"https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications\">Don't classify. Hallucinate!</a></strong> I still have quite a bit of older content on my blog that I never got round to tagging. My blog has <a href=\"https://simonwillison.net/\">1,856 tags</a> - likely too many to feed to an LLM in one go and say \"which of these tags match the following content\".</p>\n    <p>Doug Turnbull has a neat solution. Tell the model to output tags without any details of the existing vocabulary, then use vector embeddings against the existing corpus to find the concrete tags that are closest to the ones the model imagined might fit!</p>\n    <p>His example prompt suggests including an example of the shape of your tags to help the model make a more useful guess:</p>\n    <blockquote>\n     <p><code>Your task is to create novel, never seen before, furniture, home goods, or hardware classification that best fit a search query.</code></p>\n     <p><code>Product classifications might look like:</code></p>\n     <p><code>Furniture / Living Room Furniture / Coffee Tables &amp; End Tables / Coffee Tables</code>\n      <br>\n      <code>Décor &amp; Pillows / Decorative Pillows &amp; Blankets / Throw Pillows</code>\n      <br>\n      <code>Furniture / Bedroom Furniture / Dressers &amp; Chests</code>\n      <br>\n      <code>Kitchen &amp; Tabletop / Kitchen Organization / Food Storage &amp; Canisters</code>\n      <br>\n      <code>School Furniture and Supplies / School Furniture / School Chairs &amp; Seating / Stackable Chairs</code>\n      <br>\n      <code>Baby &amp; Kids / Toddler &amp; Kids Bedroom Furniture / Kids Beds</code></p>\n     <p><code>Here's the query to generate classifications for:</code></p>\n     <p><code>brown coffee table</code></p>\n    </blockquote>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9596/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "与其强迫 LLM 从庞大的现有标签集中进行选择，不如先利用模型“幻觉”出理想的标签，然后使用向量嵌入将其映射到真实的分类体系中。",
+  "oneSentenceSummary": "与其强迫 LLM 从庞大的现有标签集中进行选择，不如先利用模型“幻觉”出理想的标签，然后使用向量嵌入将其映射到真实的分类体系中。",
+  "summary": "本文讨论了在使用 LLM 将内容分类到庞大的预定义分类体系时，一种巧妙的变通方法。当标签集过于庞大，无法放入提示词的上下文窗口时，作者建议采用两步走的方法：首先，指示 LLM 在不受现有词汇限制的情况下，“幻觉”（生成）出最适合该内容的、新颖的标签；其次，利用向量嵌入在这些想象的标签与实际存在的语料库之间寻找最接近的匹配项。这种方法在保持固定数据库完整性的同时，有效地利用了 LLM 的创造力。",
+  "mainPoints": [
+    {
+      "point": "大型分类体系超出了 LLM 的上下文限制。",
+      "explanation": "由于 Token 限制和噪声增加，将数千个现有标签输入到提示词中既低效且往往无法实现。"
+    },
+    {
+      "point": "将“幻觉”作为功能性桥梁。",
+      "explanation": "通过先让 LLM 生成理想且不受约束的标签，你可以绕过预先提供完整词汇的需求。"
+    },
+    {
+      "point": "通过嵌入将生成的标签映射到真实语料库。",
+      "explanation": "利用向量相似度寻找最接近的实际标签，从而弥合 LLM 的创造性输出与固定数据库之间的差距。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "LLM",
+    "AI 工作流",
+    "向量嵌入",
+    "分类",
+    "提示词工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 227,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786744475000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-15 05:54:35"
+}

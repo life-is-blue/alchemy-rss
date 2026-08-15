@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-15 06:13:23 | [返回首页](/README.md)
+**更新时间**: 2026-08-15 08:38:18 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14769)
+- [AI & 大模型](#ai-llm) (14796)
 - [软件架构](#architecture) (23)
 - [前端与全栈](#frontend-fullstack) (927)
-- [DevOps](#devops) (704)
+- [DevOps](#devops) (705)
 - [产品与商业](#product-business) (46)
-- [其他](#other) (6566)
+- [其他](#other) (6570)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Multi-Agent-的新趋势：从-Agent-Team-到-Agent-Swarm](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518293&idx=1&sn=dc3d001cf756fd83a7cdf2fbdf177582) - AI 精选
+- [GLM-5.3：前沿编程能力与涌现的网络安全能力](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492) - AI 精选
 - [DeepSeek-Harness-开发者预览版：一切皆插件](https://mp.weixin.qq.com/s?__biz=MzY4NzM3MTkxOQ==&mid=2247483698&idx=1&sn=b7c8d125ac4fdfad1c4a5daedc73bcb8) - AI 精选
 - [多智能体系统的模式与问题](https://www.anthropic.com/research/multiagent-systems) - AI 精选
 - [NVIDIA-Nemotron-3.5-Lightning-为长期运行的智能体提供快速、精准的专用任务执行](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/) - AI 精选
@@ -40,10 +42,8 @@
 - [Codex-从-0-到-1000-万用户：构建-ChatGPT-Work-—-与-OpenAI-的-Akshay-Nathan-对话](https://www.latent.space/p/chatgpt-work) - AI 精选
 - [Agent-开发指南：技术太多，该怎么学？](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492366&idx=1&sn=260b5fac24951a19de106ab89c5cec31) - AI 精选
 - [Kimi-K3-重新绘制开放前沿，-Muse-Spark-1.1-以低价击败竞争对手，-Cloudflare-采取措施阻止爬虫](https://www.deeplearning.ai/the-batch/issue-363) - AI 精选
-- [AI-#178：通用智能的警钟-—-LessWrong](https://www.lesswrong.com/posts/BK7E4jHNMykpnt796/ai-178-a-fire-alarm-for-general-intelligence) - AI 精选
-- [编程心得：Vibe-上百亿-Token-后，我收获了什么?](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492307&idx=1&sn=e9fb1f4fae460a121e6097f5726603d5) - AI 精选
 
-- [查看全部 14769 篇...](/details/tags/ai-llm.md)
+- [查看全部 14796 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 704 篇...](/details/tags/devops.md)
+- [查看全部 705 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 
-- [查看全部 6566 篇...](/details/tags/other.md)
+- [查看全部 6570 篇...](/details/tags/other.md)
 
 

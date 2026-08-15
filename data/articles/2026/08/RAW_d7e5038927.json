@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d7e5038927",
+  "title": "DeepSeek-V4-Pro GA Release | DeepSeek API Docs",
+  "url": "https://api-docs.deepseek.com/news/news260813/",
+  "date": "2026-08-14 17:55:33",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <nav class=\"theme-doc-breadcrumbs breadcrumbsContainer_gDTe\" aria-label=\"Breadcrumbs\">\n   <ul class=\"breadcrumbs\" itemscope itemtype=\"https://schema.org/BreadcrumbList\">\n    <li class=\"breadcrumbs__item\"><a aria-label=\"Home page\" class=\"breadcrumbs__link\" href=\"https://api-docs.deepseek.com/\"> \n      <svg viewBox=\"0 0 24 24\" class=\"breadcrumbHomeIcon_fbmM\">\n       <path d=\"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z\" fill=\"currentColor\"></path>\n      </svg> \n     </a></li>\n    <li class=\"breadcrumbs__item\"><span class=\"breadcrumbs__link\">News</span>\n     <meta itemprop=\"position\" content=\"1\"></li>\n    <li itemscope itemprop=\"itemListElement\" itemtype=\"https://schema.org/ListItem\" class=\"breadcrumbs__item breadcrumbs__item--active\"><span class=\"breadcrumbs__link\" itemprop=\"name\">DeepSeek-V4-Pro GA Release 2026/08/13</span>\n     <meta itemprop=\"position\" content=\"2\"></li>\n   </ul>\n  </nav>\n  <div class=\"tocCollapsible_lKxX theme-doc-toc-mobile tocMobile_kO7c\">\n   <button type=\"button\" class=\"clean-btn tocCollapsibleButton_KNXb\">On this page</button>\n  </div>\n  <div class=\"theme-doc-markdown markdown\">\n   <div class=\"row\">\n    <div class=\"col col--12\">\n     <p>We’re launching DeepSeek-V4-Pro today! 🚀</p>\n     <p>🔷 Major Agent upgrades with strong production gains!</p>\n     <p>🔷 Flexible <a href=\"https://api-docs.deepseek.com/guides/thinking_mode\">reasoning effort</a> for V4-Pro &amp; V4-Flash: low for simple tasks, high for daily Agent workflows, max for complex tasks.</p>\n     <p>🔷 Native OpenAI Responses API support, optimized for <a href=\"https://api-docs.deepseek.com/quick_start/agent_integrations/codex\">Codex</a> with one-click setup.</p>\n     <p>V4 Pro is now available on app/web. Try it via “Expert Mode”.</p>\n     <p>V4 Pro is also available via API. Model names remain unchanged—please refer to the API docs for setup details.</p>\n     <div align=\"center\">\n      <img src=\"https://api-docs.deepseek.com/img/v4_260813_benchmark_table_en.png\">\n     </div>\n     <hr>\n     <h3 class=\"anchor anchorWithStickyNavbar_YAqC\" id=\"api-pricing-update-\">API pricing update 💰<a href=\"#api-pricing-update-\" class=\"hash-link\" aria-label=\"Direct link to API pricing update 💰\" title=\"Direct link to API pricing update 💰\">​</a></h3>\n     <p>With the V4 lineup release, we’re updating our API pricing and introducing peak and off-peak rates. Off-peak rates are 50% lower than peak, enabling more flexible workload scheduling. 📉</p>\n     <p>New pricing takes effect at 16:00 UTC, Aug 16, 2026 🕒</p>\n     <div align=\"center\">\n      <img src=\"https://api-docs.deepseek.com/img/v4_260813_price_en.png\">\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "DeepSeek 推出 V4-Pro，带来重大智能体升级、灵活推理能力和原生 OpenAI Responses API 支持。",
+  "oneSentenceSummary": "DeepSeek 推出 V4-Pro，带来重大智能体升级、灵活推理能力和原生 OpenAI Responses API 支持。",
+  "summary": "DeepSeek 发布了 V4-Pro，具有显著的智能体升级，旨在提高生产效率；灵活的推理能力，根据任务复杂度进行优化；以及原生支持 OpenAI 的 Responses API，优化了 Codex 的集成体验。此次更新还包括 API 定价的全面改革，引入峰值和非峰值时段，在非峰值时段提供 50% 的折扣，以鼓励灵活的工作负载调度。新定价将于 2026 年 8 月 16 日生效。",
+  "mainPoints": [
+    {
+      "point": "重大智能体升级，提高生产效率。",
+      "explanation": "此次发布对智能体的能力进行了重大升级，旨在提高生产效率。"
+    },
+    {
+      "point": "灵活的推理能力，适应不同任务复杂度。",
+      "explanation": "V4-Pro 和 V4-Flash 现在提供可调节的推理能力，允许用户根据任务需求优化性能。"
+    },
+    {
+      "point": "原生 OpenAI Responses API 支持，优化 Codex 体验。",
+      "explanation": "此次更新引入了对 OpenAI Responses API 的原生支持，通过一键设置增强了 Codex 的体验。"
+    },
+    {
+      "point": "API 定价更新，峰值和非峰值时段。",
+      "explanation": "新的定价模型包括峰值和非峰值时段的差异化费率，在非峰值时段提供成本节省。"
+    }
+  ],
+  "keyQuotes": [
+    "我们今天推出了 DeepSeek-V4-Pro！🚀",
+    "V4 Pro 现已通过 '专家模式' 在 app/web 上提供。",
+    "新定价将于 2026 年 8 月 16 日 16:00 UTC 生效。"
+  ],
+  "tags": [
+    "AI 模型",
+    "DeepSeek",
+    "OpenAI",
+    "API",
+    "定价"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 129,
+  "domain": "api-docs.deepseek.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786701333000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-14 17:55:33"
+}
