@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-16 06:11:44 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-16 08:40:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -501,6 +501,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [加密货币交易心理学：战胜-FOMO-与恐慌](https://dev.to/shaktitiwari/crypto-trading-psychology-beating-fomo-and-panic-418p)
+
+2026-08-15 19:39:58 | 标签: 加密货币与 Web3, 交易心理学, 量化金融, 风险管理, 行为金融学
+
+> 文章试图通过鞅理论与随机过程构建数学框架，将加密货币交易心理学与量化金融相连接。可见内容主要由数学推导构成， presumably 用于建模市场动态并证明系统化方法优于情绪化决策的价值。然而，在克服 FOMO 与恐慌方面的实际意义并未在提供的内容中清晰阐述，且过于侧重数学可能限制其对目标心理学受众的可读性。
 
 
 
@@ -723,6 +731,14 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [走进-HAOQI.DESIGN：让-DOM-与-WebGL-共舞于复古未来主义舞台](https://tympanus.net/codrops/2026/08/15/inside-haoqi-design-letting-dom-and-webgl-share-a-retro-futurist-stage/)
+
+2026-08-15 21:28:53 | 标签: WebGL, Three.js, React, 滚动同步, 自定义着色器
+
+> 作者作为一名设计工程师，使用 Next.js、React、Lenis 和 Three.js 重构了个人作品集网站。核心挑战在于将基于 DOM 的内容与 WebGL 效果对齐在同一个滚动时间线上。通过禁用 Lenis 自身的 RAF 循环，并将滚动和渲染路由到同一个共享帧中，消除了 DOM 与 WebGL 之间的一帧延迟。全局的 ScrollBus 和 PointerBus 为这两个系统提供了统一的快照，从而实现了大体一致的坐标处理。项目网格通过缓存的矩形区域和自定义着色器在 WebGL 中镜像了 DOM 布局，这些着色器负责处理悬停显现、图像显影以及与滚动速度相关的卷曲效果。最后，一个玻璃材质...
 
 
 
@@ -1806,13 +1822,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1962,13 +1978,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3462,13 +3478,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5172,13 +5188,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_8b0505b894",
+  "title": "适合从事付费 AI 评估工作的 9 种技术背景",
+  "url": "https://dev.to/igorganapolsky/9-technical-backgrounds-that-fit-paid-ai-evaluation-work-56m4",
+  "date": "2026-08-16 05:15:28",
+  "author": "Igor Ganapolsky",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>AI evaluation is not only a software-engineering problem. Strong evaluation work also depends on people who can recognize subtle mistakes in mathematics, science, finance, and domain-specific reasoning.</p>\n  <p>I organized nine technical specialties into a compact directory of Handshake AI opportunity guides. Each guide explains the kinds of reasoning the specialty can contribute and links to the corresponding official opportunity page.</p>\n  <h2><a name=\"1-software-engineering\" href=\"#1-software-engineering\"> </a> 1. Software engineering</h2>\n  <p>Software engineers can evaluate implementation quality, debugging strategy, API design, testing, and whether a proposed fix actually satisfies a specification.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/software-engineer\" target=\"_blank\" rel=\"noopener noreferrer\">Software engineer opportunity guide</a></p>\n  <h2><a name=\"2-machine-learning\" href=\"#2-machine-learning\"> </a> 2. Machine learning</h2>\n  <p>ML practitioners can inspect experimental design, model behavior, evaluation methodology, data leakage, and whether a conclusion is supported by the evidence.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/machine-learning-expert\" target=\"_blank\" rel=\"noopener noreferrer\">Machine learning opportunity guide</a></p>\n  <h2><a name=\"3-mathematics\" href=\"#3-mathematics\"> </a> 3. Mathematics</h2>\n  <p>Mathematicians are useful when a task depends on proof structure, edge cases, symbolic reasoning, or distinguishing a persuasive-looking argument from a valid one.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/mathematics-ai-trainer\" target=\"_blank\" rel=\"noopener noreferrer\">Mathematics opportunity guide</a></p>\n  <h2><a name=\"4-physics\" href=\"#4-physics\"> </a> 4. Physics</h2>\n  <p>Physics expertise helps evaluate dimensional consistency, modeling assumptions, approximations, and whether a solution matches the behavior of the real system.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/physics-expert\" target=\"_blank\" rel=\"noopener noreferrer\">Physics opportunity guide</a></p>\n  <h2><a name=\"5-chemistry\" href=\"#5-chemistry\"> </a> 5. Chemistry</h2>\n  <p>Chemists can catch errors involving reaction mechanisms, molecular structure, laboratory constraints, thermodynamics, and unsafe or unsupported conclusions.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/chemistry-expert\" target=\"_blank\" rel=\"noopener noreferrer\">Chemistry opportunity guide</a></p>\n  <h2><a name=\"6-biology\" href=\"#6-biology\"> </a> 6. Biology</h2>\n  <p>Biologists can review causal claims, experimental interpretation, biological mechanisms, and whether an answer overgeneralizes from incomplete evidence.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/biology-expert\" target=\"_blank\" rel=\"noopener noreferrer\">Biology opportunity guide</a></p>\n  <h2><a name=\"7-quantitative-finance\" href=\"#7-quantitative-finance\"> </a> 7. Quantitative finance</h2>\n  <p>Quantitative-finance researchers can evaluate statistical assumptions, time-series reasoning, risk models, backtesting logic, and hidden sources of look-ahead bias.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/quantitative-finance-researcher\" target=\"_blank\" rel=\"noopener noreferrer\">Quantitative finance opportunity guide</a></p>\n  <h2><a name=\"8-investment-banking\" href=\"#8-investment-banking\"> </a> 8. Investment banking</h2>\n  <p>Investment-banking specialists can assess valuation logic, transaction mechanics, financial statements, market conventions, and whether a recommendation is grounded in the supplied facts.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/investment-banking-expert\" target=\"_blank\" rel=\"noopener noreferrer\">Investment banking opportunity guide</a></p>\n  <h2><a name=\"9-technical-generalists\" href=\"#9-technical-generalists\"> </a> 9. Technical generalists</h2>\n  <p>Some evaluation tasks reward breadth: breaking down unfamiliar problems, checking sources, identifying missing assumptions, and communicating a clear judgment.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/opportunities/generalist\" target=\"_blank\" rel=\"noopener noreferrer\">Generalist opportunity guide</a></p>\n  <h2><a name=\"before-applying\" href=\"#before-applying\"> </a> Before applying</h2>\n  <p>Treat every official opportunity page as the source of truth for current availability, requirements, selection, and compensation. Relevant expertise does not guarantee acceptance or project placement, and project availability can change.</p>\n  <p><a href=\"https://technical-ai-opportunities.iganapolsky.chatgpt.site/?utm_source=devto&amp;utm_medium=article&amp;utm_campaign=handshake-opportunity-atlas-20260815&amp;cta_id=devto-article-20260815\" target=\"_blank\" rel=\"noopener noreferrer\">Browse the complete Technical AI Opportunity Atlas</a></p>\n  <h2><a name=\"referral-disclosure\" href=\"#referral-disclosure\"> </a> Referral disclosure</h2>\n  <p>This is an independent guide, not an official Handshake website. The official opportunity buttons in the directory include my referral code. I may earn a referral bonus only if an eligible new fellow completes Handshake's qualifying paid production work. Applying does not guarantee acceptance, project placement, work, or payment.</p>\n </body>\n</html>",
+  "aiSummary": "本文列出了软件工程、机器学习、数学、物理、化学、生物学、量化金融、投资银行和技术泛科目这九种技术专长对付费 AI 评估工作的价值，阐述了每种专长所贡献的具体 reasoning 技能。",
+  "oneSentenceSummary": "本文列出了软件工程、机器学习、数学、物理、化学、生物学、量化金融、投资银行和技术泛科目这九种技术专长对付费 AI 评估工作的价值，阐述了每种专长所贡献的具体 reasoning 技能。",
+  "summary": "本文提供了付费 AI 评估任务中九大技术领域的结构化概览。它认为，有效的 AI 评估不仅限于软件工程，需要领域专家才能发现数学、科学和金融等领域中微妙的推理错误。对于每一种专长，作者都提供了其在该领域相关的评估技能简要说明，并链接到机会指南。文章还包括关于申请的实用注意事项以及对推荐补偿的披露。内容为信息性质，旨在指引专业人士寻找合适的 AI 评估机会。",
+  "mainPoints": [
+    {
+      "point": "AI 评估需要多样化的技术专长，不仅限于软件工程。",
+      "explanation": "作者强调，识别数学、科学和金融等专业领域中的细微错误，对可靠的 AI 评估至关重要。"
+    },
+    {
+      "point": "确定了九种技术专长，每种都有独特的评估贡献。",
+      "explanation": "从机器学习到化学，每一领域都提供独特的 reasoning 技能，提高 AI 系统评估的质量和可靠性。"
+    },
+    {
+      "point": "机会指南链接至每种专长的官方 Handshake AI 页面。",
+      "explanation": "本文作为目录，引导读者查看详细指南，说明要求、选择流程及报酬情况。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 评估不仅是软件工程问题。强大的评估工作还取决于那些能够识别数学、科学、金融以及领域特定推理中细微错误的人。",
+    "一些评估任务会奖励广度：分解陌生问题、检查来源、识别遗漏的假设，并传达清晰的判断。"
+  ],
+  "tags": [
+    "AI 评估",
+    "机器学习",
+    "软件工程",
+    "数学",
+    "物理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 382,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786828528000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-16 05:15:28"
+}

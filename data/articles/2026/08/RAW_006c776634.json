@@ -1,0 +1,60 @@
+{
+  "id": "RAW_006c776634",
+  "title": "Cloudflare 新增 Agent 追踪，存在截断限制与不一致的 Payload 默认设置",
+  "url": "https://www.infoq.com/news/2026/08/cloudflare-agent-tracing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-15 18:46:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has launched <a href=\"https://blog.cloudflare.com/agents-on-cloudflare/\">agent tracing</a>, the first component of Cloudflare Agents, a dashboard surface that gathers deployed agent sessions in one place. The release adds agent-level spans to the Workers tracing already in place, and it arrives with a pricing date attached: tracing is free during beta, and from October 1, 2026 it falls under Workers Observability pricing.</p>\n   <p>The problem statement is the useful part. An agent can return HTTP 200 and still fail. It may pick the wrong tool, hand stale context to a subagent, or burn tokens in a retry loop, and application telemetry will show the API request or the database query without showing the agent behavior that caused it.</p>\n   <p><a href=\"https://developers.cloudflare.com/workers/observability/traces/\">Workers tracing</a> already instrumented the infrastructure layer, covering fetch calls, KV reads, and D1 queries. Until now, traces for agents running on Workers carried those infrastructure spans with nothing around them. Agent tracing adds spans for agent invocations, model calls, tool execution, and approvals, with model and token usage attached as metadata. Each turn produces one trace:</p>\n   <p>invoke_agent {agent class}</p>\n   <p>├── chat {model}</p>\n   <p>└── execute_tool {tool}</p>\n   <p>&nbsp;&nbsp;&nbsp; └── tool_approval {tool}</p>\n   <p>Subagent work nests under the operation that invoked it, so a parent agent delegating to a subagent that calls a model, runs a tool, queries D1, and writes to KV appears as a single waterfall across both layers. Three fields tie spans to the dashboard: an agent name for the logical implementation, an agent ID for the instance, and a conversation ID. Cloudflare warns against deriving the agent name from a request or user identifier, which would multiply distinct agents in the view.</p>\n   <p>That adjacency is what developers responded to. Replying to Cloudflare's <a href=\"https://x.com/CloudflareDev/status/2084701142576238715\">announcement on X</a>, Mykyta Pavlenko wrote:</p>\n   <p>i'd try this on hermes just for the trace waterfall - seeing the model call directly above a bad tool argument is the debugging view i want</p>\n   <p>One caveat sits inside the approval span. The <a href=\"https://developers.cloudflare.com/agents/runtime/operations/observability/tracing/\">documentation</a> notes these represent lifecycle events within a Worker invocation and do not measure the time a person waits before responding across invocations. Human-in-the-loop latency, arguably the most interesting number in an approval workflow, is not what the span records.</p>\n   <p>Alongside the trace view, session replay reassembles the recorded conversation across turns: messages, reasoning, tool calls with arguments and results, and subagent activity. Cloudflare is explicit that this replays recorded data rather than re-executing the agent.</p>\n   <p>Payload recording is where teams need to pay attention, because the defaults are not consistent. Think does not store message or tool payloads unless storeMessages and storeTools are set on the agent class, and wrapAISDK() behaves the same way. Flue stores messages, system instructions, tool definitions, arguments, and results by default, requiring content: false to stop. The same platform feature therefore ships with opposite privacy defaults depending on which harness a team already chose, and message payloads routinely carry personal data or secrets.</p>\n   <p>The documented limitations deserve equal attention. Cloudflare states that traces are not a complete or lossless record of a conversation, that payload data is subject to span size limits so long messages, reasoning, tool arguments, and results may be truncated, and that session replay does not display images. Teams treating replay as an audit trail rather than a debugging aid will find it does not carry that weight.</p>\n   <p>Setup varies by stack. Think and Flue v2 or later instrument turns automatically. Direct AI SDK calls need a wrapAISDK() wrapper, which supports v6 and v7 and requires identity fields on each call since there is no Agent instance to infer them from. Custom harnesses use the Workers custom spans API, following OpenTelemetry's GenAI reference implementations, because Workers does not yet support the OpenTelemetry API directly. Cloudflare says it is working to add that, which would let frameworks emitting standard spans integrate without manual instrumentation. Span attributes follow the <a href=\"https://github.com/open-telemetry/semantic-conventions-genai\">OpenTelemetry Generative AI semantic conventions</a>, and traces export to any OTLP endpoint.</p>\n   <p>The pricing detail rewards a close read, because the metered unit is not what the Agents view displays. Every span counts as one observability event, including spans from SDK internals and other Worker-level operations the view does not surface. From October 1, Workers Free covers 200,000 events per day with three-day retention, and Workers Paid includes 20 million per month with seven-day retention at $0.60 per additional million. A verbose harness costs more than the dashboard suggests, and three to seven days is short for anyone chasing a pattern rather than an incident.</p>\n   <p>The release fits a pattern visible across vendors this quarter. Microsoft's <a href=\"https://www.infoq.com/news/2026/08/agent-framework-harness-ga/\">Agent Framework harness</a> shipped with OpenTelemetry enabled by default, and the AI Gateway tier of Azure API Management exports token metrics to Application Insights, Datadog, and Grafana. Each reaches the same conclusion from a different direction: the agent runtime needs its own telemetry layer, and infrastructure spans alone cannot explain what an agent did.</p>\n   <p>Cloudflare frames tracing as a step toward agents that improve themselves, feeding structured trace data into evaluations and an agent development lifecycle. That remains a stated direction. What exists today is visibility into which model a turn called, how many tokens it used, which tool it selected, and where the time went.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Adds Agent Tracing, with Truncation Limits and Uneven Payload Defaults\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/cloudflare-agent-tracing/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1786790760000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 推出 Agent 追踪，作为 Cloudflare Agents 的首个组件，为 Workers 可观测性增加了 Agent 级别的跨度，同时揭示了开发者需要关注的 Payload 默认设置不一致、截断限制及定价影响。",
+  "oneSentenceSummary": "Cloudflare 推出 Agent 追踪，作为 Cloudflare Agents 的首个组件，为 Workers 可观测性增加了 Agent 级别的跨度，同时揭示了开发者需要关注的 Payload 默认设置不一致、截断限制及定价影响。",
+  "summary": "Cloudflare 已发布 Agent 追踪功能，这是其 Cloudflare Agents 平台的首个组件，提供了一个展示已部署 Agent 会话的仪表板。该功能在现有的 Workers 基础设施追踪之上，增加了 Agent 级别的跨度——涵盖模型调用、工具执行和审批等环节。文章分析了该功能解决的问题：Agent 可能在返回 HTTP 200 的同时静默失败，而仅依赖基础设施的遥测数据无法揭示哪个工具被误用或哪些上下文已过期。文章详细介绍了追踪结构，指出子 Agent 的工作会嵌套在调用操作之下，且有三个字段（Agent 名称、Agent ID、对话 ID）将跨度与仪表板关联起来。文章还强调了几个注意事项：审批跨度不会捕获人工介入的延迟，Payload 记录的默认设置在各个框架中不一致（Think 需要显式选择加入，而 Flue 默认存储所有内容），且追踪存在截断限制。文章还分析了定价问题——每个跨度都算作一个可观测事件，包括 UI 中未显示的 SDK 内部实现，这使得冗长的框架比仪表板显示的更昂贵。文章将该发布置于更广泛的行业趋势中，指出 Microsoft 的 Agent Framework 和 Azure API Management 的 AI Gateway 层级都在向 Agent 原生遥测方向演进。",
+  "mainPoints": [
+    {
+      "point": "Agent 追踪填补了一个关键空白：基础设施跨度无法解释 Agent 的行为。",
+      "explanation": "Agent 可能返回 HTTP 200，但同时选择了错误的工具或在重试循环中消耗了大量 token。Workers 追踪之前只能显示获取调用和数据库查询，却无法揭示导致这些调用的 Agent 决策。"
+    },
+    {
+      "point": "Payload 默认设置在各个框架中不一致，存在隐私风险。",
+      "explanation": "Think 需要显式的 storeMessages/storeTools 标志；Flue 默认存储所有内容。消息 Payload 通常携带个人数据或机密信息，而同一平台功能会根据所选框架的不同而提供相反的默认设置。"
+    },
+    {
+      "point": "定价按跨度计算，而非按仪表板事件计算，这使得冗长的框架成本更高。",
+      "explanation": "每个跨度都算作一个可观测事件，包括 UI 中未显示的 SDK 内部实现。Workers Free 套餐每天覆盖 200K 事件，保留 3 天；付费套餐每月包含 2000 万事件，保留 7 天，超出部分按每百万 $0.60 计费。"
+    },
+    {
+      "point": "该发布是行业向 Agent 原生遥测转变的一部分。",
+      "explanation": "Microsoft 的 Agent Framework 默认启用 OpenTelemetry，Azure API Management 的 AI Gateway 层级将 token 指标导出到 Application Insights、Datadog 和 Grafana——所有这些都在指向同一个结论。"
+    },
+    {
+      "point": "追踪存在已知的限制：截断、无法回放图像，且无法测量人工延迟。",
+      "explanation": "跨度大小限制会截断长消息和工具参数。会话回放不显示图像。审批跨度测量的是 Worker 调用内的生命周期事件，而非人工等待响应的时间。"
+    }
+  ],
+  "keyQuotes": [
+    "Agent 可能返回 HTTP 200 但实际上失败了。它可能选择了错误的工具、将过时的上下文传递给子 Agent，或在重试循环中消耗 token。",
+    "因此，同一平台功能会根据团队已选择的框架而提供相反的隐私默认设置。",
+    "冗长的框架成本比仪表板显示的更高，而对于寻找模式而非单一事件的人来说，3 到 7 天的保留期太短了。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "可观测性",
+    "Cloudflare Workers",
+    "OpenTelemetry",
+    "AI 开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 854,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786790760000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-15 18:46:00"
+}
