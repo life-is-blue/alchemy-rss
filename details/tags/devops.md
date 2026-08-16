@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-16 08:40:34 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-16 10:53:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -590,9 +590,7 @@
 
 ### [Cloudflare-推出缓存响应规则，用于源站后的缓存控制](https://www.infoq.com/news/2026/08/cloudflare-cache-rules/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-15 14:28:00 | 标签: CDN, Cloudflare, 缓存优化, DevOps, 基础设施
-
-> Cloudflare 推出了缓存响应规则（Cache Response Rules），这是一个在响应阶段运行的规则引擎——在源站服务器响应之后、内容写入 Cloudflare 缓存之前执行。此前，缓存规则（Cache Rules）仅评估请求属性。新功能允许用户去除干扰性的头部，如 Set-Cookie、ETag 和 Last-Modified，管理缓存标签，并修改 Cache-Control 指令，而无需触碰源站应用。文章解释了双阶段缓存决策模型，提供了一个具体示例说明一个多余的 Set-Cookie 头部如何让原本可缓存的资源在所有数据中心都无法缓存，并澄清缓存响应规则是对现有缓存规则的补充...
+2026-08-15 14:28:00
 
 
 
