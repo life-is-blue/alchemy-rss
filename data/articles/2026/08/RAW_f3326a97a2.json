@@ -1,0 +1,50 @@
+{
+  "id": "RAW_f3326a97a2",
+  "title": "Anthropic IPO 的炒作风潮",
+  "url": "https://garymarcus.substack.com/p/the-hyping-of-anthropics-ipo",
+  "date": "2026-08-17 03:25:30",
+  "author": "Gary Marcus",
+  "siteName": "Marcus on AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <div class=\"captioned-image-container\">\n    <figure>\n     <a target=\"_blank\" href=\"https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png\" class=\"image-link image2 is-viewable-img can-restack\"> \n      <div class=\"image2-inset\">\n       <picture><source type=\"image/webp\" srcset=\"https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 424w, https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 848w, https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 1272w, https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 1456w\" sizes=\"100vw\"><img src=\"https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png\" alt=\"\" srcset=\"https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 424w, https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 848w, https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 1272w, https://media.bestblogs.dev/20260816212444_4c37b33c-26f4-4229-86ba-352f43d81fcb_1743x838.png 1456w\" sizes=\"100vw\" class=\"sizing-normal\"></picture>\n       <div class=\"image-link-expand\">\n        <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image\"></button>\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2\">\n           <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n          </svg>\n         </button>\n        </div>\n       </div>\n      </div> \n     </a>\n     <figcaption class=\"image-caption\">Sources say</figcaption>\n    </figure>\n   </div>\n   <p><span>I am watching something fascinating unfolding in real time. Anthropic is in an SEC-monitored “</span><a href=\"https://gilmartinir.com/what-is-a-quiet-period/\">quiet period</a><span>” before its IPO (expected sometime in the fall), somewhat limiting its communications (though not entirely; Amodei </span><a href=\"https://x.com/darioamodei/status/2088758816376807762?s=61\">discussed governance matters</a><span> on X yesterday, a rare appearance there for him, and the company continues to report on safety issues and so on). But that hasn’t stopped leakers and generative AI bulls from trying to convince audiences that Anthropic’s finances are spectacular. </span></p>\n   <p><span>Aside from the Friday </span><a href=\"https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/\">Reuters report above</a><span> in which Anthropic is said to be “projecting 2028 ‌revenue of roughly $190 billion to $200 billion”, based of course on undisclosed math, “according to two [unnamed] people familiar with the company's financials”, we also heard yesterday about </span><a href=\"https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html\">how amazing their Q2</a><span> was (further details below), by way of </span><a href=\"https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter\">documents that were leaked to Bloomberg News</a><span>. Anthropic may be “quiet”, but its fans are not. </span></p>\n   <p><span>Moreover, in a Friday </span><em>All-In </em><span>podcast interview, Gavin Baker claimed that Anthropic was making money on every token. A couple weeks earlier the prominent podcaster Dwarkesh Patel projected (in a claim he partly walked back, see below) that “Anthropic likely ends the year with ~$100-150B of revenue”</span></p>\n   <p>Below, I dissect these claims and explain what’s been left out.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文批判性地审视了围绕 Anthropic 即将进行的 IPO 的炒作，剖析了虚高的营收预测和泄露的财务数据，揭示了公众舆论中被忽略的关键财务现实。",
+  "oneSentenceSummary": "本文批判性地审视了围绕 Anthropic 即将进行的 IPO 的炒作，剖析了虚高的营收预测和泄露的财务数据，揭示了公众舆论中被忽略的关键财务现实。",
+  "summary": "Gary Marcus 分析了媒体和投资者对 Anthropic 预期 IPO 的炒作，重点关注该公司在 SEC 规定的静默期内出现的各种言论。他审视了几个具体的说法：路透社援引匿名消息源称其 2028 年预测营收将达 1900 亿至 2000 亿美元；泄露的彭博社文件声称其 Q2 营收飙升超 14 倍，突破 115 亿美元；以及 Gavin Baker（All-In 播客）和 Dwarkesh Patel 预测其年营收将达 1000 亿至 1500 亿美元。Marcus 系统地剖析了每一个论断，解释了这些数据在数学和商业模式上的不合理性，同时指出了哪些关键的财务指标和背景被刻意排除在公众讨论之外。",
+  "mainPoints": [
+    {
+      "point": "在静默期内，未经证实的言论推高了 Anthropic 的财务预测。",
+      "explanation": "尽管 SEC 对信息披露有严格限制，但泄露的文件和媒体报道放大了乐观的营收预测，而这些预测缺乏透明的方法论或数据支持。"
+    },
+    {
+      "point": "预测 2028 年营收达到 1900 亿至 2000 亿美元在数学上是不合理的。",
+      "explanation": "Marcus 指出，要实现这些数字，Anthropic 必须占领全球 AI 市场中极不切实际的份额，这完全忽略了定价、竞争和市场饱和等基本限制因素。"
+    },
+    {
+      "point": "泄露的 Q2 营收超 115 亿美元的说法意味着增长了 14 倍，这违背了商业基本面。",
+      "explanation": "单个季度实现如此爆发式的增长，需要前所未有的获客能力和定价权，这与目前已知的 AI API 成本结构和企业落地模式相矛盾。"
+    }
+  ],
+  "keyQuotes": [
+    "我正在实时目睹一幕极其有趣的现象。Anthropic 在 IPO 前正处于 SEC 监管的‘静默期’……但这并没有阻止泄密者和生成式 AI 的多头们试图让公众相信，Anthropic 的财务状况堪称惊艳。"
+  ],
+  "tags": [
+    "AI 行业",
+    "IPO 分析",
+    "金融炒作",
+    "营收预测",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 207,
+  "domain": "garymarcus.substack.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f6e6074",
+  "sourceName": "Marcus on AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786908330000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-17 03:25:30"
+}

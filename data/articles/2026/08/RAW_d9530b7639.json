@@ -1,0 +1,52 @@
+{
+  "id": "RAW_d9530b7639",
+  "title": "AI 要闻（8 月 17 日周一）：DeepSeek 调整定价，智谱发布顶级编程模型，Anthropic 暂不发布 Model 2",
+  "url": "https://dev.to/felix_king_a5ebe226991216/ai-roundup-mon-aug-17-deepseek-reprices-zhipu-ships-top-coding-model-anthropic-holds-back-1nmp",
+  "date": "2026-08-17 01:57:17",
+  "author": "AI Maker",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>A quick scan of what moved the frontier this weekend — pricing, open weights, and a model that exists but won't ship.</p>\n  <h2><a name=\"1-deepseek-turns-on-peakvalley-pricing-live-aug-17\" href=\"#1-deepseek-turns-on-peakvalley-pricing-live-aug-17\"> </a> 1. DeepSeek turns on peak/valley pricing (live Aug 17)</h2>\n  <p>Starting 00:00 Beijing time on August 17, DeepSeek's API moved to time-of-day pricing. Off-peak (outside 09:00–12:00 and 14:00–18:00 BJT) runs at half the peak rate.</p>\n  <ul>\n   <li><strong>V4-Pro</strong>: peak output <strong>¥27 / $3.96 per M tokens</strong>, off-peak ¥13.5 / $1.98.</li>\n   <li><strong>V4-Flash</strong>: peak output <strong>¥9 / $1.32 per M tokens</strong>, off-peak ¥4.5.</li>\n   <li>The hike ends the era of rock-bottom flat rates — V4-Pro's off-peak output alone is ~2.25× its old list price, peak ~4.5×.</li>\n  </ul>\n  <p>The signal: the open-weight leader is now pricing on <strong>capacity and capability</strong>, not just undercutting. Expect enterprises to shift bulk calls to off-peak windows.</p>\n  <h2><a name=\"2-zhipu-glm53-best-openweights-coding-model-yet-aug-14\" href=\"#2-zhipu-glm53-best-openweights-coding-model-yet-aug-14\"> </a> 2. Zhipu GLM-5.3 — best open-weights coding model yet (Aug 14)</h2>\n  <p>Zhipu released GLM-5.3 on the <strong>same base</strong> as GLM-5.2 — every gain comes from post-training scaling. It now tops open-weights coding benchmarks:</p>\n  <ul>\n   <li><strong>Terminal-Bench 3.0: 28.3</strong> (from 4.6) and <strong>DeepSWE v1.1: 66.9</strong> (from 46.2).</li>\n   <li><strong>CyberGym: 84.5%</strong> — matching/exceeding Claude Mythos 5 (83.8%) on vulnerability discovery.</li>\n   <li>During pre-release testing it surfaced <strong>2,404 potential vulnerabilities</strong> (1,088 high/medium), including a 40-year-old DNS protocol flaw.</li>\n  </ul>\n  <p>Weights open in ~2 weeks after safety hardening. The takeaway: post-training alone is closing the gap to frontier closed models.</p>\n  <h2><a name=\"3-anthropics-risk-report-discloses-then-withholds-model-2-aug-14\" href=\"#3-anthropics-risk-report-discloses-then-withholds-model-2-aug-14\"> </a> 3. Anthropic's risk report discloses — then withholds — \"Model 2\" (Aug 14)</h2>\n  <p>Anthropic's 186-page risk report revealed an internal-only model, <strong>Model 2</strong>, stronger than the public Claude Mythos 5:</p>\n  <ul>\n   <li><strong>CoBench v2: 62.8%</strong> vs Mythos 5's 50.3% — already heavily used for coding, agentic work, and training-data generation inside the company.</li>\n   <li>No release plans. Misalignment risk rating moved from \"very low\" to \"low.\"</li>\n   <li>The report also discloses real incidents: a biosafety classifier was silently off for ~11 months, letting ~133M conversations with ~50,000 contractors bypass it.</li>\n  </ul>\n  <p>The frontier's real capability edge now lives inside the lab, not on the consumer product.</p>\n  <hr>\n  <p><em>Keeping up with the AI frontier? Daily digests at <a href=\"https://ainexusdaily.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">AI Nexus Daily</a>.</em></p>\n </body>\n</html>",
+  "aiSummary": "本期 AI 要闻速览总结了三大重要进展：DeepSeek 推出新的峰谷定价模式，智谱发布在开放权重基准中领先的 GLM-5.3 编程模型，以及 Anthropic 的风险报告揭示了一款能力更强但仅限内部的“Model 2”。",
+  "oneSentenceSummary": "本期 AI 要闻速览总结了三大重要进展：DeepSeek 推出新的峰谷定价模式，智谱发布在开放权重基准中领先的 GLM-5.3 编程模型，以及 Anthropic 的风险报告揭示了一款能力更强但仅限内部的“Model 2”。",
+  "summary": "本文简要概述了周末发生的三项重大 AI 进展。首先，DeepSeek 为其 API 引入了分时段定价，高峰时段（北京时间 09:00-12:00 和 14:00-18:00）收费高于非高峰时段，标志着从统一费率定价的转变。其次，智谱发布了 GLM-5.3，一款在开放权重基准测试中名列前茅的编程模型，包括 Terminal-Bench 3.0（28.3）和 DeepSWE v1.1（66.9），权重将在安全测试后发布。第三，Anthropic 的 186 页风险报告披露了一款仅限内部的“Model 2”，其性能优于公开的 Claude Mythos 5，但目前没有发布计划，凸显了内部能力与消费级产品之间日益扩大的差距。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek 实施峰谷定价，结束了其 API 统一费率定价的时代。",
+      "explanation": "自 8 月 17 日起，DeepSeek 的 V4-Pro 和 V4-Flash 模型开始按一天中的不同时段收取不同费率，高峰时段收费明显高于非高峰时段，表明其正转向基于容量的定价。"
+    },
+    {
+      "point": "智谱的 GLM-5.3 在开放权重编程基准测试中领先，性能显著提升。",
+      "explanation": "GLM-5.3 在 Terminal-Bench 3.0（28.3）和 DeepSWE v1.1（66.9）上均排名第一，表明仅靠后训练扩展就能缩小与前沿闭源模型的差距。"
+    },
+    {
+      "point": "Anthropic 的风险报告揭示了一款仅限内部的“Model 2”，其能力高于公开的 Claude Mythos 5。",
+      "explanation": "这份 186 页的报告披露，Model 2 在 CoBench v2 上取得 62.8% 的成绩，而 Mythos 5 为 50.3%，但目前没有发布计划，凸显了内部能力与消费级产品之间日益扩大的鸿沟。"
+    }
+  ],
+  "keyQuotes": [
+    "开放权重领域的领先者现在基于容量和能力定价，而不仅仅是低价竞争。",
+    "预计企业会将批量调用转移到非高峰时段。",
+    "前沿领域真正的能力优势如今存在于实验室内部，而非面向消费者的产品中。"
+  ],
+  "tags": [
+    "AI 定价",
+    "开放权重",
+    "编程模型",
+    "Anthropic",
+    "DeepSeek"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 330,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786903037000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-17 01:57:17"
+}

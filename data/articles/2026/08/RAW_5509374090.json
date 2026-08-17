@@ -1,0 +1,62 @@
+{
+  "id": "RAW_5509374090",
+  "title": "我构建 AI DevList 是因为寻找 AI 内容已不再是问题",
+  "url": "https://dev.to/younes_bentlili_9480340f/i-built-ai-devlist-because-finding-ai-content-is-no-longer-the-problem-502b",
+  "date": "2026-08-17 01:50:35",
+  "author": "Younes Ben Tlili",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>There is no shortage of AI content.</p>\n  <p>Actually, we probably have the opposite problem.</p>\n  <p>Every day there is:</p>\n  <ul>\n   <li>a new agent framework,</li>\n   <li>a new MCP server,</li>\n   <li>another RAG approach,</li>\n   <li>another benchmark,</li>\n   <li>another model release,</li>\n   <li>another “production-ready” architecture,</li>\n   <li>another GitHub repository trendi ng for 48 hours.</li>\n  </ul>\n  <p>As an engineer, I don't struggle to find AI content anymore.</p>\n  <p>I struggle to decide:</p>\n  <blockquote>\n   <p>What is actually worth my time?</p>\n  </blockquote>\n  <p>That's why I built <strong>AI DevList</strong>.</p>\n  <p>👉 <a href=\"https://aidevlist.io/\" target=\"_blank\" rel=\"noopener noreferrer\">https://aidevlist.io/</a></p>\n  <p><strong>Not another AI news newsletter</strong></p>\n  <p>I don't want AI DevList to become a summary of everything that happened in AI during the week.</p>\n  <p>There are already excellent newsletters doing that.</p>\n  <p>The focus is much narrower:</p>\n  <p><strong>resources that are useful for people actually building AI systems.</strong></p>\n  <p>The main topics are:</p>\n  <ul>\n   <li>Agentic AI</li>\n   <li>LLM Engineering</li>\n   <li>MCP</li>\n   <li>RAG</li>\n   <li>Evals</li>\n   <li>Tools &amp; Frameworks</li>\n   <li>Research</li>\n   <li>Open Source</li>\n   <li>Production AI</li>\n  </ul>\n  <p>The goal is not to publish 50 links.</p>\n  <p>If an issue contains 10–15 genuinely useful resources, that's enough.</p>\n  <p><strong>Curation alone isn't enough</strong></p>\n  <p>When I first announced the project, someone gave me a very good piece of feedback:</p>\n  <blockquote>\n   <p>Curating content is useful, but the real value comes from adding context.</p>\n  </blockquote>\n  <p>I agree.</p>\n  <p>So every resource selected for AI DevList now has two parts.</p>\n  <p><strong>1. What is it?</strong></p>\n  <p>A short, neutral description of the resource.</p>\n  <p>No marketing rewrite.</p>\n  <p>No exaggerated claims.</p>\n  <p><strong>2. Why we picked it</strong></p>\n  <p>This is the important part.</p>\n  <p>For example:</p>\n  <blockquote>\n   <p><strong>Why we picked it</strong>\n    <br>\n    Stateless MCP isn't just a protocol detail. It changes how remote MCP servers can be deployed and scaled, removing part of the session-management complexity that infrastructure teams previously had to handle.</p>\n  </blockquote>\n  <p>Or:</p>\n  <blockquote>\n   <p><strong>Why we picked it</strong>\n    <br>\n    Adding a SKILL.md file doesn't guarantee that an agent will reliably discover or follow it. This benchmark is interesting because it evaluates the complete model + harness + skill combination rather than treating skills as static prompt files.</p>\n  </blockquote>\n  <p>That's much closer to what I personally want when someone recommends a technical article to me.</p>\n  <p>Don't only tell me what it says.</p>\n  <p>Tell me why I should care as an engineer.</p>\n  <p><strong>My current curation workflow</strong></p>\n  <p>The workflow is deliberately simple.</p>\n  <p>Discover resources\n   <br>\n   ↓\n   <br>\n   Filter obvious noise\n   <br>\n   ↓\n   <br>\n   Read / inspect the source\n   <br>\n   ↓\n   <br>\n   Check technical relevance\n   <br>\n   ↓\n   <br>\n   Categorize\n   <br>\n   ↓\n   <br>\n   Write a short description\n   <br>\n   ↓\n   <br>\n   Add \"Why we picked it\"\n   <br>\n   ↓\n   <br>\n   Human review\n   <br>\n   ↓\n   <br>\n   Publish</p>\n  <p>AI helps with discovery and preparation.</p>\n  <p>It does <strong>not</strong> decide what gets published.</p>\n  <p>That's an important distinction for me.</p>\n  <p>I don't want to build an automatically generated newsletter that summarizes whatever happens to rank highly that week.</p>\n  <p>The final selection remains editorial.</p>\n  <p><strong>What makes a resource worth selecting?</strong></p>\n  <p>I'm currently using a few simple questions.</p>\n  <p><strong>Is it technically credible?</strong></p>\n  <p>Primary sources, engineering blogs, research papers and serious open-source work get priority.</p>\n  <p><strong>Does it solve a real engineering problem?</strong></p>\n  <p>Observability, reliability, security, evaluations, context management, orchestration, infrastructure, cost...</p>\n  <p>Not just demos.</p>\n  <p><strong>Can someone apply something from it?</strong></p>\n  <p>Even research becomes much more interesting when it changes how we think about architecture or implementation.</p>\n  <p><strong>Is it saying something new?</strong></p>\n  <p>Ten articles repeating the same product announcement don't deserve ten slots.</p>\n  <p>Is it worth 10 minutes of someone's time?</p>\n  <p>This may actually be the most important criterion.</p>\n  <p>Attention is expensive.</p>\n  <p><strong>The first issue</strong></p>\n  <p>I'm currently preparing AI DevList #001, which will be published on August 23.</p>\n  <p>Some of the topics I'm reviewing include:</p>\n  <ol>\n   <li>emerging behavior in multi-agent systems,</li>\n   <li>MCP architecture and security,</li>\n   <li>testing agent skills,</li>\n   <li>malicious skill files,</li>\n   <li>agent observability,</li>\n   <li>authorization for autonomous workflows,</li>\n   <li>production evaluation patterns.</li>\n  </ol>\n  <p>I'm intentionally keeping the first issue relatively small.</p>\n  <p>I'd rather publish <strong>12 strong resources than 40 average ones.</strong></p>\n  <p><strong>This is also an experiment</strong></p>\n  <p>AI DevList is a small project.</p>\n  <p>The application itself is intentionally boring:</p>\n  <ul>\n   <li>Next.js</li>\n   <li>PostgreSQL</li>\n   <li>Docker</li>\n   <li>GitLab CI/CD</li>\n  </ul>\n  <p>The interesting problem isn't the software.</p>\n  <p>It's whether consistent technical curation can become useful enough that engineers return every week.</p>\n  <p>Over the next few months, I want to learn:</p>\n  <ul>\n   <li>Which topics engineers actually click on?</li>\n   <li>Do people prefer research or practical engineering articles?</li>\n   <li>Are MCP resources still disproportionately interesting?</li>\n   <li>How much context is enough before curation becomes commentary?</li>\n   <li>Can a small, focused technical publication build a meaningful engineering audience?</li>\n  </ul>\n  <p>I have added click analytics from the beginning so I can answer some of those questions with data instead of intuition.</p>\n  <p><strong>If you're building AI systems</strong></p>\n  <p>You can subscribe here:</p>\n  <p>👉 <a href=\"https://aidevlist.io/\" target=\"_blank\" rel=\"noopener noreferrer\">https://aidevlist.io/</a></p>\n  <p>The first issue comes out on August 23.</p>\n  <p>And if you publish a technical article, paper, open-source project or tool that you think AI engineers should see, there is also a submission page:</p>\n  <p>👉 <a href=\"https://aidevlist.io/submit\" target=\"_blank\" rel=\"noopener noreferrer\">https://aidevlist.io/submit</a></p>\n  <p>I'm especially interested in feedback from engineers:</p>\n  <p><strong>What would make a curated AI engineering weekly genuinely useful enough for you to read every week?</strong></p>\n </body>\n</html>",
+  "aiSummary": "一位 AI 工程师分享了 AI DevList 的理念和工作流程。这是一份精心策划的通讯，专注于为构建 AI 系统的人提供实用资源，强调基于上下文的精选而非数量。",
+  "oneSentenceSummary": "一位 AI 工程师分享了 AI DevList 的理念和工作流程。这是一份精心策划的通讯，专注于为构建 AI 系统的人提供实用资源，强调基于上下文的精选而非数量。",
+  "summary": "作者探讨了 AI 内容过载的悖论：材料太多而非太少，工程师难以辨别真正值得投入时间的内容。为此，他们构建了 AI DevList，一份聚焦于 Agentic AI、LLM 工程、MCP、RAG、Evals 和生产 AI 的通讯。与摘要式通讯不同，每个精选资源都包含中性描述和'为何选择它'部分，解释工程相关性。策展工作流程刻意保持简单且以人为驱动，AI 仅协助发现和准备。筛选标准优先考虑技术可信度、实际工程问题解决能力、适用性和新颖性。首期于 8 月 23 日推出，主题包括多智能体涌现行为、MCP 安全、智能体可观测性和生产评估模式。该项目也被定位为一次实验，测试持续的技术策展能否随时间建立忠诚的工程受众。",
+  "mainPoints": [
+    {
+      "point": "AI 的真正问题在于内容过载，而非稀缺。",
+      "explanation": "每日输出的新框架、基准测试和代码库，使工程师更难识别值得关注的內容，将挑战从发现转向筛选。"
+    },
+    {
+      "point": "策展的价值在于与上下文结合，而非仅仅提供链接。",
+      "explanation": "每个资源都包含'为何选择它'部分，解释工程相关性，例如无状态 MCP 如何改变部署复杂度，或基准测试为何评估完整的模型-工具链-技能组合。"
+    },
+    {
+      "point": "策展工作流程刻意保持简单且以人为驱动。",
+      "explanation": "AI 协助发现与准备，但最终选择仍由编辑决定。流程从发现经过筛选、检查、分类、描述，再到人工审核后才发布。"
+    },
+    {
+      "point": "筛选标准优先考虑技术可信度和工程实用性，而非仅新颖性。",
+      "explanation": "资源必须解决真实的工程问题（可观测性、可靠性、安全、评估），具备实践者可直接应用性，并有所创新。作者将注意力视为昂贵资源，询问每个资源是否值得 10 分钟阅读时间。"
+    },
+    {
+      "point": "该项目也是一次建立忠诚工程受众的实验。",
+      "explanation": "作者计划追踪点击分析，了解哪些主题引发共鸣，工程师是否偏好研究或实用文章，以及小型聚焦通讯能否在数月内维持参与度。"
+    }
+  ],
+  "keyQuotes": [
+    "作为工程师，我不再为找不到 AI 内容而困扰。我困扰的是：什么真正值得我花时间？",
+    "策展内容有用，但真正的价值在于添加上下文。",
+    "无状态 MCP 不只是协议细节。它改变了远程 MCP 服务器的部署和扩展方式，消除了基础设施团队之前必须处理的会话管理复杂度的一部分。",
+    "我宁愿发布 12 个高质量资源，而非 40 个平庸的。",
+    "注意力是昂贵的。"
+  ],
+  "tags": [
+    "AI 工程",
+    "LLM 工程",
+    "MCP",
+    "RAG",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 79,
+  "wordCount": 776,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786902635000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-17 01:50:35"
+}

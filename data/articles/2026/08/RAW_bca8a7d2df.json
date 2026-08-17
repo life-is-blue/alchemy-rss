@@ -1,0 +1,59 @@
+{
+  "id": "RAW_bca8a7d2df",
+  "title": "MathCode——一款前沿数学编码智能体",
+  "url": "https://math-ai-org.github.io/mathcode/",
+  "date": "2026-08-17 02:17:10",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <main>\n   <section id=\"overview\" class=\"section content-section\">\n    <div class=\"container\">\n     <h2 class=\"section-title\">Overview</h2>\n     <div class=\"content\">\n      <p>MathCode is a terminal AI coding assistant with a built-in math formalization engine. Give it a math problem in plain language and it will automatically convert it into a <strong>Lean&nbsp;4</strong> theorem and attempt a formal proof — with a persistent Lean REPL, reusable theorem and axiom libraries, agentic proving, and an Obsidian knowledge graph.</p>\n      <figure>\n       <img src=\"https://math-ai-org.github.io/mathcode/Demo.png\" alt=\"MathCode demo\">\n      </figure>\n     </div>\n    </div>\n   </section>\n   <section id=\"quickstart\" class=\"section content-section\">\n    <div class=\"container\">\n     <h2 class=\"section-title\">Quick Start</h2>\n     <div class=\"content\">\n      <p>Requires macOS (arm64) or Linux (x86_64), plus the <code>codex</code> CLI for the default backend.</p>\n      <pre><code>git clone https://github.com/math-ai-org/mathcode.git\ncd mathcode\nbash setup.sh\ncodex auth login\nmathcode</code></pre>\n      <p><code>setup.sh</code> prepares the release checkout, downloads the bundled runtime and Lean toolchain, and installs a user-local <code>mathcode</code> launcher. Try it with:</p>\n      <pre><code>mathcode -p \"prove that the square of an even number is even\"</code></pre>\n      <p>Outputs are written to <code>LeanFormalizations/</code>. A browser UI is available via <code>./run webui</code>.</p>\n     </div>\n    </div>\n   </section>\n   <section id=\"features\" class=\"section content-section\">\n    <div class=\"container\">\n     <h2 class=\"section-title\">Features</h2>\n     <div class=\"columns is-multiline\">\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Persistent Lean REPL</strong>\n        <p style=\"margin:.5rem 0 0\">A persistent Lean language server brings compile checks to <strong>~0.4s</strong> after a one-time warmup, instead of ~30s.</p>\n       </div>\n      </div>\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Theorem Library</strong>\n        <p style=\"margin:.5rem 0 0\">Every proved theorem is auto-named, stored, and made importable so the prover and planner can reuse it.</p>\n       </div>\n      </div>\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Axiom Library</strong>\n        <p style=\"margin:.5rem 0 0\">Store conversational assumptions as persistent, compile-checked, consistency-reviewed Lean declarations.</p>\n       </div>\n      </div>\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Lean LSP Integration</strong>\n        <p style=\"margin:.5rem 0 0\">Searches leansearch.net and Loogle for verified Mathlib lemmas and uses structured LSP diagnostics for repairs.</p>\n       </div>\n      </div>\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Obsidian Theorem Graph</strong>\n        <p style=\"margin:.5rem 0 0\">Generates an Obsidian vault that visualizes theorem-to-lemma dependencies as a knowledge graph.</p>\n       </div>\n      </div>\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Agent-Mode Proving</strong>\n        <p style=\"margin:.5rem 0 0\">Each proof becomes an interactive session where the agent writes candidates, reads errors, and recompiles.</p>\n       </div>\n      </div>\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Tree-of-Subgoals</strong>\n        <p style=\"margin:.5rem 0 0\">Decomposes complex theorems into independent subgoals and proves them in parallel, then stitches them back.</p>\n       </div>\n      </div>\n      <div class=\"column is-4\">\n       <div class=\"pillar-box\">\n        <strong>Multi-Planner</strong>\n        <p style=\"margin:.5rem 0 0\">Runs multiple planners in parallel for diverse proof strategies; the prover picks the best approach.</p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </section>\n   <section id=\"citation\" class=\"section content-section\">\n    <div class=\"container\">\n     <h2 class=\"section-title\">Citation</h2>\n     <div class=\"content\">\n      <p>If you use MathCode in research, please cite:</p>\n      <pre id=\"cite-bibtex\"><code>@misc{mathcode2026,\n  title   = {MathCode: A Frontier Mathematical Coding Agent},\n  author  = {Team Math-AI},\n  journal = {math-ai-org.github.io},\n  year    = {2026},\n  month   = {April},\n  url     = {https://github.com/math-ai-org/mathcode}\n}</code></pre>\n      <p>\n       <button id=\"copy-cite\" class=\"button\"><span class=\"icon\"><i class=\"fas fa-clipboard\"></i></span><span>Copy BibTeX</span></button>\n      </p>\n      <p>The math formalization and proving pipeline is based on the <a href=\"https://github.com/T3S1AMAX/autolean.git\" target=\"_blank\" rel=\"noopener\">AUTOLEAN</a> project.</p>\n     </div>\n    </div>\n   </section>\n  </main>\n </body>\n</html>",
+  "aiSummary": "MathCode 是一款终端 AI 编程助手，能够将自然语言数学问题转换为 Lean 4 定理，自动化完成形式证明，并提供持久 REPL、定理复用及知识图谱可视化工具。",
+  "oneSentenceSummary": "MathCode 是一款终端 AI 编程助手，能够将自然语言数学问题转换为 Lean 4 定理，自动化完成形式证明，并提供持久 REPL、定理复用及知识图谱可视化工具。",
+  "summary": "MathCode 是一款基于 AI 的数学形式化编程助手。它能够接收自然语言数学问题，将其转换为 Lean 4 定理，并尝试利用持久 Lean REPL 进行形式证明。其核心功能包括：定理库用于存储和复用已证明的定理，公理库用于管理假设，与 Lean LSP 集成的验证引理搜索功能，以及基于 Obsidian 的知识图谱用于可视化定理依赖关系。该系统采用智能体模式进行证明，将复杂定理分解为并行子目标，并利用多个规划器实现多样化的证明策略。MathCode 基于 AUTOLEAN 项目构建，支持 macOS (arm64) 和 Linux (x86_64)。",
+  "mainPoints": [
+    {
+      "point": "将自然语言数学问题转换为 Lean 4 定理",
+      "explanation": "MathCode 能够自动将自然语言描述的数学问题转换为形式化的 Lean 4 定理，从而实现自动化的证明尝试。"
+    },
+    {
+      "point": "持久 Lean REPL，编译检查快速",
+      "explanation": "该系统提供一个持久的 Lean REPL，在预热后将编译检查时间减少到约 0.4 秒，显著提升了效率。"
+    },
+    {
+      "point": "定理和公理库，用于复用和一致性",
+      "explanation": "已证明的定理和会话假设被存储、命名并可导入，确保了一致性和可复用性。"
+    },
+    {
+      "point": "基于 Obsidian 的知识图谱，用于定理依赖关系",
+      "explanation": "生成一个 Obsidian 仓库，将定理到引理的依赖关系可视化为知识图谱，帮助用户理解和导航。"
+    },
+    {
+      "point": "智能体模式证明，支持并行子目标分解",
+      "explanation": "智能体交互式地编写证明候选，处理错误，并将复杂定理分解为并行子目标，以实现高效证明。"
+    }
+  ],
+  "keyQuotes": [
+    "用自然语言给它一个数学问题，它会自动将其转换为 **Lean 4** 定理并尝试进行形式证明。",
+    "每个证明都成为一个交互式会话，其中智能体编写候选，阅读错误并重新编译。"
+  ],
+  "tags": [
+    "AI 编程",
+    "数学形式化",
+    "Lean 4",
+    "定理证明",
+    "知识图谱"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 311,
+  "domain": "math-ai-org.github.io",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786904230000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-17 02:17:10"
+}

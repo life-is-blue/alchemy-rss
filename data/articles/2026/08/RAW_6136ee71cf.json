@@ -1,0 +1,52 @@
+{
+  "id": "RAW_6136ee71cf",
+  "title": "模型故意变得更笨——沃尔特·范德吉森",
+  "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+  "date": "2026-08-17 08:00:00",
+  "author": "Walter van der Giessen",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"meta\">2026-08-17</div>\n  <div class=\"byline\">\n   <img class=\"avatar\" src=\"https://w4g1.dev/avatar.webp\" alt=\"\"> <a href=\"https://w4g1.dev/blog\">Walter van der Giessen</a>\n  </div>\n  <div class=\"markdown-body\">\n   <p>Reasoning scores keep climbing while per-token compute keeps dropping. <a href=\"https://benchlm.ai/best/reasoning-models\" rel=\"noopener noreferrer\">GLM-5.2</a> scores 99.2% on AIME 2026 with about 40 billion parameters active per token. Qwen3.5 scores 91.3% with 17 billion active. <a href=\"https://www.morphllm.com/deepseek-v4-flash\" rel=\"noopener noreferrer\">DeepSeek V4-Flash</a> runs 13 billion active. For scale, GPT-4 was rumored to run around 280 billion active parameters in 2023, and it could barely solve an AIME problem. At the small end, <a href=\"https://artificialanalysis.ai/articles/qwen3-5-small-models\" rel=\"noopener noreferrer\">Qwen3.5 9B</a> fits in 6GB of VRAM quantized and roughly doubles the score of the next best model under 10B parameters on Artificial Analysis's intelligence index. If you only looked at math and code benchmarks, you'd conclude that models are getting smarter per parameter at an absurd rate.</p>\n   <p>They are, on those benchmarks. Ask the same models a plain factual question and the picture flips. On <a href=\"https://pricepertoken.com/leaderboards/benchmark/simpleqa\" rel=\"noopener noreferrer\">SimpleQA</a>, a benchmark of factual recall with no tools allowed, the current leader is Gemini 2.5 Pro at 53%, so the best recall money can buy still misses half the questions. The small models barely register. Artificial Analysis measures Qwen3.5 4B and 9B at hallucination rates of 80 to 82% on its knowledge benchmark, which means that when they don't know a fact, which is most of the time, they make one up. Ask the 9B for the birth year of a minor 19th-century mathematician and you get a confident, plausible, wrong answer. The parameter count didn't drop for free. Labs are trading world knowledge for reasoning skill, and the trade is deliberate.</p>\n   <h2 id=\"what-the-parameters-were-for\">What the parameters were for</h2>\n   <p>Facts take space. Research on knowledge capacity (the \"Physics of Language Models\" series has the cleanest measurements) puts it on the order of two bits of factual knowledge per parameter. If you want a model that knows the birth year of every minor Wikipedia figure, the population of every Dutch municipality, and the argument order of every function in every npm package, you pay for that in weights, and it's a big part of why frontier models grew to trillions of parameters.</p>\n   <p>Reasoning compresses much better than facts do, because it's a relatively small set of procedures applied over and over: break the problem into parts, track intermediate state, check your own work, backtrack when a step fails. Distillation and reinforcement learning on verifiable tasks turn out to transfer those procedures into small models remarkably well. Phi-4 is 14 billion parameters, trained heavily on synthetic textbook-style data, and it's good at math and bad at trivia, which tells you exactly what its training data contained. That mix used to look like a limitation of the synthetic-data approach. It now looks like the design goal.</p>\n   <p>The knowledge that survives the trade has a shape. These models are generalists: they know a little about nearly everything and almost nothing in depth. Ask one about PostgreSQL and it knows what it is, what it's good at, and roughly how MVCC works, but ask which version added a specific planner feature and you're back to invented facts. That's the right layer to keep in weights, because breadth is what lets a model understand what a question is about, know what to look up, and judge whether a source is plausible. The depth is cheap to retrieve and expensive to store, so it's the part that goes.</p>\n   <h2 id=\"facts-rot-procedures-dont\">Facts rot, procedures don't</h2>\n   <p>A frontier training run takes months and costs hundreds of millions of dollars, and the moment it finishes, the facts inside it start going stale. Library APIs change, prices change, people change jobs, and half of what a 2024 model believed about the JavaScript ecosystem was outdated before the model shipped. Every fact you bake into weights has a shelf life, and the only way to refresh it is another training run.</p>\n   <p>The procedures don't rot. Algebra worked the same way in 1970 as it does now, and so does breaking a problem down or spotting a contradiction between two sources. A model that's mostly procedure and only lightly loaded with facts doesn't age the way a knowledge-heavy model does. Its training cutoff matters much less, because the current state of the world was never supposed to live in the weights in the first place. I think this is the best argument for the whole approach: it decouples the expensive, slow artifact (the trained model) from the thing that changes daily (what's true).</p>\n   <h2 id=\"the-harness-carries-the-knowledge\">The harness carries the knowledge</h2>\n   <p>If the model doesn't know things, something else has to, and that something is the harness: retrieval over a knowledge base, tool calls, web search, a filesystem full of docs. I wrote earlier that <a href=\"https://w4g1.dev/blog/rust-is-a-harness\" rel=\"noopener noreferrer\">Rust is a harness</a> for agents, a source of cheap machine-checkable feedback. This is the same shape from the other side. The model contributes reasoning, and everything it reasons about gets supplied at runtime.</p>\n   <p>You can already watch agents work this way. A coding agent doesn't need to have memorized your dependency's API surface, because it greps <code>node_modules</code> or reads the docs before calling anything, and its answer is grounded in the version you actually have installed rather than whichever version dominated the training data. The recall that used to be a fixed cost in every forward pass became an on-demand lookup.</p>\n   <h2 id=\"a-frontier-model-on-your-gpu\">A frontier model on your GPU</h2>\n   <p>Follow the trend a couple of years out and I think we get a model with frontier-quality reasoning, Fable-quality, that runs on a single consumer GPU. The compute half is nearly there. DeepSeek V4-Flash reasons with about 13 billion active parameters per token, well within consumer-GPU range. What doesn't fit is the other 271 billion parameters sitting in its experts, and expert layers are mostly fact storage. That's the part this whole trade makes optional. Strip the knowledge out and total size shrinks toward active size, and a 20 to 40B model at 4-bit quantization fits on the 24GB card that's been sitting in gaming PCs since 2022.</p>\n   <p>The catch is that it won't know much. Ask it a bare factual question with no tools attached and the right behavior is to say it doesn't know and go look it up. Paired with a decent harness, that's most of what I use a frontier model for today, running locally with no per-token bill and no data leaving the machine.</p>\n   <h2 id=\"this-mostly-solves-hallucination\">This mostly solves hallucination</h2>\n   <p>The part I find most promising is what this does to hallucination. When a fact lives in weights, a wrong fact is unfindable and unfixable. You can't grep the weights, you can't diff them against last month, and correcting one error means a fine-tune that might break who knows what else. The model states the wrong fact with the same fluent confidence as a right one, and there's no artifact to check it against.</p>\n   <p>When the fact lives outside the model, a wrong answer has an address. The model cites a document, so you can open the document. If the document is wrong, you edit the document, and every future query gets the correction, which beats waiting for the next training run by roughly a year. Retrieval doesn't get you to zero, since a model can still misread a source or stitch two of them together wrong, but a claim with a source is checkable and a claim from weights isn't. A wrong fact in a knowledge base is an ordinary data bug, the kind we already know how to trace, fix, and write a regression test for.</p>\n   <p>There's a version of this future where the model card stops listing a knowledge cutoff at all, because what's left in the weights goes stale on a scale of years instead of weeks. The model just gets handed the world's current state at runtime, the same way a CPU gets handed a program.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文指出，AI 模型正越来越多地将推理能力置于事实知识之上，通过程序化推理替代世界知识，以减少参数数量并提高效率，同时依赖外部知识库获取事实信息。",
+  "oneSentenceSummary": "本文指出，AI 模型正越来越多地将推理能力置于事实知识之上，通过程序化推理替代世界知识，以减少参数数量并提高效率，同时依赖外部知识库获取事实信息。",
+  "summary": "本文观察到 AI 模型的一个趋势：推理能力在迅速提升，但事实记忆能力却依然较弱。GLM-5.2 和 Qwen3.5 等模型在数学和编程基准测试中表现出色，但在简单的事实性问题上却表现不佳。作者解释说，这是一种有意的设计选择：事实需要更多参数来存储，而推理过程则可以被提炼成更小的模型。通过减少权重中的事实知识，模型变得更加高效，且不易过时，因为事实可以在运行时从外部来源检索。这种方法还能减少幻觉，因为外部知识库中的错误比嵌入在模型权重中的错误更容易识别和纠正。本文预测，未来的模型将在消费级 GPU 上实现前沿级推理，并依赖检索系统等工具来获取事实信息。",
+  "mainPoints": [
+    {
+      "point": "AI 模型用推理能力替代事实知识，以减少参数数量并提高效率。",
+      "explanation": "事实需要更多参数来存储，而推理过程可以被提炼成更小的模型，使其更高效且可扩展。"
+    },
+    {
+      "point": "外部知识库和检索系统正变得必不可少，以补充模型推理。",
+      "explanation": "通过将事实知识外卸到外部来源，模型可以保持最新状态并减少幻觉，因为知识库中的错误更容易纠正。"
+    },
+    {
+      "point": "未来的模型可能通过在权重中最小化事实知识，在消费级硬件上实现前沿级推理。",
+      "explanation": "去除事实知识可以减少模型大小，使高性能推理模型能够在消费级 GPU 上运行，并通过检索系统处理事实。"
+    }
+  ],
+  "keyQuotes": [
+    "事实需要空间。关于知识容量的研究表明，每个参数大约只能存储两比特的事实知识。",
+    "程序不会腐烂。代数在 1970 年和现在是一样的，分解问题或发现两个来源之间的矛盾也是如此。",
+    "当事实存在于模型之外时，错误的答案有来源。模型会引用文档，你可以打开文档。如果文档有错，你可以编辑文档，将来的每个查询都会得到修正。"
+  ],
+  "tags": [
+    "AI 模型",
+    "模型效率",
+    "推理与知识",
+    "幻觉",
+    "模型蒸馏"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 90,
+  "wordCount": 1281,
+  "domain": "w4g1.dev",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786924800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-17 08:00:00"
+}

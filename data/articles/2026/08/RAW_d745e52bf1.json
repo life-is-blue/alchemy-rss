@@ -1,0 +1,50 @@
+{
+  "id": "RAW_d745e52bf1",
+  "title": " Ascend vs CUDA: Same Qwen3-8B Model，Same Seed，15% Token Agreement",
+  "url": "https://dev.to/ruitong_io/ascend-vs-cuda-same-qwen3-8b-model-same-seed-15-token-agreement-495o",
+  "date": "2026-08-17 01:47:01",
+  "author": "Ruitong",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We ran Qwen3-8B on Ascend (DashScope) and NVIDIA A40 (CUDA) with identical parameters across 61 prompts. The result: only 15% top-1 token agreement. 98% of prompts diverged.</p>\n  <p>Results:</p>\n  <ul>\n   <li>Top-1 token agreement: 15.02%</li>\n   <li>Prompts diverging: 60/61 (98.4%)</li>\n   <li>Top-5 overlap: 20.92%</li>\n  </ul>\n  <p>For comparison, A40 vs RTX 6000 Ada (same CUDA stack) diverged on ~19% of prompts. A40 vs Ascend: 98%.</p>\n  <p>Full analysis: <a href=\"https://ruitong.io/posts/ascend-vs-cuda-equivalence\" target=\"_blank\" rel=\"noopener noreferrer\">https://ruitong.io/posts/ascend-vs-cuda-equivalence</a>\n   <br>\n   Code: <a href=\"https://github.com/loopeywho/ruitong\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/loopeywho/ruitong</a></p>\n </body>\n</html>",
+  "aiSummary": "An experimental comparison of Qwen3-8B outputs on Ascend (DashScope) vs NVIDIA A40 (CUDA) reveals only 15.02% top-1 token agreement， with 60 out of 61 prompts (98.4%) diverging. Top-5 overlap was 20.92%.",
+  "oneSentenceSummary": "An experimental comparison of Qwen3-8B outputs on Ascend (DashScope) vs NVIDIA A40 (CUDA) reveals only 15.02% top-1 token agreement， with 60 out of 61 prompts (98.4%) diverging. Top-5 overlap was 20.92%.",
+  "summary": "The author ran the same Qwen3-8B model with identical parameters on two different hardware platforms – Ascend via DashScope and NVIDIA A40 via CUDA – across 61 prompts. The result was striking: only 15.02% top-1 token agreement， with 60 out of 61 prompts (98.4%) diverging. Top-5 overlap was 20.92%. For context， the author notes that A40 vs RTX 6000 Ada (both on the same CUDA stack) diverged on only ~19% of prompts， suggesting the Ascend-CUDA gap is substantially larger than intra-CUDA variance. Full analysis and code are linked.",
+  "mainPoints": [
+    {
+      "point": "Qwen3-8B produces drastically different outputs on Ascend vs CUDA despite identical parameters and seeds.",
+      "explanation": "Only 15% top-1 token agreement across 61 prompts indicates that hardware platform significantly affects model output， even when software-level parameters are controlled."
+    },
+    {
+      "point": "The Ascend-CUDA divergence far exceeds intra-CUDA variance.",
+      "explanation": "A40 vs RTX 6000 Ada (same CUDA stack) diverged on only ~19% of prompts， while A40 vs Ascend diverged on 98%， suggesting the hardware/platform gap is the dominant factor."
+    },
+    {
+      "point": "Reproducibility of AI models across hardware platforms remains a significant challenge.",
+      "explanation": "The findings highlight that deploying the same model on different inference stacks (Ascend vs CUDA) can yield substantially different results， which has implications for production reliability and benchmarking."
+    }
+  ],
+  "keyQuotes": [
+    "We ran Qwen3-8B on Ascend (DashScope) and NVIDIA A40 (CUDA) with identical parameters across 61 prompts. The result: only 15% top-1 token agreement. 98% of prompts diverged. Top-5 overlap was 20.92%. For context， the author notes that A40 vs RTX 6000 Ada (both on the same CUDA stack) diverged on only ~19% of prompts， suggesting the Ascend-CUDA gap is substantially larger than intra-CUDA variance. Full analysis and code are linked."
+  ],
+  "tags": [
+    "AI Model Inference",
+    "Hardware Comparison",
+    "Ascend",
+    "CUDA",
+    "Qwen"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 67,
+  "wordCount": 63,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786902421000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-17 01:47:01"
+}

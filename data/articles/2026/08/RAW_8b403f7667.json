@@ -1,0 +1,52 @@
+{
+  "id": "RAW_8b403f7667",
+  "title": "GitHub - aiconnai/agentshield: 🛡️ AI 智能体工具与 MCP 服务器的安全防火墙（支持 Claude、GPT-5.6、Gemini 3.7、Antigravity、Cursor、Codex、Hermes）。在 50 毫秒内检测命令注入、密钥窃取及有毒流。100% 离线 Rust SAST + 一键自动修复 + SARIF。",
+  "url": "https://github.com/aiconnai/agentshield",
+  "date": "2026-08-17 01:12:52",
+  "author": "aiconnai",
+  "siteName": "Hacker News - Newest: \"AI Agent\"",
+  "content": null,
+  "aiSummary": "AgentShield：一款基于 Rust 的 AI 智能体与 MCP 服务器扫描器，可检测命令注入和密钥窃取。",
+  "oneSentenceSummary": "AgentShield：一款基于 Rust 的 AI 智能体与 MCP 服务器扫描器，可检测命令注入和密钥窃取。",
+  "summary": "AgentShield 是一款专为部署 AI 智能体工具的团队设计的离线、高性能 Rust 安全引擎。它可扫描 MCP 服务器、OpenClaw 技能、Hermes Agent 配置、CrewAI、LangChain/LangGraph、GPT Actions 和 Cursor Rules，在执行前检测命令注入、凭证泄露、SSRF、不安全文件访问、运行时包安装、提示注入漏洞及依赖项卫生问题。该工具支持 CLI、GitHub Action、VS Code 扩展及 Rust 库运行，可生成控制台、JSON、SARIF 和 HTML 报告。它内置 25 条规则，支持自定义 YAML 规则、自动化修复及运行时防护反向代理。文档涵盖快速入门、集成示例及与 mcp-scan、Invariant Labs 的对比，突出其 Rust 二进制文件、离线操作、多框架适配、过程间污点跟踪及声明式自定义规则。",
+  "mainPoints": [
+    {
+      "point": "离线 Rust 引擎在执行前扫描 AI 智能体工具。",
+      "explanation": "无需网络，在本地处理源代码，检测 MCP 服务器和智能体框架中的安全风险。"
+    },
+    {
+      "point": "多框架适配器覆盖七个智能体生态系统。",
+      "explanation": "支持 MCP、OpenClaw、Hermes、CrewAI、LangChain、GPT Actions 和 Cursor Rules，采用统一中间表示和污点分析。"
+    },
+    {
+      "point": "自动化修复和运行时防护增强安全性。",
+      "explanation": "提供一键修复、VS Code 灯泡操作，以及实时检查工具调用的反向代理。"
+    }
+  ],
+  "keyQuotes": [
+    "AgentShield 是一款专为在现代 AI 堆栈中交付具备工具功能的 AI 智能体的团队设计的离线、高性能 Rust 安全引擎。",
+    "它在智能体调用工具之前检测命令注入、凭证泄露、SSRF、不安全文件访问、运行时包安装、提示注入漏洞及依赖项卫生问题。",
+    "AgentShield 支持 CLI、GitHub Action、VS Code 扩展及 Rust 库运行，100% 离线操作，源代码保留在本地设备。"
+  ],
+  "tags": [
+    "AI 安全",
+    "MCP",
+    "静态分析",
+    "Rust",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 90,
+  "wordCount": 2803,
+  "domain": "github.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_87ebb4f7",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786900372000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-17 01:12:52"
+}
