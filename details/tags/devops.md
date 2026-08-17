@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-17 08:39:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-17 10:53:38 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -326,9 +326,7 @@
 
 ### [使用-Quack-在三台远程-DuckDB-服务器上并发运行-SQL](https://towardsdatascience.com/running-sql-concurrently-across-three-remote-duckdb-servers-with-quack/)
 
-2026-08-16 21:00:00 | 标签: DuckDB, SQL, 并发, Python, AWS
-
-> 本文探讨了 Quack 协议，这是 DuckDB 发布的数据库通信机制，使远程数据库能够通过 HTTP 进行通信。作者 investigation  whether parallel SQL statements can be fired on each server and have their outputs gathered on a coordinating server. 他们描述了如何通过 CloudFormation 设置三台 AWS EC2 实例，每台运行 DuckDB 并配备合成数据集（销售、客户、产品）。协调逻辑使用 Python 线程和屏障同步查询执行 across wo...
+2026-08-16 21:00:00
 
 
 
@@ -598,9 +596,7 @@
 
 ### [Tell-HN：Cloudflare-在切换名称服务器时静默注入其分析代码](https://news.ycombinator.com/item?id=49322107)
 
-2026-08-17 01:49:46 | 标签: Cloudflare, DNS, Analytics, Privacy, Transparency
-
-> 该文章发布于 Hacker News，指控 Cloudflare 在用户将 DNS 名称服务器切换至 Cloudflare 时静默注入其分析脚本。帖子指出，这种做法缺乏明确的用户通知或同意，引发了对隐私和透明度的担忧。然而，帖子缺乏详细的技术证据或 Cloudflare 的官方确认，仍有待进一步调查。
+2026-08-17 01:49:46
 
 
 

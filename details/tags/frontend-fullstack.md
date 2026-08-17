@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-17 08:39:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-17 10:53:38 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -734,25 +734,19 @@
 
 ### [PGSimCity-如何将-PostgreSQL-复杂性转化为虚拟城市-3D-模拟](https://www.infoq.com/news/2026/08/pgsimcity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-16 13:05:00 | 标签: PostgreSQL, 数据库内核, 数据可视化, 开源, WebAssembly
-
-> 文章介绍了 PGSimCity，这是一个基于浏览器的教育工具，将 PostgreSQL 内部组件（如共享缓冲区、WAL 和后台工作进程）映射到 3D 空间模拟中。通过将 three.js 渲染与 TypeScript 状态机解耦并集成 PGlite（Wasm 编译的 PostgreSQL），该工具允许用户可视化 SQL 语句的生命周期，并模拟缓冲区驱逐竞争、表膨胀和检查点风暴等运维病理现象。该项目结合了 LLM 辅助原型设计与对 PostgreSQL 18 源代码的手动校准，旨在降低理解复杂数据库引擎行为的认知负荷。
+2026-08-16 13:05:00
 
 
 
 ### [数学、物理与工程小程序](https://www.falstad.com/mathphysics.html)
 
-2026-08-16 12:19:32 | 标签: JavaScript, Java, 教育工具, 物理, 数学
-
-> 作者分享了一套自主研发的教育小程序，涵盖数学、物理和工程等多个主题。最初用 Java 编写，现已大部分移植到 JavaScript，无需 Java 插件即可在现代浏览器中查看。该页面作为这些交互式可视化的展示和索引。
+2026-08-16 12:19:32
 
 
 
 ### [React-中文周刊-#289---TanStack-Form-v2-Alpha-&amp;-React-Native-0.87-发布](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247549207&idx=1&sn=0cb0f4218cdf2d93f1a30f23f8232862)
 
-2026-08-16 09:00:00 | 标签: React, React Native, TypeScript, 前端开发, 开源工具
-
-> 本期周刊分为四个板块：本周热点、文章与视频、代码与工具、版本发布。热点部分涵盖 TanStack Form v2 Alpha 的校验管线重构、React Native 0.87 的 Strict TypeScript API 升级、Yelp 从 Flow 迁移至 TypeScript 的实践经验，以及 Next.js 团队 AMA 等资讯。文章与视频板块推荐了 v0 即时导航实现、RSC 流水线缓存策略、引用稳定性类型等深度技术内容。工具板块介绍了 GTKX 1.0（React 构建 Linux 桌面应用）、kbar 1.0（Cmd+K 命令面板）等开源项目。末尾附带 React Hook F...
+2026-08-16 09:00:00
 
 
 
