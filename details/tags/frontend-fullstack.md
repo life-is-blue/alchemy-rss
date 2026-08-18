@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-18 08:38:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-18 10:48:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -506,9 +506,7 @@
 
 ### [只说行却不干活的-GPU：中端-Android-实时头发分割调试](https://dev.to/gabbrowick/the-gpu-that-says-yes-and-does-nothing-debugging-real-time-hair-segmentation-on-mid-range-android-2990)
 
-2026-08-17 21:14:55 | 标签: GPU, WebGL, MediaPipe, Android, 移动开发
-
-> 作者构建了一款隐私优先、完全在设备端运行的虚拟镜子，用于美发沙龙场景；它可以在任意可用的中端 Android 平板上本地运行头发分割模型。初步性能分析显示，Pixel 8 Pro 为 9 fps，而 Samsung A56（Exynos 1580，Mali GPU）完全没有颜色输出。调查发现，MediaPipe 的 GPU delegate 能成功创建，运行约 5 ms，却返回空掩码——这使得这条错误路径看起来很快。通过测量掩码覆盖率而非仅测量耗时，他们添加了一个回退逻辑：连续五个空掩码后改用 CPU 重建。进一步的优化包括：将逐像素重新着色移到片元着色器（节省 66 ms）；将分割频率与绘制...
+2026-08-17 21:14:55
 
 
 
@@ -742,17 +740,13 @@
 
 ### [Cloudflare-将-CI-流水线转化为-TypeScript-Workflows](https://www.infoq.com/news/2026/08/cloudflare-ci-code-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-17 21:00:00 | 标签: CI/CD, TypeScript, 开发者工具, Cloudflare, 工作流
-
-> Cloudflare 发布了 @cloudflare/ci，这是一个 CI SDK，让开发者可以用 TypeScript 而不是 YAML 来定义持续集成流水线，并在 Workers 运行时上将每个步骤作为持久化的 Cloudflare Workflow 运行。仓库来自 Cloudflare Artifacts（仍处于私有测试阶段），命令在 Sandbox 容器中运行，流水线会绑定 Workflows、Sandboxes、Containers、Durable Objects 和 R2 用于缓存。由于每个阶段都映射为一个 Workflow 步骤，失败的步骤会在保留状态的情况下重试，并且运行会从最...
+2026-08-17 21:00:00
 
 
 
 ### [SkiaSharp-4-连发多个版本：GPU-渲染提速，WebAssembly-支持升级](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290921&idx=4&sn=16b74abbf052b8b3d72b2fe21fd03077)
 
-2026-08-17 13:40:00 | 标签: .NET, SkiaSharp, GPU 渲染, WebAssembly, 图形库
-
-> InfoQ 中文报道，Microsoft 与 Uno Platform 发布了 SkiaSharp 4 系列的首批稳定版本 4.148.0、4.150.0 及预发布 4.151.0。该系列将软件包版本与上游 Skia 里程碑保持一致，使稳定版和预览版能够跟进 Chrome 各发布渠道所使用的 Skia 版本。4.148.0 引入 OpenType 可变字体轴控制、彩色字体调色板选择、SKWebpEncoder 动态 WebP 编码以及零拷贝流和文本塑形 API，并重新设计了共享原生对象生命周期以减少释放后使用故障。Microsoft 在以阴影和分层表面为主的 GPU 渲染界面的初步 OpenG...
+2026-08-17 13:40:00
 
 
 
