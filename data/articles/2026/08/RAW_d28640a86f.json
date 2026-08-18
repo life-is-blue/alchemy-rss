@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d28640a86f",
+  "title": "JEP 540 提议面向 JDK 28 提供简单 JSON API",
+  "url": "https://www.infoq.com/news/2026/08/java-native-json-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-17 22:18:00",
+  "author": "A N M Bazlur Rahman",
+  "siteName": "InfoQ",
+  "content": null,
+  "aiSummary": "JEP 540 已进入 JDK 28 的“目标提议”状态，引入一个紧凑、不可变且无依赖的 JSON API，用于解析和浏览 JSON 文档。",
+  "oneSentenceSummary": "JEP 540 已进入 JDK 28 的“目标提议”状态，引入一个紧凑、不可变且无依赖的 JSON API，用于解析和浏览 JSON 文档。",
+  "summary": "文章报道了 JEP 540 的进展，该提案旨在将轻量级 JSON API 直接集成到 JDK 中（作为孵化器模块 `jdk.incubator.json`）。与 Jackson 或 Gson 这类重量级库不同，该 API 专注于核心任务：解析、导航和生成符合 RFC 8259 的 JSON。关键特性包括不可变的 `JsonValue` 层级、与 Java 模式匹配的无缝集成，以及优先考虑简单性而非数据绑定或流式处理的设计。报道详细介绍了该 API 的易用性，例如 `Json.parse` 方法以及文档构造上的权衡，同时指出其严格遵守 JSON 标准（拒绝注释和重复键）。",
+  "mainPoints": [
+    {
+      "point": "JEP 540 为 JDK 28 引入了一个轻量级的内置 JSON API。",
+      "explanation": "它旨在提供一种无需外部依赖即可处理 JSON 的标准方式，面向读取配置或检查 REST 响应等常见任务。"
+    },
+    {
+      "point": "该 API 刻意保持窄而专精。",
+      "explanation": "它排除数据绑定、流式处理与宽松解析等复杂功能，以此与 Jackson、Gson 这类全面库区分开来。"
+    },
+    {
+      "point": "设计充分利用了密封接口和模式匹配等现代 Java 特性。",
+      "explanation": "`JsonValue` 的密封层级允许开发者使用类型模式 switch，以优雅且类型安全的方式处理不同类型的 JSON。"
+    },
+    {
+      "point": "在文档构造上存在明显的易用性权衡。",
+      "explanation": "虽然导航操作很简洁，但创建 JSON 需要显式工厂方法（例如 `JsonString.of`），相比标准 Java 原语增加了更多仪式性代码。"
+    }
+  ],
+  "keyQuotes": [
+    "该提案刻意比 Jackson 和 Gson 这类库更窄。",
+    "该 API 围绕 Json 类和密封的 JsonValue 接口展开。",
+    "新设计专注于不可变的内存值层级，而将对象映射、流式处理、schema 校验和高级定制留给现有的 JSON 生态。"
+  ],
+  "tags": [
+    "Java",
+    "JDK",
+    "JSON",
+    "API 设计",
+    "软件工程"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 677,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786976280000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-17 22:18:00"
+}

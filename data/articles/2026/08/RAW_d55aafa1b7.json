@@ -1,0 +1,51 @@
+{
+  "id": "RAW_d55aafa1b7",
+  "title": "认识历史上已知唯一的投石机遇难者",
+  "url": "https://arstechnica.com/science/2026/08/meet-the-only-known-trebuchet-casualty-in-history/",
+  "date": "2026-08-18 00:15:18",
+  "author": "Kiona N. Smith",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"page-anchor-wrapper\">\n   <a class=\"\" name=\"page-1\" data-page=\"1\" data-url=\"https://arstechnica.com/science/2026/08/meet-the-only-known-trebuchet-casualty-in-history/\"></a>\n  </div>\n  <p>During a medieval siege, a trebuchet scored a chance hit on an unlucky defender. A small boulder slammed into his upper back at close to 300 kilometers an hour, smashing bones and crushing him beneath its weight.</p>\n  <p>The man’s skeleton lay beneath the chapel of Scotland’s Stirling Castle, along with the remains of several other people who had clearly died violent deaths. But this one, known to us only as Skeleton 150 (or as “trebuchet guy” in your faithful correspondent’s notes), stood out even among that battle-damaged crowd because most of his upper body had been shattered. According to University of Bradford paleopathologist Jo Buckberry, who <a href=\"https://cfp.dainst.org/25th-european-ppa-meeting/talk/GHF9V8/\">presented her research</a> at the 25th European Meeting of the Paleopathology Association last week, Skeleton 150 is the only known trebuchet casualty in history.</p>\n  <h2>A shattered skeleton</h2>\n  <p>Skeleton 150 was in terrible shape, even for a dead guy. The man’s skull had broken in 61 separate places, and another 60 jagged bits of bone were distributed across his ribs. His right shoulder was broken, and his right leg above the knee was basically shattered.</p>\n  <p>Buckberry and her colleagues threw everything they could, metaphorically speaking, at the jigsaw puzzle of broken bones: forensics, microscopes, X-rays, and micro-CT scans. All of those results pointed to a single moment of crushing impact by something heavy and fast-moving. The pattern of the injuries suggests that the man’s right shoulder and the back of his head caught the brunt of the impact, while his ribs probably cracked under the weight of something heavy slamming him into the ground and pinning him there.</p>\n  <p>The bones had broken when they were fresh, so it was clearly not a case of “oops, we dropped a big rock on the corpse.” And the amount of force required to do so much damage in a single, shattering blow ruled out several messy possible ways to die during a medieval siege: Skeleton 150 hadn’t been trampled by a horse or run over by a cart, for example. Even if he had fallen from the castle walls, he probably wouldn’t have landed with enough force to do all of <i>that, </i>and the angle would have been all wrong.</p>\n </body>\n</html>",
+  "aiSummary": "文章报道了被称为「骨架 150」的遗骸的发现，这是历史上已知唯一遭投石机击毙的遇难者，并详述了确认其遭受巨大冲击创伤的法医分析过程。",
+  "oneSentenceSummary": "文章报道了被称为「骨架 150」的遗骸的发现，这是历史上已知唯一遭投石机击毙的遇难者，并详述了确认其遭受巨大冲击创伤的法医分析过程。",
+  "summary": "在中世纪斯特灵城堡围城战期间，一台投石机发射的巨大石块击中了守军。此人后来被确认为「骨架 150」，撞击力将其头骨击碎成 61 处、打断肩膀并压碎肋骨。布拉德福德大学的古病理学家乔·巴克伯里利用法医学、显微镜、X 光与微型 CT 扫描对遗骸进行了检查，结论是伤情模式符合重型投射物造成的单次高速冲击。这些伤势与踩踏、马车事故或从城墙上坠落均不符，从而确认投石机就是死因。这一发现在考古记录中独一无二，为中世纪攻城武器的致命杀伤力提供了罕见的直接证据。",
+  "mainPoints": [
+    {
+      "point": "「骨架 150」呈现出与投石机高速冲击相符的广泛创伤。",
+      "explanation": "头骨有 61 处骨折、肩膀断裂、膝盖以上的腿部粉碎，肋骨骨折则表明重物从背部撞击并将遇难者压在下方。"
+    },
+    {
+      "point": "法医分析排除了围城战常见的其他死因。",
+      "explanation": "新鲜骨骼骨折的模式排除了马匹踩踏、马车事故或从城墙坠落等原因，唯一指向投石机打击。"
+    },
+    {
+      "point": "这一发现是已知历史上唯一的投石机遇难记录。",
+      "explanation": "正如古病理学家乔·巴克伯里所强调，尚未发现任何其他由投石机致死的骨骼证据，这使得「骨架 150」成为独一无二的案例。"
+    }
+  ],
+  "keyQuotes": [
+    "「骨架 150」是历史上已知唯一的投石机遇难者。",
+    "所有这些结果都指向重而高速的物体造成的单一瞬间冲击性挤压创伤。"
+  ],
+  "tags": [
+    "考古学",
+    "中世纪历史",
+    "古病理学",
+    "投石机",
+    "历史发现"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 362,
+  "domain": "arstechnica.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Lifestyle_Culture",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786983318000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-18 00:15:18"
+}

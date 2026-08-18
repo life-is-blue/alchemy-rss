@@ -1,0 +1,57 @@
+{
+  "id": "RAW_f8dd19c646",
+  "title": "自我验证报告 99.3% 的精确率，交付却只有 73.2%。精确率是错误的指标",
+  "url": "https://dev.to/dev48v/self-verification-reported-993-precision-while-delivering-732-precision-was-the-wrong-metric-3gf6",
+  "date": "2026-08-17 22:29:40",
+  "author": "Devanshu Biswas",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>\"Ask the model to check its own answer\" is one of those techniques everybody repeats and nobody measures. So I measured it, on 4,000 generated problems where the ground truth is known by construction.</p>\n  <p>The first version of my own page got the measurement wrong, and the way it was wrong is the whole article.</p>\n  <p>Live, all 4,000 runs in-browser: <a href=\"https://dev48.infy.uk/prompt/day64-self-verification.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://dev48.infy.uk/prompt/day64-self-verification.html</a></p>\n  <h2><a name=\"the-setup\" href=\"#the-setup\"> </a> The setup</h2>\n  <p>Word problems with an exact answer: <code>rate * boxes + extra</code>. A solver with a dial-able error rate. A verifier that does <strong>not</strong> re-solve — it reconstructs a masked given from the candidate answer and checks it comes back:\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight javascript\"><code><span class=\"c1\">// given rate and boxes, and the model's answer, recover 'extra'</span>\n<span class=\"kd\">const</span> <span class=\"nx\">extra</span> <span class=\"o\">=</span> <span class=\"nx\">answer</span> <span class=\"o\">-</span> <span class=\"nx\">rate</span> <span class=\"o\">*</span> <span class=\"nx\">boxes</span><span class=\"p\">;</span>\n<span class=\"kd\">const</span> <span class=\"nx\">ok</span> <span class=\"o\">=</span> <span class=\"nb\">Number</span><span class=\"p\">.</span><span class=\"nf\">isInteger</span><span class=\"p\">(</span><span class=\"nx\">extra</span><span class=\"p\">)</span> <span class=\"o\">&amp;&amp;</span> <span class=\"nx\">extra</span> <span class=\"o\">&gt;=</span> <span class=\"mi\">0</span> <span class=\"o\">&amp;&amp;</span> <span class=\"nx\">extra</span> <span class=\"o\">===</span> <span class=\"nx\">trueExtra</span><span class=\"p\">;</span>\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>That asymmetry is why self-verification can work at all. Solving is search. Checking is arithmetic. When the two are genuinely different operations, the second one can catch the first.</p>\n  <p>And it does: <strong>100% of the \"forgot the extra term\" slips are caught, and 100% of off-by-one answers reconstruct to a fraction</strong>, which is an instant reject.</p>\n  <h2><a name=\"where-the-measurement-went-wrong\" href=\"#where-the-measurement-went-wrong\"> </a> Where the measurement went wrong</h2>\n  <p>The obvious question is \"when does verification stop helping?\" — and the obvious way to answer it is to plot accuracy with the verifier against accuracy without.</p>\n  <p>Except the moment you filter, \"accuracy\" is ambiguous. I plotted <strong>precision</strong>: of the answers the pipeline delivered, how many were right?</p>\n  <p>Precision looks fantastic. Raw solver 66.0%, filtered <strong>97.4%</strong>. Crank the solver to 97% accurate with a poor 25% verifier and precision still reads <strong>99.3%</strong> against a raw <strong>96.9%</strong>.</p>\n  <p>Verification wins at every setting. Which should have been the tell: <strong>precision beats raw accuracy essentially always</strong>, because throwing away answers you are unsure about cannot lower it. I had plotted a quantity that structurally cannot cross.</p>\n  <h2><a name=\"the-metric-that-can-cross\" href=\"#the-metric-that-can-cross\"> </a> The metric that can cross</h2>\n  <p>You do not ship precision. You ship answers. So count what actually reaches the user:\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>delivered = precision × coverage\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>Same setting — solver 97%, verifier 25% — with coverage included:</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th></th>\n      <th>raw</th>\n      <th>verified</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>precision</td>\n      <td>96.9%</td>\n      <td><strong>99.3%</strong></td>\n     </tr>\n     <tr>\n      <td>coverage</td>\n      <td>100%</td>\n      <td>73.7%</td>\n     </tr>\n     <tr>\n      <td><strong>delivered correct</strong></td>\n      <td><strong>96.9%</strong></td>\n      <td><strong>73.2%</strong></td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>The pipeline is now <em>worse</em>, by 24 points. A fallible verifier does not only reject wrong answers. It rejects correct ones — 25.7% of them here, exactly as configured.</p>\n  <p>Sweep the solver and there is a real crossing point, somewhere around <strong>60% solver error</strong>. Below it, verification costs you. Above it, verification pays.</p>\n  <h2><a name=\"the-confusion-matrix-because-two-rates-are-not-one\" href=\"#the-confusion-matrix-because-two-rates-are-not-one\"> </a> The confusion matrix, because two rates are not one</h2>\n  <p>TP 2533 · FP 118 · FN 268 · TN 1081 — sums to 4000, and it should always be printed. A verifier has a catch rate <em>and</em> a false-reject rate, and any single number you quote hides one of them.</p>\n  <h2><a name=\"sampling-changes-the-trade-and-it-is-not-free\" href=\"#sampling-changes-the-trade-and-it-is-not-free\"> </a> Sampling changes the trade, and it is not free</h2>\n  <p>Reject-and-resample instead of reject-and-give-up, and coverage comes back:</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>k</th>\n      <th>coverage</th>\n      <th>model calls</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>1</td>\n      <td>60.3%</td>\n      <td>2.00</td>\n     </tr>\n     <tr>\n      <td>5</td>\n      <td>98.7%</td>\n      <td>~3.1</td>\n     </tr>\n     <tr>\n      <td>8</td>\n      <td>99.4%</td>\n      <td>3.30</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>The call counter is attached to the real loop, not to a formula. Verification is never one extra call — it is one per attempt, plus the attempts you would not have made.</p>\n  <h2><a name=\"what-i-would-keep\" href=\"#what-i-would-keep\"> </a> What I would keep</h2>\n  <ul>\n   <li><strong>Ask what the metric can do before you plot it.</strong> Precision under filtering cannot fall. A quantity that structurally cannot cross will always show your technique winning.</li>\n   <li><strong>Report coverage next to every filtered accuracy.</strong> Always. Without it, \"we improved accuracy by filtering\" is not a claim, it is a definition.</li>\n   <li><strong>Verification is a filter, and filters have two error rates.</strong> Budget for both.</li>\n  </ul>\n  <p>Part of a from-scratch series — one prompting technique a day, measured rather than described: <a href=\"https://dev48.infy.uk/promptfromzero.php\" target=\"_blank\" rel=\"noopener noreferrer\">https://dev48.infy.uk/promptfromzero.php</a></p>\n </body>\n</html>",
+  "aiSummary": "一项实测案例研究表明，只报告精确率会让自我验证看起来普遍有效；而把覆盖率纳入考量后会发现，当求解器错误率低于约 60% 的交叉点时，它实际上会损害交付准确率。",
+  "oneSentenceSummary": "一项实测案例研究表明，只报告精确率会让自我验证看起来普遍有效；而把覆盖率纳入考量后会发现，当求解器错误率低于约 60% 的交叉点时，它实际上会损害交付准确率。",
+  "summary": "作者在 4，000 个已知真值的生成问题上测量了自我验证：求解器具有可调的错误率，验证器通过重建被掩码的给定条件来检查候选答案。第一次测量绘制了精确率，看起来验证在每个设置下都胜出。这在结构上是必然的：过滤不可能降低精确率，因此错误的指标让该技术看起来普遍有效。把实际到达用户的内容计为交付质量（交付质量 = 精确率 × 覆盖率）后，结果发生了反转：在求解器 97%、验证器 25% 的情况下，经过验证的交付质量从 96.9% 的原始水平降至 73.2%。扫描求解器错误率后，发现在约 60% 错误率处存在一个真实的交叉点。这篇文章还讨论了混淆矩阵、拒绝并重采样的成本，以及三条实用的度量规则：在绘制指标之前先问问这个指标能做什么；报告过滤后准确率时始终同时报告覆盖率；把验证视为具有两个错误率的过滤器。",
+  "mainPoints": [
+    {
+      "point": "精确率在结构上无法体现过滤带来的损害。",
+      "explanation": "丢弃低置信度的答案不可能降低精确率，因此当只报告精确率时，验证器看起来总是有益的。"
+    },
+    {
+      "point": "交付质量等于精确率乘以覆盖率。",
+      "explanation": "会出错的验证器也会拒绝正确答案；在 97% / 25% 的设置下，经过验证的交付质量从 96.9% 降到 73.2%。"
+    },
+    {
+      "point": "在求解器错误率约 60% 处存在一个真实的交叉点。",
+      "explanation": "低于该阈值时，验证损失的正确答案比它保留的更多；高于该阈值时，验证才有收益。"
+    },
+    {
+      "point": "过滤器有两种错误率，重采样并非没有成本。",
+      "explanation": "始终展示完整的混淆矩阵，并考虑拒绝并重采样引入的额外模型调用。"
+    }
+  ],
+  "keyQuotes": [
+    "你交付的不是精确率，而是答案。",
+    "会出错的验证器不只拒绝错误答案，它还会拒绝正确答案。",
+    "验证是一个过滤器，而过滤器有两种错误率。",
+    "精确率几乎总是超过原始准确率，因为丢弃你不确定的答案不可能降低它。而我此前绘制的正是一个在结构上不可能交叉的量。"
+  ],
+  "tags": [
+    "LLM 评估",
+    "自我验证",
+    "提示工程",
+    "评估指标",
+    "模型评估与基准测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 616,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786976980000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-17 22:29:40"
+}

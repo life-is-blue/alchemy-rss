@@ -1,0 +1,56 @@
+{
+  "id": "RAW_929c4b899d",
+  "title": "我希望早点知道这些 AI API 成本技巧 —  — 完整拆解",
+  "url": "https://dev.to/truelane/i-wish-i-knew-ai-api-cost-hacks-sooner-full-breakdown-65k",
+  "date": "2026-08-17 21:49:46",
+  "author": "Alex Chen",
+  "siteName": "DEV Community: machinelearning",
+  "content": null,
+  "aiSummary": "学习实用的 AI API 成本节省技巧：模型选择、缓存、分层路由、提示词压缩和批处理，可将费用降低高达 95%。",
+  "oneSentenceSummary": "学习实用的 AI API 成本节省技巧：模型选择、缓存、分层路由、提示词压缩和批处理，可将费用降低高达 95%。",
+  "summary": "作者分享了在一次昂贵的训练营项目后，如何个人经验降低 AI API 账单。通过为特定任务选择更便宜的模型、实施缓存、使用带质量检查的分层路由、压缩提示词以及批处理请求，他们实现了高达 95% 的成本节省。该文章包含代码片段、具体的定价比较，以及关于测量使用量、在成本与质量之间取得平衡以及选择合适的缓存 TTL 的经验教训。",
+  "mainPoints": [
+    {
+      "point": "选择适合任务类型的最便宜的模型",
+      "explanation": "将聊天、代码生成、摘要和分类等任务映射到如 DeepSeek V4 Flash（$0.25/M）或 Qwen3-8B（$0.01/M）等模型，相比默认使用 GPT‑4o 可节省 90‑98%。"
+    },
+    {
+      "point": "为重复查询实施缓存",
+      "explanation": "将响应存储并设置 TTL（例如 1 小时）可大幅降低成本；常见问答式流量通常能产生 50‑80% 的缓存命中，使这些请求变为免费。"
+    },
+    {
+      "point": "使用带质量检查的分层路由",
+      "explanation": "首先尝试超低成本模型，只有在质量低于阈值（例如 0.8‑0.9）时才升级到更昂贵的模型，以低成本处理多数请求，同时为困难情况保持准确性。"
+    },
+    {
+      "point": "压缩长提示词并批处理请求",
+      "explanation": "使用廉价模型总结庞大的上下文可下游节省令牌；将多个问题批量合并为一次调用可摊分输入令牌，每批节省 10‑20%。"
+    }
+  ],
+  "keyQuotes": [
+    "我当时完全不知道自己竟在这样烧钱。",
+    "最大的教训？我所支付的大部分其实是过度配置。",
+    "我在日志中第一次看到缓存命中时，实际上笑出声了。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "提示词工程",
+    "开发工具",
+    "氛围编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 85,
+  "wordCount": 1635,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1786974586000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-17 21:49:46"
+}
