@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-19 10:50:42 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-19 12:28:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -39689,11 +39689,11 @@
 
 
 
-### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
+### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
 
-2026-05-06T00:00:00.000Z
+2026-05-05T00:00:00.000Z
 
-> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
+> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
 
 
 
