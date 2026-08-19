@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-19 08:38:51 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-19 10:50:42 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3697,25 +3697,19 @@
 
 ### [2026-年如何找到-LinkedIn-账号：137-个来源获取高资历、已验证且人脉丰富的个人资料](https://dev.to/ownseoit45654/where-to-find-linkedin-accounts-in-2026-137-sources-for-aged-verified-connected-profiles-46fg)
 
-2026-08-19 04:32:06 | 标签: 职业社交, LinkedIn, 业务发展, 数字身份, 招聘
-
-> 这份 OwnSEOIT 教育指南澄清了发现公开 LinkedIn 个人资料与非法获取账号所有权之间的关键区别。它定义了高资历、已验证和已连接的个人资料，然后提供了 137 个合法发现来源的全面列表，涵盖企业页面、学术目录、会议列表和专业网络。文章彻底审查了买卖 LinkedIn 账号的风险——包括身份盗窃、凭证泄露和政策违规——并概述了安全最佳实践、账号恢复程序和研究人员的隐私考量。最后提供了一个实用的评估框架和常见问题解答，解决关于账号验证和可信度的常见误解。
+2026-08-19 04:32:06
 
 
 
 ### [投稿前每位-AI-与-CS-研究者都需掌握的-7-项高级-LaTeX-技巧](https://dev.to/letx_app_76f3cdf1c781dfd7/7-advanced-latex-hacks-every-ai-cs-researcher-needs-before-submission-published-432l)
 
-2026-08-19 02:36:00 | 标签: LaTeX, 学术写作, 开发者工具, 研究流程, 技术出版
-
-> 本文针对学术排版在紧迫投稿期限下面临的常见痛点，如页数超限、浮动体错位和编译缓慢，介绍了七项经过实践检验的 LaTeX 技巧：(1) 使用 microtype 进行亚像素级排版优化，可节省 10–25 行空间；(2) 使用 stfloats 实现双栏浮动体底部放置；(3) TikZ 外部化配合编译速度基准测试，显示热重编译速度提升 10 倍；(4) 使用 booktabs 和 siunitx 制作出版级表格；(5) 使用 cleveref 实现自动化交叉引用；(6) 使用 biblatex 字段抑制功能精简参考文献元数据；(7) 使用集中式数学宏保持符号一致性。每项技巧均附有可直接使用的代码片...
+2026-08-19 02:36:00
 
 
 
 ### [图工程并不是关于更多连接-—-—-而是关于哪些连接被使用](https://towardsdatascience.com/graph-engineering-isnt-about-more-connections-its-about-which-ones-get-used/)
 
-2026-08-18 21:30:00 | 标签: 多智能体系统, 图论, 智能体通信, 确定性策略, 边缘利用率
-
-> 作者用纯 Python 构建了一个确定性的多智能体基准，以隔离关系密度（即可能的有向边中被打开的比例）对系统性能的影响。八个智能体各自持有 17 事实场景的独特切片，并遵循基于 TF‑IDF 的新颖性寻求策略。在五个密度水平（20%–100%）上各进行十次试验，信息恢复保持平稳（约 92‑98%），而边缘利用率从 20% 密度时的 97.3% 下降至 100% 密度时的 47.1%。这表明，仅仅增加通信路径并不会自动提升性能；关键的工程问题是这些路径中实际上有多少在传输信息。文章提供了完整代码、可重现的结果，并讨论了确定性策略、度量选择和预算影响的权衡。
+2026-08-18 21:30:00
 
 
 
@@ -15547,73 +15541,55 @@
 
 ### [Chat-SDK-添加-Instagram-适配器---Vercel](https://vercel.com/changelog/chat-sdk-adds-instagram-adapter)
 
-2026-08-19 08:00:00 | 标签: 聊天 SDK, Instagram, 机器人, Meta API, 直接消息
-
-> 本文宣布 Vercel 的 Chat SDK 新增 Instagram 适配器。该适配器通过 Meta 的 Instagram Messaging API 连接，支持发送和接收直接消息、媒体、快速回复卡片、链接按钮、输入指示器、反应以及故事回复。机器人只能在用户上一次消息后的 24 小时窗口内回复，流式响应会在流结束后一次性缓冲发送。示例代码展示了如何实例化适配器并响应直接消息。发布说明中包含适配器文档和更广泛适配器目录的链接。
+2026-08-19 08:00:00
 
 
 
 ### [如何在-Flutter-中使用-Material-和-Cupertino-解耦-完整手册](https://www.freecodecamp.org/news/how-to-work-with-material-and-cupertino-decoupling-in-flutter-full-handbook/)
 
-2026-08-19 00:05:44 | 标签: Flutter, Material 设计, Cupertino 设计, 解耦, 迁移指南
-
-> 文章首先回顾了 Flutter 解耦工作的早期预览，并宣布 Flutter 3.47（2026 年 8 月 12 日发布）已将 material_ui 和 cupertino_ui 包稳定为版本 1.0，并提供了迁移工具和兼容性桥。它解释了架构动机——实现独立版本控制、更快的 UI 更新、更易于贡献，以及让自定义设计系统避免不必要的依赖——然后详细说明了对现有代码的影响，指出旧的导入将在计划于 2026 年秋季稳定版发布前的弃用之前仍然可用。指南逐步讲解如何设置新包、运行自动迁移工具（dart fix --apply --code=migrate_design_widgets）、处理已知的 p...
+2026-08-19 00:05:44
 
 
 
 ### [BGP-角色模型：跟踪-RFC-9234-的采用](https://blog.cloudflare.com/rfc9234-bgp-role-model/)
 
-2026-08-18 23:21:32 | 标签: BGP, 路由, 路由安全, RPKI, 研究
-
-> Cloudflare 博客文章介绍了来自 RFC 9234 的 BGP 角色模型，说明它如何将自治系统划分为提供商、客户和对等体等角色，以改进路由策略和安全性。随后，文章展示了从 Cloudflare 全球网络和公开数据源收集的测量结果，以显示运营商采用该模型的速度，突出地区差异、部署挑战以及对路由验证和攻击缓解的潜在影响。文章最后给出希望实施该角色模型的网络运营商的建议，并指出正在进行的工作以完善该标准。
+2026-08-18 23:21:32
 
 
 
 ### [Vercel-Sandbox-的-100-万美元黑客挑战赛](https://vercel.com/blog/one-million-dollar-hacker-challenge-for-vercel-sandbox)
 
-2026-08-18 21:00:00 | 标签: 沙箱, 云安全, MicroVM, Firecracker, 漏洞赏金
-
-> Vercel 宣布了一项为期两周的公开漏洞赏金计划，时间为 2026 年 8 月 18 日至 9 月 1 日，为逃逸 Vercel Sandbox 提供最高 1，000，000 美元的奖金。该博客解释了沙箱架构：每个工作负载都会获得一个带有专用客户内核的 Firecracker microVM，主机端沙箱防火墙在 VM 之外强制执行网络策略。范围包括绕过 microVM 访问宿主机或其他租户，以及在不穿越 VM 的情况下突破防火墙。容器命名空间逃逸明确不在范围内。报告必须包含可运行的概念验证；每份报告的赏金从 1，000 美元到 50，000 美元不等。Vercel 表示，经确认的技术将成为永...
+2026-08-18 21:00:00
 
 
 
 ### [将铁路网络用作平板扫描仪](https://philo.gay/linecam/)
 
-2026-08-18 20:43:54 | 标签: DIY 硬件, 嵌入式系统, 图像处理, 开源, 硬件黑客
-
-> 本文是一篇详尽的第一人称叙述，讲述了一位业余爱好者将工业线性扫描相机（Basler ruL2048‑19gm）改装为在乘坐火车和渡轮时可移动的“平板扫描仪”的项目。文章首先追溯了该概念在数字扫描背板和先前 slit‑scan 实验中的起源，随后介绍了使用手机进行的早期概念验证测试、工业相机的选型与采购，以及一种能够固定相机、6‑DOF IMU、GPS 和 SAMD21 微控制器的 3D 打印支架的机械设计。作者解释了将单像素宽的线流转换为连贯图像所需的后处理流程，包括通过加速度计数据进行速度补偿、处理串口时序问题，以及在 OpenCV 表现不佳后使用 Dear ImGui 构建自定义 GUI。...
+2026-08-18 20:43:54
 
 
 
 ### [向外拓展：从代码走向影响力](https://www.infoq.com/presentations/working-across-teams/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-18 20:31:00 | 标签: 领导力, 沟通, 导师制, 职业成长, 技术主管
-
-> GFXReconstruct 的 CTO Brad Grantham 回顾了他从编码到领导力的历程，强调成长需要身处合适的时机并抓住机遇，超越技术技能（例如法律、标准、商业机会），通过如 DISC 等框架提升沟通能力，通过赋能团队成功来克服自我，并接受领导工作本身是混乱且迭代的。他以个人轶事说明每一点——导师指导、启动 AI 政策、重塑命令行工具、标准工作、拉取请求检查单以及处理客户反馈——展示了技术优势如何向外辐射，使团队和组织受益。
+2026-08-18 20:31:00
 
 
 
 ### [对比与生成：抖音-SOTA-多模态表征模型-DME](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521321&idx=1&sn=4881e96023fe955d32daac031479bc92)
 
-2026-08-18 19:00:00 | 标签: 多模态表征, Embedding, 检索系统, 对比学习, 隐式推理
-
-> 本文详细介绍了抖音多模态表征模型 DME（Douyin Multimodal Embedding）的技术细节与实验结果。针对 AI 搜索与 Agent 时代对检索向量“语义充分性”与“细粒度感知”的新需求，DME 提出两阶段训练范式：Stage 1 利用 2500 万数据对的大规模对比学习构建统一多模态空间；Stage 2 引入 500 万高质量数据，创新性地融合隐式推理与交叉条件重建损失。隐式推理通过少量 anchor token 在单次前向中完成“找证据、懂证据、判匹配”，无需显式 CoT 生成；重建损失将检索向量作为语义瓶颈，强制其保留跨模态匹配对的细粒度信息。在权威榜单 MMEB-v2...
+2026-08-18 19:00:00
 
 
 
 ### [.NET-11-Preview-7-为-MAUI-添加-Passkeys、增量-XAML-Hot-Reload-和-Shell-路由模板](https://www.infoq.com/news/2026/08/dotnet-11-preview7-maui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-18 16:00:00 | 标签: .NET, MAUI, XAML 热重载, Passkeys, Shell 路由
-
-> Microsoft 的 .NET 11 Preview 7 为 .NET MAUI 带来一组显著的更新，重点是一个跨平台的 Passkeys API，它利用平台的 WebAuthn 实现无密码身份验证，而将服务器端的挑战处理留给应用。该版本还引入了一个增量 XAML Hot Reload 预览功能（默认在 Debug 构建中启用），它使用源生成器和 MetadataUpdateHandler 在不进行完全重建的情况下将更改应用到已创建的页面，支持属性编辑、子元素添加/删除、结构重新排序、附加属性、标记扩展、绑定以及 ResourceDictionary 更新。Shell 导航获得了受 ASP....
+2026-08-18 16:00:00
 
 
 
 ### [显存管理第-2-部分：超越物理显存的极限](https://pixelcluster.dev/VRAM-Overcommit/)
 
-2026-08-18 15:51:50 | 标签: 显存管理, 显存超卖, 内核驱动, 性能分析, 图形优化
-
-> 作者在此前工作的基础上继续改进 Linux 中的显存管理，指出针对显存超卖的内核补丁已合入 Linux 7.3。他首先阐明了理论预期：超过物理显存应该只会影响性能；随后详述了为什么真实游戏会遇到“radv/amdgpu：命令提交时内存不足”这类稳定性问题。通过检查内核加锁过程，他发现了一个经典的 ABBA 死锁：并发的提交请求各自试图驱逐对方已锁定的缓冲区。他解释了 wound-abort-retry 机制的工作原理，并指出 TTM 中没有使用 drm_exec 辅助函数，导致内核中止提交而不是重试。在变基并修复补丁集后，系统不再随机崩溃，但性能仍然不佳，因为被驱逐的缓冲区在显存与系统内存之间...
+2026-08-18 15:51:50
 
 
 
@@ -39713,11 +39689,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 

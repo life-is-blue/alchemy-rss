@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-19 08:38:51 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-19 10:50:42 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -596,17 +596,13 @@
 
 ### [Vercel-for-Platforms-现可从用户的-GitHub-仓库部署---Vercel](https://vercel.com/changelog/vercel-for-platforms-can-now-deploy-from-your-users-github-repositories)
 
-2026-08-19 01:00:00 | 标签: Vercel, GitHub, 部署, API, 平台工程
-
-> Vercel 更新日志宣布 Vercel for Platforms 的新功能：通过 REST API 创建部署时，开发者可在 gitSource 之外传递 gitAccessToken。Vercel 使用这个短期、只读的令牌（有效期不超过 24 小时，仅限目标仓库读取权限）拉取源码并构建部署，且不会将令牌存储在部署中。该功能移除了最终用户安装 Vercel GitHub App 的前置条件，简化了集成 Vercel 的平台的部署流程。文章包含相关 API 文档链接，并提供开始使用或联系销售的入口。
+2026-08-19 01:00:00
 
 
 
 ### [OpenGrep-安全检查-|-Qodana](https://blog.jetbrains.com/qodana/2026/08/opengrep-inspections/)
 
-2026-08-18 18:32:06 | 标签: 开发工具, 静态分析, 安全扫描, CI/CD, .NET
-
-> JetBrains Qodana 现已集成 OpenGrep 驱动的安全检查，支持 .NET 和 JavaScript 项目，新增数百项社区维护的规则，覆盖注入、XSS、SSRF、反序列化、不安全数据流及自定义检查。检测结果在同一 IDE、拉取请求和 CI/CD 工作流中显示，与 Qodana 现有的代码质量、漏洞检测、依赖分析和污点分析结果并列，无需额外的安全工具。该发布还提到通过 SABER runner 提供透明的基准测试，衡量真阳性和假阳性率，强调 OpenGrep 补充而非取代 Qodana 当前的检查，并规划未来支持 Kotlin 和 Java。附录中包含详尽的 FAQ，阐明集成方...
+2026-08-18 18:32:06
 
 
 
