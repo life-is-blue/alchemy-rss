@@ -1,0 +1,51 @@
+{
+  "id": "RAW_5068807cdb",
+  "title": "让 Al Agent 看懂所有文档：将任何文档转换为统一的 Markdown 格式",
+  "url": "https://www.appinn.com/firecrawl-pdf-inspector-anydoc/",
+  "date": "2026-08-19 00:44:13",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"has-very-light-gray-to-cyan-bluish-gray-gradient-background has-background wp-block-paragraph\"><strong>Firecrawl</strong> 最近开源了 <strong>PDF Inspector</strong> 和 <strong>AnyDoc</strong> 两个项目，解决 AI Agent / RAG 场景里的一个基础问题：如何把各种文档快速、准确地转换成 AI 能理解的 Markdown。@<a href=\"https://www.appinn.com/firecrawl-pdf-inspector-anydoc/\">Appinn</a></p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/08/Copy-of-appinn-homework-2026-08-18T163927.073.jpg\" alt=\"让 Al Agent 看懂所有文档：将任何文档转换为统一的 Markdown 格式 1\" class=\"wp-image-59083\" title=\"让 Al Agent 看懂所有文档：将任何文档转换为统一的 Markdown 格式 1\">\n  </figure>\n  <p class=\"wp-block-paragraph\"><strong>Firecrawl</strong> 是一个面向 AI 应用的网页抓取与数据转换平台，主要目标是：把互联网内容转换成适合 LLM（大语言模型）理解的数据。</p>\n  <h3 class=\"wp-block-heading\"><strong>PDF Inspector</strong></h3>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://github.com/firecrawl/pdf-inspector\" target=\"_blank\" rel=\"noopener\">https://github.com/firecrawl/pdf-inspector</a></li>\n  </ul>\n  <p class=\"wp-block-paragraph\">PDF Inspector 是一个 Rust 编写的 PDF 分析库。它不会直接把所有 PDF 扔给 OCR，而是先分析 PDF 内部结构。</p>\n  <figure class=\"wp-block-table\">\n   <table class=\"has-fixed-layout\">\n    <thead>\n     <tr>\n      <th>类型</th>\n      <th>处理方式</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>有真实文字层</td>\n      <td>直接解析</td>\n     </tr>\n     <tr>\n      <td>扫描文档</td>\n      <td>OCR</td>\n     </tr>\n     <tr>\n      <td>图片 PDF</td>\n      <td>OCR</td>\n     </tr>\n     <tr>\n      <td>混合 PDF</td>\n      <td>只 OCR 部分页面</td>\n     </tr>\n    </tbody>\n   </table>\n  </figure>\n  <p class=\"wp-block-paragraph\">例如一份 40 页文档，其中35页是真正的文本，另外5页是图片，那么它会分别处理，降低成本。</p>\n  <p class=\"wp-block-paragraph\">OCR 的部分使用 PP-OCRv6 本地模型，就是飞桨。</p>\n  <h3 class=\"wp-block-heading\">AnyDoc</h3>\n  <p class=\"wp-block-paragraph\"><a href=\"https://github.com/firecrawl/anydoc\" target=\"_blank\" rel=\"noopener\">https://github.com/firecrawl/anydoc</a></p>\n  <p class=\"wp-block-paragraph\">AnyDoc 也能处理 PDF，不过还可以处理 word、excel、ppt、epub、csv 等格式，最大特色是让这些文档拥有统一的输出结构。包括：</p>\n  <ul class=\"wp-block-list\">\n   <li>表格格式一致；</li>\n   <li>标题格式一致；</li>\n   <li>脚注处理一致；</li>\n   <li>链接处理一致；</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">让不同文档的这些内容（粗体、斜体、删除线、代码块、列表等）都有统一的结构。</p>\n  <p class=\"wp-block-paragraph\">而 PDF 支持是依靠上面的 pdf-inspector 项目。</p>\n  <p class=\"wp-block-paragraph\">另外拥有 Agent skill 可以让AI来操作。</p>\n  <p class=\"wp-block-paragraph\">纯本地项目，不需要任何 API。</p>\n  <p class=\"wp-block-paragraph\">只要你经常需要让AI来处理各类文档，先用它来处理一遍，可以更高效、更准确，以及更省钱。</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：https://www.appinn.com/firecrawl-pdf-inspector-anydoc/</p>\n </body>\n</html>",
+  "aiSummary": "Firecrawl 开源 PDF Inspector 和 AnyDoc，通过结构化分析和统一输出，把各种文档转换为 AI 友好的 Markdown 格式。",
+  "oneSentenceSummary": "Firecrawl 开源 PDF Inspector 和 AnyDoc，通过结构化分析和统一输出，把各种文档转换为 AI 友好的 Markdown 格式。",
+  "summary": "Firecrawl 最近开源了两个项目：PDF Inspector 和 AnyDoc。PDF Inspector 是一个用 Rust 编写的 PDF 分析库，它会先判断 PDF 内部结构——对含真实文字层的页面直接解析，对扫描件、图片 PDF 或混合 PDF 采用本地 PP-OCRv6 模型进行 OCR，从而降低不必要的计算成本。AnyDoc 能处理 PDF、Word、Excel、PPT、EPUB、CSV 等多种格式，并将它们的表格、标题、脚注、链接等元素统一为一致的 Markdown 结构，支持粗体、斜体、删除线、代码块、列表等。两个项目均为纯本地工具，无需调用外部 API，适合需要频繁让 AI 处理各类文档的场景，能够提高处理效率、准确性并降低成本。",
+  "mainPoints": [
+    {
+      "point": "PDF Inspector 先分析 PDF 内部结构，再根据内容类型选择直接解析或 OCR。",
+      "explanation": "对包含真实文字层的页面直接解析；对扫描文档、图片 PDF 或混合 PDF 的图片部分使用本地 PP-OCRv6 模型进行 OCR，这样可以避免对纯文本页面进行不必要的 OCR，降低计算成本。"
+    },
+    {
+      "point": "AnyDoc 提供多格式文档的统一 Markdown 输出。",
+      "explanation": "它能处理 PDF、Word、Excel、PPT、EPUB、CSV 等格式，并将表格、标题、脚注、链接等元素统一格式，确保粗体、斜体、删除线、代码块、列表等在不同来源的文档中保持一致的 Markdown 结构。"
+    },
+    {
+      "point": "纯本地、无需 API 的特点让 AI Agent 处理文档更高效、更准确且更省钱。",
+      "explanation": "因为项目完全在本地运行，不依赖外部服务，开发者可以直接集成到 AI 工作流中，快速把各类文档转为 LLM 可读的 Markdown，从而提升处理速度和准确性，同时避免第三方 API 费用。"
+    }
+  ],
+  "keyQuotes": [
+    "只要你经常需要让 AI 来处理各类文档，先用它来处理一遍，可以更高效、更准确，以及更省钱。",
+    "PDF Inspector 是一个 Rust 编写的 PDF 分析库。它不会直接把所有 PDF 扔给 OCR，而是先分析 PDF 内部结构。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "文档转换",
+    "Markdown",
+    "开源项目"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 72,
+  "wordCount": 498,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1787071453000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-19 00:44:13"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-19 06:27:16 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-19 08:38:51 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -735,6 +735,38 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [当您的网站即将达到-Vercel-免费图像优化配额时应采取的措施](https://www.freecodecamp.org/news/what-to-do-if-your-site-is-about-to-hit-vercels-free-image-optimization-cap/)
+
+2026-08-19 00:52:51 | 标签: 前端与 Web, 云原生 / DevOps, 性能优化, 开发者工具, Next.js
+
+> 文章描述了一个真实问题：作者托管在 Vercel 上的 Next.js 站点正在逼近图像优化的免费层额度。调查发现，来自 freeCodeCamp 和 Hashnode CDN 的 691 张图像（分布在 33 篇博客文章中）因其域名被列入 `images.remotePatterns`，而被拉入 Vercel 的优化管道。作者评估了两种修复方案：（1）将外部图像标记为 `unoptimized`，以停止配额消耗但会失去响应式尺寸和现代格式；（2）下载所有图像，重新托管到他们现有的 Cloudflare R2 存储桶，重写 MDX 源码，并从白名单中移除外部主机。他们选择了方案 2，并提供了用...
+
+
+
+### [如何使用-WCAG-2.2-构建更无障碍的网站](https://www.freecodecamp.org/news/how-to-build-more-accessible-websites-with-wcag-2-2/)
+
+2026-08-19 00:33:33 | 标签: 网页无障碍, WCAG 2.2, 前端开发, 语义化 HTML, 键盘无障碍
+
+> 本文由 freeCodeCamp 提供，全面介绍了 WCAG 2.2，解释了其四大原则（可感知、可操作、可理解、健壮）以及合规等级的运作方式。文章重点关注最影响前端开发的 A 级和 AA 级成功标准，涵盖从语义化 HTML 入手、添加跳过链接、编写有用的图片替代文本、处理颜色与对比度、支持文本缩放与重排、确保键盘可操作性、保持焦点可见、设计指针目标、构建无障碍表单、避免重复输入、保持帮助一致、WCAG 对认证的影响、使用 ARIA 而不替代原生 HTML、使动态状态消息无障碍，以及无障碍测试等主题。每个部分都包含代码片段和指向官方 W3C 资源的引用，为开发者构建更包容的网站提供实用指南。
+
+
+
+### [使用-GSAP-时间轴和动态-CMS-数据构建动画化客户评价-Hero-区域](https://tympanus.net/codrops/2026/08/18/building-an-animated-testimonial-hero-using-the-gsap-timeline-and-dynamic-cms-data/)
+
+2026-08-18 21:39:35 | 标签: 前端与 Web, GSAP, Webflow, CSS 容器查询, JavaScript 动画
+
+> 本文逐步讲解如何创建一个既具手工质感、又完全由 Webflow CMS 数据驱动的客户评价 Hero 区域。文章涵盖三种主要技术：一种老虎机式计数器，通过滑动数字条带而非逐次递增来让数字动起来；一种手工排列的成员肖像拼贴，利用 Webflow 有限的后代选择器（first-child、nth-child(even)、last-child、odd items）和基于 em 的缩放（借助容器查询实现）；以及一种在 Webflow 可视化时间轴中构建的循环 GSAP 动画，通过 3D 翻转、弹性缓动和错落时序实现面孔切换。作者解释了如何用 AI 生成的 JavaScript 控制缓动效果、如何通过容...
+
+
+
+### [Finger：永不消逝的-1971-年社交网络-|-Andros-Fenollosa](https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died/)
+
+2026-08-18 15:21:35 | 标签: 社交网络, 互联网历史, 去中心化网络, 极简协议, Web 开发
+
+> 文章追溯了 Finger （一个早于现代社交媒体平台的 1971 年社交网络协议）的历史。文章解释了 Finger 通过显示纯文本文件中的用户信息来工作的原理，并讨论了它从简单的状态共享工具演变为微博客平台的过程。文章强调了关键里程碑，包括 John Carmack 的使用及其在早期物联网中的作用。它还探讨了 Finger 因安全漏洞而衰落，以及在去中心化网络运动背景下的近期复兴。文章最后提供了搭建 Finger 服务器的实用指南，并将其与其他极简网络协议进行比较。
 
 
 
@@ -1854,13 +1886,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2010,13 +2042,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3510,13 +3542,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5220,13 +5252,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

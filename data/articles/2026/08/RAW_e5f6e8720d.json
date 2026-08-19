@@ -1,0 +1,60 @@
+{
+  "id": "RAW_e5f6e8720d",
+  "title": "AI 编程智能体：采用趋势",
+  "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+  "date": "2026-08-18 23:03:13",
+  "author": "Mikhail Bogdanov",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Based on the Developer Ecosystem Survey 2026, the tenth edition of our large-scale, globally representative study run by the </em><a href=\"https://www.jetbrains.com/research/strategic-research/\" target=\"_blank\" rel=\"noopener\"><em>Strategic Research and Market Intelligence</em></a><em> team</em>.</p>\n  <p>This post picks up where our <a href=\"https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/\">previous report on the adoption of the main AI coding tools</a> left off in April 2026.</p>\n  <p>We recently ran the <strong>Developer Ecosystem Survey 2026</strong> –&nbsp;a large-scale, globally representative survey of more than 15,000 professional developers worldwide, currently in its tenth year. This data provides a broad spectrum of insights into developers’ toolkits, practices, technologies, and attitudes.</p>\n  <p>We see AI coding agents actively carving out a place in developers’ toolkits, gaining traction and adoption across the industry. As of May–July 2026, <strong>90% of professional developers were using AI coding agents at work at least weekly</strong> in one form or another (local agents or remote cloud agents), with <strong>68% using them daily</strong>.</p>\n  <p><strong>AI coding agents: Key adoption trends</strong></p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/08/ai_coding_tools_awareness_dynamics.png\" alt=\"\" class=\"wp-image-732230\">\n  </figure>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/08/ai_coding_tools_workusage_dynamics.png\" alt=\"\" class=\"wp-image-732241\">\n  </figure>\n  <p><strong>Claude Code</strong> <strong>has continued to grow at an unprecedented pace, becoming by far the most widely adopted AI coding tool at work</strong>. It is used twice as often as GitHub Copilot, a former long-standing leader of the market that brought AI-assisted coding into the spotlight in 2023.</p>\n  <p>In May–July 2026, <strong>around 39% of professional developers worldwide were using Claude Code at work</strong>, up from 18% in January 2026. In the United States, its adoption is even higher at 47% – thus, almost half of US developers are using Claude Code at work. Moreover, it is becoming the main AI coding tool in developers’ AI toolkit at a much higher rate. <strong>Claude Code is the most used AI coding tool for 31% of developers, which signifies an almost 80% conversion rate</strong> (from <em>regular usage at work</em> to being <em>the single most used tool</em>).</p>\n  <p><strong>Codex</strong> is rapidly catching up, showing<strong> adoption growth of roughly 5x</strong>, from just 3% in January 2026 to 16% in May–July 2026. However, the leap in product awareness might be even more impressive. In January 2026, only 27% of developers worldwide had heard about Codex despite the huge OpenAI brand behind it, while by May–July 2026 that number had risen to 65%.</p>\n  <p><strong>GitHub Copilot</strong> <strong>has lost its leadership</strong>, experiencing a decline from 29% adoption a year ago to 21% in May–July 2026. However, it is still one of the most widely known tools on the market, with 79% mind share (awareness) among developers. This metric is even higher in Europe, the UK, and the US, sitting at 86%–90%. Also, according to the Developer Ecosystem Survey 2026, <strong>39% of GitHub Copilot users use it, among other surfaces, in JetBrains IDEs.</strong></p>\n  <p>Although <strong>Cursor</strong> has gained some mind share (from 69% in January to 75% in May–July), <strong>it has experienced a small decline in adoption</strong>, from 18% in January to 12% in May–July. <strong>The biggest drop in adoption occurred in China</strong>, where it was used by 28% developers in January and by only 16% in May–July 2026.</p>\n  <p><strong>OpenCode</strong> –&nbsp;the open-source coding agent&nbsp;– has reached 7% adoption. Even more remarkably, it enjoys a 42% mindshare among developers worldwide without a big company name behind it.\n   <br>\n   <br>\n   <strong>Google Antigravity</strong> is stable in terms of adoption (6%) amid a significant leap in awareness: from 29% in January to 47% in May–July 2026. India is continuing to be Antigravity’s stronghold, where it is practically tied as the third most-popular AI coding tool, on par with Cursor: 15% of developers in India use Antigravity at work, up from 10% in January 2026.</p>\n  <p>\n   <br>\n   <strong>JetBrains AI</strong>\n   <br>\n   As AI coding agents become a standard part of developers’ workflows, <strong>JetBrains AI are also seeing adoption, with around 9% of developers worldwide using JetBrains AI in IDEs and/or Junie at work.</strong>\n  </p>\n  <p>Moreover, <strong>Claude Agent, Codex, GitHub Copilot, and OpenCode are integrated directly into the <a href=\"https://www.jetbrains.com/ai-ides/\" target=\"_blank\" rel=\"noopener\">AI chat of JetBrains IDEs</a></strong>, and dozens of other agents, including Cursor, can be added via the <a href=\"https://www.jetbrains.com/acp/\" target=\"_blank\" rel=\"noopener\">Agent Client Protocol (ACP)</a>. You can even use Codex via your OpenAI API key or ChatGPT subscription.</p>\n  <p>JetBrains is also expanding its agentic ecosystem. <strong>Air </strong>– <strong>an agentic development environment currently <a href=\"https://air.dev/\" target=\"_blank\" rel=\"noopener\">in preview</a></strong> – lets developers combine multiple coding agents in one coherent workflow, while <strong>JetBrains Central</strong> provides a unified control and execution plane for managing agent-driven development across tools and environments.</p>\n  <p><strong>You can learn more about JetBrains’ AI offerings for teams and organizations <a href=\"https://www.jetbrains.com/agentic-software-development/\" target=\"_blank\" rel=\"noopener\">here</a>.</strong></p>\n  <p>We’re curious to see how the adoption of agentic software development evolves further, and we plan to share more of our findings on agentic development practices from the Developer Ecosystem Survey 2026 with the community soon. Stay tuned!</p>\n  <p><strong>Methodology notes</strong></p>\n  <p>In this report, “professional developers” refers to respondents who reported being involved in coding or programming in any of the following job roles:</p>\n  <ul class=\"wp-block-list\">\n   <li>Developer / Programmer / Software Engineer</li>\n   <li>AI / ML Engineer</li>\n   <li>DevOps Engineer / Infrastructure Developer</li>\n   <li>Architect</li>\n   <li>Data Scientist / Engineer / Analyst</li>\n   <li>QA Engineer</li>\n  </ul>\n  <p>Roughly 90% of the sample falls into the <em>Developer / Programmer / Software Engineer</em> job category.</p>\n  <p>The Developer Ecosystem and AI Pulse surveys are localized into eight languages: English, Spanish, Chinese, Japanese, Korean, German, French, and Portuguese. We apply quotas on the required number of responses by region to help achieve accurate global representation. The quotas are proportionate to the number of developers in each region, based on estimates by our Data Science team. The detailed methodology of these estimates is described <a href=\"https://lp.jetbrains.com/devecosystem-data-playground/methodology/\" target=\"_blank\" rel=\"noopener\">here</a>.</p>\n  <p>The Developer Ecosystem Survey has been statistically reweighted to better represent the global developer population by region, employment status, programming language, and familiarity with JetBrains products. You can read about the weighting methodology for the Developer Ecosystem Survey <a href=\"https://lp.jetbrains.com/developer-ecosystem-2025-methedology/\" target=\"_blank\" rel=\"noopener\">here</a> and for the AI Pulse survey <a href=\"https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/\">here</a>.</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/research/2026/08/programming-language-migration/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> When Escape Routes Become Toll Roads: Mapping How Developers Move Between Programming Languages</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 2026：90% 的开发者至少每周使用 AI 编程智能体；Claude Code 以 39% 的采用率领先，在美国达 47%。",
+  "oneSentenceSummary": "JetBrains 2026：90% 的开发者至少每周使用 AI 编程智能体；Claude Code 以 39% 的采用率领先，在美国达 47%。",
+  "summary": "基于全球超过 15，000 名专业开发者的 JetBrains 开发者生态系统调查 2026 显示，AI 编程智能体已成为主流：90% 的开发者至少每周使用，68% 每天使用。Claude Code 以 39% 的全球采用率（美国 47%）占据主导地位，并成为 31% 开发者的主要工具。Codex 增长迅速，采用率从 3% 升至 16%，认知度从 27% 跃升至 65%。GitHub Copilot 采用率降至 21%，但仍保有 79% 的认知度。Cursor 采用率降至 12%，其中中国降幅最大（从 28% 降至 16%）。开源智能体 OpenCode 达到 7% 的采用率和 42% 的心智份额。JetBrains AI 使用率为 9%，其生态系统也随着 Air（智能体开发环境）和 JetBrains Central（统一控制平面）的推出而扩展。报告还包含关于抽样、加权以及八种语言本地化的详细方法论说明。",
+  "mainPoints": [
+    {
+      "point": "Claude Code 采用率跃升至全球 39%（美国 47%），成为使用最广泛的 AI 编程工具。",
+      "explanation": "31% 的开发者将其作为主要 AI 编程工具，这意味着从常规使用到主要工具的转化率接近 80%。"
+    },
+    {
+      "point": "Codex 采用率增长约五倍，从 3% 升至 16%，认知度从 27% 升至 65%。",
+      "explanation": "尽管有 OpenAI 强大品牌背书，Codex 认知度的提升仍快于采用率增长，显示出巨大的未来潜力。"
+    },
+    {
+      "point": "GitHub Copilot 采用率降至 21%，但仍广为人知，在开发者中保有 79% 的认知度。",
+      "explanation": "它仍然拥有很高的心智份额，尤其是在欧洲、英国和美国（86%-90%），且 39% 的用户通过 JetBrains IDE 使用它。"
+    },
+    {
+      "point": "Cursor 全球采用率降至 12%，其中中国降幅最大（从 28% 降至 16%）。",
+      "explanation": "尽管 Cursor 的心智份额略有上升（从 69% 升至 75%），实际使用率却有所下降，表明认知度与采用率之间存在落差。"
+    },
+    {
+      "point": "开源编程智能体 OpenCode 在没有大型企业支持的情况下，实现了 7% 的采用率和 42% 的心智份额。",
+      "explanation": "这表明社区驱动的工具能够在 AI 编程智能体领域实现显著的渗透率。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude Code 继续以空前的速度增长，已成为工作中采用最广泛的 AI 编程工具。",
+    "GitHub Copilot 已失去领先地位，采用率从一年前的 29% 降至 2026 年 5 月至 7 月的 21%。",
+    "开源编程智能体 OpenCode 已达到 7% 的采用率。更值得一提的是，在没有大公司背书的背景下，它在全球开发者中享有 42% 的心智份额。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "Claude Code",
+    "GitHub Copilot",
+    "Codex"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 945,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787065393000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-18 23:03:13"
+}

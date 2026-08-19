@@ -1,0 +1,52 @@
+{
+  "id": "RAW_f592da4849",
+  "title": "在治理方面，零售商需要一个控制平面来管理上下文",
+  "url": "https://www.databricks.com/blog/when-it-comes-governance-retailers-need-control-plane-context",
+  "date": "2026-08-18 23:18:00",
+  "author": "BJ Sullivan, Sarah Duffy, Tayo Olabumuyi, Logan Boyd",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>*Retail AI is reaching further into the business than ever, into stores, merchandising, and daily decision-making, opening up real gains in innovation and efficiency, along with a growing footprint retailers now have to govern.\n   <br>\n   *The next bottleneck is trusted context: Retailers hold some of the most sensitive customer data of any industry: purchase history, loyalty behavior, payment activity. That same data is what makes AI genuinely useful for personalization and retention. Retailers need a way to put it to work without losing control of who can access it and how.\n   <br>\n   *Databricks gives retailers one governed layer for AI, so every model, agent, and application draws from the same trusted data and the same cost controls, instead of every team building its own.</p>\n </body>\n</html>",
+  "aiSummary": "本文论述，零售商需要统一的治理控制平面来管理敏感客户数据，同时实现 AI 驱动的个性化，以 Databricks 为例，作为 AI 应用的单一受管层。",
+  "oneSentenceSummary": "本文论述，零售商需要统一的治理控制平面来管理敏感客户数据，同时实现 AI 驱动的个性化，以 Databricks 为例，作为 AI 应用的单一受管层。",
+  "summary": "本文讨论了数据治理在零售 AI 应用中的日益增长的需求。随着零售商将 AI 扩展到门店、商品采购和日常决策中，他们积累了大量敏感客户数据——购买历史、忠诚行为和支付活动——这些数据对 AI 驱动的个性化至关重要。然而，这种扩展带来了数据访问和使用方面的治理挑战。提出的解决方案是中心化的治理控制平面，为所有 AI 项目提供可信的上下文。Databricks 被作为此类平台的示例，提供一个单一的受管层，供每个模型、智能体和应用程序访问相同的受信任数据和成本控制，消除每个团队构建独立数据基础设施的需求。",
+  "mainPoints": [
+    {
+      "point": "零售 AI 正在深入进入门店、商品采购和日常决策，带来新的治理需求。",
+      "explanation": "随着 AI 深入零售运营，超越传统分析，数据使用范围和访问控制的范围显著扩大，需要更为精细的治理方法。"
+    },
+    {
+      "point": "零售商处理高度敏感的客户数据，这些数据对 AI 至关重要，同时需要严格的访问控制。",
+      "explanation": "购买历史、忠诚行为和支付数据对个性化至关重要，但若不加以治理，可能带来显著的隐私和安全风险。"
+    },
+    {
+      "point": "统一的治理层实现所有 AI 应用一致的数据访问和成本控制。",
+      "explanation": "与其每个团队单独构建数据基础设施，不如采用单一的受管层，确保所有模型、智能体和应用程序都从同一可信数据源获取数据，并采用标准化的控制措施。"
+    }
+  ],
+  "keyQuotes": [
+    "零售 AI 正在前所未有地深入进入业务，进入门店、商品采购和日常决策，带来创新和效率的真实收益，同时也带来了零售商现在需要治理的日益扩大的范围。",
+    "零售商需要一种方法来实际应用，却不失去对谁可以访问以及如何访问的控制权。",
+    "Databricks 为零售商提供一个 AI 的单一治理层，使得每个模型、智能体和应用程序都从同一可信数据源和相同的成本控制中获取数据，而不是每个团队都构建自己的系统。"
+  ],
+  "tags": [
+    "AI Governance",
+    "Data Governance",
+    "Retail AI",
+    "Customer Data",
+    "Personalization"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 122,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787066280000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-18 23:18:00"
+}

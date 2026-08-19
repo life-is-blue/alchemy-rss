@@ -1,0 +1,51 @@
+{
+  "id": "RAW_6068c37421",
+  "title": "Cloudflare WriteGuard 为 MCP 服务器带来细粒度安全控制",
+  "url": "https://www.infoq.com/news/2026/08/cloudflare-writeguard-mcp-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-19 00:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare is introducing <a href=\"https://blog.cloudflare.com/mcp-portal-writeguard-private-beta/\">WriteGuard, now in private beta, to provide fine-grained security controls for MCP (Model Context Protocol) servers</a>. It aims to make AI agents safer by controlling their access to tools that can modify data or perform actions, rather than simply read information.</p>\n   <p>WriteGuard is a shared policy, attribution, and auditing layer that aims to address the risks that arise when AI agents use MCP to access external services with write-access privileges, including databases, GitHub, SaaS applications, internal APIs, etc.</p>\n   <blockquote>\n    <p>Read-only was a good starting point. As models improved and teams gained experience with AI, people across engineering, product, design, sales, and customer success began asking for tools that could take action. [...] we wanted centralized control over the write actions agents could perform, agent labels to appear in downstream applications, and an audit trail that made agent activity easy to investigate.</p>\n   </blockquote>\n   <p>WriteGuard sits right behind Cloudflare's MCP server portal and intercepts all incoming MCP requests. It loads the policy associated with the targeted tool and evaluates the request context to determine whether a request is allowed to pass through unchanged or shall be blocked. If an allowed request subsequently fails, it is routed to the auditing service, along with all requests that are denied in the first place.</p>\n   <p><img alt=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/cloudflare-writeguard-mcp-safety/en/resources/1writeguard-1787067901416.jpg\" rel=\"share\"></p>\n   <p>&nbsp;</p>\n   <p>According to Cloudflare engineers Scott Roe-Meschke and Kenny Johnson, the advantage of WriteGuard lies in its ability to define tool-specific policies without requiring changes to the MCP server itself. It also serves as a shared security layer across all MCP servers connected through the Cloudflare portal.</p>\n   <blockquote>\n    <p>For GitLab alone, we could have built these controls directly into the server. But we needed the same capabilities for Jira, our internal wiki, Google Workspace, and every new MCP server we added. Reimplementing them in each server would take more work and produce inconsistent behavior.</p>\n   </blockquote>\n   <p>Each tool is assigned a risk tier ranging from <code>read-only</code>, which carries no risk at all, to <code>critical</code>. For example, completing a merge request, triggering a production deployment, or bulk-deleting records are classified as critical operations. Creating a merge request or updating an issue field falls under the <code>contained write</code> tier, while lower-impact actions such as marking a notification as read, subscribing to an issue, or adding a comment has <code>minimal impact</code>.</p>\n   <p>WriteGuard does not require creating standalone agent accounts, which would \"create a second set of permissions to manage\", note Roe-Meschke and Johnson. Instead, MCP servers use existing OAuth credentials to identify the user. To ensure that agent-driven action remain identifiable in the centralized audit log, WriteGuards adds MCP client and session context to the human identity.</p>\n   <blockquote>\n    <p>WriteGuard classifies each invocation as successful, failed, or blocked, then asynchronously sends a scrubbed event to an internal audit Worker. The event omits values for keys considered secret or sensitive. It includes the server, tool, risk tier, outcome, user, client, and duration.</p>\n   </blockquote>\n   <p>WriteGuard is currently available as a <a href=\"https://www.cloudflare.com/resource/writeguard-beta-landing-page/\">private beta</a>, allowing Cloudflare to validate its behavior and refine the product before making it generally available.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare WriteGuard Brings Fine-Grained Security Controls for MCP Servers\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/cloudflare-writeguard-mcp-safety/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1787068800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 的 WriteGuard 为 MCP 服务器添加了一个集中的策略、归属和审计层，以安全地控制 AI 代理对外部工具和服务的写访问。",
+  "oneSentenceSummary": "Cloudflare 的 WriteGuard 为 MCP 服务器添加了一个集中的策略、归属和审计层，以安全地控制 AI 代理对外部工具和服务的写访问。",
+  "summary": "Cloudflare 推出 WriteGuard，一个私有测试版安全层，位于其 MCP 服务器门户之后，并拦截所有传入的 MCP 请求。WriteGuard 根据工具特定的策略（从只读到关键风险层级）评估每个请求，并允许、阻止或记录该操作。它提供集中控制、一致的审计和归属，而无需更改单个 MCP 服务器或创建单独的代理账户。工程师 Scott Roe‑Meschke 和 Kenny Johnson 强调，WriteGuard 避免了在 GitLab、Jira、内部维基和 Google Workspace 等服务中重复实现，并且审计事件会 scrub 敏感数据，同时保留服务器、工具、风险层级、结果、用户、客户端和持续时间的信息。该产品目前处于私有测试阶段，以在正式发布前验证其行为。",
+  "mainPoints": [
+    {
+      "point": "WriteGuard 为 MCP 服务器提供细粒度、工具级安全控制。",
+      "explanation": "它拦截 MCP 请求，根据风险分层策略（只读、受限写入、关键）评估每个请求，并决定允许、阻止或记录每个操作，从而防止 AI 代理未经授权的数据修改。"
+    },
+    {
+      "point": "该层通过 Cloudflare 门户共享于所有连接的 MCP 服务器。",
+      "explanation": "通过集中策略执行，WriteGuard 消除了在每个单独服务器中重新实现安全控制的需求，确保行为一致并减少工程开销。"
+    },
+    {
+      "point": "WriteGuard 使用现有的 OAuth 凭据进行用户身份识别，将 MCP 客户端和会话上下文添加到审计日志中，并在 scrubbing 敏感字段的同时将每次调用分类为成功、失败或被阻止。",
+      "explanation": "WriteGuard 使用现有的 OAuth 凭据进行用户身份识别，将 MCP 客户端和会话上下文添加到审计日志中，并在 scrubbing 敏感字段的同时将每次调用分类为成功、失败或被阻止。"
+    }
+  ],
+  "keyQuotes": [
+    "只读是一个很好的起点。随着模型的改进和团队在 AI 上积累经验，工程、产品、设计、销售和客户成功等各方面的人员开始询问能够执行操作的工具。",
+    "仅对于 GitLab，我们本来可以直接将这些控制构建到服务器中。但我们需要为 Jira、我们的内部维基、Google Workspace 以及我们添加的每个新 MCP 服务器提供相同的功能。在每个服务器中重新实现这些控制将需要更多工作并导致行为不一致。"
+  ],
+  "tags": [
+    "MCP",
+    "AI 安全",
+    "Cloudflare",
+    "WriteGuard",
+    "AI 代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 495,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787068800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-19 00:00:00"
+}
