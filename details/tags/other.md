@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-20 08:39:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-20 10:50:30 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3697,33 +3697,25 @@
 
 ### [如何在不破坏正确性的前提下扩展集成管道](https://towardsdatascience.com/scaling-an-integration-pipeline-without-breaking-correctness/)
 
-2026-08-20 02:00:00 | 标签: 数据集成, 管道伸缩, 微批处理, 分区, 背压
-
-> 本文描述了如何在不牺牲正确性的前提下提高高容量企业数据集成管道的吞吐量。首先，它建立了两种正确性保证：一种是防止陈旧覆盖的版本检查 upsert，另一种是确保恰好一次处理的事务性去重日志。为了应对流量倾斜，作者引入了自适应子分区，将热实体更新分散到多个分区，同时依赖版本检查来容忍由此引入的任何重新排序。微批处理（约 100 条记录或 50 ms）随后被证明能够通过合并数据库往返，将吞吐量从约 500 条/秒提升至约 8，000 条/秒，大约提升十六倍，并通过每条记录的保存点隔离故障。三级背压系统——自适应轮询速率、生产者侧限流以及基于优先级的负载削减——在下游故障期间防止无限制的积压。一个真实...
+2026-08-20 02:00:00
 
 
 
 ### [突破-DeepSeek-V4-Pro-服务极限：H20-上的多场景优化方法-·-AIHOT](https://aihot.virxact.com/items/cmt0e7sxo01eiro2o4l4y9jmh)
 
-2026-08-20 01:56:13 | 标签: 混合专家, FP4, FP8, H20, 服务
-
-> 论文指出，DeepSeek‑V4‑Pro 是一个 1.6 万亿 参数 MoE 模型，必须在缺少原生 FP4 Tensor Cores 且 HBM 受限的 NVIDIA H20 GPU 上运行。为了满足多样化的服务等级目标，作者设计了三种服务配置：(1) Prefill 根据上下文长度选择 PP2 或 PP4 pipeline，(2) Low‑latency Decode 采用单节点 TP8 或双节点 PP2‑TP8 配置，(3) High‑throughput Decode 通过扩展 DP 和 EP 秩来提升并发请求容量。他们引入了如 Humming MXFP4AFP8 重量压缩和 Onlin...
+2026-08-20 01:56:13
 
 
 
 ### [使用-NVIDIA-FLARE-构建联邦多模态-AI-工作流](https://developer.nvidia.com/blog/building-federated-multimodal-ai-workflows-with-nvidia-flare/)
 
-2026-08-20 01:51:06 | 标签: 联邦学习, 视觉-语言模型, LoRA 适配器, 张量流, 磁盘卸载
-
-> 文章讨论了由于数据分布式和站点间任务混合异构导致的视觉-语言模型联邦化的挑战。它将 NVIDIA FLARE 介绍为一个协调联邦训练的框架，强调了关于共享哪些模型状态以及如何通过外部化、张量流和基于磁盘的聚合高效传输和聚合更新的设计决策。以 FedUMM 为具体例子，文章表明在冻结的多模态主干上联邦化轻量级 LoRA 适配器能够大幅降低通信成本同时保持性能。文章最后提供了一份设计联邦多模态工作流的实用清单，涵盖更新契约、有效负载最小化、传输机制以及端到端评估。
+2026-08-20 01:51:06
 
 
 
 ### [拼图管家：使用计算机视觉构建拼图助手](https://towardsdatascience.com/jigsaw-jeeves-building-a-puzzle-assistant-using-computer-vision/)
 
-2026-08-19 20:00:00 | 标签: 计算机视觉, OpenCV, 匈牙利算法, 特征提取, Python 实现
-
-> 文章描述了如何构建一个拼图求解助手，帮助用户定位拼图块的正确位置，而无需直接求解整个拼图。首先，将拼图问题框架化为打乱的瓷砖与参考图像之间的双射匹配任务，并指出了诸如视觉歧义、需要全局分配以及盒封面照片与智能手机拼图块照片之间的分布偏移等挑战。解决方案流程包括三个阶段：在两张图像上叠加一个 R×C 网格，将每个网格单元转换为一个 513 维特征向量（归一化的 RGB 直方图加上边缘密度），然后使用匈牙利算法（通过 SciPy 的 linear_sum_assignment）求得最优的一对一匹配。文章通过使用 OpenCV、NumPy 和 SciPy 的动手 Python 示例进行讲解，展示了如...
+2026-08-19 20:00:00
 
 
 
@@ -15573,89 +15565,67 @@
 
 ### [ANNOUNCE-xwayland-26.0.99.901](https://lists.x.org/archives/xorg/2026-August/062280.html)
 
-2026-08-20 04:03:03 | 标签: Xorg, Xwayland, Wayland, 软件发布, 图形栈
-
-> Olivier Fourdan 宣布 Xwayland 26.0.99.901 为即将发布的独立版本 Xwayland 26.1.0 的首个候选版本。相较于 Xwayland 24.1，显著变更包括：移除 EGLStream 支持；为根 ful Xwayland 添加剪贴板/主要选择桥接（通过 "-clipboard" 启用）；通过 Xi2 实现多座位支持，将 Wayland 座位和设备映射为 XInput 2 层级；支持 wl_fixes（destroy_global 和 ack_global_remove）；RandR 模拟优先选择原生模式，最高可达物理分辨率并考虑旋转；Xwayland ...
+2026-08-20 04:03:03
 
 
 
 ### [从量子相对熵到半经典爱因斯坦方程](https://arxiv.org/abs/2510.24491)
 
-2026-08-20 03:31:02 | 标签: 量子物理, 广义相对论, 熵, 时空, 理论物理
-
-> 本文提出一个理论论证，表明半经典爱因斯坦方程可以由量子相对熵推导出来。利用模理论，作者表明，在分叉 Killing 视界上标量量子场的真空态与相干激发之间的量子相对熵等于穿过视界的能量通量。假设 Bekenstein‑Hawking 熵‑面积关系，该通量与视界横截面积的变化成正比。从这个比例关系，半经典爱因斯坦方程直接得出。该工作通过用定义明确的量子相对（ Araki‑Uhlmann ）熵取代经典熵，扩展了 Jacobson 的热力学爱因斯坦方程推导，暗示量子信息在量子引力半经典极限中起核心作用。
+2026-08-20 03:31:02
 
 
 
 ### [Go-1.27-已发布---Go-编程语言](https://go.dev/blog/go1.27)
 
-2026-08-20 02:33:49 | 标签: Go, 泛型, 结构体字面量, 类型推断, 性能
-
-> Go 1.27 引入泛型方法，使得类型参数化的函数可以在不需要单独重载的情况下适用于任何整数类型。它将结构体字面量的键扩展到任何有效的字段选择器，这样嵌套或嵌入结构体的字段可以直接初始化。函数类型推断被泛化，使得泛型函数可以在复合字面量、类型转换和通道发送中无需显式类型参数即可使用。该版本还通过大小专用内存分配带来性能提升，可将小对象分配成本降低多达 30%，并在 go fix、go doc 和 go mod tidy 中提供新的工具增强，以及标准库新增内容，如具有可配置选项的 JSON v2、后量子 ML‑DSA 签名、原生 UUID 支持、实验性 SIMD 包以及用于 net/http/h...
+2026-08-20 02:33:49
 
 
 
 ### [重新审视针对-Cloudflare-Workers-的远程-Spectre-攻击](https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/)
 
-2026-08-20 00:00:28 | 标签: 安全, 云计算, 侧信道攻击, Spectre, 边缘计算
-
-> 本文来自 Cloudflare 安全研究团队，重新审视了针对 Cloudflare Workers（无服务器计算平台）的 Spectre 类侧信道攻击。作者证明，远程攻击者可以利用 CPU 推测执行漏洞，在共享基础设施环境中跨租户边界泄露敏感数据。文章详细介绍了攻击方法，包括缓存时序分析和分支预测操纵，并讨论了这些漏洞在生产云环境中的实际可利用性。同时涵盖了 Cloudflare 的应对措施，包括已部署的缓解方案及持续的研究方向。本文既是对 Spectre 变种的深入技术分析，也是关于大型云服务商如何应对影响其平台的硬件级安全威胁的透明度报告。
+2026-08-20 00:00:28
 
 
 
 ### [远程工作者在-7，700-名员工的研究中报告最高幸福感](https://www.colorado.edu/today/2026/08/12/remote-workers-report-highest-well-being-study-7700-employees)
 
-2026-08-19 23:32:08 | 标签: 远程工作, 员工幸福感, 组织领导力, 混合工作, 工作场所灵活性
-
-> 发表在 《Frontiers in Psychology》 上的研究调查了一家大型医疗组织的 7，704 名员工，发现全远程工作者报告的幸福感最高，而现场工作者报告的幸福感最低。混合工作者的情况介于两者之间。研究还发现，远程员工感到与同事或工作场所文化联系较少的证据甚少；事实上，远程工作者稍微更可能使用与团队合作、包容和支持相关的词语来描述他们的文化。利兹商学院的合著者 Stefanie Johnson 认为，剥夺员工选择工作地点的权利会损害幸福感，而领导者往往基于习惯而非数据来决定返岗。该研究进一步将更高的幸福感与较低的离职率联系起来，表明灵活性和自主性——而非实际存在——能够为员工和组织带...
+2026-08-19 23:32:08
 
 
 
 ### [gralhix-#004](https://yassa9.github.io/osint/gralhix-004/)
 
-2026-08-19 20:19:52 | 标签: 开源情报, 地理定位, CUDA, GPU 编程, OpenStreetMap
-
-> 本文详细讲解了在不依赖 Google Lens 的情况下解决 gralhix #004 挑战的过程。它从图像中提取几何指纹，利用 OpenStreetMap 数据构建全球陆地多边形的搜索管道，应用启发式过滤器（热带纬度、局部密度、聚类），生成三元组，并通过 CUDA 内核在 NVIDIA RTX 3050 GPU 上进行评估。随后的形状、植被和海拔检查将候选范围缩小到唯一匹配：密克罗尼西亚的 Oan 度假村（7°21′48.4″N，151°45′20.7″E），相机朝向西北。文章包含代码片段、数学公式以及对公开数据集的引用，展示了一种可复现且原创的地理定位方法。
+2026-08-19 20:19:52
 
 
 
 ### [Octopus：基于无历史数据的梯度正交化的学习框架｜CVPR-2026](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506772&idx=2&sn=29903b03b0abca929fe5853199daabfc)
 
-2026-08-19 20:00:00 | 标签: 持续学习, 梯度正交化, HiFGO, 多模态大语言模型, CVPR 2026
-
-> 文章介绍了由 vivo BlueImage Lab 与上海交通大学联合提出的 Octopus 框架，针对多模态大语言模型的持续学习与灾难性遗忘问题。核心创新包括：1）无需历史数据的梯度正交化（HiFGO），通过在当前新任务数据上计算历史任务参数的梯度（GPWC）来近似旧任务的敏感方向，实现参数更新的正交约束；2）两阶段微调策略，先在无约束下充分学习新知识，再引入 HiFGO 约束进行巩固，以平衡可塑性与稳定性。实验在权威多模态增量学习基准 UCIT 上表明，Octopus 的平均性能（Avg）和最终性能（Last）分别超越现有最优方法 2.14%和 6.82%，并罕见地实现了正向后向迁移（BW...
+2026-08-19 20:00:00
 
 
 
 ### [如何从-Atlassian-Jira-和-Confluence-迁移到-YouTrack：专家指南](https://blog.jetbrains.com/youtrack/2026/08/how-to-migrate-from-atlassian-jira-and-confluence-to-youtrack-expert-guide/)
 
-2026-08-19 18:27:05 | 标签: 项目管理, Jira, Confluence, 迁移, 开发者工具
-
-> 本文来自 JetBrains 博客，为考虑从 Atlassian 套件转向 YouTrack 的团队提供迁移指南。文章开篇指出，Atlassian 暂停 Data Center 产品销售、2029 年停止支持，以及新的 AI 数据使用政策，是推动迁移的主要催化剂。指南详细介绍了七个步骤：选择 YouTrack Cloud 或 Server 版本、使用内置导入向导迁移 Jira/Confluence/Jira Service Management 数据、手动重建未导入的实体（如看板、仪表板）、替换 Marketplace 应用、运行免费试用、启用持续导入以实现并行使用，以及申请 25% 的竞争折...
+2026-08-19 18:27:05
 
 
 
 ### [阿里巴巴-12-篇论文入选全球网络顶会-SIGCOMM-2026（内附下载）](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511193&idx=1&sn=985ceca884ea702ec12963d8041ef80d)
 
-2026-08-19 18:25:00 | 标签: 数据中心网络, 集合通信, 智能运维, 网络验证, 高性能网络
-
-> 本文是阿里技术发布的 SIGCOMM 2026 论文成果汇总。SIGCOMM 是计算机网络领域公认的最高级别会议（CCF A 类），录用率常年仅 15%—22%；阿里本次共 12 篇论文被主会收录，在全球企业中处于领先。论文覆盖四个方向：网络管理与验证（TianYan 非确定性收敛验证、AliYANG 模型驱动配置管理）、AIOps 智能运维（AIDA 与 XiHe 的 LLM/多智能体根因定位）、AI 集合通信（Theseus 运行时自适应调度、PReCCL 带内遥测负载重分配、EPIC 专家并行优化）、数据中心网络（EPIC 在网计算协议、Anytest RoCE 异常定位、Spillwa...
+2026-08-19 18:25:00
 
 
 
 ### [从文件高清到体验高清:-小红书如何守住全链路画质？](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496232&idx=1&sn=d674c6fcc367e35f335258320a298f9f)
 
-2026-08-19 17:59:00 | 标签: HDR, 8K图片, 4K视频, LivePhoto, 3D Photo
-
-> 文章详细阐述了小红书在移动影像高清体验方面的技术实践。首先指出源文件仅决定画质上限，真正的高清体验依赖素材识别、编辑预览、云端生产、资源分发和终端呈现五个环节的协同。接着分别介绍了 HDR 与广色域、超清分辨率、全屏大图、LivePhoto 和 3D Photo 五种高清能力的特点及其在链路中的关注点。随后描述了素材解析、统一编辑管线（包括格式兼容、色彩管理、性能平衡）、云端处理与生产（多格式转码、多级资源、复合媒体关联）、资源分发与播控（根据设备、网络和场景动态选择资源）、终端解码与呈现（自适应选档、色彩还原、性能优化）以及全链路验证（画质、性能与用户感知）的具体措施。文章强调只有让光影、色...
+2026-08-19 17:59:00
 
 
 
 ### [.NET-11-Preview-7-带来-C#、ASP.NET-Core、EF-Core-和-Windows-Forms-的全面更新](https://www.infoq.com/news/2026/08/dotnet-11-preview-7/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-19 17:26:00 | 标签: .NET, C#, ASP.NET Core, Blazor, EF Core
-
-> 微软的 .NET 11 Preview 7 带来了平台范围内的针对性改进。在 C# 方面，带标签的 break 和 continue 语句现在允许直接从嵌套循环中控制流程，无需标志变量或 goto 语句。联合类型（仍处于预览阶段）采用 try-both 匹配方法，switch 表达式穷尽性检查现在支持约束为具体类型的泛型类型参数。ASP.NET Core 重点聚焦 Blazor：交互式服务器电路在标签页隐藏时自动暂停，CacheView 缓存 SSR 输出以降低 CPU/内存占用，五个新的分析器默认启用，QuickGrid 获得编程式滚动支持。SignalR 客户端支持 negotiate 重...
+2026-08-19 17:26:00
 
 
 
@@ -39809,11 +39779,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 

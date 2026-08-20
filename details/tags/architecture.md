@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-20 08:39:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-20 10:50:30 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -32,9 +32,7 @@
 
 ### [理解渐进式坍塌：如何避免连锁故障](https://www.infoq.com/presentations/progressive-collapse-system-resilience/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-19 19:00:00 | 标签: System Design, Resilience Engineering, Distributed Systems, Cloud Architecture, Incident Response
-
-> Sam Newman 基于他为新书所做的研究，引入了“渐进式坍塌”的概念——即微小的初始故障演变为系统性崩溃——并将其作为理解分布式系统故障的视角。他首先以 1968 年 Ronan Point 塔楼坍塌事件开篇，当时一次轻微的燃气爆炸吹毁了一面承重墙，并以手风琴效应（concertina effect）导致四层楼坍塌。随后，他分析了两个数字化案例：由 DynamoDB DNS 路由管理中的竞态条件导致的 AWS us-east-1 停机事件，以及他曾参与的一个二手车网站案例，该网站因下游服务挂起耗尽了连接池，导致所有业务线的 CPU 均达到饱和。借鉴 NIST 关于构建韧性的报告，他总结了三...
+2026-08-19 19:00:00
 
 
 

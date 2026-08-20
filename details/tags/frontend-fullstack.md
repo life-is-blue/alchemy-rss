@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-20 08:39:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-20 10:50:30 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -740,25 +740,19 @@
 
 ### [介绍-Microlighter](https://daverupert.com/2026/08/microlighter/)
 
-2026-08-19 23:22:00 | 标签: 语法高亮, CSS Custom Highlights API, Web 组件, Textmate 语法, 前端开发
-
-> 文章介绍了 MicroLighter，这是一个围绕 CSS Custom Highlights API 构建的客户端语法高亮器。它强调零依赖、约 2 KB 的 gzipped 压缩包、按需加载 Textmate 语法文件，以及通过 `light‑dark()` 实现统一的亮色/暗色主题。额外的 UI 功能（如行号和复制按钮）被移至 `<micro‑lighter>` Web 组件，使核心库专注于语言检测和高亮。文章还提供了安装说明、捆绑包和 Web 组件的使用示例，并展示了如何通过 CSS 变量定义自定义主题。
+2026-08-19 23:22:00
 
 
 
 ### [使用深度图和-Three.js-为图像重新打光](https://tympanus.net/codrops/2026/08/19/relighting-images-with-depth-maps-and-three-js/)
 
-2026-08-19 22:42:19 | 标签: Three.js, WebGPU, WebGL, 着色器编程, 前端与 Web
-
-> 文章详细介绍了一套完整流程，让 2D 图像能够响应动态光影变化。首先利用深度估计模型从照片生成深度图，然后将 8 位输出转换为半精度浮点数并施加模糊处理，以消除会导致阴影斑驳的量化伪影。接着从深度梯度推导出法线贴图，并将其与基于亮度提取的细节梯度进行混合，以模拟表面纹理。通过向光源方向追踪光线并累加多个采样点的遮挡信息，计算出柔和的阴影效果。最后将这三个要素整合到 Three.js TSL 的 MeshPhongNodeMaterial 中。作者还分享了自定义的深度生成工具，并提供了在线演示和 GitHub 上的完整源代码链接。
+2026-08-19 22:42:19
 
 
 
 ### [CSS-Navigation-Matching，早期探索](https://css-tricks.com/css-navigation-matching-early-days/)
 
-2026-08-19 17:00:18 | 标签: CSS, 视图过渡, Web 开发, CSS 规范, 前端开发
-
-> 本文探讨了新兴的 CSS Navigation Matching 规范，该规范旨在让开发者能够通过 CSS 而非 JavaScript 来声明式地设置页面间过渡的样式。作者详细介绍了几个关键的 at-rule：@location 用于定义 URL（通过 pathname 或 url-pattern），@navigation 用于查询位置间的过渡，以及 :nav-source 和 :link-to() 等伪类。代码示例展示了如何匹配特定页面、URL 模式和导航方向。作者提出了实际担忧——扁平的 URL 结构（如 CSS-Tricks）可能不太适合此功能，且基于 CSS 的指纹识别可能存在安全隐患...
+2026-08-19 17:00:18
 
 
 
