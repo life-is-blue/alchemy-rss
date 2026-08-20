@@ -1,0 +1,55 @@
+{
+  "id": "RAW_cf13e4a249",
+  "title": "Docker 推出完全重建的虚拟化层，提升性能并改善开发者体验",
+  "url": "https://www.infoq.com/news/2026/08/docker-vmm-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-20 03:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Docker VMM (virtual machine monitor) is Docker's new, first-party virtualization layer for Docker Desktop, replacing third-party virtualization components with an engine that Docker can directly control and optimize specifically for container workloads. The <a href=\"https://www.docker.com/blog/docker-vmm-public-beta/\">public beta launched with Docker Desktop 4.86</a> for Mac and Windows.</p>\n   <p>Developers rarely think about the virtual machine monitor (VMM) until something goes wrong, such as when \"it is slow, unstable, or holding onto your machine’s memory it should have released\", says Docker.</p>\n   <blockquote>\n    <p>Docker Desktop has always relied on a third-party VMM for this. Now it runs on Docker VMM, built by us from the ground up. That means we own the full stack, and we can tune every part of the engine for container workloads specifically. That translates directly to you: an engine that improves continuously, responds to developer feedback, and ships on our own schedule.</p>\n   </blockquote>\n   <p>According to Docker, the new virtualization layer brings several performance, stability, and governance improvements in the latest Docker Desktop release. Container startup is now \"measurably faster across the board\", including on first launch, when switching between projects, and during restart recovery. File sharing between container and host is also improved, with the benefits particularly noticeable in edit-compile-test workflows. The new VMM also improves memory efficiency by returning unused memory to the host when containers are idle.</p>\n   <p>An additional benefit is better experience on Windows. Docker now owns the virtualization layer on Windows, aiming to provide Hyper-V-level isolation while delivering performance closer to WSL2.</p>\n   <p>Docker notes that the new VMM is not merely a performance upgrade, rather it is a new foundation for its runtime architecture across its products. The same virtualization engine powers Docker Sandboxes, meaning improvements to the underlying engine can benefit both traditional Docker workloads and isolated environments for AI agents. Docker says the longer-term goal is a more unified runtime spanning laptops, cloud, and on-prem, with containers, Compose applications, and AI agents sharing the same foundation.</p>\n   <p>Currently, the new VMM is included in <a href=\"https://docs.docker.com/desktop/release-notes/#4860\">Docker Desktop 4.86</a> on both macOS, where it is enabled automatically, and Windows, where it is available as an opt-in setting. Linux support is planned for the general availability (GA) release, expected at the end of October.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Docker Launches Fully Rebuilt Virtualization Layer to Boost Performance and Improve Dev Experience\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/docker-vmm-layer/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1787166000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Docker 在 Docker Desktop 4.86 中用自研 VMM 替换第三方虚拟化层，实现更快的容器启动、更好的内存效率以及改进的 Windows 性能。",
+  "oneSentenceSummary": "Docker 在 Docker Desktop 4.86 中用自研 VMM 替换第三方虚拟化层，实现更快的容器启动、更好的内存效率以及改进的 Windows 性能。",
+  "summary": "Docker 已在 Docker Desktop 4.86（Mac 和 Windows 版本）中发布全新自研虚拟机监控程序（VMM）的公开测试版，替换了此前使用的第三方虚拟化组件。新引擎专为容器工作负载从头构建，使 Docker 能够完全掌控整个技术栈，并可根据开发者反馈持续优化。主要改进包括：跨场景下容器启动速度显著提升、针对编辑-编译-测试工作流的文件共享性能更好、容器空闲时将未使用内存归还主机以提升内存效率。在 Windows 平台上，Docker 旨在提供接近 Hyper-V 级别的隔离性，同时性能更接近 WSL2。同一虚拟化引擎也支撑 Docker Sandboxes 功能，长期目标是打造一套统一运行时，覆盖笔记本电脑、云端和本地环境。Linux 支持计划于预计 10 月底发布的正式版中推出。",
+  "mainPoints": [
+    {
+      "point": "Docker 通过自研 VMM 掌控完整虚拟化技术栈。",
+      "explanation": "新 VMM 替换了第三方组件，使 Docker 能直接针对容器工作负载进行优化，并按自身节奏持续改进。"
+    },
+    {
+      "point": "性能提升涵盖启动速度、文件共享和内存效率。",
+      "explanation": "容器首次启动、项目切换和重启恢复都更快，文件共享优化了编辑-编译-测试工作流，空闲容器会将未使用内存归还主机。"
+    },
+    {
+      "point": "Windows 体验因 Hyper-V 级别隔离和接近 WSL2 的性能而改善。",
+      "explanation": "Docker 现在掌控 Windows 上的虚拟化层，在提供强隔离保障的同时缩小与 WSL2 的性能差距。"
+    },
+    {
+      "point": "VMM 作为统一运行时的基础，支撑 Docker 各产品线。",
+      "explanation": "同一引擎驱动 Docker Sandboxes 和 AI 智能体环境，长期目标是统一笔记本电脑、云端和本地环境中的容器、Compose 应用和 AI 工作负载。"
+    }
+  ],
+  "keyQuotes": [
+    "Docker Desktop 一直依赖第三方 VMM 来实现这一点。现在它运行在 Docker VMM 上，由我们从头构建。",
+    "这意味着我们掌控完整技术栈，能够针对容器工作负载专门调优引擎的每个部分。"
+  ],
+  "tags": [
+    "Docker",
+    "容器",
+    "开发者工具",
+    "虚拟化",
+    "DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 81,
+  "wordCount": 363,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787166000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-20 03:00:00"
+}

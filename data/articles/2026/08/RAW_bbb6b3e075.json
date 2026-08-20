@@ -1,0 +1,46 @@
+{
+  "id": "RAW_bbb6b3e075",
+  "title": "Ramp 的 Router",
+  "url": "https://router.com",
+  "date": "2026-08-20 03:26:18",
+  "author": "Ramp",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-[19.28px] sm:gap-8\">\n   <p class=\"font-mono text-[9.6px] leading-[12.8px] tracking-[0.4px] text-gray-5 uppercase sm:text-xs sm:leading-4 sm:tracking-[0.5px]\">Jul 1, 2026</p>\n   <div class=\"flex flex-col gap-1.5 sm:gap-5\">\n    <h3 class=\"text-xl leading-6 text-ink sm:text-2xl sm:leading-7\"><a href=\"https://labs.ramp.com/research/portal-portable-task-adaptation/\" class=\"outline-none after:absolute after:inset-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink\">PorTAL: Portable Task Adaptation for LoRA</a></h3>\n    <p class=\"text-sm leading-5 text-gray-5\">Learn a task adaptation once in a base-agnostic form, then port it to new frozen models by refitting only a thin per-base alignment — recovering ~98% of per-task LoRA's lift on an unseen model within the same family and ~94% across families.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "PorTAL 在无模型特定的形式下只学习一次任务适配，然后通过仅需每个基模型的薄层对齐将其迁移到新的冻结模型，在同一家族中保留约 98% 的 LoRA 提升，跨家族保留约 94%。",
+  "oneSentenceSummary": "PorTAL 在无模型特定的形式下只学习一次任务适配，然后通过仅需每个基模型的薄层对齐将其迁移到新的冻结模型，在同一家族中保留约 98% 的 LoRA 提升，跨家族保留约 94%。",
+  "summary": "文章宣布 PorTAL ，一种用于 LoRA 权重可移植任务适配的方法。它说明任务适配在无模型特定的形式下只需学习一次 ，随后通过仅拟合每个基模型的薄层对齐即可迁移到新的冻结模型 。该方法在同一家族中未见模型上可恢复约 98% 的 per‑task LoRA 性能提升 ，跨不同模型家族则约为 94%。文章附有 Ramp Labs 完整研究论文的链接 ，并强调该方法在跨模型重用适配方面的高效性。",
+  "mainPoints": [
+    {
+      "point": "PorTAL 在无模型特定的形式下只学习一次任务适配。",
+      "explanation": "这使得适配与任何特定模型基础无关，因而可以跨不同模型重用。"
+    },
+    {
+      "point": "将适配迁移到新的冻结模型仅需每个基模型的薄层对齐。",
+      "explanation": "通过仅重新拟合一个小的对齐层，该方法在同一模型家族中恢复了约 98% 的 LoRA 提升，跨家族则约为 94%。"
+    }
+  ],
+  "keyQuotes": [
+    "在无模型特定的形式下只学习一次任务适配，然后通过仅重新拟合每个基模型的薄层对齐将其迁移到新的冻结模型 —— 在同一家族中未见模型上恢复约 98% 的 per‑task LoRA 提升，跨家族则约为 94%。"
+  ],
+  "tags": [
+    "LoRA",
+    "参数高效微调",
+    "模型可移植性",
+    "迁移学习",
+    "AI 研究"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 69,
+  "wordCount": 51,
+  "domain": "router.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787167578000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-20 03:26:18"
+}

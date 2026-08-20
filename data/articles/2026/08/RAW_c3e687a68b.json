@@ -1,0 +1,61 @@
+{
+  "id": "RAW_c3e687a68b",
+  "title": "公民构建，智能体执行，专家治理",
+  "url": "https://martinfowler.com/rachels-ramblings/citizens-agents-experts.html",
+  "date": "2026-08-20 02:30:00",
+  "author": "Rachel Laycock",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"precis\"><b>TL;DR</b>\n   <br>\n   <i>Why building an app over the weekend isn't the same as building enterprise software</i></p>\n  <p>I’ve noticed an interesting gap opening up over the last six months. It isn’t really a gap in technology. It’s a gap in what different people think software engineering actually is.</p>\n  <p>The conversation usually starts the same way. A non-techie, maybe an executive, tells me about something they’ve built over the weekend. Sometimes it’s a chatbot. Sometimes it’s an internal workflow. Sometimes it’s a surprisingly polished application that solves a real business problem. They’re excited, and they should be. Twelve months ago they probably couldn’t have built it at all. Then comes the question.</p>\n  <p>“If AI can do this now, why aren’t our engineering teams delivering ten times faster?”</p>\n  <p>It’s a perfectly reasonable question, after all we’ve all seen the demos. The first thing that would come to my head is “you don’t know what it takes to build enterprise grade software”. But then I think about what I mean and how to explain it to a non-technical person without sounding super patronising. And then it hit me, we did this to ourselves. We’ve spent so many years banging on about how to write good software that everyone has assumed writing software is the same as software engineering.</p>\n  <p>The application someone builds over the weekend is real software. It likely solves a real problem or demonstrates an idea. Sometimes it’s genuinely impressive. I don’t want to diminish that because I think one of the most exciting things AI has done is dramatically increase the number of people who can turn ideas into working software. That’s cool, I totally get it. The first apps and “hello worlds” I ever built excited me enough to choose this as an actual career so the excitement is real and I don’t want to temper it too much.</p>\n  <p>But your first hello world, which these days can be an entire app with all kinds of features, is very, very (extra very on purpose) different from introducing software into a production environment in a highly regulated enterprise, as an example. But why?</p>\n  <p>The moment that application becomes something the business depends on, the questions change completely. Is customer data protected? What happens when a dependency fails? Can someone else understand this system in two years’ time? Will it survive an audit? Can it cope with a thousand times more users than it has today, what about millions in one day? How will we know something is wrong before our customers do? Those questions don’t show up in a demo or in the build phase at all unless an experienced engineer is in the room. I certainly wasn’t asking them when I was building my first apps. I only cared about features!</p>\n  <p>This is where experienced engineers become more important, not less. Not because they’re the only people who can build the software anymore, but because they have the judgement to know whether we can trust it: whether the design is good, the risks are understood, and the thing that works today won’t become somebody else’s nightmare six months from now.</p>\n  <p><a href=\"https://martinfowler.com/bliki/FutureOfSoftwareDevelopment.html\">At FOSE</a> a few weeks ago, we spent surprisingly little time talking about coding. We talked about whether code was still the source of truth, and occasionally about how much we missed writing it, but mostly we talked about design, architecture, governance, learning and judgement. One team described spending the day designing a specification, letting agents work overnight and reviewing the results the next morning. The interesting bit for me wasn’t the overnight pipeline, cool as that was. It was what the humans were doing: deciding what good looked like, making trade-offs and judging whether what came back was actually what they wanted. We also kept coming back to good design, because it turns out that when agents can generate lots of code very quickly, good design matters more, not less.</p>\n  <p>That made me wonder whether we’ve been thinking about scarcity in the wrong way. We’ve spent decades optimising around people who can write code because they were scarce and expensive. I’m not convinced that was ever the real scarcity, but that’s probably another ramble. What feels scarce now is good engineering judgement: knowing what good looks like, understanding the risks and knowing when something that works is actually safe to trust in production. Because software doesn’t exist to be built. It exists to run in production and safely solve the problem it was created for. <strong>Organisations don’t run on code. They run on trust.</strong></p>\n  <p>A few months ago I found myself saying something in a conversation almost without thinking.</p>\n  <p><strong>Citizens build. Agents execute. Experts govern.</strong></p>\n  <p>It sounded cool and I thought marketing would like it, so I wrote it down. Then I left it alone for a while. The funny thing about writing these ramblings is that I don’t know whether I believe something until I’ve let it bounce around in my head for a while and also said it to other people I trust like senior engineers at Thoughtworks. Sometimes I come back convinced I was talking nonsense. Occasionally I realise there was something more interesting hiding underneath. This was one of those occasions where the latter was true.</p>\n  <p>At first I thought I was talking about roles. Citizens build software (essentially non-engineers). Agents write the code. Engineers become governors. But I don’t actually think that’s what I meant. I think I was talking about where value is moving. AI has given everyone a new way to express their ideas. The execution is increasingly handled by agents. They write the code, refactor it, generate tests, fix bugs and iterate at a speed that simply wasn’t possible before. But neither of those things reduces the need for expertise.</p>\n  <p>In fact, I think it does exactly the opposite. When everyone can create software, somebody still has to decide whether that software deserves to exist inside an enterprise system in PRODUCTION. Somebody still has to think about architecture. Security. Resilience. Operability. Compliance. Cost. The boring stuff that nobody gets excited about in a demo but that becomes painfully important the first time a customer can’t log in or an auditor comes knocking.</p>\n  <p>That’s why I don’t think experienced engineers become less important. I think they become dramatically more leveraged. Their job shifts from building every feature themselves to creating the environment in which thousands of features can be built safely by other people and by agents. They become the people who design the guardrails, the platforms, the engineering practices and the feedback loops that allow everyone else to move quickly without creating chaos.</p>\n  <p>Perhaps that’s the future software organisation. Not one where everyone becomes a software engineer. Not one where software engineers disappear. One where almost anyone can create software, agents increasingly execute it, and engineering expertise becomes the thing that allows all of that creativity to scale safely. And to be clear I do not mean people build stuff and throw it to engineers to fix, that is a total antipattern for another ramble.</p>\n  <p>Perhaps that’s why the executives and engineers I’ve been speaking to sometimes sound as though they’re describing completely different futures. The executive sees that anyone can now build software. The engineer sees that somebody still has to live with it. Both are right. They’re simply looking at different parts of the same system we have to solve to create whatever the future actually ends up being.</p>\n </body>\n</html>",
+  "aiSummary": "马丁·福勒认为，AI 已经让软件创作民主化，但将工程判断力提升为真正的稀缺资源，并提出了一种新的组织模式：非工程师构建，智能体执行，经验丰富的工程师治理。",
+  "oneSentenceSummary": "马丁·福勒认为，AI 已经让软件创作民主化，但将工程判断力提升为真正的稀缺资源，并提出了一种新的组织模式：非工程师构建，智能体执行，经验丰富的工程师治理。",
+  "summary": "马丁·福勒探讨了一个日益明显的脱节现象：高管们看到 AI 驱动的周末项目，不禁疑惑为什么企业工程团队不能快上十倍。他的回答是，业余软件与生产级企业软件是截然不同的领域——后者需要在安全性、韧性、可审计性、可扩展性和可维护性等方面做出考量，而这些在演示中根本不会体现。福勒认为，AI 并不会让经验丰富的工程师变得多余，反而使他们的判断力比以往任何时候都更加关键。真正的稀缺性已经从编码能力转移到了工程判断力——知道什么是好的，理解风险，并判断软件在生产环境中是否安全可靠。他提出了“公民构建，智能体执行，专家治理”的框架：非技术人员现在可以创建软件，AI 智能体以规模化速度处理执行，而经验丰富的工程师则从建设者转变为治理者——设计护栏、平台和反馈机制，让创造力能够安全地规模化。文章借鉴了 FOSE 会议上的观察，那里的讨论聚焦于设计、架构、治理和判断力，而非编码。福勒总结道，高管和工程师正在从不同角度描述同一个未来——两者都是正确的。",
+  "mainPoints": [
+    {
+      "point": "周末 AI 构建的应用与企业生产软件是截然不同的领域。",
+      "explanation": "业余项目无需面对数据保护、依赖项故障、审计合规或扩展到数百万用户等问题——而这些正是定义生产级工程的核心关切，也只有经验丰富的工程师才会深入考量。"
+    },
+    {
+      "point": "工程判断力而非编码能力，才是真正的稀缺资源。",
+      "explanation": "福勒指出，过去几十年围绕稀缺程序员所做的优化错过了真正的约束条件。当 AI 能够自由生成代码时，判断软件是否安全、设计是否合理、是否易于维护的能力才成为关键差异。"
+    },
+    {
+      "point": "“公民构建，智能体执行，专家治理”的框架描述了正在演变的组织形态。",
+      "explanation": "非工程师现在可以创建软件，AI 智能体以速度处理执行，而经验丰富的工程师则从建设者转变为治理者——设计护栏、平台和反馈机制，使安全规模化成为可能。"
+    },
+    {
+      "point": "当智能体快速生成大量代码时，良好的设计比以往更加重要。",
+      "explanation": "没有扎实的架构基础，快速的代码生成只会放大混乱而非提升生产力。经验丰富的工程师创造的结构，才能让大规模创作保持安全与可维护。"
+    },
+    {
+      "point": "高管和工程师正在从不同角度描述同一个未来。",
+      "explanation": "高管看到的是创作民主化；工程师看到的是有人必须承担后果的必要性。两种视角都有效，都需要在过渡期中发挥作用。"
+    }
+  ],
+  "keyQuotes": [
+    "组织不是靠代码运行的，而是靠信任运行的。",
+    "公民构建。智能体执行。专家治理。",
+    "当智能体能够快速生成大量代码时，良好的设计比以往更加重要。",
+    "真正的稀缺性已经从编码能力转移到了工程判断力——知道什么是好的，理解风险，并知道什么时候一个能工作的东西实际上在生产环境中是安全可靠可以信赖的。"
+  ],
+  "tags": [
+    "软件工程",
+    "AI 影响",
+    "企业软件",
+    "工程判断力",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1239,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787164200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-20 02:30:00"
+}

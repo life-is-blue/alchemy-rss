@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-20 06:15:40 | [返回首页](/README.md)
+**更新时间**: 2026-08-20 08:39:12 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (14965)
-- [软件架构](#architecture) (23)
-- [前端与全栈](#frontend-fullstack) (939)
-- [DevOps](#devops) (710)
+- [AI & 大模型](#ai-llm) (15009)
+- [软件架构](#architecture) (24)
+- [前端与全栈](#frontend-fullstack) (942)
+- [DevOps](#devops) (712)
 - [产品与商业](#product-business) (46)
-- [其他](#other) (6615)
+- [其他](#other) (6630)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [GitHub---Chong169/a-constitution-for-one:-个人-AI-代理舰队七个月书面宪法治理，零事故](https://github.com/Chong169/a-constitution-for-one) - AI 精选
 - [设计一种持久化的知识层，拒绝随意猜测](https://towardsdatascience.com/designing-a-persistent-knowledge-layer-that-refuses-to-guess/) - AI 精选
 - [Multi-Agent-的新趋势：从-Agent-Team-到-Agent-Swarm](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518293&idx=1&sn=dc3d001cf756fd83a7cdf2fbdf177582) - AI 精选
 - [GLM-5.3：前沿编程能力与涌现的网络安全能力](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492) - AI 精选
@@ -41,9 +42,8 @@
 - [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6) - AI 精选
 - [智能体-AI-时代的科学计算](https://openai.com/index/scientific-computing-agentic-ai) - AI 精选
 - [Codex-从-0-到-1000-万用户：构建-ChatGPT-Work-—-与-OpenAI-的-Akshay-Nathan-对话](https://www.latent.space/p/chatgpt-work) - AI 精选
-- [Agent-开发指南：技术太多，该怎么学？](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492366&idx=1&sn=260b5fac24951a19de106ab89c5cec31) - AI 精选
 
-- [查看全部 14965 篇...](/details/tags/ai-llm.md)
+- [查看全部 15009 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -55,6 +55,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [理解渐进式坍塌：如何避免连锁故障](https://www.infoq.com/presentations/progressive-collapse-system-resilience/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [读取路径-与-写入路径：策略与技术](https://blog.bytebytego.com/p/the-read-path-versus-the-write-path) - 编程 更多
 - [超越-CLEAN-与-MVP：在-Android-中构建离线优先的响应式数据层](https://www.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [Netflix-构建集中式数据删除平台的架构实践](https://www.infoq.com/presentations/architecting-deletion-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
@@ -70,9 +71,8 @@
 - [Netflix-通过-RAW-Hollow-内存对象存储优化-Tudum-的-CQRS-架构](https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [从小不学好-，影刀-+-ddddocr-实现图片验证码认证自动化](https://juejin.cn/post/7531696180239466531) - 编程 更多
 - [APM-最佳实践指南：工程师必知该做与不该做的事项](https://www.elastic.co/blog/apm-best-practices) - 编程 更多
-- [想给面试官吹-DDD-吗？项目像搭积木一样运行：领域驱动设计（DDD）让复杂业务变简单](https://juejin.cn/post/7519812174899478582) - 编程 更多
 
-- [查看全部 23 篇...](/details/tags/architecture.md)
+- [查看全部 24 篇...](/details/tags/architecture.md)
 
 
 ## <a id="frontend-fullstack"></a>前端与全栈
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 939 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 942 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 710 篇...](/details/tags/devops.md)
+- [查看全部 712 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 
-- [查看全部 6615 篇...](/details/tags/other.md)
+- [查看全部 6630 篇...](/details/tags/other.md)
 
 

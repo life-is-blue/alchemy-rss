@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-20 06:15:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-20 08:39:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -384,7 +384,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -735,6 +735,30 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [介绍-Microlighter](https://daverupert.com/2026/08/microlighter/)
+
+2026-08-19 23:22:00 | 标签: 语法高亮, CSS Custom Highlights API, Web 组件, Textmate 语法, 前端开发
+
+> 文章介绍了 MicroLighter，这是一个围绕 CSS Custom Highlights API 构建的客户端语法高亮器。它强调零依赖、约 2 KB 的 gzipped 压缩包、按需加载 Textmate 语法文件，以及通过 `light‑dark()` 实现统一的亮色/暗色主题。额外的 UI 功能（如行号和复制按钮）被移至 `<micro‑lighter>` Web 组件，使核心库专注于语言检测和高亮。文章还提供了安装说明、捆绑包和 Web 组件的使用示例，并展示了如何通过 CSS 变量定义自定义主题。
+
+
+
+### [使用深度图和-Three.js-为图像重新打光](https://tympanus.net/codrops/2026/08/19/relighting-images-with-depth-maps-and-three-js/)
+
+2026-08-19 22:42:19 | 标签: Three.js, WebGPU, WebGL, 着色器编程, 前端与 Web
+
+> 文章详细介绍了一套完整流程，让 2D 图像能够响应动态光影变化。首先利用深度估计模型从照片生成深度图，然后将 8 位输出转换为半精度浮点数并施加模糊处理，以消除会导致阴影斑驳的量化伪影。接着从深度梯度推导出法线贴图，并将其与基于亮度提取的细节梯度进行混合，以模拟表面纹理。通过向光源方向追踪光线并累加多个采样点的遮挡信息，计算出柔和的阴影效果。最后将这三个要素整合到 Three.js TSL 的 MeshPhongNodeMaterial 中。作者还分享了自定义的深度生成工具，并提供了在线演示和 GitHub 上的完整源代码链接。
+
+
+
+### [CSS-Navigation-Matching，早期探索](https://css-tricks.com/css-navigation-matching-early-days/)
+
+2026-08-19 17:00:18 | 标签: CSS, 视图过渡, Web 开发, CSS 规范, 前端开发
+
+> 本文探讨了新兴的 CSS Navigation Matching 规范，该规范旨在让开发者能够通过 CSS 而非 JavaScript 来声明式地设置页面间过渡的样式。作者详细介绍了几个关键的 at-rule：@location 用于定义 URL（通过 pathname 或 url-pattern），@navigation 用于查询位置间的过渡，以及 :nav-source 和 :link-to() 等伪类。代码示例展示了如何匹配特定页面、URL 模式和导航方向。作者提出了实际担忧——扁平的 URL 结构（如 CSS-Tricks）可能不太适合此功能，且基于 CSS 的指纹识别可能存在安全隐患...
 
 
 
@@ -1878,13 +1902,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2034,13 +2058,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3534,13 +3558,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5244,13 +5268,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
