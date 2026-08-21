@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3e86333000",
+  "title": "8 月 17 日故障及后续工作",
+  "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+  "date": "2026-08-21 02:36:19",
+  "author": "Vlad Fedorov",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">On August 17, GitHub experienced an outage that lasted 7 hours and 47 minutes. It disrupted github.com, authentication, GitHub Actions, APIs, pull requests, issues, and Copilot, affecting developers and organizations around the world. If you were trying to ship software that day, we let you down.</p>\n  <p class=\"wp-block-paragraph\">This was our second significant incident in August, following <a href=\"https://www.githubstatus.com/incidents/qcvjkzcs7j74\">an actions failure on August 6</a>. In <a href=\"https://github.blog/news-insights/company-news/addressing-githubs-recent-availability-issues-2/\">March</a> and <a href=\"https://github.blog/news-insights/company-news/an-update-on-github-availability/\">April</a>, I shared the work underway to improve GitHub’s reliability. We have made progress, but these incidents make clear that we must accelerate this work.</p>\n  <h2 id=\"h-what-happened\" class=\"wp-block-heading\">What happened</h2>\n  <p class=\"wp-block-paragraph\">Our investigation found that the outage began when traffic reached a new peak, and a critical infrastructure component in our Central US data center failed to scale with it. The resulting capacity pressure spread through our systems, causing authentication failures and disrupting multiple GitHub services.</p>\n  <p class=\"wp-block-paragraph\">Recovery required several coordinated actions. Teams rerouted traffic, isolated affected infrastructure, and restored services in stages. Most GitHub services recovered earlier that day, but some Copilot services took longer. Errors in those services triggered a client-side retry loop that increased traffic during recovery. We had to mitigate that behavior before we could safely restore traffic. The full <a href=\"https://www.githubstatus.com/incidents/zkxwbgr0cnmx\">root cause analysis</a> includes a detailed technical timeline.</p>\n  <p class=\"wp-block-paragraph\">Neither outage was caused by a code or configuration change. Both incidents were capacity failures at their core. We failed to scale critical components before demand exceeded their capacity. Since April, monthly commits have grown from 1.4 billion to 2.9 billion. That growth explains the pressure on our systems, but it does not excuse these outages.</p>\n  <figure class=\"wp-block-image size-large\">\n   <img decoding=\"async\" loading=\"lazy\" src=\"https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?resize=1024%2C576\" alt=\"Three side-by-side dark-themed line charts show strong growth from 2023 to 2026: merged pull requests per month rising to about 130M, commits per month rising to about 2.9B, and new repositories per month rising to about 24M, with acceleration in 2025–2026.\" class=\"wp-image-98391\" srcset=\"https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?w=3840 3840w, https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?w=300 300w, https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?w=768 768w, https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?w=1024 1024w, https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?w=1536 1536w, https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?w=2048 2048w, https://github.blog/wp-content/uploads/2026/08/1-PRs-Commits-Repos.png?w=3000 3000w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\">\n  </figure>\n  <h2 id=\"h-what-we-have-done-and-what-comes-next\" class=\"wp-block-heading\">What we have done and what comes next</h2>\n  <p class=\"wp-block-paragraph\">As part of the reliability commitments we made earlier this year, we have focused on three priorities: adding capacity, improving efficiency, and removing architectural bottlenecks. We have since added more than 3 million CPU cores, 120 petabytes of high-speed storage, and significant network capacity. We installed as much hardware as available power allowed in our existing data centers while accelerating our migration to Azure.</p>\n  <p class=\"wp-block-paragraph\">Today, Azure serves roughly 58% of GitHub’s platform load and half of all Git operations, up from 12% of platform load in May. This expanded footprint has also supported the growth in GitHub Actions job runs shown below.</p>\n  <figure class=\"wp-block-image size-large\">\n   <img decoding=\"async\" loading=\"lazy\" src=\"https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?resize=1024%2C576\" alt=\"Large dark-themed line chart titled ‘Growth in completed GitHub Actions runs’ shows a rising trend from early 2026 to August, with regular weekly dips and increasing peaks. Values grow from roughly 15–30M early in the year to over 100M, ending near 115.4M.\" class=\"wp-image-98393\" srcset=\"https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?w=3840 3840w, https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?w=300 300w, https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?w=768 768w, https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?w=1024 1024w, https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?w=1536 1536w, https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?w=2048 2048w, https://github.blog/wp-content/uploads/2026/08/3-GH-Actions-runs.png?w=3000 3000w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\">\n  </figure>\n  <p class=\"wp-block-paragraph\">Azure’s infrastructure and capacity have also accelerated our work to scale the largest monorepos. Our next milestone is an architecture that scales read capacity linearly with the number of readers, enabling unlimited read operations. We will roll it out gradually, beginning with the largest monorepos.</p>\n  <figure class=\"wp-block-image size-large\">\n   <img decoding=\"async\" loading=\"lazy\" src=\"https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?resize=1024%2C576\" alt=\"Two dark-themed ‘Fetch Throughput History’ charts compare fetch operations per second over short time windows. Left chart fluctuates and plateaus around ~1,000 OPS/S before dropping near the end; right chart climbs steadily in steps to about ~1,800 OPS/S.\" class=\"wp-image-98392\" srcset=\"https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?w=3840 3840w, https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?w=300 300w, https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?w=768 768w, https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?w=1024 1024w, https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?w=1536 1536w, https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?w=2048 2048w, https://github.blog/wp-content/uploads/2026/08/2-Fetch-throughput-history.png?w=3000 3000w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\">\n  </figure>\n  <p class=\"wp-block-paragraph\">Scale is not our only challenge. As the pace and complexity of change increased, our existing operational practices did not keep up. We have redirected teams and resources toward availability and invested in stronger testing, safer rollouts, better observability, and more effective alerting. We have made progress, but this work is not complete.</p>\n  <p class=\"wp-block-paragraph\">In addition, we are also isolating critical systems and removing shared dependencies between them. This work is designed to reduce the likelihood of an outage and limit its impact when one occurs.</p>\n  <p class=\"wp-block-paragraph\">We learn from every outage and add new work to our availability workstream. The August 6 and August 17 incidents led to two immediate changes. First, we are applying consistent retry limits, retry budgets, and variable timeouts across service-to-service interactions to prevent retry storms and cascading load. Second, we are reviewing lower-priority CPU and memory alerts to identify components that could fail during sudden traffic spikes.</p>\n  <p class=\"wp-block-paragraph\">Our commitment to high availability isn’t just a technical promise. The developer community depends on GitHub to build, ship, and operate their work. That is only possible if you can rely on us, and on August 17, you couldn’t. It is our responsibility to fix that. We’ll earn your trust through the scaling and reliability of the platform.</p>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub CEO 发布了关于 8 月 17 日故障（7 小时 47 分钟）的透明事后分析，将其归因于流量增长 2 倍背景下的容量故障，详述了补救措施，包括 Azure 迁移（现承担 58% 负载）、重试风暴修复以及隔离关键系统的架构变更。",
+  "oneSentenceSummary": "GitHub CEO 发布了关于 8 月 17 日故障（7 小时 47 分钟）的透明事后分析，将其归因于流量增长 2 倍背景下的容量故障，详述了补救措施，包括 Azure 迁移（现承担 58% 负载）、重试风暴修复以及隔离关键系统的架构变更。",
+  "summary": "GitHub 于 8 月 17 日发生了一起持续 7 小时 47 分钟的故障，影响了 github.com、身份验证、Actions、API、PR、Issue 以及 Copilot。根因是中央美国数据中心的一个关键基础设施组件无法随新的流量峰值扩容，导致级联容量压力。此次故障和 8 月 6 日的故障均未涉及代码或配置变更，均为纯容量故障。自 4 月以来，月度提交数从 14 亿增长至 29 亿。GitHub 已新增 300 万个 CPU 核心、120 PB 高速存储，并加速 Azure 迁移：Azure 现承担约 58% 的平台负载及一半的 Git 操作（5 月仅 12%）。面向线性读扩展的新架构正在向最大单体仓库优先推出。运维改进包括更强的测试、更安全的发布、更好的可观测性与告警。针对 8 月两次故障的两项即时变更：在服务间调用中统一重试限制、重试预算与可变超时以防止重试风暴；复查低优先级 CPU/内存告警，以捕捉流量突增时可能失效的组件。文中附带图表展示了 PR、提交、仓库增长，Actions 运行增长及获取吞吐量提升。",
+  "mainPoints": [
+    {
+      "point": "故障属于容量故障，非代码或配置变更导致。",
+      "explanation": "中央美国数据中心的一个关键基础设施组件未能随新的流量峰值扩容，引发级联身份验证故障与多服务中断。增长（提交数 4 月以来从 14 亿增至 29 亿）解释了系统承受的压力，但不能成为故障的借口。"
+    },
+    {
+      "point": "Azure 迁移是主要扩容手段，现承担 58% 平台负载。",
+      "explanation": "GitHub 在现有数据中心部署了最大规模硬件，同时加速 Azure 迁移。Azure 现承担约 58% 的平台负载和一半的 Git 操作（5 月仅 12%），支撑了 Actions 的持续增长（现约 1.15 亿次运行/周）。"
+    },
+    {
+      "point": "架构变更瞄准线性读扩展与故障隔离。",
+      "explanation": "下一里程碑：实现随读者数量线性扩展读容量的架构，从而支持无限读操作，优先向最大单体仓库推出。关键系统正在被隔离并移除共享依赖，以降低故障发生概率与影响范围。"
+    },
+    {
+      "point": "运维实践正在强化，以防止重试风暴并改进告警。",
+      "explanation": "两项即时变更：(1) 在服务间交互中统一重试限制、重试预算与可变超时，防止级联负载；(2) 复查低优先级 CPU/内存告警，以捕捉突发流量峰值下可能失效的组件。"
+    }
+  ],
+  "keyQuotes": [
+    "这种增长解释了我们系统承受的压力，但不能成为这些故障的借口。",
+    "我们对高可用性的承诺不仅仅是技术承诺。开发者社区依赖 GitHub 来构建、交付和运行他们的工作。只有当你们能信赖我们时，这才成为可能，而在 8 月 17 日，你们无法做到。"
+  ],
+  "tags": [
+    "DevOps",
+    "云原生 / DevOps",
+    "平台工程",
+    "故障响应",
+    "系统可靠性"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 621,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787250979000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-21 02:36:19"
+}

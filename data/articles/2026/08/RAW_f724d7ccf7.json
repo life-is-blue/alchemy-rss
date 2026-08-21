@@ -1,0 +1,48 @@
+{
+  "id": "RAW_f724d7ccf7",
+  "title": "芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows]",
+  "url": "https://www.appinn.com/mangodisk/",
+  "date": "2026-08-21 00:18:44",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/08/Copy-of-appinn-homework-2026-08-20T160719.902.jpg\" alt=\"芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows] 1\" class=\"wp-image-59101\" title=\"芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows] 1\">\n  </figure>\n  <p class=\"wp-block-paragraph\">这是一款青小蛙觉得设计非常漂亮的<a href=\"https://www.appinn.com/tag/%e7%a3%81%e7%9b%98%e6%b8%85%e7%90%86/\" data-type=\"post_tag\" data-id=\"5147\">磁盘清理</a>工具。</p>\n  <p class=\"wp-block-paragraph\">开始的时候觉得名字似曾相识，感觉以前听过芒果磁盘清理…原来，听过的那个是柠檬，😂</p>\n  <p class=\"wp-block-paragraph\">来自<a href=\"https://meta.appinn.net/c/faxian/10\" target=\"_blank\" rel=\"noopener\"><strong>发现频道</strong></a>，开发者 Harry 自荐：<a href=\"https://meta.appinn.net/t/topic/89444/\" target=\"_blank\" rel=\"noopener\">https://meta.appinn.net/t/topic/89444/</a></p>\n  <p class=\"wp-block-paragraph\">也是<a href=\"https://www.appinn.com/faxian-top10-2632/\" data-type=\"post\" data-id=\"58979\">10款大家发现的好评软件[2026年第32期]</a>入选软件，以下为原文。</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">免费开源、无需登录的磁盘清理工具：快速找出缓存、大文件、重复文件、应用残留和开发垃圾，轻松释放被占用的硬盘空间。</p>\n  <h2 class=\"wp-block-heading\">它能做什么</h2>\n  <h3 class=\"wp-block-heading\">1. 深度清理</h3>\n  <p class=\"wp-block-paragraph\">一次扫描系统、应用、浏览器和开发环境中的缓存、临时文件与卸载残留，不用再手动翻目录。对开发者，还能找出 Node.js、Rust、Gradle、Xcode、Python、.NET 等工具产生的构建产物，以及本地 AI 模型和缓存。</p>\n  <figure class=\"wp-block-image\">\n   <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/4/2/4275e8d6769390bf20ed7a16556177d72a2b77b6_2_1380x922.jpeg\" alt=\"MangoDisk 深度清理结果界面|690x461\" title=\"芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows] 2\">\n  </figure>\n  <h3 class=\"wp-block-heading\">2. 大文件清理</h3>\n  <p class=\"wp-block-paragraph\">扫描整个磁盘或指定文件夹，按类型和大小筛选，快速找到隐藏在各个目录中的大文件。</p>\n  <figure class=\"wp-block-image\">\n   <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/f/a/fa7849af5c9498930d9144da82340dcbe33f61cb_2_1380x922.jpeg\" alt=\"MangoDisk 大文件清理界面|690x461\" title=\"芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows] 3\">\n  </figure>\n  <h3 class=\"wp-block-heading\">3. 重复文件清理</h3>\n  <p class=\"wp-block-paragraph\">按文件内容找出真正相同的副本，不靠文件名猜测。安装包、照片备份和项目压缩包都能成组呈现，智能选择会确保每组至少保留一份。</p>\n  <figure class=\"wp-block-image\">\n   <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/0/3/03e7063c93e4acf91b45d6cb49ef8b58c81855cd_2_1380x922.jpeg\" alt=\"MangoDisk 重复文件清理界面|690x461\" title=\"芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows] 4\">\n  </figure>\n  <h3 class=\"wp-block-heading\">4. 应用卸载与残留清理</h3>\n  <p class=\"wp-block-paragraph\">卸载应用时同步找出缓存、配置和遗留数据，避免软件已经删除，几个 GB 的残留仍在占用硬盘空间。</p>\n  <figure class=\"wp-block-image\">\n   <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/e/f/eff52b2f9498ca853790faaa047a0f318ad3df0c_2_1380x922.jpeg\" alt=\"MangoDisk 应用卸载界面|690x461\" title=\"芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows] 5\">\n  </figure>\n  <h3 class=\"wp-block-heading\">5. 磁盘空间分析</h3>\n  <p class=\"wp-block-paragraph\">通过矩形图直观展示磁盘占用情况：方块越大，占用空间越多。可以逐层进入文件夹，快速找到占用空间最多的目录和文件。</p>\n  <figure class=\"wp-block-image\">\n   <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/5/f/5f915756ae8a00679c8af51ff77421b1a173ee86_2_1380x922.jpeg\" alt=\"MangoDisk 磁盘空间分析界面|690x461\" title=\"芒果磁盘清理 / MangoDisk：开源，深度磁盘清理工具，轻量高颜值[macOS/Windows] 6\">\n  </figure>\n  <h2 class=\"wp-block-heading\">为什么值得装一个试试</h2>\n  <ul class=\"wp-block-list\">\n   <li><strong>免费开源</strong>：采用 GPLv3 许可证，所有功能均可直接使用。</li>\n   <li><strong>无需账号</strong>：不用注册登录，下载即用。</li>\n   <li><strong>本地处理</strong>：文件与扫描结果不上传，断网也能使用核心功能。</li>\n   <li><strong>清理可控</strong>：扫描不会自动删除，清理内容由你最终确认。</li>\n   <li><strong>跨平台支持</strong>：macOS、Windows 都能用。</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">没有账号体系，也不会将文件上传到云端分析。下载后即可扫描，看看硬盘空间究竟用在了哪里。</p>\n  <h2 class=\"wp-block-heading\">下载与源码</h2>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://mangodisk.app/zh\" target=\"_blank\" rel=\"noopener\">官网</a></li>\n   <li><a href=\"https://github.com/harry0703/MangoDisk\" target=\"_blank\" rel=\"noopener\">GitHub 源码</a></li>\n  </ul>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：https://www.appinn.com/mangodisk/</p>\n </body>\n</html>",
+  "aiSummary": "小众软件推荐开源跨平台磁盘清理工具 MangoDisk，支持深度清理开发垃圾、大文件、重复文件及应用残留，免费无广告且本地运行。",
+  "oneSentenceSummary": "小众软件推荐开源跨平台磁盘清理工具 MangoDisk，支持深度清理开发垃圾、大文件、重复文件及应用残留，免费无广告且本地运行。",
+  "summary": "文章介绍 MangoDisk（芒果磁盘清理），一款面向 macOS 和 Windows 的免费开源（GPLv3）磁盘清理工具。核心功能包括：深度清理系统/浏览器/开发环境缓存（覆盖 Node.js、Rust、Gradle、Xcode 等构建产物及本地 AI 模型缓存）、大文件可视化筛选、基于内容哈希的重复文件查找、应用卸载连带残留清理、以及矩形树图的磁盘空间分析。工具无需登录、本地离线运行、扫描不自动删除、用户确认后清理。文章源自小众软件“发现频道”开发者自荐，附官网与 GitHub 源码链接，配有各功能界面截图。",
+  "mainPoints": [
+    {
+      "point": "覆盖开发场景的深度清理能力",
+      "explanation": "针对开发者高频痛点，内置 Node.js、Rust、Gradle、Xcode、Python、.NET 等工具链的构建缓存与产物识别规则，并支持本地 AI 模型缓存清理，避免手动查找目录。"
+    },
+    {
+      "point": "四大核心功能模块组合实用",
+      "explanation": "大文件扫描、重复文件去重（按内容哈希）、应用卸载残留清理、磁盘空间可视化分析，覆盖日常释放空间的主要需求，交互逻辑清晰。"
+    },
+    {
+      "point": "隐私友好与可控的产品设计",
+      "explanation": "完全本地运行、无账号体系、不上传数据、扫描不自动删除、用户最终确认清理，符合工具类软件的信任预期。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "开源软件",
+    "磁盘清理",
+    "系统工具",
+    "macOS",
+    "Windows"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 74,
+  "wordCount": 734,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1787242724000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-21 00:18:44"
+}

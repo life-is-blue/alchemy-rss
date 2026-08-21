@@ -1,0 +1,55 @@
+{
+  "id": "RAW_e7d9c67f9b",
+  "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍 · AIHOT",
+  "url": "https://aihot.virxact.com/items/cmt1rv5n8066iroovaxgoej1b",
+  "date": "2026-08-21 00:52:57",
+  "author": "noreply@aihot.virxact.com (Hugging Face：Blog（RSS）)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <p>今天，我们发布了针对 LFM2.5 系列中三款模型的 DSpark 草稿模型检查点：LFM2.5-1.2B-Instruct、LFM2.5-2.6B 和 LFM2.5-8B-A1B。这些模型增加了一条投机解码路径，以极小的内存开销换取大幅度的解码速度提升，且不改变输出质量：</p>\n  <ul>\n   <li>更快的推理：在 GPU 上吞吐量最高提升 3.18 倍，在端侧设备上最高提升 2.87 倍。</li>\n   <li>迈向端侧智能体推理：LFM2.5-2.6B 的函数调用延迟平均降低 57%。</li>\n   <li>首日支持 llama.cpp 和 SGLang：兼容 LFM 的 DSpark 集成已在上游开源。</li>\n  </ul>\n  <p>大语言模型推理中的解码阶段传统上受内存带宽限制。大部分延迟来自将权重从 DRAM 流式加载到 SRAM，而非密集计算。投机解码通过使用轻量级草稿模型生成候选 token，然后由目标模型在单次前向传播中一次性验证所有候选 token 来解决这一问题，从而将加载权重的成本分摊到我们验证的所有 token 上。</p>\n  <p>多年来，业界提出了多种投机方法，其中最著名的是 EAGLE-3、DFlash，以及最新的 DSpark，后者结合了三个组件：</p>\n  <ul>\n   <li>基于 DFlash 风格的并行主干网络，以目标模型的上下文特征为条件，在单次前向传播中为所有草稿 token 生成隐藏状态。</li>\n   <li>一个轻量级的顺序头，以相邻 token 之间的马尔可夫链为模型，增加了 token 间的依赖关系，从而提高了后续位置的接受率。</li>\n   <li>一个基于置信度调度的验证器，用于预测每个 token 的存活概率，并在验证成本高于其节省成本时，剪除低置信度的后缀。</li>\n  </ul>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/QSig7XupRwDH70cDopwv2.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"><img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fcdn-uploads.huggingface.co%2Fproduction%2Fuploads%2F644249b08443bce4c9890a0f%2FQSig7XupRwDH70cDopwv2.png&amp;exp=1787313600&amp;sig=5ff336d229176ea297be5075f21ff07d5bac5ebfcc2562826bd4fa786abf3b8c\" alt=\"Image 12: DSpark\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\"></a></p>\n  <h2>训练与架构</h2>\n  <p>我们遵循 DSpark 的方法，但使用了更大、更多样化的数据混合，涵盖 SFT、聊天、代码和函数调用数据。根据我们的消融实验，草稿模型的初始版本是简化的仅注意力（attention-only）草稿模型，包含 5 层和 9 个块。对于每个草稿模型，我们在整个数据集上运行了 15 个 epoch，并选择了接受率最高而非损失最低的那个 epoch。</p>\n  <p>由此产生的草稿模型相对较小，每个模型约有 ~3 亿参数。</p>\n  <table>\n   <thead>\n    <tr>\n     <th>组件</th>\n     <th>LFM2.5-1.2B-Instruct</th>\n     <th>LFM2.5-8B-A1B</th>\n     <th>LFM2.5-2.6B</th>\n    </tr>\n   </thead>\n   <tbody>\n    <tr>\n     <td>解码器堆栈（5 层）</td>\n     <td>241.2M</td>\n     <td>241.2M</td>\n     <td>241.2M</td>\n    </tr>\n    <tr>\n     <td>隐藏状态投影</td>\n     <td>21.0M</td>\n     <td>21.0M</td>\n     <td>21.0M</td>\n    </tr>\n    <tr>\n     <td>Markov 头</td>\n     <td>33.6M</td>\n     <td>65.5M</td>\n     <td>65.5M</td>\n    </tr>\n    <tr>\n     <td>归一化层 + 置信度头</td>\n     <td>27.5k</td>\n     <td>27.5k</td>\n     <td>27.5k</td>\n    </tr>\n    <tr>\n     <td>总计</td>\n     <td>295.7M</td>\n     <td>327.7M</td>\n     <td>327.7M</td>\n    </tr>\n   </tbody>\n  </table>\n  <h2>质量对齐</h2>\n  <p>在贪心解码下，草稿 token 只有在与目标模型的分布匹配时才会被接受。被拒绝时，目标模型自身的 token 会取而代之。因此，生成的序列在构造上与基线贪心解码完全一致，所以基准测试的准确率（pass@1 或精确匹配）保持不变。</p>\n  <h2>CPU 和 GPU 上的推理加速</h2>\n  <p>我们为 LFM2.5 推出的 DSpark 草稿模型在发布首日即支持 llama.cpp（实现基于官方代码库构建，我们使用实验性的 Metal 内核运行）和 **SGLang**（实现基于官方 SGLang 对 DSpark 的实现构建）。</p>\n  <p>我们使用 llama.cpp 和 Metal 在 M4 Max MacBook Pro 上测量端侧吞吐量，采用 FP16 GGUF 权重，最多生成 256 个输出 token。我们使用 SGLang 在单块 H100 80 GB 上以 BF16 测量 GPU 吞吐量。两种配置均使用 DSpark 块大小 9、批大小 1 和温度 0。我们在五个基准数据集上进行了评估。</p>\n  <p>三个草稿模型在大型加速器（H100）和边缘部署（M4 Max MacBook）上都带来了显著的吞吐量提升。</p>\n  <p>对于 LFM2.5-2.6B，MacBook 上的加速尤为明显，它将用户可享受的交互性水平推向了远超大多数专有云模型（约 ~140 tok/s，视数据集而定）的吞吐量。</p>\n  <table>\n   <thead>\n    <tr>\n     <th>数据集</th>\n     <th>接受率（满分 10）</th>\n     <th>H100 上的加速</th>\n     <th>M4 Max 上的加速</th>\n    </tr>\n   </thead>\n   <tbody>\n    <tr>\n     <td>MATH500</td>\n     <td>5.42</td>\n     <td>3.06 倍 326 → 1000 tok/s</td>\n     <td>2.25 倍 61 → 137 tok/s</td>\n    </tr>\n    <tr>\n     <td>HumanEval</td>\n     <td>4.54</td>\n     <td>2.56 倍 326 → 835 tok/s</td>\n     <td>2.63 倍 61 → 161 tok/s</td>\n    </tr>\n    <tr>\n     <td>MBPP</td>\n     <td>4.71</td>\n     <td>2.64 倍 326 → 861 tok/s</td>\n     <td>2.11 倍 62 → 132 tok/s</td>\n    </tr>\n    <tr>\n     <td>GSM8K</td>\n     <td>4.32</td>\n     <td>2.22 倍 312 → 693 tok/s</td>\n     <td>2.36 倍 60 → 143 tok/s</td>\n    </tr>\n    <tr>\n     <td>MT-Bench</td>\n     <td>5.07</td>\n     <td>2.87 倍 325 → 933 tok/s</td>\n     <td>1.99 倍 62 → 123 tok/s</td>\n    </tr>\n    <tr>\n     <td>平均值</td>\n     <td>4.81</td>\n     <td>2.67 倍 323 → 864 tok/s</td>\n     <td>2.27 倍 61 → 139 tok/s</td>\n    </tr>\n   </tbody>\n  </table>\n  <p>在各种多工具场景中，DSpark 为 LFM2.5-2.6B 平均降低了 57% 的延迟。</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/RTL-W6OBn97nMW7gkkT-e.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"><img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fcdn-uploads.huggingface.co%2Fproduction%2Fuploads%2F644249b08443bce4c9890a0f%2FRTL-W6OBn97nMW7gkkT-e.png&amp;exp=1787313600&amp;sig=71e8f911483360622c1a43d9230b23e857611c8e63f11735abc3fa99789b17fa\" alt=\"Image 13: bfcl_latency_mac\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\"></a></p>\n  <p>对于 LFM2.5-1.2B-Instruct，我们看到数据集接受率的波动要大得多，因此加速效果会因底层文本分布的不同而出现高达 52% 的差异。</p>\n  <table>\n   <thead>\n    <tr>\n     <th>数据集</th>\n     <th>接受率（满分 10）</th>\n     <th>H100 上的加速</th>\n     <th>M4 Max 上的加速</th>\n    </tr>\n   </thead>\n   <tbody>\n    <tr>\n     <td>MATH500</td>\n     <td>6.02</td>\n     <td>2.56倍 668 → 1712 token/秒</td>\n     <td>2.62倍 140 → 366 token/秒</td>\n    </tr>\n    <tr>\n     <td>HumanEval</td>\n     <td>5.31</td>\n     <td>2.26倍 664 → 1499 token/秒</td>\n     <td>2.87倍 136 → 389 token/秒</td>\n    </tr>\n    <tr>\n     <td>MBPP</td>\n     <td>5.52</td>\n     <td>2.37倍 667 → 1578 token/秒</td>\n     <td>2.74倍 137 → 375 token/秒</td>\n    </tr>\n    <tr>\n     <td>GSM8K</td>\n     <td>4.34</td>\n     <td>1.67倍 624 → 1041 token/秒</td>\n     <td>2.73倍 140 → 381 token/秒</td>\n    </tr>\n    <tr>\n     <td>MT-Bench</td>\n     <td>3.90</td>\n     <td>1.66倍 657 → 1091 token/秒</td>\n     <td>1.72倍 137 → 237 token/秒</td>\n    </tr>\n    <tr>\n     <td>平均值</td>\n     <td>5.02</td>\n     <td>2.10倍 656 → 1384 token/秒</td>\n     <td>2.54倍 138 → 350 token/秒</td>\n    </tr>\n   </tbody>\n  </table>\n  <p>对于 LFM2.5-8B-A1B，其接受率相比两个稠密模型有所提升，但在端侧设备上我们平均仅获得 18% 的改进。这一差距源于 llama.cpp 的 Metal 后端中当前 MoE 实现的限制，以及验证 k 个 token 会比单次解码步骤激活更多专家，从而产生更大的权重流量。</p>\n  <table>\n   <thead>\n    <tr>\n     <th>数据集</th>\n     <th>接受率（满分 10）</th>\n     <th>H100 上的加速比</th>\n     <th>M4 Max 上的加速比</th>\n    </tr>\n   </thead>\n   <tbody>\n    <tr>\n     <td>MATH500</td>\n     <td>8.27</td>\n     <td>3.18倍 428 → 1362 token/秒</td>\n     <td>1.21倍 93 → 112 token/秒</td>\n    </tr>\n    <tr>\n     <td>HumanEval</td>\n     <td>7.02</td>\n     <td>2.58倍 426 → 1100 token/秒</td>\n     <td>1.12倍 91 → 101 token/秒</td>\n    </tr>\n    <tr>\n     <td>MBPP</td>\n     <td>6.93</td>\n     <td>2.64倍 426 → 1122 token/秒</td>\n     <td>1.09倍 89 → 97 token/秒</td>\n    </tr>\n    <tr>\n     <td>GSM8K</td>\n     <td>4.02</td>\n     <td>1.29倍 385 → 496 token/秒</td>\n     <td>1.44倍 90 → 129 token/秒</td>\n    </tr>\n    <tr>\n     <td>MT-Bench</td>\n     <td>8.52</td>\n     <td>3.02倍 426 → 1288 token/秒</td>\n     <td>1.04倍 87 → 90 token/秒</td>\n    </tr>\n    <tr>\n     <td>平均值</td>\n     <td>6.95</td>\n     <td>2.54倍 418 → 1074 token/秒</td>\n     <td>1.18倍 90 → 106 token/秒</td>\n    </tr>\n   </tbody>\n  </table>\n  <h2>如何使用 LFM2.5-DSpark</h2>\n  <p>使用 SGLang 运行 DSpark 草稿模型，需要构建支持 LFM2 目标 DSpark 功能的 SGLang 版本（PR #31041）。启动目标模型并附加草稿模型：</p>\n  <pre><code>python -m sglang.launch_server \\\n  --model-path LiquidAI/LFM2.5-2.6B \\\n  --speculative-algorithm DSPARK \\\n  --speculative-draft-model-path LiquidAI/LFM2.5-2.6B-DSpark \\\n  --speculative-draft-attention-backend flashinfer \\\n  --disable-radix-cache --mem-fraction-static 0.75 --port 30000\n</code></pre>\n  <p>然后查询位于 http://localhost:30000/v1 的 OpenAI 兼容端点。块大小从草稿模型的 config.json 中读取；基线是去掉三个 --speculative-* 标志后的相同命令。</p>\n  <p>使用 llama.cpp 运行它们需要相应的 llama.cpp 构建版本（PR#27383）。</p>\n  <pre><code>llama-server -m LFM2.5-2.6B-F16.gguf \\\n  -md LFM2.5-2.6B-DSpark-F16.gguf \\\n  --spec-type draft-dspark --spec-draft-n-max 10 --spec-draft-n-min 0 \\\n  -fa on -ngl 99\n</code></pre>\n  <p>块大小从 sidecar 元数据中读取（n-max 会被限制在该值内）。投机解码是精确的：目标模型会验证每一个提议的 token，因此贪婪解码的输出与单独运行目标模型完全一致；每次响应的计时报告会显示 draft_n / draft_n_accepted。</p>\n  <p>DSpark 草稿模型检查点已在 Hugging Face 上以 Safetensors 和 GGUF 格式提供：</p>\n  <ul>\n   <li>Safetensors：LFM2.5-2.6B-DSpark、LFM2.5-1.2B-Instruct-DSpark 和 LFM2.5-8B-A1B-DSpark</li>\n   <li>GGUF：LFM2.5-2.6B-DSpark-GGUF、LFM2.5-1.2B-Instruct-DSpark-GGUF、LFM2.5-8B-A1B-DSpark-GGUF</li>\n  </ul>\n  <p>我们迫不及待想看到你的成果。</p>\n  <h2>引用</h2>\n  <p>如需引用，请使用以下参考文献或 BibTeX：</p>\n  <p>Liquid AI 发布“LFM2.5-DSpark：从 H100 到 MacBook，推理速度最高提升 3.2 倍”，Liquid AI 博客，2026 年 8 月。</p>\n  <pre><code>@article{liquidAI2026dspark,\n  author = {Liquid AI},\n  title = {LFM2.5-DSpark: Up to 3.2x Faster Inference from H100 to MacBook},\n  journal = {Liquid AI Blog},\n  year = {2026},\n  note = {www.liquid.ai/blog/lfm2.5-dspark},\n}\n</code></pre>\n </body>\n</html>",
+  "aiSummary": "Liquid AI 发布 LFM2.5 系列 DSpark 草稿模型，通过投机解码在 H100 上最高提速 3.18 倍、MacBook 上提速 2.87 倍，且首日支持 llama.cpp 与 SGLang，输出质量不变。",
+  "oneSentenceSummary": "Liquid AI 发布 LFM2.5 系列 DSpark 草稿模型，通过投机解码在 H100 上最高提速 3.18 倍、MacBook 上提速 2.87 倍，且首日支持 llama.cpp 与 SGLang，输出质量不变。",
+  "summary": "文章介绍 Liquid AI 为 LFM2.5 系列三款模型（1.2B、2.6B、8B-A1B MoE）发布的 DSpark 草稿模型。DSpark 基于并行主干、马尔可夫头与置信度调度验证器，以约 3 亿参数的草稿模型换取大幅解码加速。实测显示：LFM2.5-2.6B 在 MacBook M4 Max 上达 ~140 tok/s，函数调用延迟降低 57%；8B-A1B 在 H100 上峰值加速 3.18 倍，但在端侧受限于 MoE 实现仅提升 18%。文中提供 SGLang 与 llama.cpp 的完整启动命令、模型下载链接及基准数据表，确认贪心解码下输出与基线完全一致。",
+  "mainPoints": [
+    {
+      "point": "DSpark 以极小参数量（~3 亿）草稿模型实现大幅加速且不损精度。",
+      "explanation": "草稿模型采用 5 层注意力主干 + 马尔可夫头 + 置信度验证器，在贪心解码下仅接受与目标模型分布一致的 token，数学上保证输出分布不变。"
+    },
+    {
+      "point": "不同规模模型的加速收益差异显著，端侧表现最优的是 2.6B 稠密模型。",
+      "explanation": "2.6B 在 MacBook 上平均提速 2.27 倍（~140 tok/s），函数调用延迟降 57%；8B MoE 在 H100 峰值 3.18 倍但端侧仅 1.18 倍，受限于 llama.cpp Metal 后端 MoE 实现与专家激活开销。"
+    },
+    {
+      "point": "首日即支持主流推理框架，部署门槛低。",
+      "explanation": "提供 SGLang（需 PR #31041）与 llama.cpp（需 PR #27383）的完整启动示例，模型以 Safetensors 与 GGUF 双格式发布，开箱即用。"
+    },
+    {
+      "point": "训练策略强调接受率而非损失，数据混合覆盖 SFT、代码与函数调用。",
+      "explanation": "草稿模型在多样化数据上训练 15 epoch，按接受率选最佳 epoch，而非传统最低损失，直接对齐推理加速目标。"
+    }
+  ],
+  "keyQuotes": [
+    "投机解码通过使用轻量级草稿模型生成候选 token，然后由目标模型在单次前向传播中一次性验证所有候选 token 来解决这一问题，从而将加载权重的成本分摊到我们验证的所有 token 上。",
+    "生成的序列在构造上与基线贪心解码完全一致，所以基准测试的准确率（pass@1 或精确匹配）保持不变。"
+  ],
+  "tags": [
+    "LLM",
+    "推理优化",
+    "投机解码",
+    "DSpark",
+    "LFM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 78,
+  "wordCount": 2346,
+  "domain": "aihot.virxact.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787244777000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-21 00:52:57"
+}

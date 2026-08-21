@@ -1,0 +1,52 @@
+{
+  "id": "RAW_b2f11ba948",
+  "title": "利奥波德的愚行",
+  "url": "https://garymarcus.substack.com/p/leopolds-folly",
+  "date": "2026-08-21 01:16:59",
+  "author": "Gary Marcus",
+  "siteName": "Marcus on AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <p><span>Before I get to what I am going to call </span><em>Leopold’s Folly</em><span>, let’s talk about </span><a href=\"https://en.wikipedia.org/wiki/Check_kiting\">check-kiting</a><span>, a classic scam that has been on my mind. Wikipedia has a nice summary. </span></p>\n   <div class=\"captioned-image-container\">\n    <figure>\n     <a target=\"_blank\" href=\"https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png\" data-component-name=\"Image2ToDOM\" class=\"image-link image2 is-viewable-img can-restack\"> \n      <div class=\"image2-inset\">\n       <picture><source type=\"image/webp\" srcset=\"https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 424w, https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 848w, https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 1272w, https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 1456w\" sizes=\"100vw\"><img src=\"https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1385,&quot;width&quot;:1447,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:405325,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://garymarcus.substack.com/i/211905585?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" alt srcset=\"https://media.bestblogs.dev/20260820202540_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 424w, https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 848w, https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 1272w, https://media.bestblogs.dev/20260820202541_d9e7eb79-b008-49df-8eab-c351c2b5db24_1447x1385.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\" class=\"sizing-normal\"></picture>\n       <div class=\"image-link-expand\">\n        <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image\"></button>\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2\">\n           <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n          </svg>\n         </button>\n        </div>\n       </div>\n      </div> \n     </a>\n    </figure>\n   </div>\n   <p>I am not saying that the generative AI industry is literally check-kiting. If Masa wants to take out loans on his OpenAI shares in order to buy more OpenAI shares, he’s entitled to do that. And I don’t think it’s blatant fraud the way that check-kiting is, where people know from the outset that the promises to pay will never bear out.</p>\n   <p>But we certainly see circular elements that are reminiscent of check-kiting:</p>\n   <div class=\"captioned-image-container\">\n    <figure>\n     <a target=\"_blank\" href=\"https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png\" data-component-name=\"Image2ToDOM\" class=\"image-link image2 is-viewable-img can-restack\"> \n      <div class=\"image2-inset\">\n       <picture><source type=\"image/webp\" srcset=\"https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 424w, https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 848w, https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 1272w, https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 1456w\" sizes=\"100vw\"><img src=\"https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1599,&quot;width&quot;:1079,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:1357546,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://garymarcus.substack.com/i/211905585?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" alt srcset=\"https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 424w, https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 848w, https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 1272w, https://media.bestblogs.dev/20260820202541_dac5f1b9-2fee-4b9c-be8c-0b3a99ee8868_1079x1599.png 1456w\" sizes=\"100vw\" class=\"sizing-normal\"></picture>\n       <div class=\"image-link-expand\">\n        <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image\"></button>\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2\">\n           <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n          </svg>\n         </button>\n        </div>\n       </div>\n      </div> \n     </a>\n    </figure>\n   </div>\n   <p>And it’s not clear that all the debts that are being issued can actually be paid off. They are all extraordinarily speculative. Maybe there will be trillions of dollars in profits at the end of the rainbow, but maybe not.</p>\n   <p>Still, we need a different analysis.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Gary Marcus 批评生成式 AI 行业的财务结构，将循环资金动态比作空头支票，并质疑投机债务的可持续性。",
+  "oneSentenceSummary": "Gary Marcus 批评生成式 AI 行业的财务结构，将循环资金动态比作空头支票，并质疑投机债务的可持续性。",
+  "summary": "在这篇文章中，Gary Marcus 使用空头支票 —  — 一种涉及循环支票的欺诈方案 —  — 的类比来描述生成式 AI 行业的资金流动。他指出，像软银创始人孙正义这样的人物可能会以 OpenAI 股份作为抵押借款，然后用这些借款再购买更多股份，从而形成自指循环。虽然他并未指控该行业存在实际欺诈，但 Marcus 认为该行业巨额债务高度投机，若预期的万亿利润未能实现，这些债务可能永远无法偿还。他得出结论：需要一种根本不同的分析框架来评估该行业的真实轨迹。",
+  "mainPoints": [
+    {
+      "point": "AI 行业表现出类似空头支票的循环资金模式。",
+      "explanation": "Marcus 将经典的空头支票诈骗与 AI 中资本流动的方式进行类比，例如以被高估的估值为抵押借款，然后再投资于同一资产。"
+    },
+    {
+      "point": "支撑 AI 繁荣的投机债务可能无法偿还。",
+      "explanation": "巨额投入的资本依赖于高度不确定的未来利润；如果预期的万亿收入未能到来，债务结构可能会崩溃。"
+    },
+    {
+      "point": "需要超越当前炒作驱动叙事的新分析方法。",
+      "explanation": "Marcus 认为表面的类比不够，呼吁对 AI 经济学和风险进行更严谨、结构化的分析。"
+    }
+  ],
+  "keyQuotes": [
+    "我并不是说生成式 AI 行业实际上是在进行空头支票。但我们确实能看到与空头支票相似的循环元素。",
+    "也许在彩虹尽头会有万亿美元的利润，但也可能没有。",
+    "不过，我们仍然需要一种不同的分析。"
+  ],
+  "tags": [
+    "生成式 AI",
+    "AI 商业化",
+    "市场与投资",
+    "科技泡沫",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 149,
+  "domain": "garymarcus.substack.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f6e6074",
+  "sourceName": "Marcus on AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787246219000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-21 01:16:59"
+}
