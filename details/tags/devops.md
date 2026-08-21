@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-21 08:41:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-21 10:55:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -596,25 +596,19 @@
 
 ### [8-月-17-日故障及后续工作](https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/)
 
-2026-08-21 02:36:19 | 标签: DevOps, 云原生 / DevOps, 平台工程, 故障响应, 系统可靠性
-
-> GitHub 于 8 月 17 日发生了一起持续 7 小时 47 分钟的故障，影响了 github.com、身份验证、Actions、API、PR、Issue 以及 Copilot。根因是中央美国数据中心的一个关键基础设施组件无法随新的流量峰值扩容，导致级联容量压力。此次故障和 8 月 6 日的故障均未涉及代码或配置变更，均为纯容量故障。自 4 月以来，月度提交数从 14 亿增长至 29 亿。GitHub 已新增 300 万个 CPU 核心、120 PB 高速存储，并加速 Azure 迁移：Azure 现承担约 58% 的平台负载及一半的 Git 操作（5 月仅 12%）。面向线性读扩展的新架...
+2026-08-21 02:36:19
 
 
 
 ### [公告-xorg-server-26.0.99.901](https://lists.x.org/archives/xorg-announce/2026-August/003741.html)
 
-2026-08-20 20:50:16 | 标签: X 窗口系统, 显示服务器, Linux 图形, Meson 构建, Xorg
-
-> Alan Coopersmith 在 xorg-announce 邮件列表上宣布了 xorg-server 26.1.0 的首个发行候选版。该发行版在 21.1 系列之后标志着重要里程碑，包含所有非 Xwayland 服务器（Xorg、Xephyr、Xnest、Xvfb、Xwin、Xquartz）。主要更改包括：完全移除 autoconf/automake，转而使用 Meson；支持 DPMS 1.2 和 XFixes 6.1；默认禁用字节序交换的客户端和字体服务器连接；为 BSD 添加 DRM 平台；日志文件迁移至 $XDG_STATE_HOME/xorg；Xvfb 获得多 CRTC 支持并...
+2026-08-20 20:50:16
 
 
 
 ### [Microsoft-发布-Aspire-13.5，带来全新仪表板与工作流改进](https://www.infoq.com/news/2026/08/dotnet-aspire-13-5-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-20 16:07:00 | 标签: .NET, Aspire, 云原生, DevOps, 开发工具
-
-> InfoQ 报道了 Microsoft 发布 .NET Aspire 13.5，这是一个云原生应用开发框架。此次更新聚焦开发者体验改进：仪表板进行视觉刷新，增加无障碍检查、大小写不敏感日志搜索、时间戳筛选、更友好的健康检查消息。交互服务新增文件导入（JSON/YAML）、带取消功能的进度对话框，以及供仪表板和 CLI 使用的命名参数。实验性终端现可通过 WithTerminal() 嵌入仪表板。TypeScript AppHost 达到正式版，与 C# 功能对齐，包含自定义健康检查、容器文件复制、HTTPS 开发者证书。部署改进包括为 Kubernetes 工作负载建模持久卷，以及跨订阅和租户...
+2026-08-20 16:07:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-21 08:41:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-21 10:55:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -740,17 +740,13 @@
 
 ### [跑吧，Rob，跑：使用-Three.js-和-WebGPU-构建音乐反应的黏液](https://tympanus.net/codrops/2026/08/20/run-rob-run-building-a-music-reactive-goo-with-three-js-and-webgpu/)
 
-2026-08-20 21:35:23 | 标签: Three.js, WebGPU, 创意编程, 音频响应, 交互式可视化
-
-> 文章描述了个人作品集中心作品的创作：一个反应式的 "goo" 对象，它可以闲置、响应音乐、对悬停作出反应，并在用户滚动时从有机球体转变为结构化的立方体。文章解释了使用 Three.js/WebGPU 的分层网格构建场景结构，详细说明滚动状态如何驱动有机球体与立方体投影之间的形态变化，音乐反应如何被过滤以突出低端鼓点和中段拍手声，同时抑制高频瞬态，以及独立的阻尼曲线如何赋予运动重量和质感。文章还介绍了由悬停触发的表面细节（网格读数和动画尘埃），性能方面的考虑，如预计算噪声和错位更新，以及可访问性防护措施，例如用户可控制的音乐和降低运动的后备方案。全文中，作者强调克制和有意的设计选择，使视觉呈现出...
+2026-08-20 21:35:23
 
 
 
 ### [Next.js-16.3：Instant-Navigations，开发内存占用最高减少-90%，构建速度更快](https://www.infoq.com/news/2026/08/vercel-next-js-16-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-20 20:04:00 | 标签: Next.js, React, 性能优化, Turbopack, TypeScript 7
-
-> Vercel 的 Next.js 16.3 更新聚焦于性能和开发者体验。得益于默认磁盘缓存和新的内存驱逐功能，Turbopack 现在在 `next dev` 期间最多可减少 90% 的内存使用，真实案例显示 Vercel 仪表盘从 21.5GB 降至 2GB，早期采用者从约 4GB 降至 1.5GB。得益于相同的磁盘缓存，重复执行 `next build` 的速度最多可提升 5.5 倍；添加 `typescript@^7` 后，可以使用 TypeScript 7（原生移植版本，据称速度快约十倍）。服务端渲染已基于原生 Node.js 流重写，在高负载下可多处理 22% 的请求，同时这也导致 ...
+2026-08-20 20:04:00
 
 
 
