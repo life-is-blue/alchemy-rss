@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-22 08:38:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-22 10:48:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -740,9 +740,7 @@
 
 ### [GitHub---yaroslav/kino：面向-Ruby-4.0+-的高性能-Ractor-Web-服务器，基于-Rack-3，采用-Rust-Tokio/Hyper-前端与-Ractor-并行-Ruby-工作进程及线程回退模式](https://github.com/yaroslav/kino)
 
-2026-08-21 19:06:25 | 标签: Ruby, Web 服务器, 性能, Ractor, Rust
-
-> Kino 是一款面向 Ruby 4.0+ 的 Web 服务器，使用 Ractor 在单进程内实现真正的并行执行，避免了 Puma 每核 fork 模型的内存开销。Rust 前端（Tokio + Hyper）处理网络通信，Ractor 工作进程并行运行 Rack 3 应用。在 AWS c7a.2xlarge 上的基准测试显示，Kino ractor 模式在 I/O 轻量端点上的吞吐量达到 Puma 的 1.5-2 倍，在 CPU 密集型任务上提升 30% 以上；内存方面，合成应用节省约 7 倍，Rails 节省约 4 倍（采用线程回退模式，因为 Rails 尚未支持 Ractor 共享）。服务器...
+2026-08-21 19:06:25
 
 
 
