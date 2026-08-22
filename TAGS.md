@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-22 06:14:36 | [返回首页](/README.md)
+**更新时间**: 2026-08-22 08:38:53 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15051)
+- [AI & 大模型](#ai-llm) (15093)
 - [软件架构](#architecture) (24)
-- [前端与全栈](#frontend-fullstack) (944)
-- [DevOps](#devops) (715)
-- [产品与商业](#product-business) (46)
-- [其他](#other) (6645)
+- [前端与全栈](#frontend-fullstack) (945)
+- [DevOps](#devops) (718)
+- [产品与商业](#product-business) (47)
+- [其他](#other) (6661)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [V4-Flash-Vision-Exp-上线，开启多模态-API-服务](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26) - AI 精选
 - [GitHub---Chong169/a-constitution-for-one:-个人-AI-代理舰队七个月书面宪法治理，零事故](https://github.com/Chong169/a-constitution-for-one) - AI 精选
 - [设计一种持久化的知识层，拒绝随意猜测](https://towardsdatascience.com/designing-a-persistent-knowledge-layer-that-refuses-to-guess/) - AI 精选
 - [Multi-Agent-的新趋势：从-Agent-Team-到-Agent-Swarm](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518293&idx=1&sn=dc3d001cf756fd83a7cdf2fbdf177582) - AI 精选
@@ -41,9 +42,8 @@
 - [Gemini-Robotics-ER-2-发布](https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/) - AI 精选
 - [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6) - AI 精选
 - [智能体-AI-时代的科学计算](https://openai.com/index/scientific-computing-agentic-ai) - AI 精选
-- [Codex-从-0-到-1000-万用户：构建-ChatGPT-Work-—-与-OpenAI-的-Akshay-Nathan-对话](https://www.latent.space/p/chatgpt-work) - AI 精选
 
-- [查看全部 15051 篇...](/details/tags/ai-llm.md)
+- [查看全部 15093 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 - [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 944 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 945 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 715 篇...](/details/tags/devops.md)
+- [查看全部 718 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -148,6 +148,7 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [为什么两种情绪会产生完全相同的生物信号](https://www.freecodecamp.org/news/how-wearables-confuse-different-emotions/) - 编程 更多
 - [Vercel-Connect-现在支持通过-CLI-为-100+-个连接器进行设置---Vercel](https://vercel.com/changelog/vercel-cli-100-services) - 编程 更多
 - [Release-0.12.0-·-astral-sh/uv](https://github.com/astral-sh/uv/releases/tag/0.12.0) - 编程 更多
 - [微型-SaaS-已死，取而代之的是“服务+软件”模式-—-Adrien-Gonin](https://adriengonin.com/writing/service-with-a-software/) - 编程 更多
@@ -157,9 +158,8 @@
 - [深入-GitHub-Advisory-Database：当漏洞数量打破纪录时发生了什么](https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/) - 编程 更多
 - [Eliya-25-为-OpenJDK-25-LTS-带来-JVM-级诊断配置](https://www.infoq.com/news/2026/06/eliya-jvm-diagnostic-profile/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [如何使用-TanStack-Start、Elysia-和-Neon-构建全栈-SaaS-应用](https://www.freecodecamp.org/news/full-stack-saas-tanstack-start-elysia-neon/) - 编程 更多
-- [MySQL，InnoDB-的高并发，究竟是不是因为-MVCC？（第-5-讲，长文收藏）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651979807&idx=1&sn=8f513fa8345d591dec03f94ecfba23b4) - 编程 更多
 
-- [查看全部 46 篇...](/details/tags/product-business.md)
+- [查看全部 47 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 - [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 
-- [查看全部 6645 篇...](/details/tags/other.md)
+- [查看全部 6661 篇...](/details/tags/other.md)
 
 

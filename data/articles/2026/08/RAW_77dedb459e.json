@@ -1,0 +1,55 @@
+{
+  "id": "RAW_77dedb459e",
+  "title": "教程：在 SQL 表中使用 Snowflake Cortex 实现原生生成式 AI",
+  "url": "https://dev.to/bixtecnologia/tutorial-ia-generativa-nativa-nas-suas-tabelas-sql-com-snowflake-cortex-oag",
+  "date": "2026-08-22 02:52:10",
+  "author": "BIX",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Até pouco tempo atrás, se você quisesse fazer análise de sentimento em 1 milhão de reviews de clientes, precisava extrair os dados do <strong><a href=\"https://bixtecnologia.com.br/bigquery-redshift-snowflake-comparativo-tecnico/\" target=\"_blank\" rel=\"noopener noreferrer\">Data Warehouse</a></strong>, passar por um <strong>script Python</strong>, bater na <strong>API</strong> da <strong>OpenAI</strong> e devolver o resultado pro banco.</p>\n  <p>Isso é lento, caro e um pesadelo de segurança. Com o <strong><a href=\"https://bixtecnologia.com.br/snowflake-cortex-analytics-ia-2026/\" target=\"_blank\" rel=\"noopener noreferrer\">Snowflake Cortex</a></strong>, a IA foi trazida para o banco. Você roda modelos fundacionais (Llama 3, Mistral) usando funções <strong><a href=\"https://bixtecnologia.com.br/solucoes-sql-server/\" target=\"_blank\" rel=\"noopener noreferrer\">SQL</a></strong> simples, direto na tabela.\n   <br>\n   Neste hands-on, vou mostrar 3 funções prontas para uso no seu ambiente Snowflake.</p>\n  <h2><a name=\"1-snowflakecortexsentiment-an%C3%A1lise-direta\" href=\"#1-snowflakecortexsentiment-an%C3%A1lise-direta\"> </a> 1. SNOWFLAKE.CORTEX.SENTIMENT (Análise Direta)</h2>\n  <p>Sem precisar de prompt. Você joga a string de texto e ele devolve um score de -1 (negativo) a 1 (positivo).</p>\n  <p>SQL\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight sql\"><code><span class=\"k\">SELECT</span> \n    <span class=\"n\">id_review</span><span class=\"p\">,</span>\n    <span class=\"n\">texto_review</span><span class=\"p\">,</span>\n    <span class=\"n\">SNOWFLAKE</span><span class=\"p\">.</span><span class=\"n\">CORTEX</span><span class=\"p\">.</span><span class=\"n\">SENTIMENT</span><span class=\"p\">(</span><span class=\"n\">texto_review</span><span class=\"p\">)</span> <span class=\"k\">as</span> <span class=\"n\">score_sentimento</span>\n<span class=\"k\">FROM</span> <span class=\"n\">raw_reviews</span>\n<span class=\"k\">WHERE</span> <span class=\"n\">data_review</span> <span class=\"o\">=</span> <span class=\"k\">CURRENT_DATE</span><span class=\"p\">();</span>\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <h2><a name=\"2-snowflakecortextranslate-tradu%C3%A7%C3%A3o-em-batch\" href=\"#2-snowflakecortextranslate-tradu%C3%A7%C3%A3o-em-batch\"> </a> 2. SNOWFLAKE.CORTEX.TRANSLATE (Tradução em Batch)</h2>\n  <p>Ideal para normalizar logs de sistemas globais ou tickets de suporte de diferentes idiomas para o inglês, direto na pipeline dbt.</p>\n  <p>SQL\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight sql\"><code><span class=\"k\">SELECT</span> \n    <span class=\"n\">id_ticket</span><span class=\"p\">,</span>\n    <span class=\"n\">SNOWFLAKE</span><span class=\"p\">.</span><span class=\"n\">CORTEX</span><span class=\"p\">.</span><span class=\"k\">TRANSLATE</span><span class=\"p\">(</span><span class=\"n\">descricao_chamado</span><span class=\"p\">,</span> <span class=\"s1\">'pt'</span><span class=\"p\">,</span> <span class=\"s1\">'en'</span><span class=\"p\">)</span> <span class=\"k\">as</span> <span class=\"n\">descricao_ingles</span>\n<span class=\"k\">FROM</span> <span class=\"n\">suporte_latam</span><span class=\"p\">;</span>\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <h2><a name=\"3-snowflakecortexcomplete-infer%C3%AAncia-customizada\" href=\"#3-snowflakecortexcomplete-infer%C3%AAncia-customizada\"> </a> 3. SNOWFLAKE.CORTEX.COMPLETE (Inferência Customizada)</h2>\n  <p>Aqui é onde a mágica do LLM acontece. Você escolhe o modelo e passa o prompt para criar categorias, resumos ou extrair JSON.</p>\n  <p>SQL\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight sql\"><code><span class=\"k\">SELECT</span> \n    <span class=\"n\">nome_produto</span><span class=\"p\">,</span>\n    <span class=\"n\">SNOWFLAKE</span><span class=\"p\">.</span><span class=\"n\">CORTEX</span><span class=\"p\">.</span><span class=\"n\">COMPLETE</span><span class=\"p\">(</span>\n        <span class=\"s1\">'llama3-8b'</span><span class=\"p\">,</span> <span class=\"c1\">-- Escolhendo o modelo</span>\n        <span class=\"n\">CONCAT</span><span class=\"p\">(</span><span class=\"s1\">'Crie uma descrição de marketing de 2 linhas para o produto: '</span><span class=\"p\">,</span> <span class=\"n\">nome_produto</span><span class=\"p\">)</span>\n    <span class=\"p\">)</span> <span class=\"k\">as</span> <span class=\"n\">descricao_marketing</span>\n<span class=\"k\">FROM</span> <span class=\"n\">dim_produtos</span><span class=\"p\">;</span>\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>Você não precisou gerenciar chaves de <strong><a href=\"https://bixtecnologia.com.br/design-de-apis-vantagem-competitiva/\" target=\"_blank\" rel=\"noopener noreferrer\">API</a></strong>, não precisou lidar com timeout de rede e seus dados sensíveis nunca saíram do perímetro governado do seu Data Warehouse.</p>\n </body>\n</html>",
+  "aiSummary": "本文展示三项 Snowflake Cortex 的即用功能（情感分析、翻译和文本生成），可直接在 SQL 中执行生成式 AI，无需离开数据仓库。",
+  "oneSentenceSummary": "本文展示三项 Snowflake Cortex 的即用功能（情感分析、翻译和文本生成），可直接在 SQL 中执行生成式 AI，无需离开数据仓库。",
+  "summary": "本文提供一个实践性教程，介绍如何通过 Snowflake Cortex 的三个功能将原生生成式 AI 集成到 SQL 表中。这种方法消除了将数据提取到 Python 脚本并调用外部 API 的必要性，从而降低了延迟、成本和安全风险。展示的功能包括：SNOWFLAKE.CORTEX.SENTIMENT 用于批量情感分析，SNOWFLAKE.CORTEX.TRANSLATE 用于多语言票据的批量翻译，以及 SNOWFLAKE.CORTEX.COMPLETE 用于通过如 Llama 3 等模型进行定制化推理。作者强调，敏感数据始终留在数据仓库的治理边界内，无需管理 API 密钥或处理网络超时问题。",
+  "mainPoints": [
+    {
+      "point": "可以直接通过 SQL 在数据仓库中执行生成式 AI，无需提取到 Python。",
+      "explanation": "Snowflake Cortex 将基础模型（如 Llama 3、Mistral）引入数据库，消除了传统的数据提取、脚本处理和调用外部 API 的流程。"
+    },
+    {
+      "point": "SNOWFLAKE.CORTEX.SENTIMENT 可以批量进行情感分析，无需提示工程。",
+      "explanation": "仅需传入文本字符串即可获得 -1 到 1 的评分，适合一次处理数千条评论。"
+    },
+    {
+      "point": "SNOWFLAKE.CORTEX.TRANSLATE 适用于数据管道中的多语言标准化。",
+      "explanation": "可直接在 dbt 管道中翻译支持票据或全球系统日志，无需依赖外部服务。"
+    },
+    {
+      "point": "SNOWFLAKE.CORTEX.COMPLETE 支持自定义推理，允许选择模型和提示。",
+      "explanation": "用户可选择模型（如 llama3-8b）并定义提示以从表中创建分类、摘要或提取 JSON 数据。"
+    }
+  ],
+  "keyQuotes": [
+    "有了 Snowflake Cortex，AI 已被引入数据库。您可以通过简单的 SQL 函数直接在表中运行基础模型。",
+    "您不需要管理 API 密钥，也不需要处理网络超时问题，您敏感的数据从未离开过数据仓库的治理边界。"
+  ],
+  "tags": [
+    "Snowflake Cortex",
+    "SQL",
+    "生成式 AI",
+    "机器学习",
+    "数据分析"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 78,
+  "wordCount": 261,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787338330000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-22 02:52:10"
+}

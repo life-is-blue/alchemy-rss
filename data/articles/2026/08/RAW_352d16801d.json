@@ -1,0 +1,51 @@
+{
+  "id": "RAW_352d16801d",
+  "title": "发布：llm 0.32.1",
+  "url": "https://simonwillison.net/2026/Aug/21/llm/",
+  "date": "2026-08-22 01:16:13",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">21st August 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm/releases/tag/0.32.1\">llm 0.32.1</a></span> <span class=\"beat-commit\">— Access large language models from the command-line</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of <code>httpx</code>, and it turned out LLM depended on that library but only installed it via a transitive <code>openai</code> dependency.</p>\n      <p>This dot-release fixes that for the moment by pinning to <code>openai&lt;3</code>, and a soon-to-drop 0.33 release will switch from <code>httpx</code> to <a href=\"https://github.com/pydantic/httpx2\">httpx2</a>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4872/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "LLM 0.32.1 通过将 openai 固定为 <3，修复了因 OpenAI 移除 httpx 而导致的安装失败；0.33 将迁移到 httpx2。",
+  "oneSentenceSummary": "LLM 0.32.1 通过将 openai 固定为 <3，修复了因 OpenAI 移除 httpx 而导致的安装失败；0.33 将迁移到 httpx2。",
+  "summary": "LLM 命令行工具的 0.32.1 版本解决了一个回归问题：OpenAI Python 库停止依赖 httpx 后，LLM 的全新安装失败，因为 LLM 此前只是通过 openai 的传递依赖来安装 httpx。修复方式是将 openai 包固定为低于 3 的版本以保留 httpx，而即将发布的 0.33 版本将迁移到更新的 httpx2 库。",
+  "mainPoints": [
+    {
+      "point": "该版本修复了 OpenAI 从其库中移除 httpx 导致的问题。",
+      "explanation": "LLM 仅通过 openai 依赖间接使用 httpx；将 openai 固定为 <3 可为现有安装恢复所需的 httpx 版本。"
+    },
+    {
+      "point": "它暂时将 openai 包固定为 <3 版本。",
+      "explanation": "这可确保使用仍捆绑 httpx 的旧版 openai，在长期修复方案推出前避免安装失败。"
+    },
+    {
+      "point": "即将发布的 0.33 将迁移到 httpx2。",
+      "explanation": "LLM 计划采用持续维护的 httpx2 分支，从而不再依赖经由 openai 引入的已弃用 httpx。"
+    }
+  ],
+  "keyQuotes": [
+    "前几天，LLM 的全新安装突然无法工作，原因是 OpenAI Python 库停止使用 `httpx`，而 LLM 恰好依赖该库，却只通过 `openai` 的传递依赖来安装它。",
+    "这个补丁版本暂时通过固定到 `openai<3` 来修复该问题，即将发布的 0.33 版本将从 `httpx` 切换到 [httpx2]。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "OpenAI",
+    "依赖管理",
+    "软件发布"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 69,
+  "wordCount": 73,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787332573000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-22 01:16:13"
+}
