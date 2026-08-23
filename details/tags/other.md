@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-23 08:39:44 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-23 11:00:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -39457,17 +39457,13 @@
 
 ### [深入-DeepWiki：Cognition-如何为-Devin-大规模构建代码-Wiki](https://www.youtube.com/watch?v=u8Im0l_vwqM)
 
-2026-08-22 00:00:14 | 标签: 代码库智能, DeepWiki, 上下文工程, 编程智能体, 智能体搜索
-
-> Cognition 的 Jacob 介绍了 DeepWiki 如何从 Devin 的内部上下文系统，发展为覆盖约 140 万个代码仓库、处理超过 2000 万次查询的公共产品。其核心判断是：目录结构决定 Wiki 质量。系统先根据目录结构、符号图、Git 历史和运行时信号，量化文件的重要性及相互关系，再聚类为关键系统，用于生成目录并并行撰写页面。Wiki v2 保留这张评分后的代码仓库图，但把 v1 中大量严格控制的编排交给自适应智能体，由它按需调用额外聚类或文件评分工具。Cognition 会评估活跃文件覆盖率、引用深度与质量、Wiki 规模和仓库规模的匹配程度，以及真实用户价值。预计算 W...
+2026-08-22 00:00:14
 
 
 
 ### [Uber-的智能体-SDLC：从编码智能体到可治理的软件工厂](https://www.youtube.com/watch?v=17-YSUHo6Lk)
 
-2026-08-21 21:00:06 | 标签: 智能体 SDLC, 软件工厂, MCP 网关, 上下文图谱, 编码智能体
-
-> Uday Kiran Medisetty 和 Adam Huda 介绍了 Uber 如何将分散的 AI 编码辅助升级为受控的软件工厂。平台以模型网关为起点，为每天超过 1 亿次模型请求统一提供身份认证、PII 脱敏、安全策略、延迟约束、调用归因、审计和成本控制。MCP 网关开放超过 1000 个内部及 SaaS 工具，并借助 Omni MCP、CLI 投射与代码模式技能降低上下文消耗。预置 Devpod 环境让智能体在几秒内开始跨仓库工作，技能市场则治理 2500 个可复用技能，并将执行轨迹反馈给持续评估体系。包含 4000 万条记录的上下文图谱连接代码、负责人、设计文档、事故、Jira 与数...
+2026-08-21 21:00:06
 
 
 
@@ -39981,11 +39977,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 

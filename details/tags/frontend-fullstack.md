@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-23 08:39:44 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-23 11:00:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -740,9 +740,7 @@
 
 ### [VoidZero-发布-Vite+-Beta：一条命令背后的统一-Web-工具链](https://www.infoq.com/news/2026/08/vite-plus-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-22 14:32:00 | 标签: Vite+, Web 工具链, 前端与 Web, DevOps, 任务运行器
-
-> VoidZero 由 Vite 和 Vue 的创造者尤雨溪创立，宣布推出 Vite+ 的 Beta 版。Vite+ 是一套一体化工具链，旨在通过将运行时、包管理器以及核心前端工具统一到一条 `vp` 命令之下，简化 Web 开发。该工具链结合了用于开发服务器的 Vite 8、用于测试的 Vitest、用于打包的 Rolldown、用于库打包的 tsdown、用于代码检查和格式化的 Oxlint 与 Oxfmt，以及一个面向 monorepo 任务的缓存感知任务运行器。`vp dev`、`vp check`、`vp test`、`vp build`、`vp pack` 和 `vp run` 等命...
+2026-08-22 14:32:00
 
 
 
