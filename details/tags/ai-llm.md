@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-23 06:13:16 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-23 08:39:44 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -50646,6 +50646,22 @@
 
 
 
+### [SafeChat:-Building-AI-Powered-Safety-Systems-at-Scale-in-a-Real-Time-Marketplace](https://www.infoq.com/presentations/doordash-llm-ai-moderation-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-08-22 19:00:00 | 标签: AI 安全, LLM, 系统设计, 内容审核, 实时系统
+
+> 本次演讲介绍了 DoorDash 如何构建 SafeChat，这是他们市场平台的 AI 驱动安全审核系统。面对每天 400 万条聊天消息且需满足亚秒级延迟要求，他们拒绝了简单直接的 LLM 仅做方案，因为成本（每天 400 万次调用）和延迟（每次调用 2-10 秒）过高。相反，他们构建了一个两层架构：一款低成本、快速的内部分类器（第 90 百分位延迟 <100 毫秒），用于识别明显安全的消息；随后对剩余消息（不到 10% 的流量）使用 LLM 进行多维度评分（威胁、粗俗、性感），而非简单的二分类。这种评分方式实现了根据严重程度进行渐进式处理—— censoring 粗话、 blocking 侮...
+
+
+
+### [软件再无理由慢下来](https://danluu.com/perf-opt/)
+
+2026-08-22 09:06:17 | 标签: 软件优化, AI编码, 性能工程, 代理驱动开发, 代码生成
+
+> 文章探讨了 AI 驱动的编码代理如何通过使传统昂贵专业化技术普惠所有开发者，从而革新软件性能优化领域。以 FRE 正则引擎、游戏 AI 优化及 Anthropic 性能案例为例，作者展示了曾经需要罕见专家周工时完成的工作负载特定优化，如今可通过简单提示在数分钟内实现。核心观点包括：适配特定工作负载的动态定制软件可行性、复杂优化（如 JIT 编译、多线程）的入门壁垒大幅降低，以及短期查询速度与长期性能收益的权衡。作者同时讨论了过度拟合训练数据风险及严格实验设计的必要性，但强调 AI 代理在有界优化问题上已超越经验工程师。附录涉及性能测量挑战及现实世界 ripgrep 使用模式分析。
+
+
+
 ### [Ora-如何在-Vercel-上对每个主流-AI-智能体进行基准测试-|-客户案例-|-Vercel](https://vercel.com/blog/how-ora-benchmarks-every-major-ai-agent-on-vercel)
 
 2026-08-22 05:00:00
@@ -50796,7 +50812,7 @@
 
 
 
-### [Vibe-check：你的-AI-产品真的能落地吗](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651291204&idx=4&sn=e0f41b031d1d89a242efc18476275745)
+### [“Anthropic-不再是-AI-圈的信仰”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651291204&idx=1&sn=cdb576093823000dbe963bb8869cc881)
 
 2026-08-20 16:26:00
 
@@ -50808,7 +50824,7 @@
 
 
 
-### [“Anthropic-不再是-AI-圈的信仰”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651291204&idx=1&sn=cdb576093823000dbe963bb8869cc881)
+### [Vibe-check：你的-AI-产品真的能落地吗](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651291204&idx=4&sn=e0f41b031d1d89a242efc18476275745)
 
 2026-08-20 16:26:00
 
@@ -50868,25 +50884,25 @@
 
 
 
-### [Agent-Plan-x-DeepSeek-Harness-实践指南](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=1&sn=e11bc1ebfc05563e0d0ab2d5d47835b5)
-
-2026-08-19 18:04:00
-
-
-
 ### [ADrive-智能网盘：让-ArkClaw-的每一份产物，从「临时文件」变成「长期资产」](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=2&sn=0f9e1f1fc0b9613c809dd6014c82e3ca)
 
 2026-08-19 18:04:00
 
 
 
-### [机器人开发的新入口：科沃斯八界全栈开源，开发者能做什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834508&idx=1&sn=c50f362cd5c22d1017e57a9813aa6045)
+### [Agent-Plan-x-DeepSeek-Harness-实践指南](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=1&sn=e11bc1ebfc05563e0d0ab2d5d47835b5)
+
+2026-08-19 18:04:00
+
+
+
+### [AI-正在消灭软件工程师的“中产阶级”！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834508&idx=2&sn=a071fc0ade136301a58ef2e2e7996303)
 
 2026-08-19 17:00:00
 
 
 
-### [AI-正在消灭软件工程师的“中产阶级”！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834508&idx=2&sn=a071fc0ade136301a58ef2e2e7996303)
+### [机器人开发的新入口：科沃斯八界全栈开源，开发者能做什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834508&idx=1&sn=c50f362cd5c22d1017e57a9813aa6045)
 
 2026-08-19 17:00:00
 
@@ -50898,13 +50914,13 @@
 
 
 
-### [从晶圆厂到-Token：市场现状](https://www.infoq.com/presentations/ai-hardware-tokenomics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Cloudflare-WriteGuard-为-MCP-服务器带来细粒度安全控制](https://www.infoq.com/news/2026/08/cloudflare-writeguard-mcp-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-08-19 00:00:00
 
 
 
-### [Cloudflare-WriteGuard-为-MCP-服务器带来细粒度安全控制](https://www.infoq.com/news/2026/08/cloudflare-writeguard-mcp-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从晶圆厂到-Token：市场现状](https://www.infoq.com/presentations/ai-hardware-tokenomics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-08-19 00:00:00
 
@@ -51030,25 +51046,25 @@
 
 
 
-### [智能体适应性适应函数：将进化式架构扩展到确定性规则之外](https://www.infoq.com/articles/agentic-fitness-functions-evolutionary-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
-
-2026-08-17 19:00:00
-
-
-
 ### [智能体-AI-是否会让《幻想曲》中的魔法师学徒梦想成真？与-Tracy-Bannon-的对话](https://www.infoq.com/podcasts/agentic-ai-sorcerers-apprentice/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-08-17 19:00:00
 
 
 
-### [Grafana-的-gcx-和-MCP-Server-正式-GA，面向遥测驱动的智能体开发](https://www.infoq.com/news/2026/08/grafana-mcp-server-telemetry/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [智能体适应性适应函数：将进化式架构扩展到确定性规则之外](https://www.infoq.com/articles/agentic-fitness-functions-evolutionary-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-08-17 19:00:00
+
+
+
+### [商业客户端-Harness-资产管理与应用实践](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607453&idx=1&sn=0d0dc5f97c286cb80c48a42a7bbf654f)
 
 2026-08-17 18:00:00
 
 
 
-### [商业客户端-Harness-资产管理与应用实践](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607453&idx=1&sn=0d0dc5f97c286cb80c48a42a7bbf654f)
+### [Grafana-的-gcx-和-MCP-Server-正式-GA，面向遥测驱动的智能体开发](https://www.infoq.com/news/2026/08/grafana-mcp-server-telemetry/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-08-17 18:00:00
 
@@ -51090,7 +51106,7 @@
 
 
 
-### [Dario-“破防小作文”超千万人围观！LeCun-开炮：信任危机是因为你搞权力集中](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290921&idx=1&sn=d84f5a0487cb075fc591addb1d393160)
+### [DataBuddy：数据语义驱动的企业-Agent-Runtime-设计与落地｜AICon-深圳](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290921&idx=5&sn=3468532f5e7060514eac214faa986832)
 
 2026-08-17 13:40:00
 
@@ -51102,7 +51118,7 @@
 
 
 
-### [DataBuddy：数据语义驱动的企业-Agent-Runtime-设计与落地｜AICon-深圳](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290921&idx=5&sn=3468532f5e7060514eac214faa986832)
+### [Dario-“破防小作文”超千万人围观！LeCun-开炮：信任危机是因为你搞权力集中](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290921&idx=1&sn=d84f5a0487cb075fc591addb1d393160)
 
 2026-08-17 13:40:00
 
@@ -51156,7 +51172,7 @@
 
 
 
-### [AI-智能体开始参与交付，谁来证明它没有“动手脚”？IBM-与-Red-Hat-给出一套新方案](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290850&idx=4&sn=7c534aaecad97dbf6027641bf9eefbb0)
+### [梁神变牢梁的原因找到了！疑似-DeepSeek-发错模型，HF-配置和-API-后台紧急切换](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290850&idx=1&sn=64f7c1d21a212cfc439e90f744bb4343)
 
 2026-08-16 10:15:00
 
@@ -51168,7 +51184,7 @@
 
 
 
-### [梁神变牢梁的原因找到了！疑似-DeepSeek-发错模型，HF-配置和-API-后台紧急切换](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290850&idx=1&sn=64f7c1d21a212cfc439e90f744bb4343)
+### [AI-智能体开始参与交付，谁来证明它没有“动手脚”？IBM-与-Red-Hat-给出一套新方案](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290850&idx=4&sn=7c534aaecad97dbf6027641bf9eefbb0)
 
 2026-08-16 10:15:00
 
@@ -51228,13 +51244,13 @@
 
 
 
-### [智体新境｜Android-全面升级，开发更高效、体验更自适应](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652162640&idx=1&sn=80067c58b896a77d742a519248fa75b9)
+### [智体新境｜Chrome-全新升级，打通智能体-Web-开发闭环](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652162640&idx=2&sn=7ee716f5f486952d78e1f5a09c965ce4)
 
 2026-08-15 17:30:00
 
 
 
-### [智体新境｜Chrome-全新升级，打通智能体-Web-开发闭环](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652162640&idx=2&sn=7ee716f5f486952d78e1f5a09c965ce4)
+### [智体新境｜Android-全面升级，开发更高效、体验更自适应](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652162640&idx=1&sn=80067c58b896a77d742a519248fa75b9)
 
 2026-08-15 17:30:00
 
@@ -51258,7 +51274,7 @@
 
 
 
-### [编程能力提高-50%！GLM-5.3-满分通过了-GPT-5.6-给的-Coding-测试](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290828&idx=1&sn=9df4ad485645f6eb2fe92b02a95145c8)
+### [AI-正在重塑故障处理流程，但棘手问题仍需人类解决](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290828&idx=4&sn=197464e4b3134ed85a778dbbc50669ce)
 
 2026-08-15 10:15:00
 
@@ -51270,7 +51286,7 @@
 
 
 
-### [AI-正在重塑故障处理流程，但棘手问题仍需人类解决](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290828&idx=4&sn=197464e4b3134ed85a778dbbc50669ce)
+### [编程能力提高-50%！GLM-5.3-满分通过了-GPT-5.6-给的-Coding-测试](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290828&idx=1&sn=9df4ad485645f6eb2fe92b02a95145c8)
 
 2026-08-15 10:15:00
 
@@ -51318,13 +51334,13 @@
 
 
 
-### [Linux-内核被-AI-搞“太大了”！Linus-吐槽：AI-找了一堆小-Bug，但这已成为「新常态」](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834317&idx=2&sn=30823713e61e511a7d940ffdb2e57793)
+### [算子筑基，智惠未来｜中国电信星辰杯·高校-AI-算子开发挑战赛报名开启！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834317&idx=1&sn=b34e1c8e04eff178c349ac37a08fb6c4)
 
 2026-08-14 12:00:00
 
 
 
-### [算子筑基，智惠未来｜中国电信星辰杯·高校-AI-算子开发挑战赛报名开启！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834317&idx=1&sn=b34e1c8e04eff178c349ac37a08fb6c4)
+### [Linux-内核被-AI-搞“太大了”！Linus-吐槽：AI-找了一堆小-Bug，但这已成为「新常态」](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834317&idx=2&sn=30823713e61e511a7d940ffdb2e57793)
 
 2026-08-14 12:00:00
 
@@ -51480,25 +51496,25 @@
 
 
 
-### [MagicBokeh：单步统一生成式框架实现真实感长焦虚化渲染](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506755&idx=2&sn=a99b13316d62370df5eb9a99719da733)
-
-2026-08-12 20:00:00
-
-
-
 ### [从一键检测到-AI-修复：我们如何把无障碍检查做进研发流程](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506755&idx=1&sn=292f22a8014b5adaac2426b633873a93)
 
 2026-08-12 20:00:00
 
 
 
-### [2026-年-Cloud-and-DevOps-InfoQ-趋势报告：AI、韧性、平台、FinOps-与主权](https://www.infoq.com/podcasts/cloud-devops-trends-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [MagicBokeh：单步统一生成式框架实现真实感长焦虚化渲染](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506755&idx=2&sn=a99b13316d62370df5eb9a99719da733)
+
+2026-08-12 20:00:00
+
+
+
+### [InfoQ-云计算与-DevOps-趋势报告---2026](https://www.infoq.com/articles/cloud-devops-trends-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-08-12 19:00:00
 
 
 
-### [InfoQ-云计算与-DevOps-趋势报告---2026](https://www.infoq.com/articles/cloud-devops-trends-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [2026-年-Cloud-and-DevOps-InfoQ-趋势报告：AI、韧性、平台、FinOps-与主权](https://www.infoq.com/podcasts/cloud-devops-trends-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-08-12 19:00:00
 
@@ -51534,13 +51550,13 @@
 
 
 
-### [AI-重构运维！从救火打杂到体系赋能，3-年运维人的进阶之路](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655942367&idx=2&sn=215ba2eb731cfd6bef246a613249b835)
+### [AI-编程进入“无人值守”！Claude-Code-创始人联合-Ramp-CTO、AI-开发负责人，拆解-Agent-从告警到-PR-的完整工作流](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655942367&idx=1&sn=b1189e673cf9ada3674c32cee6f6eb5a)
 
 2026-08-12 17:30:00
 
 
 
-### [AI-编程进入“无人值守”！Claude-Code-创始人联合-Ramp-CTO、AI-开发负责人，拆解-Agent-从告警到-PR-的完整工作流](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655942367&idx=1&sn=b1189e673cf9ada3674c32cee6f6eb5a)
+### [AI-重构运维！从救火打杂到体系赋能，3-年运维人的进阶之路](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655942367&idx=2&sn=215ba2eb731cfd6bef246a613249b835)
 
 2026-08-12 17:30:00
 
@@ -51558,13 +51574,13 @@
 
 
 
-### [打造全球最便宜的-Token：实操指南](https://www.infoq.com/presentations/ai-token-price/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Codex-Security，开源了！](https://mp.weixin.qq.com/s?__biz=MzAxOTcxNTIwNQ==&mid=2457995148&idx=1&sn=8d8aab3cb7bb836af0e44d6fdc3b2de6)
 
 2026-08-11 18:05:00
 
 
 
-### [Codex-Security，开源了！](https://mp.weixin.qq.com/s?__biz=MzAxOTcxNTIwNQ==&mid=2457995148&idx=1&sn=8d8aab3cb7bb836af0e44d6fdc3b2de6)
+### [打造全球最便宜的-Token：实操指南](https://www.infoq.com/presentations/ai-token-price/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-08-11 18:05:00
 
@@ -51600,13 +51616,13 @@
 
 
 
-### [小扎万字长文炮轰闭源：蒸馏无罪，Meta-正式重回开源模型路线](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290628&idx=1&sn=489f136192f7f9215b70b615e3bca669)
+### [Zig-创始人直言，Bun-靠-Claude-生成的-Rust-重构版是“没人把关的烂代码”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290628&idx=3&sn=b803432db5d8af7fda584c972afe4941)
 
 2026-08-11 09:30:00
 
 
 
-### [Zig-创始人直言，Bun-靠-Claude-生成的-Rust-重构版是“没人把关的烂代码”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290628&idx=3&sn=b803432db5d8af7fda584c972afe4941)
+### [小扎万字长文炮轰闭源：蒸馏无罪，Meta-正式重回开源模型路线](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290628&idx=1&sn=489f136192f7f9215b70b615e3bca669)
 
 2026-08-11 09:30:00
 
@@ -51630,25 +51646,19 @@
 
 
 
-### [理解作为架构特征:-未被理解的系统无法安全演进](https://www.infoq.com/articles/system-comprehension-evolutionary-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
-
-2026-08-10 19:00:00
-
-
-
 ### [Cloudflare-钱包---Syntax-#1028](https://syntax.fm/1028)
 
 2026-08-10 19:00:00
 
 
 
-### [新型-CSS-攻击可突破-Webmail-防线，窃取密码与令牌](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651344311&idx=4&sn=ba3f4f0cf8e65d1047341d9bd3fe4731)
+### [理解作为架构特征:-未被理解的系统无法安全演进](https://www.infoq.com/articles/system-comprehension-evolutionary-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-10 18:30:00
+2026-08-10 19:00:00
 
 
 
-### [AI-时代，如何让分散的安全能力协同起来？](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651344311&idx=2&sn=8f44357331b3bdfab7f7ee0e2295792d)
+### [火山引擎-SenseFlow-重磅发布：突破存储边界，洞见数据价值](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521212&idx=1&sn=819993bfc75955779785e4aaad7dcd89)
 
 2026-08-10 18:30:00
 
@@ -51660,7 +51670,13 @@
 
 
 
-### [火山引擎-SenseFlow-重磅发布：突破存储边界，洞见数据价值](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521212&idx=1&sn=819993bfc75955779785e4aaad7dcd89)
+### [AI-时代，如何让分散的安全能力协同起来？](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651344311&idx=2&sn=8f44357331b3bdfab7f7ee0e2295792d)
+
+2026-08-10 18:30:00
+
+
+
+### [新型-CSS-攻击可突破-Webmail-防线，窃取密码与令牌](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651344311&idx=4&sn=ba3f4f0cf8e65d1047341d9bd3fe4731)
 
 2026-08-10 18:30:00
 
@@ -52002,13 +52018,13 @@
 
 
 
-### [“2036-年金钱将失去意义”，马斯克抛出大胆预测，回应：没有自己的特斯拉与-SpaceX、创办-OpenAI-的初衷](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833981&idx=1&sn=dca996cde5b740544b2ea70c8599c3b2)
+### [“连卖-AI-的微软也扛不住了”……一人每月烧掉数千美元-Token，工程师被提醒别「狂刷-Token」，并开始对-AI-消耗“限额”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833981&idx=2&sn=adc75dce2814023b59dfe1a3a44e1b2c)
 
 2026-08-05 15:14:00
 
 
 
-### [“连卖-AI-的微软也扛不住了”……一人每月烧掉数千美元-Token，工程师被提醒别「狂刷-Token」，并开始对-AI-消耗“限额”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833981&idx=2&sn=adc75dce2814023b59dfe1a3a44e1b2c)
+### [“2036-年金钱将失去意义”，马斯克抛出大胆预测，回应：没有自己的特斯拉与-SpaceX、创办-OpenAI-的初衷](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833981&idx=1&sn=dca996cde5b740544b2ea70c8599c3b2)
 
 2026-08-05 15:14:00
 
@@ -52056,13 +52072,13 @@
 
 
 
-### [从代码托管到-AI-能力底座：京东代码库的转型](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502469&idx=1&sn=f4f3a9ce97561612a1dbebe59ab3986a)
+### [片段：8-月-4-日](https://martinfowler.com/fragments/2026-08-04.html)
 
 2026-08-04 20:08:00
 
 
 
-### [片段：8-月-4-日](https://martinfowler.com/fragments/2026-08-04.html)
+### [从代码托管到-AI-能力底座：京东代码库的转型](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502469&idx=1&sn=f4f3a9ce97561612a1dbebe59ab3986a)
 
 2026-08-04 20:08:00
 
@@ -52104,13 +52120,13 @@
 
 
 
-### [别让-Agent-每次都重新开始](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290027&idx=3&sn=23dc8e519d8f04702a3159a531482d4d)
+### [FDE-又不够了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290027&idx=1&sn=3e40415ddca3d5a509d9946ba85c7d56)
 
 2026-08-04 14:33:00
 
 
 
-### [FDE-又不够了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290027&idx=1&sn=3e40415ddca3d5a509d9946ba85c7d56)
+### [别让-Agent-每次都重新开始](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651290027&idx=3&sn=23dc8e519d8f04702a3159a531482d4d)
 
 2026-08-04 14:33:00
 
@@ -52176,13 +52192,13 @@
 
 
 
-### [Cosmos3-Super-512-卡-Scaling，百度百舸-AI-Infra-工程优化实践](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607393&idx=1&sn=4edf965e0f0dbc397ffe4f63a307f395)
+### [云厂商首家！百度百舸率先适配-RLinf-v0.3，打通具身智能进化闭环](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607393&idx=2&sn=59125d9d9451ee5cd1d7ec281e027ec8)
 
 2026-08-03 18:00:00
 
 
 
-### [云厂商首家！百度百舸率先适配-RLinf-v0.3，打通具身智能进化闭环](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607393&idx=2&sn=59125d9d9451ee5cd1d7ec281e027ec8)
+### [Cosmos3-Super-512-卡-Scaling，百度百舸-AI-Infra-工程优化实践](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607393&idx=1&sn=4edf965e0f0dbc397ffe4f63a307f395)
 
 2026-08-03 18:00:00
 
@@ -52230,7 +52246,7 @@
 
 
 
-### [为什么-Jotai-要重做-Store？一次高吞吐性能优化背后的架构取舍](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289924&idx=4&sn=ef9603eb7bac30c922138668b52e6070)
+### [微软、Meta-同日交财报：小扎把现金流烧到只剩-7.84-亿美元，纳德拉靠-Azure-赚疯了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289924&idx=2&sn=8d3d8e4182a35b969aa34fbf5f0fb45e)
 
 2026-08-02 10:15:00
 
@@ -52242,7 +52258,7 @@
 
 
 
-### [微软、Meta-同日交财报：小扎把现金流烧到只剩-7.84-亿美元，纳德拉靠-Azure-赚疯了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289924&idx=2&sn=8d3d8e4182a35b969aa34fbf5f0fb45e)
+### [为什么-Jotai-要重做-Store？一次高吞吐性能优化背后的架构取舍](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289924&idx=4&sn=ef9603eb7bac30c922138668b52e6070)
 
 2026-08-02 10:15:00
 
@@ -52260,13 +52276,13 @@
 
 
 
-### [27-岁，我终于做出了自己的游戏！但是一行代码都没写](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247589030&idx=1&sn=7bc406af9525262c0421306c334031e2)
+### [Codex-零基础实战教程：从安装到项目实战](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247589030&idx=2&sn=094158b7116522c9c3683c9103cb0ed6)
 
 2026-08-01 11:58:00
 
 
 
-### [Codex-零基础实战教程：从安装到项目实战](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247589030&idx=2&sn=094158b7116522c9c3683c9103cb0ed6)
+### [27-岁，我终于做出了自己的游戏！但是一行代码都没写](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247589030&idx=1&sn=7bc406af9525262c0421306c334031e2)
 
 2026-08-01 11:58:00
 
@@ -52278,7 +52294,7 @@
 
 
 
-### [GPT-5.6-当老板：买假用户、被-Chrome-干崩-3-小时，烧掉-3-亿-Token-收入却为-0](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289862&idx=1&sn=41e196ea5e4382256fc47e2ac3bff7e2)
+### [翁荔被爆重返-OpenAI！两天前因身体原因从-Thinking-Machines-Lab-离职](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289862&idx=3&sn=ad4e9d725c856bb5deb80a369dab2b19)
 
 2026-08-01 10:15:00
 
@@ -52290,7 +52306,7 @@
 
 
 
-### [翁荔被爆重返-OpenAI！两天前因身体原因从-Thinking-Machines-Lab-离职](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289862&idx=3&sn=ad4e9d725c856bb5deb80a369dab2b19)
+### [GPT-5.6-当老板：买假用户、被-Chrome-干崩-3-小时，烧掉-3-亿-Token-收入却为-0](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289862&idx=1&sn=41e196ea5e4382256fc47e2ac3bff7e2)
 
 2026-08-01 10:15:00
 
@@ -52338,13 +52354,13 @@
 
 
 
-### [GPT-5.6-独立创业一天：撒谎、狂发垃圾邮件，最后亏掉-447-美元！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833857&idx=2&sn=abd570b1d0119c9e1bdcc191a6df7b19)
+### [员工让-AI-写代码“误烧”1215-万元！曝亚马逊用-Claude-干个“小活”却翻车：超预算-860%，5-个月后才发现](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833857&idx=1&sn=e912ceb0e06df695b2e0d353bf8f7381)
 
 2026-07-31 17:30:00
 
 
 
-### [员工让-AI-写代码“误烧”1215-万元！曝亚马逊用-Claude-干个“小活”却翻车：超预算-860%，5-个月后才发现](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833857&idx=1&sn=e912ceb0e06df695b2e0d353bf8f7381)
+### [GPT-5.6-独立创业一天：撒谎、狂发垃圾邮件，最后亏掉-447-美元！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833857&idx=2&sn=abd570b1d0119c9e1bdcc191a6df7b19)
 
 2026-07-31 17:30:00
 
@@ -52386,7 +52402,7 @@
 
 
 
-### [谷歌-AlphaEvolve-正式上线，提供“进化式代码优化即服务”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289805&idx=4&sn=687ba27f7799b91eb84ead457fcccc64)
+### [Claude-Code-之父：每半年清空一次-claude.md、skills-和-hooks，模型自己会想办法](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289805&idx=1&sn=beabd56c2e970f366e8f30d56c95594e)
 
 2026-07-31 11:28:00
 
@@ -52398,7 +52414,7 @@
 
 
 
-### [Claude-Code-之父：每半年清空一次-claude.md、skills-和-hooks，模型自己会想办法](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289805&idx=1&sn=beabd56c2e970f366e8f30d56c95594e)
+### [谷歌-AlphaEvolve-正式上线，提供“进化式代码优化即服务”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289805&idx=4&sn=687ba27f7799b91eb84ead457fcccc64)
 
 2026-07-31 11:28:00
 
@@ -52458,25 +52474,25 @@
 
 
 
-### [深度访谈｜第二次权力转移：当-Agent-拿走数据库的行动权](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289778&idx=1&sn=d119d2898d62fc0705b88468cc56572d)
-
-2026-07-30 15:30:00
-
-
-
 ### [Kubernetes-统治了容器时代，谷歌-Agent-Substrate-意在拿下下一个十年](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289778&idx=2&sn=44a078b873718b0ab07315e64dd92b73)
 
 2026-07-30 15:30:00
 
 
 
-### [突发！翁荔被曝回归-OpenAI，48-小时前刚因身体原因离职初创公司：无法适应-AI-创业公司的高强度节奏](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833799&idx=1&sn=bac53903ed728791fc29032fe06be11c)
+### [深度访谈｜第二次权力转移：当-Agent-拿走数据库的行动权](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289778&idx=1&sn=d119d2898d62fc0705b88468cc56572d)
+
+2026-07-30 15:30:00
+
+
+
+### [10-分钟删光整个数据库！开发者首次体验-Claude-Opus-5-大“翻车”：AI-主动认错，却已经晚了](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833799&idx=2&sn=b47ecaa16830457c6f41618df95c35e8)
 
 2026-07-30 14:13:00
 
 
 
-### [10-分钟删光整个数据库！开发者首次体验-Claude-Opus-5-大“翻车”：AI-主动认错，却已经晚了](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833799&idx=2&sn=b47ecaa16830457c6f41618df95c35e8)
+### [突发！翁荔被曝回归-OpenAI，48-小时前刚因身体原因离职初创公司：无法适应-AI-创业公司的高强度节奏](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833799&idx=1&sn=bac53903ed728791fc29032fe06be11c)
 
 2026-07-30 14:13:00
 
@@ -52716,13 +52732,13 @@
 
 
 
-### [黄仁勋-X-首帖就“站队”开源-AI，与-OpenAI、微软等联手喊开放，Anthropic-员工回怼“期待开源-CUDA”引爆争议](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833702&idx=2&sn=23dfb21904a027c3939831365ff9b094)
+### [数智金融，落地成金！一场围绕「金融行业应用-Agent」黑客松强势来袭！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833702&idx=1&sn=45865d4f0acabcdb2e513b36097c7417)
 
 2026-07-27 18:52:00
 
 
 
-### [数智金融，落地成金！一场围绕「金融行业应用-Agent」黑客松强势来袭！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833702&idx=1&sn=45865d4f0acabcdb2e513b36097c7417)
+### [黄仁勋-X-首帖就“站队”开源-AI，与-OpenAI、微软等联手喊开放，Anthropic-员工回怼“期待开源-CUDA”引爆争议](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833702&idx=2&sn=23dfb21904a027c3939831365ff9b094)
 
 2026-07-27 18:52:00
 
@@ -52758,13 +52774,13 @@
 
 
 
-### [Pinecone-推出-Nexus-引擎：为-AI-智能体整合业务上下文并生成结构化数据](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289545&idx=4&sn=cbab8d492ec721a22132868fdd9786a8)
+### [老黄首推引爆开源论战：Anthropic-员工催-CUDA-开源，吴恩达反击：你可以不开源，但别阻止别人](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289545&idx=1&sn=46fccfe9218eb96dad04a81fd49c9d21)
 
 2026-07-27 13:37:00
 
 
 
-### [老黄首推引爆开源论战：Anthropic-员工催-CUDA-开源，吴恩达反击：你可以不开源，但别阻止别人](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289545&idx=1&sn=46fccfe9218eb96dad04a81fd49c9d21)
+### [Pinecone-推出-Nexus-引擎：为-AI-智能体整合业务上下文并生成结构化数据](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289545&idx=4&sn=cbab8d492ec721a22132868fdd9786a8)
 
 2026-07-27 13:37:00
 
@@ -52794,13 +52810,13 @@
 
 
 
-### [跟上-AI-的节奏：为演进式架构构建上下文存储库](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289475&idx=3&sn=9ee3b227196b67dcf515a5e4da83e811)
+### [Meta-开源-Brain2Qwerty-v2：非侵入式脑机接口语句解码准确率达到-61%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289475&idx=4&sn=1a6915fd96cbc99d6bc27cc30b88d9b5)
 
 2026-07-26 10:28:00
 
 
 
-### [Meta-开源-Brain2Qwerty-v2：非侵入式脑机接口语句解码准确率达到-61%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289475&idx=4&sn=1a6915fd96cbc99d6bc27cc30b88d9b5)
+### [跟上-AI-的节奏：为演进式架构构建上下文存储库](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289475&idx=3&sn=9ee3b227196b67dcf515a5e4da83e811)
 
 2026-07-26 10:28:00
 
@@ -52824,7 +52840,7 @@
 
 
 
-### [DoorDash-如何打造了一款不完全依赖大型语言模型（LLM）的-AI-购物助手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289450&idx=4&sn=472509725497adcf8578df38c1032776)
+### [半价“背刺”Fable-5，Opus-5-登场！A-社高管：Kimi-K3-更便宜，但复杂项目表现待观察](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289450&idx=1&sn=8613b20d12dd0e621d4512e6a67efdf1)
 
 2026-07-25 11:37:00
 
@@ -52836,7 +52852,7 @@
 
 
 
-### [半价“背刺”Fable-5，Opus-5-登场！A-社高管：Kimi-K3-更便宜，但复杂项目表现待观察](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289450&idx=1&sn=8613b20d12dd0e621d4512e6a67efdf1)
+### [DoorDash-如何打造了一款不完全依赖大型语言模型（LLM）的-AI-购物助手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289450&idx=4&sn=472509725497adcf8578df38c1032776)
 
 2026-07-25 11:37:00
 
@@ -53208,13 +53224,13 @@
 
 
 
-### [NadMesh-僵尸网络利用-Shodan-劫持暴露的-AI-与-MCP-基础设施](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342881&idx=2&sn=5cf91e5d10fc6c700448eaeeac3673b7)
+### [Hugging-Face-遭自主-AI-Agent-入侵，防御方用-AI-反击](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342881&idx=1&sn=37c90e299fa86da763303a16cb9175c0)
 
 2026-07-19 18:00:00
 
 
 
-### [Hugging-Face-遭自主-AI-Agent-入侵，防御方用-AI-反击](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342881&idx=1&sn=37c90e299fa86da763303a16cb9175c0)
+### [NadMesh-僵尸网络利用-Shodan-劫持暴露的-AI-与-MCP-基础设施](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342881&idx=2&sn=5cf91e5d10fc6c700448eaeeac3673b7)
 
 2026-07-19 18:00:00
 
@@ -53238,13 +53254,7 @@
 
 
 
-### [Stripe-发布基准测试：AI-智能体可开发集成方案，但校验环节存在短板](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289128&idx=4&sn=80b1ce529cbad1f9b3fa9c74cb409f58)
-
-2026-07-19 10:15:00
-
-
-
-### [Linux-基金会推出-Akrites-项目，防护核心开源软件免受-AI-网络威胁侵害](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289128&idx=3&sn=250e458db026191cd9eafcc8dffb3ad4)
+### [所有-Harness-终将长成“龙虾”，但最后活下来的只有几只](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289128&idx=1&sn=80c7d1829f5cd8aa93fdb9a16d15b6ef)
 
 2026-07-19 10:15:00
 
@@ -53256,7 +53266,13 @@
 
 
 
-### [所有-Harness-终将长成“龙虾”，但最后活下来的只有几只](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289128&idx=1&sn=80c7d1829f5cd8aa93fdb9a16d15b6ef)
+### [Linux-基金会推出-Akrites-项目，防护核心开源软件免受-AI-网络威胁侵害](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289128&idx=3&sn=250e458db026191cd9eafcc8dffb3ad4)
+
+2026-07-19 10:15:00
+
+
+
+### [Stripe-发布基准测试：AI-智能体可开发集成方案，但校验环节存在短板](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289128&idx=4&sn=80b1ce529cbad1f9b3fa9c74cb409f58)
 
 2026-07-19 10:15:00
 
@@ -53322,7 +53338,7 @@
 
 
 
-### [专访孙元浩：乘坐星环号，把数据库“移民火星”的人](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289108&idx=1&sn=64e22b21af7d871928d702fa1e13336f)
+### [不打榜的美国开源新王-Inkling：975B-原生多模态、仅用-1/3-Token-追平英伟达](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289108&idx=3&sn=198c482bd50260d94cf0191500c143bc)
 
 2026-07-18 13:49:00
 
@@ -53334,7 +53350,7 @@
 
 
 
-### [不打榜的美国开源新王-Inkling：975B-原生多模态、仅用-1/3-Token-追平英伟达](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289108&idx=3&sn=198c482bd50260d94cf0191500c143bc)
+### [专访孙元浩：乘坐星环号，把数据库“移民火星”的人](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289108&idx=1&sn=64e22b21af7d871928d702fa1e13336f)
 
 2026-07-18 13:49:00
 
@@ -53364,7 +53380,7 @@
 
 
 
-### [AI-能发现漏洞，但验证仍需人类知识](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342781&idx=4&sn=77f01fc27a9350b54912b8bc85696b39)
+### [OpenAI-推出自动化红队模型-GPT-Red，专攻-GPT-5.6-提示注入漏洞](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342781&idx=1&sn=0c5971f27f0a7817606174695d5bd59d)
 
 2026-07-17 18:00:00
 
@@ -53376,7 +53392,7 @@
 
 
 
-### [OpenAI-推出自动化红队模型-GPT-Red，专攻-GPT-5.6-提示注入漏洞](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342781&idx=1&sn=0c5971f27f0a7817606174695d5bd59d)
+### [AI-能发现漏洞，但验证仍需人类知识](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651342781&idx=4&sn=77f01fc27a9350b54912b8bc85696b39)
 
 2026-07-17 18:00:00
 
@@ -53406,7 +53422,7 @@
 
 
 
-### [AlloyDB-推出代理模型，用数据库本地推理替代外部大模型调用](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289038&idx=3&sn=0bfd117d9ec5e6169d3391cf91eb824c)
+### [马斯克连夜开源-Grok-Build，但-84-万行代码里还留着上传用户整个代码库的痕迹](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289038&idx=1&sn=59cbda779587d41e58821386d1552010)
 
 2026-07-17 12:59:00
 
@@ -53418,7 +53434,7 @@
 
 
 
-### [马斯克连夜开源-Grok-Build，但-84-万行代码里还留着上传用户整个代码库的痕迹](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289038&idx=1&sn=59cbda779587d41e58821386d1552010)
+### [AlloyDB-推出代理模型，用数据库本地推理替代外部大模型调用](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651289038&idx=3&sn=0bfd117d9ec5e6169d3391cf91eb824c)
 
 2026-07-17 12:59:00
 
@@ -53472,13 +53488,13 @@
 
 
 
-### [从-Data-Lake-到-State-Lake：面向-Agent-时代的存储基础设施重构](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520930&idx=1&sn=bd7a4aa7ed7ce2d4ca65e807f53392f6)
+### [9.9-元/月，用-AgentPlan-+-OpenViking-给销售团队配一个不会忘事的-AI-助手](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520930&idx=2&sn=d28d61e9a893bc39fdbe6797404755cb)
 
 2026-07-16 18:59:00
 
 
 
-### [9.9-元/月，用-AgentPlan-+-OpenViking-给销售团队配一个不会忘事的-AI-助手](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520930&idx=2&sn=d28d61e9a893bc39fdbe6797404755cb)
+### [从-Data-Lake-到-State-Lake：面向-Agent-时代的存储基础设施重构](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520930&idx=1&sn=bd7a4aa7ed7ce2d4ca65e807f53392f6)
 
 2026-07-16 18:59:00
 
@@ -53604,13 +53620,13 @@
 
 
 
-### [WAIC-最热闹的时刻，我们帮你筛掉噪音](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288872&idx=2&sn=f0c93fcda445044e79e56f6ae7ac93c1)
+### [“我现在干得还行，但劝你别进来！”AI-蜜月期要结束了：打工人变成“快乐的行尸走肉”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288872&idx=1&sn=996fdd641760c8025a97a1ef664afc06)
 
 2026-07-15 17:33:00
 
 
 
-### [“我现在干得还行，但劝你别进来！”AI-蜜月期要结束了：打工人变成“快乐的行尸走肉”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288872&idx=1&sn=996fdd641760c8025a97a1ef664afc06)
+### [WAIC-最热闹的时刻，我们帮你筛掉噪音](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288872&idx=2&sn=f0c93fcda445044e79e56f6ae7ac93c1)
 
 2026-07-15 17:33:00
 
@@ -53706,13 +53722,13 @@
 
 
 
-### [400+名前员工被挖走，苹果怒告-OpenAI“偷机密”：要求带-CAD-文件、原型机去面试，还下载了上千页机密资料](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833084&idx=2&sn=bd471d5f79ddbf77bb4d0ee00d9e2181)
+### [“相比写-Python，我的工程师更愿意造-Agent”，黄仁勋最新-26-分钟对话：未来公司将建立在-Harness-之上](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833084&idx=1&sn=2ba5a2005a9583b6dd3102e77170df84)
 
 2026-07-13 17:06:00
 
 
 
-### [“相比写-Python，我的工程师更愿意造-Agent”，黄仁勋最新-26-分钟对话：未来公司将建立在-Harness-之上](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833084&idx=1&sn=2ba5a2005a9583b6dd3102e77170df84)
+### [400+名前员工被挖走，苹果怒告-OpenAI“偷机密”：要求带-CAD-文件、原型机去面试，还下载了上千页机密资料](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247833084&idx=2&sn=bd471d5f79ddbf77bb4d0ee00d9e2181)
 
 2026-07-13 17:06:00
 
@@ -53736,13 +53752,13 @@
 
 
 
-### [用-Claude-重写-SQL-解析器，性能暴涨-70-倍：程序员做的不是写代码，而是搭建验证闭环](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288698&idx=2&sn=3c2d145177b05f3d7fab056792a2e23e)
+### [从看见问题到解决问题，Agent-正重新定义可观测](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288698&idx=1&sn=ff190c842f5e4d2db50faafc2f943f59)
 
 2026-07-13 13:30:00
 
 
 
-### [从看见问题到解决问题，Agent-正重新定义可观测](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288698&idx=1&sn=ff190c842f5e4d2db50faafc2f943f59)
+### [用-Claude-重写-SQL-解析器，性能暴涨-70-倍：程序员做的不是写代码，而是搭建验证闭环](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288698&idx=2&sn=3c2d145177b05f3d7fab056792a2e23e)
 
 2026-07-13 13:30:00
 
@@ -53802,7 +53818,7 @@
 
 
 
-### [每个工程师在-AI-驱动的未来中的形式化方法](https://www.infoq.com/podcasts/formal-methods-ai-powered-future/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [扣子-×-SearchCLI：一个不会英语的卖家，靠一个-bot-卖到了日韩英多个市场](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520780&idx=2&sn=9b8a0e95210d1da2b0c48795c93a1024)
 
 2026-07-10 17:00:00
 
@@ -53814,7 +53830,7 @@
 
 
 
-### [扣子-×-SearchCLI：一个不会英语的卖家，靠一个-bot-卖到了日韩英多个市场](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520780&idx=2&sn=9b8a0e95210d1da2b0c48795c93a1024)
+### [每个工程师在-AI-驱动的未来中的形式化方法](https://www.infoq.com/podcasts/formal-methods-ai-powered-future/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-07-10 17:00:00
 
@@ -53934,25 +53950,25 @@
 
 
 
-### [当-AI-进入推荐系统：从“推什么”到“怎么选”](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506594&idx=1&sn=bcdea9123740ea0a3d29187dc81e21f8)
-
-2026-07-08 20:00:00
-
-
-
 ### [SIGGRAPH-2026-|-VeraRetouch：多任务推理式照片修图框架](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506594&idx=2&sn=dd57b293c11a68af000263b43c3d2858)
 
 2026-07-08 20:00:00
 
 
 
-### [Harness-工程实践：如何让-Agent-完成自主迭代](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509988&idx=1&sn=077f18a5e969437efceb13f31d13bf73)
+### [当-AI-进入推荐系统：从“推什么”到“怎么选”](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506594&idx=1&sn=bcdea9123740ea0a3d29187dc81e21f8)
+
+2026-07-08 20:00:00
+
+
+
+### [硬核少年技术节-5.0-抢鲜看：四大-AI-成果首发，报名即将截止](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509988&idx=2&sn=d9bf2c3466714c8c59fd844419f90d88)
 
 2026-07-08 19:37:00
 
 
 
-### [硬核少年技术节-5.0-抢鲜看：四大-AI-成果首发，报名即将截止](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509988&idx=2&sn=d9bf2c3466714c8c59fd844419f90d88)
+### [Harness-工程实践：如何让-Agent-完成自主迭代](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509988&idx=1&sn=077f18a5e969437efceb13f31d13bf73)
 
 2026-07-08 19:37:00
 
@@ -54000,13 +54016,13 @@
 
 
 
-### [可复制的-AI-Coding-全栈实战：比-OpenSpec-更轻量、更丝滑](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288360&idx=2&sn=15df01ddd07b362a9a627d2952aa26d1)
+### [“如果你不能用-300-行代码写个-Cursor，这行你就别待了！”Ralph-Loop-创造者、Claude-Code-核心技术设计者的暴论](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288360&idx=1&sn=d257a460cae156cb4388b2ad571ffd00)
 
 2026-07-07 16:25:00
 
 
 
-### [“如果你不能用-300-行代码写个-Cursor，这行你就别待了！”Ralph-Loop-创造者、Claude-Code-核心技术设计者的暴论](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288360&idx=1&sn=d257a460cae156cb4388b2ad571ffd00)
+### [可复制的-AI-Coding-全栈实战：比-OpenSpec-更轻量、更丝滑](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288360&idx=2&sn=15df01ddd07b362a9a627d2952aa26d1)
 
 2026-07-07 16:25:00
 
@@ -54162,13 +54178,13 @@
 
 
 
-### [黑客利用-SEO-投毒与隐藏-HTML-代码诱骗-AI-Agent-执行恶意指令](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341890&idx=2&sn=a71f7a2617cfed3b32697a6b8d3aee53)
+### [你是中国用户吗？Claude-自测工具火了](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341890&idx=1&sn=cf74fa278cf881e328bcd78b09ba4185)
 
 2026-07-05 17:33:00
 
 
 
-### [你是中国用户吗？Claude-自测工具火了](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341890&idx=1&sn=cf74fa278cf881e328bcd78b09ba4185)
+### [黑客利用-SEO-投毒与隐藏-HTML-代码诱骗-AI-Agent-执行恶意指令](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341890&idx=2&sn=a71f7a2617cfed3b32697a6b8d3aee53)
 
 2026-07-05 17:33:00
 
@@ -54222,13 +54238,7 @@
 
 
 
-### [AI-正在向软件生命周期的上游延伸：从代码审查到产品需求文档（PRD）治理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=4&sn=e6643efd9b6db5f0de88bbe9eca96611)
-
-2026-07-05 10:21:00
-
-
-
-### [Anthropic-负责人：HTML-比-MD-更利于人类跟进智能体协作流程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=3&sn=8d6290ce13d688bbeb81c89e9b12a966)
+### [“我一行代码都没读就发布了”，被-OpenAI-收购后，uv-工具创始人开始反思-AI-编程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=1&sn=92c6627c79a1a24872e8c6445b226bc0)
 
 2026-07-05 10:21:00
 
@@ -54240,7 +54250,13 @@
 
 
 
-### [“我一行代码都没读就发布了”，被-OpenAI-收购后，uv-工具创始人开始反思-AI-编程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=1&sn=92c6627c79a1a24872e8c6445b226bc0)
+### [Anthropic-负责人：HTML-比-MD-更利于人类跟进智能体协作流程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=3&sn=8d6290ce13d688bbeb81c89e9b12a966)
+
+2026-07-05 10:21:00
+
+
+
+### [AI-正在向软件生命周期的上游延伸：从代码审查到产品需求文档（PRD）治理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288214&idx=4&sn=e6643efd9b6db5f0de88bbe9eca96611)
 
 2026-07-05 10:21:00
 
@@ -54282,13 +54298,13 @@
 
 
 
-### [73%-PR-由-AI-生成！Claude-Code-之父对话-Spotify：2900-名工程师每天部署-4500-次，坐地铁都能提交代码](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288183&idx=1&sn=3c4dd38388b0de0e020022c8db7747c0)
+### [首个面向-AI-Infra-的运维智能体评测基准开源！基于近百亿条真实数据，考验-Agent-的问题解决能力](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288183&idx=3&sn=82d7a0f1aab4236746dd82d93e879e58)
 
 2026-07-04 13:16:00
 
 
 
-### [首个面向-AI-Infra-的运维智能体评测基准开源！基于近百亿条真实数据，考验-Agent-的问题解决能力](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288183&idx=3&sn=82d7a0f1aab4236746dd82d93e879e58)
+### [73%-PR-由-AI-生成！Claude-Code-之父对话-Spotify：2900-名工程师每天部署-4500-次，坐地铁都能提交代码](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651288183&idx=1&sn=3c4dd38388b0de0e020022c8db7747c0)
 
 2026-07-04 13:16:00
 
@@ -54354,13 +54370,13 @@
 
 
 
-### [ACL-2026-精选论文分享：美团履约团队前沿技术专场](https://tech.meituan.com/2026/06/11/ACL-2026-Agent.html)
+### [美团技术团队顶会论文分享：搜索推荐-ASX-专场](https://tech.meituan.com/2026/06/18/2026-ASX.html)
 
 2026-07-03 19:02:04
 
 
 
-### [美团技术团队顶会论文分享：搜索推荐-ASX-专场](https://tech.meituan.com/2026/06/18/2026-ASX.html)
+### [ACL-2026-精选论文分享：美团履约团队前沿技术专场](https://tech.meituan.com/2026/06/11/ACL-2026-Agent.html)
 
 2026-07-03 19:02:04
 
@@ -54372,13 +54388,13 @@
 
 
 
-### [10-款开源-AI-Agent-曝高危漏洞，攻击者可绕过防护执行任意命令](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341770&idx=4&sn=54a42f87c96ea2bebff83c5cda3d0ddb)
+### [ChatGPT-文件下载漏洞，攻击者可窃取本地系统文件](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341770&idx=3&sn=5f993ee1f9b904d488491e9eb4cb7caf)
 
 2026-07-03 18:00:00
 
 
 
-### [ChatGPT-文件下载漏洞，攻击者可窃取本地系统文件](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341770&idx=3&sn=5f993ee1f9b904d488491e9eb4cb7caf)
+### [10-款开源-AI-Agent-曝高危漏洞，攻击者可绕过防护执行任意命令](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651341770&idx=4&sn=54a42f87c96ea2bebff83c5cda3d0ddb)
 
 2026-07-03 18:00:00
 
@@ -54414,13 +54430,13 @@
 
 
 
-### [迈向-AI-Native：技术团队的范式跃迁与组织进化](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500939&idx=1&sn=78945729bfbaef75fd16d2546910b396)
+### [GIAC-2026·深圳站｜快手-AI-工程化实践精彩回顾](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500939&idx=2&sn=8667d14002cfdce98980f86117d5d87c)
 
 2026-07-02 19:51:00
 
 
 
-### [GIAC-2026·深圳站｜快手-AI-工程化实践精彩回顾](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500939&idx=2&sn=8667d14002cfdce98980f86117d5d87c)
+### [迈向-AI-Native：技术团队的范式跃迁与组织进化](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247500939&idx=1&sn=78945729bfbaef75fd16d2546910b396)
 
 2026-07-02 19:51:00
 
@@ -54480,7 +54496,7 @@
 
 
 
-### [你的网站，你做主：面向所有客户的全新-AI-流量管理选项](https://blog.cloudflare.com/content-independence-day-ai-options/)
+### [Cloudflare-宣布推出-Monetization-Gateway：通过-x402-协议为-Cloudflare-后端的任意资源收费](https://blog.cloudflare.com/monetization-gateway/)
 
 2026-07-01 22:00:01
 
@@ -54492,7 +54508,7 @@
 
 
 
-### [Cloudflare-宣布推出-Monetization-Gateway：通过-x402-协议为-Cloudflare-后端的任意资源收费](https://blog.cloudflare.com/monetization-gateway/)
+### [你的网站，你做主：面向所有客户的全新-AI-流量管理选项](https://blog.cloudflare.com/content-independence-day-ai-options/)
 
 2026-07-01 22:00:01
 
@@ -54624,13 +54640,13 @@
 
 
 
-### [让-KV-Cache「按头分家」：小红书-RedKnot-如何重做长文本推理新引擎](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495539&idx=1&sn=c0238f5aa0c757841d8509f9e620ab34)
+### [虚拟圆桌：机器时代的安全——AI-威胁演进专家洞察](https://www.infoq.com/articles/security-ai-threat-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-29 19:00:00
 
 
 
-### [虚拟圆桌：机器时代的安全——AI-威胁演进专家洞察](https://www.infoq.com/articles/security-ai-threat-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [让-KV-Cache「按头分家」：小红书-RedKnot-如何重做长文本推理新引擎](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495539&idx=1&sn=c0238f5aa0c757841d8509f9e620ab34)
 
 2026-06-29 19:00:00
 
@@ -54666,13 +54682,13 @@
 
 
 
-### [纯靠-AI“太不靠谱”了，福特紧急招-350-名老工程师！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247832612&idx=2&sn=99c5e54675e02b9acbfc9e6bdc9ae3e0)
+### [全网-400-万人围观！他做出-2.9-万-Star、登顶-HN-的爆款-CLI，却换来一封裁员通知，硅谷-CEO-火速“抢人”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247832612&idx=1&sn=cc332a292658765245dd6d5e62f49886)
 
 2026-06-29 17:13:00
 
 
 
-### [全网-400-万人围观！他做出-2.9-万-Star、登顶-HN-的爆款-CLI，却换来一封裁员通知，硅谷-CEO-火速“抢人”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247832612&idx=1&sn=cc332a292658765245dd6d5e62f49886)
+### [纯靠-AI“太不靠谱”了，福特紧急招-350-名老工程师！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247832612&idx=2&sn=99c5e54675e02b9acbfc9e6bdc9ae3e0)
 
 2026-06-29 17:13:00
 
@@ -54726,13 +54742,13 @@
 
 
 
-### [Dapr-1.18-引入可验证执行，为-AI-智能体和工作流带来加密信任](https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Argo-CD-3.5-通过内部-mTLS-与源完整性强化供应链安全](https://www.infoq.com/news/2026/06/argocd-supply-chain-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-26 20:00:00
 
 
 
-### [Argo-CD-3.5-通过内部-mTLS-与源完整性强化供应链安全](https://www.infoq.com/news/2026/06/argocd-supply-chain-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Dapr-1.18-引入可验证执行，为-AI-智能体和工作流带来加密信任](https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-26 20:00:00
 
@@ -55020,13 +55036,13 @@
 
 
 
-### [GitLab-19.0-将智能体-AI-嵌入密钥管理、合并请求与供应链安全](https://www.infoq.com/news/2026/06/gitlab-19-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Windows-平台安全与-AI-智能体安全竞赛](https://www.infoq.com/news/2026/06/windows-security-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-19 16:00:00
 
 
 
-### [Windows-平台安全与-AI-智能体安全竞赛](https://www.infoq.com/news/2026/06/windows-security-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [GitLab-19.0-将智能体-AI-嵌入密钥管理、合并请求与供应链安全](https://www.infoq.com/news/2026/06/gitlab-19-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-19 16:00:00
 
@@ -55110,13 +55126,13 @@
 
 
 
-### [AI-真的能帮你微信下单了！](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802115&idx=2&sn=f27fb69af23cbed1d814390a84147742)
+### [拆解大模型几项核心操作背后的数学与-Infra-优化逻辑](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802115&idx=1&sn=30424274c8e7e355c2ee62e70b058d52)
 
 2026-06-17 17:33:00
 
 
 
-### [拆解大模型几项核心操作背后的数学与-Infra-优化逻辑](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802115&idx=1&sn=30424274c8e7e355c2ee62e70b058d52)
+### [AI-真的能帮你微信下单了！](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802115&idx=2&sn=f27fb69af23cbed1d814390a84147742)
 
 2026-06-17 17:33:00
 
@@ -55140,13 +55156,13 @@
 
 
 
-### [浙江大学经济学院教授评价《2026-中国电商-AI-应用白皮书》：AI-从技术可得走向经营能力平权](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544373&idx=2&sn=a58194aeb4381a8ab85b695f74a853a5)
+### [面向-Skills-编程-淘宝企业购端对端研发提效实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544373&idx=1&sn=75abfa18658ce69faaa3c10da19a136c)
 
 2026-06-17 14:19:00
 
 
 
-### [面向-Skills-编程-淘宝企业购端对端研发提效实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544373&idx=1&sn=75abfa18658ce69faaa3c10da19a136c)
+### [浙江大学经济学院教授评价《2026-中国电商-AI-应用白皮书》：AI-从技术可得走向经营能力平权](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650544373&idx=2&sn=a58194aeb4381a8ab85b695f74a853a5)
 
 2026-06-17 14:19:00
 
@@ -55158,13 +55174,13 @@
 
 
 
-### [日处理-700-万条告警的智能管家，-OCManager-正式开源](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695941&idx=2&sn=177be7fb4b705d0dcb44e813426b9406)
+### [一文搞懂-Token-经济学：同样额度多干-3-倍活，只需理解消耗机制](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695941&idx=1&sn=94403a902e95852eb72979e495410907)
 
 2026-06-17 08:45:00
 
 
 
-### [一文搞懂-Token-经济学：同样额度多干-3-倍活，只需理解消耗机制](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695941&idx=1&sn=94403a902e95852eb72979e495410907)
+### [日处理-700-万条告警的智能管家，-OCManager-正式开源](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695941&idx=2&sn=177be7fb4b705d0dcb44e813426b9406)
 
 2026-06-17 08:45:00
 
@@ -55194,13 +55210,13 @@
 
 
 
-### [AI-Agent-&amp;-Skill-测评方案及落地实践](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=1&sn=a5983c28a6df652c9873b577a493571f)
+### [谁是-Agent-最强守门员？首个-Agent-技能安全评测基准-SkillTrustBench-正式发布](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=2&sn=ce7da8c7786c043c56d64e23c92b2544)
 
 2026-06-16 17:33:00
 
 
 
-### [谁是-Agent-最强守门员？首个-Agent-技能安全评测基准-SkillTrustBench-正式发布](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=2&sn=ce7da8c7786c043c56d64e23c92b2544)
+### [AI-Agent-&amp;-Skill-测评方案及落地实践](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649802062&idx=1&sn=a5983c28a6df652c9873b577a493571f)
 
 2026-06-16 17:33:00
 
@@ -55590,25 +55606,25 @@
 
 
 
-### [人工智能驱动的网络钓鱼：钓鱼技术如何演进与实施](https://www.infoq.com/articles/artificial-intelligence-driven-phishing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
-
-2026-06-08 19:00:00
-
-
-
 ### [从-MCP-和-Vibe-Coding-到-Harness-Engineering：AI-原生工程在一年内如何演变](https://www.infoq.com/podcasts/mcp-vibe-coding-harness-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-08 19:00:00
 
 
 
-### [Microsoft-Discovery-在-Azure-上正式发布，为-Majorana-2-量子芯片背后的智能体-AI-提供动力](https://www.infoq.com/news/2026/06/microsoft-discovery-majorana-2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [人工智能驱动的网络钓鱼：钓鱼技术如何演进与实施](https://www.infoq.com/articles/artificial-intelligence-driven-phishing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-06-08 19:00:00
+
+
+
+### [你的-Agent-每次都“失忆”？这个工具彻底治好了我的前端开发焦虑](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520252&idx=1&sn=965325b6e00360e3d3bd90f561598f17)
 
 2026-06-08 17:08:00
 
 
 
-### [你的-Agent-每次都“失忆”？这个工具彻底治好了我的前端开发焦虑](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247520252&idx=1&sn=965325b6e00360e3d3bd90f561598f17)
+### [Microsoft-Discovery-在-Azure-上正式发布，为-Majorana-2-量子芯片背后的智能体-AI-提供动力](https://www.infoq.com/news/2026/06/microsoft-discovery-majorana-2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-08 17:08:00
 
@@ -55716,13 +55732,13 @@
 
 
 
-### [Google-LiteRT-LM-借助-Gemma-4-多-Token-预测，将本地推理速度提升至-2.2-倍](https://www.infoq.com/news/2026/06/google-litertlm-gemma4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [系列文章：保障-AI-技术栈安全：从模型到生产](https://www.infoq.com/articles/secure-ai-stack-model-production-series/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-05 17:00:00
 
 
 
-### [系列文章：保障-AI-技术栈安全：从模型到生产](https://www.infoq.com/articles/secure-ai-stack-model-production-series/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-LiteRT-LM-借助-Gemma-4-多-Token-预测，将本地推理速度提升至-2.2-倍](https://www.infoq.com/news/2026/06/google-litertlm-gemma4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-06-05 17:00:00
 
@@ -55782,31 +55798,19 @@
 
 
 
-### [5-个月“救回”2000-亿-Token！被-AI-账单吓到，Netflix-大佬开源「Token-瘦身器」：砍掉-90%无效-Token，狂省-70-万美元！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831701&idx=2&sn=f3be689d1a59736934e8cc88f109ef58)
-
-2026-06-04 15:16:00
-
-
-
 ### [花-1500-美元，让-AI“黑”自己的-App：GPT-5.5-成功率-70%，部分模型-0-分交卷](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831701&idx=3&sn=fdc4b6429c3f3e2b9a3a0af2c92ffd66)
 
 2026-06-04 15:16:00
 
 
 
-### [OpenAI-CFO-首次详解公司战略：B-端-C-端收入五五开、抢-IPO-第一名没意义、神秘硬件今年公布](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=1&sn=d93377aa78bee152659192677541f079)
+### [5-个月“救回”2000-亿-Token！被-AI-账单吓到，Netflix-大佬开源「Token-瘦身器」：砍掉-90%无效-Token，狂省-70-万美元！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831701&idx=2&sn=f3be689d1a59736934e8cc88f109ef58)
 
-2026-06-04 15:09:00
-
-
-
-### [写代码可以-Vibe-Coding-了，为什么办公还不能-Vibe-Officing？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=2&sn=09885b688b8367a2eb84677d05da75a0)
-
-2026-06-04 15:09:00
+2026-06-04 15:16:00
 
 
 
-### [把数据库运维这件苦差事，交给-AI-Agent](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=3&sn=154c81386b9415c738b2892e84a1de1b)
+### [科大讯飞面向超大规模教育场景的-Agent-系统架构演进与工程实践｜AICon-上海](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=5&sn=8b30bba75f1cb98df892bef1e6bd4e07)
 
 2026-06-04 15:09:00
 
@@ -55818,7 +55822,19 @@
 
 
 
-### [科大讯飞面向超大规模教育场景的-Agent-系统架构演进与工程实践｜AICon-上海](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=5&sn=8b30bba75f1cb98df892bef1e6bd4e07)
+### [把数据库运维这件苦差事，交给-AI-Agent](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=3&sn=154c81386b9415c738b2892e84a1de1b)
+
+2026-06-04 15:09:00
+
+
+
+### [写代码可以-Vibe-Coding-了，为什么办公还不能-Vibe-Officing？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=2&sn=09885b688b8367a2eb84677d05da75a0)
+
+2026-06-04 15:09:00
+
+
+
+### [OpenAI-CFO-首次详解公司战略：B-端-C-端收入五五开、抢-IPO-第一名没意义、神秘硬件今年公布](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651286315&idx=1&sn=d93377aa78bee152659192677541f079)
 
 2026-06-04 15:09:00
 
@@ -55992,13 +56008,13 @@
 
 
 
-### [Google-想为-AI-Agent-打造下一个-Kubernetes](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285965&idx=3&sn=4983abf3b26a06107a296e637db04fbb)
+### [半数华人、3-位亿万富翁：这张十年前的量化实习生合照，藏着-AI-时代的新贵版图](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285965&idx=1&sn=ad6a6573fd31635e961e4053015737b1)
 
 2026-05-30 10:00:00
 
 
 
-### [半数华人、3-位亿万富翁：这张十年前的量化实习生合照，藏着-AI-时代的新贵版图](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285965&idx=1&sn=ad6a6573fd31635e961e4053015737b1)
+### [Google-想为-AI-Agent-打造下一个-Kubernetes](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285965&idx=3&sn=4983abf3b26a06107a296e637db04fbb)
 
 2026-05-30 10:00:00
 
@@ -56082,13 +56098,13 @@
 
 
 
-### [5-月-30-日·腾讯-AI-公开课到杭州！0-基础也能拥有「能动手干活」的-AI！名额有限，全程免费！](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695701&idx=2&sn=301af26601a74df0ee689fc198061b72)
+### [大模型的-Agent-Skill-功能，在-LLM-HTTP-底层交互流中是怎么承载的？](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695701&idx=1&sn=a8b5dfd8cee58567104bcccc39af6947)
 
 2026-05-28 08:45:00
 
 
 
-### [大模型的-Agent-Skill-功能，在-LLM-HTTP-底层交互流中是怎么承载的？](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695701&idx=1&sn=a8b5dfd8cee58567104bcccc39af6947)
+### [5-月-30-日·腾讯-AI-公开课到杭州！0-基础也能拥有「能动手干活」的-AI！名额有限，全程免费！](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695701&idx=2&sn=301af26601a74df0ee689fc198061b72)
 
 2026-05-28 08:45:00
 
@@ -56154,13 +56170,13 @@
 
 
 
-### [RAG-永不死：张颖峰和他藏在-Flow-里的执念-|-万有引力](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831381&idx=1&sn=9a038bb4e63c799c0ba7a14f935b6df1)
+### [救回被删的-10-年账号、一路惊动-CEO，结果-10-个月后他被裁了](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831381&idx=3&sn=67af2d5715007062211b146d3060ceed)
 
 2026-05-27 15:52:00
 
 
 
-### [救回被删的-10-年账号、一路惊动-CEO，结果-10-个月后他被裁了](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831381&idx=3&sn=67af2d5715007062211b146d3060ceed)
+### [RAG-永不死：张颖峰和他藏在-Flow-里的执念-|-万有引力](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831381&idx=1&sn=9a038bb4e63c799c0ba7a14f935b6df1)
 
 2026-05-27 15:52:00
 
@@ -56172,13 +56188,7 @@
 
 
 
-### [三星按下一场史上最长罢工，但揭下了-AI-时代贫富差距的遮羞布](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285743&idx=1&sn=4974e47d0c23b22acc4c9be67fb55ad4)
-
-2026-05-27 12:22:00
-
-
-
-### [从-Serverless-到-Agent：Cube-系统的一些设计思考](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285743&idx=2&sn=b9712d4ecc5d29ed73b1eee9a5068f68)
+### [企业级-Agent-落地，你绕不开的-4-个工程问题-|-AICon](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285743&idx=4&sn=a1f5e1f5e1a07fd231318f3f71e09e41)
 
 2026-05-27 12:22:00
 
@@ -56190,7 +56200,13 @@
 
 
 
-### [企业级-Agent-落地，你绕不开的-4-个工程问题-|-AICon](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285743&idx=4&sn=a1f5e1f5e1a07fd231318f3f71e09e41)
+### [从-Serverless-到-Agent：Cube-系统的一些设计思考](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285743&idx=2&sn=b9712d4ecc5d29ed73b1eee9a5068f68)
+
+2026-05-27 12:22:00
+
+
+
+### [三星按下一场史上最长罢工，但揭下了-AI-时代贫富差距的遮羞布](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285743&idx=1&sn=4974e47d0c23b22acc4c9be67fb55ad4)
 
 2026-05-27 12:22:00
 
@@ -56256,7 +56272,7 @@
 
 
 
-### [OpenAI-详解规模化低延迟语音-AI-的-WebRTC-架构](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285679&idx=4&sn=a1d3ae046495a8e18a4e9ab60f2674dd)
+### [编程-Agent-可能是软件开发史上最昂贵的错误之一](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285679&idx=1&sn=f05065413bcdb7a5f64e37a0989bcc5b)
 
 2026-05-26 14:05:00
 
@@ -56268,7 +56284,7 @@
 
 
 
-### [编程-Agent-可能是软件开发史上最昂贵的错误之一](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285679&idx=1&sn=f05065413bcdb7a5f64e37a0989bcc5b)
+### [OpenAI-详解规模化低延迟语音-AI-的-WebRTC-架构](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285679&idx=4&sn=a1d3ae046495a8e18a4e9ab60f2674dd)
 
 2026-05-26 14:05:00
 
@@ -56328,7 +56344,7 @@
 
 
 
-### [微软将弃用-Claude：太贵了还是薅明白了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285633&idx=1&sn=e72656c650d71e707fc9801043555033)
+### [Anthropic-推出-MCP-隧道，供私有代理访问内部系统](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285633&idx=4&sn=8d615360a54bf818f7a3b4ff4f426110)
 
 2026-05-25 16:37:00
 
@@ -56340,7 +56356,7 @@
 
 
 
-### [Anthropic-推出-MCP-隧道，供私有代理访问内部系统](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285633&idx=4&sn=8d615360a54bf818f7a3b4ff4f426110)
+### [微软将弃用-Claude：太贵了还是薅明白了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285633&idx=1&sn=e72656c650d71e707fc9801043555033)
 
 2026-05-25 16:37:00
 
@@ -56364,7 +56380,7 @@
 
 
 
-### [连-Karpathy-都开始恐慌：AI-正在重新定义「程序员」｜-硅基时间](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831315&idx=1&sn=b322d676e0413188a1d523b681e3f12c)
+### [辞掉大厂工作，他砸-4.8-万美元在家自建服务器：一年后，日均省下-105-美元！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831315&idx=3&sn=09cb76a0e3de139cf73d58b1fb88fd93)
 
 2026-05-25 11:55:00
 
@@ -56376,7 +56392,7 @@
 
 
 
-### [辞掉大厂工作，他砸-4.8-万美元在家自建服务器：一年后，日均省下-105-美元！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831315&idx=3&sn=09cb76a0e3de139cf73d58b1fb88fd93)
+### [连-Karpathy-都开始恐慌：AI-正在重新定义「程序员」｜-硅基时间](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247831315&idx=1&sn=b322d676e0413188a1d523b681e3f12c)
 
 2026-05-25 11:55:00
 
@@ -56400,7 +56416,7 @@
 
 
 
-### [OpenAI-开源-Symphony：面向自主编码智能体编排的-SPEC-规范文档](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285214&idx=4&sn=9ea4923fc5f63239cd948d52f06043ef)
+### [硅谷深陷算力荒：H200-一夜涨价-30%，H100-抢到缺货，Karpathy-也未能幸免](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285214&idx=1&sn=2a56c4c18ce8de4a44d10a4b9b0ca2bb)
 
 2026-05-24 10:15:00
 
@@ -56412,7 +56428,7 @@
 
 
 
-### [硅谷深陷算力荒：H200-一夜涨价-30%，H100-抢到缺货，Karpathy-也未能幸免](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285214&idx=1&sn=2a56c4c18ce8de4a44d10a4b9b0ca2bb)
+### [OpenAI-开源-Symphony：面向自主编码智能体编排的-SPEC-规范文档](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285214&idx=4&sn=9ea4923fc5f63239cd948d52f06043ef)
 
 2026-05-24 10:15:00
 
@@ -56424,7 +56440,7 @@
 
 
 
-### [C++之父开撕-AI-Coding：资深开发者宁愿退休也不愿伺候-AI-生成的代码](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285134&idx=1&sn=8def52cd5134d0d7d63c11d8082d50bb)
+### [基准测试表明：AI-智能体可修复独立漏洞，却难以理解系统范围影响](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285134&idx=4&sn=f508904645cafe31ab98c092375036a0)
 
 2026-05-23 02:15:00
 
@@ -56436,7 +56452,7 @@
 
 
 
-### [基准测试表明：AI-智能体可修复独立漏洞，却难以理解系统范围影响](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285134&idx=4&sn=f508904645cafe31ab98c092375036a0)
+### [C++之父开撕-AI-Coding：资深开发者宁愿退休也不愿伺候-AI-生成的代码](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651285134&idx=1&sn=8def52cd5134d0d7d63c11d8082d50bb)
 
 2026-05-23 02:15:00
 
@@ -56622,13 +56638,7 @@
 
 
 
-### [谷歌-DORA-团队发布新报告：扎实的工程基础决定了-AI-投资回报](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284462&idx=4&sn=0f4945bb9084b47477e1f937a831403f)
-
-2026-05-17 02:15:00
-
-
-
-### [鼠标每动一下都在训练-AI，Meta-员工“造反”：不想在“员工数据提取工厂”工作](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284462&idx=3&sn=59d10f7bbddb981f37d1ac6aff201cda)
+### [Hermes-团队改写预训练：算力成本降六成，DeepSeek-之后提效新路径](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284462&idx=1&sn=bc472ab2f14733ca974e5599b457af7e)
 
 2026-05-17 02:15:00
 
@@ -56640,7 +56650,13 @@
 
 
 
-### [Hermes-团队改写预训练：算力成本降六成，DeepSeek-之后提效新路径](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284462&idx=1&sn=bc472ab2f14733ca974e5599b457af7e)
+### [鼠标每动一下都在训练-AI，Meta-员工“造反”：不想在“员工数据提取工厂”工作](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284462&idx=3&sn=59d10f7bbddb981f37d1ac6aff201cda)
+
+2026-05-17 02:15:00
+
+
+
+### [谷歌-DORA-团队发布新报告：扎实的工程基础决定了-AI-投资回报](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651284462&idx=4&sn=0f4945bb9084b47477e1f937a831403f)
 
 2026-05-17 02:15:00
 
@@ -56838,13 +56854,13 @@
 
 
 
-### [Cloud-Storage-Rapid-为-AI-和分析场景的对象存储注入强劲动力](https://cloud.google.com/blog/products/storage-data-transfer/cloud-storage-rapid-turbocharges-object-storage-for-ai-analytics/)
+### [Next-'26-大会上的-Database-Center-改进](https://cloud.google.com/blog/products/databases/database-center-improvements-from-next26/)
 
 2026-05-12 00:00:00
 
 
 
-### [Next-'26-大会上的-Database-Center-改进](https://cloud.google.com/blog/products/databases/database-center-improvements-from-next26/)
+### [Cloud-Storage-Rapid-为-AI-和分析场景的对象存储注入强劲动力](https://cloud.google.com/blog/products/storage-data-transfer/cloud-storage-rapid-turbocharges-object-storage-for-ai-analytics/)
 
 2026-05-12 00:00:00
 
@@ -56904,13 +56920,13 @@
 
 
 
-### [63-岁黄仁勋再添博士头衔、英特尔-CEO-为其披袍，最新演讲刷屏：人类编写软件、计算机执行指令的范式已终结！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830913&idx=1&sn=1faa515e22709f0f38d4cf9f31ed110b)
+### [商业世界模型与因果推断：京东智能定价实践｜奇点智能技术大会实录](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830913&idx=2&sn=633630e0344308c8efa038384bf64859)
 
 2026-05-11 09:08:00
 
 
 
-### [商业世界模型与因果推断：京东智能定价实践｜奇点智能技术大会实录](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830913&idx=2&sn=633630e0344308c8efa038384bf64859)
+### [63-岁黄仁勋再添博士头衔、英特尔-CEO-为其披袍，最新演讲刷屏：人类编写软件、计算机执行指令的范式已终结！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830913&idx=1&sn=1faa515e22709f0f38d4cf9f31ed110b)
 
 2026-05-11 09:08:00
 
@@ -56922,13 +56938,13 @@
 
 
 
-### [从-OpenAI-的-Kafka-实践看-Kafka-的云原生演进](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283867&idx=2&sn=42359725f48801a679fd08157a79c380)
+### [CodeGuardian：一种用于-AI-代码质量分析和安全扫描的模型上下文协议服务器](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283867&idx=3&sn=9c3a8b80c5fb654ba6a16ea8297ac3e0)
 
 2026-05-11 05:44:00
 
 
 
-### [CodeGuardian：一种用于-AI-代码质量分析和安全扫描的模型上下文协议服务器](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283867&idx=3&sn=9c3a8b80c5fb654ba6a16ea8297ac3e0)
+### [从-OpenAI-的-Kafka-实践看-Kafka-的云原生演进](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283867&idx=2&sn=42359725f48801a679fd08157a79c380)
 
 2026-05-11 05:44:00
 
@@ -56940,13 +56956,13 @@
 
 
 
-### [Agent-时代需要怎样的分布式基础设施](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283806&idx=2&sn=d8afb1af0f17cacdb8e32cf0d4c57e7c)
+### [Manus-交易失败了，但创始人依然在谈成功学](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283806&idx=1&sn=cbb47a11d0e6b097134ca10e9aa93fa7)
 
 2026-05-10 02:15:00
 
 
 
-### [Manus-交易失败了，但创始人依然在谈成功学](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283806&idx=1&sn=cbb47a11d0e6b097134ca10e9aa93fa7)
+### [Agent-时代需要怎样的分布式基础设施](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283806&idx=2&sn=d8afb1af0f17cacdb8e32cf0d4c57e7c)
 
 2026-05-10 02:15:00
 
@@ -56970,7 +56986,7 @@
 
 
 
-### [“缺算力成共识、所有实验室都忌惮字节跳动、极度敬重-DeepSeek”，10-天走访中国顶尖-AI-实验室后，美国研究者的最新观察](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830877&idx=1&sn=3612524f7d695d131e728c1924a403a7)
+### [当代码变“便宜”之后，我们失去了什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830877&idx=3&sn=739d35bad00786de0ab324c2a8b4a483)
 
 2026-05-09 09:58:00
 
@@ -56982,7 +56998,7 @@
 
 
 
-### [当代码变“便宜”之后，我们失去了什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830877&idx=3&sn=739d35bad00786de0ab324c2a8b4a483)
+### [“缺算力成共识、所有实验室都忌惮字节跳动、极度敬重-DeepSeek”，10-天走访中国顶尖-AI-实验室后，美国研究者的最新观察](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830877&idx=1&sn=3612524f7d695d131e728c1924a403a7)
 
 2026-05-09 09:58:00
 
@@ -57054,7 +57070,7 @@
 
 
 
-### [“9-秒删库”事件刷屏！AI-是凶手，但枪是你自己递的](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830847&idx=3&sn=540bd367cc2b1ac8fc31c3719a70d48a)
+### [“今年还没亲手写过一行代码”，Claude-Code-之父自曝：CC-诞生源于“偶然”，现主要在手机上干活](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830847&idx=1&sn=e6e59a5a7b9e2181ab893cd58d3cc27c)
 
 2026-05-08 08:41:00
 
@@ -57066,7 +57082,7 @@
 
 
 
-### [“今年还没亲手写过一行代码”，Claude-Code-之父自曝：CC-诞生源于“偶然”，现主要在手机上干活](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830847&idx=1&sn=e6e59a5a7b9e2181ab893cd58d3cc27c)
+### [“9-秒删库”事件刷屏！AI-是凶手，但枪是你自己递的](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830847&idx=3&sn=540bd367cc2b1ac8fc31c3719a70d48a)
 
 2026-05-08 08:41:00
 
@@ -57078,13 +57094,13 @@
 
 
 
-### [从-Prompt-到-Context：易点天下-Agentic-AI-工程化实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283627&idx=2&sn=13343e3bf6df70fef4ff47eadf3bace3)
+### [Chrome-开了一个危险的头：偷偷给数亿电脑塞-4GB-Gemini-模型，占硬盘、耗算力、删了自动重下](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283627&idx=1&sn=f9f44222cc187328ca9546e23b16a988)
 
 2026-05-08 07:33:00
 
 
 
-### [Chrome-开了一个危险的头：偷偷给数亿电脑塞-4GB-Gemini-模型，占硬盘、耗算力、删了自动重下](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283627&idx=1&sn=f9f44222cc187328ca9546e23b16a988)
+### [从-Prompt-到-Context：易点天下-Agentic-AI-工程化实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283627&idx=2&sn=13343e3bf6df70fef4ff47eadf3bace3)
 
 2026-05-08 07:33:00
 
@@ -57102,13 +57118,13 @@
 
 
 
-### [【图书】Claude-Code-实战：Harness-工程之道](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279034&idx=2&sn=e11923e659525118dc441638139bba7b)
+### [从提示词到工程框架：AI-工程的成长之路](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279034&idx=1&sn=3d28af3c06d14ce8f7276ef1765e80c6)
 
 2026-05-08 01:03:00
 
 
 
-### [从提示词到工程框架：AI-工程的成长之路](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279034&idx=1&sn=3d28af3c06d14ce8f7276ef1765e80c6)
+### [【图书】Claude-Code-实战：Harness-工程之道](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279034&idx=2&sn=e11923e659525118dc441638139bba7b)
 
 2026-05-08 01:03:00
 
@@ -57150,13 +57166,13 @@
 
 
 
-### [超-150-位全球-AI-一线技术专家齐聚巴黎，这场大会到底聊了些什么？｜GOSIM-Paris-2026-圆满收官](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830819&idx=1&sn=cd8037c5c98a705e4cbdfde5ec7dd36b)
+### [马斯克-180-度反转！前脚怒喷“邪恶”，后脚把-22-万张-GPU-租给-Anthropic：一年狂赚-50-亿美元？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830819&idx=2&sn=88f7f76f4b2fab5e08e53a68927e1719)
 
 2026-05-07 10:38:00
 
 
 
-### [马斯克-180-度反转！前脚怒喷“邪恶”，后脚把-22-万张-GPU-租给-Anthropic：一年狂赚-50-亿美元？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830819&idx=2&sn=88f7f76f4b2fab5e08e53a68927e1719)
+### [超-150-位全球-AI-一线技术专家齐聚巴黎，这场大会到底聊了些什么？｜GOSIM-Paris-2026-圆满收官](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830819&idx=1&sn=cd8037c5c98a705e4cbdfde5ec7dd36b)
 
 2026-05-07 10:38:00
 
@@ -57198,13 +57214,7 @@
 
 
 
-### [马斯克-22-万张-GPU-救场后，Claude-勉强恢复“三个月前体验”，Gary-Marcus-却警告：GPU-将严重过剩，很快不值钱](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=1&sn=78b640d4bb76642ba23275cd36f54b0e)
-
-2026-05-07 03:21:00
-
-
-
-### [技术·艺术·算术：京东零售-AIGC-百亿素材供给实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=2&sn=ec7b1815a3efe8a8bf5ce9526594ec28)
+### [CNCF-警告：仅靠-Kubernetes-不足以保障-LLM-工作负载的安全性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=4&sn=28372266628e672abed5ada6f0f8cc30)
 
 2026-05-07 03:21:00
 
@@ -57216,7 +57226,13 @@
 
 
 
-### [CNCF-警告：仅靠-Kubernetes-不足以保障-LLM-工作负载的安全性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=4&sn=28372266628e672abed5ada6f0f8cc30)
+### [技术·艺术·算术：京东零售-AIGC-百亿素材供给实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=2&sn=ec7b1815a3efe8a8bf5ce9526594ec28)
+
+2026-05-07 03:21:00
+
+
+
+### [马斯克-22-万张-GPU-救场后，Claude-勉强恢复“三个月前体验”，Gary-Marcus-却警告：GPU-将严重过剩，很快不值钱](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283587&idx=1&sn=78b640d4bb76642ba23275cd36f54b0e)
 
 2026-05-07 03:21:00
 
@@ -57270,19 +57286,19 @@
 
 
 
-### [别急着裁底层，很多高管才最该被-AI-接管？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830760&idx=2&sn=4c7d4d2b2ce5dfc9969956a2d0207eb0)
-
-2026-05-06 08:54:00
-
-
-
 ### [开源打破“AI-黑箱”！集结全球大咖，GOSIM-Paris-2026-带你看懂-Agent-时代大变局](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830760&idx=1&sn=0766ce62a3169f3037e15e8722609179)
 
 2026-05-06 08:54:00
 
 
 
-### [Java-世界的-MCP：将架构策略应用于-LLM-集成](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283494&idx=3&sn=2260ddd31c9ca258f502324eac56a7b1)
+### [别急着裁底层，很多高管才最该被-AI-接管？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830760&idx=2&sn=4c7d4d2b2ce5dfc9969956a2d0207eb0)
+
+2026-05-06 08:54:00
+
+
+
+### [Cursor-删库-9-秒毁了一家公司？资深开发者讲了大实话：把数据库交给-AI-的那一刻，公司就已经没了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283494&idx=1&sn=45f63373cee2486106c66f5191ef9ec5)
 
 2026-05-06 06:31:00
 
@@ -57294,7 +57310,7 @@
 
 
 
-### [Cursor-删库-9-秒毁了一家公司？资深开发者讲了大实话：把数据库交给-AI-的那一刻，公司就已经没了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283494&idx=1&sn=45f63373cee2486106c66f5191ef9ec5)
+### [Java-世界的-MCP：将架构策略应用于-LLM-集成](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283494&idx=3&sn=2260ddd31c9ca258f502324eac56a7b1)
 
 2026-05-06 06:31:00
 
@@ -57432,13 +57448,13 @@
 
 
 
-### [王兴兴亲测后点赞！这家-AI-公司提前半年把“龙虾”能力带上车，还管住了-Token-黑洞](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283262&idx=2&sn=8ea53f02c0b62df1e147d04b51f6615a)
+### [在大厂，token-用少了不“健康”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283262&idx=1&sn=987f181784df9d8ab5487c4f3b17d719)
 
 2026-05-02 02:31:00
 
 
 
-### [在大厂，token-用少了不“健康”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283262&idx=1&sn=987f181784df9d8ab5487c4f3b17d719)
+### [王兴兴亲测后点赞！这家-AI-公司提前半年把“龙虾”能力带上车，还管住了-Token-黑洞](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283262&idx=2&sn=8ea53f02c0b62df1e147d04b51f6615a)
 
 2026-05-02 02:31:00
 
@@ -57510,13 +57526,13 @@
 
 
 
-### [“如果你不用更多-Token，就永远逃不出底层”：AI-竞赛开始变成资源战争](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283248&idx=1&sn=740073808e2db9880300ecbf99bb64a0)
+### [当国产模型追上闭源旗舰，企业-AI-编程的真正障碍才浮出水面](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283248&idx=2&sn=b17e226b2bdecbdfb34f9231832bbe6b)
 
 2026-05-01 02:12:00
 
 
 
-### [当国产模型追上闭源旗舰，企业-AI-编程的真正障碍才浮出水面](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283248&idx=2&sn=b17e226b2bdecbdfb34f9231832bbe6b)
+### [“如果你不用更多-Token，就永远逃不出底层”：AI-竞赛开始变成资源战争](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283248&idx=1&sn=740073808e2db9880300ecbf99bb64a0)
 
 2026-05-01 02:12:00
 
@@ -57594,7 +57610,7 @@
 
 
 
-### [印奇这次要“从-0-重做”智驾模型！首谈阶跃和千里双公司布局：中国-AI-商业闭环要靠车跑出来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283014&idx=3&sn=384e48adcc9a8d6bd484d8f7632c36e9)
+### [凌晨，OpenAI-与亚马逊云科技史上最大联合发布来了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283014&idx=1&sn=5a091006bc6d7da752556322b9f26ed3)
 
 2026-04-29 02:16:00
 
@@ -57606,7 +57622,7 @@
 
 
 
-### [凌晨，OpenAI-与亚马逊云科技史上最大联合发布来了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283014&idx=1&sn=5a091006bc6d7da752556322b9f26ed3)
+### [印奇这次要“从-0-重做”智驾模型！首谈阶跃和千里双公司布局：中国-AI-商业闭环要靠车跑出来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651283014&idx=3&sn=384e48adcc9a8d6bd484d8f7632c36e9)
 
 2026-04-29 02:16:00
 
@@ -57666,13 +57682,13 @@
 
 
 
-### [openJiuwen-社区首发-Team-Skills，定义-Coordination-Engineering-新范式](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282949&idx=1&sn=72c78d37e246ad225e188630566d94f2)
+### [深度访谈｜OpenClaw-引爆-Agent-元年，AI-Agent-在企业内如何规模化应用？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282949&idx=2&sn=06f6534999f2222fa0f189eb3e512855)
 
 2026-04-28 08:23:00
 
 
 
-### [深度访谈｜OpenClaw-引爆-Agent-元年，AI-Agent-在企业内如何规模化应用？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282949&idx=2&sn=06f6534999f2222fa0f189eb3e512855)
+### [openJiuwen-社区首发-Team-Skills，定义-Coordination-Engineering-新范式](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282949&idx=1&sn=72c78d37e246ad225e188630566d94f2)
 
 2026-04-28 08:23:00
 
@@ -57798,13 +57814,13 @@
 
 
 
-### [你写的-Skill，及格了吗？](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606691&idx=1&sn=c0c3dc039fad7aced2f088beb22cc257)
+### [Cloudflare-Sandboxes-正式发布通用版本，为-AI-智能体提供持久化隔离环境](https://www.infoq.com/news/2026/04/cloudflare-sandboxes-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-04-22 10:00:00
 
 
 
-### [Cloudflare-Sandboxes-正式发布通用版本，为-AI-智能体提供持久化隔离环境](https://www.infoq.com/news/2026/04/cloudflare-sandboxes-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [你写的-Skill，及格了吗？](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606691&idx=1&sn=c0c3dc039fad7aced2f088beb22cc257)
 
 2026-04-22 10:00:00
 
@@ -57816,13 +57832,13 @@
 
 
 
-### [“守成者”库克卸任-CEO：除了离开，他再没有什么能留给苹果了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282240&idx=2&sn=bfd0735ceb9c164212a251e6dd633caa)
+### [在-AK-大神爆火的任务里，摸清国产-AI-真实水平](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282240&idx=1&sn=87537ab21d8b3cd5677df45d2ae75512)
 
 2026-04-22 06:32:00
 
 
 
-### [在-AK-大神爆火的任务里，摸清国产-AI-真实水平](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282240&idx=1&sn=87537ab21d8b3cd5677df45d2ae75512)
+### [“守成者”库克卸任-CEO：除了离开，他再没有什么能留给苹果了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651282240&idx=2&sn=bfd0735ceb9c164212a251e6dd633caa)
 
 2026-04-22 06:32:00
 
@@ -57834,7 +57850,7 @@
 
 
 
-### [给-AI-100-美元且不设任何指令，两个月后发生了什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830398&idx=3&sn=c1879936cd6fc2309157db6586c97c0d)
+### [Kimi-K2.6-Agent-建站能力实测：拒绝空谈，请看成品](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830398&idx=1&sn=8ac3ab7cc9d268b78b3bc610164d2ccf)
 
 2026-04-22 04:36:00
 
@@ -57846,7 +57862,7 @@
 
 
 
-### [Kimi-K2.6-Agent-建站能力实测：拒绝空谈，请看成品](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830398&idx=1&sn=8ac3ab7cc9d268b78b3bc610164d2ccf)
+### [给-AI-100-美元且不设任何指令，两个月后发生了什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830398&idx=3&sn=c1879936cd6fc2309157db6586c97c0d)
 
 2026-04-22 04:36:00
 
@@ -57960,7 +57976,7 @@
 
 
 
-### [AI-成为主流负载后，数据基础设施将如何演进？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281724&idx=3&sn=1adde90718a3b747d2de271c628959bf)
+### [AI-提效-20%，我们程序员加班却越来越狠：老板量生产力的尺子，歪了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281724&idx=1&sn=4867ddf8e0f234a3eaf7fef02442134b)
 
 2026-04-16 02:15:00
 
@@ -57972,7 +57988,7 @@
 
 
 
-### [AI-提效-20%，我们程序员加班却越来越狠：老板量生产力的尺子，歪了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281724&idx=1&sn=4867ddf8e0f234a3eaf7fef02442134b)
+### [AI-成为主流负载后，数据基础设施将如何演进？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281724&idx=3&sn=1adde90718a3b747d2de271c628959bf)
 
 2026-04-16 02:15:00
 
@@ -58050,13 +58066,13 @@
 
 
 
-### [苹果疯狂狙击-Vibe-Coding-App](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281663&idx=1&sn=1e53843bbdc4f5f89053931c512ac5d6)
+### [深度访谈：阿里云-X-平头哥，模型推理提升-13-倍背后的秘密](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281663&idx=2&sn=b73be00f39409ca1bf6a046b24399516)
 
 2026-04-15 07:13:00
 
 
 
-### [深度访谈：阿里云-X-平头哥，模型推理提升-13-倍背后的秘密](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281663&idx=2&sn=b73be00f39409ca1bf6a046b24399516)
+### [苹果疯狂狙击-Vibe-Coding-App](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281663&idx=1&sn=1e53843bbdc4f5f89053931c512ac5d6)
 
 2026-04-15 07:13:00
 
@@ -58098,13 +58114,13 @@
 
 
 
-### [世界变了、Linus-妥协了？AI-代码可以进-Linux-内核，但出了事人来背](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281607&idx=1&sn=4195df78a3eb209ae7ae0073f84edaa9)
+### [Meta-143-亿挖角后的首个作品：Alexandr-Wang-推出闭源模型-Muse-Spark](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281607&idx=2&sn=09c661653e2168e75312ce1f75cac21e)
 
 2026-04-14 04:12:00
 
 
 
-### [Meta-143-亿挖角后的首个作品：Alexandr-Wang-推出闭源模型-Muse-Spark](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281607&idx=2&sn=09c661653e2168e75312ce1f75cac21e)
+### [世界变了、Linus-妥协了？AI-代码可以进-Linux-内核，但出了事人来背](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281607&idx=1&sn=4195df78a3eb209ae7ae0073f84edaa9)
 
 2026-04-14 04:12:00
 
@@ -58152,13 +58168,13 @@
 
 
 
-### [CLI-Anything：一键把开源软件变成-AI-命令行工具](https://mp.weixin.qq.com/s?__biz=Mzg4MTYwMzY1Mw==&mid=2247518310&idx=1&sn=f6cbc0892538978d982f693572364646)
+### [从-CPU-到-GPU-全链路可信，百度智能云新一代-AI-机密计算实例的探索与落地](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606591&idx=1&sn=232e2a27d63f00451a63ffeae6d3e539)
 
 2026-04-13 10:01:00
 
 
 
-### [从-CPU-到-GPU-全链路可信，百度智能云新一代-AI-机密计算实例的探索与落地](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606591&idx=1&sn=232e2a27d63f00451a63ffeae6d3e539)
+### [CLI-Anything：一键把开源软件变成-AI-命令行工具](https://mp.weixin.qq.com/s?__biz=Mzg4MTYwMzY1Mw==&mid=2247518310&idx=1&sn=f6cbc0892538978d982f693572364646)
 
 2026-04-13 10:01:00
 
@@ -58230,13 +58246,13 @@
 
 
 
-### [OpenClaw-创始人-Peter-Steinberger-深度访谈：揭秘-AI-Agent-的未来、品味与安全挑战](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655938184&idx=1&sn=2c433d2007ff154055d3f4c2253f8aa2)
+### [AI-原生软件工程的可观测性与可控制性](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655938184&idx=2&sn=2a54ef2609478403f6db3d1dfae38ef2)
 
 2026-04-10 09:11:00
 
 
 
-### [AI-原生软件工程的可观测性与可控制性](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655938184&idx=2&sn=2a54ef2609478403f6db3d1dfae38ef2)
+### [OpenClaw-创始人-Peter-Steinberger-深度访谈：揭秘-AI-Agent-的未来、品味与安全挑战](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655938184&idx=1&sn=2c433d2007ff154055d3f4c2253f8aa2)
 
 2026-04-10 09:11:00
 
@@ -58248,13 +58264,13 @@
 
 
 
-### [Tiger-Teams、评估与智能体：AI-工程新策略](https://www.infoq.com/podcasts/tiger-teams-evals-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [手机推理快-8-倍、80-页合同-AI-秒懂——小米-AI-团队多项论文入选-ACL-2026](https://mp.weixin.qq.com/s?__biz=MzUxMDQxMDMyNg==&mid=2247518895&idx=1&sn=f6b3c38035a5f1ea96fcc1270d266623)
 
 2026-04-10 09:00:00
 
 
 
-### [手机推理快-8-倍、80-页合同-AI-秒懂——小米-AI-团队多项论文入选-ACL-2026](https://mp.weixin.qq.com/s?__biz=MzUxMDQxMDMyNg==&mid=2247518895&idx=1&sn=f6b3c38035a5f1ea96fcc1270d266623)
+### [Tiger-Teams、评估与智能体：AI-工程新策略](https://www.infoq.com/podcasts/tiger-teams-evals-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-04-10 09:00:00
 
@@ -58272,25 +58288,25 @@
 
 
 
-### [快手智能测试用例生成系统的四阶进化：生成率从-8%-到-60%-的实践之路](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281304&idx=2&sn=7bdc8ae5c433bfe39a9bf82c9ef95151)
-
-2026-04-10 06:11:00
-
-
-
 ### [GitHub-如何用-AI-重构无障碍反馈处理机制](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281304&idx=4&sn=e911c7126a6a9a633939d0eb4da1ac0b)
 
 2026-04-10 06:11:00
 
 
 
-### [时薪-20-美元，还得凌晨-4-点“抢单”！60-岁程序员、年薪-50-万医生失业后，靠“训练-AI”续命](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830015&idx=2&sn=556e6e02482e0e55678880f0cfa256dd)
+### [快手智能测试用例生成系统的四阶进化：生成率从-8%-到-60%-的实践之路](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281304&idx=2&sn=7bdc8ae5c433bfe39a9bf82c9ef95151)
+
+2026-04-10 06:11:00
+
+
+
+### [IDE-正在消亡？开发重心向-AI-Agent-调度层转移](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830015&idx=3&sn=ef5aa3713b9d7d9d7d2fd67bc5a50c88)
 
 2026-04-10 06:03:00
 
 
 
-### [IDE-正在消亡？开发重心向-AI-Agent-调度层转移](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830015&idx=3&sn=ef5aa3713b9d7d9d7d2fd67bc5a50c88)
+### [时薪-20-美元，还得凌晨-4-点“抢单”！60-岁程序员、年薪-50-万医生失业后，靠“训练-AI”续命](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830015&idx=2&sn=556e6e02482e0e55678880f0cfa256dd)
 
 2026-04-10 06:03:00
 
@@ -58314,13 +58330,13 @@
 
 
 
-### [使用-Model-Armor-在-GKE-上保护-AI-推理安全](https://cloud.google.com/blog/products/identity-security/securing-ai-inference-on-gke-with-model-armor/)
+### [构建可靠-GPU-基础设施指南](https://cloud.google.com/blog/products/compute/a-guide-to-architecting-reliable-gpu-infrastructure/)
 
 2026-04-10 00:00:00
 
 
 
-### [构建可靠-GPU-基础设施指南](https://cloud.google.com/blog/products/compute/a-guide-to-architecting-reliable-gpu-infrastructure/)
+### [使用-Model-Armor-在-GKE-上保护-AI-推理安全](https://cloud.google.com/blog/products/identity-security/securing-ai-inference-on-gke-with-model-armor/)
 
 2026-04-10 00:00:00
 
@@ -58446,13 +58462,13 @@
 
 
 
-### [当-AI-主宰写代码，MoonBit-嵌入「形式化验证」让-Bug-清零](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829961&idx=1&sn=d45062879f672deef968c2926b33348b)
+### [开发者用-AI-圆了-8-年执念：syntaqlite-的开发历程与-AI-编程实战反思](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829961&idx=2&sn=64c46551e17b501c7ed099716698e65b)
 
 2026-04-09 04:01:00
 
 
 
-### [开发者用-AI-圆了-8-年执念：syntaqlite-的开发历程与-AI-编程实战反思](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829961&idx=2&sn=64c46551e17b501c7ed099716698e65b)
+### [当-AI-主宰写代码，MoonBit-嵌入「形式化验证」让-Bug-清零](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829961&idx=1&sn=d45062879f672deef968c2926b33348b)
 
 2026-04-09 04:01:00
 
@@ -58482,13 +58498,13 @@
 
 
 
-### [雅诗兰黛公司的-Cloud-Run-工作池实践](https://cloud.google.com/blog/products/serverless/cloud-run-worker-pools-at-estee-lauder-companies/)
+### [A-Bootiful-Podcast：Mark-Kropf-谈-AI-编排](https://spring.io/blog/2026/04/09/a-bootiful-podcast-ana-mark-kropf)
 
 2026-04-09 00:00:00
 
 
 
-### [A-Bootiful-Podcast：Mark-Kropf-谈-AI-编排](https://spring.io/blog/2026/04/09/a-bootiful-podcast-ana-mark-kropf)
+### [雅诗兰黛公司的-Cloud-Run-工作池实践](https://cloud.google.com/blog/products/serverless/cloud-run-worker-pools-at-estee-lauder-companies/)
 
 2026-04-09 00:00:00
 
@@ -58548,13 +58564,13 @@
 
 
 
-### [撕开-AlphaFold-的神话：科学进步不只是验证闭环，更是解释框架的跃迁](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829932&idx=3&sn=3a6e4a9aa556f396055df31ca5ae3681)
+### [Win11-新版-Copilot-遭深扒：内嵌完整-Edge-浏览器导致内存占用飙升](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829932&idx=1&sn=18fd43210b8002661abe5feb5bfd4f54)
 
 2026-04-08 09:34:00
 
 
 
-### [Win11-新版-Copilot-遭深扒：内嵌完整-Edge-浏览器导致内存占用飙升](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829932&idx=1&sn=18fd43210b8002661abe5feb5bfd4f54)
+### [撕开-AlphaFold-的神话：科学进步不只是验证闭环，更是解释框架的跃迁](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829932&idx=3&sn=3a6e4a9aa556f396055df31ca5ae3681)
 
 2026-04-08 09:34:00
 
@@ -58668,21 +58684,15 @@
 
 
 
-### [小红书、京东、蚂蚁、平安等-7-位专家复盘-AI-落地实战](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829893&idx=2&sn=3c41f4c694c4c13ae9b6ee2c6d7bb4f9)
-
-2026-04-07 09:31:00
-
-
-
 ### [Claude-越更越废？AMD-AI-负责人甩出-23-万次调用记录：已“变蠢+摆烂”，复杂工程根本干不了](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829893&idx=1&sn=19cc057a0440c4453ac2da7ac9f7efbb)
 
 2026-04-07 09:31:00
 
 
 
-### [Google-开源实验性多智能体编排测试平台-Scion](https://www.infoq.com/news/2026/04/google-agent-testbed-scion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [小红书、京东、蚂蚁、平安等-7-位专家复盘-AI-落地实战](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829893&idx=2&sn=3c41f4c694c4c13ae9b6ee2c6d7bb4f9)
 
-2026-04-07 08:00:00
+2026-04-07 09:31:00
 
 
 
@@ -58692,13 +58702,13 @@
 
 
 
-### [Helidon-4.4.0-发布：Java-框架内建-AI-智能体编排与虚拟线程优化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281011&idx=4&sn=f151f082392e4926dffaa481193e5284)
+### [Google-开源实验性多智能体编排测试平台-Scion](https://www.infoq.com/news/2026/04/google-agent-testbed-scion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-07 05:05:00
+2026-04-07 08:00:00
 
 
 
-### [AI-时代的架构治理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281011&idx=3&sn=37a518d8c555d9a3d1d51f1a3a2be803)
+### [Karpathy-亲手终结了-RAG-的草莽时代：LLM-Wiki-工作流深度解析](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281011&idx=1&sn=bfb28cca9dd167fb2b4497a4a5f1bd06)
 
 2026-04-07 05:05:00
 
@@ -58710,7 +58720,13 @@
 
 
 
-### [Karpathy-亲手终结了-RAG-的草莽时代：LLM-Wiki-工作流深度解析](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281011&idx=1&sn=bfb28cca9dd167fb2b4497a4a5f1bd06)
+### [AI-时代的架构治理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281011&idx=3&sn=37a518d8c555d9a3d1d51f1a3a2be803)
+
+2026-04-07 05:05:00
+
+
+
+### [Helidon-4.4.0-发布：Java-框架内建-AI-智能体编排与虚拟线程优化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281011&idx=4&sn=f151f082392e4926dffaa481193e5284)
 
 2026-04-07 05:05:00
 
@@ -58788,25 +58804,25 @@
 
 
 
-### [Pinterest-部署生产级模型上下文协议生态系统，赋能-AI-智能体工作流](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280955&idx=3&sn=ef6721746b5c1dcc572b79683714aba6)
-
-2026-04-06 03:56:00
-
-
-
 ### [Cursor-3-发布：从代码编辑器向智能体控制台的范式演进](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280955&idx=1&sn=2904f5287cb95a7278730801e83a3c14)
 
 2026-04-06 03:56:00
 
 
 
-### [智能体-AI-模式强化软件工程规范性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=3&sn=76ac18dbf80f87809d9e738aa46e1587)
+### [Pinterest-部署生产级模型上下文协议生态系统，赋能-AI-智能体工作流](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280955&idx=3&sn=ef6721746b5c1dcc572b79683714aba6)
+
+2026-04-06 03:56:00
+
+
+
+### [智谱-AI-2025-财报深度分析：Token-价值重塑与-Agentic-Engineering-演进](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=1&sn=540cb500367b6720714eda9649abf5a0)
 
 2026-04-05 02:15:00
 
 
 
-### [智谱-AI-2025-财报深度分析：Token-价值重塑与-Agentic-Engineering-演进](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=1&sn=540cb500367b6720714eda9649abf5a0)
+### [智能体-AI-模式强化软件工程规范性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=3&sn=76ac18dbf80f87809d9e738aa46e1587)
 
 2026-04-05 02:15:00
 
@@ -58890,13 +58906,13 @@
 
 
 
-### [Claude-Code-泄露的代码里，处处写着：这家公司人品不行](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280673&idx=1&sn=8ed4844f428cdebcf4c35f89d6695302)
+### [Get-笔记的断舍离清单：我们拒绝过的那些“高级”-AI-功能](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280673&idx=2&sn=be24341546f97b47deff21f498d7ac90)
 
 2026-04-02 01:57:00
 
 
 
-### [Get-笔记的断舍离清单：我们拒绝过的那些“高级”-AI-功能](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280673&idx=2&sn=be24341546f97b47deff21f498d7ac90)
+### [Claude-Code-泄露的代码里，处处写着：这家公司人品不行](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280673&idx=1&sn=8ed4844f428cdebcf4c35f89d6695302)
 
 2026-04-02 01:57:00
 
@@ -59004,13 +59020,13 @@
 
 
 
-### [OpenClaw-火了之后，企业真正缺的不是更聪明的龙虾，而是一套上岗体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280528&idx=1&sn=3ace2b4374f323fe50bf2efaf6df93a4)
+### [终于不用跟图表死磕了！这个-Skill-让-OpenClaw-直接封神](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280528&idx=2&sn=370dee86813e2ff49b207c44de23a7fb)
 
 2026-03-31 05:31:00
 
 
 
-### [终于不用跟图表死磕了！这个-Skill-让-OpenClaw-直接封神](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280528&idx=2&sn=370dee86813e2ff49b207c44de23a7fb)
+### [OpenClaw-火了之后，企业真正缺的不是更聪明的龙虾，而是一套上岗体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280528&idx=1&sn=3ace2b4374f323fe50bf2efaf6df93a4)
 
 2026-03-31 05:31:00
 
@@ -59088,13 +59104,7 @@
 
 
 
-### [Sonatype-推出-Guide，强化-AI-辅助代码生成的安全性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280425&idx=4&sn=10561c288f7329036c3a128e349a84e6)
-
-2026-03-30 07:56:00
-
-
-
-### [英伟达早不靠-GPU-躺赢！黄仁勋终极预判：10-亿程序员时代将至，AI-智能彻底廉价](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280425&idx=3&sn=e0b587690ed2ce245ac5d644dfd7bceb)
+### [通义实验室推出-CoPaw：更适合打工人的国产-AI-Agent-深度测评](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280425&idx=1&sn=0197a4b941a377b43cf57c8214c56e40)
 
 2026-03-30 07:56:00
 
@@ -59106,7 +59116,13 @@
 
 
 
-### [通义实验室推出-CoPaw：更适合打工人的国产-AI-Agent-深度测评](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280425&idx=1&sn=0197a4b941a377b43cf57c8214c56e40)
+### [英伟达早不靠-GPU-躺赢！黄仁勋终极预判：10-亿程序员时代将至，AI-智能彻底廉价](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280425&idx=3&sn=e0b587690ed2ce245ac5d644dfd7bceb)
+
+2026-03-30 07:56:00
+
+
+
+### [Sonatype-推出-Guide，强化-AI-辅助代码生成的安全性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280425&idx=4&sn=10561c288f7329036c3a128e349a84e6)
 
 2026-03-30 07:56:00
 
@@ -59148,13 +59164,7 @@
 
 
 
-### [Claude-Code-过度设计？OpenClaw-背后极简引擎-Pi-的设计哲学](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=1&sn=4ba4c2ab4cb2bef777168e8a605e0dda)
-
-2026-03-29 02:16:00
-
-
-
-### [AutoGenesis：基于-AI-+-MCP-的跨平台自动化测试实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=2&sn=d4fdbed74b0ceeb7f2697d04de17764a)
+### [苹果优化其基础模型的上下文窗口管理能力](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=4&sn=a43e5eaf00a9ef3cd6061093fee4c918)
 
 2026-03-29 02:16:00
 
@@ -59166,7 +59176,13 @@
 
 
 
-### [苹果优化其基础模型的上下文窗口管理能力](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=4&sn=a43e5eaf00a9ef3cd6061093fee4c918)
+### [AutoGenesis：基于-AI-+-MCP-的跨平台自动化测试实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=2&sn=d4fdbed74b0ceeb7f2697d04de17764a)
+
+2026-03-29 02:16:00
+
+
+
+### [Claude-Code-过度设计？OpenClaw-背后极简引擎-Pi-的设计哲学](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=1&sn=4ba4c2ab4cb2bef777168e8a605e0dda)
 
 2026-03-29 02:16:00
 
@@ -59178,7 +59194,7 @@
 
 
 
-### [谷歌发布-TurboQuant：KV-缓存-6-倍无损压缩技术深度解析](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280138&idx=1&sn=81b519987f4126b84b39aabb302ee85c)
+### [AI-编码助手并未加快交付速度，因为编码从来都不是瓶颈](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280138&idx=3&sn=fd930cbce93918c839b651212cec4649)
 
 2026-03-28 02:16:00
 
@@ -59190,7 +59206,7 @@
 
 
 
-### [AI-编码助手并未加快交付速度，因为编码从来都不是瓶颈](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280138&idx=3&sn=fd930cbce93918c839b651212cec4649)
+### [谷歌发布-TurboQuant：KV-缓存-6-倍无损压缩技术深度解析](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280138&idx=1&sn=81b519987f4126b84b39aabb302ee85c)
 
 2026-03-28 02:16:00
 
@@ -59316,7 +59332,7 @@
 
 
 
-### [突破泛化瓶颈：阿里云智能运维-Agent-评测体系实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279895&idx=2&sn=843c9289f128440ba12b3c0d96a657c3)
+### [Sora-关停背后：为啥它没跑成“视频版-ChatGPT”？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279895&idx=4&sn=22366f045354917507d6596d1546d94d)
 
 2026-03-26 05:48:00
 
@@ -59328,7 +59344,7 @@
 
 
 
-### [Sora-关停背后：为啥它没跑成“视频版-ChatGPT”？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279895&idx=4&sn=22366f045354917507d6596d1546d94d)
+### [突破泛化瓶颈：阿里云智能运维-Agent-评测体系实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279895&idx=2&sn=843c9289f128440ba12b3c0d96a657c3)
 
 2026-03-26 05:48:00
 
@@ -59340,13 +59356,13 @@
 
 
 
-### [告别“黑箱”养虾！腾讯云可观测平台给您的-OpenClaw-装上“透视眼”](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694979&idx=2&sn=f74f6231126c8d373ab73549c144559a)
+### [零废话！一文讲透从-0-构建-AI-Agent](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694979&idx=1&sn=569b414bdfd11c1685727730d20a27c5)
 
 2026-03-26 00:46:00
 
 
 
-### [零废话！一文讲透从-0-构建-AI-Agent](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694979&idx=1&sn=569b414bdfd11c1685727730d20a27c5)
+### [告别“黑箱”养虾！腾讯云可观测平台给您的-OpenClaw-装上“透视眼”](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694979&idx=2&sn=f74f6231126c8d373ab73549c144559a)
 
 2026-03-26 00:46:00
 
@@ -59520,13 +59536,13 @@
 
 
 
-### [Claude-Code-激进升级：AI-直接操控电脑，正面挑战-OpenClaw](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279611&idx=1&sn=6d11d88f25b49e7acb47238a755ef84e)
+### [基于-AI-的机器人攻陷微软、DataDog-和-CNCF-项目中的-GitHub-Actions-工作流](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279611&idx=3&sn=446af69f0456dcfb7c9751d8f396d442)
 
 2026-03-24 05:29:00
 
 
 
-### [基于-AI-的机器人攻陷微软、DataDog-和-CNCF-项目中的-GitHub-Actions-工作流](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279611&idx=3&sn=446af69f0456dcfb7c9751d8f396d442)
+### [Claude-Code-激进升级：AI-直接操控电脑，正面挑战-OpenClaw](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279611&idx=1&sn=6d11d88f25b49e7acb47238a755ef84e)
 
 2026-03-24 05:29:00
 
@@ -59640,7 +59656,7 @@
 
 
 
-### [Moltbook-新规太狠了：Agent-闯祸全算人类头上，免责条款拉满！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279368&idx=4&sn=7480f99e7cefcbb2504b94a17fc9d8b1)
+### [AI-两天推翻-20-年工作习惯！Karpathy-百行代码开源项目“封神”，AI-替你通宵肝研究、战绩可查](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279368&idx=2&sn=d3a0862f34212d4d7ed04d05b2243ca4)
 
 2026-03-22 02:15:00
 
@@ -59652,7 +59668,7 @@
 
 
 
-### [AI-两天推翻-20-年工作习惯！Karpathy-百行代码开源项目“封神”，AI-替你通宵肝研究、战绩可查](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279368&idx=2&sn=d3a0862f34212d4d7ed04d05b2243ca4)
+### [Moltbook-新规太狠了：Agent-闯祸全算人类头上，免责条款拉满！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279368&idx=4&sn=7480f99e7cefcbb2504b94a17fc9d8b1)
 
 2026-03-22 02:15:00
 
@@ -59688,13 +59704,13 @@
 
 
 
-### [一条被开发者踩出来的路：OpenClaw“涌进”飞书](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=1&sn=df9c9e62014f2e25a7c328ab188713cf)
+### [从云原生到-AI-原生：模型引发的新一代基础设施构建](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=2&sn=6d8ba96895a96533341f323699885f02)
 
 2026-03-20 08:07:00
 
 
 
-### [从云原生到-AI-原生：模型引发的新一代基础设施构建](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=2&sn=6d8ba96895a96533341f323699885f02)
+### [一条被开发者踩出来的路：OpenClaw“涌进”飞书](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=1&sn=df9c9e62014f2e25a7c328ab188713cf)
 
 2026-03-20 08:07:00
 
@@ -60000,13 +60016,13 @@
 
 
 
-### [发-token-当工资？工程师不只拿现金和期权，开始按-token-分身价了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=1&sn=a9cffbb7e9610092b439c986c12c896b)
+### [AI-编程正在终结框架时代](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=2&sn=a8a84689f7d2f6cf7ca3fd9631e12a3f)
 
 2026-03-18 07:08:00
 
 
 
-### [AI-编程正在终结框架时代](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=2&sn=a8a84689f7d2f6cf7ca3fd9631e12a3f)
+### [发-token-当工资？工程师不只拿现金和期权，开始按-token-分身价了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=1&sn=a9cffbb7e9610092b439c986c12c896b)
 
 2026-03-18 07:08:00
 
@@ -60108,7 +60124,7 @@
 
 
 
-### [工业级-LLM-数据工程：北京大学-DCAI-团队-DataFlow-框架的架构设计与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278712&idx=3&sn=f373e7d32b1d8b121a31284cfddeab3d)
+### [黄仁勋-GTC-2026-演讲实录：所有-SaaS-公司都将消失；Token-成本全球最低；“龙虾”创造了历史；Feynman-架构已在路上](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278712&idx=1&sn=5eb2cfd8dac5d0113d85959727def1b2)
 
 2026-03-16 23:21:00
 
@@ -60120,7 +60136,7 @@
 
 
 
-### [黄仁勋-GTC-2026-演讲实录：所有-SaaS-公司都将消失；Token-成本全球最低；“龙虾”创造了历史；Feynman-架构已在路上](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278712&idx=1&sn=5eb2cfd8dac5d0113d85959727def1b2)
+### [工业级-LLM-数据工程：北京大学-DCAI-团队-DataFlow-框架的架构设计与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278712&idx=3&sn=f373e7d32b1d8b121a31284cfddeab3d)
 
 2026-03-16 23:21:00
 
@@ -60132,7 +60148,7 @@
 
 
 
-### [NVIDIA-BlueField-4-CMX-上下文内存存储介绍](https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/)
+### [使用-NVIDIA-DGX-Spark-扩展自主-AI-智能体和工作负载](https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/)
 
 2026-03-16 20:30:00
 
@@ -60144,7 +60160,7 @@
 
 
 
-### [使用-NVIDIA-DGX-Spark-扩展自主-AI-智能体和工作负载](https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/)
+### [NVIDIA-BlueField-4-CMX-上下文内存存储介绍](https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/)
 
 2026-03-16 20:30:00
 
@@ -60318,7 +60334,7 @@
 
 
 
-### [Anthropic-工程师都离不开！深夜随手撸出的开源神器，被-OpenAl-高价收购，23-人创业逆袭](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278388&idx=1&sn=dd0405764dd251af789595ee5f2710ee)
+### [规模化人工判断：Dropbox-如何借助大语言模型优化-RAG-系统标注](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278388&idx=4&sn=3d9d968d3bde311ebff3b81df3f6073c)
 
 2026-03-15 02:16:00
 
@@ -60330,7 +60346,7 @@
 
 
 
-### [规模化人工判断：Dropbox-如何借助大语言模型优化-RAG-系统标注](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278388&idx=4&sn=3d9d968d3bde311ebff3b81df3f6073c)
+### [Anthropic-工程师都离不开！深夜随手撸出的开源神器，被-OpenAl-高价收购，23-人创业逆袭](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278388&idx=1&sn=dd0405764dd251af789595ee5f2710ee)
 
 2026-03-15 02:16:00
 
@@ -60354,13 +60370,13 @@
 
 
 
-### [来自-GitHub-的数据表明，AI-工具正在创造“便利循环”，重塑开发者的语言选择](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278241&idx=3&sn=a32c109a6e0b58aa9ac9668596a6fe7d)
+### [Rspress-2.0-发布：AI-原生文档、更快启动速度与全新设计主题](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278241&idx=4&sn=8784bd1bdf1523357b9f597c1e57cf05)
 
 2026-03-14 04:21:00
 
 
 
-### [Rspress-2.0-发布：AI-原生文档、更快启动速度与全新设计主题](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278241&idx=4&sn=8784bd1bdf1523357b9f597c1e57cf05)
+### [来自-GitHub-的数据表明，AI-工具正在创造“便利循环”，重塑开发者的语言选择](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278241&idx=3&sn=a32c109a6e0b58aa9ac9668596a6fe7d)
 
 2026-03-14 04:21:00
 
@@ -60408,13 +60424,13 @@
 
 
 
-### [OpenClaw-之父惊叹中国速度！大厂集体杀入新战场：用-AI-批量制造“一人公司”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278170&idx=1&sn=76d8b0c9f1207395dc821c3315ac2f34)
+### [“传统设计流程已死”！IDE-成-Claude-设计负责人新宠：Anthropic-人人写代码，最不怕-Bug](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278170&idx=2&sn=0787d2d40d2523722c8ffab8d6ff5dd5)
 
 2026-03-13 03:08:00
 
 
 
-### [“传统设计流程已死”！IDE-成-Claude-设计负责人新宠：Anthropic-人人写代码，最不怕-Bug](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278170&idx=2&sn=0787d2d40d2523722c8ffab8d6ff5dd5)
+### [OpenClaw-之父惊叹中国速度！大厂集体杀入新战场：用-AI-批量制造“一人公司”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278170&idx=1&sn=76d8b0c9f1207395dc821c3315ac2f34)
 
 2026-03-13 03:08:00
 
@@ -60546,13 +60562,13 @@
 
 
 
-### [OpenClaw-走红背后：Agent、AI-Coding-与团队协作的新问题](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=4&sn=8f8aab3df875465c87b5351c77fbe66e)
+### [.md-编译了个人认知，什么来编译企业的认知？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=2&sn=5d22b4fb6068687e15d3b59d2b998cb7)
 
 2026-03-11 07:06:00
 
 
 
-### [.md-编译了个人认知，什么来编译企业的认知？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=2&sn=5d22b4fb6068687e15d3b59d2b998cb7)
+### [OpenClaw-走红背后：Agent、AI-Coding-与团队协作的新问题](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=4&sn=8f8aab3df875465c87b5351c77fbe66e)
 
 2026-03-11 07:06:00
 
@@ -60696,13 +60712,13 @@
 
 
 
-### [OpenViking-x-OpenClaw：开箱即用-解决-Agent-的长期记忆困局](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247518720&idx=1&sn=7d779257a93ee5581d3cb0afe469778e)
+### [Vibe-Coding-一键部署——火山引擎推出-Supabase，-驱动-Agent-应用快速上线](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247518720&idx=2&sn=74698bbbbcbfd267c0f858ecbc61b066)
 
 2026-03-09 10:05:00
 
 
 
-### [Vibe-Coding-一键部署——火山引擎推出-Supabase，-驱动-Agent-应用快速上线](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247518720&idx=2&sn=74698bbbbcbfd267c0f858ecbc61b066)
+### [OpenViking-x-OpenClaw：开箱即用-解决-Agent-的长期记忆困局](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247518720&idx=1&sn=7d779257a93ee5581d3cb0afe469778e)
 
 2026-03-09 10:05:00
 
@@ -60720,13 +60736,13 @@
 
 
 
-### [Cursor-经历生死存亡](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277616&idx=1&sn=93d33fabd5541e797fb5640a07ef0496)
+### [Cloudflare：我们如何用-AI-在一周内重构-Next.js](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277616&idx=3&sn=e3e44dc08b543636cdb026edca5b7689)
 
 2026-03-09 08:12:00
 
 
 
-### [Cloudflare：我们如何用-AI-在一周内重构-Next.js](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277616&idx=3&sn=e3e44dc08b543636cdb026edca5b7689)
+### [Cursor-经历生死存亡](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277616&idx=1&sn=93d33fabd5541e797fb5640a07ef0496)
 
 2026-03-09 08:12:00
 
@@ -60782,7 +60798,7 @@ http://antirez.com/news/162
 
 
 
-### [Claude-Code-之父自曝刘慈欣铁粉！不写-PRD、不设职称，Anthropic-如何连续推出两个-AI-爆款？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277501&idx=1&sn=7badf6996890515e42ef23afc1763ec7)
+### [智械盛宴下的孤岛：AI、资本与知识生态的隐秘危机](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277501&idx=3&sn=ba486dfc64801c2ad85045e5d0605e06)
 
 2026-03-08 02:16:00
 
@@ -60794,7 +60810,7 @@ http://antirez.com/news/162
 
 
 
-### [智械盛宴下的孤岛：AI、资本与知识生态的隐秘危机](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277501&idx=3&sn=ba486dfc64801c2ad85045e5d0605e06)
+### [Claude-Code-之父自曝刘慈欣铁粉！不写-PRD、不设职称，Anthropic-如何连续推出两个-AI-爆款？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277501&idx=1&sn=7badf6996890515e42ef23afc1763ec7)
 
 2026-03-08 02:16:00
 
@@ -60854,13 +60870,7 @@ http://antirez.com/news/162
 
 
 
-### [GPT-5.4-发布，OpenClaw-的能力要被替代？OpenAI-新模型会自己用电脑了，还顺手把编程能力拉满](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=1&sn=93ab0fed3b2a135bdc363e5665967bf4)
-
-2026-03-06 04:39:00
-
-
-
-### [智能体时代的人月神话](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=2&sn=85a2346dc7331e1fc62dee5ad287fd4d)
+### [AI“氛围编程”威胁开源，维护者面临危机](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=4&sn=113a0d7fb3649c53bb8820a068946f24)
 
 2026-03-06 04:39:00
 
@@ -60872,7 +60882,13 @@ http://antirez.com/news/162
 
 
 
-### [AI“氛围编程”威胁开源，维护者面临危机](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=4&sn=113a0d7fb3649c53bb8820a068946f24)
+### [智能体时代的人月神话](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=2&sn=85a2346dc7331e1fc62dee5ad287fd4d)
+
+2026-03-06 04:39:00
+
+
+
+### [GPT-5.4-发布，OpenClaw-的能力要被替代？OpenAI-新模型会自己用电脑了，还顺手把编程能力拉满](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=1&sn=93ab0fed3b2a135bdc363e5665967bf4)
 
 2026-03-06 04:39:00
 
@@ -60920,13 +60936,13 @@ http://antirez.com/news/162
 
 
 
-### [岗位一朝被-Meta-砍掉，工程师转头训练小狗敲键盘，竟靠-Claude-把乱码做成了游戏，还开源了！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828841&idx=1&sn=4355842525d951398bad92b6f0dc00bd)
+### [“2016-款吃灰-Mac-被-AI-救活了！我几乎没写代码，却‘造’出了一个能跑通的-FreeBSD-Wi-Fi-驱动”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828841&idx=2&sn=20e7612458670d3ba073c26c6c9d7929)
 
 2026-03-04 07:59:00
 
 
 
-### [“2016-款吃灰-Mac-被-AI-救活了！我几乎没写代码，却‘造’出了一个能跑通的-FreeBSD-Wi-Fi-驱动”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828841&idx=2&sn=20e7612458670d3ba073c26c6c9d7929)
+### [岗位一朝被-Meta-砍掉，工程师转头训练小狗敲键盘，竟靠-Claude-把乱码做成了游戏，还开源了！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828841&idx=1&sn=4355842525d951398bad92b6f0dc00bd)
 
 2026-03-04 07:59:00
 
@@ -60938,21 +60954,15 @@ http://antirez.com/news/162
 
 
 
-### [专为-macOS-设计的强大键盘自定义工具-|-开源日报-No.883](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247494083&idx=1&sn=4396e448cbf48ed42f4ec91c4468e4bf)
-
-2026-03-04 00:00:00
-
-
-
 ### [自主网络运营框架的新智能体](https://cloud.google.com/blog/topics/telecommunications/new-agents-for-the-autonomous-network-operations-framework/)
 
 2026-03-04 00:00:00
 
 
 
-### [从被动到主动：利用-LLM-填补网络钓鱼防护缺口](https://blog.cloudflare.com/email-security-phishing-gap-llm/)
+### [专为-macOS-设计的强大键盘自定义工具-|-开源日报-No.883](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247494083&idx=1&sn=4396e448cbf48ed42f4ec91c4468e4bf)
 
-2026-03-03 14:00:08
+2026-03-04 00:00:00
 
 
 
@@ -60962,13 +60972,19 @@ http://antirez.com/news/162
 
 
 
-### [2026-年-Cloudflare-威胁报告发布](https://blog.cloudflare.com/2026-threat-report/)
+### [从被动到主动：利用-LLM-填补网络钓鱼防护缺口](https://blog.cloudflare.com/email-security-phishing-gap-llm/)
+
+2026-03-03 14:00:08
+
+
+
+### [Google-发布智能体架构扩展原则](https://www.infoq.com/news/2026/03/google-multi-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-03-03 14:00:00
 
 
 
-### [Google-发布智能体架构扩展原则](https://www.infoq.com/news/2026/03/google-multi-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [2026-年-Cloudflare-威胁报告发布](https://blog.cloudflare.com/2026-threat-report/)
 
 2026-03-03 14:00:00
 
@@ -60986,13 +61002,13 @@ http://antirez.com/news/162
 
 
 
-### [Claude-被美封杀后，Anthropic-CEO-回应一切！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828795&idx=2&sn=20b7ba56af56d048e551639959de3077)
+### [AI-写代码，让你付出的代价是什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828795&idx=3&sn=45f13af1721127bec8d3912920528964)
 
 2026-03-03 08:11:00
 
 
 
-### [AI-写代码，让你付出的代价是什么？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828795&idx=3&sn=45f13af1721127bec8d3912920528964)
+### [Claude-被美封杀后，Anthropic-CEO-回应一切！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828795&idx=2&sn=20b7ba56af56d048e551639959de3077)
 
 2026-03-03 08:11:00
 
@@ -61004,7 +61020,7 @@ http://antirez.com/news/162
 
 
 
-### [AI-开发时代的“能力暴露与禁止空间”方法论：TPDD-与高层测试闭环](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276940&idx=3&sn=2e0fe2b6cd76cc6916099b8b0257b57e)
+### [AI-是否已经杀死了敏捷宣言](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276940&idx=4&sn=44b070885ea37f742d1fdc47a61c81f3)
 
 2026-03-03 06:43:00
 
@@ -61016,7 +61032,7 @@ http://antirez.com/news/162
 
 
 
-### [AI-是否已经杀死了敏捷宣言](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276940&idx=4&sn=44b070885ea37f742d1fdc47a61c81f3)
+### [AI-开发时代的“能力暴露与禁止空间”方法论：TPDD-与高层测试闭环](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276940&idx=3&sn=2e0fe2b6cd76cc6916099b8b0257b57e)
 
 2026-03-03 06:43:00
 
@@ -61034,13 +61050,13 @@ http://antirez.com/news/162
 
 
 
-### [为-RAG-AI-应用设计私网连接](https://cloud.google.com/blog/products/networking/design-private-connectivity-for-rag-ai-apps/)
+### [给-LLM-赋予人格纯粹是优秀的工程实践](https://seangoedecke.com/giving-llms-a-personality/)
 
 2026-03-03 00:00:00
 
 
 
-### [给-LLM-赋予人格纯粹是优秀的工程实践](https://seangoedecke.com/giving-llms-a-personality/)
+### [为-RAG-AI-应用设计私网连接](https://cloud.google.com/blog/products/networking/design-private-connectivity-for-rag-ai-apps/)
 
 2026-03-03 00:00:00
 
@@ -61112,13 +61128,13 @@ http://antirez.com/news/162
 
 
 
-### [深入了解-Eventarc-Advanced](https://cloud.google.com/blog/products/application-modernization/getting-to-know-eventarc-advanced/)
+### [从“凭感觉测试”到持续评估：构建可靠的-AI-智能体](https://cloud.google.com/blog/topics/developers-practitioners/from-vibe-checks-to-continuous-evaluation-engineering-reliable-ai-agents/)
 
 2026-02-28 00:00:00
 
 
 
-### [从“凭感觉测试”到持续评估：构建可靠的-AI-智能体](https://cloud.google.com/blog/topics/developers-practitioners/from-vibe-checks-to-continuous-evaluation-engineering-reliable-ai-agents/)
+### [深入了解-Eventarc-Advanced](https://cloud.google.com/blog/products/application-modernization/getting-to-know-eventarc-advanced/)
 
 2026-02-28 00:00:00
 
@@ -61208,13 +61224,13 @@ http://antirez.com/news/162
 
 
 
-### [Vercel-如何构建针对编程智能体的-AEO-追踪系统](https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents)
+### [任何人都能构建智能体，但运行它们需要一个平台---Vercel](https://vercel.com/blog/anyone-can-build-agents-but-it-takes-a-platform-to-run-them)
 
 2026-02-09 13:00:00
 
 
 
-### [任何人都能构建智能体，但运行它们需要一个平台---Vercel](https://vercel.com/blog/anyone-can-build-agents-but-it-takes-a-platform-to-run-them)
+### [Vercel-如何构建针对编程智能体的-AEO-追踪系统](https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents)
 
 2026-02-09 13:00:00
 
@@ -61232,13 +61248,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-产品用户留存仅三个月周期？对话王咏刚：“不和-AI-协作过项目，你就不是合格程序员”-|-万有引力](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828079&idx=1&sn=93a911194a4e1f17a61661025462ecb9)
+### [警钟敲响！Hinton-最新万字演讲：怒怼乔姆斯基、定义“不朽计算”、揭示人类唯一生路](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828079&idx=2&sn=774af098fd47c021bcfe501132287f3a)
 
 2026-02-09 10:29:00
 
 
 
-### [警钟敲响！Hinton-最新万字演讲：怒怼乔姆斯基、定义“不朽计算”、揭示人类唯一生路](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828079&idx=2&sn=774af098fd47c021bcfe501132287f3a)
+### [AI-产品用户留存仅三个月周期？对话王咏刚：“不和-AI-协作过项目，你就不是合格程序员”-|-万有引力](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247828079&idx=1&sn=93a911194a4e1f17a61661025462ecb9)
 
 2026-02-09 10:29:00
 
@@ -61364,13 +61380,13 @@ http://antirez.com/news/162
 
 
 
-### [退隐-3-年后回归，周末写的-AI-一夜刷屏、一周拿下-10-万-Star-增速超-Linux，Clawdbot-之父首次长谈：如今几乎不看自己发布的代码](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827870&idx=1&sn=3a2d4e170c491fcc462373b82704b762)
+### [9999-元的-iPhone-16-PM-连“2+2”都算不对？排查-3-天以为是自己菜，最终发现是硬件-Bug](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827870&idx=2&sn=5bb5851e120dfb04ad9cae70b04930fa)
 
 2026-02-02 10:20:00
 
 
 
-### [9999-元的-iPhone-16-PM-连“2+2”都算不对？排查-3-天以为是自己菜，最终发现是硬件-Bug](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827870&idx=2&sn=5bb5851e120dfb04ad9cae70b04930fa)
+### [退隐-3-年后回归，周末写的-AI-一夜刷屏、一周拿下-10-万-Star-增速超-Linux，Clawdbot-之父首次长谈：如今几乎不看自己发布的代码](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827870&idx=1&sn=3a2d4e170c491fcc462373b82704b762)
 
 2026-02-02 10:20:00
 
@@ -61388,13 +61404,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-如何影响技能形成？](https://seangoedecke.com/how-does-ai-impact-skill-formation/)
+### [Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month/)
 
 2026-01-31 00:00:00
 
 
 
-### [Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month/)
+### [AI-如何影响技能形成？](https://seangoedecke.com/how-does-ai-impact-skill-formation/)
 
 2026-01-31 00:00:00
 
@@ -61412,13 +61428,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827847&idx=3&sn=1983768b722b9af62d02f7d799b7365f)
+### [50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827847&idx=1&sn=1ca5c181146ef05d753c1761eb348aa3)
 
 2026-01-30 10:54:00
 
 
 
-### [50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827847&idx=1&sn=1ca5c181146ef05d753c1761eb348aa3)
+### [OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827847&idx=3&sn=1983768b722b9af62d02f7d799b7365f)
 
 2026-01-30 10:54:00
 
@@ -61454,13 +61470,13 @@ http://antirez.com/news/162
 
 
 
-### [新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273560&idx=3&sn=195407687856484627763b5a6173bb0a)
+### [不跟英伟达走老路，这家-GPU-公司的技术架构藏着哪些关键解？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273560&idx=1&sn=735a850083595389d3313cc67ad9f3b9)
 
 2026-01-29 06:52:00
 
 
 
-### [不跟英伟达走老路，这家-GPU-公司的技术架构藏着哪些关键解？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273560&idx=1&sn=735a850083595389d3313cc67ad9f3b9)
+### [新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273560&idx=3&sn=195407687856484627763b5a6173bb0a)
 
 2026-01-29 06:52:00
 
@@ -61484,13 +61500,7 @@ http://antirez.com/news/162
 
 
 
-### [介绍适用于-.NET-的-Google-Cloud-Vertex-AI-扩展](https://cloud.google.com/blog/topics/developers-practitioners/introducing-google-cloud-vertex-ai-extensions-for-net/)
-
-2026-01-29 00:00:00
-
-
-
-### [超越聊天机器人：可信-AI-蓝图](https://developers.googleblog.com/beyond-the-chatbot-a-blueprint-for-trustable-ai/)
+### [2025-年的-Spanner](https://cloud.google.com/blog/products/databases/spanner-in-2025/)
 
 2026-01-29 00:00:00
 
@@ -61502,7 +61512,13 @@ http://antirez.com/news/162
 
 
 
-### [2025-年的-Spanner](https://cloud.google.com/blog/products/databases/spanner-in-2025/)
+### [超越聊天机器人：可信-AI-蓝图](https://developers.googleblog.com/beyond-the-chatbot-a-blueprint-for-trustable-ai/)
+
+2026-01-29 00:00:00
+
+
+
+### [介绍适用于-.NET-的-Google-Cloud-Vertex-AI-扩展](https://cloud.google.com/blog/topics/developers-practitioners/introducing-google-cloud-vertex-ai-extensions-for-net/)
 
 2026-01-29 00:00:00
 
@@ -61532,13 +61548,13 @@ http://antirez.com/news/162
 
 
 
-### [一行-Rust-没写过！仅-1-个月，他用-Claude-迁移了-10-万行-JavaScript-代码](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827777&idx=2&sn=7836715b286cc8cf9712ef8e400316f0)
+### [多模态和编程能力可以兼得吗？Kimi-新模型-K2.5-实测](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827777&idx=1&sn=293eb2a364c84d5c914930669012991f)
 
 2026-01-28 11:35:00
 
 
 
-### [多模态和编程能力可以兼得吗？Kimi-新模型-K2.5-实测](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827777&idx=1&sn=293eb2a364c84d5c914930669012991f)
+### [一行-Rust-没写过！仅-1-个月，他用-Claude-迁移了-10-万行-JavaScript-代码](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827777&idx=2&sn=7836715b286cc8cf9712ef8e400316f0)
 
 2026-01-28 11:35:00
 
@@ -61562,13 +61578,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-Agent-是长期运行的“风险系统”，如果你还只在防-Prompt-Injection，说明已经落后一代了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273399&idx=4&sn=26a680f68aa8cfddc3c6a61733964faa)
+### [从局部最优到全局跃迁：关于企业“智慧运营中枢”模式的构建与实践思考](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273399&idx=2&sn=dd10070485c7f62b1f8188a67f973086)
 
 2026-01-28 06:48:00
 
 
 
-### [从局部最优到全局跃迁：关于企业“智慧运营中枢”模式的构建与实践思考](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273399&idx=2&sn=dd10070485c7f62b1f8188a67f973086)
+### [AI-Agent-是长期运行的“风险系统”，如果你还只在防-Prompt-Injection，说明已经落后一代了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273399&idx=4&sn=26a680f68aa8cfddc3c6a61733964faa)
 
 2026-01-28 06:48:00
 
@@ -61616,13 +61632,7 @@ http://antirez.com/news/162
 
 
 
-### [8B-端侧写作智能体-AgentCPM-Report-开源，DeepResearch-终于本地化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273321&idx=4&sn=f6d6f9065928d26ae8a7cb7c442f8a8d)
-
-2026-01-27 14:28:00
-
-
-
-### [数据土壤，决胜-AI-下半场：一场关于企业-Data+AI-战略的炉边思辨](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273321&idx=3&sn=03ed39816cd0bba85ef07cc95db31c90)
+### [前端同事看走眼了，这个“游戏网页”其实全是-AI-写的!](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273321&idx=1&sn=a0996735f6d9ec6b7ec521b3aaf01343)
 
 2026-01-27 14:28:00
 
@@ -61634,7 +61644,13 @@ http://antirez.com/news/162
 
 
 
-### [前端同事看走眼了，这个“游戏网页”其实全是-AI-写的!](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273321&idx=1&sn=a0996735f6d9ec6b7ec521b3aaf01343)
+### [数据土壤，决胜-AI-下半场：一场关于企业-Data+AI-战略的炉边思辨](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273321&idx=3&sn=03ed39816cd0bba85ef07cc95db31c90)
+
+2026-01-27 14:28:00
+
+
+
+### [8B-端侧写作智能体-AgentCPM-Report-开源，DeepResearch-终于本地化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273321&idx=4&sn=f6d6f9065928d26ae8a7cb7c442f8a8d)
 
 2026-01-27 14:28:00
 
@@ -61652,7 +61668,7 @@ http://antirez.com/news/162
 
 
 
-### [“氛围编码”2-年攒下的烂摊子，正在逼我重新手写代码！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827678&idx=3&sn=37794a8523326c46c41c39adf16473c3)
+### [编程门槛被压到-799-美元？“那个拿着-Mac-Mini+Claude-的「门外汉」，抢走了程序员-3-个月的活！”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827678&idx=1&sn=a9b4e21835a3d3d5a70d42dbef6728a1)
 
 2026-01-27 09:48:00
 
@@ -61664,7 +61680,7 @@ http://antirez.com/news/162
 
 
 
-### [编程门槛被压到-799-美元？“那个拿着-Mac-Mini+Claude-的「门外汉」，抢走了程序员-3-个月的活！”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827678&idx=1&sn=a9b4e21835a3d3d5a70d42dbef6728a1)
+### [“氛围编码”2-年攒下的烂摊子，正在逼我重新手写代码！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827678&idx=3&sn=37794a8523326c46c41c39adf16473c3)
 
 2026-01-27 09:48:00
 
@@ -61706,13 +61722,13 @@ http://antirez.com/news/162
 
 
 
-### [利用-Hook-为你的工作流定制-Gemini-CLI](https://developers.googleblog.com/tailor-gemini-cli-to-your-workflow-with-hooks/)
+### [BigQuery-新增生成式-AI-函数，助力更优数据分析](https://cloud.google.com/blog/products/data-analytics/new-bigquery-gen-ai-functions-for-better-data-analysis/)
 
 2026-01-27 00:00:00
 
 
 
-### [BigQuery-新增生成式-AI-函数，助力更优数据分析](https://cloud.google.com/blog/products/data-analytics/new-bigquery-gen-ai-functions-for-better-data-analysis/)
+### [利用-Hook-为你的工作流定制-Gemini-CLI](https://developers.googleblog.com/tailor-gemini-cli-to-your-workflow-with-hooks/)
 
 2026-01-27 00:00:00
 
@@ -61790,7 +61806,7 @@ http://antirez.com/news/162
 
 
 
-### [Bengio-15-年前论文再夺-AAAI-奖！AI-正告别单纯炫技，走向真实世界](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273118&idx=3&sn=b79a8933387304493a328d2f286e38f8)
+### [硅谷刷屏的-ClawdBot，让-Mac-mini-卖爆了！创始人爆料：一人开发、100%-AI-写代码，全开源却留-0.00001%-给全网来-hack](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273118&idx=1&sn=62f6c04e8e9ccacbe29fc2d5a894bd5b)
 
 2026-01-26 07:29:00
 
@@ -61802,7 +61818,7 @@ http://antirez.com/news/162
 
 
 
-### [硅谷刷屏的-ClawdBot，让-Mac-mini-卖爆了！创始人爆料：一人开发、100%-AI-写代码，全开源却留-0.00001%-给全网来-hack](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273118&idx=1&sn=62f6c04e8e9ccacbe29fc2d5a894bd5b)
+### [Bengio-15-年前论文再夺-AAAI-奖！AI-正告别单纯炫技，走向真实世界](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273118&idx=3&sn=b79a8933387304493a328d2f286e38f8)
 
 2026-01-26 07:29:00
 
@@ -61862,13 +61878,13 @@ http://antirez.com/news/162
 
 
 
-### [Linux-之父自爆：近-20-年不做程序员、没碰过-AI-编程、压力全来自于“人”](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247634187&idx=1&sn=728d495a9b6b1cacfc27d50c25a11961)
+### [AI-助手浏览器自动化，实时性能追踪分析专家-|-开源日报-No.861](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493977&idx=1&sn=b2a241c498bcfbd02a45824d59224c8c)
 
 2026-01-25 00:02:00
 
 
 
-### [AI-助手浏览器自动化，实时性能追踪分析专家-|-开源日报-No.861](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493977&idx=1&sn=b2a241c498bcfbd02a45824d59224c8c)
+### [Linux-之父自爆：近-20-年不做程序员、没碰过-AI-编程、压力全来自于“人”](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247634187&idx=1&sn=728d495a9b6b1cacfc27d50c25a11961)
 
 2026-01-25 00:02:00
 
@@ -61892,7 +61908,7 @@ http://antirez.com/news/162
 
 
 
-### [微软为-MCP-服务器发布了-Azure-函数支持](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272880&idx=4&sn=470ab9a6e9f79dadf16299b220a51a07)
+### [烧-2-万亿美元却难用？Gary-Marcus-狂喷-AI-赛道不靠谱：推理模型只是“模仿秀”，OpenAI-一年后倒闭？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272880&idx=1&sn=3b79af574fdcbcc0afe4ebc2459d8392)
 
 2026-01-24 02:16:00
 
@@ -61904,7 +61920,7 @@ http://antirez.com/news/162
 
 
 
-### [烧-2-万亿美元却难用？Gary-Marcus-狂喷-AI-赛道不靠谱：推理模型只是“模仿秀”，OpenAI-一年后倒闭？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272880&idx=1&sn=3b79af574fdcbcc0afe4ebc2459d8392)
+### [微软为-MCP-服务器发布了-Azure-函数支持](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272880&idx=4&sn=470ab9a6e9f79dadf16299b220a51a07)
 
 2026-01-24 02:16:00
 
@@ -61976,13 +61992,13 @@ http://antirez.com/news/162
 
 
 
-### [走出开发者泡沫，在-AI-泡沫中生存](https://stackoverflow.blog/2026/01/23/get-out-of-your-developer-bubble-to-survive-the-ai-bubble/)
+### [AI-可以让开发者的效率提升-10-倍……在制造技术债方面](https://stackoverflow.blog/2026/01/23/ai-can-10x-developers-in-creating-tech-debt/)
 
 2026-01-23 08:40:00
 
 
 
-### [AI-可以让开发者的效率提升-10-倍……在制造技术债方面](https://stackoverflow.blog/2026/01/23/ai-can-10x-developers-in-creating-tech-debt/)
+### [走出开发者泡沫，在-AI-泡沫中生存](https://stackoverflow.blog/2026/01/23/get-out-of-your-developer-bubble-to-survive-the-ai-bubble/)
 
 2026-01-23 08:40:00
 
@@ -61994,13 +62010,13 @@ http://antirez.com/news/162
 
 
 
-### [Agent-不再各自为战：GitLab-Duo-构建可编排的研发智能体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272830&idx=4&sn=ee1a7604e7cb76eddd67f491610501ad)
+### [大模型圈娱乐化逼疯人！OpenAI-七年元老离职首发声：谷歌赢麻？不过是-OpenAI-失误了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272830&idx=1&sn=22c522b412836bbb7e63633818f99265)
 
 2026-01-23 07:41:00
 
 
 
-### [大模型圈娱乐化逼疯人！OpenAI-七年元老离职首发声：谷歌赢麻？不过是-OpenAI-失误了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272830&idx=1&sn=22c522b412836bbb7e63633818f99265)
+### [Agent-不再各自为战：GitLab-Duo-构建可编排的研发智能体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272830&idx=4&sn=ee1a7604e7cb76eddd67f491610501ad)
 
 2026-01-23 07:41:00
 
@@ -62084,7 +62100,7 @@ http://antirez.com/news/162
 
 
 
-### [Cursor-推出动态上下文发现功能，提升了-Token-的使用效率](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272635&idx=4&sn=5f8fa1341c69c9e67e3337eef5360782)
+### [AI-撞到“数据天花板”，一场革命正悄悄上演](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272635&idx=1&sn=0e1880bf5ae1befefac3c90696c7502a)
 
 2026-01-22 05:30:00
 
@@ -62096,7 +62112,7 @@ http://antirez.com/news/162
 
 
 
-### [AI-撞到“数据天花板”，一场革命正悄悄上演](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272635&idx=1&sn=0e1880bf5ae1befefac3c90696c7502a)
+### [Cursor-推出动态上下文发现功能，提升了-Token-的使用效率](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272635&idx=4&sn=5f8fa1341c69c9e67e3337eef5360782)
 
 2026-01-22 05:30:00
 
@@ -62114,13 +62130,13 @@ http://antirez.com/news/162
 
 
 
-### [Google-SRE-如何使用-Gemini-CLI-解决现实世界的停机故障](https://cloud.google.com/blog/topics/developers-practitioners/how-google-sres-use-gemini-cli-to-solve-real-world-outages/)
+### [Agent-Factory-回顾：与-Remik-聊聊-Antigravity-和-Nano-Banana-Pro](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-antigravity-and-nano-banana-pro-with-remik/)
 
 2026-01-22 00:00:00
 
 
 
-### [Agent-Factory-回顾：与-Remik-聊聊-Antigravity-和-Nano-Banana-Pro](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-antigravity-and-nano-banana-pro-with-remik/)
+### [Google-SRE-如何使用-Gemini-CLI-解决现实世界的停机故障](https://cloud.google.com/blog/topics/developers-practitioners/how-google-sres-use-gemini-cli-to-solve-real-world-outages/)
 
 2026-01-22 00:00:00
 
@@ -62210,7 +62226,7 @@ http://antirez.com/news/162
 
 
 
-### [谷歌发布适用于多智能体的八种设计模式](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272529&idx=3&sn=00de31e566a8ccba94bfa8fe6e98cd5c)
+### [架构彻底重构！DeepSeek-新模型代码曝光，要来的-V4-让国内外都坐不住了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272529&idx=1&sn=900a2ddc0b3b5e7b7c7ba70097cc3f59)
 
 2026-01-21 03:59:00
 
@@ -62222,7 +62238,7 @@ http://antirez.com/news/162
 
 
 
-### [架构彻底重构！DeepSeek-新模型代码曝光，要来的-V4-让国内外都坐不住了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272529&idx=1&sn=900a2ddc0b3b5e7b7c7ba70097cc3f59)
+### [谷歌发布适用于多智能体的八种设计模式](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272529&idx=3&sn=00de31e566a8ccba94bfa8fe6e98cd5c)
 
 2026-01-21 03:59:00
 
@@ -62300,13 +62316,13 @@ http://antirez.com/news/162
 
 
 
-### [每-10-年一次的“开发者淘汰战”，自-1969-年就已开局！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827452&idx=2&sn=a2f956c5bbfa84cc824e25e00414db59)
+### [马斯克甩出王炸，X-平台推荐算法重磅开源，6-小时斩获-1.6k-Star，放话：没有对手这样做！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827452&idx=1&sn=f7a42bfece4e357895625ccc170c5066)
 
 2026-01-20 08:45:00
 
 
 
-### [马斯克甩出王炸，X-平台推荐算法重磅开源，6-小时斩获-1.6k-Star，放话：没有对手这样做！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827452&idx=1&sn=f7a42bfece4e357895625ccc170c5066)
+### [每-10-年一次的“开发者淘汰战”，自-1969-年就已开局！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827452&idx=2&sn=a2f956c5bbfa84cc824e25e00414db59)
 
 2026-01-20 08:45:00
 
@@ -62318,13 +62334,13 @@ http://antirez.com/news/162
 
 
 
-### [从数据到决策：AI-驱动的-Quick-BI-架构设计与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272373&idx=2&sn=c66e1a4f2d6934221c10b5605443eb28)
+### [刚刚，马斯克开源基于-Grok-的-X-推荐算法：Transformer-接管亿级排序](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272373&idx=1&sn=068346857367a9b2250fff4f2c6739a1)
 
 2026-01-20 08:35:00
 
 
 
-### [刚刚，马斯克开源基于-Grok-的-X-推荐算法：Transformer-接管亿级排序](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272373&idx=1&sn=068346857367a9b2250fff4f2c6739a1)
+### [从数据到决策：AI-驱动的-Quick-BI-架构设计与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272373&idx=2&sn=c66e1a4f2d6934221c10b5605443eb28)
 
 2026-01-20 08:35:00
 
@@ -62420,13 +62436,13 @@ http://antirez.com/news/162
 
 
 
-### [FACTS-基准测试套件问世，用于评估大型语言模型的事实准确性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272245&idx=4&sn=e9373a46409ab53a45f73e9dc8fc6cb1)
+### [Claude-Code-之父的自白：非科班、辍学，却要革程序员的命](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272245&idx=1&sn=d2f47c337142c1f99131c1936875a6ed)
 
 2026-01-19 07:04:00
 
 
 
-### [Claude-Code-之父的自白：非科班、辍学，却要革程序员的命](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272245&idx=1&sn=d2f47c337142c1f99131c1936875a6ed)
+### [FACTS-基准测试套件问世，用于评估大型语言模型的事实准确性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272245&idx=4&sn=e9373a46409ab53a45f73e9dc8fc6cb1)
 
 2026-01-19 07:04:00
 
@@ -62468,7 +62484,7 @@ http://antirez.com/news/162
 
 
 
-### [谷歌发布-Gemma-Scope-2，深化对-LLM-行为的理解](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272073&idx=3&sn=ee78164deff3f2441bd6ee2d7fd81d98)
+### [Agent-不是渐进升级，而是要“换代”了：Cursor-工程负责人放话未来三到六个月，行业将迎来大变局](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272073&idx=1&sn=e6cb79c96f2f160515fe40a95e591201)
 
 2026-01-18 02:16:00
 
@@ -62480,13 +62496,13 @@ http://antirez.com/news/162
 
 
 
-### [Agent-不是渐进升级，而是要“换代”了：Cursor-工程负责人放话未来三到六个月，行业将迎来大变局](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272073&idx=1&sn=e6cb79c96f2f160515fe40a95e591201)
+### [谷歌发布-Gemma-Scope-2，深化对-LLM-行为的理解](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272073&idx=3&sn=ee78164deff3f2441bd6ee2d7fd81d98)
 
 2026-01-18 02:16:00
 
 
 
-### [谷歌推出-Conductor：一款面向-Gemini-CLI-的上下文驱动开发扩展](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272015&idx=4&sn=481fba56713aac5b46d03eb8514bcce4)
+### [烧掉数万亿-Token、数百-Agent-连跑一周：Cursor“从零写浏览器”，结果是拼装人类代码？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272015&idx=1&sn=2da79f242cb27f99a1d4bfe96fb326b1)
 
 2026-01-17 05:26:00
 
@@ -62498,7 +62514,7 @@ http://antirez.com/news/162
 
 
 
-### [烧掉数万亿-Token、数百-Agent-连跑一周：Cursor“从零写浏览器”，结果是拼装人类代码？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272015&idx=1&sn=2da79f242cb27f99a1d4bfe96fb326b1)
+### [谷歌推出-Conductor：一款面向-Gemini-CLI-的上下文驱动开发扩展](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272015&idx=4&sn=481fba56713aac5b46d03eb8514bcce4)
 
 2026-01-17 05:26:00
 
@@ -62516,13 +62532,13 @@ http://antirez.com/news/162
 
 
 
-### [加密货币骗子正在招募开源-AI-开发者](https://seangoedecke.com/gas-and-ralph/)
+### [云-CISO-视角：使用-SAIF-构建的实用指南](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-practical-guidance-building-with-saif/)
 
 2026-01-17 00:00:00
 
 
 
-### [云-CISO-视角：使用-SAIF-构建的实用指南](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-practical-guidance-building-with-saif/)
+### [加密货币骗子正在招募开源-AI-开发者](https://seangoedecke.com/gas-and-ralph/)
 
 2026-01-17 00:00:00
 
@@ -62534,13 +62550,13 @@ http://antirez.com/news/162
 
 
 
-### [那个固执的法国老头走了，带走了硅谷最后的理想主义](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827224&idx=3&sn=54f71a5e19a3a04a18d108dba160c8ea)
+### [员工一律禁用-AI！50-年老牌游戏公司下发最严禁令，CEO-直言：“内部没人真的看好”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827224&idx=1&sn=da3bd6736b60fc18b732713347b961cd)
 
 2026-01-16 11:53:00
 
 
 
-### [员工一律禁用-AI！50-年老牌游戏公司下发最严禁令，CEO-直言：“内部没人真的看好”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827224&idx=1&sn=da3bd6736b60fc18b732713347b961cd)
+### [那个固执的法国老头走了，带走了硅谷最后的理想主义](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827224&idx=3&sn=54f71a5e19a3a04a18d108dba160c8ea)
 
 2026-01-16 11:53:00
 
@@ -62564,13 +62580,13 @@ http://antirez.com/news/162
 
 
 
-### [首个智能体商业信任协议来了！支付宝携手千问-App、淘宝闪购等发布-AI-商业协议-ACT](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271949&idx=4&sn=3a43ad877457a6ae7639f7aebfb8b7cb)
+### [活久见！连-Linux-之父等“顽固派”大佬，都在用-AI-编程了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271949&idx=2&sn=5403496ba528628cd0ea24f9f71894a5)
 
 2026-01-16 04:16:00
 
 
 
-### [活久见！连-Linux-之父等“顽固派”大佬，都在用-AI-编程了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271949&idx=2&sn=5403496ba528628cd0ea24f9f71894a5)
+### [首个智能体商业信任协议来了！支付宝携手千问-App、淘宝闪购等发布-AI-商业协议-ACT](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271949&idx=4&sn=3a43ad877457a6ae7639f7aebfb8b7cb)
 
 2026-01-16 04:16:00
 
@@ -62624,7 +62640,7 @@ http://antirez.com/news/162
 
 
 
-### [规范驱动开发：让架构变得可执行](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271879&idx=3&sn=8da105291b8c873b4bdbef421f7c73ea)
+### [全靠-Claude-Code-10-天赶工上线，Cowork-删用户-11G-文件不含糊！核心研发：长时间打磨再发布很难成功](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271879&idx=1&sn=15abbdaa41bc589212bb4adc4f56ebbd)
 
 2026-01-15 03:56:00
 
@@ -62636,7 +62652,7 @@ http://antirez.com/news/162
 
 
 
-### [全靠-Claude-Code-10-天赶工上线，Cowork-删用户-11G-文件不含糊！核心研发：长时间打磨再发布很难成功](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271879&idx=1&sn=15abbdaa41bc589212bb4adc4f56ebbd)
+### [规范驱动开发：让架构变得可执行](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271879&idx=3&sn=8da105291b8c873b4bdbef421f7c73ea)
 
 2026-01-15 03:56:00
 
@@ -62738,13 +62754,13 @@ http://antirez.com/news/162
 
 
 
-### [Anthropic-深夜放出王炸！白领饭碗要被-AI-砸了？网友：不支持-Linux，差评](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271670&idx=1&sn=fe9ef22ad86bf22684e14c4fdd657e0a)
+### [大模型狂飙-2025：一篇文理清从模型到智能体的架构演进](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247693948&idx=1&sn=3e557a7e45c7f8cea9600a2373591d83)
 
 2026-01-13 00:46:00
 
 
 
-### [大模型狂飙-2025：一篇文理清从模型到智能体的架构演进](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247693948&idx=1&sn=3e557a7e45c7f8cea9600a2373591d83)
+### [Anthropic-深夜放出王炸！白领饭碗要被-AI-砸了？网友：不支持-Linux，差评](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271670&idx=1&sn=fe9ef22ad86bf22684e14c4fdd657e0a)
 
 2026-01-13 00:46:00
 
@@ -62828,7 +62844,7 @@ http://antirez.com/news/162
 
 
 
-### [软件开发人员认为无需关注却可能会影响其工作的那些事](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271024&idx=4&sn=48719260c90057038ffc52d1dfb353fa)
+### [Anthropic-突然封禁第三方工具调用-Claude，Cursor、OpenCode、xAI-集体“中枪”！项目做到一半突遭中断，官方解释是“误伤”？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271024&idx=1&sn=04338ed648c5243ca2dba6d1abecd9f1)
 
 2026-01-10 04:04:00
 
@@ -62840,7 +62856,7 @@ http://antirez.com/news/162
 
 
 
-### [Anthropic-突然封禁第三方工具调用-Claude，Cursor、OpenCode、xAI-集体“中枪”！项目做到一半突遭中断，官方解释是“误伤”？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271024&idx=1&sn=04338ed648c5243ca2dba6d1abecd9f1)
+### [软件开发人员认为无需关注却可能会影响其工作的那些事](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271024&idx=4&sn=48719260c90057038ffc52d1dfb353fa)
 
 2026-01-10 04:04:00
 
@@ -62918,13 +62934,13 @@ http://antirez.com/news/162
 
 
 
-### [Cloudflare-年度回顾：AI-机器人疯狂爬网、后量子加密普及率达-50%、Go-语言用户翻倍](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270772&idx=3&sn=3b8ba3867dec0e2155d7539ecc05cafe)
+### [“AI-火了，我们却快完了！”顶级开源框架-Tailwind-之父含泪裁掉-75%兄弟：半年后，这个项目可能就没了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270772&idx=1&sn=49528f2332109608ec57809ce6fa856a)
 
 2026-01-08 05:25:00
 
 
 
-### [“AI-火了，我们却快完了！”顶级开源框架-Tailwind-之父含泪裁掉-75%兄弟：半年后，这个项目可能就没了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270772&idx=1&sn=49528f2332109608ec57809ce6fa856a)
+### [Cloudflare-年度回顾：AI-机器人疯狂爬网、后量子加密普及率达-50%、Go-语言用户翻倍](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270772&idx=3&sn=3b8ba3867dec0e2155d7539ecc05cafe)
 
 2026-01-08 05:25:00
 
@@ -62954,25 +62970,25 @@ http://antirez.com/news/162
 
 
 
-### [微软预览-Foundry-Agent-Service-长期记忆功能，简化状态管理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270716&idx=4&sn=6351b5022834841e22261d2bf54dbbd1)
-
-2026-01-07 10:03:00
-
-
-
 ### [阿里云的“反差”2025：于无声处寻找-ASI](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270716&idx=1&sn=11d707f96e6bef26c2107b2192de0ee7)
 
 2026-01-07 10:03:00
 
 
 
-### [AI-+-地图可视化：Nano-Banana-生成手绘地图](https://mp.weixin.qq.com/s?__biz=Mzg3NTU4OTc3OA==&mid=2247500646&idx=1&sn=e2e0300956c5ed6fa717bd479d3c11fc)
+### [微软预览-Foundry-Agent-Service-长期记忆功能，简化状态管理](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270716&idx=4&sn=6351b5022834841e22261d2bf54dbbd1)
+
+2026-01-07 10:03:00
+
+
+
+### [2-天速通小米-MiMo-Flash-V2，vLLM-Kunlun-Plugin-助力昆仑芯高效适配最新大模型](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606277&idx=1&sn=3e7e09d3575e1730b47853109d493517)
 
 2026-01-07 10:02:00
 
 
 
-### [2-天速通小米-MiMo-Flash-V2，vLLM-Kunlun-Plugin-助力昆仑芯高效适配最新大模型](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247606277&idx=1&sn=3e7e09d3575e1730b47853109d493517)
+### [AI-+-地图可视化：Nano-Banana-生成手绘地图](https://mp.weixin.qq.com/s?__biz=Mzg3NTU4OTc3OA==&mid=2247500646&idx=1&sn=e2e0300956c5ed6fa717bd479d3c11fc)
 
 2026-01-07 10:02:00
 
@@ -63056,13 +63072,13 @@ http://antirez.com/news/162
 
 
 
-### [Swiggy-内部-AI-助手升级：Text-to-SQL-不够用了，Agent-开始接管数据分析](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270484&idx=4&sn=53cf71c97e57635e471e9848b5176f21)
+### [独家对话前华为天才少年李元庆：首款规模化具身智能产品中国造！多机异构是未来方向](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270484&idx=2&sn=85d55d8ef75ab643f95d2690f0753c13)
 
 2026-01-06 00:38:00
 
 
 
-### [独家对话前华为天才少年李元庆：首款规模化具身智能产品中国造！多机异构是未来方向](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270484&idx=2&sn=85d55d8ef75ab643f95d2690f0753c13)
+### [Swiggy-内部-AI-助手升级：Text-to-SQL-不够用了，Agent-开始接管数据分析](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270484&idx=4&sn=53cf71c97e57635e471e9848b5176f21)
 
 2026-01-06 00:38:00
 
@@ -63110,13 +63126,13 @@ http://antirez.com/news/162
 
 
 
-### [在-AI-增强的变革流中，架构师要承担何种角色？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270322&idx=2&sn=6f9c887e8790b69aa722c2caf4a42f32)
+### [“养团队造语言”时代终结？Rust-传奇人物用-Claude-造出新开源编程语言，AI-写下万行代码：大模型上限很高，我学会了高效用它！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270322&idx=1&sn=4793a37790abeef41385a803582acdb4)
 
 2026-01-05 05:53:00
 
 
 
-### [“养团队造语言”时代终结？Rust-传奇人物用-Claude-造出新开源编程语言，AI-写下万行代码：大模型上限很高，我学会了高效用它！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270322&idx=1&sn=4793a37790abeef41385a803582acdb4)
+### [在-AI-增强的变革流中，架构师要承担何种角色？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270322&idx=2&sn=6f9c887e8790b69aa722c2caf4a42f32)
 
 2026-01-05 05:53:00
 
@@ -63326,13 +63342,13 @@ http://antirez.com/news/162
 
 
 
-### [写-Tailwind-CSS-像在写屎山？这锅该不该它背](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547665&idx=1&sn=21316b092070177aa177878fbb1f5f1c)
+### [AMD-服务器上一个诡异的性能问题诊断历程](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556836&idx=1&sn=1a9c1be1c7886c9b3d5e6d71a3eb8119)
 
 2025-12-30 00:30:00
 
 
 
-### [AMD-服务器上一个诡异的性能问题诊断历程](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556836&idx=1&sn=1a9c1be1c7886c9b3d5e6d71a3eb8119)
+### [写-Tailwind-CSS-像在写屎山？这锅该不该它背](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547665&idx=1&sn=21316b092070177aa177878fbb1f5f1c)
 
 2025-12-30 00:30:00
 
@@ -63356,13 +63372,13 @@ http://antirez.com/news/162
 
 
 
-### [从“抖音同款”到“豆包同款”：视频云正在进入-Agent-时代](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247517862&idx=2&sn=88b0b9b110bed780b53653032390bd6a)
+### [火山引擎多媒体实验室多项成果入选-SIGGRAPH-ASIA-2025](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247517862&idx=1&sn=e6313b1c7e465c8ef553dd88f1910aea)
 
 2025-12-29 09:57:00
 
 
 
-### [火山引擎多媒体实验室多项成果入选-SIGGRAPH-ASIA-2025](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247517862&idx=1&sn=e6313b1c7e465c8ef553dd88f1910aea)
+### [从“抖音同款”到“豆包同款”：视频云正在进入-Agent-时代](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247517862&idx=2&sn=88b0b9b110bed780b53653032390bd6a)
 
 2025-12-29 09:57:00
 
@@ -63392,13 +63408,13 @@ http://antirez.com/news/162
 
 
 
-### [当-GPU-成为主角：解锁-AI-集群中那-85%-的闲置-CPU-算力](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=3&sn=574c4ecbb7a4bfbaf300a2a80f7e6ba9)
+### [万字长文｜迈向电商大模型时代，从虚拟试穿聊到电商-AIGC](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=2&sn=7953347524a772af406ac99fee3f2b8b)
 
 2025-12-29 07:03:00
 
 
 
-### [万字长文｜迈向电商大模型时代，从虚拟试穿聊到电商-AIGC](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=2&sn=7953347524a772af406ac99fee3f2b8b)
+### [当-GPU-成为主角：解锁-AI-集群中那-85%-的闲置-CPU-算力](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=3&sn=574c4ecbb7a4bfbaf300a2a80f7e6ba9)
 
 2025-12-29 07:03:00
 
@@ -63440,13 +63456,13 @@ http://antirez.com/news/162
 
 
 
-### [下一代搜索：通过-MCP-实现-AI-与-OpenSearch-的融合](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=2&sn=545af1959ff1b403061616ad26cd8356)
+### [明年让-AI-可靠地抢走你的活儿？Anthropic-首席产品官曝新年目标：大模型不拼-“更聪明”，终结“公司上-AI，员工更累”尴尬](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=1&sn=e1b8821cbe4a265630de0ecd6a290e25)
 
 2025-12-28 02:16:00
 
 
 
-### [明年让-AI-可靠地抢走你的活儿？Anthropic-首席产品官曝新年目标：大模型不拼-“更聪明”，终结“公司上-AI，员工更累”尴尬](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=1&sn=e1b8821cbe4a265630de0ecd6a290e25)
+### [下一代搜索：通过-MCP-实现-AI-与-OpenSearch-的融合](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=2&sn=545af1959ff1b403061616ad26cd8356)
 
 2025-12-28 02:16:00
 
@@ -63488,13 +63504,13 @@ http://antirez.com/news/162
 
 
 
-### [黄仁勋-200-亿美金“招安”高中辍学生！英伟达挖空-Groq-TPU-核心人才，逼财务官上位-CEO，英特尔-18A-遭弃](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269257&idx=2&sn=4151d97ff7e939cc873157af3f14453a)
+### [用完刚开源的-MiniMax，我们决定给它发个工牌](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269257&idx=1&sn=f9f43c855d9fd004ff034ba3409a0a38)
 
 2025-12-26 13:58:00
 
 
 
-### [用完刚开源的-MiniMax，我们决定给它发个工牌](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269257&idx=1&sn=f9f43c855d9fd004ff034ba3409a0a38)
+### [黄仁勋-200-亿美金“招安”高中辍学生！英伟达挖空-Groq-TPU-核心人才，逼财务官上位-CEO，英特尔-18A-遭弃](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269257&idx=2&sn=4151d97ff7e939cc873157af3f14453a)
 
 2025-12-26 13:58:00
 
@@ -63530,13 +63546,13 @@ http://antirez.com/news/162
 
 
 
-### [一口气看完了-200+企业的-300-多个-AI-案例，我发现了什么？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651268349&idx=2&sn=344ea1bf1f75644c708b94a0d5465266)
+### [告别-Agent-“泛滥成灾”：火山引擎基于-200-+企业样本的-AI-管理架构](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651268349&idx=1&sn=f062cc722072d87477cb6098390158d1)
 
 2025-12-25 05:31:00
 
 
 
-### [告别-Agent-“泛滥成灾”：火山引擎基于-200-+企业样本的-AI-管理架构](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651268349&idx=1&sn=f062cc722072d87477cb6098390158d1)
+### [一口气看完了-200+企业的-300-多个-AI-案例，我发现了什么？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651268349&idx=2&sn=344ea1bf1f75644c708b94a0d5465266)
 
 2025-12-25 05:31:00
 
@@ -63554,7 +63570,7 @@ http://antirez.com/news/162
 
 
 
-### [用-AI-取代初级开发者？AWS-CEO：这是“最愚蠢的想法之一”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826374&idx=3&sn=a10b609c866a6f3b465b0fe58834a14d)
+### [告别“硬堆料”时代：摩尔线程全功能-GPU-的技术路线图与生态突围样本](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826374&idx=1&sn=f8ea3ab335910753eaa087161c59a894)
 
 2025-12-24 11:19:00
 
@@ -63566,7 +63582,7 @@ http://antirez.com/news/162
 
 
 
-### [告别“硬堆料”时代：摩尔线程全功能-GPU-的技术路线图与生态突围样本](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826374&idx=1&sn=f8ea3ab335910753eaa087161c59a894)
+### [用-AI-取代初级开发者？AWS-CEO：这是“最愚蠢的想法之一”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826374&idx=3&sn=a10b609c866a6f3b465b0fe58834a14d)
 
 2025-12-24 11:19:00
 
@@ -63602,13 +63618,13 @@ http://antirez.com/news/162
 
 
 
-### [不仅免费，还开源？这个-AI-Mock-神器我必须曝光它](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547598&idx=1&sn=c54e9131fe49fae7627f8fc02c7ed4ac)
+### [从-CLI-原理出发，如何做好-AI-Coding](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556673&idx=1&sn=37cef41b77e152f9ee76cfdf32343cc3)
 
 2025-12-24 00:30:00
 
 
 
-### [从-CLI-原理出发，如何做好-AI-Coding](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556673&idx=1&sn=37cef41b77e152f9ee76cfdf32343cc3)
+### [不仅免费，还开源？这个-AI-Mock-神器我必须曝光它](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547598&idx=1&sn=c54e9131fe49fae7627f8fc02c7ed4ac)
 
 2025-12-24 00:30:00
 
@@ -63734,13 +63750,13 @@ http://antirez.com/news/162
 
 
 
-### [全面布局智能视频图像压缩，腾讯-TNC-编解码多项国际赛事夺魁](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649797745&idx=2&sn=9fce9ef4fb2bde2b93b181f310298d94)
+### [首发！建议你一定要看的《AI-生成代码在野安全风险研究》](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649797745&idx=1&sn=1b24760661ebfc59906142c446797eb2)
 
 2025-12-19 09:46:00
 
 
 
-### [首发！建议你一定要看的《AI-生成代码在野安全风险研究》](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649797745&idx=1&sn=1b24760661ebfc59906142c446797eb2)
+### [全面布局智能视频图像压缩，腾讯-TNC-编解码多项国际赛事夺魁](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649797745&idx=2&sn=9fce9ef4fb2bde2b93b181f310298d94)
 
 2025-12-19 09:46:00
 
@@ -63800,37 +63816,7 @@ http://antirez.com/news/162
 
 
 
-### [大模型剪枝新范式：先浓缩，再剪枝——DenoiseRotator-技术解读](https://tech.meituan.com/2025/12/19/longcat-interaction-denoiserotator.html)
-
-2025-12-19 00:00:00
-
-
-
-### [Agent-Factory-回顾：通过智能体沙盒和-Pod-快照赋能-GKE-上的智能体](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-supercharging-agents-on-gke-with-agent-sandbox-and-pod-snapshots/)
-
-2025-12-19 00:00:00
-
-
-
-### [Gemini-3-实时智能体示例](https://developers.googleblog.com/real-world-agent-examples-with-gemini-3/)
-
-2025-12-19 00:00:00
-
-
-
-### [从代码到云端：部署-AI-智能体的三个实践教程](https://cloud.google.com/blog/topics/developers-practitioners/from-code-to-cloud-three-labs-for-deploying-your-ai-agent/)
-
-2025-12-19 00:00:00
-
-
-
-### [随机舍入为何对现代生成式-AI-不可或缺](https://cloud.google.com/blog/topics/developers-practitioners/why-stochastic-rounding-is-essential-for-modern-generative-ai/)
-
-2025-12-19 00:00:00
-
-
-
-### [主动间隔重复闪卡，专业记忆算法提效-|-开源日报-No.824](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493771&idx=1&sn=56bdd5d46e5bdddb9dcd12f7ddd96e5f)
+### [优化-AlloyDB-AI-文句转-SQL-的准确性](https://cloud.google.com/blog/products/databases/optimizing-alloydb-ai-text-to-sql-accuracy/)
 
 2025-12-19 00:00:00
 
@@ -63842,7 +63828,37 @@ http://antirez.com/news/162
 
 
 
-### [优化-AlloyDB-AI-文句转-SQL-的准确性](https://cloud.google.com/blog/products/databases/optimizing-alloydb-ai-text-to-sql-accuracy/)
+### [主动间隔重复闪卡，专业记忆算法提效-|-开源日报-No.824](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493771&idx=1&sn=56bdd5d46e5bdddb9dcd12f7ddd96e5f)
+
+2025-12-19 00:00:00
+
+
+
+### [随机舍入为何对现代生成式-AI-不可或缺](https://cloud.google.com/blog/topics/developers-practitioners/why-stochastic-rounding-is-essential-for-modern-generative-ai/)
+
+2025-12-19 00:00:00
+
+
+
+### [从代码到云端：部署-AI-智能体的三个实践教程](https://cloud.google.com/blog/topics/developers-practitioners/from-code-to-cloud-three-labs-for-deploying-your-ai-agent/)
+
+2025-12-19 00:00:00
+
+
+
+### [Gemini-3-实时智能体示例](https://developers.googleblog.com/real-world-agent-examples-with-gemini-3/)
+
+2025-12-19 00:00:00
+
+
+
+### [Agent-Factory-回顾：通过智能体沙盒和-Pod-快照赋能-GKE-上的智能体](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-supercharging-agents-on-gke-with-agent-sandbox-and-pod-snapshots/)
+
+2025-12-19 00:00:00
+
+
+
+### [大模型剪枝新范式：先浓缩，再剪枝——DenoiseRotator-技术解读](https://tech.meituan.com/2025/12/19/longcat-interaction-denoiserotator.html)
 
 2025-12-19 00:00:00
 
@@ -63860,13 +63876,13 @@ http://antirez.com/news/162
 
 
 
-### [提升-Agent-的可信度后，企业会多一批好用的“数字员工”吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651267403&idx=2&sn=6815452459795a90e65b2c5631dd35af)
+### [被-KPI-耽误的打工人，可以尝试用-Token-算绩效](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651267403&idx=1&sn=974098c3e4c1e260751baa731744afcc)
 
 2025-12-18 11:26:00
 
 
 
-### [被-KPI-耽误的打工人，可以尝试用-Token-算绩效](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651267403&idx=1&sn=974098c3e4c1e260751baa731744afcc)
+### [提升-Agent-的可信度后，企业会多一批好用的“数字员工”吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651267403&idx=2&sn=6815452459795a90e65b2c5631dd35af)
 
 2025-12-18 11:26:00
 
@@ -63926,13 +63942,13 @@ http://antirez.com/news/162
 
 
 
-### [面向企业的-Gemini-3-Flash](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-flash-for-enterprises/)
+### [Cluster-Director-现已全面可用](https://cloud.google.com/blog/products/compute/cluster-director-is-now-generally-available/)
 
 2025-12-18 00:00:00
 
 
 
-### [Cluster-Director-现已全面可用](https://cloud.google.com/blog/products/compute/cluster-director-is-now-generally-available/)
+### [面向企业的-Gemini-3-Flash](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-flash-for-enterprises/)
 
 2025-12-18 00:00:00
 
@@ -64016,19 +64032,19 @@ http://antirez.com/news/162
 
 
 
-### [全面布局智能视频图像压缩，腾讯-TNC-编解码多项国际赛事夺魁](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247693567&idx=2&sn=3aa48ad8e56bcf19fe94e62202bd8a93)
-
-2025-12-17 00:45:00
-
-
-
 ### [我第一次被-AI-震惊的瞬间丨架构师坦白局](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247693567&idx=1&sn=80f6b83cba4a739163c92b3eae2ee390)
 
 2025-12-17 00:45:00
 
 
 
-### [Conductor：推出-Gemini-CLI-的上下文驱动开发](https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/)
+### [全面布局智能视频图像压缩，腾讯-TNC-编解码多项国际赛事夺魁](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247693567&idx=2&sn=3aa48ad8e56bcf19fe94e62202bd8a93)
+
+2025-12-17 00:45:00
+
+
+
+### [Gemini-3-Flash-现已集成至-Gemini-CLI](https://developers.googleblog.com/gemini-3-flash-is-now-available-in-gemini-cli/)
 
 2025-12-17 00:00:00
 
@@ -64040,7 +64056,7 @@ http://antirez.com/news/162
 
 
 
-### [Gemini-3-Flash-现已集成至-Gemini-CLI](https://developers.googleblog.com/gemini-3-flash-is-now-available-in-gemini-cli/)
+### [Conductor：推出-Gemini-CLI-的上下文驱动开发](https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/)
 
 2025-12-17 00:00:00
 
@@ -64112,13 +64128,13 @@ http://antirez.com/news/162
 
 
 
-### [员工吐槽“给-AI-擦屁股”更辛苦？揭秘企业-AI-提效的“悖论”与真拐点](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266890&idx=2&sn=cc98c86722b5e9d4b133e2c186d50043)
+### [Alex-Wang“没资格接替我”！Yann-LeCun-揭露-Meta-AI“内斗”真相，直言-AGI-是“彻头彻尾的胡扯”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266890&idx=1&sn=0885d0ab2bf1d6efca74ad7aa0ebe522)
 
 2025-12-16 06:47:00
 
 
 
-### [Alex-Wang“没资格接替我”！Yann-LeCun-揭露-Meta-AI“内斗”真相，直言-AGI-是“彻头彻尾的胡扯”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266890&idx=1&sn=0885d0ab2bf1d6efca74ad7aa0ebe522)
+### [员工吐槽“给-AI-擦屁股”更辛苦？揭秘企业-AI-提效的“悖论”与真拐点](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266890&idx=2&sn=cc98c86722b5e9d4b133e2c186d50043)
 
 2025-12-16 06:47:00
 
@@ -64148,7 +64164,7 @@ http://antirez.com/news/162
 
 
 
-### [开发者指南：ADK-多智能体模式](https://developers.googleblog.com/developers-guide-to-multi-agent-patterns-in-adk/)
+### [Google-Antigravity-IDE-集成-Google-数据云服务](https://cloud.google.com/blog/products/data-analytics/connect-google-antigravity-ide-to-googles-data-cloud-services/)
 
 2025-12-16 00:00:00
 
@@ -64160,7 +64176,7 @@ http://antirez.com/news/162
 
 
 
-### [Google-Antigravity-IDE-集成-Google-数据云服务](https://cloud.google.com/blog/products/data-analytics/connect-google-antigravity-ide-to-googles-data-cloud-services/)
+### [开发者指南：ADK-多智能体模式](https://developers.googleblog.com/developers-guide-to-multi-agent-patterns-in-adk/)
 
 2025-12-16 00:00:00
 
@@ -64184,13 +64200,13 @@ http://antirez.com/news/162
 
 
 
-### [ChatGPT-的竞争对手、快手的悄然崛起——2025-年的顶尖互联网服务](https://blog.cloudflare.com/radar-2025-year-in-review-internet-services/)
+### [2025-年-Cloudflare-Radar-年度回顾：AI-的崛起、后量子加密应用及创纪录-DDoS-攻击](https://blog.cloudflare.com/radar-2025-year-in-review/)
 
 2025-12-15 14:00:00
 
 
 
-### [2025-年-Cloudflare-Radar-年度回顾：AI-的崛起、后量子加密应用及创纪录-DDoS-攻击](https://blog.cloudflare.com/radar-2025-year-in-review/)
+### [ChatGPT-的竞争对手、快手的悄然崛起——2025-年的顶尖互联网服务](https://blog.cloudflare.com/radar-2025-year-in-review-internet-services/)
 
 2025-12-15 14:00:00
 
@@ -64226,13 +64242,13 @@ http://antirez.com/news/162
 
 
 
-### [LLM-for-AIOps：是泡沫还是银弹？智能运维的争议、破局与未来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266802&idx=3&sn=d32d3458f198e8cb3e6a3c41a9ccfe9d)
+### [OpenAI-偷装-Anthropic-Skills-实锤，ChatGPT、Codex-已植入！开发者实测-11-分钟造-PDF：比-MCP-强！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266802&idx=1&sn=10236203138765cacdc6d283d18e5d50)
 
 2025-12-15 10:26:00
 
 
 
-### [OpenAI-偷装-Anthropic-Skills-实锤，ChatGPT、Codex-已植入！开发者实测-11-分钟造-PDF：比-MCP-强！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266802&idx=1&sn=10236203138765cacdc6d283d18e5d50)
+### [LLM-for-AIOps：是泡沫还是银弹？智能运维的争议、破局与未来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266802&idx=3&sn=d32d3458f198e8cb3e6a3c41a9ccfe9d)
 
 2025-12-15 10:26:00
 
@@ -64250,13 +64266,7 @@ http://antirez.com/news/162
 
 
 
-### [A2UI-简介：一个用于代理驱动界面的开源项目](https://developers.googleblog.com/introducing-a2ui-an-open-project-for-agent-driven-interfaces/)
-
-2025-12-15 00:00:00
-
-
-
-### [使用-MCP-和-A2A-构建互联智能体系统](https://cloud.google.com/blog/topics/developers-practitioners/building-connected-agents-with-mcp-and-a2a/)
+### [全栈前后端分离开发框架：支持-AI-辅助开发-|-开源日报-No.820](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493759&idx=1&sn=6cb75c6ba4db339451af0bfcb44a9e66)
 
 2025-12-15 00:00:00
 
@@ -64268,7 +64278,13 @@ http://antirez.com/news/162
 
 
 
-### [全栈前后端分离开发框架：支持-AI-辅助开发-|-开源日报-No.820](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493759&idx=1&sn=6cb75c6ba4db339451af0bfcb44a9e66)
+### [使用-MCP-和-A2A-构建互联智能体系统](https://cloud.google.com/blog/topics/developers-practitioners/building-connected-agents-with-mcp-and-a2a/)
+
+2025-12-15 00:00:00
+
+
+
+### [A2UI-简介：一个用于代理驱动界面的开源项目](https://developers.googleblog.com/introducing-a2ui-an-open-project-for-agent-driven-interfaces/)
 
 2025-12-15 00:00:00
 
@@ -64286,13 +64302,13 @@ http://antirez.com/news/162
 
 
 
-### [10-人创业团干翻行业“潜规则”！全员必须会-AI、让跑大模型全程“裸奔”，谷歌老兵不烧钱创业](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=2&sn=6123814825ff1bdd2b167749f75c9e05)
+### [DeepSeek-倒逼-vLLM-升级！芯片内卷、MoE-横扫千模，vLLM-核心维护者独家回应：如何凭-PyTorch-坐稳推理“铁王座”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=1&sn=0ecaf7e96e9c0e148b9944c7a5fc1426)
 
 2025-12-14 02:16:00
 
 
 
-### [DeepSeek-倒逼-vLLM-升级！芯片内卷、MoE-横扫千模，vLLM-核心维护者独家回应：如何凭-PyTorch-坐稳推理“铁王座”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=1&sn=0ecaf7e96e9c0e148b9944c7a5fc1426)
+### [10-人创业团干翻行业“潜规则”！全员必须会-AI、让跑大模型全程“裸奔”，谷歌老兵不烧钱创业](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=2&sn=6123814825ff1bdd2b167749f75c9e05)
 
 2025-12-14 02:16:00
 
@@ -64322,13 +64338,13 @@ http://antirez.com/news/162
 
 
 
-### [微信公众号-MCP：Markdown-自动排版并发布到草稿箱-|-开源日报-No.818](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493757&idx=1&sn=29f3e8eb0a1344f67cd10ab995a0441e)
+### [谷歌云-CISO-视角：2026-年网络安全预测报告](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-2026-cybersecurity-forecast-report/)
 
 2025-12-13 00:00:00
 
 
 
-### [谷歌云-CISO-视角：2026-年网络安全预测报告](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-2026-cybersecurity-forecast-report/)
+### [微信公众号-MCP：Markdown-自动排版并发布到草稿箱-|-开源日报-No.818](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493757&idx=1&sn=29f3e8eb0a1344f67cd10ab995a0441e)
 
 2025-12-13 00:00:00
 
@@ -64376,13 +64392,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-盲测新模型不如-Nano-Banana-Pro？曝-Altman-要暂停-Sora，死磕-ChatGPT](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266437&idx=4&sn=967424922817b821b37425d08abec29d)
+### [谷歌最新-Gemini-Agent-爆击-GPT-5.2？人类最后考试得分见分晓！网友：Altman-又该发“红色警报”了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266437&idx=1&sn=1f74ad543734187c63b7606962a01347)
 
 2025-12-12 07:07:00
 
 
 
-### [谷歌最新-Gemini-Agent-爆击-GPT-5.2？人类最后考试得分见分晓！网友：Altman-又该发“红色警报”了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266437&idx=1&sn=1f74ad543734187c63b7606962a01347)
+### [OpenAI-盲测新模型不如-Nano-Banana-Pro？曝-Altman-要暂停-Sora，死磕-ChatGPT](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266437&idx=4&sn=967424922817b821b37425d08abec29d)
 
 2025-12-12 07:07:00
 
@@ -64448,13 +64464,13 @@ http://antirez.com/news/162
 
 
 
-### [轻松部署-k8s-应用：安全可靠的-Helm-Charts-解决方案-|-开源日报-No.817](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493756&idx=1&sn=7a4833a1154932965e23ab254e69fa76)
+### [我们如何构建多智能体系统以实现卓越的业务预测](https://cloud.google.com/blog/products/ai-machine-learning/how-we-built-a-multi-agent-system-for-superior-business-forecasting/)
 
 2025-12-12 00:00:00
 
 
 
-### [我们如何构建多智能体系统以实现卓越的业务预测](https://cloud.google.com/blog/products/ai-machine-learning/how-we-built-a-multi-agent-system-for-superior-business-forecasting/)
+### [轻松部署-k8s-应用：安全可靠的-Helm-Charts-解决方案-|-开源日报-No.817](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493756&idx=1&sn=7a4833a1154932965e23ab254e69fa76)
 
 2025-12-12 00:00:00
 
@@ -64514,13 +64530,13 @@ http://antirez.com/news/162
 
 
 
-### [搅局者来了！智谱重磅开源-AutoGLM，让“豆包手机”人人可造！官方：AI-手机不该掌握在少数厂商手中](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266336&idx=3&sn=f9c0c11e5fb5594fe5c994bcc3ebad2f)
+### [Agent-是雷声大雨点小？5-位创始人吐真言：“内争外患”还被错配、基模威胁也挺狠](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266336&idx=1&sn=d2e611a9eff6c95fcde827b02dd38e5d)
 
 2025-12-11 04:31:00
 
 
 
-### [Agent-是雷声大雨点小？5-位创始人吐真言：“内争外患”还被错配、基模威胁也挺狠](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266336&idx=1&sn=d2e611a9eff6c95fcde827b02dd38e5d)
+### [搅局者来了！智谱重磅开源-AutoGLM，让“豆包手机”人人可造！官方：AI-手机不该掌握在少数厂商手中](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266336&idx=3&sn=f9c0c11e5fb5594fe5c994bcc3ebad2f)
 
 2025-12-11 04:31:00
 
@@ -64556,13 +64572,13 @@ http://antirez.com/news/162
 
 
 
-### [快手可图与华中科技大学提出-VGT，-让任意-VLM-摇身一变成为-SOTA-图像生成模型！](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247498729&idx=1&sn=99319433006559fb5da107d4e319bfc7)
+### [从-0-到-1-搭建一个智能分析-OBS-埋点数据的-AI-Agent｜得物技术](https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247541805&idx=1&sn=e8f8207385c75b74db2eed2e731ac487)
 
 2025-12-10 10:30:00
 
 
 
-### [从-0-到-1-搭建一个智能分析-OBS-埋点数据的-AI-Agent｜得物技术](https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247541805&idx=1&sn=e8f8207385c75b74db2eed2e731ac487)
+### [快手可图与华中科技大学提出-VGT，-让任意-VLM-摇身一变成为-SOTA-图像生成模型！](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247498729&idx=1&sn=99319433006559fb5da107d4e319bfc7)
 
 2025-12-10 10:30:00
 
@@ -64574,7 +64590,7 @@ http://antirez.com/news/162
 
 
 
-### [AI-时代，软件成本真能降-90%？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825850&idx=3&sn=0e604489845547a66e990d1b20e234d0)
+### [一键清空-Win11-所有-AI！开发者“整活”，一行命令秒清-Copilot、Recall，开源狂揽-1.7k-星！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825850&idx=1&sn=df4cfb5bc74da2548552023faa184749)
 
 2025-12-10 10:03:00
 
@@ -64586,7 +64602,7 @@ http://antirez.com/news/162
 
 
 
-### [一键清空-Win11-所有-AI！开发者“整活”，一行命令秒清-Copilot、Recall，开源狂揽-1.7k-星！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825850&idx=1&sn=df4cfb5bc74da2548552023faa184749)
+### [AI-时代，软件成本真能降-90%？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825850&idx=3&sn=0e604489845547a66e990d1b20e234d0)
 
 2025-12-10 10:03:00
 
@@ -64604,13 +64620,13 @@ http://antirez.com/news/162
 
 
 
-### [不再为告警“救火”：AIOps-如何重塑腾讯音乐的智能运维体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266230&idx=2&sn=bdc20fa6b6a204b8bc04cc398d734c0f)
+### [不融资、不烧钱、不扩团队，华裔-CEO-创办的-AI-独角兽打入谷歌、Anthropic-核心供应链！如今营收近百亿](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266230&idx=1&sn=777b81be623d16a1066bbeb14e89d146)
 
 2025-12-10 05:57:00
 
 
 
-### [不融资、不烧钱、不扩团队，华裔-CEO-创办的-AI-独角兽打入谷歌、Anthropic-核心供应链！如今营收近百亿](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266230&idx=1&sn=777b81be623d16a1066bbeb14e89d146)
+### [不再为告警“救火”：AIOps-如何重塑腾讯音乐的智能运维体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266230&idx=2&sn=bdc20fa6b6a204b8bc04cc398d734c0f)
 
 2025-12-10 05:57:00
 
@@ -64634,25 +64650,7 @@ http://antirez.com/news/162
 
 
 
-### [Agent-Factory-回顾：运用-Gemini-3、AI-Studio、Antigravity-和-Nano-Banana-进行构建](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-building-with-gemini-3-ai-studio-antigravity-and-nano-banana/)
-
-2025-12-10 00:00:00
-
-
-
-### [使用-Gemini-CLI-的会话管理，精准延续上次工作](https://developers.googleblog.com/pick-up-exactly-where-you-left-off-with-session-management-in-gemini-cli/)
-
-2025-12-10 00:00:00
-
-
-
-### [AlphaEvolve-登陆-Google-Cloud](https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-on-google-cloud/)
-
-2025-12-10 00:00:00
-
-
-
-### [发布-Google-服务对模型语境协议（MCP）的官方支持](https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services/)
+### [从采用到影响：DORA-AI-能力模型投入实践](https://cloud.google.com/blog/products/ai-machine-learning/from-adoption-to-impact-putting-the-dora-ai-capabilities-model-to-work/)
 
 2025-12-10 00:00:00
 
@@ -64664,7 +64662,25 @@ http://antirez.com/news/162
 
 
 
-### [从采用到影响：DORA-AI-能力模型投入实践](https://cloud.google.com/blog/products/ai-machine-learning/from-adoption-to-impact-putting-the-dora-ai-capabilities-model-to-work/)
+### [发布-Google-服务对模型语境协议（MCP）的官方支持](https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services/)
+
+2025-12-10 00:00:00
+
+
+
+### [AlphaEvolve-登陆-Google-Cloud](https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-on-google-cloud/)
+
+2025-12-10 00:00:00
+
+
+
+### [使用-Gemini-CLI-的会话管理，精准延续上次工作](https://developers.googleblog.com/pick-up-exactly-where-you-left-off-with-session-management-in-gemini-cli/)
+
+2025-12-10 00:00:00
+
+
+
+### [Agent-Factory-回顾：运用-Gemini-3、AI-Studio、Antigravity-和-Nano-Banana-进行构建](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-building-with-gemini-3-ai-studio-antigravity-and-nano-banana/)
 
 2025-12-10 00:00:00
 
@@ -64694,13 +64710,13 @@ http://antirez.com/news/162
 
 
 
-### [GELab-Zero-技术解析：当豆包联手中兴，开源界如何守住端侧-AI-的“最后防线”？](https://mp.weixin.qq.com/s?__biz=Mzg4MTYwMzY1Mw==&mid=2247517601&idx=1&sn=0fa7251f11dd5507736fe9b2cea4011c)
+### [Replit-推出-AI-集成新功能，赋能多模型开发](https://www.infoq.com/news/2025/12/replit-ai-integrations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-12-09 10:01:00
 
 
 
-### [Replit-推出-AI-集成新功能，赋能多模型开发](https://www.infoq.com/news/2025/12/replit-ai-integrations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [GELab-Zero-技术解析：当豆包联手中兴，开源界如何守住端侧-AI-的“最后防线”？](https://mp.weixin.qq.com/s?__biz=Mzg4MTYwMzY1Mw==&mid=2247517601&idx=1&sn=0fa7251f11dd5507736fe9b2cea4011c)
 
 2025-12-09 10:01:00
 
@@ -64904,13 +64920,7 @@ http://antirez.com/news/162
 
 
 
-### [Spring-AI-1.1.1-版本现已发布](https://spring.io/blog/2025/12/05/spring-ai-1-1-1-available-now)
-
-2025-12-05 00:00:00
-
-
-
-### [AI-检测工具无法证实文本为-AI-生成](https://seangoedecke.com/ai-detection/)
+### [NVIDIA-Run:ai-模型流式传输器：加速云存储上的-LLM-推理](https://cloud.google.com/blog/products/containers-kubernetes/nvidia-runai-model-streamer-supports-cloud-storage/)
 
 2025-12-05 00:00:00
 
@@ -64922,7 +64932,13 @@ http://antirez.com/news/162
 
 
 
-### [NVIDIA-Run:ai-模型流式传输器：加速云存储上的-LLM-推理](https://cloud.google.com/blog/products/containers-kubernetes/nvidia-runai-model-streamer-supports-cloud-storage/)
+### [AI-检测工具无法证实文本为-AI-生成](https://seangoedecke.com/ai-detection/)
+
+2025-12-05 00:00:00
+
+
+
+### [Spring-AI-1.1.1-版本现已发布](https://spring.io/blog/2025/12/05/spring-ai-1-1-1-available-now)
 
 2025-12-05 00:00:00
 
@@ -64958,7 +64974,7 @@ http://antirez.com/news/162
 
 
 
-### [烧钱，能解决-AI-存储的焦虑吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265198&idx=3&sn=80dea5ecf55a4499098cbb225fdd6e21)
+### [“人人都是程序员”的梦该醒了！AI-编程“大逃杀”：Cursor-或成创业公司唯一“幸存者”，“60-分开发者”撑起最后防线](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265198&idx=1&sn=b9ff2885d2b23b74d2c8596a48ef4e18)
 
 2025-12-04 05:31:00
 
@@ -64970,7 +64986,7 @@ http://antirez.com/news/162
 
 
 
-### [“人人都是程序员”的梦该醒了！AI-编程“大逃杀”：Cursor-或成创业公司唯一“幸存者”，“60-分开发者”撑起最后防线](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265198&idx=1&sn=b9ff2885d2b23b74d2c8596a48ef4e18)
+### [烧钱，能解决-AI-存储的焦虑吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265198&idx=3&sn=80dea5ecf55a4499098cbb225fdd6e21)
 
 2025-12-04 05:31:00
 
@@ -64982,13 +64998,13 @@ http://antirez.com/news/162
 
 
 
-### [如何用-Claude-Code-生成顶级-UI](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547223&idx=1&sn=2f909b6b9df9d0e8dd5b4d0e9373f6a3)
+### [LlamaIndex-深度实战：用《长安的荔枝》学会构建智能问答系统](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556092&idx=1&sn=f1b4672bf5520d929f5370b413099830)
 
 2025-12-04 00:31:00
 
 
 
-### [LlamaIndex-深度实战：用《长安的荔枝》学会构建智能问答系统](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556092&idx=1&sn=f1b4672bf5520d929f5370b413099830)
+### [如何用-Claude-Code-生成顶级-UI](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547223&idx=1&sn=2f909b6b9df9d0e8dd5b4d0e9373f6a3)
 
 2025-12-04 00:31:00
 
@@ -65024,7 +65040,7 @@ http://antirez.com/news/162
 
 
 
-### [库克怒换苹果-AI-一号位：谷歌系不行、找微软高管救火！Siri-藏“大雷”全靠-OS-团队翻盘？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265125&idx=3&sn=bf56cef0672051038e96fed21ae4c52e)
+### [当亚马逊云科技拿到“麦克”，一年的云计算叙事都被改写了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265125&idx=1&sn=70a7d32128dd4ae022ca36d0369fb5aa)
 
 2025-12-03 11:39:00
 
@@ -65036,7 +65052,7 @@ http://antirez.com/news/162
 
 
 
-### [当亚马逊云科技拿到“麦克”，一年的云计算叙事都被改写了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265125&idx=1&sn=70a7d32128dd4ae022ca36d0369fb5aa)
+### [库克怒换苹果-AI-一号位：谷歌系不行、找微软高管救火！Siri-藏“大雷”全靠-OS-团队翻盘？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265125&idx=3&sn=bf56cef0672051038e96fed21ae4c52e)
 
 2025-12-03 11:39:00
 
@@ -65066,13 +65082,13 @@ http://antirez.com/news/162
 
 
 
-### [Cursor-一年深度开发实践：前端开发的效率革命](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547196&idx=1&sn=acacf9267d8d02212eac7c4176548891)
+### [SpecKit-在成熟-Java-项目中的-AI-编码实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556080&idx=1&sn=48bfa2ad8306dd57c81489f042cd7f18)
 
 2025-12-03 00:30:00
 
 
 
-### [SpecKit-在成熟-Java-项目中的-AI-编码实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556080&idx=1&sn=48bfa2ad8306dd57c81489f042cd7f18)
+### [Cursor-一年深度开发实践：前端开发的效率革命](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547196&idx=1&sn=acacf9267d8d02212eac7c4176548891)
 
 2025-12-03 00:30:00
 
@@ -65102,13 +65118,13 @@ http://antirez.com/news/162
 
 
 
-### [从补全到-Agentic-Edit：Trae-在代码编辑上的落地与进化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264948&idx=2&sn=c102514063223ae006c241871c548985)
+### [企业级-AI-Agent-规模化落地的避坑指南，就藏在这四大趋势里](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264948&idx=1&sn=db2cd42716016c2af1710e4dba5405d8)
 
 2025-12-02 06:48:00
 
 
 
-### [企业级-AI-Agent-规模化落地的避坑指南，就藏在这四大趋势里](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264948&idx=1&sn=db2cd42716016c2af1710e4dba5405d8)
+### [从补全到-Agentic-Edit：Trae-在代码编辑上的落地与进化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264948&idx=2&sn=c102514063223ae006c241871c548985)
 
 2025-12-02 06:48:00
 
@@ -65198,13 +65214,13 @@ http://antirez.com/news/162
 
 
 
-### [烧钱六年，Dojo-被判死刑：马斯克自研超算梦是怎么走进死胡同的？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264669&idx=2&sn=ba93a169484b30f9864eae6325490117)
+### [高中辍学闯进-OpenAI：拒绝-Vibe-Coding，用-ChatGPT-自学逆袭成-Sora-团队研究科学家](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264669&idx=1&sn=c3676996b62735b90d33922c87bf8e80)
 
 2025-11-30 02:15:00
 
 
 
-### [高中辍学闯进-OpenAI：拒绝-Vibe-Coding，用-ChatGPT-自学逆袭成-Sora-团队研究科学家](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264669&idx=1&sn=c3676996b62735b90d33922c87bf8e80)
+### [烧钱六年，Dojo-被判死刑：马斯克自研超算梦是怎么走进死胡同的？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264669&idx=2&sn=ba93a169484b30f9864eae6325490117)
 
 2025-11-30 02:15:00
 
@@ -65264,13 +65280,13 @@ http://antirez.com/news/162
 
 
 
-### [从游戏工厂到空间智能仿真：混元-3D-为何是腾讯-AI-的“侧翼突围”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264383&idx=2&sn=7999a077bf572c4b8349edc53ba6891f)
+### [8-年数字化积淀，星巴克中国技术团队开始用-Agentic-AI-改变零售](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264383&idx=1&sn=a6d93369054ebab12ba2b99fd16224ed)
 
 2025-11-28 02:05:00
 
 
 
-### [8-年数字化积淀，星巴克中国技术团队开始用-Agentic-AI-改变零售](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264383&idx=1&sn=a6d93369054ebab12ba2b99fd16224ed)
+### [从游戏工厂到空间智能仿真：混元-3D-为何是腾讯-AI-的“侧翼突围”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264383&idx=2&sn=7999a077bf572c4b8349edc53ba6891f)
 
 2025-11-28 02:05:00
 
@@ -65354,13 +65370,13 @@ http://antirez.com/news/162
 
 
 
-### [规范驱动开发：瀑布模型回潮](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264284&idx=4&sn=15bc57cc18438b3efbccec53ebe931fc)
+### [英伟达-Run:ai-没做到的，被华为开源方案实现了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264284&idx=2&sn=0a41e2eb9db43c2f7ef0b0f11b838b30)
 
 2025-11-26 09:01:00
 
 
 
-### [英伟达-Run:ai-没做到的，被华为开源方案实现了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264284&idx=2&sn=0a41e2eb9db43c2f7ef0b0f11b838b30)
+### [规范驱动开发：瀑布模型回潮](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264284&idx=4&sn=15bc57cc18438b3efbccec53ebe931fc)
 
 2025-11-26 09:01:00
 
@@ -65432,13 +65448,13 @@ http://antirez.com/news/162
 
 
 
-### [用-AI“打开”金融市场黑盒：微软亚洲研究院如何构建订单级仿真引擎](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264132&idx=2&sn=f5d370a77a7076e83f3ede5d8277d166)
+### [AI-圈现“教科书式”骗局：对外伪造千亿估值，对内裁员、四次爽约，投资人员工双双被套](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264132&idx=1&sn=c94bb224a933d7ce2ecc181e4a9e2d40)
 
 2025-11-25 04:29:00
 
 
 
-### [AI-圈现“教科书式”骗局：对外伪造千亿估值，对内裁员、四次爽约，投资人员工双双被套](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264132&idx=1&sn=c94bb224a933d7ce2ecc181e4a9e2d40)
+### [用-AI“打开”金融市场黑盒：微软亚洲研究院如何构建订单级仿真引擎](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264132&idx=2&sn=f5d370a77a7076e83f3ede5d8277d166)
 
 2025-11-25 04:29:00
 
@@ -65456,7 +65472,7 @@ http://antirez.com/news/162
 
 
 
-### [与-Black-Forest-Labs-合作，将-FLUX.2-开发版带到-Cloudflare-Workers-AI](https://blog.cloudflare.com/flux-2-workers-ai/)
+### [Spring-AI-工具响应格式转换：TOON、XML、CSV、YAML-及其他](https://spring.io/blog/2025/11/25/spring-ai-tool-response-formats)
 
 2025-11-25 00:00:00
 
@@ -65468,7 +65484,7 @@ http://antirez.com/news/162
 
 
 
-### [Spring-AI-工具响应格式转换：TOON、XML、CSV、YAML-及其他](https://spring.io/blog/2025/11/25/spring-ai-tool-response-formats)
+### [与-Black-Forest-Labs-合作，将-FLUX.2-开发版带到-Cloudflare-Workers-AI](https://blog.cloudflare.com/flux-2-workers-ai/)
 
 2025-11-25 00:00:00
 
@@ -65528,13 +65544,13 @@ http://antirez.com/news/162
 
 
 
-### [减少检索增强生成（RAG）语义缓存中的误报：以银行业为例](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263952&idx=3&sn=a2c65bfb917e6035810d26e352e62522)
+### [靠创始人亲自假扮-AI-起家，如今估值-10-亿美元！印度-CEO-公开反内卷：从不在-10-点前起床，也不开例会](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263952&idx=1&sn=14696e47347d9ca62cb19af5a5a6f9c6)
 
 2025-11-23 02:15:00
 
 
 
-### [靠创始人亲自假扮-AI-起家，如今估值-10-亿美元！印度-CEO-公开反内卷：从不在-10-点前起床，也不开例会](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263952&idx=1&sn=14696e47347d9ca62cb19af5a5a6f9c6)
+### [减少检索增强生成（RAG）语义缓存中的误报：以银行业为例](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263952&idx=3&sn=a2c65bfb917e6035810d26e352e62522)
 
 2025-11-23 02:15:00
 
@@ -65546,25 +65562,19 @@ http://antirez.com/news/162
 
 
 
-### [Anthropic-为-Claude-Code-添加了沙箱和-Web-访问功能，以实现更安全的-AI-驱动编码](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263837&idx=4&sn=02200ca9276b72f5d03f361e215034fe)
-
-2025-11-22 07:26:00
-
-
-
 ### [抛弃“级联”架构！快手-OneRec-用大模型重构推荐系统，服务成本降至-1/10](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263837&idx=2&sn=3f9d9b35599dbe6d0bd6eaa4361ff2f9)
 
 2025-11-22 07:26:00
 
 
 
-### [为什么判断新型-AI-模型优劣需要数月时间](https://seangoedecke.com/are-new-models-good/)
+### [Anthropic-为-Claude-Code-添加了沙箱和-Web-访问功能，以实现更安全的-AI-驱动编码](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263837&idx=4&sn=02200ca9276b72f5d03f361e215034fe)
 
-2025-11-22 00:00:00
+2025-11-22 07:26:00
 
 
 
-### [Vertex-AI-Studio：利用-Gemini-构建-AI-应用](https://cloud.google.com/blog/topics/developers-practitioners/build-with-gemini-in-the-vertex-ai-studio/)
+### [GKE-如何扩展至-13-万节点集群](https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/)
 
 2025-11-22 00:00:00
 
@@ -65576,7 +65586,13 @@ http://antirez.com/news/162
 
 
 
-### [GKE-如何扩展至-13-万节点集群](https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/)
+### [Vertex-AI-Studio：利用-Gemini-构建-AI-应用](https://cloud.google.com/blog/topics/developers-practitioners/build-with-gemini-in-the-vertex-ai-studio/)
+
+2025-11-22 00:00:00
+
+
+
+### [为什么判断新型-AI-模型优劣需要数月时间](https://seangoedecke.com/are-new-models-good/)
 
 2025-11-22 00:00:00
 
@@ -65612,7 +65628,7 @@ http://antirez.com/news/162
 
 
 
-### [2025-年的-Vibe-Coding-思考｜Reflections-on-Vibe-Coding-in-2025](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263781&idx=3&sn=6d847e37a29da8ce10f2b8fe1a40f74f)
+### [谷歌-24-亿美元买个壳？刚发布的“下一代-AI-IDE”被爆“复制”Windsurf，连-Bug-一起](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263781&idx=1&sn=0f1621967044e4cb98ba3554c5926495)
 
 2025-11-21 07:21:00
 
@@ -65624,7 +65640,7 @@ http://antirez.com/news/162
 
 
 
-### [谷歌-24-亿美元买个壳？刚发布的“下一代-AI-IDE”被爆“复制”Windsurf，连-Bug-一起](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263781&idx=1&sn=0f1621967044e4cb98ba3554c5926495)
+### [2025-年的-Vibe-Coding-思考｜Reflections-on-Vibe-Coding-in-2025](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263781&idx=3&sn=6d847e37a29da8ce10f2b8fe1a40f74f)
 
 2025-11-21 07:21:00
 
@@ -65648,13 +65664,13 @@ http://antirez.com/news/162
 
 
 
-### [美团-LongCat-Interaction-团队发布大模型交互系统技术报告-WOWService](https://tech.meituan.com/2025/11/21/longcat-interaction-wowservice.html)
+### [Nano-Banana-Pro-企业版可用](https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-pro-available-for-enterprise/)
 
 2025-11-21 00:00:00
 
 
 
-### [Nano-Banana-Pro-企业版可用](https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-pro-available-for-enterprise/)
+### [美团-LongCat-Interaction-团队发布大模型交互系统技术报告-WOWService](https://tech.meituan.com/2025/11/21/longcat-interaction-wowservice.html)
 
 2025-11-21 00:00:00
 
@@ -65786,13 +65802,13 @@ http://antirez.com/news/162
 
 
 
-### [怒批-Win11！马斯克、Epic-CEO-接连下场吐槽：把我的任务栏竖起来，别再逼我登录微软账户...](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825214&idx=3&sn=9e6f0449da5d8d7851653caa8976ae7e)
+### [“Linux-真正的活不是我在干”，Linus-爆料近况：近-20-年不做程序员、没碰过-AI-编程、压力全来自于“人”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825214&idx=1&sn=32b27c10fb44e8e9f377de6796df5953)
 
 2025-11-19 10:07:00
 
 
 
-### [“Linux-真正的活不是我在干”，Linus-爆料近况：近-20-年不做程序员、没碰过-AI-编程、压力全来自于“人”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825214&idx=1&sn=32b27c10fb44e8e9f377de6796df5953)
+### [怒批-Win11！马斯克、Epic-CEO-接连下场吐槽：把我的任务栏竖起来，别再逼我登录微软账户...](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825214&idx=3&sn=9e6f0449da5d8d7851653caa8976ae7e)
 
 2025-11-19 10:07:00
 
@@ -65810,13 +65826,13 @@ http://antirez.com/news/162
 
 
 
-### [即刻使用-Gemini-3-开始构建](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652160148&idx=2&sn=334fd3da7b2e36cfc3e69aebbb67ac35)
+### [Gemini-3-开启智能新纪元](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652160148&idx=1&sn=d487974a69075d390ef73f3df083705d)
 
 2025-11-19 02:04:00
 
 
 
-### [Gemini-3-开启智能新纪元](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652160148&idx=1&sn=d487974a69075d390ef73f3df083705d)
+### [即刻使用-Gemini-3-开始构建](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652160148&idx=2&sn=334fd3da7b2e36cfc3e69aebbb67ac35)
 
 2025-11-19 02:04:00
 
@@ -65852,13 +65868,13 @@ http://antirez.com/news/162
 
 
 
-### [Agent-正在终结云计算“流水线”，Infra-必须学会“思考”-|-专访无问芯穹夏立雪](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263558&idx=2&sn=6beadb4ca96d995c842fdd556d1783e6)
+### [刚刚，谷歌发布-Gemini-3：百万上下文-+-全链路-Agent-直接封神！Claude-被秒成渣了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263558&idx=1&sn=8de033ac95c546cb28129a7c32ca1a85)
 
 2025-11-18 17:25:00
 
 
 
-### [刚刚，谷歌发布-Gemini-3：百万上下文-+-全链路-Agent-直接封神！Claude-被秒成渣了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263558&idx=1&sn=8de033ac95c546cb28129a7c32ca1a85)
+### [Agent-正在终结云计算“流水线”，Infra-必须学会“思考”-|-专访无问芯穹夏立雪](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263558&idx=2&sn=6beadb4ca96d995c842fdd556d1783e6)
 
 2025-11-18 17:25:00
 
@@ -65888,13 +65904,13 @@ http://antirez.com/news/162
 
 
 
-### [Grok-4.1-强势上线！超越所有对手，拿下-LMArena-排行榜第一，事实性幻觉大幅下降](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825175&idx=3&sn=eac6032d73f319f1b90e6b9be6cead5d)
+### [被曝停薪数月、3-名员工罢工，曾两周爆卖-5-万台的-Rabbit-R1-崩了？CEO-还喊着要做“下一代-AI-硬件”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825175&idx=1&sn=d719a54059db0910053866147cb26980)
 
 2025-11-18 10:34:00
 
 
 
-### [被曝停薪数月、3-名员工罢工，曾两周爆卖-5-万台的-Rabbit-R1-崩了？CEO-还喊着要做“下一代-AI-硬件”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825175&idx=1&sn=d719a54059db0910053866147cb26980)
+### [Grok-4.1-强势上线！超越所有对手，拿下-LMArena-排行榜第一，事实性幻觉大幅下降](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247825175&idx=3&sn=eac6032d73f319f1b90e6b9be6cead5d)
 
 2025-11-18 10:34:00
 
@@ -65936,7 +65952,7 @@ http://antirez.com/news/162
 
 
 
-### [JAX：在谷歌云-TPU-上构建生产级-AI](https://developers.googleblog.com/building-production-ai-on-google-cloud-tpus-with-jax/)
+### [人工智能代理评估的方法性方案](https://cloud.google.com/blog/topics/developers-practitioners/a-methodical-approach-to-agent-evaluation/)
 
 2025-11-18 00:00:00
 
@@ -65948,7 +65964,7 @@ http://antirez.com/news/162
 
 
 
-### [人工智能代理评估的方法性方案](https://cloud.google.com/blog/topics/developers-practitioners/a-methodical-approach-to-agent-evaluation/)
+### [JAX：在谷歌云-TPU-上构建生产级-AI](https://developers.googleblog.com/building-production-ai-on-google-cloud-tpus-with-jax/)
 
 2025-11-18 00:00:00
 
@@ -66020,13 +66036,13 @@ http://antirez.com/news/162
 
 
 
-### [融合风控知识的大模型体系建设与应用实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263247&idx=2&sn=8483e909bb6f0eaf8ef98107b389cd39)
+### [入侵-30-家大型机构、Claude-自动完成-90%？Anthropic-被质疑，Yann-LeCun：他们利用可疑的研究来恐吓所有人](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263247&idx=1&sn=64a0032e5e1dabef1d5fd01fbb090694)
 
 2025-11-17 04:57:00
 
 
 
-### [入侵-30-家大型机构、Claude-自动完成-90%？Anthropic-被质疑，Yann-LeCun：他们利用可疑的研究来恐吓所有人](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263247&idx=1&sn=64a0032e5e1dabef1d5fd01fbb090694)
+### [融合风控知识的大模型体系建设与应用实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263247&idx=2&sn=8483e909bb6f0eaf8ef98107b389cd39)
 
 2025-11-17 04:57:00
 
@@ -66068,13 +66084,13 @@ http://antirez.com/news/162
 
 
 
-### [Voices-能够让-Java-应用程序快速实现文本到语音转换](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263184&idx=3&sn=6ab8c82159a3d1f85917700de90cb964)
+### [Anthropic-研究发现：仅需少量污染文档即可对-LLM-实施投毒](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263184&idx=2&sn=a43a67a3486675edd5669c295c072463)
 
 2025-11-16 02:16:00
 
 
 
-### [Anthropic-研究发现：仅需少量污染文档即可对-LLM-实施投毒](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263184&idx=2&sn=a43a67a3486675edd5669c295c072463)
+### [Voices-能够让-Java-应用程序快速实现文本到语音转换](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263184&idx=3&sn=6ab8c82159a3d1f85917700de90cb964)
 
 2025-11-16 02:16:00
 
@@ -66098,13 +66114,13 @@ http://antirez.com/news/162
 
 
 
-### [使用-BigQuery-ML-解决-Zeotap-的相似人群问题](https://cloud.google.com/blog/products/data-analytics/using-bigquery-ml-to-solve-for-the-lookalike-problem-at-zeotap/)
+### [如何使-Gemini-深度理解数据库](https://cloud.google.com/blog/products/databases/how-to-get-gemini-to-deeply-understand-your-database/)
 
 2025-11-15 00:00:00
 
 
 
-### [如何使-Gemini-深度理解数据库](https://cloud.google.com/blog/products/databases/how-to-get-gemini-to-deeply-understand-your-database/)
+### [使用-BigQuery-ML-解决-Zeotap-的相似人群问题](https://cloud.google.com/blog/products/data-analytics/using-bigquery-ml-to-solve-for-the-lookalike-problem-at-zeotap/)
 
 2025-11-15 00:00:00
 
@@ -66134,13 +66150,7 @@ http://antirez.com/news/162
 
 
 
-### [基于提示工程的人工智能如何支持软件测试](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263095&idx=4&sn=33000fe69b61851d772573cefffea34d)
-
-2025-11-14 06:28:00
-
-
-
-### [与资深-AI-架构师⼀起，解锁传统行业转型的真实挑战与破局思路](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263095&idx=3&sn=f63325e5a8401037e365a159711b39e9)
+### [全栈-AI-首考、闪购并入：阿里的第-17-个双十一故事](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263095&idx=1&sn=8bdf2df826518c9a45c810da4c93c75d)
 
 2025-11-14 06:28:00
 
@@ -66152,7 +66162,13 @@ http://antirez.com/news/162
 
 
 
-### [全栈-AI-首考、闪购并入：阿里的第-17-个双十一故事](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263095&idx=1&sn=8bdf2df826518c9a45c810da4c93c75d)
+### [与资深-AI-架构师⼀起，解锁传统行业转型的真实挑战与破局思路](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263095&idx=3&sn=f63325e5a8401037e365a159711b39e9)
+
+2025-11-14 06:28:00
+
+
+
+### [基于提示工程的人工智能如何支持软件测试](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263095&idx=4&sn=33000fe69b61851d772573cefffea34d)
 
 2025-11-14 06:28:00
 
@@ -66182,7 +66198,7 @@ http://antirez.com/news/162
 
 
 
-### [美团开源-LongCat-Audio-Codec，高效语音编解码器助力实时交互落地](https://tech.meituan.com/2025/11/14/longcat-audio-codec.html)
+### [初创公司构建多代理系统的四个步骤](https://cloud.google.com/blog/topics/startups/four-steps-for-startups-to-build-multi-agent-systems/)
 
 2025-11-14 00:00:00
 
@@ -66194,7 +66210,7 @@ http://antirez.com/news/162
 
 
 
-### [初创公司构建多代理系统的四个步骤](https://cloud.google.com/blog/topics/startups/four-steps-for-startups-to-build-multi-agent-systems/)
+### [美团开源-LongCat-Audio-Codec，高效语音编解码器助力实时交互落地](https://tech.meituan.com/2025/11/14/longcat-audio-codec.html)
 
 2025-11-14 00:00:00
 
@@ -66254,13 +66270,13 @@ http://antirez.com/news/162
 
 
 
-### [GitHub-推出-AgentHQ，Copilot-生态再扩容](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262949&idx=3&sn=4e7128ccbe7ad7eb8a4df32d9848db4a)
+### [OpenAI-深夜甩出-GPT-5.1，称更热情，更智能！网友狂吐槽：我不想和它聊天，只想用它工作](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262949&idx=1&sn=7476a57e86a2e36a29dd9303c63fdbb6)
 
 2025-11-13 02:40:00
 
 
 
-### [OpenAI-深夜甩出-GPT-5.1，称更热情，更智能！网友狂吐槽：我不想和它聊天，只想用它工作](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262949&idx=1&sn=7476a57e86a2e36a29dd9303c63fdbb6)
+### [GitHub-推出-AgentHQ，Copilot-生态再扩容](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262949&idx=3&sn=4e7128ccbe7ad7eb8a4df32d9848db4a)
 
 2025-11-13 02:40:00
 
@@ -66320,13 +66336,13 @@ http://antirez.com/news/162
 
 
 
-### [杨植麟带-Kimi-团队深夜回应：关于-K2-Thinking-爆火后的一切](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262874&idx=3&sn=353e8801346929ef1865b8b6876d4f93)
+### [颠覆传统认知！顶尖架构师眼中，决定职业生涯上限的不是技术能力｜独家对话一线架构大佬-Christian-Ciceri](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262874&idx=2&sn=41efb6a0e8f226cdecb11a5c2826cf0b)
 
 2025-11-12 05:45:00
 
 
 
-### [颠覆传统认知！顶尖架构师眼中，决定职业生涯上限的不是技术能力｜独家对话一线架构大佬-Christian-Ciceri](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262874&idx=2&sn=41efb6a0e8f226cdecb11a5c2826cf0b)
+### [杨植麟带-Kimi-团队深夜回应：关于-K2-Thinking-爆火后的一切](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262874&idx=3&sn=353e8801346929ef1865b8b6876d4f93)
 
 2025-11-12 05:45:00
 
@@ -66362,7 +66378,7 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-终于意识到，单靠微软，实现不了-AGI](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262812&idx=3&sn=d1a6c7dbe36a26f7216be763be495d69)
+### [一次性应用出现，个人独角兽崛起：顶级布道师-Jeff-Barr-论-AI-如何重塑开发者生态｜InfoQ-独家采访-Jeff-Barr](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262812&idx=1&sn=a3aadf3cd87b873b58f776babfaff35c)
 
 2025-11-11 02:36:00
 
@@ -66374,7 +66390,7 @@ http://antirez.com/news/162
 
 
 
-### [一次性应用出现，个人独角兽崛起：顶级布道师-Jeff-Barr-论-AI-如何重塑开发者生态｜InfoQ-独家采访-Jeff-Barr](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262812&idx=1&sn=a3aadf3cd87b873b58f776babfaff35c)
+### [OpenAI-终于意识到，单靠微软，实现不了-AGI](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262812&idx=3&sn=d1a6c7dbe36a26f7216be763be495d69)
 
 2025-11-11 02:36:00
 
@@ -66404,7 +66420,7 @@ http://antirez.com/news/162
 
 
 
-### [Kubernetes-和-GKE-上的自主代理-AI](https://cloud.google.com/blog/products/containers-kubernetes/agentic-ai-on-kubernetes-and-gke/)
+### [Gemini-代码助手：AI-代码审查的记忆增强](https://cloud.google.com/blog/products/ai-machine-learning/memory-for-ai-code-reviews-using-gemini-code-assist/)
 
 2025-11-11 00:00:00
 
@@ -66416,7 +66432,7 @@ http://antirez.com/news/162
 
 
 
-### [Gemini-代码助手：AI-代码审查的记忆增强](https://cloud.google.com/blog/products/ai-machine-learning/memory-for-ai-code-reviews-using-gemini-code-assist/)
+### [Kubernetes-和-GKE-上的自主代理-AI](https://cloud.google.com/blog/products/containers-kubernetes/agentic-ai-on-kubernetes-and-gke/)
 
 2025-11-11 00:00:00
 
@@ -66560,13 +66576,13 @@ http://antirez.com/news/162
 
 
 
-### [AlloyDB-AI：自动向量嵌入与向量索引](https://cloud.google.com/blog/products/databases/alloydb-ai-auto-vector-embeddings-and-auto-vector-index/)
+### [子智能体与工具智能体的应用场景分析](https://cloud.google.com/blog/topics/developers-practitioners/where-to-use-sub-agents-versus-agents-as-tools/)
 
 2025-11-08 00:00:00
 
 
 
-### [子智能体与工具智能体的应用场景分析](https://cloud.google.com/blog/topics/developers-practitioners/where-to-use-sub-agents-versus-agents-as-tools/)
+### [AlloyDB-AI：自动向量嵌入与向量索引](https://cloud.google.com/blog/products/databases/alloydb-ai-auto-vector-embeddings-and-auto-vector-index/)
 
 2025-11-08 00:00:00
 
@@ -66614,13 +66630,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-智能体未来之争：是迷你应用（GPTs）？还是模块化代码（Skills）？开发者，你站哪边？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262386&idx=3&sn=9f370ad9b64cf789e8e71fd395c58e38)
+### [打破-AI-辅助开发碎片化困境，阿里巴巴-R2C-Agent-的-AI-编程实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262386&idx=2&sn=a577ef9f5c0b2229841a23c8ac8157e6)
 
 2025-11-07 03:43:00
 
 
 
-### [打破-AI-辅助开发碎片化困境，阿里巴巴-R2C-Agent-的-AI-编程实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262386&idx=2&sn=a577ef9f5c0b2229841a23c8ac8157e6)
+### [AI-智能体未来之争：是迷你应用（GPTs）？还是模块化代码（Skills）？开发者，你站哪边？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262386&idx=3&sn=9f370ad9b64cf789e8e71fd395c58e38)
 
 2025-11-07 03:43:00
 
@@ -66638,13 +66654,13 @@ http://antirez.com/news/162
 
 
 
-### [GKE-上分层-KV-缓存加速-LLM-性能](https://cloud.google.com/blog/topics/developers-practitioners/boosting-llm-performance-with-tiered-kv-cache-on-google-kubernetes-engine/)
+### [ADK-评估中用户模拟功能发布](https://developers.googleblog.com/en/announcing-user-simulation-in-adk-evaluation/)
 
 2025-11-07 00:00:00
 
 
 
-### [ADK-评估中用户模拟功能发布](https://developers.googleblog.com/en/announcing-user-simulation-in-adk-evaluation/)
+### [GKE-上分层-KV-缓存加速-LLM-性能](https://cloud.google.com/blog/topics/developers-practitioners/boosting-llm-performance-with-tiered-kv-cache-on-google-kubernetes-engine/)
 
 2025-11-07 00:00:00
 
@@ -66686,25 +66702,25 @@ http://antirez.com/news/162
 
 
 
-### [当-AI-无所不能，你如何不可替代？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262137&idx=3&sn=a75eee3e44876e3aa163e324548d0f80)
-
-2025-11-06 09:56:00
-
-
-
 ### [95%-企业-AI-落地失败当下，另外-5%-的-CIO-在谈什么？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262137&idx=1&sn=40bdbc9c70a15891696e3c2bc667aa3d)
 
 2025-11-06 09:56:00
 
 
 
-### [TypeScript-在-AI-时代崛起：来自首席架构师-Anders-Hejlsberg-的洞见](https://github.blog/developer-skills/programming-languages-and-frameworks/typescripts-rise-in-the-ai-era-insights-from-lead-architect-anders-hejlsberg/)
+### [当-AI-无所不能，你如何不可替代？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262137&idx=3&sn=a75eee3e44876e3aa163e324548d0f80)
+
+2025-11-06 09:56:00
+
+
+
+### [文本生成视频模型的训练数据预处理](https://www.infoq.com/articles/training-data-preprocessing-for-text-to-video-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-11-06 09:00:00
 
 
 
-### [文本生成视频模型的训练数据预处理](https://www.infoq.com/articles/training-data-preprocessing-for-text-to-video-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [TypeScript-在-AI-时代崛起：来自首席架构师-Anders-Hejlsberg-的洞见](https://github.blog/developer-skills/programming-languages-and-frameworks/typescripts-rise-in-the-ai-era-insights-from-lead-architect-anders-hejlsberg/)
 
 2025-11-06 09:00:00
 
@@ -66788,13 +66804,13 @@ http://antirez.com/news/162
 
 
 
-### [构建协作式-AI：使用-ADK-构建多智能体系统开发者指南](https://cloud.google.com/blog/topics/developers-practitioners/building-collaborative-ai-a-developers-guide-to-multi-agent-systems-with-adk/)
+### [Google-Cloud-网络赋能-AI-工作负载](https://cloud.google.com/blog/products/networking/how-google-cloud-networking-supports-your-ai-workloads/)
 
 2025-11-05 00:00:00
 
 
 
-### [Google-Cloud-网络赋能-AI-工作负载](https://cloud.google.com/blog/products/networking/how-google-cloud-networking-supports-your-ai-workloads/)
+### [构建协作式-AI：使用-ADK-构建多智能体系统开发者指南](https://cloud.google.com/blog/topics/developers-practitioners/building-collaborative-ai-a-developers-guide-to-multi-agent-systems-with-adk/)
 
 2025-11-05 00:00:00
 
@@ -66884,13 +66900,13 @@ http://antirez.com/news/162
 
 
 
-### [当搜索遇见-AIGC：京东零售的“千人千面”素材生成实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261391&idx=2&sn=e480e97df9399dcae71fce0bad13296a)
+### [Python-只是前戏，JVM-才是正餐！Eclipse-开源新方案，在-K8s-上不换栈搞定-Agent](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261391&idx=1&sn=24563c8b6df10abdb6468f249dc1d1ad)
 
 2025-11-03 05:31:00
 
 
 
-### [Python-只是前戏，JVM-才是正餐！Eclipse-开源新方案，在-K8s-上不换栈搞定-Agent](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261391&idx=1&sn=24563c8b6df10abdb6468f249dc1d1ad)
+### [当搜索遇见-AIGC：京东零售的“千人千面”素材生成实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261391&idx=2&sn=e480e97df9399dcae71fce0bad13296a)
 
 2025-11-03 05:31:00
 
@@ -66920,13 +66936,13 @@ http://antirez.com/news/162
 
 
 
-### [2025-年-InfoQ-趋势报告：云计算和-DevOps-篇](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261277&idx=2&sn=2e649feb24bb38957783eb8a35928540)
+### [曾经年薪百万的架构师，如今是否要靠-AI-保饭碗？对话-5-位顶尖架构师：未来的架构师，不写代码也得懂-AI](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261277&idx=1&sn=c6da3cd7b43a8e8948c673248f3cd070)
 
 2025-11-02 02:15:00
 
 
 
-### [曾经年薪百万的架构师，如今是否要靠-AI-保饭碗？对话-5-位顶尖架构师：未来的架构师，不写代码也得懂-AI](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261277&idx=1&sn=c6da3cd7b43a8e8948c673248f3cd070)
+### [2025-年-InfoQ-趋势报告：云计算和-DevOps-篇](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261277&idx=2&sn=2e649feb24bb38957783eb8a35928540)
 
 2025-11-02 02:15:00
 
@@ -66950,13 +66966,13 @@ http://antirez.com/news/162
 
 
 
-### [理解规范驱动开发：Kiro、spec-kit-和-Tessl](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261231&idx=3&sn=4fa851b496a6442fbfa1b99f23e09c1e)
+### [Nano-Banana-拉爆谷歌营收创纪录，劈柴哥开心坏了！幕后团队曝内部“绝对优先事项清单”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261231&idx=1&sn=00302353c611ab4d7a587e396915bc42)
 
 2025-11-01 02:16:00
 
 
 
-### [Nano-Banana-拉爆谷歌营收创纪录，劈柴哥开心坏了！幕后团队曝内部“绝对优先事项清单”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261231&idx=1&sn=00302353c611ab4d7a587e396915bc42)
+### [理解规范驱动开发：Kiro、spec-kit-和-Tessl](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261231&idx=3&sn=4fa851b496a6442fbfa1b99f23e09c1e)
 
 2025-11-01 02:16:00
 
@@ -67010,7 +67026,7 @@ http://antirez.com/news/162
 
 
 
-### [Cursor-联创宣布离职，公开声明仅写了-72-个单词](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260830&idx=4&sn=3b3749cda0c80b31cbcd814de637446f)
+### [游戏研发中的-AI-转型：网易多-Agent-系统与知识工程实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260830&idx=2&sn=099f2f8737a474e09a351d4250971d17)
 
 2025-10-30 05:31:00
 
@@ -67022,7 +67038,7 @@ http://antirez.com/news/162
 
 
 
-### [游戏研发中的-AI-转型：网易多-Agent-系统与知识工程实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260830&idx=2&sn=099f2f8737a474e09a351d4250971d17)
+### [Cursor-联创宣布离职，公开声明仅写了-72-个单词](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260830&idx=4&sn=3b3749cda0c80b31cbcd814de637446f)
 
 2025-10-30 05:31:00
 
@@ -67142,13 +67158,13 @@ http://antirez.com/news/162
 
 
 
-### [Visual-Studio-正式支持-MCP](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260547&idx=4&sn=5c951438743959834a0a4f72fa2a96fb)
+### [M2-模型杀回-Coding-和-Agent-领域，MiniMax-想要「普惠智能」](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260547&idx=1&sn=d08826c10c4e5bf7dde413e8c05da6dd)
 
 2025-10-28 07:21:00
 
 
 
-### [M2-模型杀回-Coding-和-Agent-领域，MiniMax-想要「普惠智能」](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260547&idx=1&sn=d08826c10c4e5bf7dde413e8c05da6dd)
+### [Visual-Studio-正式支持-MCP](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260547&idx=4&sn=5c951438743959834a0a4f72fa2a96fb)
 
 2025-10-28 07:21:00
 
@@ -67166,7 +67182,7 @@ http://antirez.com/news/162
 
 
 
-### [Introducing-Spring-AI-Agents-and-Spring-AI-Bench](https://spring.io/blog/2025/10/28/agents-and-benchmarks)
+### [利用谷歌云和-Gemini-AI-实现-Oracle-数据自动化分析](https://cloud.google.com/blog/products/databases/integrating-oracle-with-google-cloud-for-ai-automation/)
 
 2025-10-28 00:00:00
 
@@ -67178,7 +67194,7 @@ http://antirez.com/news/162
 
 
 
-### [利用谷歌云和-Gemini-AI-实现-Oracle-数据自动化分析](https://cloud.google.com/blog/products/databases/integrating-oracle-with-google-cloud-for-ai-automation/)
+### [Introducing-Spring-AI-Agents-and-Spring-AI-Bench](https://spring.io/blog/2025/10/28/agents-and-benchmarks)
 
 2025-10-28 00:00:00
 
@@ -67244,13 +67260,13 @@ http://antirez.com/news/162
 
 
 
-### [LongCat-Video-视频生成模型正式发布，探索世界模型的第一步](https://tech.meituan.com/2025/10/27/longcat-video.html)
+### [Vertex-AI-Training-大规模训练新功能发布](https://cloud.google.com/blog/products/ai-machine-learning/new-capabilities-in-vertex-ai-training-for-large-scale-training/)
 
 2025-10-27 00:00:00
 
 
 
-### [Vertex-AI-Training-大规模训练新功能发布](https://cloud.google.com/blog/products/ai-machine-learning/new-capabilities-in-vertex-ai-training-for-large-scale-training/)
+### [LongCat-Video-视频生成模型正式发布，探索世界模型的第一步](https://tech.meituan.com/2025/10/27/longcat-video.html)
 
 2025-10-27 00:00:00
 
@@ -67274,13 +67290,13 @@ http://antirez.com/news/162
 
 
 
-### [重磅！华为开源业界首个-Serverless-分布式计算引擎-openYuanrong，单机体验编程、极致分布式运行性能](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260204&idx=3&sn=9033ec832df9a4af8b5f16aaf03e8c21)
+### [“Claude-Skills-很棒，可能比-MCP-更重要”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260204&idx=2&sn=9a1855313f9d2a4ec0679593d749958f)
 
 2025-10-25 07:25:00
 
 
 
-### [“Claude-Skills-很棒，可能比-MCP-更重要”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260204&idx=2&sn=9a1855313f9d2a4ec0679593d749958f)
+### [重磅！华为开源业界首个-Serverless-分布式计算引擎-openYuanrong，单机体验编程、极致分布式运行性能](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651260204&idx=3&sn=9033ec832df9a4af8b5f16aaf03e8c21)
 
 2025-10-25 07:25:00
 
@@ -67322,13 +67338,13 @@ http://antirez.com/news/162
 
 
 
-### [IDC-最新-AI-Infra-报告解读｜AI-云爆发的背后：AI-应用全球化势不可挡](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259990&idx=2&sn=cafa9166cc54410125d4789e2e92badd)
+### [LangChain-彻底重写：从开源副业到独角兽，一次“核心迁移”干到-12.5-亿估值](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259990&idx=1&sn=4309d0cac81b70a86d5bb87254e07c77)
 
 2025-10-24 06:46:00
 
 
 
-### [LangChain-彻底重写：从开源副业到独角兽，一次“核心迁移”干到-12.5-亿估值](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259990&idx=1&sn=4309d0cac81b70a86d5bb87254e07c77)
+### [IDC-最新-AI-Infra-报告解读｜AI-云爆发的背后：AI-应用全球化势不可挡](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259990&idx=2&sn=cafa9166cc54410125d4789e2e92badd)
 
 2025-10-24 06:46:00
 
@@ -67394,13 +67410,13 @@ http://antirez.com/news/162
 
 
 
-### [《AI-大模型时代老板必修课》](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247554319&idx=1&sn=3678174e7a17b91b7223db406aa71e73)
+### [高德车道级地图：从感知智能到空间智能的技术跃迁](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508883&idx=1&sn=e7e6f80cb1c0c2e40cb2996bf91ee889)
 
 2025-10-23 00:31:00
 
 
 
-### [高德车道级地图：从感知智能到空间智能的技术跃迁](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508883&idx=1&sn=e7e6f80cb1c0c2e40cb2996bf91ee889)
+### [《AI-大模型时代老板必修课》](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247554319&idx=1&sn=3678174e7a17b91b7223db406aa71e73)
 
 2025-10-23 00:31:00
 
@@ -67490,13 +67506,13 @@ http://antirez.com/news/162
 
 
 
-### [计算器吃掉-42GB-内存、AI-还删了生产数据库？巨头狂砸-3640-亿，也救不回软件质量的“全面崩塌”……](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823907&idx=3&sn=66afa689bb06fda4eefe441a82613c4e)
+### [DeepSeek-新模型“杀疯了”！用视觉压缩文字，开源即获-5.7k-Star，Karpathy-直呼：Tokenizer-必须被淘汰](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823907&idx=1&sn=d17191e8c48656bca8331385b976eb19)
 
 2025-10-21 08:36:00
 
 
 
-### [DeepSeek-新模型“杀疯了”！用视觉压缩文字，开源即获-5.7k-Star，Karpathy-直呼：Tokenizer-必须被淘汰](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823907&idx=1&sn=d17191e8c48656bca8331385b976eb19)
+### [计算器吃掉-42GB-内存、AI-还删了生产数据库？巨头狂砸-3640-亿，也救不回软件质量的“全面崩塌”……](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823907&idx=3&sn=66afa689bb06fda4eefe441a82613c4e)
 
 2025-10-21 08:36:00
 
@@ -67508,7 +67524,7 @@ http://antirez.com/news/162
 
 
 
-### [HAMi-2.7.0-重磅发布-|-异构芯片全面拓展，调度更稳、生态更强](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259643&idx=4&sn=9325ab297945c46f6d23fb93013aa21b)
+### [我是微软工程师，编程了-30-多年，如今我几乎不再编程了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259643&idx=1&sn=e380be083ef03ecbaa84ebe055685e2e)
 
 2025-10-21 04:44:00
 
@@ -67520,7 +67536,7 @@ http://antirez.com/news/162
 
 
 
-### [我是微软工程师，编程了-30-多年，如今我几乎不再编程了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259643&idx=1&sn=e380be083ef03ecbaa84ebe055685e2e)
+### [HAMi-2.7.0-重磅发布-|-异构芯片全面拓展，调度更稳、生态更强](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259643&idx=4&sn=9325ab297945c46f6d23fb93013aa21b)
 
 2025-10-21 04:44:00
 
@@ -67604,13 +67620,13 @@ http://antirez.com/news/162
 
 
 
-### [Agent-Factory-回顾：Agent-评估、实用工具及多智能体系统深度解析](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-a-deep-dive-into-agent-evaluation-practical-tooling-and-multi-agent-systems/)
+### [由-NVIDIA-RTX-PRO-6000-Blackwell-GPU-驱动的-G4-虚拟机已全面可用](https://cloud.google.com/blog/products/compute/g4-vms-powered-by-nvidia-rtx-6000-blackwell-gpus-are-ga/)
 
 2025-10-20 00:00:00
 
 
 
-### [由-NVIDIA-RTX-PRO-6000-Blackwell-GPU-驱动的-G4-虚拟机已全面可用](https://cloud.google.com/blog/products/compute/g4-vms-powered-by-nvidia-rtx-6000-blackwell-gpus-are-ga/)
+### [Agent-Factory-回顾：Agent-评估、实用工具及多智能体系统深度解析](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-a-deep-dive-into-agent-evaluation-practical-tooling-and-multi-agent-systems/)
 
 2025-10-20 00:00:00
 
@@ -67814,7 +67830,7 @@ http://antirez.com/news/162
 
 
 
-### [Vertex-AI-Context-Caching](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-context-caching/)
+### [Gemini-CLI-交互功能重大升级](https://developers.googleblog.com/en/say-hello-to-a-new-level-of-interactivity-in-gemini-cli/)
 
 2025-10-15 00:00:00
 
@@ -67826,7 +67842,7 @@ http://antirez.com/news/162
 
 
 
-### [Gemini-CLI-交互功能重大升级](https://developers.googleblog.com/en/say-hello-to-a-new-level-of-interactivity-in-gemini-cli/)
+### [Vertex-AI-Context-Caching](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-context-caching/)
 
 2025-10-15 00:00:00
 
@@ -67844,13 +67860,13 @@ http://antirez.com/news/162
 
 
 
-### [“放心，AI-不会取代你们！”信了老板承诺，17-年老员工主动用-AI，结果却第一批被裁](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823578&idx=2&sn=e01144347aeb5ca9150e62f7f4a5e7f5)
+### [4-小时、成本-100-美元，Karpathy-用-8000-行代码教你手搓-ChatGPT，开源迅速斩获-7.1k-Star](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823578&idx=1&sn=856e3cc234799143c0674401bc472b87)
 
 2025-10-14 08:53:00
 
 
 
-### [4-小时、成本-100-美元，Karpathy-用-8000-行代码教你手搓-ChatGPT，开源迅速斩获-7.1k-Star](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823578&idx=1&sn=856e3cc234799143c0674401bc472b87)
+### [“放心，AI-不会取代你们！”信了老板承诺，17-年老员工主动用-AI，结果却第一批被裁](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823578&idx=2&sn=e01144347aeb5ca9150e62f7f4a5e7f5)
 
 2025-10-14 08:53:00
 
@@ -67862,13 +67878,13 @@ http://antirez.com/news/162
 
 
 
-### [Vercel-推出-Drains-功能：实现统一数据导出](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258686&idx=4&sn=1b1fe814b03c904df17774cb766f371c)
+### [Windows-10-停服引发全球热议，国产-OS-迎来窗口期？专家：技术迭代是残酷的，也是必然过程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258686&idx=1&sn=9bf47d2ddcacccef696b15b71e99c476)
 
 2025-10-14 04:03:00
 
 
 
-### [Windows-10-停服引发全球热议，国产-OS-迎来窗口期？专家：技术迭代是残酷的，也是必然过程](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258686&idx=1&sn=9bf47d2ddcacccef696b15b71e99c476)
+### [Vercel-推出-Drains-功能：实现统一数据导出](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258686&idx=4&sn=1b1fe814b03c904df17774cb766f371c)
 
 2025-10-14 04:03:00
 
@@ -67880,7 +67896,7 @@ http://antirez.com/news/162
 
 
 
-### [Coral-NPU-简介：边缘-AI-全栈平台](https://developers.googleblog.com/en/introducing-coral-npu-a-full-stack-platform-for-edge-ai/)
+### [LLM-Evalkit-介绍](https://cloud.google.com/blog/products/ai-machine-learning/introducing-llm-evalkit/)
 
 2025-10-14 00:00:00
 
@@ -67892,7 +67908,7 @@ http://antirez.com/news/162
 
 
 
-### [LLM-Evalkit-介绍](https://cloud.google.com/blog/products/ai-machine-learning/introducing-llm-evalkit/)
+### [Coral-NPU-简介：边缘-AI-全栈平台](https://developers.googleblog.com/en/introducing-coral-npu-a-full-stack-platform-for-edge-ai/)
 
 2025-10-14 00:00:00
 
@@ -68096,13 +68112,13 @@ http://antirez.com/news/162
 
 
 
-### [80%功能靠-AI-搞定，但剩下-80%时间全在修-Bug——灵魂拷问：“到底要不要用-AI”？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823324&idx=2&sn=36760dac6f67a088e1e3868f449110da)
+### [用-4.39-亿方块在《我的世界》手搓一款-ChatGPT？玩家又一次“整活”，还把游戏玩出了新高度！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823324&idx=1&sn=581d2faa00a2695e71d65018189f346f)
 
 2025-10-09 10:22:00
 
 
 
-### [用-4.39-亿方块在《我的世界》手搓一款-ChatGPT？玩家又一次“整活”，还把游戏玩出了新高度！](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823324&idx=1&sn=581d2faa00a2695e71d65018189f346f)
+### [80%功能靠-AI-搞定，但剩下-80%时间全在修-Bug——灵魂拷问：“到底要不要用-AI”？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247823324&idx=2&sn=36760dac6f67a088e1e3868f449110da)
 
 2025-10-09 10:22:00
 
@@ -68186,13 +68202,7 @@ http://antirez.com/news/162
 
 
 
-### [使用-AI-编码助手的五个最佳实践](https://cloud.google.com/blog/topics/developers-practitioners/five-best-practices-for-using-ai-coding-assistants/)
-
-2025-10-07 00:00:00
-
-
-
-### [Spring-AI-社区-GitHub-社区介绍](https://spring.io/blog/2025/10/07/spring-ai-community-announcement)
+### [OpenAI-DevDay-2025：Sam-Altman-开幕主题演讲](https://ginonotes.com/posts/2025-openai-dev-day-opening-keynote)
 
 2025-10-07 00:00:00
 
@@ -68204,7 +68214,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-DevDay-2025：Sam-Altman-开幕主题演讲](https://ginonotes.com/posts/2025-openai-dev-day-opening-keynote)
+### [Spring-AI-社区-GitHub-社区介绍](https://spring.io/blog/2025/10/07/spring-ai-community-announcement)
+
+2025-10-07 00:00:00
+
+
+
+### [使用-AI-编码助手的五个最佳实践](https://cloud.google.com/blog/topics/developers-practitioners/five-best-practices-for-using-ai-coding-assistants/)
 
 2025-10-07 00:00:00
 
@@ -68234,13 +68250,13 @@ http://antirez.com/news/162
 
 
 
-### [Spring-AI-1.1.0-M3-现已发布](https://spring.io/blog/2025/10/06/spring-ai-1-1-0-M3-available-now)
+### [更多选择与控制：在-VPC-中使用-Vertex-AI-自行部署专有模型](https://cloud.google.com/blog/products/ai-machine-learning/new-proprietary-models-vertex-model-garden/)
 
 2025-10-06 00:00:00
 
 
 
-### [更多选择与控制：在-VPC-中使用-Vertex-AI-自行部署专有模型](https://cloud.google.com/blog/products/ai-machine-learning/new-proprietary-models-vertex-model-garden/)
+### [Spring-AI-1.1.0-M3-现已发布](https://spring.io/blog/2025/10/06/spring-ai-1-1-0-M3-available-now)
 
 2025-10-06 00:00:00
 
@@ -68312,7 +68328,7 @@ http://antirez.com/news/162
 
 
 
-### [使用-Grain-和-ArrayRecord-构建高性能数据管道](https://developers.googleblog.com/en/building-high-performance-data-pipelines-with-grain-and-arrayrecord/)
+### [Jules-API-发布：助力开发者提升效率](https://developers.googleblog.com/en/level-up-your-dev-game-the-jules-api-is-here/)
 
 2025-10-03 00:00:00
 
@@ -68324,7 +68340,7 @@ http://antirez.com/news/162
 
 
 
-### [Jules-API-发布：助力开发者提升效率](https://developers.googleblog.com/en/level-up-your-dev-game-the-jules-api-is-here/)
+### [使用-Grain-和-ArrayRecord-构建高性能数据管道](https://developers.googleblog.com/en/building-high-performance-data-pipelines-with-grain-and-arrayrecord/)
 
 2025-10-03 00:00:00
 
@@ -68366,13 +68382,13 @@ http://antirez.com/news/162
 
 
 
-### [Jules-Tools-介绍：Google-异步编码代理的命令行工具](https://developers.googleblog.com/en/meet-jules-tools-a-command-line-companion-for-googles-async-coding-agent/)
+### [Google-Cloud-生成式媒体模型再创新高](https://cloud.google.com/blog/products/ai-machine-learning/building-momentum-for-gen-media-including-nano-banana-/)
 
 2025-10-02 00:00:00
 
 
 
-### [Google-Cloud-生成式媒体模型再创新高](https://cloud.google.com/blog/products/ai-machine-learning/building-momentum-for-gen-media-including-nano-banana-/)
+### [Jules-Tools-介绍：Google-异步编码代理的命令行工具](https://developers.googleblog.com/en/meet-jules-tools-a-command-line-companion-for-googles-async-coding-agent/)
 
 2025-10-02 00:00:00
 
@@ -68396,13 +68412,13 @@ http://antirez.com/news/162
 
 
 
-### [Gemini-解锁多光谱数据潜力](https://developers.googleblog.com/en/unlocking-multi-spectral-data-with-gemini/)
+### [Spring-AI-1.0.3-版本正式发布](https://spring.io/blog/2025/10/01/spring-ai-1-0-3-available-now)
 
 2025-10-01 00:00:00
 
 
 
-### [Spring-AI-1.0.3-版本正式发布](https://spring.io/blog/2025/10/01/spring-ai-1-0-3-available-now)
+### [Gemini-解锁多光谱数据潜力](https://developers.googleblog.com/en/unlocking-multi-spectral-data-with-gemini/)
 
 2025-10-01 00:00:00
 
@@ -68504,13 +68520,13 @@ http://antirez.com/news/162
 
 
 
-### [【早阅】为-Cloude-Code-而设计：与首席设计师-Megan-的对话](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277543&idx=2&sn=b5ca3d851245557e8a3402ea8fb723fa)
+### [【第-3597-期】Google-Chrome-DevTools-MCP：AI-代理现在可以在浏览器中调试、测试和修复代码](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277543&idx=1&sn=18b092f538b688e06ee1bd09c05cf064)
 
 2025-09-28 00:01:00
 
 
 
-### [【第-3597-期】Google-Chrome-DevTools-MCP：AI-代理现在可以在浏览器中调试、测试和修复代码](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277543&idx=1&sn=18b092f538b688e06ee1bd09c05cf064)
+### [【早阅】为-Cloude-Code-而设计：与首席设计师-Megan-的对话](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277543&idx=2&sn=b5ca3d851245557e8a3402ea8fb723fa)
 
 2025-09-28 00:01:00
 
@@ -68606,25 +68622,25 @@ http://antirez.com/news/162
 
 
 
-### [赋能数据科学家，成为主动型架构师](https://cloud.google.com/blog/products/data-analytics/enabling-data-scientists-to-become-agentic-architects/)
-
-2025-09-24 00:00:00
-
-
-
 ### [Chrome、Chromebook-Plus-和-Pixel-Watch-上使用-LiteRT-LM-实现设备端生成式-AI](https://developers.googleblog.com/en/on-device-genai-in-chrome-chromebook-plus-and-pixel-watch-with-litert-lm/)
 
 2025-09-24 00:00:00
 
 
 
-### [一键部署：你的专属-AI-代码生成平台](https://blog.cloudflare.com/deploy-your-own-ai-vibe-coding-platform/)
+### [赋能数据科学家，成为主动型架构师](https://cloud.google.com/blog/products/data-analytics/enabling-data-scientists-to-become-agentic-architects/)
+
+2025-09-24 00:00:00
+
+
+
+### [AI-时代：构建专属的高级机器人威胁防御体系](https://blog.cloudflare.com/per-customer-bot-defenses/)
 
 2025-09-23 14:00:00
 
 
 
-### [AI-时代：构建专属的高级机器人威胁防御体系](https://blog.cloudflare.com/per-customer-bot-defenses/)
+### [一键部署：你的专属-AI-代码生成平台](https://blog.cloudflare.com/deploy-your-own-ai-vibe-coding-platform/)
 
 2025-09-23 14:00:00
 
@@ -68684,13 +68700,13 @@ http://antirez.com/news/162
 
 
 
-### [搜狐架构演进技术实践：我们如何用-MCP-Registry-根治-AI-Agent-的“千具之灾”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256817&idx=3&sn=248296858be9afd1676699f81b6abe8a)
+### [不止于快！美团新推理模型正在重新定义「实用主义-AI」](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256817&idx=1&sn=d13ee6827a20803e7d2efb02a41b1cee)
 
 2025-09-22 11:27:00
 
 
 
-### [不止于快！美团新推理模型正在重新定义「实用主义-AI」](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256817&idx=1&sn=d13ee6827a20803e7d2efb02a41b1cee)
+### [搜狐架构演进技术实践：我们如何用-MCP-Registry-根治-AI-Agent-的“千具之灾”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256817&idx=3&sn=248296858be9afd1676699f81b6abe8a)
 
 2025-09-22 11:27:00
 
@@ -68726,13 +68742,13 @@ http://antirez.com/news/162
 
 
 
-### [向英伟达发起挑战的-AI-芯片初创公司，估值快五百亿了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256531&idx=4&sn=c53d1fba460f2d758c83e733d82eb26d)
+### [一周狂烧-1000-美元，修不好-bug-还顺手删库？这款明星-AI-工具怎么了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256531&idx=1&sn=7841affbe5afd99ff2eb2627205dac44)
 
 2025-09-19 06:27:00
 
 
 
-### [一周狂烧-1000-美元，修不好-bug-还顺手删库？这款明星-AI-工具怎么了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256531&idx=1&sn=7841affbe5afd99ff2eb2627205dac44)
+### [向英伟达发起挑战的-AI-芯片初创公司，估值快五百亿了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256531&idx=4&sn=c53d1fba460f2d758c83e733d82eb26d)
 
 2025-09-19 06:27:00
 
@@ -68744,25 +68760,25 @@ http://antirez.com/news/162
 
 
 
-### [配置驱动的动态-Agent-架构网络：实现高效编排、动态更新与智能治理](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247553131&idx=1&sn=ab445c9bd270243cbce0f403a8dd7672)
-
-2025-09-19 00:31:00
-
-
-
 ### [《企业-AI-应用构建指南》正式发布](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508763&idx=1&sn=aa977ed422e4bd37fc6087b247219b4f)
 
 2025-09-19 00:31:00
 
 
 
-### [Spring-AI-1.1.0-M2-发布，增强模型上下文协议支持](https://spring.io/blog/2025/09/19/spring-ai-1-1-0-M2-mcp-focused)
+### [配置驱动的动态-Agent-架构网络：实现高效编排、动态更新与智能治理](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247553131&idx=1&sn=ab445c9bd270243cbce0f403a8dd7672)
+
+2025-09-19 00:31:00
+
+
+
+### [Agent-Factory-播客精选：Taylor-Mullen-深入探讨-Gemini-命令行界面](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-deep-dive-into-gemini-cli-with-taylor-mullen/)
 
 2025-09-19 00:00:00
 
 
 
-### [Agent-Factory-播客精选：Taylor-Mullen-深入探讨-Gemini-命令行界面](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-deep-dive-into-gemini-cli-with-taylor-mullen/)
+### [Spring-AI-1.1.0-M2-发布，增强模型上下文协议支持](https://spring.io/blog/2025/09/19/spring-ai-1-1-0-M2-mcp-focused)
 
 2025-09-19 00:00:00
 
@@ -68828,13 +68844,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-引领的企业级智能分析架构演进与行业实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256364&idx=2&sn=7d42ab00e10c6201a36350f5aea0cfa5)
+### [7-小时连续重构不掉线！一骑绝尘的-Claude-终于遇到对手：Greg-Brockman-亲自解读-AI-编程重大突破](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256364&idx=1&sn=3788df055f9d18b92542518f9616b11b)
 
 2025-09-17 06:49:00
 
 
 
-### [7-小时连续重构不掉线！一骑绝尘的-Claude-终于遇到对手：Greg-Brockman-亲自解读-AI-编程重大突破](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256364&idx=1&sn=3788df055f9d18b92542518f9616b11b)
+### [AI-引领的企业级智能分析架构演进与行业实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256364&idx=2&sn=7d42ab00e10c6201a36350f5aea0cfa5)
 
 2025-09-17 06:49:00
 
@@ -68894,13 +68910,13 @@ http://antirez.com/news/162
 
 
 
-### [在-BigQuery-中使用-Gemini-和开源文本嵌入模型](https://cloud.google.com/blog/products/data-analytics/use-gemini-and-open-source-text-embedding-models-in-bigquery/)
+### [Agent-Payments-Protocol-AP2-发布](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol/)
 
 2025-09-16 00:00:00
 
 
 
-### [Agent-Payments-Protocol-AP2-发布](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol/)
+### [在-BigQuery-中使用-Gemini-和开源文本嵌入模型](https://cloud.google.com/blog/products/data-analytics/use-gemini-and-open-source-text-embedding-models-in-bigquery/)
 
 2025-09-16 00:00:00
 
@@ -69104,13 +69120,13 @@ http://antirez.com/news/162
 
 
 
-### [Google-AI-边缘画廊：新增音频功能，现已登陆-Google-Play](https://developers.googleblog.com/en/google-ai-edge-gallery-now-with-audio-and-on-google-play/)
+### [Agent-Factory-回顾：Keith-Ballinger-畅谈-AI、开发未来与“氛围编码”](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-keith-ballinger-on-ai-the-future-of-development-and-vibe-coding/)
 
 2025-09-05 00:00:00
 
 
 
-### [Agent-Factory-回顾：Keith-Ballinger-畅谈-AI、开发未来与“氛围编码”](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-keith-ballinger-on-ai-the-future-of-development-and-vibe-coding/)
+### [Google-AI-边缘画廊：新增音频功能，现已登陆-Google-Play](https://developers.googleblog.com/en/google-ai-edge-gallery-now-with-audio-and-on-google-play/)
 
 2025-09-05 00:00:00
 
@@ -69254,13 +69270,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-基础设施缺失的一层：聚合代理流量](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254700&idx=3&sn=4866980ced1e8d2ac94beedc993892bf)
+### [靠-AI-起飞的千亿市值公司，如今要被-AI“卷死”了？股价因-GPT-5-瞬间逆转、CEO-亲承：我负有责任](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254700&idx=2&sn=b81ca45c17a58d8d594271605071d4dc)
 
 2025-08-30 06:26:00
 
 
 
-### [靠-AI-起飞的千亿市值公司，如今要被-AI“卷死”了？股价因-GPT-5-瞬间逆转、CEO-亲承：我负有责任](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254700&idx=2&sn=b81ca45c17a58d8d594271605071d4dc)
+### [AI-基础设施缺失的一层：聚合代理流量](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254700&idx=3&sn=4866980ced1e8d2ac94beedc993892bf)
 
 2025-08-30 06:26:00
 
@@ -69278,13 +69294,13 @@ http://antirez.com/news/162
 
 
 
-### [Claude-Code-深度拆解：一个顶级-AI-编程工具的核心架构](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552656&idx=1&sn=7de8ae8919bc7fdd103a790f71418e16)
+### [从“数据拼凑”到“精准断案”：深度剖析-RAG-系统中信息完整性的关键作用](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508536&idx=1&sn=c0ae7ec127bf7cb253b1495f34c63ca7)
 
 2025-08-29 00:31:00
 
 
 
-### [从“数据拼凑”到“精准断案”：深度剖析-RAG-系统中信息完整性的关键作用](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508536&idx=1&sn=c0ae7ec127bf7cb253b1495f34c63ca7)
+### [Claude-Code-深度拆解：一个顶级-AI-编程工具的核心架构](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552656&idx=1&sn=7de8ae8919bc7fdd103a790f71418e16)
 
 2025-08-29 00:31:00
 
@@ -69326,13 +69342,13 @@ http://antirez.com/news/162
 
 
 
-### [Cloudflare-如何在更少的-GPU-上运行更多的-AI-模型：技术详解](https://blog.cloudflare.com/how-cloudflare-runs-more-ai-models-on-fewer-gpus/)
+### [Cloudflare-高效推理引擎构建实践](https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine/)
 
 2025-08-27 14:00:00
 
 
 
-### [Cloudflare-高效推理引擎构建实践](https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine/)
+### [Cloudflare-如何在更少的-GPU-上运行更多的-AI-模型：技术详解](https://blog.cloudflare.com/how-cloudflare-runs-more-ai-models-on-fewer-gpus/)
 
 2025-08-27 14:00:00
 
@@ -69416,13 +69432,13 @@ http://antirez.com/news/162
 
 
 
-### [首个为手机而生的通用-Agent？！苹果做不到的事，“野路子”智谱抢先实现了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254216&idx=3&sn=9a039d08593242ecc49381246a09dcbe)
+### [从私域知识到智能-Agent：构建智能运维知识库](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254216&idx=2&sn=7ecb2155d18d178190a6143456a8e726)
 
 2025-08-25 05:01:00
 
 
 
-### [从私域知识到智能-Agent：构建智能运维知识库](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254216&idx=2&sn=7ecb2155d18d178190a6143456a8e726)
+### [首个为手机而生的通用-Agent？！苹果做不到的事，“野路子”智谱抢先实现了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651254216&idx=3&sn=9a039d08593242ecc49381246a09dcbe)
 
 2025-08-25 05:01:00
 
@@ -69440,13 +69456,13 @@ http://antirez.com/news/162
 
 
 
-### [Wassette：微软基于-Rust-构建的-Wasm-与-MCP-之间的桥梁](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651253977&idx=3&sn=6b570c45c0619ea1b7fee285056e40f4)
+### [氛围编程行不通！CTO-们集体炮轰-AI-编程：不是失业，而是失控](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651253977&idx=1&sn=a0180e18c96feb3d8a339561f538621e)
 
 2025-08-24 02:15:00
 
 
 
-### [氛围编程行不通！CTO-们集体炮轰-AI-编程：不是失业，而是失控](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651253977&idx=1&sn=a0180e18c96feb3d8a339561f538621e)
+### [Wassette：微软基于-Rust-构建的-Wasm-与-MCP-之间的桥梁](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651253977&idx=3&sn=6b570c45c0619ea1b7fee285056e40f4)
 
 2025-08-24 02:15:00
 
@@ -69572,13 +69588,13 @@ http://antirez.com/news/162
 
 
 
-### [【第-3570-期】LLM-和-ChatGPT：文本提示与-JSON-提示的对比](https://mp.weixin.qq.com/s/kp0wd17FJj30AODT7Bp7kA)
+### [CodeBuddy-AI-Coding-企业场景落地实践与思考](https://mp.weixin.qq.com/s/YknNf1S25touYqIVUKhpPQ)
 
 2025-08-14 00:00:00
 
 
 
-### [CodeBuddy-AI-Coding-企业场景落地实践与思考](https://mp.weixin.qq.com/s/YknNf1S25touYqIVUKhpPQ)
+### [【第-3570-期】LLM-和-ChatGPT：文本提示与-JSON-提示的对比](https://mp.weixin.qq.com/s/kp0wd17FJj30AODT7Bp7kA)
 
 2025-08-14 00:00:00
 
@@ -69608,19 +69624,7 @@ http://antirez.com/news/162
 
 
 
-### [【第-3569-期】GPT-5-体验报告：欢迎来到“石器时代”](https://mp.weixin.qq.com/s/KOs4K6RdehbRTHbfcFztXA)
-
-2025-08-13 00:00:00
-
-
-
-### [用最简单的大模型技术打造一个迁云专家有多难？](https://mp.weixin.qq.com/s/jk4JxzekWg_9Ps8NPprQXg)
-
-2025-08-13 00:00:00
-
-
-
-### [Cursor-or-Claude-Code-？—-这道题怎么选](https://mp.weixin.qq.com/s/s9v1do9YlMBN_xECkIl4tw)
+### [智能创作，卓越代码：AI-赋能谷歌云开发者体验](https://cloud.google.com/blog/topics/developers-practitioners/smarter-authoring-better-code-how-ai-is-reshaping-google-clouds-developer-experience/)
 
 2025-08-13 00:00:00
 
@@ -69632,7 +69636,19 @@ http://antirez.com/news/162
 
 
 
-### [智能创作，卓越代码：AI-赋能谷歌云开发者体验](https://cloud.google.com/blog/topics/developers-practitioners/smarter-authoring-better-code-how-ai-is-reshaping-google-clouds-developer-experience/)
+### [Cursor-or-Claude-Code-？—-这道题怎么选](https://mp.weixin.qq.com/s/s9v1do9YlMBN_xECkIl4tw)
+
+2025-08-13 00:00:00
+
+
+
+### [用最简单的大模型技术打造一个迁云专家有多难？](https://mp.weixin.qq.com/s/jk4JxzekWg_9Ps8NPprQXg)
+
+2025-08-13 00:00:00
+
+
+
+### [【第-3569-期】GPT-5-体验报告：欢迎来到“石器时代”](https://mp.weixin.qq.com/s/KOs4K6RdehbRTHbfcFztXA)
 
 2025-08-13 00:00:00
 
@@ -69692,13 +69708,13 @@ http://antirez.com/news/162
 
 
 
-### [马斯克挖不动的清华学霸，一年造出-“反内卷-AI”！0.027B-参数硬刚思维链模型，推理完爆-o3-mini-high](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252622&idx=2&sn=d8fd1692585ce8e50908f037e3e20bcb)
+### [他救了-OpenAI、年赚过亿、三家明星-CTO，却自曝跟不上-AI-发展了！硅谷大佬告诫：不是马斯克，就别碰大模型](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252622&idx=1&sn=e8fe21f3efc2c11a11650e056d98324c)
 
 2025-08-09 02:16:00
 
 
 
-### [他救了-OpenAI、年赚过亿、三家明星-CTO，却自曝跟不上-AI-发展了！硅谷大佬告诫：不是马斯克，就别碰大模型](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252622&idx=1&sn=e8fe21f3efc2c11a11650e056d98324c)
+### [马斯克挖不动的清华学霸，一年造出-“反内卷-AI”！0.027B-参数硬刚思维链模型，推理完爆-o3-mini-high](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252622&idx=2&sn=d8fd1692585ce8e50908f037e3e20bcb)
 
 2025-08-09 02:16:00
 
@@ -69752,13 +69768,13 @@ http://antirez.com/news/162
 
 
 
-### [基于聊天的-AI-编程高效实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252508&idx=3&sn=10c856fe166cf4927b2d80856fba28d0)
+### [从烧光现金、裁掉一半员工，到-ARR-9-个月破亿：Replit-用“全栈平台”反杀-Cursor，赌赢“每层都赚钱”模式](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252508&idx=1&sn=ff1f66dd84563fb17a43a95e27242806)
 
 2025-08-07 04:01:00
 
 
 
-### [从烧光现金、裁掉一半员工，到-ARR-9-个月破亿：Replit-用“全栈平台”反杀-Cursor，赌赢“每层都赚钱”模式](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252508&idx=1&sn=ff1f66dd84563fb17a43a95e27242806)
+### [基于聊天的-AI-编程高效实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252508&idx=3&sn=10c856fe166cf4927b2d80856fba28d0)
 
 2025-08-07 04:01:00
 
@@ -69794,13 +69810,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-基础知识从-0.5-到-0.6——-Transformer-架构为何能统治-AI-领域？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552148&idx=1&sn=709bf5817423b8d9560cb5abc7b0337b)
+### [Qwen3-x-ms-swift：监督微调在居住服务行业的一次实践](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508429&idx=1&sn=a1c2a4fa8cf52e5cabcf0aeae876f119)
 
 2025-08-06 00:31:00
 
 
 
-### [Qwen3-x-ms-swift：监督微调在居住服务行业的一次实践](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508429&idx=1&sn=a1c2a4fa8cf52e5cabcf0aeae876f119)
+### [AI-基础知识从-0.5-到-0.6——-Transformer-架构为何能统治-AI-领域？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552148&idx=1&sn=709bf5817423b8d9560cb5abc7b0337b)
 
 2025-08-06 00:31:00
 
@@ -69878,25 +69894,25 @@ http://antirez.com/news/162
 
 
 
-### [Spring-AI-1.0-提供简单的-AI-系统和服务](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252160&idx=3&sn=1f6c117d17951b99bcdb096fefee9cbc)
-
-2025-08-01 07:41:00
-
-
-
 ### [秒改屎山代码、最高提效-300%！AI-代码审查工具会终结技术债务还是带来新危机？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252160&idx=2&sn=481c3623fef658ea082c74e27a14fcdd)
 
 2025-08-01 07:41:00
 
 
 
-### [ADK-代理：状态与记忆的奥秘](https://cloud.google.com/blog/topics/developers-practitioners/remember-this-agent-state-and-memory-with-adk/)
+### [Spring-AI-1.0-提供简单的-AI-系统和服务](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651252160&idx=3&sn=1f6c117d17951b99bcdb096fefee9cbc)
+
+2025-08-01 07:41:00
+
+
+
+### [聊聊-AI-Coding](https://mp.weixin.qq.com/s/9dNw5xAAajwrwXkRgveuiw)
 
 2025-08-01 00:00:00
 
 
 
-### [聊聊-AI-Coding](https://mp.weixin.qq.com/s/9dNw5xAAajwrwXkRgveuiw)
+### [ADK-代理：状态与记忆的奥秘](https://cloud.google.com/blog/topics/developers-practitioners/remember-this-agent-state-and-memory-with-adk/)
 
 2025-08-01 00:00:00
 
@@ -69920,7 +69936,7 @@ http://antirez.com/news/162
 
 
 
-### [基于现代-CPU-架构的深度学习性能优化](https://www.infoq.com/presentations/dl-cpu-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Amazon-SQS-公平队列：多租户弹性解决方案](https://www.infoq.com/news/2025/07/amazon-sqs-fair-queues/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-31 00:00:00
 
@@ -69932,7 +69948,7 @@ http://antirez.com/news/162
 
 
 
-### [Amazon-SQS-公平队列：多租户弹性解决方案](https://www.infoq.com/news/2025/07/amazon-sqs-fair-queues/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [基于现代-CPU-架构的深度学习性能优化](https://www.infoq.com/presentations/dl-cpu-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-31 00:00:00
 
@@ -69956,13 +69972,13 @@ http://antirez.com/news/162
 
 
 
-### [Gemini-嵌入：驱动-RAG-与情境工程](https://developers.googleblog.com/en/gemini-embedding-powering-rag-context-engineering/)
+### [Gemini-CLI：自定义斜杠命令](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands/)
 
 2025-07-30 00:00:00
 
 
 
-### [Gemini-CLI：自定义斜杠命令](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands/)
+### [Gemini-嵌入：驱动-RAG-与情境工程](https://developers.googleblog.com/en/gemini-embedding-powering-rag-context-engineering/)
 
 2025-07-30 00:00:00
 
@@ -69992,13 +70008,13 @@ http://antirez.com/news/162
 
 
 
-### [“AI-教父”Geoffrey-Hinton-首度在华演讲：AI-恰似一只小虎崽，而人类本身是大语言模型？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251695&idx=3&sn=681081b28f701fcf339bb3694cb62c22)
+### [扣子官宣开源，掀桌大动作背后如何决策？扣子负责人独家披露](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251695&idx=1&sn=d447fc03a68cd0adbc38721c04b159aa)
 
 2025-07-28 01:30:00
 
 
 
-### [扣子官宣开源，掀桌大动作背后如何决策？扣子负责人独家披露](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251695&idx=1&sn=d447fc03a68cd0adbc38721c04b159aa)
+### [“AI-教父”Geoffrey-Hinton-首度在华演讲：AI-恰似一只小虎崽，而人类本身是大语言模型？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251695&idx=3&sn=681081b28f701fcf339bb3694cb62c22)
 
 2025-07-28 01:30:00
 
@@ -70010,7 +70026,7 @@ http://antirez.com/news/162
 
 
 
-### [Mistral-Voxtral-是-OpenAI-Whisper-和其他-ASR-工具的开放权重竞争对手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251653&idx=4&sn=d3bef9bfa1640892982bed000027fb16)
+### [从京东内部走出的开源-Agent，能成为标准定义者吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251653&idx=1&sn=4078721f69c1a7d62c61d4ffb0f6fb0f)
 
 2025-07-27 04:41:00
 
@@ -70022,7 +70038,7 @@ http://antirez.com/news/162
 
 
 
-### [从京东内部走出的开源-Agent，能成为标准定义者吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251653&idx=1&sn=4078721f69c1a7d62c61d4ffb0f6fb0f)
+### [Mistral-Voxtral-是-OpenAI-Whisper-和其他-ASR-工具的开放权重竞争对手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251653&idx=4&sn=d3bef9bfa1640892982bed000027fb16)
 
 2025-07-27 04:41:00
 
@@ -70046,13 +70062,13 @@ http://antirez.com/news/162
 
 
 
-### [金融智能体落地四阶段，同花顺-Agent-战略与实践全景](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251474&idx=2&sn=9d5aaec6d4b12641bd5942942849a606)
+### [文件被-Gemini-当场“格式化”，全没了！网友控诉：Claude、Copilot-也爱删库，一个都跑不了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251474&idx=1&sn=bdbf66c2268314961455b3c67e89bacb)
 
 2025-07-24 05:10:00
 
 
 
-### [文件被-Gemini-当场“格式化”，全没了！网友控诉：Claude、Copilot-也爱删库，一个都跑不了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251474&idx=1&sn=bdbf66c2268314961455b3c67e89bacb)
+### [金融智能体落地四阶段，同花顺-Agent-战略与实践全景](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251474&idx=2&sn=9d5aaec6d4b12641bd5942942849a606)
 
 2025-07-24 05:10:00
 
@@ -70166,13 +70182,13 @@ http://antirez.com/news/162
 
 
 
-### [Docker-扩展-Compose，新增-Cloud-Offload-支持](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651250874&idx=4&sn=1bba5d9dd84bdc87ab07d0b05c4e058d)
+### [从概念到生产级部署：AWS-如何破解-Agentic-AI-落地难题？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651250874&idx=1&sn=8bbeab475beb0c80f8717bcdc85ee6cd)
 
 2025-07-17 13:56:00
 
 
 
-### [从概念到生产级部署：AWS-如何破解-Agentic-AI-落地难题？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651250874&idx=1&sn=8bbeab475beb0c80f8717bcdc85ee6cd)
+### [Docker-扩展-Compose，新增-Cloud-Offload-支持](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651250874&idx=4&sn=1bba5d9dd84bdc87ab07d0b05c4e058d)
 
 2025-07-17 13:56:00
 
@@ -70226,7 +70242,7 @@ http://antirez.com/news/162
 
 
 
-### [解锁-Gemini-的推理过程：Vertex-AI-上-Logprobs-的分步指南](https://developers.googleblog.com/en/unlock-gemini-reasoning-with-logprobs-on-vertex-ai/)
+### [斯坦福的-Marin-基础模型：首个基于-JAX-的完全开放模型](https://developers.googleblog.com/en/stanfords-marin-foundation-model-first-fully-open-model-developed-using-jax/)
 
 2025-07-16 00:00:00
 
@@ -70238,7 +70254,7 @@ http://antirez.com/news/162
 
 
 
-### [斯坦福的-Marin-基础模型：首个基于-JAX-的完全开放模型](https://developers.googleblog.com/en/stanfords-marin-foundation-model-first-fully-open-model-developed-using-jax/)
+### [解锁-Gemini-的推理过程：Vertex-AI-上-Logprobs-的分步指南](https://developers.googleblog.com/en/unlock-gemini-reasoning-with-logprobs-on-vertex-ai/)
 
 2025-07-16 00:00:00
 
@@ -70346,13 +70362,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-智能体与-LLM：赋能下一代自动化](https://www.infoq.com/presentations/llm-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [谷歌云托管-Lustre：AI/HPC-解决方案](https://cloud.google.com/blog/products/storage-data-transfer/google-cloud-managed-lustre-for-ai-hpc/)
 
 2025-07-09 00:00:00
 
 
 
-### [谷歌云托管-Lustre：AI/HPC-解决方案](https://cloud.google.com/blog/products/storage-data-transfer/google-cloud-managed-lustre-for-ai-hpc/)
+### [AI-智能体与-LLM：赋能下一代自动化](https://www.infoq.com/presentations/llm-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-09 00:00:00
 
@@ -70478,13 +70494,13 @@ http://antirez.com/news/162
 
 
 
-### [解锁-AI-智能体协作：将-Google-智能体开发套件-ADK-智能体转换为-A2A-兼容](https://cloud.google.com/blog/products/ai-machine-learning/unlock-ai-agent-collaboration-convert-adk-agents-for-a2a/)
+### [DevSummit-波士顿：超越炒作的人工智能产品实战关键经验](https://www.infoq.com/news/2025/07/devsummit-shipping-beyod-hype/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-02 00:00:00
 
 
 
-### [DevSummit-波士顿：超越炒作的人工智能产品实战关键经验](https://www.infoq.com/news/2025/07/devsummit-shipping-beyod-hype/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [解锁-AI-智能体协作：将-Google-智能体开发套件-ADK-智能体转换为-A2A-兼容](https://cloud.google.com/blog/products/ai-machine-learning/unlock-ai-agent-collaboration-convert-adk-agents-for-a2a/)
 
 2025-07-02 00:00:00
 
@@ -70514,13 +70530,13 @@ http://antirez.com/news/162
 
 
 
-### [从-Googlebot-到-GPTBot：2025-年谁在爬取你的网站](https://blog.cloudflare.com/from-googlebot-to-gptbot-whos-crawling-your-site-in-2025/)
+### [推出爬虫付费访问功能——让内容所有者可向-AI-爬虫收费](https://blog.cloudflare.com/introducing-pay-per-crawl/)
 
 2025-07-01 11:00:01
 
 
 
-### [推出爬虫付费访问功能——让内容所有者可向-AI-爬虫收费](https://blog.cloudflare.com/introducing-pay-per-crawl/)
+### [从-Googlebot-到-GPTBot：2025-年谁在爬取你的网站](https://blog.cloudflare.com/from-googlebot-to-gptbot-whos-crawling-your-site-in-2025/)
 
 2025-07-01 11:00:01
 
@@ -70538,7 +70554,7 @@ http://antirez.com/news/162
 
 
 
-### [谷歌-A2A-协议加入-Linux-基金会](https://www.infoq.com/news/2025/07/agent2agent-linux-foundation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-DeepMind-发布-AlphaGenome：用于高精度基因组解析的一体化-AI-模型](https://www.infoq.com/news/2025/07/deepmind-alpha-genome/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-01 00:00:00
 
@@ -70550,7 +70566,7 @@ http://antirez.com/news/162
 
 
 
-### [Google-DeepMind-发布-AlphaGenome：用于高精度基因组解析的一体化-AI-模型](https://www.infoq.com/news/2025/07/deepmind-alpha-genome/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [谷歌-A2A-协议加入-Linux-基金会](https://www.infoq.com/news/2025/07/agent2agent-linux-foundation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-01 00:00:00
 
@@ -70580,13 +70596,13 @@ http://antirez.com/news/162
 
 
 
-### [Logz.io-与-Dynatrace-创新推动可观测性进入-AI-时代](https://www.infoq.com/news/2025/06/logzio-dynatrace-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Docker-镜像体积过大的深度分析：使用-`dive`-工具定位冗余问题](https://www.infoq.com/articles/docker-size-dive/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-30 00:00:00
 
 
 
-### [Docker-镜像体积过大的深度分析：使用-`dive`-工具定位冗余问题](https://www.infoq.com/articles/docker-size-dive/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Logz.io-与-Dynatrace-创新推动可观测性进入-AI-时代](https://www.infoq.com/news/2025/06/logzio-dynatrace-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-30 00:00:00
 
@@ -70682,13 +70698,13 @@ http://antirez.com/news/162
 
 
 
-### [GPULlama3.java-将-GPU-加速的-LLM-推理带入纯-Java](https://www.infoq.com/news/2025/06/gpullama3-java-gpu-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [如何使用-Vertex-AI-微调视频输出](https://cloud.google.com/blog/products/ai-machine-learning/how-to-fine-tune-video-outputs-using-vertex-ai/)
 
 2025-06-24 00:00:00
 
 
 
-### [如何使用-Vertex-AI-微调视频输出](https://cloud.google.com/blog/products/ai-machine-learning/how-to-fine-tune-video-outputs-using-vertex-ai/)
+### [GPULlama3.java-将-GPU-加速的-LLM-推理带入纯-Java](https://www.infoq.com/news/2025/06/gpullama3-java-gpu-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-24 00:00:00
 
@@ -70706,13 +70722,13 @@ http://antirez.com/news/162
 
 
 
-### [小扎疯狂挖角-OpenAI、签约跳槽就发-7-亿奖金，奥特曼痛批：不懂创新，老“复制”人了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248552&idx=3&sn=8bd4884791a3893bf869deafc0ccb8b5)
+### [AI-正在淘汰“中间层”！昆仑万维方汉：要么冲进前-10%，要么学会“向下兼容”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248552&idx=1&sn=ab4235caefd758b554a95af0f946d02d)
 
 2025-06-22 02:16:00
 
 
 
-### [AI-正在淘汰“中间层”！昆仑万维方汉：要么冲进前-10%，要么学会“向下兼容”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248552&idx=1&sn=ab4235caefd758b554a95af0f946d02d)
+### [小扎疯狂挖角-OpenAI、签约跳槽就发-7-亿奖金，奥特曼痛批：不懂创新，老“复制”人了](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248552&idx=3&sn=8bd4884791a3893bf869deafc0ccb8b5)
 
 2025-06-22 02:16:00
 
@@ -70724,13 +70740,13 @@ http://antirez.com/news/162
 
 
 
-### [Claude-时代终结？LMArena-实测-DeepSeek-R1-编程得分超-Opus-4，但月暗称其新模型更胜一筹](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248467&idx=3&sn=a339b2235b041c470a4afde8168db00f)
+### [月烧-4-万元，两工程师用-Claude-Code-跑出-15-人团队效率：值不值全网吵翻了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248467&idx=1&sn=0c622aa4fa71ead5934db740176c9aca)
 
 2025-06-21 02:16:00
 
 
 
-### [月烧-4-万元，两工程师用-Claude-Code-跑出-15-人团队效率：值不值全网吵翻了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248467&idx=1&sn=0c622aa4fa71ead5934db740176c9aca)
+### [Claude-时代终结？LMArena-实测-DeepSeek-R1-编程得分超-Opus-4，但月暗称其新模型更胜一筹](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248467&idx=3&sn=a339b2235b041c470a4afde8168db00f)
 
 2025-06-21 02:16:00
 
@@ -70766,13 +70782,13 @@ http://antirez.com/news/162
 
 
 
-### [MariaDB-年度-LTS-版本集成向量搜索](https://www.infoq.com/news/2025/06/mariadb-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Teams-工具包更名为-Microsoft-365-代理工具包](https://www.infoq.com/news/2025/06/teams-toolkit-agents-copilot/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-19 00:00:00
 
 
 
-### [Teams-工具包更名为-Microsoft-365-代理工具包](https://www.infoq.com/news/2025/06/teams-toolkit-agents-copilot/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [MariaDB-年度-LTS-版本集成向量搜索](https://www.infoq.com/news/2025/06/mariadb-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-19 00:00:00
 
@@ -70808,13 +70824,13 @@ http://antirez.com/news/162
 
 
 
-### [在不到-10-分钟内构建并将远程-MCP-服务器部署到-Google-Cloud-Run](https://cloud.google.com/blog/topics/developers-practitioners/build-and-deploy-a-remote-mcp-server-to-google-cloud-run-in-under-10-minutes/)
+### [Agentica-项目的开源-DeepCoder-模型在编程基准测试中性能超越-OpenAI-的-O1](https://www.infoq.com/news/2025/06/deepcoder-outperforms-openai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-17 00:00:00
 
 
 
-### [Agentica-项目的开源-DeepCoder-模型在编程基准测试中性能超越-OpenAI-的-O1](https://www.infoq.com/news/2025/06/deepcoder-outperforms-openai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [在不到-10-分钟内构建并将远程-MCP-服务器部署到-Google-Cloud-Run](https://cloud.google.com/blog/topics/developers-practitioners/build-and-deploy-a-remote-mcp-server-to-google-cloud-run-in-under-10-minutes/)
 
 2025-06-17 00:00:00
 
@@ -70826,13 +70842,13 @@ http://antirez.com/news/162
 
 
 
-### [将多层检查点用于大型-AI-训练任务](https://cloud.google.com/blog/products/ai-machine-learning/using-multi-tier-checkpointing-for-large-ai-training-jobs/)
+### [波士顿-Dev-峰会：人在回路中：混沌行业中的工程领导力](https://www.infoq.com/news/2025/06/infoq-dev-summit-aihype/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-16 00:00:00
 
 
 
-### [波士顿-Dev-峰会：人在回路中：混沌行业中的工程领导力](https://www.infoq.com/news/2025/06/infoq-dev-summit-aihype/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [将多层检查点用于大型-AI-训练任务](https://cloud.google.com/blog/products/ai-machine-learning/using-multi-tier-checkpointing-for-large-ai-training-jobs/)
 
 2025-06-16 00:00:00
 
@@ -70874,13 +70890,13 @@ http://antirez.com/news/162
 
 
 
-### [GitLab-18.0-发布，引入-AI-编码助手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247610&idx=4&sn=fb95a989406e950daea9963d8cd10807)
+### [游戏教父-John-Carmack：LLM-不是游戏的未来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247610&idx=1&sn=ce35358f23d20185502bfa84dd58651e)
 
 2025-06-11 13:30:00
 
 
 
-### [游戏教父-John-Carmack：LLM-不是游戏的未来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247610&idx=1&sn=ce35358f23d20185502bfa84dd58651e)
+### [GitLab-18.0-发布，引入-AI-编码助手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247610&idx=4&sn=fb95a989406e950daea9963d8cd10807)
 
 2025-06-11 13:30:00
 
@@ -70958,13 +70974,13 @@ http://antirez.com/news/162
 
 
 
-### [踏上生成式-AI-之旅：需要准备些什么](https://www.infoq.com/presentations/genai-product-management/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Embabel-简介：面向-Java-应用的进阶-AI-Agent-开发](https://www.infoq.com/news/2025/06/introducing-embabel-ai-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-05 00:00:00
 
 
 
-### [Embabel-简介：面向-Java-应用的进阶-AI-Agent-开发](https://www.infoq.com/news/2025/06/introducing-embabel-ai-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [踏上生成式-AI-之旅：需要准备些什么](https://www.infoq.com/presentations/genai-product-management/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-05 00:00:00
 
@@ -71210,13 +71226,7 @@ http://antirez.com/news/162
 
 
 
-### [Gemma-3n-预览版发布：强大、高效、移动端优先的人工智能](https://developers.googleblog.com/en/introducing-gemma-3n/)
-
-2025-05-20 00:00:00
-
-
-
-### [利用-Google-Gemini-和开源框架构建智能代理](https://developers.googleblog.com/en/building-agents-google-gemini-open-source-frameworks/)
+### [Spring-AI-1.0-发布：通过广泛模型支持简化-AI-应用开发](https://www.infoq.com/news/2025/05/spring-ai-1-0-streamlines-apps/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-20 00:00:00
 
@@ -71228,7 +71238,13 @@ http://antirez.com/news/162
 
 
 
-### [Spring-AI-1.0-发布：通过广泛模型支持简化-AI-应用开发](https://www.infoq.com/news/2025/05/spring-ai-1-0-streamlines-apps/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [利用-Google-Gemini-和开源框架构建智能代理](https://developers.googleblog.com/en/building-agents-google-gemini-open-source-frameworks/)
+
+2025-05-20 00:00:00
+
+
+
+### [Gemma-3n-预览版发布：强大、高效、移动端优先的人工智能](https://developers.googleblog.com/en/introducing-gemma-3n/)
 
 2025-05-20 00:00:00
 
@@ -71300,13 +71316,13 @@ http://antirez.com/news/162
 
 
 
-### [Anthropic-为-Claude-模型引入-Web-搜索功能](https://www.infoq.com/news/2025/05/anthropic-web-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [大型概念模型（LCM）：AI-推理领域的范式转变](https://www.infoq.com/articles/lcm-paradigm-shift-ai-reasoning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-14 00:00:00
 
 
 
-### [大型概念模型（LCM）：AI-推理领域的范式转变](https://www.infoq.com/articles/lcm-paradigm-shift-ai-reasoning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Anthropic-为-Claude-模型引入-Web-搜索功能](https://www.infoq.com/news/2025/05/anthropic-web-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-14 00:00:00
 
@@ -71324,7 +71340,7 @@ http://antirez.com/news/162
 
 
 
-### [Meta-开源-LlamaFirewall，增强-AI-智能体的综合安全防护](https://www.infoq.com/news/2025/05/llamafirewall-agent-protection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [LangChain-PostgreSQL-的开源增强](https://cloud.google.com/blog/products/ai-machine-learning/open-source-enhancements-to-langchain-postgresql/)
 
 2025-05-13 00:00:00
 
@@ -71336,7 +71352,7 @@ http://antirez.com/news/162
 
 
 
-### [LangChain-PostgreSQL-的开源增强](https://cloud.google.com/blog/products/ai-machine-learning/open-source-enhancements-to-langchain-postgresql/)
+### [Meta-开源-LlamaFirewall，增强-AI-智能体的综合安全防护](https://www.infoq.com/news/2025/05/llamafirewall-agent-protection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-13 00:00:00
 
@@ -71366,7 +71382,7 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-推出-GPT‑4.1-系列，增强性能和长文本支持](https://www.infoq.com/news/2025/05/openai-gpt-4-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [【第-3506-期】开发者专用的-AI-提示词使用指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276395&idx=1&sn=3fff9ab84ffb1715e8accb26bfe7c6a9&subscene=0)
 
 2025-05-12 00:00:00
 
@@ -71378,7 +71394,7 @@ http://antirez.com/news/162
 
 
 
-### [【第-3506-期】开发者专用的-AI-提示词使用指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276395&idx=1&sn=3fff9ab84ffb1715e8accb26bfe7c6a9&subscene=0)
+### [OpenAI-推出-GPT‑4.1-系列，增强性能和长文本支持](https://www.infoq.com/news/2025/05/openai-gpt-4-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-12 00:00:00
 
@@ -71390,13 +71406,13 @@ http://antirez.com/news/162
 
 
 
-### [中国技术出海破局战，数据跨境、本地化攻坚与开源生态的全球博弈](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651244411&idx=2&sn=21284ba40e39c0b2644b7a5d600fafd1&subscene=0)
+### [年赚三亿美金、估值近百亿，Cursor-竟无护城河？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651244411&idx=1&sn=78a394b327dfbe4838b616ec023c252e&subscene=0)
 
 2025-05-10 02:39:00
 
 
 
-### [年赚三亿美金、估值近百亿，Cursor-竟无护城河？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651244411&idx=1&sn=78a394b327dfbe4838b616ec023c252e&subscene=0)
+### [中国技术出海破局战，数据跨境、本地化攻坚与开源生态的全球博弈](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651244411&idx=2&sn=21284ba40e39c0b2644b7a5d600fafd1&subscene=0)
 
 2025-05-10 02:39:00
 
@@ -71498,13 +71514,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-发布-BrowseComp-基准测试，用于评估-AI-Agent-的网络搜索和深度研究能力](https://www.infoq.com/news/2025/05/openai-browsecomp-ai-benchmark/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从架构设计到部署上线：人工智能驱动的工具包如何统一开发者流程](https://www.infoq.com/news/2025/05/ai-toolkit-unify-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-04 00:00:00
 
 
 
-### [从架构设计到部署上线：人工智能驱动的工具包如何统一开发者流程](https://www.infoq.com/news/2025/05/ai-toolkit-unify-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [OpenAI-发布-BrowseComp-基准测试，用于评估-AI-Agent-的网络搜索和深度研究能力](https://www.infoq.com/news/2025/05/openai-browsecomp-ai-benchmark/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-04 00:00:00
 
@@ -71516,7 +71532,7 @@ http://antirez.com/news/162
 
 
 
-### [Palo-Alto-Networks：利用生成式-AI-打造云安全解决方案](https://cloud.google.com/blog/topics/partners/how-palo-alto-networks-builds-gen-ai-solutions/)
+### [Google-发布-Ironwood-TPU，赋能-AI-推理](https://www.infoq.com/news/2025/05/google-cloud-ironwood-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-02 00:00:00
 
@@ -71528,7 +71544,7 @@ http://antirez.com/news/162
 
 
 
-### [Google-发布-Ironwood-TPU，赋能-AI-推理](https://www.infoq.com/news/2025/05/google-cloud-ironwood-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Palo-Alto-Networks：利用生成式-AI-打造云安全解决方案](https://cloud.google.com/blog/topics/partners/how-palo-alto-networks-builds-gen-ai-solutions/)
 
 2025-05-02 00:00:00
 
@@ -71600,13 +71616,7 @@ http://antirez.com/news/162
 
 
 
-### [Vertex-AI-上的-Llama-4-MaaS-全面可用](https://developers.googleblog.com/en/llama-4-ga-maas-vertex-ai/)
-
-2025-04-29 00:00:00
-
-
-
-### [BigQuery-新增-AI-功能](https://cloud.google.com/blog/products/data-analytics/bigquery-adds-new-ai-capabilities/)
+### [Qwen3-终于发布！混合推理模式、支持-MCP，成本仅-DeepSeek-R1-三分之一，网友喊话小扎：要让工程师赶紧加班！](https://mp.weixin.qq.com/s/5bLJ2hU5M3E4ByGxnOU2PA)
 
 2025-04-29 00:00:00
 
@@ -71618,7 +71628,13 @@ http://antirez.com/news/162
 
 
 
-### [Qwen3-终于发布！混合推理模式、支持-MCP，成本仅-DeepSeek-R1-三分之一，网友喊话小扎：要让工程师赶紧加班！](https://mp.weixin.qq.com/s/5bLJ2hU5M3E4ByGxnOU2PA)
+### [BigQuery-新增-AI-功能](https://cloud.google.com/blog/products/data-analytics/bigquery-adds-new-ai-capabilities/)
+
+2025-04-29 00:00:00
+
+
+
+### [Vertex-AI-上的-Llama-4-MaaS-全面可用](https://developers.googleblog.com/en/llama-4-ga-maas-vertex-ai/)
 
 2025-04-29 00:00:00
 
@@ -71636,7 +71652,7 @@ http://antirez.com/news/162
 
 
 
-### [AWS-在-Well-Architected-生成式-AI-Lens-中推广-“负责任的-AI”-理念](https://www.infoq.com/news/2025/04/aws-well-architected-genai-lens/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [不到-100-行代码，实现一个简易通用智能-LLM-Agent](https://mp.weixin.qq.com/s/C_xOFFlyrWDITace1NvgcA)
 
 2025-04-27 00:00:00
 
@@ -71648,7 +71664,7 @@ http://antirez.com/news/162
 
 
 
-### [不到-100-行代码，实现一个简易通用智能-LLM-Agent](https://mp.weixin.qq.com/s/C_xOFFlyrWDITace1NvgcA)
+### [AWS-在-Well-Architected-生成式-AI-Lens-中推广-“负责任的-AI”-理念](https://www.infoq.com/news/2025/04/aws-well-architected-genai-lens/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-27 00:00:00
 
@@ -71702,13 +71718,13 @@ http://antirez.com/news/162
 
 
 
-### [微软原生-1-bit-LLM-有望将高效-genAI-应用于日常-CPU](https://www.infoq.com/news/2025/04/microsoft-bitnet-1bit-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Amazon-Q-和-Claude-Code：AI-如何掌控开发者-CLI](https://www.infoq.com/news/2025/04/amazon-q-cli-claude-code/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-23 00:00:00
 
 
 
-### [Amazon-Q-和-Claude-Code：AI-如何掌控开发者-CLI](https://www.infoq.com/news/2025/04/amazon-q-cli-claude-code/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [微软原生-1-bit-LLM-有望将高效-genAI-应用于日常-CPU](https://www.infoq.com/news/2025/04/microsoft-bitnet-1bit-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-23 00:00:00
 
@@ -71762,13 +71778,13 @@ http://antirez.com/news/162
 
 
 
-### [利用生成式-AI-提升企业生产力](https://www.infoq.com/presentations/genai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [.NET-AI-Chat-Web-App-模板-Preview-2-发布：支持-Qdrant-和-.NET-Aspire](https://www.infoq.com/news/2025/04/microsoft-dotnet-ai-template-p2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-21 00:00:00
 
 
 
-### [.NET-AI-Chat-Web-App-模板-Preview-2-发布：支持-Qdrant-和-.NET-Aspire](https://www.infoq.com/news/2025/04/microsoft-dotnet-ai-template-p2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [利用生成式-AI-提升企业生产力](https://www.infoq.com/presentations/genai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-21 00:00:00
 
@@ -71804,7 +71820,7 @@ http://antirez.com/news/162
 
 
 
-### [MCP-协议从原理到开发：一文读懂大模型交互的标准化革命！](https://mp.weixin.qq.com/s/kPdcmFydmIWRbgUEgiaWoQ)
+### [FastAPI-MCP：简化-FastAPI-与-AI-智能体的集成](https://www.infoq.com/news/2025/04/fastapi-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-16 00:00:00
 
@@ -71816,7 +71832,7 @@ http://antirez.com/news/162
 
 
 
-### [FastAPI-MCP：简化-FastAPI-与-AI-智能体的集成](https://www.infoq.com/news/2025/04/fastapi-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [MCP-协议从原理到开发：一文读懂大模型交互的标准化革命！](https://mp.weixin.qq.com/s/kPdcmFydmIWRbgUEgiaWoQ)
 
 2025-04-16 00:00:00
 
@@ -71876,13 +71892,13 @@ http://antirez.com/news/162
 
 
 
-### [微软与-Anthropic-合作发布-MCP-的-C#-SDK](https://www.infoq.com/news/2025/04/microsoft-csharp-sdk-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [AlloyDB-AI：为应用开发者带来全新创新](https://cloud.google.com/blog/products/databases/alloydb-ai-drives-innovation-from-the-database/)
 
 2025-04-10 00:00:00
 
 
 
-### [AlloyDB-AI：为应用开发者带来全新创新](https://cloud.google.com/blog/products/databases/alloydb-ai-drives-innovation-from-the-database/)
+### [微软与-Anthropic-合作发布-MCP-的-C#-SDK](https://www.infoq.com/news/2025/04/microsoft-csharp-sdk-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-10 00:00:00
 
@@ -71918,13 +71934,13 @@ http://antirez.com/news/162
 
 
 
-### [GitHub-Copilot-加入基于-AI-的代码密码扫描功能](https://mp.weixin.qq.com/s/l0z-iJ13ua5iN9dWygFOPA)
+### [GPU-编程“改朝换代”：英伟达终为-CUDA-添加原生-Python-支持，百万用户变千万？](https://mp.weixin.qq.com/s/5li67iXEJbPhO-jeext7yw)
 
 2025-04-08 08:00:21
 
 
 
-### [GPU-编程“改朝换代”：英伟达终为-CUDA-添加原生-Python-支持，百万用户变千万？](https://mp.weixin.qq.com/s/5li67iXEJbPhO-jeext7yw)
+### [GitHub-Copilot-加入基于-AI-的代码密码扫描功能](https://mp.weixin.qq.com/s/l0z-iJ13ua5iN9dWygFOPA)
 
 2025-04-08 08:00:21
 
@@ -71966,7 +71982,7 @@ http://antirez.com/news/162
 
 
 
-### [GitHub-Copilot-现可在-Windows-终端中运行了](https://mp.weixin.qq.com/s/rDiJENC0XuubQbC-OTLW0A)
+### [DeepSeek-打击面太广！新论文疑是-R2-发布前兆，奥特曼火速“应战”：o3-即将上线，GPT-5-免费放送！](https://mp.weixin.qq.com/s/e2O_JSUaa7s2olCtkJBXxg)
 
 2025-04-05 08:39:34
 
@@ -71978,7 +71994,7 @@ http://antirez.com/news/162
 
 
 
-### [DeepSeek-打击面太广！新论文疑是-R2-发布前兆，奥特曼火速“应战”：o3-即将上线，GPT-5-免费放送！](https://mp.weixin.qq.com/s/e2O_JSUaa7s2olCtkJBXxg)
+### [GitHub-Copilot-现可在-Windows-终端中运行了](https://mp.weixin.qq.com/s/rDiJENC0XuubQbC-OTLW0A)
 
 2025-04-05 08:39:34
 
@@ -71996,13 +72012,13 @@ http://antirez.com/news/162
 
 
 
-### [可观测性提升大语言模型系统用户体验：Honeycomb-CEO-KubeCon-EU-洞见](https://www.infoq.com/news/2025/04/llm-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Cloudflare-启用模型上下文协议-MCP-服务器的远程服务器托管服务](https://www.infoq.com/news/2025/04/cloudflare-remote-mcp-servers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-03 00:00:00
 
 
 
-### [Cloudflare-启用模型上下文协议-MCP-服务器的远程服务器托管服务](https://www.infoq.com/news/2025/04/cloudflare-remote-mcp-servers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [可观测性提升大语言模型系统用户体验：Honeycomb-CEO-KubeCon-EU-洞见](https://www.infoq.com/news/2025/04/llm-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-03 00:00:00
 
@@ -72068,13 +72084,7 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-推出全新语音模型，提升转录与语音生成能力](https://www.infoq.com/news/2025/03/openai-speech-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
-
-2025-03-31 00:00:00
-
-
-
-### [Gemini-API-与物联网技术](https://developers.googleblog.com/en/the-gemini-api-and-the-internet-of-things/)
+### [Mistral-AI-发布基于-LLM-的多模态文档-OCR-API](https://www.infoq.com/news/2025/03/mistral-ai-ocr-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-31 00:00:00
 
@@ -72086,7 +72096,13 @@ http://antirez.com/news/162
 
 
 
-### [Mistral-AI-发布基于-LLM-的多模态文档-OCR-API](https://www.infoq.com/news/2025/03/mistral-ai-ocr-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Gemini-API-与物联网技术](https://developers.googleblog.com/en/the-gemini-api-and-the-internet-of-things/)
+
+2025-03-31 00:00:00
+
+
+
+### [OpenAI-推出全新语音模型，提升转录与语音生成能力](https://www.infoq.com/news/2025/03/openai-speech-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-31 00:00:00
 
@@ -72104,13 +72120,7 @@ http://antirez.com/news/162
 
 
 
-### [Google-Gemini-2.5-Pro-发布：推理与代码能力显著提升](https://www.infoq.com/news/2025/03/gemini-2-5-pro/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
-
-2025-03-28 00:00:00
-
-
-
-### [Docker-Desktop-4.39-发布：引入-Docker-Smart-AI-Agent，CLI-正式版发布，并增强多平台支持](https://www.infoq.com/news/2025/03/docker-desktop-4-39/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Confluent-Cloud-通过-Flink-新功能简化实时-AI-能力](https://www.infoq.com/news/2025/03/confluent-cloud-flink-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-28 00:00:00
 
@@ -72122,7 +72132,13 @@ http://antirez.com/news/162
 
 
 
-### [Confluent-Cloud-通过-Flink-新功能简化实时-AI-能力](https://www.infoq.com/news/2025/03/confluent-cloud-flink-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Docker-Desktop-4.39-发布：引入-Docker-Smart-AI-Agent，CLI-正式版发布，并增强多平台支持](https://www.infoq.com/news/2025/03/docker-desktop-4-39/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2025-03-28 00:00:00
+
+
+
+### [Google-Gemini-2.5-Pro-发布：推理与代码能力显著提升](https://www.infoq.com/news/2025/03/gemini-2-5-pro/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-28 00:00:00
 
@@ -72218,25 +72234,25 @@ http://antirez.com/news/162
 
 
 
-### [AI-加持：提升数据防泄露精准度](https://blog.cloudflare.com/improving-data-loss-prevention-accuracy-with-ai-context-analysis/)
-
-2025-03-21 13:00:00
-
-
-
 ### [AI-SDK-4.2---Vercel](https://vercel.com/blog/ai-sdk-4-2)
 
 2025-03-21 13:00:00
 
 
 
-### [利用-Spanner-图和-LangChain-实现强大的图-RAG-应用](https://cloud.google.com/blog/products/databases/using-spanner-graph-with-langchain-for-graphrag/)
+### [AI-加持：提升数据防泄露精准度](https://blog.cloudflare.com/improving-data-loss-prevention-accuracy-with-ai-context-analysis/)
+
+2025-03-21 13:00:00
+
+
+
+### [AI-趋势：软件团队的颠覆与变革](https://www.infoq.com/articles/ai-trends-disrupting-software-teams/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-21 00:00:00
 
 
 
-### [AI-趋势：软件团队的颠覆与变革](https://www.infoq.com/articles/ai-trends-disrupting-software-teams/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [利用-Spanner-图和-LangChain-实现强大的图-RAG-应用](https://cloud.google.com/blog/products/databases/using-spanner-graph-with-langchain-for-graphrag/)
 
 2025-03-21 00:00:00
 
@@ -72362,7 +72378,7 @@ http://antirez.com/news/162
 
 
 
-### [SIGNAL-IDUNA-如何利用生成式-AI-显著增强客户服务](https://cloud.google.com/blog/products/ai-machine-learning/how-signal-iduna-supercharges-customer-service-with-gen-ai/)
+### [在-Vertex-AI-上使用新的-Gemma-3](https://cloud.google.com/blog/products/ai-machine-learning/announcing-gemma-3-on-vertex-ai/)
 
 2025-03-13 00:00:00
 
@@ -72374,7 +72390,7 @@ http://antirez.com/news/162
 
 
 
-### [在-Vertex-AI-上使用新的-Gemma-3](https://cloud.google.com/blog/products/ai-machine-learning/announcing-gemma-3-on-vertex-ai/)
+### [SIGNAL-IDUNA-如何利用生成式-AI-显著增强客户服务](https://cloud.google.com/blog/products/ai-machine-learning/how-signal-iduna-supercharges-customer-service-with-gen-ai/)
 
 2025-03-13 00:00:00
 
@@ -72398,7 +72414,7 @@ http://antirez.com/news/162
 
 
 
-### [稳定且高性价比的大模型存储：携程-10PB-级-JuiceFS-工程实践](https://mp.weixin.qq.com/s/Lb5JWItQeLlVBrmAtm8U6g)
+### [EP-架构：DeepSeek-突破性实践背后，分布式推理的终极形态之争](https://mp.weixin.qq.com/s/UQc937lMLksUWGuukUTZZw)
 
 2025-03-11 12:26:18
 
@@ -72410,7 +72426,7 @@ http://antirez.com/news/162
 
 
 
-### [EP-架构：DeepSeek-突破性实践背后，分布式推理的终极形态之争](https://mp.weixin.qq.com/s/UQc937lMLksUWGuukUTZZw)
+### [稳定且高性价比的大模型存储：携程-10PB-级-JuiceFS-工程实践](https://mp.weixin.qq.com/s/Lb5JWItQeLlVBrmAtm8U6g)
 
 2025-03-11 12:26:18
 
@@ -72482,13 +72498,13 @@ http://antirez.com/news/162
 
 
 
-### [Google-DeepMind-推出增强版-AMIE，助力长期疾病管理](https://www.infoq.com/news/2025/03/google-deepmind-amie/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [老显卡福音！美团开源首发-INT8-无损满血版-DeepSeek-R1](https://tech.meituan.com/2025/03/07/meituan-int8-deepseek-r1.html)
 
 2025-03-07 00:00:00
 
 
 
-### [老显卡福音！美团开源首发-INT8-无损满血版-DeepSeek-R1](https://tech.meituan.com/2025/03/07/meituan-int8-deepseek-r1.html)
+### [Google-DeepMind-推出增强版-AMIE，助力长期疾病管理](https://www.infoq.com/news/2025/03/google-deepmind-amie/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-07 00:00:00
 
@@ -72614,13 +72630,13 @@ http://antirez.com/news/162
 
 
 
-### [不用英伟达严选？DeepSeek-为何自研高性能文件系统-3FS，挑战行业“标准答案”](https://mp.weixin.qq.com/s/MbFjNjJx4dXIGDW1vqxZ7w)
+### [“前端已死”是危言耸听吗？](https://mp.weixin.qq.com/s/z3fQ3pryDtloGmWTKQ4djQ)
 
 2025-02-28 10:49:51
 
 
 
-### [“前端已死”是危言耸听吗？](https://mp.weixin.qq.com/s/z3fQ3pryDtloGmWTKQ4djQ)
+### [不用英伟达严选？DeepSeek-为何自研高性能文件系统-3FS，挑战行业“标准答案”](https://mp.weixin.qq.com/s/MbFjNjJx4dXIGDW1vqxZ7w)
 
 2025-02-28 10:49:51
 
@@ -72644,13 +72660,13 @@ http://antirez.com/news/162
 
 
 
-### [浅谈-DeepSeek-与-Lakehouse-的跨越式融合](https://mp.weixin.qq.com/s/dmAdAlGMQgbi7zEF_gMqaw)
+### [英伟达“赚钱机器”更强了！盈利创纪录，黄仁勋：DeepSeek-为-GPU-降本，但下一代模型还离不开我](https://mp.weixin.qq.com/s/EtEA-VmHDWyQ6njpZXR6vQ)
 
 2025-02-27 05:17:03
 
 
 
-### [英伟达“赚钱机器”更强了！盈利创纪录，黄仁勋：DeepSeek-为-GPU-降本，但下一代模型还离不开我](https://mp.weixin.qq.com/s/EtEA-VmHDWyQ6njpZXR6vQ)
+### [浅谈-DeepSeek-与-Lakehouse-的跨越式融合](https://mp.weixin.qq.com/s/dmAdAlGMQgbi7zEF_gMqaw)
 
 2025-02-27 05:17:03
 
@@ -72710,13 +72726,13 @@ http://antirez.com/news/162
 
 
 
-### [我一个人，12-个月内，创办了-12-家公司，独立开发者十三年创业风云录](https://mp.weixin.qq.com/s/QopY2TcOmgYc-BLupg4TMw)
+### [梁文锋、杨植麟同一天发论文“秀肌肉”，主题居然撞上了！](https://mp.weixin.qq.com/s/--entK_3IfdaCUobtjdKxA)
 
 2025-02-24 10:26:02
 
 
 
-### [梁文锋、杨植麟同一天发论文“秀肌肉”，主题居然撞上了！](https://mp.weixin.qq.com/s/--entK_3IfdaCUobtjdKxA)
+### [我一个人，12-个月内，创办了-12-家公司，独立开发者十三年创业风云录](https://mp.weixin.qq.com/s/QopY2TcOmgYc-BLupg4TMw)
 
 2025-02-24 10:26:02
 
@@ -72770,13 +72786,7 @@ http://antirez.com/news/162
 
 
 
-### [Meta-发布-LLM-赋能的软件测试工具](https://www.infoq.com/news/2025/02/meta-ach-tool/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
-
-2025-02-19 00:00:00
-
-
-
-### [专为向量搜索而生译](https://ginonotes.com/posts/why-dedicated-vector-database)
+### [Gemini-在-BigQuery-中对数据工程任务的助力](https://cloud.google.com/blog/products/data-analytics/how-gemini-in-bigquery-helps-with-data-engineering-tasks/)
 
 2025-02-19 00:00:00
 
@@ -72788,7 +72798,13 @@ http://antirez.com/news/162
 
 
 
-### [Gemini-在-BigQuery-中对数据工程任务的助力](https://cloud.google.com/blog/products/data-analytics/how-gemini-in-bigquery-helps-with-data-engineering-tasks/)
+### [专为向量搜索而生译](https://ginonotes.com/posts/why-dedicated-vector-database)
+
+2025-02-19 00:00:00
+
+
+
+### [Meta-发布-LLM-赋能的软件测试工具](https://www.infoq.com/news/2025/02/meta-ach-tool/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-19 00:00:00
 
@@ -72800,13 +72816,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-发布-Operator：一款-Web-任务-AI-代理](https://www.infoq.com/news/2025/02/openai-operator-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Grok-3-发布：20-万-GPU-训练的新一代模型](https://ginonotes.com/posts/xai-release-grok3)
 
 2025-02-18 00:00:00
 
 
 
-### [Grok-3-发布：20-万-GPU-训练的新一代模型](https://ginonotes.com/posts/xai-release-grok3)
+### [OpenAI-发布-Operator：一款-Web-任务-AI-代理](https://www.infoq.com/news/2025/02/openai-operator-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-18 00:00:00
 
@@ -72818,13 +72834,13 @@ http://antirez.com/news/162
 
 
 
-### [大型语言模型的提示注入](https://mp.weixin.qq.com/s/q2iMW0t5456btmIPS1ba6Q)
+### [DeepSeek-爆火真相：不靠“人盯”，-让-AI-自己学会慢思考](https://mp.weixin.qq.com/s/T55MH0y0ZLHXijSyELbsqA)
 
 2025-02-17 07:13:55
 
 
 
-### [DeepSeek-爆火真相：不靠“人盯”，-让-AI-自己学会慢思考](https://mp.weixin.qq.com/s/T55MH0y0ZLHXijSyELbsqA)
+### [大型语言模型的提示注入](https://mp.weixin.qq.com/s/q2iMW0t5456btmIPS1ba6Q)
 
 2025-02-17 07:13:55
 
@@ -72854,7 +72870,7 @@ http://antirez.com/news/162
 
 
 
-### [模型上下文协议-Java-SDK-简介](https://spring.io/blog/2025/02/14/mcp-java-sdk-released-2)
+### [使用-Apigee-API-管理进行-AI-应用](https://cloud.google.com/blog/products/api-management/using-apigee-api-management-for-ai/)
 
 2025-02-14 00:00:00
 
@@ -72866,7 +72882,7 @@ http://antirez.com/news/162
 
 
 
-### [使用-Apigee-API-管理进行-AI-应用](https://cloud.google.com/blog/products/api-management/using-apigee-api-management-for-ai/)
+### [模型上下文协议-Java-SDK-简介](https://spring.io/blog/2025/02/14/mcp-java-sdk-released-2)
 
 2025-02-14 00:00:00
 
@@ -72920,13 +72936,13 @@ http://antirez.com/news/162
 
 
 
-### [微软推出-CoRAG:一种通过迭代推理增强检索的人工智能框架](https://www.infoq.com/news/2025/02/corag-microsoft-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [OpenAI-新一代-o3-mini-模型登陆-Azure，赋能-AI-应用](https://www.infoq.com/news/2025/02/mini-o3-azure-openai-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-11 00:00:00
 
 
 
-### [OpenAI-新一代-o3-mini-模型登陆-Azure，赋能-AI-应用](https://www.infoq.com/news/2025/02/mini-o3-azure-openai-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [微软推出-CoRAG:一种通过迭代推理增强检索的人工智能框架](https://www.infoq.com/news/2025/02/corag-microsoft-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-11 00:00:00
 
@@ -73004,13 +73020,13 @@ http://antirez.com/news/162
 
 
 
-### [将大型语言模型带出黑箱：人在回路知识蒸馏的实用指南](https://www.infoq.com/presentations/llm-disttilation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [GKE-集群升级速度提升的背后](https://cloud.google.com/blog/products/containers-kubernetes/gkes-faster-cluster-upgrades-under-the-hood/)
 
 2025-02-05 00:00:00
 
 
 
-### [GKE-集群升级速度提升的背后](https://cloud.google.com/blog/products/containers-kubernetes/gkes-faster-cluster-upgrades-under-the-hood/)
+### [将大型语言模型带出黑箱：人在回路知识蒸馏的实用指南](https://www.infoq.com/presentations/llm-disttilation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-05 00:00:00
 
@@ -73040,13 +73056,7 @@ http://antirez.com/news/162
 
 
 
-### [本周-Spring-动态---2025-年-2-月-4-日](https://spring.io/blog/2025/02/04/this-week-in-spring-february-4th-2025)
-
-2025-02-04 00:00:00
-
-
-
-### [DeepSeek-开源-DeepSeek-R1-大语言模型，性能媲美-OpenAI-的-o1-模型](https://www.infoq.com/news/2025/02/deepseek-r1-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Hugging-Face-通过新提供商集成扩展无服务器计算推理选项](https://www.infoq.com/news/2025/02/hugging-face-inference/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-04 00:00:00
 
@@ -73058,7 +73068,13 @@ http://antirez.com/news/162
 
 
 
-### [Hugging-Face-通过新提供商集成扩展无服务器计算推理选项](https://www.infoq.com/news/2025/02/hugging-face-inference/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [DeepSeek-开源-DeepSeek-R1-大语言模型，性能媲美-OpenAI-的-o1-模型](https://www.infoq.com/news/2025/02/deepseek-r1-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2025-02-04 00:00:00
+
+
+
+### [本周-Spring-动态---2025-年-2-月-4-日](https://spring.io/blog/2025/02/04/this-week-in-spring-february-4th-2025)
 
 2025-02-04 00:00:00
 
@@ -73097,6 +73113,14 @@ http://antirez.com/news/162
 ### [EP148:-DeepSeek-1-Pager](https://blog.bytebytego.com/p/ep148-deepseek-1-pager)
 
 2025-02-01 16:31:04
+
+
+
+### [AI-鉴定-AI，下一个千亿级的生意](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650887528&idx=3&sn=4535a31293e06c700133b684f7f2b517)
+
+2026-08-22 09:00:00 | 标签: 人工智能, AI检测, 合成媒体, AIGC, 科技趋势
+
+> 文章指出，自 2022 年 ChatGPT 发布后，AI 生成内容在互联网占比迅速从 0.97%飙升至 2025 年 Q4 的 50.9%，已超过人类原创量。为此，AI 检测工具、数据中心建设、能源与 AI 鉴定服务等衍生产业迅速兴起，形成了规模数百亿元的合成媒体检测市场。然而，检测技术受限于不断提升的生成模型，形成了检测与生成的军备竞赛，导致误报、信任危机等问题。文章还介绍了水印标识、监管政策以及企业级解决方案（如 NVIDIA 的检测服务、君同未来等），并指出未来标准化水印可能使检测工具失去市场，但目前仍处于快速增长的过渡期。
 
 
 
@@ -73172,13 +73196,13 @@ http://antirez.com/news/162
 
 
 
-### [Eval-丨-14-天-450-人-500-辆-Agent-坦克大混战：我们完成了一场大规模-Agent-众测](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247631246&idx=1&sn=b276e9895cf0687c3648e74e69804cda)
+### [“Token-绝非水电煤，它是汽油！95/98-和掺酒精的不能再一样定价了”](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247631246&idx=2&sn=bb0e0f8cf87bf8bce76a1a8f17636951)
 
 2026-07-25 10:55:00
 
 
 
-### [“Token-绝非水电煤，它是汽油！95/98-和掺酒精的不能再一样定价了”](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247631246&idx=2&sn=bb0e0f8cf87bf8bce76a1a8f17636951)
+### [Eval-丨-14-天-450-人-500-辆-Agent-坦克大混战：我们完成了一场大规模-Agent-众测](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247631246&idx=1&sn=b276e9895cf0687c3648e74e69804cda)
 
 2026-07-25 10:55:00
 
@@ -73256,13 +73280,13 @@ http://antirez.com/news/162
 
 
 
-### [在-AI-应用普遍喊难的当下，这-15-个应用找到了不一样的活法](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524906&idx=2&sn=c5e5e7564de80a455f41be6f26260615)
+### [上线-14-个月，Notion-关掉了自己的-AI-邮件产品](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524906&idx=1&sn=d2f1ef624da1f34d6632fe35b98cc02d)
 
 2026-06-27 10:30:00
 
 
 
-### [上线-14-个月，Notion-关掉了自己的-AI-邮件产品](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524906&idx=1&sn=d2f1ef624da1f34d6632fe35b98cc02d)
+### [在-AI-应用普遍喊难的当下，这-15-个应用找到了不一样的活法](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524906&idx=2&sn=c5e5e7564de80a455f41be6f26260615)
 
 2026-06-27 10:30:00
 
@@ -73574,7 +73598,7 @@ http://antirez.com/news/162
 
 
 
-### [Viggle-创始人楚航：从-11-年-3D-生成深耕到构建-AI-原生世界模型](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247515032&idx=1&sn=573ec11a345fcc51d9a213e4203e2050)
+### [前-DeepMind-研究员创办，AI-视觉推理初创公司-Elorian-融资-5500-万美元](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247515032&idx=3&sn=c245c75d992cfd926abaa520f95e4b89)
 
 2026-04-10 02:04:00
 
@@ -73586,19 +73610,19 @@ http://antirez.com/news/162
 
 
 
-### [前-DeepMind-研究员创办，AI-视觉推理初创公司-Elorian-融资-5500-万美元](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247515032&idx=3&sn=c245c75d992cfd926abaa520f95e4b89)
+### [Viggle-创始人楚航：从-11-年-3D-生成深耕到构建-AI-原生世界模型](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247515032&idx=1&sn=573ec11a345fcc51d9a213e4203e2050)
 
 2026-04-10 02:04:00
 
 
 
-### [Anthropic-炒作大辞典](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247627353&idx=1&sn=ac85a6670205027cd5b2db3233db37aa)
+### [最强-Claude-比黄金还贵，有人用省-token.skill-立降-65%，还有-10-个小妙招](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247627353&idx=3&sn=0d4911e8363234292cc7a205676672ad)
 
 2026-04-10 01:44:00
 
 
 
-### [最强-Claude-比黄金还贵，有人用省-token.skill-立降-65%，还有-10-个小妙招](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247627353&idx=3&sn=0d4911e8363234292cc7a205676672ad)
+### [Anthropic-炒作大辞典](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247627353&idx=1&sn=ac85a6670205027cd5b2db3233db37aa)
 
 2026-04-10 01:44:00
 
@@ -73670,13 +73694,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-催生的「一人公司」爆火：现状、商业模式与创业门槛分析](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=3&sn=1a78e0eac2ab79928ffa14dbb254228d)
+### [腾讯汤道生：从「养虾」到-Agent-生产力，Harness-工程决定-AI-落地成败](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=2&sn=c55cb3ec0b2f4d6972572739eb8879ae)
 
 2026-04-09 14:40:00
 
 
 
-### [腾讯汤道生：从「养虾」到-Agent-生产力，Harness-工程决定-AI-落地成败](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=2&sn=c55cb3ec0b2f4d6972572739eb8879ae)
+### [AI-催生的「一人公司」爆火：现状、商业模式与创业门槛分析](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=3&sn=1a78e0eac2ab79928ffa14dbb254228d)
 
 2026-04-09 14:40:00
 
@@ -74156,13 +74180,13 @@ http://antirez.com/news/162
 
 
 
-### [阿里想靠-ATH-把二级市场变成它的下个孙正义](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626488&idx=1&sn=c54a135018204afcd486d4062297e8fa)
+### [OpenAI-突然宣布"三合一"：浏览器+编程+ChatGPT-合并，内部承认过去一年走错了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626488&idx=2&sn=13a8d01ef7c9609d8ce7906ec81a546c)
 
 2026-03-21 03:12:00
 
 
 
-### [OpenAI-突然宣布"三合一"：浏览器+编程+ChatGPT-合并，内部承认过去一年走错了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626488&idx=2&sn=13a8d01ef7c9609d8ce7906ec81a546c)
+### [阿里想靠-ATH-把二级市场变成它的下个孙正义](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626488&idx=1&sn=c54a135018204afcd486d4062297e8fa)
 
 2026-03-21 03:12:00
 
@@ -74240,7 +74264,7 @@ http://antirez.com/news/162
 
 
 
-### [“内存暴涨”100-天，千元机被迫死亡](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626433&idx=3&sn=96cd6c39e99024eb5626da9518835e16)
+### [OpenClaw-不重要，重要的是它以后跑在哪里](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626433&idx=1&sn=60956a9dd0e71722017b56bac9f1a852)
 
 2026-03-20 01:38:00
 
@@ -74252,7 +74276,7 @@ http://antirez.com/news/162
 
 
 
-### [OpenClaw-不重要，重要的是它以后跑在哪里](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626433&idx=1&sn=60956a9dd0e71722017b56bac9f1a852)
+### [“内存暴涨”100-天，千元机被迫死亡](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626433&idx=3&sn=96cd6c39e99024eb5626da9518835e16)
 
 2026-03-20 01:38:00
 
@@ -74288,25 +74312,25 @@ http://antirez.com/news/162
 
 
 
-### [被全网猜是-DeepSeek-V4-的神秘大模型，被小米认领了！还能免费「养龙虾」](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248882423&idx=3&sn=c7e42cc1a61fdf22e7596be108fb8fdc)
-
-2026-03-19 13:39:00
-
-
-
 ### [站在-OpenClaw-风口的飞书，要让小白也能无痛养虾](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248882423&idx=1&sn=a78c7c415ba51c85a58198a07d505b5e)
 
 2026-03-19 13:39:00
 
 
 
-### [AI-正在重塑泛娱乐出海：算法、素材与支付的“三位一体”新范式](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650678302&idx=3&sn=7cd2024310ec72e26da7dcde6307182a)
+### [被全网猜是-DeepSeek-V4-的神秘大模型，被小米认领了！还能免费「养龙虾」](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248882423&idx=3&sn=c7e42cc1a61fdf22e7596be108fb8fdc)
+
+2026-03-19 13:39:00
+
+
+
+### [一年内拿两轮融资，做出“更懂你”的学习-Agent｜对话创始人](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650678302&idx=2&sn=8179610d11d1591de04edf997d1728e6)
 
 2026-03-19 13:30:00
 
 
 
-### [一年内拿两轮融资，做出“更懂你”的学习-Agent｜对话创始人](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650678302&idx=2&sn=8179610d11d1591de04edf997d1728e6)
+### [AI-正在重塑泛娱乐出海：算法、素材与支付的“三位一体”新范式](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650678302&idx=3&sn=7cd2024310ec72e26da7dcde6307182a)
 
 2026-03-19 13:30:00
 
@@ -74588,13 +74612,13 @@ http://antirez.com/news/162
 
 
 
-### [“和什么样的人共事，这比职位和金钱更重要”](https://mp.weixin.qq.com/s?__biz=MjM5NzY4MzQyMQ==&mid=2650151063&idx=2&sn=cafd4d7d15100b1cc08bf244f0b12360)
+### [中国短剧席卷全球，你看懂它的底层逻辑了吗？](https://mp.weixin.qq.com/s?__biz=MjM5NzY4MzQyMQ==&mid=2650151063&idx=1&sn=fa265ace929183258d8d686612f36d39)
 
 2026-03-17 00:02:00
 
 
 
-### [中国短剧席卷全球，你看懂它的底层逻辑了吗？](https://mp.weixin.qq.com/s?__biz=MjM5NzY4MzQyMQ==&mid=2650151063&idx=1&sn=fa265ace929183258d8d686612f36d39)
+### [“和什么样的人共事，这比职位和金钱更重要”](https://mp.weixin.qq.com/s?__biz=MjM5NzY4MzQyMQ==&mid=2650151063&idx=2&sn=cafd4d7d15100b1cc08bf244f0b12360)
 
 2026-03-17 00:02:00
 
@@ -74624,13 +74648,13 @@ http://antirez.com/news/162
 
 
 
-### [从千问变动到-“AI-英雄传”，与-DINQ-高岱恒聊传奇-AI-研究员们丨晚点播客](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534055&idx=2&sn=d8fa78c85a94bf644f426028a9d4db21)
+### [龙虾狂热，一个利益共同体的成形](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534055&idx=1&sn=480f6ab4f6f646c0ec85d26446d61c6e)
 
 2026-03-16 13:22:00
 
 
 
-### [龙虾狂热，一个利益共同体的成形](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534055&idx=1&sn=480f6ab4f6f646c0ec85d26446d61c6e)
+### [从千问变动到-“AI-英雄传”，与-DINQ-高岱恒聊传奇-AI-研究员们丨晚点播客](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534055&idx=2&sn=d8fa78c85a94bf644f426028a9d4db21)
 
 2026-03-16 13:22:00
 
@@ -74720,13 +74744,13 @@ http://antirez.com/news/162
 
 
 
-### [陈天桥：如果人类没了，AI-也会觉得没意思](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904138&idx=1&sn=998f3daf17d95d116bbec1a9b69418a2)
+### [黄仁勋罕见长文：AI-真正的底层逻辑，是一块“五层蛋糕”](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904138&idx=2&sn=b69a425e69d654ee720237ea584d153d)
 
 2026-03-15 13:30:00
 
 
 
-### [黄仁勋罕见长文：AI-真正的底层逻辑，是一块“五层蛋糕”](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904138&idx=2&sn=b69a425e69d654ee720237ea584d153d)
+### [陈天桥：如果人类没了，AI-也会觉得没意思](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904138&idx=1&sn=998f3daf17d95d116bbec1a9b69418a2)
 
 2026-03-15 13:30:00
 
@@ -74738,13 +74762,13 @@ http://antirez.com/news/162
 
 
 
-### [Kimi-估值涨至-180-亿美元，不到-3-个月翻-4-倍；字节回应武汉研发中心裁员；于东来再谈胖东来-40-亿资产分配；周鸿祎向母校捐赠-1-亿元丨邦早报](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865555&idx=1&sn=705b7aa8ded16d4c87f84d7e761d9459)
+### [“养虾热”带火-Mac-mini，华强北多个销售档口已断货；大四学生-AI-项目登-GitHub-榜首，获陈天桥-3000-万投资丨-AI-周报](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865555&idx=2&sn=5b6cfe6aab529d93df3905f9b220e437)
 
 2026-03-15 01:29:00
 
 
 
-### [“养虾热”带火-Mac-mini，华强北多个销售档口已断货；大四学生-AI-项目登-GitHub-榜首，获陈天桥-3000-万投资丨-AI-周报](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865555&idx=2&sn=5b6cfe6aab529d93df3905f9b220e437)
+### [Kimi-估值涨至-180-亿美元，不到-3-个月翻-4-倍；字节回应武汉研发中心裁员；于东来再谈胖东来-40-亿资产分配；周鸿祎向母校捐赠-1-亿元丨邦早报](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865555&idx=1&sn=705b7aa8ded16d4c87f84d7e761d9459)
 
 2026-03-15 01:29:00
 
@@ -74756,13 +74780,13 @@ http://antirez.com/news/162
 
 
 
-### [2026-年首场直播，周云杰到底讲了啥](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904124&idx=1&sn=cadb46ae216f5b600ce6198a24fa76b1)
+### [AI-时代，销售如何构建核心竞争力？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904124&idx=2&sn=d4e57cebb003bd73a8c9feda77bd8249)
 
 2026-03-14 13:29:00
 
 
 
-### [AI-时代，销售如何构建核心竞争力？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904124&idx=2&sn=d4e57cebb003bd73a8c9feda77bd8249)
+### [2026-年首场直播，周云杰到底讲了啥](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904124&idx=1&sn=cadb46ae216f5b600ce6198a24fa76b1)
 
 2026-03-14 13:29:00
 
@@ -74810,13 +74834,13 @@ http://antirez.com/news/162
 
 
 
-### [当机器比你能干，你还能做什么？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904110&idx=2&sn=3649036f8d8fb812ed8b0124c733a57a)
+### [傅盛：AI-时代，工作逻辑彻底翻转了](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904110&idx=1&sn=281c4ab71cc7ef606846b027b6eda0b4)
 
 2026-03-13 13:31:00
 
 
 
-### [傅盛：AI-时代，工作逻辑彻底翻转了](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904110&idx=1&sn=281c4ab71cc7ef606846b027b6eda0b4)
+### [当机器比你能干，你还能做什么？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904110&idx=2&sn=3649036f8d8fb812ed8b0124c733a57a)
 
 2026-03-13 13:31:00
 
@@ -74852,19 +74876,19 @@ http://antirez.com/news/162
 
 
 
-### [开发者们最近推荐了-3-个「学习外语」的-App](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247609363&idx=1&sn=9f6b4cdc398ffc6d3b3b502d73a1616b)
-
-2026-03-13 04:22:00
-
-
-
 ### [Apple-宣布下调中国区-App-Store-佣金率-/-飞书推出-OpenClaw-官方插件-/-三星调整-Galaxy-设备的底层刷机机制](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247609363&idx=2&sn=c1ea71b584dcbdb4a18d86bce121677b)
 
 2026-03-13 04:22:00
 
 
 
-### [AI-红娘，搅黄了年轻人的相亲](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626179&idx=3&sn=133bbbf182adfbd1aadb31e78bd547c8)
+### [开发者们最近推荐了-3-个「学习外语」的-App](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247609363&idx=1&sn=9f6b4cdc398ffc6d3b3b502d73a1616b)
+
+2026-03-13 04:22:00
+
+
+
+### [实测-Tabbit:-OpenClaw-很火，但你可能只需要-AI-浏览器](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626179&idx=1&sn=75546392a9e015b34b51295c4d653aa6)
 
 2026-03-13 03:09:00
 
@@ -74876,7 +74900,7 @@ http://antirez.com/news/162
 
 
 
-### [实测-Tabbit:-OpenClaw-很火，但你可能只需要-AI-浏览器](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626179&idx=1&sn=75546392a9e015b34b51295c4d653aa6)
+### [AI-红娘，搅黄了年轻人的相亲](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626179&idx=3&sn=133bbbf182adfbd1aadb31e78bd547c8)
 
 2026-03-13 03:09:00
 
@@ -74942,13 +74966,13 @@ http://antirez.com/news/162
 
 
 
-### [2017，制造奥本海默](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865219&idx=2&sn=eb7e8e648fa20868cd644e9607d5b969)
+### [百虾大战开打！大厂搞“龙虾赛马”，创业者的机会在哪？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865219&idx=1&sn=623ae3d8a8070323b7a2a6dfb2435e0e)
 
 2026-03-12 10:19:00
 
 
 
-### [百虾大战开打！大厂搞“龙虾赛马”，创业者的机会在哪？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865219&idx=1&sn=623ae3d8a8070323b7a2a6dfb2435e0e)
+### [2017，制造奥本海默](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650865219&idx=2&sn=eb7e8e648fa20868cd644e9607d5b969)
 
 2026-03-12 10:19:00
 
@@ -75248,13 +75272,13 @@ http://antirez.com/news/162
 
 
 
-### [“龙虾”突放大招！第一批“养龙虾”的极客实测：本地-Agent-迈向生产级！即便重启-Mac-Mini，也能秒接之前对话！开发者可自定义记忆](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655936912&idx=1&sn=946aae1c28db066168530c0dafbfa99c)
+### [Google-DeepMind-CEO-出传记了！智谱唐杰作序：通往无限机器的-AGI-之路](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655936912&idx=2&sn=4f02f6153217a81e4177515685687a13)
 
 2026-03-09 05:34:00
 
 
 
-### [Google-DeepMind-CEO-出传记了！智谱唐杰作序：通往无限机器的-AGI-之路](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655936912&idx=2&sn=4f02f6153217a81e4177515685687a13)
+### [“龙虾”突放大招！第一批“养龙虾”的极客实测：本地-Agent-迈向生产级！即便重启-Mac-Mini，也能秒接之前对话！开发者可自定义记忆](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655936912&idx=1&sn=946aae1c28db066168530c0dafbfa99c)
 
 2026-03-09 05:34:00
 
@@ -75284,13 +75308,13 @@ http://antirez.com/news/162
 
 
 
-### [Z-Product｜Product-Hunt-最佳产品（2.23-3.1），Openclaw-全托管平台登顶！](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247514439&idx=2&sn=3c259cc56618359349fe267e2485c971)
+### [独家｜聚焦大模型推理，水下-AI-芯片公司斩获-10-亿元-Pre-A-轮融资](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247514439&idx=1&sn=91cd0f432b8ffd7bd4e467afb0b8c767)
 
 2026-03-09 01:04:00
 
 
 
-### [独家｜聚焦大模型推理，水下-AI-芯片公司斩获-10-亿元-Pre-A-轮融资](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247514439&idx=1&sn=91cd0f432b8ffd7bd4e467afb0b8c767)
+### [Z-Product｜Product-Hunt-最佳产品（2.23-3.1），Openclaw-全托管平台登顶！](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247514439&idx=2&sn=3c259cc56618359349fe267e2485c971)
 
 2026-03-09 01:04:00
 
@@ -75344,13 +75368,13 @@ http://antirez.com/news/162
 
 
 
-### [Dola-能成为下一个-TikTok-吗？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650864081&idx=3&sn=45f279d39c8ad1a86e909a9055673f9d)
+### [第一批“养龙虾”的人，已经开始清醒了](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650864081&idx=1&sn=15d9ab10953903c3675907ebc1248597)
 
 2026-03-07 10:21:00
 
 
 
-### [第一批“养龙虾”的人，已经开始清醒了](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650864081&idx=1&sn=15d9ab10953903c3675907ebc1248597)
+### [Dola-能成为下一个-TikTok-吗？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650864081&idx=3&sn=45f279d39c8ad1a86e909a9055673f9d)
 
 2026-03-07 10:21:00
 
@@ -75992,13 +76016,13 @@ http://antirez.com/news/162
 
 
 
-### [实测-Genie：各位，传说中的世界模型被-Google-做出来了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624993&idx=1&sn=fa21dcba2268524635f121e17679ae70)
+### [全球首个大模型在轨部署：中国太空算力解锁“软硬一体”](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624993&idx=2&sn=9e96e76b7fbf0bb67d8898b63580d9ca)
 
 2026-01-30 04:59:00
 
 
 
-### [全球首个大模型在轨部署：中国太空算力解锁“软硬一体”](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624993&idx=2&sn=9e96e76b7fbf0bb67d8898b63580d9ca)
+### [实测-Genie：各位，传说中的世界模型被-Google-做出来了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624993&idx=1&sn=fa21dcba2268524635f121e17679ae70)
 
 2026-01-30 04:59:00
 
@@ -76178,7 +76202,7 @@ http://antirez.com/news/162
 
 
 
-### [AI-加入群聊这事，可能还是得腾讯来做](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624876&idx=1&sn=05632f67f1042a6f6038cafbbf90eed7)
+### [OpenAI-的最强对手，离「AI-Windows」又近了一步](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624876&idx=3&sn=9e2415521221fc53cc2d8d85f1961ccb)
 
 2026-01-28 03:11:00
 
@@ -76190,7 +76214,7 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-的最强对手，离「AI-Windows」又近了一步](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624876&idx=3&sn=9e2415521221fc53cc2d8d85f1961ccb)
+### [AI-加入群聊这事，可能还是得腾讯来做](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624876&idx=1&sn=05632f67f1042a6f6038cafbbf90eed7)
 
 2026-01-28 03:11:00
 
@@ -76202,13 +76226,13 @@ http://antirez.com/news/162
 
 
 
-### [Sam-Altman-与开发者的一小时：GPT-5-的坦白、招聘放缓、以及-2026-年最担心的事](https://baoyu.io/blog/2026/01/27/sam-altman-developer-townhall-gpt5)
+### [燃尽、重启、爆火：Clawdbot-创始人的-35-分钟访谈实录](https://baoyu.io/blog/2026/01/28/clawdbot-peter-steinberger-interview)
 
 2026-01-28 00:00:00
 
 
 
-### [燃尽、重启、爆火：Clawdbot-创始人的-35-分钟访谈实录](https://baoyu.io/blog/2026/01/28/clawdbot-peter-steinberger-interview)
+### [Sam-Altman-与开发者的一小时：GPT-5-的坦白、招聘放缓、以及-2026-年最担心的事](https://baoyu.io/blog/2026/01/27/sam-altman-developer-townhall-gpt5)
 
 2026-01-28 00:00:00
 
@@ -76262,13 +76286,13 @@ http://antirez.com/news/162
 
 
 
-### [Kimi-K2.5-来了：杨植麟亲自站台，还能分身出-100-个-Agent！](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624835&idx=1&sn=924b8552085e3aea5d770a0280234d26)
+### [对话印奇：如果在-AI-1.0-时代学到了-10-个教训，AI-2.0-时代要避免学到另外-10-个](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624835&idx=2&sn=10eea079291f1752ee260322b5584bba)
 
 2026-01-27 09:29:00
 
 
 
-### [对话印奇：如果在-AI-1.0-时代学到了-10-个教训，AI-2.0-时代要避免学到另外-10-个](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624835&idx=2&sn=10eea079291f1752ee260322b5584bba)
+### [Kimi-K2.5-来了：杨植麟亲自站台，还能分身出-100-个-Agent！](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624835&idx=1&sn=924b8552085e3aea5d770a0280234d26)
 
 2026-01-27 09:29:00
 
@@ -76370,7 +76394,7 @@ http://antirez.com/news/162
 
 
 
-### [又见印奇](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624785&idx=1&sn=5bb5d83d1bd2bddbe39580b08f1f5c8e)
+### [奥特曼被吓坏！Codex-全家桶上线倒计时，恐将撕开全网漏洞](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624785&idx=3&sn=b899f3c7859bd5d77692b0b19b1afb1d)
 
 2026-01-26 06:10:00
 
@@ -76382,7 +76406,7 @@ http://antirez.com/news/162
 
 
 
-### [奥特曼被吓坏！Codex-全家桶上线倒计时，恐将撕开全网漏洞](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624785&idx=3&sn=b899f3c7859bd5d77692b0b19b1afb1d)
+### [又见印奇](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624785&idx=1&sn=5bb5d83d1bd2bddbe39580b08f1f5c8e)
 
 2026-01-26 06:10:00
 
@@ -76496,13 +76520,13 @@ http://antirez.com/news/162
 
 
 
-### [Anthropic-研究员：模型越强大，对齐就越困难丨-The-MAD-Podcast](https://mp.weixin.qq.com/s?__biz=Mzk5MDkxNDU4Nw==&mid=2247485309&idx=1&sn=a0d2a6671781ee9911126397cbb056b0)
+### [Sensor-Tower-年度应用报告：AI-应用牌桌已定，-ChatGPT「赚麻了」](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522420&idx=1&sn=f3fab2eb7ddd043e984f1162d469b5cf)
 
 2026-01-23 13:29:00
 
 
 
-### [Sensor-Tower-年度应用报告：AI-应用牌桌已定，-ChatGPT「赚麻了」](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522420&idx=1&sn=f3fab2eb7ddd043e984f1162d469b5cf)
+### [Anthropic-研究员：模型越强大，对齐就越困难丨-The-MAD-Podcast](https://mp.weixin.qq.com/s?__biz=Mzk5MDkxNDU4Nw==&mid=2247485309&idx=1&sn=a0d2a6671781ee9911126397cbb056b0)
 
 2026-01-23 13:29:00
 
@@ -76562,13 +76586,13 @@ http://antirez.com/news/162
 
 
 
-### [对话-AI-NEWS-平台-Ancher：曾经信息流产品的胜利者，如今却决定颠覆它](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624605&idx=1&sn=adbce1f8eb89a6b664cd34e6e4cd3379)
+### [只有-Anthropic-在认真地考虑如何废掉人类](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624605&idx=2&sn=f71a735459c902a03a9ede917208b530)
 
 2026-01-23 02:08:00
 
 
 
-### [只有-Anthropic-在认真地考虑如何废掉人类](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624605&idx=2&sn=f71a735459c902a03a9ede917208b530)
+### [对话-AI-NEWS-平台-Ancher：曾经信息流产品的胜利者，如今却决定颠覆它](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624605&idx=1&sn=adbce1f8eb89a6b664cd34e6e4cd3379)
 
 2026-01-23 02:08:00
 
@@ -76640,25 +76664,25 @@ http://antirez.com/news/162
 
 
 
-### [独家专访蚂蚁-CEO-韩歆毅：我们已重回战场，阿福是下一个十年](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247532279&idx=1&sn=a8a49f18f46a990366c1747cdd015230)
-
-2026-01-22 08:33:00
-
-
-
 ### [晚点独家丨快手可灵-AI-月活突破-1200-万，盖坤：用-AI-规模化产生好内容的临界点即将到来](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247532279&idx=2&sn=11893312f1e2f92e4165a447ac2ad747)
 
 2026-01-22 08:33:00
 
 
 
-### [黄仁勋大声疾呼：最重要的除了-Infra，还是-Infra！AI-原生公司已爆发，基建才刚开始！英伟达投数千亿美元还不够，还有数万亿美元-Infra-要建](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655935693&idx=1&sn=4525e8c3291599b5f7555c49ba653e35)
+### [独家专访蚂蚁-CEO-韩歆毅：我们已重回战场，阿福是下一个十年](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247532279&idx=1&sn=a8a49f18f46a990366c1747cdd015230)
+
+2026-01-22 08:33:00
+
+
+
+### [基于-Human-in-the-loop-的标签清洗策略：解决多目标检测中的标注缺失问题](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655935693&idx=2&sn=023916f55576b908a0c88168d7877510)
 
 2026-01-22 04:38:00
 
 
 
-### [基于-Human-in-the-loop-的标签清洗策略：解决多目标检测中的标注缺失问题](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655935693&idx=2&sn=023916f55576b908a0c88168d7877510)
+### [黄仁勋大声疾呼：最重要的除了-Infra，还是-Infra！AI-原生公司已爆发，基建才刚开始！英伟达投数千亿美元还不够，还有数万亿美元-Infra-要建](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655935693&idx=1&sn=4525e8c3291599b5f7555c49ba653e35)
 
 2026-01-22 04:38:00
 
@@ -76688,7 +76712,7 @@ http://antirez.com/news/162
 
 
 
-### [当经验成为可复制的资产，TRAE-Skills-正在重新定义专业能力](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624586&idx=1&sn=612af7b07a8dc6e8c83a277a6d5a330e)
+### [硅谷深夜不写一行代码！放羊大叔-Ralph-引爆奇点，睡一觉-AI-全跑通](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624586&idx=3&sn=9b12132a361c01080100b17446195e9a)
 
 2026-01-22 02:30:00
 
@@ -76700,7 +76724,7 @@ http://antirez.com/news/162
 
 
 
-### [硅谷深夜不写一行代码！放羊大叔-Ralph-引爆奇点，睡一觉-AI-全跑通](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624586&idx=3&sn=9b12132a361c01080100b17446195e9a)
+### [当经验成为可复制的资产，TRAE-Skills-正在重新定义专业能力](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624586&idx=1&sn=612af7b07a8dc6e8c83a277a6d5a330e)
 
 2026-01-22 02:30:00
 
@@ -76730,25 +76754,25 @@ http://antirez.com/news/162
 
 
 
-### [当一个人的生活，完全「跑」在-Claude-Code-里，会发生什么？](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653097585&idx=1&sn=6a4d20f7fbdea289cad0d86495ee6966)
-
-2026-01-21 10:05:00
-
-
-
 ### [在-WAIC-UP！2026-上，我看到了-AI-的当下与未来](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653097585&idx=2&sn=326e48050b82d89b0a7d840ca7d8e6db)
 
 2026-01-21 10:05:00
 
 
 
-### [离开小米后，他赌耳机才是-AI-硬件的最优解｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549568&idx=1&sn=3b41a09b3fbb0b7468bc203907ac70bd)
+### [当一个人的生活，完全「跑」在-Claude-Code-里，会发生什么？](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653097585&idx=1&sn=6a4d20f7fbdea289cad0d86495ee6966)
+
+2026-01-21 10:05:00
+
+
+
+### [当英伟达收购-Groq-引发行业震动，中国存算一体赛道正在发生什么？｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549568&idx=2&sn=bf4b529b277a11c972fbca42e4db5819)
 
 2026-01-21 08:55:00
 
 
 
-### [当英伟达收购-Groq-引发行业震动，中国存算一体赛道正在发生什么？｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549568&idx=2&sn=bf4b529b277a11c972fbca42e4db5819)
+### [离开小米后，他赌耳机才是-AI-硬件的最优解｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549568&idx=1&sn=3b41a09b3fbb0b7468bc203907ac70bd)
 
 2026-01-21 08:55:00
 
@@ -76790,7 +76814,7 @@ http://antirez.com/news/162
 
 
 
-### [MiniMax-内部人手一个的-AI-实习生，现在你也能用了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624533&idx=1&sn=9fd46bc4118aab33c9d0e51c8ba32762)
+### [DeepSeek-R1-发布一年了，不卷功能、不融资、不着急，凭什么「硬控」硅谷](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624533&idx=3&sn=0986707bebb260608508f7d6424814bc)
 
 2026-01-21 02:09:00
 
@@ -76802,7 +76826,7 @@ http://antirez.com/news/162
 
 
 
-### [DeepSeek-R1-发布一年了，不卷功能、不融资、不着急，凭什么「硬控」硅谷](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624533&idx=3&sn=0986707bebb260608508f7d6424814bc)
+### [MiniMax-内部人手一个的-AI-实习生，现在你也能用了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624533&idx=1&sn=9fd46bc4118aab33c9d0e51c8ba32762)
 
 2026-01-21 02:09:00
 
@@ -76886,7 +76910,7 @@ http://antirez.com/news/162
 
 
 
-### [喝点-VC｜a16z-2026-预测：创业公司的机会在“有主见”的交互界面](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513588&idx=1&sn=eb1fcbdd18551047d00aef3ff5896dc1)
+### [速递｜Gemini-API-月度请求五个月翻倍至-850-亿次，谷歌-AI-的“两条腿”战略](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513588&idx=4&sn=22ba472b7d615e2948ad815ceed710c7)
 
 2026-01-20 02:55:00
 
@@ -76898,7 +76922,7 @@ http://antirez.com/news/162
 
 
 
-### [速递｜Gemini-API-月度请求五个月翻倍至-850-亿次，谷歌-AI-的“两条腿”战略](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513588&idx=4&sn=22ba472b7d615e2948ad815ceed710c7)
+### [喝点-VC｜a16z-2026-预测：创业公司的机会在“有主见”的交互界面](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513588&idx=1&sn=eb1fcbdd18551047d00aef3ff5896dc1)
 
 2026-01-20 02:55:00
 
@@ -76910,13 +76934,13 @@ http://antirez.com/news/162
 
 
 
-### [好的-AI-硬件都是“为创始人自己做的”｜硅谷对话-Omi，Looki-和-Bondu](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624503&idx=1&sn=298e7ec5264d58bd0ec4eb1f80ebefe1)
+### [90-后正在掌管中国-AI，凭实力活成了「爽文」主角](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624503&idx=3&sn=90dee2fda0d9fa58a827eb80e739f8f7)
 
 2026-01-20 02:33:00
 
 
 
-### [90-后正在掌管中国-AI，凭实力活成了「爽文」主角](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624503&idx=3&sn=90dee2fda0d9fa58a827eb80e739f8f7)
+### [好的-AI-硬件都是“为创始人自己做的”｜硅谷对话-Omi，Looki-和-Bondu](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624503&idx=1&sn=298e7ec5264d58bd0ec4eb1f80ebefe1)
 
 2026-01-20 02:33:00
 
@@ -77006,25 +77030,25 @@ http://antirez.com/news/162
 
 
 
-### [深度｜OpenAI-产品经理谈-Codex-爆发式增长背后的-AI-协作：实现-AGI-级生产力的真正瓶颈是人类的打字速度！](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513571&idx=1&sn=edee072f1975fd8bc864556b53d3beba)
-
-2026-01-19 03:00:00
-
-
-
 ### [速递｜估值翻倍破-150-亿美元：AI-数据库新贵-ClickHouse-融资-4-亿美元，挑战-Snowflake-与-Databricks](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513571&idx=3&sn=830302abd332c310b3bc8bb0f208dada)
 
 2026-01-19 03:00:00
 
 
 
-### [终于来了一个能帮我打车的-AI-了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624418&idx=1&sn=31d71eefb73d37efb97ce60e9f9a56b8)
+### [深度｜OpenAI-产品经理谈-Codex-爆发式增长背后的-AI-协作：实现-AGI-级生产力的真正瓶颈是人类的打字速度！](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513571&idx=1&sn=edee072f1975fd8bc864556b53d3beba)
+
+2026-01-19 03:00:00
+
+
+
+### [不学抖音学-INS，OpenAI-想站着把钱挣了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624418&idx=3&sn=63bde03abaa472bdd6f2ec01aac92012)
 
 2026-01-19 01:53:00
 
 
 
-### [不学抖音学-INS，OpenAI-想站着把钱挣了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624418&idx=3&sn=63bde03abaa472bdd6f2ec01aac92012)
+### [终于来了一个能帮我打车的-AI-了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624418&idx=1&sn=31d71eefb73d37efb97ce60e9f9a56b8)
 
 2026-01-19 01:53:00
 
@@ -77048,13 +77072,13 @@ http://antirez.com/news/162
 
 
 
-### [All-in-AI-的第一个三年｜42-章经](https://mp.weixin.qq.com/s?__biz=MzIyMDE5OTYyMw==&mid=2651051471&idx=1&sn=e72fb5a5e738a02d5307b043824140ef)
+### [那些活出来的人｜绿洲资本张津剑](https://mp.weixin.qq.com/s?__biz=MzIyMDE5OTYyMw==&mid=2651051471&idx=2&sn=c1c6c27088918dbc6e327c19e81857f8)
 
 2026-01-18 13:31:00
 
 
 
-### [那些活出来的人｜绿洲资本张津剑](https://mp.weixin.qq.com/s?__biz=MzIyMDE5OTYyMw==&mid=2651051471&idx=2&sn=c1c6c27088918dbc6e327c19e81857f8)
+### [All-in-AI-的第一个三年｜42-章经](https://mp.weixin.qq.com/s?__biz=MzIyMDE5OTYyMw==&mid=2651051471&idx=1&sn=e72fb5a5e738a02d5307b043824140ef)
 
 2026-01-18 13:31:00
 
@@ -77150,13 +77174,13 @@ http://antirez.com/news/162
 
 
 
-### [顶级视频模型半衰期只有-30-天，但生成式媒体-infra-公司的收入却在一年增长了-60-倍](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522266&idx=1&sn=aaf70caad8c11986bb65f5b54e8dadea)
+### [我们对-Coding-Agent-的评测，可能搞错了方向](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522266&idx=2&sn=808708f2a89b9d515212db952aaa3437)
 
 2026-01-16 12:20:00
 
 
 
-### [我们对-Coding-Agent-的评测，可能搞错了方向](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522266&idx=2&sn=808708f2a89b9d515212db952aaa3437)
+### [顶级视频模型半衰期只有-30-天，但生成式媒体-infra-公司的收入却在一年增长了-60-倍](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522266&idx=1&sn=aaf70caad8c11986bb65f5b54e8dadea)
 
 2026-01-16 12:20:00
 
@@ -77216,25 +77240,25 @@ http://antirez.com/news/162
 
 
 
-### [对话吴嘉：打通阿里生态之后，千问还要做什么？](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624229&idx=1&sn=e0e174e560cb3fc6111d8588a180ae7a)
-
-2026-01-16 03:46:00
-
-
-
 ### [AI-在美国“与民争电”，核电成了硅谷“全村的希望”](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624229&idx=3&sn=89f6c517d5fe14cd69d0575067955af7)
 
 2026-01-16 03:46:00
 
 
 
-### [隐秘的“知识买断”生意：AI-公司用千元时薪，撬动价值百万的行业经验](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858077&idx=1&sn=a19fd215d4b9432abbc3ed2b4696f3a0)
+### [对话吴嘉：打通阿里生态之后，千问还要做什么？](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624229&idx=1&sn=e0e174e560cb3fc6111d8588a180ae7a)
+
+2026-01-16 03:46:00
+
+
+
+### [35-天，成了-AI-模型的斩杀线](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858077&idx=2&sn=ef9a58c84afeb850f5027767a7fcbee9)
 
 2026-01-16 03:41:00
 
 
 
-### [35-天，成了-AI-模型的斩杀线](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858077&idx=2&sn=ef9a58c84afeb850f5027767a7fcbee9)
+### [隐秘的“知识买断”生意：AI-公司用千元时薪，撬动价值百万的行业经验](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858077&idx=1&sn=a19fd215d4b9432abbc3ed2b4696f3a0)
 
 2026-01-16 03:41:00
 
@@ -77390,13 +77414,13 @@ http://antirez.com/news/162
 
 
 
-### [它，正在成为国运之战](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902391&idx=1&sn=142dd2b7e0ffbc25fab58ae743c70863)
+### [姜宏锋：AI-时代下，成本部门如何创造利润？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902391&idx=2&sn=59fce0a1652104f1b2b1d7c4d07d393a)
 
 2026-01-13 13:30:00
 
 
 
-### [姜宏锋：AI-时代下，成本部门如何创造利润？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902391&idx=2&sn=59fce0a1652104f1b2b1d7c4d07d393a)
+### [它，正在成为国运之战](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902391&idx=1&sn=142dd2b7e0ffbc25fab58ae743c70863)
 
 2026-01-13 13:30:00
 
@@ -77462,13 +77486,13 @@ http://antirez.com/news/162
 
 
 
-### [2026-大模型伦理深度观察：理解-AI、信任-AI、与-AI-共处](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650995266&idx=1&sn=479e7ae6671c42dbe22f121c4178b34a)
+### [痛苦是新的护城河！OpenAI-研究员分享-50+AI-产品落地经验，曝-Codex-内部如何做评估，Agent-一定要找人控制最多的场景，CEO-必须深度参与！](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655935265&idx=1&sn=21df374a45386877a305fcca090e52d0)
 
 2026-01-12 08:31:00
 
 
 
-### [痛苦是新的护城河！OpenAI-研究员分享-50+AI-产品落地经验，曝-Codex-内部如何做评估，Agent-一定要找人控制最多的场景，CEO-必须深度参与！](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655935265&idx=1&sn=21df374a45386877a305fcca090e52d0)
+### [2026-大模型伦理深度观察：理解-AI、信任-AI、与-AI-共处](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650995266&idx=1&sn=479e7ae6671c42dbe22f121c4178b34a)
 
 2026-01-12 08:31:00
 
@@ -77582,13 +77606,13 @@ http://antirez.com/news/162
 
 
 
-### [CES-2026-现场观察：AI-正在“消失”｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549432&idx=1&sn=2eb4f40779bc6236255d749f53bfc844)
+### [追觅-CES-亮剑：一台-AI-具身机器人的洗衣革命｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549432&idx=2&sn=a8c0b85b300e43f80759dbd951be404b)
 
 2026-01-09 11:44:00
 
 
 
-### [追觅-CES-亮剑：一台-AI-具身机器人的洗衣革命｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549432&idx=2&sn=a8c0b85b300e43f80759dbd951be404b)
+### [CES-2026-现场观察：AI-正在“消失”｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549432&idx=1&sn=2eb4f40779bc6236255d749f53bfc844)
 
 2026-01-09 11:44:00
 
@@ -77612,13 +77636,13 @@ http://antirez.com/news/162
 
 
 
-### [连投“狠人”6-轮：明势资本与-MiniMax-的-4-年-AGI-之旅](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623671&idx=1&sn=a7da80f9deffb3280bff4b8d623809c2)
+### [DeepSeek-把-R1-论文又更新了-60-多页，V4-呼之欲出了吧](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623671&idx=2&sn=0e248305342f1b48fa6dc3eb4db0523d)
 
 2026-01-09 04:20:00
 
 
 
-### [DeepSeek-把-R1-论文又更新了-60-多页，V4-呼之欲出了吧](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623671&idx=2&sn=0e248305342f1b48fa6dc3eb4db0523d)
+### [连投“狠人”6-轮：明势资本与-MiniMax-的-4-年-AGI-之旅](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623671&idx=1&sn=a7da80f9deffb3280bff4b8d623809c2)
 
 2026-01-09 04:20:00
 
@@ -77666,13 +77690,13 @@ http://antirez.com/news/162
 
 
 
-### [土耳其人有点“疯”，又把轻度游戏干到了千万美元月流水](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676495&idx=1&sn=486e61126207a6b75744aad0c7b242c5)
+### [黄仁勋-CES-最新演讲：这，是所有人的机会](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902114&idx=1&sn=736a44b3fe37aad9bc11fc6af19a68be)
 
 2026-01-08 13:31:00
 
 
 
-### [黄仁勋-CES-最新演讲：这，是所有人的机会](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902114&idx=1&sn=736a44b3fe37aad9bc11fc6af19a68be)
+### [土耳其人有点“疯”，又把轻度游戏干到了千万美元月流水](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676495&idx=1&sn=486e61126207a6b75744aad0c7b242c5)
 
 2026-01-08 13:31:00
 
@@ -77762,13 +77786,13 @@ http://antirez.com/news/162
 
 
 
-### [Token-不是一切：AI-云的竞争才刚刚开始](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623506&idx=1&sn=dc7524a243afc8f4691701a2ae67e583)
+### [AI-破解-500-年《纽伦堡编年史》天书！仅用-1-小时，隐藏惊天真相被揭开](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623506&idx=3&sn=8a656a4caa73fb7c9bd6df7e15901a82)
 
 2026-01-07 01:18:00
 
 
 
-### [AI-破解-500-年《纽伦堡编年史》天书！仅用-1-小时，隐藏惊天真相被揭开](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623506&idx=3&sn=8a656a4caa73fb7c9bd6df7e15901a82)
+### [Token-不是一切：AI-云的竞争才刚刚开始](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623506&idx=1&sn=dc7524a243afc8f4691701a2ae67e583)
 
 2026-01-07 01:18:00
 
@@ -77978,13 +78002,13 @@ http://antirez.com/news/162
 
 
 
-### [对话-GameSkill-陈迪：把世界冠军变成-AI-教练，塞进你的电脑里](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623047&idx=2&sn=6f8480baf51fb2ac2a602dbddecd8d20)
+### [当-AI-聊「童年阴影」的时候，它在聊什么｜Hao-好读论文](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623047&idx=3&sn=61d99f0e5ad2188e0dd304b945d0b3cb)
 
 2025-12-31 01:08:00
 
 
 
-### [当-AI-聊「童年阴影」的时候，它在聊什么｜Hao-好读论文](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623047&idx=3&sn=61d99f0e5ad2188e0dd304b945d0b3cb)
+### [对话-GameSkill-陈迪：把世界冠军变成-AI-教练，塞进你的电脑里](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623047&idx=2&sn=6f8480baf51fb2ac2a602dbddecd8d20)
 
 2025-12-31 01:08:00
 
@@ -78050,13 +78074,13 @@ http://antirez.com/news/162
 
 
 
-### [2025-年消费级-AI-现状报告：产品亮点、遗憾与未来趋势](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622963&idx=2&sn=cdb4110800dbb68dc44b41f1e3fa409d)
+### [你的-AI-会救你吗?-19-个大模型实测揭秘:GPT-自毁，Claude-自保，Grok-直接开炸](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622963&idx=3&sn=ce21a379081554cc570a1361cb3910ad)
 
 2025-12-30 00:48:00
 
 
 
-### [你的-AI-会救你吗?-19-个大模型实测揭秘:GPT-自毁，Claude-自保，Grok-直接开炸](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622963&idx=3&sn=ce21a379081554cc570a1361cb3910ad)
+### [2025-年消费级-AI-现状报告：产品亮点、遗憾与未来趋势](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622963&idx=2&sn=cdb4110800dbb68dc44b41f1e3fa409d)
 
 2025-12-30 00:48:00
 
@@ -78086,13 +78110,13 @@ http://antirez.com/news/162
 
 
 
-### [Z-Product｜估值-10-亿美金的计费系统-Metronome，如何成为-OpenAI、英伟达首选的计价底层](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513112&idx=2&sn=034e48dfb6057c941cf06268bbbf5b5c)
+### [速递｜2025，AI-九巨头“合纵连横”之年：从拼模型到拼生态，谁的“朋友圈”更牢固？](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513112&idx=4&sn=5358554c0b2495abca02305d9695e4f2)
 
 2025-12-29 04:51:00
 
 
 
-### [速递｜2025，AI-九巨头“合纵连横”之年：从拼模型到拼生态，谁的“朋友圈”更牢固？](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513112&idx=4&sn=5358554c0b2495abca02305d9695e4f2)
+### [Z-Product｜估值-10-亿美金的计费系统-Metronome，如何成为-OpenAI、英伟达首选的计价底层](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513112&idx=2&sn=034e48dfb6057c941cf06268bbbf5b5c)
 
 2025-12-29 04:51:00
 
@@ -78140,13 +78164,13 @@ http://antirez.com/news/162
 
 
 
-### [喝点-VC｜YC-对话-Cursor-华人设计负责人：设计师将开始写代码，工程师将开始做设计，我们的共同语言就是代码](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513090&idx=1&sn=bfbc1e322a8d87a3c48bd863725a2020)
+### [Z-Product-|-Product-Hunt-最佳产品（12.15-21），Noiz-上线表情包指挥-AI-配音功能](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513090&idx=2&sn=b9605288e15f23111238cffba25f7d3f)
 
 2025-12-28 02:01:00
 
 
 
-### [Z-Product-|-Product-Hunt-最佳产品（12.15-21），Noiz-上线表情包指挥-AI-配音功能](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513090&idx=2&sn=b9605288e15f23111238cffba25f7d3f)
+### [喝点-VC｜YC-对话-Cursor-华人设计负责人：设计师将开始写代码，工程师将开始做设计，我们的共同语言就是代码](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513090&idx=1&sn=bfbc1e322a8d87a3c48bd863725a2020)
 
 2025-12-28 02:01:00
 
@@ -78212,7 +78236,7 @@ http://antirez.com/news/162
 
 
 
-### [独家-|-清华-00-后博士融资数千万，打造全球现象级端侧算力引擎，性能领跑行业](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513056&idx=1&sn=0dbb86909abe414409b01b32cb0d3cbc)
+### [速递｜解读英伟达为何与-Groq-达成-200-亿美元巨额交易，“柔性垄断”消弭威胁](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513056&idx=3&sn=335a35334ffe79f74707c52cb17f514a)
 
 2025-12-26 03:41:00
 
@@ -78224,7 +78248,7 @@ http://antirez.com/news/162
 
 
 
-### [速递｜解读英伟达为何与-Groq-达成-200-亿美元巨额交易，“柔性垄断”消弭威胁](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513056&idx=3&sn=335a35334ffe79f74707c52cb17f514a)
+### [独家-|-清华-00-后博士融资数千万，打造全球现象级端侧算力引擎，性能领跑行业](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513056&idx=1&sn=0dbb86909abe414409b01b32cb0d3cbc)
 
 2025-12-26 03:41:00
 
@@ -78296,13 +78320,13 @@ http://antirez.com/news/162
 
 
 
-### [2025-年-AI-盘点：15-大名场面](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622586&idx=2&sn=7536d7af3c901c6b453498b57bbe952a)
+### [刚刚，高中辍学生创办的-AI-公司，被英伟达花-1400-亿「收购」了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622586&idx=3&sn=125d3d44fad5f579956fafd3853a138f)
 
 2025-12-25 04:31:00
 
 
 
-### [刚刚，高中辍学生创办的-AI-公司，被英伟达花-1400-亿「收购」了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622586&idx=3&sn=125d3d44fad5f579956fafd3853a138f)
+### [2025-年-AI-盘点：15-大名场面](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622586&idx=2&sn=7536d7af3c901c6b453498b57bbe952a)
 
 2025-12-25 04:31:00
 
@@ -78320,25 +78344,25 @@ http://antirez.com/news/162
 
 
 
-### [速递｜单图生成实时视频分身：扩散模型-AI-助手-Lemon-Slice-获-YC、Matrix-等-1050-万美元投资](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513039&idx=2&sn=b01ff7808ca8d72f157b421dbeeba3aa)
-
-2025-12-25 03:37:00
-
-
-
 ### [速递｜前谷歌-TPU-掌门人携-Groq-加入英伟达，英伟达以技术合作名义锁定低延迟芯片](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513039&idx=3&sn=acc6b1a34775eb86509308174de6c962)
 
 2025-12-25 03:37:00
 
 
 
-### [黄仁勋-200-亿美元带走「TPU-核心班底」](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650855150&idx=1&sn=27c22a0d64dde584fe68b4aff161915f)
+### [速递｜单图生成实时视频分身：扩散模型-AI-助手-Lemon-Slice-获-YC、Matrix-等-1050-万美元投资](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513039&idx=2&sn=b01ff7808ca8d72f157b421dbeeba3aa)
+
+2025-12-25 03:37:00
+
+
+
+### [AI-大模型，别只盯着手机端-MAU](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650855150&idx=2&sn=eeb498dfa21b2faa96506a377c3ce475)
 
 2025-12-25 03:06:00
 
 
 
-### [AI-大模型，别只盯着手机端-MAU](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650855150&idx=2&sn=eeb498dfa21b2faa96506a377c3ce475)
+### [黄仁勋-200-亿美元带走「TPU-核心班底」](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650855150&idx=1&sn=27c22a0d64dde584fe68b4aff161915f)
 
 2025-12-25 03:06:00
 
@@ -78350,13 +78374,13 @@ http://antirez.com/news/162
 
 
 
-### [被-AI-改写的“美国梦”](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150760&idx=1&sn=60e41069c7f099c470141c058be3874a)
+### [杭州-AI-DAY：AI-漫短剧从-0-到百万-GMV-的可复制路径](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150760&idx=2&sn=d6b0ab27469b0d9812d725809ece0b2b)
 
 2025-12-25 00:20:00
 
 
 
-### [杭州-AI-DAY：AI-漫短剧从-0-到百万-GMV-的可复制路径](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150760&idx=2&sn=d6b0ab27469b0d9812d725809ece0b2b)
+### [被-AI-改写的“美国梦”](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150760&idx=1&sn=60e41069c7f099c470141c058be3874a)
 
 2025-12-25 00:20:00
 
@@ -78404,25 +78428,25 @@ http://antirez.com/news/162
 
 
 
-### [背靠通义大模型，这家阿里系公司正在重写体育场馆新的「定价公式」](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653095454&idx=1&sn=0dd6b11f86679138d76c1f6136be3e6d)
-
-2025-12-24 04:05:00
-
-
-
 ### [深势科技完成超-8-亿元融资：AI-for-Science-如何叩开资本与产业的大门](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653095454&idx=2&sn=73e5007301a07fc2a3f255714d7abada)
 
 2025-12-24 04:05:00
 
 
 
-### [地平线+理想“老兵”集结，造出一只抛弃遥控器的机器狗](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650854982&idx=1&sn=354943a3aa85c5f326ab1496e078f889)
+### [背靠通义大模型，这家阿里系公司正在重写体育场馆新的「定价公式」](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653095454&idx=1&sn=0dd6b11f86679138d76c1f6136be3e6d)
+
+2025-12-24 04:05:00
+
+
+
+### [奥特曼的“帝国隐忧”：多线扩张，正在拖慢-ChatGPT](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650854982&idx=2&sn=51be16872741f7c0b3a0fa0b5b8085f6)
 
 2025-12-24 03:21:00
 
 
 
-### [奥特曼的“帝国隐忧”：多线扩张，正在拖慢-ChatGPT](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650854982&idx=2&sn=51be16872741f7c0b3a0fa0b5b8085f6)
+### [地平线+理想“老兵”集结，造出一只抛弃遥控器的机器狗](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650854982&idx=1&sn=354943a3aa85c5f326ab1496e078f889)
 
 2025-12-24 03:21:00
 
@@ -78560,13 +78584,13 @@ http://antirez.com/news/162
 
 
 
-### [深度｜DeepMind-CEO-Demis:-AGI-还需-5-10-年，还需要-1-2-个关键性突破](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512877&idx=1&sn=72b603a05cfcda103ed35df787a06070)
+### [Z-Product-|-Product-Hunt-最佳产品（12.8-14），华人打造的-AI-音乐站](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512877&idx=2&sn=8b054b790fed7f84cc94d29178c9e85a)
 
 2025-12-21 02:23:00
 
 
 
-### [Z-Product-|-Product-Hunt-最佳产品（12.8-14），华人打造的-AI-音乐站](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512877&idx=2&sn=8b054b790fed7f84cc94d29178c9e85a)
+### [深度｜DeepMind-CEO-Demis:-AGI-还需-5-10-年，还需要-1-2-个关键性突破](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512877&idx=1&sn=72b603a05cfcda103ed35df787a06070)
 
 2025-12-21 02:23:00
 
@@ -78698,7 +78722,7 @@ http://antirez.com/news/162
 
 
 
-### [火山引擎有了它自己的-Token-经济学](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622029&idx=1&sn=8f2114a67a86f746d29468314feb1c49)
+### [Meta-再爆大瓜，气走杨立昆的-Wang-也受不了小扎了？](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622029&idx=3&sn=e34810c6c793e733fe494678919b5bda)
 
 2025-12-19 02:03:00
 
@@ -78710,7 +78734,7 @@ http://antirez.com/news/162
 
 
 
-### [Meta-再爆大瓜，气走杨立昆的-Wang-也受不了小扎了？](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622029&idx=3&sn=e34810c6c793e733fe494678919b5bda)
+### [火山引擎有了它自己的-Token-经济学](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247622029&idx=1&sn=8f2114a67a86f746d29468314feb1c49)
 
 2025-12-19 02:03:00
 
@@ -78728,13 +78752,13 @@ http://antirez.com/news/162
 
 
 
-### [柴天佑院士、何小鹏、清华教授齐聚-Hi-Tech-Day，共议-2026-年-AI-走向](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562518&idx=1&sn=ba2d516069fb8c6f0736c8079146afe4)
+### [独家发布｜2025-人工智能治理年度报告：迈向“可衡量”的-AI-治理](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562518&idx=2&sn=e660da195e52bb8554d9878b3f101ce8)
 
 2025-12-18 11:37:00
 
 
 
-### [独家发布｜2025-人工智能治理年度报告：迈向“可衡量”的-AI-治理](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562518&idx=2&sn=e660da195e52bb8554d9878b3f101ce8)
+### [柴天佑院士、何小鹏、清华教授齐聚-Hi-Tech-Day，共议-2026-年-AI-走向](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562518&idx=1&sn=ba2d516069fb8c6f0736c8079146afe4)
 
 2025-12-18 11:37:00
 
@@ -78800,13 +78824,13 @@ http://antirez.com/news/162
 
 
 
-### [Gemini-3-Flash-倒反天罡了：关键性能居然超过了-Pro!](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621970&idx=1&sn=90cfeace0c656c871e2d5bf703b76764)
+### [别把-AI-写代码当赌博：从-Vibe-Coding-到-Vibe-Engineering](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621970&idx=2&sn=01ecde0dc57080c5ba150300ead878c4)
 
 2025-12-17 16:02:00
 
 
 
-### [别把-AI-写代码当赌博：从-Vibe-Coding-到-Vibe-Engineering](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621970&idx=2&sn=01ecde0dc57080c5ba150300ead878c4)
+### [Gemini-3-Flash-倒反天罡了：关键性能居然超过了-Pro!](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621970&idx=1&sn=90cfeace0c656c871e2d5bf703b76764)
 
 2025-12-17 16:02:00
 
@@ -78872,13 +78896,13 @@ http://antirez.com/news/162
 
 
 
-### [OiiOii-意外走红背后：为何-10-万人排队等一个不完美的-AI-Agent？｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549016&idx=1&sn=694248fcd3e36c72af920d9ea7b926cf)
+### [生态为基，关系为王：AI-Agent-下半场的竞争法则｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549016&idx=2&sn=a8d9c89759ae3fec6027716494601ba8)
 
 2025-12-16 09:46:00
 
 
 
-### [生态为基，关系为王：AI-Agent-下半场的竞争法则｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549016&idx=2&sn=a8d9c89759ae3fec6027716494601ba8)
+### [OiiOii-意外走红背后：为何-10-万人排队等一个不完美的-AI-Agent？｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549016&idx=1&sn=694248fcd3e36c72af920d9ea7b926cf)
 
 2025-12-16 09:46:00
 
@@ -78986,13 +79010,13 @@ http://antirez.com/news/162
 
 
 
-### [深度｜AI-编码黑马-Sourcegraph-华裔联创：我们的理念不是以模型为核心，而是以-Agent-为核心](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512587&idx=1&sn=53229da713b7065ff5337032cfcbc752)
+### [速递｜“医学版-ChatGPT”OpenEvidence-两月估值翻倍至-120-亿美元，年化广告收入近-1.5-亿美元](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512587&idx=3&sn=c9f33fa4f29fb0c4487de13a59fcf90c)
 
 2025-12-15 02:06:00
 
 
 
-### [速递｜“医学版-ChatGPT”OpenEvidence-两月估值翻倍至-120-亿美元，年化广告收入近-1.5-亿美元](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512587&idx=3&sn=c9f33fa4f29fb0c4487de13a59fcf90c)
+### [深度｜AI-编码黑马-Sourcegraph-华裔联创：我们的理念不是以模型为核心，而是以-Agent-为核心](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512587&idx=1&sn=53229da713b7065ff5337032cfcbc752)
 
 2025-12-15 02:06:00
 
@@ -79088,25 +79112,25 @@ http://antirez.com/news/162
 
 
 
-### [手握-730-亿美元订单，博通@所有人：放心，没暴雷](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562381&idx=1&sn=fb51715c35b5f3db4779f2959f8033af)
-
-2025-12-12 07:03:00
-
-
-
 ### [OpenAI-用-GPT-5.2“反击”谷歌，刀子够快吗？](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562381&idx=2&sn=c31bef8b9efe106a2a87edac168f1125)
 
 2025-12-12 07:03:00
 
 
 
-### [告别-App-孤岛，天翼-AI-如何用统一入口重构数亿用户的数字生活？｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247548943&idx=1&sn=bc8e2943c78e2e4084f06aa9f0224bb8)
+### [手握-730-亿美元订单，博通@所有人：放心，没暴雷](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562381&idx=1&sn=fb51715c35b5f3db4779f2959f8033af)
+
+2025-12-12 07:03:00
+
+
+
+### [千丁数科魏振华：企业-AI-落地“六步法”｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247548943&idx=2&sn=36e5e3bfaa162a1533adc713bed66019)
 
 2025-12-12 05:38:00
 
 
 
-### [千丁数科魏振华：企业-AI-落地“六步法”｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247548943&idx=2&sn=36e5e3bfaa162a1533adc713bed66019)
+### [告别-App-孤岛，天翼-AI-如何用统一入口重构数亿用户的数字生活？｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247548943&idx=1&sn=bc8e2943c78e2e4084f06aa9f0224bb8)
 
 2025-12-12 05:38:00
 
@@ -79202,13 +79226,13 @@ http://antirez.com/news/162
 
 
 
-### [扎克伯克“挥刀斩元老”，Meta-倒向闭源](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562286&idx=1&sn=1ea2dcd58b5d4bffe932baca6ed45547)
+### [MiniMax-闫俊杰：中国不乏-AI-人才，但我们需要去做难而正确的事](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562286&idx=2&sn=064c1c4389a1471fac90b93cd7c5083b)
 
 2025-12-10 15:06:00
 
 
 
-### [MiniMax-闫俊杰：中国不乏-AI-人才，但我们需要去做难而正确的事](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562286&idx=2&sn=064c1c4389a1471fac90b93cd7c5083b)
+### [扎克伯克“挥刀斩元老”，Meta-倒向闭源](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691562286&idx=1&sn=1ea2dcd58b5d4bffe932baca6ed45547)
 
 2025-12-10 15:06:00
 
@@ -79418,13 +79442,13 @@ http://antirez.com/news/162
 
 
 
-### [造梦次元：每天-30-万人在这里，不求-AI-陪伴，只做上帝愉悦自己](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621468&idx=1&sn=6789679b4427658318a7213bcb34fd1c)
+### [YC-F25-Demo-Day：83-个-AI-项目完整盘点](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621468&idx=2&sn=82fbea53345843f76b715229bc2e4b0a)
 
 2025-12-08 02:45:00
 
 
 
-### [YC-F25-Demo-Day：83-个-AI-项目完整盘点](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621468&idx=2&sn=82fbea53345843f76b715229bc2e4b0a)
+### [造梦次元：每天-30-万人在这里，不求-AI-陪伴，只做上帝愉悦自己](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621468&idx=1&sn=6789679b4427658318a7213bcb34fd1c)
 
 2025-12-08 02:45:00
 
@@ -79436,13 +79460,13 @@ http://antirez.com/news/162
 
 
 
-### [深度｜Mercor-之后，硅谷下一个百亿美金的数据平台独角兽会是谁？](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512302&idx=1&sn=1f9f0a3eabba9506940a53bf9e02bf6b)
+### [速递｜OpenAI-的“红色警报”与秘密武器：ChatGPT-产品掌门人尼克·特利，如何引领-ChatGPT-穿越激流](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512302&idx=3&sn=4296366aa88abe4e5f2b3c5de93c35f3)
 
 2025-12-08 02:41:00
 
 
 
-### [速递｜OpenAI-的“红色警报”与秘密武器：ChatGPT-产品掌门人尼克·特利，如何引领-ChatGPT-穿越激流](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512302&idx=3&sn=4296366aa88abe4e5f2b3c5de93c35f3)
+### [深度｜Mercor-之后，硅谷下一个百亿美金的数据平台独角兽会是谁？](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247512302&idx=1&sn=1f9f0a3eabba9506940a53bf9e02bf6b)
 
 2025-12-08 02:41:00
 
@@ -79628,13 +79652,13 @@ http://antirez.com/news/162
 
 
 
-### [对话-GMI-Cloud-:-英伟达仅-7-家的认证伙伴之一，不想做算力包租公](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621299&idx=1&sn=425614ef9dc3718b6c34501bd173b1b8)
+### [AI-行业最新的-18-个前沿认知](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621299&idx=3&sn=74f55d3c1c9bc5d10fcc234120e59370)
 
 2025-12-03 02:48:00
 
 
 
-### [AI-行业最新的-18-个前沿认知](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621299&idx=3&sn=74f55d3c1c9bc5d10fcc234120e59370)
+### [对话-GMI-Cloud-:-英伟达仅-7-家的认证伙伴之一，不想做算力包租公](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621299&idx=1&sn=425614ef9dc3718b6c34501bd173b1b8)
 
 2025-12-03 02:48:00
 
@@ -79772,13 +79796,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-产品“增长黑客”的-10000-种野路子](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621150&idx=1&sn=f9df83004b8db4eb1e9345fcdaa63d22)
+### [1-小时纪录片，讲述-AlphaFold-的-5-年传奇！奥斯卡奖团队操刀](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621150&idx=2&sn=cc1990361d351b4c7a97785c26e90e19)
 
 2025-11-29 02:15:00
 
 
 
-### [1-小时纪录片，讲述-AlphaFold-的-5-年传奇！奥斯卡奖团队操刀](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621150&idx=2&sn=cc1990361d351b4c7a97785c26e90e19)
+### [AI-产品“增长黑客”的-10000-种野路子](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621150&idx=1&sn=f9df83004b8db4eb1e9345fcdaa63d22)
 
 2025-11-29 02:15:00
 
@@ -79808,13 +79832,13 @@ http://antirez.com/news/162
 
 
 
-### [捐赠自研-OS-内核背后：Rust-先行者-vivo-的「担当」](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653092552&idx=1&sn=0b29ba90097b9fe58dee376774bcce15)
+### [70%-学生选-AI，大学校长怎么教？](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653092552&idx=2&sn=5f73f1155cb784ba367f46600d448e79)
 
 2025-11-28 10:03:00
 
 
 
-### [70%-学生选-AI，大学校长怎么教？](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653092552&idx=2&sn=5f73f1155cb784ba367f46600d448e79)
+### [捐赠自研-OS-内核背后：Rust-先行者-vivo-的「担当」](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653092552&idx=1&sn=0b29ba90097b9fe58dee376774bcce15)
 
 2025-11-28 10:03:00
 
@@ -80276,13 +80300,13 @@ http://antirez.com/news/162
 
 
 
-### [一文读懂谷歌最强大模型-Gemini-3：下半年最大惊喜，谷歌王朝回归](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691561975&idx=1&sn=e1c4914c5a56d85efbc60c059a67b8b7)
+### [Gemini3-发布后哈萨比斯首发声：三大创新点，规模定律仍有效｜精华实录](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691561975&idx=2&sn=0869fa5751ea7cd5abb524419d55c3e5)
 
 2025-11-19 02:47:00
 
 
 
-### [Gemini3-发布后哈萨比斯首发声：三大创新点，规模定律仍有效｜精华实录](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691561975&idx=2&sn=0869fa5751ea7cd5abb524419d55c3e5)
+### [一文读懂谷歌最强大模型-Gemini-3：下半年最大惊喜，谷歌王朝回归](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691561975&idx=1&sn=e1c4914c5a56d85efbc60c059a67b8b7)
 
 2025-11-19 02:47:00
 
@@ -80342,13 +80366,13 @@ http://antirez.com/news/162
 
 
 
-### [深度｜CB-Insights69-页报告精华解读：Voice-AI-引爆，6-大趋势定义-AI-新战场](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247511280&idx=1&sn=dee84cb3afbcb77df1b115e5f86ecfd1)
+### [Z-Product-|-Product-Hunt-最佳产品（11.3-9），零代码-GTM-平台夺冠](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247511280&idx=2&sn=72e62bc2186809cbd88b41bc3c63407e)
 
 2025-11-18 02:49:00
 
 
 
-### [Z-Product-|-Product-Hunt-最佳产品（11.3-9），零代码-GTM-平台夺冠](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247511280&idx=2&sn=72e62bc2186809cbd88b41bc3c63407e)
+### [深度｜CB-Insights69-页报告精华解读：Voice-AI-引爆，6-大趋势定义-AI-新战场](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247511280&idx=1&sn=dee84cb3afbcb77df1b115e5f86ecfd1)
 
 2025-11-18 02:49:00
 
@@ -80420,25 +80444,25 @@ http://antirez.com/news/162
 
 
 
-### [对话-Memories.ai：“人的记忆本质上是视觉，AI-也该如此”](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620617&idx=1&sn=4930248bdb5e820e33060ce287cd1ab9)
-
-2025-11-17 03:03:00
-
-
-
 ### [AI-生成乡村歌曲登顶-Billboard-榜首：这该让所有人愤怒](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620617&idx=2&sn=1d5513a6599bfd17846242b4b854a35e)
 
 2025-11-17 03:03:00
 
 
 
-### [本周-AI-产品推荐｜从可灵到-popi、OiiOii-，AI-影视大乱斗](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620590&idx=1&sn=0776e79c703e0e1f11339bf67528e818)
+### [对话-Memories.ai：“人的记忆本质上是视觉，AI-也该如此”](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620617&idx=1&sn=4930248bdb5e820e33060ce287cd1ab9)
+
+2025-11-17 03:03:00
+
+
+
+### [AI-Native-的影像公司们，颠覆赛道的机会来了！](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247520971&idx=1&sn=ea2bd5652e9e74b5899dd89d6218e9b0)
 
 2025-11-16 03:03:00
 
 
 
-### [AI-Native-的影像公司们，颠覆赛道的机会来了！](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247520971&idx=1&sn=ea2bd5652e9e74b5899dd89d6218e9b0)
+### [本周-AI-产品推荐｜从可灵到-popi、OiiOii-，AI-影视大乱斗](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620590&idx=1&sn=0776e79c703e0e1f11339bf67528e818)
 
 2025-11-16 03:03:00
 
@@ -80714,13 +80738,13 @@ http://antirez.com/news/162
 
 
 
-### [本周-AI-项目推荐｜Mem0，-Memories.ai......AI-记忆大爆炸](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620168&idx=1&sn=335ce37b6839f1c2688f69325ef60e8b)
+### [AI-六巨头罕见同台！李飞飞激辩-LeCun，黄仁勋：你们都错了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620168&idx=2&sn=538ff19459720e00f4baaf1ae69e9447)
 
 2025-11-09 07:13:00
 
 
 
-### [AI-六巨头罕见同台！李飞飞激辩-LeCun，黄仁勋：你们都错了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620168&idx=2&sn=538ff19459720e00f4baaf1ae69e9447)
+### [本周-AI-项目推荐｜Mem0，-Memories.ai......AI-记忆大爆炸](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620168&idx=1&sn=335ce37b6839f1c2688f69325ef60e8b)
 
 2025-11-09 07:13:00
 
@@ -80948,13 +80972,13 @@ http://antirez.com/news/162
 
 
 
-### [百亿美金独角兽的-AI-革命：效率提升-10-倍，COO-和-CTO-联手，彻底改造工作流](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247520589&idx=1&sn=1ed997c10632e50306db715be4841c8c)
+### [AI-浏览器压根不可能成为新的操作系统](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247520589&idx=2&sn=fb8f8def0a2eff58a4ca1f89bc4b61b1)
 
 2025-11-02 03:49:00
 
 
 
-### [AI-浏览器压根不可能成为新的操作系统](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247520589&idx=2&sn=fb8f8def0a2eff58a4ca1f89bc4b61b1)
+### [百亿美金独角兽的-AI-革命：效率提升-10-倍，COO-和-CTO-联手，彻底改造工作流](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247520589&idx=1&sn=1ed997c10632e50306db715be4841c8c)
 
 2025-11-02 03:49:00
 
@@ -81002,13 +81026,13 @@ http://antirez.com/news/162
 
 
 
-### [对话-VideoTutor：用-AI-打造一个理科版多邻国](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247619911&idx=1&sn=3ab03dd0e3a8ff7a0628f93c7783d55a)
+### [Cursor2.0：再强的-AI-Coding，也要拼尽全力补模型的课](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247619911&idx=2&sn=cc4a2de7ea39e8b15e039800e5e3373f)
 
 2025-10-31 02:30:00
 
 
 
-### [Cursor2.0：再强的-AI-Coding，也要拼尽全力补模型的课](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247619911&idx=2&sn=cc4a2de7ea39e8b15e039800e5e3373f)
+### [对话-VideoTutor：用-AI-打造一个理科版多邻国](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247619911&idx=1&sn=3ab03dd0e3a8ff7a0628f93c7783d55a)
 
 2025-10-31 02:30:00
 
@@ -82262,13 +82286,13 @@ http://antirez.com/news/162
 
 
 
-### [Z-Potentials｜陈加贝：飞书多维表创始工程师之一，开源-Teable-20K-星，全球首个-Database-Agent](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509806&idx=1&sn=7f1475e36ae24a56988628e8dfd82402)
+### [速递｜OpenAI-千亿美金囤算力，应对下一波-AI-爆款冲击，未来所需电力或超全美电网供电量](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509806&idx=2&sn=85502eaaea7782e840df9ef39a5c5cb6)
 
 2025-09-22 03:52:00
 
 
 
-### [速递｜OpenAI-千亿美金囤算力，应对下一波-AI-爆款冲击，未来所需电力或超全美电网供电量](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509806&idx=2&sn=85502eaaea7782e840df9ef39a5c5cb6)
+### [Z-Potentials｜陈加贝：飞书多维表创始工程师之一，开源-Teable-20K-星，全球首个-Database-Agent](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509806&idx=1&sn=7f1475e36ae24a56988628e8dfd82402)
 
 2025-09-22 03:52:00
 
@@ -82352,13 +82376,13 @@ http://antirez.com/news/162
 
 
 
-### [两份报告，两种-PMF：ChatGPT-跑通了-Copilot，Claude-验证了-Agent](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519538&idx=1&sn=83a7fb3900035b3e4587557730e044f4)
+### [Shopify-经验贴：如何搞出一个生产级别可用的-AI-Agent-系统？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519538&idx=2&sn=89b4a757b4c501c1c11badb9803c1a2b)
 
 2025-09-17 12:48:00
 
 
 
-### [Shopify-经验贴：如何搞出一个生产级别可用的-AI-Agent-系统？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519538&idx=2&sn=89b4a757b4c501c1c11badb9803c1a2b)
+### [两份报告，两种-PMF：ChatGPT-跑通了-Copilot，Claude-验证了-Agent](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519538&idx=1&sn=83a7fb3900035b3e4587557730e044f4)
 
 2025-09-17 12:48:00
 
@@ -82508,13 +82532,13 @@ http://antirez.com/news/162
 
 
 
-### [数据、IP、境外实体，到底先抓谁？一文讲清-AI-出海合规全流程](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519462&idx=1&sn=1cbcf6f422bd9b9252d13d00c87dba39)
+### [Claude-官方发文：如何给-Agent-构建一个好用的工具？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519462&idx=2&sn=68ec004d719bd52ecac7535512d30f13)
 
 2025-09-12 10:03:00
 
 
 
-### [Claude-官方发文：如何给-Agent-构建一个好用的工具？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519462&idx=2&sn=68ec004d719bd52ecac7535512d30f13)
+### [数据、IP、境外实体，到底先抓谁？一文讲清-AI-出海合规全流程](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247519462&idx=1&sn=1cbcf6f422bd9b9252d13d00c87dba39)
 
 2025-09-12 10:03:00
 
@@ -82796,13 +82820,13 @@ http://antirez.com/news/162
 
 
 
-### [16-岁少年之死与-ChatGPT-的“自杀鼓励”](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691560476&idx=1&sn=6ded67a6687e30ae9a978a0ec5334b1c)
+### [硅谷预警：十年前的投资机制陷阱，正成为人工智能泡沫的“隐形加速器”](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691560476&idx=2&sn=bfc74ba8db036b68cf8f0ef25802ac04)
 
 2025-08-28 11:38:00
 
 
 
-### [硅谷预警：十年前的投资机制陷阱，正成为人工智能泡沫的“隐形加速器”](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691560476&idx=2&sn=bfc74ba8db036b68cf8f0ef25802ac04)
+### [16-岁少年之死与-ChatGPT-的“自杀鼓励”](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691560476&idx=1&sn=6ded67a6687e30ae9a978a0ec5334b1c)
 
 2025-08-28 11:38:00
 
@@ -82928,13 +82952,13 @@ http://antirez.com/news/162
 
 
 
-### [喝点-VC｜a16z-对话-OpenAI-研究员：GPT-5-的官方解析，高质量使用场景将取代基准测试成为-AGI-真正衡量标准](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509281&idx=1&sn=043852b5ec276d626fd831121a3b4d6a)
+### [Z-Product｜Product-Hunt-最佳产品（8.11-17），95-后华人-AI-助手创新玩法登顶-Top1](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509281&idx=2&sn=78eddb1262b5d631f0d8bb271fa0c6d1)
 
 2025-08-21 03:07:00
 
 
 
-### [Z-Product｜Product-Hunt-最佳产品（8.11-17），95-后华人-AI-助手创新玩法登顶-Top1](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509281&idx=2&sn=78eddb1262b5d631f0d8bb271fa0c6d1)
+### [喝点-VC｜a16z-对话-OpenAI-研究员：GPT-5-的官方解析，高质量使用场景将取代基准测试成为-AGI-真正衡量标准](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509281&idx=1&sn=043852b5ec276d626fd831121a3b4d6a)
 
 2025-08-21 03:07:00
 
@@ -83078,13 +83102,13 @@ http://antirez.com/news/162
 
 
 
-### [深度｜AI-虚拟人如何助力这家初创公司，荣登-2025-年“Inc.-5000”美国增长最快企业榜首](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509063&idx=1&sn=3e73c7cbc394f2e6c2f0f1c756aaf932)
+### [喝点-VC｜YC-对话-Replit-CEO：9-个月-ARR-从-1000-万美元到-1-亿美元的秘诀](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509063&idx=2&sn=6c0e0c1c90431e405cbfd0dadf1bba0d)
 
 2025-08-13 05:01:00
 
 
 
-### [喝点-VC｜YC-对话-Replit-CEO：9-个月-ARR-从-1000-万美元到-1-亿美元的秘诀](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509063&idx=2&sn=6c0e0c1c90431e405cbfd0dadf1bba0d)
+### [深度｜AI-虚拟人如何助力这家初创公司，荣登-2025-年“Inc.-5000”美国增长最快企业榜首](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247509063&idx=1&sn=3e73c7cbc394f2e6c2f0f1c756aaf932)
 
 2025-08-13 05:01:00
 
@@ -83096,13 +83120,13 @@ http://antirez.com/news/162
 
 
 
-### [AI-上新｜在-Edge-浏览器里，我第一次感受到了-AI-的「人味」](https://mp.weixin.qq.com/s/LrzcxUwkb1cfdYuvk2wZUA)
+### [对谈-Memories.ai-创始人-Shawn:-给-AI-做一套“视觉海马体”｜Best-Minds](https://mp.weixin.qq.com/s/OV-Y8C2PW9wUCybh89KZdA)
 
 2025-08-13 00:00:00
 
 
 
-### [对谈-Memories.ai-创始人-Shawn:-给-AI-做一套“视觉海马体”｜Best-Minds](https://mp.weixin.qq.com/s/OV-Y8C2PW9wUCybh89KZdA)
+### [AI-上新｜在-Edge-浏览器里，我第一次感受到了-AI-的「人味」](https://mp.weixin.qq.com/s/LrzcxUwkb1cfdYuvk2wZUA)
 
 2025-08-13 00:00:00
 
@@ -83114,13 +83138,13 @@ http://antirez.com/news/162
 
 
 
-### [拆解-AI-陪伴：有效的主动性才是关键内核](https://mp.weixin.qq.com/s/-dkvgUN9TgAUEs5BiM8aBg)
+### [GPT-5-不是技术新范式，是-OpenAI-加速产品化的战略拐点](https://mp.weixin.qq.com/s/ekYpbjKqjdU8W8E5oEWXwA)
 
 2025-08-12 00:00:00
 
 
 
-### [GPT-5-不是技术新范式，是-OpenAI-加速产品化的战略拐点](https://mp.weixin.qq.com/s/ekYpbjKqjdU8W8E5oEWXwA)
+### [拆解-AI-陪伴：有效的主动性才是关键内核](https://mp.weixin.qq.com/s/-dkvgUN9TgAUEs5BiM8aBg)
 
 2025-08-12 00:00:00
 
@@ -83234,13 +83258,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-再次回归开源！奥特曼宣布推出两款全新模型，手机和笔记本也能跑](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559816&idx=1&sn=f6e1a9c6a7b1c7c26e95432b436851de)
+### [谷歌推出第三代世界模型-Genie-3（内附演示图）：一句话秒生世界](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559816&idx=2&sn=8eae90259e530d0779386257f94e76ae)
 
 2025-08-06 01:15:00
 
 
 
-### [谷歌推出第三代世界模型-Genie-3（内附演示图）：一句话秒生世界](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559816&idx=2&sn=8eae90259e530d0779386257f94e76ae)
+### [OpenAI-再次回归开源！奥特曼宣布推出两款全新模型，手机和笔记本也能跑](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559816&idx=1&sn=f6e1a9c6a7b1c7c26e95432b436851de)
 
 2025-08-06 01:15:00
 
@@ -83444,13 +83468,13 @@ http://antirez.com/news/162
 
 
 
-### [辛顿对话周伯文全文：将“让-AI-变聪明”和“让-AI-变善良”分开研究](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559572&idx=1&sn=b0410738bbd2d6d22ae3c761c8d8b889)
+### [辛顿-WAIC-演讲全文：大模型能“永生”，需确保它不会“消灭”人类](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559572&idx=2&sn=9be7f00eb1c4d5f5aff8ed297c549aa5)
 
 2025-07-26 14:40:00
 
 
 
-### [辛顿-WAIC-演讲全文：大模型能“永生”，需确保它不会“消灭”人类](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559572&idx=2&sn=9be7f00eb1c4d5f5aff8ed297c549aa5)
+### [辛顿对话周伯文全文：将“让-AI-变聪明”和“让-AI-变善良”分开研究](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559572&idx=1&sn=b0410738bbd2d6d22ae3c761c8d8b889)
 
 2025-07-26 14:40:00
 
@@ -83468,13 +83492,13 @@ http://antirez.com/news/162
 
 
 
-### [诺奖得主谈人类末日危机实录：关于-AI“第-37-步”、卡尔达舍夫-I-型文明](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559519&idx=1&sn=303bf8478698475af2aa62352f973647)
+### [美国人是怎么用-ChatGPT-的？OpenAI-报告大揭秘](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559519&idx=2&sn=177d8980e99bd8e5dc3dc73aab577437)
 
 2025-07-25 06:43:00
 
 
 
-### [美国人是怎么用-ChatGPT-的？OpenAI-报告大揭秘](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559519&idx=2&sn=177d8980e99bd8e5dc3dc73aab577437)
+### [诺奖得主谈人类末日危机实录：关于-AI“第-37-步”、卡尔达舍夫-I-型文明](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559519&idx=1&sn=303bf8478698475af2aa62352f973647)
 
 2025-07-25 06:43:00
 
@@ -83528,25 +83552,25 @@ http://antirez.com/news/162
 
 
 
-### [5-年后，编写软件只要一毛钱！奥特曼最新万字访谈实录曝光](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559491&idx=1&sn=8e465a5221ad24083176bbd5c82f3f6f)
-
-2025-07-23 13:52:00
-
-
-
 ### [“编程大神”DHH-谈-AI-写代码热潮：掌握编程的，永远是动手写的人](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559491&idx=2&sn=e2a644c2b1cd481bbe68b247fa96d0e0)
 
 2025-07-23 13:52:00
 
 
 
-### [ChatGPT-Agent-团队专访：基模公司做通用-Agent，和-Manus-有什么不一样？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247518008&idx=1&sn=201854ca188b2ae3e56aa1bf8ec91473)
+### [5-年后，编写软件只要一毛钱！奥特曼最新万字访谈实录曝光](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559491&idx=1&sn=8e465a5221ad24083176bbd5c82f3f6f)
+
+2025-07-23 13:52:00
+
+
+
+### [小扎疯狂撬人，「HALO」正成为硅谷收购新形态](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247518008&idx=2&sn=9643ddf2a15008bf667b938e21545bab)
 
 2025-07-23 13:24:00
 
 
 
-### [小扎疯狂撬人，「HALO」正成为硅谷收购新形态](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247518008&idx=2&sn=9643ddf2a15008bf667b938e21545bab)
+### [ChatGPT-Agent-团队专访：基模公司做通用-Agent，和-Manus-有什么不一样？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247518008&idx=1&sn=201854ca188b2ae3e56aa1bf8ec91473)
 
 2025-07-23 13:24:00
 
@@ -83744,13 +83768,13 @@ http://antirez.com/news/162
 
 
 
-### [《纽约客》：AI-成为知己，这本身是一种社会悲剧](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559295&idx=1&sn=a930eb9b14d0542c975b4421e836c351)
+### [OpenAI-顶级研究员：提示词工程已死](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559295&idx=2&sn=c677d2fa447317fac4193e01a8a06b76)
 
 2025-07-15 10:13:00
 
 
 
-### [OpenAI-顶级研究员：提示词工程已死](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559295&idx=2&sn=c677d2fa447317fac4193e01a8a06b76)
+### [《纽约客》：AI-成为知己，这本身是一种社会悲剧](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559295&idx=1&sn=a930eb9b14d0542c975b4421e836c351)
 
 2025-07-15 10:13:00
 
@@ -84056,13 +84080,13 @@ http://antirez.com/news/162
 
 
 
-### [《纽约客》：AI-教会人类如何写“好”文章，却让真正的好文章消失了](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559020&idx=1&sn=a2c12870f10f6fd628113fd2af0d758b)
+### [斯坦福对话：硅谷在用“新故事”收割全世界](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559020&idx=2&sn=644fc829e3b1fc5c35e510d0ac59f56f)
 
 2025-07-01 12:37:38
 
 
 
-### [斯坦福对话：硅谷在用“新故事”收割全世界](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559020&idx=2&sn=644fc829e3b1fc5c35e510d0ac59f56f)
+### [《纽约客》：AI-教会人类如何写“好”文章，却让真正的好文章消失了](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559020&idx=1&sn=a2c12870f10f6fd628113fd2af0d758b)
 
 2025-07-01 12:37:38
 
@@ -84416,13 +84440,13 @@ http://antirez.com/news/162
 
 
 
-### [图灵奖得主-Richard-S.-Sutton：AI-受困于人类数据](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691558745&idx=1&sn=dd8f7e31ff7fda2ea2bfeac1e24b0010)
+### [图灵奖得主-Yoshua-Bengio：必须要给-AI“无限进化”踩刹车](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691558745&idx=2&sn=1de3c4ef40bca859802b1bda563c78d1)
 
 2025-06-06 12:52:00
 
 
 
-### [图灵奖得主-Yoshua-Bengio：必须要给-AI“无限进化”踩刹车](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691558745&idx=2&sn=1de3c4ef40bca859802b1bda563c78d1)
+### [图灵奖得主-Richard-S.-Sutton：AI-受困于人类数据](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691558745&idx=1&sn=dd8f7e31ff7fda2ea2bfeac1e24b0010)
 
 2025-06-06 12:52:00
 
@@ -84476,13 +84500,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-首位营销负责人：产品没找到-PMF-之前，营销没价值](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516595&idx=1&sn=d62e31df3cf1af0b43d4b8059d188c84)
+### [AI-编程终结的不是代码，而是作为「容器」的软件](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516595&idx=2&sn=91de18724315855f59d9fe7064ca18e0)
 
 2025-06-03 12:57:00
 
 
 
-### [AI-编程终结的不是代码，而是作为「容器」的软件](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516595&idx=2&sn=91de18724315855f59d9fe7064ca18e0)
+### [OpenAI-首位营销负责人：产品没找到-PMF-之前，营销没价值](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516595&idx=1&sn=d62e31df3cf1af0b43d4b8059d188c84)
 
 2025-06-03 12:57:00
 
@@ -84716,13 +84740,13 @@ http://antirez.com/news/162
 
 
 
-### [a16z-聊-AI-编程：别担心被取代，新玩家、新范式带来的是「很多」机会](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516372&idx=1&sn=9513ce39374570280203987751ab6d82)
+### [靠「AI-婴儿播客」拿到-a16z-3200-万美元投资，Hedra-凭什么？](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516372&idx=2&sn=ff9d53ca137445ac3765ac248e4e190e)
 
 2025-05-22 13:33:00
 
 
 
-### [靠「AI-婴儿播客」拿到-a16z-3200-万美元投资，Hedra-凭什么？](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516372&idx=2&sn=ff9d53ca137445ac3765ac248e4e190e)
+### [a16z-聊-AI-编程：别担心被取代，新玩家、新范式带来的是「很多」机会](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516372&idx=1&sn=9513ce39374570280203987751ab6d82)
 
 2025-05-22 13:33:00
 
@@ -84776,13 +84800,13 @@ http://antirez.com/news/162
 
 
 
-### [每月-1800+元的-AI-全家桶、一句话就让-AI-拍大片！这一夜，谷歌-Gemini-贯穿始终，网友：果然-Android“靠边站”了](http://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247818333&idx=1&sn=144f4e03345047a63c417a64db644fef)
+### [一文看懂-2025-Google-IO，誓把一切“装”上-Gemini，谷歌眼镜-10-年逆袭归来](http://mp.weixin.qq.com/s?__biz=MjM5OTgyNTA0MQ==&mid=2650528883&idx=1&sn=602584b3f0252a79fa395fd2b95071fc)
 
 2025-05-21 00:44:00
 
 
 
-### [一文看懂-2025-Google-IO，誓把一切“装”上-Gemini，谷歌眼镜-10-年逆袭归来](http://mp.weixin.qq.com/s?__biz=MjM5OTgyNTA0MQ==&mid=2650528883&idx=1&sn=602584b3f0252a79fa395fd2b95071fc)
+### [每月-1800+元的-AI-全家桶、一句话就让-AI-拍大片！这一夜，谷歌-Gemini-贯穿始终，网友：果然-Android“靠边站”了](http://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247818333&idx=1&sn=144f4e03345047a63c417a64db644fef)
 
 2025-05-21 00:44:00
 
@@ -85112,13 +85136,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-教你做-Agent：2025-年，评估标准和如何产品化是-Agent-的重点](https://mp.weixin.qq.com/s/HmCSRmB5O8Odo4Wfl7k1ig)
+### [Windsurf-团队科普-Agent：不是什么都叫智能体！](https://mp.weixin.qq.com/s/JgYeWHJJdMIvX_y-m9tcEw)
 
 2025-04-25 13:29:20
 
 
 
-### [Windsurf-团队科普-Agent：不是什么都叫智能体！](https://mp.weixin.qq.com/s/JgYeWHJJdMIvX_y-m9tcEw)
+### [OpenAI-教你做-Agent：2025-年，评估标准和如何产品化是-Agent-的重点](https://mp.weixin.qq.com/s/HmCSRmB5O8Odo4Wfl7k1ig)
 
 2025-04-25 13:29:20
 
@@ -85358,13 +85382,13 @@ http://antirez.com/news/162
 
 
 
-### [Anthropic-工程师教你怎么做-AI-Agent：不做全场景、保持简单，像-Agent-一样思考](https://mp.weixin.qq.com/s/kl86BZejzUJ6rRBIxYN4fw)
+### [福布斯-2025-AI-50-榜单：AI-Agent-全面崛起，应用层才是-2025-真正的主战场](https://mp.weixin.qq.com/s/IAAn_48W_ar89zLpoEj8AA)
 
 2025-04-11 11:11:04
 
 
 
-### [福布斯-2025-AI-50-榜单：AI-Agent-全面崛起，应用层才是-2025-真正的主战场](https://mp.weixin.qq.com/s/IAAn_48W_ar89zLpoEj8AA)
+### [Anthropic-工程师教你怎么做-AI-Agent：不做全场景、保持简单，像-Agent-一样思考](https://mp.weixin.qq.com/s/kl86BZejzUJ6rRBIxYN4fw)
 
 2025-04-11 11:11:04
 
@@ -85466,13 +85490,13 @@ http://antirez.com/news/162
 
 
 
-### [OpenAI-闭门讨论：今天-Agent-落地的难点在哪里？](https://mp.weixin.qq.com/s/dg1Eq33-Vz6CHexQvSHprA)
+### [《连线》杂志长文：疯狂追赶-OpenAI-的-2-年，谷歌都做了什么？](https://mp.weixin.qq.com/s/hIaGq3KXnHx4ontZ24xQ9A)
 
 2025-03-28 19:57:15
 
 
 
-### [《连线》杂志长文：疯狂追赶-OpenAI-的-2-年，谷歌都做了什么？](https://mp.weixin.qq.com/s/hIaGq3KXnHx4ontZ24xQ9A)
+### [OpenAI-闭门讨论：今天-Agent-落地的难点在哪里？](https://mp.weixin.qq.com/s/dg1Eq33-Vz6CHexQvSHprA)
 
 2025-03-28 19:57:15
 
@@ -85532,13 +85556,13 @@ http://antirez.com/news/162
 
 
 
-### [a16z-详解-MCP，以及-AI-工具的未来](https://mp.weixin.qq.com/s/Qlvu4dnxsAyr1GAQ7d-0EA)
+### [万字探讨-Agent-发展真方向：模型即产品，Agent-的未来要靠模型而不是-Workflow](https://mp.weixin.qq.com/s/iTvrXLMxskcCWoFAGj-Umw)
 
 2025-03-21 11:54:14
 
 
 
-### [万字探讨-Agent-发展真方向：模型即产品，Agent-的未来要靠模型而不是-Workflow](https://mp.weixin.qq.com/s/iTvrXLMxskcCWoFAGj-Umw)
+### [a16z-详解-MCP，以及-AI-工具的未来](https://mp.weixin.qq.com/s/Qlvu4dnxsAyr1GAQ7d-0EA)
 
 2025-03-21 11:54:14
 
@@ -85994,13 +86018,13 @@ http://antirez.com/news/162
 
 
 
-### [万字赏析-DeepSeek-创造之美：DeepSeek-R1-是怎样炼成的？丨荐读](https://mp.weixin.qq.com/s/8ifsQ1eRJpOSHCrFAtAX0A)
+### [Anthropic-大反击：推理与传统-LLM-模型结合，挑战-OpenAI](https://mp.weixin.qq.com/s/Yz6yUr4Vyr73zgqfMlxj-A)
 
 2025-02-15 12:53:10
 
 
 
-### [Anthropic-大反击：推理与传统-LLM-模型结合，挑战-OpenAI](https://mp.weixin.qq.com/s/Yz6yUr4Vyr73zgqfMlxj-A)
+### [万字赏析-DeepSeek-创造之美：DeepSeek-R1-是怎样炼成的？丨荐读](https://mp.weixin.qq.com/s/8ifsQ1eRJpOSHCrFAtAX0A)
 
 2025-02-15 12:53:10
 
@@ -87404,6 +87428,14 @@ http://antirez.com/news/162
 
 
 
+### [从-Chrome-DevTools-到-AI-工程：与-Addy-Osmani-对谈](https://www.youtube.com/watch?v=2fyPnxKu8ZM)
+
+2026-08-20 00:45:00 | 标签: AI 智能体, 软件工程, Chrome DevTools, Core Web Vitals, 循环工程
+
+> 在这场覆盖面广泛的访谈中，Addy Osmani 将自己从第一性原理理解系统的长期习惯，与 Chrome 工程的演进联系起来。他解释了 DevTools 为什么会发展为开发者的控制界面，性能与内存调试为何需要深入的观测能力，以及 Core Web Vitals 如何以真实用户体验重新定义页面质量。访谈最有力的部分聚焦 AI 辅助工程：智能体能够压缩研究与实现工作，但一旦工程师不再理解自己委托出去的决策，就会产生认知债务与认知放弃。Osmani 将循环工程和软件工厂视为反馈系统，其中应纳入生产信号、优先级判断、人工审查、影响范围限制与可追责的所有权。讨论也提出了实际的职业判断：当生成能力越来越廉...
+
+
+
 ### [慢下来才能更快：AI-如何重塑软件工程](https://www.youtube.com/watch?v=5wks1W-auKY)
 
 2026-06-23 23:26:35
@@ -87533,6 +87565,22 @@ http://antirez.com/news/162
 ### [Alex-Soto-于-Spring-I/O-2025-探讨人工智能应用测试：驯服方法](https://www.youtube.com/watch?v=7BWsvHDC-d8)
 
 2025-09-21 13:40:25
+
+
+
+### [缺失的一层：如何让智能体学会设计品味｜Hassan-El-Mghari，Together-AI](https://www.youtube.com/watch?v=7GMKdpLsxwU)
+
+2026-08-21 18:08:28 | 标签: AI 产品设计, 设计品味, 氛围编程, Hallmark, UI 与 UX
+
+> Hassan El Mghari 提出了一套实用方法，把主观的设计品味转化为编程智能体可以执行的指令。他先拆解 AI 生成界面的常见特征，包括紫色渐变、斜体标题、装饰性胶囊、千篇一律的 Logo、过多表情符号和糟糕的间距。Hallmark skill 一方面设置约束来阻止这些模式，另一方面提供视觉主题库，让模型同时获得负面边界和正向灵感。多组前后对比显示，Hallmark 能生成更干净的起点；GLM 5.2 与 Opus 4.8 的比较则表明，小模型在设计迭代中也能具备竞争力，并显著缩短反馈时间。最终工作流很具体：把设计偏好写入可复用指令，维护灵感库，提供截图，撰写详细提示词，分步骤实现功能，...
+
+
+
+### [无需-A/B-测试，如何把-AI-安全交付给百万患者｜Jared-Joselowitz-与-Ufonia](https://www.youtube.com/watch?v=McknwOzbmyg)
+
+2026-08-19 23:00:31 | 标签: 临床 AI, AI 安全, LLM 评估, 模拟, 提示词优化
+
+> 这场演讲指出，临床 AI 不能沿用传统软件的安全保障方式：一次不安全的对话在回滚之前就可能伤害患者。Joselowitz 介绍了 Ufonia 的模拟框架 Matrix：PatBot 扮演特定场景中的患者，BevJudge 则依据临床医生定义的风险来评估对话。他解释了团队如何验证模拟患者与裁判的可靠性，并使用 GEPA 按非对称成本矩阵优化提示词——漏掉危险信号的代价远高于不必要的升级处理。模拟是不可或缺的内部循环，之后还需经历用户测试、受监督的临床评估和持续监控的部署；每个提示词和判定结果都可以追溯到相应风险。这提供了一套在受监管、高风险环境中部署对话式 AI 的具体安全论证方法。
 
 
 
@@ -87746,13 +87794,13 @@ http://antirez.com/news/162
 
 
 
-### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
 
 2026-04-23 15:15:06
 
 
 
-### [应用的终结——Kitze，Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA)
+### [它没坏：为什么软件基础比以往任何时候都更重要-—-Matt-Pocock，AI-英雄-@mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 
 2026-04-23 15:15:06
 
@@ -87782,13 +87830,13 @@ http://antirez.com/news/162
 
 
 
-### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
+### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
 
 2026-04-20 15:15:06
 
 
 
-### [新的应用层---Vercel-CTO-Malte-Ubl](https://www.youtube.com/watch?v=XKup1pj-34M)
+### [Gemma，DeepMind-的开放模型家族-—-Omar-Sanseviero，Google-DeepMind](https://www.youtube.com/watch?v=_gVFUEdhCyI)
 
 2026-04-20 15:15:06
 
@@ -88130,7 +88178,7 @@ http://antirez.com/news/162
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -88142,7 +88190,7 @@ http://antirez.com/news/162
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -88655,6 +88703,22 @@ http://antirez.com/news/162
 ### [Vol.52-74-页-PPT-解读-Deepseek-与-AI-Agent](https://www.xiaoyuzhoufm.com/episode/67bad726606e5c5940403ea5)
 
 2025-02-24 16:00:00
+
+
+
+### [E249｜Token-经济转点：OpenClaw、Hermes-到本地自研的-Agent-进化之路](https://www.xiaoyuzhoufm.com/episode/6a8644067bb1a8868f394ad2)
+
+2026-08-20 08:00:00 | 标签: AI Agent, Token 经济学, 开源模型, 大模型应用, 创业投资
+
+> 本期节目聚焦 2026 年 AI 行业从「关注模型能力」转向「关注 Agent 工程」的关键转折。硅谷经历了 Token Maxing 烧钱竞赛——Uber 四个月烧穿全年 AI 预算、Meta 限制员工 Token 用量——如今开始转向更经济的 Token Efficient 策略。黄东旭分享了一线实战：从每天烧掉四五百美元的最强模型拥趸，到用本地开源模型+云端前沿模型混合部署，月账单降至两三百美元；他还复盘了 OpenClaw、Hermes、Slog 等 Agent 产品的演进，认为 GPT-5.5 的智商碾压和 DeepSeek V4、GLM-5.2 等开源模型的实用化是两大关键变量。张...
+
+
+
+### [151.-17-岁被-2026-年-ICML-收录论文的小少年：我-bet-开心！开心！开心！](https://www.xiaoyuzhoufm.com/episode/6a8472b95aeb2a5712e8de78)
+
+2026-08-19 08:00:00 | 标签: 预训练, AI 研究, ICML, AI 教育, 青少年成长
+
+> 本期邀请 17 岁高中生苏廷浩（Jonathan），他高中阶段独立完成预训练研究，论文《Attention Projection Mixing with Exogenous Anchors》被 ICML 2026 Main Track 接收。从观看吴恩达课程和 Andrej Karpathy「从零实现 GPT」系列视频起步，他用 30 天每天读一篇论文建立研究直觉，又花约半年时间在自写 transformer 框架上试验 200 多次改进，最终在 attention projection 残差连接上找到突破口。他详细解释了自己的方法与 Kimi 团队 attention residual 思路...
 
 
 
@@ -89366,6 +89430,14 @@ http://antirez.com/news/162
 
 
 
+### [Claude-Code-推出-/design-技能，用于-UI-画板](https://x.com/ClaudeDevs/status/2089471692762673408)
+
+2026-08-18 05:57:26 | 标签: Claude Code, UI 设计, AI 编程, Anthropic, 开发者工具
+
+> Claude Code 通过引入研究预览版的 /design 技能，扩展了其功能。该功能将 Claude Design 的画板工作流直接带入 CLI 和 桌面环境，使开发者能够生成可编辑的 UI 画板，进行细化调整，然后让 Claude 实现最终设计。
+
+
+
 ### [OpenAI-计划在未来几周公开发布-GPT-5.6-Sol、Terra-和-Luna](https://x.com/OpenAI/status/2070555273467687257)
 
 2026-06-27 01:10:20
@@ -89642,13 +89714,13 @@ http://antirez.com/news/162
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 

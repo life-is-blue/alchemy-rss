@@ -1,31 +1,33 @@
-> **更新时间**: 2026-06-28 08:28:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-23 08:39:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Claude-Code-推出-/design-技能，用于-UI-画板](https://x.com/ClaudeDevs/status/2089471692762673408)
+
+2026-08-18 05:57:26 | 标签: Claude Code, UI 设计, AI 编程, Anthropic, 开发者工具
+
+> Claude Code 通过引入研究预览版的 /design 技能，扩展了其功能。该功能将 Claude Design 的画板工作流直接带入 CLI 和 桌面环境，使开发者能够生成可编辑的 UI 画板，进行细化调整，然后让 Claude 实现最终设计。
+
+
+
 ### [OpenAI-计划在未来几周公开发布-GPT-5.6-Sol、Terra-和-Luna](https://x.com/OpenAI/status/2070555273467687257)
 
-2026-06-27 01:10:20 | 标签: GPT-5.6, OpenAI, AI 模型发布, 政府要求, API
-
-> 在这条回复推文中，OpenAI 确认了其致力于广泛开放的承诺，计划尽快将 GPT-5.6 Sol、Terra 和 Luna 全面推出。然而，应美国政府的要求，该发布首先在 Codex 和 API 中向一小部分可信合作伙伴提供有限预览，以在开放性和合规性之间取得平衡。
+2026-06-27 01:10:20
 
 
 
 ### [OpenAI-发布首款-AI-芯片：Jalapeño](https://x.com/OpenAI/status/2069770172802773292)
 
-2026-06-24 21:10:38 | 标签: AI 芯片, Jalapeño, OpenAI, Broadcom, LLM
-
-> OpenAI 宣布了一项重要里程碑：其首款 AI 芯片 Jalapeño 的设计与制造已完成。该芯片专为支撑 ChatGPT、Codex、API 及未来智能体产品的 LLM 工作负载而打造。这款芯片由 OpenAI 与 Broadcom 合作开发，标志着 OpenAI 的全栈平台从产品到模型再到基础设施的战略性扩张。
+2026-06-24 21:10:38
 
 
 
 ### [Karpathy：Claude-Tag-代表-LLM-UI/UX-的第三大范式](https://x.com/karpathy/status/2069547676849557725)
 
-2026-06-24 06:26:31 | 标签: Claude Tag, LLM UI/UX, AI 交互, 范式转变, Andrej Karpathy
-
-> Andrej Karpathy 对刚推出的 Claude Tag 功能进行了深度评论。该功能将 Claude 直接集成到 Slack 中，使其成为一个拥有工具和上下文访问权限的持久化团队成员。他将此定义为 LLM 用户界面的第三次重大重新设计：第一代是网站（如 ChatGPT），第二代是可下载的应用，第三代则是自包含、持久化、异步的实体，能够在组织内与人类协同工作。Karpathy 强调了实现这种无缝体验所需的大量工程工作，并称其「非常棒」。
+2026-06-24 06:26:31
 
 
 
@@ -287,13 +289,13 @@
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 

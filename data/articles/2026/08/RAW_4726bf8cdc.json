@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4726bf8cdc",
+  "title": "VoidZero 发布 Vite+ Beta：一条命令背后的统一 Web 工具链",
+  "url": "https://www.infoq.com/news/2026/08/vite-plus-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-22 14:32:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>VoidZero, the company founded by Vite and Vue creator Evan You, has released the beta of <a href=\"https://viteplus.dev\">Vite+</a>, a unified toolchain for the web that puts the runtime, package manager and the frontend tools every project needs behind a single <code>vp</code> command.</p>\n   <p>Vite+ is designed as one entry point to web development. It manages the runtime and package manager and ties <a href=\"https://vite.dev/\">Vite</a>, <a href=\"https://vitest.dev/\">Vitest</a>, <a href=\"https://rolldown.rs/\">Rolldown</a>, <a href=\"https://tsdown.dev/\">tsdown</a>, <a href=\"https://oxc.rs/docs/guide/usage/linter.html\">Oxlint</a> and <a href=\"https://oxc.rs/docs/guide/usage/formatter.html\">Oxfmt</a> together with a built-in task runner, shipping them as one tested stack. It is fully open source under the MIT license and framework-agnostic, working for CLIs, libraries and web apps alike.</p>\n   <p>The point is a consistent workflow across every repository. <code>vp dev</code> starts a hot-reloading server on Vite 8, <code>vp check</code> formats with Oxfmt, lints with Oxlint and type checks in one step, <code>vp test</code> runs Vitest, <code>vp build</code> produces the production build, <code>vp pack</code> bundles libraries with tsdown, and <code>vp run</code> executes monorepo tasks through a cache-aware, dependency-aware runner.</p>\n   <pre>\r\n<code class=\"language-bash\">vp create # scaffold a new project or monorepo\r\nvp dev # start the dev server\r\nvp check # format, lint and type check\r\nvp test # run unit tests\r\n</code></pre>\n   <p>Since the alpha, the team has merged over 500 pull requests across more than a dozen releases, adding smarter caching for <code>vp run</code>, wider <code>vp migrate</code> coverage with a migration prompt for AI agents, enterprise features such as organisation templates and proxy-aware HTTP, and more than 180 fixes. More than 1,300 public repositories already depend on the package, with adoption spanning Dify, the Notion-style editor BlockNote and Cloudflare's Next.js-compatible vinext.</p>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=48759761\">Hacker News</a>, where the post reached 223 points, one developer <a href=\"https://news.ycombinator.com/item?id=48762207\">described</a> the bundled tools as \"really amazing\", and another <a href=\"https://news.ycombinator.com/item?id=48761647\">called</a> it \"basically the 'boring but works' stack, while also being more performant and with less configuration required\". A <a href=\"https://news.ycombinator.com/item?id=48766159\">third</a> framed it as \"taking the last decade of established conventions ... rewriting in rust for speed, and making it all interoperable\".</p>\n   <p>A widely shared <a href=\"https://github.com/TheJaredWilcurt/blog/discussions/46\">GitHub write-up</a> by Jared Wilcurt, who argued that much of Vite+ is \"just an abstraction on top of npm scripts\", singled out its <code>vp env</code> Node version manager as the weakest piece, and warned the project could lock users into the VoidZero ecosystem. VoidZero's answer is that Vite plugins remain Vite plugins and projects can keep their own package manager underneath. The discussion concluded with highlighting the ‘Rust elephant in the room’:</p>\n   <blockquote>\n    <p>One big problem I have with all of this, is the Rust elephant in the room. Most of VoidZero's projects are just Rust re-writes of whatever the most popular version of that tool already is. They don't really examine the problem being solved and other existing alternatives that have good ideas worth stealing.</p>\n   </blockquote>\n   <p>Existing projects adopt it with <code>vp migrate</code>, which previews the changes it plans to make, though the team cautions that complex setups may still need manual follow-up and points to the <a href=\"https://viteplus.dev/guide/migrate\">migration guide</a>. Against rivals, Turbopack is fast but effectively Next.js-only, Bun offers a single binary but a different runtime, whereas Vite+ layers over tools many teams already run.</p>\n   <p>Vite+ is built by VoidZero and is open source under the MIT license. The team says it is prioritising community feedback and compatibility fixes on the way to a 1.0 release.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"VoidZero Releases Vite+ Beta: A Unified Web Toolchain Behind a Single Command\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/vite-plus-beta/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1787380320000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "VoidZero 已发布 Vite+ 的 Beta 版。这是一套统一 Web 工具链，将 Vite、Vitest、Rolldown、tsdown、Oxlint、Oxfmt 和任务运行器整合到一条 `vp` 命令之后，以简化前端开发。",
+  "oneSentenceSummary": "VoidZero 已发布 Vite+ 的 Beta 版。这是一套统一 Web 工具链，将 Vite、Vitest、Rolldown、tsdown、Oxlint、Oxfmt 和任务运行器整合到一条 `vp` 命令之后，以简化前端开发。",
+  "summary": "VoidZero 由 Vite 和 Vue 的创造者尤雨溪创立，宣布推出 Vite+ 的 Beta 版。Vite+ 是一套一体化工具链，旨在通过将运行时、包管理器以及核心前端工具统一到一条 `vp` 命令之下，简化 Web 开发。该工具链结合了用于开发服务器的 Vite 8、用于测试的 Vitest、用于打包的 Rolldown、用于库打包的 tsdown、用于代码检查和格式化的 Oxlint 与 Oxfmt，以及一个面向 monorepo 任务的缓存感知任务运行器。`vp dev`、`vp check`、`vp test`、`vp build`、`vp pack` 和 `vp run` 等命令为各类项目提供了一致的工作流。自 alpha 版本以来，已有超过 500 个拉取请求被合并，新增了更智能的缓存、AI 智能体迁移提示、企业级功能，以及超过 180 项错误修复。已有超过 1，300 个公共仓库依赖于 Vite+，包括 Dify、BlockNote 和 Cloudflare 的 vinext。Hacker News 上的社区反馈强调了其性能和低配置需求，而 GitHub 上的一场讨论则警告了潜在的锁定风险，并指出“房间里的大象是 Rust”——即对现有工具进行 Rust 重写。VoidZero 强调，Vite 插件仍然兼容，项目也可以保留自己的包管理器，从而将 Vite+ 定位为 Turbopack 和 Bun 等工具的开源、MIT 许可替代方案。",
+  "mainPoints": [
+    {
+      "point": "Vite+ 将运行时、包管理器及核心前端工具统一在一条 `vp` 命令之下。",
+      "explanation": "它集成了 Vite 8（开发服务器）、Vitest（测试）、Rolldown（打包）、tsdown（库打包）、Oxlint/Oxfmt（代码检查/格式化）以及一个缓存感知的任务运行器，提供 `vp dev`、`vp check`、`vp test`、`vp build`、`vp pack` 和 `vp run` 等一致命令。"
+    },
+    {
+      "point": "该版本包含自 alpha 以来的重大改进，例如更智能的缓存、AI 智能体迁移提示、企业级功能，以及超过 180 项修复。",
+      "explanation": "在十多个版本中，超过 500 个拉取请求增加了增强的 `vp run` 缓存、面向 AI 智能体的迁移指南、组织模板、支持代理的 HTTP、错误修复等功能；目前已有超过 1，300 个公共仓库依赖该包。"
+    },
+    {
+      "point": "社区反馈称赞其性能和低配置需求，而批评意见则集中在潜在的生态系统锁定以及对 Rust 重写的依赖上。",
+      "explanation": "Hacker News 评论者称其为“无聊但能用”的技术栈，同时性能更好；而 GitHub 上的一篇文章则警告 `vp env` Node 版本管理器是最薄弱的环节，并指出“房间里的大象是 Rust”——即在不重新审视底层问题的情况下用 Rust 重写流行工具的趋势。"
+    },
+    {
+      "point": "Vite+ 仍采用 MIT 许可，框架无关，并兼容现有 Vite 插件和其他包管理器。",
+      "explanation": "VoidZero 强调，Vite 插件仍能像以前一样正常工作，项目也可以继续使用自己的包管理器，将 Vite+ 定位为 Turbopack（仅限 Next.js）或 Bun（单一二进制运行时）等更具主张的工具的开放、灵活替代方案。"
+    }
+  ],
+  "keyQuotes": [
+    "“基本上就是‘无聊但能用’的技术栈，同时性能更好，所需配置也更少”",
+    "“我对这一切的一大问题，就是房间里的大象 Rust。VoidZero 的大多数项目，不过是对这些工具当前最流行版本的 Rust 重写。”"
+  ],
+  "tags": [
+    "Vite+",
+    "Web 工具链",
+    "前端与 Web",
+    "DevOps",
+    "任务运行器"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 536,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787380320000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-22 14:32:00"
+}
