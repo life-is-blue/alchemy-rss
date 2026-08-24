@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-24 08:44:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-24 11:03:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -13808,137 +13808,103 @@
 
 ### [DeepMind-的-Pandora-Router-将-EmbedLLM-的路由成本降至-0.075](https://dev.to/gentic_news/deepminds-pandora-router-cuts-routing-cost-to-0075-on-embedllm-3kai)
 
-2026-08-24 06:26:19 | 标签: AI, DeepMind, 路由, EmbedLLM, 潘多拉盒子
-
-> Google DeepMind 的 Pandora's Router，在 arXiv 论文 2608.20316 中描述，将 EmbedLLM 的路由检查成本从 1.986 降低到 0.075。该方法将模型选择视为一个潘多拉盒子问题，仅在预期价值证明成本合理时才支付昂贵的估计费用。在 MATH、RAG 和 EmbedLLM 上，Pandora's Router 在所测试的成本设置中平均具有最低或并列最低的路由遗憾和检查成本。
+2026-08-24 06:26:19
 
 
 
 ### [我们让一个-230M-语言模型在-Android-上持续学习](https://dev.to/ijulin/we-taught-a-230m-language-model-to-keep-learning-on-android-36hl)
 
-2026-08-24 05:59:07 | 标签: AI, 机器学习, 微调, 在设备 AI, 通知路由
-
-> 本文介绍了 Online-SDFT，一个用于小语言模型（230M 参数）连续、在设备上微调的原型，利用延迟的用户交互。它通过将模型本身视为学生和教师，基于观察到的结果的回顾来更新参数，从而解决了个人 AI 中模糊的、事后反馈问题。
+2026-08-24 05:59:07
 
 
 
 ### [我构建了一个像我一样写作的-AI，并正在测量它的失败率](https://dev.to/alkisyuv/i-built-an-ai-that-writes-like-me-and-im-measuring-how-much-it-fails-4o0)
 
-2026-08-24 05:54:32 | 标签: AI 写作, 个性化, 风格迁移, 开源, 数据筛选
-
-> 本文详细介绍了 hyphos 的创建，这是一个开源工具，旨在弥合通用 AI 输出与个人写作风格之间的差距。作者解释了数据收集过程，即筛选大量代理转录和电子邮件，以提取仅属于作者自己的话语。该工具的核心在于识别独特的“指纹”（例如句子长度和标点符号习惯），并通过确定性规则来强制执行这些指纹，而不是完全依赖 AI 模型的解读。文章最后通过自我评估测试，表明该工具成功地使 AI 生成的文本在盲比中与作者自己的文本无法区分。
+2026-08-24 05:54:32
 
 
 
 ### [5-Easy-Ways-to-Buy-Old-Gmail-Accounts-Smartly-Start-in](https://dev.to/sadyeestrada04p9c/5-easy-ways-to-buy-old-gmail-accounts-smartly-start-in-482a)
 
-2026-08-24 04:39:10 | 标签: Gmail, Account Security, 2-Step Verification, Privacy, Digital Organization
-
-> The article provides a comprehensive overview of managing old Gmail accounts， highlighting the importance of security features like 2-Step Verification and unique passwords. It advises users to verify account history， remove unauthorized devices， and ensure compliance with Google's policies before p...
+2026-08-24 04:39:10
 
 
 
 ### [Anthropic-的最佳-AI-模型在吸引用户方面表现不佳，而更便宜的工具却大受欢迎](https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/)
 
-2026-08-24 04:24:52 | 标签: AI, Anthropic, 模型采用, 收入, Fable 5
-
-> 该文章报道了 Anthropic 的财务表现，指出年化收入已上升至 650 亿美元，并预计将继续保持盈利。然而，文章也强调了公司成功与旗舰产品采用率之间的脱节。Fable 5 模型的价格比其前代产品高出许多，但仅占 8% 的市场份额，而较旧、更实惠的模型仍然占据主导地位。这表明，虽然 Anthropic 是一家成功的企业，但其最新的技术产品由于成本过高而未能与客户产生共鸣。
+2026-08-24 04:24:52
 
 
 
 ### [Google-将从搜索中删除你的泄露-ID。你的面部特征已无法抹去。](https://dev.to/caracomp/google-will-now-erase-your-leaked-id-from-search-your-face-is-already-gone-4lbl)
 
-2026-08-24 04:04:28 | 标签: AI 安全, 生物识别, 身份欺诈, 计算机视觉, 数据隐私
-
-> 本文讨论了 Google 扩展的 ID 去索引功能的局限性。虽然该服务有效地从网络搜索中删除了泄露的驾照和 AI 篡改的图像，但它未能解决生物识别数据安全的核心问题。一旦高分辨率的身份照片被泄露，威胁行为者就可以提取脸部特征嵌入（向量），这些嵌入可以永久用于合成身份欺诈，而不管原始图像是否从搜索引擎中删除。
+2026-08-24 04:04:28
 
 
 
 ### [Drew-Breunig-的一段话](https://simonwillison.net/2026/Aug/23/drew-breunig/)
 
-2026-08-24 03:55:30 | 标签: AI 经济学, 模型选择, Fable, 成本-效益分析, 编码效率
-
-> 这段话强调了 AI 领域的一项重大变化：Fable 的出现，一个非常强大的模型，打破了新模型不断以更低成本改进的趋势。由于 Fable 的费用非常高，开发者现在必须更精挑细选地决定将哪些任务分配给它，而不是将其用于所有编码需求。
+2026-08-24 03:55:30
 
 
 
 ### [Infra-也能自进化？Φ-Bench-深度评测：大模型距离“AI-工程师”还有多远？](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518682&idx=1&sn=d539a05cca31ce21066f65273a9ec929)
 
-2026-08-24 00:00:00 | 标签: AI 编程, 模型评测与基准, LLM, 系统优化, 硬件与边缘
-
-> 本文介绍了 Φ-Bench，一个由 NVIDIA 提出的用于评估 LLM 基础设施工程能力的基准测试。与现有基准不同，Φ-Bench 重点考察模型在真实工程场景中的表现，例如定位性能瓶颈、理解代码依赖关系以及进行端到端的系统优化。通过对 Claude Opus 5、Kimi K3、Qwen3.8 Max 等模型的评估，研究发现这些模型在不同领域表现不一，但总体上距离成为独立的“AI 工程师”还有很长的路要走，特别是在处理复杂、开放式的优化问题时。
+2026-08-24 00:00:00
 
 
 
 ### [突发：前沿-AI-公司再遭打击](https://garymarcus.substack.com/p/breaking-more-bad-news-for-the-frontier)
 
-2026-08-23 23:39:08 | 标签: AI 市场趋势, Anthropic, Claude 3.5, NVIDIA, OpenAI
-
-> 《金融时报》报道，Anthropic 的 Claude 3.5 虽然因其准确性和推理能力而备受赞誉，但却未能获得显著的市场份额。用户越来越多地选择来自 NVIDIA 和 OpenAI 的更经济、高速的模型，这些模型以更低的价格提供了类似的功能。这一趋势表明，在 AI 市场上，价格和速度正在成为比纯粹的智能更关键的因素。
+2026-08-23 23:39:08
 
 
 
 ### [解析文件夹，而不只是-PDF：RAG-需要的案例文件关系表](https://towardsdatascience.com/parse-the-folder-not-just-the-pdfs-the-relational-tables-rag-needs-on-a-case-file/)
 
-2026-08-23 23:00:00 | 标签: RAG, 文档分析, 案例文件, 关系表, 完整性检查
-
-> 本文讨论了分析案例文件（例如，与单个事件或实体相关的异构文档集合，如索赔表、报告、发票）的独特挑战。与旨在查找特定段落的标准检索任务不同，案例文件分析需要检查多种文档类型的存在性和一致性。作者介绍了一种使用关系表来跟踪预期与实际文档、识别缺失部分以及检测文件间字段矛盾的结构化方法。
+2026-08-23 23:00:00
 
 
 
 ### [我不应该需要一个-LLM-来解释我的-LLM](https://daviesgeek.com/I-Shouldn%E2%80%99t-Need-an-LLM-to-Explain-My-LLM)
 
-2026-08-23 22:47:50 | 标签: LLM, AI 通信, Opus, 提示词工程, 开发者工具
-
-> 作者分享了在工作项目中使用 Opus 的经历，指出虽然该模型功能强大，但其沟通风格常常令人困惑。文本充满了奇怪的隐喻和技术术语，需要付出大量努力才能理解。为此，作者尝试了不同的输出风格，最终找到了“unslop”技能的成功应用，该技能有助于简化模型的回答。
+2026-08-23 22:47:50
 
 
 
 ### [重磅！Codex-省钱教程来了](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247725601&idx=1&sn=13dbf3c4f1ea2f7c664cea6dad0fd258)
 
-2026-08-23 22:24:00 | 标签: AI 编程, Codex, 模型优化, 成本控制, 配置教程
-
-> Codex 的运行成本主要由模型调用量决定。通过将高推理要求的规划任务分配给强模型（如 gpt-5.6-sol），而将执行和审查任务分配给轻量级模型（如 gpt-5.6-luna），可以有效降低整体成本。本文提供了详细的配置文件修改步骤，并说明了国产模型接入的可能性。
+2026-08-23 22:24:00
 
 
 
 ### [OpenAI-首席全球事务官勒汉恩：公众、企业要为-AI-网络攻击做好防御准备-·-AIHOT](https://aihot.virxact.com/items/cmt5wf8hm0shgro737h9vww1k)
 
-2026-08-23 22:13:31 | 标签: AI 安全, 网络攻击, OpenAI, 模型训练, 政府监管
-
-> 随着 AI 技术的发展，网络安全威胁正在升级。OpenAI 首席全球事务官克里斯 · 勒汉恩在接受《卫报》采访时表示，前沿 AI 模型已经进入了一个新的阶段，它们能够规划和发动复杂的网络攻击。为了应对这一风险，OpenAI 本周宣布暂停开发部分最先进的内部模型，并计划增加新的安全防护措施。勒汉恩强调，模型只有在证明并保证达到一定安全水平后，才能向公众发布或部署，并呼吁美国政府建立全国性的强制性安全标准，以应对 AI 带来的网络安全挑战。
+2026-08-23 22:13:31
 
 
 
 ### [生产中的多模态提示：图像、PDF、屏幕截图](https://dev.to/rishi_kora/multimodal-prompting-in-production-images-pdfs-screenshots-2blh)
 
-2026-08-23 21:33:45 | 标签: 多模态 AI, 提示工程, 视觉-语言模型, 文档分析, 生产 AI
-
-> 本文深入探讨了多模态提示的复杂性，解释了如何构建能够有效弥合原始视觉数据与可执行洞察之间差距的提示。它涵盖了提示的基本组成部分，包括系统角色、用户意图和具体的视觉上下文，并提供了用于优化实际应用中提示性能的实用示例和最佳实践。
+2026-08-23 21:33:45
 
 
 
 ### [银行、保险和-NHS-的断网-LLM-部署](https://dev.to/rishi_kora/air-gapped-llm-deployment-for-banks-insurers-and-the-nhs-2nl4)
 
-2026-08-23 21:31:11 | 标签: LLM, 断网, 出站限制, 模型部署, 监管行业
-
-> 文章首先指出了监管 AI 项目中的一个常见陷阱：对“断网”要求的误解，这往往导致部署过于孤立且过时。它澄清，虽然完全断网（完全网络隔离）非常罕见且成本高，但大多数组织实际上需要的是出站受限部署——数据可以进入系统，但未经控制不能离开。然后，文章详细介绍了在受限环境中部署 LLM 的分步流程，包括模型选择、量化、容器化，以及安全传输到目标硬件。
+2026-08-23 21:31:11
 
 
 
 ### [四种八种-KV-Cache-错误在第一步完全相同，因此每个人都写的检查召回率只有-0.500](https://dev.to/dev48v/four-of-eight-kv-cache-bugs-are-bit-identical-at-step-1-so-the-check-everybody-writes-has-recall-5gkn)
 
-2026-08-23 20:41:05 | 标签: AI, 机器学习, KV-Cache, 调试, 软件测试
-
-> 本文深入分析了深度学习模型中键值（KV）缓存的验证机制。它强调了常用“一步”检查的一个关键局限性，该检查在第一个令牌附加后立即比较缓存状态。虽然该测试对于检测某些类型的错误（例如数据类型错误或即时过时）是有效的，但它无法识别与缓存*增长*相关的错误（例如位置偏移错误或冻结缓冲区）。这些增长相关的错误仅在第一步之后才会显现，这意味着在初始检查时缓存看起来是完全有效的，从而使该测试对这些特定问题的召回率实际上为零。
+2026-08-23 20:41:05
 
 
 
 ### [删除三分之二的提示词与精心修复的效果相同，均覆盖-14400-个案例中的-183-个，但仅需-74.5-个令牌而非-229.7-个](https://dev.to/dev48v/deleting-two-thirds-of-your-prompt-hits-the-same-183-of-14400-cases-as-the-careful-fix-at-745-2omf)
 
-2026-08-23 20:39:01 | 标签: 提示词工程, LLM优化, 指令优先级, 令牌效率, 实验分析
-
-> 研究对比了六种处理冲突指令的方法：原始未优化提示、重新排序规则、添加优先级注释、删除冲突规则、附加例外条款以及仅保留关键规则。结果显示，虽然‘仅保留关键规则’是最节省令牌的策略，但却牺牲了整体服从性。‘删除冲突规则’和‘附加例外条款’在最小化关键规则违规方面同样有效（1.27%），但后者在保留非关键指令方面更为保守。分析得出，最佳策略取决于令牌效率与保留非关键指令之间的具体权衡。
+2026-08-23 20:39:01
 
 
 

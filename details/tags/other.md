@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-24 08:44:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-24 11:03:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -7,9 +7,7 @@
 
 ### [全球首次！机器人迎战网球运动员，极限救球，摔倒光速弹起](https://www.qbitai.com/2026/08/478093.html)
 
-2026-08-23 17:45:27 | 标签: 具身智能, 人形机器人, 网球, 运动会, 银河通用
-
-> 2026 年 8 月 22 日，银河通用机器人参加了世界人形机器人运动会，并由中央广播电视总台直播。机器人展现了高度拟人的运动状态，能够完成连续多拍对打，并根据对手变化实时调整策略。在双打环节，机器人与人类队友成功协作，甚至在高速运动中摔倒后能够自主重新站起继续比赛。这一成就标志着具身智能在真实物理世界中的重大突破，验证了机器人具备完整的网球运动员能力，包括感知、决策、运动控制和实时博弈。
+2026-08-23 17:45:27
 
 
 
@@ -3711,105 +3709,79 @@
 
 ### [99.7%-准确的脸部搜索仍然会误判-3，000-名无辜者——包括你](https://dev.to/caracomp/a-997-accurate-face-search-can-still-finger-3000-innocent-people-including-you-4kpb)
 
-2026-08-24 05:54:01 | 标签: 人脸识别, 生物识别, 机器学习, 计算机视觉, 数据隐私
-
-> 本文解释了生物识别系统误报的数学基础，特别是 99.7% 准确的模型在 1:N 搜索环境中仍会产生重大误差。它讨论了 1:1 验证与 1:N 识别之间的区别、高维向量空间中错误率的缩放，以及构建可靠人脸分析软件的架构影响。
+2026-08-24 05:54:01
 
 
 
 ### [购买旧-Facebook-账户的-8-大网站（新与批量）](https://dev.to/sadyeestrada04p9c/top-08-websites-to-buy-old-facebook-accounts-new-bulk-4jn6)
 
-2026-08-24 05:29:09 | 标签: Facebook, 账户安全, 隐私, 双因素认证, 账户管理
-
-> 本文深入分析了旧 Facebook 账户的世界，解释虽然一些用户因其历史而寻求这些账户，但它们并不必然更值得信赖或更安全。文章重点介绍了与购买或使用旧账户相关的潜在风险，包括安全漏洞、隐私泄露和政策违规。此外，还提供了有关账户安全的最佳实践的全面概述，例如启用双因素认证、审查登录活动和管理连接的应用程序，以确保安全合规的 Facebook 体验。
+2026-08-24 05:29:09
 
 
 
 ### [如何购买旧的-Facebook-账户并使用-Marketplace（2026-年）](https://dev.to/sadyeestrada04p9c/how-to-buy-old-facebook-accounts-with-marketplace-in-2026-cai)
 
-2026-08-24 05:22:45 | 标签: Facebook, 账户安全, 隐私设置, 数字组织, 在线形象
-
-> 文章详细解释了如何有效管理一个成熟的 Facebook 账户，强调了安全、隐私和组织的重要性。内容包括使用强密码、启用额外安全功能、审查登录活动、管理连接的应用程序、优化隐私设置、整理旧帖子和照片，以及维护专业资料。指南还列举了常见的安全错误，并提供了一个定期账户维护的流程。
+2026-08-24 05:22:45
 
 
 
 ### [购买旧-Facebook-账户的-10-个最佳网站...](https://dev.to/sadyeestrada04p9c/10-best-sites-for-buying-old-facebook-accounts-in-the--2156)
 
-2026-08-24 05:15:08 | 标签: Facebook 营销, 老旧账户, 数字战略, 电子商务, 自由职业
-
-> 文章探讨了使用老旧 Facebook 账户进行营销的优势，包括算法偏好、限制减少，以及即时运营能力。它讨论了基于账户年龄和功能的定价结构，并概述了具体使用案例，例如企业页面管理、电子商务，以及联盟营销。该指南强调了老旧账户在加速社交媒体活动和相比新资料获得更好 ROI 方面的战略价值。
+2026-08-24 05:15:08
 
 
 
 ### [2026-年购买旧/新-Telegram-账户的最佳网站-Top-3](https://dev.to/sadyeestrada04p9c/top-03-best-sites-for-buy-old-new-telegram-accounts-in-2026-3263)
 
-2026-08-24 05:09:15 | 标签: Telegram, 账户安全, 隐私, 组织, 恢复
-
-> 文章深入探讨了维护较旧 Telegram 账户的复杂性，这些账户通常包含大量个人和专业数据。它强调了强健安全措施的重要性，例如两步验证和会话监控，同时还提供了关于组织对话和管理隐私设置的实用建议，以保护敏感信息。
+2026-08-24 05:09:15
 
 
 
 ### [构建开放的土耳其-EV-充电意图数据集](https://dev.to/birdircik/building-an-open-turkish-ev-charging-intent-dataset-571p)
 
-2026-08-24 05:04:57 | 标签: NLP, 意图分类, EV 充电, 土耳其语言, 开放数据
-
-> 本文介绍了土耳其 EV 充电意图数据集，这是一个用于构建和评估电动汽车助手意图路由系统的资源。该数据集包含 192 条手动整理的土耳其查询，分布在八个意图类别中，包括站点查找、价格比较和路线规划。它具有固定的训练-验证-测试拆分、稳定的记录 ID 和清晰的来源信息，适合用于原型分类器和回归测试，但不适合分析真实用户行为。
+2026-08-24 05:04:57
 
 
 
 ### [5-Easy-Steps-to-Buying-Old-Telegram-Accounts-Complete-Guide](https://dev.to/sadyeestrada04p9c/5-easy-steps-to-buying-old-telegram-accounts-complete--1dh9)
 
-2026-08-24 05:04:27 | 标签: Telegram, Account Security, Privacy, Two-Step Verification, Active Sessions
-
-> The article discusses the growing interest in 'old Telegram accounts' and clarifies that while an established account may have a longer history， it does not guarantee trust， verification， or platform approval. It highlights the critical need for robust security measures， such as Two-Step Verificatio...
+2026-08-24 05:04:27
 
 
 
 ### [生存分析与-Cox-比例风险模型：初学者友好指南](https://towardsdatascience.com/a-first-look-at-survival-analysis-and-the-cox-model/)
 
-2026-08-24 01:00:00 | 标签: 生存分析, Cox 模型, 风险比, Kaplan-Meier, 审查
-
-> 生存分析对于研究时间-事件现象至关重要，例如疾病复发或机器故障，因为并非所有受试者在观察期内都会经历该事件。本文涵盖了基本概念，包括生存函数 S(t)（跟踪在特定时间之前生存的概率）和风险函数 h(t)（测量在特定时间的瞬时事件风险）。然后，它通过实际应用来指导读者，首先使用非参数的 Kaplan-Meier 估计器来可视化生存曲线并测试组间差异，然后转向半参数的 Cox 模型来量化协变量对风险率的影响。讨论还包括对比例风险假设的详细解释，以及如何诊断和解决其违背。
+2026-08-24 01:00:00
 
 
 
 ### [关于加拿大和美国的几句话](https://garymarcus.substack.com/p/a-few-words-about-canada-and-the)
 
-2026-08-24 00:36:34 | 标签: 加拿大, 美国, 贸易战, David Frum, 国际关系
-
-> 作者，一位居住在加拿大的美国人，首先表达了对两国和平的愿望。然后，他们引用了 David Frum 的言论，批评当前的贸易战不受欢迎且无效。文章最后以对加拿大和美国历史关系的个人反思结束，强调了这一伙伴关系的重要性。
+2026-08-24 00:36:34
 
 
 
 ### [购买旧-Gmail-账户：一步步指南](https://dev.to/babbiedaughertyvkajo/buying-old-gmail-accounts-a-step-by-step-guide-fe8)
 
-2026-08-23 21:28:34 | 标签: 电子邮件营销, Google Workspace, 数据安全, 业务通信, 账户所有权
-
-> 该指南解释，虽然购买旧 Gmail 账户可能看起来是绕过垃圾邮件过滤器的捷径，但这种做法风险很大，往往会导致账户被停用和缺乏所有权。它强调使用公司自有域名和 Google Workspace 的重要性，以确保数据安全、合规性和可靠的业务通信。
+2026-08-23 21:28:34
 
 
 
 ### [WRC-唯一真「人机共生」展台，是家沉浸式机器人咖啡店](https://www.qbitai.com/2026/08/478319.html)
 
-2026-08-23 21:20:00 | 标签: 具身智能, 机器人, 咖啡店, 隐空间模型, WRC
-
-> 文章介绍了无界动力在 WRC 上的展台，这是一家真实的咖啡店，展示了机器人与人类咖啡师的共生工作模式。机械臂负责手冲咖啡，机器人服务员在开放空间中穿梭送餐、回收垃圾，并进行自我消毒。文章还介绍了无界动力的技术路线——隐空间世界模型，以及其在商业化和工业场景中的应用前景。
+2026-08-23 21:20:00
 
 
 
 ### [2026-年安全购买旧-Gmail-账号的-34-个建议](https://dev.to/babbiedaughertyvkajo/top-34-sides-buy-old-gmail-accounts-safely-in-2026-1i6d)
 
-2026-08-23 21:17:05 | 标签: 电子邮件安全, Google Workspace, 商业沟通, 数据隐私, 账号所有权
-
-> 文章讨论了购买旧 Gmail 账号用于营销的常见做法，并强调了这种方法的危险性。它解释说，这些账号通常具有不明确的所有权、潜在的垃圾邮件历史，以及被暂停的脆弱性。作者建议企业应投资于 Google Workspace，以创建具有完整管理控制和可靠支持的专业、合规的电子邮件系统。
+2026-08-23 21:17:05
 
 
 
 ### [同一个-95%-区间在一种情况下覆盖真相-95.3%，在另一种情况下覆盖-0.0%，数据完全相同](https://dev.to/dev48v/the-same-95-interval-covers-the-truth-953-of-the-time-in-one-world-and-00-in-another-on-1op1)
 
-2026-08-23 20:40:24 | 标签: 线性回归, 测量误差, 置信区间, 统计分析, 数据可靠性
-
-> 文章研究了测量误差如何影响线性回归结果的解读。它表明，虽然观测数据（w）保持不变，但真实信号（x）会根据噪声水平（u）而显著变化。这导致了一个现象：标准的 95% 置信区间要么准确地捕捉到真实斜率（95.3% 的覆盖率），要么完全错过它（0.0% 的覆盖率），这取决于使用的具体误差模型。
+2026-08-23 20:40:24
 
 
 
@@ -40089,11 +40061,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 
