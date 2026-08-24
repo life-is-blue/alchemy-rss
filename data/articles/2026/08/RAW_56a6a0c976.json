@@ -1,0 +1,43 @@
+{
+  "id": "RAW_56a6a0c976",
+  "title": "Drew Breunig 的一段话",
+  "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+  "date": "2026-08-24 03:55:30",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">23rd August 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html\">\n     <p>Prior to Fable, it felt silly to waste&nbsp;<em>too</em>&nbsp;much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems.</p>\n     <p>But then Fable landed. It was (and still is!)&nbsp;<em>incredible</em>. But the cost was so high and Opus was&nbsp;<em>good enough</em>&nbsp;(as was 5.6, K3, and even GLM) for&nbsp;<em>most</em>&nbsp;of the code we needed.</p>\n     <p><em>So we started to think about what work went where.</em></p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html\">Drew Breunig</a>, <span class=\"context\">Fable &amp; The End of the Free Lunch</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2331/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Drew Breunig 反思了 Fable 高昂成本的影响，指出虽然该模型非常出色，但其费用迫使人们从通用改进转向战略性资源分配。",
+  "oneSentenceSummary": "Drew Breunig 反思了 Fable 高昂成本的影响，指出虽然该模型非常出色，但其费用迫使人们从通用改进转向战略性资源分配。",
+  "summary": "这段话强调了 AI 领域的一项重大变化：Fable 的出现，一个非常强大的模型，打破了新模型不断以更低成本改进的趋势。由于 Fable 的费用非常高，开发者现在必须更精挑细选地决定将哪些任务分配给它，而不是将其用于所有编码需求。",
+  "mainPoints": [
+    {
+      "point": "Fable 的高成本迫使人们重新评估资源分配。",
+      "explanation": "与之前提供较低价格下增量改进的模型不同，Fable 的高昂成本意味着它不能被随意使用。这导致了一种更具战略性的方法，即该模型被保留用于特定、高价值的任务，而不是通用编码。"
+    }
+  ],
+  "keyQuotes": [
+    "但成本太高了，而 Opus 已经足够好（5.6、K3，甚至 GLM 也一样）用于我们需要的*大多数*代码。",
+    "所以我们开始思考哪些工作应该放在哪里。"
+  ],
+  "tags": [
+    "AI 经济学",
+    "模型选择",
+    "Fable",
+    "成本-效益分析",
+    "编码效率"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 95,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787514930000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-24 03:55:30"
+}

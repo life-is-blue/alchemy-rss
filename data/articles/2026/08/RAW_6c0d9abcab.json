@@ -1,0 +1,50 @@
+{
+  "id": "RAW_6c0d9abcab",
+  "title": "我构建了一个像我一样写作的 AI，并正在测量它的失败率",
+  "url": "https://dev.to/alkisyuv/i-built-an-ai-that-writes-like-me-and-im-measuring-how-much-it-fails-4o0",
+  "date": "2026-08-24 05:54:32",
+  "author": "Alkis Yuv",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Everyone can now spot machine text on sight, the em-dashes, the \"you're absolutely right\", the invented technical terms nobody at any job ever used. I write a lot with agents, and I did not want my published words to smell like that. So I built <a href=\"https://github.com/triartleet/hyphos\" target=\"_blank\" rel=\"noopener noreferrer\">hyphos</a>, a small open tool that learns how I actually write, from my own words, and rewrites AI drafts to sound like me. This is the build log, including the parts that went wrong.</p>\n  <p>The corpus came first. My raw material was every message I've ever typed into my coding agents, plus a decade of sent email. Extracting \"what I typed\" turned out to be the real work. The first pass over my agent transcripts produced 1.27 million words, which sounded great until I measured where they lived, 91 percent sat in messages too long for anyone to have typed. Pasted logs, quoted docs, other people's text. Nobody types 1500-word prompts. So the filtering is mechanical and merciless, machine-shaped lines stripped out of every message, lengths capped at what a human plausibly types, and any message carrying a machine tell inside supposedly-mine text thrown away whole, 606,000 words in that last cut alone. I am left with 80,470 words that behave like typing, and that number I trust.</p>\n  <p>Email had a nastier lesson. I assumed a Sent export contains only my mail. Measured, 45 percent of it was other people's messages, whole threads riding along. If you ever build on personal data, enforce authorship structurally, don't assume it. A From filter and some multilingual quote-stripping later, 84,000 English words that are provably mine, with the Greek kept aside as rhythm signal only. The whole funnel, in numbers:\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>agent transcripts   1,270,000  words extracted\n                    91 %       in messages too long to have been typed\n                    606,000    thrown away whole for a machine tell\n                    80,470     left, and they behave like typing\nsent email          45 %       of the export was other people's mail\n                    84,000     English words that are provably mine\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>Then the part I'd been waiting for, the fingerprints. Per register, because I don't have one voice, the me that instructs an agent is not the me that emails a stranger. Sentence lengths, punctuation habits, casing, openers, contraction rates. One number stopped me though. In my pre-2023 email, written before AI assistance existed, I used an em-dash exactly zero times in thirty thousand words. Not rarely. Never. The internet's favourite AI tell is, in my own measured history, a construction I simply don't make. That single statistic became a hard rule, any em-dash in \"my\" text gets rewritten out mechanically, no model discretion involved.</p>\n  <blockquote>\n   <p>- The model handles meaning and register, the rules handle the fingerprint.</p>\n  </blockquote>\n  <p>That's the design insight I'd defend most, by the way. Style instructions decay, models drift back to their priors within a few replies, everyone has watched it happen. So the quirks that can be enforced deterministically are enforced after the model, by boring code that cannot be argued with.\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>my typing, provably mine ──▶ fingerprint per register\n                             (sentence length, commas, casing, openers)\n                                      │\nAI draft ──▶ model rewrite ──▶ rules: the fingerprint, enforced\n             (meaning,         by code (em-dash out, quirks kept)\n              register)               │\n                                      ▼\n                             score: register distance + model-isms\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>And the score. Every output gets a number for how much it statistically resembles my register, plus a count of model-isms found. I'll be honest about where that stands, the model-ism counter works today, the stylometric half is underpowered on short texts and I've marked it low-confidence below 250 words rather than pretend otherwise. The calibration that gives the number meaning is a blind test, the tool shows me snippets, some mine, some machine, and my own failure to tell them apart is the target metric. When I can't beat a coin flip against my own rewrites, the tool works.</p>\n  <p>The first round is in, actually. Twelve snippets, six mine, six the engine's, shuffled, key sealed until I answered. I scored six of twelve. Exactly a coin flip. Three engine texts passed as mine, and stranger, I disowned three things I genuinely wrote, one of them with full confidence. What gave the generated ones away, when anything did, was the topic, not the tone, and topics are outside the tool's job on purpose. Small sample, one register, so I'm not framing this as proof. But as a first measurement it is uncomfortably encouraging.</p>\n  <p>hyphos is <a href=\"https://www.npmjs.com/package/hyphos\" target=\"_blank\" rel=\"noopener noreferrer\">open source</a>, local-first, and your writing never leaves your machine. Whether it convinces you is something you can measure yourself, which is rather the point.</p>\n </body>\n</html>",
+  "aiSummary": "我开发了 hyphos，一个本地 AI 工具，它从过去的邮件中学习我的写作风格，并重写 AI 草稿，使其听起来更像我，重点是通过代码规则来强制执行特定的风格指纹。",
+  "oneSentenceSummary": "我开发了 hyphos，一个本地 AI 工具，它从过去的邮件中学习我的写作风格，并重写 AI 草稿，使其听起来更像我，重点是通过代码规则来强制执行特定的风格指纹。",
+  "summary": "本文详细介绍了 hyphos 的创建，这是一个开源工具，旨在弥合通用 AI 输出与个人写作风格之间的差距。作者解释了数据收集过程，即筛选大量代理转录和电子邮件，以提取仅属于作者自己的话语。该工具的核心在于识别独特的“指纹”（例如句子长度和标点符号习惯），并通过确定性规则来强制执行这些指纹，而不是完全依赖 AI 模型的解读。文章最后通过自我评估测试，表明该工具成功地使 AI 生成的文本在盲比中与作者自己的文本无法区分。",
+  "mainPoints": [
+    {
+      "point": "主要目标是防止已发布的内容出现 AI 生成文本中常见的“机器气味”，例如过度使用破折号或不自然的措辞。",
+      "explanation": "通过将 AI 训练在作者自己的写作精选数据集上，该工具学习了定义作者声音的特定风格怪癖和模式，从而能够将通用 AI 草稿重写为更真实的内容。"
+    },
+    {
+      "point": "该工具采用机器学习和确定性规则执行的混合方法来确保准确性。",
+      "explanation": "虽然 AI 模型处理总体含义和语气，但特定的“指纹”（例如作者写作中不存在破折号）被硬编码到系统中。这确保即使模型漂移，基本的风格标记也保持一致。"
+    },
+    {
+      "point": "该工具的有效性通过一个盲测得到验证，在盲测中，作者无法可靠地区分自己的写作和 AI 的重写输出。",
+      "explanation": "文章报告了在测试中获得了“硬币翻转”的结果（50/50 的准确率），在该测试中，作者试图识别哪些片段是他们写的，哪些是 AI 生成的。这表明该工具成功地掩盖了 AI 的来源，使输出与作者的个人风格无法区分。"
+    }
+  ],
+  "keyQuotes": [
+    "我经常与代理一起写作，我不想让我的已发布文字闻起来像那样。所以我构建了 hyphos，一个小型开源工具，它从我自己的话中学习我实际如何写作，并重写 AI 草稿，使其听起来像我。"
+  ],
+  "tags": [
+    "AI 写作",
+    "个性化",
+    "风格迁移",
+    "开源",
+    "数据筛选"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 766,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787522072000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-24 05:54:32"
+}

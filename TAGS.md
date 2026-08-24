@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-24 06:18:27 | [返回首页](/README.md)
+**更新时间**: 2026-08-24 08:44:26 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15102)
+- [AI & 大模型](#ai-llm) (15119)
 - [软件架构](#architecture) (24)
 - [前端与全栈](#frontend-fullstack) (946)
 - [DevOps](#devops) (718)
 - [产品与商业](#product-business) (47)
-- [其他](#other) (6663)
+- [其他](#other) (6677)
 
 
 ---
@@ -43,7 +43,7 @@
 - [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6) - AI 精选
 - [智能体-AI-时代的科学计算](https://openai.com/index/scientific-computing-agentic-ai) - AI 精选
 
-- [查看全部 15102 篇...](/details/tags/ai-llm.md)
+- [查看全部 15119 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -166,6 +166,7 @@
 
 
 
+- [全球首次！机器人迎战网球运动员，极限救球，摔倒光速弹起](https://www.qbitai.com/2026/08/478093.html) - AI 精选
 - [一晚两场，H3-技术团队和全球开发者聊了什么？](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488992&idx=1&sn=0c19bfd1d07dd387e40dbbba5de06ea3) - AI 精选
 - [Gemini-Robotics-2-为机器人带来全身智能](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) - AI 精选
 - [sqlite-utils-4.0-发布，引入数据库模式迁移功能](https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything) - AI 精选
@@ -185,8 +186,7 @@
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
-- [GLM‑TTS-开源：3-秒复刻，情绪万变](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247492531&idx=1&sn=d807bb822b466fb79384eaa887818293) - AI 精选
 
-- [查看全部 6663 篇...](/details/tags/other.md)
+- [查看全部 6677 篇...](/details/tags/other.md)
 
 
