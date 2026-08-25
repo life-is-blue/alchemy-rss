@@ -1,0 +1,50 @@
+{
+  "id": "RAW_216e7e894b",
+  "title": "BDH-CQ 使用循环潜在推理来降低 ARC-AGI 推理成本",
+  "url": "https://dev.to/aimodels-fyi/bdh-cq-uses-recurrent-latent-reasoning-to-cut-arc-agi-inference-costs-2hk7",
+  "date": "2026-08-25 02:27:25",
+  "author": "aimodels-fyi",
+  "siteName": "DEV Community: machinelearning",
+  "content": null,
+  "aiSummary": "BDH-CQ 在 ARC-AGI-1 基准测试中实现了 29.5% 的 pass@2，每项任务的成本为 0.0007 美元，这是通过利用循环潜在推理实现的，该推理允许模型将演示吸收进其隐藏状态，而无需生成中间推理令牌。",
+  "oneSentenceSummary": "BDH-CQ 在 ARC-AGI-1 基准测试中实现了 29.5% 的 pass@2，每项任务的成本为 0.0007 美元，这是通过利用循环潜在推理实现的，该推理允许模型将演示吸收进其隐藏状态，而无需生成中间推理令牌。",
+  "summary": "该论文介绍了 BDH-CQ，一个通过采用循环潜在推理来打破视觉推理中成本-准确性权衡的模型。该模型不是生成冗长的解释，而是直接从演示示例更新其内部状态，从而实现高效、静默的求解。这种方法在成本效率方面取得了显著改善，一个 150 个参数的变体在计算成本仅为一小部分的情况下，就超过了更大的模型。",
+  "mainPoints": [
+    {
+      "point": "该模型通过消除对冗长推理令牌的需求，来绕过成本-准确性陷阱。它不是解释自己的想法，而是直接从演示数据更新其内部隐藏状态。",
+      "explanation": "通过将隐藏状态视为一个累积来自示例的信息的工作内存，模型可以执行复杂的推理，而无需生成文本的开销。这导致推理成本大大降低，同时保持了竞争性的准确性。"
+    },
+    {
+      "point": "BDH-CQ 展示了强大的泛化能力，特别是在涉及几何变换和对称操作的任务中。",
+      "explanation": "该模型成功地学习了如何扩展模式、复制主题并执行旋转，这表明循环机制有效地捕捉了视觉世界的底层物理规律。然而，它在处理计数和符号操作等更抽象的概念时会遇到困难。"
+    },
+    {
+      "point": "该架构允许对推理力度进行微调，从而在速度和准确性之间进行权衡。",
+      "explanation": "模型对查询输入执行的迭代次数是一个可变参数。虽然增加迭代次数可以提高准确性，但也会增加计算成本。该论文提供了一个清晰的效率曲线图，允许研究人员根据自己的具体约束进行优化。"
+    }
+  ],
+  "keyQuotes": [
+    "该模型将演示静默地吸收进其内部记忆状态，然后通过隐藏层的私有迭代来解决问题，而无需生成任何中间推理令牌。"
+  ],
+  "tags": [
+    "循环神经网络",
+    "视觉推理",
+    "ARC-AGI",
+    "潜在推理",
+    "成本效率"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1790,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787596045000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-25 02:27:25"
+}

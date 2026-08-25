@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-25 06:16:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-25 08:39:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -9,6 +9,14 @@
 ### [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025)
 
 2025-04-01 20:05:02
+
+
+
+### [使用单个-Parquet-文件实现快速下钻仪表盘](https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/)
+
+2026-08-24 16:13:17 | 标签: 数据可视化, Parquet, 范围请求, Web 开发, 分析
+
+> 本文介绍了一种新颖的数据可视化方法，即预先计算好的“数据立方体”（包含多个分组集合的 Parquet 文件）作为基于网页的仪表盘后端。借助 Parquet 格式高效的行分组和元数据，浏览器能够执行快速、精准的范围请求，仅获取每次用户交互所需的数据，从而实现响应迅速且具成本效益的分析解决方案。
 
 
 
@@ -384,7 +392,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -396,7 +404,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -735,6 +743,38 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [你的-alt-文本通过了自动化检查。但这并不意味着它有多好。](https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/)
+
+2026-08-25 04:56:35 | 标签: 可访问性, Web 开发, 自动化测试, 图像分析, GitHub
+
+> 本文讨论了自动化 alt 文本检查器的局限性，这些检查器主要验证属性是否存在，而不是其质量。它介绍了一个新的 GitHub 可访问性扫描器插件，该插件将客观检查（例如，缺失或重复的 alt 文本）与需要模型分析的主观评估区分开来。该插件旨在通过提供结构化反馈和建议来提高 alt 文本质量，同时承认在自动化描述准确性评估方面固有的挑战。
+
+
+
+### [如何在-Django-中构建具备转介意识的拆分支付流程](https://www.freecodecamp.org/news/how-to-build-referral-aware-split-payment-flows-in-django/)
+
+2026-08-25 01:46:43 | 标签: Django, 拆分支付, 转介跟踪, Webhooks, 数据库事务
+
+> 本教程提供了在 Django 中构建拆分支付系统的全面指南，其中支付被分为不同的阶段（存款和余额）。它详细介绍了必要的数据库模型、用于安全终结的业务函数，以及用于确保幂等性和准确转介跟踪的 webhook 处理策略。文章还讨论了常见的陷阱，例如过早发布可交付成果和阶段无关的优惠券应用，并提供了避免这些问题的最佳实践。
+
+
+
+### [如何使用-Hono-和-Zod-构建类型安全的-API](https://www.freecodecamp.org/news/how-to-build-type-safe-apis-with-hono-and-zod/)
+
+2026-08-24 22:03:04 | 标签: TypeScript, API 开发, Hono, Zod, OpenAPI
+
+> 文章解释了如何解决 API 开发中的“漂移问题”，即运行时验证、TypeScript 类型和 OpenAPI 文档经常不一致。它介绍了 Hono 作为高性能 Web 框架，以及 Zod 作为模式验证库，并展示了如何为数据结构定义一个单一的权威来源。指南涵盖了项目设置、API 模式定义、数据库和 HTTP 模式的分离、路由契约的创建、瘦处理程序的编写、错误响应的标准化，以及生成防漂移的文档。它还讨论了这些模式在生产环境中的可扩展性。
+
+
+
+### [WordPress-PHP-Only-Block-Registration](https://css-tricks.com/wordpress-php-block-registration/)
+
+2026-08-24 15:54:06 | 标签: WordPress, PHP, Block Development, WordPress 7.0, Server-Side Rendering
+
+> The article explores WordPress 7.0's new PHP-only block registration feature， which allows developers to register blocks using only PHP through the 'autoRegister' => true flag in the supports array. This eliminates the need to learn React， manage build pipelines， or handle NPM packages. The author d...
 
 
 
@@ -1920,13 +1960,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2076,13 +2116,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3576,13 +3616,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5286,13 +5326,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

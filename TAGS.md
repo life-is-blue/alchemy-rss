@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-25 06:16:46 | [返回首页](/README.md)
+**更新时间**: 2026-08-25 08:39:59 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15119)
+- [AI & 大模型](#ai-llm) (15156)
 - [软件架构](#architecture) (24)
-- [前端与全栈](#frontend-fullstack) (946)
-- [DevOps](#devops) (718)
+- [前端与全栈](#frontend-fullstack) (951)
+- [DevOps](#devops) (722)
 - [产品与商业](#product-business) (47)
-- [其他](#other) (6677)
+- [其他](#other) (6691)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [吴恩达来信：AI-工程技能图谱详解——构建和部署-AI-应用](https://mp.weixin.qq.com/s?__biz=MzIxNzI0ODE4Nw==&mid=2247498786&idx=1&sn=9b051f71952a42e91973e7e1e92a24ec) - AI 精选
 - [V4-Flash-Vision-Exp-上线，开启多模态-API-服务](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26) - AI 精选
 - [GitHub---Chong169/a-constitution-for-one:-个人-AI-代理舰队七个月书面宪法治理，零事故](https://github.com/Chong169/a-constitution-for-one) - AI 精选
 - [设计一种持久化的知识层，拒绝随意猜测](https://towardsdatascience.com/designing-a-persistent-knowledge-layer-that-refuses-to-guess/) - AI 精选
@@ -41,9 +42,8 @@
 - [一镜成片，随心参考｜Seedance-2.5-正式发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae) - AI 精选
 - [Gemini-Robotics-ER-2-发布](https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/) - AI 精选
 - [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6) - AI 精选
-- [智能体-AI-时代的科学计算](https://openai.com/index/scientific-computing-agentic-ai) - AI 精选
 
-- [查看全部 15119 篇...](/details/tags/ai-llm.md)
+- [查看全部 15156 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -81,6 +81,7 @@
 
 
 - [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025) - AI 精选
+- [使用单个-Parquet-文件实现快速下钻仪表盘](https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/) - 编程 精选
 - [宣布-TypeScript-7.0-——-TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) - 编程 精选
 - [从延迟到即时：GitHub-Issues-导航性能现代化改造](https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/) - 编程 精选
 - [DPoP-存储悖论：为什么基于浏览器的持有证明仍然是一个未解决的问题](https://www.infoq.com/articles/dpop-key-storage-unsolved-problem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
@@ -99,9 +100,8 @@
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
-- [手写企业级请求库，支持缓存、重试、并发请求，以及-SSE、进度处理...](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546387&idx=1&sn=d62d15fa65a3132304a9ecd718d726f7) - 编程 精选
 
-- [查看全部 946 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 951 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 718 篇...](/details/tags/devops.md)
+- [查看全部 722 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 
-- [查看全部 6677 篇...](/details/tags/other.md)
+- [查看全部 6691 篇...](/details/tags/other.md)
 
 
