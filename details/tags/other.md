@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-25 08:39:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-25 10:51:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -2737,9 +2737,7 @@
 
 ### [梁文锋的来时路与明日歌：三万字长文，详尽介绍一个更完整、更鲜活的梁文锋](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650887874&idx=1&sn=09ee815c10e23a06623fcc5cb4590fe5)
 
-2026-08-24 18:42:00 | 标签: 人物传记, 科技创业, 量化投资, 人工智能, 教育
-
-> 文章通过丰富的细节和生动的叙述，描绘了梁文锋的成长轨迹。从他在梅菉小学的求学时光，到浙大期间的自由探索和创业尝试，再到创立幻方量化并取得巨大成功，以及最终将公司转型为 AI 研究机构。文章不仅展示了梁文锋的个人成就，还揭示了他背后的家庭支持、学校教育以及行业环境的影响，并探讨了他在 AI 领域未来的展望。
+2026-08-24 18:42:00
 
 
 
@@ -3717,65 +3715,49 @@
 
 ### [配置-Qdrant-的优化器以实现可预测的搜索延迟---Qdrant](https://qdrant.tech/articles/tuning-qdrant-optimizer/)
 
-2026-08-25 18:00:00 | 标签: 向量搜索, Qdrant, 优化器配置, 搜索延迟, 基准测试
-
-> 作者在单节点环境下使用 1.76 M 条 MS MARCO 文本，对 Qdrant 的索引、合并和真空优化器进行系统化基准测试。共评估了十三种配置，覆盖上传、排空（搜索与优化竞争）以及稳态三个阶段。结果显示，持续索引在 11 分钟的恢复后显著降低稳态延迟（中位数 4.3 ms），而实验性的 `prevent_unoptimized` 标志将排空阶段的中位延迟从 780 ms 降至 10.2 ms（提升 76 倍）。段大小、线程序列化以及 `deleted_threshold` 设置均呈现出明确的延迟‑恢复权衡。文章最后给出面向生产部署的实用要点，提醒单节点偏差的注意事项，并提供更深入的文档和源...
+2026-08-25 18:00:00
 
 
 
 ### [RA-Bench-揭示了为什么危机视频深度伪造检测器在生成器和社交媒体之间失效](https://dev.to/aimodels-fyi/ra-bench-reveals-why-crisis-video-deepfake-detectors-fail-across-generators-and-social-media-4hok)
 
-2026-08-25 02:33:44 | 标签: 深度伪造检测, 危机视频分析, RA-Bench, 社交媒体安全, 视频压缩
-
-> 本文介绍了 RA-Bench，这是一个用于评估深度伪造检测器对危机特定视频内容的专用数据集。结果令人担忧：在标准基准测试中通常达到 90-95%准确率的先进检测器，在 RA-Bench 上的表现下降到接近随机水平（约 50%）。这种失败归因于训练数据（通用、高质量的伪造）与现实威胁（由社交媒体压缩退化的高保真危机视频）之间的巨大不匹配。
+2026-08-25 02:33:44
 
 
 
 ### [BDH-CQ-使用循环潜在推理来降低-ARC-AGI-推理成本](https://dev.to/aimodels-fyi/bdh-cq-uses-recurrent-latent-reasoning-to-cut-arc-agi-inference-costs-2hk7)
 
-2026-08-25 02:27:25 | 标签: 循环神经网络, 视觉推理, ARC-AGI, 潜在推理, 成本效率
-
-> 该论文介绍了 BDH-CQ，一个通过采用循环潜在推理来打破视觉推理中成本-准确性权衡的模型。该模型不是生成冗长的解释，而是直接从演示示例更新其内部状态，从而实现高效、静默的求解。这种方法在成本效率方面取得了显著改善，一个 150 个参数的变体在计算成本仅为一小部分的情况下，就超过了更大的模型。
+2026-08-25 02:27:25
 
 
 
 ### [庆祝国家公园-110-周年：地图、搜索和-Gemini-的助力](https://blog.google/products-and-platforms/products/maps/national-parks-week-google-2026/)
 
-2026-08-25 00:53:47 | 标签: 国家公园, 徒步旅行, 户外探险, 旅行规划, 谷歌地图
-
-> 随着美国庆祝国家公园周，谷歌展示了户外活动，尤其是徒步旅行的日益流行，相关搜索量显著增加。文章列出了最热门的国家公园（如落基山国家公园和阿卡迪亚国家公园），并提供了使用谷歌地图、搜索和 Gemini 应用来寻找装备、规划行程和识别途中的兴趣点的建议。
+2026-08-25 00:53:47
 
 
 
 ### [刚刚，清华黄高、北大刘譞哲等入选-2026-科学探索奖](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247557099&idx=1&sn=f47dbd6b00b9431a4c5af6c5f1b8b3a0)
 
-2026-08-25 00:00:00 | 标签: 科学探索奖, 量子计算, 光电子器件, 新材料, 大模型系统
-
-> 2026 年「科学探索奖」获奖名单公布，50 位青年科学家获表彰，覆盖 10 个领域。信息电子领域 5 位获奖者分别为：清华大学黄高（深度学习、多模态、具身智能），北京大学刘譞哲（大模型系统、泛在智能体、云计算），清华大学钱学海（计算机体系结构、软硬件协同、量子计算），哈尔滨工业大学肖淑敏（微纳光学、超构表面），郑州大学杨西贵（金刚石材料、高压物理）。这些研究方向与当前 AI 基础设施、量子计算、光通信和新材料发展密切相关。
+2026-08-25 00:00:00
 
 
 
 ### [通用-AI-发布-GEN-1.5：一种能够从单个-3–12-秒-演示中学习新任务的机器人基础模型](https://www.marktechpost.com/2026/08/24/generalist-ai-releases-gen-1-5-a-robot-foundation-model-that-learns-new-tasks-from-one-3-12-second-demo/)
 
-2026-08-24 22:17:03 | 标签: 机器人学习, 基础模型, 一次学习, 操作, 迁移学习
-
-> GEN-1.5 是由通用 AI 开发的大型多模态模型，能够解释视频、传感器和语言输入以控制机器人动作。该模型的突出特性是能够通过单次演示（一次学习）学习并执行新的物理任务，在 10 项 多样任务中实现 59% 的平均成功率。该能力源自大规模预训练，未采用特定的架构修改或元学习循环。虽然模型在迁移学习和组合泛化方面展现出潜力，但目前仅以研究形式发布，尚未公开或商业化。
+2026-08-24 22:17:03
 
 
 
 ### [Google-研究推出-ME-POIs：一个基于移动信息的框架，将“地点如何被使用”添加到文本型-POI-嵌入中](https://www.marktechpost.com/2026/08/24/google-research-introduces-me-pois-a-mobility-informed-framework-that-adds-how-a-place-is-used-to-text-based-poi-embeddings/)
 
-2026-08-24 21:57:01 | 标签: ME-POIs, 基于移动信息的嵌入, 兴趣点 (POI), 对比学习, 地图丰富化
-
-> ME-POIs 框架解决了文本嵌入的一个局限性：它们可以描述一个地点是什么，但不能描述它是如何被使用的。通过将单个访问编码为上下文向量，并与每个 POI 的一个可学习原型对齐，ME-POIs 捕捉到了一个地点的集体行为。这种方法在地图丰富化任务中显著提高了性能，F1 分数在访问意图方面提高了 81.9%，MAE 在繁忙程度方面降低了 24.7%。
+2026-08-24 21:57:01
 
 
 
 ### [Kernel-Design-AgentKDA-的-B200-GPU-Kernel-编程准则-Skill](https://mp.weixin.qq.com/s?__biz=MzA4MjY4NTk0NQ==&mid=2247532180&idx=1&sn=139f981090296dd0183d46afd5462a00)
 
-2026-08-24 21:19:00 | 标签: GPU 编程, CUDA, Tensor Core, TMEM, 性能优化
-
-> 本文围绕 NVIDIA Blackwell B200（Compute Capability 10.0）展开，首先列出该架构的关键参数，包括 SM 数量、Tensor Memory、L2 容量、HBM 带宽等。随后详细阐述了 5 代 Tensor Core 与 tcgen05 指令的编程模型、TMEM 的特性与使用注意、CTA pair 双 SM 协作、低精度数据类型（FP4/FP6/FP8）及其吞吐对比、硬件解压引擎、Thread Block Cluster 与 DSMEM 等新特性。文章进一步提供了针对 GEMM、LLM 推理等场景的实践建议，并给出与 NCU 指标对应的性能准则清单，帮助开...
+2026-08-24 21:19:00
 
 
 
@@ -15775,41 +15757,31 @@
 
 ### [移动后台执行：iOS-后台模式、-Android-WorkManager-与-Dart-中的后台服务](https://www.freecodecamp.org/news/mobile-background-execution-ios-background-modes-android-workmanager-and-background-services-in-dart/)
 
-2026-08-25 01:45:03 | 标签: 移动开发, 后台执行, iOS, Android, Flutter
-
-> 本文探讨了移动开发中后台执行的复杂性，突出 iOS 与 Android 各自的实现方式。它解释了 Flutter 如何与这些平台交互，强调使用独立的后台 isolate。指南覆盖了 iOS 的 BGTaskScheduler 与 Android 的 WorkManager 等具体 API，提供了配置和使用的洞见。最后给出决策框架，帮助开发者为其应用选择合适的后台执行策略。
+2026-08-25 01:45:03
 
 
 
 ### [薄荷（Mentha-x-piperita-L.）油对前期和-1-期高血压患者心血管代谢结果的影响：安慰剂随机对照试验](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0344538)
 
-2026-08-24 22:44:55 | 标签: 高血压, 薄荷油, 营养保健品, 随机对照试验, 心血管代谢健康
-
-> 该研究招募了 40 名前期或 1 期高血压成人，随机分配他们每日两次服用 100 µL 薄荷油或薄荷味安慰剂，持续 20 天。主要结局是收缩压（SBP）从基线至第 20 天的变化。意向治疗线性回归显示，与安慰剂相比，薄荷组的 SBP 显著降低（调整后平均差 = ‑8.48 mmHg，95 % CI ‑14.24 至 ‑2.73，效应量 d = ‑0.94），而舒张压、心率、人体测量学指标、血液学指标、心理健康和睡眠指标未出现明显差异。依从性高（93.3 %），不良事件极少。作者得出结论，薄荷油可能是一种低成本、耐受性好的辅助措施，可帮助该人群降低血压。
+2026-08-24 22:44:55
 
 
 
 ### [如何使用-OpenTelemetry-Collector-将-Prometheus-直方图转换为-OTLP](https://www.freecodecamp.org/news/how-to-convert-prometheus-histogramsotlp-with-the-opentelemetry-collector/)
 
-2026-08-24 21:39:20 | 标签: OpenTelemetry, Prometheus, OTLP, Metrics, Observability
-
-> 文章解释了如何弥合使用 Prometheus 进行仪器化的应用程序与使用 OTLP 的现代观测平台之间的差距。它涵盖了设置 Prometheus 接收器来抓取指标、将原始直方图数据转换为标准化格式，以及配置 OTLP 导出器将指标发送到后端。提供了一个带有支付交易演示的实用示例，以说明设置和数据流。
+2026-08-24 21:39:20
 
 
 
 ### [GOSIM-Shenzhen-2026-「开源模型与基础设施」分论坛首批议题揭晓!](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247834630&idx=2&sn=c6f5a1259f4511467de3426183d20980)
 
-2026-08-24 15:39:00 | 标签: 开源模型, 基础设施, 训练优化, 安全审计, 实践工作坊
-
-> 本分论坛将以历届 GOSIM 最完整的规格登场：完整两日议程，每天安排 7 场深度演讲，共计 14 场。两日内容从模型能力出发，逐步延伸至训练、推理、部署和持续进化，构成从算法创新到规模化落地的完整技术闭环。而本届分论坛的真正独特之处，在于它不止于演讲------更带来一整套可参与、可动手、可带走的开放模型实践：技术圆桌、实践工作坊 Open Model Full-Stack Lab，以及 Open Model Buildathon。
+2026-08-24 15:39:00
 
 
 
 ### [JDK-27-和-JDK-28：我们目前了解的情况](https://www.infoq.com/news/2026/08/java-27-so-far/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-24 10:30:00 | 标签: Java, JDK 27, JDK 28, Project Amber, Project Loom
-
-> 本文全面概述了即将发布的 JDK 27 和 JDK 28。对于 JDK 27，详细介绍了 9 项最终功能，包括懒加载常量、结构化并发和紧凑对象头，并说明了 Amber、Loom 和 Panama 项目的进展。对于 JDK 28，列出了 6 个已锁定的 JEP，例如弃用 macOS/x64 端口和引入值对象，并推测了可能从草案 JEP 中添加的功能。
+2026-08-24 10:30:00
 
 
 
@@ -40173,11 +40145,11 @@
 
 
 
-### [Boris-Cherny：Claude-Code-之后，写代码正在变成“管理-Agent”](https://baoyu.io/blog/anthropics-boris-cherny-why-coding-is-solved-and-what-comes-next)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-05T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Boris Cherny 认为，Claude Code 正在把编程从亲手写代码变成调度 Agent 和重塑组织流程。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 

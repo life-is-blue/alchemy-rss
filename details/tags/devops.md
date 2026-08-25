@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-25 08:39:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-25 10:51:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -326,9 +326,7 @@
 
 ### [你的可执行文件是一个-SQLite-数据库](https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/)
 
-2026-08-24 19:38:15 | 标签: SQLite, 可执行文件, ELF, Linux, 二进制格式
-
-> 本文描述了一种将 SQLite 数据库文件重新用作可执行二进制文件的技术。通过将应用程序 ID 设置为 'SELF' 并将 ELF 组件组织到特定的数据库表中，该文件可以使用自定义解释器执行。这种方法提供了一种紧凑且高效的方式来分发可执行代码及其配置数据。
+2026-08-24 19:38:15
 
 
 
@@ -604,25 +602,19 @@
 
 ### [The-Cloudflare-Blog-–-Brought-to-you-by-EmDash](https://blog.cloudflare.com/cloudflare-blog-uses-emdash/)
 
-2026-08-25 03:00:46 | 标签: Cloudflare Workers, Developer Platform, Developers, EmDash, Performance
-
-> The article announces Cloudflare's adoption of EmDash， a high-performance， quantum-resistant encryption library developed by NVIDIA. EmDash is now used in Cloudflare's key exchange protocols and is available for developers via the Cloudflare Workers platform. This integration represents a significan...
+2026-08-25 03:00:46
 
 
 
 ### [合理规划平台工程：构建组织真正需要的平台](https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-24 19:00:00 | 标签: 平台工程, DevOps, GitOps, 自助服务, 云计算
-
-> 文章讲述了荷兰电商公司 Wehkamp 构建内部开发者平台（IDP）的历程。它突出了最初的重复工作和运营负担问题，过渡到使用 GitOps 和自助式配置的更结构化平台，以及基于用户反馈和组织需求变化不断优化平台的持续过程。关键结论是，一个成功的平台应该专注于解决具体的组织问题，而不是提供一刀切的解决方案。
+2026-08-24 19:00:00
 
 
 
 ### [MinIO-生命周期结束：如何使用-Docker-ELS-保持补丁更新和审计合规](https://www.docker.com/blog/minio-end-of-life-how-to-stay-patched-and-audit-ready-with-docker-els/)
 
-2026-08-24 14:00:10 | 标签: Docker, MinIO, 扩展生命周期支持, 软件安全, 合规
-
-> 随着 MinIO 开源项目于 2026 年 2 月归档，运行该软件的生产环境将立即面临未打补丁漏洞的风险。Docker ELS 提供了一个关键解决方案，为遗留组件提供持续的安全更新和合规文档，使组织在规划最终迁移的同时能够保持稳定性。
+2026-08-24 14:00:10
 
 
 
