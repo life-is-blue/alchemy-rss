@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-26 08:41:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-26 10:57:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -326,9 +326,7 @@
 
 ### [我把数据管道部署到-AWS-后，所有「本地」的东西都坏了。](https://towardsdatascience.com/i-deployed-my-data-pipeline-to-aws-then-everything-that-was-local-broke/)
 
-2026-08-25 18:30:00 | 标签: 数据工程, Docker, AWS, DevOps, 数据管道
-
-> 作者详细描述了将个人数据管道（使用 Kestra 进行 RSS 摄取、Postgres 和 dbt）从本地 Windows 机器迁移到 AWS EC2 实例的过程。文章的重点不在于 AWS 设置本身，而在于从单机环境转移到分布式容器环境所引发的一系列意外故障。主要挑战包括：Kestra 容器内缺少系统包、挂载 Docker 套接字的安全隐患、需要 Kestra 企业版才能使用的主机文件夹挂载功能的静默失败，以及经典的「localhost」问题——工作容器无法访问数据库。文章最后提出了关于重新验证假设和调试静默失败的实际建议，并反思了这个项目的学习价值。
+2026-08-25 18:30:00
 
 
 
@@ -610,17 +608,13 @@
 
 ### [GitHub---leodeim/vpsmon：轻量级-Linux-VPS-系统监控工具](https://github.com/leodeim/vpsmon)
 
-2026-08-26 01:13:59 | 标签: Go, Linux, 监控, DevOps, VPS
-
-> 该 GitHub 仓库展示了 vpsmon，一款专为 Linux VPS 环境设计的轻量级系统监控工具。该工具以单个 Go 二进制文件分发，强调极低的资源占用，内存约 5MB。它监控 CPU、内存、交换分区、磁盘、网络、运行时间和进程数，并提供带登录功能的 Web 界面，每 5 秒自动刷新。README 中包含了简单的安装和卸载脚本，并记录了用于配置监听地址、用户名和密码哈希的环境变量。该项目相对较新，拥有 26 个星标和 8 次提交。
+2026-08-26 01:13:59
 
 
 
 ### [基础平台的持续交付](https://www.infoq.com/presentations/cd-reliability-innovation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-25 21:34:00 | 标签: 持续交付, 平台工程, 云原生 / DevOps, 可靠性, 系统设计
-
-> Junction Labs 联合创始人、前 AWS EC2 和 Datadog 工程师 Ian Nowland 认为，由《加速》和 DORA 指标等著作推广的典型持续交付模型，是为 80% 的应用团队设计的，对于基础平台来说往往适得其反。他将基础平台定义为一旦故障就会直接导致业务停摆的系统，由于其有状态性、与基础设施的直接交互以及任何宕机带来的巨大爆炸半径，这些平台从根本上就与众不同。演讲批评了功能开关、预发布环境以及对部署频率的盲目关注等常见建议，并解释了它们为何在此情境下会失效。他结合在 EC2 的经验，详细阐述了安全、渐进式部署如何与严格的部署规划和审查相结合，作为一种生存策略，在为一个...
+2026-08-25 21:34:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-26 08:41:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-26 10:57:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3715,33 +3715,25 @@
 
 ### [OpenWorker-新版发布，内置网络安全智能体-·-AIHOT](https://aihot.virxact.com/items/cmt90wf1p06j9roly5e34fmu3)
 
-2026-08-26 02:16:02 | 标签: 智能体, GitHub, 产品更新, 开源生态
-
-> OpenWorker，一个由 Andrew Ng 开发的开源智能体，发布了新版本，重点提升了网络安全能力。该版本内置了三类安全智能体：用于扫描代码漏洞、检测依赖供应链注入，以及检查云安全配置。这些功能支持本地运行，允许安全团队在不泄露数据的情况下进行审计，并提供了多种模型选择，包括本地开源模型和云端 API 服务。
+2026-08-26 02:16:02
 
 
 
 ### [全新的-Towards-Data-Science：更快的网站和全新的贡献者门户](https://towardsdatascience.com/a-new-towards-data-science-a-faster-site-and-a-brand-new-contributor-portal/)
 
-2026-08-26 01:25:23 | 标签: 数据科学, 平台更新, 贡献者门户, 用户体验, 技术社区
-
-> 本文详细介绍了 Towards Data Science（TDS）的全面重塑：完全重建的网站专注于更快的性能和对平台细节的完全控制。对于读者而言，变化主要提升了网站速度，同时保留了现有账户功能。作者将通过重设计的贡献者门户（write.insightmediagroup.io）获得更流畅的发布体验，包括直接文章提交和审查跟踪。平台强调基于用户反馈持续改进，坚持以实践者驱动的数据科学、机器学习和 AI 内容中心为使命。此次更新摆脱了 WordPress 的限制，实现了更快的功能部署和响应式迭代。
+2026-08-26 01:25:23
 
 
 
 ### [🤔-如何决定首先尝试哪个机器学习模型？](https://dev.to/kaustubh_verma_994/how-do-you-decide-which-ml-model-to-try-first-4onn)
 
-2026-08-26 00:28:41 | 标签: 机器学习, 监督学习, 分类, 回归, 模型选择
-
-> 本文是一篇关于如何决定首先尝试哪个机器学习模型的简短入门指南。它围绕核心问题“问题是分类还是回归”展开决策过程。内容以实用指南形式呈现，包含链接指向外部博客文章以获取更详细的信息。
+2026-08-26 00:28:41
 
 
 
 ### [使用-Granite-Speech-5.0-Turbo-CTC-实现极速且精准的转录](https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc)
 
-2026-08-25 23:01:00 | 标签: 语音识别, CTC, Conformer, Granite Speech, Hugging Face
-
-> 本文介绍了 IBM 的 Granite Speech 5.0 TurboCTC 模型——两个 470M 参数的英文语音转文本检查点（Apache 2.0 和 CC-BY-NC-SA），在 H200 GPU 上实现了超过 12，600 RTFx 的速度（每秒可处理约 3.5 小时音频），并在公开的 OpenASR 测试集上达到约 5% 的 WER。文章详细介绍了仅编码器的 Conformer 架构、训练数据组合（自然数据与合成数据），并提供了最小化的 Hugging Face Transformers 使用代码片段。
+2026-08-25 23:01:00
 
 
 
@@ -15789,113 +15781,85 @@
 
 ### [FDA-批准首个同时连续监测酮体水平和血糖的可穿戴设备](https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar)
 
-2026-08-26 03:07:01 | 标签: 医疗器械, 糖尿病管理, 可穿戴技术, FDA批准, 健康监测
-
-> FDA 宣布对 Libre Duo 10 日连续双参数监测系统授予紧急使用授权，该系统适用于 2 岁及以上糖尿病患者，可同时连续监测血液中酮体和葡萄糖水平。该设备通过智能手机实时传输数据，并提供酮体升高预警，解决了糖尿病管理中的关键短板。涉及 600 余名参与者的临床研究证实，该系统能够在糖尿病酮症酸中毒（DKA）发作前准确检测到升高的酮体水平。该授权符合 FDA 推动以患者为中心的家庭健康技术发展的战略方向。设备通过皮下体液监测实现数据采集，配备智能手机连接功能，并内置自动阈值警报等安全特性。监管审批路径包括突破性设备认定和 De Novo 市场准入审查，并针对标签说明和性能标准制定了特殊控...
+2026-08-26 03:07:01
 
 
 
 ### [如何修复泄露的-API-密钥：开发者-Git-安全指南](https://www.freecodecamp.org/news/how-to-fix-a-leaked-api-key/)
 
-2026-08-26 02:22:13 | 标签: API 安全, Git, 密钥管理, 开发者最佳实践, 安全事件响应
-
-> 本文概述了处理 API 密钥泄露的详细流程，首先立即撤销已泄露的密钥。内容涵盖调查可疑活动、从代码和 Git 历史中移除机密信息、实施环境变量（.env 文件），以及采用秘密扫描和 Git 钩子等预防措施。指南强调了最小权限原则、环境专属密钥和定期审计等安全最佳实践。文中提供了 Git 操作、密钥替换和仓库清理的技术命令，并解释了在公共和私有仓库中面临的风险。
+2026-08-26 02:22:13
 
 
 
 ### [计划启用-JPEG-XL-解码](https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1)
 
-2026-08-26 01:55:23 | 标签: JPEG XL, 图像格式, 浏览器开发, Rust, 性能优化
-
-> 本文详细描述了 Mozilla 在 Firefox 57 全平台中默认启用 JPEG XL 解码的计划。主要内容包括：使用 jxl-rs Rust 库实现、符合 ISO/IEC 18181 标准、多线程解码性能优化、与其他格式（含动画支持）功能一致性，以及通过 Web 平台测试和 Gecko 专有测试的全面验证。社区成员 Sergey Davidoff 提出关于无损 JPEG XL 相比 WebP 解码速度慢 30 倍的担忧，引发关于电池消耗和用户体验影响的讨论。回应中确认了动画支持，并提供了与 Safari 实现相比具有竞争力的性能基准数据。
+2026-08-26 01:55:23
 
 
 
 ### [在-DigitalOcean-上运行-OpenBSD，仅需每月-4-美元](https://nil.wallyjones.com/run-openbsd-on-digitalocean-for-4month/)
 
-2026-08-26 01:23:07 | 标签: OpenBSD, DigitalOcean, 云部署, 系统安装, 服务器配置
-
-> 本文详细介绍了在 DigitalOcean 上设置 OpenBSD 服务器的实用工作流程。流程从下载并验证 OpenBSD 7.9 miniroot 镜像的校验和开始，接着将该镜像作为自定义镜像上传至 DigitalOcean 存储。然后使用此自定义镜像创建一台基础配置的 Droplet（512MB RAM、1 CPU、10GB 磁盘）。通过 Web 控制台执行安装过程，用户可配置网络接口、创建非 root 用户，并可选启用全盘加密。指南最后提供了 SSH 访问说明及安全建议，强调了该方案的成本效益与动手实践价值。
+2026-08-26 01:23:07
 
 
 
 ### [黑洞奇点是表面而非点](https://arxiv.org/abs/2608.21590)
 
-2026-08-26 01:02:49 | 标签: 物理学, 黑洞, 广义相对论, 量子引力学, 宇宙学
-
-> 本文挑战了黑洞中心奇点是点的普遍信念。作者认为在广义相对论中，两个自由落体观测者沿不同角度轨迹进入球形黑洞时，会在到达中心前失去因果联系，表明奇点是表面。对于旋转黑洞，作者主张奇异表面位于内视界，其中扰动触发指数级质量膨胀不稳定性。文章最后讨论了对量子引力学的影响，提出黑洞的量子态很可能位于其二维奇异表面，与被困的霍金辐射协同演化。
+2026-08-26 01:02:49
 
 
 
 ### [Λ-≤-0.1787854-—-de-Bruijn–Newman-常数的新上界](https://www.judegomila.com/posts/riemann-lambda-0.1787854)
 
-2026-08-26 00:59:31 | 标签: 黎曼假设, de Bruijn–Newman 常数, 数论, 数学分析, 热流方法
-
-> 本文深入探讨了与质数分布及黎曼ζ函数零点相关的黎曼假设（RH）。它引入了 de Bruijn–Newman 常数 Λ，其中 RH 的等价表述为 Λ ≤ 0。研究采用热流方法扭曲ζ函数以研究零点动态，Λ 代表所有零点变为实数的临界温度阈值。新上界 Λ ≤ 0.1787854 通过三个有限验证检查确立：（1）机器验证的 RH 下方障碍线、（2）高限度内零点无窗口的认证、（3）确保临界高度上方无零点的障碍构造。该方法利用了先前成果，包括 Rodgers-Tao 2018 年证明的 Λ ≥ 0 和 Polymath 15 对有效上界的框架，以及 Platt-Trudgian 验证高度的计算改进。本文强...
+2026-08-26 00:59:31
 
 
 
 ### [对-Gleam-编译器进行模糊测试-|-kurz.net](https://www.kurz.net/posts/fuzzing-gleam-compiler)
 
-2026-08-26 00:30:55 | 标签: 模糊测试, 编译器测试, Gleam 语言, Rust 模糊测试, 类型安全程序
-
-> 文章描述了针对 Gleam 编译器的两阶段模糊测试方法。阶段 1 使用 Rust 的 libFuzzer 进行结构感知模糊测试以测试解析器，在夜间构建中发现了回归式缺陷。阶段 2 实现了 'smith' 生成类型安全程序，通过比较 Erlang 与 JavaScript 的输出检测不一致性。作者讨论了跨目标输出比较差异、处理重复发现以及实现自定义输出解析等挑战。技术细节包括 AST 生成、语料库管理及与用 Rust 编写的 Gleam 编译器管道的集成。
+2026-08-26 00:30:55
 
 
 
 ### [所有公共-Nitter-实例都无法使用-·-问题-#1442-·-zedeus/nitter](https://github.com/zedeus/nitter/issues/1442)
 
-2026-08-26 00:12:48 | 标签: 开源软件, Nitter, 推特, 自建部署, 限速限制
-
-> 由用户 AlexandrPutenikhin 提出的该 GitHub 问题报告称，目前所有公共 Nitter 实例均不可用，均显示相同的“Instance has been rate limited”错误。该问题包含截图及存档版 Nitter 实例（twiiit.com）的链接以演示问题。该仓库于 2026 年 8 月 25 日被所有者存档，表明该项目已停止维护。该问题未分配任何处理者、标签或项目板，也未创建任何分支或拉取请求来解决此问题。
+2026-08-26 00:12:48
 
 
 
 ### [从数据到价值：通过真实用例理解数据管理-全书](https://www.freecodecamp.org/news/understanding-data-management-with-a-real-world-use-case-book/)
 
-2026-08-25 23:50:26 | 标签: 数据管理, 数据治理, 数据架构, 数据质量, 数据安全
-
-> 本书对数据管理进行了结构化探讨，区分了它与人工智能的关系，并涵盖了从数据采集到删除的全部范围。书中介绍了一个真实的用例，即一所提供人工智能和数据管理硕士学位的虚构大学，通过这种场景来阐释整个数据生命周期。内容涵盖了基本概念，如数据作为资产、数据生命周期和数据管理原则，然后深入到专业领域，包括数据治理、伦理、安全、架构、建模、存储、集成、质量、工程、仓库、商业智能、大数据、分析、数据科学和数据产品。每个部分都包含与大学案例研究相关的实践示例，如使用出租车行程数据来规划交通服务。本书强调将数据视为组织资产的重要性，确保其质量、安全性和伦理使用，并展示了如何构建数据管道和分析产品。附带实践的 Jup...
+2026-08-25 23:50:26
 
 
 
 ### [Java-新闻综述：JDK-27-RC1、OpenJDK-JEP、Jakarta-EE、BellSoft、Helidon、Micrometer、Tika-4.0](https://www.infoq.com/news/2026/08/java-news-roundup-aug17-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-25 23:20:00 | 标签: Java, JDK, OpenJDK, JEP, Jakarta EE
-
-> 本周的 Java 新闻综述涵盖了 Java 生态系统的最新发展。重点内容包括 JDK 27 进入首个候选发布阶段，正式版（GA）定于 2026 年 9 月 15 日发布，并包含最终确定的九项功能。文章还详细介绍了针对 JDK 28 的 JEP 541（弃用 macOS/x64 移植版）和 JEP 540（简易 JSON API），以及 JEP 542（加密对象的 PEM 编码）的更新。其他新闻包括 Apache Tika 4.0 正式版发布，新增 MarkdownParser 和 OCR 模块；Helidon 4.5.3 维护版发布；Micrometer Metrics 1.18 和 Trac...
+2026-08-25 23:20:00
 
 
 
 ### [调试-ubiquiti-的-5G-备用设备在-AT&amp;T](https://www.jeffgeerling.com/blog/2026/unifi-u5g-backup-debugging/)
 
-2026-08-25 22:18:00 | 标签: 网络, 5G, 硬件, 调试, 家庭实验室
-
-> Jeff Geerling 详细描述了他为移动家庭实验室项目对 UniFi 5G Backup (U5G) 进行的实际测试。他假设 AT&T 商业套餐会支持该设备，因为其规格列表包含 AT&T 认证，且 AT&T 支持 5G RedCap。然而，他遇到了多个问题：固件更新循环需要 TFTP 恢复，SIM 仅通过 4G LTE 连接，以及 AT&T 系统拒绝该设备的 IMEI，因其不符合 AT&T 的 Internet Air for Business 计划。他使用设备的调试控制台和 `mca-dump` 命令记录了调试过程，显示无线电卡在 LTE 模式下卡住。文章结论是，U5G 备用设备目前仅...
+2026-08-25 22:18:00
 
 
 
 ### [BMC-漏洞使数千台服务器面临硬件级别被入侵的风险](https://www.infoq.com/news/2026/08/bmc-vulnerabilities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-25 20:00:00 | 标签: BMC, 硬件安全, IPMI, 固件漏洞, 数据中心安全
-
-> 本文讨论了基础管理控制器（BMC）中的漏洞——提供带外服务器管理的固件——可能允许攻击者获得可跳过操作系统重新安装并规避传统端点防护的硬件级控制。文章指出自 2013 年就存在的 IPMI 认证弱点，强调大规模 AI 和 GPU 集群的风险，并建议将 BMC 视为特权基础设施：将其隔离在专用网络中，移除默认凭证，实施强认证，监控流量，并保持固件更新。
+2026-08-25 20:00:00
 
 
 
 ### [GitHub---PlummersSoftwareLLC/HelloAssembly：最小的完整-Windows-应用程序](https://github.com/PlummersSoftwareLLC/HelloAssembly)
 
-2026-08-25 19:40:00 | 标签: 汇编, Windows 开发, 代码高尔夫, 底层编程, 优化
-
-> 这个仓库源自 Hacker News 上的一个帖子，旨在创建不使用压缩的最小完整 Windows 应用程序。它包含多个版本：一个优化过的原始版本、一个应用了 shellcode 技巧的版本，以及一个手动编写 PE 头的版本。文章提供了使用 MASM32、Crinkler 和 Yasm 的详细构建说明，并列出了当前可执行文件的大小，其中最小的是 383 字节。文章还提到，由于采用了激进的优化策略，病毒扫描程序可能会将这些可执行文件标记为可疑。
+2026-08-25 19:40:00
 
 
 
 ### ['这非常反直觉'：颠覆充电规则的量子电池](https://www.bbc.com/future/article/20260824-this-quantum-battery-charges-faster-the-larger-it-gets)
 
-2026-08-25 18:28:35 | 标签: 量子计算, 物理, 科学, 电池技术, 新兴科技
-
-> 本文探讨了量子电池这一新兴领域，重点介绍了澳大利亚国家科学机构 CSIRO 的 James Quach 团队开发的原型。与传统电池不同，这种量子电池的体积越大，充电速度越快，这一现象由超吸收等量子效应实现。文章解释了其背后的物理学原理，详述了利用光学微腔和有机染料分子设计的原型，并讨论了其当前局限性，例如仅能存储极少量能量且持续时间仅为纳秒级。文章还呈现了专家们对该技术未来的不同看法：一些人认为它有望为量子计算机甚至电动汽车供电，而另一些人则对其在量子尺度之外的实际可行性持怀疑态度。文章强调了以可控、可用的形式提取能量这一关键挑战。
+2026-08-25 18:28:35
 
 
 
@@ -40289,11 +40253,11 @@
 
 
 
-### [使用-Claude-Code：HTML-难以置信的奇效](https://baoyu.io/translations/2026-05-08/trq212-status-2052809885763747935)
+### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
 
-2026-05-08T00:00:00.000Z
+2026-05-06T00:00:00.000Z
 
-> Markdown 已经成为 AI 智能体与我们交流的主要文件格式。它简单、轻量，具备一定的富文本能力且易于人工编辑。Claude 甚至已经极其擅长在 Markdown 文件里使用 ASCII 字符绘制图表。然而，随着 AI 越来越强大，HTML 开始展现出惊人的效果。
+> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
 
 
 

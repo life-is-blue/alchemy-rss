@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-26 08:41:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-26 10:57:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -746,17 +746,13 @@
 
 ### [工具提示需要延迟，然后需要跳过它](https://blog.master.dev/tooltips-need-a-delay-and-then-they-need-to-skip-it/)
 
-2026-08-26 00:35:36 | 标签: React, 用户体验设计, 工具提示交互, 前端开发, 用户体验
-
-> 文章讨论了工具提示在光标移动时过快出现导致意外触发的常见 UX 问题。作者提出使用 200ms 延迟作为初始工具提示激活时间，并在关闭后设置 300ms'暖窗口期'，在此期间后续工具提示可立即打开。该方案在故意交互与多元素平滑过渡间取得平衡。实现细节包括使用 React 的 useContext 和 useRef 进行状态管理、CSS 动画控制及时间规划。通过代码示例和无 JavaScript 的 HTML/CSS 实现进行演示。作者强调人工判断在优化 AI 生成方案中的重要性，并分享了用于审计工具提示实现的 Claude 技能。
+2026-08-26 00:35:36
 
 
 
 ### [Nuxt-4.5：实验性-SSR-流式渲染、Vite-8-与基于-Rsbuild-的-Rspack-构建器](https://www.infoq.com/news/2026/08/nuxt-4-5-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-25 19:36:00 | 标签: Vue.js, SSR, Vite, Rspack, Web 性能
-
-> Nuxt 4.5 是这个基于 Vue 的全栈 Web 框架的最新版本，被称为一段时间以来最大的一次发布。主打功能是实验性 SSR 流式渲染，它通过立即发送 HTML 外壳，并在 Vue 渲染时流式传输正文，从而改善首字节时间。该功能可通过一个配置开关启用，并会自动为爬虫和抓取工具禁用；使用了 redirect、cache、isr 或 swr 规则的路由会回退到缓冲渲染器。此次发布还包含基于 nostics 构建的稳定错误代码系统，警告带有可检索的代码（如 NUXT_E1001），并附带解释和修复方法。新的 useLayout 组合式函数返回已解析布局的只读 computed ref，具名视图允...
+2026-08-25 19:36:00
 
 
 
