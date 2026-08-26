@@ -1,0 +1,60 @@
+{
+  "id": "RAW_2b679e6bcf",
+  "title": "FP8 是否让模型变差？针对量化服务的逐提示回归检查",
+  "url": "https://dev.to/conatusai/did-fp8-make-the-model-dumber-a-per-prompt-regression-check-for-quantized-serving-595f",
+  "date": "2026-08-26 02:12:24",
+  "author": "Jahn",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>FP8 gave us a clean 1.5x on Qwen3-8B serving throughput on an RTX PRO 6000 Blackwell (1,725 to 2,597 tok/s at concurrency 32, vLLM). The uncomfortable question is always the same: did the model get dumber. This post is the exact check we ran before recommending the switch, with numbers, so you can run the same one.</p>\n  <h2><a name=\"why-run-an-eval-suite-is-usually-the-wrong-first-answer\" href=\"#why-run-an-eval-suite-is-usually-the-wrong-first-answer\"> </a> Why \"run an eval suite\" is usually the wrong first answer</h2>\n  <p>Standard benchmarks (MMLU and friends) are noisy instruments for quantization deltas at 8B scale. Score movement inside the error bars tells you nothing about whether YOUR prompts changed behavior. What you actually want to know is narrower: on the workload you serve, does the FP8 checkpoint produce materially different outputs than BF16, and are any of the differences wrong.</p>\n  <p>That is answerable directly, cheaply, and per prompt.</p>\n  <h2><a name=\"the-method\" href=\"#the-method\"> </a> The method</h2>\n  <p>Both configurations run the same fixed workload: 20 prompts covering reasoning, code, summarization, translation, extraction, classification, math, and instruction following. Greedy decoding, temperature 0, 256-token cap, streamed. Greedy matters: it removes sampling noise, so any output difference is attributable to the numerics.</p>\n  <p>Then a three-stage comparison:</p>\n  <ol>\n   <li><strong>Byte equality.</strong> <code>outputs_bf16[i] == outputs_fp8[i]</code>. Anything identical is settled.</li>\n   <li><strong>Similarity triage.</strong> For non-identical pairs, <code>difflib.SequenceMatcher.ratio()</code> sorts near-identical wording drift from real divergence.</li>\n   <li><strong>Side-by-side review under a written rubric.</strong> Every non-identical pair gets read. The rubric asks one question: is there a factual or numerical claim that one precision gets right and the other gets wrong. Wording changes, reordering, and equally-defensible readings are recorded but not counted as regressions.</li>\n  </ol>\n  <p>The core loop is small:\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight python\"><code><span class=\"kn\">import</span> <span class=\"n\">difflib</span><span class=\"p\">,</span> <span class=\"n\">json</span>\n\n<span class=\"n\">bf16</span> <span class=\"o\">=</span> <span class=\"n\">json</span><span class=\"p\">.</span><span class=\"nf\">load</span><span class=\"p\">(</span><span class=\"nf\">open</span><span class=\"p\">(</span><span class=\"sh\">\"</span><span class=\"s\">vllm_bf16_conc1.texts.json</span><span class=\"sh\">\"</span><span class=\"p\">))</span>\n<span class=\"n\">fp8</span>  <span class=\"o\">=</span> <span class=\"n\">json</span><span class=\"p\">.</span><span class=\"nf\">load</span><span class=\"p\">(</span><span class=\"nf\">open</span><span class=\"p\">(</span><span class=\"sh\">\"</span><span class=\"s\">vllm_fp8_conc1.texts.json</span><span class=\"sh\">\"</span><span class=\"p\">))</span>\n\n<span class=\"k\">for</span> <span class=\"n\">i</span><span class=\"p\">,</span> <span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">,</span> <span class=\"n\">b</span><span class=\"p\">)</span> <span class=\"ow\">in</span> <span class=\"nf\">enumerate</span><span class=\"p\">(</span><span class=\"nf\">zip</span><span class=\"p\">(</span><span class=\"n\">bf16</span><span class=\"p\">,</span> <span class=\"n\">fp8</span><span class=\"p\">)):</span>\n    <span class=\"k\">if</span> <span class=\"n\">a</span> <span class=\"o\">==</span> <span class=\"n\">b</span><span class=\"p\">:</span>\n        <span class=\"nf\">print</span><span class=\"p\">(</span><span class=\"n\">i</span><span class=\"p\">,</span> <span class=\"sh\">\"</span><span class=\"s\">identical</span><span class=\"sh\">\"</span><span class=\"p\">)</span>\n        <span class=\"k\">continue</span>\n    <span class=\"n\">r</span> <span class=\"o\">=</span> <span class=\"n\">difflib</span><span class=\"p\">.</span><span class=\"nc\">SequenceMatcher</span><span class=\"p\">(</span><span class=\"bp\">None</span><span class=\"p\">,</span> <span class=\"n\">a</span><span class=\"p\">,</span> <span class=\"n\">b</span><span class=\"p\">).</span><span class=\"nf\">ratio</span><span class=\"p\">()</span>\n    <span class=\"nf\">print</span><span class=\"p\">(</span><span class=\"n\">i</span><span class=\"p\">,</span> <span class=\"sa\">f</span><span class=\"sh\">\"</span><span class=\"s\">similarity </span><span class=\"si\">{</span><span class=\"n\">r</span><span class=\"si\">:</span><span class=\"p\">.</span><span class=\"mi\">3</span><span class=\"n\">f</span><span class=\"si\">}</span><span class=\"sh\">\"</span><span class=\"p\">)</span>\n    <span class=\"c1\"># non-identical pairs go to side-by-side review\n</span></code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <h2><a name=\"what-it-found-on-qwen38b-fp8\" href=\"#what-it-found-on-qwen38b-fp8\"> </a> What it found on Qwen3-8B FP8</h2>\n  <ul>\n   <li>7 of 20 outputs byte-identical.</li>\n   <li>9 differed only in wording or formatting; equivalent content on review.</li>\n   <li>3 minor regressions: a repeated word in a poem, one list item drifting off topic, one questionable tool suggestion.</li>\n   <li>1 extraction prompt was ambiguous and produced two defensible readings.</li>\n   <li>Zero cases where FP8 gave a wrong factual or numerical answer that BF16 answered correctly.</li>\n  </ul>\n  <p>That last line is the acceptance bar. Minor stylistic wobble is expected from a numerics change; a flipped fact is a blocker. This profile passed, so the 1.5x was free for this workload.</p>\n  <p>Two honest caveats. First, this validates a prompt profile, not the model in general: different domains, longer contexts, or sampled decoding need their own pass. Second, greedy-decoding equality is a strict signal but not a complete one; if you serve with sampling, run the review stage on sampled pairs too and expect more (benign) divergence.</p>\n  <h2><a name=\"the-wrinkle-that-almost-blocked-the-whole-thing\" href=\"#the-wrinkle-that-almost-blocked-the-whole-thing\"> </a> The wrinkle that almost blocked the whole thing</h2>\n  <p>Getting FP8 to run at all on workstation-class Blackwell (sm_120) required routing around a kernel assertion in the default FP8 path. If you are on the same silicon and vLLM refuses to load the FP8 checkpoint, that is a known class of problem rather than something wrong with your setup.</p>\n  <p>The full report this check belongs to, with the raw CSVs, environment manifest, and the one-command reproduction script, is here: <a href=\"https://conatus.jahn.ai/ai-engineering/sample-report\" target=\"_blank\" rel=\"noopener noreferrer\">https://conatus.jahn.ai/ai-engineering/sample-report</a></p>\n </body>\n</html>",
+  "aiSummary": "本文提出了一种实用的、逐提示回归检查方法，用于在服务前验证 FP8 量化，通过字节相等性、相似性分诊和并肩审查确认没有事实性回归。",
+  "oneSentenceSummary": "本文提出了一种实用的、逐提示回归检查方法，用于在服务前验证 FP8 量化，通过字节相等性、相似性分诊和并肩审查确认没有事实性回归。",
+  "summary": "作者描述了一种方法，用于验证 FP8 量化在推荐用于生产服务前不会降低模型输出质量。该方法使用固定工作负载中的 20 个提示（涵盖各类任务），采用贪婴解码以消除采样噪声，并通过三阶段比较：字节相等性、difflib 相似性分诊和基于书面评估标准的并肩审查。应用于 Qwen3-8B（在 RTX PRO 6000 Blackwell 上），该检查发现 7 个输出完全一致，9 个仅有措辞差异，3 个轻微回归，且没有任何事实性或数值错误，从而验证了 1.5 倍的吞吐量增益。文章还指出，关于提示配置特异性和采样解码检查的需要，以及在 sm_120 硅芯片上的内核断言问题的实际考虑。",
+  "mainPoints": [
+    {
+      "point": "标准评估套件信噪比过低，无法检测特定提示在量化后的行为变化，因此有针对性的逐提示检查更实用。",
+      "explanation": "基准评分的变化在误差范围内无法揭示特定工作负载中的提示行为是否发生变化，因此有针对性的逐提示检查更具操作性。"
+    },
+    {
+      "point": "贪婴解码对于隔离由数值引起的输出差异至关重要。",
+      "explanation": "通过将温度设为 0，BF16 和 FP8 之间的任何输出差异都可以归因于量化数值而非采样随机性。"
+    },
+    {
+      "point": "三阶段比较管道高效地区分良性漂移和真实回归。",
+      "explanation": "字节相等性确认完全一致的输出，difflib 相似性分诊处理近似一致的措辞变化，手动基于评估标准的审查则捕捉事实性或数值错误。"
+    },
+    {
+      "point": "接受标准是零事实翻转，而非零差异。",
+      "explanation": "数值变化引起的轻微风格波动是正常的，但 BF16 正确而 FP8 错误的事实或数值错误则是阻碍。"
+    },
+    {
+      "point": "验证仅适用于测试的工作负载；不同领域、更长上下文或采样解码需要单独验证。",
+      "explanation": "该检查验证的是所测试的提示配置，而非整个模型；不同领域、更长上下文或采样解码需要各自的验证过程。"
+    }
+  ],
+  "keyQuotes": [
+    "贪婴解码很重要：它消除了采样噪声，因此任何输出差异都可以归因于数值变化。",
+    "数值变化引起的轻微风格波动是正常的；事实翻转则是阻碍。",
+    "这验证的是提示配置，而非整个模型：不同领域、更长上下文或采样解码需要各自的验证过程。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "模型量化",
+    "FP8",
+    "vLLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 533,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787681544000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-26 02:12:24"
+}

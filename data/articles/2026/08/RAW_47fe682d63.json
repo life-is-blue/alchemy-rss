@@ -1,0 +1,52 @@
+{
+  "id": "RAW_47fe682d63",
+  "title": "Qwen3-8B 在 Blackwell 工作站上的测试：vLLM vs SGLang vs llama.cpp，外加 FP8 优化",
+  "url": "https://dev.to/conatusai/qwen3-8b-on-workstation-blackwell-vllm-vs-sglang-vs-llamacpp-plus-an-fp8-pass-325c",
+  "date": "2026-08-26 00:56:08",
+  "author": "Jahn",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Benchmarks of the same model on the same GPU across three serving stacks, then an FP8 pass on the winner. All numbers measured on our own hardware last week. Raw CSVs, the environment manifest and a one-command reproduction script exist for every figure; the script was re-run end to end after the report was written and all figures reproduced within 6 percent.</p>\n  <h2><a name=\"setup\" href=\"#setup\"> </a> Setup</h2>\n  <ul>\n   <li>GPU: RTX PRO 6000 Blackwell, 96 GB, sm_120 (workstation Blackwell, not the datacenter parts)</li>\n   <li>Model: Qwen3-8B</li>\n   <li>Stacks: vLLM 0.27.1, SGLang 0.5.9, llama.cpp (CUDA build)</li>\n   <li>Method: identical prompt set and sampling settings across engines, greedy decoding, output token counts matched across engines before any timing was compared. Concurrency 32 for the aggregate numbers.</li>\n  </ul>\n  <p>Matching token counts before comparing throughput matters more than it sounds. Engines disagree about stop conditions and detokenization, and a 10 percent difference in generated tokens quietly becomes a 10 percent throughput lie.</p>\n  <h2><a name=\"bf16-concurrency-32\" href=\"#bf16-concurrency-32\"> </a> BF16, concurrency 32</h2>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>stack</th>\n      <th>aggregate tok/s</th>\n      <th>TTFT p50</th>\n      <th>e2e p99</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>vLLM 0.27.1</td>\n      <td>1,725</td>\n      <td>39 ms</td>\n      <td>3.4 s</td>\n     </tr>\n     <tr>\n      <td>SGLang 0.5.9</td>\n      <td>1,327</td>\n      <td>42 ms</td>\n      <td>5.0 s</td>\n     </tr>\n     <tr>\n      <td>llama.cpp (CUDA)</td>\n      <td>428</td>\n      <td>316 ms</td>\n      <td>16.3 s</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <h2><a name=\"fp8-on-the-winner-vllm-same-settings\" href=\"#fp8-on-the-winner-vllm-same-settings\"> </a> FP8 on the winner (vLLM, same settings)</h2>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>precision</th>\n      <th>single-stream tok/s</th>\n      <th>batch tok/s</th>\n      <th>latency p50</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>BF16</td>\n      <td>86</td>\n      <td>1,725</td>\n      <td>0.74 s</td>\n     </tr>\n     <tr>\n      <td>FP8 (official checkpoint)</td>\n      <td>130</td>\n      <td>2,597</td>\n      <td>0.49 s</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <h2><a name=\"what-the-numbers-say\" href=\"#what-the-numbers-say\"> </a> What the numbers say</h2>\n  <p><strong>Stack choice barely matters for one user.</strong> Single-stream decode sits in the 83 to 96 tok/s band on every stack. If your service has one concurrent user, pick whatever is easiest to operate.</p>\n  <p><strong>Stack choice is a 4x decision under load.</strong> At concurrency 32 the spread is 428 to 1,725 tok/s for the same model on the same silicon. Time to first token spreads 4x as well (39 ms vs 316 ms p50), which dominates perceived snappiness for chat workloads.</p>\n  <p><strong>FP8 was a clean 1.5x.</strong> 1,725 to 2,597 tok/s aggregate, 86 to 130 single-stream, p50 latency down a third. We ran a fixed 20-prompt factual check before and after: zero regressions. For an 8B model on a 96 GB card the VRAM saving is irrelevant, the win is throughput.</p>\n  <h2><a name=\"the-sm120-wrinkle\" href=\"#the-sm120-wrinkle\"> </a> The sm_120 wrinkle</h2>\n  <p>Workstation Blackwell is not datacenter Blackwell, and default paths tuned for the latter sometimes assert on the former. Getting FP8 to run here required routing around a kernel assertion in the default FP8 path (DeepGEMM asserting on sm_120, resolved by falling back to the CUTLASS path). Related example of the same hardware-class gap: <a href=\"https://github.com/vllm-project/vllm/issues/53748\" target=\"_blank\" rel=\"noopener noreferrer\">vllm-project/vllm#53748</a>, where the Triton MLA decode kernel overflows the 101,376-byte per-block shared-memory limit that GB10 and workstation Blackwell share, but datacenter parts do not.</p>\n  <p>If you are serving on RTX PRO 6000, GB10 or consumer Blackwell, budget time for this class of issue. The performance is there, the default configs often are not.</p>\n  <h2><a name=\"method-notes\" href=\"#method-notes\"> </a> Method notes</h2>\n  <ul>\n   <li>Greedy decoding for determinism; throughput measured after warmup</li>\n   <li>Aggregate numbers are steady-state over the full prompt set, not peak</li>\n   <li>Each engine got the same max batch and context settings where the knob exists</li>\n  </ul>\n  <p>Full methodology and the case study writeup: <a href=\"https://conatus.jahn.ai/ai-engineering\" target=\"_blank\" rel=\"noopener noreferrer\">conatus.jahn.ai/ai-engineering</a></p>\n </body>\n</html>",
+  "aiSummary": "本文在 Blackwell 工作站 GPU 上对 Qwen3-8B 模型进行了 vLLM、SGLang 和 llama.cpp 的基准测试，并对胜出方案应用 FP8 优化，结果显示负载下吞吐量有 4 倍差距，而 FP8 带来了干净的 1.5 倍提升。",
+  "oneSentenceSummary": "本文在 Blackwell 工作站 GPU 上对 Qwen3-8B 模型进行了 vLLM、SGLang 和 llama.cpp 的基准测试，并对胜出方案应用 FP8 优化，结果显示负载下吞吐量有 4 倍差距，而 FP8 带来了干净的 1.5 倍提升。",
+  "summary": "作者在 RTX PRO 6000 Blackwell 工作站 GPU 上对 Qwen3-8B 模型进行了严格的基准测试，比较了三种服务框架：vLLM、SGLang 和 llama.cpp。测试方法强调在比较吞吐量之前，先确保各引擎生成的输出 token 数量一致，这一细节避免了误导性结果。在并发数为 32 的情况下，vLLM 以 1，725 tok/s 的总吞吐量领先，其次是 SGLang 的 1，327 tok/s，llama.cpp 为 428 tok/s。随后对 vLLM 应用 FP8 优化，吞吐量干净地提升了 1.5 倍，延迟降低了三分之一，且事实性检查无回退。文章还强调了 sm_120 硬件级别的差距，即针对数据中心 Blackwell 调优的默认内核路径可能在工作站部件上失效，需要采用回退到 CUTLASS 等变通方法。作者提供了原始 CSV 文件、环境清单和一键复现脚本，以确保完全透明。",
+  "mainPoints": [
+    {
+      "point": "框架选择对单用户工作负载影响不大，但在高负载下是 4 倍的决策。",
+      "explanation": "单流解码在各框架间表现相似，但在并发数为 32 时，vLLM（1，725 tok/s）远超 llama.cpp（428 tok/s），这使得引擎选择对服务部署至关重要。"
+    },
+    {
+      "point": "FP8 量化带来了干净的 1.5 倍吞吐量提升，且无质量回退。",
+      "explanation": "在 vLLM 上，FP8 将总吞吐量从 1，725 tok/s 提升至 2，597 tok/s，并将 p50 延迟降低了三分之一，事实性检查零回退。"
+    },
+    {
+      "point": "工作站 Blackwell（sm_120）存在硬件级别差距，会破坏默认的数据中心调优路径。",
+      "explanation": "默认的 FP8 内核（DeepGEMM）在 sm_120 上会断言失败，需要回退到 CUTLASS，且共享内存限制与数据中心部件不同，因此用户必须为此类问题预留时间。"
+    }
+  ],
+  "keyQuotes": [
+    "在比较吞吐量之前匹配 token 数量，其重要性远超想象。引擎对停止条件和去标记化的处理存在分歧，生成 token 10% 的差异会悄然变成 10% 的吞吐量谎言。",
+    "框架选择在高负载下是 4 倍的决策。",
+    "性能是有的，但默认配置往往不是。"
+  ],
+  "tags": [
+    "LLM",
+    "模型推理",
+    "vLLM",
+    "SGLang",
+    "llama.cpp"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 490,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787676968000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-26 00:56:08"
+}

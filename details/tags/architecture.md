@@ -1,8 +1,16 @@
-> **更新时间**: 2026-08-26 06:17:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-26 08:41:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
 > 关键词: Architecture, System Design, Microservices, Distributed, High Performance, Scalability, DDD, Clean Architecture, Patterns, Refactoring
+
+
+
+### [一个-Skill-搞定服务重构：从链路分析到测试自动化](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247697075&idx=1&sn=0811fc825e510ea62db8152d453d6008)
+
+2026-08-25 08:45:00 | 标签: 服务重构, DDD 分层, 渐进式披露, Harness Engineering, 研发效率
+
+> 文章详细阐述了腾讯云开发者团队沉淀的 Service Refactor Skill，该 Skill 由三部分构成：一是五阶段线性流程（链路分析→方案审查→编码→代码审查→自动化测试闭环），每阶段有明确输入、产出和人机分工，支持回退；二是分层知识库采用渐进式加载（核心原则速查、阶段主文件、按需 Reference），让 AI 在每个步骤只读取所需知识，既省 token 又保证准确；三是 Harness Engineering 的五大机制（知识加载精准、流程不中断、结果校验、成本控制、过程可追溯）贯穿全程，保障 AI 执行的可靠性与可重复性。文章通过十几个真实重构场景的验证表明，该 Skill 能...
 
 
 

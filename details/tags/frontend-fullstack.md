@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-26 06:17:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-26 08:41:13 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -741,6 +741,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [工具提示需要延迟，然后需要跳过它](https://blog.master.dev/tooltips-need-a-delay-and-then-they-need-to-skip-it/)
+
+2026-08-26 00:35:36 | 标签: React, 用户体验设计, 工具提示交互, 前端开发, 用户体验
+
+> 文章讨论了工具提示在光标移动时过快出现导致意外触发的常见 UX 问题。作者提出使用 200ms 延迟作为初始工具提示激活时间，并在关闭后设置 300ms'暖窗口期'，在此期间后续工具提示可立即打开。该方案在故意交互与多元素平滑过渡间取得平衡。实现细节包括使用 React 的 useContext 和 useRef 进行状态管理、CSS 动画控制及时间规划。通过代码示例和无 JavaScript 的 HTML/CSS 实现进行演示。作者强调人工判断在优化 AI 生成方案中的重要性，并分享了用于审计工具提示实现的 Claude 技能。
+
+
+
+### [Nuxt-4.5：实验性-SSR-流式渲染、Vite-8-与基于-Rsbuild-的-Rspack-构建器](https://www.infoq.com/news/2026/08/nuxt-4-5-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-08-25 19:36:00 | 标签: Vue.js, SSR, Vite, Rspack, Web 性能
+
+> Nuxt 4.5 是这个基于 Vue 的全栈 Web 框架的最新版本，被称为一段时间以来最大的一次发布。主打功能是实验性 SSR 流式渲染，它通过立即发送 HTML 外壳，并在 Vue 渲染时流式传输正文，从而改善首字节时间。该功能可通过一个配置开关启用，并会自动为爬虫和抓取工具禁用；使用了 redirect、cache、isr 或 swr 规则的路由会回退到缓冲渲染器。此次发布还包含基于 nostics 构建的稳定错误代码系统，警告带有可检索的代码（如 NUXT_E1001），并附带解释和修复方法。新的 useLayout 组合式函数返回已解析布局的只读 computed ref，具名视图允...
 
 
 
@@ -1950,13 +1966,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2106,13 +2122,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3606,13 +3622,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5316,13 +5332,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

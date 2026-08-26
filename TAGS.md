@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-26 06:17:14 | [返回首页](/README.md)
+**更新时间**: 2026-08-26 08:41:13 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15156)
-- [软件架构](#architecture) (24)
-- [前端与全栈](#frontend-fullstack) (951)
-- [DevOps](#devops) (722)
+- [AI & 大模型](#ai-llm) (15194)
+- [软件架构](#architecture) (25)
+- [前端与全栈](#frontend-fullstack) (953)
+- [DevOps](#devops) (725)
 - [产品与商业](#product-business) (47)
-- [其他](#other) (6691)
+- [其他](#other) (6709)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Jalapeño-首次结果展示-AI-推理领域领先的速度与效率](https://openai.com/index/jalapeno-first-results) - AI 精选
 - [吴恩达来信：AI-工程技能图谱详解——构建和部署-AI-应用](https://mp.weixin.qq.com/s?__biz=MzIxNzI0ODE4Nw==&mid=2247498786&idx=1&sn=9b051f71952a42e91973e7e1e92a24ec) - AI 精选
 - [V4-Flash-Vision-Exp-上线，开启多模态-API-服务](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26) - AI 精选
 - [GitHub---Chong169/a-constitution-for-one:-个人-AI-代理舰队七个月书面宪法治理，零事故](https://github.com/Chong169/a-constitution-for-one) - AI 精选
@@ -41,9 +42,8 @@
 - [构建语音控制的-AI-智能体](https://www.kdnuggets.com/building-voice-controlled-ai-agents) - AI 精选
 - [一镜成片，随心参考｜Seedance-2.5-正式发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae) - AI 精选
 - [Gemini-Robotics-ER-2-发布](https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/) - AI 精选
-- [以-GPT-5.6-推进性价比边界](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6) - AI 精选
 
-- [查看全部 15156 篇...](/details/tags/ai-llm.md)
+- [查看全部 15194 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -51,6 +51,7 @@
 > 关键词: Architecture, System Design, Microservices, Distributed, High Performance, Scalability, DDD, Clean Architecture
 
 
+- [一个-Skill-搞定服务重构：从链路分析到测试自动化](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247697075&idx=1&sn=0811fc825e510ea62db8152d453d6008) - 编程 精选
 - [Cloudflare-Workers-自动追踪公开测试版发布：无需代码，洞悉应用性能](https://blog.cloudflare.com/workers-tracing-now-in-open-beta/) - 编程 精选
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
@@ -70,9 +71,8 @@
 - [基于-CQRS-的-Netflix-Tudum-如何支持-2000-万用户](https://blog.bytebytego.com/p/how-netflix-tudum-supports-20-million) - 编程 更多
 - [Netflix-通过-RAW-Hollow-内存对象存储优化-Tudum-的-CQRS-架构](https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [从小不学好-，影刀-+-ddddocr-实现图片验证码认证自动化](https://juejin.cn/post/7531696180239466531) - 编程 更多
-- [APM-最佳实践指南：工程师必知该做与不该做的事项](https://www.elastic.co/blog/apm-best-practices) - 编程 更多
 
-- [查看全部 24 篇...](/details/tags/architecture.md)
+- [查看全部 25 篇...](/details/tags/architecture.md)
 
 
 ## <a id="frontend-fullstack"></a>前端与全栈
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 951 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 953 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 722 篇...](/details/tags/devops.md)
+- [查看全部 725 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 
-- [查看全部 6691 篇...](/details/tags/other.md)
+- [查看全部 6709 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,50 @@
+{
+  "id": "RAW_8ffde6b693",
+  "title": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑 · AIHOT",
+  "url": "https://aihot.virxact.com/items/cmt8z2eko055crolytaitdxv8",
+  "date": "2026-08-26 02:02:04",
+  "author": "noreply@aihot.virxact.com (Claude：Blog（网页）)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li>\n    <pre><code>Category [Product announcements](https://claude.com/blog/category/announcements)    \n</code></pre>\n   </li>\n   <li>\n    <pre><code>Product [Claude Cowork](https://claude.com/product/cowork)    \n</code></pre>\n   </li>\n   <li>\n    <pre><code>Date August 25, 2026  \n</code></pre>\n   </li>\n   <li>\n    <pre><code>Reading time 2 min   \n</code></pre>\n   </li>\n   <li>\n    <pre><code>Share [Copy link](https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it#)https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it\n</code></pre>\n   </li>\n  </ul>\n  <p>从今天起，你在聊天中使用的记忆与 Claude Cowork 中的记忆完全一致。现在，无论你在哪里与 Claude 协作，它都会从它已经了解你的信息出发。你可以按主题逐条查看 Claude 记住的所有内容，并编辑或删除其中任意一条。默认情况下，Claude 不会将健康、信仰等敏感主题存入记忆，但如果这些正是你厌倦反复解释的话题，你可以在记忆设置中将其开启。</p>\n  <p><img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fcdn.prod.website-files.com%2F68a44d4040f98a4adf2207b6%2F6a8cc19ec0d328f3250d2a32_3bc1dbe9.png&amp;exp=1787767200&amp;sig=0783e807e8a2f3a048928a1ca8534582a3eb75298c44f17256a7f6918cd220a3\" alt=\"Image 2\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\"></p>\n  <p>Cowork 现在具备记忆功能，且与你聊天时使用的记忆相同，这意味着你可以减少重复解释，更多地从上次中断的地方继续。当 Cowork 在云端运行任务时，Claude 从你聊天中记住的信息会出现在那里，反之亦然。你在数月对话中积累的上下文——例如你的 Q3 优先事项和项目状态——在你向 Cowork 下达任务的那一刻就已就位，而 Cowork 中产生的内容也会带回聊天中。</p>\n  <p>让 Cowork 为你的经理起草一份进展更新，它已经知道你的经理是谁，以及她喜欢什么样的更新写法。在聊天中为你要组织的会议头脑风暴议程；当 Cowork 编制预算和后勤文档时，它知道参会人数、所在城市和演讲嘉宾。在聊天中解释一次你的团队如何定义指标，之后 Cowork 构建的每一份季度业务回顾演示文稿都会使用这些指标，无需重新说明。</p>\n  <h2>记忆随聊天实时更新</h2>\n  <p>Claude 现在会在你聊天时即时向记忆中添加主题，而不是在对话结束后进行总结。提到你的项目截止日期推迟到了九月，你的下一次对话就已经知道，无需你再说“记住这一点”。你可以随时暂停记忆或重置记忆。</p>\n  <h2>查看并编辑已保存的记忆</h2>\n  <p>Claude 记住的所有内容都以文件列表的形式呈现在记忆设置中的“主题”下，你可以逐条阅读、编辑或删除。这些文件都很简短，一次修正就能处处受益：在一个文件中更正你公司的旧名称，此后所有对话都会使用正确名称。</p>\n  <p><img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fcdn.prod.website-files.com%2F68a44d4040f98a4adf2207b6%2F6a8cc19ec0d328f3250d2a35_6e1ba645.png&amp;exp=1787767200&amp;sig=978f3cecbe4eeffbfb561218b520204a270ca9f20d5e87aa66862b57531a5d36\" alt=\"Image 3\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\"></p>\n  <p><img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fcdn.prod.website-files.com%2F68a44d4040f98a4adf2207b6%2F6a8cc19ec0d328f3250d2a3d_e61d20fd.png&amp;exp=1787767200&amp;sig=35b7375f3788dfa9fcf12e1850ad24c0010defc66cbd3824598f8a7c55a5d943\" alt=\"Image 4\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\"></p>\n  <h2>自行决定是否希望 Claude 记住敏感主题</h2>\n  <p>默认情况下，Claude 不会存储与个人或敏感主题相关的信息，例如您的健康状况、种族、民族、宗教信仰、政治立场、性别认同及其他类似领域。</p>\n  <p>但有些人认为敏感的内容，另一些人可能觉得让 Claude 记住会很有用。如果您选择开启“在记忆中包含敏感主题”，Claude 在为您推荐每周备餐食谱时，就会记住您对麸质过敏这类信息。</p>\n  <p>开启该设置后，每次 Claude 将涉及这些主题的内容存入记忆时，您都会看到一条提示。Claude 会从当下开始保存敏感主题信息。您在开启该设置之前的内容不会被追溯保存。您可以随时关闭此设置。</p>\n  <p>为保护您的安全与隐私，即使您开启了敏感主题记忆功能，Claude 也不会存储某些主题。这包括敏感身份识别号码（如社保号、政府身份证号等）、犯罪记录、移民身份，或任何违反我们可接受使用政策（AUP）的内容。当 Claude 无法将上述任何信息更新到记忆中时，它会告知您。更多信息请访问帮助中心。</p>\n  <h2>快速上手</h2>\n  <p>在 Free、Pro 和 Max 套餐中，记忆功能在网页端、桌面端和移动端均默认开启。请注意，将敏感主题存入记忆的功能默认是关闭的。在 iOS 和 Android 设备上，请将移动应用更新至最新版本，以获取最新功能。对于 Team 和 Enterprise 套餐，管理员控制其组织的可用性，且记忆功能对个人用户默认关闭，直到用户自行开启。</p>\n  <p>请访问“设置 &gt; 记忆”来开启记忆功能，并控制 Claude 可以记住哪些内容。</p>\n </body>\n</html>",
+  "aiSummary": "Claude 的记忆功能现已在聊天和 Cowork 之间实现无缝同步，用户可以实时查看、编辑和删除存储的记忆条目，并选择是否允许存储敏感主题信息。",
+  "oneSentenceSummary": "Claude 的记忆功能现已在聊天和 Cowork 之间实现无缝同步，用户可以实时查看、编辑和删除存储的记忆条目，并选择是否允许存储敏感主题信息。",
+  "summary": "该更新实现了 Claude 记忆功能的跨平台一致性，确保在聊天和 Cowork 模式下使用的上下文信息完全相同。用户现在可以以文件列表的形式浏览记忆内容，并进行逐条编辑或删除。此外，系统提供了对敏感主题（如健康、信仰）的存储控制，用户可根据需要开启或关闭该功能，同时确保某些高敏感信息（如社保号）始终不被存储。",
+  "mainPoints": [
+    {
+      "point": "记忆功能在聊天和 Cowork 之间实现无缝同步，确保上下文信息一致。",
+      "explanation": "用户在聊天中积累的上下文（如项目状态、截止日期）会自动同步到 Cowork，反之亦然，从而减少重复解释并提高工作效率。"
+    },
+    {
+      "point": "用户可以逐条查看、编辑或删除存储的记忆条目。",
+      "explanation": "记忆内容以文件列表形式呈现，允许用户进行微调，例如更正公司名称或删除过时的信息，确保 Claude 始终使用最新、最准确的上下文。"
+    },
+    {
+      "point": "系统提供对敏感主题存储的精细控制，并确保某些高敏感信息不被记录。",
+      "explanation": "用户可以选择是否允许 Claude 存储健康、信仰等敏感主题，并会收到相应提示。同时，系统严格禁止存储社保号等敏感身份识别信息，以保护用户隐私。"
+    }
+  ],
+  "keyQuotes": [
+    "从今天起，你在聊天中使用的记忆与 Claude Cowork 中的记忆完全一致。现在，无论你在哪里与 Claude 协作，它都会从它已经了解你的信息出发。"
+  ],
+  "tags": [
+    "Claude",
+    "记忆功能",
+    "Cowork",
+    "上下文同步",
+    "敏感主题"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1232,
+  "domain": "aihot.virxact.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787680924000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-26 02:02:04"
+}
