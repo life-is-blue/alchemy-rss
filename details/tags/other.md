@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-27 13:40:43 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-28 01:04:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3715,9 +3715,7 @@
 
 ### [🔬“我们有语言基础模型，但没有物理基础模型”——Anima-Anandkumar，Bren-计算教授](https://www.latent.space/p/anima)
 
-2026-08-26 23:15:39 | 标签: 神经算子, FourCastNet, 天气预测, 聚变, 物理先验
-
-> 这篇文章探讨了 Anima Anandkumar 在物理系统 AI 领域的先驱工作，重点介绍了用于天气预测的 FourCastNet 和神经算子的理论框架。文章讨论了当前数据可用性和 transformer 上下文长度的局限性，强调了纳入物理先验的重要性，并展望了构建物理基础模型的潜力。
+2026-08-26 23:15:39
 
 
 
@@ -15789,41 +15787,31 @@
 
 ### [Actinide-成为首家成功富集铀的初创公司，生产出-HALEU](https://www.actinideinc.com/press/actinide-becomes-first-startup-to-ever-enrich-natural-uranium-to-produce-haleu)
 
-2026-08-27 03:23:01 | 标签: 核能, 同位素分离, HALEU, 校准器, 先进材料
-
-> Actinide 通过成为首家生产 HALEU 的初创公司，在核燃料供应链中取得了重大突破。该公司的第一代校准器（一种现代电磁同位素分离器）被重新配置，将铀富集至 15.38% 的 U-235，符合 HALEU 的定义。这一成就凸显了 Actinide 的技术绕过当前美国核燃料生产瓶颈的潜力，后者严重依赖外国富集，并且缺乏直接生产固体 HALEU 的能力。该公司正在开发第二代系统 Fortitude，有望显著提高同位素分离能力。
+2026-08-27 03:23:01
 
 
 
 ### [用于高效张量计算的线程-寄存器解耦-GPU-执行模型](https://arxiv.org/abs/2608.19628)
 
-2026-08-27 03:08:58 | 标签: GPU 架构, 张量计算, 解耦执行, 动态并行性, 数据流调度
-
-> 该论文提出了 FIBER，一种扩展 SIMT 模型的 GPU 架构，通过将执行实例（纤维）与私有寄存器所有权分离，实现了动态并行性扩展、高效的寄存器级数据流调度，以及无冗余的矩阵操作数供应。该模型在 ISA、微架构和编译器层面均有实现，在混合精度 LLM 服务场景中显示出显著的加速效果。
+2026-08-27 03:08:58
 
 
 
 ### [CoMaps：在委内瑞拉救援中无信号导航的离线应用](https://hotosm.org/en/news/comaps-the-offline-app-that-guided-rescuers-without-a-signal-in-the-venezuela-response/)
 
-2026-08-27 01:20:12 | 标签: OpenStreetMap, 离线地图, 人道主义救援, 灾害响应, 志愿者地图
-
-> 本文介绍了 CoMaps，一个基于 OpenStreetMap 数据的志愿者离线地图应用，在委内瑞拉地震救援中的部署情况。在失去手机覆盖后，救援人员使用 CoMaps 进行导航和物流协调，受益于每周一次的地图更新，这些更新源自 HOT 的任务管理器。创始人 Anton Wenemoser 和 Bastian Greshake Tzovaras 解释了之前的技术改进——例如将地图更新与应用更新解耦，并启用本地地图共享——如何让应用在现场快速提供新鲜数据。来自 HOT、红十字会和 Techo 的人道主义工作者无需技术专长即可访问这些地图，这说明了该应用作为 OSM 数据与最终用户之间桥梁的作用。文...
+2026-08-27 01:20:12
 
 
 
 ### [超越偏移量滞后：在-PB-级规模下计算-Apache-Hudi-数据湖管道的数据排队时间](https://www.infoq.com/articles/beyond-offset-lag-kafka-apache-hudi/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-26 17:00:00 | 标签: Apache Hudi, Kafka, 数据湖, 流处理, SLA 监控
-
-> 本文详细阐述了为何传统的 Kafka 偏移量滞后不足以衡量基于 Hudi 的数据湖中的数据新鲜度，并引入了一种数据排队时间指标，用于计算 Kafka 中最旧的未消费消息已等待的时间。文章描述了该算法：从 S3 读取最新的 Hudi 提交检查点，在 Kafka 的每个分区中定位到该偏移量，获取第一条未消费消息的时间戳，并计算其与当前时间的差值。文章还涵盖了缺失检查点元数据、时钟偏差、多分区主题和多写入者等边界情况，并展示了该指标如何成为一流的 SLA 信号，可在不改变现有基础设施的情况下按管道进行定制。Twilio 在 PB 级规模部署中的实际结果证明了其在生产环境中的有效性。
+2026-08-26 17:00:00
 
 
 
 ### [OldInsuranceMaps.net-成为-OpenStreetMap-US-的特许项目！](https://openstreetmap.us/news/2026/08/oim-charter-project/)
 
-2026-08-26 16:57:46 | 标签: OpenStreetMap, 桑伯恩地图, 历史地图, 地理参考, 众包
-
-> OldInsuranceMaps.net (OIM) 是 OpenStreetMap US 的特许项目，托管了 1200 多张桑伯恩保险地图，主要来源于美国国会图书馆。这些地图是历史地图制作者和研究人员的宝贵资源，感谢 OIM，他们的地理参考信息更容易获取。该平台面向广泛的人群，从业余爱好者到学者和专业人士，并拥有强大的志愿者地理参考社区。
+2026-08-26 16:57:46
 
 
 
@@ -40301,11 +40289,11 @@
 
 
 
-### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
+### [使用-Claude-Code：HTML-难以置信的奇效](https://baoyu.io/translations/2026-05-08/trq212-status-2052809885763747935)
 
-2026-05-06T00:00:00.000Z
+2026-05-08T00:00:00.000Z
 
-> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
+> Markdown 已经成为 AI 智能体与我们交流的主要文件格式。它简单、轻量，具备一定的富文本能力且易于人工编辑。Claude 甚至已经极其擅长在 Markdown 文件里使用 ASCII 字符绘制图表。然而，随着 AI 越来越强大，HTML 开始展现出惊人的效果。
 
 
 

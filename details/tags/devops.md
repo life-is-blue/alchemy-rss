@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-27 13:40:43 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-28 01:04:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -326,9 +326,7 @@
 
 ### [将-ClearML-部署为-Azure-ML-的替代方案](https://dev.to/vultr/deploying-clearml-as-an-azure-ml-alternative-3hoh)
 
-2026-08-27 01:37:59 | 标签: MLOps, ClearML, Azure ML, Docker, Traefik
-
-> 本文提供了一份在 Linux 服务器上设置 ClearML 的分步教程。首先介绍如何使用 Docker Compose 和 Traefik 反向代理安装 ClearML 服务器组件。接着，指南涵盖了用于远程执行的 ClearML 代理配置，并提供了跟踪实验、创建数据处理管道、运行超参数优化以及使用 Triton 引擎部署模型进行推理的实用示例。内容面向希望从基于云的 MLOps 解决方案迁移到更灵活、自托管环境的数据科学家和工程师。
+2026-08-27 01:37:59
 
 
 
@@ -616,9 +614,7 @@
 
 ### [AWS-推出基于规范的组合模式，实现灵活的数据工作流](https://www.infoq.com/news/2026/08/aws-spec-driven-data-workflow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-26 22:18:00 | 标签: AWS, 数据工作流, 无服务器, Lambda, Step Functions
-
-> AWS 提出了基于规范的组合模式，用于构建灵活的数据转换工作流。该方法使用结构化规范动态组装可重用的处理能力，基于 AWS Lambda、AWS Step Functions、Amazon S3 和 Amazon OpenSearch Service 的无服务器实现。该模式针对数据管道，随着组织添加数据集和工作流变体，变得难以维护。
+2026-08-26 22:18:00
 
 
 
