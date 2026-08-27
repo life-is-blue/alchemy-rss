@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3a968a01dc",
+  "title": "如何阻止 AI 代理伪造自己的测试",
+  "url": "https://www.freecodecamp.org/news/how-to-stop-letting-ai-agents-fake-their-own-tests/",
+  "date": "2026-08-27 01:47:12",
+  "author": "Daniel Nwaneri",
+  "siteName": "freeCodeCamp",
+  "content": null,
+  "aiSummary": "本文介绍 spec-verify，一个 Claude Code 技能，它使用突变检查的测试生成来捕获空洞的 AI 生成测试，并将其与需要显式人工签核的不可验证标准区分开来。",
+  "oneSentenceSummary": "本文介绍 spec-verify，一个 Claude Code 技能，它使用突变检查的测试生成来捕获空洞的 AI 生成测试，并将其与需要显式人工签核的不可验证标准区分开来。",
+  "summary": "文章展示了 spec-verify，一个旨在防止 AI 代理生成看似验证功能但实际上断言琐碎真理的测试的 Claude Code 技能。它基于之前的工具 spec-writer，该工具从功能请求中生成 Given/When/Then 验收标准。spec-verify 会读取这些标准并生成测试，然后创建一个有针对性的突变，将关联假设中标记的特定风险重新引入。通过将测试运行在突变体上，它可以识别出无论突变如何都通过的空洞测试，并将其标记为 VACUOUS。无法进行突变测试的标准，例如涉及非确定性 LLM 行为的标准，则标记为 UNVALIDATABLE，并需要显式的人工签核。文章包含一个关于去重测试的真实示例、安装说明，以及对签核备注结构检查局限性的讨论，提倡在团队环境中采用 git 属性的签核。",
+  "mainPoints": [
+    {
+      "point": "AI 生成的测试经常会琐碎地通过，而没有验证预期行为。",
+      "explanation": "LLM 生成的测试经常会断言一些琐碎的真理，例如函数返回一个列表，并且无论底层是否存在 bug，测试都会通过，从而产生虚假的覆盖率感觉。"
+    },
+    {
+      "point": "突变检查的测试生成通过重新引入确切的风险来识别空洞测试。",
+      "explanation": "对于每个标准，spec-verify 会生成一个有针对性的突变，将已修正的假设恢复原状，然后将测试运行在突变体上。如果测试仍然通过，则将其标记为 VACUOUS。"
+    },
+    {
+      "point": "VACUOUS 和 UNVALIDATABLE 是两种需要不同处理的独立失败模式。",
+      "explanation": "VACUOUS 测试是必须通过编写更好的测试来修复的缺陷，而 UNVALIDATABLE 标准（例如非确定性 LLM 行为）需要显式的人工签核或转移到可测试的代码中。"
+    },
+    {
+      "point": "签核备注的结构检查无法验证真实性。",
+      "explanation": "签核备注可能是诚实的但错误的，正如作者自己的经历所表明的。更强的验证方法是使用 git 提交作者和时间戳，而不是信任自由文本字段。"
+    }
+  ],
+  "keyQuotes": [
+    "从 '看起来完成' 到 '确实完成' 的差距必须有意跨越，并把原因写下来，而不是因为没有人在检查而跳过。",
+    "如果其中的一个测试是空洞的，你希望从突变中发现，而不是从生产环境中发现。"
+  ],
+  "tags": [
+    "AI 编程",
+    "LLM",
+    "测试",
+    "Claude Code",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1985,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787766432000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-27 01:47:12"
+}

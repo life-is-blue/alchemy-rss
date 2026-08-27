@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-27 06:37:02 | [返回首页](/README.md)
+**更新时间**: 2026-08-27 13:40:43 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15194)
+- [AI & 大模型](#ai-llm) (15237)
 - [软件架构](#architecture) (25)
 - [前端与全栈](#frontend-fullstack) (953)
-- [DevOps](#devops) (725)
+- [DevOps](#devops) (727)
 - [产品与商业](#product-business) (47)
-- [其他](#other) (6709)
+- [其他](#other) (6715)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [赋能关于人类如何使用-Claude-的独立研究](https://www.anthropic.com/research/enabling-independent-research) - AI 精选
+- [SaaS-的未来是智能体可用的应用](https://www.latent.space/p/lovable-future-of-saas) - AI 精选
 - [Jalapeño-首次结果展示-AI-推理领域领先的速度与效率](https://openai.com/index/jalapeno-first-results) - AI 精选
 - [吴恩达来信：AI-工程技能图谱详解——构建和部署-AI-应用](https://mp.weixin.qq.com/s?__biz=MzIxNzI0ODE4Nw==&mid=2247498786&idx=1&sn=9b051f71952a42e91973e7e1e92a24ec) - AI 精选
 - [V4-Flash-Vision-Exp-上线，开启多模态-API-服务](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26) - AI 精选
@@ -40,10 +42,8 @@
 - [推理工程大师课-—-Philip-Kiely-与-Ali-Taha，Baseten](https://www.latent.space/p/inference-eng) - AI 精选
 - [Qwen3.8-Max：编程与办公，全面跃升](https://mp.weixin.qq.com/s?__biz=Mzk0ODg4NDI5NA==&mid=2247489871&idx=1&sn=bb0230aa69fa1f90e26149ae3c008093) - AI 精选
 - [构建语音控制的-AI-智能体](https://www.kdnuggets.com/building-voice-controlled-ai-agents) - AI 精选
-- [一镜成片，随心参考｜Seedance-2.5-正式发布](https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae) - AI 精选
-- [Gemini-Robotics-ER-2-发布](https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/) - AI 精选
 
-- [查看全部 15194 篇...](/details/tags/ai-llm.md)
+- [查看全部 15237 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 725 篇...](/details/tags/devops.md)
+- [查看全部 727 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 
-- [查看全部 6709 篇...](/details/tags/other.md)
+- [查看全部 6715 篇...](/details/tags/other.md)
 
 

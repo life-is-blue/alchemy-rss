@@ -1,0 +1,56 @@
+{
+  "id": "RAW_e8fd8707e4",
+  "title": "GitHub Copilot 应用入门：自动化 Dependabot 拉取请求分类",
+  "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/",
+  "date": "2026-08-27 04:12:56",
+  "author": "Christopher Harrison",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">I might be biased, but I think Dependabot is pretty amazing. It helps keep my projects up to date, ensuring I’m always using secure libraries. But because there’re frequently new vulnerabilities, there’re frequently new pull requests from Dependabot.</p>\n  <p class=\"wp-block-paragraph\">Sometimes it’s a minor version bump. Sometimes it’s a major version upgrade. Sometimes everything will work just fine. And sometimes… well, every single developer has been caught by a breaking change.</p>\n  <p class=\"wp-block-paragraph\">How can we best triage these pull requests? The work isn’t particularly difficult per se, but it certainly is repetitive.</p>\n  <p class=\"wp-block-paragraph\">It’s the perfect task to offload to Copilot! With <a href=\"https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations\">GitHub Copilot app automations</a>, you can hand off that first round of review. Instead of manually inspecting every Dependabot pull request, you can create an automation that reviews open pull requests, groups them by risk, verifies CI status, and delivers a summary before your day begins.</p>\n  <p class=\"wp-block-paragraph\">Follow the steps below to build a daily Dependabot triage automation.</p>\n  <h2 id=\"h-step-1-create-a-new-automation\" class=\"wp-block-heading\">Step 1: Create a new automation</h2>\n  <p class=\"wp-block-paragraph\">From the GitHub Copilot app, <a href=\"https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations\">create a new automation</a>.</p>\n  <p class=\"wp-block-paragraph\">You’ll configure two things first:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Name:</strong> Give the automation a descriptive name, such as <strong>Daily Dependabot Triage</strong>.</li>\n   <li><strong>Trigger:</strong> Decide when it should run.</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Available trigger options include:</p>\n  <ul class=\"wp-block-list\">\n   <li>Manual</li>\n   <li>Hourly</li>\n   <li>Daily</li>\n   <li>Weekly</li>\n   <li>When an issue is created</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">For recurring maintenance tasks like <a href=\"https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart\">Dependabot reviews</a>, a daily schedule is often a good choice. For example, you might schedule it to run before your workday begins so the results are waiting when you log in.</p>\n  <p class=\"wp-block-paragraph\">You can also choose whether the automation runs in the cloud or on your local machine.</p>\n  <h2 class=\"wp-block-heading\" id=\"step-2-describe-the-task-in-natural-language\">Step 2: Describe the task in natural language</h2>\n  <p class=\"wp-block-paragraph\">Next, tell Copilot what you want it to do.</p>\n  <p class=\"wp-block-paragraph\">For example:</p>\n  <div class=\"wp-block-code-wrapper\">\n   <pre class=\"wp-block-code language-plaintext\"><code>Review the open Dependabot pull requests, group them by risk, identify the safe patch and minor version updates, verify that CI is passing for each pull request, and provide a short summary of the recommended next steps.</code></pre>\n   <clipboard-copy aria-label=\"Copy\" class=\"code-copy-btn\" data-copy-feedback=\"Copied!\" value=\"Review the open Dependabot pull requests, group them by risk, identify the safe patch and minor version updates, verify that CI is passing for each pull request, and provide a short summary of the recommended next steps.\" tabindex=\"0\" role=\"button\"></clipboard-copy>\n  </div>\n  <p class=\"wp-block-paragraph\">Because the prompt uses natural language, you can customize it to match your team’s workflow.</p>\n  <h2 class=\"wp-block-heading\" id=\"step-3-select-the-repository\">Step 3: Select the repository</h2>\n  <p class=\"wp-block-paragraph\">Choose the repository or project the automation should analyze.</p>\n  <p class=\"wp-block-paragraph\">Once you’ve selected the repository, create the automation.</p>\n  <p class=\"wp-block-paragraph\">If you want to test it immediately instead of waiting for the scheduled run, choose <strong>Create and Run</strong>.</p>\n  <h2 class=\"wp-block-heading\" id=\"step-4-review-the-results\">Step 4: Review the results</h2>\n  <p class=\"wp-block-paragraph\">When the automation finishes, Copilot returns a summary instead of a list of individual pull requests.</p>\n  <p class=\"wp-block-paragraph\">For example, it might:</p>\n  <ul class=\"wp-block-list\">\n   <li>Group safe patch updates together</li>\n   <li>Separate minor and major version upgrades</li>\n   <li>Identify which pull requests have passing CI</li>\n   <li>Highlight dependencies that require additional investigation</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Rather than interrupting your morning with dozens of small decisions, you can quickly identify which updates are ready to merge and which deserve closer attention.</p>\n  <h2 class=\"wp-block-heading\" id=\"step-5-continue-the-work-in-a-copilot-session\">Step 5: Continue the work in a Copilot session</h2>\n  <p class=\"wp-block-paragraph\">If one of the updates requires additional work, you can continue directly from the automation results.</p>\n  <p class=\"wp-block-paragraph\">For example, if the summary identifies a major framework upgrade, you can start a new Copilot session from the results and ask Copilot to help complete the migration.</p>\n  <p class=\"wp-block-paragraph\">Because the session starts with the automation’s context, you don’t have to gather the information again.</p>\n  <h2 class=\"wp-block-heading\" id=\"review-previous-automation-runs\">Review previous automation runs</h2>\n  <p class=\"wp-block-paragraph\">Every automation run is saved, making it easy to see:</p>\n  <ul class=\"wp-block-list\">\n   <li>When it ran</li>\n   <li>What actions it performed</li>\n   <li>What results it produced</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Having a history of each run makes automations transparent. You can always review what happened instead of treating them as a black box.</p>\n  <h2 class=\"wp-block-heading\" id=\"turn-repetitive-work-into-background-work\">Turn repetitive work into background work</h2>\n  <p class=\"wp-block-paragraph\">Dependabot triage is a good example of the kind of recurring task that’s well suited for automation. You describe the workflow once, choose when it should run, and let Copilot perform the repetitive steps automatically.</p>\n  <p class=\"wp-block-paragraph\">If you’re just getting started with automations, begin with a task you already perform on autopilot. Let Copilot handle the routine work so you can spend your time on the decisions that require your expertise.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "使用 GitHub Copilot 应用自动化功能，根据风险分组和 CI 检查自动分类 Dependabot PR。",
+  "oneSentenceSummary": "使用 GitHub Copilot 应用自动化功能，根据风险分组和 CI 检查自动分类 Dependabot PR。",
+  "summary": "文章逐步讲解如何创建 GitHub Copilot 应用自动化，以审视未合并的 Dependabot 拉取请求，按风险（安全补丁、次要、主要）分组，验证 CI 状态，并输出简洁摘要。步骤包括：命名自动化、设置每日触发器、用自然语言描述任务、选择仓库、查看聚合结果、在需要时继续在 Copilot 会话中工作。指南强调将重复的依赖更新工作转化为后台任务，让开发者专注于更高价值的决策。",
+  "mainPoints": [
+    {
+      "point": "在 GitHub Copilot 应用中创建每日自动化。",
+      "explanation": "为其命名（例如， Daily Dependabot Triage），设置每日触发器，并选择云端或本地执行。"
+    },
+    {
+      "point": "用自然语言向 Copilot 描述分类任务。",
+      "explanation": "指示 Copilot 检视未合并的 Dependabot PR，按风险分组，验证 CI 是否通过，并总结建议的后续步骤。"
+    },
+    {
+      "point": "选择目标仓库并创建（或运行）该自动化。",
+      "explanation": "选择仓库后，您可以立即创建该自动化，或等待计划运行。"
+    },
+    {
+      "point": "查看汇总摘要并处理高风险更新。",
+      "explanation": "该自动化将安全补丁归类，将次要/主要升级分开，突出显示通过的 CI，并标记需要进一步调查的项目。"
+    }
+  ],
+  "keyQuotes": [
+    "审视未合并的 Dependabot 拉取请求，按风险分组，识别安全补丁和次要版本更新，验证每个拉取请求的 CI 是否通过，并提供建议后续步骤的简短摘要。",
+    "Dependabot 分类是重复任务适合自动化的良好示例。",
+    "将重复工作转化为后台工作。"
+  ],
+  "tags": [
+    "GitHub Copilot",
+    "Dependabot",
+    "自动化",
+    "CI/CD",
+    "拉取请求"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 636,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787775176000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-27 04:12:56"
+}
