@@ -1,0 +1,50 @@
+{
+  "id": "RAW_46125fb6a0",
+  "title": "CompactGUI：用 Windows 原生压缩功能，为程序和游戏文件夹瘦身",
+  "url": "https://www.appinn.com/compactgui-4/",
+  "date": "2026-08-27 23:55:07",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"has-very-light-gray-to-cyan-bluish-gray-gradient-background has-background wp-block-paragraph\">如果你的硬盘不太够用了，又不想换硬盘，那么可以试试用 <strong>CompactGUI</strong> 来救急，它可以帮你压缩现有文件。比如青小蛙用它压缩了 Epic 游戏文件夹，立省11GB空间。@<a href=\"https://www.appinn.com/compactgui-4/\">Appinn</a></p>\n  <p class=\"wp-block-paragraph\">但问题也来了：压缩后会不会占 CPU？会不会影响硬盘读写？游戏还能直接运行吗？</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/08/Copy-of-appinn-homework-2026-08-27T154852.675.jpg\" alt=\"CompactGUI：用 Windows 原生压缩功能，为程序和游戏文件夹瘦身 1\" class=\"wp-image-59184\" title=\"CompactGUI：用 Windows 原生压缩功能，为程序和游戏文件夹瘦身 1\">\n  </figure>\n  <p class=\"wp-block-paragraph\">感谢 @WιΛΛιam Q 的推荐。</p>\n  <ul class=\"wp-block-list\">\n   <li>2022年青小蛙介绍过：<a href=\"https://www.appinn.com/compactgui-for-windows/\">CompactGUI – 手动开关 NTFS 压缩功能[Windows]</a></li>\n   <li>2023年 Panda 同学在发现频道推荐过：<a href=\"https://meta.appinn.net/t/topic/42461\" target=\"_blank\" rel=\"noopener\">CompactGUI | 开源的基于 Win32 API 的文件夹压缩软件</a></li>\n  </ul>\n  <p class=\"wp-block-paragraph\">最近 <strong>CompactGUI 4.0</strong> 测试版发布，重新设计了界面。</p>\n  <p class=\"wp-block-paragraph\"><strong>CompactGUI</strong> 是一款利用 Windows 原生工具 <code>compact.exe</code>&nbsp;的图形界面版本，它使用系统自带的 NTFS 磁盘压缩功能，能够直接压缩现有文件，并且不影响运行，甚至还可能启动速度。</p>\n  <p class=\"wp-block-paragraph\">以青小蛙的 Epic 游戏文件夹为例，在选择了 <code>XPRESS8K</code> 压缩算法之后，将原本 246GB 的游戏文件，压缩到了 235GB，节省空间 5%。</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/08/CleanShot-2026-08-27-at-14.28.21-2x.avif\" alt=\"CompactGUI：用 Windows 原生压缩功能，为程序和游戏文件夹瘦身 2\" class=\"wp-image-59181\" title=\"CompactGUI：用 Windows 原生压缩功能，为程序和游戏文件夹瘦身 2\">\n  </figure>\n  <p class=\"wp-block-paragraph\"><strong>注意这个压缩不需要接压缩，可以直接运行游戏。</strong></p>\n  <h2 class=\"wp-block-heading\">影响 CPU 运行吗？</h2>\n  <p class=\"wp-block-paragraph\">有同学疑问：没具体看，个人估计运行时需要解压会占用 CPU 时间。</p>\n  <p class=\"wp-block-paragraph\">青小蛙去研究了一番，开发者是这样描述的：</p>\n  <p class=\"wp-block-paragraph\">Windows 10 引入了一个鲜为人知但非常有用的工具，称为“compact.exe”，允许在运行时压缩磁盘上的文件夹和文件，进行解压。对于任何现代 CPU（我测试过 2010 年的 i3-370M，影响几乎不大），这种额外负载几乎不会被察觉，节省空间的优势在配备较小 SSD 的设备中最为实用。</p>\n  <p class=\"wp-block-paragraph\">影响硬盘读写吗？</p>\n  <p class=\"wp-block-paragraph\">更有趣的是，由于程序文件夹和游戏可以大幅压缩，还有一个额外好处，就是可能缩短加载时间——尤其是在慢速的机械硬盘上。</p>\n  <p class=\"wp-block-paragraph\">万万没想到，机械硬盘竟然以这样一种方式，进行了提速。</p>\n  <h2 class=\"wp-block-heading\">获取</h2>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://github.com/IridiumIO/CompactGUI/blob/master/README/README_cn.md\" target=\"_blank\" rel=\"noopener\">GitHub</a></li>\n   <li>搬运</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">注意：可能需要 windowsdesktop-runtime-10.0.11-win-x64 的支持，青小蛙一起打包放到搬运中了。</p>\n  <p class=\"wp-block-paragraph\">简单易用，运行后选择想要压缩的文件夹，点击压缩即可（设置中可以选择中文界面）</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：https://www.appinn.com/compactgui-4/</p>\n </body>\n</html>",
+  "aiSummary": "CompactGUI 是一款利用 Windows 原生 NTFS 压缩功能的图形界面工具，能够直接压缩程序和游戏文件夹，节省硬盘空间而不影响运行，甚至可能提升加载速度。",
+  "oneSentenceSummary": "CompactGUI 是一款利用 Windows 原生 NTFS 压缩功能的图形界面工具，能够直接压缩程序和游戏文件夹，节省硬盘空间而不影响运行，甚至可能提升加载速度。",
+  "summary": "文章介绍了 CompactGUI 4.0，一个基于 Windows 原生 compact.exe 的图形界面工具。它允许用户直接压缩硬盘上的文件夹和文件，包括游戏和程序，从而节省存储空间。压缩后的文件可以直接运行，且不会显著增加 CPU 负载。此外，由于文件大小减小，加载时间在慢速机械硬盘上可能会有所缩短。安装和使用方法也进行了说明。",
+  "mainPoints": [
+    {
+      "point": "利用原生压缩功能节省空间",
+      "explanation": "CompactGUI 使用 Windows 内置的 NTFS 压缩功能，允许用户直接压缩文件夹，从而节省硬盘空间，例如将 246GB 的游戏文件夹压缩至 235GB。"
+    },
+    {
+      "point": "不影响程序运行",
+      "explanation": "压缩后的文件可以直接运行，无需解压。现代 CPU 处理这些压缩文件的额外负载几乎可以忽略不计，不会影响游戏或程序的性能。"
+    },
+    {
+      "point": "可能提升加载速度",
+      "explanation": "由于文件大小减小，读取时间可能会缩短，尤其是在慢速的机械硬盘上，这可以作为一种提升加载速度的手段。"
+    }
+  ],
+  "keyQuotes": [
+    "Windows 10 引入了一个鲜为人知但非常有用的工具，称为'compact.exe'，允许在运行时压缩磁盘上的文件夹和文件，进行解压。"
+  ],
+  "tags": [
+    "Windows",
+    "NTFS压缩",
+    "硬盘优化",
+    "游戏存储",
+    "CompactGUI"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 746,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1787846107000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-27 23:55:07"
+}

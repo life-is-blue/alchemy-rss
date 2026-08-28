@@ -1,0 +1,50 @@
+{
+  "id": "RAW_9ad4bcfab2",
+  "title": "让编码代理安全地接触你的数据库架构",
+  "url": "https://dev.to/rishi_kora/letting-a-coding-agent-touch-your-database-schema-safely-1j1",
+  "date": "2026-08-27 23:31:22",
+  "author": "AI Tech Connect",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Originally published on <a href=\"https://aitechconnect.in/tips/coding-agent-database-schema-migrations-2026\" target=\"_blank\" rel=\"noopener noreferrer\">AI Tech Connect</a>.</em></p>\n  <p>What happened in July 2026, and the lesson it actually carries A developer connected a coding agent — Claude Opus 5 — directly to a Supabase instance with broad write access, and asked it to work through a set of schema and content problems autonomously. In the course of that work the agent ran prisma migrate diff with the --shadow-database-url flag set to the production Supabase connection string. Prisma resets the shadow database before replaying migrations into it. That reset is the documented, intended behaviour: the tool needs a known-empty starting point in order to compute an honest diff. So the command did exactly what it says on the tin, against exactly the database it was pointed at. It rebuilt the live schema from an outdated prisma/migrations folder. All 22 tables were…</p>\n  <hr>\n  <p><strong><a href=\"https://aitechconnect.in/tips/coding-agent-database-schema-migrations-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Read the full article on AI Tech Connect →</a></strong></p>\n </body>\n</html>",
+  "aiSummary": "一位开发者将编码代理连接到具有广泛写访问权限的 Supabase 实例，并因将迁移命令指向生产 URL 而不是暂存环境，导致意外重置了实时数据库架构。",
+  "oneSentenceSummary": "一位开发者将编码代理连接到具有广泛写访问权限的 Supabase 实例，并因将迁移命令指向生产 URL 而不是暂存环境，导致意外重置了实时数据库架构。",
+  "summary": "本文描述了一起真实事件，其中一位开发者在使用编码代理（Claude Opus 5）时，错误地将 'prisma migrate diff' 命令的影子数据库 URL 配置为生产 Supabase 数据库。这导致代理在尝试重放迁移之前重置了整个生产架构，造成重大数据丢失和停机。文章强调了开发/暂存环境与生产数据库之间严格分离的重要性，以及在使用自动化迁移工具时仔细配置参数的必要性。",
+  "mainPoints": [
+    {
+      "point": "事件发生是因为开发者在 'prisma migrate diff' 命令中将生产数据库 URL 用于影子数据库参数。",
+      "explanation": "在 Prisma 的迁移工作流程中，'shadow-database-url' 旨在指向一个临时或暂存数据库，以便在其中测试迁移。通过将其设置为生产 URL，该工具在尝试应用迁移之前重置了实时数据，导致立即数据丢失。"
+    },
+    {
+      "point": "文章强调了环境分离和仔细参数验证的必要性。",
+      "explanation": "为了防止此类灾难，开发者必须确保生产凭证永远不会用于预期会执行破坏性操作（如架构重置）的上下文。建议使用环境变量和严格的访问控制来隔离生产资源。"
+    },
+    {
+      "point": "作者指出，虽然代理在执行命令方面是技术上正确的，但配置中的人为错误导致了灾难性后果。",
+      "explanation": "代理按照指示运行了命令，这证明了它作为工具的可靠性，但缺乏关于使用生产 URL 进行重置操作的含义的保护措施或警告，导致了失败。"
+    }
+  ],
+  "keyQuotes": [
+    "代理运行了 prisma migrate diff，其中 --shadow-database-url 标志设置为生产 Supabase 连接字符串。Prisma 在将迁移重放到其中之前，会重置影子数据库。"
+  ],
+  "tags": [
+    "数据库迁移",
+    "Supabase",
+    "Prisma",
+    "编码代理",
+    "架构重置"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 147,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787844682000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-27 23:31:22"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_41d1a2dfd0",
+  "title": "开创全球首个双盲 AI 评估",
+  "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+  "date": "2026-08-27 20:59:16",
+  "author": "William Isaac, Sol Messing, Kristian Lum",
+  "siteName": "Google DeepMind News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"button-group skip-link\">\n   <img alt=\"A translucent blue-green cube with keyholes and a padlock symbol, with glowing yellow and green light beams passing through it.\" src=\"https://media.bestblogs.dev/20260827141303_ec9dddc.jpeg\" class=\"picture__image\" loading=\"lazy\" style=\"font-size: 1rem;\">\n  </div>\n  <main id=\"page-content\">\n   <section class=\"section-default section-cover section-cover--blog section-cover--simple\">\n    <div class=\"media-content-wrapper\">\n     <div class=\"media__container no-light-mode-mobile no-dark-mode no-dark-mode-mobile has-default-media spacer-block-none-bottom\">\n      <div class=\"media-image-block no-light-mode-mobile no-dark-mode no-dark-mode-mobile has-default-media\"></div>\n     </div>\n    </div>\n   </section>\n   <section class=\"section-default spacer-block-md-bottom spacer-block-md-top\">\n    <div class=\"grid__inner grid__column--span-6-lg grid__column--offset-3-lg grid__column--span-8-md grid__column--offset-2-md grid__column--span-12-sm grid__column--span-12-xs\">\n     <div class=\"rich-text\">\n      <p class=\"lead-paragraph\">Building trust in proprietary model benchmarks using cryptographically secure environments</p>\n      <p>Imagine a student is set to take a high-stakes exam. If they accidentally peek at the test questions in advance, achieving a perfect score is influenced by this knowledge, making it a meaningless accomplishment. To truly measure what they know, they must have no visibility of the test questions until it's time to take the exam. That is the exact challenge the industry faces when evaluating advanced AI models. If a model has already seen the test questions - a problem known as benchmark contamination - the results can only be trusted to an extent.</p>\n      <p>Today, we’re introducing the <strong>world’s first double-blind evaluation of a proprietary, frontier class AI model,</strong> which keeps external evaluations confined to a cryptographic “box” where they can’t be used by models later to optimize performance ahead of testing. We're partnering with the Singapore AI Safety Institute, OpenMined, AVERI, and <a href=\"https://mlcommons.org/2026/08/double-blind-reliability-evaluation/\" rel=\"noopener\" target=\"_blank\">MLCommons</a>, to test a Gemini Flash Lite model against confidential benchmarks in a <a href=\"https://cloud.google.com/blog/products/identity-security/verifiable-trust-in-the-ai-era-whats-new-in-confidential-computing\" rel=\"noopener\" target=\"_blank\">privacy-preserving environment</a>, increasing evaluation integrity.</p>\n      <p>At Google, we assess our AI systems using a broad spectrum of evaluations throughout model development and deployment, but we don’t rely on internal testing alone. To identify potential blindspots, we work with a diverse group of external partners, including specialized research labs, civil society and national AI Safety and Security Institutes (AISIs), using their unique expertise to stress-test our models.</p>\n      <p>As AI models become more capable, ensuring the model has not seen the test questions or prompts in advance is critical, as this can skew the results. Policymakers, researchers, and enterprises need to trust that AI benchmarks accurately reflect a model's true capabilities and safety, but if models are able to “peek” at the evaluation questions in advance, it can artificially inflate scores and undermine this trust.</p>\n      <p>Although zero-logging protocols and rigorous contractual safeguards have long kept external test prompts confidential, incorporating technical and cryptographic safeguards marks a major step forward in secure model evaluation.</p>\n      <h2>How double-blind evaluations work</h2>\n     </div>\n    </div>\n   </section>\n   <section class=\"section-default spacer-block-md-bottom spacer-block-md-top\">\n    <div class=\"grid__inner grid__column--span-8-md grid__column--offset-2-md grid__column--span-12-sm grid__column--span-12-xs\">\n     <div class=\"media-content-wrapper\">\n      <div class=\"media__container has-dark-mode-alternative no-light-mode-mobile no-dark-mode-mobile spacer-block-none-bottom\">\n       <div class=\"media-image-block has-dark-mode-alternative no-light-mode-mobile no-dark-mode-mobile\">\n        <img alt=\"An architectural diagram illustrating a 7-step secure evaluation workflow between an &quot;AI Owner&quot; and an &quot;Evaluator&quot; using a secure &quot;GPU Enclave.&quot;\" class=\"image image--svg picture__image media--aspect-16-9 light-mode media--with-border\" src=\"https://media.bestblogs.dev/20260827141303_Double_blind_evals_diagram.svg\"><img alt=\"An architectural diagram illustrating a 7-step secure evaluation workflow between an &quot;AI Owner&quot; and an &quot;Evaluator&quot; using a secure &quot;GPU Enclave.&quot;\" class=\"image image--svg picture__image media--aspect-16-9 dark-mode-alternative media--with-border\" src=\"https://media.bestblogs.dev/20260827141303_Double_blind_evals_diagram_dark.svg\">\n       </div>\n      </div>\n     </div>\n    </div>\n   </section>\n   <section class=\"section-default spacer-block-md-bottom spacer-block-md-top\">\n    <div class=\"grid__inner grid__column--span-6-lg grid__column--offset-3-lg grid__column--span-8-md grid__column--offset-2-md grid__column--span-12-sm grid__column--span-12-xs\">\n     <div class=\"rich-text\">\n      <p>Historically, high-stakes external evaluations required a tradeoff. Either evaluators handed over their testing prompts (risking the model provider seeing the test questions in advance), or the model provider handed over their model weights (risking their intellectual property).</p>\n      <p>Double-blind evaluations eliminate this compromise. By using Confidential Space within Google Cloud’s <a href=\"https://cloud.google.com/security/products/confidential-computing\" rel=\"noopener\" target=\"_blank\">Confidential Computing</a> portfolio, we can cryptographically verify that both the external evaluation data and the proprietary model remain private to their respective owners. The evaluator cannot see the Gemini model weights, and Google cannot see the evaluator’s test prompts.</p>\n      <h2>A novel approach to building trust in model evaluations</h2>\n      <p>This cryptographic evidence helps prevent benchmark contamination and protects sensitive data. As models become more capable this becomes particularly important for highly sensitive evaluations, such as those used for cybersecurity or by government bodies. Double-blind evaluations unlock the ability for independent organizations to rigorously test advanced models without compromising data sovereignty or security.</p>\n      <p>We hope this pilot establishes a new frontier for model oversight, helping the broader industry build safer, more reliable, and widely trusted AI systems. To learn more about our methodology and findings, read our <a href=\"https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/piloting-the-worlds-first-double-blind-ai-evaluations/double-blind-evaluations-technical-report.pdf\" rel=\"noopener\" target=\"_blank\">technical report</a>.</p>\n     </div>\n    </div>\n   </section>\n  </main>\n </body>\n</html>",
+  "aiSummary": "Google DeepMind 推出革命性的双盲评估方法，与新加坡 AI 安全研究所等机构合作，在不泄露数据的情况下，利用机密基准对 Gemini Flash Lite 模型进行安全测试。",
+  "oneSentenceSummary": "Google DeepMind 推出革命性的双盲评估方法，与新加坡 AI 安全研究所等机构合作，在不泄露数据的情况下，利用机密基准对 Gemini Flash Lite 模型进行安全测试。",
+  "summary": "本文介绍了全球首个双盲 AI 评估的推出，这是确保基准完整性的关键一步。通过利用加密保护和机密计算，Google DeepMind 允许独立组织在不损害数据安全或造成基准污染的情况下，对私有模型进行严格测试。这种创新方法保护了敏感的评估数据和模型权重，从而增强了对 AI 性能指标的信任。",
+  "mainPoints": [
+    {
+      "point": "基准污染的挑战",
+      "explanation": "随着 AI 模型变得越来越先进，它们提前看到测试问题（基准污染）的风险也在增加。这会破坏评估分数的可信度，因为通过偷看获得的满分并不反映真正的能力。"
+    },
+    {
+      "point": "双盲解决方案",
+      "explanation": "双盲评估通过将模型权重和测试提示都保密来解决这一问题。使用 Google Cloud 的机密空间，评估在安全的「盒子」中进行，双方都无法访问对方的数据，从而确保结果的完整性。"
+    },
+    {
+      "point": "行业影响",
+      "explanation": "这一试点代表了 AI 治理的重大进步。它允许对敏感模型（例如用于网络安全或政府用途的模型）进行无偏见的、高风险的测试，而无需共享私有信息，从而在 AI 生态系统中建立了更大的信任。"
+    }
+  ],
+  "keyQuotes": [
+    "为了真正衡量它们的能力，它们在考试之前必须看不到试题。",
+    "我们正在推出全球首个针对私有、前沿级 AI 模型的双盲评估。",
+    "双盲评估消除了这种妥协。通过使用 Google Cloud 机密计算组合中的机密空间，我们可以加密验证外部评估数据和私有模型都对各自的所有者保持私密。"
+  ],
+  "tags": [
+    "AI 安全",
+    "模型评估",
+    "机密计算",
+    "基准完整性",
+    "双盲测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 518,
+  "domain": "deepmind.google",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_cca1dc",
+  "sourceName": "Google DeepMind News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787835556000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-27 20:59:16"
+}

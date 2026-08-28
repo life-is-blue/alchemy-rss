@@ -1,0 +1,50 @@
+{
+  "id": "RAW_d7fb301f3a",
+  "title": "什么是 AI，以及您的企业应该如何实际使用它？",
+  "url": "https://dev.to/wajiha_khaliq_e493e3db2e0/what-is-ai-and-how-should-your-business-actually-use-it-ghi",
+  "date": "2026-08-27 22:16:07",
+  "author": "Wajiha Khaliq",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In 2012, a research team fed 1.2 million images into a neural network called AlexNet and watched it beat every existing image recognition system by a wide margin. That single experiment is the reason your phone can now unlock by looking at your face and the reason a chatbot can draft your emails before you've had coffee.</p>\n  <p>Artificial intelligence, at its simplest, is software that learns patterns from data instead of following instructions written line by line. A traditional program does exactly what a developer tells it to do. An AI model looks at thousands or millions of examples, finds the patterns inside them, and uses those patterns to make predictions on new information it has never seen before. That's the whole trick. Everything else, the chatbots, the image generators, the recommendation engines, is a variation on that one idea.</p>\n  <p>How AI Actually Gets Used Day to Day</p>\n  <p>Talk of AI often stays abstract, so it helps to look at where it shows up in ordinary work.</p>\n  <p>Customer support teams use it to draft first-pass replies to common questions, which a human then reviews before sending. Marketing teams use it to generate outlines, headlines, and image concepts, then rewrite the parts that sound flat. Developers use AI coding assistants to scaffold functions and catch bugs earlier in the process. Product teams building software from scratch, including studios like <a href=\"https://www.solvemotive.com/\" target=\"_blank\" rel=\"noopener noreferrer\">SolveMotive</a>, use AI models inside the products themselves: recommendation systems, automated data tagging, chat interfaces that route users to the right feature.</p>\n  <p>The pattern across all of these is the same. AI handles the repetitive first draft or the pattern-matching task, and a person handles judgment, context, and the final call. Teams that treat AI as a replacement for that judgment tend to ship work that reads generic or gets facts wrong. Teams that treat it as a fast first pass tend to move quicker without losing quality.</p>\n  <p>The Advantages Worth Taking Seriously</p>\n  <p>Speed is the obvious one. A task that took a team three days, first-draft research, a rough outline, an initial data pull, can now take an afternoon. That time gets reinvested into the parts of the work that actually need a human: strategy, editing, relationship-building with clients.</p>\n  <p>Cost is the second. Small teams can now do things that used to require a much larger headcount. A two-person startup can run customer support, content, and basic data analysis with AI tools handling the volume, then a human handling the exceptions.</p>\n  <p>Consistency matters too, though it's less talked about. An AI model doesn't get tired at 4pm or skip a step because it's the fifth similar task of the day. For repetitive, well-defined work, that consistency reduces errors that come from fatigue.</p>\n  <p>The Disadvantages Nobody Wants to Slow Down For</p>\n  <p>AI models are only as good as the data they were trained on, and that data has gaps and biases baked into it. A hiring tool trained mostly on resumes from one demographic will favor that demographic, even without anyone intending it to. This isn't a hypothetical risk; it has already shown up in real hiring and lending tools that companies had to pull back.</p>\n  <p>Accuracy is the second real problem. Language models generate text that sounds confident whether or not it's correct. They can invent a statistic, misattribute a quote, or describe a study that doesn't exist, and they'll say it in the same steady tone as a fact they got right. Anyone publishing AI-assisted content without checking it is publishing guesses dressed up as research.</p>\n  <p>Then there's the dependency question. Teams that lean on AI for every task, including ones that need real judgment, can lose the muscle for doing that work themselves. When the model gets something wrong or the tool goes down, nobody on the team remembers how to do the task the slower way.</p>\n  <p>None of this means AI isn't worth using. It means it's worth using with a person checking the output, especially for anything that touches facts, money, or another person's opportunities.</p>\n  <p>Where This Leaves Founders and Teams</p>\n  <p>The teams getting real value from AI right now aren't the ones chasing every new model release. They're the ones who picked two or three specific, repetitive tasks, tested AI against them for a few weeks, and kept what actually saved time without dropping quality. That's a much smaller ask than \"adopt AI across the company,\" and it's a much more honest place to start.</p>\n  <p>If you're building a product and trying to figure out where AI actually belongs in it versus where it's just noise, that's the kind of question a team like <a href=\"https://www.solvemotive.com/\" target=\"_blank\" rel=\"noopener noreferrer\">SolveMotive</a> works through with early-stage founders every week, scoping the feature before writing a line of code.</p>\n </body>\n</html>",
+  "aiSummary": "AI 是从数据中学习模式以进行预测的软件，可用于加快业务决策和自动化，但需要人为监督以确保准确性和公平性。",
+  "oneSentenceSummary": "AI 是从数据中学习模式以进行预测的软件，可用于加快业务决策和自动化，但需要人为监督以确保准确性和公平性。",
+  "summary": "人工智能（AI）是一种技术，其中软件从大型数据集中学习模式，而不是遵循显式指令。这种能力允许在客户支持、营销和产品开发等各种业务环境中进行快速分析和预测。虽然 AI 在速度和成本效率方面具有显著优势，但它也存在风险，包括数据偏差和潜在的不准确性，因此需要对 AI 的输出进行仔细的人为审查。",
+  "mainPoints": [
+    {
+      "point": "AI 从数据中学习，而不是从指令中学习。",
+      "explanation": "与传统软件不同，AI 模型通过识别历史数据中的模式来预测新输入，这是图像识别和聊天机器人等技术背后的核心原理。"
+    },
+    {
+      "point": "AI 用于重复性、基于模式的任务。",
+      "explanation": "在实践中，AI 帮助处理诸如起草客户回复、生成内容大纲和分析数据趋势等任务，从而使人类工作人员能够专注于更复杂、需要判断的活动。"
+    },
+    {
+      "point": "人为监督是必不可少的。",
+      "explanation": "因为 AI 模型可能会从其训练数据中继承偏差，并产生自信但错误的输出，所以企业必须实施人为审查流程来验证 AI 生成的内容，然后再使用。"
+    }
+  ],
+  "keyQuotes": [
+    "从最简单的意义上说，人工智能是软件，它从数据中学习模式，而不是遵循逐行编写的指令。"
+  ],
+  "tags": [
+    "人工智能",
+    "机器学习",
+    "业务自动化",
+    "数据分析",
+    "客户支持"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 80,
+  "wordCount": 785,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787840167000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-27 22:16:07"
+}

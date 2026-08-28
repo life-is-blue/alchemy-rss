@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-28 01:04:57 | [返回首页](/README.md)
+**更新时间**: 2026-08-28 09:55:55 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15237)
+- [AI & 大模型](#ai-llm) (15272)
 - [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (953)
-- [DevOps](#devops) (727)
+- [前端与全栈](#frontend-fullstack) (957)
+- [DevOps](#devops) (728)
 - [产品与商业](#product-business) (47)
-- [其他](#other) (6715)
+- [其他](#other) (6735)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [开创全球首个双盲-AI-评估](https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/) - AI 精选
+- [更好的答案，更广阔的思考：学生从-ChatGPT-和批判性思维训练中获得什么](https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training) - AI 精选
 - [赋能关于人类如何使用-Claude-的独立研究](https://www.anthropic.com/research/enabling-independent-research) - AI 精选
 - [SaaS-的未来是智能体可用的应用](https://www.latent.space/p/lovable-future-of-saas) - AI 精选
 - [Jalapeño-首次结果展示-AI-推理领域领先的速度与效率](https://openai.com/index/jalapeno-first-results) - AI 精选
@@ -40,10 +42,8 @@
 - [从-Kimi-K3-技术报告看前沿模型是如何炼成的](https://towardsdatascience.com/how-a-frontier-model-gets-built-read-from-the-kimi-k3-report/) - AI 精选
 - [涉及-OpenAI-模型的第三方网络安全评估](https://openai.com/index/third-party-cyber-evaluations-involving-openai-models) - AI 精选
 - [推理工程大师课-—-Philip-Kiely-与-Ali-Taha，Baseten](https://www.latent.space/p/inference-eng) - AI 精选
-- [Qwen3.8-Max：编程与办公，全面跃升](https://mp.weixin.qq.com/s?__biz=Mzk0ODg4NDI5NA==&mid=2247489871&idx=1&sn=bb0230aa69fa1f90e26149ae3c008093) - AI 精选
-- [构建语音控制的-AI-智能体](https://www.kdnuggets.com/building-voice-controlled-ai-agents) - AI 精选
 
-- [查看全部 15237 篇...](/details/tags/ai-llm.md)
+- [查看全部 15272 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 953 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 957 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 727 篇...](/details/tags/devops.md)
+- [查看全部 728 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 - [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 
-- [查看全部 6715 篇...](/details/tags/other.md)
+- [查看全部 6735 篇...](/details/tags/other.md)
 
 

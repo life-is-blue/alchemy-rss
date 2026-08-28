@@ -1,0 +1,50 @@
+{
+  "id": "RAW_4d9c41d3f6",
+  "title": "如何让测试更可持续",
+  "url": "https://www.infoq.com/news/2026/08/making-testing-sustainable/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-27 19:53:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>By using a sustainable testing strategy, you can skip unnecessary tests, ensure failing fast and early, and only run tests affected by code changes, Jochen Joswig suggested in his talk about DevGreenOps at <a href=\"https://www.oop-konferenz.de/en/\">OOP Conference</a>. Tracking energy use per test and using static code analysis can help spot inefficiencies and guide optimization efforts.</p>\n   <p>Sustainable testing starts with setting up a proper testing strategy, Joswig mentioned. This ensures that no unnecessary tests and test cases are executed, which not only reduces the time it takes to do testing, but also ensures that your testing follows the minimalism and efficiency criteria, he added.</p>\n   <p>Joswig also recommended reducing the number of executed tests to what’s absolutely necessary:</p>\n   <blockquote>\n    <p>By designing the testing strategy, so that tests fail fast and early, because once a test fails, the execution of the rest can be halted, thus saving energy and time. Typically unit tests run first, catching an error here means that no integration test, end to end test, UI tests, etc. must be run.</p>\n   </blockquote>\n   <p>He suggested executing only tests that test the code that has changed. This is particularly true for all automated tests in monorepo projects. When only the frontend code changes, then there is no reason why the backend code should be tested and vice versa, he mentioned. You can go into even smaller detail and run static code analysis first, and then only execute the affected tests, he added.</p>\n   <p>If you want to improve your automated test setup, you can try to track energy consumption of each individual test during execution and feed that into your observability stack, raising alarms if certain methods or runs exceed energy thresholds, to incentivise reengineering of parts of the code to optimize performance, Joswig mentioned.</p>\n   <p>If you cannot extract energy consumption information, but you still want to optimize the transparency of your tests, you could use proxy metrics like MB transferred, time, CPU and Memory utilization, he added.</p>\n   <p>Joswig recommended running static code analysis to test for easy-to-spot inefficiencies in the code, for instance, sending backend calls or database queries from within a loop. He mentioned that there are several tools available:</p>\n   <blockquote>\n    <p>There is <a href=\"https://github.com/green-code-initiative/creedengo-rules-specifications\">Creedengo</a>, an open-source plugin for SonarQube. It supports Java, and also other languages like Python, JavaScript, and C#. There are also closed-source alternatives, which may come with an even wider support for detecting inefficiencies in the codebase, or which can handle other and/or more languages than Creedengo. However, since these are pay-to-use, I personally could not yet verify this.</p>\n   </blockquote>\n   <p>Creedengo comes with a caveat, though. Some of its rules have a negligible impact on performance and energy consumption. Therefore, it is important to hand-pick a useful subset of rules, Joswig mentioned.</p>\n   <p>Guided by the motto \"the greenest code is the code you never write\", Joswig stressed the importance of testing early in the development life-cycle with low-fidelity click-dummies or paper prototype tests, to ensure that development teams focus on features that actually add value and matter to users:</p>\n   <p>Sustainable testing or green software development in general is a team effort, and everyone can contribute. Even the PO, when specifying that weaker and older hardware or operating systems must be supported, and subsequently instructing the team to test on such devices for compatibility and usability.</p>\n   <p>The resulting extended lifespan of the hardware reduces emissions and harmful effects associated with replacing said hardware. It leaves the question of how many test devices a team needs, where Joswig suggested as few as possible, but as many as absolutely necessary.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/jochen-joswig/\">Jochen Joswig</a> after his talk.</p>\n   <p><strong>InfoQ: Why should we track energy consumption during testing?</strong></p>\n   <blockquote>\n    <p><strong>Jochen Joswig</strong>: Tracking the energy consumption gives developers more insight into how much energy each part of the application consumes and where the potential for future improvements lies.</p>\n    <p>A similar approach has led to the vital discovery of a critical vulnerability, which is now listed in the NIST national vulnerability database under CVE-2024-3094. In his Mastodon post, Andres Freund describes how he <a href=\"https://mastodon.social/@AndresFreundTec/112180406142695845\">found a security vulnerability</a> almost as a byproduct of his testing.</p>\n    <p>Given the gravity of the vulnerability, one can ask if finding it should have ever been left to chance, especially because it shows that software development teams stand to learn a lot about their software, with the potential to affect every part of it.</p>\n   </blockquote>\n   <p><strong>InfoQ: What do you expect the future will bring when it comes to sustainable software development?</strong></p>\n   <blockquote>\n    <p><strong>Joswig</strong>: I expect the electricity demand for software development to increase in the next few years. This increase in demand could lead to an increase in cost; hence, the cost of energy and hardware will remain a factor and will determine the profitability of innovations. Increasing efficiency will become a focus, if not even a competitive advantage.</p>\n    <p>We will see motivated individuals, institutions, universities, and companies, as well as communities and open source projects, raise awareness and pave the way to a necessary greener digital future. I expect lots of knowledge, tools, and other contributions in various forms will come from this.</p>\n    <p>The free market sector might take a while to adopt green software best practices. Governments, especially in the EU, have IT sustainability already on their radar, and I expect contracts and tenders issued by governmental organs to include points on IT sustainability and sustainable software, hopefully creating a cascade of adoption throughout the supply chain.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How to Make Testing More Sustainable\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/making-testing-sustainable/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1787831580000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "通过实施一种优先考虑效率并最小化不必要执行的可持续测试策略，开发者可以显著减少能源消耗，并改善软件开发过程的整体可持续性。",
+  "oneSentenceSummary": "通过实施一种优先考虑效率并最小化不必要执行的可持续测试策略，开发者可以显著减少能源消耗，并改善软件开发过程的整体可持续性。",
+  "summary": "本文概述了一种全面的可持续测试方法，强调建立稳健的测试策略以避免冗余测试的重要性。它建议只执行必要的测试，特别是那些受最近代码更改影响的测试，并利用静态代码分析来识别低效之处。文章还强调了跟踪能源消耗指标以推动优化工作，以及团队协作在实现绿色软件开发目标中的作用。",
+  "mainPoints": [
+    {
+      "point": "战略性测试执行",
+      "explanation": "一个明确的测试策略对于可持续性至关重要，它确保只运行最相关的测试。这涉及根据代码更改来优先安排测试，并使用静态分析来确定哪些模块需要验证，从而减少不必要的能源消耗。"
+    },
+    {
+      "point": "能源消耗跟踪",
+      "explanation": "为了有效地优化测试流程，必须跟踪能源消耗指标。这些数据使开发者能够识别高能耗的测试或低效的代码模式，从而进行有针对性的改进，降低测试阶段的整体环境影响。"
+    },
+    {
+      "point": "协作责任",
+      "explanation": "可持续测试是一项团队努力，需要所有利益相关者（包括产品所有者和开发者）的参与。通过考虑测试设备的硬件要求和生命周期，团队可以做出明智的决策，延长设备的使用寿命并减少浪费。"
+    }
+  ],
+  "keyQuotes": [
+    "通过设计测试策略，使测试快速失败并提前结束，因为一旦测试失败，就可以停止执行其余部分，从而节省能源和时间。"
+  ],
+  "tags": [
+    "可持续测试",
+    "DevGreenOps",
+    "能源效率",
+    "静态代码分析",
+    "Monorepo 测试"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 889,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787831580000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-27 19:53:00"
+}

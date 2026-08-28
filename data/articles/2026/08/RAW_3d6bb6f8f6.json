@@ -1,0 +1,50 @@
+{
+  "id": "RAW_3d6bb6f8f6",
+  "title": "Verdict Buddy by Inithouse vs a generic AI chat: why an AI conflict mediator runs Gottman， EFT and NVC",
+  "url": "https://dev.to/jakub_inithouse/verdict-buddy-by-inithouse-vs-a-generic-ai-chat-why-an-ai-conflict-mediator-runs-gottman-eft-and-2n9c",
+  "date": "2026-08-27 22:26:36",
+  "author": "Jakub",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>290 users have rated Verdict Buddy 4.9 out of 5. Most of them came in after typing something like \"settle this argument\" into a general-purpose AI and getting a diplomatic non-answer that helped nobody.</p>\n  <p>That gap between what people expect from AI and what actually helps in a conflict is exactly why we built a dedicated mediator at Inithouse.</p>\n  <h2><a name=\"the-whos-right-problem\" href=\"#the-whos-right-problem\"> </a> The \"who's right\" problem</h2>\n  <p>You paste a disagreement into a chatbot. The response follows a predictable shape: both sides have valid points, communication is key, consider talking it out. It reads well. It changes nothing.</p>\n  <p>The issue is structural. A general-purpose AI optimizes for helpfulness across millions of topics. It has no conflict-specific pipeline, no framework selection logic, no way to score tension or separate positions from interests. It gives you prose where you need a verdict.</p>\n  <h2><a name=\"what-a-frameworkbased-pipeline-does-differently\" href=\"#what-a-frameworkbased-pipeline-does-differently\"> </a> What a framework-based pipeline does differently</h2>\n  <p>Verdict Buddy runs each conflict through a sequence that mirrors how trained mediators actually work:</p>\n  <ol>\n   <li>\n    <p><strong>Classify the conflict pattern.</strong> Is this a pursuer-withdrawer dynamic (Gottman)? An unmet attachment need (EFT)? A values collision that negotiation theory handles better? The classification step determines which framework drives the analysis.</p>\n   </li>\n   <li>\n    <p><strong>Apply the framework.</strong> Gottman's Four Horsemen model checks for contempt, criticism, defensiveness, and stonewalling. EFT looks at the emotional cycle underneath the surface complaint. NVC separates observations from evaluations. Each framework has a specific lens, and a generic chatbot uses none of them.</p>\n   </li>\n   <li>\n    <p><strong>Score and structure the output.</strong> The report includes a tension score, both perspectives restated without the original charge, and 3 to 5 concrete next steps. Not \"communicate better.\" Specific actions tied to the pattern that was identified.</p>\n   </li>\n  </ol>\n  <p>The whole thing runs in under five minutes. Solo, with a partner, or in a group.</p>\n  <h2><a name=\"side-by-side-generic-chat-vs-frameworkbased-mediator\" href=\"#side-by-side-generic-chat-vs-frameworkbased-mediator\"> </a> Side by side: generic chat vs. framework-based mediator</h2>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th></th>\n      <th>Generic AI chat</th>\n      <th>Verdict Buddy</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td><strong>Input</strong></td>\n      <td>Free-form prompt, user frames the problem</td>\n      <td>Guided form, both sides captured separately</td>\n     </tr>\n     <tr>\n      <td><strong>Conflict model</strong></td>\n      <td>None (general language model)</td>\n      <td>Gottman, EFT, NVC, Harvard Negotiation</td>\n     </tr>\n     <tr>\n      <td><strong>Output</strong></td>\n      <td>Paragraphs of balanced advice</td>\n      <td>Structured report: tension score, perspectives, verdict, action steps</td>\n     </tr>\n     <tr>\n      <td><strong>Repeatability</strong></td>\n      <td>Different answer each time</td>\n      <td>Same conflict pattern triggers same framework</td>\n     </tr>\n     <tr>\n      <td><strong>Bias handling</strong></td>\n      <td>Tends toward diplomatic neutrality</td>\n      <td>Framework constrains the analysis to observable patterns</td>\n     </tr>\n     <tr>\n      <td><strong>Time to result</strong></td>\n      <td>Depends on prompt quality</td>\n      <td>Under 5 minutes, guided</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <h2><a name=\"why-this-matters-for-real-conflicts\" href=\"#why-this-matters-for-real-conflicts\"> </a> Why this matters for real conflicts</h2>\n  <p>The Gottman Institute's research puts the number at 69%: that is the share of relationship conflicts that are perpetual. They don't resolve; they recur. A response that says \"both of you have a point\" doesn't help with a pattern you'll face again next month.</p>\n  <p>Workplace conflicts carry measurable cost too. CPP Global's data shows $359 billion in annual productivity losses from conflict in the US alone. SHRM reports 85% of employees deal with it, spending an average 2.8 hours per week.</p>\n  <p>These aren't problems that need more eloquent advice. They need pattern recognition and structured intervention, which is what psychology frameworks were designed for.</p>\n  <h2><a name=\"what-we-learned-building-it\" href=\"#what-we-learned-building-it\"> </a> What we learned building it</h2>\n  <p>We picked four frameworks because they cover different conflict mechanics. Gottman handles communication patterns in close relationships. EFT works at the attachment level. NVC is useful across contexts because it operates on the observation-feeling-need-request chain. Harvard Negotiation Project methods apply when the conflict is about interests rather than emotions.</p>\n  <p>The combination means the tool can route a roommate dispute about dishes through a different lens than a couple arguing about how to spend weekends. A generic chatbot treats both identically.</p>\n  <p>We also learned that people want a verdict, not a therapy session. The most common feedback is some version of \"finally, someone just told me what's going on.\" That is what a structured pipeline delivers and a balanced paragraph does not.</p>\n  <p>You can try it at <a href=\"https://verdictbuddy.com\" target=\"_blank\" rel=\"noopener noreferrer\">verdictbuddy.com</a>.</p>\n </body>\n</html>",
+  "aiSummary": "Verdict Buddy distinguishes itself from generic AI chats by utilizing a structured pipeline that applies specific conflict resolution frameworks (Gottman， EFT， NVC) to analyze disputes， providing a tension score and actionable next steps rather than vague advice.",
+  "oneSentenceSummary": "Verdict Buddy distinguishes itself from generic AI chats by utilizing a structured pipeline that applies specific conflict resolution frameworks (Gottman， EFT， NVC) to analyze disputes， providing a tension score and actionable next steps rather than vague advice.",
+  "summary": "The article contrasts the limitations of general-purpose AI chatbots in handling conflicts with the specialized approach of Verdict Buddy. It explains that a generic chat lacks a conflict-specific pipeline and fails to apply recognized psychological frameworks， resulting in ineffective responses. Verdict Buddy， on the other hand， systematically classifies conflicts， applies relevant frameworks， and generates a structured report with a tension score and concrete action steps， offering a more reliable solution for resolving recurring disputes.",
+  "mainPoints": [
+    {
+      "point": "Generic AI chats fail to resolve conflicts effectively because they lack a specific conflict-resolution pipeline and do not utilize established psychological frameworks.",
+      "explanation": "General-purpose AI models are optimized for broad conversational tasks rather than the nuanced analysis required for conflict mediation. Without a framework to guide the analysis， the AI cannot accurately identify the underlying issues or suggest effective solutions， often resulting in vague or unhelpful advice."
+    },
+    {
+      "point": "Verdict Buddy employs a multi-step process that includes conflict classification， framework application， and structured output generation.",
+      "explanation": "The service first identifies the specific pattern of the conflict (e.g.， pursuer-withdrawer dynamics) and then applies the corresponding framework (such as Gottman or EFT) to analyze the data. This results in a clear， structured report that includes a tension score and specific， actionable next steps for the parties involved."
+    },
+    {
+      "point": "The use of structured frameworks ensures consistency and reliability in conflict analysis compared to the variability of generic chat responses.",
+      "explanation": "By adhering to a defined set of rules and models， Verdict Buddy ensures that similar conflicts are analyzed in a consistent manner， leading to repeatable and trustworthy results. This is a significant improvement over the 'black box' nature of generic AI responses， which can vary wildly based on the prompt."
+    }
+  ],
+  "keyQuotes": [
+    "The issue is structural. A general-purpose AI optimizes for helpfulness across millions of topics. It has no conflict-specific pipeline， no framework selection logic， no way to score tension or separate positions from interests. It gives you prose where you need a verdict."
+  ],
+  "tags": [
+    "Conflict Resolution",
+    "AI Mediation",
+    "Gottman Framework",
+    "EFT",
+    "NVC"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 612,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787840796000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-27 22:26:36"
+}
