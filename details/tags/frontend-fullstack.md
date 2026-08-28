@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-28 09:55:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-28 21:37:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -746,33 +746,25 @@
 
 ### [Astro-推出-Sätteri：基于-Rust-的-Markdown-和-MDX-处理器，构建速度提升高达-60%](https://www.infoq.com/news/2026/08/astro-satteri-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-27 20:31:00 | 标签: Rust, Markdown, MDX, Astro, 性能优化
-
-> Sätteri 是 Astro 团队开发的新一代 Markdown 和 MDX 处理器，使用 Rust 编写以提升构建性能。它取代了笨重的基于 JavaScript 的统一管道，采用更快、更高效的引擎，并原生支持许多之前需要单独插件的功能。Sätteri 已集成到 Astro 7.0 中，显著提高了文档构建速度。
+2026-08-27 20:31:00
 
 
 
 ### [Goodgrowth：启动序列、旋转光盘和投资组合的艺术](https://tympanus.net/codrops/2026/08/27/goodgrowth-boot-sequences-spinning-discs-and-the-art-of-the-portfolio/)
 
-2026-08-27 19:26:31 | 标签: Web 开发, Three.js, GSAP, Web Audio API, 投资组合设计
-
-> 作者分享了构建个人投资组合网站的历程，该网站向 90 年代末/2000 年代初的游戏时代致敬。项目特色包括一个带有滚动项目预览的 3D 地球、一个旋转的 CD 元素，以及一个复杂的启动序列动画。文章深入探讨了遇到的技术挑战，例如优化音频性能、同步动画和创建统一的视觉风格，同时强调了用户体验和交互设计的重要性。
+2026-08-27 19:26:31
 
 
 
 ### [使用文档画中画-API-创建网页小部件](https://css-tricks.com/creating-web-widgets-using-the-document-picture-in-picture-api/)
 
-2026-08-27 16:41:09 | 标签: 文档画中画, 网页小部件, 浮动窗口, JavaScript, CSS
-
-> 本文介绍了文档画中画（DPIP）API，该 API 通过将内容克隆到独立窗口中来创建浮动网页小部件。文章涵盖了必要的 JavaScript 代码，用于检查浏览器支持情况、处理现有的 DPIP 窗口，以及将元素克隆到新窗口中。文章还讨论了 CSS 注意事项，包括使用「display-mode」媒体查询来区分 DPIP 窗口与主文档的样式，并指出了该 API 的局限性，例如仅支持桌面端以及 Safari 浏览器不支持。
+2026-08-27 16:41:09
 
 
 
 ### [JavaScript-中文周刊-#250---Bun-1.4-正式发布，-基于-Rust-重写](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247549294&idx=1&sn=15d32d17d6d787a3e88f0a1aec472100)
 
-2026-08-27 15:40:00 | 标签: JavaScript, Bun, Solid, Electron, TUI
-
-> 本期周刊聚焦前端运行时与框架的重大更新。Bun 1.4 完成从 Zig 到 Rust 的重写，显著提升了对 Node.js、Next.js 和 Playwright 的兼容性，并优化了性能指标。Solid 2.0 RC 引入异步响应式图，简化数据流管理，并冻结 API 以准备正式发布。Electron 44 移除 32 位支持，并更新了剪贴板和网络模块。TermDOM 提供了基于 DOM 的 TUI 构建方案，支持 CSS grid。此外，还包括对 TanStack AI、Oxlint、Next.js 16.3、Node.js Interactive 2026、ESM/CJS 模块机制、Clo...
+2026-08-27 15:40:00
 
 
 

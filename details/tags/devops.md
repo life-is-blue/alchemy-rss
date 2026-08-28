@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-28 09:55:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-28 21:37:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -326,9 +326,7 @@
 
 ### [使用-NVIDIA-MPS-在-Amazon-EC2-上将-ASR-推理成本降低-75%-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/reduce-asr-inference-costs-by-75-with-nvidia-mps-on-amazon-ec2/)
 
-2026-08-27 16:05:10 | 标签: NVIDIA, AWS, 开源, PyTorch, FastAPI
-
-> 本文指出标准 GPU 时间片在 ASR 任务中的低效率：单请求利用率低导致大量空闲时间。文章介绍了 NVIDIA MPS 作为解决方案，使多个进程能够在单个 GPU 上并发执行，从而在不牺牲延迟的情况下有效提高吞吐量。此外，文章还介绍了使用 ONNX 和 TensorRT 进行模型级优化，并给出了在 Amazon EC2 上部署的推理管道的详细架构。
+2026-08-27 16:05:10
 
 
 

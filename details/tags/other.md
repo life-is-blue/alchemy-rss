@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-28 09:55:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-28 21:37:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -1015,9 +1015,7 @@
 
 ### [我们如何通过优化-1.1.1.1-的-DNS-缓存来节省-100-TB-内存](https://blog.cloudflare.com/dns-cache-memory-optimization-1111/)
 
-2026-08-28 01:02:35 | 标签: 1.1.1.1, 深度分析, DNS, 工程, 优化
-
-> 本文详细介绍了 Cloudflare 优化 1.1.1.1 DNS 服务内存占用的努力。通过引入一种优先考虑频繁访问数据的新缓存淘汰策略，并改造底层数据结构以减少每个条目的内存占用，该公司成功将总内存使用量减少了 100 TB，而不会牺牲服务的速度或可靠性。
+2026-08-28 01:02:35
 
 
 
@@ -3723,65 +3721,49 @@
 
 ### [Gemini-Omni-1.1-Flash-赋予你更多控制权](https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/)
 
-2026-08-28 00:14:37 | 标签: 生成视频, 场景扩展, 关键帧控制, 4K 升级, 视频参考
-
-> Gemini Omni 1.1 Flash 在原始 Omni 模型的基础上，增加了适合专业使用的生产级功能。它允许在更好的上下文感知下扩展视频场景，定义帧之间的精确相机运动，进行快速低分辨率起草，并输出高质量的 4K 图像。该更新还支持使用视频参考来保持生成内容的一致性。
+2026-08-28 00:14:37
 
 
 
 ### [让编码代理安全地接触你的数据库架构](https://dev.to/rishi_kora/letting-a-coding-agent-touch-your-database-schema-safely-1j1)
 
-2026-08-27 23:31:22 | 标签: 数据库迁移, Supabase, Prisma, 编码代理, 架构重置
-
-> 本文描述了一起真实事件，其中一位开发者在使用编码代理（Claude Opus 5）时，错误地将 'prisma migrate diff' 命令的影子数据库 URL 配置为生产 Supabase 数据库。这导致代理在尝试重放迁移之前重置了整个生产架构，造成重大数据丢失和停机。文章强调了开发/暂存环境与生产数据库之间严格分离的重要性，以及在使用自动化迁移工具时仔细配置参数的必要性。
+2026-08-27 23:31:22
 
 
 
 ### [FutureX-·-物理-AI-日报-—-第-102-期（08/28）](https://dev.to/future_x/futurex-physical-ai-daily-issue-102-0828-3chf)
 
-2026-08-27 23:01:24 | 标签: 人形机器人, 自动驾驶, 视觉-语言模型, 软银, 小鹏
-
-> 物理 AI 领域正在快速演进，金融巨头如软银正在投资人形机器人，而小鹏等公司则在推动自动驾驶技术的边界。行业正在向更强大、具备记忆能力的视觉-语言模型转变，同时政府对机器人开发提供了大力支持。
+2026-08-27 23:01:24
 
 
 
 ### [什么是-AI，以及您的企业应该如何实际使用它？](https://dev.to/wajiha_khaliq_e493e3db2e0/what-is-ai-and-how-should-your-business-actually-use-it-ghi)
 
-2026-08-27 22:16:07 | 标签: 人工智能, 机器学习, 业务自动化, 数据分析, 客户支持
-
-> 人工智能（AI）是一种技术，其中软件从大型数据集中学习模式，而不是遵循显式指令。这种能力允许在客户支持、营销和产品开发等各种业务环境中进行快速分析和预测。虽然 AI 在速度和成本效率方面具有显著优势，但它也存在风险，包括数据偏差和潜在的不准确性，因此需要对 AI 的输出进行仔细的人为审查。
+2026-08-27 22:16:07
 
 
 
 ### [nanointerpret](https://nanointerpret.pages.dev/)
 
-2026-08-27 21:52:44 | 标签: SAE, 特征可视化, 模型解读, 激活操作, 语言模型
-
-> nanointerpret 提供了一个用户友好的界面，用于探索语言模型的内部表示。它允许可视化单个特征的激活，通过操作这些激活来观察模型输出的变化，并浏览学习到的特征空间，以理解模型的概念结构。
+2026-08-27 21:52:44
 
 
 
 ### [安全探索-80-个可信的旧-Facebook-账号网站..-..](https://dev.to/tisteobbga/explore-80-trusted-aged-facebook-account-sites-safely--1njc)
 
-2026-08-27 21:49:28 | 标签: Facebook 安全, 账号管理, 隐私设置, 双因素认证, 钓鱼预防
-
-> 文章讨论了购买旧 Facebook 账号的潜在危险，包括不明所有权、过时的恢复信息以及之前的访问问题。它建议用户创建自己的账号，以确保合法控制和安全性。文本还提供了关于如何安全管理 Facebook 账号的综合指南，涵盖密码强度、双因素认证、登录活动监控、隐私设置和好友管理。
+2026-08-27 21:49:28
 
 
 
 ### [我们的-Fitbit-Air-特别版-Pokémon-Sleep-来了](https://blog.google/products-and-platforms/devices/fitbit/fitbit-air-special-edition-pokemon-sleep/)
 
-2026-08-27 21:26:50 | 标签: Fitbit, Pokémon, 睡眠跟踪, Google Health, 可穿戴技术
-
-> Fitbit Air 特别版 Pokémon Sleep 是一款轻便、微调的追踪器，与 Pokémon Sleep 应用程序集成，将睡眠数据转化为游戏内奖励。它配有定制的“睡意蓝”腕带和睡觉皮卡丘设计，并提供对 Google Health 睡眠分析和教练的访问，包括 3 个月的 Google Health Premium 试用。
+2026-08-27 21:26:50
 
 
 
 ### [Deep-Cogito-获得-$43M，押注-Post-training](https://mp.weixin.qq.com/s?__biz=MzY4NzI2MTc1NA==&mid=2247485122&idx=1&sn=7b35813659a6355ffaf8008eb80d79f4)
 
-2026-08-27 19:00:00 | 标签: 后训练, 开放权重模型, 企业专用模型, IDA, 模型优化
-
-> Deep Cogito 的新融资用于推进其在模型后训练领域的创新，特别是通过 IDA 方法来优化模型参数。该技术已经在多种参数规模的模型上得到验证，并被用于开发 Cogito 开放权重模型以及基于企业私有数据的专用模型。这一进展表明，AI 竞争正在从单纯的预训练规模转向更有效的模型微调和持续学习能力。
+2026-08-27 19:00:00
 
 
 
@@ -15859,89 +15841,67 @@
 
 ### [CompactGUI：用-Windows-原生压缩功能，为程序和游戏文件夹瘦身](https://www.appinn.com/compactgui-4/)
 
-2026-08-27 23:55:07 | 标签: Windows, NTFS压缩, 硬盘优化, 游戏存储, CompactGUI
-
-> 文章介绍了 CompactGUI 4.0，一个基于 Windows 原生 compact.exe 的图形界面工具。它允许用户直接压缩硬盘上的文件夹和文件，包括游戏和程序，从而节省存储空间。压缩后的文件可以直接运行，且不会显著增加 CPU 负载。此外，由于文件大小减小，加载时间在慢速机械硬盘上可能会有所缩短。安装和使用方法也进行了说明。
+2026-08-27 23:55:07
 
 
 
 ### [Spring-新闻汇总：Boot、Framework、Data、Security、Modulith、Batch-的首个里程碑版本](https://www.infoq.com/news/2026/08/spring-news-roundup-aug17-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-27 23:50:00 | 标签: Spring Boot, Spring Framework, Spring Data, Spring Security, Spring Integration
-
-> 2026 年 8 月 17 日这一周，Spring 生态系统迎来了多个核心项目的首个里程碑版本。Spring Boot 4.2.0-M1 引入了 AMQP 1.0 支持，并使用 Jetty 的 GracefulHandler 改善了关闭协调。Spring Framework 7.1.0-M1 添加了 ResolvableType 工厂方法和自定义参数名支持。Spring Data 2026.1.0-M1 带来了 Redis JSON 集成，并更新了 MongoDB、Elasticsearch 和 Neo4j 模块。Spring Security 7.2.0-M1 增强了 CORS 检测，并修复...
+2026-08-27 23:50:00
 
 
 
 ### [GeoRA:-为-RLVR-设计的-LoRA——ACL-2026-杰出论文解析](https://tech.meituan.com/2026/08/27/ACL-Outstanding-Paper-GeoRA.html)
 
-2026-08-27 21:02:06 | 标签: RLVR, 低秩微调, 几何感知, ACL 2026, 美团
-
-> 论文介绍了 GeoRA，一种基于几何感知的低秩适配方法，用于解决 RLVR 微调中现有 PEFT 方法的几何错位问题。通过结合谱先验和欧氏先验，GeoRA 识别出适合 RLVR 更新的稀疏子空间，并将其压缩为低秩稠密适配器，从而在保持预训练结构的同时，实现了高效、稳定的微调。实验结果表明，GeoRA 在多个领域和模型规模上均优于传统低秩基线，并与全参微调具有可比性。
+2026-08-27 21:02:06
 
 
 
 ### [如何让测试更可持续](https://www.infoq.com/news/2026/08/making-testing-sustainable/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-27 19:53:00 | 标签: 可持续测试, DevGreenOps, 能源效率, 静态代码分析, Monorepo 测试
-
-> 本文概述了一种全面的可持续测试方法，强调建立稳健的测试策略以避免冗余测试的重要性。它建议只执行必要的测试，特别是那些受最近代码更改影响的测试，并利用静态代码分析来识别低效之处。文章还强调了跟踪能源消耗指标以推动优化工作，以及团队协作在实现绿色软件开发目标中的作用。
+2026-08-27 19:53:00
 
 
 
 ### [【大促备战】存储性能优化篇--从异构同步到链路解耦的-JES-治理实战](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502616&idx=1&sn=b59e359170c65256a3d3815bc98739ae)
 
-2026-08-27 19:26:00 | 标签: 性能优化, Elasticsearch, 数据库, 系统设计, 大促备战
-
-> 本文深度复盘京东广告账户资金团队在大促备战中围绕 JES（京东 Elasticsearch）完成的四项核心治理工作。背景是资金流水单表超 3 亿行、物理碎裂在 16 库 50+ 表中，MySQL 在跨分片聚合场景下频繁全表扫描，压测中磁盘繁忙度打满。团队首先自研 Binlog 组件实现异构同步，将高频聚合查询卸载到 ES，并通过实时 Diff、三轮压测、灰度名单与一键降级保障金融级可靠性。其次深入 Lucene 底层机制做查询提效：must 改 filter 激活缓存、大 Terms 熔断与反转优化、消除开放式 Range 命中 BKD 树。第三，对 3TB / 超 50 亿文档的核心索引在线...
+2026-08-27 19:26:00
 
 
 
 ### [为什么你的播客提案没有得到我的回复（或其他人的回复）](https://blog.pragmaticengineer.com/why-youre-not-getting-a-response-to-your-podcast-pitch-from-me-or-others/)
 
-2026-08-27 17:59:13 | 标签: 科技领导力, 创作者经济, 开发者体验, 通讯, 专业发展
-
-> 来自 The Pragmatic Engineer 的 Gergely 针对低质量播客提案的激增进行了回应。他概述了严格的嘉宾选择标准，重点关注那些构建了重大技术、在高度相关公司工作或拥有深厚领域专业知识的个人。他特别批评了营销团队使用 AI 发送模板化、通用提案的趋势，并警告创始人，通过大规模邮件进行自我推广是无效的。相反，他建议真正的影响力来自于构建令人印象深刻的产品或通过写作分享原创思想，而不是寻求通过“免费宣传”来获取分发渠道。
+2026-08-27 17:59:13
 
 
 
 ### [Python、Numba-与算法设计：在金融服务中构建高效模型](https://www.infoq.com/presentations/numba/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-27 17:23:00 | 标签: Python, 性能优化, Numba, GPU 加速, LLVM
-
-> Chad Schuster（Milliman）阐述了 Numba 的 JIT 编译如何加速用于大型金融模型的 Python，涵盖其基于 LLVM 的架构、GPU 支持、优势以及诸如面向对象支持受限和需要重构等局限。实际测试显示约 2 倍 CPU 加速和约 750 倍 GPU 加速，将计算成本从数百万降至数十万，并实现了更多的分析。
+2026-08-27 17:23:00
 
 
 
 ### [Tata-B2B-平台-OTP-明文暴露，仅凭手机号即可接管账户](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651345483&idx=4&sn=a2271d68e01f429579e34cab197b6037)
 
-2026-08-27 16:13:00 | 标签: 安全, 漏洞利用, 身份认证, API 安全, 数据泄露
-
-> 文章揭示了 Tata Nexarc 平台的一个致命安全缺陷：在用户登录时，系统会将生成的 OTP 直接返回给客户端，并暴露在可解密的 API 响应中。这意味着攻击者无需拦截短信或进行暴力破解，只需提交目标手机号，即可从响应中提取 OTP 并完成登录。该漏洞已导致包括 Tata Steel 在内的企业账户被非法访问，直到 2026 年 7 月 31 日才被修复。这一事件强调了 OTP 实现中严格限制数据暴露的重要性，以防止账户接管。
+2026-08-27 16:13:00
 
 
 
 ### [把这个国产神器接入你的-Codex-或-Claude-Code，图片秒变-3D-模型。](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247536215&idx=1&sn=d976d62492d54b38f0195aaf9848b486)
 
-2026-08-27 14:30:00 | 标签: Lux3D, 3D 生成, Codex, Blender, 游戏开发
-
-> Lux3D 是一个基于 AI 的 3D 生成模型，由群核科技发布。它能够将 2D 图片或文字描述转换为高质量的 3D 模型，并支持多种材质效果。本文详细介绍了如何将 Lux3D 接入 Codex，通过自动化脚本实现从图片生成到 3D 模型再到网页展示的完整流程。文章还展示了多个实际应用案例，包括机械暴龙兽的 3D 进化展示和个人珍藏品的数字展柜。
+2026-08-27 14:30:00
 
 
 
 ### [PostgreSQL-太难懂？有人把它做成了城市模拟器](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651291615&idx=4&sn=e993b2cd339eb025d5850edc946de6f7)
 
-2026-08-27 14:00:00 | 标签: PostgreSQL, 数据库, 可视化, 教育, 3D 模拟
-
-> PGSimCity 通过将 PostgreSQL 的核心组件（如 shared_buffers、WAL、锁表）映射为城市中的建筑和区域，提供了一个直观的 3D 界面来观察数据库运行。该项目完全在浏览器中运行，支持实时模拟查询执行、缓存淘汰、事务冲突等场景，并集成了 PGlite 以运行实际的 PostgreSQL 实例。开发者可以利用这一工具来调试配置、分析性能瓶颈，并更好地理解数据库的内部工作原理。
+2026-08-27 14:00:00
 
 
 
 ### [前卫艺术家草间弥生逝世-标志性彩色水玉与南瓜-|-NEWSjp](https://news.jp/i/1465528042000662661)
 
-2026-08-27 11:28:35 | 标签: 艺术, 讣闻, 草间弥生, 当代艺术, 日本文化
-
-> 国际知名前卫艺术家草间弥生因多器官衰竭于 14 日在东京一家医院去世，享年 97 岁。草间弥生出生于长野县，1957 年移居美国，长期以纽约为基地，直到 1973 年回国。她因反越战街头表演而受到关注，被称为「哈普宁女王」。她标志性的水玉与网状图案源于童年时期困扰她的幻觉，她通过绘画来逃避恐惧与焦虑。她的作品涵盖绘画、版画、软雕塑，以及著名的装置于香川县直岛的《南瓜》。1990 年代起她的国际声誉大增，包括参加 1993 年威尼斯双年展，以及 2011-12 年在欧美主要美术馆举办大型回顾展。
+2026-08-27 11:28:35
 
 
 
@@ -40449,11 +40409,11 @@
 
 
 
-### [Anthropic-兄妹-Dario-Amodei-和-Daniela-Amodei-最新对话：Claude-为什么一直限速？](https://baoyu.io/blog/a-conversation-with-dario-amodei-daniela-amodei)
+### [使用-Claude-Code：HTML-难以置信的奇效](https://baoyu.io/translations/2026-05-08/trq212-status-2052809885763747935)
 
-2026-05-06T00:00:00.000Z
+2026-05-08T00:00:00.000Z
 
-> Dario 和 Daniela 把 Anthropic 的增长、算力、安全和组织级 AI 摆到了同一张指数曲线上。
+> Markdown 已经成为 AI 智能体与我们交流的主要文件格式。它简单、轻量，具备一定的富文本能力且易于人工编辑。Claude 甚至已经极其擅长在 Markdown 文件里使用 ASCII 字符绘制图表。然而，随着 AI 越来越强大，HTML 开始展现出惊人的效果。
 
 
 
