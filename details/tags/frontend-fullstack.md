@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-29 12:45:03 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-29 19:58:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -512,9 +512,7 @@
 
 ### [活性检测：6-秒钟窃取一个-Google-账户](https://dev.to/caracomp/liveness-detection-6-seconds-to-a-stolen-google-account-544o)
 
-2026-08-28 17:44:29 | 标签: 认证, WebAuthn, FIDO2, 会话降级, 凭证劫持
-
-> 虽然 WebAuthn 和 FIDO2 成功地缓解了登录阶段的传统钓鱼和凭证拦截，但一个新的攻击向量出现在凭证注册阶段。攻击者正在利用会话降级回退来获取临时访问权限，然后迅速注册自己的设备，有效地用一个有效的加密密钥劫持账户，该密钥甚至在密码重置后仍然有效。
+2026-08-28 17:44:29
 
 
 
@@ -754,9 +752,7 @@
 
 ### [调试-BLE-多点断开连接时，在阿里巴巴网站上发现音频指纹识别](https://www.infoq.com/news/2026/08/alibaba-audio-fingerprinting/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-28 15:07:00 | 标签: 设备指纹识别, Web Audio API, 蓝牙多点, AliExpress, 隐私
-
-> 在排查为什么多点耳机无法从桌面浏览器切换音频焦点到智能手机时，开发者 Matt Callaghan 发现阿里巴巴的 AliExpress 网站在没有播放任何可听声音的情况下，保持了一个活跃的音频流。对页面资产的混淆还原揭示了嵌入在 AWSC 反机器人套件中的跟踪例程，这些例程构建了一个合成的 Web Audio 处理图，用于捕获硬件相关的执行特征进行指纹识别。这个静默流阻止了主机操作系统进入空闲状态，从而锁定了蓝牙多点路由。这一事件凸显了 Web Audio API 中的一个结构性权限差距，因为初始化 AudioContext 不需要明确的用户同意，这使得被动式反机器人防御有可能损害用户隐私和...
+2026-08-28 15:07:00
 
 
 

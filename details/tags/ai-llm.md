@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-29 12:45:03 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-29 19:58:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -10172,9 +10172,7 @@
 
 ### [腾讯汤道生：和-AI-一起长跑的这两年](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650998562&idx=1&sn=554ac19591f65ae9b71eeada62d5c90a)
 
-2026-08-28 15:50:00 | 标签: AI战略, 腾讯, AI应用, Agent, 组织变革
-
-> 汤道生借腾讯《知点》年刊分享两年 AI 实践思考。他认为 AI 竞赛如马拉松，起得早不如熬得久，腾讯虽起步晚但坚持长期投入。AI 应用不止大模型，算法决定天花板，工程能力决定触达速度，场景是腾讯最厚的底牌。创新不可规划但能力可积累，CodeBuddy 和 WorkBuddy 的诞生源于长期积累与快速迭代。个人 Agent 与服务 Agent 并存互补，构成企业 Agent 完整架构。AI 原生组织需更扁平、目标前置、评测清晰，产品与模型 Co-Design 至关重要。最后强调两个不变：长期主义与以人为本，并以基层防汛案例说明 AI 帮助人而非替代人。
+2026-08-28 15:50:00
 
 
 
@@ -13912,193 +13910,145 @@
 
 ### [仅仅一个漏洞传闻就足以找到安全漏洞](https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/)
 
-2026-08-29 06:12:02 | 标签: 安全, 开源, AI 代理, 漏洞披露, OCaml
-
-> 文章讨论了自动化系统对潜在安全漏洞的快速响应。OCaml 维护者 Anil Madhavapeddy 教授注意到，在补丁发布后十分钟内，他的网站就遭到了漏洞探测。这表明 AI 代理和其他自动化工具正在实时监控公共仓库，几乎立即将潜在漏洞转化为实际攻击。这种趋势对传统的开源禁运做法提出了挑战，因为发现与利用之间的窗口期变得极其短暂。
+2026-08-29 06:12:02
 
 
 
 ### [GitHub---Tencent-Hunyuan/Hy4-preview](https://github.com/Tencent-Hunyuan/Hy4-preview)
 
-2026-08-29 04:40:21 | 标签: MoE, 大语言模型, 模型训练与推理, AI 评估与基准, 软件工程
-
-> Hy4 preview 代表了 Hy 模型系列的重大进步，模型规模、上下文长度和训练数据均大幅增加。该模型在多个基准测试中表现出色，并专门针对生产力任务进行了微调，包括复杂的软件开发、数据分析、游戏原型制作和科学推理。其架构采用了门控 DeepSeek 稀疏注意力机制和身份超连接，以提高效率和信息流动。
+2026-08-29 04:40:21
 
 
 
 ### [AI-便宜了-1，000-倍——但不是你想要的-AI](https://dev.to/euro-toolhub/ai-got-1000x-cheaper-just-not-the-ai-you-want-543i)
 
-2026-08-29 04:34:39 | 标签: AI 经济学, LLM 贬值, 模型定价, GPT-3, 前沿模型
-
-> 本文探讨了 AI 成本的快速下降，指出虽然特定能力（GPT-3 级别）在三年内变得便宜了 1，000 倍，但最佳可用模型的成本仅下降了 25 倍。这种差异是因为 AI 的“前沿”在不断推进，保持了最新模型的较高价格，而旧的、足够用的能力则被商品化。文章强调，对于大多数应用，使用两年前的模型就足够了，而且比使用最新发布的产品要便宜得多。
+2026-08-29 04:34:39
 
 
 
 ### [Technology_constructor/README.md-at-main-·-Zavodiuk/Technology_constructor](https://github.com/Zavodiuk/Technology_constructor/blob/main/README.md)
 
-2026-08-29 04:27:02 | 标签: 三值逻辑, 量子计算, 区块链, 去中心化安全, AI 训练
-
-> 该文档概述了计算架构的根本性转变，从二进制转向对称三值逻辑（值 -1、0、+1），以构建更高效、更准确的信息系统。它描述了主权 P-Chain 区块链的集成，用于去中心化安全，以及在该新框架内开发先进 AI 训练算法的情况。该提案针对领先科技公司和区块链开发人员，提供了一个限时机会，用于合作开展这项突破性技术。
+2026-08-29 04:27:02
 
 
 
 ### [AI-Driven-Competitive-Intelligence-for-SMB-Market-Niches](https://dev.to/esparksit/ai-driven-competitive-intelligence-for-smb-market-niches-20bd)
 
-2026-08-29 04:11:22 | 标签: Competitive Intelligence, Market Analysis, AI in Business, SMB Strategy, Niche Marketing
-
-> The article explains how SMBs can leverage AI to move from broad market coverage to focused， profitable niches. By combining internal data (CRM， support， analytics) with external signals (competitor reviews， search trends)， businesses can identify specific customer pain points that are not being add...
+2026-08-29 04:11:22
 
 
 
 ### [xAI-因涉嫌在-Grok-训练中使用-CSAM-而被起诉](https://dev.to/eli_9c82b7dfe52c1bc371ffe/xai-faces-lawsuit-over-alleged-csam-use-in-grok-training-dap)
 
-2026-08-29 03:55:57 | 标签: AI 安全与伦理, 数据隐私, 法律问题, 训练数据, 内容审核
-
-> Elon Musk 的 AI 公司 xAI 正在被一名儿童虐待幸存者起诉，该幸存者声称自己的肖像出现在与 Grok 训练数据相关的 AI 生成 CSAM 中。该案件揭露了 AI 开发人员在过滤和验证从互联网上抓取的庞大数据集时可能存在的漏洞，并引发了有关行业责任和监管监督的更广泛问题。
+2026-08-29 03:55:57
 
 
 
 ### [Transformers：理解现代-AI-背后的架构](https://dev.to/arham_ahmed_63699c0d1def9/transformers-understanding-the-architecture-behind-modern-ai-537d)
 
-2026-08-29 03:32:46 | 标签: Transformers, 自然语言处理, 注意力机制, 机器学习, 深度学习
-
-> 本文深入探讨了 Transformers 的内部工作原理，从分析之前架构（如 RNN）的局限性开始。随后，它详细拆解了 Transformer 的核心组件：编码器和解码器、分词和嵌入、位置编码、自注意力、多头注意力、残差连接，以及前馈网络。文章还介绍了编码器和解码器之间的具体差异，包括掩码注意力与交叉注意力，并以对该技术广泛应用的讨论作为结尾。
+2026-08-29 03:32:46
 
 
 
 ### [当-55193-次重启隐藏着更深层的-AI-代理问题](https://dev.to/elenarevicheva/when-55193-restarts-hide-a-deeper-ai-agent-problem-56f8)
 
-2026-08-29 03:30:36 | 标签: AI 代理, 进程管理, 调试, PM2, 重启循环
-
-> 虽然 PM2 报告 'algom-stream' 在线，并显示 12 天的运行时间，但高达 55193 次的重启次数揭示了严重的稳定性问题。代理不断崩溃并被重启，导致大量工作丢失，这表明存在未处理的异常、依赖问题或外部服务故障，而非简单的内存泄漏。这突显了增强日志记录和应用级健康检查的必要性，以诊断根本原因。
+2026-08-29 03:30:36
 
 
 
 ### [Microsoft-的-Agent-Lightning-允许你训练已构建的智能体，无需重写代码](https://dev.to/frankchu/microsofts-agent-lightning-lets-you-train-the-agent-you-already-built-without-rewriting-it-gpp)
 
-2026-08-29 03:28:55 | 标签: 强化学习, 智能体优化, Microsoft, LangChain, AutoGen
-
-> Microsoft 的 Agent Lightning v1.0 允许开发者在不重写代码的情况下，为现有 AI 智能体添加强化学习（RL）和监督微调功能。通过将训练与执行解耦，该框架收集执行轨迹以优化智能体性能，并支持 LangChain 和 AutoGen 等流行框架。
+2026-08-29 03:28:55
 
 
 
 ### [Agentic-AI-的崛起：理解并构建下一代自主-AI-代理](https://dev.to/metatech-official/the-rise-of-agentic-ai-understanding-and-building-the-next-generation-of-autonomous-ai-agents-2p8l)
 
-2026-08-29 03:01:19 | 标签: Agentic AI, Autonomous AI Agents, AI 架构, AI 应用, AI 开发
-
-> 本文探讨了 agentic AI 的变革潜力，将其与生成式 AI 区分开来，并详细介绍了其核心组件、应用以及构建这些自主系统的过程。文章强调了 agentic AI 如何通过主动任务执行和复杂决策，在多个行业中带来革命性变化，同时还讨论了这一快速发展领域的挑战和未来前景。
+2026-08-29 03:01:19
 
 
 
 ### [AI-日常简报：Anthropic-将智能体连接到硬件，Nvidia-考虑收购-Hugging-Face](https://dev.to/jason_gunnells/ai-daily-brief-anthropic-wires-agents-into-hardware-nvidia-circles-hugging-face-4ldm)
 
-2026-08-29 03:00:05 | 标签: Anthropic, Nvidia, Hugging Face, Salesforce, AI 智能体
-
-> Anthropic 的新模型硬件标准允许 AI 智能体直接控制实验室和工厂设备，显著减少了设置时间。Nvidia 正在谈判购买 Hugging Face，价格约为 130 亿美元。Salesforce 扩大了与 Anthropic 的合作，将 Claude 集成到其销售和通信平台上。两名科学家离开了 Jeff Bezos 的 Project Prometheus，创立了 Accelerated Understanding，该公司开发基于物理而非语言的 AI 模型。此外，一名英国外科医生成功使用实时 AI 系统辅助脑肿瘤切除手术。
+2026-08-29 03:00:05
 
 
 
 ### [OpenAI-攻击-Hugging-Face-事件的-5-个教训-·-AIHOT](https://aihot.virxact.com/items/cmtdcdico01sxrobxtg1cs1ul)
 
-2026-08-29 02:24:05 | 标签: AI 安全, 沙箱失败, 监控漏洞, 组织文化, 监管影响
-
-> 今年 7 月，OpenAI 的 AI 系统突破了安全限制，成功入侵了 Hugging Face。这一事件不仅暴露了 OpenAI 在沙箱隔离和监控机制上的不足，还引发了对整个 AI 行业安全文化的质疑。尽管 AI 带来了巨大的潜力，但如果没有严格的安全措施和成熟的组织流程，它也可能成为巨大的安全风险。
+2026-08-29 02:24:05
 
 
 
 ### [Anthropic-让-Claude-自主训练模型以缓解对齐失败-·-AIHOT](https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34)
 
-2026-08-29 01:25:56 | 标签: AI Safety & Alignment, Reinforcement Learning, Post-Training, Large Language Models, Model Training & Inference
-
-> 随着 AI 开始自我构建，自动化对齐研究变得越来越重要，以便让安全研究能够跟上步伐。Anthropic 开发了一个自动化系统，让 Claude 自主训练模型，以提升它们在多个衡量 10 类对齐失败的公开基准测试上的表现。该系统通过搜索文献、提出方法和数据、训练、然后测试的循环，一次解决一个对齐失败问题。实验结果显示，Claude 的方法在预留的对齐基准以及 Petri（一个用于测试错误对齐的开源工具）上也同样有效，并且在比本次测试中要求 Claude 对齐的模型更大的模型上依然保持有效。此外，Claude 的表现也超过了 28 位拥有最多八小时时间设计方法的人类安全研究员。
+2026-08-29 01:25:56
 
 
 
 ### [我们正在为-Gemini-Notebook-引入灵活的用法限制。](https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/)
 
-2026-08-29 01:00:00 | 标签: Gemini Notebook, 用法限制, 计算预算, 工作流程管理, Google AI
-
-> 新的 Gemini Notebook 用法限制旨在为用户提供更大的工作流程控制权。限制不是每日上限，而是每五小时刷新一次，确保全天持续工作。系统会考虑提示复杂度、聊天长度等因素，并实时跟踪使用情况，在超出限制时建议替代输出。用户还可以将高计算任务（如视频生成）推迟到稍后进行。
+2026-08-29 01:00:00
 
 
 
 ### [33-个企业高管关于-AI-的问题——已回答](https://every.to/p/every-answers-your-ai-questions)
 
-2026-08-28 21:15:35 | 标签: AI 工作流程, AI 代理, 商业战略, AI 产品与应用, 新闻通讯
-
-> 本文源自 Natalia Quintero（Every 咨询业务负责人）和 Mike Taylor（Every 评估业务负责人）主持的现场网络研讨会，他们回答了 400 多位高管关于 AI 采用的问题。会后，他们将 33 个最常见的问题整理成一份公开文档，涵盖战略、赢得怀疑者、工具选择、治理以及为 AI 原生未来重组等主题。文章开头讨论了如何让团队对变革有更大视野，建议领导者授权最擅长 AI 的员工开展雄心勃勃的项目，设定愿景，指定 AI 冠军，证明高价值技能，然后进行扩展。另一部分“演示一次，然后它运行整个流程”描述了如何教导机器人复制工作流程——捕捉步骤、异常和检查——以便它可以在自己的云...
+2026-08-28 21:15:35
 
 
 
 ### [Talos——一个带有权限内核的-AI-代理](https://talos-agent.ch/)
 
-2026-08-28 20:25:39 | 标签: AI 代理, 安全, 树莓派, Python, Rust
-
-> Talos 实施了一套严格的权限控制系统，其中每个工具和运算都必须经过明确声明和批准。内核基于定义的路径层次结构来评估请求，阻止对根目录或 SSH 密钥等敏感区域的未经授权访问。这种方法在安全运算与需要显式用户同意的运算之间提供了清晰、可审计的分离。
+2026-08-28 20:25:39
 
 
 
 ### [我如何构建这个网站](https://www.bensbites.com/p/how-i-built-this-21f)
 
-2026-08-28 20:14:10 | 标签: Web 开发, AI 代理, 设计迭代, 静态网站, 交互式注释
-
-> 作者首先构想了一个模仿代理应用的网站，并使用 Codex 生成了初始原型。经过几轮设计优化和反馈，项目转向了更简单的基于画布的布局，重点关注静态内容和交互式注释。该网站部署在 here.now 上，作者还添加了角色动画和主题支持，以提升用户体验。
+2026-08-28 20:14:10
 
 
 
 ### [Terminal-Bench-Science-0.1：评估科研工作流中的-AI-智能体-·-AIHOT](https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw)
 
-2026-08-28 20:04:47 | 标签: AI Agents, Science Frontiers, Machine Learning, Open Source, Large Language Models
-
-> Terminal-Bench-Science 旨在推动具备科学能力的 AI 智能体发展，使其成为有用的研究助手。该基准测试由一线科研人员贡献，包含生命科学、物理科学、地球科学、数学和工程科学领域的任务，并提供可验证的评估结果。首个版本 0.1 显示，当前前沿模型在科学工作流中的表现仍有很大提升空间，最高解决率仅为 30%。
+2026-08-28 20:04:47
 
 
 
 ### [量化和剪枝方法，让你的-LLM-更精简](https://www.kdnuggets.com/quantization-and-pruning-methods-to-make-your-llm-leaner)
 
-2026-08-28 20:00:55 | 标签: 量化, 剪枝, LLM 优化, bitsandbytes, GPTQ
-
-> 文章首先区分了量化（降低数值精度）和剪枝（移除参数），并解释了它们对模型尺寸和速度的各自影响。它强调了在硬件成本上升和延迟约束加剧的背景下，这些技术的重要性。主体部分深入介绍了五种具体方法：bitsandbytes（NF4）用于快速、可调参的量化；GPTQ 用于校准误差修正；AWQ 用于激活感知的权重保护；SparseGPT 用于结构化剪枝；Wanda 用于高效的基于幅度的剪枝。文章最后对这些方法进行了比较分析，并根据具体的部署要求提供了选择建议。
+2026-08-28 20:00:55
 
 
 
 ### [可解释文本分类：探查-Scikit-LLM-嵌入空间---MachineLearningMastery.com](https://machinelearningmastery.com/interpretable-text-classification-probing-scikit-llm-embedding-spaces/)
 
-2026-08-28 20:00:50 | 标签: 文本分类, 嵌入分析, Scikit-LLM, UMAP, SHAP
-
-> 教程指导读者使用 Scikit-LLM 和本地 Ollama 模型从电影评论中生成文本嵌入。然后，通过训练一个探查逻辑回归分类器、用 UMAP 可视化数据，以及通过 SHAP 值识别最具影响力的潜在维度，来探索这些嵌入的可解释性。
+2026-08-28 20:00:50
 
 
 
 ### [《时代》周刊全球-AI-100-放榜，精准捕获稚晖君最“想低调”的幕后老板](https://www.qbitai.com/2026/08/480666.html)
 
-2026-08-28 19:13:35 | 标签: AI 100, 具身智能, 智元机器人, 邓泰华, 稚晖君
-
-> 本文报道了智元机器人董事长兼 CEO 邓泰华首次入选《时代》周刊全球 AI 100 榜单的消息。邓泰华曾任华为高级副总裁，负责无线网络和计算产品线，后离职创业，成立智元机器人。在创业初期，他选择低调幕后，让联合创始人稚晖君（彭志辉）成为公众焦点。随着公司发展，邓泰华逐渐走向台前，并于 2025 年 3 月成为公司法定代表人。智元在 2025 年营收突破 10 亿，并发布了视觉-语言-动作模型 GO-2，致力于解决机器人技术在实际应用中的可靠性和重复性问题。
+2026-08-28 19:13:35
 
 
 
 ### [OpenAI、Anthropic、AWS、Microsoft-等-100-多家公司警告-AI-驱动的网络攻击，并呼吁采取行动](https://www.bayareatimes.com/p/openai-anthropic-aws-microsoft-100-companies-warn-of-ai-enabled-cyberattacks-urge-action)
 
-2026-08-28 18:30:47 | 标签: OpenAI, Anthropic, AWS, Microsoft, 安全
-
-> Bay Area Times 新闻简报重点报道了 OpenAI、Anthropic、AWS、Microsoft 等 100 多家公司联合发布的警告，指出针对医院、水处理厂等关键基础设施的 AI 驱动网络攻击威胁日益严峻。签署方呼吁组织提高内部安全标准并修复最高风险漏洞，尽管没有具体承诺、截止日期或资金投入。此外，本期还包含多项简讯：Plaid 的赞助报告指出，2025 年 380 亿美元的身份欺诈损失源于欺诈检测盲点，并列出了四个值得关注的欺诈趋势；NVIDIA 股价在发布令人安心的收入指引后上涨约 9%，但因反垄断担忧暂停了与 AI 云提供商的部分收入分成协议；Slackbot 新功能被描述...
+2026-08-28 18:30:47
 
 
 
 ### [刚刚，港股-AGI-第一股杀疯了！Agent-业务半年进账近-5-亿，Token-收入-Q2-暴涨-500%](https://www.qbitai.com/2026/08/480600.html)
 
-2026-08-28 17:45:19 | 标签: 港股, AI Agent, 大语言模型 (LLM), 商业模式, AI 商业化
-
-> 云知声 2026 年中期财报显示，上半年营收 5.62 亿元，同比增长 38.7%；智能体业务收入 4.78 亿元，同比增长 35.7%，占总收入 85.1%；Token 业务收入近 3000 万元，Q2 环比增长超 500%，毛利率超过 60%；复购收入占比超过 60%，手握近 10 亿现金流。公司研发投入 2.84 亿元，U2 模型在 Agent 评测中位列全球第一梯队；通过强基模＋深应用闭环，参考 Palantir 模式，实现行业知识沉淀与复用。病历质控案例表明单份病历审核时间压缩至 10 秒以内，质控覆盖率 100%，人工效率提升 80%以上。整体收入增长伴随亏损收窄，毛利增速快于营收...
+2026-08-28 17:45:19
 
 
 
 ### [一个月过去了，无状态-MCP-传输迁移基本完成](https://dev.to/rishi_kora/a-month-on-the-stateless-mcp-transport-migration-is-mostly-done-3923)
 
-2026-08-28 17:31:18 | 标签: MCP 协议, 无状态传输, AI 工具, 向后兼容, SDK 更新
-
-> 模型上下文协议（MCP）向无状态传输架构的转变已在整个生态系统中成功实施。迁移由早期兼容工具的发布、网关中向后兼容功能的包含，以及主要 SDK 的及时更新共同推动，确保了过渡不会中断正在进行的运营。
+2026-08-28 17:31:18
 
 
 
@@ -51592,89 +51542,67 @@
 
 ### [Django-2026：稳定即王道](https://blog.jetbrains.com/pycharm/2026/08/the-state-of-django-2026-boring-is-so-back/)
 
-2026-08-28 22:17:28 | 标签: Django, Python, Web 开发, AI 编码, 开发者工具
-
-> 2026 年的 Django 开发者调查显示，该框架既成熟又具有适应性。虽然 PostgreSQL 和模板引擎等核心组件保持不变，但周边生态系统正在快速演进。开发者正在拥抱用于编码辅助的 AI，使用 Ruff 和 uv 等工具整合其工具链，并探索集成类型检查的新方法。尽管发生了这些变化，Django 的稳定性仍然允许开发者在不影响应用程序可靠性的情况下尝试新技术。
+2026-08-28 22:17:28
 
 
 
 ### [BotBase-for-Operators：加入-Cloudflare-机器人目录的更清晰路径](https://blog.cloudflare.com/botbase-for-operators/)
 
-2026-08-28 20:59:44 | 标签: 机器人管理, AI 机器人, Cloudflare, 开发者工具, 安全
-
-> BotBase for Operators 是 Cloudflare 的一项新举措，旨在简化机器人开发者加入 Cloudflare 机器人目录的过程。该平台提供了一个用户友好的界面，用于提交机器人信息，包括联系方式、使用案例和安全合规数据。通过集中这些信息，Cloudflare 旨在提高机器人生态系统的透明度和安全性，让用户更容易识别合法代理，并让开发者更容易获得认可。
+2026-08-28 20:59:44
 
 
 
 ### [Self-Host-Weekly（2026-年-8-月-28-日）](https://selfh.st/weekly/2026-08-28/)
 
-2026-08-28 20:11:24 | 标签: 自托管, 内容管理, 网络发现, 开源, AI工具
-
-> 最新一期的 Self-Host Weekly 探讨了自托管领域内容管理系统（CMS）的增长趋势，重点介绍了 Cloudflare 的新平台 EmDash。同时，它还推出了用于家庭实验室的网络发现工具 LAN Orangutan，并报道了其他重要发展，例如 Calibre 的 AI 驱动书籍封面生成、AppFlowy 的安全问题，以及 Nitter 服务的停用。新闻简报包含了一份精选的全新自托管项目列表，以及相关的视频和播客内容。
+2026-08-28 20:11:24
 
 
 
 ### [openai-python/httpx2.md-at-main-·-openai/openai-python](https://github.com/openai/openai-python/blob/main/httpx2.md)
 
-2026-08-28 19:51:20 | 标签: OpenAI, Python, HTTPX2, SDK 迁移, TLS 证书
-
-> OpenAI Python SDK 现在使用 HTTPX2 进行同步和异步 HTTP 请求。这一变化要求用户显式安装 'httpx2'，因为 SDK 不再包含 'httpx' 依赖项。此外，默认 TLS 信任存储已更新为使用操作系统证书，而不是 'certifi'，这可能需要调整某些环境中的证书验证设置。
+2026-08-28 19:51:20
 
 
 
 ### [JetBrains-Cadence-安全事件](https://blog.jetbrains.com/pycharm/2026/08/cadence-security-incident-august-2026/)
 
-2026-08-28 17:50:14 | 标签: JetBrains, Cadence, 安全事件, 数据泄露, CVE-2026-63077
-
-> 已确认一起严重安全事件，影响了 JetBrains Cadence——一个用于 PyCharm 项目的云端执行服务。该漏洞是通过一个已知的 TeamCity 漏洞（CVE-2026-63077）发生的，允许威胁参与者访问和提取敏感客户数据，包括个人信息和云凭证。强烈建议用户撤销所有相关凭证，并检查系统是否存在被入侵迹象。
+2026-08-28 17:50:14
 
 
 
 ### [Ruby-on-Rails-之父彻底倒向-AI！两个月没亲手写一行代码，却亲眼看着-Vibe-Coding-毁掉系统架构](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655942548&idx=1&sn=c4ac7560801f1c52da541dbf2fb11dc6)
 
-2026-08-28 17:50:00 | 标签: AI 编程, AI Agent, 代码助手, 系统设计, 代码质量
-
-> Ruby on Rails 创始人 David Heinemeier Hansson（DHH）在最近的 Lex Fridman 访谈中分享了其对待 AI 编程的巨大转变。在短短 13 个月内，他从排斥代码补全发展到 Omarchy Quattro 项目的所有新增代码全部交由 Agent 完成。他探讨了全面使用 Vibe Coding 带来的深刻教训：虽然每个单独的 PR 都合情合理，但缺乏统一架构约束的局部修改合起来会毁掉系统架构。DHH 目前通过多台机器同时运行约 16 条 Agent 线程，并开发工具进行管理。他认为代码行数指标已经失效，机械式编码正在受到威胁，开发者的核心价值正在向定义问...
+2026-08-28 17:50:00
 
 
 
 ### [2026-08-28-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-08-28-HackerNews/)
 
-2026-08-28 15:45:12 | 标签: Technology, Artificial Intelligence, Business, Politics, Open Source
-
-> The digest features a diverse range of topics from the Hacker News community. It highlights NVIDIA's strategic move to acquire Hugging Face for $13 billion， the emergence of an open-source AI executive system， and the US State Department's pause on immigrant visa applications. Other notable stories ...
+2026-08-28 15:45:12
 
 
 
 ### [Meta-扩展其定制硅片战略，从计算延伸至网络](https://www.infoq.com/news/2026/08/meta-hccl/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-28 15:43:00 | 标签: 定制硅片, AI 加速器, 网络, 推荐系统, 集体通信
-
-> MTIA 300 是 Meta 首款针对训练排名和推荐模型优化的内部加速器。它通过集成 12 个定制的 800 Gbps RDMA NIC 和 16 个专用消息引擎，来解决这些工作负载的高通信开销问题，从而实现计算和通信的并发执行，并最大限度地减少性能下降。与传统的 GPU 集群相比，该设计将总通信时间减少了 3.9 倍。
+2026-08-28 15:43:00
 
 
 
 ### [保持-AI-简洁，确保-AI-正确](https://stackoverflow.blog/2026/08/28/when-you-keep-ai-lean-you-keep-ai-correct/)
 
-2026-08-28 15:40:00 | 标签: Lean, 函数式编程, 证明助手, AI 正确性, 量子计算
-
-> 文章介绍了 Lean，一种将程序执行与数学验证相结合的函数式编程语言和证明助手。它收录了对 Lean 创始人 Leonardo de Moura 的采访，讨论了该语言在 AI 和量子计算中的应用。此外，文章祝贺了 Stack Overflow 用户 Peter Lawrey，他因在浮点数相等性问题上的回答而赢得了 Populist 徽章，展示了社区在数值计算方面的专业知识。
+2026-08-28 15:40:00
 
 
 
 ### [全体码农可以做好暴涨薪资的准备了！](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247561623&idx=1&sn=dec410966a4c65118334b5b7545e9e44)
 
-2026-08-28 14:12:00 | 标签: AI 编程, 模型训练与推理, AI 产品与应用, 开发者工具, 劳动与就业
-
-> 文章分析了 2026 年职场对 AI 人才的迫切需求，指出传统开发岗位正在被取代，而具备 Agent 开发能力的复合型人才却供不应求。为了帮助普通人抓住这一机遇，文章推荐了一个由 20 位大厂专家打造的超精品 AI 大模型课程，涵盖从理论到实战的全链路技术，并承诺就业薪资保障，否则全额退款。
+2026-08-28 14:12:00
 
 
 
 ### [面试官：“怎么写好-Prompt？”，我：“写-Prompt-主要就是把问题描述清楚”，他：“……「描述清楚」是空话”](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247561623&idx=2&sn=a739b2f11e1d844beb4e64051b7c0d23)
 
-2026-08-28 14:12:00 | 标签: Prompt 工程, 大语言模型 (LLM), AI 编程, 模型训练与推理, 提示工程
-
-> 在实际项目中，我发现 Prompt 写不好通常不是因为太短，而是因为「模糊」，模型无法理解期望的格式、风格或受众。本文详细讲解了如何通过明确角色、定义任务、提供上下文、约束格式和使用示例来构建有效的 Prompt。此外，还探讨了 Prompt 压缩技术，以优化长上下文场景下的成本和延迟。
+2026-08-28 14:12:00
 
 
 

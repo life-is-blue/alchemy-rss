@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-29 12:45:03 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-29 19:58:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -620,41 +620,31 @@
 
 ### [Uber-构建-GitFarm，将-Git-操作作为服务运行，用于大规模-Monorepo](https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-28 22:30:00 | 标签: Git, Monorepo, 云原生, DevOps, 性能优化
-
-> GitFarm 是 Uber 构建的一个集中式 Git 客户端服务，用于处理大规模 Monorepo 所需的大量 Git 操作。通过将仓库操作转移到共享服务，GitFarm 消除了各个服务维护本地克隆的需要，显著降低了资源消耗，并提高了运营效率。该平台使用 gRPC API，维护裸仓库克隆，并采用池化策略来提供快速、一致的仓库数据访问。
+2026-08-28 22:30:00
 
 
 
 ### [将-Kafka-部署在-VM-上带来的系统思维启示-|-Moniepoint-|-工程](https://engineering.moniepoint.com/what-running-kafka-on-vms-taught-us-about-systems-thinking)
 
-2026-08-28 20:17:31 | 标签: Kafka, Strimzi, Kubernetes, 云工程, 数据管道
-
-> 本文详细介绍了 Moniepoint 从分散、手动管理 Kafka 的 VM 方式，到使用 Kubernetes 上的 Strimzi 实现自动化、精简系统的转变。这一过渡消除了对 SSH 访问和手动重启的需求，通过 YAML 模板引入了配置的单一真相源，并提供了对整个 Kafka 舰队的统一视图，最终将团队的重点从运营转移到战略系统设计。
+2026-08-28 20:17:31
 
 
 
 ### [AKS-旨在通过新的-NAP-指南提高节点中断的可预测性](https://www.infoq.com/news/2026/08/aks-node-disruption/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-28 20:00:00 | 标签: 云原生 / DevOps, Kubernetes, 微软, 性能优化, 系统设计
-
-> 随着 AKS 节点自动配置（NAP）自动化节点生命周期管理以优化成本，它也引入了潜在的不稳定性。微软的新指南提倡双层治理策略：使用 Kubernetes 吊舱中断预算（PDB）保护应用可用性，同时利用 NAP 的原生中断控制（例如整合策略和过期设置）来管理基础设施变更。文章强调了过于严格的 PDB 会导致集群维护停滞的风险，并强调平台团队必须超越将自动扩展视为不透明机制的思维，而是积极将中断策略与具体工作负载要求对齐，以确保安全、自主的运行。
+2026-08-28 20:00:00
 
 
 
 ### [从-DVD-到全球流媒体：Netflix-商务架构的真实演进之路](https://www.infoq.com/presentations/netflix-commerce-architecture-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-28 19:00:00 | 标签: Netflix, 系统设计, 分布式系统, 云原生 / DevOps, 数据工程
-
-> 本次分享追溯了 Netflix 商务平台的发展历程：从最初美国 DVD 邮寄租赁的简单支付系统——信用卡和 PayPal 支持实时授权，支付成功与权益授予之间紧密耦合——演进为支持数十种支付方式、监管制度和不可预测市场状况的全球混合架构。早期在加拿大和拉丁美洲的国际上线暴露了「全球支付行为与美国一致」这一假设的缺陷；巴西对基于借记卡的直接借记的依赖，迫使系统引入批处理、验证窗口、条件权益，并将实时欺诈过滤转变为行为检测。2016 年向约 130 个国家的全球推广采用了刻意的捷径：忽略本地货币的结算区域、用于探测期望支付方式的「画门」实验，以及将技术债视为学习加速器的「在生产中学习」理念。此后，...
+2026-08-28 19:00:00
 
 
 
 ### [德国主权技术局宣布投资-Flatpak——Modal-Collective](https://modal.cx/blog/announcing-flatpak-sta/)
 
-2026-08-28 13:42:47 | 标签: Flatpak, 沙箱, Linux 安全, 主权技术局, Modal Collective
-
-> 主权技术局的投资将资助一个为期两年的项目，旨在改善 Flatpak 的沙箱能力，重点开发用于音频、网络和 VPN 控制的新门户，以及用于权限和意图的基础设施。该计划旨在缩小 Linux 桌面与专有平台之间的安全差距，促进安全、基于镜像的操作系统采用。
+2026-08-28 13:42:47
 
 
 
