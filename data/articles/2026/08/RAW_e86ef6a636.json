@@ -1,0 +1,55 @@
+{
+  "id": "RAW_e86ef6a636",
+  "title": "我们正在为 Gemini Notebook 引入灵活的用法限制。",
+  "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
+  "date": "2026-08-29 01:00:00",
+  "author": "Yesul Shin",
+  "siteName": "The Keyword (blog.google) ",
+  "content": null,
+  "aiSummary": "Google 正在更新 Gemini Notebook，采用灵活的、基于计算的用法限制，每五小时刷新一次，让用户能够更高效地管理工作流程，并选择如何分配计算预算。",
+  "oneSentenceSummary": "Google 正在更新 Gemini Notebook，采用灵活的、基于计算的用法限制，每五小时刷新一次，让用户能够更高效地管理工作流程，并选择如何分配计算预算。",
+  "summary": "新的 Gemini Notebook 用法限制旨在为用户提供更大的工作流程控制权。限制不是每日上限，而是每五小时刷新一次，确保全天持续工作。系统会考虑提示复杂度、聊天长度等因素，并实时跟踪使用情况，在超出限制时建议替代输出。用户还可以将高计算任务（如视频生成）推迟到稍后进行。",
+  "mainPoints": [
+    {
+      "point": "灵活的、基于计算的限制",
+      "explanation": "新的限制是根据具体任务的计算需求量身定制的，而不是采用一刀切的方法。这使得资源利用更加高效。"
+    },
+    {
+      "point": "频繁的刷新率",
+      "explanation": "限制每五小时刷新一次，相比每日上限要频繁得多。这确保用户可以保持稳定的工作流程，而无需长时间等待。"
+    },
+    {
+      "point": "用户控制和跟踪",
+      "explanation": "笔记本界面会主动跟踪使用情况，并在当前选择超出限制时建议替代输出方法。这让用户能够对资源分配做出明智的决策。"
+    },
+    {
+      "point": "推迟输出生成",
+      "explanation": "用户可以选择将高计算输出（如视频或幻灯片）的生成推迟到稍后，确保他们可以继续进行其他任务，而不会立即受到资源限制。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"我们正在为 Gemini Notebook 引入新的灵活、基于计算的用法限制——让您对工作流程拥有更多控制权。\"，\"attribution\":\"Google\"}",
+    "{\"quote\":\"您的笔记本将帮助您跟踪使用情况，并在您的第一选择超出限制时建议替代输出。\"，\"attribution\":\"Google\"}"
+  ],
+  "tags": [
+    "Gemini Notebook",
+    "用法限制",
+    "计算预算",
+    "工作流程管理",
+    "Google AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 191,
+  "domain": "blog.google",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_40cd8f",
+  "sourceName": "The Keyword (blog.google) ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787936400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-29 01:00:00"
+}

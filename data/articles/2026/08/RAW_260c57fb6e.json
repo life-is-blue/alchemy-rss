@@ -1,0 +1,56 @@
+{
+  "id": "RAW_260c57fb6e",
+  "title": "AI 便宜了 1，000 倍——但不是你想要的 AI",
+  "url": "https://dev.to/euro-toolhub/ai-got-1000x-cheaper-just-not-the-ai-you-want-543i",
+  "date": "2026-08-29 04:34:39",
+  "author": "Martin Frost",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p><em>Originally published on <a href=\"https://techpill.de/how-ai-got-1000x-cheaper/\" target=\"_blank\" rel=\"noopener noreferrer\">techpill.de</a>. Data: a16z “LLMflation”, Epoch AI, Stanford AI Index.</em></p>\n  </blockquote>\n  <p>The phrase \"AI keeps getting cheaper\" is a bit of a double-edged sword. While it's true that the cost of achieving a <strong>fixed capability</strong> has plummeted by about <strong>1,000×</strong> since 2021, the price tag for the <strong>top-tier model</strong> you can buy has only dropped around <strong>25×</strong>. So yes, cheap AI is out there, but it’s usually lagging about two years behind the cutting edge. Grasping this distinction is key to understanding the economics driving the AI boom.</p>\n  <h2><a name=\"the-key-numbers\" href=\"#the-key-numbers\"> </a> The key numbers</h2>\n  <ul>\n   <li><strong>1,000×</strong> cheaper to reach GPT-3-level ability (2021 → 2024)</li>\n   <li><strong>~50×</strong> median annual price drop across six benchmarks (ranging from 9× to 900×)</li>\n   <li><strong>~25×</strong> cheaper for the leading model — over six years</li>\n  </ul>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fjra4jbzntc07kc0nhtiw.png\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fjra4jbzntc07kc0nhtiw.png\" alt=\"Then vs. now: price per 1M tokens by capability tier\" loading=\"lazy\"></a></p>\n  <h2><a name=\"two-prices-you-must-not-confuse\" href=\"#two-prices-you-must-not-confuse\"> </a> Two prices you must not confuse</h2>\n  <p>When you hear \"is AI getting cheaper?\", remember there are two distinct prices at play:</p>\n  <ul>\n   <li><strong>The price of a capability:</strong> This is what it costs to operate a model that consistently meets a certain standard — like the knowledge test that GPT-3 just managed to pass. This price is dropping fast.</li>\n   <li><strong>The price of the frontier:</strong> This refers to the cost of the best model available <em>right now</em>. This price barely budges.</li>\n  </ul>\n  <p>The reason for this discrepancy is straightforward: the frontier is always advancing. Each new flagship model sets a new standard and tends to cost about the same as its predecessor. Meanwhile, capabilities that were once pricey are now becoming accessible through cheaper models. So, both statements — \"AI got 1,000× cheaper\" and \"the best model stays expensive\" — hold true at once. They simply measure two different things.</p>\n  <h2><a name=\"1000%C3%97-cheaper-the-gpt3-case\" href=\"#1000%C3%97-cheaper-the-gpt3-case\"> </a> 1,000× cheaper: the GPT-3 case</h2>\n  <p>The clearest example comes from a16z, which even coined a name for the trend: <strong>\"LLMflation.\"</strong> Back in November 2021, GPT-3 went public as the only model scoring 42 on the MMLU benchmark, and it cost roughly <strong>$60 per million tokens</strong>. Fast-forward three years, and a tiny open model — Llama 3.2 3B — hit that same score for about <strong>$0.06 per million tokens</strong>. That’s a 1,000× gap, or put another way, roughly 10× cheaper every single year.</p>\n  <p>Here’s the part people miss: nobody discounted a single model by 1,000×. What fell was the cost of <em>reaching a capability level</em> at all, as smaller and more efficient models kept clearing the same bar.</p>\n  <h2><a name=\"what-one-dollar-buys\" href=\"#what-one-dollar-buys\"> </a> What one dollar buys</h2>\n  <p>Let’s make that tangible. In 2021, a dollar spent on GPT-3 got you around <strong>12,500 words</strong> — about five pages. Today that same dollar buys roughly <strong>12.5 million words</strong> at the same capability level: think a shelf holding some 125 novels. The graphic below draws the ratio at true scale — one dot against a thousand.</p>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3okasat4n34zk4g8j45y.png\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3okasat4n34zk4g8j45y.png\" alt=\"What one dollar of text buys, 2021 vs 2026\" loading=\"lazy\"></a></p>\n  <h2><a name=\"the-decline-is-uneven\" href=\"#the-decline-is-uneven\"> </a> The decline is uneven</h2>\n  <p>The drop is real, but it’s far from uniform. Epoch AI tracked pricing across six benchmarks and found a wild spread: anywhere from <strong>9× to 900× per year</strong>, with the median landing near <strong>50×</strong> (GPT-4-level PhD-science questions fell about 40× annually). The pattern makes sense — simple, well-defined tasks get cheap first, because small models pick them up quickly. The truly hard stuff stays expensive longer, since it still leans on big models.</p>\n  <h2><a name=\"faster-than-moores-law\" href=\"#faster-than-moores-law\"> </a> Faster than Moore's Law</h2>\n  <p>For context: Moore’s Law roughly doubles compute every two years. Fixed-capability AI pricing halves a cheap tier in about a year — and the fastest tiers in a matter of months. As a16z frames it, nothing in computing history has ever deflated this quickly — not compute during the microprocessor era, not bandwidth during the dotcom boom.</p>\n  <h2><a name=\"why-the-frontier-stays-expensive\" href=\"#why-the-frontier-stays-expensive\"> </a> Why the frontier stays expensive</h2>\n  <p>Now the flip side. While a fixed capability got 1,000× cheaper in three years, the best-available model has only come down about 25× in six. If you insist on the newest model, you’re chasing a target that keeps sprinting away — effectively paying 2020 prices. Willing to sit two years back? You pay next to nothing.</p>\n  <h2><a name=\"what-it-means-for-you\" href=\"#what-it-means-for-you\"> </a> What it means for you</h2>\n  <p>Whether you use AI directly or build products on top of it, one rule falls out of all this:</p>\n  <ul>\n   <li><strong>Do you genuinely need the frontier?</strong> For the hardest problems, yes — that’s the cost of being out front.</li>\n   <li><strong>Or is \"excellent, from two years ago\" good enough?</strong> For most real work — summaries, translation, classification, chat, code suggestions — a model that led the pack a year or two back is more than enough, at a sliver of the price.</li>\n   <li><strong>So the question shifts</strong> from \"can I afford AI?\" to <strong>\"how much lag can my product afford?\"</strong> In practice: tier your models. Route the easy calls to something cheap, and hand only the genuinely hard cases to the frontier.</li>\n  </ul>\n  <h2><a name=\"the-whole-picture-in-one-graphic\" href=\"#the-whole-picture-in-one-graphic\"> </a> The whole picture in one graphic</h2>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F13a2uzpf39u8ypybihn7.png\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F13a2uzpf39u8ypybihn7.png\" alt=\"AI price decline 2021–2026: the complete infographic\" loading=\"lazy\"></a></p>\n  <hr>\n  <p><strong>Sources:</strong> a16z, <em>Welcome to LLMflation</em> (2024) · Epoch AI, <em>LLM inference prices have fallen rapidly but unequally across tasks</em> (2025) · Stanford HAI, <em>AI Index 2025</em>.</p>\n  <p><em>Full article with the data table and FAQ: <a href=\"https://techpill.de/how-ai-got-1000x-cheaper/\" target=\"_blank\" rel=\"noopener noreferrer\">techpill.de/how-ai-got-1000x-cheaper</a></em></p>\n </body>\n</html>",
+  "aiSummary": "虽然实现固定能力（如 GPT-3 级性能）的成本自 2021 年以来下降了 1，000 倍，但前沿模型的价格仅下降了约 25 倍，这意味着尽管该领域整体通货紧缩，高性能 AI 仍然相对昂贵。",
+  "oneSentenceSummary": "虽然实现固定能力（如 GPT-3 级性能）的成本自 2021 年以来下降了 1，000 倍，但前沿模型的价格仅下降了约 25 倍，这意味着尽管该领域整体通货紧缩，高性能 AI 仍然相对昂贵。",
+  "summary": "本文探讨了 AI 成本的快速下降，指出虽然特定能力（GPT-3 级别）在三年内变得便宜了 1，000 倍，但最佳可用模型的成本仅下降了 25 倍。这种差异是因为 AI 的“前沿”在不断推进，保持了最新模型的较高价格，而旧的、足够用的能力则被商品化。文章强调，对于大多数应用，使用两年前的模型就足够了，而且比使用最新发布的产品要便宜得多。",
+  "mainPoints": [
+    {
+      "point": "固定能力（GPT-3 级别）的成本自 2021 年以来下降了 1，000 倍。",
+      "explanation": "这种大幅下降是因为现在更小、更高效的模型能够执行以前需要大型、昂贵模型才能完成的任务。对于通过 MMLU 基准测试达到 GPT-3 级别的模型，其每 token 价格已从约 60 美元降至 0.06 美元。"
+    },
+    {
+      "point": "最佳可用模型的价格在六年内仅下降了约 25 倍。",
+      "explanation": "由于 AI 的‘前沿’一直在前进，最新、最强大的模型的成本仍然很高。该行业不断推出更好的模型，这意味着绝对最佳性能的价格不会像旧的、商品化的能力那样经历陡峭的通货紧缩。"
+    },
+    {
+      "point": "AI 成本下降速度快于摩尔定律。",
+      "explanation": "虽然摩尔定律预测计算能力每两年翻一番，但 AI 能力的成本下降速度要快得多，有些基准测试显示年价格下降高达 900 倍。这种快速通货紧缩表明该行业正在以远超传统硬件限制的速度扩展。"
+    },
+    {
+      "point": "对于大多数应用，使用两年前的模型就足够了，而且要便宜得多。",
+      "explanation": "由于两年前的模型的能力通常足以处理标准任务（如总结或翻译），公司可以通过将这些任务路由到更旧、更便宜的模型来节省大量资金，而不是为最新、最昂贵的前沿模型付费。"
+    }
+  ],
+  "keyQuotes": [
+    "实现固定能力的成本自 2021 年以来下降了约 1，000 倍，但你可以购买的顶级模型的价格仅下降了约 25 倍。",
+    "前沿几乎没有变化。原因很简单：前沿一直在前进。",
+    "实际上：分层你的模型。将简单的调用路由到便宜的模型，只把真正困难的案例交给前沿模型。"
+  ],
+  "tags": [
+    "AI 经济学",
+    "LLM 贬值",
+    "模型定价",
+    "GPT-3",
+    "前沿模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 83,
+  "wordCount": 811,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787949279000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-29 04:34:39"
+}

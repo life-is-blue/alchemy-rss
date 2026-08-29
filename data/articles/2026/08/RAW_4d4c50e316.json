@@ -1,0 +1,52 @@
+{
+  "id": "RAW_4d4c50e316",
+  "title": "Microsoft 的 Agent Lightning 允许你训练已构建的智能体，无需重写代码",
+  "url": "https://dev.to/frankchu/microsofts-agent-lightning-lets-you-train-the-agent-you-already-built-without-rewriting-it-gpp",
+  "date": "2026-08-29 03:28:55",
+  "author": "frank chu",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Most of us improve an agent the same way: we tweak the prompt, run it, see what broke, tweak again. It works, slowly, and it caps out. Microsoft's Agent Lightning, which hit v1.0 this month, is a bet on a different loop, and the interesting part is that it does not ask you to rebuild anything to try it.</p>\n  <p>Agent Lightning adds reinforcement learning, automatic prompt optimization, and supervised fine-tuning to agents you have already written, with close to zero code changes. It works with LangChain, the OpenAI Agents SDK, AutoGen, and CrewAI. You point it at your existing agent and it learns from how that agent actually runs.</p>\n  <h2><a name=\"the-trick-is-decoupling-execution-from-training\" href=\"#the-trick-is-decoupling-execution-from-training\"> </a> The trick is decoupling execution from training</h2>\n  <p>The reason you normally cannot just \"add RL\" to an agent is that training is usually baked into how the thing is built. Agent Lightning separates the two. Your agent runs exactly as it does now. In the background, the framework collects execution traces, the record of what the agent did and how it turned out, feeds them through a hierarchical RL algorithm they call LightningRL, and updates either the model weights or the prompt configuration to make the next run better.</p>\n  <p>That separation is the whole design. Because learning is decoupled from execution, you do not have to adopt a new agent framework or rewrite your tools to get training. You keep your stack and bolt learning onto the side. For anyone who has an agent in production and does not want to touch it, that is the difference between \"someday\" and \"this weekend.\"</p>\n  <h2><a name=\"why-this-is-a-bigger-shift-than-it-sounds\" href=\"#why-this-is-a-bigger-shift-than-it-sounds\"> </a> Why this is a bigger shift than it sounds</h2>\n  <p>We have spent two years treating agent quality as a prompting problem. Write a better prompt, add a better example, describe the tool more carefully. Agent Lightning is part of a move to treat it as a training problem instead: let the agent's own runs be the data that improves it.</p>\n  <p>That is a meaningfully different mental model. Prompting is you guessing what will help. Training is the system learning what actually helped, from real outcomes. The first is capped by your intuition and your patience. The second improves as the agent runs more, which is exactly the resource an agent in production generates for free. Every execution trace is training data you were already throwing away.</p>\n  <p>It also lines up with something I keep noticing across the industry. The valuable work has moved into the layer around the model, and this is a new tool in that layer: not a smarter base model, but a system that squeezes more out of the one you have by learning from its own behavior. Same model, better agent, because the harness now includes a way to learn.</p>\n  <h2><a name=\"the-honest-caveats\" href=\"#the-honest-caveats\"> </a> The honest caveats</h2>\n  <p>RL is not free lunch, and I would set expectations before you get excited. You need a reward signal, some way to score whether a run went well, and defining that well is the hard part of any RL project. A vague reward teaches the agent to game it. You also need enough runs to learn from, so this pays off for agents that do a repetitive job many times, not a one-off. And \"near-zero code changes\" gets you the integration, not the results; the results still take the usual RL work of designing rewards and evaluating honestly.</p>\n  <p>Even so, the direction is right and the barrier just dropped a lot. Turning your agent's own execution history into a training signal, without adopting a new framework, is a genuinely useful capability to have sitting next to your existing stack. If your agent does the same kind of task over and over, this is worth an experiment.</p>\n  <p>If you have run RL against a production agent, I would like to hear what you used for the reward signal, because that choice seems to decide whether the whole thing works.</p>\n </body>\n</html>",
+  "aiSummary": "Agent Lightning 支持跨多个框架的现有 AI 智能体进行强化学习和提示优化，只需极少的代码更改即可集成训练能力。",
+  "oneSentenceSummary": "Agent Lightning 支持跨多个框架的现有 AI 智能体进行强化学习和提示优化，只需极少的代码更改即可集成训练能力。",
+  "summary": "Microsoft 的 Agent Lightning v1.0 允许开发者在不重写代码的情况下，为现有 AI 智能体添加强化学习（RL）和监督微调功能。通过将训练与执行解耦，该框架收集执行轨迹以优化智能体性能，并支持 LangChain 和 AutoGen 等流行框架。",
+  "mainPoints": [
+    {
+      "point": "执行与训练的解耦",
+      "explanation": "Agent Lightning 将智能体的运行时行为与训练过程分离，允许框架收集执行轨迹并应用 RL 算法，而无需修改智能体的核心逻辑或工具。"
+    },
+    {
+      "point": "广泛的框架兼容性",
+      "explanation": "该系统支持广泛的现有智能体框架，包括 LangChain、OpenAI Agents SDK、AutoGen 和 CrewAI，使开发者无论最初选择何种实现方式都能使用。"
+    },
+    {
+      "point": "从提示转向训练",
+      "explanation": "这种方法代表了从手动提示调参到自动化学习的转变，其中智能体的执行历史成为改进的主要数据源，有可能实现更稳健、更高效的优化。"
+    }
+  ],
+  "keyQuotes": [
+    "诀窍是将执行与训练解耦。",
+    "因为学习与执行是解耦的，所以你不需要采用新的智能体框架或重写你的工具来获取训练。",
+    "我们已经花了两年时间把智能体质量当作一个提示问题来处理。Agent Lightning 是将其转变为一个训练问题的一部分。"
+  ],
+  "tags": [
+    "强化学习",
+    "智能体优化",
+    "Microsoft",
+    "LangChain",
+    "AutoGen"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 646,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787945335000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-29 03:28:55"
+}

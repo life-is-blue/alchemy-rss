@@ -1,0 +1,50 @@
+{
+  "id": "RAW_ff22980d4c",
+  "title": "并行块生成文本的 AI 模型，而非逐个令牌生成",
+  "url": "https://dev.to/frankchu/the-ai-model-that-writes-text-in-parallel-blocks-instead-of-one-token-at-a-time-1n6p",
+  "date": "2026-08-29 03:29:40",
+  "author": "frank chu",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Almost every language model you have used works the same way underneath. It predicts one token, appends it, then predicts the next, one at a time, left to right. That sequential nature is why generation feels like watching a typewriter and why speed has mostly been a hardware problem. DiffusionGemma, an open model Google DeepMind released this summer, quietly breaks that assumption, and it is worth understanding even though it did not get the attention it deserved.</p>\n  <p>Instead of writing left to right, DiffusionGemma generates text the way image models generate pictures: by denoising. It starts from a canvas of noise and refines whole blocks of 256 tokens in parallel until coherent text emerges.</p>\n  <h2><a name=\"how-denoising-text-actually-works\" href=\"#how-denoising-text-actually-works\"> </a> How denoising text actually works</h2>\n  <p>Image diffusion models start with static and repeatedly clean it up until a picture appears. DiffusionGemma applies the same idea to language. It begins with a block of meaningless noise tokens and, over several passes, denoises them together into real text, then moves to the next block. The key word is together. A whole block of 256 tokens gets refined at once, not one token after another.</p>\n  <p>That parallelism is where the speed comes from. On a single H100 the model exceeds a thousand tokens per second, up to four times faster than comparable Gemma models generating the normal way. Notice what kind of speedup that is. It is not a faster chip or a better serving trick. It is a different algorithm that does more per step, so it needs fewer sequential steps to produce the same text.</p>\n  <p>The model itself is a real one, not a toy. It is built on the Gemma 4 26B mixture-of-experts architecture, 25 billion parameters with under 4 billion active per token, a 256K context window, more than 140 languages, and it accepts text, image, and video as input. It ships under Apache 2.0, so you can run it locally and use it commercially.</p>\n  <h2><a name=\"why-the-architecture-matters-beyond-speed\" href=\"#why-the-architecture-matters-beyond-speed\"> </a> Why the architecture matters beyond speed</h2>\n  <p>I have written a lot lately about speed coming from better inference silicon, like NVIDIA absorbing Groq's inference chips. DiffusionGemma is a reminder that the algorithm is the other lever, and it is one you do not need new hardware to pull. Parallel generation attacks the same problem from the software side.</p>\n  <p>The tradeoffs are real and worth knowing. Autoregressive models are excellent at strict left-to-right coherence because each token literally sees everything before it. A block-diffusion model refines a whole span at once, which is a natural fit for tasks where you can see the shape of the answer up front, and a harder fit for long chains of tight sequential reasoning. This is not a replacement for the standard approach so much as a different tool with a different sweet spot, and part of why it is interesting is that we are still learning where that sweet spot is.</p>\n  <h2><a name=\"why-i-am-writing-about-a-summer-release\" href=\"#why-i-am-writing-about-a-summer-release\"> </a> Why I am writing about a summer release</h2>\n  <p>Because the idea is going to keep showing up, and most people have never seen it. Parallel, non-autoregressive text generation is one of the few genuinely different bets on the table, and Google shipping a capable open one under Apache 2.0 means anyone can experiment with it rather than read about it. When speed stops being purely a hardware race and becomes an architecture question too, that is worth having in your head.</p>\n  <p>If you have tried DiffusionGemma or any block-diffusion text model on a real task, I would like to hear where it shined and where it fell apart, because the practical edges of this approach are still being mapped in public.</p>\n </body>\n</html>",
+  "aiSummary": "DiffusionGemma，由 Google DeepMind 开发的开源模型，打破了逐个令牌生成的顺序范式，通过并行优化 256 个令牌的块来生成文本，在标准硬件上实现了高达四倍的生成速度提升。",
+  "oneSentenceSummary": "DiffusionGemma，由 Google DeepMind 开发的开源模型，打破了逐个令牌生成的顺序范式，通过并行优化 256 个令牌的块来生成文本，在标准硬件上实现了高达四倍的生成速度提升。",
+  "summary": "与传统语言模型逐个生成令牌不同，DiffusionGemma 采用类似图像扩散的去噪策略，同时优化整个令牌块。这种并行性显著提高了生成速度，在单个 H100 上达到每秒超过 1000 个令牌，同时保持对多模态输入和多种语言的支持能力。",
+  "mainPoints": [
+    {
+      "point": "并行块生成",
+      "explanation": "DiffusionGemma 通过同时去噪 256 个令牌的块来生成文本，而不是顺序预测令牌。这允许模型一次处理多个字符，从而大幅减少生成完整文本序列所需的时间。"
+    },
+    {
+      "point": "显著的速度提升",
+      "explanation": "该模型在单个 H100 GPU 上实现了超过每秒 1000 个令牌的生成速度，比可比较的 Gemma 模型快四倍。这种速度提升是由于并行处理的算法效率，而非硬件升级。"
+    },
+    {
+      "point": "多功能且开源",
+      "explanation": "基于 Gemma 4 26B 架构，DiffusionGemma 支持 256K 的上下文窗口和超过 140 种语言。它在 Apache 2.0 许可证下发布，可供商业使用和本地实验。"
+    }
+  ],
+  "keyQuotes": [
+    "DiffusionGemma 不是从左到右写文本，而是像图像模型生成图片一样，通过去噪来生成文本。"
+  ],
+  "tags": [
+    "扩散模型",
+    "并行生成",
+    "Google DeepMind",
+    "Gemma",
+    "模型训练与推理"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 598,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787945380000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-29 03:29:40"
+}

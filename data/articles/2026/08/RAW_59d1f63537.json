@@ -1,0 +1,50 @@
+{
+  "id": "RAW_59d1f63537",
+  "title": "Indra 如何在 Databricks 上统一电动汽车充电数据",
+  "url": "https://www.databricks.com/blog/how-indra-unified-ev-charging-data-databricks",
+  "date": "2026-08-29 01:30:00",
+  "author": "Jack Yallop",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li>Indra unified EV charging, fleet, and operational data on Databricks after starting with multiple Azure tools and duplicated pipelines.</li>\n   <li>The company reduced platform sprawl, improved governance, and replaced manual reporting and brittle functions with a single governed data platform.</li>\n   <li>The result was lower cost, faster queries, self-service dashboards, and a foundation for streaming and AI.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Indra 将其分散的电动汽车充电、车队和运营数据整合到一个 Databricks 平台上，消除了冗余的管道，并改善了数据治理，从而实现了更快的查询和自助式分析。",
+  "oneSentenceSummary": "Indra 将其分散的电动汽车充电、车队和运营数据整合到一个 Databricks 平台上，消除了冗余的管道，并改善了数据治理，从而实现了更快的查询和自助式分析。",
+  "summary": "面对平台蔓延和数据管道重复的挑战，Indra 将其电动汽车充电数据生态系统迁移到了 Databricks。这一统一化举措使公司能够简化数据管理、降低成本并提高查询性能。新平台还为未来流数据处理和人工智能创新奠定了基础。",
+  "mainPoints": [
+    {
+      "point": "Indra 正在努力应对数据碎片化和管道重复的问题。",
+      "explanation": "在迁移之前，Indra 的数据分散在多个 Azure 工具中，导致报告不一致和数据处理效率低下。公司不得不为相似的数据集维护单独的管道，这增加了成本并降低了灵活性。"
+    },
+    {
+      "point": "迁移到 Databricks 统一了数据并改善了治理。",
+      "explanation": "通过将所有电动汽车充电、车队和运营数据整合到一个 Databricks 数据湖中，Indra 消除了对冗余数据副本的需求。这种集中化改善了数据治理，确保所有团队都在使用相同、最新的信息。"
+    },
+    {
+      "point": "新平台实现了更快的分析，并为业务提供了未来保障。",
+      "explanation": "统一的平台显著减少了查询时间，并允许创建自助式仪表板。此外，它为 Indra 未来实施流数据分析和人工智能应用提供了可扩展的基础。"
+    }
+  ],
+  "keyQuotes": [
+    "我们有许多重复的管道和数据分布在多个 Azure 工具中。我们需要一个单一的受控数据平台来替代手动报告和脆弱的函数。"
+  ],
+  "tags": [
+    "电动汽车充电",
+    "数据统一",
+    "云迁移",
+    "Databricks",
+    "数据治理"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 55,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787938200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-29 01:30:00"
+}

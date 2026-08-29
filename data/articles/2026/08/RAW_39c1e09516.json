@@ -1,0 +1,50 @@
+{
+  "id": "RAW_39c1e09516",
+  "title": "仅仅一个漏洞传闻就足以找到安全漏洞",
+  "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
+  "date": "2026-08-29 06:12:02",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">28th August 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Aug/28/just-a-rumour-of-a-bug/\">\n    <p><strong><a href=\"https://anil.recoil.org/notes/rumour-is-the-exploit\">Just a rumour of a bug is enough to find a security exploit these days</a></strong> (<a href=\"https://news.ycombinator.com/item?id=49480466\" title=\"Hacker News\">via</a>) Anil Madhavapeddy is a professor of computer science at Cambridge and a core maintainer of the OCaml compiler. In this somewhat alarming post he reports that security issues in OCaml projects are seeing evidence of attempted exploits within minutes of patches being shared for discussion:</p>\n    <blockquote>\n     <p>This normally takes a few days and a release within a week or two is reasonable. Within about ten minutes (!) this website was fielding probes for percent-encoded traversal sequences, indicating that automated watchers are keeping an eye on public repositories.</p>\n    </blockquote>\n    <p>Modern coding agents have become so effective at finding flaws that the slightest hint at a new bug can be enough information for them to find it, something Anil has been able to demonstrate using his own agents, switching to DeepSeek V4 Pro⁠ when Claude Fable refused the task.</p>\n    <p>Anil points out that this rate of discovery appears incompatible with existing open source embargo practices for new issues. If an issue can become an exploit this fast, we need to figure out new processes for keeping our communities safe.</p>\n    <p>rclone maintainer Nick Craig-Wood <a href=\"https://news.ycombinator.com/item?id=49480466#49480777\">confirms in the Hacker News comments</a> that his project is seeing this problem:</p>\n    <blockquote>\n     <p>In the first 10 years of the rclone project we received about 20 security disclosures through GitHub. We had to deal with over 40 in the last month! That has taken a huge amount of my time, even using AI tools to triage and come up with fixes for review.</p>\n     <p>The hit rate for those security disclosures is pretty good - about 75% of them have a nugget of something which needs looking at. [...]</p>\n     <p>GitHub assigns CVEs for the advisories. Before the AI apocalypse they took 2-3 days for an assignment but now it they are running at 3-4 weeks so I have to send the point releases out with CVE-PENDING in the changelog which isn't ideal.</p>\n    </blockquote>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9608/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anil Madhavapeddy 报告称，OCaml 项目的安全性问题在补丁共享后几分钟内就被利用，这表明自动化观察者和 AI 代理正在积极扫描，只要有漏洞暗示就会立即行动。",
+  "oneSentenceSummary": "Anil Madhavapeddy 报告称，OCaml 项目的安全性问题在补丁共享后几分钟内就被利用，这表明自动化观察者和 AI 代理正在积极扫描，只要有漏洞暗示就会立即行动。",
+  "summary": "文章讨论了自动化系统对潜在安全漏洞的快速响应。OCaml 维护者 Anil Madhavapeddy 教授注意到，在补丁发布后十分钟内，他的网站就遭到了漏洞探测。这表明 AI 代理和其他自动化工具正在实时监控公共仓库，几乎立即将潜在漏洞转化为实际攻击。这种趋势对传统的开源禁运做法提出了挑战，因为发现与利用之间的窗口期变得极其短暂。",
+  "mainPoints": [
+    {
+      "point": "自动化观察者在补丁共享后几分钟内就探测漏洞。",
+      "explanation": "文章报告，在补丁发布后，Anil Madhavapeddy 的网站几乎立即被自动化探测器攻击。这表明安全领域的机器人正在积极扫描，只要在公共论坛中提到漏洞就会立即行动。"
+    },
+    {
+      "point": "AI 代理能够非常快速地将提示转化为完整漏洞。",
+      "explanation": "Anil 证明，现代 AI 代理可以从一个模糊的漏洞提示快速开发出可执行的攻击。这意味着从漏洞被识别到被恶意利用的时间比以往任何时候都短。"
+    },
+    {
+      "point": "当前的发现速度与现有的开源禁运做法不兼容。",
+      "explanation": "传统的等待发布来修复漏洞的做法已经不再有效，因为攻击几乎是即时发生的。这表明需要新的协议来更安全地处理漏洞的披露和修复。"
+    }
+  ],
+  "keyQuotes": [
+    "大约十分钟内（！），这个网站就开始处理百分号编码的遍历序列，这表明自动化观察者正在密切关注公共仓库。"
+  ],
+  "tags": [
+    "安全",
+    "开源",
+    "AI 代理",
+    "漏洞披露",
+    "OCaml"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 332,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787955122000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-29 06:12:02"
+}

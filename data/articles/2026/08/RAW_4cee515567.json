@@ -1,0 +1,50 @@
+{
+  "id": "RAW_4cee515567",
+  "title": "Uber 构建 GitFarm，将 Git 操作作为服务运行，用于大规模 Monorepo",
+  "url": "https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-08-28 22:30:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber has built <a href=\"https://www.uber.com/us/en/blog/gitfarm-as-a-service/\">GitFarm, a Git as a Service platform</a> for running Git operations across its large scale monorepos. By moving repository operations to a shared service, GitFarm eliminates local clones for client systems and has reduced client side resource utilization by more than 80%.</p>\n   <p>Uber’s automation systems invoke Git millions of times per day across monorepos supporting Go, Java, Python, Web, Android, and iOS. Previously, individual services maintained full repository checkouts, including for operations such as reading files, validating changes, and calculating merge bases. Cloning Uber’s Go monorepo takes roughly 15 minutes and requires about six CPU cores, 32 GB of memory, and more than 40 GB of disk.</p>\n   <p>Uber Engineering said in a LinkedIn <a href=\"https://www.linkedin.com/posts/uberengineering_gitfarm-git-as-a-service-for-large-scale-activity-7481014316729593856-TJsp?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a> describing GitFarm that the service provides full Git checkouts in under 500 milliseconds and removes historical 10 to 15-minute host-level cold starts.</p>\n   <blockquote>\n    <p>Local cloning and repetitive repository syncing turn traditional Git workflows into a significant infrastructure bottleneck</p>\n   </blockquote>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/news/2026/08/uber-gitfarm-git-as-a-service/en/resources/1gitfarmarch-1787204439366.jpeg\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/uber-gitfarm-git-as-a-service/en/resources/1gitfarmarch-1787204439366.jpeg\" rel=\"share\"></p>\n   <p><em>GitFarm architecture (Source: <a href=\"https://www.uber.com/us/en/blog/gitfarm-as-a-service/\">Uber Blog Post</a>)</em></p>\n   <p><a href=\"https://arxiv.org/abs/2604.11977\">GitFarm</a> exposes Git operations through a high-performance <a href=\"https://grpc.io/docs/\">gRPC API</a>. It is not a source control management system. Instead, it acts as a centralized Git client that executes standard Git commands on behalf of other services. A Gateway authenticates and authorizes requests before routing them to backend clusters, where commands run in isolated, ephemeral sandboxes.</p>\n   <p>The backend maintains bare repository clones and keeps them synchronized with upstream repositories using push-based updates and periodic fetches. It also maintains pools of repository checkouts and sandbox containers. When a request arrives, GitFarm can mount a pre-warmed checkout into an available sandbox instead of creating a repository clone and execution environment from scratch. Uber reports that this pooling reduces the overhead of providing a ready-to-use checkout to less than a second.</p>\n   <p>GitFarm supports multi-command workflows through bidirectional gRPC streaming sessions. Commands can execute sequentially against the same checkout, allowing workflows such as fetching a branch, calculating a merge base, and pushing a derived reference without repeatedly initializing repository state. Clients can also explicitly run git fetch when they require the latest upstream state, while workloads that tolerate bounded staleness can use the backend’s synchronized repository state.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/news/2026/08/uber-gitfarm-git-as-a-service/en/resources/1Screenshot 2026-08-19 at 10.18.45 PM-1787204439366.png\" class=\"zoom-image\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/08/uber-gitfarm-git-as-a-service/en/resources/1Screenshot 2026-08-19 at 10.18.45 PM-1787204439366.png\" rel=\"share\"></p>\n   <p>GitFarm Backend architecture <em>(Source: <a href=\"https://www.uber.com/us/en/blog/gitfarm-as-a-service/\">Uber Blog Post</a>)</em></p>\n   <p>Uber reports that a code ownership service eliminated local checkouts across six hosts after adopting GitFarm, reducing CPU consumption from more than 70 cores to 16 and memory from 400 to 32 GB. Startup time fell from 15 to 20 minutes to less than one minute. A compliance auditing service processing 10,000 to 20,000 events per hour across 9,000 repositories reduced median latency from 110 to 160 seconds with Buildkite to 20 to 30 seconds with GitFarm by eliminating scheduling, workspace initialization, and repository synchronization overhead.</p>\n   <p>The architecture could also support coding agent workloads. <a href=\"https://www.linkedin.com/in/ashish-ash-verma-b67ab653/\">Ashish Verma</a> noted on <a href=\"https://www.linkedin.com/posts/ashish-ash-verma-b67ab653_gitfarm-git-as-a-service-for-large-scale-activity-7483252724227133440-VszR?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">LinkedIn</a> that agents repeatedly search, branch, diff, experiment, retry, and validate changes, concurrently, potentially increasing Git infrastructure workloads.</p>\n   <p>In production since early 2025, GitFarm’s roadmap includes streaming Git output, <a href=\"https://git-scm.com/docs/git-sparse-checkout\">sparse checkouts</a>, bare workspaces, longer-lived sessions, <a href=\"https://docs.gitlab.com/user/project/repository/mirror/\">repository mirroring</a>, and SubmitQueue integration.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Uber Builds GitFarm to Run Git Operations as a Service for Large-Scale Monorepos\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1787927400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 开发了 GitFarm，一个高性能的 Git 即服务平台，它集中了仓库操作，消除了本地克隆，并通过共享的池化执行环境将客户端资源利用率降低了 80% 以上。",
+  "oneSentenceSummary": "Uber 开发了 GitFarm，一个高性能的 Git 即服务平台，它集中了仓库操作，消除了本地克隆，并通过共享的池化执行环境将客户端资源利用率降低了 80% 以上。",
+  "summary": "GitFarm 是 Uber 构建的一个集中式 Git 客户端服务，用于处理大规模 Monorepo 所需的大量 Git 操作。通过将仓库操作转移到共享服务，GitFarm 消除了各个服务维护本地克隆的需要，显著降低了资源消耗，并提高了运营效率。该平台使用 gRPC API，维护裸仓库克隆，并采用池化策略来提供快速、一致的仓库数据访问。",
+  "mainPoints": [
+    {
+      "point": "集中式 Git 操作",
+      "explanation": "GitFarm 作为集中式 Git 客户端，代表其他服务执行标准 Git 命令。这消除了各个服务维护自身本地克隆的需要，对于克隆耗时且资源密集的大型 Monorepo 尤其有利。"
+    },
+    {
+      "point": "资源优化",
+      "explanation": "通过池化仓库检出并使用临时沙盒，GitFarm 显著降低了初始化和维护本地 Git 环境的开销。这导致客户端资源利用率降低了 80% 以上。"
+    },
+    {
+      "point": "高性能 API",
+      "explanation": "该服务暴露了一个高性能的 gRPC API，用于快速、可靠地执行 Git 命令。该架构旨在处理 Uber 自动化系统所需的高吞吐量，并提供一致的响应时间，而不受底层仓库大小的影响。"
+    }
+  ],
+  "keyQuotes": [
+    "本地克隆和重复的仓库同步将传统 Git 工作流程变成了严重的架构瓶颈。"
+  ],
+  "tags": [
+    "Git",
+    "Monorepo",
+    "云原生",
+    "DevOps",
+    "性能优化"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 496,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787927400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-28 22:30:00"
+}

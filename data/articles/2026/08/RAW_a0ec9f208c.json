@@ -1,0 +1,62 @@
+{
+  "id": "RAW_a0ec9f208c",
+  "title": "AI 日常简报：Anthropic 将智能体连接到硬件，Nvidia 考虑收购 Hugging Face",
+  "url": "https://dev.to/jason_gunnells/ai-daily-brief-anthropic-wires-agents-into-hardware-nvidia-circles-hugging-face-4ldm",
+  "date": "2026-08-29 03:00:05",
+  "author": "Jason Gunnells",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>A daily roundup of what's moving in AI.</em></p>\n  <p>Anthropic just gave AI agents a way to talk to the physical world. The company's new Model Hardware Standard, released in research preview, lets agents look up, learn, and operate lab and factory equipment — microscopes, robotic arms, assembly-line gear — the same way its Model Context Protocol let agents talk to software. Anthropic says setup drops from weeks of specialist wiring to \"hours or minutes,\" and in one internal test, Claude taught itself to align a laser through trial and error, then wrote a script to automate the job in a single pass. Tecan, QIAGEN, and AWS are already partnering, with Hugging Face and Raspberry Pi adding support to their device lines.</p>\n  <p>Speaking of Hugging Face: Nvidia is reportedly in talks to buy the \"GitHub of machine learning\" for roughly $13 billion. Fresh off blowout earnings, the deal would hand the world's most valuable company a direct line to the developers building on its chips. Nothing's official yet, and neither side has commented.</p>\n  <p>Salesforce had its own big week, expanding its partnership with Anthropic into something called \"Claudeforce\" — a 37-skill sales plugin built on Claude, plus Claude becoming the default model inside Slack. The announcement helped send Salesforce stock up 22.6% in a single day, its best showing since 2020.</p>\n  <p>On the research side, two scientists turned down a stake in Jeff Bezos's Project Prometheus to start their own company instead. Accelerated Understanding is building AI trained on physics rather than language — models that understand the 4D world (3D space plus time) for scientific discovery. They've already shipped a model handling 5 trillion data points.</p>\n  <p>And in the UK, surgeons performed what's believed to be the first brain surgery assisted by a live AI system. A University College London model watched the surgical camera feed in real time, flagging arteries and the optic nerve to avoid during a tumor removal. The patient's vision was restored within days; the AI never touched the controls — it was a second set of eyes, not a second surgeon.</p>\n  <h3><a name=\"also-worth-knowing\" href=\"#also-worth-knowing\"> </a> Also worth knowing</h3>\n  <ul>\n   <li>116 companies, including OpenAI and Anthropic, signed an open letter warning that AI-enabled cyberattacks are about to get \"far more widespread and sophisticated,\" calling for coordinated defense.</li>\n   <li>Instinct, a text-and-call AI assistant with no app at all, has hit a $2.5B valuation since launching in February.</li>\n   <li>Barret Zoph, a Thinking Machines co-founder, is rejoining Google as a research VP for reinforcement learning on Gemini.</li>\n   <li>Google shipped Gemini Omni 1.1 Flash, an upgraded video model with 40-second scene extensions and 4K upscaling.</li>\n   <li>Voice dictation into AI agents is going mainstream, with Apple shipping a dictation keyboard in iOS 27 and tools like Wispr Flow becoming the way power users direct multiple agents at once.</li>\n   <li>Shopify's CEO is reportedly weighing a company-wide ban on Claude Code, saying it doesn't mesh well with other workflows.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Anthropic 推出了一项标准，用于 AI 智能体控制物理硬件；Nvidia 正在考虑收购 Hugging Face；Salesforce 将 Claude 集成到其产品中；一家新创公司专注于基于物理的 AI 模型。",
+  "oneSentenceSummary": "Anthropic 推出了一项标准，用于 AI 智能体控制物理硬件；Nvidia 正在考虑收购 Hugging Face；Salesforce 将 Claude 集成到其产品中；一家新创公司专注于基于物理的 AI 模型。",
+  "summary": "Anthropic 的新模型硬件标准允许 AI 智能体直接控制实验室和工厂设备，显著减少了设置时间。Nvidia 正在谈判购买 Hugging Face，价格约为 130 亿美元。Salesforce 扩大了与 Anthropic 的合作，将 Claude 集成到其销售和通信平台上。两名科学家离开了 Jeff Bezos 的 Project Prometheus，创立了 Accelerated Understanding，该公司开发基于物理而非语言的 AI 模型。此外，一名英国外科医生成功使用实时 AI 系统辅助脑肿瘤切除手术。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 的模型硬件标准",
+      "explanation": "Anthropic 发布了一项新标准，使 AI 智能体能够直接与物理硬件（例如显微镜和机械臂）进行接口。这显著减少了实验设置所需的时间，并实现了对实验室设备的自动化控制。"
+    },
+    {
+      "point": "Nvidia 可能收购 Hugging Face",
+      "explanation": "Nvidia 正在谈判购买 Hugging Face，后者是领先的机器学习模型平台，价格约为 130 亿美元。此次收购将使 Nvidia 直接接触到在其硬件上构建的开发者社区。"
+    },
+    {
+      "point": "Salesforce 与 Anthropic 的合作",
+      "explanation": "Salesforce 加深了与 Anthropic 的合作，将 Claude 模型集成到其销售软件和 Slack 通信平台上。这种集成旨在提高销售效率和数据分析能力。"
+    },
+    {
+      "point": "Accelerated Understanding 的基于物理的 AI",
+      "explanation": "两名 Jeff Bezos 量子计算项目的原成员创立了一家新公司，Accelerated Understanding。他们正在开发基于物理定律而非语言数据训练的 AI 模型，重点是科学发现。"
+    },
+    {
+      "point": "AI 辅助脑外科",
+      "explanation": "一名英国外科医生在实时 AI 系统的帮助下成功进行了脑肿瘤切除手术。AI 实时监控手术视频，识别关键结构（如动脉和视神经），以防止损伤。"
+    }
+  ],
+  "keyQuotes": [
+    "Anthropic 刚刚为 AI 智能体提供了一种与物理世界对话的方式。",
+    "Nvidia 据报道正在谈判以约 130 亿美元的价格购买 '机器学习的 GitHub'。",
+    "Salesforce 也有一个大动作，将与 Anthropic 的合作扩展为 'Claudeforce'。",
+    "两名科学家拒绝了 Jeff Bezos Project Prometheus 的股份，而是选择创立了自己的公司。",
+    "伦敦大学学院的模型实时监控手术摄像头，在肿瘤切除过程中标记动脉和视神经，以避免损伤。"
+  ],
+  "tags": [
+    "Anthropic",
+    "Nvidia",
+    "Hugging Face",
+    "Salesforce",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 481,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787943605000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-29 03:00:05"
+}
