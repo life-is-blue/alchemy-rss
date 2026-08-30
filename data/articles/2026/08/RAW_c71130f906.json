@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c71130f906",
+  "title": "对象无关的规划器可零样本抓取未知物体",
+  "url": "https://dev.to/olaughter/object-agnostic-planners-grasp-unseen-objects-zero-shot-1iik",
+  "date": "2026-08-29 13:00:00",
+  "author": "Papers Mache",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Grasp planners that hinge on object models are being eclipsed by approaches that synthesize contacts directly on the hand. A new generation of generative planners learns only the geometry of a gripper’s contact surface and can produce viable grasps for any unseen item in a single inference step.</p>\n  <p>Before these works, data‑driven grasp synthesis required large, object‑specific datasets collected either from painstaking annotation or from expensive simulation pipelines. The resulting models generalized poorly to novel shapes and incurred substantial engineering overhead to maintain per‑object training corpora.</p>\n  <p>GOAG reaches an average success rate of 86.93% on the MultiDex benchmark despite never seeing object‑specific data during training. While being trained in an object‑agnostic manner, GOAG achieved a higher average success rate for generating accurate grasps across all three grippers compared to the baselines <a href=\"https://arxiv.org/abs/2608.19759\" target=\"_blank\" rel=\"noopener noreferrer\">[1]</a>.</p>\n  <p>The entire dataset creation for GOAG consumed only about 1 GPU hour on a single Nvidia RTX 4090, whereas comparable object‑specific pipelines reported generation times of roughly 1,400 GPU hours on an Nvidia A100. “The entire dataset creation required approximately 1 GPU hour on a single Nvidia RTX&nbsp;4090.” “In contrast, a previous work [12] reported a much longer generation time of 1,400 GPU hours using Nvidia A100.” <a href=\"https://arxiv.org/abs/2608.19759\" target=\"_blank\" rel=\"noopener noreferrer\">[1]</a></p>\n  <p>CoToGrasp attains state‑of‑the‑art performance on the large‑scale DexGraspNet dataset, surpassing existing taxonomy‑guided planners while remaining completely object‑agnostic. “Extensive evaluations on the large‑scale DexGraspNet dataset demonstrate that CoToGrasp achieves state-of-the-art performance, outperforming existing taxonomy-guided planners.” “By learning the intrinsic contact manifold of the gripper within this workspace, our model achieves zero-shot generalization to unseen objects at inference.” <a href=\"https://arxiv.org/abs/2608.19776\" target=\"_blank\" rel=\"noopener noreferrer\">[2]</a></p>\n  <p>Both papers evaluate primarily on static benchmark collections and rely on simulated depth or point‑cloud inputs; real‑world clutter, occlusions, and dynamic interactions remain underexplored. This suggests that while contact‑surface learning removes the need for object‑specific datasets, additional research is required to confirm robustness under uncontrolled perception conditions.</p>\n  <p>Benchmarks such as MultiDex and DexGraspNet should incorporate an object‑agnostic baseline, because these results demonstrate that eliminating per‑object data does not sacrifice grasp success and dramatically cuts dataset generation time.</p>\n  <h2><a name=\"references\" href=\"#references\"> </a> References</h2>\n  <ol>\n   <li><a href=\"https://arxiv.org/abs/2608.19759\" target=\"_blank\" rel=\"noopener noreferrer\">GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation</a></li>\n   <li><a href=\"https://arxiv.org/abs/2608.19776\" target=\"_blank\" rel=\"noopener noreferrer\">CoToGrasp: Contact-Topology-Conditioned Dexterous Grasp Synthesis via Canonical Workspace Learning</a></li>\n  </ol>\n </body>\n</html>",
+  "aiSummary": "新一代生成式抓取规划器仅学习夹持器的接触面几何，能够在单次推理中为任何未知物体生成可行抓取，显著减少对物体特定训练数据的需求。",
+  "oneSentenceSummary": "新一代生成式抓取规划器仅学习夹持器的接触面几何，能够在单次推理中为任何未知物体生成可行抓取，显著减少对物体特定训练数据的需求。",
+  "summary": "依赖物体特定模型的传统抓取规划器正被直接在手上合成接触的方法所取代。这些生成式规划器，如 GOAG 和 CoToGrasp，学习夹持器的固有接触流形，并可无须事先接触其具体形状或数据集便推广到未知物体。这在 MultiDex 和 DexGraspNet 等基准上实现了高成功率，同时大幅缩短了数据集生成所需的时间和资源。",
+  "mainPoints": [
+    {
+      "point": "从物体特定规划转向接触面规划",
+      "explanation": "之前的抓取合成方法需要为每个特定物体创建大型、标注良好的数据集，导致泛化能力差且维护成本高。新方法专注于夹持器的接触面几何，使其能够普遍适用于任何遇到的物体。"
+    },
+    {
+      "point": "数据量少，性能高",
+      "explanation": "GOAG 在 MultiDex 基准上实现了 86.93% 的成功率，仅使用 1 个 GPU 小时的训练数据，而之前的物体特定管道需要约 1400 个 GPU 小时。这证明了消除物体特定数据不会牺牲抓取质量。"
+    },
+    {
+      "point": "最先进的零样本泛化",
+      "explanation": "CoToGrasp 在 DexGraspNet 数据集上超越了现有的分类引导规划器，证明学习接触拓扑足以生成准确的未知物体抓取，而无需任何关于其具体特征的先验知识。"
+    },
+    {
+      "point": "局限性与未来方向",
+      "explanation": "虽然这些模型在受控基准环境中表现出色，但尚未在具有杂乱、遮挡或动态交互的真实世界场景中进行广泛测试。未来的研究应重点将这些规划器与强大的感知系统集成，以处理不受控的环境。"
+    }
+  ],
+  "keyQuotes": [
+    "依赖物体模型的抓取规划器正被直接在手上合成接触的方法所取代。",
+    "由此产生的模型对新形状的泛化能力很差，并为维护每个物体的训练语料库带来了大量工程开销。",
+    "GOAG 在 MultiDex 基准上达到了 86.93% 的平均成功率，尽管在训练期间从未见过物体特定数据。",
+    "GOAG 的整个数据集创建过程仅消耗了约 1 个 Nvidia RTX 4090 GPU 小时，而可比较的物体特定管道报告的生成时间约为 1400 个 Nvidia A100 GPU 小时。",
+    "CoToGrasp 在大规模 DexGraspNet 数据集上达到了最先进的性能，超越了现有的分类引导规划器，同时保持完全对象无关。"
+  ],
+  "tags": [
+    "生成式 AI",
+    "机器人",
+    "抓取规划",
+    "零样本学习",
+    "计算机视觉"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 351,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787979600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-29 13:00:00"
+}

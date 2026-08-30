@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-30 06:08:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-30 10:18:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -1998,13 +1998,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2154,13 +2154,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3654,13 +3654,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5364,13 +5364,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
@@ -5748,6 +5748,14 @@
 
 
 
+### [Loom-时代的并发与流式处理：Spring-对-Java-新模型的判断](https://www.youtube.com/watch?v=yWVxJLRtCxI)
+
+2026-08-28 23:06:34 | 标签: Project Loom, Java 并发, 结构化并发, 虚拟线程, Reactive Streams
+
+> 两位讲者先回顾 Spring Reactive Stack 所应对的扩展性与组合难题：远程调用、回调嵌套以及昂贵的平台线程曾迫使应用采用非阻塞风格；随后将其与 Loom 的虚拟线程和重新获得的命令式编程体验对照。核心观点是，结构化并发让相关任务拥有词法上的共同生命周期，使 fork、取消、错误、超时和调试可以在同一个 scope 中管理，而不是散落在共享 executor 提交的 futures 里。演讲用 scatter-gather、全局超时、joiner 策略、限流线程工厂、嵌套异常、interrupt 与 scoped values 展示这一差异。最后部分保持探索姿态：Java 尚未确...
+
+
+
 ### [FAANG-系统设计面试：设计一个聊天系统-WhatsApp，-Facebook-Messenger，-Discord，-Slack](https://www.youtube.com/watch?v=okrR1KXNLtA)
 
 2025-09-30 16:06:43
@@ -5757,6 +5765,14 @@
 ### [Next.js-自部署](https://www.youtube.com/watch?v=sIVL4JMqRfc)
 
 2025-09-27 11:58:03
+
+
+
+### [Figma-如何在快速迭代中推出-MCP-Server](https://www.youtube.com/watch?v=ZIYYsAzaLlA)
+
+2026-08-27 20:02:11 | 标签: Figma MCP, 编程智能体, 设计到代码, Code Connect, MCP Server
+
+> Jesse Lumarie 回顾了 Figma 在约三个月内从内部插件实验走向 MCP 产品的过程：编程智能体可以获取设计上下文，不再需要每个工具各自接入 Figma。团队比较了稀疏的场景图标签、接近 React 与 Tailwind 的 D2R 表示以及图像，并发现代码上下文配合当前节点图像优于单独使用图像。Code Connect 则让智能体复用代码库中现有的组件，避免只追求像素一致而忽略无障碍能力与国际化。演讲还介绍了团队如何从耗时的表格人工评审发展到每周数百次评测，并以工具调用内的指引和可选框架信号应对 MCP 客户端支持不完整的问题。发布上，Figma 先以本地服务兼顾速度、数据控制...
 
 
 

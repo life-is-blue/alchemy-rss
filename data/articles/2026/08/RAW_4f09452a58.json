@@ -1,0 +1,69 @@
+{
+  "id": "RAW_4f09452a58",
+  "title": "Agentic AI 的设计模式",
+  "url": "https://dev.to/zeeshanhshaheen/design-patterns-of-agentic-ai-334c",
+  "date": "2026-08-30 01:01:32",
+  "author": "Zeeshan Haider Shaheen",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <h2><a name=\"the-design-patterns-nobody-told-you-about-agentic-ai\" href=\"#the-design-patterns-nobody-told-you-about-agentic-ai\"> </a> The Design Patterns Nobody Told You About Agentic AI</h2>\n  <p>Here's a confession: the first \"agent\" I built was basically a while loop with a prompt stapled to it. It called a function, read the result, and called another function. I thought I'd invented something. Turns out I'd just rediscovered ReAct, badly, three years after everyone else.</p>\n  <p>That's the funny thing about agentic AI right now. Underneath all the hype and the funding rounds and the \"autonomous agent\" landing pages, there are maybe seven recurring patterns doing all the real work. Once you can name them, you start seeing them everywhere: in LangChain's docs, in Claude Code's architecture, in that one open-source repo you starred and never opened again. Let's name them properly.</p>\n  <h2><a name=\"1-react-think-act-look-repeat\" href=\"#1-react-think-act-look-repeat\"> </a> 1. ReAct: think, act, look, repeat</h2>\n  <p>This is the pattern everything else is built on top of. The model reasons about what it knows, picks a tool, fires it off, reads the result, and does it again. It's less \"master plan\" and more \"detective walking around a crime scene picking up clues one at a time.\"\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>Thought: I need the current weather to answer this.\nAction: call_weather_api(city=\"Berlin\")\nObservation: 18°C, cloudy\nThought: Now I can answer.\n\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>The elegant part is that the model never has to commit to a full plan up front. It gets to change its mind after every observation, which is exactly what you want when the world keeps surprising you mid-task.</p>\n  <p><strong>Reach for it when</strong> the next step genuinely depends on what you just learned, not on what you guessed at the start.</p>\n  <h2><a name=\"2-planner-and-executor-split-the-brain-in-two\" href=\"#2-planner-and-executor-split-the-brain-in-two\"> </a> 2. Planner and Executor: split the brain in two</h2>\n  <p>Instead of one model doing the thinking and the doing at once, you split the job. A planner breaks the goal into steps. An executor actually runs them.</p>\n  <p>It sounds like bureaucracy, and honestly, it kind of is, in the good way. Bureaucracy exists so you can inspect decisions before they turn into actions. With this pattern, you can look at the plan, catch the dumb idea before it becomes a dumb API call, and swap out executors without touching the planning logic at all.</p>\n  <p><strong>Reach for it when</strong> \"refactor this module\" needs to become locate, analyze, edit, verify, and you want to see that breakdown before anything runs.</p>\n  <h2><a name=\"3-reflection-the-model-grades-its-own-homework\" href=\"#3-reflection-the-model-grades-its-own-homework\"> </a> 3. Reflection: the model grades its own homework</h2>\n  <p>Generate an answer. Have a second pass, sometimes the same model wearing a different hat, critique it against the original goal. Revise. Repeat until the critique passes or you run out of patience (or budget).\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>Draft -&gt; Critique -&gt; Revise -&gt; (loop until it's good or the budget runs dry)\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>This genuinely makes outputs better, especially for code and writing. The catch is that an unbounded reflection loop is just an expensive way to spin your wheels, so you need a hard stopping condition, not vibes.</p>\n  <p><strong>Reach for it when</strong> quality beats speed, and you have some cheap way to check the work: tests passing, a rubric, a second opinion.</p>\n  <h2><a name=\"4-tool-use-the-thing-everything-else-depends-on\" href=\"#4-tool-use-the-thing-everything-else-depends-on\"> </a> 4. Tool use: the thing everything else depends on</h2>\n  <p>This isn't really a pattern so much as the foundation everything else sits on. Give the model a menu of actions with clear names and clear inputs, and let it decide what to order.</p>\n  <p>The part people get wrong isn't the model side, it's the API design side. One giant <code>do_everything</code> tool and the model can't compose anything interesting. Fifty tiny tools and it burns half its turns just chaining trivial calls together. Good tool design is just good API design: single responsibility, obvious naming, predictable shapes coming back.</p>\n  <h2><a name=\"5-orchestrator-and-workers-divide-conquer-reassemble\" href=\"#5-orchestrator-and-workers-divide-conquer-reassemble\"> </a> 5. Orchestrator and workers: divide, conquer, reassemble</h2>\n  <p>One coordinator breaks a big job into independent chunks, hands them off to specialized workers (separate agents, or the same agent wearing different hats), and stitches the results back together.\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>Orchestrator\n |- Worker A: research topic X\n |- Worker B: research topic Y\n `- Aggregator: synthesize A + B into a final answer\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>This is the engine behind most \"deep research\" style products you've seen demoed. The win is parallelism: workers run at the same time instead of one after another. The cost is coordination complexity, which is really just latency traded for headaches.</p>\n  <p><strong>Reach for it when</strong> the subtasks are genuinely independent and the final synthesis step is well defined, not an afterthought.</p>\n  <h2><a name=\"6-memory-the-agent-that-remembers-you-exist\" href=\"#6-memory-the-agent-that-remembers-you-exist\"> </a> 6. Memory: the agent that remembers you exist</h2>\n  <p>Short-term memory is a scratchpad for the current task. Long-term memory survives across sessions, pulled from a vector store, a file, a database, whatever you've got.</p>\n  <p>The hard part was never storage. It's retrieval discipline: knowing what's worth keeping, what's gone stale, and how to stop old context from crowding out what actually matters right now. A memory system that hoards everything is just a slower, pricier context window wearing a trench coat.</p>\n  <p><strong>Reach for it when</strong> the agent needs continuity: a coding assistant that remembers your team's conventions, a support bot that remembers what the customer already told it last week.</p>\n  <h2><a name=\"7-human-in-the-loop-the-pause-button\" href=\"#7-human-in-the-loop-the-pause-button\"> </a> 7. Human in the loop: the pause button</h2>\n  <p>Before anything irreversible happens, sending an email, deploying code, spending real money, the agent stops and waits for a nod from an actual person.</p>\n  <p>This isn't the system admitting it can't be trusted. It's a deliberate line drawn in the sand: read freely, reason freely, but earn permission before you touch anything external. Nearly every serious production agent framework draws that line in roughly the same place.</p>\n  <h2><a name=\"how-they-actually-get-combined\" href=\"#how-they-actually-get-combined\"> </a> How they actually get combined</h2>\n  <p>Nobody ships just one of these. Real systems stack them.</p>\n  <p>A coding agent might run ReAct for its inner tool loop, add Reflection to sanity-check a diff before proposing it, then stop at a human-in-the-loop checkpoint before anything actually gets committed. A research agent might plan with Planner and Executor, fan out the legwork with Orchestrator and Workers, and lean on memory so it isn't re-fetching the same five sources every twenty minutes.</p>\n  <p>None of this is exotic. It's separation of concerns, single responsibility, and checkpoints before side effects, the same principles you'd apply to any distributed system. The only twist is that one of your \"services\" occasionally hallucinates. Design for that, and the rest is just software architecture wearing a new coat.</p>\n  <hr>\n  <p><em>Which of these have you actually shipped, and which one bit you when you tried?</em></p>\n </body>\n</html>",
+  "aiSummary": "本文探讨了支撑 agentic AI 系统的基础设计模式，包括 ReAct、规划器与执行器、反思、工具使用、协调器与工作者、记忆，以及人机交互，并解释了这些组件如何协同工作，构建出强大、自主的智能体。",
+  "oneSentenceSummary": "本文探讨了支撑 agentic AI 系统的基础设计模式，包括 ReAct、规划器与执行器、反思、工具使用、协调器与工作者、记忆，以及人机交互，并解释了这些组件如何协同工作，构建出强大、自主的智能体。",
+  "summary": "本文对构建 agentic AI 系统所使用的核心架构模式进行了详细分析。首先介绍了 ReAct 模式，该模式允许智能体基于观察结果进行迭代推理和行动。随后，文章探讨了规划器与执行器模式，用于分离策略与执行；反思模式，用于自我评估；以及工具使用在扩展智能体能力方面的重要作用。此外，还讨论了协调器与工作者模式，用于并行执行任务；记忆在保留上下文方面的重要性；以及人机交互在安全和控制方面的必要性。结论强调，这些模式并非孤立使用，而是结合在一起，共同构成了现代 AI 智能体的骨架。",
+  "mainPoints": [
+    {
+      "point": "ReAct：迭代推理与行动",
+      "explanation": "ReAct 模式允许智能体通过迭代地思考、行动和观察来执行任务。这种方法使系统能够根据实时反馈调整其策略，而不是遵循僵化的、预先确定的计划。"
+    },
+    {
+      "point": "规划器与执行器：关注点分离",
+      "explanation": "将系统拆分为一个制定策略的规划器和一个执行动作的执行器，可以提高架构的模块化程度。这种分离使得调试更加容易，并允许在不影响整体逻辑的情况下更换组件。"
+    },
+    {
+      "point": "反思：用于质量的自我评估",
+      "explanation": "反思模式涉及智能体在继续之前对其输出进行批判。这一自我评估步骤对于提高结果质量至关重要，特别是在代码生成或写作等任务中，第二次检查可以捕捉错误或优化输出。"
+    },
+    {
+      "point": "工具使用：扩展智能体能力",
+      "explanation": "工具使用是智能体与外部世界交互的基础。通过提供一个清晰的工具接口，智能体可以执行复杂的任务，而这些任务仅凭其内部知识是无法完成的。"
+    },
+    {
+      "point": "协调器与工作者：并行处理",
+      "explanation": "该模式涉及一个中央协调器将任务分配给专门的工作者。这允许子任务并行执行，从而显著加快信息收集或复杂分析的速度。"
+    },
+    {
+      "point": "记忆：上下文保留",
+      "explanation": "记忆对于智能体保持时间连续性是必不可少的。它允许系统记住过去的交互和数据，避免了重复学习或重复获取信息的需要。"
+    },
+    {
+      "point": "人机交互：安全与控制",
+      "explanation": "人机交互模式确保在执行任何不可逆或高风险操作之前，都会征求人类操作员的意见。这提供了一个安全网，确保智能体的决策符合人类意图和伦理考虑。"
+    }
+  ],
+  "keyQuotes": [
+    "模型会思考它所知道的，选择一个工具，触发它，读取结果，然后重复这个过程。这并不是一个'总体规划'，而更像是'侦探在犯罪现场走来走去，一次捡起一个线索'。",
+    "官僚主义的存在是为了让你在决策变成行动之前进行检查。使用这种模式，你可以查看计划，在愚蠢的想法变成愚蠢的 API 调用之前捕捉到它，并更换执行器，而无需触碰规划逻辑。",
+    "难的从来不是存储。而是检索纪律：知道什么值得保留，什么已经过时，以及如何防止旧的上下文挤占当前真正重要的内容。",
+    "这并不是系统承认它不可信。而是在沙滩上划下的一条刻意界线：可以自由阅读，自由推理，但在触碰任何外部事物之前，必须获得许可。"
+  ],
+  "tags": [
+    "Agentic AI",
+    "ReAct",
+    "规划器与执行器",
+    "反思",
+    "工具使用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1059,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788022892000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-08-30 01:01:32"
+}

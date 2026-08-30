@@ -1,0 +1,57 @@
+{
+  "id": "RAW_b430ef816f",
+  "title": "痴迷于 AI 智能体「外挂」—— Roderick.Dev",
+  "url": "https://www.roderick.dev/writing/2026-08-28-obsessing-harnesses/",
+  "date": "2026-08-29 12:28:08",
+  "author": "tomrod",
+  "siteName": "Hacker News - Newest: \"AI Agent\"",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-wrap\" data-astro-cid-7mn2gw7j>\n   <a href=\"https://www.roderick.dev/writing/\" class=\"post-back\" data-astro-cid-7mn2gw7j>← Writing</a><span class=\"post-tag-label\" data-astro-cid-7mn2gw7j>AI governance, Sociotechnical systems</span>\n   <div class=\"post-meta-row\" data-astro-cid-7mn2gw7j>\n    <span class=\"post-meta-item\" data-astro-cid-7mn2gw7j><strong data-astro-cid-7mn2gw7j>August 28, 2026</strong></span><span class=\"post-meta-item\" data-astro-cid-7mn2gw7j>~5 min read</span><span class=\"post-meta-item\" data-astro-cid-7mn2gw7j>Tom Roderick, PhD</span>\n   </div>\n   <article class=\"prose\" data-astro-cid-7mn2gw7j>\n    <p>I spoke at a <a href=\"https://www.rise8.us/prodacity\">recent panel on AI Adoption</a> and presented part of <a href=\"https://flamelit.tech\">Flamelit’s</a> AI operations playbook for governance. I enjoyed the experience – Kent Beck (TDD &amp; Extreme Programming) and Russell Miles (Learning Chaos Engineering / <em>A Software Enchiridion &amp; Engineering Agents</em>) presented there, heavy tech like Anthropic, OpenAI, and Google sent reps. Folks were open about just how <em>weird</em> AI tools have become. The entire conference was invigorating to see the myriad of ideas of making things work with this mishmash of chaos LLMs have incorporated into our daily lives.</p>\n    <p>The experience has supercharged my desire to better understand something I was already evolving a bit for a few clients’ workforce skills growth: <strong>agent harnesses</strong>.</p>\n    <p>When we make an improvement to an agent harness, <em><strong>how do we know the agent is actually getting better?</strong></em></p>\n    <h1 id=\"the-problem-i-keep-coming-back-to\">The problem I keep coming back to</h1>\n    <p>A model is only one component of an AI agent. The system around it – prompts, tools, memory, context, model routing, retries, evaluators, sub-agents, permissions, and orchestration – increasingly determines what the agent can actually accomplish.</p>\n    <p>That surrounding system is generally called the harness.</p>\n    <p>And harnesses are becoming dynamic.</p>\n    <p>An agent may be able to:</p>\n    <ul>\n     <li>change its own prompts or operating instructions;</li>\n     <li>write, revise, consolidate, or delete memory;</li>\n     <li>change what information remains in its working context;</li>\n     <li>select a different model for a task;</li>\n     <li>create sub-agents using other models;</li>\n     <li>alter how it routes work or evaluates results.</li>\n    </ul>\n    <p>That creates a deceptively difficult question: <em><strong>How do we know the agent is actually getting better?</strong></em></p>\n    <p>The obvious answer is benchmark pre- and post-change. If the score increases, call it an improvement.</p>\n    <p>Spoiler: I am beginning to think that is insufficient. Imagine an agent changes its memory strategy and improves benchmark performance by 5%. <strong>Great</strong> – 5% can be a lot in context! But what if it also forgets information that allowed it to handle a class of problems the benchmark did not happen to sample? Or suppose it switches models and gets better average performance while becoming significantly less reliable on a subset of important tasks? Or its context-management system becomes much more efficient by aggressively removing information – until three steps later, when something it discarded becomes important?</p>\n    <p>The benchmark says the system improved but it didn’t!</p>\n    <h1 id=\"improvement-or-optimization\">Improvement or optimization?</h1>\n    <p>This distinction matters a lot beyond academic arguments about evaluation. Businesses are going to deploy agents that change their own operating state. And, frankly, I see cases where we want them to.</p>\n    <p>A useful agent should learn which tools work, remember relevant information, discard useless state, select appropriate models, and reorganize how it approaches recurring problems. But once we allow this, optimization and improvement stop being synonymous. An agent can optimize for the thing we measured while degrading something we did not.</p>\n    <p>Software engineering has dealt with versions of this problem for decades through regression testing, observability, testing, and controlled deployment. Often the manual processes many want to deploy agents into. Agentic systems make the problem harder because the thing being tested can increasingly modify the machinery that determines its own future behavior.</p>\n    <p>These exact things are what make harnesses something worth measuring.</p>\n    <h1 id=\"a-different-frame-for-the-question\">A different frame for the question</h1>\n    <p>The research direction I am exploring starts with a simpler question: <em>When an agent changes, what did it retain, what did it lose, and what can it now do or distinguish that it could not before?</em></p>\n    <p>That gives us three useful concepts:</p>\n    <ol>\n     <li>Retention: Does the new agent still possess the capabilities and distinctions we previously established?</li>\n     <li>Loss: What previously observable behavior has disappeared or degraded?.</li>\n     <li>Gain: What genuinely new behavior or capability has appeared?</li>\n    </ol>\n    <p>Conventional benchmarks are still useful in this. But the goal moves somewhat to become distinguishing: <em>this version scored higher</em> from <em>this version represents a demonstrably better state of the system.</em> I think it would surprise no one that are these not always the same thing.</p>\n    <p>There is some surprisingly old mathematics that may help here that may help, like Blackwell’s theory of information from economics and decision theory. It lets us compare two information structures based on whether one structure preserves the useful distinctions available in another. I think that idea can be adapted to agent systems as a practical way to reason about whether a new harness state has genuinely improved upon the old one.</p>\n    <h1 id=\"why-engineers-should-care\">Why engineers should care</h1>\n    <p>For engineers, this could eventually lead to something analogous to regression testing for self-modifying agents. A harness update would not only need to beat the incumbent on a benchmark, but it would also need to demonstrate that it has not silently destroyed important behavior.</p>\n    <p>That becomes relevant to things like:</p>\n    <ul>\n     <li>memory compression</li>\n     <li>context pruning</li>\n     <li>model routing</li>\n     <li>prompt evolution</li>\n     <li>tool selection</li>\n     <li>sub-agent architectures</li>\n     <li>autonomous harness modification</li>\n    </ul>\n    <p>Instead of asking only whether the change increased average success, we can ask whether it expanded the system’s useful behavior without collapsing parts we deemed desirable in the old one.</p>\n    <p>I think that is a much stronger engineering claim.</p>\n    <h1 id=\"why-businesses-should-care\">Why businesses should care</h1>\n    <p>For businesses, the issue is governance and operational compliance. Organizations will increasingly have AI systems that change how they operate without someone manually deploying a new version every time. At that point, governance cannot mean freezing the system, because it has to mean knowing whether changes are beneficial. A useful measurement framework could help answer questions such as:</p>\n    <ol>\n     <li>Did the agent actually improve, or merely improve on the metric we happened to watch?</li>\n     <li>Did a cheaper model-routing strategy preserve the capabilities we care about?</li>\n     <li>Did a memory optimization remove important institutional knowledge?</li>\n     <li>Can we safely promote an autonomously generated harness change?</li>\n     <li>Can we explain why the current agent configuration is preferable to the previous one?</li>\n    </ol>\n    <p>That turns “AI governance” from a collection of policies into something much closer to an engineering discipline.</p>\n    <h1 id=\"where-i-am-going-with-this\">Where I am going with this</h1>\n    <p>There is already growing work in self-improving agents, dynamic memory, model routing, evolving harnesses, and multi-agent systems. What seems less settled is how we measure progress of the harness itself – which is why I am obsessing over AI agent harnesses these past few days. Seriously – the wee hours of the morning are spent digesting these ideas! <em>How do we measure whether a self-modifying agent is actually getting better, rather than just becoming different?</em> I suspect the answer sits somewhere between software measurement, economics, information theory, and a lot of practical experimentation. Which is, admittedly, exactly the kind of rabbit hole I enjoy falling into.</p>\n   </article>\n  </div>\n </body>\n</html>",
+  "aiSummary": "随着 AI 智能体越来越多地自主修改其运行环境（如记忆、提示词和模型路由），传统的基准测试已不足以衡量其真实改进与单纯优化之间的区别。",
+  "oneSentenceSummary": "随着 AI 智能体越来越多地自主修改其运行环境（如记忆、提示词和模型路由），传统的基准测试已不足以衡量其真实改进与单纯优化之间的区别。",
+  "summary": "本文探讨了评估自修改 AI 智能体系统的关键挑战。当智能体获得调整自身提示词、记忆和模型路由的自主权时，它们可能会为了特定的指标进行优化，却同时悄无声息地削弱其他核心能力。作者认为，当前的基准测试评估方法已不再适用，并提出了一个以三个概念为核心的新框架：保留（Retention，维持现有能力）、损失（Loss，识别退化的行为）和增益（Gain，衡量新增的能力）。通过借鉴布莱克威尔信息论等概念，作者建议我们应迈向更严谨的 AI 治理工程学科，确保自主的系统修改代表的是真正的性能提升，而非仅仅是表现形式的转移。",
+  "mainPoints": [
+    {
+      "point": "「外挂」是围绕 LLM 的关键系统",
+      "explanation": "AI 智能体的表现不仅取决于模型本身，还取决于其周边的系统——即提示词、工具、记忆、上下文和编排，作者将其定义为「外挂」（harness）。"
+    },
+    {
+      "point": "基准测试对于自修改智能体而言已不足够",
+      "explanation": "当智能体自主修改其「外挂」时，它们可能会在特定的基准测试指标上有所提升，但同时却削弱了未被测量但至关重要的能力，从而导致「优化」而非真正的「改进」。"
+    },
+    {
+      "point": "需要一套评估智能体进化的新框架",
+      "explanation": "作者建议基于三个标准来评估变更：保留（保留了什么）、损失（退化了什么）和增益（新增了什么），并可能利用信息论来比较不同的「外挂」状态。"
+    },
+    {
+      "point": "治理必须演变为一门工程学科",
+      "explanation": "对于企业和工程师而言，有效的 AI 治理需要超越静态政策，转向一套能够验证自主修改是否真正有益的回归测试与可观测性系统。"
+    }
+  ],
+  "keyQuotes": [
+    "基准测试显示系统改进了，但事实并非如此！",
+    "一个有用的智能体应该学习哪些工具有效、记住相关信息、丢弃无用状态、选择合适的模型，并重组其处理重复问题的方式。但一旦我们允许这样做，优化和改进就不再是同义词了。",
+    "当智能体发生变化时，它保留了什么，丢失了什么，以及它现在能做什么或分辨出什么以前无法做到的事情？",
+    "这使得「AI 治理」从一系列政策转变为更接近工程学科的事物。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "AI 治理",
+    "智能体编排",
+    "系统设计",
+    "AI 工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1088,
+  "domain": "roderick.dev",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_87ebb4f7",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1787977688000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-29 12:28:08"
+}
