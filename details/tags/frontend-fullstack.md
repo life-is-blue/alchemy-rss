@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-30 10:18:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-30 17:35:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -5750,9 +5750,7 @@
 
 ### [Loom-时代的并发与流式处理：Spring-对-Java-新模型的判断](https://www.youtube.com/watch?v=yWVxJLRtCxI)
 
-2026-08-28 23:06:34 | 标签: Project Loom, Java 并发, 结构化并发, 虚拟线程, Reactive Streams
-
-> 两位讲者先回顾 Spring Reactive Stack 所应对的扩展性与组合难题：远程调用、回调嵌套以及昂贵的平台线程曾迫使应用采用非阻塞风格；随后将其与 Loom 的虚拟线程和重新获得的命令式编程体验对照。核心观点是，结构化并发让相关任务拥有词法上的共同生命周期，使 fork、取消、错误、超时和调试可以在同一个 scope 中管理，而不是散落在共享 executor 提交的 futures 里。演讲用 scatter-gather、全局超时、joiner 策略、限流线程工厂、嵌套异常、interrupt 与 scoped values 展示这一差异。最后部分保持探索姿态：Java 尚未确...
+2026-08-28 23:06:34
 
 
 
@@ -5770,9 +5768,7 @@
 
 ### [Figma-如何在快速迭代中推出-MCP-Server](https://www.youtube.com/watch?v=ZIYYsAzaLlA)
 
-2026-08-27 20:02:11 | 标签: Figma MCP, 编程智能体, 设计到代码, Code Connect, MCP Server
-
-> Jesse Lumarie 回顾了 Figma 在约三个月内从内部插件实验走向 MCP 产品的过程：编程智能体可以获取设计上下文，不再需要每个工具各自接入 Figma。团队比较了稀疏的场景图标签、接近 React 与 Tailwind 的 D2R 表示以及图像，并发现代码上下文配合当前节点图像优于单独使用图像。Code Connect 则让智能体复用代码库中现有的组件，避免只追求像素一致而忽略无障碍能力与国际化。演讲还介绍了团队如何从耗时的表格人工评审发展到每周数百次评测，并以工具调用内的指引和可选框架信号应对 MCP 客户端支持不完整的问题。发布上，Figma 先以本地服务兼顾速度、数据控制...
+2026-08-27 20:02:11
 
 
 
