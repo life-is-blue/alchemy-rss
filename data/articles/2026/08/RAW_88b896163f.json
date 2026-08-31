@@ -1,0 +1,51 @@
+{
+  "id": "RAW_88b896163f",
+  "title": "索尼与华纳起诉 Anthropic，指控其大规模盗用版权音乐训练 Claude · AIHOT",
+  "url": "https://aihot.virxact.com/items/cmtfkvjwn0by7rou8vil9ysf1",
+  "date": "2026-08-30 16:50:20",
+  "author": "noreply@aihot.virxact.com (The Decoder：AI News（RSS）)",
+  "siteName": "AIHOT — 精选",
+  "content": null,
+  "aiSummary": "Sony Music 和 Warner Music 已对 Anthropic 及其高管提起诉讼，指控他们通过非法下载和使用数万首受版权保护的音乐作品和歌词来训练 Claude 模型，从而构成大规模版权侵犯。",
+  "oneSentenceSummary": "Sony Music 和 Warner Music 已对 Anthropic 及其高管提起诉讼，指控他们通过非法下载和使用数万首受版权保护的音乐作品和歌词来训练 Claude 模型，从而构成大规模版权侵犯。",
+  "summary": "包括 Sony Music 和 Warner Music 在内的主要音乐出版商已在美国加州北区地方法院对 Anthropic 及其高管 Dario Amodei 和 Benjamin Mann 提起诉讼。投诉称，Anthropic 非法下载并使用了数万首受版权保护的音乐作品（主要是歌词和乐谱）来训练其 Claude 模型。该诉讼重点指控 Anthropic 通过未经授权的 P2P 种子下载和违反服务条款的平台抓取来获取训练数据。此外，诉讼还审查了 Anthropic 可能使用从未经授权文本中派生的合成数据进行商业模型训练的情况，并将其与 AI 公司在数据获取方法方面面临的先前法律挑战进行了比较。",
+  "mainPoints": [
+    {
+      "point": "主要音乐出版商提起诉讼",
+      "explanation": "Sony Music、Warner Music 等主要音乐出版商在加州北区地方法院对 Anthropic 及其高管提起诉讼，指控其未经授权使用数万首受版权保护的音乐作品。"
+    },
+    {
+      "point": "数据获取方法的重点",
+      "explanation": "诉讼重点关注 Anthropic 的数据获取方式，指控该公司通过未经授权的种子下载、抓取许可平台（如 MusixMatch）以及利用可疑数据集来获取版权材料。"
+    },
+    {
+      "point": "合成数据和训练管道的审查",
+      "explanation": "原告方声称，即使商业模型没有直接在原始盗版文本上训练，Anthropic 也使用了在未经授权数据上训练的非商业模型来生成合成数据，或为商业 Claude 模型提供强化反馈。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"Dr. Amodei 明确指示、批准、控制并有意诱导 Mr. Mann 和其他 Anthropic 员工实施这些侵权行为。\"，\"source\":\"文章正文\"}",
+    "{\"quote\":\"历史上最大胆、最严重的持续知识产权盗窃之一。\"，\"source\":\"文章正文\"}"
+  ],
+  "tags": [
+    "AI 商业",
+    "Anthropic",
+    "法律与司法",
+    "Dario Amodei",
+    "大型语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 83,
+  "wordCount": 1160,
+  "domain": "aihot.virxact.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788079820000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 16:50:20"
+}

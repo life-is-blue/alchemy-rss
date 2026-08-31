@@ -1,0 +1,52 @@
+{
+  "id": "RAW_445efcc6be",
+  "title": "温度 0，固定种子，但回复还是不同——因为你的批次里还有其他人",
+  "url": "https://dev.to/dev48v/temperature-0-a-fixed-seed-and-a-different-reply-anyway-because-of-who-else-was-in-your-batch-fik",
+  "date": "2026-08-30 18:45:19",
+  "author": "Devanshu Biswas",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>You set <code>temperature=0</code>. You pinned the seed. Same prompt, same weights, greedy decoding, same everything you can put in a request body.</p>\n  <p>The reply comes back different, and <strong>the seed changed nothing at all</strong>.</p>\n  <p>Run it: <a href=\"https://dev48.infy.uk/ai/days/day75-inference-nondeterminism.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://dev48.infy.uk/ai/days/day75-inference-nondeterminism.html</a></p>\n  <h2><a name=\"what-actually-decides-it\" href=\"#what-actually-decides-it\"> </a> What actually decides it</h2>\n  <p>Nothing here simulates language. The engine simulates the <strong>arithmetic</strong>:</p>\n  <ul>\n   <li>a logit is a sum of many terms</li>\n   <li>floating-point addition is <strong>not associative</strong>: (a+b)+c and a+(b+c) differ in general</li>\n   <li>the order the machine adds them in is picked by the <strong>size of the batch you happened to land in</strong></li>\n  </ul>\n  <p>Different batch, different reduction tree, different last bit on a logit. When two candidate tokens are close, that last bit selects a different argmax — and greedy decoding faithfully propagates it into a different sentence.\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>batch of 8   -&gt;  logits summed in one order   -&gt;  token A\nbatch of 32  -&gt;  same numbers, other order    -&gt;  token B\ntemperature and seed are identical in both\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <h2><a name=\"both-controls-aim-at-the-wrong-layer\" href=\"#both-controls-aim-at-the-wrong-layer\"> </a> Both controls aim at the wrong layer</h2>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>control</th>\n      <th>governs</th>\n      <th>where the divergence is</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>temperature</td>\n      <td>the <strong>sample</strong></td>\n      <td>—</td>\n     </tr>\n     <tr>\n      <td>seed</td>\n      <td>the <strong>sampler</strong></td>\n      <td>—</td>\n     </tr>\n     <tr>\n      <td>batch composition</td>\n      <td>the <strong>sum</strong></td>\n      <td>← here, upstream of both</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>That is why turning temperature to 0 feels like it should work and does not. It removes the randomness you chose; it cannot touch the reassociation you did not.</p>\n  <p>Every number on the page is computed in your browser on load <strong>from integers</strong>, so the exact answer is exact and not an estimate of one.</p>\n  <p>801 verifier asserts, 174 in-page checks, 0 failures.</p>\n </body>\n</html>",
+  "aiSummary": "尽管将温度设置为 0 并使用固定种子，但神经网络的输出仍然可能因浮点加法的非结合性而变化，其中求和顺序（由批次大小和组成决定）会引入微小但显著的误差，从而改变最终决策。",
+  "oneSentenceSummary": "尽管将温度设置为 0 并使用固定种子，但神经网络的输出仍然可能因浮点加法的非结合性而变化，其中求和顺序（由批次大小和组成决定）会引入微小但显著的误差，从而改变最终决策。",
+  "summary": "本文探讨了神经网络推理中一个具体的非确定性来源：浮点误差的累积。它解释了，虽然用户可以控制采样过程的随机性（温度）和初始状态（种子），但无法控制 logits 的求和顺序。这个顺序取决于批次的大小和组成，导致即使所有其他参数保持不变，最终值也会略有不同，从而可能产生不同的输出令牌。",
+  "mainPoints": [
+    {
+      "point": "批次组成决定求和顺序",
+      "explanation": "logits 的求和顺序由正在处理的特定请求批次决定。由于批次的大小和组成可能会在每次请求之间发生变化，因此求和树也会随之变化，从而导致 logits 的最终值不同。"
+    },
+    {
+      "point": "浮点加法是非结合性的",
+      "explanation": "与整数算术不同，浮点加法不是结合性的。这意味着 (a + b) + c 的结果不一定等于 a + (b + c)。由批处理引入的特定运算顺序会导致小误差累积，从而改变 logit 的最终值。"
+    },
+    {
+      "point": "小误差导致大决策",
+      "explanation": "在神经网络中，下一个令牌的决策通常是通过比较非常接近的值来做出的。logit 计算中的微小误差（由非结合和引起）足以将决策从一个令牌翻转到另一个令牌，从而导致完全不同的输出句子。"
+    }
+  ],
+  "keyQuotes": [
+    "回复又不一样了，而种子根本没有改变任何东西。",
+    "引擎模拟了算术：logit 是许多项的和，浮点加法不是结合性的，而机器添加它们的顺序是由你所处的批次大小决定的。",
+    "当两个候选令牌很接近时，最后一位会选择一个不同的 argmax——而贪婪解码会忠实地将其传播到一个不同的句子中。"
+  ],
+  "tags": [
+    "推理",
+    "非确定性",
+    "浮点误差",
+    "批处理",
+    "神经网络"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 253,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788086719000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 18:45:19"
+}

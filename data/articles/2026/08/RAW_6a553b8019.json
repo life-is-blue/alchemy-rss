@@ -1,0 +1,50 @@
+{
+  "id": "RAW_6a553b8019",
+  "title": "Softmax 瓶颈是整数，而它预测的是连续值",
+  "url": "https://dev.to/dev48v/the-softmax-bottleneck-is-an-integer-and-the-thing-it-predicts-is-continuous-4jg5",
+  "date": "2026-08-30 18:43:57",
+  "author": "Devanshu Biswas",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>A language model turns a hidden vector into V logits through <strong>one matrix</strong>. So the whole matrix of logits it can produce has rank at most the width of that vector, and the set of distributions it can represent is pinned by an <strong>integer</strong>.</p>\n  <p>Run it: <a href=\"https://dev48.infy.uk/dl/day75-softmax-bottleneck.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://dev48.infy.uk/dl/day75-softmax-bottleneck.html</a></p>\n  <h2><a name=\"the-task-is-built-so-the-obstruction-is-exact\" href=\"#the-task-is-built-so-the-obstruction-is-exact\"> </a> The task is built so the obstruction is exact</h2>\n  <p>A chosen log-odds spectrum over 12 symbols and 16 enumerated contexts, so the limit is a <strong>closed form</strong> rather than a fitted curve. The score is a mean KL from the true conditional: exactly 0 for the teacher, above a conditional-entropy floor of <strong>1.9632 nats</strong>.</p>\n  <h2><a name=\"the-capacity-is-not-what-is-usually-written-down\" href=\"#the-capacity-is-not-what-is-usually-written-down\"> </a> The capacity is not what is usually written down</h2>\n  <p>It is not the rank of the probability matrix, or of the logit matrix as printed. It is the rank of the <strong>log-odds</strong> matrix — log p(y|c) minus log p(y_ref|c) — and the choice of reference symbol has to be free for that to be well defined.</p>\n  <p>So the page checks it: recompute in all <strong>12 gauges</strong>, get the <strong>same integer</strong> every time.\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>rank of the log-odds matrix   -&gt;  the capacity\nchoice of reference symbol    -&gt;  irrelevant, verified in all 12\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <h2><a name=\"the-headline\" href=\"#the-headline\"> </a> The headline</h2>\n  <blockquote>\n   <p>The criterion is an <strong>integer</strong>. The thing it is trying to predict is <strong>continuous</strong>.</p>\n  </blockquote>\n  <p>A model whose rank is one short of what the task needs is not \"one unit worse\". The bottleneck says <em>impossible</em>; the loss says <em>this much worse than possible</em>, and those two statements do not line up. The page measures the gap between them — which is where the practical advice about mixture-of-softmaxes and rank tricks either earns its keep or does not.</p>\n  <p>280 verifier asserts, 347 in-page checks, 0 failures.</p>\n </body>\n</html>",
+  "aiSummary": "语言模型表示概率分布的能力受到其对数赔率矩阵秩的根本限制，该秩是整数；这一约束阻止模型完美捕捉底层数据的连续本质，导致理论容量与实际性能之间存在可测量差距。",
+  "oneSentenceSummary": "语言模型表示概率分布的能力受到其对数赔率矩阵秩的根本限制，该秩是整数；这一约束阻止模型完美捕捉底层数据的连续本质，导致理论容量与实际性能之间存在可测量差距。",
+  "summary": "本文探讨了“softmax 瓶颈”，即语言模型的表示能力受限于其隐藏状态的维度。尽管模型试图预测连续概率分布，但矩阵秩的离散性质为其可编码的独特分布数量设定了硬限制。文章提供了对这一约束的数学分析，证明模型的容量由对数赔率矩阵的秩决定，与所选参考符号无关。",
+  "mainPoints": [
+    {
+      "point": "对数赔率矩阵的秩决定了模型表示独特概率分布的容量。",
+      "explanation": "因为模型使用单个矩阵将隐藏向量转换为 logits，该矩阵中线性独立行的数量（其秩）为可生成的分布复杂度设定了上限。如果任务所需的独特分布数量超过秩所允许的，模型将无法捕捉数据的全部方差。"
+    },
+    {
+      "point": "参考符号的选择是任意的，不影响计算出的容量。",
+      "explanation": "‘对数赔率’是相对于参考概率分布计算的。本文确认，移动这一参考（改变基线）不会改变矩阵的秩，这意味着模型的内在容量是独立于特定归一化方法的固定属性。"
+    },
+    {
+      "point": "瓶颈施加的理论极限与模型的实际性能之间存在可测量差距。",
+      "explanation": "文本引入了“条件熵下限”（1.9632 nats），代表完美模型的最小可能损失。训练模型的实际损失与该下限进行了比较，揭示了差异。这一差距表明，虽然模型受瓶颈约束，但其参数估计或架构仍有改进空间，以更接近理论极限。"
+    }
+  ],
+  "keyQuotes": [
+    "语言模型通过**一个矩阵**将隐藏向量转换为 V 个 logits。因此，它能产生的整个 logits 矩阵的秩最多等于该向量的宽度，而它能表示的分布集则被一个**整数**所固定。"
+  ],
+  "tags": [
+    "大型语言模型",
+    "模型训练与推理",
+    "提示工程",
+    "AI 评估与基准",
+    "注意力机制"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 284,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788086637000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 18:43:57"
+}

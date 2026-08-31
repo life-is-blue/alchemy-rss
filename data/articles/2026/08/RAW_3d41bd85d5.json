@@ -1,0 +1,59 @@
+{
+  "id": "RAW_3d41bd85d5",
+  "title": "Python 数据科学：2026 年初学者路线图",
+  "url": "https://dev.to/info_info_37785cd30473b53/python-data-science-beginner-roadmap-2026-li6",
+  "date": "2026-08-30 18:19:13",
+  "author": "info info",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>W1-2: Python basics. W3-5: NumPy/Pandas/Matplotlib. W6-7: Statistics.\n   <br>\n   W8-10: ML (Scikit, TensorFlow, PyTorch). W11-12: Projects. W13: Job prep.</p>\n  <p>Salary: Analyst $60-80k. Scientist $90-130k. ML Eng $120-180k.</p>\n  <p>Income: <a href=\"https://verdoyant.pages.dev/passive\" target=\"_blank\" rel=\"noopener noreferrer\">https://verdoyant.pages.dev/passive</a></p>\n  <p>Disclosure: Some links are affiliate links.</p>\n </body>\n</html>",
+  "aiSummary": "该路线图概述了初学者学习数据科学的 13 周课程，涵盖 Python 基础、数据操作、统计学、机器学习和项目开发，重点是为职业发展培养实用技能。",
+  "oneSentenceSummary": "该路线图概述了初学者学习数据科学的 13 周课程，涵盖 Python 基础、数据操作、统计学、机器学习和项目开发，重点是为职业发展培养实用技能。",
+  "summary": "本文为有志于从事数据科学的人士提供了结构化的时间表，从基础的 Python 编程开始，逐步深入数据分析库（NumPy、Pandas、Matplotlib）、统计理论，以及机器学习框架（Scikit-learn、TensorFlow、PyTorch）。最后，重点放在构建项目组合和准备面试，包括该领域各种职位的薪资预期。",
+  "mainPoints": [
+    {
+      "point": "基础技能",
+      "explanation": "前两周致力于掌握 Python 语法和控制结构，这是所有后续数据科学任务的基石。"
+    },
+    {
+      "point": "数据操作和可视化",
+      "explanation": "第三至第五周重点使用 NumPy 进行数值运算、Pandas 进行数据清洗和分析，以及 Matplotlib 创建信息图表。"
+    },
+    {
+      "point": "统计理解",
+      "explanation": "第六和第七周涵盖统计学的理论基础，提供解读数据和构建模型所需的背景知识。"
+    },
+    {
+      "point": "机器学习实施",
+      "explanation": "第八至第十周介绍机器学习概念和算法，并使用 Scikit-learn、TensorFlow 和 PyTorch 等流行库进行实践操作。"
+    },
+    {
+      "point": "项目式学习",
+      "explanation": "最后几周强调将所学技能应用于实际问题，通过完成项目来构建作品集，并为求职面试做好准备。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"W1-2：Python 基础。W3-5：NumPy/Pandas/Matplotlib。W6-7：统计学。\"，\"explanation\":\"这一行简洁地概述了路线图的初始阶段，强调在进入更复杂主题之前，必须建立坚实的编程和数据操作基础。\"}",
+    "{\"quote\":\"薪资：分析师 60-80k。科学家 90-130k。ML 工程师 120-180k。\"，\"explanation\":\"这为该领域提供了明确的财务基准，展示了从入门级分析到专业化机器学习工程的职业发展和薪资增长潜力。\"}"
+  ],
+  "tags": [
+    "Python",
+    "数据科学",
+    "机器学习",
+    "NumPy",
+    "Pandas"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 33,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788085153000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 18:19:13"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_f0db65df72",
+  "title": "修订提示",
+  "url": "https://revisionprompting.info/home",
+  "date": "2026-08-30 22:45:07",
+  "author": "blasssky",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <main>\n   <h2><span class=\"kicker\">The Problem</span> that Revision Prompting solves</h2>\n   <p>We prompt LLMs in two ways:</p>\n   <dl>\n    <dt>Ad-hoc prompting</dt>\n    <dd>\n     Prompts LLMs manually, with a custom instruction per call.\n     <details>\n      <summary>Examples</summary>\n      <ul>\n       <li>Asking a coding agent to implement a new feature.</li>\n       <li>Asking a chatbot to draft an email.</li>\n      </ul>\n     </details>\n    </dd>\n    <dt>Industrial prompting</dt>\n    <dd>\n     Prompts LLMs as part of an automated process, with the same instruction across calls.\n     <details>\n      <summary>Examples</summary>\n      <ul>\n       <li>Extracting structured information from invoices as part of an accounting pipeline.</li>\n       <li>Translating documentation pages into other languages as part of a release process.</li>\n      </ul>\n     </details>\n    </dd>\n   </dl>\n   <p>Industrial prompting typically processes some <var>Input</var> data with an <var>Instruction</var> to produce some <var>Output</var>. Whenever the <var>Input</var> gets updated, industrial prompting naively re-runs the <var>Instruction</var> on the <var>UpdatedInput</var> to produce the <var>UpdatedOutput</var>. This approach has two downsides:</p>\n   <dl>\n    <dt>Lack of consistency</dt>\n    <dd>\n     LLMs are non-deterministic, so the <var>UpdatedOutput</var> differs from the original <var>Output</var> beyond what the <var>UpdatedInput</var> necessitates.\n    </dd>\n    <dt>Full processing time and token costs</dt>\n    <dd>\n     Although only parts of the input have changed, we produce the <var>UpdatedOutput</var> in full. This is as expensive as the production of the original <var>Output</var>.\n    </dd>\n   </dl>\n   <p><em>Revision prompting</em> resolves both downsides of naive re-runs by operating on the input and output <strong>revisions</strong> instead of the full input and output.</p>\n   <h2><span class=\"kicker\">How</span> Revision Prompting works</h2>\n   <p>Assume you have processed some <var>Input</var> with an <var>Instruction</var> to produce some <var>Output</var> by prompting an LLM with</p>\n   <div class=\"prompt\">\n    <p><var>Instruction</var>: <var>Input</var></p>\n   </div>\n   <p>Now, <var>Input</var> has been updated, and you also want to process the <var>UpdatedInput</var>. Revision Prompting processes the <var>UpdatedInput</var> by constructing the <var>RevisionPrompt</var> as</p>\n   <div class=\"prompt\">\n    <p><var>Instruction</var>: <var>Input</var> produced <var>Output</var>.</p>\n    <p>The input got updated as follows: <code>diff(<var>Input</var>, <var>UpdatedInput</var>)</code>.</p>\n    <p>Please produce a patch to update the output.</p>\n   </div>\n   <p>The LLM responds to the <var>RevisionPrompt</var> with the <var>OutputPatch</var> that we apply to the <var>Output</var> to obtain the <var>UpdatedOutput</var>.</p>\n   <details>\n    <summary>Example</summary>\n    <p>You translate the product page of an e-bike to German with the prompt</p>\n    <div class=\"prompt fields\">\n     <span class=\"flabel\">Instruction</span><span class=\"fvalue\">Translate to German:</span> <span class=\"flabel\">Input</span><span class=\"fvalue\"><code class=\"lines\">The Vela 3 e-bike has a range of 80 km. \n       <br>Its battery recharges in three hours. \n       <br>The frame is made from recycled aluminium. \n       <br>Every Vela 3 includes a two-year warranty.</code></span>\n    </div>\n    <p>and the LLM produces</p>\n    <div class=\"prompt fields\">\n     <span class=\"flabel\">Output</span><span class=\"fvalue\"><code class=\"lines\">Das E-Bike Vela 3 hat eine Reichweite von 80 km. \n       <br>Sein Akku lädt in drei Stunden auf. \n       <br>Der Rahmen besteht aus recyceltem Aluminium. \n       <br>Jedes Vela 3 hat zwei Jahre Garantie.</code></span>\n    </div>\n    <p>Later, a battery upgrade increases the range from 80 km to 100 km. Instead of re-translating the whole page, you prompt</p>\n    <div class=\"prompt fields\">\n     <span class=\"flabel\">Instruction</span><span class=\"fvalue\">Translate to German:</span> <span class=\"flabel\">Input</span><span class=\"fvalue\"><code class=\"lines\">The Vela 3 e-bike has a range of 80 km. \n       <br>Its battery recharges in three hours. \n       <br>The frame is made from recycled aluminium. \n       <br>Every Vela 3 includes a two-year warranty.</code></span> <span class=\"flabel\"></span><span class=\"fvalue\">produced</span> <span class=\"flabel\">Output</span><span class=\"fvalue\"><code class=\"lines\">Das E-Bike Vela 3 hat eine Reichweite von 80 km. \n       <br>Sein Akku lädt in drei Stunden auf. \n       <br>Der Rahmen besteht aus recyceltem Aluminium. \n       <br>Jedes Vela 3 hat zwei Jahre Garantie.</code></span> <span class=\"flabel\"></span><span class=\"fvalue\">The input got updated as follows:</span> <span class=\"flabel\">diff(Input, UpdatedInput)</span><span class=\"fvalue\"><span class=\"diff\"><span class=\"del\">- The Vela 3 e-bike has a range of <mark>80</mark> km.</span><span class=\"add\">+ The Vela 3 e-bike has a range of <mark>100</mark> km.</span></span></span> <span class=\"flabel\"></span><span class=\"fvalue\">Please produce a patch to update the output.</span>\n    </div>\n    <p>The LLM responds with</p>\n    <div class=\"prompt fields\">\n     <span class=\"flabel\">OutputPatch</span><span class=\"fvalue\"><span class=\"diff\"><span class=\"del\">- Das E-Bike Vela 3 hat eine Reichweite von <mark>80</mark> km.</span><span class=\"add\">+ Das E-Bike Vela 3 hat eine Reichweite von <mark>100</mark> km.</span></span></span>\n    </div>\n    <p>Applying the <var>OutputPatch</var> to the original <var>Output</var> produces the updated translation.</p>\n    <p>The <var>OutputPatch</var> contains only two lines of text instead of a full re-translation. Unchanged content stays consistent with the original translation.</p>\n   </details>\n   <h2><span class=\"kicker\">Why</span> Revision Prompting works</h2>\n   <dl>\n    <dt>Consistency</dt>\n    <dd>\n     By supplying the LLM with the input revision <code>diff(<var>Input</var>, <var>UpdatedInput</var>)</code>, we ensure that the <var>OutputPatch</var> is limited to what the input changes necessitate. Everything not touched by the <var>OutputPatch</var> remains identical to the original <var>Output</var>. Therefore, the <var>UpdatedOutput</var> is <strong>consistent</strong> with the original <var>Output</var>.\n    </dd>\n    <dt>Time &amp; cost savings</dt>\n    <dd>\n     Revision Prompting feeds the original <var>Output</var> back in as part of the prompt, so the LLM only generates the short <var>OutputPatch</var>. Most tokens thereby move from the output to the input. Since processing time scales roughly with the length of the output, this eliminates most of the processing time. It also converts most of the output token cost into much cheaper input token cost. If the re-run happens within a couple of minutes of the original run, prompt caching reduces part of the input token cost as well.\n    </dd>\n   </dl>\n   <h2>Revision Prompting in practice</h2>\n   <dl>\n    <dt>Revision Formats</dt>\n    <dd>\n     The ideal formats for encoding <code>diff(<var>Input</var>, <var>UpdatedInput</var>)</code> and the <var>OutputPatch</var> depend on the <var>Instruction</var>. The <a href=\"https://pubs.opengroup.org/onlinepubs/9799919799/utilities/diff.html\">POSIX <code>diff</code> utility</a> is a useful generic format. For JSON outputs, the <a href=\"https://jsonpatch.com/\">JSON Patch</a> format works well.\n    </dd>\n    <dt>Expected Savings</dt>\n    <dd>The time &amp; cost reduction scales with the size of the input changes and the sensitivity of the output to changes in the input. In our own industrial prompts, Revision Prompting reduces time by ~80%, and costs by ~65%.</dd>\n   </dl>\n  </main>\n </body>\n</html>",
+  "aiSummary": "修订提示是一种技术，通过仅处理输入数据的变化（修订）来提高自动化 LLM 工作流程的效率和一致性，而不是从头开始重新运行整个提示。",
+  "oneSentenceSummary": "修订提示是一种技术，通过仅处理输入数据的变化（修订）来提高自动化 LLM 工作流程的效率和一致性，而不是从头开始重新运行整个提示。",
+  "summary": "在工业环境中，LLM 通常用于反复处理大量数据（例如发票或文档）。当输入数据发生微小变化时，当前的做法是重新运行整个提示，这既耗时又可能导致结果不一致。修订提示通过向 LLM 提供旧输入和新输入之间的具体变化（“diff”）来解决这个问题。LLM 然后生成一个“补丁”，用于更新现有输出，从而确保一致性并显著减少处理时间和成本。",
+  "mainPoints": [
+    {
+      "point": "一致性问题",
+      "explanation": "即使输入变化很小，标准提示的重新运行也可能产生略微不同的输出。这种缺乏一致性的情况对于需要稳定性的自动化系统来说是有问题的。"
+    },
+    {
+      "point": "时间和成本节省",
+      "explanation": "为每个小更新重新运行整个提示是非常低效的。修订提示大幅减少了 LLM 需要处理的数据量，从而加快了执行速度并降低了令牌成本。"
+    },
+    {
+      "point": "机制",
+      "explanation": "该技术通过将原始输出和输入变化的具体内容提供给 LLM 来工作。LLM 然后输出一个“补丁”，用于修改现有结果，而不是从头开始生成新结果。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"修订提示通过操作输入和输出的修订，而不是操作完整的输入和输出，从而解决了朴素重新运行的两个缺点。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"LLM 响应修订提示，生成输出补丁，我们将该补丁应用于输出，以获得更新后的输出。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"在我们的工业提示中，修订提示将时间减少了约 80%，成本减少了约 65%。\"，\"attribution\":\"文章\"}"
+  ],
+  "tags": [
+    "提示工程",
+    "LLM 优化",
+    "数据处理",
+    "效率",
+    "修订控制"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 755,
+  "domain": "revisionprompting.info",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788101107000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 22:45:07"
+}

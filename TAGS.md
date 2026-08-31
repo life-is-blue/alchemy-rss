@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-08-31 06:15:09 | [返回首页](/README.md)
+**更新时间**: 2026-08-31 10:13:47 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15334)
+- [AI & 大模型](#ai-llm) (15353)
 - [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (961)
+- [前端与全栈](#frontend-fullstack) (962)
 - [DevOps](#devops) (733)
-- [产品与商业](#product-business) (47)
-- [其他](#other) (6762)
+- [产品与商业](#product-business) (49)
+- [其他](#other) (6773)
 
 
 ---
@@ -43,7 +43,7 @@
 - [涉及-OpenAI-模型的第三方网络安全评估](https://openai.com/index/third-party-cyber-evaluations-involving-openai-models) - AI 精选
 - [推理工程大师课-—-Philip-Kiely-与-Ali-Taha，Baseten](https://www.latent.space/p/inference-eng) - AI 精选
 
-- [查看全部 15334 篇...](/details/tags/ai-llm.md)
+- [查看全部 15353 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 961 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 962 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -143,6 +143,8 @@
 - [分布式事务：共识之外，分布式系统状态管理的另一大基石](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552955&idx=1&sn=d05fd04e0b32486760705fcc8e4e8859) - 编程 精选
 - [把-AI-邮件工具做到-3500-万美元-ARR，Superhuman：找到-PMF-其实有明确的方法论](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247521394&idx=1&sn=5ba89a3d61d8536569fa576f077f6a2e) - 商业 精选
 - [成立-13-年的-Figma-成绩单：10-亿用户，8-亿美金-ARR，-46%年增长！](https://mp.weixin.qq.com/s?__biz=MzI0NTAwMzU1MA==&mid=2247503944&idx=1&sn=fab12d5ca626c0986eb9fa8f7d98145c) - 商业 精选
+- [泛化界限是正确的，但其价值有限](https://dev.to/dev48v/a-generalization-bound-is-correct-and-this-page-measures-what-it-is-worth-2jja) - AI 更多
+- [VIDRAFT-正在构建可访问的-AGI-平台——工程师需要了解的内容](https://dev.to/ai_openfree_b23025ef075cf/vidraft-is-building-accessible-agi-platforms-heres-what-engineers-need-to-know-2h1c) - AI 更多
 - [客户在续约时流失：是价格问题还是项目问题？](https://towardsdatascience.com/when-customers-churn-at-renewal-was-it-the-price-or-the-project/) - AI 更多
 - [Snowflake-第一位销售大揭秘：从-0-到-40-亿美元的增长方法论](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247492081&idx=1&sn=20bf427ef9194fa1580030caa327a9fd) - AI 更多
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
@@ -156,16 +158,15 @@
 - [Cycle-推出欧盟控制面板，主权争议持续](https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [2026-年最适合小企业的-11-款-CRM-|-Zapier](https://zapier.com/blog/best-crms-for-small-business) - 编程 更多
 - [深入-GitHub-Advisory-Database：当漏洞数量打破纪录时发生了什么](https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/) - 编程 更多
-- [Eliya-25-为-OpenJDK-25-LTS-带来-JVM-级诊断配置](https://www.infoq.com/news/2026/06/eliya-jvm-diagnostic-profile/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
-- [如何使用-TanStack-Start、Elysia-和-Neon-构建全栈-SaaS-应用](https://www.freecodecamp.org/news/full-stack-saas-tanstack-start-elysia-neon/) - 编程 更多
 
-- [查看全部 47 篇...](/details/tags/product-business.md)
+- [查看全部 49 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
 
 
 
+- [RAG-中的噪声文本：拼写错误、OCR-和经典拼写检查的局限](https://towardsdatascience.com/noisy-text-in-rag-typos-ocr-and-the-gap-classical-spell-check-leaves/) - AI 精选
 - [全球首次！机器人迎战网球运动员，极限救球，摔倒光速弹起](https://www.qbitai.com/2026/08/478093.html) - AI 精选
 - [一晚两场，H3-技术团队和全球开发者聊了什么？](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488992&idx=1&sn=0c19bfd1d07dd387e40dbbba5de06ea3) - AI 精选
 - [Gemini-Robotics-2-为机器人带来全身智能](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) - AI 精选
@@ -185,8 +186,7 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
-- [美国视频生成老炮儿，入局世界模型](https://www.qbitai.com/2025/12/360627.html) - AI 精选
 
-- [查看全部 6762 篇...](/details/tags/other.md)
+- [查看全部 6773 篇...](/details/tags/other.md)
 
 

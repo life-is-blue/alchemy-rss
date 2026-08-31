@@ -1,0 +1,51 @@
+{
+  "id": "RAW_369ff233c5",
+  "title": "DeepSeek、Google 和 OpenAI 的新批次模型：LLM 价格摘要",
+  "url": "https://dev.to/adrasmussen/new-batch-models-from-deepseek-google-and-openai-llm-pricing-digest-1pok",
+  "date": "2026-08-30 18:01:38",
+  "author": "Anders Rasmussen",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <h2><a name=\"llm-price-watch-weekly-digest\" href=\"#llm-price-watch-weekly-digest\"> </a> LLM Price Watch Weekly Digest</h2>\n  <p>No price changes this week across the five providers we track — Claude, GPT, Gemini, DeepSeek, and Grok all held steady. But there was a quiet flurry of new model IDs showing up on OpenRouter, all of them batch variants, and worth knowing about if you're running async workloads.</p>\n  <p>Here's what we spotted on August 29th.</p>\n  <hr>\n  <h3><a name=\"deepseek-two-new-batch-models\" href=\"#deepseek-two-new-batch-models\"> </a> DeepSeek: Two New Batch Models</h3>\n  <p>DeepSeek added two new batch-mode models:</p>\n  <ul>\n   <li><code>deepseek/deepseek-v4-pro-0813:batch</code></li>\n   <li><code>deepseek/deepseek-v4-flash-0731:batch</code></li>\n  </ul>\n  <p>The naming convention tells you a few things. The <code>-pro</code> vs <code>-flash</code> split mirrors what we've seen before — pro for heavier reasoning tasks, flash for faster and cheaper throughput. The date suffixes (<code>0813</code>, <code>0731</code>) suggest these are specific checkpoints, which is useful if you care about reproducibility or are comparing outputs across versions.</p>\n  <p>Batch mode generally means you submit a job and get results back asynchronously, usually at a lower cost per token than the real-time endpoint. If you're doing large-scale data processing, eval runs, or document analysis where latency doesn't matter, batch is almost always the right call. Worth checking whether DeepSeek's batch pricing lands meaningfully below their synchronous rates.</p>\n  <hr>\n  <h3><a name=\"google-gemma-4-31b-batch\" href=\"#google-gemma-4-31b-batch\"> </a> Google: Gemma 4 31B Batch</h3>\n  <ul>\n   <li><code>google/gemma-4-31b-it:batch</code></li>\n  </ul>\n  <p>Gemma 4 at 31B is a reasonable mid-size open-weights model. The <code>it</code> tag means instruction-tuned. Seeing it show up as a batch endpoint on OpenRouter suggests Google is continuing to expand the Gemma family's API availability beyond just the hosted Gemini models. For teams that want Google's open-weights lineage without committing to Gemini pricing, this is worth a look — especially for batch jobs where you can afford to wait.</p>\n  <hr>\n  <h3><a name=\"openai-two-oss-models\" href=\"#openai-two-oss-models\"> </a> OpenAI: Two \"OSS\" Models</h3>\n  <p>These two caught my eye:</p>\n  <ul>\n   <li><code>openai/gpt-oss-120b:batch</code></li>\n   <li><code>openai/gpt-oss-20b:batch</code></li>\n  </ul>\n  <p>The <code>oss</code> label is interesting. OpenAI hasn't broadly publicized models under that naming scheme, so I'm not going to speculate too much about what's behind it. What's observable is that there's a 120B and a 20B variant, both batch-only for now, both appearing on OpenRouter. The size gap between them is large — 120B puts it in flagship territory, 20B is more of an efficient workhorse. If these are genuinely open or open-weight models from OpenAI, that would be notable, but I'd wait for official documentation before drawing conclusions.</p>\n  <p>For now, treat them as \"spotted in the wild\" and monitor whether pricing and model cards show up.</p>\n  <hr>\n  <h3><a name=\"what-this-week-means-practically\" href=\"#what-this-week-means-practically\"> </a> What This Week Means Practically</h3>\n  <p>If you're actively choosing models right now:</p>\n  <p><strong>Batch is underused.</strong> Most developers I talk to default to synchronous endpoints even when their use case has no real latency requirement. If you're running nightly pipelines, processing large document sets, or doing offline evals, switching to batch can cut costs significantly. This week's additions give you more batch options across providers.</p>\n  <p><strong>DeepSeek continues to be prolific.</strong> Two new models in one week, both with dated checkpoints, suggests active development. If you're relying on DeepSeek for production workloads, pinning to a specific checkpoint (like <code>0813</code>) is probably smarter than using a floating alias.</p>\n  <p><strong>OpenAI's OSS naming is worth watching.</strong> No firm conclusions yet, but if these turn out to be open-weight models with competitive pricing, that changes the calculus for teams currently choosing between self-hosting and API access.</p>\n  <p>No pricing drama this week — just new surface area to explore. I'll flag it here if anything changes on the cost side.</p>\n  <hr>\n  <p>We track live pricing and new model appearances for Claude, GPT, Gemini, DeepSeek, and Grok at <strong><a href=\"https://llmpricewatch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">llmpricewatch.com</a></strong>.</p>\n </body>\n</html>",
+  "aiSummary": "本周的 LLM 价格观察显示，主要提供商的定价没有变化，但 DeepSeek、Google 和 OpenAI 推出了一系列新的批次模式模型，为异步工作负载提供了经济高效的选项。",
+  "oneSentenceSummary": "本周的 LLM 价格观察显示，主要提供商的定价没有变化，但 DeepSeek、Google 和 OpenAI 推出了一系列新的批次模式模型，为异步工作负载提供了经济高效的选项。",
+  "summary": "虽然 Claude、GPT、Gemini、DeepSeek 和 Grok 的定价格局保持稳定，但市场正在通过新的批次模式产品进行扩展。DeepSeek 推出了两个用于不同计算需求的模型（pro 和 flash），Google 添加了中型 Gemma 4 选项，而 OpenAI 则推出了两个有趣的 'OSS' 模型，所有这些都旨在优化非时间敏感任务的成本。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek 的双批次策略",
+      "explanation": "DeepSeek 推出了两个新的批次模型，'deepseek-v4-pro-0813' 和 'deepseek-v4-flash-0731'，以满足不同的性能要求。'pro' 变体经过优化，用于复杂推理，而 'flash' 版本则专为高吞吐量、低延迟任务而设计，为用户提供了针对特定工作负载的灵活选项。"
+    },
+    {
+      "point": "Google 的 Gemma 4 扩展",
+      "explanation": "引入 'gemma-4-31b-it:batch' 代表了 Google 对 Gemma 模型系列的持续支持。这个中型、经过指令微调的模型现在以批次格式提供，使其成为寻求模型大小与计算效率之间平衡的开发人员的离线任务可行选择。"
+    },
+    {
+      "point": "OpenAI 的神秘 OSS 模型",
+      "explanation": "OpenAI 静悄悄地发布了两个新模型，'gpt-oss-120b' 和 'gpt-oss-20b'，都标为用于批处理。'OSS' 前缀暗示了向更开放或共享模型架构的潜在转变，尽管这些模型的确切性质及其底层技术尚未完全披露。"
+    }
+  ],
+  "keyQuotes": [
+    "批次模式通常意味着你提交一个作业，并异步接收结果，通常每令牌的成本比实时端点低。",
+    "'oss' 标签很有趣。OpenAI 并没有广泛宣传这种命名方案下的模型，所以我不会对它背后是什么做太多猜测。"
+  ],
+  "tags": [
+    "LLM 价格",
+    "批处理",
+    "DeepSeek",
+    "Google AI",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 80,
+  "wordCount": 560,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788084098000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 18:01:38"
+}

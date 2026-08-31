@@ -1,0 +1,51 @@
+{
+  "id": "RAW_34692092f1",
+  "title": "AI 代理的执行控制层 | Runplane",
+  "url": "https://runplane.ai",
+  "date": "2026-08-30 17:57:59",
+  "author": "Runplane",
+  "siteName": "Hacker News - Newest: \"AI Agent\"",
+  "content": "<html>\n <head></head>\n <body>\n  <h2>What is Runplane?</h2>\n  <p>Runplane is the execution control layer for AI agents. It sits between your agent and the real world. When an agent attempts to execute a tool, the SDK wraps the execution with guard(), evaluates the action against your policies, and enforces a decision: ALLOW, BLOCK, or REQUIRE_APPROVAL.</p>\n  <p>The integration is SDK-first. You bring your existing agent tools from any framework. Runplane automatically maps those tools into canonical action types and applies baseline policies. You remain in full control—customize policies for any action type. All tool execution is wrapped via runplane.guard(), and decisions are enforced at runtime.</p>\n </body>\n</html>",
+  "aiSummary": "Runplane 是一个基于 SDK 的执行控制层，位于 AI 代理与现实世界之间，通过 guard() 函数包裹工具执行，以评估操作是否符合政策，并强制执行 ALLOW、BLOCK 或 REQUIRE_APPROVAL 等决策。",
+  "oneSentenceSummary": "Runplane 是一个基于 SDK 的执行控制层，位于 AI 代理与现实世界之间，通过 guard() 函数包裹工具执行，以评估操作是否符合政策，并强制执行 ALLOW、BLOCK 或 REQUIRE_APPROVAL 等决策。",
+  "summary": "Runplane 为 AI 代理提供了一个强大的执行控制层，支持对工具执行进行细粒度的政策强制。该 SDK 会包裹现有的代理工具，将它们映射到规范的动作类型，并在运行时根据可定制的政策进行评估。这确保了代理在定义的安全和合规边界内运行，而所有决策都会被记录用于审计。",
+  "mainPoints": [
+    {
+      "point": "基于 SDK 的集成",
+      "explanation": "Runplane 通过一个轻量级的 SDK 与现有的代理框架集成，允许开发者使用 guard() 函数包裹当前的工具，而无需重写整个代码库。"
+    },
+    {
+      "point": "基于政策的控制",
+      "explanation": "该平台通过一个政策引擎来强制执行控制，该引擎将操作与预定义的规则进行对比，支持基于上下文和用户定义标准的动态决策。"
+    },
+    {
+      "point": "可审计性和合规性",
+      "explanation": "所有的工具执行都会被记录详细的元数据，包括决策结果和推理过程，从而为合规性和调试提供一个清晰的审计轨迹。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"当代理尝试执行一个工具时，SDK 会用 guard() 包裹执行，将该操作与你的政策进行对比，并强制执行一个决策：ALLOW、BLOCK，或者 REQUIRE_APPROVAL。\"，\"attribution\":\"Runplane 文档\"}",
+    "{\"quote\":\"你从任何框架中带来现有的代理工具。Runplane 会自动将这些工具映射到规范的动作类型，并应用基础政策。\"，\"attribution\":\"Runplane 文档\"}"
+  ],
+  "tags": [
+    "AI 代理",
+    "安全",
+    "治理",
+    "云原生 / DevOps",
+    "企业 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 99,
+  "domain": "runplane.ai",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_87ebb4f7",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788083879000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 17:57:59"
+}

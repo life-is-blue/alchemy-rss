@@ -1,0 +1,57 @@
+{
+  "id": "RAW_c8e31eee8b",
+  "title": "五款我反复使用的开源库：NCNN on Pi 3、Roboflow Universe、Turso libSQL、Pagefind",
+  "url": "https://dev.to/morinaga/five-repos-i-keep-returning-to-ncnn-on-pi-3-roboflow-universe-turso-libsql-pagefind-3bfh",
+  "date": "2026-08-30 18:50:44",
+  "author": "MORINAGA",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I track a lot of repos. Most drift off a few months after I first star them. These five stayed useful across every build I've touched this year — one running on a Raspberry Pi in a room, three running on Vercel. None of them are glamorous. All of them solve a real constraint.</p>\n  <h2><a name=\"ncnn-neural-network-inference-without-cuda\" href=\"#ncnn-neural-network-inference-without-cuda\"> </a> NCNN — neural network inference without CUDA</h2>\n  <p>When I started running a YOLO model on a Raspberry Pi 3, every inference framework I tried assumed a GPU. NCNN doesn't. It's Tencent's open-source inference library for ARM and x86, and it has no external runtime dependencies.</p>\n  <p>For my shelf-scanning PoC, I exported a fine-tuned YOLO11n model to NCNN format. The resulting weights file came out to 36 MB (<code>model.ncnn.bin</code>). Running inference on a Pi 3 Model B — 906 MB RAM, no accelerator — the measured median is 8.5 seconds per scan, across 19 real scans on the device (range 8.4–11.8 s). That is slow. For a system that scans once per hour, it is fine.</p>\n  <p>NCNN forces a real tradeoff: I dropped the input resolution from 640 px (used in training) to 416 px to keep memory inside what the Pi can handle. The model still delivered mAP50 0.844 on the held-out test set, but that number was earned as much through post-processing as through model accuracy. NCNN gets you to the shelf; it does not make the shelf problem easy.</p>\n  <p><strong>Repo:</strong> <a href=\"https://github.com/Tencent/ncnn\" target=\"_blank\" rel=\"noopener noreferrer\">github.com/Tencent/ncnn</a></p>\n  <h2><a name=\"ultralytics-yolo11n-small-detection-model-with-a-transparent-training-api\" href=\"#ultralytics-yolo11n-small-detection-model-with-a-transparent-training-api\"> </a> Ultralytics YOLO11n — small detection model with a transparent training API</h2>\n  <p>YOLO11n is the Nano variant in Ultralytics' current lineup. I trained it for empty-shelf detection on a Mac using Apple MPS — <code>device=\"mps\"</code>, <code>imgsz=640</code>, <code>batch=16</code>, <code>epochs=60</code>. Zero cloud GPU cost.</p>\n  <p>After 60 epochs on 9,358 training images: validation precision 0.782, recall 0.734, mAP50 0.792. On a separate held-out test set (1,255 instances), precision reached 0.82 and mAP50 0.844. I also ran YOLO11s (the Small variant) under the same conditions; it hit 0.820 mAP50 on validation. Better, but not enough to justify its larger footprint on constrained hardware. The Nano model is the right call here.</p>\n  <p>What I value about the YOLO11 API is predictability: one training call, a reproducible config dict, and a clean NCNN export at the end. The NCNN export step is the part most tutorials skip entirely — Ultralytics' own docs cover it, but you have to read past the GPU-first examples.</p>\n  <p><strong>Repo:</strong> <a href=\"https://github.com/ultralytics/ultralytics\" target=\"_blank\" rel=\"noopener noreferrer\">github.com/ultralytics/ultralytics</a></p>\n  <h2><a name=\"roboflow-universe-public-cv-datasets-with-filterable-licences\" href=\"#roboflow-universe-public-cv-datasets-with-filterable-licences\"> </a> Roboflow Universe — public CV datasets with filterable licences</h2>\n  <p>Finding labelled object detection datasets is easy. Finding ones with a commercial-use licence is harder than it should be.</p>\n  <p>For the shelf project, I merged 7 Roboflow Universe datasets — 11,667 images total, split into 9,358 train / 1,162 valid / 1,147 test — selecting only datasets with CC BY 4.0 licences. The filter is a one-field check in each dataset's metadata. But you have to check: Roboflow Universe hosts datasets under a mix of licences (CC0, CC BY 4.0, CC BY-NC 4.0, and others), and CC BY-NC 4.0 bars commercial use. Roboflow makes this discoverable from the search interface; most dataset aggregators don't.</p>\n  <p>The outcome: no labelling work. The only cost was downloading, auditing licence strings, and writing the merge script. I went from zero training data to 11,667 annotated images in a day.</p>\n  <p><strong>Site:</strong> <a href=\"https://universe.roboflow.com\" target=\"_blank\" rel=\"noopener noreferrer\">universe.roboflow.com</a></p>\n  <h2><a name=\"turso-libsql-sqlite-at-the-edge-with-a-data-model-tax\" href=\"#turso-libsql-sqlite-at-the-edge-with-a-data-model-tax\"> </a> Turso libSQL — SQLite at the edge, with a data model tax</h2>\n  <p>I use Turso for all three of the AI-curated directory sites — Top AI Tools, Find Games Like, and Open Alternative To. The setup is familiar: SQLite-compatible wire protocol, a TypeScript SDK that works like a standard query builder, schema lives in the repo.</p>\n  <p>The free tier has real constraints. Row limits and database count limits shaped the data model more than the application logic did — I wrote about exactly how in <a href=\"https://dev.to/posts/three-turso-free-tier-limits-shaped-directory-data-model\">Three ways Turso's free-tier limits shaped my directory site data model</a>. If you're starting a new project assuming Turso free tier, read that first. The shape of the schema it forces on you is not obvious until you're already running.</p>\n  <p>The tradeoff worth naming: \"edge without the serverless tax\" is a simplification. You're trading one pricing model for another. For static-first sites where read latency matters more than write throughput, the trade is worth it.</p>\n  <p><strong>Site:</strong> <a href=\"https://turso.tech\" target=\"_blank\" rel=\"noopener noreferrer\">turso.tech</a></p>\n  <h2><a name=\"pagefind-buildtime-search-with-no-api-call-at-runtime\" href=\"#pagefind-buildtime-search-with-no-api-call-at-runtime\"> </a> Pagefind — build-time search with no API call at runtime</h2>\n  <p>The last thing I wanted was a search API that charges per query or requires a running server. Pagefind generates a search index at build time — no external service, no API key, no monthly bill after the first day.</p>\n  <p>The integration with Astro is one npm package and one plugin call. What catches people off guard: Pagefind outputs WASM, so the search logic runs client-side. The index is chunked and lazy-loaded, which matters for large sites that would otherwise pay the full index transfer cost on every page load. I walked through the lazy-loading pattern and how I wired it to a <code>&lt;dialog&gt;</code> element in <a href=\"https://dev.to/posts/pagefind-lazy-loading-native-dialog-astro\">How I implemented Pagefind search with a lazy-loading native dialog in Astro 5</a>.</p>\n  <p>The tradeoff is obvious once you see it: results are only as fresh as the last build. For a site that rebuilds on every data update, that is fine. For a site that patches individual records without triggering a rebuild, it is a mismatch.</p>\n  <p><strong>Repo:</strong> <a href=\"https://github.com/CloudCannon/pagefind\" target=\"_blank\" rel=\"noopener noreferrer\">github.com/CloudCannon/pagefind</a></p>\n  <hr>\n  <p>These five aren't the only tools in the stack. They're the ones where I can point to a specific constraint they solved that a more popular alternative didn't — either because the popular alternative assumed a GPU, charged per query, or required a managed cloud service I didn't want to depend on. Low-ceremony tools for constrained builds. That's the criterion I keep coming back to.</p>\n  <p><em>Part of an ongoing 6-month experiment running three AI-curated directory sites. The technical claims here are real; this article was AI-assisted.</em></p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了五款用于在受限硬件上构建 AI 应用的必备开源工具，包括用于无 GPU 推理的 NCNN、用于整理数据集的 Roboflow Universe、用于边缘数据存储的 Turso libSQL，以及用于离线搜索的 Pagefind。",
+  "oneSentenceSummary": "本文介绍了五款用于在受限硬件上构建 AI 应用的必备开源工具，包括用于无 GPU 推理的 NCNN、用于整理数据集的 Roboflow Universe、用于边缘数据存储的 Turso libSQL，以及用于离线搜索的 Pagefind。",
+  "summary": "作者分享了过去一年中对五个关键仓库的使用经验，这些仓库对他们的项目至关重要。他们讨论了在 Raspberry Pi 上运行神经网络的 NCNN、用于物体检测的 Ultralytics YOLO11n、用于获取训练数据的 Roboflow Universe、用于管理数据库状态的 Turso libSQL，以及用于实现搜索功能的 Pagefind。每个工具都根据其具体用例和帮助克服的限制进行了评估。",
+  "mainPoints": [
+    {
+      "point": "NCNN 可以在没有 GPU 的低功耗设备上运行神经网络推理。",
+      "explanation": "作者成功地在 Raspberry Pi 3 上使用 NCNN 运行了 YOLO 模型，该库支持 ARM 架构，并且没有外部依赖。这使得在受限环境中可以进行实时物体检测，尽管与 GPU 加速系统相比，推理速度较慢。"
+    },
+    {
+      "point": "Roboflow Universe 提供了一个带有清晰许可信息的整理数据集集合。",
+      "explanation": "作者使用 Roboflow Universe 为他们的项目获取训练数据，专门选择了带有 CC BY 4.0 许可证的数据集，以确保具有商业使用权。该平台的过滤功能使得在没有法律歧义的情况下更容易找到合适的数据集。"
+    },
+    {
+      "point": "Turso libSQL 提供了一个与 SQLite 兼容的无服务器、边缘数据库解决方案。",
+      "explanation": "Turso 用于在多个项目中存储应用程序数据。虽然免费层对数据建模施加了某些限制，但它提供了一个可扩展、低延迟的替代方案，用于替代传统的云数据库。"
+    },
+    {
+      "point": "Pagefind 允许在不依赖外部 API 的情况下实现快速、离线搜索功能。",
+      "explanation": "Pagefind 在构建时生成一个搜索索引，然后由客户端使用该索引进行搜索。这消除了对后端搜索服务及其相关成本的需求，使其成为静态或不经常更新的网站的理想选择。"
+    }
+  ],
+  "keyQuotes": [
+    "NCNN 没有外部运行时依赖。它是腾讯的开源推理库，用于 ARM 和 x86 架构。",
+    "我使用 Apple MPS 在 Mac 上训练了它，用于空货架检测——device='mps'，imgsz=640，batch=16，epochs=60。没有云 GPU 成本。",
+    "该过滤器是每个数据集元数据中的一个字段检查。但你必须检查：Roboflow Universe 托管的数据集具有多种许可证（CC0、CC BY 4.0、CC BY-NC 4.0 等），而 CC BY-NC 4.0 禁止商业使用。",
+    "Pagefind 在构建时生成一个搜索索引——没有外部服务，没有 API 密钥，也没有每月账单。"
+  ],
+  "tags": [
+    "Raspberry Pi",
+    "NCNN",
+    "YOLO11",
+    "Roboflow",
+    "Turso"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 964,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788087044000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-30 18:50:44"
+}
