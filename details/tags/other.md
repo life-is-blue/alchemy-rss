@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-31 10:13:47 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-31 18:16:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -7,9 +7,7 @@
 
 ### [RAG-中的噪声文本：拼写错误、OCR-和经典拼写检查的局限](https://towardsdatascience.com/noisy-text-in-rag-typos-ocr-and-the-gap-classical-spell-check-leaves/)
 
-2026-08-30 21:00:02 | 标签: 检索增强生成, 文档解析, 大型语言模型, 数据科学, Python
-
-> 在企业 RAG 中，噪声文本表现为用户拼写错误、转录错误和 OCR 误读，这些都会导致令牌不匹配。经典拼写校正（例如 Levenshtein、BK-trees、SymSpell）对于单个单词的拼写错误非常有效，但在错误涉及有效单词（例如“coverage”与“overage”）或不正确的词边界时就会失效。嵌入和 LLM 通过捕捉语义相似性来自然容忍这些错误，尽管它们需要专家字典来进行领域特定歧义消除。
+2026-08-30 21:00:02
 
 
 
@@ -3741,65 +3739,49 @@
 
 ### [五款我反复使用的开源库：NCNN-on-Pi-3、Roboflow-Universe、Turso-libSQL、Pagefind](https://dev.to/morinaga/five-repos-i-keep-returning-to-ncnn-on-pi-3-roboflow-universe-turso-libsql-pagefind-3bfh)
 
-2026-08-30 18:50:44 | 标签: Raspberry Pi, NCNN, YOLO11, Roboflow, Turso
-
-> 作者分享了过去一年中对五个关键仓库的使用经验，这些仓库对他们的项目至关重要。他们讨论了在 Raspberry Pi 上运行神经网络的 NCNN、用于物体检测的 Ultralytics YOLO11n、用于获取训练数据的 Roboflow Universe、用于管理数据库状态的 Turso libSQL，以及用于实现搜索功能的 Pagefind。每个工具都根据其具体用例和帮助克服的限制进行了评估。
+2026-08-30 18:50:44
 
 
 
 ### [温度-0，固定种子，但回复还是不同——因为你的批次里还有其他人](https://dev.to/dev48v/temperature-0-a-fixed-seed-and-a-different-reply-anyway-because-of-who-else-was-in-your-batch-fik)
 
-2026-08-30 18:45:19 | 标签: 推理, 非确定性, 浮点误差, 批处理, 神经网络
-
-> 本文探讨了神经网络推理中一个具体的非确定性来源：浮点误差的累积。它解释了，虽然用户可以控制采样过程的随机性（温度）和初始状态（种子），但无法控制 logits 的求和顺序。这个顺序取决于批次的大小和组成，导致即使所有其他参数保持不变，最终值也会略有不同，从而可能产生不同的输出令牌。
+2026-08-30 18:45:19
 
 
 
 ### [Python-数据科学：2026-年初学者路线图](https://dev.to/info_info_37785cd30473b53/python-data-science-beginner-roadmap-2026-li6)
 
-2026-08-30 18:19:13 | 标签: Python, 数据科学, 机器学习, NumPy, Pandas
-
-> 本文为有志于从事数据科学的人士提供了结构化的时间表，从基础的 Python 编程开始，逐步深入数据分析库（NumPy、Pandas、Matplotlib）、统计理论，以及机器学习框架（Scikit-learn、TensorFlow、PyTorch）。最后，重点放在构建项目组合和准备面试，包括该领域各种职位的薪资预期。
+2026-08-30 18:19:13
 
 
 
 ### [为什么你的冷邮件-AI-需要一个向量数据库，而不是更好的提示？](https://dev.to/reachiq/why-your-cold-email-ai-needs-a-vector-db-not-a-better-prompt-33m0)
 
-2026-08-30 18:04:12 | 标签: 向量数据库, 冷邮件, 个性化, 检索增强生成, 数据新鲜度
-
-> 本文解释了有效的冷邮件个性化依赖于一个两步过程：首先，检索关于潜在客户的准确且最新的信息；其次，使用这些信息生成定制的消息。向量数据库对于第一步至关重要，因为它允许高效存储和检索已验证的事实（例如最近的融资轮或职位变动），而不是依赖于 LLM 可能会出错的猜测。作者强调了数据新鲜度和实体解析的重要性，以确保邮件内容既相关又可信。
+2026-08-30 18:04:12
 
 
 
 ### [生物识别验证：印度取消共享面部数据库](https://dev.to/caracomp/biometric-verification-india-kills-shared-face-database-4bk)
 
-2026-08-30 17:45:21 | 标签: 生物识别验证, 面部识别, 数据隐私, 计算机视觉, 身份管理
-
-> 本文讨论了印度放弃使用中央生物识别数据库进行电信验证的政策转变，并认为这一决定证明了无状态、实时面部比较的技术可行性。它解释了 1:1 验证不需要持久的向量存储，从而允许采用隐私优先、合规的身份工作流程，避免与中央生物识别库相关的风险。
+2026-08-30 17:45:21
 
 
 
 ### [美国-GNIS-湖泊名称变更如何出现在地图中](https://blog.google/products-and-platforms/products/maps/gnis-lake-ontario-lake-america-name-change/)
 
-2026-08-30 13:35:13 | 标签: Google 地图, 地理名称信息系统, Lake Ontario, Lake America, 名称变更
-
-> 美国地理名称信息系统（GNIS）已正式将美国境内的“Lake Ontario”更名为“Lake America”。由于 Google 地图会更新其数据以反映官方政府来源，因此这一变化将对美国用户可见。加拿大用户将继续看到湖泊名为“Lake Ontario”，而北美以外的用户将看到两个名称同时显示。这一更新符合 Google 处理跨国水体名称差异的政策。
+2026-08-30 13:35:13
 
 
 
 ### [我爬取了-100-场足球比赛——这是我的发现：花费-3-亿英镑，排名垫底，但热刺主帅德泽尔比并不生气](https://dev.to/muhammad_binnazeer_6a810/i-scraped-100-football-matches-here-is-what-i-found-ps300m-spent-bottom-of-the-table-but-spurs-ekj)
 
-2026-08-30 11:07:54 | 标签: 足球, 托特纳姆热刺, 英超, 体育分析, 数据爬取
-
-> 本文分析了托特纳姆热刺在 2024/25 英超赛季的糟糕开局，强调了俱乐部的大量资金投入与实际表现之间的巨大反差。文章详细讨论了前两场比赛的具体数据，包括缺乏射门和防守漏洞，并探讨了这些结果对球队赛季前景的更广泛影响。
+2026-08-30 11:07:54
 
 
 
 ### [推理指标可能正确，但仍然错误](https://dev.to/carbonlayer/your-inference-metrics-can-be-correct-and-still-be-wrong-2fj8)
 
-2026-08-30 10:20:36 | 标签: 推理指标, 模型漂移, 硬件变更, 数据来源, 运营有效性
-
-> 在生产 AI 基础设施中，只有在测量条件保持一致的情况下，测量结果才是有效的。当模型版本、量化或硬件等参数发生变化时，过去'正确'的指标可能不再准确反映当前的工作负载，从而导致成本估算、容量规划和性能比较中的错误。
+2026-08-30 10:20:36
 
 
 
@@ -15967,17 +15949,13 @@
 
 ### [Devlog-⚡-Zig-编程语言](https://ziglang.org/devlog/2026/#2026-08-27)
 
-2026-08-30 22:41:53 | 标签: 编译器开发, 内存安全, 包管理, GPU 编程, 后端优化
-
-> 该开发日志重点介绍了 Zig 编程语言及其生态系统的几项重大更新。它引入了 std.ArrayList 的指针稳定性锁，以防止内存安全问题；将包管理功能从编译器移至构建系统，以提高模块化和安全性；并报告了 SPIR-V 后端的进展，包括新的类型支持和多线程代码生成。此外，它详细说明了对 @bitCast 内置函数的重大更改，重新定义其语义以提高与 LLVM 后端的兼容性并实现更好的优化。
+2026-08-30 22:41:53
 
 
 
 ### [地球上最长的直线水陆路径](https://arxiv.org/abs/1804.07389)
 
-2026-08-30 16:23:26 | 标签: 历史, 数学, 开源
-
-> 这篇 arXiv 论文摘要概述了寻找最长直线距离（不触碰陆地）的数学公式和优化方法，以及相反问题（不触碰水）。由于海岸线是分形的，并且岛屿和湖泊的分布具有混沌性，作者将这些问题建模为复杂的优化问题，并使用分支定界算法进行求解。
+2026-08-30 16:23:26
 
 
 
@@ -40659,11 +40637,11 @@
 
 
 
-### [使用-Claude-Code：HTML-难以置信的奇效](https://baoyu.io/translations/2026-05-08/trq212-status-2052809885763747935)
+### [机器人的终局：英伟达-Jim-Fan-宣告-VLA-时代结束，WAM-登场](https://baoyu.io/blog/robotics-end-game-nvidias-jim-fan)
 
-2026-05-08T00:00:00.000Z
+2026-05-10T00:00:00.000Z
 
-> Markdown 已经成为 AI 智能体与我们交流的主要文件格式。它简单、轻量，具备一定的富文本能力且易于人工编辑。Claude 甚至已经极其擅长在 Markdown 文件里使用 ASCII 字符绘制图表。然而，随着 AI 越来越强大，HTML 开始展现出惊人的效果。
+> Jim Fan 在 AI Ascent 演讲中宣布 VLA 路线过时，提出以世界动作模型（WAM）为核心的新范式，并预测 2040 年到达机器人终局。
 
 
 

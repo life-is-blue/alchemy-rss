@@ -1,4 +1,4 @@
-> **更新时间**: 2026-08-31 10:13:47 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-08-31 18:16:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -13910,121 +13910,91 @@
 
 ### [我们三次重建了-108-张牌的-AI——从手工搜索到-PPO](https://dev.to/calix_d79a258d0b336d92eb5/we-rebuilt-a-108-card-game-ai-three-times-from-handcrafted-search-to-ppo-lp3)
 
-2026-08-31 03:04:38 | 标签: 游戏 AI, 强化学习, PPO, 候选检索, GuanDan
-
-> 本文详细介绍了 DanKS 的开发，这是一个用于扑克游戏 GuanDan 的 AI。它解释了游戏的大动作空间和不完美信息的挑战，以及团队通过创建两阶段决策管道来解决这些问题：一个用于生成候选动作的检索阶段，一个用于选择最佳动作的策略阶段。文章描述了系统从基于 NumPy 的简单选择器到具有记忆和延迟信用分配的复杂模型的演变，并强调了候选检索边界在设计中的重要性。
+2026-08-31 03:04:38
 
 
 
 ### [ScholarAgent：不仅仅是阅读研究，更是重现研究](https://dev.to/tanya_garg_5315/scholaragent-dont-just-read-research-reproduce-it-942)
 
-2026-08-31 02:28:49 | 标签: AI 代理, 研究重现, 实验自动化, TrueForge, 机器学习
-
-> 本文介绍了 ScholarAgent，一个专门的 AI 工具，旨在弥合阅读研究论文与实际重现实验结果之间的差距。它强调了可重现性中的常见挑战，例如参数细节缺失和依赖问题，并解释了 ScholarAgent 的工作流程如何自动化提取方法、生成代码、运行实验和分析差异。与 TrueForge 的集成用于沙箱执行，以及包含一个用于批准资源密集型操作的“人机环”是讨论中的关键特性。
+2026-08-31 02:28:49
 
 
 
 ### [修订提示](https://revisionprompting.info/home)
 
-2026-08-30 22:45:07 | 标签: 提示工程, LLM 优化, 数据处理, 效率, 修订控制
-
-> 在工业环境中，LLM 通常用于反复处理大量数据（例如发票或文档）。当输入数据发生微小变化时，当前的做法是重新运行整个提示，这既耗时又可能导致结果不一致。修订提示通过向 LLM 提供旧输入和新输入之间的具体变化（“diff”）来解决这个问题。LLM 然后生成一个“补丁”，用于更新现有输出，从而确保一致性并显著减少处理时间和成本。
+2026-08-30 22:45:07
 
 
 
 ### [通用决议：Debian-中的-LLM-使用](https://www.debian.org/vote/2026/vote_002#texte)
 
-2026-08-30 19:52:38 | 标签: Debian, LLM, AI, 治理, 社会契约
-
-> 该决议旨在应对软件开发中日益增长的量子语言模型（LLM）使用，及其对 Debian 项目的潜在影响。它概述了四种截然不同的管理 LLM 辅助贡献的方法，从严格禁止到灵活政策，允许根据技术进步和社区共识进行未来演变。
+2026-08-30 19:52:38
 
 
 
 ### [数字身份：68%-的人无法区分人类与-AI-代理](https://dev.to/caracomp/digital-identity-68-cant-tell-humans-from-ai-agents-56mi)
 
-2026-08-30 19:15:12 | 标签: AI 代理, 系统设计, 后端开发, API 设计, AI 安全与伦理
-
-> 本文探讨了将 AI 代理视为标准认证用户的架构反模式，指出 68% 的组织未能将人类发起的动作与自主代理执行在程序上分开。它详细描述了在多步骤 LLM 工具循环中，认证与委托混淆的结构性问题。为了解决这一盲点，作者提出了三个加密检查点：机器身份断言、显式的委托标准（如 RFC 8693 令牌交换），以及具有严格 TTL 的任务范围临时性。文章还类比了生物识别和向量验证，强调身份验证必须严格与下游执行策略解耦。
+2026-08-30 19:15:12
 
 
 
 ### [Robotaxi-经济学-2026：扩展至-40，000-辆车的数学逻辑](https://dev.to/ievchina/robotaxi-economics-2026-the-math-behind-scaling-to-40000-vehicles-2e6m)
 
-2026-08-30 18:58:24 | 标签: 自动驾驶汽车, Robotaxi, 车队管理, 单位经济, Pony.ai
-
-> 本文分析了中国 Robotaxi 行业的现状，强调了快速收入增长与车队层面缺乏盈利能力之间的矛盾。尽管 Pony.ai 和 WeRide 的乘车量和收入大幅增加，但由于维持大型车队和必要远程安全基础设施的成本过高，它们仍处于亏损状态。文章探讨了潜在解决方案，例如从车队所有权转向将技术授权给现有出租车公司的“车队赋能”模式，以及降低硬件成本以实现可行商业模式的重要性。
+2026-08-30 18:58:24
 
 
 
 ### [Softmax-瓶颈是整数，而它预测的是连续值](https://dev.to/dev48v/the-softmax-bottleneck-is-an-integer-and-the-thing-it-predicts-is-continuous-4jg5)
 
-2026-08-30 18:43:57 | 标签: 大型语言模型, 模型训练与推理, 提示工程, AI 评估与基准, 注意力机制
-
-> 本文探讨了“softmax 瓶颈”，即语言模型的表示能力受限于其隐藏状态的维度。尽管模型试图预测连续概率分布，但矩阵秩的离散性质为其可编码的独特分布数量设定了硬限制。文章提供了对这一约束的数学分析，证明模型的容量由对数赔率矩阵的秩决定，与所选参考符号无关。
+2026-08-30 18:43:57
 
 
 
 ### [DeepSeek、Google-和-OpenAI-的新批次模型：LLM-价格摘要](https://dev.to/adrasmussen/new-batch-models-from-deepseek-google-and-openai-llm-pricing-digest-1pok)
 
-2026-08-30 18:01:38 | 标签: LLM 价格, 批处理, DeepSeek, Google AI, OpenAI
-
-> 虽然 Claude、GPT、Gemini、DeepSeek 和 Grok 的定价格局保持稳定，但市场正在通过新的批次模式产品进行扩展。DeepSeek 推出了两个用于不同计算需求的模型（pro 和 flash），Google 添加了中型 Gemma 4 选项，而 OpenAI 则推出了两个有趣的 'OSS' 模型，所有这些都旨在优化非时间敏感任务的成本。
+2026-08-30 18:01:38
 
 
 
 ### [AI-代理的执行控制层-|-Runplane](https://runplane.ai)
 
-2026-08-30 17:57:59 | 标签: AI 代理, 安全, 治理, 云原生 / DevOps, 企业 AI
-
-> Runplane 为 AI 代理提供了一个强大的执行控制层，支持对工具执行进行细粒度的政策强制。该 SDK 会包裹现有的代理工具，将它们映射到规范的动作类型，并在运行时根据可定制的政策进行评估。这确保了代理在定义的安全和合规边界内运行，而所有决策都会被记录用于审计。
+2026-08-30 17:57:59
 
 
 
 ### [索尼与华纳起诉-Anthropic，指控其大规模盗用版权音乐训练-Claude-·-AIHOT](https://aihot.virxact.com/items/cmtfkvjwn0by7rou8vil9ysf1)
 
-2026-08-30 16:50:20 | 标签: AI 商业, Anthropic, 法律与司法, Dario Amodei, 大型语言模型
-
-> 包括 Sony Music 和 Warner Music 在内的主要音乐出版商已在美国加州北区地方法院对 Anthropic 及其高管 Dario Amodei 和 Benjamin Mann 提起诉讼。投诉称，Anthropic 非法下载并使用了数万首受版权保护的音乐作品（主要是歌词和乐谱）来训练其 Claude 模型。该诉讼重点指控 Anthropic 通过未经授权的 P2P 种子下载和违反服务条款的平台抓取来获取训练数据。此外，诉讼还审查了 Anthropic 可能使用从未经授权文本中派生的合成数据进行商业模型训练的情况，并将其与 AI 公司在数据获取方法方面面临的先前法律挑战进行了比较...
+2026-08-30 16:50:20
 
 
 
 ### [GitHub---Clawdlinux/agentgate:-一个让-AI-代理代表用户调用-SaaS-API-的轻量级-API-网关。代理永远不会看到令牌。](https://github.com/Clawdlinux/agentgate)
 
-2026-08-30 15:00:55 | 标签: AI 代理, 安全, 治理, 云原生/DevOps, 企业 AI
-
-> AgentGate 作为 AI 代理与 SaaS API 之间的轻量级安全层，解决了令牌暴露这一关键安全问题。它管理整个认证生命周期，包括 OAuth 流程、加密令牌存储和请求代理。该系统确保代理可以代表用户执行操作，而无需查看底层 API 令牌，并通过可离线验证的签名、无间隙收据提供强大的审计跟踪。
+2026-08-30 15:00:55
 
 
 
 ### [Anthropic-发布模型硬件标准（MHS）研究预览：一个用于-AI-代理安全操作物理设备的共享规范](https://www.marktechpost.com/2026/08/29/anthropic-opens-a-research-preview-of-the-model-hardware-standard-mhs-a-shared-specification-for-ai-agents-to-safely-operate-physical-devices/)
 
-2026-08-30 14:12:24 | 标签: AI 代理, 硬件集成, 模型硬件标准, 量子计算, 生物技术
-
-> 模型硬件标准（MHS）通过提供一个通用驱动接口来解决连接不同实验室仪器的“集成税”问题。它允许 AI 代理读取和写入设备状态、跨网络发现硬件，并利用自然语言标签进行配置。Genentech 和 QuEra 等合作伙伴已展示了使用 MHS 显著提高自动化速度和可靠性的成果。
+2026-08-30 14:12:24
 
 
 
 ### [PLCBench：自主-LLM-代理能否将-PLC-访问转化为持续的物理影响？](https://arxiv.org/abs/2608.26882)
 
-2026-08-30 13:07:07 | 标签: PLC, LLM 代理, 网络安全, 硬件在环, 工业控制
-
-> 本文介绍了 PLCBench，这是一个将真实 PLC 硬件与降阶过程模拟相结合的创新评估框架，用于评估 LLM 代理在工业控制中的能力。研究发现，虽然代理可以成功建立通信并写入 PLC 寄存器，但由于状态跟踪不正确或对过程动态观察不足等问题，它们经常无法维持预期的物理影响（例如保持特定阀门位置）。
+2026-08-30 13:07:07
 
 
 
 ### [GitHub---abhayKashyap03/usage-notch:-一款用于-Mac-的-LLM-使用量表，可夹在屏幕边缘——一目了然的-Claude-Code-和-Codex-限速情况](https://github.com/abhayKashyap03/usage-notch)
 
-2026-08-30 13:06:14 | 标签: Mac, LLM, 限速, 开发者指标, UI/UX
-
-> 该应用程序提供了一个可视化仪表板，用于监控大型语言模型（LLM）服务的消耗情况。它跟踪 Claude Code 和 Codex 的限速利用率，并将数据呈现为一个交互式面板，可展开进行详细分析，或折叠为最小的“工作模式”以减少干扰。数据直接从各自 CLI 工具生成的本地文件系统日志中获取，确保隐私和低延迟。
+2026-08-30 13:06:14
 
 
 
 ### [2026-年最值得入手的-AI-学习路径：AI-学习路径靠谱吗](https://dev.to/guojunzzc/2026nian-zui-zhi-de-ru-shou-de-aixue-xi-lu-jing-aixue-xi-lu-jing-kao-pu-ma-2o6c)
 
-2026-08-30 11:12:27 | 标签: AI Education, Learning Paths, Future Skills, Methodology, Practical Guides
-
-> 随着人工智能技术的飞速发展，2026 年的 AI 学习路径需要更加注重实用性和前瞻性。本文分析了当前流行的学习资源，并提出了一个基于系统方法论和实际项目经验的综合学习框架，帮助读者在快速变化的 AI 领域保持竞争力。
+2026-08-30 11:12:27
 
 
 
@@ -51722,33 +51692,25 @@
 
 ### [2026-08-30-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-08-30-HackerNews/)
 
-2026-08-30 16:35:17 | 标签: Technology, Artificial Intelligence, Business, Politics, Open Source
-
-> 本期 Hacker News 摘要内容丰富，涉及多个重要领域。其中，NVIDIA 以 130 亿美元收购 Hugging Face 的战略举动成为焦点，同时，一个开源的 AI 执行系统（Open Executive）的出现引发了对自动化高级决策的讨论。此外，美国国务院暂停移民签证申请、Mechanical Turk 平台的关闭、3D 打印机的 AGPL 违规，以及新开源机器人平台 Microduck 的推出，都为读者提供了丰富的资讯。
+2026-08-30 16:35:17
 
 
 
 ### [民调显示英国人强烈希望其私密信息保持私密](https://www.theregister.com/security/2026/08/30/turns-out-brits-would-quite-like-their-private-messages-to-stay-private/5292994)
 
-2026-08-30 16:34:00 | 标签: 网络安全, 消费者权益, 治理, 行业动态, AI 安全事件
-
-> 公共第一研究所（Public First）近期为民主与技术中心（CDT）进行的民调显示，93% 的英国成年人认为他们拥有线上私密对话的权利，同时 89% 的人反对在没有法院手令的情况下进行未授权访问。尽管英国政府持续推动获取加密数据的权限（例如苹果公司撤销英国用户的「高级数据保护」功能便是明证），但仍有三分之二的公民不信任当前或未来的政府拥有后门权力。受访者对黑客带来的网络安全漏洞、潜在的政府权力过度扩张，以及此类监控对公众表达和自我审查产生的寒蝉效应表示了严重担忧。
+2026-08-30 16:34:00
 
 
 
 ### [AWS-开源-Kiro-Crew，用于异步编码代理](https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-30 16:23:00 | 标签: 开源, AWS, AI 代理, AI 编码, MCP 协议
-
-> Kiro Crew，由亚马逊内部开发，原名 MeshClaw，允许开发者将异步编码任务分配给 AI 代理，通过共享内存和可复用技能支持持久的、多会话的开发工作。该系统通过 MCP 和 webhook 与外部工具集成，提供对代理活动的实时可见性。基于 Apache 2.0 许可证发布，运行在 Kiro CLI 上，并支持多种平台和消息集成。
+2026-08-30 16:23:00
 
 
 
 ### [Hot-Chips-2026：XCENA-与三星的近内存计算-CXL-设备](https://chipsandcheese.com/p/hot-chips-2026-xcena-and-samsungs)
 
-2026-08-30 15:25:37 | 标签: AI 硬件与芯片, 系统设计, 机器学习, 硬件架构, 开源
-
-> 这篇来自 Chips and Cheese 的技术分析文章探讨了 MX1，一款由 XCENA 与三星联合开发的创新 CXL 3.2 内存扩展设备。MX1 将庞大的内存容量（支持高达 2 TB 的 DDR5 以及下游的 NVMe SSD）与强劲的板载计算能力相结合，内部集成 3，072 个低功耗 RISC-V 核心和一个定制向量处理引擎（VPE）。作者详细剖析了其硬件架构、缓存层级、定制编程模型及虚拟内存管理，并评估了通过 CXL 实现的近内存计算如何能够规避传统内存控制器方案（如 LPDDR5X-PIM）所面临的主机接口带宽限制。
+2026-08-30 15:25:37
 
 
 
