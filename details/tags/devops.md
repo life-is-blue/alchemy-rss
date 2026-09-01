@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-01 10:34:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-01 17:01:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -620,9 +620,7 @@
 
 ### [在-GCP-中使用工作负载身份联合消除长期凭证](https://www.infoq.com/articles/gcp-wif-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-08-31 19:00:00 | 标签: 工作负载身份联合, GCP 安全, CI/CD 集成, AWS 到 GCP, Harness
-
-> 本文讨论了实施工作负载身份联合（WIF）以应对长期服务账户密钥带来的安全风险。它解释了 WIF 的三组件架构（池、提供商和绑定），强调了属性条件对于安全性的重要性，并详细介绍了与 GitHub Actions、Harness 和 AWS 工作负载的集成步骤。作者建议强制要求新项目使用 WIF，以防止旧密钥的积累并改善整体云安全态势。
+2026-08-31 19:00:00
 
 
 
