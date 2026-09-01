@@ -1,0 +1,48 @@
+{
+  "id": "RAW_4006646b54",
+  "title": "Lakebase Postgres 的自动扩缩容",
+  "url": "https://www.databricks.com/blog/autoscaling-lakebase-postgres",
+  "date": "2026-09-01 01:00:00",
+  "author": "Carlota Soto",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li>Autoscaling architectural requirement</li>\n   <li>When to adjust capacity up and down</li>\n   <li>How to adjust capacity without stopping PostgreSQL</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本文探讨了 Lakebase Postgres 自动扩缩容的架构要求，详细说明了在何种条件下应调整容量，以及如何在不中断 PostgreSQL 服务的情况下执行这些调整。",
+  "oneSentenceSummary": "本文探讨了 Lakebase Postgres 自动扩缩容的架构要求，详细说明了在何种条件下应调整容量，以及如何在不中断 PostgreSQL 服务的情况下执行这些调整。",
+  "summary": "该文本概述了在 Lakebase Postgres 中实现自动扩缩容的关键考虑因素。它讨论了确定何时进行扩容或缩容所需的具体监控指标，并描述了在保持数据库可用性和完整性的前提下调整容量的过程。",
+  "mainPoints": [
+    {
+      "point": "自动扩缩容的架构要求",
+      "explanation": "文章首先确立了自动扩缩容所必需的基础架构要求。它暗示系统必须具备模块化和灵活性，以便进行动态资源分配。"
+    },
+    {
+      "point": "容量调整的触发条件",
+      "explanation": "内容的大部分用于识别触发容量变化的具体条件。这包括监控高 CPU 利用率、内存压力或并发连接数的增加。"
+    },
+    {
+      "point": "非中断性缩放方法",
+      "explanation": "最后一点涉及缩放的实际执行。它强调在不停止 PostgreSQL 服务的情况下执行这些调整的重要性，可能指的是滚动更新或使用备用副本在过渡期间吸收负载的技术。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "PostgreSQL",
+    "自动扩缩容",
+    "Lakebase",
+    "数据库管理",
+    "云计算"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 17,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788195600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-01 01:00:00"
+}

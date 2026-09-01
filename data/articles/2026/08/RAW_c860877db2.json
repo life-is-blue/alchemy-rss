@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c860877db2",
+  "title": "Volatile Nexus：在 Three.js 中玩转玻璃、焦散、方块与声音",
+  "url": "https://tympanus.net/codrops/2026/08/31/volatile-nexus-tinkering-with-glass-caustics-cubes-and-sound-in-three-js/",
+  "date": "2026-08-31 23:59:38",
+  "author": "Frank Reitberger",
+  "siteName": "Codrops",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"ct-post-featured-img\">\n   <a href=\"https://dasprinzip.com/tinker/day42/\" target=\"_blank\" title=\"Volatile Nexus: Tinkering with Glass, Caustics, Cubes and Sound in Three.js Demo\"> <img src=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/volatileNexus.jpg?x57826\" class=\"attachment-post-thumbnail size-post-thumbnail wp-post-image\" alt=\"\" decoding=\"async\" fetchpriority=\"high\" srcset=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/volatileNexus.jpg?x57826 1200w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/volatileNexus-400x300.jpg?x57826 400w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/volatileNexus-150x112.jpg?x57826 150w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/volatileNexus-768x576.jpg?x57826 768w\" sizes=\"(max-width: 1200px) 100vw, 1200px\"> </a>\n  </div>\n  <div class=\"ct-demo-links\">\n   <a class=\"ct-demo-link ct-demo-link--view\" target=\"_blank\" href=\"https://dasprinzip.com/tinker/day42/\">Demo</a> <a class=\"ct-demo-link ct-demo-link--github\" target=\"_blank\" href=\"https://github.com/prinzipiell/tsl/tree/main/volatile-nexus\">Code</a>\n  </div>\n  <p><em><strong>Editor’s Note:</strong> As part of our celebration of the first Three.js Conference, we’ve been sharing creative experiments throughout the month, and this week we’re back with more! Today we’re happy to showcase another demo by Frank. In Volatile Nexus, he dives into glass, caustics, refractions, wandering cubes, reflections, and sound, bringing them all together into one mesmerizing experiment.</em></p>\n  <div class=\"box-info\">\n   <p><strong>🇫🇷 The countdown is on!</strong> The very first Three.js conference is getting closer, and there are still tickets available if you’re thinking about making the trip to Paris. Use code <code class=\"\" data-line=\"\">CODROPS</code> for <strong>15% off</strong> and <strong><a href=\"https://threejs.paris/tickets\" target=\"_blank\">grab your ticket →</a></strong></p>\n  </div>\n  <p>What started as “Can I produce a nice glassy ring with colorful caustics?” ended up in unsteady, almost-fluid glass, caustics, refractions, why not adding some cubes (or lots of them), reflections, sound, and many more things.</p>\n  <figure class=\"wp-block-video\">\n   <video height=\"1080\" style=\"aspect-ratio: 1728 / 1080;\" width=\"1728\" autoplay loop muted src=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/volatile.mp4?x57826\" playsinline></video>\n  </figure>\n  <h2 class=\"wp-block-heading\">At the beginning…</h2>\n  <p>…I just wanted to achieve colorful glass with sort of caustics. Like, can I control the caustics and iridescence? Let’s add some lens flare and be fine with it. I already liked the outcome then, as it looked sort of like an “80s album metal cover” or alike.</p>\n  <p>Adding floor reflections just made this look and feel even more complete.</p>\n  <h2 class=\"wp-block-heading\">So what about cubes?</h2>\n  <p>Wouldn’t it be fun to add lots of cubes wandering on some defined paths just because we can? And, whilst working on this, let’s not forget to refract those in the glass given.</p>\n  <p>Easier said than done, as glass refraction was a tricky one. It’s a nice rabbit hole when working with Three.js and its “as is” implementation.</p>\n  <p>Lastly, I switched to having the refracted layer weighted by a facing term — strong when you look <em>through</em> the glass face-on, fading at grazing angles where real glass turns mirror-like. That kills the additive “wash” and makes the refracted cubes sit <em>inside</em> the glass instead of glowing on it.</p>\n  <h2 class=\"wp-block-heading\">Meanwhile…</h2>\n  <p>…wouldn’t it even be nicer if we added some user interactions for the cubes and glass?</p>\n  <p>Adding some <strong>mouse proximity repulsion</strong> for the cubes — the cursor is unprojected into a 3D pick ray every frame, transformed once into the swarm’s local space (much cheaper than transforming 1000 cubes to world space). Any cube within the repel radius of that ray gets pushed away perpendicular to it with a squared falloff, driven by a damped spring — so cubes burst aside as your mouse sweeps near them and flow smoothly back into formation about half a second after it leaves.</p>\n  <p>Displacement is capped so nothing can be flung out of the scene. This works while hovering <em>and</em> while dragging to orbit.</p>\n  <p>For the ring, I set up a 12-slot impulse pool as uniform arrays, some wavefront math (Gaussian shell at <code class=\"\" data-line=\"\">age · 1.4</code>, <code class=\"\" data-line=\"\">cos(dist · 9 − age · 11)</code> oscillation, <code class=\"\" data-line=\"\">exp(−2.6 · age)</code> decay), central-difference normal reconstruction with the same 0.7 blend, a 30ms spawn throttle, and the cursor-speed → strength mapping (fast strokes hit harder, clamped to 0.4–1.8).</p>\n  <p>I brought it all in from an earlier experiment called <a href=\"https://dasprinzip.com/tinker/day39/\">Unstable solid</a>.</p>\n  <p><strong>What’s adapted for the ring:</strong> the displacement direction is the torus analog of the sphere’s radial — each vertex pushes outward from the nearest point on the ring’s tube center-circle (radius 0.78 in the lathe plane). It’s derived purely from position, so the lathe’s seam vertices move identically and the surface stays watertight.</p>\n  <p>The raycast targets the actual ring mesh through all its rig/sway transforms (with an extra 25ms cast throttle, since the lathe is ~24k triangles and has no BVH).</p>\n  <p>And because the technique lives in the <em>material’s</em> <code class=\"\" data-line=\"\">positionNode</code>/<code class=\"\" data-line=\"\">normalNode</code>, three things ripple for free that the sphere never had: the <strong>refraction</strong> (the wobbling normals bend the dispersed backdrop — poking the glass smears the confetti), the <strong>caustics</strong> (the shadow pass uses the same displaced surface), and the <strong>floor mirror</strong> (it renders the same material).</p>\n  <h2 class=\"wp-block-heading\">And at the end…</h2>\n  <p>…why not compose some procedural beeps and tones to make the scene complete?</p>\n  <p>I know there are many, many folks out there who turn out sound immediately, but for me, sound is like a little extra rounding the whole scene up.</p>\n  <p><strong>As for the glass’s wobble:</strong> Two high-Q resonances (<em>640 Hz + 963 Hz</em>) filter noise into a pure-ish tone with a slow vibrato — whose <em>level</em> is driven every frame by the ripple field’s live energy. Stroke the glass and the hum swells under your finger; stop and it fades exactly as the visible waves decay, because it’s reading the same numbers. It physically cannot spam — there’s nothing to trigger.</p>\n  <p>The pad’s filter opening was also softened so the combined wobble response stays warm rather than shrill.</p>\n  <p><strong>Cubes through the ring</strong> — a shimmer bed (<em>three beating triangles plus bright noise</em>) whose level follows the <em>fraction of the stream currently inside the hole</em>, computed from the head phase against the path’s hole window. You’ll hear the sparkle swell as the comet threads through and fade as the tail exits — roughly a ten-second breath cycle at your speed of 0.1.</p>\n  <p>Et voilà!</p>\n </body>\n</html>",
+  "aiSummary": "一次 Three.js 实验的创意编程拆解，融合玻璃焦散、折射、游荡方块与程序化声音——并在此过程中揭示实用的技术与设计取舍。",
+  "oneSentenceSummary": "一次 Three.js 实验的创意编程拆解，融合玻璃焦散、折射、游荡方块与程序化声音——并在此过程中揭示实用的技术与设计取舍。",
+  "summary": "Frank 分享了他在 Three.js 上的创意实验「Volatile Nexus」，该项目从简单的玻璃与焦散测试演变为一场多层交互场景。作品包含一道带有彩色焦散与折射的玻璃环、受鼠标排斥而漂浮的方块、由相同位移值驱动的程序化抖动音效，以及与方块穿过环洞相关联的闪烁效果。关键技术亮点包括：利用面向角加权折射层让方块看起来嵌入玻璃内部而非在其表面发光；通过「将拾取射线转换为群体局部空间」实现高效的鼠标排斥系统；以及基于位移的音效设计——共振频率与振幅跟随实时波纹场能量变化，确保声音与视觉保持物理耦合。",
+  "mainPoints": [
+    {
+      "point": "玻璃折射需要使用面向角加权层才能呈现正确效果",
+      "explanation": "折射层通过面向角加权——当视线垂直穿透玻璃面时效果最强，在掠射角度下衰减（此时真实玻璃趋于镜面反射）。这避免了叠加式的「泛白」效果，让折射出的方块看起来沉在玻璃内部，而非在其表面发光。"
+    },
+    {
+      "point": "鼠标排斥只需一次性转换拾取射线即可高效运行",
+      "explanation": "与其每帧将 1000 个方块变换到世界空间，不如将光标反投影为一条 3D 拾取射线，并一次性将其变换到群体的局部空间。凡处于排斥半径内的方块都会受到垂直推力，按平方衰减，由阻尼弹簧驱动——方块在靠近时瞬间弹开，约 0.5 秒后恢复原队形。"
+    },
+    {
+      "point": "环的位移会免费驱动折射、焦散与地面镜面效果",
+      "explanation": "由于位移作用于材质的 positionNode 与 normalNode，三项内容会自动同步更新：折射（抖动的法线弯曲了分散的背景）、焦散（阴影通道使用同一块位移表面）、地面镜面（渲染同一材质）。无需额外渲染通道。"
+    },
+    {
+      "point": "声音由程序化方式与视觉波纹场耦合",
+      "explanation": "两个高 Q 值共振峰（640 Hz + 963 Hz）将噪声滤波为带有缓慢颤音的音调，音量和帧级由波纹场的实时能量驱动。方块闪烁则跟随穿过环洞的流体比例。这确保了声音与视觉在物理层面保持同步，无需独立触发器。"
+    }
+  ],
+  "keyQuotes": [
+    "我想要实现带有某种焦散的彩色玻璃。比如，我能控制焦散与虹彩效果吗？",
+    "解决方案是完全停止每帧调用 play()，而是在计数开始前把整个序列一次性交给 Web Audio 时钟。",
+    "这消除了叠加式的「泛白」效果，让折射出的方块看起来嵌在玻璃内部，而非在其表面发光。",
+    "凡处于射线排斥半径内的方块都会受到垂直于射线的推力，按平方衰减，由阻尼弹簧驱动。",
+    "拨动玻璃，嗡鸣声会在指尖下起伏；停下则逐渐消退——且消褪与可见波纹的衰减完全同步，因为它读取的是同一组数值。"
+  ],
+  "tags": [
+    "Three.js",
+    "创意编程",
+    "WebGL",
+    "程序化音频",
+    "着色器开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 78,
+  "wordCount": 836,
+  "domain": "tympanus.net",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_ec8f7304",
+  "sourceName": "Codrops",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788191978000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-31 23:59:38"
+}

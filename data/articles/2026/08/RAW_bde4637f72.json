@@ -1,0 +1,54 @@
+{
+  "id": "RAW_bde4637f72",
+  "title": "尝试 `browser-use/video-use`：用于视频编辑的编码代理",
+  "url": "https://dev.to/yan_cheng/tried-browser-usevideo-use-coding-agents-for-video-editing-52eh",
+  "date": "2026-08-31 22:18:35",
+  "author": "杨继成",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I took a quick look at <a href=\"https://github.com/browser-use/video-use\" target=\"_blank\" rel=\"noopener noreferrer\"><code>browser-use/video-use</code></a>, an open-source project that lets coding agents operate video-editing workflows through natural-language instructions and code.</p>\n  <p>The concept is straightforward: describe an edit—such as trimming clips, adding captions, generating a highlight reel, or applying a repeatable transformation—and let an agent plan and execute the workflow. This is interesting because video editing becomes scriptable, testable, and easier to integrate into automation pipelines.</p>\n  <p>The repository gained <strong>+504 GitHub stars today</strong>, which suggests strong developer interest in treating video production as an agent-driven engineering problem rather than a purely visual task.</p>\n  <p>A practical gateway configuration could look like this:\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight python\"><code><span class=\"kn\">from</span> <span class=\"n\">openai</span> <span class=\"kn\">import</span> <span class=\"n\">OpenAI</span>\n\n<span class=\"n\">client</span> <span class=\"o\">=</span> <span class=\"nc\">OpenAI</span><span class=\"p\">(</span>\n    <span class=\"n\">api_key</span><span class=\"o\">=</span><span class=\"sh\">\"</span><span class=\"s\">YOUR_B_LOST_KEY</span><span class=\"sh\">\"</span><span class=\"p\">,</span>\n    <span class=\"n\">base_url</span><span class=\"o\">=</span><span class=\"sh\">\"</span><span class=\"s\">https://b-lost.com/v1</span><span class=\"sh\">\"</span><span class=\"p\">,</span>\n<span class=\"p\">)</span>\n\n<span class=\"n\">response</span> <span class=\"o\">=</span> <span class=\"n\">client</span><span class=\"p\">.</span><span class=\"n\">chat</span><span class=\"p\">.</span><span class=\"n\">completions</span><span class=\"p\">.</span><span class=\"nf\">create</span><span class=\"p\">(</span>\n    <span class=\"n\">model</span><span class=\"o\">=</span><span class=\"sh\">\"</span><span class=\"s\">claude-fable-5</span><span class=\"sh\">\"</span><span class=\"p\">,</span>\n    <span class=\"n\">messages</span><span class=\"o\">=</span><span class=\"p\">[</span>\n        <span class=\"p\">{</span>\n            <span class=\"sh\">\"</span><span class=\"s\">role</span><span class=\"sh\">\"</span><span class=\"p\">:</span> <span class=\"sh\">\"</span><span class=\"s\">user</span><span class=\"sh\">\"</span><span class=\"p\">,</span>\n            <span class=\"sh\">\"</span><span class=\"s\">content</span><span class=\"sh\">\"</span><span class=\"p\">:</span> <span class=\"p\">(</span>\n                <span class=\"sh\">\"</span><span class=\"s\">Create a 30-second highlight video from ./clips, </span><span class=\"sh\">\"</span>\n                <span class=\"sh\">\"</span><span class=\"s\">add subtitles, and export to ./out/highlight.mp4.</span><span class=\"sh\">\"</span>\n            <span class=\"p\">),</span>\n        <span class=\"p\">}</span>\n    <span class=\"p\">],</span>\n<span class=\"p\">)</span>\n\n<span class=\"nf\">print</span><span class=\"p\">(</span><span class=\"n\">response</span><span class=\"p\">.</span><span class=\"n\">choices</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">].</span><span class=\"n\">message</span><span class=\"p\">.</span><span class=\"n\">content</span><span class=\"p\">)</span>\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>The exact adapter names may change as <code>video-use</code> evolves, but the architecture is conventional: video-use as the agent layer, <code>claude-fable-5</code> as the reasoning model, and an OpenAI-compatible relay as the transport layer.</p>\n  <p>For evaluation, I would track:</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>Metric</th>\n      <th>Why it matters</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>TTFT</td>\n      <td>Responsiveness during interactive editing</td>\n     </tr>\n     <tr>\n      <td>End-to-end render time</td>\n      <td>Practical workflow throughput</td>\n     </tr>\n     <tr>\n      <td>Edit success rate</td>\n      <td>Reliability across varied footage</td>\n     </tr>\n     <tr>\n      <td>Cost per 1M tokens</td>\n      <td>Budget predictability</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>B-Lost’s relay uses <code>https://b-lost.com/v1</code>, offers 20% off official list pricing, and supports standard OpenAI-compatible clients. For long system prompts and repeated editing instructions, its native Anthropic <code>/v1/messages</code> support and prompt caching could also reduce input costs, with a stated 90% discount on cache hits. The important caveat is to benchmark real workloads: model latency, tool execution, and video rendering may dominate total turnaround time.</p>\n </body>\n</html>",
+  "aiSummary": "我探索了 `browser-use/video-use` 项目，该项目使编码代理能够通过自然语言指令和代码执行视频编辑任务，提供了一种可脚本化、可测试的视频制作方法，并获得了大量开发者的关注。",
+  "oneSentenceSummary": "我探索了 `browser-use/video-use` 项目，该项目使编码代理能够通过自然语言指令和代码执行视频编辑任务，提供了一种可脚本化、可测试的视频制作方法，并获得了大量开发者的关注。",
+  "summary": "本文介绍了 `browser-use/video-use`，一个允许通过编码代理自动化视频编辑工作流程的开源项目。它解释了用户如何用自然语言描述编辑（例如剪辑或添加字幕），然后代理执行这些操作。该项目在 GitHub 上迅速获得 504 个星，表明对这种工程驱动的视频制作方法兴趣浓厚。文中还提供了一个使用 Claude Fable 5 模型的示例配置，并建议了用于评估系统性能的关键指标。",
+  "mainPoints": [
+    {
+      "point": "可脚本化的视频编辑",
+      "explanation": "该项目允许通过代码定义和执行视频编辑任务，使过程可脚本化和可测试。这是一种从传统视觉编辑界面向更具程序化方法的转变。"
+    },
+    {
+      "point": "强烈的开发者兴趣",
+      "explanation": "该仓库在一天内获得了超过 500 个 GitHub 星，表明开发者对使用 AI 代理自动化视频制作工作流程的潜力感到兴奋。"
+    },
+    {
+      "point": "与 AI 模型的集成",
+      "explanation": "工作流程与大型语言模型（具体提到的是 Claude Fable 5）集成，用于解读自然语言指令并生成必要的编辑代码。"
+    },
+    {
+      "point": "性能指标",
+      "explanation": "文章建议跟踪首个令牌时间（TTFT）、端到端渲染时间、编辑成功率和每令牌成本等指标，以评估系统的效率和可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "该概念很简单：描述一个编辑——例如剪辑片段、添加字幕、生成亮点集锦或应用可重复的变换——然后让代理规划并执行工作流程。"
+  ],
+  "tags": [
+    "AI 编程",
+    "视频编辑",
+    "开源",
+    "自动化",
+    "自然语言处理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 276,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788185915000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-31 22:18:35"
+}

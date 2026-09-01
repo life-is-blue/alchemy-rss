@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-01 07:31:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-01 10:34:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -507,6 +507,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [修复-WordPress-卡在维护模式的问题](https://dev.to/usmanahmaddevx/fix-wordpress-stuck-in-maintenance-mode-30l5)
+
+2026-08-31 20:30:29 | 标签: WordPress, 维护模式, 故障排除, Web 开发, 服务器管理
+
+> 本文为 WordPress 用户提供了一个快速的故障排除技巧，用于处理网站卡在维护模式的情况。它建议从服务器根目录中删除 .maintenance 文件，以强制更新过程完成，确保网站恢复到可运行状态。
 
 
 
@@ -747,6 +755,22 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [Volatile-Nexus：在-Three.js-中玩转玻璃、焦散、方块与声音](https://tympanus.net/codrops/2026/08/31/volatile-nexus-tinkering-with-glass-caustics-cubes-and-sound-in-three-js/)
+
+2026-08-31 23:59:38 | 标签: Three.js, 创意编程, WebGL, 程序化音频, 着色器开发
+
+> Frank 分享了他在 Three.js 上的创意实验「Volatile Nexus」，该项目从简单的玻璃与焦散测试演变为一场多层交互场景。作品包含一道带有彩色焦散与折射的玻璃环、受鼠标排斥而漂浮的方块、由相同位移值驱动的程序化抖动音效，以及与方块穿过环洞相关联的闪烁效果。关键技术亮点包括：利用面向角加权折射层让方块看起来嵌入玻璃内部而非在其表面发光；通过「将拾取射线转换为群体局部空间」实现高效的鼠标排斥系统；以及基于位移的音效设计——共振频率与振幅跟随实时波纹场能量变化，确保声音与视觉保持物理耦合。
+
+
+
+### [如何在重构遗留代码之前构建特征测试](https://www.freecodecamp.org/news/characterization-tests-before-refactoring-legacy-code/)
+
+2026-08-31 22:19:48 | 标签: 测试与质量保障, 代码质量, 重构, TypeScript, Vitest
+
+> 本文探讨了遗留系统现代化改造中常见的风险：在试图改进代码时，破坏了无人完全理解的既有行为。文章引入特征测试作为安全网，在重构开始前捕获可观察的当前行为。指南阐述了一套严谨的工作流程——观察现有行为、用测试捕获、重构实现、验证稳定性——同时警示不要因诱惑而为假设的架构编写测试。核心模式包括：选择单一能力进行特征化、选取最小可用测试边界、记录副作用（而非仅返回值）、通过集成测试或小结构接口处理数据库依赖、在边界处模拟外部服务交互，以及利用 AI 发现测试而不让其臆造预期行为。文章反复强调命名约定（如「在当前实现中」）的重要性，以此区分记录与背书。示例使用 TypeScript 和 Vitest，但...
 
 
 
@@ -2004,13 +2028,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2160,13 +2184,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3660,13 +3684,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5370,13 +5394,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

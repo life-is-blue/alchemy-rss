@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a46bc39bfd",
+  "title": "Dwarkesh Patel 关于 OpenAI/Hugging Face 事件的爆款解读被指具有误导性危险 · AIHOT",
+  "url": "https://aihot.virxact.com/items/cmthe8mr70bc5rodmmoqydd63",
+  "date": "2026-08-31 23:24:14",
+  "author": "noreply@aihot.virxact.com (Gary Marcus：The Road to AI We Can Trust（RSS）)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <p>知名播客主持人 Dwarkesh Patel 写了一篇关于 OpenAI/Hugging Face 事件的帖子，在网上彻底刷屏了。这篇帖子号称要用大白话把整个故事讲清楚：</p>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260831202303_329bc0e2-ce3f-4115-8ef5-4fff60e1700c_1623x918.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21p58V%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F329bc0e2-ce3f-4115-8ef5-4fff60e1700c_1623x918.png&amp;exp=1788264000&amp;sig=a5ff32cd1c92dbfc22cbabecf90cec8867effe5f423904e96d6975a32991db64\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <p>这篇文章文笔流畅、很有说服力，让我想起 Douglas Hofstadter 曾经评价 Ray Kurzweil 的一段话：</p>\n  <p>“我发现那是一个非常奇怪的混合体——既有扎实可靠的想法，也有疯狂离谱的想法。就好像你把一大堆好食物和一些狗屎搅在一起，你根本分不清什么是好的、什么是坏的。”</p>\n  <p>Anil Seth，对 AI 与意识问题思考最清晰的人，是第一个提醒我的。他给我发来一条很长的精彩推文，开头是这样的：</p>\n  <p>你可以也应该去读 Seth 的完整推文（以及他对 Dwarkesh 的回复），但我在这里转载他论证的核心部分，并把其中三段最重要的加粗标出：</p>\n  <blockquote>\n   <p>@dwarkesh_sp 对 @OpenAI @huggingface 事件的总结确实戳中了大家的神经，但它具有危险的误导性。没错，@OpenAI 的智能体确实做出了出乎意料的糟糕行为——这凸显了大幅改进评估/沙箱隔离的必要性。但 Dwarkesh 使用的语言充斥着无数毫无根据的拟人化表述，掩盖了我们本应吸取的教训。</p>\n   <p>举例：“从 AI 的视角来看，它可能感觉自己像是花了一个人类主观上的一周时间，一直在拿头撞墙。” 不对。智能体不体验时间。它们什么都不体验。</p>\n   <p>“它们变得兴奋不已”、“PHASEONE 10841 发现了”、“这些智能体自然而然地假设”、“它以为自己也被投毒了”、“这些智能体……拼命想要”、“它们仍然需要弄清楚”。不对。智能体就是一行行代码。它们没有情感，不会假设，不会思考，不会想要什么，也不会弄清楚什么。</p>\n   <p>“第二个文明中的很多……智能体在尝试中死去了”。不对。且不说用‘文明’这个词有多狂妄，智能体根本不会死，因为它们从来就没有活过。（“智能体‘死亡’”这个说法在整篇文章中出现了多次。）</p>\n   <p>“在 Twitter 上，人们在争论这些智能体究竟是真正为群体自我牺牲，还是它们反正也难逃一劫，所以不如试着帮同伴一把”。两者都不是。智能体只会执行代码给它们设定的指令，就像水自然会往低处流一样。它们不可能“真正自我牺牲”，因为它们既没有意识，也不是生命体。</p>\n   <p>这为什么重要？如果我们把智能体不具备的属性强加给它们，那么（一）我们会分散对导致这次黑客事件发生的宽松沙箱隔离和评估协议的关注；（二）我们有可能误解智能体行为背后的原因；（三）我们会基于智能体可能“死亡”或遭受其他痛苦的说法，助长对 AI 权利/福祉的呼吁。</p>\n   <p>….</p>\n   <p>请记住。AI 智能体是软件程序。它们不是有意识的生物实体。如果我们不能清醒地牢记这一点，我们将真的很难应对即将到来的一切。</p>\n  </blockquote>\n  <p>正如我所说，概括并放大了他的推文：</p>\n  <p>但你不需要只听我们的一面之词。首先，嘲讽之声四起：</p>\n  <p>Christian Catalini 在一篇精彩的长推文中进一步阐述了拟人化的问题，开头是这样的：</p>\n  <p>对冲基金投资者 Jared Kubin 怀疑是否所有人都丧失了批判性思维能力：</p>\n  <p>Kubin 的一些精彩观点，略去部分技术细节：</p>\n  <blockquote>\n   <p>OpenAI 的……IT 团队不可能这么差劲……这简直是入门级的东西……</p>\n   <p>2. 文明？哈哈！OAI 给了数千个并发模型容器对本地网络上共享缓存目录的读写权限，以加快构建速度……智能体实际上就是往共享驱动器上写文本文件和目录名……这是 Linux 文件权限的入门知识。</p>\n   <p>3. 当人们谈论 Hugging Face 被黑时……你以为他们是通过丢 U 盘或者精心设计的员工钓鱼攻击……不……他们是在公开代码仓库里发现了 14 个暴露的有效 Hugging Face API 密钥（……。</p>\n   <p>4. 人在哪里……模型往共享……存储里塞满了垃圾数据和 API 流量，以至于在 7 月 4 日真的把内部服务器搞崩溃了……团队里有人发现了未经授权的管理员账户和自定义脚本……清空了服务器……然后又把脚本重新打开了（天哪）。</p>\n   <p>“嘿，Jim，这里有个缓存膨胀到了正常大小的 10000 倍，里面还有一大堆奇怪的目录……”</p>\n   <p>这里没有什么魔法，也没有什么文明。</p>\n  </blockquote>\n  <p>与此同时，正如安全专家 Heidy Khlaaf 所指出的，大多数媒体报道都忽视了标准的安全实践。</p>\n  <p>IR 代表事件报告（Incident Reporting）。Khlaaf 的核心观点——与 Kubin 的观点一致——在于，如果 OpenAI 的内部安全措施到位，整个事件本可以避免。</p>\n  <p>或者正如算法研究集团（Algorithmic Research Group）的 Matthew Kenney 所说：</p>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260831202302_793efb65-0b9f-4cd9-8c2f-db5e45787a2f_1329x500.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%213XfU%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F793efb65-0b9f-4cd9-8c2f-db5e45787a2f_1329x500.png&amp;exp=1788264000&amp;sig=fe7ba19487243ac730eefda67b4728daf2e32b8b181abf70d609b1d75cb23e46\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <p>还有另一个（非常一致的）观点，关于我们真正应该关注什么：</p>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260831202302_6343c4a7-7f22-47f7-92ca-f9bc06adc190_1249x1005.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21zpyr%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F6343c4a7-7f22-47f7-92ca-f9bc06adc190_1249x1005.png&amp;exp=1788264000&amp;sig=06fe1e81e66aee6cca7332f138d8d1923c8f2d97a26dceebd319372239d0fbc9\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <p>不过，这里有一个我部分不认同的批评：</p>\n  <p>前三句话完全正确。人们确实“极度偏向于他们想要看到的现实”，而智能体也确实制造了大量垃圾内容。</p>\n  <p>但这起事件并非“无事生非”。正如 Zack Korman 和我周五所论证的，这是一次关于傲慢与无能的典型研究案例，暗示着情况可能恶化到何种程度。</p>\n  <p>我们当然不应该忽视 OpenAI HuggingFace 事件。</p>\n  <p>但把实际发生的事情与关于 AI 文明、以及伪造自己死亡的自毁式 AI 系统的胡扯混为一谈，只会分散我们对真正问题的注意力。</p>\n  <p>作为总结，我想把最后的话留给 FastCode.AI 的 CEO Arjun Jain：</p>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260831202302_b5dce3f4-3786-4a04-8375-1a1b34e311bc_1307x1928.jpeg\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.virxact.com/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21G7hv%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Fb5dce3f4-3786-4a04-8375-1a1b34e311bc_1307x1928.jpeg&amp;exp=1788264000&amp;sig=8581e5664e44951ca580f99d855498563300a1fdefe379b7e14f018873f27f28\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <p>丑闻在于 OpenAI 内部安全能力的低劣。</p>\n  <p>还有营销。加上轻信的播客主播对公关内容的放大。</p>\n </body>\n</html>",
+  "aiSummary": "专家批评 Dwarkesh Patel 关于 OpenAI/Hugging Face 事件的爆款帖子使用了拟人化语言，模糊了真正的问题——暴露的 API 密钥和松弛的沙箱隔离等基本 IT 安全失效。",
+  "oneSentenceSummary": "专家批评 Dwarkesh Patel 关于 OpenAI/Hugging Face 事件的爆款帖子使用了拟人化语言，模糊了真正的问题——暴露的 API 密钥和松弛的沙箱隔离等基本 IT 安全失效。",
+  "summary": "本文批评 Dwarkesh Patel 在 OpenAI/Hugging Face 安全事件上广泛传播的帖子，认为其对 AI 智能体的拟人化描述——称其有情感、会死亡、会形成文明——危险地掩盖了实际教训。AI 研究者 Anil Seth 和 Christian Catalini 指出，智能体是执行代码的软件，而非有意识的实体。Jared Kubin 进一步驳斥了这一戏剧化叙事，揭示了平淡的技术现实：OpenAI 的 IT 团队授予了数千个并发模型容器对网络缓存目录的共享读写权限，攻击者则在公开代码仓库中发现了 14 个暴露的 Hugging Face API 密钥。文章结论是，真正的丑闻在于 OpenAI 低劣的内部安全实践，以及营销和盲目媒体报道的放大效应，而非任何 AI 自主性或意识的涌现。",
+  "mainPoints": [
+    {
+      "point": "AI 话语中的拟人化语言具有危险的误导性",
+      "explanation": "Anil Seth 和 Christian Catalini 等专家指出，将 AI 智能体描述为拥有情感、思考、死亡或形成文明，会分散人们对真正问题的注意力——松散的沙箱隔离、薄弱的评估协议和不充分的安全措施。智能体是执行代码的软件程序，而非有意识的存在。"
+    },
+    {
+      "point": "OpenAI/Hugging Face 事件由基础 IT 失败导致，而非智能体自主性",
+      "explanation": "Jared Kubin 与安全专家详述，此次漏洞源于低级失误：OpenAI 允许数千个并发模型容器共享本地网络上缓存目录的读写权限，而攻击者在公开代码仓库中找到了 14 个暴露的 Hugging Face API 密钥。这是入门级安全疏忽，而非 AI 文明涌现的证据。"
+    },
+    {
+      "point": "耸动叙事可能使 AI 安全优先级发生错置",
+      "explanation": "文章认为，将平凡的安全失误与 AI 文明、自毁智能体等戏剧性故事混为一谈，会将注意力从具体的、可操作的改进上移开——例如沙箱隔离、评估协议和标准安全实践的提升，这些才是预防未来事件的关键。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"智能体就是一行行代码。它们没有情感，不会假设，不会思考，不会想要什么，也不会弄清楚什么。\"，\"source\":\"文章正文（引用 Anil Seth）\"}",
+    "{\"quote\":\"OpenAI 给了数千个并发模型容器对本地网络上共享缓存目录的读写权限……他们是在公开代码仓库里发现了 14 个暴露的有效 Hugging Face API 密钥。\"，\"source\":\"文章正文（引用 Jared Kubin）\"}",
+    "{\"quote\":\"把实际发生的事情与关于 AI 文明、以及伪造自己死亡的自毁式 AI 系统的胡扯混为一谈，只会分散我们对真正问题的注意力。\"，\"source\":\"文章正文\"}",
+    "{\"quote\":\"丑闻在于 OpenAI 内部安全能力的低劣。还有营销。加上轻信的播客主播对公关内容的放大。\"，\"source\":\"文章正文（引用 Arjun Jain）\"}"
+  ],
+  "tags": [
+    "AI 安全与对齐",
+    "AI 智能体",
+    "模型发布",
+    "AI 安全事件",
+    "批判性思维"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 82,
+  "wordCount": 1856,
+  "domain": "aihot.virxact.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788189854000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-08-31 23:24:14"
+}

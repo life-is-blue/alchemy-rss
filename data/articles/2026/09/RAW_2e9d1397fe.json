@@ -1,0 +1,86 @@
+{
+  "id": "RAW_2e9d1397fe",
+  "title": "如何将我的安全摄像头变成自动鸟类识别系统，使用 BirdNet-Go",
+  "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
+  "date": "2026-09-01 03:08:38",
+  "author": "Jason Tucker",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <p>My wife loves listening to the birds and identifying them using an app on her phone. I thought I'd take this a step further and see if there was something that can identify the birds based on their song. Looking around I found BirdNet and <a href=\"https://github.com/tphakala/birdnet-go?ref=jasontucker.blog\" rel=\"noopener noreferrer\">BirdNet-Go</a>, then discovered you can run this on Docker and use the security cameras you already have outside to identify the birds. Awesome! So I took 3 of the cameras around my house and used their microphones to identify the birds. It was magic.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.22.22.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.22.22.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.22.22.png 1000w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.22.22.png 1290w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"real-time-bird-and-bat-audio-detection\">Real-Time Bird and Bat Audio Detection</h2>\n  <p>BirdNet-Go runs 24/7. It listens constantly. The moment a bird starts singing, it analyzes the audio and gives you an identification. No waiting, no manual recording. It works for bats too, which is pretty cool if you've got them flying around at dusk. The system just keeps running in the background, cataloging everything it hears. It also started detecting frogs which is interesting.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.11.38.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.11.38.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.11.38.png 1000w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.11.38.png 1246w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"multi-model-local-ai-inference-engine\">Multi-Model Local AI Inference Engine</h2>\n  <p>The whole thing runs locally on your hardware. No cloud services. No API calls. The AI models live right on your server or Raspberry Pi. This means it's fast, private, and doesn't cost you anything per month. You can even run multiple models if you want different detection strategies or regional bird databases. They recently added Google Perch v2 to the model gallery allowing for 14,795 species to be detected vs the 6,000 that BirdNET 2.4 provided.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.12.50.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.12.50.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.12.50.png 1000w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.12.50.png 1264w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.13.12.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.13.12.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.13.12.png 1000w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.13.12.png 1256w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"alert-rules-with-species-list-matching\">Alert Rules with Species List Matching</h2>\n  <p>You can set up rules for specific birds. Want to know the instant a cardinal shows up? Done. Looking for a rare species in your area? Set an alert. The system matches against species lists and sends you notifications based on whatever criteria you set. It's like having a birding buddy who never sleeps. I even have it connected to a channel in my homes Discord server. Wait, your house doesn't have a dedicated Discord?</p>\n  <figure class=\"kg-card kg-image-card kg-card-hascaption\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.16.33.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.16.33.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.16.33.png 1000w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.16.33.png 1301w\" sizes=\"(min-width: 720px) 720px\">\n   <figcaption>\n    <span style=\"white-space: pre-wrap;\">Setting up notifications and alerts for bird sightings into the house discord channel #birdnet</span>\n   </figcaption>\n  </figure>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.35.16.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.35.16.png 600w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.35.16.png 687w\">\n  </figure>\n  <h2 id=\"species-novelty-tracking-for-new-detections\">Species Novelty Tracking for New Detections</h2>\n  <p>This feature tracks which birds are new to your yard. First time a blue jay visits? BirdNet-Go flags it. It maintains a running list of every species it's detected, so you can see your yard's biodiversity grow over time. Honestly, this turned into a fun game for us.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.19.28.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.19.28.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.19.28.png 1000w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.19.28.png 1271w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"rtsp-stream-support-for-ip-cameras\">RTSP Stream Support for IP Cameras</h2>\n  <p>If your cameras support RTSP, you're good to go. Most modern IP cameras do. You just point BirdNet-Go at the stream URL. I used three of my existing security cameras. Didn't need to buy any special hardware. The cameras I already had for security now pull double duty identifying birds.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.14.59.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.14.59.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.14.59.png 1000w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.14.59.png 1249w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"birdweather-integration-for-data-sharing\">BirdWeather Integration for Data Sharing</h2>\n  <p>BirdWeather is a community platform for sharing bird detection data. BirdNet-Go integrates with it directly. If you want to contribute your observations to a larger dataset, you can. It helps researchers and other birders see what's happening in your area. You don't have to use it, but it's nice that the option exists.</p>\n  <h2 id=\"self-hosted-with-no-cloud-dependencies\">Self-Hosted with No Cloud Dependencies</h2>\n  <p>Everything lives on your network. The audio never leaves your house unless you explicitly share it. No subscription fees. No terms of service changes. No company shutting down the service in two years. You own the whole stack. It runs in Docker, so it's easy to manage alongside everything else in your homelab.</p>\n  <h2 id=\"can-connect-to-home-assistant\">Can connect to Home Assistant</h2>\n  <p>Evernything needs to be able to connect to Home Assistant and BirdNET-Go can use MQTT to be discovered in Home Assistant.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.25.21.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/CleanShot-2026-06-04-at-11.25.21.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/CleanShot-2026-06-04-at-11.25.21.png 1000w, https://jasontucker.blog/content/images/size/w1600/2026/06/CleanShot-2026-06-04-at-11.25.21.png 1600w, https://jasontucker.blog/content/images/2026/06/CleanShot-2026-06-04-at-11.25.21.png 1868w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"visual-audio-channel-energy-level-analysis\">Visual Audio Channel Energy Level Analysis</h2>\n  <p>The interface shows you real-time audio levels for each channel. You can see exactly what the microphones are picking up. This helps you position cameras better or troubleshoot why one isn't detecting anything. Sometimes you'll realize the camera is pointed at a noisy AC unit or getting wind noise, and you can adjust accordingly.</p>\n  <h2 id=\"it-detected-a-fart\">IT DETECTED A FART!</h2>\n  <p>A few nights ago I got a notification from Home Assistant that a fart was detected in the driveway. My neighbor was walking by my house on his nightly walk and ripped one as he passed by the driveway and the fart was detected.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/08/CleanShot-2026-08-31-at-12.06.02.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/08/CleanShot-2026-08-31-at-12.06.02.png 600w, https://jasontucker.blog/content/images/size/w1000/2026/08/CleanShot-2026-08-31-at-12.06.02.png 1000w, https://jasontucker.blog/content/images/2026/08/CleanShot-2026-08-31-at-12.06.02.png 1235w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"final-thoughts\">Final Thoughts</h2>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://jasontucker.blog/content/images/2026/06/birdnet-1.jpeg\" class=\"kg-image\" alt=\"\" loading=\"lazy\" srcset=\"https://jasontucker.blog/content/images/size/w600/2026/06/birdnet-1.jpeg 600w, https://jasontucker.blog/content/images/size/w1000/2026/06/birdnet-1.jpeg 1000w, https://jasontucker.blog/content/images/2026/06/birdnet-1.jpeg 1280w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <p>Look, this project surprised me. I expected it to be neat but figured I'd get bored after a week. Instead, my wife and I check it daily. We've learned which birds visit at what times. We've spotted species we didn't know lived nearby. My friends got interested too, I made this avaiable on the public house domain name (behind Cloudflare of course.) and allowed a few of my friends to connect to it and see how it works. It turned our security camera setup into something genuinely useful beyond security. If you've got cameras with microphones and even a passing interest in birds, give BirdNet-Go a shot. It's one of those homelab projects that actually improves daily life instead of just being technically interesting.</p>\n  <figure class=\"kg-card kg-bookmark-card\">\n   <a class=\"kg-bookmark-container\" href=\"https://github.com/tphakala/birdnet-go?ref=jasontucker.blog\"> \n    <div class=\"kg-bookmark-content\">\n     <div class=\"kg-bookmark-title\">GitHub - tphakala/birdnet-go</div>\n     <div class=\"kg-bookmark-description\">Self-hosted realtime soundscape analyser for birds, bats and other wildlife. Multi-model local AI inference, runs 24/7 on a Raspberry Pi. — ⭐ 1,232 · 🍴 114 · nightly-20260601</div>\n     <div class=\"kg-bookmark-metadata\">\n      <img class=\"kg-bookmark-icon\" src=\"https://github.githubassets.com/favicons/favicon.svg\" alt=\"\"><span class=\"kg-bookmark-author\">GitHub</span><span class=\"kg-bookmark-publisher\">tphakala</span>\n     </div>\n    </div> \n    <div class=\"kg-bookmark-thumbnail\">\n     <img src=\"https://avatars.githubusercontent.com/u/7030001?v=4\" alt=\"\" onerror=\"this.style.display = 'none'\">\n    </div> \n   </a>\n  </figure>\n </body>\n</html>",
+  "aiSummary": "我将现有的安全摄像头重新用于运行 BirdNet-Go，这是一个本地 AI 系统，通过声音识别鸟类和蝙蝠，提供实时通知和物种追踪，无需依赖云服务。",
+  "oneSentenceSummary": "我将现有的安全摄像头重新用于运行 BirdNet-Go，这是一个本地 AI 系统，通过声音识别鸟类和蝙蝠，提供实时通知和物种追踪，无需依赖云服务。",
+  "summary": "利用我的家庭安全基础设施，我部署了 BirdNet-Go，用于持续监控野生动物活动的音频。该系统成功识别了多种物种，包括鸟类、蝙蝠，甚至青蛙，并与 Home Assistant 集成，用于自动化警报。本地处理确保了隐私，并避免了重复费用。",
+  "mainPoints": [
+    {
+      "point": "实时鸟类和蝙蝠音频检测",
+      "explanation": "BirdNet-Go 持续运行，分析来自连接摄像头的音频流，以便在物种发声时立即识别。这允许即时检测鸟类、蝙蝠和其他野生动物，而无需手动录制或后期处理。"
+    },
+    {
+      "point": "多模型本地 AI 推理引擎",
+      "explanation": "该系统完全在本地硬件上运行，利用多模型架构来处理音频数据。这确保了高隐私性、低延迟，并独立于云服务，能够切换不同的检测模型。"
+    },
+    {
+      "point": "带有物种列表匹配的警报规则",
+      "explanation": "用户可以配置特定警报规则，以便在检测到某些物种时收到通知。该系统与一个全面的物种列表进行匹配，允许对稀有或特定鸟类进行有针对性的监控。"
+    },
+    {
+      "point": "用于新发现的物种新颖性追踪",
+      "explanation": "BirdNet-Go 维护一个已检测物种的数据库，并标记任何新到达的物种。此功能有助于随时间追踪生物多样性，并识别哪些物种是首次访问该区域。"
+    },
+    {
+      "point": "IP 摄像头的 RTSP 流支持",
+      "explanation": "该软件与支持 RTSP 流的标配 IP 摄像头兼容。这使得与现有安全摄像头设置轻松集成，将它们变成多功能的环境传感器。"
+    },
+    {
+      "point": "BirdWeather 集成用于数据共享",
+      "explanation": "该系统可以将数据导出到 BirdWeather 平台，为更大的社区数据集做出贡献。这允许用户分享他们的观测结果，并参与更广泛的生态监测工作。"
+    },
+    {
+      "point": "无云依赖的自托管",
+      "explanation": "BirdNet-Go 是一个独立运行的应用程序，运行在用户自己的服务器或树莓派上。它不需要互联网连接即可运行，确保数据隐私，并避免订阅费用。"
+    },
+    {
+      "point": "可以连接到 Home Assistant",
+      "explanation": "该系统通过 MQTT 与 Home Assistant 集成，允许集中控制和自动化。这使得可以创建复杂的流程，例如在检测到特定鸟类时触发灯光或警报。"
+    },
+    {
+      "point": "可视化音频通道能量水平分析",
+      "explanation": "用户界面提供了不同通道音频能量水平的视觉表示。这有助于诊断麦克风问题，并优化摄像头放置，以获得更好的声音捕捉。"
+    },
+    {
+      "point": "它检测到了一个屁！",
+      "explanation": "在一个幽默的轶事中，该系统在车道上检测到了一个屁声，这展示了音频分析的敏感性。虽然不是鸟，但这突出了该系统拾取各种环境声音的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"鸟儿一唱歌，它就会分析音频，并给你一个识别结果。无需等待，无需手动录制。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"整个系统都在你的硬件上本地运行。没有云服务。没有 API 调用。AI 模型就存在于你的服务器或树莓派上。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"你可以为特定鸟类设置规则。想知道红雀什么时候出现吗？可以。在你的区域寻找稀有物种吗？设置一个警报。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"第一次有蓝山雀来访？BirdNet-Go 会标记它。它维护着一个已检测物种的运行列表，所以你可以看到你的院子的生物多样性随着时间增长。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"如果你的摄像头支持 RTSP，那就没问题了。大多数现代 IP 摄像头都支持。你只需要把 BirdNet-Go 指向流 URL。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"BirdWeather 是一个用于分享鸟类检测数据的社区平台。BirdNet-Go 直接与它集成。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"一切都存在于你的网络上。音频永远不会离开你的房子，除非你明确分享。没有订阅费用。没有服务条款变更。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"系统一直在后台运行，记录它听到的所有东西。它还开始检测青蛙，这很有趣。\"，\"attribution\":\"文章\"}",
+    "{\"quote\":\"前几天，我从 Home Assistant 收到一个通知，说在车道上检测到了一个屁。我的邻居在夜间散步时经过我的房子，在经过车道时放了一个屁，而被检测到了。\"，\"attribution\":\"文章\"}"
+  ],
+  "tags": [
+    "安全",
+    "Go",
+    "数据库",
+    "树莓派",
+    "GitHub"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 853,
+  "domain": "jasontucker.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788203318000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-01 03:08:38"
+}

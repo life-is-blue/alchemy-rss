@@ -1,0 +1,68 @@
+{
+  "id": "RAW_a4200f89eb",
+  "title": "macOS 的精致。开源的自由。",
+  "url": "https://ravynos.com/",
+  "date": "2026-09-01 00:19:36",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"section grey-section\" id=\"features\">\n   <div class=\"section-content\">\n    <div class=\"feature-text fade-in-up\">\n     <h2 class=\"section-title\">Project Goals</h2>\n     <h3 class=\"section-subtitle\">Features that you'd love.</h3>\n     <p class=\"section-description\">We intend to bring many of the features you've come to love from macOS to ravynOS such as clean design, global menus, and drag-and-drop installs.</p>\n    </div>\n    <div class=\"feature-grid\">\n     <div class=\"feature-card fade-in-up\">\n      <span class=\"material-symbols-outlined feature-icon\">design_services</span>\n      <h4>Clean Design</h4>\n      <p>A distract-free interface that puts your content first. Beautiful transparency, refined typography, and elegant spacing inspired by the best.</p>\n     </div>\n     <div class=\"feature-card fade-in-up delay-1\">\n      <span class=\"material-symbols-outlined feature-icon\">top_panel_open</span>\n      <h4>Global Menus</h4>\n      <p>Save vertical space and access commands consistently. The global menu bar separates application control from window content.</p>\n     </div>\n     <div class=\"feature-card fade-in-up delay-2\">\n      <span class=\"material-symbols-outlined feature-icon\">keyboard_command_key</span>\n      <h4>Consistent Shortcuts</h4>\n      <p>Muscle memory matters. Use the standard Command-key shortcuts you already know and love across the entire system.</p>\n     </div>\n     <div class=\"feature-card fade-in-up\">\n      <span class=\"material-symbols-outlined feature-icon\">drag_indicator</span>\n      <h4>Simple Installs</h4>\n      <p>No installers, no registries. Just drag the application bundle to your Applications folder and you're done.</p>\n     </div>\n     <div class=\"feature-card fade-in-up delay-1\">\n      <span class=\"material-symbols-outlined feature-icon\">folder</span>\n      <h4>Familiar Folders</h4>\n      <p>Feel at home with a standard hierarchy: Applications, System, Library, and Users. Everything is exactly where you expect it.</p>\n     </div>\n     <div class=\"feature-card fade-in-up delay-2\">\n      <span class=\"material-symbols-outlined feature-icon\">api</span>\n      <h4>Cocoa APIs</h4>\n      <p>Native support for key frameworks. Developers can port existing Cocoa applications with minimal changes.</p>\n     </div>\n     <div class=\"feature-card fade-in-up\">\n      <span class=\"material-symbols-outlined feature-icon\">terminal</span>\n      <h4>Nifty Commands</h4>\n      <p>Power at your fingertips. Use 'open', 'pbcopy', and other familiar terminal utilities to speed up your workflow.</p>\n     </div>\n    </div>\n   </div>\n  </section>\n  <section class=\"section white-section\" id=\"contribute\">\n   <div class=\"section-content\">\n    <div class=\"feature-text fade-in-up\">\n     <h2 class=\"section-title\">Get Involved</h2>\n     <h3 class=\"section-subtitle\">Don't be shy, come talk.</h3>\n     <p class=\"section-description\">If this sounds like your dream system, please help us make it a reality! We've got a Discord.</p>\n    </div>\n    <div class=\"contribute-grid fade-in-up delay-1\">\n     <div class=\"contribute-card\">\n      <span class=\"material-symbols-outlined emoji\">menu_book</span>\n      <h4>Project Wiki</h4>\n      <p>Documentation, troubleshooting, and guides. Help us keep it up to date!</p>\n      <a href=\"https://ravynos.com/wiki\">Visit Wiki →</a>\n     </div>\n     <div class=\"contribute-card\">\n      <span class=\"material-symbols-outlined emoji\">forum</span>\n      <h4>Discussions</h4>\n      <p>Ask questions, share ideas, and engage with the community on GitHub.</p>\n      <a href=\"https://github.com/ravynsoft/ravynos/discussions\">Join Discussions →</a>\n     </div>\n     <div class=\"contribute-card\">\n      <span class=\"material-symbols-outlined emoji\">chat</span>\n      <h4>Join Chat</h4>\n      <p>Real-time chat with the team and community.</p>\n      <div class=\"chat-links\">\n       <a href=\"https://discord.com/invite/8caJbAGNwY\">Discord</a>\n      </div>\n     </div>\n    </div>\n   </div>\n  </section>\n </body>\n</html>",
+  "aiSummary": "ravynOS 旨在弥合 macOS 的精致用户体验与开源软件的灵活性之间的差距，提供全局菜单、一致的快捷键和拖放安装等功能，同时保持简洁、以内容为中心的设计。",
+  "oneSentenceSummary": "ravynOS 旨在弥合 macOS 的精致用户体验与开源软件的灵活性之间的差距，提供全局菜单、一致的快捷键和拖放安装等功能，同时保持简洁、以内容为中心的设计。",
+  "summary": "该项目旨在将 macOS 的深受喜爱的功能复制到开源框架中。这包括一个简洁、无干扰的界面，一个用于高效命令访问的全局菜单栏，标准化的键盘快捷键，以及一个简单的拖放安装过程。该系统将使用熟悉的文件夹层次结构，并支持 Cocoa API，以促进现有应用程序的移植。",
+  "mainPoints": [
+    {
+      "point": "简洁设计",
+      "explanation": "界面优先考虑内容可见性，采用极简主义美学，包括透明度、精致的排版和战略性的间距，以减少视觉混乱。"
+    },
+    {
+      "point": "全局菜单",
+      "explanation": "屏幕顶部的集中式菜单栏提供对应用程序命令的一致访问，节省垂直空间并提高工作流程效率。"
+    },
+    {
+      "point": "一致的快捷键",
+      "explanation": "该系统遵循标准的 Command 键快捷键，允许用户利用现有的肌肉记忆，而无需学习新的按键组合。"
+    },
+    {
+      "point": "简单安装",
+      "explanation": "应用程序通过将应用程序包拖放到应用程序文件夹中的简单拖放方法进行安装，无需复杂的安装程序或注册表修改。"
+    },
+    {
+      "point": "熟悉文件夹",
+      "explanation": "文件系统结构反映了应用程序、系统、库和用户的预期层次结构，确保习惯于这种布局的用户能够平稳过渡。"
+    },
+    {
+      "point": "Cocoa API",
+      "explanation": "对 Cocoa 框架的原生支持允许开发者在几乎不需要修改代码的情况下移植现有的 macOS 应用程序，从而保留功能和性能。"
+    },
+    {
+      "point": "巧妙命令",
+      "explanation": "终端包含有用的实用程序，例如 'open' 和 'pbcopy'，这些实用程序可以简化常见任务，并提高系统的整体生产力。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"一个无干扰的界面，将您的内容放在第一位。\"，\"attribution\":\"项目目标\"}",
+    "{\"quote\":\"节省垂直空间，并一致地访问命令。\"，\"attribution\":\"全局菜单\"}",
+    "{\"quote\":\"没有安装程序，没有注册表。只需将应用程序包拖到您的应用程序文件夹，即可完成。\"，\"attribution\":\"简单安装\"}"
+  ],
+  "tags": [
+    "开源",
+    "macOS",
+    "用户界面",
+    "开发者工具",
+    "Cocoa"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 240,
+  "domain": "ravynos.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788193176000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-01 00:19:36"
+}
