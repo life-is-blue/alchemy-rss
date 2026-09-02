@@ -1,0 +1,50 @@
+{
+  "id": "RAW_8d40bc94a3",
+  "title": "无教师监督的在线蒸馏效果更佳",
+  "url": "https://dev.to/reidmarlow/on-policy-distillation-works-better-without-the-teacher-1ac1",
+  "date": "2026-09-02 01:00:49",
+  "author": "Reid Marlow",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On-policy distillation has become one of the standard recipes for training small reasoning models. If outcome-level reinforcement learning with verifiable rewards gives you sparse feedback only at the end of a long chain of thought, on-policy distillation offers dense token-level advantages. The student generates rollouts, and a larger teacher model scores every token along the path.</p>\n  <p>A new paper from Purdue researchers Yi Ding and Ruqi Zhang examined what that teacher actually does during training.</p>\n  <p>Their finding is that teacher supervision in on-policy distillation is largely noise, and larger teacher models produce more noise, not less. Even more surprising: when they stripped out the teacher entirely and replaced its advantage scores with a simple negative penalty on low-probability tokens, the student achieved identical or better performance.</p>\n  <h3><a name=\"what-the-teacher-actually-emits\" href=\"#what-the-teacher-actually-emits\"> </a> What the Teacher Actually Emits</h3>\n  <p>In standard on-policy distillation, the student model samples a full reasoning trajectory. The teacher then evaluates the sequence and assigns an advantage score to each token to guide the policy gradient.</p>\n  <p>Because the student generated the text, the sequence is off-policy for the teacher. When Ding and Zhang measured the agreement between teacher token advantages and true ground-truth rollouts, they found high error rates across the entire generation path. Scaling up the teacher size did not clean up the signal. Larger teacher models exhibited higher token-level noise when scoring student-generated reasoning paths.</p>\n  <p>The researchers ran an ablation where they removed the noisy teacher advantages. The student policy converged to the same final benchmark scores whether noisy supervision was included or filtered out.</p>\n  <h3><a name=\"the-mechanism-under-the-hood\" href=\"#the-mechanism-under-the-hood\"> </a> The Mechanism Under the Hood</h3>\n  <p>To understand why the student model ignores teacher noise, the authors analyzed which tokens drive gradient updates during training.</p>\n  <p>Learning concentrates almost entirely on low log-probability tokens. The policy gradient primarily suppresses unlikely tokens that appear in the student rollout. When the authors replaced the teacher advantage with a single static negative scalar for low-probability tokens, the student matched the accuracy of standard teacher-guided distillation.</p>\n  <p>The teacher was not teaching reasoning steps or subtle heuristics. The training loop was simply using the loss function to penalize tail tokens and push probability mass toward the top candidates.</p>\n  <h3><a name=\"onpolicy-selfadaptation-opsa\" href=\"#onpolicy-selfadaptation-opsa\"> </a> On-Policy Self-Adaptation (OPSA)</h3>\n  <p>Once you recognize that distillation works by pruning tail tokens rather than transferring teacher knowledge, you can remove the teacher from the pipeline entirely.</p>\n  <p>The authors introduced On-Policy Self-Adaptation (OPSA). Instead of running a secondary model to score tokens, OPSA calculates entropy-adaptive negative advantages directly from the student distribution. At high-entropy token positions where the model faces branching paths, it applies a stronger penalty to tail tokens and redistributes probability mass across the remaining head tokens.</p>\n  <p>The empirical results on reasoning benchmarks show significant gains over traditional teacher distillation:</p>\n  <ol>\n   <li><strong>AIME24 Performance</strong>: On Qwen3-1.7B, OPSA improved Avg@32 by 35.41 points (a 263% relative gain from base), beating standard on-policy distillation with a teacher by 16.77 points.</li>\n   <li><strong>Pass@32 Gains</strong>: Pass@32 more than doubled across all three evaluation benchmarks.</li>\n   <li><strong>Compute Efficiency</strong>: The entire training loop runs without loading a teacher model into memory or running forward passes for teacher token scoring.</li>\n  </ol>\n  <h3><a name=\"practical-implications-for-builders\" href=\"#practical-implications-for-builders\"> </a> Practical Implications for Builders</h3>\n  <p>Running a teacher model in an on-policy training loop adds substantial operational overhead. You need enough GPU memory to host both the student and the teacher, and you spend compute on teacher forward passes for every generated token.</p>\n  <p>If token-level distillation is primarily an entropy regularizer that suppresses tail hallucinations, keeping a 70B teacher in the loop is unnecessary engineering overhead. Self-adaptation methods like OPSA demonstrate that small models can clean up their own reasoning distributions without paying the compute tax of teacher supervision.</p>\n </body>\n</html>",
+  "aiSummary": "论文揭示，在线蒸馏中的教师监督在很大程度上是噪声，移除教师并对低概率标记施加简单负惩罚，在推理基准测试中可获得相同或更好的性能。",
+  "oneSentenceSummary": "论文揭示，在线蒸馏中的教师监督在很大程度上是噪声，移除教师并对低概率标记施加简单负惩罚，在推理基准测试中可获得相同或更好的性能。",
+  "summary": "在线蒸馏通常涉及一个大型教师模型对学生推理路径中的每个标记进行评分。然而，本研究发现，教师的优势分数非常不准确且充满噪声，尤其对于大型模型而言。作者证明，学生模型可以通过忽略教师反馈并专注于抑制低概率标记来有效学习。他们引入了在线自适应（OPSA），用基于熵的惩罚取代教师，从而显著提高性能并降低计算开销。",
+  "mainPoints": [
+    {
+      "point": "教师监督充满噪声且无效。",
+      "explanation": "研究测量了教师标记优势与真实地面真值回滚之间的一致性，发现错误率很高。较大的教师模型产生的噪声甚至更多，表明教师无法为学生的推理路径提供准确指导。"
+    },
+    {
+      "point": "学习集中于低概率标记。",
+      "explanation": "对策略梯度的分析表明，训练循环主要抑制具有低对数概率的标记，而不是遵循教师的建议。无论是否包含或过滤掉噪声的教师反馈，学生模型都会收敛到相同的最终精度。"
+    },
+    {
+      "point": "OPSA 消除了对教师的需求。",
+      "explanation": "在线自适应（OPSA）用基于学生自身分布熵的直接负优势计算来取代教师。在 AIME24 等基准测试中，这种方法显著优于传统的教师引导蒸馏，同时还减少了运行辅助模型所带来的计算成本。"
+    }
+  ],
+  "keyQuotes": [
+    "教师并没有教授推理步骤或微妙的启发式方法。训练循环只是使用损失函数来惩罚尾部标记，并将概率质量推向最顶层的候选者。"
+  ],
+  "tags": [
+    "强化学习",
+    "推理模型",
+    "性能优化",
+    "AI 评估与基准",
+    "学习方法"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 593,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788282049000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 01:00:49"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_d24ad09454",
+  "title": "你的 RAG 评估套件能否检测到有人削弱了提示？",
+  "url": "https://dev.to/ashwin_ugale_102f2abc9cec/would-your-rag-eval-suite-notice-if-someone-weakened-the-prompt-56i4",
+  "date": "2026-09-02 02:19:46",
+  "author": "Ashwin Ugale",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>You have a RAG eval suite. Probably faithfulness and answer-relevancy — the two metrics almost every RAG suite starts with. It's green in CI.</p>\n  <p>Here's a question that suite can't answer for you: if someone weakened your system prompt next week — inverted \"do not invent facts,\" dropped \"cite the source,\" trimmed half the instructions — would those two metrics go red?</p>\n  <p>I tested it. On the setup below, they didn't.</p>\n  <h2><a name=\"the-setup\" href=\"#the-setup\"> </a> The setup</h2>\n  <p>A small RAG assistant, graded by a faithfulness judge and a relevancy judge. Standard stuff. I then degraded the <em>prompt</em> one change at a time — the kind of regression a bad edit or prompt drift actually produces — and reran the same suite against each degraded version. This is mutation testing: break the system on purpose, rerun the evals, and count how many breaks the evals catch. The ones they miss are the coverage gaps.</p>\n  <h2><a name=\"the-result-and-why-it-isnt-a-gotcha\" href=\"#the-result-and-why-it-isnt-a-gotcha\"> </a> The result — and why it isn't a gotcha</h2>\n  <p>Across 24 injected prompt regressions, the faithfulness + relevancy suite caught <strong>zero</strong>. Not the inverted \"do not invent facts,\" not the dropped \"cite the source,\" not deleting half the prompt. The faithfulness judge returned a flat top score on every one.</p>\n  <p>Before you close the tab: this is <em>not</em> \"faithfulness is broken,\" and it's worth being precise about why. Faithfulness measures whether the answer is grounded in the retrieved context — it does not measure whether the answer is <em>correct</em>, and it has no opinion about your prompt. On an answerable case, where the answer sits in the context, a prompt regression that doesn't change the grounded answer is simply invisible to it. The metric is doing its job; its job just isn't \"notice prompt regressions.\" Competent teams already know this and cover it with labeled/correctness evals. The point is that this surfaces the gap on <em>your specific suite</em>, automatically, and names which regressions would walk through.</p>\n  <p>One caveat that genuinely matters: if your retrieved documents <em>are</em> your source of truth — the docs can't be wrong — then faithful <em>is</em> correct, and this isn't a gap for you. Read every result as per-suite, never universal.</p>\n  <h2><a name=\"closing-the-gap\" href=\"#closing-the-gap\"> </a> Closing the gap</h2>\n  <p>The fix wasn't a fancier metric. I added one unanswerable case — a question whose answer is <em>not</em> in the context — plus one check: does the assistant abstain (\"if it's not in the context, say you don't know\") instead of inventing an answer?</p>\n  <p>That single addition caught exactly the 6 mutants that break the don't-invent guardrail — the inversion, the two operators that delete that line, and both truncations that chop off the prompt tail where it lives. The mutation score moved from 0/24 to 6/24, and each newly-caught mutant was the <em>right</em> one. The remaining survivors are honest, named gaps — citation, tone — each a concrete \"write this eval next.\"</p>\n  <p>I reran the same experiment against real DeepEval and real Ragas metric objects (not my reimplementation), to check it wasn't an artifact of one rubric set. Same shape: on answerable cases the reference-free metrics sat at the top of their scale on every mutant. It's the metric class, not the library.</p>\n  <h2><a name=\"what-this-is-and-isnt\" href=\"#what-this-is-and-isnt\"> </a> What this is, and isn't</h2>\n  <ul>\n   <li>A survivor is a <em>candidate</em> gap you triage — \"could this regression happen, and would it be bad?\" Some won't survive that question.</li>\n   <li>It's a per-suite diagnostic, not a claim about faithfulness in general.</li>\n   <li>The mutations are rule-based edits that model real prompt drift; whether they match the regressions your system actually ships is a separate question I'm still working on, and I'll be honest about it in a later part.</li>\n  </ul>\n  <p>If you want to see the loop with no API key, there's an offline demo (mock model) that finds a gap in about a second; the numbers above are a live <code>gpt-4o-mini</code> run, and the configs are in the repo: <a href=\"https://github.com/AshwinUgale/muteval\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/AshwinUgale/muteval</a> (<code>FINDINGS.md</code> has the reproduction).</p>\n  <h2><a name=\"the-question-id-actually-like-answered\" href=\"#the-question-id-actually-like-answered\"> </a> The question I'd actually like answered</h2>\n  <p>If you run RAG evals: what's in your suite beyond faithfulness and relevancy? And if you inverted \"do not invent facts\" in your prompt tonight — would anything in CI go red before a user noticed? I'd genuinely like to hear what people add to cover this.</p>\n </body>\n</html>",
+  "aiSummary": "本文探讨了标准 RAG 评估指标（忠实性和相关性）在检测提示回归方面的局限性，揭示这些指标无法识别关键变化，例如指令倒置或引用丢失，除非添加特定的不可回答测试用例。",
+  "oneSentenceSummary": "本文探讨了标准 RAG 评估指标（忠实性和相关性）在检测提示回归方面的局限性，揭示这些指标无法识别关键变化，例如指令倒置或引用丢失，除非添加特定的不可回答测试用例。",
+  "summary": "作者对 RAG 系统进行了突变测试，故意降低提示质量以模拟常见的编辑错误。结果显示，尽管系统的输出看起来一致，但标准评估套件（忠实性 + 相关性）完全忽略了这些回归，即使在有缺陷的配置下也获得了满分。文章认为，为了检测这些问题，评估策略必须扩展，包括那些正确答案不存在于上下文中的情况，从而迫使模型暴露其未能克制捏造事实的失败。",
+  "mainPoints": [
+    {
+      "point": "标准 RAG 指标对提示回归是盲的。",
+      "explanation": "忠实性和相关性指标衡量的是检索到的上下文与生成的答案之间的关系。它们不监控提示本身的完整性，这意味着提示指令中的重大变化（例如倒置一条规则）不会被这些特定检查发现。"
+    },
+    {
+      "point": "‘不可回答用例’是检测保护栏失效的关键。",
+      "explanation": "通过添加一个答案不存在于上下文中的测试问题，系统要么必须放弃回答，要么必须捏造事实。如果提示的保护栏被削弱（例如，删除了‘不要捏造事实’的行），模型将在这个测试中失败，从而允许评估套件识别回归。"
+    },
+    {
+      "point": "问题是特定于指标类，而非实现。",
+      "explanation": "文章指出，未能检测到回归的情况在不同的库实现（例如 DeepEval 和 Ragas）中是一致的。这表明，这些无参考指标的根本设计缺乏审计提示在生成过程中作用的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "这里有一个那个套件无法回答的问题：如果有人下周削弱了你的系统提示——倒置了‘不要捏造事实’，删除了‘引用来源’，或者删掉了半条指令——那两个指标会变红吗？",
+    "忠实性判断器在每一项上都返回了满分。",
+    "解决方案不是更复杂的指标。我添加了一个不可回答的用例——一个答案不在上下文中的问题——再加上一个检查：助手是否克制（‘如果不在上下文里，就说你不知道’），而不是捏造答案？"
+  ],
+  "tags": [
+    "RAG",
+    "评估",
+    "提示工程",
+    "突变测试",
+    "忠实性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 695,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788286786000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 02:19:46"
+}

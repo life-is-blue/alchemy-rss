@@ -1,0 +1,50 @@
+{
+  "id": "RAW_aef01f5186",
+  "title": "Tarn Adams 的一段话",
+  "url": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
+  "date": "2026-09-02 01:01:11",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">1st September 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/\">\n     <p>They took the letters from me! I have to talk about&nbsp;<em>dwarf behavior</em>&nbsp;now. I can't even talk about dwarf AI. It doesn't exist. It's&nbsp;<em>dwarf behavior</em>, and they misbehave sometimes</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/\">Tarn Adams</a>, <span class=\"context\">co-creator of Dwarf Fortress</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2334/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Dwarf Fortress 的共同创造者 Tarn Adams 对行业在 AI 和裁员问题上的处理方式表示不满，并指出他现在被迫讨论“矮人行为”，而不是不存在的“矮人 AI”概念。",
+  "oneSentenceSummary": "Dwarf Fortress 的共同创造者 Tarn Adams 对行业在 AI 和裁员问题上的处理方式表示不满，并指出他现在被迫讨论“矮人行为”，而不是不存在的“矮人 AI”概念。",
+  "summary": "在最近的一次采访中，Tarn Adams 批评了游戏行业的现状，特别是对 AI 术语的滥用和裁员的普遍现象。他指出，他不再被允许谈论“矮人 AI”，而必须专注于“矮人行为”，并描述这些行为有时会失常。",
+  "mainPoints": [
+    {
+      "point": "行业批评",
+      "explanation": "Adams 批评了游戏行业的当前做法，特别提到了由 AI 炒作和 CEO 驱动的裁员所造成的混乱。他暗示，对 AI 的关注往往是错误的或被夸大的。"
+    },
+    {
+      "point": "术语限制",
+      "explanation": "这段话揭示了对“矮人 AI”这一术语使用的限制。Adams 认为，这个术语并不能准确描述游戏的机制，现在他必须使用更一般的术语“矮人行为”。"
+    },
+    {
+      "point": "矮人行为的本质",
+      "explanation": "Adams 将游戏中的矮人行为描述为有时“失常”。这表明，游戏的模拟是由模仿自然行为的规则和算法驱动的，而不是由一个具体的 AI 实体驱动的。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"他们把字母从我这儿拿走了！我必须谈论*矮人行为*了。我甚至不能谈论矮人 AI。它不存在。是*矮人行为*，而且它们有时会失常。\"，\"explanation\":\"这是文章中的核心引用，Adams 明确说明了术语的变化，以及他对游戏模拟本质的看法。\"}"
+  ],
+  "tags": [
+    "Tarn Adams",
+    "Dwarf Fortress",
+    "游戏中的 AI",
+    "行业批评",
+    "行为建模"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 68,
+  "wordCount": 41,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788282071000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 01:01:11"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_871a65edaf",
+  "title": "碎片：9 月 1 日",
+  "url": "https://martinfowler.com/fragments/2026-09-01.html",
+  "date": "2026-09-02 03:50:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Like many readers, I’m wary of AI generated prose. Simon Wilison has written an <a href=\"https://tools.simonwillison.net/llm-cliche-highlighter#https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html\">LLM cliché highlighter</a> - paste in some text, or a URL, and it will flag various patterns common to LLMs. It references a <a href=\"https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing\">wikipedia page of signs of AI writing</a>. That page points out that:</p>\n  <blockquote>\n   <p>Humans are notoriously bad at distinguishing human and LLM-generated text. While research on humans’ abilities to detect AI-generated text is still limited, a 2025 study has shown that human ability to distinguish LLM text from human is no better than random chance. Another 2025 study on German theses has shown that humans managed a “recognition rate of 57% for AI texts and 64% for human-generated texts”.[</p>\n  </blockquote>\n  <p>Not just do I find myself repelled by prose with an LLM-voice, I also wonder how accurate my reaction is. I’m old enough to see all sorts of new tic-phrases appear, and in the past would just chalk it up to youngsters or airport business books. (Not to mention Americanisms, which I’ll get used to momentarily.)</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>NVIDIA’s technical blog reports on an <a href=\"https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/\">Architecture for Long-Horizon Autonomous Agents</a>. Their research group used a combination of Claude Opus 5 and a harness called AVO, and used it first to do GPU kernel optimization and then a broader reasoning benchmark (ARC-AGI-3). Both of these were long-term tasks, for the kernel optimization the agent ran for seven days.</p>\n  <blockquote>\n   <p>AVO is designed to preserve progress beyond a single model context. Two mechanisms are particularly important: persistent memory and supervision.</p>\n   <p>Persistent memory carries forward prior implementations, evaluation results, compiler and profiler outputs, and accumulated reasoning, allowing the agent to resume from the current state rather than repeatedly reconstructing the search.</p>\n   <p>The supervisor monitors the broader trajectory for stagnation or repeated unproductive cycles and can redirect the main agent toward alternative strategies when needed. During the seven-day attention-kernel run, the main agent remained responsible for deciding what to inspect, change, test, and evaluate, while the supervisor helped maintain forward progress when the search plateaued.</p>\n  </blockquote>\n  <p>The team was encouraged that AVO did well at two different kinds of long-horizon tasks, indicating that it’s a general-purpose tool.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p><a href=\"https://x.com/mickeynp/status/2092525399209058394\">Mickey Petersen</a>:</p>\n  <blockquote>\n   <p>MCP is SOAP for Zoomers.</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Paul Stack writes that <a href=\"https://stack72.dev/ai-broke-the-assumptions-behind-ci/\">AI Broke the Assumptions Behind CI</a>. Here’s his description of CI with agents.</p>\n  <blockquote>\n   <p>An agent writes a change, opens a PR, and CI picks it up instantly. The compile fails, the agent pushes a fix, CI picks it up instantly again. A test fails, another fix, another instant run. Each iteration is fast, but the agent is still discovering that its change doesn’t work only after it crosses the PR boundary. The feedback loop is in the wrong place regardless of how fast CI runs.</p>\n  </blockquote>\n  <p>He points out that all of this breaks the pipeline, because “CI” keeps failing, and advocates doing verification before the agent pushes. This is where I get to be the grumpy old guy, and point out that was <a href=\"https://martinfowler.com/articles/continuousIntegration.html#BuildingAFeatureWithContinuousIntegration\">always how Continuous Integration works</a>. When I’m done with a change, first I pull (to get everyone else’s change since I started), I build and test locally, and if all is well I push and let the CI server do its thing. The only reason the CI server should fail is if there’s some funky mismatch between my machine and the CI server. Tests that take a while to run aren’t part of this loop, instead they are run further down the <a href=\"https://martinfowler.com/bliki/DeploymentPipeline.html\">deployment pipeline</a>, downstream of CI. Any failures there imply missing tests in CI.</p>\n  <p>(I’m being a bit unfair dumping on this article here. After all I could have filled a full working day correcting misleading descriptions of Continuous Integration for most of the last twenty years. Maybe I’m just after an excuse to point readers to the <a href=\"https://martinfowler.com/delivery.html\">extensive range of articles</a> hosted here about what’s needed to get code from laptop to production.)</p>\n  <p>Stack is right that we should question how the deployment pipelines should work with agents in play. He’s also right that CI with humans relies on them being disciplined to run commit tests locally before pushing to the CI server - and that we can (and should) automate that when using agents. I also don’t know more about his setup than what he’s written in his post, so there’s likely complications he faces that I don’t understand. But when thinking about designing pipelines it’s important to understand the principles that underlie <a href=\"https://martinfowler.com/bliki/ContinuousDelivery.html\">Continuous Delivery</a>, understand how the practices really work, and understand why they are in place. Above all, Continuous Integration is a practice, not just the CI server. Yes, CI does conflate two jobs: executing verification and coordinating merges. But that’s the point: verification is a necessary part of merging if we want to retain a healthy <a href=\"https://martinfowler.com/articles/branching-patterns.html#mainline\">mainline</a>.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Recently Noah Smith posted an article about how he was worried about an <a href=\"https://www.noahpinion.blog/p/heres-how-were-all-going-to-die\">AI-generated super-virus savaging humanity</a>. It’s a worry I’ve heard a few times, seen as a greater concern than AI turning us into labradors or paper-clips. Claus Wilke, who works in the field, <a href=\"https://blog.genesmindsmachines.com/p/im-sorry-youre-not-going-to-die-from\">isn’t so concerned</a>.</p>\n  <blockquote>\n   <p>Computational design of biological systems is unfathomably difficult. Experts who have dedicated their life to this topic routinely hit their head against the wall when nothing they try seems to work. PhD students in 2026 using state-of-the-art AI software are spending months or years trying to design simple peptide binders that inhibit some enzyme or pull down some protein, and the majority of their designs fail, or don’t express, or are toxic. But in Smith’s fictitious world a disgruntled teenager with no special training in biology can just solve a problem thousands of times more complicated than designing a peptide binder. The distance between where we are today and where we would have to be for Smith’s story to have any realism is enormous.</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>It seems that a couple of remarkably talented academics are experts in a staggeringly wide range of fields. <a href=\"https://arxiv.org/pdf/2606.02184\">Or maybe they are just ghosts.</a></p>\n  <blockquote>\n   <p>These names do not exist. Elena Vasquez and Marcus Chen have appeared as volcano experts, astronauts, thriller protagonists, podcast hosts, and academic co-authors across hundreds of independently produced AI-generated documents, never having lived. We show that large language models do not merely default to high-probability individual names when generating fictional experts: they produce correlated character ensembles: pairs and trios whose co-occurrence rates far exceed chance and are consistent across independent generations.</p>\n  </blockquote>\n </body>\n</html>",
+  "aiSummary": "这组碎片探讨了近期 AI 安全漏洞的含义、政府干预科技公司的可能性、政治背书以及代理编程的演变景观。",
+  "oneSentenceSummary": "这组碎片探讨了近期 AI 安全漏洞的含义、政府干预科技公司的可能性、政治背书以及代理编程的演变景观。",
+  "summary": "文章首先讨论了区分 AI 生成文本与人类写作的挑战，指出当前检测方法不可靠。随后，它介绍了 NVIDIA 开发的长时程自主代理架构，该架构成功完成了 GPU 内核优化和推理基准测试等复杂任务。文章还触及了 MCP 与 SOAP 的比较、AI 对持续集成实践的影响，以及 AI 生成超级病毒造成全球灾难的低概率。最后，它强调了一项研究，该研究揭示了大型语言模型经常生成相互关联的、不存在的专家角色，而不是随机名称。",
+  "mainPoints": [
+    {
+      "point": "AI 生成文本难以与人类写作区分，当前检测率接近随机水平。",
+      "explanation": "文章引用了一项 2025 年的研究，显示人类识别 AI 生成文本的能力与抛硬币无异，这表明检测算法有很大改进空间，或者我们需要接受高质量 AI 输出的不可区分性。"
+    },
+    {
+      "point": "NVIDIA 的 AVO 架构证明了用于复杂问题解决的长时程自主代理是可行的。",
+      "explanation": "通过将 Claude Opus 5 与专用框架结合，NVIDIA 成功执行了 7 天的 GPU 内核优化任务，并在 ARC-AGI-3 基准测试中表现良好，证明了代理在长时间内保持连贯性和进步的可行性。"
+    },
+    {
+      "point": "AI 代理的集成正在扰乱传统的持续集成（CI）实践。",
+      "explanation": "文章认为，AI 代理的快速迭代速度导致它们过于频繁地向 CI 服务器推送更改，从而造成构建失败的积压。这表明需要将验证步骤移到更早的阶段，即代理提交更改之前。"
+    },
+    {
+      "point": "由于生物设计的复杂性，AI 生成超级病毒的风险目前可以忽略不计。",
+      "explanation": "虽然恶意的 AI 创建致命病毒是一个流行的恐惧，但实际上，即使是专家科学家也难以设计简单的生物组件。当前 AI 能力与工程化灾难性病毒之间的差距太大，这并不是一个重大的近期威胁。"
+    },
+    {
+      "point": "大型语言模型倾向于生成相互关联的、虚构的专家角色，而不是随机名称。",
+      "explanation": "一项研究发现，当被要求生成专家姓名时，模型经常输出成对或成组的角色（例如 Elena Vasquez 和 Marcus Chen），这些角色出现在多个无关的上下文中，这表明模型正在创建一个连贯的叙述或人物数据库，而不是独立采样。"
+    }
+  ],
+  "keyQuotes": [
+    "人类在区分人类和 LLM 生成的文本方面非常糟糕。虽然关于人类检测 AI 生成文本能力的研究仍然有限，但 2025 年的一项研究表明，人类区分 LLM 文本和人类文本的能力与随机猜测无异。",
+    "AVO 旨在超越单个模型上下文来保存进度。两个机制尤为重要：持久内存和监督。",
+    "MCP 是针对 Zoomer 的 SOAP。",
+    "代理编写更改，打开 PR，CI 立即接收。编译失败，代理推送修复，CI 再次立即接收。测试失败，另一个修复，另一个即时运行。每次迭代都很快，但代理仍然只在跨越 PR 边界后才发现其更改不起作用。",
+    "生物系统的计算设计极其困难。将一生奉献给这一话题的专家们经常发现，无论他们尝试什么，都似乎不起作用。",
+    "这些名字并不存在。Elena Vasquez 和 Marcus Chen 作为火山专家、宇航员、惊悚小说主角、播客主持人以及学术合作者，出现在数百份独立制作的 AI 生成文档中，但他们从未真正生活过。"
+  ],
+  "tags": [
+    "AI 安全",
+    "政府监管",
+    "政治背书",
+    "社交媒体",
+    "代理编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1082,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788292200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 03:50:00"
+}

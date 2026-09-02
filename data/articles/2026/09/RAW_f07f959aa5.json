@@ -1,0 +1,52 @@
+{
+  "id": "RAW_f07f959aa5",
+  "title": "为什么 AI 计算的通胀在企业账单上消失了",
+  "url": "https://dev.to/deanlee/why-ai-compute-deflation-vanishes-on-the-enterprise-invoice-39hg",
+  "date": "2026-09-02 01:04:16",
+  "author": "Dean Lee",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Every vendor in machine learning advertises price deflation. A million input tokens on a frontier API costs less than a third of what it cost eighteen months ago, and lightweight models have dropped even faster. Yet enterprise software budgets tell a contradictory story. Total compute bills for teams building agent pipelines or document extraction systems keep growing.</p>\n  <p>The gap between crashing token tariffs and stubborn IT invoices usually gets dismissed as simple Jevons paradox, where cheaper tokens induce more volume. But volume is only part of the mechanism. An empirical working paper by Louis Yiven Zhu at Oxford, \"The Price of Intelligence: A Quality-Adjusted Price Index for AI Services\" (arXiv:2608.29843), puts hard econometric structure around what is actually happening in the pricing of inference.</p>\n  <p>Zhu constructed a panel assembling 21,024 posted-price observations across 3,208 models and 86 cloud providers, joined to 4,605 benchmark evaluations. The goal was to build a hedonic price index for model intelligence, similar to how national statistical agencies construct quality-adjusted price indices for microprocessors, automobiles, or cloud storage.</p>\n  <p>When statistical agencies track software prices using standard matched-model methods, they follow the price of an identical SKU over time. Applied to Zhu's inference dataset, the matched-model method finds that inference prices fell at roughly 0.10 log points a year, or about 10%. That looks like mild deflation.</p>\n  <p>The reality looks completely different once you estimate a latent quality ladder from evaluation response patterns. On a quality-adjusted basis, the inference price index fell at 0.73 log points a year, an annual drop of roughly 52%. That means approximately 87% of the real deflation in machine intelligence is invisible to current national accounting methods.</p>\n  <p>The discrepancy comes from how frontier labs price new architectures. Providers rarely slash the price of an aging flagship model by 60% in place. Instead, they introduce a newer architecture that matches or exceeds the old flagship's benchmark score at a fraction of the operating cost, while retiring or deprioritizing the older SKU. Standard matched-model indices miss these discontinuous quality leaps because they compare existing SKUs against themselves.</p>\n  <p>The most striking finding in the paper concerns what happens when you switch from seller pricing to buyer expenditure. Counted per completed task, the buyer price stopped falling.</p>\n  <p>The divergence between token prices and task costs is driven by test-time compute. As labs shifted from single-turn generation to reasoning architectures and multi-step agent loops, models began consuming tokens at an exponential rate per successful answer. A task that once required 800 tokens on a standard model now consumes 15,000 tokens across internal scratchpads, self-critiques, and tool calls on a reasoning model. Even if the nominal price per token drops by half, an eighteen-fold expansion in token intensity raises the total cost of getting the correct output.</p>\n  <p>The seller experiences massive productivity gains and advertises deflation per unit of raw compute. The buyer receives higher task reliability, but the cash required to clear a business workflow remains flat or moves upward.</p>\n  <p>Zhu also ran a pre-registered validity audit on benchmark integrity that should worry anyone building quantitative models on public leaderboards. When he audited the dataset for contaminated benchmarks, removing tainted evaluations left the relative ranking of models virtually unchanged, with a rank correlation of 0.998. To a machine learning engineer glancing at a leaderboard, the evaluation looked rock-solid.</p>\n  <p>Yet that same contamination correction shifted the estimated quality-adjusted price index by 0.49 log points a year. Leaderboard stability is an ordinal property; economic statistics and hedonic deflators depend on cardinal distance. A benchmark that gives inflated scores to specific models distorts the estimated price of intelligence across the entire frontier, even while preserving the leaderboard order.</p>\n  <p>The steelman for declining inference costs is that model routing and distillation will eventually break this dynamic. If a company can route 90% of simple queries to tiny 3B-parameter models and reserve 120B reasoning engines for difficult edge cases, per-task expenditure should resume its downward trajectory. Many engineering teams are actively building those routing layers today.</p>\n  <p>The friction is that task difficulty is rarely known before execution. When workflows fail silently on cheaper models, teams default back to heavy reasoning models with wide token budgets to protect reliability. Until verification becomes cheap and autonomous, buyers will continue trading token efficiency for variance reduction.</p>\n  <p>For quants and enterprise operators, the takeaway is clear. Measuring AI cost trends through nominal API rate cards is an accounting error. If your models consume ten times more reasoning tokens to reduce error rates by two percentage points, the price of your end product has gone up, regardless of what the provider puts on their pricing page.</p>\n </body>\n</html>",
+  "aiSummary": "虽然名义上的代币价格在下降，但企业计算账单却在上升，这是因为现代推理模型和代理管道需要指数级增加的代币消耗。",
+  "oneSentenceSummary": "虽然名义上的代币价格在下降，但企业计算账单却在上升，这是因为现代推理模型和代理管道需要指数级增加的代币消耗。",
+  "summary": "文章解释了代币价格下降与企业计算成本上升之间的矛盾，这一现象由向推理架构的转变驱动。这些模型需要显著更多的代币来执行内部推理和错误检查，从而抵消了低廉的每代币价格带来的节省。此外，标准价格指数无法捕捉 AI 质量的真实通胀，因为它们没有考虑到新一代更高效模型取代旧模型的快速迭代。",
+  "mainPoints": [
+    {
+      "point": "代币价格与任务成本之间的差异是由测试时计算驱动的。",
+      "explanation": "随着模型从简单生成转向复杂推理任务，它们在每次成功回答中消耗的代币数量呈指数级增长。这种每任务代币强度的巨大增加意味着，即使每代币价格下降，完成业务工作流程的总成本仍然很高或在增加。"
+    },
+    {
+      "point": "标准匹配模型指数无法捕捉 AI 质量的真实通胀。",
+      "explanation": "国家会计方法追踪特定 SKU 的价格随时间的变化。然而，AI 提供商经常推出新的、更便宜的模型，这些模型在性能上优于旧模型。因为指数只比较相同模型的价格，所以它忽略了这些技术进步带来的显著成本节省。"
+    },
+    {
+      "point": "基准污染扭曲了经济估计。",
+      "explanation": "虽然移除被污染的基准对模型的相对排名（排行榜稳定性）影响不大，但它却显著改变了质量调整后的价格指数估计。这表明，虽然排行榜用于比较是有用的，但如果不考虑这些扭曲，它在计算精确经济指标方面是不可靠的。"
+    }
+  ],
+  "keyQuotes": [
+    "代币关税暴跌与顽固的 IT 账单之间的差距通常被视为简单的 Jevons 悖论，即更便宜的代币导致了更多的消耗。但消耗量只是机制的一部分。",
+    "该论文中最引人注目的发现是，当你从卖方定价切换到买方支出时会发生什么。按完成的任务计算，买方的价格停止下降。",
+    "卖方经历了巨大的生产力提升，并宣传了每单位原始计算的通胀。买方获得了更高的任务可靠性，但清除业务工作流程所需的现金仍然保持平稳或上升。"
+  ],
+  "tags": [
+    "AI 经济学",
+    "模型路由",
+    "推理模型",
+    "系统设计",
+    "AI 评估与基准"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 769,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788282256000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 01:04:16"
+}

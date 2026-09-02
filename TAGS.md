@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-02 06:12:07 | [返回首页](/README.md)
+**更新时间**: 2026-09-02 09:55:17 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15391)
+- [AI & 大模型](#ai-llm) (15432)
 - [软件架构](#architecture) (25)
 - [前端与全栈](#frontend-fullstack) (965)
-- [DevOps](#devops) (734)
-- [产品与商业](#product-business) (49)
-- [其他](#other) (6793)
+- [DevOps](#devops) (736)
+- [产品与商业](#product-business) (50)
+- [其他](#other) (6811)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [介绍基于-Gemini-的智能体视频理解](https://deepmind.google/blog/introducing-agentic-video-in-gemini/) - AI 精选
+- [通往-Astra：关键能力与前沿保障](https://openai.com/index/path-to-astra) - AI 精选
 - [开创全球首个双盲-AI-评估](https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/) - AI 精选
 - [更好的答案，更广阔的思考：学生从-ChatGPT-和批判性思维训练中获得什么](https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training) - AI 精选
 - [赋能关于人类如何使用-Claude-的独立研究](https://www.anthropic.com/research/enabling-independent-research) - AI 精选
@@ -40,10 +42,8 @@
 - [让知识蒸馏成本足够低，可实现规模化运行](https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation) - AI 精选
 - [随着网络防御窗口收窄，扩大-Daybreak-项目](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows) - AI 精选
 - [从-Kimi-K3-技术报告看前沿模型是如何炼成的](https://towardsdatascience.com/how-a-frontier-model-gets-built-read-from-the-kimi-k3-report/) - AI 精选
-- [涉及-OpenAI-模型的第三方网络安全评估](https://openai.com/index/third-party-cyber-evaluations-involving-openai-models) - AI 精选
-- [推理工程大师课-—-Philip-Kiely-与-Ali-Taha，Baseten](https://www.latent.space/p/inference-eng) - AI 精选
 
-- [查看全部 15391 篇...](/details/tags/ai-llm.md)
+- [查看全部 15432 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 734 篇...](/details/tags/devops.md)
+- [查看全部 736 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -150,6 +150,7 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [Quill-YC-W20-招聘全栈软件工程师](https://news.ycombinator.com/item?id=49524704) - 编程 更多
 - [为什么两种情绪会产生完全相同的生物信号](https://www.freecodecamp.org/news/how-wearables-confuse-different-emotions/) - 编程 更多
 - [Vercel-Connect-现在支持通过-CLI-为-100+-个连接器进行设置---Vercel](https://vercel.com/changelog/vercel-cli-100-services) - 编程 更多
 - [Release-0.12.0-·-astral-sh/uv](https://github.com/astral-sh/uv/releases/tag/0.12.0) - 编程 更多
@@ -157,9 +158,8 @@
 - [Castro-Podcasts-—-我做错的事：客户支持](https://www.uncommonapps.nyc/p/castro-podcasts-things-i-got-wrong-support) - 编程 更多
 - [Cycle-推出欧盟控制面板，主权争议持续](https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [2026-年最适合小企业的-11-款-CRM-|-Zapier](https://zapier.com/blog/best-crms-for-small-business) - 编程 更多
-- [深入-GitHub-Advisory-Database：当漏洞数量打破纪录时发生了什么](https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/) - 编程 更多
 
-- [查看全部 49 篇...](/details/tags/product-business.md)
+- [查看全部 50 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 
-- [查看全部 6793 篇...](/details/tags/other.md)
+- [查看全部 6811 篇...](/details/tags/other.md)
 
 

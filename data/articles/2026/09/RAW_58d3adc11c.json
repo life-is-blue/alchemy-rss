@@ -1,0 +1,51 @@
+{
+  "id": "RAW_58d3adc11c",
+  "title": "Codex 捆绑 LibreOffice",
+  "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+  "date": "2026-09-02 03:03:01",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">1st September 2026</p>\n   <div class=\"note\">\n    <p>I was poking around in my <code>~/.cache/</code> folder using <a href=\"https://www.omnigroup.com/more\">OmniDiskSweeper</a> when I spotted something interesting. The OpenAI Codex desktop app (since <a href=\"https://help.openai.com/en/articles/20001276-moving-to-the-new-chatgpt-desktop-app\">rebranded</a> to just ChatGPT) has 1.7GB of stuff in there in a folder called <code>codex-primary-runtime</code>, including a full Python installation, a full Node.js installation, and native binaries for <a href=\"https://poppler.freedesktop.org\">Poppler</a>, git, and the <a href=\"https://en.wikipedia.org/wiki/LibreOffice\">LibreOffice</a> open source office suite (which forked from OpenOffice.org in 2010):</p>\n    <p><img alt=\"Screenshot of a macOS disk usage app window in column view, titled &quot;/Users/simon/.cache - 442.1 GB&quot;. First column: 356.8 GB huggingface, 82.5 GB uv, 1.7 GB codex-runtimes (selected), 609.0 MB datasette-sqlite, 298.8 MB rod. Second column: 1.7 GB codex-primary-runtime (selected). Third column: 1.7 GB dependencies (selected), 6.3 MB plugins, 4.1 kB runtime.json. Fourth column: 771.0 MB native (selected), 446.4 MB node, 440.6 MB python, 28.7 kB bin. Fifth column: 429.7 MB libreoffice-headless (selected), 187.9 MB poppler, 148.1 MB git, 4.7 MB libheif, 679.9 kB jxrlib.\" src=\"https://static.simonwillison.net/static/2026/codex-primay-runtime.webp\"></p>\n    <p>The <code>~/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/documents</code> folder includes skills which tell Codex how to find and use those binaries.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/564/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI Codex 桌面应用包含一个 1.7GB 的运行时缓存，其中包含 Python、Node.js 和 LibreOffice 办公套件的完整安装，以及用于文档处理技能的 Poppler 和 git 原生二进制文件。",
+  "oneSentenceSummary": "OpenAI Codex 桌面应用包含一个 1.7GB 的运行时缓存，其中包含 Python、Node.js 和 LibreOffice 办公套件的完整安装，以及用于文档处理技能的 Poppler 和 git 原生二进制文件。",
+  "summary": "在探索 macOS 缓存目录时，我发现 OpenAI Codex 桌面应用程序（现已更名为 ChatGPT）存储了大量 1.7GB 的运行时依赖。这包括 Python 和 Node.js 的完整安装，以及 Poppler PDF 库、git 和 LibreOffice 办公套件的原生二进制文件。这些组件由该应用的“documents”插件使用，以实现高级文件处理功能。",
+  "mainPoints": [
+    {
+      "point": "Codex 桌面应用在用户的缓存目录中维护一个大型、自包含的运行时环境。",
+      "explanation": "该应用不依赖于系统范围的安装或云服务来执行每项任务，而是嵌入了自己版本的关键软件。这确保了一致性，并允许应用独立于用户本地软件配置运行。"
+    },
+    {
+      "point": "包含 LibreOffice 表明该应用能够处理多种文档格式。",
+      "explanation": "通过捆绑 LibreOffice，该应用不仅可以读取和操作标准文本文件，还可以处理复杂的办公文档（例如 .docx 或 .xlsx），并可能将它们转换为其他格式进行分析或显示。"
+    },
+    {
+      "point": "‘documents’ 插件利用这些捆绑的二进制文件执行特定任务。",
+      "explanation": "插件目录包含指令（技能），用于告诉应用如何查找和使用已安装的二进制文件。例如，它可能会使用 Poppler 进行 PDF 提取，并使用 LibreOffice 读取专有文档格式。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"OpenAI Codex 桌面应用（现已更名为仅 ChatGPT）在名为 `codex-primary-runtime` 的文件夹中拥有 1.7GB 的内容。\"，\"explanation\":\"该引用介绍了主要发现：存在一个用于 Codex/ChatGPT 应用的大型专用缓存文件夹，其中包含运行时环境。\"}",
+    "{\"quote\":\"`~/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/documents` 文件夹包含技能，用于告诉 Codex 如何查找和使用这些二进制文件。\"，\"explanation\":\"该引用解释了缓存的功能目的。它详细说明了应用的“documents”插件如何与存储的二进制文件交互来执行其操作。\"}"
+  ],
+  "tags": [
+    "OpenAI",
+    "Codex",
+    "LibreOffice",
+    "Python",
+    "Node.js"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 82,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788289381000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 03:03:01"
+}

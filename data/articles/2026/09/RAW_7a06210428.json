@@ -1,0 +1,54 @@
+{
+  "id": "RAW_7a06210428",
+  "title": "AI 不是万能药",
+  "url": "https://dev.to/nelson_amaya_16872e58232b/ai-is-not-a-magic-wand-36c9",
+  "date": "2026-09-02 02:32:47",
+  "author": "Nelson Amaya",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We are in an experimentation phase with AI. Expectations are sky-high, and as many people have observed, we may well be in a bubble.</p>\n  <p>Recent reports paint a sobering picture. RAND Corporation found that more than 80% of enterprise AI initiatives fail to deliver their intended business value, roughly double the failure rate of comparable non-AI IT projects. A separate MIT study found that 95% of generative AI pilots produce no measurable profit-and-loss impact. Gartner’s own survey of infrastructure and operations leaders found that only 28% of AI use cases fully succeed and meet ROI expectations, while 20% fail outright.</p>\n  <p>The reason most of these initiatives fail, in my opinion, is that organizations approach them technology-first. They buy subscriptions from a vendor like OpenAI or Anthropic, hand the tools to employees, and expect them to figure out what to do with them.</p>\n  <p>Employees learn to prompt the AI. They find it useful for drafting emails or analyzing data. But they never move beyond the chatbot.</p>\n  <p>SAFi takes the opposite stance. SAFi forces you to think about your processes before you can use it. At a minimum, you need a company charter, meaning a mission statement and core values, or a policy, before you can build an agent. Every SAFi agent needs a purpose, or, as we would say in philosophy, a teleology. You will know when you have not defined the agent’s teleology clearly, because the agent will be misaligned.</p>\n  <p>AGI, or Artificial General Intelligence, and the idea of AI agents being fully autonomous without people defining workflows and processes, is an illusion. You can tell the executives who have bought into the fantasy of autonomous AI because they start throwing terms around like “we are an AI-first company,” yada yada, when they themselves have not even used a chatbot.</p>\n  <p>That statement only makes sense when you are selling to other AI agents or machines. But when your audience and customers are people, human connection has to come first. A more accurate statement would be: we are a human organization empowered by AI.</p>\n  <p>When using SAFi, you need to step back and think about your workflows and the tasks you want to automate. You know, the things you wish you had an assistant for: daily reports, onboarding and offboarding processes, or any process you currently have. Once you have a mental picture of that process, or even better, have written it down, it becomes much easier to build an agent to automate most, if not all, of it.</p>\n  <p>You define the tools the agent will use and the data it will have access to, including read and write permissions. You do not simply let it run and expect the same result every time.</p>\n  <p>You always need to be in control, and SAFi gives you tools to do that. As a human, you possess abilities that nobody else can replace. Your messiness is not a defect. It is a feature. The routine and tedious work, however, is something you can offload to an agent.</p>\n </body>\n</html>",
+  "aiSummary": "文章认为，虽然 AI 具有巨大潜力，但其在企业的当前应用往往存在缺陷，因为缺乏适当的流程定义和人为监督，导致失败率高，代理与目标不一致。",
+  "oneSentenceSummary": "文章认为，虽然 AI 具有巨大潜力，但其在企业的当前应用往往存在缺陷，因为缺乏适当的流程定义和人为监督，导致失败率高，代理与目标不一致。",
+  "summary": "作者批评了企业中 AI 采用的现状，指出尽管炒作很多，但大多数项目都未能带来价值，因为它们是在没有明确战略或对底层流程理解的情况下实施的。文章提倡“流程优先”的方法，即组织在部署之前应先定义其工作流程和 AI 代理的特定用途，确保技术是用来增强人类能力，而不是盲目替代它们。",
+  "mainPoints": [
+    {
+      "point": "高失败率",
+      "explanation": "研究表明，超过 80% 的企业 AI 项目未能达到其目标，主要是因为公司在部署技术时，没有明确理解它如何融入现有运营。"
+    },
+    {
+      "point": "技术优先与流程优先",
+      "explanation": "许多组织急于购买 AI 订阅，并期望员工弄清楚如何使用，而不是先映射出需要自动化的具体流程。这导致使用效率低下，代理与目标不一致。"
+    },
+    {
+      "point": "自主性的幻觉",
+      "explanation": "完全自主的 AI 代理的概念具有误导性；实际上，这些系统需要大量的人为输入来定义其目的（目的论）和操作参数。如果没有这些指导，代理无法有效运行。"
+    },
+    {
+      "point": "以人为中心的 AI",
+      "explanation": "文章强调，AI 应被视为一种赋能人类工人的工具，而不是替代品。重点应该是自动化常规任务，以释放人类从事更复杂、更有创造性的工作。"
+    }
+  ],
+  "keyQuotes": [
+    "我认为，这些项目之所以大多失败，是因为组织在处理它们时是技术优先的。"
+  ],
+  "tags": [
+    "AI 战略",
+    "流程自动化",
+    "代理对齐",
+    "人机协作",
+    "业务转型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 503,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788287567000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 02:32:47"
+}

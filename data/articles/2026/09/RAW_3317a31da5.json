@@ -1,0 +1,50 @@
+{
+  "id": "RAW_3317a31da5",
+  "title": "OpenClaw 2.0 发布：简化设置，支持协同智能体",
+  "url": "https://www.infoq.com/news/2026/09/openclaw-2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-02 02:47:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>OpenClaw has released <a href=\"https://openclaw.ai/blog/openclaw-2-accidentally\">OpenClaw 2.0</a>, a major update to the open-source personal AI agent that changes its installation process, browser interface, memory, skills, automations, plugins, security, and collaboration features. The release corresponds to <a href=\"https://docs.openclaw.ai/releases/2026.8.1\">version 2026.8.1</a> and includes contributions from 933 developers across more than 16,000 pull requests.</p>\n   <p>One of the main changes is a simplified setup process. OpenClaw can now detect resources already available on a user's computer, including ChatGPT or Claude subscriptions, API keys, and locally installed models. The project has reduced the amount of configuration required during installation, moving additional setup into conversations with the agent after it starts running.</p>\n   <p>The <a href=\"https://docs.openclaw.ai/web/control-ui\">browser application</a> has also been rebuilt as a primary interface rather than a secondary control surface. Users now enter directly into a conversation with their agent and can configure it, monitor ongoing tasks, and interact with workflows from the same interface. The changes are intended to make the browser a complete way of operating OpenClaw without requiring users to manage most configurations separately.</p>\n   <p><a href=\"https://openclaw.ai/blog/openclaw-2-accidentally\">OpenClaw 2.0</a> also introduces <a href=\"https://docs.openclaw.ai/gateway/cloud-sessions\">shared cloud sessions</a> for collaborative agent workflows. Multiple users can participate in an existing agent session while retaining its context, allowing a task to be shared or handed from one person to another. This extends OpenClaw from primarily personal automation toward shared workflows for families and development teams.</p>\n   <p>The release retains OpenClaw's model-independent architecture. It can work with hosted models, existing AI subscriptions, API-based providers, and local models, while state can remain on infrastructure controlled by the user. OpenClaw also continues to support communication through channels including WhatsApp, Telegram, Discord, Slack, Signal, and iMessage.</p>\n   <p>OpenClaw operates in a growing category of persistent AI agents. <a href=\"https://hermes-agent.nousresearch.com/\">Hermes Agent</a> provides a similar open-source approach centered on persistent memory and cross-platform messaging, while managed systems such as <a href=\"https://openai.com/index/introducing-chatgpt-agent/\">ChatGPT Agent</a> and <a href=\"https://x.ai/bot\">Grok Bot</a> provide computer and browser-based task execution through vendor-hosted infrastructure. Workflow platforms such as <a href=\"https://openclawlaunch.com/blog/openclaw-n8n-integration-guide\">n8n</a> cover some of the same automation use cases but rely more heavily on explicitly configured triggers and workflows. OpenClaw's main architectural distinction remains its self-hosted, model-agnostic approach, leaving users responsible for more of the infrastructure and security configuration.</p>\n   <p>Initial <a href=\"https://x.com/openclaw/status/2094266903204434431\">community reaction</a> has been mixed. Some users reported smooth upgrades and welcomed the new release, while others experienced migration problems, broken gateways, lost automations, or model authentication issues after updating. Team-adjacent voices framed OpenClaw 2.0 as a landmark release after a long pause and a much larger rewrite than planned.</p>\n   <p>OpenClaw’s Chief Architect <a href=\"https://x.com/vincent_koc/status/2094288479874175062\">Vincent Koc</a> posted:</p>\n   <blockquote>\n    <p>We shipped the biggest lobster ever. 50% of all PRs since project inception in this one release. We waited till the experience on this was out of this world. From UI/UX to local model inference we are now building openclaw with openclaw.</p>\n   </blockquote>\n   <p>Meanwhile OpenClaw’s creator <a href=\"https://x.com/steipete/status/2094290652649636173\">Peter Steinberger</a> commented:</p>\n   <blockquote>\n    <p>Two months ago, we started the mission to “build OpenClaw with OpenClaw,” and bit by bit, we moved everyone from using their local coding harness to using http://team.openclaw.ai - our shared agent that knows what everyone’s working on and orchestrates it all. Multiplayer coding + infinite compute with nodes and cloud sessions has been a game changer for how we build. Local harnesses feel like relics of the past now.</p>\n   </blockquote>\n   <p>The release follows an unusually long development period for the project. OpenClaw says it previously shipped 106 releases over 230 days, but development of this update lasted nearly seven weeks as changes originally focused on installation and the browser interface expanded into a broader restructuring of the project.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenClaw 2.0 Releases with Simplified Setup and Collaborative Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/openclaw-2-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1788288420000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenClaw 2.0 引入了简化的安装流程、用于智能体交互的统一浏览器界面，以及对共享云会话的支持，从而实现了协同工作流程，同时保持了其模型无关的架构。",
+  "oneSentenceSummary": "OpenClaw 2.0 引入了简化的安装流程、用于智能体交互的统一浏览器界面，以及对共享云会话的支持，从而实现了协同工作流程，同时保持了其模型无关的架构。",
+  "summary": "OpenClaw 2.0 是对开源个人 AI 智能体的一次重大升级，重点关注用户体验和协同能力。该更新通过自动检测可用资源来简化初始设置，并减少了手动配置的需求。浏览器应用现已成为主要控制界面，允许用户在一个地方管理对话、任务和工作流程。此外，共享云会话的引入促进了团队自动化，将智能体的用途扩展到个人使用之外。",
+  "mainPoints": [
+    {
+      "point": "简化的安装和配置",
+      "explanation": "OpenClaw 2.0 通过自动化现有 AI 资源（例如 ChatGPT 订阅或本地模型）的检测，并最大限度地减少所需的初始设置，从而降低了入门门槛。这使用户能够更快地开始与智能体交互，而进一步的自定义可以通过对话界面进行。"
+    },
+    {
+      "point": "统一的浏览器界面",
+      "explanation": "浏览器应用已被改造为一个全面的控制中心。用户现在可以从一个单一的集成仪表板访问所有智能体功能——包括对话、任务监控和工作流程配置——从而无需在多个窗口或应用之间切换。"
+    },
+    {
+      "point": "引入共享云会话",
+      "explanation": "该版本的一个关键特性是创建共享云会话的能力。这使多个用户能够协同工作于同一个智能体实例，实时共享上下文和任务，这对于团队开发或家庭自动化场景特别有用。"
+    }
+  ],
+  "keyQuotes": [
+    "我们发布了有史以来最大的龙虾。自项目成立以来，50% 的所有 PR 都包含在这个版本中。我们一直等到 UI/UX 和本地模型推理方面的体验都达到了超凡脱俗的水平，然后才用 openclaw 构建 openclaw。"
+  ],
+  "tags": [
+    "OpenClaw",
+    "AI 智能体",
+    "协同工作流程",
+    "模型无关",
+    "云会话"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 573,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788288420000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 02:47:00"
+}

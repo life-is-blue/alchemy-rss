@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9dc3a83902",
+  "title": "East River Source Control 任命 Jujutsu 创作者 Martin von Zweigbergk 为首席技术官 // ERSC",
+  "url": "https://ersc.io/blog/martin-joins-ersc",
+  "date": "2026-09-02 01:46:21",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"display: contents\">\n   <!--[-->\n   <!--[-->\n   <!--[0-->\n   <!--[-->\n   <!---->\n   <div class=\"mx-auto mt-16 flex w-full max-w-5xl flex-col rounded-[1px] bg-white shadow-[0_0_0_8px_#0000000C] 2xl:mt-32\">\n    <!---->\n    <!--[-->\n    <!--[-1-->\n    <!--[-->\n    <!---->\n    <main class=\"flex flex-col keylines\">\n     <section class=\"space-y-6 px-5 py-6\">\n      <div class=\"typeset max-w-prose\">\n       <!--[-->\n       <h4>NEW YORK (September 1, 2026), FOR IMMEDIATE RELEASE</h4>\n       <p>East River Source Control has appointed Martin von Zweigbergk, creator of the Jujutsu version control system, as chief technology officer, to lead engineering on the company’s next generation version control platforms.</p>\n       <p>von Zweigbergk began Jujutsu as a side project in late 2019 and turned it into his full-time work at Google. The project has more than 30,000 stars on GitHub and ships under the Apache 2.0 license.</p>\n       <p>Before Jujutsu, he worked on Fig, the Mercurial client that gave Google engineers a distributed workflow on top of Piper, the monorepo holding most of the company’s code. He also contributed to Git, which according to the <a href=\"https://survey.stackoverflow.co/2022/#version-control-version-control-system-prof\" rel=\"nofollow\">2022 Stack Overflow developer survey</a>, 96% of developers use professionally.</p>\n       <blockquote>\n        <p>The hard problems many engineering teams are just beginning to face are ones he’s already been working on for over a decade. Having Martin lead our engineering affords ERSC a wholly different level of technical capability as an organization.</p>\n       </blockquote>\n       <p><strong>— Benjamin Brittain</strong>\n        <br>\n        &nbsp;&nbsp;&nbsp;&nbsp; co-founder and chief executive officer of East River Source Control.</p>\n       <p>The company is building tools to help organizations manage the exponentially increasing needs of their source code management and collaboration tools brought about by the way AI is re-shaping the software industry. ERSC Storage will be entering private beta later this month.</p>\n       <p>von Zweigbergk will continue to be a core maintainer of JJ as an open source project under the Apache 2.0 license.</p>\n       <blockquote>\n        <p>Jujutsu improves the part of version control that sits on your laptop. But the remote server is still Git, which has a ceiling that comes fast for products at scale. We think the storage layer has to change to match the model, and that work can be better supported by a company than an open source project.</p>\n       </blockquote>\n       <p><strong>— Martin von Zweigbergk</strong>\n        <br>\n        &nbsp;&nbsp;&nbsp;&nbsp; chief technology officer of East River Source Control.</p>\n       <hr>\n       <h3>About East River Source Control</h3>\n       <p>East River Source Control is building the next generation of version control platforms for humans and machines. The company launched in 2025, backed by <a href=\"https://www.amplifypartners.com/\" rel=\"nofollow\">Amplify Partners</a>. For more information, visit <a href=\"https://ersc.io/\" rel=\"nofollow\">ersc.io</a>.</p>\n       <!--]-->\n      </div>\n     </section>\n     <a href=\"https://ersc.io/blog\" class=\"block bg-neutral-400 p-5 font-medium hover:bg-blue-700 hover:text-white\">← All posts</a>\n    </main>\n    <!--]-->\n    <!--]-->\n    <!--]-->\n    <!---->\n    <!---->\n   </div>\n   <!--[-1-->\n   <!--]-->\n   <!--]-->\n   <!--]-->\n   <!--]-->\n   <!---->\n   <!--[-1-->\n   <!--]-->\n   <!--]-->\n  </div>\n </body>\n</html>",
+  "aiSummary": "East River Source Control (ERSC) 任命 Jujutsu 创作者 Martin von Zweigbergk 为 CTO，旨在开发面向 AI 时代的下一代版本控制平台。",
+  "oneSentenceSummary": "East River Source Control (ERSC) 任命 Jujutsu 创作者 Martin von Zweigbergk 为 CTO，旨在开发面向 AI 时代的下一代版本控制平台。",
+  "summary": "由风险投资支持的初创公司 East River Source Control (ERSC) 已任命 Jujutsu (JJ) 版本控制系统的创作者、前 Google 工程师 Martin von Zweigbergk 为首席技术官。von Zweigbergk 在 Fig 的开发以及对 Git 的贡献方面拥有丰富经验。ERSC 旨在解决由 AI 驱动的软件开发所加剧的源代码管理扩展问题，特别是专注于演进版本控制的存储层。von Zweigbergk 在领导 ERSC 工程工作（包括即将推出的 ERSC Storage 私测）的同时，将继续担任开源项目 Jujutsu 的核心维护者。",
+  "mainPoints": [
+    {
+      "point": "任命 Martin von Zweigbergk 为 CTO",
+      "explanation": "Jujutsu 的创作者以及 Google 版本控制基础设施 (Fig， Git) 的资深专家将领导 ERSC 的工程团队，以提升公司的技术能力。"
+    },
+    {
+      "point": "解决 AI 时代的「Git 天花板」问题",
+      "explanation": "ERSC 认为，虽然像 Jujutsu 这样的工具改善了本地工作流，但目前由 Git 主导的远程存储层无法扩展到满足现代 AI 重塑的软件工业需求。"
+    },
+    {
+      "point": "战略重心聚焦于存储层",
+      "explanation": "公司正在开发 「ERSC Storage」 以替代或增强传统的远程服务器，并主张这种底层基础设施的变革由公司实体支持比纯开源项目更有效。"
+    },
+    {
+      "point": "对开源的承诺",
+      "explanation": "尽管加入了 ERSC，von Zweigbergk 将继续维护 Jujutsu 作为一个采用 Apache 2.0 协议的开源项目。"
+    }
+  ],
+  "keyQuotes": [
+    "许多工程团队刚刚开始面对的难题，正是他已经研究了十多年的问题。",
+    "但远程服务器仍然是 Git，对于大规模产品来说，Git 的天花板很快就会出现。我们认为存储层必须随之改变以匹配模型，而这项工作由一家公司支持会比由一个开源项目支持得更好。"
+  ],
+  "tags": [
+    "开发者工具",
+    "开源",
+    "版本控制",
+    "初创公司",
+    "AI 工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 76,
+  "wordCount": 345,
+  "domain": "ersc.io",
+  "category": "Programming_Technology",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788284781000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-02 01:46:21"
+}
