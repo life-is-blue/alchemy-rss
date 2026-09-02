@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-02 09:55:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-02 14:38:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3739,41 +3739,31 @@
 
 ### [Bitwarden-vs-Proton-Pass：哪款零知识密码管理器更适合你的-2026-安全栈？](https://dev.to/roberts_jakuko_fbc04cb38/bitwarden-vs-proton-pass-which-zero-knowledge-password-manager-fits-your-2026-security-stack-54ei)
 
-2026-09-02 01:09:20 | 标签: 密码管理, 零知识加密, FIDO2 密钥, 自托管, 电子邮件别名
-
-> 2026 年的密码管理领域需要强大的保护来抵御基于凭证的攻击。Bitwarden 和 Proton Pass 都提供零知识加密和 FIDO2 密钥支持，但它们在部署灵活性和功能集成方面有所不同。Bitwarden 在自托管和企业目录集成方面表现出色，而 Proton Pass 则提供了无缝的电子邮件别名和统一的隐私生态系统。本文重点介绍了每个平台的优势，以指导有关安全凭证管理的明智决策。
+2026-09-02 01:09:20
 
 
 
 ### [Google-Workspace-推出图像创作编辑工具-Google-Pics-·-AIHOT](https://aihot.virxact.com/items/cmtivvilg06f0ro9yk5dt7mrc)
 
-2026-09-02 00:00:00 | 标签: 图像生成, 图像编辑, Google Workspace, Nano Banana, 对象分割
-
-> Google Pics 是 Google Workspace 的新图像创作编辑工具，基于 Nano Banana 模型构建，提供精准的图像生成和编辑控制。它支持对象分割、图像内文本编辑、协作共享，以及多版本生成。该工具将集成到 Slides、Docs 和 Drive 中，让用户在现有工作环境中直接创建和编辑图像，无需切换应用或标签页。
+2026-09-02 00:00:00
 
 
 
 ### [我们对缺失值的误解](https://towardsdatascience.com/what-we-miss-about-missing-values/)
 
-2026-09-01 22:00:02 | 标签: 数据科学, 机器学习, 因果推断, 统计学, 缺失值
-
-> 作者挑战了将缺失值视为可简单丢弃或填充的麻烦的常见做法。通过探讨 Rubin 的框架（MCAR、MAR 和 MNAR），文章解释了缺失过程如何往往编码关于所研究现象的重要信息。它回顾了几种先进的处理方法——包括 Heckman 的选择模型、逆概率加权（IPW）、多重插补和敏感性分析——同时强调，方法的选择必须与分析师的目标一致。具体而言，它区分了推断目标（其中缺失是需要控制的偏差源）和预测目标（其中缺失模式本身可以作为强大的预测信号）。
+2026-09-01 22:00:02
 
 
 
 ### [路透社调查：美国-AI-数据中心现大量幽灵用电需求，得州等多州出手整治-·-AIHOT](https://aihot.virxact.com/items/cmtipeu1u01a2ro9yi22t9cev)
 
-2026-09-01 20:40:19 | 标签: 数据中心, 电网规划, 人工智能, 能源需求, 监管政策
-
-> 为应对数据中心用电需求激增带来的电网规划混乱，得州成为首个暂停新数据中心接入并展开调查的州。路透社调查显示，美国中西部、中大西洋和南部地区的数据中心用电申请已超过 700 吉瓦，远超实际需求，其中许多申请可能重复或缺乏执行能力。公用事业公司在实施更严格的担保要求后，部分需求已消失。得州和宾夕法尼亚州等地区正在制定规则，筛选真实项目，防止推高电价和电网不稳定。
+2026-09-01 20:40:19
 
 
 
 ### [超越点预测：贝叶斯神经网络实用指南](https://towardsdatascience.com/beyond-point-predictions-a-practical-introduction-to-bayesian-neural-networks/)
 
-2026-09-01 20:30:02 | 标签: 贝叶斯神经网络, 不确定性量化, 变分推断, TensorFlow Probability, 机器学习
-
-> 文章解释了传统神经网络仅输出点估计而无法传达不确定性的局限性，并引入贝叶斯神经网络 (BNNs) 作为解决方案。文中涵盖了认知不确定性与偶然不确定性之间的哲学区别，并指出两者在实践中在数学上是交织在一起的。作者详细介绍了如何使用 TensorFlow Probability 和 Keras 在加州房价数据集上实现 BNN，讨论了关键的设计选择，如先验分布的选择（高斯分布 vs 拉普拉斯分布）、平均场假设与全协方差矩阵的对比，以及 KL 退火。文章强调，虽然精确的贝叶斯推断在计算上是不可行的，但使用 ELBO 目标的变分推断提供了一种实用的近似方法。提供的 Notebook 重点展示了工程挑战而...
+2026-09-01 20:30:02
 
 
 
@@ -16019,105 +16009,79 @@
 
 ### [Movie-Scene-Map-—-电影与电视剧真实拍摄地地图](https://moviescenemap.com/)
 
-2026-09-02 00:34:45 | 标签: 影视, 开源数据, 交互式地图, Wikidata, 数字人文
-
-> Movie Scene Map 为全球 166 个国家的 15，565 个拍摄地点提供了全面的交互式可视化呈现。该项目主要基于 Wikidata 和 Wikimedia Commons 构建，标注了 9，287 部作品中所使用的制片厂、地标和自然景观，并涵盖了 2，500 多部电子游戏、动漫和漫画的叙事设定。该平台通过区分结构化的 Wikidata 陈述与较弱的 Wikipedia 句子证据来强调数据的完整性，并以 CC0 GeoJSON 或 CSV 格式提供全量数据集下载，同时为 AI 助手提供 MCP 接口。
+2026-09-02 00:34:45
 
 
 
 ### [使用中的服务处理与-ERROR_PACKAGES_IN_USE-——-深入解析-MSIX](https://devblogs.microsoft.com/insidemsix/msix-servicing-while-in-use)
 
-2026-09-02 00:00:54 | 标签: MSIX, Windows 开发, 开发者工具, API 设计, 包管理
-
-> MSIX 遵循一个核心原则：不在包使用期间进行服务，以避免干扰运行中的进程。当部署操作（更新、删除或修复）遇到正在运行的应用程序时，默认会触发 ERROR_PACKAGES_IN_USE (0x80073D02) 错误。为了解决此问题，开发者可以使用 `ForceTargetAppShutdown` 选项强制关闭应用程序，或选择延迟服务。延迟服务可以通过 AppxManifest.xml (uap17:UpdateWhileInUse) 或在运行时通过 API 进行配置，允许 Windows 在包不再活跃时完成操作。文章还涵盖了延迟删除以及如何检测待处理的注册项。
+2026-09-02 00:00:54
 
 
 
 ### [今天我将...-审查-GitHub-PR---Visual-Studio-博客](https://devblogs.microsoft.com/visualstudio/today-i-will-review-github-prs)
 
-2026-09-02 00:00:27 | 标签: GitHub, Visual Studio, 代码审查, 拉取请求, 开发者工具
-
-> 该帖子指导开发者使用 Visual Studio 审查 GitHub 拉取请求。它涵盖了打开 PR 列表、导航带有语法高亮的差异文件、添加内联注释，以及批准/合并更改。文章还重点介绍了与 GitHub Copilot 的集成，允许用户将 PR 作为上下文添加到 AI 辅助的代码审查和分析中。
+2026-09-02 00:00:27
 
 
 
 ### [墨萃-·-InkGist-–-帮你处理看不完，舍不得关的标签页](https://www.appinn.com/inkgist/)
 
-2026-09-01 23:49:13 | 标签: 网页总结, 书签管理, 工作流, 卡片式UI, 自托管
-
-> 墨萃（InkGist）旨在解决用户因打开过多标签页而产生的焦虑，通过快速总结网页内容，帮助用户决定是否需要收藏。它以卡片形式显示总结，包括核心功能说明和待办行动指南，并提供书签页面用于保存和管理链接。用户可以批量导出内容为 HTML、Markdown 或同步到 Karakeep，从而构建一个高效的网页处理工作流。
+2026-09-01 23:49:13
 
 
 
 ### [如何保护你的网络浏览隐私](https://www.freecodecamp.org/news/how-to-protect-your-privacy-while-browsing-the-web/)
 
-2026-09-01 23:49:07 | 标签: 隐私, 安全, 浏览, VPN, 追踪器
-
-> 本文全面介绍了网络浏览的隐私保护策略。首先强调了选择安全浏览器和调整隐私设置以最小化数据共享的重要性。接着，指南涵盖了使用内容拦截器阻止追踪、VPN 隐藏 IP 地址的好处，以及保护搜索历史和 DNS 配置的必要性。此外，还建议清理在线账户，并理解这些保护措施的局限性。
+2026-09-01 23:49:07
 
 
 
 ### [如何使用-Jetpack-Compose-构建可访问的-Android-应用：一份综合指南](https://www.freecodecamp.org/news/accessibility-in-jetpack-compose-comprehensive-tutorial/)
 
-2026-09-01 23:46:00 | 标签: 可访问性, Jetpack Compose, Android 开发, 语义, TalkBack
-
-> 文章首先强调了现代 Android 开发中可访问性的重要性，引用了全球残障统计数据和法律要求，例如欧洲可访问性法案。随后，它深入探讨了 Android 可访问性的核心概念，解释了语义树如何与 UI 树并行工作，为辅助技术提供元数据。指南涵盖了编写有意义的内容描述、确保最小触摸目标尺寸以及管理焦点顺序等基本实践。还探索了高级技术，包括处理动态状态变化、创建自定义可访问性动作以及优化开关访问。文章最后通过一个实际的 UI 模式示例和一份详细的合规性审计清单来总结。
+2026-09-01 23:46:00
 
 
 
 ### [理解-CAP-定理：系统设计中的一致性、可用性和分区容错](https://www.freecodecamp.org/news/understanding-the-cap-theorem-consistency-availability-and-partition-tolerance-in-system-design/)
 
-2026-09-01 23:39:07 | 标签: CAP 定理, 分布式系统, 一致性, 可用性, 分区容错
-
-> CAP 定理由 Eric Brewer 于 1999 年提出，并由 Gilbert 和 Lynch 于 2002 年证明，它断言分布式数据存储无法同时实现强一致性、高可用性和分区容错。由于网络分区在分布式系统中是不可避免的，因此选择通常归结为优先考虑一致性（在分区期间拒绝读取以确保数据准确性）或可用性（提供可能过时的但可用的数据）。现实中的系统，如 Cassandra（AP）和 ZooKeeper（CP），体现了这些权衡，而其他系统，如 DynamoDB 和 Spanner，则提供可调的一致性级别，以平衡运营需求。该定理仍然是构建弹性分布式系统的基础指南。
+2026-09-01 23:39:07
 
 
 
 ### [学习-Excel-公式和函数](https://www.freecodecamp.org/news/learn-excel-formulas-and-functions/)
 
-2026-09-01 23:03:24 | 标签: Excel, 数据分析, 电子表格, 公式, 函数
-
-> 课程涵盖广泛的 Excel 主题，包括单元格引用、逻辑运算（IF、AND、OR）、数据聚合、现代查找（XLOOKUP、INDEX、XMATCH）、文本和日期处理，以及动态数组函数（FILTER、SORT、UNIQUE）。课程强调动手实践，帮助学生成为熟练的电子表格用户。
+2026-09-01 23:03:24
 
 
 
 ### [如何测试响应式断点下的图像质量，再进行发布](https://www.sitepoint.com/how-to-test-image-quality-across-responsive-breakpoints-before-you-ship/?utm_source=rss)
 
-2026-09-01 23:00:10 | 标签: 前端与网页, 开发者工具, 性能优化, 响应式网页设计, 图像优化
-
-> 作者认为，响应式图像往往被视为一个简单的优化问题，但实际上需要严格的前端 QA，以确保它们在每个渲染尺寸下都看起来不错。该指南概述了一个实用的工作流程：确定最大的合理渲染尺寸、测试实际的设计断点、考虑设备像素比（DPR），以及通过 DevTools 验证浏览器下载的具体文件。它区分了分辨率（像素数）和艺术指导（构图），提供了低分辨率源的补救策略（包括对技术资产的 AI 放大），并将性能指标（如最大内容绘制时间 LCP）和网络节流集成到验证过程中。文章最后提供了一个详细的图像 QA 检查清单，帮助从“看起来还行”的随意方法转变为系统性的工程流程。
+2026-09-01 23:00:10
 
 
 
 ### [Brickbuilder-合作伙伴网络的新分级体系：面向-ISV-和数据提供商](https://www.databricks.com/blog/new-brickbuilder-partner-network-tiers-isvs-and-data-providers-are-here)
 
-2026-09-01 22:00:00 | 标签: 合作伙伴计划, ISV, 数据提供商, 良好架构框架, GTM 战略
-
-> Brickbuilder 合作伙伴网络现已采用结构化的分级系统，从五个关键方面评估合作伙伴：影响力、技术卓越、战略一致性、准备度以及 GTM 和联合销售。这一透明的框架使客户能够轻松识别高质量、集成良好的解决方案，同时为合作伙伴提供了明确的成长路线图，以加强与 Databricks 的合作。
+2026-09-01 22:00:00
 
 
 
 ### [使用-iOS-版-Firefox-的广告拦截功能减少杂乱与干扰-|-The-Mozilla-Blog](https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/)
 
-2026-09-01 21:46:49 | 标签: 开发者工具, 数字隐私, 移动开发, 开源, Apple
-
-> Mozilla 为 iOS 版 Firefox 推出了内置的广告拦截功能，旨在帮助用户减少第三方广告和追踪器的干扰。由于 iOS 对扩展程序的限制与桌面端或 Android 不同，Mozilla 利用 Apple 的 WebKit Content Blocker 技术和 EasyList 过滤列表将该功能直接集成到浏览器中。该功能默认关闭，且不会拦截第一方广告、搜索结果广告或 Firefox 自身的赞助快捷方式。它与增强跟踪保护等现有隐私工具相辅相成。
+2026-09-01 21:46:49
 
 
 
 ### [Fernando-Simões：无需预读的-io_uring](https://frn.sh/io-uring/)
 
-2026-09-01 21:19:12 | 标签: io_uring, 性能优化, 数据库内核, O_DIRECT, 系统设计
-
-> 作者研究了 Turso 中 io_uring 后端的性能，特别是使用 O_DIRECT 时预读的影响。由于 O_DIRECT 会禁用内核预读，作者实现了应用层预取以增加并发。分析表明，虽然预读增加了提交的 SQE 数量，但它允许内核合并相邻扇区，从而显著减少了设备请求。文章还探讨了 SQ 轮询（sqpoll）的 CPU 开销，并假设 io_uring (O_DIRECT) 与系统调用（缓冲 I/O）之间的性能差距，部分源于缺少在内核到用户空间复制步骤中通常发生的 CPU 缓存预热。
+2026-09-01 21:19:12
 
 
 
 ### [如何利用-Zstandard-和-Pingora-节省-PB-级的缓存存储](https://blog.cloudflare.com/cache-transcoding/)
 
-2026-09-01 21:02:13 | 标签: 缓存, 压缩, 实习经历, 性能, Pingora
-
-> 本文介绍了一项概念验证实验，其中 Cloudflare 使用 Zstandard 压缩 HTTP 缓存响应，然后再进行存储。该方法在特定数据集上实现了 75% 的存储空间节省，表明通过实施这种压缩策略，可以大幅降低缓存存储成本。
+2026-09-01 21:02:13
 
 
 
@@ -40901,11 +40865,11 @@
 
 
 
-### [机器人的终局：英伟达-Jim-Fan-宣告-VLA-时代结束，WAM-登场](https://baoyu.io/blog/robotics-end-game-nvidias-jim-fan)
+### [裁员潮将持续，直到我们学会发掘-AI-的商业价值](https://baoyu.io/translations/2026-05-10/championswimmer-2051807284691612099)
 
 2026-05-10T00:00:00.000Z
 
-> Jim Fan 在 AI Ascent 演讲中宣布 VLA 路线过时，提出以世界动作模型（WAM）为核心的新范式，并预测 2040 年到达机器人终局。
+> AI 没有直接替代某个岗位，却通过 Token 成本、代码投入膨胀和组织对齐税，把企业推向新一轮裁员。
 
 
 
