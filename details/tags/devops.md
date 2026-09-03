@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-03 10:00:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-03 14:50:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -326,9 +326,7 @@
 
 ### [Astral-uv-与-Poetry：哪个-Python-包管理器更适合你的-2026-开发者工作流？](https://dev.to/roberts_jakuko_fbc04cb38/astral-uv-vs-poetry-which-python-package-manager-fits-your-2026-developer-workflow-60d)
 
-2026-09-03 04:16:04 | 标签: Python, 包管理, Astral uv, Poetry, DevOps
-
-> 本文对 Astral uv 和 Poetry 这两款主流 Python 包管理器进行了详细对比，深入分析它们的架构设计、性能特征及 2026 年工作流中的实际权衡。uv 采用 Rust 编写，基于 PubGrub 算法，通过并行化元数据查询和延迟 HTTP 范围下载，实现了比 pip 快 10 到 100 倍的解析速度。其基于内容寻址的缓存配合硬链接技术，可在不到 50ms 内创建全新的虚拟环境，且不会重复占用磁盘空间。Poetry 则是纯 Python 应用，依赖自定义 SAT 求解器，并将文件物理复制到每个环境中。在标准合规性方面，uv 严格遵循 PEP 621 的 [project] 表...
+2026-09-03 04:16:04
 
 
 
@@ -640,9 +638,7 @@
 
 ### [TeamCity-2026.2：Pipelines-正式可用、AI-助手-BYOK-支持以及更多内容](https://blog.jetbrains.com/teamcity/2026/09/teamcity-20262/)
 
-2026-09-02 22:38:38 | 标签: 云原生 / DevOps, 开发者工具, MCP 协议, CI/CD, TeamCity
-
-> TeamCity 2026.2 是一次重要的本地部署版本更新，将 Pipelines 从早期访问阶段正式推出，适用于所有规模的项目。核心改进包括：编辑模式下的分支选择器、保护分支编辑警告、上游依赖失败时仍可运行作业的功能、用于复用旧构建制品的 promote 功能、无需完整流水线即可单独调试单个作业，以及不需要 VCS 根目录的无绑定流水线，使 Pipelines 在功能上与经典构建配置更加接近。AI 方面，AI 助手新增自带密钥（BYOK）支持，用户可接入 Anthropic、OpenAI、Google Gemini 或其他支持的 LLM 模型。MCP 工具扩展了三个新的流水线管理工具（GE...
+2026-09-02 22:38:38
 
 
 
