@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-03 07:42:44 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-03 10:00:50 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -753,6 +753,38 @@
 ### [FastRTC：用于-Python-的实时通信库](https://huggingface.co/blog/fastrtc)
 
 2025-02-25 00:00:00
+
+
+
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+
+2026-09-02 23:00:09 | 标签: Node.js, 后端开发, API 设计, 代码质量, 安全
+
+> 本文主张代理配置应位于基础设施层，而非渗入应用逻辑。以 Node.js 和 Undici 为基础，文章演示了如何利用 ProxyAgent dispatcher 构建单一的 HTTP 客户端边界，通过环境配置表示路由模式（直连 vs 代理），并将凭据移出源代码。除核心抽象外，文章还涵盖了全面的生产级考量：保障会话连续性的稳定路由、避免无限重试的稳定超时机制、带随机抖动的退避算法、合规的速率限制、将重试策略与业务逻辑分离的结构化日志（避免凭据泄露）、用于可追溯性的逐请求 ID、区分代理故障与目标响应的错误分类，以及将单元测试与实际代理基础设施隔离、通过集成测试验证路由层本身的测试策略。文章最后提...
+
+
+
+### [如何在不离开办公桌的情况下测试地理位置依赖型-Web-应用](https://www.sitepoint.com/how-to-test-geo-dependent-web-apps-without-leaving-your-desk/?utm_source=rss)
+
+2026-09-02 23:00:09 | 标签: 测试与质量, 前端与 Web, 开发者工具, API 设计, 云原生与 DevOps
+
+> 本文探讨了位置感知 Web 应用的测试挑战：这类应用会根据 IP 地址、浏览器地理定位、账号设置和语言偏好等地理位置信号呈现不同行为。文章首先对应用判断用户位置的方式进行了分类，随后提出了一种结构化方法：构建区域测试矩阵，将各区域映射到预期的货币、语言和行为。指南推荐使用 Playwright 和 Selenium 等浏览器自动化工具配合 ISP 代理，在保持会话稳定性的同时模拟来自特定网络的请求。关键实践包括：将代理配置与测试逻辑分离、安全地管理凭据、在测试运行前验证出口位置，以及测试冲突信号组合（如德国 IP 配合美国浏览器坐标）。文章还涵盖了与缓存相关的区域 Bug（CDN 缓存键、Va...
+
+
+
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+
+2026-09-02 23:00:09 | 标签: Google, 自动化, Webhooks, 客户反馈, API 设计
+
+> 本指南解释了如何将 Google 评论请求自动化，在订单或服务标记为完成的事件中集成该请求。文章认为，人工触发的方式不可靠，而 webhook 风格的触发器应在客户实际收到产品或服务后才响应。文章提供了幂等性防护、去重检查和每个客户的速率限制的具体代码片段，并讨论了如何根据可用联系数据选择合适的沟通渠道（短信或邮件）。文章还涵盖了对响应的处理，强调需遵守 Google 关于禁止基于预期情绪选择性邀请客户的政策，同时允许将低评分内部路由以供跟进。最后，文章对比了自主构建与使用第三方平台的优劣，指出在哪些场景下专用评论自动化服务的附加功能才物有所值。整体模式与其他交易后自动化流程相似，为寻求可靠且...
+
+
+
+### [打破框架：用-Three.js-构建实时-Datamosh-效果](https://tympanus.net/codrops/2026/09/02/breaking-the-frame-building-a-real-time-datamosh-effect-with-three-js/)
+
+2026-09-02 22:36:45 | 标签: Three.js, 创意编程, WebGL, 着色器开发, 交互式可视化
+
+> 本文介绍了一种完全在 Three.js WebGL 管线中构建的实时 datamosh 效果。该技法并非对录制视频进行后期处理，而是模拟核心编解码器行为——运动补偿预测、帧内刷新抑制、残差门控、块状量化和冻结区域——以逐帧应用的片段着色器传递实现。管线采用双缓冲反馈循环：解码传递使用由速度传递生成的屏幕空间速度纹理来扭曲前一帧，速度传递通过比较当前与上一帧的裁剪空间投影来生成该纹理。一个手势（指针按住或空格键）会抑制周期性帧内刷新，使解码器持续将陈旧的历史帧与新的场景向量进行扭曲，从而产生典型的拖影效果。手势结束时，运动向量和残差平滑衰减回零以恢复。额外的机制模拟压缩视频的视觉美学：逐块向量取...
 
 
 
@@ -2022,13 +2054,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2178,13 +2210,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3678,13 +3710,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5388,13 +5420,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

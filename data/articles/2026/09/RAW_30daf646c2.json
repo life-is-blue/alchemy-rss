@@ -1,0 +1,57 @@
+{
+  "id": "RAW_30daf646c2",
+  "title": "软件成为大宗商品（代码是负债）",
+  "url": "https://dev.to/nelson_amaya_16872e58232b/software-as-a-commodity-and-code-as-a-liability-1cji",
+  "date": "2026-09-03 04:00:03",
+  "author": "Nelson Amaya",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I have been working in the IT industry for about 22 years now, starting back in 2004. Back then, there was no YouTube, no Facebook, barely any high-speed internet, and blogs were still called web logs.</p>\n  <p>Around 2007 and onward, we saw rapid shifts with the iPhone, the app ecosystem, and the big migration from on-premise server rooms to the cloud.</p>\n  <p>Through every single one of those cycles, one truth held up: technology expands the economy, creates new opportunities, and reshapes the job market.</p>\n  <p>Between 2010 and 2016, automation was the big topic. Everyone wanted to automate workflows, and a lot of people were genuinely afraid of automating themselves out of a job.</p>\n  <p>So it is not surprising that so many people see AI as an immediate threat today.</p>\n  <p>The crowd feeling the most vulnerable right now seems to be software engineers and developers.</p>\n  <p>I don't consider myself a traditional software engineer. My background has always been core IT infrastructure, focusing on servers, networks, and enterprise systems, but I have always had a soft spot for coding.</p>\n  <p>Over the years, I learned JavaScript, HTML, CSS, PHP, and Python. When I started building SAFi, I had to get right down into the weeds with those tools, well before AI tools became common for writing code.</p>\n  <p>Once I started using AI to assist with coding, I saw the power right away. But I also saw the trap. Without a clear plan and a solid mental model of what you are building, AI can be detrimental.</p>\n  <p>In IT infrastructure, we learn early on that code is a liability, not an asset.</p>\n  <p>Every single line of code you deploy is a line someone has to maintain, debug, monitor, and secure. If an AI helps someone churn out ten times more code without any real architecture behind it, they haven't built ten times faster. They have just created ten times more technical debt and security risk.</p>\n  <p>Building software has never been just about knowing the syntax. It requires the right mindset, structural discipline, and architectural judgment.</p>\n  <p>That is the real value experienced engineers and IT architects bring.</p>\n  <p>The value is not the mechanical act of typing out boilerplate code, because AI can handle that in seconds. The value is the experience and oversight required to make sure that code is maintainable, secure, and actually serves a purpose.</p>\n  <p>Without that experience, handing AI to someone is like handing an expensive custom guitar to someone who doesn't know how to play. The instrument might be great, but it won't produce music on its own.</p>\n  <p>With AI, raw code has become a cheap commodity. But the human skill and judgment needed to structure it properly has become priceless.</p>\n </body>\n</html>",
+  "aiSummary": "一位 IT 老兵指出，AI 已将原始代码生成商品化，使人类的架构判断力与经验成为软件工程领域中真正稀缺且宝贵的资产。",
+  "oneSentenceSummary": "一位 IT 老兵指出，AI 已将原始代码生成商品化，使人类的架构判断力与经验成为软件工程领域中真正稀缺且宝贵的资产。",
+  "summary": "结合 22 年 IT 基础设施从业经验，作者追溯了技术颠覆的循环模式——从 2010 至 2016 年的自动化恐慌，延续至今软件工程师对 AI 的焦虑。在开发 SAFi 期间使用 AI 编程工具后，作者承认其强大能力，但也发出警示：AI 能够比人类更快地产出代码，但若缺乏清晰的规划与扎实的思维模型，这只会成倍放大技术债务和安全风险。核心论点是：在 IT 基础设施领域，代码始终是负债而非资产——每一行被部署的代码都是需要持续维护、调试、监控和保护的成本。AI 使原始代码沦为廉价的大宗商品，但经验丰富的工程师所带来的结构纪律、架构判断与统筹监管变得无价。工程师的价值不在于机械编码能力，而在于确保代码具备可维护性、安全性和明确目的的能力。",
+  "mainPoints": [
+    {
+      "point": "AI 已将原始代码生成商品化",
+      "explanation": "AI 工具如今能在数秒内生成大量样板代码，使得机械式写代码成为低价值技能。真正的差异化不再在于语法熟练度，而在于架构判断力。"
+    },
+    {
+      "point": "代码是负债，而非资产",
+      "explanation": "在 IT 基础设施实践中，每一行被部署的代码都会带来持续的义务：维护、调试、监控和安全补丁更新。若无良好设计引导，AI 规模化生成的代码只会放大这些负债。"
+    },
+    {
+      "point": "经验与监管才是不可替代的人类价值",
+      "explanation": "作者凭借 22 年 IT 从业经验指出，结构纪律、对所构建事物的清晰思维模型、以及确保代码服务于明确目的的判断力——正是资深工程师和架构师所具备的、AI 无法复制的能力。"
+    },
+    {
+      "point": "技术焦虑的历史模式正在重演",
+      "explanation": "开发者对 AI 的恐惧与 2010–2016 年的自动化恐慌如出一辙。每一次重大技术变革（iPhone、云计算、自动化）都重塑了就业市场，但最终拓展了机遇而非消除了机遇。"
+    }
+  ],
+  "keyQuotes": [
+    "在 IT 基础设施领域，我们很早就学到：代码是负债，而非资产。",
+    "如果 AI 帮助某人产出十倍于以往但未加任何实质架构的代码，那并非意味着构建速度提升了十倍，而是技术债务和安全风险也相应增加了十倍。",
+    "缺乏这样的经验，把 AI 交给某人就像把一把昂贵的手工吉他递给一个根本不会弹琴的人。",
+    "有了 AI，原始代码已成为廉价的「大宗商品」。但要将其合理组织所需的技能与人类判断力，已变得无价。"
+  ],
+  "tags": [
+    "AI工作流",
+    "软件工程",
+    "AI编程",
+    "代码生成",
+    "技术债务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 77,
+  "wordCount": 450,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788379203000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-03 04:00:03"
+}

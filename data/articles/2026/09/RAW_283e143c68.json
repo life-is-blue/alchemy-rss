@@ -1,0 +1,57 @@
+{
+  "id": "RAW_283e143c68",
+  "title": "OpenAI 详解 GPT-Live 持续有状态语音交互的架构",
+  "url": "https://www.infoq.com/news/2026/09/openai-gpt-live/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-02 20:20:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>OpenAI recently published <a href=\"https://openai.com/index/continuous-voice-interaction-with-gpt-live/\">an engineering account of GPT-Live</a>. It described how they designed the system to maintain continuous voice interaction while separating latency-sensitive media processing from broader application work. The live path contains the media pipeline and inference loop, while delegation, tool use, persistence, and other application logic run behind an asynchronous <a href=\"https://en.wikipedia.org/wiki/Remote_procedure_call\">RPC</a> boundary.</p>\n   <p>The design reflects a central challenge for real-time AI applications. Conversation must remain responsive even when other operations have variable latency or depend on external services. OpenAI’s account also describes dedicated, stateful inference for each session. Sessions reserve capacity on their assigned instance, but their context can move to another instance when capacity is being drained, or a conversation reaches its context limit.</p>\n   <p>OpenAI retained <a href=\"https://webrtc.org/\">WebRTC</a> as its media foundation, introducing&nbsp;WebRTC Abridged Roundtrip Protocol (<a href=\"https://datatracker.ietf.org/doc/draft-uberti-tsvwg-warp/\">WARP⁠</a>) improvements and Instant Connect to reduce startup latency. Before launch, the company also conducted a \"silent\" test that processed authentic incoming Voice traffic while discarding the output. According to OpenAI, this identified load-related behavior that synthetic tests had missed.</p>\n   <p><a href=\"https://x.com/juberti\">Justin Uberti</a>, Head of Realtime AI at OpenAI, spoke with InfoQ about the architecture and its operational trade-offs.</p>\n   <p><strong>InfoQ: GPT-Live separates the latency-critical media path from application logic through an asynchronous boundary. How did you decide what belongs on each side of that boundary, and which product capabilities were hardest to decouple from the live interaction path?</strong></p>\n   <blockquote>\n    <p><strong>Justin Uberti:</strong> We knew that achieving our target latency required consistent media delivery – essentially, \"the voice must flow.\" So, we adopted the principle that the live path should only run the media pipeline and inference loop, and everything else – delegation, tool use, persistence, and other application logic – should happen behind an asynchronous RPC boundary. This architectural choice allowed us to focus our optimization efforts on the most critical components and avoid regressions from less time-sensitive work.</p>\n    <p>Even so, we were concerned about how fast we could make delegation to our frontier models, and we also had to rethink how to feed voice data to our safety systems. These components each needed some specific design work, but it was much easier to optimize these pieces in isolation rather than as part of the critical path.</p>\n   </blockquote>\n   <p><strong>InfoQ: A continuous voice conversation is inherently stateful, yet the system must scale and recover from failures. What architectural approach did you take to managing session state, and how did it affect availability, elasticity, and operational complexity?</strong></p>\n   <blockquote>\n    <p><strong>Uberti:</strong> The key decision was to use dedicated, stateful inference while allowing session context to migrate in real time to a new model instance when needed. Each session reserves capacity on its assigned instance, but we can steer new sessions to instances with available capacity and migrate existing sessions when an instance is draining or a session nears its context limit. This gives us the desired operational flexibility to spin instances up and down based on demand.</p>\n   </blockquote>\n   <p><strong>InfoQ: You retained WebRTC but introduced WARP and Instant Connect to reduce startup latency. Did you consider newer transport standards or other alternatives instead of extending the WebRTC stack, and what interoperability and operational trade-offs led to your choice?</strong></p>\n   <blockquote>\n    <p><strong>Uberti:</strong> WebRTC provides a battle-tested low-latency media stack with built-in error recovery. While we see a lot of promise in efforts like <a href=\"https://datatracker.ietf.org/doc/draft-ietf-avtcore-rtp-over-quic/\">RTP over QUIC</a>, these protocols currently only provide the transport layer, and not the full media pipeline. Even at the transport layer, there are still some missing features, for example, GCC congestion control and RTT-aware path selection.</p>\n    <p>Accordingly, we felt that simplifying WebRTC’s handshake was easier and less risky than replacing the transport layer on both client and server. Each WARP improvement—SPED, DTLS 1.3, and SNAP—could also be deployed independently, allowing us to test its impact and verify its benefits in isolation. As a bonus, existing WebRTC applications get these benefits without any code changes, which is a nice win for the ecosystem. Ultimately, I think WebRTC will become more like <a href=\"https://en.wikipedia.org/wiki/QUIC\">QUIC</a> and vice versa, meaning that you won’t have to choose between them.</p>\n   </blockquote>\n   <p><strong>InfoQ: The silent test mirrored production Voice sessions into GPT-Live without changing what users heard. What architectural mechanisms made that safe and representative, and which failure modes did it reveal that conventional load testing could not?</strong></p>\n   <blockquote>\n    <p><strong>Uberti: </strong>We set up the silent test to run with the application service in effectively a read-only mode, with no user credentials, so that incoming voice data was fed to the model, but then the output was simply discarded. This allowed us to test the media loop and inference service with authentic voice traffic and no impact to the customer experience.</p>\n    <p>Unlike conventional load tests, which typically rely on canned or synthetic speech, the silent test captured the diversity and geographic reach of real Voice sessions. It revealed that system performance degraded under load in ways our synthetic tests had not predicted, which we addressed with targeted optimizations and bug fixes. For example, in certain regions, some GPUs were not colocated with the CPUs feeding them, introducing unexpected latency. Validating these fixes against real production traffic gave us greater confidence they would hold up on launch day.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenAI Details GPT-Live’s Architecture for Continuous Stateful Voice Interaction\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/openai-gpt-live/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1788351600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 的 GPT-Live 通过异步 RPC 边界将延迟敏感的媒体流与应用逻辑分离，采用每会话有状态推理结合上下文迁移实现弹性伸缩，并通过包含 WARP 在内的 WebRTC 增强功能实现实时连续语音交互。",
+  "oneSentenceSummary": "OpenAI 的 GPT-Live 通过异步 RPC 边界将延迟敏感的媒体流与应用逻辑分离，采用每会话有状态推理结合上下文迁移实现弹性伸缩，并通过包含 WARP 在内的 WebRTC 增强功能实现实时连续语音交互。",
+  "summary": "OpenAI 发布了一篇关于 GPT-Live 的工程深度解析文章，GPT-Live 是其持续有状态语音交互系统。该系统架构将延迟敏感的媒体管道和推理循环与更重的应用逻辑（委托、工具调用、持久化）分离，跨越异步 RPC 边界，确保即使外部服务速度各异，语音响应依然流畅。每个会话都在专属的有状态推理实例上运行并预留容量，而当实例排空或达到上下文限制时，会话上下文可迁移至另一实例。OpenAI 保留了 WebRTC 作为基础，在其上层叠加了 WARP 改进（SPED、DTLS 1.3、SNAP）与即时连接功能以降低启动延迟，他们认为简化握手协议比采用新兴传输协议风险更低。一次「无声」的生产测试将真实的 Voice 流量输入 GPT-Live 但丢弃输出结果，揭示了合成负载测试未能发现的区域性 GPU-CPU 部署问题。",
+  "mainPoints": [
+    {
+      "point": "GPT-Live 将媒体管道和推理循环通过异步 RPC 边界与应用逻辑隔离，以确保一致的低延迟语音传输。",
+      "explanation": "「语音必须流畅」原则意味着只有关键媒体路径同步运行；委托、工具调用和持久化任务被推迟到异步 RPC 调用。安全系统和前沿模型委托需要专门设计，但在关键路径之外单独优化更容易。"
+    },
+    {
+      "point": "每会话有状态推理结合实时上下文迁移，实现了弹性伸缩与连续性。",
+      "explanation": "每个会话在分配的实例上预留容量，但当实例排空或会话接近上下文限制时，上下文可迁移。新会话会被引导至有空闲容量的实例，从而能够在不中断正在进行对话的情况下灵活调整实例规模。"
+    },
+    {
+      "point": "OpenAI 通过 WARP 和即时连接扩展 WebRTC，而非采用更新的传输协议，优先保证互操作性和增量部署能力。",
+      "explanation": "尽管基于 QUIC 的 RTP 等类似协议前景可观，但目前仍缺乏完整的媒体管道和 GCC 拥塞控制等功能。WARP 的改进（SPED、DTLS 1.3、SNAP）可独立部署，现有 WebRTC 应用无需代码改动即可获益——Uberti 认为这一策略将与 QUIC 类协议的演进趋势逐渐趋同。"
+    },
+    {
+      "point": "使用真实 Voice 流量的无声生产测试暴露了合成基准测试未能发现的负载相关故障模式。",
+      "explanation": "该测试让 GPT-Live 以事实上只读模式运行，向模型提供真实的语音数据但丢弃输出结果。测试揭示了因基础设施未就近部署导致的区域性 GPU-CPU 延迟问题——这是合成语音测试无法预测的——让团队对上线日的就绪状态充满信心。"
+    }
+  ],
+  "keyQuotes": [
+    "「实时路径包含媒体管道和推理循环，而委托、工具调用、持久化及其他应用逻辑则在异步 RPC 边界之后运行。」",
+    "「我们明白，要实现目标延迟必须保证稳定的媒体传输——简言之，「语音必须流畅」。」",
+    "「我们搭建的无声测试以近乎只读模式运行应用服务，不携带任何用户凭据，因此传入的语音数据会送入模型，但输出结果直接丢弃。」",
+    "「测试揭示，系统在高负载下的性能下降方式超出我们合成测试的预测。」"
+  ],
+  "tags": [
+    "产品更新",
+    "系统设计",
+    "实时AI",
+    "WebRTC",
+    "GPT-Live"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 845,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788351600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-02 20:20:00"
+}

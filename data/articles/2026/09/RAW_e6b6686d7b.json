@@ -1,0 +1,55 @@
+{
+  "id": "RAW_e6b6686d7b",
+  "title": "换工具、换 Agent，不换上下文：OpenViking 让研发 Context 始终在线",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247522116&idx=1&sn=12549be2892dea3b03f75bb06b9d61c8",
+  "date": "2026-09-02 19:00:00",
+  "author": "字节跳动技术团队",
+  "siteName": "字节跳动技术团队",
+  "content": null,
+  "aiSummary": "OpenViking 是一个统一的上下文数据库，让不同 AI Agent 能够共享和持续积累项目知识、代码背景和个人经验，从而实现跨工具、跨任务的上下文复用。",
+  "oneSentenceSummary": "OpenViking 是一个统一的上下文数据库，让不同 AI Agent 能够共享和持续积累项目知识、代码背景和个人经验，从而实现跨工具、跨任务的上下文复用。",
+  "summary": "在现代软件开发中，研发人员经常需要在多个 AI 工具（如群聊、CLI、文档）之间切换，处理从快速 Review 到深度编码的各种任务。然而，每次切换都可能导致上下文丢失，需要重新解释项目背景或查找历史决策。OpenViking 通过提供一个统一的、可分层访问的上下文数据库，解决了这一问题。它允许 Agent 实时读取和写入项目资源、记忆和技能，确保无论使用哪个工具，研发人员的上下文始终保持一致并持续更新。",
+  "mainPoints": [
+    {
+      "point": "统一的上下文数据库",
+      "explanation": "OpenViking 集中存储了项目资源（如代码、文档、规范）和个人记忆（如偏好、经验），避免了信息在不同工具间的碎片化。"
+    },
+    {
+      "point": "分层访问机制",
+      "explanation": "通过 L0/L1/L2 的分层结构，Agent 可以快速获取概览或深入细节，提高了信息检索的效率和针对性。"
+    },
+    {
+      "point": "跨 Agent 兼容性",
+      "explanation": "OpenViking 支持多种主流 Agent（如 Claude Code、豆包工作）的直接接入，确保同一份上下文可以在不同的工作场景中被复用。"
+    },
+    {
+      "point": "持续的经验积累",
+      "explanation": "通过 Session Commit，OpenViking 能够自动从日常工作中提取新的知识和判断，不断丰富长期记忆，形成一个自我更新的知识库。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenViking 是面向 AI Agent 的统一上下文数据库。它不是另一个 Agent，而是位于不同 Agent 背后的共享 Context 层。",
+    "OpenViking 承接的不是某一个工具的聊天记录，而是一个研发持续积累的代码背景、项目规则、技术决策、执行经验和个人习惯。"
+  ],
+  "tags": [
+    "AI Agent",
+    "上下文管理",
+    "开发者工具",
+    "代码协作",
+    "OpenViking"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 90,
+  "wordCount": 3241,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_aeae8d",
+  "sourceName": "字节跳动技术团队",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1788346800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-02 19:00:00"
+}
