@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-04 09:56:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-04 14:44:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -638,17 +638,13 @@
 
 ### [高性价比（廉价）SSD-VPS-提供商-CloudCone-补货，最低-96-元人民币/年](https://www.appinn.com/cloudcone-ssd-vps/)
 
-2026-09-04 01:07:52 | 标签: VPS, 云服务器, CloudCone, 性价比, 开发者工具
-
-> CloudCone 发布「Turns 9 Sale」活动补货邮件，推荐两个主打套餐：1 vCPU / 1 GB / 55 GB SSD / 4 TB 流量售价 ¥96/年，2 vCPU / 2 GB / 110 GB / 7 TB 售价 ¥146/年。相比此前版本，硬盘容量翻倍但 CPU 核心数降低。此外还列出 6 vCPU / 4 GB / 220 GB / 10 TB（¥275）和 10 vCPU / 8 GB / 2200 GB / 15 TB（¥520）两个更高配置选项。所有套餐位于洛杉矶机房，单 IPv4 + 三 IPv6，1 GB 带宽，纯 SSD RAID-10 存储，不支持升级...
+2026-09-04 01:07:52
 
 
 
 ### [Kotlin-Toolchain-0.12：多平台库发布、Wasm-应用及其他](https://blog.jetbrains.com/kotlin/2026/09/kotlin-toolchain-0-12-multiplatform-library-publishing-wasm-apps-and-more/)
 
-2026-09-03 18:40:05 | 标签: Kotlin, 开源软件, 开发者工具, 云原生与DevOps, 测试与质量保证
-
-> Kotlin Toolchain 0.12.0 引入了多平台库发布功能（此前仅限于 JVM），现在支持包括 wasmJs 和 iOS 在内的所有目标平台的公共 API、各平台制品、源代码及模块元数据，同时也发布 Cinterop 绑定。本次更新还带来了 Wasm 应用支持，可通过 `kotlin run` 命令构建、支持自定义 index.html 和 npm 依赖拉取。命令行的 Compose Hot Reload 得到改进，首次重载速度更快，并新增 MCP 服务器供 AI 智能体使用。IDE 方面包括 KMP 库的 Compose 预览、更好的 Compose 资源支持、Android l...
+2026-09-03 18:40:05
 
 
 

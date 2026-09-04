@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-04 09:56:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-04 14:44:49 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -758,25 +758,19 @@
 
 ### [修复-navigator-clipboard-writeText-瞬时激活问题](https://www.sitepoint.com/fix-navigator-clipboard-writetext-transient-activation-async-javascript/?utm_source=rss)
 
-2026-09-04 02:23:35 | 标签: 前端与 Web, JavaScript, 浏览器 API, 性能优化, 开发者工具
-
-> 本文讨论了一个常见的浏览器 API 问题：当 navigator.clipboard.writeText() 在异步操作之后调用时，会抛出 NotAllowedError，原因是浏览器的瞬时用户激活窗口已过期。文章解释道，激活标志在 Chromium 和 Firefox 浏览器中大约持续 5 秒，任何 await 操作都会消耗实际时间而不会暂停计时器。本文提出两种解决方案：方案一将逻辑重新排序，在内容同步可用时先复制再 await；方案二使用 ClipboardItem 构造函数模式，接受 Promise<Blob>，通过在异步操作中同步捕获用户手势来解耦激活检查与内容可用性。同时提供了一个生...
+2026-09-04 02:23:35
 
 
 
 ### [从光线到网格：用-vgpu-构建-Vercel-的棱镜效果](https://tympanus.net/codrops/2026/09/03/from-rays-to-meshes-building-vercels-prism-with-vgpu/)
 
-2026-09-04 00:01:06 | 标签: WebGL, 着色器开发, 创意编程, 性能优化, Vercel
-
-> 经过数月的内部使用，Vercel 的开源 vgpu 着色器库即将发布，但落地页还缺少一个英雄视觉元素。作者选择重新构想 Vercel 标志性的棱镜——一个将白光分解成彩虹光谱的玻璃块——并采取了多阶段的方法。最初，逐像素的光线追踪着色器成本过高且效果偏软，因此在研究了折射几何原理后，作者转向根据计算出的折射路径生成参数化的彩色光束网格，并在此基础上叠加了一个经过适配的、使用立方体贴图环境映射的玻璃着色器。浅色模式需要一条独立的渲染管线，结合了阴影纹理、预烘焙法线贴图和 AI 辅助的概念合成。为了适配异构设备，一个三信号自适应系统（GPU 等级、电池电量和帧率）在运行时在高、低质量之间切换。作者...
+2026-09-04 00:01:06
 
 
 
 ### [pnpm-12-使用-Rust-重写包管理器，加速安装同时保留-pnpm-11-工作流](https://www.infoq.com/news/2026/09/pnpm-12-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-03 19:23:00 | 标签: 包管理器, Rust, 性能优化, Node.js, 开发者工具
-
-> pnpm 12 以原生 Rust 重写替换了原有的 TypeScript 和 Node.js 实现，刻意保留了 pnpm 11 的命令、标志、锁文件格式和 node_modules 布局。基准测试显示干净安装从 8.2 秒降至 5 秒，缓存安装从 472 毫秒降至 15 毫秒。Socket 在 Vercel 的 21 个项目 Turborepo 工作区的六个生产场景中报告了中位数安装时间减少 64.4% 至 90.5%，尽管 Corepack 产物更大且首次未缓存启动稍慢。新功能包括跟随当前项目所锁定运行时运行的项目感知全局二进制文件、产生字节级相同锁文件的确定性循环处理，以及在循环密集的工作...
+2026-09-03 19:23:00
 
 
 
