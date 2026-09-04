@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-04 07:42:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-04 09:56:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -756,7 +756,31 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [修复-navigator-clipboard-writeText-瞬时激活问题](https://www.sitepoint.com/fix-navigator-clipboard-writetext-transient-activation-async-javascript/?utm_source=rss)
+
+2026-09-04 02:23:35 | 标签: 前端与 Web, JavaScript, 浏览器 API, 性能优化, 开发者工具
+
+> 本文讨论了一个常见的浏览器 API 问题：当 navigator.clipboard.writeText() 在异步操作之后调用时，会抛出 NotAllowedError，原因是浏览器的瞬时用户激活窗口已过期。文章解释道，激活标志在 Chromium 和 Firefox 浏览器中大约持续 5 秒，任何 await 操作都会消耗实际时间而不会暂停计时器。本文提出两种解决方案：方案一将逻辑重新排序，在内容同步可用时先复制再 await；方案二使用 ClipboardItem 构造函数模式，接受 Promise<Blob>，通过在异步操作中同步捕获用户手势来解耦激活检查与内容可用性。同时提供了一个生...
+
+
+
+### [从光线到网格：用-vgpu-构建-Vercel-的棱镜效果](https://tympanus.net/codrops/2026/09/03/from-rays-to-meshes-building-vercels-prism-with-vgpu/)
+
+2026-09-04 00:01:06 | 标签: WebGL, 着色器开发, 创意编程, 性能优化, Vercel
+
+> 经过数月的内部使用，Vercel 的开源 vgpu 着色器库即将发布，但落地页还缺少一个英雄视觉元素。作者选择重新构想 Vercel 标志性的棱镜——一个将白光分解成彩虹光谱的玻璃块——并采取了多阶段的方法。最初，逐像素的光线追踪着色器成本过高且效果偏软，因此在研究了折射几何原理后，作者转向根据计算出的折射路径生成参数化的彩色光束网格，并在此基础上叠加了一个经过适配的、使用立方体贴图环境映射的玻璃着色器。浅色模式需要一条独立的渲染管线，结合了阴影纹理、预烘焙法线贴图和 AI 辅助的概念合成。为了适配异构设备，一个三信号自适应系统（GPU 等级、电池电量和帧率）在运行时在高、低质量之间切换。作者...
+
+
+
+### [pnpm-12-使用-Rust-重写包管理器，加速安装同时保留-pnpm-11-工作流](https://www.infoq.com/news/2026/09/pnpm-12-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-09-03 19:23:00 | 标签: 包管理器, Rust, 性能优化, Node.js, 开发者工具
+
+> pnpm 12 以原生 Rust 重写替换了原有的 TypeScript 和 Node.js 实现，刻意保留了 pnpm 11 的命令、标志、锁文件格式和 node_modules 布局。基准测试显示干净安装从 8.2 秒降至 5 秒，缓存安装从 472 毫秒降至 15 毫秒。Socket 在 Vercel 的 21 个项目 Turborepo 工作区的六个生产场景中报告了中位数安装时间减少 64.4% 至 90.5%，尽管 Corepack 产物更大且首次未缓存启动稍慢。新功能包括跟随当前项目所锁定运行时运行的项目感知全局二进制文件、产生字节级相同锁文件的确定性循环处理，以及在循环密集的工作...
+
+
+
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -768,7 +792,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2046,13 +2070,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2202,13 +2226,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3702,13 +3726,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5412,13 +5436,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_8fb8ceef54",
+  "title": "Shopify 推出 Gisting：将 LLM 系统提示词压缩为学习的标记",
+  "url": "https://www.infoq.com/news/2026/09/spotify-gisting-llm-performance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-04 04:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Shopify's engineering introduced <a href=\"https://shopify.engineering/gisting\">Gisting, a novel technique for compressing long LLM prompts</a> into a smaller set of learned \"gist\" tokens, improving throughput and reducing inference cost.</p>\n   <p>Spotify emphasizes that replacing lengthy text for concise gist tokens at inference time reduces end-to-end latency, drops infrastructure costs, and boosts token throughput without modifying the model's core weights.</p>\n   <p>The company says that gisting reduced the Sidekick GraphQL agent’s system prompt from about 6000 tokens to 1500 gist tokens without sacrificing prediction quality. This implies a 4:1 reduction in context size:</p>\n   <blockquote>\n    <p>At 350 requests per minute (RPM), the median time to first token (TTFT) dropped from 438ms to 354ms, the median end-to-end request latency dropped from 6.8s to 4.2s, and throughput rose from 20.2 to 23.4 queries per second (QPS).</p>\n   </blockquote>\n   <p>These improved metrics allowed Spotify to reduce the number of allocated GPUs.</p>\n   <p>Gisting is based on a technique pioneered in a 2022 paper, <a href=\"https://arxiv.org/abs/2210.03162\">\"<em>Prompt Compression and Contrastive Conditioning for Controllability and Toxicity Reduction in Language Models</em>\"</a>, and consists of a two-step process to learn the embeddings of the new compressed gist token. In a first pass, the <em>teacher pass</em>, the model is run with the real prompt to derive the <em>teacher logits</em> of the response. In the <em>student pass</em>, the model is run with the gist tokens to derive the student logits. Finally, the gist are trained to minimize the KL divergence between the teacher logits and the student logits, that is until the student's predictions closely match the teacher's.</p>\n   <blockquote>\n    <p>When training finishes, we write the gist embeddings straight into the model's embedding matrix, and register the new gist tokens as special tokens in the model’s tokenizer. The model loads and runs like any other at inference time: no custom attention mask, extra encoder, or special serving path.</p>\n   </blockquote>\n   <p>The key advantage of gisting is that the model does not process a conventional summary of the original prompt, but rather a learned representation designed to make the LLM to behave as close as possible to how it would if it had seen the original prompt.</p>\n   <p>Gisting can reduce latency and increase throughput. In Shopify's case, Time to First Token (TTFT) dropped from 438ms to 354ms, and end-to-end latency fell from 6.8s to 4.2s. At the same time, queries per second (QPS) increased from 20.2 to 23.4, allowing engineering teams to scale down overall GPU allocation.</p>\n   <p>As a final note, Shopify also emphasizes that gisting is complementary to other optimization techniques, such as <a href=\"https://handbook.modular.com/inference-optimization/prefix-caching/\">prefix caching</a>. Prefix caching avoids recomputing the KV tensors for cached prompt sequences, but the model must still process those cached tensors during the decoding phase. Gisting further reduces this overhead by replacing a long prompt with a shorter sequence of learned gist tokens. The two optimizations therefore compound, and Shopify uses them together.</p>\n   <p>There is much more to gisting than can be covered here. Make sure to read the original article if you are interested in the full details, which covers topics such as the role of autosearch in tuning the Gisting process and other implementation details that significantly affect performance.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Shopify Introduces Gisting: Compressing LLM System Prompts into Learned Tokens\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/spotify-gisting-llm-performance/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1788465600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Shopify 的 Gisting 技术将长 LLM 系统提示词压缩为学习的摘要标记，实现 4:1 上下文压缩，同时吞吐量提升 4 倍，为 Sidekick 智能体降低 38% 延迟。",
+  "oneSentenceSummary": "Shopify 的 Gisting 技术将长 LLM 系统提示词压缩为学习的摘要标记，实现 4:1 上下文压缩，同时吞吐量提升 4 倍，为 Sidekick 智能体降低 38% 延迟。",
+  "summary": "Shopify 工程团队推出了 Gisting，一种提示词压缩技术，能在不损失质量的前提下将 LLM 系统提示词从约 6000 个标记压缩至 1500 个摘要标记。该方法通过最小化教师 logits（完整提示词）与学生 logits（摘要标记）之间的 KL 散度，训练一小批学习的标记以逼近原始提示词的行为。在生产环境中，中位数 TTFT 从 438ms 降至 354ms，端到端延迟从 6.8s 降至 4.2s，QPS 从 20.2 提升至 23.4，从而支持 GPU 分配的缩减。该技术与前缀缓存互补，可在不修改模型权重或服务基础设施的情况下集成。",
+  "mainPoints": [
+    {
+      "point": "Gisting 通过训练学习的摘要标记以最小化与完整提示词教师 logits 的 KL 散度，实现 4:1 的提示词压缩且零质量损失。",
+      "explanation": "与简单摘要不同，摘要标记是经过优化的嵌入向量，使 LLM 表现得如同处理过原始提示词。两阶段训练（教师/学生）确保压缩表示保留了模型行为。"
+    },
+    {
+      "point": "在 Shopify 的 Sidekick GraphQL 智能体上的生产部署使 TTFT 降低 38%，端到端延迟降低 38%，吞吐量提升 16%。",
+      "explanation": "在 350 RPM 时，中位数 TTFT 从 438ms 降至 354ms，端到端延迟从 6.8s 降至 4.2s，QPS 从 20.2 提升至 23.4。这些提升使得 GPU 分配得以减少，证明了真实的基础设施成本节省。"
+    },
+    {
+      "point": "Gisting 与前缀缓存互补，无需修改模型权重或自定义服务路径即可集成。",
+      "explanation": "该技术用短摘要标记序列替换长提示词，减少了预填充和解码阶段的 KV 张量处理。对现有基础设施完全透明。"
+    }
+  ],
+  "keyQuotes": [
+    "训练完成后，我们将摘要嵌入直接写入模型的嵌入矩阵，并将新的摘要标记注册为模型分词器中的特殊标记。模型在推理时像其他模型一样加载和运行：无需自定义注意力掩码、额外编码器或特殊服务路径。",
+    "Gisting 的核心优势在于，模型处理的不是原始提示词的传统摘要，而是一种精心设计的学术表征，旨在让 LLM 的行为尽可能接近其看到原始提示词时的表现。",
+    "Gisting 通过将长提示词替换为更短的学习标记序列，进一步降低了这一开销。因此这两种优化相辅相成，Shopify 将它们结合使用。"
+  ],
+  "tags": [
+    "LLM 推理",
+    "提示词工程",
+    "模型优化",
+    "系统设计",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 509,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788465600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-04 04:00:00"
+}

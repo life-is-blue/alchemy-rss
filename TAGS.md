@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-04 07:42:10 | [返回首页](/README.md)
+**更新时间**: 2026-09-04 09:56:00 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15474)
+- [AI & 大模型](#ai-llm) (15528)
 - [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (969)
-- [DevOps](#devops) (738)
+- [前端与全栈](#frontend-fullstack) (972)
+- [DevOps](#devops) (740)
 - [产品与商业](#product-business) (50)
-- [其他](#other) (6817)
+- [其他](#other) (6825)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [对卷卷的-3-小时访谈：从抖音到-AI-3D、创业的过山车、成为制造业-OS-的野心、基础模型不会吞噬一切！](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111315&idx=1&sn=7430e8e2a5e2db621fd56ae84529c7d7) - AI 精选
+- [大模型开网店，谁是经营高手？E-Commerce-Bench-开源揭秘](https://mp.weixin.qq.com/s?__biz=Mzk0ODg4NDI5NA==&mid=2247490168&idx=1&sn=2dcf2b5c2a3014c82e08882361d64221) - AI 精选
 - [介绍-Gemini-3.8-Flash-与-3.8-Flash-Cyber](https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/) - AI 精选
 - [介绍基于-Gemini-的智能体视频理解](https://deepmind.google/blog/introducing-agentic-video-in-gemini/) - AI 精选
 - [通往-Astra：关键能力与前沿保障](https://openai.com/index/path-to-astra) - AI 精选
@@ -40,10 +42,8 @@
 - [多智能体系统的模式与问题](https://www.anthropic.com/research/multiagent-systems) - AI 精选
 - [NVIDIA-Nemotron-3.5-Lightning-为长期运行的智能体提供快速、精准的专用任务执行](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/) - AI 精选
 - [考虑使用-ACE？我们可以用更少的-Token-实现同样的效果](https://huggingface.co/blog/ibm-research/altk-evolve-sldd) - AI 精选
-- [让知识蒸馏成本足够低，可实现规模化运行](https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation) - AI 精选
-- [随着网络防御窗口收窄，扩大-Daybreak-项目](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows) - AI 精选
 
-- [查看全部 15474 篇...](/details/tags/ai-llm.md)
+- [查看全部 15528 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 969 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 972 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 738 篇...](/details/tags/devops.md)
+- [查看全部 740 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 
-- [查看全部 6817 篇...](/details/tags/other.md)
+- [查看全部 6825 篇...](/details/tags/other.md)
 
 

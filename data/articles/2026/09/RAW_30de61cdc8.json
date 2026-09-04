@@ -1,0 +1,59 @@
+{
+  "id": "RAW_30de61cdc8",
+  "title": "GPT‑6 Astra",
+  "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
+  "date": "2026-09-04 04:18:41",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">3rd September 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://openai.com/index/gpt-6-astra/\">GPT‑6 Astra</a></strong> (<a href=\"https://news.ycombinator.com/item?id=49554643\" title=\"Hacker News\">via</a>) GPT-6 Astra is \"rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS\" - I've not tried it yet myself, so I don't have a great deal to say about it yet.</p>\n    <p>It's going to be API priced at the same rate as Claude Fable 5 and 5.1: $10/million input and $50/million output. This is clearly OpenAI's Fable competitor, and appears to score higher than Fable on most of OpenAI's self-reported benchmarks.</p>\n    <p>Most impressively, Astra scores 99.9% on the recent (released in March) <a href=\"https://arcprize.org/arc-agi/3\">ARC-AGI 3 benchmark</a> - though notably Fable 5 does not yet have a published result, and the <a href=\"https://arcprize.org/blog/astra\">ARC-AGI blog notes</a> that the 99.9% score was achieved for $19K using OpenAI's custom \"Provider Adapter harness\", while the default ARC-AGI harness scored 62.7% for $26K.</p>\n    <blockquote>\n     <p>The Provider Adapter harness preserves opaque reasoning state between requests and uses compaction for longer conversations, allowing the model to reuse prior work.</p>\n    </blockquote>\n    <p>Unsurprisingly, given <a href=\"https://simonwillison.net/tags/openai-hugging-face-incident/\">the recent Hugging Face incident</a>, Astra is a beast at security tasks. It scores 100% on ExploitBench (GPT-5.6 Sol got 78.5%), 42.4% on ExploitGym (Sol got 30.3%), and 99.2% within four attempts on SRE-Bench binary reverse engineering compared to Sol's 68.7%.</p>\n    <p>It's also better at long context: on OpenAI's eight-needle benchmark it got 100% at 256K–512K tokens and 96.3% at 512K–1M tokens. OpenAI may have vanquished one of the ongoing challenges with long context processing.</p>\n    <p>It doesn't win at everything though. <a href=\"https://twitter.com/ArtificialAnlys/status/2095595489031000350\">Artificial Analysis</a> note that Astra is still beaten by Fable on their Intelligence Index:</p>\n    <blockquote>\n     <p><strong>Sits beside GPT-5.6 Sol in Intelligence</strong>: GPT-6 Astra scores equal to GPT-5.6 Sol in the Index at 61. This is 5 points lower than Claude Fable 5.1 (max with fallback). The model also trails Meta’s newly released Muse Spark 1.3 (max).</p>\n    </blockquote>\n    <p>It did better on their Coding Agent Index:</p>\n    <blockquote>\n     <p><strong>Leads Coding Agent Index cost efficiency frontier</strong>: At max effort, GPT-6 Astra costs about the same as GPT-5.6 Sol (max) while scoring 2 points higher on the Index. Per task, the model is less than half the cost of Claude Fable 5, for the same score.</p>\n    </blockquote>\n    <p>I'll write more about Astra once I get access to it. The API model label once it rolls out will be <code>gpt-6-astra</code>.</p>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 对 OpenAI 新发布的 GPT‑6 Astra 进行评测，涵盖其基准分数、API 定价以及与 Claude Fable 5.1 和 GPT‑5.6 Sol 的性能对比，同时指出他尚未进行上手测试。",
+  "oneSentenceSummary": "Simon Willison 对 OpenAI 新发布的 GPT‑6 Astra 进行评测，涵盖其基准分数、API 定价以及与 Claude Fable 5.1 和 GPT‑5.6 Sol 的性能对比，同时指出他尚未进行上手测试。",
+  "summary": "GPT‑6 Astra 今日开始向部分机构逐步推出，随后将开放给所有 ChatGPT Plus、Pro、Business 和 Enterprise 用户，以及 OpenAI API 和 AWS。定价为每百万输入 10 美元、每百万输出 50 美元，与 Claude Fable 5 和 5.1 持平，是 OpenAI 对标 Anthropic Fable 系列的直接竞争产品。最引人注目的是，Astra 在 OpenAI 定制的 Provider Adapter 工具链下于 ARC‑AGI 3 达到 99.9% 的得分（该工具链可在请求间保留不透明的推理状态），而默认工具链仅得 62.7%。在安全任务上，Astra 在 ExploitBench 达到 100%，在 SRE‑Bench 二进制逆向工程达到 99.2%，大幅领先 GPT‑5.6 Sol。在长上下文方面，它在 OpenAI 的八针 benchmark 于 256K–512K tokens 达到 100%。不过，Artificial Analysis 显示 Astra 在其 Intelligence Index 上落后于 Claude Fable 5.1（61 vs 66）和 Meta 的 Muse Spark 1.3，但在 Coding Agent Index 的成本效率前沿上领先。",
+  "mainPoints": [
+    {
+      "point": "GPT-6 Astra 定价与 Claude Fable 5 和 5.1 持平",
+      "explanation": "API 定价为每百万输入 10 美元、每百万输出 50 美元，定位为 OpenAI 对标 Anthropic Fable 系列的直接竞争产品。这与 Fable 5 和 5.1 处于同一定价层级。"
+    },
+    {
+      "point": "Astra 在 ARC-AGI 3 取得 99.9% 得分，但需依赖定制工具链",
+      "explanation": "OpenAI 的 Provider Adapter 工具链可在请求间保留不透明的推理状态并使用压缩，使模型得以复用先前工作，从而以 1.9 万美元成本达到 99.9% 得分。默认 ARC-AGI 工具链仅得 62.7%，成本 2.6 万美元，凸显工具链设计对基准结果影响显著。"
+    },
+    {
+      "point": "安全任务表现卓越",
+      "explanation": "继 Hugging Face 事件之后，Astra 在 ExploitBench 达到 100%（Sol 为 78.5%），在 ExploitGym 达到 42.4%（Sol 为 30.3%），在 SRE-Bench 二进制逆向工程达到 99.2%（Sol 为 68.7%），显示出安全相关能力的重大进步。"
+    },
+    {
+      "point": "长上下文处理似乎已解决",
+      "explanation": "Astra 在 OpenAI 八针 benchmark 于 256K–512K tokens 达到 100%，在 512K–1M tokens 达到 96.3%，有望克服长上下文处理领域的已知挑战。"
+    },
+    {
+      "point": "通用智能略逊，但编码成本效率领先",
+      "explanation": "Artificial Analysis 显示 Astra 在 Intelligence Index 得 61 分——低于 Claude Fable 5.1（66 分）和 Meta 的 Muse Spark 1.3——但在 Coding Agent Index 的成本效率前沿上领先，完成相同任务的成本不到 Fable 的一半。"
+    }
+  ],
+  "keyQuotes": [
+    "「Provider Adapter 工具链可在请求间保留不透明的推理状态，并使用压缩支持更长对话，使模型得以复用先前工作。」",
+    "「GPT-6 Astra 在指数中得分与 GPT-5.6 Sol 持平，均为 61 分。比 Claude Fable 5.1（含 fallback 最高分）低 5 分。」"
+  ],
+  "tags": [
+    "OpenAI",
+    "GPT-6",
+    "模型发布",
+    "大语言模型",
+    "AI 评估与基准测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 397,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788466721000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-04 04:18:41"
+}
