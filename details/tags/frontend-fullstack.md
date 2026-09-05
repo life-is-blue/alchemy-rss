@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-05 06:14:20 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-05 09:56:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -756,6 +756,30 @@
 
 
 
+### [如何创建一个-Tor-退出节点](https://madpsy.uk/how-to-create-a-tor-exit-node/)
+
+2026-09-05 04:16:22 | 标签: Tor, 退出节点, Linux, Ubuntu, 网络
+
+> 文章提供了一个创建 Tor 退出节点的逐步指南，强调这些节点在连接 Tor 网络与公共互联网方面的重要性。内容包括安装必要软件、配置 Tor 守护进程、设置信息页面以及实现节点功能所需的端口转发。指南还警告了运行退出节点可能带来的法律和声誉风险。
+
+
+
+### [React-现在完全由-Rust-驱动](https://blog.master.dev/react-now-rusted-all-the-way-out/)
+
+2026-09-05 01:49:09 | 标签: React, Rust, 编译器优化, Vite, 构建性能
+
+> 本文讨论了最近将基于 Rust 的 React Compiler 集成到构建过程中的情况，重点介绍了显著的性能提升以及对 JavaScript 语法的兼容性问题的解决。它提供了有关如何从基于 Babel 的编译器切换到原生 Rust 实现的逐步指南，适用于标准 Vite 项目和使用 React Router 的框架模式项目。
+
+
+
+### [Node.js-被黑客武器化，合法运行时变为恶意软件投递工具](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651346174&idx=4&sn=cd2fa79b9922f2cde4e0e5e86a34189d)
+
+2026-09-04 18:00:00 | 标签: Node.js, 恶意软件投递, 供应链安全, EtherHiding, ClickFix
+
+> 自 2026 年 2 月以来，威胁行为者在针对政府、科技和酒店行业的攻击中，频繁使用 Node.js 运行时来部署恶意软件。通过下载官方安装程序并执行恶意脚本，攻击者能够建立长期访问权限，并利用 EtherHiding 等技术隐藏命令与控制通信。这种手法因其合法性和隐蔽性，已被多个组织采用，包括与 ModeloRAT 和 Mistic 后门相关的攻击。
+
+
+
 ### [修复-navigator-clipboard-writeText-瞬时激活问题](https://www.sitepoint.com/fix-navigator-clipboard-writetext-transient-activation-async-javascript/?utm_source=rss)
 
 2026-09-04 02:23:35
@@ -774,7 +798,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -786,7 +810,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2064,13 +2088,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2220,13 +2244,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3720,13 +3744,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5430,13 +5454,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

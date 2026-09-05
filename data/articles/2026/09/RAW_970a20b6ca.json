@@ -1,0 +1,44 @@
+{
+  "id": "RAW_970a20b6ca",
+  "title": "Tensorbrife",
+  "url": "https://dev.to/tj_june_ac955b786549655fe/tensorbrife-9g",
+  "date": "2026-09-04 22:54:02",
+  "author": "TJ June",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Are you strangling to read ai and machine learning papers together with research papers daily\n   <br>\n   It is tired some to read them daily that is why we have Tensorbrife\n   <br>\n   Tensorbrife is a platform that collects daily ai and machine learning together with research papers and converts them into listenable podcast without straining to read\n   <br>\n   Daily hugging face papers drops daily and Tensorbrife does the hard work to convert them to podcasts and explainer videos join today and start listening for free podcasts <a href=\"https://tensorbrife.site/\" target=\"_blank\" rel=\"noopener noreferrer\"></a></p>\n </body>\n</html>",
+  "aiSummary": "Tensorbrife 是一个能够将 Hugging Face 等来源的每日 AI 与机器学习研究论文自动转换为播客和讲解视频的平台。",
+  "oneSentenceSummary": "Tensorbrife 是一个能够将 Hugging Face 等来源的每日 AI 与机器学习研究论文自动转换为播客和讲解视频的平台。",
+  "summary": "Tensorbrife 旨在缓解用户在应对每日海量 AI 与机器学习研究论文时产生的疲劳感。该平台通过聚合最新的研究成果（特别是来自 Hugging Face 的内容），自动将技术论文转换为音频播客和讲解视频，使用户无需进行高强度的阅读即可获取复杂的科研内容。",
+  "mainPoints": [
+    {
+      "point": "解决 AI 研究中的信息过载问题",
+      "explanation": "该平台通过提供替代性的消费格式，解决了用户难以跟上每日大量 AI 与机器学习论文发布的问题。"
+    },
+    {
+      "point": "自动转换为音频与视频",
+      "explanation": "Tensorbrife 实现了将文本格式的研究论文自动转换为播客和讲解视频的过程，旨在提高技术内容的可访问性。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "AI 前沿研究",
+    "Hugging Face",
+    "机器学习",
+    "AI 产品与应用",
+    "生产力工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 74,
+  "wordCount": 82,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788533642000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-04 22:54:02"
+}

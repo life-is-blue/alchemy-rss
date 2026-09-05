@@ -1,0 +1,48 @@
+{
+  "id": "RAW_7f497548a5",
+  "title": "五种营销人员可以使用 Genie One 的方式",
+  "url": "https://www.databricks.com/blog/five-ways-marketers-can-use-genie-one",
+  "date": "2026-09-05 03:00:00",
+  "author": "Cynthya Peranandam, Sydney Sundell",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>• Drive revenue impact by translating governed data into actionable marketing insights in real-time\n   <br>\n   • Improve campaign ROI by uncovering cross-channel performance trends without relying on manual reporting\n   <br>\n   • Accelerate speed-to-market for marketing strategies by empowering teams to explore customer and pipeline data independently</p>\n </body>\n</html>",
+  "aiSummary": "Genie One 帮助营销人员通过实时将受控数据转化为可执行洞察来推动收入增长，通过跨渠道趋势分析提高活动 ROI，并通过独立数据探索加速战略制定。",
+  "oneSentenceSummary": "Genie One 帮助营销人员通过实时将受控数据转化为可执行洞察来推动收入增长，通过跨渠道趋势分析提高活动 ROI，并通过独立数据探索加速战略制定。",
+  "summary": "本文重点介绍了使用 Genie One 进行营销的五大优势：1) 通过提供受控数据的实时、可执行洞察来推动收入增长；2) 通过揭示跨渠道性能趋势而无需手动报告来提高活动 ROI；3) 通过允许团队独立探索客户和管道数据来加速上市速度；4) 通过确保访问干净、一致的数据集来增强数据治理；5) 通过打破数据孤岛并实现共享洞察来改善协作。",
+  "mainPoints": [
+    {
+      "point": "通过实时将受控数据转化为可执行营销洞察来推动收入增长。",
+      "explanation": "Genie One 允许营销人员快速解读复杂数据集，识别优化活动和推动销售的机会，而无需等待手动分析。"
+    },
+    {
+      "point": "通过揭示跨渠道性能趋势而无需依赖手动报告来提高活动 ROI。",
+      "explanation": "该平台提供自动化、跨渠道分析，揭示哪些营销渠道表现最佳，从而帮助更有效地分配预算并提高投资回报率。"
+    },
+    {
+      "point": "通过赋能团队独立探索客户和管道数据来加速营销战略的上市速度。",
+      "explanation": "使用 Genie One，营销团队可以直接访问和分析数据，减少等待 IT 或数据科学团队准备报告的时间，从而加快决策过程。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "营销分析",
+    "数据治理",
+    "实时洞察",
+    "活动优化",
+    "数据探索"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 44,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788548400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-05 03:00:00"
+}
