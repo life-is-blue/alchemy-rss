@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-05 09:56:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-05 14:31:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -638,25 +638,19 @@
 
 ### [SubImage-|-Y-Combinator-的创始工程师](https://www.ycombinator.com/companies/subimage/jobs/NCTFgKK-founding-engineer)
 
-2026-09-04 20:01:07 | 标签: Y Combinator, 安全, 分布式系统, AWS, Python
-
-> SubImage 绘制基础设施图，帮助安全团队发现和修复漏洞。公司正在寻找一位在分布式系统和云技术方面具有经验的创始工程师，来处理新型安全问题，包括漏洞上下文化、代理生成的修复验证以及实时环境跟踪。该职位提供具有竞争力的薪资、股权和福利，并强调在旧金山的面对面协作。
+2026-09-04 20:01:07
 
 
 
 ### [Kubernetes-推广-KYAML：更安全、更一致的清单处理方式](https://www.infoq.com/news/2026/09/kubernetes-kyaml-manifests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-04 20:00:00 | 标签: Kubernetes, 云原生/DevOps, 平台工程, 开发者工具, YAML
-
-> Kubernetes 正在鼓励开发人员采用 KYAML，这是一个旨在使集群配置更加显式、更不易出错的严格 YAML 方言。KYAML 在 v1.34 中作为 alpha 功能引入，并在 v1.35 中作为 beta 功能默认启用，它使用花括号表示对象、方括号表示数组、双引号表示字符串，同时保留注释并保持 YAML 有效性，因此无需新的解析器或生态系统。这一时机值得注意：随着 Helm、GitOps 平台、基础设施即代码系统和 AI 编码代理越来越多地生成或修改清单，传统块式 YAML 的歧义对于缺乏人类上下文判断的自动化系统来说变得更加重要。KYAML 减少了句法选择，使结构和类型相关的错误更...
+2026-09-04 20:00:00
 
 
 
 ### [从-S3-到-GPU-一步到位：重新思考-ML-训练的数据加载](https://www.infoq.com/presentations/vortex-columnar-file-format-gpu-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-04 19:00:00 | 标签: 云原生/DevOps, 分布式系统, 系统设计, 性能优化, 机器学习
-
-> SpiralDB 的 Onur Satici 介绍了 Vortex，这是一个开源的列式文件格式，旨在消除阻碍现代 ML 训练工作负载的多跳数据管道（S3 → NVMe → RAM 解压缩 → PCIe → GPU）。Vortex 使用分离的逻辑/物理类型、轻量级级联编码（字典、运行结束、位打包），以及能够进行块级和行级裁剪的区域图布局，确保只有相关字节范围到达计算引擎。由于压缩是可切片的，GPU 可以通过零拷贝直接内存访问直接从网络缓冲区进行解压缩，相比 Parquet，S3 到 GPU 的扫描速度提高了约 30 倍，随机访问速度提高了 100 倍以上。扫描层将控制平面（用于分发 CUDA 内...
+2026-09-04 19:00:00
 
 
 
