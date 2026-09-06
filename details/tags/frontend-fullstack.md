@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-06 07:28:44 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-06 09:51:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -756,6 +756,30 @@
 
 
 
+### [编织无限织机：用-Three.js-将图像拆解为线条](https://tympanus.net/codrops/2026/09/05/building-an-infinite-loom-unravelling-images-into-threads-with-three-js/)
+
+2026-09-05 20:50:25 | 标签: Three.js, 创意编程, WebGL, Shader 开发, 实时渲染
+
+> Clément Grellier 的 Unwoven 项目将普通图像滑块转变为纺织动画：照片在进入视口时交织在一起，离开视口时则散开为飘动的丝线。该技法避免了共用顶点面片产生的橡胶状拉伸间隙，转而构建 26 条独立丝带，每条贴图对应图像的一个水平切片。一个 `tear` 值（中心为 0，边缘为 1）通过随机标量驱动逐线程位移，而 Fragment Shader 则在边缘处将颜色泛白后再淡出 alpha，从而隐藏丝线边缘。作者还列出了四个可调参数——线程数量、位移范围、撕裂曲线指数和区域大小——使同一套代码可呈现从撕纸到飘发的多种视觉效果。
+
+
+
+### [如何使用-Playwright-构建可靠的状态浏览器自动化](https://www.sitepoint.com/how-to-build-reliable-stateful-browser-automation-with-playwright/?utm_source=rss)
+
+2026-09-05 15:00:08 | 标签: Playwright, 测试与质量, 前端与 Web, 性能优化, 代码质量
+
+> 本文探讨了从简单的页面级脚本转向必须在身份验证、网络变更、重试和崩溃中生存的状态浏览器自动化工作流。文章将建议分为 20 个编号章节：（1）使用浏览器上下文而非独立页面进行会话隔离，（2）持久化并复用身份验证状态以避免重复登录流程，（3）区分浏览器状态与应用状态以防止重复变更，（4）为依赖会话的目标保持稳定的网络身份，（5）在浏览器启动时配置代理路由而非分散到页面逻辑中，（6）切勿将代理或凭据密钥提交到源代码，（7）等待有意义的条件而非任意超时，（8）仅对安全操作进行重试而非重启整个流程，（9）为每项外部等待设置明确限制，（10）失败时截取截图和诊断信息，（11）使用 Playwright 追...
+
+
+
+### [JavaScript-中文周刊-#251---把扫雷塞进-247-字节，JavaScript-也能极限压缩](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247549461&idx=1&sn=b14714e29fa644efded1d60eb44e37f1)
+
+2026-09-05 10:46:00 | 标签: JavaScript, 前端与 Web, 开源项目, Node.js, 框架与工具
+
+> 本期 JavaScript 中文周刊#251 按「本周热点」「快讯」「文章与视频」「代码与工具」「其他生态」「版本发布」六大板块组织。热点部分深入剖析 247 字节扫雷实现、Remix 3 RC 脱离 React 的战略意义、pnpm 12 Rust 重写兼容性，以及 htmx 4.0 迁移至 Fetch API 的改动要点；Zod 4.5 在深度文章中解释方法记忆化将单 schema 内存占用降低 9 倍。快讯收录 TypeScript 对 ambient 模块 import attribute 的支持、Svelte 与 Astro 月度动态。文章部分涵盖浏览器 WICG 邮件验证提案、Lo...
+
+
+
 ### [如何创建一个-Tor-退出节点](https://madpsy.uk/how-to-create-a-tor-exit-node/)
 
 2026-09-05 04:16:22
@@ -792,7 +816,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -804,7 +828,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2082,13 +2106,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2238,13 +2262,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3738,13 +3762,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5448,13 +5472,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

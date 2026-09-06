@@ -1,0 +1,56 @@
+{
+  "id": "RAW_2085fa0514",
+  "title": "编织无限织机：用 Three.js 将图像拆解为线条",
+  "url": "https://tympanus.net/codrops/2026/09/05/building-an-infinite-loom-unravelling-images-into-threads-with-three-js/",
+  "date": "2026-09-05 20:50:25",
+  "author": "Clément Grellier",
+  "siteName": "Codrops",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"ct-post-featured-img\">\n   <a href=\"https://tympanus.net/Development/Unwoven/\" target=\"_blank\" title=\"Building an Infinite Loom: Unravelling Images into Threads with Three.js Demo\"> <img src=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/09/unvowen_cover.png?x57826\" class=\"attachment-post-thumbnail size-post-thumbnail wp-post-image\" alt=\"\" decoding=\"async\" fetchpriority=\"high\" srcset=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/09/unvowen_cover.png?x57826 1200w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/09/unvowen_cover-400x300.png?x57826 400w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/09/unvowen_cover-150x112.png?x57826 150w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/09/unvowen_cover-768x576.png?x57826 768w\" sizes=\"(max-width: 1200px) 100vw, 1200px\"> </a>\n  </div>\n  <div class=\"ct-demo-links\">\n   <a class=\"ct-demo-link ct-demo-link--view\" target=\"_blank\" href=\"https://tympanus.net/Development/Unwoven/\">Demo</a> <a class=\"ct-demo-link ct-demo-link--github\" target=\"_blank\" href=\"https://github.com/clementgrellier/unwoven\">Code</a>\n  </div>\n  <p><strong><em>Editor’s Note:</em></strong> <em>Our Three.js Conference celebration takes a beautifully tactile turn today. Clément Grellier’s “Unwoven” transforms a simple image strip into something wonderfully alive, with photographs gently weaving themselves together and unraveling into threads as they move across the screen. A gorgeous example of how a little Three.js magic can make familiar UI feel completely unexpected.</em></p>\n  <div class=\"box-info\">\n   <p><strong>🧵 Get woven into the action!</strong> The very first Three.js Conference is coming to Paris, bringing the community together for two days of talks, ideas, and connections. Use code <code class=\"\" data-line=\"\">CODROPS</code> for <strong>15% off</strong> and <strong><a href=\"https://threejs.paris/tickets\" target=\"_blank\">get your ticket →</a></strong></p>\n  </div>\n  <p>Most image sliders move pictures around. This one takes them apart.</p>\n  <p><strong>Unwoven</strong> is an endless horizontal strip of image cards, with each card made up of 26 horizontal ribbons rather than a single rectangle. In the middle of the screen, the ribbons sit flush and the card reads as an ordinary photograph. Near either edge of the viewport, they slide out of frame at different speeds, splay apart, flutter, and bleach into the white of the page. Cards arriving from the right weave themselves together, while cards leaving on the left come undone.</p>\n  <p>Three.js, GSAP, two shaders, one HTML file, no build step.</p>\n  <figure class=\"wp-block-image size-large\">\n   <img decoding=\"async\" src=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Capture-decran-2026-08-31-155536-1200x565.png?x57826\" alt=\"\" class=\"wp-image-120136\" srcset=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Capture-decran-2026-08-31-155536-1200x565.png?x57826 1200w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Capture-decran-2026-08-31-155536-400x188.png?x57826 400w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Capture-decran-2026-08-31-155536-150x71.png?x57826 150w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Capture-decran-2026-08-31-155536-768x361.png?x57826 768w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Capture-decran-2026-08-31-155536-1536x723.png?x57826 1536w, https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Capture-decran-2026-08-31-155536-2048x964.png?x57826 2048w\" sizes=\"(max-width: 1200px) 100vw, 1200px\">\n  </figure>\n  <h2 class=\"wp-block-heading\">The mental model</h2>\n  <p>Each of the 26 bands is a <strong>ribbon</strong>: an independent piece of geometry, two vertices tall and 21 wide, textured with its own horizontal slice of the image. Stacked with no gaps, they form a seamless picture.</p>\n  <p>Each ribbon then derives two random numbers from its index, which determine how fast it escapes, how far it drifts, and how much it flutters. That difference is the entire effect.</p>\n  <h2 class=\"wp-block-heading\">Step 1: Give every thread its own vertices</h2>\n  <p>The obvious approach is to use one big plane with lots of horizontal subdivisions. Don’t. Neighbouring strips in a plane share vertices, and a shared vertex can only be in one place at a time. If strip 4 has slid 300px and strip 5 has slid 80px, the vertex between them has to pick one position, stretching the geometry to cover the difference. You get a rubbery membrane instead of a gap.</p>\n  <p>So, build the threads separately, each with its own vertices:</p>\n  <pre class=\"wp-block-prismatic-blocks\"><code class=\"\" data-line=\"\">for (let t = 0; t &lt; 26; t++) {\n  for (let row = 0; row &lt; 2; row++) {          // top and bottom edge\n    const v = (t + row) / 26;\n    for (let c = 0; c &lt;= segments; c++) {\n      const u = c / segments;\n      position.push((u - 0.5) * width, (v - 0.5) * height, 0);\n      uv.push(u, v);                           // still spans the whole card\n      rim.push(row === 0 ? -1 : 1);            // which edge of the thread\n      threadId.push(t);                        // used as a random seed\n    }\n  }\n}</code></pre>\n  <h2 class=\"wp-block-heading\">Step 2: Slide each thread at a random speed</h2>\n  <p>First, one number telling the shader how close a card is to an edge. Call it <code class=\"\" data-line=\"\">tear</code>: 0 in the middle of the screen, 1 at the edge.</p>\n  <pre class=\"wp-block-prismatic-blocks\"><code class=\"\" data-line=\"\">float tear = max(\n  1.0 - smoothstep(-halfWidth, -halfWidth + zone, x),\n  smoothstep(halfWidth - zone, halfWidth, x)\n);</code></pre>\n  <p>Then slide:</p>\n  <pre class=\"wp-block-prismatic-blocks\"><code class=\"\" data-line=\"\">float rnd = hash(threadId + seed);\nworld.x += direction * pow(tear, 1.4) * (60.0 + rnd * 420.0);</code></pre>\n  <p>That’s the whole effect. <code class=\"\" data-line=\"\">rnd</code> differs per thread, so they all travel different distances. Widen <code class=\"\" data-line=\"\">60.0 + rnd * 420.0</code> and it reads as a comb; narrow it and it reads as motion blur.</p>\n  <h2 class=\"wp-block-heading\">Step 3: Open gaps and fade out</h2>\n  <p>The threads are moving apart, but each is still a full-height rectangle, so they still tile with no gaps. Make the gaps by hiding each thread’s edges in the fragment shader:</p>\n  <pre class=\"wp-block-prismatic-blocks\"><code class=\"\" data-line=\"\">float edge  = abs(rim);                  // 0 at the thread's middle, 1 at its edge\nfloat width = mix(0.8, 0.2, tear);       // visible width: nearly all, then a core\nfloat alpha = 1.0 - smoothstep(width, width + 0.06, edge);\n\nalpha = mix(1.0, alpha, smoothstep(0.03, 0.30, tear));   // no gaps until they move\n\ncolor = mix(color, vec3(1.0), smoothstep(0.55, 1.0, tear) * 0.8);   // whiten\nalpha *= 1.0 - smoothstep(0.75, 1.0, tear) * 0.65;                  // then vanish</code></pre>\n  <p>Two things there are worth knowing. The <code class=\"\" data-line=\"\">mix(1.0, alpha, ...)</code> line forces alpha to exactly 1 while a card is mid-screen, so a woven card looks identical to a plain photo. And whitening before fading matters: fading alpha alone leaves see-through coloured lines, whereas whitening first means the threads have almost become the page before they disappear.</p>\n  <h2 class=\"wp-block-heading\">Things worth playing with</h2>\n  <p><code class=\"\" data-line=\"\">60.0 + rnd * 420.0</code>: controls how staggered the threads are. This is the single biggest lever.</p>\n  <p><code class=\"\" data-line=\"\">26</code> threads: around 8 looks like torn paper, while 60 looks like hair.</p>\n  <p><code class=\"\" data-line=\"\">pow(tear, 1.4)</code>: raise the value to keep the photo together longer.</p>\n  <p>The size of the tear zone: controls how much of the screen unravels at once.</p>\n  <figure class=\"wp-block-video\">\n   <video height=\"1202\" style=\"aspect-ratio: 2538 / 1202;\" width=\"2538\" autoplay loop muted src=\"https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2026/08/Unwovenaninfiniteloomofimages-GoogleChrome2026-08-3115-55-54-ezgif.com-crop-video.mp4?x57826\" playsinline></video>\n  </figure>\n </body>\n</html>",
+  "aiSummary": "Unwoven Three.js 演示的技术解析，展示如何通过逐线程顶点几何与撕裂 Shader 效果，将图像条带转化为动态丝带。",
+  "oneSentenceSummary": "Unwoven Three.js 演示的技术解析，展示如何通过逐线程顶点几何与撕裂 Shader 效果，将图像条带转化为动态丝带。",
+  "summary": "Clément Grellier 的 Unwoven 项目将普通图像滑块转变为纺织动画：照片在进入视口时交织在一起，离开视口时则散开为飘动的丝线。该技法避免了共用顶点面片产生的橡胶状拉伸间隙，转而构建 26 条独立丝带，每条贴图对应图像的一个水平切片。一个 `tear` 值（中心为 0，边缘为 1）通过随机标量驱动逐线程位移，而 Fragment Shader 则在边缘处将颜色泛白后再淡出 alpha，从而隐藏丝线边缘。作者还列出了四个可调参数——线程数量、位移范围、撕裂曲线指数和区域大小——使同一套代码可呈现从撕纸到飘发的多种视觉效果。",
+  "mainPoints": [
+    {
+      "point": "独立丝带几何避免共用顶点拉伸",
+      "explanation": "单个细分面片会迫使相邻条带共享顶点，导致无法让邻居丝带以不同速率滑动而不扭曲网格。将 26 条线程各自构建为独立的几何体、拥有独立顶点，从根本上消除了这一问题。"
+    },
+    {
+      "point": "简单的撕裂值驱动整个动画",
+      "explanation": "`tear` 均匀量从屏幕中心的 0 变化到边缘的 1。每个线程的随机标量乘以 tear 的幂函数来控制位移距离，使边缘附近的线程比中间线程移动得更远、更快。"
+    },
+    {
+      "point": "先泛白再淡出 alpha 避免彩色残影",
+      "explanation": "仅淡出 alpha 会留下半透明的彩色短线；Shader 先将线程颜色混合为白色，再淡出 alpha，使线程在消失前视觉上的已与页面背景融为一体。"
+    },
+    {
+      "point": "四个可调参数实现广泛的视觉范围",
+      "explanation": "线程数量（约 8 条类似撕纸，60 条类似头发）、位移范围、tear 的幂指数以及撕裂区域宽度——每个参数都能大幅改变视觉效果，而底层代码保持不变。"
+    }
+  ],
+  "keyQuotes": [
+    "大多数图像滑块只是让图片移动位置，而这个滑块会把它拆散。",
+    "平面中相邻的条带共享顶点，而一个共享顶点同一时刻只能处于一个位置。如果第 4 条滑动了 300px，第 5 条只滑动了 80px，它们之间的顶点必须选择一个位置，几何体就会被拉伸以填补差异。最终得到的是一块橡胶膜，而不是间隙。",
+    "先泛白再淡出的处理很关键：仅淡出 alpha 会留下半透明的彩色线条，而先泛白处理意味着线程几乎已经融入页面再消失。"
+  ],
+  "tags": [
+    "Three.js",
+    "创意编程",
+    "WebGL",
+    "Shader 开发",
+    "实时渲染"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 81,
+  "wordCount": 788,
+  "domain": "tympanus.net",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_ec8f7304",
+  "sourceName": "Codrops",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788612625000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-05 20:50:25"
+}
