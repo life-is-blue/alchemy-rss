@@ -1,0 +1,50 @@
+{
+  "id": "RAW_b32f91fd90",
+  "title": "Ask HN：面对 LLM 网络攻击，我们的密码管理器有多安全？",
+  "url": "https://news.ycombinator.com/item?id=49588597",
+  "date": "2026-09-07 01:12:18",
+  "author": "muddi900",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <center>\n   <table id=\"hnmain\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"85%\" bgcolor=\"#f6f6ef\">\n    <tbody>\n     <tr>\n      <td bgcolor=\"#ff6600\">\n       <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"padding:2px\">\n        <tbody>\n         <tr>\n          <td style=\"width:18px;padding-right:4px\"><a href=\"https://news.ycombinator.com\"><img src=\"https://news.ycombinator.com/y18.svg\" style=\"border:1px white solid; display:block\"></a></td>\n          <td style=\"line-height:12pt; height:10px;\"><span class=\"pagetop\"><b class=\"hnname\"><a href=\"https://news.ycombinator.com/news\">Hacker News</a></b><a href=\"https://news.ycombinator.com/newest\">new</a> | <a href=\"https://news.ycombinator.com/front\">past</a> | <a href=\"https://news.ycombinator.com/newcomments\">comments</a> | <a href=\"https://news.ycombinator.com/ask\">ask</a> | <a href=\"https://news.ycombinator.com/show\">show</a> | <a href=\"https://news.ycombinator.com/jobs\">jobs</a> | <a href=\"https://news.ycombinator.com/submit\" rel=\"nofollow\">submit</a></span></td>\n          <td style=\"text-align:right;padding-right:4px;\"><span class=\"pagetop\"><a href=\"https://news.ycombinator.com/login?goto=item%3Fid%3D49588597\">login</a></span></td>\n         </tr>\n        </tbody>\n       </table>\n      </td>\n     </tr>\n     <tr style=\"height:10px\"></tr>\n     <tr id=\"bigbox\">\n      <td>\n       <table class=\"fatitem\" border=\"0\">\n        <tbody>\n         <tr class=\"athing submission\" id=\"49588597\">\n          <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\"></span></td>\n          <td valign=\"top\" class=\"votelinks\">\n           <center>\n            <a id=\"up_49588597\" href=\"https://news.ycombinator.com/vote?id=49588597&amp;how=up&amp;goto=item%3Fid%3D49588597\"></a>\n           </center>\n          </td>\n          <td class=\"title\"><span class=\"titleline\"><a href=\"https://news.ycombinator.com/item?id=49588597\">Ask HN: How safe are our password managers in face of LLM cyber attacks?</a></span></td>\n         </tr>\n         <tr>\n          <td colspan=\"2\"></td>\n          <td class=\"subtext\"><span class=\"subline\"><span class=\"score\" id=\"score_49588597\">2 points</span> by <a href=\"https://news.ycombinator.com/user?id=muddi900\" class=\"hnuser\">muddi900</a> <span class=\"age\" title=\"2026-09-06T17:12:18.000000Z\"><a href=\"https://news.ycombinator.com/item?id=49588597\">1 hour ago</a></span> <span id=\"unv_49588597\"></span> | <a href=\"https://news.ycombinator.com/hide?id=49588597&amp;goto=item%3Fid%3D49588597\">hide</a> | <a href=\"https://hn.algolia.com/?query=Ask%20HN%3A%20How%20safe%20are%20our%20password%20managers%20in%20face%20of%20LLM%20cyber%20attacks%3F&amp;type=story&amp;dateRange=all&amp;sort=byDate&amp;storyText=false&amp;prefix&amp;page=0\" class=\"hnpast\">past</a> | <a href=\"https://news.ycombinator.com/fave?id=49588597&amp;auth=fd7c8592bf0c589fb72484569fd27460918056a5\">favorite</a> | <a href=\"https://news.ycombinator.com/item?id=49588597\">discuss</a></span></td>\n         </tr>\n         <tr>\n          <td colspan=\"2\"></td>\n          <td>\n           <div class=\"toptext\" style=\"margin-top:4px\">\n            Hey\n            <p>With LLMs having infinite attack resources compared to human researchers, how safe are we?</p>\n            <p>We already know that you don't need top tier frontier models to create an attack vector. You can just loop a mid-sized model until it bears result. Or run a small swarm of agents to achieve the same goal</p>\n            <p>How long until a criminal actor with running exo[1] over 2 mac studios breaches password managers?</p>\n            <p>I understand that the storage of passwords might be encrypted, but they might find vulnerabilities at the client or transport level.</p>\n            <p>How may we mitigate this?</p>\n            <p>[1] https://news.ycombinator.com/item?id=49585683</p>\n           </div>\n          </td>\n         </tr>\n         <tr style=\"height:6px\"></tr>\n         <tr>\n          <td colspan=\"2\"></td>\n          <td>\n           <form action=\"comment\" method=\"post\">\n            <input type=\"hidden\" name=\"parent\" value=\"49588597\"><input type=\"hidden\" name=\"goto\" value=\"item?id=49588597\"><input type=\"hidden\" name=\"hmac\" value=\"cb51a69d5d41096c8687d5e2605a7a3199cf1d70\"><textarea name=\"text\" rows=\"8\" cols=\"80\" wrap=\"virtual\" style=\"vertical-align:bottom\"></textarea>&nbsp;<a href=\"https://news.ycombinator.com/formatdoc\" tabindex=\"-1\"><span size=\"-2\" color=\"#AFAFAF\">help</span></a>\n            <br>\n            <br>\n            <input type=\"submit\" value=\"add comment\">\n           </form>\n          </td>\n         </tr>\n        </tbody>\n       </table>\n       <br>\n       <table border=\"0\" class=\"comment-tree\"></table>\n      </td>\n     </tr>\n     <tr>\n      <td><img src=\"https://news.ycombinator.com/s.gif\">\n       <table width=\"100%\" cellspacing=\"0\" cellpadding=\"1\">\n        <tbody>\n         <tr>\n          <td bgcolor=\"#ff6600\"></td>\n         </tr>\n        </tbody>\n       </table>\n       <br>\n       <center>\n        <span class=\"yclinks\"><a href=\"https://news.ycombinator.com/newsguidelines.html\">Guidelines</a> | <a href=\"https://news.ycombinator.com/newsfaq.html\">FAQ</a> | <a href=\"https://news.ycombinator.com/lists\">Lists</a> | <a href=\"https://github.com/HackerNews/API\">API</a> | <a href=\"https://news.ycombinator.com/security.html\">Security</a> | <a href=\"https://www.ycombinator.com/legal/\">Legal</a> | <a href=\"https://www.ycombinator.com/apply/\">Apply to YC</a> | <a href=\"mailto:hn@ycombinator.com\">Contact</a></span>\n        <br>\n        <br>\n        <form method=\"get\" action=\"//hn.algolia.com/\">\n         Search: <input type=\"text\" name=\"q\" size=\"17\" autocorrect=\"off\" spellcheck=\"false\" autocapitalize=\"off\" autocomplete=\"off\">\n        </form>\n       </center></td>\n     </tr>\n    </tbody>\n   </table>\n  </center>\n </body>\n</html>",
+  "aiSummary": "该帖子质疑了密码管理器在 LLM 网络攻击面前的安全性，指出即使是中等规模的模型也能生成攻击向量，而一个智能体群集可能会突破系统，尽管存储是加密的。",
+  "oneSentenceSummary": "该帖子质疑了密码管理器在 LLM 网络攻击面前的安全性，指出即使是中等规模的模型也能生成攻击向量，而一个智能体群集可能会突破系统，尽管存储是加密的。",
+  "summary": "作者对密码管理器容易受到 LLM 网络攻击而感到担忧，认为 LLM 的无限攻击资源构成了重大威胁。他们指出，虽然密码可能是加密的，但客户端或传输层面的漏洞可能会被运行在 Mac Studio 等强大硬件上的智能体群集所利用。",
+  "mainPoints": [
+    {
+      "point": "LLM 拥有无限的攻击资源，而人类研究人员则有限。",
+      "explanation": "与受限于时间和认知能力的人类黑客不同，LLM 可以运行连续、高强度的攻击模拟，以寻找漏洞。"
+    },
+    {
+      "point": "中等规模的模型足以创建攻击向量。",
+      "explanation": "你不需要最先进的尖端模型；一个中等规模的模型可以被循环使用或用于群集中，最终发现漏洞。"
+    },
+    {
+      "point": "一个智能体群集可能会突破密码管理器。",
+      "explanation": "通过在强大硬件上运行多个攻击模型实例（例如 exo），犯罪分子可以系统地测试并利用客户端或传输层面的漏洞。"
+    }
+  ],
+  "keyQuotes": [
+    "与人类研究人员相比，LLM 拥有无限的攻击资源，我们有多安全？"
+  ],
+  "tags": [
+    "网络安全",
+    "LLM",
+    "密码管理器",
+    "攻击向量",
+    "智能体群集"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 161,
+  "domain": "news.ycombinator.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788714738000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-07 01:12:18"
+}

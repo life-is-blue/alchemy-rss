@@ -1,0 +1,55 @@
+{
+  "id": "RAW_2ba496289c",
+  "title": "Google Mantis：用于减少误报的智能体漏洞扫描工具",
+  "url": "https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-06 20:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has open-sourced <a href=\"https://cloud.google.com/blog/products/identity-security/getting-started-with-the-mantis-harness-to-find-and-fix-bugs/\">Mantis, an AI-agent framework designed to automate the software vulnerability lifecycle</a>, from identifying and validating vulnerabilities to reproducing and fixing them. Google says it developed Mantis to address the high rate of false positives and hallucinated vulnerabilities produced by conventional AI-powered code scanning.</p>\n   <blockquote>\n    <p>While sloppiness in AI code scanning frequently leads to hallucinated bugs and weak true-positive rates under 7%, we designed Mantis to be effective by combining industry-standard agentic techniques like critic and review agents with sandboxed reproduction of vulnerabilities for grounding.</p>\n   </blockquote>\n   <p>Google explains that Mantis analyzes repository history, previous security fixes, architecture, and threat models rather than blindly scanning files using brute force. It then summarized the analyzed files into a hierarchical tree containing directory and repository-level context, reducing token usage by 85% while retaining important structural information.</p>\n   <p>Mantis uses industry-standard agentic techniques, such as critic and reviewer agents to filter out false positives and prioritize meaningful findings. It can also reproduce findings in a sandboxed environment, providing evidence that a finding is a real vulnerability in a safe and controlled way, rather than relying solely on the LLM's judgement.</p>\n   <p>Mantis is part of Google's \"[internal approach to find and fix vulnerabilities at machine-speed]\"(<a href=\"https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-cloud-security-uses-ai-internally\">https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-cloud-security-uses-ai-internally</a>). In addition to critic and reviewer agents, Mantis uses a strategist agent to evaluate the high-level code structure, threat models, and dependency graphs, as well as research agents that use internal code searches to examine raw source files in depth, tracing data flows, control flows, and sanitization logic.</p>\n   <p>Mantis is organized as a modular skill suite including over 15 tools that can be executed sequentially or in parallel, including <code>mantis-summarize</code>, <code>mantis-review</code>, <code>mantis-critic</code>, and many more. The stages communicate with one another by reading and writing to a shared state stored on disk.</p>\n   <p>Mantis supports <a href=\"https://github.com/google/mantis/blob/main/README_AGENTS.md#model-selection--efficiency-guidelines\">multiple models</a> as well as combining different models for different phases:</p>\n   <blockquote>\n    <p>To maximize the speed and efficiency of your automated pipeline, you should strategically pair the right AI model class with the specific task. You do not need to use the heaviest, most advanced frontier models for every stage.</p>\n   </blockquote>\n   <p>For example, Google recommends using a \"flash\" or \"lite\" model variant for tasks that do not require logic depth, such as rapid classification tasks using <code>mantis-researcher</code> or clustering of similar text patterns with <code>mantis-dedupe</code>. More powerful models are better suited for tasks requiring deep contextual understanding and zero-shot problem solving, such as <code>mantis-reproduce</code>, which writes functional crash reproducers, and <code>mantis-patch</code>, which generates side-effect-free fixes for the codebase.</p>\n   <p>Every vulnerability scanning system inevitably produces false positives, sometimes in a \"frustrating number\". Mantis addresses this with the <code>mantis-review</code> stage, which applies a rule-based negative filter to eliminate likely false positives. However, Google emphasizes that the filter should be used cautiously: low-risk findings should not automatically be classified as false positives, as an overly broad negative filter could reduce the system’s ability to detect genuine vulnerabilities.</p>\n   <p>Mantis is available on <a href=\"https://github.com/google/mantis\">GitHub</a>. You can get a detailed breakdown of all available stages and inter-stage contracts, along with best practices for using the framework, in the <a href=\"https://github.com/google/mantis/blob/main/README_AGENTS.md\">agent reference guide</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Mantis: An Agentic Vulnerability Scanning Harness for Reducing False Positives\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1788696000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 开源了 Mantis，这是一种 AI 智能体框架，通过上下文分析、沙箱化复现和多智能体协作来自动化漏洞扫描，大幅降低传统 AI 驱动扫描器的误报率。",
+  "oneSentenceSummary": "Google 开源了 Mantis，这是一种 AI 智能体框架，通过上下文分析、沙箱化复现和多智能体协作来自动化漏洞扫描，大幅降低传统 AI 驱动扫描器的误报率。",
+  "summary": "Google 已开源 Mantis，这是一个用于自动化漏洞全生命周期的 AI 智能体框架——涵盖识别、验证、复现与修复。传统的 AI 代码扫描器面临高误报率和幻觉漏洞的问题（真实阳性率通常不足 7%）。Mantis 通过将上下文仓库分析与行业标准的智能体模式相结合来应对这一挑战。Mantis 不进行粗暴的文件扫描，而是分析仓库历史、之前的安全修复、架构和威胁模型，将分析过的文件总结为分层树状结构，在保留结构化上下文的同时将 token 使用量减少 85%。该框架使用模块化的技能套件，包含 15 多种工具，以顺序或并行方式执行：审查者和复核者智能体用于过滤误报，战略家智能体评估高层结构和依赖图，研究智能体追踪数据流和净化逻辑。Mantis 支持多种模型类别，建议对快速分类任务使用更轻量的模型，对需要深度推理的任务（如漏洞复现和补丁生成）使用更强大的模型。审查阶段的基于规则的负过滤器进一步减少误报，但 Google 警告应避免过度宽泛的过滤。Mantis 已在 GitHub 上发布，并附有详细的智能体参考指南。",
+  "mainPoints": [
+    {
+      "point": "Mantis 将漏洞扫描从暴力扫描转变为上下文感知的仓库分析。",
+      "explanation": "Mantis 并非盲目扫描文件，而是分析仓库历史、之前的安全修复、架构和威胁模型，将分析过的文件总结为包含目录级和仓库级上下文的分层树状结构，在保留重要结构信息的同时将 token 使用量减少 85%。"
+    },
+    {
+      "point": "多智能体协作通过专门的角色显著降低误报率。",
+      "explanation": "Mantis 使用审查者和复核者智能体过滤误报，战略家智能体评估代码结构和威胁模型，研究智能体追踪原始源文件中的数据流和净化逻辑。沙箱化复现提供了实证依据，而非仅依赖 LLM 的判断。"
+    },
+    {
+      "point": "模型选择具有策略性：分类任务使用轻量模型，深度推理使用更强模型。",
+      "explanation": "Google 建议对快速分类任务（如 mantis-researcher、mantis-dedupe）使用 flash 或 lite 模型变体，而对需要深度上下文理解的任务（如漏洞复现 mantis-reproduce 和修复生成 mantis-patch）使用更强大的模型，从而优化速度及成本。"
+    },
+    {
+      "point": "Mantis 是模块化架构，15+ 种工具通过共享磁盘状态进行通信。",
+      "explanation": "该框架按模块化技能套件组织，各阶段按顺序或并行执行，并通过读写存储在磁盘上的共享状态进行通信。mantis-review 中的基于规则的负过滤器可消除可能的误报，但 Google 警告过度宽泛的过滤可能会遗漏真实漏洞。"
+    }
+  ],
+  "keyQuotes": [
+    "虽然 AI 代码扫描中的粗疏做法经常导致幻觉 bug 和低于 7% 的真实阳性率，但我们设计 Mantis 时结合了行业标准的智能体技术（如审查和复核智能体）与漏洞的沙箱化复现，以确保其有效性。",
+    "要最大化自动化流水线的速度和效率，您应战略性地将合适的 AI 模型类别与特定任务配对。您不需要在每个阶段都使用最重型、最先进的前沿模型。"
+  ],
+  "tags": [
+    "安全",
+    "AI 智能体",
+    "开发者工具",
+    "Google",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 506,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788696000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-06 20:00:00"
+}

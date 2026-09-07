@@ -1,0 +1,57 @@
+{
+  "id": "RAW_70d6fb045e",
+  "title": "WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你",
+  "url": "https://www.appinn.com/wintoastrelay/",
+  "date": "2026-09-07 00:09:36",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">在 Windows 用 Codex 时，会遇到一个小问题：</p>\n  <p class=\"wp-block-paragraph\">有些任务几分钟就结束，有些却要跑很久。一直守在电脑前没必要，但去做别的事情，又总忍不住隔一会儿回来看看：</p>\n  <p class=\"wp-block-paragraph\"><strong>“跑完了吗？”</strong></p>\n  <p class=\"wp-block-paragraph\">既然 Codex 在任务完成或出错时都会发送 Windows 系统通知，能不能把这些通知直接推送到手机上？</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/Copy-of-appinn-homework-2026-09-06T160320.151.jpg\" alt=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 1\" class=\"wp-image-59325\" title=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 1\">\n  </figure>\n  <p class=\"wp-block-paragraph\">来自<a href=\"https://meta.appinn.net/c/faxian/10\" target=\"_blank\" rel=\"noopener\"><strong>发现频道</strong></a>，开发者 @RavelloH 自荐：<a href=\"https://meta.appinn.net/t/topic/90991\" target=\"_blank\" rel=\"noopener\">https://meta.appinn.net/t/topic/90991</a></p>\n  <p class=\"wp-block-paragraph\"><strong>WinToastRelay</strong> 就是单纯的将 <strong>Windows 通知实时转发</strong>到 <strong>Bark、WxPusher 或 Webhook</strong> 等渠道。</p>\n  <p class=\"wp-block-paragraph\">这样就可以实现：Codex 出现新的通知后，手机接收到消息。无论是任务完成、任务失败，或者彻底挂了等情况。</p>\n  <p class=\"wp-block-paragraph\"><strong>不止是 Codex</strong>，只要发送系统通知的软件，都可以。</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/fff9ff506ee695ccdff116a3c82e9e7e2f239954.avif\" alt=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 2\" class=\"wp-image-59324\" title=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 2\">\n  </figure>\n  <p class=\"wp-block-paragraph\">除了可以选择不同的渠道进行转发：</p>\n  <figure class=\"wp-block-image size-large\">\n   <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/a/a/aa1b647b2d64df5a8aabd05d442d167c7b21ad3b_2_1380x924.jpeg\" alt=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 3\" title=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 3\">\n  </figure>\n  <p class=\"wp-block-paragraph\">还能筛选不同的应用：</p>\n  <figure class=\"wp-block-image size-large\">\n   <img decoding=\"async\" src=\"https://h2cdn.appinn.me/original/3X/9/e/9e748deb7213b1df7bd2dc147a19b8065999542b.jpeg\" alt=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 4\" title=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 4\">\n  </figure>\n  <h3 class=\"wp-block-heading\">针对 iOS 与 Codex</h3>\n  <p class=\"wp-block-paragraph\">开发者建议 iOS 建议直接使用 Bark；安卓的通知稍微繁琐一些，大部分都需要外接各种通知服务（如 wxpusher 等），或者接入飞书/钉钉之类的平台，这里已经适配了 wxpusher。也提供 Webhook：</p>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <pre class=\"brush: plain; title: ; notranslate\" title=\"\">{\n  \"eventType\": \"notification.added\",\n  \"deliveryId\": \"a-generated-id\",\n  \"notification\": {\n    \"id\": 123,\n    \"app\": \"Example app\",\n    \"title\": \"A title\",\n    \"body\": \"Notification body\",\n    \"createdAt\": \"2026-08-20T00:00:00Z\"\n  }\n}\n</pre>\n  </div>\n  <p class=\"wp-block-paragraph\">此外，建议在 CodeX 设置中打开始终通知，防止 CodeX 在前台就不发送通知了。</p>\n  <p class=\"wp-block-paragraph\"><a href=\"https://h2cdn.appinn.me/original/3X/a/e/ae814c1cfe494f1ff1cc4571c2749364269d2930.png\" rel=\"nofollow noopener\" target=\"_blank\"><img fetchpriority=\"high\" decoding=\"async\" srcset=\"https://h2cdn.appinn.me/optimized/3X/a/e/ae814c1cfe494f1ff1cc4571c2749364269d2930_2_690x215.png, https://h2cdn.appinn.me/optimized/3X/a/e/ae814c1cfe494f1ff1cc4571c2749364269d2930_2_1035x322.png 1.5x, https://h2cdn.appinn.me/original/3X/a/e/ae814c1cfe494f1ff1cc4571c2749364269d2930.png 2x\" src=\"https://h2cdn.appinn.me/optimized/3X/a/e/ae814c1cfe494f1ff1cc4571c2749364269d2930_2_690x215.png\" alt=\"image\" title=\"WinToastRelay – 将 Windows 系统通知转发到手机｜Codex 跑完，手机会叫你 5\"></a></p>\n  <p class=\"wp-block-paragraph\">软件在后台需要大概 14 MB 内存，请确保你的电脑具有至少 20 MB 可用运行内存。</p>\n  <h2 class=\"wp-block-heading\">获取</h2>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://apps.microsoft.com/detail/9MV8SL6JLV2D\" target=\"_blank\" rel=\"noopener\">微软商店</a></li>\n   <li><a href=\"https://github.com/RavelloH/WinToastRelay\" target=\"_blank\" rel=\"noopener\">GitHub</a></li>\n   <li><a href=\"https://meta.appinn.net/t/topic/90991\" target=\"_blank\" rel=\"noopener\">发现频道</a></li>\n  </ul>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：https://www.appinn.com/wintoastrelay/</p>\n  <h3 class=\"wp-block-heading\">最后，可以在移动端接收通知的应用</h3>\n  <h3 class=\"wp-block-heading\">iOS</h3>\n  <p class=\"wp-block-paragraph\"><strong>Bark</strong>：<a href=\"https://www.appinn.com/bark-for-iphone/\" data-type=\"post\" data-id=\"31470\">Bark – 自己给自己的 iPhone 发推送提醒 – 最简单的推送提醒服务，开源免费</a></p>\n  <p class=\"wp-block-paragraph\">首选。开源、简单，WinToastRelay 原生支持，收到 Windows 通知后可以直接通过 Bark 推送到 iPhone。支持通知分组、自定义铃声等功能，也可以自行部署服务器。</p>\n  <p class=\"wp-block-paragraph\"><strong>WxPusher</strong></p>\n  <p class=\"wp-block-paragraph\">同时支持 iOS，如果已经在使用 WxPusher，也可以直接作为 WinToastRelay 的接收端。</p>\n  <p class=\"wp-block-paragraph\"><strong>ntfy</strong></p>\n  <p class=\"wp-block-paragraph\">开源的通知服务，提供 iOS 客户端，并支持自行部署。WinToastRelay 可以通过 Webhook 与其配合，比较适合希望自己掌控通知服务的用户。</p>\n  <h3 class=\"wp-block-heading\">Android</h3>\n  <p class=\"wp-block-paragraph\"><strong>WxPusher</strong></p>\n  <p class=\"wp-block-paragraph\">Android 首选。支持国内常见手机厂商的系统推送，不需要为了接收通知让应用一直在后台运行，WinToastRelay 也提供了原生支持。</p>\n  <p class=\"wp-block-paragraph\"><strong>ntfy</strong></p>\n  <p class=\"wp-block-paragraph\">同时提供 Android 客户端，开源并支持自托管，可以通过 Webhook 接收 WinToastRelay 转发的通知。</p>\n  <p class=\"wp-block-paragraph\"><strong>Gotify</strong></p>\n  <p class=\"wp-block-paragraph\">另一款比较成熟的开源、自托管通知方案，提供 Android 客户端。适合已经有服务器、希望自己搭建完整通知服务的用户。</p>\n </body>\n</html>",
+  "aiSummary": "WinToastRelay 可将 Windows 系统通知实时转发到手机，支持 Bark、WxPusher、ntfy 和 Webhook 等多种渠道，让 Codex 等长时间任务完成后自动推送提醒。",
+  "oneSentenceSummary": "WinToastRelay 可将 Windows 系统通知实时转发到手机，支持 Bark、WxPusher、ntfy 和 Webhook 等多种渠道，让 Codex 等长时间任务完成后自动推送提醒。",
+  "summary": "文章介绍了一款名为 WinToastRelay 的开源工具，由开发者 @RavelloH 提交至发现频道。该工具的核心功能是将 Windows 系统通知实时转发到手机，解决了用户在电脑前执行长时间任务（如运行 Codex）时无法随时查看进度、又忍不住频繁返回查看的问题。工具支持 Bark、WxPusher 等主流推送服务，也提供 Webhook 接口供自定义接入。针对不同平台，作者给出了推荐配置：iOS 首选 Bark，原生支持且功能完善；Android 则推荐 WxPusher，可适配国内厂商推送，或在已有服务上通过 ntfy/Gotify 自托管实现。工具内存占用约 14MB，从微软商店或 GitHub 均可获取。文末还整理了移动端可用的通知接收应用清单。",
+  "mainPoints": [
+    {
+      "point": "WinToastRelay 将 Windows 通知实时转发至手机端",
+      "explanation": "工具监听 Windows 系统通知并将其推送到 Bark、WxPusher 或 Webhook，实现任务完成/失败时手机即时收到提醒，适合 Codex 等长时间运行场景。"
+    },
+    {
+      "point": "平台差异化推荐配置",
+      "explanation": "iOS 用户建议使用 Bark，原生支持且功能完善；Android 用户推荐使用 WxPusher，可适配国产厂商推送，或通过 ntfy/Gotify 自建服务实现通知接收。"
+    },
+    {
+      "point": "适用于任意发送系统通知的应用",
+      "explanation": "不仅限于 Codex，任何会触发 Windows 通知的桌面软件均可通过 WinToastRelay 转发，扩展了工具的通用性。"
+    },
+    {
+      "point": "轻量且多通道获取",
+      "explanation": "工具后台内存占用约 14MB，提供微软商店和 GitHub 双渠道获取，便于不同习惯的用户安装。"
+    }
+  ],
+  "keyQuotes": [
+    "WinToastRelay 就是单纯的将 Windows 通知实时转发到 Bark、WxPusher 或 Webhook 等渠道。",
+    "不止是 Codex，只要发送系统通知的软件，都可以。",
+    "建议在 CodeX 设置中打开始终通知，防止 CodeX 在前台就不发送通知了。",
+    "软件在后台需要大概 14 MB 内存，请确保你的电脑具有至少 20 MB 可用运行内存。"
+  ],
+  "tags": [
+    "开发者工具",
+    "Windows",
+    "通知推送",
+    "自托管",
+    "开源项目"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 80,
+  "wordCount": 892,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1788710976000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-07 00:09:36"
+}

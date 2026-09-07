@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-07 07:22:16 | [返回首页](/README.md)
+**更新时间**: 2026-09-07 09:47:40 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15610)
+- [AI & 大模型](#ai-llm) (15648)
 - [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (978)
-- [DevOps](#devops) (743)
+- [前端与全栈](#frontend-fullstack) (979)
+- [DevOps](#devops) (745)
 - [产品与商业](#product-business) (50)
-- [其他](#other) (6850)
+- [其他](#other) (6855)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [异类心智](https://openai.com/index/an-alien-mind) - AI 精选
+- [研究加速：OpenAI-内部视角](https://openai.com/index/research-acceleration-view-inside-openai) - AI 精选
+- [OpenAI-GPT-6-Astra-实测：一句话，造出一栋可以走进去的房子](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111449&idx=1&sn=9555ea7535d35c4ddbbe47eec4a7f758) - AI 精选
 - [Physical-Intelligence-联创-Chelsea-Finn：物理-AI-已经走到自己的-GPT-时刻](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111344&idx=1&sn=3a45b99fdcae037944d29e13af398835) - AI 精选
 - [对卷卷的-3-小时访谈：从抖音到-AI-3D、创业的过山车、成为制造业-OS-的野心、基础模型不会吞噬一切！](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111315&idx=1&sn=7430e8e2a5e2db621fd56ae84529c7d7) - AI 精选
 - [大模型开网店，谁是经营高手？E-Commerce-Bench-开源揭秘](https://mp.weixin.qq.com/s?__biz=Mzk0ODg4NDI5NA==&mid=2247490168&idx=1&sn=2dcf2b5c2a3014c82e08882361d64221) - AI 精选
@@ -39,11 +42,8 @@
 - [设计一种持久化的知识层，拒绝随意猜测](https://towardsdatascience.com/designing-a-persistent-knowledge-layer-that-refuses-to-guess/) - AI 精选
 - [Multi-Agent-的新趋势：从-Agent-Team-到-Agent-Swarm](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518293&idx=1&sn=dc3d001cf756fd83a7cdf2fbdf177582) - AI 精选
 - [GLM-5.3：前沿编程能力与涌现的网络安全能力](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492) - AI 精选
-- [DeepSeek-Harness-开发者预览版：一切皆插件](https://mp.weixin.qq.com/s?__biz=MzY4NzM3MTkxOQ==&mid=2247483698&idx=1&sn=b7c8d125ac4fdfad1c4a5daedc73bcb8) - AI 精选
-- [多智能体系统的模式与问题](https://www.anthropic.com/research/multiagent-systems) - AI 精选
-- [NVIDIA-Nemotron-3.5-Lightning-为长期运行的智能体提供快速、精准的专用任务执行](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/) - AI 精选
 
-- [查看全部 15610 篇...](/details/tags/ai-llm.md)
+- [查看全部 15648 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 978 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 979 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 743 篇...](/details/tags/devops.md)
+- [查看全部 745 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 
-- [查看全部 6850 篇...](/details/tags/other.md)
+- [查看全部 6855 篇...](/details/tags/other.md)
 
 

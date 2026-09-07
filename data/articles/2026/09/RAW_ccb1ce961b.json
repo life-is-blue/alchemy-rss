@@ -1,0 +1,50 @@
+{
+  "id": "RAW_ccb1ce961b",
+  "title": "我每日追踪 LLM API 价格，发现同一模型存在 33 倍的价差",
+  "url": "https://news.ycombinator.com/item?id=49586810",
+  "date": "2026-09-06 22:23:53",
+  "author": "costpertoken",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": null,
+  "aiSummary": "对 OpenRouter 目录的每日爬取数据显示，面向编码智能体的「调用」（大上下文输入、代码输出）单次成本约为面向批量分类的「调用」（小上下文输入、文本输出）的 33 倍，这一规律在 GPT-5.6、Claude Sonnet 5 和 Gemini 3.7 Flash 上均成立。",
+  "oneSentenceSummary": "对 OpenRouter 目录的每日爬取数据显示，面向编码智能体的「调用」（大上下文输入、代码输出）单次成本约为面向批量分类的「调用」（小上下文输入、文本输出）的 33 倍，这一规律在 GPT-5.6、Claude Sonnet 5 和 Gemini 3.7 Flash 上均成立。",
+  "summary": "作者搭建了一个爬虫来每日追踪 LLM API 价格，发现调用形态不同会导致显著的成本差异。对于同一模型，面向编码智能体的「调用」（大上下文、代码输出）成本约为面向批量分类的「调用」（更小上下文、文本输出）的 33 倍。这一规律在三个不同提供商的模型上均被观察到，说明这是调用结构的固有属性，而非某一家供应商的定价策略。",
+  "mainPoints": [
+    {
+      "point": "调用形态导致的显著成本差异",
+      "explanation": "数据显示两类「调用」的定价存在明显差异。面向编码智能体的「调用」通常包含大输入上下文并生成代码，成本约为面向批量分类的「调用」的 33 倍，后者输入更小且输出文本。这说明输入的复杂度和输出的类型会显著影响单 token 成本。"
+    },
+    {
+      "point": "跨提供商的规律一致性",
+      "explanation": "GPT-5.6、Claude Sonnet 5 和 Gemini 3.7 Flash 这三款不同模型均稳定出现了 33 倍的价差。这一比率在毫无关联的定价表中几乎完全一致，说明这是行业通行做法或是模型的物理限制，而非某一家提供商的特殊定价规则。"
+    },
+    {
+      "point": "自动化追踪保障数据准确性",
+      "explanation": "作者指出，此前的定价对比往往很快过时。为解决这一问题，他搭建了一个每日爬虫，可对整个 OpenRouter 目录进行快照存档。这能确保数据实时更新，还可用于识别长期趋势或突发的价格变动。"
+    }
+  ],
+  "keyQuotes": [
+    "「我在 GPT-5.6、Claude Sonnet 5 和 Gemini 3.7 Flash 上分别验证了这一数据，得到的倍数分别是 33.6 倍、33.3 倍和 33.3 倍——尽管三者来自毫无关联的定价表，结果几乎完全一致。」"
+  ],
+  "tags": [
+    "LLM推理",
+    "AI工程",
+    "性能优化",
+    "AI产品与应用",
+    "开源权重模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 227,
+  "domain": "news.ycombinator.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788704633000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-06 22:23:53"
+}

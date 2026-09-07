@@ -1,0 +1,53 @@
+{
+  "id": "RAW_13ef6db52f",
+  "title": "TP-Link Archer 曝多个漏洞，可致远程代码执行",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651346270&idx=2&sn=46dd40ca5e86256743717d33102eb063",
+  "date": "2026-09-06 18:00:00",
+  "author": "FreeBuf",
+  "siteName": "FreeBuf",
+  "content": null,
+  "aiSummary": "TP-Link 披露 Archer AX55 v4 路由器的两个安全漏洞，其中 EasyMesh 组件栈缓冲区溢出漏洞（CVE-2026-18167）可致远程代码执行，Web 登录模块漏洞（CVE-2026-18330）可窃取管理员凭据，官方已发布固件修复。",
+  "oneSentenceSummary": "TP-Link 披露 Archer AX55 v4 路由器的两个安全漏洞，其中 EasyMesh 组件栈缓冲区溢出漏洞（CVE-2026-18167）可致远程代码执行，Web 登录模块漏洞（CVE-2026-18330）可窃取管理员凭据，官方已发布固件修复。",
+  "summary": "TP-Link 于 2026 年 9 月 3 日发布安全公告，披露 Archer AX55 v4 路由器存在两个安全漏洞。CVE-2026-18167 是 EasyMesh 组件中的栈缓冲区溢出漏洞，CVSS v4 评分为 7.7，高危等级，当启用 Mesh 模式时，本地网络攻击者可发送特制输入导致服务崩溃，甚至可能执行远程代码。CVE-2026-18330 影响 Web 登录模块，源于硬编码的共享 RSA-1024 私钥，本地攻击者可解密捕获的管理员密码，CVSS v4 评分为 6.1，中危等级。TP-Link 已发布固件版本 1.2.1 Build 20260527 修复，并建议用户更新固件、关闭不需要的 Mesh 模式、避免通过 HTTP 管理路由器及使用强密码。",
+  "mainPoints": [
+    {
+      "point": "EasyMesh 组件存在栈缓冲区溢出漏洞（CVE-2026-18167）",
+      "explanation": "该漏洞影响 Archer AX55 v4 的 EasyMesh 守护进程，在启用 Mesh 模式时，本地网络攻击者可通过发送特制输入导致服务崩溃，甚至可能执行远程代码。由于路由器位于本地网络与互联网之间，成功利用可能造成监控流量、篡改 DNS、重定向至恶意网站等严重后果。"
+    },
+    {
+      "point": "Web 登录模块存在硬编码私钥漏洞（CVE-2026-18330）",
+      "explanation": "该漏洞源于产品中嵌入硬编码的共享 RSA-1024 私钥，本地攻击者捕获基于 HTTP 的管理员登录会话后，可利用该私钥解密管理员密码。虽然不直接提供代码执行能力，但窃取管理员凭据可让攻击者控制关键配置设置，凸显了 HTTP 管理访问的风险。"
+    },
+    {
+      "point": "官方已发布修复固件并给出缓解建议",
+      "explanation": "TP-Link 已发布固件版本 1.2.1 Build 20260527 修复这两个漏洞，并建议用户尽快更新，同时关闭不需要的 Mesh 模式、避免通过 HTTP 管理路由器、使用强且唯一的管理员密码，并确保管理访问不暴露给不可信网络。"
+    }
+  ],
+  "keyQuotes": [
+    "TP-Link 披露了其 Archer AX55 v4 路由器中的两个安全漏洞，本地网络上的攻击者可利用这些漏洞导致服务崩溃、窃取管理员凭据，甚至可能在受影响设备上执行远程代码。",
+    "其中较为严重的是 CVE-2026-18167，这是路由器 EasyMesh 组件中的一个栈缓冲区溢出漏洞，CVSS v4 评分为 7.7，严重等级为\"高危\"。",
+    "第二个漏洞 CVE-2026-18330 影响 Archer AX55 v4 的 Web 登录模块。该漏洞源于产品中嵌入了一个硬编码的共享 RSA-1024 私钥。",
+    "成功入侵路由器的攻击者可能会尝试监控网络流量、篡改 DNS 设置、将用户重定向至恶意网站、扫描已连接设备，或将路由器作为跳板攻击更大范围的网络。"
+  ],
+  "tags": [
+    "安全",
+    "TP-Link",
+    "路由器漏洞",
+    "CVE-2026-18167",
+    "CVE-2026-18330"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 80,
+  "wordCount": 1182,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_05367037",
+  "sourceName": "FreeBuf",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1788688800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-06 18:00:00"
+}
