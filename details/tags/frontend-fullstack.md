@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-07 09:47:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-07 14:47:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -758,9 +758,7 @@
 
 ### [使用-MediaPipe、Threlte-和-Three.js-构建实时-3D-人脸面具](https://tympanus.net/codrops/2026/09/06/building-a-real-time-3d-face-mask-with-mediapipe-threlte-and-three-js/)
 
-2026-09-06 21:09:52 | 标签: Three.js, MediaPipe, Threlte, WebGL, 人脸追踪
-
-> 作者分享了使用 MediaPipe、Threlte 和 Three.js 创建实时 3D 人脸面具的全过程，讲解了如何使用 GPU 委托和视频模式初始化 MediaPipe 的 FaceLandmarker，以及如何在不触发 Svelte 响应式机制的前提下，高效将关键点数据传递给 Three.js。核心挑战包括从谷歌仓库恢复固定人脸拓扑、从标准 OBJ 模型转移 UV 坐标，以及将网格投影以匹配镜像、裁剪后的视频。文章还提供了缓冲几何体设置、UV 提取、逐帧位置更新的代码片段，并分享了透视投影与材质处理的相关经验。
+2026-09-06 21:09:52
 
 
 

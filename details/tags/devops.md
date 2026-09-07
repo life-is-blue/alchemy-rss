@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-07 09:47:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-07 14:47:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -638,17 +638,13 @@
 
 ### [FreeCORE：基于-FreeBSD-保持深度集成虚拟化、Jails-和-OpenZFS-的-TrueNAS-分支](https://www.infoq.com/news/2026/09/freecore-truenas-fork/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-06 14:06:00 | 标签: TrueNAS, FreeBSD, OpenZFS, 云原生 / DevOps, 虚拟化
-
-> 当 iXsystems 将 TrueNAS 工程转向基于 Debian 的 SCALE 时，FreeCORE 作为 TrueNAS CORE 的社区延续项目应运而生，将 13.3 基线升级至 FreeBSD 15.0，并通过 Jails、原生插件和 bhyve 恢复了深度集成的虚拟化功能。该分支凸显了一个真实的架构分歧：FreeBSD Jails 提供内核级隔离，部分存储工程师认为其优于 Linux 基于命名空间的容器方案；而 OpenZFS 原生加密目前也缺乏专职的 upstream 维护者。社区反应两极分化——一些人认为 upstream 移除构建脚本是对开源社会契约的背叛，另一些人则视其...
+2026-09-06 14:06:00
 
 
 
 ### [AMD-平台的-FreeBSD-桌面机重新打造](https://vermaden.wordpress.com/2026/09/06/amd-based-freebsd-desktop-reloaded/)
 
-2026-09-06 10:20:00 | 标签: FreeBSD, 硬件装机, AMD, Linux 内核驱动, 桌面计算
-
-> 作者为子女重新组装了一台小型台式机，采用 AMD Ryzen 7 4750GE 处理器、ASRock B550M-ITX/ac 主板和 ASRock Radeon 7700 XT 显卡，装入 Silverstone SG13 小机箱中。由于机箱空间有限，需要对显卡的塑料导流罩和扩展支架进行裁切。软件层面，系统运行 FreeBSD 15.1 配合 XLibre X11 与 amdgpu 驱动替代 Xorg，作者在解决缺失 iwmbt-firmware 的问题后完成了配置。文章中包含了完整的配件价格、功耗测量数据、内存与 CPU 统计信息，以及 pkgbase 升级流程。
+2026-09-06 10:20:00
 
 
 
