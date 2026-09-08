@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-08 10:00:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-08 14:50:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -638,33 +638,25 @@
 
 ### [Netflix-转向开源-Flink-自动扩缩器，管理-30，000+-流处理任务](https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-07 22:06:00 | 标签: Apache Flink, 自动扩缩, 流处理, Netflix, 云原生 / DevOps
-
-> Netflix 自 2017 年起运行 Apache Flink，并于 2019 年左右构建了首个自动扩缩器，该扩缩器利用 Atlas 的集群级遥测数据来调整 TaskManager 的总数，在数千条管道中实现了 25-45% 的资源使用率降低。然而，这种集群级的方法对于具有分支、连接和数 TB 状态等复杂且有状态的管道效果不佳，因为其中不同算子有不同的处理需求。Netflix 现在正转向开源 Apache Flink 自动扩缩器，该扩缩器使用运行中任务的指标来估算每个算子的真实处理速率，并根据 FLIP-271 中的描述为各个顶点计算所需并行度。该技术建立在 DS2 项目的研究成果之上，该项...
+2026-09-07 22:06:00
 
 
 
 ### [API-管理标准-v2-引入区域冗余](https://www.infoq.com/news/2026/09/apim-standard-v2-zone-redundancy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-07 18:09:00 | 标签: 云原生/DevOps, Microsoft, API 设计, 系统设计, Azure
-
-> Microsoft 已将区域冗余支持扩展至 Azure API 管理的标准 v2 层，该功能此前仅在高级 v2 中可用。这使团队能够以每月 700 美元/单元的成本将服务容量分布到多个可用区，显著低于高级 v2 的 2801 美元。然而，标准 v2 的 SLA 为 99.95%，而高级版为 99.99%，并且区域冗余无法在现有实例上启用——需要新部署并迁移 API、策略和证书。该功能自动将单个单元的计算资源分布到多个区，无需多个单元，但不能保证在区故障期间的容量，或防止故障转移时的配置数据丢失。标准 v2 还缺乏高级版的多区域部署、自托管网关和 VNET 注入等功能。Microsoft 建议评...
+2026-09-07 18:09:00
 
 
 
 ### [CERN-放弃-RHEL，为加速器控制基础设施选用-Debian](https://www.infoq.com/news/2026/09/cern-debian-infra/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-07 15:07:00 | 标签: Linux, 云原生/DevOps, 系统设计, Debian, 嵌入式系统
-
-> CERN 工程师正将其加速器控制设备群中的 2200 多台专用前端计算机和 17000 台嵌入式设备迁移至 Debian，目标是在 2026 年第四季度前完成迁移。此举源于红帽转向更高的 x86-64 微架构基线（v2 和 v3），这将淘汰为 10-15 年生命周期设计的老旧工业硬件。虽然 CERN 的大型数据中心和网格基础设施将继续使用 RHEL 和 AlmaLinux，但控制层需要 Debian 持续支持基线 x86-64（v1），以及其对 PREEMPT_RT 实时补丁集的兼容性，以满足低延迟调度需求。
+2026-09-07 15:07:00
 
 
 
 ### [优化平台工程规模，构建组织真正需要的平台](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651292535&idx=3&sn=feff9290058c82bd02d3f9614f133701)
 
-2026-09-07 13:47:00 | 标签: 平台工程, 内部开发者平台, GitOps, Kubernetes, DevOps
-
-> 本文基于 KubeCon EU 2026 大会演讲，讲述了荷兰电商 Wehkamp 从传统运维向平台工程转型的实践历程。作者 John Keates 回顾了十年前从季度发布到每周发布的「左移」变革，以及随之而来的认知负荷加重和运维工作膨胀问题。文章详细描述了从简单的 Terraform 自助服务机器人，到构建成熟的内部平台的演进过程：通过 Atlantis 自动化 Terraform 部署、引入 GitOps 流程、建立「黄金路径」与定制化的分层治理模型。作者强调平台工程的核心在于消除交付瓶颈的摩擦点，而非构建最全面的内部开发者平台；成功的平台应随着组织工程文化共同演进，在标准化与灵活性之间保...
+2026-09-07 13:47:00
 
 
 
