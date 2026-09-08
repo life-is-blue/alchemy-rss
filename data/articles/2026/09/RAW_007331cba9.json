@@ -1,0 +1,46 @@
+{
+  "id": "RAW_007331cba9",
+  "title": "工具：墨卡托投影 ↔ 等积地球投影",
+  "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
+  "date": "2026-09-08 00:24:16",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">7th September 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label tool\" href=\"https://simonwillison.net/elsewhere/tool/\">Tool</a> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/equal-earth\">Mercator ↔ Equal Earth</a></span> <span class=\"beat-commit\">— View an interactive animated map that morphs between Mercator and Equal Earth projections using a slider or play button. The visualization demonstrates how different map projections represent the world, with controls to blend between the two projection types and observe how they preserve different geographic properties.</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I got curious about the Equal Earth map projection that was recently <a href=\"https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa\">voted on at the UN</a> so I had GPT-6 Astra (medium) in ChatGPT Work <a href=\"https://chatgpt.com/share/6a9ee520-c82c-83ea-8111-2f7050c08638\">build me</a> this animated transition between Mercator and Equal Earth using D3.</p>\n      <video controls playsinline preload=\"none\" width=\"360\" height=\"476\" poster=\"https://static.simonwillison.net/static/2026-09-07/equal-earth.jpg\">\n       <source src=\"https://static.simonwillison.net/static/2026-09-07/equal-earth-medium.mp4\" type=\"video/mp4\">\n      </video>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4919/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 在 ChatGPT Work 中使用 GPT-6 Astra 构建了一个交互式动画地图，该地图可以在墨卡托投影与等积地球投影之间进行形态转换，展示了不同的地图投影是如何呈现世界的。",
+  "oneSentenceSummary": "Simon Willison 在 ChatGPT Work 中使用 GPT-6 Astra 构建了一个交互式动画地图，该地图可以在墨卡托投影与等积地球投影之间进行形态转换，展示了不同的地图投影是如何呈现世界的。",
+  "summary": "Simon Willison 分享了他开发的一个工具，该工具通过交互式动画过渡来可视化墨卡托投影与等积地球投影之间的差异。该工具是利用 D3 和 ChatGPT Work 中的 GPT-6 Astra 创建的，允许用户通过滑块或播放按钮在两种投影之间进行融合，从而突显每种投影如何保留不同的地理属性。这篇文章的灵感源于近期联合国关于世界地图投影的一次投票。",
+  "mainPoints": [
+    {
+      "point": "交互式工具展示地图投影差异",
+      "explanation": "该工具在墨卡托投影与等积地球投影之间进行形态转换，让用户可以观察每种投影如何以不同方式呈现世界，例如面积失真与形状保持之间的差异。"
+    },
+    {
+      "point": "通过 AI 辅助构建",
+      "explanation": "Simon Willison 在 ChatGPT Work 中使用 GPT-6 Astra 生成了基于 D3 的动画过渡，展示了 AI 模型通过简单的请求创建交互式数据可视化的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "我对联合国最近投票通过的等积地球投影产生了好奇，于是我让 ChatGPT Work 中的 GPT-6 Astra (medium) 使用 D3 为我构建了这个墨卡托投影与等积地球投影之间的动画过渡。"
+  ],
+  "tags": [
+    "AI 编程",
+    "GPT-6",
+    "OpenAI",
+    "数据可视化",
+    "地图投影"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 81,
+  "wordCount": 93,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788798256000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-08 00:24:16"
+}

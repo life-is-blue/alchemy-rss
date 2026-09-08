@@ -1,0 +1,52 @@
+{
+  "id": "RAW_57daa7ebb2",
+  "title": "CodePen 2.0 会在你输入时就将数据发送到其服务器",
+  "url": "https://news.ycombinator.com/item?id=49596976",
+  "date": "2026-09-07 19:22:40",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <center>\n   <table id=\"hnmain\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"85%\" bgcolor=\"#f6f6ef\">\n    <tbody>\n     <tr>\n      <td bgcolor=\"#ff6600\">\n       <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"padding:2px\">\n        <tbody>\n         <tr>\n          <td style=\"width:18px;padding-right:4px\"><a href=\"https://news.ycombinator.com\"><img src=\"https://news.ycombinator.com/y18.svg\" style=\"border:1px white solid; display:block\"></a></td>\n          <td style=\"line-height:12pt; height:10px;\"><span class=\"pagetop\"><b class=\"hnname\"><a href=\"https://news.ycombinator.com/news\">Hacker News</a></b><a href=\"https://news.ycombinator.com/newest\">new</a> | <a href=\"https://news.ycombinator.com/front\">past</a> | <a href=\"https://news.ycombinator.com/newcomments\">comments</a> | <a href=\"https://news.ycombinator.com/ask\">ask</a> | <a href=\"https://news.ycombinator.com/show\">show</a> | <a href=\"https://news.ycombinator.com/jobs\">jobs</a> | <a href=\"https://news.ycombinator.com/submit\" rel=\"nofollow\">submit</a></span></td>\n          <td style=\"text-align:right;padding-right:4px;\"><span class=\"pagetop\"><a href=\"https://news.ycombinator.com/login?goto=item%3Fid%3D49596976\">login</a></span></td>\n         </tr>\n        </tbody>\n       </table>\n      </td>\n     </tr>\n     <tr style=\"height:10px\"></tr>\n     <tr id=\"bigbox\">\n      <td>\n       <table class=\"fatitem\" border=\"0\">\n        <tbody>\n         <tr class=\"athing submission\" id=\"49596976\">\n          <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\"></span></td>\n          <td valign=\"top\" class=\"votelinks\">\n           <center>\n            <a id=\"up_49596976\" href=\"https://news.ycombinator.com/vote?id=49596976&amp;how=up&amp;goto=item%3Fid%3D49596976\"></a>\n           </center>\n          </td>\n          <td class=\"title\"><span class=\"titleline\"><a href=\"https://news.ycombinator.com/item?id=49596976\">Apparently CodePen 2.0 sends data to their servers as you type</a></span></td>\n         </tr>\n         <tr>\n          <td colspan=\"2\"></td>\n          <td class=\"subtext\"><span class=\"subline\"><span class=\"score\" id=\"score_49596976\">11 points</span> by <a href=\"https://news.ycombinator.com/user?id=maxim-fin\" class=\"hnuser\">maxim-fin</a> <span class=\"age\" title=\"2026-09-07T11:22:40.000000Z\"><a href=\"https://news.ycombinator.com/item?id=49596976\">19 minutes ago</a></span> <span id=\"unv_49596976\"></span> | <a href=\"https://news.ycombinator.com/hide?id=49596976&amp;goto=item%3Fid%3D49596976\">hide</a> | <a href=\"https://hn.algolia.com/?query=Apparently%20CodePen%202.0%20sends%20data%20to%20their%20servers%20as%20you%20type&amp;type=story&amp;dateRange=all&amp;sort=byDate&amp;storyText=false&amp;prefix&amp;page=0\" class=\"hnpast\">past</a> | <a href=\"https://news.ycombinator.com/fave?id=49596976&amp;auth=805694216eb98f31ee7b72b3e27e2d80f134d9da\">favorite</a> | <a href=\"https://news.ycombinator.com/item?id=49596976\">discuss</a></span></td>\n         </tr>\n         <tr>\n          <td colspan=\"2\"></td>\n          <td>\n           <div class=\"toptext\" style=\"margin-top:4px\">They send all typed into editor input to codepen.dev almost immediately (you would see in 1-2 sec after you typed your secret that it appears in respective Network/Response tab) even before one saved it. I tested this with a unique marker: after typing it into index.html, CodePen ran a build with \"save:false\", and the marker then appeared verbatim in the HTML served from the generated \"*.codepen.dev preview\". Thus, if you ever entered some secrets in there by mistake consider them compromized even if you did not publish/save the pen</div>\n          </td>\n         </tr>\n         <tr style=\"height:6px\"></tr>\n         <tr>\n          <td colspan=\"2\"></td>\n          <td>\n           <form action=\"comment\" method=\"post\">\n            <input type=\"hidden\" name=\"parent\" value=\"49596976\"><input type=\"hidden\" name=\"goto\" value=\"item?id=49596976\"><input type=\"hidden\" name=\"hmac\" value=\"59e4eb7c49f402c29d0afc7f98be863ce1e68b9d\"><textarea name=\"text\" rows=\"8\" cols=\"80\" wrap=\"virtual\" style=\"vertical-align:bottom\"></textarea>&nbsp;<a href=\"https://news.ycombinator.com/formatdoc\" tabindex=\"-1\"><span size=\"-2\" color=\"#AFAFAF\">help</span></a>\n            <br>\n            <br>\n            <input type=\"submit\" value=\"add comment\">\n           </form>\n          </td>\n         </tr>\n        </tbody>\n       </table>\n       <br>\n       <table border=\"0\" class=\"comment-tree\"></table>\n      </td>\n     </tr>\n     <tr>\n      <td><img src=\"https://news.ycombinator.com/s.gif\">\n       <table width=\"100%\" cellspacing=\"0\" cellpadding=\"1\">\n        <tbody>\n         <tr>\n          <td bgcolor=\"#ff6600\"></td>\n         </tr>\n        </tbody>\n       </table>\n       <br>\n       <center>\n        <span class=\"yclinks\"><a href=\"https://news.ycombinator.com/newsguidelines.html\">Guidelines</a> | <a href=\"https://news.ycombinator.com/newsfaq.html\">FAQ</a> | <a href=\"https://news.ycombinator.com/lists\">Lists</a> | <a href=\"https://github.com/HackerNews/API\">API</a> | <a href=\"https://news.ycombinator.com/security.html\">Security</a> | <a href=\"https://www.ycombinator.com/legal/\">Legal</a> | <a href=\"https://www.ycombinator.com/apply/\">Apply to YC</a> | <a href=\"mailto:hn@ycombinator.com\">Contact</a></span>\n        <br>\n        <br>\n        <form method=\"get\" action=\"//hn.algolia.com/\">\n         Search: <input type=\"text\" name=\"q\" size=\"17\" autocorrect=\"off\" spellcheck=\"false\" autocapitalize=\"off\" autocomplete=\"off\">\n        </form>\n       </center></td>\n     </tr>\n    </tbody>\n   </table>\n  </center>\n </body>\n</html>",
+  "aiSummary": "经唯一标识符测试验证，CodePen 2.0 几乎会在你输入的同时就将所有编辑器输入内容发送到其服务器，甚至早于保存操作，这意味着任何误输入的密钥都应被视为已泄露。",
+  "oneSentenceSummary": "经唯一标识符测试验证，CodePen 2.0 几乎会在你输入的同时就将所有编辑器输入内容发送到其服务器，甚至早于保存操作，这意味着任何误输入的密钥都应被视为已泄露。",
+  "summary": "有用户报告称，CodePen 2.0 会在用户保存或发布作品前，就将输入编辑器的所有内容在 1-2 秒内传输到其服务器（codepen.dev）。用户通过在 index.html 中输入唯一标识符验证了这一点：观察到 CodePen 执行了「save:false」的构建操作，该标识符原样出现在生成的*.codepen.dev 预览提供的 HTML 中。这意味着，无论作品是否被保存或发布，任何（哪怕是意外）输入到编辑器中的敏感数据（例如密钥）都应被视为已泄露。",
+  "mainPoints": [
+    {
+      "point": "CodePen 2.0 会实时将编辑器输入发送到服务器，甚至早于保存操作。",
+      "explanation": "用户观察到输入的内容会在 1-2 秒内出现在网络/响应标签页中，说明内容被立即传输到了 codepen.dev。"
+    },
+    {
+      "point": "唯一标识符测试证实数据会被原样发送。",
+      "explanation": "在 index.html 中输入唯一标识符会触发执行「save:false」的构建操作，该标识符会原样出现在生成的*.codepen.dev 预览的 HTML 中，证明内容已被传输并处理。"
+    },
+    {
+      "point": "用户应将在 CodePen 中输入的任何密钥都视为已泄露。",
+      "explanation": "由于数据会在保存或发布前就被发送，哪怕是意外输入的敏感信息（如 API 密钥）也应被视为已泄露，这类密钥应当被撤销或轮换。"
+    }
+  ],
+  "keyQuotes": [
+    "「他们几乎会在你输入的同时就将所有编辑器输入内容发送到 codepen.dev（你输入密钥后 1-2 秒内就会看到它出现在对应的网络/响应标签页中），甚至早于你保存作品。」",
+    "「我通过唯一标识符测试了这一点：在 index.html 中输入该标识符后，CodePen 执行了「save:false」的构建操作，随后该标识符原样出现在生成的「*.codepen.dev 预览」提供的 HTML 中。」",
+    "「因此，如果你曾误在里面输入过一些密钥，哪怕你没有发布/保存该作品，也应将这些密钥视为已泄露。」"
+  ],
+  "tags": [
+    "CodePen",
+    "隐私",
+    "Web 开发",
+    "数据泄露",
+    "安全"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 79,
+  "wordCount": 149,
+  "domain": "news.ycombinator.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788780160000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-07 19:22:40"
+}

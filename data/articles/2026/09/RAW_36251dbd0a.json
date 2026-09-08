@@ -1,0 +1,48 @@
+{
+  "id": "RAW_36251dbd0a",
+  "title": "Kotlin 2.4.20 正式发布",
+  "url": "https://blog.jetbrains.com/kotlin/2026/09/kotlin-2-4-20-released/",
+  "date": "2026-09-07 19:30:57",
+  "author": "Daniel Csorba",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>The Kotlin 2.4.20 release is out! Here are the main highlights:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Standard library</strong>: Support for coroutine stack trace recovery, new functions for checking equality and uniqueness of collection elements, and new overloads for <code>kotlin.test</code> assertion functions.</li>\n   <li><strong>Kotlin/Native</strong>: New Swift export features, improved incremental compilation, and automatically generated <code>Package.swift</code> files for SwiftPM dependencies.</li>\n   <li><strong>Kotlin/Wasm</strong>:<strong> </strong>Changes to top-level <code>require()</code> calls in <code>@JsFun</code> declarations, improved companion object initialization order, and support for Wasmtime in the Kotlin Gradle plugin.</li>\n   <li><strong>Kotlin/JS</strong>: A new DSL for browser testing, support for exporting suspend lambdas as async functions, and improved exportability of data classes.</li>\n   <li><strong>Gradle</strong>: Support for Gradle 9.7.0 and improved reporting in the Problems API.</li>\n   <li><strong>Build tools API</strong>: Support for new targets: Kotlin/JS, Kotlin/Wasm, and Kotlin metadata.</li>\n   <li><strong>Kotlin compiler</strong>: The `kotlinr` runner command and a separate native image.</li>\n  </ul>\n  <p></p>\n  <p>For the complete list of changes, see <a href=\"https://kotlinlang.org/docs/whatsnew2420.html\" target=\"_blank\" rel=\"noopener\">What’s new in Kotlin 2.4.20</a> or the <a href=\"https://github.com/JetBrains/kotlin/releases/tag/v2.4.20\" target=\"_blank\" rel=\"noopener\">release notes on GitHub</a>.</p>\n  <h2 class=\"wp-block-heading\">How to install Kotlin 2.4.20</h2>\n  <p>The latest version of Kotlin is included in the latest versions of <a href=\"https://www.jetbrains.com/idea/download/\" target=\"_blank\" rel=\"noopener\">IntelliJ IDEA</a> and <a href=\"https://developer.android.com/studio\" target=\"_blank\" rel=\"noopener\">Android Studio</a>.</p>\n  <p>To update to the new Kotlin version, make sure your IDE is updated to the latest version and <a href=\"https://kotlinlang.org/docs/releases.html#update-to-a-new-kotlin-version\" target=\"_blank\" rel=\"noopener\">change the Kotlin version</a> to 2.4.20 in your build scripts.</p>\n  <p>If you need the command-line compiler, download it from the <a href=\"https://github.com/JetBrains/kotlin/releases/tag/v2.4.20\" target=\"_blank\" rel=\"noopener\">GitHub release page</a>.</p>\n  <p><strong>If you run into any problems:</strong></p>\n  <ul class=\"wp-block-list\">\n   <li>Find help on <a href=\"https://app.slack.com/client/T09229ZC6\" target=\"_blank\" rel=\"noopener\">Slack</a> (<a href=\"https://surveys.jetbrains.com/s3/kotlin-slack-sign-up\" target=\"_blank\" rel=\"noopener\">get an invite</a>).</li>\n   <li>Report issues to our issue tracker, <a href=\"https://youtrack.jetbrains.com/issues/KT\" target=\"_blank\" rel=\"noopener\">YouTrack</a>.</li>\n  </ul>\n  <div style=\"padding:5px;min-height:px;margin-bottom:2px;margin-right:0%;text-align:left;\">\n   <p>Stay up to date with the latest Kotlin features! Subscribe to receive Kotlin updates by filling out the form at the bottom of this post. ⬇️</p>\n  </div>\n  <h2 class=\"wp-block-heading\">Special thanks to our EAP Champions</h2>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://bsky.app/profile/zacsweers.dev\" target=\"_blank\" rel=\"noopener\">Zac Sweers</a></li>\n   <li><a href=\"https://x.com/noraltavir\">Alexander Nozik</a></li>\n   <li><a href=\"https://github.com/BoD\" target=\"_blank\" rel=\"noopener\">Benoit Lubek</a></li>\n   <li><a href=\"https://github.com/ychescale9\" target=\"_blank\" rel=\"noopener\">Yang</a></li>\n   <li><a href=\"https://github.com/rickclephas\" target=\"_blank\" rel=\"noopener\">Rick Clephas</a></li>\n   <li><a href=\"https://www.linkedin.com/in/johannessvensson/\" target=\"_blank\" rel=\"noopener\">Johannes Svensson</a></li>\n   <li><a href=\"https://www.linkedin.com/in/lukasz-wasylkowski/\" target=\"_blank\" rel=\"noopener\">Łukasz Wasylkowski</a></li>\n   <li><a href=\"https://sterlingalbury.com/\" target=\"_blank\" rel=\"noopener\">Sterling Albury</a></li>\n   <li><a href=\"https://github.com/HagamosVideojuegos\" target=\"_blank\" rel=\"noopener\">David Lopez</a></li>\n   <li><a href=\"https://github.com/molikuner\" target=\"_blank\" rel=\"noopener\">Florian Schreiber</a></li>\n   <li><a href=\"https://github.com/msotho\" target=\"_blank\" rel=\"noopener\">Sechaba Mofokeng</a></li>\n   <li><a href=\"https://github.com/JesusMcCloud\" target=\"_blank\" rel=\"noopener\">Bernd Prünster</a></li>\n   <li><a href=\"https://x.com/andy_lamax\">Anderson Lameck</a></li>\n   <li><a href=\"https://github.com/dayanruben\" target=\"_blank\" rel=\"noopener\">Dayan Ruben</a></li>\n   <li><a href=\"https://kotlinlang.slack.com/team/U03PLFM837A\" target=\"_blank\" rel=\"noopener\">Josh Stagg</a></li>\n   <li><a href=\"https://www.linkedin.com/in/yuri-geronimus/\" target=\"_blank\" rel=\"noopener\">Yuri Geronimus</a></li>\n   <li><a href=\"https://github.com/seregamorph\" target=\"_blank\" rel=\"noopener\">Sergey Chernov</a></li>\n   <li><a href=\"https://ivan.canet.dev/\" target=\"_blank\" rel=\"noopener\">Ivan Canet</a></li>\n   <li><a href=\"https://github.com/Zordid\" target=\"_blank\" rel=\"noopener\">Olaf Gottschalk</a></li>\n   <li><a href=\"https://github.com/MohamedRejeb\" target=\"_blank\" rel=\"noopener\">Mohamed Rejeb</a></li>\n  </ul>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://kotlinlang.org/docs/whatsnew2420.html\" target=\"_blank\" rel=\"noopener\">What’s new in Kotlin 2.4.20 documentation</a></li>\n   <li><a href=\"https://kotlinlang.org/docs/compatibility-guide-24.html\" target=\"_blank\" rel=\"noopener\">Kotlin 2.4 compatibility guide</a></li>\n   <li><a href=\"https://blog.jetbrains.com/kotlin/2022/11/eap-champions/\">Kotlin EAP Champions</a></li>\n  </ul>\n  <p></p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/kotlin/2026/09/kotlin-toolchain-0-12-multiplatform-library-publishing-wasm-apps-and-more/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Kotlin Toolchain 0.12: Multiplatform Library Publishing, Wasm Apps, and More</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Kotlin 2.4.20 现已发布，为标准库、Kotlin/Native、Kotlin/Wasm、Kotlin/JS、Gradle 集成以及编译器工具带来了多项更新。",
+  "oneSentenceSummary": "Kotlin 2.4.20 现已发布，为标准库、Kotlin/Native、Kotlin/Wasm、Kotlin/JS、Gradle 集成以及编译器工具带来了多项更新。",
+  "summary": "Kotlin 2.4.20 的发布为其整个生态系统带来了多项增强功能。核心更新包括：标准库中的协程栈追踪恢复（coroutine stack trace recovery）和新的集合函数；Kotlin/Native 中新增的 Swift 导出特性以及自动生成 Package.swift；Kotlin Gradle 插件对 Wasmtime 支持的改进。此外，Kotlin/JS 增加了浏览器测试 DSL 和导出挂起 lambda（suspend lambdas）的支持，同时兼容 Gradle 9.7.0 并引入了新的 kotlinr 编译器运行命令。",
+  "mainPoints": [
+    {
+      "point": "标准库与协程增强",
+      "explanation": "引入了对协程栈追踪恢复的支持、用于检查集合相等性与唯一性的新函数，以及 kotlin.test 断言的新重载。"
+    },
+    {
+      "point": "Kotlin/Native 与生态系统改进",
+      "explanation": "新增了 Swift 导出功能、改进了增量编译，并为 SwiftPM 依赖项自动生成 Package.swift。"
+    },
+    {
+      "point": "Wasm、JS 与构建工具更新",
+      "explanation": "通过 Gradle 插件带来了 Wasmtime 支持、为 Kotlin/JS 推出了新的浏览器测试 DSL、支持 Gradle 9.7.0，并引入了新的 kotlinr 编译器运行命令。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "Kotlin",
+    "JetBrains",
+    "开发者工具",
+    "编程语言",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 79,
+  "wordCount": 328,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788780657000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-07 19:30:57"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-08 06:24:40 | [返回首页](/README.md)
+**更新时间**: 2026-09-08 10:00:12 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15648)
+- [AI & 大模型](#ai-llm) (15691)
 - [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (979)
-- [DevOps](#devops) (745)
-- [产品与商业](#product-business) (50)
-- [其他](#other) (6855)
+- [前端与全栈](#frontend-fullstack) (981)
+- [DevOps](#devops) (749)
+- [产品与商业](#product-business) (51)
+- [其他](#other) (6868)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Multi-Agent-的新趋势：从-Agent-Team-到-Agent-Swarm](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518293&idx=1&sn=dc3d001cf756fd83a7cdf2fbdf177582) - AI 精选
 - [GLM-5.3：前沿编程能力与涌现的网络安全能力](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492) - AI 精选
 
-- [查看全部 15648 篇...](/details/tags/ai-llm.md)
+- [查看全部 15691 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 979 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 981 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 745 篇...](/details/tags/devops.md)
+- [查看全部 749 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -143,6 +143,7 @@
 - [分布式事务：共识之外，分布式系统状态管理的另一大基石](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552955&idx=1&sn=d05fd04e0b32486760705fcc8e4e8859) - 编程 精选
 - [把-AI-邮件工具做到-3500-万美元-ARR，Superhuman：找到-PMF-其实有明确的方法论](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247521394&idx=1&sn=5ba89a3d61d8536569fa576f077f6a2e) - 商业 精选
 - [成立-13-年的-Figma-成绩单：10-亿用户，8-亿美金-ARR，-46%年增长！](https://mp.weixin.qq.com/s?__biz=MzI0NTAwMzU1MA==&mid=2247503944&idx=1&sn=fab12d5ca626c0986eb9fa8f7d98145c) - 商业 精选
+- [SaaS-团队客户管理-AI-入门指南](https://dev.to/cheryl_dmahaffey_e677cc8/ai-in-account-management-a-beginners-guide-for-saas-teams-4acc) - AI 更多
 - [泛化界限是正确的，但其价值有限](https://dev.to/dev48v/a-generalization-bound-is-correct-and-this-page-measures-what-it-is-worth-2jja) - AI 更多
 - [VIDRAFT-正在构建可访问的-AGI-平台——工程师需要了解的内容](https://dev.to/ai_openfree_b23025ef075cf/vidraft-is-building-accessible-agi-platforms-heres-what-engineers-need-to-know-2h1c) - AI 更多
 - [客户在续约时流失：是价格问题还是项目问题？](https://towardsdatascience.com/when-customers-churn-at-renewal-was-it-the-price-or-the-project/) - AI 更多
@@ -157,9 +158,8 @@
 - [微型-SaaS-已死，取而代之的是“服务+软件”模式-—-Adrien-Gonin](https://adriengonin.com/writing/service-with-a-software/) - 编程 更多
 - [Castro-Podcasts-—-我做错的事：客户支持](https://www.uncommonapps.nyc/p/castro-podcasts-things-i-got-wrong-support) - 编程 更多
 - [Cycle-推出欧盟控制面板，主权争议持续](https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
-- [2026-年最适合小企业的-11-款-CRM-|-Zapier](https://zapier.com/blog/best-crms-for-small-business) - 编程 更多
 
-- [查看全部 50 篇...](/details/tags/product-business.md)
+- [查看全部 51 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -187,6 +187,6 @@
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 - [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 
-- [查看全部 6855 篇...](/details/tags/other.md)
+- [查看全部 6868 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,60 @@
+{
+  "id": "RAW_99675e5e30",
+  "title": "融合检查：一个零数据法则，可预测合并两个微调模型是否保持行为（13 对，LOOCV 0.81，开源）",
+  "url": "https://dev.to/jose_miguelmadueo_c830d/fusion-check-a-zero-data-law-that-predicts-whether-merging-two-fine-tunes-preserves-behavior-13-3cj7",
+  "date": "2026-09-08 04:48:38",
+  "author": "Jose Miguel Madueño",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I built <strong>Fusion Check</strong> — a law that tells you, <strong>before merging</strong>, whether two fine-tuned LLMs are compatible. No data, no gradients, no GPU. Under a second.</p>\n  <p><strong>The problem it solves:</strong> Blind \"soup\" (weight averaging) always merges — but when two models were trained on different tasks, the fusion dilutes both. The law gives you the <em>necessary and sufficient condition</em> on the task kernel (cosine of weight deltas + effective dimensionality) to know beforehand if the fusion preserves behavior.</p>\n  <p><strong>The math (one line):</strong>\n   <br>\n   <code>E[e²] = 2(1-α)²(1-cos²)/d_eff</code> — threshold <code>cos² ≥ 1 − δ²·d_eff/(2(1-α)²)</code></p>\n  <p><strong>What it gives you:</strong></p>\n  <ul>\n   <li>A decision: MERGE / NO_MERGE / PRIORITIZED / REFUSE / VERIFY</li>\n   <li>The optimal mixing coefficient α* = √γ₁/(√γ₁+√γ₂) — closed form, verified symbolically and numerically</li>\n   <li>Per-task retention prediction (calibrated: 13 pairs, LOOCV corr 0.81, MAE 0.072)</li>\n  </ul>\n  <p><strong>Proven three independent ways:</strong></p>\n  <ol>\n   <li>Analytic derivation</li>\n   <li>Formal verification with z3 (28 theorems)</li>\n   <li>Empirical validation (147 combinations, max deviation 1.13%, zero violations)</li>\n  </ol>\n  <p><strong>Real result:</strong> Two weak, diverse estimators of the same task (0.762/0.756) → merged soup 0.822 (+6–7 points). Two orthogonal specialists? The law says NO_MERGE and prevents dilution.</p>\n  <p><strong>Links:</strong></p>\n  <ul>\n   <li>Repo: <a href=\"https://codeberg.org/josemiguel3125/fusion-check\" target=\"_blank\" rel=\"noopener noreferrer\">https://codeberg.org/josemiguel3125/fusion-check</a></li>\n   <li>Paper (PDF): <a href=\"https://zenodo.org/records/21935115\" target=\"_blank\" rel=\"noopener noreferrer\">https://zenodo.org/records/21935115</a></li>\n   <li>CLI: <code>pip install fusion-check</code> → <code>fusion-check verificar base/ m1/ m2/ --acc1 0.76 --acc2 0.83</code></li>\n   <li>Demo: <a href=\"https://huggingface.co/spaces/josemiguel3125/fusion-check\" target=\"_blank\" rel=\"noopener noreferrer\">https://huggingface.co/spaces/josemiguel3125/fusion-check</a></li>\n   <li>Package: <a href=\"https://pypi.org/project/fusion-check/\" target=\"_blank\" rel=\"noopener noreferrer\">https://pypi.org/project/fusion-check/</a></li>\n  </ul>\n  <p><strong>Honest limits:</strong></p>\n  <ul>\n   <li>Small models (TinyStories-3M), 13 measured pairs, 9/13 correct decisions</li>\n   <li>Out-of-calibration cosines fall back to the pure law with a low-confidence flag</li>\n   <li>Nothing runs on servers — everything is local, open source (MIT), no patents</li>\n  </ul>\n  <p>Author: Jose Miguel Madueño Ortega · MIT · free and open.</p>\n </body>\n</html>",
+  "aiSummary": "融合检查是一个零数据法则，可在合并前预测两个微调 LLM 是否兼容，已在 13 对上验证，LOOCV 相关性为 0.81，并以 MIT 许可开源。",
+  "oneSentenceSummary": "融合检查是一个零数据法则，可在合并前预测两个微调 LLM 是否兼容，已在 13 对上验证，LOOCV 相关性为 0.81，并以 MIT 许可开源。",
+  "summary": "文章介绍了融合检查（Fusion Check），这是一个在合并前判断两个微调 LLM 是否兼容的法则，无需数据、梯度或 GPU。它基于权重增量的余弦相似度和有效维度，提供了一个数学条件来预测融合行为。该法则输出决策（MERGE、NO_MERGE 等）和最优混合系数。验证包括解析推导、使用 z3 的形式化验证（28 个定理），以及在 147 种组合上的实证测试，零违规。一个实际结果显示，合并两个较弱的多样化估计器可将准确率从约 0.76 提升至 0.822。作者提供了开源代码、论文、CLI 工具和演示，同时坦诚指出了局限性，如模型规模较小和对数有限。",
+  "mainPoints": [
+    {
+      "point": "融合检查提供了一个零数据法则，可在合并前预测合并兼容性。",
+      "explanation": "它利用任务核（权重增量的余弦相似度和有效维度）给出充要条件，避免盲目权重平均可能稀释任务特定行为的问题。"
+    },
+    {
+      "point": "该法则通过三种独立方法得到验证。",
+      "explanation": "解析推导、使用 z3 的形式化验证（28 个定理），以及在 147 种组合上的实证测试（最大偏差 1.13%，零违规）支持其正确性。"
+    },
+    {
+      "point": "它提供可操作的决策和最优混合系数。",
+      "explanation": "输出 MERGE/NO_MERGE/PRIORITIZED/REFUSE/VERIFY，并提供闭式 α* 用于最优混合，已通过符号和数值方式验证。"
+    },
+    {
+      "point": "实证结果显示实际收益。",
+      "explanation": "合并两个较弱的多样化估计器将准确率从 0.762/0.756 提升至 0.822，而该法则在合并正交专家时防止了行为稀释。"
+    },
+    {
+      "point": "该工具开源，并坦诚说明局限性。",
+      "explanation": "采用 MIT 许可，本地运行且免费，但仅在小型模型（TinyStories-3M）上测试，且只有 13 对；超出校准范围的余弦值会回退到低置信度标志。"
+    }
+  ],
+  "keyQuotes": [
+    "该法则给出了任务核（权重增量余弦相似度 + 有效维度）上的充要条件，可预先判断融合是否保持行为。",
+    "同一任务的两个较弱但多样化的估计器（0.762/0.756）→ 合并后的模型汤 0.822（提升 6–7 个百分点）。",
+    "通过三种独立方式验证：解析推导、使用 z3 的形式化验证（28 个定理）、实证验证（147 种组合，最大偏差 1.13%，零违规）。"
+  ],
+  "tags": [
+    "模型合并",
+    "AI 研究",
+    "开源",
+    "LLM",
+    "模型训练与推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 252,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788814118000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-08 04:48:38"
+}

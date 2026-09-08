@@ -1,0 +1,44 @@
+{
+  "id": "RAW_cbb972d573",
+  "title": "洛杉矶的每一栋建筑",
+  "url": "https://lax-skyline.parcelscope.net/",
+  "date": "2026-09-08 02:52:06",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"ui wordmark\">\n   <b>Parcelscope</b><span>Los Angeles</span>\n  </div>\n  <div class=\"ui legend\" id=\"legend-decade\">\n   <span class=\"cap\">Decade built</span>\n  </div>\n  <div class=\"ui hint\">\n   drag to pan · right-drag or ⌃-drag to tilt\n   <br>\n   <span id=\"hint-scale\"></span>\n  </div>\n  <div class=\"ui title\">\n   <p>One box per structure, colored by the decade it was built. Watch the city fill in from 1880 to today.</p>\n  </div>\n  <div class=\"ui year\">\n   <div class=\"big\" id=\"year\">1880</div>\n   <div class=\"count\">\n    <b id=\"count\">0</b><span>buildings standing</span>\n   </div>\n  </div>\n  <div class=\"ui controls\">\n   <div class=\"group\">\n    <div class=\"seg\">\n     <button id=\"mode-decade\" class=\"on\">Decade</button>\n     <button id=\"mode-height\">Height</button>\n    </div>\n   </div>\n   <div class=\"credit\">\n    LARIAC 2020 building outlines · LA County Assessor roll\n    <br>\n    heights exaggerated when zoomed out\n   </div>\n  </div>\n  <div class=\"ui note\">heights exaggerated when zoomed out</div>\n  <div class=\"ui timeline\">\n   <button class=\"play\" id=\"play\" aria-label=\"Play\">\n    <svg id=\"ico-play\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"#0b0e14\">\n     <path d=\"M6 4l10 6-10 6z\" />\n    </svg>\n   </button>\n   <div class=\"track\" id=\"track\"></div>\n  </div>\n  <div class=\"tip\" id=\"tip\">\n   <span class=\"cap\" id=\"tip-cap\">Building</span>\n   <div>\n    <span id=\"tip-yr-l\">Built</span><span id=\"tip-yr\"></span> <span id=\"tip-h-l\">Height</span><span id=\"tip-h\"></span> <span id=\"tip-a-l\">Footprint</span><span id=\"tip-a\"></span> <span id=\"tip-u-l\">Type</span><span id=\"tip-u\"></span>\n   </div>\n   <span class=\"foot\" id=\"tip-foot\"></span>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一个交互式地图，可视化洛杉矶的每一栋建筑，按建造年代着色，使用户能够观察从 1880 年至今城市的增长。",
+  "oneSentenceSummary": "一个交互式地图，可视化洛杉矶的每一栋建筑，按建造年代着色，使用户能够观察从 1880 年至今城市的增长。",
+  "summary": "Parcelscope 洛杉矶 是一个交互式可视化工具，将洛杉矶的每一栋建筑显示为一个盒子，按其建造的年代着色。用户可以平移、倾斜和缩放，以探索从 1880 年至今城市随时间的发展。该地图使用 LARIAC 2020 建筑轮廓和洛杉矶县评估师数据，在放大时建筑高度会被夸张以提高清晰度。界面包含用于调整年代范围和高度夸张的控件，并显示单个建筑的详细信息，如建造年份、高度、占地面积和类型。",
+  "mainPoints": [
+    {
+      "point": "该地图可视化随时间的城市增长。",
+      "explanation": "每栋建筑按其建造的年代着色，使用户能够看到洛杉矶从 1880 年至今的扩张。"
+    },
+    {
+      "point": "该工具既交互又数据驱动。",
+      "explanation": "用户可以平移、倾斜和缩放，放大时建筑高度会被夸张，并且每个结构都可查看建造年份、占地面积等详细信息。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "数据可视化",
+    "地图",
+    "洛杉矶",
+    "城市发展",
+    "交互式工具"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 62,
+  "domain": "lax-skyline.parcelscope.net",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788807126000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-08 02:52:06"
+}

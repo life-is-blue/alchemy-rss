@@ -1,0 +1,46 @@
+{
+  "id": "RAW_28eabba6ed",
+  "title": "工具：视频压缩器",
+  "url": "https://simonwillison.net/2026/Sep/7/video-compressor/",
+  "date": "2026-09-08 02:29:07",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">7th September 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label tool\" href=\"https://simonwillison.net/elsewhere/tool/\">Tool</a> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/video-compressor\">Video compressor</a></span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I recorded a short demo video of <a href=\"https://simonwillison.net/2026/Sep/7/equal-earth/\">my Equal Earth</a> animation on my phone and wanted to publish an optimized version of that video (using FFMPEG) on my blog, so I had Claude Fable 5.1 in Claude Code for web <a href=\"https://claude.ai/code/session_01QHTdJZ4xg6TZfDXCmuvAE9\">build me this tool</a> using the WebAssembly build of FFMPEG.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4920/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 分享了一个他使用 Claude Code for web 构建的小工具，该工具利用 FFMPEG 的 WebAssembly 版本在浏览器中压缩视频，旨在优化他博客上的演示视频。",
+  "oneSentenceSummary": "Simon Willison 分享了一个他使用 Claude Code for web 构建的小工具，该工具利用 FFMPEG 的 WebAssembly 版本在浏览器中压缩视频，旨在优化他博客上的演示视频。",
+  "summary": "Simon Willison 介绍了他创建的一个直接在浏览器中压缩视频的轻量级工具。在手机上录制了一段 Equal Earth 动画的简短演示视频后，他希望在博客上发布一个优化版本。通过使用 Claude Code for web，他让 Claude Fable 5.1 构建了一个利用 FFMPEG 的 WebAssembly 版本进行压缩的工具。该工具托管在他的 tools 子域名下，供他人使用。",
+  "mainPoints": [
+    {
+      "point": "AI 辅助的工具创建正变得对小型个人任务非常实用。",
+      "explanation": "Willison 使用 Claude Code for web 生成了一个功能齐全的视频压缩工具，证明了 AI 可以快速处理小众且专注于实用性的编程任务。"
+    },
+    {
+      "point": "WebAssembly 使得像 FFMPEG 这样复杂的工具能够完全在浏览器中运行。",
+      "explanation": "该工具依赖于 FFMPEG 的 WebAssembly 版本，无需服务器端基础设施即可进行视频处理，使其易于部署和使用。"
+    }
+  ],
+  "keyQuotes": [
+    "「我让 Claude Code for web 中的 Claude Fable 5.1 利用 FFMPEG 的 WebAssembly 版本为我构建了这个工具。」"
+  ],
+  "tags": [
+    "AI 编程",
+    "Claude Code",
+    "WebAssembly",
+    "FFMPEG",
+    "视频压缩"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 73,
+  "wordCount": 56,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788805747000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-08 02:29:07"
+}

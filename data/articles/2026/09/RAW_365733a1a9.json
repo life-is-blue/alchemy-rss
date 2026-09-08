@@ -1,0 +1,46 @@
+{
+  "id": "RAW_365733a1a9",
+  "title": "规划你的下一个家装项目 | HomeCat",
+  "url": "https://myhomecat.com",
+  "date": "2026-09-08 02:23:35",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<!--$-->\n<!--/$-->\n<html>\n <head></head>\n <body>\n  <section class=\"ConceptLanding-module__y_w3Da__hero\">\n   <div style=\"--container-size:var(--container-size-xl)\" class=\"m_7485cace mantine-Container-root\" data-size=\"xl\" data-strategy=\"block\">\n    <h1 class=\"ConceptLanding-module__y_w3Da__heroTitle\">Plan your<span class=\"ConceptLanding-module__y_w3Da__heroTitleHighlight\"><span class=\"ConceptLanding-module__y_w3Da__heroTitleHighlightValue\">shed</span></span></h1>\n   </div>\n  </section>\n  <section aria-label=\"Project planning search\" class=\"ConceptSearchDock-module__Cciuaq__root\" data-variant=\"landing\">\n   <div style=\"--container-size:var(--container-size-xl)\" class=\"ConceptSearchDock-module__Cciuaq__inner m_7485cace mantine-Container-root\" data-size=\"xl\" data-strategy=\"block\">\n    <form class=\"ConceptSearchBar-module__xaGHMa__form  ConceptSearchBar-module__xaGHMa__formDocked \">\n     <div class=\"ConceptSearchBar-module__xaGHMa__field ConceptSearchBar-module__xaGHMa__whereField\">\n      <span class=\"ConceptSearchBar-module__xaGHMa__label\">Where</span>\n      <div class=\"AddressAutocomplete-module__l_oVRq__root ConceptSearchBar-module__xaGHMa__addressRoot\">\n       <div style=\"--input-height:var(--input-height-sm);--input-fz:var(--mantine-font-size-sm);--input-left-section-pointer-events:none;--input-right-section-pointer-events:none\" class=\"m_6c018570 mantine-Input-wrapper\" data-variant=\"unstyled\" data-size=\"sm\">\n        <input style=\"border-color:var(--hc-border)\" class=\"AddressAutocomplete-module__l_oVRq__input ConceptSearchBar-module__xaGHMa__addressInput m_8fb7ebe7 mantine-Input-input\" data-variant=\"unstyled\" maxlength=\"160\" placeholder=\"City, state or address\" aria-label=\"Where\" aria-autocomplete=\"list\" aria-expanded=\"false\" autocomplete=\"off\" data-1p-ignore=\"true\" data-op-ignore=\"true\" id=\"_R_15l6av5vndb_\" value=\"\">\n       </div>\n      </div>\n     </div>\n     <label class=\"ConceptSearchBar-module__xaGHMa__field ConceptSearchBar-module__xaGHMa__whatField\"><span class=\"ConceptSearchBar-module__xaGHMa__label\">What</span><input aria-label=\"What\" class=\"ConceptSearchBar-module__xaGHMa__input\" maxlength=\"320\" autocomplete=\"off\" data-1p-ignore=\"true\" data-op-ignore=\"true\" placeholder=\"e.g., a 12 × 10 ft hip-roof shed\" value=\"\"></label>\n     <button style=\"--ai-size:calc(3.5rem * var(--mantine-scale));--ai-radius:var(--mantine-radius-xl);--ai-color:var(--mantine-color-white)\" class=\"mantine-focus-auto ConceptSearchBar-module__xaGHMa__searchButton m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root\" data-disabled=\"true\" type=\"submit\" aria-label=\"Search\" disabled><span class=\"m_8d3afb97 mantine-ActionIcon-icon\"></span></button>\n    </form>\n   </div>\n  </section>\n  <main class=\"ConceptLanding-module__y_w3Da__resultsSurface\">\n   <div style=\"--container-size:var(--container-size-xl);padding-block:var(--mantine-spacing-xl)\" class=\"m_7485cace mantine-Container-root\" data-size=\"xl\" data-strategy=\"block\">\n    <div style=\"--stack-gap:var(--mantine-spacing-lg);--stack-align:stretch;--stack-justify:flex-start\" class=\"m_6d731127 mantine-Stack-root\">\n     <h2 style=\"--title-fw:var(--mantine-h2-font-weight);--title-lh:var(--mantine-h2-line-height);--title-fz:var(--mantine-h2-font-size)\" class=\"m_8a5d1357 mantine-Title-root\" data-order=\"2\">Recent projects</h2>\n     <div style=\"--group-gap:var(--mantine-spacing-md);--group-align:center;--group-justify:center;--group-wrap:wrap;padding-block:var(--mantine-spacing-xl)\" class=\"m_4081bf90 mantine-Group-root\">\n      <output aria-label=\"Generating concept designs\"></output>\n     </div>\n    </div>\n    <section class=\"BuildingPlansCta-module__paV54W__cta\" aria-labelledby=\"building-plans-cta-title\">\n     <h2 style=\"--title-fw:var(--mantine-h2-font-weight);--title-lh:var(--mantine-h2-line-height);--title-fz:var(--mantine-h2-font-size)\" class=\"BuildingPlansCta-module__paV54W__title m_8a5d1357 mantine-Title-root\" data-order=\"2\" id=\"building-plans-cta-title\">Let HomeCat handle your building plans</h2>\n     <p class=\"mantine-focus-auto BuildingPlansCta-module__paV54W__description m_b6d8b162 mantine-Text-root\">Keep your project on track. Get code-compliant building plans, material/cut lists, and a guide for any construction project.</p>\n    </section>\n   </div>\n  </main>\n  <!--$-->\n  <!--/$-->\n </body>\n</html>",
+  "aiSummary": "HomeCat 是一款帮助用户规划家装项目的工具，能够生成符合规范的建筑图纸、材料/切割清单以及施工指南。",
+  "oneSentenceSummary": "HomeCat 是一款帮助用户规划家装项目的工具，能够生成符合规范的建筑图纸、材料/切割清单以及施工指南。",
+  "summary": "这是 HomeCat 的简短登陆页面，HomeCat 是一项协助家装项目的服务。页面包含规划棚屋的部分，提供指定位置和细节的字段，列出最近的项目，并通过号召性用语突出服务的核心功能：符合规范的建筑图纸、材料/切割清单以及任何施工项目的逐步指南。内容具有宣传性质，缺乏关于服务如何运作、方法论或准确性的实质细节。",
+  "mainPoints": [
+    {
+      "point": "HomeCat 为家装项目提供符合规范的建筑图纸。",
+      "explanation": "页面的主要号召性用语强调生成符合规范的建筑图纸，这是 DIY 建筑者的核心价值主张。"
+    },
+    {
+      "point": "该服务包含材料/切割清单，帮助项目保持进度。",
+      "explanation": "除了图纸，HomeCat 还提供实用工具，如材料/切割清单，帮助用户管理采购并在施工过程中减少浪费。"
+    }
+  ],
+  "keyQuotes": [
+    "保持项目进度。获取符合规范的建筑图纸、材料/切割清单以及任何施工项目的指南。"
+  ],
+  "tags": [
+    "家居装修",
+    "建筑规划",
+    "DIY",
+    "建筑图纸",
+    "生产力工具"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 72,
+  "wordCount": 30,
+  "domain": "myhomecat.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788805415000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-08 02:23:35"
+}

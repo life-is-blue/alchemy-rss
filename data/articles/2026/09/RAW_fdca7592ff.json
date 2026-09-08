@@ -1,0 +1,59 @@
+{
+  "id": "RAW_fdca7592ff",
+  "title": "Netflix 转向开源 Flink 自动扩缩器，管理 30，000+ 流处理任务",
+  "url": "https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-07 22:06:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix is moving toward the <a href=\"https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b\">open-source Apache Flink Autoscaler</a> for more than 30,000 streaming jobs across multiple AWS regions, after finding that its cluster-level approach was less effective for complex, stateful pipelines with operators that have different processing requirements. Netflix reports that one team reduced annualized Flink compute expenditure by 58%, saving approximately $1.1 million annually.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/news/2026/09/netflix-flink-autoscaler/en/resources/1Screenshot 2026-08-27 at 4.08.15 PM-1787937261281.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/netflix-flink-autoscaler/en/resources/1Screenshot 2026-08-27 at 4.08.15 PM-1787937261281.png\" rel=\"share\"></p>\n   <p><em>Comparison of Netflix’s two Flink Autoscalers (Source: <a href=\"https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b\">Netflix Blog Post</a>)</em></p>\n   <p>Netflix has run<a href=\"https://nightlies.apache.org/flink/flink-docs-stable/\"> Apache Flink</a> since 2017 and built its first autoscaler around 2019. The system ran on Mantis and consumed cluster-level telemetry from<a href=\"https://netflix.github.io/atlas-docs/overview/\"> Atlas</a>, including CPU, network utilization, Kafka lag, input rate, and consume rate. It adjusted the total number of TaskManagers and reduced resource usage by 25% to 45% across thousands of pipelines.</p>\n   <p>The limitation was the scaling unit. Because the original autoscaler reasoned about the cluster rather than individual operators, all operators in a job effectively shared the same scaling decision. That became less suitable for stateful pipelines containing branches, joins, and terabytes of state, where different parts of the dataflow can have different processing requirements.</p>\n   <p>The<a href=\"https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-main/docs/managing/autoscaler/\"> Apache Flink Autoscaler</a> instead uses metrics exposed by the running job to estimate each operator’s true processing rate from throughput and busy time. It then walks the job graph and calculates required parallelism for individual vertices. The approach is described in<a href=\"https://cwiki.apache.org/confluence/spaces/FLINK/pages/231117250/FLIP-271%2BAutoscaling\"> FLIP-271</a>, which addresses autoscaling for heterogeneous streaming jobs and the cost of rescaling stateful applications.</p>\n   <p>The technique also builds on research from the DS2 project. <a href=\"https://www.linkedin.com/in/vkalavri/\">Vasiliki Kalavri</a>, a systems researcher involved in the work, <a href=\"https://www.linkedin.com/posts/vkalavri_a-tale-of-two-flink-autoscalers-activity-7497704315164381185-V7rf\">said</a> the project initially explored critical path analysis before adopting <a href=\"https://www.usenix.org/system/files/osdi18-kalavri.pdf\">True Processing Rate</a> as a simpler baseline. It turned out that this very simple idea worked really well. The approach subsequently became part of Flink’s autoscaling work.</p>\n   <p>Netflix integrated the autoscaler with its internal control plane rather than deploying it directly through the Flink Kubernetes Operator. A Spring Boot service uses<a href=\"https://github.com/temporalio/temporal/blob/main/docs/architecture/README.md\"> Temporal</a> workflows to isolate autoscaling decisions for individual jobs. Netflix also modified JobManager metric collection to support jobs with up to 3,000 subtasks, added server-side metric filtering, preserved forward connected subgraphs during scaling, and added handling for sink backpressure.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/news/2026/09/netflix-flink-autoscaler/en/resources/1netflixflink-1787937261281.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/netflix-flink-autoscaler/en/resources/1netflixflink-1787937261281.jpeg\" rel=\"share\"></p>\n   <p><em>The OSS-based Flink Autoscaler architecture with Temporal workflows </em>(Source: <a href=\"https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b\">Netflix Blog Post</a>)</p>\n   <p>The forward connection issue has also appeared in<a href=\"https://www.mail-archive.com/dev%40flink.apache.org/msg84700.html\"> Apache Flink developer discussions</a>. Changing parallelism across a FORWARD connection can require redistribution, while Netflix’s implementation keeps forward connected operators together. An open<a href=\"https://issues.apache.org/jira/browse/FLINK-38538\"> FLINK-38538</a> issue separately highlights cases where busy operators can be affected by output ratio-based scaling decisions.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/news/2026/09/netflix-flink-autoscaler/en/resources/1Screenshot 2026-08-27 at 4.09.02 PM-1787937261281.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/netflix-flink-autoscaler/en/resources/1Screenshot 2026-08-27 at 4.09.02 PM-1787937261281.png\" rel=\"share\"></p>\n   <p><em>Flink Job DAG Showing Current and Desired Parallelism Per Vertex. (Source: <a href=\"https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b\">Netflix Blog Post</a>)</em></p>\n   <p>Unlike generic event-driven autoscalers such as<a href=\"https://keda.sh/docs/2.20/scalers/\"> KEDA</a>, which scale workloads from external metrics or events, Flink’s autoscaler reasons about the internal dataflow graph and operator capacity. Netflix currently uses a 0.45 utilization target, below Flink’s 0.7 community default, to reduce aggressive rescaling of large stateful jobs. The company plans to migrate its remaining internal autoscaling use cases to the open-source implementation, while investigating Flink 2’s disaggregated state architecture to address the cost of state recovery during rescaling.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Netflix Moves Toward Open Source Flink Autoscaler for 30,000+ Streaming Jobs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/netflix-flink-autoscaler/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1788789960000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 正在将超过 30，000 个流处理任务迁移至开源 Apache Flink 自动扩缩器，该扩缩器基于真实处理速率对单个算子进行扩缩，使一个团队的年化 Flink 计算成本降低了 58%。",
+  "oneSentenceSummary": "Netflix 正在将超过 30，000 个流处理任务迁移至开源 Apache Flink 自动扩缩器，该扩缩器基于真实处理速率对单个算子进行扩缩，使一个团队的年化 Flink 计算成本降低了 58%。",
+  "summary": "Netflix 自 2017 年起运行 Apache Flink，并于 2019 年左右构建了首个自动扩缩器，该扩缩器利用 Atlas 的集群级遥测数据来调整 TaskManager 的总数，在数千条管道中实现了 25-45% 的资源使用率降低。然而，这种集群级的方法对于具有分支、连接和数 TB 状态等复杂且有状态的管道效果不佳，因为其中不同算子有不同的处理需求。Netflix 现在正转向开源 Apache Flink 自动扩缩器，该扩缩器使用运行中任务的指标来估算每个算子的真实处理速率，并根据 FLIP-271 中的描述为各个顶点计算所需并行度。该技术建立在 DS2 项目的研究成果之上，该项目发现使用真实处理速率作为基线效果良好。Netflix 通过 Spring Boot 服务和 Temporal 工作流将自动扩缩器与其内部控制平面集成，以隔离单个任务的自动扩缩决策。他们还修改了 JobManager 指标收集以支持多达 3，000 个子任务的任务，添加了服务端指标过滤，在扩缩期间保留前向连接的子图，并增加了对接收器背压的处理。Netflix 报告称，一个团队将年化 Flink 计算支出降低了 58%，每年节省约 110 万美元。他们目前使用 0.45 的利用率目标，低于 Flink 社区默认的 0.7，以减少对大型有状态任务的激进扩缩。Netflix 计划将其剩余的内部自动扩缩用例迁移到开源实现，并正在研究 Flink 2 的分离式状态架构，以解决扩缩期间状态恢复的成本问题。",
+  "mainPoints": [
+    {
+      "point": "Netflix 正在从集群级自动扩缩器迁移到开源 Apache Flink 自动扩缩器，以管理超过 30，000 个流处理任务。",
+      "explanation": "原有的自动扩缩器将集群作为一个整体进行考量，使得任务中的所有算子共享相同的扩缩决策，这对于具有异构处理需求的有状态管道并不适用。开源自动扩缩器基于各算子的真实处理速率进行独立扩缩，解决了这一局限。"
+    },
+    {
+      "point": "开源 Flink 自动扩缩器通过吞吐量和繁忙时间估算每个算子的处理速率，从而为各个顶点计算所需并行度。",
+      "explanation": "该方法在 FLIP-271 中描述，通过遍历任务图并独立扩缩每个顶点，为具有分支、连接和大量状态的复杂数据流实现更精确的资源分配。"
+    },
+    {
+      "point": "Netflix 将自动扩缩器与其内部控制平面集成，而非直接通过 Flink Kubernetes Operator 部署。",
+      "explanation": "Spring Boot 服务使用 Temporal 工作流来隔离单个任务的自动扩缩决策，使 Netflix 能够大规模管理扩缩并与其现有基础设施集成。"
+    },
+    {
+      "point": "Netflix 进行了多项修改以支持大规模任务，包括处理多达 3，000 个子任务以及在扩缩期间保留前向连接的子图。",
+      "explanation": "跨 FORWARD 连接更改并行度可能需要进行数据重分布，因此 Netflix 将前向连接的算子保持在一起，以避免不必要的数据混洗。这是 Flink 社区中已知的问题，由 FLINK-38538 突出显示。"
+    },
+    {
+      "point": "Netflix 使用比 Flink 默认值（0.7）更低的利用率目标（0.45），以减少对大型有状态任务的激进扩缩。",
+      "explanation": "这种保守的方法最大限度地降低了频繁扩缩的成本和风险，这对于拥有数 TB 状态且状态恢复成本高昂的任务尤为重要。"
+    }
+  ],
+  "keyQuotes": [
+    "事实证明，这个非常简单的想法效果非常好。",
+    "Netflix 报告称，一个团队将年化 Flink 计算支出降低了 58%，每年节省约 110 万美元。"
+  ],
+  "tags": [
+    "Apache Flink",
+    "自动扩缩",
+    "流处理",
+    "Netflix",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 501,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788789960000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-07 22:06:00"
+}
