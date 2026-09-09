@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-09 10:04:42 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-09 16:29:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -758,9 +758,7 @@
 
 ### [用-Three.js、WebGPU-和-TSL-构建无限液态玻璃网格](https://tympanus.net/codrops/2026/09/08/building-an-infinite-liquid-glass-grid-with-three-js-webgpu-and-tsl/)
 
-2026-09-08 21:09:48 | 标签: Three.js, WebGPU, TSL, 创意编程, 着色器开发
-
-> 来自 Shader 工作室的 Filip 详细介绍了使用 Next.js、基于 WebGPU 渲染器的 React Three Fiber v10 以及 TSL 材质构建无限液态玻璃旋转木马演示的过程。每张卡片都是一个细分的平面；圆角、倒角和折射效果均在自定义着色器中通过圆角盒 SDF 生成高度图并计算法线来模拟。折射产生的色散效果通过对卡片自身视频纹理进行多次采样实现，而反射则通过环境贴图查询并叠加菲涅尔效应，再加上边缘高光的轮廓光来完成。网格的无限感通过将位置包裹在球体上来实现，使卡片向边缘倾斜并缩小，从而营造出深度感。拖拽交互通过 Motion 的 pan 手势处理，并将 motion ...
+2026-09-08 21:09:48
 
 
 
