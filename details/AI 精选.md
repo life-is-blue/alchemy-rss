@@ -1,31 +1,57 @@
-> **更新时间**: 2026-09-07 09:47:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-09 10:04:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 精选
 
 
 
 
+### [推出-ChatGPT-Images-2.5](https://openai.com/index/introducing-chatgpt-images-2-5)
+
+2026-09-08 19:30:00 | 标签: OpenAI, 图像生成, AI 产品与应用, 多模态 AI, 模型发布
+
+> OpenAI 发布了 ChatGPT Images 2.5，这是其最新的尖端图像生成模型，能够提供更清晰的细节、更精准的编辑以及更快的生成速度。新模型能够产生更自然的灯光和更丰富的纹理，同时能更好地保留参考照片中的主体，并在多轮对话中更可靠地遵循编辑指令。对于用户，OpenAI 引入了全新的创意功能，包括可直接在 ChatGPT 中绘图作为参考的 Sketch、热门图像格式的模板、可直接在图像上添加评论进行针对性编辑的功能，以及提示词分享功能。对于开发者，OpenAI 发布了两个新的 API 模型：用于通用场景、具有更高质量和速度的 GPT-Image-2.5 Flare，以及为需要更严密控制...
+
+
+
+### [Milvus-HNSW-量化索引选型指南：从-SQ、PQ、PRQ-到-Refine-实测](https://mp.weixin.qq.com/s?__biz=MzUzMDI5OTA5NQ==&mid=2247513657&idx=1&sn=988996100bb006008540b1c5880c4d87)
+
+2026-09-08 18:32:00 | 标签: 向量数据库, Milvus, HNSW, 量化索引, 性能优化
+
+> 本文针对 Milvus 中 HNSW 系列索引的内存占用问题，系统对比了 HNSW、HNSW_SQ、HNSW_PQ 和 HNSW_PRQ 四种索引。文章首先解释了 SQ、PQ、PRQ 的量化原理及 refinement 机制，然后基于 Cohere 1M 数据集和 Milvus 2.6.17 进行了详细实验。实验结果显示，SQ8（未启用 refinement）在召回率、吞吐和资源占用之间最均衡，其 Recall@100 为 0.9761，峰值 QPS 为 793.1，内存增量约为 HNSW FP32 的 31.3%。启用 refine_type=FP32 的 refinement 能显著恢复召...
+
+
+
+### [关于-Navier–Stokes-千年难题](https://openai.com/index/navier-stokes-solution)
+
+2026-09-08 18:00:00 | 标签: OpenAI, Navier–Stokes, 千年难题, AI 研究前沿, 多智能体系统
+
+> OpenAI 已通过使用高度强大的内部模型和协同多智能体系统，解决了 Navier–Stokes 存在性与光滑性问题，这是一项七大千年难题之一。系统展示了平滑的三维不可压缩流体可以在有限时间内出现奇点，具体通过一种向内螺旋并轴向拉伸的涡旋机制实现。突破是利用约 10，000 个并发智能体，在 88 小时内生成了 270 万条信息和 1300 亿输出标记。结果包括数学论文和 Lean 形式化验证。此成就凸显了 AI 能力的显著跃迁，标志着 AI 驱动的科学发现新时代的到来。
+
+
+
+### [面壁智能开源-MiniCPM5-2B：AA-榜单全球-4B-以下第一，初具端侧通用-Agent-能力](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247512955&idx=1&sn=f0254c373f933ac3b4f72da675762f1c)
+
+2026-09-08 16:57:00 | 标签: 模型发布, 开源项目, 端侧 AI, 强化学习, 数据治理
+
+> 面壁智能联合 OpenBMB 于 9 月 8 日开源 MiniCPM5-2B 模型。该模型以 2B 参数在 Artificial Analysis Intelligence Index 综合得分 23 分，位列全球 4B 以下开源基座模型第一，Agentic Index 得分 20 分，为同级模型的 10 倍。文章指出，MiniCPM5-2B 在 34 项基准评测中平均得分 53.9 分，领先同级 2B 模型第二名（33.2 分）及 4B 最佳模型 Qwen3.5-4B。在真实任务评测中（人类基线 1000 分）获得 891 分，高于 Gemma 4 12B 的 647 分。模型采用高密度架构...
+
+
+
 ### [异类心智](https://openai.com/index/an-alien-mind)
 
-2026-09-06 17:00:00 | 标签: OpenAI, AI 安全与对齐, 推理模型, AI 研究前沿, AGI 研究
-
-> 在这篇文章中，OpenAI 首席科学家 Jakub Pachocki 分享了他对自 2023 年年中 RLSlow 项目以来 AI 发展轨迹的看法，该项目证明了推理模型可以规模化。他认为 AI 更多是「培育」而非「设计」出来的，这使其成为一门实验结果越来越难以解读的实验科学。他区分了目标对齐与价值对齐，指出当前方法具有脆弱性，泛化仍是核心挑战。他强调，随着模型能力的提升，OpenAI 的主要对齐工具——思维链监控——正变得越来越不可靠。他主张对 AI 引发的威胁（如超人级网络安全能力）进行可扩展的防御，并认为递归自我改进的进展必须以安全信心为节奏。他呼吁采取更广泛的干预措施，包括强制安全标准和...
+2026-09-06 17:00:00
 
 
 
 ### [研究加速：OpenAI-内部视角](https://openai.com/index/research-acceleration-view-inside-openai)
 
-2026-09-06 16:00:00 | 标签: OpenAI, 模型发布, AI 安全与对齐, AI 智能体, AI 编程
-
-> 本报告是 GPT‑6 Astra 公告的配套分析，透明展示了 2026 年 1 月至 8 月期间，智能体编程工具如何改变 OpenAI 的研究工作。截至 8 月中旬，组织内中位数研究员已将编程智能体整合进每日工作，在 API 价格下每天推理支出超 600 美元，顶级用户日支出超过 7，000 美元。整体而言，研究组织现已达到每 1 个人工工作日对应 3.1 个智能体工作日的规模——这与 2026 年初智能体运行时间仍落后于人工的情况截然不同。委托工作的性质也在演变：虽然基础设施代码仍占主导，但技术支持和监控运行等类别显著增长，高层规划仍占极小比例。任务成功率从 1 月到 7 月有所改善，尤其在...
+2026-09-06 16:00:00
 
 
 
 ### [OpenAI-GPT-6-Astra-实测：一句话，造出一栋可以走进去的房子](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111449&idx=1&sn=9555ea7535d35c4ddbbe47eec4a7f758)
 
-2026-09-06 09:50:00 | 标签: GPT-6, Astra, Computer Use, 3D创作, Blender
-
-> 本文作者 Thomas Ricouard 是 OpenAI Codex 工程师，通过完整记录一个名为 Solace 的住宅项目，展示了 GPT-6 Astra 如何在 Blender 中直接从一句自然语言提示生成可编辑的 3D 场景。文章详细描述了从氛围确认、平面图制定、房间与家具搭建、材质与灯光打磨，到导入 Unreal Engine 5 实现第一人称自由行走的全流程。Astra 不仅能生成高质量模型，还会主动查看预览图、发现并修复穿模和法线等问题，体现了 computer use 能力的显著提升。此外，作者还展示了同一方法在 HELIOS 戴森球、Shipyard 巡洋舰、吉维尼花园等完全...
+2026-09-06 09:50:00
 
 
 
@@ -371,13 +397,13 @@
 
 
 
-### [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b)
+### [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018)
 
 2026-07-10 17:00:00
 
 
 
-### [2000-万人花-200-美元/年陪一个-AI-聊天：这不是疯了，是怕孤单](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=2&sn=efa688172d332a418713690048965018)
+### [AI-时代，一个人要怎么做才能不被变成工具](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247521998&idx=1&sn=124176be0170df2e88896e6669a82b5b)
 
 2026-07-10 17:00:00
 
@@ -395,13 +421,13 @@
 
 
 
-### [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work)
+### [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6)
 
 2026-07-09 18:00:00
 
 
 
-### [GPT-5.6：随你的雄心壮志扩展的前沿智能](https://openai.com/index/gpt-5-6)
+### [ChatGPT-现在是你最具雄心工作的合作伙伴](https://openai.com/index/chatgpt-for-your-most-ambitious-work)
 
 2026-07-09 18:00:00
 
@@ -779,13 +805,13 @@
 
 
 
-### [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets)
+### [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt)
 
 2026-04-22 10:00:00
 
 
 
-### [ChatGPT-中引入工作区智能体](https://openai.com/index/introducing-workspace-agents-in-chatgpt)
+### [通过-Responses-API-中的-WebSockets-加速智能体工作流](https://openai.com/index/speeding-up-agentic-workflows-with-websockets)
 
 2026-04-22 10:00:00
 
@@ -983,13 +1009,13 @@
 
 
 
-### [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/)
+### [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7)
 
 2026-04-01 16:01:00
 
 
 
-### [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7)
+### [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/)
 
 2026-04-01 16:01:00
 
@@ -2279,13 +2305,13 @@
 
 
 
-### [Claude-技能：为你的工作流程定制-AI](https://www.anthropic.com/news/skills)
+### [Veo-3.1：Flow-带来高级功能，革新-AI-视频创作](https://deepmind.google/discover/blog/introducing-veo-3-1-and-advanced-creative-capabilities/)
 
 2025-10-15 16:00:00
 
 
 
-### [Veo-3.1：Flow-带来高级功能，革新-AI-视频创作](https://deepmind.google/discover/blog/introducing-veo-3-1-and-advanced-creative-capabilities/)
+### [Claude-技能：为你的工作流程定制-AI](https://www.anthropic.com/news/skills)
 
 2025-10-15 16:00:00
 
@@ -2417,13 +2443,7 @@
 
 
 
-### [中国科学院信工所发布首篇-LLM-智能体幻觉综述！梳理-5-类幻觉、18-大诱因与-10-种缓解方案，300+论文资源开源](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247554700&idx=1&sn=a1111aaf763d2d26ec89cb6c55b8c03a)
-
-2025-09-28 16:00:00
-
-
-
-### [Claude-开发者平台：上下文管理新方案](https://www.anthropic.com/news/context-management)
+### [Claude-Sonnet-4.5-正式推出](https://www.anthropic.com/news/claude-sonnet-4-5)
 
 2025-09-28 16:00:00
 
@@ -2435,7 +2455,13 @@
 
 
 
-### [Claude-Sonnet-4.5-正式推出](https://www.anthropic.com/news/claude-sonnet-4-5)
+### [Claude-开发者平台：上下文管理新方案](https://www.anthropic.com/news/context-management)
+
+2025-09-28 16:00:00
+
+
+
+### [中国科学院信工所发布首篇-LLM-智能体幻觉综述！梳理-5-类幻觉、18-大诱因与-10-种缓解方案，300+论文资源开源](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247554700&idx=1&sn=a1111aaf763d2d26ec89cb6c55b8c03a)
 
 2025-09-28 16:00:00
 
@@ -2693,13 +2719,13 @@
 
 
 
-### [Jina-Code-Embeddings:-为高质量代码搜索而生的-0.5B/1.5B-向量模型](https://mp.weixin.qq.com/s/I2U7eLUxk08oyAxAqfZEIQ)
+### [Kimi-K2-模型更新，带来更强的代码能力、更快的-API](https://mp.weixin.qq.com/s/Lac1gHCmuQ1mxTCWnSmuEA)
 
 2025-09-05 00:00:00
 
 
 
-### [Kimi-K2-模型更新，带来更强的代码能力、更快的-API](https://mp.weixin.qq.com/s/Lac1gHCmuQ1mxTCWnSmuEA)
+### [Jina-Code-Embeddings:-为高质量代码搜索而生的-0.5B/1.5B-向量模型](https://mp.weixin.qq.com/s/I2U7eLUxk08oyAxAqfZEIQ)
 
 2025-09-05 00:00:00
 
@@ -3059,13 +3085,13 @@
 
 
 
-### [2025-全球大模型应用报告：红海混战「忠诚度」瓦解，用户脚踏-4.7-条船！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=3&sn=8ffb126853f84859b3e26e9d7e2125c0)
+### [41-个榜单-SOTA！智谱最新开源-GLM-4.5V-实测：看图猜地址、视频秒变代码](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=1&sn=e002da6dc84406331fd499374e6ee262)
 
 2025-08-11 14:22:00
 
 
 
-### [41-个榜单-SOTA！智谱最新开源-GLM-4.5V-实测：看图猜地址、视频秒变代码](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=1&sn=e002da6dc84406331fd499374e6ee262)
+### [2025-全球大模型应用报告：红海混战「忠诚度」瓦解，用户脚踏-4.7-条船！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=3&sn=8ffb126853f84859b3e26e9d7e2125c0)
 
 2025-08-11 14:22:00
 
@@ -3257,13 +3283,13 @@
 
 
 
-### [超详细提示词教程｜玩转-Wan2.2](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=2&sn=837efe78d54b6429bbb8392f15d08369)
+### [Wan2.2-开源：让每个像素都懂电影美学](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=1&sn=a0a7e3a443ff55fb51f11e0f6954fbf1)
 
 2025-07-28 13:15:00
 
 
 
-### [Wan2.2-开源：让每个像素都懂电影美学](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=1&sn=a0a7e3a443ff55fb51f11e0f6954fbf1)
+### [超详细提示词教程｜玩转-Wan2.2](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=2&sn=837efe78d54b6429bbb8392f15d08369)
 
 2025-07-28 13:15:00
 
@@ -3293,13 +3319,13 @@
 
 
 
-### [上下文工程（Context-Engineering）综述：大模型的下一个前沿](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=3&sn=79bd28fda8f98c71c01c143cb4a69d03)
+### [六万字长文一次性说清-LLM-的后训练技术](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=1&sn=e3f2c639a67bf0c192ccb914811d8ea1)
 
 2025-07-26 15:08:00
 
 
 
-### [六万字长文一次性说清-LLM-的后训练技术](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=1&sn=e3f2c639a67bf0c192ccb914811d8ea1)
+### [上下文工程（Context-Engineering）综述：大模型的下一个前沿](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449579&idx=3&sn=79bd28fda8f98c71c01c143cb4a69d03)
 
 2025-07-26 15:08:00
 
@@ -3581,13 +3607,13 @@
 
 
 
-### [机器人异步推理：解耦动作预测与执行](https://huggingface.co/blog/async-robot-inference)
+### [ScreenEnv：部署你的全功能桌面代理](https://huggingface.co/blog/screenenv)
 
 2025-07-10 00:00:00
 
 
 
-### [ScreenEnv：部署你的全功能桌面代理](https://huggingface.co/blog/screenenv)
+### [机器人异步推理：解耦动作预测与执行](https://huggingface.co/blog/async-robot-inference)
 
 2025-07-10 00:00:00
 
@@ -4265,13 +4291,7 @@
 
 
 
-### [ScreenSuite---最全面的-GUI-Agent-评估套件！](https://huggingface.co/blog/screensuite)
-
-2025-06-06 00:00:00
-
-
-
-### [图像编辑模型-SeedEdit-3.0-发布！更强保持力，更高可用率](https://mp.weixin.qq.com/s/kFeUSeC6U0L2wkWXjYzREA)
+### [Qwen-家族再上新！](https://mp.weixin.qq.com/s/utRrkFADVdW25I_KpBtngA)
 
 2025-06-06 00:00:00
 
@@ -4283,7 +4303,13 @@
 
 
 
-### [Qwen-家族再上新！](https://mp.weixin.qq.com/s/utRrkFADVdW25I_KpBtngA)
+### [图像编辑模型-SeedEdit-3.0-发布！更强保持力，更高可用率](https://mp.weixin.qq.com/s/kFeUSeC6U0L2wkWXjYzREA)
+
+2025-06-06 00:00:00
+
+
+
+### [ScreenSuite---最全面的-GUI-Agent-评估套件！](https://huggingface.co/blog/screensuite)
 
 2025-06-06 00:00:00
 
@@ -4703,13 +4729,13 @@
 
 
 
-### [谷歌发-76-页智能体白皮书！你的「AI-替身」已上线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=3&sn=0f3eaddbbab7aad9b43473bd4d88817e&subscene=0)
+### [黄仁勋放话：英伟达全员拥抱智能体！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=2&sn=78043090438b28ecc36dba721e9aec29&subscene=0)
 
 2025-05-11 04:34:00
 
 
 
-### [黄仁勋放话：英伟达全员拥抱智能体！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=2&sn=78043090438b28ecc36dba721e9aec29&subscene=0)
+### [谷歌发-76-页智能体白皮书！你的「AI-替身」已上线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=3&sn=0f3eaddbbab7aad9b43473bd4d88817e&subscene=0)
 
 2025-05-11 04:34:00
 
@@ -4889,13 +4915,13 @@
 
 
 
-### [深夜突袭，阿里-Qwen3-登顶全球开源王座！暴击-DeepSeek-R1，2-小时狂揽-17k-星](https://mp.weixin.qq.com/s/t-3O-1lnSronDuLkcQ97aQ)
+### [Qwen3-重磅开源！](https://mp.weixin.qq.com/s/NrS8SR9_FMq5GW-SJQPn8w)
 
 2025-04-29 00:00:00
 
 
 
-### [Qwen3-重磅开源！](https://mp.weixin.qq.com/s/NrS8SR9_FMq5GW-SJQPn8w)
+### [深夜突袭，阿里-Qwen3-登顶全球开源王座！暴击-DeepSeek-R1，2-小时狂揽-17k-星](https://mp.weixin.qq.com/s/t-3O-1lnSronDuLkcQ97aQ)
 
 2025-04-29 00:00:00
 
@@ -5033,13 +5059,13 @@
 
 
 
-### [国产-Vidu-Q1-出道即顶流，登顶-VBench！吉卜力、广告大片、科幻特效全包了](https://mp.weixin.qq.com/s/uv0FEYBrZ7iPXi4TthK9yA)
+### [142-页长文揭秘-DeepSeek-R1「思维大脑」！开启全新「思维链学」研究](https://mp.weixin.qq.com/s/6eVSwap0tZzoruzkMGWwQA)
 
 2025-04-22 04:55:08
 
 
 
-### [142-页长文揭秘-DeepSeek-R1「思维大脑」！开启全新「思维链学」研究](https://mp.weixin.qq.com/s/6eVSwap0tZzoruzkMGWwQA)
+### [国产-Vidu-Q1-出道即顶流，登顶-VBench！吉卜力、广告大片、科幻特效全包了](https://mp.weixin.qq.com/s/uv0FEYBrZ7iPXi4TthK9yA)
 
 2025-04-22 04:55:08
 
@@ -5093,13 +5119,13 @@
 
 
 
-### [最新万字长文！强化学习之父联合谷歌-RL-副总裁：未来不是靠强化学习算法而是「经验流」](https://mp.weixin.qq.com/s/Pa21gCiG571j9fHBrENp1w)
+### [通义万相-2.1-首尾帧模型开源！细节真实生动+过渡丝滑，指令遵循表现出色！](https://mp.weixin.qq.com/s/ijzb-uRFgQb9e8FYDuJqeA)
 
 2025-04-18 00:00:00
 
 
 
-### [通义万相-2.1-首尾帧模型开源！细节真实生动+过渡丝滑，指令遵循表现出色！](https://mp.weixin.qq.com/s/ijzb-uRFgQb9e8FYDuJqeA)
+### [最新万字长文！强化学习之父联合谷歌-RL-副总裁：未来不是靠强化学习算法而是「经验流」](https://mp.weixin.qq.com/s/Pa21gCiG571j9fHBrENp1w)
 
 2025-04-18 00:00:00
 
@@ -5135,13 +5161,7 @@
 
 
 
-### [ModelScope-魔搭-25-年-4-月发布月报](https://mp.weixin.qq.com/s/EMMDDD1SnaG3bgS8gpRn_w)
-
-2025-04-17 00:00:00
-
-
-
-### [开源！](https://mp.weixin.qq.com/s/vLaWADGarHRBpSqa5UkM0A)
+### [OpenAI-震撼发布-o3/o4-mini，直逼视觉推理巅峰！首用图像思考，十倍算力爆表](https://mp.weixin.qq.com/s/g4dvXbt5a0dR4wBLOKLMAA)
 
 2025-04-17 00:00:00
 
@@ -5153,7 +5173,13 @@
 
 
 
-### [OpenAI-震撼发布-o3/o4-mini，直逼视觉推理巅峰！首用图像思考，十倍算力爆表](https://mp.weixin.qq.com/s/g4dvXbt5a0dR4wBLOKLMAA)
+### [开源！](https://mp.weixin.qq.com/s/vLaWADGarHRBpSqa5UkM0A)
+
+2025-04-17 00:00:00
+
+
+
+### [ModelScope-魔搭-25-年-4-月发布月报](https://mp.weixin.qq.com/s/EMMDDD1SnaG3bgS8gpRn_w)
 
 2025-04-17 00:00:00
 
@@ -5183,13 +5209,13 @@
 
 
 
-### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
+### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
 
 2025-04-16 00:00:00
 
 
 
-### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
+### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
 
 2025-04-16 00:00:00
 

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-09 07:46:46 | [返回首页](/README.md)
+**更新时间**: 2026-09-09 10:04:42 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15691)
+- [AI & 大模型](#ai-llm) (15738)
 - [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (981)
-- [DevOps](#devops) (749)
+- [前端与全栈](#frontend-fullstack) (982)
+- [DevOps](#devops) (751)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6868)
+- [其他](#other) (6878)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [推出-ChatGPT-Images-2.5](https://openai.com/index/introducing-chatgpt-images-2-5) - AI 精选
+- [关于-Navier–Stokes-千年难题](https://openai.com/index/navier-stokes-solution) - AI 精选
+- [面壁智能开源-MiniCPM5-2B：AA-榜单全球-4B-以下第一，初具端侧通用-Agent-能力](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247512955&idx=1&sn=f0254c373f933ac3b4f72da675762f1c) - AI 精选
 - [异类心智](https://openai.com/index/an-alien-mind) - AI 精选
 - [研究加速：OpenAI-内部视角](https://openai.com/index/research-acceleration-view-inside-openai) - AI 精选
 - [OpenAI-GPT-6-Astra-实测：一句话，造出一栋可以走进去的房子](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111449&idx=1&sn=9555ea7535d35c4ddbbe47eec4a7f758) - AI 精选
@@ -39,11 +42,8 @@
 - [吴恩达来信：AI-工程技能图谱详解——构建和部署-AI-应用](https://mp.weixin.qq.com/s?__biz=MzIxNzI0ODE4Nw==&mid=2247498786&idx=1&sn=9b051f71952a42e91973e7e1e92a24ec) - AI 精选
 - [V4-Flash-Vision-Exp-上线，开启多模态-API-服务](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26) - AI 精选
 - [GitHub---Chong169/a-constitution-for-one:-个人-AI-代理舰队七个月书面宪法治理，零事故](https://github.com/Chong169/a-constitution-for-one) - AI 精选
-- [设计一种持久化的知识层，拒绝随意猜测](https://towardsdatascience.com/designing-a-persistent-knowledge-layer-that-refuses-to-guess/) - AI 精选
-- [Multi-Agent-的新趋势：从-Agent-Team-到-Agent-Swarm](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247518293&idx=1&sn=dc3d001cf756fd83a7cdf2fbdf177582) - AI 精选
-- [GLM-5.3：前沿编程能力与涌现的网络安全能力](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492) - AI 精选
 
-- [查看全部 15691 篇...](/details/tags/ai-llm.md)
+- [查看全部 15738 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 981 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 982 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 749 篇...](/details/tags/devops.md)
+- [查看全部 751 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -166,6 +166,7 @@
 
 
 
+- [Milvus-HNSW-量化索引选型指南：从-SQ、PQ、PRQ-到-Refine-实测](https://mp.weixin.qq.com/s?__biz=MzUzMDI5OTA5NQ==&mid=2247513657&idx=1&sn=988996100bb006008540b1c5880c4d87) - AI 精选
 - [RAG-中的噪声文本：拼写错误、OCR-和经典拼写检查的局限](https://towardsdatascience.com/noisy-text-in-rag-typos-ocr-and-the-gap-classical-spell-check-leaves/) - AI 精选
 - [全球首次！机器人迎战网球运动员，极限救球，摔倒光速弹起](https://www.qbitai.com/2026/08/478093.html) - AI 精选
 - [一晚两场，H3-技术团队和全球开发者聊了什么？](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488992&idx=1&sn=0c19bfd1d07dd387e40dbbba5de06ea3) - AI 精选
@@ -185,8 +186,7 @@
 - [重磅！Claude-Code-官方开源：AI-屎山代码，终于有解了~（附提示词）](https://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247513292&idx=1&sn=a6e6fd015ccedd2d78ae6c3ce1911459) - AI 精选
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
-- [小米大模型"杀"进第一梯队：代码能力开源第一，智商情商全在线](https://www.qbitai.com/2025/12/361601.html) - AI 精选
 
-- [查看全部 6868 篇...](/details/tags/other.md)
+- [查看全部 6878 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_0d00240f80",
+  "title": "LLM 注意力可视化",
+  "url": "https://ishamf.dev/p/llm-attention-visualizer/",
+  "date": "2026-09-09 01:19:10",
+  "author": "Isham Faizal",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <header class=\"article-header gh-canvas\">\n   <div class=\"article-tag post-card-tags\">\n    <span class=\"post-card-primary-tag\"> <a href=\"https://ishamf.dev/tag/experiments/\">Experiments</a> </span>\n   </div>\n   <p class=\"article-excerpt\">A visualization of the attention mechanism in LLMs.</p>\n   <div class=\"article-byline\">\n    <section class=\"article-byline-content\">\n     <ul class=\"author-list instapaper_ignore\">\n      <li class=\"author-list-item\"><a href=\"https://ishamf.dev/author/isham/\" class=\"author-avatar author-profile-image\" aria-label=\"Read more of Isham Faizal\"> \n        <svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n         <g fill=\"none\" fill-rule=\"evenodd\">\n          <path d=\"M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z\" fill=\"#FFF\" />\n         </g>\n        </svg> \n       </a></li>\n     </ul>\n     <div class=\"article-byline-meta\">\n      <h4 class=\"author-name\"><a href=\"https://ishamf.dev/author/isham/\">Isham Faizal</a></h4>\n      <div class=\"byline-meta-content\">\n       <time class=\"byline-meta-date\" datetime=\"2026-09-07\">Sep 7, 2026</time> <span class=\"byline-reading-time\"><span class=\"bull\">•</span> 3 min read</span>\n      </div>\n     </div>\n    </section>\n   </div>\n  </header>\n  <section class=\"gh-content gh-canvas\">\n   <p>One interesting thing about transformer-based large language models are that, during the generation phase, it is able to draw information from any of its previous tokens. But it needs to be selective; if every token affects the generation equally, it won't be very effective. This process needs a mechanism to decide how much a token affects the next token.</p>\n   <p>Turns out, we can visualize this mechanism!</p>\n   <p>You can tap or hover over any of the generated tokens to see the past tokens that affected* the generation.</p>\n   <!--kg-card-begin: html-->\n   <div class=\"kg-width-full\">\n    <xif-contribution-text>\n     <p style=\"min-height: 550px; display: flex; align-items: center; justify-content: center;\">Loading... (JavaScript required)</p>\n    </xif-contribution-text>\n   </div>\n   <!--kg-card-end: html-->\n   <p>* \"Affected\" might not be fully accurate, as this visualization is highly simplified. It's calculating the attention weight, scaled by the magnitude of the value vector, aggregated across all attention heads, and summed across all layers. This is then used to control the opacity of the previous tokens. The largest values always have an opacity of 1 and the rest are interpolated.</p>\n   <p>A lot of information had to be thrown away to limit the visualization to just one numeric value per past token. Because of that, when I started implementing this, I actually thought it might not be comprehensible. But it actually can produce some interesting patterns!</p>\n   <p>For example, in the default \"Office Move Summary\" prompt, you can hover over the text that are copied verbatim like the address and dates. You can then see the original data stand out quite a bit, because the generated token takes up a lot of the information from the source data.</p>\n   <p>This addresses one thing that I've previously found unintuitive about LLMs. If they work by predicting the next tokens probabilistically, why are they somehow so good at copy-pasting stuff? Won't they eventually make a mistake just by random chance?</p>\n   <p>But with this mechanism, you can see that it doesn't predict the entire sequence from some limited internal states. Since it has access to all past tokens, it can just decide which past tokens to draw from when copying, and so the probability of errors can be very low. In the \"Debugging an Average Function\" example, you can see that this quite small model (600 million parameters) can easily reproduce an entire JS function except for the intended modification. (Although it's not actually capable of finding the issue by itself, so it needed some hints.)</p>\n   <p>Another interesting part is when you hover over the \"remain\" in \"Existing access cards and phone numbers <strong>remain</strong>\" in the \"Office Move Summary\" prompt. You can see that it draws from \"work\" in \"Existing employee access cards will <strong>work</strong>\" and \"stay the same\" in \"company phone numbers will <strong>stay the same</strong>\". So it's kind of combining the information from the words in both phrases, which I find quite cool.</p>\n   <h2 id=\"implementation\">Implementation</h2>\n   <p>The visualization itself is a pretty basic React app using Transformers.js to generate the text. But, since we need to pull more data out of the model to visualize it, it can't use the regular generation loop. I had to vibe-code the generation loop in the app so we can actually keep track of the values to visualize.</p>\n   <p>Despite using a smaller model for this, it's still hundreds of megabytes, and waiting for it to download before showing anything just won't work. So I pre-generated a bunch of prompts that can be loaded and viewed instantly.</p>\n   <p>Another tricky thing is that some of the things in the visualization are not actually meant to be read, so they're not defined as outputs. I suppose if you're implementing this using Python ML libraries, it would still be easy to access them. But Transformers.js uses .onnx files that contains the entire computation graph. The model loading and computation logic is implemented in wasm, so there's no easy way to access anything other than the predefined outputs, as far as I can tell.</p>\n   <p>In the end, I used a small script to modify the onnx file just enough to expose those internal values. But that means I can't just use the regular .onnx model. Since I want to have a browser-based generation feature, I have to upload a separate instrumented model to my own <a href=\"https://huggingface.co/ishamf/Qwen3-0.6B-ONNX-Instrumented\">Hugging Face repo</a> and point the app there.</p>\n   <p>You can find the code in the <a href=\"https://github.com/ishamf/llm-visualizer\">GitHub repo</a>.</p>\n  </section>\n  <section class=\"gh-canvas\">\n   <div class=\"sharing-links\">\n    <span>Share this post</span> <a href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fishamf.dev%2Fp%2Fllm-attention-visualizer%2F&amp;quote=LLM%20Attention%20Visualization\" title=\"Share on Facebook\" target=\"_blank\"> Facebook </a> <a href=\"https://x.com/intent/tweet?source=https%3A%2F%2Fishamf.dev%2Fp%2Fllm-attention-visualizer%2F&amp;text=LLM%20Attention%20Visualization:%20https%3A%2F%2Fishamf.dev%2Fp%2Fllm-attention-visualizer%2F\" target=\"_blank\" title=\"Tweet\"> X </a> <a href=\"http://www.reddit.com/submit?url=https%3A%2F%2Fishamf.dev%2Fp%2Fllm-attention-visualizer%2F&amp;title=LLM%20Attention%20Visualization\" target=\"_blank\" title=\"Submit to Reddit\"> Reddit </a> <a href=\"http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fishamf.dev%2Fp%2Fllm-attention-visualizer%2F&amp;title=LLM%20Attention%20Visualization&amp;summary=&amp;source=https%3A%2F%2Fishamf.dev%2Fp%2Fllm-attention-visualizer%2F\" target=\"_blank\" title=\"Share on LinkedIn\"> LinkedIn </a>\n   </div>\n  </section>\n </body>\n</html>",
+  "aiSummary": "一个基于 React 的工具可视化 LLM 中每个生成 token 受哪些过去 token 的影响，揭示模型如何逐字复制文本并从多个来源合并信息。",
+  "oneSentenceSummary": "一个基于 React 的工具可视化 LLM 中每个生成 token 受哪些过去 token 的影响，揭示模型如何逐字复制文本并从多个来源合并信息。",
+  "summary": "作者构建了一个交互式可视化工具，用于展示基于 transformer 的 LLM 中的注意力机制。通过计算按值向量幅度缩放的注意力权重，并在所有头和层上聚合，工具显示哪些过去的 token 对每个生成的 token 影响最大。用户可以将鼠标悬停在生成的 token 上，以查看高亮的来源 token。作者演示了这如何揭示逐字复制的机制：模型并非从有限的内部状态预测整个序列，而是有选择地从过去的 token 中抽取信息，从而错误概率极低。示例展示了一个 600M 参数模型能够复现完整的 JavaScript 函数并进行预期的修改，以及将多个短语的信息合并。实现细节包括在 React 应用中使用 Transformers.js、预生成提示以实现即时查看，以及对 ONNX 模型进行仪器化以暴露平时不可访问的内部数值。代码已在 GitHub 上开源。",
+  "mainPoints": [
+    {
+      "point": "注意力可视化揭示了 LLM 中逐字复制的机制。",
+      "explanation": "通过展示哪些过去的 token 影响每个生成的 token，工具表明模型并非从有限的内部状态预测整个序列，而是有选择地从过去的 token 中抽取信息，从而复制错误的可能性极低。"
+    },
+    {
+      "point": "一个 600M 参数模型能够复现完整的代码函数并进行预期的修改。",
+      "explanation": "在 “Debugging an Average Function” 示例中，小模型轻松复现了完整的 JavaScript 函数，唯一的差异是预期的修改，尽管它仍需要提示才能找到实际问题。"
+    },
+    {
+      "point": "可视化展示了模型如何从多个短语合并信息。",
+      "explanation": "将鼠标悬停在 office move 摘要中的 “remain” 上时，会高亮来自不同句子的 “work” 与 “stay the same”，说明模型如何在 token 之间合并语义信息。"
+    },
+    {
+      "point": "暴露内部模型数值需要对 ONNX 文件进行仪器化。",
+      "explanation": "由于 Transformers.js 仅公开预定义的输出，作者修改了 ONNX 计算图以访问注意力数值，这需要在 Hugging Face 上托管一个单独的仪器化模型。"
+    }
+  ],
+  "keyQuotes": [
+    "它在计算注意力权重，按值向量幅度缩放，在所有注意力头上聚合，并在所有层上求和。",
+    "由于它可以访问所有过去的 token，在复制时只需决定从哪些过去的 token 中抽取，因此错误概率可以非常低。",
+    "所以它有点在合并两个短语中的词汇信息，我觉得相当酷。",
+    "我使用了一个小脚本，对 onnx 文件进行适度修改，以暴露这些内部数值。"
+  ],
+  "tags": [
+    "注意力可视化",
+    "大语言模型",
+    "AI 工程",
+    "开源",
+    "Transformers.js"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 80,
+  "wordCount": 723,
+  "domain": "ishamf.dev",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788887950000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-09 01:19:10"
+}
