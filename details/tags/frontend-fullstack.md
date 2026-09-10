@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-10 10:01:30 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-10 15:03:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -758,9 +758,7 @@
 
 ### [我们如何重建-Cloudflare-Workers-的模块注册表以实现-Node.js-兼容性](https://blog.cloudflare.com/workers-module-registry-nodejs/)
 
-2026-09-09 21:00:44 | 标签: Cloudflare Workers, Node.js, JavaScript, 开发者平台, 开源
-
-> 为了弥合 Cloudflare Workers 与更广泛的 Node.js 生态系统之间的差距，Cloudflare 重建了其模块注册表。之前的系统虽然能够满足标准 ES 模块的需求，但在处理 Node.js 所需的复杂解析逻辑时遇到困难，例如 package.json 的 exports、条件导出以及嵌套依赖解析。本文解释了从平坦、简化的注册表向更强大、兼容 Node 的解析引擎的转变。通过整合这些改动，开发者现在可以直接在 Workers 中使用现有的 Node.js 包，无需大量打包或手动配置，从而显著提升开发者体验和平台互操作性。
+2026-09-09 21:00:44
 
 
 

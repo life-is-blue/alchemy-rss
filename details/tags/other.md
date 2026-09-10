@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-10 10:01:30 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-10 15:03:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3751,41 +3751,31 @@
 
 ### [AlloyDB-Omni-RPM-Orchestrator-正式发布](https://cloud.google.com/blog/products/databases/alloydb-omni-rpm-orchestrator-is-generally-available/)
 
-2026-09-10 08:00:00 | 标签: 数据库, PostgreSQL, Google, 高可用, 备份与恢复
-
-> 本文宣布 AlloyDB Omni Red Hat RPM orchestrator 正式上市，该工具为虚拟机和裸金属服务器带来了云端级别的数据库自动化能力。文章重点介绍了四种部署模式，包括独立容器、Kubernetes Operator、独立 RPM 以及用于高可用（HA）的 RPM orchestrator。该编排器支持灵活的参考架构，具备负载均衡、同步复制、只读池以及基于 etcd 的控制平面。核心功能包括自动化备份与恢复、点对点恢复（PITR）、SELinux 强制执行、低停机时间维护、动态配置和自定义指标。此外，它还集成了 AlloyDB AI 能力，如向量搜索和自然语言查询。本文将...
+2026-09-10 08:00:00
 
 
 
 ### [Apple-发布首款折叠屏-iPhone-Duo，起售价-$1，999-·-AIHOT](https://aihot.news/items/cmtugou9e1cddrofptz3jwh4j)
 
-2026-09-10 02:15:40 | 标签: Apple, iPhone Duo, 折叠屏手机, 移动硬件, iOS 27
-
-> Apple 宣布推出 iPhone Duo，这是其首款折叠屏 iPhone，配备 7.6 英寸内屏和 5.4 英寸外屏，两者长宽比一致，实现无缝切换。该设备搭载配备定制均热室的 A20 Pro 芯片以维持持续性能，采用双电池架构，内屏视频播放续航长达 31 小时，并配备重新设计的 iOS 27，引入分屏多任务和全新 Siri AI。相机系统包含 4800 万像素 Fusion 主摄、新款屏下 FaceTime 摄像头，以及 Smart Take 和 Duo Preview 等功能。iPhone Duo 采用 5 级钛金属、Ceramic Shield 2 并具备 IP68 等级。预订于 10 ...
+2026-09-10 02:15:40
 
 
 
 ### [IBM-发布-SOTA-Granite-时间序列-PatchTST-FM-r2-模型，具备商业友好许可证](https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series)
 
-2026-09-09 23:36:24 | 标签: 时间序列预测, 基础模型, 模型发布, 零样本预测, Conformer 架构
-
-> IBM 发布了 Granite 时间序列 PatchTST-FM-r2，这是其时间序列预测基础模型 PatchTST-FM-r1 的升级版。该模型拥有约 3.85 亿参数，采用了重新设计的架构，使用 conformer 模块将多头自注意力机制与时间卷积相结合，能够捕捉长短程时间模式。模型支持高达 8，192 个时间步的上下文长度、灵活的预测长度，并通过 99 个分位数预测头提供概率预测。该模型采用 Apache 2.0 和 OpenMDW 1.0 双重许可，商业友好。在 GIFT-Eval 排行榜上，该模型在 CRPS 和 MASE 指标上均排名第二，在可复制零样本模型中表现最佳，且在宽松许可...
+2026-09-09 23:36:24
 
 
 
 ### [We-Hire-Taste：Kimi-全球寻找-7-名「Wild-Card」，校招同步开启](https://mp.weixin.qq.com/s?__biz=MzcwMjM3ODEzOA==&mid=2247487474&idx=1&sn=927c1b09b76e3ac959231822b228d489)
 
-2026-09-09 21:37:00 | 标签: 月之暗面, Kimi, 招聘, Wild Card, 校招
-
-> 文章宣布了月之暗面 Kimi 的两项招聘计划：一是全球范围内的 'Wild Card' 招聘，寻找 7 名具备非凡品味和创新精神的候选人；二是校招，面向年轻学生提供加入 AI 领域的机会。招聘重点放在对 AI 充满热情、愿意挑战现状、并具备跨学科背景的候选人。
+2026-09-09 21:37:00
 
 
 
 ### [GitHub---rist-os/rist-os-handset:-一款基于-Pixel-10a-的去谷歌化-Android-操作系统。推按式助手，使用自己的后端。](https://github.com/rist-os/rist-os-handset)
 
-2026-09-09 20:11:18 | 标签: Android, GrapheneOS, Pixel 10a, 推按式, 去谷歌化
-
-> RistOS 提供了一种精简的 Android 体验，专注于语音交互，移除了所有 Google 服务和第三方应用。该系统采用“自带后端”模式，用户必须设置一个服务器来处理语音处理和命令执行。
+2026-09-09 20:11:18
 
 
 
@@ -16187,73 +16177,55 @@
 
 ### [什么是机器学习模型以及如何创建一个](https://www.freecodecamp.org/news/what-a-machine-learning-model-is-and-how-to-make-one/)
 
-2026-09-10 03:46:10 | 标签: 机器学习, Python, Scikit-learn, 决策树, 监督学习
-
-> 机器学习被介绍为让计算机从示例中学习模式并利用这些模式对新数据进行预测的过程。文章将其与传统编程进行对比，传统编程中规则是显式编码的。它通过一个具体的例子进行说明：根据学习小时数预测学生是否会通过考试，使用一个包含学习小时数和通过/失败标签的小数据集。逐步解释了诸如特征、标签、数据集、监督学习和训练/测试划分等关键概念。教程展示了如何为 scikit-learn 准备数据：将一维列表转换为 二维特征矩阵，使用 train_test_split 拆分数据，创建 DecisionTreeClassifier，使用 fit 进行训练，并进行预测。还涵盖了评估模型准确率、单独的训练和测试集在检测过拟合...
+2026-09-10 03:46:10
 
 
 
 ### [组合设计模式：如何通过相同接口处理单个对象和组](https://www.freecodecamp.org/news/the-composite-design-pattern-work-with-individual-objects-and-groups-through-the-same-interface/)
 
-2026-09-10 02:10:26 | 标签: 设计模式, Dart & Flutter, 编程语言, 系统设计, 代码质量
-
-> 组合设计模式是一种结构型模式，使客户端能够通过共享接口统一处理单个对象以及对象的组合。文章首先阐述了在处理部分-整体层次结构时分散的类型检查代码带来的问题，然后介绍了三层结构：Component（接口或抽象类）、Leaf（具体端对象）和 Composite（持有 Component 子节点并委托操作的容器）。Dart 和 C# 的实际例子展示了购物车定价系统和税务管理系统，说明叶类如何实现特定行为，而组合类如何通过递归聚合结果。文章进一步探讨了嵌套组合，表明组合可以包含其他组合以构建深层树而无需修改客户端代码。最后，它提供了何时应用该模式的实用指南——当需要对部分和整体进行统一处理时使用；何时...
+2026-09-10 02:10:26
 
 
 
 ### [社交媒体互动：2026-年夏季](https://martinfowler.com/articles/2026-social-traffic.html)
 
-2026-09-10 00:21:00 | 标签: 社交媒体策略, 写作与沟通, 数据分析, 开源, 个人效率
-
-> Martin Fowler 分享了他对 LinkedIn、X、Fediverse（Mastodon）和 Bluesky 上文章公告的社交媒体互动分析。他使用带状图和箱线图来避免平均值带来的误导，检查了 2026 年 6 月至 9 月期间 19 篇帖子的转发、点赞和回复情况。LinkedIn 在互动方面明显领先，X 位居第二，而 Bluesky 和 Mastodon 获得的回应极少。网站分析确认 LinkedIn 是最大的社交媒体流量来源，但与 Google 相比仍然微不足道。与 2025 年初的数据相比，LinkedIn 略有增长，X 明显下降，Bluesky 则大幅下滑。尽管数据表明他可以停...
+2026-09-10 00:21:00
 
 
 
 ### [智能模型路由如何将-LLM-成本降低-10-倍](https://blog.bytebytego.com/p/how-smart-model-routing-can-cut-llm)
 
-2026-09-09 23:30:26 | 标签: 模型路由, 大语言模型, 成本优化, 语义路由, 级联
-
-> 本文解释了模型路由——根据请求难度将每个请求导向最合适的 LLM——如何将总体 LLM 成本降低高达十倍。文章涵盖了路由的基础知识、用于判断请求复杂性的信号，以及实用策略，如使用小型路由器模型、级联、语义路由和学习路由。文章还讨论了常见陷阱，如路由不足、过度路由和操纵，并强调了监控模型更新和成本变化的重要性。通过清晰的示例、图表和成本效益计算，本文为希望优化 LLM 使用同时保持质量的工程师提供了实用指南。
+2026-09-09 23:30:26
 
 
 
 ### [微软-2026-年-9-月“周二补丁日”再创更新记录：修复-974-个漏洞，并开始催更-Windows，最好-3-天内更新](https://www.appinn.com/microsoft-september-2026-patch-tuesday-974-cves/)
 
-2026-09-09 20:27:45 | 标签: Windows 与微软生态, Microsoft, 安全, 科技新闻, 系统更新
-
-> 微软 2026 年 9 月周二补丁日发布创纪录的 974 个 CVE 修复，其中 Windows 占 723 个。微软同时更新部署建议，将质量更新延迟缩短至三天以内，截止日期设为零或一天，宽限期最长两天，理由是攻击者可用 AI 快速利用已知漏洞。文章引用 windowslatest 统计，2026 年 1 至 9 月 CVE 总数达 2779，同比增长 217.2%，其中 9 月单月即超过去年同期总和。此外，本次更新正式启用此前可选更新中的任务栏位置调整、开始菜单大小与内容自定义等功能，并提升 Windows 搜索速度。
+2026-09-09 20:27:45
 
 
 
 ### [我是如何在-Google-Ads-上推广恶意软件的](https://xlii.space/eng/malicious-software-on-google-ads/)
 
-2026-09-09 19:43:21 | 标签: 开发者工具, 网络安全, 开源, CLI 与终端
-
-> 作者是一款用 Rust 编写的 macOS 原生终端复用器 RACE 的开发者，他决定投放 Google Ads 推广该软件。在花费了 500 美元后不久，Google 就以「恶意软件」和「受到黑客攻击的网站」为由封禁了该账户。尽管经过彻底验证，确认网站、下载基础设施、JavaScript 资产以及经过公证的 DMG 文件完全干净——并通过了 VirusTotal、Google 安全浏览和 Google 搜索控制台的确认——作者仍然遭遇了缺乏可操作反馈的不透明自动化拒绝循环。开发者推测，该应用程序的核心功能（管理后台 shell 进程和持久化）可能触发了误报。在利用 Hacker News 获...
+2026-09-09 19:43:21
 
 
 
 ### [StartPad-–-Windows-上的-macOS-风格全屏启动器](https://www.appinn.com/startpad-win/)
 
-2026-09-09 19:31:12 | 标签: 开发者工具, Windows, 开源项目, UI 设计, 个人效率
-
-> StartPad 是由开发者 hackbyte 推出的一款 Windows 全屏应用启动台工具。其设计灵感源自 macOS 的 Launchpad，同时融合了 Windows 的 Fluent UI 风格。该工具体积仅 1M 多，采用原生开发并支持 GPU 加速。主要功能包括全屏应用展示、快速搜索、文件夹整理、右键卸载及创建快捷方式等，并支持深浅色模式切换。用户可以通过微软商店免费获取，并配合快捷键实现快速调用，有效解决桌面图标堆积和开始菜单查找繁琐的问题。
+2026-09-09 19:31:12
 
 
 
 ### [从零开始制作一款壁灯](https://mbugert.de/posts/2026-09-09-bedroom-lamp-build/)
 
-2026-09-09 18:01:16 | 标签: DIY, 木工, LED 照明, 家居装饰, 电子
-
-> 该项目的初衷很简单，就是制作一款与卧室山毛榉木家具相匹配的壁灯。设计不断演进，最终加入了 LED 背光有机玻璃面板和坚固的铝型材框架。整个制作过程涉及大量的规划、木工、金属加工和电子装配，最终的产品成功将所有组件融为一体，是一款高质量的灯具。
+2026-09-09 18:01:16
 
 
 
 ### [CommInsight：从通信库底层事件重建大规模训推的全栈因果链](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496366&idx=1&sn=6d1a23e3046753ce369c198ae894edbc)
 
-2026-09-09 17:59:00 | 标签: 分布式训练, 通信优化, 故障诊断, NCCL, 性能分析
-
-> 在千卡乃至万卡规模的训练与推理中，通信已经成为影响任务进度、故障传播与集群效率的系统性变量。CommInsight 不再停留于观察单个通信算子的性能，而是从通信库底层事件流出发，恢复通信组角色与拓扑，重建 Step、Forward/Backward、梯度同步和 Microbatch 等训练语义，并与 NIC、NVLink 等硬件指标对齐，形成从任务、并行策略到通信算子、Rank 与物理链路的全栈因果链路，实现对 Hang、Failure、Straggler 与性能瓶颈的精准检测、源头定位和可验证溯源。
+2026-09-09 17:59:00
 
 
 
@@ -41379,11 +41351,11 @@
 
 
 
-### [深度拆解：AI-Agent-Harness-的构造](https://baoyu.io/translations/2026-05-10/akshay-pachaar-2041146899319971922)
+### [裁员潮将持续，直到我们学会发掘-AI-的商业价值](https://baoyu.io/translations/2026-05-10/championswimmer-2051807284691612099)
 
 2026-05-10T00:00:00.000Z
 
-> 深入探讨 Anthropic、OpenAI、Perplexity 和 LangChain 究竟在开发什么。涵盖编排循环、工具、记忆、上下文管理以及所有能将“无状态”大语言模型转变为全能 Agent 的核心组件。
+> AI 没有直接替代某个岗位，却通过 Token 成本、代码投入膨胀和组织对齐税，把企业推向新一轮裁员。
 
 
 
