@@ -1,0 +1,43 @@
+{
+  "id": "RAW_539b523841",
+  "title": "介绍 Consort：基于分支数据库的测试驱动开发",
+  "url": "https://www.databricks.com/blog/introducing-consort-test-driven-development-branching-database",
+  "date": "2026-09-09 21:41:25",
+  "author": "Kevin Hartman",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li>What changes with database branching</li>\n   <li>An agentic development workflow for database branching</li>\n   <li>How to try Consort yourself</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 Consort，这是一款将测试驱动开发和智能体工作流引入分支数据库的工具。",
+  "oneSentenceSummary": "本文介绍了 Consort，这是一款将测试驱动开发和智能体工作流引入分支数据库的工具。",
+  "summary": "这篇文章是一篇简短的公告，介绍了 Consort，这是一个旨在结合分支数据库方法与智能体工作流来实现测试驱动开发（TDD）的系统。文章概述了其核心主题，包括数据库分支变更、智能体开发工作流以及面向用户测试的可用性。",
+  "mainPoints": [
+    {
+      "point": "数据库分支可实现测试驱动开发工作流。",
+      "explanation": "Consort 引入了一种新范式，将数据库分支与 TDD 原则相结合，以改进数据库变更管理。"
+    },
+    {
+      "point": "集成智能体开发工作流。",
+      "explanation": "该方法将自主智能体融入数据库分支开发生命周期中。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "测试驱动开发",
+    "数据库",
+    "AI 智能体",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 17,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788961285000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-09 21:41:25"
+}

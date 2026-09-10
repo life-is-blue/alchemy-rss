@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d1fc7f9754",
+  "title": "OpenAI 万智能体数学突破声明背后的真相",
+  "url": "https://dev.to/shresthapandey/the-truth-behind-openais-10000-agent-math-claim-df9",
+  "date": "2026-09-10 04:01:48",
+  "author": "Shrestha Pandey",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On September 8, 2026, OpenAI published a paper claiming that an internal, unreleased AI system had made progress on one of the seven Millennium Prize Problems: the Navier–Stokes existence and smoothness problem. The announcement got a lot of attention fast, partly because of the result itself, and partly because of how it was produced — a coordinated swarm of roughly 10,000 AI agents working in parallel.</p>\n  <p>As developers, we've all seen \"AI solves impossible problem\" headlines before, and most of them fall apart under scrutiny. This one is more interesting than most, but it also comes with real caveats that are worth understanding before you repeat the claim anywhere. Here's a breakdown of what was actually done, how the multi-agent workflow worked, and why the story isn't as clean as the headline suggests.</p>\n  <h2><a name=\"the-problem\" href=\"#the-problem\"> </a> The problem</h2>\n  <p>The Navier–Stokes equations describe how fluids move — they're used in weather forecasting, aircraft design, and blood flow modeling, among other things. They work great in practice. What's never been settled mathematically is whether, under the right conditions, a smooth three-dimensional fluid flow could spontaneously \"blow up\" — meaning some property like velocity shoots to infinity in a finite amount of time, breaking the model.</p>\n  <p>Proving whether that kind of breakdown, called a singularity, can or can't happen has been an open question since the 1930s. In 2000, the Clay Mathematics Institute put a $1 million prize on it, and it's remained one of the hardest open problems in math ever since.</p>\n  <p>OpenAI says its system produced a proof that a singularity can, in fact, form in finite time from a smooth, physically reasonable starting state — and that this proof has been formalized and checked in Lean, a proof-verification language that mathematicians use to catch logical errors that are easy to miss by eye.</p>\n  <h2><a name=\"how-the-multiagent-workflow-worked\" href=\"#how-the-multiagent-workflow-worked\"> </a> How the multi-agent workflow worked</h2>\n  <p>This is the part that's genuinely new, at least in scale. According to OpenAI's own writeup, the process looked roughly like this:</p>\n  <ul>\n   <li>\n    <p>Starting in late August 2026, OpenAI trained a new internal model that outperformed its already-released flagship model on math benchmarks.</p>\n   </li>\n   <li>\n    <p>After hearing rumors that a rival lab might be close to solving a different Millennium problem, OpenAI decided to point this model at all of the unsolved Millennium Prize problems at once, plus a handful of other hard open problems.</p>\n   </li>\n   <li>\n    <p>Rather than running one long conversation with one model, they spun up large groups of coordinating agents. Each agent group could talk to other agents within its group, and different groups were given different framings of the same problem — some aimed at proving a statement true, others aimed at disproving it.</p>\n   </li>\n   <li>\n    <p>The group that eventually cracked the Navier–Stokes case grew to around 10,000 agents running at the same time.</p>\n   </li>\n   <li>\n    <p>Every so often, researchers used a coding-focused model to pull out the most promising partial results from different groups and feed them back in as new prompts, essentially cross-pollinating ideas between otherwise separate lines of reasoning.</p>\n   </li>\n   <li>\n    <p>Along the way, a smaller group of under 100 agents also worked out a related, slightly easier problem (a version of the same blow-up question for the Euler equations, which is what you get when you remove viscosity from Navier–Stokes). That intermediate result apparently helped point the larger effort in the right direction.</p>\n   </li>\n   <li>\n    <p>The full effort took about 88 hours of agent work, followed by another 17 hours to formalize and verify the proof in Lean.</p>\n   </li>\n   <li>\n    <p>Across the whole project, the agents exchanged close to 5 million messages and generated somewhere in the neighborhood of 300 billion output tokens.</p>\n   </li>\n  </ul>\n  <p>So the \"workflow\" is closer to a massive, structured search process: many parallel attempts, deliberate diversity in approach, periodic synthesis of the best ideas, and a hard formal-verification step at the end to catch mistakes.</p>\n  <h2><a name=\"why-you-shouldnt-treat-this-as-a-settled-result-yet\" href=\"#why-you-shouldnt-treat-this-as-a-settled-result-yet\"> </a> Why you shouldn't treat this as a settled result yet</h2>\n  <p>A few things are worth flagging clearly:</p>\n  <p><strong>It hasn't been independently certified.</strong> This is OpenAI's own internal evaluation, checked by their own Lean formalization. The Clay Mathematics Institute has not verified it, and OpenAI itself has said it isn't claiming the prize for this result. Outside mathematicians need time to review it properly, and that process is still ongoing.</p>\n  <p><strong>There's an unresolved priority dispute.</strong> Around the same time, a mathematician at NYU and a researcher at a rival AI lab had been working for roughly a year on a closely related problem, using a mix of AI tools from both labs, and had reportedly made a breakthrough of their own just days before OpenAI's announcement.</p>\n  <p>OpenAI acknowledges it only started this specific push after hearing rumors about that other team's progress. The two results turned out to address related but not identical versions of the underlying question. Public statements from the NYU mathematician have raised pointed concerns about how OpenAI handled credit and communication during this period; OpenAI has disputed parts of that account. That dispute is still playing out publicly and isn't fully resolved.</p>\n  <p><strong>Respected mathematicians are uneasy about the pattern.</strong> Some senior figures in the field have pointed out a broader worry: if AI labs increasingly treat famous open problems as marketing opportunities, and only publish final answers without the failed attempts and reasoning that usually teach the field something, it could quietly damage how mathematical progress actually happens — even when the individual results are correct.</p>\n  <h2><a name=\"what-this-means-for-practitioners\" href=\"#what-this-means-for-practitioners\"> </a> What this means for practitioners</h2>\n  <p>Setting aside the drama, the workflow pattern here is genuinely relevant to anyone building agentic systems:</p>\n  <ul>\n   <li>\n    <p><strong>Diversity over depth, at least initially.</strong> Running many independently-framed attempts in parallel found a promising lead that a single deep attempt might have missed.</p>\n   </li>\n   <li>\n    <p><strong>Cross-pollination beats isolation.</strong> The step where useful partial results were pulled out of one group and fed into others was described as a turning point, not an afterthought.</p>\n   </li>\n   <li>\n    <p><strong>Formal verification matters when correctness is non-negotiable.</strong> The Lean formalization step is doing real work here — it's the difference between \"a model that sounds convincing\" and \"a proof that's been mechanically checked line by line.\"</p>\n   </li>\n   <li>\n    <p><strong>Scale isn't free, and it isn't magic.</strong> Getting to this result reportedly took vastly more compute than OpenAI has used for past math results — and it still produced a result that overlaps with, rather than clearly surpasses, work already underway by human mathematicians assisted by AI tools.</p>\n   </li>\n  </ul>\n  <h2><a name=\"the-takeaway\" href=\"#the-takeaway\"> </a> The takeaway</h2>\n  <p>OpenAI's claim is real in the sense that a formally-verified proof exists and has been published. It is not yet an independently confirmed, prize-worthy resolution of the Millennium Prize problem, and the story behind how it was produced is currently tangled up in a genuine dispute over credit and conduct with another research team. If you're citing this anywhere, the accurate framing is: \"OpenAI published an unverified but Lean-checked proof, produced by a large coordinated multi-agent system, addressing a specific formulation of the Navier–Stokes singularity question\".</p>\n  <p>Worth watching over the next few months as outside mathematicians actually dig into the proof.</p>\n  <p>For more such developer content, <a href=\"https://vickybytes.com\" target=\"_blank\" rel=\"noopener noreferrer\">click here</a></p>\n </body>\n</html>",
+  "aiSummary": "OpenAI 声称通过约 10，000 个智能体组成的集群解决了千禧年大奖难题，这一说法真实但尚未得到验证，且深陷优先权争议，并为智能体系统设计提供了经验教训。",
+  "oneSentenceSummary": "OpenAI 声称通过约 10，000 个智能体组成的集群解决了千禧年大奖难题，这一说法真实但尚未得到验证，且深陷优先权争议，并为智能体系统设计提供了经验教训。",
+  "summary": "2026 年 9 月 8 日，OpenAI 发表了一篇论文，声称在纳维-斯托克斯存在性与光滑性问题（七个千禧年大奖难题之一）上取得了进展，该成果由一个约 10，000 个 AI 智能体组成的协调集群完成。该系统生成了一个证明，表明奇点可以在有限时间内形成，并已用 Lean 进行了形式化验证。多智能体工作流程包括采用不同框架的并行尝试、定期交叉融合有希望的局部结果，以及最终的形式化验证步骤。然而，该结果尚未经过独立认证，且与纽约大学的一位数学家及一个竞争实验室存在未解决的优先权争议。备受尊敬的数学家们也对将开放问题视为营销机会的模式表示担忧。对于从业者而言，该工作流程凸显了多样性、交叉融合和形式化验证的价值，但也指出规模成本高昂，并非万能。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 关于纳维-斯托克斯问题的声明是真实的，但尚未得到独立证实。",
+      "explanation": "确实存在一个经过 Lean 验证的证明并已发表，但这只是 OpenAI 的内部评估；克莱数学研究所尚未验证，OpenAI 也未声称获奖。外部数学家需要时间进行审查。"
+    },
+    {
+      "point": "多智能体工作流程在规模和结构上确实具有新颖性。",
+      "explanation": "约 10，000 个智能体以多样化的框架并行工作，交换了近 500 万条消息，并在 88 小时内生成了约 3000 亿个 token，随后进行了 17 小时的 Lean 形式化验证。这代表了一个大规模、结构化的搜索过程。"
+    },
+    {
+      "point": "与另一个研究团队存在未解决的优先权争议。",
+      "explanation": "纽约大学的一位数学家和一家竞争实验室已围绕一个密切相关的问题研究了约一年，据报道在 OpenAI 宣布前几天取得了突破。OpenAI 承认是在听到该进展的传闻后才启动其研究，公开声明引发了关于成果归属和沟通的担忧。"
+    },
+    {
+      "point": "该工作流程为构建智能体系统提供了实用经验。",
+      "explanation": "多样性优先于深度、局部结果的交叉融合以及形式化验证被认为是关键因素。然而，规模并非没有代价，且并未明显超越已在进行的、有人类辅助的工作。"
+    }
+  ],
+  "keyQuotes": [
+    "这就是「听起来很有说服力的模型」与「被逐行机械验证过的证明」之间的区别。",
+    "多样性优先于深度，至少在初期是这样。",
+    "交叉融合胜过孤立工作。",
+    "规模并非免费，也并非魔法。"
+  ],
+  "tags": [
+    "AI 研究前沿",
+    "AI 智能体",
+    "数学",
+    "OpenAI",
+    "AI 安全与伦理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1153,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788984108000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-10 04:01:48"
+}

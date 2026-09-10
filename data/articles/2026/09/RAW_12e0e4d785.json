@@ -1,0 +1,56 @@
+{
+  "id": "RAW_12e0e4d785",
+  "title": "Mistral 复盘使用 AI Agent 将 40，000 行 Fortran 77 迁移至 C++ 的经验 · AIHOT",
+  "url": "https://aihot.news/items/cmtugpn561cgnrofplpzs3udv",
+  "date": "2026-09-10 02:59:11",
+  "author": "noreply@aihot.news (Mistral AI：News（网页）)",
+  "siteName": "AIHOT — 精选",
+  "content": null,
+  "aiSummary": "Mistral 分享了为一家欧洲能源运营商将 40，000 行 Fortran 77 油藏模拟器迁移至 C++ 的经验教训，强调了带有等效性测试的结构化「人机协同」Agent 工作流优于完全自主模式。",
+  "oneSentenceSummary": "Mistral 分享了为一家欧洲能源运营商将 40，000 行 Fortran 77 油藏模拟器迁移至 C++ 的经验教训，强调了带有等效性测试的结构化「人机协同」Agent 工作流优于完全自主模式。",
+  "summary": "Mistral 的应用 AI 团队协助一家欧洲能源运营商将 40，000 行 Fortran 77 油藏模拟器迁移到现代 C++。该项目面临着传统科学代码的典型挑战：缺乏测试套件、文档零散以及通过 COMMON 块实现的全局状态。团队首先构建了一个等效性测试框架，以证明新旧代码之间的数值一致性，随后使用自定义解析器生成调用树，并通过 Vibe CLI 部署了数百个 Agent 来记录代码库文档。最初尝试完全自主的 Agent 仅产生了质量低劣、带有 Fortran 风格的 C++ 代码。第二次尝试引入了结构化角色（规划者、编码者、测试者、评审者），虽然提高了质量，但在处理复杂 Bug 时仍然陷入停滞。最终的解决方案是采用人工操作的工作流，为每个模块配置编码者、测试者和评审者 Agent，并增加人工检查点以解除 Agent 的阻塞。这种按模块应用的结构化工作流在第一个冲刺阶段就成功迁移了核心的 40，000 行代码。文章总结了三个原则：首先构建等效性测试；在依赖 Agent 之前先整理文档；以及相比于完全自主或纯手动工作，更倾向于带有评审关卡的结构化工作流。",
+  "mainPoints": [
+    {
+      "point": "在迁移遗留代码之前，等效性测试框架对于证明数值一致性至关重要。",
+      "explanation": "团队对 Fortran 代码进行了插桩以导出状态快照，并构建了一个 C++ 测试框架，通过这些检查点来验证迁移后的模块。这提供了一种低成本且极具说服力的方式来验证迁移是否成功，并使长时间运行的 Agent 任务更加安全。"
+    },
+    {
+      "point": "完全自主的 Agent 在复杂的遗留代码现代化任务中会失败；结构化的「人机协同」工作流更为有效。",
+      "explanation": "第一次尝试使用完全自主的 Agent 产生的 C++ 代码仅仅是翻译了 Fortran 的模式（如全局结构体、GOTO 控制流），而没有实现真正的现代化。引入角色（规划者、编码者、测试者、评审者）虽然提高了质量，但在面对复杂 Bug 时仍会停滞。最终的解决方案将结构化的 Agent 角色与人工检查点相结合，以解除 Agent 的阻塞，从而产出可合并的代码。"
+    },
+    {
+      "point": "在依赖 Agent 之前必须整理好文档，因为你无法迁移没人能读懂的代码。",
+      "explanation": "该项目的文档散落在旧的 PDF 和埋藏在 Fortran 代码中的注释里。团队使用自定义解析器生成了调用树，并通过 Vibe CLI 部署了数百个 Agent 来编写文档，同时通过 Mistral OCR 提取相关的 PDF 内容。这是该项目的一个重要副产品。"
+    },
+    {
+      "point": "在这种规模的任务中，带有评审关卡的结构化工作流优于完全自主或纯手动操作。",
+      "explanation": "最终的工作流包括：生成目标 C++ 架构、与油藏工程师共同评审、拆分为任务、运行实现子工作流（规划 → 实现 → 测试 → 循环），并由人工评审 PR 直至合并。这种方式在质量与进度之间取得了平衡。"
+    }
+  ],
+  "keyQuotes": [
+    "在遗留代码现代化中，要超越单纯的代码翻译。",
+    "第一个冲刺周期覆盖了核心功能：在 300，000 行代码中完成了 40，000 行。",
+    "你无法迁移没人能读懂的代码。"
+  ],
+  "tags": [
+    "AI Agents",
+    "Legacy Code Migration",
+    "AI Engineering",
+    "Mistral AI",
+    "AI Coding"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 84,
+  "wordCount": 2597,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788980351000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-10 02:59:11"
+}

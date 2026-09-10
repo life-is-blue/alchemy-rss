@@ -1,0 +1,57 @@
+{
+  "id": "RAW_66f779ead7",
+  "title": "社交媒体互动：2026 年夏季",
+  "url": "https://martinfowler.com/articles/2026-social-traffic.html",
+  "date": "2026-09-10 00:21:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In order to let people know about new articles on martinfowler.com, I post announcements on social media. I've been doing this for a long time, starting on Twitter back in 2008. After the muskover, social media became rather more fragmented, and I now post announcements on four social media platforms: LinkedIn, X, Fediverse (Mastodon), and Bluesky. It's a bit tedious, but it doesn't take too long to copy/paste the announcements on each site, with a bit of tweaking as necessary. (I also post announcements to my <a href=\"https://martinfowler.com/feed.atom\">RSS feed</a>. If I were following me, I'd use RSS.)</p>\n  <p>From time to time, I look at the traffic on these sites. (Last time was in <a href=\"https://martinfowler.com/articles/2025-social-traffic.html\">2025</a>) <span class=\"foot-ref\" data-footnote=\"footnote-website-tag\">1</span> The main thing I'm interested in is how much engagement I get from each service, so I can get a sense of their importance for my announcements. There are three data items that I can use to sense this: retweets, likes, and replies. Here's some plots of that data for my posts over the last couple of months (19 total)</p>\n  <div class=\"post-block-footnote footnote-website-tag\">\n   <p><span class=\"num\">1: </span> See my <a href=\"https://martinfowler.com/tags/website.html\">website tag page</a> for material like that about my website behavior.</p>\n  </div>\n  <div class=\"figure \" id=\"retweets.png\">\n   <img src=\"https://martinfowler.com/articles/2026-social-traffic/retweets.png\">\n   <p class=\"photoCaption\">Figure 1: number of retweets for posts from June 16 to Sep 6 2026</p>\n  </div>\n  <div class=\"figure \" id=\"replies.png\">\n   <img src=\"https://martinfowler.com/articles/2026-social-traffic/replies.png\">\n   <p class=\"photoCaption\">Figure 2: number of replies for the same period</p>\n  </div>\n  <div class=\"figure \" id=\"likes.png\">\n   <img src=\"https://martinfowler.com/articles/2026-social-traffic/likes.png\">\n   <p class=\"photoCaption\">Figure 3: number of likes for the same period</p>\n  </div>\n  <p>I don't like using simple averages to compare things, <a href=\"https://martinfowler.com/articles/dont-compare-averages.html\">they are often misleading and blur useful information</a>. So these plots combine a strip chart (showing each post as a point, with some horizontal jitter) and a box plot (to show median and quartiles). This way we can see the whole distribution while also being able to compare useful summaries within them.</p>\n  <p>Looking at this, there's a clear ranking between the services. LinkedIn is clear leader at engagement numbers. I tend to take the retweets most seriously, since they suggest a desire to recommend a post for others to consider. I'll chop off the upper outliers there to zoom in on the core data.</p>\n  <div class=\"figure \" id=\"retweet-zoom.png\">\n   <img src=\"https://martinfowler.com/articles/2026-social-traffic/retweet-zoom.png\">\n   <p class=\"photoCaption\">Figure 4: Retweets, zooming in on the core data</p>\n  </div>\n  <p>LinkedIn clearly has an edge there, with X a clear second, its upper quartile is below LinkedIn's median. Bluesky and Mastodon are tiny in comparison, their upper quartiles are below X's lower quartile, although Mastdon's is visibly above that of Bluesky.</p>\n  <p>Looking at this data, there's a strong argument for stopping announcements on Bluesky and Mastodon, as they get such little response. I will continue with them, however, since they are open platforms - and I have a clear preference for open platforms over the walled gardens of LinkedIn and X.</p>\n  <p>Another way of judging this is to look at source traffic for the website, after all the whole point of announcing posts is to bring readers. Here's some data on that, taken from my website analytics:</p>\n  <div class=\"figure \" id=\"sources.png\">\n   <img src=\"https://martinfowler.com/articles/2026-social-traffic/sources.png\">\n   <p class=\"photoCaption\">Figure 5: sources of traffic in 90 days prior to Sep 7 2026</p>\n  </div>\n  <p>This reflects the data above, LinkedIn is clearly a bigger source of traffic than X, which is far above bluesky (we can't really assess Mastodon here, but I expect it would also be a very thin line). But even LinkedIn is a minor source of traffic compared to google. And google's 300,000 or so is a small part of the 1.7M visits the site got in those 90 days.</p>\n  <p>I last did this analysis <a href=\"https://martinfowler.com/articles/2025-social-traffic.html\">in early 2025</a>. Comparing the box plots for the retweets indicates how things have changed.</p>\n  <div class=\"figure \" id=\"compare-year.png\">\n   <img src=\"https://martinfowler.com/articles/2026-social-traffic/compare-year.png\">\n   <p class=\"photoCaption\">Figure 6: Compared retweets from posts in mid 2026 to early 2025.</p>\n  </div>\n  <p>LinkedIn has grown a little bit, X has dropped notably, and Bluesky has dropped dramatically.</p>\n  <section id=\"UsingSocialMedia\">\n   <h2>Using social media</h2>\n   <p>The main point of this post was to share what I'm seeing for social media traffic. But this is also a decent time for me to mention how I use social media in 2026 AD.</p>\n   <p>When it comes to writing to social media, almost everything I do is these announcements of posts on my site. When Twitter was dominant, I'd also share small thoughts, and posts to interesting things I'd run into. I now do that in my <a href=\"https://martinfowler.com/fragments/\">fragments posts</a>, many of which are dots on the above graphs. I <a href=\"https://martinfowler.com/articles/writing-fragments.html\">prefer using the fragments</a>, which is essentially rediscovering the olde link blog, since I have more freedom in what I write there, don't have to copy to multiple sites, and it shows up in my (preferred) RSS feed.</p>\n   <p>I do a bit more when it comes to reading this social media. I do read any replies to announcement posts, as I'm naturally curious to see what people say about them. I also use social media more generally, in much the same way as I did in the Twitter days. That is, I have a fixed list of people I follow, and I read their posts in reverse-chronological order. I actively avoid any kind of “algorithmic” feed. <span class=\"foot-ref\" data-footnote=\"footnote-algorithmic\">2</span> That makes LinkedIn pretty hopeless for me, as there's no way to do that over there, the engagementmaxxing feed is forced onto my home page. So I ignore it, which is a pity considering how much more engagement it generates than its rivals these days.</p>\n   <div class=\"post-block-footnote footnote-algorithmic\">\n    <p><span class=\"num\">2: </span> Yes, I know that reverse-chronological is technically an algorithm, but even such pedants know what I mean. I don't want these services throwing stuff at me to maximize my engagement, their efforts only irritate me.</p>\n   </div>\n   <p>X also pushes its “For You” feed of slop, but I can circumvent it, as I've always done, by building lists. I put people I'm interested in on those lists, and read those. <span class=\"foot-ref\" data-footnote=\"footnote-x-follow\">3</span> Mastodon and Bluesky make it easier to do this, which is one of their advantages. If someone posts on multiple social networks, I prefer to follow them on Bluesky, due to being an open platform and its user-interface. I also continue to use RSS feeds when I can, and I'm glad that services like Substack support them.</p>\n   <div class=\"post-block-footnote footnote-x-follow\">\n    <p><span class=\"num\">3: </span>I've found the “following” tab to be increasingly erratic, and often hit with random crap from X, so I've removed most things from it and moved them to one my lists.</p>\n   </div>\n   <p>Given all that, I haven't really noticed the problems that people complain about for X and Bluesky. Occasionally I get some pests showing up in my replies, but that's rare. Twitter was a mess in its day too, and sticking to my lists insulated me from all that. I really wish LinkedIn gave me that ability, maybe there's some posts on there that aren't slop (and often AI-generated slop). But as it stands, it's sad that the biggest site for me in terms of engagement is also the one I can't stand.</p>\n   <p class=\"p-sub\">(I might also mention that the one social media site I do enjoy, and contribute to, is <a href=\"https://boardgamegeek.com\">BoardGameGeek</a>. It's interesting to see how well it's held up over the years. Being focused on a niche hobby surely helps.)</p>\n  </section>\n  <hr class=\"bodySep\">\n </body>\n</html>",
+  "aiSummary": "Martin Fowler 分析了他 2026 年年中的社交媒体互动数据，发现 LinkedIn 在互动量和流量方面领先，而 Bluesky 和 Mastodon 等开放平台则表现滞后，但他仍继续在这些平台发布内容，因为他更偏好开放平台而非封闭花园。",
+  "oneSentenceSummary": "Martin Fowler 分析了他 2026 年年中的社交媒体互动数据，发现 LinkedIn 在互动量和流量方面领先，而 Bluesky 和 Mastodon 等开放平台则表现滞后，但他仍继续在这些平台发布内容，因为他更偏好开放平台而非封闭花园。",
+  "summary": "Martin Fowler 分享了他对 LinkedIn、X、Fediverse（Mastodon）和 Bluesky 上文章公告的社交媒体互动分析。他使用带状图和箱线图来避免平均值带来的误导，检查了 2026 年 6 月至 9 月期间 19 篇帖子的转发、点赞和回复情况。LinkedIn 在互动方面明显领先，X 位居第二，而 Bluesky 和 Mastodon 获得的回应极少。网站分析确认 LinkedIn 是最大的社交媒体流量来源，但与 Google 相比仍然微不足道。与 2025 年初的数据相比，LinkedIn 略有增长，X 明显下降，Bluesky 则大幅下滑。尽管数据表明他可以停止在开放平台上发帖，Fowler 仍继续这样做，因为他更偏好开放平台而非封闭花园。他还解释了自己的社交媒体习惯：他主要发布公告，在碎片化帖子中分享想法，阅读回复，按逆时间顺序关注固定列表中的用户，并避免算法推送。他发现 LinkedIn 以互动最大化为目标的推送无法使用，而 X 的推送可以通过列表来规避。他总结道，令人遗憾的是，产生最多互动的平台恰恰是他最不喜欢的那个。",
+  "mainPoints": [
+    {
+      "point": "LinkedIn 为 Fowler 的公告带来了最多的互动和流量，远超 X、Bluesky 和 Mastodon。",
+      "explanation": "2026 年年中 19 篇帖子的数据显示，LinkedIn 的转发中位数超过了 X 的上四分位数，Bluesky 和 Mastodon 相比之下微乎其微。网站分析确认 LinkedIn 是最大的社交媒体流量来源，但与 Google 相比仍然微不足道。"
+    },
+    {
+      "point": "尽管开放平台的互动率很低，Fowler 仍继续在那里发帖，因为他更偏好开放平台而非封闭花园。",
+      "explanation": "他承认数据表明应该停止在 Bluesky 和 Mastodon 上发布公告，但他的价值观促使他在开放平台上保持存在，即使以触达范围为代价。"
+    },
+    {
+      "point": "Fowler 避开算法推送，通过列表和逆时间顺序来策划他的社交媒体阅读。",
+      "explanation": "他发现 LinkedIn 以互动最大化为目标的推送无法使用并选择忽略，而 X 的「为你推荐」推送可以通过列表来规避。Mastodon 和 Bluesky 让这种内容筛选变得更容易，这也是它们的优势之一。"
+    },
+    {
+      "point": "社交媒体互动趋势正在变化：自 2025 年初以来，LinkedIn 有所增长，而 X 尤其是 Bluesky 则出现下滑。",
+      "explanation": "对比 2025 年初和 2026 年年中的转发箱线图可以揭示这些变化，表明互动正在向 LinkedIn 集中。"
+    }
+  ],
+  "keyQuotes": [
+    "不过我会继续使用它们，因为它们是开放平台——而且我明确更偏好开放平台，而非 LinkedIn 和 X 这样的封闭花园。",
+    "我会主动避开任何形式的「算法」推送。",
+    "我真希望 LinkedIn 能给我这个能力，也许那里有些帖子不是垃圾内容（而且往往是 AI 生成的垃圾内容）。",
+    "但就目前而言，令人难过的是，对我来说互动量最大的网站，恰恰也是我无法忍受的那个。"
+  ],
+  "tags": [
+    "社交媒体策略",
+    "写作与沟通",
+    "数据分析",
+    "开源",
+    "个人效率"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 81,
+  "wordCount": 1142,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788970860000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-10 00:21:00"
+}

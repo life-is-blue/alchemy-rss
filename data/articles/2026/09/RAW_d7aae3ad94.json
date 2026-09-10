@@ -1,0 +1,52 @@
+{
+  "id": "RAW_d7aae3ad94",
+  "title": "Tailwind Labs 加入 Shopify",
+  "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+  "date": "2026-09-09 21:27:11",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div data-media=\"true\">\n   <div class=\"not-prose relative overflow-hidden rounded-xl\">\n    <img alt=\"Tailwind CSS and Shopify\" loading=\"lazy\" decoding=\"async\" data-nimg=\"1\" style=\"color:transparent\" srcset=\"https://tailwindcss.com/_next/static/media/og-image.103kpqahmns2b.jpg 1x, https://tailwindcss.com/_next/static/media/og-image.103kpqahmns2b.jpg 2x\" src=\"https://tailwindcss.com/_next/static/media/og-image.103kpqahmns2b.jpg\">\n   </div>\n  </div>\n  <p>Big one today — Tailwind is joining Shopify.</p>\n  <p>When I started working on Tailwind over nine years ago, my only goal was to create something that would make it easier to build beautiful interfaces for my own projects. Fast-forward to today and the framework is installed over 110 million times per week and is trusted by many of the world's biggest companies to style products like ChatGPT, X, Cloudflare, Reddit, and Shopify.</p>\n  <p>We're joining Shopify to give Tailwind a stable long-term home where it will be actively maintained for the millions of people who depend on it.</p>\n  <h2 id=\"why-shopify\"><a href=\"#why-shopify\" class=\"anchor\">Why Shopify</a></h2>\n  <p>We built a great little website template business around Tailwind over the years, but deep down I've always wanted the framework to be developed in service of a real product. A complex application solving important problems for real people, where we'd face the same challenges as our users, and could invent solutions that make the framework better for everyone.</p>\n  <p><strong>Shopify provides an incredible surface area for us to do this work.</strong> Merchants need to be able to design and host beautiful custom storefronts, and manage sales and inventory in a powerful admin area. Their customers need delightful shopping and checkout experiences, and an intuitive way to keep track of their orders and discover new products through the Shop app. Shopify is also on the frontier of where user interfaces need to go next with their explorations into agentic commerce.</p>\n  <p><strong>Shopify was also one of the very first companies operating at scale to see the potential in Tailwind CSS and start building with it</strong>, not only for themselves but <a href=\"https://x.com/ShopifyDevs/status/1457723173047263234\">betting on it for their customers</a> too. Tailwind is a\n   <del>load-bearing</del>\n   very important part of the stack at Shopify, and they're invested in making sure it's actively maintained and continues to improve and adapt for how the ways we build are changing.</p>\n  <p>On a less technical note, I'm personally excited because <strong>entrepreneurship has completely changed my life</strong>. We are not doing enough as a society to produce and empower more entrepreneurs, and I believe deeply in Shopify's mission to help more people start, run, and grow their own business.</p>\n  <h2 id=\"whats-next\"><a href=\"#whats-next\" class=\"anchor\">What's next</a></h2>\n  <p><strong>Nothing changes with Tailwind CSS or any of our other open-source projects</strong>. Everything will always be MIT-licensed, and our team will continue to lead and maintain these projects for the community with the support of Shopify.</p>\n  <p>On the commercial side, we'll no longer be trying to grow the business around Tailwind. All existing customers will of course maintain their access to products like Tailwind Plus and <a href=\"http://ui.sh/\">ui.sh</a>, but we're closing sign ups for new customers to focus on Tailwind CSS at Shopify.</p>\n  <p>Thank you so much to everyone who has built something with Tailwind and supported us over these last nine years. I never could've imagined the project would become what it has today, and I truly believe there's no better place for us to continue to do this work than Shopify.</p>\n </body>\n</html>",
+  "aiSummary": "Tailwind Labs 加入 Shopify，为流行的 CSS 框架提供一个稳定、长期的家，确保其保持活跃维护和 MIT 许可，同时将重点从商业模板转向 Shopify 生态系统中的开源开发。",
+  "oneSentenceSummary": "Tailwind Labs 加入 Shopify，为流行的 CSS 框架提供一个稳定、长期的家，确保其保持活跃维护和 MIT 许可，同时将重点从商业模板转向 Shopify 生态系统中的开源开发。",
+  "summary": "Tailwind Labs 宣布加入 Shopify，为 Tailwind CSS 提供一个稳定、长期的家。该框架每周安装量超过 1.1 亿次，现在将为 Shopify 的庞大而复杂的生态系统服务，包括自定义商店、管理区域和结账体验。Shopify 是 Tailwind 的早期采用者，并认为它对其技术栈至关重要。重要的是，Tailwind CSS 和所有其他开源项目将保持 MIT 许可，并由同一团队积极维护。在商业方面，Tailwind Labs 将关闭 Tailwind Plus 和 ui.sh 等产品的新客户注册，让团队可以完全专注于 Shopify 下的开源开发。",
+  "mainPoints": [
+    {
+      "point": "Tailwind Labs 加入 Shopify，为框架提供一个稳定、长期的家",
+      "explanation": "随着 Tailwind CSS 每周安装量超过 1.1 亿次，加入 Shopify 确保该框架保持活跃维护和支持，服务于依赖它的数百万开发者。"
+    },
+    {
+      "point": "Shopify 的复杂产品生态系统将成为 Tailwind 的现实测试场",
+      "explanation": "Tailwind 团队希望在真实、复杂的应用程序中开发该框架。Shopify 广阔的领域——包括自定义商店、管理工具、结账体验和代理式商务——为解决实际用户界面挑战提供了完美的环境。"
+    },
+    {
+      "point": "开源项目保持 MIT 许可，而商业模板销售将逐步结束",
+      "explanation": "Tailwind CSS 或其他开源项目没有任何变化，它们将始终保持 MIT 许可，并由同一团队领导和维护。然而，为了完全专注于核心框架，Tailwind Labs 将关闭 Tailwind Plus 和 ui.sh 等商业产品的新客户注册。"
+    }
+  ],
+  "keyQuotes": [
+    "我们加入 Shopify，是为了给 Tailwind 提供一个稳定的长期家，在那里它将得到积极维护，服务于依赖它的数百万用户。",
+    "Tailwind CSS 或任何其他开源项目都没有变化。一切都将始终是 MIT 许可的，我们的团队将继续在 Shopify 的支持下，为社区领导和维护这些项目。",
+    "在商业方面，我们将不再试图围绕 Tailwind 发展业务。"
+  ],
+  "tags": [
+    "Tailwind CSS",
+    "开源",
+    "开发者工具",
+    "Shopify",
+    "收购"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 81,
+  "wordCount": 490,
+  "domain": "tailwindcss.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788960431000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-09 21:27:11"
+}

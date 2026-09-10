@@ -1,0 +1,57 @@
+{
+  "id": "RAW_a3d8384c56",
+  "title": "NOW.md：面向碎片化 AI 智能体的静默协议",
+  "url": "https://dev.to/elenarevicheva/nowmd-the-silent-protocol-for-fragmented-ai-agents-5em",
+  "date": "2026-09-10 03:30:15",
+  "author": "Elena Revicheva",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Originally published at <a href=\"https://aideazz.xyz/blog/nowmd-the-silent-protocol-for-fragmented-ai-agents\" target=\"_blank\" rel=\"noopener noreferrer\">aideazz.xyz</a> — cross-posted here with canonical link.</p>\n  <p>My AI agents cannot talk to each other. Not directly. I run eight processes supervised by PM2, including <code>cto-aipa</code>, <code>algom-stream</code>, and <code>dragontrade-main</code>. These agents operate in a fragmented environment, often across different platforms like Cursor Cloud, Cursor Desktop, and Claude Code. There is no shared conversation, no unified messaging bus, and no way for one agent to send a direct message to another. This constraint forced a decision: create a single, shared document as the sole communication channel and working memory. That document is <code>NOW.md</code>.</p>\n  <p>This isn't a documentation file. It's an active, shared session. It's the working memory for whichever agent isn't currently running, and it defines the protocol for how two agents that cannot talk avoid stepping on each other's toes.</p>\n  <h2><a name=\"the-problem-fragmented-ai-agent-communication\" href=\"#the-problem-fragmented-ai-agent-communication\"> </a> The Problem: Fragmented AI Agent Communication</h2>\n  <p>The core issue is isolation. My <code>cto-aipa</code> process, which has seen 142 restarts in the last day, runs on Oracle Cloud. Other agents might be running locally or in different cloud environments. They use different LLM providers, different IDEs, and different execution contexts. For example, I use <code>@anthropic-ai/sdk</code> for some agents and <code>openai</code> for others. There's no built-in mechanism for them to exchange information or coordinate tasks.</p>\n  <p>Without a common ground, agents would duplicate work, overwrite each other's outputs, or get stuck waiting for an input that never arrives. I saw this potential for chaos early on. For instance, my <code>algom-stream</code> process has 55193 restarts over 24 days, indicating a highly dynamic or error-prone environment that needs robust coordination. A direct communication channel would be complex to build and maintain across such disparate systems.</p>\n  <h2><a name=\"the-solution-raw-nowmd-endraw-as-a-shared-session\" href=\"#the-solution-raw-nowmd-endraw-as-a-shared-session\"> </a> The Solution: <code>NOW.md</code> as a Shared Session</h2>\n  <p>My solution is a plain Markdown file, <code>NOW.md</code>, located at <code>/home/ubuntu/cto-aipa/docs/oracle/NOW.md</code>. This file serves as the central hub for all inter-agent communication. Every agent that needs to interact with another or maintain state across runs reads from and writes to this file.</p>\n  <p>The file explicitly states its purpose: \"NOW — the shared session between Cursor and Claude Code. Cursor Cloud, Cursor Desktop and Claude Code all work this repo and none of them can see each other's chats. No shared conversation, no Claude MCP in Cursor, no way to send the other agent a message. The only things all of them read are HubSpot and this file.\"</p>\n  <p>This means:</p>\n  <ol>\n   <li><strong>Shared State:</strong> Any agent can read the current state of operations, decisions made, or tasks completed by others.</li>\n   <li><strong>Task Hand-off:</strong> One agent can leave instructions or data for another.</li>\n   <li><strong>Conflict Avoidance:</strong> By reading <code>NOW.md</code>, an agent knows what other agents are currently doing or have recently done, preventing redundant actions.</li>\n  </ol>\n  <p>For example, if one agent identifies a new lead in HubSpot (which is also a shared data source), it might write a note in <code>NOW.md</code> for another agent to process it. This is crucial for my sales pipeline, where I currently have 111 deals at the \"They replied\" stage, but 0 deals closed won. Coordination between agents is critical to move these deals forward.</p>\n  <h2><a name=\"protocol-for-interagent-communication\" href=\"#protocol-for-interagent-communication\"> </a> Protocol for Inter-Agent Communication</h2>\n  <p>The <code>NOW.md</code> file isn't just a dump of text; it implies a protocol. While not formally defined in a schema, the agents adhere to a set of conventions:</p>\n  <ul>\n   <li><strong>Timestamping:</strong> Entries are typically timestamped to indicate when an action occurred or a decision was made. This helps agents understand the recency of information.</li>\n   <li><strong>Clear Directives:</strong> Instructions for other agents are written clearly and concisely. For instance, \"Agent X: Process new leads from HubSpot for 2026-09-09.\"</li>\n   <li><strong>Status Updates:</strong> Agents report their progress or completion of tasks. \"Agent Y: Completed processing leads for 2026-09-09. 0 new leads found.\"</li>\n   <li><strong>Idempotency:</strong> Agents are designed to be idempotent where possible, meaning if they read an instruction and execute it, re-reading the same instruction won't cause issues. This is important because multiple agents might read <code>NOW.md</code> concurrently.</li>\n  </ul>\n  <p>This simple, file-based AI Agent Inter-Agent Communication Protocol avoids the overhead of message queues, databases, or custom APIs. It leverages the file system as a shared memory bus.</p>\n  <h2><a name=\"operational-impact-and-challenges\" href=\"#operational-impact-and-challenges\"> </a> Operational Impact and Challenges</h2>\n  <p>This approach has kept my system running for extended periods. The <code>algom-poll</code> process has been up for 43 days with 0 restarts, and <code>n8n</code> for 27 days with 0 restarts. This stability suggests that the <code>NOW.md</code> protocol, despite its simplicity, is effective in coordinating these agents.</p>\n  <p>However, it's not without challenges:</p>\n  <p>Despite these, <code>NOW.md</code> has been a pragmatic choice for my zero-VC-funded operation. It's cheap, requires no additional infrastructure, and works across diverse environments.</p>\n  <h2><a name=\"future-considerations\" href=\"#future-considerations\"> </a> Future Considerations</h2>\n  <p>While <code>NOW.md</code> works, I'm always looking for ways to improve robustness. One area is more explicit locking mechanisms for <code>NOW.md</code> writes, though this adds complexity. Another is integrating more robust monitoring. My <code>concierge-selftest.log</code> shows \"4 checks, 3260ms to first card,\" indicating some level of self-testing, but broader system-wide health checks are always a goal.</p>\n  <p>The current setup with <code>NOW.md</code> allows me to ship production AI agents on Oracle Cloud and manage them effectively, even with processes like <code>cto-aipa</code> restarting 142 times in a day or <code>algom-stream</code> restarting 55193 times over 24 days. It's a testament to how simple, constrained solutions can drive complex AI operations.</p>\n  <h2><a name=\"frequently-asked-questions\" href=\"#frequently-asked-questions\"> </a> Frequently Asked Questions</h2>\n  <p><strong>Q: How do you prevent two agents from writing to <code>NOW.md</code> at the same time and corrupting the file?</strong>\n   <br>\n   A: I do not have a formal locking mechanism. Agents are designed with specific, non-overlapping write windows or append-only logic where possible. If a conflict occurs, the last write wins, and agents are built to recover from malformed input or stale data.</p>\n  <p><strong>Q: What happens if an agent writes incorrect information to <code>NOW.md</code>?</strong>\n   <br>\n   A: This is a risk. Agents are designed with validation steps where possible, but ultimately, the system relies on the integrity of each agent's output. Manual review of <code>NOW.md</code> is also part of my daily operations to catch such errors.</p>\n  <p><strong>Q: Is <code>NOW.md</code> version controlled? How do you track changes?</strong>\n   <br>\n   A: <code>NOW.md</code> is part of a Git repository. Changes are tracked through Git commits. For example, I had 4 commits in <code>aideazz</code> in the last 48 hours, and 2 commits in <code>VibeJobHunterAIPA_AIMCF</code> in the last 48 hours, which would include any changes to <code>NOW.md</code> or related operational files.</p>\n  <p>— Elena Revicheva · <a href=\"https://aideazz.xyz\" target=\"_blank\" rel=\"noopener noreferrer\">AIdeazz</a> · <a href=\"https://aideazz.xyz/portfolio\" target=\"_blank\" rel=\"noopener noreferrer\">Portfolio</a></p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 NOW.md——一个共享的 Markdown 文件，作为跨隔离环境运行的碎片化 AI 智能体之间的轻量级通信协议和工作记忆。",
+  "oneSentenceSummary": "本文介绍了 NOW.md——一个共享的 Markdown 文件，作为跨隔离环境运行的碎片化 AI 智能体之间的轻量级通信协议和工作记忆。",
+  "summary": "Elena Revicheva 描述了一个务实的解决方案，用于协调多个无法直接通信的 AI 智能体，因为它们运行在不同平台和云端的碎片化环境中。她引入了 NOW.md，一个单一的共享 Markdown 文件，作为 cto-aipa、algom-stream 和 dragontrade-main 等智能体的唯一通信渠道和工作记忆。该文件通过时间戳、明确指令、状态更新和幂等操作等约定，实现了共享状态、任务交接和冲突避免。作者报告了运行稳定性，部分进程已持续运行数周无需重启，同时也承认了缺乏正式锁定机制和对智能体完整性的依赖等局限性。文章最后展望了未来更稳健的协调与监控方案。",
+  "mainPoints": [
+    {
+      "point": "碎片化的 AI 智能体需要共享的通信渠道，以避免重复工作和冲突。",
+      "explanation": "运行在不同平台和云端的智能体无法直接交换消息，因此像 NOW.md 这样的公共文件提供了一种轻量级的协调机制。"
+    },
+    {
+      "point": "NOW.md 既是智能体的共享会话，也是其工作记忆。",
+      "explanation": "该文件存储状态、任务交接和状态更新，使智能体无需消息总线或数据库即可读写信息。"
+    },
+    {
+      "point": "该协议依赖简单的约定，而非复杂的基础设施。",
+      "explanation": "时间戳、明确指令、状态更新和幂等操作实现了无需消息队列或自定义 API 的协调，降低了开销。"
+    },
+    {
+      "point": "这种方法存在权衡，包括缺乏正式锁定机制和对智能体完整性的依赖。",
+      "explanation": "没有锁定机制，并发写入可能导致冲突，且系统依赖每个智能体输出的正确性，需要人工监督。"
+    }
+  ],
+  "keyQuotes": [
+    "没有共享对话，Cursor 中没有 Claude MCP，也无法向其他智能体发送消息。",
+    "它们共同读取的只有 HubSpot 和这个文件。",
+    "这种基于文件的简单 AI 智能体间通信协议，避免了消息队列、数据库或自定义 API 的开销。",
+    "这证明了简单、受限的解决方案也能驱动复杂的 AI 操作。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "智能体编排",
+    "AI 工作流",
+    "AI 工程",
+    "AI 基础设施"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 76,
+  "wordCount": 1030,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788982215000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-10 03:30:15"
+}

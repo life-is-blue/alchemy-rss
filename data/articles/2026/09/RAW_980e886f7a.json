@@ -1,0 +1,52 @@
+{
+  "id": "RAW_980e886f7a",
+  "title": "自适应指令检索器：2 倍更低延迟的尖端搜索质量",
+  "url": "https://www.databricks.com/blog/adaptive-instructed-retriever-frontier-quality-search-2x-lower-latency",
+  "date": "2026-09-09 21:30:00",
+  "author": "Cheng Li, Jialu Liu, Sean Kulinski, Arnav Singhvi, Wen Sun, Michael Bendersky, Cindy Wang",
+  "siteName": "Databricks",
+  "content": null,
+  "aiSummary": "自适应指令检索器通过动态决定何时使用多步顺序推理，何时使用快速并行检索，来优化企业搜索，在一半的延迟下实现尖端水平的质量。",
+  "oneSentenceSummary": "自适应指令检索器通过动态决定何时使用多步顺序推理，何时使用快速并行检索，来优化企业搜索，在一半的延迟下实现尖端水平的质量。",
+  "summary": "Databricks 推出自适应指令检索器，这是其先前检索模型的演进，旨在平衡搜索精度与严格的延迟要求。该模型利用带有可调步长惩罚的在线强化学习（ORL），学习仅在处理复杂查询时才执行多步顺序搜索，而对于简单请求则默认使用更快的单步并行检索。这种方法允许开发者在质量和延迟之间找到帕累托最优，在效率上超越了领先的第三方模型。该模型使用 Databricks 的 AI 运行环境（AIR）进行训练，并在企业环境中表现出卓越性能，其中代理必须在不断演变的巨大工作空间中导航，而不会产生过高的计算成本。",
+  "mainPoints": [
+    {
+      "point": "用于搜索效率的自适应决策",
+      "explanation": "该模型使用一个学习到的策略来判断查询是否需要多步推理，还是可以通过一次并行搜索解决，从而在保持复杂任务的彻底性的同时，最大限度地减少简单任务的延迟。"
+    },
+    {
+      "point": "通过 ORL 优化质量-延迟权衡",
+      "explanation": "通过在在线强化学习（使用 CISPO）期间调整步长惩罚权重，开发者可以生成一系列位于帕累托前沿的模型检查点，从而实现针对特定工作负载的优化。"
+    },
+    {
+      "point": "在 2 倍更低延迟下的竞争性性能",
+      "explanation": "基准测试表明，自适应指令检索器在匹配领先第三方模型（如 Claude Sonnet 5 和 GPT-5.6 Luna）的检索质量的同时，将端到端延迟降低了 50% 以上。"
+    }
+  ],
+  "keyQuotes": [
+    "目标很简单：仅在有用时才花费额外的搜索步骤。",
+    "自适应指令检索器在仅需 5.8 秒的响应时间内，匹配了领先的第三方和开源模型，比 Claude Sonnet 5、DeepSeek-V4-Flash 或 GPT-5.6 Luna 快 2 倍以上。",
+    "通过在 ORL 训练期间调整步长惩罚权重，我们可以在整个检索预算范围内，选择任何一个支配 DeepSeek-V4-Flash、Claude Sonnet 5 和 GPT-5.6 Luna 的帕累托前沿上的操作点。"
+  ],
+  "tags": [
+    "检索增强生成",
+    "AI 代理",
+    "性能优化",
+    "强化学习",
+    "数据工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 87,
+  "wordCount": 1464,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1788960600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-09 21:30:00"
+}
