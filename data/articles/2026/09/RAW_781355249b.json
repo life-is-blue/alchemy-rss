@@ -1,0 +1,57 @@
+{
+  "id": "RAW_781355249b",
+  "title": "MSSH：只有 5 MB，单文件 SSH 客户端[Windows / macOS]",
+  "url": "https://www.appinn.com/maple-ssh/",
+  "date": "2026-09-10 22:13:35",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"has-very-light-gray-to-cyan-bluish-gray-gradient-background has-background wp-block-paragraph\">这是面向开发者与运维的轻量桌面 <a href=\"https://www.appinn.com/terminal-tty-and-shell/\" data-type=\"post\" data-id=\"53234\">SSH 终端</a>：多会话、SFTP、实用快捷键，体验接近 Xshell；配置完全本地、开箱即用，需要时再接入 NAS 或云端资料库，一处修改、多机同步。@<a href=\"https://www.appinn.com/maple-ssh/\">Appinn</a></p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/Copy-of-appinn-homework-2026-09-10T141112.310.jpg\" alt=\"MSSH：只有 5 MB，单文件 SSH 客户端[Windows / macOS] 1\" class=\"wp-image-59407\" title=\"MSSH：只有 5 MB，单文件 SSH 客户端[Windows / macOS] 1\">\n  </figure>\n  <p class=\"wp-block-paragraph\">来自<a href=\"https://meta.appinn.net/c/faxian/10\" target=\"_blank\" rel=\"noopener\"><strong>发现频道</strong></a>，开发者自荐：<a href=\"https://meta.appinn.net/t/topic/88125\" target=\"_blank\" rel=\"noopener\">https://meta.appinn.net/t/topic/88125</a></p>\n  <p class=\"wp-block-paragraph\">用 SSH 工具这件事，痛点往往不在「连不上」，而在「配置散落各处」。</p>\n  <p class=\"wp-block-paragraph\">家里一台 Windows、公司一台 Mac、出差再掏笔记本——主机列表、密钥、分组各配一份，改端口改用户名就得改三遍。想上云同步，又得注册账号、把主机清单交给别人的服务器。内网、无公网的 NAS 场景更别提。</p>\n  <p class=\"wp-block-paragraph\"><strong>MSSH</strong>（Maple SSH）是面向开发者和运维的轻量桌面 SSH 客户端：多会话终端、内置 SFTP、快捷键手感接近 Xshell。真正不一样的地方是 <strong>资料库</strong>：默认完全本地、打开即用，不注册、不强制联网；需要时再把某一台电脑（或 NAS 上的服务）当成资料库服务端，多设备共用同一份主机配置。</p>\n  <p class=\"wp-block-paragraph\">绿色便携：解压即用，7z 压缩包大约 5 MB，单文件大约 16 MB。目前支持 Windows 10/11 与 macOS，免费使用。当前版本 v0.4.0 公测。</p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter\">\n    <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/7/2/7279c950c3c874c3e2ed4ba557ef35acaecaf516_2_690x491.jpeg\" alt=\"MSSH 主界面\" title=\"MSSH：只有 5 MB，单文件 SSH 客户端[Windows / macOS] 2\">\n   </figure>\n  </div>\n  <h2 class=\"wp-block-heading\">资料库：本地优先，同步可选</h2>\n  <p class=\"wp-block-paragraph\">装好之后就有一份本地资料库，主机、密钥、分组都存在本机。不连远程库时，数据不出这台电脑，内网、飞机、没公网都能用。</p>\n  <p class=\"wp-block-paragraph\">需要多机同一份配置时，在设置里开启资料库服务（默认端口 60555），生成 Token，并可区分只读 / 读写。另一台电脑填 IP、端口和 Token 即可接入。</p>\n  <p class=\"wp-block-paragraph\">同步的是连接信息，不是替你中转 SSH。终端和 SFTP 仍然从你正在用的那台电脑直连目标服务器。</p>\n  <p class=\"wp-block-paragraph\">适合三种用法：</p>\n  <ul class=\"wp-block-list\">\n   <li>家里 Mac、公司 Windows、出差笔记本连同一份资料库，改一处、处处生效</li>\n   <li>小团队把资料库挂在内网机器上，新人拿 Token 就能用现成主机列表</li>\n   <li>本地库存 HomeLab，远程库挂公司环境，切换资料库即切换上下文</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Linux 桌面客户端暂不提供；Linux 资料库服务端和 Docker 镜像还在筹备，方便以后把库长期挂在 NAS 或云主机上。</p>\n  <h2 class=\"wp-block-heading\">终端、SFTP、快捷键</h2>\n  <p class=\"wp-block-paragraph\">多标签会话、快速重连、会话复制、连接属性、字体和配色都能调。地址栏可以临时敲 <code>ssh://用户@主机:端口</code>，收藏栏能钉常用主机。不需要这两条栏时，可在「设置 → 外观」里关掉。</p>\n  <p class=\"wp-block-paragraph\">内置 SFTP：左右双栏，本地和远端一起浏览，支持拖拽传输。当前会话按 <code>Ctrl+T</code>（Mac 为 <code>⌘T</code>）即可打开。</p>\n  <p class=\"wp-block-paragraph\">常用快捷键（Windows / macOS）：</p>\n  <ul class=\"wp-block-list\">\n   <li>打开主机目录：<code>Ctrl+O</code> / <code>⌘O</code></li>\n   <li>新建主机：<code>Ctrl+N</code> / <code>⌘N</code></li>\n   <li>打开 SFTP：<code>Ctrl+T</code> / <code>⌘T</code></li>\n   <li>关闭会话：<code>Ctrl+W</code> / <code>⌘W</code></li>\n   <li>重连：<code>Ctrl+Shift+R</code> / <code>⌘⇧R</code></li>\n   <li>切换标签：<code>Ctrl+Tab</code> / <code>Ctrl+Shift+Tab</code></li>\n   <li>沉浸式全屏（只留终端、铺满整块屏幕，盖住任务栏）：<code>F11</code>，终端右键也可进出。这和窗口右上角的最大化不是一回事——最大化仍保留工具栏，也不会盖住 Windows 任务栏。</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">SOCKS5 代理和 SSH 密钥可以统一管理。还有「防截屏模式」，尽量避免窗口被录屏、截图、屏幕共享直接拍到终端内容（Windows 10 2004+；macOS 为窗口共享限制）。</p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter\">\n    <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/6/6/6668f8e6529090c447acffa6256c040b7f96d2be_2_690x491.jpeg\" alt=\"MSSH SFTP\" title=\"MSSH：只有 5 MB，单文件 SSH 客户端[Windows / macOS] 3\">\n   </figure>\n  </div>\n  <h2 class=\"wp-block-heading\">外观</h2>\n  <p class=\"wp-block-paragraph\">提供经典浅色、深色、半透明、毛玻璃等主题。Windows 上可以调窗口透明度，也可以用自己的图片做背景。经典浅色主题长这样：</p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter\">\n    <img decoding=\"async\" src=\"https://h2cdn.appinn.me/optimized/3X/7/0/7010e5749bec008132d5c484231c11550dcdad1f_2_690x491.jpeg\" alt=\"MSSH 经典浅色主题\" title=\"MSSH：只有 5 MB，单文件 SSH 客户端[Windows / macOS] 4\">\n   </figure>\n  </div>\n  <h2 class=\"wp-block-heading\">下载</h2>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://mjj.ee/mssh\" target=\"_blank\" rel=\"noopener\">官网</a></li>\n   <li><a href=\"https://apps.microsoft.com/detail/9N9B95NJ03X3\" target=\"_blank\" rel=\"noopener\">微软商店</a></li>\n  </ul>\n  <p class=\"wp-block-paragraph\">默认本地库在 <code>~/.myssh/myssh.db</code>。如果希望数据库跟绿色软件放在一起，可用环境变量 <code>GOSSH_DB</code> 指定路径后再启动。</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：<a href=\"https://www.appinn.com/maple-ssh/\">https://www.appinn.com/maple-ssh/</a></p>\n  <p class=\"wp-block-paragraph\">参考阅读：</p>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://www.appinn.com/terminal-tty-and-shell/\" data-type=\"post\" data-id=\"53234\">终端（Terminal）、TTY 和 Shell，还有 SSH，一次搞懂它们到底是什么？</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "MSSH 是一款轻量级桌面 SSH 客户端，其独特之处在于支持本地优先的资料库管理，并可选择性地通过一台设备作为服务端实现多设备间的主机配置同步，解决了多设备配置分散的痛点。",
+  "oneSentenceSummary": "MSSH 是一款轻量级桌面 SSH 客户端，其独特之处在于支持本地优先的资料库管理，并可选择性地通过一台设备作为服务端实现多设备间的主机配置同步，解决了多设备配置分散的痛点。",
+  "summary": "MSSH（Maple SSH）是一款专为开发者和运维人员设计的轻量级桌面 SSH 客户端，支持 Windows 和 macOS 平台。它提供多会话终端、内置 SFTP 和类似 Xshell 的快捷键体验。其核心创新在于“资料库”功能，默认将主机列表、密钥和分组等配置完全存储在本地，无需注册或强制联网。用户可选择将一台设备（如 NAS 或云主机）设为资料库服务端，通过 IP 和 Token 实现多设备间配置的同步共享，有效解决了多设备配置分散和内网环境下的同步难题。该软件绿色便携，解压即用，单文件大小约 16MB，目前处于 v0.4.0 公测阶段，并计划支持 Linux 资料库服务端和 Docker 镜像。",
+  "mainPoints": [
+    {
+      "point": "轻量级与便携性",
+      "explanation": "MSSH 体积小巧（约 5MB 压缩包，16MB 单文件），解压即用，支持 Windows 和 macOS，提供绿色便携的使用体验，方便用户在不同设备间快速部署和使用。"
+    },
+    {
+      "point": "创新的资料库同步机制",
+      "explanation": "该工具默认本地存储主机配置、密钥和分组，无需注册或联网。用户可将一台设备设为资料库服务端，通过 IP 和 Token 实现多设备（如 Mac、Windows 笔记本）间配置的同步，有效解决了多设备配置分散的痛点。"
+    },
+    {
+      "point": "核心 SSH 客户端功能完备",
+      "explanation": "MSSH 提供多标签会话、快速重连、内置 SFTP（支持拖拽传输）、丰富的快捷键（手感接近 Xshell），以及 SOCKS5 代理和 SSH 密钥统一管理等实用功能，满足日常 SSH 操作需求。"
+    },
+    {
+      "point": "安全与隐私考量",
+      "explanation": "资料库同步仅传输连接信息，终端和 SFTP 仍直连目标服务器，确保数据安全。此外，还提供“防截屏模式”，尽量避免窗口内容被录屏、截图或屏幕共享直接拍到，保护用户隐私。"
+    }
+  ],
+  "keyQuotes": [
+    "用 SSH 工具这件事，痛点往往不在「连不上」，而在「配置散落各处」。",
+    "真正不一样的地方是 **资料库**：默认完全本地、打开即用，不注册、不强制联网；需要时再把某一台电脑（或 NAS 上的服务）当成资料库服务端，多设备共用同一份主机配置。",
+    "绿色便携：解压即用，7z 压缩包大约 5 MB，单文件大约 16 MB。",
+    "同步的是连接信息，不是替你中转 SSH。终端和 SFTP 仍然从你正在用的那台电脑直连目标服务器。"
+  ],
+  "tags": [
+    "开发者工具",
+    "命令行与终端",
+    "Windows 与微软生态",
+    "Apple",
+    "性能优化"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 88,
+  "wordCount": 1371,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1789049615000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-10 22:13:35"
+}

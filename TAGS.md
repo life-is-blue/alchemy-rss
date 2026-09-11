@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-11 07:34:32 | [返回首页](/README.md)
+**更新时间**: 2026-09-11 10:00:19 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15783)
+- [AI & 大模型](#ai-llm) (15822)
 - [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (983)
-- [DevOps](#devops) (753)
+- [前端与全栈](#frontend-fullstack) (985)
+- [DevOps](#devops) (754)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6892)
+- [其他](#other) (6899)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [DeepSeek-V4.1-Flash-技术报告深度解读：长程-Agent-如何重新分配预算](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650454187&idx=1&sn=73df03e5b3d9389d62f86ef859dd7c42) - AI 精选
+- [DeepSeek-V4.1-Flash：更强、更快、更普惠](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485817&idx=1&sn=627dd80114901f3fd8717e2c13feaf6a) - AI 精选
 - [推出-ChatGPT-Images-2.5](https://openai.com/index/introducing-chatgpt-images-2-5) - AI 精选
 - [关于-Navier–Stokes-千年难题](https://openai.com/index/navier-stokes-solution) - AI 精选
 - [面壁智能开源-MiniCPM5-2B：AA-榜单全球-4B-以下第一，初具端侧通用-Agent-能力](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247512955&idx=1&sn=f0254c373f933ac3b4f72da675762f1c) - AI 精选
@@ -40,10 +42,8 @@
 - [SaaS-的未来是智能体可用的应用](https://www.latent.space/p/lovable-future-of-saas) - AI 精选
 - [Jalapeño-首次结果展示-AI-推理领域领先的速度与效率](https://openai.com/index/jalapeno-first-results) - AI 精选
 - [吴恩达来信：AI-工程技能图谱详解——构建和部署-AI-应用](https://mp.weixin.qq.com/s?__biz=MzIxNzI0ODE4Nw==&mid=2247498786&idx=1&sn=9b051f71952a42e91973e7e1e92a24ec) - AI 精选
-- [V4-Flash-Vision-Exp-上线，开启多模态-API-服务](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26) - AI 精选
-- [GitHub---Chong169/a-constitution-for-one:-个人-AI-代理舰队七个月书面宪法治理，零事故](https://github.com/Chong169/a-constitution-for-one) - AI 精选
 
-- [查看全部 15783 篇...](/details/tags/ai-llm.md)
+- [查看全部 15822 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 983 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 985 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 753 篇...](/details/tags/devops.md)
+- [查看全部 754 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6892 篇...](/details/tags/other.md)
+- [查看全部 6899 篇...](/details/tags/other.md)
 
 

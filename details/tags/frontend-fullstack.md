@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-11 07:34:32 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-11 10:00:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -501,6 +501,14 @@
 ### [刚发布的-nodejs-23-提供了什么新能力？](https://juejin.cn/post/7466329378567684122)
 
 2025-02-02 06:25:32
+
+
+
+### [「上帝让他们卖加密货币，而他们的投资者输掉了一切」](https://www.technologyreview.com/2026/09/10/1143588/indxcoin-god-regalados-sell-crypto-investors-lost-everything/)
+
+2026-09-10 17:43:16 | 标签: 加密货币与 Web3, 法律与公正, 创业公司, 个人理财, 科技新闻
+
+> 这篇与 Type Investigations 合作完成的调查性文章详细记录了由埃利和凯特琳·雷加拉多创立的加密货币 INDXcoin 的兴衰。这对夫妇声称自己是按照上帝的直接指示行动，向其他福音派基督徒推销该代币，从 500 多名投资者手中筹集了超过 300 万美元，其中许多人投入了毕生积蓄。然而，该项目在一年内就崩溃了。2024 年 1 月，科罗拉多州证券署提起民事诉讼，指控这对夫妇涉嫌同质群体欺诈，并指控他们将 130 万美元的投资者资金用于个人奢侈消费。2025 年 7 月，他们被刑事指控犯有 40 项重罪，包括盗窃和证券欺诈。文章探讨了加密货币欺诈日益增多的更广泛背景、美国监管监督的...
 
 
 
@@ -756,6 +764,14 @@
 
 
 
+### [IETF-发布-RFC-10008，新增用于带请求体安全请求的-QUERY-方法](https://www.infoq.com/news/2026/09/http-query-method/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-09-10 14:27:00 | 标签: API 设计, 前端与 Web, 云原生与 DevOps, 技术规范
+
+> IETF 发布了 RFC 10008，引入了 QUERY HTTP 方法作为一种新的标准动词，该方法允许携带请求体，同时保留了 GET 的安全、幂等和可缓存特性。QUERY 解决了长期以来 GET 受 URL 限制的查询字符串与 POST 不可缓存、非幂等特性之间的矛盾。通过在 JSON 请求体中发送过滤条件，开发人员可以避免 URL 长度限制，防止敏感数据出现在访问日志中，并能更自然地表达嵌套结构。当缓存键（cache key）包含请求内容时，响应仍然可以被缓存，服务器可以通过新的 Accept-Query 响应头来表明其支持该方法。Reddit 和 Hacker News 上的社区讨论强调...
+
+
+
 ### [我们如何重建-Cloudflare-Workers-的模块注册表以实现-Node.js-兼容性](https://blog.cloudflare.com/workers-module-registry-nodejs/)
 
 2026-09-09 21:00:44
@@ -840,7 +856,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -852,7 +868,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2130,13 +2146,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2286,13 +2302,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3786,13 +3802,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5496,13 +5512,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

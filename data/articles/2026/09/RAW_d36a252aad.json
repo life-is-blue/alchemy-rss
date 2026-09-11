@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d36a252aad",
+  "title": "Konode – 这才是我理想中的浏览器同步工具",
+  "url": "https://www.appinn.com/konode/",
+  "date": "2026-09-10 23:56:13",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"has-very-light-gray-to-cyan-bluish-gray-gradient-background has-background wp-block-paragraph\">我觉得，理想中的，大概就是浏览器自带同步工具，包括打开的标签页、扩展、浏览历史、书签，以及密码、Cookie 等其他数据，结束。</p>\n  <p class=\"wp-block-paragraph\"><strong>并没有。</strong></p>\n  <p class=\"wp-block-paragraph\">打个比方，Chrome 的浏览器同步工具本身就不能用 😭</p>\n  <p class=\"wp-block-paragraph\">虽然我们可以换个角度，使用 Edge 的微软账号来同步，但还是不能在 Edge 与 Chrome 之间同步。</p>\n  <p class=\"wp-block-paragraph\">市面上也有一些同步工具，但主要是同步书签，比如 <a href=\"https://www.appinn.com/floccus/\" data-type=\"post\" data-id=\"32533\">Floccus</a>、<a href=\"https://www.appinn.com/xbrowsersync/\" data-type=\"post\" data-id=\"44390\">xBrowserSync</a> 等，但在 AI 后时代，书签似乎都不重要了，随便提问，就能找到你需要的内容。</p>\n  <p class=\"wp-block-paragraph\">可能，已打开的标签页、浏览器历史记录才是更重要的。</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/Copy-of-appinn-homework-2026-09-10T153819.781.jpg\" alt=\"Konode – 这才是我理想中的浏览器同步工具 1\" class=\"wp-image-59418\" title=\"Konode – 这才是我理想中的浏览器同步工具 1\">\n  </figure>\n  <div class=\"wp-block-rank-math-toc-block\" id=\"rank-math-toc\">\n   <h2>目录</h2>\n   <nav>\n    <ul>\n     <li class=\"\"><a href=\"#konode-开源浏览器同步扩展\">Konode 开源浏览器同步扩展</a></li>\n     <li class=\"\"><a href=\"#使用你自己的存储\">使用你自己的存储</a>\n      <ul>\n       <li class=\"\"><a href=\"#数据加密\">数据加密</a></li>\n       <li class=\"\"><a href=\"#这是加密后的数据\">这是加密后的数据</a></li>\n      </ul></li>\n     <li class=\"\"><a href=\"#支持同步的内容\">支持同步的内容</a>\n      <ul>\n       <li class=\"\"><a href=\"#自动同步\">自动同步</a></li>\n       <li class=\"\"><a href=\"#如何解决同步冲突\">如何解决同步冲突</a></li>\n      </ul></li>\n     <li class=\"\"><a href=\"#firefox-的-bug\">Firefox 的 Bug</a></li>\n     <li class=\"\"><a href=\"#获取\">获取</a></li>\n    </ul>\n   </nav>\n  </div>\n  <p class=\"wp-block-paragraph\">这是青小蛙今天在论坛捡到的宝：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-2.57.21-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 2\" class=\"wp-image-59410\" title=\"Konode – 这才是我理想中的浏览器同步工具 2\">\n  </figure>\n  <p class=\"wp-block-paragraph\">这位愤怒的老哥第一次来论坛，就送来了这么好的东西。</p>\n  <p class=\"wp-block-paragraph\"><strong>Konode</strong> 是一款<strong>开源</strong>的浏览器数据同步扩展，支持所有的 <strong>Chromium</strong> 系浏览器，以及 Firefox，甚至你可以在 Chrome 与 Firefox 之间同步数据。</p>\n  <h2 id=\"使用你自己的存储\" class=\"wp-block-heading\">使用你自己的存储</h2>\n  <p class=\"wp-block-paragraph\">它本身不提供云同步空间，所以你无需担心数据安全问题。它支持以下云存储：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-2.37.35-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 3\" class=\"wp-image-59411\" title=\"Konode – 这才是我理想中的浏览器同步工具 3\">\n  </figure>\n  <p class=\"wp-block-paragraph\">重点：你可以使用 WebDAV、Nextcloud / ownCloud，或者 GitHub 来保存数据。</p>\n  <p class=\"wp-block-paragraph\">青小蛙还看到个老朋友：Koofr（<a href=\"https://www.appinn.com/tag/koofr-%e4%ba%91%e5%ad%98%e5%82%a8%ef%bc%9a%e5%85%8d%e8%b4%b9-10gb-%e7%a9%ba%e9%97%b4%ef%bc%8c%e6%94%af%e6%8c%81-webdav%e3%80%81rclone%ef%bd%9c%e7%bb%88%e8%ba%ab%e8%ae%a2%e9%98%85-1tb-%e7%89%b9/\" data-type=\"post_tag\" data-id=\"7852\">斗胆推荐一下终身订阅，1TB 存储空间服务</a>）</p>\n  <p class=\"wp-block-paragraph\">所以，数据可以保存在你自己手里。</p>\n  <h3 id=\"数据加密\" class=\"wp-block-heading\">数据加密</h3>\n  <p class=\"wp-block-paragraph\">不止这些，还可以选择在同步前，先加密数据：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-2.41.41-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 4\" class=\"wp-image-59412\" title=\"Konode – 这才是我理想中的浏览器同步工具 4\">\n  </figure>\n  <p class=\"wp-block-paragraph\">这样，就算你把数据保存到了 GitHub，甚至不小心被公开了，也只能看到加密后的数据而已。</p>\n  <h3 id=\"这是加密后的数据\" class=\"wp-block-heading\">这是加密后的数据</h3>\n  <p class=\"wp-block-paragraph\">青小蛙把书签加密同步到 Koofr 之后，是可以直接看到 json 文件的，文件内容是这样的：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-3.03.41-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 5\" class=\"wp-image-59413\" title=\"Konode – 这才是我理想中的浏览器同步工具 5\">\n  </figure>\n  <p class=\"wp-block-paragraph\">当你在 Konode 中选择加密数据后，就只能看到这些乱码。</p>\n  <h2 id=\"支持同步的内容\" class=\"wp-block-heading\">支持同步的内容</h2>\n  <p class=\"wp-block-paragraph\">Konode 支持同步书签、扩展、历史记录、会话（已打开的标签页），不支持 Cookie、密码等数据：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-2.41.24-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 6\" class=\"wp-image-59414\" title=\"Konode – 这才是我理想中的浏览器同步工具 6\">\n  </figure>\n  <p class=\"wp-block-paragraph\">虽然没有浏览器自带同步内容多，但如果你是一位密码管理器用户，那么这点就完全不需要担心了。</p>\n  <h3 id=\"自动同步\" class=\"wp-block-heading\">自动同步</h3>\n  <p class=\"wp-block-paragraph\">安装扩展并设置好之后，就开始几乎实时同步了：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-3.07.31-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 7\" class=\"wp-image-59415\" title=\"Konode – 这才是我理想中的浏览器同步工具 7\">\n  </figure>\n  <h3 id=\"如何解决同步冲突\" class=\"wp-block-heading\">如何解决同步冲突</h3>\n  <p class=\"wp-block-paragraph\">Konode 提供了 4 种冲突解决策略，可以在设置里选择。</p>\n  <p class=\"wp-block-paragraph\">青小蛙觉得，就选以最后一次写入为准：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-3.24.35-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 8\" class=\"wp-image-59416\" title=\"Konode – 这才是我理想中的浏览器同步工具 8\">\n  </figure>\n  <h2 id=\"firefox-的-bug\" class=\"wp-block-heading\">Firefox 的 Bug</h2>\n  <p class=\"wp-block-paragraph\">当前发布的 1.3.0 版本有 bug，无论如何设置，Firefox 都会提示<code>未获得访问 WebDAV 服务器的权限。</code></p>\n  <p class=\"wp-block-paragraph\">好消息是 1.3.1 解决了这个 bug，坏消息是还没发布 😂</p>\n  <p class=\"wp-block-paragraph\">不过已经有源码了：</p>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <pre class=\"brush: bash; title: ; notranslate\" title=\"\">git clone https://github.com/konabe-studio/konode.git\ncd konode\nnpm install\nnpm run build:firefox\n</pre>\n  </div>\n  <p class=\"wp-block-paragraph\">完成后会得到：</p>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <pre class=\"brush: bash; title: ; notranslate\" title=\"\">dist-firefox/\n</pre>\n  </div>\n  <p class=\"wp-block-paragraph\">然后 Firefox 打开 <code>about:debugging#/runtime/this-firefox</code></p>\n  <p class=\"wp-block-paragraph\">点击：</p>\n  <p class=\"wp-block-paragraph\"><strong>「临时载入附加组件」 → 选择 <code>dist-firefox/manifest.json</code></strong></p>\n  <p class=\"wp-block-paragraph\">我根据这个方法，编译成功了，并且也同步成功了：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-10-at-3.21.28-PM-2x.avif\" alt=\"Konode – 这才是我理想中的浏览器同步工具 9\" class=\"wp-image-59417\" title=\"Konode – 这才是我理想中的浏览器同步工具 9\">\n  </figure>\n  <p class=\"wp-block-paragraph\">然后一不小心，就让 Firefox 一次性打开了 142 个标签页 😭</p>\n  <p class=\"wp-block-paragraph\">一个一个关掉，都要累死人。</p>\n  <h2 id=\"获取\" class=\"wp-block-heading\">获取</h2>\n  <ul class=\"wp-block-list\">\n   <li>官网：<a href=\"https://konode.org/\" target=\"_blank\" rel=\"noopener\">https://konode.org/</a></li>\n  </ul>\n  <p class=\"wp-block-paragraph\">有需要的同学去试试吧。</p>\n </body>\n</html>",
+  "aiSummary": "Konode 是一款开源浏览器同步扩展，支持在 Chromium 系浏览器与 Firefox 之间跨平台同步书签、历史记录及标签页，并允许用户通过 WebDAV、GitHub 等自定义存储方案实现加密同步。",
+  "oneSentenceSummary": "Konode 是一款开源浏览器同步扩展，支持在 Chromium 系浏览器与 Firefox 之间跨平台同步书签、历史记录及标签页，并允许用户通过 WebDAV、GitHub 等自定义存储方案实现加密同步。",
+  "summary": "Konode 是一款旨在解决跨浏览器数据同步痛点的开源扩展。与浏览器自带的同步功能不同，它支持在不同内核（Chromium 与 Firefox）之间同步书签、扩展、浏览历史及已打开的标签页。该工具的核心优势在于数据主权：它不提供云端存储，而是要求用户配置 WebDAV、Nextcloud 或 GitHub 等个人存储空间，并支持在同步前对数据进行加密，确保隐私安全。此外，Konode 提供了灵活的冲突解决策略，尽管目前 Firefox 版本存在已知 Bug，但用户可通过源码编译解决。该工具适合追求数据隐私与跨浏览器工作流统一的进阶用户。",
+  "mainPoints": [
+    {
+      "point": "跨浏览器与跨内核同步",
+      "explanation": "Konode 打破了 Chrome 与 Edge 等单一生态的限制，支持在 Chromium 系浏览器与 Firefox 之间同步书签、历史记录及标签页。"
+    },
+    {
+      "point": "数据主权与隐私加密",
+      "explanation": "该工具不提供中心化云存储，支持 WebDAV、GitHub 等自定义存储后端，并提供端到端加密功能，即使存储空间被公开，数据也无法被读取。"
+    },
+    {
+      "point": "灵活的冲突处理机制",
+      "explanation": "针对多设备同步可能产生的冲突，Konode 内置了 4 种冲突解决策略，用户可根据需求选择以最后一次写入为准等规则。"
+    },
+    {
+      "point": "开源与可扩展性",
+      "explanation": "项目开源，用户可根据需要自行编译修复 Bug（如 Firefox 端的权限问题），具备较强的可定制性。"
+    }
+  ],
+  "keyQuotes": [
+    "Konode 是一款开源的浏览器数据同步扩展，支持所有的 Chromium 系浏览器，以及 Firefox，甚至你可以在 Chrome 与 Firefox 之间同步数据。",
+    "它本身不提供云同步空间，所以你无需担心数据安全问题。",
+    "不止这些，还可以选择在同步前，先加密数据。"
+  ],
+  "tags": [
+    "自托管",
+    "浏览器扩展",
+    "数据同步",
+    "开源项目",
+    "隐私保护"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1007,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1789055773000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-10 23:56:13"
+}

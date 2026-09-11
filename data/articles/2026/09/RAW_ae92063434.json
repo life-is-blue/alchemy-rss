@@ -1,0 +1,56 @@
+{
+  "id": "RAW_ae92063434",
+  "title": "DeepSeek V4.1 Flash：更强、更快、更普惠",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485817&idx=1&sn=627dd80114901f3fd8717e2c13feaf6a",
+  "date": "2026-09-10 13:44:00",
+  "author": "DeepSeek",
+  "siteName": "DeepSeek",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img src=\"https://media.bestblogs.dev/20260910190605_beccabf.jpeg\" style=\"font-size: 1rem;\"></p>\n  <p>\n   <br>\n  </p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">今天，我们正式发布 DeepSeek V4.1 Flash 模型。这是我们全新模型结构系列中的最小尺寸的模型，具备原生多模态视觉理解能力。新模型结构的设计初衷是：能力上限更高、推理速度更快、吞吐更大、可扩展到更大参数模型。</span></span></p>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size: 18px;font-weight: bold;\">非对称模型结构，小成本大智能</span></span></h1>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">DeepSeek V4.1 Flash 为 552B 参数的 MoE 模型，采用了全新的 Causal-Encoder-Decoder 结构，输入和输出不对称，输入激活只有 8B，输出激活 16B，成本显著低于已知的同尺寸模型。同时，V4.1 Flash 还采用了新的预训练方式、经过了更大规模的强化学习后训练，在基准测试中，成功超越了包括 DeepSeek V4 Pro 在内的一众旗舰模型的智能水平。</span></span></h1>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;margin-bottom: 8px;\"><img class=\"rich_pages wxw-img\" type=\"block\" src=\"https://media.bestblogs.dev/20260910190605_3e5fccd.png\"></p>\n  <div>\n   <p style=\"text-align: center;line-height: 1em;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 12px;color: rgb(136, 136, 136);\">DeepSeek-V4.1-Flash 与主流前沿模型在 Agentic Benchmark 上的性能对比</span></span></p>\n  </div>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;margin-bottom: 8px;\"><img class=\"rich_pages wxw-img\" src=\"https://media.bestblogs.dev/20260910190605_7060c59.png\"></p>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size: 18px;font-weight: bold;\">更少缓存，更省成本</span></span></h1>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 24px;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">新一代模型大幅减少了 KV Cache 缓存的大小，与上一代模型相比，对 HBM 的需求减少到 1/4，对 SSD 的需求减少到 1/8。在 Agent 使用场景中，缓存命中的费用往往占比较高，对 KV Cache 的压缩大幅降低了 Agent 类任务的使用成本。</span></span></h1>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;margin-bottom: 8px;\"><img class=\"rich_pages wxw-img\" type=\"block\" src=\"https://media.bestblogs.dev/20260910190605_2108432.png\"></p>\n  <p style=\"text-align: center;line-height: 1em;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 12px;color: rgb(136, 136, 136);\">如图展示了 DeepSeek 在减少上下文存储方面的持续进展。相对于初代模型，KV Cache 已经缩小了 437 &nbsp;倍。</span></span></p>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size: 18px;font-weight: bold;\">API 支持</span></span></h1>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">DeepSeek V4.1 Flash 已同步上线 DeepSeek API，原生支持多模态，将模型名称更改为&nbsp;</span></span><strong><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">deepseek-flash</span></span></strong><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">&nbsp;即可调用最新的 V4.1 Flash 模型。旧版本模型 V4 Flash 与 V4 Flash Vision Exp 现已下线，出于兼容考虑，模型名 deepseek-v4-flash、deepseek-v4-flash-vision-exp 将被暂时路由到 V4.1 Flash。</span></span></h1>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">同时，经多方测试，V4.1 Flash 在性能、费用、速度、总用时等各项指标上已全面超越 V4 Pro，因此我们计划有序下线V4 Pro 模型。北京时间 2026 年 9 月 14 日 12:00 之后，至未来 V4.1 Pro 上线之前，用户访问 deepseek-v4-pro 的请求将全部路由到 V4.1 Flash，并按 V4.1 Flash 单价计费。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-align: left;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);font-weight: bold;font-style: normal;\">腾讯（WorkBuddy、CodeBuddy）和 OpenCode 作为官方合作伙伴，现已全量接入 DeepSeek V4.1 Flash，欢迎使用！</span></span></p>\n  <h2 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size: 18px;font-weight: bold;\">API 定价调整</span></span></h2>\n  <h2 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 24px;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">得益于模型架构的创新，DeepSeek V4.1 Flash 能够以更低的成本服务更多的用户，因此我们相应下调了 V4.1 Flash 的定价。同时，为了更合理地调配资源，我们仍然采用峰谷定价，</span></span><strong><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">闲时价格为高峰时段价格的一半</span></span></strong><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">，鼓励用户根据实际使用情况调整任务时间。新价格于</span></span><strong><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">&nbsp;2026 年 9 月 10 日 12:00&nbsp;</span></span></strong><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">开始生效。</span></span></h2>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;\"><img class=\"rich_pages wxw-img js_insertlocalimg\" type=\"block\" src=\"https://media.bestblogs.dev/20260910190605_d8e9f56.jpeg\"></p>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 24px;\"><span><span style=\"font-size: 18px;font-weight: bold;\">模型开源</span></span></h1>\n  <h1 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 24px;\"><span><span style=\"font-size: 15px;color: rgb(79, 79, 79);\">我们将会全力支持开源社区进行新模型的推理适配，并尝试通过各种方式扩大部署的范围。如果您有大规模部署的需求且具备相应的资源（2k 卡 GPU、有存储集群），欢迎与我们联系。</span></span></h1>\n  <ul class=\"list-paddingleft-1\">\n   <li style=\"font-size:15px;\">\n    <p style=\"margin-bottom: 8px;\"><strong><span><span style=\"font-size: 15px;font-weight: normal;\">模型开源链接：</span></span></strong></p>\n    <p style=\"margin-bottom: 16px;text-align: left;\"><strong><span><span style=\"color: rgb(77, 107, 254);font-weight: normal;\"><a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash\" target=\"_blank\">https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash</a></span></span></strong></p>\n   </li>\n   <li style=\"font-size:15px;\">\n    <p><strong><span><span style=\"font-size: 15px;font-weight: normal;\">论文链接</span></span></strong><strong><span><span style=\"font-size: 15px;font-weight: normal;\">：</span></span></strong></p>\n    <p style=\"text-align: left;\"><strong><span><span style=\"color: rgb(77, 107, 254);font-weight: normal;\"><a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf\" target=\"_blank\">https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf</a></span></span></strong></p>\n   </li>\n  </ul>\n  <p style=\"font-variant-caps:normal;white-space:normal;font-weight:400;font-size:17px;box-sizing:border-box !important;text-decoration-thickness:initial;overflow-wrap:break-word !important;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);outline:0px;word-spacing:0px;text-indent:0px;font-family:&quot;PingFang SC NEW&quot;, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;orphans:2;text-decoration-color:initial;text-align:center;-webkit-text-stroke-width:0px;padding:0px;margin:0px 8px;letter-spacing:0.544px;text-decoration-style:initial;font-style:normal;text-transform:none;max-width:100%;font-variant-ligatures:normal;widows:2;\"><img alt=\"图片\" class=\"rich_pages wxw-img\" style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;vertical-align: bottom;height: auto !important;visibility: visible !important;width: 660.984px !important;\" type=\"block\" src=\"https://image.jido.dev/20251202003110_f4fe8b21\"></p>\n  <p style=\"display: none;\"></p>\n </body>\n</html>",
+  "aiSummary": "DeepSeek 正式发布具备原生多模态能力的 V4.1 Flash 模型，采用 552B MoE 和非对称 Causal-Encoder-Decoder 结构，大幅降低 KV Cache 资源占用并下调 API 价格，同步开源模型与论文。",
+  "oneSentenceSummary": "DeepSeek 正式发布具备原生多模态能力的 V4.1 Flash 模型，采用 552B MoE 和非对称 Causal-Encoder-Decoder 结构，大幅降低 KV Cache 资源占用并下调 API 价格，同步开源模型与论文。",
+  "summary": "深度求索（DeepSeek）宣布正式发布原生多模态模型 DeepSeek V4.1 Flash。该模型为 552B 参数的 MoE 架构，创新性地采用了 Causal-Encoder-Decoder 非对称结构，输入激活 8B、输出激活 16B，综合智能在 Benchmark 上超越了 V4 Pro。在推理与存储成本方面，KV Cache 对 HBM 和 SSD 的需求分别降至上一代的 1/4 和 1/8。API 方面，V4.1 Flash 全面替代上一代 Flash 模型，并拟于近期路由兼容 V4 Pro 请求；同步推行峰谷优惠定价。此外，官方已公开 Hugging Face 模型权重与技术报告论文。",
+  "mainPoints": [
+    {
+      "point": "全新架构兼顾高性能与低成本",
+      "explanation": "采用 552B MoE 和非对称 Causal-Encoder-Decoder 结构，输入激活仅 8B、输出激活 16B，在 Agentic Benchmark 上性能超越了 V4 Pro。"
+    },
+    {
+      "point": "大幅降低 KV Cache 显存与存储开销",
+      "explanation": "相比上一代模型，对 HBM 的需求降至 1/4，对 SSD 降至 1/8，极大地降低了大上下文和 Agent 场景的推理解析成本。"
+    },
+    {
+      "point": "平滑的 API 路由演进与降价政策",
+      "explanation": "新模型上线并同步下调 API 单价，实行闲时半价策略；旧版 Flash 模型及未来的 V4 Pro 请求均平滑路由至 V4.1 Flash。"
+    },
+    {
+      "point": "坚持开源生态与全面开放技术细节",
+      "explanation": "同步在 Hugging Face 开源模型权重并附带技术报告，积极推动开源社区的推理适配与大规模集群部署。"
+    }
+  ],
+  "keyQuotes": [
+    "DeepSeek V4.1 Flash 为 552B 参数的 MoE 模型，采用了全新的 Causal-Encoder-Decoder 结构，输入和输出不对称，输入激活只有 8B，输出激活 16B，成本显著低于已知的同尺寸模型。",
+    "与上一代模型相比，对 HBM 的需求减少到 1/4，对 SSD 的需求减少到 1/8。",
+    "北京时间 2026 年 9 月 14 日 12:00 之后，至未来 V4.1 Pro 上线之前，用户访问 deepseek-v4-pro 的请求将全部路由到 V4.1 Flash，并按 V4.1 Flash 单价计费。"
+  ],
+  "tags": [
+    "DeepSeek",
+    "模型发布",
+    "多模态 AI",
+    "KV Cache优化",
+    "混合专家模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 95,
+  "wordCount": 880,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_14cc4c",
+  "sourceName": "DeepSeek",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1789019040000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-10 13:44:00"
+}
