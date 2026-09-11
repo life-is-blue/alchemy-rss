@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-11 10:00:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-11 14:58:04 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3751,17 +3751,13 @@
 
 ### [一份挑不出毛病的方案，是怎么毁掉一次海外营销的](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522610&idx=2&sn=575bacdf359fcbce50c6938b7b0cee42)
 
-2026-09-10 14:15:00 | 标签: 出海, 营销与增长, 品牌建设, 商业模式, 产品运营
-
-> 本文是一场针对 AhaCreator 合伙人兼 CGO 彭姗的深度访谈，重点探讨了中国品牌出海做海外达人营销的常见误区与方法论。访谈首先纠正了“找到人等于合作成立、发视频等于营销完成、做完一次等于形成能力”的三大浅层认知。接着，文章针对“10 万美元预算如何打透新市场”给出了具体的分阶段实操建议：首要任务是明确定位与 Brief，通过中腰部和长尾达人分批交付建立市场样本，并严格依据有效信号（如人群匹配、自然转化等）决定是否追加复投。在定价与爆款策略上，文章强调不能只看粉丝总量，而应综合历史成交、受众质量和真实匹配度，将爆款概率拆解为“可拆解、不可保证”的投资组合逻辑。最后，访谈还探讨了“卖货出...
+2026-09-10 14:15:00
 
 
 
 ### [从晶圆出厂到首个-Token：用-Nemotron-与-Palantir-Foundry-将供应链专业知识代码化](https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry/)
 
-2026-09-10 13:31:11 | 标签: 供应链, NVIDIA, 大语言模型, 后训练, 知识管理
-
-> NVIDIA 运营着全球最复杂的供应链之一，其绩效衡量从晶圆出厂一直延伸到首个 Token，可拆分为 time-to-rack（从硅片到组装系统）和 time-to-token（电力、冷却、网络、软件）。为缩短 time-to-rack，公司需要实时可见性、冗余、可靠性，以及将物料分配中的人类专业知识代码化。NVIDIA 与 Palantir 在 Palantir Foundry 中构建了数字供应链智能指挥中心，利用本体将物料、站点、承诺、产能和定性信号统一到受治理的数据层中，实现场景模拟和 AI 飞轮。定量分配问题由 NVIDIA cuOpt 解决，这是一个 GPU 加速的混合整数线性规划，...
+2026-09-10 13:31:11
 
 
 
@@ -16193,41 +16189,31 @@
 
 ### [Konode-–-这才是我理想中的浏览器同步工具](https://www.appinn.com/konode/)
 
-2026-09-10 23:56:13 | 标签: 自托管, 浏览器扩展, 数据同步, 开源项目, 隐私保护
-
-> Konode 是一款旨在解决跨浏览器数据同步痛点的开源扩展。与浏览器自带的同步功能不同，它支持在不同内核（Chromium 与 Firefox）之间同步书签、扩展、浏览历史及已打开的标签页。该工具的核心优势在于数据主权：它不提供云端存储，而是要求用户配置 WebDAV、Nextcloud 或 GitHub 等个人存储空间，并支持在同步前对数据进行加密，确保隐私安全。此外，Konode 提供了灵活的冲突解决策略，尽管目前 Firefox 版本存在已知 Bug，但用户可通过源码编译解决。该工具适合追求数据隐私与跨浏览器工作流统一的进阶用户。
+2026-09-10 23:56:13
 
 
 
 ### [MSSH：只有-5-MB，单文件-SSH-客户端Windows-/-macOS](https://www.appinn.com/maple-ssh/)
 
-2026-09-10 22:13:35 | 标签: 开发者工具, 命令行与终端, Windows 与微软生态, Apple, 性能优化
-
-> MSSH（Maple SSH）是一款专为开发者和运维人员设计的轻量级桌面 SSH 客户端，支持 Windows 和 macOS 平台。它提供多会话终端、内置 SFTP 和类似 Xshell 的快捷键体验。其核心创新在于“资料库”功能，默认将主机列表、密钥和分组等配置完全存储在本地，无需注册或强制联网。用户可选择将一台设备（如 NAS 或云主机）设为资料库服务端，通过 IP 和 Token 实现多设备间配置的同步共享，有效解决了多设备配置分散和内网环境下的同步难题。该软件绿色便携，解压即用，单文件大小约 16MB，目前处于 v0.4.0 公测阶段，并计划支持 Linux 资料库服务端和 Dock...
+2026-09-10 22:13:35
 
 
 
 ### [1.1.1.1-现在支持后量子-DNSSEC，全部-2，420-字节](https://blog.cloudflare.com/post-quantum-dnssec-1111/)
 
-2026-09-10 21:00:40 | 标签: DNS, DNSSEC, 后量子, 密码学, 安全
-
-> Cloudflare 已在其 1.1.1.1 公共 DNS 解析器上启用了后量子 DNSSEC 验证，增加了 ML-DSA（二项式 Dilithium）签名 alongside 经典的 ECDSA 签名。该文章解释了一个带有经典和后量子签名的 DNSKEY 响应现在膨胀到 2，420 字节，远超传统的 1，232 字节 UDP 载荷限制，这迫使解析器和权威服务器依赖 TCP、EDNS(0) 缓冲区大小和分片处理。Cloudflare 认为迁移是必要的，因为 DNSSEC 的长期信任链使其容易受到“现在收集，稍后解密”的攻击，并详细说明了操作权衡、性能影响以及更广泛的 DNS 生态系统需要适应更...
+2026-09-10 21:00:40
 
 
 
 ### [通过增量集成-Rust-到现有代码库提升性能](https://www.infoq.com/presentations/rust-refactoring/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-10 17:34:00 | 标签: Rust, 性能优化, 编程语言, 开发者工具, 开源
-
-> Lily Mara 反对完整重写，提出 FFI 重构作为更安全、更可增量的方式来获得 Rust 的性能优势。她阐述了部署和开发环境复杂性等可行性问题，并提出了一个二维矩阵（Rust 性能 vs. 工具链支持）来识别合适的候选函数——通常是 Python、Ruby 或 Node.js 等语言中的热点、耗时操作。演讲随后演示了创建名为 rstats 的 Rust crate，使用 PyO3 与 statrs 库，暴露 compute_stats 函数，该函数将 Python 数据转换为 Rust 结构体，处理 mean、standard deviation 等可选值，并将结果返回给 Python。...
+2026-09-10 17:34:00
 
 
 
 ### [CPython-正式将-RISC-V-列为-Tier-3-支持平台](https://www.infoq.com/news/2026/09/riscv-cpython/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-10 13:05:00 | 标签: Python, 开源, 编程语言, 系统设计, RISC-V
-
-> Python 核心开发团队宣布，CPython 现已正式将 RISC-V 作为 Tier 3 平台提供支持，此前社区在真实硬件上进行了大量测试与稳定化工作。在 RISE Project 提供的硬件支持下，贡献者们花费数月修复架构相关的缺陷、强化构建基础设施并提交补丁。虽然 Tier 3 意味着该平台仍可能出现故障，但不会阻塞核心版本的发布，团队正与 RISE Project 的 RISE RISC-V Runners 合作，将 RISC-V 硬件直接接入 CPython 的持续集成流水线，以加快反馈速度。展望未来，维护者计划推动 RISC-V 向 Tier 2 支持迈进，并研究向量扩展、位操作...
+2026-09-10 13:05:00
 
 
 
@@ -41407,11 +41393,11 @@
 
 
 
-### [深度拆解：AI-Agent-Harness-的构造](https://baoyu.io/translations/2026-05-10/akshay-pachaar-2041146899319971922)
+### [裁员潮将持续，直到我们学会发掘-AI-的商业价值](https://baoyu.io/translations/2026-05-10/championswimmer-2051807284691612099)
 
 2026-05-10T00:00:00.000Z
 
-> 深入探讨 Anthropic、OpenAI、Perplexity 和 LangChain 究竟在开发什么。涵盖编排循环、工具、记忆、上下文管理以及所有能将“无状态”大语言模型转变为全能 Agent 的核心组件。
+> AI 没有直接替代某个岗位，却通过 Token 成本、代码投入膨胀和组织对齐税，把企业推向新一轮裁员。
 
 
 

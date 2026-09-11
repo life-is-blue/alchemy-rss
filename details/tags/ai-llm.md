@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-11 10:00:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-11 14:58:04 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [DeepSeek-V4.1-Flash-技术报告深度解读：长程-Agent-如何重新分配预算](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650454187&idx=1&sn=73df03e5b3d9389d62f86ef859dd7c42)
 
-2026-09-10 17:33:00 | 标签: 大语言模型 (LLM), 模型训练与推理, 性能优化, 量化技术, AI 工程
-
-> 本文对 DeepSeek-V4.1-Flash 技术报告进行深度解读，重点分析了如何通过 Causal Encoder-Decoder (CED) 架构、Compressed Sparse Attention 2 (CSA2) 机制、FP4 量化技术等创新设计，大幅降低了长程 Agent 处理长上下文时的计算和存储开销。文章详细解释了历史 KV 缓存的优化策略，包括跨层共享、低精度存储和会话恢复机制，以及如何通过 Single-Pass mHC、Engram 记忆模块和 DSpark 草稿机制进一步提升推理效率。报告还介绍了 45T 多模态 tokens 的预训练、稀疏注意力扩展至 1M 长度...
+2026-09-10 17:33:00
 
 
 
 ### [DeepSeek-V4.1-Flash：更强、更快、更普惠](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485817&idx=1&sn=627dd80114901f3fd8717e2c13feaf6a)
 
-2026-09-10 13:44:00 | 标签: DeepSeek, 模型发布, 多模态 AI, KV Cache优化, 混合专家模型
-
-> 深度求索（DeepSeek）宣布正式发布原生多模态模型 DeepSeek V4.1 Flash。该模型为 552B 参数的 MoE 架构，创新性地采用了 Causal-Encoder-Decoder 非对称结构，输入激活 8B、输出激活 16B，综合智能在 Benchmark 上超越了 V4 Pro。在推理与存储成本方面，KV Cache 对 HBM 和 SSD 的需求分别降至上一代的 1/4 和 1/8。API 方面，V4.1 Flash 全面替代上一代 Flash 模型，并拟于近期路由兼容 V4 Pro 请求；同步推行峰谷优惠定价。此外，官方已公开 Hugging Face 模型权重与技术...
+2026-09-10 13:44:00
 
 
 
@@ -5418,25 +5414,19 @@
 
 ### [原生开发已成为-Shopify-移动端的未来（2026）--Shopify](https://shopify.engineering/back-to-native)
 
-2026-09-10 22:09:31 | 标签: 移动开发, Swift, Kotlin, AI 编程, 开发者工具
-
-> Shopify 最初在 2020 年采用 React Native 以实现跨平台效率，节省时间并让非移动端开发者也能参与贡献。到 2025-2026 年，大语言模型的进步削弱了共享代码的成本优势，使原生开发更具吸引力。公司借助 LLM 辅助，用 Swift 和 Kotlin 原型重建了核心应用，并采用名为 Helix 的新系统，将迁移拆解为可审查的检查点，并利用 CLI 实现快速、无需模拟器的反馈循环。Shop 应用仅用 12 周就完成重建，Shopify 主应用的迁移正在进行中，并计划将所有移动应用迁移至原生。Shopify 继续赞助关键的 React Native 开源库（Skia 和 F...
+2026-09-10 22:09:31
 
 
 
 ### [推出-SWE-2：推动-Pareto-前沿](https://cognition.com/blog/swe-2)
 
-2026-09-10 18:00:00 | 标签: 大语言模型, AI 研究前沿, 模型训练与推理, 强化学习, AI 编程
-
-> 这篇博客介绍了 SWE‑2，这是一个新的代码模型，它推动了能力和成本的 Pareto 前沿。该模型在 FrontierCode 1.1 Main 上得分 50.0%，与 Fable 5.1 相差一个点，成本比同类模型低 64%。训练首次将 RL 扩展到多万亿参数规模，采用单次 RL 运行，线性成本惩罚与基线模型的前沿斜率相匹配，长度加权奖励基线，改进的 RL 回滚服务，DSpark 推测解码和量化。在行为上，SWE‑2 表现出专注的探索、更好的测试覆盖率、在用户约束内的资源利用和更强的验证能力，中等努力水平可以更快、更便宜地完成任务。数据改进将 RL 环境的数量增加了三倍，并添加了指令跟随覆盖...
+2026-09-10 18:00:00
 
 
 
 ### [Agentic-Harness-Workflow-框架：把-AI-Coding-变成工程化流程](https://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247607615&idx=1&sn=bb329b7e9dbec5b0c37a805dada3f04e)
 
-2026-09-10 18:00:00 | 标签: AI 编程, Harness工程, AI Agent, AI 工作流, 开发者工具
-
-> 本文系统介绍了一种名为 Agentic Harness Workflow 的 AI 编程工程化框架。作者指出直接将长需求丢给 AI 容易导致上下文膨胀、步骤遗漏及过程不可恢复，因此需要引入类似工厂流水线的工程框架。文章首先对比了三种应用拓扑，随后详细拆解了该框架的核心架构：涵盖从初始化到归档的十二阶段生命周期、充当框架入口与知识库的 CLAUDE.md、负责极简调度与状态控制的主会话 Manager、执行特定任务的 Sub-Agent、基于文件落盘的状态机、以及标准化的双向通信协议。此外，文章还探讨了多需求隔离的 Worktree 实践、提交依赖处理、与 DeepSeek Harness 哲学...
+2026-09-10 18:00:00
 
 
 
@@ -10398,9 +10388,7 @@
 
 ### [刚刚，DeepSeek-发布新模型，Flash-把-Pro-给干掉了](https://mp.weixin.qq.com/s?__biz=MjM5MjAyNDUyMA==&mid=2651107020&idx=1&sn=ad03352a40e558ca5832a76d70ff4056)
 
-2026-09-10 15:33:00 | 标签: DeepSeek, 模型发布, 混合专家模型, KV Cache优化, AI Agent
-
-> DeepSeek 正式发布 V4.1 Flash 并上线官网、App 与 API。该模型总参数 552B，采用全新 Causal Encoder Decoder（CED）非对称架构，输入阶段激活约 8B、输出阶段约 16B，兼顾能力上限与推理成本。配套技术包括 Compressed Sparse Attention 2（跨层复用 KV Cache 与 Top-K 索引）、FP4 KV Cache（HBM 需求降至四分之一、SSD 降至八分之一，相比初代 KV Cache 缩小约 437 倍）以及 DSpark 生成加速。经大规模强化学习后训练，V4.1 Flash 在多项 Agent 测试中超...
+2026-09-10 15:33:00
 
 
 
@@ -14162,225 +14150,169 @@
 
 ### [cortecs---欧洲的-AI-网关](https://cortecs.ai)
 
-2026-09-11 01:06:39 | 标签: 大语言模型, 模型路由, AI 产品与应用, AI 安全与伦理, 视觉语言模型
-
-> Cortecs 是一个欧洲 AI 网关，提供单一的、符合 GDPR 的 API，用于访问超过 13 家欧洲 LLM 提供商，拥有 150 多个模型端点。该平台强调数据主权以及对 AI 法案和 GDPR 等欧盟法规的合规性。它提供全面的服务套件，包括文本、视觉、嵌入、音频转录和文本转语音，全部可通过统一端点访问。用户可以通过过滤和排序方法，根据成本、性能和策略要求对提供商进行过滤和排序。通过兼容 OpenAI 的端点，以及针对智能体、聊天界面和 LangChain、LlamaIndex 等框架的 SDK 和示例，集成得以简化。该服务保证用户提示不会被存储或用于模型训练，所有模型开箱即符合 GDP...
+2026-09-11 01:06:39
 
 
 
 ### [面向代理任务的-LLM-推理功能分类法---Jeff-Auriemma](https://jeffauriemma.leaflet.pub/3mv6jnffo6k24)
 
-2026-09-11 01:00:08 | 标签: AI 代理, LLM 推理, Agent 编排, AI 评估与基准, 上下文工程
-
-> 文章指出，聚合的 token 与延迟指标将模型推理简化为不可区分的数字，掩盖了两次 token 数相近的调用可能承担完全不同功能的事实。Auriemma 提出四类推理调用的分类法：初始化（任务无关的上下文，如系统提示和工具模式）、推理（用于解决对任务完成至关重要的不确定性）、编排（推进已确定语义的执行路径）以及合成（将累计的任务状态转化为面向用户的最终响应）。关键的界限是预先确定性，而非语法：相同的 grep 命令可能是推理或编排，取决于调用开始时已知的内容。随后他引入「推理产出率」，即任务执行推理中用于解决不确定性的比例，以 80% 对比 40% 为例进行说明。他明确指出该指标的局限性：高产...
+2026-09-11 01:00:08
 
 
 
 ### [全栈-NIM-优化如何在-Nemotron-3-Ultra-上实现-2.5-倍用户承载量](https://developer.nvidia.com/blog/how-full-stack-nim-optimizations-deliver-2-5x-more-users-on-nemotron-3-ultra/)
 
-2026-09-11 00:55:39 | 标签: NVIDIA, LLM 推理, 性能优化, 模型训练与推理, AI 基础设施
-
-> NVIDIA 阐述了其 NIM 微服务如何将模型感知与 GPU 感知的服务优化打包为一条经过验证的部署路径。在 4xB200 系统上运行 Nemotron 3 Ultra 并采用智能体工作负载（64K 上下文、400 输出 token、76% KV 复用、每用户 50 TPS）时，NIM 2.0.12 优化栈达到 1，997 tok/s，而关闭 NIM 的基线为 718 tok/s，提升 2.5 倍。文章将这一改进归因于多个相互作用的配置组合：自动调优的 MoE 与 Mamba 内核、张量并行与专家感知执行、前缀缓存与部分前缀匹配、Mamba 状态缓存调优、调度器/批处理/内存调优，以及 MT...
+2026-09-11 00:55:39
 
 
 
 ### [不让每一层都“翻旧账”！浙大-&amp;-港大最新开源-LayerRecall，让长视频记忆更准、用得更精](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247519396&idx=1&sn=474578f325ea9a38f44a26eac5b39e6c)
 
-2026-09-11 00:00:00 | 标签: 视频AI, 模型训练与推理, AI研究前沿, Harness工程, 模型发布
-
-> 长视频生成中，自回归模型的 KV 缓存优先保留近期片段，导致角色离场再返回时容易出现身份、属性、场景线索丢失的问题。浙江大学杨易教授团队与香港大学提出并开源 LayerRecall 轻量记忆路由模块，仅需训练约 1.65M 参数（约为 5B 生成骨干的 0.033%），生成骨干保持冻结。该模块同时解决「现在该想起什么」和「这段记忆该在哪些层里使用」两个问题：动态检索最相关的历史 chunk 完整 K/V，仅将记忆送入预分析确定的记忆敏感层，其余层维持原有局部滑动窗口，避免全层注入导致的画面突变。训练采用 Cross-Horizon Prediction Matching（CHPM）方法，通过长...
+2026-09-11 00:00:00
 
 
 
 ### [不，安德森·库珀，AI-不会在-2030-年前毁灭全人类](https://garymarcus.substack.com/p/no-anderson-cooper-ai-is-not-going)
 
-2026-09-10 23:50:39 | 标签: AI 安全与伦理, OpenAI, Anthropic, AI 生存风险, AI 评估与基准
-
-> 加里·马库斯针对前 OpenAI/前 Anthropic 员工雅各布·考克森发表的「AI 可能在 2030 年前杀死全人类」的热议言论做出了回应，该言论曾被安德森·库珀在 CNN 上放大传播。马库斯承认，一些前沿实验室的员工确实对此深信不疑（例如 Anthropic 的埃文·哈宾格），但他指出这些人的专业知识局限于技术层面，并不了解真实世界的运行机制。他重新回顾了自己此前对尤德考斯基与索尔斯所著《If Anyone Builds It， Everybody Dies》一书的批评，指出尽管超级智能最终可能会出现，但其实现的时间线很可能远比末日论者预期的要长，而且关于 AI 毁灭人类能力的假设也站...
+2026-09-10 23:50:39
 
 
 
 ### [王坚外滩大会露天对话“年青人”：去做那些并非理所当然的-AI](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652810152&idx=1&sn=3b988e0f36eb135c79d50f1920a0e582)
 
-2026-09-10 22:29:00 | 标签: 可持续与绿色, 科技新闻, AI 工程, 创造力, AI 产品与应用
-
-> 王坚在 2026 年外滩大会上发表题为《以年青人的方式思考人工智能》的演讲，指出 AI 应减少自然资源消耗、实现可持续发展，而非只是完成更多任务。他鼓励年轻人勇敢质疑、不怕失败，以“非理性”方式思考问题，解决人类面临的深层次挑战。他提出数据是数字时代的自然资源，AI 是节约资源的工具，并通过“城市大脑之问”呼吁使用 10%资源即可过好生活。文章分享了青年创新事例，如 reusable 火箭和小型喷气自行车，强调“年青人是这个世界的发动机，青春的热爱是这个发动机的燃料”。最后，王坚认为 AI 能源消耗问题可解，AI 不会取代人，而是重新定义人类能力。
+2026-09-10 22:29:00
 
 
 
 ### [LLM‑as‑a‑Judge：评估检索增强生成系统超越精确匹配指标](https://dev.to/nikhil_ramank_152ca48266/llm-as-a-judge-evaluating-rag-systems-beyond-exact-match-metrics-4lf6)
 
-2026-09-10 22:15:25 | 标签: 检索增强生成, AI 评估与基准, AI 智能体, 提示词工程, AI 工作流
-
-> 本文提出使用语言模型作为评判者来评估检索增强生成（RAG）系统的概念，指出传统检索指标无法捕捉诸如幻觉、忽视证据或答案不完整等多种失败模式。文章概述了一种分层评估方法，将检索质量、生成质量、依据性以及整体产出可靠性分开评估。定义了五个关键维度——忠实性、答案相关性、上下文相关性、完整性和正确性——并提供了具体示例和评分方案。作者强调 LLM 评判者并非真实标签，必须自行验证，文中描述了提示设计、结构化 JSON 输出以及校准策略，以减轻位置偏差或冗长偏差等偏见。文章还提供了构建评估流水线、使用多评判者以及结合确定性指标的实用指南，使该框架对构建生产级 RAG 服务的工程师具有可操作性。
+2026-09-10 22:15:25
 
 
 
 ### [MemPO-源码学习笔记（一）：总体架构与设计思路](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489817&idx=1&sn=1dd9437c9432b9f18d4cb9fd391b9a77)
 
-2026-09-10 21:10:00 | 标签: AI Agent, 强化学习, Agent记忆, 系统设计, 模型训练与推理
-
-> 本文是针对 MemPO（自记忆策略优化）框架的源码学习笔记。文章系统介绍了 MemPO 的核心设计思想，即让模型在每轮交互开头自主生成记忆摘要，并通过强化学习端到端优化记忆质量。重点解析了其独特的双通路奖励机制：全局轨迹级的结果奖励（Outcome Reward）与衡量记忆信息含量的局部记忆奖励（Memory Reward）相结合的优势估计方法。此外，文章还梳理了基于 VeRL 框架的代码核心路径、训练与评估架构、以及异步多轮 Agent Loop 环境的设计特点。
+2026-09-10 21:10:00
 
 
 
 ### [转型物理-AI-公司，对小鹏究竟意味着什么？](https://mp.weixin.qq.com/s?__biz=MzkwNDQ5MjM1Mw==&mid=2247495407&idx=1&sn=ff69b759384804ef48df797b8efe3d2b)
 
-2026-09-10 21:00:00 | 标签: 小鹏集团, 人形机器人, 具身智能, 物理 AI, 自动驾驶
-
-> 小鹏集团正经历从汽车制造商向物理 AI 公司的深刻转型。通过宣布人形机器人 IRON 的量产计划，小鹏展示了其「不同终端，同一个大脑」的核心战略：利用在汽车领域积累的自研芯片（图灵 AI 芯片）、端到端模型（VLA/VLT 架构）以及大规模自动化制造经验，构建跨领域的智能基础设施。文章指出，小鹏通过合并自动驾驶与智能座舱中心成立「通用智能中心」，实现了 AI 能力的中台化。这种转型不仅是产品的延伸，更是通过「模型 × 算力 × 数据 × 本体」的公式，试图利用汽车场景积累的数据飞轮，在具身智能领域建立起平台型的竞争壁垒。
+2026-09-10 21:00:00
 
 
 
 ### [利用自适应模型路由优化多智能体系统中的-LLM-推理成本](https://towardsdatascience.com/optimizing-llm-inference-costs-in-multi-agent-systems-with-adaptive-model-routing/)
 
-2026-09-10 20:30:01 | 标签: 多智能体系统, LLM 推理, 智能体架构, 系统设计, AI 工作流
-
-> 本文提出了一种「自适应智能体模型路由」架构，旨在优化多智能体 AI 系统的推理成本。该架构摒弃了静态模型分配方式，通过允许各个智能体生成即时（JIT）子任务来实现规划去中心化。一个轻量级的分类层会从复杂度、推理需求和累积上下文三个维度对这些任务进行评估，从而分配最具成本效益的模型层级（快速、平衡或强大）。通过将任务规划与执行解耦，并利用确定性的上下文计算，该系统确保了强大的模型被保留用于高风险推理任务，而廉价模型则处理日常的检索和格式化工作，最终可实现高达 90% 的成本节约。
+2026-09-10 20:30:01
 
 
 
 ### [DeepSeek-V4.1-Flash-架构，Context-的重整化](https://mp.weixin.qq.com/s?__biz=MzI2MjU4MDYwOA==&mid=2247492704&idx=1&sn=fbf6e8a9b9d536b0f67e34ba03356e4e)
 
-2026-09-10 20:01:00 | 标签: DeepSeek, 模型训练与推理, 性能优化, KV Cache优化, 多模态 AI
-
-> V4.1-Flash 沿深度、空间、时间和数值精度不断压缩 Context 的有效自由度。CED 粗粒化输入，Engram 固化稳定关系，CSA2 复用不变关系，Indexer 筛选有效态射，Replay 管理历史状态，FP4 压缩物理表征。这些模块共同控制 Context 状态的生成、表征、检索、复用、生命周期和存储，使模型能够高效处理超长上下文。
+2026-09-10 20:01:00
 
 
 
 ### [如何将传统机器学习与智能体推理相结合---MachineLearningMastery.com](https://machinelearningmastery.com/how-to-combine-traditional-machine-learning-with-agentic-reasoning/)
 
-2026-09-10 20:00:20 | 标签: 机器学习, 智能体推理, 混合 AI 系统, 大型语言模型, 工作流程自动化
-
-> 传统机器学习擅长静态、单步预测，但无法适应变化的上下文或执行复杂的、多步骤的任务。智能体推理通过启用规划、工具使用和实时适应来填补这一空白。本文主张使用混合系统，其中智能体协调工作流程并调用专门的机器学习模型进行特定预测，以保险索赔处理场景为例。
+2026-09-10 20:00:20
 
 
 
 ### [实测央企出品数字员工，它的强大远超预期！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651056207&idx=1&sn=2bca999e11a19f3961b71354c4fa2e02)
 
-2026-09-10 19:36:00 | 标签: 数字员工, AI组织变革, 字节跳动, 安全, 游戏开发
-
-> 元景数字员工由元景 UniClaw 升级而来，具备沙盒隔离、数据不出网和开箱即用的特性。它支持 PC、微信、钉钉等多种接入方式，覆盖办公、研发、生活娱乐、教育学习和金融投资五大领域，拥有超过 1000 项技能。通过智能路由、技能分级匹配和行业 Skills 叠加，元景数字员工在政务、工业和文旅等领域实现了高效落地，成为一个既通用又专精的数字劳动力。
+2026-09-10 19:36:00
 
 
 
 ### [苹果-iPhone-Duo-首发亮相，成为其首款折叠屏手机，配备-7.6-英寸内屏与-A20-Pro-芯片](https://www.bayareatimes.com/p/apple-s-iphone-duo-debuts-as-its-first-foldable-with-7-6-inner-display-a20-pro-chip)
 
-2026-09-10 18:26:36 | 标签: 苹果, Anthropic, AI 安全与伦理, 科技资讯, Harvey
-
-> 2026 年 9 月 10 日的 Bay Area Times 聚焦科技行业的多个关键转折。重点报道包括苹果发布 iPhone Duo，这是一款配备 7.6 英寸内屏与 A20 Pro 芯片的折叠屏设备。在 AI 安全领域，Anthropic 研究员 Jacob Coxon 已辞职，理由是担忧人类在 AI 失控风险上正面临「关键时刻」。此外，法律 AI 初创公司 Harvey 在完成 5.5 亿美元融资后估值达到 156 亿美元，而 Automattic 则因董事会将 CEO Matt Mullenweg 停职带薪休假而面临领导层变动。
+2026-09-10 18:26:36
 
 
 
 ### [DeepSeek-V4.1-Flash-开源：552B-MoE，非对称模型结构，大幅减少-KV-Cache-缓存大小](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247513116&idx=1&sn=550c33924e97d3e89d5a0ee504a15fb4)
 
-2026-09-10 17:55:00 | 标签: DeepSeek, 开源项目, MoE架构, KV Cache优化, 多模态 AI
-
-> DeepSeek 正式发布并开源 DeepSeek-V4.1-Flash，这是一款拥有 552B 骨干参数的多模态 MoE 模型，原生支持图文输入并具备百万级上下文处理能力。该模型的核心创新在于采用了非对称的因果编码器-解码器（CED）架构，通过将预填充与解码阶段的参数激活进行差异化处理，显著提升了智能体场景下的成本效率。同时，结合压缩稀疏注意力 2（CSA2）、SWA 有界重放及 FP4 缓存技术，其运行时 KV 缓存仅为前代的 1/4，持久化缓存仅为 1/8。此外，模型集成了 Engram 条件记忆与 DSpark 推测解码等技术，并在 45 万亿 token 的多模态语料上完成了从零训练...
+2026-09-10 17:55:00
 
 
 
 ### [DeepSeek-正式发布-V4.1-Flash-并开放权重，蚂蚁百灵开源-Ling-3.0-flash-VL-多模态模型](https://mp.weixin.qq.com/s?__biz=MzkyMzcwMDIyMQ==&mid=2247503625&idx=1&sn=63ed78b353c36e032a45a047159cd033)
 
-2026-09-10 17:49:00 | 标签: DeepSeek, 开源项目, 多模态 AI, 机器翻译, Agent 评测
-
-> 9 月 10 日，AI 领域迎来多项重要更新。DeepSeek 正式发布 V4.1 Flash，模型权重采用 MIT 许可证开放，支持最高百万 Token 上下文，原生处理图像与文本，适用于推理、编程与工具调用任务。蚂蚁百灵开源 Ling-3.0-flash-VL，在 Ling-3.0-flash 基础上加入原生视觉能力，能够理解图像、视频、文档及软件界面，提供 BF16 与 FP8 权重，同样采用 MIT 许可证。Cohere 发布 North Small Translate，采用 MoE 架构，总参数 218B，激活参数 25B，上下文窗口 16K，支持 50 多种语言，提供 Chat V...
+2026-09-10 17:49:00
 
 
 
 ### [GitHub---AGGIB/Stroq：面向-AI-编码智能体的本地行为防火墙：扫描读取内容、标记不明会话、阻断危险后续操作](https://github.com/AGGIB/Stroq)
 
-2026-09-10 17:05:14 | 标签: AI 智能体, 安全, Claude Code, Cursor, OpenClaw
-
-> Stroq 是一个开源工具，可作为 AI 编码智能体（如 Claude Code、Cursor、Codex、Copilot CLI、Windsurf、OpenClaw 或任何 MCP 客户端）的挂钩脚本安装。它通过扫描智能体读取的所有内容（文件、网页、命令输出、MCP 工具结果）于 PostToolUse 阶段，进行内容规范化（去除零宽字符、折叠同形字符、解码 base64/hex/URL），并匹配 599 条控流规则。如果最高严重性匹配达到阈值， session 将被标记为「可疑」，并向智能体提供内联警告，提示将数据视为不可信。在随后的 PreToolUse 阶段，Stroq 分类智能体的意...
+2026-09-10 17:05:14
 
 
 
 ### [基于-LLM-的模型无关-PII-检测-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/model-agnostic-pii-detection-with-llms/)
 
-2026-09-10 16:02:16 | 标签: AI 安全与对齐, LLM 推理, AWS, Amazon Bedrock, PII 检测
-
-> 本文探讨了 LLM 微调过程中 PII 泄露的风险，以及传统 token 分类模型依赖固定模式的局限性。文章提出了一种可配置的检测器，将 LLM 视为可替换组件，通过指令驱动检测，利用提示词而非重新训练来识别实体。实现方案包括：基于提示词的 schema 定义系统、兼容 Amazon Bedrock 和 EC2 的统一推理接口（Inferencer），以及用于恢复字符偏移量并处理标签幻觉的后处理层。在五个公开语料库和八种语言上的基准测试表明，该方法实现了较高的 Core F1 分数（最高达 83.1%），对 SSN 和金融数据等高危标识符依然高度有效，同时在特定领域实体检测方面提供了更出色的灵...
+2026-09-10 16:02:16
 
 
 
 ### [王梦迪：AI-尚未发现新的基础科学，关键在于构建物理世界的验证器](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247666942&idx=2&sn=9852c672d6b4d5e75a1b9ed102e7e347)
 
-2026-09-10 15:57:00 | 标签: AI研究前沿, 大语言模型 (LLM), 科学前沿, 强化学习, AI Agent
-
-> 在 2026 外滩大会上，普林斯顿大学王梦迪教授探讨了 AI 自主科学发现的瓶颈。她指出，大模型本质上是“最大似然（Mode Seeking）”的，倾向于高估常见情况而低估长尾分布，而科学创新往往源于长尾。与拥有编译器或形式化证明等明确“验证器”的编程和数学不同，物理、化学等实验学科因实验不可重复、缺乏闭环验证而难以利用强化学习快速迭代。为此，王梦迪团队正通过搭建自动化实验平台（如石墨烯实验 API）和开发科研实验室智能操作系统 LabOS，尝试将物理实验过程数字化、标准化，构建连接假设与验证的闭环基础设施，以推动 AI 从“似然性”走向“可能性”的探索。
+2026-09-10 15:57:00
 
 
 
 ### [面向多轮对话的智能体评估指标-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/agent-evaluation-metric-for-multi-turn-conversations/)
 
-2026-09-10 15:55:41 | 标签: AI 评估与基准, AI 智能体, AI 工作流, 模型训练与推理
-
-> Amazon Web Services 推出智能体评估指标（AEM），这是一个轮次级别的框架，将智能体的正确性分解为两个子指标——真实性和完整性——使每一轮都能被独立评分。文章解释了为何单轮评估会遗漏多轮对话中的级联错误，并概述了现有整体性指标的局限。AEM 的层级结构区分了回复轮和动作轮，对自然语言回复和工具调用应用相同的子指标。失败分类法记录了具体的根因标签（如 inconsistent_response、missing_parameters）以及一个 prior_action_failed 标志，用于隔离级联失败。文章详细介绍了一套可重复的评估流水线：将标注对话输入 AEM 评分器，该评...
+2026-09-10 15:55:41
 
 
 
 ### [AvioBook-如何借助-Amazon-Bedrock-AgentCore-从运营数据中构建过站洞察-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/how-aviobook-uses-generative-ai-to-drive-airline-turnaround-insights/)
 
-2026-09-10 15:53:05 | 标签: AI 智能体, AWS, 智能体编排, MCP 协议, 智能体记忆
-
-> 航班在登机口的每一分钟延误大约让航空公司损失 20 美元，一家每天执飞 200 个航班的中型航空公司，若将平均过站时间缩短两分钟，每月可节省约 240，000 美元。AvioBook 是泰雷兹集团旗下公司，构建了 AvioBook Connect，这是一个基于 flightroom 的平台，让飞行机组、客舱机组、签派和地面站运营人员协同完成每一次过站。问题在于：由此产生的带时间戳事件和消息档案，只有愿意手动滚动浏览并交叉比对的人才能用得上；延误代码只记录了主要延误；而历史查询需要许多航空公司并不具备的数据团队。AvioBook 在 Amazon Bedrock AgentCore 上原型化了 ...
+2026-09-10 15:53:05
 
 
 
 ### [这个新开源的世界模型只有-1.3B，单卡就能实时跑！](https://www.qbitai.com/2026/09/486716.html)
 
-2026-09-10 15:44:00 | 标签: 世界模型, 开源项目, 本地与端侧 AI, 模型训练与推理, LLM 推理优化
-
-> 蚂蚁灵波发布了其世界模型 LingBot-World 2.0 的 1.3B 轻量版，该模型专为消费级单卡 GPU 设计，能够实现本地实时世界生成，并已在 IFA 柏林消费电子展上获得 AMD 高管的认可。文章指出，与传统视频生成不同，世界模型需生成一个持续演进的世界。为实现长时高质量生成，LingBot-World 2.0 采用了 Causal World 模型进行因果预训练，并引入 MoBA（Mixture of Bidirectional and Autoregressive Attention Mask）来缓解长上下文过拟合和画质退化问题。为降低计算成本实现实时运行，团队进一步通过一致性...
+2026-09-10 15:44:00
 
 
 
 ### [GitHub---Chevey339/kelivo：一款-Flutter-LLM-聊天客户端，支持移动端与桌面端](https://github.com/Chevey339/kelivo)
 
-2026-09-10 15:37:08 | 标签: AI 产品与应用, 大语言模型, 开源, MCP 协议, 多模态 AI
-
-> Kelivo 是一款使用 Flutter 构建的跨平台 LLM 聊天客户端，面向 Android、iOS、Harmony、Windows、macOS 和 Linux。它支持 OpenAI、Google Gemini、Anthropic 等主流服务商，并提供自定义助手、多模态输入（图片、PDF、Word 文档）、带代码高亮与 LaTeX 的 Markdown 渲染，以及通过系统、OpenAI、Gemini 或 ElevenLabs 实现的语音与 TTS。它集成了 Model Context Protocol（MCP）并内置 Fetch 工具，同时整合了约十五个搜索引擎的网页搜索，包括 Bing、...
+2026-09-10 15:37:08
 
 
 
 ### [DeepSeek-AI-发布-DeepSeek-V4.1-Flash：100-万上下文、FP4-KV-缓存与跨层注意力复用](https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse/)
 
-2026-09-10 15:31:03 | 标签: DeepSeek, KV 缓存优化, 注意力机制, 长上下文, 模型发布
-
-> DeepSeek-V4.1-Flash 是一款多模态混合专家模型，围绕长时程智能体服务中的 KV 缓存瓶颈进行设计。它拥有 552B 主干参数加上 196B Engram 参数，上下文窗口达 100 万 token，预填充阶段每 token 激活 8B 参数，解码阶段激活 16B 参数。其全局 KV 缓存占用为每 token 890 字节，约为 V4-Flash 的四分之一，比 V1 小约 437 倍。40 层主干被拆分为 20 层因果编码器和 20 层解码器，灵感来自 YOCO，因此提示词 token 止于编码器，预填充计算量几乎减半。压缩稀疏注意力 2 为每一层分配三种模式之一（Full、...
+2026-09-10 15:31:03
 
 
 
 ### [打工人自述-Work-Agent-真实体验，工作交给了-AI-为什么还要忙半天？](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522610&idx=1&sn=0a15b0cd6520d11fb12e41fb855f5da7)
 
-2026-09-10 14:15:00 | 标签: AI Agent, AI 工作流, AI 商业化
-
-> 非凡产研对 500 多名用户进行的 Work Agent 使用调研揭示了当前 AI 办公助手的真实落地情况。近 88% 的受访者在最近 30 天使用过 Work Agent，其中 79.8% 表示过去四周每周都会使用，表明该类 Agent 已进入日常工作。用户主要让 Agent 完成查资料、撰写或修改文档、处理表格与 PPT、编写代码等任务，分别占比 71.9%、68.4%、50.9% 等。虽然 48.2% 的用户认为经少量修改后结果大部分可用，仍有 28.1% 直接可交付，说明产出仍需人工校对。成本、执行速度和核对工作是用户最头疼的三大问题，分别有 43.9%、36.0% 和 22.8% 的...
+2026-09-10 14:15:00
 
 
 
 ### [OpenAI-官方出品：GPT-Image-2.5-图像提示词指南](https://mp.weixin.qq.com/s?__biz=MzI2NzM4MTQwMg==&mid=2247498091&idx=1&sn=6f68bce68f5d8ee32beeedcec63cba0e)
 
-2026-09-10 13:30:00 | 标签: AI 产品与应用, OpenAI, 提示工程, 图像生成, AI 工作流
-
-> 本文介绍了 OpenAI 最新发布的图像生成模型 GPT Image 2.5，包含为速度优化的 Flare 模型和为画质优化的 Sunburst 模型。文章重点阐述了如何根据工作负载选择模型、API 参数配置规范，以及从旧模型迁移的实操流程。此外，作者通过多个实际案例（如摄影风格控制、信息图表、文字渲染、Logo 设计、历史场景还原、漫画分镜及 UI 界面设计），演示了如何通过结构化的提示词和迭代策略，提升图像生成的精准度与可控性。
+2026-09-10 13:30:00
 
 
 
 ### [一张-1200-刀-AI-账单，逼着硅谷集体转向开放权重模型](https://mp.weixin.qq.com/s?__biz=MzA5NjMzODEwNQ==&mid=2650597541&idx=1&sn=d8547c20c9f14c49d774659b246b7de6)
 
-2026-09-10 13:14:00 | 标签: 开放权重模型, AI 商业化, AI Agent, AI 工作流, 科技行业分析
-
-> 文章从 Uber 工程团队使用 Claude Code 的真实账单切入：两小时编程会话花掉 1200 美元，重度用户月账单 500 到 2000 美元，原计划用一年的 AI 预算四个月见底，特斯拉随后也把工程师外部 AI 工具开支限制在每周 200 美元。作者认为这不是个案，而是闭源 API 按 Token 计费模式与 Agentic AI 工作方式互相放大的系统性风险——Agent 会自主拆解任务、调用工具、迭代重试，一次需求可能触发几十次模型调用，而只有 43% 的企业建立了 AI 工具治理策略。文章用三层框架展开：成本失控是引信，控制权焦虑是燃料，开放权重模型是替代方案。价格上 Qwen...
+2026-09-10 13:14:00
 
 
 
 ### [随机注意力移除评分环节，吞吐量翻倍](https://dev.to/olaughter/random-attention-removes-scoring-doubles-throughput-351p)
 
-2026-09-10 13:00:00 | 标签: KV 缓存优化, 性能优化, 大语言模型, LLM 推理, AI 工程
-
-> 该论文介绍了随机注意力，一种在 LLM 推理过程中移除传统上用于决定 KV 缓存中保留哪些 token 的二次评分步骤的方法。通过在每个注意力头内均匀随机地淘汰 token 且不计算任何相关性分数，淘汰操作简化为简单的内存压缩，从而降低了延迟和内存带宽开销。在从 Qwen3-4B 到 32B 以及 Phi-4-reasoning 等模型上、跨六个推理基准的实验中，vLLM 部署中的每秒 token 吞吐量提升高达 43%，同时在 60 次头对头比较中有 31 次达到或超过现有最佳淘汰策略，精度仅下降几个百分点。该方法无需模型微调，可作为即插即用替代品（`random_pp` 模块）插入 Hug...
+2026-09-10 13:00:00
 
 
 
@@ -53716,41 +53648,31 @@
 
 ### [《Agent-评测白皮书》系列-01：Agent-评测全览](https://tech.meituan.com/2026/09/10/Agent-Evaluation-White-Paper-01.html)
 
-2026-09-10 18:20:08 | 标签: AI Agent, 模型评测与基准, 可观测性, 大语言模型 (LLM), 美团
-
-> 本文是《Agent 评测白皮书》系列第一篇，面向 Agent 产品、研发、算法、运营与评测负责人。文章先指出一个割裂现状：基座模型能力进化与 Agent 框架功能丰富让搭建 Agent 的门槛持续降低，但真正走完冷启动、灰度扩量到全量的项目屈指可数，掌握评测认知的人极其稀缺，大量项目死于停在 Demo、卡在扩量、说不清业务价值三种模式，共同点是缺少可靠的判断机制。为此作者提出完备评测体系可概括为「四个模块、三种能力、两条 Loop、一套资产」：四个模块为离线评测（变更门控）、在线评测与在线监控（真实世界反馈）、Case 挖掘与归因（驱动双环演进的枢纽）、观测基建（一切的地基）；三种能力为发现问...
+2026-09-10 18:20:08
 
 
 
 ### [规范驱动开发何时能产生价值](https://www.infoq.com/articles/when-spec-driven-development-pays-off/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-10 17:00:00 | 标签: 规范驱动开发, AI 编程, 代码质量, 测试与质量, 治理
-
-> 文章指出，随着 AI 编程助手的出现，瓶颈已从编写代码转向验证代码，这使得监督问题转变为治理问题。作者展示了一项受控的受试者内研究（已被 GAISS 2026 接收），五名经验丰富的评审人员分别两次评审真实的 AI 生成银行服务：一次基于已批准的规范、HLD（高层设计）和 LLD（低层设计）基准，另一次仅基于公开 API。结果显示，召回率在统计学上没有显著差异（0.525 vs. 0.518， p=0.69），但对特定不变性的归因从 0% 跃升至 81%（p=0.043），置信度也有所提高（4.2 vs. 3.4），而评审时间几乎翻倍（48.4 vs. 26.7 分钟）。通过三个 LLM 评审...
+2026-09-10 17:00:00
 
 
 
 ### [Agent-如何自己变强？从-Skill-到模型权重的进化全景图](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247562373&idx=1&sn=b2afbd481dd9cbddc533641633f4bbe3)
 
-2026-09-10 13:59:00 | 标签: AI Agent, 强化学习, 模型训练与推理, Agent编排, 系统设计
-
-> 文章首先定义了 Agent 自进化（Self-Evolution）的概念，指出其核心在于建立"执行→反馈→优化改进→再执行"的闭环机制，进化对象涵盖 Prompt、Skill、记忆及工作流等非参数化组件。然后从"进化什么"和"如何进化"两个维度展开：在 Agent 系统进化层面，详细介绍了 Trace2Skill（通过批量轨迹分析生成可泛化 Skill）、EvoSkill（执行→提案→构建→验证闭环）、SkillOpt（将 Skill 文本类比为可训练参数）、coEvoSkill（生成者与验证者协同进化）、SkillRL（强化学习与 Skill 蒸馏融合）、D2Skill（双粒度技能建模）等 ...
+2026-09-10 13:59:00
 
 
 
 ### [Juicebox-与-Gem：2026-年哪款-AI-招聘工具最适合您的团队？](https://www.sitepoint.com/juicebox-vs-gem-ai-recruiting/?utm_source=rss)
 
-2026-09-10 13:35:32 | 标签: AI 招聘, SaaS, 人力资源技术, 产品对比, AI 治理
-
-> 本指南比较了 Juicebox 与 Gem 两款 AI 招聘工具，它们在设计上根本不同。Juicebox 是一款 AI 原生招聘平台，专注于寻找并接触全新候选人，内置招聘 CRM、自治智能体以及包含薪酬数据、人才流动映射和温暖引荐路径的智能层。Gem 则是一个全能招聘套件，涵盖 ATS、CRM、招聘、日程安排与分析，其最强 AI 功能被锁定在高价层级。文章从产品类型、核心优势、搜索模型、AI 智能体、价值实现时间、智能层、治理以及最佳团队配置等维度进行对比。它强调 Juicebox 在首日即实现自助生产力、公开 AI 偏见审计（Warden AI）以及 ISO 42001 预备状态，而 Gem...
+2026-09-10 13:35:32
 
 
 
 ### [Hugo-Vergnes-|-Training-a-3.8B-LLM-to-0.384-CORE-for-$998](https://hugovergnes.github.io/little-lm-3-8b/)
 
-2026-09-10 10:04:11 | 标签: 大型语言模型, AI研究前沿, NVIDIA, AI硬件与芯片
-
-> The article details a $998 experiment that trains a 3.8‑billion‑parameter language model to achieve a 0.384 CORE score using a config‑driven framework. It describes the setup， early experiments， and a series of technical improvements such as trapezoidal learning‑rate schedules， Muon optimizer for ma...
+2026-09-10 10:04:11
 
 
 
