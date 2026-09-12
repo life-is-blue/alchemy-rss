@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-12 10:04:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-12 16:14:38 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -518,9 +518,7 @@
 
 ### [2026-年基础设施领域五大开源自托管开发者工具](https://dev.to/roberts_jakuko_fbc04cb38/top-5-open-source-self-hosted-developer-tools-for-2026-infrastructure-3doj)
 
-2026-09-12 01:27:44 | 标签: 开发者工具, 自托管, Go, Rust, Node.js
-
-> 文章阐述了自主可控开发者基础设施这一趋势日益兴起的背景，包括云成本上涨、供应商锁定以及数据主权需求。随后介绍了五款开源自托管工具，它们共同构成一套稳健、低维护成本的技术栈：Caddy 提供零配置反向代理与自动 TLS；Forgejo 是一款轻量级、社区治理的 Git 托管平台，内置 CI/CD 和包注册表；Vaultwarden 是基于 Rust 的超轻量级 Bitwarden 兼容密钥管理器；Uptime Kuma 是基于 Node.js 的监控引擎，支持多协议探测和丰富的通知集成；MinIO 是高性能、S3 兼容的对象存储平台。每个部分都详细介绍了核心架构、领先优势以及关键运维优势。文章还...
+2026-09-12 01:27:44
 
 
 
@@ -772,9 +770,7 @@
 
 ### [tsgolint-发布稳定版-v7，为-Oxlint-带来基于-Go-的类型感知-Lint-检查](https://www.infoq.com/news/2026/09/tsgolint-oxlint-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-11 20:02:00 | 标签: TypeScript, Oxlint, 性能优化, 开发者工具, Go
-
-> 面向 Rust 编写的 Oxlint 的类型感知 Lint 引擎 tsgolint 已发布稳定版 v7。它集成了 TypeScript 编译器的官方 Go 移植版 (typescript-go) 来处理语义分析规则，覆盖了 61 条 typescript-eslint 规则中的 59 条。基准测试显示，其速度比 ESLint 搭配 typescript-eslint 快 12 到 18 倍。此次发布将其版本号与 TypeScript 7.0.2 对齐，并引入了单条规则耗时统计和 ESLint 迁移工具等功能，但要求项目必须使用 TypeScript 7.0+，且不支持部分旧版 tsconfig...
+2026-09-11 20:02:00
 
 
 
