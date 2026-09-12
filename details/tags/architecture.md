@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-12 07:42:51 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-12 10:04:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -33,6 +33,14 @@
 ### [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-08 00:00:00
+
+
+
+### [如何将-LEGO-架构应用于-Flutter-完整手册](https://www.freecodecamp.org/news/how-to-implement-lego-architecture-in-flutter-handbook/)
+
+2026-09-11 23:08:19 | 标签: Dart & Flutter, 系统设计, 代码质量, 移动开发, Clean Architecture
+
+> 该手册介绍了“LEGO 架构”——一种将 Flutter 代码构建为 LEGO 砖块的习惯：每个单元仅暴露标准化连接点（契约），并隐藏其内部。从 Widget 层级开始，通过将可复用 SurfaceCard 从 PriceTag 中提取出来，展示了砖块与插销的原理；然后将这一理念扩展到类（通过抽象契约如 CartWriter）、文件夹（通过基于功能的组织和桶文件）以及模块（通过仓库和服务定位器）。手册还提供了 Clean Architecture 的速成课程，比较了两者，并详细说明了如何在模块化单仓中使用 Melos、路径依赖和可交换状态管理来合并两者。其中包含一个完整的 products 功...
 
 
 

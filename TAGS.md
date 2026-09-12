@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-12 07:42:51 | [返回首页](/README.md)
+**更新时间**: 2026-09-12 10:04:41 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15822)
-- [软件架构](#architecture) (25)
-- [前端与全栈](#frontend-fullstack) (985)
+- [AI & 大模型](#ai-llm) (15866)
+- [软件架构](#architecture) (26)
+- [前端与全栈](#frontend-fullstack) (987)
 - [DevOps](#devops) (754)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6899)
+- [其他](#other) (6908)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [快速扩展在线存储以服务超过-10-亿-ChatGPT-用户](https://openai.com/index/scaling-storage-one-billion-users-part-one) - AI 精选
 - [DeepSeek-V4.1-Flash-技术报告深度解读：长程-Agent-如何重新分配预算](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650454187&idx=1&sn=73df03e5b3d9389d62f86ef859dd7c42) - AI 精选
 - [DeepSeek-V4.1-Flash：更强、更快、更普惠](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485817&idx=1&sn=627dd80114901f3fd8717e2c13feaf6a) - AI 精选
 - [推出-ChatGPT-Images-2.5](https://openai.com/index/introducing-chatgpt-images-2-5) - AI 精选
@@ -41,9 +42,8 @@
 - [赋能关于人类如何使用-Claude-的独立研究](https://www.anthropic.com/research/enabling-independent-research) - AI 精选
 - [SaaS-的未来是智能体可用的应用](https://www.latent.space/p/lovable-future-of-saas) - AI 精选
 - [Jalapeño-首次结果展示-AI-推理领域领先的速度与效率](https://openai.com/index/jalapeno-first-results) - AI 精选
-- [吴恩达来信：AI-工程技能图谱详解——构建和部署-AI-应用](https://mp.weixin.qq.com/s?__biz=MzIxNzI0ODE4Nw==&mid=2247498786&idx=1&sn=9b051f71952a42e91973e7e1e92a24ec) - AI 精选
 
-- [查看全部 15822 篇...](/details/tags/ai-llm.md)
+- [查看全部 15866 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -56,6 +56,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [如何将-LEGO-架构应用于-Flutter-完整手册](https://www.freecodecamp.org/news/how-to-implement-lego-architecture-in-flutter-handbook/) - 编程 更多
 - [理解渐进式坍塌：如何避免连锁故障](https://www.infoq.com/presentations/progressive-collapse-system-resilience/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [读取路径-与-写入路径：策略与技术](https://blog.bytebytego.com/p/the-read-path-versus-the-write-path) - 编程 更多
 - [超越-CLEAN-与-MVP：在-Android-中构建离线优先的响应式数据层](https://www.infoq.com/articles/rdla-offline-first-reactive-android-data-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
@@ -70,9 +71,8 @@
 - [我为什么不喜欢-DDD](https://juejin.cn/post/7565732382312005658) - 编程 更多
 - [基于-CQRS-的-Netflix-Tudum-如何支持-2000-万用户](https://blog.bytebytego.com/p/how-netflix-tudum-supports-20-million) - 编程 更多
 - [Netflix-通过-RAW-Hollow-内存对象存储优化-Tudum-的-CQRS-架构](https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
-- [从小不学好-，影刀-+-ddddocr-实现图片验证码认证自动化](https://juejin.cn/post/7531696180239466531) - 编程 更多
 
-- [查看全部 25 篇...](/details/tags/architecture.md)
+- [查看全部 26 篇...](/details/tags/architecture.md)
 
 
 ## <a id="frontend-fullstack"></a>前端与全栈
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 985 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 987 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6899 篇...](/details/tags/other.md)
+- [查看全部 6908 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_bdb5b3155b",
+  "title": "LinkedIn 如何通过多教师蒸馏使 AI 职位搜索训练速度提升 8 倍",
+  "url": "https://www.infoq.com/news/2026/09/linkedin-ai-multi-teacher/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-11 18:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>LinkedIn has <a href=\"https://www.linkedin.com/blog/engineering/infrastructure/the-training-infrastructure-behind-ai-powered-job-search-eight-x-faster-multi-teacher-distillation\">published</a> details of the training infrastructure behind its AI-powered job search, describing a multi-teacher distillation pipeline that compresses knowledge from large teacher models into a compact 0.6B-parameter ranking model. The main contribution isn’t just the distillation technique. It’s the systems work that makes it fast enough for iteration. This includes a custom framework built on <a href=\"https://github.com/sgl-project/sglang\">SGLang</a>, which serves teacher models directly in the training loop.</p>\n   <p>Training a <a href=\"https://en.wikipedia.org/wiki/Small_language_model\">small language model </a>(SLM) to improve relevance and engagement goals, like clicks and applications, requires querying one or more large teacher models for each training example. Serving those teachers can slow down the process. This becomes a bottleneck for a ranking system that must handle hundreds of thousands of queries per second at LinkedIn's scale. Many search and recommendation teams face a common challenge. They struggle to shift from keyword-based systems to unified rankers that are supervised by LLMs.</p>\n   <p>LinkedIn created a multi-teacher distillation framework using SGLang. This system loads and serves teacher models of different sizes. It also manages tensor-parallel and data-parallel setups. An asynchronous client asks teachers during training. It processes their outputs and adds them to the distillation losses. The team calls this method Online Multi-teacher Distillation. Scaling this across several nodes with local teacher replicas accelerated the distillation process by 3x. It also kept latency low, allowing for quick iterations. To reduce serving overhead and prevent repeated calculations, LinkedIn introduced Offline Multi-teacher Distillation. In this mode, the system precomputes teacher outputs and stores them on HDFS or NFS. Then, they are used directly in training instead of being queried in real time.</p>\n   <p>&nbsp;</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/linkedin-ai-multi-teacher/news/2026/09/linkedin-ai-multi-teacher/en/resources/11785962824387-1789047328988.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/linkedin-ai-multi-teacher/en/resources/11785962824387-1789047328988.jpg\" rel=\"share\">\n   </center>\n   <center>\n    <small>Full pipeline for teachers/student training</small>\n   </center>\n   <p>That online/offline split sits alongside a broader stack of training-level optimizations: adopting <a href=\"https://github.com/linkedin/Liger-Kernel/\">LiGer</a> to reduce memory usage and enable 2x larger batch sizes, multi-node training for up to 3.5x additional speedup, FSDP2 for a further 20% gain, and H200 multi-node clusters for up to 30% more on top of that. The team notes it evaluated FP8 mixed precision but found no benefit for models under 8B parameters, due to casting overhead outweighing any compute savings. Stacked together, these optimizations are what account for the roughly eightfold training speedup referenced in the post's title.</p>\n   <p>On the modeling side, LinkedIn's research <a href=\"https://www.linkedin.com/blog/engineering/search/reimagining-linkedins-search-stack\">shows</a> that the 0.6B student model improved job search results. This model comes from an 8B relevance oracle and a 1.7B engagement teacher. It raised NDCG@10 for job searches by 24.48%, going from 0.7583 to 0.9432. Inference-side work in the same research included structured pruning and context compression. These methods increased ranking throughput from about 290 to over 2,000 items per second per GPU.</p>\n   <p>The system is live in production, powering natural-language job search for LinkedIn's US users. It's built on SGLang, the open-source LLM serving engine LinkedIn has invested in for prior ranking workloads, rather than a proprietary serving stack. LinkedIn presents this work as a guide for teams. It helps them achieve cross-encoder-quality ranking while meeting real-time latency needs. Plus, it avoids high costs from using frontier-LLM inference for every request.</p>\n   <p>Teams creating similar LLM-supervised ranking systems can use the online/offline teacher-serving split. They can query online in early stages when teacher choices change. Then, they can switch to offline caching once teachers stabilize and query volume increases. The gains are compounding, not just one trick. LiGer, multi-node data parallelism, FSDP2, and newer GPU generations each add a moderate boost. Also, none of this needed FP8 for sub-8B model sizes. This detail is important for teams considering lower precision by default.</p>\n   <p>In June 2026, Pinterest released a related account called<a href=\"https://medium.com/pinterest-engineering/achieving-near-linear-training-scalability-for-pinterests-foundation-models-14d4f59fe6f6\"> Achieving Near-Linear Training Scalability for Pinterest's Foundation Models</a>. This article explained how multi-node training helped create larger teacher models. These models' knowledge was then distilled into more efficient student models for the Homefeed and Related Pins ranking. This process reduced experimentation cycles from weeks to just a fraction of that time. LinkedIn's role is to create a custom SGLang framework, allowing teachers to be queried live during training.</p>\n   <p>Pinterest focuses on scaling the training framework and is migrating to Distributed Checkpoint, making multi-node teacher training possible. A recent survey,<a href=\"https://huggingface.co/blog/sergiopaniego/distillation-2026\"> Distillation in 2026 (so far): which frontier models use it and how</a>, highlights advancements in multi-teacher distillation. It features <a href=\"https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/\">NVIDIA's Nemotron 3 Ultra</a>, <a href=\"https://github.com/xiaomimimo/MiMo-V2-Flash\">MiMo-V2-Flash</a>, and <a href=\"https://arxiv.org/abs/2606.19348\">DeepSeek-V4,</a> which utilize ten or more specialized teachers for dense, token-level supervision. This teacher-pool complexity exceeds the needs of industrial ranking systems like LinkedIn’s and Pinterest’s, which use fewer, task-specific teachers.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How LinkedIn Trains AI Job Search 8x Faster with Multi-Teacher Distillation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/linkedin-ai-multi-teacher/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789120800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "LinkedIn 工程博客详细介绍了基于自定义 SGLang 的多教师蒸馏管道，结合堆叠训练优化，使 0.6B 职位搜索排名模型训练速度提升约 8 倍，同时 NDCG@10 提升 24.48%。",
+  "oneSentenceSummary": "LinkedIn 工程博客详细介绍了基于自定义 SGLang 的多教师蒸馏管道，结合堆叠训练优化，使 0.6B 职位搜索排名模型训练速度提升约 8 倍，同时 NDCG@10 提升 24.48%。",
+  "summary": "LinkedIn 发布了其 AI 驱动的职位搜索背后的训练基础设施，该设施将一个 8B 相关性预言模型和一个 1.7B 参与度教师模型的知识蒸馏到一个紧凑的 0.6B 排名模型中。核心工程贡献是一个基于 SGLang 的自定义框架，它在训练循环内直接服务教师模型，并通过异步客户端支持张量并行和数据并行配置。LinkedIn 将教师服务分为两种模式：在线多教师蒸馏，通过跨节点的本地副本实时查询教师并获得 3 倍加速；离线多教师蒸馏，将教师输出预先计算并存储到 HDFS 或 NFS，以避免重复计算，适用于教师选择稳定且查询量增长的后期阶段。这些与 LiGer（实现 2 倍更大批次）、多节点训练（最高 3.5 倍加速）、FSDP2（提升 20%）以及 H200 集群（最高 30% 加速）叠加使用，共同实现约八倍的训练速度提升。该 0.6B 学生模型使职位搜索的 NDCG@10 从 0.7583 提升至 0.9432，而推理端的剪枝和上下文压缩将排名吞吐量从大约每秒每 GPU 290 项提升至超过 2，000 项。该系统已在美国用户中上线，文章还将其与 Pinterest 相关的多节点教师训练工作进行对比。",
+  "mainPoints": [
+    {
+      "point": "主要贡献在于系统工程，而非蒸馏技术本身：在训练循环内直接服务教师模型才是实现快速迭代的关键。",
+      "explanation": "在 LinkedIn 每秒数十万次查询的规模下，为每个训练样本查询大型教师模型成为瓶颈；因此，基于 SGLang 的自定义框架通过张量并行和数据并行管理以及异步客户端，加载并服务不同规模的教师模型。"
+    },
+    {
+      "point": "LinkedIn 将教师服务划分为在线和离线两种模式，以在延迟与重复计算之间取得平衡。",
+      "explanation": "在线多教师蒸馏实时查询教师，通过跨节点的本地副本实现 3 倍加速；离线多教师蒸馏则将教师输出预先计算并存储到 HDFS 或 NFS，随后复用，适用于教师选择已稳定且查询量持续增长的后期阶段。"
+    },
+    {
+      "point": "约 8 倍的训练速度提升是叠加效应，源于多项叠加优化而非单一技巧。",
+      "explanation": "LiGer 使批次大小提升 2 倍，多节点训练最高可增加 3.5 倍，FSDP2 提供 20% 的提升，而 H200 多节点集群最高可再增加 30%；值得注意的是，对于低于 8B 参数的模型，FP8 混合精度未带来收益，因为类型转换的开销抵消了任何潜在的计算节省。"
+    },
+    {
+      "point": "蒸馏得到的 0.6B 学生模型在生产环境中实现了可测量的质量和吞吐量提升。",
+      "explanation": "该模型由一个 8B 相关性预言模型和一个 1.7B 参与度教师模型蒸馏而得，使职位搜索的 NDCG@10 从 0.7583 提升至 0.9432（提升 24.48%），同时通过结构化剪枝和上下文压缩，排名吞吐量从大约每秒每 GPU 290 项提升至超过 2，000 项。"
+    },
+    {
+      "point": "LinkedIn 的方法在教师池复杂度方面与 Pinterest 以及前沿模型的蒸馏方式有所不同。",
+      "explanation": "Pinterest 侧重于扩展训练框架并迁移到分布式检查点以进行多节点教师训练；而像 Nemotron 3 Ultra、MiMo-V2-Flash 和 DeepSeek-V4 这样的前沿模型则使用十个或更多专门的教师模型，这超过了工业排名系统（如 LinkedIn 和 Pinterest）所需的规模。"
+    }
+  ],
+  "keyQuotes": [
+    "主要贡献不仅仅是蒸馏技术，而是使其能够快速迭代的系统工程。",
+    "团队指出他们评估了 FP8 混合精度，但发现对于低于 8B 参数的模型没有收益，因为类型转换的开销抵消了任何潜在的计算节省。",
+    "这些提升是叠加效应，而非单一技巧。",
+    "它使职位搜索的 NDCG@10 提升了 24.48%，从 0.7583 增至 0.9432。",
+    "这种教师池的复杂度超过了像 LinkedIn 和 Pinterest 这样的工业排名系统所需的规模，后者使用的教师更少且更具任务特异性。"
+  ],
+  "tags": [
+    "模型蒸馏",
+    "大语言模型推理",
+    "SGLang",
+    "模型训练与推理",
+    "大语言模型"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 736,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789120800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-11 18:00:00"
+}

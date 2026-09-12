@@ -1,0 +1,62 @@
+{
+  "id": "RAW_ff4f5461d5",
+  "title": "Beren Millidge、John Schulman、Charlie O'Neill 对谈：递归自我改进离我们还有多远 · AIHOT",
+  "url": "https://aihot.news/items/cmtx7e9sn09mmroedph6hkyx4",
+  "date": "2026-09-12 00:28:11",
+  "author": "noreply@aihot.news (Dwarkesh Patel：Podcast & Blog（RSS）)",
+  "siteName": "AIHOT — 精选",
+  "content": null,
+  "aiSummary": "三位 AI 研究者深入探讨了递归自我改进（RSI）的技术瓶颈、中国实验室的追赶路径，以及自动化 AI 研究员将如何被训练。",
+  "oneSentenceSummary": "三位 AI 研究者深入探讨了递归自我改进（RSI）的技术瓶颈、中国实验室的追赶路径，以及自动化 AI 研究员将如何被训练。",
+  "summary": "Dwarkesh Patel 召集了 Beren Millidge（Zyphra CTO）、John Schulman（Thinking Machines 首席科学家、OpenAI 联合创始人）和 Charlie O'Neill（Baseten 模型训练负责人）三位研究者，围绕递归自我改进（RSI）展开深度对谈。讨论涵盖：2036 年未出现超级智能的最可能技术原因（持续学习难题、仿真到现实差距、泛化瓶颈）；中国实验室如何通过路由服务获取提示词分布进行知识蒸馏，以及真实部署数据为何比 RL 环境更重要；自动化 AI 研究员将如何通过人类反馈与多步骤研究环境组合训练；长时程 RL 能否催生 AGI，以及 sim-to-real 范式的局限与持续学习的终极目标。",
+  "mainPoints": [
+    {
+      "point": "RSI 的最大技术障碍可能不是算力或算法，而是持续学习与元学习泛化能力的缺失。",
+      "explanation": "Beren Millidge 指出，如果元学习的泛化难度极高，加上持续学习问题无法解决，AI 可能只是在基准测试任务上表现极其出色，却始终存在仿真到现实（sim-to-real）的差距，无法形成自我驱动的自动化循环。"
+    },
+    {
+      "point": "知识蒸馏是抵抗模型提供商集中化的主要力量，但真实提示词分布比 logit 蒸馏更重要。",
+      "explanation": "John Schulman 认为任何可通过 RL 学到的东西都能被轻易蒸馏。中国公司通过路由服务获取美国前沿模型的真实用户提示词分布，这比单纯获取模型权重更有价值。"
+    },
+    {
+      "point": "自动化 AI 研究员的训练将采用人类反馈与多步骤研究环境组合的方式，而非简单的自我对弈。",
+      "explanation": "John Schulman 和 Charlie O'Neill 认为，实践中会从人类反馈中吸收研究人员的品味，同时创建大量涉及多步骤研究项目的练习环境，每一轮迭代都旨在修补上一轮中问题最大的部分。"
+    },
+    {
+      "point": "sim-to-real 范式在样本效率低时必然主导，但长期来看从部署中学习将成为更大组成部分。",
+      "explanation": "Beren Millidge 指出，当前需要与人类进行成千上万次交互，没人会坐在那里参与 RL 训练循环，因此必须进行模拟。但如果样本效率大幅提升，从部署中学习将变得更加重要。"
+    },
+    {
+      "point": "对齐是最后的工作，定义目标并决定我们真正想要什么将是持续时间最长的人类角色。",
+      "explanation": "John Schulman 认为，即便 AI 能完成所有技术性工作，我们仍然需要决定 AI 助手应该如何表现、什么才叫有帮助，以及模型规范应该是什么。"
+    }
+  ],
+  "keyQuotes": [
+    "对齐是最后的工作。",
+    "我认为知识蒸馏是抵抗集中化力量的主要因素。基本上任何可以通过 RL 学到的东西都可以非常容易地被蒸馏，因为它只有很少的比特。",
+    "如果你只是基于轨迹做知识蒸馏，你永远无法超越它。但环境可以远远超出人类能做到的水平。",
+    "我认为，人类最后的工作，或者说持续时间最长的人类角色，是定义目标并决定我们真正想要什么。",
+    "如果你真的期望模型具备像人一样在工作中学习的能力，那你为什么要试图把使用 PowerPoint 之类的所有这些技能都预先烘焙进去呢？"
+  ],
+  "tags": [
+    "Recursive Self-Improvement",
+    "AI Research Frontier",
+    "Continual Learning",
+    "Model Distillation",
+    "Reinforcement Learning"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 120,
+  "score": 88,
+  "wordCount": 29989,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789144091000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-12 00:28:11"
+}

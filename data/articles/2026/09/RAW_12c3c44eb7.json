@@ -1,0 +1,56 @@
+{
+  "id": "RAW_12c3c44eb7",
+  "title": "tsgolint 发布稳定版 v7，为 Oxlint 带来基于 Go 的类型感知 Lint 检查",
+  "url": "https://www.infoq.com/news/2026/09/tsgolint-oxlint-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-11 20:02:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://github.com/oxc-project/tsgolint\">tsgolint</a>, the type-aware linting engine behind <a href=\"https://oxc.rs/docs/guide/usage/linter\">Oxlint</a>, has reached a stable <a href=\"https://oxc.rs/blog/2026-07-22-type-aware-linting-stable\">v7 release</a>, bringing native Go speed to the TypeScript lint rules that teams have long run through ESLint.</p>\n   <p>tsgolint handles the rules that need TypeScript semantic analysis, the ones that answer questions such as whether a promise is ever awaited. Rather than reimplementing a type checker, it builds real TypeScript programs on top of <a href=\"https://github.com/microsoft/typescript-go\">typescript-go</a>, the official Go port of the compiler that ships as <a href=\"https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/\">TypeScript 7</a>. <a href=\"https://github.com/oxc-project/oxc\">Oxlint</a>, written in Rust, handles file discovery, configuration and the cheap syntactic rules, then passes the type-aware work to the Go binary, which returns structured diagnostics. The release tracks TypeScript v7.0.2 and covers <a href=\"https://github.com/oxc-project/tsgolint\">59 of typescript-eslint's 61</a> type-aware rules, up from 43 at the <a href=\"https://voidzero.dev/posts/announcing-oxlint-type-aware-linting-alpha\">December alpha</a>.</p>\n   <p>Getting started takes two commands:</p>\n   <pre>\r\n<code class=\"language-bash\">pnpm add -D oxlint oxlint-tsgolint@7\r\npnpm oxlint --type-aware\r\n</code></pre>\n   <p>Adding <code>--type-check</code> reports compiler errors alongside lint diagnostics from the same TypeScript program, and both flags can be pinned in an <code>oxlint.config.ts</code> or <code>.oxlintrc.json</code> file. The release also adds per-rule timings, surfaced with <code>oxlint --type-aware --debug</code> timings, so teams can see which type-aware rules dominate a run. The team's benchmarks put the stable build at 12 to 18 times faster than ESLint with typescript-eslint across <code>microsoft/vscode</code>, <code>microsoft/typescript</code>, <code>typeorm</code> and <code>vuejs/core</code> on an Apple M4 Pro.</p>\n   <p>Writing before the release, Jökull Sólberg <a href=\"https://www.solberg.is/fast-type-aware-linting\">concluded</a> that \"Oxlint is making the right long-term bet,\" reasoning that aligning with tsgo inherits \"every future optimisation the TypeScript team ships, while keeping the rule surface identical to typescript-eslint.\" The same argument runs through a <a href=\"https://github.com/biomejs/biome/discussions/7009\">Biome discussion</a> weighing whether Biome should adopt typescript-go too. <a href=\"https://biomejs.dev/blog/biome-v2/\">Biome v2</a> synthesises its own types without the compiler, and <a href=\"https://blogs.abhipanseriya.dev/blog/typescript-eslint-owns-typed-linting-oxlint-and-biome-are-coming-from-opposite-directions\">one analysis</a> puts its <code>noFloatingPromises</code> rule at roughly 75 percent of the cases <code>typescript-eslint</code> catches, a gap it notes Vite creator Evan You has publicly questioned.</p>\n   <p>The typescript-eslint team, whose contributor auvred created the original prototype, still calls its own <a href=\"https://github.com/typescript-eslint/tsgolint\">tsgolint fork</a> an experiment that is \"not under active development.\" On the oxc side, correctness is still being refined, with users filing reports such as <a href=\"https://github.com/oxc-project/tsgolint/issues/1044\">one</a> where an autofix removed a type assertion that tsc actually required.</p>\n   <p>ESLint users can run <code>npx @oxlint/migrate --type-aware</code> to translate an existing config, following the <a href=\"https://oxc.rs/docs/guide/usage/linter/migrate-from-eslint\">migrate-from-eslint guide</a>. The catch is the dependency, because <a href=\"https://oxc.rs/docs/guide/usage/linter/type-aware\">type-aware linting</a> needs TypeScript 7.0 or later, some legacy tsconfig options such as baseUrl are unsupported, and projects using removed TypeScript 6 features have to migrate first.</p>\n   <p>The jump straight from the experimental 0.x line to a stable v7 is a deliberate change, because tsgolint is now versioned against the compiler it embeds, v7.0.2000 aligns with TypeScript 7.0.2. Work now focuses on the final rules, editor integration and monorepo performance.</p>\n   <p>Linting is the static-analysis step that flags likely bugs and enforces conventions before code runs, and its most expensive tier is type-aware linting, which needs a real model of a program's types to answer questions a single file cannot.</p>\n   <p>Oxlint is the linter in oxc, a suite of Rust-based JavaScript tools developed under VoidZero, the company Evan You founded to consolidate a famously fragmented toolchain, and tsgolint is the piece that lets it reach for the real compiler rather than reimplement one. Its stable release lands amid a wider rewrite of that toolchain in native languages, from bundlers and formatters to the TypeScript compiler itself.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"tsgolint Reaches Stable v7, Bringing Go-Powered Type-Aware Linting to Oxlint\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/tsgolint-oxlint-typescript/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789128120000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "tsgolint v7 正式发布，通过利用官方的 typescript-go 编译器移植版，使 Oxlint 能够以 Go 原生速度为 TypeScript 提供类型感知 Lint 检查。",
+  "oneSentenceSummary": "tsgolint v7 正式发布，通过利用官方的 typescript-go 编译器移植版，使 Oxlint 能够以 Go 原生速度为 TypeScript 提供类型感知 Lint 检查。",
+  "summary": "面向 Rust 编写的 Oxlint 的类型感知 Lint 引擎 tsgolint 已发布稳定版 v7。它集成了 TypeScript 编译器的官方 Go 移植版 (typescript-go) 来处理语义分析规则，覆盖了 61 条 typescript-eslint 规则中的 59 条。基准测试显示，其速度比 ESLint 搭配 typescript-eslint 快 12 到 18 倍。此次发布将其版本号与 TypeScript 7.0.2 对齐，并引入了单条规则耗时统计和 ESLint 迁移工具等功能，但要求项目必须使用 TypeScript 7.0+，且不支持部分旧版 tsconfig 选项。",
+  "mainPoints": [
+    {
+      "point": "tsgolint v7 通过桥接 Rust 和 Go 实现了高性能的类型感知 Lint 检查",
+      "explanation": "Oxlint (Rust) 负责处理语法规则和配置，而 tsgolint (Go) 则利用官方的 typescript-go 编译器移植版执行高开销的语义分析，从而避免了重新实现类型检查器的需求。"
+    },
+    {
+      "point": "相比行业标准的 ESLint 配置，性能提升显著",
+      "explanation": "在 Apple M4 Pro 上的基准测试显示，在 VS Code 和 Vue.js 等大型项目中，tsgolint 比 ESLint 搭配 typescript-eslint 的组合快 12 到 18 倍。"
+    },
+    {
+      "point": "与 typescript-eslint 具有极高的规则一致性，但存在特定的版本限制",
+      "explanation": "它目前覆盖了 typescript-eslint 61 条类型感知规则中的 59 条，但要求项目使用 TypeScript 7.0 或更高版本，并需要从 baseUrl 等某些旧版 tsconfig 选项迁移。"
+    },
+    {
+      "point": "与 JS 工具链的原生语言重写趋势保持战略一致",
+      "explanation": "通过采用 typescript-go，Oxlint 可以继承 TypeScript 团队未来的优化成果，这符合将 JavaScript 工具（打包工具、格式化工具、编译器）迁移到 Rust 和 Go 等原生语言的广泛趋势。"
+    }
+  ],
+  "keyQuotes": [
+    "「tsgolint... 已发布稳定版 v7，为团队长期以来通过 ESLint 运行的 TypeScript Lint 规则带来了 Go 原生速度。」",
+    "「团队的基准测试表明，稳定版本的速度比 ESLint 搭配 typescript-eslint 快 12 到 18 倍」",
+    "「Oxlint 正在进行正确的长期押注... 与 tsgo 对齐意味着可以继承 TypeScript 团队发布的每一次未来优化」"
+  ],
+  "tags": [
+    "TypeScript",
+    "Oxlint",
+    "性能优化",
+    "开发者工具",
+    "Go"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 547,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789128120000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-11 20:02:00"
+}

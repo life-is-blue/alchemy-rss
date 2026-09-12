@@ -1,0 +1,57 @@
+{
+  "id": "RAW_82e40bd07b",
+  "title": "编码代理不需要更长的历史记录——它们需要意图连续性",
+  "url": "https://towardsdatascience.com/coding-agents-dont-need-longer-history-they-need-intent-continuity/",
+  "date": "2026-09-11 23:30:01",
+  "author": "Emmimal P Alexander",
+  "siteName": "Towards Data Science",
+  "content": null,
+  "aiSummary": "本文提出了一种用于编码代理的“意图连续性”框架，该框架使用验证层和领域模式来确保历史要求被正确识别、验证并应用于新任务。",
+  "oneSentenceSummary": "本文提出了一种用于编码代理的“意图连续性”框架，该框架使用验证层和领域模式来确保历史要求被正确识别、验证并应用于新任务。",
+  "summary": "作者解决了长期 AI 编码项目中一个关键问题：代理经常“遗忘”或忽略已建立的约束，即使这些约束仍在上下文窗口内。为了解决这个问题，文章介绍了一个纯 Python 管道——不使用 LLM 调用或向量数据库——专注于“意图连续性”。该系统从聊天日志中提取要求，使用领域链接的模式来检索它们，从而克服关键词搜索的局限，并采用验证步骤来处理“超越”（即新规则覆盖旧规则）。实验结果表明，这种意图感知的方法实现了 100% 的要求召回率，并成功完成了基线和标准 RAG 方法无法解决的复杂任务。",
+  "mainPoints": [
+    {
+      "point": "长上下文窗口的局限",
+      "explanation": "简单地扩展上下文窗口并不能解决代理忽略旧规则的问题。核心问题是“意图连续性”——即判断哪些过去的决策对于当前看似无关的任务仍然相关且有效的能力。"
+    },
+    {
+      "point": "通过领域模式进行意图感知检索",
+      "explanation": "标准的词汇检索（关键词匹配）经常会错过与当前提示不共享单词的要求。通过使用一个映射系统组件之间关系的领域模式（例如，auth 影响 security），该系统可以更可靠地提取相关约束。"
+    },
+    {
+      "point": "显式验证和超越逻辑",
+      "explanation": "该管道包含一个确定性逻辑层，用于检查检索到的要求是否已被更新的指令所超越，或者是否适用于特定环境（例如，生产环境与原型环境），从而防止过时的规则被应用。"
+    },
+    {
+      "point": "无需 LLM/向量开销的高性能",
+      "explanation": "该实现证明，使用纯 Python 规则逻辑可以实现复杂的代理内存管理，在基准测试中达到 100% 的召回率，同时保持轻量级和成本效益。"
+    }
+  ],
+  "keyQuotes": [
+    "编码代理不需要更长的历史记录——它们需要意图连续性",
+    "问题不是记忆失败，而是判断什么重要。",
+    "意图连续性意味着将旧要求带入新任务，而无需用户重复，同时如果出现更新的规则，则放弃该规则。",
+    "基本的搜索设置只抓取了编码代理所需要求的 57%。添加一个验证层将这一比例提升到了 100%。"
+  ],
+  "tags": [
+    "AI 代理",
+    "AI 工作流",
+    "编码代理",
+    "上下文工程",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 17,
+  "score": 90,
+  "wordCount": 4017,
+  "domain": "towardsdatascience.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789140601000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-11 23:30:01"
+}
