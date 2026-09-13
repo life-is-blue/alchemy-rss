@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-13 09:59:18 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-13 15:03:04 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -518,9 +518,7 @@
 
 ### [pnpm-12.4：统一多语言开发工作流](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492646&idx=1&sn=3daa68edcf016deca7100c19dfa933d4)
 
-2026-09-12 16:38:00 | 标签: pnpm, 开发者工具, 前端与 Web, Rust, Python
-
-> 文章介绍 pnpm 12.4 面向多语言仓库的新能力。统一安装入口让一条 pnpm install 同时处理 npm、Python（pyproject.toml / pylock.toml）和 Cargo 依赖，共用网络、鉴权、校验与内容寻址存储，各语言依赖规则仍独立。新增 pipeline 用 tasks 与 dependsOn 描述构建、测试、lint 之间的依赖关系，支持并行、失败隔离、--full 全量执行与 --dry-run --json 输出任务图，便于 Agent 读取执行计划。缓存方面区分任务输出缓存与 Cargo 构建状态复用（cargoTargetDir），并提醒 inp...
+2026-09-12 16:38:00
 
 
 
@@ -778,17 +776,13 @@
 
 ### [在接下来的-15-分钟内，对-OpenStreetMap-进行你的第一次编辑](https://high5apps.github.io/josm-plugin-website-wizard/)
 
-2026-09-13 00:25:08 | 标签: OpenStreetMap, JOSM, 地图绘制, Website Wizard, 数据贡献
-
-> 本文提供了一份针对初学者的分步指南，用于在 OpenStreetMap 上进行第一次编辑。它解释了'website'标签的重要性，介绍了如何设置 JOSM 环境、过滤数据、使用 Website Wizard 插件查找官方网站，并最终将更改上传到 OSM 数据库。
+2026-09-13 00:25:08
 
 
 
 ### [Yestalgia：以趣味数字体验重现迪卡侬的-90-年代精神](https://tympanus.net/codrops/2026/09/12/yestalgia-bringing-decathlons-90s-spirit-to-life-through-a-playful-digital-experience/)
 
-2026-09-12 16:40:31 | 标签: 前端与 Web, 创意编程, 动画, 性能优化, UI 设计
-
-> 本文记录了迪卡侬 Yestalgia 数字体验的创作过程，该项目为其 90 年代风格的胶囊系列发布而打造。文章涵盖设计理念与技术实现两方面，详述团队如何创建以编辑内容为先的布局、大尺寸视觉、将营销图形作为视觉间奏融入其中，并开发出 Walkman 风格的导航，其中卡带代表不同目的地。在开发方面，网站运行于 WordPress，采用自定义 Timber 主题和 Blockstudio 区块，让客户可以更新经过艺术指导的内容。前端使用 piecesjs（一个 Web Components 框架）、GSAP 配合 ScrollTrigger 实现动画、Rive 实现矢量动画，以及一个自定义时间轴组件...
+2026-09-12 16:40:31
 
 
 

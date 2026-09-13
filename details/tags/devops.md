@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-13 09:59:18 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-13 15:03:04 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -644,41 +644,31 @@
 
 ### [我制作了一个构建可视化工具，用于理解-Bun-的编译时间](https://lalitm.com/post/buildprof/)
 
-2026-09-12 22:38:00 | 标签: DevOps, 性能优化, Linux, Rust, Zig
-
-> buildprof 是我开发的一种追踪工具，用于可视化 Linux 上的构建命令执行。它记录构建的进程树和文件活动，让用户能够识别耗时的步骤，例如并行度不足、重复工作或低效的链接。我使用 buildprof 来调查 Bun 的 Zig 和 Rust 构建之间的性能差异，发现 Zig 构建被一个漫长的 Full LTO 链接步骤所主导，而 Rust 构建则利用了更快的 ThinLTO，并受益于模块化的 crate 结构。
+2026-09-12 22:38:00
 
 
 
 ### [GitHub---nefarius/vd_agent:-Windows-SPICE-ゲストエージェント。コミュニティが維持する、廃止された-freedesktop.org-vd_agent-のフォーク。](https://github.com/nefarius/vd_agent/)
 
-2026-09-12 22:25:07 | 标签: Windows, SPICE, 仮想化, オープンソース, DevOps
-
-> このリポジトリは、廃止された freedesktop.org SPICE Windows ゲストエージェントのパブリックミラーおよびアクティブなフォークとして機能します。コミュニティは、特に Windows 11 向けに、マルチ GPU マウスサポートなどの重要な修正を組み込むことで、エージェントが機能し、最新の状態であることを保証しています。プロジェクトは GPL-2.0-or-later ライセンスで、ローカルビルド、テスト、自動リリース署名の詳細な手順が含まれています。
+2026-09-12 22:25:07
 
 
 
 ### [Lambda-SnapStart-支持容器镜像，终结打包权衡](https://www.infoq.com/news/2026/09/lambda-snapstart-container-image/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-09-12 18:09:00 | 标签: AWS, 云原生 / DevOps, 性能优化, 开发者工具, 后端开发
-
-> AWS 将 Lambda SnapStart 扩展至容器镜像函数，消除了大型依赖体积与缓慢启动之间的权衡。SnapStart 在部署时对已初始化的环境进行快照，并从该快照恢复，从而实现亚秒级启动时间。它原生支持 Java 11+、Python 3.12+ 或 .NET 8+ 的 AWS 基础镜像；其他镜像需要 Dockerfile 标签或运行时钩子。Serverless Framework 等工具在一周内便添加了支持，提供提示和验证。唯一剩下的区别是，AWS 会为基于 zip 的函数修补运行时，而容器用户必须自行保持基础镜像更新。SnapStart 已在所有商业区域可用，但亚太地区（新西兰）和...
+2026-09-12 18:09:00
 
 
 
 ### [GitLab-修复-CVSS-10-分文件读取漏洞，披露数小时即遭探测](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651346696&idx=2&sn=8e8f36f4700be99b7d4186ff5ff2fbfb)
 
-2026-09-12 18:00:00 | 标签: 安全, 漏洞修复, GitLab, 供应链安全, DevOps
-
-> GitLab 发布补丁修复多个安全漏洞，其中 CVE-2026-85706 为仓库提交 API 中的路径遍历问题，CVSS 评分 10.0，未授权攻击者可读取服务器任意文件，影响 CE/EE 的 18.7 至 19.3.2 之前多个版本。watchTowr 监测显示，自 2026 年 9 月 11 日 UTC 6:00 起该漏洞已出现活跃野外探测，攻击者可读取日志与配置文件获取凭证、密钥。watchTowr 威胁情报负责人 Jake Knott 指出，这是近几周第二起 GitLab 严重漏洞，利用门槛极低，只需目标实例存在至少一个公开项目，攻击者即可窃取源代码、CI/CD 密钥并污染构建流水线...
+2026-09-12 18:00:00
 
 
 
 ### [Uber-GitFarm：面向大规模单体代码库的-Git-即服务平台](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651292911&idx=4&sn=cb5b4c976e87bb3fdad37864f32ae957)
 
-2026-09-12 11:35:00 | 标签: 后端开发, 系统设计, 性能优化, 分布式系统, 云原生 / DevOps
-
-> Uber 推出 GitFarm 平台，将 Git 操作中心化为服务，以解决大规模单体代码库本地克隆带来的资源和时间开销。通过 gRPC API、预热检出和沙箱池，实现 500 毫秒内完成检出，客户端资源占用降低 80% 以上。实际应用显著降低 CPU、内存使用和服务延迟，并支持编码智能体等高负载工作流。未来计划包括流式 Git 输出、稀疏检出等功能。
+2026-09-12 11:35:00
 
 
 
