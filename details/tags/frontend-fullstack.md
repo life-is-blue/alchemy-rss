@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-13 07:34:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-13 09:59:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -513,6 +513,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [pnpm-12.4：统一多语言开发工作流](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492646&idx=1&sn=3daa68edcf016deca7100c19dfa933d4)
+
+2026-09-12 16:38:00 | 标签: pnpm, 开发者工具, 前端与 Web, Rust, Python
+
+> 文章介绍 pnpm 12.4 面向多语言仓库的新能力。统一安装入口让一条 pnpm install 同时处理 npm、Python（pyproject.toml / pylock.toml）和 Cargo 依赖，共用网络、鉴权、校验与内容寻址存储，各语言依赖规则仍独立。新增 pipeline 用 tasks 与 dependsOn 描述构建、测试、lint 之间的依赖关系，支持并行、失败隔离、--full 全量执行与 --dry-run --json 输出任务图，便于 Agent 读取执行计划。缓存方面区分任务输出缓存与 Cargo 构建状态复用（cargoTargetDir），并提醒 inp...
 
 
 
@@ -768,6 +776,22 @@
 
 
 
+### [在接下来的-15-分钟内，对-OpenStreetMap-进行你的第一次编辑](https://high5apps.github.io/josm-plugin-website-wizard/)
+
+2026-09-13 00:25:08 | 标签: OpenStreetMap, JOSM, 地图绘制, Website Wizard, 数据贡献
+
+> 本文提供了一份针对初学者的分步指南，用于在 OpenStreetMap 上进行第一次编辑。它解释了'website'标签的重要性，介绍了如何设置 JOSM 环境、过滤数据、使用 Website Wizard 插件查找官方网站，并最终将更改上传到 OSM 数据库。
+
+
+
+### [Yestalgia：以趣味数字体验重现迪卡侬的-90-年代精神](https://tympanus.net/codrops/2026/09/12/yestalgia-bringing-decathlons-90s-spirit-to-life-through-a-playful-digital-experience/)
+
+2026-09-12 16:40:31 | 标签: 前端与 Web, 创意编程, 动画, 性能优化, UI 设计
+
+> 本文记录了迪卡侬 Yestalgia 数字体验的创作过程，该项目为其 90 年代风格的胶囊系列发布而打造。文章涵盖设计理念与技术实现两方面，详述团队如何创建以编辑内容为先的布局、大尺寸视觉、将营销图形作为视觉间奏融入其中，并开发出 Walkman 风格的导航，其中卡带代表不同目的地。在开发方面，网站运行于 WordPress，采用自定义 Timber 主题和 Blockstudio 区块，让客户可以更新经过艺术指导的内容。前端使用 piecesjs（一个 Web Components 框架）、GSAP 配合 ScrollTrigger 实现动画、Rive 实现矢量动画，以及一个自定义时间轴组件...
+
+
+
 ### [tsgolint-发布稳定版-v7，为-Oxlint-带来基于-Go-的类型感知-Lint-检查](https://www.infoq.com/news/2026/09/tsgolint-oxlint-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-09-11 20:02:00
@@ -864,7 +888,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -876,7 +900,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2154,13 +2178,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2310,13 +2334,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3810,13 +3834,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5520,13 +5544,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
