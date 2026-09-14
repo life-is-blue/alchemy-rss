@@ -1,0 +1,52 @@
+{
+  "id": "RAW_ff739b7495",
+  "title": "临时计算机博物馆",
+  "url": "https://icm.museum/",
+  "date": "2026-09-13 10:43:57",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"hero\">\n   <!--    <img src=\"images/logo.png\" alt=\"ICM Logo\" class=\"logo\"> -->\n   <div class=\"slogan\">\n    Welcome to ...\n    <p>The Interim Computer Museum</p>\n   </div>\n  </div>\n  <div class=\"content\">\n   <div class=\"section\">\n    <center>\n     <a href=\"#lightbox1\"> <img src=\"https://icm.museum/images/about1.jpg\" class=\"thumbnail\" alt=\"Click to enlarge\"> </a>\n    </center>\n    <div id=\"lightbox1\" class=\"lightbox\">\n     <a href=\"#\" class=\"lightbox-close\" aria-label=\"Close\">×</a> <img src=\"https://icm.museum/images/about1_large.jpg\" alt=\"High-res image 1\">\n    </div>\n    <h2>Welcome to the Interim Computer Museum Online!</h2>\n    <p>The Interim Computer Museum (ICM) strives to preserve and share the history of computing through interactive exhibits using vintage hardware with modern enhancements. Our exhibits provide a hands-on experience that bridges the past and the present, allowing visitors to explore the evolution of computing technology.</p>\n    <p>We are a 501(c)(3) non-profit charity in partnership with the membership organization <a target=\"new\" href=\"https://sdf.org\">SDF Public Access UNIX System, Inc. 501(c)(7)</a>. Membership is crucial to our mission which supports the museum's activities through community events, remote access and artifact preservation.</p>\n    <p>Please click on <a href=\"https://icm.museum/?visit\">Visit</a> for contact and booking information.</p>\n    <p></p>\n    <p>To support our efforts, consider <a href=\"https://icm.museum/?donate\">Donating</a> or <a href=\"https://icm.museum/?join\">Joining</a> us today.</p>\n    <center>\n     <form action=\"https://sdf.org/interim/icm.cgi\" method=\"post\">\n      e-mail: <input type=\"text\" name=\"username\" rows=\"1\" cols=\"50\" size=\"26\">\n      <button type=\"submit\" class=\"cta-button\">Signup for our newsletter</button>\n     </form>\n    </center>\n    <p></p>\n    <center>\n     -+- <a href=\"https://icm.museum/?faq\">Why <i>Interim</i>?</a> -+-\n     <br>\n     (<i>and other frequently asked questions</i>)\n    </center>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "临时计算机博物馆是一个 501(c)(3) 非营利组织，通过动手的古董硬件展品保存计算机历史，并与 SDF 公共访问 UNIX 系统合作运营。",
+  "oneSentenceSummary": "临时计算机博物馆是一个 501(c)(3) 非营利组织，通过动手的古董硬件展品保存计算机历史，并与 SDF 公共访问 UNIX 系统合作运营。",
+  "summary": "临时计算机博物馆（ICM）是一个 501(c)(3) 非营利慈善机构，旨在通过建于古董硬件并进行现代升级的互动展品来保存和分享计算机历史。其展品提供动手体验，连接过去与现在，让参观者探索计算机技术的演变。ICM 与会员组织 SDF 公共访问 UNIX 系统， Inc. 501(c)(7) 合作运营，并依赖会员费、捐款、社区活动、远程访问和文物保护来支持其使命。该页面提供了参观、捐款、加入以及订阅新闻通讯的链接，并附有解释博物馆名称的常见问题解答（FAQ）。",
+  "mainPoints": [
+    {
+      "point": "临时计算机博物馆通过使用古董硬件并进行现代增强的互动展品来保存计算机历史。",
+      "explanation": "与静态展览不同，博物馆提供动手体验，旨在连接过去与现在，让参观者探索计算机技术是如何演变的。"
+    },
+    {
+      "point": "ICM 是一个 501(c)(3) 非营利慈善机构，与 SDF 公共访问 UNIX 系统， Inc. 501(c)(7) 合作。",
+      "explanation": "与会员组织的合作奠定了博物馆的运营和社区基础。"
+    },
+    {
+      "point": "会员费、捐款和社区活动是维持博物馆运营的核心。",
+      "explanation": "该页面说明会员费通过社区活动、远程访问和文物保护来支持使命，并邀请参观者捐款或加入。"
+    }
+  ],
+  "keyQuotes": [
+    "临时计算机博物馆（ICM）致力于通过使用古董硬件并进行现代增强的互动展品来保存和分享计算机历史。",
+    "我们的展品提供动手体验，连接过去与现在，使参观者能够探索计算机技术的演变。",
+    "我们是一个 501(c)(3) 非营利慈善机构，与会员组织 SDF 公共访问 UNIX 系统， Inc. 501(c)(7) 合作。"
+  ],
+  "tags": [
+    "计算机历史",
+    "博物馆",
+    "复古计算机",
+    "非营利",
+    "数字遗产"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 131,
+  "domain": "icm.museum",
+  "category": "Programming_Technology",
+  "mainDomain": "Lifestyle_Culture",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789267437000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-13 10:43:57"
+}

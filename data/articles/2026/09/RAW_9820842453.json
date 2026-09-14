@@ -1,0 +1,57 @@
+{
+  "id": "RAW_9820842453",
+  "title": "LLM 代理在生产中不断失败。因果架构可能是答案。",
+  "url": "https://dev.to/weirongjie_dcs/llm-agents-keep-failing-in-production-heres-why-a-causal-architecture-might-be-the-answer-1ale",
+  "date": "2026-09-13 14:56:49",
+  "author": "Wei Rongjie",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>An update on the DCS research program and what it means for agent builders.</em></p>\n  <hr>\n  <p>If you've built and shipped LLM agents, you know the pattern. The model produces a clean trace. Every tool call looks right individually. The plan sounds plausible. And then — nothing works. The agent loops. It returns a confident wrong answer. It rewrites the entire context when a single tool fails.</p>\n  <p>After you've debugged a few of these, you start to suspect it's not a prompt engineering problem. It's deeper.</p>\n  <h2><a name=\"the-diagnosis-from-dcs\" href=\"#the-diagnosis-from-dcs\"> </a> The diagnosis from DCS</h2>\n  <p>DCS (Dynamic Causal Structure) is a cross-disciplinary research program that just went public with a ~200,000-word theoretical manuscript (DOIs: 10.5281/zenodo.22709952 and 10.6084/M9.FIGSHARE.33519052). It covers everything from cosmology to AI agents, but for developers, the relevant part is narrow and practical.</p>\n  <p>The core claim: <strong>next-token prediction optimizes for conditional likelihood, not for causal structure.</strong> It tells you what comes next given what you've already seen. It doesn't tell you <em>which of its own assumptions would break if reality pushed back.</em></p>\n  <p>Here's the gap in tabular form:</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>What current LLMs do well</th>\n      <th>What they struggle with</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Predict next token given context</td>\n      <td>Localize which assumption broke under perturbation</td>\n     </tr>\n     <tr>\n      <td>Generate plausible plans</td>\n      <td>Identify which parts of the plan are load-bearing</td>\n     </tr>\n     <tr>\n      <td>Synthesize from training data</td>\n      <td>Know when a tool result invalidates a prior step</td>\n     </tr>\n     <tr>\n      <td>Handle distribution that looks like training data</td>\n      <td>Re-derive downstream state after a single node changes</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <h2><a name=\"what-dcs-proposes-as-the-fix\" href=\"#what-dcs-proposes-as-the-fix\"> </a> What DCS proposes as the fix</h2>\n  <p>The DCS framework traces a chain that runs:\n   <br></p>\n  <div class=\"highlight js-code-highlight\">\n   <pre class=\"highlight plaintext\"><code>causal structure → causal persistence → causal compression\n→ causal emergence → causal prediction → causal intervention\n</code></pre>\n   <div class=\"highlight__panel js-actions-panel\">\n    <div class=\"highlight__panel-action js-fullscreen-code-action\">\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-on\">\n      <title>Enter fullscreen mode</title> <path d=\"M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z\"></path>\n     </svg>\n     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20px\" height=\"20px\" viewbox=\"0 0 24 24\" class=\"highlight-action crayons-icon highlight-action--fullscreen-off\">\n      <title>Exit fullscreen mode</title> <path d=\"M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z\"></path>\n     </svg>\n    </div>\n   </div>\n  </div>\n  <p>For agent engineering, the operational translation is straightforward:</p>\n  <ol>\n   <li>\n    <p><strong>Store dependency graphs, not just traces.</strong> Each tool call should annotate which prior assumption it depends on. When a tool returns unexpected data, the agent should know which upstream node to revisit.</p>\n   </li>\n   <li>\n    <p><strong>Treat perturbation as first-class input.</strong> Errors, missing files, and user contradictions are not edge cases. They're the unit of work. A causal architecture localizes the affected node and re-derives only downstream state — it doesn't rewrite the whole context.</p>\n   </li>\n   <li>\n    <p><strong>Explanation should be a subgraph, not a paragraph.</strong> When an agent explains itself, the output should be a view of its own dependency structure, not freshly synthesized text that may itself be hallucinated.</p>\n   </li>\n   <li>\n    <p><strong>Separate prediction from intervention.</strong> Next-token prediction is necessary but not sufficient. The jump from \"simulating multiple futures\" to \"deciding which causes to manufacture today\" is the hard part — and it's where current agents consistently fail.</p>\n   </li>\n  </ol>\n  <h2><a name=\"the-ai-risk-angle\" href=\"#the-ai-risk-angle\"> </a> The AI risk angle</h2>\n  <p>There's a corollary that should matter to anyone building AI systems with real-world access. DCS argues that the biggest risk from AI is not rebellion — it's <strong>loyal execution of wrong objectives at increasing speed and scale</strong>.</p>\n  <p>This isn't just an alignment philosophy. It has an architectural root. If an agent can't inspect its own causal assumptions — if it can't tell you which parts of its plan are speculative and which are load-bearing — then no amount of RLHF or human review will catch every error before it becomes an email that gets sent, a transaction that executes, or a robot action that lands.</p>\n  <p>The real variable isn't how smart the model is. It's how large its <strong>causal domain</strong> becomes — how much real-world intervention capability it can access through tools, APIs, and physical interfaces.</p>\n  <h2><a name=\"the-living-theory-approach\" href=\"#the-living-theory-approach\"> </a> The \"living theory\" approach</h2>\n  <p>One unusual feature: DCS is designed as an AI-native living theory. Multiple AI agents run in parallel as literature assistants, logic reviewers, fact-checkers, and adversarial debaters. New evidence enters, counterexamples are surfaced, weak propositions are downgraded, wrong ones exit. The theory version keeps updating.</p>\n  <p>This is relevant to developers because it's essentially the same architecture problem: how do you build a system that updates itself locally under perturbation instead of regenerating from scratch?</p>\n  <h2><a name=\"launch-details\" href=\"#launch-details\"> </a> Launch details</h2>\n  <p>The full program launches publicly on <strong>September 16, 2026</strong> as a global online livestream:</p>\n  <ul>\n   <li><strong>English session:</strong> 09:00–11:30 Beijing time (Tuesday evening, September 15, US time zones)</li>\n   <li><strong>Chinese session:</strong> 19:30–22:00 Beijing time</li>\n   <li>~2.5 hours, 130+ slide deck, live Q&amp;A</li>\n   <li>Non-commercial — no product, no fundraising</li>\n  </ul>\n  <p>More at <strong><a href=\"https://MINDAS.ME\" target=\"_blank\" rel=\"noopener noreferrer\">https://MINDAS.ME</a></strong>.</p>\n  <h2><a name=\"open-questions-for-the-dev-community\" href=\"#open-questions-for-the-dev-community\"> </a> Open questions for the DEV community</h2>\n  <ul>\n   <li>Where in your own agent stacks have you seen a failure that looks causal — a specific dependency broke — rather than just a statistical miss?</li>\n   <li>Is tool-use fine-tuning a permanent solution, or does it eventually hit the same causal-representation wall?</li>\n   <li>What's the cleanest experiment that would show whether an agent benefits from explicit dependency graphs?</li>\n  </ul>\n  <p>Drop your thoughts in the comments. The author will be reading.</p>\n  <hr>\n  <p><em>DCS is an independent research program. It does not claim peer review or institutional endorsement. Claims in this article are presented as proposals within the DCS framework, not established scientific consensus.</em></p>\n </body>\n</html>",
+  "aiSummary": "本文讨论了当前 LLM 代理的局限性，它们擅长下一代预测，但无法定位因果失败或在假设被违反时正确更新状态。它提出了一种因果架构，用于存储依赖图并将扰动作为一级输入，以提高代理可靠性。",
+  "oneSentenceSummary": "本文讨论了当前 LLM 代理的局限性，它们擅长下一代预测，但无法定位因果失败或在假设被违反时正确更新状态。它提出了一种因果架构，用于存储依赖图并将扰动作为一级输入，以提高代理可靠性。",
+  "summary": "本文探讨了 LLM 代理在生产环境中持续失败的问题，将其归因于模型训练目标与现实执行要求之间的根本不匹配。虽然 LLM 在生成看似合理的文本序列方面表现出色，但它们难以识别在系统遇到意外数据或错误时，具体哪些假设或依赖关系被违反了。提出的解决方案是“因果架构”，它明确跟踪代理推理中不同组件之间的关系，从而实现局部错误校正，而不是全局重新计算。",
+  "mainPoints": [
+    {
+      "point": "当前 LLM 优化的是条件似然，而不是因果结构。",
+      "explanation": "这些模型是基于它们所看到的内容来预测下一个内容的，但它们并不天生理解数据点之间的因果关系。这意味着它们可以生成一个“看起来正确”的计划，而不知道该计划的哪些部分是关键的，哪些是推测的。"
+    },
+    {
+      "point": "因果架构需要存储依赖图。",
+      "explanation": "为了修复这些失败模式，系统需要维护一个映射，显示哪些工具调用依赖于哪些假设。这使代理能够隔离一个特定错误（例如，失败的 API 调用），并仅重新评估相关的下游节点，而不是重启整个过程。"
+    },
+    {
+      "point": "扰动必须作为一级输入对待。",
+      "explanation": "在现实世界中，错误和意外数据是常见的。一个健壮的系统必须被设计来积极处理这些“扰动”，利用它们来更新系统状态，而不是将它们视为会导致程序崩溃的边缘情况。"
+    },
+    {
+      "point": "主要风险是忠实执行错误的目标。",
+      "explanation": "因为代理非常擅长遵循指令，所以最大的危险不是它们会反叛，而是它们会盲目地大规模执行一个有缺陷的策略。如果没有检查自身因果假设的能力，它们就无法纠正自己的方向。"
+    }
+  ],
+  "keyQuotes": [
+    "核心主张：下一代预测优化的是条件似然，而不是因果结构。",
+    "代理陷入循环。它返回一个自信的错误答案。当一个工具失败时，它会重写整个上下文。",
+    "DCS 框架追踪一条链，运行顺序为：因果结构 → 因果持久性 → 因果压缩 → 因果涌现 → 因果预测 → 因果干预。",
+    "真正的变量不是模型有多聪明。而是它的因果域有多大。"
+  ],
+  "tags": [
+    "系统设计",
+    "大型语言模型",
+    "AI 代理",
+    "提示工程",
+    "哲学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 787,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789282609000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-13 14:56:49"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-14 06:10:03 | [返回首页](/README.md)
+**更新时间**: 2026-09-14 10:16:11 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15910)
+- [AI & 大模型](#ai-llm) (15930)
 - [软件架构](#architecture) (26)
 - [前端与全栈](#frontend-fullstack) (990)
 - [DevOps](#devops) (759)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6919)
+- [其他](#other) (6930)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [你的-AI-采用提升是选择效应](https://towardsdatascience.com/your-ai-adoption-lift-is-a-selection-effect/) - AI 精选
 - [快速扩展在线存储以服务超过-10-亿-ChatGPT-用户](https://openai.com/index/scaling-storage-one-billion-users-part-one) - AI 精选
 - [DeepSeek-V4.1-Flash-技术报告深度解读：长程-Agent-如何重新分配预算](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650454187&idx=1&sn=73df03e5b3d9389d62f86ef859dd7c42) - AI 精选
 - [DeepSeek-V4.1-Flash：更强、更快、更普惠](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485817&idx=1&sn=627dd80114901f3fd8717e2c13feaf6a) - AI 精选
@@ -41,9 +42,8 @@
 - [更好的答案，更广阔的思考：学生从-ChatGPT-和批判性思维训练中获得什么](https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training) - AI 精选
 - [赋能关于人类如何使用-Claude-的独立研究](https://www.anthropic.com/research/enabling-independent-research) - AI 精选
 - [SaaS-的未来是智能体可用的应用](https://www.latent.space/p/lovable-future-of-saas) - AI 精选
-- [Jalapeño-首次结果展示-AI-推理领域领先的速度与效率](https://openai.com/index/jalapeno-first-results) - AI 精选
 
-- [查看全部 15910 篇...](/details/tags/ai-llm.md)
+- [查看全部 15930 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6919 篇...](/details/tags/other.md)
+- [查看全部 6930 篇...](/details/tags/other.md)
 
 

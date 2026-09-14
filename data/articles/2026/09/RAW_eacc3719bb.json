@@ -1,0 +1,54 @@
+{
+  "id": "RAW_eacc3719bb",
+  "title": "Vibe Coding 不是问题，把这称为工程才是",
+  "url": "https://dev.to/georgekobaidze/vibe-coding-isnt-the-problem-calling-it-engineering-is-lm1",
+  "date": "2026-09-13 15:06:59",
+  "author": "Giorgi Kobaidze",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <h2><a name=\"lets-address-the-elephant-in-the-room-again\" href=\"#lets-address-the-elephant-in-the-room-again\"> </a> Let's Address the Elephant in the Room Again</h2>\n  <p>Vibe coding has always been a weird topic to talk about. Lately it's gotten even weirder.</p>\n  <p>Say <strong>\"vibe coding is a creative process, but it's not engineering\"</strong> and people get defensive immediately, calling you a gatekeeper and all those interesting terms.</p>\n  <p>So I decided to write this brief article to answer those opinions in a short and precise manner, without too much sugarcoating or dancing around.</p>\n  <hr>\n  <h2><a name=\"engineering-is-part-of-creation\" href=\"#engineering-is-part-of-creation\"> </a> Engineering is Part of Creation</h2>\n  <p>There's a real difference between the two. Creation is much broader term. engineering is part of the creation process. It's also part of maintenance, debugging, refactoring, and most of what engineers actually spend their days doing.</p>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7t681uth32jlzai5iv3v.jpg\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7t681uth32jlzai5iv3v.jpg\" alt=\"Diagram\" loading=\"lazy\"></a></p>\n  <p>So the question worth asking is: during the creation process, who does the engineering? You? Your coding agent? Both of you?</p>\n  <h2><a name=\"definitions-matter-here-critically\" href=\"#definitions-matter-here-critically\"> </a> Definitions Matter Here, Critically</h2>\n  <h3><a name=\"vibe-coding\" href=\"#vibe-coding\"> </a> Vibe Coding</h3>\n  <p>You write a prompt and hand it to the AI. <strong>You don't edit the code and you don't review it.</strong> You might not know the first thing about programming and still ship something.</p>\n  <h3><a name=\"aiassisting\" href=\"#aiassisting\"> </a> AI-Assisting</h3>\n  <p>AI-generated, human-reviewed. The AI writes all of it, you read all of it. <strong>THIS IS NOT VIBE CODING</strong>, it takes enough skill to tell good code from bad.</p>\n  <h3><a name=\"aiassisted\" href=\"#aiassisted\"> </a> AI-assisted</h3>\n  <p>You and the AI write the code together, and you're the one driving. AI gives you speed, a second opinion, and the edge cases you'd have missed. <strong>ALSO NOT VIBE CODING</strong>.</p>\n  <hr>\n  <h2><a name=\"where-this-is-going\" href=\"#where-this-is-going\"> </a> Where This is Going</h2>\n  <p>The trend is toward more semantics and more abstraction. It's been that way since assembly. Vibe coding is the next step on that line, and it will keep taking over more of the work. Maybe one day the job is 95% writing prompts, and to be honest, I'll welcome it, that makes my life easier too.</p>\n  <p>But the question right now is whether we're ready to build financial systems, health apps, and anything else touching sensitive data without analyzing the code.</p>\n  <p>We're not. Doing it anyway to prove your point will cause absolute chaos.</p>\n  <p>The line I'd draw:</p>\n  <p>Building something for yourself, for fun? Vibe code all of it. It's genuinely a good time.</p>\n  <p>Building something real, something that processes people's personal data, handles money, and turns a profit and vibe coding it from start to finish? That tells me one of three things:</p>\n  <ol>\n   <li>\n    <p>You're not willing to spend two to four weeks learning the absolute basics of coding, security, and best practices.</p>\n   </li>\n   <li>\n    <p>You don't care about the quality of your own product, and ultimately other people's personal data and security.</p>\n   </li>\n   <li>\n    <p>You're not curious about how any of it works under the hood. And if you're calling yourself an engineer, you should be eager to understand the mechanics of software engineering and coding.</p>\n   </li>\n  </ol>\n  <p>All three happen constantly now, and that's the sad part.</p>\n  <hr>\n  <h2><a name=\"what-i-actually-do\" href=\"#what-i-actually-do\"> </a> What I Actually Do?</h2>\n  <p>I've been a software engineer for ten years. Even so, when I need to build something in a language I'm not fluent in, I still spend a day or two on the language reference, the docs, the basic mechanics, enough that I can understand what the AI produces.</p>\n  <p>Then I review everything it generates and ask so many follow-up questions that <strong>I probably spend more tokens interrogating the code than creating the project</strong>.</p>\n  <p>Every strong engineer I know works this way. We use AI extensively, every single day. We also take everything it gives us with a grain of salt.</p>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F2oc2s9nt7r1ijuwgy8xq.jpeg\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F2oc2s9nt7r1ijuwgy8xq.jpeg\" alt=\"A Grain of Salt Next to a Keyboard and Rubber Duck\" loading=\"lazy\"></a></p>\n  <p>So what's stopping you from doing the same?</p>\n  <p>We'll get to the point where you can let go of the steering wheel. We're not there yet. Keep holding the wheel to make sure you don't go off the road.</p>\n </body>\n</html>",
+  "aiSummary": "文章认为，虽然 Vibe Coding（让 AI 写代码而无需审查）是一种有效的创意过程，但它不应与软件工程混为一谈，后者需要理解和验证生成的代码，以确保质量和安全性。",
+  "oneSentenceSummary": "文章认为，虽然 Vibe Coding（让 AI 写代码而无需审查）是一种有效的创意过程，但它不应与软件工程混为一谈，后者需要理解和验证生成的代码，以确保质量和安全性。",
+  "summary": "作者区分了 Vibe Coding（用户将代码生成委托给 AI，不进行分析）和真正的工程（涉及审查和理解代码）。虽然 AI 辅助很有价值，但目前的技术水平意味着未经审查的 AI 生成代码不适合关键应用。文章提倡一种混合方法，即 AI 生成代码，然后由人类工程师严格验证。",
+  "mainPoints": [
+    {
+      "point": "Vibe Coding 是一种独特的创意过程，不等于软件工程。",
+      "explanation": "工程涉及系统地应用知识来设计和维护系统，包括对组件的严格审查和验证。Vibe Coding 依赖于未经审查的 AI 输出，缺乏工程所需严谨性，尤其是在高风险环境中。"
+    },
+    {
+      "point": "当前趋势不应以牺牲质量和安全性为代价。",
+      "explanation": "虽然 AI 可以显著加速开发，但该技术尚未可靠到足以处理敏感数据或复杂系统而无需人工监督。文章警告，在生产中部署未经验证的 AI 生成代码会导致「混乱」。"
+    },
+    {
+      "point": "负责任的工作流程需要 AI 生成与人类验证之间的平衡。",
+      "explanation": "作者建议使用 AI 生成代码草稿，但坚持这些草稿必须由合格的工程师彻底审查。这确保最终产品满足可靠性和安全性要求。"
+    }
+  ],
+  "keyQuotes": [
+    "Vibe Coding 总是一个奇怪的话题。最近它变得更加奇怪了。",
+    "工程是创造过程的一部分。它也是维护、调试、重构以及工程师实际上把大部分时间花在什么上的部分。",
+    "我们还没有。为了证明你的观点而这样做会造成绝对的混乱。",
+    "我仍然把一两天花在语言参考、文档、基本机制上，足够让我理解 AI 产生的什么。",
+    "我们会到达你可以放开方向盘的地步。现在还没有。继续握着方向盘，确保不会冲出路面。"
+  ],
+  "tags": [
+    "Vibe Coding",
+    "AI 编程",
+    "软件工程",
+    "代码审查",
+    "AI 伦理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 606,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789283219000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-13 15:06:59"
+}

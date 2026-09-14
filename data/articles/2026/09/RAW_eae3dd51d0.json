@@ -1,0 +1,60 @@
+{
+  "id": "RAW_eae3dd51d0",
+  "title": "GitHub Copilot 的 Project HydraFusion 通过多模型路由承诺前沿级别性能",
+  "url": "https://www.infoq.com/news/2026/09/github-hydrafusion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-09-13 14:06:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/\">GitHub has introduced Project HydraFusion</a>, an advanced research preview for GitHub Copilot designed to deliver frontier-level coding intelligence through runtime model orchestration. Building on previous automatic model selection capabilities, HydraFusion treats workflow execution as an optimisation challenge, dynamically building full execution plans using models from multiple providers to handle core developer tasks.</p>\n   <p>The system evaluates incoming prompts using explicit capability signals tailored for complex operations, including multi-step reasoning, automated code generation, structured debugging, and advanced tool use. Rather than relying on a single static model, HydraFusion routes requests across three distinct runtime execution patterns depending on the task's complexity and context:</p>\n   <ul>\n    <li><strong>Single:</strong> One selected model executes directly when it has sufficient capability to solve the task independently, optimising for speed and low latency.</li>\n    <li><strong>Cascade:</strong> An efficient model generates an initial solution draft, which a quality gate evaluates. If the output satisfies requirements, it is accepted; otherwise, the task escalates to a stronger, more capable model.</li>\n    <li><strong>Critique:</strong> A drafting model produces an initial solution artefact, which is then assessed by an independent, read-only critic model drawn from a separate model family without tool execution access (mirroring the Rubber Duck review pattern). The original drafting model then performs a single structured revision based on this review.</li>\n   </ul>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/github-hydrafusion/news/2026/09/github-hydrafusion/en/resources/1Screenshot 2026-09-13 at 08.03.39-1789276300403.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/github-hydrafusion/en/resources/1Screenshot 2026-09-13 at 08.03.39-1789276300403.png\" rel=\"share\"></p>\n   <p>To ensure robust and production-grade execution, HydraFusion’s architecture is anchored by five fundamental operating principles. These include complete accounting to track token cost and usage across every workflow leg (drafting, critique, revision, escalation, retry, and fallback), bounded execution enforcing strict timeouts and cancellation handles, isolated review steps that prevent modifier actions within a tool-less environment, fail-safe application routines that reject patches if validation fails or execution is cancelled, and validated routing to pre-check model availability and bindings before runtime kicks off.</p>\n   <p>In controlled offline evaluations across three agentic coding benchmarks, HydraFusion’s selective runtime workflows matched or exceeded baseline quality metrics while substantially reducing estimated costs. Notably, on TerminalBench 2.1, it delivered a 4.9 percentage point improvement in verified task quality while achieving a 67% reduction in estimated cost compared to Claude Opus 5.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/github-hydrafusion/news/2026/09/github-hydrafusion/en/resources/1Screenshot 2026-09-13 at 08.00.20-1789276300403.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/github-hydrafusion/en/resources/1Screenshot 2026-09-13 at 08.00.20-1789276300403.png\" rel=\"share\"></p>\n   <p>On CheckpointBench, an internal multi-turn benchmark curated from real, replayable GitHub Copilot agentic coding sessions anchored to specific public repositories and immutable commits, the project achieved a mean session score virtually tied with the Claude Opus 5 reference baseline, registering a minor 0.1 percentage point difference while lowering estimated workflow costs by 65%.</p>\n   <p>Project HydraFusion is currently available as a research preview to users across all GitHub Copilot tiers via the /experimental configuration inside the GitHub Copilot CLI. Developers can engage the feature by updating their CLI environment, executing /experimental on, and selecting HydraFusion from the /model selection interface, with usage billed according to the standard token rates of the underlying models invoked during execution.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Copilot's Project HydraFusion Promises Frontier Level Performance Through Multi-Model Routing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/github-hydrafusion/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789279560000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 的 Project HydraFusion 研究预览在运行时将 Copilot 请求路由到多个模型，在匹配前沿质量的同时将估计成本降低高达 67%。",
+  "oneSentenceSummary": "GitHub 的 Project HydraFusion 研究预览在运行时将 Copilot 请求路由到多个模型，在匹配前沿质量的同时将估计成本降低高达 67%。",
+  "summary": "GitHub 推出了 Project HydraFusion，这是 GitHub Copilot 的研究预览，将工作流执行视为一个优化问题，动态地在多个提供商的模型之间构建执行计划。它根据能力信号（多步推理、代码生成、结构化调试、工具使用）对提示进行分类，并通过三种运行时模式进行路由：Single（单一强大模型）、Cascade（先用高效模型草拟，若质量门槛未通过则升级）以及 Critique（使用来自独立模型族的只读评论模型审阅草稿，随后进行一次结构化修订）。该架构基于五项原则：完整的 token 计算、带有超时和取消的有界执行、隔离的无工具审查步骤、验证失败或执行被取消时的故障安全补丁拒绝，以及经过验证的路由（预检模型可用性和绑定）。在离线评估中，HydraFusion 在匹配或超越基线的同时降低了估计成本——在 TerminalBench 2.1 上，相比 Claude Opus 5，验证任务质量提升了 4.9 个百分点，成本降低了 67%；在内部 CheckpointBench 上，它与基线持平（相差在 0.1 个百分点以内），同时将工作流成本降低了 65%。该功能可通过 Copilot CLI 中的 /experimental 标志在所有 GitHub Copilot 层级使用。",
+  "mainPoints": [
+    {
+      "point": "HydraFusion 将模型选择重新框架为运行时编排，而非单一静态模型选择。",
+      "explanation": "它不是为每个请求挑选单一模型，而是根据显式的能力信号（如多步推理、代码生成、结构化调试和高级工具使用），在多个提供商之间构建完整的执行计划。"
+    },
+    {
+      "point": "三种执行模式——Single、Cascade 和 Critique——根据任务复杂度在延迟和质量之间进行权衡。",
+      "explanation": "Single 使用单一强大模型以获得速度；Cascade 先用高效模型草拟，仅在质量门槛拒绝输出时才升级；Critique 使用来自独立模型族的只读评论模型（类似橡皮鸭审查模式）对草稿进行审阅，随后进行一次结构化修订。"
+    },
+    {
+      "point": "五项运行原则旨在使多模型执行达到生产级。",
+      "explanation": "在工作流的每一环节进行完整的 token 计算；采用严格超时和取消的有界执行；设置隔离的无工具审查步骤；在验证失败或执行被取消时，故障安全地拒绝补丁；以及经过验证的路由（预检模型可用性和绑定）。"
+    },
+    {
+      "point": "离线基准显示质量持平或提升，伴随显著的成本降低。",
+      "explanation": "在 TerminalBench 2.1 上，HydraFusion 相比 Claude Opus 5 使验证任务质量提升了 4.9 个百分点，估计成本降低了 67%；在内部 CheckpointBench 上，它与基线持平（相差在 0.1 个百分点以内），同时将估计工作流成本降低了 65%。"
+    },
+    {
+      "point": "该功能以研究预览的形式已对开发者可用。",
+      "explanation": "它可通过 Copilot CLI 中的 /experimental 配置在所有 GitHub Copilot 层级使用，启用方式为 /experimental on，并在 /model 接口中选择；使用费用按底层模型的标准 token 费率计费。"
+    }
+  ],
+  "keyQuotes": [
+    "HydraFusion 将工作流执行视为一个优化挑战，动态地使用多个提供商的模型构建完整的执行计划，以处理核心开发者任务。",
+    "草拟模型生成初始解决方案制品，随后由来自独立模型族的只读评论模型（不具备工具执行权限）进行评估（类似橡皮鸭审查模式）。",
+    "在 TerminalBench 2.1 上，它相比 Claude Opus 5 实现了验证任务质量提升 4.9 个百分点，同时将估计成本降低了 67%。"
+  ],
+  "tags": [
+    "模型路由",
+    "GitHub",
+    "AI 编程",
+    "AI 智能体",
+    "大型语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 452,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789279560000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-13 14:06:00"
+}
