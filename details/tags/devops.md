@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-15 08:06:58 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-15 14:58:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -644,17 +644,13 @@
 
 ### [MinIO-又砍一刀：开源社区版没了，Docker-镜像也删干净了。](https://www.appinn.com/minio-remove-docker-images/)
 
-2026-09-14 22:27:06 | 标签: 开源项目, S3 兼容, Docker, 自托管, 云存储
-
-> 自 2025 年起，MinIO 逐步削减开源支持，包括删除 Web 管理界面和进入维护模式。最新举措是彻底移除 Docker Hub 上的官方镜像，迫使依赖该服务的用户转向其他 S3 兼容解决方案。文章提供了多个替代选项，其中 Garage 和 RustFS 被认为是小型部署的有力候选，而 Ceph 和 SeaweedFS 则更适合中大型企业级应用。
+2026-09-14 22:27:06
 
 
 
 ### [Data-Engineering-Weekly-#287](https://www.dataengineeringweekly.com/p/data-engineering-weekly-287)
 
-2026-09-14 10:52:23 | 标签: 数据工程, 大型语言模型, 数据库, 云原生/DevOps, 分布式系统
-
-> Data Engineering Weekly #287 收集了十篇工程博客文章的简短摘要，由编辑的论点引出：嵌入和非结构化数据提取正在成为核心数据工程工作负载。OpenAI 描述了将 Habitat 存储平台从客户端 Python 库演变为处理超过 500PB 数据和每秒 7000 万请求的集中式服务。Pinterest 详细介绍了如何将内部 Manas 检索平台扩展到数十亿个嵌入，同时控制成本，而 Thumbtack 则主张将嵌入视为现有 Postgres 基础设施上的受控、持久数据。BlaBlaCar 将遗留仓库重建为模块化、有文档的 AI 就绪架构，使用 dbt 和双代理 AI 工作流...
+2026-09-14 10:52:23
 
 
 
