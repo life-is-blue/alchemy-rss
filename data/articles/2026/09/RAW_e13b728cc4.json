@@ -1,0 +1,52 @@
+{
+  "id": "RAW_e13b728cc4",
+  "title": "MinIO 又砍一刀：开源社区版没了，Docker 镜像也删干净了。",
+  "url": "https://www.appinn.com/minio-remove-docker-images/",
+  "date": "2026-09-14 22:27:06",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/Copy-of-appinn-homework-2026-09-14T142519.814.jpg\" alt=\"MinIO 又砍一刀：开源社区版没了，Docker 镜像也删干净了。 1\" class=\"wp-image-59499\" title=\"MinIO 又砍一刀：开源社区版没了，Docker 镜像也删干净了。 1\">\n  </figure>\n  <p class=\"wp-block-paragraph\">以前自建 S3，<a href=\"https://www.appinn.com/tag/minio/\" data-type=\"post_tag\" data-id=\"7616\">MinIO</a> 几乎就是那个不用多想的答案。</p>\n  <p class=\"wp-block-paragraph\">但从 2025 年开始，这个几乎等同于“自建 S3 首选”的开源项目，就开始一刀接一刀地往自己身上砍：</p>\n  <ul class=\"wp-block-list\">\n   <li>2025.06: <a href=\"https://www.appinn.com/minio-remove-admin-ui/\">MinIO 用户谨慎更新：11万行代码被官方删除，Web 管理功能全没了</a></li>\n   <li>2025.12: <a href=\"https://www.appinn.com/minio-maintenance-mode/\">MinIO 宣布进入维护模式，不再接受任何新功能、改进或拉取请求｜附替代品列表</a></li>\n   <li>2026.02: <a href=\"https://www.appinn.com/minio-no-longer-maintained/\">MiniO 官方仓库不再维护，寻替代品</a></li>\n  </ul>\n  <p class=\"wp-block-paragraph\">现在，MinIO 砍下了最后一刀：<strong>官方 Docker 镜像，也没了。</strong></p>\n  <p class=\"wp-block-paragraph\">曾经那个累计超过 <strong>10 亿次拉取</strong>的：<code>minio/minio</code>，如今打开 Docker Hub，已经是 <strong>404</strong>：</p>\n  <figure class=\"wp-block-image size-full is-resized\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-14-at-12.16.34-PM-2x.avif\" alt=\"MinIO 又砍一刀：开源社区版没了，Docker 镜像也删干净了。 2\" class=\"wp-image-59487\" style=\"aspect-ratio:0.9609094321411336;\" title=\"MinIO 又砍一刀：开源社区版没了，Docker 镜像也删干净了。 2\">\n  </figure>\n  <p class=\"wp-block-paragraph\">感谢 @Dang3rous 同学的提醒。就在大家都停留在最后一个版本 <code>minio/minio:RELEASE.2025-04-22T22-12-26Z</code> 的时候，万万没想到 Minio 官方居然把镜像都删掉了。</p>\n  <p class=\"wp-block-paragraph\"><strong>这个结局多少有点离谱。</strong></p>\n  <p class=\"wp-block-paragraph\">现在的 Minio 唯一留下的就是已经存档的 GitHub 仓库：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/CleanShot-2026-09-14-at-12.21.21-PM-2x.avif\" alt=\"MinIO 又砍一刀：开源社区版没了，Docker 镜像也删干净了。 3\" class=\"wp-image-59488\" title=\"MinIO 又砍一刀：开源社区版没了，Docker 镜像也删干净了。 3\">\n  </figure>\n  <p class=\"wp-block-paragraph\">而那个最后一个完整版本的源代码，还在这里：<a href=\"https://github.com/minio/minio/tree/RELEASE.2025-04-22T22-12-26Z\" target=\"_blank\" rel=\"noopener\">RELEASE.2025-04-22T22-12-26Z</a>。</p>\n  <p class=\"wp-block-paragraph\">也…不是不能用，就是觉得很难过。</p>\n  <p class=\"wp-block-paragraph\">更麻烦的是，这些版本已经一年多没有正常维护了。如今 AI 发现和利用安全漏洞的速度越来越快，就算旧镜像还能找到，也不敢用了啊。</p>\n  <p class=\"wp-block-paragraph\">是时代变了么？是 S3 不需要了么？</p>\n  <h2 class=\"wp-block-heading\">S3 到底是什么？</h2>\n  <p class=\"wp-block-paragraph\">S3 是 <strong>Simple Storage Service</strong> 的缩写：简单存储服务。</p>\n  <p class=\"wp-block-paragraph\">这事亚马逊提供的一项专门<strong>存储文件</strong>的云服务，可以简单的理解为给程序使用的<strong>网盘</strong>。</p>\n  <p class=\"wp-block-paragraph\">由于太过于流行，导致各大程序都支持使用 S3，所以就成了事实上的<strong>“网盘标准”</strong>，用起来也非常简单：</p>\n  <p class=\"wp-block-paragraph\">很多软件，你给它一个地址、账号和密钥，它就能存文件了。</p>\n  <p class=\"wp-block-paragraph\">但不是每个人都愿意使用亚马逊的云服务器，</p>\n  <p class=\"wp-block-paragraph\">于是，第三方 S3 就出现了，其中最知名的，就是<strong> MinIO。</strong></p>\n  <p class=\"wp-block-paragraph\">年初的时候，青小蛙还在<a href=\"https://www.appinn.com/minio-no-longer-maintained/\">寻找 MinIO 替代品</a>，一时没找到合适的，就一直在凑合用。</p>\n  <p class=\"wp-block-paragraph\">这是当前可以推荐的替代品，与年初推荐已经有了变化：</p>\n  <figure class=\"wp-block-table\">\n   <table>\n    <tbody>\n     <tr>\n      <th>项目</th>\n      <th>是否开源</th>\n      <th>S3 兼容方式</th>\n      <th>适合规模</th>\n      <th>简要特点</th>\n     </tr>\n     <tr>\n      <td>Ceph（RADOS Gateway）</td>\n      <td>✔️ LGPL</td>\n      <td>✔️ RGW 原生支持</td>\n      <td>中大型 / 企业级</td>\n      <td>成熟度最高，支持块 / 文件 / 对象三合一</td>\n     </tr>\n     <tr>\n      <td>SeaweedFS</td>\n      <td>✔️ Apache 2.0</td>\n      <td>✔️ 内置 S3 API</td>\n      <td>小到大型</td>\n      <td>性能优秀，尤其适合海量小文件</td>\n     </tr>\n     <tr>\n      <td>Garage</td>\n      <td>✔️ AGPL-3.0</td>\n      <td>✔️ 原生 S3 API</td>\n      <td>小到中型</td>\n      <td>Rust 实现，轻量、部署简单</td>\n     </tr>\n     <tr>\n      <td>OpenStack Swift + s3api</td>\n      <td>✔️ Apache 2.0</td>\n      <td>✔️ s3api 中间件</td>\n      <td>中大型</td>\n      <td>适合已有 OpenStack 环境，目前仍持续维护</td>\n     </tr>\n     <tr>\n      <td>RustFS</td>\n      <td>✔️ Apache 2.0</td>\n      <td>✔️ 原生 S3 API</td>\n      <td>小到大型</td>\n      <td>目前最值得关注的 MinIO 直接替代品之一</td>\n     </tr>\n     <tr>\n      <td><strong>VersityGW（新）</strong></td>\n      <td>✔️ Apache 2.0</td>\n      <td>✔️ 原生 S3 Gateway</td>\n      <td>小到中型</td>\n      <td>可直接把本地文件系统暴露成 S3</td>\n     </tr>\n     <tr>\n      <td><strong>buktio（新）</strong></td>\n      <td>✔️ Apache 2.0</td>\n      <td>✔️ 基于 Garage</td>\n      <td>小到中型</td>\n      <td>给 Garage 等 S3 后端补 Web 管理界面</td>\n     </tr>\n     <tr>\n      <td><strong>MaxIOFS（新）</strong></td>\n      <td>✔️ 开源</td>\n      <td>✔️ 原生 S3 API</td>\n      <td>小到中型</td>\n      <td>Go 编写，内置 Web Console，项目较新</td>\n     </tr>\n     <tr>\n      <td><strong>liteio（新）</strong></td>\n      <td>✔️ Apache 2.0</td>\n      <td>✔️ 原生 S3 API</td>\n      <td>小到中型</td>\n      <td>Go 编写，明确定位 MinIO 替代品，仍需观察</td>\n     </tr>\n     <tr>\n      <td><s>CORTX</s> <strong>（已淘汰）</strong></td>\n      <td>✔️ Apache 2.0 / AGPLv3</td>\n      <td>✔️ 原生 S3 接口</td>\n      <td>大规模</td>\n      <td>官方已停止维护，仓库于 2024 年归档，不建议再选</td>\n     </tr>\n    </tbody>\n   </table>\n  </figure>\n  <h3 class=\"wp-block-heading\">如果要选择：</h3>\n  <ul class=\"wp-block-list\">\n   <li><strong>个人 / NAS / 小型自托管</strong>：Garage、RustFS、VersityGW</li>\n   <li><strong>成熟 / 中大型部署</strong>：SeaweedFS、Ceph、OpenStack Swift</li>\n   <li><strong>新项目，值得观察</strong>：MaxIOFS、liteio</li>\n   <li><strong>已淘汰</strong>：CORTX</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">快来推荐你的选择。</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：https://www.appinn.com/minio-remove-docker-images/</p>\n </body>\n</html>",
+  "aiSummary": "MinIO 官方宣布停止维护开源社区版，并从 Docker Hub 删除所有镜像，导致累计超过 10 亿次拉取的 'minio/minio' 镜像变为 404，用户需寻找替代品如 Garage、RustFS 或 SeaweedFS。",
+  "oneSentenceSummary": "MinIO 官方宣布停止维护开源社区版，并从 Docker Hub 删除所有镜像，导致累计超过 10 亿次拉取的 'minio/minio' 镜像变为 404，用户需寻找替代品如 Garage、RustFS 或 SeaweedFS。",
+  "summary": "自 2025 年起，MinIO 逐步削减开源支持，包括删除 Web 管理界面和进入维护模式。最新举措是彻底移除 Docker Hub 上的官方镜像，迫使依赖该服务的用户转向其他 S3 兼容解决方案。文章提供了多个替代选项，其中 Garage 和 RustFS 被认为是小型部署的有力候选，而 Ceph 和 SeaweedFS 则更适合中大型企业级应用。",
+  "mainPoints": [
+    {
+      "point": "MinIO 官方停止维护开源社区版",
+      "explanation": "自 2025 年以来，MinIO 逐步削减对开源版本的支持，包括删除 Web 管理界面和进入维护模式，最终在 2026 年 9 月从 Docker Hub 删除所有镜像。"
+    },
+    {
+      "point": "Docker 镜像被删除，导致 404 错误",
+      "explanation": "曾经累计超过 10 亿次拉取的 'minio/minio' 镜像现已不存在，用户无法再通过标准方式获取或更新 MinIO 容器。"
+    },
+    {
+      "point": "推荐多个替代品",
+      "explanation": "文章列出了多种 S3 兼容的开源替代方案，包括 Garage、RustFS、SeaweedFS 和 Ceph，并根据部署规模和需求提供了具体建议。"
+    }
+  ],
+  "keyQuotes": [
+    "现在，MinIO 砍下了最后一刀：官方 Docker 镜像，也没了。",
+    "感谢 @Dang3rous 同学的提醒。就在大家都停留在最后一个版本 'minio/minio:RELEASE.2025-04-22T22-12-26Z' 的时候，万万没想到 Minio 官方居然把镜像都删掉了。",
+    "是时代变了么？是 S3 不需要了么？"
+  ],
+  "tags": [
+    "开源项目",
+    "S3 兼容",
+    "Docker",
+    "自托管",
+    "云存储"
+  ],
+  "topicTag": "devops",
+  "readTime": 5,
+  "score": 84,
+  "wordCount": 1185,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1789396026000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-14 22:27:06"
+}

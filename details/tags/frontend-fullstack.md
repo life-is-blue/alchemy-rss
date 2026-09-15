@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-15 05:11:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-15 08:06:58 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -774,6 +774,38 @@
 
 
 
+### [GitHub---Newspicel/sdrminusminus:-模块化、客户端-服务器软件定义无线电](https://github.com/Newspicel/sdrminusminus)
+
+2026-09-14 20:35:56 | 标签: 编程与工程, 开源项目, 后端开发, 前端与 Web, 编程语言
+
+> sdr-- 提供了一个灵活的软件定义无线电平台，具有可视化信号路径，用户可以在其中连接各种组件（设备、解码器、显示器）。该系统由一个用于信号处理的 Rust 服务器和一个用于控制的 React 界面组成。它支持多种无线电模式，包括 AM、NFM、SSB 和数字语音，以及频谱可视化、消息解码和位置映射等功能。该应用程序正在积极开发中，部分解码器仍处于测试阶段。
+
+
+
+### [让互联网少一些糟糕：走进-Resn-的数字体验设计](https://tympanus.net/codrops/2026/09/14/inside-resns-digital-experiences/)
+
+2026-09-14 19:30:10 | 标签: 创意文化, UX 设计, UI 设计, 前端与 Web, 作品集管理
+
+> 本文介绍了 2004 年成立于新西兰的精品创意工作室 Resn。文章追溯了他们 20 年来让互联网「少一些糟糕」的历程，并重点展示了他们近期备受瞩目的四个互动项目：Squarespace Foundations（互动品牌指南）、Savor（一款碳转化油脂黄油的感官平台）、Breakthrough Energy（为绿色能源孵化器打造的大胆数字主页）以及 Tracing Art（为 Getty 打造的沉浸式艺术史探索项目）。文章还反思了他们的设计哲学、远程协作以及对创意数字体验的持久坚守。
+
+
+
+### [Jotai-3.0-发布：现代化、仅-ESM-的包，放弃遗留构建和已弃用-API](https://www.infoq.com/news/2026/09/jotai-3-released/)
+
+2026-09-14 14:46:00 | 标签: React, 状态管理, JavaScript, ES 模块, 开源
+
+> Jotai 3.0 代表了原子状态管理库的重大现代化，转向纯 ESM 模块结构，并放弃对遗留构建格式的支持。虽然核心 API 保持稳定，但更新移除了几个已弃用的功能，包括 atomFamily 和 loadable 实用程序，这些功能已被拆分为专用包。此次清理旨在简化库的维护，并使其与现代 JavaScript 模块标准保持一致。
+
+
+
+### [ESP32-Bit-Pirate：连接现代微控制器与基于浏览器的硬件调试](https://www.infoq.com/news/2026/09/esp32-bitpirate-web/)
+
+2026-09-14 14:06:00 | 标签: ESP32, 硬件调试, 基于 Web 的工具, 物联网, 协议分析
+
+> ESP32 Bit Pirate 项目通过将固件锚定在浏览器驱动的生态系统中，重新构想了传统的多种协议调试。该平台放弃了僵化的本地工具链，而是利用 Web Serial 和 WebUSB 等 HTML5 API，将经济实惠的 ESP32-S3 微控制器转变为可以直接从现代网络浏览器访问的交互式工作台。浏览器界面在工作流程中扮演着多重角色，包括用于固件更新的专用 Web Flasher、用于命令行交互的 Web Serial 终端，以及集成文档页面。固件原生支持大量数字和无线协议，包括 I2C、SPI、UART、CAN、BLE、Wi-Fi 和 LoRa，使其成为一个用于硬件探索和调试的综合工具。
+
+
+
 ### [在接下来的-15-分钟内，对-OpenStreetMap-进行你的第一次编辑](https://high5apps.github.io/josm-plugin-website-wizard/)
 
 2026-09-13 00:25:08
@@ -882,7 +914,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -894,7 +926,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2172,13 +2204,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2328,13 +2360,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3828,13 +3860,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5538,13 +5570,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

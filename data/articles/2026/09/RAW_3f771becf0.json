@@ -1,0 +1,52 @@
+{
+  "id": "RAW_3f771becf0",
+  "title": "GitHub - callbacked/kinesis：为 Meta Neural Band 打造的 macOS 原生控制",
+  "url": "https://github.com/callbacked/kinesis",
+  "date": "2026-09-14 20:01:31",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <themed-picture data-catalyst-inline=\"true\">\n   <picture> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/callbacked/kinesis/raw/main/design/kinesis-links-dark.svg\"> <img src=\"https://github.com/callbacked/kinesis/raw/main/design/kinesis-links.svg\" alt=\"kinesis\"> </picture>\n  </themed-picture>\n  <div class=\"markdown-heading\" dir=\"auto\"></div>\n  <p dir=\"auto\">use your meta neural band to control your mac</p>\n  <details open class=\"details-reset border rounded-2\">\n   <summary class=\"tmp-px-3 py-2\"> <span class=\"m-1\">kinesis.mp4</span> <span class=\"dropdown-caret\"></span> </summary>\n   <video src=\"https://private-user-images.githubusercontent.com/117959902/651313476-25e974bc-a6ca-450f-83f0-732c6d40075c.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODkzOTc4NTEsIm5iZiI6MTc4OTM5NzU1MSwicGF0aCI6Ii8xMTc5NTk5MDIvNjUxMzEzNDc2LTI1ZTk3NGJjLWE2Y2EtNDUwZi04M2YwLTczMmM2ZDQwMDc1Yy5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkxNFQxNDUyMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMTM5NTViNjQ3YmRkYzIyMjhjZWM0NzZlMmJiMmE3Yjk5NTUwYTk3NGUwY2NjOGNiOGQ3MDM0ZTAxN2JlNmE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9dmlkZW8lMkZtcDQifQ.vr4LeQUt_oLCiPNZ3ScNBJQ8hrRqorsONg80l9FL824\" data-canonical-src=\"https://private-user-images.githubusercontent.com/117959902/651313476-25e974bc-a6ca-450f-83f0-732c6d40075c.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODkzOTc4NTEsIm5iZiI6MTc4OTM5NzU1MSwicGF0aCI6Ii8xMTc5NTk5MDIvNjUxMzEzNDc2LTI1ZTk3NGJjLWE2Y2EtNDUwZi04M2YwLTczMmM2ZDQwMDc1Yy5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkxNFQxNDUyMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMTM5NTViNjQ3YmRkYzIyMjhjZWM0NzZlMmJiMmE3Yjk5NTUwYTk3NGUwY2NjOGNiOGQ3MDM0ZTAxN2JlNmE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9dmlkZW8lMkZtcDQifQ.vr4LeQUt_oLCiPNZ3ScNBJQ8hrRqorsONg80l9FL824\" controls=\"controls\" muted class=\"d-block rounded-bottom-2 border-top width-fit\" style=\"max-height:640px; min-height: 200px\"></video>\n  </details>\n  <p dir=\"auto\">swipe between desktops, open mission control, control your music, and pinch + turn for volume or brightness. pick your own mappings, practice in setup, then keep it in the menu bar.</p>\n  <p dir=\"auto\">built on some tinkering i did with astra in <a href=\"https://github.com/callbacked/neural-band-poc\">neural-band-poc</a> (feel free to go through that repo to do your own thing), so naturally i wanted to harness it to make it do something useful</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">run it</h2>\n  </div>\n  <p dir=\"auto\"><strong>be sure to unpair your band from the meta app before you get started</strong></p>\n  <p dir=\"auto\"><a href=\"https://github.com/callbacked/kinesis/releases/latest\">download kinesis</a>, open the dmg, and drag it into applications. needs macos 14+ and a neural band. works on apple silicon and intel.</p>\n  <p dir=\"auto\">set your band in pairing mode, connect, and allow bluetooth + accessibility when prompted. enable controls and you're in.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">build it</h2>\n  </div>\n  <p dir=\"auto\">xcode with swift 6.</p>\n  <div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"git clone https://github.com/callbacked/kinesis.git\ncd kinesis\n./scripts/build.sh\nopen dist/Kinesis.app\">\n   <pre>git clone https://github.com/callbacked/kinesis.git\n<span class=\"pl-c1\">cd</span> kinesis\n./scripts/build.sh\nopen dist/Kinesis.app</pre>\n  </div>\n  <p dir=\"auto\">quit kinesis before rebuilding.</p>\n </body>\n</html>",
+  "aiSummary": "Kinesis 是一款 macOS 应用，让用户通过 Meta Neural Band 控制电脑，实现切换桌面、启动调度中心、控制音乐以及调节音量/亮度等手势操作。",
+  "oneSentenceSummary": "Kinesis 是一款 macOS 应用，让用户通过 Meta Neural Band 控制电脑，实现切换桌面、启动调度中心、控制音乐以及调节音量/亮度等手势操作。",
+  "summary": "Kinesis 为 Meta Neural Band 提供了原生 macOS 界面，允许用户将特定手势映射到系统命令。该应用支持在桌面之间滑动切换、打开调度中心、控制媒体播放，以及通过捏合和旋转手势调节音量或亮度。它需要 macOS 14 或更高版本，设置过程简单，只需配对手环并配置控制映射即可。",
+  "mainPoints": [
+    {
+      "point": "Kinesis 让你可以通过 Meta Neural Band 控制 macOS。",
+      "explanation": "该应用允许用户将神经手环的手势映射到各种 macOS 功能，例如在虚拟桌面之间切换、打开调度中心以及控制媒体播放。"
+    },
+    {
+      "point": "该应用支持自定义手势映射。",
+      "explanation": "用户可以在设置界面中定义自己的控制映射，实现与系统的个性化交互。"
+    },
+    {
+      "point": "Kinesis 需要特定的硬件和软件。",
+      "explanation": "该应用兼容 macOS 14 或更高版本，并且需要 Meta Neural Band。它还需要蓝牙和无障碍权限才能正常运行。"
+    }
+  ],
+  "keyQuotes": [
+    "用你的 Meta Neural Band 控制你的 Mac",
+    "在桌面之间滑动切换、打开调度中心、控制音乐，并通过捏合和旋转调节音量或亮度。",
+    "基于我在 [neural-band-poc](https://github.com/callbacked/neural-band-poc) 中对 astra 所做的一些尝试"
+  ],
+  "tags": [
+    "编程与工程",
+    "无障碍",
+    "Apple 芯片",
+    "开发者工具",
+    "Meta"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 152,
+  "domain": "github.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789387291000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-14 20:01:31"
+}

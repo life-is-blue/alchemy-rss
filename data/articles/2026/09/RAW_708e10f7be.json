@@ -1,0 +1,52 @@
+{
+  "id": "RAW_708e10f7be",
+  "title": "Laurie Voss 的一段引述",
+  "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+  "date": "2026-09-14 22:34:29",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">14th September 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://seldo.com/posts/we-are-all-product-engineers-now/\">\n     <p>The cost of writing code collapsed, and the cost of reviewing, fixing and operating it is following, and I'm assuming it gets there. What's left of making software is finding out what people actually want, defining it precisely, and making it pleasant to use. That cost is per piece of software and doesn't transfer, so as the amount of software goes to infinity, which it will because there's no ceiling on demand, that cost becomes the whole job.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://seldo.com/posts/we-are-all-product-engineers-now/\">Laurie Voss</a>, <span class=\"context\">We are all Product Engineers now</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2364/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Laurie Voss 认为，随着 AI 降低写代码的成本，剩余的瓶颈转移到了产品发现和用户体验设计上，而这些无法被自动化，并且会随软件数量的增加而线性增长。",
+  "oneSentenceSummary": "Laurie Voss 认为，随着 AI 降低写代码的成本，剩余的瓶颈转移到了产品发现和用户体验设计上，而这些无法被自动化，并且会随软件数量的增加而线性增长。",
+  "summary": "这篇短文引用了 Laurie Voss 的文章「我们现在都是产品工程师」中的一段话。Voss 观察到，软件开发经历了剧烈的成本下降：由于 AI 和自动化，编写代码变得廉价，而审查、修复和运维代码的成本也在随之下降。然而，理解用户想要什么、精确定义需求以及设计令人愉悦的用户体验的成本，仍然顽固地依赖人力，并且是逐项目发生的。这些成本无法跨项目转移，并且会随软件产品数量的增加而线性增长。随着 AI 驱动的代码生成解除了软件供给的上限，瓶颈完全转移到了产品定义和 UX——即软件创造中需要真正的人类洞察、且无法无限扩展的部分。",
+  "mainPoints": [
+    {
+      "point": "AI 已经大幅压低了编写代码的成本，并且正在压低代码维护成本",
+      "explanation": "Voss 指出了软件开发中一个清晰的技术驱动型成本下降：AI 生成的代码和自动化运维将软件生产和运行的成本推向接近于零。"
+    },
+    {
+      "point": "产品发现和 UX 设计仍然顽固地依赖人力，且无法规模化",
+      "explanation": "理解用户需求、精确定义需求以及设计愉悦体验的成本是逐项目的，无法跨软件产品转移，从而形成了一个随软件数量线性增长的瓶颈。"
+    },
+    {
+      "point": "软件行业正接近一个拐点：供给趋于无限，但需求定义仍然有限",
+      "explanation": "随着 AI 解除软件创造的供给约束，竞争优势和经济价值完全转移到了 AI 无法复制的软件开发环节：知道该构建什么，并让它用起来令人愉悦。"
+    }
+  ],
+  "keyQuotes": [
+    "编写代码的成本崩塌了，审查、修复和运维代码的成本也在紧随其后，我假设它最终也会降到那个程度。",
+    "软件制作剩下的部分，是弄清楚人们真正想要什么，把它精确定义出来，并让它用起来令人愉悦。",
+    "这个成本是每件软件单独承担的，无法转移，所以当软件数量趋于无限——这一定会发生，因为需求没有上限——这个成本就成了全部工作。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "AI 产品与应用",
+    "产品管理",
+    "软件工程",
+    "AI 商业"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 81,
+  "wordCount": 90,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789396469000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-14 22:34:29"
+}

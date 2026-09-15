@@ -1,0 +1,51 @@
+{
+  "id": "RAW_bf820a3427",
+  "title": "Toolbox App 3.8：改进 macOS 上的 IDE 更新处理并修复键盘导航",
+  "url": "https://blog.jetbrains.com/toolbox-app/2026/09/toolbox-app-3-8-improves-ide-update-handling-on-macos-and-fixes-keyboard-navigation/",
+  "date": "2026-09-15 00:05:56",
+  "author": "Ivan Kuzmin",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Version 3.8 of the Toolbox App restores keyboard navigation in project and tool lists. On macOS, manual IDE updates stay available even when the system reports the installation directory as protected.</p>\n  <h2 class=\"wp-block-heading\"><strong>IDE updates remain available on macOS</strong></h2>\n  <p>macOS was sometimes incorrectly reporting an IDE installation directory as non-writable, causing the Toolbox App to needlessly disable an update that would have otherwise succeeded.</p>\n  <p>When this happens in Version 3.8, the update remains available for manual installation. If macOS blocks it, the Toolbox App shows instructions for resolving the issue.</p>\n  <p>See<a href=\"https://youtrack.jetbrains.com/issue/TBX-10297\" target=\"_blank\" rel=\"noopener\"> TBX-10297</a> for details.</p>\n  <h2 class=\"wp-block-heading\"><strong>Keyboard shortcuts and navigation work again</strong></h2>\n  <p>On Windows, you can use <em>Ctrl+1</em> and <em>Ctrl+2</em> to switch between the <em>Tools</em> and <em>Projects</em> tabs.</p>\n  <p>You can use the <em>Up Arrow</em> and <em>Down Arrow</em> keys to move through project and tool lists, including after filtering a list. <em>Page Up</em>, <em>Page Down</em>, <em>Home</em>, and <em>End</em> move through long lists as expected.</p>\n  <p>See <a href=\"https://youtrack.jetbrains.com/issue/TBX-15385\" target=\"_blank\" rel=\"noopener\">TBX-15385</a> for list navigation and <a href=\"https://youtrack.jetbrains.com/issue/TBX-19029\" target=\"_blank\" rel=\"noopener\">TBX-19029</a> for tab shortcuts.</p>\n  <h2 class=\"wp-block-heading\"><strong>Cleanup progress for leftover directories</strong></h2>\n  <p>When cleaning up leftover IDE directories, the Toolbox App now shows progress for each tool and for the full cleanup. It keeps the delete controls disabled until cleanup and rescanning finish, so you cannot start the same cleanup twice.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img fetchpriority=\"high\" decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/09/image-52.png\" alt=\"\" class=\"wp-image-739775\">\n  </figure>\n  <p>See<a href=\"https://youtrack.jetbrains.com/issue/TBX-9661\" target=\"_blank\" rel=\"noopener\"> TBX-9661</a> for details.</p>\n  <div class=\"buttons\">\n   <div class=\"buttons__row\">\n    <a href=\"https://www.jetbrains.com/toolbox-app/\" class=\"btn\" target=\"_blank\" rel=\"noopener\">Download the latest version</a>\n   </div>\n  </div>\n  <p></p>\n  <p>We’d love to hear what you think about version 3.8 of the Toolbox App. Share your feedback in the comments.</p>\n  <p>The JetBrains Toolbox App team</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/blog/2026/07/20/why-focus-matters-in-a-crowded-devops-landscape/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Why Focus Matters in a Crowded DevOps Landscape</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains Toolbox App 3.8 恢复了键盘导航，确保在 macOS 上即使出现权限误报，手动 IDE 更新仍然可用，并在目录清理期间增加了可视化进度跟踪。",
+  "oneSentenceSummary": "JetBrains Toolbox App 3.8 恢复了键盘导航，确保在 macOS 上即使出现权限误报，手动 IDE 更新仍然可用，并在目录清理期间增加了可视化进度跟踪。",
+  "summary": "JetBrains 发布了 Toolbox App 3.8，带来了用户体验改进和错误修复。在 macOS 上，即使操作系统错误地将安装目录报告为不可写，手动 IDE 更新仍然可用。此版本还恢复了 Windows 上项目和工具列表的完整键盘导航以及标签页快捷键。此外，新增的进度指示器可跟踪残留目录的清理进度，同时临时操作锁可防止重复删除尝试。",
+  "mainPoints": [
+    {
+      "point": "改进 macOS 更新处理",
+      "explanation": "防止应用在 macOS 错误地将安装目录报告为受保护时禁用更新，允许手动更新，并在被阻止时提供解决说明。"
+    },
+    {
+      "point": "恢复键盘导航和快捷键",
+      "explanation": "修复了 Windows 上标签页切换的键盘快捷键（Ctrl+1/Ctrl+2），并恢复了通过方向键、翻页键和 Home/End 键进行列表导航的功能。"
+    },
+    {
+      "point": "增强清理反馈和 UI 锁定",
+      "explanation": "为删除残留 IDE 目录提供详细的进度跟踪，并在重新扫描期间禁用删除控件以防止重复触发清理。"
+    }
+  ],
+  "keyQuotes": [
+    "在 3.8 版本中遇到这种情况时，更新仍可手动安装。",
+    "清理残留 IDE 目录时，Toolbox App 现在会显示每个工具以及整个清理过程的进度。"
+  ],
+  "tags": [
+    "编程与工程",
+    "Windows 与微软生态",
+    "开发者工具",
+    "Apple",
+    "JetBrains"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 246,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789401956000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-15 00:05:56"
+}

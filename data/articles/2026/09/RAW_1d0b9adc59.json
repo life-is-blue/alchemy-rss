@@ -1,0 +1,57 @@
+{
+  "id": "RAW_1d0b9adc59",
+  "title": "Agoda 用 DragonflyDB 替换 72 分片 SQL Server 价格缓存",
+  "url": "https://www.infoq.com/news/2026/09/agoda-price-cache-dragonflydb/",
+  "date": "2026-09-14 21:48:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Agoda has migrated its tier-one hotel Price Cache from a <a href=\"https://medium.com/agoda-engineering/how-agoda-scaled-its-price-cache-with-dragonflydb-0828e478e84f\">72-shard Microsoft SQL Server deployment to DragonflyDB</a>, an in-memory datastore, to address growing read and write volumes and simplify scaling. The cache stores about 1.5 TB of volatile pricing data and handles roughly 300,000 reads and 1.5 million writes per second. Following the migration, Agoda reported an approximately eightfold improvement in P99 read latency, with DragonflyDB serving about 300,000 requests per second at around 8 milliseconds P99 latency.</p>\n   <p>Agoda’s previous architecture required application-level shard routing across 72 SQL Server <a href=\"https://en.wikipedia.org/wiki/Shard_(database_architecture)\">shards</a>. Scaling required predefined hardware increments and manual shard remapping and data migration. After doubling hardware capacity in early 2024, the team was approaching the limits again within a year. The growing workload also required a separate cleanup process to remove expired supplier data.</p>\n   <p><a href=\"https://www.linkedin.com/in/clarkson-chang/\">Clarkson Chang</a>, lead engineer at Agoda, highlighted the problem space</p>\n   <blockquote>\n    <p>It became clear that continuing to add resources to SQL Server was not a viable or cost-effective long-term strategy.</p>\n   </blockquote>\n   <p>The team evaluated <a href=\"https://github.com/dragonflydb/dragonfly\">DragonflyDB</a> against the workload rather than relying solely on published benchmarks. Its shared-nothing, multithreaded architecture, Redis compatibility, cluster-based scaling, and built-in key expiration matched the Price Cache workload, which relies heavily on MGET and SET. Agoda first used <a href=\"https://github.com/redis/memtier_benchmark\">memtier_benchmark</a> to reproduce a production-like 1:6 read-to-write ratio and average 10-key MGET operations.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/agoda-price-cache-dragonflydb/news/2026/09/agoda-price-cache-dragonflydb/en/resources/1agodadragondb-1787939640490.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/agoda-price-cache-dragonflydb/en/resources/1agodadragondb-1787939640490.jpeg\" rel=\"share\"></p>\n   <p>DragonflyDB in cluster mode (Source: <a href=\"https://medium.com/agoda-engineering/how-agoda-scaled-its-price-cache-with-dragonflydb-0828e478e84f\">Agoda Blog Post</a>)</p>\n   <p>The migration was deliberately incremental. Agoda initially deployed a 1 TB DragonflyDB instance for hot data, but organic growth pushed the dataset toward the 90% memory-safety threshold. The team subsequently moved to a three-shard-per-cluster design and expanded DragonflyDB to hold the complete 1.5 TB dataset. The resulting cluster processed approximately 1.6 million writes per second at around 10 milliseconds P99 latency.</p>\n   <p>Before shifting customer traffic, Agoda introduced dual reads. SQL Server continued serving requests while the Price API asynchronously retrieved corresponding data from DragonflyDB. Rather than comparing complete price payloads, the team checked supplier counts and price-data lengths, emitting the results as Prometheus metrics. Both dimensions achieved more than 99.9% parity.</p>\n   <p>Agoda then used an <a href=\"https://en.wikipedia.org/wiki/A/B_testing\">A/B experiment</a> to gradually move customer traffic to DragonflyDB. After several weeks, 100% of traffic had migrated, and the SQL Server read and write paths were retired.</p>\n   <p>The final architectural change addressed failure handling. Two DragonflyDB clusters, A and B, provide high availability. Instead of relying on a central coordinator, each application pod independently compares the clusters’ cache-hit ratios using five minutes of local observations. A statistically significant 10-percentage-point divergence marks a cluster unreadable, while recovery requires the difference to fall within three percentage points. During an outage simulation, roughly 40 application pods detected the failure and entered failover within approximately two minutes without manual intervention.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/agoda-price-cache-dragonflydb/news/2026/09/agoda-price-cache-dragonflydb/en/resources/1Screenshot 2026-08-28 at 10.41.00 AM-1787939640490.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/agoda-price-cache-dragonflydb/en/resources/1Screenshot 2026-08-28 at 10.41.00 AM-1787939640490.png\" rel=\"share\"></p>\n   <p><em>Cache Hit Ratio tracking during maintenance of the B-cluster </em>(Source: <a href=\"https://medium.com/agoda-engineering/how-agoda-scaled-its-price-cache-with-dragonflydb-0828e478e84f\">Agoda Blog Post</a>)</p>\n   <p>Agoda coupled the datastore migration with production parity checks, controlled traffic migration, explicit cache-warming behavior, and decentralized failure detection. The result was not only lower latency but also a less rigid scaling model and reduced operational maintenance around stale data and failover.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Agoda Replaces 72-Shard SQL Server Price Cache with DragonflyDB\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/agoda-price-cache-dragonflydb/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789393680000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Agoda 将其 1.5 TB 价格缓存从 72 分片 SQL Server 迁移至 DragonflyDB，实现了 P99 延迟降低八倍，并通过增量部署、双重读取、A/B 测试和去中心化故障转移，打造了可扩展、高可用、低维护的缓存系统。",
+  "oneSentenceSummary": "Agoda 将其 1.5 TB 价格缓存从 72 分片 SQL Server 迁移至 DragonflyDB，实现了 P99 延迟降低八倍，并通过增量部署、双重读取、A/B 测试和去中心化故障转移，打造了可扩展、高可用、低维护的缓存系统。",
+  "summary": "Agoda 的一线酒店价格缓存，存储约 1.5 TB 的易失性数据，每秒处理约 300 k 次读取和 1.5 M 次写入，最初分布在 72 个 Microsoft SQL Server 分片上。团队发现扩展此架构需要手动重新映射分片，且已接近硬件极限。他们选择了 DragonflyDB——一种内存型、兼容 Redis 的数据存储，采用无共享、多线程集群设计，并开始了增量迁移。首先在热点数据上部署了单个 1 TB 的 DragonflyDB 实例；随着数据集增长，扩展到每个集群 3 个分片的配置，最终容纳完整的 1.5 TB。引入双重读取，使 SQL Server 与 DragonflyDB 并行处理请求，Prometheus 指标对比供应商计数和价格数据长度，确保 99.9 % 以上的一致性。随后通过 A/B 实验将流量逐步转移，直至 100 % 请求落到 DragonflyDB，随后退役 SQL Server 路径。高可用性通过两个集群 A 与 B 实现，去中心化故障检测基于缓存命中率比较；在一次停机模拟中，40 个 pod 发现故障并在两分钟内完成故障转移，无需人工干预。最终结果是 P99 读取延迟降低八倍，1.6 M 写入/秒时 P99 延迟为 10 ms，且拥有更灵活、低维护的扩展模型。",
+  "mainPoints": [
+    {
+      "point": "从 72 分片 SQL Server 迁移至 DragonflyDB 将 P99 读取延迟降低八倍，同时将写入吞吐量扩展至 1.6 M 写入/秒。",
+      "explanation": "文章报告 1.6 M 写入/秒时 P99 延迟为 10 ms，较旧的 SQL Server 架构有显著性能提升。"
+    },
+    {
+      "point": "迁移采用增量策略：先启动 1 TB 集群，扩展至每集群 3 个分片，部署双重读取，执行 A/B 测试，最终将 100 % 流量切换。",
+      "explanation": "此分阶段方法降低风险，保持持续服务，并实现逐步容量增长。"
+    },
+    {
+      "point": "高可用性通过两个 DragonflyDB 集群实现，基于缓存命中率的去中心化故障检测，自动在约 2 分钟内完成故障转移。",
+      "explanation": "系统避免了中央协调器，减少单点故障并加速恢复。"
+    },
+    {
+      "point": "DragonflyDB 的无共享、Redis 兼容架构简化了扩展，消除了手动分片重新映射，降低运维维护。",
+      "explanation": "设计支持基于集群的扩展和内置键过期，满足 Agoda 的工作负载需求。"
+    }
+  ],
+  "keyQuotes": [
+    "继续为 SQL Server 添加资源已不再是可行或成本效益高的长期策略。",
+    "Agoda 报告 P99 读取延迟约提升八倍，DragonflyDB 以约 8 毫秒 P99 延迟处理约 300，000 次请求/秒。",
+    "在一次停机模拟中，约 40 个应用 pod 发现故障并在约两分钟内完成故障转移，无需人工干预。",
+    "迁移是有意的增量式进行。"
+  ],
+  "tags": [
+    "编程与工程",
+    "分布式系统",
+    "性能优化",
+    "后端开发",
+    "数据工程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 500,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789393680000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-14 21:48:00"
+}

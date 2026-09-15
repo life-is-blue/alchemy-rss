@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-15 05:11:12 | [返回首页](/README.md)
+**更新时间**: 2026-09-15 08:06:58 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (15930)
+- [AI & 大模型](#ai-llm) (15974)
 - [软件架构](#architecture) (26)
-- [前端与全栈](#frontend-fullstack) (990)
-- [DevOps](#devops) (759)
+- [前端与全栈](#frontend-fullstack) (994)
+- [DevOps](#devops) (761)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6930)
+- [其他](#other) (6945)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [为什么你应该为-AI-研究工作-—-Recursive-的-Richard-Socher](https://www.latent.space/p/recursive) - AI 精选
+- [10-个问答，深入分歧之下的具身机器人](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111818&idx=1&sn=1fa325e9d73eb410c18cddaf4e176f4b) - AI 精选
 - [你的-AI-采用提升是选择效应](https://towardsdatascience.com/your-ai-adoption-lift-is-a-selection-effect/) - AI 精选
 - [快速扩展在线存储以服务超过-10-亿-ChatGPT-用户](https://openai.com/index/scaling-storage-one-billion-users-part-one) - AI 精选
 - [DeepSeek-V4.1-Flash-技术报告深度解读：长程-Agent-如何重新分配预算](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650454187&idx=1&sn=73df03e5b3d9389d62f86ef859dd7c42) - AI 精选
@@ -40,10 +42,8 @@
 - [通往-Astra：关键能力与前沿保障](https://openai.com/index/path-to-astra) - AI 精选
 - [开创全球首个双盲-AI-评估](https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/) - AI 精选
 - [更好的答案，更广阔的思考：学生从-ChatGPT-和批判性思维训练中获得什么](https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training) - AI 精选
-- [赋能关于人类如何使用-Claude-的独立研究](https://www.anthropic.com/research/enabling-independent-research) - AI 精选
-- [SaaS-的未来是智能体可用的应用](https://www.latent.space/p/lovable-future-of-saas) - AI 精选
 
-- [查看全部 15930 篇...](/details/tags/ai-llm.md)
+- [查看全部 15974 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 990 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 994 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 - [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 759 篇...](/details/tags/devops.md)
+- [查看全部 761 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6930 篇...](/details/tags/other.md)
+- [查看全部 6945 篇...](/details/tags/other.md)
 
 
