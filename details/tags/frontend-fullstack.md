@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-16 07:51:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-16 10:17:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -774,6 +774,30 @@
 
 
 
+### [WebRTC-如何实现扩展：信令、NAT-遍历和网状/SFU/MCU-权衡](https://www.freecodecamp.org/news/how-webrtc-scales-signaling-nat-traversal-and-the-mesh-sfu-mcu-tradeoff/)
+
+2026-09-15 23:57:39 | 标签: 编程与工程, 系统设计, 后端开发, WebRTC, 信令
+
+> 文章首先介绍了 WebRTC 的三个核心 API，并指出了对等发现方面的不足。随后，它深入探讨了信令过程，解释了 offer/answer 交换以及通过 ICE、STUN 和 TURN 进行 NAT 遍历的重要性。文章还展示了一个信令服务器的实际实现，并讨论了不同网络拓扑（网状、SFU、MCU）的带宽和连接权衡。最后，文章总结了扩展 WebRTC 应用时需要考虑的连接、安全和可靠性问题。
+
+
+
+### [CSS-禅意花园的梦想，终于成为现实-|-Jo-Sprague](https://josprague.com/blog/the-css-zen-garden-dream-finally-shipped/)
+
+2026-09-15 22:40:08 | 标签: 编程与工程, 设计系统, 前端与 Web, UI 设计, CSS
+
+> 本文追溯了 CSS 从早期禅意花园时代的发展，当时内容与样式的分离在理论上是可能的，但由于浏览器不一致和缺乏功能，在实践中受到了限制。Sprague 强调，现代 CSS 凭借其自定义属性、网格和弹性盒，现在可以创建在浏览器间一致运行的强大设计系统，正如最近的 Firefox.com 重建所展示的。虽然使用了一个构建步骤来优化导入，但核心设计仍然是纯粹、原生的 CSS，实现了长期以来对高效、可扩展网页样式的梦想。
+
+
+
+### [Capsule——运行如应用的文档](https://withcapsule.app/)
+
+2026-09-15 21:31:40 | 标签: 编程与工程, 数字隐私, WebAssembly, Linux, Windows 与微软生态
+
+> Capsule 通过将整个应用程序——包括用户界面、数据和媒体资产——打包到一个单一的 `.capsule` 文件中，彻底改变了我们对应用程序分发的看法。这种方法消除了对云存储、复杂构建设置或供应商锁定需求，使用户可以像共享文档一样轻松地共享和运行应用程序。该平台支持跨平台兼容性，可在 macOS、Windows 和 Linux 上运行，移动支持即将推出。
+
+
+
 ### [GitHub---Newspicel/sdrminusminus:-模块化、客户端-服务器软件定义无线电](https://github.com/Newspicel/sdrminusminus)
 
 2026-09-14 20:35:56
@@ -906,7 +930,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -918,7 +942,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2196,13 +2220,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2352,13 +2376,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3852,13 +3876,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5562,13 +5586,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

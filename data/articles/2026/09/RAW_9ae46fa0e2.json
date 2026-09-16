@@ -1,0 +1,52 @@
+{
+  "id": "RAW_9ae46fa0e2",
+  "title": "从您信任的来源获取更好的 AI 答案 | Bulkgrid",
+  "url": "https://bulkgrid.com/",
+  "date": "2026-09-15 21:41:16",
+  "author": "ceglh",
+  "siteName": "Hacker News - Newest: \"AI Agent\"",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"min-h-0 flex-1 overflow-hidden pr-1\">\n   <div class=\"space-y-2\">\n    <article class=\"mr-auto max-w-[96%] rounded-xl border border-primary-500/20 bg-primary-950/70 p-3\">\n     <div class=\"flex items-start gap-2\">\n      <span class=\"mt-2.5 mr-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-primary-500/40 bg-primary-900/60 text-primary-100\"></span>\n      <p class=\"whitespace-pre-wrap text-[12px] leading-relaxed text-white/90\">Customer requests a refund outside the normal window. What does our current policy allow and what exceptions apply?</p>\n     </div>\n    </article>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Bulkgrid 提供一个平台，让用户提交查询并基于可信赖的源数据接收 AI 生成的响应，同时允许在发布前审查和批准答案。",
+  "oneSentenceSummary": "Bulkgrid 提供一个平台，让用户提交查询并基于可信赖的源数据接收 AI 生成的响应，同时允许在发布前审查和批准答案。",
+  "summary": "该服务允许用户输入问题，然后由 AI 处理以生成响应。用户可以审查该响应、进行编辑，并批准其发布，从而确保共享的信息是准确可靠的。",
+  "mainPoints": [
+    {
+      "point": "模式-含义差距",
+      "explanation": "数据库模式提供了数据的技术结构（表、列、类型），但未能传达业务语义。如果不理解公司内部 '收入' 或 '新客户' 等术语的具体定义，AI 代理可能会生成语法正确但事实错误的查询。"
+    },
+    {
+      "point": "提示填充的局限性",
+      "explanation": "尝试通过在系统提示中添加大量说明来弥合差距是无效的。提示是易变的且难以维护，而一个集中化的数据目录则为代理在执行过程中提供了一个稳定、可搜索的真相来源。"
+    },
+    {
+      "point": "已验证查询的力量",
+      "explanation": "在目录中包含 '已验证查询' 允许代理从成功示例中学习。通过观察过去具体业务问题是如何被回答的，模型可以将其查询生成与组织的既定实践对齐，从而显著提高准确性。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 代理可以知道如何查询数据库，但并不理解这些数据是什么意思。",
+    "元数据告诉代理某物是什么。业务上下文告诉它某物是什么意思。",
+    "权限比提醒更强。不要告诉模型 '不要访问敏感数据。' 要强制执行它实际上可以发现和检索的内容。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "知识管理",
+    "提示工程",
+    "科技评论",
+    "AI 代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 18,
+  "domain": "bulkgrid.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_87ebb4f7",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789479676000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-15 21:41:16"
+}

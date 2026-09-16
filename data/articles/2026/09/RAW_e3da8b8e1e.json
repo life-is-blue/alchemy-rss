@@ -1,0 +1,52 @@
+{
+  "id": "RAW_e3da8b8e1e",
+  "title": "Vibe Coding 只是下一个 IDE 层。工程学要大得多。",
+  "url": "https://dev.to/darshankumar89/vibe-coding-is-just-the-next-ide-layer-engineering-is-much-bigger-40mi",
+  "date": "2026-09-16 00:48:51",
+  "author": "DK",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>The debate around \"vibe coding\" often gets stuck on one question:</p>\n  <p><strong>Who wrote the code — the developer or the AI?</strong></p>\n  <p>I think that's the wrong question.</p>\n  <p>We've been moving toward higher levels of abstraction in software development for decades.</p>\n  <p>We went from machine code to assembly, from assembly to higher-level languages, from manual memory management to garbage collection, from writing everything ourselves to frameworks, libraries, IDEs, autocomplete, linters, static analysis and code generators.</p>\n  <p>AI-assisted coding is another step in that direction.</p>\n  <p>Vibe coding is essentially pushing the abstraction layer even further.</p>\n  <p>The interesting part isn't that AI can write code.</p>\n  <p>The interesting part is what happens to software engineering when writing code becomes cheaper.</p>\n  <h2><a name=\"coding-was-never-the-whole-job\" href=\"#coding-was-never-the-whole-job\"> </a> Coding Was Never the Whole Job</h2>\n  <p>A software engineer doesn't just write code.</p>\n  <p>Before a line of code is written, there are questions such as:</p>\n  <ul>\n   <li>What are we actually trying to solve?</li>\n   <li>What architecture should we use?</li>\n   <li>Where should the boundaries between components be?</li>\n   <li>Which database makes sense?</li>\n   <li>Which libraries or frameworks should we choose?</li>\n   <li>What are the security implications?</li>\n   <li>What are the scalability requirements?</li>\n   <li>What happens when the dependency we selected becomes unsupported?</li>\n   <li>How should failures be handled?</li>\n   <li>How should the system be tested?</li>\n   <li>What are the operational and maintenance costs?</li>\n   <li>What should we deliberately NOT build?</li>\n  </ul>\n  <p>And after the code is written:</p>\n  <ul>\n   <li>Can we maintain it?</li>\n   <li>Can another engineer understand it?</li>\n   <li>Can we observe it in production?</li>\n   <li>Can we debug it six months from now?</li>\n   <li>Can we change one component without breaking five others?</li>\n   <li>Does it perform under real workloads?</li>\n   <li>What happens when assumptions change?</li>\n  </ul>\n  <p>None of these questions disappear because an AI can generate 500 lines of code in 30 seconds.</p>\n  <h2><a name=\"ai-makes-implementation-cheaper\" href=\"#ai-makes-implementation-cheaper\"> </a> AI Makes Implementation Cheaper</h2>\n  <p>This is where I think the current debate is missing something important.</p>\n  <p>AI is dramatically reducing the cost of implementation.</p>\n  <p>That's a good thing.</p>\n  <p>If I can describe a requirement and have an AI generate a first implementation, I don't need to spend my time typing boilerplate.</p>\n  <p>The same way I don't manually write every getter and setter anymore.</p>\n  <p>The same way I don't manually remember every API signature because my IDE can autocomplete it.</p>\n  <p>The same way I don't manually search every documentation page when tooling can surface the information.</p>\n  <p>AI is becoming another layer between the engineer and the implementation.</p>\n  <p>But <strong>lower implementation cost doesn't eliminate engineering.</strong></p>\n  <p>It increases the value of engineering decisions.</p>\n  <h2><a name=\"the-hard-part-moves-up-the-stack\" href=\"#the-hard-part-moves-up-the-stack\"> </a> The Hard Part Moves Up the Stack</h2>\n  <p>When code becomes cheap, decisions become more important.</p>\n  <p>Choosing the wrong library can create years of technical debt.</p>\n  <p>Choosing the wrong architecture can make scaling painful.</p>\n  <p>Choosing the wrong data model can make future requirements extremely expensive.</p>\n  <p>Choosing a technology because an AI suggested it doesn't make it a good engineering decision.</p>\n  <p>The AI can generate the implementation.</p>\n  <p>But someone still needs to ask:</p>\n  <p><strong>Why this architecture?</strong></p>\n  <p><strong>Why this database?</strong></p>\n  <p><strong>Why this library?</strong></p>\n  <p><strong>Why this API boundary?</strong></p>\n  <p><strong>Why this security model?</strong></p>\n  <p><strong>Why this deployment strategy?</strong></p>\n  <p><strong>What happens when this assumption is wrong?</strong></p>\n  <p>That's engineering.</p>\n  <p>I don't think vibe coding is necessarily bad.</p>\n  <p>For prototypes, experiments, internal tools, proof-of-concepts and learning, it can be incredibly productive.</p>\n  <p>The problem starts when we confuse:</p>\n  <p><strong>\"The software works.\"</strong></p>\n  <p>with</p>\n  <p><strong>\"The software has been engineered.\"</strong></p>\n  <p>Those are not the same thing.</p>\n  <p>A generated application can compile.</p>\n  <p>It can pass a few tests.</p>\n  <p>It can look impressive.</p>\n  <p>It can even reach production.</p>\n  <p>And still have terrible architecture, poor security, unnecessary dependencies, weak observability, difficult maintenance and enormous technical debt.</p>\n  <h2><a name=\"the-engineers-job-is-changing\" href=\"#the-engineers-job-is-changing\"> </a> The Engineer's Job Is Changing</h2>\n  <p>I don't think AI is making engineering less important.</p>\n  <p>I think it is changing what good engineering looks like.</p>\n  <p>Less time typing.</p>\n  <p>More time thinking.</p>\n  <p>Less boilerplate.</p>\n  <p>More architecture.</p>\n  <p>Less implementation effort.</p>\n  <p>More validation.</p>\n  <p>Less memorising syntax.</p>\n  <p>More understanding systems.</p>\n  <p>Less \"How do I write this function?\"</p>\n  <p>More \"Should this function exist here at all?\"</p>\n  <p>That is a much more interesting future.</p>\n  <p>The best engineers won't necessarily be the people who write the most code.</p>\n  <p>They will be the people who can <strong>understand the problem, make good technical decisions, use AI effectively, challenge its output, and build systems that remain reliable and maintainable long after the initial excitement is gone.</strong></p>\n  <p>Vibe coding isn't the death of software engineering.</p>\n  <p>If anything, it may finally force us to recognise that <strong>software engineering was never just about writing code in the first place.</strong></p>\n  <hr>\n  <p><code>#multimindSDK</code> <code>#ai2innovate</code> <code>#opensource</code> <code>#AI</code> <code>#LLMops</code> <code>#MLOps</code> <code>#MachineLearning</code> <code>#Python</code> <code>#AIDeveloperTools</code> <code>#framework</code>\n   <br>\n   <code>#devops</code> <code>#tutorial</code> <code>#webdev</code> <code>#aidevtools</code> <code>#mlops</code> <code>#programming</code></p>\n </body>\n</html>",
+  "aiSummary": "AI 辅助编码降低了实现成本，但并不会取代工程学；重点从写代码转移到做出架构决策和验证系统可靠性。",
+  "oneSentenceSummary": "AI 辅助编码降低了实现成本，但并不会取代工程学；重点从写代码转移到做出架构决策和验证系统可靠性。",
+  "summary": "本文认为，AI 辅助编码（或“vibe coding”）代表了软件开发中的一个新抽象层，类似于从机器码到高级语言的演进。虽然 AI 可以快速生成代码，但它并没有消除对工程学的需求；相反，它将重点从编写代码转移到了关于架构、安全性和可维护性的关键决策。作者认为，工程学的真正价值在于理解问题领域并确保系统的长期可行性，而不仅仅是编码行为本身。",
+  "mainPoints": [
+    {
+      "point": "AI 降低了实现成本，但并没有降低对工程的需求。",
+      "explanation": "AI 可以快速生成代码，降低了进入实现的门槛。然而，这并不会消除工程师对系统设计、安全性和可扩展性进行高层决策的必要性。"
+    },
+    {
+      "point": "重点从写代码转移到验证决策。",
+      "explanation": "随着 AI 处理样板代码，工程师必须花更多时间思考其选择背后的‘为什么’（架构、库、数据模型），而不是‘如何’写代码。"
+    },
+    {
+      "point": "Vibe coding 是一种工具，不是专业知识的替代品。",
+      "explanation": "虽然 vibe coding 对于快速原型设计和学习很有用，但它无法取代构建可靠、可维护软件所需的对系统的深入理解。工程师仍然需要验证 AI 输出，并确保其与项目目标一致。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 正在成为工程师与实现之间的又一层。",
+    "问题始于我们将‘软件运行’与‘软件已被工程化’混淆。",
+    "最好的工程师不一定是写最多代码的人。他们将是那些可以理解问题、做出良好技术决策、有效使用 AI、质疑其输出，并构建保持可靠和可维护的系统的人。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "开发者工具",
+    "AI 编程",
+    "AI 编码",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 740,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789490931000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-16 00:48:51"
+}
