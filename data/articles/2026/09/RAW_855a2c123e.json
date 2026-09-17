@@ -1,0 +1,62 @@
+{
+  "id": "RAW_855a2c123e",
+  "title": "从内存饥渴的 HNSW 到量化 SPANN：Pinterest Manas 平台的技术演进",
+  "url": "https://www.infoq.com/news/2026/09/pinterest-search/",
+  "date": "2026-09-16 14:06:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Pinterest Engineering evolved its distributed search platform, <a href=\"https://www.infoq.com/news/2021/02/pinterest-efficient-retrieval/\">Manas</a>, to handle tens of billions of embeddings using quantization, SSD-based serving via SPANN, and late interaction retrieval. Deployed across 80 clusters, Manas powers core discovery experiences including Home Feed, Search, Related Pins, Ads, and Notifications. As the underlying corpus scales rapidly into billions of items, traditional memory-hungry vector search algorithms like standard HNSW face mounting cost, hardware allocation, and infrastructure flexibility challenges.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/pinterest-search/news/2026/09/pinterest-search/en/resources/1Image1-1789487679230.webp\" src=\"https://res.infoq.com/news/2026/09/pinterest-search/en/resources/1Image1-1789487679230.webp\" rel=\"share\"></p>\n   <p>To tackle these scaling hurdles and significantly reduce memory footprints, the Pinterest team implemented <a href=\"https://www.elastic.co/search-labs/blog/vector-db-optimized-scalar-quantization\">Scalar Quantization (SQ)</a> and <a href=\"https://www.pinecone.io/learn/series/faiss/product-quantization/\">Product Quantization (PQ)</a> on a 100-million-embedding GraphSage dataset. PQ compresses original floating-point vector representations into compact byte codes, reducing HNSW indices by 74% and Inverted File (IVF) indices by 93%, while achieving a 70–80% recall range. In comparison, SQ compresses vector components into lower-bit integers, reducing HNSW indices by 59% and IVF indices by 75%, maintaining over 90% recall consistently across workloads.</p>\n   <p>Offline benchmarks reveal distinct trade-offs across configurations and index sizes. The baseline HNSW index is 121 GB with a Recall@100 of 93.72% at 302.5 QPS. HNSW plus PQ drops the index size to 32 GB with a Recall@100 of 77.25% at 276.4 QPS.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/pinterest-search/news/2026/09/pinterest-search/en/resources/1Image2-1789487679230.webp\" src=\"https://res.infoq.com/news/2026/09/pinterest-search/en/resources/1Image2-1789487679230.webp\" rel=\"share\"></p>\n   <p>HNSW plus SQ results in a 50 GB index size while achieving a Recall@100 of 92.92% at 305.2 QPS. The baseline IVF index stands at 97 GB with a Recall@100 of 91.69% at 1659.8 QPS. Applying IVF plus PQ compresses the index down to 6.8 GB with a Recall@100 of 76.00% at 1747.9 QPS.</p>\n   <p>Using IVF plus SQ yields a 25 GB index size and achieves a superior Recall@100 of 95.71% at 1588.8 QPS. Shifting to lower-bit representations normally requires a decoding step before distance computation. To solve this CPU bottleneck, the team implemented Linear Scaling SQ using SIMD intrinsics, reducing query compute resources by 10–15%.</p>\n   <p>Online experiments successfully launched SQ and PQ, realizing 20–30% serving cost savings across production workloads. For SSD serving, Pinterest evaluated <a href=\"https://www.microsoft.com/en-us/research/project/project-akupara-approximate-nearest-neighbor-search-for-large-scale-semantic-search/\">DiskANN</a> and<a href=\"https://www.microsoft.com/en-us/research/publication/spann-highly-efficient-billion-scale-approximate-nearest-neighbor-search/\"> SPANN</a>, discovering that SPANN with PQ achieved 3x the QPS of DiskANN with 1/3 the latency and a minor 5% recall drop.</p>\n   <p>To further cut RAM costs by moving index storage to high-throughput SSDs, Pinterest evaluated DiskANN and SPANN. Their evaluation revealed that SPANN combined with PQ achieved 3x the QPS of DiskANN with 1/3 the latency and only a minor 5% recall drop. The custom SPANN architecture keeps a small, fast centroid index in memory to locate relevant partitions while storing large posting lists on SSDs, optimizing IOPS and ensuring search efficiency. In a Pin recommendation evaluation indexing over 5 billion embeddings, SPANN saved over 40% of CPU time for production queries compared to full in-memory HNSW.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/pinterest-search/news/2026/09/pinterest-search/en/resources/1Image3-1789487679230.webp\" src=\"https://res.infoq.com/news/2026/09/pinterest-search/en/resources/1Image3-1789487679230.webp\" rel=\"share\"></p>\n   <p>To move past the expressiveness limits of single-vector two-tower models, Pinterest is shifting toward multi-vector Late Interaction models like <a href=\"https://github.com/stanford-futuredata/ColBERT\">ColBERT</a> using Sum of MaxSim scoring to fine-tune fine-grained relevance match across tokens. Implementing this in Manas required updating the query parser to break multi-token queries into multiple vector embeddings and executing simultaneous ANN searches across indices. A successful pilot launch is currently underway with an internal client team to test advanced multi-embedding query support in live production environments.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"From Memory-Hungry HNSW to Quantized SPANN: The Technical Evolution of Pinterest's Manas Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/pinterest-search/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789538760000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinterest 的 Manas 搜索平台通过对 HNSW 和 IVF 索引应用标量量化与乘积量化、转向基于 SSD 的 SPANN 服务，并试点多向量后期交互检索，大幅削减了内存成本。",
+  "oneSentenceSummary": "Pinterest 的 Manas 搜索平台通过对 HNSW 和 IVF 索引应用标量量化与乘积量化、转向基于 SSD 的 SPANN 服务，并试点多向量后期交互检索，大幅削减了内存成本。",
+  "summary": "Pinterest 工程团队将其分布式搜索平台 Manas 扩展至 80 个集群、数百亿个嵌入向量，支撑首页信息流、搜索、相关 Pin、广告和通知等业务。为应对标准 HNSW 的内存成本问题，团队在 1 亿嵌入向量的 GraphSage 数据集上测试了标量量化（SQ）和乘积量化（PQ）：在 70-80% 召回率下，PQ 将 HNSW 索引缩减 74%、IVF 索引缩减 93%；而 SQ 将 HNSW 缩减 59%、IVF 缩减 75%，同时保持召回率在 90% 以上。离线基准测试显示，HNSW+SQ 占用 50 GB 内存，Recall@100 达 92.92%；IVF+SQ 占用 25 GB，Recall@100 达 95.71%。基于 SIMD 的线性缩放 SQ 将查询计算资源降低 10-15%，在线实验实现了 20-30% 的服务成本节省。在 SSD 服务方面，结合 PQ 的 SPANN 实现了 DiskANN 三倍的 QPS，延迟仅为其三分之一，召回率仅下降 5%；在 50 亿嵌入向量的 Pin 推荐评估中，相比内存版 HNSW 节省了超过 40% 的 CPU 时间。Pinterest 目前正在试点 ColBERT 等采用 Sum of MaxSim 评分的多向量后期交互模型。",
+  "mainPoints": [
+    {
+      "point": "量化是缩小 Pinterest 向量索引内存占用的主要手段。",
+      "explanation": "在 1 亿嵌入向量的 GraphSage 数据集上，PQ 在 70-80% 召回率下将 HNSW 索引缩减 74%、IVF 索引缩减 93%；而 SQ 将 HNSW 缩减 59%、IVF 缩减 75%，同时保持 90% 以上的召回率，清晰展示了精度与内存之间的权衡。"
+    },
+    {
+      "point": "SQ 在保持召回率方面通常优于 PQ，是更安全的生产选择。",
+      "explanation": "基准测试显示，HNSW+SQ 占用 50 GB，Recall@100 为 92.92%，而 HNSW+PQ 占用 32 GB，Recall@100 为 77.25%；IVF+SQ 占用 25 GB，Recall@100 为 95.71%，而 IVF+PQ 占用 6.8 GB，Recall@100 为 76.00%。"
+    },
+    {
+      "point": "SIMD 加速解码消除了低位表示带来的 CPU 瓶颈。",
+      "explanation": "由于量化向量通常需要先解码再进行距离计算，Pinterest 利用 SIMD 内联函数实现了线性缩放 SQ，将查询计算资源降低了 10-15%。"
+    },
+    {
+      "point": "基于 SSD 的 SPANN 服务在十亿级索引上优于 DiskANN。",
+      "explanation": "结合 PQ 的 SPANN 实现了 DiskANN 三倍的 QPS，延迟仅为其三分之一，召回率仅下降 5%；在 50 亿嵌入向量的 Pin 推荐评估中，相比全内存 HNSW 节省了超过 40% 的 CPU 时间。"
+    },
+    {
+      "point": "Pinterest 正从单向量双塔模型迈向多向量后期交互检索。",
+      "explanation": "采用 ColBERT 风格的 Sum of MaxSim 评分需要更新查询解析器，将多 token 查询拆分为多个嵌入向量并同时运行 ANN 搜索，目前正与内部客户团队进行试点。"
+    }
+  ],
+  "keyQuotes": [
+    "PQ 将原始浮点向量表示压缩为紧凑的字节编码，使 HNSW 索引缩减 74%、倒排文件（IVF）索引缩减 93%，同时达到 70-80% 的召回率范围。",
+    "SQ 将向量分量压缩为低位整数，使 HNSW 索引缩减 59%、IVF 索引缩减 75%，在各种工作负载下始终维持 90% 以上的召回率。",
+    "为解决这一 CPU 瓶颈，团队利用 SIMD 内联函数实现了线性缩放 SQ，将查询计算资源降低了 10-15%。",
+    "SPANN 结合 PQ 实现了 DiskANN 三倍的 QPS，延迟仅为其三分之一，召回率仅小幅下降 5%。",
+    "在索引超过 50 亿嵌入向量的 Pin 推荐评估中，SPANN 相比全内存 HNSW 为生产查询节省了超过 40% 的 CPU 时间。"
+  ],
+  "tags": [
+    "编程与工程",
+    "向量数据库",
+    "性能优化",
+    "数据库",
+    "后端开发"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 517,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789538760000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-16 14:06:00"
+}

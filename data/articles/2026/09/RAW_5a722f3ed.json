@@ -1,0 +1,62 @@
+{
+  "id": "RAW_5a722f3ed",
+  "title": "#716.Stripe：企业 AI 的关键是治理",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6aa2f77c9d3264778167435b",
+  "date": "2026-09-11 02:38:39",
+  "author": "跨国串门儿计划",
+  "siteName": "跨国串门儿计划",
+  "content": "<p><span>📝 本期播客简介</span></p>\n<p><span>本期我们克隆了：How I AI · The enterprise AI stack behind Stripe’s company brain “Kai”</span></p>\n<p><span>原内容更新时间：2026-09-07</span></p>\n<p><span>在 How I AI，也就是我的 AI 使用之道 中，主持人 Claire Vo 对话 Stripe 工程经理 Sharadh，拆解公司内部 Agent Kai 的构建过程。Kai 不只是一个聊天工具，而是一套结合个性化上下文、组织架构、数据平台、沙盒、skill 与治理机制的企业级 AI 系统，目前每周有超过 10,000 名 Stripe 员工使用。</span></p>\n<p><span>Sharadh 解释了 Stripe 为什么选择从头打造 Kai，以及企业级 AI 真正困难的地方：不是让员工获得一个 AI 工具，而是在复杂组织中建立一套能控制权限、管理成本、保护敏感数据，同时又不妨碍员工工作的基础设施。节目还现场演示了 Kai 如何从自然语言搭建数据仪表盘，并把一次性操作打包成可复用、可共享的 skill。</span></p>\n<p><span>从 Project 作为治理单元，到 Hubble、Trino 与 Ask Data 支撑的数据查询路径，再到 Agent 身份、降级机制、human in the loop、遥测和 eval，这期内容提供了一份相当完整的企业 AI 架构样本，也展示了为什么面向人类开发者建设的基础设施，最终同样成为 Agent 发挥作用的关键。</span></p>\n<p><span>👤 本期嘉宾</span></p>\n<p><span>Sharadh 是 Stripe 的工程经理，也是 Kai 团队的成员。他曾参与 Stripe 多个核心基础设施团队的工作，包括数据和开发者体验，因此既理解企业级数据与平台建设，也亲身参与了 Kai 从早期 V0 到全公司推广的过程。</span></p>\n<p><span>在他的介绍中，Kai 由一个不到 10 人的核心团队持续负责体验，每周服务超过 10,000 名 Stripe 员工。Sharadh 目前关注治理、技能和基础设施等层面，致力于让不同技术背景的 Stripe 员工都能安全、有效地使用 AI。本期他通过现场演示，具体展示了 Kai 如何查询数据、搭建仪表盘、创建 skill，并在不同项目中施加工具权限与审批边界。</span></p>\n<p><span>⏱️ 时间戳</span></p>\n<p><span class=\"timestamp\"><span><a class=\"timestamp\" data-timestamp=\"56\">00:56</a></span></span><span> Kai为何从零打造</span></p>\n<p><span class=\"timestamp\"><span><a class=\"timestamp\" data-timestamp=\"190\">03:10</a></span></span><span> 上下文与项目治理</span></p>\n<p><span class=\"timestamp\"><span><a class=\"timestamp\" data-timestamp=\"496\">08:16</a></span></span><span> Kai现场搭建数据看板</span></p>\n<p><span class=\"timestamp\"><span><a class=\"timestamp\" data-timestamp=\"1420\">23:40</a></span></span><span> skill平台与企业落地</span></p>\n<p><span>🌟 精彩内容</span></p>\n<p><span>💡 企业 AI 首先是治理问题</span></p>\n<p><span>Stripe 最初面对的并不是“要不要提供一个 AI 工具”，而是如何让复杂组织中的每个人都能放心使用 AI。Kai 的核心价值，在于把权限、上下文、模型、工具和审批机制组织起来，让员工不必每天自行处理一堆复杂配置。</span></p>\n<p><span>\"重点不是提供 AI，而是提供正确的治理结构，让每个人都能直接去用 AI，而且确信它会帮你把事情办对。\"</span></p>\n<p><span>💡 上下文应该有边界，也应该由用户控制</span></p>\n<p><span>Kai 默认知道员工的身份和组织位置，也能通过项目管理系统了解 OKR、邮件和参与的项目；Google Drive、Slack 和私信等更敏感的信息，则需要员工主动授权。个性化上下文越丰富，Agent 越有用，但权限控制不能被默认设置取代。</span></p>\n<p><span>\"我们允许大家自己选择给 Kai 开放多少权限，但开箱即用状态下，Kai 就知道你是谁。\"</span></p>\n<p><span>💡 Project 不是文件夹，而是治理单元</span></p>\n<p><span>在 Stripe，Project 可以围绕一个团队或工作流划定上下文边界，并规定默认模型、工具策略、数据访问权限和 human in the loop 流程。这样，熟悉成本、性能和延迟权衡的少数人可以提前搭好规则，其他员工直接在边界内使用。</span></p>\n<p><span>\"项目首先是一种治理机制，但它也能让你，就像你说的，你有了这个上下文引擎。\"</span></p>\n<p><span>💡 Agent 会放大基础设施的故障模式</span></p>\n<p><span>Agent 能够高并发地调用工具、查询数据和执行操作，因此原本不明显的基础设施问题可能被迅速放大。Stripe 为数据查询层、数据目录、分析层和高并发弹性投入的基础设施，成为 Agent 能够稳定工作的前提。</span></p>\n<p><span>\"事实证明，Agent 会直接放大你所有的故障模式，就好像它把你可能遇到的问题幅度给成倍放大了。\"</span></p>\n<p><span>💡 面向人类建设的平台，也会成为 Agent 的杠杆</span></p>\n<p><span>Stripe 在 AI 之前就持续建设开发者体验、开发者平台、数据平台和分析层，这些让人类更高效的基础设施，同样帮助 Agent 找到正确的数据、调用正确的工具，并在高负载下稳定运行。企业想提高 AI 交付能力，不能只盯着模型和产品开发。</span></p>\n<p><span>\"把精力花在平台投入上，对人类好，对 Agent 也好，这才是能让你跑起来的东西。\"</span></p>\n<p><span>💡 skill 让一次性对话变成可复用工作流</span></p>\n<p><span>Kai 可以从一次完整会话中提取步骤、上下文和操作，将其打包成可重复运行的 skill。AI 因此不再只是临时聊天工具，而成为员工可以交给它执行业务流程的协作者；这些 skill 还可以被编辑、测试、共享和治理。</span></p>\n<p><span>\"AI 从一个我平时顺手在旁边随便聊聊的东西，比如像聊天界面那样，变成了我能放心交给它去跑业务、跑工作流。\"</span></p>\n<p><span>💡 企业级 skill 库必须同时管理质量和数量</span></p>\n<p><span>当公司里出现大规模 skill 库后，真正的问题不只是“能不能创建”，还包括哪些 skill 被频繁使用、哪些只服务于小团队、哪些已经占用过多上下文。Stripe 通过遥测和 ETL 管道判断 skill 是否应该推广、降级、归档或删除。</span></p>\n<p><span>\"你塞给 AI 的无关上下文越多，你的结果就会变得越差。所以数量几乎就是质量的一个侧面。\"</span></p>\n<p><span>🌐 播客信息补充</span></p>\n<p><span>本播客采用原有人声声线进行播客音频制作，也可能会有一些地方听起来怪怪的</span></p>\n<p><span>使用 AI 进行翻译，因此可能会有一些地方不通顺</span></p>\n<p></p>",
+  "aiSummary": "Stripe 工程经理 Sharadh 拆解公司级 Agent Kai 的构建逻辑：企业 AI 的难点不是提供工具而是治理，靠 Project 划定权限与成本边界、靠 skill 平台把一次性对话变成可复用工作流，不到 10 人团队服务超 1 万名员工。",
+  "oneSentenceSummary": "Stripe 工程经理 Sharadh 拆解公司级 Agent Kai 的构建逻辑：企业 AI 的难点不是提供工具而是治理，靠 Project 划定权限与成本边界、靠 skill 平台把一次性对话变成可复用工作流，不到 10 人团队服务超 1 万名员工。",
+  "summary": "本期 How I AI 由主持人 Claire Vo 对话 Stripe 工程经理 Sharadh，拆解内部公司级 Agent Kai 的构建与治理实践。Kai 不是聊天工具，而是一套结合个性化上下文、组织架构、数据平台、沙盒、skill 与治理机制的企业级 AI 系统，每周有超 1 万名 Stripe 员工使用，采用率超过 86%。Sharadh 强调，Stripe 最初面对的不是「要不要给员工 AI 工具」，而是如何让复杂组织中的每个人都能放心使用：重点在于提供正确的治理结构，让人确信 AI 会把事情办对。上下文层面，Kai 开箱即知员工身份与组织位置，可通过项目管理系统读取 OKR、邮件与项目，Google Drive、Slack、私信等敏感内容则由员工自行授权开关。治理核心是 Project：它既是上下文引擎，也是配置与治理层，可指定默认模型、工具策略、数据访问权限与 human in the loop 审批流程，让少数懂成本与延迟权衡的人搭好台子，其余员工在边界内使用。数据路径上，Kai 通过 ask data skill 做三层分流：优先分析层，其次标准仪表盘查询，最后退到数据目录自写查询；Hubble、Trino 与分析层等面向人类建设的基础设施成为 Agent 的杠杆，Sharadh 因此建议企业把 devex 与数据团队人数翻倍。Sharadh 也坦言 Agent 会放大所有故障模式，需要加固高并发韧性、界定 Agent 身份与降级机制。skill 层面，Kai 可把一次会话打包成可复用、可编辑、可测试、可共享的工作流，公司已有约 2000 个 skill，并通过遥测与 ETL 管道判断推广、降级、归档或删除，因为无关上下文越多结果越差，数量几乎就是质量的侧面。该项目以约一个半人力两周上线 V0，经 GTM 试点后全公司推广，核心团队至今不到 10 人。",
+  "mainPoints": [
+    {
+      "point": "企业 AI 的第一性问题不是提供工具，而是提供正确的治理结构。",
+      "explanation": "Stripe 面对的是如何在业务遍布全球、流程繁多的复杂组织里让每个人放心用 AI。Kai 的价值在于把权限、上下文、模型、工具和审批机制组织起来，让员工不必每天自行处理复杂配置，同时确信 AI 会把事情办对。"
+    },
+    {
+      "point": "Project 不是文件夹，而是可配置的治理单元与上下文引擎。",
+      "explanation": "Project 可围绕团队或工作流划定上下文边界，并规定默认模型、工具策略、数据访问权限和 human in the loop 流程。少数熟悉成本、性能与延迟权衡的人提前搭好规则，其他人直接在边界内使用，从而降低管理成本与阻力。"
+    },
+    {
+      "point": "面向人类建设的平台投入，最终成为 Agent 发挥作用的杠杆。",
+      "explanation": "Stripe 在 AI 之前持续建设开发者体验、开发者平台、数据平台与分析层。ask data skill 按分析层、标准仪表盘、数据目录三层分流查询，Agent 因此能快速找到正确数据；Sharadh 由此建议企业把 devex 和数据团队人数翻倍，而不是只盯着模型和产品开发。"
+    },
+    {
+      "point": "Agent 会成倍放大基础设施的故障模式，韧性与身份界定是前提。",
+      "explanation": "Agent 能高并发地调用工具、查询数据、执行操作，原本不明显的问题会被迅速放大。Stripe 因此投入数据仓库高并发弹性、界定 Agent 身份与用例、设计优先级与降级机制，并承认早期曾出现 Agent 失控甚至差点搞垮核心系统的情况。"
+    },
+    {
+      "point": "skill 把一次性对话变成可复用工作流，但企业级 skill 库必须同时管理质量和数量。",
+      "explanation": "Kai 可从一次完整会话中提取步骤、上下文和操作，打包成可编辑、测试、共享和治理的 skill，使 AI 从聊天工具变成可交付工作流的协作者。公司约有 2000 个 skill，需要通过遥测和 ETL 管道判断哪些该推广、降级、归档或删除，因为塞给 AI 的无关上下文越多，结果越差。"
+    }
+  ],
+  "keyQuotes": [
+    "重点不是提供 AI 而是提供正确的治理结构，让每个人都能直接去用 AI 而且确信他会帮你把事情办对。",
+    "项目首先是一种治理机制，但他也能让你就像你说的，你有了这个上下文引擎。",
+    "事实证明，Agent 会直接放大你所有的故障模式，就好像它把你可能遇到的问题幅度给成倍放大了。",
+    "把精力花在平台投入上，对人类好，对 agent 也好，这才是能让你跑起来的东西。",
+    "你塞给 AI 的无关上下文越多，你的结果就会变得越差。所以数量几乎就是质量的一个侧面。"
+  ],
+  "tags": [
+    "企业级 AI",
+    "AI Agent",
+    "AI 治理",
+    "Stripe",
+    "AI 工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 62,
+  "score": 90,
+  "wordCount": 15426,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_938310",
+  "sourceName": "跨国串门儿计划",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1789065519000,
+  "publishDateStr": "09-11",
+  "publishDateTimeStr": "2026-09-11 02:38:39"
+}
