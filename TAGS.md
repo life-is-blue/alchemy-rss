@@ -1,15 +1,15 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-18 06:33:49 | [返回首页](/README.md)
+**更新时间**: 2026-09-18 10:05:40 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16037)
+- [AI & 大模型](#ai-llm) (16059)
 - [软件架构](#architecture) (26)
 - [前端与全栈](#frontend-fullstack) (997)
-- [DevOps](#devops) (765)
+- [DevOps](#devops) (766)
 - [产品与商业](#product-business) (51)
 - [其他](#other) (6965)
 
@@ -43,7 +43,7 @@
 - [通往-Astra：关键能力与前沿保障](https://openai.com/index/path-to-astra) - AI 精选
 - [开创全球首个双盲-AI-评估](https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/) - AI 精选
 
-- [查看全部 16037 篇...](/details/tags/ai-llm.md)
+- [查看全部 16059 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -112,6 +112,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [当事故拒绝结束](https://www.infoq.com/presentations/stream-incidents/) - 编程 精选
 - [您的-Worker-现在可以拥有前置缓存](https://blog.cloudflare.com/workers-cache/) - 编程 精选
 - [我们如何为-Cloudflare-Workflows-构建-Saga-回滚](https://blog.cloudflare.com/rollbacks-for-workflows/) - 编程 精选
 - [共享字典：跟上智能体网络步伐的压缩技术](https://blog.cloudflare.com/shared-dictionaries/) - 编程 精选
@@ -128,9 +129,8 @@
 - [Docker-构建详解：上下文、架构与性能优化](https://www.freecodecamp.org/news/docker-build-tutorial-learn-contexts-architecture-and-performance-optimization-techniques/) - 编程 精选
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
-- [SaaS-构建者常犯的错误](https://www.infoq.com/presentations/saas-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 765 篇...](/details/tags/devops.md)
+- [查看全部 766 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业

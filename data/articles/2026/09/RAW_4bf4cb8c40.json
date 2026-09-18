@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4bf4cb8c40",
+  "title": "Claude Code 团队讲究啊，这都往外说",
+  "url": "https://www.qbitai.com/2026/09/491596.html",
+  "date": "2026-09-17 19:56:13",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"66\">程浅 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"67\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">话说。</p>\n  <p data-track=\"3\">Claude发布了一则Claude code团队如何使用Claude code持续优化Claude code的访谈视频。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20260917185128_9a60c8e41f45ab1368a5b6ce8718edf8.jpeg\">\n  </div>\n  <p data-track=\"4\">访谈中，Claude员工们对最近这一年工作方式的变化大发感慨。</p>\n  <p data-track=\"5\">由此重点谈到了他们如何看待<strong>“要在非常快的迭代节奏下做产品”</strong>这件事。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20260917185128_af6abd5b1420cffdc2056a47227592a6.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△《How the Claude Code team uses Claude Code》访谈截图</p>\n  </div>\n  <p data-track=\"7\">（这画面温馨得像三个超级奶爸在讨论如何育儿。）</p>\n  <p data-track=\"8\"><strong>本文整理了这次访谈的核心内容，精华包括不限于：</strong></p>\n  <p data-track=\"9\">“你必须对自己正在构建的东西保持非常不执着的态度，因为它们很快就会消失。”</p>\n  <p data-track=\"10\">“我们现在的工作层级，已经比Claude实际输出的token高出了一个抽象层。”</p>\n  <p data-track=\"11\">“被迫放手让Claude自己发挥，因为信任比监督更重要。”</p>\n  <p data-track=\"12\">““你必须既站在技术前沿，又为今天使用模型的人提供价值。这是一门艺术，也是一门科学。”</p>\n  <p data-track=\"13\">“软件工程是「变化的职业」。你解决的问题在变，但核心始终是problem solving。”</p>\n  <p data-track=\"14\">希望对同样处在<strong>快技术迭代节奏下</strong>的你有所启发。</p>\n  <p data-track=\"16\">团队表示，当前已经将70%-80%的日常工作交给Slack（美国飞书）原生的AI agent——Claude Tag完成。</p>\n  <p data-track=\"17\">而一年之前，Claude Code的工程师还在<strong>逐行阅读</strong>AI的工作记录。</p>\n  <p data-track=\"18\">包括每一次工具调用、每一个参数选择、每一步推理决策……</p>\n  <p data-track=\"19\">（这工作量。）</p>\n  <p data-track=\"20\">他们现在工作的核心理念是：<strong>不再逐条审视tool call和模型决策，而是下达一个goal，让模型自行达成。</strong></p>\n  <p data-track=\"21\">不知道这种理念是否与Claude Tag产品设计有关，或许是为了让它更像一个真实的Slack参与者，他们将用户界面和模型的思考记录彻底解耦了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20260917185128_75cf6e02f4a9f2b4e53c0ed6f9624ae9.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"22\">如此，AI的内部独白将被Slack界面隐藏起来，人类看到的每一条消息，只是Claude在调用发消息的工具，它真正的思考过程并不会实时展示。</p>\n  <p data-track=\"23\">团队认为这是一种<strong>有点吓人的强制性放手</strong>。</p>\n  <p data-track=\"24\">与此同时，他们也在激进地使用Claude Tag开发Claude Tag自身。</p>\n  <p data-track=\"25\">随之举了一个新内部工具的开发案例，很有意思：</p>\n  <p data-track=\"26\">第一步是问Claude Tag：“我在想这样一个点子，我应该去找谁聊聊？谁会对这个感兴趣？</p>\n  <p data-track=\"27\">Claude Tag交付了一批<strong>stakeholder的名单</strong>。</p>\n  <p data-track=\"28\">聊完之后，第二步就直接让Claude Tag做<strong>原型示意图和具体实现</strong>。</p>\n  <p data-track=\"29\">第三步，让Claude Tag加入大量埋点，把工具部署到内部使用，观察“大家是怎么用这个的？有没有人给我反馈？”</p>\n  <p data-track=\"30\">此后，Claude Tag会持续监控这个工具的使用数据，一旦收到反馈就会主动提醒负责人，同时让它“去改进这个转化漏斗，你自己想想办法”。</p>\n  <p data-track=\"31\">总之就是一个纯粹的放养型，他们表示，到了现在这个阶段，或许<strong>信任比监督更重要</strong>。</p>\n  <p data-track=\"33\">实际上，所有的问题都要放在一个前提下去考虑。</p>\n  <p data-track=\"34\"><strong>底层模型的能力每两个月发生一次根本性跃迁。</strong></p>\n  <p data-track=\"35\">“技术的地基每两个月就会在你脚下发生根本性的变化……你必须待在前沿，其实得越过前沿才能真正感受到那个边界。但与此同时，你又得为今天正在使用这些模型的人提供价值。”</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20260917185128_845f69ad11838a11143be8f7d8d62045.webp\">\n  </div>\n  <p data-track=\"36\">而这是一种平衡，<strong>一半是艺术，一半是科学。</strong></p>\n  <p data-track=\"37\">由此带来的一条工作准则是，“你必须对自己造的东西保持非常不执着的态度。”</p>\n  <p data-track=\"38\">毕竟很多写进harness里的功能，本质上是为了弥补当时模型能力上的短板，一旦模型变强，这些功能就需要立刻拿掉。</p>\n  <p data-track=\"39\">一个很经典的案例就是<strong>to-do list</strong>功能。</p>\n  <p data-track=\"40\">在Sonnet 3.5阶段，模型还没办法完成连续多步的复杂任务，因此需要给它一份待办清单。</p>\n  <p data-track=\"41\">但一年之后，模型具备了更复杂的记忆能力，这个曾经的救命功能就像脚手架一样被拆除了。</p>\n  <p data-track=\"42\">另一个例子是<strong>AskUserQuestion</strong>工具。</p>\n  <p data-track=\"43\">最初是为了让Claude能在任务中途主动向用户提问而精心设计，但模型生成HTML的能力变强之后，开发者自然地转向让Claude直接生成带图表和mockup的可视化artifact来提问。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20260917185128_ea9edcfd06c1268f169a7311a5e880b7.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"44\">面对如此摇摇欲坠的现实，团队采取的方法是<strong>不再去构建一整套固定的解决方案，而是搭建一个个可以自由组合的“原语”（primitive）。</strong></p>\n  <p data-track=\"45\">比如Permissions、Visualizations、Verification、Code Review、Feedback……</p>\n  <p data-track=\"46\">这样做的好处是，当某一个原语过时、需要替换时，付出的代价更小。</p>\n  <p data-track=\"47\">并且，当这些原语层层叠加、组合在一起时，往往会涌现出超乎意料的新能力。</p>\n  <p data-track=\"49\">如果非要说这一年里工作方式的最大变化，概而言之就是，人与AI打交道的<strong>颗粒度不断上移</strong>。</p>\n  <p data-track=\"50\">先是token和具体的工具调用，到一次对话（session），再到一个完整的目标（goal），再到如今的“持续运行、跨越多次对话边界的工作系统。”</p>\n  <p data-track=\"51\">抽象的层级在不断上升，这一点也体现在两条并行的线索上。</p>\n  <p data-track=\"52\">第一条是<strong>基础设施的演进</strong>，从最早的本地运行到远程开发机，再到托管容器，再到可以运行在云端容器里的网页版，确保了任务能够一直在后台运行，并完成例行任务（routines）。</p>\n  <p data-track=\"53\">第二条是<strong>代码审查路线的演变。</strong></p>\n  <p data-track=\"54\">人从更琐碎的代码审查中得以抽身——让Claude大范围搜索出尽可能多的疑似问题，再针对每一个疑似问题做对抗性审查，从三个不同角度做一次交叉复核，从而过滤掉大部分噪音，只把真正需要关注的问题留给人。</p>\n  <p data-track=\"55\">而这套思路后续也演变成了workflows，由Claude自己编写代码，去编排多个子智能体的协作方式，把确定性的代码逻辑和智能体的自主判断结合在一起。</p>\n  <p data-track=\"56\">目前，Claude code团队里那些热衷于匠心手作的员工们已经放下了“被取代”的执着，开始享受性能提升的快感……</p>\n  <p data-track=\"57\">毕竟，软件工程本质上就是一个<strong>关于变化</strong>的行业，尽管解决的问题一直在变，解决问题的工具也一直在变。</p>\n  <p data-track=\"58\">谁能想到？十几二十年前人们还在手写没有任何框架的JavaScript。</p>\n  <p data-track=\"59\">如今，变化的速度快了些，但底层的逻辑始终没有变，归根结底——</p>\n  <p data-track=\"60\"><strong>工程师，始终是一个关于“如何解决问题”的职业。</strong></p>\n  <p data-track=\"61\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://www.youtube.com/watch?v=S-sYlFiGFv8</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Claude Code 团队分享在极快迭代节奏下的工作方法论：通过提升人机协作的抽象层级，从监督具体调用转向设定目标，并采用“原语”构建模式以应对底层模型能力的快速跃迁。",
+  "oneSentenceSummary": "Claude Code 团队分享在极快迭代节奏下的工作方法论：通过提升人机协作的抽象层级，从监督具体调用转向设定目标，并采用“原语”构建模式以应对底层模型能力的快速跃迁。",
+  "summary": "本文整理了 Claude Code 团队关于如何利用 AI 优化自身开发流程的访谈精华。团队揭示了其工作模式的根本转变：从逐行审视 AI 的工具调用（tool call）转向下达高层目标（goal）并信任模型自主达成。面对底层模型每两个月一次的能力跃迁，团队采取了“非执着”的产品态度，通过搭建可自由组合的“原语”（primitive）而非固定方案来降低维护成本。同时，人机协作的颗粒度不断上移，从 token 级演进到跨对话边界的工作系统，使工程师从琐碎的代码审查中抽身，回归到以“解决问题”为核心的职业本质。",
+  "mainPoints": [
+    {
+      "point": "人机协作颗粒度从“监督过程”上移至“定义目标”。",
+      "explanation": "团队不再逐条审视 tool call 和模型决策，而是下达 goal 让模型自行达成，将用户界面与思考记录解耦，实现从监督到信任的转变。"
+    },
+    {
+      "point": "采用“原语（Primitive）”构建模式应对模型能力的快速跃迁。",
+      "explanation": "由于底层模型能力迭代极快，许多功能（如 to-do list）会迅速过时。通过构建可自由组合的原子化原语（如权限、验证、反馈），可以降低替换成本并激发涌现能力。"
+    },
+    {
+      "point": "在技术前沿与用户价值之间寻找“艺术与科学”的平衡。",
+      "explanation": "开发者必须越过前沿以感知边界，但产品需服务于当下的用户。这意味着必须对构建的功能保持“不执着”的态度，随时准备拆除已失效的“脚手架”功能。"
+    },
+    {
+      "point": "基础设施与审查流程的演进支撑了更高层级的抽象。",
+      "explanation": "从本地运行到云端容器确保了任务的持续运行；代码审查从逐行阅读演变为由 AI 过滤噪音、人类进行对抗性交叉复核的 workflow。"
+    }
+  ],
+  "keyQuotes": [
+    "你必须对自己正在构建的东西保持非常不执着的态度，因为它们很快就会消失。",
+    "我们现在的工作层级，已经比 Claude 实际输出的 token 高出了一个抽象层。",
+    "被迫放手让 Claude 自己发挥，因为信任比监督更重要。",
+    "你必须既站在技术前沿，又为今天使用模型的人提供价值。这是一门艺术，也是一门科学。",
+    "工程师，始终是一个关于\"如何解决问题\"的职业。"
+  ],
+  "tags": [
+    "效率与成长",
+    "AI Agent",
+    "AI 编程",
+    "决策思维",
+    "职业成长"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 89,
+  "wordCount": 2303,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1789646173000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-17 19:56:13"
+}
