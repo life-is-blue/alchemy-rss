@@ -1,0 +1,50 @@
+{
+  "id": "RAW_6fabc4316a",
+  "title": "LLM 审查器的“阻止”是功能，不是判决",
+  "url": "https://dev.to/cole_halton_42f71d71b809b/an-llm-reviewers-block-is-a-feature-not-a-verdict-2l2d",
+  "date": "2026-09-19 08:15:05",
+  "author": "Cole Halton",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Every AI code review tool I test ends the same way: it prints a hard label. <code>approve</code>, <code>request changes</code>, <code>block</code>, a severity from 0 to 5. The team reads the label, and the label becomes the ground truth people argue about in the PR comments. Nobody questions the probability mass behind it.</p>\n  <p>There is a real problem hiding in that flow. When you ask an LLM for its confidence in its own review, the number is not calibrated. \"High confidence\" on a security finding means roughly nothing, because nothing in the model's training taught it to map its internal uncertainty onto the 1-100 scale it prints. Ask a code review model how sure it is that this is an auth bypass, and it will cheerfully say 0.98 whether it caught a real one or hallucinated a method call that doesn't exist. I have watched the same class of bug get flagged as \"critical\" on one run and \"looks fine\" on another run of the same model with a slightly different prompt.</p>\n  <p>There's a useful way to think about this that maps directly onto code review: treat the LLM verdict as a feature, not as the answer.</p>\n  <h2><a name=\"the-hardlabel-trap\" href=\"#the-hardlabel-trap\"> </a> The hard-label trap</h2>\n  <p>The core problem is a mismatch. A code review tool is, functionally, a classifier: for every finding it emits a label and a severity. But an LLM is not built as a classifier. Nothing about its training objective gives it a calibrated probability that a finding is real. It is trained to produce plausible text, and an uncalibrated confidence score is plausible text too.</p>\n  <p>A post that spells this out clearly is <a href=\"https://minimallysufficient.com/posts/llm-classification-is-feature-extraction/\" target=\"_blank\" rel=\"noopener noreferrer\">LLM Classification Is Feature Engineering</a>. The author walks through what you cannot get from a raw LLM verdict: trustworthy probabilities, threshold control to trade precision against recall, and any mechanism to know whether the model actually used the context you pasted into the prompt. The verdicts are hard labels, and hard labels hide the uncertainty that a review triage process depends on.</p>\n  <p>This is not an exotic corner of ML theory. It is the difference between \"this tool flagged a finding\" and \"this finding is real.\" Your reviewers cannot act until they make the second judgment, and the tool is handing you the first one dressed up as the second.</p>\n  <h2><a name=\"wrap-the-verdict-dont-trust-it\" href=\"#wrap-the-verdict-dont-trust-it\"> </a> Wrap the verdict, don't trust it</h2>\n  <p>The fix the post proposes is elegant: stop treating the LLM as the final classifier and use its verdict as an input feature to a small model you fit on your own data. Concretely:</p>\n  <p><code>p(real problem in this file) = sigmoid(alpha + beta * LLM_verdict)</code></p>\n  <p>The special case where beta goes to infinity just recovers the raw LLM verdict, which is the thing you are already doing and the thing that is unreliable. The whole point is to estimate beta from your own history, on your own repo, against your own ground truth, and then choose an operating threshold that matches how your team actually triages.</p>\n  <p>What this buys in a code-review context:</p>\n  <p><strong>Per-severity calibration.</strong> Most tools collapse everything into one label. If you keep a few features instead, one for the security findings, one for the style noise, one for the \"this will break the build\" cluster, you learn that your tool's style findings are right 40% of the time and its security findings are right 80%. Now you know to ignore the first category outright and act on the second.</p>\n  <p><strong>Your baseline is not the model's prior.</strong> A model ranks findings against the distribution of code it saw in training, which is not your codebase. Your codebase may have a burst of rare auth bugs or a noisy style history. A logistic regression fit to your own merges and reverts adapts to your baseline instead of the model's baked-in guess about what normal code looks like.</p>\n  <p><strong>You get a real trade-off dial.</strong> Right now you either trust every red flag or train the team to tune all of them out. With calibrated probabilities you can say we action findings above 0.8 and log the rest, and measure after two weeks whether that cut was right. That is a default your reviewers can defend, instead of vibes.</p>\n  <h2><a name=\"why-this-matters-more-as-ai-code-grows\" href=\"#why-this-matters-more-as-ai-code-grows\"> </a> Why this matters more as AI code grows</h2>\n  <p>The volume angle is what makes this urgent. A survey of <a href=\"https://arxiv.org/abs/2609.12012\" target=\"_blank\" rel=\"noopener noreferrer\">test-driven and evaluation-guided workflows for LLMs in software engineering</a> describes the loop teams are converging on: generate, verify by execution, refine. As code generation makes it cheaper to produce more code, the review and verification step becomes the bottleneck, not the writing. Productivity research in the <a href=\"https://aisel.aisnet.org/amcis2026/ai_systdesign/ai_systdesign/17\" target=\"_blank\" rel=\"noopener noreferrer\">AI-era software development metrics literature</a> makes the same point from the other side: proxies like lines of code or commits can keep rising while end-to-end delivery is still constrained by review throughput and architecture fit. Generating more code only matters if you can separate the good from the bad at speed, and an uncalibrated label does not let you do that at speed.</p>\n  <p>This is also the argument I keep coming back to across my own testing. The model that wrote the code should not be the one reviewing it, because that is one opinion measured N times. The model that reviews it should not decide unilaterally either. Its verdict is a signal your team should condition on, alongside the test failure, the author's explanation, and the file's history. I made the self-review version of this case before in <a href=\"https://dev.to/cole_halton_42f71d71b809b/why-you-shouldnt-let-the-model-review-its-own-ai-code-1llg\">why you shouldn't let the model review its own AI code</a>.</p>\n  <h2><a name=\"a-concrete-starting-point\" href=\"#a-concrete-starting-point\"> </a> A concrete starting point</h2>\n  <p>You do not need a data science team to get started. Keep the review history from your last few months: the finding text, the model's label, and whether the human reviewer ultimately agreed. That last column is your label. Fit a three-variable logistic regression with the LLM's verdict, the finding category, and the file touch count. Most review tools can export this, or you can collect it from your own merge history.</p>\n  <p>Then pick a threshold and see where you are. The output is not a magical review tool. It is a review tool whose confidence you actually trust, because you measured it on the code you actually ship. That is the whole difference between a feature and a verdict.</p>\n </body>\n</html>",
+  "aiSummary": "本文认为，AI 代码审查工具输出的二元“阻止”或“批准”标签并不可靠，因为它们基于底层模型未校准的置信度分数。作者建议将这些标签视为原始数据点进行统计分析，以便更细致地理解工具性能并设置适当的行动阈值。",
+  "oneSentenceSummary": "本文认为，AI 代码审查工具输出的二元“阻止”或“批准”标签并不可靠，因为它们基于底层模型未校准的置信度分数。作者建议将这些标签视为原始数据点进行统计分析，以便更细致地理解工具性能并设置适当的行动阈值。",
+  "summary": "该文探讨了当前 AI 代码审查系统的局限性，这些系统依赖于硬标签（如“阻止”或“批准”），而这些标签并不能准确反映发现正确的概率。作者解释，由于 LLM 不是作为分类器训练的，其置信度分数不可信。为了解决这个问题，文章提出了一种“包装”判决的方法，即对工具的输出数据进行逻辑回归拟合，从而实现校准的概率估计，并优化分诊流程。",
+  "mainPoints": [
+    {
+      "point": "不可靠的置信度分数",
+      "explanation": "当前一代的 AI 代码审查工具输出的置信度分数并未经过统计校准。这意味着‘高置信度’分数并不能可靠地表明一个发现是正确的，从而可能导致误报或漏报，并扰乱开发工作流程。"
+    },
+    {
+      "point": "‘硬标签’陷阱",
+      "explanation": "通过将审查结果呈现为二元的‘阻止’或‘批准’决策，这些工具强迫人们进行非黑即白的解读，而忽略了模型本身的不确定性。这种方法阻止了团队有效地平衡捕捉所有错误与避免不必要延迟之间的权衡。"
+    },
+    {
+      "point": "统计校准作为解决方案",
+      "explanation": "作者提倡在 AI 工具的原始输出上进行后处理，将其输入逻辑回归模型。这允许计算真实的概率分布，使团队能够设置具体的行动阈值（例如，仅阻止置信度 >80% 的问题），并区分不同类型的发现（例如，风格问题与安全问题）。"
+    }
+  ],
+  "keyQuotes": [
+    "核心问题是匹配不当。代码审查工具在功能上是一个分类器：对于每一个发现，它都会输出一个标签和严重程度。但 LLM 并不是作为分类器构建的。"
+  ],
+  "tags": [
+    "编程与工程",
+    "机器学习",
+    "大语言模型 (LLM)",
+    "代码质量",
+    "科技评论"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1034,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789776905000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-19 08:15:05"
+}

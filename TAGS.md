@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-19 07:46:49 | [返回首页](/README.md)
+**更新时间**: 2026-09-19 10:10:45 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16059)
+- [AI & 大模型](#ai-llm) (16102)
 - [软件架构](#architecture) (26)
 - [前端与全栈](#frontend-fullstack) (997)
-- [DevOps](#devops) (766)
+- [DevOps](#devops) (768)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6965)
+- [其他](#other) (6968)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [于是转身向具身走去｜对话王家伟：深朴智能-00-后首席科学家](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111995&idx=1&sn=6ecd657a0c1bd4133b465018aac0f5ea) - AI 精选
 - [介绍-Gemini-3.8-Live-和-3.8-Live-Extended-Thinking](https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/) - AI 精选
 - [为什么你应该为-AI-研究工作-—-Recursive-的-Richard-Socher](https://www.latent.space/p/recursive) - AI 精选
 - [10-个问答，深入分歧之下的具身机器人](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111818&idx=1&sn=1fa325e9d73eb410c18cddaf4e176f4b) - AI 精选
@@ -41,9 +42,8 @@
 - [介绍-Gemini-3.8-Flash-与-3.8-Flash-Cyber](https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/) - AI 精选
 - [介绍基于-Gemini-的智能体视频理解](https://deepmind.google/blog/introducing-agentic-video-in-gemini/) - AI 精选
 - [通往-Astra：关键能力与前沿保障](https://openai.com/index/path-to-astra) - AI 精选
-- [开创全球首个双盲-AI-评估](https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/) - AI 精选
 
-- [查看全部 16059 篇...](/details/tags/ai-llm.md)
+- [查看全部 16102 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 766 篇...](/details/tags/devops.md)
+- [查看全部 768 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6965 篇...](/details/tags/other.md)
+- [查看全部 6968 篇...](/details/tags/other.md)
 
 

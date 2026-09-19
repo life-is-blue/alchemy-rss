@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3b45608a3f",
+  "title": "DoorDash 利用多智能体 LLM 清理 60，000 个特性标志",
+  "url": "https://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/",
+  "date": "2026-09-18 21:50:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>DoorDash has built <a href=\"https://careersatdoordash.com/blog/automating-feature-flag-cleanup-at-scale-with-a-multi-agent-llm-system/\">a multi-agent LLM system to automate stale feature flag cleanup</a> across its codebase, combining live experimentation data, engineer approval, isolated Git worktrees, and automated validation. In an evaluation of 50 stale flags, the system produced usable pull requests for 45, averaging 13.8 minutes and $4.79 per cleanup, compared with DoorDash’s estimate of one to two hours for manual cleanup.</p>\n   <p>DoorDash’s experimentation platform manages more than 60,000 feature flags across roughly 623 repositories and creates about 2,300 new flags each month. The company identified more than 1,000 stale flags. A flag is classified as stale when it has not been modified for 90 days, remains referenced in code, is not archived or retired, and is not explicitly excluded. A daily process creates Jira tickets for identified flags.</p>\n   <p>The cleanup is complicated by DoorDash’s use of dependency-injected wrappers, where the flag definition, client call, and business logic can be distributed across multiple files. A simple Boolean flag can therefore require changes across five to 20 files, including tests.</p>\n   <p>Existing approaches address some of this problem. Uber’s open-source<a href=\"https://www.uber.com/us/en/blog/piranha/\"> Piranha</a> uses abstract syntax tree-based transformations to identify and remove stale feature flag code. DoorDash found that this approach did not cover its dependency injection patterns, where relationships between the flag and application logic are semantic rather than directly represented by matching syntax. Piranha provides a contrasting rule-based approach to the LLM-based system used by DoorDash.</p>\n   <p>The DoorDash workflow uses Google’s<a href=\"https://google.github.io/adk-docs/\"> Agent Development Kit</a> and has two phases. An orchestrator running Claude Sonnet retrieves stale flag tickets from Jira, searches the relevant repositories, and queries the experimentation platform through<a href=\"https://modelcontextprotocol.io/\"> Model Context Protocol</a> (MCP) for metadata including rollout percentage and target value. An engineer reviews the generated report and confirms the target value before code changes begin. MCP provides a standardized mechanism for connecting AI applications with external tools and resources.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/news/2026/09/doordash-feature-flag-cleanup/en/resources/1doordashffcleanup-1788418639546.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/doordash-feature-flag-cleanup/en/resources/1doordashffcleanup-1788418639546.jpeg\" rel=\"share\"></p>\n   <p><em>DoorDash’s two-phase feature flag cleanup workflow (Source: <a href=\"https://careersatdoordash.com/blog/automating-feature-flag-cleanup-at-scale-with-a-multi-agent-llm-system/\">DoorDash Blog Post</a>)</em></p>\n   <p>During the second phase, Claude Opus cleanup agents operate in isolated<a href=\"https://github.com/git/git/blob/master/Documentation/git-worktree.adoc\"> Git worktrees</a>, with up to four agents running concurrently per repository. Agents locate flag references, determine the cleanup strategy, modify source code and tests, and run builds, tests, <a href=\"https://github.com/jacoco/jacoco\">JaCoCo</a> patch coverage, and <a href=\"https://github.com/detekt/detekt\">Detekt</a> static analysis. A pull request is opened only after the validation checks pass. Each agent has a one-hour timeout, and Gradle runs without its daemon to prevent state sharing between worktrees.</p>\n   <p>The evaluation produced 31 first-pass merges, 14 revisions, and five engineer interventions. Simple flags achieved a 100% single-pass cleanup rate, compared with 94% for medium complexity flags and 85% for complex flags. The five interventions involved deep call chains and cross-interface parameter threading. DoorDash reported no bugs or regressions in the 50 evaluated changes.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/news/2026/09/doordash-feature-flag-cleanup/en/resources/1Screenshot 2026-09-02 at 11.48.38 PM-1788418639546.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/doordash-feature-flag-cleanup/en/resources/1Screenshot 2026-09-02 at 11.48.38 PM-1788418639546.png\" rel=\"share\"></p>\n   <p><em>Feature flag cleanup outcomes by complexity across the 50 evaluated flags (Source: <a href=\"https://careersatdoordash.com/blog/automating-feature-flag-cleanup-at-scale-with-a-multi-agent-llm-system/\">DoorDash Blog Post</a>)</em></p>\n   <p>The company plans to add confidence scoring for lower-risk cleanups and a post-cleanup code quality pass to identify issues such as misleading variable names after flag removal. The work was accepted for the <a href=\"https://conf.researchr.org/details/icsme-2026/icsme-2026-industry-track/8/Automating-Feature-Flag-Cleanup-at-Scale-with-Multi-Agent-LLM-Systems-An-Industrial-\">ICSME 2026 industry track</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DoorDash Uses Multi Agent LLMs to Clean up 60,000 Feature Flags\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789739400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DoorDash 构建了一个基于 Claude 和 MCP 的多智能体 LLM 系统，用于自动化清理过时的特性标志（Feature Flags），将单个标志的平均清理时间从约 1.5 小时缩短至 13.8 分钟。",
+  "oneSentenceSummary": "DoorDash 构建了一个基于 Claude 和 MCP 的多智能体 LLM 系统，用于自动化清理过时的特性标志（Feature Flags），将单个标志的平均清理时间从约 1.5 小时缩短至 13.8 分钟。",
+  "summary": "DoorDash 开发了一套两阶段的多智能体 LLM 系统，旨在解决超过 60，000 个特性标志带来的技术债。与 Uber 的 Piranha 等基于规则的 AST 工具不同，DoorDash 的系统利用 LLM 来处理复杂的依赖注入模式，在这种模式下，标志逻辑在语义上分布在多个文件中。该工作流使用编排器（Claude Sonnet）通过模型上下文协议（MCP）进行发现和元数据检索，随后由清理智能体（Claude Opus）在隔离的 Git 工作树中修改代码并运行自动化验证（JaCoCo， Detekt）。在对 50 个过时标志的测试中，该系统实现了 90% 的可用 PR 率且零回归，显著降低了每次清理的时间和财务成本。",
+  "mainPoints": [
+    {
+      "point": "LLM 解决了基于规则的 AST 工具在复杂架构中无法处理的语义鸿沟",
+      "explanation": "DoorDash 发现 Uber 的 Piranha（基于 AST）无法处理其依赖注入包装器，因为标志定义与业务逻辑分布在不同文件中；而 LLM 可以理解这些语义关系，从而识别所有必要的更改。"
+    },
+    {
+      "point": "两阶段编排工作流确保了代码修改前的安全性和准确性",
+      "explanation": "第一阶段使用 Claude Sonnet 和 MCP 检索元数据并生成报告以供工程师审核；第二阶段在隔离的 Git 工作树中部署 Claude Opus 智能体来执行更改并运行验证套件。"
+    },
+    {
+      "point": "将严格的自动化验证集成到智能体循环中以防止回归",
+      "explanation": "智能体并非简单地建议代码，而是运行构建、测试、JaCoCo 补丁覆盖率分析以及 Detekt 静态分析，仅在所有检查通过后才提交 Pull Request。"
+    },
+    {
+      "point": "系统在不同复杂度级别上均展现出显著的效率提升",
+      "explanation": "单个标志的平均清理成本降至 4.79 美元，耗时 13.8 分钟；简单标志的成功率为 100%，复杂标志为 85%，而手动清理的预估时间为 1-2 小时。"
+    }
+  ],
+  "keyQuotes": [
+    "在对 50 个过时标志的评估中，该系统产生了 45 个可用的 Pull Request，每次清理平均耗时 13.8 分钟，成本 4.79 美元",
+    "DoorDash 发现这种方法无法覆盖其依赖注入模式，在这种模式下，标志与应用程序逻辑之间的关系是语义上的，而非由匹配的语法直接表示"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI Agent",
+    "云原生 / DevOps",
+    "开发者工具",
+    "MCP协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 499,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789739400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-18 21:50:00"
+}
