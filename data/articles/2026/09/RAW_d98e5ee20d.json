@@ -1,0 +1,46 @@
+{
+  "id": "RAW_d98e5ee20d",
+  "title": "发布：datasette-auth-github 1.0",
+  "url": "https://simonwillison.net/2026/Sep/19/datasette-auth-github/",
+  "date": "2026-09-20 03:52:02",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">19th September 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/datasette-auth-github/releases/tag/1.0\">datasette-auth-github 1.0</a></span> <span class=\"beat-commit\">— Datasette plugin that authenticates users against GitHub</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I run this GitHub login plugin on the <a href=\"https://agent.datasette.io/\">agent.datasette.io</a> demo site and I noticed that my authenticated sessions weren't lasting very long. It turned out that the plugin was setting cookies without a <code>Max-Age</code> parameter, so they were expiring at the end of a browser session (which in Mobile Safari seems to happen pretty often, independently of how you are using the app.)</p>\n      <p>I fixed that in <a href=\"https://github.com/simonw/datasette-auth-github/issues/80\">#80</a> and, since this plugin has been around for quite a while and is tested against both Datasette 0.65.x and Datasette 1.0ax, I decided to bump it up to a 1.0 release. I'm trying to get better at promoting stable plugins to 1.0.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4952/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "datasette-auth-github 1.0 发布，修复了因 cookie 缺少 Max-Age 参数导致的会话过期问题，为 GitHub 用户提供更稳定的认证体验。",
+  "oneSentenceSummary": "datasette-auth-github 1.0 发布，修复了因 cookie 缺少 Max-Age 参数导致的会话过期问题，为 GitHub 用户提供更稳定的认证体验。",
+  "summary": "Simon Willison 发布了 datasette-auth-github 1.0 版本，这是一个为 Datasette 提供基于 GitHub 认证的插件。此次更新主要修复了一个 bug：由于设置 cookie 时未添加 Max-Age 参数，已认证的会话会提前过期——在移动端 Safari 上尤为明显。经过对多个 Datasette 版本的测试，作者将该插件提升为稳定的 1.0 版本，这也是其推动插件稳定版本号标准化工作的一部分。",
+  "mainPoints": [
+    {
+      "point": "修复会话持久化问题",
+      "explanation": "该插件此前在设置 cookie 时遗漏了 Max-Age 参数，导致会话在浏览器会话结束时即过期，这一问题在移动端 Safari 上尤为频繁。"
+    },
+    {
+      "point": "提升为稳定 1.0 版本",
+      "explanation": "鉴于该插件已存在较长时间，且同时兼容 Datasette 0.65.x 和 1.0ax，因此将其版本号提升至 1.0 以表明其稳定性。"
+    }
+  ],
+  "keyQuotes": [
+    "原来这个插件在设置 cookie 时没有加 Max-Age 参数，所以它们会在浏览器会话结束时过期"
+  ],
+  "tags": [
+    "编程与工程",
+    "后端开发",
+    "开源项目",
+    "模型发布",
+    "Microsoft"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 124,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789847522000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-20 03:52:02"
+}

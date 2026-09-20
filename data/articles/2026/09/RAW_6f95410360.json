@@ -1,0 +1,46 @@
+{
+  "id": "RAW_6f95410360",
+  "title": "观测记录：加州海狮与海鸬鹚",
+  "url": "https://simonwillison.net/2026/Sep/19/sighting-401567341/",
+  "date": "2026-09-20 01:10:08",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">19th September 2026</p>\n   <div class=\"beat beat-sighting\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label sighting\" href=\"https://simonwillison.net/elsewhere/sighting/\">Sighting</a> <span class=\"beat-title\">10:10 AM – 10:10 AM</span> <span class=\"beat-commit\">— California Sea Lion, Brandt's Cormorant, in Pillar Point Harbor, CA, US</span>\n     </div>\n     <captioned-image-gallery class=\"sighting-detail-gallery\" max-row-items=\"2\">\n      <figure>\n       <a href=\"https://static.inaturalist.org/photos/737061413/large.jpg\"><img src=\"https://static.inaturalist.org/photos/737061413/large.jpg\" alt=\"California Sea Lion\" loading=\"lazy\" data-width=\"2048\" data-height=\"1365\"></a>\n       <figcaption>\n        <a href=\"https://www.inaturalist.org/observations/401567605\" title=\"View observation on iNaturalist\">California Sea Lion</a>\n       </figcaption>\n      </figure>\n      <figure>\n       <a href=\"https://static.inaturalist.org/photos/737061040/large.jpg\"><img src=\"https://static.inaturalist.org/photos/737061040/large.jpg\" alt=\"Brandt's Cormorant\" loading=\"lazy\" data-width=\"1365\" data-height=\"2048\"></a>\n       <figcaption>\n        <a href=\"https://www.inaturalist.org/observations/401567341\" title=\"View observation on iNaturalist\">Brandt's Cormorant</a>\n       </figcaption>\n      </figure>\n     </captioned-image-gallery>\n     <div class=\"beat-note blogmark-body\">\n      <p>I only noticed this after I had taken the photo: Morris <a href=\"https://simonwillison.net/2026/Aug/15/sighting-391300422/\">the Northern Gannet</a> is peeking out from behind the base of the sign.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4951/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一份来自加州皮拉尔角港的简短 iNaturalist 观测记录，记录了加州海狮和海鸬鹚，并提到照片背景中出现了此前记录过的北方塘鹅「莫里斯」。",
+  "oneSentenceSummary": "一份来自加州皮拉尔角港的简短 iNaturalist 观测记录，记录了加州海狮和海鸬鹚，并提到照片背景中出现了此前记录过的北方塘鹅「莫里斯」。",
+  "summary": "这是一份日期为 2026 年 9 月 19 日上午 10:10 的简短个人观测记录，地点位于加利福尼亚州的皮拉尔角港。记录涵盖了两种生物：加州海狮和海鸬鹚，并分别附上了带有照片的 iNaturalist 观测链接。作者补充了一个小发现：直到拍完照片后，他才注意到此前曾观测过的北方塘鹅「莫里斯」正从照片中标志牌的底部探出头来。",
+  "mainPoints": [
+    {
+      "point": "在皮拉尔角港的一次观测中记录了两个物种。",
+      "explanation": "该记录列出了加州海狮和海鸬鹚，每种生物均附有 2026 年 9 月 19 日上午 10:10 的 iNaturalist 观测记录和照片。"
+    },
+    {
+      "point": "此前观测过的北方塘鹅「莫里斯」意外出现在照片中。",
+      "explanation": "作者指出，直到拍完照片后才发现北方塘鹅「莫里斯」正从标志牌底部探出头来，这与之前的观测记录形成了关联。"
+    }
+  ],
+  "keyQuotes": [
+    "我是在拍完照片后才注意到这一点的：北方塘鹅「莫里斯」正从标志牌的底部探出头来。"
+  ],
+  "tags": [
+    "生活与文化",
+    "野生动物观测",
+    "iNaturalist",
+    "观鸟",
+    "加州海狮"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 50,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Lifestyle_Culture",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789837808000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-20 01:10:08"
+}

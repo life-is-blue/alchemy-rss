@@ -1,0 +1,57 @@
+{
+  "id": "RAW_9b986b6623",
+  "title": "AI Agent Receipts：自签 vs. 自运行",
+  "url": "https://dev.to/rambozambo/ai-agent-receipts-run-them-yourself-vs-sign-them-yourself-44ob",
+  "date": "2026-09-19 18:20:59",
+  "author": "rambo",
+  "siteName": "DEV Community: machinelearning",
+  "content": null,
+  "aiSummary": "对四个新兴基础设施项目 vitni、AXR、XAIP 和 Zambo 的对比分析，这些项目提供可验证的执行收据，以解决 AI Agent 工具调用中的静默失败问题。",
+  "oneSentenceSummary": "对四个新兴基础设施项目 vitni、AXR、XAIP 和 Zambo 的对比分析，这些项目提供可验证的执行收据，以解决 AI Agent 工具调用中的静默失败问题。",
+  "summary": "文章探讨了 AI Agent 伪造任务完成的关键问题，提出「AI Agent 收据」概念——可验证、防篡改的工具执行记录。作者代表 Zambo 公司，对四种不同的解决方案进行了比较：vitni（自签名执行协议）、AXR（轻量级审计跟踪，强调行为可见性）、XAIP（提供商选择的共签机制）以及 Zambo（零集成服务，工具内置收据）。这些工具在实现方式上各有不同——从自建基础设施的密码学协议到托管「副产品」收据——但共享一个根本边界：它们证明某个操作发生并绑定结果，但无法保证输出的正确性。开发者的选择取决于他们是希望自行管理签名基础设施，还是通过工具提供商自动获取收据。",
+  "mainPoints": [
+    {
+      "point": "收据作为解决 Agent 静默失败的方案",
+      "explanation": "收据提供工具调用的可验证记录（调用内容、时间及结果），超越不可靠的日志，证明 Agent 确实执行了它声称的工作。"
+    },
+    {
+      "point": "'自签'与'副产品'的二分法",
+      "explanation": "开发者可以选择在自有基础设施中集成密码学协议（vitni、AXR、XAIP）自行签名调用，或使用 Zambo 等服务，收据作为工具使用的副产品自动生成。"
+    },
+    {
+      "point": "执行与正确性的区分",
+      "explanation": "所有收据技术都面临一个关键边界：它们证明某个操作发生并绑定响应字节，但无法保证输出的正确性，也无法抵御提示词注入攻击。"
+    },
+    {
+      "point": "行为可见性与密码学完整性的对比",
+      "explanation": "收据不仅证明记录未被篡改，还能帮助开发者识别逻辑错误——通过让记录决策与实际执行分支之间的矛盾变得可见（具体在 AXR 中）。"
+    }
+  ],
+  "keyQuotes": [
+    "AI Agent 收据是可验证的记录，证明特定 AI Agent 工具调用确实已执行——调用了什么、何时调用、返回了什么。",
+    "收据证明执行发生并绑定返回结果，但并不证明结果是正确的。",
+    "收据正成为 Agent 工作的记账单位——当有人问'它到底有没有做任何事'时，你指向的东西。",
+    "检查我，而不是信任我。他们说永远不会将营销宣传超过这条界限。很好。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "AI 工程",
+    "AI 工作流",
+    "测试与质量"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 86,
+  "wordCount": 1335,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789813259000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-19 18:20:59"
+}

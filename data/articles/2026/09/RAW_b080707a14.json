@@ -1,0 +1,61 @@
+{
+  "id": "RAW_b080707a14",
+  "title": "AWS Lambda 将无服务器推向长时间运行工作负载",
+  "url": "https://www.infoq.com/news/2026/09/lambda-90-minute-timeout/",
+  "date": "2026-09-19 17:11:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS Lambda now allows <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/09/aws-lambda-90-minute-function/\">functions running on Lambda Managed Instances to run for up to 90 minutes</a>, six times longer than the previous 15-minute limit, further blurring the line between a Lambda invocation and a traditional server. The limit remains unchanged for traditional synchronous requests.</p>\n   <p>Lambda's timeout increased from 5 minutes at launch in 2014 to 15 minutes in 2018, but that limit led to workarounds for longer-running workloads. Common cases included media processing, financial calculations, data processing and ETL, AI inference, and web scraping or large file transfers, where jobs can exceed 15 minutes of continuous execution.</p>\n   <p>As AWS points out in the article \"<a href=\"https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/\">Announcing 90-minute function timeout on AWS Lambda Managed Instances,</a>\" longer-running Lambda functions require extra care with network connections, temporary credentials, and duplicate execution. Developers should ensure connections and credentials remain valid for the full runtime and design operations to safely handle retries and duplicate processing. Durable Functions also require idempotency because failed steps may run again. The team warns about idempotency:</p>\n   <blockquote>\n    <p>Lambda does not guarantee exactly-once processing. With longer-running functions, the window for retries and duplicate deliveries increases. You can use Powertools for AWS Lambda to implement idempotency in your function code so that operations like payments or database writes produce the same result even if executed more than once.</p>\n   </blockquote>\n   <p>The 15-minute limit has been a <a href=\"https://www.reddit.com/r/aws/comments/1aujojg/scale_cheaply_background_tasks/\">recurring pain point in the AWS community</a>. Yan Cui, serverless expert and AWS Hero, <a href=\"https://www.linkedin.com/posts/theburningmonk_oh-wow-you-can-now-have-90-min-lambda-invocations-activity-7503590530346397696-CqX2?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">writes</a>:</p>\n   <blockquote>\n    <p>Part of me is sad that this further blurs the line between \"running a server\" and a Lambda invocation. But it does make sense, especially for the \"Lambda for agentic workflows\" use case.</p>\n   </blockquote>\n   <p>Lambda now offers two main forms: functions for event-driven workloads with a 15-minute timeout, and MicroVMs for user- or AI-generated code that can run for up to 8 hours. Lambda Managed Instances extend this model to steady-state workloads, allowing multiple requests per instance and access to EC2-based pricing and compute options without requiring infrastructure management. Rajesh Pandey, principal engineer at AWS, highlights how the increase can <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7503547680258682880/\">simplify many deployments:</a></p>\n   <blockquote>\n    <p>I've lost count of how many times customers have asked when are you guys going to build, \"Long-running Lambda functions.\" Finally, it's here. A lot of the duct tape built around Lambda’s maximum execution duration can now come off.</p>\n   </blockquote>\n   <p>While the <a href=\"https://www.reddit.com/r/aws/comments/1wbx6d2/lambda_gets_90_minute_timeout/\">community reaction has been mostly positive</a>, some warn that it might encourage fragile and costly patterns. User <em>Dull_Caterpillar_642</em> <a href=\"https://www.reddit.com/r/aws/comments/1wbx6d2/comment/p8uexxc/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">writes</a>:</p>\n   <blockquote>\n    <p>If it's taking 90 min, there's a good chance you should be using something like durable functions (...) Unless your code is literally doing meaningful stuff that entire time as opposed to waiting on other stuff, in which case the economics of Lambda may not work out as much in your favor, and something like ECS Tasks or AWS Batch could make more sense.</p>\n   </blockquote>\n   <p>The increased timeout is not the only recent announcement for Lambda Managed Instances, with the service now also <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/09/aws-lambda-graviton5-ec2/\">supporting Graviton5-powered EC2 instances</a>.</p>\n   <p>The extended timeout is supported in all regions where Lambda Managed Instances are available.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Lambda Pushes Serverless Toward Long-Running Workloads\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/lambda-90-minute-timeout/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789809060000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS Lambda 在 Lambda Managed Instances 上将函数超时时间提升至 90 分钟，是此前 15 分钟上限的六倍，模糊了无服务器与服务器之间的界限，同时引发了幂等性和成本方面的担忧。",
+  "oneSentenceSummary": "AWS Lambda 在 Lambda Managed Instances 上将函数超时时间提升至 90 分钟，是此前 15 分钟上限的六倍，模糊了无服务器与服务器之间的界限，同时引发了幂等性和成本方面的担忧。",
+  "summary": "AWS 将 Lambda Managed Instances 上运行的函数最大超时时间从 15 分钟提升至 90 分钟，而传统同步请求仍保持 15 分钟限制。此次调整针对此前需要变通方案的工作负载，如媒体处理、金融计算、ETL、AI 推理和大文件传输。AWS 警告称，更长的运行时间要求对网络连接、临时凭证和重复执行格外谨慎，并强调幂等性，因为 Lambda 不保证恰好一次处理。文章将此变化置于背景中：Lambda 现在涵盖事件驱动函数（15 分钟）、用于用户或 AI 生成代码的 MicroVM（最长 8 小时），以及面向稳态工作负载、采用 EC2 定价的 Managed Instances。社区反应总体积极，AWS Hero Yan Cui 指出无服务器与服务器之间的界限正在模糊，AWS 首席工程师 Rajesh Pandey 表示围绕旧限制搭建的许多「胶带」可以拆掉了。一些从业者则警告，90 分钟的运行可能意味着选错了工具，建议改用持久函数、ECS Tasks 或 AWS Batch。",
+  "mainPoints": [
+    {
+      "point": "AWS Lambda 在 Lambda Managed Instances 上超时时间提升至 90 分钟，是此前 15 分钟上限的六倍，但仅适用于该执行模式。",
+      "explanation": "传统同步请求仍保持 15 分钟限制。此次调整适用于 Lambda Managed Instances 上的函数，该模式支持稳态工作负载、每实例多请求，以及基于 EC2 的定价，无需管理基础设施。"
+    },
+    {
+      "point": "更长的运行时间将工程负担转向幂等性、凭证与连接有效性以及重复执行。",
+      "explanation": "AWS 指出 Lambda 不保证恰好一次处理，且重试和重复投递的窗口随运行时间增长而扩大。开发者必须确保连接和临时凭证在整个运行期间有效，并将支付或数据库写入等操作设计为可安全重复执行，例如使用 Powertools for AWS Lambda。"
+    },
+    {
+      "point": "15 分钟限制是长期痛点，此次提升消除了媒体处理、ETL、AI 推理和大文件传输方面的许多变通方案。",
+      "explanation": "超时时间从 2014 年发布时的 5 分钟增长到 2018 年的 15 分钟，但超过 15 分钟的任务仍需要变通方案。AWS 首席工程师 Rajesh Pandey 表示，围绕旧上限搭建的许多「胶带」现在可以拆掉了。"
+    },
+    {
+      "point": "此次变化进一步模糊了无服务器函数与传统服务器之间的边界，一些从业者对此持矛盾态度。",
+      "explanation": "无服务器专家 Yan Cui 表示，他有些遗憾这条界限进一步模糊了，尽管这对智能体工作流来说是合理的。Lambda 现在涵盖 15 分钟的事件驱动函数、用于用户或 AI 生成代码的 8 小时 MicroVM，以及面向稳态工作负载的 Managed Instances。"
+    },
+    {
+      "point": "社区反应总体积极，但批评者警告更长的超时可能鼓励脆弱且昂贵的模式。",
+      "explanation": "一位 Reddit 评论者认为，如果任务需要 90 分钟，持久函数、ECS Tasks 或 AWS Batch 可能更合适，除非代码全程都在做有意义的工作，否则 Lambda 的经济性可能并不划算。"
+    }
+  ],
+  "keyQuotes": [
+    "我有些遗憾，这进一步模糊了「运行服务器」和 Lambda 调用之间的界限。但这确实合理，尤其是对于「Lambda 用于智能体工作流」这一用例。",
+    "Lambda 不保证恰好一次处理。对于运行时间更长的函数，重试和重复投递的窗口会扩大。",
+    "我已经数不清有多少客户问过，你们什么时候会构建「长时间运行的 Lambda 函数」。终于来了。围绕 Lambda 最大执行时长搭建的许多「胶带」现在可以拆掉了。",
+    "如果它需要 90 分钟，那你很可能应该使用持久函数之类的方案（……）除非你的代码在那整段时间里确实在做有意义的事情，而不是在等待其他东西，否则 Lambda 的经济性可能对你并不那么有利，ECS Tasks 或 AWS Batch 之类的方案可能更合适。"
+  ],
+  "tags": [
+    "编程与工程",
+    "云原生 / DevOps",
+    "后端开发",
+    "系统设计",
+    "分布式系统"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 80,
+  "wordCount": 498,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789809060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-19 17:11:00"
+}
