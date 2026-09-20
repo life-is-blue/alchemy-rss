@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-20 10:16:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-20 16:56:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -776,9 +776,7 @@
 
 ### [iOS-NFC-手册：如何使用-React-Native-读取、写入和锁定-NFC-标签](https://www.freecodecamp.org/news/the-ios-nfc-handbook-how-to-read-write-and-lock-nfc-tags-with-react-native/)
 
-2026-09-20 01:15:45 | 标签: 编程与工程, 移动开发, 开发者工具, 前端与 Web, Swift
-
-> 本手册深入探讨了如何通过 React Native 将 NFC 功能集成到 iOS 应用程序中。文章首先引导读者应对 Apple 开发者要求的「重重考验」——包括付费账户和明确的 App ID，随后进入 NDEF 记录读写的技术实现。作者强调采用解耦架构以克服模拟器不支持 NFC 的问题，从而允许通过 TypeScript 进行广泛的逻辑测试，同时将依赖硬件的代码减至最少。指南涵盖了 CoreNFC 基于会话 API 的细微差别、不同平台天线位置的物理差异，以及锁定 NFC 标签的永久性。最后，文章讨论了从第三方库转向自定义原生 Swift 模块，以获得更好的控制力和性能。
+2026-09-20 01:15:45
 
 
 
