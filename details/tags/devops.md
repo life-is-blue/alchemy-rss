@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-21 10:16:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-21 17:26:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -650,9 +650,7 @@
 
 ### [Carlos-Asmat---我搞了一台-BanaNAS](https://asmat.ca/blog/i-went-bananas/)
 
-2026-09-21 00:00:00 | 标签: 编程与工程, 自托管, 系统设计, 云原生 / DevOps, 性能优化
-
-> 作者记录了搭建家用 NAS 的过程，以摆脱云存储订阅和 Google 的数据收割。他从一台 Zotac MAGNUS EN1070K 迷你主机起步，设计并 3D 打印了一个扩展外壳，在 ICY Dock 热插拔硬盘笼中容纳六块硬盘，由 Pico PSU 供电、Noctua 风扇散热。他在 eBay 上买了六块二手 8TB WD Red Plus 硬盘，配置成 RAIDZ2 存储池，可用容量 29TB 并启用加密。TrueNAS 因缺乏 WiFi 支持且移除了 Pascal GPU 驱动而被排除，于是他安装了 Kubuntu 24.04 搭配 ZFS 和 Docker Compose。他还自制了...
+2026-09-21 00:00:00
 
 
 

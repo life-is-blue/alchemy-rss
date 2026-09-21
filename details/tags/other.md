@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-21 10:16:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-21 17:26:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -16363,25 +16363,19 @@
 
 ### [GitHub---adonis-singh/re4：《生化危机-4》（GameCube，G4BE08-调试版本）——完整字节级一致的-C/C++-反编译](https://github.com/adonis-singh/re4)
 
-2026-09-21 01:38:27 | 标签: 编程与工程, 游戏开发, 开源项目, C++, 逆向工程
-
-> 该仓库呈现了《生化危机 4》任天堂 GameCube 版本的完整字节级一致反编译，具体为 G4BE08 调试版本（2004 年 11 月 25 日原型，双碟）。构建该项目可精确复现 main.dol 及全部 114 个 REL 覆盖模块，每次构建均通过 build.sha1 验证。代码树包含 1083 个对象和 15641 个函数，以约 55.5 万行 C/C++ 编写，不含汇编文件。项目使用原始编译器：游戏代码使用 SN Systems ProDG 3.9.3（GCC 2.95.3），CRI 中间件使用 Metrowerks CodeWarrior 2.4.7，任天堂 SDK 使用 Code...
+2026-09-21 01:38:27
 
 
 
 ### [使用-TypeScript-和-Redis-实现滑动窗口限流器](https://www.sitepoint.com/distributed-sliding-window-rate-limiter-typescript-redis/)
 
-2026-09-20 22:38:55 | 标签: 编程与工程, 分布式系统, 开发者工具, 性能优化, 后端开发
-
-> 本技术指南详细介绍了生产级分布式限流器的实现，旨在解决分布式系统中常见的 TOCTOU（检查时间到使用时间）竞态条件。通过利用 Redis 有序集合（Sorted Sets）和原子化 Lua 脚本，作者实现了一种滑动窗口算法，消除了固定窗口方法中常见的边界突发流量问题。该方案支持双重配额强制执行（每分钟请求数 RPM 和每分钟 Token 数 TPM），提供符合 IETF 标准的限流响应头，并包含针对 Express 和 Hono 的中间件集成。文章还通过 k6 负载测试验证了实现的正确性，证明在高并发环境下实现了零超额准入。
+2026-09-20 22:38:55
 
 
 
 ### [修复-PostgreSQL-索引膨胀与缓冲缓存问题](https://www.sitepoint.com/postgresql-index-bloat-write-amplification-buffer-cache/)
 
-2026-09-20 22:38:13 | 标签: 编程与工程, 数据库, 性能优化, 开发者工具, 系统设计
-
-> 本文探讨了由 MVCC 架构引起的、经常被忽视的 PostgreSQL 索引膨胀问题，即更新和删除操作会在 B-Tree 索引中留下死元组引用。作者通过构建一个可复用的 SQL 工具箱，提供了一套实操的诊断方法。文中演示了如何搭建可复现的 Docker 环境来产生模拟膨胀，并使用 `pgstattuple` 扩展来衡量叶子节点密度和碎片化程度。此外，文章解释了膨胀的索引如何通过浪费共享内存来降低缓冲缓存命中率，并引入了一种计算写放大率的方法来评估 HOT（Heap-Only Tuple）更新的效率。指南最后给出了可操作的调优建议，例如使用 `REINDEX CONCURRENTLY` 和调整 ...
+2026-09-20 22:38:13
 
 
 
@@ -41891,11 +41885,11 @@
 
 
 
-### [深度拆解：AI-Agent-Harness-的构造](https://baoyu.io/translations/2026-05-10/akshay-pachaar-2041146899319971922)
+### [Codex-的野心，MCP-和-Skill-的下一步](https://baoyu.io/blog/2026-05-11/skill-next-codex)
 
-2026-05-10T00:00:00.000Z
+2026-05-11T00:00:00.000Z
 
-> 深入探讨 Anthropic、OpenAI、Perplexity 和 LangChain 究竟在开发什么。涵盖编排循环、工具、记忆、上下文管理以及所有能将“无状态”大语言模型转变为全能 Agent 的核心组件。
+> Codex 右侧工作区的演进不只是 UI 变化，而是在为插件生态铺路。
 
 
 
