@@ -1,0 +1,62 @@
+{
+  "id": "RAW_4a79af762c",
+  "title": "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号 · AIHOT",
+  "url": "https://aihot.news/items/cmua567e703tmro5t558lzx7o",
+  "date": "2026-09-21 02:05:38",
+  "author": "noreply@aihot.news (Hacker News 热门（buzzing.cc 中文翻译）)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <p>OpenAI 的广告收集器位于 <code>bzr.openai.com</code>，会设置一个名为 <code>__obi</code> 的 cookie，作用域限定为 <code>.openai.com</code>。该值在你使用 ChatGPT 期间存在，并与你的 ChatGPT 账户绑定。随后，<code>__obi</code> 会从你访问的普通网站发送给 OpenAI。</p>\n  <p>任何在 ChatGPT 上购买广告的公司都会在自己的网站上安装<a href=\"https://developers.openai.com/ads/measurement-pixel?ref=buchodi.com\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\">一小段 OpenAI 代码</a>，就像零售商已经安装 Meta 和 Google 的追踪代码一样。加载这段代码会将 <code>__obi</code> 连同你正在浏览的页面数据一起发送给 OpenAI。这包括你正在搜索的产品、正在阅读的文章以及购买行为。</p>\n  <p>归根结底，OpenAI 可以将你在这些网站上的行为与你的 ChatGPT 账户关联起来。</p>\n  <p>我在自己的手机上复现了完整机制，用两种独立的捕获方法进行了验证，并与覆盖 1,029 个主机名上 936 个不同广告主像素的、长达数月的观测流量进行了交叉核对。</p>\n  <figure>\n   <img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fstorage.ghost.io%2Fc%2Fb8%2F53%2Fb853e3d4-3186-409d-9c7f-7da931a60431%2Fcontent%2Fimages%2F2026%2F09%2FScreenshot-2026-09-20-at-5.00.35---PM.png&amp;exp=1790013600&amp;sig=b919b1f84f1c0c0eb862a836382821d708a7977e5da62a4be41b044d9e2b1f22\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n  </figure>\n  <h2>工作原理</h2>\n  <p><strong>第 1 步。ChatGPT 创建一个标识符并对其进行签名。</strong></p>\n  <p>在 <code>chatgpt.com</code> 上，客户端生成 16 个随机字节，并调用 <code>POST /backend-api/bazaar/obi/sync-token</code>（未登录时则调用 <code>/backend-anon/</code>）。后端返回一个 RS256 JWT：</p>\n  <pre><code>{\n  \"iss\": \"chatgpt-wadi\",\n  \"aud\": \"bzr.openai.com\",\n  \"purpose\": \"obi_sync\",\n  \"operation\": \"set\",\n  \"consent_decision\": \"analytics_allowed\",\n  \"consent_policy_version\": \"user_granular_consent_v1\",\n  \"sub\": \"«redacted: 64-hex account subject»\",\n  \"subject_type\": \"account_user\",\n  \"obi\": \"«redacted: 22-char identifier»\",\n  \"exp\": \"«iat + 60s»\"\n}\n</code></pre>\n  <p><code>sub</code> 是账户。<code>obi</code> 是标识符。token 将二者绑定，作用域限定于收集器，并在 60 秒后过期。<code>bzr</code> 代表 <code>bazaar</code>，即 OpenAI 内部对广告平台的称呼；<code>wadi</code> 是签发服务。</p>\n  <p><strong>第 2 步。该标识符成为 OpenAI 域名下的一个 cookie。</strong></p>\n  <p>客户端将 <code>{\"token\": \"«JWT»\"}</code> 跨站 POST 到 <code>bzr.openai.com/v1/obi/sync</code>。响应如下：</p>\n  <pre><code>Set-Cookie: __obi=«redacted»; Domain=.openai.com; HttpOnly;\n            Max-Age=31536000; Path=/; SameSite=none; Secure\n</code></pre>\n  <p><code>SameSite=none</code> 与 <code>Secure</code> 是 cookie 在跨站请求中被发送所需的配置。<code>Max-Age</code> 为一年。JWT 中的 <code>obi</code> 值与 cookie 中的值完全相同。</p>\n  <p><strong>第 3 步。广告主网站将其回传。</strong></p>\n  <p>有三类请求会从广告主的页面发往 OpenAI 的主机。在一台 jar 中含有 <code>__obi</code> 的手机上，这三类请求都携带了它：</p>\n  <table>\n   <thead>\n    <tr>\n     <th>请求</th>\n     <th>携带了 <code>__obi</code></th>\n     <th>备注</th>\n    </tr>\n   </thead>\n   <tbody>\n    <tr>\n     <td><code>GET bzrcdn.openai.com/sdk/oaiq.min.js</code></td>\n     <td>是</td>\n     <td>脚本本身的加载</td>\n    </tr>\n    <tr>\n     <td><code>POST bzr.openai.com/v1/sdk/events</code> 与 <code>obref</code></td>\n     <td>是</td>\n     <td>转化事件</td>\n    </tr>\n    <tr>\n     <td><code>POST bzr.openai.com/v1/sdk/events</code>，裸请求体</td>\n     <td>是</td>\n     <td>该 SDK 的“无凭据”路径</td>\n    </tr>\n    <tr>\n     <td><code>GET bzrcdn.openai.com/pixel-config/…</code></td>\n     <td>完全没有 cookie 头</td>\n     <td>对照组</td>\n    </tr>\n   </tbody>\n  </table>\n  <p>第一行尤其值得关注。像素 SDK 有一条省略凭据的代码路径，但这无济于事：在 OpenAI 的任何代码运行之前，浏览器就已经把 cookie 附加到了加载该 SDK 的 <code>&lt;script src&gt;</code> 请求上。仅仅因为加载了这个标签，标识符就被泄露了。</p>\n  <h2>随之传输的内容</h2>\n  <p>同一个 SDK 还会从广告主的页面上收集身份信息。其载荷将四个来源分开，并由 OpenAI 自己标注：<code>in</code> 对应广告主有意传入的值，而 <code>fm</code>、<code>ht</code>、<code>js</code> 则对应 SDK 从表单字段、渲染后的页面文本以及标签管理器总线中抓取的值。在观测到的流量中，抓取到的身份信息数量超过了广告主提供的身份信息，分别为 685 个事件对 255 个。</p>\n  <p>标签管理器总线是电子邮件最大的来源。该 SDK 替换了<code>window.dataLayer.push</code>用自己的函数，还读取<code>adobeDataLayer</code>，并通过解析<code>l=</code>参数（来自<code>gtm.js</code>script 标签）来定位被重命名的 GTM 层。当前版本从中获取电子邮件和电话。0.1.31 版本在 8 月 27 日缩小范围之前，还获取了姓名和地理位置。</p>\n  <p>电子邮件、电话、名字和姓氏在传输前均经过 SHA-256 哈希处理。国家、地区、城市和邮政编码则以明文发送。邮政编码是被收集最多的表单字段，在 28 个网站上共发生 100 次事件。</p>\n  <p>URL 在发送前会被缩减为源站加路径；在观测到的 23,929 个 URL 中，没有一个携带查询字符串。路径得以保留，而到达收集器的路径中包括一种医疗状况、一个债务解决方案漏斗以及一份诉讼受理表单。</p>\n  <p>在 881 个已知设置的像素中，有 638 个启用了自动匹配，包括所有观察到的信贷和借贷广告主。它由 OpenAI 的 Ads Manager 控制。一份拒绝名单排除了密码、一次性验证码、卡号、SSN、出生日期、病史、诊断和法院相关字段。</p>\n  <p>在相同的广告主页面请求中，浏览器屏蔽了所有其他 OpenAI cookie：</p>\n  <table>\n   <thead>\n    <tr>\n     <th>Cookie</th>\n     <th>结果</th>\n    </tr>\n   </thead>\n   <tbody>\n    <tr>\n     <td><code>oai-did</code>、<code>oaicom-stable-id</code></td>\n     <td>已拦截，<code>SameSite=Lax</code></td>\n    </tr>\n    <tr>\n     <td><code>oai-client-auth-info</code>，会话 cookie</td>\n     <td>已拦截，域名不匹配</td>\n    </tr>\n    <tr>\n     <td><code>__obi</code></td>\n     <td>已发送</td>\n    </tr>\n   </tbody>\n  </table>\n  <p><code>__obi</code> 是唯一配置了 <code>SameSite=None</code> 的 OpenAI 标识符。</p>\n  <h2>观测到的触达范围</h2>\n  <p>在我的设备上，一个 <code>__obi</code> 值从 12 个商业网站通过 13 个不同的像素 ID 被发送至 OpenAI，其中包括 Chewy、Wayfair、ThriftBooks、Eventbrite、HelloFresh、Coursera 和 SeatGeek。每个请求都以 <code>202</code> 被接受。</p>\n  <p>在更广泛的流量中，30 个不同的 <code>__obi</code> 值中有 12 个出现在不止一个广告主名下，其中一个出现在十个广告主名下。</p>\n  <h2>在你登出状态下它依然有效</h2>\n  <p>在 932 个已解码的同步 token 中，736 个携带 <code>subject_type: account_user</code>，196 个携带 <code>anonymous</code>。匿名主体与账户主体一样稳定：每台设备一个，至少持续 27 天。</p>\n  <h2>OpenAI 的 cookie 政策怎么说</h2>\n  <p>OpenAI 将 <code>__obi</code> 列在分析类 Cookie 下，有效期一年，出现在 <code>chatgpt.com</code> 和 <code>openai.com</code> 上。它是该栏目中唯一的条目。该政策将分析类 Cookie 描述为帮助 OpenAI 了解其服务的表现及使用情况。</p>\n  <p>OpenAI 将分析类和营销类作为两个独立的同意选项来运行，即 <code>oai_consent_analytics</code> 和 <code>oai_consent_marketing</code>，而我解码的每一个同步 token 都带有 <code>consent_decision: analytics_allowed</code>。允许分析类但拒绝营销类的人就会得到这个。</p>\n  <h2>OpenAI 的回应</h2>\n  <p>我于 9 月 14 日将相关机制和两个问题发送至 press@openai.com 和 privacy@openai.com：为什么 <code>__obi</code> 被归类为分析类 cookie，以及一个授予分析同意但拒绝营销同意的用户是否仍会收到它。回复来自 OpenAI Support。它确认收到了询问，表示相关观察结果将在内部共享以供审查，但没有回答这两个问题中的任何一个。上述脚本加载观察是在询问发出之后做出的。如果 OpenAI 作出回应，我将更新本文。</p>\n  <h2>局限</h2>\n  <p><strong>浏览器。</strong> 在 Android 版 Chrome 上观察到。<a href=\"https://webkit.org/tracking-prevention/?ref=buchodi.com\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\">Safari 的智能防跟踪</a>会阻止所有第三方 cookie，而 iOS 上的 Chrome 运行于 WebKit，因此该机制在任何 iOS 浏览器上都不起作用。桌面版 Chrome 尚未测试。</p>\n  <p><strong>门控。</strong>大约每五个 ChatGPT 会话中就有一个会生成同步 token。ChatGPT 的移动网页客户端在投放广告时完全不进行同步。按照以下步骤操作的人可能会看到像素触发，但没有附带任何 cookie。</p>\n  <p><strong>这种关联并未被观测到。</strong> <code>202</code> 意味着收集器接受了附带 cookie 的事件。OpenAI 在服务端将其解析到账户，这一点从设计上可以推断；我并未亲眼观察到这一过程。</p>\n  <p><strong>Meta 多年前就构建了结构上等价的东西。</strong>一个已登录的账户、像素触发时的第三方 cookie、站外转化被解析到某个用户画像。这套机制是广告技术的标准做法。没有先例的是将其运行在 AI 聊天产品上。人们会向这些产品倾诉他们不会发在社交网络上的事情，而这些产品正越来越多地代表他们行事。</p>\n  <p><strong>该像素的另一个 cookie 不会这样做。</strong> <code>__obref</code> 设置在广告主自己的域名上。每个站点获得不同的值，任何站点都无法看到其他站点的值。在观测到的 2,860 个值中，有 2,828 个仅出现在一个广告主之下。</p>\n  <p><strong>广告主看不到这一点。</strong> <code>__obi</code> 属于一个他们的脚本无法读取的域名。他们安装了一个转化像素，却无从得知自己的访客正被解析到某个 ChatGPT 身份。</p>\n </body>\n</html>",
+  "aiSummary": "一项独立调查显示，OpenAI 在 .openai.com 设置的 __obi Cookie，并从广告商页面跨站发送，可将站外浏览行为和哈希化的身份数据关联到用户的 ChatGPT 账户。",
+  "oneSentenceSummary": "一项独立调查显示，OpenAI 在 .openai.com 设置的 __obi Cookie，并从广告商页面跨站发送，可将站外浏览行为和哈希化的身份数据关联到用户的 ChatGPT 账户。",
+  "summary": "文章记录了一种围绕名为 __obi 的 Cookie 构建的追踪机制，该 Cookie 由 OpenAI 在 bzr.openai.com 的广告收集器设置在 .openai.com 域上。在 chatgpt.com 上，客户端生成随机标识符，调用 sync-token 接口，并收到一个 RS256 JWT，其中 sub 为账户标识，obi 为该标识符，且有效期为 60 秒。随后客户端跨站 POST 该令牌至 bzr.openai.com，返回带有 Domain=.openai.com、SameSite=None、Secure 且 Max-Age 为一年 的 __obi Cookie。任何使用 OpenAI 测量像素的广告商都会随页面和转化数据一起将 __obi 发送回 OpenAI，从而使 OpenAI 能将站外行为关联到 ChatGPT 账户。同一 SDK 还会从表单字段、渲染的页面文本以及标签管理器总线中收集身份数据；抓取到的身份（685 条事件）超过广告商提供的（255 条），其中电子邮件和电话号码采用 SHA-256 哈希，而国家、地区、城市和邮政编码则以明文传输。作者在 Android 手机上复现了整个流程，使用两种抓包方式验证，并与数月观察到的流量进行交叉比对，覆盖 936 个广告像素，涉及 1，029 个主机名。OpenAI 支持团队确认收到了询问，但未回答任何问题。作者还列出了局限性：该机制在 iOS 浏览器上无效，大约每五个 ChatGPT 会话中就有一次会发出 sync token，且服务器端的账户解析是推断得出的而非直接观察。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 的 __obi Cookie 是唯一配置了 SameSite=None 的 OpenAI 标识符，因此它会从第三方广告商页面发送，而其他 OpenAI Cookie 被阻止。",
+      "explanation": "该 Cookie 在 .openai.com 上设置，属性为 SameSite=None、Secure，且 Max-Age 为一年。在同一广告页面请求中，oai-did 和 oaicom-stable-id 因 SameSite=Lax 被阻止，会话 Cookie 因域名不匹配被阻止，唯一能够跨站传递的标识符就是 __obi。"
+    },
+    {
+      "point": "签名的 JWT 将 ChatGPT 账户绑定到标识符上，随后该标识符被附加到广告像素请求中。",
+      "explanation": "客户端调用 POST /backend-api/bazaar/obi/sync-token，收到一个 RS256 JWT，其中 sub 为账户标识，obi 为标识符，作用域限定在收集器上，且 60 秒后过期。客户端随后跨站 POST 该令牌至 bzr.openai.com/v1/obi/sync，返回 __obi Cookie；SDK 的脚本加载、转化事件，甚至无凭证路径都携带该 Cookie。"
+    },
+    {
+      "point": "像素 SDK 从抓取来源收集的身份数据多于广告商提供的数值。",
+      "explanation": "负载分为（广告商提供的）和 fm、ht、js（分别从表单字段、渲染的页面文本和标签管理器总线抓取）。观察到的流量中，抓取的身份事件为 685 条，广告商提供的为 255 条，其中标签管理器总线是电子邮件的最大来源；邮政编码是收集最频繁的表单字段，共计 100 条，遍及 28 个站点。"
+    },
+    {
+      "point": "该机制即使在未登录用户情况下也会运行，并且跨多个广告商。",
+      "explanation": "在 932 个已解码的 sync token 中，736 个携带 subject_type 为 account_user，196 个为 anonymous，且匿名主体在同一设备上保持稳定至少 27 天。作者的设备上，一个 __obi 值通过 13 个像素 ID 从 12 个商业站点发送；在更广泛的流量中，30 个 __obi 值中有 12 个出现在多个广告商下，其中一个出现了十次。"
+    },
+    {
+      "point": "作者向 OpenAI 的披露未得到回复，文章也列出了自身的局限性。",
+      "explanation": "作者于 9 月 14 日向 press@openai.com 和 privacy@openai.com 发送邮件，询问为何将 __obi 分类为 analytics，以及仅有 analytics 同意是否仍会产生该 Cookie；OpenAI 支持确认收悉但未回答任何问题。局限性包括在 iOS 浏览器上无效，大约每五个会话中会出现一次 sync token，且服务器端的账户解析是推断而非直接观察。"
+    }
+  ],
+  "keyQuotes": [
+    "归根结底，OpenAI 可以将你在这些网站上的行为与你的 ChatGPT 账户关联起来。",
+    "仅仅因为加载了这个标签，标识符就被泄露了。",
+    "在观测到的流量中，抓取到的身份信息数量超过了广告主提供的身份信息，分别为 685 个事件对 255 个。",
+    "没有先例的是将其运行在 AI 聊天产品上。人们会向这些产品倾诉他们不会发在社交网络上的事情，而这些产品正越来越多地代表他们行事。",
+    "他们安装了一个转化像素，却无从得知自己的访客正被解析到某个 ChatGPT 身份。"
+  ],
+  "tags": [
+    "资讯与媒体",
+    "数字隐私",
+    "科技新闻",
+    "MCP协议",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 85,
+  "wordCount": 2584,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "News_Media",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789927538000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-21 02:05:38"
+}

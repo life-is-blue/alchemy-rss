@@ -1,0 +1,66 @@
+{
+  "id": "RAW_aca67cde25",
+  "title": "Bun 四个月内将 53.5 万行 Zig 重写为 Rust，消除大量内存泄漏",
+  "url": "https://www.infoq.com/news/2026/09/bun-AI-rewrite-zig-rust-4-months/",
+  "date": "2026-09-21 03:51:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Bun creator Jarred Sumner <a href=\"https://bun.com/blog/bun-in-rust\">recently announced</a> that Bun, the JavaScript/TypeScript runtime, bundler and package manager has been rewritten from Zig to Rust. The rewrite seeks to eliminate recurrent memory safety vulnerabilities via Rust’s borrow checker. The AI-assisted rewrite was released after 4 months of work instead of the estimated one year.</p>\n   <p>Sumner summarizes the motivation behind what started as a spike:</p>\n   <blockquote>\n    <p>A large percentage of bugs […] are use-after-free, double-free, and “forgot to free” in an error path. In safe Rust, these are compiler errors and RAII-like automatic cleanup with <code>Drop</code>. Compiler errors are a better feedback loop than a style guide.</p>\n    <p>Historically, rewrites are a terrible idea. […] Bun is 535,496 lines of Zig. A rewrite in another language would take a small team of engineers a full year. It would mean freezing bugfixes, security fixes or feature development for that time.</p>\n    <p>Fortunately, Bun’s own test suite is written in TypeScript which means it doesn’t depend on the runtime’s programming language.</p>\n    <p>What if, instead, I spend a week testing if Anthropic’s new model can rewrite Bun in Rust?</p>\n    <p>At first, I didn’t expect it to work. A few days in, a high % of the test suite started passing and I saw how much the new Rust code matched up with the original Zig codebase. My opinion went from “this is worth trying” to “I’m going to merge this”.</p>\n   </blockquote>\n   <p>Sumner executed an automated all-at-once port leveraging for most of the rewrite a pre-release version of Claude Fable 5 orchestrated across approximately 50 dynamic workflows. The Zig would be transpiled into Rust (possibly using <code>unsafe</code> Rust that could be refactored later) and validated against the existing extensive test suite of more than one million assertions. A porting guide would help Claude map Zig patterns &amp; types to Rust patterns &amp; types. Adversarial agentic code reviews would further detect issues before they make it to the final port. The implementation loop would be improved after each error by improving the implementation process rather than manually fixing the implementation artifacts (e.g., the code).</p>\n   <p>The constant process improvement revealed useful patterns. The planning phase is critical to success and must result in key challenges being anticipated and mitigated. <code>PORTING.md</code> (describing the mapping from Zig to Rust) and <code>LIFETIMES.tsv</code> file (describing lifetimes of every struct field in the codebase) were key success factors for the port.</p>\n   <p>An implementer would then use those files to translate Zig files into Rust code. The implementer agent would be faced with two adversarial reviewer agents running in isolated context windows with access only to the file diffs, with their only task being to discover bugs and behavioral divergences. Sumner emphatically explains:</p>\n   <blockquote>\n    <p>The implementer doesn’t review. The reviewer doesn’t implement.</p>\n   </blockquote>\n   <p>Suggestions and issues found by the reviewer agents were dealt with by a fixer agent.</p>\n   <p>The implementation process efficiency massively leverages the parallelization of the implementation tasks. That however requires addressing concurrent updates of the shared codebase, and the starvation of limited computing resources.</p>\n   <p>The effort was ultimately distributed across four workspace shards running 16 agents each, operating 64 Claude instances in parallel. At peak velocity, the system generated roughly 1,300 lines of code per minute and logged up to 695 commits an hour.</p>\n   <p>Getting to the full test suite passing required $165,000 worth of tokens — to be contrasted with Sumner’s estimate of human engineering effort:</p>\n   <blockquote>\n    <p>Pre-merge, this took 5.9 billion uncached input tokens, 690 million output tokens, and 72 billion cached input token reads — around $165,000 at API pricing. By hand, I think this would’ve taken 3 engineers with full context on the codebase about a year.</p>\n   </blockquote>\n   <p>Having what became over 1 million lines of code pass the test suite was then followed by further testing and validation, which surfaced further issues.</p>\n   <p>The mechanical nature of the port introduced 19 subtle semantic regressions rooted in syntactic similarities between Zig and Rust. 11 rounds of security review from <a href=\"https://claude.com/product/claude-security\">Claude Code Security</a> fixed several security issues. 24/7 coverage-guided fuzzing of every parser in Bun resulted in 15 PRs.</p>\n   <p>According to the Bun team, the resulting Rust implementation in Bun v1.4.0 resolved 128 longstanding bugs present in v1.3.14 while delivering noticeable dividends. Native memory leaks were addressed. In-process bundling tests running 2,000 consecutive <code>Bun.build()</code> operations plateaued stably at 609 MB in Rust rather than climbing past 6.7 GB. HTTP throughput increased by 2% to 5%.</p>\n   <p>Bun v1.4.0 was finally <a href=\"https://bun.com/blog/bun-v1.4\">released in August 2026</a>.</p>\n   <p>Zig creator Andrew Kelley published a sharply critical reaction titled <a href=\"https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html\">“My Thoughts on the Bun Rust Rewrite,”</a> which included the following comments:</p>\n   <blockquote>\n    <p>There’s a dichotomy being presented here where you have to either choose a “style guide” or a programming language feature in order to avoid bugs. The sleight of hand misdirects the reader away from the main way bugs are eliminated: by dedicating engineering resources to it. […]</p>\n    <p>The argument for shipping all the million lines of unreviewed code is that the test suite is good enough to catch everything. Then why are you saying you have so many annoying bugs in the Zig code? What happened to the test suite being sufficient to catch everything? It’s not sufficient to catch bugs in Zig code but it is sufficient to catch bugs in 1 million lines of unreviewed slop?</p>\n   </blockquote>\n   <p>Concurrently, user <a href=\"https://news.ycombinator.com/item?id=48138928\">vitaminCPP</a> posited that merging over one million lines of machine-transpiled code establishes Bun as a crucial industry canary for whether massive, LLM-generated codebases can remain maintainable over the software engineering lifecycle.</p>\n   <p>Developers are encouraged to <a href=\"https://bun.com/blog/bun-in-rust\">read the full article</a>, which contains in-depth technical explanations and accompanying illustration and graphics.</p>\n   <p>Bun was <a href=\"https://bun.com/blog/bun-joins-anthropic\">acquired by Anthropic in December 2025</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Bun Rewrites 535K Lines of Zig into Rust in Four Months, Eliminates Numerous Memory Leaks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/bun-AI-rewrite-zig-rust-4-months/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1789933860000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Bun 创始人 Jarred Sumner 使用预发布版 Claude 模型，通过约 50 个智能体工作流，在四个月内以 16.5 万美元成本将 53.5 万行 Zig 代码移植为 Rust，消除了内存泄漏，但因未经审查的 AI 生成代码而遭到 Zig 创始人的尖锐批评。",
+  "oneSentenceSummary": "Bun 创始人 Jarred Sumner 使用预发布版 Claude 模型，通过约 50 个智能体工作流，在四个月内以 16.5 万美元成本将 53.5 万行 Zig 代码移植为 Rust，消除了内存泄漏，但因未经审查的 AI 生成代码而遭到 Zig 创始人的尖锐批评。",
+  "summary": "Bun 创始人 Jarred Sumner 宣布，这个 JavaScript/TypeScript 运行时已从 Zig 重写为 Rust，动机是反复出现的内存安全漏洞，如释放后使用和双重释放，而 Rust 的借用检查器能将这些错误转化为编译错误。由于 Bun 的测试套件用 TypeScript 编写且与语言无关，Sumner 测试了预发布版 Claude Fable 5 能否完成移植。此次重写使用了约 50 个动态工作流，将 Zig 转译为 Rust，并对照超过一百万条测试断言进行验证，辅以 PORTING.md 映射指南和描述结构体字段生命周期的 LIFETIMES.tsv 文件。实现智能体与在隔离上下文窗口中运行的对抗性审查智能体相互分离，并由修复智能体处理发现的问题。工作分布在四个工作区分片上进行，每个分片 16 个智能体，共 64 个 Claude 实例并行运行，峰值速度约为每分钟 1，300 行代码、每小时 695 次提交。合并前的成本约为 16.5 万美元的 token 费用，而 Sumner 估计若由三名工程师全职工作则需要一年。此次移植引入了 19 个细微的语义回归，进行了 11 轮安全审查，以及 7×24 小时模糊测试，产生了 15 个 PR。Bun v1.4.0 解决了 128 个长期存在的 bug，修复了原生内存泄漏，打包内存稳定在 609 MB 而非攀升至 6.7 GB 以上，HTTP 吞吐量提升了 2% 至 5%。Zig 创始人 Andrew Kelley 发表了一篇尖锐的批评回应，质疑「测试套件足以验证一百万行未经审查的代码」这一论点。",
+  "mainPoints": [
+    {
+      "point": "Bun 从 Zig 重写为 Rust，主要是为了消除 Rust 编译器能静态捕获的反复出现的内存安全漏洞。",
+      "explanation": "Sumner 表示，很大一部分 bug 是错误路径中的释放后使用、双重释放和忘记释放。在安全的 Rust 中，这些会变成编译错误，并通过 Drop 实现类似 RAII 的自动清理，他认为这比风格指南是更好的反馈循环。"
+    },
+    {
+      "point": "移植之所以成功，是因为 Bun 的测试套件用 TypeScript 编写，因此独立于运行时的实现语言。",
+      "explanation": "这使得一次性自动化移植能够对照超过一百万条现有断言进行验证，Sumner 称这是该方法的关键推动因素，也是他的看法从「值得一试」转变为「决定合并」的原因。"
+    },
+    {
+      "point": "该工作流将实现与对抗性审查分离，智能体在隔离的上下文窗口中运行，并配有专门的修复智能体。",
+      "explanation": "实现智能体使用 PORTING.md 和 LIFETIMES.tsv 翻译 Zig 文件，而两个只能访问文件差异的审查智能体则搜索 bug 和行为偏差。Sumner 强调，实现者不审查，审查者不实现。"
+    },
+    {
+      "point": "并行化带来了极高的吞吐量，但需要管理对共享代码库的并发更新以及有限的计算资源。",
+      "explanation": "这项工作分布在四个工作区分片上进行，每个分片 16 个智能体，共 64 个 Claude 实例并行运行，峰值速度约为每分钟 1，300 行代码，每小时最多 695 次提交。"
+    },
+    {
+      "point": "此次重写花费了约 16.5 万美元的 token 费用，而估计三名工程师需要一年工作量，但引入了需要进一步验证的细微回归。",
+      "explanation": "合并前的使用量总计为 59 亿未缓存输入 token、6.9 亿输出 token 和 720 亿缓存输入 token 读取。机械式移植因 Zig 与 Rust 的语法相似性引入了 19 个语义回归，通过 11 轮安全审查和持续模糊测试加以解决。"
+    },
+    {
+      "point": "Zig 创始人 Andrew Kelley 质疑「测试套件通过即可证明可以发布一百万行未经审查的机器转译代码」这一说法。",
+      "explanation": "Kelley 认为，这种说法将读者的注意力从消除 bug 的主要方式——即投入工程资源——上引开了，并指出「测试套件足以验证 Rust 代码但不足以验证现有 Zig 代码」这一说法自相矛盾。"
+    }
+  ],
+  "keyQuotes": [
+    "很大一部分 bug [...] 是错误路径中的释放后使用、双重释放和「忘记释放」。在安全的 Rust 中，这些是编译错误，并通过 `Drop` 实现类似 RAII 的自动清理。编译错误比风格指南是更好的反馈循环。",
+    "实现者不审查。审查者不实现。",
+    "合并前，这消耗了 59 亿未缓存输入 token、6.9 亿输出 token 和 720 亿缓存输入 token 读取——按 API 定价约为 16.5 万美元。如果手工完成，我认为需要三名对代码库有完整上下文的工程师大约一年时间。",
+    "这里呈现了一种二分法，仿佛你必须在「风格指南」或编程语言特性之间二选一来避免 bug。这种障眼法将读者的注意力从消除 bug 的主要方式上引开了：即为此投入工程资源。[...]",
+    "它不足以捕获 Zig 代码中的 bug，却足以捕获 100 万行未经审查的垃圾代码中的 bug？"
+  ],
+  "tags": [
+    "编程与工程",
+    "编程语言",
+    "AI 编程",
+    "测试与质量",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 933,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789933860000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-21 03:51:00"
+}

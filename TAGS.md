@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-21 06:06:40 | [返回首页](/README.md)
+**更新时间**: 2026-09-21 10:16:11 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16130)
+- [AI & 大模型](#ai-llm) (16158)
 - [软件架构](#architecture) (26)
 - [前端与全栈](#frontend-fullstack) (998)
-- [DevOps](#devops) (769)
+- [DevOps](#devops) (770)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6978)
+- [其他](#other) (6981)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [YC-最新判断：Harness-比模型更重要](https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494462&idx=1&sn=adf8c2849a4f781079ec81286e9d9fef) - AI 精选
 - [Jev-能成为更好的智能体评估器吗？](https://www.langchain.com/blog/jev-agent-evals-langsmith) - AI 精选
 - [AI-写代码飞快，为何交付没有变快？小红书-Muse-的-Agentic-架构实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247667384&idx=2&sn=4da10732f109d6188826136e62126d21) - AI 精选
 - [于是转身向具身走去｜对话王家伟：深朴智能-00-后首席科学家](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111995&idx=1&sn=6ecd657a0c1bd4133b465018aac0f5ea) - AI 精选
@@ -41,9 +42,8 @@
 - [Physical-Intelligence-联创-Chelsea-Finn：物理-AI-已经走到自己的-GPT-时刻](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111344&idx=1&sn=3a45b99fdcae037944d29e13af398835) - AI 精选
 - [对卷卷的-3-小时访谈：从抖音到-AI-3D、创业的过山车、成为制造业-OS-的野心、基础模型不会吞噬一切！](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111315&idx=1&sn=7430e8e2a5e2db621fd56ae84529c7d7) - AI 精选
 - [大模型开网店，谁是经营高手？E-Commerce-Bench-开源揭秘](https://mp.weixin.qq.com/s?__biz=Mzk0ODg4NDI5NA==&mid=2247490168&idx=1&sn=2dcf2b5c2a3014c82e08882361d64221) - AI 精选
-- [介绍-Gemini-3.8-Flash-与-3.8-Flash-Cyber](https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/) - AI 精选
 
-- [查看全部 16130 篇...](/details/tags/ai-llm.md)
+- [查看全部 16158 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 769 篇...](/details/tags/devops.md)
+- [查看全部 770 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6978 篇...](/details/tags/other.md)
+- [查看全部 6981 篇...](/details/tags/other.md)
 
 
