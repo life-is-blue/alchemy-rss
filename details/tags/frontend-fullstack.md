@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-22 08:24:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-22 15:03:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -776,9 +776,7 @@
 
 ### [Python-Workers-正式全面可用](https://blog.cloudflare.com/python-workers-ga/)
 
-2026-09-21 21:00:29 | 标签: 编程与工程, 编程语言, Python, FastAPI, WebAssembly
-
-> Cloudflare 宣布 Python Workers 正式全面可用，运行时正式脱离 beta 阶段。文章阐述了技术路径：CPython 被编译为 WebAssembly，并通过 Pyodide 运行时在 Cloudflare 边缘运行，让开发者无需管理容器或虚拟机即可使用 PyPI 上熟悉的 Python 包。文章介绍了实现近乎零冷启动的性能工作，包括快照与内存映射启动，并说明了该运行时如何与 KV、D1、R2、Queues 和 AI 等 Workers 绑定集成。文章还详述了开发者体验：使用 Wrangler 进行本地开发、与 Workers 运行时 API 的兼容性，以及对主流框架的支...
+2026-09-21 21:00:29
 
 
 
