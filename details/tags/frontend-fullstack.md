@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-22 05:24:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-22 08:24:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -390,7 +390,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -774,6 +774,14 @@
 
 
 
+### [Python-Workers-正式全面可用](https://blog.cloudflare.com/python-workers-ga/)
+
+2026-09-21 21:00:29 | 标签: 编程与工程, 编程语言, Python, FastAPI, WebAssembly
+
+> Cloudflare 宣布 Python Workers 正式全面可用，运行时正式脱离 beta 阶段。文章阐述了技术路径：CPython 被编译为 WebAssembly，并通过 Pyodide 运行时在 Cloudflare 边缘运行，让开发者无需管理容器或虚拟机即可使用 PyPI 上熟悉的 Python 包。文章介绍了实现近乎零冷启动的性能工作，包括快照与内存映射启动，并说明了该运行时如何与 KV、D1、R2、Queues 和 AI 等 Workers 绑定集成。文章还详述了开发者体验：使用 Wrangler 进行本地开发、与 Workers 运行时 API 的兼容性，以及对主流框架的支...
+
+
+
 ### [iOS-NFC-手册：如何使用-React-Native-读取、写入和锁定-NFC-标签](https://www.freecodecamp.org/news/the-ios-nfc-handbook-how-to-read-write-and-lock-nfc-tags-with-react-native/)
 
 2026-09-20 01:15:45
@@ -930,7 +938,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -942,7 +950,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2220,13 +2228,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2376,13 +2384,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3876,13 +3884,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5586,13 +5594,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

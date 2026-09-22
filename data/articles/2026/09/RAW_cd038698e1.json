@@ -1,0 +1,56 @@
+{
+  "id": "RAW_cd038698e1",
+  "title": "OpenClaw 通过 OpenAI 的 Patch the Planet 计划完成安全审计",
+  "url": "https://openclaw.ai/blog/openclaw-trail-of-bits-engagement-recap/",
+  "date": "2026-09-21 22:00:00",
+  "author": "Josh Avant",
+  "siteName": "OpenClaw Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Security at OpenClaw is an ongoing initiative, and part of that work is being transparent about what we find and fix along the way.</p>\n  <p>OpenClaw recently completed a broad security audit with <a href=\"https://www.trailofbits.com/\">Trail of Bits</a> through OpenAI’s <a href=\"https://openai.com/index/patch-the-planet/\">Patch the Planet</a> initiative, giving us a clearer view of where OpenClaw’s security boundaries needed enhancements. Today we’re sharing the results.</p>\n  <p>Summary:</p>\n  <ul>\n   <li>Trail of Bits submitted 27 private repository advisories and 3 standalone hardening pull requests.</li>\n   <li>Of the advisory reports, 24 described severity-rated vulnerabilities. 23 were classified as confirmed vulnerabilities, although some were closed without publication because they were fixed before reaching a stable release. The remaining 1 concerned a vulnerability fixed before submission.</li>\n   <li>Those 24 reports were rated 0 Critical, 2 High, 16 Medium, and 6 Low. The other 3 were classified as defense-in-depth findings and did not receive severity ratings because they did not cross a documented trust boundary.</li>\n   <li>Every actionable issue has been repaired, and all 3 standalone hardening PRs were merged.</li>\n  </ul>\n  <h2 id=\"how-the-engagement-worked\">How the Engagement Worked</h2>\n  <p>Patch the Planet combines AI-assisted security research with human review. Trail of Bits used Codex-assisted workflows to search for issues and develop fixes, then checked the findings manually before sending them to us.</p>\n  <p>We reviewed each report against OpenClaw’s trust model and release history. We then fixed and tested the accepted issues while coordinating disclosure through private GitHub Security Advisories.</p>\n  <p>The review covered core permissions and the way OpenClaw handles user data across its features. Although the affected features varied, the same kinds of security challenges kept appearing.</p>\n  <h2 id=\"permissions-must-follow-the-request\">Permissions Must Follow the Request</h2>\n  <p>The most common problem was losing permissions between steps. A request might enter OpenClaw with limited access, then start another piece of work that no longer carried those limits.</p>\n  <p>Sometimes the right fix was to carry the original permissions forward. In other cases, the follow-on work did not need access in the first place. A filename generator, for example, does not need tools.</p>\n  <p>Across OpenClaw, follow-on work must not gain access simply because it lost the context of the original request.</p>\n  <h2 id=\"use-one-name-for-one-thing\">Use One Name for One Thing</h2>\n  <p>OpenClaw sometimes has more than one name for the same thing so older configurations keep working. Problems appeared when a security check saw one name but the system later used another.</p>\n  <p>This affected both user identities and feature names. The fix was to determine exactly what the system would use before applying the security policy.</p>\n  <h2 id=\"check-what-will-actually-be-used\">Check What Will Actually Be Used</h2>\n  <p>Several reports found a gap between what OpenClaw checked and what it later used.</p>\n  <p>One archive check saw only part of an archive before the full contents were extracted. In another case, a file path changed after OpenClaw had already approved it. The checks looked reasonable on their own, but they did not cover the final operation.</p>\n  <p>The fix is to bind approval to the exact file, identity, or action that will be used. If anything changes afterward, OpenClaw needs to check again.</p>\n  <h2 id=\"permissions-can-change-while-an-agent-is-working\">Permissions Can Change While an Agent Is Working</h2>\n  <p>Some features checked permission when they started but not when they ran later. Turning a feature off in configuration did not always reach work that was already running or cached.</p>\n  <p>We moved those checks closer to the moment of use. For work that takes time, OpenClaw may also need to check again before returning a result.</p>\n  <p>One finding showed how this could happen. An agent may keep working long after a request begins, so checking permissions only when it starts is not enough. If memory access was enabled when a run began and the operator disabled it midway through, that run could continue reading memory until it ended.</p>\n  <p>The fix was to make tools check the current setting whenever they act. The issue only affected a run that had already been given access, but it showed that permission changes also need to reach work already in progress.</p>\n  <h2 id=\"lessons-from-the-engagement\">Lessons From the Engagement</h2>\n  <p>Permissions and identity must follow a request for as long as OpenClaw is working on it. Security checks must apply to the exact resource that will be used, and turning access off must affect work that is already running. Tests need to exercise the real security boundary instead of stopping at the helper where a bug happened to appear.</p>\n  <p>Every issue has been repaired on <code>main</code> and is shipped in the 2026.8.1 and 2026.7.33 LTS stable releases.</p>\n  <p>Thank you to Samuel Judson, Lucas Bourtoule, the wider Trail of Bits team, and to OpenAI for building the Patch the Planet initiative. 🦞</p>\n </body>\n</html>",
+  "aiSummary": "OpenClaw 通过 OpenAI 的 Patch the Planet 计划与 Trail of Bits 完成了全面的安全审计，解决了 24 个漏洞，并针对权限处理、资源验证和动态智能体执行实施了关键的架构修复。",
+  "oneSentenceSummary": "OpenClaw 通过 OpenAI 的 Patch the Planet 计划与 Trail of Bits 完成了全面的安全审计，解决了 24 个漏洞，并针对权限处理、资源验证和动态智能体执行实施了关键的架构修复。",
+  "summary": "OpenClaw 近期完成了由 Trail of Bits 在 OpenAI 的 Patch the Planet 计划下进行的安全审计，该计划采用 Codex 辅助工作流结合人工审查的方式。审计共产生 27 项公告（包括 24 个已评级漏洞，现已全部解决）和 3 个加固 PR。审计结果揭示了智能体安全中的关键模式，例如多步执行过程中的权限丢失、别名导致的策略绕过、验证与使用之间的差距（TOCTOU），以及长时间运行的智能体任务中实时权限检查的必要性。所有修复均已部署在最新的稳定版本中。",
+  "mainPoints": [
+    {
+      "point": "审计结果与方法论",
+      "explanation": "Trail of Bits 识别出 24 个漏洞（2 个高危、16 个中危、6 个低危），并使用 Codex 辅助的 AI 工作流结合人工审查提交了 3 个加固 PR。所有问题均已在最新的 LTS 版本中解决。"
+    },
+    {
+      "point": "跨多步工作流保持权限",
+      "explanation": "一个常见的漏洞模式是当请求发起后续任务时权限边界丢失。OpenClaw 通过确保原始权限限制被延续或对子任务明确限制来解决此问题。"
+    },
+    {
+      "point": "消除安全检查与执行之间的差距",
+      "explanation": "漏洞源于名称别名和检查时间与使用时间（TOCTOU）之间的差异。系统现在将安全审批绑定到将要执行的确切文件、身份或操作上，并在发生变化时重新检查。"
+    },
+    {
+      "point": "对运行中的智能体进行动态权限检查",
+      "explanation": "由于 AI 智能体可能运行很长时间，仅在启动时检查权限是不够的。OpenClaw 将检查移至更接近工具执行时刻，使运行中的配置更改（如禁用记忆访问）能够立即生效。"
+    }
+  ],
+  "keyQuotes": [
+    "只要 OpenClaw 还在处理请求，权限和身份就必须跟随该请求。",
+    "智能体可能在请求开始后继续工作很长时间，因此仅在启动时检查权限是不够的。",
+    "修复方法是将审批绑定到将要使用的确切文件、身份或操作上。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "安全",
+    "AI 安全与对齐",
+    "AI Agent",
+    "开源项目"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 750,
+  "domain": "openclaw.ai",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_33cd0cf4",
+  "sourceName": "OpenClaw Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1789999200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-21 22:00:00"
+}

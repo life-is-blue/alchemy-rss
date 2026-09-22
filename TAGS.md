@@ -1,14 +1,14 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-22 05:24:00 | [返回首页](/README.md)
+**更新时间**: 2026-09-22 08:24:28 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16158)
+- [AI & 大模型](#ai-llm) (16192)
 - [软件架构](#architecture) (26)
-- [前端与全栈](#frontend-fullstack) (998)
+- [前端与全栈](#frontend-fullstack) (999)
 - [DevOps](#devops) (770)
 - [产品与商业](#product-business) (51)
 - [其他](#other) (6981)
@@ -22,6 +22,10 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Jev：面向生产环境的-System-One-模型，而非上帝——对话-TypeSafe-AI-CEO-Diogo-Almeida](https://www.latent.space/p/jev) - AI 精选
+- [像物理学家一样剪枝-LLM：将模块移除视为伊辛优化问题](https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an) - AI 精选
+- [通过要求智能体加速代码，写出比最先进库更快的-Rust-代码](https://minimaxir.com/2026/09/agentic-iteration/) - AI 精选
+- [10-个人加一套-AI-软件，做出-100-个人的增长：AI-时代企业服务的算账逻辑](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522808&idx=1&sn=1d808b15edf5c131b65fdfd01b5e63a5) - AI 精选
 - [YC-最新判断：Harness-比模型更重要](https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494462&idx=1&sn=adf8c2849a4f781079ec81286e9d9fef) - AI 精选
 - [Jev-能成为更好的智能体评估器吗？](https://www.langchain.com/blog/jev-agent-evals-langsmith) - AI 精选
 - [AI-写代码飞快，为何交付没有变快？小红书-Muse-的-Agentic-架构实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247667384&idx=2&sn=4da10732f109d6188826136e62126d21) - AI 精选
@@ -38,12 +42,8 @@
 - [面壁智能开源-MiniCPM5-2B：AA-榜单全球-4B-以下第一，初具端侧通用-Agent-能力](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247512955&idx=1&sn=f0254c373f933ac3b4f72da675762f1c) - AI 精选
 - [异类心智](https://openai.com/index/an-alien-mind) - AI 精选
 - [研究加速：OpenAI-内部视角](https://openai.com/index/research-acceleration-view-inside-openai) - AI 精选
-- [OpenAI-GPT-6-Astra-实测：一句话，造出一栋可以走进去的房子](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111449&idx=1&sn=9555ea7535d35c4ddbbe47eec4a7f758) - AI 精选
-- [Physical-Intelligence-联创-Chelsea-Finn：物理-AI-已经走到自己的-GPT-时刻](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111344&idx=1&sn=3a45b99fdcae037944d29e13af398835) - AI 精选
-- [对卷卷的-3-小时访谈：从抖音到-AI-3D、创业的过山车、成为制造业-OS-的野心、基础模型不会吞噬一切！](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111315&idx=1&sn=7430e8e2a5e2db621fd56ae84529c7d7) - AI 精选
-- [大模型开网店，谁是经营高手？E-Commerce-Bench-开源揭秘](https://mp.weixin.qq.com/s?__biz=Mzk0ODg4NDI5NA==&mid=2247490168&idx=1&sn=2dcf2b5c2a3014c82e08882361d64221) - AI 精选
 
-- [查看全部 16158 篇...](/details/tags/ai-llm.md)
+- [查看全部 16192 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 998 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 999 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
