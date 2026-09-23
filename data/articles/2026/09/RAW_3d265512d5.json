@@ -1,0 +1,60 @@
+{
+  "id": "RAW_3d265512d5",
+  "title": "GitLab 通过 Microsoft Foundry 扩展自托管 AI 选项",
+  "url": "https://www.infoq.com/news/2026/09/gitlab-microsoft-foundry/",
+  "date": "2026-09-22 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://about.gitlab.com/\">GitLab</a> has <a href=\"https://about.gitlab.com/blog/gitlab-duo-self-hosted-models-on-microsoft-foundry/\">expanded</a> GitLab Duo Self-Hosted to support models deployed through<a href=\"https://azure.microsoft.com/en-us/products/ai-foundry\"> Microsoft Foundry</a>, allowing organizations to run GitLab's AI development capabilities against models hosted within their own chosen Azure environment. The integration supports model families including <a href=\"https://openai.com/\">OpenAI GPT,</a> <a href=\"https://claude.ai/login\">Anthropic Claude</a>, <a href=\"https://www.meta.ai/\">Meta Llama</a>, and <a href=\"https://mistral.ai/\">Mistral</a>, giving enterprises more choice over model provider, deployment location, and data path.</p>\n   <p dir=\"ltr\">The move is particularly relevant for organizations with data residency, sovereignty, regulatory, or network isolation requirements. Rather than sending AI requests to GitLab-managed model infrastructure, GitLab Duo Self-Hosted can use an organization's own AI Gateway and model deployments. This allows administrators to retain greater control over where requests and responses are processed and how the underlying models are deployed.</p>\n   <p dir=\"ltr\">The architecture consists of three main components: a self-managed GitLab instance, a self-hosted <a href=\"https://docs.gitlab.com/administration/gitlab_duo/gateway/\">GitLab AI Gateway</a>, and one or more model endpoints hosted through Microsoft Foundry. The gateway acts as the intermediary between GitLab Duo and the selected models, rather than tying individual Duo features directly to a particular model provider.</p>\n   <p dir=\"ltr\">An important aspect of the integration is feature-level model selection. Organizations can use different models for different GitLab Duo capabilities - for example, a code-focused model for Code Suggestions, another model for agentic workloads, and a smaller model for higher-volume tasks. Model deployments can also be changed without fundamentally changing the GitLab development workflow.</p>\n   <p dir=\"ltr\">The approach also highlights an important trade-off with self-hosted AI. Giving organizations control over models and infrastructure provides greater flexibility, but it shifts more responsibility onto engineering and platform teams. They must manage model deployments, capacity, networking, credentials, availability, and model lifecycle in addition to the GitLab environment itself.</p>\n   <p dir=\"ltr\">It also means that model availability does not automatically equal GitLab Duo compatibility. Microsoft Foundry's catalogue can change faster than GitLab's supported-model matrix, so organizations need to verify compatibility across both platforms before selecting a model.</p>\n   <p dir=\"ltr\">GitLab's approach follows a broader movement away from treating AI development tools and foundation models as a single bundled service. Microsoft Foundry itself provides access to models from multiple vendors, while GitLab provides the development and DevSecOps layer around them.</p>\n   <p dir=\"ltr\">There are similarities with other enterprise development platforms. <a href=\"https://github.com/copilot\">GitHub Copilot</a>, for example, increasingly supports multiple underlying models, but its standard experience remains closely integrated with GitHub's managed service. GitLab's self-hosted model approach instead puts greater emphasis on controlling the AI infrastructure and network path. Meanwhile, platforms such as <a href=\"https://aws.amazon.com/bedrock/\">Amazon Bedrock</a> and Microsoft Foundry itself provide multi-model infrastructure but are not themselves substitutes for an integrated DevSecOps platform such as GitLab.</p>\n   <p dir=\"ltr\">This makes the development environment increasingly resemble a model-agnostic control layer: GitLab manages the developer workflow and AI features, while the organization can determine which models sit underneath them.</p>\n   <p dir=\"ltr\">The significance of the announcement therefore extends beyond another model integration. As AI becomes embedded deeper into software engineering, enterprises increasingly need to make decisions not just about which AI capabilities developers use, but where the models run, where source code and prompts travel, who controls the credentials, and which jurisdictions process the data.</p>\n   <p dir=\"ltr\">GitLab's Microsoft Foundry integration addresses part of that problem by allowing the AI model layer to sit within an organization's chosen Azure environment. Enterprise AI tooling is increasingly moving toward model choice, deployment control, and data sovereignty, rather than assuming that the best development experience requires a single centrally managed AI provider.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitLab Duo Expands Self-Hosted AI Options Through Microsoft Foundry\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/gitlab-microsoft-foundry/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790078400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitLab 允许组织通过 Microsoft Foundry 使用 GPT、Llama 和 Mistral 等模型运行 AI 开发能力，提供对数据留存和部署的控制权。",
+  "oneSentenceSummary": "GitLab 允许组织通过 Microsoft Foundry 使用 GPT、Llama 和 Mistral 等模型运行 AI 开发能力，提供对数据留存和部署的控制权。",
+  "summary": "GitLab 扩展了其 Duo 自托管能力，通过 Microsoft Foundry 支持多种模型家族，使企业能够在自己的 Azure 环境中运行 AI 功能。此举满足了企业对数据留存、主权和网络隔离的关键需求。通过使用 AI Gateway 作为中介，组织可以在保持 AI 基础设施和数据路径控制的同时，为不同任务选择特定模型。",
+  "mainPoints": [
+    {
+      "point": "GitLab Duo 现在集成 Microsoft Foundry",
+      "explanation": "这允许组织在其 Azure 环境中使用 OpenAI GPT、Anthropic Claude、Meta Llama 和 Mistral 等模型。"
+    },
+    {
+      "point": "功能级模型选择",
+      "explanation": "用户可以为特定任务分配不同模型，例如为代码建议使用专注于代码的模型，为高任务使用小型模型。"
+    },
+    {
+      "point": "企业级控制",
+      "explanation": "该架构专门为具有严格数据留存、合规性或网络隔离需求的组织设计。"
+    },
+    {
+      "point": "自托管的运营权衡",
+      "explanation": "虽然它提供了更大的灵活性，也将管理部署容量、网络和模型生命周期的责任转移给了内部团队。"
+    },
+    {
+      "point": "模型无关的控制层",
+      "explanation": "开发环境正演变为一个层，由 GitLab 管理工作流，而由组织决定底层模型。"
+    }
+  ],
+  "keyQuotes": [
+    "网关作为 GitLab Duo 与所选模型之间的中介，而不是将 Duo 功能直接绑定到特定的模型提供商。",
+    "赋予组织对模型和基础设施的控制提供了更大的灵活性，但也将更多责任给了工程和平台团队。",
+    "这使得开发环境越来越像一个模型无关的控制层。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "自托管",
+    "安全",
+    "云原生 / DevOps",
+    "期权与衍生品"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 550,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790078400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-22 20:00:00"
+}

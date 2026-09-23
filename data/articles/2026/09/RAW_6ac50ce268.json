@@ -1,0 +1,61 @@
+{
+  "id": "RAW_6ac50ce268",
+  "title": "Brave 浏览器内置的隐私优先 AI 助手 Leo",
+  "url": "https://www.kdnuggets.com/bravely-ai-browsing-with-leo",
+  "date": "2026-09-22 22:00:29",
+  "author": "Vinod Chugani",
+  "siteName": "KDnuggets",
+  "content": null,
+  "aiSummary": "Leo 是内置于 Brave 浏览器中的隐私优先 AI 助手，让用户在不牺牲隐私的前提下使用 AI 功能。",
+  "oneSentenceSummary": "Leo 是内置于 Brave 浏览器中的隐私优先 AI 助手，让用户在不牺牲隐私的前提下使用 AI 功能。",
+  "summary": "本文介绍了 Brave 浏览器内置的隐私优先 AI 助手 Leo，解释了其工作原理、功能特性及对数据专业人士的价值，并探讨了 Leo 的局限性及与 Perplexity 等 AI 工具的对比。",
+  "mainPoints": [
+    {
+      "point": "Leo 是内置于 Brave 浏览器中的隐私优先 AI 助手。",
+      "explanation": "Leo 旨在提供 AI 功能且不损害用户隐私。它通过反向代理剥离用户 IP 地址，并在生成回复后立即丢弃对话记录。"
+    },
+    {
+      "point": "Leo 的模型阵容比大多数人预期的更强大。",
+      "explanation": "Leo 集成了 Meta 的 Llama 3.1、阿里巴巴的 Qwen 3、Anthropic 的 Claude Haiku 3.5 以及 GLM 模型等开放选项。免费层级足以应对大多数日常工作，而 Premium 版可解锁 Claude Sonnet 4 和 DeepSeek R1。"
+    },
+    {
+      "point": "Leo 无需复制内容即可总结研究论文和文档。",
+      "explanation": "Leo 实时读取当前标签页内容并生成结构化回复。这对于只需从冗长文档中提取特定信息的场景非常有用。"
+    },
+    {
+      "point": "Leo 原生支持分析 PDF、Google Docs 和 Google Sheets。",
+      "explanation": "Leo 可帮助理解数据集内容、识别列描述或解释陌生字段名，在处理第三方数据字典时尤为实用。"
+    },
+    {
+      "point": "免费层级即可生成和解释代码，Premium 版更提供 Claude Sonnet 级别的能力。",
+      "explanation": "你可以高亮文档中难以理解的函数，让 Leo 解释并用偏好的语言给出可运行的实现。"
+    }
+  ],
+  "keyQuotes": [
+    "数据专业人士的工作离不开浏览器。",
+    "大多数人常用的工具（Chrome 配合 Gemini、Perplexity、固定标签页中的 ChatGPT）确实很强大。但当你专注于完成工作时，很容易忽视它们各自带来的隐私代价。",
+    "Leo 采取了不同的架构设计。查询会先通过反向代理，在到达底层模型前剥离你的 IP 地址。",
+    "Leo 最独特的能力是页面感知。与需要复制粘贴内容的独立聊天机器人不同，Leo 能实时读取当前标签页。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "性能优化",
+    "提示工程",
+    "AI 工作流",
+    "LLM 推理优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 84,
+  "wordCount": 2133,
+  "domain": "kdnuggets.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_948a69fc",
+  "sourceName": "KDnuggets",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790085629000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-22 22:00:29"
+}

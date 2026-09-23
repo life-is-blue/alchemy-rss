@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-23 07:56:40 | [返回首页](/README.md)
+**更新时间**: 2026-09-23 10:21:29 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16192)
+- [AI & 大模型](#ai-llm) (16238)
 - [软件架构](#architecture) (26)
-- [前端与全栈](#frontend-fullstack) (999)
-- [DevOps](#devops) (770)
+- [前端与全栈](#frontend-fullstack) (1000)
+- [DevOps](#devops) (771)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6981)
+- [其他](#other) (6982)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [与-Epoch-AI-的-JS-Denain-一起-辩论-RSI-、-美国-中国差距-与-波动性](https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and) - AI 精选
+- [Jev-不是小型-LLM：系统一模型技术指南](https://dev.to/stalwartcoder/jev-is-not-a-small-llm-a-technical-guide-to-system-one-models-25m2) - AI 精选
+- [机器人-/-物理-Agent-Harness-综合分析与对比：从「更强的模型」到「更好的系统」](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489860&idx=1&sn=df5cc4476132ee812051f40c7ecf3150) - AI 精选
 - [Jev：面向生产环境的-System-One-模型，而非上帝——对话-TypeSafe-AI-CEO-Diogo-Almeida](https://www.latent.space/p/jev) - AI 精选
 - [像物理学家一样剪枝-LLM：将模块移除视为伊辛优化问题](https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an) - AI 精选
 - [通过要求智能体加速代码，写出比最先进库更快的-Rust-代码](https://minimaxir.com/2026/09/agentic-iteration/) - AI 精选
@@ -39,11 +42,8 @@
 - [DeepSeek-V4.1-Flash：更强、更快、更普惠](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485817&idx=1&sn=627dd80114901f3fd8717e2c13feaf6a) - AI 精选
 - [推出-ChatGPT-Images-2.5](https://openai.com/index/introducing-chatgpt-images-2-5) - AI 精选
 - [关于-Navier–Stokes-千年难题](https://openai.com/index/navier-stokes-solution) - AI 精选
-- [面壁智能开源-MiniCPM5-2B：AA-榜单全球-4B-以下第一，初具端侧通用-Agent-能力](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247512955&idx=1&sn=f0254c373f933ac3b4f72da675762f1c) - AI 精选
-- [异类心智](https://openai.com/index/an-alien-mind) - AI 精选
-- [研究加速：OpenAI-内部视角](https://openai.com/index/research-acceleration-view-inside-openai) - AI 精选
 
-- [查看全部 16192 篇...](/details/tags/ai-llm.md)
+- [查看全部 16238 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 - [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 999 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1000 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 770 篇...](/details/tags/devops.md)
+- [查看全部 771 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6981 篇...](/details/tags/other.md)
+- [查看全部 6982 篇...](/details/tags/other.md)
 
 

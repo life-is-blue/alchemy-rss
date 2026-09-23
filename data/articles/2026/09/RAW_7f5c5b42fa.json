@@ -1,0 +1,56 @@
+{
+  "id": "RAW_7f5c5b42fa",
+  "title": "Git 3.0 迁移指南：过渡到 SHA-256 与 Reftables",
+  "url": "https://www.sitepoint.com/migrate-to-git-3-0-sha-256-and-reftables/",
+  "date": "2026-09-22 22:52:36",
+  "author": "SitePoint Team",
+  "siteName": "SitePoint",
+  "content": null,
+  "aiSummary": "一份关于将现有 Git 仓库从 SHA-1 迁移到 SHA-256，以及从平文件引用迁移到 reftable 格式的技术指南。",
+  "oneSentenceSummary": "一份关于将现有 Git 仓库从 SHA-1 迁移到 SHA-256，以及从平文件引用迁移到 reftable 格式的技术指南。",
+  "summary": "Git 正在调整其默认设置：从 SHA-1 哈希算法转向 SHA-256，并用 reftable 格式替换 packed-refs 文件。由于这些更改仅适用于新初始化的仓库，团队必须手动迁移现有代码库。本文提供了一套包含 Python 审计脚本、分步骤迁移命令、兼容性矩阵以及基础设施更新策略的工作流。",
+  "mainPoints": [
+    {
+      "point": "Git 正在将对象标识从 SHA-1 转向 SHA-256 以解决安全性。",
+      "explanation": "SHAttered 攻击证明 SHA-1 已不再具备抗碰撞性；SHA-256 通过 64 字符哈希确保了对象的完整性。"
+    },
+    {
+      "point": "reftable 格式取代了传统的 packed-refs 文件以提升规模扩展性能。",
+      "explanation": "传统的 packed-refs 需要将整个文件读入内存，这会导致拥有数万个引用的单体仓库运行变慢。Reftables 使用更优的结构来加速查找。"
+    },
+    {
+      "point": "现有仓库不会在 Git 二进制文件更新时自动升级。",
+      "explanation": "新的默认设置仅适用于 'git init'。长生命期的代码库需要通过 'git refs migrate' 或快速导出/导入工作流来实现现代化。"
+    },
+    {
+      "point": "建议采用分阶段迁移策略以降低风险。",
+      "explanation": "应先转换为 reftable 格式，因为它是就地操作且可逆的。SHA-256 转换需要更复杂的导出/导入过程，并可能破坏下游工具。"
+    }
+  ],
+  "keyQuotes": [
+    "磁盘上的每个现有仓库都保留其原始配置，这意味着维护长寿代码库的团队必须采取主动行动来使其基础设施现代化。",
+    "传统的 packed-refs 将引用存储在单个平文件中。每次引用查找都需要将 packed-refs 文件读入内存。",
+    "混合方法（即现在转换为 reftables 并推迟 SHA-256）是对大多数团队而言风险最低的路径。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "安全",
+    "开源项目",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 16,
+  "score": 89,
+  "wordCount": 3976,
+  "domain": "sitepoint.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_6b38bda7",
+  "sourceName": "SitePoint",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790088756000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-22 22:52:36"
+}

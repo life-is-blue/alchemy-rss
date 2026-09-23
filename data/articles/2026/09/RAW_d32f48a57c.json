@@ -1,0 +1,52 @@
+{
+  "id": "RAW_d32f48a57c",
+  "title": "Meta Muse AI Agent 存在 0Day 漏洞，可被劫持滥用高权限",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651347479&idx=4&sn=dfb9902529a6bf7bc69c4fd4742a1bf1",
+  "date": "2026-09-22 18:04:00",
+  "author": "FreeBuf",
+  "siteName": "FreeBuf",
+  "content": null,
+  "aiSummary": "Meta Muse AI Agent 存在 0Day 漏洞，可被劫持滥用高权限",
+  "oneSentenceSummary": "Meta Muse AI Agent 存在 0Day 漏洞，可被劫持滥用高权限",
+  "summary": "Meta Muse AI Agent 存在一处 0Day 漏洞，若用户设备上已有恶意软件在当前账户权限下运行，就可借助该漏洞劫持 Muse 助手。攻击者可以拦截用户语音输入的提示词，向 Muse 注入恶意指令。除此之外，攻击者还能窃取用户的账户认证凭证。该漏洞风险极高，一旦 Agent 被攻击者控制，就能继承用户授予 Muse 的全部高级权限，以及所有关联服务的访问权限。",
+  "mainPoints": [
+    {
+      "point": "漏洞可实现攻击权限放大",
+      "explanation": "该漏洞无法在未受感染的 Mac 上实现远程代码执行。攻击者必须先获得本地用户权限下的代码执行能力，常见途径包括常规恶意软件投递、社会工程诱导等。但 Wardle 指出，这个缺陷本质上是权限放大器：受 macOS 隐私机制限制的普通恶意软件，可以将 Muse 作为攻击目标，利用 Agent 已经获得的广泛权限实施作恶。"
+    },
+    {
+      "point": "Muse 攻击可波及关联设备",
+      "explanation": "Muse 持有的权限范围极大。Meta 公开资料显示，Muse 可以访问本地文件、应用和浏览器标签页，对接邮箱与日历服务。它还能自主访问网页、完成支付操作，甚至在后台持续执行任务。正常情况下，Muse 会针对敏感操作请求用户批准，并留存完整审计日志。但一旦攻击者控制了它的可信命令通道，就可以随意滥用所有关联资源。"
+    },
+    {
+      "point": "漏洞引发行业安全顾虑",
+      "explanation": "这次漏洞披露也引发了外界的普遍担心：拥有高权限的 AI Agent 可能成为单点故障风险。Wardle 指出，由于所有命令都通过受信任的签名应用执行，端点检测工具很难区分某一操作的发起方是用户、Agent 还是攻击者。据报道，一位 Meta 前 AI 安全工程经理表示：'出于安全和隐私方面的顾虑，我不会使用 Muse。'"
+    }
+  ],
+  "keyQuotes": [
+    "攻击者可以拦截用户语音输入的提示词，向 Muse 注入恶意指令。",
+    "攻击者还能窃取用户的账户认证凭证。",
+    "该漏洞风险极高，一旦 Agent 被攻击者控制，就能继承用户授予 Muse 的全部高级权限，以及所有关联服务的访问权限。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI Agent",
+    "安全",
+    "AI安全事件",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 85,
+  "wordCount": 1552,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_05367037",
+  "sourceName": "FreeBuf",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1790071440000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-22 18:04:00"
+}
