@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-23 10:21:29 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-23 16:56:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -16363,9 +16363,7 @@
 
 ### [GitHub---General-Instinct/InstinctFlash:-高性能机器人模型服务运行时](https://github.com/General-Instinct/InstinctFlash)
 
-2026-09-22 23:20:06 | 标签: 编程与工程, 系统设计, 性能优化, 具身智能, 开源项目
-
-> InstinctFlash 是一个高性能的机器人模型服务框架，设计用于机器人模型。它提供了优化的推理功能，包括对 RTX 5090 和 RTX 4090 的支持，以及 Jetson Thor 设备。框架支持各种机器人模型，如 LingBot-VA、LingBot-VLA 和 Cosmos3，提供了速度提升达 33.78 倍。它包括特性如 FP8 和 NUMERIC 精度、动态步骤缓存和一个统一的运行时 API，用于在不同硬件平台上实现无缝部署。框架还包括用于基准测试、验证和评估的工具，确保了机器人应用的高性能和可靠性。
+2026-09-22 23:20:06
 
 
 
@@ -41893,11 +41891,11 @@
 
 
 
-### [深度拆解：AI-Agent-Harness-的构造](https://baoyu.io/translations/2026-05-10/akshay-pachaar-2041146899319971922)
+### [Codex-的野心，MCP-和-Skill-的下一步](https://baoyu.io/blog/2026-05-11/skill-next-codex)
 
-2026-05-10T00:00:00.000Z
+2026-05-11T00:00:00.000Z
 
-> 深入探讨 Anthropic、OpenAI、Perplexity 和 LangChain 究竟在开发什么。涵盖编排循环、工具、记忆、上下文管理以及所有能将“无状态”大语言模型转变为全能 Agent 的核心组件。
+> Codex 右侧工作区的演进不只是 UI 变化，而是在为插件生态铺路。
 
 
 

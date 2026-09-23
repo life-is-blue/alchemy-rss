@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-23 10:21:29 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-23 16:56:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,25 +8,19 @@
 
 ### [与-Epoch-AI-的-JS-Denain-一起-辩论-RSI-、-美国-中国差距-与-波动性](https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and)
 
-2026-09-22 21:37:45 | 标签: AI 与智能应用, RSI, 美中差距, 波动性, Epoch AI
-
-> 本文讨论了 RSI （递归自我改进）的现状及其对 AI 发展的影响，包括美中差距与波动性，并采访了 Epoch AI 的 JS Denain 他分享了对此主题的见解。
+2026-09-22 21:37:45
 
 
 
 ### [Jev-不是小型-LLM：系统一模型技术指南](https://dev.to/stalwartcoder/jev-is-not-a-small-llm-a-technical-guide-to-system-one-models-25m2)
 
-2026-09-22 21:27:24 | 标签: AI 与智能应用, 大语言模型 (LLM), 系统一模型, Jev, LLM
-
-> 本文阐述了 Jev 的架构与特性，这是一款与传统 LLM 不同的系统一模型。文章讨论了 Jev 如何在声明的输出空间上返回概率质量，以及这如何实现更快速、更准确的决策。同时，文章还介绍了适用于 Jev 的五种模式，包括网关 (gate)、路由器 (router)、扇出 (fan-out)、反射 (reflex) 和密集标注器 (dense labeller)。
+2026-09-22 21:27:24
 
 
 
 ### [机器人-/-物理-Agent-Harness-综合分析与对比：从「更强的模型」到「更好的系统」](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489860&idx=1&sn=df5cc4476132ee812051f40c7ecf3150)
 
-2026-09-22 20:25:00 | 标签: AI 与智能应用, AI Agent, 强化学习, 系统设计, 模型训练与推理
-
-> 本文覆盖五个在 2026 年集中出现、共同回答 "如何为机器人/物理 Agent 构建 Harness" 这一问题的代表性项目：X-OmniClaw、MemoHarness、HumanCLAW、RoboClaw 和 RPent。
+2026-09-22 20:25:00
 
 
 
@@ -5516,33 +5510,25 @@
 
 ### [推出-Claude-Opus-5.5](https://www.anthropic.com/claude-opus-5-5)
 
-2026-09-23 00:29:05 | 标签: AI 与智能应用, 模型训练与推理, 系统设计, AI Agent, 开发者工具
-
-> Anthropic 推出 Claude Opus 5.5，相比 Opus 5 有重大提升，性能、性价比和安全性均得到改进，同时保持自然沟通并回应关于 AI 对工作影响的担忧。Opus 5.5 在大多数工作上的表现达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。它还配备了为我们最强模型开发的安全防护措施。
+2026-09-23 00:29:05
 
 
 
 ### [腾讯-15-年资深后台工程师，转战大模型推理的抉择](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649804238&idx=1&sn=5071d1c07d4c99fac83cbfe0a3860344)
 
-2026-09-22 18:55:00 | 标签: 编程与工程, 后端开发, 分布式系统, AI基础设施, 系统设计
-
-> 作者作为拥有 15 年经验的资深后台工程师，记录了其在 AI 浪潮下转型大模型推理领域的过程。文章详细分析了资深开发者在面对技术变革时的困境，并提出了推理工程的入门建议：从理解 Transformer 结构入手，建立分层工程体系（业务、调度、算子层），并深入研究模型结构的演进趋势。同时，作者指出 AI Infra 本质上是通用 Infra 的延伸，而 Agent Infra 将成为传统后台工程师发挥分布式与系统设计优势的新战场。
+2026-09-22 18:55:00
 
 
 
 ### [MTFM：美团统一推荐基座大模型在外卖多业务场景的落地实践](https://tech.meituan.com/2026/09/22/Meituan-Foundation-Model-for-Recommendation.html)
 
-2026-09-22 17:02:06 | 标签: 编程与工程, 大语言模型 (LLM), 系统设计, 性能优化, AI Agent
-
-> 本文详细介绍了美团统一推荐基座大模型 MTFM 的设计与落地实践。针对推荐系统在多场景建模中的规模可扩展性、场景可延展性与架构高效性挑战，MTFM 采用了类 Transformer 骨干网络，通过异构 Tokenizer 实现多场景特征免对齐，引入混合注意力机制（Full Attention 与 Target Attention 堆叠）降低计算复杂度，并提出 Target Token Scale-Up 增强模型能力。在工程实现上，MTFM 升级为 User-Level 样本训练范式，并针对深层网络训练稳定性、多业务联合训练及 GPU 算子（如 FA 镜像、GLN Kernel）进行了深度优化。...
+2026-09-22 17:02:06
 
 
 
 ### [面试官：“Agent-接了上百个工具，怎么选？”](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247564174&idx=2&sn=5d7dc38b29c3708b3cc48cfd004a4f82)
 
-2026-09-22 14:12:00 | 标签: AI 与智能应用, AI Agent, Agent编排, 大语言模型 (LLM), 提示工程
-
-> 文章以面试对话切入，指出把上百个工具的名称、描述和参数 Schema 全部塞进 Prompt 会带来四类问题：Token 占用、相似工具选择混淆、权限暴露风险和延迟压力。作者区分了 Tool Routing（决定当前 Agent 能看到和调用哪些工具）与 Multi-Agent Routing（决定任务交给哪个 Agent）两个不同层次。随后给出完整的分层路由链路：先建立包含命名空间、标签、适用边界、Schema、权限与状态的工具注册表；再按产品、租户、角色、环境做确定性过滤，强调先鉴权再召回；接着用规则或轻量分类模型粗分业务域；在候选域内用关键词、BM25、Embedding 或混合检索召回...
+2026-09-22 14:12:00
 
 
 
@@ -10630,17 +10616,13 @@
 
 ### [Diogo-Almeida：我为什么要做-Jev？](https://mp.weixin.qq.com/s?__biz=MzY5ODQwMTkxNA==&mid=2247517043&idx=1&sn=3af97d98d2ee1eab898fafd2e7056e22)
 
-2026-09-22 20:00:00 | 标签: AI 与智能应用, AI 商业化, 消费与零售, AI 创业, AI 模型
-
-> Diogo Almeida 在公开演讲、播客访谈和文章中，谈到了他为什么要做 Jev 的思考过程。Jev 是 TypeSafe 的一个新模型，旨在为软件提供决策能力，而不是仅仅生成文本。Diogo Almeida 认为，当前的 AI 模型主要是为了取悦人类，而不是为了自动化。Jev 的目标是让代码成为输出的消费者，通过优化 AI Stack，重新设计 AI 的功能。
+2026-09-22 20:00:00
 
 
 
 ### [专访-Jev-发明者：把工作流程掌握在程序里，只在需要理解和判断的地方嵌入-AI](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691572950&idx=1&sn=bc2e7974322a644d9fe5def4d0095b65)
 
-2026-09-22 16:19:00 | 标签: AI 与智能应用, 大语言模型 (LLM), AI Agent, 模型训练与推理, 强化学习
-
-> 文章是对 TypeSafe 创始人兼 CEO 迪奥戈·阿尔梅达的访谈精炼版。阿尔梅达曾参与 OpenAI 指令跟随模型构建，他提出的核心问题是：AI 已能解决数学领域的极难问题，却仍难以自动化大量基础工作，缺口不在能力而在可靠性。Jev 被定义为「机器原生、系统一、大型、可编程模型」，核心目标是让代码成为模型的直接消费者，优化指标是「每美元智能」。访谈中他批评 RLHF 会导致模式坍缩、压缩模型判断空间，提出 RLCD（基于代码反馈的强化学习）作为新「北极星」，把人从环路中移出、让程序进入环路。他反对刷公共基准，也不做传统拒答式安全对齐，认为智能更像数据库而非需要讨论价值观的同事。在用法上，他...
+2026-09-22 16:19:00
 
 
 
@@ -14324,9 +14306,7 @@
 
 ### [高级评估:-如何在产品中发现并修复隐藏的-AI-失败](https://www.lennysnewsletter.com/p/advanced-evals-how-to-find-and-fix)
 
-2026-09-22 20:45:14 | 标签: AI 与智能应用, AI 工作流, 产品管理, 提示工程, 写作与表达
-
-> 本文认为错误发现——审查跟踪以确定哪些 AI 失败值得测量——是构建评估的最重要和最常被跳过的阶段。基于与超过 50 家 AI 公司的工作，作者解释了团队为什么会选择写入指标，因为它感觉具体和可自动化，但这样做太早意味着测量的错误东西。他们引入了概念：标准偏移：你对好的产品体验的定义只有在审查真实例子后才会出现，例如租赁助手无法处理价格反对。他们报告了 100 个生产跟踪的研究，显示代理会错过需要产品判断的问题，很好地捕捉明显的失败，并将好的响应标记为失败。推荐的工作流程使用主动学习：从多样化的跟踪样本开始，审查每个失败的几个实例，然后让代理注释跟踪以接受或拒绝人类。该帖子走过了如何在应用中日...
+2026-09-22 20:45:14
 
 
 
@@ -14500,241 +14480,181 @@
 
 ### [🔬-奥斯卡，两颗小行星和在你的-sklearn-中算法：约翰·普拉特谈-AI-与科学](https://www.latent.space/p/john-platt)
 
-2026-09-23 05:07:39 | 标签: AI 与智能应用, 科学前沿, 颁奖季, AI研究前沿, 气候与环境
-
-> 约翰·普拉特，AI 和科学领域的先驱，分享了他对谷歌的 Empirical Research Assistance（ERA）及其潜力在革命化科学问题解决方面的见解。他强调了 ERA 的能力在自动化复杂问题的解决，包括气候变化，以及在各种领域的应用。
+2026-09-23 05:07:39
 
 
 
 ### [GPT-6-的改进提示缓存](https://openai.com/index/better-prompt-caching-for-gpt-6)
 
-2026-09-23 05:00:00 | 标签: AI 与智能应用, 性能优化, AI 工程, 模型训练与推理, AI 产品与应用
-
-> OpenAI 发布 GPT-6 的改进提示缓存系统，面向需要长时间运行的持久化 Agent。新系统默认提供更高的缓存命中率，对 30 分钟内复用的合格共享前缀给予缓存折扣，缓存输入 token 最高可享 90% 折扣。配套推出 Prompt Caching Dashboard 用于监控缓存命中率与输入构成，以及诊断工具用于定位缓存未命中的原因（如工具变更）。开发者还可通过显式缓存断点选择缓存内容、在不破坏缓存的情况下调整推理强度、通过追加式更新保持工具定义稳定、以及预热缓存以降低延迟。GitHub Copilot 和 Strawberry Browser 等团队提供了使用反馈，称缓存优化显著降...
+2026-09-23 05:00:00
 
 
 
 ### [游戏开发者新功能：DLSS-5、NVIDIA-ACE-更新和新-RTX-套件功能](https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/)
 
-2026-09-23 04:48:36 | 标签: AI 与智能应用, 产品运营, LLM 推理优化, 游戏开发, NVIDIA
-
-> NVIDIA DLSS 5 使用确定性执行模型，允许精确当前需求预测，实现主动电压控制和时钟周期合成，从而显著减少功耗开支，同时保持高交互性性能。
+2026-09-23 04:48:36
 
 
 
 ### [Anthropic-发布-Claude-Opus-5.5：Fable-5.1-级性能，运行成本仅为-Opus-5-的-40%](https://www.marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release/)
 
-2026-09-23 02:59:38 | 标签: AI 与智能应用, 性能优化, 大语言模型 (LLM), 云原生 / DevOps, 平台经济
-
-> Anthropic 已发布 Claude Opus 5.5，新模型在大多数工作中表现与 Claude Fable 5.1 相同，运行成本仅为 Opus 5 的 40%。该模型可作为托管 API 模型部署在 Claude 平台、AWS、Google Cloud 和 Azure 上。
+2026-09-23 02:59:38
 
 
 
 ### [通过构建微型合约守卫来学习工具调用类型漂移](https://dev.to/magickong/learn-tool-call-type-drift-by-building-a-tiny-contract-guard-1e4l)
 
-2026-09-22 22:16:20 | 标签: AI 与智能应用, 模型训练与推理, AI基础设施, AI与智能应用, AI工程
-
-> 本文解释了语言模型的分词器为何与软件预处理存在根本区别。作者从编译器背景出发，将编译器的词法分析器与模型的分词器进行类比：两者都将文本转换为结构化表示，但模型的分词器目标不同——压缩而非结构识别。
+2026-09-22 22:16:20
 
 
 
 ### [Brave-浏览器内置的隐私优先-AI-助手-Leo](https://www.kdnuggets.com/bravely-ai-browsing-with-leo)
 
-2026-09-22 22:00:29 | 标签: AI 与智能应用, 性能优化, 提示工程, AI 工作流, LLM 推理优化
-
-> 本文介绍了 Brave 浏览器内置的隐私优先 AI 助手 Leo，解释了其工作原理、功能特性及对数据专业人士的价值，并探讨了 Leo 的局限性及与 Perplexity 等 AI 工具的对比。
+2026-09-22 22:00:29
 
 
 
 ### [嵌入就是一个查找表，其余的一切只是你如何填充它](https://dev.to/cchinchilladev/an-embedding-is-a-lookup-table-and-everything-else-is-how-you-fill-it-50p8)
 
-2026-09-22 21:58:35 | 标签: AI 与智能应用, 机器学习, 模型训练与推理, 上下文工程, 大语言模型 (LLM)
-
-> 本文将嵌入视为简单的「整数到向量」查找表，重点介绍了两种填充方式：作为训练好的模型参数（静态）或根据模型输出动态计算（上下文）。文章详细阐述了池化（pooling）如何压缩每个 Token 的向量，以及为什么生成的空间没有迁移路径——更换模型会静默地使所有存储的向量失效。通过一个 48 行的运行手册实验，作者展示了将 MiniLM-L6 模型更换为 L12 时，召回率下降了 60 %，并解释了为什么池化选择、归一化和维度大小至关重要。作者提出了四个实用的工程习惯：在索引中存储完整的模型元数据、采用直接切换而非滚动更新、测量邻居重合度而非原始余弦值，以及将维度视为一种成本。本文专为转向机器学习的...
+2026-09-22 21:58:35
 
 
 
 ### [AI-情感分析用于中小企业供应商包容性](https://dev.to/esparksit/ai-sentiment-analysis-for-smb-supplier-inclusion-2a6j)
 
-2026-09-22 21:22:53 | 标签: AI 与智能应用, AI 工程, 模型训练与推理, AI 应用与智能, 大语言模型推理
-
-> 本文介绍了 AI 驱动的情感分析如何帮助中小企业加强供应商多样性和包容性策略。它探讨了使用情感分析的优势，包括发现供应商反馈中的模式，并提供了在中小企业环境中实施情感分析的实用建议。
+2026-09-22 21:22:53
 
 
 
 ### [限时免费！腾讯最新生图模型上线，盲测比肩-Seedream-5.0-Pro](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652810834&idx=3&sn=b66520c8da7b3e2ada985a600cf981ee)
 
-2026-09-22 20:10:00 | 标签: AI 与智能应用, 模型发布, 多模态 AI, 图像生成, AI 产品与应用
-
-> 腾讯于 2026 年 9 月 22 日正式发布新一代图像生成模型 Hy Image3.5 preview。该模型支持文生图、图生图及最多 5 张图参考和多轮上下文创作，最高可输出 2K 分辨率图像。在内部盲测中其综合表现比肩字节 Seedream 5.0 Pro。目前，该模型已全面接入腾讯元宝、ima、WorkRally、OnSolo 等多款原生 AI 应用，并在腾讯云 TokenHub 上线，以 0.15 元/张的 2K 图像 API 价格成为主流生图模型中成本最低的产品之一。此外，文章还梳理了腾讯近期在基础模型团队整合及多模态顶尖人才引进方面的动态，指出产品入口与落地场景正成为生图模型竞争...
+2026-09-22 20:10:00
 
 
 
 ### [在生产环境-Scikit-LLM-流水线中监控嵌入漂移---MachineLearningMastery.com](https://machinelearningmastery.com/monitoring-embedding-drift-in-production-scikit-llm-pipelines/)
 
-2026-09-22 20:00:35 | 标签: 编程与工程, 机器学习, AI 工程, 数据科学, 模型训练与推理
-
-> 当大型语言模型部署到生产环境后，用户行为会不断演变，从而导致嵌入漂移。传统的表格数据指标往往无法适用于高维嵌入。文章概述了三种关键策略：训练一个二分类器来区分基线数据与生产数据、计算质心之间的余弦距离，以及使用降维技术（如 UMAP 或 PCA）后进行统计检验。文章提供了使用 scikit-learn 和 Scikit-LLM 库的代码实现来演示这些技术。
+2026-09-22 20:00:35
 
 
 
 ### [6-天烧光-2000-多万，拿下开源第一！小米史无前例「炼丹直播」收官](https://www.qbitai.com/2026/09/494179.html)
 
-2026-09-22 19:50:28 | 标签: AI 与智能应用, 开源项目, 计算机视觉, 模型训练与推理, AI 安全与对齐
-
-> 本文介绍了小米在 6 天内训练的 MiMo-V2.6-Pro 模型，模型能够识别 18 种解剖结构和 146 种疾病，实现了专家级通用腹部影像 AI。小米使用了视觉-语言对比学习和自适应对比建模等技术，通过「器官级细粒度对齐」模拟放射科医生的阅片逻辑，将 CT 影像与诊断报告进行精确匹配。验证结果显示，该模型在腹部 146 种疾病的诊断上表现优异，AUC 稳定在 0.9 左右，在人机对比中准确率超过多数放射科医生。
+2026-09-22 19:50:28
 
 
 
 ### [Open-Data-·-用于-LLM-服务研究的数据集](https://data.freeinference.org/)
 
-2026-09-22 19:50:15 | 标签: AI 与智能应用, 数据科学, LLM 推理优化, 开源项目, LLM 推理
-
-> Chutes 工作负载数据集提供了跨越一年、涵盖近 9，000 个模型、超过 6.12 亿请求的元数据。数据包含 Token 计数、前缀缓存重用情况以及请求时延。关键发现强调了请求中的高度时间局部性、LRU 驱出策略的有效性，以及缓存感知路由在提高 Token 命中率方面的优势。
+2026-09-22 19:50:15
 
 
 
 ### [Jev-深度测评：它能颠覆-Agent-搜索吗？](https://mp.weixin.qq.com/s?__biz=MzUzMDI5OTA5NQ==&mid=2247513831&idx=1&sn=c89664986d935c3a58d17d3711b25002)
 
-2026-09-22 18:40:00 | 标签: AI 与智能应用, AI Agent, RAG / 检索增强, 模型评测与基准, 向量数据库
-
-> 本文基于 DeepSearcher、MemSearch、Vector Graph RAG 三个开源项目，对判断型模型 Jev 开展定量测评。实验一：Agentic Search 停止决策任务中，Jev 与 DeepSeek V4 Flash 召回率持平（93.25%），但判断耗时从 2.23s 降至 0.55s，API 成本降至 1/7。实验二：Coding Agent 记忆重排场景，Jev 将 Recall@5 从 74.71% 提升至 79.41%，仍低于 Voyage rerank-3 的 81.87%，且无明显成本优势。实验三：多跳图检索关系筛选任务，Jev 超过 GPT-4o-min...
+2026-09-22 18:40:00
 
 
 
 ### [实测-MiMo-V2.6，这个小米直播烧了-347-万美元训出来的模型到底怎么样？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247492244&idx=1&sn=b154be185d6b0b051ede1a5c61852b92)
 
-2026-09-22 17:30:00 | 标签: AI 与智能应用, AI Agent, 模型训练与推理, AI 工程, 开源项目
-
-> 本文通过实测 MiMo-V2.6 模型的训练过程，分析了其从 58.4 到 72.6 的智能指数提升，以及在 3D 建模、前端审美、真实 coding、办公数据处理和长程研究等五个场景下的实际表现，指出该模型在成本控制和能力提升方面具有显著优势。
+2026-09-22 17:30:00
 
 
 
 ### [Claude-Opus-5.5-现已在-AWS-上发布-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/)
 
-2026-09-22 17:28:01 | 标签: AI 与智能应用, 性能优化, 云原生 / DevOps, 大语言模型 (LLM), AI Agent
-
-> AWS 宣布 Claude Opus 5.5 可用，Anthropic 的新模型。该模型适合于代理编码、知识工作和长时间任务。它经过训练以更清晰地沟通，并具有类似于 Claude Fable 5.1 的安全分类器。
+2026-09-22 17:28:01
 
 
 
 ### [AWS-引入技能装备代理人与-Strands-Evals-和-Amazon-Bedrock-AgentCore-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/)
 
-2026-09-22 17:18:13 | 标签: AI 与智能应用, 模型训练与推理, 知识管理, 云原生 / DevOps, 测试与质量
-
-> AWS 引入技能装备代理人与 Strands Evals 和 Amazon Bedrock AgentCore，支持技能选择和指令遵循的评估。代理人可以评估其选择正确技能和遵循该技能指令的能力。评估过程涉及记录代理人轨迹，然后使用 Strands Evals 或 AgentCore Evaluations 来评估技能选择和指令遵循。评估人员可以使用评估人员来识别代理人未能选择正确技能或遵循该技能指令的区域。
+2026-09-22 17:18:13
 
 
 
 ### [Agent-回血，3D-狂飙，视频工具失速｜8-月出海-AI-榜](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522832&idx=1&sn=701e8e6394eb7de22ec0276ea20ed1fb)
 
-2026-09-22 16:59:00 | 标签: AI 与智能应用, AI Agent, 代码助手, 视频AI, 增长设计
-
-> 本文通过对 2026 年 8 月出海 AI Web 应用 100 强榜单的数据统计，指出大盘增长平稳，但头部集中度进一步提升。3D 建模赛道连续三个月全员增长，展现极强稳定性；生产力产品占据了大部分新增流量。Agent 赛道在经历热度波动后回血，竞争焦点转向办公入口大战。相比之下，视频生成模型虽然模型密集发布，但 Web 流量却出现下降，反映出单一功能性工具面临的挑战。
+2026-09-22 16:59:00
 
 
 
 ### [Agent-需要新的“决策层”：JEV-为什么值得关注？](https://mp.weixin.qq.com/s?__biz=MzU2NzkxNDY0Ng==&mid=2247491078&idx=1&sn=cbf3321eff6949d05aafd6bd0c541140)
 
-2026-09-22 16:55:00 | 标签: AI 与智能应用, AI 工作流, AI 编程, 决策思维, 心理与思维
-
-> 文章深入剖析了 JEV（Judgment Evaluation Vector）作为 AI Agent 中的决策层，阐述了 choice、score、route、filter 四大机制，并强调了规划与执行之间的明确边界、概率风险评估以及安全门禁设计。
+2026-09-22 16:55:00
 
 
 
 ### [Reactiv-如何使用-Amazon-Bedrock-AgentCore-自动化移动商务-80%-更快](https://aws.amazon.com/blogs/machine-learning/how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore/)
 
-2026-09-22 15:46:07 | 标签: AI 与智能应用, 云原生 / DevOps, 性能优化, OpenAI API, AWS
-
-> Reactiv 使用 Amazon Bedrock AgentCore 自动化移动商务产品的更新，减少了商户配置时间 80%，并且可以更快地进入生产环境 33%。该解决方案采用 AgentCore 上的三元系统，使用 Strands Agents SDK，并利用 AgentCore 记忆、 AgentCore 身份和 AgentCore 运行时提供持久记忆、多租户隔离和管理代理执行。
+2026-09-22 15:46:07
 
 
 
 ### [使用-Amazon-SageMaker-AI-的并发扫描来优化生成式-AI-端点的大小](https://aws.amazon.com/blogs/machine-learning/right-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai/)
 
-2026-09-22 15:35:53 | 标签: AI 与智能应用, 性能优化, LLM 推理优化, AI 工程, 云原生 / DevOps
-
-> 本技术指南介绍了如何使用 NVIDIA Nemotron-3 Nano 30B MoE 模型在 SageMaker AI 上部署，使用原生 vLLM 容器，然后使用 CreateAIBenchmarkJob API 运行并发扫描，以映射端点的性能范围。作者定义了一个现实的 RAG 风格工作负载（1，024 个输入/256 个输出令牌，流式传输启用），并测试了并发级别的 64、256 和 1，024，识别出 256 个并发请求的饱和度膝点，通过出流量平坦而 p99 延迟急剧上升。他们进一步演示了最大并发度下 Sla 搜索配方，自动收敛到满足 Sla 阈值的最高并发度（例如，p99 e2e < 5...
+2026-09-22 15:35:53
 
 
 
 ### [Trane-如何利用-Amazon-Bedrock-AgentCore-提高建造洞察力-60-倍](https://aws.amazon.com/blogs/machine-learning/how-trane-gets-building-insights-60x-faster-with-amazon-bedrock-agentcore/)
 
-2026-09-22 15:30:34 | 标签: AI 与智能应用, 机器学习, 云原生 / DevOps, 系统设计, 性能优化
-
-> Trane Technologies 是一家全球气候创新者，管理着全球数百万连接的 HVAC 资产。为了解决从大量数据中提取可操作见解的挑战，该公司在 Amazon Bedrock AgentCore 上建立了一个 AI 强化的代理解决方案。该解决方案使用多代理架构，每个专门的助手都由其自己的系统提示来管理，提供角色基准访问控制、实时 HVAC 分析、智能搜索和可扩展架构。
+2026-09-22 15:30:34
 
 
 
 ### [塔塔埃尔克西在-AWS-上检测工业安全风险秒级-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/how-tata-elxsi-detects-industrial-safety-risks-in-seconds-on-aws/)
 
-2026-09-22 15:19:54 | 标签: AI 与智能应用, 制造业, 计算机视觉, AI基础设施, 性能优化
-
-> 本文详细介绍了 IRIS（工业实时智能系统），塔塔埃尔克西的平台，该平台将现有的摄像头基础设施转换为主动安全系统。架构遵循边缘到云模式：AWS IoT Greengrass 在 NVIDIA Jetson 边缘服务器上提取帧，应用运动滤波和轻量级第一轮模型，减少云绑定帧的 70-80%。仅元数据事件（S3 对象键，摄像头上下文）通过 Amazon Kinesis Data Streams 传输，速率为 2，000-15，000 事件/秒，<200ms p95 延迟。专门的计算机视觉模型（YOLOv8 用于个人防护设备，SlowFast 用于姿势，多目标跟踪用于车辆近距离）在 SageMaker...
+2026-09-22 15:19:54
 
 
 
 ### [扩展公共部门智能：Agentforce-和-AWS](https://aws.amazon.com/blogs/machine-learning/extending-public-sector-intelligence-with-agentforce-and-aws/)
 
-2026-09-22 15:17:45 | 标签: AI 与智能应用, MCP协议, 云原生 / DevOps, AI Agent, AI 工作流
-
-> 本文解释了如何将 Amazon Bedrock Data Automation 与 Model Context Protocol (MCP) 结合起来，将未结构化数据转换为结构化见解，并如何通过自然语言查询在 AI 代理中暴露这些见解，例如 Salesforce Agentforce。
+2026-09-22 15:17:45
 
 
 
 ### [罗福莉押注大规模-RL、小米最强开源模型亮相：6-天烧掉-2000-多万，多个-Agent-基准比肩闭源旗舰](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247667619&idx=1&sn=d6aa40bb6150376457cc070eac4c3d5b)
 
-2026-09-22 14:31:00 | 标签: AI 与智能应用, 强化学习, 模型发布, 多模态 AI, AI Agent
-
-> 小米 MiMo 团队推出了 MiMo-V2.6 系列，涵盖旗舰版 Pro 与效率优先的 Flash 模型。该系列的核心进展并非单纯扩大参数，而是通过持续 6 天的大规模强化学习训练，让模型在复杂环境中通过反复探索与纠错来学习长程任务。技术上，模型采用稀疏混合专家架构（MoE），并引入滑动窗口与全局注意力的混合机制以平衡长上下文的计算开销。此外，小米还通过中期训练建立了预训练知识与强化学习之间的桥梁，并利用组内智能体评估机制提升了模型的推理质量。
+2026-09-22 14:31:00
 
 
 
 ### [谷歌全新-RSI-范式，更好，更便宜](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247512074&idx=1&sn=6efdac9bb456ff10c496c64993e578b6)
 
-2026-09-22 14:26:00 | 标签: AI 与智能应用, AI Agent, AI研究前沿, 模型训练与推理, 大语言模型 (LLM)
-
-> 本文解读谷歌发布的 Dream-RSI 框架，旨在解决递归自我改进（RSI）中探索策略迭代成本过高、闭环困难的痛点。Dream-RSI 借鉴世界模型思想，将 AI 在科学发现过程中生成的结构化历史树转化为「回放模拟器」，允许新策略在无需重新执行代码和评估的情况下，通过读取历史记录进行零成本的离策略评估。该系统包含在线探索、构建模拟器、基于做梦的策略改进三个阶段。实验证明，Dream-RSI 在 Lasso 正则化路径求解、经典数学优化问题及 GPU Kernel 自动发现任务中，均能以远低于基线的算力预算达到相同甚至更高的性能。此外，研究发现将历史作为可交互模拟器比将其作为语义上下文指导更有效...
+2026-09-22 14:26:00
 
 
 
 ### [NVIDIA-推出-SoL-Pi：通过自动研究循环将编程智能体的-Token-流量降低高达-49%](https://www.marktechpost.com/2026/09/21/nvidia-researchers-have-released-sol-pi/)
 
-2026-09-22 13:04:45 | 标签: AI 与智能应用, AI 编程, AI Agent, 性能优化, 模型训练与推理
-
-> SoL-Pi 是由 NVIDIA、NTU 和 MIT 研究人员开发的一套包含四种效率机制的方案，旨在优化开源 Pi 编程智能体的 「Harness」层。与专注于单 Token 成本的传统方法不同，SoL-Pi 旨在减少完成每项任务所消耗的 Token 总量。这四种机制——Action Fusion、Online Context Compact、ObservationPack 和 Evidence-Preserving Reducer——是由运行自动研究循环的 AI 发现的。在 EdgeBench 上的测试表明，SoL-Pi 在显著降低 Token 流量和 API 成本的同时，在 GPT-5.6...
+2026-09-22 13:04:45
 
 
 
 ### [用-GPT-6-Astra-就能直接控制机器人？可具身真机没那么简单](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651059152&idx=1&sn=81dd2274b1d881df85d42dd3c710d1d2)
 
-2026-09-22 12:30:00 | 标签: AI 与智能应用, 具身智能, AI Agent, 模型评测与基准, AI研究前沿
-
-> 本文探讨了通用大模型（如 GPT-6 Astra）在具身智能领域的冲击与局限。尽管基模在单项任务中表现惊人，但在真机环境下仍存在物理不合理动作及安全风险。为此，穹彻智能推出了 RoboRSI 框架，旨在为具身智能构建一套类似 Harness 的系统级能力。该框架采用 Manager， Planner， Engineer， Reviewer 四类智能体协作，构建「执行→诊断→修订→再执行」的闭环，并引入 TSR（自顶向下技能细化）机制通过四层技能树管理经验。实验证明，RoboRSI 能显著提升零样本任务适配率，并通过代码固化降低 Token 消耗与执行时间，将新场景的适配成本从数周工程师驻场压缩...
+2026-09-22 12:30:00
 
 
 
 ### [Agent-版-Hugging-Face-来了，openJiuwen-发布首个开源智能体资产平台](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651059152&idx=2&sn=749ad51193995789f64cdff1b4bbcd98)
 
-2026-09-22 12:30:00 | 标签: AI 与智能应用, AI Agent, 开源项目, 模型发布, AI 工程
-
-> openJiuwen 是由华为 2012 实验室等团队联合构建的开源 AI Agent 平台，旨在解决 Agent 能力难以沉淀与复用的痛点。该平台创新性地提出了五类资产体系：技能（沉淀方法论）、连接器（接入外部系统）、插件（组合能力包）、专家（定义角色模板）以及专家团（组织多角色协作）。通过 WorkSwarm 客户端与 Agentic Hub 社区，用户可以经历「创建/获取 $\rightarrow$ 安装 $\rightarrow$ 装配使用 $\rightarrow$ 发布/共享」的完整生命周期。平台支持自然语言创建资源，并提供本地经验自动演进能力，使 Agent 能够从简单的对话入口...
+2026-09-22 12:30:00
 
 
 
 ### [“大模型的-Steam”！AgentArk-用-Coding-Agent-扩展通用多模-Agent-的-RL-与评测环境](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247519956&idx=1&sn=c27252f14923d90d52c2ad99f7b62181)
 
-2026-09-22 12:00:00 | 标签: AI 与智能应用, 自主编码, 模型训练与推理, 大语言模型 (LLM), 模型评测与基准
-
-> AgentArk 是一个面向多模态智能体的开放环境框架，利用 Coding Agent 持续扩展 task，并让同一批环境同时支持 Agentic RL 训练与评测。AgentArk 的基本路线很直接：利用已经非常强的 Coding Agent，自动开发用于评测和训练下一代 Multimodal Agent 的环境。AgentArk 的环境生产不是一次性的 "prompt → code"，而是一个带验证的工作流。
+2026-09-22 12:00:00
 
 
 
 ### [我把-463-个-AI-视频做成了-Skill-和提示语模版，全都开源！](https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw==&mid=2247511621&idx=1&sn=18b1f7fccaba22417ae7767d669e6bcf)
 
-2026-09-22 11:27:00 | 标签: AI 与智能应用, 模型评测与基准, AI 编程, AI Agent, 上下文工程
-
-> 本文介绍了作者开源的 awesome-seedance 项目，该项目包含 463 条 AI 视频提示语模版和 25 个 Skills。作者通过三个硬核测试场景——3D 前端复刻、Excel 数据处理以及加拿大 AI 办公室选址调研——验证了 Seed-2.1-pro 模型在视觉审美、长上下文稳定性和可追溯调研能力方面的显著提升。同时文章提出了 QBS 法（书本转技能）作为解决 AI 空泛回答的实用方法论，分享了具体的 Prompt 实践和工作流经验。
+2026-09-22 11:27:00
 
 
 
@@ -55522,49 +55442,37 @@
 
 ### [Unreal-Agent-—-Unreal-Labs](https://unreallabs.ai/blog/unreal-agent/)
 
-2026-09-23 02:15:53 | 标签: AI 与智能应用, 模型训练与推理, 系统设计, 开发者工具, 开源项目
-
-> Unreal Agent 是一个代理工具，减少了模型的工具管理开销，允许用户控制代理而无需等待工具调用完成。它在真实工作负载和代理基准上可节省至多 40% 的成本，相比 Codex，且可节省至多 20% 的成本相比 Pi。
+2026-09-23 02:15:53
 
 
 
 ### [扩展-Agent-PR-的-CI-规模：GitHub-Actions-中的测试切片与影响分析](https://www.sitepoint.com/optimize-github-actions-agent-prs-test-slicing/)
 
-2026-09-22 22:53:49 | 标签: 编程与工程, AI Agent, 测试与质量, 性能优化, 开发者工具
-
-> 自主编码 Agent 生成拉取请求（PR）的频率远高于人类开发者且范围更小，这在为每个微小提交运行全测试套件时产生了严重的 CI 瓶颈。本文介绍了一种双部分架构解决方案：一个使用 ts-morph 进行 AST 级影响分析并解析反向依赖关系的 TypeScript CLI；以及一个可复用的 GitHub Actions 工作流，它将推测的测试切片作为阻塞状态检查，同时进行延迟的全测试套件验证。指南提供了符号提取、引用解析和测试映射的完整 TypeScript 实现，并提供了如关键路径白名单和深度限制等加固策略，以防止桶文件（Barrel File）爆炸。
+2026-09-22 22:53:49
 
 
 
 ### [GitLab-通过-Microsoft-Foundry-扩展自托管-AI-选项](https://www.infoq.com/news/2026/09/gitlab-microsoft-foundry/)
 
-2026-09-22 20:00:00 | 标签: AI 与智能应用, 自托管, 安全, 云原生 / DevOps, 期权与衍生品
-
-> GitLab 扩展了其 Duo 自托管能力，通过 Microsoft Foundry 支持多种模型家族，使企业能够在自己的 Azure 环境中运行 AI 功能。此举满足了企业对数据留存、主权和网络隔离的关键需求。通过使用 AI Gateway 作为中介，组织可以在保持 AI 基础设施和数据路径控制的同时，为不同任务选择特定模型。
+2026-09-22 20:00:00
 
 
 
 ### [Meta-Muse-AI-Agent-存在-0Day-漏洞，可被劫持滥用高权限](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651347479&idx=4&sn=dfb9902529a6bf7bc69c4fd4742a1bf1)
 
-2026-09-22 18:04:00 | 标签: 编程与工程, AI Agent, 安全, AI安全事件, 开发者工具
-
-> Meta Muse AI Agent 存在一处 0Day 漏洞，若用户设备上已有恶意软件在当前账户权限下运行，就可借助该漏洞劫持 Muse 助手。攻击者可以拦截用户语音输入的提示词，向 Muse 注入恶意指令。除此之外，攻击者还能窃取用户的账户认证凭证。该漏洞风险极高，一旦 Agent 被攻击者控制，就能继承用户授予 Muse 的全部高级权限，以及所有关联服务的访问权限。
+2026-09-22 18:04:00
 
 
 
 ### [AI-工程师最先失去的，可能不是工作，而是说"不"的权力！AI-教父辛顿：模型出问题，现在还靠内部员工爆料](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655943046&idx=1&sn=e90b193e457b9cc55b7f0751eccf59c3)
 
-2026-09-22 17:58:00 | 标签: 商业与创业, AI Agent, AI 工程, AI 安全与对齐, 系统设计
-
-> 文章通过分析 AI Agent 对软件工程的影响，揭示了程序员从代码编写转向任务管理的趋势，以及安全防御机制从人工审查转向自动化闭环的必要性。文章强调 AI 降低了组织依赖，可能引发创业浪潮，同时也提醒工程团队必须建立完善的内部报告机制，以确保系统异常能够及时被识别和响应。
+2026-09-22 17:58:00
 
 
 
 ### [AI-原生-SDLC-落地实战：Claude-Code、Codex、Gemini-智能体工程开发完整指南](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655943046&idx=2&sn=2974fc3c22d017beb509b6af037e9711)
 
-2026-09-22 17:58:00 | 标签: AI 与智能应用, AI Agent, AI 工程, 开发者工具, 安全
-
-> 本文通过整理 AI 原生 SDLC 框架，详细介绍了 Claude Code、Codex、Gemini 三款智能体工具的使用方法与最佳实践。文章分析了 AI 原生 SDLC 的六大阶段（规划、设计、构建、测试、部署、维护），并提供了具体的实施步骤和工具对比。通过实操案例，展示了如何将 AI 加速开发流程，解决传统开发中的规划、评审、部署等瓶颈，为开发者提供了一套可落地的 AI 工程化落地方案。
+2026-09-22 17:58:00
 
 
 
