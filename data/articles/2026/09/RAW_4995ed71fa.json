@@ -1,0 +1,52 @@
+{
+  "id": "RAW_4995ed71fa",
+  "title": "GitHub Wiki 是一种反模式",
+  "url": "https://michaelheap.com/github-wiki-is-an-antipattern/",
+  "date": "2026-09-23 21:05:49",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <header class=\"mb-8\">\n   <div class=\"mb-4 flex flex-wrap items-center gap-2\">\n    <a href=\"https://michaelheap.com/category/favourite/\" class=\"tag-text\" title=\"Favourite post\">❤️</a> <a href=\"https://michaelheap.com/topic/github\" class=\"tag-text\">#github</a> <a href=\"https://michaelheap.com/topic/opinion\" class=\"tag-text\">#opinion</a> <a href=\"https://michaelheap.com/ail/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"ail-badge ml-auto\" title=\"AIL 0: Human Created, No AI Involved\">AIL: 0</a>\n   </div>\n   <div class=\"post-meta mt-3\">\n    <time datetime=\"2022-01-23\">23 Jan 2022</time> in <a href=\"https://michaelheap.com/category/tech\">Tech</a>\n   </div>\n  </header>\n  <div class=\"\">\n   <div class=\"blog-post body-links\">\n    <p>The “<a href=\"https://twitter.com/joemasilotti/status/1483124554843058180\">should I use the wiki or a docs folder on GitHub?</a>” discussion comes up every 6 months or so, and following Shawn Wang’s <a href=\"https://www.swyx.io/three-strikes/\">three strikes rule</a> I thought it was about time I wrote something down about it.</p>\n    <p>The initial version of this post opened with “You can use the wiki or a <code>docs</code> folder for your GitHub project, both are valid choices” but as I wrote more, I realised that there is a single reason to use a wiki, and many more reasons <em>not</em> to use the wiki. So many in fact, that I consider <strong>using the wiki on GitHub is an anti-pattern</strong>.</p>\n    <p>Let’s start with the benefits of using a wiki:</p>\n    <ol>\n     <li>You can get to the wiki contents in a single click from anywhere in the repo</li>\n     <li>There is no 2.</li>\n    </ol>\n    <p>Really, the only benefit that I’ve been able to find to using the wiki is that it’s always there.</p>\n    <p>How about the reasons <strong>not</strong> to use the wiki?</p>\n    <ol>\n     <li>Documentation is versioned alongside your code when using the <code>/docs</code> folder. If you need to use an old version, the docs are easy to find</li>\n     <li>The documentation isn’t available locally when someone clones your repo (you can clone the wiki separately, but this is a hidden feature)</li>\n     <li>Documentation edits get the same treatment as code. They get a full peer review through the pull request process</li>\n     <li>You can use GitHub Actions to lint your docs using tools such as <a href=\"https://github.com/errata-ai/vale-action\">Vale</a></li>\n     <li>People can work with tooling that they already know (e.g. <code>vscode</code> with spellcheck)</li>\n     <li>Wikis provide limited branding opportunities. They all look pretty much the same</li>\n     <li>The wiki doesn’t support image uploads, so you have to put images somewhere else anyway</li>\n    </ol>\n    <p>Now that you’re sold on the idea of keeping docs alongside your code, how do you make it easy for people to view them?</p>\n    <ol>\n     <li>Add your docs to your repository in the <code>/docs</code> folder. Do <em>not</em> use the <code>gh-pages</code> branch as this prevents docs being versioned alongside code</li>\n     <li>Set up a GitHub pages build to publish the docs\n      <ul>\n       <li>If you’re just getting started, I recommend using the <code>just-the-docs</code> theme and letting GitHub build and publish your docs</li>\n       <li>If you prefer to build your own workflow (e.g. using Hugo), you can use <a href=\"https://github.com/peaceiris/actions-gh-pages/\">this</a> GitHub Action to publish the docs</li>\n      </ul></li>\n     <li>Add a single wiki page directing people to the hosted documentation</li>\n    </ol>\n    <p>Using the <code>/docs</code> folder is the highest effort-to-reward ratio option whilst you’re building out a new product. At some point your docs will outgrow a single folder, and then all bets are off. You’ll want a separate repo with its own build process, pull request review guidelines and a whole host of other things. At that point people are already used to working with docs in a repository, and the migration from <code>/docs</code> to its own repo should be seamless for your contributors.</p>\n    <p>Whether you agree or disagree, I’d love to hear your thoughts <a href=\"https://twitter.com/mheap/\">on Twitter</a></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文指出，由于存在像 /docs 文件夹这样更好的替代方案，使用 GitHub Wiki 通常是一种反模式。",
+  "oneSentenceSummary": "本文指出，由于存在像 /docs 文件夹这样更好的替代方案，使用 GitHub Wiki 通常是一种反模式。",
+  "summary": "本文探讨了是使用 GitHub Wiki 还是 /docs 文件夹，并得出结论：后者对大多数项目来说更为优越，因为它提供了更好的版本控制、本地可访问性以及更易于维护的特性。",
+  "mainPoints": [
+    {
+      "point": "使用 Wiki 通常是一种反模式",
+      "explanation": "作者指出了反对在 GitHub 上使用 Wiki 的多个原因，包括缺乏本地可用性、品牌定制受限以及无法上传图片。"
+    },
+    {
+      "point": "将文档放在 /docs 文件夹中能提供最大价值",
+      "explanation": "将文档放在 /docs 文件夹中可以使其与代码一起进行版本控制，允许本地克隆，并通过 GitHub Actions 与 CI/CD 流程无缝集成。"
+    },
+    {
+      "point": "对早期产品而言具有极高的投入产出比",
+      "explanation": "对于新项目，从 /docs 文件夹开始可以在设置复杂性与可维护性之间取得最佳平衡，直到项目规模扩大需要独立的仓库。"
+    }
+  ],
+  "keyQuotes": [
+    "事实上，原因如此之多，以至于我认为在 GitHub 上使用 Wiki 是一种反模式。",
+    "当使用 /docs 文件夹时，文档会与你的代码一起进行版本控制。",
+    "在构建新产品时，使用 /docs 文件夹是投入产出比最高的选择。"
+  ],
+  "tags": [
+    "编程与工程",
+    "开源项目",
+    "GitHub",
+    "文档",
+    "反模式"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 497,
+  "domain": "michaelheap.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790168749000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-23 21:05:49"
+}

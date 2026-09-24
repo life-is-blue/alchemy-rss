@@ -1,0 +1,54 @@
+{
+  "id": "RAW_e8dc6cd916",
+  "title": "Modal 超越 Kubernetes：如何在数秒内扩展 100 万个并发沙箱",
+  "url": "https://www.infoq.com/news/2026/09/modal-scaling-sandboxes/",
+  "date": "2026-09-23 22:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a recent article, Colin Weld and Connor Adams, staff engineers at Modal, describe <a href=\"https://modal.com/blog/scaling-to-1-million-concurrent-sandboxes-in-seconds\">how they rebuilt their sandbox infrastructure</a> from the ground up to support millions of concurrent sandboxes and tens of thousands of sandbox creations per second.</p>\n   <p>According to Weld and Adams, traditional container orchestration systems such as Kubernetes struggle to operate at this scale because they rely heavily on centralized coordination and strongly consistent state.</p>\n   <blockquote>\n    <p>Running 1 million sandboxes pushes the limits of any container platform, both because of the sheer number of containers, but also because running this many sandboxes requires many tens of thousands of compute nodes. There will be many operations which are either O(containers), O(nodes), or both, which will cause traditional container platforms to hit scaling limits.</p>\n   </blockquote>\n   <p>In kubernetes' case, they explain, the load on both the scheduling algorithm and the central durable store (<code>etcd</code>) grows with the number of nodes and pods. Additionally, both pods and nodes write to <code>etcd</code> multiple times, \"which can create serious issues under high pod creation rates or high pod churn, and etcd is not natively shardable within a keyspace\". They also note that overcoming this limitations is feasible, but requires \"serious work\", including rewriting or replacing <code>etcd</code> and parallelizing the scheduling algorithm.</p>\n   <blockquote>\n    <p>To optimize for scale, we decided that everything taking O(sandboxes) or O(nodes) load must be horizontally scalable by default, the sandbox creation path should be as simple as possible, and everything else should be secondary.</p>\n   </blockquote>\n   <p>The fundamental change Modal's engineers made to their platform was to stop coordinating globally and make scheduling look more like load balancing. Instead of relying on a central datastore as the source of truth, each worker became its own source of truth. Likewise, rather than using a single, serialized scheduler, they deployed a fleet of scheduling servers operating in parallel, allowing the scheduling layer to scale horizontally.</p>\n   <blockquote>\n    <p>Once a scheduling server decides which worker to create a sandbox on, it contacts the worker directly via RPC to request that a sandbox is created. Workers accept the scheduling request if they have free resources, or otherwise reject it.</p>\n   </blockquote>\n   <p>The resulting architecture has only one bottleneck, they say: all workers publish their state as a single Redis stream. However, \"load testing has suggested that this remains viable until well over 100,000 workers\". In their benchmark, they created 1 million sandboxes in under a minute, with median startup-to-code time under 0.5 seconds.</p>\n   <p>Commenting the announcement on LinkedIn, <a href=\"https://lnkd.in/p/eNMXgBTU\">Hopsworks CEO Jim Dowling noted</a> that \"new technical problems arise at every order of magnitude increase in scale\", suggesting the team had to iterate on their design multiple times to achieve a reliable 50,000 sandbox creations per second. More substantively, AWS principal AI engineer Alex Jones <a href=\"https://www.linkedin.com/posts/jonesax_modal-just-ran-1-million-concurrent-sandboxes-share-7484913658209234944-UwU2/\">observed that a key part of Modal's achievement was not trying to extend Kubernetes</a> but rather \"walking around the whole thing\" after understanding its limitations. Jones considers this \"the first credible signal that Kubernetes isn't adapting fast enough to what GenAI infrastructure actually needs\" and argues that:</p>\n   <blockquote>\n    <p>We're heading for a decoupling of coordination from execution. The execution plane wants what Modal built; isolation boundaries that appear in milliseconds. The coordination plane (where multi-agent workflows need shared memory and overlapping security boundaries) still wants what Kubernetes-shaped systems are good at.</p>\n   </blockquote>\n   <p>Modal is a serverless compute platform built specifically for AI workloads, providing programmable access to CPUs, GPUs, containers, inference, training, batch jobs, and isolated sandboxes. It is not alone in seeking to \"rebuild the cloud\" around highly scalable infrastructure and sub-10-millisecond cold starts. Other projects pursuing similar goals include <a href=\"https://unikraft.com/company/about\">Unikraft</a>, <a href=\"https://github.com/agent-substrate/substrate\">Google Substrate</a>, and <a href=\"https://github.com/overdrive-sh/overdrive\">Overdrive</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Beyond Kubernetes at Modal: How to Scale 1 Million Concurrent Sandboxes in Seconds\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/modal-scaling-sandboxes/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790172000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Modal 的工程师重建了他们的沙箱基础设施，以支持数百万个并发沙箱和每秒数万个沙箱创建，采用了一种水平可扩展的架构，不再进行全局协调，让调度看起来更像负载均衡。",
+  "oneSentenceSummary": "Modal 的工程师重建了他们的沙箱基础设施，以支持数百万个并发沙箱和每秒数万个沙箱创建，采用了一种水平可扩展的架构，不再进行全局协调，让调度看起来更像负载均衡。",
+  "summary": "Modal 的工程师描述了他们如何重建沙箱基础设施，以支持数百万个并发沙箱和每秒数万个沙箱创建。他们解释说，像 Kubernetes 这样的传统容器编排系统很难在这个规模上运行，因为它们严重依赖集中式协调和强一致性状态。Modal 的工程师对其平台做出了根本性改变，不再进行全局协调，让调度看起来更像负载均衡。他们部署了一组并行运行的调度服务器，使调度层能够水平扩展。由此产生的架构只有一个瓶颈，即所有 worker 将状态发布到单个 Redis 流。",
+  "mainPoints": [
+    {
+      "point": "像 Kubernetes 这样的传统容器编排系统很难大规模运行，因为它们严重依赖集中式协调和强一致性状态。",
+      "explanation": "Modal 的工程师解释说，运行 100 万个沙箱会挑战任何容器平台的极限，既因为容器数量庞大，也因为运行这么多沙箱需要数万个计算节点。"
+    },
+    {
+      "point": "Modal 的工程师对其平台做出了根本性改变，不再进行全局协调，让调度看起来更像负载均衡。",
+      "explanation": "不再依赖中央数据存储作为真相来源，每个 worker 成为自己的真相来源。同样，他们没有使用单个串行调度器，而是部署了一组并行运行的调度服务器，使调度层能够水平扩展。"
+    },
+    {
+      "point": "由此产生的架构只有一个瓶颈，即所有 worker 将状态发布到单个 Redis 流。",
+      "explanation": "然而，负载测试表明，在超过 10 万个 worker 之前，这仍然是可行的。"
+    },
+    {
+      "point": "Modal 的成就不是试图扩展 Kubernetes，而是在理解其局限性后绕过整个系统。",
+      "explanation": "AWS 首席 AI 工程师 Alex Jones 观察到，Modal 成就的关键部分不是试图扩展 Kubernetes，而是在理解其局限性后绕过整个系统。"
+    }
+  ],
+  "keyQuotes": [
+    "我们正走向协调与执行的解耦。执行平面想要 Modal 所构建的东西；以毫秒级出现的隔离边界。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "系统设计",
+    "分布式系统",
+    "AI Agent",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 595,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790172000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-23 22:00:00"
+}

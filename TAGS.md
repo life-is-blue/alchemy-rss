@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-09-24 06:34:53 | [返回首页](/README.md)
+**更新时间**: 2026-09-24 10:09:00 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16238)
+- [AI & 大模型](#ai-llm) (16287)
 - [软件架构](#architecture) (26)
-- [前端与全栈](#frontend-fullstack) (1000)
-- [DevOps](#devops) (771)
+- [前端与全栈](#frontend-fullstack) (1001)
+- [DevOps](#devops) (772)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (6982)
+- [其他](#other) (6990)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [团队分享提升-Agent-Harness-Token-效率的提示词-·-AIHOT](https://aihot.news/items/cmuek0q2c05foroynclaijp3z) - AI 精选
+- [AI-原生创作栈：图像、语音与多智能体工作流如何组合](https://mp.weixin.qq.com/s?__biz=MzU2NzkxNDY0Ng==&mid=2247491079&idx=1&sn=3ebbb6b6a765ac2ff52a56eb5897c72c) - AI 精选
 - [与-Epoch-AI-的-JS-Denain-一起-辩论-RSI-、-美国-中国差距-与-波动性](https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and) - AI 精选
 - [Jev-不是小型-LLM：系统一模型技术指南](https://dev.to/stalwartcoder/jev-is-not-a-small-llm-a-technical-guide-to-system-one-models-25m2) - AI 精选
 - [机器人-/-物理-Agent-Harness-综合分析与对比：从「更强的模型」到「更好的系统」](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489860&idx=1&sn=df5cc4476132ee812051f40c7ecf3150) - AI 精选
@@ -40,10 +42,8 @@
 - [快速扩展在线存储以服务超过-10-亿-ChatGPT-用户](https://openai.com/index/scaling-storage-one-billion-users-part-one) - AI 精选
 - [DeepSeek-V4.1-Flash-技术报告深度解读：长程-Agent-如何重新分配预算](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650454187&idx=1&sn=73df03e5b3d9389d62f86ef859dd7c42) - AI 精选
 - [DeepSeek-V4.1-Flash：更强、更快、更普惠](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485817&idx=1&sn=627dd80114901f3fd8717e2c13feaf6a) - AI 精选
-- [推出-ChatGPT-Images-2.5](https://openai.com/index/introducing-chatgpt-images-2-5) - AI 精选
-- [关于-Navier–Stokes-千年难题](https://openai.com/index/navier-stokes-solution) - AI 精选
 
-- [查看全部 16238 篇...](/details/tags/ai-llm.md)
+- [查看全部 16287 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -81,6 +81,7 @@
 
 
 - [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025) - AI 精选
+- [在-GitHub-Copilot-应用中渲染巨大的拉取请求](https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/) - 编程 精选
 - [使用单个-Parquet-文件实现快速下钻仪表盘](https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/) - 编程 精选
 - [宣布-TypeScript-7.0-——-TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) - 编程 精选
 - [从延迟到即时：GitHub-Issues-导航性能现代化改造](https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/) - 编程 精选
@@ -99,9 +100,8 @@
 - [【第-3606-期】vivo-前端三剑客发展历程及原理揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277798&idx=1&sn=f595cc4365c163ce75cfc2c7572f2989) - 编程 精选
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
-- [Next.js-16](https://nextjs.org/blog/next-16) - 编程 精选
 
-- [查看全部 1000 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1001 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 771 篇...](/details/tags/devops.md)
+- [查看全部 772 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 6982 篇...](/details/tags/other.md)
+- [查看全部 6990 篇...](/details/tags/other.md)
 
 

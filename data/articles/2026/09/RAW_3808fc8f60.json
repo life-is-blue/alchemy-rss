@@ -1,0 +1,44 @@
+{
+  "id": "RAW_3808fc8f60",
+  "title": "Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量 · AIHOT",
+  "url": "https://aihot.news/items/cmuemnn9m07yproynbzmmumd3",
+  "date": "2026-09-24 05:40:50",
+  "author": "noreply@aihot.news (Fireworks AI（网页）)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"detail-mobile-only\">\n   <div class=\"m-detail-bar\">\n    <a href=\"https://aihot.news/\" class=\"m-detail-back\"><span>返回</span></a>\n    <div class=\"m-detail-bar-right\">\n     <button type=\"button\" class=\"m-detail-share\" aria-label=\"分享海报\"></button>\n     <button type=\"button\" class=\"timeline-star m-detail-save\" aria-label=\"收藏\" aria-pressed=\"false\" title=\"收藏\" data-track=\"click_star\" data-track-meta=\"{&quot;itemId&quot;:&quot;cmuemnn9m07yproynbzmmumd3&quot;,&quot;action&quot;:&quot;star&quot;,&quot;storage&quot;:&quot;local&quot;}\" data-no-cardnav=\"true\"></button>\n    </div>\n   </div>\n  </div>\n  <div class=\"dt-source dt-toolbar detail-desktop-only\">\n   <a href=\"https://aihot.news/\" class=\"dt-return\"><span>返回</span></a>\n   <div class=\"dt-source-right\">\n    <span class=\"dt-selected-badge\">精选</span><span class=\"timeline-score mono score-mid timeline-score-explained\" data-score=\"63\" title=\"AI 编辑部评分，满分 100\" aria-label=\"AI 编辑部评分 63，满分 100\">AI 评分 63/100</span>\n    <button type=\"button\" class=\"timeline-star dt-detail-save\" aria-label=\"收藏\" aria-pressed=\"false\" title=\"收藏\" data-track=\"click_star\" data-track-meta=\"{&quot;itemId&quot;:&quot;cmuemnn9m07yproynbzmmumd3&quot;,&quot;action&quot;:&quot;star&quot;,&quot;storage&quot;:&quot;local&quot;}\" data-no-cardnav=\"true\"></button>\n    <details class=\"dt-more\">\n     <summary class=\"dt-more-trigger\" aria-label=\"更多操作\" title=\"更多操作\"></summary>\n     <div class=\"dt-more-popover\">\n      <a href=\"https://aihot.news/items/cmuemnn9m07yproynbzmmumd3/markdown\" class=\"dt-more-export\" data-state=\"idle\" aria-label=\"导出 Markdown\" data-no-cardnav=\"true\"><span>导出 Markdown</span></a><span class=\"visually-hidden\" role=\"status\" aria-live=\"polite\"></span>\n     </div>\n    </details>\n   </div>\n  </div>\n  <header class=\"dt-reading-intro detail-desktop-only\">\n   <div class=\"dt-meta\">\n    <span class=\"dt-meta-source\">Fireworks AI（网页）</span><span class=\"dt-meta-sep\">·</span><span class=\"dt-meta-mono\">2026-09-24 05:40</span><span class=\"dt-meta-sep\">·</span><span>8分钟前</span>\n   </div>\n   <div class=\"dt-summary\">\n    <span class=\"dt-summary-label\">AI 导读</span>\n    <p class=\"dt-summary-text\">Fireworks Research 发布基于 Kimi K3 的专用模型 Ember-1，以约少 40% 的 token 达到与 Kimi K3 相当的质量，今日以 Research Preview 形式在 Serverless 上线。</p>\n   </div>\n  </header>\n  <aside class=\"dt-reading-aside detail-desktop-only\" aria-label=\"阅读辅助\">\n   <section class=\"dt-aside-section\">\n    <h2 class=\"dt-aside-heading\">推荐理由</h2>\n    <p class=\"dt-aside-copy\">官方公布了训练实验数量、基准对比和 A/B 测试数字，读者可据此评估 Ember-1 在推理 token 成本上的实际节省幅度。</p>\n   </section>\n   <section class=\"dt-aside-section\">\n    <h2 class=\"dt-aside-heading\">标签</h2>\n    <div class=\"dt-tags m-detail-tags dt-aside-tags\">\n     <a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/agent\">智能体</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/reasoning\">推理</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/model-releases\">模型发布</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/coding\">编码</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/engineering\">部署/工程</a>\n    </div>\n   </section>\n  </aside>\n  <main class=\"dt-reading-body m-detail-body-wrap\">\n   <div class=\"detail-mobile-only\">\n    <div class=\"m-detail-source\">\n     <div class=\"m-detail-source-left\">\n      <span class=\"m-detail-source-name\">Fireworks AI（网页）</span>\n     </div>\n     <div class=\"m-detail-marks\">\n      <span class=\"m-badge\">精选</span>\n      <details class=\"m-score-tip\">\n       <summary class=\"m-score m-score-mid\" aria-label=\"AI 编辑部评分 63，满分 100，点击查看说明\">63</summary><span class=\"m-score-tip-text\">AI 编辑部评分，满分 100</span>\n      </details>\n     </div>\n    </div>\n    <h1 class=\"m-detail-title\">Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量</h1>\n    <div class=\"m-detail-meta\">\n     <span>2026-09-24 05:40</span><span class=\"m-detail-meta-sep\">· 8分钟前</span>\n    </div>\n    <section class=\"m-detail-summary\" aria-label=\"AI 导读\">\n     <span class=\"m-detail-summary-label\">AI 导读</span>\n     <p class=\"m-detail-summary-text\">Fireworks Research 发布基于 Kimi K3 的专用模型 Ember-1，以约少 40% 的 token 达到与 Kimi K3 相当的质量，今日以 Research Preview 形式在 Serverless 上线。</p>\n    </section>\n    <div class=\"m-detail-reason\">\n     <span class=\"m-detail-reason-label\">推荐理由</span>\n     <p class=\"m-detail-reason-text\">官方公布了训练实验数量、基准对比和 A/B 测试数字，读者可据此评估 Ember-1 在推理 token 成本上的实际节省幅度。</p>\n    </div>\n   </div>\n   <div id=\"detail-article-cmuemnn9m07yproynbzmmumd3\" class=\"dt-article-content m-detail-article-anchor\">\n    <div class=\"dt-explain dt-explain-amber m-detail-explain m-detail-explain-amber\">\n     <p class=\"dt-explain-text\">按该来源的展示范围，站内仅提供摘要。</p>\n     <a href=\"https://fireworks.ai/blog/ember-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"dt-original-button dt-explain-cta m-detail-explain-cta\" aria-label=\"前往原站阅读（在新标签页打开）\" title=\"在新标签页打开\" data-track=\"click_external\" data-track-meta=\"{&quot;itemId&quot;:&quot;cmuemnn9m07yproynbzmmumd3&quot;}\"><span>前往原站阅读</span><span class=\"visually-hidden\">（在新标签页打开）</span></a>\n    </div>\n   </div>\n   <div class=\"detail-reading-tail\">\n    <p class=\"dt-origin m-detail-origin detail-tail-origin\"><span class=\"dt-origin-label\">来源：</span><span>Fireworks AI（网页）</span><span class=\"dt-origin-domain\">· <!-- -->fireworks.ai</span></p>\n    <div class=\"dt-tags m-detail-tags dt-inline-tags detail-tail-tags\">\n     <a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/agent\">智能体</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/reasoning\">推理</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/model-releases\">模型发布</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/coding\">编码</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/engineering\">部署/工程</a>\n    </div>\n    <div class=\"detail-mobile-only\">\n     <div class=\"m-detail-actions\" aria-label=\"更多操作\">\n      <a href=\"https://aihot.news/items/cmuemnn9m07yproynbzmmumd3/markdown\" class=\"m-detail-exportbtn\" data-state=\"idle\" aria-label=\"导出 Markdown\" data-no-cardnav=\"true\"><span>导出 Markdown</span></a><span class=\"visually-hidden\" role=\"status\" aria-live=\"polite\"></span>\n     </div>\n    </div>\n   </div>\n  </main>\n </body>\n</html>",
+  "aiSummary": "Fireworks Research 发布 Ember-1，这是基于 Kimi K3 的一个专用模型，通过约 40% 更少的推理 token 达到相似的质量。",
+  "oneSentenceSummary": "Fireworks Research 发布 Ember-1，这是基于 Kimi K3 的一个专用模型，通过约 40% 更少的推理 token 达到相似的质量。",
+  "summary": "Fireworks Research 已发布 Ember-1，这是基于 Kimi K3 的一个专用模型，通过约 40% 更少的推理 token 达到相似的质量。该模型以 Research Preview 形式在 Serverless 上提供。官方发布了训练实验数据、基准测试对比和 A/B 测试数据，允许读者评估 Ember-1 在推理 token 方面的实际节省成本。",
+  "mainPoints": [
+    {
+      "point": "Fireworks Research 发布 Ember-1，这是基于 Kimi K3 的一个专用模型。",
+      "explanation": "Ember-1 通过约 40% 更少的推理 token 达到相似质量，可在 Serverless 上以 Research Preview 形式获取。"
+    },
+    {
+      "point": "官方公布的训练实验数据、基准测试对比和 A/B 测试数据允许读者评估 Ember-1 在推理 token 方面的实际节省成本。",
+      "explanation": "基于官方公布的训练实验数据、基准测试对比和 A/B 测试数据，读者可以评估 Ember-1 在推理 token 方面的实际节省成本。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "AI 与智能应用",
+    "模型发布",
+    "科技新闻",
+    "模型训练与推理",
+    "AI研究前沿"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 63,
+  "wordCount": 387,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790199650000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-24 05:40:50"
+}

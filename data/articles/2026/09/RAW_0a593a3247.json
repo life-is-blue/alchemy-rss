@@ -1,0 +1,56 @@
+{
+  "id": "RAW_0a593a3247",
+  "title": "与 Oppex AI CEO 兼创始人 Prasun Kumar 的小对话",
+  "url": "https://blog.jetbrains.com/startups/2026/09/small-talk-oppex-ai/",
+  "date": "2026-09-23 21:23:34",
+  "author": "Mitsal Athaya",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <h2 class=\"wp-block-heading\"><strong>What is Small Talk?</strong></h2>\n  <p>Small Talk is our short Q&amp;A with founders from the JetBrains Startup Program. They answer a handful of questions in their own words about what they’re building, why they started, and what they’ve figured out along the way. No pitch, no polish – just a two-minute read to meet the person behind the product.</p>\n  <p>This time, we sat down with Prasun Kumar, CEO and Founder of Oppex AI, the AI agents that help developers fix bugs that only appear in production. He talked us through what happens before an engineer gets paged, the “chaos monkey” that trains his agents, and why he has stuck with IntelliJ IDEA for 25 years.</p>\n  <div class=\"about-author \">\n   <div class=\"about-author__box\">\n    <div class=\"row\">\n     <div class=\"about-author__box-img\">\n      <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/09/prasun_solo-rotated.jpg\" alt=\"\" loading=\"lazy\">\n     </div>\n     <div class=\"about-author__box-text\">\n      <h4>Prasun Kumar, CEO and Founder of Oppex AI</h4>\n      <p>Oppex AI builds AI agents that help developers resolve production incidents. When something breaks, it pulls together logs, cloud metrics, database health, affected customers, and recent code changes, checks whether the issue has come up before, and hands the on-call engineer a recommendation before they have even been called. Its goal is to bring mean time to resolve (MTTR) under 10 minutes. About a year in, the 15-person team has launched the product and is working with its first enterprise customers</p>\n     </div>\n    </div>\n   </div>\n  </div>\n  <h3 class=\"wp-block-heading\">TL;DR</h3>\n  <ul class=\"wp-block-list\">\n   <li>Oppex AI is an AI on-call agent that collects all the info related to a production incident, from logs to recent code changes, before a developer is even woken up.</li>\n   <li>The team strengthens its agents by pitting them against a chaos monkey that breaks test systems without telling the agent how.</li>\n   <li>Prasun’s team does 90% of its work in IntelliJ IDEA, alongside WebStorm, PyCharm, DataGrip, and JetBrains AI Assistant, and is working toward production systems that fix themselves.</li>\n  </ul>\n  <p></p>\n  <h2 class=\"wp-block-heading\"><strong>What were you working on before Oppex AI?</strong></h2>\n  <p>I started as a software engineer in 2001 and have always worked with startups. Oppex AI is my seventh, and my second as a founder. I’ve always been on the tech and product side, heading engineering at companies that went on to exit. And I’ve used JetBrains the whole way through – I was an early adopter all the way back in 2001.</p>\n  <h2 class=\"wp-block-heading\"><strong>So why start Oppex AI?</strong></h2>\n  <p>When scaling engineering at all those companies, the push and pull was always the same. How do you move fast without breaking something? With AI, you can generate a lot of code quickly, but things still get stuck in production. When something fails, it takes a long time to resolve, because the context is spread across so many systems. And each engineer now owns more code than ever, much of which they didn’t write themselves. So the question was simple: How do you help a developer with limited context resolve a production issue fast, with AI’s help instead of another human’s?</p>\n  <h2 class=\"wp-block-heading\"><strong>What actually happens when an incident hits?</strong></h2>\n  <p>Before we even wake up the developer, our agents gather the context. They read the logs, pull metrics from the cloud, check whether the database is under load, and look at the live product to see which customers are affected. They check the change log in GitHub (because a lot of issues start with someone changing something) and whether this issue has come up before and how it was fixed. By the time a developer is called, it’s all assembled into a recommendation. If the problem is in the code itself, our plugin takes that context to the codebase on their machine and points to exactly where the code breaks.</p>\n  <h2 class=\"wp-block-heading\"><strong>What’s genuinely hard about making your solution reliable?</strong></h2>\n  <p>Two things. First, developer logs aren’t really English, so a plain language model doesn’t understand them. Some of our customers run 5,000 machines and 250-plus microservices, and all we have is the logs, so we read them and build a knowledge graph of how the whole system connects. Second, hardening the agent. Think of it like a game. We have our agent, and we have a chaos monkey whose only job is to break the system without telling the agent how. Sometimes the chaos monkey wins, but the agent learns. We run that in a test environment, and that’s what makes it reliable in production.</p>\n  <h2 class=\"wp-block-heading\"><strong>You build all of this in JetBrains IDEs. Why?</strong></h2>\n  <p>About 90% of our work is in IntelliJ IDEA, because we’re heavy on Java. WebStorm handles the JavaScript front end, DataGrip the data layer, and PyCharm our smaller Python component, with JetBrains AI Assistant alongside. What keeps us there is depth. AI can write the code now, but the human’s job still involves reading a lot of this code, because you don’t blindly push AI code to production. So we use the IDE as our eyes, not just our hands. We can browse, search, and navigate fast, and see which classes depend on what. After 25 years, it still just does the right thing.</p>\n  <h2 class=\"wp-block-heading\"><strong>Where does Oppex AI go from here?</strong></h2>\n  <p>Right now, we’re laser-focused on getting mean time to resolve under 10 minutes. That’s still human-in-the-loop, i.e. we wake someone up and tell them exactly what to do. Our next goal will be an “AI-recommended, human-approved” process, where the recommendation is reliable enough that you can just click a button and you’re done. Eventually, humans won’t even have to get out of bed. When an issue arises, the AI will figure it out and fix it, and the system will heal itself. People are already generating code faster. Once maintaining it in production is automated too, the whole life cycle gets the benefit.</p>\n  <h2 class=\"wp-block-heading\"><strong>Last question. What’s your advice to another team in India just starting out?</strong></h2>\n  <p>It’s an absolutely amazing time to be building. Features that took companies 10 years to build, you can now build in a year at a fraction of the cost. So a lot of existing categories are up for disruption, not just new ones, because if you’re thinking AI-first, the bigger companies will be slow to respond. If you understand AI and you can wield it, the opportunity is right there.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img fetchpriority=\"high\" decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/09/team_oppex_pic-1.jpg\" alt=\"Oppex AI Team Photo\" class=\"wp-image-742495\">\n  </figure>\n  <p></p>\n  <p>Read the full case study <a href=\"https://www.jetbrains.com/company/customers/experience/oppex/\" data-type=\"link\" data-id=\"https://www.jetbrains.com/company/customers/experience/synnax/\" target=\"_blank\" rel=\"noopener\">here</a>.</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <h2 class=\"wp-block-heading\">JetBrains Startup Program FAQ</h2>\n  <p><strong>Q: Do I qualify?</strong>\n   <br>\n   A: You qualify if your company is privately owned, established within the last five years, and has a website or other discoverable online presence.</p>\n  <p><strong>Q: Where do I apply? \n    <br></strong>A: You can apply <a href=\"https://www.jetbrains.com/startups/\" target=\"_blank\" rel=\"noopener\">here</a>.</p>\n  <p><strong>Q: What is the timeline for the JetBrains Startup Program application process?</strong>\n   <br>\n   A: After you apply, our team will review your application within 48 hours. If you meet the criteria, you will receive an acceptance email, followed by a quote for the products. If you’re not accepted, our team will get in touch and share our reasoning. An application may be unsuccessful either due to missing information (e.g., a document or website) or because you do not meet our eligibility requirements (e.g., your business is more than five years old).</p>\n  <p><strong>Q: What products are included in the terms “IDE subscription”, “AI subscription”, and “team or learning tool subscription”? \n    <br></strong>A: A variety of products are available through IDE subscriptions, including IDEs as well as .NET and Visual Studio tools. “Team tool subscription” refers to team tools, including TeamCity, YouTrack, Datalore, Qodana, and our learning tool (JetBrains Academy).</p>\n </body>\n</html>",
+  "aiSummary": "Oppex AI 构建 AI 智能体来自动化生产事故响应，通过收集上下文并提供建议将 MTTR 降至 10 分钟以下。",
+  "oneSentenceSummary": "Oppex AI 构建 AI 智能体来自动化生产事故响应，通过收集上下文并提供建议将 MTTR 降至 10 分钟以下。",
+  "summary": "Oppex AI 创始人 Prasun Kumar 讨论了他的初创公司如何使用 AI 智能体处理生产 bug。智能体会自动聚合日志、指标和代码变更，在工程师收到告警前就提供解决方案。团队采用 「混沌猴」 方法来加固这些智能体，并在开发工作流中大量依赖 JetBrains IDE。",
+  "mainPoints": [
+    {
+      "point": "自动化事故上下文收集",
+      "explanation": "Oppex AI 智能体在故障发生时立即从日志、云指标和数据库健康状况收集数据，减少了开发人员的手动工作量。"
+    },
+    {
+      "point": "混沌猴训练",
+      "explanation": "团队使用一种系统，故意在不解释原因的情况下破坏测试环境，让 AI 智能体学习如何解决复杂问题。"
+    },
+    {
+      "point": "目标 MTTR 降低",
+      "explanation": "主要目标是将平均修复时间降至 10 分钟以下，从人工主导的调查转向 AI 推荐的修复方案。"
+    },
+    {
+      "point": "IDE 驱动开发",
+      "explanation": "90% 的开发工作都在 JetBrains 工具如 IntelliJ IDEA 和 PyCharm 中完成，利用深度的代码导航能力来构建智能体。"
+    }
+  ],
+  "keyQuotes": [
+    "我们的目标是将平均修复时间降至 10 分钟以下。",
+    "我们把 IDE 当作我们的眼睛，而不仅仅是我们的手。",
+    "以前需要公司 10 年才能构建的功能，现在你可以用一年的时间以极低的成本构建。"
+  ],
+  "tags": [
+    "商业与创业",
+    "开发者工具",
+    "可观测性",
+    "AI Agent",
+    "创业"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 83,
+  "wordCount": 1189,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790169814000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-23 21:23:34"
+}

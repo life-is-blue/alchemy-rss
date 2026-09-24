@@ -1,0 +1,58 @@
+{
+  "id": "RAW_3642fbc726",
+  "title": "AI 公司负责人在联合国安理会简报会上警告 AI 可能危及全人类 · AIHOT",
+  "url": "https://aihot.news/items/cmueno9s80cv0royn7zd2ihe1",
+  "date": "2026-09-24 05:46:40",
+  "author": "noreply@aihot.news (Gary Marcus：The Road to AI We Can Trust（RSS）)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <h3>我们都认同需要做什么。现在，就让我们付诸行动。</h3>\n  <p>美联社</p>\n  <p>@AP</p>\n  <p>突发：各大 AI 公司负责人向联合国发出警告，称若无干预措施，“AI 可能对全人类构成风险”。</p>\n  <p>apnews.com</p>\n  <p>AI 公司负责人向联合国安理会表示，AI 可能对全人类构成风险</p>\n  <img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21j22C%21%2Cw_64%2Ch_64%2Cc_fill%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Cg_auto%2Fhttps%253A%252F%252Fpbs.substack.com%252Fnews_img%252F2102850905729273856%252F-aZXFKC4%253Fformat%253Djpg%2526name%253Dorig&amp;exp=1790272800&amp;sig=32cc0d600093b2b5a679e57c6fa5d3fa891d730eadbd48d515251e83e8ae13f0\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n  <p>62.3K 次观看</p>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260923223456_bb482897-8a49-42d3-b094-88a7ecd72716_1594x829.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21wF_v%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Fbb482897-8a49-42d3-b094-88a7ecd72716_1594x829.png&amp;exp=1790272800&amp;sig=5f3ecae2ce5d6971c9aab1d06c3ad3300076381191f422672ef91f7aff38ac0d\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <p>今天下午在联合国安理会，Yoshua Bengio、Sam Altman、Dario Amodei 以及 Hugging Face 首席执行官兼联合创始人 Clement Delangue 先后发表了演讲。</p>\n  <p>我极其喜欢 Bengio 的发言，几乎认同其中每一个精心措辞的字句，并已获得他的许可，在下方全文转载他的讲话。</p>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260923223456_200fe44c-3100-431d-a1ee-03769f94f835_2420x1384.jpeg\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21o-j6%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F200fe44c-3100-431d-a1ee-03769f94f835_2420x1384.jpeg&amp;exp=1790272800&amp;sig=9dfe4e66724d2976c7fd2cc1f93a294a8b24bfb5f515f1dd934d50d1239372d3\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <p>更令人意外的是，另外三位所说的内容我也几乎全部认同（以及随后来自世界各地许多其他发言者的绝大部分内容）。<a href=\"https://garymarcus.substack.com/p/historic-un-security-council-briefing#footnote-1\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\">1</a></p>\n  <p>几乎所有人都汇聚到了我一直在反复强调的完全相同的那几点上：</p>\n  <ul>\n   <li>\n    <p><strong>需要进行飞行前安全测试。</strong></p>\n   </li>\n   <li>\n    <p><strong>透明审计的必要性。</strong></p>\n   </li>\n   <li>\n    <p><strong>问责机制的必要性。</strong></p>\n   </li>\n   <li>\n    <p><strong>全球对话与国际合作的必要性。</strong></p>\n   </li>\n   <li>\n    <p><strong>立即行动的必要性。</strong></p>\n   </li>\n  </ul>\n  <p>事到如今，顶尖科学家（如 Bengio）和各大 CEO 都已达成共识，再没有任何借口不去着手落实这些措施了。</p>\n  <p><em>以下是 Yoshua Bengio 精彩而重要的发言。如果我们不加以重视，人类终将为此后悔。</em></p>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260923223456_328dff12-35f0-4dfc-b1c1-ba3be74650c3_1055x1301.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21PUYM%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F328dff12-35f0-4dfc-b1c1-ba3be74650c3_1055x1301.png&amp;exp=1790272800&amp;sig=fc2ffd07602b14ed7ab690cb95c754a3d7be7dab6367d4a8ffad89d943ba6989\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260923223456_fe5ccc45-5109-496e-ae68-3e73160434b0_1040x1280.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%216ZVT%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252Ffe5ccc45-5109-496e-ae68-3e73160434b0_1040x1280.png&amp;exp=1790272800&amp;sig=33ac4d4693328857b69323d967ccbc595bde0da877722bf64a7091649a4f2a14\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <figure>\n   <a href=\"https://media.bestblogs.dev/20260923223456_19f1181a-4c71-4a7e-96e5-db598d44e66c_1029x556.png\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\"> \n    <div>\n     <img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2F%24s_%21FB33%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F19f1181a-4c71-4a7e-96e5-db598d44e66c_1029x556.png&amp;exp=1790272800&amp;sig=92fa1529b829ed93a2fc8125427ab5c291d8d7eb5fe1ce0ec9fc4309f42ab84b\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"same-origin\">\n    </div> \n   </a>\n  </figure>\n  <p><em>完整会议（从录像开始几分钟后进入正题）可在<a href=\"https://transcripts.un.org/en/sc/10228\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\">此处</a>观看。文字记录也将在同一位置提供。</em></p>\n  <p>唯一真正的不和谐之音，来自 Altman 和 Amodei 演讲中一些自我标榜的吹嘘，尤其是 Amodei 的。Amodei 尤其夸大了<a href=\"https://x.com/darioamodei/status/2102831170299834652?s=61\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\">今天早些时候公布的一项酶领域的发现，</a>并过早地试图将其与真正具有革命性的基因编辑系统 CRISPR 相提并论。事实上，正如<a href=\"https://open.substack.com/users/18160212-dr-angela-rasmussen?utm_source=mentions\" target=\"_blank\" rel=\"noopener noreferrer nofollow ugc\">Angela Rasmussen 博士</a>所说：“他们找到了序列，可能表达了一种蛋白质，但尚未进行任何有意义的功能表征……这本身不坏，只是拿来与 CRISPR 相比还为时过早。”</p>\n </body>\n</html>",
+  "aiSummary": "在联合国安理会简报会上，Yoshua Bengio、Sam Altman、Dario Amodei 和 Clement Delangue 一致认为需要对 AI 风险进行飞行前安全测试、提高透明度、建立问责机制并立即采取全球行动，不过 Gary Marcus 指出这些 CEO 的发言中存在自我推销式的越界。",
+  "oneSentenceSummary": "在联合国安理会简报会上，Yoshua Bengio、Sam Altman、Dario Amodei 和 Clement Delangue 一致认为需要对 AI 风险进行飞行前安全测试、提高透明度、建立问责机制并立即采取全球行动，不过 Gary Marcus 指出这些 CEO 的发言中存在自我推销式的越界。",
+  "summary": "Gary Marcus 讲述了联合国安理会的一场简报会，Yoshua Bengio、Sam Altman、Dario Amodei 和 Hugging Face CEO Clement Delangue 都在会上谈到了 AI 风险。他惊讶地发现自己几乎认同四人所说的一切，而且他们与他长期主张的观点不谋而合：飞行前安全测试、透明审计、问责机制、全球对话与国际合作，以及立即行动的必要性。随着 Bengio 这样的顶尖科学家和主要 CEO 如今达成一致，Marcus 认为再也没有任何借口不去落实这些措施，并在获得许可后全文转载了 Bengio 的演讲。他也指出了唯一的不和谐音：Altman 和 Amodei 发言中的自我夸耀，尤其是 Amodei，他夸大了当天早些时候宣布的一项与酶相关的发现，并过早地将其与 CRISPR 相提并论；Angela Rasmussen 被引述称，这项工作找到了一个序列，可能表达了某种蛋白质，但尚未进行有意义的功能表征，因此与 CRISPR 的比较为时过早。",
+  "mainPoints": [
+    {
+      "point": "顶尖 AI 科学家和 CEO 在联合国安理会公开就同一 AI 治理议程达成一致。",
+      "explanation": "Yoshua Bengio、Sam Altman、Dario Amodei 和 Clement Delangue 都发了言，Marcus 表示他几乎认同他们所说的一切，包括他反复强调的几点：飞行前安全测试、透明审计、问责机制、全球对话与国际合作，以及立即行动。"
+    },
+    {
+      "point": "顶尖科学家与 CEO 之间的一致消除了不作为的最后借口。",
+      "explanation": "Marcus 认为，既然 Bengio 和主要 CEO 等人物已经就需要采取的措施达成一致，就再也没有任何理由不去落实这些措施，并警告说如果忽视这些警告，人类将会后悔。"
+    },
+    {
+      "point": "CEO 的发言中存在自我推销式的越界，最突出的是 Amodei。",
+      "explanation": "Marcus 称这是唯一真正的不和谐音，说 Amodei 夸大了当天早些时候宣布的一项与酶相关的发现，并过早地将其与革命性的基因编辑系统 CRISPR 相提并论。"
+    },
+    {
+      "point": "这项酶的发现尚不足以与 CRISPR 相提并论。",
+      "explanation": "Marcus 引用 Angela Rasmussen 博士的话指出，这项工作找到了一个序列，可能表达了某种蛋白质，但尚未进行有意义的功能表征，因此与 CRISPR 的比较是过早的，而非错误的。"
+    }
+  ],
+  "keyQuotes": [
+    "需要进行飞行前安全测试。",
+    "透明审计的必要性。",
+    "问责机制的必要性。",
+    "全球对话与国际合作的必要性。",
+    "立即行动的必要性。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 安全与对齐",
+    "科技新闻",
+    "安全",
+    "AI安全与伦理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 623,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790200000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-24 05:46:40"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "RAW_37299deb95",
+  "title": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴 · AIHOT",
+  "url": "https://aihot.news/items/cmueh1dx305ejrovxhm7a1f4l",
+  "date": "2026-09-24 03:03:25",
+  "author": "noreply@aihot.news (Claude：Blog（网页）)",
+  "siteName": "AIHOT — 精选",
+  "content": null,
+  "aiSummary": "Anthropic 推出 Claude Marketplace，将 2000 多个连接器与插件、Claude 驱动的智能体产品以及咨询合作伙伴汇聚一处，并允许企业用已承诺的 Anthropic 支出购买第三方软件。",
+  "oneSentenceSummary": "Anthropic 推出 Claude Marketplace，将 2000 多个连接器与插件、Claude 驱动的智能体产品以及咨询合作伙伴汇聚一处，并允许企业用已承诺的 Anthropic 支出购买第三方软件。",
+  "summary": "Anthropic 正式上线 Claude Marketplace，定位为团队寻找 Claude 生态资源的一站式平台。市场包含三类内容：一是 2000 多个连接器与插件，覆盖 Atlassian、Google、Microsoft、Notion、Salesforce 等；二是可购买的 Claude 驱动智能体与产品，来自 CrowdStrike、Cursor、Harvey、Legora、Lovable、Snowflake 等公司，企业可用已承诺的 Anthropic 支出抵扣；三是来自 Claude Partner Network 的咨询与系统集成服务，如 Accenture、BCG、Deloitte。构建者可通过 MCP 与 Agent Skills 提交连接器或插件，或申请上架智能体产品、加入合作伙伴网络。文中附有 Atlassian、CrowdStrike、Hebbia、Legora、Notion、Salesforce、Snowflake 等合作方高管的背书，并以 CodeRabbit、Power Digital、ThoughtSpot 为例说明客户如何将承诺支出用于 Vercel 与 Snowflake。",
+  "mainPoints": [
+    {
+      "point": "Claude Marketplace 将插件、智能体产品与服务伙伴三类资源整合到单一入口。",
+      "explanation": "客户可在一个平台内添加连接器与插件、购买 Claude 驱动的软件、对接咨询与系统集成商，减少在多个渠道间寻找工具的成本。"
+    },
+    {
+      "point": "企业可将已承诺的 Anthropic 支出用于购买第三方 Claude 驱动产品，形成预算内循环。",
+      "explanation": "CrowdStrike、Cursor、Harvey、Legora、Lovable、Snowflake 等产品均可通过承诺支出抵扣购买，CodeRabbit、Power Digital、ThoughtSpot 已用该方式采购 Vercel 与 Snowflake，缩短了采购周期。"
+    },
+    {
+      "point": "构建者可通过 MCP 与 Agent Skills 等开放标准接入市场。",
+      "explanation": "Anthropic 为连接器、插件、智能体产品和服务伙伴分别提供了提交路径，MCP 与 Agent Skills 是其主推的开放标准，降低了第三方工具的分发门槛。"
+    },
+    {
+      "point": "合作方高管背书强调上下文打通与工作流不中断的价值。",
+      "explanation": "Atlassian 的 Teamwork Graph、Notion 连接器、Salesforce 的 CRM 与 Slack 数据、Snowflake 的受治理 AI 环境，均以把企业既有数据和上下文带入 Claude 为核心卖点。"
+    }
+  ],
+  "keyQuotes": [
+    "对客户而言，它提供了一个一站式平台，用于找到合适的工具和服务。对构建者和合作伙伴而言，它提供了一条更便捷的途径，触达正在使用 Claude 的团队。",
+    "Claude Marketplace 让法律团队能够轻松扩展他们已在 Anthropic 上做出的投入，使用他们已经承诺的预算将 Legora 的 aOS 引入进来。",
+    "Claude Marketplace 让 Anthropic 客户更容易采用 Snowflake，方式是将他们承诺支出的一部分用于抵扣，从而缩短采购周期并加速实现价值。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "平台经济",
+    "AI 产品与应用",
+    "科技新闻",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 80,
+  "wordCount": 1453,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790190205000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-24 03:03:25"
+}

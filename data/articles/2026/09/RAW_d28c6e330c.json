@@ -1,0 +1,59 @@
+{
+  "id": "RAW_d28c6e330c",
+  "title": "Anthropic 团队详解如何用 Claude 在两周内把 claude.ai 提速约 3 倍 · AIHOT",
+  "url": "https://aihot.news/items/cmuekny10060lroyn21gctbfw",
+  "date": "2026-09-24 03:23:40",
+  "author": "noreply@aihot.news (Hacker News：AI 热帖)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"detail-mobile-only\">\n   <div class=\"m-detail-bar\">\n    <a href=\"https://aihot.news/\" class=\"m-detail-back\"><span>返回</span></a>\n    <div class=\"m-detail-bar-right\">\n     <button type=\"button\" class=\"m-detail-share\" aria-label=\"分享海报\"></button>\n     <button type=\"button\" class=\"timeline-star m-detail-save\" aria-label=\"收藏\" aria-pressed=\"false\" title=\"收藏\" data-track=\"click_star\" data-track-meta=\"{&quot;itemId&quot;:&quot;cmuekny10060lroyn21gctbfw&quot;,&quot;action&quot;:&quot;star&quot;,&quot;storage&quot;:&quot;local&quot;}\" data-no-cardnav=\"true\"></button>\n    </div>\n   </div>\n  </div>\n  <div class=\"dt-source dt-toolbar detail-desktop-only\">\n   <a href=\"https://aihot.news/\" class=\"dt-return\"><span>返回</span></a>\n   <div class=\"dt-source-right\">\n    <span class=\"dt-selected-badge\">精选</span><span class=\"timeline-score mono score-mid timeline-score-explained\" data-score=\"77\" title=\"AI 编辑部评分，满分 100\" aria-label=\"AI 编辑部评分 77，满分 100\">AI 评分 77/100</span>\n    <button type=\"button\" class=\"timeline-star dt-detail-save\" aria-label=\"收藏\" aria-pressed=\"false\" title=\"收藏\" data-track=\"click_star\" data-track-meta=\"{&quot;itemId&quot;:&quot;cmuekny10060lroyn21gctbfw&quot;,&quot;action&quot;:&quot;star&quot;,&quot;storage&quot;:&quot;local&quot;}\" data-no-cardnav=\"true\"></button>\n    <details class=\"dt-more\">\n     <summary class=\"dt-more-trigger\" aria-label=\"更多操作\" title=\"更多操作\"></summary>\n     <div class=\"dt-more-popover\">\n      <a href=\"https://aihot.news/items/cmuekny10060lroyn21gctbfw/markdown\" class=\"dt-more-export\" data-state=\"idle\" aria-label=\"导出 Markdown\" data-no-cardnav=\"true\"><span>导出 Markdown</span></a><span class=\"visually-hidden\" role=\"status\" aria-live=\"polite\"></span>\n     </div>\n    </details>\n   </div>\n  </div>\n  <header class=\"dt-reading-intro detail-desktop-only\">\n   <div class=\"dt-meta\">\n    <span class=\"dt-meta-source\">Hacker News：AI 热帖</span><span class=\"dt-meta-sep\">·</span><span class=\"dt-meta-mono\">2026-09-24 03:23</span><span class=\"dt-meta-sep\">·</span><span>2小时前</span><span class=\"dt-meta-sep\">·</span><span>matthieu_bl</span>\n   </div>\n   <div class=\"dt-summary\">\n    <span class=\"dt-summary-label\">AI 导读</span>\n    <p class=\"dt-summary-text\">Anthropic 团队发文详解今年 8 月通过两周冲刺让 claude.ai 和桌面端核心体验提速约 3 倍的过程：聚焦覆盖 95% 用户活动的四条旅程，75 分位首屏可输入时间从 3.1 秒降到 0.55 秒，合并超过三千个变更且无一次面向用户的事故。</p>\n   </div>\n  </header>\n  <aside class=\"dt-reading-aside detail-desktop-only\" aria-label=\"阅读辅助\">\n   <section class=\"dt-aside-section\">\n    <h2 class=\"dt-aside-heading\">推荐理由</h2>\n    <p class=\"dt-aside-copy\">Anthropic 工程团队复盘用 Claude 智能体两周内把 claude.ai 提速约 3 倍的完整方法，其基准测试加棘轮护栏的协作循环可供工程团队借鉴。</p>\n   </section>\n   <section class=\"dt-aside-section\">\n    <h2 class=\"dt-aside-heading\">标签</h2>\n    <div class=\"dt-tags m-detail-tags dt-aside-tags\">\n     <a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/agent\">智能体</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/anthropic\">Anthropic</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/tutorials\">教程/实践</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/engineering\">部署/工程</a>\n    </div>\n   </section>\n  </aside>\n  <main class=\"dt-reading-body m-detail-body-wrap\">\n   <div class=\"detail-mobile-only\">\n    <div class=\"m-detail-source\">\n     <div class=\"m-detail-source-left\">\n      <span class=\"m-detail-source-name\">Hacker News：AI 热帖</span>\n     </div>\n     <div class=\"m-detail-marks\">\n      <span class=\"m-badge\">精选</span>\n      <details class=\"m-score-tip\">\n       <summary class=\"m-score m-score-mid\" aria-label=\"AI 编辑部评分 77，满分 100，点击查看说明\">77</summary><span class=\"m-score-tip-text\">AI 编辑部评分，满分 100</span>\n      </details>\n     </div>\n    </div>\n    <h1 class=\"m-detail-title\">Anthropic 团队详解如何用 Claude 在两周内把 claude.ai 提速约 3 倍</h1>\n    <div class=\"m-detail-meta\">\n     <span>2026-09-24 03:23</span><span class=\"m-detail-meta-sep\">· 2小时前</span><span class=\"m-detail-meta-sep\">· matthieu_bl</span>\n    </div>\n    <section class=\"m-detail-summary\" aria-label=\"AI 导读\">\n     <span class=\"m-detail-summary-label\">AI 导读</span>\n     <p class=\"m-detail-summary-text\">Anthropic 团队发文详解今年 8 月通过两周冲刺让 claude.ai 和桌面端核心体验提速约 3 倍的过程：聚焦覆盖 95% 用户活动的四条旅程，75 分位首屏可输入时间从 3.1 秒降到 0.55 秒，合并超过三千个变更且无一次面向用户的事故。</p>\n    </section>\n    <div class=\"m-detail-reason\">\n     <span class=\"m-detail-reason-label\">推荐理由</span>\n     <p class=\"m-detail-reason-text\">Anthropic 工程团队复盘用 Claude 智能体两周内把 claude.ai 提速约 3 倍的完整方法，其基准测试加棘轮护栏的协作循环可供工程团队借鉴。</p>\n    </div>\n   </div>\n   <div id=\"detail-article-cmuekny10060lroyn21gctbfw\" class=\"dt-article-content m-detail-article-anchor\">\n    <div class=\"dt-explain dt-explain-amber m-detail-explain m-detail-explain-amber\">\n     <p class=\"dt-explain-text\">该来源未收录可展示正文，站内仅提供摘要。</p>\n     <a href=\"https://claude.dev/blog/how-we-made-claude-ai-faster\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"dt-original-button dt-explain-cta m-detail-explain-cta\" aria-label=\"阅读原文（在新标签页打开）\" title=\"在新标签页打开\" data-track=\"click_external\" data-track-meta=\"{&quot;itemId&quot;:&quot;cmuekny10060lroyn21gctbfw&quot;}\"><span>阅读原文</span><span class=\"visually-hidden\">（在新标签页打开）</span></a>\n    </div>\n   </div>\n   <div class=\"detail-reading-tail\">\n    <p class=\"dt-origin m-detail-origin detail-tail-origin\"><span class=\"dt-origin-label\">来源：</span><span>Hacker News：AI 热帖</span><span class=\"dt-origin-domain\">· <!-- -->claude.dev</span></p>\n    <div class=\"dt-tags m-detail-tags dt-inline-tags detail-tail-tags\">\n     <a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/agent\">智能体</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/anthropic\">Anthropic</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/tutorials\">教程/实践</a><a class=\"dt-tag dt-tag-link m-detail-tag\" href=\"https://aihot.news/topics/engineering\">部署/工程</a>\n    </div>\n    <div class=\"detail-mobile-only\">\n     <div class=\"m-detail-actions\" aria-label=\"更多操作\">\n      <a href=\"https://aihot.news/items/cmuekny10060lroyn21gctbfw/markdown\" class=\"m-detail-exportbtn\" data-state=\"idle\" aria-label=\"导出 Markdown\" data-no-cardnav=\"true\"><span>导出 Markdown</span></a><span class=\"visually-hidden\" role=\"status\" aria-live=\"polite\"></span>\n     </div>\n    </div>\n   </div>\n  </main>\n </body>\n</html>",
+  "aiSummary": "Anthropic's 工程团队回顾了一个两周的冲刺，在这个冲刺中，Claude 智能体帮助使 claude.ai 和其桌面客户端大约 3 倍速度，减少了 3.1 秒的 p75 时间到交互性，从 0.55 秒，跨越四个用户旅程，覆盖 95% 的活动，合并 3000+ 个变更和零用户面向事故。",
+  "oneSentenceSummary": "Anthropic's 工程团队回顾了一个两周的冲刺，在这个冲刺中，Claude 智能体帮助使 claude.ai 和其桌面客户端大约 3 倍速度，减少了 3.1 秒的 p75 时间到交互性，从 0.55 秒，跨越四个用户旅程，覆盖 95% 的活动，合并 3000+ 个变更和零用户面向事故。",
+  "summary": "Anthropic's 工程团队发表了一篇关于 8 月份两周冲刺的回顾，该冲刺使 claude.ai 和桌面客户端大约 3 倍速度。团队重点关注四个用户旅程，覆盖 95% 的用户活动，并将 p75 时间到首次输入从 3.1 秒减少到 0.55 秒。超过 3000 个变更被合并，没有用户面向事故。推荐的收获是基准测试加棘轮护栏的协作循环，这些其他工程团队可以借鉴。注意：这个项目是概要卡片，只有来源站点没有包含完整的文章体，所以关于具体技术、工具和智能体工作流程的细节在这里不可用。",
+  "mainPoints": [
+    {
+      "point": "两周冲刺使 claude.ai 和桌面客户端大约 3 倍速度。",
+      "explanation": "Anthropic 的团队在 8 月份进行了这个努力，重点关注核心体验速度，而不是单个页面或端点。"
+    },
+    {
+      "point": "工作范围缩小到四个用户旅程，覆盖 95% 的用户活动。",
+      "explanation": "将表面限制在覆盖 95% 的用户活动的四个用户旅程，让团队集中精力在最重要的地方。"
+    },
+    {
+      "point": "p75 时间到首次输入从 3.1 秒降低到 0.55 秒。",
+      "explanation": "这是概要中报告的主要指标；它测量用户可以开始输入的速度，一个关键的延迟信号。"
+    },
+    {
+      "point": "超过 3000 个变更被合并，没有用户面向事故。",
+      "explanation": "变更的数量与零用户面向事故的结合表明了强大的护栏和逐步发布的纪律。"
+    },
+    {
+      "point": "可复用的方法是基准测试加棘轮护栏的协作循环。",
+      "explanation": "推荐框架了冲刺的价值作为可转移的工程实践：测量、锁定收益、防止回归。"
+    }
+  ],
+  "keyQuotes": [
+    "聚焦覆盖 95% 用户活动的四条旅程，75 分位首屏可输入时间从 3.1 秒降到 0.55 秒，合并超过三千个变更且无一次面向用户的事故。",
+    "Anthropic 工程团队复盘用 Claude 智能体两周内把 claude.ai 提速约 3 倍的完整方法，其基准测试加棘轮护栏的协作循环可供工程团队借鉴。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI 编程",
+    "性能优化",
+    "大语言模型 (LLM)",
+    "MCP协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 76,
+  "wordCount": 491,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790191420000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-24 03:23:40"
+}
