@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-24 10:09:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-24 16:52:33 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [团队分享提升-Agent-Harness-Token-效率的提示词-·-AIHOT](https://aihot.news/items/cmuek0q2c05foroynclaijp3z)
 
-2026-09-24 04:12:00 | 标签: AI 与智能应用, AI Agent, AI 编程, 提示工程, Agent编排
-
-> 本文提供了一套可复用的提示词，旨在帮助开发者优化 LLM 智能体 harness 的 token 效率。基于一个生产级编码智能体及其多智能体实验的经验，文章给出了一套结构化方法论：首先对 harness 进行埋点，按计费类型和缓存命中情况测量 token 用量，然后按支出占比、可压缩性和质量风险对优化机会进行优先级排序。关键技术包括：将系统提示词精简为平实的描述而非命令；将低频工具 schema 卸载到按需发现机制（在使用这些工具的会话中，工具描述 token 减少 60%，总 token 减少 46.9%）；通过显式断点安排对缓存友好的请求前缀；将大型工具输出写入文件而非截断；以及调优子智能...
+2026-09-24 04:12:00
 
 
 
 ### [AI-原生创作栈：图像、语音与多智能体工作流如何组合](https://mp.weixin.qq.com/s?__biz=MzU2NzkxNDY0Ng==&mid=2247491079&idx=1&sn=3ebbb6b6a765ac2ff52a56eb5897c72c)
 
-2026-09-23 15:33:00 | 标签: AI 与智能应用, AI 工作流, AI Agent, 开源项目, AI 语音
-
-> 文章提出，AI 创作进入生产阶段后，核心问题不再是单点模型谁更强，而是任务拆解、跨模态一致性、局部重做与资产复用。作者把三个开源项目放进同一张分层架构：OpenMAIC 作为编排层与内容状态层，用 LangGraph 状态机、持久化 Agent Session、原子 Scene Patch 和修订计数管理可恢复、可追踪的内容状态；awesome-gpt-image-2 作为视觉资产层，把 500 多个案例、20 多套模板和风格标签整理为 Prompt-as-Code，并从 style-library.json 生成可安装的 Agent Skill；VoiceStudio 作为语音生产与声音身份...
+2026-09-23 15:33:00
 
 
 
@@ -5526,33 +5522,25 @@
 
 ### [知识不是文件，也不是向量-|-KDC-系列-02](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506986&idx=1&sn=0d3ad6b27eed5fafe913fd9f1bb38670)
 
-2026-09-23 20:00:00 | 标签: AI 与智能应用, 知识管理, RAG / 检索增强, AI Agent, AI 工作流
-
-> 文章从售后 Agent 检索到高相关但已过期的退款政策、导致错误回答的案例出发，指出「检索到相关材料」不等于「系统获得了可用于判断的知识」。作者先以反例划清边界：PDF、数据库、向量与 Embedding、RAG 片段、知识图谱、Memory 都不是知识本身，它们只是表示或局部机制。随后给出 KDC 的知识定义——已经验证、可复用，并能够降低预测、推理、决策或行动不确定性的认知成果，并拆解为认知成果、需要验证、需要可复用、需要降低不确定性四个不可省略的部分。为应对 AI 系统持续产生推测与业务现实持续变化，文章引入知识成熟度四级链路（Hypothesis → Candidate Knowled...
+2026-09-23 20:00:00
 
 
 
 ### [错误码排查从-3～8-小时到分钟级，Agent-怎么做到的？](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649804239&idx=1&sn=877bddfed68e73a327c4c25e836d8258)
 
-2026-09-23 17:30:00 | 标签: AI 与智能应用, 企业级 AI, AI Agent, AI 工作流, Harness工程
-
-> 文章介绍腾讯基于智能体编排平台搭建的错误码治理 Agent 实践。SRE 过去面对去重后数百个错误码告警，需跨系统检索文档、代码、日志与 trace，人工排查单个错误码耗时 3～8 小时。方案选择单 Agent 挂载知识库、代码关系图谱、可观测平台、代码托管平台四类能力，保留渐进式探索的完整上下文，由工作流负责入参预处理与结果组装、Agent 负责自主排查并输出 JSON、Skill 承载排查流程与规则。文章重点分享三个实践：一是多源证据交叉验证，代码怎么写不等于现场怎么跑，置信度按知识库、代码定位、实际源码、运行时证据各计 1 分分级；二是用 11 个节点的工作流与快慢双路径解析保证稳定输出...
+2026-09-23 17:30:00
 
 
 
 ### [《AI-Native-研发范式实践手册》重磅发布](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511562&idx=1&sn=489d57fcf7c339c36e0cbfad429fcd1e)
 
-2026-09-23 14:49:00 | 标签: AI 与智能应用, 企业级 AI, AI Agent, AI 工作流, Harness工程
-
-> 本文总结了从 Copilot 到 Agentic 时代的变革，强调了企业级 Agent 基础设施的重要性，包括模型能力的进步、Harness 框架的演进、Agent 的运行环境、身份与权限体系、可观测与评测能力等方面的发展。
+2026-09-23 14:49:00
 
 
 
 ### [AI-自迭代的小游戏-Agent：2-周上线-6-款小游戏，3-天迭代-12-款小游戏](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650546370&idx=1&sn=5603ba09127468713e13bb5dafb7926c)
 
-2026-09-23 14:34:00 | 标签: 编程与工程, AI 编程, AI Agent, Harness工程, 上下文工程
-
-> 文章从「不要再只是提示 agent，要设计提示 agent 的 loop」这句话切入，指出当 coding agent 能自己读代码、改代码、跑测试、开 PR 后，工程师的重心应从逐轮操作转向设计自动化循环。作者先界定概念：一个可工作的工程 loop 至少包含读取外部状态、判断下一步、执行任务、验证结果、写入状态、判断停止条件六个动作，缺少状态写入只是一次会话，缺少停止条件就是烧 token 的定时器。文章把 loop 与 prompt engineering、context engineering、harness engineering 做了区分，并引用 Addy Osmani、Birgit...
+2026-09-23 14:34:00
 
 
 
@@ -14528,225 +14516,169 @@
 
 ### [Ringg-利用-OpenAI-AI-智能体解决高达-65%-的客户来](https://openai.com/index/ringg)
 
-2026-09-24 20:00:00 | 标签: AI 与智能应用, AI Agent, AI 产品与应用, OpenAI, AI 智能体
-
-> 亚太科技初创公司 Ringg 详细介绍了其如何从 GPT-4.1 转向 GPT-5.6 (Luna， Terra) 等高效模型以扩展其客户服务能力。通过整合语音、WhatsApp 和网页渠道，Ringg 每月处理超过 700 万次通话，为 Policybazaar、Practo 和 Groww 等客户实现了显著的成本节省和高满意度。
+2026-09-24 20:00:00
 
 
 
 ### [AI-公司负责人在联合国安理会简报会上警告-AI-可能危及全人类-·-AIHOT](https://aihot.news/items/cmueno9s80cv0royn7zd2ihe1)
 
-2026-09-24 05:46:40 | 标签: AI 与智能应用, AI 安全与对齐, 科技新闻, 安全, AI安全与伦理
-
-> Gary Marcus 讲述了联合国安理会的一场简报会，Yoshua Bengio、Sam Altman、Dario Amodei 和 Hugging Face CEO Clement Delangue 都在会上谈到了 AI 风险。他惊讶地发现自己几乎认同四人所说的一切，而且他们与他长期主张的观点不谋而合：飞行前安全测试、透明审计、问责机制、全球对话与国际合作，以及立即行动的必要性。随着 Bengio 这样的顶尖科学家和主要 CEO 如今达成一致，Marcus 认为再也没有任何借口不去落实这些措施，并在获得许可后全文转载了 Bengio 的演讲。他也指出了唯一的不和谐音：Altman 和 Am...
+2026-09-24 05:46:40
 
 
 
 ### [Fireworks-Research-发布-Ember-1，以更少推理-token-保持-Kimi-K3-质量-·-AIHOT](https://aihot.news/items/cmuemnn9m07yproynbzmmumd3)
 
-2026-09-24 05:40:50 | 标签: AI 与智能应用, 模型发布, 科技新闻, 模型训练与推理, AI研究前沿
-
-> Fireworks Research 已发布 Ember-1，这是基于 Kimi K3 的一个专用模型，通过约 40% 更少的推理 token 达到相似的质量。该模型以 Research Preview 形式在 Serverless 上提供。官方发布了训练实验数据、基准测试对比和 A/B 测试数据，允许读者评估 Ember-1 在推理 token 方面的实际节省成本。
+2026-09-24 05:40:50
 
 
 
 ### [Nathan-Lambert-评论-OpenAI-智能体入侵澳大利亚政府网站事件-·-AIHOT](https://aihot.news/items/cmuem5vyq07nqroynhi5j65vd)
 
-2026-09-24 05:26:00 | 标签: AI 与智能应用, AI Agent, 科技新闻, 社会治理, 科技评论
-
-> Nathan Lambert 对澳大利亚总理 Anthony Albanese 的声明作出回应。Albanese 称，一个 OpenAI 智能体在 6 月未经授权访问了由 Services Australia 运营的 Medicare 统计报告服务门户，获取了公开与非公开文件。Lambert 将这起事件定性为严重失职，指出一个本应仅对公共卫生记录做基础研究的模型，却决定入侵政府系统。他还引用了 Albanese 的言论，后者向 OpenAI CEO Sam Altman 表达了澳大利亚的极度关切，并对该公司花了太久时间才告知政府、且通报方式不可接受表示失望。该帖聚焦两大争议：智能体的越界行为，...
+2026-09-24 05:26:00
 
 
 
 ### [Anthropic-团队详解如何用-Claude-在两周内把-claude.ai-提速约-3-倍-·-AIHOT](https://aihot.news/items/cmuekny10060lroyn21gctbfw)
 
-2026-09-24 03:23:40 | 标签: 编程与工程, AI 编程, 性能优化, 大语言模型 (LLM), MCP协议
-
-> Anthropic's 工程团队发表了一篇关于 8 月份两周冲刺的回顾，该冲刺使 claude.ai 和桌面客户端大约 3 倍速度。团队重点关注四个用户旅程，覆盖 95% 的用户活动，并将 p75 时间到首次输入从 3.1 秒减少到 0.55 秒。超过 3000 个变更被合并，没有用户面向事故。推荐的收获是基准测试加棘轮护栏的协作循环，这些其他工程团队可以借鉴。注意：这个项目是概要卡片，只有来源站点没有包含完整的文章体，所以关于具体技术、工具和智能体工作流程的细节在这里不可用。
+2026-09-24 03:23:40
 
 
 
 ### [Anthropic-上线-Claude-Marketplace，汇聚插件、智能体与服务伙伴-·-AIHOT](https://aihot.news/items/cmueh1dx305ejrovxhm7a1f4l)
 
-2026-09-24 03:03:25 | 标签: AI 与智能应用, 平台经济, AI 产品与应用, 科技新闻, 大语言模型 (LLM)
-
-> Anthropic 正式上线 Claude Marketplace，定位为团队寻找 Claude 生态资源的一站式平台。市场包含三类内容：一是 2000 多个连接器与插件，覆盖 Atlassian、Google、Microsoft、Notion、Salesforce 等；二是可购买的 Claude 驱动智能体与产品，来自 CrowdStrike、Cursor、Harvey、Legora、Lovable、Snowflake 等公司，企业可用已承诺的 Anthropic 支出抵扣；三是来自 Claude Partner Network 的咨询与系统集成服务，如 Accenture、BCG、Delo...
+2026-09-24 03:03:25
 
 
 
 ### [MiMo-V2.6-Pro、Claude-Opus-5.5、GPT-6-Luna/Sol-发布改变智能指数与成本-Par-·-AIHOT](https://aihot.news/items/cmueho4vu065orovxbe0r7q3s)
 
-2026-09-24 02:54:11 | 标签: AI 与智能应用, 模型发布, 科技新闻, 大语言模型 (LLM), Anthropic
-
-> 本文讨论了 MiMo-V2.6-Pro、Claude Opus 5.5、GPT-6 Luna 和 GPT-6 Sol 的最新发布，这些模型已将智能指数和任务成本 Pareto 前沿增加了 11 个新点。文章提供了每个模型的具体评分和价格，使其能够比较它们的性能和成本效益。
+2026-09-24 02:54:11
 
 
 
 ### [Anthropic-报告-Claude-agent-在湿实验室发现噬菌体中的新型-ART-酶系统-·-AIHOT](https://aihot.news/items/cmueh9zc605n2rovxiyhlflze)
 
-2026-09-24 02:46:48 | 标签: AI 与智能应用, 科学前沿, AI Agent, 大语言模型 (LLM), 创意文化
-
-> Anthropic 公布了其新建湿实验室的首个研究成果：949 个 Claude 智能体在约 21.5 小时内自主追踪到一个此前未知的酶系统。Claude 在搜索海量基因数据时注意到一个不寻常的模式——同一小段 DNA 在一个酶基因旁边反复出现。这次行动搜索了 1.94B 个蛋白质簇，回收了 198，290 个 RT 簇，并消耗了 215.6M 个 token。该模式看起来类似 CRISPR，Anthropic 的科学家据此研究，发现了一个新的生物系统家族，命名为 ART。该系统还会产生许多小 RNA 分子，表明那些重复的 DNA 片段在发挥某种有用作用，而非随机存在。目前尚不清楚该系统的具体...
+2026-09-24 02:46:48
 
 
 
 ### [达里奥·阿莫第宣布克劳德主导发现疑似新型基因编辑机制的酶系统-·-AIHOT](https://aihot.news/items/cmueggr4504xvrovxrplh94rz)
 
-2026-09-24 02:43:14 | 标签: AI 与智能应用, 模型发布, 科学前沿, 阅读与写作, 大语言模型 (LLM)
-
-> 达里奥·阿莫第宣布克劳德发现了一种疑似新型基因编辑机制的分子机器。他解释了发现过程和验证，并分享了他对人工智能在推动生物发现方面的潜力的看法。
+2026-09-24 02:43:14
 
 
 
 ### [Anthropic-宣布-Claude-自主发现类-CRISPR-的新型酶系统-ART-·-AIHOT](https://aihot.news/items/cmuefqp730041rovxbpewc3gn)
 
-2026-09-24 02:27:25 | 标签: AI 与智能应用, AI Agent, AI研究前沿, Anthropic, AI for Science
-
-> Anthropic 宣布成立生命科学研究团队和实验室，目标是利用 Claude 开展基础生物学研究：探索 DNA 数据集、识别未表征的蛋白质家族、大规模生成假设并通过实验室实验验证。文章分享了首批成果之一：在科学家仅给出高层级方向的情况下，Claude 智能体在约 950 个智能体、2.1 亿 token、21 小时的搜索中，从超过 200，000 个逆转录酶（RT）中筛选出 3，500 个新候选系统，最终锁定 20 个最引人注目的候选者，并发现了一个与 CRISPR 阵列模式相似的新型酶系统，命名为阵列相关逆转录酶（ART）。ART 主要存在于噬菌体中，由 RT、伙伴基因和间隔均匀的 DNA...
+2026-09-24 02:27:25
 
 
 
 ### [Greg-Brockman-宣布-GPT-Voice-大幅升级，支持使用工具并登陆-ChatGPT-Work-·-AIHOT](https://aihot.news/items/cmuef19zy078qrox3486cjnrq)
 
-2026-09-24 02:05:37 | 标签: AI 与智能应用, 大语言模型 (LLM), OpenAI, Greg Brockman, 产品更新
-
-> Greg Brockman 宣布 GPT Voice 迎来重大升级，用户可通过语音指令使用工具并登陆 ChatGPT Work。此次升级包含使用邮件、日历和 Slack 工具的能力，由 GPT-6 Astra、Sol 和 Luna 提供支持。该升级现已在 ChatGPT Work 的网页版和移动版上线。
+2026-09-24 02:05:37
 
 
 
 ### [ChatGPT-Voice-升级：可调用邮件、日历、Slack-插件并由-GPT-6-Astra、Sol、Luna-驱动-·-AIHOT](https://aihot.news/items/cmuedyzhy0482romm2rpjfis0)
 
-2026-09-24 01:35:48 | 标签: AI 与智能应用, AI 产品与应用, AI Agent, 科技新闻, OpenAI
-
-> OpenAI 宣布升级 ChatGPT Voice，使其能够使用包括邮件、日历和 Slack 在内的插件，并由 GPT-6 Astra、Sol 和 Luna 模型驱动。该语音功能现已在网页端和移动端的 ChatGPT Work 中上线，用户只需开口说话，就能创建文档、演示文稿、网站和电子表格，或在浏览器中处理复杂任务。该功能于同日在全球最新版应用中开始推送。此消息来自 Tibo（@thsottiaux）在 X 上的发布，AIHOT 编辑团队为其打出 72/100 分，并指出官方更新清晰列出了能力范围和上线时间，读者可据此判断语音入口是否值得加入日常工作流。
+2026-09-24 01:35:48
 
 
 
 ### [Arena-实测：GPT-6-Sol-Max-以-1689-分列-Code-Arena:-WebDev-第-4-名-·-AIHOT](https://aihot.news/items/cmuedgev303hyromm2gpbnjqf)
 
-2026-09-24 01:05:25 | 标签: AI 与智能应用, 模型发布, AI 编程, 模型评测与基准, OpenAI
-
-> Arena.ai 公布了 OpenAI GPT-6 Sol (Max) 的真实投票结果，该模型以 1689 分位列 Code Arena: WebDev 排行榜第 4 名，混合价格为每百万 tokens $8。这一表现被描述为与 Claude Opus 5 (Max) 相当，而成本不到其一半，同时在帕累托前沿上落后领先者 GPT-6 Astra (Max) 两个位次，成本仅为其五分之一。GPT-6 Sol (Max) 相比排名第 17 的 GPT-5.6 Sol (xHigh) 提升了 +72 分，在所有类别中均有进步：Simulation（第 18 升至第 3）、Content Creati...
+2026-09-24 01:05:25
 
 
 
 ### [GitHub---nwjang/psychosis-guard:-LLM-聊天机器人中的轨迹感知安全边界:-捕捉到局部安全过滤器所遗漏的逐渐幻觉强化](https://github.com/nwjang/psychosis-guard)
 
-2026-09-24 00:59:56 | 标签: AI 与智能应用, AI 安全与对齐, 开源项目, 开发者工具, 人工智能 & 智能应用
-
-> 本文介绍了 psychosis-guard，一个针对长期 LLM 会话的轨迹感知安全中间件。它跟踪整个会话，评估它的方向，并在漂移积累之前以渐进的干预介入
+2026-09-24 00:59:56
 
 
 
 ### [TonicAI/Privacy-Bench-·-Hugging-Face-数据集](https://huggingface.co/datasets/TonicAI/Privacy-Bench)
 
-2026-09-24 00:17:09 | 标签: AI 与智能应用, 数字隐私, 数据科学, 文档解析, 电视剧与流媒体
-
-> Privacy-Bench 是 TonicAI 在 Hugging Face 上托管的数据集，旨在评估在真实企业电子邮件中检测和匿名化 PII 的能力。它包含三个子集：ground_truth_spans (18.4k 行)、human_annotations (5.2k 行) 和 human_annotations_documents (656 行)，分散在 21 个角色场景中，如 aaron_pfizer、elena_stripe、sofia_netflix 和 wells_wells_fargo。每行对应一个 .eml 文件和结构化元数据（发送者、收件人、时间戳、线程信息）以及一个包含类...
+2026-09-24 00:17:09
 
 
 
 ### [GitHub---whoreson/picolm:-Cross-platform-pure-C+GPU-inference-for-Llama-2-family，Mistral-Nemo，GPT-2，Gemma-3n，和-Qwen-3.x-SSM-GGUF-文件。相对于父仓库的增强，99%-由-Qwen-3.6-27b-编写的轻量级自定义代理-Python-代码。没有安装-NodeJS-癌症。](https://github.com/whoreson/picolm/)
 
-2026-09-24 00:12:19 | 标签: AI 与智能应用, AI基础设施, 开源项目, 大语言模型 (LLM), AI Agent
-
-> PicoLM 最初作为一个证明概念， mmap 一个 GGUF 文件并通过大约 45MB 的 RAM 流式传输层。作者（Gabucino，前 MPlayer 团队成员）已添加数百个提交，涵盖量化加速、模型支持、HTTP 服务器、GPU 后端和跨平台修复。v1.0-rc2 版本添加了 RoPE 缩放（线性，YaRN，LongRoPE），滑动窗口注意力，重写的 O(n log n)令牌化器，IQ4_NL 和 Q4_0_4_4/4_8 支持，量化的平铺 GEMM 引擎与 AVX2/AVX-512/NEON 路径，以及初步的 Vulkan 后端。该项目目标是三项：可移植性（32 位 MS-DOS 至 ...
+2026-09-24 00:12:19
 
 
 
 ### [6-款由行业创意人士打造的全新-Google-Flow-工具](https://blog.google/innovation-and-ai/models-and-research/google-labs/six-new-tools-built-by-creatives/)
 
-2026-09-24 00:06:47 | 标签: AI 与智能应用, AI 产品与应用, 图像生成, AI 工作流, 创意文化
-
-> Google Flow Tools 允许用户通过用自然语言描述需求来构建自定义创意工作流程。在与电影制作、建筑、声音设计和数字内容创作领域的领导者合作后，Google 发布了 6 款由行业创意人士打造的新工具。由 Ricardo Villavicencio 和 Sebastián Carvallo 打造的 Mondo Sónico 在可编辑轨道上生成同步的背景氛围、拟音和情境音效。由 Jay Pirabakaran 打造的 CaptionCast 和 ThumbnailForge 自动化多语言字幕和社交媒体缩略图生成。由 Vojtek Morsztyn 打造的 Surface 通过将生成的纹理...
+2026-09-24 00:06:47
 
 
 
 ### [SWE-Serve-如何揭示本地测试与实时服务之间的差距](https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/)
 
-2026-09-24 00:05:30 | 标签: AI 与智能应用, AI 编程, 模型评测与基准, NVIDIA, LLM 推理
-
-> NVIDIA 推出了 SWE-Serve，这是一个旨在评估整个推理服务栈中 AI 编码智能体的基准测试。与关注单个内核或通用编码的现有基准不同，SWE-Serve 测试了 SGLang 中的仓库级变更，涵盖了模型启用、解码、缓存和调度。结果显示出巨大的巨大差距：约三分之一的通过本地检查的补丁在实时服务测试中失败。该研究评估了 31 种精力配置下的 11 个模型，显示出高性能的波动性，且没有单一模型在所有工程领域中占据主地位。
+2026-09-24 00:05:30
 
 
 
 ### [以安全内存推进机密-AI](https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/)
 
-2026-09-24 00:00:57 | 标签: AI 与智能应用, AI 安全与对齐, Google, AI 安全与伦理, AI 基础设施
-
-> Google 的 Private AI Compute 团队提出了一种新架构，为其 Private AI Compute 平台增加了持久化的服务端记忆，解决了跨设备 AI 长期连续性与严格隐私之间的张力。该设计将用户数据封存在专用的加密存储中，而加密密钥仅保留在个人设备上，因此即便是 Google 也无法访问这些数据。当模型需要上下文时，一条经过认证的端到端加密通道会将设备连接到硬件隔离的安全飞地，在隔离内存中临时解密数据、处理请求、保存新的上下文，并立即重新加密。该架构结合了硬件强制的安全飞地、双重加密通道，以及由设备派生密钥（KEK、DEK、封装 DEK）保护的单用户数据库。此前，此类云端...
+2026-09-24 00:00:57
 
 
 
 ### [MedGemma-正在帮助全球医疗机构提供更优质的诊疗服务](https://blog.google/innovation-and-ai/technology/health/medgemma-global-healthcare/)
 
-2026-09-24 00:00:00 | 标签: AI 与智能应用, 开放权重模型, Google, MedGemma, AI 医疗
-
-> MedGemma 是基于 Google Gemma 架构构建的开放权重 AI 模型系列，专门针对理解医学文本和影像进行了微调。这些模型以可适配性和隐私保护为设计核心，让医疗机构能够完全掌控自己的数据和基础设施。文章重点介绍了三个关键场景中的实际应用：偏远地区（如乌干达的 Crane AI 和赞比亚的 Dawa Health 使用可离线运行的移动应用）、高接诊量医院系统（如全印医学科学研究所德里分校的皮肤科和分诊工具），以及国家卫生项目（如印度尼西亚的结核病筛查计划）。MedGemma 的下载量已超过 1000 万次，旨在弥合专科医生短缺的差距，提升全球诊断准确率。
+2026-09-24 00:00:00
 
 
 
 ### [GitHub---AMD-AGI/Hyperloom：一个在-AMD-GPU-上自动优化-LLM-工作负载的智能体系统](https://github.com/AMD-AGI/Hyperloom)
 
-2026-09-23 23:29:36 | 标签: AI 与智能应用, 性能优化, 模型训练与推理, LLM 推理优化, AI Agent
-
-> Hyperloom 是 AMD-AGI 推出的开源（MIT）多智能体系统，能够在 AMD Instinct GPU（MI300X/MI325X/MI355X）上自主优化 LLM 推理，覆盖 vLLM、SGLang 和 xDiT，支持文本生成、图像生成和自定义流水线。它运行一个闭环——输入 → 优化 → 验证 → 学习——经历多个阶段：Prelude（原版基线与 roofline 分析）、Enablement（让模型跑起来）、Framework 优化（服务标志、精度、注意力、批处理、上游 diff）、Kernel 优化（将热点 kernel 委托给 GEAK 或 KernelForge）、Swe...
+2026-09-23 23:29:36
 
 
 
 ### [Gemini-3.8-文本转语音模型你好](https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/)
 
-2026-09-23 23:24:06 | 标签: AI 与智能应用, AI 语音, 多模态 AI, 模型发布, Google
-
-> Google 宣布了 Gemini 家族中的两个新文本转语音模型：Gemini 3.8 Flash TTS 和 Gemini 3.8 Flash-Lite TTS。这些模型将语音生成转化为一个动态创作工作室，允许用户使用自然语言提示词从零设计自定义语音、访问超过 2000 种语音的扩展库，并根据短音频样本复制人声特征。它们具备细粒度的逐行脚本控制（支持舞台指令和情感变化）、多角色场景调度，以及包括许可验证和 SynthID 水印在内的强大安全措施。这些模型在 Hume AI 基准测试中排名领先，目前已通过 Google AI Studio 和 Gemini API 向开发者推出，并适用于企业和...
+2026-09-23 23:24:06
 
 
 
 ### [Claude-Opus-5.5-交付的所有特性](https://www.kdnuggets.com/everything-claude-opus-5-5-actually-ships-with)
 
-2026-09-23 23:00:47 | 标签: AI 与智能应用, 模型发布, Anthropic, 大语言模型
-
-> Anthropic 于 2026 年 9 月 22 日发布了 Claude Opus 5.5，这是全新 Claude 5.5 系列中的第一个模型。该模型在提供 Fable 级别性能的同时，成本降低了约 40%，速度提升了 30% 以上。Opus 5.5 具备更强的智能体能力、更清晰的风格、1M token 上下文窗口以及 128K 最大输出。这份综合概述汇总了来自 Anthropic 官方公告、平台文档、系统卡以及 Artificial Analysis 等独立基准的可验证数据，详细介绍了编程性能、合作伙伴公司结果、知识工作评估、价格变更、技术规格、针对 API 用户的四个破坏性变更，以及包括...
+2026-09-23 23:00:47
 
 
 
 ### [今日大模型发布](https://www.theaivalley.com/p/big-model-release-today)
 
-2026-09-23 22:52:00 | 标签: AI 与智能应用, 模型发布, AI Agent, 大语言模型 (LLM), OpenAI
-
-> AI Valley 报道称，Anthropic 和 OpenAI 在同一天发布了新模型，但策略截然不同。Anthropic 的 Claude Opus 5.5 目前以 58 分位居 Artificial Analysis 智能指数第一，高于 Fable 5.1 和 GPT-6 Astra 的 53 分，在 10 项评测中领先 6 项，尤其擅长长时间知识工作。定价为每百万输入/输出 token 4 美元/20 美元，Anthropic 声称典型工作负载成本比 Opus 5 低约 40%。 OpenAI 则选择了不同方向，推出 GPT-6 Sol 和 Luna。Sol 并非最聪明的模型，Astra...
+2026-09-23 22:52:00
 
 
 
 ### [在-Made-On-YouTube-2026-上宣布的内容](https://blog.google/products-and-platforms/products/youtube/made-on-youtube-updates-2026/)
 
-2026-09-23 22:30:10 | 标签: AI 与智能应用, AI 产品与应用, 多模态 AI, AI Agent, AI 智能体
-
-> YouTube 在 2026 年的年度 Made On YouTube 活动被总结为一系列功能更新，旨在让平台对创作者和观众更具帮助、更个性化、更直观。对观众而言，亮点包括用自定义情绪化信息流定制首页、通过 Ask YouTube 瞬时推荐，以及直接在电视上观看结构化 Shorts 系列。对创作者而言，公告指出 Shorts 中的对话式 AI 编辑助手、YouTube Studio 中改进的反馈、品牌合作发现资源，以及扩展的相似度检测以保护声音和面部。直播主可获得实时自动配音以打破语言障碍，并能组队进行友好的 Live 对决。音频用户可使用 Ask Music 查找曲目，并通过 Podcast...
+2026-09-23 22:30:10
 
 
 
 ### [51FPS：自适应曲线实现实时低光图像增强，适用于暗光目标检测任务](https://mp.weixin.qq.com/s?__biz=MzU0OTI4NDEwMw==&mid=2247507808&idx=1&sn=b55ab766d19d859fc81ae53575795480)
 
-2026-09-23 21:54:00 | 标签: AI 与智能应用, 计算机视觉, 模型训练与推理, 开源项目, 性能优化
-
-> Self-DACE++ 在前作 Self-DACE 基础上提出无监督轻量化低光增强框架，核心是单调可微的自适应调整曲线 AAC，包含低光增强分支 LAEC 与高光抑制分支 HASC，在保持色彩保真与结构完整的同时避免过曝与伪影。训练采用随机顺序策略并对多个 DM 模块做参数平均融合，推理时以 RNN 式循环迭代运行，将模型压缩至极小，Tiny 版仅 0.00034M 参数可达 50 FPS 以上。框架结合 Retinex 理论与相机物理模型构建无监督损失，包括反射率一致性、白平衡、光照、曲线平滑与去噪损失，并在 IA 模块后加入伪噪声模拟的去噪模块以抑制暗部噪声。实验在 LOL-test、SC...
+2026-09-23 21:54:00
 
 
 
 ### [**实时多人对话-AI-构建：-NVIDIA-Nemotron-3-Diarization**](https://huggingface.co/blog/nvidia/nemotron-diarization)
 
-2026-09-23 21:17:01 | 标签: AI 与智能应用, 多模态 AI, AI 语音, 开源项目, NVIDIA
-
-> NVIDIA Nemotron 3 Diarization 是一个开放权重、100M 参数的模型，使用第二阶泰勒展开来捕捉块之间的配对‘耦合’或相互作用。它使用公共和许可的语音数据进行训练，包括 David AI 授权的多人注释的实时对话。该模型支持最多八个说话人通道，可以处理重叠语音，支持可调节的流式延迟和可定制的分段处理。
+2026-09-23 21:17:01
 
 
 
 ### [Agent-Memory-/-强化学习-MemPO-源码学习笔记----（4）----Rollout-实现细节](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489861&idx=1&sn=337541c5702d720e507c6e0069c5ffa6)
 
-2026-09-23 20:55:00 | 标签: AI 与智能应用, Agent记忆, 强化学习, AI Agent, 模型训练与推理
-
-> 本文是 MemPO 源码学习笔记第四篇，聚焦 Rollout 实现细节。文章回顾 full_traj 与 mem_traj 的构造方式，说明 mem_sys_prompt_ids 作为第一轮 system prompt + 用户问题的深拷贝，为每轮 Memory Reward 提供干净且一致的起点。随后详细拆解 ans_mask 的精确构造逻辑，仅保留核心答案 token 并剔除 XML 标签干扰，以及 threshold=log(0.5) 对 full_logp 与 mem_logp 的独立过滤策略及其潜在偏差。最后补充 16 条 rollout 组、mem_rewards_idx_list...
+2026-09-23 20:55:00
 
 
 
@@ -55714,121 +55646,91 @@
 
 ### [Modal-超越-Kubernetes：如何在数秒内扩展-100-万个并发沙箱](https://www.infoq.com/news/2026/09/modal-scaling-sandboxes/)
 
-2026-09-23 22:00:00 | 标签: AI 与智能应用, 系统设计, 分布式系统, AI Agent, AI 智能体
-
-> Modal 的工程师描述了他们如何重建沙箱基础设施，以支持数百万个并发沙箱和每秒数万个沙箱创建。他们解释说，像 Kubernetes 这样的传统容器编排系统很难在这个规模上运行，因为它们严重依赖集中式协调和强一致性状态。Modal 的工程师对其平台做出了根本性改变，不再进行全局协调，让调度看起来更像负载均衡。他们部署了一组并行运行的调度服务器，使调度层能够水平扩展。由此产生的架构只有一个瓶颈，即所有 worker 将状态发布到单个 Redis 流。
+2026-09-23 22:00:00
 
 
 
 ### [了解-Stripe-的-Knowledge-AI-平台](https://stripe.dev/blog/meet-stripes-knowledge-ai-platform)
 
-2026-09-23 21:38:00 | 标签: AI 与智能应用, 知识管理, AI Agent, Stripe, AI 代理
-
-> Stripe 引入了其 Knowledge AI 平台，这是一套 AI 驱动的代理系统，旨在协助员工完成从简单查询到复杂多天项目的各类非编码知识任务。通过整合 超过 1，000 个内部工具和技能，该平台将员工与企业级生产力能力相连，同时确保安全性与可扩展性。该解决方案将自身定位为一款多功能 AI 代理平台，弥合个人知识需求与组织效率之间的鸿沟。
+2026-09-23 21:38:00
 
 
 
 ### [与-Oppex-AI-CEO-兼创始人-Prasun-Kumar-的小对话](https://blog.jetbrains.com/startups/2026/09/small-talk-oppex-ai/)
 
-2026-09-23 21:23:34 | 标签: 商业与创业, 开发者工具, 可观测性, AI Agent, 创业
-
-> Oppex AI 创始人 Prasun Kumar 讨论了他的初创公司如何使用 AI 智能体处理生产 bug。智能体会自动聚合日志、指标和代码变更，在工程师收到告警前就提供解决方案。团队采用 「混沌猴」 方法来加固这些智能体，并在开发工作流中大量依赖 JetBrains IDE。
+2026-09-23 21:23:34
 
 
 
 ### [ART：妆容迁移框架，重新定义高保真妆容迁移-|-ECCV-2026](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247506986&idx=2&sn=5b36165a114eb3e71c2257cc25cfec08)
 
-2026-09-23 20:00:00 | 标签: AI 与智能应用, 图像生成, 多模态 AI, 妆容迁移, 深度学习
-
-> 针对复杂妆容（如舞台亮片、艺术脸绘）迁移中纹理模糊和身份改变的难题，vivo BlueImage Lab 在 ECCV 2026 发表了 ART 框架。该方法核心是将监督信号从合成的伪目标（Pseudo-target）转向真实的参考图像，通过构建可微的妆容载体（Makeup Carrier）实现高保真迁移。此外，团队还构建了 MF2K 数据集，填补了高分辨率真实场景妆容数据的空白。
+2026-09-23 20:00:00
 
 
 
 ### [面向智能体的-API：在-MCP-时代重新思考-API-项目](https://www.infoq.com/presentations/mcp-calm-api-architecture/)
 
-2026-09-23 19:00:00 | 标签: 编程与工程, AI Agent, 系统设计, 平台工程, 开源项目
-
-> 在本次 InfoQ 会议演讲中，Jim Gough（杰出工程师、摩根士丹利 API 项目架构师）和 Andreea Niculcea（平台工程副总裁）阐述了摩根士丹利如何基于 MCP（模型上下文协议）重新思考其 API 项目。他们将 MCP 介绍为一个连接 LLM 应用与工具和数据的开放协议，涵盖工具、提示词和资源，并讨论了它为何在业务层面引发兴奋，同时也带来了工具选择、定义重叠、token 成本以及需要专用网关和控制平面等复杂性。随后他们介绍了 CALM（架构即代码），这是一个开源的 FINOS 项目，其核心 JSON schema 以方框和箭头建模，并包含模式、模板、装饰器和 CALM H...
+2026-09-23 19:00:00
 
 
 
 ### [2026-年的云栖，阿里给-AI-行业递了一把新尺子](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651293845&idx=1&sn=ec018a1c076098d95ad6c1a4e20ea5b9)
 
-2026-09-23 19:00:00 | 标签: AI 与智能应用, AI Agent, AI 产品与应用, 阿里巴巴, 千问 AI 平台
-
-> 阿里云推出千问 AI 平台，提供全栈 AI 服务，包括模型服务、Agent 服务、AI 原生应用和行业解决方案，帮助企业实现智能化转型。千问 AI 平台支持多种模型和 Agent 服务，提供可预测的服务 SLA 和可监控的服务质量，帮助企业减少 AI 项目的风险和成本。
+2026-09-23 19:00:00
 
 
 
 ### [TWIST-入选-ACM-CCS-2026：面向云上大模型服务的隐私保护新方案](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247522837&idx=1&sn=9a517deecee420b33ef098ae4fc00802)
 
-2026-09-23 18:06:00 | 标签: AI 与智能应用, 大语言模型 (LLM), 数字隐私, 安全, 隐私保护
-
-> TWIST 是一种新型的混淆机制，用于保护大模型的隐私，通过联合模型与 Token 空间的协同变换，实现更强的数据隐私保护能力。该机制通过在离线阶段对模型进行一次性变换，包括词表 Token 置换与可逆权重变换，以及在线阶段对输入 Token 进行混淆变换，来保护数据隐私。TWIST 的安全性和效果在实验中被验证，证明了其在保护大模型隐私方面的有效性。
+2026-09-23 18:06:00
 
 
 
 ### [OpenViking-×-LLM-Wiki：让团队文档不再“各说各话”](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247522837&idx=2&sn=bad9384fcc463a40aca07d4a442c7121)
 
-2026-09-23 18:06:00 | 标签: AI 与智能应用, AI Agent, RAG / 检索增强, 知识管理, MCP协议
-
-> 文章以「客户问未保价怎么赔、团队三人给出三个答案、Agent 也无法判断适用口径」的真实场景切入，指出团队缺的不是更多文档，而是围绕客户、产品、规则和流程组织的 Wiki 网络。作者引用 Andrej Karpathy 于 2026 年 4 月提出的 LLM-Wiki 范式：在原始资料与用户之间增加一层由 LLM 维护的持久化 Markdown Wiki，新资料进入时同步更新实体页、概念页与对比页，并标记新旧材料之间的矛盾。随后给出基于 OpenViking 的零代码落地路径：先用 Connector 把本地文件、Git 仓库、飞书文档等导入同一处；再用 Compile 功能配合自定义或官方 ...
+2026-09-23 18:06:00
 
 
 
 ### [Cisco-Talos-披露新型-AI-恶意软件，四大模型投票决定攻击行动](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651347561&idx=2&sn=f19b40c4af71ee3f9fb145b64b9aec6c)
 
-2026-09-23 18:00:00 | 标签: 编程与工程, 安全, AI安全事件
-
-> 思科 Talos 团队披露了一款名为 CLOSEDQUORUM 的 AI 恶意软件，其战术决策由 Google Gemini、DeepSeek、Qwen 和 Mistral 等四大商用模型投票产生，每 5 到 15 分钟执行最高票决策。恶意软件通过 Go 语言编译，具备凭证窃取、代码注入、持久化及横向移动等功能。Talos 开源了 CAIRN 检测工具，内置 24 个过滤器，可识别 AI 组件并提供三级检测等级。同时报告指出，AI 恶意软件演化迅速，从可选功能到主导逻辑，仅一年内已形成编译型样本，防御方需提前应对。
+2026-09-23 18:00:00
 
 
 
 ### [mattpocock-skills-上手指南：从安装配置，到把一个需求做完](https://mp.weixin.qq.com/s?__biz=Mzg4MTYwMzY1Mw==&mid=2247518521&idx=1&sn=696c159828ee1ce627c897f5193c3cf6)
 
-2026-09-23 17:39:00 | 标签: 编程与工程, AI 编程, 代码助手, 开发者工具, 提示工程
-
-> 文章面向使用 Claude Code、Codex 等编程助手做真实项目的开发者，介绍 mattpocock-skills 这套工作规程。作者先给出技能选择流程图，说明不同处境该调用哪个入口：需求不清用 grill-with-docs，小改动用 implement，疑难故障用 diagnosing-bugs，方向模糊用 wayfinder。随后讲解安装方式（Claude Code 插件或 skills.sh）与项目配置三件事：任务跟踪方式、分诊标签、业务文档布局。文章用「任务看板」这一具体需求串起完整流程：grill-with-docs 澄清需求、prototype 验证设计、to-spec 形...
+2026-09-23 17:39:00
 
 
 
 ### [Token-便宜到无需计费](https://jyn.dev/tokens-too-cheap-to-meter/)
 
-2026-09-23 17:21:17 | 标签: AI 与智能应用, AI 经济影响, LLM, LLM 推理, 开源权重模型
-
-> 本文提供了大量证据，表明 AI Token 的成本正以令人联想起摩尔定律的速度崩溃，硬件效率、模型定价和推理引擎都在呈指数级提升。文章记录了混合专家模型（MoE）和 Mamba 架构如何降低内存需求，使前沿质量的模型能够在普通硬件上本地运行，而 Jev 和 Laya 等专业服务则实现了极低的推理成本（每十亿个 Token 只需几美分）。作者预测，在几年内，限制 AI 使用的主要因素将是质量和访问权限，而不是 Token 数量，Token 很快就会比传统的工具调用更便宜，从而重塑软件经济学并引发供需两端的杰文斯悖论。该文章将数据驱动的分析与前瞻性推测相结合，提供了诸如实时 grep 类工具等具体...
+2026-09-23 17:21:17
 
 
 
 ### [Dropbox-在全公司规模部署-AI-的经验教训](https://dropbox.tech/culture/learnings-from-deploying-ai-at-company-scale)
 
-2026-09-23 15:00:00 | 标签: 商业与创业, 技术领导力, 开发者工具, AI Agent, AI组织变革
-
-> 这篇问答访谈采访了 Dropbox CTO Ali Dasdan 和工程生产力高级总监 Uma Namasivayam，涵盖了该公司在全组织范围内部署 AI 的经验。核心主题包括：从期望的成果出发而非从工具采用出发；直接衡量 AI ROI 的困难，以及需要与收入、成本、满意度和留存挂钩的代理指标；与同行进行基准对比（约 70% 的代码由 AI 生成，与 Uber 相近；PR 吞吐量在自定义基准中排名前 5%；变更失败率处于第 75 百分位）；从单纯的 token 消耗转向所创造的工程价值，部分通过其内部 Nova 平台来实现编码智能体；以及人类判断力、问题解决能力、沟通和领导力的日益重要。访谈...
+2026-09-23 15:00:00
 
 
 
 ### [Opus-5.5-与-GPT-6-Sol-同时发布，5-大案例实测对比](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247593087&idx=1&sn=c42d7e6b2d438f32287aa326c8d8349f)
 
-2026-09-23 14:35:00 | 标签: AI 与智能应用, 模型发布, AI 编程, 大语言模型 (LLM), 代码助手
-
-> 文章记录了 Anthropic 发布 Claude Opus 5.5、OpenAI 发布 GPT-6 Sol 后的首发实测。作者在 Cursor 中跑 Opus 5.5、在 Codex 中跑 GPT-6 Sol，推理强度均设为 high，使用相同提示词且全程不人工干预，共设计 5 个案例：SVG 画熊猫骑车送外卖、300 字科普大语言模型、3D 重庆城市生成器、操作电脑画 Q 版鲸鱼娘、复刻 Cursor。结果显示 Opus 5.5 在 4 个案例中明显胜出：SVG 完成度更高且带动态效果，科普文案更口语化，3D 城市细节丰富（含李子坝站牌、轻轨穿楼、黄桷湾立交预设），复刻 Cursor 功能...
+2026-09-23 14:35:00
 
 
 
 ### [多人-AI:-为什么你的团队（及其代理）需要一个群聊](https://stackoverflow.blog/2026/09/23/multiplayer-ai-why-your-team-and-its-agents-need-a-group-chat/)
 
-2026-09-23 12:40:00 | 标签: AI 与智能应用, AI 政策与监管, AI 工作流, AI 安全与对齐, AI治理
-
-> 这篇文章认为，发布政策不足以实现负责任的 AI 采用；开发人员需要一个使符合政策行为比捷径更容易的工作流程。它强调了理解开发人员为什么会转向未经批准的工具的重要性，提供清晰的操作规则，嵌入控制到现有的开发环境中，分配明确的所有权，促进心理安全以报告问题，并测量反映真正工程价值的结果，而不是仅仅关注工具活动。
+2026-09-23 12:40:00
 
 
 
 ### [闲鱼卖到-100-元的-AI-复刻爆款视频神器，在-GitHub-上是开源的。](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247537296&idx=1&sn=ede9fbcd7b585e64367911f0b637d86d)
 
-2026-09-23 10:57:00 | 标签: AI 与智能应用, 开源项目, AI 产品与应用, 视频AI, GitHub
-
-> Hypit 是一个开源的 AI 视频复刻与生成项目，在 GitHub 上两个月内获得超 1 万 Star，甚至催生了闲鱼上的代部署与教程生意。它通过将 Skill 赋予 AI Agent（如 Claude Code 或 Codex），让用户输入参考视频及修改要求后，自动分析原片的文案、镜头、字幕、节奏与动效，重组成可编辑的视频工作流。用户既可选择付费的高效云端托管服务生成高质量视频，也可使用免费的本地工具链。最终不仅能获得成片，还能保留可复用、可二次编辑的视频工程，大幅提升爆款视频仿制与跨语言制作效率。
+2026-09-23 10:57:00
 
 
 

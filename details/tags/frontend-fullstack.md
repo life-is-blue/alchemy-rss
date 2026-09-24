@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-24 10:09:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-24 16:52:33 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -14,9 +14,7 @@
 
 ### [在-GitHub-Copilot-应用中渲染巨大的拉取请求](https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/)
 
-2026-09-24 02:29:54 | 标签: 编程与工程, 开发者工具, 前端与 Web, 性能优化, 系统设计
-
-> GitHub Copilot 应用需要一个拉取请求视图，即使差异和评审对话变得庞大也能保持快速。团队解释了为何仅代码的虚拟化可通过 all-heights-known-before-paint 契约生效，以及评审线程为何会破坏它，因为评论高度取决于 markdown 换行、可展开详情、回复编辑器增长、图片 和 仅在渲染时才知道的异步资源。为解决此问题，文档高度被拆分为确定性的代码几何 和 评论的独立动态块几何，每个块都锚定到文件/行/侧边 并 对内容变化进行指纹标记。单一的 idle- 和 scroll-gated 测量通道取代了逐块的 ResizeObserver 以避免反馈循环，仅批量测量...
+2026-09-24 02:29:54
 
 
 

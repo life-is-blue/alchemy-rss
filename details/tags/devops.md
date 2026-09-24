@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-24 10:09:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-24 16:52:33 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -650,9 +650,7 @@
 
 ### [模块化边缘计算在多租户-SaaS-云上-Cloudflare-Workers](https://www.infoq.com/articles/modular-edge-computing/)
 
-2026-09-23 17:00:00 | 标签: 编程与工程, SaaS, 平台经济, Cloudflare, 模块化边缘计算
-
-> 本文讨论了在 SaaS 规模下构建模块化边缘计算平台的挑战，其中一个 Cloudflare Worker 拥有每个边缘功能成为部署瓶颈。作者建议通过服务绑定进行的网关和功能工作者分离来解耦团队和爆炸半径无需额外网络跳转。
+2026-09-23 17:00:00
 
 
 
