@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-25 10:26:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-25 17:13:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -524,9 +524,7 @@
 
 ### [发布：datasette-1.0a41](https://simonwillison.net/2026/Sep/24/datasette/)
 
-2026-09-25 03:15:23 | 标签: 编程与工程, 可观测性, 前端与 Web, 开源项目, 开源
-
-> 此次 Datasette 1.0a41（一款开源数据探索与发布工具）的更新重点介绍了两项主要技术改进：集成 OpenTelemetry 以提升可观测性，以及将模态对话框重构为单个且有文档支持的 Web Component，供其他插件使用。
+2026-09-25 03:15:23
 
 
 
@@ -790,9 +788,7 @@
 
 ### [JavaScript-中文周刊-#254---tinyjs：不到-10MB-的-JavaScript-桌面应用构建器](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247549983&idx=1&sn=5a9127590bd8a42ce6b127f97e651a20)
 
-2026-09-24 20:22:00 | 标签: 编程与工程, 前端与 Web, 开发者工具, 开源项目, 性能优化
-
-> 本期 JavaScript 中文周刊 #254 重点介绍了 tinyjs，一个能将 JS 桌面应用体积压缩至 10MB 以内的构建器，并对比了 Electrobun、Perry 等替代方案。技术实战方面，涵盖了利用 OPFS 在浏览器中实现 DuckDB 持久化，以及 Linear 通过重写 ESLint 规则和优化 Vitest 隔离来提升 4 倍测试规模的经验。此外，周刊还关注了 Plotly.js 4 的重大更新、Transformers.js v4.3 的浏览器 AI 能力，以及 TC39 关于 AI 如何改变 JS 设计的讨论。生态动态包括 Turborepo v2.11 的多语言支...
+2026-09-24 20:22:00
 
 
 

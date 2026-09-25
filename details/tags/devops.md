@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-25 10:26:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-25 17:13:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -650,41 +650,31 @@
 
 ### [8-月-27-日-TCRF-DDoS-攻击事后分析-–-Xkeeper's-blog](https://blog.xkeeper.net/the-cutting-room-floor/tcrf-2026-ddos-postmortem/)
 
-2026-09-25 03:46:22 | 标签: 编程与工程, 安全, 系统设计, 云原生 / DevOps, 开发者工具
-
-> 作者记录了 2026 年 8 月 27 日开始针对视频游戏 wiki「The Cutting Room Floor」(TCRF) 的严重 DDoS 攻击。攻击起因于作者禁用了「Claude-code」用户智能体，导致一名 Twitter 用户发起报复性攻击。与典型的机器人驱动的应用层攻击不同，这是一次容量型三层攻击，使服务器的网络连接饱和，迫使托管商 (Linode) 对 IP 进行空路由以保护其他客户。事后分析详细描述了与 Linode 自动化缓解措施的斗争、备份服务器的失效，以及最终尝试使用 Fastly 作为 DDoS 缓解代理，但由于垃圾流量规模巨大，迅速达到了支出限制。
+2026-09-25 03:46:22
 
 
 
 ### [可执行运维规范如何让软件自动化变得可验证](https://www.freecodecamp.org/news/executable-operational-specifications-software-automation/)
 
-2026-09-25 00:08:52 | 标签: 编程与工程, 系统设计, 测试与质量, 可观测性, 云原生 / DevOps
-
-> 作者认为，现代软件自动化经常将脚本的成功执行与运维目标的达成混为一谈。为了解决这个问题，文章引入了「可执行运维规范」——即对运维目标、约束条件和所需证据的机器可读描述，这些描述独立于执行操作的工具。通过将运维意图与执行逻辑分离，组织可以验证系统是否真正满足预期条件（例如副本数、错误率、区域约束），而无需关心执行器是 CI/CD 流水线、IaC 工具还是 AI 智能体。作者提供了一个概念框架和一个简单的 TypeScript 模型，演示如何将来自可观测性工具的观测证据与这些规范进行比对，从而实现对自动化精准且非循环的验证。
+2026-09-25 00:08:52
 
 
 
 ### [在银行中构建协作平台文化](https://www.infoq.com/news/2026/09/collaborative-platform-culture/)
 
-2026-09-24 19:09:00 | 标签: 效率与成长, 技术领导力, 平台经济, 云原生 / DevOps, 系统设计
-
-> 基于在 KubeCon & CloudNativeCon Europe 的演讲，Marcy Paramonova 和 Stéphane Cusin 探讨了在银行环境下转型工程文化。他们认为「文化随结构而生」，这意味着协作文化不能靠强制命令，而必须设计在系统中。通过将基于工单的支持模式替换为用于实时协作的「Genius Bar」、实施 GitOps 以实现自服务能力，以及设立超级用户奖项，他们将组织从依赖文化转变为共同所有权和持续学习的文化。其核心哲学是：平台应作为一种机制来强化期望的行为，即用标准化取代定制化，用透明度取代碎片化的经验知识。
+2026-09-24 19:09:00
 
 
 
 ### [为-AI-智能体构建信任-|-Docker-at-WeAreDevelopers](https://www.docker.com/blog/manufacturing-trust-for-ai-agents-keynote/)
 
-2026-09-24 18:15:05 | 标签: 编程与工程, 安全, 开发者工具, 云原生 / DevOps, 供应链安全
-
-> 本文总结了 Docker 总裁 Mark Cavage 在 WeAreDevelopers 上的主题演讲，重点讨论了自主 AI 智能体面临的安全挑战。Docker 提出将智能体视为「执行者」而非简单的「工作负载」，需要通过 Docker 沙箱（隔离的 microVM）实现强隔离。为了确保一致性和治理，Docker 推出了 Sandbox Kits —— 这是一种符合 OCI 标准的镜像，将智能体的工具和权限规则打包成一个单一的、可版本化的制品。此外，Docker 云端沙箱允许开发者将智能体工作流从本地笔记本电脑无缝迁移到云端，以处理长时间运行或并行任务，同时通过与 CNCF 合作保持供应商中立...
+2026-09-24 18:15:05
 
 
 
 ### [Azure-上的-Elastic-Cloud-获得速度提升：支持-Azure-Cobalt-ARM-计算优化实例](https://www.elastic.co/blog/elastic-cloud-azure-cobalt-arm)
 
-2026-09-24 17:54:08 | 标签: 编程与工程, 云原生 / DevOps, 性能优化, 数据库, 后端开发
-
-> Elastic 为 Azure 上的 Elastic Cloud 引入了全新的 CPU 优化硬件配置，采用了微软基于 Cobalt ARM 的 Dpldsv6 VM 系列。这些实例专门旨在提高索引、聚合以及各种搜索类型（向量、语义、混合搜索）等计算密集型操作的吞吐量和成本效益。此外，本地 NVMe SSD 的使用增强了随机读取性能。本文提供了如何通过 Azure 门户或 Elastic Cloud 控制台，在首批几个 Azure 区域中部署或将现有集群迁移到这些 ARM 配置的指南。
+2026-09-24 17:54:08
 
 
 
