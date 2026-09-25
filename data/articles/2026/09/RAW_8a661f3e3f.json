@@ -1,0 +1,55 @@
+{
+  "id": "RAW_8a661f3e3f",
+  "title": "iOS 开发者为 iPhone Duo 做准备需要对 App 进行哪些调整",
+  "url": "https://www.infoq.com/news/2026/09/apple-iphone-duo-api/",
+  "date": "2026-09-25 03:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>With the upcoming introduction of the foldable iPhone Duo, iOS developers will need to <a href=\"https://developer.apple.com/documentation/technologyoverviews/preparing-your-app-for-iphone-duo\">adapt their apps to ensure they work correctly</a> across the new device's outer display, larger inner display, and partially folded states. Developers will also need to account changes to navigation and toolbars, camera behavior, and new reserved regions.</p>\n   <p>To take full advantage of all the available screen space on iPhone Duo, developers should use Xcode 27.1. Apps built using previous versions of Xcode do not extend beneath the status bar and camera areas.</p>\n   <blockquote>\n    <p>Because iPhone Duo supports multiple screen sizes, layouts, and orientations, your app needs to adapt gracefully across all of them. Check how your app appears on both displays, when closed, open, or partially folded. Rotate iPhone Duo in each pose to see how your apps layout reacts.</p>\n   </blockquote>\n   <p>For an app to work properly on iPhone Duo, developers should avoid relying on fixed iPhone screen dimensions, such as <code>UIScreen.main.bounds</code>. Instead, views should be sized relative to their containers. Apple recommends using standard layout containers, including SwiftUI stacks, navigation, and split views, standard tab bars, and UIKit Auto Layout. This approach ensures that all views adapt automatically to changes in available space, whether the device is using the outer display, the fully open inner display, or a partially folded configuration with camera occlusions.</p>\n   <p>Furthermore, Apple also discourages developers from basing layout decisions on <code>userInterfaceIdiom</code> or <code>UIInterfaceOrientation</code>. Rather, apps should rely on size classes, that is <a href=\"https://developer.apple.com/documentation/uikit/adapting-your-app-when-traits-change\">observing <code>horizontalSizeClass</code> and <code>verticalSizeClass</code> changes</a> to adapt the app UI to different sizes.</p>\n   <p>A major change in the iPhone Duo's UI is the positioning of toolbars and navigation bars, which may appear vertically on the side of the display in some poses. Apps using custom navigation or toolbars created using <code>UIToolbar</code>, <code>UINavigationBar</code>, or <code>UITabBar</code> may not adapt properly. In such cases, Apple recommends using standard navigation and toolbar APIs: adding the <code>toolbar(content:)</code> modifier to a <code>NavigationStack</code> or <code>NavigationSplitView</code> in SwiftUI, and setting toolbar items on a view controller added to a navigation controller in UIKit.</p>\n   <p>As mentioned, iPhone Duo also introduces new <em>reserved regions</em>, which correspond to the screen fold dividing the display into separate areas and to areas where a hardware element, such as the camera, occlude the app's content.</p>\n   <blockquote>\n    <p>While framework-provided views and containers automatically adjust to work around the fold or the front-facing camera on the inner display, your custom views need a flexible approach to identify divisions and occlusions. [...] The inner front-facing camera can block your view when it's active, and the outer front-facing camera always occludes your view.</p>\n   </blockquote>\n   <p>Developers can retrieve all reserved regions using <a href=\"https://developer.apple.com/documentation/swiftui/geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:)\"><code>reservedRegions(kind:options:layoutDirectionBehavior:)</code></a> in SwiftUI and <a href=\"https://developer.apple.com/documentation/uikit/uiview/reservedregions(kind:options:)\"><code>reservedRegions(kind:options:)</code></a>.</p>\n   <p>As a final consideration, developers should account for the fact that iPhone Duo can capture photos and video from the outer display camera, inner display camera, and rear camera. Opening, closing, or rotating the device can change which camera is active. Developers can <a href=\"https://developer.apple.com/documentation/avkit/choosing-a-camera-by-the-direction-it-faces\">select the appropriate camera to use based on the direction it faces</a>.</p>\n   <p>App developer Steve Troughton-Smith reacted critically to Apple's announcement on Mastodon, observing that \"[this is like a whole new platform dropping with a month's lead time]\"(<a href=\"https://mastodon.social/@stroughtonsmith/117242683983898756\">https://mastodon.social/@stroughtonsmith/117242683983898756</a>). This sentiment was echoed by user David, who \"wonder[ed] how many apps will bother to support the Duo in the coming months\".</p>\n   <p>iOS Dev Weekly editor Juan Marin noted that this is <a href=\"https://iosdevweekly.com/issues/767/\">not the first time that iOS developers have faced similar requirements</a>:</p>\n   <blockquote>\n    <p>The trouble with beautiful devices is that they arrive with homework, and the homework is always ours. [...] Each time, Apple had told us years ahead what to do to prepare. Each time, most of us did it afterwards.</p>\n   </blockquote>\n   <p>However, he concedes, it was already known that using \"<code>UIScreen.main.bounds</code> is a bug waiting for a device, and the device has finally turned up\".</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"What iOS Developers Need to Change in their Apps to prepare for the iPhone Duo\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/apple-iphone-duo-api/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790276400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Apple 为 iOS 开发者提供了适配即将推出的折叠屏 iPhone Duo 的指南，重点强调相对布局、Size Classes 以及对预留区域和多摄像头的处理。",
+  "oneSentenceSummary": "Apple 为 iOS 开发者提供了适配即将推出的折叠屏 iPhone Duo 的指南，重点强调相对布局、Size Classes 以及对预留区域和多摄像头的处理。",
+  "summary": "随着折叠屏 iPhone Duo 的推出，Apple 要求 iOS 开发者摒弃固定屏幕尺寸和特定的界面习惯，转而采用相对尺寸和 Size Classes。关键的技术调整包括：使用 Xcode 27.1 以实现正确的屏幕扩展，采用标准布局容器（SwiftUI stacks、Auto Layout），以及利用新 API 来处理由屏幕折痕和摄像头遮挡引起的「预留区域」。该指南还强调了在外部屏、内部屏和后置显示屏之间管理动态摄像头切换的必要性。虽然 Apple 提供了技术路线图，但开发者社区对如此重大的平台转变所给出的短准备时间提出了批评。",
+  "mainPoints": [
+    {
+      "point": "从固定尺寸转向相对布局",
+      "explanation": "开发者必须停止依赖 `UIScreen.main.bounds`，而应使用 SwiftUI stacks 和 UIKit Auto Layout 等相对容器，以确保 App 能够适配 Duo 的各种显示模式和折叠状态。"
+    },
+    {
+      "point": "采用 Size Classes 取代界面习惯",
+      "explanation": "Apple 不建议使用 `userInterfaceIdiom` 或 `UIInterfaceOrientation`，而是建议通过观察 `horizontalSizeClass` 和 `verticalSizeClass` 来处理多样化的屏幕方向和尺寸。"
+    },
+    {
+      "point": "预留区域与遮挡管理",
+      "explanation": "引入了新 API (`reservedRegions`)，帮助开发者识别并避开物理屏幕折痕以及可能遮挡内部和外部显示屏内容的摄像头开孔。"
+    },
+    {
+      "point": "动态摄像头与工具栏适配",
+      "explanation": "App 必须处理可能会切换到垂直位置的工具栏，并在设备打开、关闭或旋转时动态管理摄像头的选择。"
+    }
+  ],
+  "keyQuotes": [
+    "美丽设备的麻烦在于它们在到来时会附带作业，而这份作业永远是我们的。",
+    "使用 `UIScreen.main.bounds` 就像是一个在等待设备的 Bug，而这个设备终于出现了。"
+  ],
+  "tags": [
+    "编程与工程",
+    "移动开发",
+    "UI 设计",
+    "系统设计",
+    "Swift"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 623,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790276400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-25 03:00:00"
+}

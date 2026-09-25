@@ -1,0 +1,46 @@
+{
+  "id": "RAW_ef3670e504",
+  "title": "发布：commit-rewriter 0.2",
+  "url": "https://simonwillison.net/2026/Sep/24/commit-rewriter/",
+  "date": "2026-09-25 04:06:53",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">24th September 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/commit-rewriter/releases/tag/0.2\">commit-rewriter 0.2</a></span> <span class=\"beat-commit\">— Python web app to help rewrite your commit messages</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <p>Support for branches other than the default branch. Use <code>uvx commit-rewriter --branch other</code> to run against another branch. <a href=\"https://github.com/simonw/commit-rewriter/issues/3\">#3</a></p>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4962/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "commit-rewriter 0.2 正式发布，这是一个用于重写 commit 消息的 Python Web 应用，现已增加对非默认分支的支持。",
+  "oneSentenceSummary": "commit-rewriter 0.2 正式发布，这是一个用于重写 commit 消息的 Python Web 应用，现已增加对非默认分支的支持。",
+  "summary": "Simon Willison 发布了 commit-rewriter 0.2 版本。这是一个基于 Python 的 Web 应用程序，旨在帮助用户重写 git commit 消息。该版本的核心更新是增加了对非默认分支的支持，用户可以通过 `uvx` 使用 `--branch` 标志来指定分支。",
+  "mainPoints": [
+    {
+      "point": "发布 commit-rewriter 0.2",
+      "explanation": "该工具是一个 Python Web 应用程序，专门用于帮助开发者重写 commit 消息，以提高清晰度或实现标准化。"
+    },
+    {
+      "point": "扩展分支支持",
+      "explanation": "此次更新引入了通过 `--branch` 命令行参数对非默认分支运行工具的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "「一个帮助重写 commit 消息的 Python Web 应用」"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI 编程",
+    "开源项目",
+    "模型发布",
+    "编程语言"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 79,
+  "wordCount": 35,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790280413000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-25 04:06:53"
+}

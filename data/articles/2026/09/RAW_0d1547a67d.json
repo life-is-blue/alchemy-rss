@@ -1,0 +1,56 @@
+{
+  "id": "RAW_0d1547a67d",
+  "title": "HubSpot 速率限制错误：当 429 阻塞手动邮件处理时",
+  "url": "https://dev.to/elenarevicheva/hubspot-rate-limit-error-when-429-blocks-manual-email-processing-4ipl",
+  "date": "2026-09-25 03:30:13",
+  "author": "Elena Revicheva",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Originally published at <a href=\"https://aideazz.xyz/blog/hubspot-rate-limit-error-when-429-blocks-manual-email-processing\" target=\"_blank\" rel=\"noopener noreferrer\">aideazz.xyz</a> — cross-posted here with canonical link.</p>\n  <p>I hit a <code>429</code> error from HubSpot's API. Specifically, <code>GET /crm/v3/objects/deals/[id]?properties=dealname,dealstage</code> returned <code>{\"status\":\"error\",\"message\":\"You have reached your ten_secondly_rolling limit.\",\"errorType\":\"RATE_LIMIT\",\"correlationId\":\"01a0d4ca-5387-7fd5-a033-8b4b2e91cb88\",\"policyName\":\"TEN_SECONDLY_ROLLING\",\"groupName\":\"publicapi:private_app-api-calls-ten-secondly:39045903:51409153\"}</code>. This isn't just a log entry; it's a production blockage. My <code>hs-watch-manual-emails.log</code> shows this error, preventing the system from fetching deal properties like <code>dealname</code> and <code>dealstage</code>. This directly impacts the processing of manual emails, which are critical for updating deal statuses. With 131 deals currently in the \"They replied\" stage, and 0 closed won, this rate limit is a direct impediment to moving deals forward.</p>\n  <h2><a name=\"the-immediate-impact-of-the-hubspot-rate-limit-error\" href=\"#the-immediate-impact-of-the-hubspot-rate-limit-error\"> </a> The Immediate Impact of the HubSpot Rate Limit Error</h2>\n  <p>The <code>TEN_SECONDLY_ROLLING</code> policy name in the error message indicates a tight window for API calls. My <code>hs-watch-manual-emails.log</code> shows the <code>429</code> status code, meaning too many requests. This isn't a theoretical problem; it's stopping my system from doing its job. The process <code>hs-watch-manual-emails</code> is designed to monitor and process emails that require manual intervention, often involving updating deal properties in HubSpot. When it can't query deal details, it can't correctly categorize or act on those emails. This creates a backlog and delays critical updates for deals.</p>\n  <p>The <code>followup-radar.log</code> shows I'm processing emails from <code>imap.gmail.com</code> (634 inbox / 4 sent) and <code>imap.zoho.com</code> (279 inbox / 30 sent). These are the sources for the manual emails that <code>hs-watch-manual-emails</code> is trying to process. The rate limit directly prevents the system from linking these emails to their respective deals and updating their status.</p>\n  <h2><a name=\"identifying-the-source-of-the-overload\" href=\"#identifying-the-source-of-the-overload\"> </a> Identifying the Source of the Overload</h2>\n  <p>My PM2 process list shows 8 processes online. <code>cto-aipa</code> has 167 restarts in 1 day, and <code>algom-stream</code> has 55193 restarts in 39 days. While these processes are active, the <code>hs-watch-manual-emails</code> process itself is not listed with an excessive restart count, suggesting the issue isn't a crashing process but rather an aggressive calling pattern. The <code>TEN_SECONDLY_ROLLING</code> limit implies that the system is making too many calls within a 10-second window, not necessarily over a longer period.</p>\n  <p>I need to examine the code for <code>hs-watch-manual-emails</code> to see where it's making repeated HubSpot API calls without sufficient backoff or batching. The error message's <code>correlationId</code> (<code>01a0d4ca-5387-7fd5-a033-8b4b2e91cb88</code>) and <code>groupName</code> (<code>publicapi:private_app-api-calls-ten-secondly:39045903:51409153</code>) are specific to this particular rate limit instance, confirming it's a direct API issue.</p>\n  <h2><a name=\"strategies-for-mitigating-hubspot-rate-limits\" href=\"#strategies-for-mitigating-hubspot-rate-limits\"> </a> Strategies for Mitigating HubSpot Rate Limits</h2>\n  <p>To address the HubSpot rate limit error, I have two immediate strategies:</p>\n  <ol>\n   <li>\n    <p><strong>Implement Exponential Backoff and Retry:</strong> When a <code>429</code> is received, the system should not immediately retry. Instead, it needs to wait for an increasing duration before retrying the request. The HubSpot API often includes <code>Retry-After</code> headers, which should be respected. If not present, I'll start with a small delay (e.g., 1 second) and double it with each subsequent retry, up to a reasonable maximum. This prevents hammering the API during a rate-limited period.</p>\n   </li>\n   <li>\n    <p><strong>Batch API Calls and Reduce Frequency:</strong> Instead of fetching deal properties one by one, I need to explore if HubSpot's API supports batch retrieval of deal properties for multiple IDs. If so, I can collect a list of deal IDs from the manual emails and make a single, batched request. If batching isn't an option, I'll need to introduce explicit delays between individual API calls to stay under the <code>TEN_SECONDLY_ROLLING</code> limit. This might mean processing fewer emails per second, but it ensures successful processing rather than constant failure.</p>\n   </li>\n  </ol>\n  <p>The <code>NOW.md</code> file, which serves as working memory for my disconnected AI agents (Cursor Cloud, Cursor Desktop, and Claude Code), highlights the challenge of shared context. While it doesn't directly solve the rate limit, it's a reminder that any solution needs to be clearly documented and understood across these fragmented tools.</p>\n  <h2><a name=\"monitoring-and-verification\" href=\"#monitoring-and-verification\"> </a> Monitoring and Verification</h2>\n  <p>After implementing changes, I will monitor <code>hs-watch-manual-emails.log</code> closely for the <code>429</code> errors. The goal is to see these errors disappear and observe successful <code>GET /crm/v3/objects/deals/[id]?properties=dealname,dealstage</code> calls. I'll also track the number of deals in the \"They replied\" stage (currently 131) to ensure they are being processed and moved forward.</p>\n  <p>My <code>concierge-selftest.log</code> shows <code>✅ PASS — 4 checks, 4432ms to first card</code>, indicating other parts of the system are functioning. This confirms that the <code>hs-watch-manual-emails</code> process is the specific bottleneck here, not a broader system failure. The <code>cita-sort.log</code> shows <code>cita-sort OK — 0 card(s) repositioned across 3 board(s)</code> hourly, which is unrelated to the HubSpot issue but confirms other scheduled tasks are running.</p>\n  <p>The <code>wiki-ship.log</code> shows <code>error: failed to push some refs to 'https://github.com/ElenaRevicheva/aideazz.git'</code>, which is a separate issue related to Git synchronization, but it's a reminder that production systems have multiple points of failure. For now, the HubSpot rate limit is the priority.</p>\n  <h2><a name=\"frequently-asked-questions\" href=\"#frequently-asked-questions\"> </a> Frequently Asked Questions</h2>\n  <p><strong>Q: How do you determine the optimal delay for exponential backoff without a <code>Retry-After</code> header?</strong>\n   <br>\n   A: I start with a 1-second delay, doubling it for each subsequent retry (e.g., 1s, 2s, 4s, 8s). I cap this at a reasonable maximum, typically 30 seconds, to prevent indefinite blocking.</p>\n  <p><strong>Q: Does HubSpot provide specific guidance on their <code>TEN_SECONDLY_ROLLING</code> limit?</strong>\n   <br>\n   A: The error message itself (<code>policyName\":\"TEN_SECONDLY_ROLLING\"</code>) is the primary indicator. I do not have specific documentation from HubSpot measured in my logs beyond this error.</p>\n  <p><strong>Q: How do you ensure that multiple AI agents don't independently hit the same rate limit?</strong>\n   <br>\n   A: This is a challenge with fragmented agents. My <code>NOW.md</code> file is the shared memory. Any solution for rate limiting must be explicitly documented there, and ideally, a centralized queue or token bucket mechanism would be implemented to serialize HubSpot API calls across agents. I do not have that measured yet.</p>\n  <p><strong>Q: What's the impact of this rate limit on your deal conversion?</strong>\n   <br>\n   A: With 131 deals in \"They replied\" and 0 \"closed won\" deals, the inability to update deal properties due to the rate limit directly hinders the progression of these deals through the pipeline. It creates a manual bottleneck where the system should be automated.</p>\n  <p>— Elena Revicheva · <a href=\"https://aideazz.xyz\" target=\"_blank\" rel=\"noopener noreferrer\">AIdeazz</a> · <a href=\"https://aideazz.xyz/portfolio\" target=\"_blank\" rel=\"noopener noreferrer\">Portfolio</a></p>\n </body>\n</html>",
+  "aiSummary": "作者探讨了影响手动邮件处理系统的 HubSpot API 429 速率限制问题，并提出了指数退避和批处理的解决方案。",
+  "oneSentenceSummary": "作者探讨了影响手动邮件处理系统的 HubSpot API 429 速率限制问题，并提出了指数退避和批处理的解决方案。",
+  "summary": "本文详细描述了一项生产环境技术问题：该服务（hs-watch-manual-emails）触发了 HubSpot API 的「TEN_SECONDLY_ROLLING」 速率限制。这一瓶颈阻止了「They replied」阶段 131 笔交易的更新。作者概述了两种主要的缓解策略：实现针对「Retry-After」 标头的指数退避机制，以及转为批处理以减少请求总数。",
+  "mainPoints": [
+    {
+      "point": "识别 429 速率限制错误",
+      "explanation": "系统在尝试通过 HubSpot API 获取交易属性（dealname， dealstage）时遇到了「TEN_SECONDLY_ROLLING」 限制。"
+    },
+    {
+      "point": "对 HubSpot 逻辑的影响",
+      "explanation": "速率限制阻止了「They replied」阶段的 131 笔交易，导致其无法移动到「closed won」状态。"
+    },
+    {
+      "point": "策略 1：指数退避",
+      "explanation": "提议的修复方案包括在遇到 429 错误后增加等待时长，特别是在可用时遵循「Retry-After」 标头的指示。"
+    },
+    {
+      "point": "策略 2：批处理",
+      "explanation": "建议从单次请求转为批处理调用，以降低请求频率并保持在 API 限制之内。"
+    }
+  ],
+  "keyQuotes": [
+    "您已达到 ten_secondly_rolling 限制。",
+    "这不仅仅是一条日志记录；它是生产环境的阻塞。",
+    "速率限制直接阻止了系统将这些邮件与其相应的交易关联。"
+  ],
+  "tags": [
+    "编程与工程",
+    "后端开发",
+    "系统设计",
+    "API 设计",
+    "速率限制"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 80,
+  "wordCount": 966,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790278213000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-25 03:30:13"
+}
