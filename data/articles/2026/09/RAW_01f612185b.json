@@ -1,0 +1,48 @@
+{
+  "id": "RAW_01f612185b",
+  "title": "从数据到对话：S&P Global Energy 如何利用 Databricks Genie Agents 与 MCP 构建对话式结构化数据资产",
+  "url": "https://www.databricks.com/blog/data-dialogue-how-sp-global-energy-made-its-structured-data-estate-conversational-databricks",
+  "date": "2026-09-26 00:00:00",
+  "author": "Debaprasad Satapathy, Eric Henderson",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>• Domain experts curate focused Genie Agents per dataset group without writing agent code, establishing a governed semantic layer.\n   <br>\n   • Genie Agents act as managed MCP servers that are composed via a FastMCP proxy into composite endpoints for cross-domain queries.\n   <br>\n   • This architecture significantly shortened time-to-market for conversational data products while preserving Unity Catalog governance.</p>\n </body>\n</html>",
+  "aiSummary": "S&P Global Energy 利用 Databricks Genie Agents 和 MCP 构建了一个受治理的对话式数据资产，使领域专家无需编写代码即可构建语义层。",
+  "oneSentenceSummary": "S&P Global Energy 利用 Databricks Genie Agents 和 MCP 构建了一个受治理的对话式数据资产，使领域专家无需编写代码即可构建语义层。",
+  "summary": "本文概述了 S&P Global Energy 如何使用 Databricks Genie Agents 将其结构化数据转化为对话式界面。通过允许领域专家为每个数据集组策划特定的智能体而无需编写代码，该公司建立了一个受治理的语义层。这些智能体作为托管的 Model Context Protocol (MCP) 服务器运行，并通过 FastMCP 代理进行组合，以支持跨领域查询。该架构在保持 Unity Catalog 严格治理的同时，加速了数据产品的上市时间。",
+  "mainPoints": [
+    {
+      "point": "领域专家可无代码创建语义层",
+      "explanation": "领域专家可以直接为特定的数据集组策划专注的 Genie Agents，消除了传统的智能体编码需求，并建立了一个受治理的语义层。"
+    },
+    {
+      "point": "基于 MCP 服务器的模块化架构",
+      "explanation": "Genie Agents 作为托管的 MCP 服务器运行，通过 FastMCP 代理进行组合，从而能够通过复合端点实现复杂的跨领域查询。"
+    },
+    {
+      "point": "在保持治理的同时加速交付",
+      "explanation": "这种方法显著缩短了对话式数据产品的上市时间，同时通过 Unity Catalog 治理确保了合规性和安全性。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "MCP协议",
+    "数据工程",
+    "RAG / 检索增强"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 55,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790352000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-26 00:00:00"
+}

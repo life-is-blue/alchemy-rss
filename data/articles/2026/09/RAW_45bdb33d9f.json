@@ -1,0 +1,52 @@
+{
+  "id": "RAW_45bdb33d9f",
+  "title": "GitHub Copilot 应用入门：如何使用 Canvases 构建自定义工作流",
+  "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+  "date": "2026-09-26 02:00:00",
+  "author": "Kayla Cinnamon",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">Most tools give you a fixed set of screens and ask you to fit your work into them. But what if you could start with the workflow you want instead and have the interface take shape around it?</p>\n  <p class=\"wp-block-paragraph\">That’s the idea behind <a href=\"https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions\">canvases in the GitHub Copilot app</a>. A canvas, also called a canvas extension, is a customizable interface that you and the agent share. It can be a kanban board, an issue triage board, a release checklist, a dashboard, a form, or even a spreadsheet: a UI shaped to how you work.</p>\n  <p class=\"wp-block-paragraph\">Because the canvas is bidirectional, the agent can update it as it works, and you can use buttons, cards, filters, and other controls to make changes too. Just like using a live shared whiteboard.</p>\n  <p class=\"wp-block-paragraph\">Let’s create one.</p>\n  <h2 id=\"h-creating-a-canvas-with-create-canvas\" class=\"wp-block-heading\">Creating a canvas with /create-canvas</h2>\n  <p class=\"wp-block-paragraph\">To create a canvas, you don’t have to do any coding or design by hand. Just open an agent session, enter the <code>/create-canvas</code> <a href=\"https://docs.github.com/en/copilot/reference/github-copilot-app-reference/built-in-skills\">skill</a>, and describe what you want in plain English.</p>\n  <p class=\"wp-block-paragraph\">Make sure your prompt covers three things:</p>\n  <ul class=\"wp-block-list\">\n   <li>The workflow the canvas should support.</li>\n   <li>What you should be able to do in the interface.</li>\n   <li>What the agent should be able to do.</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">For example, you could enter:</p>\n  <div class=\"wp-block-code-wrapper\">\n   <pre class=\"wp-block-code language-plaintext\"><code>/create-canvas Create a release notes canvas for tracking new feature work completed across GitHub Copilot app sessions. Include controls for reviewing and organizing entries and allow the agent to add and update them.</code></pre>\n   <clipboard-copy aria-label=\"Copy\" class=\"code-copy-btn\" data-copy-feedback=\"Copied!\" value=\"/create-canvas Create a release notes canvas for tracking new feature work completed across GitHub Copilot app sessions. Include controls for reviewing and organizing entries and allow the agent to add and update them.\" tabindex=\"0\" role=\"button\"></clipboard-copy>\n  </div>\n  <p class=\"wp-block-paragraph\">Then, the agent will build the interface and open it in the right-side panel without you having to write files or mess with the layout. One description becomes a custom tool that’s ready to use.</p>\n  <h2 id=\"h-shaping-the-canvas-around-your-workflow\" class=\"wp-block-heading\">Shaping the canvas around your workflow</h2>\n  <p class=\"wp-block-paragraph\">Because the interface is generated from your description, your first version is just a starting point, and you can keep refining until you’re happy.</p>\n  <p class=\"wp-block-paragraph\">You could ask the agent to add a column or filter, pull in your open pull requests, or turn the entire canvas into a checklist for your day. The agent will revise the canvas to match. While there isn’t a fixed menu of layouts, if you can describe a workflow, you can likely turn it into a canvas.</p>\n  <p class=\"wp-block-paragraph\">Once created, your canvas is saved as an extension, so you can use it again. You can keep it with the project for your team to share or save it as a personal extension just for you.</p>\n  <h2 id=\"h-instant-collaboration-not-command-and-wait\" class=\"wp-block-heading\">Instant collaboration, not command and wait</h2>\n  <p class=\"wp-block-paragraph\">The real power of a canvas is that you and the agent can both keep working at the same time.</p>\n  <p class=\"wp-block-paragraph\">When you click a button, update a field, or move a card, the canvas’ shared state changes immediately. The agent sees the same update without a separate send or sync step.</p>\n  <p class=\"wp-block-paragraph\">It works the other way, too. You can ask the agent to use the canvas’ own capabilities—the same actions available to you—to add a release note or move a card, then watch that change appear in the interface. Instead of sending a command and waiting for a response, you’re steering the work together.</p>\n  <h2 id=\"h-take-this-with-you\" class=\"wp-block-heading\">Take this with you</h2>\n  <p class=\"wp-block-paragraph\">Creating a useful canvas starts with three simple questions:</p>\n  <ul class=\"wp-block-list\">\n   <li>What information do I want to see?</li>\n   <li>What do I want to change directly?</li>\n   <li>What should the agent be able to update or do?</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Not sure where to begin? The community has shared ready-made <a href=\"https://awesome-copilot.github.com/extensions/\">canvas extensions through Awesome Copilot</a>, including release notes tools, kanban boards, issue triage workflows, and more. Install one that’s close to what you need, then ask the agent to customize it for your workflow in the same way you would refine a canvas you created yourself.</p>\n  <p class=\"wp-block-paragraph\">Start small: open a session, run <code>/create-canvas</code>, and describe a simple board or checklist for something you’re working on now.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub Copilot 应用推出「Canvases」功能，用户可通过自然语言提示生成自定义的双向 UI（如看板或仪表盘），实现用户与 AI 智能体的实时协作。",
+  "oneSentenceSummary": "GitHub Copilot 应用推出「Canvases」功能，用户可通过自然语言提示生成自定义的双向 UI（如看板或仪表盘），实现用户与 AI 智能体的实时协作。",
+  "summary": "文章介绍如何在 GitHub Copilot 应用中使用「Canvases」创建自定义工作流。与固定界面不同，Canvases 通过描述期望的工作流、用户操作和智能体能力，使用 `/create-canvas` 技能生成。这些界面是双向的：用户可与控件（按钮、筛选器）交互，智能体可实时更新状态，无需单独同步步骤。Canvases 可保存为扩展供个人或团队复用。文章强调从简单开始，通过对话迭代优化，并利用 Awesome Copilot 社区模板。",
+  "mainPoints": [
+    {
+      "point": "自然语言生成界面",
+      "explanation": "用户无需手动编码或设计；只需使用 `/create-canvas` 技能用自然语言描述工作流、用户操作和智能体能力，智能体即可生成对应的 UI。"
+    },
+    {
+      "point": "双向实时协作",
+      "explanation": "Canvases 如同共享白板，用户和智能体可同时修改状态。任一方的更改即时反映，无需显式发送/同步命令。"
+    },
+    {
+      "point": "迭代优化与复用",
+      "explanation": "初始 Canvases 为起点，可通过进一步提示（如添加列或筛选器）优化。定型后可保存为扩展供个人使用或团队共享。"
+    }
+  ],
+  "keyQuotes": [
+    "大多数工具提供一组固定的界面，让你将工作塞进去。但如果你能从想要的工作流出发，让界面围绕它成型，会怎样？",
+    "因为 Canvas 是双向的，智能体在工作时可更新它，你也能用按钮、卡片、筛选器等控件进行更改。",
+    "你不再是发送命令等待响应，而是共同驾驭工作。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "UI 设计",
+    "代码助手",
+    "AI Agent",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 80,
+  "wordCount": 619,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790359200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-26 02:00:00"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-26 06:58:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-26 10:30:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -786,6 +786,22 @@
 
 
 
+### [通过交付更多-CSS-提升站点性能](https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/)
+
+2026-09-25 23:00:00 | 标签: 编程与工程, 前端与 Web, 性能优化, 开发者工具, 系统设计
+
+> 面对 2023 年组件数量激增导致的 CSS-in-JS（特别是 styled-components）性能瓶颈，GitHub 的 Primer 团队启动了向 CSS Modules 的迁移。该策略采用增量更新方式，通过特性开关和视觉回归测试加以保护，确保迁移过程中零故障。一个主要障碍是 `sx` prop 在行内样式中的广泛使用；GitHub 通过创建包装组件（`@primer/styled-react`）来解决这一问题，在迁移底层样式的同时保持兼容性。该过程利用自定义 VS Code 插件和 codemod 实现自动化，后来借助 Copilot 编程智能体加速清理剩余积压工作。到 2026 ...
+
+
+
+### [Grafana-将-Cypress-测试结果转化为持久化可观测性数据](https://www.infoq.com/news/2026/09/grafana-cypress-observability/)
+
+2026-09-25 20:00:00 | 标签: 编程与工程, 测试与质量, 可观测性, 云原生 / DevOps, React
+
+> 本文详细介绍了 Grafana Labs 的一种实用方法，用于将 Cypress 测试套件与 Grafana Cloud 集成，以实现持久化可观测性。通过利用 Cypress 的生命周期钩子（before:run、after:spec），测试结果被转换为 Prometheus 指标。这些指标被推送到 Prometheus Pushgateway——这是必要的，因为测试作业是短期的——然后由 Grafana Alloy 抓取并存储在 Grafana Cloud 中。这种设置允许工程团队可视化历史数据、跟踪不稳定测试、监控执行时间退化，并关联测试失败与特定的 CI 运行或部署。该方法将测试遥测视为...
+
+
+
 ### [JavaScript-中文周刊-#254---tinyjs：不到-10MB-的-JavaScript-桌面应用构建器](https://mp.weixin.qq.com/s?__biz=MzIzOTkwMjM0OQ==&mid=2247549983&idx=1&sn=5a9127590bd8a42ce6b127f97e651a20)
 
 2026-09-24 20:22:00
@@ -960,7 +976,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -972,7 +988,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2250,13 +2266,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2406,13 +2422,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3906,13 +3922,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5616,13 +5632,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
