@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-26 10:30:25 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-26 16:57:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -650,9 +650,7 @@
 
 ### [Perplexity-自研-CobbleDB-取代-DynamoDB，查询延迟降低-5-倍并削减云存储成本](https://www.infoq.com/news/2026/09/cobbledb-perplexity/)
 
-2026-09-25 22:14:00 | 标签: 编程与工程, 云原生 / DevOps, 性能优化, 系统设计, 数据库
-
-> Perplexity 将其核心搜索服务层从 Amazon DynamoDB 迁移至 CobbleDB——一个内部开发的、用 Rust 编写的分布式键值存储。这一转变源于 AI 答案引擎独特的读取模式：它们需要获取多 KB 级别的文档批次（平均 50KB）作为 LLM 上下文，这导致 AWS 数据传输成本难以为继，并在高流量下出现不透明的尾延迟尖峰。为解决这一问题，Perplexity 将持久化存储（Pillar）、批次聚合（Lorry）和低延迟服务（CobbleDB）解耦。CobbleDB 利用 RocksDB、NVMe SSD 和投机对冲来优化批量查找，容忍轻微的复制延迟以最大化吞吐量。生产...
+2026-09-25 22:14:00
 
 
 

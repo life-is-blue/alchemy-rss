@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-26 10:30:25 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-26 16:57:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -788,17 +788,13 @@
 
 ### [通过交付更多-CSS-提升站点性能](https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/)
 
-2026-09-25 23:00:00 | 标签: 编程与工程, 前端与 Web, 性能优化, 开发者工具, 系统设计
-
-> 面对 2023 年组件数量激增导致的 CSS-in-JS（特别是 styled-components）性能瓶颈，GitHub 的 Primer 团队启动了向 CSS Modules 的迁移。该策略采用增量更新方式，通过特性开关和视觉回归测试加以保护，确保迁移过程中零故障。一个主要障碍是 `sx` prop 在行内样式中的广泛使用；GitHub 通过创建包装组件（`@primer/styled-react`）来解决这一问题，在迁移底层样式的同时保持兼容性。该过程利用自定义 VS Code 插件和 codemod 实现自动化，后来借助 Copilot 编程智能体加速清理剩余积压工作。到 2026 ...
+2026-09-25 23:00:00
 
 
 
 ### [Grafana-将-Cypress-测试结果转化为持久化可观测性数据](https://www.infoq.com/news/2026/09/grafana-cypress-observability/)
 
-2026-09-25 20:00:00 | 标签: 编程与工程, 测试与质量, 可观测性, 云原生 / DevOps, React
-
-> 本文详细介绍了 Grafana Labs 的一种实用方法，用于将 Cypress 测试套件与 Grafana Cloud 集成，以实现持久化可观测性。通过利用 Cypress 的生命周期钩子（before:run、after:spec），测试结果被转换为 Prometheus 指标。这些指标被推送到 Prometheus Pushgateway——这是必要的，因为测试作业是短期的——然后由 Grafana Alloy 抓取并存储在 Grafana Cloud 中。这种设置允许工程团队可视化历史数据、跟踪不稳定测试、监控执行时间退化，并关联测试失败与特定的 CI 运行或部署。该方法将测试遥测视为...
+2026-09-25 20:00:00
 
 
 
