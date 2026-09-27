@@ -1,0 +1,57 @@
+{
+  "id": "RAW_a55a6b5d7e",
+  "title": "盲听作曲对决 · Note Duel",
+  "url": "https://www.noteduel.com/",
+  "date": "2026-09-26 21:28:24",
+  "author": "crimsoneer",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <main>\n   <section class=\"hero\">\n    <div class=\"hero-copy\">\n     <p class=\"kicker\">A blind listening study of AI-composed music</p>\n     <h1>Two pieces. One brief. <em>You</em> decide.</h1>\n     <p class=\"lede\">Hear two compositions written for the same brief, labelled only <span class=\"chip chip-a\">A</span> and <span class=\"nowrap\"><span class=\"chip chip-b\">B</span>.</span> Pick the better music. Then we show you who wrote what, and how everyone else voted.</p>\n     <div class=\"cta-row\">\n      <a class=\"btn btn-primary btn-lg\" href=\"https://www.noteduel.com/duel/d-ff97dbf114054ee88764\">Start a duel </a> <a class=\"btn btn-ghost btn-lg\" href=\"https://www.noteduel.com/rankings\">Rankings</a>\n     </div>\n     <p class=\"hint\">About a minute per duel · no sign-up · headphones help</p>\n    </div>\n   </section>\n   <section class=\"stats\" aria-label=\"Study so far\">\n    <div class=\"stat\">\n     <span class=\"stat-n\">21</span><span class=\"stat-l\">votes cast</span>\n    </div>\n    <div class=\"stat\">\n     <span class=\"stat-n\">15</span><span class=\"stat-l\">full-listen votes</span>\n    </div>\n    <div class=\"stat\">\n     <span class=\"stat-n\">5</span><span class=\"stat-l\">listeners</span>\n    </div>\n    <div class=\"stat\">\n     <span class=\"stat-n\">0<small>/76</small></span><span class=\"stat-l\">duels you've judged</span>\n    </div>\n   </section>\n   <section class=\"steps-intro\">\n    <h2 class=\"section-title\">How a duel works</h2>\n    <ol class=\"how\">\n     <li><span class=\"how-n\">1</span>\n      <h3>Listen blind</h3>\n      <p>Both pieces play through the same engraver and synthesizer at matched loudness. Sides are shuffled for every listener.</p></li>\n     <li><span class=\"how-n\">2</span>\n      <h3>Vote</h3>\n      <p>A, B, tie, or neither. Add why if you like. Hearing both in full makes your vote count in the headline standings.</p></li>\n     <li><span class=\"how-n\">3</span>\n      <h3>Reveal</h3>\n      <p>See which piece was which, whether it met the brief, and how the crowd split.</p></li>\n    </ol>\n   </section>\n   <section>\n    <h2 class=\"section-title\">Pick a brief</h2>\n    <p class=\"meta section-sub\">Every model answered the same 5 briefs. Choose one, or press <em>Start a duel</em> and we'll pick the pairing that needs votes most.</p>\n    <ul class=\"brief-list\">\n     <li><a class=\"brief-pick \" href=\"https://www.noteduel.com/next?brief=minuet-g-major\"> <span class=\"duel-title\">Minuet in G major</span> <span class=\"meta\">Piano · G major · 3/4 · 16 bars</span> <span class=\"brief-summary\">Write a graceful minuet for solo piano in the galant style.</span> <span class=\"brief-progress\" aria-label=\"0 of 15 pairings judged\"> <span class=\"bp-bar\"><span style=\"width: 0.0%\"></span></span> <span class=\"bp-n\">0/15 judged</span> </span> <span class=\"duel-go\">Listen </span> </a></li>\n     <li><a class=\"brief-pick \" href=\"https://www.noteduel.com/next?brief=invention-d-minor\"> <span class=\"duel-title\">Two-voice invention in D minor</span> <span class=\"meta\">Piano · D minor · 4/4 · 12 bars</span> <span class=\"brief-summary\">Write a two-voice invention for piano in the manner of Bach.</span> <span class=\"brief-progress\" aria-label=\"0 of 21 pairings judged\"> <span class=\"bp-bar\"><span style=\"width: 0.0%\"></span></span> <span class=\"bp-n\">0/21 judged</span> </span> <span class=\"duel-go\">Listen </span> </a></li>\n     <li><a class=\"brief-pick \" href=\"https://www.noteduel.com/next?brief=nocturne-e-flat\"> <span class=\"duel-title\">Nocturne in E-flat major</span> <span class=\"meta\">Piano · E-flat major · 4/4 · 8 bars</span> <span class=\"brief-summary\">Write a short romantic nocturne for piano.</span> <span class=\"brief-progress\" aria-label=\"0 of 15 pairings judged\"> <span class=\"bp-bar\"><span style=\"width: 0.0%\"></span></span> <span class=\"bp-n\">0/15 judged</span> </span> <span class=\"duel-go\">Listen </span> </a></li>\n     <li><a class=\"brief-pick \" href=\"https://www.noteduel.com/next?brief=march-c-major\"> <span class=\"duel-title\">Toy soldier march in C major</span> <span class=\"meta\">Piano · C major · 2/4 · 16 bars</span> <span class=\"brief-summary\">Write a bright, witty march for piano.</span> <span class=\"brief-progress\" aria-label=\"0 of 15 pairings judged\"> <span class=\"bp-bar\"><span style=\"width: 0.0%\"></span></span> <span class=\"bp-n\">0/15 judged</span> </span> <span class=\"duel-go\">Listen </span> </a></li>\n     <li><a class=\"brief-pick \" href=\"https://www.noteduel.com/next?brief=modal-5-4\"> <span class=\"duel-title\">Modal miniature in D Dorian, 5/4</span> <span class=\"meta\">Piano · D Dorian · 5/4 · 8 bars</span> <span class=\"brief-summary\">Write a contemporary miniature for piano in D Dorian and 5/4 time.</span> <span class=\"brief-progress\" aria-label=\"0 of 10 pairings judged\"> <span class=\"bp-bar\"><span style=\"width: 0.0%\"></span></span> <span class=\"bp-n\">0/10 judged</span> </span> <span class=\"duel-go\">Listen </span> </a></li>\n    </ul>\n   </section>\n   <section id=\"method\" class=\"method\">\n    <h2 class=\"section-title\">Built to be fair</h2>\n    <div class=\"method-grid\">\n     <div>\n      <h3>Blind &amp; shuffled</h3>\n      <p>Titles and sources stay hidden until you vote. Each listener gets a random A/B placement, fixed on reload.</p>\n     </div>\n     <div>\n      <h3>Same instrument, same volume</h3>\n      <p>Every score is engraved and synthesized by one pipeline and loudness-matched, so production can't win the vote.</p>\n     </div>\n     <div>\n      <h3>Full listens count</h3>\n      <p>A vote counts as a full listen only if you heard at least 90% of both pieces. Partial listens are kept, but apart.</p>\n     </div>\n     <div>\n      <h3>Uncertainty, always</h3>\n      <p>Rankings use a Bradley–Terry model with 95% bootstrap intervals and rank ranges, and stay provisional under 30 judgments.</p>\n     </div>\n     <div>\n      <h3>Per-task results</h3>\n      <p>Every brief's head-to-head is published on its own, so one overall number never hides where a piece won.</p>\n     </div>\n     <div>\n      <h3>Neither ≠ tie</h3>\n      <p>“Both equal” and “neither is good” are different answers. Rejections are reported separately rather than mixed into the ranking.</p>\n     </div>\n    </div>\n   </section>\n  </main>\n </body>\n</html>",
+  "aiSummary": "Note Duel 是一个盲听平台，用户通过对 AI 生成的音乐作品进行投票，从而生成公平且统计严谨的模型性能排名。",
+  "oneSentenceSummary": "Note Duel 是一个盲听平台，用户通过对 AI 生成的音乐作品进行投票，从而生成公平且统计严谨的模型性能排名。",
+  "summary": "Note Duel 提供了一个结构化环境，通过盲听作曲对决来评估 AI 生成的音乐。用户在不知晓哪首作品由哪个模型生成的情况下，聆听基于同一创作简报（例如「G 大调小步舞曲」）生成的两首作品，然后投票选出更好的作品或表示平局/拒绝评价。该平台通过使用单一合成流程和响度匹配来消除制作质量偏差，从而确保公平性。排名采用 Bradley-Terry 模型结合 Bootstrap 置信区间得出，并要求完整收听才能计入主要投票。目前，它追踪多个模型在七个特定音乐简报上的表现，提供按任务划分的结果，而非单一的聚合分数。",
+  "mainPoints": [
+    {
+      "point": "盲测评估消除了 AI 音乐评估中的来源偏见。",
+      "explanation": "通过在投票前隐藏模型身份并随机化 A/B 位置，该平台防止用户对特定模型的先入之见影响其偏好选择。"
+    },
+    {
+      "point": "标准化合成流程以控制制作质量变量。",
+      "explanation": "所有作品均通过相同的制谱器和合成器渲染，并进行响度匹配，确保投票反映的是音乐本身的优劣，而非音频工程方面的差异。"
+    },
+    {
+      "point": "通过 Bradley-Terry 建模和完整收听要求实现统计严谨性。",
+      "explanation": "排名使用带有 95% Bootstrap 区间的概率模型，且仅统计用户至少收听了每首作品 90% 内容的投票，从而减少随意点击带来的噪音。"
+    },
+    {
+      "point": "提供细粒度的任务特定洞察，而非聚合分数。",
+      "explanation": "结果按具体简报发布（例如巴赫风格创意曲 vs. 浪漫主义夜曲），让用户能够看到特定模型在哪些领域表现出色或失败，而不是依赖单一的总体排名。"
+    }
+  ],
+  "keyQuotes": [
+    "聆听为同一简报创作的两首作品，仅标记为 A 和 B。选出更好的音乐。",
+    "每个乐谱均由单一流程制谱、合成并进行响度匹配，因此制作质量无法左右投票结果。",
+    "排名采用带有 95% Bootstrap 区间和排名范围的 Bradley-Terry 模型，且在判断少于 30 次时保持暂定状态。",
+    "「两者相等」和「两者都不好」是不同的答案。拒绝评价会被单独报告，而不是混入排名中。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "音乐文化",
+    "数据科学",
+    "AI 产品与应用",
+    "模型评测与基准"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 78,
+  "wordCount": 424,
+  "domain": "noteduel.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790429304000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-26 21:28:24"
+}

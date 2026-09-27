@@ -1,0 +1,52 @@
+{
+  "id": "RAW_7fe426d5d8",
+  "title": "Copilot 在组织架构中占据一席之地",
+  "url": "https://every.to/p/copilot-gets-a-seat-in-the-org-chart",
+  "date": "2026-09-26 22:11:23",
+  "author": "Ryan Sloan",
+  "siteName": "Every",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>If you’ve followed </em><strong><em>Mike Taylor</em></strong><em>’s coverage of Microsoft, you know the scale of what the company has been assembling: 80 products called “Copilot” at last count—powerful when configured correctly and locked down without a cooperative IT department. </em><strong><em>Ryan Sloan</em></strong><em> attended Microsoft’s latest launch to test the new unified Copilot app, which rolls chat, code, Office, and a persistent agent called Autopilot into one interface. He found that the controls that make Copilot trustworthy inside a big company are the same ones that keep it from finishing a routine task. Read on for his dispatch from Redmond.—Kate Lee</em></p>\n  <p><em>Was this newsletter forwarded to you? <u>Sign up</u> to get it in your inbox.</em></p>\n  <p></p>\n  <hr class=\"quill-line\">\n  <p></p>\n  <p>In August, <strong><u>Mike Taylor</u></strong><u> counted</u> 80 Microsoft products called “Copilot.” Among them, he said, were some of the best tools for building agents—if you could navigate onboarding and enterprise IT administration.</p>\n  <p>On Wednesday, at a launch event in Redmond where I spoke with executives and briefly tried the app on the demo floor, Microsoft announced a new Copilot that combines chat, code, Office, and a persistent agent called Autopilot, replacing its separate consumer and work chat apps. Microsoft <u>isn’t alone in attempting a unified interface for AI work</u>, but its advantage is that the people it’s built for already spend their day in Outlook and Teams, with permissions their IT department set years ago.</p>\n  <p class=\"\">Autopilot may be the most interesting piece of the new Copilot: It can work on its own and access most of what you can. Those permissions could make it useful and trustworthy inside a company, but they could also prevent it from completing an ordinary task. Microsoft’s own emphasis on evaluations (evals) at the launch event suggests that it is looking to its customers to define what good work looks like in their organizations and test whether Autopilot improves on current workflows.</p>\n  <div class=\"ea-block normal\">\n   <div class=\"ea-block-inner\" data-advertisement-id=\"1277\">\n    <div class=\"quill-block-image\" id=\"quill-block-image-1789393547245\" data-source=\"{&quot;dom_id&quot;:&quot;quill-block-image-1789393547245&quot;,&quot;link&quot;:&quot;https://every.to/builder-pack?utm_source=email&amp;utm_campaign=bau&amp;utm_content=every-260925-notion&quot;,&quot;image&quot;:&quot;https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg&quot;,&quot;caption&quot;:null,&quot;error&quot;:null}\">\n     <div>\n      <a href=\"https://every.to/builder-pack?utm_source=email&amp;utm_campaign=bau&amp;utm_content=every-260925-notion\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg\" alt=\"Uploaded image\" srcset=\"https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg 640w, https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg 750w, https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg 828w, https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg 1080w, https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg 1200w, https://d24ovhgu8s7341.cloudfront.net/uploads/editor/advertisements/1277/optimized_262d0f30-b697-4694-84bd-dd3f5c44cf60.jpg 1920w\" sizes=\"(max-width: 976px) 100vw, 700px\" loading=\"lazy\" decoding=\"async\"></a>\n     </div>\n    </div>\n   </div>\n   <div class=\"ea-block-footer\">\n    <a href=\"https://every.to/cdn-cgi/l/email-protection#8ffcffe0e1fce0fdfce7e6fffccfeaf9eafdf6a1fbe0\">Want to sponsor Every? Click here</a><span>.</span>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "微软新的统一 Copilot 应用整合了聊天、代码和 Autopilot 智能体，但其企业级安全控制可能会阻碍常规任务的完成。",
+  "oneSentenceSummary": "微软新的统一 Copilot 应用整合了聊天、代码和 Autopilot 智能体，但其企业级安全控制可能会阻碍常规任务的完成。",
+  "summary": "Ryan Sloan 从微软的发布会现场报道了一款新的统一 Copilot 应用程序，该应用整合了聊天、编码、Office 工具以及一个名为 Autopilot 的持久化智能体。此举旨在利用 Outlook 和 Teams 现有的权限基础设施，取代此前独立的消费者版和工作版应用。虽然这种集成有望在大型组织内部实现可信 AI 部署，但出于安全考虑所需的严格 IT 控制措施，反而可能阻止 Autopilot 完成基本任务。微软正强调以客户驱动的评估来确定该智能体在多大程度上改善了实际工作流程。",
+  "mainPoints": [
+    {
+      "point": "微软推出了统一的 Copilot 界面，集成了多种生产力工具和自主智能体。",
+      "explanation": "新应用将聊天、代码、Office 应用程序和「Autopilot」（一种持久化智能体）结合到一个单一平台中，取代了之前独立的消费者版和工作专用聊天应用。"
+    },
+    {
+      "point": "利用现有的企业权限结构为信任和采用提供了竞争优势。",
+      "explanation": "与其他统一的 AI 界面不同，微软的方法利用了 IT 部门为 Outlook 和 Teams 等工具建立的现有权限，这可能使企业更容易采用，而无需重建安全协议。"
+    },
+    {
+      "point": "建立企业信任所必需的严格安全控制可能会限制智能体的功能效用。",
+      "explanation": "使 Autopilot 在公司内部既安全又合规的同一套权限，也可能限制其执行常规任务的能力，从而在安全性和可用性之间形成张力，需要仔细评估。"
+    }
+  ],
+  "keyQuotes": [
+    "微软宣布推出一款新的 Copilot，它结合了聊天、代码、Office 和一个名为 Autopilot 的持久化智能体，取代了其独立的消费者版和工作版聊天应用。",
+    "这些权限可能使其在公司内部变得有用且值得信赖，但也可能阻止它完成一项普通任务。",
+    "微软在发布会上强调评估（evals），这表明该公司正在寻求客户来定义其组织中良好工作的标准……"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 产品与应用",
+    "科技新闻",
+    "AI Agent",
+    "Microsoft"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 72,
+  "wordCount": 313,
+  "domain": "every.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_b42603f1",
+  "sourceName": "Every",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790431883000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-26 22:11:23"
+}

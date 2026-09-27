@@ -1,0 +1,52 @@
+{
+  "id": "RAW_969ea2065f",
+  "title": "Cloudflare 详解从 WordPress 到 EmDash 的迁移过程",
+  "url": "https://www.infoq.com/news/2026/09/cloudflare-emdash-migration/",
+  "date": "2026-09-26 17:38:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare recently documented the <a href=\"https://blog.cloudflare.com/cloudflare-blog-uses-emdash/\">migration of its main blog from WordPress to EmDash</a>, the open source content management system developed internally. The new platform is designed to improve performance and caching, and it was tested to handle traffic of up to 7000 requests per second.</p>\n   <p>As <a href=\"https://www.infoq.com/news/2026/04/cloudflare-emdash-wordpress/\">previously reported on InfoQ</a>, Cloudflare introduced the v0.1.0 developer preview of EmDash last April, a new CMS built in TypeScript and designed as a successor to WordPress. Cloudflare’s production setup runs EmDash on a Worker with multiple caching layers, including <a href=\"https://developers.cloudflare.com/workers/runtime-apis/cache/\">Workers Cache</a> and an EmDash object cache built on <a href=\"https://developers.cloudflare.com/kv/\">Workers KV</a>. It also uses <a href=\"https://developers.cloudflare.com/hyperdrive/\">Cloudflare Hyperdrive</a> to connect EmDash to a <a href=\"https://planetscale.com/\">PlanetScale database</a>.</p>\n   <p><em><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/cloudflare-emdash-migration/news/2026/09/cloudflare-emdash-migration/en/resources/1image0-1788551179579.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/cloudflare-emdash-migration/en/resources/1image0-1788551179579.jpg\" rel=\"share\"></em></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>The company describes itself as \"Customer Zero\" for the new CMS, migrating their own blog to EmDash, after identifying limitations with the existing platform. The team says the blog typically handles about 75 requests per second, with spikes above 5000 RPS, making page load performance an important consideration.</p>\n   <p>According to <a href=\"https://www.linkedin.com/in/kody-with-a-k/\">Kody Jackson</a>, senior manager of content engineering at Cloudflare, <a href=\"https://www.linkedin.com/in/fdiogocarneiro/\">Diogo Carneiro</a>, systems engineer at Cloudflare, and <a href=\"https://www.linkedin.com/in/amy-dutton/\">Amy Dutton</a>, senior design engineer, the migration delivered a faster and more reliable site:</p>\n   <blockquote>\n    <p>Comparing p95 response latencies between the old architecture (green line) and the new EmDash setup (yellow line) revealed a stark difference. Where the previous platform experienced periodic latency spikes under load, the new system maintains a remarkably flat, consistent response profile. By running EmDash on Cloudflare Workers alongside our new caching layers, we’ve delivered a significantly faster and more performant reading experience across the board.</p>\n   </blockquote>\n   <p>Cloudflare used a proxy Worker to gradually route traffic from WordPress to EmDash, with automatic fallback to the legacy site if errors occurred. The rollout started at 1% of traffic and increased progressively as the team validated the new platform, reaching 100% in a single day. Jackson, Carneiro, and Dutton add:</p>\n   <blockquote>\n    <p>We deployed a proxy Worker to intelligently route traffic between the legacy blog and the new EmDash-powered site. This Worker set a version cookie on requests, which then let us route incoming traffic to the new or legacy experience accordingly. Additionally, this strategy allowed us to fall back to the legacy blog if the new site experienced any 500 errors.</p>\n   </blockquote>\n   <p><em><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/09/cloudflare-emdash-migration/news/2026/09/cloudflare-emdash-migration/en/resources/1image2(1)-1788551179579.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/cloudflare-emdash-migration/en/resources/1image2(1)-1788551179579.jpg\" rel=\"share\"></em></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p><a href=\"https://www.reddit.com/r/emdash_cms/comments/1vxvt8p/comment/p5s4oso/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">Discussion on Reddit</a> focuses on the migration strategy, with one commenter highlighting the proxy Worker, cookie-based routing, and fallback mechanism:</p>\n   <blockquote>\n    <p>The zero-downtime proxy Worker plus cookie routing is the part most teams underestimate. A good rollout plan usually needs a kill switch, per-request fallback, and metrics split by cohort so you can catch cache regressions before the 1% becomes 100%.</p>\n   </blockquote>\n   <p>The migration also improved access for AI agents, with a new MCP server for the Cloudflare Blog and another for EmDash that lets authors browse, create, edit, publish, and schedule content.</p>\n   <p>On Reddit, user <em>u/themistermeister</em> compares EmDash to Ghost and <a href=\"https://www.reddit.com/r/CloudFlare/comments/1vxclzn/comment/p5p3aqd/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">writes</a>:</p>\n   <blockquote>\n    <p>EmDash's cost is much less and the AI interactivity is much greater. And it has near infinite extendibility with a brilliant roadmap.</p>\n   </blockquote>\n   <p>According to the article, editors encountered some early adoption issues, mostly with the editing experience and scheduled posts. These were reported to the EmDash team, which Cloudflare says is working toward a v1 release soon, although no official date has been announced.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Details Its Migration from WordPress to EmDash\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/cloudflare-emdash-migration/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790415480000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 利用代理 Worker 实现零停机流量切换，将其博客从 WordPress 迁移至 EmDash，在高负载下实现了平稳的 p95 延迟，并添加 MCP 服务器以支持 AI 智能体集成。",
+  "oneSentenceSummary": "Cloudflare 利用代理 Worker 实现零停机流量切换，将其博客从 WordPress 迁移至 EmDash，在高负载下实现了平稳的 p95 延迟，并添加 MCP 服务器以支持 AI 智能体集成。",
+  "summary": "Cloudflare 已完成其主博客从 WordPress 到 EmDash 的迁移，后者是一个内部使用 TypeScript 构建的开源 CMS。为了处理超过 5000 RPS 的生产环境流量峰值并保持性能，Cloudflare 在 Workers 上部署了 EmDash，并结合多层缓存（Workers Cache 和 KV）以及 Hyperdrive 来连接 PlanetScale 数据库。此次发布采用了一种代理 Worker 策略，在一天内将流量从 1% 逐步路由至 100%，通过基于 Cookie 的版本控制以及在检测到错误时自动回退到旧站点来实现平滑过渡。这种架构使得 p95 响应延迟相比之前的系统更加平稳。此外，新平台引入了模型上下文协议（MCP）服务器，使 AI 智能体能够直接与内容管理工作流进行交互。虽然早期用户指出编辑体验存在一些小问题，但这一技术执行展示了现代化遗留 Web 基础设施的稳健模式。",
+  "mainPoints": [
+    {
+      "point": "代理 Worker 架构实现了具备自动回退功能的零停机迁移。",
+      "explanation": "Cloudflare 使用代理 Worker 在旧的 WordPress 站点和新的 EmDash 站点之间路由流量。通过设置版本 Cookie 并监控 500 错误，他们能够逐步增加流量份额（从 1% 到 100%），同时确保如果新系统出现故障可以立即回滚。"
+    },
+    {
+      "point": "Workers 上的多层缓存解决了先前架构中固有的延迟峰值问题。",
+      "explanation": "在 Cloudflare Workers 上运行 EmDash，并结合 Workers Cache 和 Workers KV 上的对象缓存，使得系统即使在流量峰值超过 5000 RPS 时也能保持平稳、一致的 p95 响应曲线，这与 WordPress 出现的周期性延迟峰值形成对比。"
+    },
+    {
+      "point": "MCP 服务器的集成增强了 AI 智能体的互操作性。",
+      "explanation": "此次迁移包括为 Cloudflare Blog 和 EmDash 部署模型上下文协议（MCP）服务器，允许 AI 智能体浏览、创建、编辑、发布和调度内容，标志着向 AI 原生内容管理工作流的转变。"
+    }
+  ],
+  "keyQuotes": [
+    "“在负载下，以前的平台会经历周期性的延迟峰值，而新系统则保持了非常平稳、一致的响应曲线。”",
+    "“我们部署了一个代理 Worker，以便在旧博客和新 EmDash 驱动的站点之间智能地路由流量。”",
+    "“零停机的代理 Worker 加上 Cookie 路由，是大多数团队低估的部分。”"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "性能优化",
+    "AI Agent",
+    "前端与 Web"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 536,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790415480000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-26 17:38:00"
+}

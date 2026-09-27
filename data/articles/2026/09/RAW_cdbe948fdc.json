@@ -1,0 +1,51 @@
+{
+  "id": "RAW_cdbe948fdc",
+  "title": "GitHub - bttf/ogremcp: Ogre MCP（开放游戏中继引擎）：通过一个远程 MCP 服务器将视频游戏连接到任何 AI 智能体。首个套件：魔兽世界经典旧世。",
+  "url": "https://github.com/bttf/ogremcp",
+  "date": "2026-09-26 23:06:44",
+  "author": "bttf",
+  "siteName": "Hacker News - Newest: \"AI Agent\"",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"markdown-heading\" dir=\"auto\"></div>\n  <p dir=\"auto\">Ogre MCP (Open Game Relay Engine, <code>ogremcp</code>) connects a video game to any AI agent through one remote MCP server, so the agent can read your live game state and give spoiler-free guidance. The design is in <a href=\"https://github.com/bttf/ogremcp/blob/main/docs/architecture.md\"><code>docs/architecture.md</code></a>.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Layout</h2>\n  </div>\n  <markdown-accessiblity-table>\n   <table>\n    <thead>\n     <tr>\n      <th>Path</th>\n      <th>Contents</th>\n      <th>License</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td><code>packages/sdk/</code></td>\n      <td><code>@ogremcp/sdk</code>: manifest schema, <code>Interpreter</code> interface, shared types</td>\n      <td>MIT</td>\n     </tr>\n     <tr>\n      <td><code>kits/wow/</code></td>\n      <td><code>@ogremcp/kit-wow</code>: WoW adapter, manifest, interpreter, fixtures</td>\n      <td>MIT</td>\n     </tr>\n     <tr>\n      <td><code>platform/</code></td>\n      <td><code>@ogremcp/platform</code>: service, web UI, MCP server, bridge API, OAuth server</td>\n      <td>AGPL-3.0-or-later</td>\n     </tr>\n     <tr>\n      <td><code>bridge/</code></td>\n      <td>Go module: the bridge that runs on the player's PC</td>\n      <td>MIT</td>\n     </tr>\n    </tbody>\n   </table>\n  </markdown-accessiblity-table>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Self-host</h2>\n  </div>\n  <p dir=\"auto\">To run your own server with Docker Compose, see <a href=\"https://github.com/bttf/ogremcp/blob/main/docs/self-host.md\"><code>docs/self-host.md</code></a>.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">License</h2>\n  </div>\n  <p dir=\"auto\">Each of the four paths above has its own <code>LICENSE</code> file. <code>platform/</code> is licensed under the GNU Affero General Public License v3.0 or later. <code>packages/sdk/</code>, <code>kits/wow/</code>, and <code>bridge/</code> are licensed under the MIT License. Every file outside those four paths is licensed under the MIT License in the root <a href=\"https://github.com/bttf/ogremcp/blob/main/LICENSE\"><code>LICENSE</code></a>.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Contributing</h2>\n  </div>\n  <p dir=\"auto\">Contributions use the <a href=\"https://developercertificate.org/\" rel=\"nofollow\">Developer Certificate of Origin</a> (DCO), not a CLA. Sign off every commit with <code>git commit -s</code>. CI fails a pull request if any of its commits lacks a <code>Signed-off-by:</code> line that matches the commit author's name and email.</p>\n </body>\n</html>",
+  "aiSummary": "Ogre MCP 是一个开源项目，通过远程 MCP 服务器将视频游戏与 AI 智能体连接起来，实现实时状态读取和无剧透指导，首个支持的游戏是《魔兽世界》经典旧世。",
+  "oneSentenceSummary": "Ogre MCP 是一个开源项目，通过远程 MCP 服务器将视频游戏与 AI 智能体连接起来，实现实时状态读取和无剧透指导，首个支持的游戏是《魔兽世界》经典旧世。",
+  "summary": "文章介绍了 Ogre MCP（开放游戏中继引擎），这是一个旨在利用模型上下文协议（MCP）桥接视频游戏和 AI 智能体的框架。它允许 AI 智能体访问实时游戏状态并提供无剧透的辅助。仓库结构包括用于清单模式和接口的 SDK、针对《魔兽世界》经典旧世的特定适配器套件、包含 Web UI 和 OAuth 支持的平台服务，以及运行在玩家 PC 上的基于 Go 的本地桥接器。许可证采用混合模式：平台使用 AGPL-3.0-or-later，而 SDK、WoW 套件和桥接器使用 MIT 许可证。贡献代码需要签署开发者原创声明（DCO）。",
+  "mainPoints": [
+    {
+      "point": "Ogre MCP 使 AI 智能体能够通过标准化的远程服务器接口与实时视频游戏状态进行交互。",
+      "explanation": "通过利用模型上下文协议（MCP），该系统充当一个中继引擎，允许任何兼容的 AI 智能体读取当前游戏数据并在不泄露剧透的情况下提供指导，从而创建了一类新的交互式游戏助手。"
+    },
+    {
+      "point": "架构是模块化的，分离了核心 SDK、特定游戏套件、平台服务和本地桥接器。",
+      "explanation": "该项目分为四个主要组件：`packages/sdk/` 用于共享类型和接口，`kits/wow/` 用于《魔兽世界》的实现，`platform/` 用于包括 OAuth 和 Web UI 在内的服务器端逻辑，以及用 Go 编写并运行在玩家机器本地的 `bridge/`。"
+    },
+    {
+      "point": "许可策略区分了类似专有的平台和开放的生态系统组件。",
+      "explanation": "核心的 `platform/` 组件使用具有 Copyleft 性质的 AGPL-3.0-or-later 许可证以确保修改保持开放，而 SDK、游戏套件和本地桥接器使用宽松的 MIT 许可证，以鼓励第三方开发者的更广泛采用和集成。"
+    }
+  ],
+  "keyQuotes": [
+    "「通过一个远程 MCP 服务器将视频游戏连接到任何 AI 智能体，使智能体能够读取你的实时游戏状态并提供无剧透的指导。」",
+    "「贡献代码使用开发者原创声明（DCO），而不是贡献者许可协议（CLA）。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "MCP协议",
+    "开源项目",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 72,
+  "wordCount": 187,
+  "domain": "github.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_87ebb4f7",
+  "sourceName": "Hacker News - Newest: \"AI Agent\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790435204000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-26 23:06:44"
+}

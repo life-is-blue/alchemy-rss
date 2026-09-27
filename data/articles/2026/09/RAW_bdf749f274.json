@@ -1,0 +1,52 @@
+{
+  "id": "RAW_bdf749f274",
+  "title": "aria2 下一代？Aria2 Next 原生支持 .m3u8、电驴下载",
+  "url": "https://www.appinn.com/aria2-next/",
+  "date": "2026-09-27 00:56:03",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"has-very-light-gray-to-cyan-bluish-gray-gradient-background has-background wp-block-paragraph\">十多年来，aria2 一直是功能最强大的开源下载引擎之一，但它已经 3 年多没有更新了。@<a href=\"https://www.appinn.com/aria2-next/\">Appinn</a></p>\n  <p class=\"wp-block-paragraph\">有开发者基于 aria2 分支创建了新项目：<strong>Aria2 Next</strong>，宣称是<strong>重新定义下一代 aria2</strong>，修复了大量遗留问题、更新了底层架构，还加入了原生 .m3u8、DASH 和 ED2K（电驴）下载支持。</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/Copy-of-appinn-homework-2026-09-26T163847.209.jpg\" alt=\"aria2 下一代？Aria2 Next 原生支持 .m3u8、电驴下载 1\" class=\"wp-image-59697\" title=\"aria2 下一代？Aria2 Next 原生支持 .m3u8、电驴下载 1\">\n  </figure>\n  <div class=\"wp-block-rank-math-toc-block\" id=\"rank-math-toc\">\n   <h2>目录</h2>\n   <nav>\n    <ul>\n     <li class=\"\"><a href=\"#aria-2-next：下一代-aria-2\">Aria2 Next：下一代 aria2</a>\n      <ul>\n       <li class=\"\"><a href=\"#原生-ed-2-k-e-mule-支持（电驴）\">原生 ED2K/eMule 支持（电驴）</a></li>\n       <li class=\"\"><a href=\"#原生-hls-和-dash-下载（-m-3-u-8-）\">原生 HLS 和 DASH 下载（.m3u8）</a></li>\n       <li class=\"\"><a href=\"#底层改动\">底层改动</a></li>\n      </ul></li>\n     <li class=\"\"><a href=\"#安装-aria-2-next\">获取 Aria2 Next</a></li>\n     <li class=\"\"><a href=\"#使用\">快速开始（使用指南）</a>\n      <ul>\n       <li class=\"\"><a href=\"#启动-json-rpc-服务\">启动 JSON-RPC 服务</a></li>\n       <li class=\"\"><a href=\"#查看版本及已启用的功能\">查看版本及已启用的功能</a></li>\n       <li class=\"\"><a href=\"#docker\">Docker</a></li>\n      </ul></li>\n    </ul>\n   </nav>\n  </div>\n  <p class=\"wp-block-paragraph\">一个冷知识：Aria2 居然支持Android，可以在安卓终端下直接使用。</p>\n  <p class=\"wp-block-paragraph\">对于原来的 aria2 用户，熟悉的使用方式基本还在。Aria2 Next 继续提供命令行、配置文件和 JSON-RPC，因此现有的 aria2 脚本、RPC 前端和自动化工具，多数情况下仍可继续使用，<strong>比如可以继续使用 AriaNg 来管理 aria2</strong>。</p>\n  <p class=\"wp-block-paragraph\">Aria2 Next 主要使用 C++ 开发，目前在 GitHub 只获得了 389 颗 Star，但已经吸引到65位开发者，并且在勤奋更新，最近一次 v2.8.2 版本发布于2日前（2026年9月24日）</p>\n  <p class=\"wp-block-paragraph\">相比原版 <strong>aria2</strong>，<strong>Aria2 Next</strong> 最直观的变化，是新增下载类型：</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/09/ChatGPT-2026-9-26-16_53_59.avif\" alt=\"aria2 下一代？Aria2 Next 原生支持 .m3u8、电驴下载 2\" class=\"wp-image-59700\" title=\"aria2 下一代？Aria2 Next 原生支持 .m3u8、电驴下载 2\">\n  </figure>\n  <h3 id=\"原生-ed-2-k-e-mule-支持（电驴）\" class=\"wp-block-heading\">原生 ED2K/eMule 支持（电驴）</h3>\n  <p class=\"wp-block-paragraph\">虽然电驴网络整体已经不复当年之勇，但依旧有不少老资源保存在网络之中。Aria2 Next 原生支持电驴链接，可以像普通 HTTP、BT 任务一样，通过命令行下载。</p>\n  <h3 id=\"原生-hls-和-dash-下载（-m-3-u-8-）\" class=\"wp-block-heading\">原生 HLS 和 DASH 下载（.m3u8）</h3>\n  <p class=\"wp-block-paragraph\">另一个很实用的变化是原生支持 HLS 和 MPEG-DASH，也就是经常能见到的 <code>.m3u8</code> 和 <code>.mpd</code> 流媒体。<strong>Aria2 Next</strong> 可以直接下载这类地址，还支持直播录制、清晰度选择，并能输出 MP4 / Matroska 文件，无需转码。</p>\n  <h3 id=\"底层改动\" class=\"wp-block-heading\">底层改动</h3>\n  <ul class=\"wp-block-list\">\n   <li>HTTP/HTTPS 下载现在使用 libcurl，支持 HTTP/2、多路复用等能力</li>\n   <li>BT 部分则使用 libtorrent-rasterbar 2.1，继续支持 Magnet、DHT、PEX、uTP、BT v1/v2 等功能</li>\n  </ul>\n  <h2 id=\"安装-aria-2-next\" class=\"wp-block-heading\">获取 Aria2 Next</h2>\n  <p class=\"wp-block-paragraph\">Aria2 Next 已经提供 Windows、macOS、Linux 和 Android 的预编译版本，可以直接前往 GitHub Releases 下载：</p>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://github.com/AnInsomniacy/aria2-next\" target=\"_blank\" rel=\"noopener\">GitHub</a></li>\n   <li><a href=\"https://d.appinn.com/aria2-next/\" target=\"_blank\" rel=\"noopener\">搬运</a></li>\n  </ul>\n  <h2 id=\"使用\" class=\"wp-block-heading\">快速开始（使用指南）</h2>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <pre class=\"brush: bash; title: ; notranslate\" title=\"\"># 下载普通文件\naria2-next https://example.com/file.iso\n\n# 下载 ED2K（电驴）链接\naria2-next '&lt;ed2k-file-link&gt;'\n</pre>\n  </div>\n  <h3 id=\"启动-json-rpc-服务\" class=\"wp-block-heading\">启动 JSON-RPC 服务</h3>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <pre class=\"brush: plain; title: ; notranslate\" title=\"\">aria2-next --enable-rpc --rpc-listen-all=false --rpc-listen-port=6800\n</pre>\n  </div>\n  <h3 id=\"查看版本及已启用的功能\" class=\"wp-block-heading\">查看版本及已启用的功能</h3>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <pre class=\"brush: plain; title: ; notranslate\" title=\"\">aria2-next --version\naria2-next --help=#ed2k\n</pre>\n  </div>\n  <h3 id=\"docker\" class=\"wp-block-heading\">Docker</h3>\n  <p class=\"wp-block-paragraph\">Aria2 Next 也提供官方 Docker 镜像，NAS、服务器等设备可以直接运行：</p>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <pre class=\"brush: plain; title: ; notranslate\" title=\"\">docker run --rm \\\n  -e PUID=\"$(id -u)\" \\\n  -e PGID=\"$(id -g)\" \\\n  ghcr.io/aninsomniacy/aria2-next:latest --version\n</pre>\n  </div>\n  <p class=\"wp-block-paragraph\">Aria2 Next 的 RPC 默认仍然可以使用熟悉的 6800 端口，因此也可以继续搭配兼容 aria2 JSON-RPC 的 Web 前端使用。</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：<a href=\"https://www.appinn.com/aria2-next/\">https://www.appinn.com/aria2-next/</a></p>\n </body>\n</html>",
+  "aiSummary": "开源下载工具 Aria2 Next 发布，基于 aria2 分支重构底层并新增原生支持 .m3u8、DASH 及电驴（ED2K）下载，保持对原有脚本和 RPC 接口的兼容。",
+  "oneSentenceSummary": "开源下载工具 Aria2 Next 发布，基于 aria2 分支重构底层并新增原生支持 .m3u8、DASH 及电驴（ED2K）下载，保持对原有脚本和 RPC 接口的兼容。",
+  "summary": "Aria2 Next 是一个由开发者基于长期未更新的 aria2 项目分支创建的新开源下载引擎。该项目旨在重新定义下一代 aria2，通过更新底层架构修复遗留问题。核心功能升级包括原生支持 HLS/DASH（.m3u8/.mpd）流媒体下载与直播录制，以及恢复对 ED2K（电驴）协议的支持。技术层面，HTTP 下载改用 libcurl 以支持 HTTP/2 和多路复用，BT 部分采用 libtorrent-rasterbar 2.1。尽管是全新分支，Aria2 Next 保留了命令行、配置文件和 JSON-RPC 接口，确保现有的自动化脚本和管理前端（如 AriaNg）能无缝迁移使用。目前提供 Windows、macOS、Linux 和 Android 的预编译版本及 Docker 镜像。",
+  "mainPoints": [
+    {
+      "point": "原生支持现代流媒体协议与旧式 P2P 网络",
+      "explanation": "Aria2 Next 直接内置了对 HLS (.m3u8) 和 DASH (.mpd) 的支持，允许用户无需额外转码即可下载视频或进行直播录制；同时恢复了 ED2K (电驴) 链接支持，填补了原版 aria2 在特定资源获取上的空白。"
+    },
+    {
+      "point": "底层依赖库现代化以提升性能",
+      "explanation": "HTTP/HTTPS 模块切换至 libcurl，从而获得 HTTP/2 和多路复用能力，显著改善并发下载效率；BitTorrent 模块升级至 libtorrent-rasterbar 2.1，增强了对 Magnet、DHT 等特性的支持稳定性。"
+    },
+    {
+      "point": "保持极高的向后兼容性",
+      "explanation": "作为 aria2 的分支，它保留了原有的 CLI 参数、配置文件格式及 JSON-RPC 接口（默认端口 6800）。这意味着用户现有的自动化脚本、Web 管理面板（如 AriaNg）无需修改即可直接对接新引擎。"
+    }
+  ],
+  "keyQuotes": [
+    "有开发者基于 aria2 分支创建了新项目：**Aria2 Next** ，宣称是**重新定义下一代 aria2**，修复了大量遗留问题、更新了底层架构，还加入了原生 .m3u8、DASH 和 ED2K（电驴）下载支持。",
+    "对于原来的 aria2 用户，熟悉的使用方式基本还在。Aria2 Next 继续提供命令行、配置文件和 JSON-RPC，因此现有的 aria2 脚本、RPC 前端和自动化工具，多数情况下仍可继续使用",
+    "另一个很实用的变化是原生支持 HLS 和 MPEG-DASH，也就是经常能见到的 `.m3u8` 和 `.mpd` 流媒体。**Aria2 Next** 可以直接下载这类地址，还支持直播录制、清晰度选择，并能输出 MP4 / Matroska 文件，无需转码。"
+  ],
+  "tags": [
+    "编程与工程",
+    "开源项目",
+    "开发者工具",
+    "命令行与终端",
+    "下载工具"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 80,
+  "wordCount": 867,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1790441763000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-27 00:56:03"
+}
