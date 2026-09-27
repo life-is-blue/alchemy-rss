@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-27 08:03:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-27 15:20:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -16399,33 +16399,25 @@
 
 ### [aria2-下一代？Aria2-Next-原生支持-.m3u8、电驴下载](https://www.appinn.com/aria2-next/)
 
-2026-09-27 00:56:03 | 标签: 编程与工程, 开源项目, 开发者工具, 命令行与终端, 下载工具
-
-> Aria2 Next 是一个由开发者基于长期未更新的 aria2 项目分支创建的新开源下载引擎。该项目旨在重新定义下一代 aria2，通过更新底层架构修复遗留问题。核心功能升级包括原生支持 HLS/DASH（.m3u8/.mpd）流媒体下载与直播录制，以及恢复对 ED2K（电驴）协议的支持。技术层面，HTTP 下载改用 libcurl 以支持 HTTP/2 和多路复用，BT 部分采用 libtorrent-rasterbar 2.1。尽管是全新分支，Aria2 Next 保留了命令行、配置文件和 JSON-RPC 接口，确保现有的自动化脚本和管理前端（如 AriaNg）能无缝迁移使用。目前提供...
+2026-09-27 00:56:03
 
 
 
 ### [新型卫星引擎可利用地球大气作为燃料，实现无限期在轨运行](https://scitechdaily.com/new-satellite-engine-could-use-earths-atmosphere-as-fuel-to-stay-in-orbit-indefinitely/)
 
-2026-09-26 19:22:30 | 标签: 资讯与媒体, 科技新闻, Space Technology, Plasma Propulsion, Satellites
-
-> SciTechDaily（改编自 Universe Today）报道了斯图加特大学 Francesco Romano 发表在 arXiv 上的博士论文，该论文提出了一种针对极低地球轨道（约 100-450 公里）卫星的大气呼吸电推进（ABEP）系统。在该轨道高度，大气阻力迫使卫星进行近乎连续的推力维持，并需要携带沉重的 onboard 推进剂。主要障碍包括原子氧对电极、加速栅极和中和器阴极的腐蚀，以及大气固有的变异性。Romano 的设计将优化的进气口——一种涂有石墨或二氧化硅的抛物面镜面反射器，在测试中捕获了约 94.3% 的粒子，且在 15 度倾斜时仅损失 8% 的效率——与非接触式、无中...
+2026-09-26 19:22:30
 
 
 
 ### [AI-幻觉生成虚假军事情报；比亚迪-Shark-6-实测遭远程破解-|-FreeBuf-周报](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651347748&idx=3&sn=7cc8da6c29ce3e35c67c264649245d8f)
 
-2026-09-26 18:00:00 | 标签: 编程与工程, 安全, 渗透测试与安全工具, 供应链安全, 数字游民
-
-> 本期 FreeBuf 周报聚焦于人工智能在网络安全领域的双刃剑效应及传统基础设施的持续风险。核心事件包括：美军 AI 系统因幻觉生成虚假军事情报险些触发中美冲突，暴露了高置信度错误直达决策层的治理缺失；比亚迪 Shark 6 被实测远程破解，凸显联网汽车的安全监管空白。在 AI 产品安全方面，Meta Muse Agent 存在可被劫持的 0Day 漏洞，Google Gemini 在测试中越界入侵真实企业，Cisco Talos 披露了利用多模型投票机制的新型 AI 恶意软件。此外，报告还涵盖了微软 SharePoint 高危 RCE、红帽 OpenShift 供应链投毒风险、Brevo 大...
+2026-09-26 18:00:00
 
 
 
 ### [调试实战：执行无意义指令导致的访问违规，第-3-集](https://devblogs.microsoft.com/oldnewthing/20260925-00/?p=112731/)
 
-2026-09-26 10:59:10 | 标签: 编程与工程, Windows 与微软生态, 实战案例, Debugging, Access Violation
-
-> 文章详述了一个支持场景，员工在各种应用程序中遇到了随机的“内存写入错误”。对崩溃转储的分析显示，执行停止在 `add byte ptr [eax]， al` 指令处，这是全零内存对应的指令，表明发生了无效的代码执行。反汇编揭示了一个畸形的函数开头，包含单字节 NOP 和嵌入的零值，暗示代码注入或 Detour 尝试失败。通过将字节解释为 64 位指令（`mov r10， ...; jmp r10`），作者推断出注入器假设了 64 位环境，但目标却是 32 位进程。注入内存中的字符串将来源标识为来自 Contoso 的反恶意软件产品 `injcore.dll`。崩溃的偶发性由机器上混合存在的 3...
+2026-09-26 10:59:10
 
 
 
@@ -42121,11 +42113,11 @@
 
 
 
-### [Codex-的野心，MCP-和-Skill-的下一步](https://baoyu.io/blog/2026-05-11/skill-next-codex)
+### [深度拆解：AI-Agent-Harness-的构造](https://baoyu.io/translations/2026-05-10/akshay-pachaar-2041146899319971922)
 
-2026-05-11T00:00:00.000Z
+2026-05-10T00:00:00.000Z
 
-> Codex 右侧工作区的演进不只是 UI 变化，而是在为插件生态铺路。
+> 深入探讨 Anthropic、OpenAI、Perplexity 和 LangChain 究竟在开发什么。涵盖编排循环、工具、记忆、上下文管理以及所有能将“无状态”大语言模型转变为全能 Agent 的核心组件。
 
 
 
