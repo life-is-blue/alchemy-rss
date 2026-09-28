@@ -1,0 +1,52 @@
+{
+  "id": "RAW_2f7ffdfa35",
+  "title": "Google 利用 AI 和差分模糊测试将关键 C 依赖项重写为 Rust",
+  "url": "https://www.infoq.com/news/2026/09/c-rust-rewrite/",
+  "date": "2026-09-27 22:14:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Security teams at Google have validated a novel pathway for eliminating legacy memory vulnerabilities across legacy infrastructure by <a href=\"https://bughunters.google.com/blog/scaling-memory-safety\">leveraging Gemini to translate C codebases into memory-safe Rust equivalents</a>. The initiative focused on giflib, an image-processing library with about 3,000 lines of code that often decodes untrusted user input without sandboxing. By delivering an ABI-compatible drop-in library written in Rust, the team was able to decommission process isolation sandboxes, preserve latency neutrality, and neutralise an unpatched heap write zero-day prior to its public cataloguing as CVE-2026-26740.</p>\n   <p>Memory corruption bugs represent roughly 70 per cent of severe security vulnerabilities in mature C and C++ stacks. Rather than undertaking multi-year manual conversions or relying entirely on runtime bounds checking, software engineers <a href=\"https://github.com/1c3t3a](https://github.com/1c3t3a\">Bastian Kersting</a> and <a href=\"https://github.com/mhils](https://github.com/mhils\">Max Hils</a> executed a three-stage automated migration process designed around an autonomous feedback loop.</p>\n   <p>First, the team applied a single-shot prompt with Gemini to port the complete logic of the C library into Rust. Because the library needed to replace the existing shared object transparently without breaking downstream callers, the engineers retained the original exported symbols and struct definitions. Modelling the foreign function interface introduced unsound raw pointer semantics during initial iterations, requiring human experts to inspect and refine pointer ownership and lifetime invariants. Finally, automated differential testing engines detected behavioural discrepancies and fed the failure traces back to the model for iterative patch synthesis.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/09/c-rust-rewrite/news/2026/09/c-rust-rewrite/en/resources/1Gemini_Generated_Image_997er8997er8997e-1790492578072.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/09/c-rust-rewrite/en/resources/1Gemini_Generated_Image_997er8997er8997e-1790492578072.jpeg\" rel=\"share\"></p>\n   <p><em>Image Source: Generated with Gemini based on content from the blog post.</em></p>\n   <p>To prevent undefined behaviour when passing pointers across the C boundary, the FFI wrapper reconstructs safe Rust handles from raw pointers:</p>\n   <pre>\r\n<code class=\"language-rust\">#[no_mangle]\r\npub unsafe extern \"C\" fn DGifCloseFile(\r\n    gif_file: *mut GifFileType,\r\n    error_code: *mut c_int,\r\n) -&gt; c_int {\r\n    if gif_file.is_null() {\r\n        return GIF_ERROR;\r\n    }\r\n    let mut handle = Box::from_raw(gif_file as *mut GifFilePrivate);\r\n    match handle.close() {\r\n        Ok(_) =&gt; GIF_OK,\r\n        Err(e) =&gt; {\r\n            if !error_code.is_null() {\r\n                *error_code = e.to_raw();\r\n            }\r\n            GIF_ERROR\r\n        }\r\n    }\r\n}</code></pre>\n   <p>Deploying automatically generated code to mission-critical infrastructure required establishing semantic equivalence against the historical C implementation. The team instituted a validation pipeline comprising mass-scale regression decoding across more than 30 million real-world GIF assets, ensuring bit-for-bit rendering parity.</p>\n   <p>In parallel, an automated <a href=\"https://en.wikipedia.org/wiki/Differential_testing\">differential fuzzer</a> executed side-by-side iterations of both runtimes continuously for six days, racking up 200 million iterations without observing functional drift. The test suite also incorporated adversarial LLM evaluation prompts configured to analyse both repositories to locate latent behavioural bifurcations. The verification pipeline identified an unhandled edge case within the LZW decompressor and flagged an internal legacy out-of-bounds write introduced by an earlier internal patch to the original C source.</p>\n   <p>The most definitive validation of the project materialised during staging. An external security researcher uncovered an out-of-bounds heap write in upstream giflib, catalogued as <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-26740\">CVE-2026-26740</a>. Production nodes running Google's compiled Rust replacement proved structurally immune to the flaw before public disclosure, demonstrating that architectural language migrations inherently preempt entire vulnerability classes.</p>\n   <p>Replacing C libraries with Rust often raises concerns over runtime overhead introduced by mandatory bounds checks. Production telemetry across global image decoding clusters confirmed that the Rust binary operated at runtime parity with the original C binary. Furthermore, because memory safety guarantees were moved directly into the type system, platform engineers were able to dismantle legacy operating system sandboxes previously required to isolate image decoding tasks. Removing that process isolation boundary produced a marked reduction in p99 tail latency.</p>\n   <p>Despite these efficiency improvements, the authors emphasised that artificial intelligence translations are not a hands-off panacea. Forking upstream C dependencies into Rust repositories creates sustained maintenance divergence whenever the upstream repository releases new features or architectural modifications. Additionally, foreign function interface wrappers still require human domain expertise to prevent lifetime leaks and ensure thread-safety invariants remain intact.</p>\n   <p>Discussions on both <a href=\"https://www.reddit.com/r/rust/comments/1vx3wt5/blog_scaling_memory_safety_aiassisted_rewrites_of\">r/rust</a> and the<a href=\"https://news.ycombinator.com/item?id=49455541&amp;utm_source=gemini\"> Hacker News</a> broadly acknowledged the achievement while debating the practicality and safety of AI-assisted porting: commenters praised Google’s rigorous differential fuzzing framework—which caught a pre-existing out-of-bounds write in Google's own legacy C patch—but heavily scrutinized the one-shot translation approach, emphasizing that the human effort required to audit subtle semantic regressions and fix unsound C FFI boundaries often dwarfs the code generation itself, leading many to argue that deterministic transpilers (like c2rust) followed by AI-driven refactoring into safe, idiomatic Rust might prove more dependable as libraries scale beyond simple, self-contained targets like giflib.</p>\n   <p>Google has published the resulting library as an open-source project named <a href=\"https://github.com/google/giflib-rs\">giflib-rs </a>to serve as a reference implementation for teams evaluating automated language transitions for foundational utilities.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Rewrites Critical C Dependencies to Rust Using AI and Differential Fuzzing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/c-rust-rewrite/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790518440000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 借助 Gemini 和差分模糊测试，将基于 C 的 giflib 重写为内存安全的 Rust，在保持运行时性能一致并消除进程隔离开销的同时，成功中和了一个零日漏洞。",
+  "oneSentenceSummary": "Google 借助 Gemini 和差分模糊测试，将基于 C 的 giflib 重写为内存安全的 Rust，在保持运行时性能一致并消除进程隔离开销的同时，成功中和了一个零日漏洞。",
+  "summary": "本文详细介绍了 Google 使用 AI 辅助翻译和严格的自动化验证，将遗留 C 库迁移至 Rust 的举措。工程师 Bastian Kersting 和 Max Hils 聚焦于处理不可信输入的图像处理库 giflib，采用三阶段流程：单次 LLM 翻译、人工优化的外部函数接口（FFI）调整以及自动化差分测试。验证管道包括解码超过 3000 万个真实世界 GIF 文件以确保逐位一致性，并运行 2 亿次迭代进行差分模糊测试。这种方法不仅确保了语义等价性，还在公开披露前主动识别并缓解了一个未修补的堆写入漏洞（CVE-2026-26740）。生产遥测数据证实，Rust 实现与 C 的延迟性能相匹配，使 Google 能够拆除昂贵的操作系统级沙箱并降低 p99 尾延迟。然而，作者警告称，AI 翻译并非万能药，因为它需要大量人类专业知识来确保 FFI 安全性，并且会导致与上游 C 代码仓库产生长期的维护分歧。",
+  "mainPoints": [
+    {
+      "point": "AI 辅助迁移结合差分模糊测试有效消除了整类内存漏洞。",
+      "explanation": "通过将 giflib 翻译为 Rust，并通过 2 亿次模糊测试迭代对照原始 C 实现进行验证，Google 从结构上预防了 CVE-2026-26740，证明了语言迁移可以预先中和零日漏洞。"
+    },
+    {
+      "point": "内存安全的 Rust 实现在减少系统开销的同时可实现与 C 相当的运行时性能。",
+      "explanation": "生产遥测数据显示，Rust 二进制文件没有延迟惩罚。更重要的是，将安全保证移入类型系统使工程师能够移除进程隔离沙箱，从而显著降低了 p99 尾延迟。"
+    },
+    {
+      "point": "尽管有 AI 自动化，人类专业知识对于 FFI 边界和长期维护仍然至关重要。",
+      "explanation": "初始 AI 翻译需要人工干预以修复 FFI 包装器中不健全的原生指针语义。此外，分叉上游依赖项会产生持续的维护分歧，需要持续努力以同步上游变更。"
+    }
+  ],
+  "keyQuotes": [
+    "内存损坏漏洞约占成熟 C 和 C++ 技术栈中严重安全漏洞的 70%。",
+    "运行 Google 编译后的 Rust 替代方案的生产节点在公开披露前证明对该缺陷具有结构性免疫力，这表明架构层面的语言迁移本质上能预先阻止整类漏洞。",
+    "由于内存安全保证被直接移入类型系统，平台工程师得以拆除以前用于隔离图像解码任务的遗留操作系统沙箱。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI 编程",
+    "安全",
+    "系统设计",
+    "性能优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 734,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790518440000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-27 22:14:00"
+}
