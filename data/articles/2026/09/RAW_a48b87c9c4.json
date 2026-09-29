@@ -1,0 +1,56 @@
+{
+  "id": "RAW_a48b87c9c4",
+  "title": "关于长时运行 LLM 任务的思考",
+  "url": "https://www.natemeyvis.com/notes-on-long-running-llm-tasks/",
+  "date": "2026-09-28 23:47:57",
+  "author": "Brajeshwar",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <main>\n   <p><i> <time datetime=\"2026-09-27T16:52Z\"> 27 Sep, 2026 </time> </i></p>\n   <p>I often read about getting LLMs to work for a long time toward a goal. So, for example, <a href=\"https://code.claude.com/docs/en/goal\">Claude has a <code>/goal</code> command</a>, and many of us (directly or indirectly) care a lot about how models do on <a href=\"https://hub.harborframework.com/datasets/terminal-bench/terminal-bench/4?tab=tasks\">TerminalBench</a>, which is made up of tasks in which agents get one shot at doing a big chunk of work. More generally, long-running tasks are the sort of thing you hear about on podcasts, read about on Twitter, and so on: how large a bite can an agent chew?</p>\n   <p>There are some obvious, good reasons to care about this:</p>\n   <ol>\n    <li>Lots of work fits this paradigm well: certain kinds of optimization, research, and experimentation provide clear examples.</li>\n    <li>It's reasonable to expect that more and more work will be amenable to this kind of structure, so caring about long-running tasks is a way of keeping perspective about the future of the craft.</li>\n    <li>Even if work isn't <em>ideally</em> suited for this structure, it might be better than alternatives (e.g., when no project-relevant human will be available for a while).</li>\n    <li>It's really cool.</li>\n   </ol>\n   <p>But there remain many cases in which much smaller units of LLM-work are best, or at least best <em>for me</em>, for several reasons:</p>\n   <ol>\n    <li>In many kinds of software development, the goal state is very hard to define. This is particularly true for traditional user-facing services, which tend to have tons and tons of subtle requirements that you only learn about from experience. Yes, you can (and sometimes should) work with AI to try to anticipate these, but for now, I much prefer to work more incrementally on this kind of problem.</li>\n    <li>For now, at least, LLMs often still overfit a system to the specification and still really struggle to <a href=\"https://www.natemeyvis.com/notes-about-encapsulation/\">encapsulate</a> subsystems properly. Perhaps this is my own fault, though I've tried various techniques to mitigate this (with, e.g., better prompting, better <code>AGENTS.md</code> files, and periodic sweeps over the codebase to encapsulate things that need to be encapsulated). I suspect that AI will get a lot better at this over time, but for now I get much more maintainable results the more incrementally I build with AI.<sup class=\"footnote-ref\" id=\"fnref-1\"><a href=\"#fn-1\">1</a></sup></li>\n    <li>Why, exactly, would it be good for me to accomplish something with an AI in a 100-minute chunk instead of <em>N</em> 5-minute chunks? (As a first approximation, <em>N</em> = 20, but in practice it's quite a bit smaller, because my intermediate corrections tend to be beneficial.) Yes, this is O(<em>N</em>) extra interrupts to handle, but I <em>want</em> those interrupts: for now, at least, they're efficient. I can make sure smaller subsystems work the way I think they ought to work, I can correct misunderstandings, and I can often find new possibilities in the project.</li>\n    <li>One of my favorite work patterns these days is to be working in small chunks on a central, important project, and to also have some exploratory longer-running tasks running on the side.</li>\n    <li>I wonder whether a lot of the interest in longer-running tasks comes from work environments where engineers don't have the means or incentive to maximize their productivity, or where long stretches of non-programming time are necessary. In some contexts, the relevant payoff is probably not supposed to be \"get this project done faster or better\" but rather \"get <em>something</em> done during those afternoon meetings\" or \"extend my Ping-Pong session.\"</li>\n   </ol>\n   <p>Again, I suspect this is all quite specific to the kind of work you're doing. Many people certainly <em>are</em> getting large rewards from setting up long-running AI sessions. But if you find that you're doing your best work in much shorter units, please know that you're not alone.</p>\n   <hr>\n   <section class=\"footnotes\">\n    <ol>\n     <li id=\"fn-1\">\n      <p>Again, to be clear: this is more true in certain kinds of systems, and those are the kinds of systems I'm working on.<a href=\"#fnref-1\" class=\"footnote\">↩</a></p>\n     </li>\n    </ol>\n   </section>\n   <p class=\"tags\"><a rel=\"nofollow\" href=\"https://www.natemeyvis.com/blog/?q=generative%20AI\">#generative AI</a> <a rel=\"nofollow\" href=\"https://www.natemeyvis.com/blog/?q=productivity\">#productivity</a> <a rel=\"nofollow\" href=\"https://www.natemeyvis.com/blog/?q=psychology%20of%20software\">#psychology of software</a> <a rel=\"nofollow\" href=\"https://www.natemeyvis.com/blog/?q=sociology%20of%20software\">#sociology of software</a> <a rel=\"nofollow\" href=\"https://www.natemeyvis.com/blog/?q=software\">#software</a></p>\n   <form id=\"upvote-form\" action=\"/upvote/\" method=\"post\" style=\"display: inline\">\n    <small> \n     <button class=\"upvote-button\" aria-label=\"Toast this post\" title=\"Toast this post\"></button> \n    </small>\n   </form>\n  </main>\n  <!-- ID: nwm -->\n  <!-- 🐻 -->\n </body>\n</html>",
+  "aiSummary": "作者认为，对于许多软件任务而言，带有频繁人工反馈的短小增量式 LLM 交互比长时间自主运行的智能体会话更有效且更易于维护。",
+  "oneSentenceSummary": "作者认为，对于许多软件任务而言，带有频繁人工反馈的短小增量式 LLM 交互比长时间自主运行的智能体会话更有效且更易于维护。",
+  "summary": "本文探讨了长时运行 LLM 智能体任务与短小增量式交互之间的权衡。虽然承认智能体在明确目标（如优化或研究）上自主工作的吸引力和实用性，但作者主张，对于复杂的面向用户的软件开发，较小的工作单元往往更具优势。主要原因包括：难以预先定义完整的目标状态、当前 LLM 在封装方面存在困难且容易过度拟合规范，以及人工中断在纠正误解和发现新可能性方面的高价值。作者指出，对长时任务的兴趣可能源于那些最大化生产力并非主要激励因素的环境，而个人开发者从混合方法中获益最多：核心项目采用小块迭代，偶尔辅以长时探索性任务。",
+  "mainPoints": [
+    {
+      "point": "对于复杂软件，增量式交互通常优于长时自主运行。",
+      "explanation": "对于传统的面向用户的服务，细微的需求很难预先定义。以小块方式工作允许开发人员尽早发现问题、纠正误解并确保子系统按预期运行，从而产生更可维护的代码。"
+    },
+    {
+      "point": "当前 LLM 在长会话中的架构封装能力不足。",
+      "explanation": "LLM 倾向于过度拟合规范，且在长时间自主工作时无法正确封装子系统。由人工主导的定期清理和增量构建比纯自动化更能缓解这些结构性缺陷。"
+    },
+    {
+      "point": "人工中断能带来显著的效率提升。",
+      "explanation": "与认为中断成本高昂的观点相反，作者认为中断是有益的。它们允许即时验证、逻辑错误修正，并发现可能在盲目长时执行中被忽略的新项目可能性。"
+    },
+    {
+      "point": "上下文决定最佳工作流策略。",
+      "explanation": "对长时智能体的兴趣可能反映了特定的职场激励（例如在会议期间完成「某件事」），而非纯粹的生产力最大化。开发人员应根据具体的项目类型和个人工作流偏好，在长时运行和短迭代之间做出选择。"
+    }
+  ],
+  "keyQuotes": [
+    "为什么用 AI 在一个 100 分钟的连续大块工作中完成某事，会比分成 N 个 5 分钟的小块更好？",
+    "我可以确保较小的子系统按照我认为应有的方式工作，可以纠正误解，并且经常能在项目中找到新的可能性。",
+    "如今我最喜欢的工作模式之一是：在一个核心的重要项目上进行小块迭代工作，同时在后台运行一些探索性的长时任务。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "AI 编程",
+    "提示工程",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 632,
+  "domain": "natemeyvis.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790610477000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-28 23:47:57"
+}

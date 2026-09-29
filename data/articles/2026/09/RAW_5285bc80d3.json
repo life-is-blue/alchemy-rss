@@ -1,0 +1,52 @@
+{
+  "id": "RAW_5285bc80d3",
+  "title": "Rider 2026.2.3 发布！",
+  "url": "https://blog.jetbrains.com/dotnet/2026/09/28/rd-2026-2-3/",
+  "date": "2026-09-28 20:25:44",
+  "author": "Alexander Kurakin",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Rider 2026.2.3 brings AI performance analysis to the <em>Monitoring</em> tool window and fixes an issue with the <em>AI Agent Setup</em> widget on Windows. You can update directly from the IDE, through the Toolbox App, or by downloading the latest version from our website.</p>\n  <div class=\"buttons\">\n   <div class=\"buttons__row\">\n    <a href=\"https://www.jetbrains.com/rider/download/\" class=\"btn\" target=\"\" rel=\"noopener\">Download Rider</a>\n   </div>\n  </div>\n  <h4 class=\"wp-block-heading\">AI performance insights from the <em>Monitoring</em> tool window</h4>\n  <p>Now you can ask your AI agent to investigate your application’s performance right from the <em>Monitoring</em> tool window. Monitoring collects runtime data every time you run your app, so your agent has the information it needs to find bottlenecks and link them to your code.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img fetchpriority=\"high\" decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/09/Screenshot-2026-09-23-at-18.07.24-1.png\" alt=\"\" class=\"wp-image-742694\">\n  </figure>\n  <p>To get started, use the <em>Analyze with AI</em> action to set up an analysis request for your latest session with the AI agent. Check the prompt, then send it to begin the investigation. Your chosen agent uses the <a href=\"https://blog.jetbrains.com/dotnet/2026/06/25/performance-profiling-agent-skill-in-rider/\"><code>dottrace-analyze</code> skill</a> to show where time was spent, follow hot paths in your code, and give you useful performance insights in the chat.</p>\n  <p>You can find the <em>Analyze with AI</em> action above the charts on the <em>Performance</em> tab. You can also use it from the context menu for older snapshots on the<em> Recent snapshots</em> tab in the <em>dotTrace</em> tool window.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/09/Screenshot-2026-09-23-at-18.02.42.png\" alt=\"\" class=\"wp-image-742658\">\n  </figure>\n  <p>This feature is only available on Windows, and you need to have dotUltimate or the All Products Pack, plus the AI Assistant plugin installed.</p>\n  <h4 class=\"wp-block-heading\"><em>AI Agent Setup</em> widget fix</h4>\n  <p>This build fixes an issue with the <em>AI Agent Setup</em> widget (<a href=\"https://youtrack.jetbrains.com/issue/RIDER-143160\" target=\"_blank\" rel=\"noopener\">RIDER-143160</a>), introduced in Rider 2026.2.2. Previously, the widget would sometimes fail to open when you clicked its taskbar icon on Windows with display scaling set to below 175%. Now it opens just fine.</p>\n  <div class=\"buttons\">\n   <div class=\"buttons__row\">\n    <a href=\"https://www.jetbrains.com/rider/download/\" class=\"btn\" target=\"\" rel=\"noopener\">Download Rider</a>\n   </div>\n  </div>\n  <p>We’d love to hear what you think. If you run into issues or have suggestions, please report them via <a href=\"https://youtrack.jetbrains.com/issues?q=project:%20Rider%20\" target=\"_blank\" rel=\"noopener\">YouTrack</a> or <a href=\"https://x.com/JetBrainsRider\">message us on X</a>.</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/dotnet/2026/09/16/rd-rs-2026-2-2/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Rider and ReSharper 2026.2.2 Are Out!</a>\n  </div>\n  <div class=\"banner\">\n   <a href=\"https://jb.gg/rider-blog-download\" target=\"_blank\"><img src=\"https://admin.blog.jetbrains.com/wp-content/uploads/2024/09/Rider.png\"></a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Rider 2026.2.3 通过 dotTrace 技能在监控工具窗口中引入了 AI 驱动的性能分析，并修复了 Windows 平台上 AI Agent 设置小部件的一个 Bug。",
+  "oneSentenceSummary": "Rider 2026.2.3 通过 dotTrace 技能在监控工具窗口中引入了 AI 驱动的性能分析，并修复了 Windows 平台上 AI Agent 设置小部件的一个 Bug。",
+  "summary": "此次 JetBrains Rider 的小版本更新重点在于将 AI 功能集成到性能剖析中，并解决了一个 UI 回归问题。核心功能是允许用户直接从监控工具窗口或 dotTrace 快照中调用「使用 AI 分析」操作。该功能利用 `dottrace-analyze` 技能，帮助智能体基于运行时数据识别瓶颈和热点路径。目前，此功能仅面向拥有 dotUltimate 或 All Products Pack 许可证且安装了 AI Assistant 插件的 Windows 用户开放。此外，本次发布还修复了在显示缩放比例低于 175% 的 Windows 系统上，AI Agent 设置小部件无法打开的问题，这是 2026.2.2 版本引入的一个回归缺陷。",
+  "mainPoints": [
+    {
+      "point": "AI 集成的性能分析",
+      "explanation": "用户现在可以直接在监控工具窗口中请求 AI 智能体分析应用程序性能。通过利用 `dottrace-analyze` 技能，智能体访问运行时数据以定位瓶颈并追踪热点路径，并通过聊天界面提供洞察。"
+    },
+    {
+      "point": "平台与许可证限制",
+      "explanation": "新的 AI 性能分析功能仅在 Windows 上可用。它需要特定的许可证（dotUltimate 或 All Products Pack）以及安装 AI Assistant 插件，这限制了其他操作系统用户或仅持有独立 Rider 许可证用户的即时可用性。"
+    },
+    {
+      "point": "UI 回归修复",
+      "explanation": "已解决影响 AI Agent 设置小部件的一个 Bug。此前，在显示缩放设置为低于 175% 的 Windows 机器上，从任务栏点击该小部件时无法启动。此修复恢复了高 DPI 配置下的预期功能。"
+    }
+  ],
+  "keyQuotes": [
+    "现在你可以直接通过 *Monitoring* 工具窗口让 AI 智能体调查你的应用程序性能。",
+    "你选择的智能体使用 [`dottrace-analyze` skill](https://blog.jetbrains.com/dotnet/2026/06/25/performance-profiling-agent-skill-in-rider/) 来展示时间花费在哪里，追踪代码中的热点路径，并在聊天中为你提供有用的性能洞察。",
+    "此功能仅在 Windows 上可用，并且你需要拥有 dotUltimate 或 All Products Pack，以及安装 AI Assistant 插件。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI 编程",
+    "开发者工具",
+    "性能优化",
+    "Windows 与微软生态"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 78,
+  "wordCount": 304,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790598344000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-28 20:25:44"
+}

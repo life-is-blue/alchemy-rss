@@ -1,0 +1,52 @@
+{
+  "id": "RAW_b8013fc66f",
+  "title": "我构建了一款开源、本地优先的视频多边形标注应用，由 Meta 的 Segment Anything 2 (SAM 2.1) 驱动",
+  "url": "https://dev.to/kabilarasan_b/i-built-an-open-source-local-first-video-polygon-annotation-app-powered-by-metas-segment-anything-4mnf",
+  "date": "2026-09-28 20:32:20",
+  "author": "kabilarasan",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hi everyone! 👋</p>\n  <p>I built SAM2 Video Polygon Annotator, an open-source, local-first desktop application designed to streamline the dataset preparation pipeline from raw video footage to production-ready computer vision datasets.</p>\n  <p>Instead of drawing tedious point-by-point polygons, it leverages Meta's Segment Anything 2 (SAM 2 / SAM 2.1 Hiera) to generate clean, sub-pixel polygon masks in milliseconds using zero-shot positive/negative points or bounding boxes.</p>\n  <p>🔗 GitHub Repository: <a href=\"https://github.com/kabilme/SAM2.git\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/kabilme/SAM2.git</a></p>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F0h2iy0k9a3nheqp4dwh0.jpg\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F0h2iy0k9a3nheqp4dwh0.jpg\" alt=\" \" loading=\"lazy\"></a></p>\n  <p>🌟 Key Features:\n   <br>\n   🔒 100% Local &amp; Private: Runs completely on your workstation. No cloud uploads, no subscriptions.</p>\n  <p>⚡ Zero-Shot Prompting: Click positive (+) points on objects, negative (-) points to exclude background bleed, or draw bounding boxes for instant contour segmentation.</p>\n  <p>🎯 Object Tracking &amp; Multi-Frame Propagation: Track and propagate object masks forward across video sequences in the background.</p>\n  <p>✏️ Interactive Vertex Editor: Drag vertices, click polygon edges to insert points, or right-click to delete.</p>\n  <p>🎬 Multi-Video Support &amp; Frame Management: Ingest multiple videos, sample frames at custom rates, delete unwanted frames with automatic continuous re-indexing (1..N), and mark negative/null background frames to suppress false positives.</p>\n  <p>📦 7 Universal Export Formats:</p>\n  <p>YOLOv8 Instance Segmentation (normalized polygons + data.yaml)</p>\n  <p>YOLOv8 Object Detection (normalized bounding boxes class_id cx cy w h + data.yaml)</p>\n  <p>COCO 1.0 JSON (instances_*.json for Detectron2 / MMDetection / Hugging Face)</p>\n  <p>Pascal VOC &amp; Semantic Masks (XML &amp; <polygon> + 8-bit palette indexed PNG masks)</polygon></p>\n  <p>LabelMe JSON (per-image .json format)</p>\n  <p>MOT / MOTChallenge Tracking (gt.txt + seqinfo.ini + img1/ with persistent track IDs for ByteTrack/DeepSORT)</p>\n  <p>Rendered Video Overlays (MP4 video with alpha-blended polygon fills, outlines, labels, and track badges)</p>\n  <p>✅ Built-In Multi-Format Validator: Automatically inspects coordinate normalization $[0.0, 1.0]$, relational integrity, and topology before you train.</p>\n  <p>🖥️ Cross-Platform &amp; GPU/CPU: Built on PySide6, PyTorch, and OpenCV. Runs sub-30ms on NVIDIA GPUs, with full CPU fallback support.</p>\n  <p>🔗 GitHub Repository: <a href=\"https://github.com/kabilme/SAM2.git\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/kabilme/SAM2.git</a></p>\n </body>\n</html>",
+  "aiSummary": "介绍了一款开源、本地优先的桌面应用，它利用 Meta 的 SAM 2 自动化视频多边形标注，并支持多种计算机视觉数据集导出格式。",
+  "oneSentenceSummary": "介绍了一款开源、本地优先的桌面应用，它利用 Meta 的 SAM 2 自动化视频多边形标注，并支持多种计算机视觉数据集导出格式。",
+  "summary": "文章介绍了「SAM2 Video Polygon Annotator」，这是一款旨在简化从原始视频创建计算机视觉数据集流程的开源工具。通过利用 Meta 的 Segment Anything Model 2 (SAM 2)，该应用使用正/负点或边界框进行零样本分割，取代了手动逐点绘制多边形的繁琐过程。主要特性包括：100% 本地执行以保障隐私、跨帧对象跟踪、交互式顶点编辑器，以及对 YOLOv8、COCO 和 Pascal VOC 等七种通用导出格式的支持。该工具基于 PySide6、PyTorch 和 OpenCV 构建，提供 GPU 加速并具备 CPU 回退机制。",
+  "mainPoints": [
+    {
+      "point": "利用 SAM 2 进行零样本分割，自动化数据集准备。",
+      "explanation": "该工具不再依赖繁琐的手动多边形绘制，而是使用 Meta 的 Segment Anything 2 模型，通过点击或边界框等简单提示词，即时生成亚像素级掩码。"
+    },
+    {
+      "point": "通过本地优先架构确保数据隐私和离线能力。",
+      "explanation": "应用程序完全在用户的工作站上运行，无需云端上传或订阅服务，非常适合处理敏感或专有视频数据。"
+    },
+    {
+      "point": "通过多格式导出提供与标准 CV 框架的广泛兼容性。",
+      "explanation": "支持将标注导出为 YOLOv8、COCO、Pascal VOC 和 MOT 等七种格式，从而无缝集成到 Detectron2 或 Hugging Face 等现有训练流水线中。"
+    }
+  ],
+  "keyQuotes": [
+    "我构建了 SAM2 Video Polygon Annotator，这是一款开源、本地优先的桌面应用程序，旨在简化从原始视频素材到可用于生产的计算机视觉数据集的数据集准备流水线。",
+    "它不再绘制繁琐的逐点多边形，而是利用 Meta 的 Segment Anything 2 (SAM 2 / SAM 2.1 Hiera)，通过零样本正/负点或边界框，在毫秒内生成干净的亚像素多边形掩码。",
+    "100% 本地且私密：完全在你的工作站上运行。无云端上传，无订阅费用。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "计算机视觉",
+    "开发者工具",
+    "开源项目",
+    "Meta"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 74,
+  "wordCount": 298,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790598740000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-28 20:32:20"
+}
