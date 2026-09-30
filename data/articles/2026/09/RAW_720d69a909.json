@@ -1,0 +1,60 @@
+{
+  "id": "RAW_720d69a909",
+  "title": "Amazon CloudWatch Omni 将云监控延伸至智能体时代",
+  "url": "https://www.infoq.com/news/2026/09/aws-cloudwatchomni-observability/",
+  "date": "2026-09-30 03:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Recently launched, <a href=\"https://aws.amazon.com/cloudwatch/omni/\">Amazon CloudWatch Omni is an AI-first observability platform</a> designed to monitor, evaluate, and troubleshoot applications and autonomous AI agents in a unified environment.</p>\n   <p>For traditional applications, metrics such as latency, errors, CPU and availability are often sufficient to identify operational problems, says AWS senior specialist solutions architect Daniel Abib. <a href=\"https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/\">For AI agents, an execution can succeed technically while still producing the wrong result</a>, using the wrong tool, retrieving poor information, or taking an unnecessarily expensive path:</p>\n   <blockquote>\n    <p>Agent behavior is non-deterministic: a prompt change can degrade response quality even when standard metrics show no errors. Teams spend hours manually reviewing logs across multiple systems, unable to pinpoint what changed or why.</p>\n   </blockquote>\n   <p>To address this challenge, Omni captures end-to-end traces, evaluates correctness, coherence, retrieval, and tool selection, and lets you compare prompts, build test datasets from production traffic, run experiments, and detect regressions.</p>\n   <p>It supports several agent frameworks, including LangChain, LangGraph, CrewAI, OpenAI SDK, Strands, and Vercel AI SDK. It also uses open standards such as <a href=\"https://arize.com/glossary/openinference/\">OpenInference</a> and <a href=\"https://docs.aws.amazon.com/xray/latest/devguide/xray-services-adot.html\">AWS Distro for OpenTelemetry (ADOT)</a> and integrates with Amazon Bedrock AgentCore. For evaluations, CloudWatch Omni also supports third-party evaluators such as Braintrust, DeepEval, and Ragas.</p>\n   <p>Amazon CloudWatch Omni provide <em>unified observability</em>, bringing traditional microservices, cloud infrastructure, and generative AI/agentic workloads under the same umbrella for a unified view. It offers native OpenTelemetry support, allowing existing telemetry to feed into Omni without complex reconfigurations, as well as dual workspaces, which provide a standalone web experience for operators via single sign-on (SSO) outside the traditional AWS Management Console, alongside a free, local, developer-friendly IDE extension supporting both VS Code and Kiro.</p>\n   <p>CloudWatch Omni also support AI-powered investigations, allowing users to query logs, metrics, and traces using natural language to identify topology issues and pinpoint root causes.</p>\n   <p>AWS vice president <a href=\"https://www.linkedin.com/posts/chetkapoor_introducing-amazon-cloudwatch-omni-ai-first-activity-7508543442835271680-flgT\">Chet Kapoor summarizes the new tool</a> on LinkedIn saying that it \"helps you catch issues proactively, trace them to their root cause, and identify improvements across your agents, applications and infrastructure in one place\". Former AWS principal security consultant Jorg Huser, similarly notes that \"A unified view that explains why an agent acted the way it did is the only way to keep confidence intact at scale\".</p>\n   <p>As a final note, Deutsche Bank lead devops engineer Florin Lungu <a href=\"https://www.linkedin.com/posts/lunguflorin_introducing-amazon-cloudwatch-omni-ai-powered-activity-7508291671915409408-pL1N\">emphasizes</a> that CloudWatch Omni \"supports open standards and built-in evaluators for quality assurance\".</p>\n   <p>While CloudWatch Omni may be the natural fit for applications running on AWS, several other observability tools and platforms combine tracing, evaluation, prompt experimentation, and datasets, with a focus on agentic applications. These include <a href=\"https://smith.langchain.com\">LangChain LangSmith</a>, <a href=\"https://langfuse.com\">LangFuse</a>, <a href=\"https://arize.com/phoenix/\">Arize AI Phoenix</a>, and others.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Amazon CloudWatch Omni Extends CloudWatch into the Agent Era\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/aws-cloudwatchomni-observability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790708400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出 CloudWatch Omni，这是一个 AI 优先的可观测性平台，统一了传统基础设施与非确定性智能体工作负载的监控，不仅关注延迟和错误，还评估正确性、检索质量和工具选择。",
+  "oneSentenceSummary": "AWS 推出 CloudWatch Omni，这是一个 AI 优先的可观测性平台，统一了传统基础设施与非确定性智能体工作负载的监控，不仅关注延迟和错误，还评估正确性、检索质量和工具选择。",
+  "summary": "AWS 已推出 Amazon CloudWatch Omni，这是一个 AI 优先的可观测性平台，旨在统一环境中监控、评估和排查传统应用程序与自主 AI 智能体。AWS 解决方案架构师 Daniel Abib 认为，仅靠延迟和错误等标准指标不足以应对智能体场景，因为一次执行可能在技术上成功，却产生错误结果、使用错误的工具或采取高成本路径。Omni 能够捕获端到端追踪数据，评估正确性、连贯性、检索效果和工具选择，并支持提示词对比、基于生产流量构建测试数据集、实验运行以及回归检测。它兼容 LangChain、LangGraph、CrewAI、OpenAI SDK、Strands 和 Vercel AI SDK 等框架，采用 OpenInference 和 ADOT 开放标准，并与 Bedrock AgentCore 及 Braintrust、DeepEval、Ragas 等第三方评估器集成。此外，它提供原生 OpenTelemetry 支持、带 SSO 的双工作区、免费的 VS Code 和 Kiro IDE 扩展，以及由 AI 驱动的自然语言调查功能。AWS 副总裁 Chet Kapoor 和其他从业者强调，统一的智能体可观测性对于在规模化应用中保持信心至关重要，同时文章也提到了 LangSmith、LangFuse 和 Arize Phoenix 等替代方案。",
+  "mainPoints": [
+    {
+      "point": "传统指标不足以应对 AI 智能体，因为智能体行为具有非确定性。",
+      "explanation": "AWS 解决方案架构师 Daniel Abib 指出，智能体执行可能在技术上成功，但产生错误结果、使用错误工具、检索到劣质信息或采取不必要的高成本路径；即使标准指标显示无错误，提示词的变更也可能导致响应质量下降。"
+    },
+    {
+      "point": "CloudWatch Omni 将可观测性从基础设施延伸至智能体质量评估。",
+      "explanation": "除了端到端追踪外，它还评估正确性、连贯性、检索效果和工具选择，允许团队对比提示词、基于生产流量构建测试数据集、运行实验并检测回归问题。"
+    },
+    {
+      "point": "Omni 基于开放标准和广泛的框架支持构建，以避免锁定和重新配置。",
+      "explanation": "它支持 LangChain、LangGraph、CrewAI、OpenAI SDK、Strands 和 Vercel AI SDK，使用 OpenInference 和 AWS Distro for OpenTelemetry，集成 Bedrock AgentCore，并接受 Braintrust、DeepEval 和 Ragas 等第三方评估器。"
+    },
+    {
+      "point": "统一可观测性被视为大规模信任智能体的前提条件。",
+      "explanation": "AWS 副总裁 Chet Kapoor 表示，该工具有助于主动发现问题、追溯根本原因，并在一个地方识别智能体、应用程序和基础设施的改进点；前 AWS 安全顾问 Jorg Huser 则认为，能够解释智能体为何如此行动的统一视图，是在规模化应用中保持信心的唯一途径。"
+    },
+    {
+      "point": "CloudWatch Omni 面临来自专注智能体的可观测性平台的竞争。",
+      "explanation": "文章指出，LangChain LangSmith、LangFuse、Arize AI Phoenix 等平台已经为智能体应用结合了追踪、评估、提示词实验和数据集功能，因此 Omni 主要适用于托管在 AWS 上的工作负载。"
+    }
+  ],
+  "keyQuotes": [
+    "「智能体行为具有非确定性：即使标准指标显示无错误，提示词的变更也可能导致响应质量下降。团队往往花费数小时手动审查多个系统的日志，却无法 pinpoint 变化所在或原因。」",
+    "「帮助你主动发现问题，追溯根本原因，并在一个地方识别智能体、应用程序和基础设施的改进点。」",
+    "「能够解释智能体为何如此行动的统一视图，是在规模化应用中保持信心的唯一途径。」"
+  ],
+  "tags": [
+    "编程与工程",
+    "云原生 / DevOps",
+    "可观测性",
+    "开发者工具",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 428,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790708400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-09-30 03:00:00"
+}

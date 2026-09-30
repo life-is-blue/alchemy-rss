@@ -1,0 +1,46 @@
+{
+  "id": "RAW_41f53d56fb",
+  "title": "OpenAI DevDay 2026 实时博客",
+  "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+  "date": "2026-09-29 23:55:13",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Sep/29/openai-devday-2026-live-blog/\">\n    <p class=\"mobile-date\">29th September 2026</p>\n    <p>I’m at <a href=\"https://devday.openai.com/\">OpenAI DevDay</a> today, in Fort Mason, San Francisco. Same as <a href=\"https://simonwillison.net/2025/Oct/6/openai-devday-live-blog/\">last year</a> I’ll be live blogging the keynote and some other notes during the day.</p>\n    <p><em>OpenAI gave me a free ticket and a seat in the “creator” area for the keynote.</em></p>\n    <div id=\"live-updates\" data-entry-id=\"9505\" data-poll=\"1\">\n     <div id=\"live-update-497\" data-update-id=\"497\">\n      <p><strong>09:27</strong> I'm in the room for the keynote, which starts in half an hour.</p>\n      <p>This year <a href=\"https://claude.ai/code/session_01SXkoPaKTuW3MZKapK6uFq9\">I vibe-coded a system</a> for more easily adding photos to my live blog. I intended to do that using Codex Cloud (I built it on my phone on the way to the venue) but ran into problems with that and switched to Claude Code for web instead.\n       <br>\n       <img src=\"https://static.simonwillison.net/static/2026/live-20260929-092441.webp\" alt=\"Attendees sit facing a large stage screen displaying a pattern made of colored dots in a bright industrial hall with exposed roof trusses and stage lights.\" style=\"max-width:100%;\"></p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9505/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 开始在旧金山的 OpenAI DevDay 2026 上进行实时博客更新，并提到他使用 Claude Code 构建了活动照片上传系统。",
+  "oneSentenceSummary": "Simon Willison 开始在旧金山的 OpenAI DevDay 2026 上进行实时博客更新，并提到他使用 Claude Code 构建了活动照片上传系统。",
+  "summary": "这是来自在旧金山 Fort Mason 举行的 OpenAI DevDay 2026 实时博客系列的开篇帖子。作者指出他身处「创作者」区域，并分享了一个关于「氛围编程」（vibe-coding）的小故事，讲述了他如何构建一个系统以简化向博客添加照片的流程，同时提到由于技术问题，他从 Codex Cloud 切换到了 Claude Code for web。",
+  "mainPoints": [
+    {
+      "point": "OpenAI DevDay 2026 的实时报道",
+      "explanation": "作者正在旧金山参加该活动，并将对主题演讲及其他活动提供实时更新。"
+    },
+    {
+      "point": "「氛围编程」在活动博客中的实际应用",
+      "explanation": "作者在手机上开发了一个自定义系统以促进照片上传，展示了当前利用 AI 编程工具（特别是 Claude Code）进行快速、即时实用程序创建的工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "今年我通过「氛围编程」构建了一个系统，以便更轻松地向我的实时博客添加照片。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 编程",
+    "AI 产品与应用",
+    "大语言模型 (LLM)",
+    "代码助手"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 109,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790697313000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-29 23:55:13"
+}

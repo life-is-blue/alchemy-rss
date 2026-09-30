@@ -1,0 +1,48 @@
+{
+  "id": "RAW_960e0a8dec",
+  "title": "使用 SnapTrade、Massive 和 Alpaca 进行 Python 算法交易",
+  "url": "https://www.freecodecamp.org/news/python-algorithmic-trading-with-snaptrade-massive-alpaca/",
+  "date": "2026-09-29 22:27:04",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We just published a comprehensive, hands-on video course on the freeCodeCamp.org YouTube channel that will teach you how to build an automated, end-to-end algorithmic trading system from scratch using Python and Django.</p>\n  <p>This course guides you through engineering a functional, production-style web application called Momentum Trader.</p>\n  <p>The application evaluates a universe of stocks, calculates momentum scores across a 12-month lookback period (excluding the most recent month to avoid short-term reversals), generates buy/sell trading signals, and executes orders automatically into a brokerage account.</p>\n  <p>The course walks through the full development stack, breaking down both the quantitative logic and system architecture. :</p>\n  <ul>\n   <li>\n    <p>Web Framework &amp; Data Modeling with Django</p>\n   </li>\n   <li>\n    <p>Market Data Pipeline with Massive</p>\n   </li>\n   <li>\n    <p>Brokerage Connectivity with SnapTrade</p>\n   </li>\n   <li>\n    <p>Risk-Free Execution with Alpaca</p>\n   </li>\n  </ul>\n  <p>Watch the full tutorial on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel (2-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zH2Mg782XhA\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本教程演示了如何使用 Python、Way、Massive、SnapTrade 和 Alpaca 构建端到端的自动化算法交易系统。",
+  "oneSentenceSummary": "本教程演示了如何使用 Python、Way、Massive、SnapTrade 和 Alpaca 构建端到端的自动化算法交易系统。",
+  "summary": "文章介绍了一个全面的视频教程，用于构建名为「Momentum Trader」的自动交易应用程序。内容涵盖完整的开发生命周期，包括基于 12 个月回溯期的动量得分计算、交易信号生成，以及通过 SnapTrade 和 Alpaca API 进行的自动订单执行。",
+  "mainPoints": [
+    {
+      "point": "构建基于动量策略的功能性自动交易机器人",
+      "explanation": "该系统采用 12 个月的动量回溯期，并排除最近一个月以缓解反转风险。"
+    },
+    {
+      "point": "与现代金融 API 和工具的集成",
+      "explanation": "项目利用 Way 处理市场数据管道，使用 SnapTrade 连接经纪商，并通过 Alpaca 进行模拟交易/执行。"
+    },
+    {
+      "point": "全栈技术工程方法",
+      "explanation": "教程涵盖了 Django 中的数据建模、量化逻辑实现以及自动订单执行工作流。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "编程与工程",
+    "后端开发",
+    "编程语言",
+    "Python",
+    "FastAPI"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 131,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790692024000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-29 22:27:04"
+}
