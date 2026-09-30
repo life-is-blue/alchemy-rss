@@ -1,4 +1,4 @@
-> **更新时间**: 2026-09-30 08:54:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-09-30 15:43:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -656,49 +656,37 @@
 
 ### [Cloudflare-新增可配置的-HTTP-Vary-标头支持以防止缓存抖动](https://www.infoq.com/news/2026/09/cloudflare-http-vary/)
 
-2026-09-29 22:14:00 | 标签: 编程与工程, 系统设计, 性能优化, 后端开发, 云原生 / DevOps
-
-> Cloudflare 已在其全球边缘网络中实现了对 HTTP Vary 响应标头的原生支持。为了解决历史上存在的「缓存抖动」问题——即客户端标头的细微差异导致产生过多的缓存变体——Cloudflare 将该过程解耦为两个阶段：源服务器通过 Vary 标头指定依赖项，而 Cloudflare Cache Rules 决定如何处理这些标头（规范化、透传或绕过）。这种动态方法确保仅在源服务器明确要求时才发生缓存键扩展，提供了一种比手动自定义缓存键或专用 Workers 更高效的替代方案。
+2026-09-29 22:14:00
 
 
 
 ### [为整个互联网构建证书颁发机构](https://blog.cloudflare.com/cloudflare-certificate-authority/)
 
-2026-09-29 21:00:44 | 标签: 编程与工程, 安全, Cloudflare, Security, Cryptography
-
-> 本文深入剖析了 Cloudflare 决定自建并运营其证书颁发机构（CA）的过程。文章探讨了公钥基础设施（PKI）生态系统的技术复杂性、根密钥管理的严格安全要求，以及大规模签发数百万张证书的运营挑战。文中讨论了从依赖第三方 CA 到建立独立信任锚点的转变、自动化验证流程的实施，以及该基础设施在实现 HTTPS 普及化和准备后量子密码学等未来加密标准方面的战略重要性。
+2026-09-29 21:00:44
 
 
 
 ### [使用-Merkle-Tree-Certificates-构建后量子证书颁发机构](https://blog.cloudflare.com/pq-ca-with-mtcs/)
 
-2026-09-29 21:00:44 | 标签: 编程与工程, 安全, 量子计算, 贸易与关税, Cloudflare
-
-> 文章讨论了后量子密码学（PQC）的迫切需求，因为量子计算机正威胁着目前用于保护 Web 公钥基础设施（PKI）的 RSA 和 ECC 算法。Cloudflare 提出并详细阐述了利用 Merkle Tree Certificates 构建后量子证书颁发机构（CA）的方案。该方法利用通常被认为具有抗量子特性的基于哈希的签名，创建一个可扩展且安全的信任根。文章分析了不同 PQC 签名方案之间的权衡、证书大小的挑战，以及将全球 TLS 生态系统过渡到量子安全状态所需的架构要求。
+2026-09-29 21:00:44
 
 
 
 ### [你的域名是否使用了后量子加密？现在你可以亲自查看](https://blog.cloudflare.com/post-quantum-visibility/)
 
-2026-09-29 21:00:44 | 标签: 编程与工程, 安全, 量子计算, Cloudflare, Security
-
-> Cloudflare 正在帮助网站所有者监控其域名上后量子密码学（PQC）的采用情况。随着量子计算技术的进步，RSA 和 ECC 等传统加密方法容易受到“先收集，后解密”攻击的影响。为了应对这一挑战，Cloudflare 实施了后量子密钥交换机制（如 X25519Kyber768），并提供了分析和可视化工具，使管理员能够看到使用这些抗量子算法的流量百分比。本文阐述了 PQC 的必要性、正在部署的具体算法，以及新的可视化功能如何帮助用户追踪向量子安全网络的过渡。
+2026-09-29 21:00:44
 
 
 
 ### [通过-Cloudflare-Application-Profiles-实施正向安全](https://blog.cloudflare.com/application-profiles/)
 
-2026-09-29 21:00:44 | 标签: 编程与工程, 安全, API设计, 零信任, Cloudflare
-
-> Cloudflare Application Profiles 采用「正向安全」或「白名单」方法来保障应用安全。与依赖负向安全（即拦截已知攻击模式）的传统 WAF 不同，Application Profiles 使用户能够精确定义其特定应用的合法流量特征——包括允许的 HTTP 方法、URI 路径以及预期的查询参数。任何不符合此预定义配置文件的请求都会被自动拦截。这种方法通过中和零日漏洞利用以及原本可能绕过基于签名检测的未授权 API 访问，显著减少了攻击面。
+2026-09-29 21:00:44
 
 
 
 ### [Kubernetes-团队获得更安全的方式查看自己的-GPU-指标](https://www.infoq.com/news/2026/09/kubernetes-gpu-metrics/)
 
-2026-09-29 20:00:00 | 标签: 编程与工程, 云原生 / DevOps, 可观测性, 系统设计, 安全
-
-> Adobe 为多租户 Kubernetes 集群引入了一种安全的自助式可观测性模式，专门解决对昂贵 GPU 利用率可见性的需求。为了避免授予对中央 Prometheus 实例的直接访问所带来的安全和性能风险，Adobe 使用 NGINX 和 kube-rbac-proxy 实现了租户感知的代理层。关键组件 prom-label-proxy 会自动对 PromQL 查询强制执行命名空间约束。该系统还通过精选的远程写入支持可选的每租户 Prometheus 实例，显著减少存储的序列数并增强隔离性。虽然与 Mimir 或 Cortex 类似，但 Adobe 的方法侧重于在共享 Prometheus ...
+2026-09-29 20:00:00
 
 
 
