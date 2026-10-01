@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-01 08:56:43 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-01 16:00:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -788,9 +788,7 @@
 
 ### [SvelteKit-3-进入发布候选阶段，配置迁移至-Vite-并弃用-$lib-别名](https://www.infoq.com/news/2026/09/sveltekit-3-vite/)
 
-2026-09-30 13:58:00 | 标签: 编程与工程, 开源项目, 前端与 Web, SvelteKit, Vite
-
-> Svelte 团队宣布 SvelteKit 3 RC 版本，标志着架构上的重大转变。主要变更包括：将配置从 svelte.config.js 迁移至 vite.config.ts，弃用 $lib 别名以符合标准 Node 模式，以及要求使用 Svelte 5。此次更新还引入了改进的错误处理、浅层路由（shallow routing），以及用于实现类 RPC 功能的实验性远程函数（remote functions）。
+2026-09-30 13:58:00
 
 
 
