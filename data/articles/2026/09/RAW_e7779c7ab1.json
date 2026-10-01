@@ -1,0 +1,60 @@
+{
+  "id": "RAW_e7779c7ab1",
+  "title": "SvelteKit 3 进入发布候选阶段，配置迁移至 Vite 并弃用 $lib 别名",
+  "url": "https://www.infoq.com/news/2026/09/sveltekit-3-vite/",
+  "date": "2026-09-30 13:58:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Svelte team has moved <a href=\"https://svelte.dev/blog/sveltekit-3-release-candidate\">SvelteKit 3</a> into the release candidate phase, framing the update as a chance to prune older code and lay groundwork for the framework's evolution rather than as a feature heavy launch. A stable release with no further breaking changes is expected to follow if testing goes smoothly.</p>\n   <p>The headline shift is where configuration lives as SvelteKit 2's <code>svelte.config.js</code> is gone, and configuration now sits in <code>vite.config.ts</code> so the Vite plugin can read it synchronously instead of waiting on an asynchronous resolution step that could not start until the full Vite config resolved. The <a href=\"https://next.svelte.dev/docs/kit/@sveltejs-kit-vite\">reference docs</a> note that configuring through Vite arrived back in version 2.62, so the RC finalises a transition already underway.</p>\n   <p>The most debated change is the retirement of the <code>$lib</code> alias in favour of <code>#lib</code>, which leans on Node's native <a href=\"https://nodejs.org/api/packages.html\">subpath imports</a> declared in <code>package.json</code> rather than a SvelteKit specific path that Vite and TypeScript had to coordinate. Developers also now need file extensions, turning <code>$lib/foo</code> into <code>#lib/foo.js</code>.</p>\n   <p>The <a href=\"https://next.svelte.dev/docs/kit/migrating-to-sveltekit-3\">migration guide</a> points existing apps at the CLI command:</p>\n   <pre>\r\n<code class=\"language-bash\">npx sv@next migrate sveltekit-3 --tasks all --confirm\r\n</code></pre>\n   <p>On Reddit, one developer <a href=\"https://www.reddit.com/r/sveltejs/comments/1vmmhv2/comment/p3b11ol/\">wrote</a> that they hate the lib change:</p>\n   <blockquote>\n    <p>I hate the <code>$lib</code>-&gt;<code>#lib</code> change, it now makes it inconsistent with other things like <code>$app</code>. Hopefully it's not enforced to be <code>#lib</code> and we can just use whatever alias we want</p>\n   </blockquote>\n   <p>While a replier <a href=\"https://www.reddit.com/r/sveltejs/comments/1vmmhv2/comment/p3b5hop/\">agreed before conceding</a> it was \"a great change\":</p>\n   <blockquote>\n    <p>Yeah what's the logic in that?</p>\n    <p>Edit: oh nvm it's a great change. They're moving it to the native package.json alias definition. This means you can use the alias in lib/server stuff that you might want to run without sveltekit too.</p>\n   </blockquote>\n   <p>In the original <a href=\"https://github.com/sveltejs/kit/issues/16182\">GitHub issue</a>, maintainer Rich Harris was candid about the tradeoff, saying he would \"love for everyone to use nodenext\" but that \"users might revolt\" over extensionless imports, adding that anyone opposed \"can always create their own alias\".</p>\n   <p><code>tsconfig.json</code> now extends <code>$app/tsconfig</code> instead of the generated <code>.svelte-kit</code> file, service workers pull from <code>$app/env</code>, <code>$app/paths</code> and a new <code>$app/manifest</code> module, and <a href=\"https://svelte.dev/docs/kit/environment-variables\">explicit environment variables</a> graduate from experimental with optional Standard Schema validation. Error handling also improves now that SvelteKit 3 requires Svelte 5: <code>+error.svelte</code> components render on both load and render failures, every error flows through <code>handleError</code>, and stack traces get sourcemaps. Shallow routing moves from <code>pushState</code> to <code>goto</code> with a <code>shallow: true</code> option.</p>\n   <p>Under the hood, SvelteKit 3 now requires <a href=\"https://vite.dev/guide/api-environment\">Vite 8</a> and its <a href=\"https://rolldown.rs/\">Rolldown</a> bundler for faster builds, though the team declined to adopt <code>FetchableDevEnvironment</code>, arguing it forces frameworks to absorb too much complexity. Still behind an experimental flag are <a href=\"https://next.svelte.dev/docs/kit/remote-functions\">remote functions</a>, a type safe client server RPC approach that echoes React Server Actions and Next.js server functions, and which the team says makes <code>load</code> functions and <code>actions</code> \"look a bit clunky\" by comparison.</p>\n   <p>SvelteKit is the official application framework for <a href=\"https://svelte.dev/\">Svelte</a>, built on top of Vite and maintained by the Svelte team, now part of Vercel. It handles routing, server-side rendering, data loading and deployment adapters so developers can build full-stack web applications with the compiler-based Svelte UI framework rather than a virtual DOM. Since its <a href=\"https://svelte.dev/blog/announcing-sveltekit-1.0\">1.0 release</a> in late 2022 it has become the default way to build Svelte apps, positioning itself against React frameworks like Next.js and Remix while leaning on Svelte's smaller runtime and reactive syntax.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"SvelteKit 3 Reaches Release Candidate, Moving Config to Vite and Retiring the $lib Alias\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/09/sveltekit-3-vite/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790747880000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "SvelteKit 3 进入发布候选（RC）阶段，引入配置向 Vite 的迁移，并移除颇具争议的 $lib 别名，转而采用原生 Node 子路径导入。",
+  "oneSentenceSummary": "SvelteKit 3 进入发布候选（RC）阶段，引入配置向 Vite 的迁移，并移除颇具争议的 $lib 别名，转而采用原生 Node 子路径导入。",
+  "summary": "Svelte 团队宣布 SvelteKit 3 RC 版本，标志着架构上的重大转变。主要变更包括：将配置从 svelte.config.js 迁移至 vite.config.ts，弃用 $lib 别名以符合标准 Node 模式，以及要求使用 Svelte 5。此次更新还引入了改进的错误处理、浅层路由（shallow routing），以及用于实现类 RPC 功能的实验性远程函数（remote functions）。",
+  "mainPoints": [
+    {
+      "point": "配置迁移变革",
+      "explanation": "SvelteKit 3 将配置从专用的 svelte.config.js 文件移至 vite.config.ts，从而更好地融入更广泛的 Vite 生态系统。"
+    },
+    {
+      "point": "弃用 $lib 别名",
+      "explanation": "流行的 $lib 别名被移除，转而采用原生 Node.js 子路径导入，减少了框架特有的“魔法”特性，提升了标准兼容性。"
+    },
+    {
+      "point": "强制依赖 Svelte 5",
+      "explanation": "SvelteKit 3 现在依赖于 Svelte 5，利用其最新的响应式特性和基于编译器的功能。"
+    },
+    {
+      "point": "引入浅层路由",
+      "explanation": "通过 goto 函数新增了浅层路由能力，允许基于状态的导航，无需完全重新加载页面或污染历史记录。"
+    },
+    {
+      "point": "实验性远程函数",
+      "explanation": "该框架正朝着类型安全的客户端-服务器 RPC 模型（远程函数）发展，以简化数据获取和操作处理。"
+    }
+  ],
+  "keyQuotes": [
+    "Svelte 团队已将 SvelteKit 3 推进至发布候选阶段，并将此次更新视为清理旧代码的机会",
+    "最具争议的变化是弃用 $lib 并改用 #lib",
+    "团队表示，相比之下 load 函数和 actions 显得有些笨拙"
+  ],
+  "tags": [
+    "编程与工程",
+    "开源项目",
+    "前端与 Web",
+    "SvelteKit",
+    "Vite"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 550,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790747880000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-09-30 13:58:00"
+}

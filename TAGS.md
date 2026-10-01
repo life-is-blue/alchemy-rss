@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-10-01 04:26:01 | [返回首页](/README.md)
+**更新时间**: 2026-10-01 08:56:43 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16531)
-- [软件架构](#architecture) (26)
-- [前端与全栈](#frontend-fullstack) (1006)
-- [DevOps](#devops) (786)
+- [AI & 大模型](#ai-llm) (16558)
+- [软件架构](#architecture) (27)
+- [前端与全栈](#frontend-fullstack) (1007)
+- [DevOps](#devops) (787)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7047)
+- [其他](#other) (7049)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Gemini-4-Argon：我们-frontiers-智能时代的下一章](https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/) - AI 精选
+- [我们能预测机器人将从事的工作吗？](https://www.anthropic.com/research/what-work-can-robots-do) - AI 精选
+- [SynthID-Bio：合成生物学的水印方法](https://deepmind.google/blog/introducing-synthid-bio/) - AI 精选
 - [帮大家总结了一下凌晨的-OpenAI-2026-开发者大会。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647686841&idx=1&sn=630c0dc22de47c9c2f58bd5253a91a9a) - AI 精选
 - [DeepSeek-Harness-桌面端：现在，开箱即用。](https://mp.weixin.qq.com/s?__biz=MzY4NzM3MTkxOQ==&mid=2247483805&idx=1&sn=b4fbd172f68ae56c5e201b9186b1e8a5) - AI 精选
 - [一个分镜跑-1000-张图：当技术免费，审美成了唯一的硬通货](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522940&idx=2&sn=87b19b0dc3bd770f8afc0d21b44255fc) - AI 精选
@@ -39,11 +42,8 @@
 - [通过要求智能体加速代码，写出比最先进库更快的-Rust-代码](https://minimaxir.com/2026/09/agentic-iteration/) - AI 精选
 - [10-个人加一套-AI-软件，做出-100-个人的增长：AI-时代企业服务的算账逻辑](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522808&idx=1&sn=1d808b15edf5c131b65fdfd01b5e63a5) - AI 精选
 - [YC-最新判断：Harness-比模型更重要](https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494462&idx=1&sn=adf8c2849a4f781079ec81286e9d9fef) - AI 精选
-- [Jev-能成为更好的智能体评估器吗？](https://www.langchain.com/blog/jev-agent-evals-langsmith) - AI 精选
-- [AI-写代码飞快，为何交付没有变快？小红书-Muse-的-Agentic-架构实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247667384&idx=2&sn=4da10732f109d6188826136e62126d21) - AI 精选
-- [于是转身向具身走去｜对话王家伟：深朴智能-00-后首席科学家](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649111995&idx=1&sn=6ecd657a0c1bd4133b465018aac0f5ea) - AI 精选
 
-- [查看全部 16531 篇...](/details/tags/ai-llm.md)
+- [查看全部 16558 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -56,6 +56,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [像数据架构师一样思考](https://www.dataengineeringweekly.com/p/thinking-like-a-data-architect) - 编程 更多
 - [如何将-LEGO-架构应用于-Flutter-完整手册](https://www.freecodecamp.org/news/how-to-implement-lego-architecture-in-flutter-handbook/) - 编程 更多
 - [理解渐进式坍塌：如何避免连锁故障](https://www.infoq.com/presentations/progressive-collapse-system-resilience/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [读取路径-与-写入路径：策略与技术](https://blog.bytebytego.com/p/the-read-path-versus-the-write-path) - 编程 更多
@@ -70,9 +71,8 @@
 - [我为什么不喜欢-DDD](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546731&idx=1&sn=3021387bdcf21e5b2afa55e731e5527d) - 编程 更多
 - [我为什么不喜欢-DDD](https://juejin.cn/post/7565732382312005658) - 编程 更多
 - [基于-CQRS-的-Netflix-Tudum-如何支持-2000-万用户](https://blog.bytebytego.com/p/how-netflix-tudum-supports-20-million) - 编程 更多
-- [Netflix-通过-RAW-Hollow-内存对象存储优化-Tudum-的-CQRS-架构](https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 
-- [查看全部 26 篇...](/details/tags/architecture.md)
+- [查看全部 27 篇...](/details/tags/architecture.md)
 
 
 ## <a id="frontend-fullstack"></a>前端与全栈
@@ -101,7 +101,7 @@
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 
-- [查看全部 1006 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1007 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 786 篇...](/details/tags/devops.md)
+- [查看全部 787 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7047 篇...](/details/tags/other.md)
+- [查看全部 7049 篇...](/details/tags/other.md)
 
 

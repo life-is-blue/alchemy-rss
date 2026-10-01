@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-01 04:26:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-01 08:56:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -33,6 +33,14 @@
 ### [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-08 00:00:00
+
+
+
+### [像数据架构师一样思考](https://www.dataengineeringweekly.com/p/thinking-like-a-data-architect)
+
+2026-09-30 12:17:33 | 标签: 编程与工程, 数据工程, 可观测性, 系统设计, Architecture
+
+> 作者回顾了他在大型公司构建数据基础设施的经验，指出导致团队失败的往往是设计糟糕的系统而非人员本身。他为数据领导者引入了一套评估框架，依据架构是否能提供可操作的信号以及是否减少了人工“等待时间”来进行评判。其核心理念是将重复性工作从消费者端转移至系统内部，涵盖发现、发布、指标定义、迁移和恢复这五个领域。
 
 
 
