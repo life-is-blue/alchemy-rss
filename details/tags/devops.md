@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-02 09:14:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-02 15:44:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -656,65 +656,49 @@
 
 ### [Introducing-Workers-KV-Instant-—-powered-by-Quicksilver](https://blog.cloudflare.com/workers-kv-instant/)
 
-2026-10-01 21:14:22 | 标签: 编程与工程, 分布式系统, 云原生 / DevOps, 性能优化, Cloudflare
-
-> Cloudflare 发布了 Workers KV Instant，这是一项为 Cloudflare Workers 打造的新存储产品，构建在 Quicksilver 之上。Quicksilver 是该公司用于支撑核心配置和 DNS 系统的全球分布式键值存储。文章解释称，传统的 Workers KV 是最终一致性的，并针对高读取量、低写入频率的场景进行了优化，但这会引入某些工作负载无法容忍的传播延迟。Workers KV Instant 通过利用 Quicksilver 的架构来提供快速且全球一致的读取，使写入操作几乎立即在整个网络中可见。文章详细描述了设计动机、现有 KV 模型与 Insta...
+2026-10-01 21:14:22
 
 
 
 ### [Cloudflare-K2-登场：无服务器事件流平台](https://blog.cloudflare.com/cloudflare-k2-streams/)
 
-2026-10-01 21:01:51 | 标签: 编程与工程, 云原生 / DevOps, 分布式系统, 后端开发, 平台工程
-
-> Cloudflare 推出 K2，一款基于 Cloudflare Workers 开发者平台构建的无服务器事件流服务。K2 旨在消除运行和扩展 Kafka 集群等事件流基础设施的运营负担，让开发者几行代码即可创建流、发布事件并从 Workers 中消费。文章将 K2 定位为 Cloudflare 更广泛的开发者平台战略的一部分，把事件流作为与 Workers、Durable Objects、Queues 和 R2 并列的一等基本原语。介绍了产品的核心概念（流、生产者、消费者）、无服务器扩展模型，以及它如何与 Workers 运行时和现有 Cloudflare 服务集成。本文是一篇产品新闻，而非...
+2026-10-01 21:01:51
 
 
 
 ### [Workers-对现代加密算法的支持](https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/)
 
-2026-10-01 21:01:30 | 标签: 编程与工程, 安全, 机器学习, 量子计算, Cloudflare
-
-> Cloudflare 宣布其 Workers 运行时现已支持现代加密算法，具体包括由 NIST 标准化的后量子标准 ML-KEM（密钥封装）和 ML-DSA（数字签名）。文章解释了量子计算机如何威胁当前广泛使用的公钥加密算法（如 RSA 和 ECDSA），以及为何在量子威胁完全显现之前迁移到后量子算法对长寿命的数据和系统至关重要。文章详细介绍了这些算法如何通过 Workers 的 Web Crypto API 暴露给开发者，运行它们在边缘时的性能和包大小考虑，以及实际的采用步骤。该文章将此定位为 Cloudflare 更广泛的后量子路线图的一部分，该路线图已涵盖 TLS 和其他产品，并认为边缘...
+2026-10-01 21:01:30
 
 
 
 ### [我们希望你在-Cloudflare-上构建下一代-Git-平台](https://blog.cloudflare.com/next-git-platform-on-cloudflare/)
 
-2026-10-01 21:01:30 | 标签: 编程与工程, 开发者工具, 云原生 / DevOps, 后端开发, 分布式系统
-
-> Cloudflare 正呼吁开发者在 Cloudflare Workers 上构建下一代 Git 平台。该文认为，现有的 Git 托管服务既昂贵又集中，无法适应现代边缘优先、AI 辅助的开发工作流。Cloudflare 将其开发者平台（包括 Workers、Durable Objects、R2 存储和 D1 数据库）定位为新一类 Git 平台的理想基础，这类平台具有全球分布、低成本和与 AI 编码智能体深度集成的特点。文章介绍了可用的技术构建模块，讨论了当前 Git 托管模式的局限性，并邀请社区进行实验与构建。这被 framed 为 Cloudflare 更广泛的生日周公告的一部分，以及其拥有...
+2026-10-01 21:01:30
 
 
 
 ### [Cloudflare-Basin-正式发布：一个开放的-Serverless-数据平台](https://blog.cloudflare.com/cloudflare-basin/)
 
-2026-10-01 20:58:48 | 标签: 编程与工程, 云原生 / DevOps, 数据工程, 数据库, 平台经济
-
-> 这篇 Cloudflare 博客文章宣布了 Cloudflare Basin 的发布，将其定义为一个现已正式可用的开放式 Serverless 数据平台。该文章带有「Birthday Week」、「Data Platform」、「Developers」、「Product News」、「R2」和「SQL」等标签，表明这是一个与 Cloudflare 生日周相关的产品公告，其核心是一个围绕 R2 对象存储和 SQL 构建的数据平台。然而，抓取到的正文内容主要由博客导航、字母顺序的标签索引及相关链接组成，缺乏实质性的解释文本。因此，Basin 的具体架构、功能、定价和可用性细节无法从现有内容中验证，...
+2026-10-01 20:58:48
 
 
 
 ### [如何调试卡住的-Kubernetes-部署-rollout：实践动手实验](https://www.freecodecamp.org/news/how-to-debug-a-stuck-kubernetes-rollout-with-a-hands-on-lab/)
 
-2026-10-01 19:02:33 | 标签: 编程与工程, 云原生 / DevOps, 系统设计, 开发者工具, 性能优化
-
-> 本教程将引导读者完成一次可丢弃的 kind 基础 Kubernetes 实验。在这个实验中，我们故意以三种方式破坏一个正常的 v1 到 v2 滚动更新：缺少镜像标签、指向不存在路径的就绪探针，以及匹配无节点的 nodeSelector。对于每种失败场景，读者需要检查 Deployment 的状态条件（Available=True 与 Progressing=False 配合 ProgressDeadlineExceeded），通过 UID 追踪 ReplicaSet 和 Pod 的所有权链，查看按 Pod UID 过滤的事件，并检查 EndpointSlice 以确认哪些 Pod 实际上正在提...
+2026-10-01 19:02:33
 
 
 
 ### [高可用性并非弹-resilience:-为何云系统在最关键时刻会失败](https://www.infoq.com/articles/high-availability-not-resilience-cloud/)
 
-2026-10-01 17:00:00 | 标签: 编程与工程, 分布式系统, 云原生 / DevOps, 系统设计, 可观测性
-
-> 本文认为高可用性 (HA) 和弹 resilience 经常被混淆，但它们解决的是不同的问题。HA 应对的是预期、已建模的故障；弹 resilience 则用来从从未设计过的系统条件中恢复。TLS 1.3 升级事故说明了这一差距：Route 53 的 HTTPS 健康检查需要 TLS 1.2，因此 CDN 将一个健康的区域标记为不健康并自动 rerouted 流量，而内部遥测显示一切正常，因为故障发生在控制平面而非数据平面。作者指出了三种会扩大差距的模式：跨冗余的相关故障 (错误的配置推送、投毒缓存)、未经测试的优雅降级，以及腐化的恢复路径。组织上，即使在明确了 uptime 责任人时，恢复责...
+2026-10-01 17:00:00
 
 
 
 ### [小规模-IT-团队维护-SaaS-基础设施的-7-款工具](https://www.sitepoint.com/7-tools-for-maintaining-saas-infrastructure-with-a-small-it-team/)
 
-2026-10-01 15:00:07 | 标签: 编程与工程, 云原生 / DevOps, 可观测性, 安全, 后端开发
-
-> 本文探讨了小规模 SaaS 团队经常面临的痛点：应用程序虽然在线，但后台任务、登录流程或恢复路径可能依然失效。文章针对不同的运维压力推荐了七款工具：Cloudflare 用于边缘流量和缓存，Grafana Cloud 用于指标/日志/追踪，Sentry 用于应用层错误，Better Stack 用于可用性检查和值班告警，Tailscale 用于内部系统的私有访问，1Password 用于团队凭据管理，以及 restic 用于加密且可还原的备份。此外，第八部分介绍了 NAKIVO Backup & Replication，用于全工作负载保护和站点恢复。作者强调这是一份基于经验的精选清单而非基准测...
+2026-10-01 15:00:07
 
 
 

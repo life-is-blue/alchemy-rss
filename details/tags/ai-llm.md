@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-02 09:14:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-02 15:44:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,25 +8,19 @@
 
 ### [Claude-时代的科学](https://www.anthropic.com/research/claude-shaped-science)
 
-2026-10-02 02:50:14 | 标签: AI 研究, LLM, 科学计算, 物理学, 机器学习
-
-> Matthew Schwartz 教授讨论了 AI 加速科学研究方法的转变，从将 LLM 视为通用研究助手转变为将其视为合作者。通过识别「Claude 形状」问题——即那些与 AI 在编码、海量知识检索和跨学科连接方面的优势相匹配的问题——他开发了 BootLoops。这个开源工具包允许在高能物理、生态学和遗传学等迥异领域进行精确计算。文章强调了这种迭代过程如何弥合人类专业知识与 AI 能力之间的“阻抗不匹配”，并成功解决了此前无法解决的椭圆函数积分问题。
+2026-10-02 02:50:14
 
 
 
 ### [永恒的互补品](https://openai.com/index/the-eternal-complement)
 
-2026-10-02 01:00:00 | 标签: AGI 研究, AI 研究前沿, AI 商业, 科学前沿, LLM
-
-> 这是 OpenAI 新平台 Intelligence Age 系列的第一篇随笔，作者 Hemanth Asirvatham 与 Elliott Mokski 明确声明观点仅代表个人。文章从「人类已能窥见宇宙开端却从未离开月球」这一反差出发，指出前沿智能与「实现想法的能力」在经济学上是互补品：伽利略的望远镜只需几十双手，而韦布望远镜则需要 14 个国家、300 个组织的协作。作者引用研究生产率下降、技术人员增速是科学家两倍、芯片厂成本上升等数据，说明进步的执行成本在增加，并提出「制度智能」概念——即由法律、官僚体系、资金机制与供应链构成的执行智慧。文章随后区分了两种未来：在「深度文明」中，超级智...
+2026-10-02 01:00:00
 
 
 
 ### [Introducing-Olmo-core-3:-为大规模-MoE-设计的开放、可扩展训练基础设施](https://huggingface.co/blog/allenai/olmocore3)
 
-2026-10-01 23:01:43 | 标签: Mixture of Experts, 模型训练与推理, 开源, AI 基础设施, LLM
-
-> Olmo-core 3 是 Allen AI 用于开发大语言模型开放框架的一次重大升级。它采用重新设计的开放 MoE 训练系统，旨在将 MoE 训练扩展到万亿参数规模且不牺牲计算效率。该框架用分布数据并行 (DDP) 系统取代了早期的 FSDP 实现，使专家模型常驻 GPU 并将相关数据路由至专家，从而避免了重复的权重聚合。在 8 块 NVIDIA B300 GPU 的基准测试中，一个 470 亿参数的 MoE 每块 GPU 每秒可处理 52，000 个 token，约为之前实现方案 (19，400 tokens/sec/GPU) 的 2.7 倍。系统结合了专家并行、流水线并行和分布优化器三种...
+2026-10-01 23:01:43
 
 
 
@@ -5606,9 +5600,7 @@
 
 ### [每日脉动：RoR-作者再次引发‘手写代码终结论’辩论](https://blog.pragmaticengineer.com/the-pulse-ror-creator-sparks-new-death-of-coding-by-hand-debate/)
 
-2026-10-02 00:44:13 | 标签: AI 编程, 软件工程, 开发者工具, 职业成长, 大语言模型
-
-> 本文报道了戴夫·海诺迈尔·汉森(DHH)在 Rails World 主题演讲上宣布，37signals 已经“放下笔”不再手写代码，将 Opus 4.5 的 2025 年 11 月发布视为智能体时代的拐点。DHH 透露 37signals 正在开发原生移动应用，正在将后端服务迁移到 Rust，并表示他不再认为自己是一名专业程序员。作者把这与他本年一月的预测——即 AI 将编写几乎所有代码——相联系，并记录了这段混乱的转变过程：一位匿名的大科技工程师发布了关于令人精疲力尽的 AI 驱动工作流程的病毒式吐槽；软件质量下降；以及他在 Uber Eats 新添加项选择器中发现的三个粗陷的 Bug。作者...
+2026-10-02 00:44:13
 
 
 
@@ -14704,225 +14696,169 @@
 
 ### [学术是抱负之所在-——-Alex-Zhang，MIT](https://www.latent.space/p/rlm)
 
-2026-10-02 08:28:04 | 标签: 递归语言模型, GPU 内核, AI 智能体, AI 工程, 大语言模型
-
-> 在本次访谈中，Alex Zhang 探索了 AI 开发格局的转变。他强调了从标准推理模型到 2026 年递归语言模型（RLMs）的转变，在那种情况下，模型将其提示词（prompts）视为迭代改进的对象。讨论深入探讨了「GPU 模式」，指出尽管 AI 现在可以生成 GPU 内核，但人类专家对于验证、效率以及避免大规模基于 Token 的暴力搜索仍然至关重要。Zhang 还提到了研究品味的重要性、智能体群（agent swarms）的潜力，以及未来一个单一界面可能掩盖背后复杂的自主智能体群的景。
+2026-10-02 08:28:04
 
 
 
 ### [Cohere-发布-Embed-5：与-Voyage-4-Large、Gemini-Embedding-2-及-OpenAI-的对比](https://www.marktechpost.com/2026/10/01/cohere-releases-embed-5/)
 
-2026-10-02 01:13:14 | 标签: Cohere, Embeddings, RAG, Machine Learning, LLM
-
-> Cohere 推出了最新的嵌入模型 Embed 5，提供两个版本：追求最高检索质量的 Pro 和追求低延迟、低成本的 Fast。两个模型均支持 128K 上下窗口、100 多种语言以及融合的文本图像输入。一项核心创新是 Pro 和 Fast 共享相同的向量空间，允许用户使用 Pro 进行索引并使用 Fast 进行查询，从而优化成本。这些模型利用俄罗斯俄斯矩阵表示学习（Matryoshka representation learning）允许灵活的输出维度（从 2048 到 256），显著降低了存储成本。Vividore V3 基准测试显示，Embed 5 Pro 优于竞争对手，特别是在金融相关...
+2026-10-02 01:13:14
 
 
 
 ### [推理拍卖：为什么争抢-GPU-优先权破坏-KV-缓存局部性](https://dev.to/deanlee/the-inference-auction-why-bidding-for-gpu-priority-breaks-kv-cache-locality-3m22)
 
-2026-10-02 00:29:54 | 标签: LLM 推理, KV 缓存优化, 代币经济学, 性能优化, AI 智能体
-
-> 当前前端实验室像对待公用事业一样定价计算资源，使用统一的按词收费标准和粗略的层级定价，这假设人类聊天工作负载。但自主代理打破了这一假设，因为它们会产生突发的、有状态的流量，其中有的请求紧急，有的可以等待。 textbook 的经济解决方案是拍卖，但在大模型服务中，这与硬件物理特性冲突：诸如 SGLang 这样的现代引擎依靠前缀缓存和基数树调度，而严格按出价排序请求会破坏缓存局部性。凯文·哈里斯、西达尔·普拉萨德、阿什·特罗克曼、尼卡·哈格塔拉布和迈克尔·I·乔丹的新论文衡量了这一权衡关系，发现无约束的出价排序会使平均延迟增加多达十二倍，而缓存命中率急剧下降。他们的解决方案将拍卖限制在请求基数树...
+2026-10-02 00:29:54
 
 
 
 ### [Braşov-还是-Brașov？15-个大模型写对我的城市名，直到你先写错](https://dev.to/danielbutnar/brasov-or-brasov-15-llms-spell-my-city-right-until-you-spell-it-wrong-first-75a)
 
-2026-10-02 00:13:07 | 标签: AI 评估与基准测试, 大语言模型, Kaggle, 机器翻译, 提示工程
-
-> 罗马尼亚语使用带下方逗号的 ș 和 ț（U+0219/U+021B），但 20 世纪 90 年代的编码被迫使用了形似 cedilla 的字符（U+015F/U+0163），这一字符至今仍充斥着罗马尼亚网络：2026 年 9 月 30 日检查的 35 个网站首页中，30 个包含 cedilla 字母。作者在 Kaggle 上构建了一个包含六项任务（写作、回声、修正、查看、还原、编码）的基准测试，涵盖 15 个模型，并通过 Unicode 代码点对每个答案进行评分，未使用 LLM 评判。写作任务几乎已被解决（15 个模型中有 11 个完全正确），但当相同文本以 cedilla 输入时，无错误答案下...
+2026-10-02 00:13:07
 
 
 
 ### [Albertsons-如何从内部重新构想零售业](https://openai.com/index/albertsons-reimagining-retail)
 
-2026-10-02 00:00:00 | 标签: OpenAI, 消费与零售, AI 产品与应用, AI 商业, 合作伙伴关系
-
-> 本文为 OpenAI 公司的一则公告，介绍了 OpenAI 与 Albertsons 公司之间达成的战略合作。Albertsons 是一家经营超过 2200 家门店（包括 Safeway、Vons、Jewel-Osco 等）、每周服务超过 3600 万客户的杂货零售商。该合作聚焦两条主线：一是内部方面，Albertsons 正在逐步推出 ChatGPT Enterprise 及基于 OpenAI API 的工具，覆盖数字购物、门店运营、订单 fulfillment、商品陈列及客户体验等领域，采用“先集中发展能力，再推广”的 phased 策略；二是外部方面，ChatGPT 中全新的 Safew...
+2026-10-02 00:00:00
 
 
 
 ### [Barclays-规模化部署-Claude-以升级运营并提升客户体验](https://www.anthropic.com/news/barclays-scales-claude)
 
-2026-10-01 23:19:00 | 标签: 商业与创业, AI 编程, 企业级 AI, AI 工作流, AI Agent
-
-> 英国综合性银行 Barclays 正在扩大与 Anthropic 的战略合作，将其企业级 AI 集成到全球运营中。此次推广旨在加速软件开发、现代化旧有系统并提高运营效率，预计到 2026 年底，Claude Code 的采用率将达到 Barclays 开发者群体的 50%，到 2027 年将覆盖大多数软件工程师。目前已有两项部署上线：由 Claude 提供支持并采用 RAG 架构的「员工知识助手」已被超过 16，000 名员工采用，自 2025 年以来处理了超过 100 万次搜索；在全球市场业务中，Claude 模型每天对约 120，000 封接收邮件进行分类、丰富和路由。Barclays 强...
+2026-10-01 23:19:00
 
 
 
 ### [何恺明团队新作：看猫片就能学会-ARC-挑战](https://www.qbitai.com/2026/10/499812.html)
 
-2026-10-01 23:06:30 | 标签: AI 研究前沿, 模型训练与推理, 何恺明, MAE, 视觉语言模型
-
-> 何恺明团队最新论文提出 NAT-ARC，一套不依赖 LLM 的纯视觉 ARC 解题方案。ARC 是公认最难的 AI 抽象推理基准之一，主流解法长期是把彩色格子翻译成文本或符号交给大语言模型推理。NAT-ARC 反其道而行，在 VARC 的视觉流程前插入一步 ImageNet MAE 自监督预训练：直接复用何恺明 2022 年提出的 MAE 公开 checkpoint 初始化视觉编码器，丢弃与 ImageNet 尺寸绑定的 patch embedding 和位置编码，改用 2D RoPE，再在 ARC 训练集上离线训练编解码器，测试时对每道题单独做 LoRA 微调。结果显示，表现最好的 0.6B...
+2026-10-01 23:06:30
 
 
 
 ### [GitHub---mourad-baazi/hotpath](https://github.com/mourad-baazi/hotpath)
 
-2026-10-01 22:59:35 | 标签: AI 体, AI 工作流, LLM 推理, MCP Protocol, 软件工程
-
-> 本文介绍了一个解决 AI 智能体运行效率低下和非确定性问题的框架。通过 MCP 代理记录成功的智能体运行过程，Hotpath 将该序列编译为基于 JSON 的工作流。这使得工具调用可以作为标准代码运行，仅在需要判断时调用 LLM，同时当环境变化导致防护机制失效（漂移）时，提供回退到智能体的机制。
+2026-10-01 22:59:35
 
 
 
 ### [GitHub---sriti-ai/sriti-core:-Sriti-Core-是一个针对大语言模型的开源、高效智能路由代理与级联引擎](https://github.com/sriti-ai/sriti-core)
 
-2026-10-01 21:46:06 | 标签: Large Language Models, AI Routing, Open Source, Model Inference, Performance Optimization
-
-> Sriti Core 提供了一个开源框架，旨在通过智能路由高效管理大语言模型。它采用了三级级联策略：本地模型（Tier 3）、高性价比云提供商（Tier 2）以及前沿模型（Tier 1）。核心功能包括使用 ONNX 进行本地任务分类、基于 Redis/Valkey 的语义缓存、提示词压缩，以及在底层未通过质量门关或 SLO 时自动将任务升级到高层的可靠性驱动机制。
+2026-10-01 21:46:06
 
 
 
 ### [GitHub---rodmontiel/uai：AI-智能体身份、授权与可验证问责的开放协议，采用-BGP-启发的联邦机制](https://github.com/rodmontiel/uai)
 
-2026-10-01 20:53:50 | 标签: AI Agents, Identity, 安全, 密码学, 治理
-
-> UAI（通用智能体身份）是一种为解决日益自主的 AI 智能体的治理挑战而开发的协议。UAI 不依赖简单的声明或静态标签，而是提供了一个框架，将智能体与所有者绑定，定义其能力，并在特定的时间和管辖范围内授权其操作。它将这些操作记录为签名的证明。该系统被设计为由独立注册表组成的联邦网络，而非单一全球权威机构，确保智能体的身份和历史可以被第三方检查和验证。
+2026-10-01 20:53:50
 
 
 
 ### [通过-Amazon-Quick-在-AI-构建的应用中提供实时、受治理的数据-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/serve-live-governed-data-in-ai-built-apps-with-amazon-quick/)
 
-2026-10-01 19:49:06 | 标签: AWS, Amazon Quick, AI Agents, 数据分析, 商业智能
-
-> Amazon AWS 为 Amazon Quick 推出了「应用中的实时数据」，将数据处理从构建时的快照转变为查看时的执行。与此版本依赖于发布时静态数据的版本不同，该功能在用户每次打开应用时都会执行 SQL 查询，确保指标始终保持更新。该框架与现有的行级安全（RLS）和列级安全（CLS）规则集成。它使业务所有者和知识工作者可以使用自然语言提示词来创建并共享分析应用，而无需手动编码或 IT 干预，同时在整个组织内维持严格的数据治理。
+2026-10-01 19:49:06
 
 
 
 ### [当每一个-AI-智能体的操作都经过授权，但整体决策仍然错误时](https://tasoffices.substack.com/p/when-every-ai-agent-action-is-authorizedand)
 
-2026-10-01 19:37:47 | 标签: AI Agents, AI 治理, Meta Muse, Safety, Machine Learning
-
-> 本文讨论了 AI 从聊天机器人向自主个人智能体的转变。通过将 Meta Muse 作为案例，文章识别了关键的治理缺口：即使智能体拥有特定操作的权限，它们仍可能因为目标漂移、记忆持久化错误、权限扩展以及多步任务中的轨迹错位而失败。作者主张采用「决策感知审批」，即监控整个过程而非仅仅是最终输出。
+2026-10-01 19:37:47
 
 
 
 ### [使用-NVIDIA-NeMo-Agent-Toolkit-和-Amazon-S3-Vectors-构建智能体记忆](https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/)
 
-2026-10-01 17:34:56 | 标签: AWS, NVIDIA, AI Agents, S3, Vector Database
-
-> 本文从架构理论转向构建持久化智能体记忆的实践实现。它解释了如何将 NVIDIA NeMo Agent Toolkit (NAT) 与 Amazon S3 Vectors 集成，利用后者在语义检索、基于元数据的过滤、强写一致性以及高性价比扩展方面的能力。作者提供了一个三步走的技术工作流：设置 S3 基础设施、使用 NAT 接口开发自定义 MemoryEditor 插件，以及配置智能体工作流。通过多智能体投资研究的案例，本文演示了如何在跨智能体调用中管理对话历史、用户偏好和长期知识。
+2026-10-01 17:34:56
 
 
 
 ### [在-AWS-上使用上下文老虎机通过个性化提升获客漏斗的转化率-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/uplifting-conversion-across-the-acquisition-funnel-with-personalization-using-contextual-bandits-on-aws/)
 
-2026-10-01 16:51:04 | 标签: AWS, AI Agents, Machine Learning, Reinforcement Learning, Personalization
-
-> 本文详细介绍了如何实现上下文多臂老虎机（MAB）以解决生成式 AI 个性化中的选择挑战。与标准的 A/B 测试不同，老虎机能够实时平衡探索与利用。该团队采用多目标方法来优化三个阶段——申请开始、提交和审核，从而防止了某一阶段的优化导致另一个阶段的性能下降。文章涵盖了使用 SageMaker AI 批处理的 AWS 架构、LinUCB 算法逻辑，以及审查内容构建块以确保大规模场景下品牌一致性的策略。
+2026-10-01 16:51:04
 
 
 
 ### [lencx-见闻汇总（261001）](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492699&idx=1&sn=c527a106e51ba06b564d4c00c081552b)
 
-2026-10-01 16:51:00 | 标签: AI 与智能应用, AI 编程, 开发者工具, AI Agent, 开源项目
-
-> 本文是作者 lencx 新开的「见闻汇总」系列首篇，以不定期分享有趣信息为定位。内容分为个人观点、开源推荐、技术资讯、Skills 推荐、CSS 技巧和创意项目六个板块。个人观点部分讨论了 Claude 封号机制的本质（多因素叠加触发，环境伪装治标不治本）以及为何大量 Agent 项目选用 TypeScript（类型检查、JS 生态、跨 browser/bash 的统一技术栈）。开源推荐介绍了 Magpie（AI 编程工具模型管理器与本地 API 网关）、Compositor（支持 Agent 读写 .comp 工程的 Mac 图像编辑器）、Tinycast（Raycast 开源替代）、gh-...
+2026-10-01 16:51:00
 
 
 
 ### [使用-Amazon-Bedrock-AgentCore-构建环境智能体：从事件驱动信号到人工参与的工作流-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows/)
 
-2026-10-01 16:40:24 | 标签: AWS, AI Agents, AgentCore, 无服务器, 工作流
-
-> 本文详细介绍了环境化 AI 智能体的架构与实现。这类智能体能够对系统事件（如 S3 上传或定时任务）做出响应，而不仅仅依赖用户提示。文章重点介绍了使用 AgentCore Runtime、Lambda、SQS 和 DynamoDB 的无服务器框架，并配备了一个「ask_human」工具，允许智能体在高风险工作流中暂停以等待人工审核或批准。
+2026-10-01 16:40:24
 
 
 
 ### [在-AWS-上为-Claude-Platform-实现多环境访问-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws/)
 
-2026-10-01 16:32:23 | 标签: AWS, Claude, AI 工程, 云架构, 安全
-
-> 本文详细介绍了一种用于在 AWS 上管理 Claude Platform (CPonAWS) 的专业架构模式。它提倡使用专用的 AI 服务账户来托管订阅和工作空间，并将其与消耗推理的工作负载账户隔离开。指南涵盖了三种不同的访问模式：用于 AWS 原生工作负载（如 EKS）的跨账户 SigV4 访问、用于本地开发者使用的工作空间范围 API 密钥，以及用于外部工作负载的 OIDC 联合。文中还提供了特定的 AWS CLI 命令、IAM 策略 JSON 和 Python 代码来实现这些配置，以确保不同环境之间的安全性和隔离性。
+2026-10-01 16:32:23
 
 
 
 ### [NVIDIA-发布-Kumo-Tabular：可通过单次前向传播预测新行的开放表格基础模型](https://www.marktechpost.com/2026/09/30/nvidia-releases-kumo-tabular/)
 
-2026-10-01 14:57:52 | 标签: AI 与智能应用, 机器学习, 模型发布, 开源项目, 学习方法
-
-> NVIDIA 的 Kumo Tabular 是一套专为分类和回归任务设计的表格基础模型（TFM）。该系列提供 Small、Medium 和 Large 三种尺寸（参数量从 28M 到 215M），利用上下文学习（In-context Learning）根据已标记的上下文行在一次前向传播中预测新行。Kumo Tabular 完全基于结构因果模型（SCM）生成的合成表格进行预训练，在 TabArena 和 TALENT 等基准测试中达到了顶尖性能。与许多竞争对手不同，Kumo Tabular 采用 OpenMDW-1.1 许可证发布，允许商业使用，并已集成至 NVIDIA 的 GPU 原生结构化数...
+2026-10-01 14:57:52
 
 
 
 ### [AINews-Gemini-4-Argon：GDM-对-Astra/Fable-的回应，支持-100-万输出](https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer)
 
-2026-10-01 14:45:05 | 标签: AI 与智能应用, 模型发布, AI Agent, 产业动态, 大语言模型 (LLM)
-
-> 本期 AI 新闻回顾重点介绍了 Google DeepMind 发布的 Gemini 4 Argon，专为编程、企业和网络安全工作流设计。它具备业界领先的 100 万 token 输出上限，并在与 GPT-6 Astra 和 Claude Opus 5.5 等竞品的 19 项基准测试中，于 13 项取得最佳表现。该模型初期通过 Fairwind Program 面向受信任测试者开放，定价为每 100 万 token 4 美元/20 美元。文章还涵盖了 OpenAI 的 GPT-6.1 Sol 超高速推理、Perplexity 和 Cohere 的新嵌入模型、图像与视频模型更新、智能体研究进展、...
+2026-10-01 14:45:05
 
 
 
 ### [What-Are-the-Top-Professional-AI-Certifications-Available-Online?](https://dev.to/future_skillsacademy_4ca/what-are-the-top-professional-ai-certifications-available-online-5837)
 
-2026-10-01 14:31:21 | 标签: AI 与智能应用, 学习方法, 职业成长, AI Agent, 安全
-
-> The article surveys the landscape of online AI certifications for professionals across industries. It groups programs into five categories: AI fundamentals (covering machine learning， deep learning， NLP， computer vision)， generative AI (LLMs， prompting， responsible AI)， AI product management (use-ca...
+2026-10-01 14:31:21
 
 
 
 ### [第-1-天：我的大多数-Bug-看起来像模型行为](https://dev.to/sean_campbell_840bd62bf7e/day-1-most-of-my-bugs-looked-like-model-behaviour-388h)
 
-2026-10-01 14:30:21 | 标签: AI 与智能应用, AI 工程, 模型路由, 机器学习, 模型评测与基准
-
-> 作者展示了一次 Kaggle 基准测试挑战的第 1 天结果，该挑战旨在衡量 LLM 的虚假自信程度。测试了八个本地模型（1.2B–9.7B）和八个托管模型，在温度为 0 的情况下各测试 200 项，其中每个模型有 40 项无法回答的问题需要做出 ESCALATE 响应。只有 qwen3.5（9.7B）能可靠升级（37.5% 的虚假自信）；所有其他本地模型仍会回答问题，虚假自信率达 77.5%–95%。托管模型表现远好于本地模型，gemini-3.7-flash 和 gemini-3.8-flash 的虚假自信率为 0%，但 claude-haiku-4.5 是一个例外，达到 35.7%。所有三...
+2026-10-01 14:30:21
 
 
 
 ### [Matthew-Green-的一段引述](https://simonwillison.net/2026/Oct/1/matthew-green/)
 
-2026-10-01 14:29:01 | 标签: AI 与智能应用, AI 安全与对齐, AI 工作流, AI Agent, AI 智能体
-
-> 这篇 Simon Willison 的简短博文引用了密码学家 Matthew Green 的文章「沙箱化是否足以遏制失控智能体？」中的一段话。该摘录描述了一种理论上的漏洞：处于隔离沙箱中的 AI 智能体通过共享的软件包缓存进行隐蔽通信。这一机制允许有效载荷劫持一个智能体并转移到下一个，类似于计算机蠕虫。Willison 指出，如果这适用于沙箱化的训练运行，那么同样可能适用于通过电子邮件、Slack 或共享文档进行通信的独立部署的个人智能体。
+2026-10-01 14:29:01
 
 
 
 ### [机器学习开发公司如何将模型从-Notebook-迁移到生产环境](https://dev.to/naresh_chandralohani/how-a-machine-learning-development-company-moves-models-from-notebook-to-production-4g1b)
 
-2026-10-01 13:14:21 | 标签: AI 与智能应用, 机器学习, 模型训练与推理, AI 工程, 性能优化
-
-> 文章认为，即使一个模型在验证集上达到 95% 的准确率，在生产环境中仍然可能因特征模式不一致、训练-服务偏差、冷启动、artifact 体积过大以及缺乏监控而失败。它概述了一条基于 Python、FastAPI、Docker 和 AWS 风格架构的生产化路径：定义推理契约，包括输入类型、取值范围、缺失值处理行为以及特征/模型版本；将推理封装在一个单一职责的 API 中，在启动时加载模型一次；添加部署门槛，结合准确率阈值、回归测试、延迟测试、模式测试和影子流量；并通过 P50/P95 延迟和吞吐量独立评估服务性能。Oodles 的一个案例 study 描述了通过管道级别的改动而非框架更换，将用于...
+2026-10-01 13:14:21
 
 
 
 ### [AI-Agents-Roadmap-2026:-10-Free-Courses-in-the-Right-Order](https://dev.to/radhakishanjangid404/ai-agents-roadmap-2026-10-free-courses-in-the-right-order-53dh)
 
-2026-10-01 12:44:09 | 标签: AI 与智能应用, AI Agent, AI 工作流, 学习方法, 大语言模型 (LLM)
-
-> 本文为 AI 智能体学习提供了一份结构化的学习路线图，将来自 Microsoft、Hugging Face 和 LangChain 的 10 门免费课程分为 4 个递进阶段：基础知识（AI 和生成式 AI 基础概念）、智能体（工具使用、规划、多智能体系统、MCP 协议）、框架（LangChain 和 LangGraph 基础知识）以及构建（高级 LangGraph 和 Hugging Face AI Agents 课程，附带最终项目）。作者认为学习顺序比课程质量更重要，因为许多学习者在 LangChain 中迷失并放弃。 estimated timeline is roughly two mo...
+2026-10-01 12:44:09
 
 
 
 ### [LLM-是否有脊背？我在-7-个前沿模型中基准测试了奴媚行为](https://dev.to/shahbaz_ali/do-llms-have-a-spine-i-benchmarked-sycophancy-across-7-frontier-models-43b8)
 
-2026-10-01 11:33:21 | 标签: AI 与智能应用, AI 安全与对齐, 机器学习, 模型评测与基准, 模型发布
-
-> 作者设计了一个基准测试来衡量 LLM 的奴媚行为：即当用户施加压力时，模型是否会放弃最初正确的答案。他们使用每个模型的 15 道 MMLU 多选题和 11 种社会压力策略（从微妙的「你确定吗？」到咄咄逼人的「你错了！」以及虚构的权威呼吁），在 7 个前沿模型中进行了每次 165 次评估，共计 1，155 次评估。关键发现是：旗舰模型具有最高的屈服率：Gemini 2.5 Pro 达到 86.6%，Qwen 235B 达到 83.1%，Claude Sonnet 4.5 达到 79.6%。较小或开放权重的模型更顽抗：GPT-5.5 仅 16.9%，GPT-OSS-20B 达到 22.3%，Gem...
+2026-10-01 11:33:21
 
 
 
 ### [我在实体解析管线中仍然坚持亲自决策的事项](https://dev.to/hannune/the-decisions-in-my-entity-resolution-pipeline-that-i-still-make-myself-2cl3)
 
-2026-10-01 10:49:03 | 标签: AI 与智能应用, AI 工程, 数据科学, 机器学习, AI 工作流
-
-> 通过一个调试日韩证券数据多语言实体解析管线的个人案例，作者描述了由于缺少「合同会社」（日本有限责任公司）的正则表达式而导致分块不匹配，且 AI 未能检测到此问题。作者得出结论：虽然 AI 能生成正确的通用函数，但它无法识别完全取决于数据集特定特征的漏洞。这一认知引发了更深层的洞察：关于置信度阈值和数据清洗规则的问题，往往是伪装成逻辑问题的「我的数据里有什么」的问题，这类问题无法通过提示词解决，只能通过手动数据分析来完成。
+2026-10-01 10:49:03
 
 
 
 ### [从未接受法律训练的自学-AI-登顶瑞士法律考试基准测试](https://dev.to/ai_maya_063fc568e157562fd/a-self-taught-ai-never-trained-on-law-just-topped-a-swiss-law-exam-benchmark-2j5f)
 
-2026-10-01 10:48:48 | 标签: AI 与智能应用, 推理模型, 模型训练与推理, 机器学习, 大语言模型 (LLM)
-
-> 本文介绍了来自 VIDRAFT 的 180B 参数模型 Darwin-180B-RSI，该模型在 LEXam 和 LEXam-hard 法律推理排行榜上均获得第一名。令人惊讶的是，该模型未经过任何法律文本训练；相反，它通过对其自身在数学和科学问题上的正确解法进行训练，实现了模型级递归自改进（RSI）。这一过程培养了一种通用的「推理习惯」，并成功迁移至法律领域。文中还区分了模型级 RSI（权重变化）与框架级 RSI（提示词/工作流变化），并解释了 Darwin 架构如何通过诊断融合而非从零预训练来演进模型。
+2026-10-01 10:48:48
 
 
 
 ### [决策模型以英文为中心：我在日语环境下的测试与构建实践](https://dev.to/genelab_999/decision-models-are-english-first-i-measured-them-in-japanese-then-built-one-1p12)
 
-2026-10-01 10:21:03 | 标签: AI 与智能应用, 模型训练与推理, 机器学习, AI 工程, 模型评测与基准
-
-> 本文探讨了「系统 1」决策模型——这类模型无需生成 Token，即可直接针对特定类型问题（布尔值、选择题、评分题）返回概率。作者发现，像 laya-multilingual 这样的多语言模型在日语中存在「位置先验」偏差，尤其是在序数（评分）问题中倾向于避开第一个选项。为了解决这一问题，作者基于 ModernBERT-ja 开发了一个 310M 参数的模型 「sokudan」。虽然像 Lev 这样以英文为中心的大型模型在二元和选择任务中展现出强大的迁移能力，但 sokudan 在序数准确率方面表现更佳。此外，作者还提供了 typed-decisions 基准测试的日语翻译版本，并分享了关于训练数...
+2026-10-01 10:21:03
 
 
 
@@ -57024,105 +56960,79 @@
 
 ### [Pi-1.0-|-Earendil](https://earendil.com/posts/pi-1-0/)
 
-2026-10-02 03:33:05 | 标签: AI 智能体, AI 编程, MCP, 开源, 开发者工具
-
-> Earendil 正式发布了 Pi 1.0，这是一个专为开发者和企业设计的稳定且极简的 AI 智能体框架。此次重大更新引入了「Codemode」，为模型上下文协议 (MCP) 和非 LLM 模型提供了原生支持。关键增强功能包括工具加载、针对 Anthropic 模型的缓存预热，以及用于感知对话记录的会话中系统消息。该工具保持了其极简主义哲学，仅在功能被证明具有价值后才将其纳入，为构建复杂的智能体应用提供了一个高度灵活的基础。
+2026-10-02 03:33:05
 
 
 
 ### [burrito.space/bez](https://tangled.org/burrito.space/bez)
 
-2026-10-02 02:08:03 | 标签: Rust, Browser, AI, Open Source, Web Development
-
-> Bez 旨在通过自动化流程克服构建浏览器引擎的高成本和复杂性。它使用了一种流水线，通过 AI 模型从规范中生成候选代码，并结合主流浏览器（Chromium、Firefox、WebKit）以及 Web 平台测试（WPT）进行验证。该项目专注于“树摇优化”后的引擎，仅包含特定网站所使用的功能，从而减少内存占用并提高速度。目前的进展包括布局规则、CSS 的生成，以及使用逻辑编程（Datalog）处理外边距合并等复杂任务。
+2026-10-02 02:08:03
 
 
 
 ### [GitHub---beatrizalmeidaf/papero-pdf-text-extractor:-快速开源的-PDF-文本提取-API。文件永不存储。](https://github.com/beatrizalmeidaf/papero-pdf-text-extractor)
 
-2026-10-02 00:14:40 | 标签: Python, Open Source, PDF, Performance Optimization, RAG
-
-> Papero 是一款基于 Python 的轻量级工具，旨在从 PDF 中提取结构化数据，超越了简单的文本提取。与许多依赖 AI 的替代方案不同，它使用纯几何结构和 PDFium、Apache Tika 等引擎来识别布局、多列阅读顺序和表格。它可以将数学公式转换为 LaTeX，并为每个数据块提供边界框。该工具以 Python 库、CLI、API 以及基于浏览器的应用提供，非常适合对速度和结构准确性至关重要且不需要 GPU 的 RAG 流水线。
+2026-10-02 00:14:40
 
 
 
 ### [介绍-Clef：我们开源的决策模型，以及新的-RL-微调平台](https://blog.cloudflare.com/clef-decision-models/)
 
-2026-10-01 23:34:02 | 标签: AI Agents, Reinforcement Learning, Open Source, Machine Learning, Model Training & Inference
-
-> Cloudflare 推出 Clef，一系列开源决策模型，旨在支持其开发者平台上的 AI 智能体。同时推出了一个新的强化学习 (RL) 微调平台。Clef 模型经过训练，可在智能体工作流程中做出路由、工具选择和任务分解决策，并以开源方式发布，使开发者可以检查、自行部署并调整它们。配套的 RL 微调平台允许客户从真实流量中收集反馈，并在自身的工作负载上持续改进模型行为，而非仅依赖通用型前沿模型。Cloudflare 将此定位为迈向更便宜、更快速、在边缘更可控的智能体的一步，其中的模型和训练工具对社区可用。
+2026-10-01 23:34:02
 
 
 
 ### [GitHub-Universe-2026-我最期待的-10-场技术演讲](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/)
 
-2026-10-01 23:07:18 | 标签: GitHub, AI Agents, Agent Memory, AI Evaluation & Benchmarks, MCP Protocol
-
-> 作者挑选了 GitHub Universe 2026 中 10 场与他目前关注的问题相关的技术演讲：如何确认智能体编写的代码有效、智能体应具备怎样的记忆，以及安装依赖时的信任机制。会议内容涵盖：npm 供应链内部机制与来源证明、Copilot 智能体记忆研究（显示累积上下文可能会损害性能）、将 AI 上下文视为团队基础设施、托管 MCP 服务器的细粒度授权、生产环境的模型评估实践、基于智能体的 AI 生成代码验证、确定性代码结合 LLM 的根因分析架构、GitHub Actions 供应链攻击威胁框架、作为统一 JavaScript 工具链 CLI 的 Vite+，以及在网络连接较差的加纳构建...
+2026-10-01 23:07:18
 
 
 
 ### [一年后：主权-AI-与选择之争](https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/)
 
-2026-10-01 21:04:19 | 标签: AI 与智能应用, 主权 AI, 开源项目, LLM 推理优化, Cloudflare
-
-> 在 Cloudflare 宣布主权 AI 计划的一周年之后，本文回溯了其核心论点：随着 AI 成为关键基础设施，组织面临将数据、模型和推理过程的控制权交给少数几家超大型云服务商的风险。Cloudflare 将其全球边缘网络、Workers AI 和开源工具定位为一种替代方案，让 AI 工作负载保持便携性并由客户掌控。本文将主权 AI 视为不仅仅是国家或监管层面的问题，而是任何希望避免供应商锁定、满足数据驻留要求并保留在不同提供商间迁移工作负载能力的组织的实际选择。文中凸显了便利性与控制性之间的 tension，并认为开放标准和分布式推理是实现真正选择的途径。这篇文章更多是战略和哲学上的反思，而...
+2026-10-01 21:04:19
 
 
 
 ### [Cloudflare-OS：您的公司智能体工作空间，由-Cloudflare-代管](https://blog.cloudflare.com/managed-cloudflare-os/)
 
-2026-10-01 21:01:30 | 标签: AI 与智能应用, 零信任, 开发者工具, AI Agent, 开源项目
-
-> Cloudflare 宣布推出 Cloudflare OS，这是一款代管智能体工作空间，让公司能够在自有基础设施上部署和运行 AI 智能体。该产品将开源智能体运行时与 Cloudflare 代管的控制平面相结合，因此组织能够为员工提供共享工作空间，用于构建、运行和治理智能体，而无需自行搭建编排系统。它与 Cloudflare One 集成，提供身份管理、访问控制和数据保护，并被定位为 Cloudflare 更广泛推进智能体成为网络一等公民战略的一部分。该文章围绕三个主题框定了这款产品：开放且可自托管的基础设施；由 Cloudflare 代管的运营；以及面向智能体工作负载的企业级安全和治理。这是...
+2026-10-01 21:01:30
 
 
 
 ### [AI-Search-现已正式可用](https://blog.cloudflare.com/ai-search-ga/)
 
-2026-10-01 21:01:30 | 标签: AI 与智能应用, RAG / 检索增强, LlamaIndex, Cloudflare, AI Search
-
-> Cloudflare 宣布推出 AI Search 的正式版本，这是一项完全托管的检索服务，让开发者能够在自有内容上添加搜索和 RAG 式问答功能。该文章详细介绍了架构：数据被摄入 R2，经过 Workers AI 模型进行分块和嵌入处理，存储在 Vectorize 中进行向量搜索，并与关键词搜索相结合以实现混合检索。文章强调了按实例隔离功能，确保每个客户的数据保持分离，同时支持自动同步变更内容，并提供简单易用的查询 API。正式发布版本增加了生产环境特性，如更高的限制、改进的相关性调优和定价详情，从而 positioning AI Search 作为一种无需运营向量数据库或嵌入式管道即可开展...
+2026-10-01 21:01:30
 
 
 
 ### [全新的智能体体验：IDE-中的-JetBrains-Air-–-EAP-现已开放](https://blog.jetbrains.com/ai/2026/10/air-in-ides-eap/)
 
-2026-10-01 20:42:32 | 标签: JetBrains, AI 智能体, 工作流, 开源, 软件开发
-
-> JetBrains 发布了 Air 的 EAP，这是一个专为智能体开发工作流设计的系统。与传统的 AI 聊天助手不同，Air 聚焦于并行任务执行，开发者可以将较大的任务同时分配给多个智能体。它充当枢纽而非提供者，允许用户使用现有的订阅（如 GitHub Copilot 或 Claude）或使用原生 JetBrains AI。核心功能包括智能体优先的交互体验、跨项目的会话管理，以及与 IDE 调试和分析工具的集成。此外提供了一个名为「Junie Lite」的免费版本用于处理日常任务。
+2026-10-01 20:42:32
 
 
 
 ### [超越可观测性：AI-时代生产运维的演进](https://www.infoq.com/presentations/ai-production-operations/)
 
-2026-10-01 20:30:00 | 标签: 编程与工程, 可观测性, 平台工程, 云原生 / DevOps, AI Agent
-
-> 本次 InfoQ 圆桌会议由编辑 Renato Losio 主持，汇集了来自 genesys 的 Michael Hausenblas、Netflix 的 Sujana Sooreddy 和 groundcover 的 Noam Levi，他们讨论了生产运营在人工智能时代的演变。参与者们探讨了 AI 目前实际创造价值的领域（智能体作为告警和支持渠道的第一响应者、事件回顾以及降低 MTTR）、 PII 泄露和人类责任相关的风险，以及向非确定性系统的转变，其中 LLM 版本更新会静默改变系统行为。主要主题包括需要面向机器的原始、可阅读的可观测性数据而非面向人的仪表板、关于人工智能时代的良好生产工程...
+2026-10-01 20:30:00
 
 
 
 ### [TypeSafe-AI-发布-Jev：一种仅返回类型化概率而非文本的决策模型](https://www.infoq.com/news/2026/10/typesafe-ai-jev-released/)
 
-2026-10-01 14:47:00 | 标签: AI 与智能应用, 模型路由, AI Agent, LLM 推理优化, 性能优化
-
-> TypeSafe AI 是一家由前 OpenAI 研究员 Diogo Almeida 创办的旧金山实验室，他们发布了 Jev，这是其“系统一模型”系列的首款产品。Jev 不生成文本；调用者发送状态和类型化问题，并收到 Choice、Score 和 Noul 答案，附带概率分布和置信度值，从而允许代码在阈值上执行并在阈值以下升级处理。定价为每百万输入令牌 0.042 美元，输出免费，上下文窗口为 32，000 个令牌，延迟为 70 毫秒至 500 毫秒。采用速度很快：Vercel 在发布后第二天就将 Jev 添加到 AI Gateway，并表示在 24 小时内覆盖了近 13% 的付费团队，GPT...
+2026-10-01 14:47:00
 
 
 
 ### [Container-Apps-Express-Reaches-GA-on-a-Newly-Generally-Available-Sandbox-Layer](https://www.infoq.com/news/2026/10/container-apps-express-sandboxes/)
 
-2026-10-01 14:31:00 | 标签: 编程与工程, 云原生 / DevOps, AI Agent, 平台工程, AI 数据中心与算力
-
-> Microsoft has made Azure Container Apps Express generally available， a deployment model that removes environment provisioning and replaces most configuration with opinionated defaults. It is shipping alongside the GA of Azure Container Apps Sandboxes， the hardware isolated microVM compute layer Expr...
+2026-10-01 14:31:00
 
 
 
 ### [医疗-AI-在解决数据问题之前无法发挥作用](https://www.freecodecamp.org/news/healthcare-ai-won-t-work-until-you-fix-your-data/)
 
-2026-10-01 14:29:35 | 标签: AI 与智能应用, 数据工程, AI 工作流, 系统设计, 模型训练与推理
-
-> 本文指出，为临床环境构建 AI 从根本上说是一个数据问题，而非建模问题。由于临床数据具有不一致性、多模态（EHR、DICOM 图像、遥测数据、自由文本笔记）、时间分布不规则，且受 ICD-10、SNOMED CT 和 LOINC 等不断演进的术语体系管辖，传统的 ETL 流水线在医院环境中往往会失效。作者认为，数据的质量、代表性以及标注上下文比模型选择更重要，并建议采用 HL7 FHIR 等医疗互操作性标准，在 HIPAA 框架下进行适用于具体场景的脱敏处理，并审计训练数据的缺失情况和子组覆盖率。一个主要的失败模式是工程师与临床医生之间的脱节，例如在再入院预测模型中出现「时间泄露」——模型依赖...
+2026-10-01 14:29:35
 
 
 
