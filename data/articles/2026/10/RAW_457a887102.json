@@ -1,0 +1,57 @@
+{
+  "id": "RAW_457a887102",
+  "title": "如何防止 Android 应用因 Wake Locks 导致过度耗电",
+  "url": "https://www.freecodecamp.org/news/how-to-stop-your-android-app-from-draining-the-battery-with-wake-locks/",
+  "date": "2026-10-01 22:15:11",
+  "author": "Nikheel Vishwas Savant",
+  "siteName": "freeCodeCamp",
+  "content": null,
+  "aiSummary": "本文提供了管理 Android Wake Locks 的全面指南以防止电池耗电，涵盖了常见的泄漏模式、引用计数机制以及现代 API 替代方案。",
+  "oneSentenceSummary": "本文提供了管理 Android Wake Locks 的全面指南以防止电池耗电，涵盖了常见的泄漏模式、引用计数机制以及现代 API 替代方案。",
+  "summary": "本文深入探讨了 Android Wake Locks 的技术实现，解释了它们如何防止 CPU 进入低功耗状态。识别了导致泄漏的主要原因，例如引用计数不匹配、提前返回、未处理的异常以及无边界操作。作者为开发者提供了实用的最佳实践，包括始终使用超时机制、利用 'finally' 块进行结构化释放，以及利用 Kotlin 扩展函数编写更简洁的代码。此外，文章还讨论了 WorkManager 和 Coroutines 等现代替代方案，这些方案显著减少了现代 Android 开发中手动管理 wake lock 的需求。",
+  "mainPoints": [
+    {
+      "point": "理解 Wake Locks 的引用计数机制",
+      "explanation": "Wake locks 默认通过引用计数管理；每次 acquire() 会增加计数器，release() 会减少计数器。只有当计数器归零时，锁才会释放，这使得不匹配变得非常危险。"
+    },
+    {
+      "point": "导致电池泄漏的常见模式",
+      "explanation": "泄漏通常发生在 acquire 和 release 之间抛出异常、提前返回跳过 release 调用，或者异步工作依赖一个从不触发的锁回调时。"
+    },
+    {
+      "point": "安全锁管理的最佳实践",
+      "explanation": "开发者应该始终为 acquire() 提供超时时间，以防止永久泄漏，并使用 'finally' 块确保无论执行成功与否都会调用 release()。"
+    },
+    {
+      "point": "手动管理 wake locks 的现代替代方案",
+      "explanation": "对于大多数用例，WorkManager 或 Coroutines 等高层 API 会自动处理电量状态管理，从而降低了手动操作错误的风险。"
+    }
+  ],
+  "keyQuotes": [
+    "Wake lock 是 Android 中最简单的 API 之一，也是最容易被误用的之一。",
+    "忘记释放它可能会让手机唤醒数小时，导致电池过夜耗尽，并让你的应用在 Google Play 上收到警告。",
+    "结构化释放是最有效的修复方法。",
+    "避免 wake lock 泄漏的最好方法是不持有它。"
+  ],
+  "tags": [
+    "Android",
+    "Kotlin",
+    "优化",
+    "移动开发",
+    "代码质量"
+  ],
+  "topicTag": "other",
+  "readTime": 17,
+  "score": 88,
+  "wordCount": 4232,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790864111000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-01 22:15:11"
+}

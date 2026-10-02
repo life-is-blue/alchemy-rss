@@ -1,0 +1,55 @@
+{
+  "id": "RAW_94b451a2d0",
+  "title": "使用 AI 构建并发布全栈移动应用",
+  "url": "https://www.freecodecamp.org/news/build-and-publish-a-full-stack-mobile-app-with-ai/",
+  "date": "2026-10-01 23:13:37",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Building a production-ready mobile application used to require a dedicated team of frontend, backend, and DevOps engineers. With modern AI tools, an individual developer can take an idea from concept to the App Store.</p>\n  <p>In a comprehensive new tutorial published on the freeCodeCamp.org YouTube channel, you will learn how to build and publish CodexGram, a full-featured, Instagram-style social media application. Moving well beyond superficial \"vibe coding,\" this course emphasizes deliberate planning, reproducible design prompting, robust backend integration, and strict adherence to App Store review standards.</p>\n  <p>CodexGram is built using Expo (React Native) and TypeScript, styled with NativeWind (Tailwind CSS for React Native) and Expo’s liquid-glass Native Tabs. Key features include:</p>\n  <ul>\n   <li>\n    <p><strong>Authentication</strong>\n     <br>\n     Google and Apple sign-in powered by Clerk.</p>\n   </li>\n   <li>\n    <p><strong>Real-Time Backend &amp; Storage</strong>\n     <br>\n     A reactive database, image uploads, and live updates using Convex.</p>\n   </li>\n   <li>\n    <p><strong>Core Social Feed</strong>\n     <br>\n     Photo uploads, captions, like/unlike toggles, threaded comments, and 24-hour stories with tap-to-advance and hold-to-pause interactions.</p>\n   </li>\n   <li>\n    <p><strong>Direct Messaging &amp; Explore</strong>\n     <br>\n     Real-time 1-on-1 chats and a responsive grid for user discovery.</p>\n   </li>\n   <li>\n    <p><strong>Production Observability</strong>\n     <br>\n     Crash tracking, structured logging, and in-app user feedback via Sentry.</p>\n   </li>\n   <li>\n    <p><strong>Legal &amp; Marketing Site</strong>\n     <br>\n     A responsive landing page, terms of service, and privacy policy deployed to Cloudflare Pages.</p>\n   </li>\n  </ul>\n  <p>Watch the full course on the <a href=\"https://youtu.be/bGALxRWI10A\">freeCodeCamp.org YouTube channel</a> (3-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bGALxRWI10A\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本教程演示了如何使用 Expo、TypeScript 和 Convex 构建并部署功能完备的社交媒体应用 CodexGram，重点关注 AI 辅助开发工作流。",
+  "oneSentenceSummary": "本教程演示了如何使用 Expo、TypeScript 和 Convex 构建并部署功能完备的社交媒体应用 CodexGram，重点关注 AI 辅助开发工作流。",
+  "summary": "本文提供了一份构建生产级社交媒体应用 CodexGram 的全面技术指南。涵盖了全栈技术，包括 Expo (React Native)、TypeScript、用于样式的 NativeWind 以及用于实时后端服务的 Convex。实现的核心功能包括通过 Clerk 进行身份验证、带有点赞和评论的社交动态、交互式快拍以及即时私信。作者强调要通过深思熟的规划、可重复的 AI 提示词以及通过 Sentry 观测性来满足 App Store 的提交要求，从而超越简单的“感性编程（vibe coding）”。",
+  "mainPoints": [
+    {
+      "point": "该项目采用了现代移动开发全栈架构。",
+      "explanation": "通过使用 Expo 处理前端和 Convex 处理实时后端，开发者可以管理实时动态和消息等复杂的社交功能，而无需传统的开销。"
+    },
+    {
+      "point": "重点从简单的“感性编程”转向了严谨的工程实践。",
+      "explanation": "教程主倡深思熟虑的规划和可重复的 AI 提示词，以确保生成的代码具有维护性且符合生产标准，而不仅仅是在演示中可用。"
+    },
+    {
+      "point": "从零实现了全面的社交媒体功能。",
+      "explanation": "该指南涵盖了复杂的 UI/UX 模式构建，例如 24 小时快拍、线程化评论和实时私信系统。"
+    },
+    {
+      "point": "通过可观测性工具解决了生产就绪问题。",
+      "explanation": "引入 Sentry 进行崩溃跟踪和结构化日志记录，确保应用在发布到 App Store 后仍能够进行维护。"
+    }
+  ],
+  "keyQuotes": [
+    "构建一个生产级的移动应用过去需要一个专门的前端、后端和 DevOps 工程师团队。有了现代 AI 工具，单个开发者就可以将创意从概念变为 App Store 中的应用。",
+    "远超肤浅的『感性编程』，这门课程强调深思熟虑的规划、可重复的设计提示词以及对 App Store 提交要求的满足。"
+  ],
+  "tags": [
+    "Expo",
+    "TypeScript",
+    "React Native",
+    "Convex",
+    "移动开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 205,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790867617000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-01 23:13:37"
+}

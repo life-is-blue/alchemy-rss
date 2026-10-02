@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-02 04:41:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-02 09:14:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +408,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -786,6 +786,38 @@
 
 
 
+### [使用-AI-构建并发布全栈移动应用](https://www.freecodecamp.org/news/build-and-publish-a-full-stack-mobile-app-with-ai/)
+
+2026-10-01 23:13:37 | 标签: Expo, TypeScript, React Native, Convex, 移动开发
+
+> 本文提供了一份构建生产级社交媒体应用 CodexGram 的全面技术指南。涵盖了全栈技术，包括 Expo (React Native)、TypeScript、用于样式的 NativeWind 以及用于实时后端服务的 Convex。实现的核心功能包括通过 Clerk 进行身份验证、带有点赞和评论的社交动态、交互式快拍以及即时私信。作者强调要通过深思熟的规划、可重复的 AI 提示词以及通过 Sentry 观测性来满足 App Store 的提交要求，从而超越简单的“感性编程（vibe coding）”。
+
+
+
+### [如何使用-VS-Code-语言-API-在-TypeScript-中构建代码图谱](https://www.freecodecamp.org/news/how-to-build-a-code-graph-in-typescript-using-vs-code-language-apis/)
+
+2026-10-01 20:07:33 | 标签: 编程与工程, 开发者工具, 前端与 Web, 编程语言, TypeScript
+
+> 本文探讨了在现代代码库中导航日益困难的问题，特别是当 AI 助手在数百个文件中生成数千行代码时，传统的代码审查机制已然失效。作者提出将代码建模为图谱，将函数视为节点，调用关系视为边，从而将「谁调用了这个函数？」等问题转化为图遍历问题。教程指导读者使用 VS Code 内置的语言 API（而非自定义解析器）构建代码图谱引擎，重点讲解了四个核心命令（executeDocumentSymbolProvider、prepareCallHierarchy、provideIncomingCalls、provideOutgoingCalls）、基于 selectionRange 设计的稳定符号 ID 模型、...
+
+
+
+### [Google-披露-Citrix-0Day-攻击，黑客植入-Web-Shell-攻入企业内网](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651348097&idx=1&sn=d44ab0f64641f46d0a06b8694f97c012)
+
+2026-10-01 18:00:00 | 标签: 安全, Citrix, 漏洞, 0Day, WebShell
+
+> Google 报告 Citrix NetScaler（ADC 与 Gateway）存在两个 0Day 漏洞（CVE-2023-3516 和 CVE-2023-35190），CVSS 评分高达 9.5。攻击者利用这些漏洞绕过认证获取 root 权限，并部署名为 WHIPSHOT 和 SLAPSHOT 的恶意工具进行内网侦察和横向移动。官方已发布修复补丁，建议安全团队尽快更新并进行排查。
+
+
+
+### [面向初学者的-Node.js-与-Express.js-手册——服务器、路由、路由器和视图解析](https://www.freecodecamp.org/news/nodejs-and-expressjs-handbook-for-beginners/)
+
+2026-10-01 17:47:51 | 标签: 编程与工程, 后端开发, TypeScript, 前端与 Web, Node.js
+
+> 本手册介绍 Node.js 作为一种异步、事件驱动的运行时环境，用于在浏览器之外运行 JavaScript，涵盖其核心组件，如 V8 引擎、模块系统、文件系统和 HTTP API 以及事件循环。引导读者通过 npm 设置项目、运行脚本、使用监视模式，以及在 CommonJS 和 ES 模块之间做出选择。接着讲解如何使用 Node 的 http 模块创建原生 HTTP 服务器，包括创建 Server 实例、配置端口和处理请求。介绍 Express.js 作为简化服务器端任务的框架，比较原生 Node.js 代码与 Express 代码，并涵盖路由、中间件、路由器和视图。实际示例包括使用 expr...
+
+
+
 ### [SvelteKit-3-进入发布候选阶段，配置迁移至-Vite-并弃用-$lib-别名](https://www.infoq.com/news/2026/09/sveltekit-3-vite/)
 
 2026-09-30 13:58:00
@@ -984,7 +1016,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -996,7 +1028,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2274,13 +2306,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2430,13 +2462,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3930,13 +3962,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5640,13 +5672,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

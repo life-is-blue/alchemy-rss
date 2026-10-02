@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-10-02 04:41:05 | [返回首页](/README.md)
+**更新时间**: 2026-10-02 09:14:28 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16558)
+- [AI & 大模型](#ai-llm) (16603)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1007)
-- [DevOps](#devops) (787)
+- [前端与全栈](#frontend-fullstack) (1011)
+- [DevOps](#devops) (795)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7049)
+- [其他](#other) (7056)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Claude-时代的科学](https://www.anthropic.com/research/claude-shaped-science) - AI 精选
+- [永恒的互补品](https://openai.com/index/the-eternal-complement) - AI 精选
+- [Introducing-Olmo-core-3:-为大规模-MoE-设计的开放、可扩展训练基础设施](https://huggingface.co/blog/allenai/olmocore3) - AI 精选
 - [Gemini-4-Argon：我们-frontiers-智能时代的下一章](https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/) - AI 精选
 - [我们能预测机器人将从事的工作吗？](https://www.anthropic.com/research/what-work-can-robots-do) - AI 精选
 - [SynthID-Bio：合成生物学的水印方法](https://deepmind.google/blog/introducing-synthid-bio/) - AI 精选
@@ -39,11 +42,8 @@
 - [机器人-/-物理-Agent-Harness-综合分析与对比：从「更强的模型」到「更好的系统」](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489860&idx=1&sn=df5cc4476132ee812051f40c7ecf3150) - AI 精选
 - [Jev：面向生产环境的-System-One-模型，而非上帝——对话-TypeSafe-AI-CEO-Diogo-Almeida](https://www.latent.space/p/jev) - AI 精选
 - [像物理学家一样剪枝-LLM：将模块移除视为伊辛优化问题](https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an) - AI 精选
-- [通过要求智能体加速代码，写出比最先进库更快的-Rust-代码](https://minimaxir.com/2026/09/agentic-iteration/) - AI 精选
-- [10-个人加一套-AI-软件，做出-100-个人的增长：AI-时代企业服务的算账逻辑](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522808&idx=1&sn=1d808b15edf5c131b65fdfd01b5e63a5) - AI 精选
-- [YC-最新判断：Harness-比模型更重要](https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494462&idx=1&sn=adf8c2849a4f781079ec81286e9d9fef) - AI 精选
 
-- [查看全部 16558 篇...](/details/tags/ai-llm.md)
+- [查看全部 16603 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 
-- [查看全部 1007 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1011 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 787 篇...](/details/tags/devops.md)
+- [查看全部 795 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7049 篇...](/details/tags/other.md)
+- [查看全部 7056 篇...](/details/tags/other.md)
 
 

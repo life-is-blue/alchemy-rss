@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4a198e578a",
+  "title": "Introducing Workers KV Instant — powered by Quicksilver",
+  "url": "https://blog.cloudflare.com/workers-kv-instant/",
+  "date": "2026-10-01 21:14:22",
+  "author": "Rob Sutter",
+  "siteName": "The Cloudflare Blog",
+  "content": null,
+  "aiSummary": "Cloudflare 推出了 Workers KV Instant，这是一个基于 Quicksilver 构建的新型 KV 存储层，通过将数据驻留在 Cloudflare 的边缘网络中，为 Workers 提供全球一致且低延迟的读取体验。",
+  "oneSentenceSummary": "Cloudflare 推出了 Workers KV Instant，这是一个基于 Quicksilver 构建的新型 KV 存储层，通过将数据驻留在 Cloudflare 的边缘网络中，为 Workers 提供全球一致且低延迟的读取体验。",
+  "summary": "Cloudflare 发布了 Workers KV Instant，这是一项为 Cloudflare Workers 打造的新存储产品，构建在 Quicksilver 之上。Quicksilver 是该公司用于支撑核心配置和 DNS 系统的全球分布式键值存储。文章解释称，传统的 Workers KV 是最终一致性的，并针对高读取量、低写入频率的场景进行了优化，但这会引入某些工作负载无法容忍的传播延迟。Workers KV Instant 通过利用 Quicksilver 的架构来提供快速且全球一致的读取，使写入操作几乎立即在整个网络中可见。文章详细描述了设计动机、现有 KV 模型与 Instant 层之间的权衡，以及能够从中受益的应用类型，例如需要低延迟、实时边缘读取的功能开关（Feature Flags）、配置、会话状态和协调数据。这一新层级是 Cloudflare 致力于使边缘端成为运行有状态应用可行之地的更广泛努力的一部分。",
+  "mainPoints": [
+    {
+      "point": "Workers KV Instant 是一个构建在 Quicksilver 上的新型 KV 层，而 Quicksilver 是 Cloudflare 的全球分布式键值存储。",
+      "explanation": "Quicksilver 已经支撑了 Cloudflare 的核心配置和 DNS，因此将其复用为 Workers KV Instant 提供了经过验证的、全球复制的基础，从而实现快速读取。"
+    },
+    {
+      "point": "现有的 Workers KV 是最终一致性的，这产生了某些工作负载无法接受的传播延迟。",
+      "explanation": "由于写入操作是异步传播的，读取可能会在一段时间内返回旧值；对于需要写入立即可见的应用（如功能开关或会话状态），该模型无法提供良好的支持。"
+    },
+    {
+      "point": "Workers KV Instant 旨在为有状态的边缘应用提供低延迟、全球一致的读取。",
+      "explanation": "通过将数据驻留在边缘网络并使写入快速可见，该层级支持配置、协调和会话数据等用例，这些用例要求在靠近用户的端点进行最新的读取。"
+    },
+    {
+      "point": "新层级的推出体现了 Cloudflare 将边缘端打造为有状态工作负载可行平台的更广泛战略。",
+      "explanation": "提供一致且低延迟的 KV 选项是对 Workers 及其他存储原语的补充，减少了在边缘端读取状态时必须回退到中心化数据库的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "Introducing Workers KV Instant — powered by Quicksilver"
+  ],
+  "tags": [
+    "编程与工程",
+    "分布式系统",
+    "云原生 / DevOps",
+    "性能优化",
+    "Cloudflare"
+  ],
+  "topicTag": "devops",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1126,
+  "domain": "blog.cloudflare.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_903ae3",
+  "sourceName": "The Cloudflare Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790860462000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-01 21:14:22"
+}

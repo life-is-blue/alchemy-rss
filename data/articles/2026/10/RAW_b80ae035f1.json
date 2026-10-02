@@ -1,0 +1,56 @@
+{
+  "id": "RAW_b80ae035f1",
+  "title": "Pi 1.0 | Earendil",
+  "url": "https://earendil.com/posts/pi-1-0/",
+  "date": "2026-10-02 03:33:05",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"updates-scroll-content\">\n   <div class=\"email-meta\">\n    <p><span class=\"email-meta-key\" data-i18n=\"posts.email.date\">Date:</span><time class=\"email-meta-value\" datetime=\"2026-10-01\" data-i18n-date>Thu, 01 Oct 2026</time></p>\n    <p><span class=\"email-meta-key\" data-i18n=\"posts.email.from\">From:</span><span class=\"email-meta-value\">Earendil &lt;<a href=\"mailto:rfc@earendil.com\">rfc@earendil.com</a>&gt;</span></p>\n    <p><span class=\"email-meta-key\" data-i18n=\"posts.email.to\">To:</span><span class=\"email-meta-value\" data-i18n=\"posts.email.to.value\">You</span></p>\n    <p><span class=\"email-meta-key\" data-i18n=\"posts.email.subject\">Subject:</span><span class=\"email-meta-value\">Pi 1.0</span></p>\n   </div>\n   <div class=\"letter-body prose\">\n    <p>Today we are proudly shipping Pi 1.0: a hardened, minimal, extensible agent harness that you can make your own. Hundreds of thousands of people around the world use Pi every week. Many of you submit issues and pull requests. Over the course of many months, we have used that feedback to improve, harden and evolve Pi into a stable piece of software that people and businesses can depend on.</p>\n    <p>Pi is known for being minimal. We care about holding that line. While agentic tooling changes every week, many of the changes do not last. Pi does not work that way. We wait until something has proven itself, and only then do we consider adopting it; weighing its true functionality against its inherent added complexity. We spoke more about that process and how it relates to Codemode and MCP earlier this week <a href=\"https://earendil.com/posts/you-said-no-mcp/\">here</a>.</p>\n    <p>The Pi 1.0 we are shipping today is a result of that process. Pi already ran the latest models from every major provider, became a daily driver coding agent for people around the world, and provided a supermalleable substrate on which to build agentic applications. With Pi 1.0 we are adding the following into Pi:</p>\n    <ul>\n     <li>Codemode (native support for MCP, and non-LLM models like Jev and image models)</li>\n     <li>Extension support for virtual models</li>\n     <li>Deferred tool loading</li>\n     <li>Cache warming for anthropic models</li>\n     <li>Mid-conversation system messages (transcript-aware prompt and tool changes)</li>\n     <li>A new TUI theme</li>\n     <li>Full-screen mode by default</li>\n    </ul>\n    <p>We have thought about many of these features for months. They were thrown up against the wall and stuck. The list of things that fell off the wall is much longer. When we use Pi with all these new features it feels like a major step forward, but it also still feels simple, like Pi.</p>\n    <p>Alongside this work of continually refining and evolving Pi, we also began to understand that there were aspects of Pi that did not fit the shape of how many people wanted to use it. At Earendil, we want to bring Pi's minimalism and the way it allows you to wield AI outside of the coding agent and outside of the terminal. It needs to be reachable from different surfaces and support longer-running conversations and tasks. In short, Pi must become more durable. Rather than stray from our minimal roots and try to make Pi something it wasn't, we combined that work into a new experimental package that we are shipping today, Pi Durable. Pi Durable is a new substrate for building long-running agentic applications that lets the builders and the users of those applications wield and steer the underlying intelligence with tremendous dexterity. It shares Pi's key principles, minimalism and supermalleability, but it extends those principles into new dimensions. Mario writes in more detail about how we crafted Pi Durable <a href=\"https://earendil.com/posts/pi-durable/\">here</a>.</p>\n    <p>Earendil was formed to craft software and open protocols that strengthen human agency. Today we are shipping tools to you all to help do just that. We're eager to hear feedback from you and to harness the future out in the open together.</p>\n    <p>Pi 1.0 is available today:</p>\n    <pre><code class=\"language-sh\">curl -fsSL https://pi.dev/install.sh | sh\n</code></pre>\n    <p>or on Windows</p>\n    <pre><code class=\"language-powershell\">powershell -c <span class=\"hl-s\">\"irm https://pi.dev/install.ps1 | iex\"</span>\n</code></pre>\n    <p>Pi Durable is available today as an experimental package:</p>\n    <pre><code class=\"language-sh\">npm install @earendil-works/pi-durable @earendil-works/pi-ai @earendil-works/chord\n</code></pre>\n    <p>Both are MIT licensed. Documentation is at <a href=\"https://pi.dev\">pi.dev</a>. Code is at <a href=\"https://github.com/earendil-works/pi\">github.com/earendil-works/pi</a>.</p>\n    <figure class=\"post-figure asciicast\" data-asciicast=\"/static/posts/pi-1-0/demo.cast.json\" data-asciicast-poster=\"0:07\">\n     <ol class=\"asciicast__chapters\">\n      <li data-start=\"0:00\">Codemode: Pi writes a script that boils a week of commits down to a short summary</li>\n      <li data-start=\"0:25.3\">Pi writes itself an extension: a virtual model that plans with Claude Opus and implements with GPT, with Jev deciding when to switch</li>\n      <li data-start=\"1:01\">Reload, start a new session, and pick the new <code>router/auto</code> model</li>\n      <li data-start=\"1:14.8\">Planning runs on Claude Opus</li>\n      <li data-start=\"1:27.8\">Jev spots the switch to implementation and hands over to GPT 6 Luna</li>\n      <li data-start=\"1:44.5\"><code>!</code> runs the finished script</li>\n      <li data-start=\"1:50.2\"><code>/session</code> breaks down cost per model and cache use</li>\n     </ol>\n    </figure>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Earendil 发布了 Pi 1.0，这是一款坚固且可扩展的 AI 智能体框架，引入了用于支持 MCP 的 Codemode 并改进了对长期任务的处理能力。",
+  "oneSentenceSummary": "Earendil 发布了 Pi 1.0，这是一款坚固且可扩展的 AI 智能体框架，引入了用于支持 MCP 的 Codemode 并改进了对长期任务的处理能力。",
+  "summary": "Earendil 正式发布了 Pi 1.0，这是一个专为开发者和企业设计的稳定且极简的 AI 智能体框架。此次重大更新引入了「Codemode」，为模型上下文协议 (MCP) 和非 LLM 模型提供了原生支持。关键增强功能包括工具加载、针对 Anthropic 模型的缓存预热，以及用于感知对话记录的会话中系统消息。该工具保持了其极简主义哲学，仅在功能被证明具有价值后才将其纳入，为构建复杂的智能体应用提供了一个高度灵活的基础。",
+  "mainPoints": [
+    {
+      "point": "Pi 1.0 从实验性工具进化为坚固、稳定的智能体框架。",
+      "explanation": "经过数十万周活跃用户数月的反馈，团队对代码库进行了打磨，使其能够满足个人开发者和企业环境的可靠性需求。"
+    },
+    {
+      "point": "Codemode 引入了对 MCP 和非 LLM 模型的原生支持。",
+      "explanation": "此功能允许智能体与模型上下文协议进行交互，并使用除标准 LLM 之外的专用模型，例如 Jev 或图像模型。"
+    },
+    {
+      "point": "框架通过选择性采纳功能来优先考虑极简主义。",
+      "explanation": "Pi 避免了 AI 工具领域中快速迭代带来的混乱，仅集成那些已证明其效用的功能，并权衡功能提升与所带来的复杂性。"
+    },
+    {
+      "point": "新功能增强了长期任务处理能力与运行效率。",
+      "explanation": "通过延迟工具加载、缓存预热和会话中系统消息等特性，智能体能够有效处理复杂且持续时间较长的交互任务。"
+    }
+  ],
+  "keyQuotes": [
+    "今天我们自豪地发布了 Pi 1.0：这是一个坚固、极简且可扩展的智能体框架，你可以根据自己的需求进行定制。",
+    "我们通常会等到某项技术被证明具有价值后才考虑采纳，并权衡其实际功能与所带来的固有复杂性。",
+    "它提供了一个极具延展性的底层基座，用于构建各类智能体应用。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "AI 编程",
+    "MCP",
+    "开源",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 644,
+  "domain": "earendil.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790883185000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-02 03:33:05"
+}
