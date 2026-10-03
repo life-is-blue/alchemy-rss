@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-03 08:51:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-03 15:17:08 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -656,57 +656,43 @@
 
 ### [推出-Cloudflare-Traces：贯穿整个平台追踪请求](https://blog.cloudflare.com/cloudflare-tracing/)
 
-2026-10-02 21:00:24 | 标签: 编程与工程, 系统设计, 开发者工具, Cloudflare, 观测性
-
-> Cloudflare 发布了 Cloudflare Traces，旨在解决在其分布式网络中调试请求的复杂性。通过提供请求在通过边缘节点、Workers 和源站服务器时的端到端可见性，它可以帮助工程师识别瓶颈，并追踪此前隐藏在黑盒中的延迟问题。
+2026-10-02 21:00:24
 
 
 
 ### [关于我们让每个人都能使用-Cloudflare-功能承诺的更新](https://blog.cloudflare.com/enterprise-for-all-update/)
 
-2026-10-02 21:00:24 | 标签: 商业与创业, 安全, 产品管理, 平台经济, Cloudflare
-
-> Cloudflare 概述了其在高端基础设施工具民主化方面的进展。此次更新涵盖了将企业级功能扩展至小型客户、在所有层级中整合高级安全协议，并致力于维护一个易用的平台，以弥合大规模需求与个人开发者之间的差距。
+2026-10-02 21:00:24
 
 
 
 ### [发布-Cloudflare-OHTTP-Gateway：扩展对-Cloudflare-隐私保护基础设施的访问](https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/)
 
-2026-10-02 21:00:24 | 标签: 产品与设计, 安全, 数字隐私, MCP协议, Cloudflare
-
-> Cloudflare 了实现了 HTTP over HTTPS (OHTTP) 标准的 OHTTP Gateway。通过使用中继架构，中继节点可以看到用户的 IP 地址但看不到内容，而目标服务器可以看到内容但看不到 IP 地址。该工具允许开发者在集成隐私保护功能时，无需自行管理复杂的底层基础设施。
+2026-10-02 21:00:24
 
 
 
 ### [受保护快速隧道：为您的下一个开发项目提供简单的无账户身份验证](https://blog.cloudflare.com/protected-quick-tunnels/)
 
-2026-10-02 21:00:24 | 标签: 编程与工程, 安全, 零信任, 云原生 / DevOps, Cloudflare
-
-> Cloudflare Protected Tunnel 通过出站连接将其基础设施安全地连接到 Cloudflare 网络。这消除了开放端口或管理 VPN 的需求，利用 Cloudflare 的基于身份的访问控制来简化零信任架构的部署，并增强内部 Web 服务的安全性。
+2026-10-02 21:00:24
 
 
 
 ### [2026-周庆周：网络性能更新](https://blog.cloudflare.com/network-performance-birthday-week-2026/)
 
-2026-10-02 21:00:24 | 标签: 编程与工程, 安全, 性能优化, 分布式系统, Cloudflare
-
-> 在庆祝 2026 周庆周之际，Cloudflare 详细介绍了其全球网络的几项重大技术进展。核心亮点包括通过优化握手协议来降低延迟、扩展边缘路由能力以实现更好的流量分布，以及在其 DDoS 保护和安全层的持续改进。文章解释了这些变化如何协同工作，在维持处理每日数十亿次连接的高性能基础设施的同时，为用户提供更快、更安全的互联网体验。
+2026-10-02 21:00:24
 
 
 
 ### [在-Amazon-EVS-和-FSx-for-ONTAP-上构建高可用-Oracle-数据库-|-Amazon-Web-Services](https://aws.amazon.com/blogs/architecture/architect-highly-available-oracle-database-on-amazon-evs-and-fsx-for-ontap/)
 
-2026-10-02 18:57:01 | 标签: 编程与工程, 数据库, 系统设计, 云原生 / DevOps, 性能优化
-
-> 本文详细介绍了如何在 AWS 上使用 Elastic VMware Solution (EVS) 迁移并运行 Oracle 数据库，同时保留 VMware Cloud Foundation (VCF) 工作流。文章强调了多层架构，利用 EC2 裸金属实例进行计算，利用 FSx for NetApp ONTAP 进行存储，以实现亚毫秒延迟和高吞吐量。关键策略包括特定实例类型的选择（i7i 与 i4i）、针对瞬态数据的 vSAN 与针对持久数据的 FSx 之间的存储分区，以及通过 SnapMirror 复制进行灾难备。此外还讨论了 DR 故障转移场景下关键的 Oracle 许可考量因素。
+2026-10-02 18:57:01
 
 
 
 ### [在您的-VPC-中部署开源区域可用性工具-|-Amazon-Web-Services](https://aws.amazon.com/blogs/architecture/deploy-open-source-regional-availability-tools-in-your-vpc/)
 
-2026-10-02 18:50:56 | 标签: 编程与工程, 云原生 / DevOps, 系统设计, 安全, 开源项目
-
-> 本文介绍了两个专为在 AWS 上构建多区域架构的团队设计的开源工具。第一个工具「Capability Insights for AWS」提供了一个自托管仪表板，可跟踪跨区域的服务可用性、API 操作和 CloudFormation 资源类型。第二部分「Workload Analysis」将这些海量数据集过滤为账户实际使用的特定 20-30 个服务，将缺口分析时间从几周缩短至几分钟。这两个工具都通过 CloudFormation 部署，并完全运行在用户的 VPC 内，以确保数据主权和安全。
+2026-10-02 18:50:56
 
 
 
