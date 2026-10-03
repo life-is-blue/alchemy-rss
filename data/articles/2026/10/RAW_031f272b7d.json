@@ -1,0 +1,51 @@
+{
+  "id": "RAW_031f272b7d",
+  "title": "如何选择你的首批 Genie 智能体以实现最大价值",
+  "url": "https://www.databricks.com/blog/how-choose-your-first-genie-agents-maximum-impact",
+  "date": "2026-10-03 00:15:00",
+  "author": "Nasir Dakri",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>• The first few Genie Agents you build determine whether adoption scales or stalls, so choosing the right agents to start with is critical\n   <br>\n   •&nbsp;Use a five criteria rubric: impact, demand, data readiness, scope, and governance to rank candidate workflows in minutes.\n   <br>\n   • Several examples from the field show what \"build now,\" \"shape it first,\" and \"hold off\" rankings for agents look like in practice</p>\n </body>\n</html>",
+  "aiSummary": "Databricks 提供了一个评估框架，通过五项标准评估矩阵来选择初始的 Genie 智能体，以确保高采用率和长期的业务价值。",
+  "oneSentenceSummary": "Databricks 提供了一个评估框架，通过五项标准评估矩阵来选择初始的 Genie 智能体，以确保高采用率和长期的业务价值。",
+  "summary": "文章概述了选择首批正确的 Genie 智能体对于防止采用停滞的战略重要性。它引入了一个基于价值、需求、数据就绪度、范围和治理的具体评估框架。该方法论帮助组织对候选工作流进行排序，并确定应立即构建哪些智能体、哪些需要进一步完善以及哪些应该暂缓。",
+  "mainPoints": [
+    {
+      "point": "初始智能体的选择决定了长期成功",
+      "explanation": "构建的前几个 Genie 智能体为平台采用定下了基调；糟糕的选择可能导致用户增长停滞。"
+    },
+    {
+      "point": "用于提升排名的五项标准评估矩阵",
+      "explanation": "组织应根据价值、需求、数据就绪度、范围和治理来评估候选对象，以有效地对工作流进行优先级排序。"
+    },
+    {
+      "point": "分类部署策略",
+      "explanation": "根据评估结果，工作流被分为三个等级：「立即构建」、「先行塑造」和「暂缓」。"
+    }
+  ],
+  "keyQuotes": [
+    "你构建的前几个 Genie 智能体决定了采用率是扩大还是停滞，因此选择正确的初始智能体至关重要。",
+    "使用五项标准评估矩阵（价值、需求、数据就绪度、范围和治理）可在几分钟内对候选工作流进行排名。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "产品管理",
+    "数据工程",
+    "AI Agent",
+    "社会治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 72,
+  "wordCount": 66,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790957700000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-03 00:15:00"
+}

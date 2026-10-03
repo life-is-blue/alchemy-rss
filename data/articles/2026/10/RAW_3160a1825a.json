@@ -1,0 +1,52 @@
+{
+  "id": "RAW_3160a1825a",
+  "title": "Uber Eats 重构搜索流水线，将端到端延迟降低 50%",
+  "url": "https://www.infoq.com/news/2026/10/uber-eats-search-latency/",
+  "date": "2026-10-02 22:22:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber has rebuilt major parts of the<a href=\"https://www.uber.com/us/en/blog/uber-eats-search-pipeline/\"> Uber Eats search pipeline</a> and reports a 50% reduction in end-to-end search latency. The changes span retrieval, feature hydration, ranking, advertising, presentation, and infrastructure, while an agentic coding workflow was also used to identify, benchmark, and validate additional optimizations.</p>\n   <p>The work began with a change in the primary latency metric. Instead of focusing on backend API response time, Uber began measuring <a href=\"https://en.wikipedia.org/wiki/Above_the_fold\">Above-the-Fold completion</a>, defined as the time until the first screen of results is rendered with images. Pagination with server-side caching reduced the initial response, while asynchronous rendering allowed result items to be processed concurrently. Uber reports that these changes improved Above-the-Fold latency by more than 200 milliseconds.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/10/uber-eats-search-latency/news/2026/10/uber-eats-search-latency/en/resources/1ubereatssearch-1789857085350.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/10/uber-eats-search-latency/en/resources/1ubereatssearch-1789857085350.jpeg\" rel=\"share\"></p>\n   <p><em>Uber Eats search pipeline architecture (Source: <a href=\"https://www.uber.com/us/en/blog/uber-eats-search-pipeline/\">Uber Blog Post</a>)</em></p>\n   <p>Uber reduced retrieval work after finding that tens of thousands of candidates were hydrated before ranking, and discarded many of them. Removing low-value retrieval strategies cut about 120 milliseconds, while product-level embeddings reduced data lookups by more than 100 times and saved another 50 milliseconds. Separating ranking hydration from presentation data reduced latency by more than 100 milliseconds, with dependency removal and request hedging contributing another 35 and 40 milliseconds, respectively. The advertising path was redesigned with column-oriented bid data, in-memory access, and less serialization, reducing latency by about 130 milliseconds. Additional infrastructure changes included parallel encoding, smaller embeddings, connection management improvements, and Go data structure changes to reduce garbage collection overhead.</p>\n   <p>The approach has drawn attention from engineers discussing the work publicly. <a href=\"https://www.linkedin.com/in/anubhooti-nagar20/\">Anubhooti Nagar</a> described the <a href=\"https://lnkd.in/p/gyRWzD3S\">performance challenge</a> as,</p>\n   <blockquote>\n    <p>It’s less about doing things faster and more about doing less work and avoiding unnecessary waiting.</p>\n   </blockquote>\n   <p>Nagar also highlighted Uber’s</p>\n   <blockquote>\n    <p>Measure, Identify, Fix, Validate loop as a model for continuous performance optimization.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/pratikdhanave/\">Pratik Dhanave</a> emphasized that the result came from incremental optimization rather than a single architectural change, <a href=\"https://lnkd.in/p/g629Vqm8\">describing</a> it as no single big idea behind it, but a long list of careful decisions across the full stack. He pointed to changes across latency measurement, hydration, advertising, and infrastructure as examples.</p>\n   <p><a href=\"https://www.linkedin.com/in/vidyapatipandey/\">Vidya Pandey</a> distilled those changes into three principles: Do less work. Start work earlier. Remove unnecessary dependencies. Pandey also connected Uber’s planned <a href=\"https://en.wikipedia.org/wiki/Data_transformation_(computing)\">microbatching</a> approach with techniques used in AI systems to reduce synchronization between processing stages.</p>\n   <p>The changes build on Uber’s existing search platform, which has previously been described as using Apache Lucene, Spark-based indexing, Kafka-based streaming updates, and a distributed serving layer.<a href=\"https://www.infoq.com/presentations/optimization-search-uber/\"> InfoQ’s previous coverage of Uber’s search architecture</a> provides additional context on the platform’s earlier indexing and query execution work.</p>\n   <p>Uber is now exploring end-to-end microbatching, product-based retrieval, Zero Pass Ranking, and HTTP multipart streaming. The company reports that early product-based search testing has produced more than a 50% reduction in p99 latency. The planned changes allow processing stages to overlap rather than waiting for entire preceding stages to complete.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Uber Eats Rebuilds Search Pipeline to Cut End-to-End Latency by 50%\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/uber-eats-search-latency/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1790950920000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 通过转向模块化架构、引入微批和基于产品的检索来优化搜索流水线，将延迟降低了高达 50%。",
+  "oneSentenceSummary": "Uber 通过转向模块化架构、引入微批和基于产品的检索来优化搜索流水线，将延迟降低了高达 50%。",
+  "summary": "Uber 详细介绍了其搜索平台的架构演进，以解决大规模下的延迟问题。通过将单体工作节点转变为基于服务绑定的网关与功能工作节点分离模式，公司实现了团队解耦并缩小了故障影响范围。关键优化包括实现端到端微批、基于产品的检索，以及将数据填充与呈现层分离。这些技术转变使得处理阶段能够重叠执行，使 p99 延迟降低了 50% 以上。",
+  "mainPoints": [
+    {
+      "point": "从单体工作节点向模块化拆分架构转型",
+      "explanation": "使用单一 Cloudflare Worker 处理所有边缘功能会导致部署瓶颈和高故障影响范围；通过服务绑定拆分为网关与功能工作节点模型，允许进行独立扩展。"
+    },
+    {
+      "point": "实现端到端微批和基于产品的检索",
+      "explanation": "通过允许处理阶段重叠执行而非等待整个批次完成，Uber 在早期测试中实现了显著的 p99 延迟降低。"
+    },
+    {
+      "point": "搜索性能优化的核心原则",
+      "explanation": "该策略专注于三个支柱：做更少的工作、更早开始工作以及移除不必要的依赖以简化数据路径。"
+    }
+  ],
+  "keyQuotes": [
+    "与其说让事情运行得更快，不如说是做更少的工作并避免等待。",
+    "测量、识别、修复、验证",
+    "做更少的工作。更早开始工作。移除不必要的依赖。"
+  ],
+  "tags": [
+    "编程与工程",
+    "性能优化",
+    "系统设计",
+    "AI 工作流",
+    "RAG / 检索增强"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 467,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790950920000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-02 22:22:00"
+}

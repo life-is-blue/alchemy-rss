@@ -1,0 +1,48 @@
+{
+  "id": "RAW_dc4e172e24",
+  "title": "学习现代 Kotlin",
+  "url": "https://www.freecodecamp.org/news/learn-modern-kotlin/",
+  "date": "2026-10-02 23:23:58",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We just published a comprehensive, free Kotlin course on the freeCodeCamp.org YouTube channel.</p>\n  <p>Whether you're targeting Android development, scalable backend services, or cross-platform applications, this course takes you from writing your first line of code to mastering asynchronous programming and reactive streams.</p>\n  <p>Here are the things covered in this course:</p>\n  <ul>\n   <li>\n    <p><strong>Fundamentals &amp; Setup</strong>\n     <br>\n     Installing IntelliJ IDEA, understanding the JVM, type inference, primitive types, control flow (<code>when</code>, loops), and Kotlin’s built-in <strong>null safety</strong>.</p>\n   </li>\n   <li>\n    <p><strong>Functions &amp; Collections</strong>\n     <br>\n     Default arguments, <code>vararg</code>, lambda functions, arrays, collections (<code>List</code>, <code>Set</code>, <code>Map</code>), binary search, and error handling.</p>\n   </li>\n   <li>\n    <p><strong>Modern OOP</strong>\n     <br>\n     Primary/secondary constructors, <code>init</code> blocks, <code>data</code> classes, <code>sealed</code> classes, companion objects, singletons, delegation, and <strong>extension functions</strong>.</p>\n   </li>\n   <li>\n    <p><strong>Deep-Dive Generics</strong>\n     <br>\n     Variance (<code>in</code>/<code>out</code>), upper bounds, the <code>where</code> clause, and working around JVM type erasure using <code>reified</code> type parameters.</p>\n   </li>\n   <li>\n    <p><strong>Coroutines</strong>\n     <br>\n     Non-blocking asynchronous programming using <code>launch</code>, <code>async</code>, <code>runBlocking</code>, structured concurrency, timeouts, cancellations, and <code>withContext</code>.</p>\n   </li>\n   <li>\n    <p><strong>Kotlin Flows &amp; Reactive Streams</strong>\n     <br>\n     Cold streams, intermediate and terminal operators (<code>launchIn</code>, <code>asLiveData</code>), exception transparency, <code>retry</code> logic, and lifecycle handling.</p>\n   </li>\n  </ul>\n  <p>The course is completely free and available now <a href=\"https://www.youtube.com/watch?v=nqK3oJ682mQ\">on the freeCodeCamp.org YouTube channel</a> (10-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/nqK3oJ682mQ\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一份掌握现代 Kotlin 的全面指南，涵盖从基础语法到协程和 Flows 等高级主题。",
+  "oneSentenceSummary": "一份掌握现代 Kotlin 的全面指南，涵盖从基础语法到协程和 Flows 等高级主题。",
+  "summary": "本文介绍了由 freeCodeCamp 提供的一份详尽的 10 小视频教程。它涵盖了 Kotlin 的整个生态系统，包括空安全、现代面向对象编程、泛型，以及使用协程和 Flows 处理复杂异步模式，适用于目标 Android 或后端系统的开发者。",
+  "mainPoints": [
+    {
+      "point": "全面的课程",
+      "explanation": "该教程弥补了基础语法与结构化并发等高级生产级概念之间的鸿沟。"
+    },
+    {
+      "point": "关注现代语言特性",
+      "explanation": "重点强调 Kotlin 的优势：空安全、数据类和扩展函数。"
+    },
+    {
+      "point": "高级异步精通",
+      "explanation": "深入探讨了协程和 Flows，这对于现代非阻塞应用开发至关重要。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "编程与工程",
+    "移动开发",
+    "编程语言",
+    "Java",
+    "Kotlin"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 175,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790954638000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-02 23:23:58"
+}

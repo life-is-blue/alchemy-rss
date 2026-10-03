@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-03 04:16:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-03 08:51:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +408,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -519,6 +519,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [Bad-Bunny-T-恤-FAQ：英国购物者应了解的所有信息](https://dev.to/bad_bunny_dfc311e4275d5f4/bad-bunny-t-shirt-faqs-everything-uk-shoppers-should-know-244a)
+
+2026-10-02 18:36:22 | 标签: 产品与设计, Bad Bunny, 街头潮流, 时尚指南, 购物技巧
+
+> 本文为希望在英国购买 Bad Bunny 主题服装的消费者提供了详细的指南。文章涵盖了多个关键因素，例如通过面料和缝线识别高质量服装、理解标准版型与宽松版型的区别，以及选择合适的色彩组合。该指南还提供了 T 恤与连帽衫或夹克叠穿穿搭建议，强调了保护图案的洗涤说明，并强调了查看客户评价和退货政策以确保良好在线购物体验重要性。
 
 
 
@@ -786,6 +794,22 @@
 
 
 
+### [Streamline：使用-Cloudflare-Stream-和-Workers-创建自定义视频管道](https://blog.cloudflare.com/streamline/)
+
+2026-10-03 00:13:45 | 标签: 编程与工程, TypeScript, Cloudflare, Cloudflare Stream, Workers
+
+> Streamline 是 Cloudflare 的一项新服务，与 Cloudflare Stream 视频托管服务集成。它允许开发人员编写自定义 JavaScript 代码（使用 Cloudflare Workers），用于实时处理视频帧。这为动态视频操作提供了可能性，例如添加叠加、更改颜色或应用滤镜，而无需用户先下载视频。
+
+
+
+### [Envoy-Gateway-1.9.1-强化安全性并解决复杂的升级路径](https://www.infoq.com/news/2026/10/envoy-gateway-1-9-1/)
+
+2026-10-02 20:00:00 | 标签: 编程与工程, 可观测性, 云原生 / DevOps, WebAssembly, 安全
+
+> 本文详细介绍了 Envoy Gateway 1.9.1 的发布内容，重点关注稳定性、安全性和可观测性。主要改进包括为 Gateway API 和 xDS 翻译增加了分阶段追踪跨度，以提供性能瓶颈的深度可视化。该版本还通过 EDS 利用 Kubernetes Service 和 EndpointSlice 增强了全局限流功能，确保在扩展期间流量路由的可靠性。此外，它还解决了与 Wasm 执行相关的多个安全问题，移除了某些配置中的隐式 HTTP 回退，并为 v1.8.x 和 v1.9.0 用户提供了清晰的升级路径。
+
+
+
 ### [使用-AI-构建并发布全栈移动应用](https://www.freecodecamp.org/news/build-and-publish-a-full-stack-mobile-app-with-ai/)
 
 2026-10-01 23:13:37
@@ -1008,7 +1032,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1020,7 +1044,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2298,13 +2322,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2454,13 +2478,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -3954,13 +3978,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5664,13 +5688,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

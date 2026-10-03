@@ -1,0 +1,56 @@
+{
+  "id": "RAW_c05ac0e639",
+  "title": "如何使用 Next.js 和 Jev 构建自动将 Bug 路由至 GitHub 的 AI 支持系统",
+  "url": "https://www.freecodecamp.org/news/build-an-ai-support-system-that-automatically-routes-bugs-to-github/",
+  "date": "2026-10-02 22:52:05",
+  "author": "Andrew Baisden",
+  "siteName": "freeCodeCamp",
+  "content": null,
+  "aiSummary": "介绍了构建 IssueRelay 的教程，这是一个通过组件收集反馈并将验证后的 Bug 自动路由至 GitHub 的 AI 支持系统。",
+  "oneSentenceSummary": "介绍了构建 IssueRelay 的教程，这是一个通过组件收集反馈并将验证后的 Bug 自动路由至 GitHub 的 AI 支持系统。",
+  "summary": "本文详细介绍了使用 Next.js 和 TypeScript 开发的开源支持工具。该系统采用了“先存储，后处理”的架构，在反馈存入 PostgreSQL 之后，再由 Jev AI 模型进行分类。文章强调了架构边界，确保 AI 仅负责分拣，而由人工审核和确定性代码控制的 GitHub 路由逻辑。",
+  "mainPoints": [
+    {
+      "point": "先存储，后处理的架构",
+      "explanation": "在 AI 处理之前将收到的报告存储在数据库中，可以确保即使 AI 服务商出现故障或超时也不会丢失数据。"
+    },
+    {
+      "point": "边界 AI 模式",
+      "explanation": "通过 Jev SDK 结合结构化问题和固定选项，将 AI 限制在特定的分类任务（如 Bug、美术、垃圾邮件等），从而减少幻觉产生。"
+    },
+    {
+      "point": "基于 Shadow DOM 的组件",
+      "explanation": "支持组件被构建在 Shadow DOM 内部的 React 组件，以防止主机网站与组件之间发生 CSS 冲突和样式泄漏。"
+    },
+    {
+      "point": "确定性路由逻辑",
+      "explanation": "AI 仅建议分类和严重程度；实际的工单路由决策逻辑由纯 TypeScript 函数处理。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 部分负责分分工作，但它绝不应该掌握主权。",
+    "报告只有在安全存储后才被接收，后续步骤的失败永远无法将其抹除。",
+    "AI 提出建议，人类进行确认，代码执行规则。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "前端与 Web",
+    "开源项目",
+    "Next.js",
+    "数据库"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 24,
+  "score": 89,
+  "wordCount": 5843,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790952725000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-02 22:52:05"
+}

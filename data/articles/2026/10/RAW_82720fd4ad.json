@@ -1,0 +1,56 @@
+{
+  "id": "RAW_82720fd4ad",
+  "title": "使用 OpenTelemetry GenAI 实现智能体轨迹的可观测性",
+  "url": "https://dev.to/ricardofriba/observabilidade-de-trajetorias-agenticas-com-opentelemetry-genai-hla",
+  "date": "2026-10-03 01:00:45",
+  "author": "Ricardo A. Oliveira",
+  "siteName": "DEV Community: machinelearning",
+  "content": null,
+  "aiSummary": "如何利用 OpenTelemetry GenAI 2.0 监控多步骤自主智能体，并通过语义追踪和自愈机制防止死循环。",
+  "oneSentenceSummary": "如何利用 OpenTelemetry GenAI 2.0 监控多步骤自主智能体，并通过语义追踪和自愈机制防止死循环。",
+  "summary": "AI 系统已从单次请求响应演变为多步骤自主智能体，这引发了「黑盒」挑战：智能体经常陷入无限推理循环，造成 Token 和资金的浪费。本文详细介绍了 OpenTelemetry GenAI v1.4 规范，该规范通过语义约定实现了遥测标准化。文章涵盖了运行树的技术架构、利用加密哈希检测循环签名的逻辑，以及包含熔断、上下文状态回滚和合成引导提示词在内的四阶段自愈策略，旨在帮助智能体摆脱失败状态。",
+  "mainPoints": [
+    {
+      "point": "传统监控的失效",
+      "explanation": "传统的日志和指标对于智能体系统而言并不足够，因为它们的执行路径具有非确定性和随机性，使得在智能体发生故障时几乎无法重构因果链。"
+    },
+    {
+      "point": "OpenTelemetry GenAI v1.4 标准",
+      "explanation": "该规范引入了标准化的语义约定（gen_ai.*），使工具能够追踪「运行树」，从而实现跨分布式环境对智能体轨迹的实时跟踪。"
+    },
+    {
+      "point": "循环签名检测",
+      "explanation": "通过维护最近 K 个步骤的滑动窗口，并计算工具名称和参数的加密哈希值，系统可以在同一签名连续重复出现时识别出无限循环。"
+    },
+    {
+      "point": "四阶段自愈机制",
+      "explanation": "系统不再仅仅是报错退出，而是可以触发熔断，将上下文状态回滚到已知的健康检查点，并注入合成引导提示词，强制模型尝试其他策略。"
+    }
+  ],
+  "keyQuotes": [
+    "这种自主性引发了企业工程领域最大的运营痛点之一：智能体黑盒危机。",
+    "在生产环境中，当智能体陷入停滞时，它往往会陷入循环推理，在几分钟内烧掉数千个 Token 和数百美元。",
+    "OpenTelemetry GenAI 带来的巨大范式转变在于，从被动可观测性转向了主动闭环可观测性。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI Agent",
+    "可观测性",
+    "大语言模型 (LLM)",
+    "AI Agents"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 89,
+  "wordCount": 3323,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1790960445000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-03 01:00:45"
+}
