@@ -1,0 +1,56 @@
+{
+  "id": "RAW_9c21596bbf",
+  "title": "我仅花费 $1.30 就为我的 AI 伴侣应用微调了 Qwen3-14B。难点不在模型",
+  "url": "https://dev.to/dh_8116/i-fine-tuned-qwen3-14b-for-my-ai-companion-app-for-130-the-hard-part-wasnt-the-model-56f5",
+  "date": "2026-10-03 17:29:26",
+  "author": "Richael (dh8116)",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Soulor AI is an AI companion app with persistent memory and five relationship stages, from Stranger to Soulmate, plus a Simulation Mode that gives a panel of five AI perspectives on any situation. I'm Richael (dh8116), a Year 11 student in Auckland, and I built it. This post is about the model underneath: a LoRA fine-tune of Qwen3-14B, served with vLLM on Modal, and the four things that mattered more than I expected.</p>\n  <h2><a name=\"1-the-first-adapter-failed-on-format-not-voice\" href=\"#1-the-first-adapter-failed-on-format-not-voice\"> </a> 1. The first adapter failed on format, not voice</h2>\n  <p>The app doesn't want free text from the model. Every reply comes back in a JSON envelope the frontend parses: the message, plus fields the app acts on. My first adapter learned the persona perfectly and couldn't produce that envelope at all. It sounded right, and the app couldn't use any of it.</p>\n  <p>The fix was the training data, not the hyperparameters. I rewrote the corpus so every example was written <em>inside</em> the envelope, the same shape production asks for. The retrained adapter scores <strong>15/15 on companion chat and 15/15 on feed comments</strong> at production prompt size.</p>\n  <p>Training cost about <strong>$1.30</strong> and took half an hour.</p>\n  <p>Lesson: if your app parses the model's output, the output format is part of the behaviour you're fine-tuning, so train on it.</p>\n  <h2><a name=\"2-latency-was-memory-bandwidth-not-a-vllm-flag\" href=\"#2-latency-was-memory-bandwidth-not-a-vllm-flag\"> </a> 2. Latency was memory bandwidth, not a vLLM flag</h2>\n  <p>Replies took 7.9s. I spent a while on serving flags before measuring properly. Decoding a 14B model is bound by memory bandwidth, so each token means reading the weights again, and no flag changes how fast the card can read them. Moving to an H100 took it to <strong>2.0s</strong>.</p>\n  <p>The hosted Qwen fallback had a different problem. With thinking enabled it took 14.6s, and the reasoning was eating the token budget and truncating replies. Turning <code>enable_thinking</code> off gave <strong>5.7s</strong> and complete answers.</p>\n  <h2><a name=\"3-scaletozero-needs-a-gate-in-front-of-it\" href=\"#3-scaletozero-needs-a-gate-in-front-of-it\"> </a> 3. Scale-to-zero needs a gate in front of it</h2>\n  <p>The Modal endpoint scales to zero, which is what keeps it affordable. A cold start takes <strong>108s</strong>, though, and nobody waits 108s for a chat reply.</p>\n  <p>So the gateway asks one question before every request: is a container warm? If yes, the fine-tune goes first in the provider chain. If not, it skips straight to the hosted models. The probe doubles as the warm-up, so the first message of a conversation is answered by a hosted model and the rest can go to the fine-tune. The voice can shift once, early, but I don't pay for an idle GPU between conversations.</p>\n  <h2><a name=\"4-two-bug-shapes-caused-four-differentlooking-outages\" href=\"#4-two-bug-shapes-caused-four-differentlooking-outages\"> </a> 4. Two bug shapes caused four different-looking outages</h2>\n  <p>Signups leaving unreachable accounts, cleared chats coming back, companions forgetting the last few turns, and chat hanging for a minute all looked unrelated. They came from just two patterns:</p>\n  <ul>\n   <li><strong>A write fired without <code>await</code>, with its error swallowed.</strong> On serverless the function often returns before the write happens, so the work silently never runs.</li>\n   <li><strong>A network call with no timeout.</strong> A fallback chain can fall through an error, but it can't fall through a hang.</li>\n  </ul>\n  <p>Both are now fixed where they can't be forgotten: writes are awaited, and every provider call has a timeout.</p>\n  <h2><a name=\"what-simulation-mode-does-with-all-this\" href=\"#what-simulation-mode-does-with-all-this\"> </a> What Simulation Mode does with all this</h2>\n  <p>The same engine runs the companion and the panel. In Simulation Mode, one situation goes to five analysts: an Optimist, a Cynic, a Mentor, a Status Observer and a Gossiper. Because it's the same app, the panel already knows the context you gave your companion. You can rehearse a hard conversation before having it for real, then switch back mid-conversation without starting over.</p>\n  <p>Soulor is in early access and free to start: <strong><a href=\"https://soulor-ai.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\">https://soulor-ai.vercel.app/</a></strong></p>\n  <p>I'm happy to go deeper on any of this in the comments: the envelope corpus, the warm gate, or the eval harness. More of what I build, including a weekly Triton kernel series benchmarked against PyTorch, is at <a href=\"https://dh8116.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">https://dh8116.github.io/</a></p>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了从基础语义搜索转向两阶段学习排序（LTR）架构的技术演进，旨在提升搜索相关性。",
+  "oneSentenceSummary": "本文详细介绍了从基础语义搜索转向两阶段学习排序（LTR）架构的技术演进，旨在提升搜索相关性。",
+  "summary": "作者提供了一份关于通过超越简单语义匹配来优化搜索相关性的全面技术指南。该方法涉及两个阶段的流水线：快速快速检索阶段（使用 BM25 或向量搜索来缩小候选范围），随后是使用机器学习模型进行精确的重排序阶段。关键工作流包括收集人工标注数据、构建针对特定业务目标的特征工程、训练梯度提升模型，以及使用 NDCG 等指标评估成功率。文章还讨论了实际部署中的挑战，例如处理无服务器环境中的冷启动以及通过扩展扩展来管理 GPU 成本。",
+  "mainPoints": [
+    {
+      "point": "两阶段排序架构",
+      "explanation": "现代搜索系统将过程分为快速检索阶段（通过 BM25 或向量搜索将数千个候选结果缩小到数百个）和使用机器学习进行最终排序的精确重排序阶段。"
+    },
+    {
+      "point": "超越语义的相关性",
+      "explanation": "真正的相关性是由向量相似性之外的多个信号决定的，包括类别匹配、产品新鲜度以及利润率等特定业务目标。"
+    },
+    {
+      "point": "学习排序 (LTR) 工作流",
+      "explanation": "开发者无需手动调整排序权重，而是可以在人工标注数据上训练梯度提升模型，以实现排序逻辑。"
+    },
+    {
+      "point": "数据驱动的质量评估",
+      "explanation": "必须使用 NDCG（归一化折扣增）来量化成功，以奖励出现在列表顶部的相关结果，并通过 A/B 测试进行验证。"
+    }
+  ],
+  "keyQuotes": [
+    "这是检索（寻找候选）与排序（按相关性排序）之间的差距。",
+    "不要猜测，要衡量。",
+    "从『足够好』到『用户喜爱』的跨越靠 ML 排序。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "机器学习",
+    "推荐系统",
+    "数据科学",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 632,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791019766000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-03 17:29:26"
+}

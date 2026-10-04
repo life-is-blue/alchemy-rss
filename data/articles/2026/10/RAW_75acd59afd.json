@@ -1,0 +1,56 @@
+{
+  "id": "RAW_75acd59afd",
+  "title": "GitLab 漏洞正被活跃利用，导致未经身份验证的数据泄露",
+  "url": "https://www.infoq.com/news/2026/10/gitlab-critical-vulnerabilities/",
+  "date": "2026-10-04 00:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.cve.org/CVERecord?id=CVE-2026-85706\">CVE-2026-85706 is a critical GitLab path-traversal vulnerability</a> that has moved beyond theoretical risk into confirmed exploitation. It affects self-managed GitLab CE/EE and could allow an unauthenticated remote attacker to read arbitrary files from the GitLab.</p>\n   <p>The vulnerability, affecting all GitLab CE/EE versions from 18.7 through 19.1.7, 19.2 through 19.2.5, and 19.3 through 19.3.1, makes it possible that:</p>\n   <blockquote>\n    <p>under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.</p>\n   </blockquote>\n   <p>What makes this vulnerability particularly critical, reflected in its CVSS score of 10.0, is that it can be exploited to steal secrets and configuration detail that may enable further access to the system, compromise CI/CD pipelines, and potentially gain access to other systems GitLab has access to. To make things worse, exploitation requires only that the GitLab instance have at least one public project.</p>\n   <p>The vulnerability was reported by <a href=\"https://hackerone.com/s3ntago?type=user\">Mohamed Abdelaiz (<code>S3ntago</code>)</a> and promptly patched by GitLab on <a href=\"https://x.com/S3ntago/status/2098381174683169248?s=20\">September 11</a>. As security firm watchTowr reported, within hours of the disclosure, attackers <a href=\"https://www.linkedin.com/posts/watchtowr-intel-is-already-observing-in-the-wild-share-7504127030326673408-E8qx/\">were conducting in-the-wild probes</a>. Subsequently, <a href=\"https://nvd.nist.gov/vuln/detail/cve-2026-85706\">CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog⁠</a>.</p>\n   <p>In addition to patching any public-facing self-hosted GitLab instances, <a href=\"https://watchtowr.com/intelligence/rapid-reaction-gitlab-critical-path-traversal-vulnerability-cve-2026-85706/\">watchTowr recommends that</a>:</p>\n   <blockquote>\n    <p>Defenders should also hunt through log files for HTTP POST requests to <code>/api/v4/projects/{id}/repository/commits/</code> URIs containing <code>file.path</code> parameters to identify potential exploitation attempts.</p>\n   </blockquote>\n   <p>Commenting on the disclosure, cybersecurity executive Christopher Houser warned that <a href=\"https://www.linkedin.com/posts/chrishouser_httpslnkdine6nrhd29-gitlab-cve-2026-share-7506556273329483776-l1TG/\">patching is only part of the story</a>:</p>\n   <blockquote>\n    <p>Patching stops new reads. It doesn't revoke the deploy tokens, CI variables, and SSH keys an attacker already copied. Rotate those, then check which packages and images your builds pulled while the old credentials were still valid.</p>\n   </blockquote>\n   <p>Chief information security officer <a href=\"https://www.linkedin.com/posts/parkerbrissette_vulnerabilitymanagement-devsecops-gitlab-share-7504913635400527872-UKyw/\">Parker Brisette further highlighted the risks associated with this vulnerability</a>, noting that the requirements for exploitation are minimal:</p>\n   <blockquote>\n    <p>On a GitLab server the arbitrary files are CI/CD variables, runner tokens, and whatever the logs picked up. watchTowr's Jake Knott put the precondition plainly. One public project has to exist. After that there is no authentication step.</p>\n   </blockquote>\n   <p>Reddit user GuffariBranderr8 emphasized the <a href=\"https://www.reddit.com/r/cybersecurity/comments/1wea4r4/comment/pa0qa53/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">importance of adopting additional safety measures</a>:</p>\n   <blockquote>\n    <p>If sensitive configuration or CI/CD credentials are exposed, an attacker could potentially pivot into other systems, so restricting internet exposure and rotating affected secrets solo be part of the response alongside patching.</p>\n   </blockquote>\n   <p>To patch affected systems, self-managed GitLab instances should be upgraded to version 19.3.2, 19.2.6, or 19.1.8, as applicable. Two weeks after the initial patch release, <a href=\"https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/?nav=19.3.2\">GitLab backported the fix to versions 19.0.9 and 18.11.12</a> of GitLab Community Edition (CE) and Enterprise Edition (EE), despite both version being <a href=\"https://endoflife.date/gitlab\">end-of-life</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitLab Vulnerability Under Active Exploitation Enables Unauthenticated Data Exfiltration\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/gitlab-critical-vulnerabilities/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1791043200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "自托管版 GitLab 中的一个严重路径遍历漏洞 (CVE-2026-85706) 正被利用，允许未经身份验证的攻击者泄露密钥和 CI/CD 凭据。",
+  "oneSentenceSummary": "自托管版 GitLab 中的一个严重路径遍历漏洞 (CVE-2026-85706) 正被利用，允许未经身份验证的攻击者泄露密钥和 CI/CD 凭据。",
+  "summary": "本文详细介绍了影响 GitLab CE 和 EE 的严重路径遍历漏洞 CVE-2026-85706。该漏洞由于仓库提交 API 缺乏路径限制和身份验证，允许未身份攻击者读取任意文件。其 CVSS 评分 10.0，会对窃取机密、破坏 CI/CD 流水线以及渗透其他系统造成严重威胁。利用该漏洞仅需实例上存在一个公开项目。GitLab 已发布补丁，并对生命周期结束的版本进行了回溯修复。",
+  "mainPoints": [
+    {
+      "point": "CVE-2026-85706 允许未经身份验证的路径遍历",
+      "explanation": "该漏洞存在仓库提交 API 中，允许远程攻击者在无需任何身份验证的情况下读取任意文件。"
+    },
+    {
+      "point": "利用要求极低",
+      "explanation": "攻击者只需要 GitLab 实例上存在一个公开项目即可触发该漏洞。"
+    },
+    {
+      "point": "仅修复漏洞不足以确保事后安全",
+      "explanation": "补丁只能阻止新的读取操作；防御者还必须更换可能已泄取的部署令牌、CI 变量和 SSH 密钥。"
+    },
+    {
+      "point": "GitLab 提供了快速响应，包括回溯支持",
+      "explanation": "GitLab 在 19.3.2、19.2.6 和 19.1.8 版本发布了修复，随后回溯到 EOL 版本 19.0.9 和 18.11.12。"
+    }
+  ],
+  "keyQuotes": [
+    "补丁停止新的读取。它无法撤销攻击者已经复制的部署令牌、CI 变量和 SSH 密钥。",
+    "在 GitLab 服务器上，任意文件指的是 CI/CD 变量、运行器令牌以及日志记录的任何内容。",
+    "必须存在一个公开项目。之后，没有任何身份验证步骤。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "自托管",
+    "云原生 / DevOps",
+    "GitLab"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 432,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791043200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-04 00:00:00"
+}

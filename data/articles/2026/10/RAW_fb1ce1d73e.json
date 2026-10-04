@@ -1,0 +1,55 @@
+{
+  "id": "RAW_fb1ce1d73e",
+  "title": "写好 SKILL，最重要的两个要点",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651981704&idx=1&sn=eea508096408cb3c814b252e9a6a158d",
+  "date": "2026-10-03 11:46:00",
+  "author": "架构师之路",
+  "siteName": "架构师之路",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>架构师之路</span> <span>2026-10-03 11:46</span> <span style=\"display: inline-block;\">北京</span></p>\n  <p>将在10月08日 21:00 直播</p>\n  <p>其一，写好description；</p>\n  <p>其二，正文做好路由。</p>\n  <p>先说第一个要点：写好desc。</p>\n  <p>正文写得再精彩，desc写歪了，skill也很难被触发。desc不是写给人看的摘要（summary），而是写给模型看的触发器（trigger）。desc描述的不只是这个skill是干嘛的，更重要的是什么时候被触发。</p>\n  <p>Claude Code团队的原话是：The description field is not a summary, it's a description of when to trigger this skill.</p>\n  <p>我们切换一下视角，就非常容易理解了：agent眼中，skill就是desc（见上篇，渐进式披露），它拿着这段话，和用户的消息做匹配，决定skill是否触发。</p>\n  <p>所以，写desc，我们实际上是在写一段[给模型的路由规则]。优秀的desc都长啥样？官方给了一个公式，desc至少要包含这些内容：</p>\n  <p>1. 能力清单；</p>\n  <p>2. 具体场景；</p>\n  <p>3. 用户触发关键词。</p>\n  <p>name: weekly-report-helper（周报助手）</p>\n  <p>description: ？</p>\n  <p>bad：这是一个写周报的skill，每周写周报时激活。</p>\n  <p>good：该skill从聊天记录生成结构化周报，当用户要求写周报，或者提到\"写周报\"时激活。</p>\n  <p>第二个要点：正文做好路由。</p>\n  <p>很多人写正文，习惯把自己知道的全部写进去，写得越全越有安全感，这个习惯不好。（见上篇，渐进式披露，这里不再展开）</p>\n  <p>SKILL.md正文不是知识仓库（warehouse），而是路由器（router）。</p>\n  <p>路由器的职责是分发：告诉agent分几步做、每步去哪找细节。SKILL.md里不放细节内容，放细节内容的指针。</p>\n  <p>bad：周报文风细节xxoo。</p>\n  <p>good：周报文风细节详见style.md。</p>\n  <p>另外，正文多用祈使句，少用\"你可以…或许应该…\"，少用第二人称。agent不需要被说服，它需要被指挥。官方规范里有明文要求，原话是：Write the entire skill using imperative/infinitive form, not second person.</p>\n  <p>还有一条实践：别把一切都写的太死，要留一些余地（有些反认知），只有写成\"目标+判断规则+坑点\"，agent才能适配没预料到的场景。如果是100%确定的场景，就写成程序，而不是skill。</p>\n  <p>说了这么多，高质量的正文都长啥样？</p>\n  <p>Anthropic内部最佳实践给了一个骨架：定位，流程，边界，坑点，参考表...</p>\n  <p>限于篇幅，这里不再展开，节后我准备了一场直播：《如何30分钟写出一个好skill》。分享自己写skill的一些心得，以及自己对AI的一些思考。</p>\n  <p>欢迎预约，直播间不见不散。</p>\n </body>\n</html>",
+  "aiSummary": "本文分享了在 AI 时代编写高质量 Skill 的两个核心要点：编写精准的触发描述（Description）与构建路由式的正文（Body）。",
+  "oneSentenceSummary": "本文分享了在 AI 时代编写高质量 Skill 的两个核心要点：编写精准的触发描述（Description）与构建路由式的正文（Body）。",
+  "summary": "作者从架构师视角出发，阐述了提升 AISkill 质量的关键技巧。首先，描述字段（Description）不应是模糊的摘要，而应通过定义能力清单、具体场景和触发关键词来确保模型准确触发；其次，正文应定位为路由器而非知识库，通过分发任务步骤、引用外部细节文档并使用祈使句指令来增强 Agent 的可执行性。",
+  "mainPoints": [
+    {
+      "point": "描述（Description）的本质是触发器",
+      "explanation": "描述不应仅仅是功能的总结，而应通过清晰的能力清单、场景描述和关键词，让模型判断何时该调用该 Skill。"
+    },
+    {
+      "point": "正文（Body）应承担路由职责",
+      "explanation": "避免在 Skill 正文中堆砌所有细节，而应定义工作流步骤，并通过引用外部文档（如 style.md）来保持主逻辑清晰。"
+    },
+    {
+      "point": "使用祈使句编写指令",
+      "explanation": "在编写逻辑时应使用祈使句或动词开头，避免第二人称的建议语气，这更符合 Agent 的执行逻辑。"
+    },
+    {
+      "point": "预留边界与非确定性",
+      "explanation": "不要将逻辑写得过死，通过定义目标、判断规则和潜在坑点，赋予 Agent 处理非预期场景的适应能力。"
+    }
+  ],
+  "keyQuotes": [
+    "The description field is not a summary， it's a description of when to trigger this.",
+    "Write the entire skill using imperative/infinitive form， not second person."
+  ],
+  "tags": [
+    "编程与工程",
+    "AI Agent",
+    "提示工程",
+    "系统设计",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 982,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_ab0aba",
+  "sourceName": "架构师之路",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1790999160000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-03 11:46:00"
+}
