@@ -1,0 +1,51 @@
+{
+  "id": "RAW_97327c78b5",
+  "title": "Google 的 Android 安全状态库助力成分级安全验证",
+  "url": "https://www.infoq.com/news/2026/10/android-security-state-libs/",
+  "date": "2026-10-05 01:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://android-developers.googleblog.com/2026/09/introducing-androidx-security-state-libraries.html\">Google's AndroidX Security State libraries</a> enables apps to verify security patch status at the individual component level, rather than relying on a single, device-wide security patch date.</p>\n   <p>With the introduction of the <a href=\"https://developer.android.com/jetpack/androidx/releases/security#security-state_2\">AndroidX Security State</a> and <a href=\"https://developer.android.com/jetpack/androidx/releases/security#security-state-provider_2\">Security State Provider</a> libraries, Google provides a centralized mechanism for assessing Android device security, enabling more granular verification and greater flexibility.</p>\n   <blockquote>\n    <p>Whether you develop security-critical, consumer-facing apps (such as banking, fintech, or healthcare) or Mobile Device Management (MDM) solutions, these libraries enable you to programmatically verify the security state of the device per component.</p>\n   </blockquote>\n   <p>The Security Patch Level (SPL) is a monolithic patch number that encompasses the entire system software stack running on an Android device. The new mechanism enables component-level security verification and provides more precise visibility into available remediations.</p>\n   <p>The Security State library defines three distinct patch levels: Device SPL, Published SPL, and Available SPL. The Device SPL is queried directly from the running system without requiring network access and indicated the security patch level currently installed. The Published SPL represents the latest patch level officially published by Google for a given component. The Available SPL identifies the patch level that is available for download and installation on the specific device.</p>\n   <p>At the component level, the Security State library distinguishes among the core Android OS (system), OS subsystems updated via Google Play (system modules), and kernel.</p>\n   <blockquote>\n    <p>By surfacing these three distinct patch levels at the component level, developers and enterprises can now understand exactly how secure a device is, identify missing patches, and take proactive remediation steps.</p>\n   </blockquote>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/10/android-security-state-libs/news/2026/10/android-security-state-libs/en/resources/1android-security-1791130672914.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/10/android-security-state-libs/en/resources/1android-security-1791130672914.jpg\" rel=\"share\"></p>\n   <p>For example, banking and enterprise apps can use Device and Available SPLs to ensure a device is secure before allowing sensitive actions. Rather than simply rejecting a request, they can require users to install specific OS component updates first. Developers can also <a href=\"https://opensource.googleblog.com/2024/04/osv-and-helping-developers-fix-known-vulnerabilities.html\">check for the patch status of specific CVEs</a> before allowing security-sensitive operations using a certain hardware o software component (.e.g. NFC or Bluetooth).</p>\n   <p>The library provides a <a href=\"https://developer.android.com/reference/kotlin/androidx/security/state/SecurityPatchState#queryAllAvailableUpdates(kotlin.Long)\"><code>queryAllAvailableUpdates()</code></a> function as well as a <a href=\"https://developer.android.com/reference/kotlin/androidx/security/state/SecurityPatchState#fetchAvailableSecurityPatchLevel(kotlin.String,kotlin.Long)\"><code>fetchAvailableSecurityPatchLevel()</code></a> which aggregates data retrieved from current device to discover pending security updates across system components.</p>\n   <p>The <a href=\"https://developer.android.com/reference/kotlin/androidx/security/state/SecurityPatchState#areCvesPatched(kotlin.collections.List)\"><code>areCvesPatched()</code></a> functions checks whether specific CVEs have been patched on the device, while <a href=\"https://developer.android.com/reference/kotlin/androidx/security/state/SecurityPatchState#isDeviceFullyUpdated()\"><code>isDeviceFullyUpdated()</code></a> helps determine whether a device has installed all available security patches.</p>\n   <p>Finally, the <a href=\"https://developer.android.com/reference/kotlin/androidx/security/state/SecurityPatchState#createVulnerabilityReportUrl(android.net.Uri)\"><code>createVulnerabilityReportUrl()</code></a> generates standardized URLs for security bulletins and CVE details.</p>\n   <p>The Security State Provider library is a companion library specifically for OEMs that standardizes how update clients tell Android apps that an update is available. This means that an app doesn't have to know whether an update comes from Google Play, Google's OTA client, or an OEM's proprietary OEM client.</p>\n   <p>The <a href=\"https://developer.android.com/privacy-and-security/understand-device-security-state\">Understanding device security state</a> guide provides all required information for developers to start using real-time, component-level patch information to better protect their users.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google's Android Security State Libraries Enable Component-Level Security Verification\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/android-security-state-libs/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1791133200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 推出 AndroidX 安全状态库，允许应用程序在组件级别（而非仅基于设备整体）验证安全补丁状态。",
+  "oneSentenceSummary": "Google 推出 AndroidX 安全状态库，允许应用程序在组件级别（而非仅基于设备整体）验证安全补丁状态。",
+  "summary": "AndroidX 安全状态和安全状态提供者库提供了一个用于评估 Android 设备安全性的集中机制。它们支持对特定组件（例如核心 OS、系统模块和内核）的粒度安全补丁验证，并允许开发者在允许敏感操作前检查可用更新和特定 CVE 补丁。",
+  "mainPoints": [
+    {
+      "point": "粒度安全验证",
+      "explanation": "这些库允许进行组件级的安全验证，区分核心 Android OS、系统模块和内核。与单一的整体安全补丁级别（SPL）相比，这提供了更精确的设备安全态势视图。"
+    },
+    {
+      "point": "实时补丁状态",
+      "explanation": "开发者可以查询设备，获取当前安装的补丁级别（Device SPL）、最新发布的补丁级别（Published SPL）和可供下载的补丁级别（Available SPL）。这有助于主动识别缺少的补丁。"
+    },
+    {
+      "point": "增强应用安全性",
+      "explanation": "对安全性要求高的应用（如银行和医疗应用）可以利用这些数据，在允许敏感操作之前确保设备是安全的。它们可以检查特定 CVE 补丁，并在必要时提示用户安装更新。"
+    }
+  ],
+  "keyQuotes": [
+    "无论你是否开发消费者导向的安全关键应用（例如银行、金融科技或医疗），还是移动设备管理（MDM）解决方案，这些库都允许你以编程方式逐组件验证设备的安全性。",
+    "通过在组件级别呈现这三种不同的补丁级别，开发者和企业现在可以准确理解设备的安全性，识别缺少的补丁，并采取主动的补救措施。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "金融科技",
+    "移动开发",
+    "Kotlin"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 458,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791133200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-05 01:00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_3cf4be2b68",
+  "title": "最后 3 天：AI 评估，10 月班次",
+  "url": "https://blog.bytebytego.com/p/new-course-ai-evals-in-practice-starts",
+  "date": "2026-10-04 23:57:40",
+  "author": "ByteByteGo",
+  "siteName": "ByteByteGo Newsletter",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <p><span>Secure your spot in </span><strong>AI Evals in Practice</strong><span>. Enrollment closes in </span><strong>just 3 days!</strong><span> If you’ve been thinking about joining, now’s the time.</span></p>\n   <p>ByteByteGo has teamed up with Manjeet Singh, Senior Director at Salesforce, to bring you this live, hands-on course on building reliable evaluation systems for production AI agents.</p>\n   <p data-attrs=\"{&quot;url&quot;:&quot;https://go.bytebytego.com/aievals-c1-substack&quot;,&quot;text&quot;:&quot;Check it out Now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\" class=\"button-wrapper\"><a href=\"https://go.bytebytego.com/aievals-c1-substack\" class=\"button primary\"><span>Check it out Now</span></a></p>\n   <div class=\"captioned-image-container\">\n    <figure>\n     <a target=\"_blank\" href=\"https://go.bytebytego.com/aievals-c1-substack\" data-component-name=\"Image2ToDOM\" class=\"image-link image2 is-viewable-img can-restack\"> \n      <div class=\"image2-inset\">\n       <picture><img src=\"https://media.bestblogs.dev/20261004224312_f0b246f3-f4ea-4536-88d4-9f9706e47857_4800x6000.jpeg\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/f0b246f3-f4ea-4536-88d4-9f9706e47857_4800x6000.jpeg&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1820,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:3252048,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;href&quot;:&quot;https://go.bytebytego.com/aievals-c1-substack&quot;,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://blog.bytebytego.com/i/218793180?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff0b246f3-f4ea-4536-88d4-9f9706e47857_4800x6000.jpeg&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" alt=\"\" sizes=\"100vw\" fetchpriority=\"high\" class=\"sizing-normal\"></picture>\n       <div class=\"image-link-expand\">\n        <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"></button>\n         <button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\">\n           <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n          </svg>\n         </button>\n        </div>\n       </div>\n      </div> \n     </a>\n    </figure>\n   </div>\n   <p>You’ll learn how to:</p>\n   <ul>\n    <li>\n     <p>Design evals for quality, safety, reliability, cost, and latency</p>\n    </li>\n    <li>\n     <p>Build and validate LLM-as-a-Judge systems</p>\n    </li>\n    <li>\n     <p>Red-team agents for prompt injection and jailbreaks</p>\n    </li>\n    <li>\n     <p>Create meaningful eval datasets from real and synthetic data</p>\n    </li>\n    <li>\n     <p>Evaluate tool use, RAG, multi-step execution, and multi-agent handoffs</p>\n    </li>\n    <li>\n     <p>Run evals in CI/CD and production to catch regressions and drift</p>\n    </li>\n    <li>\n     <p>Turn failures into permanent regression tests</p>\n    </li>\n   </ul>\n   <p data-attrs=\"{&quot;url&quot;:&quot;https://go.bytebytego.com/aievals-c1-substack&quot;,&quot;text&quot;:&quot;Check it out Now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\" class=\"button-wrapper\"><a href=\"https://go.bytebytego.com/aievals-c1-substack\" class=\"button primary\"><span>Check it out Now</span></a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "「实践中的 AI 评估」课程报名将于 3 天内截止；这个动手实践课程将教您如何构建和验证生产级 AI 智能体的评估系统，涵盖质量、安全性、红队对抗以及回归测试。",
+  "oneSentenceSummary": "「实践中的 AI 评估」课程报名将于 3 天内截止；这个动手实践课程将教您如何构建和验证生产级 AI 智能体的评估系统，涵盖质量、安全性、红队对抗以及回归测试。",
+  "summary": "「实践中的 AI 评估」是一门由 ByteByteGo 与 Salesforce 资深主任 Manjeet Singh 共同打造的现场实践课程。课程重点是教导学员如何设计和实现用于生产环境的 AI 智能体评估系统。课程内容广泛涵盖了智能体质量、安全、可靠性、成本和延迟评估；构建和验证基于 LLM 的判断系统；针对提示注入和越狱攻击的红队对抗；创建评估数据集；以及将评估集成到 CI/CD 管道中以捕获回归和漂移等主题。",
+  "mainPoints": [
+    {
+      "point": "全面的评估覆盖",
+      "explanation": "课程将教您如何从多维度评估 AI 智能体，包括功能质量、安全性、可靠性、成本效率和延迟，从而全面了解智能体的性能。"
+    },
+    {
+      "point": "基于 LLM 的判断系统实践",
+      "explanation": "学员将学习如何构建和验证基于 LLM 的评估系统，并理解如何利用语言模型自动评估其他 AI 输出的质量。"
+    },
+    {
+      "point": "安全性与红队对抗",
+      "explanation": "课程包括专门针对红队技术的模块，用于识别提示注入和越狱等漏洞，帮助确保 AI 系统的安全性不受恶意攻击。"
+    },
+    {
+      "point": "数据驱动的评估",
+      "explanation": "学生将学习如何使用实际数据和合成数据创建有意义的评估数据集，这对于训练和验证鲁棒的 AI 模型至关重要。"
+    },
+    {
+      "point": "集成到开发工作流程",
+      "explanation": "课程涵盖如何在 CI/CD 和生产环境中运行评估，使实时检测回归和漂移成为可能，从而维持高质量的 AI 服务。"
+    }
+  ],
+  "keyQuotes": [
+    "确保您的位置：**实践中的 AI 评估**。报名仅剩**3 天**！",
+    "您将学习：设计用于质量、安全、可靠、成本和延迟的评估。构建和验证基于 LLM 的判断系统。红队对抗提示注入和越狱。从实际和合成数据中创建有意义的评估数据集。在 CI/CD 和生产中运行评估以捕获回归和漂移。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型评测与基准",
+    "AI 评估与基准测试",
+    "AI 智能体",
+    "大型语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 118,
+  "domain": "blog.bytebytego.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_996ae6",
+  "sourceName": "ByteByteGo Newsletter",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791129460000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-04 23:57:40"
+}
