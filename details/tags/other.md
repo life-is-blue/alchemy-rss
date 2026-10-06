@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-06 11:46:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-06 18:55:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -16435,9 +16435,7 @@
 
 ### [API-漏洞的工程学剖析：深度解析-OWASP-API-安全前-10-名](https://www.freecodecamp.org/news/engineering-anatomy-of-api-vulnerabilities-owasp-api-security-top-10/)
 
-2026-10-05 18:54:40 | 标签: 编程与工程, 安全, 后端开发, 系统设计, API
-
-> 本文从开发者的工程视角探讨了 OWASP API 安全前 10 名漏洞。文章不仅描述了威胁报告，还解释了导致漏洞产生的工程决策以及所违反的架构原则。内容涵盖了如对象级授权失效（BOLA）、身份验证失效、属性级授权失效（BOPLA）等关键问题。针对每种漏洞，文章提供了 Dart 和 C# 代码示例，演示了如何在服务层实现正确的授权、频率限制以及基于 DTO 的设计。
+2026-10-05 18:54:40
 
 
 
@@ -42409,11 +42407,11 @@
 
 
 
-### [深度拆解：AI-Agent-Harness-的构造](https://baoyu.io/translations/2026-05-10/akshay-pachaar-2041146899319971922)
+### [Codex-的野心，MCP-和-Skill-的下一步](https://baoyu.io/blog/2026-05-11/skill-next-codex)
 
-2026-05-10T00:00:00.000Z
+2026-05-11T00:00:00.000Z
 
-> 深入探讨 Anthropic、OpenAI、Perplexity 和 LangChain 究竟在开发什么。涵盖编排循环、工具、记忆、上下文管理以及所有能将“无状态”大语言模型转变为全能 Agent 的核心组件。
+> Codex 右侧工作区的演进不只是 UI 变化，而是在为插件生态铺路。
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-06 11:46:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-06 18:55:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -656,17 +656,13 @@
 
 ### [API-身份验证与授权：机制、权衡与失败模式的工程深度解析](https://www.freecodecamp.org/news/api-authentication-authorization-mechanisms-trade-offs-and-failure-modes/)
 
-2026-10-05 22:43:43 | 标签: 编程与工程, 安全, 后端开发, 系统设计, 云原生 / DevOps
-
-> 本文从工程角度对常见的 API 安全策略进行了全面概述，包括 Basic Auth、API Keys、Bearer Tokens 和 JWT。文章强调，在选择机制之前，必须先满足 TLS、环境隔离和数据掩码等基础性要求。作者提供了 Dart 和 C# 的实战代码示例，同时强调了硬编码密钥和缺乏令牌过期机制等关键陷阱。
+2026-10-05 22:43:43
 
 
 
 ### [如何使用-NestJS-Observe：开发者可观测性手册](https://www.freecodecamp.org/news/how-to-use-nestjs-observe-an-observability-handbook-for-devs/)
 
-2026-10-05 19:54:16 | 标签: 编程与工程, 可观测性, 后端开发, 系统设计, 云原生 / DevOps
-
-> 作者通过引入「感知框架的可观测性」，解决了传统框架无关型观测工具的局限性。与 OpenTelemetry 等通用工具不同，NestJS Observe 理解 NestJS 的构造体——如控制器、提供者、守卫和拦截器——能够对应用进行自动插桩。该指南提供了构建 NestJS 订单 API 的实战演示，展示了如何利用框架上下文在无需手动日志或原始追踪系统的情况下识别性能瓶颈（例如缓慢的服务服务）。
+2026-10-05 19:54:16
 
 
 
