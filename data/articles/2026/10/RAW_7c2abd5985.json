@@ -1,0 +1,58 @@
+{
+  "id": "RAW_7c2abd5985",
+  "title": "对话 Tibo：入职第三天就把生产环境宕机了，今天他掌管 Codex",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651294469&idx=1&sn=28cfb919a0d097c02710453694c19342",
+  "date": "2026-10-05 12:52:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": null,
+  "aiSummary": "OpenAI ChatGPT 与 Codex 负责人 Tibo Sottiaux 在访谈中分享了 AI 未来趋势：从复杂的 Agent 工作流转向无缝的智能体交互，并提出 28 天每日改进承诺。",
+  "oneSentenceSummary": "OpenAI ChatGPT 与 Codex 负责人 Tibo Sottiaux 在访谈中分享了 AI 未来趋势：从复杂的 Agent 工作流转向无缝的智能体交互，并提出 28 天每日改进承诺。",
+  "summary": "OpenAI 的 ChatGPT 和 Codex 负责人 Tibo Sottiaux 在接受 Lenny 采访时，深度探讨了 AI 产品的演进。他提出了一个 28 天挑战：每天交付一项用户可见的改进否则重置额度，以此将判断权交给用户。Tibo 认为未来的 AI 工作不再是手动搭建复杂的循环（Loops）或执行图，而是一个能够理解目标、偏好并持续学习的智能体系统（Dots）。他强调了 AI 如何帮助开发者从“模型选择”和“配置”的疲劳中解放出来，回归创造性的心流状态。此外，他还分享了 OpenAI 内部自下而上的创新文化与决策机制。",
+  "mainPoints": [
+    {
+      "point": "AI 工作的未来将从复杂的 Agent 工作流转向无缝的智能体交互",
+      "explanation": "Tibo 认为开发者不应受限于手动设计复杂的循环或执行图，未来的趋势是拥有一个能持续工作、理解目标偏好并从反馈中学习的智能体系统。"
+    },
+    {
+      "point": "提出“28 天每日改进”承诺，以用户反馈作为衡量标准",
+      "explanation": "Tibo 承诺在未来 28 天内每天提供一项用户明显有用的改进，否则重置额度，这旨在迫使团队关注真实价值而非功能堆砌。"
+    },
+    {
+      "point": "AI 的核心价值在于消除对模型选择和复杂配置的疲劳感",
+      "explanation": "目前用户在不同模型、推理强度和多智能体模式间切换感到疲惫，未来的目标是让这些技术退到幕后，让用户专注于创造性工作。"
+    },
+    {
+      "point": "OpenAI 内部存在高度自下而上的创新文化与自主权",
+      "explanation": "如 Decisions API 等功能源于员工周末的自发尝试，Tibo 拥有直接拍板的权限，无需层层审批，确保了快速迭代。"
+    }
+  ],
+  "keyQuotes": [
+    "未来 28 天，每天推出一项对大多数 Codex 和 Work 用户明显用的改进，要么进行一次额度重置。",
+    "只要有必要，而且我认为合适，我就可以按下额度重置按钮。",
+    "就连他自己，也已经受够了越来越复杂的选择。",
+    "你需要一个能够根据你实现的目标不断学习的系统。",
+    "我真的不再怀念过去那种状态了。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "产品管理",
+    "AI 编程",
+    "学习方法"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 47,
+  "score": 88,
+  "wordCount": 11667,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1791175920000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-05 12:52:00"
+}
