@@ -1,0 +1,53 @@
+{
+  "id": "RAW_2e63dc24ae",
+  "title": "Google 内部 AI 安全 Agent 发现并实证 500+XSS 漏洞",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651348328&idx=2&sn=6c215865f2ba32b852e01179d9df8010",
+  "date": "2026-10-06 18:00:00",
+  "author": "FreeBuf",
+  "siteName": "FreeBuf",
+  "content": null,
+  "aiSummary": "Google 披露了一款内部 AI 安全 Agent，目前已在其自有 Web 应用中发现 500 余个经核实的跨站脚本（XSS）漏洞，通过实证式验证流程确保高可信度，并构建了多组有效利用链。",
+  "oneSentenceSummary": "Google 披露了一款内部 AI 安全 Agent，目前已在其自有 Web 应用中发现 500 余个经核实的跨站脚本（XSS）漏洞，通过实证式验证流程确保高可信度，并构建了多组有效利用链。",
+  "summary": "Google 披露了一款内部 AI 安全 Agent，目前已在其自有 Web 应用中发现 500 余个经核实的跨站脚本（XSS）漏洞。这套名为 PageBreak 的系统专门排查可被攻击者利用、在访问者浏览器中执行恶意代码的漏洞，覆盖各类敏感服务。该系统通过实证式验证流程，确保每一个疑似漏洞都经过真实运行环境的验证，从而减少无效告警并挖出隐藏的 Web 漏洞。本次测试结果也验证了安全设计的效果，在数百个采用 Google 高保障 Web 框架构建的应用中，PageBreak 仅发现 2 个 XSS 漏洞，且都仅存在于加固措施不足的内部应用或调试端点，证明了统一的框架管控可以整类杜绝相关漏洞。",
+  "mainPoints": [
+    {
+      "point": "实证式验证流程",
+      "explanation": "PageBreak 不直接将 AI 输出作为最终安全结论，而是把疑似漏洞线索提交给专门构建的验证模块。针对 XSS 漏洞，验证模块会先注入 JavaScript 代码，通过类浏览器测试系统打开目标页面，并检测注入的代码是否真的能够执行。这种模式确保了漏洞的实际影响被证实，从而降低误报率。"
+    },
+    {
+      "point": "构建多组有效利用链",
+      "explanation": "本次发现的高风险问题都不是简单的输入校验错误。其中一个案例涉及缓存投毒漏洞，攻击者可以存储恶意响应，后续访问者都会收到该恶意内容。另一个案例涉及未校验的跳转值，通过独立的授权端点生成有效签名，将原本受保护的端点转化为可利用的 XSS 路径。这些利用链展示了复杂攻击路径的构建。"
+    },
+    {
+      "point": "安全设计效果验证",
+      "explanation": "本次测试结果证明了安全设计的效果。在数百个采用 Google 高保障 Web 框架构建的应用中，PageBreak 仅发现 2 个 XSS 漏洞，且都仅存在于加固措施不足的内部应用或调试端点。这表明统一的框架管控可以整类杜绝相关漏洞，而自动化测试需要与安全框架结合使用，同时所有修复方案必须经过工程师审核。"
+    }
+  ],
+  "keyQuotes": [
+    "Google 披露了一款内部 AI 安全 Agent，目前已在其自有 Web 应用中发现 500 余个经核实的跨站脚本（XSS）漏洞。",
+    "PageBreak 则会在真实运行环境中验证每一个疑似漏洞，确认攻击路径真实可行后，才会将问题提交给工程师。",
+    "该漏洞的成因是服务端未校验 URL 路径段，直接将其插入返回的代码中，且该路径段未被纳入缓存键计算。",
+    "Google 目前正在与自动补丁项目合作，处理大量已确认的漏洞报告。最终目标是让产品团队只需验证修复方案是否有效，不用反复核查 AI 生成的看似可信的报告是否对应真实安全问题。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "安全",
+    "AI Agent",
+    "渗透测试与安全工具",
+    "Google"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 85,
+  "wordCount": 1756,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_05367037",
+  "sourceName": "FreeBuf",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1791280800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-06 18:00:00"
+}

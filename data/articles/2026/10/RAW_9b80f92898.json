@@ -1,0 +1,47 @@
+{
+  "id": "RAW_9b80f92898",
+  "title": "2026 开发者调查结果的故事",
+  "url": "https://stackoverflow.blog/2026/10/06/tales-from-the-2026-developer-survey-results/",
+  "date": "2026-10-07 01:00:00",
+  "author": "Phoebe Sajor",
+  "siteName": "Stack Overflow Blog",
+  "content": "<!--[-->\n<html>\n <head></head>\n <body>\n  <figure class=\"p-slice-embed\" _key=\"b4b8afb83c6f\" _type=\"embed\" data-v-ae13316c>\n   <div style=\"padding-top:200px;\" class=\"overflow-hidden w100 h0 ps-relative bg-black-100 bar-md bs-sm mb12\" data-v-ae13316c>\n    <iframe class=\"w100 h100 t0 r0 b0 l0 ps-absolute\" width=\"200\" height=\"120\" src=\"https://art19.com/shows/2355b740-4531-4071-a3ab-5907a95a36d3/episodes/8ae3745d-7f0d-46f1-8de5-d2051dba5a59/embed?theme=light-custom&amp;primary_color=%23f48024\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen scrolling=\"no\" data-v-ae13316c></iframe>\n   </div>\n   <!---->\n  </figure>\n  <p>Check out the <a href=\"https://survey.stackoverflow.co/2026/?utm_medium=referral&amp;utm_source=blog&amp;utm_campaign=dev-survey-2026&amp;utm_content=podcast-link-blog\"><!--[-->full 2026 Developer Survey results<!--]--></a>.</p>\n  <p>Connect with Erin on <a href=\"https://www.linkedin.com/in/erinyepis/\"><!--[-->LinkedIn<!--]--></a> and read her past articles on the <a href=\"https://stackoverflow.blog/author/eyepis/\"><!--[-->Stack Overflow blog<!--]--></a>.</p>\n  <p>Congrats to Stellar Question badge winner <a href=\"https://stackoverflow.com/users/138579/franck-freiburger\"><!--[-->Franck Freiburger<!--]--></a> for winning the badge on their question <a href=\"https://stackoverflow.com/questions/1848700/biggest-integer-that-can-be-stored-in-a-double\"><!--[-->Biggest integer that can be stored in a double<!--]--></a>.</p>\n  <!--]-->\n </body>\n</html>",
+  "aiSummary": "本文简要介绍了 2026 开发者调查，并重点强调了完整结果的可用性，以及对一名顶级贡献者的祝贺。",
+  "oneSentenceSummary": "本文简要介绍了 2026 开发者调查，并重点强调了完整结果的可用性，以及对一名顶级贡献者的祝贺。",
+  "summary": "这篇文章是 2026 开发者调查的推广内容，它引导读者前往完整的数据库，同时庆祝社区成员的成就。文章中包含指向调查结果的链接、作者的 LinkedIn 个人资料，以及 Stack Overflow 上获奖的问题。",
+  "mainPoints": [
+    {
+      "point": "调查结果已公开",
+      "explanation": "文章宣布 2026 开发者调查的完整数据现已在网上开放，让社区能够分析最新的科技行业趋势。"
+    },
+    {
+      "point": "社区表彰",
+      "explanation": "文章还包含对 Franck Freiburger 的祝贺词，他因一个关于双精度浮点数中整数存储极限的深刻问题而获得了 Stellar Question 徽章。"
+    }
+  ],
+  "keyQuotes": [
+    "查看完整的 2026 开发者调查结果。",
+    "祝贺 Stellar Question 徽章获得者 Franck Freiburger，他凭借一个关于双精度数中最大整数存储的问题赢得了这个徽章。"
+  ],
+  "tags": [
+    "编程与工程",
+    "开发者调查",
+    "Stack Overflow",
+    "编程",
+    "技术"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 65,
+  "wordCount": 47,
+  "domain": "stackoverflow.blog",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_b6f2b7",
+  "sourceName": "Stack Overflow Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791306000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-07 01:00:00"
+}

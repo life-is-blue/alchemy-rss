@@ -1,0 +1,51 @@
+{
+  "id": "RAW_ad7b0470a8",
+  "title": "Amper 现在更名为 Kotlin Toolchain：迁移至 Kotlin Blog",
+  "url": "https://blog.jetbrains.com/amper/2026/10/amper-is-now-the-kotlin-toolchain-moving-to-the-kotlin-blog/",
+  "date": "2026-10-06 18:14:56",
+  "author": "Joffrey Bion",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Amper has evolved into the <a href=\"https://blog.jetbrains.com/amper/2026/06/kotlin-toolchain-0-11/\" target=\"_blank\" rel=\"noreferrer noopener\">Kotlin Toolchain</a>, and our blog is moving along with it.</p>\n  <h2 class=\"wp-block-heading\"><strong>This isn’t a goodbye – it’s a continuation</strong></h2>\n  <p>With the release of Kotlin Toolchain 0.11, Amper became the Kotlin Toolchain: a single, unified entry point into Kotlin, now in Alpha.</p>\n  <h3 class=\"wp-block-heading\"><strong>What’s changing</strong></h3>\n  <p>To keep Kotlin ecosystem news in one place, all future news and release announcements will be published on the <a href=\"https://blog.jetbrains.com/kotlin/\" target=\"_blank\" rel=\"noreferrer noopener\">Kotlin Blog</a>.</p>\n  <h3 class=\"wp-block-heading\"><strong>What stays the same</strong></h3>\n  <p><a href=\"https://blog.jetbrains.com/amper/\">This blog</a> will stay online as an archive, so existing posts and links will keep working, but it won’t receive new posts.</p>\n  <h3 class=\"wp-block-heading\"><strong>How to keep following along</strong></h3>\n  <ul class=\"wp-block-list\">\n   <li>Subscribe to the topics you care about on the <a href=\"https://blog.jetbrains.com/kotlin/\">Kotlin Blog</a>, so you won’t miss any Kotlin Toolchain updates.</li>\n   <li>Follow the project on <a href=\"https://github.com/JetBrains/kotlin-toolchain\" target=\"_blank\" rel=\"noopener\">GitHub</a> for releases and changelogs.\n    <br></li>\n  </ul>\n  <p><em>The Kotlin Toolchain team</em></p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/amper/2026/06/kotlin-toolchain-0-11/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Kotlin Toolchain 0.11: The Next Step for Amper</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 从 0.11 版本开始将 Amper 重命名为「Kotlin Toolchain」，并将所有更新和公告移至官方 Kotlin Blog。",
+  "oneSentenceSummary": "JetBrains 从 0.11 版本开始将 Amper 重命名为「Kotlin Toolchain」，并将所有更新和公告移至官方 Kotlin Blog。",
+  "summary": "随着 0.11 版本的发布，Amper 项目正式演变为「Kotlin Toolchain」，旨在为 Kotlin 开发提供统一的入口。虽然原有的 Amper 博客将作为存档保留，但所有新内容、发布说明和公告将迁移到 Kotlin Blog，以整合生态系统信息。",
+  "mainPoints": [
+    {
+      "point": "Amper 重命名为 Kotlin Toolchain",
+      "explanation": "从 0.11 版本开始，Amper 正式更命名为 Kotlin Toolchain，为开发者提供一个统一的工具。"
+    },
+    {
+      "point": "内容集中",
+      "explanation": "所有未来的新闻和发布公告将迁移到官方 Kotlin Blog，以简化整个生态系统的信息。"
+    },
+    {
+      "point": "旧版博客状态",
+      "explanation": "当前的 Amper 博客将作为历史帖的存档保留，但不再接收新更新。"
+    }
+  ],
+  "keyQuotes": [
+    "Amper 演变为 Kotlin Toolchain：进入 Kotlin 的单一、统一入口",
+    "所有未来的新闻和发布公告将在 Kotlin Blog 上发布"
+  ],
+  "tags": [
+    "编程与工程",
+    "开发者工具",
+    "开源项目",
+    "移动开发",
+    "编程语言"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 72,
+  "wordCount": 141,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791281696000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-06 18:14:56"
+}

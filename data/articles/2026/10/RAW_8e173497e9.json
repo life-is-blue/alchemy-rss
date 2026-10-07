@@ -1,0 +1,52 @@
+{
+  "id": "RAW_8e173497e9",
+  "title": "在 Databricks 上扩展和运行大型 dbt 项目：IFCO 数据团队关于性能、可见性和调试的经验",
+  "url": "https://www.databricks.com/blog/scaling-and-operating-large-dbt-project-databricks-ifcos-data-team-performance-visibility-and-debugging",
+  "date": "2026-10-07 00:00:00",
+  "author": "Fernando Muñoz, Ludwig Brummer, Maxim Hammer",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li>Tune dbt incremental models so each run writes only the rows that changed, using liquid clustering, a deliberate merge strategy, and dynamic file pruning. That cut IFCO's core job runtime by over 60% and retired the nightly full refresh.</li>\n   <li>Diagnose slow models from the real executed query plan, not the compiled SQL, since that is where the true causes appear. IFCO packaged that diagnosis into a repeatable skill that runs on every model.</li>\n   <li>Run the dbt project as one task per model on Databricks Jobs with the open-source databricks-dbt-factory, not as one opaque job. That gives per-model visibility, targeted reruns, and enforced testing.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "IFCO 分享了如何通过增量建模、执行计划分析和细粒度作业级编排，优化 Databricks 上的大型 dbt 项目。",
+  "oneSentenceSummary": "IFCO 分享了如何通过增量建模、执行计划分析和细粒度作业级编排，优化 Databricks 上的大型 dbt 项目。",
+  "summary": "本文详细介绍了 IFCO 用于扩展其 dbt 工作流的技术策略。关键改进包括实现带有液体聚类（liquid clustering）的增量模型使运行时间缩短了 60%、分析实际执行计划而非编译代码，以及使用外部工具采用每个模型任务的架构以提高可见性和可靠性。",
+  "mainPoints": [
+    {
+      "point": "优化的增量建模",
+      "explanation": "使用液体聚类和动态文件裁剪将作业运行时间缩短了 60%，并消除了对昂贵的全量刷新的需求。"
+    },
+    {
+      "point": "基于执行的诊断",
+      "explanation": "关注实际执行查询计划而非编译后的 SQL，可以更准确地识别性能问题的根源。"
+    },
+    {
+      "point": "细粒度作业编排",
+      "explanation": "通过 databricks-dbt-factory 将单体作业转变为每个模型一个任务的模式，提高了可见性并允许进行针对性的重运行。"
+    }
+  ],
+  "keyQuotes": [
+    "调优 dbt 增量模型，使每次运行只写入更改的行，并结合液体聚类、刻意的合并策略和动态文件裁剪。",
+    "从实际执行的查询计划而非编译后的 SQL 中诊断慢模型，因为那里才是真实原因出现。",
+    "使用开源的 databricks-dbt-factory 在 Databricks Jobs 中以每个模型一个任务的方式运行 dbt 项目，而不是运行一个不透明的作业。"
+  ],
+  "tags": [
+    "编程与工程",
+    "数据工程",
+    "性能优化",
+    "决策思维",
+    "心理与思维"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 103,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791302400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-07 00:00:00"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "RAW_9d1e651ff6",
+  "title": "随着可观测性模式趋于成熟，OpenTelemetry Kubernetes 属性处理器实现稳定",
+  "url": "https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/",
+  "date": "2026-10-06 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://opentelemetry.io/\">OpenTelemetry</a> has <a href=\"https://opentelemetry.io/blog/2026/k8s-attributes-processor-v1/\">promoted</a> its <a href=\"https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/k8sattributesprocessor/README.md\">Kubernetes Attributes Processor</a> to v1.0.0, marking a significant step in making Kubernetes telemetry more predictable and stable across observability pipelines. The processor enriches logs, metrics, and traces with Kubernetes metadata, and its graduation means the component now meets OpenTelemetry's stability requirements around testing, benchmarking, documentation, and telemetry. It also provides API stability for organisations redistributing the processor as part of their own Collector distributions or binaries.</p>\n   <p dir=\"ltr\">The milestone is important because the Kubernetes Attributes Processor sits at a key point in many OpenTelemetry deployments. It discovers Kubernetes resources and associates telemetry with metadata such as pods, namespaces, nodes, and workloads, turning otherwise generic telemetry into data that can be queried and correlated by Kubernetes context. The processor is currently stable for logs, metrics, and traces, although profiles remain under development.</p>\n   <p dir=\"ltr\">The move to v1.0.0 is not entirely backwards compatible. The processor's stable release adopts the newer <a href=\"https://opentelemetry.io/docs/specs/semconv/system/k8s-metrics/\">OpenTelemetry Kubernetes semantic conventions</a>, which themselves reached stable status in <a href=\"https://github.com/open-telemetry/semantic-conventions/releases\">Semantic Conventions v1.42.0</a> in June 2026. OpenTelemetry says this required close coordination between the Collector and Kubernetes Semantic Conventions SIGs because stabilising the processor also required stabilising the conventions on which its telemetry depends.</p>\n   <p dir=\"ltr\">Several attribute names therefore change. For example, container.image.tag becomes container.image.tags, while Kubernetes label and annotation attributes move from plural forms such as k8s.pod.labels and k8s.pod.annotations to k8s.pod.label and k8s.pod.annotation. Equivalent changes apply to node and namespace labels and annotations.</p>\n   <p dir=\"ltr\">That makes the migration more significant for observability teams than simply changing a Collector component version. Dashboards, alerts, recording rules, queries, data pipelines and downstream integrations that reference the older attribute names may need to be updated. OpenTelemetry provides feature gates that allow the old and new conventions to be emitted during the migration period, giving users a way to transition before relying exclusively on the stable schema.</p>\n   <p dir=\"ltr\">The processor's graduation forms part of OpenTelemetry's broader \"Stable by Default\" work. The Collector SIG began focusing on the stability of heavily used components in late 2025, using community feedback and Collector surveys to identify components where stability and reliability were particularly important to users. The Kubernetes Attributes Processor was subsequently put through a formal graduation process covering areas including code ownership, testing, benchmarking, documentation, and telemetry stability.</p>\n   <p dir=\"ltr\">The work also illustrates an important characteristic of observability standards: a component cannot necessarily become stable in isolation. The processor's metadata needs to have stable semantics if telemetry produced by it is to remain consistent over time. OpenTelemetry therefore coordinated the processor's graduation with the Kubernetes semantic-conventions work, which reached release-candidate status in March before becoming stable in June.</p>\n   <p dir=\"ltr\">Stability does not change the processor's operational characteristics. It maintains an in-memory cache of Kubernetes metadata for the pods it monitors, meaning memory consumption can become significant in larger environments, particularly when filtering is not used to limit the metadata being collected. OpenTelemetry's documentation also identifies limitations around host-networked pods and sidecar deployments.</p>\n   <p dir=\"ltr\">The project has also published benchmarks covering CPU and memory behaviour across Kubernetes workloads. That matters for organisations treating the Collector as part of their production platform rather than simply a telemetry-forwarding component: Kubernetes metadata enrichment becomes another workload whose resource consumption needs to be understood and managed.</p>\n   <p dir=\"ltr\">There are also important differences between the OpenTelemetry approach and vendor-specific Kubernetes observability agents. <a href=\"https://www.datadoghq.com/\">Datadog</a>, for example, provides an infraattributes processor in its<a href=\"https://docs.datadoghq.com/opentelemetry/setup/ddot_collector/\"> Datadog Distribution of the OpenTelemetry Collector</a> that obtains Kubernetes metadata from the Datadog Node Agent and Cluster Agent rather than having each Collector query the Kubernetes API directly. Datadog argues that this can reduce API load and provide more consistent tagging at scale.</p>\n   <p dir=\"ltr\">The OpenTelemetry Kubernetes Attributes Processor takes a more vendor-neutral approach: it directly discovers Kubernetes resources through the Kubernetes API and enriches logs, metrics, and traces using the project's standard semantic conventions. The distinction is therefore less about whether Kubernetes metadata can be attached to telemetry and more about where that enrichment occurs, who owns the metadata discovery layer, and how portable the resulting telemetry remains across observability backends.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenTelemetry Makes Kubernetes Attributes Processor Stable as Observability Schema Matures\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1791288000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenTelemetry 将 Kubernetes 属性处理器提升至 v1.0.0，为用 Kubernetes 元数据富化遥测数据确立了稳定的模式。",
+  "oneSentenceSummary": "OpenTelemetry 将 Kubernetes 属性处理器提升至 v1.0.0，为用 Kubernetes 元数据富化遥测数据确立了稳定的模式。",
+  "summary": "Kubernetes 属性处理器毕业到 v1.0.0 标志着 Kubernetes 可观测性的重大里程碑。通过使用 pod、命名空间和节点等元数据对日志、指标和追踪进行稳定富化，它确保了整个可观测流水线的可预测性。然而，由于需要对齐更新后的语义规范（例如将属性名称从复数改为单数），该版本包含破坏性变更，要求团队更新仪表板和查询语句。此次发布凸显了协调组件稳定性与架构标准之间的必要性，以确保长期一致性。",
+  "mainPoints": [
+    {
+      "point": "提升至 v1.0.0",
+      "explanation": "Kubernetes 属性处理器现在符合 OpenTelemetry 对测试、基准测试、文档和 API 稳定性的要求。"
+    },
+    {
+      "point": "模式中的破坏性变更",
+      "explanation": "稳定版采用了新的语义规范，导致属性名称发生变化，例如从 k8s.pod.labels 变为 k8s.pod.label，因此下游工具需要迁移工作。"
+    },
+    {
+      "point": "默认稳定倡议",
+      "explanation": "此次毕业是 Collector SIG 广泛努力的一部分，旨在根据社区反馈和调查稳定高频使用的组件。"
+    },
+    {
+      "point": "运维考量",
+      "explanation": "该处理器维护着 Kubernetes 属性的内存缓存，在没有进行适当过滤的情况下，在大型环境中可能会导致显著的内存消耗。"
+    },
+    {
+      "point": "厂商中立性",
+      "explanation": "与 Datadog 等从自家 Node Agent 与 Cluster Agent 获取元数据的厂商特定解决方案不同，该处理器直接通过 Kubernetes API 发现资源，以保持可迁移性。"
+    }
+  ],
+  "keyQuotes": [
+    "该处理器使用 Kubernetes 元数据富化日志、指标和追踪，其毕业意味着该组件现在已符合 OpenTelemetry 在测试、基准测试、文档和遥测方面的稳定性要求。",
+    "迁移到 v1.0.0 并非完全向后兼容。",
+    "一个组件并不一定能孤立地变得稳定。"
+  ],
+  "tags": [
+    "编程与工程",
+    "可观测性",
+    "系统设计",
+    "云原生 / DevOps",
+    "开源项目"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 663,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791288000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-06 20:00:00"
+}

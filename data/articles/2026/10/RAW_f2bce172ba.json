@@ -1,0 +1,61 @@
+{
+  "id": "RAW_f2bce172ba",
+  "title": "构建稳健 Python AI 库的 5 条最佳实践",
+  "url": "https://www.kdnuggets.com/5-best-practices-for-building-robust-python-ai-libraries",
+  "date": "2026-10-06 20:00:00",
+  "author": "Shittu Olumide",
+  "siteName": "KDnuggets",
+  "content": null,
+  "aiSummary": "本文概述了构建生产级 Python AI 库的五项核心实践，重点关注模式验证、边界测试、可选依赖、韧性以及自动化质量门禁。",
+  "oneSentenceSummary": "本文概述了构建生产级 Python AI 库的五项核心实践，重点关注模式验证、边界测试、可选依赖、韧性以及自动化质量门禁。",
+  "summary": "作者讨论了标准 Python 库与 AI 特定库之间的类别差异，由于后者面临着独特的失败模式。文中详细介绍了五种核心策略：1) 使用 Pydantic 设计 Schema 优先的 API 以验证 LLM 输出；2) 在 LLM 边界使用 Mock（模拟对象）进行测试，以避免非确定性测试；3) 在 pyproject.toml 中使用可选依赖来管理 torch 等重量型框架；4) 为外部 API 调用实现带有指数退避的韧性机制；以及 5) 通过 uv、ruff、mypy 和 pytest 等工具通过 CI 实现自动化质量控制。",
+  "mainPoints": [
+    {
+      "point": "设计 Schema 优先的公共 API",
+      "explanation": "LLM 输出是非确定性的且缺乏保证的 Schema。在边界处使用 Pydantic 数据可以防止无效数据在应用程序逻辑内部导致崩溃。"
+    },
+    {
+      "point": "在大语言模型边界进行测试",
+      "explanation": "针对实际 LLM 响应进行测试是不稳定的。开发者应该在代码与提供商之间的边界进行 Mock，以隔离测试提示词构建、API 机制和解析逻辑。"
+    },
+    {
+      "point": "使依赖项真正可选",
+      "explanation": "AI 库通常需要庞大的框架（如 torch、transformers）。在 pyproject.toml 中使用「可选依赖」允许用户根据特定功能仅安装所需内容。"
+    },
+    {
+      "point": "为每个外部调用构建韧性",
+      "explanation": "第三方 API 可能会限制速率或失败。实现带有指数退避的显式超时机制，可以防止瞬时问题变成无限循环或意外成本。"
+    },
+    {
+      "point": "自动化每一个质量门禁",
+      "explanation": "为了随时间维持标准，CI 管道必须在任何发布之前自动强制静态检查、格式化、类型检查和测试覆盖率。"
+    }
+  ],
+  "keyQuotes": [
+    "永远不要让直接从模型响应中提取的原始字符串或无类型字典跨越你的公共边界。",
+    "修复方法是在代码与提供商之间的边界精确进行 Mock，而不是更靠外。",
+    "AI 库的存亡取决于你无法控制的第三方的可靠性。",
+    "该工作流中的每一个步骤都是为了捕捉代码贡献可能会悄悄侵蚀库可靠性的特定方式。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI 工程",
+    "大语言模型 (LLM)",
+    "测试与质量",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 86,
+  "wordCount": 2898,
+  "domain": "kdnuggets.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_948a69fc",
+  "sourceName": "KDnuggets",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791288000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-06 20:00:00"
+}
