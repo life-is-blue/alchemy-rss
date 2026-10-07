@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-07 09:16:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-07 15:55:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -1027,9 +1027,7 @@
 
 ### [NTS：Meta-的经过身份验证的时间服务](https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/)
 
-2026-10-07 00:04:38 | 标签: 编程与工程, 安全, 开源项目, 渗透测试与安全工具, 产品运营
-
-> Meta 的新 NTS 服务解决了无身份验证 NTP 的关键漏洞，提供了安全、可靠的时间源。服务使用两阶段过程：首先通过 TLS 握手建立密钥，然后通过经过身份验证的 UDP 数据包进行时间同步，确保时间数据既准确又可信。实现是无状态的，并且是开源的，旨在鼓励广泛采用，以提高依赖时间的互联网操作的安全性。
+2026-10-07 00:04:38
 
 
 
@@ -3807,17 +3805,13 @@
 
 ### [为何我们支持美国现有的核电厂](https://blog.google/company-news/why-were-backing-americas-existing-nuclear-plants/)
 
-2026-10-06 18:31:39 | 标签: 商业与创业, 可持续与绿色, 能源市场, 商业模式与战略, Google
-
-> Google 正在通过与 Constellation Energy 合作，对伊利诺伊州、宾夕法尼亚州和新泽西州的现有核电厂进行融资和现代化改造。该计划旨在在 2032 年前增加 890 MW 的 24/7 全天候清洁电力，为升级提供长期收入保障，同时不会增加其他用电者的成本。此外，Google 正在部署 Gemini Enterprise 以优化核电厂运营，并支持数千个建设和维护工作岗位。
+2026-10-06 18:31:39
 
 
 
 ### [最佳-Python-OCR-库](https://dev.to/felipe_anyformat/best-python-ocr-libraries-179)
 
-2026-10-06 17:57:16 | 标签: 编程与工程, 计算机视觉, 文档解析, 编程语言, Python
-
-> 本文基于 13 张合成测试图像对流行的 Python OCR 库进行了评估。结论是，尽管这三个库在处理清晰、高分辨率文本方面表现良好，但 Tesseract 速度快且最轻量，而 PaddleOCR 在应对噪声、旋转和低分辨率时表现出更好的鲁棒性。作者还指出，没有任何库能够原生有效地处理表格结构或多列布局。
+2026-10-06 17:57:16
 
 
 
@@ -16459,65 +16453,49 @@
 
 ### [2026-开发者调查结果的故事](https://stackoverflow.blog/2026/10/06/tales-from-the-2026-developer-survey-results/)
 
-2026-10-07 01:00:00 | 标签: 编程与工程, 开发者调查, Stack Overflow, 编程, 技术
-
-> 这篇文章是 2026 开发者调查的推广内容，它引导读者前往完整的数据库，同时庆祝社区成员的成就。文章中包含指向调查结果的链接、作者的 LinkedIn 个人资料，以及 Stack Overflow 上获奖的问题。
+2026-10-07 01:00:00
 
 
 
 ### [在-Databricks-上扩展和运行大型-dbt-项目：IFCO-数据团队关于性能、可见性和调试的经验](https://www.databricks.com/blog/scaling-and-operating-large-dbt-project-databricks-ifcos-data-team-performance-visibility-and-debugging)
 
-2026-10-07 00:00:00 | 标签: 编程与工程, 数据工程, 性能优化, 决策思维, 心理与思维
-
-> 本文详细介绍了 IFCO 用于扩展其 dbt 工作流的技术策略。关键改进包括实现带有液体聚类（liquid clustering）的增量模型使运行时间缩短了 60%、分析实际执行计划而非编译代码，以及使用外部工具采用每个模型任务的架构以提高可见性和可靠性。
+2026-10-07 00:00:00
 
 
 
 ### [tapo-开启-TPAP-支持：第三方兼容功能可保持关闭](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 
-2026-10-06 21:55:37 | 标签: 编程与工程, 安全, Rust, Python, 智能家居
-
-> 此次 tapo 库更新引入 TPAP 协议支持，无需开启「第三方兼容」开关即可控制 Tapo 设备。新增功能包括管理摄像头集线器（H200/H500）及其录像文件，以及设置插座定时和计时器的新方法。
+2026-10-06 21:55:37
 
 
 
 ### [地热能的数学基础-|-能源与电力-|-研究入门-|-EBSCOhost](https://www.ebsco.com/research-starters/power-and-energy/mathematics-geothermal-energy/)
 
-2026-10-06 21:05:26 | 标签: 编程与工程, 数学, 气候与环境, 科学前沿, 地热能
-
-> 该文本全面概述了地热能领域的数学原理，解释了地球热量的物理来源，以及用于利用这些资源的不同建模技术。内容涵盖了用于储层工程的拉格朗日-欧拉流动模型、优化时的随机模型，以及地热热泵和发电厂的开发。文章还讨论了地热能的优势，例如低温室气体排放和可靠性，同时指出了高资本成本和站点限制等挑战。
+2026-10-06 21:05:26
 
 
 
 ### [Amper-现在更名为-Kotlin-Toolchain：迁移至-Kotlin-Blog](https://blog.jetbrains.com/amper/2026/10/amper-is-now-the-kotlin-toolchain-moving-to-the-kotlin-blog/)
 
-2026-10-06 18:14:56 | 标签: 编程与工程, 开发者工具, 开源项目, 移动开发, 编程语言
-
-> 随着 0.11 版本的发布，Amper 项目正式演变为「Kotlin Toolchain」，旨在为 Kotlin 开发提供统一的入口。虽然原有的 Amper 博客将作为存档保留，但所有新内容、发布说明和公告将迁移到 Kotlin Blog，以整合生态系统信息。
+2026-10-06 18:14:56
 
 
 
 ### [2026-10-06-Hacker-News-Top-Stories](https://supertechfans.com/cn/post/2026-10-06-HackerNews/)
 
-2026-10-06 16:16:04 | 标签: 编程与工程, 安全, 开源项目, 渗透测试与安全工具, 科技新闻
-
-> 本文聚合了 Hacker News 的多个高质量技术动态。核心内容包括：1. Earendil 发布了 Pi Durable 1.0 极简代理框架，支持长时间运行的持久化任务；2. Cloudflare 推出 Clef 系列基于 Qwen 的开放权重决策模型，用于工单分流和域名分类；3. 讨论了 Git 默认算法从 SHA-1 迁移到 SHA-256 的成本，指出子模块兼容性是核心难点；4. 分析了 Linux 内核更新中的 1313 个 CVE，强调漏洞数量不等同于风险等级；5. 一篇寓言小说《青蛙和蟾蜍》讽刺性了 AI 代理在沙箱环境中的安全问题。
+2026-10-06 16:16:04
 
 
 
 ### [如何在数据流水线中加密-PII-的同时保持可搜索性](https://www.freecodecamp.org/news/how-to-encrypt-pii-in-data-pipelines-while-keeping-it-searchable/)
 
-2026-10-06 13:02:57 | 标签: 编程与工程, 数据工程, 安全, 数字隐私, 后端
-
-> 作者对如何在保护社会安全号码（SSN）等敏感数据的同时，保持执行等值搜索的能力进行了深度技术分析。文章详细说明了概率加密（高安全性、不可搜索）、确定性加密（允许搜索但会泄露模式）与令牌化之间的权衡。文章还涵盖了密钥管理的最佳实践，例如使用 HKDF 进行密钥派生，以及使用 KMS 和 HSM 进行本地与远程加密操作的架构差异。
+2026-10-06 13:02:57
 
 
 
 ### [如果有人尝试对已经热补过的函数再次进行热补丁，他们如何避免冲突？](https://devblogs.microsoft.com/oldnewthing/20261005-00/?p=112755/)
 
-2026-10-06 12:56:49 | 标签: 编程与工程, Windows 与微软生态, 安全, 系统设计, Windows
-
-> 作者研究了 Windows Server 和 Windows 11 Enterprise 中使用的 Windows 热修复机制。文章解释道，该设计假设 Windows Update 是唯一的授权热修复程序，以避免冲突。然而，如果发生了“异常补丁”（未经授权的跳转或补丁），系统可能会宣布该文件无法热补丁并要求重启。文中还强调了预扫描与实际补丁过程之间可能存在的竞态条件。
+2026-10-06 12:56:49
 
 
 
@@ -42495,11 +42473,11 @@
 
 
 
-### [深度拆解：AI-Agent-Harness-的构造](https://baoyu.io/translations/2026-05-10/akshay-pachaar-2041146899319971922)
+### [Codex-的野心，MCP-和-Skill-的下一步](https://baoyu.io/blog/2026-05-11/skill-next-codex)
 
-2026-05-10T00:00:00.000Z
+2026-05-11T00:00:00.000Z
 
-> 深入探讨 Anthropic、OpenAI、Perplexity 和 LangChain 究竟在开发什么。涵盖编排循环、工具、记忆、上下文管理以及所有能将“无状态”大语言模型转变为全能 Agent 的核心组件。
+> Codex 右侧工作区的演进不只是 UI 变化，而是在为插件生态铺路。
 
 
 
