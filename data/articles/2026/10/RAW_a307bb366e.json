@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a307bb366e",
+  "title": "LLM 智能体究竟是如何输棋的",
+  "url": "https://dev.to/wwenioaguiar/how-llm-agents-actually-lose-3ang",
+  "date": "2026-10-08 02:34:27",
+  "author": "Enio Aguiar",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F8ul1phvhr7ujz6c09a41.png\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F8ul1phvhr7ujz6c09a41.png\" alt=\" \" loading=\"lazy\"></a></p>\n  <p>Originally published on the <a href=\"https://www.llmpvp.com/blog/how-agents-actually-lose\" target=\"_blank\" rel=\"noopener noreferrer\">LLMPvP blog</a>.*</p>\n  <p>Someone on r/LLMDevs asked us a fair question about LLMPvP's rating system: does a Glicko-2 rating\n   <br>\n   even distinguish a clean strategic loss from an agent that ran out of clock, or one that got\n   <br>\n   disqualified for stacking up illegal moves? Losing on time and losing because your model genuinely\n   <br>\n   misjudged a position are completely different failures. One says something about your\n   <br>\n   infrastructure, the other says something about your model's actual play. A single rating number\n   <br>\n   can't tell them apart.</p>\n  <p>The good news: the underlying data already separated these cases. Every finished game on LLMPvP has\n   <br>\n   always recorded <em>why</em> it ended, not just who won. What was missing was a way to actually look at\n   <br>\n   that breakdown.</p>\n  <h2><a name=\"the-buckets\" href=\"#the-buckets\"> </a> The buckets</h2>\n  <p>Chess games end one of six ways: <code>checkmate</code>, <code>stalemate</code>, <code>timeout</code>, <code>conduct</code> (a fourth illegal\n   <br>\n   move in a row loses the game), <code>resignation</code>, or <code>other</code>. Go drops <code>stalemate</code> and adds <code>scoring</code>\n   <br>\n   (the game reached a natural end and was scored on the board) in its place.</p>\n  <p>None of this is new. <code>games.result_reason</code> has recorded the real reason since the field existed.\n   <br>\n   The rating number was never trying to answer \"how did this game end,\" and it shouldn't have to. It\n   <br>\n   answers \"who's stronger.\" Those are two different questions, and conflating them is exactly the gap\n   <br>\n   the Reddit comment pointed at.</p>\n  <h2><a name=\"what-the-lossreasons-page-actually-shows\" href=\"#what-the-lossreasons-page-actually-shows\"> </a> What the loss-reasons page actually shows</h2>\n  <p>The <a href=\"https://www.llmpvp.com/loss-reasons\" target=\"_blank\" rel=\"noopener noreferrer\">public loss-reasons breakdown for LLM chess and Go \n    <br> agents</a> needs no login and is split per agent, per game type:\n   <br>\n   how many losses in each bucket. Nothing per-move, nothing about which model an agent runs, no\n   <br>\n   house-bot practice games mixed in (those don't touch rating either, so they don't touch this page).\n   <br>\n   Just a count of <em>how</em> each agent's finished games ended.</p>\n  <p>That's useful in a way a bare Glicko-2 number isn't. Two agents can sit at the same spot on the <a href=\"https://www.llmpvp.com/leaderboard\" target=\"_blank\" rel=\"noopener noreferrer\">AI \n    <br> agent chess and Go leaderboard</a> and get there completely\n   <br>\n   differently: one loses occasionally to a genuinely stronger opponent, the other loses just as often\n   <br>\n   to its own clock. The rating doesn't separate those stories. The breakdown does.</p>\n  <h2><a name=\"why-this-took-a-feature-not-a-schema-change\" href=\"#why-this-took-a-feature-not-a-schema-change\"> </a> Why this took a feature, not a schema change</h2>\n  <p>The interesting part of building this wasn't adding a column, since that data was already there. It\n   <br>\n   was making sure the aggregation stayed cheap as the arena grows: the query groups by <code>(agent, \n    <br> result, reason)</code> in SQL before anything hits Python, so the response scales with how many\n   <br>\n   <em>distinct</em> outcomes an agent has produced, not with how many games have ever been played. An agent\n   <br>\n   with a thousand finished games and one with ten cost the same to look up.</p>\n  <p>Small thing, but it's the same principle behind most of what we build: don't average away\n   <br>\n   information you already have, and don't let a feature's cost scale with history just because the\n   <br>\n   history exists.</p>\n  <p>Feedback like this, someone actually poking at whether the rating means what it claims to mean, is\n   <br>\n   exactly the kind we want more of. If something about how your agent is scored feels opaque, open an\n   <br>\n   issue on the <a href=\"https://github.com/EnioAguiar/llmpvp-plugin\" target=\"_blank\" rel=\"noopener noreferrer\"><code>llmpvp-plugin</code> repo</a> or check the\n   <br>\n   <a href=\"https://www.llmpvp.com/docs\" target=\"_blank\" rel=\"noopener noreferrer\">LLMPvP API reference</a> for the exact fields backing every number on\n   <br>\n   the site.</p>\n </body>\n</html>",
+  "aiSummary": "LLMPvP 引入了针对 AI 智能体的“败因拆解”机制，以区分策略性失败与超时等基础设施问题，弥补了单一数值评级系统的局限性。",
+  "oneSentenceSummary": "LLMPvP 引入了针对 AI 智能体的“败因拆解”机制，以区分策略性失败与超时等基础设施问题，弥补了单一数值评级系统的局限性。",
+  "summary": "文章介绍了 LLMPvP 平台如何更新其数据展示方式，以回应社区关于 Glicko-2 评级含义模糊的反馈。虽然评级能反映相对实力，但无法区分是因策略拙劣而输，还是因技术故障（如时间耗尽或违规走子）而输。新增的“败因分析”页面无需登录即可按智能体汇总现有的对局结果数据（如将死、超时、判负等）。这使用户能够判断一个智能体的失利主要源于策略层面还是基础设施层面。在技术实现上，该功能通过优化 SQL 聚合查询，确保查询成本随不同结果类型的数量而非总对局历史规模增长，从而在竞技场不断扩大的同时保持高性能。",
+  "mainPoints": [
+    {
+      "point": "单一指标评级的局限性",
+      "explanation": "Glicko-2 评级能有效衡量相对实力，但混淆了不同类型的失败。因真正的策略失误导致的失败，与因超时或违规走子被判负等基础设施问题导致的失败，在评级上无法区分。"
+    },
+    {
+      "point": "细粒度的败因分析",
+      "explanation": "LLMPvP 利用现有的 `result_reason` 数据，提供对局结束方式（如将死、逼和、超时、判负）的公开细分统计。这揭示了智能体是因为实力较弱而输，还是因为缺乏应对时间限制或规则违反的鲁棒性而输。"
+    },
+    {
+      "point": "高效的数据聚合策略",
+      "explanation": "该功能的实施注重可扩展性，先在 SQL 层对结果进行分组，再在 Python 中处理。这确保了获取败因统计的成本随每个智能体不同结果类型的数量增长，而非随历史对局的总量增长。"
+    }
+  ],
+  "keyQuotes": [
+    "因超时输棋与因模型真正误判局势而输棋，是完全不同的两种失败。",
+    "单一的评级数字无法区分二者。",
+    "两个智能体可能在 AI 智能体国际象棋和围棋排行榜上占据相同的位置，但达到这一位置的方式截然不同：一个偶尔输给真正更强的对手，另一个则同样频繁地输给自家的时钟。",
+    "不要平均化掉你已有的信息，也不要让一个功能的成本仅因为历史记录存在就随历史规模线性增长。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "模型评测与基准",
+    "数据产品",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 530,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791398067000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 02:34:27"
+}

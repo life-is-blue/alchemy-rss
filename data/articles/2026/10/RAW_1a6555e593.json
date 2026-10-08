@@ -1,0 +1,51 @@
+{
+  "id": "RAW_1a6555e593",
+  "title": "Strands Decider 2B 与 LLM-as-a-judge 对比：关键词正则表达式表现媲美 2B 模型",
+  "url": "https://dev.to/efraingaray/strands-decider-2b-vs-llm-as-a-judge-a-keyword-regex-tied-the-2b-i74",
+  "date": "2026-10-08 02:17:16",
+  "author": "Efrain Garay",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I wanted a cheap judge for my video pipeline: given a shot description, does it have a concrete subject, a visible action and an explicit camera decision, or is it generic? Strands Decider 2B is built for that kind of yes/no call, so I measured it.</p>\n  <ul>\n   <li><strong>75 shot descriptions</strong>: 63 captured from my pipeline (22 from production, 41 from a weak model running the same step) and 12 adversarial, with the three features annotated before running any judge.</li>\n   <li>With the <code>choice</code> primitive the 2B reaches <strong>AUC 0.91 in 34 ms</strong> per judgment. Claude Opus reaches <strong>0.99</strong>. A regex that only looks for framing words reaches <strong>0.90</strong>.</li>\n   <li>With its default primitive, <code>noul</code>, it caught <strong>none of the 31 generic shots</strong> at the 0.5 threshold. The v21 checkpoint does not improve it.</li>\n   <li>Repeated scenes in a shot list, my real failure, are the easy part: the 2B, Opus and Haiku got <strong>13 of 13</strong> lists right.</li>\n   <li>Shots, labels, every judge's output and the scripts are public: a <a href=\"https://efraingaray.com/en/datasets/juez-decision-75/\" target=\"_blank\" rel=\"noopener noreferrer\">CC-BY-4.0 dataset</a> and a gist that reproduces every figure.</li>\n  </ul>\n  <p><strong>Read the full measurements → <a href=\"https://efraingaray.com/en/blog/juez-decision-2b/\" target=\"_blank\" rel=\"noopener noreferrer\">https://efraingaray.com/en/blog/juez-decision-2b/</a></strong></p>\n </body>\n</html>",
+  "aiSummary": "一项对比 Strands Decider 2B、Claude Opus 和简单正则表达式在视频镜头质量评判中的基准测试显示，2B 模型的表现与基于关键词的正则表达式相当，而大型 LLM 则展现出更高的准确性。",
+  "oneSentenceSummary": "一项对比 Strands Decider 2B、Claude Opus 和简单正则表达式在视频镜头质量评判中的基准测试显示，2B 模型的表现与基于关键词的正则表达式相当，而大型 LLM 则展现出更高的准确性。",
+  "summary": "作者评估了三种自动判断视频镜头描述是否包含具体主体、动作和摄像机决策的方法：Strands Decider 2B、Claude Opus 以及基于关键词的正则表达式。研究使用了一个包含 75 个标注镜头（含对抗性样本）的数据集，发现 Strands Decider 2B 在使用 `choice` 原语时达到了 0.91 的 AUC，这在统计上与正则表达式的 0.90 相似，但显著低于 Claude Opus 的 0.99。值得注意的是，该 2B 模型的默认 `noul` 原语在识别通用镜头时完全失效。作者得出结论：对于这种特定的二分类任务，除非对高精度有严格要求（此时需要更大的 LLM），否则小型专用模型相比简单启发式规则并没有明显优势。",
+  "mainPoints": [
+    {
+      "point": "Strands Decider 2B 的表现与简单正则表达式相当",
+      "explanation": "使用 `choice` 原语时，2B 模型达到了 0.91 的 AUC，而仅查找构图词汇的正则表达式达到了 0.90。这表明在镜头描述的基本特征检测方面，复杂模型可能并未提供比启发式规则显著的增益。"
+    },
+    {
+      "point": "Claude Opus 展现了卓越的评判能力",
+      "explanation": "该大型语言模型达到了 0.99 的 AUC，显著优于小型专用模型和正则表达式。这凸显了在细微语义理解任务中，轻量级推理优化模型与前沿 LLM 之间的差距。"
+    },
+    {
+      "point": "默认原语可能导致灾难性失败",
+      "explanation": "Strands Decider 2B 的默认 `noul` 原语在 0.5 阈值下未能捕捉到任何 31 个通用镜头，表明正确的配置或原语选择对于模型效用至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "「使用 choice 原语时，2B 模型每次判断仅需 34 ms，AUC 达到 0.91。Claude Opus 达到 0.99。仅查找构图词汇的正则表达式达到 0.90。」",
+    "「使用其默认原语 noul 时，它在 0.5 阈值下未能捕捉到 31 个通用镜头中的任何一个。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型训练与推理",
+    "机器学习",
+    "模型评测与基准",
+    "LLM 推理优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 180,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791397036000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 02:17:16"
+}

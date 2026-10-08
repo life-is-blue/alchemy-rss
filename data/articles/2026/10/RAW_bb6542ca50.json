@@ -1,0 +1,57 @@
+{
+  "id": "RAW_bb6542ca50",
+  "title": "我给两个 AI 模型相同的指令，它们以相反的方式出错",
+  "url": "https://dev.to/kotwal-itpro/i-gave-two-ai-models-the-same-instructions-they-got-it-wrong-in-opposite-ways-5fie",
+  "date": "2026-10-08 03:35:30",
+  "author": "Ankur Kotwal",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Originally published at <a href=\"https://kotwal-itpro.github.io/2026/10/07/same-instructions-opposite-mistakes/\" target=\"_blank\" rel=\"noopener noreferrer\">kotwal-itpro.github.io</a>.</em></p>\n  <p>A lot of teams now use AI models to read large piles of text: support tickets, reviews, emails. The cheapest way to do that is a \"batch\" job. You put all your requests in one file, send it off, and pick up the answers a few hours later. You pay about half the normal price.</p>\n  <p>I wanted to know how reliable these batch jobs really are, so I started a small open project to test them. I began with two providers, OpenAI and Google's Gemini. Here's what happened in the first round.</p>\n  <h2><a name=\"what-i-tested\" href=\"#what-i-tested\"> </a> What I tested</h2>\n  <p>I made 1,000 fake customer support chats. Each one is a short conversation like this:</p>\n  <blockquote>\n   <p>Customer: I was charged twice for my router. Thanks.\n    <br>\n    <br>\n    Agent: Sorry about that. Could you confirm your order number?\n    <br>\n    <br>\n    Customer: Order number is A10012.</p>\n  </blockquote>\n  <p>For every chat, the model had to answer four questions:</p>\n  <ol>\n   <li>Which product is it about?</li>\n   <li>What kind of problem is it? (billing, shipping, broken product, or a \"how do I\" question)</li>\n   <li>How does the customer feel?</li>\n   <li>Did the customer ask to be contacted again?</li>\n  </ol>\n  <p>Because I wrote the chats myself, I know the right answer for every one. So I can check not only whether the model replied, but whether it was right.</p>\n  <p>I sent the same 1,000 chats to OpenAI (gpt-4.1-mini) and to Gemini (gemini-3.5-flash-lite).</p>\n  <h2><a name=\"the-good-news-nothing-broke\" href=\"#the-good-news-nothing-broke\"> </a> The good news: nothing broke</h2>\n  <p>Both services sent back all 1,000 answers. Nothing went missing, nothing came back garbled, and I didn't have to retry anything. Each job took three or four minutes. It cost about 8 or 9 cents for the whole batch on either one.</p>\n  <p>I expected at least a few problems, so this surprised me a little. My guess is that the trouble starts with much bigger jobs. That's what I'll test next.</p>\n  <h2><a name=\"my-first-try-made-both-models-look-bad\" href=\"#my-first-try-made-both-models-look-bad\"> </a> My first try made both models look bad</h2>\n  <p>In my very first small test, I only gave the models the names of the four things I wanted, nothing more.</p>\n  <p>They nailed the first two: product and problem type were 100% right. But the follow-up question came back right only 31% of the time, on both models.</p>\n  <p>When I looked at the answers, the models weren't really wrong. They had answered a different question. I meant \"did the customer ask us to get back to them?\" They read it as \"does this ticket need more work?\" And of course every open problem needs more work, so they said yes to almost everything.</p>\n  <p>So I added one plain sentence explaining each question. That's all. The follow-up answers went from 31% right to almost 100% right, on both models.</p>\n  <p>That was the biggest lesson of the whole test. When a model seems to get something wrong, first check whether you actually told it what you meant.</p>\n  <h2><a name=\"then-they-made-opposite-mistakes\" href=\"#then-they-made-opposite-mistakes\"> </a> Then they made opposite mistakes</h2>\n  <p>Even with the explanations, the \"how does the customer feel\" question was still tricky. My instructions said: judge how the customer feels about the product, and don't count the problem itself as a bad feeling.</p>\n  <p>OpenAI got this right 93% of the time, and Gemini 82%. But the scores aren't the interesting part. The interesting part is how each one got it wrong.</p>\n  <p><strong>OpenAI was too negative.</strong> When a customer politely reported a problem, like \"I was charged twice. Thanks.\", it often called them unhappy. It reacted to the problem, even though I'd said not to.</p>\n  <p><strong>Gemini was too forgiving.</strong> When a customer said \"This is really frustrating\", it often called them neutral. It followed my \"don't count the problem\" rule so strictly that it ignored real frustration too.</p>\n  <p>Same instructions, opposite mistakes.</p>\n  <p>Why does this matter? Say you count unhappy customers every week. With one model you'd count too many, and with the other you'd count too few. If you switch models, your numbers move, and it isn't because your customers changed. So when you compare models, don't just compare the scores. Look at which answers each one gets wrong.</p>\n  <h2><a name=\"one-real-glitch\" href=\"#one-real-glitch\"> </a> One real glitch</h2>\n  <p>The only actual failure happened before any work started. Gemini's list of models said one older model was available. When I sent my batch job to it, Gemini refused, saying that model was \"no longer available to new users\". So the list and the batch service didn't agree.</p>\n  <p>That failed attempt also left my uploaded file sitting on Google's servers. I've changed my tool so it cleans up after itself when that happens.</p>\n  <h2><a name=\"whats-next\" href=\"#whats-next\"> </a> What's next</h2>\n  <p>Over the next couple of days I'll run the exact same job again, to see whether the models give the same answers each time. After that I'll try much bigger jobs, 100,000 chats and more, and add more providers.</p>\n  <p>Everything is public: the code, the fake chats, and every result. It's all on GitHub at <a href=\"https://github.com/kotwal-itpro/steadybatch\" target=\"_blank\" rel=\"noopener noreferrer\">kotwal-itpro/steadybatch</a>, including a <a href=\"https://github.com/kotwal-itpro/steadybatch/blob/main/docs/FINDINGS.md\" target=\"_blank\" rel=\"noopener noreferrer\">log of everything I found</a>, my own early mistake included. If you run batch jobs like this and have seen something strange, I'd love to hear about it.</p>\n  <h2><a name=\"update-october-7-i-added-claude\" href=\"#update-october-7-i-added-claude\"> </a> Update, October 7: I added Claude</h2>\n  <p>After writing this, I ran the same 1,000 chats through Anthropic's Claude, using its small model, Haiku 5.5. Two things stood out.</p>\n  <p><strong>It was the first model to lose an answer.</strong> Out of the box, this model decides for itself when to stop and \"think\" before answering. Usually it doesn't. But on 10 chats it thought for so long that it ran out of room before finishing its answer. Some answers came back empty, and some were cut off halfway. My tool caught every one and asked again. Nine came back fine on the second or third try. One never did, so this run ended at 999 out of 1,000.</p>\n  <p>The room I'd given it was about eight times what a normal answer needs. It was the same limit I'd used for OpenAI and Gemini without any trouble. If you use a model like this, either give it much more room than you think it needs, or turn the thinking off.</p>\n  <p><strong>One setting flipped its mistakes.</strong> So I ran it again with thinking turned off. This time all 1,000 came back on the first try, in half the time: about 5 minutes instead of 10.</p>\n  <p>On \"how does the customer feel\", Claude scored about the same both times, 89% and 91%. That's between OpenAI and Gemini. But look at how it got things wrong:</p>\n  <ul>\n   <li><strong>With thinking on, it was mostly too forgiving, like Gemini.</strong> \"How do I reset my phone? This is really frustrating.\" came back as neutral.</li>\n   <li><strong>With thinking off, it was mostly too negative, like OpenAI.</strong> \"My laptop stopped working after three days. Let me know what you need from me.\" came back as unhappy.</li>\n  </ul>\n  <p>It was the same model with the same instructions and one setting changed, and the mistakes went the other way. The two runs disagreed on about 1 chat in 9.</p>\n  <p>That makes the main point of this post stronger. A score can stay the same while the answers underneath it change. If you depend on the counts, check which answers move, not just the score.</p>\n  <p>It was also the cheapest of the three: about 5 cents per 1,000 chats, against 8 to 9 cents for OpenAI and Gemini.</p>\n  <p>Next up: the same test on a model I run myself on a rented GPU, and then much bigger jobs.</p>\n </body>\n</html>",
+  "aiSummary": "对 OpenAI、Gemini 和 Claude 在处理批量客服工单时的对比测试显示，相同的指令会导致相反的误差模式（过度消极 vs. 过度宽容），并凸显了提示词清晰度及思考预算等模型特定配置的重要性。",
+  "oneSentenceSummary": "对 OpenAI、Gemini 和 Claude 在处理批量客服工单时的对比测试显示，相同的指令会导致相反的误差模式（过度消极 vs. 过度宽容），并凸显了提示词清晰度及思考预算等模型特定配置的重要性。",
+  "summary": "作者进行了一项开源基准测试，评估了三个 AI 模型（OpenAI gpt-4.1-mini、Google Gemini 3.5-flash-lite 和 Anthropic Claude Haiku 5.5）在批量处理 1000 条合成客户支持聊天时的可靠性。研究聚焦于四项分类任务：产品识别、问题类型、情感分析和后续跟进必要性。主要发现包括：(1) 提示词的模糊性导致了显著错误；澄清一个问题后，准确率从 31% 提升至近 100%。(2) 模型在情感分析中表现出截然不同的失败模式——OpenAI 倾向于将问题与不快乐混淆从而显得过于消极，而 Gemini 因严格遵循指令忽略明确的不满情绪从而显得过于宽容。(3) Claude 引入了与「思考」令牌相关的新挑战，其内部推理有时会在未给予更大令牌限制或禁用该功能时截断输出。结果表明，切换模型可能会扭曲业务指标，这并非因为数据发生了变化，而是因为每个模型解读指令的方式不同。",
+  "mainPoints": [
+    {
+      "point": "对于基础任务，提示词清晰度比模型选择更具影响力。",
+      "explanation": "在初步测试中，关于「后续跟进需求」的模糊措辞导致 OpenAI 和 Gemini 的准确率仅为 31%。增加一句定义该术语的解释性语句后，准确率提升至近 100%，这表明看似模型的失败往往实际上是沟通的失败。"
+    },
+    {
+      "point": "模型在情感解读中表现出系统性且相反的偏差。",
+      "explanation": "当被指示判断对产品而非问题本身的情感时，OpenAI 经常将礼貌的投诉误判为负面（过于悲观），而 Gemini 则经常将明确的不满误判为中性（过于乐观）。这表明不同的架构具有独特的解释倾向，会影响下游分析的一致性。"
+    },
+    {
+      "point": "「思考」模式等高级功能需要精细的资源管理。",
+      "explanation": "Claude Haiku 5.5 在其自动「思考」模式激活时，有 10/1000 的案例未能返回完整答案，可能是由于内部推理期间耗尽令牌限制所致。禁用此功能或增加输出缓冲区解决了该问题，凸显了 LLM 中不透明中间步骤带来的操作风险。"
+    },
+    {
+      "point": "批量 API 的可靠性因供应商的基础设施处理方式而异。",
+      "explanation": "虽然所有模型都成功处理了大部分请求，但 Gemini 遇到了一种特定故障，其模型列表声称提供已弃用模型的服务，导致提交时被拒绝。此外，失败的上传未被自动清理，需要在工具代码中进行手动干预。"
+    }
+  ],
+  "keyQuotes": [
+    "相同的指令，相反的错误。",
+    "当模型似乎出错时，首先检查你是否真正传达了你的意图。",
+    "如果你切换模型，数字会发生变化，这并不是因为你的客户改变了。",
+    "开启思考模式时，它大多过于宽容，像 Gemini……关闭思考模式时，它大多过于消极，像 OpenAI。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "提示工程",
+    "模型评测与基准",
+    "LLM 推理优化",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1214,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791401730000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 03:35:30"
+}

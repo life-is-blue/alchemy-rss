@@ -1,0 +1,58 @@
+{
+  "id": "RAW_294a06f94d",
+  "title": "Anthropic 发布 Claude Haiku 5.5，Artificial Analysis 智能指数得分 43",
+  "url": "https://aihot.news/items/r8dupnljjbgk9r9lio9w0o6u6",
+  "date": "2026-10-08 03:12:16",
+  "author": "noreply@aihot.news (Artificial Analysis)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-ink-3 2xl:hidden\">\n   <span class=\"font-semibold text-ink-2\">Artificial Analysis</span><span>· @<!-- -->ArtificialAnlys<!-- --> · X</span><span>·</span><time datetime=\"2026-10-07T19:12:16.000Z\" class=\"mono\">2026-10-08 03:12</time><span>· <!-- -->2 小时前</span><span class=\"ml-1 lg:hidden\"><span class=\"inline-flex h-[18px] shrink-0 items-center gap-1 rounded-full px-2 text-[11px] font-medium leading-none bg-amber-soft text-amber-ink\">精选</span></span><span class=\"ml-1 lg:hidden\"><span title=\"AI 评分 74/100\" aria-label=\"AI 评分 74 分\" class=\"inline-flex h-[20px] shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-2 ring-1 ring-inset bg-accent-soft text-accent ring-accent/20\"><span class=\"text-[11px] font-medium leading-none opacity-80\">AI 评分</span><span class=\"mono text-[12.5px] font-bold leading-none tabular-nums\">74</span></span></span>\n  </div>\n  <section class=\"mt-4\">\n   <div class=\"mb-2 text-[12px] font-semibold text-accent\">AI 导读</div>\n   <p class=\"text-[18px] leading-[1.7] text-ink xl:text-[20px] xl:leading-[1.7]\">Anthropic 发布 Claude Haiku 5.5，在 Artificial Analysis 智能指数得 43 分，较上一代 Haiku 一年内提升 26 分。</p>\n  </section>\n  <section class=\"mt-6 border-t border-line pt-4 lg:hidden\">\n   <div class=\"mb-1 text-[12px] font-semibold text-ink-3\">推荐理由</div>\n   <p class=\"text-[15px] leading-[1.75] text-ink-2\">评测方给出 Haiku 5.5 在智能指数、token 用量和多个基准上的具体数据，可与同档小模型直接对比选型。</p>\n  </section>\n  <section class=\"mt-9 border-t border-line pt-4 xl:mt-10\">\n   <div class=\"mb-6 flex items-center justify-between gap-3\">\n    <span class=\"text-[12px] text-ink-4\">正文 · AI 翻译</span>\n    <div class=\"scrollbar-none max-w-full overflow-x-auto\">\n     <nav data-pill-track=\"\" aria-label=\"正文语言\" class=\"inline-flex w-max gap-0.5 rounded-full bg-bg-sunk p-0.5 lg:p-[3px] ring-1 ring-inset ring-line-soft dark:bg-bg-muted/60\">\n      <a aria-current=\"page\" class=\"relative inline-flex shrink-0 select-none items-center justify-center whitespace-nowrap rounded-full font-medium outline-offset-1 transition-colors duration-150 active:scale-[0.98] h-11 px-3 text-[12.5px] lg:h-7 text-ink\" href=\"https://aihot.news/items/r8dupnljjbgk9r9lio9w0o6u6\" data-discover=\"true\"><span class=\"absolute inset-0 rounded-full bg-surface shadow-[var(--shadow-thumb)] ring-1 ring-line dark:bg-raised\"></span><span class=\"relative inline-flex items-center gap-1\">中文</span></a><a class=\"relative inline-flex shrink-0 select-none items-center justify-center whitespace-nowrap rounded-full font-medium outline-offset-1 transition-colors duration-150 active:scale-[0.98] h-11 px-3 text-[12.5px] lg:h-7 text-ink-3 hover:text-ink\" href=\"https://aihot.news/items/r8dupnljjbgk9r9lio9w0o6u6/original\" data-discover=\"true\"><span class=\"relative inline-flex items-center gap-1\">原文</span></a>\n     </nav>\n    </div>\n   </div>\n   <div class=\"prose\">\n    <p>Anthropic 发布了 Claude Haiku 5.5，在 Artificial Analysis Intelligence Index 上得分 43——在上一个 Haiku 版本发布一年后提升了 26 分</p>\n    <p>Haiku 5.5 是首个具备 Anthropic 努力设置和自适应思考的 Haiku 模型，Anthropic 还引入了分层定价。</p>\n    <p>Haiku 5.5 比其前代更便宜——对于不超过 100k tokens 的提示，每 1M 输入/输出 tokens 收费 $0.10/$0.50（与 GPT-6 Luna 相同，是上一个 Haiku 模型的 10%）。然而，超过 100k 后，这一价格会上涨 5 倍至 $0.50/$2.50。网站尚未反映分层定价，因此 Haiku 5.5 的暂定成本数据未包含这一阶梯上涨成本。我们正在开发支持，并将很快跟进 Cost per Task 覆盖。</p>\n    <p>关键要点：</p>\n    <p>➤ 领先的小型级模型性能：在最大努力下，Haiku 5.5 略微领先于 GLM-5.3 Flash（42）、Gemini 3.8 Flash（41）和 GPT-6 Luna（38）等模型。其得分与 Kimi K3（44）相当，后者是一个 2.8T 参数的开源权重模型，并落后 Claude Sonnet 5.5（max，56）13 分</p>\n    <p>➤ 相比 GPT-6 Luna 使用大量 tokens：Haiku 5.5（max）每个 Intelligence Index 任务使用约 162k 输出 tokens，约为 GPT-6 Luna（max，约 50k）的 3 倍。从 xhigh 提升到 max 增加 2 分，但 tokens 约为 1.8 倍。在相近智能水平下，它也使用比 GPT-6 Luna 更多的 tokens：Haiku 5.5（high）得分 38，每任务约 55k tokens，而 Luna（max）得分 38，约 50k tokens，且在更低努力设置下差距扩大</p>\n    <p>➤ 在智能体知识工作方面能力很强：在 AA-Briefcase 上，这是我们针对现实知识工作任务的私有评估，Haiku 5.5（max）达到 1578 Elo，领先于包括 Kimi K3 和 GLM-5.3 在内的模型，并与 Muse Spark 1.3（max）相当</p>\n    <p>➤ 终端使用方面的改进：在 Terminal-Bench 4.0 上得分 33%，高于 Haiku 4.5 的 0%。这与 GLM-5.3 Flash 持平，并领先 Gemini 3.8 Flash（20%）和 GPT-6 Luna（13%）</p>\n    <p>➤ 事实知识较低，但幻觉相对较少：正如较小级别模型所预期，Haiku 5.5 的事实知识低于其同系列模型。AA-Omniscience 准确率为 36%，而 Gemini 3.8 Flash 为 55%，GPT-6 Luna 为 44%，但这在一定程度上是因为它更愿意承认自己不知道——其幻觉率为 40%，低于 55% 和 77%</p>\n    <p>➤ AutomationBench-AA 结果可能被低估：Haiku 5.5 得分 35%，而 GPT-6 Luna、Gemini 3.8 Flash 和 GLM-5.3 Flash 为 53–60%。在发布前测试中，一个安全拒绝问题导致模型过度拒绝。Anthropic 正在解决这一问题——我们将在修复后重新运行此评估，并预计该分数会上升</p>\n    <p>其他模型细节：</p>\n    <p>➤ 上下文窗口：1 million tokens，高于 Claude 4.5 Haiku 的 200k</p>\n    <p>➤ 定价：每 1M 输入/输出 tokens 在不超过 100k tokens 时为 $0.10/$0.50，超过后为 $0.50/$2.50。缓存读取 $0.01（超过 100k 为 $0.05），5 分钟缓存写入 $0.125（超过 100k 为 $0.625）</p>\n    <p>➤ 多模态：文本和图像输入，文本输出</p>\n   </div>\n  </section>\n  <div class=\"mt-5 gap-2\">\n   <button type=\"button\" aria-label=\"查看大图\" class=\"group relative overflow-hidden rounded-tile border border-line-soft bg-bg-sunk max-w-[420px] cursor-zoom-in\"><img src=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FHUDOG1Jb0AAHQ2I.jpg&amp;mode=full&amp;exp=1791590400&amp;sig=c5861ddbd4a82fb2\" srcset=\"https://aihot.news/api/img-proxy?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FHUDOG1Jb0AAHQ2I.jpg&amp;mode=thumb&amp;exp=1791590400&amp;sig=682fe32113cc5e20 720w, https://aihot.news/api/img-proxy?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FHUDOG1Jb0AAHQ2I.jpg&amp;mode=image-1200&amp;exp=1791590400&amp;sig=ead2cfaf8a7fc0ea 1200w, https://aihot.news/api/img-proxy?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FHUDOG1Jb0AAHQ2I.jpg&amp;mode=full&amp;exp=1791590400&amp;sig=c5861ddbd4a82fb2 1600w\" sizes=\"auto, (min-width: 460px) 420px, calc(100vw - 32px)\" decoding=\"async\" alt=\"\" loading=\"lazy\" class=\"block w-full object-cover transition-transform duration-300 group-hover:scale-[1.015] max-h-[360px]\" style=\"aspect-ratio:2008 / 2117\"></button>\n  </div>\n  <p class=\"mt-8 text-[13px] text-ink-4\">来源：<a href=\"https://x.com/ArtificialAnlys/status/2107911905822351609\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-ink-3 hover:text-accent\">Artificial Analysis</a><span> · <!-- -->x.com</span></p>\n  <div class=\"mt-4 flex flex-wrap gap-1.5 lg:hidden\">\n   <a class=\"chip\" href=\"https://aihot.news/topics/anthropic\" data-discover=\"true\">Anthropic / Claude</a><a class=\"chip\" href=\"https://aihot.news/topics/benchmarks\" data-discover=\"true\">评测基准</a><a class=\"chip\" href=\"https://aihot.news/all?tag=%E8%AF%84%E6%B5%8B%2F%E5%9F%BA%E5%87%86\" data-discover=\"true\">#<!-- -->评测/基准</a><a class=\"chip\" href=\"https://aihot.news/all?tag=Anthropic\" data-discover=\"true\">#<!-- -->Anthropic</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 发布 Claude Haiku 5.5，在智能指数上获得 43 分，其在智能体任务与成本效率方面显著提升，但 Token 消耗量高于竞品。",
+  "oneSentenceSummary": "Anthropic 发布 Claude Haiku 5.5，在智能指数上获得 43 分，其在智能体任务与成本效率方面显著提升，但 Token 消耗量高于竞品。",
+  "summary": "Anthropic 推出了 Claude Haiku 5.5，标志着其轻量级模型系列在性能上的重大飞跃。新模型在 Artificial Analysis 智能指数上得分为 43，较一年前的前代版本提升了 26 分。主要特性包括自适应思考、努力程度设置以及分层定价策略，使得短上下文提示极具竞争力（每百万 Token 输入/输出价格为 $0.10/$0.50），而对长上下文则收取更高费用。基准测试数据显示，Haiku 5.5 在小模型中领先，略微超越 GLM-5.3 Flash 和 Gemini 3.8 Flash，并与参数量大得多的开源权重模型 Kimi K3 持平。它在智能体知识工作（AA-Briefcase）和终端使用（Terminal-Bench）方面表现出强大能力，尽管在同等智能水平下，其 Token 消耗量高于 GPT-6 Luna。虽然事实准确性低于部分同类模型，但由于更好地校准了不确定性表达，其幻觉率显著降低。",
+  "mainPoints": [
+    {
+      "point": "小模型中的显著性能飞跃",
+      "explanation": "Claude Haiku 5.5 在智能指数上得分为 43，超越前几代产品，并领先于 GLM-5.3 Flash（42 分）和 Gemini 3.8 Flash（41 分）等竞争对手。其表现与拥有 2.8T 参数的巨型模型 Kimi K3（44 分）相当，展现出卓越的能效比。"
+    },
+    {
+      "point": "针对短上下文的优化分层定价策略",
+      "explanation": "该模型引入了分层定价机制：对于不超过 10 万 Token 的提示，每百万输入/输出 Token 收费 $0.10/$0.50（与 GPT-6 Luna 持平）；但对于更长的上下文，成本跃升 5 倍至 $0.50/$2.50。这使得它在典型的智能体工作流程中极具性价比，但在处理长文档时较为昂贵。"
+    },
+    {
+      "point": "强大的智能体能力伴随高 Token 消耗",
+      "explanation": "Haiku 5.5 在 AA-Briefcase（1578 Elo）和 Terminal-Bench（33%）等智能体基准测试中表现出色。然而，为了达到这些结果，它使用的输出 Token 数量（约 16.2 万/任务）远高于 GPT-6 Luna（约 5 万/任务），这导致复杂任务的延迟增加且总成本上升，尽管其单价较低。"
+    },
+    {
+      "point": "改进的校准降低了幻觉率",
+      "explanation": "虽然事实准确性（AA-Omniscience 为 36%）落后于更大规模的模型，但 Haiku 5.5 的幻觉率较低（40%），因为它更倾向于承认自己不知道答案，从而为不确定查询提供了更安全的用户体验。"
+    }
+  ],
+  "keyQuotes": [
+    "Anthropic 发布了 Claude Haiku 5.5，在 Artificial Analysis 智能指数上得分 43——在上一个 Haiku 版本发布一年后提升了 26 分",
+    "Haiku 5.5 比其前代更便宜——对于不超过 10 万 Token 的提示，每 100 万输入/输出 Token 收费 $0.10/$0.50（与 GPT-6 Luna 相同，是上一个 Haiku 模型的 10%）。然而，超过 10 万后，这一价格会上涨 5 倍至 $0.50/$2.50。",
+    "在最大努力下，Haiku 5.5 略微领先于 GLM-5.3 Flash（42）、Gemini 3.8 Flash（41）和 GPT-6 Luna（38）等模型。其得分与 Kimi K3（44）相当，后者是一个 2.8T 参数的开源权重模型",
+    "Haiku 5.5（max）每个智能指数任务使用约 16.2 万输出 Token，约为 GPT-6 Luna（max，约 5 万）的 3 倍。",
+    "事实知识较低，但幻觉相对较少：正如较小级别模型所预期，Haiku 5.5 的事实知识低于其同系列模型。AA-Omniscience 准确率为 36%，而 Gemini 3.8 Flash 为 55%，GPT-6 Luna 为 44%，但这在一定程度上是因为它更愿意承认自己不知道——其幻觉率为 40%，低于 55% 和 77%"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型发布",
+    "科技新闻",
+    "AI Agent",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1140,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791400336000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 03:12:16"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_eb6b3218f5",
+  "title": "正式 GA：使用代表用户授权构建具备权限感知能力的 Databricks Apps",
+  "url": "https://www.databricks.com/blog/now-ga-building-permission-aware-databricks-apps-behalf-user-authorization",
+  "date": "2026-10-08 00:40:00",
+  "author": "Aakrati Talati, Cynthya Peranandam, Tushar Madan, Evan Pandya, Theo Fernandez",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li>Build permission-aware Databricks Apps: Use app authorization for app-owned work and OBO for actions governed by the signed-in user.</li>\n   <li>Limit access by scope: API scopes limit what the app can do on behalf of the user; the user's warehouse and Unity Catalog permissions limit which data it can access.</li>\n   <li>Operate securely at scale: Keep app and user clients separate, use the forwarded token only for the active request, and fail closed if it's missing. Never store user tokens.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Databricks 宣布在 Databricks Apps 中正式支持「代表用户」（OBO）授权， enabling permission-aware apps that respect individual user access scopes and security boundaries.",
+  "oneSentenceSummary": "Databricks 宣布在 Databricks Apps 中正式支持「代表用户」（OBO）授权， enabling permission-aware apps that respect individual user access scopes and security boundaries.",
+  "summary": "该简短公告介绍了 Databricks Apps 中「代表用户」（OBO）授权的正式发布（GA）。它强调了三个关键操作原则：使用应用授权处理应用自有任务，同时利用 OBO 处理受用户治理的操作；通过 API 作用域和底层 Unity Catalog 权限限制访问；并通过保持客户端上下文分离、仅将转发令牌用于当前请求以及在令牌缺失时失败关闭来维持安全性。此更新允许开发者构建能够动态适应登录用户特定权限的应用程序，而不再仅仅依赖静态服务主体凭证。",
+  "mainPoints": [
+    {
+      "point": "混合授权模型",
+      "explanation": "开发者应使用应用授权来处理由应用程序自身拥有的操作，并切换到「代表用户」（OBO）授权来处理必须由登录用户的特定权限进行治理的操作。"
+    },
+    {
+      "point": "细粒度访问控制",
+      "explanation": "访问受到两层限制：API 作用域定义了应用可以代表用户执行哪些操作，而用户现有的数据仓库和 Unity Catalog 权限决定了他们实际可以访问哪些数据。"
+    },
+    {
+      "point": "安全运营实践",
+      "explanation": "为了在大规模下安全运行，应用必须保持应用和用户客户端的分离，仅将转发令牌用于当前活动请求，如果令牌缺失则失败关闭，并且绝不存储用户令牌。"
+    }
+  ],
+  "keyQuotes": [
+    "构建具备权限感知能力的 Databricks Apps：使用应用授权处理应用自有工作，使用 OBO 处理受登录用户治理的操作。",
+    "通过作用域限制访问：API 作用域限制了应用可以代表用户做什么；用户的仓库和 Unity Catalog 权限限制了它可以访问哪些数据。",
+    "在大规模下安全运营：保持应用和用户客户端分离，仅将转发令牌用于当前请求，如果令牌缺失则失败关闭。绝不存储用户令牌。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "数据工程",
+    "开发者工具",
+    "API设计"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 68,
+  "wordCount": 78,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791391200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 00:40:00"
+}

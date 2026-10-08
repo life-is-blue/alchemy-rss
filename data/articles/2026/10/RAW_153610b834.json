@@ -1,0 +1,52 @@
+{
+  "id": "RAW_153610b834",
+  "title": "HubSpot 的 429 错误：10 秒滚动限流如何阻断交易数据增强",
+  "url": "https://dev.to/elenarevicheva/hubspots-429-halting-deal-enrichment-with-a-10-second-rolling-limit-1lkj",
+  "date": "2026-10-08 03:30:13",
+  "author": "Elena Revicheva",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Originally published at <a href=\"https://aideazz.xyz/blog/hubspots-429-halting-deal-enrichment-with-a-10-second-rolling-limit\" target=\"_blank\" rel=\"noopener noreferrer\">aideazz.xyz</a> — cross-posted here with canonical link.</p>\n  <p>I hit a <code>429</code> error from HubSpot while trying to enrich deals. The specific message was: <code>\"You have reached your ten_secondly_rolling limit.\"</code> This wasn't a one-off. My <code>hs-watch-manual-emails.log</code> shows repeated <code>GET /crm/v3/objects/deals/[id]?properties=dealname,dealstage</code> requests failing with this <code>429</code> status. This directly impacts my ability to retrieve <code>dealname</code> and <code>dealstage</code> for deals, which are critical for my AI agents to understand context and prioritize actions.</p>\n  <p>The problem isn't just a single process. I have 9 processes online, including <code>cto-aipa</code> which has seen 192 restarts, and <code>algom-stream</code> with 55193 restarts. This indicates a system under constant pressure, where rate limits become a bottleneck for even basic data retrieval. The <code>TEN_SECONDLY_ROLLING</code> policy means I can't just burst requests; I need a sustained, throttled approach.</p>\n  <h2><a name=\"the-impact-of-hubspots-raw-tensecondlyrolling-endraw-policy\" href=\"#the-impact-of-hubspots-raw-tensecondlyrolling-endraw-policy\"> </a> The Impact of HubSpot's <code>TEN_SECONDLY_ROLLING</code> Policy</h2>\n  <p>The <code>429</code> error with <code>policyName: \"TEN_SECONDLY_ROLLING\"</code> is explicit. HubSpot limits API calls within any 10-second window. This isn't a daily or hourly limit; it's a constant, short-term throttle. For my <code>hs-watch-manual-emails</code> process, which is designed to enrich deal data, this means any rapid succession of requests, even for different deals, will trigger the limit.</p>\n  <p>My <code>reply-radar.log</code> shows <code>APPLY — scanned 220</code> emails in its latest run, with <code>REPLIES MATCHED 2</code>. Each matched reply likely triggers an attempt to enrich the associated HubSpot deal. If these attempts happen too quickly, the <code>429</code> is inevitable. The system is designed to process new information as it arrives, but HubSpot's rate limit forces an artificial delay.</p>\n  <h2><a name=\"implementing-a-rate-limit-backoff-strategy\" href=\"#implementing-a-rate-limit-backoff-strategy\"> </a> Implementing a Rate Limit Backoff Strategy</h2>\n  <p>To mitigate the <code>429</code> errors, I've implemented an exponential backoff strategy for HubSpot API calls. When a <code>429</code> is received, the agent waits for a calculated period before retrying. This period increases with each consecutive failure, up to a defined maximum. This prevents a continuous hammering of the API and allows the <code>TEN_SECONDLY_ROLLING</code> window to reset.</p>\n  <p>However, this strategy introduces latency. My <code>concierge-selftest.log</code> shows <code>4603ms to first card</code> in its latest run. While this isn't directly tied to HubSpot, it highlights that delays in one part of the system can propagate. If deal enrichment is delayed, the subsequent actions of my AI agents, such as drafting replies or updating internal dashboards, are also delayed. The <code>NOW.md</code> file, which serves as a shared working memory for my disconnected agents (Cursor Cloud, Cursor Desktop, Claude Code), explicitly states: \"The only things all of them read are <strong>HubSpot</strong> and <strong>this</strong>\". This means HubSpot data is a central dependency.</p>\n  <h2><a name=\"monitoring-and-adjusting-for-hubspot-rate-limits\" href=\"#monitoring-and-adjusting-for-hubspot-rate-limits\"> </a> Monitoring and Adjusting for HubSpot Rate Limits</h2>\n  <p>I monitor the <code>hs-watch-manual-emails.log</code> closely for <code>429</code> errors. The frequency of these errors dictates adjustments to the rate at which my agents query HubSpot. Currently, I have 155 deals in the \"They replied\" stage, according to a HubSpot deals search API query. Each of these deals potentially requires enrichment.</p>\n  <p>The <code>cto-aipa</code> process, responsible for core AI operations, has 192 restarts. While not all restarts are due to HubSpot rate limits, a process restarting frequently indicates underlying instability or resource contention. If <code>cto-aipa</code> is aggressively querying HubSpot, its restarts could be a symptom of hitting these limits and failing to recover gracefully. The <code>algom-stream</code> process, with 55193 restarts, shows an even more extreme case of instability, though its direct interaction with HubSpot is not measured here.</p>\n  <h2><a name=\"the-tradeoff-realtime-enrichment-vs-api-compliance\" href=\"#the-tradeoff-realtime-enrichment-vs-api-compliance\"> </a> The Trade-off: Real-time Enrichment vs. API Compliance</h2>\n  <p>The core challenge is the trade-off between real-time deal enrichment and strict adherence to HubSpot's API rate limits. My AI agents are designed to act quickly on new information. For example, the <code>apply-queue.log</code> shows <code>✓ sent to Telegram (2 new)</code> and <code>✓ sent to Telegram (4 new)</code> messages, indicating rapid processing of new applications. If the deal context (name, stage) isn't immediately available due to a <code>429</code>, the quality or speed of these subsequent actions can suffer.</p>\n  <p>I am currently exploring ways to pre-fetch or cache deal data where possible, reducing the number of live API calls. However, <code>dealstage</code> is a dynamic property, making caching less effective for real-time updates. The <code>TEN_SECONDLY_ROLLING</code> limit means I cannot simply queue up all requests and fire them off. Each request must be carefully spaced. My <code>github-token-watch.log</code> shows my GitHub token is valid for 272 days, indicating long-term operational stability in other areas, but HubSpot remains a specific, persistent challenge.</p>\n  <h2><a name=\"frequently-asked-questions\" href=\"#frequently-asked-questions\"> </a> Frequently Asked Questions</h2>\n  <p><strong>Q: How many HubSpot API calls are allowed within the ten-secondly rolling limit?</strong>\n   <br>\n   A: The specific number of calls allowed within the <code>TEN_SECONDLY_ROLLING</code> window is not explicitly stated in the error message, only that the limit was reached. I do not have that measured.</p>\n  <p><strong>Q: Does the <code>429</code> error affect other HubSpot API endpoints, or just deal enrichment?</strong>\n   <br>\n   A: My <code>hs-watch-manual-emails.log</code> specifically shows the <code>GET /crm/v3/objects/deals/[id]?properties=dealname,dealstage</code> endpoint being affected. I have not observed <code>429</code> errors on other HubSpot endpoints in this log.</p>\n  <p><strong>Q: What is the average delay introduced by the backoff strategy for HubSpot API calls?</strong>\n   <br>\n   A: I do not have the average delay measured. The delay is exponential, so it varies significantly based on the number of consecutive <code>429</code> errors.</p>\n  <p><strong>Q: Are there different rate limits for different HubSpot API keys or applications?</strong>\n   <br>\n   A: The error message includes <code>groupName\":\"publicapi:private_app-api-calls-ten-secondly:39045903:51409153\"</code>, which suggests the rate limit is tied to a specific private app ID. I do not have information on whether different applications have different limits.</p>\n  <p>— Elena Revicheva · <a href=\"https://aideazz.xyz\" target=\"_blank\" rel=\"noopener noreferrer\">AIdeazz</a> · <a href=\"https://aideazz.xyz/portfolio\" target=\"_blank\" rel=\"noopener noreferrer\">Portfolio</a></p>\n </body>\n</html>",
+  "aiSummary": "作者详细阐述了 HubSpot 严格的「TEN_SECONDLY_ROLLING」API 速率限制对 AI 智能体工作流的运营影响，描述了其如何导致频繁的 429 错误，并迫使实施复杂的退避策略从而引入延迟。",
+  "oneSentenceSummary": "作者详细阐述了 HubSpot 严格的「TEN_SECONDLY_ROLLING」API 速率限制对 AI 智能体工作流的运营影响，描述了其如何导致频繁的 429 错误，并迫使实施复杂的退避策略从而引入延迟。",
+  "summary": "本文记录了在使用 HubSpot 构建 AI 驱动的 CRM 自动化系统时遇到的特定技术挑战。核心问题在于 HubSpot 的 `TEN_SECONDLY_ROLLING` 速率限制政策，该政策限制了任意 10 秒窗口内的 API 调用次数，而非仅设定每日或每小时的配额。这一约束严重影响了实时增强交易数据（检索 `dealname` 和 `dealstage`）的能力，导致在 `hs-watch-manual-emails` 等多个进程中反复出现 `429` 错误。为了缓解这一问题，作者实施了指数退避策略，但指出这会引入显著延迟，进而影响起草回复和更新仪表板等下游操作。文章强调了保持 AI 智能体实时响应能力与遵守第三方 API 严格节流之间的权衡，并指出由于 `dealstage` 等动态属性的易变性，对其进行缓存的效果有限。",
+  "mainPoints": [
+    {
+      "point": "HubSpot 的短窗口速率限制为实时 AI 数据增强制造了瓶颈",
+      "explanation": "与典型的每日限额不同，`TEN_SECONDLY_ROLLING` 政策会对任意 10 秒跨度内的请求进行节流。这阻止了快速连续发起 API 调用来同时获取多个交易的上下文信息（`dealname`、`dealstage`），从而导致频繁的 `429` 错误。"
+    },
+    {
+      "point": "指数退避虽能减少错误，但损害了系统延迟表现",
+      "explanation": "虽然等待并重试可以降低错误率，但这会引入延迟，这些延迟会在 AI 智能体管道中传播。由于 HubSpot 充当断开的智能体（如 Cursor、Claude Code）的中心共享记忆，数据检索的延迟会减缓后续自动化操作（如起草回复）的速度。"
+    },
+    {
+      "point": "缓存动态 CRM 属性对于满足实时合规性要求效果不佳",
+      "explanation": "预取或缓存被探索作为解决方案，但像 `dealstage` 这样的属性具有高度动态性。缓存它们有提供陈旧数据的风险，而实时查询则会触发速率限制，迫使在数据新鲜度和 API 稳定性之间做出艰难权衡。"
+    }
+  ],
+  "keyQuotes": [
+    "`TEN_SECONDLY_ROLLING` 政策意味着我不能只是突发式地发送请求；我需要一种持续的、经过节流的方案。",
+    "如果交易数据增强被延迟，我的 AI 智能体的后续操作，例如起草回复或更新内部仪表板，也会随之延迟。",
+    "作为我断开的智能体共享工作记忆的 `NOW.md` 文件……明确写道：「它们共同读取的唯一内容是 **HubSpot** 和 **这个文件**」。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工作流",
+    "AI Agent",
+    "性能优化",
+    "政策解读"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 78,
+  "wordCount": 880,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791401413000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 03:30:13"
+}

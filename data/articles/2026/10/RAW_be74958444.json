@@ -1,0 +1,47 @@
+{
+  "id": "RAW_be74958444",
+  "title": "Cursor 公布 Claude Haiku 5.5 定价并下调 Claude Sonnet 5.5 缓存读取价格",
+  "url": "https://aihot.news/items/vk1sotxx6v25hhgn55mwgv4nv",
+  "date": "2026-10-08 02:14:03",
+  "author": "noreply@aihot.news (Cursor)",
+  "siteName": "AIHOT — 精选",
+  "content": null,
+  "aiSummary": "Cursor 宣布 Claude Haiku 5.5 的定价，并降低 Claude Sonnet 5.5 的缓存读取成本，为开发者提供具体的 token 费率。",
+  "oneSentenceSummary": "Cursor 宣布 Claude Haiku 5.5 的定价，并降低 Claude Sonnet 5.5 的缓存读取成本，为开发者提供具体的 token 费率。",
+  "summary": "Cursor 发布的这则简短更新详述了其平台内 Anthropic 模型的新定价结构。Claude Haiku 5.5 的输入价格为每百万 token 0.10 美元，输出价格为每百万 token 0.50 美元；当输入超过 100k token 时，适用更高的费率（输入 0.50 美元/百万，输出 2.50 美元/百万）。此外，Claude Sonnet 5.5 读取缓存数据的成本已减半至每百万 token 0.10 美元。用户可前往 CursorBench 对比 Haiku 5.5 的性能。",
+  "mainPoints": [
+    {
+      "point": "Claude Haiku 5.5 新定价",
+      "explanation": "输入 token 费用为 0.10 美元/百万，输出 token 费用为 0.50 美元/百万。若输入超过 100k token，价格将升至输入 0.50 美元/百万、输出 2.50 美元/百万。"
+    },
+    {
+      "point": "Claude Sonnet 5.5 缓存读取成本降低",
+      "explanation": "读取缓存 token 的价格从 0.20 美元/百万降至 0.10 美元/百万，使得处理重复任务或长上下文交互更具经济性。"
+    }
+  ],
+  "keyQuotes": [
+    "「Claude Haiku 5.5 的定价为每百万输入 token 0.10 美元、每百万输出 token 0.50 美元，当输入 token 超过 100k 时则为每百万 0.50 美元和 2.50 美元。」",
+    "「Claude Sonnet 5.5 的缓存读取现在也降至每百万 token 0.10 美元，此前为每百万 0.20 美元。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "科技新闻",
+    "性能优化",
+    "大语言模型 (LLM)",
+    "AI 编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 76,
+  "wordCount": 283,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791396843000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 02:14:03"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a3cf0c155e",
+  "title": "使用原生 JavaScript 构建硬件诊断日志",
+  "url": "https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/",
+  "date": "2026-10-07 23:00:07",
+  "author": "tbutt4438",
+  "siteName": "SitePoint",
+  "content": "<html>\n <head></head>\n <body>\n  <p>A device disconnects halfway through a test. The application reports a timeout, the firmware restarts, and the next attempt succeeds. Where should you start?</p>\n  <p>For developers working with connected devices, browser interfaces, or hardware prototypes, an application error is often only the final symptom. Replacing code without recording the conditions around a failure can leave you chasing the wrong layer.</p>\n  <p>This tutorial builds a small browser-based diagnostic log. It records measurements, preserves the test conditions, and exports evidence for another developer to review. You need basic HTML and JavaScript knowledge; no framework or connected instrument is required.</p>\n  <h2 id=\"h-1-define-the-question-before-collecting-data\"><strong>1. Define the question before collecting data</strong></h2>\n  <p>Consider a hypothetical development board that disconnects when a peripheral starts. Several explanations remain possible: a firmware exception, a transport problem, or a power supply issue.</p>\n  <p>Start with a testable question: “Does the measured supply voltage change when this peripheral starts?” That question tells you what to record and what to keep constant.</p>\n  <p>Use a known-good board of the same revision where available. Match the firmware, cable, supply, peripheral, and workload. A comparison loses value when several conditions change together.</p>\n  <p>Record the observation separately from the explanation:</p>\n  <p><strong>Field</strong></p>\n  <p><strong>Example</strong></p>\n  <p>Observation</p>\n  <p>Device disconnected during peripheral startup</p>\n  <p>Measurement</p>\n  <p>Supply measurement at a named test point</p>\n  <p>Conditions</p>\n  <p>Board revision B, firmware 1.4.2, peripheral enabled</p>\n  <p>Hypothesis</p>\n  <p>Supply instability may contribute to the disconnect</p>\n  <p>Next test</p>\n  <p>Repeat with a verified supply under the same workload</p>\n  <p>The hypothesis remains provisional. A reading taken after the device restarts does not establish what happened during the failure.</p>\n  <h2 id=\"h-2-choose-evidence-that-answers-the-question\"><strong>2. Choose evidence that answers the question</strong></h2>\n  <p>Application logs, firmware traces, and bench measurements answer different questions. A timeout establishes that an operation did not finish in time; it does not identify a failed component.</p>\n  <p>For a view of specialist equipment used in phone-board troubleshooting, DIYFIXTOOL’s overview of<a href=\"https://www.diyfixtool.com/blogs/news/3-essential-chip-level-diagnostic-tools-for-phone-repair-shops-2026\"> </a><a href=\"https://www.diyfixtool.com/blogs/news/3-essential-chip-level-diagnostic-tools-for-phone-repair-shops-2026\">Chip-Level Diagnostic Tools</a> discusses thermal imaging, BGA X-ray inspection, and inductance testing. Treat it as a vendor-authored introduction to equipment categories; use instrument documentation and board-specific references when interpreting measurements.</p>\n  <p>The log below deliberately leaves interpretation to the operator. Enter a numeric value, its unit, and the conditions under which it was measured. Do not turn an isolated reading into an automatic “faulty chip” verdict.</p>\n  <p>For physical measurements, follow the board and instrument documentation and work within your training. This tutorial covers the software record rather than a procedure for probing or repairing a powered device.</p>\n  <h2 id=\"h-3-build-a-small-accessible-form\"><strong>3. Build a small, accessible form</strong></h2>\n  <p>Save the following as index.html and serve it through your usual local development server. For example, if Python is installed, run python -m http.server 8000 in its directory, then open <a href=\"http://localhost:8000\">http://localhost:8000</a>.</p>\n  <h2 id=\"h-4-preserve-data-without-hiding-failures\"><strong>4. Preserve data without hiding failures</strong></h2>\n  <p>The application stores an array of records as JSON. On reload, it parses that JSON and checks the expected field types before rendering it. Parsing alone does not validate the structure of stored data.</p>\n  <p>SitePoint’s<a href=\"https://www.sitepoint.com/loop-through-json-response-javascript/\"> </a><a href=\"https://www.sitepoint.com/loop-through-json-response-javascript/\">guide to looping through JSON responses</a> provides useful background on working with objects and arrays after parsing JSON.</p>\n  <p>Each table cell uses textContent, so a note containing HTML is displayed as text rather than inserted as markup. The<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent\"> </a><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent\">MDN documentation for textContent</a> explains this behavior.</p>\n  <p>Storage operations sit inside try...catch blocks because browser persistence can fail. The interface keeps new measurements in memory and offers an export when saving fails. It does not claim those measurements will survive a reload.</p>\n  <p>For another practical vanilla JavaScript project, SitePoint’s<a href=\"https://www.sitepoint.com/build-real-time-markdown-previewer-vanilla-javascript/\"> </a><a href=\"https://www.sitepoint.com/build-real-time-markdown-previewer-vanilla-javascript/\">Markdown previewer tutorial</a> explores browser UI construction and persistence.</p>\n  <p>As<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage\"> </a><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage\">MDN’s localStorage documentation</a> explains, storage belongs to the document’s origin. Opening the application on a different port may therefore show a different log. This prototype is a single-browser tool, so export important sessions and avoid recording customer identifiers or private device contents.</p>\n  <h2 id=\"h-5-compare-measurements-under-matching-conditions\"><strong>5. Compare measurements under matching conditions</strong></h2>\n  <p>Suppose two hypothetical readings are 3.29 V and 3.08 V. Their difference is −0.21 V. That arithmetic is straightforward; its meaning depends on the rail specification, measurement uncertainty, workload, and timing.</p>\n  <p>Do not add a universal voltage threshold to the application. A device-specific limit should come from its specification or an established test procedure.</p>\n  <p>If the failure is brief, a manually entered steady-state measurement may miss it entirely. Record that limitation. The next investigation may require a time-correlated capture rather than another static reading.</p>\n  <p>When sharing a session, include the firmware revision, board revision, instrument settings, and reproduction steps. A colleague should be able to repeat the comparison without guessing how the reading was obtained.</p>\n  <h2 id=\"h-6-verify-the-workflow-before-relying-on-it\"><strong>6. Verify the workflow before relying on it</strong></h2>\n  <p>Try adding a decimal reading and a negative reading, then reload the page. Confirm that both values and their units remain intact. Enter a note containing <!-- -->&lt;strong&gt;<!-- -->test<!-- -->&lt;/strong&gt;<!-- --> and check that it appears literally in the table.</p>\n  <p>Export the JSON and inspect the record count. Then simulate blocked storage and confirm that the interface reports the failure while allowing an export of the current session.</p>\n  <p>For a larger application, add editable entries, instrument metadata, and explicit baseline records. A shared service would also need access controls, server-side validation, and a policy for retention. These additions should follow the needs of the diagnostic workflow.</p>\n  <h2 id=\"h-turn-a-symptom-into-a-reproducible-investigation\"><strong>Turn a symptom into a reproducible investigation</strong></h2>\n  <p>The finished prototype captures a useful minimum: what was measured, where, when, and under which conditions. Its value comes from preserving evidence that another person can inspect.</p>\n  <p>When an application error crosses into firmware or hardware, that record helps you choose the next experiment. Repeat the failure, change one variable, and document what the new evidence supports before deciding what to fix.</p>\n </body>\n</html>",
+  "aiSummary": "一篇关于使用原生 JavaScript 构建浏览器端工具以记录硬件诊断数据的教程，强调将观察与假设分离，并指出保留测试条件对于可复现调试的重要性。",
+  "oneSentenceSummary": "一篇关于使用原生 JavaScript 构建浏览器端工具以记录硬件诊断数据的教程，强调将观察与假设分离，并指出保留测试条件对于可复现调试的重要性。",
+  "summary": "本文指导开发者使用原生 JavaScript 创建一个轻量级的基于浏览器的诊断日志，用于排查连接设备的问题。文章认为应用错误往往是底层固件或硬件问题的症状，因此需要采用结构化的数据收集方法。教程概述了六个关键步骤：在收集数据前定义可测试的问题、选择合适的证据类型（日志与测量值）、构建易于访问的 HTML 表单、实现具备错误处理功能的稳健本地存储、在匹配条件下比较测量值以及验证工作流程。核心原则是将原始观察结果与解释分离，以避免过早下结论。代码示例演示了如何在 localStorage 中存储 JSON 记录，使用 textContent 防止 XSS 攻击，并在持久化失败时提供导出功能。指南最后鼓励用户将诊断视为一个可复现的科学过程，而非猜测游戏。",
+  "mainPoints": [
+    {
+      "point": "将观察与假设分离",
+      "explanation": "文章强调应分别记录原始测量值和条件，并将其与潜在的解释区分开来。这有助于防止确认偏误，并确保即使初始假设错误，数据仍然有效。"
+    },
+    {
+      "point": "保留上下文以确保可复现性",
+      "explanation": "诊断日志必须包含元数据，如电路板版本、固件版本和仪器设置。缺乏这些背景信息，读数之间的比较将毫无意义，因为无法隔离变量变化。"
+    },
+    {
+      "point": "在原生 JS 中进行稳健的数据处理",
+      "explanation": "该实现使用带有 try-catch 块的 localStorage 来优雅地处理配额或访问错误。它还采用 textContent 而非 innerHTML 来安全显示用户备注，从而防止脚本注入。"
+    },
+    {
+      "point": "避免自动判定故障",
+      "explanation": "该工具有意将解释权留给操作员。它不对电压读数应用通用阈值，而是承认具体限制取决于设备规格和测量不确定性。"
+    }
+  ],
+  "keyQuotes": [
+    "如果不记录故障发生的周围条件就直接替换代码，可能会让你找错问题层级。",
+    "设备重启后取得的读数并不能确立故障期间发生了什么。",
+    "不要将孤立的读数直接转化为「芯片故障」的自动判定。",
+    "仅进行解析并不能验证存储数据的结构有效性。",
+    "其价值在于保存那些可供他人检查的证据。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "开发者工具",
+    "TypeScript",
+    "JavaScript"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 76,
+  "wordCount": 914,
+  "domain": "sitepoint.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_6b38bda7",
+  "sourceName": "SitePoint",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791385207000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-07 23:00:07"
+}

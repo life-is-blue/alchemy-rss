@@ -1,0 +1,51 @@
+{
+  "id": "RAW_a29b1b1600",
+  "title": "GPT-6 Luna Decisions 上架 OpenRouter",
+  "url": "https://aihot.news/items/x40bi9csoomsdaflejehop22y",
+  "date": "2026-10-08 04:21:00",
+  "author": "noreply@aihot.news (OpenRouter)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-ink-3 2xl:hidden \">\n   <span class=\"font-semibold text-ink-2\">OpenRouter</span><span>· @<!-- -->OpenRouter<!-- --> · X</span><span>·</span><time datetime=\"2026-10-07T20:21:00.000Z\" class=\"mono\">2026-10-08 04:21</time><span>· <!-- -->25 分钟前</span><span class=\"ml-1 lg:hidden\"><span class=\"inline-flex h-[18px] shrink-0 items-center gap-1 rounded-full px-2 text-[11px] font-medium leading-none bg-amber-soft text-amber-ink \">精选</span></span><span class=\"ml-1 lg:hidden\"><span title=\"AI 评分 66/100\" aria-label=\"AI 评分 66 分\" class=\"inline-flex h-[20px] shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-2 ring-1 ring-inset text-ink-4 ring-line-soft\"><span class=\"text-[11px] font-medium leading-none opacity-80\">AI 评分</span><span class=\"mono text-[12.5px] font-bold leading-none tabular-nums\">66</span></span></span>\n  </div>\n  <section class=\"mt-4\">\n   <div class=\"mb-2 text-[12px] font-semibold text-accent\">AI 导读</div>\n   <p class=\"text-[18px] leading-[1.7] text-ink xl:text-[20px] xl:leading-[1.7]\">OpenRouter 宣布 GPT-6 Luna Decisions 上线。OpenAI 的 Decisions API 可让应用选择合适的模型、工具或动作，支持发送文本、JSON 或图片并返回带概率的类型化答案。定价为输入 $0.10/M、输出免费，上下文 1M；引用 OpenAI 开发者账号称其决策速度比通过 Responses API 的 GPT-6 Luna 最快 10 倍。</p>\n  </section>\n  <section class=\"mt-6 border-t border-line pt-4 lg:hidden\">\n   <div class=\"mb-1 text-[12px] font-semibold text-ink-3\">推荐理由</div>\n   <p class=\"text-[15px] leading-[1.75] text-ink-2\">原文给出 Decisions API 的定价、上下文长度和调用方式，开发者可以直接评估接入成本与场景。</p>\n  </section>\n  <section class=\"mt-9 border-t border-line pt-4 xl:mt-10\">\n   <div class=\"mb-6 flex items-center justify-between gap-3\">\n    <span class=\"text-[12px] text-ink-4\">正文 · AI 翻译</span>\n    <div class=\"scrollbar-none max-w-full overflow-x-auto  \">\n     <nav data-pill-track=\"\" aria-label=\"正文语言\" class=\"inline-flex w-max gap-0.5 rounded-full bg-bg-sunk p-0.5 lg:p-[3px] ring-1 ring-inset ring-line-soft dark:bg-bg-muted/60\">\n      <a aria-current=\"page\" class=\"relative inline-flex shrink-0 select-none items-center justify-center whitespace-nowrap rounded-full font-medium outline-offset-1 transition-colors duration-150 active:scale-[0.98] h-11 px-3 text-[12.5px] lg:h-7 text-ink\" href=\"https://aihot.news/items/x40bi9csoomsdaflejehop22y\" data-discover=\"true\"><span class=\"absolute inset-0 rounded-full bg-surface shadow-[var(--shadow-thumb)] ring-1 ring-line dark:bg-raised\"></span><span class=\"relative inline-flex items-center gap-1\">中文</span></a><a class=\"relative inline-flex shrink-0 select-none items-center justify-center whitespace-nowrap rounded-full font-medium outline-offset-1 transition-colors duration-150 active:scale-[0.98] h-11 px-3 text-[12.5px] lg:h-7 text-ink-3 hover:text-ink\" href=\"https://aihot.news/items/x40bi9csoomsdaflejehop22y/original\" data-discover=\"true\"><span class=\"relative inline-flex items-center gap-1\">原文</span></a>\n     </nav>\n    </div>\n   </div>\n   <div class=\"prose\">\n    <p>GPT-6 Luna Decisions 现已上线 OpenRouter</p>\n    <p>@OpenAI 的 Decisions API 让你的应用选择正确的模型、工具或操作。发送文本、JSON 或图像，即可获得带概率的类型化答案</p>\n    <p>$0.10/M 输入，输出免费，1M 上下文</p>\n    <p><a href=\"https://openrouter.ai/openai/gpt-6-luna-decisions\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://openrouter.ai/openai/gpt-6-luna-decisions</a></p>\n   </div>\n  </section>\n  <figure class=\"mt-6 rounded-tile border border-line px-4 py-3.5\">\n   <figcaption class=\"flex flex-wrap items-baseline gap-x-1.5 text-[13px]\">\n    <span class=\"text-ink-4\">引用</span><span class=\"font-semibold text-ink-2\">OpenAI Developers</span><span class=\"text-ink-4\">@<!-- -->OpenAIDevs</span>\n   </figcaption>\n   <blockquote class=\"mt-2 whitespace-pre-line text-[15px] leading-[1.75] text-ink-2\">让你的应用通过 Decisions API 近乎实时地选择正确的模型、工具或操作，现已面向所有开发者开放公开测试版。 Decisions API 通过 Responses API 做出决策的速度比 GPT-6 Luna 快达 10 倍。</blockquote>\n   <details class=\"mt-2 text-[13px] text-ink-4\">\n    <summary class=\"cursor-pointer select-none hover:text-ink-3\">原文</summary>\n    <p class=\"mt-1.5 whitespace-pre-line text-[14px] leading-[1.7] text-ink-3\">Let your app choose the right model, tool, or action in near real-time with Decisions API, now available to all developers in public beta. The Decisions API makes decisions up to 10x faster than GPT-6 Luna through the Responses API.</p>\n   </details>\n   <a href=\"https://x.com/OpenAIDevs/status/2107573382229188645\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"mt-2 inline-flex items-center gap-0.5 text-[13px] text-accent hover:text-accent-ink\">在 X 查看被引用的帖子 </a>\n  </figure>\n  <p class=\"mt-8 text-[13px] text-ink-4\">来源：<a href=\"https://x.com/OpenRouter/status/2107929204142874759\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-ink-3 hover:text-accent\">OpenRouter</a><span> · <!-- -->x.com</span></p>\n  <div class=\"mt-4 flex flex-wrap gap-1.5 lg:hidden\">\n   <a class=\"chip\" href=\"https://aihot.news/topics/openai\" data-discover=\"true\">OpenAI / ChatGPT</a><a class=\"chip\" href=\"https://aihot.news/topics/openrouter\" data-discover=\"true\">OpenRouter</a><a class=\"chip\" href=\"https://aihot.news/topics/product-updates\" data-discover=\"true\">产品更新</a><a class=\"chip\" href=\"https://aihot.news/all?tag=%E4%BA%A7%E5%93%81%E6%9B%B4%E6%96%B0\" data-discover=\"true\">#<!-- -->产品更新</a><a class=\"chip\" href=\"https://aihot.news/all?tag=OpenAI\" data-discover=\"true\">#<!-- -->OpenAI</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenRouter 上线了 OpenAI 全新的 GPT-6 Luna Decisions API，为实时模型与工具选择提供低成本、高速的解决方案，并支持带概率的类型化输出。",
+  "oneSentenceSummary": "OpenRouter 上线了 OpenAI 全新的 GPT-6 Luna Decisions API，为实时模型与工具选择提供低成本、高速的解决方案，并支持带概率的类型化输出。",
+  "summary": "OpenRouter 宣布 OpenAI 的 GPT-6 Luna Decisions API 现已可用。这一新接口允许应用程序通过处理文本、JSON 或图像输入，近乎实时地选择合适的模型、工具或操作，并返回带有相关概率的类型化答案。该 API 的定价为每百万输入 token 0.10 美元，输出生成免费，并支持 1M token 的上下文窗口。据 OpenAI 开发人员称，在执行决策任务时，此 Decisions API 的运行速度比通过标准 Responses API 使用 GPT-6 Luna 快多达 10 倍。目前该服务面向所有开发者处于公开测试阶段。",
+  "mainPoints": [
+    {
+      "point": "实时决策能力",
+      "explanation": "GPT-6 Luna Decisions API 使应用程序能够根据输入数据（文本、JSON、图像）动态选择正确的模型、工具或操作，并提供带有概率分数的类型化答案。"
+    },
+    {
+      "point": "显著的性能提升",
+      "explanation": "OpenAI 声称，通过此特定 API 做出的决策比通过通用 Responses API 使用 GPT-6 Luna 做出的决策快多达 10 倍，从而优化了智能体工作流的延迟。"
+    },
+    {
+      "point": "具有成本效益的定价结构",
+      "explanation": "该 API 采用非对称定价模式，每百万输入 token 收费 0.10 美元且输出生成免费，同时拥有 1M token 的大上下文窗口，使其对高吞吐量推理任务极具吸引力。"
+    }
+  ],
+  "keyQuotes": [
+    "让您的应用通过 Decisions API 近乎实时地选择正确的模型、工具或操作，现已面向所有开发者开放公开测试。",
+    "Decisions API 做出决策的速度比通过 Responses API 使用 GPT-6 Luna 快 10 倍。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型发布",
+    "科技新闻",
+    "大语言模型 (LLM)",
+    "AI 工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 72,
+  "wordCount": 435,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791404460000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-08 04:21:00"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-08 04:55:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-08 09:28:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +408,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -792,6 +792,46 @@
 
 
 
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+
+2026-10-07 23:00:07 | 标签: 编程与工程, 系统设计, 开发者工具, TypeScript, JavaScript
+
+> 本文指导开发者使用原生 JavaScript 创建一个轻量级的基于浏览器的诊断日志，用于排查连接设备的问题。文章认为应用错误往往是底层固件或硬件问题的症状，因此需要采用结构化的数据收集方法。教程概述了六个关键步骤：在收集数据前定义可测试的问题、选择合适的证据类型（日志与测量值）、构建易于访问的 HTML 表单、实现具备错误处理功能的稳健本地存储、在匹配条件下比较测量值以及验证工作流程。核心原则是将原始观察结果与解释分离，以避免过早下结论。代码示例演示了如何在 localStorage 中存储 JSON 记录，使用 textContent 防止 XSS 攻击，并在持久化失败时提供导出功能。指南最...
+
+
+
+### [如何将前端-Bug-报告转化为可复现的测试](https://www.sitepoint.com/how-to-turn-frontend-bug-reports-into-reproducible-tests/)
+
+2026-10-07 23:00:07 | 标签: 编程与工程, 前端与 Web, 测试与质量, 开发者工具, 系统设计
+
+> 本文概述了一套七步工作流，帮助开发者将含糊不清的前端 Bug 报告转化为可操作、可复现的测试用例。文章强调应基于具体的视口尺寸和预期行为来定义可观察到的故障，而不是猜测原因。指南提供了用于收集调试上下文（如视口大小、设备像素比）的 JavaScript 代码片段，并建议结合视频录制与浏览器 DevTools 诊断来隔离布局溢出等问题。关键在于，在编写代码之前先简化复现步骤，随后展示如何将这些检查实现为 Playwright 回归测试，以验证几何边界和文档溢出情况。该流程最后通过 Playwright traces 保留诊断工件，并确保 CI 配置在重试时捕获证据，从而将一次性 Bug 转化为持...
+
+
+
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+
+2026-10-07 23:00:07 | 标签: 编程与工程, 前端与 Web, 无障碍, 开发者工具, 系统设计
+
+> 本教程指导开发者如何随 Web 应用发布高质量的视频文档。文章强调应将视频视为一等公民的文档资产，而非简单的附件。关键步骤包括设计聚焦于合成数据的演示、优化录屏以适应窄栏阅读，以及利用响应式 CSS 的原生 HTML5 video 元素。文中详述了无障碍最佳实践，例如使用独立的 WebVTT 字幕文件（无需重新编码即可审查和更新），并为仅视觉呈现的信息提供文字转录稿。此外，还涵盖了技术实现策略，如刻意控制加载行为（`preload="none"`）、通过 JavaScript 事件监听器显式处理播放失败，以及基于清单（manifest）的方式将媒体资源与应用版本一同进行版本管理。最后，提供了测...
+
+
+
+### [如何为创作者商店构建注重隐私的发现分析系统](https://www.sitepoint.com/how-to-build-privacy-conscious-discovery-analytics-for-a-creator-store/)
+
+2026-10-07 15:00:07 | 标签: 编程与工程, 前端与 Web, 数据工程, 安全, TypeScript
+
+> 本教程演示了如何为电商或创作者商店实施轻量级的发现分析系统，而无需采用侵入式追踪手段。文章强调通过定义具体的业务问题来限制数据收集范围，仅涵盖页面浏览和购买等必要事件。指南提供了 JavaScript 代码片段，用于创建经过净化的事件模式，剔除敏感查询参数并将来源 URL 简化为域名。内容涵盖了使用 Beacon API 进行非阻塞事件传输、通过事件委托实现客户端交互追踪，以及严格的服务端验证以防止数据污染。最后，文章概述了将原始事件聚合为可操作指标的策略，同时执行严格的数据保留和最小化规则，以确保合规性与安全性。
+
+
+
+### [ArtCraft](https://github.com/storytold)
+
+2026-10-07 14:02:46 | 标签: 编程与工程, WebAssembly, 开源项目, 后端开发, 编程语言
+
+> 该项目由多个专用应用程序组成：photocraft（图像编辑）、lightcraft（照片管理）、filmcraft（视频编辑）和 vectorcraft（矢量图形），它们都基于相同的 Rust 架构，并具备与商业对应产品相当的功能，同时享受开源开发和现代化编程实践的优势。
+
+
+
 ### [如何使用原生-JavaScript-构建更智能的商城搜索](https://www.sitepoint.com/how-to-build-smarter-marketplace-search-with-vanilla-javascript/)
 
 2026-10-05 23:00:07
@@ -1032,7 +1072,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1044,7 +1084,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2322,13 +2362,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2478,13 +2518,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -3978,13 +4018,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5688,13 +5728,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
