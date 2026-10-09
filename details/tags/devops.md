@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-09 11:36:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-09 19:02:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -656,25 +656,19 @@
 
 ### [宣布在-Unity-Catalog-中推出-Workday-Data-Connect-联邦查询](https://www.databricks.com/blog/announcing-workday-data-connect-federation-unity-catalog)
 
-2026-10-09 07:00:00 | 标签: 编程与工程, 数据工程, 云原生 / DevOps, 系统设计, 数据治理
-
-> 本次公告详细介绍了 Databricks Unity Catalog 中新的 Workday Data Connect 连接器（Beta 版）。该集成允许用户直接从云存储读取 Workday 共享的 Iceberg 表，无需传统的数据摄取管道或数据复制。查询在 Databricks 计算资源上执行，并提供全面的治理支持，包括针对实时 HR 和财务数据的目录级权限及血缘追踪。此架构便于将劳动力洞察与现有的客户及运营数据相结合，支持通过 Genie 进行自然语言探索，并在可信数据源上构建实时 AI 应用。
+2026-10-09 07:00:00
 
 
 
 ### [如何使用-Python-创建系统设计图](https://www.freecodecamp.org/news/how-to-create-system-design-diagrams-using-python/)
 
-2026-10-08 20:13:02 | 标签: 编程与工程, 系统设计, 云原生 / DevOps, 开发者工具, AWS
-
-> 本文介绍了基于代码的绘图方法（diagram-as-code），使用 Python `Diagrams` 库实现。文章讲解了如何定义来自 AWS 等服务商的系统组件（节点），通过有向箭头（`>>`、`<<`）或无向线（`-`）进行连接，并将相关组件分组为集群以提升组织性。教程还演示了高级功能，如嵌套集群、使用列表处理多重连接，以及通过标签、颜色和样式自定义边线。通过将图表视为代码，开发者可以对架构文档进行版本控制，并将其集成到 CI/CD 流水线中。
+2026-10-08 20:13:02
 
 
 
 ### [与会者在-OSS-EU-指出：技术主权需要选择权、技能与支持](https://www.infoq.com/news/2026/10/technological-sovereignity-panel/)
 
-2026-10-08 16:08:00 | 标签: 编程与工程, 云原生 / DevOps, 安全, 开源项目, 供应链管理
-
-> 在 Open Source Summit Europe 的一场小组讨论中，来自 CNCF、OpenSSF 和 Linux Foundation Europe 的专家探讨了欧洲实现技术主权的实际要求。他们得出结论，主权并不意味着避开 AWS 或 Azure 等全球云服务商，而是要确保组织拥有可行的替代方案以及在这些方案之间切换的内部能力。讨论指出的关键挑战包括硬件依赖（芯片/光学系统）、为 OpenStack 等成熟开源项目建立本地支持生态系统的必要性，以及通过开放代码实现安全尽职调查的重要性。与会者强调，真正的主权需要投资于开发者技能、本地服务能力和政策协调，并警告要避免孤立主义，倡导「搭建桥...
+2026-10-08 16:08:00
 
 
 
