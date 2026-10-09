@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-09 06:39:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-09 11:36:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +408,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -792,7 +792,31 @@
 
 
 
-### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+### [做全栈是骗局还是出路？](https://juejin.cn/post/7694107051320311827)
+
+2026-10-08 16:36:47 | 标签: 编程与工程, 前端与 Web, 后端开发, 云原生 / DevOps, 观点评论
+
+> 本文记录了一位资深前端开发者转型全栈的心路历程与深度思考。作者指出，前端对全栈的恐惧往往源于过时的技术认知（如复杂的运维、Docker、微服务等），在 Serverless 时代，这些门槛已大幅降低。文章对比了两种技术栈方案：Next.js 全家桶适合快速上手，但在冷启动和构建产物体积上存在痛点；而 Cloudflare Workers + D1 + Hono 组合凭借其免费额度高、边缘计算延迟低、轻量等优势，非常适合现代开发者独立完成全栈产品。
+
+
+
+### [开发者指南：构建可被搜索与-AI-系统解析的-JSON-LD-结构化数据](https://www.sitepoint.com/json-ld-for-developers-building-structured-data-that-search-and-ai-systems-can-parse/)
+
+2026-10-08 15:00:06 | 标签: 编程与工程, 前端与 Web, 系统设计, 开发者工具, TypeScript
+
+> 本文探讨了如何在网站范围内维护一致的实体描述以提升机器可读性这一挑战。文章倡导利用 JSON-LD 的 `@graph` 和 `@id` 特性，将组织等实体定义一次并在其他位置引用，从而避免因名称变体导致的歧义。作者建议从单一配置源生成此类标记以防止数据漂移，并提供了一个 JavaScript 函数来验证所有内部引用是否正确解析。此外，文章阐明了结构化数据在 AI 搜索中的作用，指出虽然 Google 并未要求为生成式 AI 使用特定 Schema，但准确的实体数据有助于丰富搜索结果及潜在的引用识别。文末列举了常见误区，如标记不可见的事实或填充 `sameAs` 链接，强调准确性优于 SEO ...
+
+
+
+### [demoscene-recomp](https://treylorswift.github.io/demoscene-recomp/web/)
+
+2026-10-08 14:29:25 | 标签: 编程与工程, 开源项目, 性能优化, WebAssembly, Rust
+
+> 文章介绍了 `demoscene-recomp`，这是一项开源倡议，旨在以高保真度将经典的 1990 年代 DOS demoscene 作品带到网络。其核心技术包括在 x86 模拟器上运行每个演示以记录所有执行的 CPU 块，然后将此记录直接转换为 C 代码，同时保留精确的周期时序。这些 C 代码与旧硬件模型（VGA、Sound Blaster、定时器）一起编译为 WebAssembly。结果通过与原始模拟器逐事件验证，确保加载器、音乐播放器和特效的运行方式与 1992-1993 年完全一致。该项目支持 Future Crew 的「Unreal」和「Second Reality」等特定标志性演...
+
+
+
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
 
 2026-10-07 23:00:07
 
@@ -804,7 +828,7 @@
 
 
 
-### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
 
 2026-10-07 23:00:07
 
@@ -1062,7 +1086,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1074,7 +1098,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2352,13 +2376,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2508,13 +2532,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -4008,13 +4032,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5718,13 +5742,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

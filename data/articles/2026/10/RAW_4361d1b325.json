@@ -1,0 +1,52 @@
+{
+  "id": "RAW_4361d1b325",
+  "title": "践行对美国科学发现的承诺",
+  "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+  "date": "2026-10-08 22:58:32",
+  "author": "Anthropic",
+  "siteName": "Anthropic News",
+  "content": "<html>\n <head></head>\n <body>\n  <article class=\"\">\n   <div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\">\n    <div class=\"PostDetail-module-scss-module__UQuRMa__header\">\n     <div class=\"PostDetail-module-scss-module__UQuRMa__subjects body-3 bold\">\n      <span>Announcements</span>\n     </div>\n     <div class=\"body-3 agate\">\n      <time datetime=\"2026-10-08T13:00:00.000Z\">Oct 8, 2026</time>\n     </div>\n    </div>\n   </div>\n   <div class=\"page-wrapper\">\n    <article>\n     <div class=\"\">\n      <div class=\"Body-module-scss-module__z40yvW__body\">\n       <p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Anthropic is deepening its support for American scientific research by committing $150 million over three years to the <a href=\"https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission\">Genesis Mission</a>, a federal initiative to accelerate scientific and technological discovery through AI. The funding will go toward making Claude available to more than 15 agencies that are part of the mission, including NASA, the National Institutes of Health, and the National Science Foundation.</p>\n       <p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We first announced our partnership with the US Department of Energy (DOE) and the Genesis Mission <a href=\"https://www.anthropic.com/news/genesis-mission-partnership\">last December</a>. Since then, we have <a href=\"https://www.anthropic.com/news/lawrence-livermore-national-laboratory-expands-claude-for-enterprise-to-empower-scientists-and\">worked with</a> DOE to bring Claude to scientists across the national laboratories. Today, we announced this new commitment as part of the Science: A New Golden Age Summit hosted by the White House Office of Science and Technology Policy in Washington, DC.</p>\n       <h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"supporting-american-scientists\">Supporting American scientists</h2>\n       <p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We share the administration’s view, laid out in “<a href=\"https://www.whitehouse.gov/science/\">Science: A New Golden Age</a>,” that AI can have a profound and positive impact on scientific discovery, and we are glad to back its efforts to support American scientists.</p>\n       <p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Researchers at federal agencies and national laboratories work on some of the world’s most difficult scientific problems. Through our commitment, we aim to help them use Claude to meaningfully advance their work. Over the next three years, we will:</p>\n       <ul class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">\n        <li>Provide Claude, Claude Code, and API credits to several hundred Genesis Mission research projects;</li>\n        <li>Partner closely with agencies and national laboratories on the administration’s top science priorities, including fusion energy and quantum computing; and</li>\n        <li>Provide training, onboarding, and technical support to scientists on Genesis Mission projects, and<strong> </strong>help agencies new to the Genesis Mission get their first projects running.</li>\n       </ul>\n       <h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"accelerating-scientific-research\">Accelerating scientific research</h2>\n       <p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">This commitment is part of our broader effort to support scientific research. Earlier this year we launched <a href=\"https://claude.com/product/claude-science\">Claude Science</a>, an AI workbench that integrates the tools and packages researchers most commonly use, and <a href=\"https://www.anthropic.com/news/expanding-support-for-scientists\">opened 10,000 free and discounted Claude seats</a> for academic scientists. We also expanded our <a href=\"https://www.anthropic.com/news/ai-for-science-program\">AI for Science</a> program, which gives credits to researchers on high-impact projects, and kicked off a research preview of the <a href=\"https://www.anthropic.com/news/model-hardware-standard-research-preview\">Model Hardware Standard</a>, a shared specification for AI agents to safely operate lab instruments. Our commitment to the Genesis Mission is our next step toward helping researchers everywhere.</p>\n      </div>\n     </div>\n    </article>\n   </div>\n   <section class=\"LandingPageSection-module-scss-module__ZSMdoa__root\">\n    <div class=\"page-wrapper\">\n     <div class=\"LinkGrid-module-scss-module__wTN57W__root\">\n      <div class=\"LinkGrid-module-scss-module__wTN57W__items LinkGrid-module-scss-module__wTN57W__threeItems\"></div>\n     </div>\n    </div>\n   </section>\n  </article>\n </body>\n</html>",
+  "aiSummary": "Anthropic 承诺在三年内投入 1.5 亿美元支持美国 Genesis Mission，为 NASA、NIH 等联邦机构提供 Claude 访问权限及技术支持，以加速 AI 驱动的科学发现。",
+  "oneSentenceSummary": "Anthropic 承诺在三年内投入 1.5 亿美元支持美国 Genesis Mission，为 NASA、NIH 等联邦机构提供 Claude 访问权限及技术支持，以加速 AI 驱动的科学发现。",
+  "summary": "Anthropic 宣布向 Genesis Mission 承诺投入 1.5 亿美元，该计划由美国能源部牵头，旨在将 AI 融入科学研究。这笔资金将为包括 NASA、NIH 和 NSF 在内的 15 个以上机构的科研人员提供 Claude 模型、API 额度及技术支持。此次合作聚焦于聚变能和量子计算等高优先级领域，旨在帮助科学家利用 AI 工具解决复杂问题。这一举措建立在此前与国家实验室的合作基础之上，并与 Anthropic 更广泛的努力相辅相成，例如推出 Claude Science 并为学术研究人员提供免费席位，从而推动 AI 在科学界的普及。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 投资 1.5 亿美元以扩大美国联邦科研领域的 AI 接入。",
+      "explanation": "这笔资金将通过向 NASA、NIH 和 NSF 等机构的数百个研究项目提供 Claude、Claude Code 及 API 额度来支持 Genesis Mission，促进聚变能等优先领域的研究工作。"
+    },
+    {
+      "point": "承诺包含为政府科学家提供全面的技术支持和培训。",
+      "explanation": "除了软件访问权限外，Anthropic 还将与各机构紧密合作，协助新用户入职、提供培训并给予技术援助，以确保 AI 工具有效融入现有的科学工作流程。"
+    },
+    {
+      "point": "此倡议符合 Anthropic 支持科学界的整体战略。",
+      "explanation": "此举延续了之前的行动，如推出「Claude Science」、为学术界提供免费或折扣席位，以及制定操作实验室仪器的 AI Agent 标准，表明其持续专注于 AI-for-science 基础设施建设。"
+    }
+  ],
+  "keyQuotes": [
+    "Anthropic 正通过向 Genesis Mission（一项通过 AI 加速科学与技术发现的联邦倡议）在三年内承诺投入 1.5 亿美元，深化其对美国科学研究的支持。",
+    "我们认同政府的观点……即 AI 能对科学发现产生深远且积极的影响，我们很高兴支持其助力美国科学家的努力。",
+    "与相关机构和国家实验室紧密合作，共同推进包括聚变能和量子计算在内的政府首要科学优先事项。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "企业级 AI",
+    "政策解读",
+    "量子计算",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 366,
+  "domain": "anthropic.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8b9413",
+  "sourceName": "Anthropic News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791471512000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-08 22:58:32"
+}

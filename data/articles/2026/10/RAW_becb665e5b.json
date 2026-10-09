@@ -1,0 +1,52 @@
+{
+  "id": "RAW_becb665e5b",
+  "title": "Mellum2.1 投入实战：面向编码智能体的快速开源模型",
+  "url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/",
+  "date": "2026-10-08 20:00:00",
+  "author": "Bulat Salimzianov",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><strong>Trained with reinforcement learning in real environments, Mellum2.1 is built for coding agents and fast sub-agents that run on your own hardware.</strong></p>\n  <p>Today, we’re releasing Mellum2.1, the next version of the 12B mixture-of-experts model we <a href=\"https://blog.jetbrains.com/ai/2026/06/mellum2-goes-open-source-a-fast-model-for-ai-workflows/\">open-sourced in June</a>. The architecture hasn’t changed since version 2: it’s still a compact, fast model with 2.5B active parameters, released under the Apache 2.0 license. What has changed is everything that happens after pre-training.</p>\n  <p>Mellum2 was fast, but it couldn’t work inside a repository at the level we wanted. After a summer of reinforcement learning in real environments, with millions of sandboxed runs across thousands of environments, Mellum2.1 can: it explores a codebase, edits files, and checks its own changes.</p>\n  <p align=\"center\"><a class=\"jb-download-button\" href=\"https://huggingface.co/collections/JetBrains/mellum21\" target=\"_blank\" rel=\"noopener\"><i class=\"download-icon\"></i>Try Mellum</a></p>\n  <h2 class=\"wp-block-heading\">The changes we made in Mellum2.1</h2>\n  <p>Almost all of the work for this version went into post-training, primarily reinforcement learning (RL).</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Reinforcement learning at a new scale:</strong> RL went from a short final stage to the main part of training. We ran many experiments on how to train both the methods and the data, and we kept what held up.</li>\n   <li><strong>More data, filtered harder:</strong> We added new RL tasks in math, competitive programming, science, tool use, and software engineering, combining open RL datasets with tasks we built ourselves. Open data often comes with broken tests, unverifiable answers, or tasks that are too easy or impossible for the model, so every source was filtered before it reached training.</li>\n   <li><strong>Real environments for agentic skills:</strong> We built the infrastructure to run thousands of RL environments in-house and launched millions of sandboxes over the course of training.</li>\n  </ul>\n  <h2 class=\"wp-block-heading\">How Mellum2.1 performs</h2>\n  <p>We compared Mellum2.1 with Mellum2 – as well as two open models of a similar class, Qwen3.5-9B and Gemma 4 E4B – using the same evaluation setup for all of them.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img fetchpriority=\"high\" decoding=\"async\" src=\"https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-summary.png\" alt=\"Mellum2.1 compared with Mellum2, Qwen3.5-9B, and Gemma 4 E4B\" class=\"wp-image-745166\">\n  </figure>\n  <p>The biggest improvement is in agentic coding, where Mellum2.1 advanced the most compared with Mellum2. The model also got better across the board, showing gains in coding, competitive programming, math, tool calling, and general knowledge, and it holds up on hard problems as well as everyday ones.</p>\n  <div class=\"slider slider-full\">\n   <div class=\"slider__slide\">\n    <a href=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-lcb.png\"> <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-lcb.png\" alt=\"\"> </a>\n   </div>\n   <div class=\"slider__slide\">\n    <a href=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-aime.png\"> <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-aime.png\" alt=\"\"> </a>\n   </div>\n   <div class=\"slider__slide\">\n    <a href=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-gpqa.png\"> <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-gpqa.png\" alt=\"\"> </a>\n   </div>\n   <div class=\"slider__slide\">\n    <a href=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-bfcl.png\"> <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-bfcl.png\" alt=\"\"> </a>\n   </div>\n   <div class=\"slider__slide\">\n    <a href=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-ifeval.png\"> <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-ifeval.png\" alt=\"\"> </a>\n   </div>\n   <div class=\"slider__slide\">\n    <a href=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-swe-verified.png\"> <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-card-swe-verified.png\" alt=\"\"> </a>\n   </div>\n  </div>\n  <h2 class=\"wp-block-heading\">Speed</h2>\n  <p>Post-training didn’t touch the architecture, so Mellum2.1 is as fast as Mellum2, and multi-token prediction (MTP) makes it faster.</p>\n  <p>Under heavy load, Mellum2.1 is the fastest model in the group and serves almost twice as many tokens as Qwen3.5-9B. For a single request, MTP makes it about 1.6 times faster.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/mellum21-speed.png\" alt=\"Output tokens per second on one H200 for Mellum2.1, Qwen3.5-9B, and Gemma 4 E4B\" class=\"wp-image-745243\">\n  </figure>\n  <h2 class=\"wp-block-heading\">Key use cases for Mellum2.1</h2>\n  <ul class=\"wp-block-list\">\n   <li><strong>A capable worker inside agentic systems:</strong> Mellum2.1 can handle different parts of an agent’s plan, from identifying the root cause of a failing test to drafting and checking a fix.</li>\n   <li><strong>Problems beyond coding:</strong> Mellum2.1 is a capable general assistant, too. It handles everyday questions and works through hard math and reasoning problems step by step.</li>\n   <li><strong>Private, self-hosted deployment:</strong> Run Mellum2.1 locally or on your own infrastructure to keep code and data fully under your control.</li>\n  </ul>\n  <h2 class=\"wp-block-heading\">Get started with Mellum2.1</h2>\n  <p>Mellum2.1 is available on Hugging Face. GGUF builds for llama.cpp, Ollama, and LM Studio, as well as the multi-token prediction (MTP) head for speculative decoding in vLLM, are coming soon.</p>\n  <p>If you’re building coding agents, sub-agents, or AI tools that run on your own infrastructure, we’d love for you to try Mellum2.1. Tell us what works and what doesn’t. Your feedback will shape the next version.</p>\n  <p>Open source is how better models get made.</p>\n  <p align=\"center\"><a class=\"jb-download-button\" href=\"https://huggingface.co/collections/JetBrains/mellum21\" target=\"_blank\" rel=\"noopener\"><i class=\"download-icon\"></i>Try Mellum</a></p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/ai/2026/10/air-in-ides-eap/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> A New Agentic Experience: JetBrains Air in IDEs – EAP Now Open</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 发布 Mellum2.1，这是一款经过大规模强化学习优化的快速开源 MoE 模型，专为编码智能体和自托管环境设计。",
+  "oneSentenceSummary": "JetBrains 发布 Mellum2.1，这是一款经过大规模强化学习优化的快速开源 MoE 模型，专为编码智能体和自托管环境设计。",
+  "summary": "JetBrains 发布了 Mellum2.1，这是其 12B 混合专家（MoE）模型的更新版本，拥有 2.5B 激活参数，采用 Apache 2.0 许可证授权。虽然架构与第 2 版保持一致，但通过真实沙盒环境中大规模强化学习（RL），后训练阶段得到了显著增强。这一转变使模型能够有效探索代码库、编辑文件并验证更改，解决了此前在智能体能力方面的局限性。基准测试显示，与 Mellum2 以及 Qwen3.5-9B 和 Gemma 4 E4B 等类似的开放模型相比，该模型在智能体编码、竞技编程、数学和工具调用方面均有大幅提升。该模型保持了高推理速度，在高负载下每秒处理的 token 数量几乎是 Qwen3.5-9B 的两倍，非常适合本地或私有基础设施部署。",
+  "mainPoints": [
+    {
+      "point": "大规模 RL 驱动的后训练在不改变架构的情况下提升能力",
+      "explanation": "Mellum2.1 保留了与前代相同的紧凑 MoE 架构，但将重心转向跨越数百万次沙盒运行的大规模强化学习，从而实现了复杂的智能体行为，如代码库探索和自我修正。"
+    },
+    {
+      "point": "智能体编码和通用推理性能显著提升",
+      "explanation": "与 Mellum2、Qwen3.5-9B 和 Gemma 4 E4B 的基准对比显示，该模型在智能体任务上有重大改进，同时在数学、竞技编程和工具使用方面也有增益，证明了其在处理高难度问题和日常问题时的稳健性。"
+    },
+    {
+      "point": "针对速度和自托管部署进行优化",
+      "explanation": "该模型支持多 token 预测（MTP），实现了比同类开放模型更快的推理速度。其设计旨在服务于那些需要在本地或私有基础设施上运行以保障隐私和控制权的 AI 工具开发者。"
+    }
+  ],
+  "keyQuotes": [
+    "经过一个夏季在真实环境中的强化学习，跨越数千个环境的数百万次沙盒运行，Mellum2.1 能够：探索代码库、编辑文件并检查自身的更改。",
+    "这个版本几乎所有的工作都集中在后训练上，主要是强化学习（RL）。",
+    "在高负载下，Mellum2.1 是组内最快的模型，其服务 token 的数量几乎是 Qwen3.5-9B 的两倍。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 编程",
+    "强化学习",
+    "后训练",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 567,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791460800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-08 20:00:00"
+}

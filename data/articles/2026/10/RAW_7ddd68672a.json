@@ -1,0 +1,52 @@
+{
+  "id": "RAW_7ddd68672a",
+  "title": "Google Cloud 推出 Gemini 智能体",
+  "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/",
+  "date": "2026-10-08 20:07:27",
+  "author": "The Keyword (blog.google) ",
+  "siteName": "The Keyword (blog.google) ",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"uni-page uni-grid uni-article-paragraph\" data-analytics-module=\"{\n            &quot;module_name&quot;: &quot;Paragraph&quot;,\n            &quot;section_header&quot;: &quot;Google Cloud introduces the Gemini agent.&quot;\n          }\">\n   <uni-article-paragraph class=\"uni-article-paragraph__container uni-grid__col--layout-6\">\n    <div class=\"rich-text\">\n     <p data-block-key=\"ftj2o\">Today at Gemini at Work 2026, Google Cloud announced the Gemini agent, a universal agent for work.</p>\n     <p data-block-key=\"ce0ha\">With Gemini, work now starts in the prompt window:</p>\n     <ul>\n      <li data-block-key=\"ahlu6\">Gemini has all of an organization’s business context and can be used for everything from knowledge work to answering questions, and content creation to coding, all from a single prompt box.</li>\n      <li data-block-key=\"3q7aj\">It plans the work, uses skills and tools, connects to Cloud customers’ business systems, and brings back something finished — inside the documents, the inbox, and the developer environments they already work in.</li>\n      <li data-block-key=\"c8f7k\">It chooses the best model for the job, has built-in cost controls, and most importantly, has the security, administration, and governance required by enterprise customers.</li>\n     </ul>\n     <p data-block-key=\"2vqfb\">Check out the <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026\" rel=\"noopener\" target=\"_blank\">Google Cloud blog</a> to learn more.</p>\n    </div>\n    <!---->\n   </uni-article-paragraph>\n  </section>\n  <div class=\"block-image_full_width\">\n   <section class=\"uni-page uni-grid uni-inline-image-section\" data-component=\"uni-inline-image\">\n    <uni-inline-image class=\"uni-inline-image uni-inline-image--full\" alignment=\"full\" alt-text=\"Text &quot;Google Cloud Gemini at Work '26&quot; on colorful bubbles with a spark and arrow\" external-image=\"\" or-mp4-video-title=\"\" or-mp4-video-url=\"\" section-header=\"Google Cloud introduces the Gemini agent.\" autoplay=\"true\">\n     <!---->\n     <div class=\"uni-inline-image__container uni-inline-image__container--full \" data-analytics-module=\"{&quot;module_name&quot;:&quot;Inline Images&quot;,&quot;section_header&quot;:&quot;Google Cloud introduces the Gemini agent.&quot;}\">\n      <!--?lit$162904347$-->\n      <!--?lit$162904347$-->\n      <div class=\" uni-inline-image__media-asset \">\n       <!--?lit$162904347$-->\n       <div slot=\"image-slot\" style=\"display: block;\">\n        <img alt=\"Text &quot;Google Cloud Gemini at Work '26&quot; on colorful bubbles with a spark and arrow\" src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CloudGeminiAgent_hero.width-1200.format-webp.webp\" loading=\"lazy\" sizes=\"(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 1200px\" srcset=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CloudGeminiAgent_hero.width-500.format-webp.webp 500w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CloudGeminiAgent_hero.width-800.format-webp.webp 800w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CloudGeminiAgent_hero.width-1200.format-webp.webp 1200w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CloudGeminiAgent_hero.width-1600.format-webp.webp 1600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CloudGeminiAgent_hero.width-2000.format-webp.webp 2000w\">\n       </div>\n      </div>\n      <!--?-->\n      <!--?lit$162904347$-->\n     </div>\n    </uni-inline-image>\n   </section>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google Cloud 在「Gemini at Work 2026」大会上发布了 Gemini 智能体，这是一款通用的企业级 AI 智能体，能够整合业务上下文、规划任务，并在文档、电子邮件和编码环境中执行工作流，同时内置治理机制。",
+  "oneSentenceSummary": "Google Cloud 在「Gemini at Work 2026」大会上发布了 Gemini 智能体，这是一款通用的企业级 AI 智能体，能够整合业务上下文、规划任务，并在文档、电子邮件和编码环境中执行工作流，同时内置治理机制。",
+  "summary": "在「Gemini at Work 2026」大会上，Google Cloud 推出了定位为“通用工作智能体”的 Gemini 智能体。该工具旨在从提示词窗口开始交互，但超越了简单的问答模式，通过利用组织的全量业务上下文来发挥作用。它自主规划工作，调用技能和工具，并直接连接客户现有的系统（如文档、收件箱和开发者环境），以交付成品而非仅仅是草稿。主要功能包括自动选择最优模型、集成成本控制，以及针对企业需求定制的强大安全、管理和治理框架。此次公告提供了高层概览，引导读者前往 Google Cloud 博客获取更深入的技术细节。",
+  "mainPoints": [
+    {
+      "point": "通用智能体架构",
+      "explanation": "Gemini 智能体被描述为“通用工作智能体”，能够通过单一提示词界面处理从知识工作、内容创作到编程等多种任务。"
+    },
+    {
+      "point": "与业务上下文及系统的深度集成",
+      "explanation": "与独立的聊天机器人不同，该智能体访问组织的特定业务上下文，并直接连接现有的运营系统（文档、收件箱、开发环境）以执行任务并返回完成的工作成果。"
+    },
+    {
+      "point": "企业级治理与效率",
+      "explanation": "该产品强调企业就绪性，具备自动最佳模型选择、内置成本控制，以及企业客户所需的安全、管理和治理等全面功能。"
+    }
+  ],
+  "keyQuotes": [
+    "今日在「Gemini at Work 2026」上，Google Cloud 宣布了 Gemini 智能体，一款通用工作智能体。",
+    "它规划工作，使用技能和工具，连接 Cloud 客户的业务系统，并将成品带回——就在他们已经工作的文档、收件箱和开发者环境中。",
+    "它为任务选择最佳模型，拥有内置成本控制，最重要的是，具备企业客户所需的安全、管理和治理能力。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 产品与应用",
+    "AI Agent",
+    "大语言模型 (LLM)",
+    "提示工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 124,
+  "domain": "blog.google",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_40cd8f",
+  "sourceName": "The Keyword (blog.google) ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791461247000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-08 20:07:27"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "RAW_c452a70776",
+  "title": "宣布在 Unity Catalog 中推出 Workday Data Connect 联邦查询",
+  "url": "https://www.databricks.com/blog/announcing-workday-data-connect-federation-unity-catalog",
+  "date": "2026-10-09 07:00:00",
+  "author": "Dan Zuckerberg, John Spencer, Kosta Bizetic, Katie Cummiskey",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li><strong>Zero-copy access to Workday data:</strong> The new Workday Data Connect connector (Beta) lets Unity Catalog read Workday's shared Iceberg tables directly from cloud storage without ingestion pipelines or duplicate data.</li>\n   <li><strong>Governed and performant:</strong> Queries run on Databricks compute with Unity Catalog governance including catalog, schema, table-level permissions and lineage over live Workday HR and finance data.</li>\n   <li><strong>Unlock workforce and financial insights with Genie:</strong> Use the new Workday Data Connect connector (Beta) to query current people and financial data in place, combine it with customer, market, and operational data already in Databricks, and enable Genie-powered natural-language exploration, real-time financial planning, workforce analytics, and AI on trusted, governed data.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Databricks 在 Unity Catalog 中推出了 Workday Data Connect 的 Beta 版连接器，支持零拷贝访问 HR 和财务数据，以实现受治理的 AI 分析。",
+  "oneSentenceSummary": "Databricks 在 Unity Catalog 中推出了 Workday Data Connect 的 Beta 版连接器，支持零拷贝访问 HR 和财务数据，以实现受治理的 AI 分析。",
+  "summary": "本次公告详细介绍了 Databricks Unity Catalog 中新的 Workday Data Connect 连接器（Beta 版）。该集成允许用户直接从云存储读取 Workday 共享的 Iceberg 表，无需传统的数据摄取管道或数据复制。查询在 Databricks 计算资源上执行，并提供全面的治理支持，包括针对实时 HR 和财务数据的目录级权限及血缘追踪。此架构便于将劳动力洞察与现有的客户及运营数据相结合，支持通过 Genie 进行自然语言探索，并在可信数据源上构建实时 AI 应用。",
+  "mainPoints": [
+    {
+      "point": "零拷贝架构",
+      "explanation": "该连接器直接从云存储读取 Workday 共享的 Iceberg 表，消除了对 ETL 管道的需求并减少了数据冗余。"
+    },
+    {
+      "point": "统一治理",
+      "explanation": "通过 Unity Catalog 管理访问权限，为 Databricks 和 Workday 的数据资产提供一致的权限控制和血缘追踪。"
+    },
+    {
+      "point": "AI 就绪集成",
+      "explanation": "通过将 HR/财务数据与其他企业数据集统一，该功能支持由 Genie 驱动的自然语言查询和实时劳动力分析。"
+    }
+  ],
+  "keyQuotes": [
+    "「零拷贝访问 Workday 数据：新的 Workday Data Connect 连接器（Beta 版）让 Unity Catalog 能够直接从云存储读取 Workday 共享的 Iceberg 表，无需数据摄取管道或重复数据。」",
+    "「查询在 Databricks 计算资源上运行，并具备 Unity Catalog 治理功能，包括针对实时 Workday HR 和财务数据的目录、模式、表级权限及血缘追踪。」"
+  ],
+  "tags": [
+    "编程与工程",
+    "数据工程",
+    "云原生 / DevOps",
+    "系统设计",
+    "数据治理"
+  ],
+  "topicTag": "devops",
+  "readTime": 1,
+  "score": 68,
+  "wordCount": 107,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791500400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-09 07:00:00"
+}
