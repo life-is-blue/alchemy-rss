@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-10 09:33:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-10 15:55:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -794,33 +794,25 @@
 
 ### [Vue-3-Composition-API：Watcher-生命周期与内存泄漏防范](https://www.sitepoint.com/vue-3-composition-api-watcher-lifecycle/)
 
-2026-10-09 23:50:21 | 标签: 编程与工程, 前端与 Web, Vue.js, Composition API, 内存管理
-
-> 文章详细介绍了 Vue 3 中 Watcher 通过 active effect scope 与组件实例绑定的机制，并识别了导致孤儿 Watcher 的三个常见模式：异步回调、延迟创建、非 setup 实用工具。接着，提供了四种可靠的修复策略：保持可组合函数同步、使用 `<script setup>` 的异步还原、手动捕获 stop 句柄、使用 `effectScope()` 包裹效果。最后，强调了测试挂载/卸载周期以验证清理的重要性。
+2026-10-09 23:50:21
 
 
 
 ### [Express-React-刷新令牌：Cookie-诊断与静默重试](https://www.sitepoint.com/express-react-refresh-token-cookie-diagnosis/)
 
-2026-10-09 23:49:53 | 标签: 编程与工程, 安全, 后端开发, 开发者工具, Node.js
-
-> 本文解决 Express 和 React 应用中常见的不可见刷新 cookie 问题。它提供完整的安装指南，涵盖登录、刷新和注销的服务器端路由定义，以及具有凭据支持的客户端 fetch 包装器。此外，该指南还包含一个用于识别配置错误的故障排除表格，以及一个用于确保安全、无冲突的令牌刷新的单次飞行承诺检查。
+2026-10-09 23:49:53
 
 
 
 ### [JavaScript-事件循环详解：队列跟踪与调试指南](https://www.sitepoint.com/javascript-event-loop-explained-debugging-guide/)
 
-2026-10-09 23:49:19 | 标签: 编程与工程, TypeScript, 可观测性, 后端开发, Node.js
-
-> 本文深入探讨了 JavaScript 事件循环的机制，解释了异步任务是如何被调度和执行的。文章详细介绍了浏览器的事件循环模型，包括任务源和微任务检查点的区别。指南中包含了一些实用的队列跟踪示例，用于预测执行顺序，并讨论了浏览器与 Node.js 事件循环之间的差异。此外，文章还提供了用于调试异步代码的策略，例如识别 promise 回调的来源以及检测微任务饥饿现象。
+2026-10-09 23:49:19
 
 
 
 ### [Deno-加入-Cloudflare](https://blog.cloudflare.com/deno-joins-cloudflare/)
 
-2026-10-09 20:51:09 | 标签: 编程与工程, 并购与投资, TypeScript, 深度长文, Cloudflare
-
-> Cloudflare 已经收购了 Deno，这是一个以安全性与性能著称的现代 JavaScript 和 TypeScript 运行时。此次整合使开发者能够使用熟悉的语言编写服务端代码，同时利用 Cloudflare 的全球边缘网络。收购旨在弥合客户端和服务器端开发之间的差距，提供一个用于构建可扩展 Web 应用的统一平台。
+2026-10-09 20:51:09
 
 
 
@@ -842,7 +834,7 @@
 
 
 
-### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
 
 2026-10-07 23:00:07
 
@@ -854,7 +846,7 @@
 
 
 
-### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
 
 2026-10-07 23:00:07
 
@@ -1112,7 +1104,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1124,7 +1116,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2402,13 +2394,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2558,13 +2550,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -4058,13 +4050,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5768,13 +5760,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

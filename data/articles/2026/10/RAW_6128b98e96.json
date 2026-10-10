@@ -1,0 +1,50 @@
+{
+  "id": "RAW_6128b98e96",
+  "title": "GitHub - SpectraSI/SpectraAdamw：通过因子化方差和频域压缩减半优化器状态内存",
+  "url": "https://github.com/SpectraSI/SpectraAdamw",
+  "date": "2026-10-09 18:51:42",
+  "author": "KanishkIndia",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <p dir=\"auto\"><strong>Authors:</strong> Spectra Labs Research\n   <br>\n   <strong>Status:</strong> Closed Beta (Python POC Available)</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Abstract</h2>\n  </div>\n  <p dir=\"auto\">The primary memory bottleneck when fine-tuning Large Language Models (LLMs) on consumer hardware is not the model weights, but the optimizer states. Standard AdamW requires storing two massive state tensors (momentum and variance), costing 2x the model parameters in VRAM. Unstructured sparsity (magnitude pruning) and aggressive 8-bit quantization often lead to severe degradation in convergence stability.</p>\n  <p dir=\"auto\">We introduce <strong>SpectraAdamW</strong>, a hybrid optimizer utilizing factorized variance approximations and frequency-domain momentum compression to reduce the optimizer state overhead by exactly 50% (~1x parameters) while maintaining full-precision convergence behavior.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Methodology</h2>\n  </div>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h3 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">1. Factorized Variance Approximation (FVA)</h3>\n  </div>\n  <p dir=\"auto\">Standard AdamW tracks the second moment (uncentered variance) of the gradients at full precision. SpectraAdamW decomposes this second moment into row and column means for 2D weight matrices (e.g., Linear layers). By storing only <math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"c3567157012d83e157e026b51ca8c7ad\">$O(N \\times 1)$</math-renderer> and <math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"c3567157012d83e157e026b51ca8c7ad\">$O(1 \\times M)$</math-renderer> tensors instead of the full <math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"c3567157012d83e157e026b51ca8c7ad\">$O(N \\times M)$</math-renderer> matrix, we effectively eliminate the memory footprint of the variance state.</p>\n  <p dir=\"auto\">To prevent the Gibbs ringing artifacts commonly associated with aggressive variance compression, the factorized variance is strictly reconstructed via scalar multiplication before the gradient update, ensuring the denominator remains strictly positive and bounded.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h3 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">2. Frequency-Domain Momentum Compression (Native Backend)</h3>\n  </div>\n  <p dir=\"auto\">While the variance is factorized, the first moment (momentum) retains heavy directional information. In our proprietary C++ backend, momentum is compressed by transforming gradients into the frequency domain via a Fast Fourier Transform (FFT). This isolates the high-energy signal from the noise, allowing us to dynamically mask low-impact frequencies and compress the state without losing structural gradient integrity.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Empirical VRAM Benchmarks</h2>\n  </div>\n  <p dir=\"auto\">In simulated 8192-dimension Transformer layer updates (Batch Size 128):</p>\n  <ul dir=\"auto\">\n   <li><strong>AdamW State VRAM:</strong> 256.00 MB</li>\n   <li><strong>SpectraAdamW State VRAM:</strong> 128.16 MB</li>\n   <li><strong>Reduction:</strong> <strong>50.0%</strong></li>\n  </ul>\n  <p dir=\"auto\">Loss curves demonstrate perfect alignment with AdamW convergence by step 40, avoiding the delayed convergence penalty seen in aggressive quantization methods.</p>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Usage (Python POC)</h2>\n  </div>\n  <p dir=\"auto\">We are currently distributing the PyTorch Minimum Viable Product (MVP) to verify the factorized variance math and VRAM reduction. The optimizer acts as a 1-line drop-in replacement for <code>torch.optim.AdamW</code>:</p>\n  <div class=\"highlight highlight-source-python notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"from spectra_optim import SpectraAdamW\n\n# Example: Fine-tuning an 8B model\nmodel = AutoModelForCausalLM.from_pretrained(&quot;meta-llama/Llama-3-8B&quot;)\n\n# Standard AdamW State VRAM: ~32GB \n# SpectraAdamW State VRAM:   ~16GB\noptimizer = SpectraAdamW(model.parameters(), lr=1e-4, weight_decay=0.01)\n\nloss.backward()\noptimizer.step()\">\n   <pre><span class=\"pl-k\">from</span> <span class=\"pl-s1\">spectra_optim</span> <span class=\"pl-k\">import</span> <span class=\"pl-v\">SpectraAdamW</span>\n\n<span class=\"pl-c\"># Example: Fine-tuning an 8B model</span>\n<span class=\"pl-s1\">model</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">AutoModelForCausalLM</span>.<span class=\"pl-c1\">from_pretrained</span>(<span class=\"pl-s\">\"meta-llama/Llama-3-8B\"</span>)\n\n<span class=\"pl-c\"># Standard AdamW State VRAM: ~32GB </span>\n<span class=\"pl-c\"># SpectraAdamW State VRAM:   ~16GB</span>\n<span class=\"pl-s1\">optimizer</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">SpectraAdamW</span>(<span class=\"pl-s1\">model</span>.<span class=\"pl-c1\">parameters</span>(), <span class=\"pl-s1\">lr</span><span class=\"pl-c1\">=</span><span class=\"pl-c1\">1e-4</span>, <span class=\"pl-s1\">weight_decay</span><span class=\"pl-c1\">=</span><span class=\"pl-c1\">0.01</span>)\n\n<span class=\"pl-s1\">loss</span>.<span class=\"pl-c1\">backward</span>()\n<span class=\"pl-s1\">optimizer</span>.<span class=\"pl-c1\">step</span>()</pre>\n  </div>\n  <div class=\"markdown-heading\" dir=\"auto\">\n   <h2 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\">Beta Access</h2>\n  </div>\n  <p dir=\"auto\">The fully optimized C++ CUDA backend is currently in closed development. If you are conducting research on constrained hardware and wish to verify the Python POC in our private Google Colab environment, please reach out to the Spectra Labs team on Reddit at <code>r/SpectraLabs</code>.</p>\n </body>\n</html>",
+  "aiSummary": "SpectraAdamW 通过因子化方差近似和频域动量压缩将优化器状态内存减少 50%，同时保持全精度收敛，用于 LLM 微调。",
+  "oneSentenceSummary": "SpectraAdamW 通过因子化方差近似和频域动量压缩将优化器状态内存减少 50%，同时保持全精度收敛，用于 LLM 微调。",
+  "summary": "SpectraAdamW 解决了 LLM 微调中的内存瓶颈问题，通过压缩优化器状态。它采用因子化方差近似来消除完整的方差矩阵，并使用频域压缩来减小动量的体量，实现了 50% 的 VRAM 减少，同时保持了收敛的稳定性。",
+  "mainPoints": [
+    {
+      "point": "因子化方差近似（FVA）",
+      "explanation": "将二阶矩分解为行均值和列均值，将状态从 O(N×M) 降到 O(N+M)。这消除了方差状态的内存占用，同时保持了正值、有界的除数，以实现稳定的更新。"
+    },
+    {
+      "point": "频域动量压缩",
+      "explanation": "通过 FFT 将梯度变换到频域，允许动态屏蔽低影响的频率。这压缩了动量的存储大小，而不会丢失结构完整性，为整体的 50% 内存降参贡献了力量。"
+    },
+    {
+      "point": "实证性能",
+      "explanation": "在模拟基准测试中，SpectraAdamW 将优化器状态 VRAM 从 256.00 MB 减少到 128.16 MB（降参 50%）。损失曲线与标准 AdamW 完全一致，表明收敛质量没有下降。"
+    }
+  ],
+  "keyQuotes": [
+    "在消费级硬件上对大型语言模型进行微调时，主要内存瓶颈并不是模型权重，而是优化器状态。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型训练与推理",
+    "AI 工程",
+    "开源项目",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 414,
+  "domain": "github.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791543102000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-09 18:51:42"
+}
