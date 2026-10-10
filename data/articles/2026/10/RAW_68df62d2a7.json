@@ -1,0 +1,52 @@
+{
+  "id": "RAW_68df62d2a7",
+  "title": "刚刚，TRAE 全面升级！Work、Code 合体，一手实测来了！",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247728385&idx=1&sn=ea9c7fe615ef46ba80bfe107059bd143",
+  "date": "2026-10-09 17:28:00",
+  "author": "Datawhale",
+  "siteName": "Datawhale",
+  "content": null,
+  "aiSummary": "TRAE 新版将 Work 和 Code 双端合并，新增 Agent 模式支持集中管理项目和并行调度，同时保留完整 IDE 功能，让用户在自动化与手动调试之间无缝切换。",
+  "oneSentenceSummary": "TRAE 新版将 Work 和 Code 双端合并，新增 Agent 模式支持集中管理项目和并行调度，同时保留完整 IDE 功能，让用户在自动化与手动调试之间无缝切换。",
+  "summary": "本文介绍了 TRAE 的最新升级，重点是 Work 和 Code 端的融合，以及由此带来的集中化项目管理和并行 Agent 调度能力。通过实际案例（如科普视频生成器、3D 水母场景、足球场选座预览），展示了如何利用 TRAE 的 Agent 模式快速构建和迭代项目，同时保留了对底层代码的深入检查和手动修改能力。文章还介绍了 '我的产物' 归集功能、模板库、自动化任务以及移动端支持，强调了在 AI 辅助开发中保持对结果的控制和可维护性的重要性。",
+  "mainPoints": [
+    {
+      "point": "TRAE 新版实现了 Work 和 Code 的双端合并，支持在同一界面内管理多个项目和调度多个 Agent，提高了开发效率。",
+      "explanation": "以前，用户需要在不同的窗口或程序之间切换来查看项目状态和编辑代码。现在，TRAE 的 Agent 模式允许用户在一个集中的视图中监控所有正在运行的任务，并可以轻松地在自动化执行和手动代码编辑之间切换。"
+    },
+    {
+      "point": "保留完整的 IDE 功能是 TRAE 升级的关键，它确保了用户在需要时可以深入检查和修改底层代码。",
+      "explanation": "虽然 Agent 模式提供了快速的自动化开发，但对于复杂项目，用户可能需要手动调整逻辑或排查错误。TRAE 保持了对完整文件树和代码差异的访问，允许用户在必要时接管开发过程。"
+    },
+    {
+      "point": "新功能如 '我的产物' 归集、模板库和自动化任务，进一步提升了项目的可管理性和可维护性。",
+      "explanation": "这些功能帮助用户更好地组织生成的资产（如报告、文档、视频），快速启动新项目，并自动化重复性的检查任务，从而让开发流程更加流畅和高效。"
+    }
+  ],
+  "keyQuotes": [
+    "用 AI Agent 写完代码，往往还要回到 IDE。以前做开发，我们习惯直接打开工程，在 IDE 里编辑文件、调试。现在把需求交给 Agent，它能先写出一个版本，但需要细调某段逻辑、检查具体实现时，还是得读一下源文件。",
+    "Agent 连续跑几轮，过程里生成的文件也会多起来。架构说明、接口文档、测试截图，还有不同版本的代码片段，如果都散在聊天记录里，回头找某一个结果，往往要翻很久。",
+    "Agent 承担的工作越多，我们越需要方便地检查结果，自己修正有问题的实现。这样用起来心里有底，才敢把更复杂的任务交给它。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI Agent",
+    "AI 编程",
+    "开发者工具",
+    "Harness工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 88,
+  "wordCount": 2976,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_4688eb",
+  "sourceName": "Datawhale",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1791538080000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-09 17:28:00"
+}

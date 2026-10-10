@@ -1,0 +1,50 @@
+{
+  "id": "RAW_643ca68232",
+  "title": "论文页 - 适用于 AI 的真实长期记忆：一个比重新计算更快、更便宜的 5000 万字窗口",
+  "url": "https://huggingface.co/papers/2610.10845",
+  "date": "2026-10-09 17:35:33",
+  "author": "Corbenic",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": null,
+  "aiSummary": "该论文介绍了 galahad-kv，这是一个将大型语言模型 KV 状态存储并重用于本地 NVMe 磁盘的记忆层，相比于对长上下文提示重新计算，它展示了显著的提速和能量节约。",
+  "oneSentenceSummary": "该论文介绍了 galahad-kv，这是一个将大型语言模型 KV 状态存储并重用于本地 NVMe 磁盘的记忆层，相比于对长上下文提示重新计算，它展示了显著的提速和能量节约。",
+  "summary": "该研究评估了 galahad-kv，这是一个将语言模型键值（KV）状态缓存到磁盘的系统。它证明，从加密存储加载一个 16，000 字块比重新计算它要快 2.8–4.3 倍，并使用 8.8–12.3 倍的 GPU 能量。该系统成功处理了 5000 万字的流，并表现出高保真度，这由模型能够准确回忆埋在上下文窗口深处的 факт证明。",
+  "mainPoints": [
+    {
+      "point": "galahad-kv 内存层支持预计算 KV 状态的高效重用。",
+      "explanation": "通过将每个字块的 KV 状态存储在本地 NVMe 磁盘上，该系统可以快速检索，而无需从原始文本重新计算状态。这大大降低了长上下文推理的计算负担和能量消耗。"
+    },
+    {
+      "point": "该系统在巨大的上下文窗口上表现出高可靠性和保真度。",
+      "explanation": "该实验成功处理了 5000 万字的流，模型能够正确识别埋在上下文深处的 факт（最远 5000 万字）。这证实了存储的状态是准确的，模型可以有效地利用缓存的信息。"
+    },
+    {
+      "point": "该方法带来了实质性的性能和资源节省。",
+      "explanation": "从缓存加载字块比重新计算要快得多，并且可以大幅减少所需 GPU 能量。此外，无论处理的流长度如何，GPU 内存占用都保持不变，这表明内存管理是高效的。"
+    }
+  ],
+  "keyQuotes": [
+    "加载一个字块比重新计算要快 2.8 倍到 4.3 倍，并使用 8.8 倍到 12.3 倍的 GPU 能量，同时在整个 5000 万字的流中，GPU 内存始终保持在恒定水平。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "LLM 推理优化",
+    "Agent记忆",
+    "大语言模型 (LLM)",
+    "系统设计"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 539,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791538533000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-09 17:35:33"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-10-10 06:01:31 | [返回首页](/README.md)
+**更新时间**: 2026-10-10 09:33:50 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16863)
+- [AI & 大模型](#ai-llm) (16905)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1023)
+- [前端与全栈](#frontend-fullstack) (1027)
 - [DevOps](#devops) (815)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7093)
+- [其他](#other) (7096)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [为何-AlphaFold-并未解决蛋白质折叠问题——Pushmeet-Kohli，Google-DeepMind-&amp;-Sal-Candido，Biohub](https://www.latent.space/p/biohub-deepmind) - AI 精选
+- [GPU-集群的有效调度](https://huggingface.co/blog/allenai/impactful-scheduling) - AI 精选
 - [利用-Claude-Science-绘制首张完整的紫外光波段全天星图](https://www.anthropic.com/research/the-missing-map-of-the-sky) - AI 精选
 - [微调-0.8B-模型战胜托管-LLM-的单一任务](https://dev.to/abhash_chakraborty/fine-tuning-a-08b-model-to-beat-hosted-llms-at-one-job-4ajl) - AI 精选
 - [GPT-6-系列模型使用指南](https://openai.com/index/practical-guide-building-gpt-6) - AI 精选
@@ -40,10 +42,8 @@
 - [Manus-回来了！更新-2.0-并发布全天候智能体-Cue](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651060477&idx=2&sn=ee9eb2ee3287c13bba78bf08f5d42a29) - AI 精选
 - [Claude-Code-的下一个时代——Thariq-Shihipar，Anthropic](https://www.latent.space/p/thariq) - AI 精选
 - [OpenRouter：从种子轮到-Stripe-——-对话-OpenRouter-的-Alex-Atallah-与-AMP-的-Anjney-Midha](https://www.latent.space/p/openrouter) - AI 精选
-- [Runway-的-WorldPrompt-与实时世界的工程化](https://www.latent.space/p/runway) - AI 精选
-- [团队分享提升-Agent-Harness-Token-效率的提示词-·-AIHOT](https://aihot.news/items/cmuek0q2c05foroynclaijp3z) - AI 精选
 
-- [查看全部 16863 篇...](/details/tags/ai-llm.md)
+- [查看全部 16905 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 
-- [查看全部 1023 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1027 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7093 篇...](/details/tags/other.md)
+- [查看全部 7096 篇...](/details/tags/other.md)
 
 

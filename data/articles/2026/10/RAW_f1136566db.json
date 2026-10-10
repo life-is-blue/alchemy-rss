@@ -1,0 +1,50 @@
+{
+  "id": "RAW_f1136566db",
+  "title": "多轮智能体上下文衰退与状态污染基准",
+  "url": "https://dev.to/anthony_oxendine_ec54806a/multi-turn-agentic-context-decay-state-pollution-benchmark-4m9m",
+  "date": "2026-10-10 03:00:00",
+  "author": "Anthony Oxendine",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Submission for <a href=\"https://dev.to/challenges/kaggle-2026-09-23\">Kaggle Benchmarking Challenge</a></em></p>\n  <p><strong>What I Benchmarked</strong>\n   <br>\n   Measured multi-turn agent context decay across 50 steps. Linear KV-cache and flat RAG suffer topic bleed (Peters' Rule), dropping recall from 97.2% to 60.8%.</p>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fipgojuxuxonq6dw5vr4g.jpg\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fipgojuxuxonq6dw5vr4g.jpg\" alt=\"Terminal\" loading=\"lazy\"></a>\n   <br>\n   <em>Figure 1: Benchmark harness with 14-Gate BBQ verification on Apple M4.</em></p>\n  <p><strong>Models Tested</strong></p>\n  <ol>\n   <li>XORAS 18,432-D Poincaré Memory</li>\n   <li>Gemini 3.5 Pro</li>\n   <li>Gemma-4 26B</li>\n   <li>Flat Euclidean RAG</li>\n  </ol>\n  <p><strong>Findings</strong>\n   <br>\n   <a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fplb32m2mi2a8y8ddxq37.jpg\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fplb32m2mi2a8y8ddxq37.jpg\" alt=\"Decay Chart\" loading=\"lazy\"></a>\n   <br>\n   <em>Figure 2: Accuracy recall across 50 steps.</em></p>\n  <ul>\n   <li>Flat RAG &amp; Gemma-4: Accuracy drops to 60.8% with 48.6% state pollution.</li>\n   <li>Gemini 3.5 Pro: Degrades to 60.5%.</li>\n   <li>XORAS Poincaré Memory: Maintains 99.8% recall and 0.00% pollution.</li>\n  </ul>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fb41smcolsufbxg08tekd.jpg\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fb41smcolsufbxg08tekd.jpg\" alt=\"Telemetry\" loading=\"lazy\"></a>\n   <br>\n   <em>Figure 3: POSIX SHM 3.16M ops/s throughput &amp; Z3 SMT proofs.</em></p>\n  <p><strong>My Benchmark</strong></p>\n  <ul>\n   <li>\n    <p>[Kaggle Benchmark Code]<a href=\"https://github.com/aoxendine3/kaggle-benchmark-assets\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/aoxendine3/kaggle-benchmark-assets</a></p>\n   </li>\n   <li>\n    <p><a href=\"https://github.com/aoxendine3/SSOT_Agentic_Brain/blob/main/docs/audits/XORAS_014_KAGGLE_BENCHMARK_VERIFICATION.md\" target=\"_blank\" rel=\"noopener noreferrer\">NASA V&amp;V Memorandum</a></p>\n   </li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "该基准测试评估了各种 AI 模型在 50 次交互步骤中保持准确上下文的能力，结果显示，尽管扁平 RAG 和线性 KV-Cache 模型遭受严重衰退和状态污染，但 XORAS 庞加莱内存系统保持了近乎完美的召回率和零污染。",
+  "oneSentenceSummary": "该基准测试评估了各种 AI 模型在 50 次交互步骤中保持准确上下文的能力，结果显示，尽管扁平 RAG 和线性 KV-Cache 模型遭受严重衰退和状态污染，但 XORAS 庞加莱内存系统保持了近乎完美的召回率和零污染。",
+  "summary": "该实验测量了多轮智能体对话中的上下文衰退。结果表明，传统方法（扁平 RAG、Gemma-4、Gemini 3.5 Pro）出现了显著的准确性损失和状态污染，召回率降至 ~60%。相比之下，XORAS 18，432-D 庞加莱内存系统表现出卓越的稳定性，在所有 50 个步骤中保持了 99.8% 的召回率和 0.00% 的污染率。",
+  "mainPoints": [
+    {
+      "point": "传统模型中的上下文衰退",
+      "explanation": "扁平 RAG 和线性 KV-Cache 模型表现出显著的上下文衰退，在 50 个步骤中，准确性下降至 ~60%，状态污染达到 ~48%。这表明它们无法维持对过去交互的连贯记忆。"
+    },
+    {
+      "point": "XORAS 庞加莱内存性能",
+      "explanation": "XORAS 系统使用 18，432-D 庞加莱嵌入，性能优于所有其他模型。它保持了 99.8% 的召回率和零状态污染，证明了其强大的记忆保持和纠错能力。"
+    },
+    {
+      "point": "基准方法论",
+      "explanation": "该测试使用 14 道门的 BBQ 验证协议来评估模型性能。结果由 POSIX SHM 遥测和 Z3 SMT 证明进行验证，确保数据收集和分析的完整性。"
+    }
+  ],
+  "keyQuotes": [
+    "线性 KV-Cache 和扁平 RAG 遭受话题混淆（Peters 规则），召回率从 97.2% 下降到 60.8%。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "模型评测与基准",
+    "RAG / 检索增强",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 111,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791572400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-10 03:00:00"
+}

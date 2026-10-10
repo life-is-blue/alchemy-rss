@@ -1,0 +1,50 @@
+{
+  "id": "RAW_b35a68570c",
+  "title": "GitHub 使用 AI 辅助重写，将 Copilot 运行时迁移到 Rust",
+  "url": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/",
+  "date": "2026-10-09 22:29:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has migrated the<a href=\"https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/\"> runtime behind GitHub Copilot CLI, the Copilot app, and Copilot SDK</a> from TypeScript and Node.js to Rust, replacing more than 800,000 lines of production code through an AI-assisted rewrite. The migration took approximately 14.5 weeks and was delivered through 128 pull requests while GitHub continued releasing the runtime. GitHub reports that a measured client startup, session creation, and single-turn scenario fell from 5.25 seconds with the previous runtime to 292 milliseconds when the Rust runtime was embedded in process.</p>\n   <p>The migration also changed how applications integrate with the runtime. The previous implementation required Node.js and V8 and communicated with host applications across a process boundary. GitHub says this added approximately 100 MB of working set per client. The Rust implementation can instead be embedded directly into host applications through a C ABI, while an out-of-process mode remains available. The<a href=\"https://github.com/github/copilot-sdk\"> Copilot SDK</a> currently supports TypeScript, Python, Go, .NET, Java, and Rust.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/10/github-copilot-rust-migration/news/2026/10/github-copilot-rust-migration/en/resources/1githubrust-1790473005883.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/10/github-copilot-rust-migration/en/resources/1githubrust-1790473005883.jpeg\" rel=\"share\"></p>\n   <p><em>GitHub’s before and after Copilot runtime architecture (Source: <a href=\"https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/\">GitHub Blog Post</a>)</em></p>\n   <p>GitHub used an incremental replacement strategy rather than a parallel rewrite followed by a single cutover. Individual TypeScript components were replaced with Rust implementations, with temporary<a href=\"https://nodejs.org/api/n-api.html\"> N API</a> interoperability connecting the two. This allowed existing end-to-end tests to exercise the new code while other components remained in TypeScript. GitHub shipped 135 releases during the migration, including 35 stable and 100 prerelease versions.</p>\n   <p>The compatibility layer reached 2,019 internal N API exports and 3,356 TypeScript call sites before being removed. By August 21, the runtime contained 832,378 lines of production Rust and 468,689 lines of Rust unit tests. AI agents generated most of the implementation, while compilation, testing, and human review helped identify regressions involving behavior, state and lifetime handling, library semantics, and lost optimizations. GitHub recorded 4,478 direct cargo check runs, with 87.1% completing cleanly.</p>\n   <p>Community responses also focused on the verification challenges of <a href=\"https://en.wikipedia.org/wiki/AI-assisted_software_development\">AI-assisted</a> migrations and pointed to cancellation, retries, and backpressure as examples requiring validation beyond compilation. <a href=\"https://www.reddit.com/r/webdev/comments/1wm9ib8/comment/pbebzbo/\">PLBjt</a> wrote that</p>\n   <blockquote>\n    <p>The interesting part here is less that Copilot wrote Rust and more whether the migration kept the runtime’s behavior stable at the boundaries.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/pirafrank/\">Francesco Pira</a>, XR Tech Lead at Leonardo, <a href=\"https://lnkd.in/p/gv3U_SGU\">highlighted</a></p>\n   <blockquote>\n    <p>Tests small reviewable changes, compatibility layers, and human engineering judgment as important elements of the approach.&nbsp;</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/come-redon-03a06b22/\">Côme Redon</a>, Senior Solution Engineer at Microsoft, <a href=\"https://lnkd.in/p/gg5ycN6Q\">pointed out </a></p>\n   <blockquote>\n    <p>The challenge of identifying undocumented behavioral contracts in legacy systems.</p>\n   </blockquote>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/10/github-copilot-rust-migration/news/2026/10/github-copilot-rust-migration/en/resources/1Screenshot 2026-09-26 at 6.15.16 PM-1790473005883.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/10/github-copilot-rust-migration/en/resources/1Screenshot 2026-09-26 at 6.15.16 PM-1790473005883.png\" rel=\"share\"></p>\n   <p><em>GitHub’s migration timeline showing the incremental pull requests and releases. (Source: <a href=\"https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/\">GitHub Blog Post</a>)</em></p>\n   <p>The resulting architecture provides a native Rust runtime that can be embedded directly into host applications or operated separately, while the Copilot SDK maintains language-specific interfaces across its supported languages. The migration combined AI-generated implementation with incremental integration, temporary compatibility boundaries, automated validation, and human review while the production runtime continued to evolve.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/github-copilot-rust-migration/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1791556140000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 成功地将 Copilot 运行时从 TypeScript 迁移到 Rust，利用 AI 重写了超过 80 万行代码，并将启动性能从 5.25 秒显著提升至 292 毫秒。",
+  "oneSentenceSummary": "GitHub 成功地将 Copilot 运行时从 TypeScript 迁移到 Rust，利用 AI 重写了超过 80 万行代码，并将启动性能从 5.25 秒显著提升至 292 毫秒。",
+  "summary": "GitHub Copilot 运行时的迁移大约在 14.5 周内完成，涉及 128 个拉取请求和 135 个发布版本。新版 Rust 实现将启动时间缩短了 10 倍，并支持直接嵌入到主机应用程序中，从而减少了内存开销。该过程采用增量替换策略，并设置临时兼容层，确保在过渡期间的稳定性。",
+  "mainPoints": [
+    {
+      "point": "性能提升",
+      "explanation": "迁移后，启动时间显著下降，从 5.25 秒减至 292 毫秒。这一改善得益于 Rust 的高效性以及将运行时直接嵌入主机进程的能力，消除了进程间通信的开销。"
+    },
+    {
+      "point": "增量迁移策略",
+      "explanation": "GitHub 并未采用一次性替换的“大爆炸”方式，而是选择了增量替换策略。具体做法是逐步将 TypeScript 组件换为 Rust 等效组件，并同时保留临时兼容层，从而在整个过渡期内实现持续测试和稳定发布。"
+    },
+    {
+      "point": "AI 辅助开发",
+      "explanation": "项目大量利用 AI 代理生成初始的 Rust 实现。虽然 AI 编写了大部分代码，但人类工程师仍负责关键的代码审查，识别并修正与行为、状态管理和库语义相关的问题。"
+    }
+  ],
+  "keyQuotes": [
+    "本次迁移耗时约 14.5 周，并通过 128 个拉取请求来实现，期间 GitHub 继续发布运行时的更新。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI 编程",
+    "系统设计",
+    "性能优化",
+    "代码质量"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 460,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791556140000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-09 22:29:00"
+}
