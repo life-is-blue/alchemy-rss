@@ -1,0 +1,50 @@
+{
+  "id": "RAW_2108663149301846497",
+  "title": "宝玉开源项目 baocut 开发流程分享",
+  "url": "https://x.com/dotey/status/2108663149301846497",
+  "date": "2026-10-10 04:57:26",
+  "author": "宝玉",
+  "siteName": "宝玉(@dotey)",
+  "content": null,
+  "aiSummary": "作者介绍了一套完整的软件开发方法论，从技术方案文档到 UI 原型再到代码实现与测试，并详细分享了最近在 baocut 项目中完善字幕样式功能的具体实践。",
+  "oneSentenceSummary": "作者介绍了一套完整的软件开发方法论，从技术方案文档到 UI 原型再到代码实现与测试，并详细分享了最近在 baocut 项目中完善字幕样式功能的具体实践。",
+  "summary": "本文通过具体实例展示了一套高效的软件开发流程。作者强调在开始编码前，需要先完成详细的技术方案文档和高保真的 UI 原型。这样的前期准备可以有效降低后期的修改成本和风险。在 baocut 项目中，作者成功应用了这一方法，由 AI 辅助完成了从设计到测试的整个流程，显著提高了开发效率。",
+  "mainPoints": [
+    {
+      "point": "从技术方案到 UI 原型再到编码",
+      "explanation": "开发流程应按照以下顺序进行：首先通过分析确定技术方向，然后设计高保真的 UI 原型，最后进行代码实现。这种顺序可以确保项目的方向正确，同时尽量减少不必要的返工。在 baocut 项目中，作者先写了技术文档，然后由 Agent 生成了 UI 原型，再基于这些文档开始了实际的编码工作。"
+    },
+    {
+      "point": "快速反馈与迭代",
+      "explanation": "使用轻量级的原型设计可以快速获取用户的视觉反馈。相比直接修改最终代码，修改原型要高效得多。作者通过与 AI Agent 的快速对话和反馈，能够快速迭代 UI 设计，直到达到满意的效果。"
+    },
+    {
+      "point": "自动化测试与验收",
+      "explanation": "在开发后期，自动化测试是非常重要的。作者利用 AI Agent 帮助运行自动化测试用例，从而确保新的功能（例如字幕样式）不会破坏现有的系统。最后，作者还会进行人工检查，覆盖自动化无法检测到的边缘情况。"
+    }
+  ],
+  "keyQuotes": [
+    "Agent 根据我的要求，做了分析调研后，先写成一份技术方案文档，我仔细看了它的文档，然后再提出一些要求，反复几次就能定稿。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "开源项目",
+    "测试与质量",
+    "个人效率",
+    "推文串"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 969,
+  "domain": "x.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_2c263f",
+  "sourceName": "宝玉(@dotey)",
+  "resourceType": "TWITTER",
+  "language": "zh_CN",
+  "publishTimeStamp": 1791579446000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-10 04:57:26"
+}
