@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-10-12 05:14:01 | [返回首页](/README.md)
+**更新时间**: 2026-10-12 08:51:25 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16926)
+- [AI & 大模型](#ai-llm) (16948)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1027)
-- [DevOps](#devops) (815)
+- [前端与全栈](#frontend-fullstack) (1028)
+- [DevOps](#devops) (817)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7108)
+- [其他](#other) (7119)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [我将-4-款模型的推理档位调至「高」：只解决了一个问题，却为所有消耗买了单](https://dev.to/abeera_lodhi/i-turned-the-reasoning-dial-to-high-on-4-models-it-fixed-one-thing-and-billed-me-for-everything-41o5) - AI 精选
+- [AI-无限，人生有限｜对谈-KK、山音：一线-AI-创作者](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112376&idx=1&sn=313fb7cb6967519072ecf9455fc7a637) - AI 精选
 - [为何-AlphaFold-并未解决蛋白质折叠问题——Pushmeet-Kohli，Google-DeepMind-&amp;-Sal-Candido，Biohub](https://www.latent.space/p/biohub-deepmind) - AI 精选
 - [GPU-集群的有效调度](https://huggingface.co/blog/allenai/impactful-scheduling) - AI 精选
 - [利用-Claude-Science-绘制首张完整的紫外光波段全天星图](https://www.anthropic.com/research/the-missing-map-of-the-sky) - AI 精选
@@ -40,10 +42,8 @@
 - [DeepSeek-Harness-桌面端：现在，开箱即用。](https://mp.weixin.qq.com/s?__biz=MzY4NzM3MTkxOQ==&mid=2247483805&idx=1&sn=b4fbd172f68ae56c5e201b9186b1e8a5) - AI 精选
 - [一个分镜跑-1000-张图：当技术免费，审美成了唯一的硬通货](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522940&idx=2&sn=87b19b0dc3bd770f8afc0d21b44255fc) - AI 精选
 - [Manus-回来了！更新-2.0-并发布全天候智能体-Cue](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651060477&idx=2&sn=ee9eb2ee3287c13bba78bf08f5d42a29) - AI 精选
-- [Claude-Code-的下一个时代——Thariq-Shihipar，Anthropic](https://www.latent.space/p/thariq) - AI 精选
-- [OpenRouter：从种子轮到-Stripe-——-对话-OpenRouter-的-Alex-Atallah-与-AMP-的-Anjney-Midha](https://www.latent.space/p/openrouter) - AI 精选
 
-- [查看全部 16926 篇...](/details/tags/ai-llm.md)
+- [查看全部 16948 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 
-- [查看全部 1027 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1028 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 - [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 815 篇...](/details/tags/devops.md)
+- [查看全部 817 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7108 篇...](/details/tags/other.md)
+- [查看全部 7119 篇...](/details/tags/other.md)
 
 

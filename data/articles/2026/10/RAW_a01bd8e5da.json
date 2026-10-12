@@ -1,0 +1,57 @@
+{
+  "id": "RAW_a01bd8e5da",
+  "title": "AI 室内设计最难的部分从来不是 AI 本身",
+  "url": "https://dev.to/sufya_meher/the-hardest-part-of-ai-interior-design-isnt-the-ai-493j",
+  "date": "2026-10-11 18:50:03",
+  "author": "Sufya Meher",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Ask any image model to \"redesign this living room in Scandinavian style\" and it will give you a beautiful Scandinavian living room.</p>\n  <p>It just won't be your living room.</p>\n  <p>The window moved. The room got longer. That weird load-bearing column your builder left in the middle of the floor is gone. The model didn't redesign your room. It generated a new one that happens to be the same genre of room. It looks incredible and it's completely useless, because you can't buy any of it, you can't show it to a contractor, and you can't act on it.</p>\n  <p>I've spent the last several months building an app around this one problem. Almost nothing written about AI interior design talks about it, so here's what I learned.</p>\n  <h2><a name=\"why-models-do-this\" href=\"#why-models-do-this\"> </a> Why models do this</h2>\n  <p>Image-to-image generation has a dial between \"follow the input\" and \"follow the prompt.\" Turn it toward the input and you get your room back with slightly different cushions. Turn it toward the prompt and you get a gorgeous room that isn't yours.</p>\n  <p>There is no setting in the middle that means \"keep the architecture, change the contents.\" The model has no concept of architecture. It has pixels and a text prompt.</p>\n  <p>So the naive approach, one model and one prompt and a strength slider, fails in both directions, and there's no value you can pick that makes it work. I shipped that version. People tried it once and never came back, which is the correct response.</p>\n  <h2><a name=\"what-actually-worked-tell-the-model-what-its-not-allowed-to-touch\" href=\"#what-actually-worked-tell-the-model-what-its-not-allowed-to-touch\"> </a> What actually worked: tell the model what it's not allowed to touch</h2>\n  <p>The fix wasn't a better model. It was being specific about what must not change, on every single request, without the user asking.</p>\n  <p>A redesign request in our system now carries a set of locks that get assembled into the prompt regardless of what the user typed. Roughly: one lock holds the architecture still, one says what kind of space this is, and one says what the room is for.</p>\n  <p>The rule underneath it: everything in the photo is locked unless the user explicitly names it. If someone says \"change the sofa,\" the sofa is unlocked and nothing else is. If they say nothing, nothing structural is unlocked. Default-deny, the same way you'd write a firewall.</p>\n  <p>This sounds obvious written down. It took me a long time to get here, because the instinct is to give the model freedom and hope it uses it well. It doesn't. Freedom is how you lose the window.</p>\n  <h2><a name=\"the-sceneclass-mistake-i-made\" href=\"#the-sceneclass-mistake-i-made\"> </a> The scene-class mistake I made</h2>\n  <p>My first version of this had three scene classes: interior, outdoor, and exterior. Gardens and balconies shared the \"outdoor\" bucket.</p>\n  <p>Gardens started coming back with railings.</p>\n  <p>The balcony lock said \"preserve the railing and the building edge,\" because balconies have those. Gardens don't. But they shared a class, so the garden prompt inherited \"preserve the railing,\" and the model, being obedient, invented a railing to preserve.</p>\n  <p>The fix was splitting them up so that each kind of space only ever names the things that space actually has</p>\n  <p>I think that lesson applies well beyond interiors. A shared abstraction that mentions features some members don't have will cause the model to hallucinate those features into existence. The model reads your prompt as a description of reality. If your prompt describes a railing, there's a railing now.</p>\n  <h2><a name=\"validating-the-output\" href=\"#validating-the-output\"> </a> Validating the output</h2>\n  <p>Locks reduce drift. They don't eliminate it. So there's a check after generation that compares the result against the original on the things that were supposed to be locked, and retries when the room has clearly moved.</p>\n  <p>The constraint that matters here is time. Nobody waits three minutes to see a sofa. So the retries run against a hard clock, and if validation hasn't passed by the time it runs out you get the best attempt rather than an error. Users forgive an imperfect result far more readily than they forgive waiting.</p>\n  <p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3vl4ypp0o8riux9ztlht.PNG\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F3vl4ypp0o8riux9ztlht.PNG\" alt=\" \" loading=\"lazy\"></a>\n   <br>\n   <a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffb2glhag8jom8roh3k6o.JPG\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffb2glhag8jom8roh3k6o.JPG\" alt=\" \" loading=\"lazy\"></a></p>\n  <h2><a name=\"what-id-tell-someone-starting-this\" href=\"#what-id-tell-someone-starting-this\"> </a> What I'd tell someone starting this</h2>\n  <ol>\n   <li>Your differentiator is the constraint, not the generation. Anyone can call an image model. The product is in what you refuse to let it change.</li>\n   <li>Default to locked. Make the user name what they want changed. The failure mode of too-locked is \"nothing happened,\" which is confusing. The failure mode of too-free is \"this isn't my house,\" which is worthless.</li>\n   <li>Never let an abstraction describe features its members don't have. See: the phantom railing.</li>\n   <li>Budget the wall-clock time before you budget the quality. A perfect result that takes four minutes loses to a good one in twenty seconds.</li>\n  </ol>\n  <p>If you want to see where this ended up, the tool is free to try without an account at <a href=\"https://decorin.ai\" target=\"_blank\" rel=\"noopener noreferrer\">decorin.ai</a>. Upload a photo of a real room, not a staged one, and check whether the window stayed where you left it. That's the actual test.</p>\n  <p>If anything here doesn't add up, or you've hit the same problem and solved it differently, tell me in the comments. I'm still working on this and I'd rather hear where I'm wrong than not hear it. Happy to answer questions about any part of it</p>\n </body>\n</html>",
+  "aiSummary": "图生图 AI 模型在室内设计中往往会擅自改动建筑结构约束，只有引入「默认拒绝」的锁定架构、细粒度的场景抽象以及带时间预算的验证机制，才能生成真正实用的效果。",
+  "oneSentenceSummary": "图生图 AI 模型在室内设计中往往会擅自改动建筑结构约束，只有引入「默认拒绝」的锁定架构、细粒度的场景抽象以及带时间预算的验证机制，才能生成真正实用的效果。",
+  "summary": "打造实用的 AI 室内设计工具面临的核心障碍，在于图像模型无法区分建筑实体结构与可移动软装装饰——简单的提示词加重绘幅度调节，往往要么毫无变化，要么彻底颠覆房间布局。作者分享了开发 decorin.ai 的实际生产经验：引入类似防火墙的「默认拒绝」锁定机制，除非用户明确要求修改，否则一律锁定建筑要素；避免采用宽泛粗糙的场景分类，以防模型臆造出幻觉结构（如凭空出现栏杆）；同时引入带有硬性物理超时限制的自动化验证机制，在输出一致性与用户对延迟的容忍度之间取得平衡。",
+  "mainPoints": [
+    {
+      "point": "缺乏明确负向约束时，图生图模型根本不具备建筑结构意识",
+      "explanation": "标准的重绘强度滑块会迫使用户在「保留未改动的输入像素」与「生成完全脱离现实的新空间」之间做权衡；模型在本质上只会将图像视为像素集合，而非具有物理规律的真实空间结构。"
+    },
+    {
+      "point": "采用「默认拒绝」锁定机制，防止发生非预期的结构形变",
+      "explanation": "通过在提示词组装阶段明确锁定建筑架构、空间类型和房间用途，系统能够保留现有空间布局，仅允许对用户明确指定的元素进行更改。"
+    },
+    {
+      "point": "过于宽泛的场景抽象会导致模型产生结构性幻觉",
+      "explanation": "将差异极大的环境归为一类（例如把花园和阳台统一归入「户外」分类），会导致模型在花园中臆造出栏杆，因为继承的提示词指令要求保留栏杆结构。"
+    },
+    {
+      "point": "验证重试必须受到严格的物理时间预算约束",
+      "explanation": "输出校验机制虽然可以捕获形变偏差，但相比于绝对的完美，用户更在意响应速度，因此系统必须在时间预算耗尽时返回当前最优的生成结果。"
+    }
+  ],
+  "keyQuotes": [
+    "模型并没有重新设计你的房间。它只是碰巧生成了一个属于同一类型的新房间而已。",
+    "根本不存在一个中间档位能够表达「保留建筑结构，仅更换软装内容」。模型对建筑根本没有任何概念。",
+    "你的核心壁垒在于约束能力，而不是生成能力。任何人都可以调用图像模型，产品的真正价值在于你坚决不允许它更改哪些内容。",
+    "如果一个通用的抽象定义中提到了某些成员并不具备的特征，模型就会通过幻觉凭空捏造出这些特征。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "图像生成",
+    "产品管理",
+    "AI 产品与应用",
+    "提示工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 84,
+  "wordCount": 842,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791715803000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-11 18:50:03"
+}

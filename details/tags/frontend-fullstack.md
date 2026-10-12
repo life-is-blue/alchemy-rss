@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-12 05:14:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-12 08:51:25 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +408,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -792,6 +792,14 @@
 
 
 
+### [如何在-Next.js-网站中添加结构化数据（JSON-LD）并进行验证](https://www.freecodecamp.org/news/nextjs-json-ld-structured-data/)
+
+2026-10-11 17:31:06 | 标签: 编程与工程, 开发者工具, 前端与 Web, 安全, Next.js
+
+> 本教程深入讲解了结构化数据与 JSON-LD 的核心概念，阐明了搜索引擎的真实期望，并破除了关于 AI 搜索和排名保障的常见 SEO 误区。文章重点探讨了 Next.js 中的关键实现细节，论证了为何应放弃标准的「next/script」标签而改用服务端渲染的脚本数据块，以及为何必须进行 HTML 转义（特别是将「<」替换为「\u003c」）以防止 XSS 漏洞和解析器崩溃。此外，指南还演示了如何利用 schema-dts 和 Schema.org 知识图谱对全站级的 Organization 与 WebSite 元数据进行建模。
+
+
+
 ### [Vue-3-Composition-API：Watcher-生命周期与内存泄漏防范](https://www.sitepoint.com/vue-3-composition-api-watcher-lifecycle/)
 
 2026-10-09 23:50:21
@@ -834,7 +842,7 @@
 
 
 
-### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
 
 2026-10-07 23:00:07
 
@@ -846,7 +854,7 @@
 
 
 
-### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
 
 2026-10-07 23:00:07
 
@@ -1104,7 +1112,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1116,7 +1124,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2394,13 +2402,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2550,13 +2558,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -4050,13 +4058,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5760,13 +5768,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

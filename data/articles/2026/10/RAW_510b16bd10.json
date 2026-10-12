@@ -1,0 +1,57 @@
+{
+  "id": "RAW_510b16bd10",
+  "title": "AI 能否识别证据何时不足？",
+  "url": "https://dev.to/enas_amin_119f66e34fd09bc/can-ai-tell-when-evidence-is-not-enough-489j",
+  "date": "2026-10-11 19:20:18",
+  "author": "Enas Amin",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <h1><a name=\"what-i-benchmarked\" href=\"#what-i-benchmarked\"> </a> What I Benchmarked</h1>\n  <p>Can a language model distinguish between an answer supported by available evidence and one that requires an unsupported assumption?</p>\n  <p>This is the central question behind <strong>Evidence Sufficiency Evaluation</strong>, a benchmark I built to investigate how models respond when evidence is incomplete, changes in a relevant way, contains unresolved conflicts, or appears misleadingly relevant.</p>\n  <p>The motivation is simple: producing a plausible answer is not the same as producing a justified answer. A model should respond to the evidence it receives rather than confidently filling gaps with assumptions.</p>\n  <p>My benchmark contains 72 test cases designed to examine this behavior through controlled minimal pairs and adversarial controls.</p>\n  <p><strong>Explore the benchmark:</strong>\n   <br>\n   <br>\n   <a href=\"https://www.kaggle.com/benchmarks/enasamin99/evidence-sufficiency-evaluation\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.kaggle.com/benchmarks/enasamin99/evidence-sufficiency-evaluation</a></p>\n  <h1><a name=\"how-i-benchmarked\" href=\"#how-i-benchmarked\"> </a> How I Benchmarked</h1>\n  <p>The evaluation contains two complementary groups of test cases.</p>\n  <h2><a name=\"1-minimal-pairs-60-cases\" href=\"#1-minimal-pairs-60-cases\"> </a> 1. Minimal Pairs: 60 Cases</h2>\n  <p>The benchmark includes 30 minimal pairs across six categories.</p>\n  <p>Within each pair, the question remains fixed while a relevant fact changes. This design tests whether a model responds appropriately to the change in evidence rather than relying on superficial patterns or producing the same answer regardless of the information provided.</p>\n  <p>The key question is not simply whether an individual answer is correct. It is whether the model's answer tracks the relevant evidence.</p>\n  <h2><a name=\"2-adversarial-controls-12-cases\" href=\"#2-adversarial-controls-12-cases\"> </a> 2. Adversarial Controls: 12 Cases</h2>\n  <p>The remaining 12 cases cover three challenging situations:</p>\n  <ul>\n   <li><strong>Unresolved conflicts:</strong> the available evidence does not settle a contradiction.</li>\n   <li><strong>Unsupported presuppositions:</strong> a question assumes something that has not been established.</li>\n   <li><strong>Near-match distractors:</strong> information looks relevant but does not adequately support the requested conclusion.</li>\n  </ul>\n  <p>These cases examine whether a model recognizes the limits of the available information instead of accepting a plausible but unsupported conclusion.</p>\n  <h2><a name=\"scoring-method\" href=\"#scoring-method\"> </a> Scoring Method</h2>\n  <p>The benchmark uses expected labels, strict label parsing, and case-level correctness. The score reflects the proportion of test cases for which the model produces the expected label.</p>\n  <p>This approach makes the results straightforward to compare, but it has a limitation: a model may fail because it does not follow the required response format, even if its reasoning is defensible. Conversely, a correct label does not prove that the model arrived at it through sound reasoning.</p>\n  <p>For that reason, I interpret the score as performance on this particular evaluation protocol rather than a complete measure of reasoning ability.</p>\n  <h1><a name=\"models-tested\" href=\"#models-tested\"> </a> Models Tested</h1>\n  <p>My model evaluations included:</p>\n  <ul>\n   <li>Gemini 2.5 Flash</li>\n   <li>Claude Haiku 5.5</li>\n   <li>Gemini 3.7 Flash</li>\n  </ul>\n  <p>The public benchmark view currently displays a result for Gemini 3.7 Flash. The other model results are not currently visible alongside it in that view, so I do not present an unverified ranking or claim that one model outperformed all the others.</p>\n  <p>A fair comparison requires completed, accessible evaluations under comparable conditions.</p>\n  <h1><a name=\"findings\" href=\"#findings\"> </a> Findings</h1>\n  <p>The current public leaderboard displays a score of <strong>1.00 for Gemini 3.7 Flash</strong>.</p>\n  <p>This is an encouraging result on the displayed evaluation set. However, a perfect score on 72 fixed cases does not establish that a model will perform perfectly on unseen examples, nor does it prove that the model is generally superior to other models.</p>\n  <p>The most important contribution of this experiment is the evaluation design itself: it makes evidence sensitivity an explicit target rather than assuming that ordinary question-answering accuracy captures it.</p>\n  <p>The minimal pairs provide a controlled way to examine responses to relevant changes in evidence. The adversarial controls examine situations in which the model may need to reject an unsupported premise or recognize unresolved information.</p>\n  <p>The next step is to analyze individual cases and compare completed model evaluations to determine which categories produce the most errors and whether those errors follow systematic patterns.</p>\n  <h1><a name=\"what-i-learned\" href=\"#what-i-learned\"> </a> What I Learned</h1>\n  <p>This project reinforced three lessons about evaluating language models.</p>\n  <p><strong>First, accuracy is not the whole story.</strong> A model may produce the expected answer on a particular case without demonstrating robust evidence-sensitive reasoning.</p>\n  <p><strong>Second, controlled examples are useful.</strong> Minimal pairs help isolate the effect of a relevant fact, making it easier to investigate whether the model's answer responds to the information that matters.</p>\n  <p><strong>Third, evaluation claims must match the available evidence.</strong> A visible score can support a statement about that particular result, but broader claims require more comparisons, repeated testing, and analysis of errors.</p>\n  <p>These lessons motivate further work on evaluation sets that measure not only whether a model answers correctly, but also whether its answers are justified by the information available to it.</p>\n  <h1><a name=\"limitations-and-future-work\" href=\"#limitations-and-future-work\"> </a> Limitations and Future Work</h1>\n  <p>This benchmark is a finite test set, not a comprehensive measure of intelligence or reasoning.</p>\n  <p>Its results may depend on prompt wording, model versions, inference settings, and label-parsing rules. Aggregate scores can also hide differences between categories and individual failure patterns.</p>\n  <p>Future work should focus on:</p>\n  <ul>\n   <li>Reporting separate scores for minimal pairs and adversarial controls.</li>\n   <li>Examining individual errors and disagreements.</li>\n   <li>Repeating evaluations to assess stability.</li>\n   <li>Expanding the benchmark with new cases that reduce the risk of overfitting to familiar patterns.</li>\n   <li>Comparing accuracy, latency, and inference cost using verified measurements.</li>\n  </ul>\n  <p>These improvements would help establish whether high performance generalizes beyond the current test cases.</p>\n  <h1><a name=\"my-benchmark\" href=\"#my-benchmark\"> </a> My Benchmark</h1>\n  <p><strong>Evidence Sufficiency Evaluation</strong> is available here:</p>\n  <p><a href=\"https://www.kaggle.com/benchmarks/enasamin99/evidence-sufficiency-evaluation\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.kaggle.com/benchmarks/enasamin99/evidence-sufficiency-evaluation</a></p>\n  <p>The benchmark is intended to support transparent experimentation on whether model responses track the evidence provided, especially when a relevant fact changes or the available information does not justify a confident conclusion.</p>\n  <p>I welcome independent evaluations, additional models, and feedback on how to improve the test design.</p>\n  <h1><a name=\"kagglechallenge-devchallenge\" href=\"#kagglechallenge-devchallenge\"> </a> kagglechallenge #devchallenge</h1>\n </body>\n</html>",
+  "aiSummary": "作者推出了「证据充分性评估」基准，通过 72 个受控测试用例来评估语言模型是基于现有证据进行推断，还是依赖无依据的假设。",
+  "oneSentenceSummary": "作者推出了「证据充分性评估」基准，通过 72 个受控测试用例来评估语言模型是基于现有证据进行推断，还是依赖无依据的假设。",
+  "summary": "本文介绍了「证据充分性评估」（Evidence Sufficiency Evaluation）基准，旨在评估大语言模型能否区分有证据支持的答案与无依据的假设。该基准构建于 Kaggle 之上，包含 72 个测试用例，分为 30 组最小对比对（涵盖六个类别的 60 个用例，用于测试证据敏感度）和 12 个对抗性对照用例（涵盖未解决的冲突、无依据的预设以及近似干扰项）。尽管 Gemini 3.7 Flash 在公开排行榜上获得了满分，但作者审慎地强调，72 个固定用例并不能证明其具备普遍的推理优势，并指出了数据集规模、严格标签解析等局限性，以及开展更广泛多模型对比的必要性。",
+  "mainPoints": [
+    {
+      "point": "「看似合理」的答案不等于「有据可查」的答案",
+      "explanation": "标准的问答准确率无法体现模型究竟是真正基于证据作答，还是通过虚构看似合理的假设来填补信息空白。"
+    },
+    {
+      "point": "通过受控最小对比对测试证据追踪能力",
+      "explanation": "基准通过在 30 组对比对中保持问题不变、仅改变关键事实前提，来评估模型的回答是否能动态追踪事实变化，而非依赖表面模式。"
+    },
+    {
+      "point": "对抗性对照用例探测认知边界",
+      "explanation": "12 个对抗性用例测试了模型应对未决矛盾、未经证实的预设以及干扰性近似匹配时的鲁棒性，以确保模型在证据不足时克制置信度。"
+    },
+    {
+      "point": "基准测试获满分并不意味着推理问题已被解决",
+      "explanation": "Gemini 3.7 Flash 虽然取得了 1.00 的满分，但作者提醒，72 个用例的评估可能会掩盖特定类别的细微差异及格式解析带来的偶然影响，仍需扩充测试并深入进行失效分析。"
+    }
+  ],
+  "keyQuotes": [
+    "语言模型能否区分有现有证据支持的答案与需要无依据假设的答案？",
+    "其初衷很简单：给出一个看似合理的答案，并不等同于给出一个有充分依据的答案。",
+    "关键问题不仅在于单个答案是否正确，而在于模型的回答是否追踪了相关证据。",
+    "然而，在 72 个固定用例上取得满分，并不能证明该模型在未见过的示例上也能表现完美，也无法证明它在总体上优于其他模型。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 安全与对齐",
+    "事实核查",
+    "机器学习",
+    "测试与质量"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 78,
+  "wordCount": 873,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791717618000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-11 19:20:18"
+}

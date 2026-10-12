@@ -1,0 +1,52 @@
+{
+  "id": "RAW_d79ca03252",
+  "title": "LLM 能看懂欺诈网络吗？测试 Gemma 4 31B 的实测表现",
+  "url": "https://dev.to/chef_p/can-an-llm-read-a-fraud-network-testing-gemma-4-31b-lbf",
+  "date": "2026-10-11 19:42:02",
+  "author": "Olumide Oladosu",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>This is a submission for the <a href=\"https://dev.to/challenges/kaggle-2026-09-23\">Kaggle Benchmarking Challenge</a>.</em></p>\n  <h2><a name=\"what-i-benchmarked\" href=\"#what-i-benchmarked\"> </a> What I Benchmarked</h2>\n  <p>Can a language model use the relationships around a transaction to help identify fraud?</p>\n  <p>I built a benchmark using transaction data from the IEEE-CIS Fraud Detection dataset. Each example presents a target transaction alongside a small text representation of its local network neighborhood. The neighboring transactions are connected through shared attributes such as card, address, or device information. The model does not receive the ground-truth labels in its prompt.</p>\n  <p>The benchmark measures two behaviors: classifying the target transaction as fraudulent or legitimate, and identifying a potentially suspicious neighboring transaction. I was interested in whether a general-purpose language model could make useful predictions from graph context after that context had been translated into text.</p>\n  <h2><a name=\"models-tested\" href=\"#models-tested\"> </a> Models Tested</h2>\n  <p>I ran <strong>Gemma 4 31B (<code>google/gemma-4-31b</code>)</strong> on 100 samples, with both tasks evaluated for each sample. I chose it as the benchmark’s target language model to test whether a large general-purpose model could interpret transaction relationships from the text prompt.</p>\n  <p>I also compared its classification results with the project’s GraphSAGE graph-neural-network baseline. This was a single-model evaluation, not a broad ranking across language models.</p>\n  <h2><a name=\"findings\" href=\"#findings\"> </a> Findings</h2>\n  <p>The run completed with <strong>200 non-empty responses</strong>: 100 for transaction classification and 100 for suspicious-neighbor identification. A controlled probe returned text with no token override but an empty response when the 128-token cap was nested under <code>extra_body</code>. The completed run sent the cap as a top-level <code>max_tokens</code> parameter and produced all 200 responses.</p>\n  <p>Gemma achieved <strong>55% classification accuracy</strong> and <strong>53% accuracy on the fraud-neighbor proxy</strong>. The 100 classification labels were evenly split—50 fraudulent and 50 legitimate—so the majority-class baseline was 50%. At 55 correct out of 100, this result does not establish performance above that reference. No baseline comparison is claimed for the fraud-neighbor proxy.</p>\n  <p>On classification, the GraphSAGE baseline was correct on 67 of the 100 samples. Both systems were correct on 44; Gemma was correct when GraphSAGE was wrong on 11; and GraphSAGE was correct when Gemma was wrong on 23. Both missed 22. In this sample, the graph-based baseline outperformed Gemma.</p>\n  <p>The neighbor score needs careful interpretation. IEEE-CIS does not provide verified fraud-ring membership or ring-leader labels, so I scored the selected neighbor using its transaction fraud label. That makes 53% a <strong>fraud-neighbor proxy score</strong>, not evidence that the model can identify actual fraud rings or their leaders.</p>\n  <p>The main takeaway is that providing a local transaction neighborhood as text did not, by itself, produce strong results from this model on this sample. I would next test more models, increase the sample size, and run prompt ablations to measure how much the neighborhood details affect predictions.</p>\n  <h2><a name=\"my-benchmark\" href=\"#my-benchmark\"> </a> My Benchmark</h2>\n  <p><a href=\"https://www.kaggle.com/code/yourfavchefp/new-benchmark-task-ef757?scriptVersionId=357286757\" target=\"_blank\" rel=\"noopener noreferrer\">Kaggle benchmark notebook</a></p>\n </body>\n</html>",
+  "aiSummary": "一项小规模基准测试评估了 Gemma 4 31B 利用文本化图邻域进行欺诈检测的能力，结果发现其准确率仅为 55%，勉强高于随机概率，且明显落后于 GraphSAGE 基线模型。",
+  "oneSentenceSummary": "一项小规模基准测试评估了 Gemma 4 31B 利用文本化图邻域进行欺诈检测的能力，结果发现其准确率仅为 55%，勉强高于随机概率，且明显落后于 GraphSAGE 基线模型。",
+  "summary": "本文介绍了一项 Kaggle 基准测试挑战赛的参赛方案，旨在测试将局部图上下文（共享卡号、设备、地址）序列化为文本提示词后，Gemma 4 31B 是否能够检测交易欺诈。在 IEEE-CIS 欺诈检测数据集中抽取的 100 个平衡样本上进行评估后，Gemma 在交易分类任务中仅取得了 55% 的准确率（勉强高于 50% 的多数类基线），在可疑邻居代理任务中的准确率也仅为 53%。相比之下，作为基准的 GraphSAGE 图神经网络取得了 67% 的准确率，这表明仅将图关系结构序列化为原始文本提示词，并不足以让通用 LLM 媲美专用的图架构模型。",
+  "mainPoints": [
+    {
+      "point": "Gemma 4 31B 在文本化欺诈图上的表现接近随机猜测",
+      "explanation": "在包含 50 笔欺诈和 50 笔正常交易的 100 个平衡样本测试中，Gemma 的准确率仅为 55%，未能展现出明显优于 50% 随机概率基线的有效性能。"
+    },
+    {
+      "point": "专用图神经网络的表现显著优于 LLM 方案",
+      "explanation": "在相同的样本集上，GraphSAGE 基线模型的准确率达到了 67%，在 Gemma 判断失误的样本中成功正确分类了 23 个，而 Gemma 仅在 11 个样本上胜过 GraphSAGE。"
+    },
+    {
+      "point": "仅靠将局部网络上下文序列化为文本是远远不够的",
+      "explanation": "在没有进一步提示词工程或微调的情况下，将图邻域属性转化为文本提示词并不能让通用 LLM 轻松具备对关系结构进行有效推理的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "Gemma 取得了 55% 的分类准确率，在欺诈邻居代理任务中的准确率为 53%。",
+    "在 100 个样本中仅答对 55 个，这一结果无法证明其性能优于该基准参考值。",
+    "核心结论在于，对于该模型和这组样本而言，仅以文本形式提供局部交易邻域信息，本身并不能带来强大的检测效果。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "机器学习",
+    "大语言模型 (LLM)",
+    "Kaggle",
+    "AI 评测与基准"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 75,
+  "wordCount": 446,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791718922000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-11 19:42:02"
+}

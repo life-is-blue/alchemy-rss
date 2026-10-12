@@ -1,0 +1,47 @@
+{
+  "id": "RAW_246641a77b",
+  "title": "《矮人要塞》如今也用上了版本控制",
+  "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
+  "date": "2026-10-11 08:52:37",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th October 2026</p>\n   <div class=\"note\">\n    <p>I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control <em>more</em>. That's art.</p>\n    <p>I went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time:</p>\n    <ul>\n     <li>March 2013:&nbsp;<a href=\"https://www.reddit.com/r/IAmA/comments/1avszc/comment/c919fo8/?solution=43270267461a564b43270267461a564b&amp;js_challenge=1&amp;jsc_token=2824be10929bdc604753c70a67a1c3310860c2cae0f946ff767fab3727807a35&amp;jsc_orig_r=\">\"I don't use version control -- I didn't like the feeling of having the code get committed into a black box thingy with no immediate upside\"</a></li>\n     <li>March 2016:&nbsp;<a href=\"https://www.pcgamer.com/dwarf-fortress-creator-on-how-hes-42-towards-simulating-existence/3/\">\"I don’t even use version control. If you don’t know what that is then you’re not gonna yell at me. If you even know what version control is you’re gonna be like, ‘You don’t use version control? You don’t use source control? What is wrong with you? How can you even work? I’m just not cut out for it, in a sense. It’s been 15 years, so the reasons have change over time, but that’s my current understanding of it.\"</a>&nbsp;</li>\n     <li>March 2023:&nbsp;<a href=\"https://www.gamedeveloper.com/programming/how-tarn-adams-upgraded-and-optimized-dwarf-fortress-for-its-official-steam-release\">\"I've got Discord channels to check and version control stuff to use now, so the process is definitely a little more involved\"</a></li>\n    </ul>\n    <p>That March 2023 quote comes from an interview about the release on Steam which <a href=\"https://www.pcgamer.com/after-spending-20-years-simulating-reality-the-dwarf-fortress-devs-have-to-get-used-to-a-new-one-being-millionaires/\">made them millionaires</a>. I'm a tiny bit sad that they gave in before they hit that milestone, but what an impressive run.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/661/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 感慨《矮人要塞》一个时代的落幕，指出这款以极度复杂闻名的游戏在主创多年抵制后，终于引入了版本控制。",
+  "oneSentenceSummary": "Simon Willison 感慨《矮人要塞》一个时代的落幕，指出这款以极度复杂闻名的游戏在主创多年抵制后，终于引入了版本控制。",
+  "summary": "这篇短文探讨了以极致复杂性著称的游戏《矮人要塞》在开发流程上的演变。Simon Willison 指出，这款游戏过去从未采用版本控制，算得上一件开发史上的奇闻；他引用了主创 Tarn Adams 在 2013 年和 2016 年的言论，当时 Adams 曾表示自己反感将代码提交进「黑盒」的感觉。然而，2023 年的一次采访透露该团队现已转向使用版本控制，这一转变恰好与该作正式登陆 Steam 及其随后取得的商业成功相契合。",
+  "mainPoints": [
+    {
+      "point": "《矮人要塞》长期不用版本控制是软件工程界的一个传奇异数",
+      "explanation": "考虑到该游戏惊人的复杂程度，其在没有版本控制的情况下持续开发了 15 年以上，在 Willison 看来堪称一种「行为艺术」，更是对主流工程规范的公然违背。"
+    },
+    {
+      "point": "引入版本控制的转变与商业化进程高度契合",
+      "explanation": "这一转变发生在 2023 年 Steam 版本上线前后，表明正式发售的规模以及项目随之而来的专业化需求，促使其必须建立更有条理的工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "我不用版本控制——我不喜欢把代码提交到一个黑盒子里、却看不到任何立竿见影好处的感觉",
+    "他们没能撑到那个里程碑就妥协了，我略感遗憾，但这段历程已经足够令人叹为观止了。"
+  ],
+  "tags": [
+    "编程与工程",
+    "游戏开发",
+    "电子游戏",
+    "版本控制",
+    "矮人要塞"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 237,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791679957000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-11 08:52:37"
+}
