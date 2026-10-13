@@ -1,0 +1,52 @@
+{
+  "id": "RAW_188aec45e4",
+  "title": "两名工程师、两个月、4 万行 Rust：DynamoDB 太贵又慢，Perplexity 决定自己造",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651294816&idx=3&sn=42abf6a6598c9832ffd78ba2346e6cca",
+  "date": "2026-10-12 13:21:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": null,
+  "aiSummary": "Perplexity 为解决 DynamoDB 在高并发查询下的延迟与成本瓶颈，用 Rust 自研了分布式键值存储 CobbleDB，实现了延迟降低 5 倍且成本下降 20%。",
+  "oneSentenceSummary": "Perplexity 为解决 DynamoDB 在高并发查询下的延迟与成本瓶颈，用 Rust 自研了分布式键值存储 CobbleDB，实现了延迟降低 5 倍且成本下降 20%。",
+  "summary": "Perplexity 将核心搜索服务层从 Amazon DynamoDB 迁移至自研的 CobbleDB。针对 AI 答案引擎特的大载荷（平均 50KB）和高频检索模式，DynamoDB 的流量计费和黑盒机制导致了问题。Perplexity 将架构拆解为 Pillar（持久状态）、Lorry（批量聚合）和 CobbleDB（低延迟服务）三个系统。CobbleDB 结合 RocksDB 与 NVMe 缓存，并通过推测性对冲和批量读取极大优化了查询性能。",
+  "mainPoints": [
+    {
+      "point": "DynamoDB 在 AI 检索场景下的局限性",
+      "explanation": "AI 检索需要提取完整段落（50KB）而非短片段，DynamoDB 的字节计费和不可控的缓存导致成本高昂且尾延迟不可控。"
+    },
+    {
+      "point": "三层分离的存储架构设计",
+      "explanation": "通过 Pillar 管理元数据版本化，Lorry 负责 S3 批量文件生成，CobbleDB 专门负责热数据查询，实现了写入密集管线与读取服务的完全解耦。"
+    },
+    {
+      "point": "CobbleDB 的性能优化策略",
+      "explanation": "使用 RocksDB 作为引擎，利用本地 NVMe 缓存，并在查询路由器层实现推测性对冲读取，减少网络往返开销。"
+    }
+  ],
+  "keyQuotes": [
+    "通过将持久化文档存储与热数据层检索解耦，工程团队将批量读取延迟降低了五倍，同时使整体存储费用至少下降了 20%。",
+    "DynamoDB 如同一个黑盒，内部的分区位置、内存缓存策略和副本路由均不可见。",
+    "CobbleDB 是一个专门针对批量查找进行优化的分布式键值存储。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "AI基础设施",
+    "后端开发",
+    "编程语言"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 86,
+  "wordCount": 1702,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1791782460000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-12 13:21:00"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "RAW_50c13812a4",
+  "title": "5 个 GitHub 上开源的稀奇怪小玩意，这一届网友真天才",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247537707&idx=1&sn=1331f4af944d2e655349efed37bab588",
+  "date": "2026-10-12 12:42:00",
+  "author": " 逛逛GitHub",
+  "siteName": "逛逛GitHub",
+  "content": null,
+  "aiSummary": "本文介绍了 5 个极具创意的 macOS 开源工具，涵盖了桌面整理、截图管理、怀旧游戏、桌面养鱼及窗口美化等功能。",
+  "oneSentenceSummary": "本文介绍了 5 个极具创意的 macOS 开源工具，涵盖了桌面整理、截图管理、怀旧游戏、桌面养鱼及窗口美化等功能。",
+  "summary": "文章盘点了五个极具创意且实用的 GitHub 开项目：Desktop Cleaning 通过物理“地毯”视觉遮盖混乱桌面；Tendedero 将截图挂在虚拟晾绳上方便管理；Desktop Games Nostalgia 复刻了经典的桌面破坏小游戏；Deskworlds 在桌面打造虚拟水族箱；Window Sweaters 则为 macOS 窗口添加个性化的毛衣边框。这些工具在提升桌面个性的同时也极具趣味性。",
+  "mainPoints": [
+    {
+      "point": "桌面视觉化整理工具",
+      "explanation": "Desktop Cleaning 模拟地毯效果，允许用户通过拖动地毯遮盖杂乱图标，在不移动文件的情况下实现视觉整洁。"
+    },
+    {
+      "point": "截图工作流优化",
+      "explanation": "Tendedero 提供了一个类似晾衣架的交互界面，让截图悬挂在屏幕顶部，支持快速拖拽分享、标注或删除。"
+    },
+    {
+      "point": "怀旧互动体验复刻",
+      "explanation": "Desktop Games Nostalgia 将 2000 年代的经典破坏游戏移植至 macOS 和浏览器，让用户在虚拟屏幕上进行解压性操作。"
+    },
+    {
+      "point": "动态桌面装饰",
+      "explanation": "Deskworlds 在桌面层创建一个动态水族箱，鱼类会随鼠标操作产生互动，增加了桌面趣味性。"
+    },
+    {
+      "point": "窗口 UI 个性化",
+      "explanation": "Window Sweaters 为不同应用窗口定制专属毛线边框，支持根据应用图标自动提取色彩，提升视觉美感。"
+    }
+  ],
+  "keyQuotes": [
+    "文件一个没少，但桌面也是没整理一点儿。",
+    "现实里往地毯下面扫灰的办法，终于用到了电脑上。",
+    "熟悉的桌面配上锤子和电锯，怀旧感一下就来了。",
+    "给 Mac 织上一圈毛线边框。"
+  ],
+  "tags": [
+    "编程与工程",
+    "开源项目",
+    "个人效率",
+    "创意文化",
+    "清单 / 资源合集"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 82,
+  "wordCount": 1591,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_2008d7",
+  "sourceName": "逛逛GitHub",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1791780120000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-12 12:42:00"
+}

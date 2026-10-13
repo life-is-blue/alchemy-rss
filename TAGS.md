@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-10-13 03:32:07 | [返回首页](/README.md)
+**更新时间**: 2026-10-13 09:45:39 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16948)
+- [AI & 大模型](#ai-llm) (16970)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1028)
-- [DevOps](#devops) (817)
+- [DevOps](#devops) (818)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7119)
+- [其他](#other) (7124)
 
 
 ---
@@ -43,7 +43,7 @@
 - [一个分镜跑-1000-张图：当技术免费，审美成了唯一的硬通货](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522940&idx=2&sn=87b19b0dc3bd770f8afc0d21b44255fc) - AI 精选
 - [Manus-回来了！更新-2.0-并发布全天候智能体-Cue](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651060477&idx=2&sn=ee9eb2ee3287c13bba78bf08f5d42a29) - AI 精选
 
-- [查看全部 16948 篇...](/details/tags/ai-llm.md)
+- [查看全部 16970 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -112,6 +112,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [使用-Transformers-在导出前对日志进行过滤、重塑和脱敏](https://blog.cloudflare.com/transformers-on-logpush/) - 编程 精选
 - [当事故拒绝结束](https://www.infoq.com/presentations/stream-incidents/) - 编程 精选
 - [您的-Worker-现在可以拥有前置缓存](https://blog.cloudflare.com/workers-cache/) - 编程 精选
 - [我们如何为-Cloudflare-Workflows-构建-Saga-回滚](https://blog.cloudflare.com/rollbacks-for-workflows/) - 编程 精选
@@ -128,9 +129,8 @@
 - [Cloudflare-2025-年-11-月-18-日全球服务中断事件](https://blog.cloudflare.com/18-november-2025-outage/) - 编程 精选
 - [Docker-构建详解：上下文、架构与性能优化](https://www.freecodecamp.org/news/docker-build-tutorial-learn-contexts-architecture-and-performance-optimization-techniques/) - 编程 精选
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
-- [R2-SQL：一种新型分布式查询引擎深度解析](https://blog.cloudflare.com/r2-sql-deep-dive/) - 编程 精选
 
-- [查看全部 817 篇...](/details/tags/devops.md)
+- [查看全部 818 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7119 篇...](/details/tags/other.md)
+- [查看全部 7124 篇...](/details/tags/other.md)
 
 
