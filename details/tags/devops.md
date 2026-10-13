@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-13 09:45:39 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-13 16:42:50 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,9 +26,7 @@
 
 ### [使用-Transformers-在导出前对日志进行过滤、重塑和脱敏](https://blog.cloudflare.com/transformers-on-logpush/)
 
-2026-10-12 22:46:11 | 标签: 可观测性, 日志, 数据工程, Apache DataFusion, Cloudflare
-
-> Rob Taylor 与 Sahidya Devadoss 介绍了在生日周正式可用的 Logpush Transformers：用户为某个 Logpush 数据集写一条 SQL 查询，Logpush 在每批数据导出前执行它，WHERE 过滤记录，SELECT 决定输出字段，可增删改名、嵌套字段并对 IP 等敏感数据脱敏，结果以 NDJSON 导出，省去单独的处理服务并减少下游存储成本。Cloudflare 数据管道每秒摄入超过十亿事件，其投递服务 Bufstream 每秒向客户目的地投递超过 1.1 亿条记录。团队最初用 Workers 运行 WebAssembly 原型，但这会在导出路径引入...
+2026-10-12 22:46:11
 
 
 

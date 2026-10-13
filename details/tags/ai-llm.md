@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-13 09:45:39 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-13 16:42:50 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -5660,17 +5660,13 @@
 
 ### [将机会性-AI-推理能力转化为更好的广告推荐](https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/)
 
-2026-10-13 01:41:52 | 标签: AI 与智能应用, 推荐系统, AI基础设施, 系统设计, 分布式系统
-
-> Meta 解决了“推理能力悖论”，即由于需求、地区和硬件之间的不匹配，导致集群在全球范围内受限，但在局部存在空闲的问题。通过将这些空闲碎片汇聚到一个共享的机池池，他们利用 RMA 增加排序阶段的候选数量，并利用 SBM 将特定请求路由到更强大的模型。该系统设计了物理和逻辑隔离机制，以确保在回收容量时基础服务性能不受影响。
+2026-10-13 01:41:52
 
 
 
 ### [淘宝-AI-购物助手在线评测落地实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650546388&idx=1&sn=9ccd19e3c6a8ee97a5ec6a963d2eb105)
 
-2026-10-12 10:59:00 | 标签: AI 与智能应用, 模型评测与基准, AI Agent, 大语言模型 (LLM), 电商
-
-> 大淘宝技术团队系统梳理了将学术界 LLM-as-a-Judge 方法落地于电商 AI 购物助手（购后多域）日级全量在线评测的工程实践。文章指出，工业落地的核心瓶颈不在 Judge 模型本身，而在数据清洗和评测标准的持续校准。团队通过四层清洗管线治理线上脏数据；采用「数仓与推理平台解耦」的分布式批量架构解决时效与稳定性瓶颈；提出 CNT 六层漏斗 Rubric 标准与短路机制；在 Prompt 设计上实施事实锚定、时间戳拼接与跨轮上下文隔离；并建立四层归因框架（数据层、Prompt 层、Rubric 层、Agent 真实质量），跑通了从日级观测、根因定位到定点修复核验的完整优化闭环。
+2026-10-12 10:59:00
 
 
 
@@ -14844,105 +14840,79 @@
 
 ### [前沿-AI-模型首次在盈余预测上超越了人类专家](https://dev.to/dailycontext/frontier-ai-models-outperform-human-experts-on-earnings-prediction-for-the-first-time-3fhb)
 
-2026-10-13 05:02:54 | 标签: AI 与智能应用, 机器学习, 数据科学, 财报解读, 大语言模型 (LLM)
-
-> 本文介绍了来自 Samaya 关于前沿 LLM 在金融领域预测能力的研究结果。研究人员通过构建一个遵循「时间点」约束以防止数据泄露的自定义预测框架，测试了诸如 GPT-6 Astra、Claude 5.1 和 Opus 5.5 等模型在 456 份财报发布中的表现。结果显示，虽然旧版模型可以优于原始分析师共识，但最新的前沿模型能够超越考虑了历史惊喜波动性的偏差修正基准线。这标志着 AI 驱动的财务推理开始超越人类表现的关键转折点。
+2026-10-13 05:02:54
 
 
 
 ### [AWS-推理分析：一个-Strands-Agent-背后的精度、内存与六大后端](https://dev.to/aws-builders/inference-on-aws-precision-memory-and-six-backends-behind-one-strands-agent-51ak)
 
-2026-10-13 04:58:54 | 标签: AI 与智能应用, AI 工程, LLM 推理优化, 云原生 / DevOps, 量化技术
-
-> 本文是“Inference on AWS”演讲的配套文章：同一个 Strands Agent 把同一问题发送到 Amazon Bedrock、SageMaker 端点、EC2 g6（NVIDIA L4）与 g5g（Graviton2 + T4G）上的 vLLM，以及手工移植 Gemma 4 的 Inferentia2 和 Trainium。同一个 Gemma 4 E2B 在不同后端上速度从 36 到 132 tok/s 不等，小时价格解释不了差距，关键在每个权重的位数、芯片读取速度和引擎对芯片的利用。基于 Google QAT checkpoint 的 int4 与 bf16 准确率相差不到 ...
+2026-10-13 04:58:54
 
 
 
 ### [Cashcast：哪些发票会延迟付款？在笔记本电脑上逐月测试-TabPFN-模型](https://dev.to/starknight/cashcast-which-invoices-will-be-paid-late-tabpfn-on-a-laptop-checked-month-by-month-2d21)
 
-2026-10-13 03:37:26 | 标签: AI 与智能应用, 机器学习, 数据科学, 金融科技, Python
-
-> 作者开发了 Cashcast，这是一款基于 Python 的自由职业者和会计应收收款的应用。该工具使用 TabPFN v2 表格基础模型预测逾期概率，并提供预期付款日期的分布。系统在本地运行以确保数据隐私并消除 API 成本。实证测试表明，虽然 TabPFN 的性能优于梯度提升树，但在特定数据集上其性能与简单的线性回归相当。
+2026-10-13 03:37:26
 
 
 
 ### [想在家用-PC-集群上运行大规模-AI-模型吗？](https://dev.to/iancowley/want-to-run-massive-ai-models-on-a-collection-of-home-pcs-1a9j)
 
-2026-10-13 03:07:53 | 标签: AI 与智能应用, AI 工程, 分布式系统, 编程语言, 大语言模型 (LLM)
-
-> 针对消费级硬件显存（VRAM）不足以运行超大模型（如 Qwen2-57B 或 Mixtral-8x22B）的问题，作者推出了 Glacier.Inference.Distributed。该工具利用流水线并行（Pipeline Parallelism）将 GGUF 的模型层切分到多个计算节点上。通过标准千兆以太网传输激活张量（Activation Tensor）而非模型权重，有效消除了网络延迟成为瓶颈的顾虑。该项目采用纯 C# .NET 10 开发，不依赖 Python 或 C++ 运行时，并实现了零垃圾回收分配，确保推理过程的流畅性。
+2026-10-13 03:07:53
 
 
 
 ### [Anthropic-如何通过动态工作流协调-Claude-智能体](https://www.latent.space/p/claude-dynamic-workflows)
 
-2026-10-13 02:18:17 | 标签: AI 与智能应用, Agent编排, AI Agent, AI 工程, Agent记忆
-
-> 在 AI Engineer Way 大会上，Anthropic 为 Claude 发布了「动态工作流」（或“流”）。与以往需要开发者手动配置协调器和子智能体列表的托管智能体不同，动态流允许 Claude 自行创建计划、编写程序并管理信息流。这一转变标志着从静态智能体列表向动态、自组织拓扑的演进，能够处理宏大的高层工程项目。
+2026-10-13 02:18:17
 
 
 
 ### [设计师手搓开源-PS-爆火，我们开始考虑全面退订-Adobe-了](https://mp.weixin.qq.com/s?__biz=MjM5NjgzMzkwMQ==&mid=2653652733&idx=1&sn=ca3edb065f976b0c9c33c5d5c62efa7c)
 
-2026-10-12 18:03:00 | 标签: AI 与智能应用, Vibe Coding, AI 编程, 开源项目, SaaS
-
-> 文章介绍了曾参与过 Google Glass 和 Apple Vision 设计 设计的 Robbie Tilton 因不满 Photoshop 订阅费昂贵且替代品不好用，利用 AI 编程技术独立开发了开源项目 Compositor。该项目支持图层、蒙版、钢笔等常用功能，且体积远小于原版软件。作者借此观察到当前行业的双重趋势：一方面 AI 让非技术人士也能快速开发专业软件；另一方面 AI 直接接管了原本需要复杂软件完成的工作，使得依赖订阅制的传统软件巨头面临严峻挑战。
+2026-10-12 18:03:00
 
 
 
 ### [Iris-3B-开源：无-VAE-的文生图架构，支持深度估计与-4-倍超分](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247514469&idx=1&sn=c397c94e0f7ed4ae64153a139ca30376)
 
-2026-10-12 17:42:00 | 标签: AI 与智能应用, 开源项目, 多模态 AI, 模型发布, 系统设计
-
-> Iris-3B 是一个 3B 参数的像素空间图像生成模型，突破了传统 VAE 压缩解码的限制，直接生成 RGB 像素并支持 100 万像素级多种宽高比图像。该模型通过同一骨干网络微调，涵盖文生图、单目深度估计、图像修复与 4 倍超分辨率等任务。权重与代码已 Apache 2.0 协议开放。
+2026-10-12 17:42:00
 
 
 
 ### [Muse-让-Agent-购物出圈，DeepLumen-要帮商家开一家接待-Agent-的店](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112378&idx=1&sn=5d1ee7c9933800b50b9ba424f72801e8)
 
-2026-10-12 17:00:00 | 标签: AI 与智能应用, AI Agent, 电商, 商业模式, 创业
-
-> 随着 Meta Muse 等智能体引发行业关注，电商领域进入 A2A 商业马拉松。DeepLumen 致力于解决商家侧基建空白，通过构建面向 Agent 的商品表达、调用权限和效果核验能力，让 AI 深度参与用户的购物决策。徐鑫指出，购物入口正从‘回答问题’转向‘理解商品并执行任务’，商家需要从传统的为人设计的页面转向适配机器读取的结构化数据体系。
+2026-10-12 17:00:00
 
 
 
 ### [华为-AI-靠-RSI-通关-25-款游戏！操作次数比人类少-56%](https://www.qbitai.com/2026/10/502654.html)
 
-2026-10-12 13:48:36 | 标签: AI 与智能应用, AI Agent, 世界模型, 递归自我改进, 强化学习
-
-> 华为诺亚方舟实验室联合 UCL 等团队发布了 Memento 3 系统。该系统以 Claude Opus 5 为底模，通过“代码即模型（Code as Model）”机制，通过维护规则手册（Rulebook）和可执行的世界模型（Executable World Model），让 AI 在陌生环境中自我摸索规则、编写代码并反思。在 ARC-AGI-3 测试中，其获得了 100 满分，操作效率比人类高 56%，甚至在 Atari Pong 游戏中展现了无需调用大模型推理即可持续获胜的能力。
+2026-10-12 13:48:36
 
 
 
 ### [一个模型得了-0-分，另一个得了-97-分——但它们的失败模式截然不同](https://dev.to/arya_koste_5845807df94776/one-model-scored-0-another-97-their-failures-were-completely-different-2k8k)
 
-2026-10-12 13:40:31 | 标签: AI 与智能应用, AI 安全与对齐, 模型评测与基准, 提示工程, 大语言模型 (LLM)
-
-> 本文介绍了 BoundaryBench: Policy Under Pressure，这是一个实证性 Kaggle 基准测试，评估了四款 LLM（Gemini 3.7 Flash、GPT-5.4 nano、Qwen 3 Next 80B Instruct 和 Claude Haiku 4.5）在跨越 144 次评估、面对客户提示词注入攻击时，执行确定性退款策略的表现。研究结果揭示了被原始榜单得分所掩盖的关键细节：Claude Haiku 得分 0% 仅仅是因为在有效 JSON 响应外包裹了 Markdown 语法标记，而 Qwen 3 得分 97.2% 却遭遇了严重的策略逆转（在伪造管理员攻击...
+2026-10-12 13:40:31
 
 
 
 ### [LLM-会听信糟糕建议吗？基于-840-轮回合制游戏测试战略韧性](https://dev.to/mikaelaldy/do-llms-fall-for-bad-advice-testing-strategic-resilience-in-840-rounds-of-turn-based-games-4d8)
 
-2026-10-12 13:33:39 | 标签: AI 与智能应用, 大语言模型 (LLM), 模型评测与基准, AI 安全与对齐, 实战案例
-
-> 本研究推出了 TurnBasedBenchmarks，这是一项实证评估，旨在测试 7 个 LLM 在经历对话欺骗、虚张声势和指令欺骗时，在 840 轮石头剪刀布和井字棋游戏中的战略韧性。该实验利用 SHA-256 状态承诺、严格的单次有效 JSON 输出契约以及确定性的极小化极大算法/Python 评分，评估了模型在基线、中立、劝导和欺骗条件下的决策。研究结果表明，像 Claude Sonnet 5 这样的前沿模型能够积极利用欺骗性建议——通过系统性地采取反制招式，在面对虚张声势时取得了 86.1% 的胜率；而 Gemini 3.7 Flash 整体表现最佳，在井字棋中做出了 91.7% 的最...
+2026-10-12 13:33:39
 
 
 
 ### [从预测万物到自我进化：PhAI-Labs-提出-RSI-Anything，探索通用-RSI-新路径](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062250&idx=1&sn=01ec89d0007a47eba2bc2918aab03ecf)
 
-2026-10-12 12:30:00 | 标签: AI 与智能应用, 世界模型, 递归自我改进, AI Agent, 具身智能
-
-> PhAI Labs 提出 RSI-Anything 框架，旨在解决 AI 在复杂动态环境中的自我演化局限性。该框架核心在于构建“状态-动作-预测-反馈-改进”的循环，利用世界模型在行动前预判后果，辅助 Agent 决策并更新策略。实验显示，在代码修复、OSWorld 交互、实验室规划及化学反应优化等多个任务中，该方法在不增加模型规模或预算的情况下，通过提升预测准确性显著提高了任务成功率。
+2026-10-12 12:30:00
 
 
 
 ### [具身智能开始卷系统了：RoboFoundry-让机器人自主进化](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062250&idx=3&sn=0bf24d2253fc8b154cf8a6852eb1c6b8)
 
-2026-10-12 12:30:00 | 标签: AI 与智能应用, 具身智能, 强化学习, AI Agent, Harness工程
-
-> 针对具身智能中大模型部署后系统固定不变、导致弱点重复的问题，RoboFoundry 提出了一种“自进化的系统即策略”框架。该框架不调整基座模型参数，而是通过执行轨迹诊断系统瓶颈，在具身经验中自动优化上下文管理和技能组合，并经过验证后将有效的改进晋升为通用能力。实验证明，RoboFoundry 在 EmbodiedBench 和长程记忆基准上表现优异，并在真机上实现了跨任务的零样本迁移。
+2026-10-12 12:30:00
 
 
 
@@ -58454,57 +58424,43 @@
 
 ### [AI-加速开发使-Spotify-每月代码更改量翻倍](https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/)
 
-2026-10-12 21:57:00 | 标签: 编程与工程, 自主编码, AI Agent, 云原生 / DevOps, 测试与质量
-
-> Spotify 扩展了其 AI 辅助开发工作流，导致每月合并数从 8，100 次跃升至 17，000 次。为了管理这种增长，公司利用 Fleet Management 等工具进行自动化维护，并使用 Honk（一个编程智能体）处理复杂的迁移。尽管没有证据表明 AI 直接导致了重大故障，但变更量的激增迫使 Spotify 强化了监控、回滚能力，并将自动化更新安排在工作时间内进行。
+2026-10-12 21:57:00
 
 
 
 ### [程序员正在失去软件选择权！RedMonk-联合创始人：Agent-正在成为新的“Kingmakers-”，开发者可能从决策者退成建议者](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655943266&idx=1&sn=ca27cb119c4bfd3ae35ab7857083dfe2)
 
-2026-10-12 17:50:00 | 标签: AI 与智能应用, AI Agent, 技术领导力, 自主编码, AI 编程
-
-> 本文通过对 RedMonk 创始人 Stephen O'Grady 的访谈，探讨了 AI Agent 如何重塑软件工程范式。过去开源和云服务让开发者绕过采购获得了技术选择权，而现在 Coding Agent 的出现让模型在语言、框架、甚至 UI 细节上开始自主决策。作者指出，开发者的核心竞争力不再是编写代码，而是定义系统约束、设计任务边界并验收 Agent 的结果。未来的开发者可能从“程序员”演变为调度多个 Agent 的“皇帝（皇帝）。
+2026-10-12 17:50:00
 
 
 
 ### [Agent、MCP、Skill、Cli-一次讲透：老系统接入-AI-的地图与三条路径](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649804252&idx=1&sn=073e0806e5a950fae374c9e5f7a2a8b6)
 
-2026-10-12 17:36:00 | 标签: AI 与智能应用, AI Agent, MCP协议, Agent Skills, 命令行与终端
-
-> 针对企业希望让 AI 深入老业务系统的工程挑战，作者通过“数字化团队”类比清晰梳理了 Model（大脑）、Agent（数字员工）、Skill（岗位手册）、MCP（万能转接头）和 CLI（命令行）的功能与协作关系。文章详细分析了根据系统开放程度、文档完整、鉴权体系及变更风险，提出了 API 封装首选、CLI 包装次选、RPA 兜底的落地策略，并对 MCP 的实现形式（stdio， Streamable HTTP 等）提供了标准化建议。
+2026-10-12 17:36:00
 
 
 
 ### [从-Agent-到-Loop：AI-正如何重构软件工程？｜QCon-上海-2026-即将开幕](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651294816&idx=1&sn=4ff037df653d43947f14029e3e1031f7)
 
-2026-10-12 13:21:00 | 标签: 编程与工程, AI Agent, AI 编程, 云原生 / DevOps, QCon 全球开发大会
-
-> QCon 2026 全球软件开发大会在上海开启，核心议题发生范式转移：AI 不再仅仅是“模型能做什么”，而是“AI 如何真正参与工程工作”。会议涵盖了从 AI Coding 深度重构研发、Agent 复杂任务执行、Agentic Infra 支撑基础设施的底座变革，以及数据系统的重塑等多个维度。阿里巴巴、腾讯、字节跳动、美团、百度等企业一线技术实践者将分享在真实业务场景中解决 Agent 记忆、执行、观测性、可观测性及具身智能等前沿工程命题。
+2026-10-12 13:21:00
 
 
 
 ### [字节-Seed-实习生曝-DeepSeek-V4-技术缺陷：长文本检索陷入“周期性盲区”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651294816&idx=2&sn=eb4cbd67b5636c4eb0c36ef1743dea9b)
 
-2026-10-12 13:21:00 | 标签: AI 与智能应用, KV Cache优化, 注意力机制, 长上下文, 大语言模型 (LLM)
-
-> 字节跳动 Seed 团队在测试 DeepSeek-V4 时发现一个诡异现象：模型在处理长文本推理时，会根据 Token 位置在答案 8 和 32 之间周期性翻转。研究通过论文《周期性弱点：分块 KV 缓存引发的相位敏感性》揭示了其稀疏注意力架构的缺陷。这种缺陷被称为“相位敏感性”，尽管 DeepSeek 团队在 V4.1 中通过减小压缩步长和引入 Engram 模块缓解了该问题，但仍未完全消除周期性性能差异。
+2026-10-12 13:21:00
 
 
 
 ### [两名工程师、两个月、4-万行-Rust：DynamoDB-太贵又慢，Perplexity-决定自己造](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651294816&idx=3&sn=42abf6a6598c9832ffd78ba2346e6cca)
 
-2026-10-12 13:21:00 | 标签: 编程与工程, 系统设计, AI基础设施, 后端开发, 编程语言
-
-> Perplexity 将核心搜索服务层从 Amazon DynamoDB 迁移至自研的 CobbleDB。针对 AI 答案引擎特的大载荷（平均 50KB）和高频检索模式，DynamoDB 的流量计费和黑盒机制导致了问题。Perplexity 将架构拆解为 Pillar（持久状态）、Lorry（批量聚合）和 CobbleDB（低延迟服务）三个系统。CobbleDB 结合 RocksDB 与 NVMe 缓存，并通过推测性对冲和批量读取极大优化了查询性能。
+2026-10-12 13:21:00
 
 
 
 ### [谷歌开源面向自主-AI-代理的-Kubernetes-风格编排器-AX](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651294816&idx=4&sn=00d23da893f7a2309d11231b01ab74a4)
 
-2026-10-12 13:21:00 | 标签: 编程与工程, AI Agent, Agent编排, 开源项目, 云原生 / DevOps
-
-> 谷歌及 DeepMind 团队发布了开源项目 AX，专为自主 AI 代理设计。不同于传统的微服务或批处理任务，自主代理具有状态性、突发性和长运行的特点。AX 基于 Agent Substrate 运行，将每个代理会话视为隔离的 Actor 沙箱，通过在空闲时保存状态检查点并挂起，实现亚秒级恢复。其控制平面提供了 Task、Workspace、Gateway 和 Model 四个核心声明式元素，允许开发者像管理 Kubernetes 样管理 Agent。
+2026-10-12 13:21:00
 
 
 
