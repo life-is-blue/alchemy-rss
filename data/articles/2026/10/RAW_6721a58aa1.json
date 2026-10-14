@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6721a58aa1",
+  "title": "Backstage 1.55 新增 Scaffolder 任务恢复并移除弃用的 Catalog API",
+  "url": "https://www.infoq.com/news/2026/10/backstage-1-55-task-recovery/",
+  "date": "2026-10-14 01:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Backstage project has <a href=\"https://github.com/backstage/backstage/releases/tag/v1.55.0\">released version 1.55</a> of its open-source developer portal framework, adding automatic recovery for Software Template tasks that crash or time out. The release also removes a set of deprecated catalog APIs and moves the search module to Elasticsearch 8, so platform teams have several breaking changes to work through before they upgrade.</p>\n   <p>Task recovery sits behind a new <code>scaffolder.taskRecovery</code> configuration section. When it is enabled, the scaffolder resumes a task from the last completed step, keeps task secrets until the task reaches a terminal state and persists completed step outputs so later steps can read them. The release notes warn that actions used by recovered tasks should be idempotent or use checkpoints, because a resumed task can run an action a second time. The new section replaces three experimental flags, which still work as fallbacks.</p>\n   <p>The feature responds to a long-standing request. In April 2025, on a <a href=\"https://github.com/backstage/backstage/issues/22590\">GitHub issue tracking scaffolder task retries</a>, Manoj Azad wrote, \"Currently, having to re-run the entire scaffolder process can be not only inconvenient but also problematic from a technical standpoint.\" The 1.55 feature covers tasks interrupted by a crash or time-out, which addresses part of that request.</p>\n   <p>Workspace serialisation is optional and needs a separate provider module. The new database provider has a 50 MB limit and is intended for development, and the release notes point production installations to the GCP module or a similar external store.</p>\n   <p>Most of the upgrade work sits in the breaking changes. The catalog backend drops the <code>catalog.enableRelationsCompatibility</code> option, so entity relations now return only <code>targetRef</code>, and it removes the deprecated <code>CodeOwnersProcessor</code> and <code>AnnotateScmSlugEntityProcessor</code> in favour of community modules. The Elasticsearch module now requires Elasticsearch 8.19 or later, although the AWS and OpenSearch providers are unaffected, and custom code that reads raw client responses needs updating. TechDocs strips MkDocs plugins that are not on a built-in allowlist, and teams that need extra plugins must list them under <code>techdocs.generator.mkdocs.dangerouslyAllowAdditionalPlugins</code>. Further breaking changes affect Backstage UI link components, the GitHub repository creation action, incremental ingestion permissions and the Sentry scaffolder action.</p>\n   <p>Several changes target governance and speed. The <code>scaffolder.requireScmUserCredentials</code> option, first added in the <a href=\"https://github.com/backstage/backstage/releases/tag/v1.54.6\">1.54.6 patch</a>, requires user-provided credentials for supported GitHub, GitLab, Bitbucket and Azure DevOps actions. Permission policies that deny unknown permissions must now explicitly allow <code>scaffolder.template.dry-run</code> to keep template dry runs working. Michael Todorovic, a senior SRE at Veepee, <a href=\"https://github.com/backstage/backstage/pull/35556\">changed the GitLab merge request and push actions</a> to compare files locally. \"<code>publish:gitlab:merge-request</code> was taking 5–15 seconds against a self-hosted GitLab,\" he wrote. \"It turned out almost all of that was the action asking GitLab for information it already had.\" The change cuts API requests for a repository of a few hundred files from roughly 300 to under ten, and a step that took 5 to 15 seconds down to about 3 seconds. Core plugins such as the catalog, search and TechDocs now load their pages only when they render, which reduces the initial app bundle.</p>\n   <p>Since 15 September, the maintainers have shipped three patch releases. <a href=\"https://github.com/backstage/backstage/releases/tag/v1.55.1\">Version 1.55.1</a> fixed the new <code>backstage-cli pm verify-patches</code> command and TechDocs add-ons on the new frontend system, while <a href=\"https://github.com/backstage/backstage/releases/tag/v1.55.2\">1.55.2</a> and <a href=\"https://github.com/backstage/backstage/releases/tag/v1.55.3\">1.55.3</a> fixed how TechDocs handles MkDocs Markdown extension configuration.</p>\n   <p>The release also lists security fixes in seven packages, including the OIDC and Cloudflare Access auth providers and the proxy backend. The Cloudflare Access provider now requires the application audience in its configuration. The next minor version is already in pre-release, with <a href=\"https://github.com/backstage/backstage/releases/tag/v1.56.0-next.2\">1.56.0-next.2</a> published on 6 October.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Backstage 1.55 Adds Scaffolder Task Recovery and Removes Deprecated Catalog APIs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/backstage-1-55-task-recovery/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1791910800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Backstage 1.55 版本引入了软件模板的自动恢复机制，并针对 artwork API 和 Elasticsearch 要求实施了多项破坏性变更。",
+  "oneSentenceSummary": "Backstage 1.55 版本引入了软件模板的自动恢复机制，并针对 artwork API 和 Elasticsearch 要求实施了多项破坏性变更。",
+  "summary": "开源开发者门户框架 Backstage 发布了 1.55 版本，为因崩溃或超时而失败的 Scaffolder 任务增加了恢复机制。此版本还删除了多个已弃用的 API，并将搜索模块升级到 Elasticsearch 8。此外，它还包含了核心插件按需加载等性能改进，以及针对各种身份验证提供的安全修复。",
+  "mainPoints": [
+    {
+      "point": "Scaffolder 任务恢复",
+      "explanation": "新的机制允许任务从上一个完成的步骤开始恢复，在到达终端状态前持久化密钥，并为后续步骤保存输出，这要求操作必须具备幂等性。"
+    },
+    {
+      "point": "破坏性变更与升级",
+      "explanation": "该版本删除了多个 目录 API，并强制搜索模块使用 Elasticsearch 8，要求平台团队在升级前先更新其基础设施。"
+    },
+    {
+      "point": "性能与效率",
+      "explanation": "catalog、search 和 TechDocs 等核心插件现在仅在需要时加载，减小了应用程序的初始体积。GitLab 集成中的新逻辑也显著减少了 API 开销。"
+    },
+    {
+      "point": "安全与治理",
+      "explanation": "针对包括 OIDC 和 Cloudflare Access 提供程序在内的七个包进行了安全修复，同时 Cloudflare Access 提供程序现在需要显式的应用程序观众（audience）。"
+    }
+  ],
+  "keyQuotes": [
+    "目前，必须重新运行整个 Scaffolder 过程不仅不方便，而且从技术角度来看也存在问题。",
+    "被恢复任务使用的操作应该是幂等的，或者具有检查点的，因为恢复的任务可能会第二次执行某个操作。"
+  ],
+  "tags": [
+    "编程与工程",
+    "平台工程",
+    "系统设计",
+    "开源项目",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 577,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1791910800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-14 01:00:00"
+}

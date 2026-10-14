@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-10-14 06:05:42 | [返回首页](/README.md)
+**更新时间**: 2026-10-14 10:39:14 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (16970)
+- [AI & 大模型](#ai-llm) (17016)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1028)
-- [DevOps](#devops) (818)
+- [DevOps](#devops) (823)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7124)
+- [其他](#other) (7129)
 
 
 ---
@@ -22,6 +22,14 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
+- [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
+- [Gemini-4-Argon：为解决棘手难题而生](https://deepmind.google/blog/introducing-gemini-4-argon/) - AI 精选
+- [Anthropic-的源码控制系统重设计](https://www.anthropic.com/engineering/redesigning-source-control) - AI 精选
+- [Orca-Security-使用-Amazon-Bedrock-实现自然语言安全查询](https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/) - AI 精选
+- [ShipStation-Global-如何利用-Amazon-Bedrock-AgentCore-构建-AI-IT-帮助台-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/) - AI 精选
+- [为-IBM-Spyre-加速器扩展-Inductor](https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/) - AI 精选
+- [生成的世界也能交互！牛津大学&amp;莫纳什大学&amp;布里斯托大学等团队提出交互式视频世界模型-Oneira](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062445&idx=3&sn=c93fe78ae034dea794c3760e35192930) - AI 精选
 - [我将-4-款模型的推理档位调至「高」：只解决了一个问题，却为所有消耗买了单](https://dev.to/abeera_lodhi/i-turned-the-reasoning-dial-to-high-on-4-models-it-fixed-one-thing-and-billed-me-for-everything-41o5) - AI 精选
 - [AI-无限，人生有限｜对谈-KK、山音：一线-AI-创作者](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112376&idx=1&sn=313fb7cb6967519072ecf9455fc7a637) - AI 精选
 - [为何-AlphaFold-并未解决蛋白质折叠问题——Pushmeet-Kohli，Google-DeepMind-&amp;-Sal-Candido，Biohub](https://www.latent.space/p/biohub-deepmind) - AI 精选
@@ -34,16 +42,8 @@
 - [Pi-1.0：为何接纳-MCP，又推出-Pi-Durable？](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492712&idx=1&sn=685aff648a78ca50938a1928930c29d4) - AI 精选
 - [Claude-时代的科学](https://www.anthropic.com/research/claude-shaped-science) - AI 精选
 - [永恒的互补品](https://openai.com/index/the-eternal-complement) - AI 精选
-- [Introducing-Olmo-core-3:-为大规模-MoE-设计的开放、可扩展训练基础设施](https://huggingface.co/blog/allenai/olmocore3) - AI 精选
-- [Gemini-4-Argon：我们-frontiers-智能时代的下一章](https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/) - AI 精选
-- [我们能预测机器人将从事的工作吗？](https://www.anthropic.com/research/what-work-can-robots-do) - AI 精选
-- [SynthID-Bio：合成生物学的水印方法](https://deepmind.google/blog/introducing-synthid-bio/) - AI 精选
-- [帮大家总结了一下凌晨的-OpenAI-2026-开发者大会。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647686841&idx=1&sn=630c0dc22de47c9c2f58bd5253a91a9a) - AI 精选
-- [DeepSeek-Harness-桌面端：现在，开箱即用。](https://mp.weixin.qq.com/s?__biz=MzY4NzM3MTkxOQ==&mid=2247483805&idx=1&sn=b4fbd172f68ae56c5e201b9186b1e8a5) - AI 精选
-- [一个分镜跑-1000-张图：当技术免费，审美成了唯一的硬通货](https://mp.weixin.qq.com/s?__biz=MzU5Mjg5MjQ5Ng==&mid=2247522940&idx=2&sn=87b19b0dc3bd770f8afc0d21b44255fc) - AI 精选
-- [Manus-回来了！更新-2.0-并发布全天候智能体-Cue](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651060477&idx=2&sn=ee9eb2ee3287c13bba78bf08f5d42a29) - AI 精选
 
-- [查看全部 16970 篇...](/details/tags/ai-llm.md)
+- [查看全部 17016 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [Docker-构建详解：上下文、架构与性能优化](https://www.freecodecamp.org/news/docker-build-tutorial-learn-contexts-architecture-and-performance-optimization-techniques/) - 编程 精选
 - [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 
-- [查看全部 818 篇...](/details/tags/devops.md)
+- [查看全部 823 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7124 篇...](/details/tags/other.md)
+- [查看全部 7129 篇...](/details/tags/other.md)
 
 
