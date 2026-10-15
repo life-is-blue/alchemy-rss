@@ -1,0 +1,58 @@
+{
+  "id": "RAW_8c920a3598",
+  "title": "后编程时代——人类作为 AI 编程的辅助工具",
+  "url": "https://www.twisted-meadows.com/the-post-programming-era/",
+  "date": "2026-10-14 11:31:20",
+  "author": "twisted-meadows.com",
+  "siteName": "twisted-meadows.com",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"wp-block-paragraph\">近年高速发展的大语言模型正在冲击和重塑着整个社会。其中首当其冲、最引人注目的领域，当属 AI Coding。</p>\n  <p class=\"wp-block-paragraph\">我每天高强度从事软件开发，历经多种流行的 AI 工具，工作中 AI 生成代码的比例从两年前的10%，逐渐上升到70%，再到近几个月的100%。完全可以说，作为程序员的自己，已经被 AI 淘汰了。</p>\n  <p class=\"wp-block-paragraph\">有些时候，只要测试跑通，我甚至看都不看就可以合入 AI 提交的代码。\n   <br>\n   你敢信：<mark style=\"background-color:rgba(0, 0, 0, 0)\" class=\"has-inline-color has-vivid-cyan-blue-color\">不再是<strong>“AI辅助人类编程”</strong>，而是<strong>“人类根本没有在编程”</strong>。</mark></p>\n  <p class=\"wp-block-paragraph\">AI 真能负责 100% 的代码吗？这种方式是否可持续？</p>\n  <p class=\"wp-block-paragraph\">这篇文章不是关于 AI Coding 「好」与「不好」的空泛讨论，也不纠结程序员还有没有存在的价值。\n   <br>\n   而是：当 AI Coding 已经无可辩驳的强大，当代程序员如何与它协作。</p>\n  <span id=\"more-1145\"></span>\n  <p class=\"wp-block-paragraph\">用 AI 写代码，最基础的模式是让它编写函数。函数级 AI 编程非常实用，代码质量极高，且任何偏差都容易被发现和纠正。坦率地说，只要输入的 prompt 正确且恰当，在函数级编程上，人类不可能优于 AI。</p>\n  <p class=\"wp-block-paragraph\">但在函数级以外呢？如果要写一个大型的程序，包含大量的函数、类、对象，包含复杂架构和业务逻辑——这样的复杂程序设计，AI 也能达到、甚至超越人类程序员吗？</p>\n  <p class=\"wp-block-paragraph\">有人会说不行，还提出「AI 将从事低端繁琐的编码工作，人类将负责高级的架构设计」。\n   <br>\n   我觉得这是扯淡。这些人根本没有真的用 AI 写过多少代码。\n   <br>\n   你要是每天跟 AI 一起编程，就会发现它的架构设计能力其实很强，超过80%的人类高级架构师。\n   <br>\n   这也很好解释：普通程序员一辈子写不了几个大型程序，很多时候甚至轮不到他来设计架构。\n   <br>\n   有些项目架构是现成的，开发者只能在屎上雕花；有些项目本就是玩具项目，无需高并发和稳定性，再烂的架构也能兜住。</p>\n  <p class=\"wp-block-paragraph\">而 LLM 的训练语料是所有的开源代码，它见过市面上所有的主流架构、所有的开发模式，洞察所有语言和框架的特性，比普通程序员有着更广泛、深刻的项目经验和架构理解。\n   <br>\n   如果能清晰梳理产品形态、需求，细化性能与成本要求，并给出风格偏好，LLM 可以输出极其优秀的架构设计。</p>\n  <p class=\"wp-block-paragraph\">从这个角度讲，AI 比人类更擅长做程序顶层设计。</p>\n  <p class=\"wp-block-paragraph\">由此可知，AI擅长做底层（函数），也擅长做顶层（架构）。那为什么，在我们经验中，<strong>它做不好中间层呢？</strong></p>\n  <ul class=\"wp-block-list\">\n   <li>可能是受限于技术水平，导致上下文长度不够、注意力难以管控。（当然，在 Claude Code 出现之后问题已经改善了很多）</li>\n   <li>也可能是因为实际业务中，中间层容易发生设计变更（这些变更往往与实际业务相关，而 AI 不了解实际业务）。</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">但我认为，更关键的原因在于：<strong>中间层需要更多「学习」</strong>。</p>\n  <p class=\"wp-block-paragraph\">软件开发真正有价值的部分——虽然人们羞于承认——一直都是这个<strong>学习</strong>过程：快速理解业务、从之前的项目经验中提取知识、使用新的工具和方法、理解他人的代码并复合出更大价值。\n   <br>\n   而当前的 LLM 工具都是 0 学习的纯推理系统（即使有 Memory 机制，也只是把历史交互记录下来供后续参考，并没有产生新的权重和网络结构）。</p>\n  <p class=\"wp-block-paragraph\">即使「边缘学习」也是要考虑成本的。\n   <br>\n   现在的 LLM 已经如此庞大，训练和微调都耗费不菲。要让它更广泛地应用，必须在边缘部分使用廉价的学习机制去适配具体场景。而很多时候，人类劳动力反而是廉价的。</p>\n  <p class=\"wp-block-paragraph\">即使只是一种局部最优，在这个临时解决方案中，<strong>形成了一个典型的三明治结构：</strong></p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter size-full is-resized\">\n    <img decoding=\"async\" src=\"https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-1.png\" alt=\"\" class=\"wp-image-1175\" srcset=\"https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-1.png 462w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-1-300x255.png 300w\" sizes=\"(max-width: 462px) 100vw, 462px\">\n   </figure>\n  </div>\n  <h2 class=\"wp-block-heading\">人类的新角色</h2>\n  <p class=\"wp-block-paragraph\">如果你问一个小公司的老板最近在忙什么，他大概率告诉你「在打杂」。这个现象符合某种规律：小公司往往有一套固定的商业模式，一旦跑通，几个员工就能完成整个流程。老板变成了「为员工打杂」的角色——雇佣员工，监督他们工作，把别的杂务都处理好，让员工能专注于核心任务。</p>\n  <p class=\"wp-block-paragraph\">AI 编程如今也是这样。由于 AI Coding Agent 已经强大到可以主力完成复杂软件的开发，程序员成了一个类似于<strong>老板</strong>的角色——雇佣 AI，监督它工作，并从成果中获取收益。因此程序员每天都在处理这个问题：AI 还需要些什么？我怎么能让它工作得更好？</p>\n  <p class=\"wp-block-paragraph\">具体来说，人类在这个新体系中扮演以下角色：</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>上下文存储器</strong>：AI 的上下文窗口有限，而项目的历史、决策背景、隐性知识都需要有人记住并在恰当的时候提供给 AI。人类成为 AI 的外挂存储器。</li>\n   <li><strong>领域专家系统</strong>：AI 拥有通用编程能力，但对具体业务领域的理解往往不足。人类基于对业务的理解，帮助 AI 完成项目冷启动，将通用能力转化为专业产出。</li>\n   <li><strong>边缘学习器</strong>：人类负责快速学习新的业务知识、工具方法，将开发能力落到真实业务上去，将 LLM 的泛化能力与专业性结合，达到专家级效果。</li>\n   <li><strong>代码管家</strong>：AI 负责常规业务性开发，人类负责「打扫战场」——整理代码架构，保持代码库的清晰和可维护性。</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">这些角色的共同特点：它们都是「辅助性」的。\n   <br>\n   人类不再是编程的主力，而是让 AI 能够更好工作的<strong>支持系统</strong>。</p>\n  <h2 class=\"wp-block-heading\">稳定性工程</h2>\n  <p class=\"wp-block-paragraph\">AI 的工作是「模糊的」，或者说「不稳定的」。由它开发出的代码，可能只是对正确结果的「近似解」。那么，每一个 AI 实施的环节，都会产生一定程度的「偏离」。</p>\n  <p class=\"wp-block-paragraph\">在复杂工程中，所涉环节众多，这种偏离可能具有累积效应。如果把 AI 编程视为一种<strong>链式调用</strong>，它具有类似深度神经网络的<strong>梯度消失/爆炸</strong>模式——最终可能导致整个项目失控。（而你很难快速进行修正，因为每个环节都可能有错。）</p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter size-full\">\n    <img decoding=\"async\" src=\"https://www.twisted-meadows.com/wp-content/uploads/2025/12/链式调用的偏离-1.jpg\" alt=\"\" class=\"wp-image-1171\" srcset=\"https://www.twisted-meadows.com/wp-content/uploads/2025/12/链式调用的偏离-1.jpg 743w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/链式调用的偏离-1-300x277.jpg 300w\" sizes=\"(max-width: 743px) 100vw, 743px\">\n   </figure>\n  </div>\n  <p class=\"wp-block-paragraph\">因此，在 AI 开发的软件项目中，应该在重要的关键环节主动制造<strong>稳定层</strong>（由人类负责维护），让 AI 开发的部分去依赖稳定层。\n   <br>\n   这样即使关键环节出现错误，由于是人类亲自维护的，也很容易找到和解决问题。\n   <br>\n   且当 AI 开发的部分出错时，错误会在稳定层触发异常，很容易被发现，从而避免传导扩散。</p>\n  <p class=\"wp-block-paragraph\">回到链式调用的假设中：人为参与的环节越多，整体编程过程越可控。AI 程序员需要找到最佳的交叉参与机制，让人类只在关键环节进行很少的介入，就使整个创造过程稳定。</p>\n  <p class=\"wp-block-paragraph\">既然 AI 的输出是「近似解」，偏差就是客观存在的。我们选择用 AI 来开发项目，是因为 AI 开发的「效率收益」远大于它造成的「偏差损失」。\n   <br>\n   在这个问题上，正确的态度不是「接受错误」，而是<strong>设计容差</strong>——把对偏差的考量纳入设计，甚至专门设计容差量。</p>\n  <p class=\"wp-block-paragraph\">参考其它工程领域的经验，这就涉及几个核心原则：</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>不确定性原则</strong>：承认系统中存在不可消除的不确定性，并围绕它进行设计。</li>\n   <li><strong>系统冗余</strong>：在关键路径上设置冗余机制，使单点故障不致于导致整体崩溃。</li>\n   <li><strong>功能性优先</strong>：先保证系统能工作，再追求完美。一个能跑的近似解胜过一个永远完成不了的精确解。</li>\n   <li><strong>经济性原则</strong>：容差设计要考虑成本。过度的冗余和校验同样是浪费。</li>\n  </ul>\n  <p class=\"wp-block-paragraph\">世界破破烂烂，Program 缝缝补补。如果把以前严格定义、精确运行的软件视为一种「刚性设计」，新时代的软件应该具备「柔性设计」。这种设计允许不完美，并能在不完美中工作。这是与 AI 协作的工程师必须内化的认知。</p>\n  <h2 class=\"wp-block-heading\">变难吃的三明治</h2>\n  <p class=\"wp-block-paragraph\">随着 AI 能力发展和 AI 编程工程体系的成熟，前面描述的三明治结构会「降本增效」，逐渐发展成一个难吃的形状——人类负责的部分越来越小，AI 负责的部分越来越多。</p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter size-large\">\n    <img loading=\"lazy\" decoding=\"async\" src=\"https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变-1024x510.png\" alt=\"\" class=\"wp-image-1157\" srcset=\"https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变-1024x510.png 1024w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变-300x149.png 300w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变-768x383.png 768w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变-1536x765.png 1536w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变-1600x797.png 1600w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变-780x389.png 780w, https://www.twisted-meadows.com/wp-content/uploads/2025/12/三明治结构-演变.png 1827w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\">\n   </figure>\n  </div>\n  <p class=\"wp-block-paragraph\">中间那层「人类主导」的夹心会越来越薄。也许上下文窗口会越来越长，注意力机制会越来越强，边缘学习的需求可能被某种轻量级微调机制替代。每一次技术进步，都会压缩人类的参与空间。</p>\n  <p class=\"wp-block-paragraph\">我们尚不清楚人类负责的部分能否减少为 0。但它会减少，这是必然的。\n   <br>\n   找到方法让它继续减少，是 AI 程序员接下来要做的功课——听起来有些讽刺，但这就是现实：如果<strong>尊重技术进步的铁律</strong>，我们的工作，就是让自己变得更加不必要。</p>\n  <p class=\"wp-block-paragraph\">在普遍使用 AI 执行编程的场景下，人们不再关心「某个功能能否实现」——程序员能力不再是瓶颈，你提的需求，AI 必将实现。</p>\n  <p class=\"wp-block-paragraph\">「<strong>执行速度</strong>」成为核心。一个好的 AI 程序员将以数倍于传统方式的效率生产软件产品。\n   <br>\n   好的工程管理能放大这个优势：越短的反馈循环，越适合用 AI 来快速迭代验证，并享受效率提升的指数增长价值。</p>\n  <h2 class=\"wp-block-heading\">It’s All About Taste</h2>\n  <p class=\"wp-block-paragraph\">乔布斯说过：Ultimately, it comes down to taste.（最终，一切归结于品味。）</p>\n  <p class=\"wp-block-paragraph\">当 AI 在编程技术上已经超越大多数人类，当实现任何功能都不再是障碍，什么才是区分程序员的标准？</p>\n  <p class=\"wp-block-paragraph\">答案也许是<strong>品味</strong>。</p>\n  <p class=\"wp-block-paragraph\">同一个目标往往有多种实现方案。AI 能列出所有可行的路径，但选择哪一条，需要的是判断力——对「好」的深刻理解。这不是技术能力，而是审美能力。</p>\n  <p class=\"wp-block-paragraph\">什么样的代码是优雅的？什么样的架构是简洁的？什么样的交互是自然的？什么样的产品是有灵魂的？这些问题没有标准答案，却有好坏之分。能分辨这种好坏，就是品味。</p>\n  <p class=\"wp-block-paragraph\">在后编程时代，有品味、有追求的程序员才能写出独特的程序。技术趋同是必然的——所有人都用同样强大的 AI——但品味无法复制。它来自于对领域的深刻理解，对用户的真诚关怀，对美的持续追求。</p>\n  <p class=\"wp-block-paragraph\">这或许是人类程序员最后的价值锚点。\n   <br>\n   <mark style=\"background-color:rgba(0, 0, 0, 0)\" class=\"has-inline-color has-cyan-bluish-gray-color\">但也注定了，好的程序员更难被外部评价体系发现。</mark></p>\n  <h2 class=\"wp-block-heading\">镜中的后编程时代</h2>\n  <p class=\"wp-block-paragraph\">很多人把 AI 和人类视为对立面或互补关系——AI 强的地方人类弱，人类强的地方 AI 做不到。\n   <br>\n   这种观点令人安心，因为它暗示着人类总有不可替代的价值。</p>\n  <p class=\"wp-block-paragraph\">但实践告诉我，事实并非如此。</p>\n  <p class=\"wp-block-paragraph\">AI 和人类有很多相似的特质：泛化能力、学习能力、记忆力、联想能力……\n   <br>\n   这使得人类身上的很多问题，在 AI 上也存在；曾经只有人类擅长的事情，现在 AI 也越来越擅长。</p>\n  <p class=\"wp-block-paragraph\">如何解决 AI 存在的问题？我越来越觉得像照镜子——实际上是在解决自己存在的问题：</p>\n  <p class=\"has-text-align-center wp-block-paragraph\"><strong>AI 不是人类的「对立面」，而是人类的「镜像」。</strong></p>\n  <p class=\"wp-block-paragraph\">曾经，写代码是一种「编程」。现在，编排一批 AI Agents 稳定地构建起一套复杂系统也是一种「编程」。这就是镜中的「<strong>后编程时代</strong>」。</p>\n  <p class=\"wp-block-paragraph\">当历史的车轮滚滚向前，copilot 已经悄悄接过方向盘。我们既要确保自己还在车上，又要赶紧寻找新的驱策之法。\n   <br>\n   面对 AI 这头难以驯服的巨兽，如何驾驭它踏碎过往、走出新路，让软件工程提速、却又不至于失控？可能是眼下最直接的问题。</p>\n </body>\n</html>",
+  "aiSummary": "基于 100% AI 编码的真实工程实践，作者剖析了 AI 擅长顶层架构与底层函数而缺乏中间层学习的「三明治结构」，并提出人类程序员应转向构建稳定性工程与依赖品味决策的新协作范式。",
+  "oneSentenceSummary": "基于 100% AI 编码的真实工程实践，作者剖析了 AI 擅长顶层架构与底层函数而缺乏中间层学习的「三明治结构」，并提出人类程序员应转向构建稳定性工程与依赖品味决策的新协作范式。",
+  "summary": "文章结合高强度日常软件开发中 AI 编写代码比例达 100% 的一手实践，颠覆了「AI 搞低端编码、人类做顶层设计」的传统认知。作者指出 AI 兼具出色的底层函数实现与顶层架构设计能力，但因当前 LLM 缺乏针对具体业务的廉价学习机制，形成了由人类承担中间层业务理解与边缘学习的「三明治结构」。随着 AI 链式调用中误差累积的加剧，软件工程的核心转向了主动设立稳定层与容差设计的「柔性架构」。未来随着技术进步，人类在三明治中的夹心层将进一步被压缩，程序员的核心价值最终将从实现功能的编码能力，转变为定义产品与架构审美的「品味」及编排 AI Agent 的能力。",
+  "mainPoints": [
+    {
+      "point": "AI 兼具优秀的底层编码与顶层架构能力，人类目前主要充当中间层的「边缘学习器」",
+      "explanation": "LLM 汲取了全网开源代码中的主流架构与框架特性，顶层设计水平超越大部分普通程序员；由于当前模型属于零权重更新的纯推理系统，适应具体业务的学习成本高，因而形成了由人类负责业务对接与上下文维护的临时三明治结构。"
+    },
+    {
+      "point": "AI 编码的链式调用存在误差累积，需通过主动制造「稳定层」与容差设计实现工程可控",
+      "explanation": "AI 的输出本质是带有不确定性的近似解，链式调用中极易发生类似梯度爆炸的偏差扩散，工程师必须在关键环节人工维护稳定层以截断错误传导，采用柔性工程设计实现系统容差。"
+    },
+    {
+      "point": "当实现任何功能都不再是技术瓶颈，「品味」成为区分程序员的核心标准",
+      "explanation": "AI 可以穷举可行的技术路径，但选择兼顾优雅、简洁与用户价值的最优解依赖主观审美与深度理解，技术趋同使得品味成为人类开发者最后的价值锚点。"
+    },
+    {
+      "point": "后编程时代重新定义了「编程」的内涵，开发者转变为调度与编排 Agent 的管理者",
+      "explanation": "人类不再亲手编写逻辑代码，而是如同为员工打杂的老板，通过充当上下文存储器与代码管家，将主要工作转变为编排 AI Agents 稳定构建复杂系统。"
+    }
+  ],
+  "keyQuotes": [
+    "不再是\"AI 辅助人类编程\" ，而是\"人类根本没有在编程\"。",
+    "你要是每天跟 AI 一起编程，就会发现它的架构设计能力其实很强，超过 80%的人类高级架构师。",
+    "人类不再是编程的主力，而是让 AI 能够更好工作的支持系统。",
+    "正确的态度不是「接受错误」，而是设计容差——把对偏差的考量纳入设计，甚至专门设计容差量。",
+    "曾经，写代码是一种「编程」。现在，编排一批 AI Agents 稳定地构建起一套复杂系统也是一种「编程」。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 编程",
+    "自主编码",
+    "系统设计",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 16,
+  "score": 90,
+  "wordCount": 3751,
+  "domain": "twisted-meadows.com",
+  "category": "Business_Tech",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_528d636193",
+  "sourceName": "twisted-meadows.com",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1791948680828,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-14 11:31:20"
+}

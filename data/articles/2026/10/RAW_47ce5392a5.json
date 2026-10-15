@@ -1,0 +1,52 @@
+{
+  "id": "RAW_47ce5392a5",
+  "title": "Vidu Q4 原生音频：无需唇同步插件的语音匹配",
+  "url": "https://dev.to/kling4ai-production/vidu-q4-native-audio-voice-matching-without-a-lip-sync-plugin-43an",
+  "date": "2026-10-15 05:20:06",
+  "author": "Kling4 AI",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Talking heads are where most AI video still looks like a puppet. The mouth lags, the voice belongs to someone else, and the body stays still while the jaw chatters. Vidu Q4 treats sound as part of the shot, not as a track glued on afterwards.</p>\n  <p>The usual pipeline exports a silent clip, runs a separate voice model, then stretches the chin with a lip-sync plugin. That is slow, and the patch sits on a finished face, so the skin smears. Vidu Q4 maps the audio waveform and the facial motion in the same generation pass. A short voice sample is enough for the line to come out in that voice, with the lips, teeth, and breath landing on the same beats.</p>\n  <h2><a name=\"why-a-plugin-still-looks-like-a-puppet\" href=\"#why-a-plugin-still-looks-like-a-puppet\"> </a> Why a plugin still looks like a puppet</h2>\n  <p>An external lip-sync tool only repaints the mouth on frames that already exist. It does not tilt the head, blink, or move the chest with the breath. Vidu Q4 uses the audio as a guide for the whole diffusion, so a hard consonant can come with a small lean and a narrower eye. The motion follows how a person actually speaks, instead of a mask sliding on the jaw.</p>\n  <h2><a name=\"what-goes-into-one-voiced-shot\" href=\"#what-goes-into-one-voiced-shot\"> </a> What goes into one voiced shot</h2>\n  <p>The job is three inputs: a character still, up to three voice samples, and the line with its tone marked. One branch keeps the timbre and the pace. The other shapes the teeth, the lips, the throat, and the small motion around the eyes. They meet in one picture with sound, rather than a silent video plus a dub.</p>\n  <h2><a name=\"five-steps\" href=\"#five-steps\"> </a> Five steps</h2>\n  <ol>\n   <li>Record 8 to 10 seconds of one dry voice. WAV or MP3 is fine if the room is quiet and the mic is not popping.</li>\n   <li>Break the line on the breaths, and mark the delivery. Example: a tight, shaking tone for \"You thought you could hide this from everyone?\"</li>\n   <li>Load the still and the sample in the same slot so the face and the voice stay bound. The voice panel on <a href=\"https://viduai.co\" target=\"_blank\" rel=\"noopener noreferrer\">viduai.co</a> is set up for that drop.</li>\n   <li>Turn on high-precision mouth tracking and let the audio lead the face a little more than the default if the consonants are soft.</li>\n   <li>Listen on the timeline. Export only after the words and the mouth land together, with a 48 kHz track in the file.</li>\n  </ol>\n  <h2><a name=\"against-a-twostep-dub\" href=\"#against-a-twostep-dub\"> </a> Against a two-step dub</h2>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th></th>\n      <th>Video, then TTS, then a plugin</th>\n      <th>Vidu Q4 native voice</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Mouth and teeth</td>\n      <td>Flat lips, a smeared chin</td>\n      <td>Teeth and lips move as one shape</td>\n     </tr>\n     <tr>\n      <td>The rest of the body</td>\n      <td>The torso freezes</td>\n      <td>Breath and small head motion stay in time</td>\n     </tr>\n     <tr>\n      <td>Whose voice</td>\n      <td>A generic reader</td>\n      <td>Up to three samples of the character</td>\n     </tr>\n     <tr>\n      <td>Turnaround</td>\n      <td>Export, dub, patch, re-export</td>\n      <td>One voiced render</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <h2><a name=\"practical-notes\" href=\"#practical-notes\"> </a> Practical notes</h2>\n  <p>A noisy sample will leak room tone into the line. Record dry. If two characters speak, give each one a separate sample and do not reuse the same clip for both. Mark the emotion in the script. The model follows the written stress more reliably than a plain paragraph of dialogue.</p>\n  <p>This is for short-drama teams, commercial spots with a spokesperson, and anyone who has been fixing mouths in post. Start with one clean 10-second sample and one still, and check a single line before you build a longer scene.</p>\n </body>\n</html>",
+  "aiSummary": "Vidu Q4 在一次生成过程中集成音频与面部动作，能够在无需外部插件或后期处理的情况下实现精准的唇同步和自然的身体动作。",
+  "oneSentenceSummary": "Vidu Q4 在一次生成过程中集成音频与面部动作，能够在无需外部插件或后期处理的情况下实现精准的唇同步和自然的身体动作。",
+  "summary": "Vidu Q4 模型通过将声音视为场景的内在组成部分而非独立轨道，革新了 AI 视频。模型在扩散过程中直接将音频波形映射到面部表情和身体动作，实现了传统两步配音方法无法媲美的真实感和同步性。",
+  "mainPoints": [
+    {
+      "point": "音频与视频的原生集成",
+      "explanation": "与需要单独的语音模型和唇同步插件的传统流程不同，Vidu Q4 同时处理音频和视觉数据。这使得表演更加连贯自然，嘴部动作、眨眼和身体姿势都与声音同步。"
+    },
+    {
+      "point": "高保真语音匹配",
+      "explanation": "系统仅需短暂样本即可准确捕捉特定声音的音色和节奏。这确保了角色的语音与视觉外貌一致，避免了因声音不匹配导致的「恐怖谷」效应。"
+    },
+    {
+      "point": "简化工作流程",
+      "explanation": "流程简化为单一步骤。用户只需提供角色图像、语音样本和对话文本，模型即可生成完整的配音视频。这消除了复杂后期处理或手动调整的需要。"
+    }
+  ],
+  "keyQuotes": [
+    "Vidu Q4 将声音视为镜头的一部分，而非事后粘贴上去的音轨。",
+    "动作遵循人实际说话的方式，而非面具在下颌滑动。",
+    "viduai.co 上的语音面板已为此做好准备。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型训练与推理",
+    "AI 产品与应用",
+    "AI 语音",
+    "扩散模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 546,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1792012806000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-15 05:20:06"
+}

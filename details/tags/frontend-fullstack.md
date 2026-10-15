@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-15 06:51:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-15 10:18:40 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -396,7 +396,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +408,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -792,6 +792,30 @@
 
 
 
+### [实用的-JavaScript-函数测试指南：不让你的工作流程复杂化](https://www.sitepoint.com/a-practical-guide-to-testing-javascript-functions-without-overcomplicating-your-workflow/)
+
+2026-10-14 15:00:07 | 标签: 编程与工程, 测试与质量, 开发者工具, 代码质量, TypeScript
+
+> 本文介绍了一种实用的 JavaScript 函数测试方法，强调验证业务逻辑和处理边缘情况的重要性。它展示了如何使用 Node.js 的内置测试运行器，为折扣计算函数创建一个测试套件，涵盖典型输入、边界值和无效数据。该指南提倡保持测试简单、易读和独立，并建议将测试融入开发工作流程，以便尽早发现错误。
+
+
+
+### [如何将网站从-cPanel-迁移到其他控制面板并避免停机](https://www.sitepoint.com/how-to-move-a-site-off-cpanel-to-another-control-panel-without-downtime/)
+
+2026-10-14 15:00:07 | 标签: 编程与工程, 数据库, 商业模式与战略, Web Hosting, cPanel
+
+> 本文提供了一种将网站从 cPanel 迁移到其他控制面板的综合策略。它首先对所有网站组件（域名、数据库、邮件、定时任务等）进行详细清单，然后逐步进行 DNS TTL 降低、数据提取、新面板选择、文件和数据库复制、邮件迁移、设置重建，最后切换 DNS。该指南重点强调在过渡期间同时运行两台服务器，以便进行彻底测试，并能在出现问题时回滚。
+
+
+
+### [Cloudflare-收購的-Vite+推出-1.0-版，新增-GitLab-CI-支持、鉤子，並遷移至-tsup](https://www.infoq.com/news/2026/10/cloudflare-viteplus-stable/)
+
+2026-10-14 14:15:00 | 标签: 编程与工程, React, 后端开发, TypeScript, Node.js
+
+> 由 Cloudflare 收購的 VoidZero 開發的 Vite+ 1.0 相比 beta 版進行了重大改進，包括一個新的 GitLab CI 行動、增強的 tsup 項目遷移能力，以及強大的診斷命令。該工具鏈仍然圍繞`vp`命令進行，`vp`命令從單一配置文件管理 Node.js、包管理器和一系列前端工具（如 Vite、Vitest、Oxlint 等）。該版本還強調了與 Vitest 5 和 Oxc 等底層工具的更新整合，同時解決了關於調試和文件結構的用戶反饋。
+
+
+
 ### [如何在-Next.js-网站中添加结构化数据（JSON-LD）并进行验证](https://www.freecodecamp.org/news/nextjs-json-ld-structured-data/)
 
 2026-10-11 17:31:06
@@ -840,7 +864,7 @@
 
 
 
-### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
 
 2026-10-07 23:00:07
 
@@ -852,7 +876,7 @@
 
 
 
-### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
 
 2026-10-07 23:00:07
 
@@ -1110,7 +1134,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1122,7 +1146,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2400,13 +2424,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2556,13 +2580,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -4056,13 +4080,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5766,13 +5790,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

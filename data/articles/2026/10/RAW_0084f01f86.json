@@ -1,0 +1,53 @@
+{
+  "id": "RAW_0084f01f86",
+  "title": "量子化 AI 26/09：永续在线的代理，Gemini 4 和 Pi 1",
+  "url": "https://dev.to/soverius-ai/quantized-ai-2609-always-on-agents-gemini-4-and-pi-1-3eaf",
+  "date": "2026-10-15 03:07:11",
+  "author": "Rainer Hahnekamp",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <h2><a name=\"openai-dots-and-alwayson-agents\" href=\"#openai-dots-and-alwayson-agents\"> </a> OpenAI Dots and Always-On Agents</h2>\n  <p>OpenAI presented its <a href=\"https://openai.com/index/introducing-dots/\" target=\"_blank\" rel=\"noopener noreferrer\">Dots</a>, agents that run in the background, integrate with different tools, and autonomously do their work within the permissions we give them.</p>\n  <p>Dots are being rolled out to eligible Pro, Business Premium, and Enterprise users. In Europe, Pro access is not available yet.</p>\n  <p>OpenAI also gave Dots a visual character, which makes the assistant more tangible for non-tech users.</p>\n  <p>Dots are just there. They do their work and communicate with us through familiar channels like Slack and Teams. So end users don't have to open a specific agentic application for every task. These agents are available where we already work. This makes them much easier to work with, especially if they proactively find useful tasks and complete them to our satisfaction.</p>\n  <p>That doesn't mean unlimited autonomy. Connected background research is read-only, and further actions depend on permissions and approvals.</p>\n  <p>The idea of having always-on agents is not new, and OpenAI is definitely not the inventor. Always-on agents became more widely known with <a href=\"https://openclaw.ai/blog/introducing-openclaw\" target=\"_blank\" rel=\"noopener noreferrer\">OpenClaw</a> at the beginning of this year. Messengers were a primary interface, and background work and scheduling were part of the idea.</p>\n  <p>We have also seen projects like <a href=\"https://hermes-agent.nousresearch.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Hermes</a> and <a href=\"https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/\" target=\"_blank\" rel=\"noopener noreferrer\">Meta Muse</a>. OpenAI's Dot is another example of this approach. CopilotKit released <a href=\"https://www.copilotkit.ai/blog/introducing-opendots\" target=\"_blank\" rel=\"noopener noreferrer\">OpenDots</a>, an open-source alternative, shortly after Dots was announced.</p>\n  <h3><a name=\"analysis\" href=\"#analysis\"> </a> Analysis</h3>\n  <p>For us, the bigger topic is not just OpenAI Dots. It is that always-on agents are becoming a new technology layer. They are there, they work in the background, and they reach us through channels we already use. We don't have to explicitly prompt them for every single step or install a separate application. If those agents prove they can find and finish their work to users' satisfaction, this could be another milestone in bringing AI to a wider audience.</p>\n  <h2><a name=\"gemini-4-argon\" href=\"#gemini-4-argon\"> </a> Gemini 4 Argon</h2>\n  <p>Google was an early player in AI and has contributed a lot of research and pioneering work. But when ChatGPT came out, it seemed that Google was losing ground and couldn't keep up. They had a comeback with Gemini 3, but to us it still looked like they were struggling to keep up with the rapid progress we saw from Anthropic, OpenAI, xAI and the Chinese vendors.</p>\n  <p>Now, so it seems, they have a big comeback with <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/\" target=\"_blank\" rel=\"noopener noreferrer\">Gemini 4 Argon</a>. Google has just made Argon available to Google AI Pro and Ultra subscribers. Since access has only just opened, we don't have hands-on experience with it yet.</p>\n  <p>Google has already released a blog post, and evaluators such as <a href=\"https://artificialanalysis.ai/models/gemini-4-argon\" target=\"_blank\" rel=\"noopener noreferrer\">Artificial Analysis</a> have had access.</p>\n  <p>Google also published a benchmark comparison in its announcement, which we can look at here. These are Google's reported results, with the setup explained in its <a href=\"https://deepmind.google/models/evals-methodology/gemini-4-argon\" target=\"_blank\" rel=\"noopener noreferrer\">evaluation methodology</a>.</p>\n  <h3><a name=\"analysis\" href=\"#analysis\"> </a> Analysis</h3>\n  <p>Looking at the benchmarks Google published, Argon looks like a big comeback. Of course, these are Google's reported results, but they show why this release is worth watching.</p>\n  <p>We see that Google, as a mature company, doesn't have to rush or throw everything in to be at the frontier. They have other markets as well. Still, they undoubtedly have the resources to develop frontier models.</p>\n  <p>The other aspect that speaks for Google is security. Looking at the incidents at the labs and what has become public over the past few months, we see a gap between what these labs say about security and what happens in practice. This is our interpretation of those incidents, not a measured comparison of the models' safety.</p>\n  <p>On the other side, we have Google, with established guidelines, rules, and quite a lot of company experience and knowledge about security. From our experience with Google, security plays a different, much more central, role there.</p>\n  <p>And that's why we can expect, although we don't know for sure, that when it comes to security concerns, models may be in better hands at Google than at some of the other labs. That is our analysis, not a guarantee.</p>\n  <p>Pi is a coding agent, less popular than Codex or Claude Code, but far from unknown. It is seen as a more purist, minimalist agent. One could call it the underdog of the coding agents.</p>\n  <p>In its earlier releases, it had only read, write, edit, and execute tool calls: no built-in MCP, no special web search, no built-in subagents, or a hardened permission system. But that was on purpose.</p>\n  <p>Pi is extremely extensible, so professional developers can customize and extend it exactly how they need.</p>\n  <p>Pi has been <a href=\"https://earendil.com/posts/pi-1-0/\" target=\"_blank\" rel=\"noopener noreferrer\">released in version 1 under Earendil</a>. Its primary surface is the CLI, but community desktop interfaces are available as well.</p>\n  <p>It is not bound to a single model vendor. It supports different providers, using subscriptions where the provider permits that integration, or API access and separate billing otherwise. We should not confuse a working login integration with permission to reuse every provider's subscription.</p>\n  <p>Pi 1 now also supports <a href=\"https://earendil.com/posts/you-said-no-mcp/\" target=\"_blank\" rel=\"noopener noreferrer\">MCP and Codemode</a>. Codemode lets the agent use small scripts to combine tool calls and process their results. That sandbox is not the same as sandboxing everything the coding agent can do on your machine.</p>\n  <p>Alongside Pi 1, Earendil released <a href=\"https://earendil.com/posts/pi-durable/\" target=\"_blank\" rel=\"noopener noreferrer\">Pi Durable</a>, an experimental framework for building long-running agents that can resume their work after interruptions. It is a foundation for always-on agents, not a ready-made personal assistant.</p>\n  <p>One last thing we would like to add from a personal perspective. Like Soverius AI, Pi is also Austrian. It was created by Mario Zechner, who <a href=\"https://mariozechner.at/posts/2026-04-08-ive-sold-out/\" target=\"_blank\" rel=\"noopener noreferrer\">joined Earendil</a>, the company co-founded by Armin Ronacher and Colin Hanna.</p>\n  <h3><a name=\"analysis\" href=\"#analysis\"> </a> Analysis</h3>\n  <p>It is important that we have coding harnesses which are not bound to a very specific vendor. This lets us use different models with mature coding agents, plus a community, plugins, extensions, and more.</p>\n  <p>We also think it is good when the labs support users reusing their subscriptions in other coding agents. OpenAI provides an <a href=\"https://developers.openai.com/siwc/quickstart\" target=\"_blank\" rel=\"noopener noreferrer\">official route for participating clients</a>. That is the direction we would like to see more vendors take; not every vendor currently supports it on the same terms.</p>\n  <hr>\n  <p>Read the original article on <a href=\"https://soverius.ai/blog/quantized-ai-2609\" target=\"_blank\" rel=\"noopener noreferrer\">Soverius AI</a>.</p>\n </body>\n</html>",
+  "aiSummary": "这篇文章探讨了永续在线 AI 代理的兴起，重点介绍了 OpenAI 的 Dots 及其与现有通信平台的集成。此外，还讨论了 Google 的 Gemini 4 Argon，该模型在基准测试中表现出显著的性能提升，以及 Pi 1 的发布——一个具有高扩展性的编码代理，支持 MCP 和 Codemode。",
+  "oneSentenceSummary": "这篇文章探讨了永续在线 AI 代理的兴起，重点介绍了 OpenAI 的 Dots 及其与现有通信平台的集成。此外，还讨论了 Google 的 Gemini 4 Argon，该模型在基准测试中表现出显著的性能提升，以及 Pi 1 的发布——一个具有高扩展性的编码代理，支持 MCP 和 Codemode。",
+  "summary": "AI 领域正朝着持久、后台运行的代理方向发展，这些代理可以无缝融入日常工作流程。OpenAI 的 Dots 代表了这一趋势，允许在定义好的权限范围内进行自主任务执行。与此同时，Google 的 Gemini 4 Argon 证明了其在模型性能上的回归，而 Pi 1 提供了一个灵活、供应商无关的平台用于编码自动化。",
+  "mainPoints": [
+    {
+      "point": "永续在线代理正在成为一种标准的底层技术，与现有的通信渠道集成，而不再需要单独的应用程序。",
+      "explanation": "OpenAI 的 Dots 以及类似的项目，如 OpenClaw 和 Hermes，表明 AI 助手正在进化，它们会在后台工作，主动完成任务，并通过诸如 Slack 和 Teams 等熟悉的接口进行通信。"
+    },
+    {
+      "point": "Google 的 Gemini 4 Argon 显示出显著的性能提升，表明该公司的 AI 竞争实力强劲。",
+      "explanation": "基准测试结果显示，Argon 在包括推理和视觉语言理解在内的多个任务中都优于前几代模型，这将 Google 定位为前沿模型市场的有力竞争者。"
+    },
+    {
+      "point": "Pi 1 提供了一个高度可扩展的、供应商无关的编码自动化平台，支持 MCP 和 Codemode。",
+      "explanation": "与依赖特定提供商的代理不同，Pi 1 允许开发者选择自己的偏好模型，并通过插件和自定义脚本扩展代理的功能，使其成为一个通用且多功能的软件开发工具。"
+    }
+  ],
+  "keyQuotes": [
+    "Dots 就在那儿。它们完成自己的工作，并和我们在 Slack 和 Teams 上沟通。",
+    "永续在线代理的概念并不新，OpenAI 当然不是发明者。",
+    "看 Google 的基准测试，Argon 是一次大回归。",
+    "Pi 是非常可扩展的，专业开发者可以完全按照自己的需求来定制和扩展它。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "大语言模型 (LLM)",
+    "趋势观察",
+    "OpenAI",
+    "Google"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 84,
+  "wordCount": 1007,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1792004831000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-15 03:07:11"
+}

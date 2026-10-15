@@ -1,0 +1,50 @@
+{
+  "id": "RAW_465579f066",
+  "title": "Kandinsky 6.0 在 16 GB GPU 上：官方配方内存溢出，只有 29B 模型通过西班牙语测试",
+  "url": "https://dev.to/efraingaray/kandinsky-60-on-a-16-gb-gpu-the-official-recipe-runs-out-of-memory-and-only-the-29b-model-passed-2lel",
+  "date": "2026-10-15 02:27:33",
+  "author": "Efrain Garay",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Kandinsky 6.0 generates five seconds of video <strong>with its audio</strong>, voices included, from a text prompt (MIT license). I wanted to know two things: does it run on a 16 GB card, and can it speak Spanish?</p>\n  <p><strong>Memory.</strong> On a rented 16 GB RTX 4080, the README recipe (per-component CPU offload) ran out of memory with the distilled Lite model; the Qwen2.5-VL text encoder files alone add up to 15.45 GiB. An 8-bit text encoder and sequential offload failed too. What worked was a two-phase recipe: compute the prompt embeddings first, streaming the encoder through the GPU in groups of layers, then drop it and generate with a tiled video VAE. PyTorch allocated at most 11.24 GiB; a vertical clip took about 141 s; the process reached 45.9 GiB of system RAM.</p>\n  <p><strong>Speech.</strong> Eight scenes with one Spanish line each, two seeds, scored with faster-whisper large-v3 against the requested line. The rule, written before running: median word error ≤ 0.20 and Spanish detected in ≥ 12 of 16 clips.</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>Model</th>\n      <th>Median Spanish WER</th>\n      <th>Clips with WER ≤ 0.20</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Lite distilled (3B, 10 steps)</td>\n      <td>1.06</td>\n      <td>1 of 16</td>\n     </tr>\n     <tr>\n      <td>Lite undistilled (50 steps, guidance 5)</td>\n      <td>0.75</td>\n      <td>1 of 16</td>\n     </tr>\n     <tr>\n      <td>Pro distilled (29B, 10 steps)</td>\n      <td><strong>0.15</strong></td>\n      <td><strong>9 of 16</strong></td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>Only Pro met the rule, and its process reached 120 GiB of RAM at roughly 12 to 23 minutes per clip (RTX 3090 with PyTorch memory capped at 15.57 GiB, transformer streamed block by block). The data is compatible with an advantage of the bigger model, but it cannot separate size from distillation.</p>\n  <p>The full write-up has the recipes, the component diagram, clips with what Whisper heard, the threats to validity (three external audits), and a demo: the small model's video with a replaced voice and the mouth redrawn by LatentSync 1.6.</p>\n  <p><strong>Read the full measurements → <a href=\"https://efraingaray.com/en/blog/kandinsky6-video-audio-16gb/\" target=\"_blank\" rel=\"noopener noreferrer\">https://efraingaray.com/en/blog/kandinsky6-video-audio-16gb/</a></strong></p>\n  <p>Scripts, the pre-registration sheet and the raw JSONL: <a href=\"https://gist.github.com/EfrainGaray/e38005fb2d7b8abe25045c2d1e0f1526\" target=\"_blank\" rel=\"noopener noreferrer\">gist</a>.</p>\n </body>\n</html>",
+  "aiSummary": "这篇文章详细介绍了一种在 16 GB GPU 上高效运行 Kandinsky 6.0 的实现，采用了两步法来处理大型模型组件。结果显示，小模型未能满足语音准确性要求，但 29B Pro 模型成功生成了具有准确西班牙语音频的高质量视频。",
+  "oneSentenceSummary": "这篇文章详细介绍了一种在 16 GB GPU 上高效运行 Kandinsky 6.0 的实现，采用了两步法来处理大型模型组件。结果显示，小模型未能满足语音准确性要求，但 29B Pro 模型成功生成了具有准确西班牙语音频的高质量视频。",
+  "summary": "作者探讨了在 16 GB GPU 上运行 Kandinsky 6.0 视频生成模型的可能性，并特别针对其生成西班牙语音频的能力进行测试。最初使用官方配方尝试失败，因为内存不足，这促使作者开发了一种自定义的两步法，成功在硬件限制内运行模型。评估显示，只有较大参数量的 29B 模型能够产生准确的语音，满足设定的质量阈值。",
+  "mainPoints": [
+    {
+      "point": "官方 Kandinsky 6.0 配方与 16 GB GPU 不兼容。",
+      "explanation": "标准实现要求加载整个模型，包括大型 Qwen2.5-VL 文本编码器，这将超出可用内存。这导致了“CUDA 显存不足”错误，使得模型无法在消费级硬件上使用，除非进行修改。"
+    },
+    {
+      "point": "一个两步法成功地在 16 GB GPU 上运行模型。",
+      "explanation": "通过将计算分成两个独立阶段——首先生成提示嵌入，然后生成视频——内存占用率被显著降低。这使得模型能够高效运行，最多使用 11.24 GB 的 GPU 内存和大约 45.9 GB 的系统 RAM。"
+    },
+    {
+      "point": "只有 29B Pro 模型达到了可接受的语音质量。",
+      "explanation": "评估标准要求中值单词错误率（WER）低于或等于 0.20。虽然较小的模型（Lite 精简版和 Lite 未精简版）未能达到这一标准，但 29B Pro 模型实现了 0.15 的 WER，这表明所生成音频的质量有了显著提升。"
+    }
+  ],
+  "keyQuotes": [
+    "在一台租用的 16 GB RTX 4080 上，README 中的配方（按组件 CPU 离散加载）在运行精简版模型时内存溢出了；仅 Qwen2.5-VL 文本编码器的文件就占用了 15.45 GiB。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型训练与推理",
+    "AI 硬件与芯片",
+    "大语言模型 (LLM)",
+    "测试与质量"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 313,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1792002453000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-10-15 02:27:33"
+}

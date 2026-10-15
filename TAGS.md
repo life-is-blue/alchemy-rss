@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-10-15 06:51:00 | [返回首页](/README.md)
+**更新时间**: 2026-10-15 10:18:40 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17016)
+- [AI & 大模型](#ai-llm) (17056)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1028)
-- [DevOps](#devops) (823)
+- [前端与全栈](#frontend-fullstack) (1031)
+- [DevOps](#devops) (825)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7129)
+- [其他](#other) (7139)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [HiRO-ACEv2：以极低成本实现-3-公里分辨率的极端天气模拟](https://huggingface.co/blog/allenai/hiro-acev2) - AI 精选
+- [Natura-1-发布：从百万小时人类经验中学会零样本泛化与灵巧操作](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=1&sn=fa2d7404984d41c4d2e1e61c8caa24af) - AI 精选
+- [苹果-LensVLM：长上下文压缩成图片，模型边看边「放大」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=3&sn=7b77525c43945b4e5a775f0d78cb4cbd) - AI 精选
 - [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
 - [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
 - [Gemini-4-Argon：为解决棘手难题而生](https://deepmind.google/blog/introducing-gemini-4-argon/) - AI 精选
@@ -39,11 +42,8 @@
 - [GPT-6-系列模型使用指南](https://openai.com/index/practical-guide-building-gpt-6) - AI 精选
 - [由内而外的-AI：Airbnb-的幕后重构与客端体验](https://www.latent.space/p/airbnb) - AI 精选
 - [使用-Helion-构建高性能且可移植的-vLLM-线性后端](https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/) - AI 精选
-- [Pi-1.0：为何接纳-MCP，又推出-Pi-Durable？](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247492712&idx=1&sn=685aff648a78ca50938a1928930c29d4) - AI 精选
-- [Claude-时代的科学](https://www.anthropic.com/research/claude-shaped-science) - AI 精选
-- [永恒的互补品](https://openai.com/index/the-eternal-complement) - AI 精选
 
-- [查看全部 17016 篇...](/details/tags/ai-llm.md)
+- [查看全部 17056 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 
-- [查看全部 1028 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1031 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -112,6 +112,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [$1M-Vercel-Sandbox-挑战的发现](https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge) - 编程 精选
 - [使用-Transformers-在导出前对日志进行过滤、重塑和脱敏](https://blog.cloudflare.com/transformers-on-logpush/) - 编程 精选
 - [当事故拒绝结束](https://www.infoq.com/presentations/stream-incidents/) - 编程 精选
 - [您的-Worker-现在可以拥有前置缓存](https://blog.cloudflare.com/workers-cache/) - 编程 精选
@@ -128,9 +129,8 @@
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [Cloudflare-2025-年-11-月-18-日全球服务中断事件](https://blog.cloudflare.com/18-november-2025-outage/) - 编程 精选
 - [Docker-构建详解：上下文、架构与性能优化](https://www.freecodecamp.org/news/docker-build-tutorial-learn-contexts-architecture-and-performance-optimization-techniques/) - 编程 精选
-- [Cloudflare-15-周年：2025-生日周回顾](https://blog.cloudflare.com/birthday-week-2025-wrap-up/) - 编程 精选
 
-- [查看全部 823 篇...](/details/tags/devops.md)
+- [查看全部 825 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7129 篇...](/details/tags/other.md)
+- [查看全部 7139 篇...](/details/tags/other.md)
 
 
