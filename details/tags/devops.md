@@ -1,4 +1,4 @@
-> **更新时间**: 2026-10-15 10:18:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-10-15 16:42:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,9 +26,7 @@
 
 ### [$1M-Vercel-Sandbox-挑战的发现](https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge)
 
-2026-10-14 15:00:00 | 标签: 编程与工程, 安全, Linux, Vercel, 沙箱
-
-> Vercel Sandbox 挑战于 8 月进行，为期两周，收到了 1，285 份报告并支付了 $242，000 的赏金。最重大的发现是由 Paulos Yibelo 发现的 Linux kernel 网络栈中的零日漏洞，该漏洞允许主机内存泄漏、主机崩溃和代码执行。其他值得注意的发现包括 Linux device-mapper 中的跨租户数据泄漏以及各种策略边界漏洞。尽管存在这些漏洞，但没有报告显示未授权访问客户数据。
+2026-10-14 15:00:00
 
 
 
@@ -670,9 +668,7 @@
 
 ### [提升你的管道：Qodana-的顶尖-6-大-CI/CD-集成](https://blog.jetbrains.com/qodana/2026/10/boost-your-pipeline-top-6-ci-cd-integrations-for-qodana/)
 
-2026-10-14 20:48:04 | 标签: 编程与工程, 代码质量, 开发者工具, 云原生 / DevOps, 个人效率
-
-> 文章讨论了将静态代码分析集成到 CI/CD 管道中的重要性，以便早期发现质量问题并强制执行一致的编码标准。文章回顾了六个流行的 CI/CD 平台，详细介绍了它们与 Qodana 的具体集成，包括设置说明、优缺点。所涉及的平台分别是 GitHub Actions、GitLab、TeamCity、Jenkins、Azure Pipelines 和 CircleCI，每个平台都为将 Qodana 纳入开发工作流程提供了独特的特性。
+2026-10-14 20:48:04
 
 
 
