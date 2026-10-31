@@ -1,0 +1,60 @@
+{
+  "id": "RAW_543ef496c5",
+  "title": "Netflix 将 GPU 可靠性视为分布式系统问题",
+  "url": "https://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/",
+  "date": "2026-10-30 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Netflix has <a href=\"https://netflixtechblog.com/reliable-gpu-compute-for-large-training-inference-jobs-d62b03a96d7a\">detailed</a> how it is building a reliability platform for large-scale GPU training and inference, using layered health checks, automated remediation, and fault-tolerant training to keep jobs running despite hardware failures.</p>\n   <p dir=\"ltr\">The problem is particularly acute for large AI training jobs. A model may run for weeks across hundreds of GPUs, with all workers operating in lockstep. A single failed GPU, degraded network adapter, or slow machine can therefore stop or significantly slow the entire workload. Netflix has built its GPU compute platform on <a href=\"https://kubernetes.io/\">Kubernetes</a> and designed it to detect these failures, remove unhealthy capacity automatically, and allow long-running jobs to recover from machine loss.</p>\n   <p dir=\"ltr\">The approach has produced measurable results: Netflix reports more than 99.95% GPU-node availability and an increase in job success from approximately 98% to more than 99.5%.</p>\n   <p dir=\"ltr\">A conventional cloud health check can establish that a virtual machine is running and reachable, but that does not mean its GPUs are capable of running a distributed training workload.</p>\n   <p dir=\"ltr\">Netflix found that a GPU can respond normally to a status query while failing once memory is allocated or sustained computation begins. Similarly, a network adapter may be present but have fewer links than expected, allowing collective operations to continue at severely reduced bandwidth.</p>\n   <p dir=\"ltr\"><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/news/2026/10/netflix-gpu-distributed-systems/en/resources/11_73vlwnPR6M7b1cYx43QeGw-1792576901909.webp\" src=\"https://res.infoq.com/news/2026/10/netflix-gpu-distributed-systems/en/resources/11_73vlwnPR6M7b1cYx43QeGw-1792576901909.webp\" rel=\"share\"></p>\n   <p dir=\"ltr\">Device-level checks use <a href=\"https://developer.nvidia.com/dcgm\">NVIDIA DCGM</a> to monitor GPU errors, memory, interconnect, and thermal conditions, while networking checks inspect the state and number of high-speed<a href=\"https://aws.amazon.com/hpc/efa/\"> Elastic Fabric Adapter</a> interfaces. A Kubernetes node agent converts these results into node conditions that controllers can act upon.</p>\n   <p dir=\"ltr\">The checks are deliberately designed to fail closed. If a diagnostic tool hangs, its timeout marks the machine unhealthy rather than allowing a broken check to report success. Netflix also maintains fallback paths using kernel logs when the normal GPU diagnostic mechanism itself fails.</p>\n   <p dir=\"ltr\">Detecting a fault is only half the problem. Netflix has built controllers that progressively respond to failures rather than immediately replacing an entire machine.</p>\n   <p dir=\"ltr\">A transient problem can initially block new work while allowing existing workloads to continue. If the condition persists, the machine is drained, and its workloads are moved. Depending on the failure, remediation can range from killing a problematic job or resetting a GPU to rebooting the machine or replacing it entirely.</p>\n   <p dir=\"ltr\">This approach integrates with <a href=\"https://karpenter.sh/\">Karpenter's</a> node auto-repair capabilities, with Netflix adding policies that determine how long to tolerate different failures and how much of the cluster can be disrupted at once.</p>\n   <p dir=\"ltr\">Netflix also accepts that hardware failures cannot be eliminated. Instead, its training platform makes them cheaper to recover from.</p>\n   <p dir=\"ltr\">Large jobs use checkpointing and elastic workers, allowing training to resume from the last healthy checkpoint when a machine is lost. The platform can then automatically retry failures, while application failures are classified separately to avoid repeatedly restarting jobs with genuine software bugs.</p>\n   <p dir=\"ltr\">Netflix also treats the training job itself as a distributed system. Rather than looking only for failed machines, it can identify a single slow rank that is holding the rest of the job back. This matters because a GPU does not have to fail to reduce the throughput of a synchronous workload.</p>\n   <p dir=\"ltr\"><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/news/2026/10/netflix-gpu-distributed-systems/en/resources/11_E194fQZ3PRUDlq0AU5VQPg-1792576901909.webp\" src=\"https://res.infoq.com/news/2026/10/netflix-gpu-distributed-systems/en/resources/11_E194fQZ3PRUDlq0AU5VQPg-1792576901909.webp\" rel=\"share\"></p>\n   <p dir=\"ltr\">Netflix is also using<a href=\"https://www.nvidia.com/en-us/technologies/multi-instance-gpu/\"> NVIDIA's Multi-Instance GPU (MIG)</a> capabilities to allow smaller inference workloads to share GPUs while maintaining memory-level isolation between tenants.</p>\n   <p dir=\"ltr\">This improves utilisation compared with dedicating an entire GPU to every workload. Netflix is also working towards Kubernetes Dynamic Resource Allocation (DRA), which should allow more expressive resource requests and topology-aware placement, including ensuring that GPUs, network adapters and CPUs are positioned appropriately within the machine.</p>\n   <p dir=\"ltr\"><a href=\"https://engineering.fb.com/2025/07/22/data-infrastructure/how-meta-keeps-its-ai-hardware-reliable/\">Meta</a> also uses extensive hardware diagnostics, automated remediation, checkpointing, and rapid recovery. Its recent work focuses heavily on detecting hardware faults, including difficult silent data corruption (SDCs), across extremely large AI clusters. Meta reports that hardware failures accounted for more than 66% of training interruptions in its Llama 3 experience.</p>\n   <p dir=\"ltr\">Netflix's architecture places particularly strong emphasis on closing the operational loop: validate hardware before scheduling, monitor it during execution, identify the failure domain, remediate automatically, and measure the resulting goodput. Meta, meanwhile, has invested heavily in hardware-level fault detection and cluster maintenance as well as recovery.</p>\n   <p dir=\"ltr\">Both approaches reflect the same underlying reality: at thousands of GPUs, reliability can no longer be treated as simply keeping individual machines available.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Netflix Treats GPU Reliability as a Distributed Systems Problem\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1793361600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 为大规模 GPU 训练和推理开发了一套全面的可靠性平台，利用分层健康检查、自动化修复和容错训练，在硬件故障的情况下仍保持高可用性和作业成功率。",
+  "oneSentenceSummary": "Netflix 为大规模 GPU 训练和推理开发了一套全面的可靠性平台，利用分层健康检查、自动化修复和容错训练，在硬件故障的情况下仍保持高可用性和作业成功率。",
+  "summary": "文章详细介绍了 Netflix 确保其基于 Kubernetes 构建的 GPU 计算平台可靠性的方法。它重点阐述大型 AI 训练作业面临的特殊挑战：单个硬件故障就可能导致整个工作负载停滞。Netflix 通过实施设备级和网络健康检查、自动化故障响应机制，以及支持检查点和弹性工作节点的训练平台来应对这一问题。这一策略实现了超过 99.95% 的 GPU 节点可用性，并显著提升了作业成功率。",
+  "mainPoints": [
+    {
+      "point": "GPU 可靠性的关键本质",
+      "explanation": "大型 AI 训练作业需要数百块 GPU 同步运行数周。GPU、网络适配器或 CPU 的单个故障就可能导致整个工作负载灾难性减速或完全失败。传统的云健康检查不足以应对，因为它们无法验证分布式训练所需的特定能力。"
+    },
+    {
+      "point": "分层健康检查",
+      "explanation": "Netflix 采用多层诊断方法。这包括使用 NVIDIA DCGM 监控 GPU 指标的设备级检查，以及验证高速接口完整性的网络检查。系统设计为故障关闭，即如果诊断工具无法运行，机器会被标记为不健康，而不是让可能 faulty 的检查通过。"
+    },
+    {
+      "point": "自动化修复与渐进式故障响应",
+      "explanation": "平台不会立即替换故障机器。相反，它采用渐进式策略：可能最初阻止新工作，同时允许现有作业继续，然后如果问题持续存在则排空机器。修复操作范围从重置 GPU 到重启或替换整个节点，所有这些都与 Kubernetes 的自动修复能力集成。"
+    },
+    {
+      "point": "容错训练",
+      "explanation": "Netflix 将其训练平台设计为能够抵御硬件损失。通过利用检查点和弹性工作节点，系统可以检测故障机器，保存当前状态，并使用新的工作节点从该点恢复训练。这允许快速恢复，而无需从头重新启动整个作业。"
+    },
+    {
+      "point": "优化资源利用与未来方向",
+      "explanation": "为了最大化效率，Netflix 使用 NVIDIA 的多实例 GPU（MIG）技术，允许较小的工作负载通过内存隔离共享 GPU。该公司还致力于实施 Kubernetes 动态资源分配（DRA），以实现更复杂的资源请求和拓扑感知放置，确保未来工作负载的最佳性能。"
+    }
+  ],
+  "keyQuotes": [
+    "传统的云健康检查可以确认虚拟机正在运行且可访问，但这并不意味着其 GPU 能够运行分布式训练工作负载。",
+    "Netflix 构建了控制器，能够渐进式地响应故障，而不是立即替换整台机器。",
+    "Netflix 也接受硬件故障无法消除的事实。相反，其训练平台让从故障中恢复的成本更低。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "分布式系统",
+    "AI 硬件与芯片",
+    "系统设计",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 701,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793361600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-30 20:00:00"
+}

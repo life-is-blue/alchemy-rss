@@ -1,0 +1,50 @@
+{
+  "id": "RAW_935592f1e9",
+  "title": "DoorDash 借助 AI 智能体将杂货复购延迟从 16 秒降至 2 秒",
+  "url": "https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/",
+  "date": "2026-10-30 21:31:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>DoorDash cut latency in its<a href=\"https://careersatdoordash.com/blog/building-ask-doordash-part-6-grocery-reorder-case-study/\"> AI-powered grocery reorder flow</a> from about 16 seconds to 2 seconds by precomputing recurring purchase needs instead of rebuilding them with each request. The change doubled shopping list views and increased the flow’s order rate by approximately 34%. The implementation builds on DoorDash’s<a href=\"https://careersatdoordash.com/blog/building-ask-doordash-part-four-a-platform-for-building_and_evolving_agents/\"> shared agent platform</a> and<a href=\"https://careersatdoordash.com/blog/building-ask-doordash-part-5-a-grounded-interface-for-shopping-agents/\"> grounded shopping interface</a>, which provide reusable agent infrastructure and let consumers modify shopping lists directly.</p>\n   <p>The implementation combines batch large language model (LLM) inference, deterministic validation, and live product catalog resolution within<a href=\"https://www.infoq.com/news/2026/07/doordash-ai-ask-assistant/\"> Ask DoorDash</a>, the company’s conversational shopping assistant. Previous InfoQ coverage described how Ask DoorDash uses specialized agents and tools to support conversational discovery and shopping.&nbsp;For grocery reordering, DoorDash processes 90 days of purchase history alongside consumer profile signals. Batch LLM inference identifies likely recurring purchases, while deterministic validation checks the generated results before storing reusable shopping list data.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/news/2026/10/doordash-ai-grocery-reorder/en/resources/1doordashofflinegroceryreoder-1791755023304.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/10/doordash-ai-grocery-reorder/en/resources/1doordashofflinegroceryreoder-1791755023304.jpeg\" rel=\"share\"></p>\n   <p><em>DoorDash’s grocery reorder architecture (Source: <a href=\"https://careersatdoordash.com/blog/building-ask-doordash-part-6-grocery-reorder-case-study/\">DoorDash Blog Post</a>)</em></p>\n   <p>The serving path retrieves this prepared data and resolves each item against the current catalog. It first tries to match the original store item, then a catalog product identifier, and finally a search term. This allows the system to accommodate changing listings and unavailable products without repeating historical reasoning for every request.</p>\n   <p>The shared platform provides orchestration, memory, model access, tracing, evaluation infrastructure, and rollout controls. Domain teams retain ownership of agent instructions, skills, tools, and evaluation criteria. DoorDash reports that adding its Reservations agent took one week, approximately ten times faster than building its initial domain agents.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/news/2026/10/doordash-ai-grocery-reorder/en/resources/1sharedplatform-1791755023303.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/10/doordash-ai-grocery-reorder/en/resources/1sharedplatform-1791755023303.jpeg\" rel=\"share\"></p>\n   <p><em>Ask DoorDash shared agent platform architecture (Source: <a href=\"https://careersatdoordash.com/blog/building-ask-doordash-part-four-a-platform-for-building_and_evolving_agents/\">DoorDash Blog Post</a>)</em></p>\n   <p>&nbsp;</p>\n   <p><a href=\"https://www.linkedin.com/in/twishajain/\">Twisha Jain</a>, a DoorDash engineer, described the design rationale in a<a href=\"https://www.linkedin.com/posts/twishajain_llm-agenticai-personalization-share-7509340040095809536-yWtW/\"> LinkedIn post</a>:</p>\n   <blockquote>\n    <p>Better agentic systems aren’t always about more reasoning; they’re about deciding what belongs in the agent loop and what can happen ahead of time.</p>\n   </blockquote>\n   <p>Moving recurring purchase analysis offline reduces the work required during a live request while retaining current catalog information for product selection. The system still invokes the Grocery agent for requests requiring additional reasoning, such as finding cheaper alternatives based on current prices, promotions, package sizes, inventory, and consumer preferences. Simpler operations, including changing quantities or removing products, update the shopping list directly without another LLM round trip.</p>\n   <p>A DoorDash engineering <a href=\"https://www.linkedin.com/posts/in-part-5-of-our-building-ask-doordash-engineering-share-7501696460359409664-ULwb/\">post</a> about its shopping interface states:</p>\n   <blockquote>\n    <p>A consumer’s direct edit is authoritative: the next agent turn starts from the edited list, not from what was said earlier.</p>\n   </blockquote>\n   <p>The design treats the shopping list as a structured artifact that both the consumer and agent can update, rather than relying solely on conversational history. Other grocery platforms also use AI to personalize shopping.<a href=\"https://company.instacart.com/updates/instacarts-ai-assistant-powered-by-14-years-of-grocery-expertise\"> Instacart’s AI shopping assistant</a> supports meal planning, list creation, and product discovery using consumer preferences and local grocery offerings. DoorDash’s implementation focuses specifically on reducing reorder latency by separating historical purchase analysis from live product resolution.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DoorDash Cuts Grocery Reorder Latency from 16 to 2 Seconds with AI Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1793367060000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DoorDash 通过离线预计算周期性购买需求，将杂货复购延迟大幅降低，订单率提升 34%，购物清单浏览量翻倍。",
+  "oneSentenceSummary": "DoorDash 通过离线预计算周期性购买需求，将杂货复购延迟大幅降低，订单率提升 34%，购物清单浏览量翻倍。",
+  "summary": "DoorDash 优化了其 AI 驱动的杂货复购流程，将历史购买分析与实时商品匹配分离。系统现在通过批量 LLM 推理预计算可能的周期性购买，并将其存储为可复用的购物清单，在请求时再与当前商品目录进行匹配。这一方法将延迟从约 16 秒降至 2 秒，显著提升了用户体验并提高了订单转化率。",
+  "mainPoints": [
+    {
+      "point": "离线预计算",
+      "explanation": "DoorDash 将周期性购买的分析（识别需要复购的商品）移至离线批处理流程。这使得系统可以为每位用户存储预先计算好的购物清单，无需在用户每次打开应用时重新运行分析。"
+    },
+    {
+      "point": "实时目录匹配",
+      "explanation": "在实际请求期间，系统检索预计算的清单，并将商品与当前产品目录进行匹配。这确保了复购建议与当前库存和价格保持同步，尽管核心决策是在离线完成的。"
+    },
+    {
+      "point": "共享平台基础设施",
+      "explanation": "该实现利用了 DoorDash 的共享智能体平台，该平台为编排、记忆和评估提供通用基础设施。这使得领域特定团队能够专注于杂货智能体的逻辑，而非从零构建底层系统。"
+    }
+  ],
+  "keyQuotes": [
+    "更好的智能体系统并不总是关乎更多推理；关键在于决定哪些环节应留在智能体循环中，哪些可以提前完成。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "大语言模型 (LLM)",
+    "LLM 推理优化",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 463,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793367060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-30 21:31:00"
+}
