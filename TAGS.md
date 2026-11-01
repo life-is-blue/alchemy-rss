@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-01 06:56:39 | [返回首页](/README.md)
+**更新时间**: 2026-11-01 11:05:58 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17078)
+- [AI & 大模型](#ai-llm) (17097)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1031)
-- [DevOps](#devops) (826)
+- [DevOps](#devops) (829)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7141)
+- [其他](#other) (7144)
 
 
 ---
@@ -22,9 +22,10 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Next-Concept-Modeling：快速、并行的由粗到细文本生成](https://hazyresearch.stanford.edu/blog/2026-10-12-ncm) - AI 精选
 - [HiRO-ACEv2：以极低成本实现-3-公里分辨率的极端天气模拟](https://huggingface.co/blog/allenai/hiro-acev2) - AI 精选
-- [Natura-1-发布：从百万小时人类经验中学会零样本泛化与灵巧操作](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=1&sn=fa2d7404984d41c4d2e1e61c8caa24af) - AI 精选
 - [苹果-LensVLM：长上下文压缩成图片，模型边看边「放大」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=3&sn=7b77525c43945b4e5a775f0d78cb4cbd) - AI 精选
+- [Natura-1-发布：从百万小时人类经验中学会零样本泛化与灵巧操作](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=1&sn=fa2d7404984d41c4d2e1e61c8caa24af) - AI 精选
 - [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
 - [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
 - [Gemini-4-Argon：为解决棘手难题而生](https://deepmind.google/blog/introducing-gemini-4-argon/) - AI 精选
@@ -41,9 +42,8 @@
 - [微调-0.8B-模型战胜托管-LLM-的单一任务](https://dev.to/abhash_chakraborty/fine-tuning-a-08b-model-to-beat-hosted-llms-at-one-job-4ajl) - AI 精选
 - [GPT-6-系列模型使用指南](https://openai.com/index/practical-guide-building-gpt-6) - AI 精选
 - [由内而外的-AI：Airbnb-的幕后重构与客端体验](https://www.latent.space/p/airbnb) - AI 精选
-- [使用-Helion-构建高性能且可移植的-vLLM-线性后端](https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/) - AI 精选
 
-- [查看全部 17078 篇...](/details/tags/ai-llm.md)
+- [查看全部 17097 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [Cloudflare-2025-年-11-月-18-日全球服务中断事件](https://blog.cloudflare.com/18-november-2025-outage/) - 编程 精选
 - [Docker-构建详解：上下文、架构与性能优化](https://www.freecodecamp.org/news/docker-build-tutorial-learn-contexts-architecture-and-performance-optimization-techniques/) - 编程 精选
 
-- [查看全部 826 篇...](/details/tags/devops.md)
+- [查看全部 829 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7141 篇...](/details/tags/other.md)
+- [查看全部 7144 篇...](/details/tags/other.md)
 
 

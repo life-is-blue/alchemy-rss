@@ -1,0 +1,50 @@
+{
+  "id": "RAW_d8a03b8f01",
+  "title": "Cloudflare 后量子 GeoKey Manager 进入封闭测试，弃用属性基加密",
+  "url": "https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/",
+  "date": "2026-11-01 03:56:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Cloudflare has moved a post-quantum rebuild of GeoKey Manager into closed beta, protecting geographically fenced decryption keys with a hybrid of ML-KEM-768 and X25519 and replacing the attribute-based encryption the service has relied on since 2022. The beta opened on October 23 to existing Data Localization Suite customers, with general availability planned for the first quarter of 2027.</p>\n   <p dir=\"ltr\">Chetan Agrawal, Arka Nayan and Erik Engstrom <a href=\"https://blog.cloudflare.com/post-quantum-geo-key-manager/\">describe the redesign</a> as addressing two requirements at once: data sovereignty rules that confine plaintext processing to a region, and harvest-now, decrypt-later attacks in which traffic captured today is decrypted once a quantum computer exists. GeoKey Manager first shipped in 2017 for TLS keys and moved to ciphertext-policy attribute-based encryption in 2022. Cloudflare gives two reasons for dropping that scheme: no production-ready post-quantum variant exists, and customers don't need the large number of regions it was built to express.</p>\n   <p dir=\"ltr\">In its place, key protection uses HPKE, the hybrid public-key encryption construction defined in <a href=\"https://www.rfc-editor.org/rfc/rfc9180\">RFC 9180</a>, with a key encapsulation mechanism (KEM) combining ML-KEM-768 and X25519, HKDF-SHA-256 and AES-256-GCM. Two kinds of keys replace the policy expressions. Regional root keys are 256-bit symmetric secrets held one per region. Application-specific key pairs are derived from a root for a single service, such as Tunnel or Gateway, and a single epoch, Cloudflare's term for a key generation that rotation advances. The key-management service derives the application key pair and wraps customer private keys under its public component.</p>\n   <p dir=\"ltr\"><img src=\"https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M5MYFASTEM1EXDP3SE6E9XKW.png&amp;w=1999&amp;h=1403&amp;q=100&amp;f=webp\" rel=\"share\"></p>\n   <p dir=\"ltr\"><em>(Source: <a href=\"https://blog.cloudflare.com/post-quantum-geo-key-manager/\">Cloudflare blog</a>)</em></p>\n   <p dir=\"ltr\">The two kinds of keys travel different paths: Quicksilver, Cloudflare's globally replicated key-value store, carries wrapped keys and metadata everywhere, while regional root keys move a separate path through the provisioning service, which stores them in Vault. Before an edge server receives a root key, it must clear three checks: TPM hardware identity verification, a lookup in Zinc, Cloudflare's server inventory, that maps the identity to a data center and location, and a decision by the provisioning service about which roots that server may hold.</p>\n   <p dir=\"ltr\">Authorized servers then load regional root keys into the kernel keyring rather than onto disk. Because that memory is volatile, \"a machine restart removes the keys,\" and the server has to authenticate again. Regional membership refreshes several times a day as the network changes, separately from key rotation and without customer action.</p>\n   <p dir=\"ltr\"><img src=\"https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M5MYF9CQQB2X5HEK81K7P947.png&amp;w=1999&amp;h=1103&amp;q=100&amp;f=webp\" rel=\"share\"></p>\n   <p dir=\"ltr\"><em>(Source: <a href=\"https://blog.cloudflare.com/post-quantum-geo-key-manager/\">Cloudflare blog</a>)</em></p>\n   <p dir=\"ltr\"><a href=\"https://www.linkedin.com/in/dabeer1/\">Dabeer Shaikh</a>, a senior solutions engineer at HashiCorp, asked under <a href=\"https://www.linkedin.com/posts/bringingpost-quantum-cryptography-to-geographically-share-7519461748245082112-yVPE/\">Cloudflare's announcement</a> how a geo-fenced key can be rotated without downtime, and the post answers that question through its epoch model. A soft rotation creates a new epoch while a limited number of previous epochs stay usable, so customers keep uptime during the transition; a hard rotation rewraps affected keys under a replacement epoch and removes access to the previous one.</p>\n   <p dir=\"ltr\"><a href=\"https://www.linkedin.com/in/madjid-tehrani/\">Mark Tehrani</a>, founder of CyberSeQ and a professor of cybersecurity, posted five questions on the same thread. Four concern the blast radius of a compromised regional root key, whether a compromised Zinc inventory or provisioning service could hand regional keys to an out-of-region server, what protects keys exposed before a rotation, and whether a compromised control plane could alter regional membership. The fifth goes to the design's central tradeoff:</p>\n   <blockquote>\n    <p dir=\"ltr\">If regional key provisioning, synchronization, or rotation fails, could the fail-closed design cause a region-wide service outage?</p>\n   </blockquote>\n   <p dir=\"ltr\">Cloudflare's post is explicit about that behavior. Any failed check on service context, region, or epoch rejects the request, and at the edge a missing or malformed key means the service does not start. The authors call failing closed \"a very intentional design choice.\" The trust boundary covers the key-management, provisioning, and authorized edge key services; Quicksilver sits outside it because it only ever holds wrapped keys and metadata.</p>\n   <p dir=\"ltr\">The rebuild extends a pattern in Cloudflare's post-quantum work. As <a href=\"https://www.infoq.com/news/2026/03/cloudflare-post-quantum-ipsec/\">previously reported on InfoQ</a>, Cloudflare adopted hybrid ML-KEM for its IPsec service in March, when over 60% of human-generated TLS traffic on its network already used it, and the company has since set out plans for a <a href=\"https://www.infoq.com/news/2026/10/postquatam-certificates/\">quantum-safe certificate authority</a>. Most regions will be covered at launch, with product-specific caveats. What the beta will show is whether the design's answer to a failed check, refusing to serve, is one customers accept at regional scale.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare’s Post-Quantum GeoKey Manager Enters Closed Beta Without Attribute-Based Encryption\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/cf-pq-geokey-manager/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1793476560000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 为其 GeoKey Manager 的后量子重建版本推出封闭测试，采用 ML-KEM-768 与 X25519 的混合方案保护地理围栏解密密钥，并取代此前使用的属性基加密方案。",
+  "oneSentenceSummary": "Cloudflare 为其 GeoKey Manager 的后量子重建版本推出封闭测试，采用 ML-KEM-768 与 X25519 的混合方案保护地理围栏解密密钥，并取代此前使用的属性基加密方案。",
+  "summary": "新版 GeoKey Manager 设计同时应对两大关键安全挑战：一是数据主权要求，即限制明文仅在特定区域内处理；二是「先收集、后解密」攻击威胁，即当下截获的流量会在量子计算机问世后被解密。该系统采用混合公钥加密方案（HPKE），结合 ML-KEM-768 与 X25519，并使用 HKDF-SHA-256 与 AES-256-GCM 进行密钥派生与封装。架构上将区域根密钥与应用专属密钥分离：区域根密钥存储于 Vault 并加载至内核密钥环，应用专属密钥则通过 Quicksilver 存储分发。严格的「故障关闭」策略确保任何授权检查失败时服务都不会启动，将安全性置于可用性之上。",
+  "mainPoints": [
+    {
+      "point": "GeoKey Manager 已完成后量子安全重建，采用结合 ML-KEM-768 与 X25519 的混合加密方案。",
+      "explanation": "此次更新确保解密密钥能够抵御量子计算机未来可能发起的攻击，否则现有加密算法可能被攻破。混合方案同时发挥了基于格的密码学与椭圆曲线密码学各自的优势。"
+    },
+    {
+      "point": "该服务已从属性基加密（ABE）转向更简单、更高效的密钥封装模型。",
+      "explanation": "对于区域密钥管理这一特定用例而言，ABE 过于复杂，因为它所设计的区域数量远超 Cloudflare 通常运营的范围。新模型为每个区域使用单一区域根密钥，管理和轮换都更加直接。"
+    },
+    {
+      "point": "系统实现了「故障关闭」安全模型，授权或密钥获取流程中任何环节失败都会导致服务不启动。",
+      "explanation": "该设计通过确保密钥绝不暴露给未授权的服务器或区域，优先保障数据的机密性与完整性。一旦检查失败，系统默认进入无法解密的状​​态，从而防止潜在的数据泄露。"
+    }
+  ],
+  "keyQuotes": [
+    "新版 GeoKey Manager 设计同时应对两项要求：一是将明文处理限制在某一区域内的数据主权规则，二是「先收集、后解密」攻击——即当下截获的流量会在量子计算机问世后被解密。"
+  ],
+  "tags": [
+    "编程与工程",
+    "量子计算",
+    "安全",
+    "机器学习",
+    "Cloudflare"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 692,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793476560000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-01 03:56:00"
+}

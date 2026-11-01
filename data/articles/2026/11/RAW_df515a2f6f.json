@@ -1,0 +1,51 @@
+{
+  "id": "RAW_df515a2f6f",
+  "title": "OpenBSD 8.0 发布：扩展硬件支持、增强安全性并改进虚拟化",
+  "url": "https://www.infoq.com/news/2026/10/openbsd-8-released/",
+  "date": "2026-11-01 01:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.openbsd.org/80.html\">OpenBSD 8.0 is a substantial upgrade</a> bringing broader hardware compatibility, enhanced security, an expanded virtual address space, and support for modern architectures, including Intel Arc A-Series graphics support, ARM64 hibernation, RISC-V improvements, and enhanced virtual machine support.</p>\n   <p>Key hardware and virtualization improvements in OpenBSD 8.0 include a <a href=\"https://undeadly.org/cgi?action=article;sid=20260623114653\">larger virtual address space for the AMD64 kernel</a>, expanded from 4 GB to 512 GB, enabling it to map graphics cards with more than 4 GB of VRAM; support for multi-processor virtual machines through <code>vmm</code>/<code>vmd</code>, with up to 64 virtual CPUs per guest and improvements to virtual hardware and guest compatibility; <a href=\"https://www.openbsd.org/riscv64.html\">expanded RISC-V support</a>, including the 'V' vector extension and Advanced Interrupt Architecture, improving compatibility with newer processors and platforms; and <a href=\"https://www.openbsd.org/arm64.html\">arm64</a> hibernation support, alongside faster swap encryption using AES instructions.</p>\n   <p>Although OpenBSD 8.0 introduces support for the Intel Arc A-Series GPUs, based on the DG2/Alchemist architecture, <a href=\"https://old.reddit.com/r/openbsd/comments/1gifv88/will_my_x_hardware_work_on_openbsd_if_xnvidia/\">NVIDIA GPUs remain unsupported</a>, partially due to the fact that NVIDIA does not provide proprietary binary drivers for OpenBSD, unlike Linux and FreeBSD.</p>\n   <p>OpenBSD 8.0 also expands peripheral support, including the riscv64 K3 PCIe/USB3 combo PHY, the SpacemiT K3 SoC and PCIe controller, as well as the Intel E610 and Panther Lake and Wildcat Lake Ethernet devices. New drivers are now available for Samsung Advanced BIOS Interface (SABI), Rockchip OTP memory, and Samsung laptop battery monitor. Wireless adapters support has been significantly expanded as well, including support for the Qualcomm Technologies WCN7850 wireless network in the <a href=\"https://man.openbsd.org/qwz\"><code>qwz</code></a> driver.</p>\n   <p>The <code>httpd</code> daemon in OpenBSD 8.0 has received several enhancements, including support for <a href=\"https://undeadly.org/cgi?action=article;sid=20261004115249\">custom HTTP headers</a>, <a href=\"https://undeadly.org/cgi?action=article;sid=20261004115249\">header block/drop rules for request filtering</a>, <a href=\"https://undeadly.org/cgi?action=article;sid=20260629165750\">improved default crypto methods for HTTPS</a>, and cache control for static files.</p>\n   <p>On the security front, OpenBSD 8.0 continues to emphasize security as a <a href=\"https://www.mail-archive.com/announce%40openbsd.org/msg00613.html\">defining priority</a> with an outstanding track record:</p>\n   <blockquote>\n    <p>We remain proud of OpenBSD's record of more than thirty years with only two remote holes in the default install.</p>\n   </blockquote>\n   <p>The new release incorporates <a href=\"https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.4.0-relnotes.txt\">LibreSSL 4.4.0</a>, which introduces numerous compatibility-layer fixes for AIX, FreeBSD, macOS, MinGW, NetBSD, and especially Windows, alongside various internal improvements. It also brings <a href=\"https://www.openssh.org/releasenotes.html\">OpenSSH 10.6</a>, which disables SSH Compression using LZ77 and rejects <code>$</code> and <code>\\</code> characters in command-line usernames to mitigate potential shell injection vulnerabilities, among other enhancements.</p>\n   <p>A Hacker News thread about the new release highlighted several important aspects of OpenBSD. User <a href=\"https://news.ycombinator.com/item?id=50163511\">ctolsen emphasized the system's simplicity and its adherence to traditional Unix philosophy</a>:</p>\n   <blockquote>\n    <p>OpenBSD just feels like a *nix system is supposed to. <code>ps aux</code> is like 10 entries at first. <code>pf</code> makes so much sense. <code>man</code> pages are consistently incredible. The security/cryptography focus, managing services, pledge/unveil...</p>\n   </blockquote>\n   <p>Longtime OpenBSD user nanolith, who has used the system for nearly 20 years, <a href=\"https://news.ycombinator.com/item?id=50162039\">praised its stability and consistency</a> across upgrades, noting that \"it's so stable that I barely notice changes when I upgrade until I go hunting for them\". However, <a href=\"https://news.ycombinator.com/item?id=50163626\">he also points out that OpenBSD might not be the best choice for large servers</a>, given its lack of support for advanced filesystems like ZFS, Btrfs, or GeFS.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/openbsd-8-released/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1793466000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenBSD 8.0 带来显著的硬件与虚拟化改进，包括支持 Intel Arc A 系列 GPU、扩展 RISC-V 与 ARM64 能力、为 AMD64 内核提供更大的虚拟地址空间，同时增强安全特性并更新网络驱动。",
+  "oneSentenceSummary": "OpenBSD 8.0 带来显著的硬件与虚拟化改进，包括支持 Intel Arc A 系列 GPU、扩展 RISC-V 与 ARM64 能力、为 AMD64 内核提供更大的虚拟地址空间，同时增强安全特性并更新网络驱动。",
+  "summary": "最新发布的 OpenBSD 8.0 是一次重大升级，重点聚焦硬件兼容性与系统性能。它扩展了对现代架构的支持，尤其是新增 Intel Arc A 系列显卡支持，并改进了 RISC-V 与 ARM64 功能。AMD64 内核现在拥有 512 GB 虚拟地址空间，使其能够处理大内存占用的设备。此外，该版本还包含增强的虚拟机支持、更新的网络驱动，以及通过 LibreSSL 4.4.0 和 OpenSSH 10.6 带来的安全改进。",
+  "mainPoints": [
+    {
+      "point": "扩展硬件与虚拟化支持",
+      "explanation": "OpenBSD 8.0 显著拓宽了硬件兼容性，尤其是新增 Intel Arc A 系列 GPU 支持，并改进了 RISC-V 与 ARM64 架构。系统还增强了虚拟化能力，支持最多 64 个 vCPU 的多处理器虚拟机，并改善了客户机兼容性。"
+    },
+    {
+      "point": "安全增强",
+      "explanation": "该版本延续了 OpenBSD 优先保障安全的传统，集成了 LibreSSL 4.4.0 和 OpenSSH 10.6。这些更新包括修复各平台间的兼容性问题以及特定的安全改进，例如禁用使用 LZ77 的 SSH 压缩以缓解潜在漏洞。"
+    },
+    {
+      "point": "改进网络与外设驱动",
+      "explanation": "OpenBSD 8.0 更新了网络栈，新增对 Intel E610 和 Qualcomm WCN7850 无线适配器等设备的驱动。它还增加了对 Samsung Advanced BIOS Interface 和 Rockchip OTP 内存的支持，扩展了操作系统可处理的外设范围。"
+    }
+  ],
+  "keyQuotes": [
+    "我们依然为 OpenBSD 保持的纪录感到自豪：三十多年来，默认安装中仅出现过两个远程漏洞。",
+    "OpenBSD 给人的感觉正是 *nix 系统应有的样子。刚启动时「ps aux」只有大约 10 条记录。「pf」的设计非常合理。「man」手册页始终令人惊叹。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "开源项目",
+    "AMD",
+    "操作系统"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 497,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793466000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-01 01:00:00"
+}

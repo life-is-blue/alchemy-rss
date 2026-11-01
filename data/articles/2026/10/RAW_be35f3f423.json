@@ -1,0 +1,52 @@
+{
+  "id": "RAW_be35f3f423",
+  "title": "LocalStack for Azure 进入公开预览，安全设置仅存储不强制执行",
+  "url": "https://www.infoq.com/news/2026/10/localstack-azure-preview/",
+  "date": "2026-10-31 15:57:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">LocalStack has put <a href=\"https://blog.localstack.cloud/localstack-for-azure-public-preview/\">its Azure emulator into public preview</a>, free and self-serve, with general availability expected in early 2027. Its own documentation is candid about the gap between emulating a resource and emulating its behavior.</p>\n   <p dir=\"ltr\">The product runs Azure services on a developer machine and accepts existing ARM and Bicep templates, Terraform modules, Pulumi programs, and Azure CLI scripts without rewrites. The pitch is to test applications, as LocalStack <a href=\"https://www.linkedin.com/posts/localstack-cloud_localstack-for-azure-is-now-in-public-preview-activity-7513599013443665920-yFWu\">puts it</a>, \"without waiting on a dev subscription or paying for every iteration.\" The <a href=\"https://www.localstack.cloud/localstack-for-azure\">service list</a> is broad, covering AKS, Container Apps, Functions, App Service, Cosmos DB, Service Bus, Event Hubs, Key Vault, App Configuration, Managed Identity, API Management and more, and is wider than the announcement itself suggests. Each developer gets an isolated sandbox, and LocalStack positions it for development and testing rather than as a replacement for Azure.</p>\n   <p dir=\"ltr\">The project is led by Paolo Salvatori, a Microsoft principal for 28 years before joining LocalStack and the creator of Service Bus Explorer. He sets the fidelity contract in <a href=\"https://medium.com/@paolo.salvatori/announcing-localstack-for-azure-public-preview-a-local-sandbox-for-developer-workflows-e290e7f122e0\">one line</a>:</p>\n   <blockquote dir=\"ltr\">\n    <p dir=\"ltr\">If your solution runs perfectly on Azure but fails on our emulator, that is our bug to fix.</p>\n   </blockquote>\n   <p dir=\"ltr\"><a href=\"https://docs.localstack.cloud/azure/\">The documentation</a> covers 24 resource providers and reports how much of each API is implemented. <a href=\"https://docs.localstack.cloud/azure/services/storage-accounts/\">Storage Accounts</a> covers 13 of 81 operations. <a href=\"https://docs.localstack.cloud/azure/services/web-app/\">App Service</a> covers 143 of 616. <a href=\"https://docs.localstack.cloud/azure/services/virtual-network/\">Virtual Network</a> covers 10 of 29.</p>\n   <p dir=\"ltr\">The more useful pattern is what happens to the operations that are implemented. Configuration is frequently accepted, stored, and returned without taking effect. On App Service:</p>\n   <blockquote dir=\"ltr\">\n    <p dir=\"ltr\">Keys, access restrictions, authentication settings, and publishing credential policies are not enforced.</p>\n   </blockquote>\n   <p dir=\"ltr\">The same page records that <code dir=\"ltr\">httpsOnly</code> is not enforced and the emulator serves HTTP, that custom host-name bindings are stored and listed while the app answers only on its default names, that VNet integration is stored and returned with no network effect, and that backup configuration is stored while backup and restore are not implemented.</p>\n   <p dir=\"ltr\">Networking follows suit. The Virtual Network page states plainly that \"the emulator does not route network traffic or enforce security rules,\" that peering is unsupported, and that VPN gateways, ExpressRoute circuits, Load Balancer, Application Gateway, and Network Watcher are not implemented. Private DNS zones accept only A records.</p>\n   <p dir=\"ltr\">Several Storage divergences land on authentication. Data-plane requests with a bearer token succeed whenever a token is present unless RBAC enforcement is enabled. A user delegation SAS does not re-check the principal’s RBAC when used. A SAS restricted to the caller’s public IP is refused because the emulator sees a Docker or loopback address. Unsupported request headers are silently accepted rather than rejected, and the <code dir=\"ltr\">x-ms-version</code> header is not validated at all.</p>\n   <p dir=\"ltr\">That promise is about code that runs in Azure and fails locally. The documented gaps mostly describe the reverse: an app with <code dir=\"ltr\">httpsOnly</code> set serves HTTP here, and a data-plane request carrying any bearer token gets through. Both pass locally, and nothing in the run flags the difference.</p>\n   <p dir=\"ltr\">Three behaviors will surprise people before any of that does. A web app created on a Windows plan runs its code in the Linux runtime. The Oryx build image ships for amd64 only, so on Apple Silicon a code deployment’s build fails, and the app starts without its dependencies. App Service state is held in memory and lost when the emulator stops.</p>\n   <p dir=\"ltr\">Microsoft’s own local tooling is narrower and older. <a href=\"https://learn.microsoft.com/azure/storage/common/storage-use-azurite\">Azurite</a> emulates Blob, Queue, and Table storage, the <a href=\"https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-develop-emulator\">Cosmos DB emulator</a> covers that database, and Azure Functions Core Tools runs Functions locally. None compose into a single environment where an ARM or Bicep deployment can be exercised end to end, which is the gap LocalStack aims to fill.</p>\n   <p dir=\"ltr\">LocalStack also pitches the sandbox at AI agents, somewhere they can \"deploy, break, and retry\" without live credentials. An agent iterating there gets access restrictions stored rather than applied, and any bearer token accepted. Both come back as passes.</p>\n   <p dir=\"ltr\">Developer experience features, including App Inspector, snapshots, and the chaos APIs, are not in preview. Pricing arrives at general availability, and preview access ends there. The transition terms are not settled: the product page still carries \"[30 days]\" as a literal placeholder and an unfilled next-steps section.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"LocalStack for Azure Enters Public Preview with Security Settings Stored but Not Enforced\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/10/localstack-azure-preview/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1793433420000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "LocalStack 发布其 Azure 模拟器的公开预览版，允许开发者在没有实际订阅的情况下本地运行 ARM 和 Bicep 模板，但许多安全和网络功能仅被存储而未主动强制执行。",
+  "oneSentenceSummary": "LocalStack 发布其 Azure 模拟器的公开预览版，允许开发者在没有实际订阅的情况下本地运行 ARM 和 Bicep 模板，但许多安全和网络功能仅被存储而未主动强制执行。",
+  "summary": "LocalStack 推出了其 Azure 模拟器的公开预览版，使开发者无需有效的 Azure 订阅即可使用 ARM 和 Bicep 模板在本地测试应用程序。该模拟器覆盖了包括 AKS、Cosmos DB 和 Key Vault 在内的广泛服务，但明确表示虽然配置设置（如访问限制和身份验证）会被存储，但不会被主动强制执行。这意味着某些安全功能是模拟的而非完全可用，该模拟器仅用于开发和测试目的。",
+  "mainPoints": [
+    {
+      "point": "LocalStack for Azure 允许开发者在没有实际订阅的情况下本地运行 ARM 和 Bicep 模板。",
+      "explanation": "该模拟器提供了一个沙盒环境，开发者可以针对包括 AKS、Cosmos DB 和 Service Bus 在内的广泛 Azure 服务测试其基础设施代码，而无需产生费用或等待云资源。"
+    },
+    {
+      "point": "虽然配置设置会被存储，但许多安全和网络功能并未被主动强制执行。",
+      "explanation": "文档明确指出，访问限制、身份验证设置和网络路由等功能会被存储但不会被执行。这意味着模拟器可以接受这些配置，但不会实际根据它们限制访问或路由流量，从而限制了其在完整安全测试中的实用性。"
+    },
+    {
+      "point": "该模拟器旨在用于开发和测试，而非作为 Azure 的替代品。",
+      "explanation": "LocalStack 将此工具定位为在迁移到生产环境之前，本地迭代应用程序开发和测试部署的一种方式。它并非设计为功能完整的云环境或实际 Azure 服务的替代品。"
+    }
+  ],
+  "keyQuotes": [
+    "如果你的解决方案在 Azure 上运行完美，但在我们的模拟器上失败，那是我们需要修复的 bug。",
+    "密钥、访问限制、身份验证设置和发布凭据策略均不被强制执行。",
+    "该模拟器不路由网络流量，也不强制执行安全规则。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "云原生 / DevOps",
+    "测试与质量",
+    "Microsoft"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 687,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793433420000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-10-31 15:57:00"
+}
