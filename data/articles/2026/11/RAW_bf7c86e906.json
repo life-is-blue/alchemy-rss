@@ -1,0 +1,56 @@
+{
+  "id": "RAW_bf7c86e906",
+  "title": "divagr1925/QwenPU · Hugging Face",
+  "url": "https://huggingface.co/divagr1925/QwenPU",
+  "date": "2026-11-01 18:15:39",
+  "author": "joshcsimmons",
+  "siteName": "Hacker News - Newest: \"LLM\"",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"readability-page-1\" class=\"page\">\n   <div>\n    <!--[-1-->\n    <!--]-->\n    <!---->\n    <p><img src=\"https://huggingface.co/divagr1925/QwenPU/resolve/main/qwenpu-banner.svg\" alt=\"QwenPU: a vector unit, compiled into the weights of a language model.\"></p>\n    <p><a href=\"https://github.com/divagr18/QwenPU\" rel=\"nofollow\">Code on GitHub</a> · <a href=\"https://github.com/divagr18/qwenputer\" rel=\"nofollow\">Qwenputer</a> · <a href=\"https://huggingface.co/Qwen/Qwen3.5-4B\" rel=\"nofollow\">Base model: Qwen/Qwen3.5-4B</a> · Apache-2.0</p>\n    <p><strong>QwenPU is Qwen3.5-4B with a 32-bit RISC-V CPU and a vector unit compiled into its weights. The vector unit runs a whole neural network inside the model's forward passes: Andrej Karpathy's <a href=\"https://huggingface.co/karpathy/tinyllamas/tree/main/stories260K\" rel=\"nofollow\">stories260K</a>, the 260K-parameter Llama from <a href=\"https://github.com/karpathy/llama2.c\" rel=\"nofollow\">llama2.c</a>, runs as a program on it and writes its stories.</strong></p>\n    <p>It's part of <a href=\"https://github.com/divagr18/qwenputer\" rel=\"nofollow\">Qwenputer</a>: the same CPU, compiled into transformer layers in front of Qwen's own, every weight set by a compiler, with Qwen3.5's Gated DeltaNet state as its memory. <a href=\"https://huggingface.co/divagr1925/Qwenputer-npu\" rel=\"nofollow\">Qwenputer-npu</a> gave that CPU dot-product instructions. QwenPU gives it a vector unit of its own: separate memories in DeltaNet heads, 64-lane matrix rows a token, and whole vector results streamed through the token stream.</p>\n    <blockquote>\n     <p><strong>Work in progress.</strong> QwenPU is exact, but not yet small: the checkpoint is 26.7 GB, so it needs a 40 GB or larger GPU to load whole. The story demo and the checks run the computer's layers on their own and fit a 24 GB GPU. Trimming the hidden size, and with it the checkpoint, is next.</p>\n    </blockquote>\n    <h2 id=\"anchor1\"><span> A language model inside the language model </span></h2>\n    <p>stories260K is a C program here (<code>guests/stories260k/stories_vx.c</code>). Its int4 weights sit in the vector unit's weight memory, loaded from the program, and every matrix row, residual add, softmax and attention read is a vector op. None of it is compiled into the checkpoint, so any model that fits runs the same way.</p>\n    <div>\n     <table _readabilitydatatable=\"false\">\n      <thead>\n       <tr>\n        <th>Build of stories260K</th>\n        <th>Trace tokens per story token</th>\n       </tr>\n      </thead>\n      <tbody>\n       <tr>\n        <td>Plain C, int8 weights</td>\n        <td>2,430,000</td>\n       </tr>\n       <tr>\n        <td>Qwenputer-npu: VDOT + SMAQA</td>\n        <td>225,000</td>\n       </tr>\n       <tr>\n        <td><strong>QwenPU: the vector unit</strong></td>\n        <td><strong>53,000</strong></td>\n       </tr>\n      </tbody>\n     </table>\n    </div>\n    <p><img src=\"https://huggingface.co/divagr1925/QwenPU/resolve/main/qwenpu-demo.gif\" alt=\"QwenPU writing a story: stories260K runs on the vector unit inside Qwen3.5.\"></p>\n    <p>Every build writes the same story, token for token:</p>\n    <blockquote>\n     <p>Once upon a time, there was a little girl named Lily. She loved to play outside in the park. One day, she saw a big, red ball. She wanted to play with it, but it was too high</p>\n    </blockquote>\n    <h2 id=\"anchor2\"><span> The vector unit </span></h2>\n    <div>\n     <table _readabilitydatatable=\"false\">\n      <thead>\n       <tr>\n        <th>Op</th>\n        <th>Does</th>\n       </tr>\n      </thead>\n      <tbody>\n       <tr>\n        <td><code>VMAT</code></td>\n        <td>int8 · int4 matrix rows, 64 lanes a token, times the row scale; or the argmax</td>\n       </tr>\n       <tr>\n        <td><code>VQ</code></td>\n        <td>quantizes a vector register into int8 activations or a K / V cache row</td>\n       </tr>\n       <tr>\n        <td><code>VEW</code></td>\n        <td>residual add, SiLU-gated product, RoPE</td>\n       </tr>\n       <tr>\n        <td><code>VMATR</code></td>\n        <td>attention scores over the K cache; probabilities times the V cache</td>\n       </tr>\n       <tr>\n        <td><code>VEXP</code></td>\n        <td>exp-table softmax numerators</td>\n       </tr>\n       <tr>\n        <td><code>VRED</code></td>\n        <td>sum or sum of squares of the activations</td>\n       </tr>\n       <tr>\n        <td><code>VGET</code>, <code>VPUT</code></td>\n        <td>move values between the CPU and the unit</td>\n       </tr>\n      </tbody>\n     </table>\n    </div>\n    <p>Its memories are DeltaNet heads: 16 vector registers of 64 words, 384 int8 activations, 4,152 row-chunks of int4 weights, and K / V caches for 32 positions. An op's record starts with config tokens carrying its operands, then streams its results, and each token is one exact step of the compiled layers. SiLU and exp are fixed-point function units, generic like the CPU's adders.</p>\n    <h2 id=\"anchor3\"><span> Checks </span></h2>\n    <h2 id=\"anchor4\"><span> Quickstart </span></h2>\n    <pre><code>git <span>clone</span> https://github.com/divagr18/QwenPU &amp;&amp; <span>cd</span> QwenPU &amp;&amp; uv <span>sync</span> --extra hf\nuv run python guests/stories260k/storyrun.py guests/stories260k/stories_vx.elf --vx\nhf download divagr1925/QwenPU --local-dir qwenpu\nuv run python -m chipformer.rv.vxcheck qwenpu guests/stories260k/stories_vx.elf\n</code></pre>\n    <p><code>storyrun</code> writes the story on the computer's executor; <code>vxcheck</code> runs the vector unit on this checkpoint's layers (<code>--chip-only</code> loads only those on the GPU, about 13 GB).</p>\n    <h2 id=\"anchor5\"><span> Model details </span></h2>\n    <div>\n     <table _readabilitydatatable=\"false\">\n      <thead>\n       <tr>\n        <th></th>\n        <th></th>\n       </tr>\n      </thead>\n      <tbody>\n       <tr>\n        <td>Base</td>\n        <td>Qwen/Qwen3.5-4B, Qwen's own weights unchanged</td>\n       </tr>\n       <tr>\n        <td>Architecture</td>\n        <td>stock <code>Qwen3_5ForCausalLM</code> (text only); config-only changes</td>\n       </tr>\n       <tr>\n        <td>Computer</td>\n        <td>13 compiled layers before Qwen's 32: RV32IM + Zba + bignum unit + the vector unit</td>\n       </tr>\n       <tr>\n        <td>Hidden size</td>\n        <td>5120 (Qwen's 2560 plus the computer's dims)</td>\n       </tr>\n       <tr>\n        <td>Vocabulary</td>\n        <td>Qwen's, plus 394,164 trace tokens</td>\n       </tr>\n       <tr>\n        <td>Size</td>\n        <td>26.7 GB in bf16, mostly zero padding</td>\n       </tr>\n       <tr>\n        <td>Precision</td>\n        <td>exact in bf16</td>\n       </tr>\n      </tbody>\n     </table>\n    </div>\n    <h2 id=\"anchor6\"><span> Citation </span></h2>\n    <pre><code>@software{agrawal2026qwenputer,\n  author  = {Agrawal, Divyansh},\n  title   = {{Qwenputer}: a computer compiled into the weights of a language model},\n  year    = {2026},\n  url     = {https://github.com/divagr18/qwenputer},\n  license = {MIT}\n}\n</code></pre>\n    <h2 id=\"anchor7\"><span> License </span></h2>\n    <p>Apache-2.0. This is a modified version of <a href=\"https://huggingface.co/Qwen/Qwen3.5-4B\" rel=\"nofollow\">Qwen/Qwen3.5-4B</a>: the config is widened and computer layers are added, but Qwen's own weights are unchanged. stories260K and llama2.c are by Andrej Karpathy (MIT).</p>\n    <!---->\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "QwenPU 将 32 位 RISC-V CPU 和向量单元直接嵌入 Qwen3.5-4B 的权重中，使模型能够在前向传播过程中以神经网络的形式执行 Andrej Karpathy 的 stories260K 程序。",
+  "oneSentenceSummary": "QwenPU 将 32 位 RISC-V CPU 和向量单元直接嵌入 Qwen3.5-4B 的权重中，使模型能够在前向传播过程中以神经网络的形式执行 Andrej Karpathy 的 stories260K 程序。",
+  "summary": "QwenPU 是一个经过修改的 Qwen3.5-4B 语言模型，它将 32 位 RISC-V CPU 和自定义向量单元编译进其 Transformer 层中。这个嵌入式计算机可以在模型的前向传播过程中执行 stories260K（一个 26 万参数的神经网络）等程序，使模型能够通过将神经网络作为程序运行来生成文本。向量单元支持矩阵乘法、量化、残差加法、注意力计算等操作，并以 DeltaNet 头作为独立记忆。与纯 C 和 Qwenputer-npu 实现相比，QwenPU 每个故事 token 的追踪 token 数减少了 45 倍到 45，000 倍，展现出显著的效率提升。检查点大小为 26.7 GB，完整加载需要 40 GB GPU。",
+  "mainPoints": [
+    {
+      "point": "嵌入式计算机架构",
+      "explanation": "QwenPU 将 32 位 RISC-V CPU 与向量单元直接集成到 Qwen3.5-4B 的 Transformer 层中，构建了一种混合的神经网络-计算机架构，使程序能够在前向传播过程中被执行。"
+    },
+    {
+      "point": "向量单元操作",
+      "explanation": "向量单元支持 8 种基本操作（VMAT、VQ、VEW、VMATR、VEXP、VRED、VGET、VPUT），使用每 token 64 通道的定点运算来处理矩阵乘法、量化、残差加法、注意力计算和内存传输。"
+    },
+    {
+      "point": "效率提升",
+      "explanation": "与纯 C（每个故事 token 243 万追踪 token）和 Qwenputer-npu（每个故事 token 22.5 万追踪 token）相比，QwenPU 每个故事 token 仅需 5.3 万追踪 token，根据基线实现不同，效率提升达 45 倍到 45，000 倍。"
+    },
+    {
+      "point": "内存架构",
+      "explanation": "向量单元以 DeltaNet 头作为独立记忆，配备 16 个向量寄存器（每个 64 字）、384 个 int8 激活值、4，152 个 int4 权重行块，以及 32 个位置的 K/V 缓存，从而在模型内部实现高效的神经网络执行。"
+    }
+  ],
+  "keyQuotes": [
+    "QwenPU 是 Qwen3.5-4B，其权重中编译了一个 32 位 RISC-V CPU 和一个向量单元。",
+    "向量单元在模型的前向传播中运行一个完整的神经网络：Andrej Karpathy 的 stories260K——来自 llama2.c 的 26 万参数 Llama——作为程序在其上运行并写出故事。",
+    "与纯 C（每个故事 token 2，430，000 追踪 token）和 Qwenputer-npu（每个故事 token 225，000 追踪 token）相比，QwenPU 每个故事 token 仅需 53，000 追踪 token。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工程",
+    "LLM 推理优化",
+    "阿里通义",
+    "Hugging Face"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 628,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_f689751c9e",
+  "sourceName": "Hacker News - Newest: \"LLM\"",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793528139000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-01 18:15:39"
+}
