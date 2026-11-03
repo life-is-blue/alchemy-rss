@@ -1,0 +1,56 @@
+{
+  "id": "RAW_49d7a014fe",
+  "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
+  "url": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
+  "date": "2026-11-02 18:06:28",
+  "author": "noreply@aihot.news (公众号：腾讯混元)",
+  "siteName": "AIHOT — 精选",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-ink-3 2xl:hidden mb-3\">\n   <span class=\"font-semibold text-ink-2\">公众号：腾讯混元</span><span>·</span><time datetime=\"2026-11-02T10:06:28.000Z\" class=\"mono\">2026-11-02 18:06</time><span>· <!-- -->2 小时前</span><span class=\"ml-1 side:hidden\"><span class=\"inline-flex h-[18px] shrink-0 items-center gap-1 rounded-full px-2 text-[11px] font-medium leading-none bg-amber-soft text-amber-ink \">精选</span></span><span class=\"ml-1 side:hidden\"><span title=\"AI 评分 68/100\" aria-label=\"AI 评分 68 分\" class=\"inline-flex h-[20px] shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-2 ring-1 ring-inset text-ink-4 ring-line-soft\"><span class=\"text-[11px] font-medium leading-none opacity-80\">AI 评分</span><span class=\"mono text-[12.5px] font-bold leading-none tabular-nums\">68</span></span></span>\n  </div>\n  <p class=\"mt-2.5 text-[14px] leading-relaxed text-ink-4\">Hyra 2.0 发布：为模型研发打造可复用工具</p>\n  <section class=\"mt-7 xl:mt-8\">\n   <div class=\"mb-2 text-[12px] font-semibold text-accent\">AI 导读</div>\n   <p class=\"text-[18px] leading-[1.7] text-ink xl:text-[20px] xl:leading-[1.7]\">腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。</p>\n  </section>\n  <section class=\"mt-6 border-t border-line pt-4 side:hidden\">\n   <div class=\"mb-1 text-[12px] font-semibold text-ink-3\">推荐理由</div>\n   <p class=\"text-[15px] leading-[1.75] text-ink-2\">原文把自动化科研的思路从解题转向造工具，并给出蛋白质设计、量子码、处理器等具体成果和可复用的 Harness 分层设计。</p>\n  </section>\n  <div class=\"mt-5\">\n   <button type=\"button\" aria-expanded=\"false\" aria-haspopup=\"dialog\" class=\"relative z-10 mt-2 flex min-h-11 w-full items-center justify-between rounded-tile bg-well px-3 py-2 text-left text-[12.5px] text-ink-4 transition-colors active:bg-bg-muted lg:hidden\">另外 1 家也报道了</button>\n  </div>\n  <p class=\"mt-8 text-[13px] text-ink-4\">来源：<a href=\"https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&amp;mid=2247498763&amp;idx=1&amp;sn=279f8fb4e43a987fdc0aa2af0b0f7958\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-ink-3 hover:text-accent\">公众号：腾讯混元</a><span> · <!-- -->mp.weixin.qq.com</span></p>\n  <div class=\"mt-4 flex flex-wrap gap-1.5 side:hidden\">\n   <a class=\"chip\" href=\"https://aihot.news/topics/agent\" data-discover=\"true\">Agent 智能体</a><a class=\"chip\" href=\"https://aihot.news/topics/open-source\" data-discover=\"true\">开源生态</a><a class=\"chip\" href=\"https://aihot.news/topics/product-updates\" data-discover=\"true\">产品更新</a><a class=\"chip\" href=\"https://aihot.news/all?tag=%E4%BA%A7%E5%93%81%E6%9B%B4%E6%96%B0\" data-discover=\"true\">#<!-- -->产品更新</a><a class=\"chip\" href=\"https://aihot.news/all?tag=Agent\" data-discover=\"true\">#<!-- -->Agent</a><a class=\"chip\" href=\"https://aihot.news/all?tag=%E5%BC%80%E6%BA%90%E7%94%9F%E6%80%81\" data-discover=\"true\">#<!-- -->开源生态</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "腾讯混元发布 Hyra 2.0，通过基于智能体的三层架构，将自动化科学研究从直接解决问题转向开发可复用的科学模型、工作流与工具。",
+  "oneSentenceSummary": "腾讯混元发布 Hyra 2.0，通过基于智能体的三层架构，将自动化科学研究从直接解决问题转向开发可复用的科学模型、工作流与工具。",
+  "summary": "腾讯混元发布了 Hyra 2.0，该系统将自动化科学研究的重心从直接解决问题，转向让智能体开发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层架构，并接入企业微信、计算平台和代码仓库等真实开发环境。具体成果包括蛋白质设计、量子码和处理器方面的可复用工具，相关结果已在 GitHub 上公开。该方法强调为科学自动化打造可复用的「Harness」设计。",
+  "mainPoints": [
+    {
+      "point": "以智能体为中心的科学研究范式",
+      "explanation": "Hyra 2.0 将自动化科学研究的重心从直接解决问题，转向由智能体驱动开发和增强科学模型、工作流与软件工具，从而实现更具可扩展性和可复用性的研究自动化。"
+    },
+    {
+      "point": "三层架构设计",
+      "explanation": "系统实现了 Overall（战略协调）、Mission（任务规划）和 Worker（执行）的分层结构，使智能体能够在多样化的研究领域中实现模块化和分布式运行。"
+    },
+    {
+      "point": "与真实开发环境集成",
+      "explanation": "Hyra 2.0 接入企业微信、计算平台和代码仓库，确保智能体开发的工具嵌入实际工程工作流，并可通过 GitHub 公开共享。"
+    },
+    {
+      "point": "具体的科学成果",
+      "explanation": "该系统在蛋白质设计、量子码和处理器开发方面产出了切实成果，展示了其通过智能体协作支持复杂、多学科科学任务的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "Hyra 2.0 将自动化科学研究从直接解决问题，转向由智能体开发和升级科学模型、工作流与软件工具。",
+    "系统采用 Overall、Mission 和 Worker 的三层分工，并接入企业微信、计算平台和代码仓库。",
+    "成果包括蛋白质设计、量子码和处理器方面的可复用工具，相关结果已在 GitHub 上公开。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 产品与应用",
+    "模型训练与推理",
+    "AI 工作流",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 248,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793613988000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-02 18:06:28"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_0608a20207",
+  "title": "Google 与 Meta 开源 TorchTPU，为 Google TPU 带来原生 PyTorch 支持",
+  "url": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/",
+  "date": "2026-11-03 01:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://pytorch.org/blog/introducing-torchtpu/\">TorchTPU is an open-source project developed by Google in collaboration with Meta that provides a native PyTorch backend for Google TPUs</a>. It enables PyTorch workloads to execute on <a href=\"https://cloud.google.com/tpu\">TPU hardware</a> with minimal code modifications, supporting eager and compiled execution, distributed computing, and hardware-specific optimizations.</p>\n   <p>Google began enabling PyTorch workloads to run on TPUs in 2020 through PyTorch/XLA, which leveraged JAX, <a href=\"https://github.com/openxla/xla\">XLA</a>, and lazy tensors. According to Google, this approach had significant shortcomings:</p>\n   <blockquote>\n    <p>Crucially, PyTorch/XLA required intrusive source-code modifications to explicitly define compilable regions, suffered from severe compile-time latency, lacked support for PyTorch's native imperative (“eager”) execution mode, and lagged in supporting emerging distributed computing primitives within the PyTorch ecosystem.</p>\n   </blockquote>\n   <p><a href=\"https://github.com/google-pytorch/torch_tpu\">TorchTPU</a> takes a fundamentally different approach, making eager execution a top priority, and enabling existing PyTorch workloads to run out with minor code modifications.</p>\n   <p>Specifically, migrating from GPUs to TPUs involves replacing the <code>cuda</code> device with <code>tpu</code> and the <code>nccl</code> distributed backend with <code>tpu_dist</code>. Alternatively, developers can use the new <code>torch.accelerator.current_accelerator</code> API to identify the available accelerator, as shown in the following snippet.</p>\n   <pre><code class=\"language-python\">import torch\nimport torch.distributed as dist\n\ndef main():\n    device = torch.device(\"cuda\") # -&gt; device = torch.accelerator.current_accelerator\n    dist.init_process_group(backend=\"nccl\") # -&gt; dist.init_process_group()\n    rank = dist.get_rank()\n    word_size = dist.get_world_size()\n    ...\n    model = model.to(device)\n    ...\n</code></pre>\n   <p>TorchTPU support three eager execution modes: strict, debug, and DeferAndFuse. The latter is a new hybrid eager/compiled execution mode that Google claims \"can be 50% or more faster than Strict Eager while reducing peak HBM memory\".</p>\n   <p>To test TorchTPU's ability to run existing PyTorch models with no modifications, Google built an integration pipeline to evaluate about 5,000 Hugging Face models across 500+ architectures in both eager and compiled modes on TPU hardware generations starting from v5e.</p>\n   <blockquote>\n    <p>We use a robust testing methodology grounded in corpus stratification and balanced architectural selection. Our approach relies on a two-tiered selection process designed to balance real-world adoption with broad architectural diversity, avoiding redundant testing of minor variations while ensuring real production weights are thoroughly evaluated.</p>\n   </blockquote>\n   <p>To validate TorchTPU's performance, Google ran a 30-billion parameter Muse Glimmer model implemented in standard PyTorch. On a single TPUv7 chip, inference throughput reached 25.7k token/s at 5120 sequence length and 22.4k token/s at 10,240 sequence length. For training, using four TPUv7 chips, throughput reached 5.6k token/s and 4.6k token/s at 5120 and 10,240 sequence length, respectively.</p>\n   <p>Google also conducted experiments using Qwen3 MoE 235B for training workloads, scaling from 1,024 to 8,192 TPUv7 chips. For inference, Google reported competitive performance-per-dollar for large-scale MoE workloads using vLLM.</p>\n   <p>Commenting on the announcement, <a href=\"https://news.ycombinator.com/item?id=50180165\">Hacker News user tingkuanpei observed</a>:</p>\n   <blockquote>\n    <p>Very interesting work. Google should have done this a long time ago. PyTorch's ecosystem is just so rich.</p>\n   </blockquote>\n   <p>Other users pointed out that beyond offering TPUs through GCP, Google sells them to <a href=\"https://news.ycombinator.com/item?id=50175919\">\"enterprise client for on premises deployments\"</a>, which include <a href=\"https://news.ycombinator.com/item?id=50171644\">Anthropic</a> and <a href=\"https://news.ycombinator.com/item?id=50174910\">in Meta following potentially in the future</a>.</p>\n   <p>TorchTPU is still at an early stage and therefore in continuous evolution. The project's roadmap include work on dynamic shapes, compilation performance, operator coverage, reinforcement learning, and quantization. For further details, make sure to read the original announcement, which provides a more comprehensive view of TorchTPU's architecture and scope.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1793638800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 与 Meta 开源了 TorchTPU，这是一个面向 TPU 的原生 PyTorch 后端，支持即时执行、分布式计算和硬件优化，且只需极少的代码改动。",
+  "oneSentenceSummary": "Google 与 Meta 开源了 TorchTPU，这是一个面向 TPU 的原生 PyTorch 后端，支持即时执行、分布式计算和硬件优化，且只需极少的代码改动。",
+  "summary": "TorchTPU 是 Google 与 Meta 联合推出的开源项目，为 Google TPU 提供原生 PyTorch 支持。与需要侵入式代码修改且存在编译时延迟的 PyTorch/XLA 不同，TorchTPU 优先支持即时执行，让现有 PyTorch 工作负载只需极少改动即可运行——将「cuda」替换为「tpu」、将「nccl」替换为「tpu_dist」。它支持三种即时执行模式，其中包括混合式 DeferAndFuse 模式，速度提升 50% 且内存占用更低。Google 在 500 多种架构上测试了 5，000 个 Hugging Face 模型，并展示了强劲性能：30B 参数的 Muse Glimmer 模型在 TPUv7 上实现 25.7k tokens/s 的推理速度。该项目仍处于早期阶段，后续计划支持动态形状、强化学习和量化。",
+  "mainPoints": [
+    {
+      "point": "TorchTPU 为 TPU 提供原生 PyTorch 支持，且只需极少的代码改动。",
+      "explanation": "开发者只需将「cuda」替换为「tpu」、将「nccl」替换为「tpu_dist」，或使用新的 torch.accelerator.current_accelerator API，即可从 GPU 迁移到 TPU，相比 PyTorch/XLA 等以往方案，TPU 的采用门槛显著降低。"
+    },
+    {
+      "point": "TorchTPU 优先支持即时执行而非编译执行，解决了 PyTorch/XLA 的局限。",
+      "explanation": "PyTorch/XLA 需要侵入式修改源代码，且缺乏原生即时模式支持；TorchTPU 则将即时执行置于首位，并引入混合式 DeferAndFuse 模式，速度提升 50% 的同时降低了峰值 HBM 内存占用。"
+    },
+    {
+      "point": "大规模测试验证了 TorchTPU 与各类 PyTorch 模型的兼容性。",
+      "explanation": "Google 构建了一套集成流水线，在从 v5e 起的各代 TPU 上，以即时执行和编译执行两种模式测试了约 5，000 个 Hugging Face 模型，覆盖 500 多种架构，证明其与真实工作负载具有广泛兼容性。"
+    },
+    {
+      "point": "TorchTPU 在 TPUv7 硬件上对大规模模型展现出有竞争力的性能。",
+      "explanation": "300 亿参数的 Muse Glimmer 模型在单颗 TPUv7 芯片上、序列长度 5120 时实现 25.7k tokens/s 的推理速度；四芯片训练达到 5.6k tokens/s；结合 vLLM 运行 MoE 工作负载时，每美元性能表现具有竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "TorchTPU 是 Google 与 Meta 合作开发的开源项目，为 Google TPU 提供原生 PyTorch 后端。",
+    "TorchTPU 采取了根本不同的思路，将即时执行置于首位，使现有 PyTorch 工作负载只需少量代码修改即可运行。",
+    "我们采用基于语料分层和均衡架构选择的稳健测试方法。我们的方法依赖两级筛选流程，旨在平衡真实场景采用与广泛架构多样性，避免对细微变体进行冗余测试，同时确保真实生产权重得到充分评估。",
+    "在单颗 TPUv7 芯片上，序列长度 5120 时推理吞吐达到 25.7k token/s，序列长度 10，240 时达到 22.4k token/s。"
+  ],
+  "tags": [
+    "编程与工程",
+    "性能优化",
+    "开源项目",
+    "AI 硬件与芯片",
+    "PyTorch"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 518,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793638800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-03 01:00:00"
+}

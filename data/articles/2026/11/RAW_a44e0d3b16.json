@@ -1,0 +1,52 @@
+{
+  "id": "RAW_a44e0d3b16",
+  "title": "【GitHub 一周热点解析】2026 年第 44 周",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg4MDAzOTM2NQ==&mid=2247484127&idx=1&sn=9b86821acfe5b5b53ca581a05781710f",
+  "date": "2026-11-02 17:37:00",
+  "author": "壹拾贰画生",
+  "siteName": "壹拾贰画生",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>壹拾贰画生</span> <span>2026-11-02 17:37</span> <span style=\"display: inline-block;\">江苏</span></p>\n  <p><img src=\"https://media.bestblogs.dev/20261102151116_e24756c.jpeg\"></p>\n  <p>这周 GitHub 榜单太反常了，居然没大换血。安全审计、多智能体工作台这些方向原封不动留在榜上。</p>\n  <p>更扎堆的是，三个设计类项目同周上榜，全在治“AI味”。impeccable 靠六十多条规则事后挑错；hallmark 事前立规矩，连“标题上方挂眉题小字”这种细节都写死了；ai-design-skills 干脆就一份 Markdown 文件，一周狂揽近万星。现在分发尺度变了，一份写清楚的规则本身就是产品。</p>\n  <p>教育类也在变。港大的 DeepTutor 加了道“掌握门”，不证明上一段学会了，绝不让你进下一段。这比单纯把知识讲清楚难多了，也更有价值。</p>\n  <p>另外，Orca 让多个智能体在独立副本里并行干活，互不干扰。这说明单个智能体的能力已经够用，真正的瓶颈变成了怎么调度才不出错。</p>\n  <p>榜单开始有记忆了，注意力不再每周清零。</p>\n  <p>要不要我帮你把这周这几个热门项目的核心功能，整理成一份极简清单？</p>\n </body>\n</html>",
+  "aiSummary": "本周 GitHub 热点聚焦于 AI 规则化治理、教育系统的分段掌握机制以及多智能体并行调度的突破。",
+  "oneSentenceSummary": "本周 GitHub 热点聚焦于 AI 规则化治理、教育系统的分段掌握机制以及多智能体并行调度的突破。",
+  "summary": "本期 GitHub 热点解析揭示三个核心趋势：一是设计类项目通过规则化治理降低 AI 味道，impeccable、hallmark、ai-design-skills 分别以规则、细节规范和 Markdown 文档的方式获得星标；二是教育类项目 DeepTutor 引入“掌握门”机制，要求学生必须掌握上一段知识才能进入下一段，提升学习价值；三是 Orca 项目实现多智能体在独立副本中并行工作，突显智能体调度成为新瓶颈。",
+  "mainPoints": [
+    {
+      "point": "设计类项目通过规则化治理降低 AI 味道",
+      "explanation": "impeccable 靠六十多条事后挑错规则，hallmark 事前立规矩连标题挂眉题小字都写死，ai-design-skills 用 Markdown 文件快速获星，表明规则本身成为产品价值所在。"
+    },
+    {
+      "point": "教育系统的分段掌握机制提升学习价值",
+      "explanation": "DeepTutor 加设“掌握门”，不证明上一段学会即不让进下一段，这种阶梯式学习比单纯讲清知识更具价值，体现了教育 AI 的深度应用。"
+    },
+    {
+      "point": "多智能体并行调度成为新瓶颈",
+      "explanation": "Orca 项目实现多个智能体在独立副本中并行工作互不干扰，说明单个智能体能力已足，真正的挑战在于如何高效调度以避免错误。"
+    }
+  ],
+  "keyQuotes": [
+    "这周 GitHub 榜单太反常了，居然没大换血。",
+    "现在分发尺度变了，一份写清楚的规则本身就是产品。",
+    "榜单开始有记忆了，注意力不再每周清零。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 编程",
+    "AI 产品与应用",
+    "AI 工程",
+    "AI 安全与对齐"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 364,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_1f82fc029d",
+  "sourceName": "壹拾贰画生",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1793612220000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-02 17:37:00"
+}
