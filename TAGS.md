@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-05 03:03:27 | [返回首页](/README.md)
+**更新时间**: 2026-11-05 08:37:48 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17189)
+- [AI & 大模型](#ai-llm) (17209)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1031)
 - [DevOps](#devops) (833)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7157)
+- [其他](#other) (7161)
 
 
 ---
@@ -43,7 +43,7 @@
 - [利用-Claude-Science-绘制首张完整的紫外光波段全天星图](https://www.anthropic.com/research/the-missing-map-of-the-sky) - AI 精选
 - [微调-0.8B-模型战胜托管-LLM-的单一任务](https://dev.to/abhash_chakraborty/fine-tuning-a-08b-model-to-beat-hosted-llms-at-one-job-4ajl) - AI 精选
 
-- [查看全部 17189 篇...](/details/tags/ai-llm.md)
+- [查看全部 17209 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7157 篇...](/details/tags/other.md)
+- [查看全部 7161 篇...](/details/tags/other.md)
 
 

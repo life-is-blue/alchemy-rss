@@ -1,0 +1,61 @@
+{
+  "id": "RAW_c9751e3d4a",
+  "title": "分享靠 1 个 Agent 控制所有 Agent 和应用新技巧",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw==&mid=2247512827&idx=1&sn=565247d44f57bdd052d99150ee125b3c",
+  "date": "2026-11-04 09:46:00",
+  "author": "卡尔的AI沃茨",
+  "siteName": "卡尔的AI沃茨",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>卡尔的AI沃茨</span> <span>2026-11-04 09:46</span> <span style=\"display: inline-block;\">浙江</span></p>\n  <p>两周前我吐槽Grok Bot控制终端codex绕开沙箱用上gpt独一档的computer use能力失败率奇怪的难题终于被我解决了，不只是浏览器自动化，是能操控本机里其他Agent，能操作剪映做AI剪辑，在第二次操作的过程中还可以完全不消耗额度，非常Amazing。</p>\n  <p>先说一下结论，目前最佳搭配是，</p>\n  <p>Grok Bot➕vercel开源的agent-desktop</p>\n  <p>因为openai没有开口子所以现在想要用codex同款computer use有两条技术路线。</p>\n  <p>1️⃣ amontlabs的LCU（Local Computer Use）跟codex用的同一条路，通过macOS的accessibility API读取界面，用accessibility动作去点击输入拖放。</p>\n  <p>好处是能「看懂」界面，知道哪个是按钮、哪个是输入框。坏处是，如果app的UI不暴露给 accessibility tree，就抓瞎了。它们都需要一个模型在后面做视觉理解和决策，所以截图，识别，规划动作都烧tokens。LCU作为MCP工具我在grok bot调用的时候也是走Codex的token。</p>\n  <p>2️⃣agent-desktop走的是另一条路CGEvent 注入。它不通过 accessibility API，是直接在操作系统层面模拟鼠标和键盘事件。按下，移动，释放，跟我手指在触控板上划一样。app 收到的就是真实的输入事件。它本身只是一个 CLI工具，不做任何推理，所以单独跑agent-desktop的命令是零额度消耗。</p>\n  <p>但agent-desktop不会自己思考。要告诉它点哪里，拖到哪里，等多久。这个「告诉它」的工作可以交给1个agent来做，写成脚本后回放时，消耗的额度是零。</p>\n  <p>重复的操作步骤遇到可变项，比方说ai剪辑就是素材不同导出分辨率不同，才需要模型介入，这样换来就是操作速度会快很多。同样是剪辑视频，第一次用了13分钟但是第二次用37秒就搞定了，LCU平均是4到5分钟。</p>\n  <p>但也不是完全没有缺点。agent-desktop模仿是真实输入所以需要占窗口，不像LCU可以在后台慢慢跑，最佳搭配还是mac mini。</p>\n  <p>还有一个技术点区分来这两套方案，</p>\n  <p>1️⃣ 我仔细对比了ai剪辑每步的操作时间，LCU在素材拖拽里浪费大部分时间，后面发现剪映是Electron套壳的自绘 UI，时间线区域的drop target对accessibility API几乎不可见，用人话说就是发的拖拽指令剪映根本收不到</p>\n  <p>2️⃣agent-desktop就没这麻烦，duration给了800ms的慢速拖动。对剪映来说这就是一个真实鼠标操作，跟人手拖一样。</p>\n  <p>果然这种在不断尝试慢慢找到正解，</p>\n  <p>在啥都可以问agent的现在还是很爽的，</p>\n  <p>现在我们都可以用1个Agent控制各种应用了！</p>\n  <p>这把效率又原地起飞了！</p>\n </body>\n</html>",
+  "aiSummary": "作者通过组合 Grok Bot 与 Vercel 的 agent-desktop 工具，实现用单个 Agent 控制所有 Agent 和应用，显著提升自动化效率，尤其在 AI 剪辑等任务上将耗时从 13 分钟降至 37 秒。",
+  "oneSentenceSummary": "作者通过组合 Grok Bot 与 Vercel 的 agent-desktop 工具，实现用单个 Agent 控制所有 Agent 和应用，显著提升自动化效率，尤其在 AI 剪辑等任务上将耗时从 13 分钟降至 37 秒。",
+  "summary": "本文介绍了一种高效的自动化方案：利用 Grok Bot 结合 Vercel 开源的 agent-desktop 工具，实现对本机所有 Agent 和应用的统一控制。作者通过对比两种技术路线（LCU 通过 Accessibility API 与 agent-desktop 通过 CGEvent 注入），阐述了 agent-desktop 在模拟真实输入、零额度消耗方面的优势。案例显示，该方案在 AI 剪辑等任务中将耗时大幅缩短，提升了操作效率。",
+  "mainPoints": [
+    {
+      "point": "Grok Bot 结合 agent-desktop 实现统一控制",
+      "explanation": "通过将 Grok Bot 作为大模型推理引擎，agent-desktop 负责底层输入模拟，实现「一个 Agent 控制所有 Agent 和应用」的效果，显著提升自动化效率。"
+    },
+    {
+      "point": "agent-desktop 通过 CGEvent 注入实现真实输入",
+      "explanation": "与 LCU 依赖 Accessibility API 的方式不同，agent-desktop 直接在操作系统层面模拟鼠标和键盘事件，避免了界面可见性问题，适用于自绘 UI 的应用。"
+    },
+    {
+      "point": "零额度消耗的自动化脚本回放",
+      "explanation": "agent-desktop 本身不做推理，独立运行时零额度消耗；将操作步骤写成脚本后回放，仅在模型生成脚本时消耗额度，大幅降低成本。"
+    },
+    {
+      "point": "AI 剪辑效率提升显著",
+      "explanation": "案例显示，首次使用 LCU 耗时 13 分钟，而采用 agent-desktop + Grok Bot 的方案仅需 37 秒，效率提升约 20 倍。"
+    },
+    {
+      "point": "技术路线对比：LCU vs agent-desktop",
+      "explanation": "LCU 依赖视觉识别和 Accessibility API，适合后台运行但易因 UI 不暴露而失效；agent-desktop 模拟真实输入，需前置窗口，但兼容性更好。"
+    }
+  ],
+  "keyQuotes": [
+    "Grok Bot➕vercel 开源的 agent-desktop，因为 openai 没有开口子所以现在想要用 codex 同款 computer use 有两条技术路线。",
+    "agent-desktop 不会自己思考。要告诉它点哪里，拖到哪里，等多久。这个「告诉它」的工作可以交给 1 个 agent 来做，写成脚本后回放时，消耗的额度是零。",
+    "同样是剪辑视频，第一次用了 13 分钟但是第二次用 37 秒就搞定了，LCU 平均是 4 到 5 分钟。",
+    "agent-desktop 模仿是真实输入所以需要占窗口，不像 LCU 可以在后台慢慢跑，最佳搭配还是 mac mini。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "AI电脑操作",
+    "个人效率",
+    "MCP协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1115,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_974215",
+  "sourceName": "卡尔的AI沃茨",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1793756760000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-04 09:46:00"
+}
