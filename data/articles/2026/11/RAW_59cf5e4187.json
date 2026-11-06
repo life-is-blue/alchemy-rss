@@ -1,0 +1,59 @@
+{
+  "id": "RAW_59cf5e4187",
+  "title": "在银行打造基于 Kubernetes 的平台文化",
+  "url": "https://www.infoq.com/news/2026/11/culture-kubernetes-bank/",
+  "date": "2026-11-05 19:11:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a banking environment, open source can earn trust by running real workloads, as Marcy Paramonova and Stéphane Cusin explained in their talk <a href=\"https://www.youtube.com/watch?v=K5KVMdQTJc8\">Building Cloud Native Culture in a Bank</a> at <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/\">KubeCon &amp; CloudNativeCon Europe</a>. Deploying Kubernetes was the easy part; the hard part was culture: community of practice, shared knowledge, rituals, ownership. Teams try things, keep what works, and improve bottom-up.</p>\n   <p>Open source was not an obvious choice in their banking environment, Cusin mentioned. They received questions about support and accountability. Instead of trying to convince people with theory, they started running real workloads. Over time, trust was built by operating the platform day after day:</p>\n   <blockquote>\n    <p>Open source stopped being seen as a risk. It became the foundation.</p>\n   </blockquote>\n   <p>They treated their first version of Kubernetes like a project. \"We delivered it, we got a good adoption\", Cusin said. But the operation was incredibly hard. Not because the technology was broken, but because they hadn’t built the culture around it yet:</p>\n   <blockquote>\n    <p>Nobody knew who to call, responsibilities were blurry, and teams were consuming the platform without really contributing to it. Every incident felt like a fire drill.</p>\n   </blockquote>\n   <p>They realized deploying Kubernetes was the easy part. The hard part was building the culture with a community of practice around it. The shared knowledge, the rituals, the ownership model, Cusin explained:</p>\n   <blockquote>\n    <p>Without that culture, no platform survives its own success.</p>\n   </blockquote>\n   <p>They invite people to experiment, for instance by having a yearly competition where everybody can submit their ideas and the one that wins, actually gets implemented. Many of their improvements came from the bottom up, Paramonova argued.</p>\n   <p>They used open source as a compass, something that helped them orientate a subject, Cusin explained:</p>\n   <blockquote>\n    <p>When Kubernetes appeared, we recognized it immediately. Strong Kubernetes, transparent governance, and real production users. The compass pointed; we followed. And now we are watching OpenStack the same way.</p>\n   </blockquote>\n   <p>A compass doesn’t force you in one direction. It helps you recognize the right opportunity when it arrives, Cusin said.</p>\n   <p>They tried things, and some of them didn’t work. They kept the ones that did. The act of trying, of deliberately designing how teams interact, creates the culture we have today, Cusin said. Structure first, the culture follows.</p>\n   <p>Every organization is different; every regulated environment has its own constraints, Paramonova said. You need a compass during your journey. It’s something that will guide you when everything else is uncertain. For us, it was open source, she concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/maria-paramonova/\">Marcy Paramonova</a> and <a href=\"https://www.linkedin.com/in/scusin/\">Stéphane Cusin</a> after their talk.</p>\n   <p><strong>InfoQ: How did you gain trust from your development teams?</strong></p>\n   <blockquote>\n    <p><strong>Stéphane Cusin</strong>: Over time, trust emerged from a combination of transparency and reliability. When developers see that the platform consistently helps them deliver applications safely and efficiently, adoption follows naturally.</p>\n   </blockquote>\n   <blockquote>\n    <p><strong>Marcy Paramonova</strong>: Trust was not something we could establish by presenting a roadmap or writing good documentation, though both matter. It came from running things. From being present when something broke. From being honest about what was not yet ready.</p>\n   </blockquote>\n   <blockquote>\n    <p><strong>Cusin</strong>: Today, our culture is centered around ownership, automation, transparency, and continuous improvement. Teams are empowered to move quickly, but they do so within a framework of shared standards and platform capabilities. The result is not only greater efficiency, but also greater consistency, reliability, and visibility across the organization.</p>\n   </blockquote>\n   <p><strong>InfoQ: How did Kubernetes transform how your organization builds software?</strong></p>\n   <blockquote>\n    <p><strong>Cusin</strong>: Kubernetes gave us a common platform and a common operating model. In the first version of our platform, we gave teams flexibility. We exposed many Kubernetes capabilities directly and allowed teams to customize their deployment model extensively. In practice, that often resulted in different patterns emerging across teams.</p>\n    <p>One of the lessons we learned as platform engineers is that developers do not come to a platform looking for more infrastructure choices. They come to a platform to deliver software.</p>\n    <p>In our current platform, Kubernetes is no longer the product. Kubernetes is the implementation detail. The product is a simple, secure, and standardized software delivery experience.</p>\n    <p>We provide opinionated deployment patterns, standardized Helm charts, and common platform capabilities. As a result, when an engineer moves from one team to another, the deployment experience is largely the same. They do not need to relearn how applications are packaged, deployed, monitored, or operated.</p>\n   </blockquote>\n   <blockquote>\n    <p><strong>Paramonova</strong>: The transformation I experienced most directly was organizational. Kubernetes gave teams a common language. It created shared abstractions that made collaboration across different parts of engineering much more natural.</p>\n    <p>Before, a lot of knowledge was siloed by team or by technology stack. Kubernetes did not erase those silos overnight, but it gave everyone a shared foundation to build on. That changed conversations, and changed what was possible.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Building a Culture for a Kubernetes-Based Platform in a Bank\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/culture-kubernetes-bank/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1793877060000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "文章介绍了一家银行如何通过实践社群、共同仪式和自下而上的实验，打造基于 Kubernetes 的平台文化，将平台工程从一个技术项目转变为组织能力。",
+  "oneSentenceSummary": "文章介绍了一家银行如何通过实践社群、共同仪式和自下而上的实验，打造基于 Kubernetes 的平台文化，将平台工程从一个技术项目转变为组织能力。",
+  "summary": "文章讲述了一家银行如何将重点放在文化而不只是技术上，成功打造基于 Kubernetes 的平台。他们从真实工作负载入手建立信任，并将 Kubernetes 作为一个项目来推进，随后发现，由于缺乏文化基础，运营比部署更困难。为此，他们建立了实践社群，推动知识共享、共同仪式和明确的责任归属。平台也从暴露 Kubernetes 的底层能力，逐步发展为提供有明确规范的部署模式和标准化 Helm chart。关键策略包括每年举办创新竞赛、把开源作为技术选型的「指南针」，以及有意识地设计团队之间的协作方式。最终，他们打造出标准化且安全的软件交付体验，让工程师无论加入哪个团队，都能使用一致的部署模式。",
+  "mainPoints": [
+    {
+      "point": "在受监管的环境中建立信任，需要运行真实工作负载，而非停留在理论论证上。",
+      "explanation": "银行从真实的生产工作负载入手，展示 Kubernetes 的可靠性。通过日常运营和信息透明，团队逐渐将其视为「基础」而非「风险」。"
+    },
+    {
+      "point": "平台的成功依赖文化基础：实践社群、知识共享、共同仪式和责任归属机制。",
+      "explanation": "缺乏文化基础的平台在规模扩大时会遭遇问题：团队不知道该联系谁，职责不清，事故处理也变成了紧急救火。作者建立了有组织的社群实践来应对这些问题。"
+    },
+    {
+      "point": "Kubernetes 从产品本身转变为标准化交付体验背后的实现细节。",
+      "explanation": "早期版本暴露了 Kubernetes 的底层能力，导致各团队采用的模式不一致。成熟的平台提供有明确规范的部署模式和标准化 Helm chart，使部署体验不受团队归属影响，始终保持一致。"
+    },
+    {
+      "point": "通过自下而上的创新和实验，推动平台持续改进。",
+      "explanation": "银行每年举办竞赛，并落实获胜方案。许多改进来自一线实践者，而非自上而下的指令，因此更贴近用户需求，也让用户更有主人翁意识。"
+    }
+  ],
+  "keyQuotes": [
+    "开源不再被视为风险，而是成为了基础。",
+    "没人知道该找谁，职责也很模糊；各团队都在使用这个平台，却没有真正参与其中。每次发生事故，都像是在紧急救火。",
+    "没有这样的文化，任何平台都无法承受成功带来的规模扩张。",
+    "Kubernetes 为我们提供了一个通用平台和一套共同的运营模式。",
+    "Kubernetes 只是实现细节。真正的产品，是简单、安全且标准化的软件交付体验。",
+    "建立信任并非靠展示路线图或编写完善的文档就能做到，尽管这两者都很重要。信任来自亲自运行系统，来自系统出问题时始终在场，也来自坦诚说明哪些部分尚未准备就绪。"
+  ],
+  "tags": [
+    "编程与工程",
+    "云原生 / DevOps",
+    "系统设计",
+    "平台工程",
+    "开源项目"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 775,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1793877060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-05 19:11:00"
+}

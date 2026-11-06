@@ -1,0 +1,62 @@
+{
+  "id": "RAW_65466f1f39",
+  "title": "百度开源文心 5.5 Flash Base，多基准测试刷新同尺寸模型 SOTA",
+  "url": "https://www.qbitai.com/2026/11/507787.html",
+  "date": "2026-11-05 15:15:13",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"15\" data-pm-slice=\"0 0 []\">11月5日，百度正式开源最新基座模型文心5.5 Flash Base（ERNIE 5.5 Flash Base）。模型采用MoE架构，总参数量2800亿，每个 Token 激活140亿参数，使用33.5万亿个 Token 完成预训练，预训练上下文长度最高达128K，微调与推理阶段支持最长100万 Token上下文。在知识、推理、数学、代码、多语言和长上下文等多个基准测试中取得同尺寸模型 SOTA 表现，超过 DeepSeek-V4-Flash-Base、Hy3-preview-Base、MiMo-V2.5-Base 等模型。</p>\n  <p>开源地址：https://huggingface.co/baidu/ERNIE-5.5-Flash-Base</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20261106002711_2085b54e37f1b8dca4da3690df8c0ee1.png\">\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20261106002711_2f1576c2e9734c18d52405663a26d14f.png\">\n  </div>\n  <p>随着大模型应用从文本问答向长文档分析、多轮交互和智能体任务延伸，模型需要处理的信息量持续增加，计算和显存开销也随之上升。在保证模型能力的同时提高资源利用效率，已成为大模型研发的重要课题。</p>\n  <p>文心 5.5 Flash Base围绕“效率”这一设计主线，在注意力机制、专家路由及训练机制等关键环节进行系统性优化，并实现了多项算法创新。</p>\n  <p>在注意力机制上，文心提出 <strong>Latent-Gated Sparse Attention</strong>，将混合稀疏注意力、低秩门控注意力与虚拟头注意力结合起来。其中，模型通过组合HCA与MLA，让不同注意力层分别承担压缩历史信息和细粒度访问历史位置的任务；低秩门控注意力（Low-Rank Gated Attention）则利用已有的低维表示计算信息门控，使门控投影权重参数减少75%；此外，虚拟头注意力（Virtual Head Attention，VHA）可提升模型表达力与训练质量，推理时融合进注意力算子，开销极小。这些设计降低了长上下文处理的资源开销，同时保留模型对关键信息的处理能力。</p>\n  <p>在专家路由上，模型采用 <strong>Multi-Router Latent MoE</strong>，由多个独立路由器共同参与专家选择，改善路由评分与专家实际效用之间的相关性。相比依赖单一路由器的传统方案，该设计旨在降低单一评分偏差对专家选择的影响，同时保持激活专家数量、专家计算量和通信量不变。在训练目标上，模型引入 <strong>ECHO</strong>，无需额外增加 MTP 模块（Multi-Token Prediction），而是复用主干最后一层，让主干自身学习预测后续 token，从而提前规划序列走向，有效提升推理与代码能力。文心5.5 Flash 仅采用单步 ECHO 预训练，复用的最后一层还可作为投机解码的草稿模型，展现出多步外推能力：同样只训练一步，多步起草质量大幅优于辅助 MTP 模块。</p>\n  <p>除模型架构外，大模型基建创新也十分重要。文心对分布式Muon优化器进行了优化，并推出面向大 head dim 的注意力算子 FlashMask-4，改善大规模训练中的通信、显存利用与计算效率。模型能力的提升不仅依赖算法本身，也与训练系统能否高效支撑这些设计密切相关。</p>\n  <p>基座模型不仅承载着预训练阶段形成的通用能力，也是下游模型开发与应用创新的重要基础。与面向终端用户的应用模型不同，Base 模型为开发者和企业提供了进一步微调与定制的空间，可基于自身业务需求构建适应不同场景的专业模型与应用。开放基座模型能够为开发者提供更多技术选择，降低专业模型开发的训练成本与技术门槛。</p>\n  <p>当前，大模型的竞争逐渐迈向模型能力、训练效率与场景创新协同发展的新阶段。随着推理、Agent等技术与应用加速演进，行业对基座模型的需求也从单一的能力提升，转向更高效的训练范式、更灵活的能力拓展，以及更广泛的场景适配需求。文心5.5 Flash Base在提升模型基础能力与训练推理效率的同时，为开发者和社区提供了更具拓展性的技术基础，推动模型技术走向多样化的能力探索与应用创新。</p>\n  <p data-track=\"14\"><em><span style=\"color: #808080;\">本文由百度提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "百度开源文心 5.5 Flash Base 基座模型，采用 MoE 架构和多项算法创新，在同尺寸模型中刷新 SOTA 表现。",
+  "oneSentenceSummary": "百度开源文心 5.5 Flash Base 基座模型，采用 MoE 架构和多项算法创新，在同尺寸模型中刷新 SOTA 表现。",
+  "summary": "百度正式开源最新基座模型文心 5.5 Flash Base（ERNIE 5.5 Flash Base），模型采用 MoE 架构，总参数量 2800 亿，每个 Token 激活 140 亿参数，使用 33.5 万亿个 Token 完成预训练，预训练上下文长度最高达 128K，微调与推理阶段支持最长 100 万 Token 上下文。在知识、推理、数学、代码、多语言和长上下文等多个基准测试中取得同尺寸模型 SOTA 表现，超过 DeepSeek-V4-Flash-Base、Hy3-preview-Base、MiMo-V2.5-Base 等模型。",
+  "mainPoints": [
+    {
+      "point": "文心 5.5 Flash Base 采用 MoE 架构，2800 亿总参数，140 亿参数激活，128K 预训练上下文支持 100 万 Token 推理。",
+      "explanation": "模型规模与上下文能力显著提升，支持长文档分析和复杂任务，为开发者提供强大的基础能力。"
+    },
+    {
+      "point": "Latent-Gated Sparse Attention 结合混合稀疏注意力、低秩门控注意力与虚拟头注意力，降低长上下文资源开销。",
+      "explanation": "通过 HCA 与 MLA 组合处理不同注意力层任务，低秩门控注意力减少 75%参数，VHA 提升表达力。"
+    },
+    {
+      "point": "Multi-Router Latent MoE 由多个独立路由器共同参与专家选择，提高路由评分与专家效用相关性。",
+      "explanation": "相比单一路由器方案，降低单一评分偏差影响，保持激活专家数量、计算量和通信量不变。"
+    },
+    {
+      "point": "引入 ECHO 机制复用主干最后一层，实现单步预训练提升推理与代码能力，展现多步外推能力。",
+      "explanation": "无需额外 MTP 模块，利用主干自身学习预测后续 token，提前规划序列走向，推理效果优于辅助 MTP 模块。"
+    },
+    {
+      "point": "优化分布式 Muon 优化器，推出 FlashMask-4 注意力算子，改善大规模训练中的通信、显存利用与计算效率。",
+      "explanation": "算法创新与训练系统高度协同，为模型能力提升提供高效支撑。"
+    }
+  ],
+  "keyQuotes": [
+    "文心 5.5 Flash Base 采用 MoE 架构，总参数量 2800 亿，每个 Token 激活 140 亿参数，使用 33.5 万亿个 Token 完成预训练。",
+    "Latent-Gated Sparse Attention 将混合稀疏注意力、低秩门控注意力与虚拟头注意力结合起来。",
+    "Multi-Router Latent MoE 由多个独立路由器共同参与专家选择，改善路由评分与专家实际效用之间的相关性。",
+    "引入 ECHO 机制，无需额外增加 MTP 模块，复用主干最后一层，让主干自身学习预测后续 token。",
+    "文心 5.5 Flash Base 在知识、推理、数学、代码、多语言和长上下文等多个基准测试中取得同尺寸模型 SOTA 表现。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "大语言模型 (LLM)",
+    "混合专家模型",
+    "模型训练与推理",
+    "AI 工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 87,
+  "wordCount": 1402,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1793862913000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-05 15:15:13"
+}
