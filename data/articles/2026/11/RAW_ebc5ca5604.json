@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ebc5ca5604",
+  "title": "著名 Mac 菜单栏日历 Itsycal 更新：现在可以显示苹果提醒事项了",
+  "url": "https://www.appinn.com/itsycal-reminders/",
+  "date": "2026-11-06 15:31:25",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"appinn-track\" aria-label=\"Itsycal 追踪报道\">\n   <details class=\"appinn-track__details\">\n    <summary class=\"appinn-track__summary\"><span class=\"appinn-track__title\">Itsycal · 追踪报道（共 3 篇）</span></summary>\n    <ol class=\"appinn-track__full\">\n     <li class=\"appinn-track__item appinn-track__item--current\"><time class=\"appinn-track__date\" datetime=\"2026-11-06T15:28:11+08:00\">2026.11.06</time><span class=\"appinn-track__title-text\">著名 Mac 菜单栏日历 Itsycal 更新：现在可以显示苹果提醒事项了 <span class=\"appinn-track__badge\">（当前文章）</span></span></li>\n     <li class=\"appinn-track__item\"><time class=\"appinn-track__date\" datetime=\"2024-03-31T11:37:50+08:00\">2024.03.31</time><a class=\"appinn-track__link\" href=\"https://www.appinn.com/itsycal-custom-beep-mp3/\">Itsycal – 在 Mac 菜单栏显示迷你日历：新增自定义整点报时音效功能</a></li>\n     <li class=\"appinn-track__item\"><time class=\"appinn-track__date\" datetime=\"2019-01-30T10:30:27+08:00\">2019.01.30</time><a class=\"appinn-track__link\" href=\"https://www.appinn.com/itsycal-for-mac/\">Itsycal – macOS 菜单栏上自定义显示日历与时间</a></li>\n    </ol>\n   </details>\n   <ol class=\"appinn-track__preview\">\n    <li class=\"appinn-track__item appinn-track__item--current\"><time class=\"appinn-track__date\" datetime=\"2026-11-06T15:28:11+08:00\">2026.11.06</time><span class=\"appinn-track__title-text\">著名 Mac 菜单栏日历 Itsycal 更新：现在可以显示苹果提醒事项了 <span class=\"appinn-track__badge\">（当前文章）</span></span></li>\n    <li class=\"appinn-track__item\"><time class=\"appinn-track__date\" datetime=\"2024-03-31T11:37:50+08:00\">2024.03.31</time><a class=\"appinn-track__link\" href=\"https://www.appinn.com/itsycal-custom-beep-mp3/\">Itsycal – 在 Mac 菜单栏显示迷你日历：新增自定义整点报时音效功能</a></li>\n    <li class=\"appinn-track__wave-item\" onclick=\"var d=this.closest('.appinn-track').querySelector('details');if(d)d.open=true;\" onkeydown=\"if(event.key==='Enter'||event.key===' '){event.preventDefault();var d=this.closest('.appinn-track').querySelector('details');if(d)d.open=true;}\" role=\"button\" tabindex=\"0\" title=\"点击展开完整时间线\" aria-label=\"点击展开完整时间线\"></li>\n   </ol>\n  </section>\n  <p class=\"has-very-light-gray-to-cyan-bluish-gray-gradient-background has-background wp-block-paragraph\"><strong>Mac 菜单栏上的日历，现在连待办事项也能一起显示了。</strong></p>\n  <p class=\"wp-block-paragraph\"><strong><a href=\"https://www.appinn.com/tag/itsycal/\" data-type=\"post_tag\" data-id=\"7289\">Itsycal</a></strong> 是一款经典的 macOS 菜单栏日历工具，小巧、免费，点击菜单栏就能查看日历和日程，并且可以自定义菜单栏显示的内容。</p>\n  <p class=\"wp-block-paragraph\">最近，Itsycal 0.28.0 发布，加入对苹果「提醒事项」（Reminders）的支持，现在，日历事件和待办任务可以显示在一起了。</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/11/Itsycal-E69BB4E696B0-E88F9CE58D95E6A08FE697A5E58E86E694AFE68C81E68F90E98692E4BA8BE9A1B9.jpg\" alt=\"著名 Mac 菜单栏日历 Itsycal 更新：现在可以显示苹果提醒事项了 1\" class=\"wp-image-60624\" title=\"著名 Mac 菜单栏日历 Itsycal 更新：现在可以显示苹果提醒事项了 1\">\n  </figure>\n  <h2 class=\"wp-block-heading\">日历里也能查看待办事项</h2>\n  <p class=\"wp-block-paragraph\">在 Itsycal 设置的 <strong>Events</strong> 页面中，选择需要显示的提醒事项列表（需要授权），就能看到：</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>按日期显示任务</strong>：设置了截止日期的提醒事项，会显示在对应日期。</li>\n   <li><strong>直接勾选完成</strong>：不用打开提醒事项 App，就能完成任务。</li>\n   <li><strong>逾期任务标红</strong>：未完成的过期任务会以红色显示。</li>\n   <li><strong>支持重复提醒</strong>：重复任务也能出现在日历中。</li>\n   <li><strong>支持撤销</strong>：误操作可以使用 <code>⌘Z</code> 撤销。</li>\n  </ul>\n  <figure class=\"wp-block-image size-full is-resized\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/11/screenshot-2026-11-06-at-3.22.37-PM402x.avif\" alt=\"著名 Mac 菜单栏日历 Itsycal 更新：现在可以显示苹果提醒事项了 2\" class=\"wp-image-60625\" title=\"著名 Mac 菜单栏日历 Itsycal 更新：现在可以显示苹果提醒事项了 2\">\n  </figure>\n  <p class=\"wp-block-paragraph\">不过，目前还不能直接在 Itsycal 中创建、编辑或删除提醒事项，也不会显示没有设置日期的任务。</p>\n  <p class=\"wp-block-paragraph\">另外，新版本要求 <strong>macOS 27 或更新系统</strong>，旧系统用户仍可使用此前的版本。</p>\n  <h2 class=\"wp-block-heading\">获取</h2>\n  <ul class=\"wp-block-list\">\n   <li><strong><a href=\"https://www.mowglii.com/itsycal/\" target=\"_blank\" rel=\"noopener\">官方</a></strong></li>\n  </ul>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p class=\"wp-block-paragraph\">原文：https://www.appinn.com/itsycal-reminders/</p>\n </body>\n</html>",
+  "aiSummary": "Itsycal 0.28.0 版本新增对苹果提醒事项（Reminders）的支持，允许用户在菜单栏日历中直接查看、勾选完成待办任务，并以红色标示逾期事项。",
+  "oneSentenceSummary": "Itsycal 0.28.0 版本新增对苹果提醒事项（Reminders）的支持，允许用户在菜单栏日历中直接查看、勾选完成待办任务，并以红色标示逾期事项。",
+  "summary": "本文报道了知名 macOS 菜单栏日历工具 Itsycal 0.28.0 的更新，核心功能是集成苹果提醒事项（Reminders）。用户在 Itsycal 设置的 Events 页面中授权后，即可在日历中查看带日期的提醒事项，支持按日期显示、直接勾选完成、逾期标红、重复提醒显示以及撤销功能。但目前仍无法在 Itsycal 中创建、编辑或删除提醒事项，也不显示无日期的任务。新版本要求 macOS 27 或更新系统，旧系统用户可继续使用旧版。",
+  "mainPoints": [
+    {
+      "point": "Itsycal 0.28.0 集成苹果提醒事项支持",
+      "explanation": "用户可在 Events 设置页面授权后，将提醒事项列表显示在菜单栏日历中，实现日历事件与待办任务的统一查看。"
+    },
+    {
+      "point": "支持多种提醒事项交互功能",
+      "explanation": "包括按日期显示任务、直接勾选完成、逾期任务红色标示、重复提醒显示及 ⌘Z 撤销操作，提升日常任务管理便捷性。"
+    },
+    {
+      "point": "功能局限与系统要求",
+      "explanation": "目前无法在 Itsycal 中创建/编辑/删除提醒事项，也不显示无日期任务；新版要求 macOS 27 或更新系统，旧系统用户需继续使用旧版。"
+    }
+  ],
+  "keyQuotes": [
+    "最近，Itsycal 0.28.0 发布，加入对苹果「提醒事项」（Reminders）的支持，现在，日历事件和待办任务可以显示在一起了。",
+    "按日期显示任务：设置了截止日期的提醒事项，会显示在对应日期。",
+    "直接勾选完成：不用打开提醒事项 App，就能完成任务。",
+    "逾期任务标红：未完成的过期任务会以红色显示。",
+    "支持重复提醒：重复任务也能出现在日历中。",
+    "支持撤销：误操作可以使用 ⌘Z 撤销。"
+  ],
+  "tags": [
+    "编程与工程",
+    "开发者工具",
+    "个人效率",
+    "Apple",
+    "macOS"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 582,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1793950285000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-06 15:31:25"
+}

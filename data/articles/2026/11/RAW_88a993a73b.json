@@ -1,0 +1,58 @@
+{
+  "id": "RAW_88a993a73b",
+  "title": "腾讯 Hy4 调用激增已十倍扩容，Agent 能力开源模型第一",
+  "url": "https://www.qbitai.com/2026/11/507967.html",
+  "date": "2026-11-06 10:00:11",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-pm-slice=\"0 0 []\">11月 5 日，腾讯宣布因 Hy4 调用激增，WorkBuddy 已进行十倍扩容，以满足更多用户的体验和调用需求。同时，凭借模型能力的持续跃升，Hy4 受到国际权威模型测试榜单的高度认可，在 Artificial Analysis 智能指数榜单上位列中国模型第二，Agent Arena 榜单居开源模型第一。</p>\n  <p>混元 Hy4 在 WorkBuddy 首发接入以来，凭借 Agent 能力的显著提升，受到了广大用户与开发者的积极体验和热情反馈，上线首日遇到大量用户触及额度情况。目前，腾讯已针对 Hy4 推理集群进行十倍扩容，同时提升用户免费体验额度，持续动态调配资源。</p>\n  <p>与用户侧的热烈反响相呼应，Hy4 在多项海外权威评测中同步交出亮眼成绩。5 日，全球权威大模型评测平台 Artificial Analysis 发布最新智能指数榜单，腾讯 Hy4 在 724 款模型中跻身前列，在中国模型中位列第二，仅次于Kimi K3.1 Pro，领先于Qwen 3.8 Max、DeepSeek V4.1 Flash等模型。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20261106091918_0f5a742aae3fdfb7a2efbceb16436ecf.png\">\n  </div>\n  <p>Artificial Analysis 被业内视为当前衡量大模型综合智力水平的重要参考之一，该指数并非单一跑分，而是一个综合了覆盖复杂推理、代码生成与调试、工具调用、多模态理解、长程规划以及科学问题求解等核心能力的高难度评测，对模型的泛化能力与工程实用性要求较高。Hy4 在这一综合评价体系与 Grok 4.7（xhigh）并列，显示出腾讯在基础模型能力上的扎实积累。</p>\n  <p>Artificial Analysis 也提到，在成本效率上，Hy4 单任务成本约 0.78 美元，在同等分数区间内显著低于 Grok 4.7（xhigh）和 Qwen3.8 Max，价格分别比这两个模型便宜 10 倍和 13 倍，体现出较强的能力成本平衡。</p>\n  <p>此外，在更侧重真实智能体任务中的表现的 Agent Arena 最新榜单上，腾讯 Hy4 位列总榜第 13 名，居全球开源模型第一。凭借较高性价比，Hy4 同时位于该榜单的 Pareto Frontier（帕累托前沿线）上，相比成本更高的 Claude Opus 5.5 等顶级模型，在显著降低成本的同时仍保持正分表现。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20261106091918_6fb85b38ac62156b5c86656bcd1fb6ef.png\">\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://media.bestblogs.dev/20261106091918_8293034e906aca8e0dad8a861416d2f4.jpeg\">\n  </div>\n  <p data-track=\"21\">11 月 4 日，腾讯混元最新一代大语言模型 Hy4 发布，模型能力的再次全面跃升，相比于 Hy4 preview，Hy4 在预训练和后训练上显著扩展了数据和训练规模，首次引入视觉理解能力，并大幅提升了指令遵循、长文理解、长程智能体等综合效果。</p>\n  <p data-track=\"20\"><em><span style=\"color: #808080;\">本文由腾讯提供，量子位获授权转载，观点归原作者所有。</span></em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "腾讯 Hy4 模型因 Agent 能力显著提升，在 Artificial Analysis 智能指数榜单中位列中国模型第二，在 Agent Arena 开源模型榜单中夺冠， WorkBuddy 已进行十倍扩容以应对调用激增。",
+  "oneSentenceSummary": "腾讯 Hy4 模型因 Agent 能力显著提升，在 Artificial Analysis 智能指数榜单中位列中国模型第二，在 Agent Arena 开源模型榜单中夺冠， WorkBuddy 已进行十倍扩容以应对调用激增。",
+  "summary": "腾讯于 11 月 5 日宣布，因 Hy4 调用激增，WorkBuddy 已进行十倍扩容。Hy4 在 Artificial Analysis 智能指数榜单中位列中国模型第二，跻身 724 款模型前列，单任务成本约 0.78 美元，显著低于 Grok 4.7 和 Qwen3.8 Max。此外，在 Agent Arena 榜单中，Hy4 居全球开源模型第一，位于帕累托前沿线上。11 月 4 日，Hy4 正式发布，模型能力全面跃升，首次引入视觉理解能力。",
+  "mainPoints": [
+    {
+      "point": "Hy4 在 Agent 能力上显著提升，位居开源模型第一",
+      "explanation": "在 Agent Arena 榜单中，Hy4 居全球开源模型第一，凭借较高性价比，同时位于帕累托前沿线上，显著低于成本更高的 Claude Opus 5.5 等顶级模型。"
+    },
+    {
+      "point": "WorkBuddy 因 Hy4 调用激增进行十倍扩容",
+      "explanation": "上线首日遇到大量用户触及额度情况，腾讯针对 Hy4 推理集群进行十倍扩容，同时提升用户免费体验额度，持续动态调配资源。"
+    },
+    {
+      "point": "Hy4 在 Artificial Analysis 智能指数榜单中位列中国模型第二",
+      "explanation": "在 724 款模型中跻身前列，仅次于 Kimi K3.1 Pro，领先于 Qwen 3.8 Max、DeepSeek V4.1 Flash 等模型，单任务成本约 0.78 美元，比 Grok 4.7 便宜 10 倍，比 Qwen3.8 Max 便宜 13 倍。"
+    },
+    {
+      "point": "Hy4 正式发布，模型能力全面跃升",
+      "explanation": "相比于 Hy4 preview，Hy4 在预训练和后训练上显著扩展数据和训练规模，首次引入视觉理解能力，大幅提升指令遵循、长文理解、长程智能体等综合效果。"
+    }
+  ],
+  "keyQuotes": [
+    "「现代模拟计算」将矩阵计算定义为核心任务，通过阻变存储器实现高精度矩阵求逆，突破数字芯片算力瓶颈。",
+    "乘法的两个输入数在电路上有各自的映射锚点：一个数被直接编程为器件的电导值，另一个数作为电压加载在器件两端。",
+    "单次操作耗时小于 100 纳秒，而且该物理响应时间与矩阵的维度大小无关。",
+    "这种模拟精度的提升在理论上不存在上限，通过增加切片数量和迭代步数持续提高。",
+    "让矩阵归模拟，让逻辑归数字。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "大语言模型 (LLM)",
+    "模型训练与推理",
+    "AI 产品与应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 834,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1793930411000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-06 10:00:11"
+}

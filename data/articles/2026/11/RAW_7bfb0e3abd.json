@@ -1,0 +1,52 @@
+{
+  "id": "RAW_7bfb0e3abd",
+  "title": "群晖发布教程：保护 NAS 免受勒索软件攻击",
+  "url": "https://www.appinn.com/synology-nas-ransomware-protection-guide/",
+  "date": "2026-11-06 15:12:24",
+  "author": "青小蛙",
+  "siteName": "小众软件",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"appinn-track\" aria-label=\"synologydsm-261030 追踪报道\">\n   <details class=\"appinn-track__details\">\n    <summary class=\"appinn-track__summary\"><span class=\"appinn-track__title\">synologydsm-261030 · 追踪报道（共 3 篇）</span></summary>\n    <ol class=\"appinn-track__full\">\n     <li class=\"appinn-track__item appinn-track__item--current\"><time class=\"appinn-track__date\" datetime=\"2026-11-06T14:18:56+08:00\">2026.11.06</time><span class=\"appinn-track__title-text\">群晖发布教程：保护 NAS 免受勒索软件攻击 <span class=\"appinn-track__badge\">（当前文章）</span></span></li>\n     <li class=\"appinn-track__item\"><time class=\"appinn-track__date\" datetime=\"2026-10-30T14:23:58+08:00\">2026.10.30</time><a class=\"appinn-track__link\" href=\"https://www.appinn.com/synology-ransomware-attack-dsm-security-update/\">群晖发布公告：确认勒索病毒攻击利用了2024年12月已修复漏洞，请立即升级 DSM 到最新版</a></li>\n     <li class=\"appinn-track__item\"><time class=\"appinn-track__date\" datetime=\"2026-10-29T18:07:42+08:00\">2026.10.29</time><a class=\"appinn-track__link\" href=\"https://www.appinn.com/synology-nas-ransomware-2026/\">群晖 NAS 遭勒索病毒攻击：最新 DSM 版本也有受害报告，入侵原因不明</a></li>\n    </ol>\n   </details>\n   <ol class=\"appinn-track__preview\">\n    <li class=\"appinn-track__item appinn-track__item--current\"><time class=\"appinn-track__date\" datetime=\"2026-11-06T14:18:56+08:00\">2026.11.06</time><span class=\"appinn-track__title-text\">群晖发布教程：保护 NAS 免受勒索软件攻击 <span class=\"appinn-track__badge\">（当前文章）</span></span></li>\n    <li class=\"appinn-track__item\"><time class=\"appinn-track__date\" datetime=\"2026-10-30T14:23:58+08:00\">2026.10.30</time><a class=\"appinn-track__link\" href=\"https://www.appinn.com/synology-ransomware-attack-dsm-security-update/\">群晖发布公告：确认勒索病毒攻击利用了2024年12月已修复漏洞，请立即升级 DSM 到最新版</a></li>\n    <li class=\"appinn-track__wave-item\" onclick=\"var d=this.closest('.appinn-track').querySelector('details');if(d)d.open=true;\" onkeydown=\"if(event.key==='Enter'||event.key===' '){event.preventDefault();var d=this.closest('.appinn-track').querySelector('details');if(d)d.open=true;}\" role=\"button\" tabindex=\"0\" title=\"点击展开完整时间线\" aria-label=\"点击展开完整时间线\"></li>\n   </ol>\n  </section>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/11/Copy-of-appinn-homework-2026-11-06T141808.698.jpg\" alt=\"群晖发布教程：保护 NAS 免受勒索软件攻击 1\" class=\"wp-image-60614\" title=\"群晖发布教程：保护 NAS 免受勒索软件攻击 1\">\n  </figure>\n  <p class=\"wp-block-paragraph\">就在刚刚，群晖在公众号中发布了一篇名为《保护您的 NAS 免受勒索软件攻击》的<a href=\"https://mp.weixin.qq.com/s/955LZm_68obI8w1nWsXASg?scene=1\" target=\"_blank\" rel=\"noopener\">教程</a>，强调三点：</p>\n  <ol class=\"wp-block-list\">\n   <li>使用安全顾问执行扫描</li>\n   <li>更新 DSM</li>\n   <li>建立异地备份</li>\n  </ol>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" src=\"https://www.appinn.com/wp-content/uploads/2026/11/E5BEAEE4BFA1E59BBEE78987_2026-11-06_135615_017.avif\" alt=\"群晖发布教程：保护 NAS 免受勒索软件攻击 2\" class=\"wp-image-60612\" title=\"群晖发布教程：保护 NAS 免受勒索软件攻击 2\">\n  </figure>\n  <p class=\"wp-block-paragraph\">虽然这份教程，青小蛙觉得有些敷衍，因为它只是再次强调了使用 NAS 必须注意的事项：保持更新、注意备份。</p>\n  <p class=\"wp-block-paragraph\">但从中也可以看到，从10月29日最早爆出《<a href=\"https://www.appinn.com/synology-nas-ransomware-2026/\" data-type=\"post\" data-id=\"60443\">群晖 NAS 遭勒索病毒攻击：最新 DSM 版本也有受害报告，入侵原因不明</a>》至今，已经过了一周了，群晖确认「<strong>目前发现的病毒确实是利用原来已修复的安全弱点</strong>」。</p>\n  <p class=\"wp-block-paragraph\">即：这次勒索病毒使用了 <a href=\"https://www.appinn.com/synology-ransomware-attack-dsm-security-update/\">Synology-SA-24:20</a> 漏洞，该漏洞已经于 2024 年 12 月修复完成。</p>\n  <p class=\"wp-block-paragraph\">所以，各位群晖用户，也不需要纠结什么了，该升级升级，该恢复的服务就恢复。</p>\n  <p class=\"wp-block-paragraph\">但依旧可以让 AI 帮你分析漏洞，甚至直接帮你操作。</p>\n  <p class=\"wp-block-paragraph\">比如青小蛙就为自己托管在 NAS 里的 gitea 添加了访问白名单，这样至少可以减少不少恶意访问。</p>\n  <p class=\"wp-block-paragraph\">当然，最重要的是，异地备份需要提上日程了。</p>\n  <p class=\"wp-block-paragraph\">（哦我的硬盘，快满了）</p>\n  <p class=\"wp-block-paragraph\"></p>\n </body>\n</html>",
+  "aiSummary": "群晖发布教程指导用户通过更新 DSM、使用安全扫描和异地备份来保护 NAS 免受勒索软件攻击，指出攻击利用的是已于 2024 年 12 月修复的漏洞。",
+  "oneSentenceSummary": "群晖发布教程指导用户通过更新 DSM、使用安全扫描和异地备份来保护 NAS 免受勒索软件攻击，指出攻击利用的是已于 2024 年 12 月修复的漏洞。",
+  "summary": "本文报道了群晖在 2026 年 11 月 6 日发布的《保护您的 NAS 免受勒索软件攻击》教程。该教程强调三项关键措施：使用安全顾问执行扫描、更新 DSM 系统至最新版本、以及建立异地备份。文章指出，最近的勒索病毒攻击利用的是 Synology-SA-24:20 漏洞，该漏洞已于 2024 年 12 月修复。作者认为教程内容略显敷衍，主要重复强调保持更新和备份的重要性。同时提到可通过 AI 辅助分析漏洞并执行操作，例如添加访问白名单。",
+  "mainPoints": [
+    {
+      "point": "群晖发布保护 NAS 免受勒索攻击的教程",
+      "explanation": "教程核心建议三点：使用安全顾问扫描、更新 DSM、建立异地备份，以防御勒索软件攻击。"
+    },
+    {
+      "point": "勒索病毒利用已修复的漏洞",
+      "explanation": "攻击者使用的是 2024 年 12 月已修复的 Synology-SA-24:20 漏洞，用户应立即升级到最新 DSM 版本。"
+    },
+    {
+      "point": "作者建议可通过 AI 辅助分析和操作",
+      "explanation": "例如为 gitea 添加访问白名单，减少恶意访问；同时强调异地备份是最重要的防御措施。"
+    }
+  ],
+  "keyQuotes": [
+    "群晖在公众号中发布了一篇名为《保护您的 NAS 免受勒索软件攻击》的教程，强调三点：使用安全顾问执行扫描、更新 DSM、建立异地备份。",
+    "目前发现的病毒确实是利用原来已修复的安全弱点。",
+    "即：这次勒索病毒使用了 Synology-SA-24:20 漏洞，该漏洞已经于 2024 年 12 月修复完成。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "自托管",
+    "科技新闻",
+    "NAS"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 72,
+  "wordCount": 584,
+  "domain": "appinn.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SRC_8a18f347",
+  "sourceName": "小众软件",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1793949144000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-06 15:12:24"
+}
