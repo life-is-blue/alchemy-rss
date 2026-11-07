@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-07 09:27:42 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-07 15:59:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -794,9 +794,7 @@
 
 ### [2027-年最佳静态网站托管服务商：免费与付费方案对比](https://www.sitepoint.com/best-static-website-hosting-providers-in-2027-free-and-paid-options-compared/)
 
-2026-11-06 16:00:08 | 标签: 编程与工程, 前端与 Web, 云原生 / DevOps, Next.js, Vercel
-
-> 本文深入比较了 8 家静态网站托管服务商，考察其部署方式、免费方案限制、定价结构和理想使用场景。文章首先介绍静态网站托管的基本原理及其 3 项主要优势：成本更低、维护更简单，以及通过 CDN 高效分发内容。比较涵盖 Cloudflare Pages（免费托管且带宽额度宽裕）、Netlify（适合基于 Git 的工作流）、Vercel（适合 Next.js 项目）、GitHub Pages（适合个人作品集和文档）、TiinyHost（无需 Git 即可快速上传 HTML）、Firebase Hosting（适合与 Firebase 集成的项目）、AWS S3 + CloudFront（适合需要自...
+2026-11-06 16:00:08
 
 
 
