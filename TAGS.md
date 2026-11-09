@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-09 05:29:19 | [返回首页](/README.md)
+**更新时间**: 2026-11-09 09:19:29 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17282)
+- [AI & 大模型](#ai-llm) (17311)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1032)
-- [DevOps](#devops) (838)
+- [DevOps](#devops) (839)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7175)
+- [其他](#other) (7185)
 
 
 ---
@@ -43,7 +43,7 @@
 - [AI-无限，人生有限｜对谈-KK、山音：一线-AI-创作者](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112376&idx=1&sn=313fb7cb6967519072ecf9455fc7a637) - AI 精选
 - [为何-AlphaFold-并未解决蛋白质折叠问题——Pushmeet-Kohli，Google-DeepMind-&amp;-Sal-Candido，Biohub](https://www.latent.space/p/biohub-deepmind) - AI 精选
 
-- [查看全部 17282 篇...](/details/tags/ai-llm.md)
+- [查看全部 17311 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 838 篇...](/details/tags/devops.md)
+- [查看全部 839 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7175 篇...](/details/tags/other.md)
+- [查看全部 7185 篇...](/details/tags/other.md)
 
 

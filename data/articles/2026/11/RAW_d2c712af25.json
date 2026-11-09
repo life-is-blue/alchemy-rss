@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d2c712af25",
+  "title": "Entire 的 Git Forge 重新思考面向编程智能体的 Git 协作",
+  "url": "https://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/",
+  "date": "2026-11-08 19:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://entire.com/blog/the-git-forge-for-agent-human-collaboration\">Entire is a Git forge designed specifically for collaboration between human developers and AI coding agents</a>. Its premise is that traditional software development infrastructure, particularly the pull request (PR) model, is not well suited to an environment where AI agents generate, review, and iterate on code at high speed.</p>\n   <p>As Thomas Dohmke, former GitHub CEO and currently CEO of Entire, explains, GitHub and GitLab transformed human-to-human collaboration by centering it around asynchronous code reviews and version control. <a href=\"https://x.com/ashtom/status/2114763996691562540\">A multi-agent forge, by contrast, centers around the asynchronous orchestration, versioning, and auditing of AI agents working alongside humans</a>.</p>\n   <p>Built on top of a fully distributed architecture that enables pushes up to 89 times faster than GitHub, Entire's core component is <em>trails</em>, which addresses the challenges AI coding agents pose to the traditional PR-based development model:</p>\n   <blockquote>\n    <p>The pull request [timeline] has become an audit log that only the agent reads. It does not provide the information for the developer to decide whether they can merge with confidence.</p>\n   </blockquote>\n   <p>Trails bring the most relevant information to the top of the page in the form of eval scores that are updated on every push. These scores help developers assess whether a PR has reached a stable state or requires another iteration of agent-driven coding and review:</p>\n   <blockquote>\n    <p>Only when the confidence is high, risk is low, and all findings are cleared, the merge should happen.</p>\n   </blockquote>\n   <p>A trail can be initiated from a bug report, a feature request, or manually, and can span multiple repositories. Whenever new code is pushed, a review agent running in a cloud sandbox evaluates the changes and returns a score and a rationale based on code quality, security, <em>slop</em>, and whether human code review is required. For example, if the slop score is orange, developers can ask their coding agent to improve the code and push a new change, thus triggering a new iteration.</p>\n   <blockquote>\n    <p>The last 5 runs and the current run are shown for each eval. We believe this is crucial as one-shot loops are often missing a critical issue. Repeating the loops and stabilizing the scores is crucial for the success of agentic coding.</p>\n   </blockquote>\n   <p>Evaluation agents can be configured through Entire's interface or repository-level JSON configuration.</p>\n   <p>Review agents can suggest fixes or improvements, which remain visible in the trail while it is open. All review findings must be either resolved or closed before a merge is allowed. Developers can also configure repository-level Gates to define the conditions required for approval.</p>\n   <p>Another foundational concept introduced by Entire is <em>continuous memory</em>, which preserves all accumulated knowledge in the repository so that agents can reuse it across sessions rather than starting from scratch. Continuous memory is implemented by two open-source tools, <a href=\"https://github.com/entireio/entire-graph\"><code>entire-graph</code></a>, which builds a precomputed map of the Git repository including ranked code searches, definition and callers, types and routes, and more; and <a href=\"https://github.com/entireio/entire-brain\"><code>entire-brain</code></a>, which creates a persistent memory layer by combining the codebase map with previous agent sessions and information recorded in Git history.</p>\n   <blockquote>\n    <p>This allows agents to always have the right context at the right time, aka the \"why\" behind the \"what changed.\"</p>\n   </blockquote>\n   <p>As a final note on Entire, it also supports integrations with CI platforms like Buildkite and Depot.</p>\n   <p>Commenting on the announcement on Hacker News, user conartist6 expressed the view that <a href=\"https://news.ycombinator.com/item?id=50248113\">engineers have delegated writing code to agents</a> because of programming languages and tools that leave much to be desired. Haimantika, currently at Entire, points out that the problem has never been languages or tools, rather</p>\n   <blockquote>\n    <p>it' s that the reasoning gets thrown away between the person and the artifact. Commit messages were always bad, docs always rotted, “why is this here” was always answered by whoever remembered. Agents just made that acute, because now there's no one who remembers. That's the bit we're trying to fix. If a better language fixes it too, honestly I'd take that.</p>\n   </blockquote>\n   <p>Entire is only one of several new players in the source code management arena, which also include <a href=\"https://zed.dev/deltadb\">Zed DeltaDB</a>, <a href=\"https://www.infoq.com/news/2026/10/anthropic-source-control/\">Anthropic Scion</a>, <a href=\"https://ersc.io/blog/martin-joins-ersc\">East River Source Control</a>, <a href=\"https://www.infoq.com/news/2026/08/cursor-origin-alternative-github/\">Cursor Origin</a>, <a href=\"https://radicle.dev\">Radicle</a>, and others.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Entire's Git Forge Rethinks Git Collaboration for Coding Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794135600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Entire 推出了一种专为 AI 智能体协作打造的新型 Git Forge 架构，提供用于异步编排的「trails」、用于质量评估的评估分数，以及可在不同智能体会话间保留上下文的持续记忆。",
+  "oneSentenceSummary": "Entire 推出了一种专为 AI 智能体协作打造的新型 Git Forge 架构，提供用于异步编排的「trails」、用于质量评估的评估分数，以及可在不同智能体会话间保留上下文的持续记忆。",
+  "summary": "Entire 是一个面向人机协作开发的 Git Forge，旨在解决传统 PR 模式难以适应高速智能体工作流的问题。该平台提供「trails」——一个异步编排层，每次推送都会展示评估分数，用于评估代码质量、安全性、低质量冗余代码以及是否需要人工审查，帮助开发者判断代码是否已具备合并条件。Trails 可以跨越多个代码仓库，并要求在合并前解决所有发现的问题。该 Forge 支持可配置的审查智能体，以及用于设定审批条件的仓库级 Gates。一项关键创新是持续记忆，它通过 entire-graph 和 entire-brain 实现：前者提供预先计算的代码库地图，包括经过排序的代码搜索结果、定义、调用方、类型和路由；后者则将代码库地图与先前的智能体会话及 Git 历史结合，形成持久记忆层，确保智能体掌握相关背景信息，理解「为什么」。Entire 构建于完全分布式架构之上，推送速度最高可达 GitHub 的 89x，并可与 Buildkite 和 Depot 等 CI 平台集成。",
+  "mainPoints": [
+    {
+      "point": "传统 PR 模式难以适应 AI 智能体协作中的高速、异步工作流。",
+      "explanation": "PR 时间线逐渐变成只有智能体才会查看的审计日志，无法为开发者提供足够的背景信息，让他们有把握地决定是否合并。Entire 用「trails」取而代之，在每次推送时展示相关质量指标的评估分数，包括代码质量、安全性、低质量冗余代码以及是否需要人工审查。"
+    },
+    {
+      "point": "Trails 为与人类协作的 AI 智能体提供异步编排、版本管理和审计能力。",
+      "explanation": "对于每项评估，Trails 会汇总最近 5 次运行和当前运行的结果，让分数能够通过反复迭代趋于稳定。开发者可以判断 PR 是否已达到稳定状态，或是否需要智能体进一步迭代；所有审查发现的问题都必须在合并前解决。"
+    },
+    {
+      "point": "持续记忆保留积累的知识，让智能体能够在不同会话间复用上下文。",
+      "explanation": "entire-graph 会构建预先计算的仓库地图，包含排序后的代码搜索结果、定义、调用方、类型和路由；entire-brain 则将这些信息与先前的智能体会话及 Git 历史结合起来。这确保智能体始终了解「改了什么」背后的「为什么」，解决人与产物之间推理过程容易丢失的问题。"
+    },
+    {
+      "point": "Entire 的分布式架构显著提升了相较于传统 Git Forge 的推送速度。",
+      "explanation": "Entire 构建于完全分布式架构之上，推送速度最高可达 GitHub 的 89 倍，能够支持 AI 智能体工作流中常见的高频迭代周期。"
+    }
+  ],
+  "keyQuotes": [
+    "拉取请求的时间线已经变成只有智能体才会查看的审计日志。它无法为开发者提供足够的信息，让他们有把握地决定是否合并。",
+    "只有在信心充足、风险较低且所有发现的问题都已解决时，才应该进行合并。",
+    "这样一来，智能体就能始终在恰当的时间获得恰当的上下文，也就是理解「改了什么」背后的「为什么」。",
+    "每项评估都会显示最近 5 次运行和当前运行的结果。我们认为这至关重要，因为单轮循环往往会漏掉关键问题。",
+    "问题在于，人与产物之间的推理过程会被丢弃。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "AI 编程",
+    "分布式系统",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 669,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794135600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-08 19:00:00"
+}

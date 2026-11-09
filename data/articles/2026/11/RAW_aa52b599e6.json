@@ -1,0 +1,56 @@
+{
+  "id": "RAW_aa52b599e6",
+  "title": "研究：将 parse_number() 实现为 SQLite 扩展：C 与 Rust 对比",
+  "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+  "date": "2026-11-09 06:26:00",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">8th November 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label research\" href=\"https://simonwillison.net/elsewhere/research/\">Research</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/research/tree/main/sqlite-parse-number-c-vs-rust#readme\">parse_number() as a SQLite extension: C vs Rust</a></span> <span class=\"beat-commit\">— Four SQLite extensions implement the same `parse_number()` behavior in C and Rust, with tests covering type preservation, parsing rules, and floating-point accuracy. The optimized C implementation was fastest at 16–19 ns per row, about twice as fast as the Rust versions and far faster than SQL `replace()`. Plain C was slower on decimals because it relied on `strtod()`, while a compact fast path closed that gap; all versions matched across 8 million fuzz checks.</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a <code>parse_number()</code> function for turning strings like <code>-$1,234.56</code> or <code>'12.5%'</code> into numeric values that could be summed and sorted.</p>\n      <p>I fired up regular Claude chat (Opus 5.5) <a href=\"https://claude.ai/share/7f18f157-6c96-4d49-a1d4-f02403e3b261\">and prompted</a>:</p>\n      <blockquote>\n       <p><code>I'm thinking about a SQLite custom function 'parse_number(value)' that strips ',', '$', '£' and '%', handles a leading '-', and returns 'NULL' for anything it can’t parse</code></p>\n       <p><code>Explore the difference between building this as a SQLite extension in C v.s. in Rust - I want to compare performance and code complexity and size of the resulting</code>.so<code>(or whatever) file</code></p>\n      </blockquote>\n      <p>This gave me a solid starting point - the Rust extension was 321 KB (using <a href=\"https://github.com/rusqlite/rusqlite\">Rusqlite</a>) and 298 KB (using <a href=\"https://github.com/asg017/sqlite-loadable-rs\">sqlite-loadable-rs</a>), while the C extension was 14 KB. But the Rust extension was faster!</p>\n      <p>Turns out that's because the Rust equivalent of C's <code>strtod</code> is \"twice as fast\". So I prompted:</p>\n      <blockquote>\n       <p><code>Try writing your own C function for parsing text into a decimal number that catches up to or beats the Rust implementation</code></p>\n      </blockquote>\n      <p>And it did:</p>\n      <blockquote>\n       <p>Net cost per row over 2 million rows, lower is better:</p>\n       <table>\n        <thead>\n         <tr>\n          <th></th>\n          <th>first C</th>\n          <th>new C</th>\n          <th>rusqlite</th>\n          <th>sqlite-loadable</th>\n         </tr>\n        </thead>\n        <tbody>\n         <tr>\n          <td>Mixed data</td>\n          <td>67 ns</td>\n          <td><strong>19 ns</strong></td>\n          <td>46 ns</td>\n          <td>41 ns</td>\n         </tr>\n         <tr>\n          <td>Integers only</td>\n          <td>25 ns</td>\n          <td><strong>16 ns</strong></td>\n          <td>36 ns</td>\n          <td>32 ns</td>\n         </tr>\n         <tr>\n          <td>Decimals only</td>\n          <td>106 ns</td>\n          <td><strong>18 ns</strong></td>\n          <td>55 ns</td>\n          <td>47 ns</td>\n         </tr>\n        </tbody>\n       </table>\n      </blockquote>\n      <p>Finally, I had it rewrite the prototype as a research report to match the others in <a href=\"https://github.com/simonw/research\">simonw/research</a> by prompting this:</p>\n      <blockquote>\n       <p><code>Clone simonw/research from GitHub and turn your above investigation into a research report as seen in that repository - you can give me a zip file to download that contains your new folder</code></p>\n      </blockquote>\n      <p>Here's <a href=\"https://github.com/simonw/research/tree/main/sqlite-parse-number-c-vs-rust#readme\">the resulting report</a>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/5097/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章比较了用 C 和 Rust 实现的 SQLite parse_number() 扩展，发现经过手动优化的 C 版本速度更快，而 Rust 则更易开发且性能相近。",
+  "oneSentenceSummary": "文章比较了用 C 和 Rust 实现的 SQLite parse_number() 扩展，发现经过手动优化的 C 版本速度更快，而 Rust 则更易开发且性能相近。",
+  "summary": "作者研究了如何分别用 C 和 Rust 实现 SQLite 的 parse_number() 函数，将「-$1，234.56」或「12.5%」等格式化字符串转换为数值。作者先让 Claude Opus 5.5 生成初始实现，其中使用 rusqlite（321 KB）和 sqlite-loadable-rs（298 KB）的 Rust 版本速度都快于最初的 C 实现。不过，在提示 Claude 优化 C 版本后，得到的高效实现每行耗时仅为 16-19 ns，速度约为 Rust 的两倍。优化后的 C 扩展大小只有 14 KB。所有实现都通过了 8 million 次模糊测试，验证了正确性。最后，作者将这项研究整理成正式报告，发布在 simonw/research 仓库中。",
+  "mainPoints": [
+    {
+      "point": "优化后的 C 实现在 parse_number() 扩展中胜过 Rust",
+      "explanation": "经过手动优化的 C 版本每行耗时 16-19 ns，约为 Rust 实现（36-46 ns）的一半，表明在这一特定解析任务中，精心优化的 C 代码可以胜过设计良好的 Rust 代码。"
+    },
+    {
+      "point": "Rust 开发更容易，性能差距也比预期更小",
+      "explanation": "使用 rusqlite 和 sqlite-loadable-rs 的 Rust 实现速度快于最初的 C 代码，说明现代 Rust SQLite 扩展工具非常有效；此外，Rust 中与 C 的 strtod 对应的实现速度约为 C 的 strtod 的两倍。"
+    },
+    {
+      "point": "所有实现都通过了大规模模糊测试，验证了正确性",
+      "explanation": "8 million 次模糊测试检查验证了所有版本都能正确处理类型保留、解析规则和浮点精度，确保它们在多种输入情形下都可靠。"
+    },
+    {
+      "point": "文件大小差异凸显开发方式与部署之间的取舍",
+      "explanation": "C 扩展编译后仅有 14 KB，而 Rust 版本为 298-321 KB，说明 C 能生成更精简的二进制文件，但需要投入更多手动优化工作。"
+    }
+  ],
+  "keyQuotes": [
+    "我遛狗时突然好奇：编写一个 SQLite C 扩展有多容易或多困难？这个扩展可以添加 parse_number() 函数，把「-$1，234.56」或「12.5%」这样的字符串转换为可用于求和和排序的数值。",
+    "事实证明，这是因为 Rust 中与 C 的 strtod 对应的实现「速度快了两倍」。",
+    "处理 2 million 行时每行的净耗时，越低越好：| 混合数据 | 初始 C | 新版 C | rusqlite | sqlite-loadable | |---------------|---------|-----------|----------|-----------------| | 混合数据 | 67 ns | **19 ns** | 46 ns | 41 ns | | 仅整数 | 25 ns | **16 ns** | 36 ns | 32 ns | | 仅小数 | 106 ns | **18 ns** | 55 ns | 47 ns |"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 编程",
+    "性能优化",
+    "后端开发",
+    "编程语言"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 378,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794176760000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-09 06:26:00"
+}

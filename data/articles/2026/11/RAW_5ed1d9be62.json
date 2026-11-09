@@ -1,0 +1,56 @@
+{
+  "id": "RAW_5ed1d9be62",
+  "title": "Cloudflare 将 D1 控制平面扩展至数百万个数据库",
+  "url": "https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/",
+  "date": "2026-11-08 14:34:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a recent article, Cloudflare shared the <a href=\"https://blog.cloudflare.com/d1-control-plane/\">redesign of the control plane of its D1 serverless SQL database</a> to support millions of databases, avoiding centralized bottlenecks, implementing retries and idempotency, and using eventual consistency.</p>\n   <p>The D1 control plane architecture is built around Postgres for transactional metadata, ClickHouse for analytics, and Workers KV for globally replicated routing data. It keeps query processing at the edge, separate from centralized management operations, using distributed metadata caching, connection pooling, asynchronous workflows, and periodic health checks to improve scalability and recover from failures. <a href=\"https://www.infoq.com/news/2022/05/cloudflare-d1-sqlite-workers/\">Announced in 2022</a>, <a href=\"https://developers.cloudflare.com/d1/?\">Cloudflare D1</a> is a serverless SQL database built on <a href=\"https://sqlite.org/index.html\">SQLite</a> and designed to run close to applications on Cloudflare’s global network. Over the past year, the number of daily active databases has grown 18-fold.</p>\n   <p><img alt=\"Cloudflare D1 Architecture\" data-src=\"https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/news/2026/11/cloudflare-d1-control-plane/en/resources/1d1a-1792578136310.webp\" src=\"https://res.infoq.com/news/2026/11/cloudflare-d1-control-plane/en/resources/1d1a-1792578136310.webp\" rel=\"share\"></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>Cloudflare uses 30-second heartbeats, with per-database jitter, to reconcile each D1 Durable Object with Postgres, the source of truth for database existence and account limits. This mechanism makes failed creation or deletion operations self-correcting: orphaned objects are marked as deleted, and Workers KV routing metadata is repaired if best-effort updates fail. <a href=\"https://www.linkedin.com/in/david-laban-16193814/\">David Laban</a>, full stack software engineer at Cloudflare, and <a href=\"https://www.linkedin.com/in/lambrospetrou/\">Lambros Petrou</a>, principal engineer at Cloudflare, write:</p>\n   <blockquote>\n    <p>Heartbeats can tolerate slightly out-of-date data, meaning they can be served by Hyperdrive’s multiple caching layers or by a Postgres read replica. This heartbeat flow enables the Durable Object to self-correct to reflect the source of truth (Postgres) regarding the creation and deletion of databases.</p>\n   </blockquote>\n   <p>Cloudflare keeps D1 queries off its centralized Postgres database by routing requests from an Edge API Worker through an Eyeball Worker directly to the relevant D1 Durable Object.</p>\n   <p><img alt=\"Cloudflare D1 Control Plane\" data-src=\"https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/news/2026/11/cloudflare-d1-control-plane/en/resources/1d1b-1792578136310.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/cloudflare-d1-control-plane/en/resources/1d1b-1792578136310.jpg\" rel=\"share\"></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>The Edge API Worker handles authentication, authorization, rate limiting, and request validation, while the Eyeball Worker trusts the database-specific authorization encoded in D1 Bindings, avoiding redundant checks in the query path. Laban and Petrou add:</p>\n   <blockquote>\n    <p>You might also wonder why we use Workers KV when we already have Hyperdrive Caching. Workers KV is a durable datastore, not just a cache: if an item falls out of KV's edge cache, the read is served from KV's own storage rather than Postgres, keeping Postgres out of the data plane. In a catastrophic cache purge scenario, a million databases trying to fetch their routing information would lead to metastable failures.</p>\n   </blockquote>\n   <p>Cloudflare enforces D1 storage limits using asynchronous usage updates, which are queued and batched to protect Postgres from write spikes. It maintains pre-aggregated account totals through incremental storage deltas, avoiding expensive scans and write contention for accounts with millions of databases. Durable Objects check these totals through Hyperdrive’s short-lived cache and block writes that would exceed the account limit. In a <a href=\"https://www.reddit.com/r/CloudFlare/comments/1x52qqy/under_the_hood_off_the_hot_path_how_d1_scales_to/\">Reddit thread</a>, user <em>isaackogan</em> <a href=\"https://www.reddit.com/r/CloudFlare/comments/1x52qqy/comment/pgjw7cj/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">comments</a>:</p>\n   <blockquote>\n    <p>It's an impressive architecture to be sure, but most of these gains are that it's an in-process database running on edge storage near you. The rest is orchestration around that. Cloudflare can leverage their massive global datacenter presence to do something that would be traditionally impossible for small shops, aka economies of scale at work.</p>\n   </blockquote>\n   <p>In a <a href=\"https://www.reddit.com/r/CloudFlare/comments/1vqhf5b/cloudflare_d1_is_highly_unreliable/\">previous popular thread</a>, several Reddit users argued that D1 is unreliable, raising concerns about its availability and stability in production workloads.</p>\n   <p>Cloudflare D1 offers a <a href=\"https://developers.cloudflare.com/d1/platform/pricing\">permanent free tier</a> that includes 5 GB of total storage, 5 million rows read per day, and 100,000 rows written per day. Beyond the free tier, storage costs 0.75 USD per GB-month, reads cost $0.001 per million rows, and writes cost 1 USD per million rows. D1 has no compute or data-transfer charges.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Scales D1 Control Plane to Millions of Databases\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794119640000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 重新设计了 D1 控制平面架构，通过使用 Postgres 存储事务元数据、ClickHouse 进行分析、Workers KV 提供路由，并结合分布式缓存和心跳协调机制，将规模扩展至数百万个数据库，同时避免集中式瓶颈。",
+  "oneSentenceSummary": "Cloudflare 重新设计了 D1 控制平面架构，通过使用 Postgres 存储事务元数据、ClickHouse 进行分析、Workers KV 提供路由，并结合分布式缓存和心跳协调机制，将规模扩展至数百万个数据库，同时避免集中式瓶颈。",
+  "summary": "Cloudflare 重新设计了 D1 无服务器 SQL 数据库的控制平面，通过将边缘的查询处理与集中的管理操作分离，支持数百万个数据库。该架构使用 Postgres 作为事务元数据的唯一事实来源，使用 ClickHouse 进行分析，并使用 Workers KV 存储全球复制的路由数据。系统每 30 秒通过带有逐数据库随机抖动的心跳机制，将每个 D1 Durable Object 与 Postgres 进行协调，从而能够自动修正创建或删除操作失败的问题。边缘 API Workers 负责身份验证和速率限制，Eyeball Workers 则将查询直接路由至 Durable Objects。异步用量更新和预聚合的账户总量可避免写入激增冲击 Postgres，而 Hyperdrive 缓存则能在清除缓存时防止亚稳态故障。系统通过分布式元数据缓存、连接池和最终一致性实现可扩展性。",
+  "mainPoints": [
+    {
+      "point": "D1 控制平面采用多层架构：Postgres 存储事务元数据，ClickHouse 负责分析，Workers KV 提供全球复制的路由数据。",
+      "explanation": "这种职责分离让查询处理能够继续在边缘运行，同时集中式管理操作可独立扩展，从而避免数据平面出现瓶颈。"
+    },
+    {
+      "point": "系统每 30 秒通过带有逐数据库随机抖动的心跳机制，将每个 D1 Durable Object 与 Postgres 进行协调，从而能够自动修正操作失败的问题。",
+      "explanation": "如果对象成为孤立对象，系统会自动将其标记为已删除；如果更新失败，路由元数据也会得到修复，因此无需人工干预即可实现最终一致性。"
+    },
+    {
+      "point": "边缘 API Workers 负责身份验证、授权和速率限制，Eyeball Workers 则使用 D1 Bindings 将查询直接路由至 Durable Objects。",
+      "explanation": "这种设计避免在查询路径中重复进行授权检查，并将 Postgres 排除在数据平面之外，从而降低延迟并提升可扩展性。"
+    },
+    {
+      "point": "异步用量更新和预聚合的账户总量可在高流量场景下保护 Postgres，避免写入激增。",
+      "explanation": "通过批量写入并持续维护增量存储变化，该系统能够避免拥有数百万个数据库的账户发生写入争用。"
+    }
+  ],
+  "keyQuotes": [
+    "心跳机制可以容忍数据略有过时，因此可以通过 Hyperdrive 的多层缓存或 Postgres 只读副本来提供数据。该心跳流程使 Durable Object 能够自我修正，确保数据库的创建和删除状态与事实来源 Postgres 保持一致。",
+    "你可能也会好奇，既然已经有 Hyperdrive Caching，为什么还要使用 Workers KV。Workers KV 是持久化数据存储，而不只是缓存：如果某个条目从 KV 的边缘缓存中淘汰，读取请求会由 KV 自身的存储提供，而不是由 Postgres 提供，从而使 Postgres 不进入数据平面。",
+    "如果发生灾难性的缓存清除，一百万个数据库同时尝试获取路由信息，就会导致亚稳态故障。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "云原生 / DevOps",
+    "分布式系统",
+    "性能优化"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 579,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794119640000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-08 14:34:00"
+}
