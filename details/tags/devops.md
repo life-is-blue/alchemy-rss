@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-09 09:19:29 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-09 16:52:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -680,9 +680,7 @@
 
 ### [Cloudflare-将-D1-控制平面扩展至数百万个数据库](https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/)
 
-2026-11-08 14:34:00 | 标签: 编程与工程, 系统设计, 云原生 / DevOps, 分布式系统, 性能优化
-
-> Cloudflare 重新设计了 D1 无服务器 SQL 数据库的控制平面，通过将边缘的查询处理与集中的管理操作分离，支持数百万个数据库。该架构使用 Postgres 作为事务元数据的唯一事实来源，使用 ClickHouse 进行分析，并使用 Workers KV 存储全球复制的路由数据。系统每 30 秒通过带有逐数据库随机抖动的心跳机制，将每个 D1 Durable Object 与 Postgres 进行协调，从而能够自动修正创建或删除操作失败的问题。边缘 API Workers 负责身份验证和速率限制，Eyeball Workers 则将查询直接路由至 Durable Objects。异...
+2026-11-08 14:34:00
 
 
 
