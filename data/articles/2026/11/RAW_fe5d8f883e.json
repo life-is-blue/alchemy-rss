@@ -1,0 +1,56 @@
+{
+  "id": "RAW_fe5d8f883e",
+  "title": "Pinterest 用 4B Qwen3 LLM 取代用户旅程聚类，报告称互动效果有所提升",
+  "url": "https://www.infoq.com/news/2026/11/pinterest-journey/",
+  "date": "2026-11-09 15:25:00",
+  "author": "Matt Foster",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://medium.com/pinterest-engineering/from-activity-to-intent-generating-user-journeys-with-llms-9652b9417626](https://medium.com/pinterest-engineering/from-activity-to-intent-generating-user-journeys-with-llms-9652b9417626\">Pinterest has moved</a> its user-journey inference system from a multi-stage clustering pipeline to a fine-tuned 4-billion-parameter language model, reporting a 1.1% improvement in email click-through and 1.3% higher push opens.</p>\n   <p>Rather than clustering keywords into interests, the model examines users' activity histories to identify longer-term goals and feeds those journeys into Pinterest's existing recommendation infrastructure.</p>\n   <p>Pinterest defines a \"journey\" as a goal that connects interests, intent, and context across multiple sessions. Someone renovating a kitchen, for example, might search for cabinet designs, save countertop ideas, and later explore backsplash tiles or lighting. These interactions collectively suggest a coherent project rather than several unrelated interests.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/pinterest-journey/news/2026/11/pinterest-journey/en/resources/1Screenshot 2026-11-06 at 12.17.57 PM-1793998577935.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/pinterest-journey/en/resources/1Screenshot 2026-11-06 at 12.17.57 PM-1793998577935.png\" rel=\"share\"></p>\n   <p><em>(\"User Journey\" -&nbsp;Source: Pinterest)</em></p>\n   <p>The company's previous system extracted keywords from user activity, grouped them using embeddings and hierarchical clustering, named the resulting clusters, and ranked them with additional models and diversity heuristics.&nbsp;</p>\n   <p>Although effective compared with earlier interest-based notifications, the approach could fragment related activities into separate journeys, produce generic labels, or mistake incidental engagement for sustained intent.</p>\n   <p>The new system instead treats journey inference as a generation task. A fine-tuned LLM reads a chronological history of up to 150 user actions across a 360-day window, alongside a compact user profile, and generates a ranked set of journey names. Search and save actions carry more weight than incidental clicks, while the prompt instructs the model to consider repeated engagement, recency, and specificity.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/pinterest-journey/news/2026/11/pinterest-journey/en/resources/1Screenshot 2026-11-06 at 12.49.20 PM-1793998577935.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/pinterest-journey/en/resources/1Screenshot 2026-11-06 at 12.49.20 PM-1793998577935.png\" rel=\"share\"></p>\n   <p><em>(\"Journey Inference\" -&nbsp;Source:&nbsp;Pinterest)</em></p>\n   <p>The consolidation moved much of the previous system's ranking and filtering behavior into the prompt. Instructions discourage unrelated interests from being merged, suppress one-off activity and noisy automatically generated tags, and allow an empty result where there is insufficient evidence of a meaningful journey. Pinterest treats changes to these instructions as production launches rather than simple prompt edits.</p>\n   <p>To build the system without an extensive human-labelled dataset, Pinterest used frontier models to generate synthetic training examples from its user activity histories. These examples were used to fine-tune smaller open-weight Qwen3 models through supervised fine-tuning and low-rank adaptation (LoRA).</p>\n   <p>The team tested models ranging from 0.6B to 8B parameters, selecting the 4B model for its balance of inference quality and serving throughput.</p>\n   <p>Running the resulting model at Pinterest's scale presented a separate engineering challenge. The company deployed NVIDIA Dynamo in front of vLLM workers running on L40S GPUs, using continuous batching, PagedAttention, and prefix-cache-aware routing to improve inference efficiency.&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/pinterest-journey/news/2026/11/pinterest-journey/en/resources/1Screenshot 2026-11-06 at 12.50.07 PM-1793998577935.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/pinterest-journey/en/resources/1Screenshot 2026-11-06 at 12.50.07 PM-1793998577935.png\" rel=\"share\">\n    <br>\n    <em>(Journey Inference Architecture - Source: Pinterest)</em></p>\n   <p>However, one of the largest throughput improvements came from avoiding unnecessary inference altogether. The system tracks when each user's journeys were last generated and skips users processed within the preceding couple of days.</p>\n   <p>Pinterest evaluates journey quality through side-by-side comparisons, a separate LLM judge assessing relevance and support from user activity, and online experiments. Initial A/B testing in the US and Canada produced the reported 1.1% email click-through and 1.3% push-open improvements over the clustering-based system, alongside statistically significant engagement and retention gains.</p>\n   <p>The approach has parallels with <a href=\"https://netflixtechblog.com/foundation-model-for-personalized-recommendation-1a0bd8e02d39](https://netflixtechblog.com/foundation-model-for-personalized-recommendation-1a0bd8e02d39\">Netflix's work</a> on foundation models for personalised recommendations. Netflix has described learning from long sequences of member interactions to create representations that can be reused by downstream recommendation models.</p>\n   <p>While Netflix focuses on reusable preference representations and Pinterest generates explicit journey descriptions, both approaches use longer-term behavioural histories to enrich existing personalisation infrastructure rather than replace it entirely.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinterest Replaces Journey Clustering with 4B Qwen3 LLM, Reports Improved Engagement\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Foster\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/pinterest-journey/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794209100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinterest 用微调后的 4B Qwen3 LLM 取代了用于推断用户旅程的多阶段聚类流程，通过分析 360 天内最多 150 项用户操作来识别长期目标，使邮件点击率提高 1.1%，推送打开率提高 1.3%。",
+  "oneSentenceSummary": "Pinterest 用微调后的 4B Qwen3 LLM 取代了用于推断用户旅程的多阶段聚类流程，通过分析 360 天内最多 150 项用户操作来识别长期目标，使邮件点击率提高 1.1%，推送打开率提高 1.3%。",
+  "summary": "Pinterest 将用户旅程推断系统从多阶段聚类流程迁移到微调后的 4B 参数 Qwen3 语言模型。新方法将旅程推断视为生成任务：模型读取 360 天时间窗口内最多 150 项按时间顺序排列的用户操作，并生成经过排序的旅程名称。这取代了此前提取关键词、通过嵌入和层次聚类对其分组，再借助其他模型进行排序的方法。模型使用前沿模型生成的合成样例进行训练，并通过 LoRA 微调。在大规模部署中，Pinterest 在 L40S GPU 上的 vLLM 工作进程前部署 NVIDIA Dynamo，并使用连续批处理和 PagedAttention 提升效率。一项关键优化是跳过近期已处理过旅程的用户。在美国和加拿大进行的 A/B 测试显示，邮件点击率提高 1.1%，推送打开率提高 1.3%，互动率和留存率也取得了具有统计显著性的提升。这种方法与 Netflix 用于个性化推荐的基础模型工作类似，不过 Pinterest 生成的是明确的旅程描述，而非可复用的偏好表示。",
+  "mainPoints": [
+    {
+      "point": "Pinterest 用微调后的 4B Qwen3 LLM 取代多阶段聚类流程来推断用户旅程。",
+      "explanation": "新系统将旅程推断视为生成任务，模型读取 360 天内最多 150 项用户操作，并生成经过排序的旅程名称，取代了此前提取关键词、基于嵌入进行聚类并通过启发式方法排序的流程。"
+    },
+    {
+      "point": "基于 LLM 的方法改善了互动指标，A/B 测试中邮件点击率提高 1.1%，推送打开率提高 1.3%。",
+      "explanation": "团队通过并排对比和 LLM 评审来评估旅程质量；在美国和加拿大进行的线上实验也证实，互动率和留存率取得了具有统计显著性的提升，同时报告的指标也有所改善。"
+    },
+    {
+      "point": "Pinterest 在 L40S GPU 上使用 NVIDIA Dynamo、vLLM、连续批处理和 PagedAttention 来优化推理吞吐量。",
+      "explanation": "该架构在 vLLM 工作进程前部署 NVIDIA Dynamo，并利用连续批处理和感知前缀缓存的路由；同时跳过此前几天内已处理过的用户，避免不必要的推理。"
+    },
+    {
+      "point": "训练数据由前沿模型合成生成，随后用于通过监督微调和 LoRA 微调较小的开源权重 Qwen3 模型。",
+      "explanation": "Pinterest 测试了参数规模从 0.6B 到 8B 的模型，最终选择 4B 模型，以便在生产环境规模下平衡推理质量与服务吞吐量。"
+    }
+  ],
+  "keyQuotes": [
+    "模型不会将关键词聚类为兴趣，而是考察用户的活动历史，识别其长期目标，并将这些旅程输入 Pinterest 现有的推荐基础设施。",
+    "Pinterest 将「旅程」定义为一种目标，它能在多个会话中连接兴趣、意图和情境。",
+    "这一整合将此前系统中的许多排序和过滤行为转移到了提示词中。指令会避免合并无关兴趣，过滤一次性活动和自动生成的噪声标签；如果没有足够证据表明存在有意义的旅程，也允许返回空结果。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型训练与推理",
+    "系统设计",
+    "后端开发",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 543,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794209100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-09 15:25:00"
+}

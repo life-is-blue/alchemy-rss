@@ -1,0 +1,56 @@
+{
+  "id": "RAW_0783becd84",
+  "title": "AWS 推出 TorchNeuron，无需修改即可在 AWS Trainium 上运行 PyTorch 模型",
+  "url": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/",
+  "date": "2026-11-09 19:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At the recent <a href=\"https://pytorch.org/event/pytorch-conference-2026/\">PyTorch Conference North America 2026</a>, Amazon introduced <a href=\"https://github.com/aws-neuron/torch-neuronx\">TorchNeuron</a>, a native PyTorch backend that enables developers to run existing PyTorch code on <a href=\"https://aws.amazon.com/ai/machine-learning/trainium/\">AWS Trainium AI chips</a> with virtually no code modifications.</p>\n   <p>Beyond reducing engineering effort, TorchNeuron allows enterprises to share hardware capacity between training and inference workloads, reallocating resources from inference to training during off-peak hours.</p>\n   <p>Amazon says that <a href=\"https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai\">a single configuration change is sufficient to switch hardware</a>, eliminating the need to rewrite and revalidate models when moving to Trainium.</p>\n   <blockquote>\n    <p>Today, 85% of AI researchers and developers write their code in PyTorch. Until now, the hardware that code could run on was far more limited than the code itself, and expanding to new chips meant rewriting and revalidating work that took months to perfect.</p>\n   </blockquote>\n   <p>According to the <a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/torch/index.html\">TorchNeuron documentations</a>, when leveraging PyTorch's automatic device detection through <code>torch.accelerator</code>, the only required change is replacing <code>.to('cuda')</code> to <code>.to('neuron')</code>. The backend also natively supports distributed training and PyTorch parallelism APIs, including DDP, FSDP2, DTensor, and others. In addition, TorchNeuron provides native support for Torch streams and events through <code>torch_neuronx.Stream</code> and <code>torch_neuronx.Event</code>.</p>\n   <p>Amazon Annapurna Labs vice president Colin Brace, who leads the team behind TorchNeuron, emphasized that his team <a href=\"https://lnkd.in/p/ev2BSv2J\">validated the 100,000 most popular models and more than 800 ML architectures</a> to ensure a smooth developer experience when adopting the new backend.</p>\n   <p>Additionally, TorchNeuron enables developers and researchers to use the <a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/index.html\">Neuron Kernel Interface</a> to develop, optimize, and execute custom operators:</p>\n   <blockquote>\n    <p>Developers can obtain finer performance control beyond Adaptive Eager and torch.compile by calling performance critical NKI kernels directly in model code to replace sequences of standard PyTorch operations (ATen ops).</p>\n   </blockquote>\n   <p>Commenting on Amazon's announcement on LinkedId, Liner Notes Consulting CEO <a href=\"https://lnkd.in/p/embbfUmx\">Yasuo Maeda noted</a> that:</p>\n   <blockquote>\n    <p>The real test will be whether developers can achieve competitive performance and total cost of ownership in production. The AI infrastructure race is not just about who builds the best chips. It is also about who makes them easiest to use at scale.</p>\n   </blockquote>\n   <p>Similarly, user Pratham pratham hightlighted that, while reducing migration friction is important to avoiding accelerator lock-in, <a href=\"https://lnkd.in/p/e3RbJ-bZ\">the real test lies in workload-specific performance, cost per token, and reproducibility</a>.</p>\n   <p>Amazon also emphasizes that TorchNeuron has already been adopted by several organizations, including Cartesia, which is using it for voice AI inference, and the Lieber Institute for Brain Development, which explores applications in drug target identification and drug discovery.</p>\n   <p>AWS TorchNeuron announcement comes on the heels of <a href=\"https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/\">Google's launch of TorchTPU</a>, its native PyTorch backend for Google's TPU hardware.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794222000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出 TorchNeuron，这是一种原生 PyTorch 后端，只需少量代码改动，即可在 AWS Trainium 芯片上无缝运行现有 PyTorch 模型，并灵活共享训练与推理工作负载的资源。",
+  "oneSentenceSummary": "AWS 推出 TorchNeuron，这是一种原生 PyTorch 后端，只需少量代码改动，即可在 AWS Trainium 芯片上无缝运行现有 PyTorch 模型，并灵活共享训练与推理工作负载的资源。",
+  "summary": "在 2026 年 PyTorch 北美大会上，Amazon 宣布推出 TorchNeuron，这是一种原生 PyTorch 后端，开发者几乎无需修改代码，就能在 AWS Trainium AI 芯片上运行现有 PyTorch 代码。关键改动是在使用 PyTorch 的 `torch.accelerator` 自动设备检测功能时，将 `.to('cuda')` 替换为 `.to('neuron')`。TorchNeuron 支持多种分布式训练 API，包括 DDP、FSDP2、DTensor、Torch streams 和 events。该后端支持企业在训练和推理之间共享硬件容量，并在非高峰时段重新分配资源。Amazon 对最受欢迎的 100，000 个模型和 800 多种 ML 架构进行了验证，以确保用户能够顺利采用。TorchNeuron 还提供对 Neuron Kernel Interface 的访问，以便优化自定义算子。早期采用者包括将其用于语音 AI 推理的 Cartesia，以及将其用于药物发现应用的 Lieber Institute for Brain Development。此前，Google 刚推出了面向 TPU 硬件的 TorchTPU。",
+  "mainPoints": [
+    {
+      "point": "TorchNeuron 只需少量代码改动，即可在 AWS Trainium 上运行 PyTorch 模型。",
+      "explanation": "使用 PyTorch 的自动设备检测功能时，只需将 `.to('cuda')` 改为 `.to('neuron')`，迁移至 Trainium 硬件时便无需重写和重新验证模型。"
+    },
+    {
+      "point": "TorchNeuron 原生支持主要的分布式训练与并行计算 API。",
+      "explanation": "该后端原生支持 DDP、FSDP2、DTensor、Torch streams 和 events，无需额外配置即可兼容现有 PyTorch 分布式计算工作流。"
+    },
+    {
+      "point": "TorchNeuron 支持灵活共享训练与推理工作负载的资源。",
+      "explanation": "企业可以在训练和推理之间共享硬件容量，并在非高峰时段将资源从推理重新分配给训练，从而优化整体基础设施利用率。"
+    },
+    {
+      "point": "Amazon 对 TorchNeuron 的模型和架构兼容范围进行了广泛验证。",
+      "explanation": "团队验证了最受欢迎的 100，000 个模型和 800 多种 ML 架构，旨在为开发者提供顺畅的使用体验，并确保与现有 PyTorch 代码库广泛兼容。"
+    }
+  ],
+  "keyQuotes": [
+    "「如今，85% 的 AI 研究人员和开发者使用 PyTorch 编写代码。直到现在，这些代码能够运行的硬件仍远不如代码本身丰富；想要支持新芯片，就意味着必须重写并重新验证那些经过数月打磨的成果。」",
+    "「真正的考验在于，开发者能否在生产环境中获得有竞争力的性能和总体拥有成本。AI 基础设施之争不只是看谁造出最好的芯片，也要看谁能让芯片更容易大规模使用。」",
+    "「除了 Adaptive Eager 和 torch.compile，开发者还可以通过在模型代码中直接调用对性能至关重要的 NKI 内核，替换一系列标准 PyTorch 操作（ATen ops），从而更精细地控制性能。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "机器学习",
+    "云原生 / DevOps",
+    "性能优化",
+    "分布式系统"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 413,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794222000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-09 19:00:00"
+}
