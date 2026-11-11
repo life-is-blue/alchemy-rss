@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-11 03:05:31 | [返回首页](/README.md)
+**更新时间**: 2026-11-11 08:20:06 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17343)
+- [AI & 大模型](#ai-llm) (17371)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1032)
-- [DevOps](#devops) (841)
+- [DevOps](#devops) (842)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7196)
+- [其他](#other) (7197)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Gemini-4-Carbon-现已推出](https://deepmind.google/blog/gemini-4-carbon-is-now-available/) - AI 精选
 - [用-Claude-定位神秘的蜂鸣声来源](https://simonwillison.net/2026/Nov/9/mysterious-beeps/) - AI 精选
 - [100+-个客户共用一个语义模型，构建时间缩短-70%](https://towardsdatascience.com/how-to-report-for-100-clients-with-one-semantic-model/) - AI 精选
 - [GPT-6-Cyber：推动对齐型网络安全智能体的能力前沿](https://openai.com/index/introducing-gpt-6-cyber) - AI 精选
@@ -30,8 +31,8 @@
 - [Hyra-2.0-发布：为模型研发打造可复用工具](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498763&idx=1&sn=279f8fb4e43a987fdc0aa2af0b0f7958) - AI 精选
 - [Next-Concept-Modeling：快速、并行的由粗到细文本生成](https://hazyresearch.stanford.edu/blog/2026-10-12-ncm) - AI 精选
 - [HiRO-ACEv2：以极低成本实现-3-公里分辨率的极端天气模拟](https://huggingface.co/blog/allenai/hiro-acev2) - AI 精选
-- [苹果-LensVLM：长上下文压缩成图片，模型边看边「放大」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=3&sn=7b77525c43945b4e5a775f0d78cb4cbd) - AI 精选
 - [Natura-1-发布：从百万小时人类经验中学会零样本泛化与灵巧操作](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=1&sn=fa2d7404984d41c4d2e1e61c8caa24af) - AI 精选
+- [苹果-LensVLM：长上下文压缩成图片，模型边看边「放大」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=3&sn=7b77525c43945b4e5a775f0d78cb4cbd) - AI 精选
 - [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
 - [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
 - [Gemini-4-Argon：为解决棘手难题而生](https://deepmind.google/blog/introducing-gemini-4-argon/) - AI 精选
@@ -41,9 +42,8 @@
 - [为-IBM-Spyre-加速器扩展-Inductor](https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/) - AI 精选
 - [生成的世界也能交互！牛津大学&amp;莫纳什大学&amp;布里斯托大学等团队提出交互式视频世界模型-Oneira](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062445&idx=3&sn=c93fe78ae034dea794c3760e35192930) - AI 精选
 - [我将-4-款模型的推理档位调至「高」：只解决了一个问题，却为所有消耗买了单](https://dev.to/abeera_lodhi/i-turned-the-reasoning-dial-to-high-on-4-models-it-fixed-one-thing-and-billed-me-for-everything-41o5) - AI 精选
-- [AI-无限，人生有限｜对谈-KK、山音：一线-AI-创作者](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112376&idx=1&sn=313fb7cb6967519072ecf9455fc7a637) - AI 精选
 
-- [查看全部 17343 篇...](/details/tags/ai-llm.md)
+- [查看全部 17371 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 841 篇...](/details/tags/devops.md)
+- [查看全部 842 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7196 篇...](/details/tags/other.md)
+- [查看全部 7197 篇...](/details/tags/other.md)
 
 
