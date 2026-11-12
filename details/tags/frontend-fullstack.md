@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-12 12:51:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-12 22:14:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -524,9 +524,7 @@
 
 ### [按标签浏览-tools.simonwillison.net](https://simonwillison.net/2026/Nov/11/tools-tags/)
 
-2026-11-12 02:42:50 | 标签: 编程与工程, 前端与 Web, TypeScript, React, Web 开发
-
-> 文章介绍了 tools.simonwillison.net 网站的一项更新：新增「按标签浏览」功能。用户可以根据工具使用的 JavaScript 库（如 Marked、Pyodide 和 React）以及依赖的浏览器 API（如 Clipboard API、Canvas 2D 和拖放）筛选 244 款工具。系统会使用 tree-sitter 库分析每款工具的源代码，并自动生成标签。
+2026-11-12 02:42:50
 
 
 
@@ -802,17 +800,13 @@
 
 ### [Sand-|-浏览器中的超逼真沙子模拟器](https://av.github.io/safe-sand/)
 
-2026-11-11 21:39:29 | 标签: 编程与工程, 前端与 Web, 游戏开发, TypeScript, JavaScript
-
-> Sand 是一款基于 WebGL2 和 JavaScript 开发的交互式浏览器颗粒物理模拟器。它支持在手机、平板电脑和桌面设备上跨平台游玩，用户可通过触控手势、倾斜手机、摇晃设备和绘画，直接与模拟沙子互动。
+2026-11-11 21:39:29
 
 
 
 ### [开放研究，更强隐私：让-Firefox-用户更难被指纹识别——Mozilla-安全博客](https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/)
 
-2026-11-11 20:44:06 | 标签: 编程与工程, 数字隐私, 前端与 Web, 代码质量, 安全
-
-> Mozilla 发布了一项被 ACM CCS 2026 接收的研究，展示了如何大规模测量并缓解现实中的浏览器指纹识别，同时不影响网站功能。Mozilla 使用保护隐私的 Oblivious HTTP（OHTTP），评估商业指纹识别服务的脚本与从近 25 million 名 Firefox 用户收集的遥测数据，从而找出影响用户可识别性的关键浏览器信号。为此，Firefox 推出了多项缓解措施，例如降低屏幕尺寸的精度、将处理器核心数限制为 4 或 8，以及统一图像渲染和 Web Audio 输出，从而扩大用户匿名集合，并显著降低用户在网络上的独特性。
+2026-11-11 20:44:06
 
 
 
