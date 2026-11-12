@@ -1,0 +1,46 @@
+{
+  "id": "RAW_d1c2901535",
+  "title": "发布：llm 0.37.2",
+  "url": "https://simonwillison.net/2026/Nov/11/llm/",
+  "date": "2026-11-12 01:19:52",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th November 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <a class=\"beat-label release\" href=\"https://simonwillison.net/elsewhere/release/\">Release</a> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm/releases/tag/0.37.2\">llm 0.37.2</a></span> <span class=\"beat-commit\">— Access large language models from the command-line</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Fixes a security issue reported by <a href=\"https://github.com/BluePlexus\">Daniel de Araujo</a> in <a href=\"https://github.com/simonw/llm/security/advisories/GHSA-v9h7-jj4g-f862\">GHSA-v9h7-jj4g-f862</a> and <a href=\"https://github.com/simonw/llm/security/advisories/GHSA-r639-rr7r-x72w\">GHSA-r639-rr7r-x72w</a>.</p>\n      <p>LLM has a mechanism called <a href=\"https://llm.datasette.io/en/stable/other-models.html#configure-an-openai-compatible-model\">extra-openai-models.yaml</a> - now managed by the new-in-0.37 <a href=\"https://llm.datasette.io/en/stable/other-models.html#openai-endpoint-add\">llm openai endpoint add</a> command - for using LLM with OpenAI-compatible API endpoints from other providers.</p>\n      <p>Daniel reported two ways this could accidentally send your configured OpenAI API key to one of those providers: if the key named by <code>api_key_name</code> had never been stored, or if a <code>responses: true</code> model was run with <code>-o chat_completions 1</code>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/5107/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 发布了 `llm 0.37.2`，修复了一项安全漏洞：在特定情况下，该漏洞可能导致 OpenAI API 密钥意外泄露给第三方 OpenAI 兼容服务提供商。",
+  "oneSentenceSummary": "Simon Willison 发布了 `llm 0.37.2`，修复了一项安全漏洞：在特定情况下，该漏洞可能导致 OpenAI API 密钥意外泄露给第三方 OpenAI 兼容服务提供商。",
+  "summary": "Simon Willison 宣布发布 `llm 0.37.2`，修复了 Daniel de Araujo 报告的安全问题，相关问题记录在 GHSA-v9h7-jj4g-f862 和 GHSA-r639-rr7r-x72w 中。该漏洞影响 `extra-openai-models.yaml` 配置机制，该机制通过 LLM CLI 访问第三方 OpenAI 兼容端点。如果 `api_key_name` 指定的密钥从未保存过，或者使用 `-o chat_completions 1` 执行配置了 `responses: true` 的模型，漏洞就可能导致用户的 OpenAI API 密钥意外泄露给外部服务提供商。",
+  "mainPoints": [
+    {
+      "point": "llm 0.37.2 修复了连接第三方端点时可能导致 API 密钥泄露的漏洞",
+      "explanation": "此补丁修复了 GitHub 安全公告 GHSA-v9h7-jj4g-f862 和 GHSA-r639-rr7r-x72w 所述的问题，防止用户的 OpenAI API 密钥意外暴露给外部 OpenAI 兼容服务提供商。"
+    },
+    {
+      "point": "两种不同的配置边缘情况可能触发凭据泄露",
+      "explanation": "如果 `api_key_name` 指定的密钥之前从未保存过，或者运行配置了 `responses: true` 的模型时传入 `-o chat_completions 1` 选项，就可能发生密钥泄露。"
+    }
+  ],
+  "keyQuotes": [
+    "Daniel 报告了两种可能导致已配置的 OpenAI API 密钥意外发送给这些服务提供商的情况：`api_key_name` 指定的密钥从未保存过，或者使用 `-o chat_completions 1` 运行配置了 `responses: true` 的模型。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "安全",
+    "AI 工程",
+    "大语言模型 (LLM)",
+    "命令行与终端"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 95,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794417592000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-12 01:19:52"
+}

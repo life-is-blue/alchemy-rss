@@ -1,0 +1,57 @@
+{
+  "id": "RAW_38360fed52",
+  "title": "GitHub Agentic Workflows 正式开放使用，并推出隔离与预算控制",
+  "url": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/",
+  "date": "2026-11-12 01:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has made GitHub Agentic Workflows generally available. The open-source project runs coding agents inside GitHub Actions for repository tasks such as issue triage and continuous integration (CI) failure analysis. Agents start with read-only permissions, and any changes they propose are applied by separate jobs that hold their own write tokens.</p>\n   <p>That separation has limits. The project's <a href=\"https://github.github.com/gh-aw/reference/faq/\">FAQ</a> says the protections do not automatically extend to direct write permissions or to custom jobs a workflow author adds, so the safety of a workflow depends on how it is configured. Authors can also add a GitHub Environment protection rule to require a reviewer before a write job runs.</p>\n   <p>Developers describe the work in natural-language Markdown, with YAML frontmatter for configuration. The project compiles that definition into a standard Actions workflow, which reuses existing runner groups and policy constraints, and teams can use Copilot or bring another coding agent. According to the <a href=\"https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available\">general availability announcement</a>, agents run in a sandboxed container behind the Agent Workflow Firewall, and a threat-detection job scans proposed changes before they are applied. The project entered public preview in June 2026.</p>\n   <p>Since the preview, GitHub has added support for <a href=\"https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners-with-actions-runner-controller/about-actions-runner-controller\">Actions Runner Controller</a> (ARC), its Kubernetes operator for self-hosted runners, with <a href=\"https://github.github.com/gh-aw/guides/arc-dind-copilot-agent/\">Docker-in-Docker</a> (DinD). DinD runs a Docker daemon inside the runner pod so the agent can start its sandbox containers. The project's guide notes that ARC runs the DinD sidecar as a privileged container by default, a privileged component sitting alongside an agent designed around least privilege.</p>\n   <p>Spending is capped by default. GitHub's <a href=\"https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows\">documentation</a> prices AI Credits (AIC) at $0.01 each and sets a cap of 1,000 AIC ($10) per run. The project's <a href=\"https://github.github.com/gh-aw/reference/compiler-enterprise-environment-controls/\">enterprise controls reference</a> adds defaults of 5,000 AIC a day, 400 AIC per threat-detection run and a 20-minute timeout on the agent step, all of which organisations can override. The <code>gh aw forecast</code> command, no longer experimental, estimates monthly AI credit spending, including threat detection.</p>\n   <p>In the announcement, Ben Alton, senior manager in Accenture's Strategy, Architecture &amp; Innovation team, said: \"One of our leads saved an estimated 29 hours a week on his development work alone.\" The announcement does not explain how that figure was measured.</p>\n   <p>Engineers testing the project have taken a more cautious line. In a <a href=\"https://dev.to/sascha-ms/github-agentic-workflows-issue-triage-step-by-step-48p7\">walkthrough of an issue-triage workflow</a>, Sascha Mirow-Stanitzok, team lead for middleware at freenet, judged the default budget far too generous for triage and capped his runs at 100 AIC, 15 turns and 10 minutes. He also wrote that telling the agent to ignore instructions in issue text does not protect a workflow by itself, and said he would not use the same pattern for workflows that change code or open pull requests.</p>\n   <p>GitLab takes a different route with its <a href=\"https://docs.gitlab.com/user/duo_agent_platform/flows/\">Duo Agent Platform flows</a>, which run on runners under a <a href=\"https://docs.gitlab.com/user/duo_agent_platform/security/\">composite identity</a> that pairs a service account performing the actions with the human user who started the request. Its <a href=\"https://docs.gitlab.com/user/duo_agent_platform/triggers/\">triggers</a>, such as a mention or an assignment, must come from a human user, so one flow cannot start another. That rule stops agents from chaining work across flows without a person starting it.</p>\n   <p>GitHub's FAQ says conventional Actions remain the right choice for reproducible builds and tests, with agent workflows suited to tasks that need interpretation or generation. The project is available on GitHub Free, Team and Enterprise on <a href=\"http://github.com\">github.com</a>, and the default Copilot CLI engine requires a Copilot licence.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Makes Agentic Workflows Generally Available with Isolation and Budget Controls\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/github-agentic-workflows-ga/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794416400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 已正式开放 GitHub Agentic Workflows，新增沙箱执行、权限隔离和预算控制，让开发者能够在 GitHub Actions 中运行 AI 编程智能体。",
+  "oneSentenceSummary": "GitHub 已正式开放 GitHub Agentic Workflows，新增沙箱执行、权限隔离和预算控制，让开发者能够在 GitHub Actions 中运行 AI 编程智能体。",
+  "summary": "GitHub 已正式推出 GitHub Agentic Workflows，开发者可以在 GitHub Actions 中运行 AI 编程智能体，完成问题分类和 CI 故障分析等任务。工作流通过 Markdown 和 YAML frontmatter 定义，并会编译为原生 Actions 任务，在由 Agent Workflow Firewall 保护的沙箱容器中执行。智能体默认仅拥有只读权限，代码修改则交由单独的写入任务处理，并可选择设置审核关卡。每次运行的默认费用上限为 $10，企业级控制功能则支持精细化的支出和超时限制。GitHub 强调这类工作流能提升企业生产力，但工程师提醒，不应盲目依赖默认支出上限，还需防范问题文本中的提示注入风险。与此相比，GitLab 采用仅允许人工触发以及复合身份的做法。",
+  "mainPoints": [
+    {
+      "point": "Agentic Workflows 在结构上隔离智能体的只读推理与写入操作",
+      "explanation": "智能体在沙箱环境中启动执行，且只能读取内容；要应用其提出的修改，必须由单独的写入任务进行评估。这类任务可受 GitHub Environment 保护规则和人工审批机制约束。"
+    },
+    {
+      "point": "通过 Docker-in-Docker 集成自托管运行器可能带来安全方面的权衡",
+      "explanation": "通过 Actions Runner Controller (ARC) 运行智能体沙箱，需要使用以特权容器方式运行的 Docker-in-Docker sidecar，这与智能体系统所遵循的最小权限原则相冲突。"
+    },
+    {
+      "point": "内置预算控制可限制 AI 支出，但从业者建议进一步收紧人工设定的边界",
+      "explanation": "工作流默认将每次运行的上限设为 1，000 AI Credits ($10)，企业也可设置相应的支出上限。不过，社区测试表明，问题分类等轻量任务所需的预算和轮次上限应明显更低，以避免支出失控和提示注入风险。"
+    },
+    {
+      "point": "GitHub 与 GitLab 为 CI/CD 智能体编排采用了不同的安全模式",
+      "explanation": "GitHub 会将智能体指令编译为原生 Actions 任务，并进行威胁检测扫描；GitLab Duo Agent Platform 则采用由服务账户与人工发起者配对组成的复合身份，并禁止智能体在不同流程间自动串联。"
+    }
+  ],
+  "keyQuotes": [
+    "智能体以只读权限启动；它们提出的任何修改，都会由持有独立写入令牌的其他任务来应用。",
+    "项目指南指出，ARC 默认会以特权容器的方式运行 DinD sidecar；这是一个与遵循最小权限原则设计的智能体并行运行的特权组件。",
+    "他还写道，仅仅告诉智能体忽略问题文本中的指令，并不能单独保护工作流；对于会修改代码或创建拉取请求的工作流，他不会采用同样的模式。",
+    "GitHub 的常见问题解答指出，对于需要可复现构建和测试的场景，传统 Actions 仍是合适的选择；智能体工作流则适用于需要理解或生成内容的任务。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工作流",
+    "云原生 / DevOps",
+    "安全",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 561,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794416400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-12 01:00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "RAW_3f54e63c3d",
+  "title": "GitHub - FrigadeHQ/yogurt：私密 AI 会议纪要。免费且开源。",
+  "url": "https://github.com/FrigadeHQ/yogurt",
+  "date": "2026-11-11 23:33:06",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": null,
+  "aiSummary": "Yogurt 是一款免费开源的桌面应用，可在本地录制通话并生成私密的 AI 会议纪要，无需机器人加入会议。",
+  "oneSentenceSummary": "Yogurt 是一款免费开源的桌面应用，可在本地录制通话并生成私密的 AI 会议纪要，无需机器人加入会议。",
+  "summary": "Frigade 推出的 Yogurt 是一款开源、本地优先的会议纪要应用，适用于 macOS、Windows 和 Linux。与通过部署机器人加入线上通话的传统 AI 转录工具不同，Yogurt 直接从用户的系统录制对话，不会让机器人介入。它借助 Whisper 和 llama-cpp 等本地 AI 与语音模型转录音频、整理摘要并分配待办事项，同时确保会议数据保持私密。",
+  "mainPoints": [
+    {
+      "point": "Yogurt 无需机器人加入通话，即可直接录制会议音频",
+      "explanation": "它直接在用户的操作系统上运行，避免机器人作为参会者介入会议，同时仍能采集通话音频并生成摘要。"
+    },
+    {
+      "point": "这款工具通过开源和本地运行优先保障用户隐私",
+      "explanation": "Yogurt 采用 MIT 许可证发布，支持 macOS、Windows 和 Linux，并依靠本地 AI 技术保护会议数据安全。"
+    }
+  ],
+  "keyQuotes": [
+    "「私密 AI 会议纪要。免费且开源。」",
+    "「Yogurt 录制通话时，不会添加机器人加入会议。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "个人效率",
+    "开发者工具",
+    "开源项目",
+    "Linux"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 58,
+  "wordCount": 159,
+  "domain": "github.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794411186000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-11 23:33:06"
+}

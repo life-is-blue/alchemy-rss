@@ -1,0 +1,56 @@
+{
+  "id": "RAW_31bb096ef1",
+  "title": "DXC Technology 如何在 Amazon Bedrock 上构建多模型 AI 底座 | Amazon Web Services",
+  "url": "https://aws.amazon.com/blogs/machine-learning/how-dxc-technology-built-a-multi-model-ai-substrate-on-amazon-bedrock/",
+  "date": "2026-11-12 04:45:45",
+  "author": "Asif Fouzi",
+  "siteName": "AWS Artificial Intelligence",
+  "content": null,
+  "aiSummary": "DXC Technology 借助 Amazon Bedrock 的多模型访问能力、统一治理和私有网络，开发了 DXC OASIS——一套面向关键任务 IT 运维、具备韧性的 AI 框架，以确保智能体能够安全、规模化地部署。",
+  "oneSentenceSummary": "DXC Technology 借助 Amazon Bedrock 的多模型访问能力、统一治理和私有网络，开发了 DXC OASIS——一套面向关键任务 IT 运维、具备韧性的 AI 框架，以确保智能体能够安全、规模化地部署。",
+  "summary": "DXC OASIS 将模型选择与运维编排分离，并以 Amazon Bedrock 作为受治理的多基础模型底座。这种架构支持灵活路由、严格的数据主权保护，并能有效抵御单点故障，从而支持在受监管环境中高置信度地部署智能体。",
+  "mainPoints": [
+    {
+      "point": "通过 Amazon Bedrock 访问多种模型",
+      "explanation": "DXC OASIS 利用 Amazon Bedrock 通过单一 API 访问多种基础模型，包括 Anthropic、Nova 和 Llama，因此可以根据成本、延迟和能力灵活路由工作负载，避免受制于单一供应商。"
+    },
+    {
+      "point": "具备韧性且合规的架构",
+      "explanation": "该系统结合无服务器基础设施、私有网络（AWS PrivateLink）和严格的数据治理，确保高可用性，并符合数据处理方面的监管标准。"
+    },
+    {
+      "point": "将底座与运行框架分离",
+      "explanation": "通过区分底层模型底座（Bedrock）与运维框架（DXC OASIS），该架构使模型技术和编排逻辑能够独立演进，从而提升可维护性和可扩展性。"
+    },
+    {
+      "point": "限定自主权并由人类监督",
+      "explanation": "该设计通过设置分级权限，并要求高风险操作必须获得明确的人工批准来优先保障安全，确保智能体在清晰界定的边界内运行。"
+    }
+  ],
+  "keyQuotes": [
+    "「我们的客户运营着复杂且对业务至关重要的环境，因此在采用 AI 时，他们既需要选择空间，也需要韧性。Amazon Bedrock 提供了丰富的模型生态，同时具备企业级应用所需的治理、安全和运维控制能力。」",
+    "「由于每个模型都通过同一个 API 提供服务，团队可以根据成本、延迟和能力，将每项任务路由给最合适的模型；随着新一代前沿模型问世，也能直接采用，而无需重新构建系统。」",
+    "「将自主权视为针对具体任务授予的权限，而非默认设置，正是 DXC 能够放心地让智能体接入生产系统的原因。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "安全",
+    "系统设计",
+    "云原生 / DevOps",
+    "模型训练与推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 88,
+  "wordCount": 2538,
+  "domain": "aws.amazon.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_3e5f61",
+  "sourceName": "AWS Artificial Intelligence",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794429945000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-12 04:45:45"
+}

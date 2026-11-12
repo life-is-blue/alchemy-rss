@@ -1,0 +1,50 @@
+{
+  "id": "RAW_271b6f104a",
+  "title": "按标签浏览 tools.simonwillison.net",
+  "url": "https://simonwillison.net/2026/Nov/11/tools-tags/",
+  "date": "2026-11-12 02:42:50",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th November 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Nov/11/tools-tags/\">\n    <p><strong><a href=\"https://tools.simonwillison.net/#tags\">Browse tools.simonwillison.net by tag</a></strong>. I've been wanting a better way to browse my <a href=\"\">collection of vibe-coded tools</a> (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using <a href=\"https://github.com/tree-sitter/py-tree-sitter\">tree-sitter</a> to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool.</p>\n    <p>The homepage now features tag clouds for browsing by each of those categories of tag:</p>\n    <p><a href=\"https://tools.simonwillison.net/#tags\"><img alt=\"Screenshot of two tag cloud sections where tags are sized by count. Browse by JavaScript libraries - Libraries loaded from a CDN by two or more tools. Select a tag to list its tools. @google/generative-ai 3, @jsquash/avif 3, @jsquash/webp 4, Babel 2, Chart.js 2, Cropper.js 2, D3 2, DOMPurify 7, js-yaml 3, JSZip 3, Leaflet 4, markdown-it 4, Marked 12, pako 2, PDF.js 3, Pyodide 11, React 3, Tesseract.js 2, three.js 3. Browse by browser APIs - Web platform features used by each tool's own code. Select a tag to list its tools. &lt;dialog&gt; 5, AbortController 6, Blob URLs 38, BroadcastChannel 1, Built-in AI 1, Camera / microphone 9, Canvas 2D 44, Clipboard API 69, Compression Streams 3, createImageBitmap 2, crypto random values 4, DOMParser 8, Drag and drop 30, Dynamic import() 12, ES modules 92\" src=\"https://static.simonwillison.net/static/2026/tools-tag-cloud.webp\"></a></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9734/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 为自己的工具网站推出一项新功能，用户可以按 JavaScript 库和浏览器 API 浏览这些氛围编程工具；标签云则通过 tree-sitter 分析代码生成。",
+  "oneSentenceSummary": "Simon Willison 为自己的工具网站推出一项新功能，用户可以按 JavaScript 库和浏览器 API 浏览这些氛围编程工具；标签云则通过 tree-sitter 分析代码生成。",
+  "summary": "文章介绍了 tools.simonwillison.net 网站的一项更新：新增「按标签浏览」功能。用户可以根据工具使用的 JavaScript 库（如 Marked、Pyodide 和 React）以及依赖的浏览器 API（如 Clipboard API、Canvas 2D 和拖放）筛选 244 款工具。系统会使用 tree-sitter 库分析每款工具的源代码，并自动生成标签。",
+  "mainPoints": [
+    {
+      "point": "推出新的浏览功能",
+      "explanation": "网站现在提供「按标签浏览」功能，方便用户快速找到使用特定 JavaScript 库或浏览器 API 的工具。"
+    },
+    {
+      "point": "自动生成标签",
+      "explanation": "标签并非手动添加，而是通过 tree-sitter 库自动分析代码生成，从而确保信息准确且及时更新。"
+    },
+    {
+      "point": "提升用户体验",
+      "explanation": "这项功能旨在提供更直观的方式，帮助用户浏览数量庞大的工具集，而不必只依赖平铺列表或搜索。"
+    }
+  ],
+  "keyQuotes": [
+    "「我一直想找到一种更好的方式来浏览我的氛围编程工具合集（目前已有 244 款，而且还在增加）。」"
+  ],
+  "tags": [
+    "编程与工程",
+    "前端与 Web",
+    "TypeScript",
+    "React",
+    "Web 开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 81,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794422570000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-12 02:42:50"
+}

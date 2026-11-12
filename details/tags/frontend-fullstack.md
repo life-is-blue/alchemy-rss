@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-12 07:50:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-12 12:51:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -396,7 +396,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +408,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -519,6 +519,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [按标签浏览-tools.simonwillison.net](https://simonwillison.net/2026/Nov/11/tools-tags/)
+
+2026-11-12 02:42:50 | 标签: 编程与工程, 前端与 Web, TypeScript, React, Web 开发
+
+> 文章介绍了 tools.simonwillison.net 网站的一项更新：新增「按标签浏览」功能。用户可以根据工具使用的 JavaScript 库（如 Marked、Pyodide 和 React）以及依赖的浏览器 API（如 Clipboard API、Canvas 2D 和拖放）筛选 244 款工具。系统会使用 tree-sitter 库分析每款工具的源代码，并自动生成标签。
 
 
 
@@ -792,19 +800,35 @@
 
 
 
+### [Sand-|-浏览器中的超逼真沙子模拟器](https://av.github.io/safe-sand/)
+
+2026-11-11 21:39:29 | 标签: 编程与工程, 前端与 Web, 游戏开发, TypeScript, JavaScript
+
+> Sand 是一款基于 WebGL2 和 JavaScript 开发的交互式浏览器颗粒物理模拟器。它支持在手机、平板电脑和桌面设备上跨平台游玩，用户可通过触控手势、倾斜手机、摇晃设备和绘画，直接与模拟沙子互动。
+
+
+
+### [开放研究，更强隐私：让-Firefox-用户更难被指纹识别——Mozilla-安全博客](https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/)
+
+2026-11-11 20:44:06 | 标签: 编程与工程, 数字隐私, 前端与 Web, 代码质量, 安全
+
+> Mozilla 发布了一项被 ACM CCS 2026 接收的研究，展示了如何大规模测量并缓解现实中的浏览器指纹识别，同时不影响网站功能。Mozilla 使用保护隐私的 Oblivious HTTP（OHTTP），评估商业指纹识别服务的脚本与从近 25 million 名 Firefox 用户收集的遥测数据，从而找出影响用户可识别性的关键浏览器信号。为此，Firefox 推出了多项缓解措施，例如降低屏幕尺寸的精度、将处理器核心数限制为 4 或 8，以及统一图像渲染和 Web Audio 输出，从而扩大用户匿名集合，并显著降低用户在网络上的独特性。
+
+
+
 ### [2027-年最佳静态网站托管服务商：免费与付费方案对比](https://www.sitepoint.com/best-static-website-hosting-providers-in-2027-free-and-paid-options-compared/)
 
 2026-11-06 16:00:08
 
 
 
-### [实用的-JavaScript-函数测试指南：不让你的工作流程复杂化](https://www.sitepoint.com/a-practical-guide-to-testing-javascript-functions-without-overcomplicating-your-workflow/)
+### [如何将网站从-cPanel-迁移到其他控制面板并避免停机](https://www.sitepoint.com/how-to-move-a-site-off-cpanel-to-another-control-panel-without-downtime/)
 
 2026-10-14 15:00:07
 
 
 
-### [如何将网站从-cPanel-迁移到其他控制面板并避免停机](https://www.sitepoint.com/how-to-move-a-site-off-cpanel-to-another-control-panel-without-downtime/)
+### [实用的-JavaScript-函数测试指南：不让你的工作流程复杂化](https://www.sitepoint.com/a-practical-guide-to-testing-javascript-functions-without-overcomplicating-your-workflow/)
 
 2026-10-14 15:00:07
 
@@ -864,7 +888,7 @@
 
 
 
-### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
 
 2026-10-07 23:00:07
 
@@ -876,7 +900,7 @@
 
 
 
-### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
 
 2026-10-07 23:00:07
 
@@ -1134,7 +1158,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1146,7 +1170,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2424,13 +2448,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2580,13 +2604,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -4080,13 +4104,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5790,13 +5814,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

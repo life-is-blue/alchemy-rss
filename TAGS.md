@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-12 07:50:59 | [返回首页](/README.md)
+**更新时间**: 2026-11-12 12:51:41 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17371)
+- [AI & 大模型](#ai-llm) (17421)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1032)
-- [DevOps](#devops) (842)
+- [前端与全栈](#frontend-fullstack) (1035)
+- [DevOps](#devops) (844)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7197)
+- [其他](#other) (7208)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [在-Amazon-SageMaker-HyperPod-上检测并恢复静默数据损坏-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/) - AI 精选
+- [AlphaGenome-2：预测-DNA-如何塑造细胞与疾病](https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/) - AI 精选
+- [连干-229-轮没人管，Qwen4-Max-预览版成事了吗？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247492852&idx=1&sn=cf0c21368250f843a45a3ab7f453bc37) - AI 精选
 - [Gemini-4-Carbon-现已推出](https://deepmind.google/blog/gemini-4-carbon-is-now-available/) - AI 精选
 - [用-Claude-定位神秘的蜂鸣声来源](https://simonwillison.net/2026/Nov/9/mysterious-beeps/) - AI 精选
 - [100+-个客户共用一个语义模型，构建时间缩短-70%](https://towardsdatascience.com/how-to-report-for-100-clients-with-one-semantic-model/) - AI 精选
@@ -31,19 +34,16 @@
 - [Hyra-2.0-发布：为模型研发打造可复用工具](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498763&idx=1&sn=279f8fb4e43a987fdc0aa2af0b0f7958) - AI 精选
 - [Next-Concept-Modeling：快速、并行的由粗到细文本生成](https://hazyresearch.stanford.edu/blog/2026-10-12-ncm) - AI 精选
 - [HiRO-ACEv2：以极低成本实现-3-公里分辨率的极端天气模拟](https://huggingface.co/blog/allenai/hiro-acev2) - AI 精选
-- [Natura-1-发布：从百万小时人类经验中学会零样本泛化与灵巧操作](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=1&sn=fa2d7404984d41c4d2e1e61c8caa24af) - AI 精选
 - [苹果-LensVLM：长上下文压缩成图片，模型边看边「放大」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=3&sn=7b77525c43945b4e5a775f0d78cb4cbd) - AI 精选
+- [Natura-1-发布：从百万小时人类经验中学会零样本泛化与灵巧操作](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=1&sn=fa2d7404984d41c4d2e1e61c8caa24af) - AI 精选
 - [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
 - [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
 - [Gemini-4-Argon：为解决棘手难题而生](https://deepmind.google/blog/introducing-gemini-4-argon/) - AI 精选
 - [Anthropic-的源码控制系统重设计](https://www.anthropic.com/engineering/redesigning-source-control) - AI 精选
 - [Orca-Security-使用-Amazon-Bedrock-实现自然语言安全查询](https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/) - AI 精选
 - [ShipStation-Global-如何利用-Amazon-Bedrock-AgentCore-构建-AI-IT-帮助台-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/) - AI 精选
-- [为-IBM-Spyre-加速器扩展-Inductor](https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/) - AI 精选
-- [生成的世界也能交互！牛津大学&amp;莫纳什大学&amp;布里斯托大学等团队提出交互式视频世界模型-Oneira](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062445&idx=3&sn=c93fe78ae034dea794c3760e35192930) - AI 精选
-- [我将-4-款模型的推理档位调至「高」：只解决了一个问题，却为所有消耗买了单](https://dev.to/abeera_lodhi/i-turned-the-reasoning-dial-to-high-on-4-models-it-fixed-one-thing-and-billed-me-for-everything-41o5) - AI 精选
 
-- [查看全部 17371 篇...](/details/tags/ai-llm.md)
+- [查看全部 17421 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 - [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 
-- [查看全部 1032 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1035 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 842 篇...](/details/tags/devops.md)
+- [查看全部 844 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7197 篇...](/details/tags/other.md)
+- [查看全部 7208 篇...](/details/tags/other.md)
 
 

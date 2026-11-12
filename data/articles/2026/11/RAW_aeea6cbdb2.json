@@ -1,0 +1,52 @@
+{
+  "id": "RAW_aeea6cbdb2",
+  "title": "Gemini Decisions API",
+  "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+  "date": "2026-11-12 06:03:25",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th November 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Nov/11/gemini-decisions-api/\">\n    <p><strong><a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/\">Gemini Decisions API</a></strong> (<a href=\"https://news.ycombinator.com/item?id=50456791\" title=\"Hacker News\">via</a>) Google join <a href=\"https://simonwillison.net/2026/Sep/21/jev/\">Jev</a> and <a href=\"https://simonwillison.net/2026/Oct/6/llm-openai-decisions/\">OpenAI</a> in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.</p>\n    <p>It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.</p>\n    <p>Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.</p>\n    <p>I tested it against video by passing these questions to it along with my <a href=\"https://simonwillison.net/2026/Nov/10/yonkers-rises/\">Yonkers stomping robot</a> video file:</p>\n    <pre><code>dragon: Does this video have a dragon in it?\nrobot: Does this video have a robot in it?\nfrance: Is this video set in France?\nusa: Is this video set in the USA?\n</code></pre>\n    <p>Jev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that:</p>\n    <div class=\"highlight highlight-source-json\">\n     <pre>{\n  <span class=\"pl-ent\">\"dragon\"</span>: {\n    <span class=\"pl-ent\">\"type\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>yes_no<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"probability\"</span>: <span class=\"pl-c1\">0.04976021841520312</span>\n  },\n  <span class=\"pl-ent\">\"robot\"</span>: {\n    <span class=\"pl-ent\">\"type\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>yes_no<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"probability\"</span>: <span class=\"pl-c1\">0.9234055387792485</span>\n  },\n  <span class=\"pl-ent\">\"france\"</span>: {\n    <span class=\"pl-ent\">\"type\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>yes_no<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"probability\"</span>: <span class=\"pl-c1\">0.08329171353166241</span>\n  },\n  <span class=\"pl-ent\">\"usa\"</span>: {\n    <span class=\"pl-ent\">\"type\"</span>: <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>yes_no<span class=\"pl-pds\">\"</span></span>,\n    <span class=\"pl-ent\">\"probability\"</span>: <span class=\"pl-c1\">0.9230459995157706</span>\n  }\n}</pre>\n    </div>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9736/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 推出 Gemini Decisions API，这是一款支持文本、图像、音频、视频和 PDF 的多模态决策模型，定价与 OpenAI 的 Luna 模型相当，为每百万输入 token 收费 10 美分。",
+  "oneSentenceSummary": "Google 推出 Gemini Decisions API，这是一款支持文本、图像、音频、视频和 PDF 的多模态决策模型，定价与 OpenAI 的 Luna 模型相当，为每百万输入 token 收费 10 美分。",
+  "summary": "Google 宣布推出 Gemini Decisions API，加入 Jev 和 OpenAI 所在的决策模型类别。它支持三种问题类型（是/否、选择题、评分标准打分），并具备完整的多模态能力，可处理文本、图像、音频、视频和 PDF。该 API 每百万输入 token 收费 10 美分，输出免费，定价与 OpenAI 的 Luna 模型相同，但高于 Jev 每百万 4.2 美分的价格。在一项使用机器人视频进行的测试中，该模型能够以较高置信度识别机器人及其位置，不过给出的概率略低于 1.0。",
+  "mainPoints": [
+    {
+      "point": "多模态支持",
+      "explanation": "与仅支持文本的 Jev 和支持文本、图像的 OpenAI 不同，Gemini Decisions API 支持多种媒体类型，包括音频、视频和 PDF，因此可灵活用于各种数据分析任务。"
+    },
+    {
+      "point": "定价结构",
+      "explanation": "该 API 每百万输入 token 收费 10 美分，输出免费，价格与 OpenAI 的 Luna 模型相当，但高于 Jev 每百万 4.2 美分的定价。"
+    },
+    {
+      "point": "问题类型",
+      "explanation": "该 API 支持三种标准决策问题类型：是/否、选择题和评分标准打分，为自动化决策提供灵活的框架。"
+    }
+  ],
+  "keyQuotes": [
+    "Google 携手 Jev 和 OpenAI，以「Gemini Decision 1」加入决策模型类别。",
+    "这款新的模型 API 与 Jev 几乎完全相同：它支持相同的三种问题类型（是/否、选择题和评分标准打分），甚至沿用了 Jev 对是/否问题的称呼「Noul」。",
+    "Jev 仅支持文本（和 JSON）。OpenAI 可以处理文本和图像。Gemini Decision 1 则是完整的多模态模型，支持文本、图像、音频、视频和 PDF。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "模型训练与推理",
+    "AI 产品与应用",
+    "多模态 AI",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 217,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794434605000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-12 06:03:25"
+}

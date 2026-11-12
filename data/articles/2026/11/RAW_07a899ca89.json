@@ -1,0 +1,50 @@
+{
+  "id": "RAW_07a899ca89",
+  "title": "aws-emulator",
+  "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+  "date": "2026-11-12 05:18:30",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">11th November 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Nov/11/aws-emulator/\">\n    <p><strong><a href=\"https://github.com/aws/aws-emulator\">aws-emulator</a></strong>. Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.</p>\n    <p>It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about <a href=\"https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html\">how it came to be</a> in a guest post on Werner Vogels' blog.</p>\n    <p>It currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9735/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "AWS 发布了官方模拟器，供开发者在本地测试其服务；该项目由一群智能体开发，初次运行需要 Docker。",
+  "oneSentenceSummary": "AWS 发布了官方模拟器，供开发者在本地测试其服务；该项目由一群智能体开发，初次运行需要 Docker。",
+  "summary": "AWS 推出了 aws-emulator，这款工具让开发者无需付费 API 密钥，就能针对 AWS 服务的本地克隆版本运行测试。该项目由一支规模庞大的智能体团队开发，在头 3 周内提交了近 30，000 次代码变更。目前，在 macOS 和 Windows 上运行该工具需要 Docker；人们期待未来推出单一二进制文件版本，以便将其更轻松地集成到标准测试套件中。",
+  "mainPoints": [
+    {
+      "point": "AWS 官方本地测试模拟器",
+      "explanation": "aws-emulator 让开发者能够针对 AWS 服务的本地克隆版本运行测试，无需付费 API 密钥，从而加快开发周期并降低成本。"
+    },
+    {
+      "point": "由一群智能体开发",
+      "explanation": "该项目由一支规模庞大的智能体团队打造，推动了快速开发进程：3 周内完成近 30，000 次代码提交，也展现了 AI 辅助编程在复杂基础设施项目中的潜力。"
+    },
+    {
+      "point": "当前限制与未来展望",
+      "explanation": "目前，该模拟器在 macOS 和 Windows 上运行需要 Docker。人们期待未来推出单一二进制文件版本，以便将其更轻松地集成到不同语言和平台上的标准测试套件中。"
+    }
+  ],
+  "keyQuotes": [
+    "终于有了 AWS 官方模拟器，开发者可以针对 AWS 的众多服务的本地克隆版本运行测试，而无需为此申请付费 API 密钥。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "云原生 / DevOps",
+    "测试与质量",
+    "AI 编程",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 122,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794431910000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-12 05:18:30"
+}
