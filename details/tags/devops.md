@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-13 10:22:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-13 19:43:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -680,9 +680,7 @@
 
 ### [LinkedIn-用自研-GitOps-引擎取代-Argo-CD，管理-Kubernetes-部署](https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/)
 
-2026-11-12 17:00:00 | 标签: 编程与工程, 云原生 / DevOps, 系统设计, Kubernetes, GitOps
-
-> 文章详细介绍了 LinkedIn 如何从 Argo CD 转向专有的 Kubernetes 部署 GitOps 引擎。新系统为每次部署启动一个临时 Pod，解决了 watch 竞争和 managedFields 截断等可扩展性问题。该系统通过三方差异检测配置漂移，并使用 PUT 请求完整替换对象，最终使部署基础设施故障减少 93%，部署失败的中位检测时间缩短 96%。
+2026-11-12 17:00:00
 
 
 
