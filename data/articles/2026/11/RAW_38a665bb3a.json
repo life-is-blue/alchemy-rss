@@ -1,0 +1,59 @@
+{
+  "id": "RAW_38a665bb3a",
+  "title": "Google 开源 TPU Sync，用于 TPU 上的 KV 缓存与权重传输",
+  "url": "https://www.infoq.com/news/2026/11/google-tpu-sync/",
+  "date": "2026-11-12 18:06:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Cloud has open-sourced <a href=\"https://cloud.google.com/blog/topics/ai-infrastructure/introducing-tpu-sync-fast-kv-cache-and-weight-transfer-on-tpu\">TPU Sync</a>, a native C++ library that moves KV cache blocks and model weights between TPU HBM, host DRAM, shared storage, and the data center network. GCP also announced the <a href=\"https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/\">TPU 8tx and TPU 8i Max systems</a>, the project targets two workloads where accelerators often wait on data: long-context and disaggregated LLM serving, and reinforcement learning loops that push updated weights from trainers to rollout samplers.</p>\n   <p>For prefill/decode disaggregation, Google says median KV transfer latency for Qwen3 235B fell from several seconds to about 230 ms, with average TTFT reductions of 60% for that model and 90% for a 480B model at low concurrency. For prefix caching, it reports up to 90% lower average TTFT on 64K-context workloads.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/google-tpu-sync/news/2026/11/google-tpu-sync/en/resources/13-prefix_performance.max-1500x1500-1794404241103.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/google-tpu-sync/en/resources/13-prefix_performance.max-1500x1500-1794404241103.jpg\" rel=\"share\"></p>\n   <p>Developers get Python wheels for JAX and PyTorch, with KV cache manager, KV store, and weight synchronizer APIs. TPU Sync acts as the KV connector for vLLM-TorchTPU through vLLM's KVConnector interface, as the disaggregation and hierarchical-cache backend for SGLang-TorchTPU, and pairs with <a href=\"https://llm-d.ai/\">llm-d</a> 1.0 on GKE for prefix-cache-aware routing. The RL weight-sync module for Pathways and multi-controller JAX is experimental. The <a href=\"https://github.com/google/tpu-sync\">GitHub repository</a>, which absorbed the earlier TPU Raiden codebase, warns that APIs are changing rapidly and that only development builds are on PyPI, and recommends pinning to its last-known-good commit. It is validated on TPU v7x and v6e, and the PyTorch wheel requires a matching torch_tpu build that is not on a public index.</p>\n   <p>On GPUs, similar problems are handled by <a href=\"https://github.com/ai-dynamo/dynamo\">NVIDIA Dynamo</a> and its <a href=\"https://github.com/ai-dynamo/nixl\">NIXL</a> transfer library, <a href=\"https://github.com/LMCache/LMCache\">LMCache</a>, which offloads KV cache to CPU memory, disk, or remote stores, <a href=\"https://github.com/kvcache-ai/Mooncake\">Mooncake</a>, the KVCache-centric serving architecture behind Moonshot AI's Kimi, and vLLM's own <a href=\"https://docs.vllm.ai/en/latest/features/disagg_prefill.html\">disaggregated prefill connectors</a>. TPU Sync differs mainly in being tied to PJRT and TPU tile layouts, and in covering RL weight transfer in the same library.</p>\n   <p>Early reactions focused on data movement rather than the new chips, with developer&nbsp;<a href=\"https://x.com/AnandButani/status/2119830708516745520\">Anand Butani</a>&nbsp;sharing:</p>\n   <blockquote>\n    <p>TPU sync cutting kv transfer latency 90% matters more to me than the chip names, long-context serving mostly dies on moving cache between nodes.</p>\n   </blockquote>\n   <p>Another developer posting under the pseudonym <a href=\"https://x.com/lgoodbookd/status/2120081156624507050\">@lgoodbookd</a> ran rough numbers on why bandwidth alone does not solve the problem:</p>\n   <blockquote>\n    <p>8i Max doubles HBM bandwidth to ~17.2TB/s, yet one 64K session on a 235B MoE still eats ~12.6GB of KV cache. That's why open-sourcing TPU Sync (host-DRAM KV tiering, ~223GB/s per v7x host) may matter as much as the new package. Bandwidth helps; capacity is still the wall.</p>\n   </blockquote>\n   <p>TPU Sync is available under the Apache 2.0 license, and its <a href=\"https://github.com/google/tpu-sync\">repository</a> includes architecture documentation, C++ and Python APIs, and examples for single-host and multi-host disaggregated serving and host KV offloading. Until a stable release is cut, the <a href=\"https://pypi.org/project/tpu-sync-jax/\">JAX</a> and <a href=\"https://pypi.org/project/tpu-sync-torch/\">PyTorch</a> packages are published only as development builds, while the storage tier and RL weight synchronization remain experimental</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Open-Sources TPU Sync for KV Cache and Weight Transfer on TPUs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/google-tpu-sync/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794477960000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 已开源 TPU Sync，这是一款原生 C++ 库，可大幅降低 TPU 上 KV 缓存与权重传输的延迟，通过在 HBM、主机 DRAM 与数据中心网络之间高效移动数据，加快长上下文 LLM 服务和强化学习工作流。",
+  "oneSentenceSummary": "Google 已开源 TPU Sync，这是一款原生 C++ 库，可大幅降低 TPU 上 KV 缓存与权重传输的延迟，通过在 HBM、主机 DRAM 与数据中心网络之间高效移动数据，加快长上下文 LLM 服务和强化学习工作流。",
+  "summary": "Google Cloud 已开源 TPU Sync，这是一款原生 C++ 库，可在 TPU HBM、主机 DRAM、共享存储和数据中心网络之间快速传输 KV 缓存与权重。该库面向两类关键工作负载：长上下文和分离式 LLM 服务，以及将更新后的权重从训练器传送到 rollout 采样器的强化学习循环。对于预填充/解码分离，Google 报告称，Qwen3 235B 的 KV 传输延迟中位数从数秒降至约 230 ms；在低并发情况下，该模型的平均 TTFT 降低了 60%，而 480B 模型降低了 90%。对于前缀缓存，Google 报告称，在 64K 上下文工作负载下，平均 TTFT 最多可降低 90%。开发者可使用适用于 JAX 和 PyTorch 的 Python wheel；TPU Sync 可通过 vLLM 的 KVConnector 接口充当 vLLM-TorchTPU 的 KV 连接器，也可作为 SGLang-TorchTPU 的分离式架构与分层缓存后端，还可与 GKE 上的 llm-d 1.0 搭配，实现感知前缀缓存的路由。该库已在 TPU v7x 和 v6e 上通过验证，并采用 Apache 2.0 许可证发布。",
+  "mainPoints": [
+    {
+      "point": "TPU Sync 将 Qwen3 235B 的 KV 缓存传输延迟从数秒降至约 230 ms",
+      "explanation": "对于预填充/解码分离，Google 报告称，KV 传输延迟中位数从数秒降至约 230 ms；在低并发情况下，Qwen3 235B 的平均 TTFT 降低了 60%，而 480B 模型降低了 90%。"
+    },
+    {
+      "point": "在 64K 上下文工作负载下，前缀缓存可将平均 TTFT 最多降低 90%",
+      "explanation": "该库优化了前缀缓存场景，通过高效管理 KV 缓存，在 64K 上下文工作负载下将平均首个 token 时间最多降低 90%。"
+    },
+    {
+      "point": "TPU Sync 提供原生 C++ 库，并为 JAX 和 PyTorch 提供 Python 绑定",
+      "explanation": "开发者可使用适用于 JAX 和 PyTorch 的 Python wheel，以及 KV 缓存管理器、KV 存储和权重同步器 API；该库已在 TPU v7x 和 v6e 上通过验证。"
+    },
+    {
+      "point": "该库解决了长上下文服务中的带宽与容量挑战",
+      "explanation": "开发者评论指出，尽管 8i Max 将 HBM 带宽提升了一倍，达到约 17.2TB/s，但 235B MoE 的单个 64K 会话仍会占用约 12.6GB 的 KV 缓存，因此主机 DRAM KV 分层（每台 v7x 主机约 223GB/s）对容量管理至关重要。"
+    },
+    {
+      "point": "TPU Sync 可与主流 LLM 服务框架集成",
+      "explanation": "它通过 vLLM 的 KVConnector 接口充当 vLLM-TorchTPU 的 KV 连接器，作为 SGLang-TorchTPU 的分离式架构与分层缓存后端，并可与 GKE 上的 llm-d 1.0 搭配，实现感知前缀缓存的路由。"
+    }
+  ],
+  "keyQuotes": [
+    "TPU Sync 将 KV 传输延迟降低 90%，这对我来说比芯片名称重要得多；长上下文服务的大部分问题，都出在节点之间移动缓存上。",
+    "8i Max 将 HBM 带宽提升了一倍，达到约 17.2TB/s，但 235B MoE 的单个 64K 会话仍会占用约 12.6GB 的 KV 缓存。这就是为什么开源 TPU Sync（主机 DRAM KV 分层，每台 v7x 主机约 223GB/s）可能和新封装同样重要。带宽有所帮助，但容量仍然是瓶颈。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 硬件与芯片",
+    "性能优化",
+    "分布式系统",
+    "模型训练与推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 466,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794477960000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-12 18:06:00"
+}

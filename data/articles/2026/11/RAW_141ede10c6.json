@@ -1,0 +1,57 @@
+{
+  "id": "RAW_141ede10c6",
+  "title": "LLM 推理成本：无人消除的二次项，以及一项经实测验证的解决方案",
+  "url": "https://dev.to/shalendra_gaur_ecd0567a49/llm-inference-cost-the-quadratic-term-nobody-removes-and-a-measured-fix-23a8",
+  "date": "2026-11-12 17:18:57",
+  "author": "Shalendra gaur",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Everyone is talking about LLM inference cost. The price per token keeps falling, yet bills keep rising, especially for AI agents. This article explains one cause that gets little attention, shows the arithmetic, and reports what happened when we removed it in a measured test on Gemini 3.8 Flash.</p>\n  <h2><a name=\"the-short-version\" href=\"#the-short-version\"> </a> The short version</h2>\n  <p>An agent that keeps its history in the prompt pays for the same tokens again at every step. The total grows with the <strong>square</strong> of the number of steps. Cheaper chips and cheaper tokens make each token cost less, but they don't change that curve. Holding the exact state of the job on the host and sending a fresh short prompt at every step makes the cost grow in a <strong>straight line</strong> instead.</p>\n  <h2><a name=\"where-the-cost-comes-from\" href=\"#where-the-cost-comes-from\"> </a> Where the cost comes from</h2>\n  <p>Most agents work like a chat. At every step the model receives the whole history again: the instructions, every earlier request, every earlier answer. Step <em>k</em> sends about <em>k</em> units of history. Add up <em>N</em> steps and you get about N²/2 units. Double the length of a job and the history cost quadruples.</p>\n  <p>This has a consequence people feel but rarely price: <strong>the more an agent is used, the worse the cost per task gets.</strong> Under a flat-price plan, the heaviest users cost the most. Under per-token pricing, the same job costs more than it did the week before simply because it ran longer.</p>\n  <h2><a name=\"what-the-cure-has-to-change\" href=\"#what-the-cure-has-to-change\"> </a> What the cure has to change</h2>\n  <p>There are three common ways to reduce the bill, and it helps to see what each one changes:</p>\n  <ul>\n   <li><strong>Cheaper hardware or cheaper tokens</strong> reduce the price of each token by a constant factor. The curve keeps its shape.</li>\n   <li><strong>Prefix caching</strong> makes re-reading tokens cheaper by a fixed factor. Again, a constant, and the curve keeps its shape.</li>\n   <li><strong>Summaries and compaction</strong> shrink the history, but a summary is a guess about what matters, and a lost detail stays lost.</li>\n  </ul>\n  <p>To change the shape, the history itself has to stop growing.</p>\n  <h2><a name=\"the-approach-we-tested\" href=\"#the-approach-we-tested\"> </a> The approach we tested</h2>\n  <p>The architecture, <strong>AXI</strong>, is by <strong>Rajnish Choubey</strong>. The exact state of the job lives on the host. At every step:</p>\n  <ol>\n   <li>The host builds a short prompt from the exact state.</li>\n   <li>The model proposes the next move.</li>\n   <li>A deterministic gate checks the proposal in about 2 microseconds (measured in Python).</li>\n   <li>A rule-based repair fixes a slip.</li>\n   <li>The host updates the state and the loop repeats.</li>\n  </ol>\n  <p>There is no training and no change to the model. It works from the first step, on short jobs and long ones.</p>\n  <h2><a name=\"a-worked-example-from-the-measurements\" href=\"#a-worked-example-from-the-measurements\"> </a> A worked example from the measurements</h2>\n  <p>Over 1,500 steps on Gemini 3.8 Flash, the kept chat's mean prompt was <strong>476,835 tokens</strong> (peak 949,591). With host-held state, every prompt was <strong>2,824 tokens</strong>.</p>\n  <p>Total input over the job, from those means:</p>\n  <ul>\n   <li>Kept chat: 476,835 × 1,500 ≈ <strong>715 million tokens</strong></li>\n   <li>Host-held state: 2,824 × 1,500 ≈ <strong>4.2 million tokens</strong></li>\n  </ul>\n  <p>That is about 169 times fewer input tokens.</p>\n  <p>The cost figure is smaller than that token ratio, because it counts every call at typed prices per <strong>correct</strong> step: <strong>$0.0012 against $0.0052, 4.5 times lower</strong>, and 9.3 times lower on a second seed.</p>\n  <h2><a name=\"latency-not-just-money\" href=\"#latency-not-just-money\"> </a> Latency, not just money</h2>\n  <p>Past 500k tokens of context, a whole call took <strong>10.66 s against 3.07 s</strong> (3.5x), and the first token arrived after <strong>9.13 s against 2.27 s</strong> (4.0x). Exact steps per hour: <strong>1,280 against 488</strong> (2.6x). A smaller prompt is cheaper and also faster.</p>\n  <h2><a name=\"accuracy-is-part-of-cost\" href=\"#accuracy-is-part-of-cost\"> </a> Accuracy is part of cost</h2>\n  <p>Wrong steps cost money twice: once to make them and again to fix them. In the same 1,500-step run, the host-held approach was exact on 1,500 of 1,500 steps, while the kept chat started slipping at turn 223 and was wrong from turn 287.</p>\n  <p>In a separate 4,000-request run, 393 of 400 replies were right (98%), but only 85 of 400 steps ended in the correct state (21%) when the replies were applied as written. A small error rate per reply becomes a large error rate per job, because each slip is carried into everything after it.</p>\n  <h2><a name=\"questions-people-ask\" href=\"#questions-people-ask\"> </a> Questions people ask</h2>\n  <p><strong>Doesn't prefix caching already solve this?</strong>\n   <br>\n   Caching cuts the price of re-reading, by a fixed factor. It doesn't stop the history from growing, doesn't remove the latency we measured past 500k tokens, and doesn't stop drift. A direct head-to-head comparison on the same job is the right next experiment, and I would welcome help running it.</p>\n  <p><strong>Does it need fine-tuning or a special model?</strong>\n   <br>\n   No. The model is unchanged. We tested Gemini 3.8 Flash and small Qwen models. With Qwen, 12 of 12 kept-chat episodes ended corrupted and 0 of 360 did with host-held state.</p>\n  <p><strong>Is this only for long jobs?</strong>\n   <br>\n   No. It works from the first step. The saving grows with the number of steps, but the exactness holds from the start.</p>\n  <p><strong>How do I know the numbers are real?</strong>\n   <br>\n   Each test page was locked with a SHA-256 hash before the run, with probabilities on every prediction. In the latest test, 12 of 13 predictions held and the one that missed is reported as wrong. A test in the repo recomputes every figure from the saved results.</p>\n  <h2><a name=\"compare-it-on-your-own-workload\" href=\"#compare-it-on-your-own-workload\"> </a> Compare it on your own workload</h2>\n  <p>If you run agents at scale, the quickest way to see what this would save you is to try it on your own jobs. The repo has a Colab notebook that runs the test with your own Gemini key and a spend limit. If you try it, please open an issue with what you find, good or bad.</p>\n  <ul>\n   <li>Repo with tests: <a href=\"https://github.com/gaurshalendra2412/axi-runtime\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/gaurshalendra2412/axi-runtime</a></li>\n   <li>Paper: <a href=\"https://doi.org/10.5281/zenodo.23958737\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.5281/zenodo.23958737</a></li>\n  </ul>\n  <p>Tests built and run by Shalendra Gaur, published with Rajnish Choubey's permission.</p>\n  <h1><a name=\"inference-llm-ai-aiagents-tokencost-kvcache-contextwindow-prefixcaching-machinelearning-devops-mlops-gemini-opensource-performance\" href=\"#inference-llm-ai-aiagents-tokencost-kvcache-contextwindow-prefixcaching-machinelearning-devops-mlops-gemini-opensource-performance\"> </a> inference #llm #ai #aiagents #tokencost #kvcache #contextwindow #prefixcaching #machinelearning #devops #mlops #gemini #opensource #performance</h1>\n </body>\n</html>",
+  "aiSummary": "文章分析了在提示词中保留完整历史记录的 LLM 智能体所面临的二次方 token 成本增长，并介绍 AXI 架构作为经实测验证的解决方案：它将输入 token 减少了 169x，同时提高了准确率。",
+  "oneSentenceSummary": "文章分析了在提示词中保留完整历史记录的 LLM 智能体所面临的二次方 token 成本增长，并介绍 AXI 架构作为经实测验证的解决方案：它将输入 token 减少了 169x，同时提高了准确率。",
+  "summary": "文章指出了 LLM 智能体的一项隐性成本驱动因素：在提示词中保留历史记录会导致 token 数量呈二次方增长。每一步都会发送累积的历史记录，使 token 总量增长至 N²/2。更便宜的硬件或前缀缓存只能降低单个 token 的成本，却无法改变增长曲线。AXI 架构将任务状态转移到主机端，每一步只发送简短提示词。在一项使用 Gemini 3.8 Flash、共 1，500 步的测试中，输入 token 数从 715M 降至 4.2M，成本降低 4.5x，延迟降低 3.5x。准确率也有所提高：主机端保存状态的方案实现了 100% 的步骤完全准确率，而保留聊天记录的方案为 79%。这种方法无需修改模型，并且从第一步开始就能扩展。",
+  "mainPoints": [
+    {
+      "point": "在提示词中保留完整历史记录，会使 LLM 智能体的 token 成本呈二次方增长",
+      "explanation": "每一步都会发送累积的历史记录，因此第 k 步会发送 k 个 token。将 N 步的 token 数相加，得到 N²/2。任务长度翻倍，历史记录成本就会变为原来的四倍，因此使用量越大，单个任务的成本就越高。"
+    },
+    {
+      "point": "AXI 架构通过将状态转移到主机端，而非保留在提示词中，来减少 token 数量",
+      "explanation": "主机端维护精确的任务状态，并在每一步只发送简短提示词（约 2，824 个 token）；相比之下，保留聊天记录需要发送 476，835 个 token。这样输入 token 减少了 169x，成本降低了 4.5x。"
+    },
+    {
+      "point": "主机端保存状态既能提高成本效率，也能提升准确率",
+      "explanation": "在一项共 1，500 步的测试中，主机端保存状态的方案每一步都完全准确，而保留聊天记录的方案从第 223 轮开始出现偏差。错误步骤会产生双重成本（执行 + 修正），因此准确率会直接影响成本。"
+    },
+    {
+      "point": "更便宜的硬件和前缀缓存只能降低单个 token 的成本，无法消除二次方增长曲线",
+      "explanation": "这些优化只能带来固定比例的成本下降，却无法改变根本性的 N² 增长模式。只有缩短历史记录本身，才能改变曲线形态。"
+    }
+  ],
+  "keyQuotes": [
+    "在提示词中保留历史记录的智能体，每一步都要为相同的 token 再次付费。总成本会随着步数的平方增长。",
+    "在主机端保存任务的精确状态，并在每一步发送一条全新的简短提示词，就能让成本改为线性增长。",
+    "输入 token 数大约减少了 169 倍。",
+    "主机端保存状态的方案在 1，500 步中有 1，500 步完全准确；保留聊天记录的方案则从第 223 轮开始出现偏差，并从第 287 轮起出错。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "Token 经济学",
+    "性能优化",
+    "机器学习",
+    "AI 工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 944,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794475137000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-12 17:18:57"
+}

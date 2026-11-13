@@ -1,0 +1,54 @@
+{
+  "id": "RAW_afa06f639c",
+  "title": "LinkedIn 用自研 GitOps 引擎取代 Argo CD，管理 Kubernetes 部署",
+  "url": "https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/",
+  "date": "2026-11-12 17:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a recent <a href=\"https://www.linkedin.com/blog/engineering/infrastructure/how-we-scale-deployments-with-a-custom-gitops-engine\">post</a>, LinkedIn revealed it has replaced <a href=\"https://argo-cd.readthedocs.io/en/stable/\">Argo CD</a> with its own <a href=\"https://about.gitlab.com/topics/gitops/\">GitOps</a> engine. This new system deploys applications across over 250 Kubernetes clusters. It supports more than 4,000 services and manages over 100,000 deployments each week. According to a post, deployment infrastructure failures fell from 925 to 63 despite a 3.7x increase in deployment volume. The median time to detect and conclude a failed deployment dropped from 16.1 to 2.45 minutes.</p>\n   <p>LinkedIn started with one Argo CD instance per cluster, a topology it chose because Argo CD already managed its cluster add-ons that way. Clusters run up to 5,000 nodes each. A central deployment orchestrator spawned an ephemeral pod per deployment, with Argo CD hidden behind it. The team lists seven problems that emerged at scale. Argo CD doesn't have an <code>observedGeneration</code>, so you can't link sync and health status to a specific deployment. LinkedIn created a Lua health check that uses a tracking annotation to address this. A Synced and Healthy application could also resolve to an unintended revision when stale repo-server cache entries were used.</p>\n   <p>Two of the issues were architectural. Argo CD maintains one watch per group-version-resource across Applications. LinkedIn’s clusters have low resource-type diversity. This means etcd churn from one app can slow syncs for all apps. In one test, sync took under 3 minutes on a cluster with 60,000 pods and over 10 minutes with more than 80,000. The second was server-side-apply PATCH. Kubernetes truncates managedFields once an object has had more than 10 distinct field managers, and the API server then forgets who owns a field. In LinkedIn's AI workloads, which run multiple containers per Pod, a container removed from a manifest could therefore survive on the live Pod. The team had pruning disabled because destructive operations in production require approval. The remaining problems were CRD schema changes that required controller restarts across the fleet. Some OutOfSync states did not reflect real drift. Error messages were buried in boilerplate.</p>\n   <p>LinkedIn evaluated <a href=\"https://fluxcd.io\">Flux</a> but found it shared the same controller paradigm, so it built the engine as a library. Each deployment runs in its pod, with no shared controller state. Updates use PUT for full replacements, not PATCH. They retry on <code>resourceVersion</code> conflicts with exponential backoff. A 3-way diff across the live object, the previously deployed manifest, and the newly rendered manifest detects drift, and genuine drift fails the deployment. The same pod then watches the object's status until it converges or times out, and the API server unwraps errors for the user. Objects missing from the rendered manifest become deletion candidates, subject to delete protection, and convergence logic for LinkedIn's CRDs is built in.</p>\n   <p>&nbsp;</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/news/2026/11/kubernetes-argocd-linkedin/en/resources/11793620037518-1794414682255.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/kubernetes-argocd-linkedin/en/resources/11793620037518-1794414682255.jpg\" rel=\"share\">\n   </center>\n   <center>\n    <small>Deployment using LinkedIn’s deployer</small>\n   </center>\n   <p>The comparison uses the same calendar month a year apart. The migration ran from July 2025 to April 2026, which makes May 2026 the first clean post-migration month. The infra failure count covers only failures caused by the deployment system and excludes drift errors, since the two systems define drift differently. LinkedIn states that the improvement isn't solely due to the new engine. The orchestrator's error classification and reliability also got better during this time. The median duration for successful deployments is similar for both systems. However, the mean and tail have improved. The team attributes this to a namespace-scoped informer cache.</p>\n   <p>The engine is internal, and no open-source release is mentioned. Argo CD remains in use at LinkedIn for cluster add-ons and system services. The team had also found that maintaining 200+ Argo CD instances made each upgrade a multi-week project.</p>\n   <p>Teams running Argo CD at scale can check two things without a rewrite. Count the field managers on long-lived objects, since managedFields truncation can leave orphaned containers that produce no error. Then check whether sync latency tracks total pod count on shared clusters, which points to watch contention. LinkedIn concludes that the build-or-extend decision relies on the operational model. They say that per-deployment isolation, not controller tuning, allows the system to scale with compute.</p>\n   <p>LinkedIn is not the only large operator to build deployment logic around Kubernetes rather than adopt a general-purpose GitOps controller. Uber’s<a href=\"https://www.uber.com/us/en/blog/evolving-ubers-compute-platform/\"> Up platform</a> assigns each deployment to a dedicated controller. This is the Uber Deployment Controller. It translates the intent into Kubernetes primitives and sends status updates. This helps the workflow move forward. Uber keeps a long-running controller, while LinkedIn runs one ephemeral pod per deployment with no shared controller state.</p>\n   <p>Airbnb went further back and built its own tooling years earlier. In a talk at<a href=\"https://www.infoq.com/presentations/airbnb-kubernetes-services/\"> QCon London 2019 on InfoQ</a>, infrastructure engineer Melanie Cebula introduced kube-gen. This internal framework creates Kubernetes configuration from one versioned project file. It also includes a deploy tool that applies or replaces objects and restarts pods, so changes take effect right away. Airbnb's deploy tool also returns an atomic success or failure, and a container that restarts for 30 seconds at the start of a rollout counts as a failed deploy. Airbnb was then at roughly 125,000 production deploys a year.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"LinkedIn Replaces Argo CD with a Custom GitOps Engine for Kubernetes Deployments\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794474000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "LinkedIn 开发了自研 GitOps 引擎来取代 Argo CD，每周在 250+ 个集群中成功管理超过 100，000 次部署，同时大幅降低故障率并加快错误检测。",
+  "oneSentenceSummary": "LinkedIn 开发了自研 GitOps 引擎来取代 Argo CD，每周在 250+ 个集群中成功管理超过 100，000 次部署，同时大幅降低故障率并加快错误检测。",
+  "summary": "文章详细介绍了 LinkedIn 如何从 Argo CD 转向专有的 Kubernetes 部署 GitOps 引擎。新系统为每次部署启动一个临时 Pod，解决了 watch 竞争和 managedFields 截断等可扩展性问题。该系统通过三方差异检测配置漂移，并使用 PUT 请求完整替换对象，最终使部署基础设施故障减少 93%，部署失败的中位检测时间缩短 96%。",
+  "mainPoints": [
+    {
+      "point": "Argo CD 的可扩展性与性能问题",
+      "explanation": "LinkedIn 使用 Argo CD 时发现了显著的可扩展性瓶颈，尤其是「N 的平方」问题：watch 的数量会随着应用数量增加而增长。这导致严重的延迟问题；随着集群规模扩大，同步时间从不到 3 分钟增加到超过 10 分钟。"
+    },
+    {
+      "point": "Argo CD 的架构局限",
+      "explanation": "文章指出 Argo CD 存在两个关键架构缺陷：缺少用于标识部署的唯一标识符（observedGeneration），以及使用 PATCH 请求。这些问题使系统难以跟踪特定部署的状态，并引发孤立容器和状态管理不一致等问题。"
+    },
+    {
+      "point": "新 GitOps 引擎的设计",
+      "explanation": "新引擎以库的形式构建，每次部署都在专用 Pod 中运行。它通过 PUT 请求实现原子更新，使用三方差异精准检测配置漂移，并采用限定在命名空间范围内的 informer 缓存来提升性能。这种设计消除了 Argo CD 中存在的共享状态问题。"
+    },
+    {
+      "point": "运营表现的改善",
+      "explanation": "迁移到新引擎后，运营指标显著改善。部署基础设施故障从 925 起降至 63 起，而检测并确认部署失败的中位时间从 16.1 分钟缩短至仅 2.45 分钟。"
+    }
+  ],
+  "keyQuotes": [
+    "新引擎以库的形式构建，每次部署都在专用 Pod 中运行。它通过 PUT 请求实现原子更新，使用三方差异精准检测配置漂移，并采用限定在命名空间范围内的 informer 缓存来提升性能。"
+  ],
+  "tags": [
+    "编程与工程",
+    "云原生 / DevOps",
+    "系统设计",
+    "Kubernetes",
+    "GitOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 830,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794474000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-12 17:00:00"
+}
