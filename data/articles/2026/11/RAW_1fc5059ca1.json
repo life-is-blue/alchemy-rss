@@ -1,0 +1,61 @@
+{
+  "id": "RAW_1fc5059ca1",
+  "title": "黄仁勋的英伟达 33 年。",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650456956&idx=1&sn=f133f966868bbd09e62b1ff9dc824ae1",
+  "date": "2026-11-13 16:45:00",
+  "author": "AINLP",
+  "siteName": "AINLP",
+  "content": null,
+  "aiSummary": "本文追溯了黄仁勋领导下英伟达从 2026 年 11 月发生的 CEO 辞任事件，回顾了公司从创业到 AI 时代巨头的 33 年历程，涵盖 GPU 革命、CUDA 生态、数据中心战略及最新监管风险。",
+  "oneSentenceSummary": "本文追溯了黄仁勋领导下英伟达从 2026 年 11 月发生的 CEO 辞任事件，回顾了公司从创业到 AI 时代巨头的 33 年历程，涵盖 GPU 革命、CUDA 生态、数据中心战略及最新监管风险。",
+  "summary": "本文以 2026 年 11 月黄仁勋因涉及个人不忠及与 Megaspeed 等云合作伙伴的合谋疑云被卷入美方调查而辞任为转折点，全面回顾了黄仁勋与英伟达的 33 年创业历程。1993 年黄仁勋、Malachowsky 和 Priem 在加州 Diner 咖啡厅碰头创立英伟达，最初以 3D 图形芯片 NV1 起步，但 24.9 万枚退货的挫折后，团队凭借仿真设备在一次流片中实现 RIVA 128 芯片成功，为后续 GPU 概念奠定基础。1999 年 NASDAQ 上市，随后 GeForce 256 正式命名为 GPU，开启了英伟达的消费级市场。2004 年，斯坦福毕业生 Ian Buck 加入，引领 CUDA 并行计算生态；2006 年 CUDA 正式发布，使 GPU 从图形加速扩展到科学计算，2007 年 Tesla 产品线正式面向 HPC。2011 年，英伟达布局智能手机 Tegra 芯片并收购 Icera 基带技术，但因市场竞争力不足于 2016 年退出。2012 年 AlexNet 在 ImageNet 竞赛中以 GPU 优势掀起深度学习浪潮，推动英伟达从游戏向 AI 计算转型。2016 年 DGX-1 服务器助力 OpenAI 成长，随后 V100 Tensor Core 推动 AI 训练升级。2020 年收购 Mellanox 后，英伟达掌握数据中心互联核心技术；2022 年 H100 量产配合 Transformer Engine，2023 年财报显示数据中心收入同比大幅增长。2024 年 Blackwell 平台 GB200 实现 CPU 与 GPU 深度融合，2025 年与 OpenAI 合作规划 10GW 算力部署。文章最后聚焦 2026 年 11 月的政治风险事件，揭示了 AI 算力行业的监管挑战。",
+  "mainPoints": [
+    {
+      "point": "GPU 革命奠基与早期挑战",
+      "explanation": "1993 年 NV1 因功能杂而退货，24.9 万枚退货的经历让团队反思定位。凭借仿真设备提前验证 RIVA 128，实现首次流片成功，为后续 GPU 概念奠定基础。"
+    },
+    {
+      "point": "CUDA 生态的颠覆性变革",
+      "explanation": "Ian Buck 等人引入 CUDA 将 GPU 从图形加速扩展到通用计算，2006 年发布后通过 C 语言接口降低使用门槛，推动科学计算与深度学习的普及。"
+    },
+    {
+      "point": "从游戏到 AI 计算的战略转型",
+      "explanation": "2012 年 AlexNet 以 GPU 优势赢得 ImageNet，标志着深度学习爆发。随后 Tesla V100、H100 等产品聚焦 AI 训练，数据中心收入从 2023 年的约 1032 亿美元占比近七成。"
+    },
+    {
+      "point": "数据中心与互联技术的垂直整合",
+      "explanation": "2020 年收购 Mellanox 后，英伟达掌握 InfiniBand 等高速互联技术，实现从芯片到系统的全链路控制，GB200 NVL72 将 36 颗 Grace CPU 与 72 颗 Blackwell GPU 通过 NVLink 互联。"
+    },
+    {
+      "point": "2026 年 CEO 辞任引发的监管风险",
+      "explanation": "黄仁勋因涉及与 Megaspeed 等云合作伙伴的合谋疑云被美方调查，最终辞去 CEO 职务，反映出 AI 算力行业面临的出口管制与国家安全监管挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "模型的能力并不是均匀增长的。正如陶哲轩所说，它们'在某些方向上令人惊叹，在另一些方向上却能力不足'。",
+    "我把这种野心分成四个维度：速度、高度、深度和广度。",
+    "想在高度上更有野心，就问问自己：接下来，你真正希望发生什么？目标背后的目标是什么？",
+    "在广度上更有野心，就是从不同领域的视角来看待自己的工作，而且涉及的领域，比过去在成本上划算的范围更广。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 硬件与芯片",
+    "黄仁勋",
+    "NVIDIA",
+    "英伟达"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 37,
+  "score": 89,
+  "wordCount": 9124,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6d214b",
+  "sourceName": "AINLP",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1794559500000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-13 16:45:00"
+}

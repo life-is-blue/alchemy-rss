@@ -1,0 +1,52 @@
+{
+  "id": "RAW_d07da9fed6",
+  "title": "DeepSeek 发布全家桶应用 API",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485910&idx=1&sn=529f50ba3b37e39319dad1faf7a122cf",
+  "date": "2026-11-13 22:19:00",
+  "author": "DeepSeek",
+  "siteName": "DeepSeek",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img src=\"https://media.bestblogs.dev/20261113214301_fa029d7.jpeg\" style=\"font-size: 1rem;\"></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size:15px;\">在 DeepSeek App（含网页端）的对话服务中，联网搜索、文件输入、阅读链接、语音交互及安全等能力与模型推理相互配合，构成了用户熟悉的对话体验。而开发者如果想要在应用中实现类似功能，除接入原有 DeepSeek API 外，往往还需耗费大量精力去对接外部工具、处理调用衔接。&nbsp;</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size:15px;\">今天，我们正式开放这套</span><span style=\"font-weight:bold;font-size:15px;\">全家桶应用 API</span><span style=\"font-size:15px;\">：在原有 API 中开启对应参数，即可获得深度思考搜索、文件输入等对话功能；语音及相关底层能力也已开放独立接口（含 OCR、ASR、TTS 等），支持单独或组合调用。开发者可以在自己的应用中轻松实现复杂的对话功能，甚至 1:1 复刻出完整的 DeepSeek App。</span></span></p>\n  <h4 style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><strong><span><span style=\"font-size: 18px;\">全面</span></span></strong><strong><span><span style=\"font-size: 18px;\">开放应用功能，支持独立调用</span></span></strong></h4>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-align: justify;margin-bottom: 16px;\"><span><span style=\"font-size:15px;\">本次更新将 DeepSeek App 的各项交互功能直接整合进原有 API。开启对应参数后，相关工具调用与上下文拼接均由服务端自动完成。目前，V4.1-Flash 模型（</span></span><span><span style=\"font-size:15px;\">deepseek-flash</span></span><span><span style=\"font-size:15px;\">）已在&nbsp;</span></span><span><span style=\"font-size:15px;\">Messages</span></span><span><span style=\"font-size:15px;\">、</span></span><span><span style=\"font-size:15px;\">Responses</span></span><span><span style=\"font-size:15px;\">&nbsp;与&nbsp;</span></span><span><span style=\"font-size:15px;\">Chat Completions&nbsp;</span></span><span><span style=\"font-size:15px;\">接口下支持以下能力：</span></span></p>\n  <ul style=\"list-style-type: disc;margin-left: 8px;margin-right: 8px;\" class=\"list-paddingleft-1\">\n   <li style=\"font-size:15px;\">\n    <p style=\"margin-bottom: 16px;text-align: justify;\"><span><span style=\"font-weight:bold;font-size:15px;\">联网搜索</span><span style=\"font-size:15px;\">：在非思考模式下，打开&nbsp;</span><span style=\"font-size:15px;\">deepseek_web_search</span><span style=\"font-size:15px;\">&nbsp;工具后，模型可根据提问自动发起网页或图片搜索并附引用作答；</span></span></p>\n   </li>\n   <li style=\"font-size:15px;\">\n    <p style=\"margin-bottom: 16px;text-align: justify;\"><span><span style=\"font-weight:bold;font-size:15px;\">深度思考搜索</span><span style=\"font-size:15px;\">：在思考模式下，打开&nbsp;</span><span style=\"font-size:15px;\">deepseek_web_search</span><span style=\"font-size:15px;\">&nbsp;工具后，模型可在多步推理中自主联网搜索与阅读链接；</span></span></p>\n   </li>\n   <li style=\"font-size:15px;\">\n    <p style=\"margin-bottom: 16px;\"><span><span style=\"font-weight:bold;font-size:15px;\">文件输入</span><span style=\"font-size:15px;\">：支持上传 PDF、Office、图片等格式的文件，完成纯文本提取或图文混排解析后，拼入对话上下文供模型作答；</span></span></p>\n   </li>\n   <li style=\"font-size:15px;\">\n    <p style=\"margin-bottom: 16px;text-align: left;\"><span><span style=\"font-weight:bold;font-size:15px;\">阅读链接</span><span style=\"font-size:15px;\">：将&nbsp;</span><span style=\"font-size:15px;\">deepseek_read_url</span><span style=\"font-size:15px;\">&nbsp;工具打开后，模型可自动识别用户消息中的链接，抓取网页内容并结合上下文作答；</span></span></p>\n   </li>\n   <li style=\"font-size:15px;\">\n    <p style=\"margin-bottom: 24px;\"><span><span style=\"font-weight:bold;font-size:15px;\">模型安全</span><span style=\"font-size:15px;\">：开启安全校验参数后，我们将提供基础风控，审核模型输入输出，命中风险时返回拒答标识。如您对外提供应用服务，请务必开启该参数，并承担内容安全审核、大模型登记、</span></span><span><span style=\"font-size:15px;\">AI&nbsp;</span></span><span><span style=\"font-size:15px;\">标识等义务。</span></span></p>\n   </li>\n  </ul>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size:15px;\">此外，为方便开发者更灵活地接入自有工作流，上述底层能力及语音能力</span></span><strong><span><span style=\"font-size:15px;\">均支持作为独立接口单独调用</span></span></strong><span><span style=\"font-size:15px;\">，包括：Search、Fetch、OCR、ASR、TTS。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size:15px;\">使用上述接口，开发者即可实现与 DeepSeek App 基本一致的功能。为直观演示这一效果，我们基于新版 API 构建并开源了一份轻量的前端 Demo，支持直接导入 DeepSeek 历史对话。</span></span></p>\n  <ul style=\"margin-left: 8px;margin-right: 8px;\" class=\"list-paddingleft-1\">\n   <li style=\"color:#4d6bfe;\">\n    <p style=\"margin-bottom: 16px;text-align: left;\"><span><span style=\"font-weight:bold;font-size:15px;\">Demo 体验入口：</span><span style=\"font-size: 15px;color: rgb(77, 107, 254);\"><a href=\"https://cdn.deepseek.com/chat-demo\" target=\"_blank\">https://cdn.deepseek.com/chat-demo</a></span></span></p>\n   </li>\n   <li style=\"color:#4d6bfe;\">\n    <p style=\"margin-bottom: 16px;text-align: left;\"><span><span style=\"font-weight:bold;font-size:15px;\">示例代码入口</span><span style=\"font-size: 15px;color: rgb(77, 107, 254);\">：<a href=\"https://github.com/deepseek-ai/chat-demo\" target=\"_blank\">https://github.com/deepseek-ai/chat-demo</a></span></span></p>\n   </li>\n  </ul>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size:15px;\">更详细的参数定义与调用说明，请参考 DeepSeek 官方 API 文档 [API 指南 - 构建 Chatbot]。</span></span></p>\n  <h4 style=\"text-align: left;margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><strong><span><span style=\"font-size: 18px;\">API 定价</span></span></strong><strong><span><span style=\"font-size: 18px;\">说明</span></span></strong></h4>\n  <h4 style=\"text-align: left;margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><strong><span><span style=\"font-weight:normal;font-size:15px;\">用户调用 DeepSeek API 使用扩展能力时，除收取 Token 费用外，也将收取相关工具的调用费用。各项工具价格如下表所示：</span></span></strong></h4>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;margin-bottom: 24px;\"><img class=\"rich_pages wxw-img\" src=\"https://media.bestblogs.dev/20261113214301_2e7a323.jpeg\"></p>\n  <h4 style=\"text-align: left;margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size: 18px;font-weight: bold;\">写在后面的话</span></span></h4>\n  <h4 style=\"text-align: justify;margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size:15px;\">我们相信，人与模型的交互依然充满无限可能，而 DeepSeek 现有的对话产品只是较为基础的一种形态。</span></span></h4>\n  <h4 style=\"text-align: justify;margin-left: 8px;margin-right: 8px;margin-bottom: 16px;\"><span><span style=\"font-size:15px;\">现在，官方产品背后的各项能力均已支持通过 DeepSeek API 随心调用、自由组合，我们期待开发者能够借此省去重复的基础工作，打造出更多样、更极致、更具想象力的产品。</span></span></h4>\n  <p style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 48px;\"><span><span style=\"font-size:15px;\">欢迎使用 DeepSeek API，尽情创造。</span></span></p>\n  <p style=\"font-variant-caps:normal;white-space:normal;font-weight:400;font-size:17px;min-height:1em;box-sizing:border-box !important;text-decoration-thickness:initial;overflow-wrap:break-word !important;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);outline:0px;word-spacing:0px;text-indent:0px;font-family:&quot;PingFang SC NEW&quot;, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;orphans:2;text-decoration-color:initial;text-align:justify;-webkit-text-stroke-width:0px;padding:0px;margin:0px 8px;letter-spacing:0.544px;clear:both;text-decoration-style:initial;font-style:normal;text-transform:none;max-width:100%;font-variant-ligatures:normal;widows:2;\"><img alt=\"图片\" class=\"rich_pages wxw-img\" style=\"caret-color:rgba(0, 0, 0, 0.9);font-variant-caps:normal;white-space:normal;font-weight:400;font-size:17px;box-sizing:border-box !important;overflow-wrap:break-word !important;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);outline:0px;word-spacing:0px;text-indent:0px;font-family:&quot;PingFang SC NEW&quot;, system-ui, -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;orphans:2;height:auto !important;text-align:center;-webkit-text-stroke-width:0px;padding:0px;margin:0px;visibility:visible !important;letter-spacing:0.544px;text-decoration:none;vertical-align:bottom;font-style:normal;text-transform:none;max-width:100%;width:660.969px !important;widows:2;\" type=\"block\" src=\"https://media.bestblogs.dev/20260930144253_8f44c60.webp\"></p>\n  <p style=\"display: none;\"></p>\n </body>\n</html>",
+  "aiSummary": "DeepSeek 开放全家桶应用 API，支持联网搜索、文件、语音等功能的独立调用，让开发者能轻松复刻完整的 DeepSeek App 体验。",
+  "oneSentenceSummary": "DeepSeek 开放全家桶应用 API，支持联网搜索、文件、语音等功能的独立调用，让开发者能轻松复刻完整的 DeepSeek App 体验。",
+  "summary": "DeepSeek 今日正式开放全家桶应用 API，将 DeepSeek App 中的联网搜索、文件输入、阅读链接、语音交互及安全等能力整合至原有 API 中。开发者只需开启对应参数，即可获得深度思考搜索、文件输入等对话功能；语音及底层能力（OCR、ASR、TTS 等）也开放独立接口，支持单独或组合调用。此举旨在减少开发者重复构建基础功能的工作量，让他们能够专注于打造更具想象力的产品。",
+  "mainPoints": [
+    {
+      "point": "全家桶应用 API 开放，支持独立调用",
+      "explanation": "开发者可通过开启对应参数获取联网搜索、文件输入、语音等功能，或单独调用底层接口（Search、Fetch、OCR、ASR、TTS），大幅降低复刻 DeepSeek App 所需工作量。"
+    },
+    {
+      "point": "模型安全校验功能上线",
+      "explanation": "开启安全校验参数后，服务端将进行输入输出风控，命中风险时返回拒答标识，开发者在对外提供服务时可确保内容安全合规。"
+    },
+    {
+      "point": "API 定价包含工具调用费用",
+      "explanation": "除 Token 费用外，使用扩展能力时还需支付相应工具调用费用，费用结构在文中表格中明确，帮助开发者提前规划成本。"
+    }
+  ],
+  "keyQuotes": [
+    "全面开放联网搜索、文件、语音等产品能力，支持独立调用",
+    "开发者可以在自己的应用中轻松实现复杂的对话功能，甚至 1:1 复刻出完整的 DeepSeek App",
+    "我们相信，人与模型的交互依然充满无限可能"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 编程",
+    "模型发布",
+    "开源项目",
+    "AI 产品与应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1087,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_14cc4c",
+  "sourceName": "DeepSeek",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1794579540000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-13 22:19:00"
+}

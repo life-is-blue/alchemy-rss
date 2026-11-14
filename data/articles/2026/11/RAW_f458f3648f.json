@@ -1,0 +1,62 @@
+{
+  "id": "RAW_f458f3648f",
+  "title": "AINews：黄仁勋辞任 NVIDIA CEO，Colette Kress 出任临时 CEO",
+  "url": "https://aihot.news/items/se0y4v3gihr6s0jmrc5vuv1zo",
+  "date": "2026-11-13 17:04:13",
+  "author": "noreply@aihot.news (Latent Space)",
+  "siteName": "AIHOT — 精选",
+  "content": null,
+  "aiSummary": "这篇 AI 新闻综述涵盖黄仁勋辞任 NVIDIA CEO、Gemini 4 Hydrogen 发布、开放权重模型更新、GPU 指纹分析，以及 AI 智能体和政策领域的最新进展。",
+  "oneSentenceSummary": "这篇 AI 新闻综述涵盖黄仁勋辞任 NVIDIA CEO、Gemini 4 Hydrogen 发布、开放权重模型更新、GPU 指纹分析，以及 AI 智能体和政策领域的最新进展。",
+  "summary": "文章报道了黄仁勋在担任 NVIDIA CEO 33 年后辞职，由 CFO Colette Kress 出任临时 CEO；此前，《纽约时报》曾报道与个人丑闻有关的消息。文章详细介绍了 Google DeepMind 发布 Gemini 4 Hydrogen——一款注重速度的模型，提供 4 种思考等级和 1M 上下文窗口——以及独立测试的结果，显示其表现不一，并对比了相关成本。文章还介绍了 Inkling 2 Small（594B MoE）、Edge0-145B 和 Perplexity Decider v1.3 等开放权重模型的发布。文章讨论了 GPU 指纹分析：相关分析显示，DeepSeek-V4-Pro 等中国模型可能是在 Blackwell 系统上训练的，由此引发了关于其对出口管制影响的讨论。文章还介绍了 Anthropic（Claude Managed Agents、Claude Meetings）和 OpenAI（Daybreak Defense Factory）在 AI 智能体领域的进展，以及 ParseBench-2 和 OWE-Bench 等新基准测试，以及蒸馏和推理系统方面的技术进展。",
+  "mainPoints": [
+    {
+      "point": "在《纽约时报》关于丑闻的报道之后，黄仁勋辞任 NVIDIA CEO，结束了长达 33 年的任期；CFO Colette Kress 出任临时 CEO。",
+      "explanation": "辞职于 2026 年 11 月 12 日公布，同时启动了独立董事会调查。这次领导层交接发生在个人丑闻相关报道之后，标志着 AI 硬件行业的一次重大变化。"
+    },
+    {
+      "point": "Google DeepMind 发布 Gemini 4 Hydrogen，这是一款针对速度优化的模型，提供 4 种思考等级和 1M 上下文窗口。",
+      "explanation": "Hydrogen 宣称任务完成速度比 Gemini 3.8 Flash 快 2.5x，定价为每百万输入/输出 token $1.50/$7.50。独立测试结果不一：其幻觉率较低，但在部分基准测试中的表现较弱。"
+    },
+    {
+      "point": "Inkling 2 Small 和 Edge0-145B 等开放权重模型相继发布，并公布了重要技术参数。",
+      "explanation": "Inkling 2 Small 是一款拥有 594B 参数、激活参数为 17B 的 MoE 模型，支持文本和图像输入。Edge0-145B 在 Terminal-Bench 2.1 上取得 86.5% 的成绩，而 Perplexity Decider v1.3 则为 NER 和信息提取任务增加了定位功能。"
+    },
+    {
+      "point": "GPU 指纹分析显示，中国模型可能是在 Blackwell 系统上训练的，引发了关于出口管制影响的讨论。",
+      "explanation": "研究人员 Will Depue 发现了初始化模式，将 DeepSeek-V4-Pro 等模型与特定 Blackwell GPU 配置联系起来。评论者对于这是否表明出口管制有效，还是其影响有限，意见不一；另有拟议中的美国商业规则，计划限制中国获取海外 AI 数据中心的服务。"
+    },
+    {
+      "point": "Anthropic 和 OpenAI 的 AI 智能体平台推出了新功能，包括自托管智能体和安全产品。",
+      "explanation": "Anthropic 的 Claude Managed Agents 支持通过运行框架和沙箱控制进行自托管部署，Claude Meetings 则可集成视频通话。OpenAI 宣布推出 Daybreak Defense Factory 和 Daybreak Red Team，用于网络安全场景。"
+    }
+  ],
+  "keyQuotes": [
+    "黄仁勋结束 33 年的 NVIDIA 领导生涯后辞职",
+    "Gemini 4 Hydrogen",
+    "Colette Kress 出任临时 CEO",
+    "Microsoft Foundry",
+    "Claude Meetings"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "开放权重模型",
+    "AI Agent",
+    "AI 安全与对齐",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 48,
+  "score": 88,
+  "wordCount": 11910,
+  "domain": "aihot.news",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_bad3d95f",
+  "sourceName": "AIHOT — 精选",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794560653000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-13 17:04:13"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_6bf399bf77",
+  "title": "Gemini 4 Hydrogen 发布",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652163357&idx=1&sn=a14f07c6ef009230435a7dd5f0d30148",
+  "date": "2026-11-13 14:00:00",
+  "author": "谷歌开发者",
+  "siteName": "谷歌开发者",
+  "content": null,
+  "aiSummary": "Google 推出 Gemini 4 Hydrogen 模型，专为智能体工作流提供高速执行能力，支持四种思考层级，显著提升代码编写、调试和多模态任务性能。",
+  "oneSentenceSummary": "Google 推出 Gemini 4 Hydrogen 模型，专为智能体工作流提供高速执行能力，支持四种思考层级，显著提升代码编写、调试和多模态任务性能。",
+  "summary": "Google 开发者总裁 Koray Kavukcuoglu 宣布推出 Gemini 4 Hydrogen，这是一款专为智能体工作流快速执行而设计的模型。Hydrogen 在默认高思考层级下在人工智能分析指数中超越 Argon，任务完成速度通常更快。它支持四种思考层级（low、medium、high、xhigh），在速度和智能之间提供灵活选择。Hydrogen 可作为独立模型处理日常工作，也能与 Carbon 和 Argon 完美搭档，在多模型工作流中充当高效执行引擎。它在迭代式代码库编码与调试、开放式智能体执行、多模态知识工作、Web 开发等方面表现突出，涵盖 100 万 token 的上下文窗口，统一计价模式。",
+  "mainPoints": [
+    {
+      "point": "Gemini 4 Hydrogen 专为智能体工作流快速执行而设计",
+      "explanation": "模型在默认高思考层级下在人工智能分析指数中超越 Argon，任务完成速度通常更快，支持四种思考层级（low、medium、high、xhigh），在速度和智能之间提供灵活选择。"
+    },
+    {
+      "point": "Hydrogen 可与前沿模型 Carbon 和 Argon 完美搭档",
+      "explanation": "通过在 Google Antigravity 中推出的 Orchestrator，支持在同一会话中根据需要在 Carbon 和 Hydrogen 等模型之间动态切换，实现多模型协作自动化，显著提升效率。"
+    },
+    {
+      "point": "在多模态知识工作方面表现卓越",
+      "explanation": "Hydrogen 结合原生 100 万 token 的理解能力与高达 100 万 token 的生成能力，能够将内容密集的 PDF 文档、电子表格、图表、音频及录制视频整合成专业报告，在 MKA 基准测试中取得 53.4% 成绩。"
+    },
+    {
+      "point": "在代码编写与调试方面性能突出",
+      "explanation": "在 SWE-sweep 基准测试中超越多款同级别模型，能够通过精准局部代码修改解决问题，擅长原生批量并行发起文件读取与搜索调用，运行速度提升 2-2.8 倍。"
+    },
+    {
+      "point": "安全性和对齐性得到显著提升",
+      "explanation": "Hydrogen 将智能体任务执行中产生的越界行为减少最高 81%，服务不足情况降低最高 79%，在工具调用与代码编写评估中偏离目标的操作减少 12 倍，诚实率达 96.7%。"
+    }
+  ],
+  "keyQuotes": [
+    "今天，我们正式推出 Gemini 4 Hydrogen，将前沿级智能带给每一个人 ------ 为日常代码编写与智能体工作流提供卓越的速度与效率。",
+    "在默认的高思考层级 (High thinking level) 下，Hydrogen 在 Artificial Analysis (人工智能分析) 指数中超越了 Argon (51 分比 50 分)，同时其完成任务的速度通常优于同级别的其他模型。",
+    "Hydrogen 既可以作为独立模型从容应对日常工作，也能与 Carbon 和 Argon 完美搭档，在多模型工作流中充当高效的执行引擎。",
+    "Hydrogen 将原生 100 万 token 的理解能力与高达 100 万 token 生成能力相结合，能够将内容密集的 PDF 文档、电子表格、图表、音频以及录制视频，整合成逻辑清晰、附带引用来源的专业报告与结构化交付成果。",
+    "Hydrogen 将我们最新的 Gemini 4 安全防护技术栈带给了更广泛的受众，通过将内置模型训练与实时界面防护相结合，有效降低模型行为偏差 (Misalignment) 与滥用风险。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "大语言模型 (LLM)",
+    "AI 编程",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 19,
+  "score": 88,
+  "wordCount": 4634,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_945dd6",
+  "sourceName": "谷歌开发者",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1794549600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-13 14:00:00"
+}
