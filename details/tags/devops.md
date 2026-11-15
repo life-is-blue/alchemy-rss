@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-15 05:49:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-15 09:27:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -5064,6 +5064,22 @@
 
 
 
+### [从-Ingress-NGINX-迁到-Envoy-Gateway，如何用加权-DNS-平滑切流](https://www.youtube.com/watch?v=9vb_-Z480jA)
+
+2026-11-11 07:45:08 | 标签: 编程与工程, 云原生 / DevOps, 测试与质量, 视频, Kubernetes
+
+> 这次迁移从选控制器、把 Ingress 注解映射到 Gateway API 资源开始，随后在本地、内部集群和全新集群演练。切换时两个端点都保留，只交换 DNS 权重。全新集群测试发现 ListenerSet 的接纳状态、ExternalDNS 建记录和证书签发之间可能互相等待。讲者用持续探测核对了本次切换结果，也说明了怎样撤回权重调整。
+
+
+
+### [与-Sean-Allen-对谈软件正确性与编程语言：用类型系统与前置设计构建可靠软件](https://www.youtube.com/watch?v=OrXKvOjR-vI)
+
+2026-11-10 22:23:48 | 标签: 编程与工程, 编程语言, 分布式系统, 云原生 / DevOps, 代码质量
+
+> 在与 Gergely Orosz 的对谈中，Antithesis 红队工程师兼 Pony 语言维护者 Sean Allen 深入探讨了如何在全栈层面实现软件正确性。结合他在 Ada、OCaml、F#、Pony、Wallaroo 以及微软研究院机密计算团队的实战经验，Allen 指出团队应当将保障前置到 ML 风格的类型系统、Actor 隔离以及前期设计对齐中，而不应把代码审查或 CI/CD 当作质量门禁。他进一步解析了单 Actor 独立垃圾回收如何以少量峰值吞吐量为代价换取平稳的尾延迟，为何像银行测试这样的有状态测试工作负载能比单纯随机检查更深入地暴露分布式缺陷，FFI 边界与推测执行侧信道...
+
+
+
 ### [超越流水线的-CI/CD：Robert-Erez-谈渐进式交付、GitOps-与前滚恢复](https://www.youtube.com/watch?v=2x0eq5oDOJY)
 
 2026-06-18 00:40:37
@@ -5073,6 +5089,14 @@
 ### [Matthias-Haeussler-/-Eva-Panadero-@-Spring-I/O-2025：Spring-Boot-与容器的新变化](https://www.youtube.com/watch?v=nesRmaUi4Ts)
 
 2025-09-19 12:24:55
+
+
+
+### [Duolingo-如何用智能体编写并合并-22.5-万行测试代码-|-Kush-Agrawal](https://www.youtube.com/watch?v=D_4Rn6uLdQM)
+
+2026-11-12 05:00:23 | 标签: 编程与工程, 自主编码, 云原生 / DevOps, 移动开发, 测试与质量
+
+> Kush Agrawal 回顾了 Duolingo 如何把本地 Claude Code 实验变成定期补齐 iOS 单测的工作流。系统根据覆盖率报告挑选 Swift 文件，由 Temporal 调度智能体，再通过独立流程修复合适的 CI 失败，并把通过检查的 PR 分给人工审核。确定性的文件限制和专项审查防止智能体为通过 CI 而降低测试质量。最终，这套流程合并了 700 多个经人工批准的 PR，新增约 22.5 万行测试代码。Agrawal 表示，MVVM 部分的测试覆盖率从 9% 升至 59%，整体从 11% 升至 24%。
 
 
 
