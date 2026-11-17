@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-17 07:07:21 | [返回首页](/README.md)
+**更新时间**: 2026-11-17 13:40:17 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17499)
+- [AI & 大模型](#ai-llm) (17524)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1035)
-- [DevOps](#devops) (848)
+- [DevOps](#devops) (853)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7215)
+- [其他](#other) (7218)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
 - [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
 
-- [查看全部 17499 篇...](/details/tags/ai-llm.md)
+- [查看全部 17524 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 848 篇...](/details/tags/devops.md)
+- [查看全部 853 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7215 篇...](/details/tags/other.md)
+- [查看全部 7218 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_1c2827c600",
+  "title": "Uber 的法律 AI 智能体借助规则与 RAG 将合同审查时间缩短 20%",
+  "url": "https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/",
+  "date": "2026-11-16 22:37:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber’s Legal Redlining Agent has reduced average contract review time by more than 20%, with 91% accuracy in AI-generated decisions, according to the company. Integrated into Microsoft Word, the agent analyzes proposed contract changes, assesses legal risks, and recommends policy-aligned responses using retrieval-augmented generation (RAG), historical lawyer feedback, and deterministic rules. Lawyers retain responsibility for reviewing and approving its recommendations.</p>\n   <p>The agent identifies edits proposed by external parties, interprets their intent, compares changes with legal policies, and suggests whether to accept, reject, or modify clauses. It also generates comments explaining recommendations and flags changes requiring closer scrutiny. Uber began developing the first generation in early 2024 and piloted it with its Legal team in 2025.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/news/2026/11/uber-legal-redlining-agent/en/resources/1Screenshot 2026-10-24 at 9.15.02 PM-1792903571214.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/uber-legal-redlining-agent/en/resources/1Screenshot 2026-10-24 at 9.15.02 PM-1792903571214.png\" rel=\"share\"></p>\n   <p><em>High-level workflow of the Legal Redlining Add-in / Agent</em> <em>(Source: <a href=\"https://www.uber.com/us/en/blog/building-ubers-redlining-agent/\">Uber Blog Post</a>)</em></p>\n   <p>An initial RAG implementation retrieved relevant sections from legal playbooks to guide language model responses. However, the system struggled with semantic retrieval accuracy, negotiation tone, and scenarios not covered by existing examples. Uber subsequently added a feedback loop that captures lawyers’ decisions, reasoning, and final edited text.</p>\n   <p>This change allowed the agent to retrieve examples of how similar clauses had been handled rather than relying only on whether a previous recommendation was accepted or rejected. At runtime, similarity search and metadata filtering narrow thousands of historical interactions to approximately 20 candidates. A second language model-based filtering stage evaluates their relevance. Exponential decay weighting, with a configurable half-life currently set to 365 days, prioritizes recent decisions while retaining older examples. The implementation also gives domain experts control over language and negotiation style.</p>\n   <p>Uber Engineering framed the challenge in its<a href=\"https://www.linkedin.com/posts/how-can-ai-help-streamline-repetitive-contract-share-7513997846849732610-vbbo/\"> LinkedIn post</a>:</p>\n   <blockquote>\n    <p>How can AI help streamline repetitive contract review while keeping lawyers in control?</p>\n   </blockquote>\n   <p>The legal team defines the desired tone and style, while engineers maintain the prompt structure and application workflow. The architecture combines a React and TypeScript Word add-in with a Python backend orchestrated through<a href=\"https://www.langchain.com/langgraph\"> LangGraph</a>. Parallel workflow nodes handle intent detection, risk assessment, and policy lookup.<a href=\"https://opensearch.org/\"> OpenSearch</a> stores vectorized legal rules and historical feedback, while Redis maintains session state for follow-up questions.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/news/2026/11/uber-legal-redlining-agent/en/resources/1uber-legal-arch-1792903571214.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/uber-legal-redlining-agent/en/resources/1uber-legal-arch-1792903571214.jpeg\" rel=\"share\"></p>\n   <p><em>Legal Redlining Agent system architecture (Source: <a href=\"https://www.uber.com/us/en/blog/building-ubers-redlining-agent/\">Uber Blog Post</a>)</em></p>\n   <p>A deterministic rules engine enforces non-negotiable legal requirements and overrides model recommendations when a matching rule applies. Language models handle tasks requiring contextual interpretation, including clause recommendations and negotiation tone. A final verification step checks generated responses against retrieved rules.</p>\n   <p>Uber is also exploring agentic harnesses, including Claude Code and OpenCode, alongside skills to structure and automate workflows across its agentic AI efforts. The team plans to investigate legal ontologies and knowledge graphs to represent legal concepts and relationships, providing a semantic foundation for more consistent interpretation and reasoning.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Uber’s Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/uber-legal-redlining-agent/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794839820000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 的法律红线审查智能体结合 RAG、反馈循环和确定性规则，在让律师掌控审查流程的同时，将合同审查时间缩短 20%，准确率达到 91%。",
+  "oneSentenceSummary": "Uber 的法律红线审查智能体结合 RAG、反馈循环和确定性规则，在让律师掌控审查流程的同时，将合同审查时间缩短 20%，准确率达到 91%。",
+  "summary": "Uber 的法律红线审查智能体集成于 Microsoft Word，可将合同审查的平均时间缩短 20% 以上，AI 生成决策的准确率达到 91%。该系统结合检索增强生成（RAG）、律师的历史反馈和确定性规则，分析拟议的合同修改、评估法律风险，并推荐符合政策要求的回应。最初的 RAG 实现难以准确进行语义检索，也难以把握谈判语气，且存在覆盖不足的问题，因此 Uber 加入了反馈循环，记录律师的决策、推理过程和编辑后的文本。这样一来，智能体便能检索相关的历史案例，而不只是依赖接受或拒绝数据。其架构由 React/TypeScript Word 加载项和通过 LangGraph 编排的 Python 后端组成，并使用 OpenSearch 存储向量化的法律规则、使用 Redis 管理会话状态。确定性规则引擎负责执行不可协商的要求，并在必要时覆盖模型建议；语言模型则处理需要结合上下文进行解读的任务。最后，系统还会根据检索到的规则对回应进行交叉核验。",
+  "mainPoints": [
+    {
+      "point": "反馈循环通过记录律师的实际决策和推理过程，而非仅依赖二元接受数据，提升 RAG 检索效果。",
+      "explanation": "系统会保存律师的决策、推理过程和最终编辑文本，据此检索相关历史案例进行相似度搜索；通过元数据筛选和第二阶段的 LLM 筛选，可将数千条交互记录缩小至约 20 个候选案例。"
+    },
+    {
+      "point": "采用半衰期为 365 天的指数衰减权重，在优先考虑近期决策的同时保留较早案例，以确保覆盖全面。",
+      "explanation": "这种时间加权方式使智能体能够适应不断变化的法律标准和谈判风格，同时保留历史先例；语言风格和谈判风格参数由领域专家控制。"
+    },
+    {
+      "point": "确定性规则引擎负责执行不可协商的法律要求，并在适用规则与模型建议冲突时覆盖模型建议。",
+      "explanation": "这种混合方案结合了语言模型在条款建议和谈判语气方面的上下文解读能力，以及基于规则的机制在执行关键法律约束方面的可靠性；系统还会在最后根据检索到的规则核验回应。"
+    },
+    {
+      "point": "该架构采用 React/TypeScript Word 加载项和由 LangGraph 编排的 Python 后端，通过并行工作流节点处理意图识别、风险评估和政策查询。",
+      "explanation": "OpenSearch 用于存储向量化的法律规则和历史反馈，Redis 用于维护会话状态以支持后续提问。该系统具备可扩展性，同时由律师负责审查和批准建议。"
+    }
+  ],
+  "keyQuotes": [
+    "Uber 的法律红线审查智能体已将合同审查的平均时间缩短 20% 以上，AI 生成决策的准确率达到 91%。",
+    "律师仍负责审查并批准该智能体提出的建议。",
+    "该系统在语义检索准确性、谈判语气以及现有案例未涵盖的场景方面表现不佳。",
+    "确定性规则引擎负责执行不可协商的法律要求，并在适用规则时覆盖模型建议。",
+    "语言模型负责处理需要结合上下文进行解读的任务，包括条款建议和谈判语气。"
+  ],
+  "tags": [
+    "编程与工程",
+    "RAG / 检索增强",
+    "AI Agent",
+    "科技评论",
+    "Microsoft"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 440,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794839820000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-16 22:37:00"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "RAW_6372ed69fa",
+  "title": "Airbnb 推出 CASTLE，利用合成数据训练自然语言搜索模型",
+  "url": "https://www.infoq.com/news/2026/11/airbnb-castle/",
+  "date": "2026-11-16 20:25:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Airbnb researchers have <a href=\"https://medium.com/airbnb-engineering/castle-training-natural-language-search-before-the-first-real-query-3818ef8b4828\">introduced</a> CASTLE, a framework designed to address the cold-start problem in natural language search. The approach uses de-identified booking sessions and large language models (LLMs) to jointly generate synthetic search queries and relevance labels, enabling model training before sufficient real search traffic is available.</p>\n   <p>Natural language search allows guests to describe their preferences in everyday language, such as \"romantic cabin near skiing\" or \"pet-friendly beach house that sleeps eight\", rather than relying exclusively on predefined filters. Training such systems presents two challenges: generating queries that reflect actual user behavior and determining which property listings are relevant to each query.</p>\n   <p>Previous approaches, including InPars and Promptagator, address query generation and relevance labeling as separate tasks. They use LLMs to generate queries from documents or examples, followed by additional model-based judgments to assign relevance labels. According to the researchers, this separation can introduce additional sources of error and differences between synthetic and real-user query distributions.</p>\n   <p>CASTLE uses contrastive listing pairs derived from de-identified booking sessions. When a guest books a property after viewing several alternatives, the selected listing becomes a positive example, while another viewed but unbooked property serves as a negative example. An LLM is then prompted to generate a query that matches the positive listing but not the negative one. This allows relevance labels to be established through the construction process rather than through a separate evaluation step.</p>\n   <p>The framework combines three query-generation strategies: template-based prompts, few-shot prompts using approximately 500 seed queries collected through targeted user research, and attribute-grounded prompts focusing on distinguishing listing characteristics. A variety mechanism also encourages variation in query length and phrasing.</p>\n   <p>For listing pairs without sufficient booking history, including newly listed properties, CASTLE uses a Virtual Judge, an LLM-based evaluator that assigns relevance labels to additional query-listing pairs. The researchers also developed CASTLE-R, a variant intended for production environments where real search traffic has started to accumulate.</p>\n   <p>In the evaluation, CASTLE achieved a Kullback–Leibler (KL) divergence of 1.01 against real-user query distributions, compared with 9.33 for the best baseline, Promptagator. This represents a 9.2-fold reduction in divergence. At the attribute-type level, CASTLE achieved a KL divergence of 0.08, compared with 0.09 for manually curated survey seed queries.\n    <br>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/airbnb-castle/news/2026/11/airbnb-castle/en/resources/1Zrzut ekranu 2026-11-15 o 12.11.05-1794742678056.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/airbnb-castle/en/resources/1Zrzut ekranu 2026-11-15 o 12.11.05-1794742678056.png\" rel=\"share\"><em>Source: Medium Blog</em></p>\n   <p>The researchers also conducted a human evaluation in which three independent subject matter experts reviewed 200 sampled triplets. Agreement with CASTLE's relevance assignments ranged from 91% to 93% across the three evaluators.</p>\n   <p>The evaluation methodology also prompted <a href=\"https://medium.com/airbnb-engineering/castle-training-natural-language-search-before-the-first-real-query-3818ef8b4828\">discussion</a> on LinkedIn. Mark Tsai, an AI Engineer specializing in LLM fine-tuning and evaluation, raised a question about potential overlap between training and evaluation data:</p>\n   <blockquote>\n    <p>Do the training and evaluation splits keep seed templates and listing IDs disjoint? For synthetic triplets, I’d compare a random split with that stricter split, then evaluate on untouched real queries. It would help separate learning reusable intent–attribute matches from recognizing familiar templates or properties.</p>\n   </blockquote>\n   <p>Wendy Ran Wei, the article's author, responded that the team evaluated the model on untouched real queries and implemented leakage guardrails when constructing evaluation sets. She also clarified that the paper does not report a controlled comparison between random splits and stricter splits with disjoint seed templates and listing IDs, identifying this as a possible direction for further investigation.</p>\n   <p>The full paper is available on <a href=\"https://arxiv.org/abs/2605.21812\">arXiv</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/airbnb-castle/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794831900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Airbnb 研究人员推出 CASTLE 框架，利用去标识化的预订会话和 LLM 生成合成搜索查询及相关性标签，让自然语言搜索模型在真实流量可用前就能开始训练。",
+  "oneSentenceSummary": "Airbnb 研究人员推出 CASTLE 框架，利用去标识化的预订会话和 LLM 生成合成搜索查询及相关性标签，让自然语言搜索模型在真实流量可用前就能开始训练。",
+  "summary": "CASTLE 利用 LLM 和去标识化的预订会话生成合成查询与相关性标签，解决自然语言搜索中的冷启动问题。它构建对比式房源对：已预订房源作为正例，浏览过但未预订的房源作为负例，并提示 LLM 生成与正例匹配、但不匹配负例的查询。该框架结合基于模板、少样本和基于属性的提示词，并加入变化机制。对于历史数据不足的房源，虚拟评审 LLM 会为其分配相关性标签。CASTLE 与真实用户查询分布的 KL 散度为 1.01，较 Promptagator 的 9.33 好 9.2 倍；人工评估者对其相关性标注的认同率为 91-93%。",
+  "mainPoints": [
+    {
+      "point": "CASTLE 从预订会话数据中生成合成查询和相关性标签，以解决自然语言搜索中的冷启动问题。",
+      "explanation": "CASTLE 使用去标识化的预订会话，将已预订房源作为正例、浏览过但未预订的房源作为负例，构建对比式样本对，使 LLM 能生成与正例匹配但不匹配负例的查询，并通过样本构造而非单独评估来建立相关性标签。"
+    },
+    {
+      "point": "该框架结合三种查询生成策略，提升生成查询与真实用户查询分布的匹配度。",
+      "explanation": "框架结合基于模板的提示词、使用用户研究收集的 ~500 条种子查询的少样本提示词，以及聚焦于区分房源特征的基于属性的提示词，并通过变化机制提升查询长度和措辞的多样性。"
+    },
+    {
+      "point": "CASTLE 的 KL 散度显著优于以往方法，展现出更强的分布匹配能力。",
+      "explanation": "CASTLE 与真实用户查询分布的 KL 散度为 1.01，相较于 Promptagator 的 9.33 降低了 9.2 倍；在属性类型层面的 KL 散度为 0.08，而人工整理的问卷种子查询为 0.09。"
+    },
+    {
+      "point": "虚拟评审 LLM 为缺少足够预订历史的房源标注相关性。",
+      "explanation": "对于缺少预订历史的新房源，CASTLE 使用基于 LLM 的评估器为更多查询与房源配对分配相关性标签，确保整个房源目录都能得到覆盖。"
+    },
+    {
+      "point": "人工评估验证了 CASTLE 相关性标注的质量。",
+      "explanation": "3 位领域专家审查了抽样得到的 200 组三元组，不同评估者的认同率为 91% 至 93%，证实了合成数据的质量。"
+    }
+  ],
+  "keyQuotes": [
+    "CASTLE 是一个旨在解决自然语言搜索冷启动问题的框架",
+    "该框架结合三种查询生成策略：基于模板的提示词、使用通过定向用户研究收集的约 500 条种子查询的少样本提示词，以及聚焦于区分房源特征的基于属性的提示词",
+    "CASTLE 与真实用户查询分布的 Kullback--Leibler（KL）散度为 1.01，而最佳基线 Promptagator 为 9.33。这意味着散度降低了 9.2 倍",
+    "3 位评估者对 CASTLE 相关性标注的认同率为 91% 至 93%"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "合成数据",
+    "模型训练与推理",
+    "数据工程",
+    "后端开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 542,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794831900000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-16 20:25:00"
+}

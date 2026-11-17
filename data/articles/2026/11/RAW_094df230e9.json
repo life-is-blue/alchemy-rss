@@ -1,0 +1,62 @@
+{
+  "id": "RAW_094df230e9",
+  "title": "在 PyPI 上发布 wavewash（v0.2.0）——面向生产环境的音频 QC 引擎，提供本地 Web UI 和 PyTorch API",
+  "url": "https://dev.to/boobalan_arjunan/announcing-wavewash-v020-on-pypi-production-audio-qc-engine-with-local-web-ui-pytorch-api-414k",
+  "date": "2026-11-16 18:04:36",
+  "author": "Boobalan Arjunan",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>🚀 Excited to announce the official release of wavewash (v0.2.0) on PyPI!</p>\n  <p>If you train Speech or Audio AI models (Whisper, StyleTTS, AudioCraft, MusicLM), your models inherit the acoustic flaws of their training data:</p>\n  <p>👉 Clipped waveforms, DC offset, dead channels, and inconsistent loudness.</p>\n  <p>Saturated audio creates harsh distortion in neural vocoders. DC displacement burns dynamic headroom. Disjointed LUFS levels destabilize loss convergence, while silent channels corrupt stereo spatialization. Hand-cleaning thousands of hours of audio is impossible, and generic black-box cleaners introduce hallucinated artifacts.</p>\n  <p>WaveWash solves this: an open-source Python library, CLI, and embedded Web UI engineered for deterministic audio quality control, verification, and DSP repair.</p>\n  <h3><a name=\"what-does-wavewash-do\" href=\"#what-does-wavewash-do\"> </a> 🔍 What Does WaveWash Do?</h3>\n  <ol>\n   <li>🩹 Verified DSP De-Clipping: Mathematically reconstructs clipped peaks via cubic splines, cutting distortion by 71.8% while guarding against irrecoverable saturation.</li>\n   <li>🎚️ DC Offset &amp; Channel Repair: Eliminates DC bias, fixes dead stereo channels, and normalizes integrated loudness to broadcast-standard ITU-R BS.1770 LUFS.</li>\n   <li>🎯 Purpose-Driven Profiles: Pre-tuned with strict acoustic thresholds for <code>asr</code>, <code>tts</code>, <code>speaker_id</code>, and <code>music_gen</code> (or customize your own).</li>\n   <li>🐍 Python In-Memory API: Embeds directly into PyTorch <code>Dataset</code> loaders and streaming pipelines (<code>analyze_file</code>, <code>apply_fix_pipeline</code>) for zero-disk-overhead training.</li>\n   <li>🖥️ Embedded Web Dashboard: Run <code>wavewash app</code> to launch a pre-compiled local web UI with interactive audio auditing and before/after players.</li>\n   <li>🛡️ Non-Destructive: Never overwrites original audio. Clean files pass to <code>clean/</code>; rejected files route to categorized reason folders (<code>low_snr/</code>, <code>clipping_heavy/</code>).</li>\n  </ol>\n  <h3><a name=\"realdata-benchmarks\" href=\"#realdata-benchmarks\"> </a> 📊 Real-Data Benchmarks</h3>\n  <p>Validated across extensive speech and studio multi-track benchmarks:</p>\n  <p>✅ Clipping Repair Rigor: 71.8% MSE distortion reduction on real clipped speech (LibriSpeech).\n   <br>\n   ✅ Zero False Rejections: 100% clean pass on true studio stems from MUSDB18-HQ.\n   <br>\n   ✅ Noise Floor Defense: High-accuracy SNR estimation and dual-tier clipping guardrails.\n   <br>\n   ✅ Multi-Core Speed: Processes multi-gigabyte audio corpora with multi-threaded parallel workers.</p>\n  <h3><a name=\"quick-start-amp-links\" href=\"#quick-start-amp-links\"> </a> 📦 Quick Start &amp; Links</h3>\n  <p>Install directly from PyPI:\n   <br>\n   pip install wavewash</p>\n  <p>Launch the local interactive Web UI:\n   <br>\n   wavewash app --port 8420</p>\n  <p>Batch clean a dataset via CLI:\n   <br>\n   wavewash run --input ./raw_speech --output ./clean_speech --purpose asr</p>\n  <p>🔗 PyPI: <a href=\"https://pypi.org/project/wavewash/\" target=\"_blank\" rel=\"noopener noreferrer\">https://pypi.org/project/wavewash/</a>\n   <br>\n   💻 GitHub: <a href=\"https://github.com/BoobalanArjunan/wavewash\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/BoobalanArjunan/wavewash</a>\n   <br>\n   🚀 1-Click Colab: <a href=\"https://colab.research.google.com/github/BoobalanArjunan/wavewash/blob/main/notebooks/quickstart.ipynb\" target=\"_blank\" rel=\"noopener noreferrer\">https://colab.research.google.com/github/BoobalanArjunan/wavewash/blob/main/notebooks/quickstart.ipynb</a></p>\n  <p>If you train audio models or prepare speech datasets, give it a spin! ⭐</p>\n  <h1><a name=\"audioml-machinelearning-deeplearning-speechai-audioai-tts-asr-python-opensource-dataquality-audioengineering-ai\" href=\"#audioml-machinelearning-deeplearning-speechai-audioai-tts-asr-python-opensource-dataquality-audioengineering-ai\"> </a> AudioML #MachineLearning #DeepLearning #SpeechAI #AudioAI #TTS #ASR #Python #OpenSource #DataQuality #AudioEngineering #AI</h1>\n </body>\n</html>",
+  "aiSummary": "WaveWash v0.2.0 是一款开源 Python 库和 CLI 工具，用于确定性音频质量控制，提供 DSP 去削波、直流偏移校正、声道修复和响度标准化功能，适用于语音和音频 AI 训练数据。",
+  "oneSentenceSummary": "WaveWash v0.2.0 是一款开源 Python 库和 CLI 工具，用于确定性音频质量控制，提供 DSP 去削波、直流偏移校正、声道修复和响度标准化功能，适用于语音和音频 AI 训练数据。",
+  "summary": "WaveWash v0.2.0 是一款开源 Python 库、CLI 工具和内嵌式 Web UI，专为确定性音频质量控制与 DSP 修复而设计。它可处理语音和音频 AI 模型训练数据中的常见声学缺陷，包括波形削波、直流偏移、声道失效和响度不一致。该工具提供经验证的三次样条 DSP 去削波、直流偏移与声道修复、符合 ITU-R BS.1770 LUFS 标准的响度标准化，以及面向 ASR、TTS、说话人识别和音乐生成的专用配置。它通过内存 API 无缝集成到 PyTorch 流水线中，并提供本地 Web 仪表板，方便交互式审核。基准测试显示，它可将削波语音的 MSE 失真降低 71.8%，且对干净的录音室分轨实现零误拒。",
+  "mainPoints": [
+    {
+      "point": "面向 AI 训练数据的确定性音频质量控制",
+      "explanation": "WaveWash 可处理训练数据带给语音和音频 AI 模型的声学缺陷，例如波形削波、直流偏移、声道失效和响度不一致。这些缺陷可能造成失真、消耗动态余量，并使损失收敛不稳定。"
+    },
+    {
+      "point": "采用三次样条的经验证 DSP 去削波",
+      "explanation": "该工具使用三次样条通过数学方法重建削波峰值。在真实削波语音（LibriSpeech）上，MSE 失真降低了 71.8%，同时能够避免处理无法恢复的饱和音频。"
+    },
+    {
+      "point": "直流偏移与声道修复，并进行响度标准化",
+      "explanation": "该工具可消除直流偏置、修复失效的立体声声道，并按照广播标准 ITU-R BS.1770 LUFS 标准化综合响度，确保不同数据集中的音频质量一致。"
+    },
+    {
+      "point": "专用配置与 PyTorch 集成",
+      "explanation": "针对 ASR、TTS、说话人识别和音乐生成预先调校的配置支持自定义处理；Python 内存 API 则可无磁盘开销地集成到 PyTorch Dataset 加载器和流式处理流水线中。"
+    },
+    {
+      "point": "非破坏性处理与分类输出",
+      "explanation": "该工具不会覆盖原始音频；干净文件会输出到 clean/ 目录，被拒绝的文件则会根据原因归入相应文件夹（low_snr/、clipping_heavy/），从而保护数据完整性。"
+    }
+  ],
+  "keyQuotes": [
+    "「如果你训练语音或音频 AI 模型（Whisper、StyleTTS、AudioCraft、MusicLM），模型就会继承训练数据中的声学缺陷。」",
+    "「饱和音频会在神经声码器中造成刺耳失真。直流偏移会消耗动态余量。LUFS 电平不一致会使损失收敛不稳定。」",
+    "「WaveWash 正是为此而生：一款开源 Python 库、CLI 和内嵌式 Web UI，专为确定性音频质量控制、验证与 DSP 修复而打造。」",
+    "「在真实削波语音（LibriSpeech）上，MSE 失真降低了 71.8%。」",
+    "「零误拒：MUSDB18-HQ 中真正的录音室分轨全部通过，洁净通过率达 100%。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "机器学习",
+    "开源项目",
+    "AI 语音",
+    "UI 设计"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 361,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794823476000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-16 18:04:36"
+}
