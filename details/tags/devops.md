@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-17 13:40:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-17 23:07:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -680,41 +680,31 @@
 
 ### [关键任务型公用事业的受治理自主智能](https://www.infoq.com/articles/utility-governed-autonomous-intelligence-ai/)
 
-2026-11-16 19:00:00 | 标签: 编程与工程, 云原生 / DevOps, 系统设计, 安全, 可观测性
-
-> 本文介绍了一种面向公用事业运营的 AI 控制平面架构，将推理与执行分离。智能体负责关联信号、评估业务影响并提出补救方案，但所有生产环境操作都必须通过确定性策略门和受治理的工具网关。参考实现采用 AWS Bedrock AgentCore、基于 Cedar 的策略、MCP 工具接口，以及分层多智能体结构。关键组件包括编排器、特定领域的智能体（应用可靠性、平台智能、业务影响、补救）以及包含运行手册和标准操作规程（SOP）的知识库。该模式确保自主能力逐步获得，每项操作都会生成支持监管合规的证据。该架构可移植到不同云平台，并强调知识卫生、标准化事件架构和人工审批工作流。
+2026-11-16 19:00:00
 
 
 
 ### [满足-CRA-合规要求能强化代码，并让公司更接近数字主权](https://www.infoq.com/podcasts/company-closer-digital-sovereignty/)
 
-2026-11-16 19:00:00 | 标签: 编程与工程, 安全, 云原生 / DevOps, 测试与质量, 开发者工具
-
-> 本期节目邀请了 OpenSSF 和 Akrites 的 CTO Christopher Robinson，探讨软件供应链安全面临的挑战与解决方案。他介绍了 OpenSSF 的安全基线如何将欧盟《网络韧性法案》等复杂法规转化为 41 项实用且可验证的控制措施，并划分为三个成熟度等级。节目还讨论了 SLSA 在保障开发基础设施安全方面的作用、如何通过 OpenSSF 的 Cyber Reasoning System 为 AI 工具集成安全防护措施，以及全球网络安全监管格局。Robinson 强调，开源软件和本地优先的数据模式对于实现数字主权至关重要，能够帮助组织掌握数据控制权、避免供应商锁定，并应...
+2026-11-16 19:00:00
 
 
 
 ### [AWS-开源供编程智能体本地测试-200+-项服务的模拟器](https://www.infoq.com/news/2026/11/aws-emulator-agents/)
 
-2026-11-16 18:40:00 | 标签: 编程与工程, 云原生 / DevOps, 测试与质量, 开发者工具, 性能优化
-
-> AWS 发布了 AWS Emulator，这是一款以 Rust 编写的本地程序，可为 200 多项 AWS 服务提供 HTTPS 端点。开发者和 AI 编程智能体可以借此创建资源，并遇到与 AWS 实际返回相同的错误，无需配置云资源，也无需支付服务费用。用户可以通过 AWS_ENDPOINT_URL 等环境变量，将 AWS CLI 或 SDK 指向模拟器。该模拟器可作为 RPM 或 Debian 软件包安装在 Linux 上；在 macOS 和 Windows 上使用 Docker；也支持在 Rust 测试中以嵌入式模式运行。AWS 表示，智能体通过三个团队编写并测试代码：一个团队根据公开 A...
+2026-11-16 18:40:00
 
 
 
 ### [AWS-Nitro-沙箱通过一个-RuntimeClass-字段，让每个-EKS-Pod-都运行在独立微型虚拟机中](https://www.infoq.com/news/2026/11/aws-nitro-sandboxes-eks/)
 
-2026-11-16 17:07:00 | 标签: 编程与工程, 云原生 / DevOps, 安全, 系统设计, 性能优化
-
-> AWS Nitro 沙箱通过让每个 Pod 运行在配备独立 Guest Kernel 的轻量级 Firecracker 微型虚拟机中，为 Amazon EKS 上的 Kubernetes Pod 提供硬件强制隔离。只需将 runtimeClassName 设置为 isolated-sandbox 或 confidential-sandbox 即可启用该功能。isolated 模式信任父级实例，并允许 kubectl exec 和查看日志等常规操作；confidential 模式则将父级视为不可信，通过 Cedar 策略锁定镜像摘要、参数和环境变量，禁止 exec 和 stdin，并要求通过 K...
+2026-11-16 17:07:00
 
 
 
 ### [Alpine-Linux-用户应尽快修复-OpenSSH-身份验证漏洞](https://www.infoq.com/news/2026/11/alpine-linux-openssh-sshhole/)
 
-2026-11-16 17:00:00 | 标签: 编程与工程, 安全, Linux, OpenSSH, Alpine Linux
-
-> OpenSSH 中一个名为 *sshhole*、编号为 CVE-2026-123158 的严重漏洞，使攻击者无需身份验证即可访问本不应设置有效密码的账户。该漏洞源于 OpenSSH 与 musl C 库的交互方式：当密码超过 256 字节时，musl 会返回星号（*）作为错误值，而 OpenSSH 错误地将其视为有效的密码哈希匹配。受影响的系统必须同时满足以下条件：运行基于 musl 构建的 OpenSSH 10.6p2 之前版本、未使用 PAM，并且包含使用 SHA-256/SHA-512 哈希的账户或密码被星号锁定的账户。Alpine Linux 是受影响最显著的发行版，但 OpenWrt...
+2026-11-16 17:00:00
 
 
 
