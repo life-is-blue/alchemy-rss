@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-18 07:15:57 | [返回首页](/README.md)
+**更新时间**: 2026-11-18 13:03:32 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17524)
+- [AI & 大模型](#ai-llm) (17559)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1035)
-- [DevOps](#devops) (853)
+- [前端与全栈](#frontend-fullstack) (1037)
+- [DevOps](#devops) (855)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7218)
+- [其他](#other) (7220)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
 - [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
 
-- [查看全部 17524 篇...](/details/tags/ai-llm.md)
+- [查看全部 17559 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -81,6 +81,7 @@
 
 
 - [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025) - AI 精选
+- [全球最大品牌通过-Optimizely-遭恶意软件感染](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/) - 编程 精选
 - [在-GitHub-Copilot-应用中渲染巨大的拉取请求](https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/) - 编程 精选
 - [使用单个-Parquet-文件实现快速下钻仪表盘](https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/) - 编程 精选
 - [宣布-TypeScript-7.0-——-TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) - 编程 精选
@@ -99,9 +100,8 @@
 - [JavaScript-事件驱动架构开发者手册](https://www.freecodecamp.org/news/event-based-architectures-in-javascript-a-handbook-for-devs/) - 编程 精选
 - [【第-3606-期】vivo-前端三剑客发展历程及原理揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277798&idx=1&sn=f595cc4365c163ce75cfc2c7572f2989) - 编程 精选
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
-- [React-初学者手册-–-JSX，钩子-和渲染详解](https://www.freecodecamp.org/news/react-handbook-for-beginners-learn-jsx-hooks-rendering/) - 编程 精选
 
-- [查看全部 1035 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1037 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 853 篇...](/details/tags/devops.md)
+- [查看全部 855 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7218 篇...](/details/tags/other.md)
+- [查看全部 7220 篇...](/details/tags/other.md)
 
 

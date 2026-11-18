@@ -1,0 +1,57 @@
+{
+  "id": "RAW_ca41dd1210",
+  "title": "Shopify 如何在不耗尽开发者设备资源的情况下协调 AI 驱动的移动应用开发",
+  "url": "https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/",
+  "date": "2026-11-18 05:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>To prevent AI development workflows from exhausting developer machines' resources, <a href=\"https://shopify.engineering/remote-dev\">Shopify built Remote Dev</a>, a remote mobile development environment that enables AI agents to independently build, test and maintain iOS and Android applications and in parallel.</p>\n   <p>In fact, according to Shopify engineers,&nbsp;running agentic workflows in parallel quickly hogs all resources available on development machines. They explain that \"three or four workflows were enough to max out a laptop\", on top of the resources already consumed by compilers, simulators, and emulators. Moreover, \"if someone accidentally closed a laptop lid, the work stopped\".</p>\n   <p>Shopify had previously built River to address the same challenge in web and backend development, but, being River a Linux-based solution, it could not be used for building iOS apps. To overcome this limitation, Shopify built Remote Dev:</p>\n   <blockquote>\n    <p>With Remote Dev, we're no longer limited by how many builds and simulators our laptops can handle. Each River session gets its own environment, so we can have one agent debugging something on Android, another working on an iOS feature, and another testing a PR, all in parallel.</p>\n   </blockquote>\n   <p>Remote Dev uses a fleet of remote Macs running Shopify's development environment and iOS simulators, accessible via SSH. Android emulators run on separate Linux VMs. This architecture allows developers to build and test both iOS and Android builds through the same SSH session.</p>\n   <p>Agents can work on multiple tasks in parallel, each with its own environment for maximum independence. They can also be accessed through a Slack channel backed by River. Thanks to this setup, Remote Dev can</p>\n   <blockquote>\n    <p>implement changes, build the app, run tests, interact with the simulators, collect screenshots, and create a PR. If something fails, it can inspect the logs, fix the issue, and try again, all while we focus on other tasks.</p>\n   </blockquote>\n   <p>The platform supports automated workflows, including overnight runs that identify bugs, implement fixes, and submit PRs. Agents can also verify that a build is functional by navigating through the app, interacting with its UI, reproducing bugs, recording current behavior, implementing fixes, and running the same interaction to verify the fix.</p>\n   <p>Shopify says that, after promoting internal adoption through demonstrations and storytelling, River's share of merged PRs increased from 6% to 61%.</p>\n   <p>Commenting on Shopify's article, LinkedIn user Raiyan Jugbhery, in charge of software infrastructure and founder at SpendMe, <a href=\"https://lnkd.in/p/e6ahTdKz\">argued that the key advantage of Remove Dev is its Xcode and iOS Simulator integration</a>, noting that \"a PR you still have to pull and verify on a Mac isn't really autonomous\". However, he pointed out that the article does not explain \"<a href=\"https://lnkd.in/p/eYx7TXM4\">how they keep builds from queuing</a> when several agents ask for a Mac at once\", which he identified as a key concern.</p>\n   <p>Junaid Raza, solutions architect at Hoboetech, raised another concern. <a href=\"https://lnkd.in/p/esPpNtbp\">Allowing agents to run the simulator could lead to unreliable test results</a>, as \"give [the agent] a red test and enough retries and it'll sometimes rewrite the test until it passes\". To prevent this, he suggests prohibiting runner agents from modifying the tests they execute.</p>\n   <p>Shopify says it plans to expand the platform with continuous application health monitoring, automated crash detection and fixes, and PR generation for identified issues, among other capabilities.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Shopify Orchestrates AI-Powered Mobile App Development Without Overloading Developers' Machines\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/shopify-remote-ai-dev/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794949200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Shopify 构建了 Remote Dev，这是一个远程移动开发环境，能够让 AI 智能体并行自主构建、测试和维护 iOS 与 Android 应用，解决开发者设备的资源限制问题。",
+  "oneSentenceSummary": "Shopify 构建了 Remote Dev，这是一个远程移动开发环境，能够让 AI 智能体并行自主构建、测试和维护 iOS 与 Android 应用，解决开发者设备的资源限制问题。",
+  "summary": "Shopify 开发了 Remote Dev，以防 AI 驱动的开发工作流耗尽本地设备资源。该系统使用一组远程 Mac 进行 iOS 开发，并使用 Linux 虚拟机运行 Android 模拟器，让智能体能够同时处理多项任务。每个智能体都有独立隔离的环境，用于构建、测试和调试。该平台支持自动化工作流，包括夜间运行：发现错误、实施修复并提交 PR。Shopify 表示，在内部采用后，River 提交的 PR 在合并 PR 中所占比例从 6% 上升至 61%。这一架构解决了三个或四个并行工作流就可能占满笔记本电脑资源的问题，并能让智能体自主实施更改、构建应用、运行测试、与模拟器交互、收集截图并创建 PR。",
+  "mainPoints": [
+    {
+      "point": "Remote Dev 利用远程基础设施，避免并行 AI 智能体工作流耗尽本地设备资源",
+      "explanation": "Shopify 的工程师发现，三个或四个并行智能体工作流就足以占满笔记本电脑资源，尤其是在还要运行编译器、模拟器和仿真器时。Remote Dev 通过为每个智能体提供专用的远程环境来解决这一问题。"
+    },
+    {
+      "point": "采用远程 Mac 运行 iOS、使用 Linux 虚拟机运行 Android 的混合架构，实现跨平台移动开发",
+      "explanation": "Shopify 在面向 Web 和后端开发的 Linux 版 River 方案基础上，构建了 Remote Dev：使用运行 iOS 模拟器的远程 Mac，并为 Android 仿真器配置独立的 Linux 虚拟机，通过 SSH 访问，实现统一开发。"
+    },
+    {
+      "point": "智能体能够自主实施更改、构建应用、运行测试、与模拟器交互并创建 PR",
+      "explanation": "该平台支持全自动工作流：智能体可以修改代码、构建应用、运行测试、通过操作模拟器浏览应用并复现错误、收集截图，以及生成 PR；如果失败，还会自动重试。"
+    },
+    {
+      "point": "内部采用后，River 的合并 PR 占比从 6% 上升至 61%",
+      "explanation": "通过演示和分享实际案例推动内部采用后，Shopify 取得了显著成效：River 处理的 PR 占合并 PR 的 61%，体现了 AI 辅助开发的实际价值。"
+    }
+  ],
+  "keyQuotes": [
+    "为避免 AI 开发工作流耗尽开发者设备的资源，Shopify 构建了 Remote Dev。这是一个远程移动开发环境，能够让 AI 智能体并行自主构建、测试和维护 iOS 与 Android 应用。",
+    "有了 Remote Dev，我们不再受笔记本电脑能够承载多少次构建和模拟器运行的限制。每个 River 会话都有自己的环境，因此我们可以让一个智能体调试 Android 上的问题，另一个开发 iOS 功能，还有一个测试 PR，所有工作都能并行进行。",
+    "只要运行三四个工作流，笔记本电脑就会满载，何况编译器、模拟器和仿真器本身已经占用了资源。",
+    "如果遇到失败，它可以检查日志、修复问题并重试，而我们可以继续专注于其他任务。"
+  ],
+  "tags": [
+    "编程与工程",
+    "移动开发",
+    "系统设计",
+    "性能优化",
+    "后端开发"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 527,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794949200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-18 05:00:00"
+}

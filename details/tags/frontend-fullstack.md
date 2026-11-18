@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-18 07:15:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-18 13:03:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -9,6 +9,14 @@
 ### [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025)
 
 2025-04-01 20:05:02
+
+
+
+### [全球最大品牌通过-Optimizely-遭恶意软件感染](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/)
+
+2026-11-17 17:20:13 | 标签: 编程与工程, 安全, 加密与Web3, 网络安全, 恶意软件
+
+> 2026 年 11 月 16 日，攻击者将恶意 JavaScript 注入 178 家机构的 Optimizely Web 平台 Project JavaScript 字段，其中包括 Zoom、BBC、CNN、Salesforce、GitLab、IKEA、汇丰银行、Equifax、法国航空-荷兰皇家航空集团、Ledger 和 Peacock。恶意软件通过可信的 Optimizely 域名提供，主要执行四项功能：(1) 替换页面内容、剪贴板和网络请求中的加密货币钱包地址；(2) 监控表单和 XHR 以盗刷信用卡；(3) 窃取 Cookie 和屏幕截图；(4) 通过隐藏的 iframe 投放 iO...
 
 
 
@@ -396,7 +404,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -408,7 +416,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -798,6 +806,14 @@
 
 
 
+### [Qwik-2.0-RC：用脚本块替代-HTML-注释标记，实现更快的响应性和乱序流式传输](https://www.infoq.com/news/2026/11/quik-2-streaming/)
+
+2026-11-17 20:25:00 | 标签: 编程与工程, 性能优化, 前端与 Web, Qwik, JavaScript 框架
+
+> Qwik 2.0 RC 在框架如何于服务端渲染的 HTML 中编码可恢复状态方面进行了重大架构调整。此版本以放置在文档末尾的两个脚本块（`<script type="qwik/state">` 和 `<script type="qwik/vnode">`）取代了 v1 使用 HTML 注释标记（如 `<!--qv-->` 和 `<!--t=8-->`）的方式。这一变化不再要求按顺序进行单次写入，降低了 CPU 和内存开销，并通过 `<Pending>` 和 `<Catch>` 边界支持实验性的 HTML 乱序流式传输。基准测试结果显示，v2 的加权几何平均成绩为比原生 JavaScript 慢...
+
+
+
 ### [Sand-|-浏览器中的超逼真沙子模拟器](https://av.github.io/safe-sand/)
 
 2026-11-11 21:39:29
@@ -816,13 +832,13 @@
 
 
 
-### [实用的-JavaScript-函数测试指南：不让你的工作流程复杂化](https://www.sitepoint.com/a-practical-guide-to-testing-javascript-functions-without-overcomplicating-your-workflow/)
+### [如何将网站从-cPanel-迁移到其他控制面板并避免停机](https://www.sitepoint.com/how-to-move-a-site-off-cpanel-to-another-control-panel-without-downtime/)
 
 2026-10-14 15:00:07
 
 
 
-### [如何将网站从-cPanel-迁移到其他控制面板并避免停机](https://www.sitepoint.com/how-to-move-a-site-off-cpanel-to-another-control-panel-without-downtime/)
+### [实用的-JavaScript-函数测试指南：不让你的工作流程复杂化](https://www.sitepoint.com/a-practical-guide-to-testing-javascript-functions-without-overcomplicating-your-workflow/)
 
 2026-10-14 15:00:07
 
@@ -882,7 +898,7 @@
 
 
 
-### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
 
 2026-10-07 23:00:07
 
@@ -894,7 +910,7 @@
 
 
 
-### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
 
 2026-10-07 23:00:07
 
@@ -1152,7 +1168,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1164,7 +1180,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2442,13 +2458,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -2598,13 +2614,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -4098,13 +4114,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -5808,13 +5824,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

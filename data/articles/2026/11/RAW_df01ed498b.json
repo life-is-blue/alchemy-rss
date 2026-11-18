@@ -1,0 +1,57 @@
+{
+  "id": "RAW_df01ed498b",
+  "title": "Qwik 2.0 RC：用脚本块替代 HTML 注释标记，实现更快的响应性和乱序流式传输",
+  "url": "https://www.infoq.com/news/2026/11/quik-2-streaming/",
+  "date": "2026-11-17 20:25:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Qwik, the resumable JavaScript framework originally created at <a href=\"http://Builder.io\">Builder.io</a>, has <a href=\"https://next.qwik.dev/blog/qwik-2-rc/\">released its 2.0 Release Candidate</a>, targeting a rewrite of how the framework encodes resumable state in server-rendered HTML and introducing experimental out-of-order streaming. The RC was published on 1st October 2026 as <code>@qwik.dev/core@2.0.0-rc.0</code>, around two years and eight months after the initial <a href=\"https://qwik.dev/blog/qwik-2-coming-soon\">Towards Qwik 2.0</a> design article.</p>\n   <p>In v1, Qwik propagated state updates by sprinkling HTML comment markers such as <code>&lt;!--qv--&gt;</code> and <code>&lt;!--t=8--&gt;</code> throughout the rendered body to flag component boundaries and the text nodes a signal should update. That approach forced a single ordered write pass, added CPU and memory overhead, and made out-of-order streaming impossible because a slow fetch blocked everything after it. In v2 the comments are gone, with state and virtual node information instead compressed into two <code>&lt;script type=\"qwik/state\"&gt;</code> and <code>&lt;script type=\"qwik/vnode\"&gt;</code> blocks at the end of the document.</p>\n   <p>On Qwik's internal runs of <a href=\"https://github.com/krausest/js-framework-benchmark\">js-framework-benchmark</a>, v2 posts a weighted geometric mean of 1.23 times slower than vanilla JavaScript, ahead of Vue 3.5 at 1.25x, Angular 22 at 1.42x, React 19 with the compiler at 1.53x, and v1 itself at 2.59x. A detailed <a href=\"https://dev.classmethod.jp/en/articles/qwik-2-rc-changes/\">classmethod walkthrough</a> that built the same starter against both versions reported server-rendered HTML went from 60 comments to zero, with JavaScript required before interactivity dropping from 59KB to 9KB, though total bundle size grew.</p>\n   <p>Out-of-order HTML streaming has also been added n experimental mode. Developers can wrap slow regions in <code>&lt;Pending&gt;</code> and <code>&lt;Catch&gt;</code> boundaries so the server sends the rest of the page immediately and streams the real content later in the same response, with a small inline script swapping it into place. The APIs are opt-in through <code>vite.config.ts</code>:</p>\n   <pre>\r\n<code>qwikVite({ experimental: ['pendingBoundary', 'catchBoundary', 'blockSSR'] })\r\n</code></pre>\n   <p><code>useComputed$</code> now accepts async functions, replacing <code>&lt;Resource&gt;</code>, and route loaders gain their own JSON endpoints with <code>cacheControl</code> and <code>eTag</code> options so the browser can cache them individually and <code>&lt;Link&gt;</code> can prefetch data on hover. Other additions include a <code>worker$</code> primitive for Web Workers, <code>reactify$</code> for embedding Qwik components inside React trees, server-only <code>*.server.ts</code> files, and HMR that preserves signal and store values across edits.</p>\n   <p>In a <a href=\"https://www.reddit.com/r/qwik/comments/1b180yq/my_first_blog_post_about_qwik/\">Reddit discussion predating the v2 RC</a>, one developer called the lack of out-of-order streaming a significant limitation and argued that the Qwik team should be more upfront about it. Another commenter suggested that streaming could be a future feature. In his <a href=\"https://dev.classmethod.jp/en/articles/qwik-2-rc-changes/\">Classmethod walkthrough</a>, Hiroshi Morishige noted the long wait for v2, it reached alpha in November 2024 and beta in June 2025, while v1 continued to receive updates through 1.20.1 in September 2026. He also noted that SvelteKit 3 and Remix 3.0 released stable versions on the same day as Qwik's RC, with the three releases published within seven hours. Qwik 2 and SvelteKit 3 use <a href=\"https://vite.dev\">Vite 8</a>; Remix 3 is independent of Vite.</p>\n   <p>The team says the breaking changes are small and automated by <code>pnpm qwik migrate-v2</code>, which also handles the move to the new <code>@qwik.dev/core</code> and <code>@qwik.dev/router</code> package names. New projects can scaffold with <code>pnpm create qwik@rc</code>, and the RC can be explored via <a href=\"https://next.qwik.dev/examples/introduction/hello-world/\">next.qwik.dev/examples</a> or the online <a href=\"https://next.qwik.dev/playground/\">playground</a>.</p>\n   <p>Qwik is an open-source resumable framework that serialises state and event listeners into HTML, then lazily loads component JavaScript only in response to user interaction. The project is MIT licensed and developed openly on <a href=\"https://github.com/QwikDev/qwik\">GitHub</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactivity and Out-of-Order Streaming\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/quik-2-streaming/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794918300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Qwik 2.0 RC 引入了新的状态编码机制，以脚本块取代 HTML 注释标记，支持实验性的乱序流式传输，并显著减少 JavaScript 负载、加快交互响应。",
+  "oneSentenceSummary": "Qwik 2.0 RC 引入了新的状态编码机制，以脚本块取代 HTML 注释标记，支持实验性的乱序流式传输，并显著减少 JavaScript 负载、加快交互响应。",
+  "summary": "Qwik 2.0 RC 在框架如何于服务端渲染的 HTML 中编码可恢复状态方面进行了重大架构调整。此版本以放置在文档末尾的两个脚本块（`<script type=\"qwik/state\">` 和 `<script type=\"qwik/vnode\">`）取代了 v1 使用 HTML 注释标记（如 `<!--qv-->` 和 `<!--t=8-->`）的方式。这一变化不再要求按顺序进行单次写入，降低了 CPU 和内存开销，并通过 `<Pending>` 和 `<Catch>` 边界支持实验性的 HTML 乱序流式传输。基准测试结果显示，v2 的加权几何平均成绩为比原生 JavaScript 慢 1.23 倍，优于 Vue 3.5（1.25 倍）、Angular 22（1.42 倍）和使用编译器的 React 19（1.53 倍）；而 v1 的成绩为 2.59 倍。迁移可通过自动化工具 `pnpm qwik migrate-v2` 完成。新功能包括异步 `useComputed$`、支持缓存的路由加载器 JSON 端点、`worker$` 原语，以及通过 `reactify$` 在 React 中嵌入 Qwik 组件。",
+  "mainPoints": [
+    {
+      "point": "Qwik 2.0 以脚本块取代 HTML 注释标记来编码状态",
+      "explanation": "v1 使用 HTML 注释标记组件边界并指出更新目标，因此必须按顺序写入，也无法进行乱序流式传输。v2 则将状态和虚拟节点信息压缩到文档末尾的两个脚本块中，从而支持并行处理和流式传输。"
+    },
+    {
+      "point": "实验性的乱序流式传输可以延后处理耗时区域",
+      "explanation": "开发者可以用 `<Pending>` 和 `<Catch>` 边界包裹耗时区域，让服务器立即发送页面的其余部分，之后再流式传输实际内容，并通过内联脚本替换占位内容。此功能需在 `vite.config.ts` 中配置后选择启用。"
+    },
+    {
+      "point": "交互性能和负载体积显著改善",
+      "explanation": "服务端渲染的 HTML 中，注释数量从 60 个降至 0 个；交互前所需的 JavaScript 从 59KB 降至 9KB。基准测试显示，v2 比原生 JavaScript 慢 1.23 倍，而 v1 为 2.59 倍；v2 的性能也优于 Vue、Angular 和 React。"
+    },
+    {
+      "point": "新增 API 和功能改善开发者体验",
+      "explanation": "此版本新增了用于替代 `<Resource>` 的异步 `useComputed$`、支持 JSON 端点和缓存选项的路由加载器、用于 Web Workers 的 `worker$` 原语、用于在 React 组件树中嵌入 Qwik 的 `reactify$`、仅限服务端的文件命名约定，以及能够保留 signal 和 store 值的 HMR。"
+    }
+  ],
+  "keyQuotes": [
+    "Qwik 2.0 RC 引入了新的状态编码机制，以脚本块取代 HTML 注释标记，支持实验性的乱序流式传输，并显著减少 JavaScript 负载、加快交互响应。",
+    "在 v1 中，Qwik 会在渲染后的页面中散布 `<!--qv-->` 和 `<!--t=8-->` 等 HTML 注释标记，以标示组件边界以及 signal 应更新的文本节点，从而传播状态更新。",
+    "实验模式还新增了 HTML 乱序流式传输。开发者可以用 `<Pending>` 和 `<Catch>` 边界包裹耗时区域，让服务器立即发送页面的其余部分，并在同一响应中稍后流式传输实际内容。",
+    "在 Qwik 对 js-framework-benchmark 的内部测试中，v2 的加权几何平均成绩为比原生 JavaScript 慢 1.23 倍，优于 Vue 3.5 的 1.25 倍、Angular 22 的 1.42 倍、使用编译器的 React 19 的 1.53 倍，也优于 v1 的 2.59 倍。"
+  ],
+  "tags": [
+    "编程与工程",
+    "性能优化",
+    "前端与 Web",
+    "Qwik",
+    "JavaScript 框架"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 543,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794918300000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-17 20:25:00"
+}

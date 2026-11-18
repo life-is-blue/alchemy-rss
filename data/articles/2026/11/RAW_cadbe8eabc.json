@@ -1,0 +1,48 @@
+{
+  "id": "RAW_cadbe8eabc",
+  "title": "Visual Studio Code 1.147（Insiders）",
+  "url": "https://devblogs.microsoft.com/vscode-blog/visual-studio-code-1.147-(insiders)",
+  "date": "2026-11-19 01:00:00",
+  "author": "Visual Studio Code Team",
+  "siteName": "Microsoft for Developers",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Learn what is new in Visual Studio Code Insiders, including agent session management, chat resources, and Markdown editing.</p>\n  <p><a href=\"https://code.visualstudio.com/updates/v1_147\">Read the full article</a></p>\n </body>\n</html>",
+  "aiSummary": "VS Code Insiders 1.147 预览版新增智能体会话管理、聊天资源集成和增强的 Markdown 编辑功能。",
+  "oneSentenceSummary": "VS Code Insiders 1.147 预览版新增智能体会话管理、聊天资源集成和增强的 Markdown 编辑功能。",
+  "summary": "本文预览了 Visual Studio Code Insiders 1.147 版，重点介绍三项功能：AI 智能体会话管理、聊天资源集成，以及改进后的 Markdown 编辑体验。读者可查看完整文章，了解这些更新的详细信息。",
+  "mainPoints": [
+    {
+      "point": "智能体会话管理",
+      "explanation": "支持用户在 VS Code 中管理 AI 智能体会话，从而更好地控制 AI 辅助工作流并保留上下文。"
+    },
+    {
+      "point": "聊天资源集成",
+      "explanation": "新增对聊天资源的支持，让开发者能够通过聊天界面访问并使用特定于项目的资源。"
+    },
+    {
+      "point": "增强的 Markdown 编辑体验",
+      "explanation": "改进 Markdown 编辑体验，为文档和 README 文件提供更完善的格式设置工具和预览功能。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "编程与工程",
+    "开发者工具",
+    "AI 编程",
+    "Microsoft",
+    "Visual Studio Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 22,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e0e15b83",
+  "sourceName": "Microsoft for Developers",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795021200000,
+  "publishDateStr": "11-19",
+  "publishDateTimeStr": "2026-11-19 01:00:00"
+}

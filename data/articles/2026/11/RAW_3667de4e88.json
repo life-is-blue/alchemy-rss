@@ -1,0 +1,56 @@
+{
+  "id": "RAW_3667de4e88",
+  "title": "Datadog 将生产环境实验引入 AI 智能体可观测性",
+  "url": "https://www.infoq.com/news/2026/11/datadog-ai-agent-observability/",
+  "date": "2026-11-17 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.datadoghq.com/\">Datadog</a> is extending its <a href=\"https://www.datadoghq.com/products/ai/agent-observability/\">Agent Observability platform</a> with <a href=\"https://www.datadoghq.com/blog/online-experiments-agent-observability/\">Online Experiments</a>, allowing engineering teams to compare AI agent versions against real production traffic rather than relying exclusively on predefined evaluation datasets. The capability combines agent evaluation scores with operational measurements such as latency, token consumption, execution cost, and errors, helping teams establish whether changes to models, prompts, retrieval strategies, or tools actually improve an agent.</p>\n   <p dir=\"ltr\">The announcement addresses a growing challenge in agent development: a change that performs better in a controlled test may behave very differently when exposed to unpredictable user requests. Datadog's approach brings controlled experimentation, production telemetry, and execution traces together, giving teams evidence of both the outcome and the behaviour behind it.</p>\n   <p dir=\"ltr\">Offline evaluations remain an important part of agent development. Teams can run different versions against predefined datasets, assess responses and identify known regressions before deployment.</p>\n   <p dir=\"ltr\">However, these evaluations are only as representative as the datasets and scoring criteria behind them. New user workflows, unexpected requests, and changing tool responses can expose weaknesses that existing test cases never anticipated.</p>\n   <p dir=\"ltr\">Online experiments address this limitation by evaluating agent behaviour against real user interactions. Teams can compare a control version with a modified variant by randomly distributing production traffic between them, reducing the influence of differences in user requests.</p>\n   <p dir=\"ltr\">This provides a more realistic view of how an agent performs under actual workloads, while also helping teams identify new scenarios that should eventually become part of their offline regression datasets.</p>\n   <p dir=\"ltr\">Datadog integrates its Agent Observability evaluators with its Experiments capability, allowing evaluation scores to be compared alongside conventional operational metrics.</p>\n   <p dir=\"ltr\">Teams can measure response quality, accuracy, and completeness while tracking execution duration, token consumption, estimated cost, and workflow errors.<a href=\"https://en.wikipedia.org/wiki/Feature_toggle\">Feature Flags</a> manage traffic allocation, letting engineers expose a change to a small percentage of users before rolling it out more widely.</p>\n   <p dir=\"ltr\">This is important because improvements rarely come without trade-offs. A cheaper model might require more retries, while a revised retrieval strategy could improve evidence quality but increase execution time.</p>\n   <p dir=\"ltr\">Datadog also connects experiment results to individual agent traces. Engineers can inspect tool calls, supplied arguments, and returned results to understand why a particular variant behaved differently.</p>\n   <p dir=\"ltr\">According to the article, the experiment compared GPT-5.6 Luna against GPT-6 Luna, splitting traffic evenly between the two. An LLM-based evaluator scored investigation quality from one to five, considering accuracy, completeness, and whether conclusions were supported by available evidence.</p>\n   <p dir=\"ltr\">They claim the results showed a 44.3% reduction in estimated cost for the newer model, with quality scores remaining close at 3.84 and 3.86, respectively.</p>\n   <p dir=\"ltr\">However, the operational results revealed potential concerns. The newer model showed estimated increases in execution duration and workflow errors, although the confidence intervals were too broad to establish definitive regressions.</p>\n   <p dir=\"ltr\">Inspecting the traces revealed that the newer model also supplied invalid tool parameters more frequently, usually recovering after retries. This behaviour was not sufficiently visible in the overall quality score.</p>\n   <p dir=\"ltr\">Datadog used that finding to improve tool handling before proceeding with the model change. The failed calls also provided candidates for additional offline regression tests.</p>\n   <p dir=\"ltr\">Datadog is not alone in trying to solve this challenge. Tools such as <a href=\"https://smith.langchain.com/\">LangSmith</a> and <a href=\"https://langfuse.com/\">Langfuse</a> provide agent tracing and evaluation capabilities, while experimentation platforms such as <a href=\"https://launchdarkly.com/\">LaunchDarkly</a> support controlled feature rollouts. Datadog's approach connects these concerns within its existing observability ecosystem, linking evaluation results directly to production experiments and execution evidence.</p>\n   <p dir=\"ltr\">Datadog's broader proposition is that online experiments can create a feedback loop between production behaviour and development testing. Unexpected failures become new regression cases, while subsequent experiments establish whether changes actually resolve them.</p>\n   <p dir=\"ltr\">The important shift is from asking whether an agent passes a predefined evaluation to establishing whether it performs better under real conditions. For agent engineering, production experimentation may become as important as traditional software testing.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Datadog Brings Production Experimentation to AI Agent Observability\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/datadog-ai-agent-observability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794916800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Datadog 为 AI 智能体可观测性推出在线实验，让团队结合评估分数与延迟、成本和错误等运维指标，对比不同版本的智能体在真实生产流量中的表现。",
+  "oneSentenceSummary": "Datadog 为 AI 智能体可观测性推出在线实验，让团队结合评估分数与延迟、成本和错误等运维指标，对比不同版本的智能体在真实生产流量中的表现。",
+  "summary": "Datadog 为其 Agent Observability 平台新增在线实验功能，让工程团队能够在真实生产流量中评估不同版本的 AI 智能体，而不必仅依赖预先定义的测试数据集。该系统将智能体评估分数与延迟、token 消耗、执行成本和错误等运维指标相结合。团队可以通过随机分配生产流量，对比对照版本和变体版本，从而真实了解智能体在实际工作负载下的表现。这种方法有助于发现可纳入离线回归测试的新场景，并揭示成本、质量与可靠性之间的权衡。一项对比 GPT-5.6 Luna 和 GPT-6 Luna 的案例研究显示，成本降低了 44.3%，但执行时长增加和工作流错误增多也引发了担忧。实验结果还能关联到单条追踪记录，工程师可以检查工具调用及其参数，以理解行为差异。这形成了生产环境行为与开发测试之间的反馈闭环，使评估重点从预先设定的测试通过或失败，转向对真实环境表现的评估。",
+  "mainPoints": [
+    {
+      "point": "在线实验让团队能够在真实环境中评估 AI 智能体，而不再局限于受控测试数据集。",
+      "explanation": "通过在对照版本和变体版本之间分配生产流量，团队可以评估智能体在不可预测的用户请求下的表现，发现预先定义的数据集可能遗漏的问题。"
+    },
+    {
+      "point": "结合评估分数与运维指标，能够全面了解智能体的表现。",
+      "explanation": "Datadog 将质量分数与延迟、token 消耗、成本和错误等指标整合，让团队既能了解结果质量，也能掌握执行时长、工具参数有效性等行为特征。"
+    },
+    {
+      "point": "生产环境实验构成了持续改进智能体的反馈闭环。",
+      "explanation": "在生产环境中发现的意外故障可以转化为新的回归测试用例，之后的实验则能验证修复是否真正解决了根本问题。"
+    },
+    {
+      "point": "部署智能体变更时，必须审慎权衡成本、质量和可靠性。",
+      "explanation": "更便宜的模型或许能降低成本，但也可能增加重试次数和错误；更好的检索策略则可能提升质量，却延长执行时间，因此需要全面分析各项指标。"
+    }
+  ],
+  "keyQuotes": [
+    "Datadog 的方法将受控实验、生产遥测数据和执行追踪结合起来，让团队能够掌握结果证据，也能了解结果背后的行为。",
+    "关键转变在于，不再只问智能体是否通过预先设定的评估，而是要确定它在真实条件下是否表现更好。",
+    "他们称，结果显示，新模型的预估成本降低了 44.3%，而质量分数仍然接近，分别为 3.84 和 3.86。"
+  ],
+  "tags": [
+    "编程与工程",
+    "可观测性",
+    "测试与质量",
+    "性能优化",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 627,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794916800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-17 20:00:00"
+}
