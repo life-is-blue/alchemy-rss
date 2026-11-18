@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-18 13:03:32 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-18 22:47:29 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -14,9 +14,7 @@
 
 ### [全球最大品牌通过-Optimizely-遭恶意软件感染](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/)
 
-2026-11-17 17:20:13 | 标签: 编程与工程, 安全, 加密与Web3, 网络安全, 恶意软件
-
-> 2026 年 11 月 16 日，攻击者将恶意 JavaScript 注入 178 家机构的 Optimizely Web 平台 Project JavaScript 字段，其中包括 Zoom、BBC、CNN、Salesforce、GitLab、IKEA、汇丰银行、Equifax、法国航空-荷兰皇家航空集团、Ledger 和 Peacock。恶意软件通过可信的 Optimizely 域名提供，主要执行四项功能：(1) 替换页面内容、剪贴板和网络请求中的加密货币钱包地址；(2) 监控表单和 XHR 以盗刷信用卡；(3) 窃取 Cookie 和屏幕截图；(4) 通过隐藏的 iframe 投放 iO...
+2026-11-17 17:20:13
 
 
 
@@ -808,9 +806,7 @@
 
 ### [Qwik-2.0-RC：用脚本块替代-HTML-注释标记，实现更快的响应性和乱序流式传输](https://www.infoq.com/news/2026/11/quik-2-streaming/)
 
-2026-11-17 20:25:00 | 标签: 编程与工程, 性能优化, 前端与 Web, Qwik, JavaScript 框架
-
-> Qwik 2.0 RC 在框架如何于服务端渲染的 HTML 中编码可恢复状态方面进行了重大架构调整。此版本以放置在文档末尾的两个脚本块（`<script type="qwik/state">` 和 `<script type="qwik/vnode">`）取代了 v1 使用 HTML 注释标记（如 `<!--qv-->` 和 `<!--t=8-->`）的方式。这一变化不再要求按顺序进行单次写入，降低了 CPU 和内存开销，并通过 `<Pending>` 和 `<Catch>` 边界支持实验性的 HTML 乱序流式传输。基准测试结果显示，v2 的加权几何平均成绩为比原生 JavaScript 慢...
+2026-11-17 20:25:00
 
 
 
