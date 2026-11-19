@@ -1,0 +1,61 @@
+{
+  "id": "RAW_9b7e2c6918",
+  "title": "Yelp 通过迁移 EBS 卷将 Cassandra 迁至 EKS",
+  "url": "https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/",
+  "date": "2026-11-18 17:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Yelp has <a href=\"https://engineeringblog.yelp.com/2026/11/zero-copy-cassandra-kubernetes-migration.html\">moved</a> its <a href=\"https://cassandra.apache.org/_/index.html\">Cassandra</a> fleet from legacy self-managed Kubernetes clusters to <a href=\"https://aws.amazon.com/eks/\">Amazon EKS</a> by re-pointing existing <a href=\"https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes.html\">EBS volumes</a> at new pods, rather than streaming data between nodes. A blog post by the site reliability team details a migration. It covered about 90 production clusters. There was zero downtime for customers and no data loss. The largest cluster, a 54-pod user-data store, took about 12 hours end to end.</p>\n   <p>Yelp had already moved its stateless workloads to EKS through its PaaSTA deployment layer, but Cassandra stayed behind. Kubernetes has no built-in way to migrate <code>StatefulSets</code> and their persistent volumes across clusters. The usual approach is to add nodes to the new cluster and shut down the old ones. This would temporarily double compute capacity but also lead to data transfer costs. For the largest clusters, streaming alone could have taken weeks. Yelp also considered a regional failover and rebuild, and a new Cassandra datacenter in EKS, but rated both as less transparent to customers.</p>\n   <p>Yelp's \"Rolling PV Transplant\" relies on the fact that an EBS volume is bound to an Availability Zone, not to a Kubernetes cluster, and that a <code>PersistentVolume</code> is effectively a pointer to a volume ID. The team pre-creates PVs and PVCs in EKS that reference the existing volume IDs, then creates an identical <code>StatefulSet</code> there, whose pods wait in <code>ContainerCreating</code>. The automation then deletes one pod at a time on the legacy cluster, waits for the volume to detach, and lets the EKS pod claim it. The pod rejoins the ring with the same data and token range, and the process repeats for the next pod. Cassandra's replication tolerates the few minutes each node is offline.</p>\n   <p>Yelp set a <code>skipReconciliation: true</code> flag on the custom resources in both clusters. This was done because two operators managed the same logical ring during the migration. The flag helped prevent them from conflicting over pod state. The flag was cleared on the EKS side at the end.</p>\n   <p>Across roughly 1,000 pods, about 1,000 TiB moved by pointer rather than over the wire. No node was ever decommissioned from the ring, so rollback was the same operation in reverse. Yelp used it a handful of times, for a missing subnet definition and a certificate mismatch, and restored pods within minutes. After a week of manual dev runs and a week of automation, one engineer ran the production rollout in about three weeks, migrating three to six clusters on a typical day.</p>\n   <p>The team had Claude generate the orchestration script, roughly 800 lines of bash, from its validated manual runbook, rather than asking it to design the procedure. The script needed minor adjustments after two days of testing.</p>\n   <p>The approach relies on a previous Container Storage Interface migration by Yelp's Compute Infrastructure team. This work gave the Data Infrastructure team confidence in the volume detach and attach process. Yelp also used the technique for Kafka clusters, and says it applies to any AZ-pinned stateful workload on Kubernetes. The legacy clusters are now retired.</p>\n   <p>The one failure specific to this technique was a stale <code>VolumeAttachment</code> object left behind by the AWS CSI controller after pod deletion. The EKS pod sat in Pending with no error, and deleting the object on the legacy cluster fixed it. Yelp advises building explicit timeouts for stalled detach and attach operations into any automation. Two other findings were unrelated to the mechanism. Backups failed with IAM AccessDenied errors for 48 hours because a new -eks role was not yet being assumed by scheduled jobs, and the alert only filed a ticket instead of paging. Pausing repairs for the migration also exposed one cluster whose repairs had been silently disabled for three months, leaving accumulated data inconsistencies. Teams planning a similar move should audit repair state, backup IAM roles and alert severity before starting.</p>\n   <p>Yelp's approach is not the only way to move Cassandra between EKS clusters. Monday.com's engineering team describes a different one in a<a href=\"https://engineering.monday.com/?p=11695\"> post on zero-downtime Cassandra migration between EKS clusters</a>. K8ssandra-managed clusters had to move without any downtime or data loss. So, the team created a workflow to add new Cassandra data centers, safely transfer data, and remove the old ones. That is the streaming model Yelp considered and rejected. The new cluster is brought up alongside the old one and receives data over the network, and the original is retired only afterwards. The team believes success relied more on control, automation, and handling failures than on speed. They automated long tasks like rebuilds and planned the migration in stages based on operator behavior.</p>\n   <p>The two migrations differ in what they trade away. Yelp's disk transplant skips data transfer and extra compute. It allows for a rollback by swapping the pointer. However, it relies on EBS volumes being linked to an Availability Zone, not a cluster. Monday.com's approach does not rely on that property, and it keeps the old environment intact until the end. The cost is a longer migration and the capacity to run both sides at once, which Yelp calculated would have taken weeks for its largest clusters.</p>\n   <p>Despite the different mechanics, the post-migration lessons are similar. Monday.com devotes part of its write-up to verifying that backups work after the migration, along with monitoring, dashboards and alerts. Yelp's own backups failed on an IAM role mismatch within 48 hours of its first production clusters landing in EKS. Teams planning either approach should treat those checks as part of the migration plan, not as cleanup afterwards.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Yelp Migrates Cassandra to EKS by Moving EBS Volumes\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794992400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Yelp 通过「滚动式 PV 移植」方案重新利用现有 EBS 卷，成功将 90 个 Cassandra 集群从自管理 Kubernetes 迁移至 Amazon EKS，实现零停机并免去高昂的数据传输成本。",
+  "oneSentenceSummary": "Yelp 通过「滚动式 PV 移植」方案重新利用现有 EBS 卷，成功将 90 个 Cassandra 集群从自管理 Kubernetes 迁移至 Amazon EKS，实现零停机并免去高昂的数据传输成本。",
+  "summary": "Yelp 将 Cassandra 集群从旧版自管理 Kubernetes 集群迁移至 Amazon EKS，方法不是在节点之间传输数据，而是将现有 EBS 卷重新指向新的 Pod。「滚动式 PV 移植」方案会先在 EKS 中创建引用现有卷 ID 的 PersistentVolume 和 PVC，再依次删除旧集群中的 Pod、分离卷，并由 EKS 中的 Pod 接管这些卷。该方法在没有通过网络传输数据的情况下，将约 1，000 TiB 数据迁移到约 1，000 个 Pod 中。规模最大的 54-Pod 集群端到端迁移耗时 12 小时。Cassandra 的复制机制可以容忍迁移期间节点短暂离线。团队使用 skipReconciliation 标志，避免管理同一逻辑环的多个 Operator 发生冲突。自动化流程由 Claude 根据经过验证的手动操作手册生成。该方案依赖 EBS 卷绑定可用区而非 Kubernetes 集群这一特性。一次故障中，过时的 VolumeAttachment 对象需要手动清理。迁移后出现的问题包括 IAM 角色不匹配影响备份，以及未被发现的修复失败。Yelp 的方案与 Monday.com 的流式传输方法有所不同：它以更长的迁移时间为代价，换取零数据传输成本和更便捷的回滚能力。",
+  "mainPoints": [
+    {
+      "point": "滚动式 PV 移植通过重新指向 EBS 卷而非流式传输数据，实现零停机迁移",
+      "explanation": "Yelp 预先在 EKS 中创建引用现有卷 ID 的 PV 和 PVC，避免了数周的数据传输时间与成本；通过调整指向而非网络传输，将 1，000 TiB 数据迁移到 1，000 个 Pod 中。"
+    },
+    {
+      "point": "EBS 卷与可用区绑定这一特性，是跨集群迁移卷的关键条件",
+      "explanation": "由于 EBS 卷绑定的是可用区而非 Kubernetes 集群，且 PersistentVolume 实际上是指向卷 ID 的引用，因此不同集群中的 Pod 可以接管同一份物理存储。"
+    },
+    {
+      "point": "逐个迁移 Pod，并利用 Cassandra 的复制容错能力，确保过渡期间数据可用",
+      "explanation": "自动化流程每次删除一个 Pod，等待卷分离，再由 EKS 中的 Pod 接管；Cassandra 的复制机制则可应对各节点短暂离线的情况。"
+    },
+    {
+      "point": "skipReconciliation 标志可避免双集群迁移期间 Operator 发生冲突",
+      "explanation": "在两个集群的自定义资源上设置 skipReconciliation: true，可防止两个 Operator 同时管理同一逻辑环时，因 Pod 状态产生冲突。"
+    },
+    {
+      "point": "迁移后验证发现备份 IAM 角色和修复监控方面存在关键缺口",
+      "explanation": "由于定时任务没有使用新的 -eks 角色，备份因 IAM AccessDenied 错误而失败；此外，一个集群的修复功能已悄然停用三个月，凸显了迁移前审计的必要性。"
+    }
+  ],
+  "keyQuotes": [
+    "Yelp 将其 Cassandra 集群从旧版自管理 Kubernetes 集群迁移至 Amazon EKS，方法是将现有 EBS 卷重新指向新的 Pod，而不是在节点之间流式传输数据。",
+    "规模最大的集群是一个包含 54 个 Pod 的用户数据存储，端到端迁移耗时约 12 小时。",
+    "在约 1，000 个 Pod 之间，约 1，000 TiB 数据是通过调整指向而非网络传输完成迁移的。",
+    "我对在生产环境中提供模型服务的人最大的建议是：把模型和上下文打磨到位，尽可能精简。在进行任何硬件估算或容量规划之前，先确保模型和上下文设置正确。"
+  ],
+  "tags": [
+    "编程与工程",
+    "云原生 / DevOps",
+    "系统设计",
+    "性能优化",
+    "后端开发"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 913,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794992400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-18 17:00:00"
+}

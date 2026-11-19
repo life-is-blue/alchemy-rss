@@ -1,0 +1,56 @@
+{
+  "id": "RAW_b9c3e7c447",
+  "title": "LinkedIn 借助 Apache Celeborn 将 Spark 每日 Shuffle 拉取失败次数从 750 次降至 20 次",
+  "url": "https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/",
+  "date": "2026-11-18 23:05:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>LinkedIn has deployed<a href=\"https://www.linkedin.com/blog/engineering/infrastructure/scaling-spark-and-flink-shuffle-at-linkedin-with-apache-celeborn\"> Apache Celeborn as a shared remote shuffle platform across the majority</a> of its Apache Spark and Apache Flink workloads, separating intermediate data storage from compute infrastructure. The deployment reduces daily shuffle fetch failures from approximately 750 to 20, lowers compute costs by 10%, and improves application runtimes by 14%, compared with its previous Magnet implementation.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/news/2026/11/linkedin-celeborn-remote-shuffle/en/resources/1Screenshot 2026-10-31 at 3.44.38 PM-1793488412813.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/linkedin-celeborn-remote-shuffle/en/resources/1Screenshot 2026-10-31 at 3.44.38 PM-1793488412813.png\" rel=\"share\"></p>\n   <p><em>Daily shuffle fetch failures decreased from approximately 750 to 20 (Source: <a href=\"https://www.linkedin.com/blog/engineering/infrastructure/scaling-spark-and-flink-shuffle-at-linkedin-with-apache-celeborn\">LinkedIn Blog Post</a>)</em></p>\n   <p>LinkedIn's offline data platform executes more than 300,000 Spark jobs daily across thousands of production nodes, consuming approximately 200 petabyte-hours of compute. As the company moves toward a unified Flink architecture for real-time and historical processing, large-scale backfills introduce additional shuffle workloads. Shuffle moves intermediate data between processing stages, potentially stressing networks, disks, and application runtimes.</p>\n   <p>LinkedIn previously addressed shuffle read inefficiencies with <a href=\"https://www.linkedin.com/blog/engineering/open-source/introducing-magnet\">Magnet</a>, its <a href=\"https://spark.apache.org/docs/latest/configuration.html\">push-based shuffle </a>implementation contributed to Apache Spark 3.2. Magnet aggregates shuffle blocks by reducer partition into larger files, reducing random disk reads. However, shuffle storage remained within the compute cluster, where External Shuffle Services shared CPU, memory, disk I/O, and network resources with compute workloads.</p>\n   <p>With<a href=\"https://github.com/apache/celeborn\"> Apache Celeborn</a>, map tasks <a href=\"https://apache.googlesource.com/celeborn/+/HEAD/docs/developers/overview.md\">push intermediate data to dedicated workers</a>, which aggregate and store partitions independently of compute executors. Reducers fetch the data directly from these workers, allowing shuffle storage to scale independently of compute and reducing dependence on executor lifecycles. Unlike Magnet, which uses merger External Shuffle Services within the Spark compute cluster, Celeborn runs as a separate shuffle service with dedicated workers and a replicated control plane. This separation reduces resource contention between compute and shuffle workloads.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/news/2026/11/linkedin-celeborn-remote-shuffle/en/resources/1linkedcelebron-1793488412813.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/linkedin-celeborn-remote-shuffle/en/resources/1linkedcelebron-1793488412813.jpeg\" rel=\"share\"></p>\n   <p><em>Celeborn architecture at LinkedIn (Source: <a href=\"https://www.linkedin.com/blog/engineering/infrastructure/scaling-spark-and-flink-shuffle-at-linkedin-with-apache-celeborn\">LinkedIn Blog Post</a>)</em></p>\n   <p><a href=\"https://www.linkedin.com/in/aravind-patnam/\">Aravind Patnam</a>, a staff software engineer at LinkedIn, explained,</p>\n   <blockquote>\n    <p>Operating it reliably across thousands of nodes and hundreds of thousands of daily applications required substantial engineering beyond the upstream project.</p>\n   </blockquote>\n   <p>The deployment uses a five-node Raft-based control plane distributed across availability zones, with Apache Ratis providing metadata replication, leader election, and failover. LinkedIn also introduced network-aware replication and integrated Celeborn with its host health platform to deprioritize workers approaching maintenance and exclude degraded workers. These changes contributed to a 20-fold reduction in task failures during infrastructure disruptions compared with Magnet.</p>\n   <p>LinkedIn further optimized the data plane by moving shuffle storage to <a href=\"https://nvmexpress.org/specifications/\">NVMe SSDs</a>, reducing overall shuffle duration by 40%. Using <a href=\"https://en.wikipedia.org/wiki/Zstd\">Zstandard</a> compression instead of <a href=\"https://en.wikipedia.org/wiki/LZ4_(compression_algorithm)\">LZ4</a> reduced the required shuffle worker fleet by approximately 35%. The company also provisioned workers with 100 Gbps network interfaces and improved slot selection time sixfold through JVM and data-plane optimizations. Across the fleet, shuffle cost decreased by nearly 90% per task, while the proportion of executor runtime spent waiting on shuffle operations fell by approximately 10–15% from its peak.</p>\n   <p>The converged Flink platform processes hundreds of millions of events per hour in historical backfills, completing multi-day workloads in single-digit hours. Thousands of pipelines now use unified Flink computations for nearline processing and historical corrections, replacing parallel Spark implementations. LinkedIn is exploring caching and faster upstream upgrades while continuing to contribute to Celeborn.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"LinkedIn Cuts Daily Spark Shuffle Fetch Failures from 750 to 20 with Apache Celeborn\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795014300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "LinkedIn 以 Apache Celeborn 取代 Magnet，将其作为共享远程 Shuffle 平台，使每日 Shuffle 拉取失败次数从 750 次降至 20 次、计算成本降低 10%，并将应用运行时间缩短 14%。",
+  "oneSentenceSummary": "LinkedIn 以 Apache Celeborn 取代 Magnet，将其作为共享远程 Shuffle 平台，使每日 Shuffle 拉取失败次数从 750 次降至 20 次、计算成本降低 10%，并将应用运行时间缩短 14%。",
+  "summary": "LinkedIn 已在其大多数 Apache Spark 和 Apache Flink 工作负载中部署 Apache Celeborn，作为共享远程 Shuffle 平台，将中间数据存储与计算基础设施分离。与此前采用的 Magnet 实现相比，此次部署将每日 Shuffle 拉取失败次数从约 750 次降至 20 次，计算成本降低 10%，应用运行时间缩短 14%。Celeborn 采用由 5 个节点组成、基于 Raft 的控制平面，并分布在多个可用区；它使用 Apache Ratis 进行元数据复制、领导者选举和故障转移。LinkedIn 引入了网络感知型复制，并将 Celeborn 与其主机健康平台集成，以降低即将维护的工作节点的优先级，并排除性能退化的工作节点。数据平面方面，LinkedIn 将 Shuffle 存储迁移至 NVMe SSD，使整体 Shuffle 时长缩短 40%；同时，以 Zstandard 替代 LZ4 进行压缩，使所需的 Shuffle 工作节点集群规模缩减约 35%。工作节点配备了 100 Gbps 网络接口，并通过 JVM 和数据平面优化，将槽位选择时间缩短至原来的六分之一。整个集群中，每个任务的 Shuffle 成本降低了近 90%；执行器运行时间中用于等待 Shuffle 操作的比例，也较峰值下降了约 10-15%。",
+  "mainPoints": [
+    {
+      "point": "Apache Celeborn 取代 Magnet，成为 LinkedIn 的共享远程 Shuffle 平台，将每日 Shuffle 拉取失败次数从 750 次降至 20 次。",
+      "explanation": "Celeborn 将中间数据存储与计算基础设施分离，使 Shuffle 存储可以独立于计算资源扩展，并降低对执行器生命周期的依赖，从而大幅提升可靠性，减少基础设施故障期间的任务失败。"
+    },
+    {
+      "point": "与 Magnet 相比，此次部署使计算成本降低 10%，应用运行时间缩短 14%。",
+      "explanation": "通过将 Shuffle 存储迁移至配备 NVMe SSD 的专用工作节点，并使用 Zstandard 替代 LZ4 进行压缩，LinkedIn 将 Shuffle 时长缩短 40%，所需的 Shuffle 工作节点集群规模缩减 35%，从而显著节省成本并提升性能。"
+    },
+    {
+      "point": "基于 Raft 的 5 节点控制平面结合 Apache Ratis，可在多个可用区实现元数据复制、领导者选举和故障转移。",
+      "explanation": "LinkedIn 引入了网络感知型复制，并将 Celeborn 与主机健康平台集成，以降低即将维护的工作节点的优先级，并排除性能退化的工作节点。这些措施也促成了与 Magnet 相比任务失败次数减少 20 倍。"
+    },
+    {
+      "point": "工作节点配备 100 Gbps 网络接口，并通过 JVM 和数据平面优化提升性能。",
+      "explanation": "通过这些优化，槽位选择时间缩短至原来的六分之一；执行器运行时间中用于等待 Shuffle 操作的比例也较峰值下降了 10-15%，进一步提升了系统整体性能。"
+    }
+  ],
+  "keyQuotes": [
+    "要在数千个节点和每天数十万个应用程序上可靠运行，需要在上游项目的基础上投入大量额外工程工作。",
+    "与此前采用的 Magnet 实现相比，此次部署将每日 Shuffle 拉取失败次数从约 750 次降至 20 次，计算成本降低 10%，应用运行时间缩短 14%。",
+    "每个任务的 Shuffle 成本降低了近 90%；执行器运行时间中用于等待 Shuffle 操作的比例，也较峰值下降了约 10--15%。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "后端开发",
+    "性能优化",
+    "云原生 / DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 497,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795014300000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-18 23:05:00"
+}

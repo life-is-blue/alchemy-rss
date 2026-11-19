@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-19 06:47:48 | [返回首页](/README.md)
+**更新时间**: 2026-11-19 12:58:54 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17559)
+- [AI & 大模型](#ai-llm) (17599)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1037)
-- [DevOps](#devops) (855)
+- [DevOps](#devops) (859)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7220)
+- [其他](#other) (7231)
 
 
 ---
@@ -22,6 +22,11 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [驯服临床幻觉：我们如何借助-AWS-Bedrock-和向量消歧，将患者口语表达映射到-350，000+-个-SNOMED-CT-概念](https://dev.to/saif_urrahman/taming-clinical-hallucinations-how-we-mapped-colloquial-patient-slang-to-350000-snomed-ct-22pk) - AI 精选
+- [构建-Sashiko：智能体代码审查系统的经验](https://cloud.google.com/blog/products/application-development/lessons-from-building-sashiko-an-agentic-code-review-system/) - AI 精选
+- [Gemini-4-Neon-正式发布](https://deepmind.google/blog/introducing-gemini-4-neon/) - AI 精选
+- [研究加速：参差不齐的前沿](https://openai.com/index/research-acceleration-jagged-frontier) - AI 精选
+- [管理前沿-AI-风险：从训练到部署](https://openai.com/index/managing-frontier-ai-risk) - AI 精选
 - [DeepSeek-发布全家桶应用-API](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485910&idx=1&sn=529f50ba3b37e39319dad1faf7a122cf) - AI 精选
 - [llama.cpp-v1.0.0：为本地-AI-生态系统奠定更坚实的基础](https://huggingface.co/blog/ggml-org/llama-cpp-v1) - AI 精选
 - [【年终复盘②】RSI-可能是-NeoLab-的机会、Personal-Agent-真的有用、创业要造灭火器还是砖头？｜对话谷雨：AI-带给我的-10-个-Aha-Moments](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649113115&idx=1&sn=5d0928c72b758bccea81eb26e1d7146e) - AI 精选
@@ -37,13 +42,8 @@
 - [年终复盘：AI-带给我的-10-个-Aha-Moments｜庄明浩：RSI-来了、AI-的奇观与粗糙、巨头夹缝中的创业机会](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112837&idx=1&sn=965bd2dcc3ca5467af86c0f1ff02bb1b) - AI 精选
 - [Hyra-2.0-发布：为模型研发打造可复用工具](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498763&idx=1&sn=279f8fb4e43a987fdc0aa2af0b0f7958) - AI 精选
 - [Next-Concept-Modeling：快速、并行的由粗到细文本生成](https://hazyresearch.stanford.edu/blog/2026-10-12-ncm) - AI 精选
-- [HiRO-ACEv2：以极低成本实现-3-公里分辨率的极端天气模拟](https://huggingface.co/blog/allenai/hiro-acev2) - AI 精选
-- [苹果-LensVLM：长上下文压缩成图片，模型边看边「放大」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=3&sn=7b77525c43945b4e5a775f0d78cb4cbd) - AI 精选
-- [Natura-1-发布：从百万小时人类经验中学会零样本泛化与灵巧操作](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651062756&idx=1&sn=fa2d7404984d41c4d2e1e61c8caa24af) - AI 精选
-- [Anthropic-的源代码控制系统重构](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) - AI 精选
-- [Dyna-2：具备小时级自主能力的通用物理智能体——Jason-Ma，Dyna-Robotics](https://www.latent.space/p/dyna) - AI 精选
 
-- [查看全部 17559 篇...](/details/tags/ai-llm.md)
+- [查看全部 17599 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -112,6 +112,8 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [LinkedIn-借助-Apache-Celeborn-将-Spark-每日-Shuffle-拉取失败次数从-750-次降至-20-次](https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/) - 编程 精选
+- [Yelp-通过迁移-EBS-卷将-Cassandra-迁至-EKS](https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/) - 编程 精选
 - [深入了解-GitHub-全新的-Git-存储架构](https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/) - 编程 精选
 - [拆解小红书存储底座-03｜从存得下到读得快：小红书自研对象存储实践](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496995&idx=1&sn=4f8f5120b9fff8d77f0c8c9d9c590fee) - 编程 精选
 - [$1M-Vercel-Sandbox-挑战的发现](https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge) - 编程 精选
@@ -127,10 +129,8 @@
 - [Spotify-如何每周向-6.75-亿用户发布更新且不破坏系统](https://blog.bytebytego.com/p/how-spotify-ships-to-675-million) - 编程 精选
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
-- [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
-- [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 
-- [查看全部 855 篇...](/details/tags/devops.md)
+- [查看全部 859 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7220 篇...](/details/tags/other.md)
+- [查看全部 7231 篇...](/details/tags/other.md)
 
 

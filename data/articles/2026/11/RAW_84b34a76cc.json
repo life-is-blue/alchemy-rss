@@ -1,0 +1,60 @@
+{
+  "id": "RAW_84b34a76cc",
+  "title": "Vercel 发布面向智能体的 UI SDK，可通过可复用行为组合 UI",
+  "url": "https://www.infoq.com/news/2026/11/vercel-ui-sdk/",
+  "date": "2026-11-18 18:12:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Vercel has released <a href=\"https://ui-sdk.dev/\">UI SDK</a>, an open-source TypeScript library that treats keyboard navigation, focus, selection, popups, and drag and drop as reusable behaviors rather than details buried inside finished components. <a href=\"https://ui-sdk.dev/docs/core/changelog/introducing-ui-sdk\">Vercel UI SDK</a> is published on GitHub as <a href=\"https://github.com/vercel-labs/ui\">vercel-labs/ui</a> and is currently in beta.</p>\n   <p>The behaviors live in <a href=\"https://ui-sdk.dev/docs/core\">@ui-sdk/core</a>. Vercel says it built <a href=\"https://ui-sdk.dev/docs/behaviors\">more than 50 of them</a>, including createPopup, createSelection, createTypeahead, createRovingFocus, createReorder, createResize, createViewport, createListbox, createChange, createFocusRecovery, and createVirtualizer. A developer, or more often an agent, combines those helpers inside <a href=\"https://ui-sdk.dev/docs/core/kernel/define-a-primitive\">definePrimitive</a>, which declares a component's state, API, and slots once. Framework adapters then render the same primitive through <a href=\"https://ui-sdk.dev/docs/react/parts-and-composition\">createParts</a> in React, Vue, Svelte, Solid, or as Web Components. The parts are unstyled and expose attributes and CSS variables. The same behaviors also back a starter library of <a href=\"https://ui-sdk.dev/docs/components\">more than 50 unstyled components</a>, from Color Picker, Token Input, and Command to Calendar, Tree, and OTP Input, with the same part names in all five adapters.</p>\n   <p>UI SDK is meant to be used by agents, not only written by them. The <a href=\"https://ui-sdk.dev/docs/agents/skills\">ui-sdk skill</a>, installed with npx skills add vercel-labs/ui --skill ui-sdk, points an agent at the Markdown docs shipped in the installed packages. At runtime, <a href=\"https://ui-sdk.dev/docs/agents/connect-an-agent\">createAgent</a>, imported from the matching framework package such as @ui-sdk/react/agent, exposes snapshot, act, and query so an agent can read component state and call actions through the component API, without screenshots. Apps can approve or refuse those steps, and change callbacks receive a source of \"agent\" and may cancel a change. <a href=\"https://ui-sdk.dev/docs/agents/connect-an-agent/webmcp\">registerTools</a> can expose the same methods to a browser's built-in agent through WebMCP, when the browser provides document.modelContext.</p>\n   <p>Developers already have several headless libraries at this layer, including <a href=\"https://www.radix-ui.com/\">Radix UI</a>, <a href=\"https://base-ui.com/\">Base UI</a>, <a href=\"https://react-spectrum.adobe.com/react-aria/\">React Aria</a>, <a href=\"https://ark-ui.com/\">Ark UI</a> and its <a href=\"https://zagjs.com/\">Zag.js</a> state machines, and <a href=\"https://headlessui.com/\">Headless UI</a>. shadcn/ui sits one level above those primitives as a copy-into-your-repo component kit. UI SDK aims lower, at composable behaviors shared across frameworks, and adds a first-class agent bridge. The changelog thanks the teams behind Radix, Base UI, React Aria, shadcn/ui, <a href=\"https://ui.nuxt.com/\">Nuxt UI</a>, and Geist. Vercel has not said whether shadcn/ui will be rebuilt on UI SDK.</p>\n   <p><a href=\"https://x.com/mihar_22/status/2121039800329457748\">Rahim</a>, a product engineer at Mux who built Vidstack, wrote after reading the source:</p>\n   <blockquote>\n    <p>This is so genuinely cool. I love how it's been packaged up. So elegant @shadcn and @shuding! I'll be studying this for a while. 1. createAgent is an \"agent bridge\" which gives a snapshot, act, and query tool. It allows agents to interact with the actual UI components directly 2. Change callbacks know when the agent made the change (details.source === \"agent\"), and the app can refuse it with cancel (I love this)</p>\n   </blockquote>\n   <p>A developer identified as <a href=\"https://x.com/builtbystef/status/2120962756040069345\">Stefan</a> looked at the repository and asked how the idea compares with existing headless libraries:</p>\n   <blockquote>\n    <p>I tried looking at the repo a bit but I’m not sure I quite understand the value prop of this versus something like Base UI. Is the thought process that we should be thinking about UIs/components as combinations of behaviours?</p>\n   </blockquote>\n   <p>UI SDK is in beta as 0.1.0-beta.1, licensed under the <a href=\"https://github.com/vercel-labs/ui/blob/main/LICENSE\">Apache License 2.0</a>, and subject to <a href=\"https://vercel.com/docs/release-phases/public-beta-agreement\">Vercel's public beta terms</a>; the APIs, documentation, and behavior may change before general availability. Install @ui-sdk/core plus the adapter for your framework, for example npm install @ui-sdk/react @ui-sdk/core, which requires React 19 or later. The Vue, Svelte, and Solid adapters document peer ranges of Vue 3.5, Svelte 5.33, and Solid 2 from 2.0.0-rc.14. Setup details are in the <a href=\"https://ui-sdk.dev/docs\">documentation</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Vercel Releases UI SDK for Agents to Compose UI from Reusable Behaviors\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/vercel-ui-sdk/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1794996720000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Vercel 发布了一款开源 UI SDK，将键盘导航、焦点、选择、弹出层和拖放视为可复用行为，让 AI 智能体能够在 React、Vue、Svelte、Solid 和 Web Components 中组合 UI 组件。",
+  "oneSentenceSummary": "Vercel 发布了一款开源 UI SDK，将键盘导航、焦点、选择、弹出层和拖放视为可复用行为，让 AI 智能体能够在 React、Vue、Svelte、Solid 和 Web Components 中组合 UI 组件。",
+  "summary": "Vercel 发布了一款开源 TypeScript UI SDK，通过将键盘导航、焦点管理、选择、弹出层和拖放视为可组合、可复用的行为，而非封装在成品组件内部的实现细节，重新构想了 UI 开发。SDK 在 @ui-sdk/core 中提供 50 多种行为，开发者或 AI 智能体可以使用 definePrimitive 组合这些行为，一次性声明组件的状态、API 和插槽，再通过 createParts 在 React、Vue、Svelte、Solid 中渲染，或将其作为 Web Components 使用。其一项重要创新是将智能体桥接能力作为一等功能：ui-sdk skill 让智能体能够访问文档，而 createAgent 则提供 snapshot、act 和 query 方法，使智能体无需截图即可直接与 UI 交互；应用还可以批准或拒绝智能体的操作。SDK 包含 50 多个无样式组件，采用 Apache 2.0 许可证，目前处于 0.1.0-beta.1 测试阶段。",
+  "mainPoints": [
+    {
+      "point": "UI SDK 将键盘导航、焦点、选择、弹出层和拖放视为可复用行为，而非组件的实现细节",
+      "explanation": "这一架构转变让开发者和 AI 智能体能够组合 createPopup、createSelection、createTypeahead 和 createRovingFocus 等原子行为，从而实现跨框架一致性，并支持由智能体驱动的 UI 生成。"
+    },
+    {
+      "point": "SDK 通过 createAgent 和 ui-sdk skill 为 AI 智能体提供一等桥接能力，使其能够以编程方式与 UI 组件交互",
+      "explanation": "智能体可以使用 snapshot、act 和 query 方法读取组件状态并触发操作，无需截图。应用还可以通过 source=「agent」回调批准或拒绝更改，从而支持安全的智能体驱动 UI 组合。"
+    },
+    {
+      "point": "框架适配器让同一组原语能够在 React、Vue、Svelte、Solid 和 Web Components 中渲染，并保持部件名称一致",
+      "explanation": "开发者可以使用 definePrimitive 一次性声明组件状态，再通过 createParts 借助不同框架适配器进行渲染，从而编写与框架无关的 UI 行为，并将其编译为各生态中的原生实现。"
+    },
+    {
+      "point": "SDK 提供 50 多个无样式组件作为入门组件库，并在所有框架适配器中保持一致的 API",
+      "explanation": "颜色选择器、Token 输入框、命令面板、日历、树形控件和 OTP 输入框等组件展示了行为组合模式，也提供了可直接使用的价值；无论渲染目标是什么，部件名称都保持一致。"
+    },
+    {
+      "point": "UI SDK 定位在 Radix UI 和 shadcn/ui 等现有无头库的更底层",
+      "explanation": "Radix、Base UI、React Aria 和 Headless UI 提供组件原语，shadcn/ui 则提供可复制到代码仓库中的组件套件。UI SDK 的目标是构建可跨框架共享的可组合行为，并提供明确的智能体桥接能力，以智能体优先的设计理念形成差异化。"
+    }
+  ],
+  "keyQuotes": [
+    "Vercel 发布了 UI SDK，这是一款开源 TypeScript 库，将键盘导航、焦点、选择、弹出层和拖放视为可复用行为，而非深藏在成品组件内部的细节。",
+    "createAgent 是一种「智能体桥接」能力，提供 snapshot、act 和 query 工具。它允许智能体直接与实际的 UI 组件交互。",
+    "更改回调可以识别更改是否由智能体发起（details.source =「agent」），应用也可以通过 cancel 拒绝该操作（我非常喜欢这一点）。"
+  ],
+  "tags": [
+    "编程与工程",
+    "前端与 Web",
+    "AI Agent",
+    "UI 设计",
+    "设计模式"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 567,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1794996720000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-18 18:12:00"
+}
