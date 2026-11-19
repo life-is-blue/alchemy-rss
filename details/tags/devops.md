@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-19 12:58:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-19 22:54:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,17 +26,13 @@
 
 ### [LinkedIn-借助-Apache-Celeborn-将-Spark-每日-Shuffle-拉取失败次数从-750-次降至-20-次](https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/)
 
-2026-11-18 23:05:00 | 标签: 编程与工程, 系统设计, 后端开发, 性能优化, 云原生 / DevOps
-
-> LinkedIn 已在其大多数 Apache Spark 和 Apache Flink 工作负载中部署 Apache Celeborn，作为共享远程 Shuffle 平台，将中间数据存储与计算基础设施分离。与此前采用的 Magnet 实现相比，此次部署将每日 Shuffle 拉取失败次数从约 750 次降至 20 次，计算成本降低 10%，应用运行时间缩短 14%。Celeborn 采用由 5 个节点组成、基于 Raft 的控制平面，并分布在多个可用区；它使用 Apache Ratis 进行元数据复制、领导者选举和故障转移。LinkedIn 引入了网络感知型复制，并将 Celeborn 与其主...
+2026-11-18 23:05:00
 
 
 
 ### [Yelp-通过迁移-EBS-卷将-Cassandra-迁至-EKS](https://www.infoq.com/news/2026/11/kubernetes-cassandra-eks/)
 
-2026-11-18 17:00:00 | 标签: 编程与工程, 云原生 / DevOps, 系统设计, 性能优化, 后端开发
-
-> Yelp 将 Cassandra 集群从旧版自管理 Kubernetes 集群迁移至 Amazon EKS，方法不是在节点之间传输数据，而是将现有 EBS 卷重新指向新的 Pod。「滚动式 PV 移植」方案会先在 EKS 中创建引用现有卷 ID 的 PersistentVolume 和 PVC，再依次删除旧集群中的 Pod、分离卷，并由 EKS 中的 Pod 接管这些卷。该方法在没有通过网络传输数据的情况下，将约 1，000 TiB 数据迁移到约 1，000 个 Pod 中。规模最大的 54-Pod 集群端到端迁移耗时 12 小时。Cassandra 的复制机制可以容忍迁移期间节点短暂离线。团...
+2026-11-18 17:00:00
 
 
 
@@ -696,17 +692,13 @@
 
 ### [Booking.com-的-AI-演进幕后：一段未经修饰的历程](https://www.infoq.com/presentations/bookingcom-ml-data-platform-evolution/)
 
-2026-11-18 19:00:00 | 标签: 编程与工程, 系统设计, 数据工程, 云原生 / DevOps, 机器学习
-
-> 本次演讲回顾了 Booking.com 20 年来构建和演进机器学习基础设施的历程。平台于 2005 年起步，当时使用 Perl 脚本和 MySQL 进行 A/B 测试，之后逐步扩展，能够支撑数十亿次旅行决策。数据管理层从单主 MySQL 架构发展为全球最大的集群之一，拥有 7，000+ 个实例，并采用复制链和自动化机制。Hadoop 于 2011 年引入，但存在共享环境、缺乏 GPU 支持和治理方面的挑战。2023 年的云迁移通过梳理所有依赖关系、优先处理关键工作流，并使用统一指挥中心，最终成功完成。在 ML 工程方面，平台从基于 Perl 的服务系统发展为现代化系统，支持 480+ 个模型...
+2026-11-18 19:00:00
 
 
 
 ### [Sidero-Labs｜Talos-Linux-与-Omni-的缔造者](https://www.siderolabs.com/talos-linux)
 
-2026-11-18 16:17:44 | 标签: 编程与工程, 系统设计, 云原生 / DevOps, 安全, 开源项目
-
-> Talos Linux 是一款专为 Kubernetes 基础设施打造的不可变、由 API 驱动的操作系统。它摒弃了 SSH、Shell 访问和包管理器等传统管理方式，只提供运行 Kubernetes 集群所需的基本二进制文件，适用于从裸机到边缘环境的各种场景。该系统采用声明式设计，整台机器的状态都由 YAML 定义；系统为只读且临时性的，确保节点在重启后恢复到声明的状态。Talos Enterprise Linux 在沿用 MPL-2.0 许可下同一开源代码库的同时，增加了 FIPS 140-3 合规性、审计证据、赔偿保障和全天候支持。Omni 则提供集群群组管理能力，帮助用户摆脱手动管理生...
+2026-11-18 16:17:44
 
 
 
