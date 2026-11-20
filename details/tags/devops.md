@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-20 12:49:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-20 22:35:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -692,25 +692,19 @@
 
 ### [2026-年美国中期选举期间的互联网流量与网络攻击](https://blog.cloudflare.com/internet-traffic-2026-us-election/)
 
-2026-11-19 22:00:16 | 标签: 编程与工程, Cloudflare, 选举安全, DDoS, 互联网流量
-
-> 2026 年美国中期选举期间，互联网流量大幅增加，峰值请求达到每秒 1.2 million 次，比 2024 年选举周期增长 30%。与此同时，DDoS 攻击增加了 15%，德克萨斯州、佛罗里达州和加利福尼亚州是攻击目标最多的州。攻击主要包括 UDP 洪水攻击和 HTTP GET 洪水攻击，且大多数攻击源自美国。Cloudflare 的分析凸显了选举期间，政治竞选团队和政府网站采取强有力网络安全措施的重要性日益提升。
+2026-11-19 22:00:16
 
 
 
 ### [.NET-11：ASP.NET-Core-支持联合类型、默认采用-OpenAPI-3.2，并推出-Blazor-AI-组件](https://www.infoq.com/news/2026/11/asp-net-11-release/)
 
-2026-11-19 19:27:00 | 标签: 编程与工程, 后端开发, 性能优化, 云原生 / DevOps, 数据工程
-
-> .NET 11 为 ASP.NET Core 带来多项重要更新，包括在 JSON 请求和响应正文中使用 C# 15 联合类型、为 Minimal API 提供异步验证，以及默认采用 OpenAPI 3.2。SignalR 新增身份验证刷新功能；Blazor 则改进了静态服务器端渲染和缓存，并推出实验性的 AI 组件。Kestrel 服务器通过 Zstandard 压缩和改进畸形请求的错误处理得到优化。
+2026-11-19 19:27:00
 
 
 
 ### [在一台虚拟机上运行-1500-万个-Web-服务器——smoltcp、DPDK、AF_XDP](https://kapteko.com/15-million-webservers/)
 
-2026-11-19 13:56:36 | 标签: 编程与工程, 系统设计, 性能优化, Linux, 网络
-
-> 这篇技术深度文章探讨了在一台配备 10GB RAM 和 1 个 CPU 核心的虚拟机上，Web 服务器密度能达到什么极限。作者先用标准 Linux 系统调用 listen、accept、recv、send 和 close 编写了一个基础的 C 实现，但很快遇到了内核层面的瓶颈：端口耗尽和内存开销。由于内核数据结构 tcp_sock、socket_alloc 等的开销，每个 Linux 套接字约占用 3.3KB RAM，因此在内存预算内不可能达到 1500 万个的目标。为解决这一问题，文章探讨了绕过 Linux 内核网络栈的方案，并介绍了 OSI 模型、smoltcp 等嵌入式 TCP/IP 实...
+2026-11-19 13:56:36
 
 
 
