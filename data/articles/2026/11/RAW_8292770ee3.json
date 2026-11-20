@@ -1,0 +1,52 @@
+{
+  "id": "RAW_8292770ee3",
+  "title": "用 AI 生成健康代码，消耗的 Token 更少",
+  "url": "https://www.infoq.com/news/2026/11/healthy-code-AI-tokens/",
+  "date": "2026-11-19 19:09:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Agentic AI can speed up velocity, but the gains vanish within months as code complexity grows. In his presentation on <a href=\"https://www.youtube.com/watch?v=ciRTdOIhNCc\">AI-friendly code</a> at <a href=\"https://gotocph.com/\">GOTO Copenhagen</a>, Adam Tornhill showed that healthy code makes AI perform better and costs fewer tokens. Safeguarding means keeping code health high through agentic refactoring, with an MCP supplying code health data, so AI can maintain the code it generates.</p>\n   <p>Developing software with agents is significantly harder than writing code manually, Tornhill argued. But with agentic AI, they can complete tasks two to three times faster, he added. It also helps them unblock themselves and reduces coordination needs.</p>\n   <p>Tornhill mentioned a study done on 1000+ open-source projects which showed that with AI, velocity went up during the first few weeks, but after two months the velocity gains were fully canceled out due to a massive increase in code complexity:</p>\n   <blockquote>\n    <p>AI operates in a self-harm mode, often writing code it cannot reliably maintain later.</p>\n   </blockquote>\n   <p>Code health measures how easy code is to understand, change, and maintain. Research done on human coding (before AI) shows that if you have healthy code, you can be up to 10x faster than someone who works on similar problems in unhealthy code, Tornhill said. The defect risk is reduced 15 times, and code reviews go twice as quickly, he added.</p>\n   <p>Building a prototype was never the hard problem in software; 95% of the costs for any software project come after the first release. This is where code quality, maintainability, and architecture start to matter, Tornhill said.</p>\n   <p>Recent research shows that large language models perform consistently better in healthy code. AI won’t generate perfect code; if we want to survive in the Agentic age, we need to focus on safeguarding, Tornhill said.</p>\n   <p>The average codebase has a code health of 5.15, where AI-friendly code starts at 9.5. Technical depth is a bottleneck for enterprise adoption of agentic coding; what’s needed is an agentic refactoring, Tornhill argued. Claude can be used to fix code health issues, but only to a certain extent:</p>\n   <blockquote>\n    <p>As a best-case scenario, an agent can fix roughly 50% of the code health issues for lower-health code. Once the code health improves, the AI performance drops sharply, and Claude can only correctly refactor 20% of the code. AI tends to become conservative, doing small changes that don’t really move the needle on code quality.</p>\n   </blockquote>\n   <p>Adding an MCP with code health data can lead to a 90%-100% fix rate, Tornhill said. Agentic refactoring turned out to be a predictable and mechanical process at scale, where AI was capable of doing codebase-specific refactorings.</p>\n   <p>Healthy code is also financially viable code, with healthy code, you can do things with 40% to 45% fewer tokens, Tornhill said.</p>\n   <p>By refactoring code, modularizing it and making it healthy, we can also reduce organizational friction, Tornhill said. Code quality at the module level is a largely solved problem with the automation we now have. Scaling AI friendliness to the design and architectural level is the next big challenge, he concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/adam-tornhill-71759b48/\">Adam Tornhill</a> after his talk.</p>\n   <p><strong>InfoQ: How can we measure code health?</strong></p>\n   <blockquote>\n    <p><strong>Adam Tornhill</strong>: Code Health is a multifacetted concept, so we need to combine multiple metrics. We’ve found that it works best when combining measures from three levels of software design:</p>\n    <ol>\n     <li>Module level design: e.g. are your modules cohesive and do one thing well? Or are there multiple, unrelated responsibilities?</li>\n     <li>Function level design: e.g. how well-designed are the individual function blocks? How expressive are their APIs?</li>\n     <li>Implementation level: where you want to avoid any accidental complexity in how the code is written such as deeply nested logic, excessive copy-paste, etc?</li>\n    </ol>\n   </blockquote>\n   <p><strong>InfoQ: How do you safeguard AI-generated code?</strong></p>\n   <blockquote>\n    <p><strong>Tornhill</strong>: Safeguarding needs to happen at multiple levels, and all safeguards need to be completely automated in an agentic context. Examples of concrete safeguards include linting, code coverage, mutation testing to ensure your tests actually test, and higher-level metrics like Code Health. In practice, these safeguards are exposed to agents as local MCP servers or command-line tools.</p>\n   </blockquote>\n   <p><strong>InfoQ: How can we do refactoring at scale with agents?</strong></p>\n   <blockquote>\n    <p><strong>Tornhill</strong>: The main steps are to establish a baseline, build a safety-net for behavior, and provide a feedback loop to the agents refactoring the code. The whole process is highly iterative.</p>\n    <ul>\n     <li>The baselining step focuses on measuring code quality to identify what needs improving.</li>\n     <li>The safety-net is a reliable test suite that helps preserve the existing behavior of the codebase.</li>\n     <li>The agentic feedback loop builds on objective code health information and test outcomes so that the AI can determine whether a change moves the code quality closer to the goal.</li>\n     <li>Finally, enable the agents to learn. In our study on <a href=\"https://codescene.com/blog/case-study-refactoring-at-scale-with-agents\">Refactoring at Scale with Agents</a>, we instructed agents to build an evolving playbook of successful codebase-specific refactoring patterns.</li>\n    </ul>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Producing Healthy Code with Artificial Intelligence Costs Fewer Tokens\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/healthy-code-AI-tokens/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795086540000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "智能体 AI 初期可以提升开发速度，但要取得长期成功，必须维护代码健康度，防止复杂度不断累积；健康的代码能提升 AI 表现并降低 Token 成本，而在 MCP 支持下进行智能体重构，则为规模化维护代码质量提供了可行方案。",
+  "oneSentenceSummary": "智能体 AI 初期可以提升开发速度，但要取得长期成功，必须维护代码健康度，防止复杂度不断累积；健康的代码能提升 AI 表现并降低 Token 成本，而在 MCP 支持下进行智能体重构，则为规模化维护代码质量提供了可行方案。",
+  "summary": "文章探讨了使用智能体 AI 进行软件开发所面临的挑战：虽然它能加快初期编码速度，但随着代码复杂度不断上升，这些收益往往会逐渐消失。文章强调了「代码健康度」的重要性，也就是代码是否易于理解、修改和维护；这对项目的长期成功至关重要。作者 Adam Tornhill 指出，健康的代码能提升 AI 的表现并降低 Token 成本，并提出通过智能体重构来规模化维护高质量代码，同时借助指标和反馈循环提供支持。",
+  "mainPoints": [
+    {
+      "point": "智能体 AI 能加快初期开发，但也可能导致代码质量长期退化。",
+      "explanation": "AI 初期完成任务的速度可能快 2–3x，但研究显示，几个月内代码复杂度就会大幅上升，抵消速度提升带来的收益。这种「自我伤害模式」之所以出现，是因为 AI 经常编写自己之后无法可靠维护的代码，进而累积技术债务。"
+    },
+    {
+      "point": "代码健康度是实现可持续 AI 辅助开发的关键。",
+      "explanation": "健康的代码结构清晰、模块内聚，并且意外复杂度低，能让人工工作效率提升至 10x、缺陷减少 15x、代码审查速度提升 2x。对 AI 来说，健康的代码意味着表现更稳定、Token 消耗更低（所需 Token 最多可减少 45%）。缺乏健康代码时，AI 会变得不可靠且趋于保守。"
+    },
+    {
+      "point": "在 MCP 支持下进行智能体重构，可提供可规模化的解决方案。",
+      "explanation": "人工重构速度较慢；自动化智能体可以修复约 50% 的问题，但难以应对复杂情况。加入 MCP（模型上下文协议）并提供实时代码健康度数据后，智能体就能基于充分信息进行理解上下文的重构，将修复率提升至 90–100%。这让大规模重构成为一种可预测、机械化的流程。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 处于一种自我伤害模式，经常编写自己之后无法可靠维护的代码。",
+    "在最理想的情况下，对于代码健康度较低的代码，智能体大约能修复 50% 的问题。代码健康度提升后，AI 的表现会急剧下降，Claude 只能正确重构 20% 的代码。",
+    "健康的代码也意味着经济上更划算的代码——使用健康代码时，完成工作所需的 Token 可以减少 40% 到 45%。"
+  ],
+  "tags": [
+    "编程与工程",
+    "代码质量",
+    "系统设计",
+    "性能优化",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 796,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795086540000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-19 19:09:00"
+}

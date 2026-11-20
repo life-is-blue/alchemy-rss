@@ -1,0 +1,55 @@
+{
+  "id": "RAW_277ef8dd4b",
+  "title": "NVIDIA 通过 Vera Rubin 和 Nemotron 扩大与 Microsoft 的 AI 合作",
+  "url": "https://www.unite.ai/nvidia-expands-microsoft-ai-collaboration-with-vera-rubin-and-nemotron/",
+  "date": "2026-11-20 04:40:05",
+  "author": "Theo Nash, AI Infrastructure & Compute, AI Research Agent",
+  "siteName": "Unite.AI",
+  "content": null,
+  "aiSummary": "NVIDIA 和 Microsoft 正通过将 Vera Rubin NVL72 系统集成至 Azure、借助 Programmed Training 增强 Nemotron 开源模型定制能力，并将 AI 部署范围从云基础设施扩展至本地环境、工业边缘和 Windows Cloud PC，进一步深化双方的 AI 合作。",
+  "oneSentenceSummary": "NVIDIA 和 Microsoft 正通过将 Vera Rubin NVL72 系统集成至 Azure、借助 Programmed Training 增强 Nemotron 开源模型定制能力，并将 AI 部署范围从云基础设施扩展至本地环境、工业边缘和 Windows Cloud PC，进一步深化双方的 AI 合作。",
+  "summary": "在 Microsoft Ignite 2026 上，NVIDIA 和 Microsoft 宣布大幅扩展合作关系。主要进展包括将 Vera Rubin NVL72 系统引入 Azure，以支持推理和智能体应用，并将机密计算保护扩展至机架级 AI 基础设施。双方合作还聚焦于开源模型定制，EY 借助 Programmed Training 成功调整 Nemotron 模型，实现了 55% 的准确率提升和 15x 的成本降低。此外，合作范围正从集中式云服务扩展至本地环境（Azure Local）、工业边缘设备（Jetson Thor/Orin）和 Windows Cloud PC；双方还通过将 BioNeMo 和 ALCHEMI 工具包集成至 Microsoft Discovery 目录，扩展科学研究能力。",
+  "mainPoints": [
+    {
+      "point": "NVIDIA 和 Microsoft 正将 AI 计算能力扩展至 Azure 中的 Vera Rubin NVL72 系统，并将机密计算扩展至机架级。",
+      "explanation": "此次扩展为受监管客户提供了可验证的敏感数据处理环境，并引入专为推理、智能体应用以及大规模模型训练和推理设计的 Vera Rubin NVL72 系统。"
+    },
+    {
+      "point": "双方合作通过定制化开源模型训练，实现了显著的成本和准确率提升。",
+      "explanation": "EY 使用 Microsoft 的无服务器 Programmed Training，为企业采购分类任务调整 Nemotron 模型。与专有前沿模型相比，准确率提升了 55%，成本降低了 15x。"
+    },
+    {
+      "point": "AI 部署正从集中式云基础设施扩展至边缘和本地环境。",
+      "explanation": "合作范围现已覆盖 Azure Local、用于机器人技术的 Jetson Thor 和 Orin 等工业边缘设备，以及 Windows Cloud PC，让具备推理和工具使用能力的智能体更接近数据生成地点。"
+    },
+    {
+      "point": "专业 AI 工具包正在增强科学研究能力。",
+      "explanation": "NVIDIA 的 BioNeMo 和 ALCHEMI 工具包将加入 Microsoft Discovery 目录，使研究人员能够通过自然语言协调计算生物学、药物发现和材料科学工作流。"
+    }
+  ],
+  "keyQuotes": [
+    "NVIDIA 和 Microsoft 正将机密计算扩展至机架级 AI 基础设施，让受监管客户能够在释放敏感数据之前验证运行环境。",
+    "EY 使用 Programmed Training 调整 Nemotron 模型，据报告，准确率提升了 55%，与专有前沿模型相比，成本降低了 15x。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "云原生 / DevOps",
+    "模型训练与推理",
+    "AI 产品与应用",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 84,
+  "wordCount": 972,
+  "domain": "unite.ai",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_b7948dd4dc",
+  "sourceName": "Unite.AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795120805000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-20 04:40:05"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-20 06:51:08 | [返回首页](/README.md)
+**更新时间**: 2026-11-20 12:49:19 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17599)
+- [AI & 大模型](#ai-llm) (17627)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1037)
-- [DevOps](#devops) (859)
+- [DevOps](#devops) (862)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7231)
+- [其他](#other) (7233)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [将-Linear-的-GTM-扩展至-$100M-ARR——Cristina-Cordova，COO——Latent-Space](https://latent.space/p/linear-scaling/) - AI 精选
 - [驯服临床幻觉：我们如何借助-AWS-Bedrock-和向量消歧，将患者口语表达映射到-350，000+-个-SNOMED-CT-概念](https://dev.to/saif_urrahman/taming-clinical-hallucinations-how-we-mapped-colloquial-patient-slang-to-350000-snomed-ct-22pk) - AI 精选
 - [构建-Sashiko：智能体代码审查系统的经验](https://cloud.google.com/blog/products/application-development/lessons-from-building-sashiko-an-agentic-code-review-system/) - AI 精选
 - [Gemini-4-Neon-正式发布](https://deepmind.google/blog/introducing-gemini-4-neon/) - AI 精选
@@ -41,9 +42,8 @@
 - [上限让人尝鲜，可靠让人常用：千问蒋冠军谈-Personal-Agent](https://mp.weixin.qq.com/s?__biz=MzE5OTE3NTEyMA==&mid=2247486234&idx=1&sn=072d28546476bf8ca87e1d6e70ed2495) - AI 精选
 - [年终复盘：AI-带给我的-10-个-Aha-Moments｜庄明浩：RSI-来了、AI-的奇观与粗糙、巨头夹缝中的创业机会](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112837&idx=1&sn=965bd2dcc3ca5467af86c0f1ff02bb1b) - AI 精选
 - [Hyra-2.0-发布：为模型研发打造可复用工具](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498763&idx=1&sn=279f8fb4e43a987fdc0aa2af0b0f7958) - AI 精选
-- [Next-Concept-Modeling：快速、并行的由粗到细文本生成](https://hazyresearch.stanford.edu/blog/2026-10-12-ncm) - AI 精选
 
-- [查看全部 17599 篇...](/details/tags/ai-llm.md)
+- [查看全部 17627 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 
-- [查看全部 859 篇...](/details/tags/devops.md)
+- [查看全部 862 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 - [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7231 篇...](/details/tags/other.md)
+- [查看全部 7233 篇...](/details/tags/other.md)
 
 

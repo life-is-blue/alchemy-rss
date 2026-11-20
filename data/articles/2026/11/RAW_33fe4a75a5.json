@@ -1,0 +1,67 @@
+{
+  "id": "RAW_33fe4a75a5",
+  "title": ".NET 11：ASP.NET Core 支持联合类型、默认采用 OpenAPI 3.2，并推出 Blazor AI 组件",
+  "url": "https://www.infoq.com/news/2026/11/asp-net-11-release/",
+  "date": "2026-11-19 19:27:00",
+  "author": "Almir Vuk",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Last week, Microsoft shipped ASP.NET Core in .NET 11 as part of the wider .NET 11 release. The update spans Minimal APIs, OpenAPI, SignalR, Blazor, authentication, and the Kestrel server. As stated in <a href=\"https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/#web:-asp.net-core-and-blazor\">the announcement</a>, .NET 11 is a Standard Term Support release with two years of support.</p>\n   <p>On the API side, developers can now use <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#c-union-types\">C# 15 union types</a> in JSON request and response bodies across Minimal APIs and MVC. The release notes limit the feature to JSON bodies, so route, query, header, and form values cannot bind to a union.</p>\n   <p>Minimal API validation also runs <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#async-validation-for-minimal-apis\">asynchronous validators</a>, which keeps threads free while a rule waits on a database lookup or a remote call. The framework can now localize validation messages and display names itself, and endpoints can skip the remaining middleware pipeline through a new [ShortCircuit] attribute.</p>\n   <p>Developers who generate OpenAPI documents now get <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#openapi-32-by-default\">version 3.2</a> unless they select an earlier one for tooling that has not caught up. As described in the release notes, the framework depends on <em>Microsoft.OpenApi 3.3.1</em> for this, and the notes label that update <a href=\"https://github.com/microsoft/OpenAPI.NET/blob/main/docs/upgrade-guide-3.md\">a breaking change</a>.</p>\n   <p>With 3.2, endpoints that stream server-sent events are documented with a schema for each event's payload, and the generator emits an anyOf schema for unions. Generated documents can also describe endpoints that use the HTTP QUERY method, and APIs that carry the [Obsolete] attribute show up as deprecated.</p>\n   <p>SignalR adds <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#signalr-authentication-refresh\">authentication refresh</a>, so a long-lived connection no longer has to close when its access token expires. As reported, server developers enable it per hub, while the .NET client refreshes automatically by default and the TypeScript client can do the same. Blazor passes the refreshed identity on to Interactive Server components while the circuit stays connected.</p>\n   <p>Blazor receives the longest list of changes, and many of them target static server-side rendering. With the new <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#cache-rendered-output-of-a-component-subtree-during-static-ssr\">CacheView component</a>, developers can cache the rendered markup of a component subtree, and the child components do not run when a cached copy is served. Blazor now ships client-side validation for static SSR forms, enabled by default.</p>\n   <p>Developers can also carry data between requests with <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#persist-temporary-data-between-http-requests-during-static-server-side-rendering-static-ssr\">TempData</a> or session values. According to the release notes, the Blazor Web App template drops its app.UseAntiforgery() call, because a middleware for CSRF protection is now added by default.</p>\n   <p>For Interactive Server apps, an opt-in package <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#automatic-circuit-pause-on-tab-inactivity\">pauses the circuit of a hidden browser tab</a> after a delay, two minutes by default, to free server memory. Lists built with Virtualize may now mix items of different heights, and Microsoft raised the default OverscanCount from 3 to 15. Page and sort state in QuickGrid now lives in the URL query string, with sortable headers and pager controls rendered as links instead of buttons.</p>\n   <p>The release notes flag this as a CSS breaking change, because custom styles written for the buttons also have to target the links. The release also includes <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11#experimental-blazor-ai-components-for-agentic-user-interfaces\">Microsoft.AspNetCore.Components.AI</a>, a set of components for chat and agent interfaces. According to the announcement, Microsoft treats that package as experimental and will keep it in prerelease throughout .NET 11.</p>\n   <p>On the security and server side, an experimental package adds <a href=\"https://w3c.github.io/webappsec-dbsc/\">Device Bound Session Credentials</a>, a protocol that ties session refresh to a private key held by the browser. Response compression and request decompression gain Zstandard support, which is on by default.</p>\n   <p>Kestrel's HTTP/1.1 parser no longer throws exceptions on malformed requests, a change that is reported to raise throughput by up to 20 to 40 percent under heavy invalid traffic. The shared framework libraries of ASP.NET Core are now compiled with runtime-async, described in the release notes as an internal change with no public API impact.</p>\n   <p>Two older APIs are on the way out. The <a href=\"https://github.com/dotnet/aspnetcore/issues/67134\">Microsoft.AspNetCore.Grpc.Swagger package</a> is now deprecated, and Kestrel's TlsClientHelloBytesCallback option is obsolete in favor of the new UseTlsClientHelloListener extension.</p>\n   <p>Other changes in this release are native OpenTelemetry tracing attributes, client-side cancellation of SignalR hub invocations, scrolling to a specific item in Virtualize and QuickGrid, passkey display names inferred from the authenticator, and TimeProvider support in ASP.NET Core Identity.</p>\n   <p>For interested readers and developers, the full release notes are available in the <a href=\"https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-11\">What's new in ASP.NET Core in .NET 11</a> article on Microsoft Learn.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\".NET 11 : ASP.NET Core: Union Type Support, OpenAPI 3.2 by Default and Blazor AI Components\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Almir Vuk\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/asp-net-11-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795087620000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": ".NET 11 中的 ASP.NET Core 新增了 JSON 绑定的联合类型支持、Minimal API 的异步验证，并默认采用 OpenAPI 3.2，同时还大幅改进了 SignalR、Blazor 和 Kestrel 的性能。",
+  "oneSentenceSummary": ".NET 11 中的 ASP.NET Core 新增了 JSON 绑定的联合类型支持、Minimal API 的异步验证，并默认采用 OpenAPI 3.2，同时还大幅改进了 SignalR、Blazor 和 Kestrel 的性能。",
+  "summary": ".NET 11 为 ASP.NET Core 带来多项重要更新，包括在 JSON 请求和响应正文中使用 C# 15 联合类型、为 Minimal API 提供异步验证，以及默认采用 OpenAPI 3.2。SignalR 新增身份验证刷新功能；Blazor 则改进了静态服务器端渲染和缓存，并推出实验性的 AI 组件。Kestrel 服务器通过 Zstandard 压缩和改进畸形请求的错误处理得到优化。",
+  "mainPoints": [
+    {
+      "point": "支持联合类型",
+      "explanation": "开发者现在可以在 Minimal API 和 MVC 的 JSON 请求与响应正文中直接使用 C# 15 联合类型，从而实现更灵活的数据建模与绑定。"
+    },
+    {
+      "point": "异步验证",
+      "explanation": "Minimal API 现在支持异步验证器，框架可以在不阻塞主线程的情况下执行复杂的验证检查（例如查询数据库），提升应用整体的响应能力。"
+    },
+    {
+      "point": "默认采用 OpenAPI 3.2",
+      "explanation": "OpenAPI 文档生成现在默认使用 3.2 版本，支持流式端点、联合类型和已弃用 API 等功能。此次更新要求使用 Microsoft.OpenApi 3.3.1。"
+    },
+    {
+      "point": "SignalR 身份验证刷新",
+      "explanation": "SignalR 中心现在可以自动刷新身份验证令牌，让长连接在初始访问令牌过期后仍能持续运行，改善实时应用的用户体验。"
+    },
+    {
+      "point": "Blazor 增强",
+      "explanation": "Blazor 获得多项重要更新，包括用于缓存渲染输出的 CacheView 组件、静态 SSR 表单的客户端验证，以及用于构建智能体式用户界面的实验性 Microsoft.AspNetCore.Components.AI 程序包。"
+    },
+    {
+      "point": "Kestrel 性能改进",
+      "explanation": "Kestrel 服务器针对响应新增 Zstandard 压缩，并改进了对 HTTP/1.1 请求的错误处理。在大量无效流量的情况下，吞吐量最高可提升 40%。"
+    }
+  ],
+  "keyQuotes": [
+    "此次更新涵盖 Minimal API、OpenAPI、SignalR、Blazor、身份验证和 Kestrel 服务器。",
+    "开发者现在可以在 Minimal API 和 MVC 的 JSON 请求与响应正文中使用 C# 15 联合类型。",
+    "框架现在可以自行本地化验证消息和显示名称；端点还可以通过新增的 [ShortCircuit] 特性跳过剩余的中间件管道。",
+    "在 3.2 版中，流式传输服务器发送事件的端点会为每个事件的负载生成对应的架构，生成器也会为联合类型生成 anyOf 架构。",
+    "SignalR 新增了身份验证刷新功能，因此长连接不再需要在访问令牌过期时关闭。",
+    "发行说明将此项标记为 CSS 破坏性变更，因为为按钮编写的自定义样式也必须应用到链接上。"
+  ],
+  "tags": [
+    "编程与工程",
+    "后端开发",
+    "性能优化",
+    "云原生 / DevOps",
+    "数据工程"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 696,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795087620000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-19 19:27:00"
+}
