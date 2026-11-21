@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-21 06:27:39 | [返回首页](/README.md)
+**更新时间**: 2026-11-21 12:44:52 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17627)
+- [AI & 大模型](#ai-llm) (17672)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1037)
-- [DevOps](#devops) (862)
+- [DevOps](#devops) (868)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7233)
+- [其他](#other) (7239)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [应对对抗性蒸馏](https://openai.com/index/combatting-adversarial-distillation) - AI 精选
+- [Hy4-正式版开源：多模态-MoE，770B-激活-49B，首次新增视觉能力！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247515963&idx=1&sn=d82e7d4f23e0719fbd137e2072eec688) - AI 精选
 - [将-Linear-的-GTM-扩展至-$100M-ARR——Cristina-Cordova，COO——Latent-Space](https://latent.space/p/linear-scaling/) - AI 精选
 - [驯服临床幻觉：我们如何借助-AWS-Bedrock-和向量消歧，将患者口语表达映射到-350，000+-个-SNOMED-CT-概念](https://dev.to/saif_urrahman/taming-clinical-hallucinations-how-we-mapped-colloquial-patient-slang-to-350000-snomed-ct-22pk) - AI 精选
 - [构建-Sashiko：智能体代码审查系统的经验](https://cloud.google.com/blog/products/application-development/lessons-from-building-sashiko-an-agentic-code-review-system/) - AI 精选
@@ -40,10 +42,8 @@
 - [100+-个客户共用一个语义模型，构建时间缩短-70%](https://towardsdatascience.com/how-to-report-for-100-clients-with-one-semantic-model/) - AI 精选
 - [GPT-6-Cyber：推动对齐型网络安全智能体的能力前沿](https://openai.com/index/introducing-gpt-6-cyber) - AI 精选
 - [上限让人尝鲜，可靠让人常用：千问蒋冠军谈-Personal-Agent](https://mp.weixin.qq.com/s?__biz=MzE5OTE3NTEyMA==&mid=2247486234&idx=1&sn=072d28546476bf8ca87e1d6e70ed2495) - AI 精选
-- [年终复盘：AI-带给我的-10-个-Aha-Moments｜庄明浩：RSI-来了、AI-的奇观与粗糙、巨头夹缝中的创业机会](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649112837&idx=1&sn=965bd2dcc3ca5467af86c0f1ff02bb1b) - AI 精选
-- [Hyra-2.0-发布：为模型研发打造可复用工具](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247498763&idx=1&sn=279f8fb4e43a987fdc0aa2af0b0f7958) - AI 精选
 
-- [查看全部 17627 篇...](/details/tags/ai-llm.md)
+- [查看全部 17672 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 
-- [查看全部 862 篇...](/details/tags/devops.md)
+- [查看全部 868 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -166,6 +166,7 @@
 
 
 
+- [直播观察（三）：谁在直播间当榜一大哥，他们为什么掏钱？](https://yage.ai/live-streaming-3.html) - AI 精选
 - [Milvus-HNSW-量化索引选型指南：从-SQ、PQ、PRQ-到-Refine-实测](https://mp.weixin.qq.com/s?__biz=MzUzMDI5OTA5NQ==&mid=2247513657&idx=1&sn=988996100bb006008540b1c5880c4d87) - AI 精选
 - [RAG-中的噪声文本：拼写错误、OCR-和经典拼写检查的局限](https://towardsdatascience.com/noisy-text-in-rag-typos-ocr-and-the-gap-classical-spell-check-leaves/) - AI 精选
 - [全球首次！机器人迎战网球运动员，极限救球，摔倒光速弹起](https://www.qbitai.com/2026/08/478093.html) - AI 精选
@@ -185,8 +186,7 @@
 - [唐杰、杨植麟、姚顺雨、林俊旸罕见同台分享，这-3-个小时的信息密度实在太高了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647678570&idx=1&sn=f68b4a141b817b8d65d8e3b4f4954be8) - AI 精选
 - [重磅！Claude-Code-官方开源：AI-屎山代码，终于有解了~（附提示词）](https://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247513292&idx=1&sn=a6e6fd015ccedd2d78ae6c3ce1911459) - AI 精选
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
-- [今年看到最系统的-AI-Agents-时代-Memory-综述～](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247716803&idx=1&sn=98f235bb5a75cf5d6149c838cbf90270) - AI 精选
 
-- [查看全部 7233 篇...](/details/tags/other.md)
+- [查看全部 7239 篇...](/details/tags/other.md)
 
 

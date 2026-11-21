@@ -1,0 +1,57 @@
+{
+  "id": "RAW_0b2ccd45d5",
+  "title": "MiniMax H3 Image：两种姿态控制方案（手动 VNCCS + SAM3D 照片反推）——ComfyUI 工作流指南",
+  "url": "https://dev.to/ai-ksk/minimax-h3-image-two-pose-directors-manual-vnccs-sam3d-photo-reverse-comfyui-workflow-guide-3bb1",
+  "date": "2026-11-21 06:07:11",
+  "author": "AI-KSK",
+  "siteName": "DEV Community: machinelearning",
+  "content": null,
+  "aiSummary": "本文介绍了一套基于 MiniMax H3 Image 模型的 ComfyUI 工作流，通过手动 VNCCS 摆姿和 SAM3D 照片反推两条路径实现可控的 3D 姿态生成，在精准控制姿态的同时保留角色身份特征。",
+  "oneSentenceSummary": "本文介绍了一套基于 MiniMax H3 Image 模型的 ComfyUI 工作流，通过手动 VNCCS 摆姿和 SAM3D 照片反推两条路径实现可控的 3D 姿态生成，在精准控制姿态的同时保留角色身份特征。",
+  "summary": "本文介绍了一套适用于 MiniMax H3 Image 模型的 ComfyUI 工作流指南，通过两种不同方式实现可控的 3D 姿态生成。手动摆姿分支（VNCCS）允许用户手动构建 3D 骨架来控制姿态；照片反推分支（SAM3D）则从参考照片中提取 3D 姿态。该工作流通过 RunningHub 在线运行，无需本地安装。它包含 58 个节点，涵盖 25 种节点类型，并依赖包括 minimax_h3_image_pruned_int8_convrot.safetensors 在内的特定模型。系统在应用可控姿态的同时，能够保留参考图像中的角色身份特征，但也承认在极端姿态和遮挡情况下存在局限。该工作流只需 6 步采样即可生成高分辨率结果，适用于高效的角色图像生成。",
+  "mainPoints": [
+    {
+      "point": "两种不同的姿态控制分支，让角色生成更加灵活",
+      "explanation": "该工作流提供手动 VNCCS 摆姿来实现构想中的姿态，也提供 SAM3D 照片反推来还原参考姿态。用户可以根据目标姿态是仅存在于想象中，还是能够从参考照片中获取，选择合适的方法。"
+    },
+    {
+      "point": "通过 RunningHub 在线运行，无需本地安装",
+      "explanation": "该工作流完全在浏览器中通过 RunningHub 平台运行，无需配置 ComfyUI 即可使用，同时仍具备完整功能，包含 58 个节点，涵盖 25 种节点类型。"
+    },
+    {
+      "point": "6 步采样兼顾速度与质量",
+      "explanation": "该工作流以高分辨率仅需 6 步采样即可完成生成，便于快速迭代和试验。不过，文章也指出，复杂结果可能需要多次运行才能实现。"
+    },
+    {
+      "point": "保留角色身份特征，但仍有局限",
+      "explanation": "系统能够保留参考图像中的角色身份特征，但也承认，遮挡严重的极端姿态、侧面视角或四肢交叉等情况可能导致面部特征偏移。建议使用简单、光线充足的参考图，以获得最佳效果。"
+    }
+  ],
+  "keyQuotes": [
+    "两种姿态控制方案，一个模型：MiniMax H3 Image 如何将照片转化为可控的 3D 姿态",
+    "该工作流保留参考图中的身份特征，并从骨架获取姿态",
+    "6 步很快，但不是魔法。复杂结果可能需要多次运行",
+    "身份特征保留效果不错，但并非绝对。极端姿态（严重遮挡、侧面视角加四肢交叉）仍可能导致特征偏移。参考图尽量保持简单、光线充足"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "图像生成",
+    "AI 工作流",
+    "计算机视觉",
+    "模型训练与推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 543,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795212431000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-21 06:07:11"
+}

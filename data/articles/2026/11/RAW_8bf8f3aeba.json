@@ -1,0 +1,46 @@
+{
+  "id": "RAW_8bf8f3aeba",
+  "title": "Visual Studio Code 1.148（Insiders）",
+  "url": "https://devblogs.microsoft.com/vscode-blog/visual-studio-code-1.148-(insiders)",
+  "date": "2026-11-26 01:00:00",
+  "author": "Visual Studio Code Team",
+  "siteName": "Microsoft for Developers",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Learn what is new in the latest Visual Studio Code Insiders build, including agent session management and editor tab improvements.</p>\n  <p><a href=\"https://code.visualstudio.com/updates/v1_148\">Read the full article</a></p>\n </body>\n</html>",
+  "aiSummary": "此预览版本新增智能体会话管理功能，让用户能够跟踪并控制 AI 智能体的交互；同时改进编辑器标签页，优化上下文切换并保留状态。",
+  "oneSentenceSummary": "此预览版本新增智能体会话管理功能，让用户能够跟踪并控制 AI 智能体的交互；同时改进编辑器标签页，优化上下文切换并保留状态。",
+  "summary": "最新的 Visual Studio Code Insiders 版本（1.148）着重提升 AI 智能体相关的开发体验和编辑器易用性。新增的「智能体会话」视图可帮助用户监控正在进行的智能体对话、查看执行历史记录并管理会话状态。此外，编辑器标签页也经过改进，在文件和智能体之间切换时能更好地保留上下文，让工作流程更加顺畅。",
+  "mainPoints": [
+    {
+      "point": "智能体会话管理",
+      "explanation": "此次更新新增专门的「智能体会话」视图，用于显示正在进行的对话及其状态。开发者可以轻松跟踪智能体的进度、查看过往交互记录并管理会话生命周期，同时不会丢失上下文。"
+    },
+    {
+      "point": "改进编辑器标签页",
+      "explanation": "编辑器标签页系统得到增强，能够更好地保留状态。在文件或智能体之间切换时，编辑器可以更有效地保留上下文，减少重新设置选项或恢复位置的需要，从而简化开发流程。"
+    }
+  ],
+  "keyQuotes": [
+    "了解最新 Visual Studio Code Insiders 版本有哪些新功能，包括智能体会话管理和编辑器标签页改进。"
+  ],
+  "tags": [
+    "编程与工程",
+    "AI Agent",
+    "用户体验设计",
+    "历史",
+    "个人效率"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 24,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e0e15b83",
+  "sourceName": "Microsoft for Developers",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795626000000,
+  "publishDateStr": "11-26",
+  "publishDateTimeStr": "2026-11-26 01:00:00"
+}

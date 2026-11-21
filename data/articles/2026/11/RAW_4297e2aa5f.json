@@ -1,0 +1,53 @@
+{
+  "id": "RAW_4297e2aa5f",
+  "title": "Andy Clarke 回答关于《Web 出众设计》的六个问题",
+  "url": "https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/",
+  "date": "2026-11-20 23:03:50",
+  "author": "Geoff Graham",
+  "siteName": "CSS-Tricks",
+  "content": null,
+  "aiSummary": "设计师 Andy Clarke 介绍了他的电子书《Web 出众设计》，倡导打造有鲜明个性的网站，摆脱常见模板和熟悉套路的束缚。",
+  "oneSentenceSummary": "设计师 Andy Clarke 介绍了他的电子书《Web 出众设计》，倡导打造有鲜明个性的网站，摆脱常见模板和熟悉套路的束缚。",
+  "summary": "本文采访了 Stuff & Nonsense 创始人、资深网页设计师 Andy Clarke，谈论他的新电子书《Web 出众设计》。凭借 30 年的从业经验，Clarke 认为，设计中的熟悉感固然有价值，但行业如今过度依赖千篇一律的设计，导致网站彼此难以区分。他强调网页设计中讲故事的重要性，并指出每家公司都有独特的故事，可以影响从配色到布局的各种视觉选择。Clarke 通过虚构的「Wheelman」逃逸司机公司，展示了如何为看似平凡的商业页面注入个性。他还质疑默认采用十二列网格的做法，主张设计师理解布局原则，并选择合适的网格系统。文章的核心观点是，设计师应带着好奇心开展项目，花更多时间去发现公司的有趣之处，并通过深思熟虑的设计决策赋予作品鲜明个性。",
+  "mainPoints": [
+    {
+      "point": "网页设计过度依赖熟悉的套路，造成缺乏个性和记忆点的「同质化设计」。",
+      "explanation": "Clarke 认为，熟悉感有助于提升易用性，但行业对固定版式的依赖，使不同公司的网站看起来都差不多，也让人难以辨认各个品牌的独特气质。"
+    },
+    {
+      "point": "网页设计中的叙事应影响从配色、字体到布局的每一项视觉决策。",
+      "explanation": "Clarke 强调，每家公司都有值得讲述的内在故事。设计师应花时间发掘客户的独特之处，打造体现真实企业个性的视觉形象，而不是套用通用模板。"
+    },
+    {
+      "point": "设计师应跳出默认的十二列网格，创造更有意思的版式。",
+      "explanation": "Clarke 质疑十二列网格是组织内容的唯一方式，主张设计师理解列网格、复合网格和模块网格，以及比例、对称与非对称等概念，从而更有意识地选择布局。"
+    }
+  ],
+  "keyQuotes": [
+    "我设计网站已经超过 30 年了，想不起来还有哪个时期，设计师拥有如此丰富的工具、技巧和技术。可不知为何，许多网站看起来却惊人地相似。",
+    "我把这种千篇一律称为「同质化设计」。如果你只求过得去，那它当然没问题，但它很难让公司变得令人印象深刻，也很难让网站令人难忘。",
+    "我希望他们在下一个项目中多一些好奇心。在打开 Figma 或 Sketch、挑选字体或决定布局之前，我希望他们能花更多时间去发现，自己正在为之设计的公司究竟有什么有趣之处。",
+    "我不指望每个网站都非同凡响，也绝不认为每个设计都必须打破常规。但我希望设计师能更有信心地做出选择，让作品拥有鲜明个性。"
+  ],
+  "tags": [
+    "编程与工程",
+    "设计系统",
+    "UI 设计",
+    "开发者工具",
+    "创始人故事"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 78,
+  "wordCount": 817,
+  "domain": "css-tricks.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_0136bcdc",
+  "sourceName": "CSS-Tricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795187030000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-20 23:03:50"
+}

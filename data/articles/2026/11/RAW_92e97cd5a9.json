@@ -1,0 +1,57 @@
+{
+  "id": "RAW_92e97cd5a9",
+  "title": "为什么输出缓存不起作用",
+  "url": "https://seangoedecke.com/why-output-caching-doesnt-work/",
+  "date": "2026-11-21 08:00:00",
+  "author": "Sean Goedecke",
+  "siteName": "Sean Goedecke",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"post-body\">\n   <section>\n    <p>LLM inference economics depends on caching<sup id=\"fnref-1\"><a href=\"#fn-1\" class=\"footnote-ref\">1</a></sup> model inputs, to prevent the entire conversation history being recomputed on each message<sup id=\"fnref-2\"><a href=\"#fn-2\" class=\"footnote-ref\">2</a></sup>. Should we cache model <em>outputs</em> in the same way? As it turns out, no.</p>\n    <h3 id=\"why-cache-outputs\">Why cache outputs?<a href=\"#why-cache-outputs\" aria-label=\"why cache outputs permalink\" class=\"heading-anchor after\"></a></h3>\n    <p>First, here’s why we might think caching outputs is a good idea. We cache inputs to prevent repeated work, but LLMs do a lot of repeated work in their output as well:</p>\n    <ul>\n     <li>When I get agents to write PRs I often ask them to repeat and explain relevant code snippets in the conversation</li>\n     <li>Long-running agent investigations produce lots of evidence docs, but also need to quote from those docs when they respond to the user</li>\n     <li>Every time I’ve played around with automated AI research I’ve asked the agent to repeat some sample model outputs so I can make my own qualitative check</li>\n    </ul>\n    <p>In all of these cases<sup id=\"fnref-3\"><a href=\"#fn-3\" class=\"footnote-ref\">3</a></sup> I could go and read the files myself, but I don’t. Agents produce such a volume of output, and reading agent output is tiresome, so it’s better to simply ask for the key points.</p>\n    <p>It’s an obvious waste of tokens<sup id=\"fnref-4\"><a href=\"#fn-4\" class=\"footnote-ref\">4</a></sup> to repeat all of this content. In fact, it’s worse than the input caching situation, because it’s a waste of <em>output</em> tokens, which are significantly more expensive to produce<sup id=\"fnref-5\"><a href=\"#fn-5\" class=\"footnote-ref\">5</a></sup> than input tokens are to ingest.</p>\n    <h3 id=\"how-could-we-cache-outputs\">How could we cache outputs?<a href=\"#how-could-we-cache-outputs\" aria-label=\"how could we cache outputs permalink\" class=\"heading-anchor after\"></a></h3>\n    <p>If you want to prevent this, you’d have to get the model to avoid repeating itself. For instance, you could fine-tune or prompt a coding model to output “src/script.py:12-15” instead of simply regurgitating those lines of the file.</p>\n    <p>More generally, you could fine-tune a model to reference segments of its own conversation history instead of repeating them. The harness could then trivially expand those references with the actual content, so all of this is transparent to the user.</p>\n    <h3 id=\"why-caching-outputs-is-probably-a-bad-idea\">Why caching outputs is probably a bad idea<a href=\"#why-caching-outputs-is-probably-a-bad-idea\" aria-label=\"why caching outputs is probably a bad idea permalink\" class=\"heading-anchor after\"></a></h3>\n    <p>Unfortunately none of this is a good idea, because <strong>it only optimizes visible output</strong>. I don’t <em>think</em> models repeat themselves often in their internal chain of thought<sup id=\"fnref-6\"><a href=\"#fn-6\" class=\"footnote-ref\">6</a></sup>. I can’t read frontier chains of thought, but my sense from open models and general principles is that they shouldn’t need to, because that information is already available to them. So optimizing repetition only optimizes the segment of model output that is visible to the user. How much is that?</p>\n    <p>Based on my own agent histories, it’s about 6%. 50% of output tokens are reasoning tokens, and the remaining 44% are tool calls<sup id=\"fnref-7\"><a href=\"#fn-7\" class=\"footnote-ref\">7</a></sup>. So we’re running headlong into <a href=\"https://en.wikipedia.org/wiki/Amdahl%27s_law\">Amdahl’s law</a>: even if you can save two-thirds of the tokens in visible output (a ridiculously optimistic estimate), you’re still only saving 4% of total output tokens.</p>\n    <h3 id=\"how-to-save-output-tokens\">How to save output tokens<a href=\"#how-to-save-output-tokens\" aria-label=\"how to save output tokens permalink\" class=\"heading-anchor after\"></a></h3>\n    <p>If you want to save output tokens, you need to reduce the 94% of output tokens that are invisible, which largely depends on <em>intelligence</em>. The smarter the model<sup id=\"fnref-8\"><a href=\"#fn-8\" class=\"footnote-ref\">8</a></sup>, the fewer reasoning tokens and tool calls it needs to get to the right answer. This is why we see a strange phenomenon<sup id=\"fnref-9\"><a href=\"#fn-9\" class=\"footnote-ref\">9</a></sup> where more expensive models are actually cheaper to use: they might be 5x more expensive per-token, but they can get to the right answer with 6x fewer tokens, so the overall cost is less.</p>\n    <div class=\"footnotes\">\n     <hr>\n     <ol>\n      <li id=\"fn-1\">\n       <p>In the KV cache.</p>\n       <a href=\"#fnref-1\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-2\">\n       <p>Including tool calls.</p>\n       <a href=\"#fnref-2\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-3\">\n       <p>Coding agents often used to repeat tokens in tool calls (e.g. by re-outputting the entire file content for each edit) but I think this behavior has mostly been replaced with more efficient find-and-replace editing tools.</p>\n       <a href=\"#fnref-3\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-4\">\n       <p>I’m pretty sure that most mature inference providers already do speculative decoding based on previous ngrams in the input, which would at least exploit output repetition to deliver a speedup.</p>\n       <a href=\"#fnref-4\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-5\">\n       <p>The reason, broadly speaking, is also the reason why transformers are so important: because of the attention mechanism, input tokens can be ingested in parallel, while output tokens must be generated one-at-a-time.</p>\n       <a href=\"#fnref-5\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-6\">\n       <p>I’m only moderately confident about this. Some open-source reasoning models (particularly early ones) do, but those models also use way more tokens than frontier models for the same output, so my guess is that powerful frontier models don’t loop in their chain of thought very often.</p>\n       <a href=\"#fnref-6\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-7\">\n       <p>It’s possible that tool calls involve some repetition as well, if agents are composing content in the chain of thought and then repeating it in the tool. Any readers who have done a lot of coding with open-source models (or who work at a frontier lab) and thus know the answer to this, please email me if you can — I’m curious.</p>\n       <a href=\"#fnref-7\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-8\">\n       <p>And the better the harness, though I remain convinced that there isn’t that much comparative advantage in harness quality because everyone can copy each other.</p>\n       <a href=\"#fnref-8\" class=\"footnote-backref\">↩</a>\n      </li>\n      <li id=\"fn-9\">\n       <p>This applies to real life too, and is the reason why you shouldn’t hire the cheapest plumber you can find.</p>\n       <a href=\"#fnref-9\" class=\"footnote-backref\">↩</a>\n      </li>\n     </ol>\n    </div>\n   </section>\n  </div>\n  <hr style=\"margin-top:2.625rem;margin-bottom:2.625rem\">\n  <p>If you liked this post, consider <a href=\"https://buttondown.com/seangoedecke\" target=\"_blank\">subscribing</a> to email updates about my new posts, or <a href=\"https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fwww.seangoedecke.com%2Fwhy-output-caching-doesnt-work%2F&amp;t=Why%20output%20caching%20doesn't%20work\" target=\"_blank\">sharing it on Hacker News</a>.</p>\n  <p>Here's a preview of a related post that shares tags with this one.</p>\n  <blockquote style=\"border-left:4px solid #d9d9d9;margin-top:0.875rem;margin-bottom:0.875rem;padding-left:0.875rem\">\n   <p style=\"font-weight:600;margin-bottom:0.4375rem;margin-top:0\">Glue work is still harmful in the age of AI</p>\n   <div>\n    <p>I am not a believer in glue work. Processes that can only be sustained by the unrewarded sacrifice of engineers ought to die.</p>\n    <p>Now that LLMs are writing most of our code, does that free human engineers up to do more <a href=\"https://www.noidea.dog/glue\">glue work</a>? No, it doesn’t. I think glue work is actually <em>less</em> important to companies than it was in the 2010s. Let’s go through four reasons why.\n     <br>\n     <a href=\"https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/\">Continue reading...</a></p>\n   </div>\n  </blockquote>\n  <hr style=\"margin-bottom:1.75rem\">\n </body>\n</html>",
+  "aiSummary": "文章认为，LLM 推理中的输出缓存效果有限，因为只有 6% 的输出 token 对用户可见，其余 94% 是无法通过简单缓存优化的内部推理和工具调用。",
+  "oneSentenceSummary": "文章认为，LLM 推理中的输出缓存效果有限，因为只有 6% 的输出 token 对用户可见，其余 94% 是无法通过简单缓存优化的内部推理和工具调用。",
+  "summary": "文章探讨了与输入缓存相比，缓存 LLM 输出为何存在根本性局限。输入缓存可以避免重复计算对话历史，而输出缓存只能优化对用户可见的 6% token。其余 94% 的输出 token 包括内部推理（50%）和工具调用（44%），这些内容取决于模型的智能水平，无法通过缓存来优化。文章指出，提高输出效率需要更智能的模型，而不是缓存机制，并通过阿姆达尔定律分析说明，即使大幅增加输出缓存，整体 token 节省也十分有限。",
+  "mainPoints": [
+    {
+      "point": "输出缓存只影响全部输出 token 的 6%，因此整体效果有限。",
+      "explanation": "根据作者对智能体历史记录的分析，只有约 6% 的输出 token 对用户可见，其余是推理 token 和工具调用。因此，即使缓存所有可见输出，根据阿姆达尔定律，节省的总输出 token 仍然有限。"
+    },
+    {
+      "point": "LLM 输出 token 大多是内部推理和工具调用，而非用户可见内容。",
+      "explanation": "约 50% 的输出 token 是推理 token，44% 是工具调用。这意味着 94% 的输出对用户不可见，也无法通过输出缓存机制进行优化。"
+    },
+    {
+      "point": "减少输出 token 需要更智能的模型，而不是缓存策略。",
+      "explanation": "那 94% 的不可见输出 token 取决于模型的智能水平。更智能的模型会生成更少的推理 token 和工具调用，这也是为什么更昂贵的模型尽管每个 token 的成本更高，整体使用成本却可能更低。"
+    },
+    {
+      "point": "LLM 推理中的输入缓存与输出缓存有本质区别。",
+      "explanation": "输入缓存可以避免每次收到新消息时重新计算全部对话历史；输出缓存则只能优化模型回复中对用户可见的部分，因此两者带来的优化并不对称。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM 推理的经济性取决于缓存模型输入，以避免每次收到新消息时都重新计算全部对话历史。我们是否也应该以同样的方式缓存模型输出？事实证明，不应该。",
+    "根据我自己的智能体历史记录，可见部分约占 6%。50% 的输出 token 是推理 token，剩余 44% 是工具调用。",
+    "如果想节省输出 token，就需要减少那 94% 对用户不可见的输出，而这在很大程度上取决于模型的智能水平。",
+    "这就是为什么会出现一种奇特的现象：更昂贵的模型实际上用起来更便宜。它们每个 token 的成本可能高出 5 倍，但用来得出正确答案的 token 数量可以少 6 倍，因此总成本反而更低。"
+  ],
+  "tags": [
+    "编程与工程",
+    "注意力管理",
+    "性能优化",
+    "系统设计",
+    "LLM 推理优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 910,
+  "domain": "seangoedecke.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_acd612",
+  "sourceName": "Sean Goedecke",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795219200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-21 08:00:00"
+}

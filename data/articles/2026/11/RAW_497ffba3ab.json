@@ -1,0 +1,52 @@
+{
+  "id": "RAW_497ffba3ab",
+  "title": "我们的 24 个问题中，只有 1 个出现了无人单独持不同意见的分歧",
+  "url": "https://dev.to/getmultio/only-one-of-our-24-questions-split-with-nobody-alone-17am",
+  "date": "2026-11-21 06:17:58",
+  "author": "MultiO",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Most of the interesting results in our divergence study involved a lone model — a claim exactly one model made, or a stance exactly one model took against the rest. But the study's buckets leave one question in a category of its own, and I have come to think it may be the most honest result in the set.</p>\n  <p>The setup: we sent the same 24 questions, unchanged, to five mid-tier models — GPT, Claude, Gemini, Grok and Llama. Six pricing/strategy, six factual with a trap, six coding approach, six recommendations with tradeoffs. A Council read flagged material divergences, and we then hand-classified every question into one of three mutually exclusive buckets:</p>\n  <ul>\n   <li>Broad agreement: 8 of 24 (33%) — no flagged divergence among the judged answers.</li>\n   <li>Lone-model outlier present: 15 of 24 (63%) — at least one sole-source claim or lone dissent.</li>\n   <li>Material split with no lone model: exactly 1 of 24 (4%).</li>\n  </ul>\n  <p>That one question was Q22, a recommendation: should a novelist who writes long documents daily use a mechanical keyboard or a laptop's built-in one? The Council flagged 3 divergences on it, and on the core point the judged answers divided 2–2. Nobody was alone. There was no outlier claim to check first, and no majority to defer to. (One method note, as in the study itself: the Council reads a rotating four of the five answers per question — Claude was the omitted family for Q22 — so \"2–2\" is the split among the judged four.)</p>\n  <p>Why this matters is what a single-model workflow, and even a synthesis workflow, would do with it. Ask one model and you get one side of a 2–2 split presented as a recommendation, with no sign the other side had equal support. Ask for a synthesis and you get a smoothed answer that has to either invent a winner or flatten the tradeoff into a both-sides paragraph — and in flattening it, deletes the actual finding, which is that competent models, given the same question, landed evenly on opposite sides of a preference-dependent choice.</p>\n  <p>That is a different signal from the other two buckets, and it calls for a different response. When the panel agrees, the useful reading is narrow: no model saw a reason to dissent — a consensus signal, not proof of correctness. When one model stands alone, the useful move is to check that lone claim or read that lone dissent first, because across this study, of 14 sole-source claims hand-checked, 8 were the highest-value line in their set and 3 were wrong or invented. And when the panel splits evenly with nobody alone, there is nothing to check first and no winner to crown. The split itself is the result: it tells you the question turns on a tradeoff or a preference that the models cannot settle for you, and the decision has to be made on your own criteria.</p>\n  <p>Across all 24 questions there were 52 material divergences, and exactly half of them (26) involved a lone model — which means the other half were multi-way splits like this one. We have spent most of this series on the lone half, for good reason: it is where both the best lines and the invented ones live. Q22 is a reminder that the other half carries information too, of a quieter kind. An even split is not a failed answer. It is a map of where the genuine disagreement sits.</p>\n  <p>My practical rule now has three branches: if the models agree, treat it as consensus, not truth; if one model stands alone, check it first; and if the panel splits evenly, stop looking for the winning answer and decide which side of the tradeoff you actually live on.</p>\n  <p>Full study, method and caveats (including the rotating judging sets, that one judge was also a panel member, and a memory-bleed incident we found and disclosed — which, fittingly, started with this question's hypothetical novelist): <a href=\"https://multio.ai/research/model-divergence\" target=\"_blank\" rel=\"noopener noreferrer\">https://multio.ai/research/model-divergence</a></p>\n  <p>Disclosure: I build MultiO (multio.ai) — One subscription. Every top AI model… Auto sends each message to the most cost-efficient model that can handle it. Compare asks up to three models side by side, and every message shows its exact token charge on a receipt. Free trial: 3,000,000 tokens, no card required.</p>\n  <p>— <a class=\"mentioned-user\" href=\"https://dev.to/getmultio\">@getmultio</a> / <a href=\"mailto:hello@multio.ai\">hello@multio.ai</a></p>\n </body>\n</html>",
+  "aiSummary": "本文分析了一项模型分歧研究：向 5 个 AI 模型提出 24 个问题后，Q22 上出现了 2 比 2 的平票（小说家应使用机械键盘还是笔记本电脑键盘），这表明模型确实存在分歧，而非回答失败；因此，处理方式应区别于单个模型给出的异议或模型达成共识的情况。",
+  "oneSentenceSummary": "本文分析了一项模型分歧研究：向 5 个 AI 模型提出 24 个问题后，Q22 上出现了 2 比 2 的平票（小说家应使用机械键盘还是笔记本电脑键盘），这表明模型确实存在分歧，而非回答失败；因此，处理方式应区别于单个模型给出的异议或模型达成共识的情况。",
+  "summary": "本文考察了一项模型分歧研究，研究对象是 5 个中等规模的 AI 模型（GPT、Claude、Gemini、Grok、Llama），涉及 4 个类别中的 24 个问题。研究将回答分为 3 类：8 个问题的回答普遍一致（33%），15 个问题出现单个模型给出不同答案的情况（63%），恰好只有 1 个问题（Q22）出现了实质性分歧，且没有哪个模型单独持不同意见——对于要撰写长篇文档的小说家来说，机械键盘还是笔记本电脑键盘更合适，模型给出了 2 比 2 的平票结果。作者认为，平票并不代表回答失败，而是揭示了模型在哪些取决于个人偏好的选择上确实存在分歧，因此需要采取不同的应对策略：将共识视为共识，优先核查单个模型的异议；如果各方势均力敌，就根据个人标准做出决定，而不是试图综合出一个胜出答案。",
+  "mainPoints": [
+    {
+      "point": "Q22 上 2 比 2 的平票表明，模型在取决于个人偏好的选择上确实存在分歧，而非回答失败",
+      "explanation": "如果模型对某个问题意见均分，说明决策取决于用户偏好，而不是客观标准；此时需要个人判断，而非综合模型意见。"
+    },
+    {
+      "point": "针对不同的分歧模式，需要采取 3 种不同的应对策略",
+      "explanation": "作者提出的实用规则是：（1）达成共识 = 视为意见一致，而非视为事实；（2）只有一个模型提出异议 = 优先核查；（3）意见均分 = 不再寻找胜出答案，而是根据个人标准做决定。"
+    },
+    {
+      "point": "单个模型提出的主张既可能价值最高，也可能是错误或杜撰的",
+      "explanation": "在研究中，14 项仅由单一来源提出的主张里，有 8 项是价值最高的见解，而有 3 项是错误或杜撰的，因此必须优先审视单个模型提出的异议。"
+    }
+  ],
+  "keyQuotes": [
+    "「平票并不代表回答失败，而是标示出真正分歧所在。」",
+    "「当只有一个模型持不同意见时，最有用的做法是先核查这项单独提出的主张，或先读一读这条异议。」",
+    "「我现在的实用规则分为 3 种情况：如果模型意见一致，就把它视为共识，而非事实；如果只有一个模型持不同意见，就先核查；如果各方意见均分，就别再寻找胜出答案，而是想清楚自己在实际生活中会选择哪一方。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工作流",
+    "模型训练与推理",
+    "AI Agent",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 713,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795213078000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-21 06:17:58"
+}
