@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-21 12:44:52 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-21 21:53:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,17 +8,13 @@
 
 ### [应对对抗性蒸馏](https://openai.com/index/combatting-adversarial-distillation)
 
-2026-11-20 18:00:00 | 标签: AI 与智能应用, AI 安全与对齐, 安全, 模型训练与推理, AI 工程
-
-> OpenAI 阐述了如何检测并阻止对抗性蒸馏。这是一种恶意行为者在缺少安全防护的情况下提取前沿模型能力的技术。文章解释说，蒸馏是利用一个模型的输出、推理轨迹或判断结果来训练另一个模型，可能会传递网络攻击工具等危险能力。OpenAI 结合对抗性测试、防御性训练、输入与输出分类器，以及 API 层面的保护措施，限制推理轨迹提取。在内部评估中，针对 GPT-6.2 Astra 提取此前请求中推理内容的攻击成功率，从 54.0% 降至 0.2%。该公司还调查协同发起的攻击活动，与其他服务提供商分享调查结果，并支持加强出口管制和制裁措施的立法，以应对试图蒸馏美国前沿模型的外国行为者。
+2026-11-20 18:00:00
 
 
 
 ### [Hy4-正式版开源：多模态-MoE，770B-激活-49B，首次新增视觉能力！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247515963&idx=1&sn=d82e7d4f23e0719fbd137e2072eec688)
 
-2026-11-20 13:10:00 | 标签: AI 与智能应用, 开源项目, 多模态 AI, 混合专家模型, 大语言模型 (LLM)
-
-> 腾讯混元团队正式开源 Hy4 系列多模态大模型，采用混合专家（MoE）架构，总参数 770B 仅激活 49B，显著提升推理效率。模型首次集成视觉理解与电脑操作能力，支持文本和图像输入。提供三个版本：Hy4（后训练对话模型）、Hy4-base（预训练基座）及 Hy4-FP8（FP8 量化推理模型）。在实际任务场景中表现突出，包括卫星图像定位、前端游戏开发、金融办公、科研等。金融众测中在 579 个真实任务上得分 3.04/4，科研任务在 123 项中获第一。提供 vLLM 和 SGLang 本地部署方案，支持 BF16 和 FP8 模型。
+2026-11-20 13:10:00
 
 
 
@@ -5868,9 +5864,7 @@
 
 ### [基于-LLM-Wiki、OKF-与-Git-的-Agent-知识库：淘宝直播互动团队的-AI-Coding-实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650547154&idx=1&sn=0de514e7cac1b4e3fe62a89b2a073c2a)
 
-2026-11-20 16:39:00 | 标签: 编程与工程, AI Agent, 大语言模型 (LLM), AI 编程, RAG / 检索增强
-
-> 文章聚焦淘宝直播互动团队在 AI Coding 实践中构建的 LiveX Wiki 知识库方案。针对传统 RAG 向量知识库在复杂业务编码中存在的知识碎片化、相关性低等瓶颈，团队融合 LLM Wiki 编纂业务理解、OKF 思想组织知识表达、Git 管理版本迭代，按'域-场景-知识'三层结构将跨端跨仓的业务经验显式沉淀为机器可解析的上下文。方案通过层次索引与 Agentic Search 结合实现按需消费与回源核验，评测表明 LiveX Wiki 端到端生码平均得分较无知识库提升 39.15%，较 RAG 方案提升 30.1%，线上仓库定位准确率从 60%升至 90%。
+2026-11-20 16:39:00
 
 
 
@@ -11432,9 +11426,7 @@
 
 ### [突发｜黎曼猜想或被-AI-和数学家联手证明，Claude-立大功](https://mp.weixin.qq.com/s?__biz=MjgzMTAwODI0MA==&mid=2652476701&idx=1&sn=b877117d8a0ca6b9b3a50806a66e9b51)
 
-2026-11-21 00:54:00 | 标签: AI 与智能应用, 大语言模型 (LLM), 数学, AI 经济影响, 科技新闻
-
-> 本文聚焦数学家 Levent Alpöge 宣布与 Anthropic 的 AI 模型 Claude 合作，声称找到了黎曼猜想和广义黎曼猜想的证明。文章首先回顾了黎曼猜想的历史背景及其在数论中的重要性，随后详细描述了 Alpöge 与 Claude 合作的研究过程，包括使用 Lean 形式化证明语言编写的代码、Claude 在复杂推导中的超越性贡献以及公开的 14 个压缩文件的细节。文章还探讨了 Claude 在数学领域的进化历程，引用了其在雅可比猜想、Hadamard 矩阵等方面的贡献，并提到 Anthropic 和 OpenAI 的相关研究进展。最后，文章从数学家的职业角色、AI 的科学发...
+2026-11-21 00:54:00
 
 
 
@@ -15508,241 +15500,181 @@
 
 ### [如何修复团队的-API-密钥问题](https://cloud.google.com/blog/topics/developers-practitioners/how-to-fix-your-teams-api-keys/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, AI Agent, 安全, 商业模式与战略, Google
-
-> 文章探讨使用原始 API 密钥访问 AI 模型所带来的安全风险，尤其是在原型扩展到生产环境时。文章提出了五步迁移策略：（1）让每位开发者通过 `gcloud auth application-default login` 使用应用默认凭据进行身份验证；（2）让应用以专用服务账号运行，并为其配置最低限度的权限；（3）实施最小权限原则，例如使用 `roles/aiplatform.user` 等 IAM 角色；（4）将仍需使用的第三方密钥存储在 Secret Manager 中，并控制访问权限；（5）删除所有旧 API 密钥。指南还提供了适用于 Gemini、Claude 和 OpenAI 模型的...
+2026-11-21 08:00:00
 
 
 
 ### [借助-AI-智能体扩展托管式-Airflow-流水线](https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 数据工程, AI Agent, Google, AI 智能体
-
-> 本文讲述了在线零售商 Cymbal Shops 的经历。该公司使用托管式 Airflow（第 3 代）运行每小时批处理流水线，将点击流事件处理后写入 BigQuery。当「秋季省钱促销」活动和新移动应用的追踪数据使事件规模增至原来的 3 倍时，流水线因内存溢出而失败。托管式 Airflow Agent 诊断了问题，并建议了几种解决方案：直接将文件加载到 BigQuery、分批处理，或增加 Worker 内存。在暂时将 Worker 扩容至 8 GB 后，团队迁移到了 Airflow 3 的原生事件驱动调度方式，使用 Pub/Sub 上的 AssetWatcher，并通过动态任务映射实现逐文件处...
+2026-11-21 08:00:00
 
 
 
 ### [用于测试智能体的数据模拟器](https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 测试与质量, 合成数据, AI 工程, AI Agent
-
-> Google Cloud Blog 介绍了一款内部数据模拟器，它就像企业数据智能体的「风洞」。系统根据简短的英文模式描述生成合成数据环境，包括数据库、文档和聊天记录；在避免包含敏感内容的同时，保留因果关系和组织复杂性。这个由四个阶段组成的流程（编译蓝图、模拟并构建表、生成文档、评估智能体）通过确定性模拟和冻结蓝图确保结果可复现。基准测试包含经验证的答案、计算得出的 SQL 查询，以及基于评分标准的定性评估。系统通过统计真实性报告、领域专家审查和独立校准检查进行验证。这种方法让团队无需访问生产数据，就能跨组织开发和测试智能体。
+2026-11-21 08:00:00
 
 
 
 ### [DynaPORT-借助-AlloyDB-实现现代化升级](https://cloud.google.com/blog/products/databases/dynaport-modernizes-with-alloydb/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 编程语言, AI 工程, AI 编程, AI 医疗健康
-
-> DynaPORT 是印度最大港口运营商使用了 20 多年的码头运营系统。该系统进行了云现代化改造，从本地 Oracle/WebLogic 迁移至 Google Cloud 的 AlloyDB for PostgreSQL 和 Google Kubernetes Engine。迁移过程中，团队借助 Database Migration Service 和 Gemini 辅助重构，将 1.2 million 行 Oracle PL/SQL 代码转换为 PostgreSQL PL/pgSQL，并将 Java JEE 中间件容器化。现代化后的平台实现了 TCO 降低 50%、事务吞吐量提升至 2 倍、...
+2026-11-21 08:00:00
 
 
 
 ### [Apache-Spark-托管服务-4.0-有哪些新功能](https://cloud.google.com/blog/products/data-analytics/whats-new-in-managed-service-for-apache-spark-4-0/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 数据工程, AI 工程, AI Agent, MCP协议
-
-> Google Cloud 宣布 Apache Spark 托管服务 4.0 正式全面推出。这是一种面向无服务器和托管集群部署的新一代运行时，包含 Apache Spark 4.2、Java 25、搭配 Pixi 的 Python 3.13，以及 Apache Iceberg 1.12。主要功能包括重新设计的代码优先控制台，可利用 AI 智能体进行智能体式故障排查，诊断作业失败；通过支持模型上下文协议（MCP）的 Data Agent Kit 集成第三方 IDE；在不增加额外费用的情况下加快启动速度；以及借助 Lightning Engine 加速，提供最高 3.25x 的性价比。该服务还引入了...
+2026-11-21 08:00:00
 
 
 
 ### [Spanner-Graph-如何检测-Google-Ads-欺诈与滥用行为](https://cloud.google.com/blog/products/databases/how-spanner-graph-detects-google-ads-fraud-and-abuse/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 安全, AI 工作流, AI 安全与对齐, 数据库
-
-> 为应对数字广告领域日益复杂的欺诈与滥用行为，Google Ads 团队使用 Spanner Graph 构建了基于图的滥用检测平台。2025 年，平台面临超过 8.3 billion 条违反政策的广告和 24.9 million 个被暂停的广告主账号。平台处理批量和实时信号，揭示恶意资产之间隐藏的关联。借助 ISO GQL 进行灵活的模式匹配，系统可在包含超过 500 billion 个节点和 1 trillion 条边的实时图中执行多跳遍历，延迟低于 1 秒。这使平台能够实时检测协同欺诈团伙、点击农场和无效流量，保护广告主预算与用户安全。平台还会关联账单、财务和身份数据，识别屡次违规者，防止...
+2026-11-21 08:00:00
 
 
 
 ### [Vodafone-借助-Data-Engineering-Agent-将数据管道成本降低-30%](https://cloud.google.com/blog/products/data-analytics/vodafone-cuts-data-pipeline-costs-30-via-data-engineeringagent/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 数据工程, AI 工程, 性能优化, AI Agent
-
-> Vodafone Czech Republic 借助 Gemini 驱动的 Data Engineering Agent，将旧版 BigQuery 存储过程（每个包含 2，000-3，000 行代码）迁移为模块化 Dataform 管道。该智能体自动完成转换流程，与手动方式相比，迁移时间减少 90%。现代化后的管道运行速度提升一倍，并通过并行化以及为中间结果创建物化视图，将成本降低 30%。主要改进包括模块化代码结构、自动化测试、自动生成的文档和数据血缘图，以及基于 DAG 的执行方式。团队发现，并行化可能会因抵消缓存带来的收益而增加成本，随后通过创建物化视图解决了这一问题。未来计划包括在 V...
+2026-11-21 08:00:00
 
 
 
 ### [GKE-环境中的-Ambient-Networking：无-Sidecar-的服务网格](https://cloud.google.com/blog/products/networking/ambient-networking-for-gke-sidecarless-service-mesh/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 零信任, 安全, 云原生 / DevOps, 微服务架构
-
-> Google Cloud 宣布 Google Kubernetes Engine（GKE）的 Ambient Networking 正式推出，引入了一种将网络功能与应用工作负载解耦的无 Sidecar 服务网格架构。该方案将网络职责转移到共享的节点级组件和托管控制平面服务，其中包括作为集中式 xDS 控制平面的 Traffic Director、用于工作负载身份凭证的 Certificate Authority Service，以及用于处理拦截流量的节点代理（L4 Envoy）。Ambient Networking 通过托管工作负载身份自动启用 mTLS 加密，并提供便于精细控制服务间通信的访...
+2026-11-21 08:00:00
 
 
 
 ### [如何借助统一访问策略简化云访问（预览版）](https://cloud.google.com/blog/products/identity-security/how-to-simplify-cloud-access-with-unified-access-policies/)
 
-2026-11-21 08:00:00 | 标签: AI 与智能应用, 零信任, 安全, 云原生 / DevOps, AI Agent
-
-> 统一访问策略（UAP）是 Google Cloud 正处于预览阶段的新一代访问控制引擎，旨在解决传统 IAM 在管理云资源上数千条细粒度权限时面临的运营瓶颈。UAP 将允许和拒绝规则整合到统一架构中，将策略定义与资源强制执行分离，并将智能体视为一等主体。它支持最多跨 25 个 CRM 目标进行多重绑定，将每个资源的有效策略规模扩展至 2，500 个主体和 500 个群组，并明确区分安全架构师与本地管理员的职责。该系统帮助平台和安全团队简化访问策略、减少配置负担，并更轻松地大规模管理访问，同时确保贯彻最小权限原则。
+2026-11-21 08:00:00
 
 
 
 ### [有人尝试将-NCM-与-Apple-神经网络引擎（ANE）结合吗？](https://dev.to/polydeuces32/has-anyone-tried-combining-ncm-with-apples-neural-engine-ane-1fo9)
 
-2026-11-21 07:48:45 | 标签: AI 与智能应用, 本地与端侧 AI, AI 硬件与芯片, AI 工程, Apple 芯片
-
-> 这篇简短的探讨关注能否通过 Core ML 在 Apple 神经网络引擎（ANE）上部署下一概念建模（NCM）这一概念驱动的生成式架构。作者提出了一些实际问题，包括 ANE 加速、FP16 精度的优势、从 PyTorch 转换到 Core ML 时面临的挑战、M4 MacBook Air 的硬件限制，以及对于这类模型，ANE 相较于 CPU/GPU 是否能带来显著的性能提升。文章反映出人们希望利用 Apple Silicon 专用神经网络硬件开展本地 AI 研究，而不局限于传统的 GPU/CUDA 生态。
+2026-11-21 07:48:45
 
 
 
 ### [GGUF-格式的-Darwin-180B-RSI-R3：对-VIDRAFT-开放权重模型的字节级技术剖析](https://dev.to/ai_openfree_b23025ef075cf/darwin-180b-rsi-r3-in-gguf-format-a-byte-level-technical-breakdown-of-vidrafts-open-model-ad)
 
-2026-11-21 07:01:14 | 标签: AI 与智能应用, AI 工程, 模型训练与推理, 开放权重模型, 本地与端侧 AI
-
-> 本文分析了 VIDRAFT 的 Darwin-180B-RSI-R3。这是一款以 GGUF 格式发布的 180B 参数开放权重语言模型。文章基于一家中文科技媒体对其结构所做的字节级剖析，介绍 GGUF 容器格式的组织方式：包含魔数的文件头、存储分词器与架构超参数等信息的元数据键值区，以及支持量化的张量数据块。文章还说明，GGUF 可通过内存映射实现大型模型的高效加载，支持多种量化方案（Q4_K、Q5_K、Q8_0），并可部署于多种硬件平台。文章未提供基准测试结果，而是引导读者查阅 VIDRAFT 的官方发布说明以获取定量评估数据。本文可供使用 llama.cpp、本地 LLM 推理或量化模型流...
+2026-11-21 07:01:14
 
 
 
 ### [我们的-24-个问题中，只有-1-个出现了无人单独持不同意见的分歧](https://dev.to/getmultio/only-one-of-our-24-questions-split-with-nobody-alone-17am)
 
-2026-11-21 06:17:58 | 标签: AI 与智能应用, AI 工作流, 模型训练与推理, AI Agent, Anthropic
-
-> 本文考察了一项模型分歧研究，研究对象是 5 个中等规模的 AI 模型（GPT、Claude、Gemini、Grok、Llama），涉及 4 个类别中的 24 个问题。研究将回答分为 3 类：8 个问题的回答普遍一致（33%），15 个问题出现单个模型给出不同答案的情况（63%），恰好只有 1 个问题（Q22）出现了实质性分歧，且没有哪个模型单独持不同意见——对于要撰写长篇文档的小说家来说，机械键盘还是笔记本电脑键盘更合适，模型给出了 2 比 2 的平票结果。作者认为，平票并不代表回答失败，而是揭示了模型在哪些取决于个人偏好的选择上确实存在分歧，因此需要采取不同的应对策略：将共识视为共识，优先核...
+2026-11-21 06:17:58
 
 
 
 ### [MiniMax-H3-Image：两种姿态控制方案（手动-VNCCS-+-SAM3D-照片反推）——ComfyUI-工作流指南](https://dev.to/ai-ksk/minimax-h3-image-two-pose-directors-manual-vnccs-sam3d-photo-reverse-comfyui-workflow-guide-3bb1)
 
-2026-11-21 06:07:11 | 标签: AI 与智能应用, 图像生成, AI 工作流, 计算机视觉, 模型训练与推理
-
-> 本文介绍了一套适用于 MiniMax H3 Image 模型的 ComfyUI 工作流指南，通过两种不同方式实现可控的 3D 姿态生成。手动摆姿分支（VNCCS）允许用户手动构建 3D 骨架来控制姿态；照片反推分支（SAM3D）则从参考照片中提取 3D 姿态。该工作流通过 RunningHub 在线运行，无需本地安装。它包含 58 个节点，涵盖 25 种节点类型，并依赖包括 minimax_h3_image_pruned_int8_convrot.safetensors 在内的特定模型。系统在应用可控姿态的同时，能够保留参考图像中的角色身份特征，但也承认在极端姿态和遮挡情况下存在局限。该工作流...
+2026-11-21 06:07:11
 
 
 
 ### [在拥有用户之前，我们自己编写了简历](https://dev.to/kandidate_ai/before-we-had-users-we-wrote-the-cvs-ourselves-6m8)
 
-2026-11-21 06:06:54 | 标签: AI 与智能应用, AI 工程, AI 工作流, 模型训练与推理, 机器学习
-
-> 本文介绍了在缺乏用户反馈数据的情况下，为德国科技行业职位构建匹配系统所面临的挑战。作者根据真实招聘信息创建合成候选人，用于评估匹配器，并发现了三项关键的测量问题：（1）测试框架使用的评分版本与生产环境不同；（2）81.5% 的评分行因四舍五入而并列，导致排序由检索顺序而非实际分数决定；（3）将候选职位池从 300 个扩大到 500 个后，前 100 个结果的精确率下降。作者通过统一排名函数、采用全序消除并列，以及准确记录评估参数等方式修复了这些问题。文章还介绍了他们的评估框架，包括由 Gemini 2.5 Flash 评判的合成人设、自检索测试，以及 recall@5、MRR 和 precis...
+2026-11-21 06:06:54
 
 
 
 ### [LoanPro-AI-贷款服务助手：运作方式](https://dev.to/kami_butt_69b922ade8de012/loanpro-ai-loan-servicing-assistant-how-it-works-3f09)
 
-2026-11-21 05:57:47 | 标签: AI 与智能应用, AI 工程, AI 工作流, AI 产品与应用, AI 安全与对齐
-
-> 本文分析了 LoanPro 的 AI 贷款服务助手。该系统采用由 3 个智能体组成的架构，据称可将通话时长缩短 15%。系统通过专门的智能体分别处理数据检索、摘要生成和行动选择，并对各部分分别进行测试，而非依赖一个整体式提示词。然而，现有证据有限：相关指标来自供应商和合作伙伴，未经独立验证；99% 的准确率声明也缺乏详细的方法说明和错误分类。系统包含 Bedrock Guardrails、基于角色的访问控制和审计追踪，并通过 8 个 API 端点从 1，400 个字段中提取实时数据。文章最后指出，虽然系统架构合理，但报告的性能提升应视为趋势性指标，而非保证结果。
+2026-11-21 05:57:47
 
 
 
 ### [Levent-Alpöge-声称已证明广义黎曼猜想-pdf](https://dev.to/technoblogger14o3/levent-alpoge-claims-proof-of-the-generalized-riemann-hypothesis-pdf-28fo)
 
-2026-11-21 05:55:02 | 标签: AI 与智能应用, 数学, 机器学习, AI 工程, AI 安全与对齐
-
-> 本文探讨了 Levent Alpöge 声称自己证明了广义黎曼猜想（GRH）一事。广义黎曼猜想是数学界最重要的未解难题之一，它将涉及素数分布的黎曼猜想推广到了更广泛的一类 L 函数。作者从开发者的视角出发，思考这一声明会在数学界引发怎样的激动。文章还谈到作者与数论结缘的个人经历，将数学解题与软件开发相提并论（包括一个用 Python 进行质因数分解的示例），并强调在接受这类突破性声明之前，必须经过严格的同行评审。文章最后讨论了如果该证明得到验证，可能带来的影响，尤其是对密码学和 AI 算法等依赖素数分布性质的领域。
+2026-11-21 05:55:02
 
 
 
 ### [OpenAI-大幅提高-DeepSeek-等竞争对手复制-ChatGPT-的难度](https://dev.to/fathomnews/openai-makes-it-far-harder-for-rivals-like-deepseek-to-copy-chatgpt-3a2c)
 
-2026-11-21 05:45:26 | 标签: AI 与智能应用, AI 安全与对齐, AI 工程, 模型训练与推理, 安全
-
-> OpenAI 开发了两层防护系统，以防止未经授权的模型蒸馏，并将 GPT-6.2 Astra 的推理内容提取成功率从 54% 降至 0.2%。这些防御措施包括对抗训练、针对输入和输出的分类器检查，以及将受保护的推理内容与对话历史绑定的 API 控制。OpenAI 将此类攻击与网络安全、生物学和国家安全风险联系起来，并已对数千个与 DeepSeek 和 Moonshot AI 相关行动有关的账户采取措施。
+2026-11-21 05:45:26
 
 
 
 ### [我的-AI-智能体否决了自己-90%-的想法，而这正是它获胜的原因-🏆](https://dev.to/sanika/my-ai-agent-rejected-90-of-its-own-ideas-and-thats-why-it-won-3i38)
 
-2026-11-21 05:41:05 | 标签: AI 与智能应用, AI 工程, 模型训练与推理, AI 工作流, AI 安全与对齐
-
-> 本文介绍了一款为 TAMU Datathon 2026 打造的自我改进型 AI 智能体。它通过严格的验证框架获得第 3 名。该智能体分为两个层级：第 1 层从示例中学习通俗易懂的「如果……那么……」规则，并对每条规则进行实证测试，只保留能在未见过的数据上提升结果的规则；效果不佳的规则会被降为备用规则，或彻底否决。第 2 层会找出规则失效的环节，并委托教师模型创建可复用的「技能」；这些技能也要接受同样的测试，只有确实提升表现才会被保留。系统从不修改模型权重，所有知识都以可读文本和设置的形式保存。其关键创新包括：当改进陷入停滞时自动设定停止条件；通过缓存和批处理应对 API 速率限制；以及坚持认为...
+2026-11-21 05:41:05
 
 
 
 ### [如何在云端-GPU-上运行-Jupyter-Notebook？](https://dev.to/viswaretas_kotra/how-do-you-run-a-jupyter-notebook-on-a-cloud-gpu-5923)
 
-2026-11-21 05:34:49 | 标签: AI 与智能应用, AI 工作流, AI 工程, AI 产品与应用, 模型训练与推理
-
-> 本文通过实操演示，介绍如何借助 Nodus Workspaces 在云端 GPU 上运行 Jupyter Notebook。文章详细说明了启动支持 GPU 的 JupyterLab 环境的三步流程，解释如何确认内核与 GPU 的兼容性，说明 Workspace 停止后哪些文件仍会保留，并演示安全的端口转发方法。指南还分析了成本，展示整夜使用 GPU 的费用（视 GPU 类型而定，为 $6-$36），讨论空闲超时机制，并建议将长时间运行的计算任务转为 Jobs，同时启用自动检查点。实用示例包括 CLI 命令、Python SDK 用法和成本对比图。
+2026-11-21 05:34:49
 
 
 
 ### [如何在本地运行-Cloudflare-clairic-flash（其运行时无法在-RTX-3090/4090-上运行）](https://dev.to/alanwest/how-to-run-cloudflare-clairic-flash-locally-its-runtime-fails-on-rtx-30904090-3b8m)
 
-2026-11-21 05:20:02 | 标签: AI 与智能应用, AI 工程, 模型训练与推理, AI 产品与应用, 开放权重模型
-
-> 本文详细介绍了如何在本地运行 Cloudflare 的开放权重视觉模型 clairic-flash。作者指出了两个关键问题：官方运行时因计算能力要求（低于 9.0）而无法在 RTX 3090/4090 GPU 上运行；GGUF 量化则会丢失重要的提取功能。文章分析了模型架构（以 9B Qwen3.5 为骨干网络，并配有专门的提取流程），比较了多种本地部署方案，包括打过补丁的 int4 构建、适用于 Apple Silicon 的 MLX，以及 llama.cpp 配置，并提供了实际的 VRAM 需求和性能指标。作者总结称，虽然 Workers AI 是大多数用户的推荐方案，但只要采用特定的硬件...
+2026-11-21 05:20:02
 
 
 
 ### [对抗低质内容的战争与一种新兴武器：形式化验证-—-Latent-Space](https://latent.space/p/formal-verification/)
 
-2026-11-21 05:18:41 | 标签: AI 与智能应用, 形式化验证, AI 安全与对齐, AI 工程, 模型训练与推理
-
-> AI 行业的「年度词汇」是「低质内容」——大型语言模型生成的低质量输出。随着 AI 生成代码日益普及，形式化验证系统正成为一种解决方案。这类系统通过数学证明和逻辑来验证软件正确性。&Truth、Harmonic、Theorem 和 Axiom Math 等公司都在利用 AI 和形式化验证技术。&Truth 基于 Lean 构建；Lean 是一种开源证明助手，前沿模型会用它解决复杂的数学问题。该公司的目标是打造一台「验证机器」，能够证明代码满足指定要求。网络安全是一个重点方向，其中的应用包括确保 C 代码的内存安全。文章探讨了形式化验证如何融入开发者的工作流程，并提出开发方式正从「氛围编程」转向...
+2026-11-21 05:18:41
 
 
 
 ### [路透社报道称，SEC-执法人员正在审查-NVIDIA-的会计问题](https://www.unite.ai/sec-enforcement-staff-examine-nvidia-accounting-reuters-reports/)
 
-2026-11-21 05:08:04 | 标签: AI 与智能应用, AI 安全与对齐, 财报解读, NVIDIA, AI 商业
-
-> 据路透社 2026 年 11 月 20 日报道，美国证券交易委员会（SEC）正在调查 NVIDIA 的潜在会计问题。此次调查是在 NVIDIA 发布 2026 年第三季度财报后展开的，该季度公司营收为 $115.8 billion，同比增长 103%，其中 $107.6 billion 来自数据中心业务。调查的具体重点和启动时间尚未披露，但相关报道发布后，NVIDIA 股价下跌约 13%。SEC 执法部已将财务报告和会计控制列为重点，并设立专门的财务报告与会计部门，以处理企业信息披露问题。尽管地理区域收入报告和 AI 融资关系引发了公众关注，但目前尚未确认它们是否属于此次调查的对象。SEC 正...
+2026-11-21 05:08:04
 
 
 
 ### [Thinking-Machines-Lab-发布面向本地设备的-Inkling-2-Mini](https://www.unite.ai/thinking-machines-lab-releases-inkling-2-mini-for-local-devices/)
 
-2026-11-21 04:49:04 | 标签: AI 与智能应用, 开放权重模型, 模型训练与推理, 本地与端侧 AI, 推理模型
-
-> Thinking Machines Lab 于 2026 年 11 月 20 日宣布推出 Inkling 2 Mini。这款开放权重 AI 模型面向消费级笔记本电脑设计，拥有 26.4 billion 个参数，内存占用约为 ~20GB。该模型采用带循环结构的混合专家 Transformer 架构：24 层分为四个区块，其中间两个区块共享权重，各运行三次，因此每个词元会经过 48 次层应用。循环结构提升了推理能力，同时不会增加存储的知识。该模型在 DeepSWE v1.1 上取得 48.2%，在 SWE-bench Pro v2 Hard 上取得 77.9%，并在 BrowseComp 和 De...
+2026-11-21 04:49:04
 
 
 
 ### [OpenAI-加强-GPT-6.2-Astra-对推理提取攻击的防护](https://www.unite.ai/openai-strengthens-gpt-6-2-astra-against-reasoning-extraction/)
 
-2026-11-21 04:47:03 | 标签: AI 与智能应用, 安全, AI 安全与对齐, AI 工作流, 模型训练与推理
-
-> OpenAI 宣布加强 GPT-6.2 Astra 对抗对抗性蒸馏攻击的防护，将提取受保护推理内容的成功率从 54.0% 降至 0.2%。该研究比较了两种训练方式：一种使用教师模型的精确推理轨迹，另一种使用摘要；结果发现，精确轨迹更有效地迁移网络能力。目前的防护措施包括输入分类器、输出分类器、工具调用参数监控，以及将对话历史与生成推理的消息绑定。针对攻击行动的执法措施会追踪协同提取尝试，每周采取的措施涉及数千至数万个账户。OpenAI 还与其他服务提供商共享相关指标，并支持针对未经授权的模型提取行为的立法。
+2026-11-21 04:47:03
 
 
 
 ### [METR-发现-AI-的时间跨度每-110-天翻倍，但研究判断力仍显滞后](https://www.unite.ai/metr-finds-ai-time-horizons-doubling-as-research-judgment-lags/)
 
-2026-11-21 04:27:04 | 标签: AI 与智能应用, 机器学习, 模型训练与推理, AI 安全与对齐, AI Agent
-
-> METR 于 2026 年 11 月发布的能力更新显示，在 TH1.1 与 TH2 综合评测中，公开可用前沿模型的 50% 时间跨度——即模型有一半概率成功完成的任务所需时长（由人类估算）——大约每 110 天翻一倍。TH2 评测套件包含 12 个类别的 36 项任务：其中 8 个类别的目标可验证并由自动评分，另外 4 个类别涉及概念推理、判断力和开放式研究。在可验证的 TH2 任务中，当前模型的时间跨度最高可达 27 小时；在经过正式基线测试的任务上，表现最佳的模型超过了所有参与基线测试的人类。 然而，在「制作 METR 任务」等开放式研究任务中，模型产出的结果被 METR 评为勉强有用，没...
+2026-11-21 04:27:04
 
 
 
 ### [OpenAI-推出用于药物化学推理的-MedChemBench](https://www.unite.ai/openai-introduces-medchembench-for-medicinal-chemistry-reasoning/)
 
-2026-11-21 03:20:02 | 标签: AI 与智能应用, 模型训练与推理, AI 产品与应用, 模型评测与基准, AI Agent
-
-> OpenAI 推出了 MedChemBench，这是一个包含 99 道题的药物化学基准测试，旨在检验 AI 模型能否将分子结构与实验依据联系起来，从而解释实验结果、比较化合物并预测其性质。该基准测试取材于 117 篇论文和专利，涵盖 761 种不同的评分分子结构，涉及临床前药物发现的多个类别，包括综合先导化合物筛选、构效关系预测、ADME、分子设计、安全性、逆合成和实验生物学。GPT-6.2 Astra 在 xhigh 推理强度下的总分为 84.5%，分子结构得分为 95.37%，科学推理依据得分为 91.05%，但排序与候选化合物筛选得分仅为 50.42%，数值预测得分为 47.02%。该基...
+2026-11-21 03:20:02
 
 
 
 ### [Stavros-Gadinis：伯克利法学院教授、《企业秩序》作者——访谈系列](https://www.unite.ai/stavros-gadinis-berkeley-law-professor-and-author-of-corporate-ordering-interview-series/)
 
-2026-11-21 03:09:00 | 标签: AI 与智能应用, 法律与司法, AI 安全与对齐, AI Agent, 治理
-
-> 在这次访谈中，伯克利加州大学法学教授、《企业秩序》一书作者 Stavros Gadinis 解释了公司如何在监管机构介入前建立内部治理体系，以应对存在争议的决策。他认为，企业秩序包括制定规则、采取管理行动和开展监督，这些职能与国家职能相似，对 AI 治理至关重要。Gadinis 还谈到 AI 公司如何制定安全框架、委托开展红队评估，以及当管理层控制审查流程时所面临的利益冲突。他主张由董事会监督、引入独立外部监督人员，并透明披露安全决策。访谈还探讨了企业自我治理的局限，指出要验证安全措施、保护举报人并协调应对灾难性 AI 风险，仍需公共规则。
+2026-11-21 03:09:00
 
 
 
 ### [华为推出-OSTA-子品牌，首款手机为-AI-核心的-O1-Pro](https://www.unite.ai/huawei-launches-osta-sub-brand-with-ai-centered-o1-pro-phone/)
 
-2026-11-21 02:49:04 | 标签: AI 与智能应用, AI 产品与应用, AI 工作流, 消费电子, AI Agent
-
-> 华为推出全新智能手机子品牌 OSTA（星芒），并发布首款设备 O1 Pro，搭载 HarmonyOS 7 AI 先锋版。该手机配备麒麟 9030S 处理器、6.39 英寸 OLED 屏幕和支持快充的 7，000 mAh 电池。其核心创新是小艺：屏幕亮起后即可使用的 AI 助手，能够主动提供建议并完成任务，例如根据位置和偏好点咖啡。其他演示功能包括出行时推荐餐厅、演唱会返程指引、会议提醒，以及通知用户领取餐食。设备还配备 200 百万像素主摄、50 百万像素潜望式长焦镜头和空间音频录制功能。不过，华为在脚注中承认，部分 AI 功能需要后续软件升级才能使用，且效果可能因应用而异；方言识别也仅支持特...
+2026-11-21 02:49:04
 
 
 
 ### [RadixArk-发布-DaisyRose-27B：一款仅通过强化学习训练的-27B-智能体编程模型](https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/)
 
-2026-11-21 01:42:31 | 标签: AI 与智能应用, 强化学习, AI 编程, 模型训练与推理, 性能优化
-
-> DaisyRose-27B 是 RadixArk 的首款开放权重模型，也是基于 Qwen3.8-27B 进行后训练的版本，仅使用强化学习微调（未采用 SFT 或蒸馏）。该模型拥有 27.8B 个稠密参数、262，144-token 上下文窗口，并支持文本和图像输入。训练通过开源 Miles RL 框架，使用 144 张 H200 GPU，耗时 18 天，达到 37% MFU，速度较基准方案提升 2.0x。DaisyRose-27B 在全部 7 项基准测试中均优于底座模型，其中 Terminal Bench 4.1 的提升最大，pass@1 从 5.6 提高到 12.0。该模型采用 Apache...
+2026-11-21 01:42:31
 
 
 
 ### [IC-Realtime-首席技术官-Andrew-Nassar——访谈系列](https://www.unite.ai/andrew-nassar-cto-of-ic-realtime-interview-series/)
 
-2026-11-21 01:37:08 | 标签: AI 与智能应用, 计算机视觉, 创始人故事, 安全, 模型训练与推理
-
-> 本次访谈采访了 IC Realtime 首席技术官 Andrew Nassar，探讨 AI 视频监控平台 Bunker 的开发与部署。该平台通过 NVIDIA Jetson 网关在本地处理分析任务，同时使用云服务提供远程访问和视频历史记录。Nassar 介绍了公司从模拟监控向数字监控的发展历程，以及边缘 AI 如何支持情境化警报和自然语言视频搜索。平台通过端到端加密、不创建生物特征模板以及由客户控制数据保留方式来保护隐私。主要技术挑战包括应对光照条件变化、确保平台在各种摄像头硬件上稳定运行，以及在网络中断时维持系统韧性。访谈还介绍了混合架构、安全措施（包括加密设备身份和多因素身份验证），以及边...
+2026-11-21 01:37:08
 
 
 
@@ -61000,89 +60932,67 @@
 
 ### [Visual-Studio-Code-1.148（Insiders）](https://devblogs.microsoft.com/vscode-blog/visual-studio-code-1.148-(insiders))
 
-2026-11-26 01:00:00 | 标签: 编程与工程, AI Agent, 用户体验设计, 历史, 个人效率
-
-> 最新的 Visual Studio Code Insiders 版本（1.148）着重提升 AI 智能体相关的开发体验和编辑器易用性。新增的「智能体会话」视图可帮助用户监控正在进行的智能体对话、查看执行历史记录并管理会话状态。此外，编辑器标签页也经过改进，在文件和智能体之间切换时能更好地保留上下文，让工作流程更加顺畅。
+2026-11-26 01:00:00
 
 
 
 ### [为什么输出缓存不起作用](https://seangoedecke.com/why-output-caching-doesnt-work/)
 
-2026-11-21 08:00:00 | 标签: 编程与工程, 注意力管理, 性能优化, 系统设计, LLM 推理优化
-
-> 文章探讨了与输入缓存相比，缓存 LLM 输出为何存在根本性局限。输入缓存可以避免重复计算对话历史，而输出缓存只能优化对用户可见的 6% token。其余 94% 的输出 token 包括内部推理（50%）和工具调用（44%），这些内容取决于模型的智能水平，无法通过缓存来优化。文章指出，提高输出效率需要更智能的模型，而不是缓存机制，并通过阿姆达尔定律分析说明，即使大幅增加输出缓存，整体 token 节省也十分有限。
+2026-11-21 08:00:00
 
 
 
 ### [Meta-TLX：支持先进硬件能力的原生-GPU-编译器扩展](https://www.infoq.com/news/2026/11/meta-triton-tlx-gpu-compiler/)
 
-2026-11-21 02:00:00 | 标签: 编程与工程, AI 硬件与芯片, 性能优化, 开发者工具, 分布式系统
-
-> Meta 的 Triton Low-Level Extensions（TLX）旨在弥合高级 GPU 编程抽象与现代 GPU 架构所需的底层执行控制之间的差距。TLX 为 Triton 增添了 warp-group 编排、同步、内存编排、集群执行和可选布局等能力，让开发者既能保持 Python 的高效开发体验，又能直接控制执行结构。Meta 已将 TLX 部署到生产环境，应用于 Blackwell GPU 上的 GEM 模型训练（MFU 达到 20-25%，前向传播速度最高提升 2 倍）、推荐推理中的 IKBO（在 H100 上提速 4 倍），以及 LLM 预训练中的分布式分组 GEMM，在大规...
+2026-11-21 02:00:00
 
 
 
 ### [Google-向-CNCF-捐赠-Agent-Substrate-和-gVisor，助力大规模安全运行-AI-智能体](https://www.infoq.com/news/2026/11/google-substrate-gvisor-cncf/)
 
-2026-11-20 20:00:00 | 标签: 编程与工程, 云原生 / DevOps, 开发者工具, 安全, AI Agent
-
-> Google 正向云原生计算基金会捐赠 Agent Substrate、gVisor 和 OpenRL，旨在为 AI 智能体基础设施建立开放、中立于厂商的基础。Agent Substrate 将智能体状态（actor）与计算资源（worker）分离，使其无需创建新的 Kubernetes Pod，即可在 500ms 以下快速恢复运行。gVisor 通过用户空间内核隔离，确保不可信的 AI 生成代码能够安全执行。OpenRL 则负责强化学习编排。这些项目共同应对 AI 智能体的独特挑战：智能体在持有状态时有 90-95% 的时间处于空闲状态，同时执行生成的代码也会带来安全风险。这项计划旨在推动智...
+2026-11-20 20:00:00
 
 
 
 ### [欧盟委员会-HR-系统遭网络攻击，攻击者使用开源-AI-工具-ARTEX](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651351377&idx=4&sn=6fddf8262c22063b60be9b1c60999042)
 
-2026-11-20 19:39:00 | 标签: 编程与工程, 安全, AI安全事件, 云原生 / DevOps, 渗透测试与安全工具
-
-> 2026 年 10 月 22 日，欧盟委员会确认其 HR 系统遭到开源 AI 渗透工具 ARTEX 的攻击。美国 FBI 于 11 月 13 日发布预警，警示 ARTEX 被攻击者滥用。ARTEX 能将多种攻击技术快速串联，部分攻击仅用 3 小时即可获得特权访问。攻击者主要利用该工具搜索和定位遗留凭据，如 Azure 凭据中的 SAS 令牌、服务主体、Kudu 凭据等。欧盟委员会随即切断系统访问权限并进行预防性排查，目前未发现数据泄露证据。
+2026-11-20 19:39:00
 
 
 
 ### [程序员的-AI-工具正在给工作添乱！Instagram-掌门人反对追逐-Token-用量：别把工具使用量，当成生产力](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655943797&idx=1&sn=a30725793986020af9b7da358837aca7)
 
-2026-11-20 18:00:00 | 标签: 编程与工程, AI 编程, 开发者工具, AI Agent, 代码质量
-
-> 本文基于 Instagram 负责人亚当·莫塞里与《Silicon Valley Girl》的访谈，探讨了 AI 工具在实际工作中的有效应用。莫塞里指出，许多团队盲目追求 Token 消耗和代码行数，却忽视了 AI 生成内容是否真正提升了生产力。他分享了自己的实践经验：通过构建一个集成会议、邮件、待办等功能的「Desk」工作台，结合反馈机制和共享记忆系统 Custodian，让 AI 工具能持续学习和优化。文章阐述了从「多用 AI」到「用好 AI」的关键转变，强调评估 AI 价值应基于交付成果和用户体验，而非使用数据。
+2026-11-20 18:00:00
 
 
 
 ### [我并网了，我变强了？](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649808250&idx=1&sn=d12cf910f8328e1078a6cd194e540bcb)
 
-2026-11-20 17:39:00 | 标签: 编程与工程, AI Agent, 云原生 / DevOps, 开发者工具, 腾讯
-
-> 本文作者分享了腾讯内部一款协作产品的使用体会，称其为"能力重组"。该产品将人、Agent、工作上下文及工具执行环境连接起来，使个人能够带着自己的判断直接参与更多专业工作，而无需学习所有岗位的细节。文章通过数据服务交付的案例说明，传统依赖人之间沟通的模式下，专业能力现在可以按权限共享被调用。作者进一步探讨了意图传递的挑战、反馈链路的重要性，以及如何借鉴模型训练的 Loss 反馈机制，让组织中的 Agent 能够持续提供改进反馈。文章最后提出，能力连接与 Loss 传导的协作模式，有望改变组织架构设计和项目制落地方式，显著提升想法验证的速度。
+2026-11-20 17:39:00
 
 
 
 ### [应对多端适配挑战：Jetpack-Compose-最新更新全解析](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652163430&idx=1&sn=8b009a040c220f793a210b245de8a989)
 
-2026-11-20 17:30:00 | 标签: 编程与工程, 性能优化, 开发者工具, AI 编程, Kotlin
-
-> 本文聚焦 Jetpack Compose 1.13 稳定版及 AppState 等核心更新，系统阐述如何应对手机、折叠屏、XR 设备、车载等多端适配挑战。文章介绍了 Grid 和 Flexbox 内置支持、渐进式模糊、格式化文本等视觉特性，以及 BasicTextField 的缓冲区架构改进。进一步探讨 Jetpack Navigation 3 实现类型安全深层链接、跨设备多模态输入处理及 WindowManager 集成。同时展示 AppState 将 Compose 状态提升至架构层的能力，支持响应式状态派生与跨组件状态共享。文章还介绍了针对 Compose 设计的 AI 辅助工具链，包括...
+2026-11-20 17:30:00
 
 
 
 ### [Alfred-6-正式发布：在快速启动中运行自己的「小程序」](https://www.appinn.com/alfred-6/)
 
-2026-11-20 17:29:05 | 标签: 编程与工程, 开发者工具, 自托管, AI 编程, 个人效率
-
-> Alfred 6 作为 Mac 上的经典效率工具，主要新增了 Alfred UI Toolkit 功能，支持开发者通过 JSON 定义窗口布局，实现在快速启动中运行自定义小程序，支持输入框、按钮、表格、Markdown、图片、进度条及网页预览，甚至可调用 AI 模型。文章通过 `tryaui` 命令演示了实时编辑 JSON 预览界面的能力，还展示了计时器和移动网页测试等实际应用案例。除 UI 扩展外，Alfred 6 还增强了搜索历史（支持方向键和 ! 快捷方式）、联系人搜索（支持中文分词、模糊匹配并显示头像）、剪贴板历史（支持更多富文本格式，最多 30 条）、界面 redesign（浅色模式...
+2026-11-20 17:29:05
 
 
 
 ### [将-Tripo-模型添加到网站前需要检查什么](https://www.sitepoint.com/what-to-check-before-adding-a-tripo-model-to-a-website/)
 
-2026-11-20 16:00:07 | 标签: 编程与工程, 开发者工具, 系统设计, AI 编程, 前端与 Web
-
-> 本文为 Web 开发者提供了一套系统化方法，用于在部署前评估 AI 生成的 3D 模型。文章提出五道关键关卡：明确页面用途、审核参考图像、检查主视觉角度之外的视图、检查交付文件（文件大小、三角形数量、纹理尺寸），以及测试用户体验。文中还提供了一个使用 glTF Transform 库的 Node.js 脚本，可自动检查 GLB 文件是否符合预算要求。指南也包含轻量级模型查看器的示例标记代码，并介绍了恰当的回退方案、无障碍设计注意事项和性能优化方法。重点在于实用的工程解决方案，而不只是模型生成技巧。
+2026-11-20 16:00:07
 
 
 
 ### [「我看得出来这是你自己写的」](https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/)
 
-2026-11-20 15:13:21 | 标签: 编程与工程, 批判性思维, AI 安全与对齐, 工程教育, 教育领域 AI
-
-> 作者回忆起导师指出，自己看得出来这份报告是学生亲自写的，并将其与 AI 撰写的报告作了对比。作者探讨了工程教育中日益增长的使用 AI 工具的要求，并担忧这种转变可能削弱批判性思维、学术真实性以及独立思考的能力。文章质疑依赖 AI 进行学习、写作和解决问题的长期影响，呼吁读者直接接触内容、进行批判性思考，并拒绝把自身的智力成长外包出去。
+2026-11-20 15:13:21
 
 
 
