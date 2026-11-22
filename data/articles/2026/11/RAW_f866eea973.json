@@ -1,0 +1,58 @@
+{
+  "id": "RAW_f866eea973",
+  "title": "刚刚，DeepSeek V1 作者创业项目曝光：开源 Agent",
+  "url": "https://www.qbitai.com/2026/11/511570.html",
+  "date": "2026-11-21 14:32:31",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-pm-slice=\"0 0 []\">聚是一团火，散是满天星。</p>\n  <p>刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人<strong>Tony Zhang</strong>，正式公布了自己的新创业项目：<strong>Linger</strong>。</p>\n  <p>方向，正是当下最火的个人<strong>Personal Agent</strong>。</p>\n  <p align=\"center\" data-media-id=\"57a9e35e-6110-5ba3-a5e3-40eed2a14b72\" data-media-asset=\"\"><a>X 帖子视频.mp4</a></p>\n  <p>路线也是比较有意思，当同行都在做APP，他们优先选择了电脑。</p>\n  <p>这意味着，Linger能操纵你电脑已有的网页、邮件箱、日历，无需折腾一大堆登录凭据。</p>\n  <p>遇到卡住的地方，你也可以直接上手接管。</p>\n  <p align=\"center\" data-media-id=\"186ff64d-e161-53f2-a653-c361e9b8f939\" data-media-asset=\"\"><a>X 评论视频.mp4</a></p>\n  <p>另外一个点，作为中间层的Linger，支持接入各个第三方模型。</p>\n  <p>并且专门为本地LLM做了优化。</p>\n  <p>具体来说，一块12GB显存的RTX 3060显卡，就能跑起一个125B参数的<strong>Qwen3.8-Flash-Next</strong>，并且<strong>是45.5 tokens/秒的生成速度。</strong></p>\n  <p align=\"center\" data-media-id=\"981718b1-ceaf-4333-b9c6-7ff21f825e04\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-1-25.png\"></p>\n  <p>对了，还有个蛮重要的点——</p>\n  <p><strong>这套系统是开源的。。。</strong></p>\n  <p>至于为什么？</p>\n  <p>在官宣帖中，Tony Zhang引用了PC崛起的历史：</p>\n  <blockquote>\n   <p>1960年代，计算是中心化的，直到PC将权力交到每个人手中。如今，AI在数据中心训练，然后以token的形式租给你。</p>\n   <p>我们相信智能应该是分布式的。你的上下文、你的数据，以及驱动它们的智能，都应该完全由你拥有。</p>\n  </blockquote>\n  <p>所以今天，他们开源了Linger，一个生活在你个人电脑上的专属Agent。</p>\n  <p align=\"center\" data-media-id=\"ac16bb9b-7258-4d21-a273-ee0ed0c1bf2b\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-2-22.png\"></p>\n  <p>也是延续大肥鲸优良传统了😭。</p>\n  <h2>一个「会主动，能自学」的AI</h2>\n  <p>Linger的的核心，是名为「Another Me」的Agent系统。</p>\n  <p>它首先是一个记忆中枢。</p>\n  <p>Linger会在本地读取你的收件箱、日历、聊天记录和会议，每晚自动将这些信息整理成个人知识库<span data-article-parentheses=\"\">（Wiki）</span>，供所有Agent查询。</p>\n  <p>在衡量长期对话记忆能力的LoCoMo基准测试中，<strong>Linger的准确率达到了95%</strong>，超过了Mem0、MemOS等多个记忆增强型AI系统。</p>\n  <p align=\"center\" data-media-id=\"c7be2864-95d0-556e-abad-3ae8e4467d34\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-3-11.webp\"></p>\n  <p>有了这些，Linger便能更好地主动工作。</p>\n  <p>它会默默观察你的信息流，根据事件的重要性和紧急性决定何时提醒你。周一收到客户邮件，要求周五前给报价，它不会立刻打扰，而是等到周三早上再弹出提醒。</p>\n  <p>但如果是会议时间变更，它会立即通知。</p>\n  <p align=\"center\" data-media-id=\"be287bc7-bec5-5ae0-a5f9-f5f15cf19070\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212310_article-image-4-11.webp\"></p>\n  <p>这个Agent还会从你的反馈中自我学习，Linger称之为「隐式强化」。</p>\n  <p>比如，当它提醒你一张发票快到期了，你回复说「上周就收到了，应该当时就告诉我」。系统会记下一个线索。</p>\n  <p>如果下一次另一张发票出现类似情况，你再次表达了相同的偏好，系统就会自动生成一条规则：<strong>「供应商发票→立即提醒」</strong>。</p>\n  <p align=\"center\" data-media-id=\"5779b2ff-65d2-52d1-a017-90c4015b0fd1\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-5-11.webp\"></p>\n  <p>反之，如果你连续两次对「快递提醒」表现出不感兴趣<span data-article-parentheses=\"\">（比如直接忽略或回复「不用告诉我」）</span>，它也会学会以后保持沉默。</p>\n  <p>你也可以直接下指令，一次性教会它。比如告诉它：「客户的回复，要立刻通知我」，或者「晚上9点后，会议变更这种事不用马上说」。</p>\n  <p>这种持续的交互和学习，让Agent越来越懂你的工作习惯，成为一个真正个性化的助理。</p>\n  <p>除此之外，Linger还能：</p>\n  <ol>\n   <li><strong>操作桌面和浏览器</strong>。</li>\n  </ol>\n  <p>就是开头说的，Linger能直接使用你电脑上已经登录的Chrome、各种App，无需重新配置。</p>\n  <ol start=\"2\">\n   <li><strong>组建Agent团队</strong>。</li>\n  </ol>\n  <p>这点就是DeepSeek之前解释过的Super Agent原理了。</p>\n  <p>你下达一个复杂任务时，Another Me会调用或创建不同职能的Agent，协同完成工作。</p>\n  <p>而你，只用停留在和Linger的这一个Session。</p>\n  <p align=\"center\" data-media-id=\"afd8599a-958c-55da-ab05-9fb62e7b54e9\" data-media-asset=\"\"><a>X 评论视频.mp4</a></p>\n  <ol start=\"3\">\n   <li><strong>语音交互</strong>。</li>\n  </ol>\n  <p>这点主要就是服务于办公场景了。</p>\n  <p>Linger能实时转录会议，会后直接向Agent提问会议内容，并让它跟进待办事项。</p>\n  <p>总而言之呢，就是一个专为办公场景优化的Personal Agent。</p>\n  <p>不过，也有网友对这一产品定位不太理解：</p>\n  <blockquote>\n   <p>为什么不基于DeepSeek harness开发🤣跟ds-bot有何区别呢</p>\n  </blockquote>\n  <p>对此，Tony Zhang回应道：</p>\n  <blockquote>\n   <p>Linger的重点是把模型和harness一起优化：12GB显卡就能本地跑125B模型，不按token付费，数据也不出本机。</p>\n   <p>从产品定位上看：DS-Bot的核心是Bot与Bot、Bot与群组的协作；Linger的核心是人与自己的Agent、Agent与本地环境。</p>\n  </blockquote>\n  <p align=\"center\" data-media-id=\"b4b588d2-9721-4b3d-a068-88ca9914cc8a\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-6-21.png\"></p>\n  <h2>12GB显卡，跑125B模型</h2>\n  <p>让消费级硬件运行千亿大模型，Linger的核心技术是一个名为<strong>PolyStrata</strong>的MoE推理引擎。</p>\n  <p>它的原理可以理解为一种智能分层存储机制。</p>\n  <p>对于一个庞大的MoE<span data-article-parentheses=\"\">（专家混合）</span>模型，PolyStrata会把最常用、最活跃的「专家模块」放在最快的GPU显存里，将不那么常用的放在内存中，而使用频率最低的则放在SSD固态硬盘上。</p>\n  <p align=\"center\" data-media-id=\"20608118-b898-5099-a088-94a98085aef1\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212310_article-image-7-10.webp\"></p>\n  <p>当模型需要调用某个专家时，系统会动态地在GPU、内存和SSD之间移动数据。这样一来，就不需要把整个几十上百GB的模型全部塞进有限的显存里。</p>\n  <p>效果立竿见影。</p>\n  <p>根据官方数据，<strong>一个125B参数的Qwen3.8-Flash-Next模型，在一台配备12GB RTX 3060和64GB内存的电脑上，可以实现45.5 tokens/秒的生成速度。</strong></p>\n  <p>在更强的RTX 5090<span data-article-parentheses=\"\">（32GB）</span>上，速度则飙升至179 tokens/秒。</p>\n  <p>为了让用户更方便地用上本地大模型，Linger还做了一个「模型自动驾驶<span data-article-parentheses=\"\">（Model Autopilot）</span>」功能。</p>\n  <p>它会自动检测你的硬件配置<span data-article-parentheses=\"\">（GPU、显存、内存）</span>，然后从49个语言模型、两种推理引擎、多种量化方案和不同上下文长度的组合中，为你推荐并安装性能最强的模型。</p>\n  <p align=\"center\" data-media-id=\"c264e184-0a40-5962-a89f-248be629b4f6\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-8-8.webp\"></p>\n  <p>根据SimplexAI的评分体系，不同配置的本地设备可以获得媲美主流云端大模型的能力：</p>\n  <ul>\n   <li><strong>8GB显卡+32GB内存</strong>：得分35.4，约等于<strong>Gemini 2.5 Pro</strong>。</li>\n   <li><strong>Mac 24GB统一内存</strong>：得分51.9，约等于<strong>Claude Opus 4.5</strong>。</li>\n   <li><strong>12GB显卡+32GB内存</strong>：得分57.3，约等于<strong>Claude Opus 4.6</strong>。</li>\n  </ul>\n  <p>这意味着，你的游戏本或MacBook，将拥有一个真正强大的、7×24小时待命、没有token费用、并且数据完全不出本地的AI大脑。</p>\n  <p>Linger背后，是一支有着深厚技术背景的团队，其创始人Tony Zhang的履历尤为亮眼。</p>\n  <p><span data-article-parentheses=\"\">（毕竟是DeepSeek系嘛…）</span></p>\n  <p align=\"center\" data-media-id=\"babf4d26-9750-465f-88e6-c2172101d35a\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-9-9.png\"></p>\n  <p>Tony Zhang本科毕业于浙江大学，2019年在香港科技大学取得博士学位，随后加入<strong>微软亚洲研究院<span data-article-parentheses=\"\">（MSRA）</span></strong>，长期从事计算机视觉和生成模型研究，是VQ-Diffusion、Rodin 3D数字人等多个知名项目的作者。</p>\n  <p>2023年，他加入<strong>DeepSeek</strong>，担任AI科学家。</p>\n  <p>在这里，他不仅参与了早期语言模型<strong>DeepSeek LLM V1系列</strong>的研发，更是视觉语言大模型<strong>DeepSeek-VL的项目负责人<span data-article-parentheses=\"\">（Project Lead）</span></strong>。这款模型在真实世界场景下的图像、文档、图表理解能力备受好评。</p>\n  <p>离开DeepSeek后，Tony Zhang进入浙江大学任教，担任百人计划研究员、博士生导师，并创立了Simplex AI。</p>\n  <p>Linger就是Simplex AI的最新作品。</p>\n  <p align=\"center\" data-media-id=\"0cd54505-73e4-50d5-acf5-6f777772ce25\" data-media-asset=\"\"><img decoding=\"async\" src=\"https://media.bestblogs.dev/20261121212309_article-image-10-12.png\"></p>\n  <p>而作为Linger技术核心，那个专为本地部署而生的推理引擎？</p>\n  <p>据Tony Zhang透露，由团队里一位18岁的天才少年构建。</p>\n  <p><strong>18岁？高中刚毕业？</strong></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "前 DeepSeek V1 作者 Tony Zhang 创办的 Linger 项目推出开源 Personal Agent，基于 PolyStrata MoE 推理引擎实现 12GB 显卡运行 125B 参数模型，支持本地记忆、主动提醒、Agent 协作及语音交互。",
+  "oneSentenceSummary": "前 DeepSeek V1 作者 Tony Zhang 创办的 Linger 项目推出开源 Personal Agent，基于 PolyStrata MoE 推理引擎实现 12GB 显卡运行 125B 参数模型，支持本地记忆、主动提醒、Agent 协作及语音交互。",
+  "summary": "Linger 是由前 DeepSeek V1 作者 Tony Zhang 领衔的开源个人 Agent 项目，核心是「Another Me」记忆中枢，能本地读取用户邮箱、日历、聊天记录等生成知识库 Wiki，LoCoMo 测试中记忆准确率达 95%。该 Agent 具备主动观察信息流、按重要性紧急性提醒用户的能力，并通过「隐式强化」从用户反馈中学习生成规则。Linger 支持桌面/浏览器操作、Agent 团队协作和语音交互，定位为办公场景优化的 Personal Agent。其核心技术 PolyStrata MoE 推理引擎实现智能分层存储，将常用专家模块放在 GPU 显存、低频模块放在内存或 SSD，使 12GB 显卡的 RTX 3060 即可流畅运行 125B 参数 Qwen3.8-Flash-Next 模型，生成速度达 45.5 tokens/秒，更强的 RTX 5090 可达 179 tokens/秒。系统还提供「模型自动驾驶」功能，根据硬件配置自动推荐最优模型组合。",
+  "mainPoints": [
+    {
+      "point": "Linger 是开源 Personal Agent，支持本地记忆、主动提醒和 Agent 协作",
+      "explanation": "「Another Me」记忆中枢本地整理用户信息生成 Wiki，LoCoMo 测试准确率 95%；主动按重要性紧急性提醒；支持调用或创建不同职能 Agent 协同完成复杂任务。"
+    },
+    {
+      "point": "PolyStrata MoE 推理引擎实现 12GB 显卡运行 125B 模型",
+      "explanation": "采用智能分层存储将常用专家模块放在 GPU 显存、低频模块放在内存或 SSD，动态调度数据，使 RTX 3060（12GB）可流畅运行 125B 参数模型，生成速度 45.5 tokens/秒。"
+    },
+    {
+      "point": "「模型自动驾驶」根据硬件配置推荐最优模型组合",
+      "explanation": "系统自动检测 GPU 显存、内存等硬件配置，从 49 个语言模型、两种推理引擎、多种量化方案和不同上下文长度中组合，推荐性能最强模型，8GB 显卡设备可达 Gemini 2.5 Pro 水平。"
+    },
+    {
+      "point": "创始人 Tony Zhang 拥有 DeepSeek 和 MSRA 等顶尖机构背景",
+      "explanation": "Zhang 本科毕业于浙江大学，2019 年获香港科技大学博士学位，随后在微软亚洲研究院从事计算机视觉和生成模型研究，是 VQ-Diffusion、Rodin 3D 数字人等项目作者，2023 年加入 DeepSeek 参与 DeepSeek LLM V1 和 DeepSeek-VL 研发。"
+    }
+  ],
+  "keyQuotes": [
+    "「1960 年代，计算是中心化的，直到 PC 将权力交到每个人手中。如今，AI 在数据中心训练，然后以 token 的形式租给你。我们相信智能应该是分布式的。你的上下文、你的数据，以及驱动它们的智能，都应该完全由你拥有。」",
+    "Linger 的核心是把模型和 harness 一起优化：12GB 显卡就能本地跑 125B 模型，不按 token 付费，数据也不出本机。",
+    "一个 125B 参数的 Qwen3.8-Flash-Next 模型，在一台配备 12GB RTX 3060 和 64GB 内存的电脑上，可以实现 45.5 tokens/秒的生成速度。",
+    "Linger 的准确率达到了 95%，超过了 Mem0、MemOS 等多个记忆增强型 AI 系统。",
+    "「快递提醒」连续两次被忽略，系统就会学会以后保持沉默。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "开源项目",
+    "模型训练与推理",
+    "大语言模型 (LLM)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 86,
+  "wordCount": 2768,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1795242751000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-21 14:32:31"
+}

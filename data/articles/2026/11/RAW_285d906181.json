@@ -1,0 +1,52 @@
+{
+  "id": "RAW_285d906181",
+  "title": "Google 如何追查 GKE API 超时背后的 Linux 内核 TCP 错误",
+  "url": "https://www.infoq.com/news/2026/11/gke-kernel-network-bug/",
+  "date": "2026-11-21 17:44:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google recently detailed how three interacting bugs across Google Kubernetes Engine (GKE), Private Service Connect, and the Linux kernel caused <a href=\"https://cloud.google.com/blog/products/networking/the-three-layer-gke-network-mystery/\">intermittent Kubernetes API connectivity failures</a>, blocking around 800 developers from deploying to production.</p>\n   <p>In January, a customer running multiple GKE clusters with Private Service Connect (PSC) for private control-plane access experienced intermittent timeouts when pods attempted to reach the Kubernetes API server.</p>\n   <p>Packet captures revealed that the control plane was responding to new TCP connection requests with stale ACK packets belonging to previously closed connections. The root cause involved three separate bugs across different networking layers. <a href=\"https://www.linkedin.com/in/akashthakur8166/\">Akash Thakur</a>, senior technical solutions engineer at Google Cloud, describes how engineers across multiple Google teams identified three root causes and ultimately addressed them:</p>\n   <blockquote>\n    <p>In a race to fix the problem, we involved engineers across Google Kubernetes Engine (GKE), Private Service Connect, networking, hostnet, kernel, and the Linux upstream community, who together tracked down not one but three distinct root causes. And the final fix landed not as a config change or a feature flag, but as a patch to the Linux kernel itself.</p>\n   </blockquote>\n   <p>The investigation identified three interacting causes: packet reordering in PSC, Envoy's half-close behavior preventing TCP connections from being properly closed, and a Linux kernel bug that discarded certain reordered FIN packets.</p>\n   <p><em><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/gke-kernel-network-bug/news/2026/11/gke-kernel-network-bug/en/resources/1updated_architecture_official_icon.max-1200x1200-1794082818459.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/gke-kernel-network-bug/en/resources/1updated_architecture_official_icon.max-1200x1200-1794082818459.png\" rel=\"share\"></em></p>\n   <p><em>Source: Google Cloud blog</em></p>\n   <p>Thakur describes a complex troubleshooting case involving I/O timeouts across Private Service Connect, virtual network interfaces, and the Linux TCP state machine, which ultimately revealed a kernel issue leaving sockets stuck indefinitely in the <code>FIN_WAIT_2</code> state. <em> </em>Thakur explains:</p>\n   <blockquote>\n    <p>Most networking cases resolve at one layer. You find the misconfigured firewall rule, the exhausted connection pool, the miscalculated MTU. You fix it and move on. This one was different because the symptom — i/o timeout on a connection that never completed — was the same whether you were looking at the Private Service Connect layer, the kernel's TCP state machine, or Envoy's connection management. Every layer had a plausible explanation, and every explanation was incomplete.</p>\n   </blockquote>\n   <p>The issue was addressed through three coordinated fixes over several weeks: Google first rolled back a Private Service Connect change to restore connectivity, then corrected the proxy protocol handling and added regression tests. Finally, a Linux kernel patch, authored by <a href=\"https://www.linkedin.com/in/eric-dumazet-ba252942/\">Eric Dumazet</a>, formerly a software engineer at Google, fixed the underlying TCP issue. <a href=\"https://www.linkedin.com/in/rohankarne/\">Rohan Karne</a>, managing director at Google Cloud, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7523423746259378178?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7523423746259378178%2C7523541551420014592%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287523541551420014592%2Curn%3Ali%3Aactivity%3A7523423746259378178%29\">comments</a>:</p>\n   <blockquote>\n    <p>This is the unglamorous reality of mission-critical platform engineering—methodically ruling out the obvious suspects and digging into packet captures until you find the kernel root cause.</p>\n   </blockquote>\n   <p>Thakur highlights how individually reasonable behaviors across networking, proxies and operating systems can combine into complex infrastructure failures. Packet captures at multiple network layers were essential to identifying the problem, while correlating network symptoms with infrastructure changes helped establish the connection between the three bugs. Guangba Yu, a postdoctoral researcher at the Chinese University of Hong Kong, <a href=\"https://yuxiaoba.github.io/tech/en/gke-network-mystery/\">highlights</a>:</p>\n   <blockquote>\n    <p>For AIOps and chaos engineering, the transferable method is organizing simultaneous path observations, protocol state, and rollout events while distinguishing symptom recovery from state-machine correction. This anonymized case supplies no population failure rate and does not explain all API timeouts.</p>\n   </blockquote>\n   <p>Justin Garrison, field CTO at Sidero, <a href=\"https://bsky.app/profile/justingarrison.com/post/3mzcpxrzn3s2v\">notes</a>:</p>\n   <blockquote>\n    <p>At first I was excited to read this article that leads to a kernel patch which are always fun. It turns out GKE just runs a kernel from 3 years ago (6.1) and the bug was already fixed upstream and they had to backport it.</p>\n   </blockquote>\n   <p>The kernel fix was merged into Linux 6.9.7 and backported to the 6.6 and 6.1 LTS branches, reaching GKE customers in version 1.33.5 and later.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Google Traced GKE API Timeouts to a Linux Kernel TCP Bug\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/gke-kernel-network-bug/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795254240000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 工程师发现，GKE API 间歇性超时是由 3 个相互作用的错误导致的：Private Service Connect 中的数据包乱序、Envoy 的半关闭行为，以及 Linux 内核 TCP 问题；要解决该问题，必须修补内核，使卡在 FIN_WAIT_2 状态的套接字恢复正常。",
+  "oneSentenceSummary": "Google 工程师发现，GKE API 间歇性超时是由 3 个相互作用的错误导致的：Private Service Connect 中的数据包乱序、Envoy 的半关闭行为，以及 Linux 内核 TCP 问题；要解决该问题，必须修补内核，使卡在 FIN_WAIT_2 状态的套接字恢复正常。",
+  "summary": "Google 详细说明了 GKE、Private Service Connect 和 Linux 内核中的 3 个独立错误如何导致 Kubernetes API 间歇性连接故障，影响约 800 名开发者。数据包捕获结果显示，已关闭连接仍会发送过时的 ACK 数据包。根本原因包括：(1) PSC 中的数据包乱序；(2) Envoy 的半关闭行为妨碍 TCP 连接正常关闭；(3) Linux 内核错误地丢弃了乱序到达的 FIN 数据包。解决问题需要协调实施多项变更：回滚一项 PSC 变更、修正代理的协议处理方式，并应用 Linux 内核补丁，修复导致套接字一直卡在 FIN_WAIT_2 状态的底层 TCP 问题。",
+  "mainPoints": [
+    {
+      "point": "网络各层中 3 个相互作用的错误导致 GKE API 超时，影响约 800 名开发者。",
+      "explanation": "问题涉及 Private Service Connect 中的数据包乱序、导致 TCP 连接无法正常关闭的 Envoy 半关闭行为，以及会丢弃乱序 FIN 数据包的 Linux 内核错误，最终使套接字卡在 FIN_WAIT_2 状态。"
+    },
+    {
+      "point": "解决问题需要协调实施多项修复，包括应用 Linux 内核补丁。",
+      "explanation": "Google 回滚了一项 PSC 变更，通过回归测试修正了代理的协议处理方式，并应用了由 Eric Dumazet 编写的内核补丁。该补丁被合并至 Linux 6.9.7，并回移植到 LTS 分支，最终随 1.33.5+ 版本交付给 GKE 客户。"
+    },
+    {
+      "point": "跨多个网络层进行数据包捕获，对于根因分析至关重要。",
+      "explanation": "调查需要同时观察 PSC、Envoy 和内核 TCP 状态机各层的情况，说明各自看似合理的行为结合起来后，可能造成复杂的基础设施故障。"
+    }
+  ],
+  "keyQuotes": [
+    "Symposium 是一套面向智能体的工具链。工具链就像编译器或包管理器。我想要一套专为智能体设计、适合智能体使用的工具链，因为我认为越来越多时候，真正运行编译器的将会是智能体。",
+    "大多数网络问题都能在单个层面解决。你找到配置错误的防火墙规则、耗尽的连接池或计算错误的 MTU，修复后就可以继续处理其他问题。但这次情况不同，因为无论你查看的是 Private Service Connect 层、内核的 TCP 状态机，还是 Envoy 的连接管理，看到的症状都是一样的：连接始终无法完成，最终出现 I/O 超时。每一层都有一个看似合理的解释，但每个解释都不完整。",
+    "这就是关键平台工程中不那么光鲜的现实——有条不紊地排除显而易见的嫌疑，深入分析数据包捕获结果，直到找到内核层面的根因。"
+  ],
+  "tags": [
+    "编程与工程",
+    "分布式系统",
+    "云原生 / DevOps",
+    "Linux",
+    "Google"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 591,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795254240000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-21 17:44:00"
+}
