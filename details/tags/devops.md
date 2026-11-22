@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-22 09:47:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-22 17:01:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -692,9 +692,7 @@
 
 ### [Google-如何追查-GKE-API-超时背后的-Linux-内核-TCP-错误](https://www.infoq.com/news/2026/11/gke-kernel-network-bug/)
 
-2026-11-21 17:44:00 | 标签: 编程与工程, 分布式系统, 云原生 / DevOps, Linux, Google
-
-> Google 详细说明了 GKE、Private Service Connect 和 Linux 内核中的 3 个独立错误如何导致 Kubernetes API 间歇性连接故障，影响约 800 名开发者。数据包捕获结果显示，已关闭连接仍会发送过时的 ACK 数据包。根本原因包括：(1) PSC 中的数据包乱序；(2) Envoy 的半关闭行为妨碍 TCP 连接正常关闭；(3) Linux 内核错误地丢弃了乱序到达的 FIN 数据包。解决问题需要协调实施多项变更：回滚一项 PSC 变更、修正代理的协议处理方式，并应用 Linux 内核补丁，修复导致套接字一直卡在 FIN_WAIT_2 状态的底层...
+2026-11-21 17:44:00
 
 
 
