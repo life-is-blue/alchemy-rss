@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-23 12:39:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-24 00:48:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -692,17 +692,13 @@
 
 ### [使用-AWS-Emulator-测试-Terraform](https://notes.hatedabamboo.me/terraform-tests-with-aws-emulator/)
 
-2026-11-22 21:00:36 | 标签: 编程与工程, 测试与质量, 云原生 / DevOps, Docker, AWS
-
-> 本文探讨了 Terraform 部署中常见的问题：plan 虽然通过，但由于静态规划与实时 API 行为之间存在差异，apply 却失败。作者介绍了 AWS Emulator，这是一款可独立运行的二进制程序或 Docker 容器，可在本地和 CI 测试中真实模拟 AWS API。文章逐步讲解如何设置 Terraform 以配合该模拟器运行，包括配置 provider 设置以支持不安全连接和自定义端点，并演示成功执行 plan 和 apply。文章还展示了如何将该模拟器集成到 CI 流水线中，包括安装、启动、凭证配置和运行 Terraform。最后，文章讨论了其局限性，包括 IAM 策略模拟方面...
+2026-11-22 21:00:36
 
 
 
 ### [CrowdStrike-洽谈收购-Zscaler，望跻身史上最大网络安全交易](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651351526&idx=1&sn=9a508969631af85b9579d6b1cc80dc21)
 
-2026-11-22 18:48:00 | 标签: 编程与工程, 安全, 零信任, 云原生 / DevOps, 后端开发
-
-> 本文报道了 CrowdStrike 正在与 Zscaler 就收购事宜进行洽谈的消息。该交易有望跻身网络安全史上最大规模的并购案。CrowdStrike 的 Falcon 平台专注于检测和阻断端点威胁，而 Zscaler 的零信任交换平台负责用户身份核验和访问控制。两者此前已有深度合作，Falcon 可将风险数据同步至 Zscaler 的自适应访问引擎。若收购成功，CrowdStrike 将进一步整合私有应用与公网访问的云管理服务，实现全链路的告警调查与访问限制。文章还提到，2026 年 3 月谷歌收购 Wiz 320 亿美元、Palo Alto 收购 CyberArk 250 亿美元等大额收...
+2026-11-22 18:48:00
 
 
 
