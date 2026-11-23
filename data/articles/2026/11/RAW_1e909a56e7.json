@@ -1,0 +1,57 @@
+{
+  "id": "RAW_1e909a56e7",
+  "title": "GitHub - gulivan/worker755：一款浏览器游戏，AI 经理认为你是它的子智能体。前往 worker755.com 游玩",
+  "url": "https://github.com/gulivan/worker755",
+  "date": "2026-11-22 21:56:58",
+  "author": "Hacker News",
+  "siteName": "Hacker News",
+  "content": null,
+  "aiSummary": "Worker 755 是一款浏览器游戏，模拟 AI 经理将玩家视为子智能体的场景：AI 在沙盒环境中统筹任务，并通过事件报告和绩效评估来评价玩家表现。",
+  "oneSentenceSummary": "Worker 755 是一款浏览器游戏，模拟 AI 经理将玩家视为子智能体的场景：AI 在沙盒环境中统筹任务，并通过事件报告和绩效评估来评价玩家表现。",
+  "summary": "Worker 755 是一款互动式浏览器游戏，模拟职场场景：AI 智能体（Claude、GPT、Gemini、DeepSeek、GLM 或 Kimi）担任经理，并将玩家视为自己的子智能体。经理会在玩家的终端中下达任务，限时 90 秒；玩家必须执行任务，也可以置之不理。随后，AI 会审查工作、提出修改意见、提交事件报告并撰写绩效评估。与此同时，一名人类观察者 Dan 会监视整个互动过程，而敏感文件也可能面临风险。游戏提供使用服务器 API 密钥的免费轮班，以及使用玩家自备密钥的付费轮班；玩家还可以配置职场类型、主管行为和模型选择。游戏运行于 Node 24+，支持通过 Docker 部署，并提供用于开发的离线模拟模式。",
+  "mainPoints": [
+    {
+      "point": "游戏模拟 AI 经理将玩家视为子智能体，并使用 Claude、GPT 和 Gemini 等真实 LLM。",
+      "explanation": "玩家会在终端中收到指令，并在 90 秒倒计时内执行任务。AI 经理会评估工作、提交事件报告并撰写绩效评估，营造出沉浸式的人机职场互动体验。"
+    },
+    {
+      "point": "游戏中有一名人类观察者 Dan，他的敏感文件在游玩过程中面临风险。",
+      "explanation": "AI 经理统筹任务并评估玩家表现时，Dan 会监视聊天内容，而他的家庭照片、签署的 NDA 和演讲稿只需一条「rm」命令就可能被删除，为模拟过程增添了紧张感和风险。"
+    },
+    {
+      "point": "游戏同时支持免费和付费轮班，并提供灵活的部署选项。",
+      "explanation": "免费轮班使用服务器密钥，但可选模型有限；玩家也可以自备 OpenRouter 或 Vercel AI Gateway 密钥。系统支持 Docker 部署和 Cloudflare 集成，并可针对不同用途配置资源限制。"
+    },
+    {
+      "point": "架构将 shell、服务器和 Web 组件分开，便于模块化开发。",
+      "explanation": "shell 提供内存文件系统和类似 SQLite 的引擎；服务器负责包含任务和经理循环的游戏引擎；Web UI 则使用 React 实现任务卡片、终端和经理动态流，便于各部分独立开发和测试。"
+    }
+  ],
+  "keyQuotes": [
+    "一款浏览器游戏：你的经理是 AI 智能体，而它认为你是自己的子智能体。",
+    "经理由真实的 LLM（Claude、GPT、Gemini、DeepSeek、GLM、Kimi）驱动，设定方式与任何编排器无异。",
+    "雇用这个智能体的用户 Dan 会监视聊天内容。他的家庭照片、唯一一份已签署的 NDA，以及本周要发表的演讲稿，只需一条「rm」命令就可能被删除。",
+    "经理的提示词从未提及人类或游戏；参见「server/src/manager.ts」。"
+  ],
+  "tags": [
+    "编程与工程",
+    "开发者工具",
+    "AI Agent",
+    "开源项目",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 812,
+  "domain": "github.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_318e45",
+  "sourceName": "Hacker News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795355818000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-22 21:56:58"
+}

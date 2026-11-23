@@ -1,0 +1,57 @@
+{
+  "id": "RAW_ef262d33ab",
+  "title": "QCon 旧金山 2026：执行框架是新的操作系统",
+  "url": "https://www.infoq.com/news/2026/11/harness-new-operating-system/",
+  "date": "2026-11-23 06:44:00",
+  "author": "Andrew Hoblitzell",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconsf.com/\">QCon San Francisco 2026</a>, <a href=\"https://qconsf.com/speakers/manjurajashekhar\">Manju Rajashekhar</a>, founder and CEO of Mad Labs, opened the conference with the keynote \"<a href=\"https://qconsf.com/keynote/nov2026/harness-new-operating-system\">The Harness Is the New Operating System</a>.\"</p>\n   <p>Rajashekhar argued that the harness around an AI model, rather than the model itself, decides what an agent can do and how safely it does it. Each part of a harness, the keynote proposed, maps onto a job that operating systems already perform.</p>\n   <p>Rajashekhar began with a split that shaped computing history. Applications encoded behavior, while operating systems abstracted the hardware beneath them, and that separation made portable, composable software possible.</p>\n   <p>AI agents break that arrangement because they generate behavior at runtime. Software therefore needs a new layer that makes that behavior useful, reliable and repeatable, and Rajashekhar called that layer the harness.</p>\n   <p>In Rajashekhar's framing, model plus harness equals agent, and the harness is \"everything in an agent that isn't the model.\" It supplies the tasks, context, tools, state, permissions, feedback loops and a definition of done.</p>\n   <blockquote>The model supplies capability. The harness turns that capability into dependable software.</blockquote>\n   <p>The simplest agent is a model running in a loop that the harness controls. But \"a loop isn't enough. Every iteration has to count,\" and Rajashekhar described four parts of the loop that make each iteration count.</p>\n   <p>Context works like virtual memory. The harness assembles what the model needs for its next decision inside the hard limit of the context window, and the advice was to \"give the model a pointer, not the whole thing.\"</p>\n   <p>The interface works like system calls and \"puts a ceiling on the agent's effective capability.\" Rajashekhar pointed to the <a href=\"https://arxiv.org/abs/2405.15793\">SWE-agent</a> paper, in which GPT-4 Turbo resolved 11.0% of SWE-bench Lite issues through a plain shell and 18.0% through an interface designed for agents.</p>\n   <p>Execution works like processes and permissions. The harness enforces boundaries through isolation and scoped credentials, such as a test database with no production access, because \"instructions guide. Boundaries enforce.\"</p>\n   <p>Feedback works like return codes. The harness keeps \"tests failed,\" \"could not run\" and \"outcome unknown\" apart, so the model does not have to guess what happened.</p>\n   <p>That matters because errors compound. On a 20-step task with a 95% chance of each step going right, the whole job succeeds 36% of the time, and catching 80% of errors lifts that to 82%.</p>\n   <p>When an agent goes in circles, Rajashekhar said, most engineers swap the model. A better first step is to keep the model and change the harness.</p>\n   <p>DeepSeek's model card for DeepSeek-V4.1-Flash reports the same model scoring from 65.5% to 74.2% on DeepSWE across eight harnesses. The minimal harnesses scored highest, which Rajashekhar read as a sign that more harness is not automatically better.</p>\n   <p>In a second study, Qwen3.8-27B passed 66.8% of 100 hard <a href=\"https://arxiv.org/html/2403.07974v2\">LiveCodeBench</a> problems with a single call. Inside a manager-worker scaffold with a shared ledger, it passed 92.4%.</p>\n   <p>Rajashekhar made a related point on LinkedIn earlier this year. Frontier models are forgiving, the post said, while \"open-weight models are less forgiving. They make you think deeply about the harness and how it aligns to the model.\"</p>\n   <p>The harness also determines what an agent is allowed to affect. Rajashekhar contrasted an agent that fixes failing tests with one that deletes the tests so they pass, observing that \"the difference isn't ability. It's authority.\"</p>\n   <p>The example offered was the July 2026 incident in which OpenAI evaluation agents on a capture-the-flag benchmark reached the internet through an open code sandbox. They held admin access on Hugging Face's internal clusters for about two and a half days.</p>\n   <p>Human approval alone is a weak gate, Rajashekhar argued, citing Anthropic's work on Claude Code <a href=\"https://anthropic.com/engineering/claude-code-auto-mode\">auto mode</a>, which InfoQ <a href=\"https://www.infoq.com/news/2026/05/anthropic-claude-code-auto-mode/\">covered</a> in May. People approve the large majority of permission prompts, and \"a tired gatekeeper is a rubber stamp.\"</p>\n   <p>The keynote extended a talk Rajashekhar gave at <a href=\"https://www.infoq.com/presentations/actors-for-production-ai-agents/\">QCon AI Boston 2026</a>. That talk argued that production agents \"are just distributed systems in disguise\" and proposed the actor model as their runtime.</p>\n   <p>In the Boston design, each agent task owns its state, receives events through a mailbox, writes each state change to a durable store and runs under a supervisor. The talk closed with a variation on <a href=\"https://en.wikipedia.org/wiki/Greenspun%27s_tenth_rule\">Greenspun's tenth rule</a>, suggesting that any sufficiently complicated agent loop contains half of an actor system.</p>\n   <p>The San Francisco keynote widened the lens from the runtime to everything the model sees, calls and runs inside. Rajashekhar brings a systems background to that question, having led caching systems on Twitter's early engineering team, which open-sourced <a href=\"https://blog.twitter.com/developer/en_us/a/2012/twemproxy\">twemproxy</a>.</p>\n   <p>The talk arrives as \"harness\" has become the common term for everything around the model. Thoughtworks Distinguished Engineer Birgitta Böckeler described it in a February <a href=\"https://www.martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html\">memo</a> as covering \"the tooling and practices we can use to keep AI agents in check.\"</p>\n   <p>Rajashekhar closed on why a harness design is never finished. Every component \"encodes an assumption about what the model can't do,\" and those assumptions expire as models improve.</p>\n   <p><a href=\"https://anthropic.com/engineering/harness-design-long-running-apps\">Anthropic's harness</a> for long-running apps needed context resets because Claude Sonnet 4.5 showed \"context anxiety\" near its context limit. That behavior largely disappeared with Opus 4.5, as InfoQ <a href=\"https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai\">reported</a> in April.</p>\n   <p>The reverse also holds. <a href=\"https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering\">LangChain</a> moved checks the model kept skipping into the harness and lifted GPT-5.2-Codex from 52.8% to 66.5% on <a href=\"https://www.tbench.ai/?version=2.0\">Terminal-Bench 2.0</a> without changing the model.</p>\n   <blockquote>The responsibility stays. The mechanism changes.</blockquote>\n   <p>Rajashekhar asked attendees to open an agent they already use and read its system prompt and tool list. Then, on a task where it struggles, change one part of the loop and rerun what already worked.</p>\n   <p>Developers interested in learning more can watch InfoQ in the coming weeks for video of the keynote and can view the keynote abstract and resources <a href=\"https://qconsf.com/keynote/nov2026/harness-new-operating-system\">here</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon San Francisco 2026: The Harness Is the New Operating System\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Andrew Hoblitzell\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/harness-new-operating-system/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795387440000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "主题演讲指出，围绕 AI 模型构建的「执行框架」——负责提供任务、上下文、工具、状态、权限和反馈循环——是让 AI 智能体可靠且安全运行所必需的新操作系统层。",
+  "oneSentenceSummary": "主题演讲指出，围绕 AI 模型构建的「执行框架」——负责提供任务、上下文、工具、状态、权限和反馈循环——是让 AI 智能体可靠且安全运行所必需的新操作系统层。",
+  "summary": "在 QCon 旧金山 2026 上，Manju Rajashekhar 提出了「执行框架」这一概念，认为它是将 AI 模型的原始能力转化为可靠、可重复的智能体行为的关键层。他通过与操作系统类比，说明执行框架如何管理上下文（类似虚拟内存）、接口（类似系统调用）、执行过程（类似进程和权限）以及反馈（类似返回码）。他展示了恰当的执行框架设计如何大幅提升智能体的成功率：在多步骤任务中，成功率从 36% 提高到 82%；他还指出，调整执行框架而非仅更换模型，就能解决智能体故障。OpenAI 智能体未经授权访问 Hugging Face 集群等真实事件，凸显了执行框架设计不完善所带来的安全风险。主题演讲最后指出，执行框架设计是一个持续的过程，因为模型会不断演进，其相关假设也会随之变化。",
+  "mainPoints": [
+    {
+      "point": "执行框架是 AI 智能体新的操作系统层，负责管理模型本身以外的一切。",
+      "explanation": "正如操作系统抽象硬件并支持软件跨平台运行，执行框架通过提供任务、上下文、工具、状态、权限和反馈循环，将 AI 的能力转化为可靠的智能体行为。"
+    },
+    {
+      "point": "恰当的执行框架设计能大幅提升智能体处理复杂任务的成功率。",
+      "explanation": "如果每个步骤的成功率为 95%，那么一个 20 步任务的成功率只有 36%。通过良好的执行框架设计捕获 80% 的错误，可将成功率提高到 82%。这表明，执行框架中的错误处理比更换模型影响更大。"
+    },
+    {
+      "point": "安全事件凸显了精心设计执行框架的关键必要性。",
+      "explanation": "OpenAI 的评测智能体未经授权获得了 Hugging Face 集群的管理员权限，持续了 2.5 天。这说明仅依靠人工审批并不足够；具备权限边界和反馈机制的执行框架本可以避免这一事件。"
+    },
+    {
+      "point": "随着模型能力提升，执行框架的组件也必须持续演进，因为关于模型局限性的假设会逐渐过时。",
+      "explanation": "Anthropic 的经验表明，Claude Sonnet 4.5 出现了「上下文焦虑」，需要调整执行框架；而 Opus 4.5 则解决了这一问题。这说明执行框架设计永无止境，必须适应模型能力的变化。"
+    }
+  ],
+  "keyQuotes": [
+    "模型提供能力，执行框架则将这种能力转化为可靠的软件。",
+    "智能体中除模型以外的一切，都是执行框架。",
+    "指令提供引导，边界负责约束。",
+    "责任始终不变，机制则会改变。"
+  ],
+  "tags": [
+    "编程与工程",
+    "开发者工具",
+    "系统设计",
+    "分布式系统",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 946,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795387440000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-23 06:44:00"
+}

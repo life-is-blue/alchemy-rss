@@ -1,0 +1,52 @@
+{
+  "id": "RAW_451ca62da4",
+  "title": "Claude Code 的「不再询问」功能一直在泄露机密",
+  "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/",
+  "date": "2026-11-22 19:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Agentic security firm <a href=\"https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again\">Apiiro found that Claude Code has been exposing secrets in public repositories</a> due to how it stores them in local file on developers' machines to implement the \"Don't Ask Again\" feature. The company identified 1,122 secrets in <code>claude/settings.local.json</code> files and another 1,160 in git history, in the shared <code>settings.json</code> intentionally committed, and in agent chat transcripts stored in repos.</p>\n   <p>The problem lies in how Claude Code handles command approval. When developers reply \"Yes, and don’t ask again\" to approve a shell command, Claude Code saves it as a permanent permission rule in the local configuration file <code>.claude/settings.local.json</code>, which may end up inadvertently containing embedded credentials, passwords and API tokens.</p>\n   <blockquote>\n    <p>When [Claude Code] creates the file inside a git repo, it adds it to the developer's global git ignore list. That covers the common case. It doesn’t cover a folder that becomes a repo later, a clone on another machine, or a file someone already committed. The rule never goes into the repo's own .gitignore, so nothing travels with the project to protect it.</p>\n   </blockquote>\n   <p>On some occasions, the researchers found, Claude Code itself committed the file. Overall 63 organizations were affected, with exposed secrets including cloud API keys, production passwords and access tokens, and npm tokens. Generic secret scanners such as gitleaks and TruffleHog failed to flag all exposed secrets, mostly because they were embedded inside shell commands.</p>\n   <blockquote>\n    <p>The same password-in-a-command pattern appears wherever an agent records what it ran: transcripts, memory files, handoff notes, and a scanner tuned to key formats misses it in all of them.</p>\n   </blockquote>\n   <p>The researches also note that the way Claude Code manages secrets is a security gap in itself, as to any malware \"it’s a list of the systems the developer can reach and the passwords that open them, one file search away\", available at the same path in every project.</p>\n   <p>Apiiro's findings were later reinforced by <a href=\"https://blog.gitguardian.com/claude-code-settings-local-json-secrets-docker-hub/\">GitGuardian, which found 31,088 secrets in Claude Code’s .claude/settings.local.json on public GitHub</a>, 5,343 of which were still valid at the time of detection, as well as another 613 in Docker Hub images. GitGuardian had previously warned that \"<a href=\"https://blog.gitguardian.com/ai-coding-agents-credential-security/\">Cursor, Claude Code, and GitHub Copilot leave credentials scattered across config files, logs, and shell history</a>\".</p>\n   <p>Commenting on the findings, Reddit user <a href=\"https://www.reddit.com/r/blueteamsec/s/QkDodyeQks\">T_Thriller_T observed</a> that \"Somewhere, someone said <a href=\"https://www.ibm.com/think/podcasts/security-intelligence/ai-labs-ignoring-cybersecurity\">AI companies are ignoring basic cyber security principles</a>\".</p>\n   <p>User <a href=\"https://www.reddit.com/r/ClaudeAI/s/37GDkBjFjP\">MattV0 suggested an interesting approach</a> to the whole matter of how to deal with AI files:</p>\n   <blockquote>\n    <p>While this is about secrets, I totally stopped adding AI files into my projects. Means no settings, CLAUDE.md, AGENTS.md or anything else. I even turned off Claude's memory. [...] Nowadays I use a memory/task/docs server through mcp and it really improved such documentation issues.</p>\n   </blockquote>\n   <p>At very very least, Apiiro recommends untracking the json file using <code>git rm --cached .claude/settings.local.json</code> and adding it to the repo's <code>.gitignore</code>, as well as rotating every credentials the file has ever contained. For a sounder approach, the researchers also recommend inspecting the file and deleting any rule that contains a secret, and avoid typing secrets directly into commands, referencing them instead through environment variables.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Claude Code Has Been Leaking Secrets Through Its &quot;Don't Ask Again&quot; Feature\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/claude-code-leaking-secrets/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795345200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "安全研究人员发现，Claude Code 的「不再询问」功能会将数千条机密信息暴露在本地配置文件和 Git 历史记录中，给 63 家机构带来严重的凭证泄露风险。",
+  "oneSentenceSummary": "安全研究人员发现，Claude Code 的「不再询问」功能会将数千条机密信息暴露在本地配置文件和 Git 历史记录中，给 63 家机构带来严重的凭证泄露风险。",
+  "summary": "智能体安全公司 Apiiro 在 Claude Code 的本地设置文件中发现了 1，122 条机密信息，并在 Git 历史记录中发现了另外 1，160 条。这些信息通过「不再询问」功能暴露：该功能会保存已获批准且包含凭证的 Shell 命令。此次漏洞影响 63 家机构，涉及云 API 密钥、生产环境密码和 npm 令牌。随后，GitGuardian 在公开的 GitHub 仓库中发现了 31，088 条机密信息，其中 5，343 条仍然有效。问题源于 Claude Code 将永久权限规则存储在 `.claude/settings.local.json` 中，而该文件可能会在不经意间被提交到代码仓库。通用机密扫描器无法检测这些嵌入在命令中的凭证。Apiiro 建议取消对该文件的 Git 跟踪，并轮换所有已暴露的凭证。",
+  "mainPoints": [
+    {
+      "point": "Claude Code 的「不再询问」功能会将机密信息暴露在可能被提交到代码仓库的本地配置文件中。",
+      "explanation": "开发者选择「是，并且不再询问」以批准 Shell 命令时，Claude Code 会将该命令永久保存在 `.claude/settings.local.json` 中。文件可能包含嵌入其中的凭证、密码和 API 令牌。该文件会被添加到全局 Git 忽略列表，但不会加入仓库自身的 .gitignore，因此文件夹日后变成代码仓库，或文件已经被提交时，仍存在泄露风险。"
+    },
+    {
+      "point": "此次漏洞影响 63 家机构，暴露的凭证包括云 API 密钥、生产环境密码和 npm 令牌。",
+      "explanation": "Apiiro 在本地设置文件中发现了 1，122 条机密信息，在 Git 历史记录中发现了 1，160 条。随后，GitGuardian 在公开的 GitHub 仓库中发现了 31，088 条机密信息，其中 5，343 条仍然有效。gitleaks 和 TruffleHog 等通用机密扫描器无法检测这些嵌入式凭证，因为它们藏在 Shell 命令中，而非采用常见的机密信息格式。"
+    },
+    {
+      "point": "这一安全漏洞不仅限于设置文件，还会影响所有智能体系统中的对话记录和记忆文件。",
+      "explanation": "研究人员指出，只要智能体会记录已执行的命令，同样的「密码写在命令中」模式就可能出现在对话记录、记忆文件和交接笔记中。这会造成系统性问题：凭证暴露不仅限于配置文件，也可能扩展到所有智能体生成且可能存储在代码仓库中的文档。"
+    }
+  ],
+  "keyQuotes": [
+    "当 [Claude Code] 在 Git 仓库内创建该文件时，它会将文件添加到开发者的全局 Git 忽略列表中。这能覆盖最常见的情况，但无法保护之后才变成仓库的文件夹、在另一台机器上克隆的项目，或已经被提交的文件。这条规则不会写入仓库自身的 .gitignore，因此项目无法通过版本库携带这项保护。",
+    "只要智能体会记录自己执行过的命令，同样的「密码写在命令中」模式就会出现在对话记录、记忆文件和交接笔记里；针对密钥格式优化的扫描器会漏掉其中所有这些内容。",
+    "对任何恶意软件来说，只要搜索一个文件，就能找到开发者可以访问的系统列表以及解锁这些系统的密码；而且每个项目中都能在同一路径找到这个文件。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "AI 编程",
+    "开发者工具",
+    "代码助手"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 514,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795345200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-22 19:00:00"
+}

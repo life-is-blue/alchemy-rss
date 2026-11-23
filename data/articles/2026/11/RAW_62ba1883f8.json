@@ -1,0 +1,58 @@
+{
+  "id": "RAW_62ba1883f8",
+  "title": "Cloudflare Workers 上的 5 个 API，以及险些上线的漏洞",
+  "url": "https://dev.to/ayam04/five-apis-on-cloudflare-workers-and-the-bugs-that-nearly-shipped-ia4",
+  "date": "2026-11-22 21:02:17",
+  "author": "Ayam",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Five products, 37 endpoints, 470 tests, one deploy command each. This is the architecture, the pricing maths against the market, and the four bugs that would have made the whole thing useless.</p>\n  <h2><a name=\"the-shape-of-it\" href=\"#the-shape-of-it\"> </a> The shape of it</h2>\n  <p>One pnpm workspace, five Workers, one shared package. Each Worker is its own product with its own name, key, quota and failure domain. A bug in the PDF parser cannot take down email verification.</p>\n  <p>The shared package does the dangerous work once: error envelope, CORS, request ids, timing headers, OpenAPI generation, SSRF-safe fetching, and the marketplace proxy-secret check. Every route is registered through <code>app.openapi(createRoute(...), handler)</code> so the spec is generated from the same source as the handler. No hand-written YAML to drift.</p>\n  <p>That gave 37 endpoints and 470 tests. Every app passes <code>tsc --noEmit</code>, and every route was answered with a real curl before it was listed anywhere.</p>\n  <h2><a name=\"why-these-five\" href=\"#why-these-five\"> </a> Why these five</h2>\n  <p>Marketplace APIs sell on search intent. Someone types \"email verification api\" because their signup is leaking bounces. They do not want a platform. The product has to name the job.</p>\n  <p>So: email verification, on-page SEO audit, document text extraction, text analysis, PII redaction. Five jobs with clear intent, all things a developer wants to call once and forget.</p>\n  <h2><a name=\"the-pricing-maths-published\" href=\"#the-pricing-maths-published\"> </a> The pricing maths, published</h2>\n  <p>The interesting part is not the price, it is what the market charges. I put the numbers on a public page, including where I am expensive:</p>\n  <ul>\n   <li>EmailListVerify charges €5 per 1,000 credits, falling to €2.16 at 25k. Roughly half a cent per address.</li>\n   <li>PennyOCR charges $0.75 per 1,000 pages. AWS Textract is $1.50 per 1,000.</li>\n   <li>Sidian charges $799/month for 20,000 document pages, then $0.04 per page.</li>\n  </ul>\n  <p>Against that, a flat $0.05 per call is wrong in one place and right in others:</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>Unit</th>\n      <th>Our price</th>\n      <th>Market</th>\n      <th>Verdict</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>one email verification</td>\n      <td>$0.05</td>\n      <td>$0.005</td>\n      <td>10x the market</td>\n     </tr>\n     <tr>\n      <td>100 emails via bulk</td>\n      <td>$0.0005 each</td>\n      <td>$0.005</td>\n      <td>10x cheaper</td>\n     </tr>\n     <tr>\n      <td>100-page PDF</td>\n      <td>$0.0005 per page</td>\n      <td>$0.00075</td>\n      <td>parity</td>\n     </tr>\n     <tr>\n      <td>1-page PDF</td>\n      <td>$0.05 per page</td>\n      <td>$0.00075</td>\n      <td>66x the market</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>Publishing that table was the most useful marketing decision I made. It says what the product is bad at, which is the only reason anyone believes the rest.</p>\n  <h2><a name=\"four-bugs-worth-talking-about\" href=\"#four-bugs-worth-talking-about\"> </a> Four bugs worth talking about</h2>\n  <p><strong>1. The SSRF guard blocked every hostname.</strong> The validator ran an IP-range check against the hostname string, and hostnames are not IPs. Every request was refused. The fix was to resolve first (DNS-over-HTTPS), then range-check the resolved IPs, and only range-check the literal when the input is actually an IP.</p>\n  <p><strong>2. The OpenAPI import failed with \"Failed to parse JSON\".</strong> Not a schema problem: PowerShell's <code>Set-Content -Encoding UTF8</code> writes a BOM, and the marketplace importer rejects it. Download the raw bytes or write with <code>UTF8Encoding(false)</code>.</p>\n  <p><strong>3. Every marketplace call returned 401.</strong> The proxy secret had a trailing newline from <code>echo secret | wrangler secret put</code>. Trim both sides in the comparison. Obvious in hindsight, invisible for two hours.</p>\n  <p><strong>4. The listings were private.</strong> For days. The publish page renders a visibility toggle that flips to \"Public\" on click, and nothing is sent to the server until you press a Save button in a sticky bar at the bottom of the page. I clicked the toggle, saw it turn green, and reported the listings as live. They 404'd for everyone but me. That is the worst kind of bug: the UI agrees with you.</p>\n  <h2><a name=\"what-i-would-do-differently\" href=\"#what-i-would-do-differently\"> </a> What I would do differently</h2>\n  <p>Measure the client-visible number, not the server one. Every response from these APIs carries <code>x-response-time-ms</code> and <code>Server-Timing</code>, and the Worker does its work in about 16ms. A client round trip from India measures 172ms, because the rest is distance. Quoting \"under 100ms\" invites a buyer to measure something they will never see. I replaced every latency claim with a measured number and published the p50/p95 table.</p>\n  <p>Same for accuracy: I wrote endpoint lists from memory, and three of the five were wrong. Testing the docs like code (a script diffs every documented path against the live OpenAPI document) found it.</p>\n  <h2><a name=\"links\" href=\"#links\"> </a> Links</h2>\n  <ul>\n   <li>The APIs: <a href=\"https://labs.ayamk.in\" target=\"_blank\" rel=\"noopener noreferrer\">https://labs.ayamk.in</a></li>\n   <li>Live demos, no key needed: <a href=\"https://labs.ayamk.in/demo.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://labs.ayamk.in/demo.html</a></li>\n   <li>The pricing comparison with sources: <a href=\"https://labs.ayamk.in/compare-pricing.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://labs.ayamk.in/compare-pricing.html</a></li>\n   <li>Measured latency: <a href=\"https://labs.ayamk.in/performance.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://labs.ayamk.in/performance.html</a></li>\n   <li>Source, MIT: <a href=\"https://github.com/ayam04/ayam-labs-apis\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/ayam04/ayam-labs-apis</a></li>\n  </ul>\n  <hr>\n  <p><em>Disclosure: I built these APIs and I sell them. The comparison page names where a competitor is cheaper, and the latency numbers are measured from one machine rather than a load test. Treat this as a build log, not an independent review.</em></p>\n </body>\n</html>",
+  "aiSummary": "本文详述了部署在 Cloudflare Workers 上的 5 个市场 API 的架构与发布过程，包括定价对比，以及 4 个险些导致生产环境故障的严重漏洞。",
+  "oneSentenceSummary": "本文详述了部署在 Cloudflare Workers 上的 5 个市场 API 的架构与发布过程，包括定价对比，以及 4 个险些导致生产环境故障的严重漏洞。",
+  "summary": "本文介绍了 5 个市场 API 的开发过程：电子邮件验证、页面 SEO 审计、文档文本提取、文本分析和个人身份信息（PII）脱敏。这些 API 采用 monorepo 架构部署在 Cloudflare Workers 上，并通过共享程序包统一处理错误、CORS、OpenAPI 生成和防 SSRF 请求。作者公布了与竞品的定价对比，展示了自身的竞争优势，也指出每次调用收费 $0.05 的服务在某些情况下明显更贵。文章重点介绍了 4 个可能影响生产环境的严重漏洞：SSRF 防护在主机名字符串上检查 IP 范围，导致所有主机名请求被拦截；PowerShell 添加的 UTF-8 BOM 导致 OpenAPI 导入失败；代理密钥末尾的换行符导致市场调用返回 401；以及尽管 UI 显示列表已公开，实际列表仍处于私有状态。作者还谈到，应改为衡量客户端实际感知到的指标，而不是仅测量服务器端数据。",
+  "mainPoints": [
+    {
+      "point": "采用 monorepo 架构和共享程序包，统一处理 5 个独立 Worker 的错误并生成 OpenAPI 文档",
+      "explanation": "每个 Worker 都相互隔离，拥有自己的产品名称、密钥、配额和故障域。共享程序包集中处理防 SSRF 请求、CORS、请求 ID、计时响应头，并通过 app.openapi(createRoute(...)， handler) 生成 OpenAPI 规范，避免手写 YAML 导致内容不一致。"
+    },
+    {
+      "point": "透明定价揭示了与市场替代方案相比的优势与不足",
+      "explanation": "公开的对比表显示：单封邮件验证的定价为每次 $0.05，是市场价格的 10 倍；批量邮件验证的定价为每次 $0.0005，比市场价格 $0.005 低 10 倍；处理 100 页 PDF 的价格与市场基本持平，分别为 $0.0005 和 $0.00075；处理单页 PDF 的价格则是市场价格的 66 倍，为 $0.05 对比 $0.00075。选择公开披露这些信息，是一项战略性的营销决策。"
+    },
+    {
+      "point": "4 个影响生产环境的严重漏洞暴露了 UI 反馈与系统实际状态之间的差距",
+      "explanation": "SSRF 防护漏洞是因为系统对主机名字符串而非解析后的 IP 地址执行 IP 范围检查；OpenAPI 导入失败是由于 PowerShell 添加了 UTF-8 BOM；401 错误源于代理密钥末尾的换行符；列表仍为私有，则是因为 UI 中的切换按钮只有在点击页面底部固定栏中的「保存」按钮后才会保存设置，造成用户误以为操作已生效。"
+    },
+    {
+      "point": "衡量客户端实际感知到的指标，而非服务器端指标，才能更准确地描述性能",
+      "explanation": "Worker 处理请求约需 16ms，但从印度发起的客户端往返测量结果为 172ms，原因是网络距离。作者不再使用「低于 100ms」这类延迟描述，而是改为公布实际测得的 p50/p95 数据表，并通过自动化测试验证文档是否与线上 OpenAPI 文档一致。"
+    }
+  ],
+  "keyQuotes": [
+    "一个 pnpm 工作区、5 个 Worker、一个共享程序包。每个 Worker 都是独立的产品，拥有自己的名称、密钥、配额和故障域。PDF 解析器中的漏洞不会导致电子邮件验证服务瘫痪。",
+    "有意思的不是价格，而是市场上的收费标准。我把这些数字放在公开页面上，也包括我收费较高的地方。",
+    "SSRF 防护拦截了所有主机名。验证器对主机名字符串执行了 IP 范围检查，但主机名不是 IP。所有请求都被拒绝了。",
+    "这些列表有好几天都处于私有状态。发布页面显示了一个可见性切换按钮，点击后会变成「公开」，但直到你按下页面底部固定栏中的「保存」按钮，系统才会向服务器发送任何内容。",
+    "衡量客户端实际看到的数值，而不是服务器端的数值。这些 API 的每个响应都包含 x-response-time-ms 和 Server-Timing，而 Worker 本身约在 16ms 内完成处理。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工程",
+    "AI 工作流",
+    "AI 产品与应用",
+    "性能优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 724,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795352537000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-22 21:02:17"
+}

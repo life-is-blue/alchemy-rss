@@ -1,0 +1,56 @@
+{
+  "id": "RAW_2fa308d790",
+  "title": "Persona：OpenAI 背后的身份核验服务商，拿下欧洲顶级深度伪造测试认证",
+  "url": "https://dev.to/fathomnews/persona-the-id-checker-behind-openai-aces-europes-top-deepfake-test-o6g",
+  "date": "2026-11-22 21:30:32",
+  "author": "Fathom News",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Fraudsters are now feeding deepfake videos straight into selfie ID checks, skipping the phone camera entirely, and <strong>Persona</strong>, the identity company that verifies users for <strong>OpenAI</strong> and <strong>LinkedIn</strong>, just earned the top grade in Europe's first test for stopping them.</p>\n  <h2><a name=\"key-takeaways\" href=\"#key-takeaways\"> </a> Key Takeaways</h2>\n  <ul>\n   <li>Persona’s Android software development kit earned CEN/TS 18099 High certification for injection attack detection</li>\n   <li>High is the top level in the standard published in 2024 by the European Committee for Standardization</li>\n   <li>CLR CERT tested the software for at least 30 person-days using multiple attack methods and media types</li>\n   <li>The European Union Anti-Money Laundering Regulation covering remote customer identification applies from July 10, 2027</li>\n  </ul>\n  <p><strong>Persona</strong> <a href=\"https://www.businesswire.com/news/home/20261121225982/en/Persona-Earns-CENTS-18099-High-Certification-for-Injection-Attack-Detection\" target=\"_blank\" rel=\"noopener noreferrer\">announced</a> that its Android software development kit earned High certification under the European Committee for Standardization’s CEN/TS 18099 injection attack detection standard.</p>\n  <p>The evaluation was run by CLR CERT, the certification body of <strong>Cabinet Louis Reynaud Labs</strong>. Persona said the certified protection is available to all customers and can be activated by working with its team.</p>\n  <h2><a name=\"how-the-test-worked\" href=\"#how-the-test-worked\"> </a> How The Test Worked</h2>\n  <p>Injection attacks skip the camera entirely. Instead of holding up a photo or mask to a lens, fraudsters use virtual cameras, emulators, and tampered devices to feed stolen, manipulated, or artificial intelligence-generated media straight into the verification flow.</p>\n  <p>That matters because the system can see the result as a real live capture, while traditional liveness checks are not built to catch it. <strong>Irfan Faizullabhoy</strong>, product manager at Persona, said customers are facing more sophisticated deepfakes, face swaps, and replay attacks as identity verification volumes rise.</p>\n  <p>For the High level, evaluators attacked Persona’s Android software over at least 30 person-days. The test used multiple ways to tamper with the capture process and multiple kinds of fake media, while also checking that real users could still complete verification.</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>High-Level Test Requirement</th>\n      <th>Evaluation Detail</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Attack Time</td>\n      <td>At least 30 person-days</td>\n     </tr>\n     <tr>\n      <td>Injection Methods</td>\n      <td>At least 3, including rooted devices, tampered camera services, and custom operating system builds</td>\n     </tr>\n     <tr>\n      <td>Attack Media Types</td>\n      <td>At least 15, including deepfake videos, AI-generated faces, and spliced video clips</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>Persona said its defenses run automatically and in real time. Users take a short guided selfie while the system analyzes video, device, and camera signals in the background. Fraud and risk teams then get reason codes such as \"virtual camera detected\" to explain decisions during audits and appeals.</p>\n  <p><strong>Also Read:</strong> <a href=\"https://www.fathom.news/sumsub-builds-first-ai-agent-access/\" target=\"_blank\" rel=\"noopener noreferrer\">Sumsub Targets AI Agent Risk With 3 Controls For Banks, Insurers And Marketplaces</a></p>\n  <h2><a name=\"why-this-matters-for-persona\" href=\"#why-this-matters-for-persona\"> </a> Why This Matters For Persona</h2>\n  <p>This is a new benchmark in a growing fraud fight. The European Committee for Standardization published CEN/TS 18099 in 2024 as the first standard for testing injection attack detection, with three grades: Basic, Substantial, and High.</p>\n  <p>The timing is important because the European Union (EU) is raising the bar for remote identity proofing. The EU Anti-Money Laundering Regulation, which covers remote customer identification, applies from July 10, 2027. European identity-proofing standards already point to this testing too, including European Telecommunications Standards Institute TS 119 461 for trust service providers.</p>\n  <p>Persona also tied the certification to a change in the threat itself. <strong>Daniel Lee</strong>, product lead at Persona, said, \"Deepfake submissions keep growing in volume and sophistication, but agentic AI is an even more alarming trend.\" He said Persona is seeing real-time phishing attacks where bad actors mimic verification flows, trick people into submitting government IDs and selfies, and then try to inject that genuine media into legitimate sessions.</p>\n  <h2><a name=\"what-to-watch-next\" href=\"#what-to-watch-next\"> </a> What To Watch Next</h2>\n  <p>The immediate next step is customer rollout. Persona said customers can turn on the certified injection attack detection by contacting their account team, which means the feature is available now rather than waiting for a later release.</p>\n  <p>The certification also comes with outside validation. CLR Labs is accredited under the international standard for testing laboratories, and it edits CEN/TS 18099. <strong>Kévin Carta</strong>, director of CLR Labs, said the evaluation was built to test defenses against injected video, tampered apps, and modified operating systems.</p>\n  <p>Persona’s size gives the result broader weight. Founded in 2018 and headquartered in San Francisco, the company has verified roughly 1 billion identities, is available in more than 200 countries and territories and 20 languages, and says its fraud prevention and identity theft protection have stopped more than 300 million fraud attempts. It supports consumer-facing businesses including LinkedIn, OpenAI, Twilio, Square, Udemy, Travelex, and Gusto. Its certified status is also listed on the CLR CERT certified products list, making this a standard to watch as the 2027 rule date gets closer.</p>\n  <p><strong>Read Next:</strong> <a href=\"https://www.fathom.news/eu-ai-act-pdf-employer-deadlines/\" target=\"_blank\" rel=\"noopener noreferrer\">EU’s AI Act Flags Hiring Software As High Risk, Fines Reach €35M</a></p>\n  <hr>\n  <p><em>Originally published on <a href=\"https://www.fathom.news/persona-deepfake-test/\" target=\"_blank\" rel=\"noopener noreferrer\">Fathom News</a>.</em></p>\n </body>\n</html>",
+  "aiSummary": "Persona 是 OpenAI 和 LinkedIn 的身份验证服务商，获得欧洲新版 CEN/TS 18099 注入攻击检测标准的最高级别 High 认证，展现出强大的深度伪造和 AI 生成媒体攻击防护能力，早于欧盟 2027 年远程身份核验法规要求做好准备。",
+  "oneSentenceSummary": "Persona 是 OpenAI 和 LinkedIn 的身份验证服务商，获得欧洲新版 CEN/TS 18099 注入攻击检测标准的最高级别 High 认证，展现出强大的深度伪造和 AI 生成媒体攻击防护能力，早于欧盟 2027 年远程身份核验法规要求做好准备。",
+  "summary": "Persona 的 Android SDK 获得了 CEN/TS 18099 注入攻击检测标准的最高级别 High 认证。CLR CERT 通过 30 人日测试对其进行验证，测试使用了 3+ 种注入方法和 15+ 种攻击媒介，包括深度伪造视频和 AI 生成的人脸。该认证应对一种新兴欺诈手法：攻击者完全绕过摄像头，将被盗或合成媒体注入验证流程。随着欧盟《反洗钱条例》要求在 2027 年 7 月 10 日前实现远程身份核验，Persona 的实时检测会分析视频、设备和摄像头信号，并提供「检测到虚拟摄像头」等原因代码，便于留存审计记录。这家已验证 1 billion 个身份并拦截 300 million 次欺诈企图的公司，已向所有客户即时提供这项防护。",
+  "mainPoints": [
+    {
+      "point": "Persona 获得 CEN/TS 18099 注入攻击检测标准的最高级别 High 认证",
+      "explanation": "欧洲标准化委员会于 2024 年制定了该标准，设立 Basic、Substantial 和 High 三个认证级别，其中 High 为最高级别。CLR CERT 开展了严格测试，历时 30 人日，使用包括已 Root 设备和遭篡改摄像头服务在内的多种注入方法，验证 Persona 的 Android SDK 能够抵御 15+ 种攻击媒介。"
+    },
+    {
+      "point": "注入攻击将合成媒体直接输入验证系统，从而绕过传统活体检测",
+      "explanation": "与要求用户本人到场的传统方法不同，欺诈者如今会使用虚拟摄像头、模拟器和遭篡改的设备，注入深度伪造视频、AI 生成的人脸和篡改媒体。这造成了一个关键漏洞：系统无法区分真实采集内容与合成内容，因此需要制定新的检测标准。"
+    },
+    {
+      "point": "该认证符合欧盟即将出台的远程身份核验监管要求",
+      "explanation": "欧盟《反洗钱条例》将要求在 2027 年 7 月 10 日前完成远程客户身份识别。ETSI TS 119 461 等欧洲标准已引用 CEN/TS 18099 测试，因此，对服务欧洲市场的企业而言，该认证是一项前瞻性的合规举措。"
+    },
+    {
+      "point": "Persona 的检测可实时运行，并具备全面的审计能力",
+      "explanation": "用户按照引导完成自拍后，系统会自动分析视频、设备和摄像头信号。欺诈防控团队会收到「检测到虚拟摄像头」等具体原因代码，从而在审计和申诉处理中作出透明决策，保障合规并赢得客户信任。"
+    }
+  ],
+  "keyQuotes": [
+    "注入攻击会完全绕过摄像头。欺诈者不再把照片或面具举到镜头前，而是利用虚拟摄像头、模拟器和遭篡改的设备，将被盗、篡改或由人工智能生成的媒体直接输入验证流程。",
+    "深度伪造提交的数量和复杂程度持续攀升，但智能体 AI 是一个更加令人担忧的趋势。",
+    "系统可能会将结果识别为真实的实时采集内容，而传统活体检测并非为识别这类攻击而设计。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 安全与对齐",
+    "AI 产品与应用",
+    "AI 工作流",
+    "AI 工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 84,
+  "wordCount": 757,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795354232000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-22 21:30:32"
+}
