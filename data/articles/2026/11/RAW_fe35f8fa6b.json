@@ -1,0 +1,58 @@
+{
+  "id": "RAW_fe35f8fa6b",
+  "title": "借助智能体与形式化验证寻找更快的量子算法",
+  "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+  "date": "2026-11-24 00:59:40",
+  "author": "Sergey Shirobokov, Ben Jaderberg, Ryan Babbush",
+  "siteName": "Google DeepMind News",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"readability-page-1\" class=\"page\">\n   <div id=\"page-content\">\n    <section>\n     <div>\n      <div>\n       <div>\n        <p><span style=\"font-size: 1rem;\">How using agent teams and formal verification can improve quantum algorithms for modelling fusion energy, chemistry and enzymes</span></p>\n       </div>\n      </div>\n     </div>\n    </section>\n    <section>\n     <div>\n      <div>\n       <p>Quantum computers could soon solve problems beyond the reach of classical supercomputers. However, there is a catch: even when using the best quantum algorithms, some important applications still require more resources than early quantum hardware will be able to support.</p>\n       <p>In a <a href=\"https://arxiv.org/abs/2611.09822\" rel=\"noopener\" target=\"_blank\">new paper</a>, we used teams of Gemini 4 agents to improve well-known quantum algorithms, creating highly efficient quantum circuits. These optimized circuits, which are instructions for how a quantum computer should carry out an algorithm, could one day help us run simulations that solve complex scientific challenges, from fusion energy to drug design. To help the community build on this work, we are open-sourcing <a href=\"http://github.com/google-deepmind/formal-quantum-computation\" rel=\"noopener\" target=\"_blank\">our Lean library</a>, problem specifications, and verified solutions on GitHub.</p>\n       <p>Because we cannot test resource-intensive quantum circuits on classical computers or today's small quantum processors, we have to prove that they work mathematically. Our agent teams proved each result using Lean, a formal theorem prover.</p>\n      </div>\n     </div>\n    </section>\n    <section>\n     <div>\n      <div>\n       <figure>\n        <figure>\n         <div>\n          <div>\n           <video autoplay=\"\" loop=\"\" muted playsinline=\"\" poster=\"https://deepmind.google/static/images/fallback/video_poster_fallback_light.57b61d57842a.jpg\" preload=\"none\"><source type=\"video/webm\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/i1txY2kjeHrUY_M0/quantum-algorithms__figure1__light.webm#t=0.1\"><source type=\"video/webm\" src=\"https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/0Yc3C_lfuFUq_DUw/quantum-algorithms__figure1__dark.webm#t=0.1\"> Your browser does not support the video tag.</video>\n          </div>\n         </div>\n        </figure>\n        <figcaption></figcaption>\n       </figure>\n      </div>\n     </div>\n    </section>\n    <section>\n     <div>\n      <div>\n       <p>We chose to focus on applications that could one day impact some of humanity’s greatest challenges, such as clean energy and drug design, but our method is not limited to these problem areas.</p>\n       <p>Running these algorithms in scientific simulations would still demand more computational resources than the first error-corrected quantum computers are likely to provide, but these improvements are significant.</p>\n       <p>We are also excited by the way in which we found them. We built a new, <a href=\"http://github.com/google-deepmind/formal-quantum-computation\" rel=\"noopener\" target=\"_blank\">open-source library</a>, in Lean for quantum algorithms which could be used by teams of collaborating agents, so their ideas were backed by mathematical correctness guarantees. We could then set the research direction by specifying the problems for our agent teams and supervise their progress. Our knowledge of quantum algorithms, combined with the way we set up our agent teams, led to real scientific results.</p>\n       <p>The same approach could also accelerate other aspects of quantum computing research, and scientific discovery more broadly. Proof-checked AI search compresses work that once took years of manual design, empowering researchers to focus on choosing problems and interpreting results.</p>\n      </div>\n     </div>\n    </section>\n    <section>\n     <div>\n      <div>\n       <div>\n        <a rel=\"noopener noreferrer\" href=\"https://arxiv.org/abs/2611.09822\" target=\"_blank\"> \n         <p>Read the paper</p> \n        </a><a rel=\"noopener noreferrer\" href=\"https://github.com/google-deepmind/formal-quantum-computation\" target=\"_blank\"> \n         <p>Access the Lean framework</p> \n        </a>\n       </div>\n      </div>\n     </div>\n    </section>\n    <section>\n     <div>\n      <div>\n       <h2 id=\"anchor1\">Acknowledgements</h2>\n       <p>This research was a collaboration between Google DeepMind and Google Quantum AI. The work reflects the contributions of the paper's authors: Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, Eric Wieser, Francisco J. H. Heras, Nicholas C. Rubin, Guang Hao Low, Sébastien Racanière, Nenad Tomašev, Lei M. Zhang, James D. Watson, Tanuj Khattar, Aws Albarghouthi, Stavan Jain, Harun Khan, Leopoldo Sarra, Andrew W. Senior, Michael Broughton, Hussain Masoom, Sergio Boixo, Ryan Babbush, Swarat Chaudhuri, and Pushmeet Kohli.</p>\n       <p>We also thank Kevin Ishimwe, Ibrahim Alkhashem, and Matthew Harrigan for feedback and discussions on the Lean library, Emilien Dupont and Sebastian Nowozin for manuscript feedback, and Brendan Tracey for advice on the fusion application. Finally, we thank Uchechi Okereke, Ali Douraghy, and Andy Song for legal and policy support, and Alex Wilkins, Evie Gray, Danielle Breen, Dimple Vijaykumar, Muinat Abdul, Jason Freidenfelds, Chris Kwaku-Abdullahi, and Rob Ashley for their help with visuals and communicating this work.</p>\n      </div>\n     </div>\n    </section>\n    <section>\n     <div>\n      <div>\n       <div>\n        <div>\n         <article>\n          <div>\n           <div></div>\n          </div>\n         </article>\n        </div>\n       </div>\n      </div>\n     </div>\n    </section>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文展示了由 Gemini 4 智能体组成的团队如何结合 Lean 形式化验证，优化用于聚变能源、化学和酶模拟的量子算法，生成经过数学验证的电路，推动量子计算研究进展。",
+  "oneSentenceSummary": "本文展示了由 Gemini 4 智能体组成的团队如何结合 Lean 形式化验证，优化用于聚变能源、化学和酶模拟的量子算法，生成经过数学验证的电路，推动量子计算研究进展。",
+  "summary": "作者提出了一种新方法：利用 Gemini 4 智能体团队，通过定理证明器 Lean 的形式化验证改进广为人知的量子算法。他们为聚变能源、化学和酶建模等应用创建了经过优化的量子电路，展示了 AI 辅助研究如何加速科学发现。这项工作的 Lean 库已在 GitHub 上开源，其中提供了问题规范和经过验证的解决方案。尽管这些算法最终仍需在具备纠错能力的量子计算机上运行，但这些改进代表着向实用量子应用迈出了重要一步，有望帮助人类应对重大挑战。",
+  "mainPoints": [
+    {
+      "point": "智能体团队结合形式化验证优化量子算法",
+      "explanation": "本文利用 Gemini 4 智能体与 Lean 定理证明器协作，生成经过数学验证的量子电路，展示了 AI 如何在形式化证明确保正确性的同时，加速量子算法设计。"
+    },
+    {
+      "point": "应用涵盖聚变能源、化学和酶模拟",
+      "explanation": "优化后的算法针对聚变能源建模、化学模拟和酶设计等现实科学挑战，展现了超越量子计算理论研究的实际价值。"
+    },
+    {
+      "point": "开源框架促进社区协作",
+      "explanation": "作者在 GitHub 上发布了 Lean 库、问题规范和经过验证的解决方案，方便其他研究人员在此基础上继续探索，并将这一方法应用于新的量子计算问题。"
+    },
+    {
+      "point": "经证明检验的 AI 搜索将多年人工设计压缩至数日",
+      "explanation": "这项研究表明，将形式化验证与 AI 智能体结合，可以大幅加速科学发现，把算法设计所需时间从数年缩短至数日。"
+    }
+  ],
+  "keyQuotes": [
+    "如何利用智能体团队和形式化验证，改进用于模拟聚变能源、化学和酶的量子算法",
+    "我们使用 Gemini 4 智能体团队改进了广为人知的量子算法，构建出高效的量子电路",
+    "由于我们无法在经典计算机或当今的小型量子处理器上测试资源消耗巨大的量子电路，因此必须通过数学证明来确保它们能够正常工作",
+    "我们的智能体团队使用形式化定理证明器 Lean 证明了每一项结果",
+    "经证明检验的 AI 搜索，将过去需要数年人工设计的工作压缩至更短时间，让研究人员能够专注于选择问题和解读结果"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "形式化验证",
+    "量子计算",
+    "模型发布",
+    "科学前沿"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 520,
+  "domain": "deepmind.google",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_cca1dc",
+  "sourceName": "Google DeepMind News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795453180343,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-24 00:59:40"
+}

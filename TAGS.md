@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-24 00:48:06 | [返回首页](/README.md)
+**更新时间**: 2026-11-24 11:37:55 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17735)
+- [AI & 大模型](#ai-llm) (17780)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1037)
-- [DevOps](#devops) (871)
+- [前端与全栈](#frontend-fullstack) (1038)
+- [DevOps](#devops) (873)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7245)
+- [其他](#other) (7252)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [GLM-5.4：瞄向泛-Coding，首个-Loop-Transformer-带来的惊喜](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494345&idx=1&sn=0ea26a769f134fefec42e33d59558c73) - AI 精选
 - [大模型开始「自己改写自己」了：不用训练，越改越强](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247724047&idx=1&sn=0f7d52679594b122f1f23b720546bde7) - AI 精选
 - [应对对抗性蒸馏](https://openai.com/index/combatting-adversarial-distillation) - AI 精选
 - [Hy4-正式版开源：多模态-MoE，770B-激活-49B，首次新增视觉能力！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247515963&idx=1&sn=d82e7d4f23e0719fbd137e2072eec688) - AI 精选
@@ -41,9 +42,8 @@
 - [Gemini-4-Carbon-现已推出](https://deepmind.google/blog/gemini-4-carbon-is-now-available/) - AI 精选
 - [用-Claude-定位神秘的蜂鸣声来源](https://simonwillison.net/2026/Nov/9/mysterious-beeps/) - AI 精选
 - [100+-个客户共用一个语义模型，构建时间缩短-70%](https://towardsdatascience.com/how-to-report-for-100-clients-with-one-semantic-model/) - AI 精选
-- [GPT-6-Cyber：推动对齐型网络安全智能体的能力前沿](https://openai.com/index/introducing-gpt-6-cyber) - AI 精选
 
-- [查看全部 17735 篇...](/details/tags/ai-llm.md)
+- [查看全部 17780 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [【第-3606-期】vivo-前端三剑客发展历程及原理揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277798&idx=1&sn=f595cc4365c163ce75cfc2c7572f2989) - 编程 精选
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 
-- [查看全部 1037 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1038 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 
-- [查看全部 871 篇...](/details/tags/devops.md)
+- [查看全部 873 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [重磅！Claude-Code-官方开源：AI-屎山代码，终于有解了~（附提示词）](https://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247513292&idx=1&sn=a6e6fd015ccedd2d78ae6c3ce1911459) - AI 精选
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 
-- [查看全部 7245 篇...](/details/tags/other.md)
+- [查看全部 7252 篇...](/details/tags/other.md)
 
 

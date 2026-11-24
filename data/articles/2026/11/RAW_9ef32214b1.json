@@ -1,0 +1,61 @@
+{
+  "id": "RAW_9ef32214b1",
+  "title": "QCon San Francisco 2026：保障生产环境中的 AI 智能体安全",
+  "url": "https://www.infoq.com/news/2026/11/qcon-ai-agent-security/",
+  "date": "2026-11-24 04:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Securing AI agents is a variation of the insider-risk problem, requiring distinct identities, narrowly scoped credentials and fine-grained policy controls, according to <a href=\"https://linkedin.com/in/amandawalker2\">Amanda Walker</a>, senior director of engineering for privacy, safety and security at Google. In a <a href=\"https://qconsf.com/presentation/nov2026/agentic-trust-securing-ai-agents-production\">QCon San Francisco session</a>, she outlined patterns for teams whose agents have been adopted organically and are running ahead of their security and observability frameworks.</p>\n   <p>With agents now executing multi-step plans in live production environments, Walker argued that \"a rogue AI agent is the same problem as a rogue human insider,\" one that acts with superhuman speed and persistence. Controls therefore need to work at machine speed, rather than relying on someone reviewing logs the next morning. She covered identity and credentials, boundary defence, subagent orchestration and policy-based containment.</p>\n   <p>Walker described giving an agent raw human credentials as the fastest path to production failure. The agent inherits the user's authority, so a prompt injection in a document can turn that access to an attacker's purposes. She recommended explicit principals for agents, the AI equivalent of service accounts, so each agent can be provisioned and logged separately without impersonating anyone.</p>\n   <p>Scoped OAuth tokens limit an agent's access in time and scope, but are immutable once issued. With credential attenuation, an orchestrator instead mints narrower tokens for its subagents, such as read-only access to logs, or read-only access to a repository between two commits when bisecting a broken build.</p>\n   <p>She pointed to <a href=\"https://doc.biscuitsec.org/reference/specifications.html\">Eclipse Biscuit</a>, a token format whose holders can append restrictions, but cannot remove existing ones without invalidating its signature. It takes more work than reusing human authentication infrastructure, but suits services where teams control both ends.</p>\n   <p>For API keys, a proxy can give the agent a short-lived synthetic key and substitute the real one as traffic leaves, protecting it from prompt injection and exfiltration.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/qcon-ai-agent-security/news/2026/11/qcon-ai-agent-security/en/resources/1Screenshot 2026-11-20 at 22.25.21-1795213845789.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/qcon-ai-agent-security/en/resources/1Screenshot 2026-11-20 at 22.25.21-1795213845789.png\" rel=\"share\"></p>\n   <p>Walker cautioned that a virtual machine protects the host, not the resources an agent can reach: an agent with network access can still delete a database. Container sandboxes, ephemeral runtimes and sidecar proxies such as Envoy give finer control over file system and network access. But \"a perfectly isolated compute sandbox is not useful,\" she said, so teams need policies that constrain what agents do with the services they call.</p>\n   <p>She also highlighted poisoned skills on public marketplaces that steal API keys and cryptocurrency wallets, citing <a href=\"https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/\">Snyk research</a> that found more than a third of publicly available skills had at least one security flaw.</p>\n   <p>Agents also cause harm by being wrong rather than malicious. Walker described an agent that read internal SRE documentation and invoked a break-glass process intended for emergencies, having decided it was the most expedient route. Monitoring caught it, but the lesson was that organisations must distinguish agents from the people they work for, because some processes depend on a human accepting risk. For the same reason, she described computer-use agents, which drive a mouse and keyboard, as in essence impersonation, while acknowledging they solve problems that machine protocols such as MCP cannot.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/qcon-ai-agent-security/news/2026/11/qcon-ai-agent-security/en/resources/1Screenshot 2026-11-20 at 22.26.08-1795213845789.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/qcon-ai-agent-security/en/resources/1Screenshot 2026-11-20 at 22.26.08-1795213845789.png\" rel=\"share\"></p>\n   <p>Asked in the question-and-answer session about tagging identities as agents, Walker said: \"The biggest thing it gave us was auditability about some of these risk decisions.\" The distinction supports human-only rules, such as emergency access, and can help with agent-only rules, such as signed releases in regulated environments, although she noted that an agent flag alone is not enough for those.</p>\n   <p>In the Q&amp;A, she also advised security teams not to simply say no, which pushes colleagues to work around controls, but to allow experimentation where mistakes are reversible and keep human review for irreversible actions such as wire transfers.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon San Francisco 2026: Securing AI Agents in Production\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/qcon-ai-agent-security/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795464000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 的 Amanda Walker 阐述了生产环境中 AI 智能体的安全模式：应将失控智能体视为内部人员风险，并通过机器级速度的控制、独立身份和细粒度策略执行来应对。",
+  "oneSentenceSummary": "Google 的 Amanda Walker 阐述了生产环境中 AI 智能体的安全模式：应将失控智能体视为内部人员风险，并通过机器级速度的控制、独立身份和细粒度策略执行来应对。",
+  "summary": "Google 隐私、安全与信息安全工程高级总监 Amanda Walker 在 QCon San Francisco 2026 上介绍了生产环境中 AI 智能体的安全模式。她将失控的 AI 智能体视为内部人员风险问题，认为需要以机器级速度实施控制，而不是依赖人工审查。她的主要建议包括：为智能体设置明确的主体身份，而非使用人类凭据；使用权限受限的 OAuth 令牌，并为子智能体进一步收窄凭据权限；采用 Eclipse Biscuit 等令牌格式，以便追加限制而不移除现有限制。对于 API 密钥，可通过代理生成合成密钥，保护真实凭据免受提示词注入攻击。容器沙箱和边车代理比虚拟机提供更精细的控制，但策略还必须限制智能体如何使用其调用的服务。Walker 还指出，公共市场上可能存在被投毒的技能，而智能体也可能因判断错误而非恶意意图做出有害决策。她强调，必须区分智能体与人类，尤其是在需要由人类接受风险的流程中。",
+  "mainPoints": [
+    {
+      "point": "失控的 AI 智能体本质上是内部人员风险问题，需要机器级速度的控制。",
+      "explanation": "Walker 认为，在生产环境中执行多步计划的智能体，与失控的人类内部人员面临的是同一类问题，但智能体行动的速度和持续性远超人类，因此需要能够以机器级速度生效的控制措施，而不能依赖次日查看日志。"
+    },
+    {
+      "point": "智能体应使用明确的主体身份和受限凭据，而不是继承人类权限。",
+      "explanation": "向智能体提供原始的人类凭据，是导致生产环境故障的最快途径，因为智能体会继承用户权限。Walker 建议为智能体设置明确的主体身份（相当于 AI 版的服务账户），并使用权限受限的 OAuth 令牌，同时为子智能体进一步收窄凭据权限，从而实现只读访问或仅在限定时间内访问代码仓库。"
+    },
+    {
+      "point": "Eclipse Biscuit 等令牌格式和基于代理的 API 密钥管理，有助于安全地处理凭据。",
+      "explanation": "Eclipse Biscuit 令牌允许持有者追加限制，而不移除已有的限制，适用于团队同时控制令牌两端的场景。对于 API 密钥，代理可以向智能体提供短期有效的合成密钥，并在流量发出时替换为真实密钥，从而防范提示词注入和数据外泄。"
+    },
+    {
+      "point": "容器沙箱与基于策略的隔离对智能体安全至关重要，但仅靠这些措施还不够。",
+      "explanation": "虚拟机可以保护宿主机，但拥有网络访问权限的智能体仍可能删除数据库。容器沙箱、临时运行环境和边车代理能够提供更精细的控制，但 Walker 强调，如果没有策略来限制智能体如何使用其调用的服务，那么即使计算环境完全隔离，也没有实际意义。"
+    },
+    {
+      "point": "组织必须区分智能体与人类，以便进行审计并控制流程。",
+      "explanation": "将身份标记为智能体，有助于审计风险决策，并支持仅适用于人类的规则（如紧急访问）和仅适用于智能体的规则（如受监管环境中的签名发布）。这种区分至关重要，因为有些流程依赖人类接受风险；而使用计算机的智能体通过鼠标和键盘操作时，实质上是在冒充他人。"
+    }
+  ],
+  "keyQuotes": [
+    "失控的 AI 智能体与失控的人类内部人员面临的是同一类问题，只不过它行动的速度和持续性远超人类。",
+    "向智能体提供原始的人类凭据，是导致生产环境故障的最快途径。",
+    "完全隔离的计算沙箱并没有实际意义，因此团队需要制定策略，限制智能体如何使用它们调用的服务。",
+    "它带给我们的最大价值，是让我们能够审计其中一些风险决策。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "开发者工具",
+    "系统设计",
+    "零信任"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 597,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795464000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-24 04:00:00"
+}

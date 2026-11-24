@@ -1,0 +1,62 @@
+{
+  "id": "RAW_40e4d523c7",
+  "title": "蚂蚁百灵开源 LingSante-3.1-air-VL 与 LingSante-3.1-flash 医疗推理模型",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzcwMDIyMQ==&mid=2247504165&idx=1&sn=5489cda0a57241f4563b39e2da69d2f9",
+  "date": "2026-11-23 18:41:00",
+  "author": "机器之心SOTA模型",
+  "siteName": "机器之心SOTA模型",
+  "content": null,
+  "aiSummary": "11 月 23 日，蚂蚁百灵开源 LingSante-3.1-air-VL 与 LingSante-3.1-flash 医疗推理模型，同时介绍 Inkling 2 Mini、Karpo Decision 31B、Edge0-145B 和 dNaViT 等项目。",
+  "oneSentenceSummary": "11 月 23 日，蚂蚁百灵开源 LingSante-3.1-air-VL 与 LingSante-3.1-flash 医疗推理模型，同时介绍 Inkling 2 Mini、Karpo Decision 31B、Edge0-145B 和 dNaViT 等项目。",
+  "summary": "11 月 23 日，蚂蚁百灵推出 LingSante 系列医疗推理模型：LingSante-3.1-air-VL（124B 参数、5.5B 激活，256K 上下文，MIT 许可证）支持医疗图像与文字分析；LingSante-3.1-flash（560B 参数、25B 激活，1M token 上下文，MIT 许可证）专注医疗文本推理与循证检索。此外，Inkling 2 Mini（26.4B 参数，3.4B 激活，Apache 2.0 许可证）支持百万 token 图文上下文；Karpo Decision 31B（31.3B 参数，BF16 权重）实现结构化决策概率输出；Edge0-145B（145B 参数，10.12B 激活，Q3_K 与 NVFP4 量化）探索显存与内存协同本地推理；dNaViT 视觉编码器提供统一离散图像表示。",
+  "mainPoints": [
+    {
+      "point": "LingSante-3.1-air-VL 是面向医疗图文任务的大模型",
+      "explanation": "总参数 124B、激活参数 5.5B，支持 256K 上下文，可结合医疗图像与文字进行分析，权重按 MIT 许可证开放，适合医疗图像理解、报告生成及研究辅助。"
+    },
+    {
+      "point": "LingSante-3.1-flash 支持百万 token 医疗文本推理",
+      "explanation": "总参数 560B、激活参数 25B，上下文长度达 1M token，专注医疗文本推理与循证检索场景，权重同样采用 MIT 许可证，适合具备多卡运维能力的团队使用。"
+    },
+    {
+      "point": "Inkling 2 Mini 提供循环计算架构支持超长图文上下文",
+      "explanation": "总参数 26.4B、激活参数 3.4B，采用循环计算设计重复使用部分权重，官方另给出 5.4B 的循环激活量口径，支持 1M token 上下文，Apache 2.0 许可，开发者可通过 Tinker 接口调用。"
+    },
+    {
+      "point": "Karpo Decision 31B 实现结构化决策概率输出",
+      "explanation": "基于 Gemma 4 微调的 31.3B 参数 BF16 权重，接收文字、JSON 或图片状态，直接输出候选概率，不生成回答文本，适合需要明确选项的决策流程，支持最多 255 个候选项。"
+    },
+    {
+      "point": "Edge0-145B 探索显存与内存协同运行大型 MoE 模型",
+      "explanation": "总参数 145B、激活参数 10.12B，提供 Q3_K 与 NVFP4 量化版本，配套 edge0-strata 在 GPU 显存与系统内存间调度权重，面向 Linux、Windows 和 NVIDIA GPU，需编译定制推理引擎。"
+    }
+  ],
+  "keyQuotes": [
+    "LingSante-3.1-air-VL 基于 Ling-3.0-flash-VL 构建，面向医疗图文任务。官方公布模型总参数为 124B、激活参数为 5.5B，支持 256K 上下文",
+    "LingSante-3.1-flash 是面向医疗文本的 MoE 模型。官方公布其总参数为 560B、激活参数为 25B，上下文长度达到 1M token",
+    "Inkling 2 Mini 支持文字、图像输入和文字输出，提供 1M token 上下文。模型总参数为 26.4B，激活参数为 3.4B",
+    "Karpo Decision 31B 基于 Gemma 4 微调，提供 31.3B 参数的 BF16 权重。它接收文字、JSON 或图片状态，直接输出候选概率",
+    "Edge0-145B 是基于 Qwen3.8-Flash-Next 衍生的 MoE 模型，总参数 145B，激活参数 10.12B。项目提供 Q3_K 与 NVFP4 版本"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "大语言模型 (LLM)",
+    "开源项目",
+    "AI 编程",
+    "模型训练与推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 86,
+  "wordCount": 2087,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_b425ef",
+  "sourceName": "机器之心SOTA模型",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1795430460000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-23 18:41:00"
+}
