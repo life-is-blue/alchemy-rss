@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-24 11:37:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-24 22:25:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -692,17 +692,13 @@
 
 ### [Elastic-9.6：AlertZero、ES|QL-S3-数据联邦与通用告警](https://www.elastic.co/blog/whats-new-elastic-9-6-0)
 
-2026-11-24 00:01:28 | 标签: 编程与工程, 安全, 可观测性, 云原生 / DevOps, 开发者工具
-
-> Elastic 9.6 为 Search、Observability 和 Security 带来多项重要平台升级。在 Security 方面，AlertZero 以技术预览版形式推出，包含 4 个 AI 智能体（Triage、Hunt、Detection、Forensics），可自动处理告警；同时增强实体分析，突出显示高风险实体，并为 Linux 提供勒索软件防护。Elasticsearch 9.6 新增 ES|QL 数据联邦，可直接查询 Amazon S3 数据；还推出高性能分析用的 Columnar Mode、支持多用户协作的 Kibana 聊天功能，以及具备提示词缓存和由 Jina 驱动...
+2026-11-24 00:01:28
 
 
 
 ### [探究-Cloudflare-的-DNS](https://blog.cloudflare.com/probing-dns-at-cloudflare/)
 
-2026-11-23 22:00:18 | 标签: 编程与工程, 安全, 性能优化, Cloudflare, DNS
-
-> 本文深入介绍 Cloudflare 的 DNS 基础设施，重点说明公司如何大规模处理针对 1.1.1.1 DNS 服务的查询。文章涵盖采用任播路由的分布式架构、包括 DNSSEC 实施和 DDoS 防护在内的安全措施、通过边缘缓存和智能路由实现的性能优化，以及维持全球 DNS 可靠性的工程挑战。文章还阐述了 Cloudflare 的 DNS 基础设施如何支持其更广泛的使命：提供更快速、更安全的互联网，同时依托全球数据中心网络，每天处理数十亿次查询。
+2026-11-23 22:00:18
 
 
 

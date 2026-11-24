@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-24 11:37:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-24 22:25:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -806,9 +806,7 @@
 
 ### [如何在-GitHub-Actions-中使用-GitHub-CLI](https://www.freecodecamp.org/news/how-to-use-the-github-cli-with-github-actions/)
 
-2026-11-23 23:17:35 | 标签: 编程与工程, 开发者工具, 前端与 Web, 后端开发, 测试与质量
-
-> 文章介绍了如何将 GitHub CLI 集成到 GitHub Actions 工作流中，并通过实用示例演示如何自动执行 GitHub 仓库任务。文章首先对比了 GitHub Actions 的自动化能力与 GitHub CLI 基于终端的管理功能。随后，教程探讨了第三方 Action 带来的风险，包括安全漏洞、维护问题和供应链攻击，并说明了何时应使用第三方 Action、何时应选择内置工具。文章还提供了具体示例，展示如何在工作流中使用 GitHub CLI 创建议题、处理部署失败和创建发布版本。最后，文章指出，将 GitHub CLI 与 GitHub Actions 结合使用，可以减少依赖、...
+2026-11-23 23:17:35
 
 
 
