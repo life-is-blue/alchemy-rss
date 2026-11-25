@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-25 08:15:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-25 18:41:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -806,9 +806,7 @@
 
 ### [Jensen-Huang-重返-NVIDIA-事件中的内幕交易案剖析-·-deucalionn](https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/)
 
-2026-11-24 19:13:55 | 标签: 资讯与媒体, 预测市场, 加密与Web3, 唐纳德·特朗普, NVIDIA
-
-> 这项法证调查分析了 Polymarket 上「Jensen Huang 会在 2026 年 12 月 31 日前重返 NVIDIA 吗？」市场的链上交易。作者开发了一种监控敏感市场的算法，并发现了可疑的集中买入模式。2026 年 11 月 23 日 CET 02:19 至 03:28，一名交易者（钱包 ljhggk）通过 4 笔限价单，以 $0.065 的价格买入 71，518 份份额（总计 $4，648.66），吸收了 34% 的可售流动性。此事发生在 Trump 发布 Truth Social 帖子前 89 分钟，以及 NVIDIA 发布确认 Huang 恢复职务的官方公告前 11 小时。...
+2026-11-24 19:13:55
 
 
 
