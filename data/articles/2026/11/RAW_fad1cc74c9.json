@@ -1,0 +1,62 @@
+{
+  "id": "RAW_fad1cc74c9",
+  "title": "CNCF 研究显示，随着 AI 工作负载演进，虚拟机仍处于核心地位",
+  "url": "https://www.infoq.com/news/2026/11/cncf-vm-ai-workloads/",
+  "date": "2026-11-24 20:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Virtual machines (VMs) continue to account for a substantial share of cloud-native production infrastructure, despite the widespread adoption of containers and<a href=\"https://kubernetes.io/\"> Kubernetes</a>. <a href=\"https://www.cncf.io/blog/2026/11/09/new-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve/\">New research</a> from the <a href=\"https://www.cncf.io/\">Cloud Native Computing Foundation (CNCF)</a> and <a href=\"https://www.linuxfoundation.org/research\">Linux Foundation Research</a> finds that VMs host an average of 53% of production applications, while emerging AI and agentic workloads are creating additional demand for virtualisation, particularly where stronger execution isolation is required.</p>\n   <p dir=\"ltr\">The report surveyed 492 cloud-native practitioners and technology leaders in September 2026. Among organisations expanding their VM footprint, 34% identified AI and agentic workloads as a contributing factor. The findings suggest that rather than replacing virtual machines with containers, organisations are increasingly combining the two to accommodate different application and security requirements.</p>\n   <p dir=\"ltr\">The research challenges the assumption that cloud-native adoption necessarily means moving away from virtual machines. While containers provide portability and efficient application packaging, VMs continue to offer isolation and support for workloads that depend on dedicated operating systems or established virtualisation environments.</p>\n   <p dir=\"ltr\">The survey found that 51% of respondents run at least half of their production applications on VMs. This rises to an average of 64% in organisations with more than 10,000 employees, compared with 45% among organisations with fewer than 500 employees.</p>\n   <p dir=\"ltr\">Furthermore, 71% of respondents who provided both current and expected workload figures anticipate their VM share remaining within the same range over the next year. This points towards continued coexistence rather than a wholesale migration to one deployment model.</p>\n   <p dir=\"ltr\">One of the more significant findings concerns the relationship between AI adoption and infrastructure security.</p>\n   <p dir=\"ltr\">AI agents increasingly generate and execute code, interact with tools, and access external systems. This creates new risks when generated code is executed in environments containing sensitive data or shared infrastructure.</p>\n   <p dir=\"ltr\">Virtual machines offer a stronger isolation boundary than conventional containers, which share the host operating system kernel. The report identifies hardware-level VM isolation, containers running inside VMs, and MicroVM sandboxing as approaches organisations are using to contain AI workloads.</p>\n   <p dir=\"ltr\">Among organisations expanding their VM footprint, 47% cited security and isolation as a contributing factor, while 34% specifically identified AI and agentic workloads.</p>\n   <p dir=\"ltr\">The survey also points to growing interest in stronger isolation technologies. MicroVM sandboxing adoption is expected to increase from 20% current use to 30% planned use, while confidential computing is expected to grow from 12% to 26%. These figures represent reported intentions rather than confirmed deployments.</p>\n   <p dir=\"ltr\">Some 61% of respondents described their VM and container administration teams as collaborative or fully integrated, suggesting that managing different workload types is increasingly becoming a shared platform engineering responsibility.</p>\n   <p dir=\"ltr\">Kubernetes is also beginning to play a role in virtual machine management. Among respondents using VMs, 8% reported using <a href=\"https://kubevirt.io/\">KubeVirt</a>, the CNCF project that allows virtual machines to be managed through Kubernetes resources and APIs.</p>\n   <p dir=\"ltr\">This brings VM lifecycle management into existing Kubernetes operational practices without requiring applications to abandon their virtualised environments.</p>\n   <p dir=\"ltr\">The findings reinforce a shift in how cloud-native infrastructure is evolving. Kubernetes and containers remain important, but they are not necessarily the right execution model for every workload.</p>\n   <p dir=\"ltr\">Technologies such as KubeVirt and <a href=\"https://katacontainers.io/\">Kata Containers </a>show how virtualisation can integrate with container orchestration, while <a href=\"https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/\">MicroVMs</a> provide lightweight environments to isolate short-lived or potentially untrusted workloads.</p>\n   <p dir=\"ltr\">For platform engineering teams, the research highlights the need to accommodate different execution environments without fragmenting operational practices. AI adds another dimension, making isolation, resource utilisation and workload security increasingly important infrastructure considerations.</p>\n   <p dir=\"ltr\">The survey was sponsored by CNCF and Broadcom, and its results should be read as reported industry perspectives rather than a complete census of cloud-native deployments. Nevertheless, its findings provide a useful indication of where infrastructure priorities are moving.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"CNCF Research Shows Virtual Machines Remain Central as AI Workloads Evolve\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/cncf-vm-ai-workloads/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795521600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "CNCF 研究显示，53% 的云原生生产应用仍运行在虚拟机上；AI 和智能体工作负载正推动市场对更强隔离能力及 VM 与容器混合架构的需求增长。",
+  "oneSentenceSummary": "CNCF 研究显示，53% 的云原生生产应用仍运行在虚拟机上；AI 和智能体工作负载正推动市场对更强隔离能力及 VM 与容器混合架构的需求增长。",
+  "summary": "CNCF 对 492 位云原生从业者开展的最新研究显示，虚拟机仍是云原生基础设施的核心，平均承载 53% 的生产应用。AI 和智能体工作负载正推动组织扩大虚拟机的使用规模，其中 34% 的受访者将 AI 工作负载列为影响因素，47% 则提到安全与隔离需求。研究发现，51% 的受访者至少有一半应用运行在虚拟机上；在员工人数超过 10，000 人的组织中，这一比例升至 64%。组织并未用容器取代虚拟机，而是结合使用虚拟机和容器，以满足不同的安全与运营需求。硬件级虚拟机隔离、虚拟机内运行容器以及 MicroVM 沙箱，正被用于隔离 AI 工作负载。MicroVM 沙箱的采用率预计将从 20% 增至 30%，机密计算的采用率则将从 12% 增至 26%。61% 的受访者表示，虚拟机与容器团队之间存在协作或已实现整合；8% 的受访者使用 KubeVirt 通过 Kubernetes 管理虚拟机。",
+  "mainPoints": [
+    {
+      "point": "虚拟机平均承载 53% 的云原生生产应用；AI 和智能体工作负载推动虚拟机采用率上升，以实现更强的隔离。",
+      "explanation": "CNCF 对 492 位从业者开展的调查发现，在扩大虚拟机使用规模的组织中，34% 将 AI 和智能体工作负载列为影响因素，47% 则将安全与隔离列为扩大虚拟机使用规模的原因。"
+    },
+    {
+      "point": "组织正采用虚拟机与容器混合架构，而非完全迁移到容器。",
+      "explanation": "51% 的受访者至少有一半应用运行在虚拟机上；在规模较大的组织中，这一比例升至 64%。在提供当前及预期工作负载数据的受访者中，71% 预计虚拟机所占比例将保持稳定，表明两者将并存，而非互相取代。"
+    },
+    {
+      "point": "AI 智能体的代码生成能力带来了新的安全风险，需要更强的隔离边界。",
+      "explanation": "报告指出，可通过硬件级虚拟机隔离、在虚拟机内运行容器以及 MicroVM 沙箱等方式，隔离那些会在含有敏感数据或共享基础设施的环境中生成并执行代码的 AI 工作负载。"
+    },
+    {
+      "point": "MicroVM 沙箱和机密计算等新兴隔离技术的采用率正在上升。",
+      "explanation": "在寻求为 AI 工作负载提供更强隔离的组织中，MicroVM 沙箱的采用率预计将从 20% 增至 30%，机密计算的采用率则将从 12% 增至 26%。"
+    },
+    {
+      "point": "平台工程团队正将虚拟机和容器环境纳入统一的运营实践。",
+      "explanation": "61% 的受访者表示，其虚拟机与容器团队之间存在协作或已实现全面整合；8% 的受访者使用 KubeVirt 通过 Kubernetes API 管理虚拟机，将虚拟机生命周期管理纳入现有的容器运维实践。"
+    }
+  ],
+  "keyQuotes": [
+    "尽管容器和 Kubernetes 已得到广泛采用，虚拟机（VM）仍在云原生生产基础设施中占据相当大的比重。",
+    "在扩大虚拟机使用规模的组织中，34% 将 AI 和智能体工作负载列为影响因素。",
+    "与共用宿主机操作系统内核的传统容器相比，虚拟机能够提供更强的隔离边界。",
+    "调查发现，51% 的受访者至少有一半生产应用运行在虚拟机上。",
+    "61% 的受访者表示，其虚拟机与容器管理团队之间存在协作或已实现全面整合。"
+  ],
+  "tags": [
+    "编程与工程",
+    "安全",
+    "平台工程",
+    "云原生 / DevOps",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 603,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795521600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-24 20:00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_cb8983b636",
+  "title": "Google DeepMind 为未来药物研究发现隐藏捷径",
+  "url": "https://dev.to/fathomnews/google-deepmind-finds-hidden-shortcut-for-future-drug-research-4dhi",
+  "date": "2026-11-24 17:00:31",
+  "author": "Fathom News",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>A quantum math routine ran 290x faster after <strong>Google DeepMind</strong> used Gemini 4 agent teams and formal proofs, showing how AI could shrink the hardware needed for future fusion and drug simulations.</p>\n  <h2><a name=\"key-takeaways\" href=\"#key-takeaways\"> </a> Key Takeaways</h2>\n  <ul>\n   <li>Gemini 4 agent teams improved several quantum algorithms and verified every result with Lean</li>\n   <li>A fusion-related circuit saw computing cost cut by 11.8x and memory drop from 5,650 to 4,338 error-corrected qubits</li>\n   <li>Quantum simulations for a light-sensitive molecule and the enzyme Cytochrome P450 improved by 8x and 2.5x</li>\n   <li>A specific implementation of Grover's algorithm sped up 2.57x and the arcsin routine sped up 290x</li>\n  </ul>\n  <p>On Nov. 23, researchers at Google DeepMind <a href=\"https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/\" target=\"_blank\" rel=\"noopener noreferrer\">announced</a> that teams of Gemini 4 agents had improved well-known quantum algorithms and proved the changes were correct with Lean, a formal theorem prover.</p>\n  <p>The work was done with <strong>Google Quantum AI</strong>, and the team is open-sourcing its Lean library, problem specifications, and verified solutions on GitHub so other researchers can build on the results.</p>\n  <h2><a name=\"how-the-search-worked\" href=\"#how-the-search-worked\"> </a> How The Search Worked</h2>\n  <p>For each problem, separate and independent agent teams looked for algorithmic improvements. Their ideas were checked with Lean before entering a shared notebook. Every 4 hours, agents from each team met at a virtual conference to trade, debate, and compare ideas. As better ideas emerged, the computational cost gradually fell until the experiment finished.</p>\n  <p>That proof step mattered because the researchers could not test resource-intensive quantum circuits on classical computers or today’s small quantum processors. Instead, they had to prove mathematically that the circuits worked. A quantum circuit is the instruction set for a quantum computer, and Lean is a system for formally checking that those instructions still do the right thing after they are changed.</p>\n  <div class=\"table-wrapper-paragraph\">\n   <table>\n    <thead>\n     <tr>\n      <th>Quantum Problem</th>\n      <th>Reported Gain</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>Fusion property circuit</td>\n      <td>11.8x lower computing cost and memory reduced from 5,650 to 4,338 error-corrected qubits</td>\n     </tr>\n     <tr>\n      <td>Light-sensitive molecule simulation</td>\n      <td>8x cheaper quantum simulation</td>\n     </tr>\n     <tr>\n      <td>Cytochrome P450 simulation</td>\n      <td>2.5x improvement and memory reduced from 481 to 333 qubits</td>\n     </tr>\n     <tr>\n      <td>Grover's algorithm implementation</td>\n      <td>2.57x speedup</td>\n     </tr>\n     <tr>\n      <td>Arcsin routine</td>\n      <td>290x speedup</td>\n     </tr>\n    </tbody>\n   </table>\n  </div>\n  <p>The researchers focused on problems tied to clean energy, chemistry, and core quantum computing tools. In the fusion example, the circuit calculates an important property of inertial confinement fusion, a method that uses lasers to compress hydrogen fuel until ignition. In chemistry, the teams made one common light-sensitive molecule 8x cheaper to simulate by simplifying how the algorithm tracks particle positions and electric forces. For Cytochrome P450, an enzyme that breaks down most human medicines and is important for drug design, they reported a 2.5x improvement by replacing bulky memory lookups.</p>\n  <p><strong>Also Read:</strong> <a href=\"https://www.fathom.news/google-quantum-ai-demonstrates-magic-state/\" target=\"_blank\" rel=\"noopener noreferrer\">Sundar Pichai’s Google Hits First Magic State Cultivation On Real Quantum Chip</a></p>\n  <h2><a name=\"why-this-matters\" href=\"#why-this-matters\"> </a> Why This Matters</h2>\n  <p>The work targets a central bottleneck in quantum computing. Google DeepMind wrote that quantum computers could soon solve problems beyond classical supercomputers, but even the best quantum algorithms can still require more resources than early hardware will be able to support. Cutting qubits and operations matters because it can move important scientific workloads closer to what future machines may handle.</p>\n  <p>The applications here are not random test cases. The team chose problems tied to clean energy and drug design, then also improved a foundational search method and a widely used arithmetic routine that helps load numbers into quantum states. The researchers wrote, \"Proof-checked AI search compresses work that once took years of manual design, empowering researchers to focus on choosing problems and interpreting results.\" They added that the same approach could accelerate other aspects of quantum computing research and scientific discovery more broadly.</p>\n  <h2><a name=\"what-to-watch-next\" href=\"#what-to-watch-next\"> </a> What To Watch Next</h2>\n  <p>The biggest limit is in the results themselves. Even with these improvements, running the algorithms inside scientific simulations would still demand more computational resources than the first error-corrected quantum computers are likely to provide. That means the gains are significant, but they do not put fusion or drug simulation workloads on early machines yet.</p>\n  <p>What changes now is the toolkit available to other researchers. By releasing the Lean library, problem specifications, and verified solutions, the collaboration is giving the wider community a way to test whether teams of collaborating agents can uncover more efficient circuits in other hard quantum problems. The announcement did not give a date for when any of these optimized circuits might run on quantum hardware.</p>\n  <p><strong>Read Next:</strong> <a href=\"https://www.fathom.news/google-gemini-agent-enterprise-launch/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Debuts Universal Gemini Agent: ‘A Single Agent For Work’</a></p>\n  <hr>\n  <p><em>Originally published on <a href=\"https://www.fathom.news/quantum-algorithms-deepmind/\" target=\"_blank\" rel=\"noopener noreferrer\">Fathom News</a>.</em></p>\n </body>\n</html>",
+  "aiSummary": "Google DeepMind 利用 Gemini 4 智能体团队，并通过 Lean 进行形式化验证，发现了可将量子计算例程提速至 290x 的算法捷径，同时降低了聚变和药物模拟所需的量子比特数量。",
+  "oneSentenceSummary": "Google DeepMind 利用 Gemini 4 智能体团队，并通过 Lean 进行形式化验证，发现了可将量子计算例程提速至 290x 的算法捷径，同时降低了聚变和药物模拟所需的量子比特数量。",
+  "summary": "Google DeepMind 部署 Gemini 4 智能体团队，寻找量子计算例程的算法改进，并使用 Lean 定理证明器验证每项改动。该方法带来了显著加速：聚变电路的计算成本降低 11.8x，内存需求从 5，650 个纠错量子比特降至 4，338 个；光敏分子模拟提速 8x；与细胞色素 P450 药物研究相关的模拟提速 2.5x，内存需求从 481 个量子比特降至 333 个；Grover 算法的实现提速 2.57x；arcsin 例程则提速 290x。这项由 Google Quantum AI 参与的工作已在 GitHub 上开源，包含 Lean 库、问题规格和经过验证的解答，以促进更广泛的研究。",
+  "mainPoints": [
+    {
+      "point": "Gemini 4 智能体团队发现了经 Lean 定理证明器验证的算法捷径",
+      "explanation": "多个独立的智能体团队分别寻找改进方案，每项方案在整合前都通过 Lean 的形式化证明进行验证。团队还通过每 4 小时举行一次的线上会议分享成果，逐步降低计算成本。"
+    },
+    {
+      "point": "聚变和药物模拟相关的量子算法提速 2.5x 至 290x",
+      "explanation": "聚变电路的计算成本降低 11.8x，量子比特内存需求从 5，650 个降至 4，338 个；分子模拟分别提速 8x 和 2.5x；Grover 算法提速 2.57x；arcsin 例程提速 290x。这些成果展现了 AI 降低科学计算所需硬件资源的潜力。"
+    },
+    {
+      "point": "开源 Lean 库和经过验证的解答，有助于社区复现研究",
+      "explanation": "Google Quantum AI 在 GitHub 上发布了问题规格、Lean 代码和解答，为研究人员提供工具，以检验基于智能体的搜索能否为其他复杂量子问题找到更高效的电路。"
+    }
+  ],
+  "keyQuotes": [
+    "经过证明检查的 AI 搜索，将过去需要多年手工设计的工作浓缩起来，让研究人员能够专注于选择问题和解读结果。",
+    "这些进展意义重大，但尚不足以让聚变或药物模拟工作负载在早期量子计算机上运行。",
+    "通过发布 Lean 库、问题规格和经过验证的解答，这项合作为更广泛的研究社区提供了一种途径，用于检验协作智能体团队能否在其他复杂量子问题中找到更高效的电路。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "量子计算",
+    "形式化验证",
+    "AI for Science",
+    "新闻快报"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 720,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795510831000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-24 17:00:31"
+}

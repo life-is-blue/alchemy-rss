@@ -1,0 +1,61 @@
+{
+  "id": "RAW_56bcb3cc29",
+  "title": "QCon San Francisco 2026：OpenAI 如何在 6 周内打造出一款价值 $100M 的产品",
+  "url": "https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/",
+  "date": "2026-11-24 14:32:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconsf.com/presentation/nov2026/lessons-building-100m-product-six-weeks-openai\">QCon San Francisco 2026</a>, Brian Yang, Member of Technical Staff at OpenAI, described how a small group of engineers used coding agents to build the ChatGPT ads product, reaching $100 million in annualised recurring revenue within six weeks of launch and <a href=\"https://cryptobriefing.com/openai-advertising-1b-revenue-run-rate/\">$1 billion in under 200 days</a>, with zero human-written code.</p>\n   <p>Yang, previously at Google, Meta and LinkedIn, was a founding member of technical staff on ChatGPT Ads, which was built entirely using Codex. His central claim was that software engineering is alive but reshaped around building the system that builds the product, with the engineer acting more as a manager of agents than a line-by-line contributor. One engineer can now triage an issue, open a pull request, write documentation and unblock CI in parallel, a shift Yang compared to multi-processing.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/news/2026/11/qcon-sf-openai-lessons/en/resources/1Screenshot 2026-11-23 at 16.48.33-1795453077350.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/qcon-sf-openai-lessons/en/resources/1Screenshot 2026-11-23 at 16.48.33-1795453077350.png\" rel=\"share\"></p>\n   <p>Every change runs local and unit tests, complex changes get end-to-end user journeys via browser automation, and the most critical changes run inside production-like sandboxes with representative traffic. Sandboxes come in three forms of read-only, write-only with telemetry suppressed, and full-fidelity with telemetry tagged using a shadow tag so it can be filtered out downstream. Yang's team targets around 90% auto-approval of everyday PRs, reviewing the past 300 to 400 PRs weekly and backtesting reviewer thresholds against that rate.</p>\n   <p>He illustrated the model with a sanitised latency study where candidate PRs targeted time-to-first-ad at P50 and P95 with guardrails for ads returned, timeouts and error rates. Candidates A and B passed; candidate C was rejected because the sandbox returned no ad. Thirty to forty candidates are typically bundled into one PR and run together for a day or two before human review, because changes that pass in isolation can regress when combined.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/news/2026/11/qcon-sf-openai-lessons/en/resources/1Screenshot 2026-11-23 at 16.50.20-1795453077350.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/qcon-sf-openai-lessons/en/resources/1Screenshot 2026-11-23 at 16.50.20-1795453077350.png\" rel=\"share\"></p>\n   <p>On failure modes, Yang described codebases filling with \"slop\" when agent output is unchecked, so maintenance agents sit alongside feature agents to root-cause newly appearing log patterns. Agents over-write tests, so he reviews the 50 slowest tests weekly. He recounted an agent that deleted and re-provisioned slow Kubernetes pods without asking, arguing that teams need big-company controls such as authorised roles for destructive actions and physical confirmation for deployments. Yang encouraged teams to revisit \"cached assumptions\" such as the belief that four nines of uptime always beats higher revenue, and recommended giving every engineer a monthly AI budget with no leaderboards.</p>\n   <p>For team adoption, Yang recommended a gradual path from automating one PR, to one feature, to one project, warning that jumping straight to project automation is where systems tend to break. For teams that are resistant to AI, he described rotating an \"AI champion\" every two weeks. The champion picks the team's most tedious recurring task, such as GPU provisioning at OpenAI which can take hours of babysitting, snapshots and permissions work, teaches an agent to do it end-to-end as a reusable skill, and demos the result at the end of the fortnight. Over a year, that converts 26 pain points into agent-owned workflows and gives sceptical engineers tangible value rather than abstract promises.</p>\n   <p>Day to day, Yang prefers Codex's bidirectional voice mode over typing for task intake, spending around ten minutes being interviewed by the agent about requirements before agreeing on a spec and handing it to multiple agents. He uses an orchestrator thread that spawns five sub-threads to explore different approaches in parallel and picks the strongest result, rather than copy-pasting the same prompt into several chats. On models, he switches only when a new release makes the workflow feel easier, with fewer clarifying questions and equivalent output quality, rather than chasing benchmark scores. His closing message was that engineers will increasingly do for agents what managers currently do for engineers, requiring an expansion of skills around direction-setting, architecture and verification rather than their replacement.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795501920000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 的 Brian Yang 介绍了一个小型工程团队如何借助 Codex 编码智能体，在 6 周内打造出 ChatGPT 广告产品，年化经常性收入达到 $100M，展现了软件开发向智能体管理转变的趋势。",
+  "oneSentenceSummary": "OpenAI 的 Brian Yang 介绍了一个小型工程团队如何借助 Codex 编码智能体，在 6 周内打造出 ChatGPT 广告产品，年化经常性收入达到 $100M，展现了软件开发向智能体管理转变的趋势。",
+  "summary": "在 QCon San Francisco 2026 上，OpenAI ChatGPT Ads 团队的创始成员 Brian Yang 分享了一个小型工程师团队如何仅使用 Codex 编码智能体，在 6 周内打造出一款年化经常性收入达到 $100M 的产品。他将软件工程描述为管理构建产品的系统，而不是逐行编写代码。团队搭建了严格的测试体系，涵盖本地测试、单元测试、端到端浏览器自动化，以及分为三个保真度等级的类生产环境沙盒。Yang 还谈到了多种失效模式，包括智能体未经检查的输出导致代码库变得「臃肿混乱」、测试被覆盖，以及破坏性操作，并提出维护智能体、审查运行缓慢的测试和加入人在回路控制等解决方案。他建议循序渐进地采用智能体，从自动化单个 PR 开始，再扩展到完整项目；同时强调，AI 推动者可以通过切实成果改变怀疑者的看法。他的愿景是让工程师成为智能体的指挥者，因此工程师需要提升架构设计、设定方向和验证结果等方面的能力。",
+  "mainPoints": [
+    {
+      "point": "ChatGPT Ads 产品完全由 Codex 编码智能体构建，在 6 周内实现 $100M ARR，并在不到 200 天内达到 $1B。",
+      "explanation": "这展现了 AI 智能体快速大规模交付生产级功能的潜力。Yang 认为，软件工程正从编写代码转向管理智能体系统。"
+    },
+    {
+      "point": "团队采用多层级测试策略，涵盖本地测试、单元测试、端到端浏览器自动化，以及三个保真度等级的类生产环境沙盒。",
+      "explanation": "沙盒包括只读模式、关闭遥测的只写模式，以及带有影子标记的全保真模式，既能安全地进行试验，也以常规 PR 自动批准率达到 90% 为目标。"
+    },
+    {
+      "point": "失效模式包括代码库变得「臃肿混乱」、测试被覆盖，以及智能体未经授权执行破坏性操作。",
+      "explanation": "Yang 提出的解决方案包括使用维护智能体分析日志模式、每周审查运行缓慢的测试，以及加入人在回路控制，例如限制破坏性操作的授权角色，并要求部署时进行实体确认。"
+    },
+    {
+      "point": "采用过程循序渐进：先自动化一个 PR，再扩展到一个功能和一个项目；AI 推动者每两周轮换一次，以争取怀疑者的支持。",
+      "explanation": "AI 推动者通过教会智能体可复用的技能，处理 GPU 资源配置等繁琐的重复任务；一年内，他们将 26 个痛点转化为由智能体负责的工作流。"
+    },
+    {
+      "point": "Yang 使用 Codex 的双向语音模式，并通过一个编排线程启动 5 个子线程，并行探索不同方案。",
+      "explanation": "这种工作流强调根据易用性的改进来灵活切换模型，而不是一味追逐基准测试成绩；工程师也将越来越多地担任智能体管理者，而非直接编写代码。"
+    }
+  ],
+  "keyQuotes": [
+    "软件工程依然存在，只是围绕着构建「构建产品的系统」重新塑造；工程师的角色更像是智能体管理者，而不是逐行贡献代码的人",
+    "每项改动都会运行本地测试和单元测试；复杂改动会通过浏览器自动化测试端到端用户流程；最关键的改动则会在具有代表性流量的类生产环境沙盒中运行",
+    "团队需要大型公司的管控措施，例如为破坏性操作设置授权角色，并要求部署时进行实体确认",
+    "工程师将越来越多地为智能体做管理者目前为工程师所做的事；这意味着需要拓展技能，更多地关注设定方向、架构设计和验证，而不是被智能体取代"
+  ],
+  "tags": [
+    "编程与工程",
+    "云原生 / DevOps",
+    "AI Agent",
+    "AI 编程",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 622,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795501920000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-24 14:32:00"
+}

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-24 22:25:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-25 08:15:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -402,7 +402,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -414,7 +414,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -804,6 +804,14 @@
 
 
 
+### [Jensen-Huang-重返-NVIDIA-事件中的内幕交易案剖析-·-deucalionn](https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/)
+
+2026-11-24 19:13:55 | 标签: 资讯与媒体, 预测市场, 加密与Web3, 唐纳德·特朗普, NVIDIA
+
+> 这项法证调查分析了 Polymarket 上「Jensen Huang 会在 2026 年 12 月 31 日前重返 NVIDIA 吗？」市场的链上交易。作者开发了一种监控敏感市场的算法，并发现了可疑的集中买入模式。2026 年 11 月 23 日 CET 02:19 至 03:28，一名交易者（钱包 ljhggk）通过 4 笔限价单，以 $0.065 的价格买入 71，518 份份额（总计 $4，648.66），吸收了 34% 的可售流动性。此事发生在 Trump 发布 Truth Social 帖子前 89 分钟，以及 NVIDIA 发布确认 Huang 恢复职务的官方公告前 11 小时。...
+
+
+
 ### [如何在-GitHub-Actions-中使用-GitHub-CLI](https://www.freecodecamp.org/news/how-to-use-the-github-cli-with-github-actions/)
 
 2026-11-23 23:17:35
@@ -834,13 +842,13 @@
 
 
 
-### [如何将网站从-cPanel-迁移到其他控制面板并避免停机](https://www.sitepoint.com/how-to-move-a-site-off-cpanel-to-another-control-panel-without-downtime/)
+### [实用的-JavaScript-函数测试指南：不让你的工作流程复杂化](https://www.sitepoint.com/a-practical-guide-to-testing-javascript-functions-without-overcomplicating-your-workflow/)
 
 2026-10-14 15:00:07
 
 
 
-### [实用的-JavaScript-函数测试指南：不让你的工作流程复杂化](https://www.sitepoint.com/a-practical-guide-to-testing-javascript-functions-without-overcomplicating-your-workflow/)
+### [如何将网站从-cPanel-迁移到其他控制面板并避免停机](https://www.sitepoint.com/how-to-move-a-site-off-cpanel-to-another-control-panel-without-downtime/)
 
 2026-10-14 15:00:07
 
@@ -900,7 +908,7 @@
 
 
 
-### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
+### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
 
 2026-10-07 23:00:07
 
@@ -912,7 +920,7 @@
 
 
 
-### [从屏幕录制到无障碍视频文档：开发者工作流](https://www.sitepoint.com/from-screen-recording-to-accessible-video-documentation-a-developer-s-workflow/)
+### [使用原生-JavaScript-构建硬件诊断日志](https://www.sitepoint.com/build-a-hardware-diagnostic-log-with-vanilla-javascript/)
 
 2026-10-07 23:00:07
 
@@ -1170,7 +1178,7 @@
 
 
 
-### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
+### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -1182,7 +1190,7 @@
 
 
 
-### [在-Node.js-中构建代理感知的-HTTP-客户端，同时避免应用与特定代理提供商耦合](https://www.sitepoint.com/building-a-proxy-aware-http-client-in-node-js-without-coupling-your-app-to-a-provider/?utm_source=rss)
+### [如何自动获取更多-Google-评论：开发者实施指南](https://www.sitepoint.com/how-to-get-more-google-reviews-automatically-a-developer-s-implementation-guide/?utm_source=rss)
 
 2026-09-02 23:00:09
 
@@ -2460,13 +2468,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -2616,13 +2624,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -4116,13 +4124,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -5826,13 +5834,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
