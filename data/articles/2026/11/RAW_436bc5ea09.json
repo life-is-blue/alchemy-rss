@@ -1,0 +1,61 @@
+{
+  "id": "RAW_436bc5ea09",
+  "title": "GitHub 弃用 CSS-in-JS，历时三年迁移后 SSR 提速 55%",
+  "url": "https://www.infoq.com/news/2026/11/github-css-migration/",
+  "date": "2026-11-25 23:29:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has published an <a href=\"https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/\">in-depth account</a> of a three-year effort to move <a href=\"http://github.com\">github.com</a> off CSS-in-JS and onto <a href=\"https://github.com/css-modules/css-modules\">CSS Modules</a>, reporting a 55% reduction in server-side rendering time and 25% faster component initialisation across its Primer-powered design system.</p>\n   <p>Written by Primer engineers Josh Black and Marie Lucca, the post explains how component counts on certain pages began to explode in 2023, exposing scaling problems with the existing <a href=\"https://styled-components.com/\">styled-components</a> setup. Initial page loads, server render times and style update costs all grew with component count. The team picked CSS Modules because it kept native CSS features and co-location while removing client and server runtime work, letting styles roll up into static stylesheets delivered with the HTML.</p>\n   <p>For every Primer component the team added a CSS Modules variant, gated it behind a feature flag, verified parity with visual regression tests, then rolled it out from the Primer team to GitHub staff and finally all users. By December 2024, Primer itself was fully on CSS Modules. The harder half was the roughly 7,760 <code>sx</code> prop usages scattered across <a href=\"http://github.com\">github.com</a>, the de facto styling standard for years. A transitional <a href=\"https://github.com/primer/react/blob/main/packages/styled-react/README.md\"><code>@primer/styled-react</code></a> package let <code>sx</code> keep working against migrated components during the crossover.</p>\n   <p>A typical conversion looks like this:</p>\n   <pre>\r\n<code class=\"language-jsx language-javascript\">// Before\r\nimport { Button } from '@primer/styled-react';\r\n&lt;Button sx={{ bg: 'accent.emphasis', px: 3 }}&gt;Pay&lt;/Button&gt;\r\n\r\n// After\r\nimport { Button } from '@primer/react';\r\nimport styles from './PayButton.module.css';\r\n&lt;Button className={styles.pay}&gt;Pay&lt;/Button&gt;\r\n</code></pre>\n   <p>A rotation of eight engineers migrated 6,419 props over six months, seeing SSR improvements ranging from 3% up to 22% per page. The final 895 props were cleared in three weeks by two engineers leaning heavily on Copilot coding agents. GitHub also had to decouple theming for its <a href=\"https://docs.github.com/en/get-started/accessibility/managing-your-theme-settings\">seven themes and high-contrast variants</a> before pulling styled-components out entirely. A <a href=\"https://marketplace.visualstudio.com/items?itemName=ian-sanders.sx-to-css\">VS Code plugin</a> and internal codemod cut the manual burden, and GitHub notes that <a href=\"https://opencollective.com/styled-components/updates/thank-you\">styled-components entering maintenance mode</a> reinforced the direction.</p>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=49856193\">Hacker News</a> one commenter running a similar migration reported a 30% build time speed improvement and much better tree shaking on Next.js across a codebase over 1M lines. Others were sceptical about user impact, with one arguing that the reduction in size was not big enough to justify making all CSS names unreadable, adding that hashed class names make ad-blockers, custom CSS and browser extensions harder to build. A separate thread noted that CSS-in-JS can be made zero-runtime without moving to Modules at all.</p>\n   <p>GitHub joins a broader shift away from runtime CSS-in-JS. <a href=\"https://linear.app/now/styling-linear-for-the-future-stylex\">Linear</a> recently completed its own 1,000-PR move from styled-components to Meta's atomic <a href=\"https://stylexjs.com/\">StyleX</a> library, citing similar render-time concerns after upgrading to React 18's concurrent mode. Others using <a href=\"https://vanilla-extract.style/\">vanilla-extract</a> or <a href=\"https://tailwindcss.com/\">Tailwind</a> have shifted style generation to build time entirely. The common thread is to pay the cost once at build, not on every request.</p>\n   <p>The <a href=\"https://primer.style/\">Primer Design System</a> is GitHub's open-source component library, providing the foundational building blocks used across <a href=\"http://github.com\">github.com</a>. Teams following the same path can start from the Primer React <a href=\"https://github.com/primer/react/discussions/7086\">v38 release notes</a> and the <a href=\"https://primer.style/product/primitives/migrating\">migration guide for CSS variables</a>, which covers the move from sx props to CSS Modules.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Ditches CSS-in-JS for CSS Modules, Reports 55% Faster SSR After Three-Year Migration\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/github-css-migration/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795620540000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 历时三年从 CSS-in-JS 迁移到 CSS Modules，通过在 Primer 设计系统中以静态样式表取代 styled-components，使 SSR 提速 55%，组件初始化速度提升 25%。",
+  "oneSentenceSummary": "GitHub 历时三年从 CSS-in-JS 迁移到 CSS Modules，通过在 Primer 设计系统中以静态样式表取代 styled-components，使 SSR 提速 55%，组件初始化速度提升 25%。",
+  "summary": "GitHub 记录了将 github.com 从 styled-components（CSS-in-JS）迁移到 CSS Modules 的三年工程实践，并报告称服务器端渲染时间减少了 55%，组件初始化速度提升了 25%。这项迁移旨在解决扩展性问题：组件数量增加会导致页面加载时间、SSR 成本和样式更新开销呈指数级增长。团队采用设有门槛的渐进式发布策略：在功能标记后添加 CSS Modules 版本，通过视觉回归测试后，再逐步向所有用户推出。迁移期间，团队通过混合使用 @primer/styled-react 软件包，转换了 7，760 处 sx 属性用法；Copilot 编码智能体则加快了最后阶段的工作。此外，团队还需要先解耦主题架构，以支持七种主题和高对比度变体，才能彻底移除 styled-components。",
+  "mainPoints": [
+    {
+      "point": "CSS-in-JS 的扩展性问题促使团队迁移到 CSS Modules",
+      "explanation": "2023 年，组件数量激增，导致使用 styled-components 时，初始页面加载时间、服务器渲染时间和样式更新成本都随组件数量呈指数级增长，因此团队需要寻找更具扩展性的方案。"
+    },
+    {
+      "point": "CSS Modules 消除了客户端和服务器端的运行时开销",
+      "explanation": "CSS Modules 保留了原生 CSS 特性和样式就近组织的方式，同时将样式迁移到随 HTML 一同交付的静态样式表中，从而消除了 CSS-in-JS 方案固有的运行时开销。"
+    },
+    {
+      "point": "通过分阶段发布和视觉回归测试确保视觉一致性",
+      "explanation": "团队为每个 Primer 组件添加了由功能标记控制的 CSS Modules 版本，通过自动化测试验证视觉效果一致后，再从内部团队开始逐步向所有用户推出。"
+    },
+    {
+      "point": "AI 编码智能体加快了迁移的最后阶段",
+      "explanation": "两名工程师借助 Copilot 编码智能体，在三周内完成了最后 895 处 sx 属性转换，展现了 AI 辅助重构带来的效率提升。"
+    },
+    {
+      "point": "彻底移除 styled-components 需要先解耦主题架构",
+      "explanation": "在完全移除 styled-components 之前，GitHub 必须支持七种主题和高对比度变体，因此还需要进行额外的架构改造，以保留无障碍功能。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub 发布了一份深入报告，介绍其历时三年将 github.com 从 CSS-in-JS 迁移到 CSS Modules 的工作。该迁移覆盖了基于 Primer 的设计系统，使服务器端渲染时间减少了 55%，组件初始化速度提升了 25%。",
+    "2023 年，某些页面上的组件数量开始激增，暴露出既有 styled-components 架构的扩展性问题。初始页面加载时间、服务器渲染时间和样式更新成本都随着组件数量增长。",
+    "团队选择 CSS Modules，是因为它既保留了原生 CSS 特性和样式就近组织的方式，又消除了客户端和服务器端的运行时开销；样式可以整合为静态样式表，随 HTML 一同交付。",
+    "由 8 名工程师轮流参与的团队在 6 个月内迁移了 6，419 处属性用法，各页面的 SSR 性能提升幅度从 3% 到 22% 不等。最后 895 处属性用法由两名工程师在三周内完成，他们大量借助了 Copilot 编码智能体。"
+  ],
+  "tags": [
+    "编程与工程",
+    "前端与 Web",
+    "系统设计",
+    "性能优化",
+    "设计系统"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 506,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795620540000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-25 23:29:00"
+}

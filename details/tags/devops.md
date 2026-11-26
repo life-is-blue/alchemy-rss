@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-26 04:51:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-26 11:52:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -294,13 +294,13 @@
 
 
 
-### [R2-数据目录：托管-Iceberg-表，零出口费用](https://blog.cloudflare.com/r2-data-catalog-public-beta/)
+### [突破地域限制的顺序一致性：D1-如何实现全局读取复制](https://blog.cloudflare.com/d1-read-replication-beta/)
 
 2025-04-10 14:00:00
 
 
 
-### [突破地域限制的顺序一致性：D1-如何实现全局读取复制](https://blog.cloudflare.com/d1-read-replication-beta/)
+### [R2-数据目录：托管-Iceberg-表，零出口费用](https://blog.cloudflare.com/r2-data-catalog-public-beta/)
 
 2025-04-10 14:00:00
 
@@ -690,6 +690,30 @@
 
 
 
+### [如何为应用现代化选择下一个安全步骤](https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/)
+
+2026-11-26 02:00:00 | 标签: 编程与工程, 系统设计, 开发者工具, 安全, 云原生 / DevOps
+
+> 本文介绍了一种以证据为先的应用现代化方法，强调在选择技术目标前，先了解现有行为。作者将该方法应用于 4 个开源应用，涵盖小型 Node.js 游戏和大型 Java ERP 系统，展示了不同应用需要不同处理方式，但都可以遵循一套可重复的流程。该方法首先建立证据清单，涵盖清单文件、锁文件、入口点、运行时版本锁定信息和外部契约，然后选择有效且干扰最小的处理方式：保留、升级、替换、封装或重写。文章详细介绍了用于回归保护的安全等级 L0-L4，并演示如何将此流程编入 GitHub Copilot 智能体技能。案例包括 PiggyMetrics 的 Java/Spring Boot 现代化、Browser...
+
+
+
+### [QCon-San-Francisco-2026：OpenAI-如何使用-Codex-智能体自动升级-Spark](https://www.infoq.com/news/2026/11/openai-spark-fleet/)
+
+2026-11-25 14:20:00 | 标签: 编程与工程, 系统设计, 云原生 / DevOps, 测试与质量, 数据工程
+
+> 在 QCon San Francisco 2026 上，OpenAI 的 Mouli Mukherjee 介绍了 Codex 驱动的智能体如何自动升级运行在数百万核心上的 Spark 集群。该方案区分了确定性系统与智能体：前者为访问控制、配置和数据正确性提供保障；后者则处理无法穷举所有失效模式的工作。团队构建了一个使用生产输入、在低优先级队列上运行的影子运行服务，一个用于防止全局变更的配置覆盖服务，以及一项用于比较影子运行与生产运行的验证技能。智能体会领取任务、启动影子运行、审查验证报告、归类错误，并将任务迁移到新版 Spark。如今，同一套基础能力也用于作业效率调优和库版本发布等日常运维，并...
+
+
+
+### [以每个仅-$3-的成本接管美国财政部子域名](https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each)
+
+2026-11-25 12:27:55 | 标签: 编程与工程, 安全, 云原生 / DevOps, AWS, 漏洞赏金
+
+> 本文详细介绍了一种利用指向 AWS 弹性 IP 地址（EIP）的悬空 DNS 记录发起的实际攻击。作者通过自动分配和释放 EIP，在 48 小时内成功认领了 28 条仍有效的 DNS 记录，其中包括美国财政部的五个子域名。攻击之所以可行，是因为当 DNS 记录指向尚未分配的 EIP 时，任何人都可以认领该 IP，并在对应子域名上提供内容。作者利用公开的漏洞赏金计划范围建立目标列表，自动轮换 AWS 区域中的 IP，并记录了整个过程。AWS 最终以滥用服务为由封禁了该账户，但这些 IP 随后被转移到了另一个账户。潜在影响包括网络钓鱼、凭据窃取，以及通过跨子域 Cookie 劫持会话。作者建议检查...
+
+
+
 ### [AMD-EPYC-Zen-6-对比-Zen-1-性能：不到-10-年几何平均提升-12.1-倍，AI-评测中最高达-133-倍](https://www.phoronix.com/review/amd-epyc-9006-7601)
 
 2026-11-24 13:15:22
@@ -732,13 +756,13 @@
 
 
 
-### [微软官方-Python-Agent-框架遭供应链投毒，恶意包窃取云与-CI/CD-凭证](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651351377&idx=2&sn=9ad6873c79faad64d01cd952f9cecae7)
+### [VMware-vCenter-曝出-9.8-分严重漏洞，网络攻击者可绕过认证](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651351377&idx=3&sn=fc0f79cc0d8a6e29925a55dbd7a35ec0)
 
 2026-11-20 19:39:00
 
 
 
-### [VMware-vCenter-曝出-9.8-分严重漏洞，网络攻击者可绕过认证](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651351377&idx=3&sn=fc0f79cc0d8a6e29925a55dbd7a35ec0)
+### [微软官方-Python-Agent-框架遭供应链投毒，恶意包窃取云与-CI/CD-凭证](https://mp.weixin.qq.com/s?__biz=MjM5NjA0NjgyMA==&mid=2651351377&idx=2&sn=9ad6873c79faad64d01cd952f9cecae7)
 
 2026-11-20 19:39:00
 
@@ -804,13 +828,13 @@
 
 
 
-### [关键任务型公用事业的受治理自主智能](https://www.infoq.com/articles/utility-governed-autonomous-intelligence-ai/)
+### [满足-CRA-合规要求能强化代码，并让公司更接近数字主权](https://www.infoq.com/podcasts/company-closer-digital-sovereignty/)
 
 2026-11-16 19:00:00
 
 
 
-### [满足-CRA-合规要求能强化代码，并让公司更接近数字主权](https://www.infoq.com/podcasts/company-closer-digital-sovereignty/)
+### [关键任务型公用事业的受治理自主智能](https://www.infoq.com/articles/utility-governed-autonomous-intelligence-ai/)
 
 2026-11-16 19:00:00
 
@@ -1068,19 +1092,7 @@
 
 
 
-### [推出-Cloudflare-Traces：贯穿整个平台追踪请求](https://blog.cloudflare.com/cloudflare-tracing/)
-
-2026-10-02 21:00:24
-
-
-
-### [关于我们让每个人都能使用-Cloudflare-功能承诺的更新](https://blog.cloudflare.com/enterprise-for-all-update/)
-
-2026-10-02 21:00:24
-
-
-
-### [发布-Cloudflare-OHTTP-Gateway：扩展对-Cloudflare-隐私保护基础设施的访问](https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/)
+### [2026-周庆周：网络性能更新](https://blog.cloudflare.com/network-performance-birthday-week-2026/)
 
 2026-10-02 21:00:24
 
@@ -1092,7 +1104,19 @@
 
 
 
-### [2026-周庆周：网络性能更新](https://blog.cloudflare.com/network-performance-birthday-week-2026/)
+### [发布-Cloudflare-OHTTP-Gateway：扩展对-Cloudflare-隐私保护基础设施的访问](https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/)
+
+2026-10-02 21:00:24
+
+
+
+### [关于我们让每个人都能使用-Cloudflare-功能承诺的更新](https://blog.cloudflare.com/enterprise-for-all-update/)
+
+2026-10-02 21:00:24
+
+
+
+### [推出-Cloudflare-Traces：贯穿整个平台追踪请求](https://blog.cloudflare.com/cloudflare-tracing/)
 
 2026-10-02 21:00:24
 
@@ -1122,13 +1146,13 @@
 
 
 
-### [我们希望你在-Cloudflare-上构建下一代-Git-平台](https://blog.cloudflare.com/next-git-platform-on-cloudflare/)
+### [Workers-对现代加密算法的支持](https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/)
 
 2026-10-01 21:01:30
 
 
 
-### [Workers-对现代加密算法的支持](https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/)
+### [我们希望你在-Cloudflare-上构建下一代-Git-平台](https://blog.cloudflare.com/next-git-platform-on-cloudflare/)
 
 2026-10-01 21:01:30
 
@@ -1170,13 +1194,7 @@
 
 
 
-### [通过-Cloudflare-Application-Profiles-实施正向安全](https://blog.cloudflare.com/application-profiles/)
-
-2026-09-29 21:00:44
-
-
-
-### [你的域名是否使用了后量子加密？现在你可以亲自查看](https://blog.cloudflare.com/post-quantum-visibility/)
+### [为整个互联网构建证书颁发机构](https://blog.cloudflare.com/cloudflare-certificate-authority/)
 
 2026-09-29 21:00:44
 
@@ -1188,7 +1206,13 @@
 
 
 
-### [为整个互联网构建证书颁发机构](https://blog.cloudflare.com/cloudflare-certificate-authority/)
+### [你的域名是否使用了后量子加密？现在你可以亲自查看](https://blog.cloudflare.com/post-quantum-visibility/)
+
+2026-09-29 21:00:44
+
+
+
+### [通过-Cloudflare-Application-Profiles-实施正向安全](https://blog.cloudflare.com/application-profiles/)
 
 2026-09-29 21:00:44
 
@@ -2604,13 +2628,13 @@
 
 
 
-### [为智能体时代重构-Workflows-控制平面](https://blog.cloudflare.com/workflows-v2/)
+### [在任意构建环境中注册域名：Cloudflare-Registrar-API-现已进入测试阶段](https://blog.cloudflare.com/registrar-api-beta/)
 
 2026-04-15 14:00:01
 
 
 
-### [在任意构建环境中注册域名：Cloudflare-Registrar-API-现已进入测试阶段](https://blog.cloudflare.com/registrar-api-beta/)
+### [为智能体时代重构-Workflows-控制平面](https://blog.cloudflare.com/workflows-v2/)
 
 2026-04-15 14:00:01
 
@@ -2892,13 +2916,13 @@
 
 
 
-### [发布-Cloudflare-第-13-代服务器：以缓存换核心，实现-2-倍边缘计算性能](https://blog.cloudflare.com/gen13-launch/)
+### [深入了解-Gen-13：我们如何打造迄今为止最强大的服务器](https://blog.cloudflare.com/gen13-config/)
 
 2026-03-23 13:00:00
 
 
 
-### [深入了解-Gen-13：我们如何打造迄今为止最强大的服务器](https://blog.cloudflare.com/gen13-config/)
+### [发布-Cloudflare-第-13-代服务器：以缓存换核心，实现-2-倍边缘计算性能](https://blog.cloudflare.com/gen13-launch/)
 
 2026-03-23 13:00:00
 
@@ -3042,7 +3066,7 @@
 
 
 
-### [构建可提供行动见解的安全概览仪表板](https://blog.cloudflare.com/security-overview-dashboard/)
+### [Chat-SDK-现已推出适配器目录---Vercel](https://vercel.com/changelog/chat-sdk-adapter-directory)
 
 2026-03-10 13:00:00
 
@@ -3054,7 +3078,7 @@
 
 
 
-### [Chat-SDK-现已推出适配器目录---Vercel](https://vercel.com/changelog/chat-sdk-adapter-directory)
+### [构建可提供行动见解的安全概览仪表板](https://blog.cloudflare.com/security-overview-dashboard/)
 
 2026-03-10 13:00:00
 
@@ -3078,7 +3102,7 @@
 
 
 
-### [主动防御：推出面向-API-的有状态漏洞扫描器](https://blog.cloudflare.com/vulnerability-scanner/)
+### [组织高效的平台团队---Stack-Overflow](https://stackoverflow.blog/2026/03/09/organizing-productive-platform-teams/)
 
 2026-03-09 14:00:00
 
@@ -3090,7 +3114,7 @@
 
 
 
-### [组织高效的平台团队---Stack-Overflow](https://stackoverflow.blog/2026/03/09/organizing-productive-platform-teams/)
+### [主动防御：推出面向-API-的有状态漏洞扫描器](https://blog.cloudflare.com/vulnerability-scanner/)
 
 2026-03-09 14:00:00
 
@@ -3612,13 +3636,13 @@
 
 
 
-### [Google-Cloud-展示-130，000-节点-GKE-集群：-Kubernetes-迈向超大规模](https://www.infoq.com/news/2025/12/gke-130000-node-cluster/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [vivo-Celeborn-PB-级-Shuffle-优化处理实践](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247505811&idx=1&sn=c3d890c51f032c02dd16b6d98c09faa3)
 
 2025-12-10 12:00:00
 
 
 
-### [vivo-Celeborn-PB-级-Shuffle-优化处理实践](https://mp.weixin.qq.com/s?__biz=MzI4NjY4MTU5Nw==&mid=2247505811&idx=1&sn=c3d890c51f032c02dd16b6d98c09faa3)
+### [Google-Cloud-展示-130，000-节点-GKE-集群：-Kubernetes-迈向超大规模](https://www.infoq.com/news/2025/12/gke-130000-node-cluster/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-12-10 12:00:00
 
@@ -4038,13 +4062,13 @@
 
 
 
-### [如何构建你自己的-VPN，或者---WARP-的历史](https://blog.cloudflare.com/how-to-build-your-own-vpn-or-the-history-of-warp/)
+### [突破-Linux-网络协议栈的限制：Cloudflare-的软单播-IP-转发实践](https://blog.cloudflare.com/so-long-and-thanks-for-all-the-fish-how-to-escape-the-linux-networking-stack/)
 
 2025-10-29 13:00:00
 
 
 
-### [突破-Linux-网络协议栈的限制：Cloudflare-的软单播-IP-转发实践](https://blog.cloudflare.com/so-long-and-thanks-for-all-the-fish-how-to-escape-the-linux-networking-stack/)
+### [如何构建你自己的-VPN，或者---WARP-的历史](https://blog.cloudflare.com/how-to-build-your-own-vpn-or-the-history-of-warp/)
 
 2025-10-29 13:00:00
 
@@ -4080,13 +4104,13 @@
 
 
 
-### [Cloudflare-大规模数据测量：来自实习生的洞察](https://blog.cloudflare.com/experience-of-data-at-scale/)
+### [Cloudflare-速度测试的原理是什么？](https://blog.cloudflare.com/how-does-cloudflares-speed-test-really-work/)
 
 2025-10-27 13:00:01
 
 
 
-### [Cloudflare-速度测试的原理是什么？](https://blog.cloudflare.com/how-does-cloudflares-speed-test-really-work/)
+### [Cloudflare-大规模数据测量：来自实习生的洞察](https://blog.cloudflare.com/experience-of-data-at-scale/)
 
 2025-10-27 13:00:01
 
@@ -4122,13 +4146,13 @@
 
 
 
-### [InfoQ-云和-DevOps-趋势报告---2025](https://www.infoq.com/articles/cloud-devops-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [InfoQ-云和-DevOps-趋势报告-2025](https://www.infoq.com/podcasts/cloud-devops-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-10-22 11:00:00
 
 
 
-### [InfoQ-云和-DevOps-趋势报告-2025](https://www.infoq.com/podcasts/cloud-devops-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [InfoQ-云和-DevOps-趋势报告---2025](https://www.infoq.com/articles/cloud-devops-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-10-22 11:00:00
 
@@ -4284,13 +4308,13 @@
 
 
 
-### [Cloudflare-雷达推出新的区域互联网流量和证书透明度分析功能](https://blog.cloudflare.com/new-regional-internet-traffic-and-certificate-transparency-insights-on-radar/)
+### [消除冷启动-2：分片与征服](https://blog.cloudflare.com/eliminating-cold-starts-2-shard-and-conquer/)
 
 2025-09-26 14:00:01
 
 
 
-### [消除冷启动-2：分片与征服](https://blog.cloudflare.com/eliminating-cold-starts-2-shard-and-conquer/)
+### [Cloudflare-雷达推出新的区域互联网流量和证书透明度分析功能](https://blog.cloudflare.com/new-regional-internet-traffic-and-certificate-transparency-insights-on-radar/)
 
 2025-09-26 14:00:01
 
@@ -4302,13 +4326,13 @@
 
 
 
-### [Cloudflare-开发者平台全面升级：更快、更强、更易用！](https://blog.cloudflare.com/cloudflare-developer-platform-keeps-getting-better-faster-and-more-powerful/)
+### [Cloudflare-邮件服务私测版发布](https://blog.cloudflare.com/email-service/)
 
 2025-09-25 14:00:00
 
 
 
-### [Cloudflare-邮件服务私测版发布](https://blog.cloudflare.com/email-service/)
+### [Cloudflare-开发者平台全面升级：更快、更强、更易用！](https://blog.cloudflare.com/cloudflare-developer-platform-keeps-getting-better-faster-and-more-powerful/)
 
 2025-09-25 14:00:00
 
@@ -4416,13 +4440,13 @@
 
 
 
-### [Storage-Insights-数据集优化存储占用](https://cloud.google.com/blog/products/storage-data-transfer/storage-insights-datasets-optimizes-storage-footprint/)
+### [容器优化计算助力-Autopilot-实现自动伸缩](https://cloud.google.com/blog/products/containers-kubernetes/container-optimized-compute-delivers-autoscaling-for-autopilot/)
 
 2025-08-28 00:00:00
 
 
 
-### [容器优化计算助力-Autopilot-实现自动伸缩](https://cloud.google.com/blog/products/containers-kubernetes/container-optimized-compute-delivers-autoscaling-for-autopilot/)
+### [Storage-Insights-数据集优化存储占用](https://cloud.google.com/blog/products/storage-data-transfer/storage-insights-datasets-optimizes-storage-footprint/)
 
 2025-08-28 00:00:00
 
@@ -4470,25 +4494,25 @@
 
 
 
-### [理解-Yahoo-Mail-的多租户-GKE-平台设计](https://cloud.google.com/blog/products/containers-kubernetes/understanding-yahoo-mails-multi-tenant-gke-platform-design/)
-
-2025-08-13 00:00:00
-
-
-
 ### [平台工程指南](https://cloud.google.com/blog/products/application-modernization/a-guide-to-platform-engineering/)
 
 2025-08-13 00:00:00
 
 
 
-### [沙箱即服务：构建自动化-AWS-沙箱平台](https://www.infoq.com/articles/aws-sandbox-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [理解-Yahoo-Mail-的多租户-GKE-平台设计](https://cloud.google.com/blog/products/containers-kubernetes/understanding-yahoo-mails-multi-tenant-gke-platform-design/)
+
+2025-08-13 00:00:00
+
+
+
+### [持续部署和结对编程助力精益软件交付，无需-Jira](https://www.infoq.com/podcasts/lean-software-delivery-without-jira/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-08-11 11:00:00
 
 
 
-### [持续部署和结对编程助力精益软件交付，无需-Jira](https://www.infoq.com/podcasts/lean-software-delivery-without-jira/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [沙箱即服务：构建自动化-AWS-沙箱平台](https://www.infoq.com/articles/aws-sandbox-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-08-11 11:00:00
 
@@ -4740,13 +4764,13 @@
 
 
 
-### [优化资源分配的-GKE-功能](https://cloud.google.com/blog/products/containers-kubernetes/gke-features-to-optimize-resource-allocation/)
+### [Spanner-荣获-2025-年-ACM-SIGMOD-系统奖](https://cloud.google.com/blog/products/databases/spanner-wins-the-2025-acm-sigmod-systems-award/)
 
 2025-06-17 00:00:00
 
 
 
-### [Spanner-荣获-2025-年-ACM-SIGMOD-系统奖](https://cloud.google.com/blog/products/databases/spanner-wins-the-2025-acm-sigmod-systems-award/)
+### [优化资源分配的-GKE-功能](https://cloud.google.com/blog/products/containers-kubernetes/gke-features-to-optimize-resource-allocation/)
 
 2025-06-17 00:00:00
 
@@ -4818,13 +4842,13 @@
 
 
 
-### [亚马逊将开始对-AWS-Lambda-初始化阶段收费](https://www.infoq.com/news/2025/05/aws-lambda-init-phase/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [AWS-Lambda-推出-CloudWatch-Logs-分级定价，扩展日志目标选项](https://www.infoq.com/news/2025/05/lambda-cloudwatch-logs-tiered/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-17 00:00:00
 
 
 
-### [AWS-Lambda-推出-CloudWatch-Logs-分级定价，扩展日志目标选项](https://www.infoq.com/news/2025/05/lambda-cloudwatch-logs-tiered/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [亚马逊将开始对-AWS-Lambda-初始化阶段收费](https://www.infoq.com/news/2025/05/aws-lambda-init-phase/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-17 00:00:00
 
@@ -4872,13 +4896,13 @@
 
 
 
-### [Kubernetes-1.33-“Octarine”-发布：原生边车（Sidecar）和原地-Pod-资源调整](https://www.infoq.com/news/2025/04/kubernetes-octarine-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Cloud-WAN：高级层级与验证对等互联提供商](https://cloud.google.com/blog/products/networking/premium-tier-and-verified-peering-providers-enable-cloud-wan/)
 
 2025-04-30 00:00:00
 
 
 
-### [Cloud-WAN：高级层级与验证对等互联提供商](https://cloud.google.com/blog/products/networking/premium-tier-and-verified-peering-providers-enable-cloud-wan/)
+### [Kubernetes-1.33-“Octarine”-发布：原生边车（Sidecar）和原地-Pod-资源调整](https://www.infoq.com/news/2025/04/kubernetes-octarine-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-30 00:00:00
 
@@ -4890,13 +4914,13 @@
 
 
 
-### [Capital-One-无服务器优先实践之路：经验教训与最佳实践](https://www.infoq.com/presentations/serverless-best-practices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [工程生产力的拐点：以提升生产力和实现卓越运营为目标](https://www.infoq.com/news/2025/04/improve-productivity-excellence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-24 00:00:00
 
 
 
-### [工程生产力的拐点：以提升生产力和实现卓越运营为目标](https://www.infoq.com/news/2025/04/improve-productivity-excellence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Capital-One-无服务器优先实践之路：经验教训与最佳实践](https://www.infoq.com/presentations/serverless-best-practices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-24 00:00:00
 
@@ -5004,13 +5028,13 @@
 
 
 
-### [高精度启发式规则提升机器人管理能力](https://blog.cloudflare.com/bots-heuristics/)
+### [利用人工智能迷宫对抗恶意爬虫](https://blog.cloudflare.com/ai-labyrinth/)
 
 2025-03-19 13:00:00
 
 
 
-### [利用人工智能迷宫对抗恶意爬虫](https://blog.cloudflare.com/ai-labyrinth/)
+### [高精度启发式规则提升机器人管理能力](https://blog.cloudflare.com/bots-heuristics/)
 
 2025-03-19 13:00:00
 
@@ -5070,13 +5094,13 @@
 
 
 
-### [AWS-推出-CDK-资源回收功能](https://www.infoq.com/news/2025/03/aws-cdk-garbage-collection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Flux-v2.5-发布：通过-CEL-集成和-GitHub-应用认证扩展-GitOps-功能](https://www.infoq.com/news/2025/03/flux-gitops-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-03 00:00:00
 
 
 
-### [Flux-v2.5-发布：通过-CEL-集成和-GitHub-应用认证扩展-GitOps-功能](https://www.infoq.com/news/2025/03/flux-gitops-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [AWS-推出-CDK-资源回收功能](https://www.infoq.com/news/2025/03/aws-cdk-garbage-collection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-03 00:00:00
 

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-26 04:51:02 | [返回首页](/README.md)
+**更新时间**: 2026-11-26 11:52:32 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17820)
+- [AI & 大模型](#ai-llm) (17858)
 - [软件架构](#architecture) (27)
-- [前端与全栈](#frontend-fullstack) (1039)
-- [DevOps](#devops) (874)
+- [前端与全栈](#frontend-fullstack) (1041)
+- [DevOps](#devops) (877)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7252)
+- [其他](#other) (7256)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [用-Mass-Spec-Skills-为-Antigravity-识别分子](https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/) - AI 精选
+- [Hy4-flash-本地部署：让大模型跑在个人设备上](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247499086&idx=1&sn=2621d76c5d058dc9b5b0236f602c4895) - AI 精选
 - [继黎曼猜想后，Claude-给出-VP≠VNP-证明！通过-Lean-4-形式化验证](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651075852&idx=2&sn=b43990c90fd68a8fbf4fbe9d6d16f15b) - AI 精选
 - [GLM-5.4：瞄向泛-Coding，首个-Loop-Transformer-带来的惊喜](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247494345&idx=1&sn=0ea26a769f134fefec42e33d59558c73) - AI 精选
 - [大模型开始「自己改写自己」了：不用训练，越改越强](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247724047&idx=1&sn=0f7d52679594b122f1f23b720546bde7) - AI 精选
@@ -40,10 +42,8 @@
 - [在-Amazon-SageMaker-HyperPod-上检测并恢复静默数据损坏-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/) - AI 精选
 - [AlphaGenome-2：预测-DNA-如何塑造细胞与疾病](https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/) - AI 精选
 - [连干-229-轮没人管，Qwen4-Max-预览版成事了吗？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247492852&idx=1&sn=cf0c21368250f843a45a3ab7f453bc37) - AI 精选
-- [Gemini-4-Carbon-现已推出](https://deepmind.google/blog/gemini-4-carbon-is-now-available/) - AI 精选
-- [用-Claude-定位神秘的蜂鸣声来源](https://simonwillison.net/2026/Nov/9/mysterious-beeps/) - AI 精选
 
-- [查看全部 17820 篇...](/details/tags/ai-llm.md)
+- [查看全部 17858 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -101,7 +101,7 @@
 - [【第-3606-期】vivo-前端三剑客发展历程及原理揭秘](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651277798&idx=1&sn=f595cc4365c163ce75cfc2c7572f2989) - 编程 精选
 - [从-58MB-到-2.6MB：我是如何将-React-官网性能提升-95%-的](https://juejin.cn/post/7566820121459294214) - 编程 精选
 
-- [查看全部 1039 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 1041 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -130,7 +130,7 @@
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 
-- [查看全部 874 篇...](/details/tags/devops.md)
+- [查看全部 877 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [重磅！Claude-Code-官方开源：AI-屎山代码，终于有解了~（附提示词）](https://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247513292&idx=1&sn=a6e6fd015ccedd2d78ae6c3ce1911459) - AI 精选
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 
-- [查看全部 7252 篇...](/details/tags/other.md)
+- [查看全部 7256 篇...](/details/tags/other.md)
 
 

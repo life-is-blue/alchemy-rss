@@ -1,0 +1,56 @@
+{
+  "id": "RAW_d6b025e425",
+  "title": "DeepMind 的 Gemini Robotics 2.5 旨在让机器人更安全、更灵巧、学习更快",
+  "url": "https://www.infoq.com/news/2026/11/deepmind-gemini-robotics-2-5/",
+  "date": "2026-11-26 01:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/\">Google DeepMind introduced Gemini Robotics 2.5</a>, a vision-language-action (VLA) model designed to improve robots' dexterity, reliability, and learning speed, while enabling safer operation in unstructured real-world environments.</p>\n   <p>According to DeepMind's vice president and head of robotics Carolina Parada, the model \"marks a leap forward in three key areas\": dexterity, reliability, and safety. She says its performance has been evaluated across more than 200 tasks, with reported improvements of 30% to 100% in success rates and 20% to 30% in task completion compared with prior versions. Demonstrated capabilities include serving food with tongs, tying a bow on a gift box, and pipetting liquids.</p>\n   <blockquote>\n    <p>These tasks represent a step toward human-level dexterity by combining a number of skills, including advanced tool use, complex manipulation of deformables, and handling delicate objects with finesse.</p>\n   </blockquote>\n   <p>The model is designed to work natively with different types of robots, including humanoid platforms such as <a href=\"https://apptronik.com/apollo/apollo-2\">Apptronik's Apollo 2</a> and tabletop pick &amp; place systems such as <a href=\"https://franka.de/fr3-duo\">Franka Duo platform</a>.</p>\n   <p>Parada highlights the industrial trials conducted with Mercedes Benz, in which Apollo 2 humanoid robots were deployed on an existing industrial line, achieving a 96% success rate in tasks involving automotive kitting and sorting mixed metal brackets. In the trial, the Gemini Robotics ER embodied reasoning model enabled the robot to keep track of the workflow over multiple steps and adapt to changeing conditions, while Gemini Robotics 2.5 controlled the robot's hands and arms.</p>\n   <p>Another key aspect highlighted by Parada is Gemini Robotics 2.5's safety features, which include using reasoning guidance to identify and manage physical hazards:</p>\n   <blockquote>\n    <p>Much like safety classifiers add a protective layer around Gemini’s responses, this guidance allows the robot to navigate complex environments securely. In our evaluations, this capability boosted safe task completion around obstacles by 33% and around nearby people by 43%.</p>\n   </blockquote>\n   <p>DeepMind also open-sourced the new safety benchmark <a href=\"https://huggingface.co/datasets/google/asimov_agentic\">ASIMOV-jailbreak</a>, containing hundreds of unsafe prompts across dozens of scenes.</p>\n   <p>Commenting on the announcement on LinkedIn, <a href=\"https://lnkd.in/p/eEUK3Thw\">GEICO director of software Sean P. observed that</a> \"the combination of simulation, learning from mistakes, and real-world testing is what will make robots more capable and reliable in everyday tasks\".</p>\n   <p>LightSpeed founder and CEO <a href=\"https://lnkd.in/p/ezhjnpX3\">Biju Kulathakal emphasized that 96% accuracy may not be enough</a> in real contexts involving humans:</p>\n   <blockquote>\n    <p>Pausing when a person gets close is what gets robots out from behind the fence. And on a real line, customers live in the 4%. Learning from its own mistakes is how that closes.</p>\n   </blockquote>\n   <p>Level principal engineer <a href=\"https://lnkd.in/p/euNXgHXJ\">Ariel Franco Ferreira expressed his view that</a></p>\n   <blockquote>\n    <p>Releasing an open benchmark for jailbreaks on a VLA model is the part I find most interesting, because a prompt injection that ends in a physical action is a very different failure from a bad chat answer.</p>\n   </blockquote>\n   <p>He also raised the question of how to handle situations \"when the robot refuses the unsafe step but leaves the task half done in a risky state\".</p>\n   <p>As a final note, Gemini Robotics 2.5's development was accelerated using <a href=\"https://www.infoq.com/news/2026/11/google-gemini-argon/\">Gemini 4 Argon</a> as a simulation engine, leveraging its robotics research capabilities to generate simulated environments.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DeepMind's Gemini Robotics 2.5 Aims to Make Robots Safer, More Dexterous, and Faster Learners\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/deepmind-gemini-robotics-2-5/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795626000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DeepMind 推出了 Gemini Robotics 2.5，这是一种视觉-语言-动作模型，可提升机器人的灵巧性、可靠性与安全性；在 200 多项任务中，其成功率提升了 30-100%，并新增安全功能和开源基准。",
+  "oneSentenceSummary": "DeepMind 推出了 Gemini Robotics 2.5，这是一种视觉-语言-动作模型，可提升机器人的灵巧性、可靠性与安全性；在 200 多项任务中，其成功率提升了 30-100%，并新增安全功能和开源基准。",
+  "summary": "DeepMind 发布了 Gemini Robotics 2.5，这是一种视觉-语言-动作（VLA）模型，旨在提升机器人在非结构化环境中的灵巧性、可靠性与安全性。与之前的版本相比，该模型的成功率提高了 30-100%，任务完成表现提升了 20-30%。其关键能力包括用夹子夹取食物、系礼物蝴蝶结和移取液体。该模型可原生适配多种机器人类型，包括 Apptronik 的 Apollo 2 等人形机器人平台，以及 Franka Duo 等桌面系统。在梅赛德斯-奔驰的工业试验中，该模型在汽车零部件配套任务中的成功率达到 96%。借助推理引导实现的安全功能，使机器人在障碍物周围安全完成任务的比例提升了 33%，在人员周围则提升了 43%。DeepMind 还开源了 ASIMOV-jailbreak 安全基准，其中包含数百条不安全提示词。",
+  "mainPoints": [
+    {
+      "point": "Gemini Robotics 2.5 在 200 多项任务中取得显著性能提升，成功率提高了 30-100%，任务完成表现提升了 20-30%。",
+      "explanation": "通过大规模评估，该模型展现出在真实世界机器人能力方面的可量化进步，灵巧性和可靠性均有所提升，能够完成用夹子夹取食物、系礼物蝴蝶结等复杂操作任务。"
+    },
+    {
+      "point": "该模型借助推理引导，让机器人能够更安全地执行任务，识别并应对物理危险，使安全任务完成率提升了 33-43%。",
+      "explanation": "安全功能利用推理能力，在复杂环境中安全导航。评估结果显示，机器人在障碍物和人员周围安全作业的表现显著提升，回应了人机协作中的关键安全问题。"
+    },
+    {
+      "point": "在梅赛德斯-奔驰的工业部署中，采用人形机器人 Apollo 2 执行汽车零部件配套任务，成功率达到 96%。",
+      "explanation": "真实场景试验展示了该模型在工业环境中的能力：它能处理多步骤工作流程、适应不断变化的条件，并通过 Gemini Robotics ER 具身推理控制机器人的手臂和手部。"
+    },
+    {
+      "point": "DeepMind 开源了 ASIMOV-jailbreak 安全基准，其中包含数十种场景下的数百条不安全提示词。",
+      "explanation": "这一安全基准回应了具身 AI 安全面临的独特挑战，为评估和改进机器人在潜在危险场景中的行为提供了资源。业内专家指出，提示注入导致机器人采取物理行动所带来的风险，与文本对话中的错误截然不同。"
+    }
+  ],
+  "keyQuotes": [
+    "这些任务通过结合多种技能，朝着人类水平的灵巧性迈出了一步，包括高级工具使用、对可变形物体进行复杂操作，以及灵巧地处理易碎物品。",
+    "就像安全分类器为 Gemini 的回答增添了一层保护一样，这种引导也让机器人能够在复杂环境中安全行动。在我们的评估中，这项能力使机器人在障碍物周围安全完成任务的比例提升了 33%，在附近有人时提升了 43%。",
+    "我最感兴趣的是，为 VLA 模型发布一个开放的越狱基准，因为最终导致物理行动的提示注入，与糟糕的聊天回答所造成的失败截然不同。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "安全",
+    "模型训练与推理",
+    "人形机器人",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 505,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795626000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-26 01:00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_7554237150",
+  "title": "超越单条人类示范：DriveSTA 用带评分替代轨迹重塑端到端规划，NAVSIM 达 95.6 分、延迟降 73%",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247667994&idx=1&sn=baa19088224efa7af7bdb4f205a4cc50",
+  "date": "2026-11-25 21:38:00",
+  "author": "我爱计算机视觉",
+  "siteName": "我爱计算机视觉",
+  "content": null,
+  "aiSummary": "DriveSTA 通过带评分替代轨迹的方式，结合轨迹搜索、执行反馈和多目标匹配，显著提升了端到端驾驶规划的性能，NAVSIM v1 达 95.6 分，延迟降低 73%。",
+  "oneSentenceSummary": "DriveSTA 通过带评分替代轨迹的方式，结合轨迹搜索、执行反馈和多目标匹配，显著提升了端到端驾驶规划的性能，NAVSIM v1 达 95.6 分，延迟降低 73%。",
+  "summary": "本文介绍了 DriveSTA 方法，这是一种解决端到端驾驶规划中单条人类示范监督不足问题的框架。该方法围绕参考轨迹进行受控平滑变形，生成大量候选轨迹并通过仿真执行进行筛选和评分。核心创新在于使用 Scored Trajectory Alternatives 替代传统轨迹监督，结合匈牙利匹配将多个高分目标分配给不同提案，同时引入几何约束和残差细化机制。文章详细阐述了模型的两阶段流程：S1 生成并评分 64 条轨迹，S2 在此基础上进行残差细化。实验表明，DriveSTA-Scale S2 在 NAVSIM v1 Navtest 上达到 95.6 分的 PDMS，平均前向延迟降低约 73%；在 HUGSIM 闭环测试中，路线完成度为 56.1，HD-Score 为 46.7。",
+  "mainPoints": [
+    {
+      "point": "DriveSTA 通过 Scored Trajectory Alternatives 解决单条示范监督不足问题",
+      "explanation": "传统方法仅依赖人类轨迹作为监督，导致模型学习范围受限。DriveSTA 先对参考轨迹进行受控平滑变形生成大量候选，再通过仿真执行筛选出高质量替代轨迹，显著丰富了训练数据的监督覆盖范围。"
+    },
+    {
+      "point": "两阶段架构：S1 生成并评分 64 条轨迹，S2 进行残差细化",
+      "explanation": "S1 阶段生成候选轨迹并进行初步评分，S2 阶段在候选基础上进行残差细化。通过匈牙利匹配将多个目标分配给不同提案，每个提案都有明确的学习方向，提升了规划多样性与性能。"
+    },
+    {
+      "point": "采用 JEPA 编码视频特征，提升评分器对交通变化的感知能力",
+      "explanation": "JEPA（联合嵌入预测架构）用于编码前一帧与当前帧的前视观测，将视频特征同时交给细化器和评分器。实验表明，恢复为真实输入后，选中轨迹的 PDMS 提高 3.20 点，证明视频信息对排序有显著贡献。"
+    },
+    {
+      "point": "Scale 版本显著提升性能：NAVSIM v1 PDMS 达 95.6，延迟降低 73%",
+      "explanation": "在更大规模的训练数据（232.7k 场景）下，DriveSTA-Scale S2 相比 ChainFlow-VLA 的平均前向延迟降低约 73%，同时将 PDMS 提升至 95.6 分，证明了数据规模与方法设计的协同作用。"
+    },
+    {
+      "point": "闭环 HUGSIM 测试中，Scale S2 取得最佳路线完成度 56.1 和 HD-Score 46.7",
+      "explanation": "在连续驾驶的闭环评估中，DriveSTA-Scale S2 相比 DriveZero、FPD-Drive 等方法在路线完成度和 HD-Score 上均取得最高值，验证了方法在真实场景中的鲁棒性。"
+    }
+  ],
+  "keyQuotes": [
+    "DriveSTA 用带评分替代轨迹重塑端到端规划，NAVSIM 达 95.6 分、延迟降 73%",
+    "轨迹被修正后，原来的评分排序可能已经失效。 DriveSTA 重新执行并标注细化后的候选，训练第二阶段评分器",
+    "Scale S2 比 ChainFlow-VLA 的平均前向延迟降低约 73%",
+    "在 HUGSIM 中，执行结果会改变下一次观测",
+    "把更多计算放在监督构造阶段，而这些搜索不进入在线推理"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "计算机视觉",
+    "自动驾驶",
+    "强化学习",
+    "多模态 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 16,
+  "score": 86,
+  "wordCount": 3948,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_b07fc8c9bc",
+  "sourceName": "我爱计算机视觉",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1795613880000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-25 21:38:00"
+}

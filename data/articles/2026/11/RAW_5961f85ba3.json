@@ -1,0 +1,61 @@
+{
+  "id": "RAW_5961f85ba3",
+  "title": "DoorDash 将调度能力提升 10x，同时维持 99.99% 的峰值可用性",
+  "url": "https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/",
+  "date": "2026-11-25 22:44:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>DoorDash has <a href=\"https://careersatdoordash.com/blog/how-doordash-built-a-next-generation-real-time-dispatch-platform/\">rebuilt its real-time dispatch platform to handle growing delivery demand</a>, replacing a monolithic optimization engine with a distributed architecture that separates coordination from computation. The redesign delivers 10 times higher throughput and more than 99.99% availability during peak periods, while enabling the company to run machine learning and reinforcement learning models within dispatch workflows.</p>\n   <p>The previous dispatch engine tightly coupled business logic, logistics state management, and computationally intensive routing algorithms. As delivery volume increased, its optimization workload became increasingly difficult to process within the time available for dispatch decisions. The underlying algorithms had roughly quadratic time complexity, and during peak periods, demand approached four times the system's processing capacity. The engine consequently relied on fallback heuristics and sometimes made assignment decisions using incomplete information.</p>\n   <p>As the DoorDash engineering team explained:</p>\n   <blockquote>\n    <p>The fatal bottleneck wasn't just raw machine capacity; it was the speed of reality.</p>\n   </blockquote>\n   <p>Rather than address the bottleneck through conventional horizontal scaling, DoorDash redesigned the execution model around two independently scalable tiers. The engineering team described the motivation:</p>\n   <blockquote>\n    <p>To scale into the future, the system didn't just need more capacity; it demanded a fundamentally new execution model.</p>\n   </blockquote>\n   <p>The new platform separates execution into two independently scalable tiers. A stateful coordinator manages dispatch lifecycles, maintains global logistics state, and validates business rules. Stateless compute workers handle mathematical optimization, vehicle-routing heuristics, and model inference.</p>\n   <p>The coordinator distributes localized portions of logistics data to workers using payload sharding over<a href=\"https://grpc.io/\"> gRPC</a>. This avoids broadcasting the entire global state to every worker and reduces network overhead. Workers process their assigned optimization tasks independently, while the coordinator manages orchestration and result aggregation.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/news/2026/11/doordash-dispatch-redesign/en/resources/1doordashdispatch-1793847144794.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/doordash-dispatch-redesign/en/resources/1doordashdispatch-1793847144794.jpeg\" rel=\"share\"></p>\n   <p><em>Evolution from DoorDash's monolithic dispatch engine to its distributed architecture (Source: <a href=\"https://careersatdoordash.com/blog/how-doordash-built-a-next-generation-real-time-dispatch-platform/\">DoorDash Blog Post</a>)</em></p>\n   <p>The redesign addresses computational complexity through hierarchical decomposition. Rather than solving one global optimization problem, the coordinator partitions logistics data into geographic clusters and delivery trajectories. Workers process smaller problems in parallel, and a reconciliation layer combines results across partitions.</p>\n   <p>DoorDash used shadow testing before directing live dispatch decisions to the new platform. Production requests were duplicated, with the legacy engine determining assignments while the new platform's outputs were logged for comparison. Teams evaluated matching quality, delivery times, and resilience under load. After establishing parity, they used controlled switchback experiments and fallback mechanisms during rollout.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/news/2026/11/doordash-dispatch-redesign/en/resources/1Screenshot 2026-11-02 at 8.02.55 PM-1793847144794.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/doordash-dispatch-redesign/en/resources/1Screenshot 2026-11-02 at 8.02.55 PM-1793847144794.png\" rel=\"share\"></p>\n   <p><em>Shadow testing compares legacy and new dispatch outputs (Source: <a href=\"https://careersatdoordash.com/blog/how-doordash-built-a-next-generation-real-time-dispatch-platform/\">DoorDash Blog Post</a>)</em></p>\n   <p>DoorDash reports a tenfold increase in dispatch throughput, with more than 99.96% of runs completing within 20 seconds. During Super Bowl Sunday, the platform maintained more than 99.99% availability despite a 10% week-over-week increase in peak volume.</p>\n   <p data-pm-slice=\"1 1 []\">The architecture also introduces a hybrid L1/L2 model serving. Latency-sensitive inference runs locally within compute workers using <a href=\"https://onnxruntime.ai/\">ONNX Runtime</a>, avoiding remote procedure call overhead. More complex evaluations use isolated remote model-serving clusters, keeping heavier workloads away from the coordinator's state-management path.</p>\n   <p>DoorDash has also deployed multi-agent reinforcement learning to dynamically adjust dispatch objective weights based on localized marketplace feedback, including merchant congestion and courier utilization. The agents adapt the trade-off between delivery speed and batching efficiency at individual stores. The approach was evaluated through production switchback experiments and accepted at the <a href=\"https://arxiv.org/abs/2606.13604\">ICML 2026 Workshop</a> on Reinforcement Learning from World Feedback.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DoorDash Scales Dispatch 10x While Maintaining 99.99% Peak Availability\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/doordash-dispatch-redesign/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795617840000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DoorDash 通过采用将协调与计算分离的分布式双层架构，重建调度平台，实现 10x 吞吐量和 99.99% 的峰值可用性，并支持集成 ML 和 RL 模型。",
+  "oneSentenceSummary": "DoorDash 通过采用将协调与计算分离的分布式双层架构，重建调度平台，实现 10x 吞吐量和 99.99% 的峰值可用性，并支持集成 ML 和 RL 模型。",
+  "summary": "DoorDash 用分布式架构取代了单体调度引擎，该架构由有状态协调器和无状态计算工作进程组成。协调器负责管理调度生命周期和全局物流状态，工作进程则处理优化和模型推理。通过 gRPC 对负载进行分片，减少了网络开销。系统采用分层拆解，将问题拆分为较小的并行任务，实现 10x 吞吐量，并在高峰时段达到 99.99% 的可用性。上线前，影子测试验证了新旧系统的一致性。混合 L1/L2 模型服务方案将对延迟敏感的推理放在本地，通过 ONNX Runtime 执行；复杂评估则交由远程集群处理。多智能体强化学习根据市场反馈动态调整调度目标权重。",
+  "mainPoints": [
+    {
+      "point": "分布式双层架构将协调与计算分离，以实现可扩展性。",
+      "explanation": "有状态协调器负责管理调度生命周期和全局状态，无状态工作进程负责处理优化和模型推理。通过 gRPC 对负载进行分片，避免向所有工作进程广播完整状态。"
+    },
+    {
+      "point": "分层拆解通过并行处理较小问题来解决全局优化问题。",
+      "explanation": "协调器将物流数据划分为地理集群和轨迹，工作进程并行处理这些数据，再由结果整合层汇总各分区的结果。"
+    },
+    {
+      "point": "影子测试和受控实验确保新平台安全上线。",
+      "explanation": "生产请求会被复制：由旧引擎决定配送分配，同时记录新平台的输出以供比较，并评估匹配质量、配送时间和系统韧性。"
+    },
+    {
+      "point": "混合 L1/L2 模型服务优化推理操作的延迟。",
+      "explanation": "对延迟敏感的推理通过 ONNX Runtime 在计算工作进程本地执行，而复杂评估则使用独立的远程模型服务集群，从而避免较重的工作负载进入协调器的状态管理路径。"
+    },
+    {
+      "point": "多智能体强化学习能够动态调整调度目标。",
+      "explanation": "RL 智能体根据本地市场反馈，在各门店层面调整配送速度与合单效率之间的权衡。相关反馈包括商家拥堵情况和骑手利用率。"
+    }
+  ],
+  "keyQuotes": [
+    "真正致命的瓶颈不只是机器的原始算力，而是跟上现实变化的速度。",
+    "要面向未来扩展，系统需要的不只是更大的容量，而是一种根本全新的执行模式。",
+    "DoorDash 表示，调度吞吐量提升了 10 倍，超过 99.96% 的任务能在 20 秒内完成。",
+    "在超级碗周日，尽管峰值流量较上周同期增加了 10%，平台仍维持了超过 99.99% 的可用性。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "分布式系统",
+    "机器学习",
+    "强化学习"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 527,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795617840000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-25 22:44:00"
+}
