@@ -1,4 +1,4 @@
-> **更新时间**: 2026-11-26 11:52:32 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-11-26 21:22:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -806,17 +806,13 @@
 
 ### [如何使用-GitLab-CI/CD-和-AWS-OIDC-部署到-Amazon-S3，无需-AWS-访问密钥](https://www.freecodecamp.org/news/how-to-deploy-to-amazon-s3-using-gitlab-ci-cd-and-aws-oidc-without-aws-access-keys/)
 
-2026-11-26 03:49:26 | 标签: 编程与工程, 云原生 / DevOps, 安全, 前端与 Web, 后端开发
-
-> 本文全面介绍如何使用 GitLab CI/CD 和 AWS OIDC（OpenID Connect）身份验证，设置自动部署到 Amazon S3。文章说明了自动化相较于手动上传的优势，介绍 CI/CD 的概念，并详细讲解 OIDC 相比传统 AWS 访问密钥的安全优势。教程逐步讲解如何创建 S3 存储桶、配置静态网站托管、设置带有 OIDC 身份提供商的 IAM 角色、附加 S3 权限、配置 GitLab CI/CD 变量，以及通过 .gitlab-ci.yml 文件实现部署流水线。最后，文章介绍验证步骤和清理说明，为安全、自动化地部署到 S3 提供完整的端到端方案。
+2026-11-26 03:49:26
 
 
 
 ### [GitHub-弃用-CSS-in-JS，历时三年迁移后-SSR-提速-55%](https://www.infoq.com/news/2026/11/github-css-migration/)
 
-2026-11-25 23:29:00 | 标签: 编程与工程, 前端与 Web, 系统设计, 性能优化, 设计系统
-
-> GitHub 记录了将 github.com 从 styled-components（CSS-in-JS）迁移到 CSS Modules 的三年工程实践，并报告称服务器端渲染时间减少了 55%，组件初始化速度提升了 25%。这项迁移旨在解决扩展性问题：组件数量增加会导致页面加载时间、SSR 成本和样式更新开销呈指数级增长。团队采用设有门槛的渐进式发布策略：在功能标记后添加 CSS Modules 版本，通过视觉回归测试后，再逐步向所有用户推出。迁移期间，团队通过混合使用 @primer/styled-react 软件包，转换了 7，760 处 sx 属性用法；Copilot 编码智能体则加快了...
+2026-11-25 23:29:00
 
 
 
