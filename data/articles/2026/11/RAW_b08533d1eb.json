@@ -1,0 +1,56 @@
+{
+  "id": "RAW_b08533d1eb",
+  "title": "487 名顾问借助 ChatGPT 获得更高分，但不使用它时便毫无优势",
+  "url": "https://towardsdatascience.com/chatgpt-boosted-consultants-scores-not-their-knowledge/",
+  "date": "2026-11-27 00:00:00",
+  "author": "Abdullahi Dattijo",
+  "siteName": "Towards Data Science",
+  "content": null,
+  "aiSummary": "两项研究表明，ChatGPT 等 AI 工具能提高顾问和学徒的表现分数，但移除工具后，这些提升便会消失，说明借助工具取得的表现并不等于真正掌握了知识。",
+  "oneSentenceSummary": "两项研究表明，ChatGPT 等 AI 工具能提高顾问和学徒的表现分数，但移除工具后，这些提升便会消失，说明借助工具取得的表现并不等于真正掌握了知识。",
+  "summary": "本文探讨了两项近期关于 AI 辅助工作表现的研究。《自然·人类行为》的一项研究测试了 487 名管理顾问，发现与对照组相比，使用 ChatGPT 的顾问在编程方面提高了 49 分，在统计学方面提高了 20 分，在预测方面提高了 17 分。然而，当他们在没有 ChatGPT 的情况下回答相同的技术问题时，接受干预的顾问几乎没有表现出优势。IZA 的一篇讨论论文研究了 673 名德国 IT 学徒，发现 AI 辅助使他们在课程任务上的成绩提高了 44 分，在进阶任务上也有所提升，理解力得分同样有所提高。作者认为，AI 的作用类似外骨骼：它能暂时提升表现，却不会帮助使用者积累持久的专业能力。文章最后指出，必须区分借助工具取得的表现与真正的专业能力；评估 AI 对劳动力的影响时，既要追踪产出质量，也要考察使用者的底层理解能力。",
+  "mainPoints": [
+    {
+      "point": "AI 工具能提升表现，却无法积累持久知识",
+      "explanation": "两项研究均表明，ChatGPT 虽能显著提高顾问和学徒的测试成绩，但移除工具后，这些提升便会消失，说明成绩改善源自工具的使用，而非专业知识的真正掌握。"
+    },
+    {
+      "point": "外骨骼的比喻解释了 AI 的临时辅助作用",
+      "explanation": "就像实体外骨骼能帮助人搬起更重的物体，却不会增强肌肉一样，AI 提供的是短暂的助力：使用时可以提升产出，但不会让底层技能转移到使用者身上。"
+    },
+    {
+      "point": "借助工具取得的表现与专业能力是不同概念",
+      "explanation": "文章指出，不能把借助 AI 完成专家级工作，等同于具备独立完成同样工作的知识和判断力；这两方面需要分别评估。"
+    },
+    {
+      "point": "评估 AI 辅助能力需要四项指标",
+      "explanation": "要准确评估 AI 的影响，不能只依赖单一测试分数，还应衡量产出质量、对推理过程的理解、发现错误的能力，以及在没有辅助时的表现。"
+    }
+  ],
+  "keyQuotes": [
+    "「从许多方面来说，外骨骼就像肌肉和骨骼：它是一种可穿戴框架，能让穿戴者搬起更重的物体，却不会因此增加肌肉组织或骨密度。」",
+    "「LLM 辅助工具的力量就像外骨骼一样转瞬即逝——使用工具时它才存在，不使用时便不复存在。」",
+    "「当 AI 参与其中时，单一的测试分数无法体现能力的这些细微差别。」"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工程",
+    "模型评测与基准",
+    "工作的未来",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 85,
+  "wordCount": 1743,
+  "domain": "towardsdatascience.com",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795708800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-27 00:00:00"
+}

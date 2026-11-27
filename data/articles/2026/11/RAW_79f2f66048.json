@@ -1,0 +1,61 @@
+{
+  "id": "RAW_79f2f66048",
+  "title": "通过基于 SRE 的培训，打造生产就绪文化与技能",
+  "url": "https://www.infoq.com/news/2026/11/SRE-based-training/",
+  "date": "2026-11-26 19:09:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Training can act as a confidence engine, turning repeated behaviors into habits and culture. In her talk, <a href=\"https://youtu.be/V0rIn_vb1VU\">Engineer Confidence with Reliable Training Programs</a> at <a href=\"https://gotocph.com/\">GOTO Copenhagen</a>, Jennifer Petoff showed how we can tailor training programs that equip developers and operators with the skills to run their services in line with the organization’s maturity and growth, and apply SRE principles to the training itself.</p>\n   <p>Software ownership is a human challenge as much as it is a technical one. Most formal education programs are geared towards the first 10% of the software development life cycle, the build phase, Petoff said. Engineers and operators are tasked with maintaining, debugging, securing, and evolving systems they may not even have written:</p>\n   <blockquote>\n    <p>There’s this implicit assumption that coding proficiency translates seamlessly to operational confidence, but it doesn’t. Without systematic training, this may create imposter syndrome, stress, and maybe even attrition in your organization.</p>\n   </blockquote>\n   <p>AI has magnified the relative cost and complexity of post-build operations. Petoff suggested thinking about how to equip developers and operators with skills to run their services scalably in production.</p>\n   <p>Culture is not some grand mindset you need to shift. It’s much more tactical. You can change your culture by changing what people do every day, Petoff said. Training people acts as a confidence engine, giving engineers the self-efficacy to adopt new operational behaviors. When behaviors are repeated over time and across teams, they become habits, and those habits comprise your organizational culture. Petoff suggests avoiding a sink-or-swim mentality (letting people fend for themselves rather than training them), as it can breed stress or frustration.</p>\n   <p>Training needs depend on the maturity of your organization in adopting key principles and practices, the familiarity of engineers with the organization and infrastructure, and the experience of individuals. For organizations starting their DevOps or SRE journey, she suggested addressing skill gaps and tailoring the message to who is on your team. Organizations that already have well-developed production best practices should aim at reinforcing their culture and building upon their practices to foster confidence.</p>\n   <p>Your training program should take into account the size of your organization and how fast it’s growing to get the most from your investment. If your organization is small and growing slowly, focus on one-on-one knowledge transfer through mentoring and shadowing, Petoff suggested. For a large and slowly growing organization, invest in ongoing education. When it’s small but growing rapidly, invest in onboarding. If you’re both large and growing rapidly, invest in a full life cycle training program, onboarding, all the way through ongoing education and beyond, she said.</p>\n   <p>The foundational principles of SRE and elements of the service reliability hierarchy can be applied to the training program itself, Petoff explained:</p>\n   <blockquote>\n    <p>Monitor through attendance tracking and survey feedback. Address issues that surface via the monitoring. Write postmortems when something goes wrong to learn from that failure. Observe concrete job-related behaviors to more effectively tie the training to business impact.</p>\n   </blockquote>\n   <p>To scale production safety training to tens of thousands of developers, they created a self-paced training and piloted it with a 1% cohort, making changes based on audience feedback before scaling it up. Petoff said they automated the distribution, enrollment, and escalation notifications up the management chain.</p>\n   <p>A production-ready workforce and organizational culture is non-negotiable in the generative AI era, Petoff stated. Learning drives confidence, confidence drives behavior, and behavior repeated over time drives culture. You need to look at the training costs and benefits to make the right level of investment based on the specific organizational situation. Applying SRE principles to the training program itself led to a more consistent, reliable, and scalable experience, she concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/jpetoff/\">Jennifer Petoff</a> after her talk.</p>\n   <p><strong>InfoQ: How can we tailor the training message to individual team members?</strong></p>\n   <blockquote>\n    <p><strong>Jennifer Petoff</strong>: In the Generative AI era, we are all moving faster than ever, and it’s easy for training to get sacrificed as something important, but not urgent. Developers and operators may also look upon training with skepticism: Is this training tied to some fleeting corporate hype that will quickly be forgotten?</p>\n    <p>You need to convince them \"what’s in it for me?\" (WIIFM). The answer ties directly to what motivates people and varies among team members.</p>\n    <ul>\n     <li>For the practically-minded: Tie the training to reductions in toil or on-call load.</li>\n     <li>For the growth-minded: Connect it to higher-value skills that can unlock career opportunities.</li>\n     <li>For people motivated by self-preservation: Explain how the training will build future-proof skills.</li>\n    </ul>\n    <p>These \"WIIFM\" elements can be conveyed in written communications, through talking points to managers, or peer-to-peer discussions incorporated into the program.</p>\n   </blockquote>\n   <p><strong>InfoQ: How did you observe job-related behaviors?</strong></p>\n   <blockquote>\n    <p><strong>Petoff</strong>: We built a hands-on training environment using real production infrastructure, but without real-world users and associated stakes. We could \"break\" our training infrastructure on demand, and students would work in groups of three to troubleshoot realistic production issues.</p>\n    <p>By structuring the training in this way, instructors could directly observe how participants used system diagrams, diagnosed production issues, and mitigated an outage. We looked at how people engaged with production during the exercises instead of quizzing them or asking for a simple nod of understanding.</p>\n   </blockquote>\n   <p><strong>InfoQ: What have you learned from applying SRE principles to training programs?</strong></p>\n   <blockquote>\n    <p><strong>Petoff</strong>: Reliability is about mastering the operational \"how\" of any complex initiative. Training programs are just the tip of the iceberg. I believe that you can \"SRE\" anything in work, life, and for your well-being. Building is time-bound, but operations are forever. Planning a project beyond launch to include mechanisms to streamline operations and drive continuous improvement will pay you back tenfold and free up time to work on more impactful initiatives without getting buried under a mountain of toil.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Building a Production-Ready Culture and Skills Through SRE-based Training\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/SRE-based-training/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795691340000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "文章阐述了如何将 SRE 原则应用于培训项目，通过系统化、可扩展的教育弥补技能差距、强化组织习惯，进而建立生产运维信心，打造生产就绪文化。",
+  "oneSentenceSummary": "文章阐述了如何将 SRE 原则应用于培训项目，通过系统化、可扩展的教育弥补技能差距、强化组织习惯，进而建立生产运维信心，打造生产就绪文化。",
+  "summary": "Jennifer Petoff 认为，将 SRE 原则应用于教育本身，可以让培训项目成为信心引擎。她指出，大多数正规教育只关注软件开发的构建阶段，导致工程师在运维、调试和安全方面准备不足。将培训视为一个需要监控、衡量和改进的系统，组织便能建立运维信心，并将其转化为文化习惯。通过先在小规模群体中试点自主学习项目、自动化内容分发，并安排基于真实生产基础设施的练习，这种方法能够扩展推广。Petoff 强调，培训必须根据组织成熟度、团队规模和增长速度进行定制，并通过 WIIFM（对我有什么好处）传达方式，满足不同的动机需求。这套框架包括考勤跟踪、问卷反馈、针对失败的复盘，以及让参与者排查真实生产问题的实践环境。",
+  "mainPoints": [
+    {
+      "point": "可以运用 SRE 原则设计培训项目，建立运维信心并养成文化习惯。",
+      "explanation": "通过跟踪考勤、收集反馈、针对失败撰写复盘，并观察与工作相关的行为，培训就能成为一个系统化过程，将反复出现的运维行为转化为组织文化，而不再只是临时开展的教育活动。"
+    },
+    {
+      "point": "大多数正规教育只关注构建阶段，使工程师无法胜任生产环境运维。",
+      "explanation": "工程师需要维护、调试、保护并持续改进自己可能并未编写的系统，这容易引发冒名顶替综合征，并增加人才流失风险。缺乏系统化培训时，编码能力并不能转化为运维信心；随着 AI 加剧构建完成后的复杂性，这一问题尤为突出。"
+    },
+    {
+      "point": "培训必须根据组织成熟度、团队规模和增长速度进行定制。",
+      "explanation": "规模小、增长缓慢的组织应侧重导师指导和跟岗学习；规模大、增长缓慢的组织需要持续教育；规模小、快速增长的组织需要入职培训；规模大、快速增长的组织则需要覆盖完整周期的项目，从入职培训延伸至持续教育。"
+    },
+    {
+      "point": "WIIFM 信息必须回应不同的动机需求，才能让培训发挥作用。",
+      "explanation": "注重实践的工程师需要看到培训如何减少繁琐工作和待命负担；注重成长的工程师需要看到职业晋升机会；出于自我保护动机的工程师则需要掌握面向未来的技能。这些内容应通过书面沟通、管理者谈话要点和同事间讨论传达。"
+    },
+    {
+      "point": "基于真实生产基础设施的实践培训，能够真实观察参与者的行为。",
+      "explanation": "通过创建一个可以按需「破坏」的培训环境，讲师可以观察参与者如何运用系统图、诊断问题和缓解故障，而不是依赖测验或点头表示理解，从而将培训与业务影响直接联系起来。"
+    }
+  ],
+  "keyQuotes": [
+    "人们往往默认编码能力可以顺理成章地转化为运维信心，但事实并非如此。",
+    "培训能成为信心引擎，赋予工程师自我效能感，让他们愿意采用新的运维行为。",
+    "可靠性关乎掌握任何复杂举措在运维层面的「如何做」。培训项目只是冰山一角。",
+    "你需要让他们明白「这对我有什么好处？」（WIIFM）。答案与激励人们的因素直接相关，而且团队成员各不相同。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "知识管理",
+    "云原生 / DevOps",
+    "职业成长"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 83,
+  "wordCount": 941,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795691340000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-26 19:09:00"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-27 06:42:54 | [返回首页](/README.md)
+**更新时间**: 2026-11-27 13:47:53 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17858)
+- [AI & 大模型](#ai-llm) (17892)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1041)
-- [DevOps](#devops) (877)
+- [DevOps](#devops) (880)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7256)
+- [其他](#other) (7265)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Clay-如何构建-GTM-智能体-—-Jeff-Barg，AI-负责人-—-Latent-Space](https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/) - AI 精选
+- [Clay-如何构建-GTM-智能体——Clay-AI-负责人-Jeff-Barg-—-Latent-Space](https://latent.space/p/how_clay_builds_gtm_agents_jeff_barg_head_of_ai/) - AI 精选
+- [让-Hy4-flash-吐字提速-4.2-倍，混元-DFly2-开源](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247499116&idx=1&sn=5e8af49c48d4b3c1d7e06b98d6114160) - AI 精选
 - [用-Mass-Spec-Skills-为-Antigravity-识别分子](https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/) - AI 精选
 - [Hy4-flash-本地部署：让大模型跑在个人设备上](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247499086&idx=1&sn=2621d76c5d058dc9b5b0236f602c4895) - AI 精选
 - [继黎曼猜想后，Claude-给出-VP≠VNP-证明！通过-Lean-4-形式化验证](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651075852&idx=2&sn=b43990c90fd68a8fbf4fbe9d6d16f15b) - AI 精选
@@ -39,11 +42,8 @@
 - [llama.cpp-v1.0.0：为本地-AI-生态系统奠定更坚实的基础](https://huggingface.co/blog/ggml-org/llama-cpp-v1) - AI 精选
 - [【年终复盘②】RSI-可能是-NeoLab-的机会、Personal-Agent-真的有用、创业要造灭火器还是砖头？｜对话谷雨：AI-带给我的-10-个-Aha-Moments](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649113115&idx=1&sn=5d0928c72b758bccea81eb26e1d7146e) - AI 精选
 - [Gemini-4-Hydrogen-正式发布](https://deepmind.google/blog/introducing-gemini-4-hydrogen/) - AI 精选
-- [在-Amazon-SageMaker-HyperPod-上检测并恢复静默数据损坏-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/) - AI 精选
-- [AlphaGenome-2：预测-DNA-如何塑造细胞与疾病](https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/) - AI 精选
-- [连干-229-轮没人管，Qwen4-Max-预览版成事了吗？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247492852&idx=1&sn=cf0c21368250f843a45a3ab7f453bc37) - AI 精选
 
-- [查看全部 17858 篇...](/details/tags/ai-llm.md)
+- [查看全部 17892 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 
-- [查看全部 877 篇...](/details/tags/devops.md)
+- [查看全部 880 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [重磅！Claude-Code-官方开源：AI-屎山代码，终于有解了~（附提示词）](https://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247513292&idx=1&sn=a6e6fd015ccedd2d78ae6c3ce1911459) - AI 精选
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 
-- [查看全部 7256 篇...](/details/tags/other.md)
+- [查看全部 7265 篇...](/details/tags/other.md)
 
 

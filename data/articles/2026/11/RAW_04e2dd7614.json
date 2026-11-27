@@ -1,0 +1,58 @@
+{
+  "id": "RAW_04e2dd7614",
+  "title": "Grok 4.7 有一个多数用户从未动过的推理强度档位——它能让你的账单减半或翻倍",
+  "url": "https://dev.to/haroonch_rashid_72f1d7e31/grok-47-has-a-reasoning-dial-most-users-never-touch-and-it-can-halve-or-double-your-bill-3ni5",
+  "date": "2026-11-27 00:01:03",
+  "author": "Ai Game Changer Pro",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Grok 4.7 is out, and xAI has quietly shipped one of the most consequential features in the model — a reasoning-effort dial that most users never touch. Set it to low and your bill shrinks. Set it to xhigh and it can double. The dial controls how many thinking tokens Grok spends before answering — and because thinking tokens are billed as output tokens, the same question can cost wildly different amounts depending on where the dial sits. This guide explains the dial, the pricing, and the 200,000-token cliff that changes everything.</p>\n  <h2><a name=\"the-dial-low-medium-high-xhigh\" href=\"#the-dial-low-medium-high-xhigh\"> </a> The dial: low, medium, high, xhigh</h2>\n  <p>Grok 4.7's reasoning effort has four settings: low, medium, high and xhigh. The default is high. In the API it is the <code>reasoning_effort</code> parameter; in the app it appears as a reasoning control. The setting decides how much the model thinks before it answers — and thinking is where the money goes.</p>\n  <h2><a name=\"thinking-tokens-are-billed-as-output\" href=\"#thinking-tokens-are-billed-as-output\"> </a> Thinking tokens are billed as output</h2>\n  <p>Grok 4.7 costs $2 per million input tokens and $6 per million output tokens. Thinking tokens are billed at the output rate. A long reasoning chain can easily be ten times the size of the final answer, so the thinking — not the answer — is usually the biggest line on the bill. On xhigh, a hard problem can burn through thousands of thinking tokens before a single word of answer appears.</p>\n  <h2><a name=\"the-200000token-cliff\" href=\"#the-200000token-cliff\"> </a> The 200,000-token cliff</h2>\n  <p>Here is the part that catches people out: once a request passes 200,000 tokens in total, every price doubles — $4 per million input tokens and $12 per million output tokens. Long documents plus heavy reasoning is the most expensive combination there is. If you are working with big files, keep the reasoning effort low or split the work into smaller requests.</p>\n  <h2><a name=\"what-xhigh-actually-buys\" href=\"#what-xhigh-actually-buys\"> </a> What xhigh actually buys</h2>\n  <p>On xhigh, Grok 4.7 is genuinely strong: it set the best result at launch on Terminal-Bench 4.0 with 37.6%, and it is built for agentic coding — long, multi-step tasks where the model plans, acts and checks its own work. The model ID is <code>grok-4.7</code>, it launched on 21 September 2026, and it has a 2 million-token context window. For simple questions, though, low is just as good and far cheaper.</p>\n  <h2><a name=\"how-to-use-the-dial\" href=\"#how-to-use-the-dial\"> </a> How to use the dial</h2>\n  <ul>\n   <li><strong>Low:</strong> quick questions, summaries, simple rewrites. Cheapest by far.</li>\n   <li><strong>Medium:</strong> everyday coding help and analysis.</li>\n   <li><strong>High:</strong> the default — a good balance for most work.</li>\n   <li><strong>Xhigh:</strong> hard problems, long agentic coding sessions, and anything where accuracy matters more than cost.</li>\n  </ul>\n  <p>Check the token counts in the API response: if the thinking tokens dwarf the answer, you are paying for reasoning you may not need.</p>\n  <h2><a name=\"the-bottom-line\" href=\"#the-bottom-line\"> </a> The bottom line</h2>\n  <p>The reasoning dial is the price. Most users leave it on high and never think about it — and that is exactly how a simple task ends up costing double. Choose the effort for the job, watch the 200,000-token cliff, and Grok 4.7 becomes one of the cheapest frontier models you can use.</p>\n  <hr>\n  <p><em>Originally published on <a href=\"https://aigamechangerpro.blogspot.com/2026/11/grok-47-has-reasoning-dial-most-users.html\" target=\"_blank\" rel=\"noopener noreferrer\">Ai Game Changer Pro</a>.</em></p>\n </body>\n</html>",
+  "aiSummary": "Grok 4.7 新增了一个会显著影响价格的推理强度档位，分为 low、medium、high 和 xhigh 四档；思考 Token 按输出价格计费，且超过 200，000 个 Token 后费用翻倍。",
+  "oneSentenceSummary": "Grok 4.7 新增了一个会显著影响价格的推理强度档位，分为 low、medium、high 和 xhigh 四档；思考 Token 按输出价格计费，且超过 200，000 个 Token 后费用翻倍。",
+  "summary": "Grok 4.7 提供四档推理强度：low、medium、high（默认）和 xhigh，用于控制模型在回答前生成多少思考 Token。思考 Token 按输出价格计费（每百万个 Token $6），因此推理是主要成本来源。一个关键门槛是 200，000 个 Token：超过该门槛后，所有价格都会翻倍至每百万个输入 Token $4、每百万个输出 Token $12。xhigh 在复杂的智能体编程任务中表现出色，在 Terminal-Bench 4.0 上取得 37.6% 的成绩；而简单查询使用 low 档即可满足需求。根据任务复杂度匹配推理强度并监控 Token 用量，用户便能显著节省开支。",
+  "mainPoints": [
+    {
+      "point": "推理强度档位通过控制 Grok 4.7 回答前生成的思考 Token 数量来影响成本。",
+      "explanation": "思考 Token 按输出价格计费（每百万个 Token $6），因此一段很长的推理过程可能比最终答案贵十倍，使推理强度档位成为影响成本的主要杠杆。"
+    },
+    {
+      "point": "超过 200，000 个 Token 后，所有价格都会翻倍。",
+      "explanation": "总 Token 数超过 200，000 后，价格将升至每百万个输入 Token $4、每百万个输出 Token $12。因此，篇幅较长且需要大量推理的文档组合，成本最高。"
+    },
+    {
+      "point": "xhigh 档能提升复杂智能体编程任务的准确性，但成本也显著更高。",
+      "explanation": "在 xhigh 档下，Grok 4.7 在发布时于 Terminal-Bench 4.0 上取得了最佳成绩，达到 37.6%，适合那些准确性比成本更重要的难题。"
+    },
+    {
+      "point": "简单问题使用 low 档就足够，也最能节省成本。",
+      "explanation": "对于快速问答、摘要和简单改写，low 档的结果与 high 档相近，但价格低得多。根据任务复杂度选择推理强度，用户就能优化支出。"
+    }
+  ],
+  "keyQuotes": [
+    "Grok 4.7 已经推出，而 xAI 悄然为这款模型上线了一项影响重大的功能——一个多数用户从未动过的推理强度档位。",
+    "调到 low，账单就会缩小；调到 xhigh，账单可能翻倍。",
+    "思考 Token 按输出计费",
+    "一旦请求的总 Token 数超过 200，000，所有价格都会翻倍",
+    "在 xhigh 档下，Grok 4.7 的表现确实很强：它在发布时于 Terminal-Bench 4.0 上取得了最佳成绩，达到 37.6%"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工程",
+    "模型训练与推理",
+    "AI 产品与应用",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 500,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795708863000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-27 00:01:03"
+}

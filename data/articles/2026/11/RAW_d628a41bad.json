@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d628a41bad",
+  "title": "QCon San Francisco 2026：如何终结代码审查",
+  "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/",
+  "date": "2026-11-27 01:16:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Closing the Engineering the Developer Experience track at <a href=\"https://qconsf.com/presentation/nov2026/how-kill-code-review\">QCon San Francisco 2026</a>, Ankit Jain, co-founder and CEO of <a href=\"https://www.aviator.co/\">Aviator</a>, argued that line-by-line code review is already quietly dead on most teams, and that the sharper question is \"how long until we stop reading the code?\" He also flagged his conflict of interest up front, noting that he runs a company that sells a solution and asking the audience to \"be suspicious of me.\"</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/news/2026/11/qcon-sf-26-kill-code-review/en/resources/1Screenshot 2026-11-26 at 15.02.54-1795712694459.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/qcon-sf-26-kill-code-review/en/resources/1Screenshot 2026-11-26 at 15.02.54-1795712694459.png\" rel=\"share\"></p>\n   <p>The talk revisited an <a href=\"https://latent.space/p/reviews-dead\">essay he wrote for Latent Space</a> in March 2026 proposing a five-layer trust model to replace reviews. Eight months on, Jain said the mechanics held up but the essay missed human judgment entirely. He began with the data that unseated his original framing. A 2013 Microsoft study found 44% of reviewers cited defect-finding as their motivation, yet only 14% of their comments were actually about defects, and a 2018 Google study of more than nine million reviews reached almost the same split. Code review was never really about bugs, he argued, it was about knowledge sharing, echoing <a href=\"https://addyosmani.com/blog/agentic-code-review/\">Addy Osmani</a>: \"We made writing cheap, and understanding stayed exactly as expensive as it has always been.\"</p>\n   <p>A September Faros study of more than 4,000 teams found that over 75% of PRs now merge without any human review, average PR size has grown, and redo work is up 67% year over year. Earlier research showed review quality drops sharply past 400 lines, yet the median PR today is 640 lines. \"We are reviewing the code, but we are rubber stamping it,\" Jain said, pointing to a Reddit post from an experienced developer refusing to review AI-generated PRs that collected over 1,900 upvotes. The result is \"review theater,\" where agents write, another AI reviews, agents revise, and humans skim and merge.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/news/2026/11/qcon-sf-26-kill-code-review/en/resources/1percent-1795712694459.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/qcon-sf-26-kill-code-review/en/resources/1percent-1795712694459.png\" rel=\"share\"></p>\n   <p>To replace a single review, Jain proposed six layers: Argue, Capture, Codify, Prove, Debate, Own. Agents should argue about a change locally before the PR exists, surfacing only what they disagreed about. Intent and acceptance criteria, familiar from behaviour-driven development, should be captured during the coding session and attached to the PR rather than discarded. Repeated review comments become invariants, standing rules with scope, provenance, a verification method, and a team owner. Aviator mined 11,000 of its own review comments to produce 64 invariants. Evidence should replace green checks: screenshots, DOM snapshots, recorded requests, latencies, and database logs, because the same agent that wrote the code likely wrote its unit tests. Humans then debate decisions rather than diffs, and ownership shifts from author and reviewer to the teams that own the rules.</p>\n   <p>Jain reported his nine-engineer team now merges four times the PRs it did a year ago and still approves every one, while reverts have dropped around 40%. He also shared a failure: a change passed every filter and caused an 18-minute outage from an unindexed query, after which the post-mortem asked which rule was missing rather than who approved it. Critical areas such as security, authentication and billing still get line-by-line review.</p>\n   <p>He closed with a line: <q>You can outsource your thinking. You cannot outsource your understanding.</q></p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon San Francisco 2026: How to Kill the Code Review\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795713360000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "文章认为，逐行代码审查正逐渐过时，并提出由六个层次（论证、捕获、编码、验证、讨论、共担）构成的信任模型，以更具扩展性的自动化质量控制取而代之。",
+  "oneSentenceSummary": "文章认为，逐行代码审查正逐渐过时，并提出由六个层次（论证、捕获、编码、验证、讨论、共担）构成的信任模型，以更具扩展性的自动化质量控制取而代之。",
+  "summary": "Aviator CEO Ankit Jain 提出了一套超越传统逐行代码审查的框架。他认为，大多数团队早已不再真正进行这类审查。根据 Microsoft、Google 和 Faros 的数据，大多数 PR 在未经人工审查的情况下就会合并，而且变更规模越大，审查质量越低。为此，他提出了一个六层信任模型，将关注点从代码差异审查转向自动化推理、记录意图、将规则编码为不变量、基于证据进行验证、团队层面的讨论以及共同承担责任。Jain 表示，他的团队如今合并的 PR 数量增加到原来的 4 倍，同时回滚次数更少；不过，安全等关键领域仍然需要人工审查。文章最后指出，思考可以外包，但理解不能。",
+  "mainPoints": [
+    {
+      "point": "随着规模扩大和 AI 辅助开发普及，传统的逐行代码审查正逐渐过时。",
+      "explanation": "数据显示，如今超过 75% 的 PR 在没有人工审查的情况下就会合并，PR 的中位规模已增至 640 行，而超过 400 行后，审查质量会急剧下降，导致出现「审查走过场」的现象：人们只是对 AI 生成的改动照单全收。"
+    },
+    {
+      "point": "六层信任模型可以用更具扩展性的质量控制取代代码审查。",
+      "explanation": "该模型包括：论证（智能体在提交 PR 前先在本地讨论）、捕获（记录意图和验收标准）、编码（将评论转化为不变量）、验证（使用截图和日志等证据）、讨论（人们讨论决策，而非代码差异），以及共担（由团队共同负责并维护规则）。"
+    },
+    {
+      "point": "自动化不变量和基于证据的验证能够在大规模协作中保障质量。",
+      "explanation": "Aviator 分析了 11，000 条审查评论，提炼出 64 条可复用的不变量。DOM 快照和数据库日志等证据可以取代绿色通过标记，因为编写代码的智能体很可能也编写了相应的测试。"
+    },
+    {
+      "point": "在安全和计费等关键领域，人工审查仍然不可或缺。",
+      "explanation": "Jain 指出，安全、身份验证和计费相关代码仍会接受逐行审查。他的团队曾因一条未建立索引的查询而遭遇 18 分钟的服务中断；这条查询通过了所有自动化筛查，凸显了有针对性地进行人工监督的必要性。"
+    }
+  ],
+  "keyQuotes": [
+    "你可以把思考外包出去，但无法把理解外包出去。",
+    "代码审查从来就不只是为了找 Bug……它关乎知识共享。",
+    "我们在审查代码，但实际上只是在盖章放行。",
+    "更尖锐的问题是：「我们还要多久才会停止阅读代码？」"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "代码质量",
+    "AI Agent",
+    "科技评论"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 513,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795713360000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-27 01:16:00"
+}

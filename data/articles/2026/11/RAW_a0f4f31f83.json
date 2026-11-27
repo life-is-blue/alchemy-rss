@@ -1,0 +1,52 @@
+{
+  "id": "RAW_a0f4f31f83",
+  "title": "MAGI-2：单次生成 30 秒带声音的 1080p AI 视频，登顶排行榜",
+  "url": "https://dev.to/haroonch_rashid_72f1d7e31/magi-2-30-seconds-of-1080p-ai-video-with-sound-in-one-pass-and-its-topping-the-charts-3n4l",
+  "date": "2026-11-27 00:04:34",
+  "author": "Ai Game Changer Pro",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>AI video just took a leap. Sand.ai's MAGI-2 can generate 30 seconds of 1080p video with synchronised sound — dialogue, lip sync, foley and music — in a single pass, no editing required. It now sits at the top of the Artificial Analysis Video Arena leaderboard, and you can try it for $0.08 a second on Higgsfield. Here is what makes MAGI-2 different, and how to use it.</p>\n  <h2><a name=\"what-is-magi2\" href=\"#what-is-magi2\"> </a> What is MAGI-2?</h2>\n  <p>MAGI-2 is a video generation model from Sand.ai that produces up to 30 seconds of 1080p video at 25 frames per second — with native audio baked in. Dialogue, sound effects and music are generated together with the picture, in one pass. Until now, most AI video tools made silent clips and left the sound to a second tool. MAGI-2 removes that step entirely.</p>\n  <h2><a name=\"the-leaderboard\" href=\"#the-leaderboard\"> </a> The leaderboard</h2>\n  <p>On the Artificial Analysis Video Arena (v2.1), MAGI-2 leads the field with an Elo score of 1150.3, ahead of Kling 2.1, Hailuo, VEO 3 and Seedance. It supports text-to-video, image-to-video and reference-to-video, so you can start from a prompt, a still image or an existing clip.</p>\n  <h2><a name=\"the-model\" href=\"#the-model\"> </a> The model</h2>\n  <p>Under the hood, MAGI-2 is a mixture-of-experts design: 480 billion parameters in total, with 28 billion activated per token. That scale is what lets it hold a scene together for 30 seconds — characters, camera moves and sound all staying consistent.</p>\n  <h2><a name=\"how-to-use-it\" href=\"#how-to-use-it\"> </a> How to use it</h2>\n  <p>The easiest way to try MAGI-2 right now is on Higgsfield, where it costs $0.08 per second — about $2.40 for a full 30-second clip. Sand.ai has promised open weights, but they have not been released yet, so the hosted version is the only option for now.</p>\n  <h2><a name=\"the-bottom-line\" href=\"#the-bottom-line\"> </a> The bottom line</h2>\n  <p>Thirty seconds of 1080p video with sound, in one pass, at the top of the charts: MAGI-2 is the new bar for AI video. The open-weights release, when it comes, will decide how far it spreads.</p>\n  <hr>\n  <p><em>Originally published on <a href=\"https://aigamechangerpro.blogspot.com/2026/11/magi-2-30-seconds-of-1080p-ai-video.html\" target=\"_blank\" rel=\"noopener noreferrer\">Ai Game Changer Pro</a>.</em></p>\n </body>\n</html>",
+  "aiSummary": "Sand.ai 的 MAGI-2 可在单次生成中制作 30 秒、带同步音频的 1080p 视频，并在 Artificial Analysis Video Arena 排行榜上取得 1150.3 的 Elo 分数。",
+  "oneSentenceSummary": "Sand.ai 的 MAGI-2 可在单次生成中制作 30 秒、带同步音频的 1080p 视频，并在 Artificial Analysis Video Arena 排行榜上取得 1150.3 的 Elo 分数。",
+  "summary": "MAGI-2 是 Sand.ai 推出的视频生成模型，可在单次生成中制作最长 30 秒、帧率为每秒 25 帧的 1080p 视频，并原生集成音频。大多数 AI 视频工具需要单独处理音频，而 MAGI-2 能在生成视频的同时生成对白、音效和音乐。目前，它以 1150.3 的 Elo 分数领跑 Artificial Analysis Video Arena 排行榜，领先 Kling 2.1、Hailuo、VEO 3 和 Seedance 等竞争产品。该模型支持文生视频、图生视频和参考视频生成。MAGI-2 采用混合专家架构，总参数量为 480 billion，每个 token 激活 28 billion 个参数，从而能够连贯地生成场景中的角色、镜头运动和同步音频。用户可以在 Higgsfield 上使用 MAGI-2，价格为每秒 $0.08（完整的 30 秒视频约需 $2.40）；不过，模型权重尚未开放。",
+  "mainPoints": [
+    {
+      "point": "MAGI-2 可在单次生成中制作 30 秒带同步音频的 1080p 视频",
+      "explanation": "传统 AI 视频工具通常需要单独生成和编辑音频，而 MAGI-2 能在生成视频的同时生成对白、音效和音乐，无需后期处理。"
+    },
+    {
+      "point": "MAGI-2 以 1150.3 的 Elo 分数领跑 Artificial Analysis Video Arena 排行榜",
+      "explanation": "该模型表现优于 Kling 2.1、Hailuo、VEO 3 和 Seedance 等竞争产品，在文生视频、图生视频和参考视频生成任务中展现出更强的质量。"
+    },
+    {
+      "point": "采用 480B 参数的混合专家架构，支持连贯生成 30 秒场景",
+      "explanation": "MAGI-2 每个 token 激活 28 billion 个参数，能在整段 30 秒视频中保持角色一致性、镜头运动连贯性和音频同步，这是 AI 视频生成领域的一项重要技术成果。"
+    }
+  ],
+  "keyQuotes": [
+    "MAGI-2 可在单次生成中制作 30 秒带同步声音的 1080p 视频——包括对白、口型同步、拟音和音乐——无需剪辑。",
+    "在 Artificial Analysis Video Arena（v2.1）上，MAGI-2 以 1150.3 的 Elo 分数领先，超过了 Kling 2.1、Hailuo、VEO 3 和 Seedance。",
+    "在底层架构上，MAGI-2 采用混合专家设计：总计 480 billion 个参数，每个 token 激活 28 billion 个参数。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 产品与应用",
+    "扩散模型",
+    "AI 工程",
+    "多模态 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 323,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795709074000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-27 00:04:34"
+}
