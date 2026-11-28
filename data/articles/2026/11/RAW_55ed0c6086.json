@@ -1,0 +1,62 @@
+{
+  "id": "RAW_55ed0c6086",
+  "title": "AI 模型意见不一致时，别投票——先分诊",
+  "url": "https://dev.to/getmultio/when-ai-models-disagree-dont-vote-triage-3ilk",
+  "date": "2026-11-28 06:17:24",
+  "author": "MultiO",
+  "siteName": "DEV Community: machinelearning",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Most advice for cross-checking AI answers ends at \"ask another model.\" That tells you a second answer exists. It does not tell you what to do when the second answer disagrees with the first — and in our study, on judgment questions, it usually did.</p>\n  <p>We sent the same 24 questions, unchanged, to five mid-tier models — GPT, Claude, Gemini, Grok and Llama. A Council read flagged 52 material divergences. The models materially agreed on only 8 of 24 questions. Exactly half of the divergences involved a lone model: 14 sole-source claims and 12 lone dissents. The other half were multi-way splits.</p>\n  <p>After hand-checking every lone element, I stopped treating disagreement as a vote to count and started treating it as a case to triage. The protocol that came out of the study has four branches, one for each shape a split can take.</p>\n  <p>Branch 1 — One model adds a fact nobody else mentioned: check that fact first, before anything else in any answer. Of the 14 sole-source claims we hand-checked, 8 were the highest-value line in their set and 3 were wrong or invented. No other step has that hit rate in either direction. The lone fact is simultaneously the most likely best line and the most likely fabrication, so it earns the first verification minute.</p>\n  <p>Branch 2 — One model dissents on a judgment: read its reasons, do not count it out. A dissent is not checkable the way a claim is — there is nothing to look up. What you can weigh is whether it challenges the answer or the method. In the study, one dissent rejected a rent-ratio test itself in favour of incremental profit after all costs — a different way of deciding, not just a different number. Method challenges are the dissents most worth reading in full, because a synthesis tends to smooth them away entirely.</p>\n  <p>Branch 3 — The panel splits with nobody alone: stop looking for a winner. Exactly 1 of our 24 questions landed here on its core point — a keyboard choice for a novelist, split 2–2 among the judged answers. There is no lone claim to check and no majority to defer to. An even split is not a failed answer; it is a map showing the question turns on a tradeoff or preference the models cannot settle for you. The decision has to be made on your own criteria, and naming that early saves the time a vote-count would waste.</p>\n  <p>Branch 4 — Nobody disagrees: treat it as consensus, not proof. On 8 of 24 questions the judged answers produced no flagged divergence. That signal is narrower than it feels: the Council read a rotating four of five answers per question, each question was sampled once per model at mid-tier, and a panel trained on overlapping text can share a blind spot as easily as a fact. Agreement means no model saw a reason to dissent — useful, and worth less checking time than any split, but not a verdict.</p>\n  <p>Two guardrails sit under all four branches. First, re-asking the same model is not a branch: in our rerun control, one model given the same question three times never changed its verdict, because the disagreement lives between models, not inside one model's sampling. Second, if a lone claim checks out as broadly right, still discount its strongest word and its most precise number first — 3 of the 14 claims were overstated or mixed, right in direction and wrong in strength, and that is where the exaggeration lived.</p>\n  <p>The order matters. Check the lone fact, read the lone dissent, recognise the even split, and bank the consensus — in that sequence, a disagreement stops being a reason to distrust every answer and becomes a worklist, sorted by where verification actually pays.</p>\n  <p>Full study, method and caveats (including that one judge was also a panel member, the rotating judging sets, and a memory-bleed incident we found and disclosed): <a href=\"https://multio.ai/research/model-divergence\" target=\"_blank\" rel=\"noopener noreferrer\">https://multio.ai/research/model-divergence</a></p>\n  <p>Disclosure: I build MultiO (multio.ai) — One subscription. Every top AI model… Auto sends each message to the most cost-efficient model that can handle it. Compare asks up to three models side by side, and every message shows its exact token charge on a receipt. Free trial: 3,000,000 tokens, no card required.</p>\n  <p>— <a class=\"mentioned-user\" href=\"https://dev.to/getmultio\">@getmultio</a> / <a href=\"mailto:hello@multio.ai\">hello@multio.ai</a></p>\n </body>\n</html>",
+  "aiSummary": "基于一项针对 5 个中端模型、涵盖 24 个问题的原始研究，本文提出一套实用的四分支流程，将模型分歧视为分诊工作流，而不是投票。",
+  "oneSentenceSummary": "基于一项针对 5 个中端模型、涵盖 24 个问题的原始研究，本文提出一套实用的四分支流程，将模型分歧视为分诊工作流，而不是投票。",
+  "summary": "作者将 24 个判断类问题提交给 5 个中端 AI 模型（GPT、Claude、Gemini、Grok、Llama）进行研究，发现模型仅在 8 个问题上实质性一致，并标记出 52 处分歧。其中一半涉及单个模型的独有观点（14 条单一来源主张、12 条孤立异议）。据此，作者提出一套四分支分诊流程：（1）优先核查单个模型提出的事实主张——14 条中有 8 条最有价值，但有 3 条是错误的；（2）阅读孤立的判断异议时，关注其是否挑战了方法，而不只是提出不同数字；（3）将平票视为权衡图，依据自己的标准作出选择；（4）把共识视为有用但不能当作证明，因为重叠的训练数据可能造成共同盲点。另有两条注意事项：重复询问同一个模型并无帮助（分歧存在于模型之间），而且即使孤立主张已经核实，也应降低对其中最强烈措辞和最精确数字的信任。这套流程能把分歧转化为按优先级排列的核查清单。",
+  "mainPoints": [
+    {
+      "point": "应将 AI 模型的分歧视为分诊工作流，而不是计票投票",
+      "explanation": "在一项涵盖 5 个模型、24 个问题的研究中，模型仅在 8 个问题上达成一致，却出现了 52 处分歧。作者据此制定了一套四分支流程，优先投入核查资源于最有价值之处，将分歧转化为可执行的核查清单。"
+    },
+    {
+      "point": "应最先核查单个模型提出的事实主张——这类主张最有可能既有价值，也属捏造",
+      "explanation": "作者对 14 条单一来源主张进行了人工核查，其中 8 条是各模型答案中最有价值的内容，但有 3 条是错误或编造的。没有其他步骤同时具备如此高的双重命中率。孤立事实既最可能是最佳洞见，也最可能是幻觉。"
+    },
+    {
+      "point": "阅读孤立的判断异议时，应关注其是否挑战了方法，而不是将其当作离群意见忽略",
+      "explanation": "异议可能否定决策框架本身（例如，拒绝采用租金比率测试，转而考察扣除所有成本后的增量利润）。这类方法层面的质疑最值得完整阅读，因为综合总结往往会将其彻底磨平。"
+    },
+    {
+      "point": "即使模型意见平分，也能揭示模型无法替你解决的权衡或偏好",
+      "explanation": "如果没有单个模型持有不同意见，而模型意见平分（例如，小说家该选哪种键盘，模型以 2 比 2 分成两派），就没有多数意见可供采纳。分歧描绘出了决策的边界；你必须运用自己的标准，而不是继续寻找赢家。"
+    },
+    {
+      "point": "共识的意义比表面看起来更有限——训练数据重叠既会带来共同事实，也会造成共同盲点",
+      "explanation": "24 个问题中有 8 个达成一致，只能说明没有模型认为有理由提出异议。这项研究采用了轮换评审组和中端模型抽样；如果模型的训练文本存在重叠，它们就可能共享盲点。共识有参考价值，但其核查优先级应低于任何意见分歧；它不是定论。"
+    }
+  ],
+  "keyQuotes": [
+    "孤立事实既最可能是最佳观点，也最可能是编造的内容，因此应优先花时间核查。",
+    "异议不像主张那样可以直接核查——没有什么东西可供查证。你能评估的是，它挑战了答案本身，还是提出答案的方法。",
+    "意见平分并不意味着答案失败；它是一张地图，显示问题取决于模型无法替你解决的权衡或偏好。",
+    "达成一致意味着没有模型认为有理由提出异议——这有参考价值，核查优先级也低于任何意见分歧，但它不是定论。",
+    "在我们的重复测试对照中，同一个模型面对同一问题三次，判断从未改变，因为分歧存在于模型之间，而不是同一个模型的采样过程中。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI 工程",
+    "AI 工作流",
+    "AI 产品与应用",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 72,
+  "wordCount": 717,
+  "domain": "dev.to",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d36d62279e",
+  "sourceName": "DEV Community: machinelearning",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795817844000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-11-28 06:17:24"
+}

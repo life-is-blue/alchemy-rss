@@ -1,0 +1,57 @@
+{
+  "id": "RAW_1560d981fe",
+  "title": "Netflix 构建 Quasar，衡量库 API 变更的影响范围",
+  "url": "https://www.infoq.com/news/2026/11/netflix-quasar-api-impact/",
+  "date": "2026-11-27 22:35:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix has developed <a href=\"https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90\">Quasar, an internal tool</a> that identifies which repositories use specific library API symbols, helping engineering teams assess the downstream impact of proposed changes before releasing them. The tool combines semantic code indexing with API comparisons to identify affected consumers, dependency versions, and relevant call sites across repositories.</p>\n   <p>The challenge extends beyond identifying whether an API change is incompatible. Compatibility tools can flag a removed method or changed signature, but they do not necessarily identify which applications call it. Dependency graphs show declared relationships rather than actual usage, while text searches can miss references involving inheritance, overloads, and generated code. Building every downstream consumer to validate a change can also be expensive.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/netflix-quasar-api-impact/news/2026/11/netflix-quasar-api-impact/en/resources/1Screenshot 2026-11-04 at 9.30.33 PM-1793857372077.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/netflix-quasar-api-impact/en/resources/1Screenshot 2026-11-04 at 9.30.33 PM-1793857372077.png\" rel=\"share\"></p>\n   <p><em>Quasar architecture diagram showing the indexing and query workflow (Source: <a href=\"https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90\">Netflix Blog Post</a>)</em></p>\n   <p>Quasar indexes symbol definitions and references using the<a href=\"https://scip-code.org/\"> SCIP Code Intelligence Protocol</a>, an open format for representing code relationships. Language-specific indexers submit data during CI builds, which Quasar stores in Amazon S3 as Parquet files and queries through Amazon Athena.</p>\n   <p>During pull request analysis, Quasar compares API definitions between commits and identifies added, removed, or modified symbols. It then queries indexed references to locate affected repositories, dependency versions, and source locations. A Netflix example shows a deprecated method removal affecting 137 repositories across three library versions.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/11/netflix-quasar-api-impact/news/2026/11/netflix-quasar-api-impact/en/resources/1netflixapiimpact-1793857372077.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/11/netflix-quasar-api-impact/en/resources/1netflixapiimpact-1793857372077.jpeg\" rel=\"share\"></p>\n   <p><em>Example Quasar impact report showing affected repositories and dependency versions (Source: <a href=\"https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90\">Netflix Blog Post</a>)</em></p>\n   <p>However, an absence of indexed references does not prove that an API is unused. Reflection, dynamic loading, stale indexes, and incomplete coverage can prevent Quasar from observing every consumer.</p>\n   <p><a href=\"https://www.linkedin.com/in/ajdelaguila/\">Antonio J. del Águila</a>, founder of Knaisoma, <a href=\"https://lnkd.in/p/gCTgc6vx\">highlighted</a> another limitation in a LinkedIn discussion about the approach:</p>\n   <blockquote>\n    <p>Observed usage has a blind spot for reflection and for code on rare paths, like a quarterly batch job, since those calls may never show up in the window that was sampled.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/robertoperezalcolea/\">Roberto Pérez Alcolea</a>, a member of Netflix's Java Platform Team and author of the original article, <a href=\"https://lnkd.in/p/gYZ9BFwh\">acknowledged</a> the limitation and described ongoing work to complement static evidence:</p>\n   <blockquote>\n    <p>Reflection and incomplete indexing remain blind spots, and we’re also investing in runtime analysis to complement the static evidence. Together, those signals help inform removal decisions, without guaranteeing that an API is safe to delete.</p>\n   </blockquote>\n   <p>Quasar complements<a href=\"https://revapi.org/\"> Revapi</a> for API compatibility analysis and<a href=\"https://kythe.io/\"> Kythe</a> for code navigation by connecting API changes with actual usage across repositories. SCIP supports usage queries across Java, Go, Python, JavaScript/TypeScript, and Rust, while compatibility analysis covers JVM APIs and Protobuf changes traced through generated Java code. Netflix exposes findings through REST, GraphQL, and a<a href=\"https://modelcontextprotocol.io/\"> Model Context Protocol (MCP)</a> server for developers and coding agents.</p>\n   <p>Netflix plans to move impact analysis earlier into coding workflows, allowing agents to identify public API changes and retrieve consumer information before pull requests are opened. The goal is to help prepare migration changes while keeping API and release decisions with library producers.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Netflix Builds Quasar to Measure the Blast Radius of Library API Changes\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/11/netflix-quasar-api-impact/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1795790100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 的 Quasar 是一款内部工具，通过语义代码索引和 API 对比，识别受库 API 变更影响的代码仓库，帮助工程团队在发布前评估下游影响。",
+  "oneSentenceSummary": "Netflix 的 Quasar 是一款内部工具，通过语义代码索引和 API 对比，识别受库 API 变更影响的代码仓库，帮助工程团队在发布前评估下游影响。",
+  "summary": "Netflix 开发了内部工具 Quasar，通过识别哪些代码仓库使用特定库 API 符号，衡量库 API 变更的影响范围。该工具结合 SCIP Code Intelligence Protocol 进行语义代码索引，并对比 API，以定位受影响的使用方、依赖版本和调用点。Quasar 会在 CI 构建期间索引符号定义及引用，并将数据以 Parquet 文件形式存储在 Amazon S3 中，再通过 Athena 查询。在 PR 分析过程中，它会对比不同提交中的 API 定义，找出新增、删除或修改的符号，然后查询索引中的引用，定位受影响的代码仓库。一个重要限制是，未发现索引引用并不能证明某个 API 未被使用，因为反射、动态加载和覆盖不完整都可能导致遗漏。Netflix 计划将影响分析更早地融入编码工作流，帮助团队准备迁移变更，同时由库的生产方决定 API。",
+  "mainPoints": [
+    {
+      "point": "Quasar 使用 SCIP 进行语义代码索引，识别各个代码仓库中的实际 API 用法。",
+      "explanation": "该工具在 CI 构建期间使用 SCIP Code Intelligence Protocol 索引符号定义及引用，将数据以 Parquet 文件形式存储在 Amazon S3 中，并通过 Athena 查询。相比简单的依赖关系图，这种方式能够更精确地识别受影响的使用方。"
+    },
+    {
+      "point": "仅靠 API 兼容性工具无法识别哪些应用调用了发生变更的方法。",
+      "explanation": "兼容性工具可以标记已删除的方法或已变更的签名，但无法确定哪些应用实际调用了这些方法。因此，Quasar 将 API 变更与实际用法关联起来，对评估下游影响至关重要。"
+    },
+    {
+      "point": "反射和动态代码路径会造成静态分析盲区。",
+      "explanation": "未发现索引引用并不能证明某个 API 未被使用。反射、动态加载、索引过期和覆盖不完整都可能导致 Quasar 无法观察到所有使用方，因此还需要结合运行时分析。"
+    },
+    {
+      "point": "Quasar 与 Revapi、Kythe 等现有工具协同，提供全面分析。",
+      "explanation": "该工具补充 Revapi 的 API 兼容性分析能力和 Kythe 的代码导航能力，支持对 Java、Go、Python、JavaScript/TypeScript 和 Rust 进行用法查询，并通过 REST、GraphQL 和 MCP 服务器接口呈现分析结果。"
+    }
+  ],
+  "keyQuotes": [
+    "Quasar 使用 SCIP Code Intelligence Protocol 对符号定义和引用进行索引。这是一种用于表示代码关系的开放格式。",
+    "构建所有下游使用方来验证一项变更，也可能成本高昂。",
+    "未发现索引引用并不能证明某个 API 未被使用。反射、动态加载、索引过期和覆盖不完整都可能导致 Quasar 无法观察到所有使用方。",
+    "Netflix 计划将影响分析提前融入编码工作流，让智能体能够在创建拉取请求之前识别公共 API 变更并获取使用方信息。"
+  ],
+  "tags": [
+    "编程与工程",
+    "系统设计",
+    "开发者工具",
+    "云原生 / DevOps",
+    "测试与质量"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 474,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795790100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-27 22:35:00"
+}

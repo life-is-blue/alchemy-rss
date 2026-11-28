@@ -1,0 +1,51 @@
+{
+  "id": "RAW_92ab694708",
+  "title": "《Robot Talk》第 172 期——像儿童一样学习的机器人，与 Leticia Mara Berto 对谈",
+  "url": "https://robohub.org/robot-talk-episode-172-robots-that-learn-like-children-with-leticia-mara-berto/",
+  "date": "2026-11-27 21:33:28",
+  "author": "Robot Talk",
+  "siteName": "Robohub",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"readability-page-1\" class=\"page\">\n   <div>\n    <p><img fetchpriority=\"high\" decoding=\"async\" src=\"https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-425x425.jpg\" alt=\"\" srcset=\"https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-425x425.jpg 425w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-1024x1024.jpg 1024w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-290x290.jpg 290w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-768x768.jpg 768w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-1536x1536.jpg 1536w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-2048x2048.jpg 2048w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-24x24.jpg 24w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-48x48.jpg 48w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-96x96.jpg 96w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-150x150.jpg 150w, https://robohub.org/wp-content/uploads/2026/11/Leticia-Mara-Berto-300x300.jpg 300w\" sizes=\"(max-width: 425px) 100vw, 425px\"></p>\n    <p>Claire chatted to Leticia Mara Berto from the University of Manchester about self-motivation, learning and decision-making for robots.</p>\n    <p><a href=\"https://corolab.uk/leticia-berto/\" data-wpel-link=\"external\" target=\"_blank\" rel=\"follow external noopener noreferrer\">Letícia Berto</a> is a postdoctoral researcher in the Cognitive Robotics Lab at the University of Manchester. Her research takes inspiration from child development to develop cognitive abilities in robots. She is particularly interested in building autonomous robots by designing cognitive architectures, with an emphasis on intrinsic motivation, learning, and decision-making. In her work, she tackles complex challenges, including resource availability, social interaction dynamics, the distinction between wanting and liking, and applying theory of mind to enhance social interactions.</p>\n    <br>\n    <br>\n    <hr>\n    <div>\n     <p><a href=\"https://robohub.org/author/robot-talk\" data-wpel-link=\"internal\"> <img src=\"https://robohub.org/wp-content/uploads/2023/01/robot_talk_16x9-150x150.png\"> </a></p>\n     <p><a href=\"https://robohub.org/author/robot-talk\" data-wpel-link=\"internal\">Robot Talk</a> is a weekly podcast that explores the exciting world of robotics, artificial intelligence and autonomous machines.</p>\n    </div>\n    <div>\n     <p><img src=\"https://robohub.org/wp-content/uploads/2023/01/robot_talk_16x9-150x150.png\"></p>\n     <p>Robot Talk is a weekly podcast that explores the exciting world of robotics, artificial intelligence and autonomous machines.</p>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Leticia Mara Berto 探讨如何将儿童式学习原则应用于机器人认知，重点关注自主机器人的内在动机、决策和社会互动。",
+  "oneSentenceSummary": "Leticia Mara Berto 探讨如何将儿童式学习原则应用于机器人认知，重点关注自主机器人的内在动机、决策和社会互动。",
+  "summary": "本文采访了曼彻斯特大学认知机器人实验室的 Leticia Mara Berto。她介绍了如何从儿童发展中汲取灵感，研究提升机器人认知能力的方法。她的工作聚焦于通过认知架构构建自主机器人，着重研究内在动机、学习机制和决策过程。她还谈到了资源限制、社会互动动态、「想要」与「喜欢」之间的区别，以及运用心智理论改善机器人的社会互动等挑战。",
+  "mainPoints": [
+    {
+      "point": "机器人可以借鉴儿童的发展过程，培养认知能力。",
+      "explanation": "Leticia Mara Berto 的研究从儿童学习方式中汲取灵感，运用发展心理学原理指导机器人学习架构的设计，从而构建具备认知能力的自主机器人。"
+    },
+    {
+      "point": "内在动机是开发具备高级决策能力的自主机器人的关键。",
+      "explanation": "她的工作强调设计认知架构，将内在动机作为学习和决策的驱动力，而非仅仅依赖外部奖励或预设行为。"
+    },
+    {
+      "point": "社会互动与心智理论是实现机器人自主性的关键挑战。",
+      "explanation": "这项研究探讨了复杂的社会互动，包括「想要」与「喜欢」之间的区别，并运用心智理论相关概念，提升机器人与人自然互动的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "她的研究从儿童发展中汲取灵感，旨在培养机器人的认知能力。",
+    "她尤其关注如何通过设计认知架构来构建自主机器人，并着重研究内在动机、学习和决策。"
+  ],
+  "tags": [
+    "AI 与智能应用",
+    "AI Agent",
+    "AI 智能体",
+    "认知机器人",
+    "内在动机"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 75,
+  "wordCount": 132,
+  "domain": "robohub.org",
+  "category": "Artificial_Intelligence",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SRC_d371af24",
+  "sourceName": "Robohub",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1795786408000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-11-27 21:33:28"
+}

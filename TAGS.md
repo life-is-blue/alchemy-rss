@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-11-28 07:50:56 | [返回首页](/README.md)
+**更新时间**: 2026-11-28 13:28:28 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (17892)
+- [AI & 大模型](#ai-llm) (17926)
 - [软件架构](#architecture) (27)
 - [前端与全栈](#frontend-fullstack) (1041)
-- [DevOps](#devops) (880)
+- [DevOps](#devops) (881)
 - [产品与商业](#product-business) (51)
-- [其他](#other) (7265)
+- [其他](#other) (7276)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [DeepSeek-同一天更新四个底层库：读-DeepGEMM-的一万行改动](https://mp.weixin.qq.com/s?__biz=MzA4MjY4NTk0NQ==&mid=2247532957&idx=1&sn=71e9ffe7c7df2011b8b2a7696930fb84) - AI 精选
 - [Clay-如何构建-GTM-智能体-—-Jeff-Barg，AI-负责人-—-Latent-Space](https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/) - AI 精选
 - [Clay-如何构建-GTM-智能体——Clay-AI-负责人-Jeff-Barg-—-Latent-Space](https://latent.space/p/how_clay_builds_gtm_agents_jeff_barg_head_of_ai/) - AI 精选
 - [让-Hy4-flash-吐字提速-4.2-倍，混元-DFly2-开源](https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ==&mid=2247499116&idx=1&sn=5e8af49c48d4b3c1d7e06b98d6114160) - AI 精选
@@ -41,9 +42,8 @@
 - [DeepSeek-发布全家桶应用-API](https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ==&mid=2247485910&idx=1&sn=529f50ba3b37e39319dad1faf7a122cf) - AI 精选
 - [llama.cpp-v1.0.0：为本地-AI-生态系统奠定更坚实的基础](https://huggingface.co/blog/ggml-org/llama-cpp-v1) - AI 精选
 - [【年终复盘②】RSI-可能是-NeoLab-的机会、Personal-Agent-真的有用、创业要造灭火器还是砖头？｜对话谷雨：AI-带给我的-10-个-Aha-Moments](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649113115&idx=1&sn=5d0928c72b758bccea81eb26e1d7146e) - AI 精选
-- [Gemini-4-Hydrogen-正式发布](https://deepmind.google/blog/introducing-gemini-4-hydrogen/) - AI 精选
 
-- [查看全部 17892 篇...](/details/tags/ai-llm.md)
+- [查看全部 17926 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -130,7 +130,7 @@
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 
-- [查看全部 880 篇...](/details/tags/devops.md)
+- [查看全部 881 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -187,6 +187,6 @@
 - [重磅！Claude-Code-官方开源：AI-屎山代码，终于有解了~（附提示词）](https://mp.weixin.qq.com/s?__biz=MzkwMzE4NjU5NA==&mid=2247513292&idx=1&sn=a6e6fd015ccedd2d78ae6c3ce1911459) - AI 精选
 - [Qwen-Image-2512-开源发布！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499285&idx=1&sn=87e1dd1dd0377b057d11aec5a45774e0) - AI 精选
 
-- [查看全部 7265 篇...](/details/tags/other.md)
+- [查看全部 7276 篇...](/details/tags/other.md)
 
 
